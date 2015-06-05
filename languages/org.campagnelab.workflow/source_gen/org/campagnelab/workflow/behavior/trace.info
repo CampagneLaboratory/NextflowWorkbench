@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="9,0,30,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="ConditionalScript_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ConditionalScript_BehaviorDescriptor" />
+    </file>
+    <file name="Input_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.Input_BehaviorDescriptor" />
+    </file>
+    <file name="Output_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.Output_BehaviorDescriptor" />
+    </file>
+    <file name="ProcessRef_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ProcessRef_BehaviorDescriptor" />
+    </file>
+    <file name="Process_BehaviorDescriptor.java">
+      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.Process_BehaviorDescriptor" />
+    </file>
+    <file name="Script_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.Script_BehaviorDescriptor" />
+    </file>
+    <file name="SingleLineScript_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.SingleLineScript_BehaviorDescriptor" />
+    </file>
+    <file name="Workflow_BehaviorDescriptor.java">
+      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.Workflow_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+
