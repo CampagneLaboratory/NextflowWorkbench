@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarksTool">
+    <option name="myTreeState">
+      <TreeState />
+    </option>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e5cc7127-8be7-4868-8c71-15fe73cc1301" name="Default" comment="" />
+    <ignored path="NextflowWorkbench.iws" />
+    <ignored path=".mps/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ConsoleHistory">
+    <option name="tabs">
+      <list>
+        <TabState>
+          <option name="title" value="Console" />
+          <option name="history" value="kaurqQAABAAHKN+ZDT5oX0vmr9NjU0taNSQAABpUZW1wTW9kZWxfMTU3MjczMzk2NTg0MzY3NxdIOyF1RZRqS+OVmdVJz837DgAALlRlbXBNb2R1bGUzYjIxNzU0NS05NDZhLTRiZTMtOTU5OS1kNTQ5Y2ZjZGZiMGX/////q6urq1paWloAAs6rUZUl6k8im5IQO5XKjAwAABdqZXRicmFpbnMubXBzLmxhbmcuY29yZQABAAABEDluqqQAAA1JTmFtZWRDb25jZXB0ABIAAQAAARA5bsBBAAAEbmFtZQAAAADeGthtblBKArMG1NF/ZMN1AAAaamV0YnJhaW5zLm1wcy5jb25zb2xlLmJhc2UAAxX7NAUfclosAAALQ29uc29sZVJvb3QAEgAAAAAAAhX7NAUfcluvAAAHaGlzdG9yeQAV+zQFH3JbsQAADWNvbW1hbmRIb2xkZXIABOJxYKy0SEsAAA1Db21tYW5kSG9sZGVyABIAAAAAAAAKg18owaoCvgAAB0hpc3RvcnkAEgAAAAAAAKWlpaUABd4a2G1uUEoCswbU0X9kw3UBAAAABf/////yZpHSDe9MBq7GLLkMSvCkAAAdamV0YnJhaW5zLm1wcy5jb25zb2xlLnNjcmlwdHP/////GoVUxOuEQ7qMNG8NkMbnWgAAH2pldGJyYWlucy5tcHMuY29uc29sZS5ibENvbW1hbmT/////peTeU0ajRNqqs2j98cNO0AAAIWpldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kc/////+ZWnOUf3ZLi6kpxTRIcIEGAAAmamV0YnJhaW5zLm1wcy5jb25zb2xlLmludGVybmFsQ29tbWFuZHP/////AAAAARdI+8Jd0l2kSDqLGXCSjhti1wAAJGpldGJyYWlucy5tcHMuZGV2a2l0LmdlbmVyYWwtcHVycG9zZQAAAAUHKDWbHSt3xEbfm/KyXL6jIlQAACRqZXRicmFpbnMubXBzLmNvbnNvbGUuYmFzZS5zdHJ1Y3R1cmVw/////wco5xLzU1w8QoitzofJVqUv+wAAJ2pldGJyYWlucy5tcHMuY29uc29sZS5zY3JpcHRzLnN0cnVjdHVyZXD/////ByiTW6DucpFMqqgH126PxpORAAApamV0YnJhaW5zLm1wcy5jb25zb2xlLmJsQ29tbWFuZC5zdHJ1Y3R1cmVw/////wcoE1pgbwN2TFyauEAw8FGgYgAAK2pldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kcy5zdHJ1Y3R1cmVw/////wcokERSBqlzTB23YDDlx3t0lwAAMGpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRzLnN0cnVjdHVyZXD/////urq6ugAAAAEAARhaR5k3/iI53///ewAAAAAAAAAAAAIAAxhaR5k3/iI6FQAAewAAAAAAAAAAAAB9AAIYWkeZN/4iOhYAAXsAAQAAAQAAAAkAAAAAAAAAAH19" />
+        </TabState>
+      </list>
+    </option>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DefaultSearchOptions2">
+    <search_options>
+      <option class_name="jetbrains.mps.ide.findusages.view.optionseditor.options.ViewOptions">
+        <flags show_one_result="true" new_tab="false" />
+      </option>
+      <option class_name="jetbrains.mps.ide.findusages.view.optionseditor.options.ScopeOptions">
+        <scope_type scope_type="PROJECT" module="&lt;default&gt;" model="&lt;default&gt;" />
+      </option>
+    </search_options>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Process" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Process">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="111" />
+                    <property name="caretXRelative" value="36" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="name" cellNumber="0" isInList="false">
+                      <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610904753" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610904753" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcessRef" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/ProcessRef">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="115" />
+                    <property name="caretXRelative" value="8" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526334579" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526334578" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Submit" pinned="false" current-in-tab="false">
+        <entry file="mps://node://playground/model/Submit">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="31" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellNumber="0" isInList="true">
+                      <node node_reference="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/6505336652526301848" />
+                      <parent cellId="refNodeList_outputs" cellNumber="0" isInList="false">
+                        <node node_reference="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/7457140171610962421" />
+                      </parent>
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers>
+                  <errorMarker text="" propertyCell="false" cellNumber="0" isInList="true">
+                    <node node_reference="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/6505336652526301848" />
+                    <parent cellId="refNodeList_outputs" cellNumber="0" isInList="false">
+                      <node node_reference="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/7457140171610962421" />
+                    </parent>
+                  </errorMarker>
+                </errorMarkers>
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <folded />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Workflow" pinned="false" current-in-tab="true">
+        <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Workflow">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="31" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="emptyRefPlaceHolder" cellNumber="0" isInList="false">
+                      <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyWorkflow" pinned="false" current-in-tab="false">
+        <entry file="mps://node://playground/model/MyWorkflow">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="71" />
+                    <property name="caretXRelative" value="56" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="constant_0" cellNumber="0" isInList="false">
+                      <node node_reference="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/6505336652526334572" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <folded />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConditionalScript" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/ConditionalScript">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="383" />
+                    <property name="caretXRelative" value="140" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/6505336652525961824" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/6505336652525961824" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Output" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Output">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="199" />
+                    <property name="caretXRelative" value="52" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="name" cellNumber="0" isInList="false">
+                      <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610954012" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610954012" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Script" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Script">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="175" />
+                    <property name="caretXRelative" value="28" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="name" cellNumber="0" isInList="false">
+                      <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610954017" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610954017" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingleLineScript" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/SingleLineScript">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="375" />
+                    <property name="caretXRelative" value="132" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/7457140171610968843" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/7457140171610968843" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Input" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Input">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="191" />
+                    <property name="caretXRelative" value="44" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="name" cellNumber="0" isInList="false">
+                      <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610928311" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610928311" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MPSBookmarkManager">
+    <option name="myBookmarkInfos">
+      <array>
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+      </array>
+    </option>
+  </component>
+  <component name="MPSVcsConfiguration">
+    <option name="ignoreGeneratedFiles" value="true" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectPluginManager">
+    <option name="pluginsState">
+      <option name="jetbrains.mps.baseLanguage.pluginSolution.plugin.PluginSolution_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.execution.configurations.implementation.plugin.plugin.Plugin_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.PluginSolution_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.ide.actions.Ide_ProjectPlugin">
+        <value>
+          <PluginState>
+            <option name="myComponentsState">
+              <list>
+                <ComponentState>
+                  <option name="first" value="jetbrains.mps.ide.actions.BehaviorDialogsPersistentOptions_PreferencesComponent" />
+                  <params>
+                    <option name="addReturnsOnImplement" value="false" />
+                    <option name="sortAlphabetically" value="false" />
+                    <option name="removeAttributes" value="true" />
+                  </params>
+                </ComponentState>
+              </list>
+            </option>
+          </PluginState>
+        </value>
+      </option>
+      <option name="jetbrains.mps.ide.devkit.actions.Mpsdevkit_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="org.campagnelab.editor.plugins.plugin.Plugins_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="org.campagnelab.runR.plugin.RunR_ProjectPlugin">
+        <value>
+          <PluginState>
+            <option name="myComponentsState">
+              <list>
+                <ComponentState>
+                  <option name="first" value="org.campagnelab.runR.plugin.DockerPreferences_PreferencesComponent" />
+                  <params>
+                    <option name="dockerOptions" />
+                    <option name="dockerCommandPath" />
+                    <option name="imageName" />
+                    <option name="useDockerByDefault" value="false" />
+                  </params>
+                </ComponentState>
+              </list>
+            </option>
+          </PluginState>
+        </value>
+      </option>
+    </option>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers ProjectPane="true" />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="FileSystem" />
+      <pane id="Favorites" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.workflow">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.workflow">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.workflow.editor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.workflow">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.workflow.structure">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="playground">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="model">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="preferences.pathVariables" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JUnit Tests" factoryName="JUnit Tests">
+      <MyState />
+      <myJUnitSettings>
+        <MyState>
+          <option name="myModel" />
+          <option name="myModule" />
+          <option name="myLightExec" value="true" />
+          <option name="myReuseCaches" value="true" />
+          <option name="myDebug" value="false" />
+          <option name="myCachesPath" value="/var/folders/7c/dskpdg6x6f384r541lfzmjk00000gp/T/mps_test_dir0" />
+          <option name="myTestCases">
+            <list />
+          </option>
+          <option name="myTestMethods">
+            <list />
+          </option>
+          <option name="myRunType" value="0" />
+        </MyState>
+      </myJUnitSettings>
+      <myJavaRunParameters>
+        <MyState>
+          <option name="myJavaRunParameters">
+            <JavaRunParameters>
+              <option name="jrePath" />
+              <option name="programParameters" />
+              <option name="useAlternativeJre" value="false" />
+              <option name="vmOptions" />
+              <option name="workingDirectory" />
+            </JavaRunParameters>
+          </option>
+        </MyState>
+      </myJavaRunParameters>
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="MetaR Table Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="UsagesViewTool">
+    <version id="0.9997" />
+    <tabs />
+    <default_view_options>
+      <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
+    </default_view_options>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Import skeleton project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Import skeleton project." />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Process">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/7457140171610962421" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/7457140171610983598" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://playground/model/Submit">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="31" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="empty_outputs" cellNumber="0" isInList="false">
+                  <node node_reference="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/7457140171610962421" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/7457140171610962421" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Output">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="199" />
+                <property name="caretXRelative" value="52" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610954012" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/7457140171610962421" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610954012" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Script">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="175" />
+                <property name="caretXRelative" value="28" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610954017" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/7457140171610962421" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610954017" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/SingleLineScript">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/7457140171610962421" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/7457140171610968843" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Input">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="191" />
+                <property name="caretXRelative" value="44" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610928311" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/7457140171610962421" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610928311" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure/INamedConcept">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="263" />
+                <property name="caretXRelative" value="108" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194658468" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/7457140171610962421" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194658468" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Process">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="111" />
+                <property name="caretXRelative" value="36" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610904753" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610904753" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure/INamedConcept">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="263" />
+                <property name="caretXRelative" value="108" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194658468" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610904753" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194658468" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Input">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="191" />
+                <property name="caretXRelative" value="44" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610928311" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610928311" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Output">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="199" />
+                <property name="caretXRelative" value="52" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610954012" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610954012" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Script">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="175" />
+                <property name="caretXRelative" value="28" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610954017" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/7457140171610954017" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/SingleLineScript">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="375" />
+                <property name="caretXRelative" value="132" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/7457140171610968843" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/7457140171610968843" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://playground/model/Submit">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="31" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellNumber="0" isInList="true">
+                  <node node_reference="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/6505336652526301848" />
+                  <parent cellId="refNodeList_outputs" cellNumber="0" isInList="false">
+                    <node node_reference="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/7457140171610962421" />
+                  </parent>
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="false" cellNumber="0" isInList="true">
+                <node node_reference="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/6505336652526301848" />
+                <parent cellId="refNodeList_outputs" cellNumber="0" isInList="false">
+                  <node node_reference="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/7457140171610962421" />
+                </parent>
+              </errorMarker>
+            </errorMarkers>
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/ConditionalScript">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="383" />
+                <property name="caretXRelative" value="140" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/6505336652525961824" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/6505336652525961824" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/Workflow">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="31" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="emptyRefPlaceHolder" cellNumber="0" isInList="false">
+                  <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://playground/model/MyWorkflow">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="constant_0" cellNumber="0" isInList="false">
+                  <node node_reference="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)/6505336652526334572" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.workflow/org.campagnelab.workflow.structure/ProcessRef">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="115" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526334579" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526301852" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)/6505336652526334578" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
