@@ -17,8 +17,26 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 0:
         return Collections.<ConceptEditor>singletonList(new ConditionalScript_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new Process_Editor());
+        return Collections.<ConceptEditor>singletonList(new InputBoolean_Editor());
       case 2:
+        return Collections.<ConceptEditor>singletonList(new InputFile_Editor());
+      case 3:
+        return Collections.<ConceptEditor>singletonList(new InputInteger_Editor());
+      case 4:
+        return Collections.<ConceptEditor>singletonList(new InputString_Editor());
+      case 5:
+        return Collections.<ConceptEditor>singletonList(new OutputBoolean_Editor());
+      case 6:
+        return Collections.<ConceptEditor>singletonList(new OutputFile_Editor());
+      case 7:
+        return Collections.<ConceptEditor>singletonList(new OutputInteger_Editor());
+      case 8:
+        return Collections.<ConceptEditor>singletonList(new OutputString_Editor());
+      case 9:
+        return Collections.<ConceptEditor>singletonList(new Process_Editor());
+      case 10:
+        return Collections.<ConceptEditor>singletonList(new ProcessRef_Editor());
+      case 11:
         return Collections.<ConceptEditor>singletonList(new SingleLineScript_Editor());
       default:
     }
@@ -29,5 +47,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.workflow.structure.ConditionalScript", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.SingleLineScript"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.workflow.structure.ConditionalScript", "org.campagnelab.workflow.structure.InputBoolean", "org.campagnelab.workflow.structure.InputFile", "org.campagnelab.workflow.structure.InputInteger", "org.campagnelab.workflow.structure.InputString", "org.campagnelab.workflow.structure.OutputBoolean", "org.campagnelab.workflow.structure.OutputFile", "org.campagnelab.workflow.structure.OutputInteger", "org.campagnelab.workflow.structure.OutputString", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.SingleLineScript"};
 }

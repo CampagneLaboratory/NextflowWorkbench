@@ -1,17 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <root>
+    <file name="ArrayOfIntegers_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ArrayOfIntegers_BehaviorDescriptor" />
+    </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,30,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,54,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="Channel_BehaviorDescriptor.java">
+      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.Channel_BehaviorDescriptor" />
     </file>
     <file name="ConditionalScript_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ConditionalScript_BehaviorDescriptor" />
     </file>
+    <file name="InputBoolean_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.InputBoolean_BehaviorDescriptor" />
+    </file>
+    <file name="InputChannel_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.InputChannel_BehaviorDescriptor" />
+    </file>
+    <file name="InputFile_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.InputFile_BehaviorDescriptor" />
+    </file>
+    <file name="InputInteger_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.InputInteger_BehaviorDescriptor" />
+    </file>
+    <file name="InputString_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.InputString_BehaviorDescriptor" />
+    </file>
     <file name="Input_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.Input_BehaviorDescriptor" />
+      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.Input_BehaviorDescriptor" />
+    </file>
+    <file name="OutputBoolean_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.OutputBoolean_BehaviorDescriptor" />
+    </file>
+    <file name="OutputChannel_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.OutputChannel_BehaviorDescriptor" />
+    </file>
+    <file name="OutputFile_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.OutputFile_BehaviorDescriptor" />
+    </file>
+    <file name="OutputInteger_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.OutputInteger_BehaviorDescriptor" />
+    </file>
+    <file name="OutputString_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.OutputString_BehaviorDescriptor" />
     </file>
     <file name="Output_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.Output_BehaviorDescriptor" />
+      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.Output_BehaviorDescriptor" />
     </file>
     <file name="ProcessRef_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ProcessRef_BehaviorDescriptor" />
