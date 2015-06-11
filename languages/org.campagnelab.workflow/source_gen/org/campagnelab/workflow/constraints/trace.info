@@ -1,3 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info />
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="10,0,30,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/8369613327464641695">
+    <file name="InputChannel_Constraints.java">
+      <node id="8369613327464641695" at="32,37,33,98" concept="10" />
+      <node id="8369613327464641695" at="36,98,37,135" concept="5" />
+      <node id="8369613327464641695" at="40,44,41,20" concept="6" />
+      <node id="8369613327464641695" at="48,63,49,58" concept="6" />
+      <node id="3448966255157796773" at="53,13,54,427" concept="5" />
+      <node id="3448966255158119468" at="55,40,56,384" concept="2" />
+      <node id="3448966255158646269" at="59,49,60,28" concept="7" />
+      <node id="3448966255157723213" at="60,28,61,267" concept="6" />
+      <node id="8369613327464641695" at="68,7,69,22" concept="6" />
+      <node id="8369613327464641695" at="71,0,72,0" concept="8" trace="LOG" />
+      <node id="8369613327464641695" at="72,0,73,0" concept="8" trace="breakingNode_op4ui0_a0a0a0a0a1a0b0a1a1" />
+      <node id="3448966255158108888" at="73,87,74,46" concept="6" />
+      <node id="8369613327464641695" at="32,0,35,0" concept="1" trace="InputChannel_Constraints#()V" />
+      <node id="3448966255158119468" at="54,427,57,15" concept="0" />
+      <node id="3448966255158119468" at="54,427,57,15" concept="3" />
+      <node id="3448966255158108888" at="73,0,76,0" concept="9" trace="eq_op4ui0_a0b0a0a0a0a2a0a1a0a0a1a0b0a1a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="8369613327464641695" at="39,0,43,0" concept="4" trace="hasOwnScopeProvider#()Z" />
+      <node id="8369613327464641695" at="47,0,51,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="3448966255157722953" at="59,0,63,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3448966255157516170" at="57,15,63,18" concept="6" />
+      <node id="8369613327464641695" at="52,122,64,13" concept="0" />
+      <node id="8369613327464641695" at="51,0,66,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="8369613327464641695" at="45,56,66,10" concept="6" />
+      <node id="8369613327464641695" at="43,0,68,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="8369613327464641695" at="37,135,68,7" concept="2" />
+      <node id="8369613327464641695" at="35,0,71,0" concept="4" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="8369613327464641695" at="32,37,33,98" />
+      <scope id="8369613327464641695" at="40,44,41,20" />
+      <scope id="8369613327464641695" at="48,63,49,58" />
+      <scope id="3448966255158119468" at="55,40,56,384" />
+      <scope id="3448966255158108888" at="73,87,74,46" />
+      <scope id="3448966255157722954" at="59,49,61,267" />
+      <scope id="8369613327464641695" at="32,0,35,0" />
+      <scope id="3448966255158119468" at="54,427,57,15" />
+      <scope id="3448966255158108888" at="73,0,76,0">
+        <var name="a" id="3448966255158108888" />
+        <var name="b" id="3448966255158108888" />
+      </scope>
+      <scope id="8369613327464641695" at="39,0,43,0" />
+      <scope id="8369613327464641695" at="47,0,51,0" />
+      <scope id="3448966255157722953" at="59,0,63,0">
+        <var name="it" id="3448966255157722953" />
+      </scope>
+      <scope id="3448966255156905024" at="53,13,63,18">
+        <var name="inType" id="3448966255157796776" />
+      </scope>
+      <scope id="8369613327464641695" at="52,122,64,13" />
+      <scope id="8369613327464641695" at="51,0,66,0">
+        <var name="_context" id="8369613327464641695" />
+        <var name="operationContext" id="8369613327464641695" />
+      </scope>
+      <scope id="8369613327464641695" at="45,56,66,10" />
+      <scope id="8369613327464641695" at="43,0,68,0" />
+      <scope id="8369613327464641695" at="36,98,69,22">
+        <var name="references" id="8369613327464641695" />
+      </scope>
+      <scope id="8369613327464641695" at="35,0,71,0" />
+      <unit id="3448966255157722953" at="58,510,63,15" name="org.campagnelab.workflow.constraints.InputChannel_Constraints$3" />
+      <unit id="8369613327464641695" at="46,19,66,9" name="org.campagnelab.workflow.constraints.InputChannel_Constraints$2" />
+      <unit id="8369613327464641695" at="38,128,68,5" name="org.campagnelab.workflow.constraints.InputChannel_Constraints$1" />
+      <unit id="8369613327464641695" at="31,0,77,0" name="org.campagnelab.workflow.constraints.InputChannel_Constraints" />
+    </file>
+  </root>
+</debug-info>
 

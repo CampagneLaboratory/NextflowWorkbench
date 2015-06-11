@@ -11,43 +11,55 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
   }
   public BehaviorDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
-      case 13:
-        return new Process_BehaviorDescriptor();
-      case 15:
-        return new SingleLineScript_BehaviorDescriptor();
-      case 2:
-        return new ConditionalScript_BehaviorDescriptor();
-      case 16:
-        return new Workflow_BehaviorDescriptor();
       case 14:
-        return new ProcessRef_BehaviorDescriptor();
-      case 7:
-        return new InputString_BehaviorDescriptor();
-      case 5:
-        return new InputFile_BehaviorDescriptor();
-      case 12:
-        return new OutputString_BehaviorDescriptor();
-      case 10:
-        return new OutputFile_BehaviorDescriptor();
-      case 1:
-        return new Channel_BehaviorDescriptor();
-      case 6:
-        return new InputInteger_BehaviorDescriptor();
+        return new Process_BehaviorDescriptor();
+      case 16:
+        return new SingleLineScript_BehaviorDescriptor();
       case 3:
-        return new InputBoolean_BehaviorDescriptor();
+        return new ConditionalScript_BehaviorDescriptor();
+      case 18:
+        return new Workflow_BehaviorDescriptor();
+      case 15:
+        return new ProcessRef_BehaviorDescriptor();
+      case 17:
+        return new String_BehaviorDescriptor();
+      case 4:
+        return new File_BehaviorDescriptor();
+      case 13:
+        return new OutputString_BehaviorDescriptor();
       case 11:
+        return new OutputFile_BehaviorDescriptor();
+      case 2:
+        return new Channel_BehaviorDescriptor();
+      case 7:
+        return new Integer_BehaviorDescriptor();
+      case 1:
+        return new Boolean_BehaviorDescriptor();
+      case 12:
         return new OutputInteger_BehaviorDescriptor();
       case 8:
         return new OutputBoolean_BehaviorDescriptor();
-      case 4:
-        return new InputChannel_BehaviorDescriptor();
-      case 9:
-        return new OutputChannel_BehaviorDescriptor();
+      case 6:
+        return new InputChannelTemp_BehaviorDescriptor();
+      case 10:
+        return new OutputChannelTemp_BehaviorDescriptor();
       case 0:
         return new ArrayOfIntegers_BehaviorDescriptor();
+      case 5:
+        return new InputChannel_BehaviorDescriptor();
+      case 22:
+        return new stringChannel_BehaviorDescriptor();
+      case 21:
+        return new integerChannel_BehaviorDescriptor();
+      case 19:
+        return new booleanChannel_BehaviorDescriptor();
+      case 20:
+        return new fileChannel_BehaviorDescriptor();
+      case 9:
+        return new OutputChannel_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.workflow.structure.ArrayOfIntegers", "org.campagnelab.workflow.structure.Channel", "org.campagnelab.workflow.structure.ConditionalScript", "org.campagnelab.workflow.structure.InputBoolean", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.InputFile", "org.campagnelab.workflow.structure.InputInteger", "org.campagnelab.workflow.structure.InputString", "org.campagnelab.workflow.structure.OutputBoolean", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.OutputFile", "org.campagnelab.workflow.structure.OutputInteger", "org.campagnelab.workflow.structure.OutputString", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.SingleLineScript", "org.campagnelab.workflow.structure.Workflow"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.workflow.structure.ArrayOfIntegers", "org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.Channel", "org.campagnelab.workflow.structure.ConditionalScript", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.InputChannelTemp", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.OutputBoolean", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.OutputChannelTemp", "org.campagnelab.workflow.structure.OutputFile", "org.campagnelab.workflow.structure.OutputInteger", "org.campagnelab.workflow.structure.OutputString", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.SingleLineScript", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.Workflow", "org.campagnelab.workflow.structure.booleanChannel", "org.campagnelab.workflow.structure.fileChannel", "org.campagnelab.workflow.structure.integerChannel", "org.campagnelab.workflow.structure.stringChannel"};
 }

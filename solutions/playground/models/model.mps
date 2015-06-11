@@ -14,97 +14,87 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="4968930737411702420" name="org.campagnelab.workflow.structure.OutputFile" flags="ng" index="2o18UT" />
-      <concept id="4968930737411705051" name="org.campagnelab.workflow.structure.Channel" flags="ng" index="2o1fzQ" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
-        <child id="7457140171610928302" name="inputs" index="2ulM7n" />
+        <child id="7457140171610928302" name="input" index="2ulM7n" />
       </concept>
-      <concept id="7457140171610954017" name="org.campagnelab.workflow.structure.Script" flags="ng" index="2ulSLo" />
       <concept id="7457140171610954022" name="org.campagnelab.workflow.structure.SingleLineScript" flags="ng" index="2ulSLv">
         <property id="7457140171610962426" name="line" index="2ulUM3" />
       </concept>
-      <concept id="7457140171610954012" name="org.campagnelab.workflow.structure.Output" flags="ng" index="2ulSL_" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
-        <reference id="4593100638687748705" name="outChannel" index="H9TFj" />
-        <reference id="4593100638687748696" name="inChannel" index="H9TFE" />
-        <child id="4593100638687528369" name="inChannel" index="HaJO3" />
-        <child id="4593100638687528440" name="outChannel" index="HaJPa" />
+        <child id="8369613327464344476" name="outChannel" index="1uLvPA" />
+        <child id="8369613327464344471" name="inChannel" index="1uLvPH" />
       </concept>
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
-        <child id="4593100638687717130" name="inChannel" index="H91YS" />
-        <child id="4593100638687176384" name="channels" index="Hb5TM" />
       </concept>
-      <concept id="4593100638687773044" name="org.campagnelab.workflow.structure.ArrayOfIntegers" flags="ng" index="H9NB6" />
-      <concept id="4593100638687769316" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="H9ODm">
-        <child id="4593100638687794226" name="outputs" index="H9IM0" />
+      <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
+      <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
+      <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0">
+        <child id="8369613327464373489" name="outKind" index="1uLkCb" />
       </concept>
-      <concept id="4593100638687765819" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="H9PQ9">
-        <reference id="4593100638687769323" name="ref" index="H9ODp" />
+      <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ChannelType" flags="ng" index="1uLvKC" />
+      <concept id="8369613327464057507" name="org.campagnelab.workflow.structure.booleanChannel" flags="ng" index="1uY1Lp">
+        <child id="8369613327464057508" name="boolean" index="1uY1Lu" />
       </concept>
-      <concept id="4873360496324423604" name="org.campagnelab.workflow.structure.OutputInteger" flags="ng" index="1utKwT" />
-      <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.InputBoolean" flags="ng" index="1utKzZ" />
+      <concept id="8369613327464057502" name="org.campagnelab.workflow.structure.integerChannel" flags="ng" index="1uY1L$">
+        <child id="8369613327464057505" name="integer" index="1uY1Lr" />
+      </concept>
+      <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
+        <child id="8369613327464620973" name="kind" index="1uKrln" />
+      </concept>
     </language>
   </registry>
   <node concept="2$rMIF" id="5D7AjvYaj9G">
     <property role="TrG5h" value="MyWorkflow" />
-    <node concept="2$rEH5" id="3YXYb8iAyjj" role="2$rEHq">
+    <node concept="2$rEH5" id="7gAPJCETtjD" role="2$rEHq">
+      <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
+      <node concept="1uLkD0" id="7gAPJCETtjE" role="1uLvPA">
+        <property role="TrG5h" value="fizz" />
+        <node concept="1uY1Lp" id="2Ztc8$x2p6k" role="1uLkCb" />
+      </node>
+      <node concept="1uYdA0" id="7gAPJCEV3Sr" role="1uLvPH">
+        <node concept="1uLvKC" id="7gAPJCEV3Ss" role="1uKrln" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="7gAPJCETQeo" role="2$rEHq">
       <ref role="2$rEH4" node="3YXYb8i$PQm" resolve="analyze" />
-      <ref role="H9TFE" node="3YXYb8iAA8Q" resolve="X" />
-      <ref role="H9TFj" node="3YXYb8iAA8T" resolve="Y" />
-      <node concept="2o1fzQ" id="3YXYb8iAA8Q" role="HaJO3">
-        <property role="TrG5h" value="X" />
+      <node concept="1uYdA0" id="7gAPJCETVir" role="1uLvPH">
+        <node concept="1uY1Lp" id="2Ztc8$x2p6u" role="1uKrln" />
       </node>
-      <node concept="2o1fzQ" id="3YXYb8iAA8T" role="HaJPa">
-        <property role="TrG5h" value="Y" />
+      <node concept="1uLkD0" id="2Ztc8$wVyZa" role="1uLvPA">
+        <property role="TrG5h" value="B" />
+        <node concept="1uLvKC" id="2Ztc8$wVyZb" role="1uLkCb" />
       </node>
     </node>
-    <node concept="2o1fzQ" id="3YXYb8i_CsR" role="Hb5TM">
-      <property role="TrG5h" value="f" />
-    </node>
-    <node concept="2o1fzQ" id="3YXYb8iAyjs" role="H91YS" />
   </node>
   <node concept="2ulcR8" id="3YXYb8i$PQm">
     <property role="TrG5h" value="analyze" />
     <node concept="2ulSLv" id="3YXYb8i$PR3" role="2ulM7a">
       <property role="2ulUM3" value="echo this is a script" />
     </node>
-    <node concept="1utKwT" id="3YXYb8i$PQZ" role="2ulM79">
-      <property role="TrG5h" value="y" />
+    <node concept="1uY1Lp" id="2Ztc8$x1_oA" role="2ulM7n">
+      <node concept="1utKzZ" id="2Ztc8$x1_oB" role="1uY1Lu">
+        <property role="TrG5h" value="pop" />
+      </node>
     </node>
-    <node concept="1utKzZ" id="3YXYb8iAEkP" role="2ulM7n">
-      <property role="TrG5h" value="fizz" />
-    </node>
-  </node>
-  <node concept="2o1fzQ" id="3YXYb8iAAi6">
-    <property role="TrG5h" value="X" />
-  </node>
-  <node concept="2o1fzQ" id="3YXYb8iAAkl">
-    <property role="TrG5h" value="Y" />
-  </node>
-  <node concept="2ulcR8" id="3YXYb8iAEl2">
-    <property role="TrG5h" value="P1" />
-    <node concept="2ulSLo" id="3YXYb8iAEl3" role="2ulM7a" />
-    <node concept="H9NB6" id="3YXYb8iALgs" role="2ulM7n">
-      <property role="TrG5h" value="bb" />
-    </node>
-    <node concept="H9ODm" id="3YXYb8iANbo" role="2ulM79">
-      <property role="TrG5h" value="p1out" />
-      <node concept="2o18UT" id="3YXYb8iANbu" role="H9IM0">
-        <property role="TrG5h" value="pppp" />
+    <node concept="1uY1L$" id="2Ztc8$x1_oG" role="2ulM79">
+      <node concept="1utKN4" id="2Ztc8$x1_oH" role="1uY1Lr">
+        <property role="TrG5h" value="bash" />
       </node>
     </node>
   </node>
-  <node concept="2ulcR8" id="3YXYb8iAG5F">
-    <property role="TrG5h" value="P2" />
-    <node concept="2ulSLo" id="3YXYb8iAG5G" role="2ulM7a" />
-    <node concept="2ulSL_" id="3YXYb8iAG5H" role="2ulM79" />
-    <node concept="H9PQ9" id="3YXYb8iAG5I" role="2ulM7n">
-      <property role="TrG5h" value="InP2" />
-      <ref role="H9ODp" node="3YXYb8iANbo" resolve="p1out" />
+  <node concept="2ulcR8" id="3YXYb8iAEl2">
+    <property role="TrG5h" value="submit" />
+    <node concept="2ulSLv" id="7gAPJCETFNV" role="2ulM7a">
+      <property role="2ulUM3" value="echo &quot;submit&quot;" />
+    </node>
+    <node concept="1uY1Lp" id="2Ztc8$x1_ow" role="2ulM79">
+      <node concept="1utKzZ" id="2Ztc8$x1_ox" role="1uY1Lu">
+        <property role="TrG5h" value="fizz" />
+      </node>
     </node>
   </node>
 </model>
