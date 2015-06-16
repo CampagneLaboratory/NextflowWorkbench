@@ -21,30 +21,42 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 2:
         return Collections.<ConceptEditor>singletonList(new File_Editor());
       case 3:
-        return Collections.<ConceptEditor>singletonList(new Integer_Editor());
+        return Collections.<ConceptEditor>singletonList(new InputChannel_Editor());
       case 4:
-        return Collections.<ConceptEditor>singletonList(new OutputBoolean_Editor());
+        return Collections.<ConceptEditor>singletonList(new Integer_Editor());
       case 5:
-        return Collections.<ConceptEditor>singletonList(new OutputFile_Editor());
+        return Collections.<ConceptEditor>singletonList(new OutputBoolean_Editor());
       case 6:
-        return Collections.<ConceptEditor>singletonList(new OutputInteger_Editor());
+        return Collections.<ConceptEditor>singletonList(new OutputChannel_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new OutputString_Editor());
+        return Collections.<ConceptEditor>singletonList(new OutputFile_Editor());
       case 8:
-        return Collections.<ConceptEditor>singletonList(new Process_Editor());
+        return Collections.<ConceptEditor>singletonList(new OutputInteger_Editor());
       case 9:
-        return Collections.<ConceptEditor>singletonList(new SingleLineScript_Editor());
+        return Collections.<ConceptEditor>singletonList(new OutputString_Editor());
       case 10:
-        return Collections.<ConceptEditor>singletonList(new String_Editor());
+        return Collections.<ConceptEditor>singletonList(new Process_Editor());
       case 11:
-        return Collections.<ConceptEditor>singletonList(new Workflow_Editor());
+        return Collections.<ConceptEditor>singletonList(new ProcessRef_Editor());
       case 12:
-        return Collections.<ConceptEditor>singletonList(new booleanChannel_Editor());
+        return Collections.<ConceptEditor>singletonList(new SingleLineScript_Editor());
       case 13:
-        return Collections.<ConceptEditor>singletonList(new fileChannel_Editor());
+        return Collections.<ConceptEditor>singletonList(new String_Editor());
       case 14:
-        return Collections.<ConceptEditor>singletonList(new integerChannel_Editor());
+        return Collections.<ConceptEditor>singletonList(new Workflow_Editor());
       case 15:
+        return Collections.<ConceptEditor>singletonList(new booleanChannel_Editor());
+      case 16:
+        return Collections.<ConceptEditor>singletonList(new fileChannel_Editor());
+      case 17:
+        return Collections.<ConceptEditor>singletonList(new integerChannel_Editor());
+      case 18:
+        return Collections.<ConceptEditor>singletonList(new scriptBooleanArgs_Editor());
+      case 19:
+        return Collections.<ConceptEditor>singletonList(new scriptIntegerArgs_Editor());
+      case 20:
+        return Collections.<ConceptEditor>singletonList(new scriptStringArgs_Editor());
+      case 21:
         return Collections.<ConceptEditor>singletonList(new stringChannel_Editor());
       default:
     }
@@ -55,5 +67,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.ConditionalScript", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.OutputBoolean", "org.campagnelab.workflow.structure.OutputFile", "org.campagnelab.workflow.structure.OutputInteger", "org.campagnelab.workflow.structure.OutputString", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.SingleLineScript", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.Workflow", "org.campagnelab.workflow.structure.booleanChannel", "org.campagnelab.workflow.structure.fileChannel", "org.campagnelab.workflow.structure.integerChannel", "org.campagnelab.workflow.structure.stringChannel"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.ConditionalScript", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.OutputBoolean", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.OutputFile", "org.campagnelab.workflow.structure.OutputInteger", "org.campagnelab.workflow.structure.OutputString", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.SingleLineScript", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.Workflow", "org.campagnelab.workflow.structure.booleanChannel", "org.campagnelab.workflow.structure.fileChannel", "org.campagnelab.workflow.structure.integerChannel", "org.campagnelab.workflow.structure.scriptBooleanArgs", "org.campagnelab.workflow.structure.scriptIntegerArgs", "org.campagnelab.workflow.structure.scriptStringArgs", "org.campagnelab.workflow.structure.stringChannel"};
 }
