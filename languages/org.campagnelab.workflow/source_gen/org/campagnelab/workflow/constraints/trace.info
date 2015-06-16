@@ -1,3 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info />
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="10,0,35,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/243723893421093732">
+    <file name="SingleLineScript_Constraints.java">
+      <node id="243723893421093732" at="9,41,10,98" concept="1" />
+      <node id="243723893421093732" at="9,0,12,0" concept="0" trace="SingleLineScript_Constraints#()V" />
+      <scope id="243723893421093732" at="9,41,10,98" />
+      <scope id="243723893421093732" at="9,0,12,0" />
+      <unit id="243723893421093732" at="8,0,13,0" name="org.campagnelab.workflow.constraints.SingleLineScript_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/8369613327464641695">
+    <file name="InputChannel_Constraints.java">
+      <node id="8369613327464641695" at="9,37,10,98" concept="1" />
+      <node id="8369613327464641695" at="9,0,12,0" concept="0" trace="InputChannel_Constraints#()V" />
+      <scope id="8369613327464641695" at="9,37,10,98" />
+      <scope id="8369613327464641695" at="9,0,12,0" />
+      <unit id="8369613327464641695" at="8,0,13,0" name="org.campagnelab.workflow.constraints.InputChannel_Constraints" />
+    </file>
+  </root>
+</debug-info>
 
