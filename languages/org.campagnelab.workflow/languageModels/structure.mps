@@ -309,7 +309,7 @@
   </node>
   <node concept="1TIwiD" id="7gAPJCERFHl">
     <property role="3GE5qa" value="channelTypes" />
-    <property role="TrG5h" value="stringChannel" />
+    <property role="TrG5h" value="StringChannel" />
     <property role="34LRSv" value="string input channel" />
     <property role="R4oN_" value="this channel will contain strings" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ChannelType" />
@@ -322,7 +322,7 @@
   </node>
   <node concept="1TIwiD" id="7gAPJCERGEu">
     <property role="3GE5qa" value="channelTypes" />
-    <property role="TrG5h" value="integerChannel" />
+    <property role="TrG5h" value="IntegerChannel" />
     <property role="34LRSv" value="integer input channel" />
     <property role="R4oN_" value="this channel will contain integers" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ChannelType" />
@@ -335,7 +335,7 @@
   </node>
   <node concept="1TIwiD" id="7gAPJCERGEz">
     <property role="3GE5qa" value="channelTypes" />
-    <property role="TrG5h" value="booleanChannel" />
+    <property role="TrG5h" value="BooleanChannel" />
     <property role="34LRSv" value="boolean input channel" />
     <property role="R4oN_" value="this channel will contain booleans" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ChannelType" />
@@ -348,7 +348,7 @@
   </node>
   <node concept="1TIwiD" id="7gAPJCERGEA">
     <property role="3GE5qa" value="channelTypes" />
-    <property role="TrG5h" value="fileChannel" />
+    <property role="TrG5h" value="FileChannel" />
     <property role="34LRSv" value="file input channel" />
     <property role="R4oN_" value="this channel will contain files" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ChannelType" />
