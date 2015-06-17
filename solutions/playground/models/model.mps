@@ -66,6 +66,9 @@
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
       </concept>
+      <concept id="8074343669091902386" name="org.campagnelab.workflow.structure.ChannelRef" flags="ng" index="3YE7tV">
+        <reference id="8074343669091902431" name="ref" index="3YE7sm" />
+      </concept>
     </language>
   </registry>
   <node concept="2$rMIF" id="5D7AjvYaj9G">
@@ -139,10 +142,26 @@
   </node>
   <node concept="2ulcR8" id="70dPcAeCWKy">
     <property role="TrG5h" value="TestRichScript" />
+    <node concept="1uY1Ls" id="70dPcAeD8rE" role="2ulM7n">
+      <node concept="16pRw0" id="70dPcAeD8rG" role="1uY1Lt">
+        <property role="TrG5h" value="myFile" />
+      </node>
+    </node>
+    <node concept="1uY1Ls" id="70dPcAeDzna" role="2ulM7n">
+      <node concept="16pRw0" id="70dPcAeDznc" role="1uY1Lt">
+        <property role="TrG5h" value="myFile2" />
+      </node>
+    </node>
     <node concept="3Y$Zt1" id="70dPcAeCYDP" role="2ulM7a">
       <node concept="19SGf9" id="70dPcAeCYDR" role="3Y$PkS">
         <node concept="19SUe$" id="70dPcAeCYDS" role="19SJt6">
-          <property role="19SUeA" value="fdsfsdfx&#10;&#10;&#10;" />
+          <property role="19SUeA" value="fdsfsdfx&#10;" />
+        </node>
+        <node concept="3YE7tV" id="70dPcAeDznv" role="19SJt6">
+          <ref role="3YE7sm" node="3pxfPu9P_YD" />
+        </node>
+        <node concept="19SUe$" id="70dPcAeDznu" role="19SJt6">
+          <property role="19SUeA" value="&#10;&#10;&#10;" />
         </node>
       </node>
     </node>
