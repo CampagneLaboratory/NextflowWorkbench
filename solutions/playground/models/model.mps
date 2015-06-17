@@ -48,16 +48,16 @@
         <child id="8369613327464373489" name="outKind" index="1uLkCb" />
       </concept>
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ChannelType" flags="ng" index="1uLvKC" />
-      <concept id="8369613327464057507" name="org.campagnelab.workflow.structure.booleanChannel" flags="ng" index="1uY1Lp">
+      <concept id="8369613327464057507" name="org.campagnelab.workflow.structure.BooleanChannel" flags="ng" index="1uY1Lp">
         <child id="8369613327464057508" name="boolean" index="1uY1Lu" />
       </concept>
-      <concept id="8369613327464057510" name="org.campagnelab.workflow.structure.fileChannel" flags="ng" index="1uY1Ls">
+      <concept id="8369613327464057510" name="org.campagnelab.workflow.structure.FileChannel" flags="ng" index="1uY1Ls">
         <child id="8369613327464057511" name="file" index="1uY1Lt" />
       </concept>
-      <concept id="8369613327464057502" name="org.campagnelab.workflow.structure.integerChannel" flags="ng" index="1uY1L$">
+      <concept id="8369613327464057502" name="org.campagnelab.workflow.structure.IntegerChannel" flags="ng" index="1uY1L$">
         <child id="8369613327464057505" name="integer" index="1uY1Lr" />
       </concept>
-      <concept id="8369613327464053589" name="org.campagnelab.workflow.structure.stringChannel" flags="ng" index="1uY6QJ">
+      <concept id="8369613327464053589" name="org.campagnelab.workflow.structure.StringChannel" flags="ng" index="1uY6QJ">
         <child id="8369613327464373545" name="string" index="1uLkJj" />
       </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
@@ -142,9 +142,9 @@
   </node>
   <node concept="2ulcR8" id="70dPcAeCWKy">
     <property role="TrG5h" value="TestRichScript" />
-    <node concept="1uY1Ls" id="70dPcAeD8rE" role="2ulM7n">
-      <node concept="16pRw0" id="70dPcAeD8rG" role="1uY1Lt">
-        <property role="TrG5h" value="myFile" />
+    <node concept="1uY6QJ" id="70dPcAeGInK" role="2ulM7n">
+      <node concept="16pbKc" id="70dPcAeGInM" role="1uLkJj">
+        <property role="TrG5h" value="anyInputString" />
       </node>
     </node>
     <node concept="1uY1Ls" id="70dPcAeDzna" role="2ulM7n">
@@ -155,13 +155,13 @@
     <node concept="3Y$Zt1" id="70dPcAeCYDP" role="2ulM7a">
       <node concept="19SGf9" id="70dPcAeCYDR" role="3Y$PkS">
         <node concept="19SUe$" id="70dPcAeCYDS" role="19SJt6">
-          <property role="19SUeA" value="cat " />
+          <property role="19SUeA" value="cat &quot;" />
         </node>
         <node concept="3YE7tV" id="70dPcAeEN03" role="19SJt6">
-          <ref role="3YE7sm" node="70dPcAeD8rG" resolve="myFile" />
+          <ref role="3YE7sm" node="70dPcAeGInM" resolve="anyInputString" />
         </node>
         <node concept="19SUe$" id="70dPcAeEN02" role="19SJt6">
-          <property role="19SUeA" value=" &gt; " />
+          <property role="19SUeA" value="&quot; &gt; " />
         </node>
         <node concept="3YE7tV" id="70dPcAeEN0p" role="19SJt6">
           <ref role="3YE7sm" node="70dPcAeDznc" resolve="myFile2" />

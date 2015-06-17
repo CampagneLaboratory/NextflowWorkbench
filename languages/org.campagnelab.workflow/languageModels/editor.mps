@@ -25,9 +25,15 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
@@ -160,6 +166,9 @@
       </node>
       <node concept="3F0A7n" id="4exDSOtQ7Lw" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VechU" id="70dPcAeG$Y7" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
       </node>
       <node concept="l2Vlx" id="4exDSOtPHRe" role="2iSdaV" />
     </node>
@@ -198,6 +207,9 @@
       </node>
       <node concept="3F0A7n" id="4exDSOtQcK9" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VechU" id="70dPcAeG$Yg" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
       </node>
       <node concept="l2Vlx" id="4exDSOtQcKd" role="2iSdaV" />
     </node>
@@ -211,6 +223,9 @@
       </node>
       <node concept="3F0A7n" id="4exDSOtQcKS" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VechU" id="70dPcAeG$Yp" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
       </node>
       <node concept="l2Vlx" id="4exDSOtQcKW" role="2iSdaV" />
     </node>
@@ -224,6 +239,9 @@
       </node>
       <node concept="3F0A7n" id="4exDSOtQcLB" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VechU" id="70dPcAeFn44" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
       </node>
       <node concept="l2Vlx" id="4exDSOtQcLF" role="2iSdaV" />
     </node>
@@ -329,21 +347,21 @@
   </node>
   <node concept="24kQdi" id="7gAPJCEToDf">
     <property role="3GE5qa" value="channelTypes" />
-    <ref role="1XX52x" to="iowz:7gAPJCERGEz" resolve="booleanChannel" />
+    <ref role="1XX52x" to="iowz:7gAPJCERGEz" resolve="BooleanChannel" />
     <node concept="3F1sOY" id="7gAPJCEToDh" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:7gAPJCERGE$" />
     </node>
   </node>
   <node concept="24kQdi" id="7gAPJCETAKV">
     <property role="3GE5qa" value="channelTypes" />
-    <ref role="1XX52x" to="iowz:7gAPJCERGEu" resolve="integerChannel" />
+    <ref role="1XX52x" to="iowz:7gAPJCERGEu" resolve="IntegerChannel" />
     <node concept="3F1sOY" id="7gAPJCETAKX" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:7gAPJCERGEx" />
     </node>
   </node>
   <node concept="24kQdi" id="7gAPJCETAL5">
     <property role="3GE5qa" value="channelTypes" />
-    <ref role="1XX52x" to="iowz:7gAPJCERGEA" resolve="fileChannel" />
+    <ref role="1XX52x" to="iowz:7gAPJCERGEA" resolve="FileChannel" />
     <node concept="3EZMnI" id="70dPcAeDzok" role="2wV5jI">
       <node concept="2iRfu4" id="70dPcAeDzol" role="2iSdaV" />
       <node concept="3F1sOY" id="7gAPJCETAL7" role="3EZMnx">
@@ -353,7 +371,7 @@
   </node>
   <node concept="24kQdi" id="7gAPJCETALf">
     <property role="3GE5qa" value="channelTypes" />
-    <ref role="1XX52x" to="iowz:7gAPJCERFHl" resolve="stringChannel" />
+    <ref role="1XX52x" to="iowz:7gAPJCERFHl" resolve="StringChannel" />
     <node concept="3F1sOY" id="7gAPJCETALh" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:7gAPJCESTOD" />
     </node>
@@ -513,7 +531,7 @@
     <ref role="1XX52x" to="iowz:70dPcAeDqeM" resolve="ValueInAChannelRef" />
     <node concept="3EZMnI" id="70dPcAeDqiU" role="2wV5jI">
       <node concept="3F0ifn" id="70dPcAeDqja" role="3EZMnx">
-        <property role="3F0ifm" value="${" />
+        <property role="3F0ifm" value="$(" />
       </node>
       <node concept="1iCGBv" id="70dPcAeDqjp" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:70dPcAeDqfv" />
@@ -521,12 +539,21 @@
           <node concept="3F0A7n" id="70dPcAeDqk$" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="11L4FC" id="70Aomqk_K8d" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="11LMrY" id="70Aomqk_K8e" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
           </node>
+        </node>
+        <node concept="VechU" id="70dPcAeF3qL" role="3F10Kt">
+          <property role="Vb096" value="blue" />
         </node>
       </node>
       <node concept="l2Vlx" id="70dPcAeDqiX" role="2iSdaV" />
       <node concept="3F0ifn" id="70dPcAeDqk4" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
+        <property role="3F0ifm" value=")" />
       </node>
     </node>
   </node>
