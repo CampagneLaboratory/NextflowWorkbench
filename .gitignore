@@ -1,1 +1,12 @@
 .mps/workspace.xml
+.mps/vcs.xml
+*/*/source_gen/**/*
+*/*/source_gen.caches/**/*
+*/*/classes_gen/**/*.class
+*/*/classes_gen/**/trace.info
+*.class
+trace.info
+dependencies
+generated
+#QueriesGenerated.java
+solutions/Playground
