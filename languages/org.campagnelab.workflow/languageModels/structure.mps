@@ -192,14 +192,14 @@
     <property role="34LRSv" value="string input" />
     <property role="R4oN_" value="string for input" />
     <property role="3GE5qa" value="types" />
-    <ref role="1TJDcQ" node="70dPcAeD8Uh" resolve="BaseType" />
+    <ref role="1TJDcQ" node="70dPcAeD8Uh" resolve="ValueInAChannel" />
   </node>
   <node concept="1TIwiD" id="1HX2cDt6B3a">
     <property role="TrG5h" value="File" />
     <property role="34LRSv" value="input file" />
     <property role="R4oN_" value="Input a file" />
     <property role="3GE5qa" value="types" />
-    <ref role="1TJDcQ" node="70dPcAeD8Uh" resolve="BaseType" />
+    <ref role="1TJDcQ" node="70dPcAeD8Uh" resolve="ValueInAChannel" />
   </node>
   <node concept="1TIwiD" id="4jPc2RsWa_m">
     <property role="TrG5h" value="OutputString" />
@@ -230,14 +230,14 @@
     <property role="TrG5h" value="Integer" />
     <property role="34LRSv" value="integer input" />
     <property role="R4oN_" value="integer for input" />
-    <ref role="1TJDcQ" node="70dPcAeD8Uh" resolve="BaseType" />
+    <ref role="1TJDcQ" node="70dPcAeD8Uh" resolve="ValueInAChannel" />
   </node>
   <node concept="1TIwiD" id="4exDSOtPEXM">
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="Boolean" />
     <property role="34LRSv" value="boolean input" />
     <property role="R4oN_" value="boolean for input" />
-    <ref role="1TJDcQ" node="70dPcAeD8Uh" resolve="BaseType" />
+    <ref role="1TJDcQ" node="70dPcAeD8Uh" resolve="ValueInAChannel" />
   </node>
   <node concept="1TIwiD" id="4exDSOtPEYO">
     <property role="3GE5qa" value="Outputs" />
@@ -434,7 +434,7 @@
   </node>
   <node concept="1TIwiD" id="70dPcAeD8Uh">
     <property role="3GE5qa" value="types" />
-    <property role="TrG5h" value="BaseType" />
+    <property role="TrG5h" value="ValueInAChannel" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -443,14 +443,14 @@
     </node>
   </node>
   <node concept="1TIwiD" id="70dPcAeDqeM">
-    <property role="TrG5h" value="ChannelRef" />
+    <property role="TrG5h" value="ValueInAChannelRef" />
     <property role="34LRSv" value="$" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="70dPcAeDqfv" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="ref" />
+      <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4jPc2RsWszr" resolve="Channel" />
+      <ref role="20lvS9" node="70dPcAeD8Uh" resolve="ValueInAChannel" />
     </node>
     <node concept="PrWs8" id="70dPcAeDqfq" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />

@@ -46,8 +46,8 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
-    <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
-    <dependency reexport="false">31c91def-a131-41a1-9018-102874f49a12(de.slisson.mps.editor.multiline)</dependency>
+    <dependency reexport="true">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
+    <dependency reexport="true">31c91def-a131-41a1-9018-102874f49a12(de.slisson.mps.editor.multiline)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
