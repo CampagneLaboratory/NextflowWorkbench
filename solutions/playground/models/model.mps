@@ -3,11 +3,20 @@
   <persistence version="9" />
   <languages>
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="0" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
   </languages>
   <imports>
     <import index="2hwc" ref="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)" />
   </imports>
   <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -53,6 +62,9 @@
       </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
+      </concept>
+      <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
+        <child id="8074343669091434993" name="text" index="3Y$PkS" />
       </concept>
     </language>
   </registry>
@@ -124,6 +136,16 @@
   </node>
   <node concept="2ulcR8" id="3ETEwC$kWb_">
     <node concept="2ulSLo" id="3ETEwC$kWbA" role="2ulM7a" />
+  </node>
+  <node concept="2ulcR8" id="70dPcAeCWKy">
+    <property role="TrG5h" value="TestRichScript" />
+    <node concept="3Y$Zt1" id="70dPcAeCYDP" role="2ulM7a">
+      <node concept="19SGf9" id="70dPcAeCYDR" role="3Y$PkS">
+        <node concept="19SUe$" id="70dPcAeCYDS" role="19SJt6">
+          <property role="19SUeA" value="fdsfsdfx&#10;&#10;&#10;" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

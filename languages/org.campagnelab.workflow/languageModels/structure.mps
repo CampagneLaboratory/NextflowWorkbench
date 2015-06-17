@@ -429,5 +429,17 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="70dPcAeBye8">
+    <property role="3GE5qa" value="Script" />
+    <property role="TrG5h" value="RichScript" />
+    <property role="R4oN_" value="a script using the richtext plugin" />
+    <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
+    <node concept="1TJgyj" id="70dPcAeBC7L" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+  </node>
 </model>
 
