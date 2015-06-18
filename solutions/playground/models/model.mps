@@ -26,9 +26,12 @@
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="input" index="2ulM7n" />
       </concept>
-      <concept id="7457140171610954017" name="org.campagnelab.workflow.structure.Script" flags="ng" index="2ulSLo" />
-      <concept id="7457140171610954022" name="org.campagnelab.workflow.structure.SingleLineScript" flags="ng" index="2ulSLv" />
-      <concept id="5981541231379827352" name="org.campagnelab.workflow.structure.scriptBooleanArgs" flags="ng" index="2yJvUm" />
+      <concept id="5981541231379827160" name="org.campagnelab.workflow.structure.scriptIntegerArgs" flags="ng" index="2yJvRm">
+        <property id="5981541231379827161" name="intArg" index="2yJvRn" />
+      </concept>
+      <concept id="5981541231379827352" name="org.campagnelab.workflow.structure.scriptBooleanArgs" flags="ng" index="2yJvUm">
+        <property id="5981541231379827353" name="boolArg" index="2yJvUn" />
+      </concept>
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
         <child id="8369613327464344476" name="outChannel" index="1uLvPA" />
@@ -36,7 +39,7 @@
       </concept>
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="4231600285427736086" name="inputArgs" index="uTjgs" />
-        <child id="6505336652526334573" name="processess" index="2$rEHq" />
+        <child id="6505336652526334573" name="processes" index="2$rEHq" />
       </concept>
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
@@ -45,7 +48,6 @@
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0">
         <child id="8369613327464373489" name="outKind" index="1uLkCb" />
       </concept>
-      <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ChannelType" flags="ng" index="1uLvKC" />
       <concept id="8369613327464057507" name="org.campagnelab.workflow.structure.BooleanChannel" flags="ng" index="1uY1Lp">
         <child id="8369613327464057508" name="boolean" index="1uY1Lu" />
       </concept>
@@ -61,6 +63,9 @@
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
       </concept>
+      <concept id="243723893421966316" name="org.campagnelab.workflow.structure.scriptStringArgs" flags="ng" index="3TOe9U">
+        <property id="243723893421966319" name="stringArg" index="3TOe9T" />
+      </concept>
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
       </concept>
@@ -74,7 +79,7 @@
     <node concept="2$rEH5" id="7gAPJCETtjD" role="2$rEHq">
       <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
       <node concept="1uLkD0" id="3pxfPu9P_Yj" role="1uLvPA">
-        <property role="TrG5h" value="pop" />
+        <property role="TrG5h" value="channelPop" />
         <node concept="1uY1Lp" id="3pxfPu9P_Yn" role="1uLkCb">
           <node concept="1utKzZ" id="3pxfPu9P_Yp" role="1uY1Lu">
             <property role="TrG5h" value="lock" />
@@ -85,29 +90,33 @@
     <node concept="2$rEH5" id="3pxfPu9P_Yz" role="2$rEHq">
       <ref role="2$rEH4" node="3YXYb8i$PQm" resolve="analyze" />
       <node concept="1uYdA0" id="3pxfPu9P_YD" role="1uLvPH">
-        <ref role="1uK_4X" node="3pxfPu9P_Yj" resolve="pop" />
+        <ref role="1uK_4X" node="3pxfPu9P_Yj" resolve="channelPop" />
       </node>
-      <node concept="1uYdA0" id="3ETEwC$mGt4" role="1uLvPH" />
       <node concept="1uLkD0" id="3pxfPu9P_YF" role="1uLvPA">
         <property role="TrG5h" value="fizz" />
         <node concept="1uY1Ls" id="3pxfPu9P_YJ" role="1uLkCb">
           <node concept="16pRw0" id="3pxfPu9P_YL" role="1uY1Lt" />
         </node>
       </node>
-      <node concept="1uLkD0" id="3ETEwC$mGtm" role="1uLvPA">
-        <node concept="1uLvKC" id="3ETEwC$mGtn" role="1uLkCb" />
-      </node>
     </node>
-    <node concept="2$rEH5" id="3ETEwC$kWbL" role="2$rEHq" />
     <node concept="2yJvUm" id="3ETEwC$nynx" role="uTjgs">
       <property role="TrG5h" value="bool" />
+      <property role="2yJvUn" value="true" />
+    </node>
+    <node concept="2yJvRm" id="34JZ5vrWBel" role="uTjgs">
+      <property role="TrG5h" value="int" />
+      <property role="2yJvRn" value="5" />
+    </node>
+    <node concept="3TOe9U" id="34JZ5vrWBey" role="uTjgs">
+      <property role="TrG5h" value="str" />
+      <property role="3TOe9T" value="&quot;Hello&quot;" />
     </node>
   </node>
   <node concept="2ulcR8" id="3YXYb8i$PQm">
     <property role="TrG5h" value="analyze" />
     <node concept="1uY1Lp" id="2Ztc8$x1_oA" role="2ulM7n">
       <node concept="1utKzZ" id="2Ztc8$x1_oB" role="1uY1Lu">
-        <property role="TrG5h" value="pop" />
+        <property role="TrG5h" value="valPop" />
       </node>
     </node>
     <node concept="1uY1L$" id="2Ztc8$x1_oG" role="2ulM79">
@@ -125,6 +134,13 @@
         <property role="TrG5h" value="str" />
       </node>
     </node>
+    <node concept="3Y$Zt1" id="34JZ5vs5NJD" role="2ulM7a">
+      <node concept="19SGf9" id="34JZ5vs5NJE" role="3Y$PkS">
+        <node concept="19SUe$" id="34JZ5vs5NJF" role="19SJt6">
+          <property role="19SUeA" value="echo Hello World" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
@@ -133,10 +149,11 @@
         <property role="TrG5h" value="fizzy" />
       </node>
     </node>
-    <node concept="2ulSLv" id="3ETEwC$oaJT" role="2ulM7a" />
-  </node>
-  <node concept="2ulcR8" id="3ETEwC$kWb_">
-    <node concept="2ulSLo" id="3ETEwC$kWbA" role="2ulM7a" />
+    <node concept="3Y$Zt1" id="34JZ5vrZ5Qs" role="2ulM7a">
+      <node concept="19SGf9" id="34JZ5vrZ5Qt" role="3Y$PkS">
+        <node concept="19SUe$" id="34JZ5vrZ5Qu" role="19SJt6" />
+      </node>
+    </node>
   </node>
   <node concept="2ulcR8" id="70dPcAeCWKy">
     <property role="TrG5h" value="TestRichScript" />

@@ -14,6 +14,8 @@ import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import org.campagnelab.workflow.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
+import jetbrains.mps.smodel.runtime.TextGenAspectDescriptor;
+import jetbrains.mps.smodel.runtime.interpreted.TextGenAspectInterpreted;
 
 public class Language extends LanguageRuntime {
   public static String MODULE_REF = "c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)";
@@ -53,6 +55,9 @@ public class Language extends LanguageRuntime {
     }
     if (descriptorClass == StructureAspectDescriptor.class) {
       return (T) new org.campagnelab.workflow.structure.StructureAspectDescriptor();
+    }
+    if (descriptorClass == TextGenAspectDescriptor.class) {
+      return (T) new TextGenAspectInterpreted();
     }
     return super.createAspectDescriptor(descriptorClass);
   }
