@@ -83,10 +83,6 @@
     <property role="3GE5qa" value="Inputs" />
     <ref role="1M2myG" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
   </node>
-  <node concept="1M2fIO" id="dxSprUCVd$">
-    <property role="3GE5qa" value="Script" />
-    <ref role="1M2myG" to="iowz:6tX5nBTaD$A" resolve="SingleLineScript" />
-  </node>
   <node concept="1M2fIO" id="70dPcAeDZek">
     <ref role="1M2myG" to="iowz:70dPcAeDqeM" resolve="ValueInAChannelRef" />
     <node concept="1N5Pfh" id="70dPcAeDZeW" role="1Mr941">

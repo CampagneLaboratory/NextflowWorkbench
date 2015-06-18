@@ -7,15 +7,10 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.InputChannel_Constraints" />
-    <classNode dependClassName="org.campagnelab.workflow.constraints.SingleLineScript_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.ValueInAChannelRef_Constraints" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.constraints.InputChannel_Constraints" file="InputChannel_Constraints.java">
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.workflow.constraints.SingleLineScript_Constraints" file="SingleLineScript_Constraints.java">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>

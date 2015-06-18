@@ -73,9 +73,9 @@ public class Process_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNodeList_grok3i_d0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Process_Editor.inputListHandler_grok3i_d0(node, "input", editorContext);
+    AbstractCellListHandler handler = new Process_Editor.inputsListHandler_grok3i_d0(node, "inputs", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_input");
+    editorCell.setCellId("refNodeList_inputs");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
@@ -84,8 +84,8 @@ public class Process_Editor extends DefaultNodeEditor {
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class inputListHandler_grok3i_d0 extends RefNodeListHandler {
-    public inputListHandler_grok3i_d0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class inputsListHandler_grok3i_d0 extends RefNodeListHandler {
+    public inputsListHandler_grok3i_d0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -172,9 +172,6 @@ public class Process_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_grok3i_g0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "script:");
     editorCell.setCellId("Constant_grok3i_g0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -184,7 +181,6 @@ public class Process_Editor extends DefaultNodeEditor {
     editorCell.setCellId("refNodeList_script");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());

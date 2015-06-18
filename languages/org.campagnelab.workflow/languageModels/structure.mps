@@ -64,7 +64,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6tX5nBTaziI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="input" />
+      <property role="20kJfa" value="inputs" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7gAPJCESMFi" resolve="ChannelType" />
     </node>
@@ -116,31 +116,19 @@
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6tX5nBTaD$A">
-    <property role="TrG5h" value="SingleLineScript" />
-    <property role="R4oN_" value="single line script" />
-    <property role="3GE5qa" value="Script" />
-    <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
-    <node concept="1TJgyi" id="6tX5nBTaFBU" role="1TKVEl">
-      <property role="TrG5h" value="line" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="5c2H0VLImLx" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-    <node concept="1TJgyj" id="5c2H0VLJoEU" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="transformKey" />
-      <ref role="20lvS9" node="5c2H0VLJOBl" resolve="scriptArgs" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5D7AjvY8HuF">
     <property role="TrG5h" value="ConditionalScript" />
     <property role="3GE5qa" value="Script" />
-    <ref role="1TJDcQ" node="6tX5nBTaD$A" resolve="SingleLineScript" />
+    <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
     <node concept="1TJgyi" id="5D7AjvY8S9p" role="1TKVEl">
       <property role="TrG5h" value="flag" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="34JZ5vsn6nX" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
   </node>
   <node concept="1TIwiD" id="5D7AjvYabas">
@@ -299,7 +287,7 @@
     <property role="34LRSv" value="input channel" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="4jPc2RsWszr" resolve="Channel" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7gAPJCET8v7" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="connectedTo" />
@@ -369,15 +357,9 @@
   <node concept="1TIwiD" id="7gAPJCESTMU">
     <property role="3GE5qa" value="Outputs" />
     <property role="TrG5h" value="OutputChannel" />
-    <ref role="1TJDcQ" node="4jPc2RsWszr" resolve="Channel" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7gAPJCESTNJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="7gAPJCESTNL" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="outKind" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7gAPJCESMFi" resolve="ChannelType" />
     </node>
   </node>
   <node concept="1TIwiD" id="dxSprUGgfG">

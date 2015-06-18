@@ -7,7 +7,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ArrayOfIntegers_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,74,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,72,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BooleanChannel_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
@@ -34,7 +34,7 @@
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.InputChannelTemp_BehaviorDescriptor" />
     </file>
     <file name="InputChannel_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.InputChannel_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.InputChannel_BehaviorDescriptor" />
     </file>
     <file name="Input_BehaviorDescriptor.java">
       <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.Input_BehaviorDescriptor" />
@@ -52,7 +52,7 @@
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.OutputChannelTemp_BehaviorDescriptor" />
     </file>
     <file name="OutputChannel_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.OutputChannel_BehaviorDescriptor" />
+      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.OutputChannel_BehaviorDescriptor" />
     </file>
     <file name="OutputFile_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.OutputFile_BehaviorDescriptor" />
@@ -77,9 +77,6 @@
     </file>
     <file name="Script_BehaviorDescriptor.java">
       <unit at="11,0,25,0" name="org.campagnelab.workflow.behavior.Script_BehaviorDescriptor" />
-    </file>
-    <file name="SingleLineScript_BehaviorDescriptor.java">
-      <unit at="8,0,19,0" name="org.campagnelab.workflow.behavior.SingleLineScript_BehaviorDescriptor" />
     </file>
     <file name="StringChannel_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.StringChannel_BehaviorDescriptor" />
@@ -107,22 +104,6 @@
     </file>
     <file name="scriptStringArgs_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.scriptStringArgs_BehaviorDescriptor" />
-    </file>
-  </root>
-  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/243723893421093791">
-    <file name="SingleLineScript_Behavior.java">
-      <node id="5981541231379789317" at="13,81,14,345" concept="0" />
-      <node id="243723893421093791" at="11,0,13,0" concept="1" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="243723893421093791" at="13,0,16,0" concept="1" trace="virtual_toTextString_4433012599261204765#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <scope id="243723893421093793" at="11,43,11,43" />
-      <scope id="5981541231379725795" at="13,81,14,345" />
-      <scope id="243723893421093791" at="11,0,13,0">
-        <var name="thisNode" id="243723893421093791" />
-      </scope>
-      <scope id="243723893421093791" at="13,0,16,0">
-        <var name="thisNode" id="243723893421093791" />
-      </scope>
-      <unit id="243723893421093791" at="10,0,17,0" name="org.campagnelab.workflow.behavior.SingleLineScript_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/3448966255158170359">
