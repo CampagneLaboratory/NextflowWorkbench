@@ -168,5 +168,49 @@
       <node concept="17QB3L" id="2Ztc8$x0LcX" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="3v6eDgzA3rE">
+    <property role="3GE5qa" value="channelTypes" />
+    <ref role="13h7C2" to="iowz:3v6eDgz_YY9" resolve="ListChannel" />
+    <node concept="13i0hz" id="3v6eDgzA3sG" role="13h7CS">
+      <property role="TrG5h" value="returnKind" />
+      <property role="2Ki8OM" value="false" />
+      <property role="13i0it" value="true" />
+      <ref role="13i0hy" node="2Ztc8$x0LcL" resolve="returnKind" />
+      <node concept="3clFbS" id="3v6eDgzA3sH" role="3clF47">
+        <node concept="3cpWs6" id="3v6eDgzA3sI" role="3cqZAp">
+          <node concept="Xl_RD" id="3v6eDgzA3sJ" role="3cqZAk">
+            <property role="Xl_RC" value="list" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3v6eDgzA3sK" role="3clF45" />
+      <node concept="3Tm1VV" id="3v6eDgzA3sL" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="3v6eDgzA3rF" role="13h7CW">
+      <node concept="3clFbS" id="3v6eDgzA3rG" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3v6eDgzA3zh">
+    <property role="3GE5qa" value="channelTypes" />
+    <ref role="13h7C2" to="iowz:3v6eDgzA3ze" resolve="TupleChannel" />
+    <node concept="13i0hz" id="3v6eDgzA3zA" role="13h7CS">
+      <property role="TrG5h" value="returnKind" />
+      <property role="2Ki8OM" value="false" />
+      <property role="13i0it" value="true" />
+      <ref role="13i0hy" node="2Ztc8$x0LcL" resolve="returnKind" />
+      <node concept="3clFbS" id="3v6eDgzA3zB" role="3clF47">
+        <node concept="3cpWs6" id="3v6eDgzA3zC" role="3cqZAp">
+          <node concept="Xl_RD" id="3v6eDgzA3zD" role="3cqZAk">
+            <property role="Xl_RC" value="tuple" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3v6eDgzA3zE" role="3clF45" />
+      <node concept="3Tm1VV" id="3v6eDgzA3zF" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="3v6eDgzA3zi" role="13h7CW">
+      <node concept="3clFbS" id="3v6eDgzA3zj" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
