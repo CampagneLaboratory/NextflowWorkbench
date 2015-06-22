@@ -239,7 +239,11 @@
           <ref role="3YE7sm" node="6t646FqPoxM" resolve="*.txt" />
         </node>
         <node concept="19SUe$" id="3m9W35nCwSC" role="19SJt6">
-          <property role="19SUeA" value=" &gt;&gt; finalFile\n\n\n\n\n\n\n\n" />
+          <property role="19SUeA" value=" &gt;&gt; finalFile\n" />
+        </node>
+        <node concept="1M4_7" id="1psOhWona5f" role="19SJt6" />
+        <node concept="19SUe$" id="1psOhWona5e" role="19SJt6">
+          <property role="19SUeA" value="\n\n\n\n\n\n\n\n\n\n\n" />
         </node>
       </node>
     </node>
@@ -254,6 +258,9 @@
       <node concept="16pRw0" id="6t646FqPoxM" role="1uY1Lt">
         <property role="TrG5h" value="*.txt" />
       </node>
+    </node>
+    <node concept="1M4yM" id="1psOhWona5q" role="1Q3e2">
+      <property role="TrG5h" value="boot" />
     </node>
   </node>
 </model>
