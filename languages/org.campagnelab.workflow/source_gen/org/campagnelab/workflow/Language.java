@@ -9,6 +9,8 @@ import java.util.Collection;
 import jetbrains.mps.generator.runtime.TemplateModule;
 import jetbrains.mps.generator.runtime.TemplateUtil;
 import jetbrains.mps.smodel.runtime.LanguageAspectDescriptor;
+import jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor;
+import jetbrains.mps.actions.descriptor.AbstractActionAspectDescriptor;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
@@ -16,6 +18,8 @@ import org.campagnelab.workflow.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.TextGenAspectDescriptor;
 import jetbrains.mps.smodel.runtime.interpreted.TextGenAspectInterpreted;
+import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
+import org.campagnelab.workflow.typesystem.TypesystemDescriptor;
 
 public class Language extends LanguageRuntime {
   public static String MODULE_REF = "c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)";
@@ -44,6 +48,9 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected <T extends LanguageAspectDescriptor> T createAspectDescriptor(Class<T> descriptorClass) {
+    if (descriptorClass == ActionAspectDescriptor.class) {
+      return (T) new AbstractActionAspectDescriptor() {};
+    }
     if (descriptorClass == BehaviorAspectDescriptor.class) {
       return (T) new org.campagnelab.workflow.behavior.BehaviorAspectDescriptor();
     }
@@ -58,6 +65,9 @@ public class Language extends LanguageRuntime {
     }
     if (descriptorClass == TextGenAspectDescriptor.class) {
       return (T) new TextGenAspectInterpreted();
+    }
+    if (descriptorClass == IHelginsDescriptor.class) {
+      return (T) new TypesystemDescriptor();
     }
     return super.createAspectDescriptor(descriptorClass);
   }
