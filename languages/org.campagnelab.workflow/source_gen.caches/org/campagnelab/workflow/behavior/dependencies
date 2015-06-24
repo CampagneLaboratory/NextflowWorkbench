@@ -8,6 +8,7 @@
     <classNode dependClassName="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.BooleanElement_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.Boolean_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.ClusterOptions_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.Collate_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.ConditionalScript_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.FileChannel_BehaviorDescriptor" />
@@ -19,10 +20,17 @@
     <classNode dependClassName="org.campagnelab.workflow.behavior.Integer_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.ListChannel_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.List_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.Local_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.Memory_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.NextflowConfig_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.NumCPUs_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.OutputChannel_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.Penv_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.ProcessRef_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.Process_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.Queue_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.RichScript_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.SGE_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.ScriptBooleanArgs_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.ScriptIntegerArgs_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.ScriptListArgs_BehaviorDescriptor" />
@@ -30,6 +38,7 @@
     <classNode dependClassName="org.campagnelab.workflow.behavior.StringChannel_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.StringElement_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.String_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.TimeAllowed_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.ToList_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.ToSortedList_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.TupleChannel_BehaviorDescriptor" />
@@ -83,6 +92,12 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="org.campagnelab.workflow.behavior.ClusterOptions_BehaviorDescriptor" file="ClusterOptions_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="org.campagnelab.workflow.behavior.Collate_BehaviorDescriptor" file="Collate_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -93,6 +108,12 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.Script_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.behavior.Executor_BehaviorDescriptor" file="Executor_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.FileChannel_Behavior" file="FileChannel_Behavior.java">
@@ -173,6 +194,30 @@
     <classNode dependClassName="org.campagnelab.workflow.behavior.ValueInAChannelNoTuple_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="org.campagnelab.workflow.behavior.Local_BehaviorDescriptor" file="Local_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.Executor_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.behavior.Memory_BehaviorDescriptor" file="Memory_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.behavior.NextflowConfig_BehaviorDescriptor" file="NextflowConfig_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.behavior.NumCPUs_BehaviorDescriptor" file="NumCPUs_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="org.campagnelab.workflow.behavior.OutputChannel_BehaviorDescriptor" file="OutputChannel_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -181,6 +226,12 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.behavior.Penv_BehaviorDescriptor" file="Penv_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.ProcessRef_BehaviorDescriptor" file="ProcessRef_BehaviorDescriptor.java">
@@ -199,10 +250,22 @@
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="org.campagnelab.workflow.behavior.Queue_BehaviorDescriptor" file="Queue_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="org.campagnelab.workflow.behavior.RichScript_BehaviorDescriptor" file="RichScript_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.Script_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.behavior.SGE_BehaviorDescriptor" file="SGE_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.Executor_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.ScriptArgs_BehaviorDescriptor" file="ScriptArgs_BehaviorDescriptor.java">
@@ -273,6 +336,12 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.ValueInAChannelNoTuple_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.behavior.TimeAllowed_BehaviorDescriptor" file="TimeAllowed_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.ToList_BehaviorDescriptor" file="ToList_BehaviorDescriptor.java">

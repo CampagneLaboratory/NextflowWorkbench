@@ -23,6 +23,24 @@
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
       <concept id="1611392698161600946" name="org.campagnelab.workflow.structure.WorkflowString" flags="ng" index="1M4yH" />
       <concept id="1611392698161600941" name="org.campagnelab.workflow.structure.WorkflowBoolean" flags="ng" index="1M4yM" />
+      <concept id="2329585396107819892" name="org.campagnelab.workflow.structure.NumCPUs" flags="ng" index="oDubB">
+        <property id="2329585396107820961" name="num" index="oDuoM" />
+      </concept>
+      <concept id="2329585396108534973" name="org.campagnelab.workflow.structure.Queue" flags="ng" index="oEfOI">
+        <property id="2329585396108535356" name="queue" index="oEfYJ" />
+      </concept>
+      <concept id="2329585396108535569" name="org.campagnelab.workflow.structure.TimeAllowed" flags="ng" index="oEfU2">
+        <property id="2329585396108535674" name="time" index="oEfVD" />
+      </concept>
+      <concept id="2329585396108535463" name="org.campagnelab.workflow.structure.Penv" flags="ng" index="oEfWO">
+        <property id="2329585396108535566" name="penv" index="oEfUt" />
+      </concept>
+      <concept id="2329585396108535359" name="org.campagnelab.workflow.structure.Memory" flags="ng" index="oEfYG">
+        <property id="2329585396108535460" name="memory" index="oEfWR" />
+      </concept>
+      <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.NextflowConfig" flags="ng" index="pkhaZ">
+        <child id="2329585396109102069" name="executor" index="pkh9A" />
+      </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="1611392698160571037" name="workflowValues" index="1Q3e2" />
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
@@ -31,13 +49,20 @@
       </concept>
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
+        <child id="2329585396107820996" name="numCPUs" index="oDupn" />
+        <child id="2329585396108535836" name="penv" index="oEf6f" />
+        <child id="2329585396108535851" name="timeAllowed" index="oEf6S" />
+        <child id="2329585396108535801" name="memory" index="oEfTE" />
+        <child id="2329585396108535790" name="queue" index="oEfTX" />
         <child id="8369613327464344476" name="outChannel" index="1uLvPA" />
         <child id="8369613327464344471" name="inChannel" index="1uLvPH" />
       </concept>
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="4231600285427736086" name="inputArgs" index="uTjgs" />
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
+        <child id="4777210630426255005" name="executor" index="2LyH5s" />
       </concept>
+      <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
       <concept id="8369613327464057510" name="org.campagnelab.workflow.structure.FileChannel" flags="ng" index="1uY1Ls">
@@ -69,6 +94,24 @@
       <node concept="1uLkD0" id="4KI7BXrwNaE" role="1uLvPA">
         <property role="TrG5h" value="Y" />
       </node>
+      <node concept="oDubB" id="21kmpcT8x6t" role="oDupn">
+        <property role="oDuoM" value="5" />
+      </node>
+      <node concept="oEfYG" id="21kmpcTbreQ" role="oEfTE">
+        <property role="oEfWR" value="2 GB" />
+      </node>
+      <node concept="oEfU2" id="21kmpcTcTcX" role="oEf6S">
+        <property role="oEfVD" value="1h" />
+      </node>
+      <node concept="oEfOI" id="21kmpcTcTd0" role="oEfTX">
+        <property role="oEfYJ" value="long" />
+      </node>
+      <node concept="oEfOI" id="21kmpcTcTd3" role="oEfTX">
+        <property role="oEfYJ" value="short" />
+      </node>
+      <node concept="oEfWO" id="21kmpcTcTd8" role="oEf6f">
+        <property role="oEfUt" value="smp" />
+      </node>
     </node>
     <node concept="2$rEH5" id="4KI7BXrwNaI" role="2$rEHq">
       <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
@@ -97,6 +140,7 @@
       <property role="TrG5h" value="params.alignment2" />
       <property role="3TOe9T" value="/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR" />
     </node>
+    <node concept="2LyH2v" id="235lbi5JUAj" role="2LyH5s" />
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
@@ -180,6 +224,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="pkhaZ" id="21kmpcT2JwM">
+    <node concept="2LyH2v" id="21kmpcT2Jx$" role="pkh9A" />
   </node>
 </model>
 

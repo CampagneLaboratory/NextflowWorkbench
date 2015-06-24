@@ -133,6 +133,12 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="5D7AjvYaj9M" resolve="ProcessRef" />
     </node>
+    <node concept="1TJgyj" id="49c3W7NLHUt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="executor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="49c3W7NLHXs" resolve="Executor" />
+    </node>
     <node concept="PrWs8" id="5D7AjvYabat" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -160,6 +166,38 @@
       <property role="20kJfa" value="outChannel" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7gAPJCESTMU" resolve="OutputChannel" />
+    </node>
+    <node concept="1TJgyj" id="21kmpcSWrZ4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="numCPUs" />
+      <ref role="20lvS9" node="21kmpcSWrHO" resolve="NumCPUs" />
+    </node>
+    <node concept="1TJgyj" id="21kmpcSZavI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="queue" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="21kmpcSZaiX" resolve="Queue" />
+    </node>
+    <node concept="1TJgyj" id="21kmpcSZavT" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="memory" />
+      <ref role="20lvS9" node="21kmpcSZaoZ" resolve="Memory" />
+    </node>
+    <node concept="1TJgyj" id="21kmpcSZaws" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="penv" />
+      <ref role="20lvS9" node="21kmpcSZaqB" resolve="Penv" />
+    </node>
+    <node concept="1TJgyj" id="21kmpcSZawF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="timeAllowed" />
+      <ref role="20lvS9" node="21kmpcSZash" resolve="TimeAllowed" />
+    </node>
+    <node concept="1TJgyj" id="21kmpcSZawW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="clusterOptions" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="21kmpcSZatX" resolve="ClusterOptions" />
     </node>
   </node>
   <node concept="1TIwiD" id="1HX2cDt6rj6">
@@ -542,6 +580,106 @@
     <property role="TrG5h" value="WorkflowList" />
     <property role="34LRSv" value="list" />
     <ref role="1TJDcQ" node="1psOhWn_9uY" resolve="ValueFromWorkflow" />
+  </node>
+  <node concept="1TIwiD" id="49c3W7NLHXs">
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="Executor" />
+    <property role="3GE5qa" value="Executors" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="49c3W7NLHXt">
+    <property role="3GE5qa" value="Executors" />
+    <property role="TrG5h" value="Local" />
+    <property role="34LRSv" value="local" />
+    <property role="R4oN_" value="executes the workflow on the local, single machine" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+  </node>
+  <node concept="1TIwiD" id="49c3W7NLHXu">
+    <property role="3GE5qa" value="Executors" />
+    <property role="TrG5h" value="SGE" />
+    <property role="R4oN_" value="executes the workflow on the SGE computer network" />
+    <property role="34LRSv" value="sge" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+  </node>
+  <node concept="1TIwiD" id="21kmpcSWrHO">
+    <property role="TrG5h" value="NumCPUs" />
+    <property role="34LRSv" value="numCPUs" />
+    <property role="R4oN_" value="defines the number of CPU required by the process' task" />
+    <property role="3GE5qa" value="processOptions" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="21kmpcSWrYx" role="1TKVEl">
+      <property role="TrG5h" value="num" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="21kmpcSZaiX">
+    <property role="3GE5qa" value="processOptions" />
+    <property role="TrG5h" value="Queue" />
+    <property role="34LRSv" value="queue" />
+    <property role="R4oN_" value="allows you to set the queue where jobs are schedules when using a grid based executor in the pipeline" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="21kmpcSZaoW" role="1TKVEl">
+      <property role="TrG5h" value="queue" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="21kmpcSZaoZ">
+    <property role="3GE5qa" value="processOptions" />
+    <property role="TrG5h" value="Memory" />
+    <property role="34LRSv" value="memory" />
+    <property role="R4oN_" value="defines how much memory the process is allowed to use" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="21kmpcSZaq$" role="1TKVEl">
+      <property role="TrG5h" value="memory" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="21kmpcSZaqB">
+    <property role="3GE5qa" value="processOptions" />
+    <property role="TrG5h" value="Penv" />
+    <property role="34LRSv" value="penv" />
+    <property role="R4oN_" value="define the parallel environment to be used when submitting a parallel task to the SGE resource manager" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="21kmpcSZase" role="1TKVEl">
+      <property role="TrG5h" value="penv" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="21kmpcSZash">
+    <property role="3GE5qa" value="processOptions" />
+    <property role="TrG5h" value="TimeAllowed" />
+    <property role="34LRSv" value="time allowed" />
+    <property role="R4oN_" value="allows you to define how long a process is allowed to run" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="21kmpcSZatU" role="1TKVEl">
+      <property role="TrG5h" value="time" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="21kmpcSZatX">
+    <property role="TrG5h" value="ClusterOptions" />
+    <property role="34LRSv" value="cluster options" />
+    <property role="R4oN_" value="allows native configuration options to be accepted by the cluster submit command" />
+    <property role="3GE5qa" value="processOptions" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="21kmpcSZavC" role="1TKVEl">
+      <property role="TrG5h" value="clusterOptions" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="21kmpcT1kGG">
+    <property role="TrG5h" value="NextflowConfig" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="nextflow.config" />
+    <property role="R4oN_" value="configuration for nextflow" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="21kmpcT1kJP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="executor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="49c3W7NLHXs" resolve="Executor" />
+    </node>
   </node>
 </model>
 

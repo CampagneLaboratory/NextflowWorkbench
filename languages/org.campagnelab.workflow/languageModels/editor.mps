@@ -33,6 +33,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
@@ -255,6 +256,21 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+      <node concept="3EZMnI" id="49c3W7NMZtx" role="3EZMnx">
+        <node concept="VPM3Z" id="49c3W7NMZt$" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="49c3W7NMZtA" role="3EZMnx">
+          <property role="3F0ifm" value="Executor = " />
+          <node concept="pVoyu" id="49c3W7NMZtB" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F1sOY" id="49c3W7NMZuO" role="3EZMnx">
+          <ref role="1NtTu8" to="iowz:49c3W7NLHUt" />
+        </node>
+        <node concept="2iRfu4" id="49c3W7NMZtC" role="2iSdaV" />
+      </node>
       <node concept="35HoNQ" id="3ETEwC$nhLh" role="3EZMnx" />
       <node concept="3F0ifn" id="3ETEwC$nhKl" role="3EZMnx">
         <property role="3F0ifm" value="input args:" />
@@ -367,6 +383,77 @@
         <node concept="pj6Ft" id="3ETEwC$mGtf" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+      </node>
+      <node concept="3F0ifn" id="21kmpcSSWp6" role="3EZMnx">
+        <property role="3F0ifm" value="numCPUs =" />
+        <node concept="lj46D" id="21kmpcSSWpW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="21kmpcSWs4C" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:21kmpcSWrZ4" />
+      </node>
+      <node concept="3F0ifn" id="21kmpcSSWrh" role="3EZMnx">
+        <property role="3F0ifm" value="memory =" />
+        <node concept="pVoyu" id="21kmpcSSWsl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="21kmpcSSWG1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="21kmpcSZa_w" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:21kmpcSZavT" />
+      </node>
+      <node concept="3F0ifn" id="21kmpcSSWv$" role="3EZMnx">
+        <property role="3F0ifm" value="timeAllowed =" />
+        <node concept="pVoyu" id="21kmpcSSWwE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="21kmpcSSWG6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="21kmpcSZaDn" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:21kmpcSZawF" />
+      </node>
+      <node concept="3F0ifn" id="21kmpcSSWxO" role="3EZMnx">
+        <property role="3F0ifm" value="queue =" />
+        <node concept="pVoyu" id="21kmpcSSWyW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="21kmpcSSWGb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="21kmpcT0W3X" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:21kmpcSZavI" />
+        <node concept="l2Vlx" id="21kmpcT0W3Z" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="21kmpcSSWCq" role="3EZMnx">
+        <property role="3F0ifm" value="penv =" />
+        <node concept="pVoyu" id="21kmpcSSWD$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="21kmpcSSWGg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="21kmpcSZaNB" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:21kmpcSZaws" />
+      </node>
+      <node concept="3F0ifn" id="21kmpcSSWEM" role="3EZMnx">
+        <property role="3F0ifm" value="clusterOptions =" />
+        <node concept="pVoyu" id="21kmpcSSWFY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="21kmpcSSWGl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="21kmpcT0W7X" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:21kmpcSZawW" />
       </node>
       <node concept="35HoNQ" id="3ETEwC$mfTI" role="3EZMnx">
         <node concept="pVoyu" id="3ETEwC$mfTY" role="3F10Kt">
@@ -731,6 +818,74 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="l2Vlx" id="1psOhWofHN8" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="235lbi5IybY">
+    <property role="3GE5qa" value="Executors" />
+    <ref role="1XX52x" to="iowz:49c3W7NLHXu" resolve="SGE" />
+    <node concept="3F0ifn" id="235lbi5ICNi" role="2wV5jI">
+      <property role="3F0ifm" value="sge" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="235lbi5ICNr">
+    <property role="3GE5qa" value="Executors" />
+    <ref role="1XX52x" to="iowz:49c3W7NLHXt" resolve="Local" />
+    <node concept="3F0ifn" id="235lbi5ICNt" role="2wV5jI">
+      <property role="3F0ifm" value="local" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="21kmpcSWrYD">
+    <property role="3GE5qa" value="processOptions" />
+    <ref role="1XX52x" to="iowz:21kmpcSWrHO" resolve="NumCPUs" />
+    <node concept="3F0A7n" id="21kmpcSWrYY" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:21kmpcSWrYx" resolve="num" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="21kmpcT2J$a">
+    <ref role="1XX52x" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
+    <node concept="3EZMnI" id="21kmpcT2J$c" role="2wV5jI">
+      <node concept="3F0ifn" id="21kmpcT2J$m" role="3EZMnx">
+        <property role="3F0ifm" value="executor =" />
+      </node>
+      <node concept="3F1sOY" id="21kmpcT2J$v" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:21kmpcT1kJP" />
+      </node>
+      <node concept="l2Vlx" id="21kmpcT2J$f" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="21kmpcT9Xd$">
+    <property role="3GE5qa" value="processOptions" />
+    <ref role="1XX52x" to="iowz:21kmpcSZaoZ" resolve="Memory" />
+    <node concept="3F0A7n" id="21kmpcT9XdG" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:21kmpcSZaq$" resolve="memory" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="21kmpcT9XdP">
+    <property role="3GE5qa" value="processOptions" />
+    <ref role="1XX52x" to="iowz:21kmpcSZatX" resolve="ClusterOptions" />
+    <node concept="3F0A7n" id="21kmpcT9XdX" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:21kmpcSZavC" resolve="clusterOptions" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="21kmpcT9Xe6">
+    <property role="3GE5qa" value="processOptions" />
+    <ref role="1XX52x" to="iowz:21kmpcSZaqB" resolve="Penv" />
+    <node concept="3F0A7n" id="21kmpcT9Xee" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:21kmpcSZase" resolve="penv" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="21kmpcT9Xen">
+    <property role="3GE5qa" value="processOptions" />
+    <ref role="1XX52x" to="iowz:21kmpcSZaiX" resolve="Queue" />
+    <node concept="3F0A7n" id="21kmpcT9Xev" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:21kmpcSZaoW" resolve="queue" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="21kmpcT9XeC">
+    <property role="3GE5qa" value="processOptions" />
+    <ref role="1XX52x" to="iowz:21kmpcSZash" resolve="TimeAllowed" />
+    <node concept="3F0A7n" id="21kmpcT9XeK" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:21kmpcSZatU" resolve="time" />
     </node>
   </node>
 </model>
