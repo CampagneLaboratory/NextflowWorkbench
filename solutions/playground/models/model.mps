@@ -45,7 +45,6 @@
       </concept>
       <concept id="5981541231379827352" name="org.campagnelab.workflow.structure.ScriptBooleanArgs" flags="ng" index="2yJvUm" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
-        <property id="5476153351823625455" name="maxRetries" index="3GZ3yq" />
         <property id="5476153351823619011" name="maxErrors" index="3GZsuQ" />
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
         <child id="2329585396107820996" name="numCPUs" index="oDupn" />
@@ -89,7 +88,6 @@
     <property role="TrG5h" value="Workflow" />
     <node concept="2$rEH5" id="4JZd7mB7j$t" role="2$rEHq">
       <property role="3GZsuQ" value="3" />
-      <property role="3GZ3yq" value="1" />
       <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
       <node concept="1uLkD0" id="4JZd7mB8RsH" role="1uLvPA">
         <property role="TrG5h" value="Y" />
@@ -107,7 +105,6 @@
     </node>
     <node concept="2$rEH5" id="4JZd7mB8S2c" role="2$rEHq">
       <property role="3GZsuQ" value="3" />
-      <property role="3GZ3yq" value="1" />
       <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
       <node concept="1uYdA0" id="4JZd7mB8S2r" role="1uLvPH">
         <ref role="1uK_4X" node="4JZd7mB8RsH" resolve="Y" />
@@ -120,7 +117,6 @@
     </node>
     <node concept="2$rEH5" id="4JZd7mB8S2I" role="2$rEHq">
       <property role="3GZsuQ" value="3" />
-      <property role="3GZ3yq" value="1" />
       <ref role="2$rEH4" node="6t646FqPoxG" resolve="combine" />
       <node concept="1uYdA0" id="4JZd7mB8S35" role="1uLvPH">
         <ref role="1uK_4X" node="4JZd7mB8S2v" resolve="X" />

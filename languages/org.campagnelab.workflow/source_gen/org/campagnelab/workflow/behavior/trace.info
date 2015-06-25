@@ -296,16 +296,26 @@
       <unit id="4018964125401495761" at="7,0,14,0" name="org.campagnelab.workflow.behavior.TupleChannel_Behavior" />
     </file>
   </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/4717081913776959783">
+    <file name="Retry_Behavior.java">
+      <node id="4717081913776979080" at="10,43,11,178" concept="0" />
+      <node id="4717081913776959783" at="10,0,13,0" concept="4" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="4717081913776959785" at="10,43,11,178" />
+      <scope id="4717081913776959783" at="10,0,13,0">
+        <var name="thisNode" id="4717081913776959783" />
+      </scope>
+      <unit id="4717081913776959783" at="9,0,14,0" name="org.campagnelab.workflow.behavior.Retry_Behavior" />
+    </file>
+  </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/5476153351823627882">
     <file name="ProcessRef_Behavior.java">
       <node id="5476153351823627998" at="10,43,11,177" concept="0" />
-      <node id="5476153351823631172" at="11,177,12,178" concept="0" />
-      <node id="5476153351823627882" at="10,0,14,0" concept="4" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="5476153351823627884" at="10,43,12,178" />
-      <scope id="5476153351823627882" at="10,0,14,0">
+      <node id="5476153351823627882" at="10,0,13,0" concept="4" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="5476153351823627884" at="10,43,11,177" />
+      <scope id="5476153351823627882" at="10,0,13,0">
         <var name="thisNode" id="5476153351823627882" />
       </scope>
-      <unit id="5476153351823627882" at="9,0,15,0" name="org.campagnelab.workflow.behavior.ProcessRef_Behavior" />
+      <unit id="5476153351823627882" at="9,0,14,0" name="org.campagnelab.workflow.behavior.ProcessRef_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/5489358528155117642">

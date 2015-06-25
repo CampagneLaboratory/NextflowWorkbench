@@ -214,10 +214,6 @@
       <property role="TrG5h" value="maxErrors" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="4JZd7mB0KNJ" role="1TKVEl">
-      <property role="TrG5h" value="maxRetries" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1HX2cDt6rj6">
     <property role="TrG5h" value="String" />
@@ -736,6 +732,10 @@
     <property role="34LRSv" value="retry" />
     <property role="R4oN_" value="allows for a process to be resubmitted for execution after returning an error condition" />
     <ref role="1TJDcQ" node="4JZd7mB0N1L" resolve="ErrorStrategies" />
+    <node concept="1TJgyi" id="45Qsg8B672I" role="1TKVEl">
+      <property role="TrG5h" value="maxRetries" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
 </model>
 

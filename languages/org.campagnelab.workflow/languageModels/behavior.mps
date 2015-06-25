@@ -402,15 +402,23 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4JZd7mB0Md4" role="3cqZAp">
-          <node concept="37vLTI" id="4JZd7mB0MSy" role="3clFbG">
-            <node concept="3cmrfG" id="4JZd7mB0MSO" role="37vLTx">
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="45Qsg8B674B">
+    <property role="3GE5qa" value="errorStrategies" />
+    <ref role="13h7C2" to="iowz:4JZd7mB0N25" resolve="Retry" />
+    <node concept="13hLZK" id="45Qsg8B674C" role="13h7CW">
+      <node concept="3clFbS" id="45Qsg8B674D" role="2VODD2">
+        <node concept="3clFbF" id="45Qsg8B6bM8" role="3cqZAp">
+          <node concept="37vLTI" id="45Qsg8B6mH1" role="3clFbG">
+            <node concept="3cmrfG" id="45Qsg8B6mHj" role="37vLTx">
               <property role="3cmrfH" value="1" />
             </node>
-            <node concept="2OqwBi" id="4JZd7mB0Mey" role="37vLTJ">
-              <node concept="13iPFW" id="4JZd7mB0Md2" role="2Oq$k0" />
-              <node concept="3TrcHB" id="4JZd7mB0Mt3" role="2OqNvi">
-                <ref role="3TsBF5" to="iowz:4JZd7mB0KNJ" resolve="maxRetries" />
+            <node concept="2OqwBi" id="45Qsg8B6c7X" role="37vLTJ">
+              <node concept="13iPFW" id="45Qsg8B6bM7" role="2Oq$k0" />
+              <node concept="3TrcHB" id="45Qsg8B6m06" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:45Qsg8B672I" resolve="maxRetries" />
               </node>
             </node>
           </node>

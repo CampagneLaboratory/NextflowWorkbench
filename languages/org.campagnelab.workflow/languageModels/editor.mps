@@ -390,14 +390,17 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="4JZd7mB2lU5" role="3EZMnx">
-        <property role="3F0ifm" value="maxRetries =" />
-        <node concept="lj46D" id="4JZd7mB2m06" role="3F10Kt">
+      <node concept="3F0ifn" id="4JZd7mB0NQv" role="3EZMnx">
+        <property role="3F0ifm" value="errorStrategy:" />
+        <node concept="lj46D" id="4JZd7mB0NSN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="4JZd7mB2lWy" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0A7n" id="4JZd7mB2lVH" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:4JZd7mB0KNJ" resolve="maxRetries" />
+      <node concept="3F1sOY" id="4JZd7mB0NRZ" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:4JZd7mB0KPE" />
       </node>
       <node concept="3F0ifn" id="4JZd7mB2lZ9" role="3EZMnx">
         <property role="3F0ifm" value="maxErrors =" />
@@ -410,18 +413,6 @@
       </node>
       <node concept="3F0A7n" id="4JZd7mB2lXr" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:4JZd7mB0Jf3" resolve="maxErrors" />
-      </node>
-      <node concept="3F0ifn" id="4JZd7mB0NQv" role="3EZMnx">
-        <property role="3F0ifm" value="errorStrategy:" />
-        <node concept="lj46D" id="4JZd7mB0NSN" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pVoyu" id="4JZd7mB2lWy" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="4JZd7mB0NRZ" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:4JZd7mB0KPE" />
       </node>
       <node concept="3F0ifn" id="21kmpcSSWp6" role="3EZMnx">
         <property role="3F0ifm" value="numCPUs =" />
@@ -931,6 +922,31 @@
     <ref role="1XX52x" to="iowz:5zCvdJtcYeP" resolve="NInstances" />
     <node concept="3F0ifn" id="45Qsg8AX$ip" role="2wV5jI">
       <property role="3F0ifm" value="n times" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="45Qsg8B9GTK">
+    <property role="3GE5qa" value="errorStrategies" />
+    <ref role="1XX52x" to="iowz:4JZd7mB0N25" resolve="Retry" />
+    <node concept="3EZMnI" id="45Qsg8B9GTQ" role="2wV5jI">
+      <node concept="l2Vlx" id="45Qsg8B9GTT" role="2iSdaV" />
+      <node concept="3F0ifn" id="45Qsg8BcVXi" role="3EZMnx">
+        <property role="3F0ifm" value="retry" />
+        <node concept="lj46D" id="45Qsg8BcVXp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="45Qsg8B9GU5" role="3EZMnx">
+        <property role="3F0ifm" value="maxRetries =" />
+        <node concept="pVoyu" id="45Qsg8B9GUi" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="45Qsg8BbkqJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="45Qsg8B9GUd" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:45Qsg8B672I" resolve="maxRetries" />
+      </node>
     </node>
   </node>
 </model>
