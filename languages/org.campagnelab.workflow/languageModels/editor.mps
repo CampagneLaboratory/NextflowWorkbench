@@ -361,11 +361,8 @@
       <node concept="3F0ifn" id="21kmpcTtAe6" role="3EZMnx">
         <property role="3F0ifm" value="will run" />
       </node>
-      <node concept="3F0A7n" id="21kmpcTtAgR" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:21kmpcTqB60" resolve="numInstances" />
-      </node>
-      <node concept="3F0ifn" id="21kmpcTtAjG" role="3EZMnx">
-        <property role="3F0ifm" value="times" />
+      <node concept="3F1sOY" id="4JZd7mBdB0p" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:4JZd7mBdAXI" />
       </node>
       <node concept="3F2HdR" id="46nPNk8aIhb" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:7gAPJCESMIn" />
@@ -920,6 +917,20 @@
     <ref role="1XX52x" to="iowz:21kmpcSZash" resolve="TimeAllowed" />
     <node concept="3F0A7n" id="21kmpcT9XeK" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:21kmpcSZatU" resolve="time" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4JZd7mBp0Es">
+    <property role="3GE5qa" value="NumInstances" />
+    <ref role="1XX52x" to="iowz:5zCvdJtcYeW" resolve="OneInstance" />
+    <node concept="3F0ifn" id="45Qsg8AX$ir" role="2wV5jI">
+      <property role="3F0ifm" value="1 time" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4JZd7mBp0EA">
+    <property role="3GE5qa" value="NumInstances" />
+    <ref role="1XX52x" to="iowz:5zCvdJtcYeP" resolve="NInstances" />
+    <node concept="3F0ifn" id="45Qsg8AX$ip" role="2wV5jI">
+      <property role="3F0ifm" value="n times" />
     </node>
   </node>
 </model>

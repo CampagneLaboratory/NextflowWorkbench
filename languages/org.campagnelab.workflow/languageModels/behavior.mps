@@ -415,19 +415,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4JZd7mB5J8I" role="3cqZAp">
-          <node concept="37vLTI" id="4JZd7mB5Jxr" role="3clFbG">
-            <node concept="2OqwBi" id="4JZd7mB5Jaz" role="37vLTJ">
-              <node concept="13iPFW" id="4JZd7mB5J8G" role="2Oq$k0" />
-              <node concept="3TrcHB" id="4JZd7mB5JhX" role="2OqNvi">
-                <ref role="3TsBF5" to="iowz:21kmpcTqB60" resolve="numInstances" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="4JZd7mB5JEE" role="37vLTx">
-              <property role="Xl_RC" value="1" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>

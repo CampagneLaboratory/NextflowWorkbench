@@ -104,8 +104,10 @@
     <classNode dependClassName="org.campagnelab.workflow.editor.List_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.Local_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.Memory_Editor" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.NInstances_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.NextflowConfig_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.NumCPUs_Editor" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.OneInstance_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.OutputChannel_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.Penv_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ProcessRef_Editor" />
@@ -275,6 +277,13 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
+  <dependency className="org.campagnelab.workflow.editor.NInstances_Editor" file="NInstances_Editor.java">
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
   <dependency className="org.campagnelab.workflow.editor.NextflowConfig_Editor" file="NextflowConfig_Editor.java">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
@@ -296,6 +305,13 @@
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.editor.OneInstance_Editor" file="OneInstance_Editor.java">
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
