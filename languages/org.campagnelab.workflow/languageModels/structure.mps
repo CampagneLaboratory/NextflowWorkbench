@@ -38,6 +38,7 @@
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="9026942911489198753" name="doNotGenerate" index="MjmTx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
@@ -149,6 +150,12 @@
   <node concept="1TIwiD" id="5D7AjvYaj9M">
     <property role="TrG5h" value="ProcessRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5zCvdJtcYjR" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="numInstances" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5zCvdJtcWHK" resolve="NumInstances" />
+    </node>
     <node concept="1TJgyj" id="5D7AjvYaj9N" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="process" />
@@ -198,6 +205,11 @@
       <property role="20kJfa" value="clusterOptions" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="21kmpcSZatX" resolve="ClusterOptions" />
+    </node>
+    <node concept="1TJgyi" id="21kmpcTqB60" role="1TKVEl">
+      <property role="TrG5h" value="numInstances" />
+      <property role="MjmTx" value="true" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="1HX2cDt6rj6">
@@ -313,12 +325,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7gAPJCESTNJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="3m9W35nR48S" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="functions" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3m9W35nCwTK" resolve="ChannelFunctions" />
     </node>
   </node>
   <node concept="1TIwiD" id="dxSprUGgfG">
@@ -680,6 +686,28 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="49c3W7NLHXs" resolve="Executor" />
     </node>
+    <node concept="PrWs8" id="21kmpcThJdl" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5zCvdJtcWHK">
+    <property role="TrG5h" value="NumInstances" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="NumInstances" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5zCvdJtcYeP">
+    <property role="TrG5h" value="NInstances" />
+    <property role="34LRSv" value="n" />
+    <property role="3GE5qa" value="NumInstances" />
+    <ref role="1TJDcQ" node="5zCvdJtcWHK" resolve="NumInstances" />
+  </node>
+  <node concept="1TIwiD" id="5zCvdJtcYeW">
+    <property role="TrG5h" value="OneInstance" />
+    <property role="34LRSv" value="1" />
+    <property role="3GE5qa" value="NumInstances" />
+    <ref role="1TJDcQ" node="5zCvdJtcWHK" resolve="NumInstances" />
   </node>
 </model>
 

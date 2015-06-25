@@ -358,6 +358,15 @@
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="21kmpcTtAe6" role="3EZMnx">
+        <property role="3F0ifm" value="will run" />
+      </node>
+      <node concept="3F0A7n" id="21kmpcTtAgR" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:21kmpcTqB60" resolve="numInstances" />
+      </node>
+      <node concept="3F0ifn" id="21kmpcTtAjG" role="3EZMnx">
+        <property role="3F0ifm" value="times" />
+      </node>
       <node concept="3F2HdR" id="46nPNk8aIhb" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:7gAPJCESMIn" />
         <node concept="l2Vlx" id="46nPNk8aIhd" role="2czzBx" />
@@ -477,23 +486,6 @@
       <node concept="3F0A7n" id="34JZ5vsh_Zw" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
-      <node concept="3F0ifn" id="3m9W35nR48Y" role="3EZMnx">
-        <property role="3F0ifm" value="output channel functions: " />
-        <node concept="pVoyu" id="3m9W35nR493" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="1psOhWnrslX" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
-      </node>
-      <node concept="3F2HdR" id="3m9W35nR49b" role="3EZMnx">
-        <property role="2czwfO" value="." />
-        <ref role="1NtTu8" to="iowz:3m9W35nR48S" />
-        <node concept="l2Vlx" id="3m9W35nR49d" role="2czzBx" />
-      </node>
-      <node concept="3F0ifn" id="1psOhWnrsmp" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3pxfPu9Pn8Q">
@@ -513,10 +505,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="3m9W35nR48s" role="3EZMnx">
-        <property role="3F0ifm" value="input channel functions: " />
-        <node concept="pVoyu" id="3m9W35nR48z" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <property role="3F0ifm" value="functions:" />
       </node>
       <node concept="3F0ifn" id="1psOhWnqlDG" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -844,8 +833,17 @@
   <node concept="24kQdi" id="21kmpcT2J$a">
     <ref role="1XX52x" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
     <node concept="3EZMnI" id="21kmpcT2J$c" role="2wV5jI">
+      <node concept="3F0ifn" id="21kmpcTkFBv" role="3EZMnx">
+        <property role="3F0ifm" value="name =" />
+      </node>
+      <node concept="3F0A7n" id="21kmpcTkFBY" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
       <node concept="3F0ifn" id="21kmpcT2J$m" role="3EZMnx">
         <property role="3F0ifm" value="executor =" />
+        <node concept="pVoyu" id="21kmpcTkFC8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F1sOY" id="21kmpcT2J$v" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:21kmpcT1kJP" />

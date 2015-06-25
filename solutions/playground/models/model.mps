@@ -47,7 +47,9 @@
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
       </concept>
+      <concept id="5981541231379827352" name="org.campagnelab.workflow.structure.ScriptBooleanArgs" flags="ng" index="2yJvUm" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
+        <property id="2329585396115730816" name="numInstances" index="pfywj" />
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
         <child id="2329585396107820996" name="numCPUs" index="oDupn" />
         <child id="2329585396108535836" name="penv" index="oEf6f" />
@@ -90,6 +92,7 @@
   <node concept="2$rMIF" id="5D7AjvYaj9G">
     <property role="TrG5h" value="Workflow" />
     <node concept="2$rEH5" id="4KI7BXrwLQt" role="2$rEHq">
+      <property role="pfywj" value="1" />
       <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
       <node concept="1uLkD0" id="4KI7BXrwNaE" role="1uLvPA">
         <property role="TrG5h" value="Y" />
@@ -132,6 +135,13 @@
         </node>
       </node>
     </node>
+    <node concept="2$rEH5" id="4JZd7mAXGkS" role="2$rEHq">
+      <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
+      <node concept="1uYdA0" id="4JZd7mAXGlb" role="1uLvPH">
+        <ref role="1uK_4X" node="4KI7BXrwNb0" resolve="X" />
+      </node>
+      <node concept="1uYdA0" id="4JZd7mAXGlC" role="1uLvPH" />
+    </node>
     <node concept="3TOe9U" id="4KI7BXrwLQx" role="uTjgs">
       <property role="TrG5h" value="params.alignment1" />
       <property role="3TOe9T" value="/Users/jasonkurs/Documents/inputAlignments/CMJYDVS-exome-S18-Donor-Normal" />
@@ -141,6 +151,9 @@
       <property role="3TOe9T" value="/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR" />
     </node>
     <node concept="2LyH2v" id="235lbi5JUAj" role="2LyH5s" />
+    <node concept="2yJvUm" id="4JZd7mAORgI" role="uTjgs">
+      <property role="TrG5h" value="boot" />
+    </node>
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
@@ -226,6 +239,7 @@
     </node>
   </node>
   <node concept="pkhaZ" id="21kmpcT2JwM">
+    <property role="TrG5h" value="nextflow.config" />
     <node concept="2LyH2v" id="21kmpcT2Jx$" role="pkh9A" />
   </node>
 </model>
