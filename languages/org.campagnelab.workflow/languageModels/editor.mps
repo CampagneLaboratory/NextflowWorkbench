@@ -393,9 +393,45 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="4JZd7mB2lU5" role="3EZMnx">
+        <property role="3F0ifm" value="maxRetries =" />
+        <node concept="lj46D" id="4JZd7mB2m06" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4JZd7mB2lVH" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:4JZd7mB0KNJ" resolve="maxRetries" />
+      </node>
+      <node concept="3F0ifn" id="4JZd7mB2lZ9" role="3EZMnx">
+        <property role="3F0ifm" value="maxErrors =" />
+        <node concept="pVoyu" id="4JZd7mB2m01" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4JZd7mB2m03" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4JZd7mB2lXr" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:4JZd7mB0Jf3" resolve="maxErrors" />
+      </node>
+      <node concept="3F0ifn" id="4JZd7mB0NQv" role="3EZMnx">
+        <property role="3F0ifm" value="errorStrategy:" />
+        <node concept="lj46D" id="4JZd7mB0NSN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="4JZd7mB2lWy" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4JZd7mB0NRZ" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:4JZd7mB0KPE" />
+      </node>
       <node concept="3F0ifn" id="21kmpcSSWp6" role="3EZMnx">
         <property role="3F0ifm" value="numCPUs =" />
         <node concept="lj46D" id="21kmpcSSWpW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="4JZd7mB0NSK" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>

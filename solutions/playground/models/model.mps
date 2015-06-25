@@ -26,14 +26,8 @@
       <concept id="2329585396107819892" name="org.campagnelab.workflow.structure.NumCPUs" flags="ng" index="oDubB">
         <property id="2329585396107820961" name="num" index="oDuoM" />
       </concept>
-      <concept id="2329585396108534973" name="org.campagnelab.workflow.structure.Queue" flags="ng" index="oEfOI">
-        <property id="2329585396108535356" name="queue" index="oEfYJ" />
-      </concept>
       <concept id="2329585396108535569" name="org.campagnelab.workflow.structure.TimeAllowed" flags="ng" index="oEfU2">
         <property id="2329585396108535674" name="time" index="oEfVD" />
-      </concept>
-      <concept id="2329585396108535463" name="org.campagnelab.workflow.structure.Penv" flags="ng" index="oEfWO">
-        <property id="2329585396108535566" name="penv" index="oEfUt" />
       </concept>
       <concept id="2329585396108535359" name="org.campagnelab.workflow.structure.Memory" flags="ng" index="oEfYG">
         <property id="2329585396108535460" name="memory" index="oEfWR" />
@@ -50,12 +44,12 @@
       <concept id="5981541231379827352" name="org.campagnelab.workflow.structure.ScriptBooleanArgs" flags="ng" index="2yJvUm" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <property id="2329585396115730816" name="numInstances" index="pfywj" />
+        <property id="5476153351823625455" name="maxRetries" index="3GZ3yq" />
+        <property id="5476153351823619011" name="maxErrors" index="3GZsuQ" />
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
         <child id="2329585396107820996" name="numCPUs" index="oDupn" />
-        <child id="2329585396108535836" name="penv" index="oEf6f" />
         <child id="2329585396108535851" name="timeAllowed" index="oEf6S" />
         <child id="2329585396108535801" name="memory" index="oEfTE" />
-        <child id="2329585396108535790" name="queue" index="oEfTX" />
         <child id="8369613327464344476" name="outChannel" index="1uLvPA" />
         <child id="8369613327464344471" name="inChannel" index="1uLvPH" />
       </concept>
@@ -91,56 +85,48 @@
   </registry>
   <node concept="2$rMIF" id="5D7AjvYaj9G">
     <property role="TrG5h" value="Workflow" />
-    <node concept="2$rEH5" id="4KI7BXrwLQt" role="2$rEHq">
+    <node concept="2$rEH5" id="4JZd7mB7j$t" role="2$rEHq">
+      <property role="3GZsuQ" value="3" />
+      <property role="3GZ3yq" value="1" />
       <property role="pfywj" value="1" />
       <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
-      <node concept="1uLkD0" id="4KI7BXrwNaE" role="1uLvPA">
+      <node concept="1uLkD0" id="4JZd7mB8RsH" role="1uLvPA">
         <property role="TrG5h" value="Y" />
       </node>
-      <node concept="oDubB" id="21kmpcT8x6t" role="oDupn">
-        <property role="oDuoM" value="5" />
-      </node>
-      <node concept="oEfYG" id="21kmpcTbreQ" role="oEfTE">
+      <node concept="oEfYG" id="4JZd7mB8S0J" role="oEfTE">
         <property role="oEfWR" value="2 GB" />
       </node>
-      <node concept="oEfU2" id="21kmpcTcTcX" role="oEf6S">
+      <node concept="oDubB" id="4JZd7mB8S0L" role="oDupn">
+        <property role="oDuoM" value="4" />
+      </node>
+      <node concept="oEfU2" id="4JZd7mB8S0N" role="oEf6S">
         <property role="oEfVD" value="1h" />
       </node>
-      <node concept="oEfOI" id="21kmpcTcTd0" role="oEfTX">
-        <property role="oEfYJ" value="long" />
-      </node>
-      <node concept="oEfOI" id="21kmpcTcTd3" role="oEfTX">
-        <property role="oEfYJ" value="short" />
-      </node>
-      <node concept="oEfWO" id="21kmpcTcTd8" role="oEf6f">
-        <property role="oEfUt" value="smp" />
-      </node>
     </node>
-    <node concept="2$rEH5" id="4KI7BXrwNaI" role="2$rEHq">
+    <node concept="2$rEH5" id="4JZd7mB8S2c" role="2$rEHq">
+      <property role="3GZsuQ" value="3" />
+      <property role="3GZ3yq" value="1" />
+      <property role="pfywj" value="1" />
       <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
-      <node concept="1uLkD0" id="4KI7BXrwNb0" role="1uLvPA">
+      <node concept="1uYdA0" id="4JZd7mB8S2r" role="1uLvPH">
+        <ref role="1uK_4X" node="4JZd7mB8RsH" resolve="Y" />
+        <node concept="1yaZXp" id="4JZd7mB8S2t" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="4JZd7mB8S2v" role="1uLvPA">
         <property role="TrG5h" value="X" />
       </node>
-      <node concept="1uYdA0" id="4KI7BXrwNaS" role="1uLvPH">
-        <ref role="1uK_4X" node="4KI7BXrwNaE" resolve="Y" />
-        <node concept="1yaZXp" id="4KI7BXrwNaW" role="1ylr64" />
-      </node>
     </node>
-    <node concept="2$rEH5" id="4KI7BXrwNb4" role="2$rEHq">
+    <node concept="2$rEH5" id="4JZd7mB8S2I" role="2$rEHq">
+      <property role="3GZsuQ" value="3" />
+      <property role="3GZ3yq" value="1" />
+      <property role="pfywj" value="1" />
       <ref role="2$rEH4" node="6t646FqPoxG" resolve="combine" />
-      <node concept="1uYdA0" id="4KI7BXrwNb$" role="1uLvPH">
-        <ref role="1uK_4X" node="4KI7BXrwNb0" resolve="X" />
-        <node concept="1yaZT0" id="4KI7BXrwNbC" role="1ylr64">
+      <node concept="1uYdA0" id="4JZd7mB8S35" role="1uLvPH">
+        <ref role="1uK_4X" node="4JZd7mB8S2v" resolve="X" />
+        <node concept="1yaZT0" id="4JZd7mB8S37" role="1ylr64">
           <property role="1yaY5T" value="201" />
         </node>
       </node>
-    </node>
-    <node concept="2$rEH5" id="4JZd7mAXGkS" role="2$rEHq">
-      <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
-      <node concept="1uYdA0" id="4JZd7mAXGlb" role="1uLvPH">
-        <ref role="1uK_4X" node="4KI7BXrwNb0" resolve="X" />
-      </node>
-      <node concept="1uYdA0" id="4JZd7mAXGlC" role="1uLvPH" />
     </node>
     <node concept="3TOe9U" id="4KI7BXrwLQx" role="uTjgs">
       <property role="TrG5h" value="params.alignment1" />
