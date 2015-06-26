@@ -8,10 +8,96 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,16,0" name="org.campagnelab.workflow.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,20,0" name="org.campagnelab.workflow.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/4219150516211265370">
+    <file name="check_OutputChannel_NonTypesystemRule.java">
+      <node id="4219150516211282425" at="27,187,28,520" concept="6" />
+      <node id="4219150516211288759" at="28,520,29,28" concept="6" />
+      <node id="1409934231612850232" at="30,32,31,88" concept="2" />
+      <node id="4219150516211293863" at="33,196,34,15" concept="7" />
+      <node id="4219150516211294411" at="35,7,36,201" concept="2" />
+      <node id="4219150516211299448" at="38,9,39,36" concept="6" />
+      <node id="4219150516211307343" at="42,15,43,68" concept="6" />
+      <node id="4219150516211307343" at="43,68,44,274" concept="6" />
+      <node id="4219150516211265370" at="52,46,53,62" concept="7" />
+      <node id="4219150516211265370" at="56,5,57,130" concept="6" />
+      <node id="4219150516211265370" at="57,130,58,45" concept="7" />
+      <node id="4219150516211265370" at="61,30,62,17" concept="7" />
+      <node id="4219150516211265370" at="64,0,65,0" concept="8" trace="LOG" />
+      <node id="4219150516211304594" at="65,71,66,46" concept="7" />
+      <node id="4219150516211282259" at="68,55,69,43" concept="7" />
+      <node id="4219150516211265370" at="24,0,26,0" concept="1" trace="check_OutputChannel_NonTypesystemRule#()V" />
+      <node id="1409934231612850232" at="29,28,32,7" concept="0" />
+      <node id="1409934231612850232" at="29,28,32,7" concept="4" />
+      <node id="4219150516211289598" at="32,7,35,7" concept="4" />
+      <node id="4219150516211265370" at="52,0,55,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="4219150516211265370" at="61,0,64,0" concept="5" trace="overrides#()Z" />
+      <node id="4219150516211304594" at="65,0,68,0" concept="9" trace="eq_jdzxxb_a0a0a1a0a5a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="4219150516211282259" at="68,0,71,0" concept="9" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="4219150516211307343" at="41,383,45,15" concept="0" />
+      <node id="4219150516211265370" at="55,68,59,5" concept="0" />
+      <node id="4219150516211299940" at="40,199,46,13" concept="4" />
+      <node id="4219150516211265370" at="55,0,61,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4219150516211299448" at="39,36,47,11" concept="4" />
+      <node id="4219150516211299448" at="37,55,48,9" concept="0" />
+      <node id="4219150516211298846" at="36,201,49,7" concept="3" />
+      <node id="4219150516211267678" at="26,126,50,5" concept="4" />
+      <node id="4219150516211265370" at="26,0,52,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4219150516211265370" at="24,50,24,50" />
+      <scope id="1409934231612850232" at="30,32,31,88" />
+      <scope id="4219150516211289600" at="33,196,34,15" />
+      <scope id="4219150516211265370" at="52,46,53,62" />
+      <scope id="4219150516211265370" at="61,30,62,17" />
+      <scope id="4219150516211304594" at="65,71,66,46" />
+      <scope id="4219150516211282259" at="68,55,69,43" />
+      <scope id="4219150516211265370" at="24,0,26,0" />
+      <scope id="4219150516211307343" at="42,15,44,274">
+        <var name="_reporter_2309309498" id="4219150516211307343" />
+        <var name="errorTarget" id="4219150516211307343" />
+      </scope>
+      <scope id="4219150516211265370" at="56,5,58,45">
+        <var name="b" id="4219150516211265370" />
+      </scope>
+      <scope id="1409934231612850232" at="29,28,32,7" />
+      <scope id="4219150516211265370" at="52,0,55,0" />
+      <scope id="4219150516211265370" at="61,0,64,0" />
+      <scope id="4219150516211304594" at="65,0,68,0">
+        <var name="a" id="4219150516211304594" />
+        <var name="b" id="4219150516211304594" />
+      </scope>
+      <scope id="4219150516211282259" at="68,0,71,0">
+        <var name="str" id="4219150516211282259" />
+      </scope>
+      <scope id="4219150516211299941" at="41,383,45,15" />
+      <scope id="4219150516211265370" at="55,68,59,5" />
+      <scope id="4219150516211299452" at="40,199,46,13" />
+      <scope id="4219150516211265370" at="55,0,61,0">
+        <var name="argument" id="4219150516211265370" />
+      </scope>
+      <scope id="4219150516211299448" at="38,9,47,11">
+        <var name="source" id="4219150516211299448" />
+      </scope>
+      <scope id="4219150516211298850" at="37,55,48,9" />
+      <scope id="4219150516211298846" at="36,201,49,7">
+        <var name="name" id="4219150516211298848" />
+      </scope>
+      <scope id="4219150516211267679" at="27,187,49,7">
+        <var name="names" id="4219150516211288762" />
+        <var name="scope" id="4219150516211282426" />
+      </scope>
+      <scope id="4219150516211265371" at="26,126,50,5" />
+      <scope id="4219150516211265370" at="26,0,52,0">
+        <var name="outputChannel" id="4219150516211265370" />
+        <var name="status" id="4219150516211265370" />
+        <var name="typeCheckingContext" id="4219150516211265370" />
+      </scope>
+      <unit id="4219150516211265370" at="23,0,72,0" name="org.campagnelab.workflow.typesystem.check_OutputChannel_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/5489358528154741522">
@@ -33,8 +119,8 @@
       <node id="5489358528155050561" at="27,28,30,7" concept="4" />
       <node id="5489358528154741522" at="47,0,50,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
       <node id="5489358528154741522" at="56,0,59,0" concept="5" trace="overrides#()Z" />
-      <node id="5489358528155086160" at="59,0,62,0" concept="8" trace="eq_qbte7d_a0a0a1a0a4a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="5489358528155035460" at="62,0,65,0" concept="8" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="5489358528155086160" at="59,0,62,0" concept="9" trace="eq_qbte7d_a0a0a1a0a4a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="5489358528155035460" at="62,0,65,0" concept="9" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
       <node id="5489358528155100202" at="36,377,40,15" concept="0" />
       <node id="5489358528154741522" at="50,68,54,5" concept="0" />
       <node id="5489358528155080269" at="35,196,41,13" concept="4" />

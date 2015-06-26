@@ -3471,27 +3471,42 @@
   </root>
   <root nodeRef="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/5476153351829981862">
     <file name="NInstances_Editor.java">
-      <node id="5476153351829981862" at="12,79,13,61" concept="6" />
-      <node id="4717081913774720153" at="15,87,16,93" concept="5" />
-      <node id="4717081913774720153" at="16,93,17,46" concept="2" />
-      <node id="4717081913774720153" at="17,46,18,28" concept="2" />
-      <node id="4717081913774720153" at="18,28,19,34" concept="2" />
-      <node id="4717081913774720153" at="19,34,20,22" concept="6" />
-      <node id="5476153351829981862" at="12,0,15,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="4717081913774720153" at="15,0,22,0" concept="4" trace="createConstant_od8k8e_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5476153351829981862" at="12,79,13,61" />
-      <scope id="5476153351829981862" at="12,0,15,0">
+      <node id="5476153351829981862" at="14,79,15,61" concept="6" />
+      <node id="5476153351829981864" at="17,87,18,82" concept="5" />
+      <node id="5476153351829981864" at="18,82,19,30" concept="2" />
+      <node id="5476153351829981864" at="19,30,20,43" concept="2" />
+      <node id="5476153351829981864" at="20,43,21,26" concept="5" />
+      <node id="5476153351829981864" at="21,26,22,58" concept="2" />
+      <node id="5476153351829981864" at="22,58,23,43" concept="2" />
+      <node id="5476153351829981864" at="23,43,24,28" concept="2" />
+      <node id="5476153351829981864" at="24,28,25,73" concept="2" />
+      <node id="5476153351829981864" at="25,73,26,57" concept="5" />
+      <node id="5476153351829981864" at="26,57,27,59" concept="5" />
+      <node id="5476153351829981864" at="28,35,29,82" concept="5" />
+      <node id="5476153351829981864" at="29,82,30,109" concept="6" />
+      <node id="5476153351829981864" at="31,10,32,22" concept="6" />
+      <node id="5476153351829981862" at="14,0,17,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="5476153351829981864" at="27,59,32,22" concept="3" />
+      <node id="5476153351829981864" at="17,0,34,0" concept="4" trace="createProperty_od8k8e_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="5476153351829981862" at="14,79,15,61" />
+      <scope id="5476153351829981864" at="28,35,30,109">
+        <var name="manager" id="5476153351829981864" />
+      </scope>
+      <scope id="5476153351829981862" at="14,0,17,0">
         <var name="editorContext" id="5476153351829981862" />
         <var name="node" id="5476153351829981862" />
       </scope>
-      <scope id="4717081913774720153" at="15,87,20,22">
-        <var name="editorCell" id="4717081913774720153" />
+      <scope id="5476153351829981864" at="17,87,32,22">
+        <var name="attributeConcept" id="5476153351829981864" />
+        <var name="attributeKind" id="5476153351829981864" />
+        <var name="editorCell" id="5476153351829981864" />
+        <var name="provider" id="5476153351829981864" />
       </scope>
-      <scope id="4717081913774720153" at="15,0,22,0">
-        <var name="editorContext" id="4717081913774720153" />
-        <var name="node" id="4717081913774720153" />
+      <scope id="5476153351829981864" at="17,0,34,0">
+        <var name="editorContext" id="5476153351829981864" />
+        <var name="node" id="5476153351829981864" />
       </scope>
-      <unit id="5476153351829981862" at="11,0,23,0" name="org.campagnelab.workflow.editor.NInstances_Editor" />
+      <unit id="5476153351829981862" at="13,0,35,0" name="org.campagnelab.workflow.editor.NInstances_Editor" />
     </file>
   </root>
   <root nodeRef="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/6505336652525961824">

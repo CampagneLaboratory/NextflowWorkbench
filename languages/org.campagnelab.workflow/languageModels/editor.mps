@@ -920,8 +920,8 @@
   <node concept="24kQdi" id="4JZd7mBp0EA">
     <property role="3GE5qa" value="NumInstances" />
     <ref role="1XX52x" to="iowz:5zCvdJtcYeP" resolve="NInstances" />
-    <node concept="3F0ifn" id="45Qsg8AX$ip" role="2wV5jI">
-      <property role="3F0ifm" value="n times" />
+    <node concept="3F0A7n" id="4JZd7mBp0EC" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:gOOYy9I" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="45Qsg8B9GTK">
