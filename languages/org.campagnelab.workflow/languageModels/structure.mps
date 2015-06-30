@@ -192,10 +192,6 @@
       <property role="TrG5h" value="maxErrors" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="648FhJiPJvQ" role="1TKVEl">
-      <property role="TrG5h" value="numInstances" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1HX2cDt6rj6">
     <property role="TrG5h" value="String" />

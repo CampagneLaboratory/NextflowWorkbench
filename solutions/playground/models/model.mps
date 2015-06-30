@@ -38,8 +38,6 @@
       <concept id="2329585396108535569" name="org.campagnelab.workflow.structure.TimeAllowed" flags="ng" index="oEfU2">
         <property id="2329585396108535674" name="time" index="oEfVD" />
       </concept>
-      <concept id="2329585396108535677" name="org.campagnelab.workflow.structure.ClusterOptions" flags="ng" index="oEfVI" />
-      <concept id="2329585396108535463" name="org.campagnelab.workflow.structure.Penv" flags="ng" index="oEfWO" />
       <concept id="2329585396108535359" name="org.campagnelab.workflow.structure.Memory" flags="ng" index="oEfYG">
         <property id="2329585396108535460" name="memory" index="oEfWR" />
       </concept>
@@ -158,14 +156,12 @@
       <node concept="1uLkD0" id="648FhJiVfVd" role="1uLvPA">
         <property role="TrG5h" value="Z" />
       </node>
-      <node concept="oEfVI" id="648FhJjNhax" role="2McKjg" />
       <node concept="oEfYG" id="648FhJjNhaA" role="2McKjg">
         <property role="oEfWR" value="10 GB" />
       </node>
       <node concept="oDubB" id="648FhJjNhaI" role="2McKjg">
         <property role="oDuoM" value="5" />
       </node>
-      <node concept="oEfWO" id="648FhJjNhaS" role="2McKjg" />
       <node concept="oEfOI" id="648FhJjNhb4" role="2McKjg">
         <node concept="2MiXSP" id="648FhJjNhb6" role="2MiXW1">
           <property role="2MiXSO" value="long" />
@@ -256,6 +252,12 @@
         </node>
         <node concept="19SUe$" id="648FhJi$_HI" role="19SJt6">
           <property role="19SUeA" value="\nsplit -l 1 slicingPlan.tsv index_\n" />
+        </node>
+        <node concept="3YE7tV" id="77D7iYQmP2W" role="19SJt6">
+          <ref role="3YE7sm" node="34JZ5vs$nNF" resolve="'index_*'" />
+        </node>
+        <node concept="19SUe$" id="77D7iYQmP2V" role="19SJt6">
+          <property role="19SUeA" value="\n" />
         </node>
       </node>
     </node>
