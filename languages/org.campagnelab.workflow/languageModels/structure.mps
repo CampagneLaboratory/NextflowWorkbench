@@ -89,6 +89,9 @@
     <node concept="PrWs8" id="6tX5nBTayDp" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="6d3N3AFQqri" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6tX5nBTaD$x">
     <property role="TrG5h" value="Script" />
@@ -149,6 +152,12 @@
   <node concept="1TIwiD" id="5D7AjvYaj9M">
     <property role="TrG5h" value="ProcessRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="648FhJi$_Pf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="inputArgs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5c2H0VLJOBl" resolve="ScriptArgs" />
+    </node>
     <node concept="1TJgyj" id="5D7AjvYaj9N" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="process" />
@@ -167,42 +176,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7gAPJCESTMU" resolve="OutputChannel" />
     </node>
-    <node concept="1TJgyj" id="21kmpcSWrZ4" role="1TKVEi">
+    <node concept="1TJgyj" id="648FhJjeUBb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="numCPUs" />
-      <ref role="20lvS9" node="21kmpcSWrHO" resolve="NumCPUs" />
-    </node>
-    <node concept="1TJgyj" id="21kmpcSZavI" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="queue" />
+      <property role="20kJfa" value="processOptions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="21kmpcSZaiX" resolve="Queue" />
-    </node>
-    <node concept="1TJgyj" id="21kmpcSZavT" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="memory" />
-      <ref role="20lvS9" node="21kmpcSZaoZ" resolve="Memory" />
-    </node>
-    <node concept="1TJgyj" id="21kmpcSZaws" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="penv" />
-      <ref role="20lvS9" node="21kmpcSZaqB" resolve="Penv" />
-    </node>
-    <node concept="1TJgyj" id="21kmpcSZawF" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="timeAllowed" />
-      <ref role="20lvS9" node="21kmpcSZash" resolve="TimeAllowed" />
-    </node>
-    <node concept="1TJgyj" id="21kmpcSZawW" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="clusterOptions" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="21kmpcSZatX" resolve="ClusterOptions" />
-    </node>
-    <node concept="1TJgyj" id="4JZd7mB0KPE" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="errorStrategy" />
-      <ref role="20lvS9" node="4JZd7mB0N1L" resolve="ErrorStrategies" />
+      <ref role="20lvS9" node="648FhJjeUB7" resolve="ProcessOptions" />
     </node>
     <node concept="1TJgyj" id="4JZd7mBdAXI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -213,6 +191,10 @@
     <node concept="1TJgyi" id="4JZd7mB0Jf3" role="1TKVEl">
       <property role="TrG5h" value="maxErrors" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="648FhJiPJvQ" role="1TKVEl">
+      <property role="TrG5h" value="numInstances" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="1HX2cDt6rj6">
@@ -616,7 +598,7 @@
     <property role="34LRSv" value="numCPUs" />
     <property role="R4oN_" value="defines the number of CPU required by the process' task" />
     <property role="3GE5qa" value="processOptions" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="21kmpcSWrYx" role="1TKVEl">
       <property role="TrG5h" value="num" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -627,10 +609,12 @@
     <property role="TrG5h" value="Queue" />
     <property role="34LRSv" value="queue" />
     <property role="R4oN_" value="allows you to set the queue where jobs are schedules when using a grid based executor in the pipeline" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="21kmpcSZaoW" role="1TKVEl">
-      <property role="TrG5h" value="queue" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
+    <node concept="1TJgyj" id="648FhJjgR8q" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="queueElement" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="648FhJjgRcI" resolve="QueueElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="21kmpcSZaoZ">
@@ -638,7 +622,7 @@
     <property role="TrG5h" value="Memory" />
     <property role="34LRSv" value="memory" />
     <property role="R4oN_" value="defines how much memory the process is allowed to use" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="21kmpcSZaq$" role="1TKVEl">
       <property role="TrG5h" value="memory" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -649,7 +633,7 @@
     <property role="TrG5h" value="Penv" />
     <property role="34LRSv" value="penv" />
     <property role="R4oN_" value="define the parallel environment to be used when submitting a parallel task to the SGE resource manager" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="21kmpcSZase" role="1TKVEl">
       <property role="TrG5h" value="penv" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -660,7 +644,7 @@
     <property role="TrG5h" value="TimeAllowed" />
     <property role="34LRSv" value="time allowed" />
     <property role="R4oN_" value="allows you to define how long a process is allowed to run" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="21kmpcSZatU" role="1TKVEl">
       <property role="TrG5h" value="time" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -671,7 +655,7 @@
     <property role="34LRSv" value="cluster options" />
     <property role="R4oN_" value="allows native configuration options to be accepted by the cluster submit command" />
     <property role="3GE5qa" value="processOptions" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="21kmpcSZavC" role="1TKVEl">
       <property role="TrG5h" value="clusterOptions" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -716,18 +700,18 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="ErrorStrategies" />
-    <property role="3GE5qa" value="errorStrategies" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="3GE5qa" value="processOptions.errorStrategies" />
+    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
   </node>
   <node concept="1TIwiD" id="4JZd7mB0N1V">
-    <property role="3GE5qa" value="errorStrategies" />
+    <property role="3GE5qa" value="processOptions.errorStrategies" />
     <property role="TrG5h" value="Ignore" />
     <property role="34LRSv" value="ignore" />
     <property role="R4oN_" value="the process does not stop on an error condition, it only notifies of the error" />
     <ref role="1TJDcQ" node="4JZd7mB0N1L" resolve="ErrorStrategies" />
   </node>
   <node concept="1TIwiD" id="4JZd7mB0N25">
-    <property role="3GE5qa" value="errorStrategies" />
+    <property role="3GE5qa" value="processOptions.errorStrategies" />
     <property role="TrG5h" value="Retry" />
     <property role="34LRSv" value="retry" />
     <property role="R4oN_" value="allows for a process to be resubmitted for execution after returning an error condition" />
@@ -735,6 +719,45 @@
     <node concept="1TJgyi" id="45Qsg8B672I" role="1TKVEl">
       <property role="TrG5h" value="maxRetries" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="648FhJjeUB7">
+    <property role="3GE5qa" value="processOptions" />
+    <property role="TrG5h" value="ProcessOptions" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="648FhJjgRcI">
+    <property role="3GE5qa" value="processOptions" />
+    <property role="TrG5h" value="QueueElement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="648FhJjgRcJ" role="1TKVEl">
+      <property role="TrG5h" value="queue" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5AoFZCLt6Ly">
+    <property role="TrG5h" value="GlobalChannel" />
+    <property role="34LRSv" value="global channel" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5AoFZCLzEJD">
+    <property role="3GE5qa" value="Script" />
+    <property role="TrG5h" value="ListTypes" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5AoFZCLzEMK">
+    <property role="3GE5qa" value="Script" />
+    <property role="TrG5h" value="ListElement" />
+    <ref role="1TJDcQ" node="3m9W35nx3Yj" resolve="ListElements" />
+    <node concept="1TJgyj" id="5AoFZCLzEML" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="listElement" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3m9W35nx3Yj" resolve="ListElements" />
     </node>
   </node>
 </model>
