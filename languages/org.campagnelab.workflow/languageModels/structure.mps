@@ -192,10 +192,6 @@
       <property role="TrG5h" value="maxErrors" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="648FhJiPJvQ" role="1TKVEl">
-      <property role="TrG5h" value="numInstances" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1HX2cDt6rj6">
     <property role="TrG5h" value="String" />
@@ -672,6 +668,12 @@
       <property role="20kJfa" value="executor" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="49c3W7NLHXs" resolve="Executor" />
+    </node>
+    <node concept="1TJgyj" id="29KXY4rPnan" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="queue" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="21kmpcSZaiX" resolve="Queue" />
     </node>
     <node concept="PrWs8" id="21kmpcThJdl" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

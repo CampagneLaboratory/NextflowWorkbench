@@ -38,13 +38,12 @@
       <concept id="2329585396108535569" name="org.campagnelab.workflow.structure.TimeAllowed" flags="ng" index="oEfU2">
         <property id="2329585396108535674" name="time" index="oEfVD" />
       </concept>
-      <concept id="2329585396108535677" name="org.campagnelab.workflow.structure.ClusterOptions" flags="ng" index="oEfVI" />
-      <concept id="2329585396108535463" name="org.campagnelab.workflow.structure.Penv" flags="ng" index="oEfWO" />
       <concept id="2329585396108535359" name="org.campagnelab.workflow.structure.Memory" flags="ng" index="oEfYG">
         <property id="2329585396108535460" name="memory" index="oEfWR" />
       </concept>
       <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.NextflowConfig" flags="ng" index="pkhaZ">
         <child id="2329585396109102069" name="executor" index="pkh9A" />
+        <child id="2481755940887818903" name="queue" index="TDolQ" />
       </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="1611392698160571037" name="workflowValues" index="1Q3e2" />
@@ -54,7 +53,6 @@
       </concept>
       <concept id="5981541231379827352" name="org.campagnelab.workflow.structure.ScriptBooleanArgs" flags="ng" index="2yJvUm" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
-        <property id="6992028756505720822" name="numInstances" index="2NR_FH" />
         <property id="5476153351823619011" name="maxErrors" index="3GZsuQ" />
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
         <child id="6992028756512319947" name="processOptions" index="2McKjg" />
@@ -71,10 +69,14 @@
       <concept id="6992028756512830254" name="org.campagnelab.workflow.structure.QueueElement" flags="ng" index="2MiXSP">
         <property id="6992028756512830255" name="queue" index="2MiXSO" />
       </concept>
+      <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
       <concept id="8369613327464057510" name="org.campagnelab.workflow.structure.FileChannel" flags="ng" index="1uY1Ls">
         <child id="8369613327464057511" name="file" index="1uY1Lt" />
+      </concept>
+      <concept id="8369613327464053589" name="org.campagnelab.workflow.structure.StringChannel" flags="ng" index="1uY6QJ">
+        <child id="8369613327464373545" name="string" index="1uLkJj" />
       </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
@@ -152,20 +154,17 @@
     </node>
     <node concept="2$rEH5" id="648FhJiVfUD" role="2$rEHq">
       <property role="3GZsuQ" value="3" />
-      <property role="2NR_FH" value="n" />
       <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
       <node concept="25QTXI" id="648FhJjNh7x" role="3GMlGr" />
       <node concept="1uLkD0" id="648FhJiVfVd" role="1uLvPA">
         <property role="TrG5h" value="Z" />
       </node>
-      <node concept="oEfVI" id="648FhJjNhax" role="2McKjg" />
       <node concept="oEfYG" id="648FhJjNhaA" role="2McKjg">
         <property role="oEfWR" value="10 GB" />
       </node>
       <node concept="oDubB" id="648FhJjNhaI" role="2McKjg">
         <property role="oDuoM" value="5" />
       </node>
-      <node concept="oEfWO" id="648FhJjNhaS" role="2McKjg" />
       <node concept="oEfOI" id="648FhJjNhb4" role="2McKjg">
         <node concept="2MiXSP" id="648FhJjNhb6" role="2MiXW1">
           <property role="2MiXSO" value="long" />
@@ -257,11 +256,35 @@
         <node concept="19SUe$" id="648FhJi$_HI" role="19SJt6">
           <property role="19SUeA" value="\nsplit -l 1 slicingPlan.tsv index_\n" />
         </node>
+        <node concept="3YE7tV" id="3m26Pih7QXx" role="19SJt6" />
+        <node concept="19SUe$" id="3m26Pih7QXw" role="19SJt6">
+          <property role="19SUeA" value="\n" />
+        </node>
       </node>
     </node>
     <node concept="1uY1Ls" id="34JZ5vs$nNE" role="2ulM79">
       <node concept="16pRw0" id="34JZ5vs$nNF" role="1uY1Lt">
         <property role="TrG5h" value="'index_*'" />
+      </node>
+    </node>
+    <node concept="1uY1Ls" id="3m26PihbF4_" role="2ulM79">
+      <node concept="16pRw0" id="3m26PihbF4B" role="1uY1Lt">
+        <property role="TrG5h" value="'n?ame'" />
+      </node>
+    </node>
+    <node concept="1uY1Ls" id="3m26PihbF4R" role="2ulM79">
+      <node concept="16pRw0" id="3m26PihbF4T" role="1uY1Lt">
+        <property role="TrG5h" value="name" />
+      </node>
+    </node>
+    <node concept="1uY1Ls" id="3m26Pih7QWJ" role="2ulM79">
+      <node concept="16pRw0" id="3m26Pih7QWL" role="1uY1Lt">
+        <property role="TrG5h" value="no" />
+      </node>
+    </node>
+    <node concept="1uY6QJ" id="3m26Pih7QXH" role="2ulM7n">
+      <node concept="16pbKc" id="3m26Pih7QXI" role="1uLkJj">
+        <property role="TrG5h" value="str" />
       </node>
     </node>
   </node>
@@ -322,6 +345,11 @@
   <node concept="pkhaZ" id="21kmpcT2JwM">
     <property role="TrG5h" value="nextflow.config" />
     <node concept="2LyH2v" id="21kmpcT2Jx$" role="pkh9A" />
+    <node concept="oEfOI" id="5fMLpU9swBO" role="TDolQ">
+      <node concept="2MiXSP" id="5fMLpU9swF8" role="2MiXW1">
+        <property role="2MiXSO" value="long" />
+      </node>
+    </node>
   </node>
 </model>
 
