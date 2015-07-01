@@ -50,8 +50,8 @@
     <file name="Flatten_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Flatten_BehaviorDescriptor" />
     </file>
-    <file name="GlobalBooleanChannel_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalBooleanChannel_BehaviorDescriptor" />
+    <file name="GlobalBooleanExpression_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalBooleanExpression_BehaviorDescriptor" />
     </file>
     <file name="GlobalBooleanList_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalBooleanList_BehaviorDescriptor" />
@@ -59,14 +59,14 @@
     <file name="GlobalBoolean_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.GlobalBoolean_BehaviorDescriptor" />
     </file>
-    <file name="GlobalChannelTypes_BehaviorDescriptor.java">
-      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.GlobalChannelTypes_BehaviorDescriptor" />
-    </file>
     <file name="GlobalChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalChannel_BehaviorDescriptor" />
     </file>
-    <file name="GlobalFileChannel_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalFileChannel_BehaviorDescriptor" />
+    <file name="GlobalExpression_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.GlobalExpression_BehaviorDescriptor" />
+    </file>
+    <file name="GlobalFileExpression_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalFileExpression_BehaviorDescriptor" />
     </file>
     <file name="GlobalFileList_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalFileList_BehaviorDescriptor" />
@@ -74,8 +74,8 @@
     <file name="GlobalFile_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.GlobalFile_BehaviorDescriptor" />
     </file>
-    <file name="GlobalIntegerChannel_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalIntegerChannel_BehaviorDescriptor" />
+    <file name="GlobalIntegerExpression_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalIntegerExpression_BehaviorDescriptor" />
     </file>
     <file name="GlobalIntegerList_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalIntegerList_BehaviorDescriptor" />
@@ -86,8 +86,8 @@
     <file name="GlobalInteger_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalInteger_BehaviorDescriptor" />
     </file>
-    <file name="GlobalListChannel_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalListChannel_BehaviorDescriptor" />
+    <file name="GlobalListExpression_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalListExpression_BehaviorDescriptor" />
     </file>
     <file name="GlobalListType_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.GlobalListType_BehaviorDescriptor" />
@@ -95,8 +95,8 @@
     <file name="GlobalList_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalList_BehaviorDescriptor" />
     </file>
-    <file name="GlobalStringChannel_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalStringChannel_BehaviorDescriptor" />
+    <file name="GlobalStringExpression_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalStringExpression_BehaviorDescriptor" />
     </file>
     <file name="GlobalStringList_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalStringList_BehaviorDescriptor" />
@@ -205,9 +205,6 @@
     </file>
     <file name="Script_BehaviorDescriptor.java">
       <unit at="11,0,25,0" name="org.campagnelab.workflow.behavior.Script_BehaviorDescriptor" />
-    </file>
-    <file name="SetChannelValues_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.SetChannelValues_BehaviorDescriptor" />
     </file>
     <file name="StringChannel_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.StringChannel_BehaviorDescriptor" />

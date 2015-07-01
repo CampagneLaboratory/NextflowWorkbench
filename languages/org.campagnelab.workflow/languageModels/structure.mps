@@ -478,7 +478,7 @@
   <node concept="1TIwiD" id="3m9W35nCwTL">
     <property role="3GE5qa" value="channelFunctions" />
     <property role="TrG5h" value="Collate" />
-    <property role="34LRSv" value="collate(int n)" />
+    <property role="34LRSv" value="collate" />
     <property role="R4oN_" value="transforms a channel such that the emitted values are grouped into lists containing n items" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunctions" />
     <node concept="1TJgyi" id="3m9W35nCx58" role="1TKVEl">
@@ -489,21 +489,21 @@
   <node concept="1TIwiD" id="3m9W35nCwXC">
     <property role="3GE5qa" value="channelFunctions" />
     <property role="TrG5h" value="Flatten" />
-    <property role="34LRSv" value="flatten()" />
+    <property role="34LRSv" value="flatten" />
     <property role="R4oN_" value="transforms a channel's lists of elements into single entries to be emitted separately" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunctions" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCxaI">
     <property role="3GE5qa" value="channelFunctions" />
     <property role="TrG5h" value="ToList" />
-    <property role="34LRSv" value="toList()" />
+    <property role="34LRSv" value="toList" />
     <property role="R4oN_" value="converts all the items emitted by a channel to a single list object and emits the list as a single item " />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunctions" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCxgw">
     <property role="3GE5qa" value="channelFunctions" />
     <property role="TrG5h" value="ToSortedList" />
-    <property role="34LRSv" value="toSortedList()" />
+    <property role="34LRSv" value="toSortedList" />
     <property role="R4oN_" value="collects all the items emitted by a list object, sorts them, and then emits the list as a single item" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunctions" />
   </node>
@@ -714,9 +714,9 @@
     <ref role="1TJDcQ" node="3m26PihhBwN" resolve="OutChannels" />
     <node concept="1TJgyj" id="3m26PihhBJU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="channel" />
+      <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3m26PihhBX2" resolve="GlobalChannelTypes" />
+      <ref role="20lvS9" node="4Toykm43Ope" resolve="GlobalExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="5AoFZCLzEJD">
@@ -746,27 +746,10 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3m26PihhBKO">
-    <property role="TrG5h" value="SetChannelValues" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="3GE5qa" value="setChannelValues" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="3m26PihhBX2">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalChannelTypes" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3m26PihlgKs" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3m26PihhBXV">
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalStringType" />
     <property role="TrG5h" value="RangeOfChars" />
-    <property role="34LRSv" value="range(start, end)" />
+    <property role="34LRSv" value="range" />
     <property role="R4oN_" value="creates a range of strings from start to end inclusive as individual emissions" />
     <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="GlobalStringType" />
     <node concept="1TJgyi" id="3m26PihhBXW" role="1TKVEl">
@@ -780,8 +763,8 @@
   </node>
   <node concept="1TIwiD" id="3m26PihlgGj">
     <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalBooleanChannel" />
-    <ref role="1TJDcQ" node="3m26PihhBX2" resolve="GlobalChannelTypes" />
+    <property role="TrG5h" value="GlobalBooleanExpression" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
     <node concept="1TJgyj" id="3m26Pihn7Ns" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="boolean" />
@@ -791,8 +774,8 @@
   </node>
   <node concept="1TIwiD" id="3m26PihlgLm">
     <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalIntegerChannel" />
-    <ref role="1TJDcQ" node="3m26PihhBX2" resolve="GlobalChannelTypes" />
+    <property role="TrG5h" value="GlobalIntegerExpression" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
     <node concept="1TJgyj" id="3m26Pihn7Nw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="integer" />
@@ -802,8 +785,8 @@
   </node>
   <node concept="1TIwiD" id="3m26PihlgMf">
     <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalStringChannel" />
-    <ref role="1TJDcQ" node="3m26PihhBX2" resolve="GlobalChannelTypes" />
+    <property role="TrG5h" value="GlobalStringExpression" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
     <node concept="1TJgyj" id="3m26Pihn7N$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="string" />
@@ -813,8 +796,8 @@
   </node>
   <node concept="1TIwiD" id="3m26PihlgPf">
     <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalListChannel" />
-    <ref role="1TJDcQ" node="3m26PihhBX2" resolve="GlobalChannelTypes" />
+    <property role="TrG5h" value="GlobalListExpression" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
     <node concept="1TJgyj" id="3m26Pihn7Ny" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="list" />
@@ -824,8 +807,8 @@
   </node>
   <node concept="1TIwiD" id="3m26PihlgQQ">
     <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalFileChannel" />
-    <ref role="1TJDcQ" node="3m26PihhBX2" resolve="GlobalChannelTypes" />
+    <property role="TrG5h" value="GlobalFileExpression" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
     <node concept="1TJgyj" id="3m26Pihn7Nu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="file" />
@@ -948,7 +931,7 @@
   <node concept="1TIwiD" id="3m26Pihn82l">
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalIntegerType" />
     <property role="TrG5h" value="RangeOfIntegers" />
-    <property role="34LRSv" value="range(start, end)" />
+    <property role="34LRSv" value="range" />
     <property role="R4oN_" value="creates a range of integers from start to end inclusive as individual emissions" />
     <ref role="1TJDcQ" node="3m26Pihn7g0" resolve="GlobalIntegerType" />
     <node concept="1TJgyi" id="3m26Pihn82m" role="1TKVEl">
@@ -969,6 +952,13 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4Toykm43Ope">
+    <property role="3GE5qa" value="setChannelValues.globalTypes" />
+    <property role="TrG5h" value="GlobalExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
