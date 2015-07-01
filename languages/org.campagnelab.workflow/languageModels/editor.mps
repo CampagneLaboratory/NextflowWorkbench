@@ -1145,8 +1145,20 @@
   </node>
   <node concept="24kQdi" id="3m26PihpcOi">
     <ref role="1XX52x" to="iowz:5AoFZCLt6Ly" resolve="GlobalChannel" />
-    <node concept="3F1sOY" id="3m26PihpcOk" role="2wV5jI">
-      <ref role="1NtTu8" to="iowz:3m26PihhBJU" />
+    <node concept="3EZMnI" id="4Toykm3BqJ4" role="2wV5jI">
+      <node concept="l2Vlx" id="4Toykm3BqJ5" role="2iSdaV" />
+      <node concept="1iCGBv" id="4Toykm3Brvi" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:3m26PihhBJU" />
+        <node concept="1sVBvm" id="4Toykm3Brvk" role="1sWHZn">
+          <node concept="3F0A7n" id="4Toykm3Brvw" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3m26PihpcOk" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:3m26PihhBJU" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3m26PihtnlC">

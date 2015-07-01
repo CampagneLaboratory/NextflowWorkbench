@@ -68,6 +68,7 @@
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -87,6 +88,10 @@
       </concept>
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
@@ -168,6 +173,7 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -262,12 +268,12 @@
             <node concept="3cpWsn" id="4JZd7mASzLo" role="3cpWs9">
               <property role="TrG5h" value="scope" />
               <node concept="2I9FWS" id="4JZd7mASF6v" role="1tU5fm">
-                <ref role="2I9WkF" to="iowz:7gAPJCESTMU" resolve="OutputChannel" />
+                <ref role="2I9WkF" to="iowz:3m26PihhBwN" resolve="OutChannels" />
               </node>
               <node concept="2ShNRf" id="4JZd7mASIj6" role="33vP2m">
                 <node concept="2T8Vx0" id="4JZd7mASIgX" role="2ShVmc">
                   <node concept="2I9FWS" id="4JZd7mASIgY" role="2T96Bj">
-                    <ref role="2I9WkF" to="iowz:7gAPJCESTMU" resolve="OutputChannel" />
+                    <ref role="2I9WkF" to="iowz:3m26PihhBwN" resolve="OutChannels" />
                   </node>
                 </node>
               </node>
@@ -515,6 +521,238 @@
               </node>
               <node concept="3Tsc0h" id="QUu6alSLxT" role="2OqNvi">
                 <ref role="3TtcxE" to="iowz:5D7AjvYaj9H" />
+              </node>
+            </node>
+          </node>
+          <node concept="2Gpval" id="4Toykm3$ime" role="3cqZAp">
+            <node concept="2GrKxI" id="4Toykm3$img" role="2Gsz3X">
+              <property role="TrG5h" value="globalChannel" />
+            </node>
+            <node concept="3clFbS" id="4Toykm3$imi" role="2LFqv$">
+              <node concept="3cpWs8" id="4Toykm3$v7K" role="3cqZAp">
+                <node concept="3cpWsn" id="4Toykm3$v7N" role="3cpWs9">
+                  <property role="TrG5h" value="globalConcept" />
+                  <node concept="3bZ5Sz" id="4Toykm3$v7I" role="1tU5fm" />
+                  <node concept="2OqwBi" id="4Toykm3$w3N" role="33vP2m">
+                    <node concept="2OqwBi" id="4Toykm3$vvt" role="2Oq$k0">
+                      <node concept="2GrUjf" id="4Toykm3$voA" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="4Toykm3$img" resolve="globalChannel" />
+                      </node>
+                      <node concept="3TrEf2" id="4Toykm3$vKR" role="2OqNvi">
+                        <ref role="3Tt5mk" to="iowz:3m26PihhBJU" />
+                      </node>
+                    </node>
+                    <node concept="2yIwOk" id="4Toykm3$wqT" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="4Toykm3$_7h" role="3cqZAp">
+                <node concept="3cpWsn" id="4Toykm3$_7k" role="3cpWs9">
+                  <property role="TrG5h" value="inputConcept" />
+                  <node concept="3bZ5Sz" id="4Toykm3$_7f" role="1tU5fm" />
+                  <node concept="2OqwBi" id="4Toykm3$FLt" role="33vP2m">
+                    <node concept="2OqwBi" id="4Toykm3$D2e" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4Toykm3$BTA" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4Toykm3$BzF" role="2Oq$k0">
+                          <node concept="1PxgMI" id="4Toykm3$Bhf" role="2Oq$k0">
+                            <ref role="1PxNhF" to="iowz:5D7AjvYaj9M" resolve="ProcessRef" />
+                            <node concept="21POm0" id="4Toykm3$B7E" role="1PxMeX" />
+                          </node>
+                          <node concept="3TrEf2" id="4Toykm3$BLL" role="2OqNvi">
+                            <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
+                          </node>
+                        </node>
+                        <node concept="3Tsc0h" id="4Toykm3$Cdm" role="2OqNvi">
+                          <ref role="3TtcxE" to="iowz:6tX5nBTaziI" />
+                        </node>
+                      </node>
+                      <node concept="34jXtK" id="4Toykm3$Fsm" role="2OqNvi">
+                        <node concept="37vLTw" id="4Toykm3$FAQ" role="25WWJ7">
+                          <ref role="3cqZAo" node="4JZd7mAVrLu" resolve="numInputChannel" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2yIwOk" id="4Toykm3$G6S" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="4Toykm3$tNj" role="3cqZAp">
+                <node concept="3clFbS" id="4Toykm3$tNk" role="3clFbx">
+                  <node concept="3clFbF" id="4Toykm3$HVb" role="3cqZAp">
+                    <node concept="2OqwBi" id="4Toykm3$Izq" role="3clFbG">
+                      <node concept="37vLTw" id="4Toykm3$HVa" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4JZd7mASzLo" resolve="scope" />
+                      </node>
+                      <node concept="TSZUe" id="4Toykm3$MpH" role="2OqNvi">
+                        <node concept="2GrUjf" id="4Toykm3$ME4" role="25WWJ7">
+                          <ref role="2Gs0qQ" node="4Toykm3$img" resolve="globalChannel" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1Wc70l" id="4Toykm3$H9_" role="3clFbw">
+                  <node concept="3clFbC" id="4Toykm3$HrF" role="3uHU7w">
+                    <node concept="35c_gC" id="4Toykm3$HAa" role="3uHU7w">
+                      <ref role="35c_gD" to="iowz:7gAPJCERFHl" resolve="StringChannel" />
+                    </node>
+                    <node concept="37vLTw" id="4Toykm3$Hka" role="3uHU7B">
+                      <ref role="3cqZAo" node="4Toykm3$_7k" resolve="inputConcept" />
+                    </node>
+                  </node>
+                  <node concept="3clFbC" id="4Toykm3$GHo" role="3uHU7B">
+                    <node concept="37vLTw" id="4Toykm3$GyY" role="3uHU7B">
+                      <ref role="3cqZAo" node="4Toykm3$v7N" resolve="globalConcept" />
+                    </node>
+                    <node concept="35c_gC" id="4Toykm3$GNU" role="3uHU7w">
+                      <ref role="35c_gD" to="iowz:3m26PihlgMf" resolve="GlobalStringChannel" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3eNFk2" id="4Toykm3$U7I" role="3eNLev">
+                  <node concept="3clFbS" id="4Toykm3$U7K" role="3eOfB_">
+                    <node concept="3clFbF" id="4Toykm3_0j7" role="3cqZAp">
+                      <node concept="2OqwBi" id="4Toykm3_11M" role="3clFbG">
+                        <node concept="37vLTw" id="4Toykm3_0j6" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4JZd7mASzLo" resolve="scope" />
+                        </node>
+                        <node concept="TSZUe" id="4Toykm3_4Qj" role="2OqNvi">
+                          <node concept="2GrUjf" id="4Toykm3_5eB" role="25WWJ7">
+                            <ref role="2Gs0qQ" node="4Toykm3$img" resolve="globalChannel" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1Wc70l" id="4Toykm3$Zfz" role="3eO9$A">
+                    <node concept="3clFbC" id="4Toykm3$Zf$" role="3uHU7w">
+                      <node concept="35c_gC" id="4Toykm3$Zf_" role="3uHU7w">
+                        <ref role="35c_gD" to="iowz:7gAPJCERGEu" resolve="IntegerChannel" />
+                      </node>
+                      <node concept="37vLTw" id="4Toykm3$ZfA" role="3uHU7B">
+                        <ref role="3cqZAo" node="4Toykm3$_7k" resolve="inputConcept" />
+                      </node>
+                    </node>
+                    <node concept="3clFbC" id="4Toykm3$ZfB" role="3uHU7B">
+                      <node concept="37vLTw" id="4Toykm3$ZfC" role="3uHU7B">
+                        <ref role="3cqZAo" node="4Toykm3$v7N" resolve="globalConcept" />
+                      </node>
+                      <node concept="35c_gC" id="4Toykm3$ZfD" role="3uHU7w">
+                        <ref role="35c_gD" to="iowz:3m26PihlgLm" resolve="GlobalIntegerChannel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3eNFk2" id="4Toykm3_6r4" role="3eNLev">
+                  <node concept="3clFbS" id="4Toykm3_6r5" role="3eOfB_">
+                    <node concept="3clFbF" id="4Toykm3_6r6" role="3cqZAp">
+                      <node concept="2OqwBi" id="4Toykm3_6r7" role="3clFbG">
+                        <node concept="37vLTw" id="4Toykm3_6r8" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4JZd7mASzLo" resolve="scope" />
+                        </node>
+                        <node concept="TSZUe" id="4Toykm3_6r9" role="2OqNvi">
+                          <node concept="2GrUjf" id="4Toykm3_6ra" role="25WWJ7">
+                            <ref role="2Gs0qQ" node="4Toykm3$img" resolve="globalChannel" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1Wc70l" id="4Toykm3_6rb" role="3eO9$A">
+                    <node concept="3clFbC" id="4Toykm3_6rc" role="3uHU7w">
+                      <node concept="35c_gC" id="4Toykm3_6rd" role="3uHU7w">
+                        <ref role="35c_gD" to="iowz:7gAPJCERGEz" resolve="BooleanChannel" />
+                      </node>
+                      <node concept="37vLTw" id="4Toykm3_6re" role="3uHU7B">
+                        <ref role="3cqZAo" node="4Toykm3$_7k" resolve="inputConcept" />
+                      </node>
+                    </node>
+                    <node concept="3clFbC" id="4Toykm3_6rf" role="3uHU7B">
+                      <node concept="37vLTw" id="4Toykm3_6rg" role="3uHU7B">
+                        <ref role="3cqZAo" node="4Toykm3$v7N" resolve="globalConcept" />
+                      </node>
+                      <node concept="35c_gC" id="4Toykm3_6rh" role="3uHU7w">
+                        <ref role="35c_gD" to="iowz:3m26PihlgGj" resolve="GlobalBooleanChannel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3eNFk2" id="4Toykm3_7N_" role="3eNLev">
+                  <node concept="3clFbS" id="4Toykm3_7NA" role="3eOfB_">
+                    <node concept="3clFbF" id="4Toykm3_7NB" role="3cqZAp">
+                      <node concept="2OqwBi" id="4Toykm3_7NC" role="3clFbG">
+                        <node concept="37vLTw" id="4Toykm3_7ND" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4JZd7mASzLo" resolve="scope" />
+                        </node>
+                        <node concept="TSZUe" id="4Toykm3_7NE" role="2OqNvi">
+                          <node concept="2GrUjf" id="4Toykm3_7NF" role="25WWJ7">
+                            <ref role="2Gs0qQ" node="4Toykm3$img" resolve="globalChannel" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1Wc70l" id="4Toykm3_7NG" role="3eO9$A">
+                    <node concept="3clFbC" id="4Toykm3_7NH" role="3uHU7w">
+                      <node concept="35c_gC" id="4Toykm3_7NI" role="3uHU7w">
+                        <ref role="35c_gD" to="iowz:7gAPJCERGEA" resolve="FileChannel" />
+                      </node>
+                      <node concept="37vLTw" id="4Toykm3_7NJ" role="3uHU7B">
+                        <ref role="3cqZAo" node="4Toykm3$_7k" resolve="inputConcept" />
+                      </node>
+                    </node>
+                    <node concept="3clFbC" id="4Toykm3_7NK" role="3uHU7B">
+                      <node concept="37vLTw" id="4Toykm3_7NL" role="3uHU7B">
+                        <ref role="3cqZAo" node="4Toykm3$v7N" resolve="globalConcept" />
+                      </node>
+                      <node concept="35c_gC" id="4Toykm3_7NM" role="3uHU7w">
+                        <ref role="35c_gD" to="iowz:3m26PihlgQQ" resolve="GlobalFileChannel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3eNFk2" id="4Toykm3_9uL" role="3eNLev">
+                  <node concept="3clFbS" id="4Toykm3_9uM" role="3eOfB_">
+                    <node concept="3clFbF" id="4Toykm3_9uN" role="3cqZAp">
+                      <node concept="2OqwBi" id="4Toykm3_9uO" role="3clFbG">
+                        <node concept="37vLTw" id="4Toykm3_9uP" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4JZd7mASzLo" resolve="scope" />
+                        </node>
+                        <node concept="TSZUe" id="4Toykm3_9uQ" role="2OqNvi">
+                          <node concept="2GrUjf" id="4Toykm3_9uR" role="25WWJ7">
+                            <ref role="2Gs0qQ" node="4Toykm3$img" resolve="globalChannel" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1Wc70l" id="4Toykm3_9uS" role="3eO9$A">
+                    <node concept="3clFbC" id="4Toykm3_9uT" role="3uHU7w">
+                      <node concept="35c_gC" id="4Toykm3_9uU" role="3uHU7w">
+                        <ref role="35c_gD" to="iowz:3v6eDgz_YY9" resolve="ListChannel" />
+                      </node>
+                      <node concept="37vLTw" id="4Toykm3_9uV" role="3uHU7B">
+                        <ref role="3cqZAo" node="4Toykm3$_7k" resolve="inputConcept" />
+                      </node>
+                    </node>
+                    <node concept="3clFbC" id="4Toykm3_9uW" role="3uHU7B">
+                      <node concept="37vLTw" id="4Toykm3_9uX" role="3uHU7B">
+                        <ref role="3cqZAo" node="4Toykm3$v7N" resolve="globalConcept" />
+                      </node>
+                      <node concept="35c_gC" id="4Toykm3_9uY" role="3uHU7w">
+                        <ref role="35c_gD" to="iowz:3m26PihlgPf" resolve="GlobalListChannel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4Toykm3$jwz" role="2GsD0m">
+              <node concept="37vLTw" id="4Toykm3$j4K" role="2Oq$k0">
+                <ref role="3cqZAo" node="QUu6alSKor" resolve="workflow" />
+              </node>
+              <node concept="3Tsc0h" id="4Toykm3$tv7" role="2OqNvi">
+                <ref role="3TtcxE" to="iowz:3m26PihhBZE" />
               </node>
             </node>
           </node>
