@@ -43,6 +43,7 @@
       </concept>
       <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.NextflowConfig" flags="ng" index="pkhaZ">
         <child id="2329585396109102069" name="executor" index="pkh9A" />
+        <child id="2481755940887818903" name="queue" index="TDolQ" />
       </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="1611392698160571037" name="workflowValues" index="1Q3e2" />
@@ -52,7 +53,6 @@
       </concept>
       <concept id="5981541231379827352" name="org.campagnelab.workflow.structure.ScriptBooleanArgs" flags="ng" index="2yJvUm" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
-        <property id="6992028756505720822" name="numInstances" index="2NR_FH" />
         <property id="5476153351823619011" name="maxErrors" index="3GZsuQ" />
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
         <child id="6992028756512319947" name="processOptions" index="2McKjg" />
@@ -150,7 +150,6 @@
     </node>
     <node concept="2$rEH5" id="648FhJiVfUD" role="2$rEHq">
       <property role="3GZsuQ" value="3" />
-      <property role="2NR_FH" value="n" />
       <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
       <node concept="25QTXI" id="648FhJjNh7x" role="3GMlGr" />
       <node concept="1uLkD0" id="648FhJiVfVd" role="1uLvPA">
@@ -324,6 +323,11 @@
   <node concept="pkhaZ" id="21kmpcT2JwM">
     <property role="TrG5h" value="nextflow.config" />
     <node concept="2LyH2v" id="21kmpcT2Jx$" role="pkh9A" />
+    <node concept="oEfOI" id="5fMLpU9swBO" role="TDolQ">
+      <node concept="2MiXSP" id="5fMLpU9swF8" role="2MiXW1">
+        <property role="2MiXSO" value="long" />
+      </node>
+    </node>
   </node>
 </model>
 
