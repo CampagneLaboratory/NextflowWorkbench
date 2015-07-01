@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow.nyosh/org.campagnelab.workflow.nyosh.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow/org.campagnelab.workflow.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />
     </projectModules>
