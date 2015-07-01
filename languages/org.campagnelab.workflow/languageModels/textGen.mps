@@ -105,6 +105,7 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
+      <concept id="8931911391946696733" name="jetbrains.mps.lang.textGen.structure.ExtensionDeclaration" flags="in" index="9MYSb" />
       <concept id="1237305208784" name="jetbrains.mps.lang.textGen.structure.NewLineAppendPart" flags="ng" index="l8MVK" />
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
         <child id="1237305790512" name="value" index="lb14g" />
@@ -118,6 +119,7 @@
       <concept id="1233670071145" name="jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration" flags="ig" index="WtQ9Q">
         <reference id="1233670257997" name="conceptDeclaration" index="WuzLi" />
         <child id="1233749296504" name="textGenBlock" index="11c4hB" />
+        <child id="7991274449437422201" name="extension" index="33IsuW" />
       </concept>
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
@@ -225,6 +227,15 @@
           <node concept="1bDJIP" id="34JZ5vrO7LC" role="lcghm">
             <ref role="1rvKf6" node="34JZ5vrM0V4" resolve="workflow" />
             <node concept="117lpO" id="34JZ5vrO7LQ" role="1ryhcI" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9MYSb" id="3ftTtby5ot4" role="33IsuW">
+      <node concept="3clFbS" id="3ftTtby5ot5" role="2VODD2">
+        <node concept="3clFbF" id="3ftTtby5tKz" role="3cqZAp">
+          <node concept="Xl_RD" id="3ftTtby5tKy" role="3clFbG">
+            <property role="Xl_RC" value=".nf" />
           </node>
         </node>
       </node>
