@@ -47,8 +47,10 @@
       </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
+      <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
       <concept id="1192795771125" name="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" flags="in" index="2SaL7w" />
+      <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
         <property id="2522969319638091386" name="isAvailableInChildNodes" index="2ZfUl0" />
@@ -181,6 +183,32 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="irqYu7mLhU">
+    <property role="TrG5h" value="ReloadResourceVariables" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="3jiv:5yyd2HFS3xA" resolve="NyoShAwareScript" />
+    <node concept="2S6ZIM" id="irqYu7mLhV" role="2ZfVej">
+      <node concept="3clFbS" id="irqYu7mLhW" role="2VODD2">
+        <node concept="3clFbF" id="irqYu7mLw4" role="3cqZAp">
+          <node concept="Xl_RD" id="irqYu7mLw3" role="3clFbG">
+            <property role="Xl_RC" value="Load/Reload Resource Variables" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="irqYu7mLhX" role="2ZfgGD">
+      <node concept="3clFbS" id="irqYu7mLhY" role="2VODD2">
+        <node concept="3clFbF" id="irqYu7mLU2" role="3cqZAp">
+          <node concept="2OqwBi" id="irqYu7mLW_" role="3clFbG">
+            <node concept="2Sf5sV" id="irqYu7mLU1" role="2Oq$k0" />
+            <node concept="2qgKlT" id="irqYu7mMpe" role="2OqNvi">
+              <ref role="37wK5l" to="qloq:irqYu7hHBc" resolve="reloadVariables" />
             </node>
           </node>
         </node>

@@ -43,7 +43,6 @@
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1184319644772" name="jetbrains.mps.lang.editor.structure.CellModel_NonEmptyProperty" flags="sg" stub="730538219796134178" index="2YWUlR" />
-      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
@@ -562,6 +561,12 @@
     <node concept="3EZMnI" id="70dPcAeDqiU" role="2wV5jI">
       <node concept="3F0ifn" id="3ftTtby4l8q" role="3EZMnx">
         <property role="3F0ifm" value="$" />
+        <node concept="11LMrY" id="irqYu7pj99" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="irqYu7pjgj" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
       </node>
       <node concept="1iCGBv" id="70dPcAeDqjp" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:70dPcAeDqfv" />
@@ -569,12 +574,6 @@
           <node concept="3F0A7n" id="70dPcAeDqk$" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <node concept="11L4FC" id="70Aomqk_K8d" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
-            <node concept="11LMrY" id="70Aomqk_K8e" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
           </node>
         </node>
         <node concept="VechU" id="70dPcAeF3qL" role="3F10Kt">

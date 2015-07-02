@@ -11,6 +11,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="3jiv" ref="r:36d353e8-689e-4297-b8ea-7712719668fa(org.campagnelab.workflow.nyosh.structure)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
+    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -26,10 +27,22 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styleClass" index="V601i" />
+      </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -53,6 +66,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -88,6 +102,11 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
@@ -170,6 +189,69 @@
         </node>
       </node>
       <node concept="2iRfu4" id="4HNd3hiUVgO" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5yyd2HFS3Cv">
+    <ref role="1XX52x" to="3jiv:5yyd2HFS3xA" resolve="NyoShAwareScript" />
+    <node concept="3EZMnI" id="5yyd2HFS3D1" role="2wV5jI">
+      <node concept="3F0ifn" id="5yyd2HFS3Lt" role="3EZMnx">
+        <property role="3F0ifm" value="requires: " />
+      </node>
+      <node concept="3F2HdR" id="5yyd2HFS3KU" role="3EZMnx">
+        <ref role="1NtTu8" to="3jiv:5yyd2HFS3y2" />
+        <node concept="l2Vlx" id="5yyd2HFS3KW" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="5yyd2HFS3D8" role="3EZMnx">
+        <property role="3F0ifm" value="#!/bin/bash (with automatic GobyWeb artifact installation)" />
+        <node concept="pVoyu" id="5yyd2HFS3LS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="irqYu7omT7" role="3F10Kt">
+          <property role="Vbekb" value="ITALIC" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5yyd2HFS3L9" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:70dPcAeBC7L" />
+        <node concept="pVoyu" id="5yyd2HFS3M0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5yyd2HFS3D4" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="irqYu7mbC6">
+    <ref role="1XX52x" to="3jiv:irqYu7hsBO" resolve="NyoShEnvVariableRef" />
+    <node concept="3EZMnI" id="irqYu7mc0A" role="2wV5jI">
+      <node concept="3F0ifn" id="irqYu7mc15" role="3EZMnx">
+        <property role="3F0ifm" value="$" />
+        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
+        <node concept="11LMrY" id="irqYu7ovJP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="irqYu7mc0K" role="3EZMnx">
+        <ref role="1NtTu8" to="3jiv:irqYu7hsBP" />
+        <node concept="1sVBvm" id="irqYu7mc0M" role="1sWHZn">
+          <node concept="3F0A7n" id="irqYu7mc1f" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="irqYu7mc0D" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="V5hpn" id="irqYu7oFvW">
+    <property role="TrG5h" value="WorkflowNyoshStylesheet" />
+    <node concept="14StLt" id="irqYu7oFw0" role="V601i">
+      <property role="TrG5h" value="GobyWebVarRef" />
+      <node concept="VechU" id="irqYu7oFw4" role="3F10Kt">
+        <property role="Vb096" value="DARK_GREEN" />
+      </node>
+      <node concept="VPxyj" id="irqYu7mc4B" role="3F10Kt">
+        <property role="VOm3f" value="false" />
+      </node>
     </node>
   </node>
 </model>
