@@ -13,8 +13,8 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -552,6 +552,26 @@
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
       </node>
       <node concept="3Tm1VV" id="4KI7BXrsAFp" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="7LvyiX4mik0" role="13h7CS">
+      <property role="TrG5h" value="getOutputFileName" />
+      <node concept="3Tm1VV" id="7LvyiX4mik1" role="1B3o_S" />
+      <node concept="17QB3L" id="7LvyiX4mik2" role="3clF45" />
+      <node concept="3clFbS" id="7LvyiX4mik3" role="3clF47">
+        <node concept="3clFbF" id="7LvyiX4mik4" role="3cqZAp">
+          <node concept="3cpWs3" id="7LvyiX4mik5" role="3clFbG">
+            <node concept="2OqwBi" id="7LvyiX4mik6" role="3uHU7B">
+              <node concept="13iPFW" id="7LvyiX4mik7" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7LvyiX4mik8" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="20R_QEEreII" role="3uHU7w">
+              <property role="Xl_RC" value=".nf" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="45Qsg8B674B">

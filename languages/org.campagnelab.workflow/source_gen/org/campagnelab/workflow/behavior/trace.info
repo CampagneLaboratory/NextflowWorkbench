@@ -424,10 +424,12 @@
       <node id="3855674281009655963" at="29,41,30,336" concept="6" />
       <node id="8052084060291831171" at="35,41,36,173" concept="6" />
       <node id="5489358528155137037" at="39,5,40,28" concept="6" />
+      <node id="8962032619593737476" at="42,83,43,173" concept="6" />
       <node id="5489358528155117642" at="18,0,20,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3855674281009632578" at="23,0,26,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="3855674281009654948" at="29,0,32,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="8052084060291830419" at="35,0,38,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5489358528155117642" at="42,0,45,0" concept="8" trace="call_getOutputFileName_8962032619593737472#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="3855674281009632569" at="21,187,26,10" concept="6" />
       <node id="3855674281009638546" at="27,193,32,10" concept="6" />
       <node id="8052084060291814060" at="33,194,38,10" concept="6" />
@@ -437,6 +439,7 @@
       <scope id="3855674281009632579" at="23,41,24,173" />
       <scope id="3855674281009654949" at="29,41,30,336" />
       <scope id="8052084060291830420" at="35,41,36,173" />
+      <scope id="8962032619593737475" at="42,83,43,173" />
       <scope id="5489358528155117642" at="18,0,20,0">
         <var name="thisNode" id="5489358528155117642" />
       </scope>
@@ -448,6 +451,9 @@
       </scope>
       <scope id="8052084060291830419" at="35,0,38,0">
         <var name="it" id="8052084060291830419" />
+      </scope>
+      <scope id="5489358528155117642" at="42,0,45,0">
+        <var name="thisNode" id="5489358528155117642" />
       </scope>
       <scope id="3855674281009630465" at="21,187,26,10" />
       <scope id="3855674281009636468" at="27,193,32,10" />
@@ -461,7 +467,7 @@
       <unit id="3855674281009632578" at="22,297,26,7" name="org.campagnelab.workflow.behavior.Workflow_Behavior$1" />
       <unit id="3855674281009654948" at="28,296,32,7" name="org.campagnelab.workflow.behavior.Workflow_Behavior$2" />
       <unit id="8052084060291830419" at="34,297,38,7" name="org.campagnelab.workflow.behavior.Workflow_Behavior$3" />
-      <unit id="5489358528155117642" at="17,0,43,0" name="org.campagnelab.workflow.behavior.Workflow_Behavior" />
+      <unit id="5489358528155117642" at="17,0,46,0" name="org.campagnelab.workflow.behavior.Workflow_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/6783277435987771710">
