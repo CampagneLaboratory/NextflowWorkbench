@@ -30,6 +30,7 @@
       <concept id="2329585396108535569" name="org.campagnelab.workflow.structure.TimeAllowed" flags="ng" index="oEfU2">
         <property id="2329585396108535674" name="time" index="oEfVD" />
       </concept>
+      <concept id="2329585396108535677" name="org.campagnelab.workflow.structure.ClusterOptions" flags="ng" index="oEfVI" />
       <concept id="2329585396108535359" name="org.campagnelab.workflow.structure.Memory" flags="ng" index="oEfYG">
         <property id="2329585396108535460" name="memory" index="oEfWR" />
       </concept>
@@ -84,6 +85,7 @@
       <concept id="3855674281012525767" name="org.campagnelab.workflow.structure.GlobalStringList" flags="ng" index="2$RA6j">
         <child id="3855674281012525912" name="string" index="2$RA0c" />
       </concept>
+      <concept id="3855674281012525541" name="org.campagnelab.workflow.structure.GlobalListType" flags="ng" index="2$RAaL" />
       <concept id="3855674281012525202" name="org.campagnelab.workflow.structure.GlobalBoolean" flags="ng" index="2$RAf6">
         <property id="3855674281012527424" name="value" index="2$RDCk" />
       </concept>
@@ -152,6 +154,7 @@
       <node concept="1uLkD0" id="6IBo8PYLtHM" role="1uLvPA">
         <property role="TrG5h" value="X" />
       </node>
+      <node concept="oEfVI" id="Y3wJOviSG3" role="2McKjg" />
     </node>
     <node concept="2$rEH5" id="1eh5VqC3HOD" role="2$rEHq">
       <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
@@ -289,6 +292,12 @@
         <node concept="2$RA5a" id="6YYJWE2HBg9" role="2$RAua">
           <property role="2$RDCm" value="awefef" />
         </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="Y3wJOviToR" role="2$L6iY">
+      <property role="TrG5h" value="strLs" />
+      <node concept="2$PLor" id="Y3wJOviTp$" role="2$L62I">
+        <node concept="2$RAaL" id="Y3wJOviTpA" role="2$RAuQ" />
       </node>
     </node>
     <node concept="1CVceo" id="6YYJWE2YqIX" role="2$L6iY">
