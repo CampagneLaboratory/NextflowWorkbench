@@ -18,6 +18,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
@@ -29,11 +30,16 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -143,6 +149,27 @@
         </node>
       </node>
       <node concept="l2Vlx" id="G5bxgNBxc0" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4HNd3hiUUoj">
+    <ref role="1XX52x" to="3jiv:4HNd3hiUKIF" resolve="SetOfBagsRef" />
+    <node concept="3EZMnI" id="4HNd3hiUVgL" role="2wV5jI">
+      <node concept="3F0ifn" id="4HNd3hiUVgS" role="3EZMnx">
+        <property role="3F0ifm" value="name setOfBags" />
+      </node>
+      <node concept="3F0A7n" id="4HNd3hiUVgY" role="3EZMnx">
+        <ref role="1NtTu8" to="3jiv:4HNd3hiUKXO" resolve="RootPath" />
+      </node>
+      <node concept="1iCGBv" id="4HNd3hiUVh6" role="3EZMnx">
+        <ref role="1NtTu8" to="3jiv:4HNd3hiUKXQ" />
+        <node concept="1sVBvm" id="4HNd3hiUVh8" role="1sWHZn">
+          <node concept="3F0A7n" id="4HNd3hiUVhh" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="4HNd3hiUVgO" role="2iSdaV" />
     </node>
   </node>
 </model>

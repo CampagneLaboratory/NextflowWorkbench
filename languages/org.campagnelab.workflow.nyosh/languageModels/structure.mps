@@ -12,6 +12,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -55,6 +56,22 @@
     </node>
     <node concept="PrWs8" id="4YJHQQrZht9" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4HNd3hiUKIF">
+    <property role="TrG5h" value="SetOfBagsRef" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="ref set" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4HNd3hiUKXO" role="1TKVEl">
+      <property role="TrG5h" value="RootPath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="4HNd3hiUKXQ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="setOfBags" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="440p:G5bxgO4PBx" resolve="SetOfBags" />
     </node>
   </node>
 </model>
