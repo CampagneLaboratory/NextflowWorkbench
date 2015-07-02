@@ -39,8 +39,6 @@ public class Process_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createRefNodeList_grok3i_f0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_grok3i_g0(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_grok3i_h0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_grok3i_i0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_grok3i_j0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_grok3i_a0(EditorContext editorContext, SNode node) {
@@ -66,7 +64,7 @@ public class Process_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_grok3i_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "input arguments:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "inputs:");
     editorCell.setCellId("Constant_grok3i_c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
@@ -75,19 +73,19 @@ public class Process_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNodeList_grok3i_d0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Process_Editor.workflowValuesListHandler_grok3i_d0(node, "workflowValues", editorContext);
+    AbstractCellListHandler handler = new Process_Editor.inputsListHandler_grok3i_d0(node, "inputs", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_workflowValues");
+    editorCell.setCellId("refNodeList_inputs");
     Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class workflowValuesListHandler_grok3i_d0 extends RefNodeListHandler {
-    public workflowValuesListHandler_grok3i_d0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class inputsListHandler_grok3i_d0 extends RefNodeListHandler {
+    public inputsListHandler_grok3i_d0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -119,7 +117,7 @@ public class Process_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_grok3i_e0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "inputs:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "output:");
     editorCell.setCellId("Constant_grok3i_e0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
@@ -128,19 +126,19 @@ public class Process_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNodeList_grok3i_f0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Process_Editor.inputsListHandler_grok3i_f0(node, "inputs", editorContext);
+    AbstractCellListHandler handler = new Process_Editor.outputsListHandler_grok3i_f0(node, "outputs", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_inputs");
+    editorCell.setCellId("refNodeList_outputs");
     Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class inputsListHandler_grok3i_f0 extends RefNodeListHandler {
-    public inputsListHandler_grok3i_f0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class outputsListHandler_grok3i_f0 extends RefNodeListHandler {
+    public outputsListHandler_grok3i_f0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -172,66 +170,13 @@ public class Process_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_grok3i_g0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "output:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "script:");
     editorCell.setCellId("Constant_grok3i_g0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNodeList_grok3i_h0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Process_Editor.outputsListHandler_grok3i_h0(node, "outputs", editorContext);
-    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_outputs");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setRole(handler.getElementRole());
-    return editorCell;
-  }
-  private static class outputsListHandler_grok3i_h0 extends RefNodeListHandler {
-    public outputsListHandler_grok3i_h0(SNode ownerNode, String childRole, EditorContext context) {
-      super(ownerNode, childRole, context, false);
-    }
-    public SNode createNodeToInsert(EditorContext editorContext) {
-      SNode listOwner = super.getOwner();
-      return NodeFactoryManager.createNode(listOwner, editorContext, super.getElementRole());
-    }
-    public EditorCell createNodeCell(EditorContext editorContext, SNode elementNode) {
-      EditorCell elementCell = super.createNodeCell(editorContext, elementNode);
-      this.installElementCellActions(this.getOwner(), elementNode, elementCell, editorContext);
-      return elementCell;
-    }
-    public EditorCell createEmptyCell(EditorContext editorContext) {
-      EditorCell emptyCell = null;
-      emptyCell = super.createEmptyCell(editorContext);
-      this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
-      return emptyCell;
-    }
-    public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
-      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
-        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
-        if (elementNode != null) {
-          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode));
-          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode));
-        }
-        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
-        }
-      }
-    }
-  }
-  private EditorCell createConstant_grok3i_i0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "script:");
-    editorCell.setCellId("Constant_grok3i_i0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefNodeList_grok3i_j0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Process_Editor.scriptListHandler_grok3i_j0(node, "script", editorContext);
+    AbstractCellListHandler handler = new Process_Editor.scriptListHandler_grok3i_h0(node, "script", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_script");
     Style style = new StyleImpl();
@@ -242,8 +187,8 @@ public class Process_Editor extends DefaultNodeEditor {
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class scriptListHandler_grok3i_j0 extends RefNodeListHandler {
-    public scriptListHandler_grok3i_j0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class scriptListHandler_grok3i_h0 extends RefNodeListHandler {
+    public scriptListHandler_grok3i_h0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
