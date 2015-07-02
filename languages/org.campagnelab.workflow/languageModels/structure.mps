@@ -93,25 +93,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="Script" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="dxSprUG6Vf" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5D7AjvY8HuF">
-    <property role="TrG5h" value="ConditionalScript" />
-    <property role="3GE5qa" value="Script" />
-    <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
-    <node concept="1TJgyi" id="5D7AjvY8S9p" role="1TKVEl">
-      <property role="TrG5h" value="flag" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyj" id="34JZ5vsn6nX" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="text" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-    </node>
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
   </node>
   <node concept="1TIwiD" id="5D7AjvYabas">
     <property role="TrG5h" value="Workflow" />
@@ -330,6 +312,7 @@
     <property role="3GE5qa" value="Script" />
     <property role="TrG5h" value="RichScript" />
     <property role="R4oN_" value="a script using the richtext plugin" />
+    <property role="34LRSv" value="script" />
     <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
     <node concept="1TJgyj" id="70dPcAeBC7L" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

@@ -66,6 +66,9 @@
       <concept id="3855674281012039094" name="org.campagnelab.workflow.structure.GlobalFileExpression" flags="ng" index="2$PLry">
         <child id="3855674281012526302" name="file" index="2$RAua" />
       </concept>
+      <concept id="3855674281012038742" name="org.campagnelab.workflow.structure.GlobalIntegerExpression" flags="ng" index="2$PLs2">
+        <child id="3855674281012526304" name="integer" index="2$RAuO" />
+      </concept>
       <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.GlobalStringExpression" flags="ng" index="2$PLvr">
         <child id="3855674281012526308" name="string" index="2$RAuK" />
       </concept>
@@ -128,6 +131,9 @@
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
       </concept>
+      <concept id="8074343669091902386" name="org.campagnelab.workflow.structure.ValueInAChannelRef" flags="ng" index="3YE7tV">
+        <reference id="8074343669091902431" name="value" index="3YE7sm" />
+      </concept>
     </language>
   </registry>
   <node concept="2$rMIF" id="5D7AjvYaj9G">
@@ -140,11 +146,11 @@
     </node>
     <node concept="2$rEH5" id="6IBo8PYLtHq" role="2$rEHq">
       <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
+      <node concept="1uYdA0" id="6YYJWE2ycfr" role="1uLvPH">
+        <ref role="1uK_4X" node="6d3N3AFQaMO" resolve="Y" />
+      </node>
       <node concept="1uLkD0" id="6IBo8PYLtHM" role="1uLvPA">
         <property role="TrG5h" value="X" />
-      </node>
-      <node concept="1uYdA0" id="6IBo8PYLtIa" role="1uLvPH">
-        <ref role="1uK_4X" node="6d3N3AFQaMO" resolve="Y" />
       </node>
     </node>
     <node concept="2$rEH5" id="1eh5VqC3HOD" role="2$rEHq">
@@ -277,6 +283,24 @@
         </node>
       </node>
     </node>
+    <node concept="1CVceo" id="6YYJWE2HBfx" role="2$L6iY">
+      <property role="TrG5h" value="lstC" />
+      <node concept="2$PLry" id="6YYJWE2HBg7" role="2$L62I">
+        <node concept="2$RA5a" id="6YYJWE2HBg9" role="2$RAua">
+          <property role="2$RDCm" value="awefef" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="6YYJWE2YqIX" role="2$L6iY">
+      <property role="TrG5h" value="X" />
+      <node concept="2$PLs2" id="6YYJWE2YqJA" role="2$L62I">
+        <node concept="2$RDJ1" id="6YYJWE2YqJG" role="2$RAuO">
+          <property role="2$RDJ2" value="0" />
+          <property role="2$RDJc" value="9" />
+        </node>
+        <node concept="2$RDDD" id="6YYJWE2YqJS" role="2$RAuO" />
+      </node>
+    </node>
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
@@ -321,7 +345,7 @@
     <node concept="3Y$Zt1" id="34JZ5vs_Ul8" role="2ulM7a">
       <node concept="19SGf9" id="34JZ5vs_Ul9" role="3Y$PkS">
         <node concept="19SUe$" id="34JZ5vs_Ula" role="19SJt6">
-          <property role="19SUeA" value="cat index_* &gt; '*.txt'\n" />
+          <property role="19SUeA" value="cat index_* &gt; '*.txt'" />
         </node>
         <node concept="3Y$Zt1" id="1psOhWnMn0h" role="19SJt6">
           <node concept="19SGf9" id="1psOhWnMn0j" role="3Y$PkS">
@@ -357,6 +381,25 @@
     <node concept="oEfOI" id="5fMLpU9swBO" role="TDolQ">
       <node concept="2MiXSP" id="5fMLpU9swF8" role="2MiXW1">
         <property role="2MiXSO" value="long" />
+      </node>
+    </node>
+  </node>
+  <node concept="2ulcR8" id="6YYJWE30TOV">
+    <property role="TrG5h" value="inputRefTest" />
+    <node concept="3Y$Zt1" id="6YYJWE30TP1" role="2ulM7a">
+      <node concept="19SGf9" id="6YYJWE30TP3" role="3Y$PkS">
+        <node concept="19SUe$" id="6YYJWE30TPa" role="19SJt6" />
+        <node concept="3YE7tV" id="6YYJWE30TP9" role="19SJt6">
+          <ref role="3YE7sm" node="6YYJWE30TOY" resolve="file" />
+        </node>
+        <node concept="19SUe$" id="6YYJWE30TPb" role="19SJt6">
+          <property role="19SUeA" value="\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="1uY1Ls" id="6YYJWE30TOX" role="2ulM7n">
+      <node concept="16pRw0" id="6YYJWE30TOY" role="1uY1Lt">
+        <property role="TrG5h" value="file" />
       </node>
     </node>
   </node>
