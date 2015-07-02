@@ -137,12 +137,6 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -1842,20 +1836,6 @@
             <property role="TrG5h" value="value" />
           </node>
           <node concept="3clFbS" id="5Sz2Ie0YXib" role="2LFqv$">
-            <node concept="34ab3g" id="6IBo8PYn1VY" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="6IBo8PYn2cJ" role="34bqiv">
-                <node concept="2OqwBi" id="6IBo8PYn2hC" role="3uHU7w">
-                  <node concept="2GrUjf" id="6IBo8PYn2dw" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="5Sz2Ie0YXia" resolve="value" />
-                  </node>
-                  <node concept="2qgKlT" id="6IBo8PYn2wm" role="2OqNvi">
-                    <ref role="37wK5l" node="5Sz2Ie0YII7" resolve="getList" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="6IBo8PYn1W0" role="3uHU7B" />
-              </node>
-            </node>
             <node concept="3clFbF" id="5Sz2Ie0YXic" role="3cqZAp">
               <node concept="d57v9" id="5Sz2Ie0YXid" role="3clFbG">
                 <node concept="2OqwBi" id="5Sz2Ie0YXie" role="37vLTx">

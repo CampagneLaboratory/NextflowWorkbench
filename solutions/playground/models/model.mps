@@ -21,12 +21,6 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="1611392698161600946" name="org.campagnelab.workflow.structure.WorkflowString" flags="ng" index="1M4yH" />
-      <concept id="1611392698161600941" name="org.campagnelab.workflow.structure.WorkflowBoolean" flags="ng" index="1M4yM" />
-      <concept id="1611392698161600600" name="org.campagnelab.workflow.structure.ValueFromWorkflowRef" flags="ng" index="1M4_7">
-        <reference id="1611392698161600607" name="value" index="1M4_0" />
-      </concept>
-      <concept id="1611392698172758837" name="org.campagnelab.workflow.structure.WorkflowList" flags="ng" index="eowCE" />
       <concept id="2329585396107819892" name="org.campagnelab.workflow.structure.NumCPUs" flags="ng" index="oDubB">
         <property id="2329585396107820961" name="num" index="oDuoM" />
       </concept>
@@ -44,7 +38,6 @@
         <child id="2481755940887818903" name="queue" index="TDolQ" />
       </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
-        <child id="1611392698160571037" name="workflowValues" index="1Q3e2" />
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
@@ -141,31 +134,32 @@
     <property role="TrG5h" value="Workflow" />
     <node concept="2$rEH5" id="45Qsg8BixlQ" role="2$rEHq">
       <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
-      <node concept="1uYdA0" id="45Qsg8Bixm9" role="1uLvPH">
-        <ref role="1uK_4X" node="4JZd7mB8RsH" resolve="X" />
-        <node concept="1yaYav" id="3EdrKDs$6ke" role="1ylr64" />
-        <node concept="1yaYav" id="3EdrKDs$6k8" role="1ylr64" />
-      </node>
       <node concept="1uLkD0" id="6d3N3AFQaMO" role="1uLvPA">
         <property role="TrG5h" value="Y" />
       </node>
     </node>
-    <node concept="2$rEH5" id="4JZd7mB7j$t" role="2$rEHq">
+    <node concept="2$rEH5" id="6IBo8PYLtHq" role="2$rEHq">
       <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
-      <node concept="1uLkD0" id="4JZd7mB8RsH" role="1uLvPA">
+      <node concept="1uLkD0" id="6IBo8PYLtHM" role="1uLvPA">
         <property role="TrG5h" value="X" />
+      </node>
+      <node concept="1uYdA0" id="6IBo8PYLtIa" role="1uLvPH">
+        <ref role="1uK_4X" node="6d3N3AFQaMO" resolve="Y" />
       </node>
     </node>
     <node concept="2$rEH5" id="1eh5VqC3HOD" role="2$rEHq">
       <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
       <node concept="1uYdA0" id="1eh5VqC3HP0" role="1uLvPH">
-        <ref role="1uK_4X" node="6d3N3AFQaMO" resolve="Y" />
+        <ref role="1uK_4X" node="5Sz2Ie0VFbM" resolve="fileCh" />
         <node concept="1yaYav" id="648FhJjNhcQ" role="1ylr64" />
         <node concept="1yaZXp" id="648FhJjNhcV" role="1ylr64" />
         <node concept="1yaZT0" id="648FhJjNhd3" role="1ylr64">
           <property role="1yaY5T" value="5" />
         </node>
         <node concept="1yaZXp" id="5Sz2Ie0VBo3" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="6IBo8PYLtG9" role="1uLvPA">
+        <property role="TrG5h" value="W" />
       </node>
     </node>
     <node concept="2$rEH5" id="648FhJiVfUD" role="2$rEHq">
@@ -190,6 +184,9 @@
       <node concept="3GZ0jK" id="648FhJjNhbC" role="2McKjg">
         <property role="1Arw6G" value="1" />
         <property role="lMs_Z" value="3" />
+      </node>
+      <node concept="1uYdA0" id="6IBo8PYLtHo" role="1uLvPH">
+        <ref role="1uK_4X" node="6IBo8PYLtG9" resolve="W" />
       </node>
     </node>
     <node concept="2$rEH5" id="3m26Pihn76S" role="2$rEHq">
@@ -283,31 +280,10 @@
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
-    <node concept="1M4yH" id="4KI7BXrwLQ9" role="1Q3e2">
-      <property role="TrG5h" value="params.alignment1" />
-    </node>
-    <node concept="1M4yH" id="4KI7BXrwLQl" role="1Q3e2">
-      <property role="TrG5h" value="params.alignment2" />
-    </node>
-    <node concept="eowCE" id="648FhJi$_Hi" role="1Q3e2">
-      <property role="TrG5h" value="lst" />
-    </node>
     <node concept="3Y$Zt1" id="34JZ5vsuI0l" role="2ulM7a">
       <node concept="19SGf9" id="34JZ5vsuI0m" role="3Y$PkS">
         <node concept="19SUe$" id="34JZ5vsz_hP" role="19SJt6">
-          <property role="19SUeA" value="java -jar /Users/jasonkurs/Downloads/2.3.5/goby.jar -m suggest-position-slices  -n 200 -o slicingPlan.tsv \n" />
-        </node>
-        <node concept="1M4_7" id="648FhJjbkyk" role="19SJt6">
-          <ref role="1M4_0" node="4KI7BXrwLQ9" resolve="params.alignment1" />
-        </node>
-        <node concept="19SUe$" id="648FhJjbkyj" role="19SJt6">
-          <property role="19SUeA" value=" " />
-        </node>
-        <node concept="1M4_7" id="648FhJjeSRI" role="19SJt6">
-          <ref role="1M4_0" node="4KI7BXrwLQl" resolve="params.alignment2" />
-        </node>
-        <node concept="19SUe$" id="648FhJjeSRH" role="19SJt6">
-          <property role="19SUeA" value=" &gt; /dev/null\t" />
+          <property role="19SUeA" value="java -jar /Users/jasonkurs/Downloads/2.3.5/goby.jar -m suggest-position-slices  -n 200 -o slicingPlan.tsv \n  &gt; /dev/null\t" />
         </node>
         <node concept="3Y$Zt1" id="34JZ5vsx7x3" role="19SJt6">
           <node concept="19SGf9" id="34JZ5vsx7x5" role="3Y$PkS">
@@ -322,6 +298,11 @@
     <node concept="1uY1Ls" id="34JZ5vs$nNE" role="2ulM79">
       <node concept="16pRw0" id="34JZ5vs$nNF" role="1uY1Lt">
         <property role="TrG5h" value="'index_*'" />
+      </node>
+    </node>
+    <node concept="1uY1Ls" id="6IBo8PYLtHk" role="2ulM7n">
+      <node concept="16pRw0" id="6IBo8PYLtHl" role="1uY1Lt">
+        <property role="TrG5h" value="fileCh" />
       </node>
     </node>
   </node>
@@ -361,9 +342,6 @@
       <node concept="16pRw0" id="6t646FqPoxM" role="1uY1Lt">
         <property role="TrG5h" value="'*.txt'" />
       </node>
-    </node>
-    <node concept="1M4yM" id="1psOhWona5q" role="1Q3e2">
-      <property role="TrG5h" value="boot" />
     </node>
     <node concept="3Y$Zt1" id="4KI7BXrwLPT" role="2ulM7a">
       <node concept="19SGf9" id="4KI7BXrwLPU" role="3Y$PkS">
