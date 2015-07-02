@@ -8,7 +8,6 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.Flatten_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.InputChannel_Constraints" />
-    <classNode dependClassName="org.campagnelab.workflow.constraints.ProcessRef_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.ValueFromWorkflowRef_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.ValueInAChannelRef_Constraints" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
@@ -50,10 +49,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.workflow.constraints.ProcessRef_Constraints" file="ProcessRef_Constraints.java">
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.constraints.ValueFromWorkflowRef_Constraints" file="ValueFromWorkflowRef_Constraints.java">

@@ -121,25 +121,6 @@
       <node concept="3F0A7n" id="6tX5nBTaKMX" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
-      <node concept="3F0ifn" id="1psOhWnCr2j" role="3EZMnx">
-        <property role="3F0ifm" value="input arguments:" />
-        <node concept="pVoyu" id="1psOhWnCr39" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F2HdR" id="1psOhWn$1lW" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:1psOhWnxeat" />
-        <node concept="l2Vlx" id="1psOhWn$1lY" role="2czzBx" />
-        <node concept="pVoyu" id="1psOhWn$1mH" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pj6Ft" id="1psOhWnCr1n" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="1psOhWnDzA8" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F0ifn" id="6tX5nBTaKOH" role="3EZMnx">
         <property role="3F0ifm" value="inputs:" />
         <node concept="pVoyu" id="6tX5nBTaKOU" role="3F10Kt">
@@ -732,7 +713,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1psOhWnBiE9">
-    <property role="3GE5qa" value="valueFromWorkflow" />
+    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
     <ref role="1XX52x" to="iowz:1psOhWn_9xo" resolve="ValueFromWorkflowRef" />
     <node concept="3EZMnI" id="1psOhWnBiE_" role="2wV5jI">
       <node concept="l2Vlx" id="1psOhWnBiEA" role="2iSdaV" />
@@ -758,7 +739,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1psOhWnBiJX">
-    <property role="3GE5qa" value="valueFromWorkflow" />
+    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
     <ref role="1XX52x" to="iowz:1psOhWn_9AH" resolve="WorkflowBoolean" />
     <node concept="3EZMnI" id="1psOhWnBiJZ" role="2wV5jI">
       <node concept="3F0ifn" id="1psOhWnBiKd" role="3EZMnx">
@@ -771,7 +752,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1psOhWnBiKx">
-    <property role="3GE5qa" value="valueFromWorkflow" />
+    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
     <ref role="1XX52x" to="iowz:1psOhWn_9AR" resolve="WorkflowInteger" />
     <node concept="3EZMnI" id="1psOhWnBiKz" role="2wV5jI">
       <node concept="3F0ifn" id="1psOhWnBiKH" role="3EZMnx">
@@ -784,7 +765,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1psOhWnBiL1">
-    <property role="3GE5qa" value="valueFromWorkflow" />
+    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
     <ref role="1XX52x" to="iowz:1psOhWn_9AM" resolve="WorkflowString" />
     <node concept="3EZMnI" id="1psOhWnBiL3" role="2wV5jI">
       <node concept="3F0ifn" id="1psOhWnBiLd" role="3EZMnx">
@@ -797,7 +778,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1psOhWofHGV">
-    <property role="3GE5qa" value="valueFromWorkflow" />
+    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
     <ref role="1XX52x" to="iowz:1psOhWofHGP" resolve="WorkflowList" />
     <node concept="3EZMnI" id="1psOhWofHN5" role="2wV5jI">
       <node concept="3F0ifn" id="1psOhWofHNf" role="3EZMnx">
@@ -991,6 +972,24 @@
       </node>
       <node concept="3F0A7n" id="45Qsg8B9GUd" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:45Qsg8B672I" resolve="maxRetries" />
+        <ref role="1k5W1q" node="3ftTtbydPOt" resolve="Keyword" />
+      </node>
+      <node concept="3F0ifn" id="6IBo8PYrHVC" role="3EZMnx">
+        <property role="3F0ifm" value="maxErrors" />
+        <ref role="1k5W1q" node="3ftTtbydPOh" resolve="KeyName" />
+        <node concept="pVoyu" id="6IBo8PYrHWj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6IBo8PYrHWl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6IBo8PYrHW4" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F0A7n" id="6IBo8PYrHVe" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:6IBo8PYrEBM" resolve="maxErrors" />
+        <ref role="1k5W1q" node="3ftTtbydPOt" resolve="Keyword" />
       </node>
     </node>
   </node>

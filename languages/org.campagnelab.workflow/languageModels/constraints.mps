@@ -605,7 +605,7 @@
                       <ref role="3cqZAo" node="4Toykm3$v7N" resolve="globalConcept" />
                     </node>
                     <node concept="35c_gC" id="4Toykm3$GNU" role="3uHU7w">
-                      <ref role="35c_gD" to="iowz:3m26PihlgMf" resolve="GlobalStringChannel" />
+                      <ref role="35c_gD" to="iowz:3m26PihlgMf" resolve="GlobalStringExpression" />
                     </node>
                   </node>
                 </node>
@@ -638,7 +638,7 @@
                         <ref role="3cqZAo" node="4Toykm3$v7N" resolve="globalConcept" />
                       </node>
                       <node concept="35c_gC" id="4Toykm3$ZfD" role="3uHU7w">
-                        <ref role="35c_gD" to="iowz:3m26PihlgLm" resolve="GlobalIntegerChannel" />
+                        <ref role="35c_gD" to="iowz:3m26PihlgLm" resolve="GlobalIntegerExpression" />
                       </node>
                     </node>
                   </node>
@@ -672,7 +672,7 @@
                         <ref role="3cqZAo" node="4Toykm3$v7N" resolve="globalConcept" />
                       </node>
                       <node concept="35c_gC" id="4Toykm3_6rh" role="3uHU7w">
-                        <ref role="35c_gD" to="iowz:3m26PihlgGj" resolve="GlobalBooleanChannel" />
+                        <ref role="35c_gD" to="iowz:3m26PihlgGj" resolve="GlobalBooleanExpression" />
                       </node>
                     </node>
                   </node>
@@ -706,7 +706,7 @@
                         <ref role="3cqZAo" node="4Toykm3$v7N" resolve="globalConcept" />
                       </node>
                       <node concept="35c_gC" id="4Toykm3_7NM" role="3uHU7w">
-                        <ref role="35c_gD" to="iowz:3m26PihlgQQ" resolve="GlobalFileChannel" />
+                        <ref role="35c_gD" to="iowz:3m26PihlgQQ" resolve="GlobalFileExpression" />
                       </node>
                     </node>
                   </node>
@@ -740,7 +740,7 @@
                         <ref role="3cqZAo" node="4Toykm3$v7N" resolve="globalConcept" />
                       </node>
                       <node concept="35c_gC" id="4Toykm3_9uY" role="3uHU7w">
-                        <ref role="35c_gD" to="iowz:3m26PihlgPf" resolve="GlobalListChannel" />
+                        <ref role="35c_gD" to="iowz:3m26PihlgPf" resolve="GlobalListExpression" />
                       </node>
                     </node>
                   </node>
@@ -1425,11 +1425,8 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="1psOhWo0MGf">
-    <ref role="1M2myG" to="iowz:5D7AjvYaj9M" resolve="ProcessRef" />
-  </node>
   <node concept="1M2fIO" id="1psOhWokJHT">
-    <property role="3GE5qa" value="valueFromWorkflow" />
+    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
     <ref role="1M2myG" to="iowz:1psOhWn_9xo" resolve="ValueFromWorkflowRef" />
     <node concept="1N5Pfh" id="1psOhWokJI0" role="1Mr941">
       <ref role="1N5Vy1" to="iowz:1psOhWn_9xv" />
