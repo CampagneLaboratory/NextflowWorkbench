@@ -158,6 +158,11 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="331977639697571426" name="org.campagnelab.workflow.structure.DockerContainerPointer" flags="ng" index="234bm5">
+        <property id="331977639697571431" name="userName" index="234bm0" />
+        <property id="331977639697571429" name="tag" index="234bm2" />
+        <property id="331977639697571434" name="id" index="234bmd" />
+      </concept>
       <concept id="2329585396107819892" name="org.campagnelab.workflow.structure.NumCPUs" flags="ng" index="oDubB">
         <property id="2329585396107820961" name="num" index="oDuoM" />
       </concept>
@@ -175,6 +180,7 @@
         <child id="2481755940887818903" name="queue" index="TDolQ" />
       </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
+        <child id="331977639697571264" name="container" index="234boB" />
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
@@ -457,6 +463,9 @@
         <property role="TrG5h" value="fileCh" />
       </node>
     </node>
+    <node concept="234bm5" id="irqYu7Dciz" role="234boB">
+      <property role="234bm2" value="latest" />
+    </node>
   </node>
   <node concept="2ulcR8" id="34JZ5vsmm0i">
     <property role="TrG5h" value="analyze" />
@@ -487,6 +496,11 @@
         </node>
       </node>
     </node>
+    <node concept="234bm5" id="irqYu7FacT" role="234boB">
+      <property role="234bm0" value="fac2003" />
+      <property role="234bmd" value="rocker-metar" />
+      <property role="234bm2" value="latest" />
+    </node>
   </node>
   <node concept="2ulcR8" id="6t646FqPoxG">
     <property role="TrG5h" value="combine" />
@@ -502,6 +516,9 @@
         </node>
       </node>
     </node>
+    <node concept="234bm5" id="irqYu7PxE4" role="234boB">
+      <property role="234bm2" value="latest" />
+    </node>
   </node>
   <node concept="pkhaZ" id="21kmpcT2JwM">
     <property role="TrG5h" value="nextflow.config" />
@@ -513,6 +530,7 @@
     </node>
   </node>
   <node concept="2ulcR8" id="irqYu7fHS0">
+    <property role="TrG5h" value="TestingIntegrationWithDocker" />
     <node concept="1uY1Lp" id="irqYu7pj5i" role="2ulM7n">
       <node concept="1utKzZ" id="irqYu7pj5k" role="1uY1Lu">
         <property role="TrG5h" value="bool" />
@@ -617,6 +635,11 @@
         <property role="TrG5h" value="__CF_USER_TEXT_ENCODING" />
         <property role="3vthGj" value="STRING" />
       </node>
+    </node>
+    <node concept="234bm5" id="irqYu7BORK" role="234boB">
+      <property role="234bm2" value="latest" />
+      <property role="234bm0" value="fac2003" />
+      <property role="234bmd" value="rocker-metar" />
     </node>
   </node>
   <node concept="3lueso" id="irqYu7g08g">

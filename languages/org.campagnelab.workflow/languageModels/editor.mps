@@ -28,6 +28,10 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styleClass" index="V601i" />
       </concept>
@@ -43,6 +47,7 @@
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1184319644772" name="jetbrains.mps.lang.editor.structure.CellModel_NonEmptyProperty" flags="sg" stub="730538219796134178" index="2YWUlR" />
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
@@ -53,7 +58,11 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
+        <property id="1139746504291" name="imageFile" index="1ubRXE" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -119,6 +128,18 @@
       </node>
       <node concept="3F0A7n" id="6tX5nBTaKMX" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="irqYu7Kyfx" role="3EZMnx">
+        <property role="3F0ifm" value=" " />
+      </node>
+      <node concept="1iCGBv" id="irqYu7$VAa" role="3EZMnx">
+        <property role="1$x2rV" value="&lt;docker container?&gt;" />
+        <ref role="1NtTu8" to="iowz:irqYu7yXR0" />
+        <node concept="1sVBvm" id="irqYu7$VAc" role="1sWHZn">
+          <node concept="PMmxH" id="irqYu7_6i8" role="2wV5jI">
+            <ref role="PMmxG" node="irqYu7$VAD" resolve="DockerContainerPointer" />
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="6tX5nBTaKOH" role="3EZMnx">
         <property role="3F0ifm" value="inputs:" />
@@ -1320,6 +1341,61 @@
       <node concept="VechU" id="3ftTtbydPOB" role="3F10Kt">
         <property role="Vb096" value="DARK_MAGENTA" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="irqYu7yXYM">
+    <ref role="1XX52x" to="iowz:irqYu7yXTy" resolve="DockerContainerPointer" />
+    <node concept="3EZMnI" id="irqYu7yY5L" role="2wV5jI">
+      <node concept="3F0ifn" id="irqYu7yY5S" role="3EZMnx">
+        <property role="3F0ifm" value="docker container " />
+      </node>
+      <node concept="PMmxH" id="irqYu7BPW6" role="3EZMnx">
+        <ref role="PMmxG" node="irqYu7$VAD" resolve="DockerContainerPointer" />
+      </node>
+      <node concept="l2Vlx" id="irqYu7yY5O" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="irqYu7$VAD">
+    <property role="TrG5h" value="DockerContainerPointer" />
+    <ref role="1XX52x" to="iowz:irqYu7yXTy" resolve="DockerContainerPointer" />
+    <node concept="3EZMnI" id="irqYu7$VBb" role="2wV5jI">
+      <node concept="1u4HXA" id="irqYu7FazU" role="3EZMnx">
+        <property role="1ubRXE" value="${org.campagnelab.workflow.home}/icons/docker-logo-loggedout.png" />
+      </node>
+      <node concept="3F0ifn" id="1D6dZ$wHXTm" role="3EZMnx">
+        <property role="3F0ifm" value=" " />
+      </node>
+      <node concept="3F0A7n" id="irqYu7$VBd" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:irqYu7yXTB" resolve="userName" />
+      </node>
+      <node concept="3F0ifn" id="irqYu7$VBe" role="3EZMnx">
+        <property role="3F0ifm" value="/" />
+        <node concept="11L4FC" id="irqYu7Dckr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="irqYu7Dcmb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="irqYu7$VBf" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:irqYu7yXTE" resolve="id" />
+      </node>
+      <node concept="3F0ifn" id="irqYu7$VBg" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="irqYu7Dcmp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="irqYu7Dcmq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="irqYu7$VBh" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:irqYu7yXT_" resolve="tag" />
+        <node concept="11L4FC" id="irqYu7BQ17" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="irqYu7$VBi" role="2iSdaV" />
     </node>
   </node>
 </model>
