@@ -101,6 +101,7 @@
     <language id="901f5cf3-dc77-4c1e-bc5a-6382baee28b4" fqName="org.campagnelab.textoutput" version="0" />
     <language id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" fqName="org.campagnelab.ui" version="0" />
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="-1" />
+    <language id="5cf93bc1-d0da-4893-b739-63b17fe296b1" fqName="org.campagnelab.workflow.nyosh" version="0" />
   </languageVersions>
 </solution>
 
