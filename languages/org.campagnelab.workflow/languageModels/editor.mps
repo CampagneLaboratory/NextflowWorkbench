@@ -9,7 +9,6 @@
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
-    <import index="x1iq" ref="f:diff_old#r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor@old)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -173,7 +172,7 @@
         <ref role="1NtTu8" to="iowz:irqYu7yXR0" />
         <node concept="1sVBvm" id="irqYu7$VAc" role="1sWHZn">
           <node concept="PMmxH" id="irqYu7_6i8" role="2wV5jI">
-            <ref role="PMmxG" to="x1iq:irqYu7$VAD" resolve="DockerContainerPointer" />
+            <ref role="PMmxG" node="irqYu7$VAD" resolve="DockerContainerPointer" />
           </node>
         </node>
       </node>

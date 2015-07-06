@@ -250,6 +250,7 @@
         <property id="6992028756512830255" name="queue" index="2MiXSO" />
       </concept>
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
+      <concept id="5645413064570259022" name="org.campagnelab.workflow.structure.GlobalExpression" flags="ng" index="3alWWb" />
       <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
       <concept id="8369613327464057507" name="org.campagnelab.workflow.structure.BooleanChannel" flags="ng" index="1uY1Lp">
@@ -300,6 +301,10 @@
         <node concept="2$RAf6" id="5Sz2Ie0TqmF" role="2$RAu8" />
         <node concept="2$RAf6" id="5Sz2Ie0TqmJ" role="2$RAu8" />
       </node>
+    </node>
+    <node concept="1CVceo" id="1t8FQONvB2$" role="2$L6iY">
+      <property role="TrG5h" value="the" />
+      <node concept="3alWWb" id="1t8FQONvB2_" role="2$L62I" />
     </node>
     <node concept="1CVceo" id="5Sz2Ie0TqmO" role="2$L6iY">
       <property role="TrG5h" value="strch" />
