@@ -160,9 +160,6 @@
     </node>
     <node concept="2$rEH5" id="68uCiTDD6dG" role="2$rEHq">
       <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTest" />
-      <node concept="1uYdA0" id="68uCiTDD6eg" role="1uLvPH">
-        <ref role="1uK_4X" node="6d3N3AFQaMO" resolve="Y" />
-      </node>
     </node>
     <node concept="2$rEH5" id="6IBo8PYLtHq" role="2$rEHq">
       <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
