@@ -953,50 +953,15 @@
   </node>
   <node concept="1TIwiD" id="YNIIGPa1iv">
     <property role="3GE5qa" value="Script.conditionalScript" />
-    <property role="TrG5h" value="ConditionalScript" />
+    <property role="TrG5h" value="BaseLanguageAdapter" />
     <property role="34LRSv" value="conditional script" />
     <property role="R4oN_" value="a script that executes when the condition evaluates to true" />
     <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
-    <node concept="1TJgyj" id="YNIIGPa3cg" role="1TKVEi">
+    <node concept="1TJgyj" id="59canFOdI$K" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="if" />
+      <property role="20kJfa" value="statements" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="YNIIGPa2hN" resolve="IfCondition" />
-    </node>
-    <node concept="1TJgyj" id="YNIIGPhiVK" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="else" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="YNIIGPa3cS" resolve="ElseCondition" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="YNIIGPa2hN">
-    <property role="3GE5qa" value="Script.conditionalScript" />
-    <property role="TrG5h" value="IfCondition" />
-    <property role="34LRSv" value="if" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="YNIIGPa2hQ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="condition" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="70dPcAeBye8" resolve="RichScript" />
-    </node>
-    <node concept="1TJgyj" id="YNIIGPa2i_" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="script" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="70dPcAeBye8" resolve="RichScript" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="YNIIGPa3cS">
-    <property role="3GE5qa" value="Script.conditionalScript" />
-    <property role="TrG5h" value="ElseCondition" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="YNIIGPhiVY" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="script" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="70dPcAeBye8" resolve="RichScript" />
+      <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
     </node>
   </node>
   <node concept="1TIwiD" id="59canFN3B7g">
@@ -1016,6 +981,18 @@
     <property role="34LRSv" value="remote file" />
     <property role="R4oN_" value="file's path, which is located on another system" />
     <ref role="1TJDcQ" node="3m26Pihn7Cu" resolve="GlobalFileType" />
+  </node>
+  <node concept="1TIwiD" id="59canFOCShA">
+    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="TrG5h" value="ConditionalExpressionText" />
+    <property role="34LRSv" value="expression script" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="59canFOCShB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
   </node>
 </model>
 
