@@ -12,6 +12,7 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -63,6 +64,12 @@
     <property role="19KtqR" value="true" />
     <property role="R5$K7" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="59canFNwpDb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="processOptions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="648FhJjeUB7" resolve="ProcessOptions" />
+    </node>
     <node concept="1TJgyj" id="6tX5nBTaziI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="inputs" />
@@ -78,7 +85,7 @@
     <node concept="1TJgyj" id="6tX5nBTaziN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="script" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6tX5nBTaD$x" resolve="Script" />
     </node>
     <node concept="PrWs8" id="6tX5nBTayDp" role="PzmwI">
@@ -630,11 +637,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="49c3W7NLHXs" resolve="Executor" />
     </node>
-    <node concept="1TJgyj" id="29KXY4rPnan" role="1TKVEi">
+    <node concept="1TJgyj" id="59canFNyUwK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="queue" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="21kmpcSZaiX" resolve="Queue" />
+      <property role="20kJfa" value="processOptions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="648FhJjeUB7" resolve="ProcessOptions" />
     </node>
     <node concept="PrWs8" id="21kmpcThJdl" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -796,7 +803,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="file" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7Cu" resolve="GlobalFile" />
+      <ref role="20lvS9" node="3m26Pihn7Cu" resolve="GlobalFileType" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn7g0">
@@ -832,9 +839,10 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3m26Pihn7Cu">
-    <property role="3GE5qa" value="setChannelValues.globalTypes" />
-    <property role="TrG5h" value="GlobalFile" />
-    <property role="34LRSv" value="path" />
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
+    <property role="TrG5h" value="GlobalFileType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3m26Pihn852" role="1TKVEl">
       <property role="TrG5h" value="path" />
@@ -886,7 +894,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="file" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7Cu" resolve="GlobalFile" />
+      <ref role="20lvS9" node="3m26Pihn7Cu" resolve="GlobalFileType" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn7Np">
@@ -942,6 +950,72 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="YNIIGPa1iv">
+    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="TrG5h" value="ConditionalScript" />
+    <property role="34LRSv" value="conditional script" />
+    <property role="R4oN_" value="a script that executes when the condition evaluates to true" />
+    <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
+    <node concept="1TJgyj" id="YNIIGPa3cg" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="if" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="YNIIGPa2hN" resolve="IfCondition" />
+    </node>
+    <node concept="1TJgyj" id="YNIIGPhiVK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="else" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="YNIIGPa3cS" resolve="ElseCondition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="YNIIGPa2hN">
+    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="TrG5h" value="IfCondition" />
+    <property role="34LRSv" value="if" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="YNIIGPa2hQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="70dPcAeBye8" resolve="RichScript" />
+    </node>
+    <node concept="1TJgyj" id="YNIIGPa2i_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="script" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="70dPcAeBye8" resolve="RichScript" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="YNIIGPa3cS">
+    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="TrG5h" value="ElseCondition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="YNIIGPhiVY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="script" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="70dPcAeBye8" resolve="RichScript" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="59canFN3B7g">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
+    <property role="TrG5h" value="GlobalLocalFile" />
+    <property role="34LRSv" value="local file" />
+    <property role="R4oN_" value="file's path, which is located on your system" />
+    <ref role="1TJDcQ" node="3m26Pihn7Cu" resolve="GlobalFileType" />
+    <node concept="1TJgyi" id="59canFN3Dy8" role="1TKVEl">
+      <property role="TrG5h" value="system" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="59canFN3Dy7">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
+    <property role="TrG5h" value="GlobalRemoteFile" />
+    <property role="34LRSv" value="remote file" />
+    <property role="R4oN_" value="file's path, which is located on another system" />
+    <ref role="1TJDcQ" node="3m26Pihn7Cu" resolve="GlobalFileType" />
   </node>
 </model>
 

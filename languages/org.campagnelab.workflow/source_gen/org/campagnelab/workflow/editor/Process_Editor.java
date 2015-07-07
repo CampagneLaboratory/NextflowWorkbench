@@ -11,17 +11,18 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
+import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 
 public class Process_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -33,12 +34,13 @@ public class Process_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_grok3i_a0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_grok3i_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_grok3i_c0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_grok3i_d0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_grok3i_e0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_grok3i_f0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_grok3i_g0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_grok3i_h0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_grok3i_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_grok3i_d0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_grok3i_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_grok3i_f0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_grok3i_g0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_grok3i_h0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_grok3i_i0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_grok3i_a0(EditorContext editorContext, SNode node) {
@@ -63,17 +65,73 @@ public class Process_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_grok3i_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNodeList_grok3i_c0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Process_Editor.processOptionsListHandler_grok3i_c0(node, "processOptions", editorContext);
+    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
+    editorCell.setCellId("refNodeList_processOptions");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setRole(handler.getElementRole());
+    return editorCell;
+  }
+  private static class processOptionsListHandler_grok3i_c0 extends RefNodeListHandler {
+    public processOptionsListHandler_grok3i_c0(SNode ownerNode, String childRole, EditorContext context) {
+      super(ownerNode, childRole, context, false);
+    }
+    public SNode createNodeToInsert(EditorContext editorContext) {
+      SNode listOwner = super.getOwner();
+      return NodeFactoryManager.createNode(listOwner, editorContext, super.getElementRole());
+    }
+    public EditorCell createNodeCell(EditorContext editorContext, SNode elementNode) {
+      EditorCell elementCell = super.createNodeCell(editorContext, elementNode);
+      this.installElementCellActions(this.getOwner(), elementNode, elementCell, editorContext);
+      return elementCell;
+    }
+    public EditorCell createEmptyCell(EditorContext editorContext) {
+      EditorCell emptyCell = null;
+      emptyCell = this.createEmptyCell_internal(editorContext, this.getOwner());
+      this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
+      return emptyCell;
+    }
+    public EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
+      return this.createConstant_grok3i_a2a(editorContext, node);
+    }
+    public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
+        if (elementNode != null) {
+          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode));
+          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode));
+        }
+        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+          elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
+        }
+      }
+    }
+    private EditorCell createConstant_grok3i_a2a(EditorContext editorContext, SNode node) {
+      EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "<<no process option overrides>>");
+      editorCell.setCellId("Constant_grok3i_a2a");
+      Style style = new StyleImpl();
+      WorkflowStyles_StyleSheet.apply_EmptyCell(style, editorCell);
+      editorCell.getStyle().putAll(style);
+      editorCell.setDefaultText("");
+      return editorCell;
+    }
+  }
+  private EditorCell createConstant_grok3i_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "inputs:");
-    editorCell.setCellId("Constant_grok3i_c0");
+    editorCell.setCellId("Constant_grok3i_d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNodeList_grok3i_d0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Process_Editor.inputsListHandler_grok3i_d0(node, "inputs", editorContext);
+  private EditorCell createRefNodeList_grok3i_e0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Process_Editor.inputsListHandler_grok3i_e0(node, "inputs", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_inputs");
     Style style = new StyleImpl();
@@ -84,8 +142,8 @@ public class Process_Editor extends DefaultNodeEditor {
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class inputsListHandler_grok3i_d0 extends RefNodeListHandler {
-    public inputsListHandler_grok3i_d0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class inputsListHandler_grok3i_e0 extends RefNodeListHandler {
+    public inputsListHandler_grok3i_e0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -99,9 +157,12 @@ public class Process_Editor extends DefaultNodeEditor {
     }
     public EditorCell createEmptyCell(EditorContext editorContext) {
       EditorCell emptyCell = null;
-      emptyCell = super.createEmptyCell(editorContext);
+      emptyCell = this.createEmptyCell_internal(editorContext, this.getOwner());
       this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
       return emptyCell;
+    }
+    public EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
+      return this.createConstant_grok3i_a4a(editorContext, node);
     }
     public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
       if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
@@ -115,18 +176,27 @@ public class Process_Editor extends DefaultNodeEditor {
         }
       }
     }
+    private EditorCell createConstant_grok3i_a4a(EditorContext editorContext, SNode node) {
+      EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "<<no input channels>>");
+      editorCell.setCellId("Constant_grok3i_a4a");
+      Style style = new StyleImpl();
+      WorkflowStyles_StyleSheet.apply_EmptyCell(style, editorCell);
+      editorCell.getStyle().putAll(style);
+      editorCell.setDefaultText("");
+      return editorCell;
+    }
   }
-  private EditorCell createConstant_grok3i_e0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_grok3i_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "output:");
-    editorCell.setCellId("Constant_grok3i_e0");
+    editorCell.setCellId("Constant_grok3i_f0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNodeList_grok3i_f0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Process_Editor.outputsListHandler_grok3i_f0(node, "outputs", editorContext);
+  private EditorCell createRefNodeList_grok3i_g0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Process_Editor.outputsListHandler_grok3i_g0(node, "outputs", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_outputs");
     Style style = new StyleImpl();
@@ -137,8 +207,8 @@ public class Process_Editor extends DefaultNodeEditor {
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class outputsListHandler_grok3i_f0 extends RefNodeListHandler {
-    public outputsListHandler_grok3i_f0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class outputsListHandler_grok3i_g0 extends RefNodeListHandler {
+    public outputsListHandler_grok3i_g0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -152,9 +222,12 @@ public class Process_Editor extends DefaultNodeEditor {
     }
     public EditorCell createEmptyCell(EditorContext editorContext) {
       EditorCell emptyCell = null;
-      emptyCell = super.createEmptyCell(editorContext);
+      emptyCell = this.createEmptyCell_internal(editorContext, this.getOwner());
       this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
       return emptyCell;
+    }
+    public EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
+      return this.createConstant_grok3i_a6a(editorContext, node);
     }
     public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
       if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
@@ -168,55 +241,42 @@ public class Process_Editor extends DefaultNodeEditor {
         }
       }
     }
+    private EditorCell createConstant_grok3i_a6a(EditorContext editorContext, SNode node) {
+      EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "<<no output channels>>");
+      editorCell.setCellId("Constant_grok3i_a6a");
+      Style style = new StyleImpl();
+      WorkflowStyles_StyleSheet.apply_EmptyCell(style, editorCell);
+      editorCell.getStyle().putAll(style);
+      editorCell.setDefaultText("");
+      return editorCell;
+    }
   }
-  private EditorCell createConstant_grok3i_g0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_grok3i_h0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "script:");
-    editorCell.setCellId("Constant_grok3i_g0");
+    editorCell.setCellId("Constant_grok3i_h0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNodeList_grok3i_h0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Process_Editor.scriptListHandler_grok3i_h0(node, "script", editorContext);
-    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_script");
+  private EditorCell createRefNode_grok3i_i0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+    provider.setRole("script");
+    provider.setNoTargetText("<no script>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setRole("script");
+    }
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
-    editorCell.setRole(handler.getElementRole());
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
     return editorCell;
-  }
-  private static class scriptListHandler_grok3i_h0 extends RefNodeListHandler {
-    public scriptListHandler_grok3i_h0(SNode ownerNode, String childRole, EditorContext context) {
-      super(ownerNode, childRole, context, false);
-    }
-    public SNode createNodeToInsert(EditorContext editorContext) {
-      SNode listOwner = super.getOwner();
-      return NodeFactoryManager.createNode(listOwner, editorContext, super.getElementRole());
-    }
-    public EditorCell createNodeCell(EditorContext editorContext, SNode elementNode) {
-      EditorCell elementCell = super.createNodeCell(editorContext, elementNode);
-      this.installElementCellActions(this.getOwner(), elementNode, elementCell, editorContext);
-      return elementCell;
-    }
-    public EditorCell createEmptyCell(EditorContext editorContext) {
-      EditorCell emptyCell = null;
-      emptyCell = super.createEmptyCell(editorContext);
-      this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
-      return emptyCell;
-    }
-    public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
-      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
-        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
-        if (elementNode != null) {
-          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode));
-          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode));
-        }
-        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
-        }
-      }
-    }
   }
 }

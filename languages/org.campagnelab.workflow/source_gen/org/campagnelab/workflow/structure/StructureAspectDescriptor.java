@@ -19,6 +19,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptChannelType = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ChannelType", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae32ad2L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptClusterOptions = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ClusterOptions", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2054599338fca77dL)).super_("org.campagnelab.workflow.structure.ProcessOptions").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).parents("org.campagnelab.workflow.structure.ProcessOptions").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(2329585396108535784L, "clusterOptions")).properties("clusterOptions").alias("cluster options", "allows native configuration options to be accepted by the cluster submit command").create();
   /*package*/ final ConceptDescriptor myConceptCollate = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Collate", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e71L)).super_("org.campagnelab.workflow.structure.ChannelFunctions").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).parents("org.campagnelab.workflow.structure.ChannelFunctions").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(3857878650533843272L, "n")).properties("n").alias("collate", "transforms a channel such that the emitted values are grouped into lists containing n items").create();
+  /*package*/ final ConceptDescriptor myConceptConditionalScript = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ConditionalScript", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xfb3baeb3528149fL)).super_("org.campagnelab.workflow.structure.Script").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x677d1579f92a9921L)).parents("org.campagnelab.workflow.structure.Script").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x677d1579f92a9921L)).childDescriptors(new ConceptDescriptorBuilder.Link(1131453450772034320L, "if", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xfb3baeb35282473L), false, true, false), new ConceptDescriptorBuilder.Link(1131453450773933808L, "else", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xfb3baeb35283338L), false, false, false)).children(new String[]{"if", "else"}, new boolean[]{true, false}).alias("conditional script", "a script that executes when the condition evaluates to true").create();
+  /*package*/ final ConceptDescriptor myConceptElseCondition = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ElseCondition", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xfb3baeb35283338L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(1131453450773933822L, "script", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x700dd4c98e9e2388L), false, false, false)).children(new String[]{"script"}, new boolean[]{false}).create();
   /*package*/ final ConceptDescriptor myConceptErrorStrategies = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ErrorStrategies", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4bff3475a7033071L)).super_("org.campagnelab.workflow.structure.ProcessOptions").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).parents("org.campagnelab.workflow.structure.ProcessOptions").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptExecutor = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Executor", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x424c0fc1f3c6df5cL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptFile = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.File", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x1b7d08ca5d1a70caL)).super_("org.campagnelab.workflow.structure.ValueInAChannelNoTuple").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157723ec6L)).parents("org.campagnelab.workflow.structure.ValueInAChannelNoTuple").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157723ec6L)).alias("file", "file as input or output").create();
@@ -29,9 +31,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptGlobalBooleanList = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalBooleanList", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7bcdL)).super_("org.campagnelab.workflow.structure.GlobalListType").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).parents("org.campagnelab.workflow.structure.GlobalListType").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012526030L, "boolean", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7892L), false, true, false)).children(new String[]{"boolean"}, new boolean[]{true}).alias("boolean list", "").create();
   /*package*/ final ConceptDescriptor myConceptGlobalChannel = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalChannel", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5998affa31746c62L)).super_("org.campagnelab.workflow.structure.OutChannels").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491467833L)).parents("org.campagnelab.workflow.structure.OutChannels").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491467833L)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281011084282L, "value", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL), false, false, false)).children(new String[]{"value"}, new boolean[]{false}).alias("global channel", "").create();
   /*package*/ final ConceptDescriptor myConceptGlobalExpression = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalExpression", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
-  /*package*/ final ConceptDescriptor myConceptGlobalFile = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalFile", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7a1eL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(3855674281012527426L, "path")).properties("path").alias("path", "").create();
   /*package*/ final ConceptDescriptor myConceptGlobalFileExpression = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalFileExpression", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491550db6L)).super_("org.campagnelab.workflow.structure.GlobalExpression").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL)).parents("org.campagnelab.workflow.structure.GlobalExpression").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012526302L, "file", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7a1eL), false, true, false)).children(new String[]{"file"}, new boolean[]{true}).alias("file", "").create();
   /*package*/ final ConceptDescriptor myConceptGlobalFileList = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalFileList", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7c08L)).super_("org.campagnelab.workflow.structure.GlobalListType").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).parents("org.campagnelab.workflow.structure.GlobalListType").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012526239L, "file", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7a1eL), false, true, false)).children(new String[]{"file"}, new boolean[]{true}).alias("file list", "").create();
+  /*package*/ final ConceptDescriptor myConceptGlobalFileType = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalFileType", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7a1eL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(3855674281012527426L, "path")).properties("path").abstract_().create();
   /*package*/ final ConceptDescriptor myConceptGlobalInteger = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalInteger", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c813dL)).super_("org.campagnelab.workflow.structure.GlobalIntegerType").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7400L)).parents("org.campagnelab.workflow.structure.GlobalIntegerType").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7400L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(3855674281012527422L, "value")).properties("value").alias("value", "").create();
   /*package*/ final ConceptDescriptor myConceptGlobalIntegerExpression = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalIntegerExpression", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491550c56L)).super_("org.campagnelab.workflow.structure.GlobalExpression").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL)).parents("org.campagnelab.workflow.structure.GlobalExpression").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012526304L, "integer", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7400L), false, true, false)).children(new String[]{"integer"}, new boolean[]{true}).alias("int", "").create();
   /*package*/ final ConceptDescriptor myConceptGlobalIntegerList = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalIntegerList", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7b92L)).super_("org.campagnelab.workflow.structure.GlobalListType").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).parents("org.campagnelab.workflow.structure.GlobalListType").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012525971L, "integer", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7400L), false, true, false)).children(new String[]{"integer"}, new boolean[]{true}).alias("int list", "").create();
@@ -39,10 +41,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptGlobalList = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalList", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7cd9L)).super_("org.campagnelab.workflow.structure.GlobalListType").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).parents("org.campagnelab.workflow.structure.GlobalListType").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012526298L, "list", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L), false, true, false)).children(new String[]{"list"}, new boolean[]{true}).alias("list", "").create();
   /*package*/ final ConceptDescriptor myConceptGlobalListExpression = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalListExpression", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491550d4fL)).super_("org.campagnelab.workflow.structure.GlobalExpression").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL)).parents("org.campagnelab.workflow.structure.GlobalExpression").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012526306L, "list", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L), false, true, false)).children(new String[]{"list"}, new boolean[]{true}).alias("list", "").create();
   /*package*/ final ConceptDescriptor myConceptGlobalListType = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalListType", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().alias("list", "").create();
+  /*package*/ final ConceptDescriptor myConceptGlobalLocalFile = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalLocalFile", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x524c297af30e71d0L)).super_("org.campagnelab.workflow.structure.GlobalFileType").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7a1eL)).parents("org.campagnelab.workflow.structure.GlobalFileType").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7a1eL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(5930160417380669576L, "system")).properties("system").alias("local file", "file's path, which is located on your system").create();
+  /*package*/ final ConceptDescriptor myConceptGlobalRemoteFile = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalRemoteFile", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x524c297af30e9887L)).super_("org.campagnelab.workflow.structure.GlobalFileType").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7a1eL)).parents("org.campagnelab.workflow.structure.GlobalFileType").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7a1eL)).alias("remote file", "file's path, which is located on another system").create();
   /*package*/ final ConceptDescriptor myConceptGlobalString = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalString", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c805aL)).super_("org.campagnelab.workflow.structure.GlobalStringType").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c75f4L)).parents("org.campagnelab.workflow.structure.GlobalStringType").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c75f4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(3855674281012527195L, "value")).properties("value").alias("value", "").create();
   /*package*/ final ConceptDescriptor myConceptGlobalStringExpression = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalStringExpression", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491550c8fL)).super_("org.campagnelab.workflow.structure.GlobalExpression").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL)).parents("org.campagnelab.workflow.structure.GlobalExpression").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012526308L, "string", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c75f4L), false, true, false)).children(new String[]{"string"}, new boolean[]{true}).alias("string", "").create();
   /*package*/ final ConceptDescriptor myConceptGlobalStringList = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalStringList", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7ac7L)).super_("org.campagnelab.workflow.structure.GlobalListType").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).parents("org.campagnelab.workflow.structure.GlobalListType").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012525912L, "string", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c75f4L), false, true, false)).children(new String[]{"string"}, new boolean[]{true}).alias("string list", "").create();
   /*package*/ final ConceptDescriptor myConceptGlobalStringType = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalStringType", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c75f4L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
+  /*package*/ final ConceptDescriptor myConceptIfCondition = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.IfCondition", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xfb3baeb35282473L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(1131453450772030582L, "condition", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x700dd4c98e9e2388L), false, false, false), new ConceptDescriptorBuilder.Link(1131453450772030629L, "script", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x700dd4c98e9e2388L), false, false, false)).children(new String[]{"condition", "script"}, new boolean[]{false, false}).alias("if", "").create();
   /*package*/ final ConceptDescriptor myConceptIgnore = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Ignore", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4bff3475a703307bL)).super_("org.campagnelab.workflow.structure.ErrorStrategies").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4bff3475a7033071L)).parents("org.campagnelab.workflow.structure.ErrorStrategies").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4bff3475a7033071L)).alias("ignore", "the process does not stop on an error condition, it only notifies of the error").create();
   /*package*/ final ConceptDescriptor myConceptInputChannel = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.InputChannel", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(8369613327464433607L, "connectedTo", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491467833L), false)).references("connectedTo").childDescriptors(new ConceptDescriptorBuilder.Link(3857878650537656757L, "functions", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L), true, true, false)).children(new String[]{"functions"}, new boolean[]{true}).alias("input channel", "").create();
   /*package*/ final ConceptDescriptor myConceptInteger = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Integer", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x43a1a78d1dd6ab49L)).super_("org.campagnelab.workflow.structure.ValueInAChannelNoTuple").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157723ec6L)).parents("org.campagnelab.workflow.structure.ValueInAChannelNoTuple").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157723ec6L)).alias("int", "integer as input or output").create();
@@ -55,12 +60,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptListTypes = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ListTypes", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5998affa318eabe9L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptLocal = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Local", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x424c0fc1f3c6df5dL)).super_("org.campagnelab.workflow.structure.Executor").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x424c0fc1f3c6df5cL)).parents("org.campagnelab.workflow.structure.Executor").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x424c0fc1f3c6df5cL)).alias("local", "executes the workflow on the local, single machine").create();
   /*package*/ final ConceptDescriptor myConceptMemory = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Memory", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2054599338fca63fL)).super_("org.campagnelab.workflow.structure.ProcessOptions").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).parents("org.campagnelab.workflow.structure.ProcessOptions").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(2329585396108535460L, "memory")).properties("memory").alias("memory", "defines how much memory the process is allowed to use").create();
-  /*package*/ final ConceptDescriptor myConceptNextflowConfig = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.NextflowConfig", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2054599339054b2cL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(2329585396109102069L, "executor", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x424c0fc1f3c6df5cL), false, false, false), new ConceptDescriptorBuilder.Link(2481755940887818903L, "queue", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2054599338fca4bdL), true, false, false)).children(new String[]{"executor", "queue"}, new boolean[]{false, false}).alias("nextflow.config", "configuration for nextflow").create();
+  /*package*/ final ConceptDescriptor myConceptNextflowConfig = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.NextflowConfig", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2054599339054b2cL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(2329585396109102069L, "executor", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x424c0fc1f3c6df5cL), false, false, false), new ConceptDescriptorBuilder.Link(5930160417388865584L, "processOptions", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L), true, true, false)).children(new String[]{"executor", "processOptions"}, new boolean[]{false, true}).alias("nextflow.config", "configuration for nextflow").create();
   /*package*/ final ConceptDescriptor myConceptNumCPUs = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.NumCPUs", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2054599338f1bb74L)).super_("org.campagnelab.workflow.structure.ProcessOptions").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).parents("org.campagnelab.workflow.structure.ProcessOptions").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(2329585396107820961L, "num")).properties("num").alias("numCPUs", "defines the number of CPU required by the process' task").create();
   /*package*/ final ConceptDescriptor myConceptOutChannels = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.OutChannels", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491467833L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptOutputChannel = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.OutputChannel", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae39cbaL)).super_("org.campagnelab.workflow.structure.OutChannels").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491467833L)).parents("org.campagnelab.workflow.structure.OutChannels").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491467833L)).create();
   /*package*/ final ConceptDescriptor myConceptPenv = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Penv", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2054599338fca6a7L)).super_("org.campagnelab.workflow.structure.ProcessOptions").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).parents("org.campagnelab.workflow.structure.ProcessOptions").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(2329585396108535566L, "penv")).properties("penv").alias("penv", "define the parallel environment to be used when submitting a parallel task to the SGE resource manager").create();
-  /*package*/ final ConceptDescriptor myConceptProcess = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Process", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x677d1579f929d8b1L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L)).childDescriptors(new ConceptDescriptorBuilder.Link(7457140171610928302L, "inputs", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae32ad2L), true, true, false), new ConceptDescriptorBuilder.Link(7457140171610928304L, "outputs", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae32ad2L), true, true, false), new ConceptDescriptorBuilder.Link(7457140171610928307L, "script", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x677d1579f92a9921L), false, true, false)).children(new String[]{"inputs", "outputs", "script"}, new boolean[]{true, true, true}).alias("", "a Nextflow-like process").create();
+  /*package*/ final ConceptDescriptor myConceptProcess = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Process", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x677d1579f929d8b1L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L)).childDescriptors(new ConceptDescriptorBuilder.Link(5930160417388206667L, "processOptions", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L), true, true, false), new ConceptDescriptorBuilder.Link(7457140171610928302L, "inputs", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae32ad2L), true, true, false), new ConceptDescriptorBuilder.Link(7457140171610928304L, "outputs", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae32ad2L), true, true, false), new ConceptDescriptorBuilder.Link(7457140171610928307L, "script", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x677d1579f92a9921L), false, false, false)).children(new String[]{"processOptions", "inputs", "outputs", "script"}, new boolean[]{true, true, true, false}).alias("", "a Nextflow-like process").create();
   /*package*/ final ConceptDescriptor myConceptProcessOptions = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ProcessOptions", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptProcessRef = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ProcessRef", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe293272L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(6505336652526334579L, "process", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x677d1579f929d8b1L), false)).references("process").childDescriptors(new ConceptDescriptorBuilder.Link(8369613327464344471L, "inChannel", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL), true, true, false), new ConceptDescriptorBuilder.Link(8369613327464344476L, "outChannel", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae39cbaL), true, true, false), new ConceptDescriptorBuilder.Link(6992028756512319947L, "processOptions", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L), true, true, false)).children(new String[]{"inChannel", "outChannel", "processOptions"}, new boolean[]{true, true, true}).create();
   /*package*/ final ConceptDescriptor myConceptQueue = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Queue", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2054599338fca4bdL)).super_("org.campagnelab.workflow.structure.ProcessOptions").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).parents("org.campagnelab.workflow.structure.ProcessOptions").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).childDescriptors(new ConceptDescriptorBuilder.Link(6992028756512829978L, "queueElement", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd343732eL), false, true, false)).children(new String[]{"queueElement"}, new boolean[]{true}).alias("queue", "allows you to set the queue where jobs are schedules when using a grid based executor in the pipeline").create();
@@ -97,13 +102,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBoolean, myConceptBooleanChannel, myConceptBooleanElement, myConceptChannelFunctions, myConceptChannelType, myConceptClusterOptions, myConceptCollate, myConceptErrorStrategies, myConceptExecutor, myConceptFile, myConceptFileChannel, myConceptFlatten, myConceptGlobalBoolean, myConceptGlobalBooleanExpression, myConceptGlobalBooleanList, myConceptGlobalChannel, myConceptGlobalExpression, myConceptGlobalFile, myConceptGlobalFileExpression, myConceptGlobalFileList, myConceptGlobalInteger, myConceptGlobalIntegerExpression, myConceptGlobalIntegerList, myConceptGlobalIntegerType, myConceptGlobalList, myConceptGlobalListExpression, myConceptGlobalListType, myConceptGlobalString, myConceptGlobalStringExpression, myConceptGlobalStringList, myConceptGlobalStringType, myConceptIgnore, myConceptInputChannel, myConceptInteger, myConceptIntegerChannel, myConceptIntegerElement, myConceptList, myConceptListChannel, myConceptListElement, myConceptListElements, myConceptListTypes, myConceptLocal, myConceptMemory, myConceptNextflowConfig, myConceptNumCPUs, myConceptOutChannels, myConceptOutputChannel, myConceptPenv, myConceptProcess, myConceptProcessOptions, myConceptProcessRef, myConceptQueue, myConceptQueueElement, myConceptRangeOfChars, myConceptRangeOfIntegers, myConceptRetry, myConceptRichScript, myConceptSGE, myConceptScript, myConceptScriptArgs, myConceptScriptBooleanArgs, myConceptScriptIntegerArgs, myConceptScriptListArgs, myConceptScriptStringArgs, myConceptString, myConceptStringChannel, myConceptStringElement, myConceptTimeAllowed, myConceptToList, myConceptToSortedList, myConceptTuple, myConceptTupleChannel, myConceptValueFromWorkflow, myConceptValueFromWorkflowRef, myConceptValueInAChannel, myConceptValueInAChannelNoTuple, myConceptValueInAChannelRef, myConceptWorkflow, myConceptWorkflowBoolean, myConceptWorkflowInteger, myConceptWorkflowList, myConceptWorkflowString);
+    return Arrays.asList(myConceptBoolean, myConceptBooleanChannel, myConceptBooleanElement, myConceptChannelFunctions, myConceptChannelType, myConceptClusterOptions, myConceptCollate, myConceptConditionalScript, myConceptElseCondition, myConceptErrorStrategies, myConceptExecutor, myConceptFile, myConceptFileChannel, myConceptFlatten, myConceptGlobalBoolean, myConceptGlobalBooleanExpression, myConceptGlobalBooleanList, myConceptGlobalChannel, myConceptGlobalExpression, myConceptGlobalFileExpression, myConceptGlobalFileList, myConceptGlobalFileType, myConceptGlobalInteger, myConceptGlobalIntegerExpression, myConceptGlobalIntegerList, myConceptGlobalIntegerType, myConceptGlobalList, myConceptGlobalListExpression, myConceptGlobalListType, myConceptGlobalLocalFile, myConceptGlobalRemoteFile, myConceptGlobalString, myConceptGlobalStringExpression, myConceptGlobalStringList, myConceptGlobalStringType, myConceptIfCondition, myConceptIgnore, myConceptInputChannel, myConceptInteger, myConceptIntegerChannel, myConceptIntegerElement, myConceptList, myConceptListChannel, myConceptListElement, myConceptListElements, myConceptListTypes, myConceptLocal, myConceptMemory, myConceptNextflowConfig, myConceptNumCPUs, myConceptOutChannels, myConceptOutputChannel, myConceptPenv, myConceptProcess, myConceptProcessOptions, myConceptProcessRef, myConceptQueue, myConceptQueueElement, myConceptRangeOfChars, myConceptRangeOfIntegers, myConceptRetry, myConceptRichScript, myConceptSGE, myConceptScript, myConceptScriptArgs, myConceptScriptBooleanArgs, myConceptScriptIntegerArgs, myConceptScriptListArgs, myConceptScriptStringArgs, myConceptString, myConceptStringChannel, myConceptStringElement, myConceptTimeAllowed, myConceptToList, myConceptToSortedList, myConceptTuple, myConceptTupleChannel, myConceptValueFromWorkflow, myConceptValueFromWorkflowRef, myConceptValueInAChannel, myConceptValueInAChannelNoTuple, myConceptValueInAChannelRef, myConceptWorkflow, myConceptWorkflowBoolean, myConceptWorkflowInteger, myConceptWorkflowList, myConceptWorkflowString);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0id, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0nd, conceptFqName)) {
       case 0:
         return myConceptBoolean;
       case 1:
@@ -119,158 +124,168 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 6:
         return myConceptCollate;
       case 7:
-        return myConceptErrorStrategies;
+        return myConceptConditionalScript;
       case 8:
-        return myConceptExecutor;
+        return myConceptElseCondition;
       case 9:
-        return myConceptFile;
+        return myConceptErrorStrategies;
       case 10:
-        return myConceptFileChannel;
+        return myConceptExecutor;
       case 11:
-        return myConceptFlatten;
+        return myConceptFile;
       case 12:
-        return myConceptGlobalBoolean;
+        return myConceptFileChannel;
       case 13:
-        return myConceptGlobalBooleanExpression;
+        return myConceptFlatten;
       case 14:
-        return myConceptGlobalBooleanList;
+        return myConceptGlobalBoolean;
       case 15:
-        return myConceptGlobalChannel;
+        return myConceptGlobalBooleanExpression;
       case 16:
-        return myConceptGlobalExpression;
+        return myConceptGlobalBooleanList;
       case 17:
-        return myConceptGlobalFile;
+        return myConceptGlobalChannel;
       case 18:
-        return myConceptGlobalFileExpression;
+        return myConceptGlobalExpression;
       case 19:
-        return myConceptGlobalFileList;
+        return myConceptGlobalFileExpression;
       case 20:
-        return myConceptGlobalInteger;
+        return myConceptGlobalFileList;
       case 21:
-        return myConceptGlobalIntegerExpression;
+        return myConceptGlobalFileType;
       case 22:
-        return myConceptGlobalIntegerList;
+        return myConceptGlobalInteger;
       case 23:
-        return myConceptGlobalIntegerType;
+        return myConceptGlobalIntegerExpression;
       case 24:
-        return myConceptGlobalList;
+        return myConceptGlobalIntegerList;
       case 25:
-        return myConceptGlobalListExpression;
+        return myConceptGlobalIntegerType;
       case 26:
-        return myConceptGlobalListType;
+        return myConceptGlobalList;
       case 27:
-        return myConceptGlobalString;
+        return myConceptGlobalListExpression;
       case 28:
-        return myConceptGlobalStringExpression;
+        return myConceptGlobalListType;
       case 29:
-        return myConceptGlobalStringList;
+        return myConceptGlobalLocalFile;
       case 30:
-        return myConceptGlobalStringType;
+        return myConceptGlobalRemoteFile;
       case 31:
-        return myConceptIgnore;
+        return myConceptGlobalString;
       case 32:
-        return myConceptInputChannel;
+        return myConceptGlobalStringExpression;
       case 33:
-        return myConceptInteger;
+        return myConceptGlobalStringList;
       case 34:
-        return myConceptIntegerChannel;
+        return myConceptGlobalStringType;
       case 35:
-        return myConceptIntegerElement;
+        return myConceptIfCondition;
       case 36:
-        return myConceptList;
+        return myConceptIgnore;
       case 37:
-        return myConceptListChannel;
+        return myConceptInputChannel;
       case 38:
-        return myConceptListElement;
+        return myConceptInteger;
       case 39:
-        return myConceptListElements;
+        return myConceptIntegerChannel;
       case 40:
-        return myConceptListTypes;
+        return myConceptIntegerElement;
       case 41:
-        return myConceptLocal;
+        return myConceptList;
       case 42:
-        return myConceptMemory;
+        return myConceptListChannel;
       case 43:
-        return myConceptNextflowConfig;
+        return myConceptListElement;
       case 44:
-        return myConceptNumCPUs;
+        return myConceptListElements;
       case 45:
-        return myConceptOutChannels;
+        return myConceptListTypes;
       case 46:
-        return myConceptOutputChannel;
+        return myConceptLocal;
       case 47:
-        return myConceptPenv;
+        return myConceptMemory;
       case 48:
-        return myConceptProcess;
+        return myConceptNextflowConfig;
       case 49:
-        return myConceptProcessOptions;
+        return myConceptNumCPUs;
       case 50:
-        return myConceptProcessRef;
+        return myConceptOutChannels;
       case 51:
-        return myConceptQueue;
+        return myConceptOutputChannel;
       case 52:
-        return myConceptQueueElement;
+        return myConceptPenv;
       case 53:
-        return myConceptRangeOfChars;
+        return myConceptProcess;
       case 54:
-        return myConceptRangeOfIntegers;
+        return myConceptProcessOptions;
       case 55:
-        return myConceptRetry;
+        return myConceptProcessRef;
       case 56:
-        return myConceptRichScript;
+        return myConceptQueue;
       case 57:
-        return myConceptSGE;
+        return myConceptQueueElement;
       case 58:
-        return myConceptScript;
+        return myConceptRangeOfChars;
       case 59:
-        return myConceptScriptArgs;
+        return myConceptRangeOfIntegers;
       case 60:
-        return myConceptScriptBooleanArgs;
+        return myConceptRetry;
       case 61:
-        return myConceptScriptIntegerArgs;
+        return myConceptRichScript;
       case 62:
-        return myConceptScriptListArgs;
+        return myConceptSGE;
       case 63:
-        return myConceptScriptStringArgs;
+        return myConceptScript;
       case 64:
-        return myConceptString;
+        return myConceptScriptArgs;
       case 65:
-        return myConceptStringChannel;
+        return myConceptScriptBooleanArgs;
       case 66:
-        return myConceptStringElement;
+        return myConceptScriptIntegerArgs;
       case 67:
-        return myConceptTimeAllowed;
+        return myConceptScriptListArgs;
       case 68:
-        return myConceptToList;
+        return myConceptScriptStringArgs;
       case 69:
-        return myConceptToSortedList;
+        return myConceptString;
       case 70:
-        return myConceptTuple;
+        return myConceptStringChannel;
       case 71:
-        return myConceptTupleChannel;
+        return myConceptStringElement;
       case 72:
-        return myConceptValueFromWorkflow;
+        return myConceptTimeAllowed;
       case 73:
-        return myConceptValueFromWorkflowRef;
+        return myConceptToList;
       case 74:
-        return myConceptValueInAChannel;
+        return myConceptToSortedList;
       case 75:
-        return myConceptValueInAChannelNoTuple;
+        return myConceptTuple;
       case 76:
-        return myConceptValueInAChannelRef;
+        return myConceptTupleChannel;
       case 77:
-        return myConceptWorkflow;
+        return myConceptValueFromWorkflow;
       case 78:
-        return myConceptWorkflowBoolean;
+        return myConceptValueFromWorkflowRef;
       case 79:
-        return myConceptWorkflowInteger;
+        return myConceptValueInAChannel;
       case 80:
-        return myConceptWorkflowList;
+        return myConceptValueInAChannelNoTuple;
       case 81:
+        return myConceptValueInAChannelRef;
+      case 82:
+        return myConceptWorkflow;
+      case 83:
+        return myConceptWorkflowBoolean;
+      case 84:
+        return myConceptWorkflowInteger;
+      case 85:
+        return myConceptWorkflowList;
+      case 86:
         return myConceptWorkflowString;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0id = new String[]{"org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.BooleanChannel", "org.campagnelab.workflow.structure.BooleanElement", "org.campagnelab.workflow.structure.ChannelFunctions", "org.campagnelab.workflow.structure.ChannelType", "org.campagnelab.workflow.structure.ClusterOptions", "org.campagnelab.workflow.structure.Collate", "org.campagnelab.workflow.structure.ErrorStrategies", "org.campagnelab.workflow.structure.Executor", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.FileChannel", "org.campagnelab.workflow.structure.Flatten", "org.campagnelab.workflow.structure.GlobalBoolean", "org.campagnelab.workflow.structure.GlobalBooleanExpression", "org.campagnelab.workflow.structure.GlobalBooleanList", "org.campagnelab.workflow.structure.GlobalChannel", "org.campagnelab.workflow.structure.GlobalExpression", "org.campagnelab.workflow.structure.GlobalFile", "org.campagnelab.workflow.structure.GlobalFileExpression", "org.campagnelab.workflow.structure.GlobalFileList", "org.campagnelab.workflow.structure.GlobalInteger", "org.campagnelab.workflow.structure.GlobalIntegerExpression", "org.campagnelab.workflow.structure.GlobalIntegerList", "org.campagnelab.workflow.structure.GlobalIntegerType", "org.campagnelab.workflow.structure.GlobalList", "org.campagnelab.workflow.structure.GlobalListExpression", "org.campagnelab.workflow.structure.GlobalListType", "org.campagnelab.workflow.structure.GlobalString", "org.campagnelab.workflow.structure.GlobalStringExpression", "org.campagnelab.workflow.structure.GlobalStringList", "org.campagnelab.workflow.structure.GlobalStringType", "org.campagnelab.workflow.structure.Ignore", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.IntegerChannel", "org.campagnelab.workflow.structure.IntegerElement", "org.campagnelab.workflow.structure.List", "org.campagnelab.workflow.structure.ListChannel", "org.campagnelab.workflow.structure.ListElement", "org.campagnelab.workflow.structure.ListElements", "org.campagnelab.workflow.structure.ListTypes", "org.campagnelab.workflow.structure.Local", "org.campagnelab.workflow.structure.Memory", "org.campagnelab.workflow.structure.NextflowConfig", "org.campagnelab.workflow.structure.NumCPUs", "org.campagnelab.workflow.structure.OutChannels", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.Penv", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessOptions", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.Queue", "org.campagnelab.workflow.structure.QueueElement", "org.campagnelab.workflow.structure.RangeOfChars", "org.campagnelab.workflow.structure.RangeOfIntegers", "org.campagnelab.workflow.structure.Retry", "org.campagnelab.workflow.structure.RichScript", "org.campagnelab.workflow.structure.SGE", "org.campagnelab.workflow.structure.Script", "org.campagnelab.workflow.structure.ScriptArgs", "org.campagnelab.workflow.structure.ScriptBooleanArgs", "org.campagnelab.workflow.structure.ScriptIntegerArgs", "org.campagnelab.workflow.structure.ScriptListArgs", "org.campagnelab.workflow.structure.ScriptStringArgs", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.StringChannel", "org.campagnelab.workflow.structure.StringElement", "org.campagnelab.workflow.structure.TimeAllowed", "org.campagnelab.workflow.structure.ToList", "org.campagnelab.workflow.structure.ToSortedList", "org.campagnelab.workflow.structure.Tuple", "org.campagnelab.workflow.structure.TupleChannel", "org.campagnelab.workflow.structure.ValueFromWorkflow", "org.campagnelab.workflow.structure.ValueFromWorkflowRef", "org.campagnelab.workflow.structure.ValueInAChannel", "org.campagnelab.workflow.structure.ValueInAChannelNoTuple", "org.campagnelab.workflow.structure.ValueInAChannelRef", "org.campagnelab.workflow.structure.Workflow", "org.campagnelab.workflow.structure.WorkflowBoolean", "org.campagnelab.workflow.structure.WorkflowInteger", "org.campagnelab.workflow.structure.WorkflowList", "org.campagnelab.workflow.structure.WorkflowString"};
+  private static String[] stringSwitchCases_1htk8d_a0a0nd = new String[]{"org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.BooleanChannel", "org.campagnelab.workflow.structure.BooleanElement", "org.campagnelab.workflow.structure.ChannelFunctions", "org.campagnelab.workflow.structure.ChannelType", "org.campagnelab.workflow.structure.ClusterOptions", "org.campagnelab.workflow.structure.Collate", "org.campagnelab.workflow.structure.ConditionalScript", "org.campagnelab.workflow.structure.ElseCondition", "org.campagnelab.workflow.structure.ErrorStrategies", "org.campagnelab.workflow.structure.Executor", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.FileChannel", "org.campagnelab.workflow.structure.Flatten", "org.campagnelab.workflow.structure.GlobalBoolean", "org.campagnelab.workflow.structure.GlobalBooleanExpression", "org.campagnelab.workflow.structure.GlobalBooleanList", "org.campagnelab.workflow.structure.GlobalChannel", "org.campagnelab.workflow.structure.GlobalExpression", "org.campagnelab.workflow.structure.GlobalFileExpression", "org.campagnelab.workflow.structure.GlobalFileList", "org.campagnelab.workflow.structure.GlobalFileType", "org.campagnelab.workflow.structure.GlobalInteger", "org.campagnelab.workflow.structure.GlobalIntegerExpression", "org.campagnelab.workflow.structure.GlobalIntegerList", "org.campagnelab.workflow.structure.GlobalIntegerType", "org.campagnelab.workflow.structure.GlobalList", "org.campagnelab.workflow.structure.GlobalListExpression", "org.campagnelab.workflow.structure.GlobalListType", "org.campagnelab.workflow.structure.GlobalLocalFile", "org.campagnelab.workflow.structure.GlobalRemoteFile", "org.campagnelab.workflow.structure.GlobalString", "org.campagnelab.workflow.structure.GlobalStringExpression", "org.campagnelab.workflow.structure.GlobalStringList", "org.campagnelab.workflow.structure.GlobalStringType", "org.campagnelab.workflow.structure.IfCondition", "org.campagnelab.workflow.structure.Ignore", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.IntegerChannel", "org.campagnelab.workflow.structure.IntegerElement", "org.campagnelab.workflow.structure.List", "org.campagnelab.workflow.structure.ListChannel", "org.campagnelab.workflow.structure.ListElement", "org.campagnelab.workflow.structure.ListElements", "org.campagnelab.workflow.structure.ListTypes", "org.campagnelab.workflow.structure.Local", "org.campagnelab.workflow.structure.Memory", "org.campagnelab.workflow.structure.NextflowConfig", "org.campagnelab.workflow.structure.NumCPUs", "org.campagnelab.workflow.structure.OutChannels", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.Penv", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessOptions", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.Queue", "org.campagnelab.workflow.structure.QueueElement", "org.campagnelab.workflow.structure.RangeOfChars", "org.campagnelab.workflow.structure.RangeOfIntegers", "org.campagnelab.workflow.structure.Retry", "org.campagnelab.workflow.structure.RichScript", "org.campagnelab.workflow.structure.SGE", "org.campagnelab.workflow.structure.Script", "org.campagnelab.workflow.structure.ScriptArgs", "org.campagnelab.workflow.structure.ScriptBooleanArgs", "org.campagnelab.workflow.structure.ScriptIntegerArgs", "org.campagnelab.workflow.structure.ScriptListArgs", "org.campagnelab.workflow.structure.ScriptStringArgs", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.StringChannel", "org.campagnelab.workflow.structure.StringElement", "org.campagnelab.workflow.structure.TimeAllowed", "org.campagnelab.workflow.structure.ToList", "org.campagnelab.workflow.structure.ToSortedList", "org.campagnelab.workflow.structure.Tuple", "org.campagnelab.workflow.structure.TupleChannel", "org.campagnelab.workflow.structure.ValueFromWorkflow", "org.campagnelab.workflow.structure.ValueFromWorkflowRef", "org.campagnelab.workflow.structure.ValueInAChannel", "org.campagnelab.workflow.structure.ValueInAChannelNoTuple", "org.campagnelab.workflow.structure.ValueInAChannelRef", "org.campagnelab.workflow.structure.Workflow", "org.campagnelab.workflow.structure.WorkflowBoolean", "org.campagnelab.workflow.structure.WorkflowInteger", "org.campagnelab.workflow.structure.WorkflowList", "org.campagnelab.workflow.structure.WorkflowString"};
 }
