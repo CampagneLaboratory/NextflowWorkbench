@@ -994,5 +994,20 @@
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5DmojlqPc7e">
+    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="TrG5h" value="ConditionalVariableRef" />
+    <property role="34LRSv" value="variable" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5DmojlqPc9M" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="5DmojlqPcoT" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="variable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
+    </node>
+  </node>
 </model>
 

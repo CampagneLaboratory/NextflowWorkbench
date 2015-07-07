@@ -85,6 +85,9 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
+        <reference id="6509497193195685433" name="variable" index="0wEsc" />
+      </concept>
       <concept id="2329585396107819892" name="org.campagnelab.workflow.structure.NumCPUs" flags="ng" index="oDubB">
         <property id="2329585396107820961" name="num" index="oDuoM" />
       </concept>
@@ -486,8 +489,12 @@
           <node concept="3Y$Zt1" id="5DmojlqEPVx" role="3cqZAp">
             <node concept="19SGf9" id="5DmojlqEPVy" role="3Y$PkS">
               <node concept="19SUe$" id="5DmojlqEPVz" role="19SJt6">
-                <property role="19SUeA" value="fawef" />
+                <property role="19SUeA" value="fawef\n" />
               </node>
+              <node concept="3YE7tV" id="5DmojlqPbF6" role="19SJt6">
+                <ref role="3YE7sm" node="YNIIGPvZlT" resolve="fileCh" />
+              </node>
+              <node concept="19SUe$" id="5DmojlqPbF7" role="19SJt6" />
             </node>
           </node>
         </node>
@@ -530,7 +537,13 @@
             <node concept="3Y$Zt1" id="5DmojlqMp3g" role="3cqZAp">
               <node concept="19SGf9" id="5DmojlqMp3i" role="3Y$PkS">
                 <node concept="19SUe$" id="5DmojlqMp3j" role="19SJt6">
-                  <property role="19SUeA" value="blahblah" />
+                  <property role="19SUeA" value="blahbla\n" />
+                </node>
+                <node concept="0wE3V" id="5Dmojlr9m63" role="19SJt6">
+                  <ref role="0wEsc" node="5DmojlqMogp" resolve="i" />
+                </node>
+                <node concept="19SUe$" id="5DmojlqYLCg" role="19SJt6">
+                  <property role="19SUeA" value="  fawefwaeffe fe\n" />
                 </node>
               </node>
             </node>
