@@ -104,7 +104,7 @@ public class Process_Editor extends DefaultNodeEditor {
       return this.createComponent_grok3i_a0d0(editorContext, node);
     }
     private EditorCell createComponent_grok3i_a0d0(EditorContext editorContext, SNode node) {
-      EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.workflow.editor.DockerContainerPointer");
+      EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.docker.editor.DockerContainerPointer");
       return editorCell;
     }
   }

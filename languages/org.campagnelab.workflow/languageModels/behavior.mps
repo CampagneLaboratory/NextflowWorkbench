@@ -13,8 +13,9 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2219,67 +2220,6 @@
       <node concept="3Tm1VV" id="5Sz2Ie0YII8" role="1B3o_S" />
       <node concept="17QB3L" id="5Sz2Ie0YIIf" role="3clF45" />
       <node concept="3clFbS" id="5Sz2Ie0YIIa" role="3clF47" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="irqYu7yYkW">
-    <ref role="13h7C2" to="iowz:irqYu7yXTy" resolve="DockerContainerPointer" />
-    <node concept="13i0hz" id="1D6dZ$wKOX3" role="13h7CS">
-      <property role="TrG5h" value="formattedAddress" />
-      <node concept="3Tm1VV" id="1D6dZ$wKOX4" role="1B3o_S" />
-      <node concept="3clFbS" id="1D6dZ$wKOX5" role="3clF47">
-        <node concept="3cpWs6" id="1D6dZ$wKPyJ" role="3cqZAp">
-          <node concept="3cpWs3" id="1D6dZ$wKQX9" role="3cqZAk">
-            <node concept="2OqwBi" id="1D6dZ$wKR2k" role="3uHU7w">
-              <node concept="13iPFW" id="1D6dZ$wKQXY" role="2Oq$k0" />
-              <node concept="3TrcHB" id="1D6dZ$wKRjZ" role="2OqNvi">
-                <ref role="3TsBF5" to="iowz:irqYu7yXT_" resolve="tag" />
-              </node>
-            </node>
-            <node concept="3cpWs3" id="1D6dZ$wKQGo" role="3uHU7B">
-              <node concept="3cpWs3" id="1D6dZ$wKQaC" role="3uHU7B">
-                <node concept="3cpWs3" id="1D6dZ$wKPTe" role="3uHU7B">
-                  <node concept="2OqwBi" id="1D6dZ$wKP$t" role="3uHU7B">
-                    <node concept="13iPFW" id="1D6dZ$wKPyY" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="1D6dZ$wKPG0" role="2OqNvi">
-                      <ref role="3TsBF5" to="iowz:irqYu7yXTB" resolve="userName" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="1D6dZ$wKPTh" role="3uHU7w">
-                    <property role="Xl_RC" value="/" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="1D6dZ$wKQhN" role="3uHU7w">
-                  <node concept="13iPFW" id="1D6dZ$wKQdQ" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="1D6dZ$wKQso" role="2OqNvi">
-                    <ref role="3TsBF5" to="iowz:irqYu7yXTE" resolve="id" />
-                  </node>
-                </node>
-              </node>
-              <node concept="Xl_RD" id="1D6dZ$wKQGr" role="3uHU7w">
-                <property role="Xl_RC" value=":" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="1D6dZ$wKPwk" role="3clF45" />
-    </node>
-    <node concept="13hLZK" id="irqYu7yYkX" role="13h7CW">
-      <node concept="3clFbS" id="irqYu7yYkY" role="2VODD2">
-        <node concept="3clFbF" id="irqYu7yYwO" role="3cqZAp">
-          <node concept="37vLTI" id="irqYu7yYQk" role="3clFbG">
-            <node concept="Xl_RD" id="irqYu7yYQA" role="37vLTx">
-              <property role="Xl_RC" value="latest" />
-            </node>
-            <node concept="2OqwBi" id="irqYu7yYxV" role="37vLTJ">
-              <node concept="13iPFW" id="irqYu7yYwM" role="2Oq$k0" />
-              <node concept="3TrcHB" id="irqYu7yYDl" role="2OqNvi">
-                <ref role="3TsBF5" to="iowz:irqYu7yXT_" resolve="tag" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
 </model>

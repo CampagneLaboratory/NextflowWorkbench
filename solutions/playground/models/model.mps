@@ -33,6 +33,7 @@
     <use id="0b7d8bbd-896e-495e-be60-01a0d738a649" name="org.campagnelab.gobyweb.plugins" version="-1" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="82ffebe3-3685-4fd9-b560-0c1d348d295c" name="org.campagnelab.logger" version="-1" />
+    <use id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker" version="0" />
   </languages>
   <imports>
     <import index="whle" ref="r:8e4fd1b7-1955-43a4-ace6-aaf9d13814f8(org.campagnelab.logger.structure)" />
@@ -155,6 +156,9 @@
       <concept id="6874736155930792596" name="org.campagnelab.gobyweb.structure.PluginSystemRootDirectory" flags="ng" index="1XFuE8">
         <property id="6874736155930792624" name="path" index="1XFuEG" />
       </concept>
+    </language>
+    <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
+      <concept id="1893262236499303418" name="" flags="ng" index="VtuK3" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
       <concept id="331977639697571426" name="org.campagnelab.workflow.structure.DockerContainerPointer" flags="ng" index="234bm5">
@@ -461,7 +465,7 @@
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
-    <node concept="234bm5" id="irqYu7Dciz" role="234boB">
+    <node concept="VtuK3" id="irqYu7Dciz" role="234boB">
       <property role="234bm2" value="latest" />
     </node>
     <node concept="1uY1Ls" id="6IBo8PYLtHk" role="2ulM7n">
@@ -492,7 +496,7 @@
   </node>
   <node concept="2ulcR8" id="34JZ5vsmm0i">
     <property role="TrG5h" value="analyze" />
-    <node concept="234bm5" id="irqYu7FacT" role="234boB">
+    <node concept="VtuK3" id="irqYu7FacT" role="234boB">
       <property role="234bm0" value="fac2003" />
       <property role="234bmd" value="rocker-metar" />
       <property role="234bm2" value="latest" />
@@ -533,7 +537,7 @@
   </node>
   <node concept="2ulcR8" id="6t646FqPoxG">
     <property role="TrG5h" value="combine" />
-    <node concept="234bm5" id="irqYu7PxE4" role="234boB">
+    <node concept="VtuK3" id="irqYu7PxE4" role="234boB">
       <property role="234bm2" value="latest" />
     </node>
     <node concept="1uY1Ls" id="6t646FqPoxL" role="2ulM7n">
@@ -6407,7 +6411,7 @@
         <property role="3vthGj" value="STRING" />
       </node>
     </node>
-    <node concept="234bm5" id="irqYu7BORK" role="234boB">
+    <node concept="VtuK3" id="irqYu7BORK" role="234boB">
       <property role="234bm2" value="latest" />
       <property role="234bm0" value="fac2003" />
       <property role="234bmd" value="rocker-metar" />

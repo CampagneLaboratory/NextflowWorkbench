@@ -1825,7 +1825,7 @@
     </node>
   </node>
   <node concept="3wDVqV" id="5gyVhZ17Jm9">
-    <property role="3GE5qa" value="R" />
+    <property role="3GE5qa" value="workflow" />
     <property role="TrG5h" value="Workflow" />
     <node concept="1QGGSu" id="5gyVhZ17Jma" role="1bitO_">
       <node concept="10M0yZ" id="4rA9Dd$Pgjt" role="3xaMm5">
@@ -1835,7 +1835,7 @@
     </node>
   </node>
   <node concept="2w4XYM" id="5gyVhZ17JmN">
-    <property role="3GE5qa" value="R" />
+    <property role="3GE5qa" value="workflow" />
     <node concept="yHkHH" id="5gyVhZ17JmO" role="2w4Pho">
       <ref role="yHkHG" node="5gyVhZ17Jj8" resolve="NextFlow" />
     </node>
@@ -1936,7 +1936,7 @@
   <node concept="RBi3j" id="5gyVhZ17Jmb">
     <property role="35f5FB" value="true" />
     <property role="3c$X6f" value="false" />
-    <property role="3GE5qa" value="R" />
+    <property role="3GE5qa" value="workflow" />
     <property role="3gLNDv" value="myRunConfiguration" />
     <ref role="yIonz" node="5gyVhZ17Jj8" resolve="NextFlow" />
     <node concept="yYvg6" id="5gyVhZ17Jmc" role="yYvgT">
@@ -2387,7 +2387,7 @@
   </node>
   <node concept="3wDVqS" id="5gyVhZ17Jj8">
     <property role="TrG5h" value="NextFlow" />
-    <property role="3GE5qa" value="R" />
+    <property role="3GE5qa" value="workflow" />
     <ref role="3wDP8j" node="5gyVhZ17Jm9" resolve="Workflow" />
     <node concept="yHkDC" id="6efZaUfTws1" role="yHkDi">
       <property role="TrG5h" value="myNode" />
@@ -2988,7 +2988,7 @@
     </node>
   </node>
   <node concept="2PEKAc" id="3HMibU_qHv5">
-    <property role="3GE5qa" value="R" />
+    <property role="3GE5qa" value="workflow" />
     <property role="TrG5h" value="GenerateThenMake" />
     <node concept="yYmJa" id="3HMibU_r7sr" role="yYnPO">
       <property role="TrG5h" value="analyses" />

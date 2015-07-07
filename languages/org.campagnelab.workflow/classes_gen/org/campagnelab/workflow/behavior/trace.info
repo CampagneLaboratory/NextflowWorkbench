@@ -11,7 +11,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,152,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,150,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BooleanChannel_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
@@ -33,9 +33,6 @@
     </file>
     <file name="Collate_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Collate_BehaviorDescriptor" />
-    </file>
-    <file name="DockerContainerPointer_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.DockerContainerPointer_BehaviorDescriptor" />
     </file>
     <file name="ErrorStrategies_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ErrorStrategies_BehaviorDescriptor" />
@@ -261,23 +258,6 @@
     </file>
     <file name="Workflow_BehaviorDescriptor.java">
       <unit at="13,0,30,0" name="org.campagnelab.workflow.behavior.Workflow_BehaviorDescriptor" />
-    </file>
-  </root>
-  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/331977639697573180">
-    <file name="DockerContainerPointer_Behavior.java">
-      <node id="331977639697573940" at="10,43,11,169" concept="1" />
-      <node id="1893262236491929775" at="13,82,14,514" concept="6" />
-      <node id="331977639697573180" at="10,0,13,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="331977639697573180" at="13,0,16,0" concept="8" trace="call_formattedAddress_1893262236491927363#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <scope id="331977639697573182" at="10,43,11,169" />
-      <scope id="1893262236491927365" at="13,82,14,514" />
-      <scope id="331977639697573180" at="10,0,13,0">
-        <var name="thisNode" id="331977639697573180" />
-      </scope>
-      <scope id="331977639697573180" at="13,0,16,0">
-        <var name="thisNode" id="331977639697573180" />
-      </scope>
-      <unit id="331977639697573180" at="9,0,17,0" name="org.campagnelab.workflow.behavior.DockerContainerPointer_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/3448966255158170359">
