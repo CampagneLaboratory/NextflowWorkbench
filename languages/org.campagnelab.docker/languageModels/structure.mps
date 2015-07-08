@@ -52,6 +52,10 @@
     <property role="MwhBj" value="${module}/icons/docker-logo-loggedout.png" />
     <property role="3GE5qa" value="containers" />
     <ref role="1TJDcQ" node="1D6dZ$xfhyW" resolve="DockerContainer" />
+    <node concept="1TJgyi" id="1BdDHvUTkwf" role="1TKVEl">
+      <property role="TrG5h" value="isLocal" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1D6dZ$xfhyW">
     <property role="TrG5h" value="DockerContainer" />
@@ -234,6 +238,15 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="containers" />
     <ref role="1TJDcQ" node="1D6dZ$xfhyW" resolve="DockerContainer" />
+    <node concept="1TJgyj" id="1BdDHvUZPgN" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="image" />
+      <ref role="20lvS9" node="7MTH03mbOFc" resolve="DockerImage" />
+    </node>
+    <node concept="1TJgyi" id="1BdDHvV19ow" role="1TKVEl">
+      <property role="TrG5h" value="command" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="1hjSjLb2Tum" role="1TKVEl">
       <property role="TrG5h" value="running" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
