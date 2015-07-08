@@ -59,6 +59,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -103,6 +106,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="5BbChSjL643">
+    <property role="3GE5qa" value="instructions" />
     <ref role="WuzLi" to="6jv6:1D6dZ$xfNCh" resolve="RunInstruction" />
     <node concept="11bSqf" id="5BbChSjL644" role="11c4hB">
       <node concept="3clFbS" id="5BbChSjL645" role="2VODD2">
@@ -123,6 +127,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="5BbChSjL7LN">
+    <property role="3GE5qa" value="instructions" />
     <ref role="WuzLi" to="6jv6:1D6dZ$xfnpX" resolve="FromInstruction" />
     <node concept="11bSqf" id="5BbChSjL7LO" role="11c4hB">
       <node concept="3clFbS" id="5BbChSjL7LP" role="2VODD2">
@@ -148,6 +153,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="5BbChSjL8CI">
+    <property role="3GE5qa" value="instructions" />
     <ref role="WuzLi" to="6jv6:1D6dZ$xfneC" resolve="MaintainerInstruction" />
     <node concept="11bSqf" id="5BbChSjL8CJ" role="11c4hB">
       <node concept="3clFbS" id="5BbChSjL8CK" role="2VODD2">
@@ -182,6 +188,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="5BbChSjL9Ei">
+    <property role="3GE5qa" value="instructions" />
     <ref role="WuzLi" to="6jv6:1D6dZ$xgNkx" resolve="AddInstruction" />
     <node concept="11bSqf" id="5BbChSjL9Ej" role="11c4hB">
       <node concept="3clFbS" id="5BbChSjL9Ek" role="2VODD2">

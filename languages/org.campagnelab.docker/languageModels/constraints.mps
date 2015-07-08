@@ -64,11 +64,17 @@
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
   <node concept="1M2fIO" id="1D6dZ$xgDOQ">
+    <property role="3GE5qa" value="instructions" />
     <ref role="1M2myG" to="6jv6:1D6dZ$xfneC" resolve="MaintainerInstruction" />
     <node concept="nKS2y" id="1D6dZ$xgDOR" role="1MLUbF">
       <node concept="3clFbS" id="1D6dZ$xgDOS" role="2VODD2">
@@ -112,6 +118,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1D6dZ$xgLq6">
+    <property role="3GE5qa" value="instructions" />
     <ref role="1M2myG" to="6jv6:1D6dZ$xfnpX" resolve="FromInstruction" />
     <node concept="nKS2y" id="1D6dZ$xgLq7" role="1MLUbF">
       <node concept="3clFbS" id="1D6dZ$xgLq8" role="2VODD2">

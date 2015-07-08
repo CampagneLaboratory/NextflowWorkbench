@@ -39,6 +39,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -47,12 +50,14 @@
   <node concept="1TIwiD" id="1D6dZ$xcXJU">
     <property role="TrG5h" value="PrebuiltDockerContainer" />
     <property role="MwhBj" value="${module}/icons/docker-logo-loggedout.png" />
+    <property role="3GE5qa" value="containers" />
     <ref role="1TJDcQ" node="1D6dZ$xfhyW" resolve="DockerContainer" />
   </node>
   <node concept="1TIwiD" id="1D6dZ$xfhyW">
     <property role="TrG5h" value="DockerContainer" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="containers" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1D6dZ$xfiv_" role="1TKVEl">
       <property role="TrG5h" value="tag" />
@@ -62,9 +67,12 @@
       <property role="TrG5h" value="userName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="1D6dZ$xfivB" role="1TKVEl">
+    <node concept="1TJgyi" id="5U_2ytMyMiO" role="1TKVEl">
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="5U_2ytMntku" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="1D6dZ$xfmNV">
@@ -98,12 +106,14 @@
     <property role="TrG5h" value="DockerBuildInstruction" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="instructions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1D6dZ$xfneC">
     <property role="TrG5h" value="MaintainerInstruction" />
     <property role="R4oN_" value="Specifies who maintains this dockerfile" />
     <property role="34LRSv" value="MAINTAINER" />
+    <property role="3GE5qa" value="instructions" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyi" id="1D6dZ$xfneD" role="1TKVEl">
       <property role="TrG5h" value="fullName" />
@@ -118,6 +128,7 @@
     <property role="TrG5h" value="FromInstruction" />
     <property role="34LRSv" value="FROM" />
     <property role="R4oN_" value="The container to build from" />
+    <property role="3GE5qa" value="instructions" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyj" id="1D6dZ$xfnq0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -130,6 +141,7 @@
     <property role="TrG5h" value="RunInstruction" />
     <property role="34LRSv" value="RUN" />
     <property role="R4oN_" value="Run a command in the container" />
+    <property role="3GE5qa" value="instructions" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyj" id="1D6dZ$xfNXI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -141,6 +153,7 @@
     <property role="TrG5h" value="AddInstruction" />
     <property role="34LRSv" value="ADD" />
     <property role="R4oN_" value="Add a fileto the container" />
+    <property role="3GE5qa" value="instructions" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyi" id="1D6dZ$xgNvn" role="1TKVEl">
       <property role="TrG5h" value="source" />
@@ -188,12 +201,17 @@
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="5U_2ytMvmw2" role="1TKVEl">
+      <property role="TrG5h" value="command" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="7MTH03mbOUj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="5U_2ytMbL_w">
     <property role="TrG5h" value="TagInfo" />
+    <property role="3GE5qa" value="containers" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5U_2ytMbL_x" role="1TKVEl">
       <property role="TrG5h" value="repositoryHost" />
@@ -208,6 +226,19 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="5U_2ytMbNw6" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5U_2ytMywfJ">
+    <property role="TrG5h" value="RunningContainer" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="containers" />
+    <ref role="1TJDcQ" node="1D6dZ$xfhyW" resolve="DockerContainer" />
+    <node concept="1TJgyi" id="1hjSjLb2Tum" role="1TKVEl">
+      <property role="TrG5h" value="running" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="5U_2ytMywgb" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
