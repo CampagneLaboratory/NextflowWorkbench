@@ -158,7 +158,7 @@
       </concept>
     </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
-      <concept id="1893262236499303418" name="" flags="ng" index="VtuK3" />
+      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.PrebuiltDockerContainer" flags="ng" index="VtuK3" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
       <concept id="331977639697571426" name="org.campagnelab.workflow.structure.DockerContainerPointer" flags="ng" index="234bm5">
@@ -465,9 +465,6 @@
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
-    <node concept="VtuK3" id="irqYu7Dciz" role="234boB">
-      <property role="234bm2" value="latest" />
-    </node>
     <node concept="1uY1Ls" id="6IBo8PYLtHk" role="2ulM7n">
       <node concept="16pRw0" id="6IBo8PYLtHl" role="1uY1Lt">
         <property role="TrG5h" value="fileCh" />
@@ -537,9 +534,6 @@
   </node>
   <node concept="2ulcR8" id="6t646FqPoxG">
     <property role="TrG5h" value="combine" />
-    <node concept="VtuK3" id="irqYu7PxE4" role="234boB">
-      <property role="234bm2" value="latest" />
-    </node>
     <node concept="1uY1Ls" id="6t646FqPoxL" role="2ulM7n">
       <node concept="16pRw0" id="6t646FqPoxM" role="1uY1Lt">
         <property role="TrG5h" value="'*.txt'" />
