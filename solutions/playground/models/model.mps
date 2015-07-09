@@ -524,7 +524,7 @@
     <node concept="3Y$Zt1" id="34JZ5vs_Ul8" role="2ulM7a">
       <node concept="19SGf9" id="34JZ5vs_Ul9" role="3Y$PkS">
         <node concept="19SUe$" id="34JZ5vs_Ula" role="19SJt6">
-          <property role="19SUeA" value="cat index_* &gt; \n" />
+          <property role="19SUeA" value="cat index_* &gt; xfdf &#10;&#10;" />
         </node>
         <node concept="3Y$Zt1" id="1psOhWnMn0h" role="19SJt6">
           <node concept="19SGf9" id="1psOhWnMn0j" role="3Y$PkS">
@@ -538,8 +538,15 @@
         </node>
       </node>
     </node>
-    <node concept="VtuK3" id="4pljpe$32yH" role="234boB">
+    <node concept="GbKB8" id="4pljpe$4q6_" role="234boB">
       <property role="VuL0s" value="latest" />
+      <property role="3yMj3R" value="sleep 1000" />
+      <property role="GbyUj" value="rocker-metar" />
+      <property role="3zaeVo" value="true" />
+      <property role="VuL0v" value="fac2003" />
+      <property role="TrG5h" value="interactive" />
+      <property role="1vm7qE" value="true" />
+      <ref role="3zcJb$" node="4pljpe$4q6A" resolve="image" />
     </node>
   </node>
   <node concept="2ulcR8" id="6t646FqPoxG">
@@ -6596,126 +6603,6 @@
     </node>
   </node>
   <node concept="1lvGkW" id="VMSWAF0h1v">
-    <node concept="1lnzPE" id="VMSWAFic9L" role="1lvGkX">
-      <property role="1lnzPG" value="b4406820e33a: Pulling fs layer" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFic9M" role="1lvGkX">
-      <property role="1lnzPG" value="b4406820e33a: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFic9N" role="1lvGkX">
-      <property role="1lnzPG" value="facc237ff5fe: Pulling metadata" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFic9O" role="1lvGkX">
-      <property role="1lnzPG" value="facc237ff5fe: Pulling fs layer" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFic9P" role="1lvGkX">
-      <property role="1lnzPG" value="facc237ff5fe: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFic9Q" role="1lvGkX">
-      <property role="1lnzPG" value="7e1f62c6c504: Pulling metadata" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFic9R" role="1lvGkX">
-      <property role="1lnzPG" value="7e1f62c6c504: Pulling fs layer" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFic9S" role="1lvGkX">
-      <property role="1lnzPG" value="7e1f62c6c504: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFic9T" role="1lvGkX">
-      <property role="1lnzPG" value="23d83800d942: Pulling metadata" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFic9U" role="1lvGkX">
-      <property role="1lnzPG" value="23d83800d942: Pulling fs layer" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFic9V" role="1lvGkX">
-      <property role="1lnzPG" value="23d83800d942: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFic9W" role="1lvGkX">
-      <property role="1lnzPG" value="23d83800d942: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFic9X" role="1lvGkX">
-      <property role="1lnzPG" value="Status: Downloaded newer image for fac2003/rocker-metar:1.4.0" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYOy" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker pull image " />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYOz" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPB" role="1lvGkX">
-      <property role="1lnzPG" value="Pulling repository fac2003/rocker-metar" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPC" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Pulling image (latest) from fac2003/rocker-metar" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPD" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Pulling image (latest) from fac2003/rocker-metar, endpoint: https://registry-1.docker.io/v1/" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPE" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Pulling dependent layers" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPF" role="1lvGkX">
-      <property role="1lnzPG" value="511136ea3c5a: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPG" role="1lvGkX">
-      <property role="1lnzPG" value="d338bb63f151: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPH" role="1lvGkX">
-      <property role="1lnzPG" value="65688f7c61c4: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPI" role="1lvGkX">
-      <property role="1lnzPG" value="0fd733e8d724: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPJ" role="1lvGkX">
-      <property role="1lnzPG" value="0468b9322615: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPK" role="1lvGkX">
-      <property role="1lnzPG" value="5ea9ae3d3d68: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPL" role="1lvGkX">
-      <property role="1lnzPG" value="15796e780ac5: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPM" role="1lvGkX">
-      <property role="1lnzPG" value="d8b3ccf99925: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPN" role="1lvGkX">
-      <property role="1lnzPG" value="b0482ab12284: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPO" role="1lvGkX">
-      <property role="1lnzPG" value="e815c21da931: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPP" role="1lvGkX">
-      <property role="1lnzPG" value="f015cfd25eab: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPQ" role="1lvGkX">
-      <property role="1lnzPG" value="ae4f2ebcea93: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPR" role="1lvGkX">
-      <property role="1lnzPG" value="119cf916a7b6: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPS" role="1lvGkX">
-      <property role="1lnzPG" value="4e2cdcddef37: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPT" role="1lvGkX">
-      <property role="1lnzPG" value="1b3c4aae7b76: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPU" role="1lvGkX">
-      <property role="1lnzPG" value="80199069ce97: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPV" role="1lvGkX">
-      <property role="1lnzPG" value="17d3a7cbd684: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPW" role="1lvGkX">
-      <property role="1lnzPG" value="578a0a017866: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPX" role="1lvGkX">
-      <property role="1lnzPG" value="a97660ee018c: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPY" role="1lvGkX">
-      <property role="1lnzPG" value="5bd3bcf9e3c6: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYPZ" role="1lvGkX">
-      <property role="1lnzPG" value="f0a43ca4151c: Download complete" />
-    </node>
     <node concept="1lnzPE" id="VMSWAFlYQ0" role="1lvGkX">
       <property role="1lnzPG" value="daaa37358747: Download complete" />
     </node>
@@ -6899,6 +6786,126 @@
     <node concept="1lnzPE" id="4MfZ7_pHuSf" role="1lvGkX">
       <property role="1lnzPG" value="interactive" />
     </node>
+    <node concept="1lnzPE" id="4pljpe$4q2S" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker pull image " />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q2T" role="1lvGkX">
+      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4v" role="1lvGkX">
+      <property role="1lnzPG" value="Pulling repository fac2003/rocker-metar" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4w" role="1lvGkX">
+      <property role="1lnzPG" value="0eef498fe749: Pulling image (latest) from fac2003/rocker-metar" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4x" role="1lvGkX">
+      <property role="1lnzPG" value="0eef498fe749: Pulling image (latest) from fac2003/rocker-metar, endpoint: https://registry-1.docker.io/v1/" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4y" role="1lvGkX">
+      <property role="1lnzPG" value="0eef498fe749: Pulling dependent layers" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4z" role="1lvGkX">
+      <property role="1lnzPG" value="511136ea3c5a: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4$" role="1lvGkX">
+      <property role="1lnzPG" value="d338bb63f151: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4_" role="1lvGkX">
+      <property role="1lnzPG" value="65688f7c61c4: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4A" role="1lvGkX">
+      <property role="1lnzPG" value="0fd733e8d724: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4B" role="1lvGkX">
+      <property role="1lnzPG" value="0468b9322615: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4C" role="1lvGkX">
+      <property role="1lnzPG" value="5ea9ae3d3d68: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4D" role="1lvGkX">
+      <property role="1lnzPG" value="15796e780ac5: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4E" role="1lvGkX">
+      <property role="1lnzPG" value="d8b3ccf99925: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4F" role="1lvGkX">
+      <property role="1lnzPG" value="b0482ab12284: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4G" role="1lvGkX">
+      <property role="1lnzPG" value="e815c21da931: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4H" role="1lvGkX">
+      <property role="1lnzPG" value="f015cfd25eab: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4I" role="1lvGkX">
+      <property role="1lnzPG" value="ae4f2ebcea93: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4J" role="1lvGkX">
+      <property role="1lnzPG" value="119cf916a7b6: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4K" role="1lvGkX">
+      <property role="1lnzPG" value="4e2cdcddef37: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4L" role="1lvGkX">
+      <property role="1lnzPG" value="1b3c4aae7b76: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4M" role="1lvGkX">
+      <property role="1lnzPG" value="80199069ce97: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4N" role="1lvGkX">
+      <property role="1lnzPG" value="17d3a7cbd684: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4O" role="1lvGkX">
+      <property role="1lnzPG" value="578a0a017866: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4P" role="1lvGkX">
+      <property role="1lnzPG" value="a97660ee018c: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4Q" role="1lvGkX">
+      <property role="1lnzPG" value="5bd3bcf9e3c6: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4R" role="1lvGkX">
+      <property role="1lnzPG" value="f0a43ca4151c: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4S" role="1lvGkX">
+      <property role="1lnzPG" value="daaa37358747: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4T" role="1lvGkX">
+      <property role="1lnzPG" value="9809fd3cbe8e: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4U" role="1lvGkX">
+      <property role="1lnzPG" value="30d7dd0a3b57: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4V" role="1lvGkX">
+      <property role="1lnzPG" value="e22f9076658e: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4W" role="1lvGkX">
+      <property role="1lnzPG" value="4b7eb1f91fca: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4X" role="1lvGkX">
+      <property role="1lnzPG" value="0eef498fe749: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4Y" role="1lvGkX">
+      <property role="1lnzPG" value="0eef498fe749: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q4Z" role="1lvGkX">
+      <property role="1lnzPG" value="Status: Image is up to date for fac2003/rocker-metar:latest" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q6B" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker run " />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q6C" role="1lvGkX">
+      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$4q6D" role="1lvGkX">
+      <property role="1lnzPG" value="with name=interactive" />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$5fDk" role="1lvGkX">
+      <property role="1lnzPG" value="Starting container " />
+    </node>
+    <node concept="1lnzPE" id="4pljpe$5fEU" role="1lvGkX">
+      <property role="1lnzPG" value="interactive" />
+    </node>
   </node>
   <node concept="2EEQw1" id="7MTH03m5und">
     <property role="2EEQw2" value="/usr/local/bin/docker" />
@@ -6970,6 +6977,18 @@
     <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="sleep 1000" />
     <ref role="3zcJb$" node="7VaNOCLGf6b" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="4pljpe$4q6A">
+    <property role="GSh9r" value="fac2003/rocker-metar:latest" />
+    <property role="2E_JEh" value="rocker-metar" />
+    <property role="TrG5h" value="image" />
+  </node>
+  <node concept="GbKB8" id="4pljpe$4q6E">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="rocker-metar" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="4pljpe$4q6A" resolve="image" />
   </node>
 </model>
 
