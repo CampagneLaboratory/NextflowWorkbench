@@ -538,14 +538,8 @@
         </node>
       </node>
     </node>
-    <node concept="GbKB8" id="7VaNOCLGf6a" role="234boB">
+    <node concept="VtuK3" id="4pljpe$32yH" role="234boB">
       <property role="VuL0s" value="latest" />
-      <property role="3yMj3R" value="sleep 1000" />
-      <property role="GbyUj" value="rocker-metar" />
-      <property role="3zaeVo" value="true" />
-      <property role="VuL0v" value="fac2003" />
-      <property role="TrG5h" value="interactive" />
-      <ref role="3zcJb$" node="7VaNOCLGf6b" resolve="image" />
     </node>
   </node>
   <node concept="2ulcR8" id="6t646FqPoxG">

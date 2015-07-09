@@ -210,7 +210,7 @@
     <ref role="1XX52x" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
     <node concept="3EZMnI" id="1D6dZ$xcXKs" role="2wV5jI">
       <node concept="1u4HXA" id="1D6dZ$xcXKt" role="3EZMnx">
-        <property role="1ubRXE" value="${org.campagnelab.workflow.home}/icons/docker-logo-loggedout.png" />
+        <property role="1ubRXE" value="${module}/icons/docker-logo-loggedout.png" />
       </node>
       <node concept="3F0ifn" id="1D6dZ$xcXKu" role="3EZMnx">
         <property role="3F0ifm" value=" " />
