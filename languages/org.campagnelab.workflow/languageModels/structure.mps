@@ -85,7 +85,7 @@
     <node concept="1TJgyj" id="irqYu7yXR0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="container" />
-      <ref role="20lvS9" to="6jv6:1D6dZ$xcXJU" resolve="DockerContainerPointer" />
+      <ref role="20lvS9" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
     </node>
     <node concept="PrWs8" id="6tX5nBTayDp" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

@@ -11,8 +11,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
-import jetbrains.mps.nodeEditor.InlineCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
@@ -36,7 +35,7 @@ public class Process_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_grok3i_a0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_grok3i_b0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_grok3i_c0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_grok3i_d0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_grok3i_d0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_grok3i_e0(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_grok3i_f0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_grok3i_g0(editorContext, node));
@@ -73,15 +72,13 @@ public class Process_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_grok3i_d0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+  private EditorCell createRefNode_grok3i_d0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("container");
-    provider.setNoTargetText("<docker container?>");
+    provider.setNoTargetText("<no container>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new Process_Editor._Inline_grok3i_a3a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
-      editorCell.setReferenceCell(true);
       editorCell.setRole("container");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
@@ -92,21 +89,6 @@ public class Process_Editor extends DefaultNodeEditor {
       return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
-  }
-  public static class _Inline_grok3i_a3a extends InlineCellProvider {
-    public _Inline_grok3i_a3a() {
-      super();
-    }
-    public EditorCell createEditorCell(EditorContext editorContext) {
-      return this.createEditorCell(editorContext, this.getSNode());
-    }
-    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createComponent_grok3i_a0d0(editorContext, node);
-    }
-    private EditorCell createComponent_grok3i_a0d0(EditorContext editorContext, SNode node) {
-      EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.docker.editor.DockerContainerPointer");
-      return editorCell;
-    }
   }
   private EditorCell createConstant_grok3i_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "inputs:");

@@ -34,9 +34,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
-        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
-      </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styleClass" index="V601i" />
       </concept>
@@ -81,7 +78,6 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
-        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -165,14 +161,8 @@
       <node concept="3F0ifn" id="irqYu7Kyfx" role="3EZMnx">
         <property role="3F0ifm" value=" " />
       </node>
-      <node concept="1iCGBv" id="irqYu7$VAa" role="3EZMnx">
-        <property role="1$x2rV" value="&lt;docker container?&gt;" />
+      <node concept="3F1sOY" id="VMSWAF0tD1" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:irqYu7yXR0" />
-        <node concept="1sVBvm" id="irqYu7$VAc" role="1sWHZn">
-          <node concept="PMmxH" id="irqYu7_6i8" role="2wV5jI">
-            <ref role="PMmxG" to="wsi3:1D6dZ$xcXKr" resolve="DockerContainerPointer" />
-          </node>
-        </node>
       </node>
       <node concept="3F0ifn" id="6tX5nBTaKOH" role="3EZMnx">
         <property role="3F0ifm" value="inputs:" />

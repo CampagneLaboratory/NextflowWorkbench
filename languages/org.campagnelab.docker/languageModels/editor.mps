@@ -2,7 +2,6 @@
 <model ref="r:a3ce780a-e802-4403-874e-5f8c47c00ace(org.campagnelab.docker.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" name="org.campagnelab.ui" version="0" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -10,18 +9,26 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
+    <import index="msyo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
+    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
+    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
     <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
+      <concept id="1176899348742" name="jetbrains.mps.lang.editor.structure.QueryFunction_ImagePath" flags="in" index="4EIwk" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
@@ -60,6 +67,7 @@
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
         <property id="1139746504291" name="imageFile" index="1ubRXE" />
+        <child id="1176899909521" name="imagePathProvider" index="4GRq3" />
       </concept>
       <concept id="1227861515039" name="jetbrains.mps.lang.editor.structure.NavigatableReferenceStyleClassItem" flags="ln" index="3yfXC2">
         <reference id="1227861587090" name="link" index="3ygfmf" />
@@ -92,6 +100,7 @@
       <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
+      <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
         <property id="1088613081987" name="vertical" index="1QpmdY" />
         <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
@@ -108,6 +117,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -118,6 +128,13 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
@@ -127,12 +144,24 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
     <language id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" name="org.campagnelab.ui">
@@ -153,6 +182,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
@@ -177,7 +207,7 @@
   <node concept="PKFIW" id="1D6dZ$xcXKr">
     <property role="TrG5h" value="DockerContainerPointer" />
     <property role="3GE5qa" value="containers" />
-    <ref role="1XX52x" to="6jv6:1D6dZ$xcXJU" resolve="PrebuiltDockerContainer" />
+    <ref role="1XX52x" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
     <node concept="3EZMnI" id="1D6dZ$xcXKs" role="2wV5jI">
       <node concept="1u4HXA" id="1D6dZ$xcXKt" role="3EZMnx">
         <property role="1ubRXE" value="${org.campagnelab.workflow.home}/icons/docker-logo-loggedout.png" />
@@ -234,7 +264,7 @@
               <node concept="3clFbF" id="1BdDHvUVVfV" role="3cqZAp">
                 <node concept="2OqwBi" id="1BdDHvUVVhG" role="3clFbG">
                   <node concept="1VaYGm" id="1BdDHvUVVfU" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="1BdDHvUVVDp" role="2OqNvi">
+                  <node concept="2qgKlT" id="VMSWAEXcmG" role="2OqNvi">
                     <ref role="37wK5l" to="rzxe:1BdDHvUTm8a" resolve="pull" />
                   </node>
                 </node>
@@ -247,11 +277,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="1D6dZ$xcXKE">
-    <ref role="1XX52x" to="6jv6:1D6dZ$xcXJU" resolve="PrebuiltDockerContainer" />
+    <ref role="1XX52x" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
     <node concept="3EZMnI" id="1D6dZ$xcXKF" role="2wV5jI">
-      <node concept="3F0ifn" id="1D6dZ$xcXKG" role="3EZMnx">
-        <property role="3F0ifm" value="docker container " />
-      </node>
       <node concept="PMmxH" id="1D6dZ$xcXKH" role="3EZMnx">
         <ref role="PMmxG" node="1D6dZ$xcXKr" resolve="DockerContainerPointer" />
       </node>
@@ -806,11 +833,76 @@
     <ref role="1XX52x" to="6jv6:5U_2ytMywfJ" resolve="RunningContainer" />
     <node concept="3EZMnI" id="1hjSjLb2hyx" role="2wV5jI">
       <node concept="l2Vlx" id="1hjSjLb2hyy" role="2iSdaV" />
-      <node concept="3F0ifn" id="1hjSjLb2hyz" role="3EZMnx">
-        <property role="3F0ifm" value="running container" />
+      <node concept="1u4HXA" id="VMSWAFpUbI" role="3EZMnx">
+        <node concept="4EIwk" id="VMSWAFpUpr" role="4GRq3">
+          <node concept="3clFbS" id="VMSWAFpUps" role="2VODD2">
+            <node concept="3clFbF" id="VMSWAFpUur" role="3cqZAp">
+              <node concept="2OqwBi" id="VMSWAFpVXF" role="3clFbG">
+                <node concept="2YIFZM" id="VMSWAFpUzA" role="2Oq$k0">
+                  <ref role="37wK5l" to="msyo:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
+                  <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+                  <node concept="1eOMI4" id="VMSWAFpXsO" role="37wK5m">
+                    <node concept="10QFUN" id="VMSWAFpXsL" role="1eOMHV">
+                      <node concept="3uibUv" id="VMSWAFpX$l" role="10QFUM">
+                        <ref role="3uigEE" to="vsqj:~AbstractModule" resolve="AbstractModule" />
+                      </node>
+                      <node concept="2OqwBi" id="VMSWAFpV2h" role="10QFUP">
+                        <node concept="2OqwBi" id="VMSWAFpUGb" role="2Oq$k0">
+                          <node concept="1Q80Hx" id="VMSWAFpUCS" role="2Oq$k0" />
+                          <node concept="liA8E" id="VMSWAFpUVE" role="2OqNvi">
+                            <ref role="37wK5l" to="srng:~EditorContext.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="VMSWAFpVR8" role="2OqNvi">
+                          <ref role="37wK5l" to="ec5l:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="VMSWAFpWlS" role="2OqNvi">
+                  <ref role="37wK5l" to="msyo:~MacroHelper.shrinkPath(java.lang.String):java.lang.String" resolve="shrinkPath" />
+                  <node concept="Xl_RD" id="VMSWAFpWt5" role="37wK5m">
+                    <property role="Xl_RC" value="${module}/icons/docker-logo-loggedout.png" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
-      <node concept="3F0A7n" id="1hjSjLb2hy$" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="1QoScp" id="VMSWAF516I" role="3EZMnx">
+        <property role="1QpmdY" value="true" />
+        <node concept="pkWqt" id="VMSWAF516L" role="3e4ffs">
+          <node concept="3clFbS" id="VMSWAF516N" role="2VODD2">
+            <node concept="3SKdUt" id="VMSWAF6gm8" role="3cqZAp">
+              <node concept="3SKdUq" id="VMSWAF6gmk" role="3SKWNk">
+                <property role="3SKdUp" value="when not root node, show address" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="VMSWAF5Dmk" role="3cqZAp">
+              <node concept="2OqwBi" id="VMSWAF5EhP" role="3clFbG">
+                <node concept="2OqwBi" id="VMSWAF5Dri" role="2Oq$k0">
+                  <node concept="pncrf" id="VMSWAF5Dmi" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="VMSWAF5DXm" role="2OqNvi" />
+                </node>
+                <node concept="3x8VRR" id="VMSWAF5EPP" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3EZMnI" id="VMSWAF53on" role="1QoVPY">
+          <node concept="l2Vlx" id="VMSWAF53oo" role="2iSdaV" />
+          <node concept="3F0ifn" id="VMSWAF53$d" role="3EZMnx">
+            <property role="3F0ifm" value="running container" />
+          </node>
+          <node concept="3F0A7n" id="VMSWAF52Kj" role="3EZMnx">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="VMSWAF7U0z" role="1QoS34">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
       <node concept="3EZMnI" id="1hjSjLb2UUh" role="3EZMnx">
         <node concept="2iRfu4" id="1hjSjLb2UUi" role="2iSdaV" />
@@ -868,6 +960,21 @@
                   <node concept="3TrcHB" id="1hjSjLb2VTm" role="2OqNvi">
                     <ref role="3TsBF5" to="6jv6:1hjSjLb2Tum" resolve="running" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="ykhUs" id="VMSWAFhfrz" role="3EZMnx">
+        <property role="ykhUg" value="Run" />
+        <node concept="ykhUf" id="VMSWAFhfr$" role="ynkVX">
+          <node concept="3clFbS" id="VMSWAFhfr_" role="2VODD2">
+            <node concept="3clFbF" id="VMSWAFhfDe" role="3cqZAp">
+              <node concept="2OqwBi" id="VMSWAFhfFq" role="3clFbG">
+                <node concept="1VaYGm" id="VMSWAFhfDd" role="2Oq$k0" />
+                <node concept="2qgKlT" id="VMSWAFhg7N" role="2OqNvi">
+                  <ref role="37wK5l" to="rzxe:VMSWAFaVOt" resolve="run" />
                 </node>
               </node>
             </node>
@@ -935,6 +1042,16 @@
           <property role="1413C4" value="body-brace" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1BdDHvV61Eg">
+    <property role="3GE5qa" value="containers" />
+    <ref role="1XX52x" to="6jv6:1D6dZ$xfhyW" resolve="DockerContainer" />
+    <node concept="3EZMnI" id="1BdDHvV61Jh" role="2wV5jI">
+      <node concept="PMmxH" id="1BdDHvV61Jo" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="l2Vlx" id="1BdDHvV61Jk" role="2iSdaV" />
     </node>
   </node>
 </model>

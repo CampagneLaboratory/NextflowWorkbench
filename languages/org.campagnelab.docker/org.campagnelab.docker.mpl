@@ -55,6 +55,8 @@
     <dependency reexport="false">82ffebe3-3685-4fd9-b560-0c1d348d295c(org.campagnelab.logger)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">1f5314a5-15b8-491d-89ca-13256a5ead51(org.campagnelab.gobyweb.tags)</dependency>
+    <dependency reexport="true">20d83b64-d10f-48d1-990d-513b574c4956(org.campagnelab.background)</dependency>
+    <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>c1ba4037-e4db-47d8-8b61-b3c805b648f2(org.campagnelab.ui)</usedLanguage>

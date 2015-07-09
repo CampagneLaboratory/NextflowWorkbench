@@ -48,9 +48,11 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="1D6dZ$xcXJU">
-    <property role="TrG5h" value="PrebuiltDockerContainer" />
+    <property role="TrG5h" value="ImageInfoForDockerContainer" />
     <property role="MwhBj" value="${module}/icons/docker-logo-loggedout.png" />
     <property role="3GE5qa" value="containers" />
+    <property role="34LRSv" value="image info" />
+    <property role="R4oN_" value="Information about a Docker image, sufficient to pull and run with the image" />
     <ref role="1TJDcQ" node="1D6dZ$xfhyW" resolve="DockerContainer" />
     <node concept="1TJgyi" id="1BdDHvUTkwf" role="1TKVEl">
       <property role="TrG5h" value="isLocal" />
@@ -62,6 +64,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="containers" />
+    <property role="34LRSv" value="DockerContainer" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1D6dZ$xfiv_" role="1TKVEl">
       <property role="TrG5h" value="tag" />
@@ -138,7 +141,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="foundationContainer" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="1D6dZ$xcXJU" resolve="PrebuiltDockerContainer" />
+      <ref role="20lvS9" node="1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="1D6dZ$xfNCh">
@@ -237,7 +240,8 @@
     <property role="TrG5h" value="RunningContainer" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="containers" />
-    <ref role="1TJDcQ" node="1D6dZ$xfhyW" resolve="DockerContainer" />
+    <property role="34LRSv" value="running" />
+    <ref role="1TJDcQ" node="1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
     <node concept="1TJgyj" id="1BdDHvUZPgN" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="image" />
