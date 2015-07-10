@@ -12,6 +12,7 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -64,6 +65,12 @@
     <property role="19KtqR" value="true" />
     <property role="R5$K7" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="59canFNwpDb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="processOptions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="648FhJjeUB7" resolve="ProcessOptions" />
+    </node>
     <node concept="1TJgyj" id="6tX5nBTaziI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="inputs" />
@@ -79,7 +86,7 @@
     <node concept="1TJgyj" id="6tX5nBTaziN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="script" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6tX5nBTaD$x" resolve="Script" />
     </node>
     <node concept="1TJgyj" id="irqYu7yXR0" role="1TKVEi">
@@ -634,11 +641,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="49c3W7NLHXs" resolve="Executor" />
     </node>
-    <node concept="1TJgyj" id="29KXY4rPnan" role="1TKVEi">
+    <node concept="1TJgyj" id="59canFNyUwK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="queue" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="21kmpcSZaiX" resolve="Queue" />
+      <property role="20kJfa" value="processOptions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="648FhJjeUB7" resolve="ProcessOptions" />
     </node>
     <node concept="PrWs8" id="21kmpcThJdl" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -719,35 +726,28 @@
       <ref role="20lvS9" node="3m9W35nx3Yj" resolve="ListElements" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3m26Pihn7K8">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
-    <property role="TrG5h" value="GlobalFileList" />
-    <property role="34LRSv" value="file list" />
-    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListType" />
-    <node concept="1TJgyj" id="3m26Pihn7Mv" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="file" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7Cu" resolve="GlobalFile" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3m26Pihn7g0">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalIntegerType" />
-    <property role="TrG5h" value="GlobalIntegerType" />
+  <node concept="1TIwiD" id="3m26PihhBwN">
+    <property role="TrG5h" value="OutChannels" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3m26PihhBwO" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
-  <node concept="1TIwiD" id="3m26PihlgMf">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalStringExpression" />
-    <property role="34LRSv" value="string" />
-    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
-    <node concept="1TJgyj" id="3m26Pihn7N$" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="string" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7nO" resolve="GlobalStringType" />
+  <node concept="1TIwiD" id="3m26PihhBXV">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalStringType" />
+    <property role="TrG5h" value="RangeOfChars" />
+    <property role="34LRSv" value="range" />
+    <property role="R4oN_" value="creates a range of strings from start to end inclusive as individual emissions" />
+    <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="GlobalStringType" />
+    <node concept="1TJgyi" id="3m26PihhBXW" role="1TKVEl">
+      <property role="TrG5h" value="start" />
+      <ref role="AX2Wp" to="tpee:htXhg4R" resolve="_CharConstant_String" />
+    </node>
+    <node concept="1TJgyi" id="3m26PihhBXY" role="1TKVEl">
+      <property role="TrG5h" value="end" />
+      <ref role="AX2Wp" to="tpee:htXhg4R" resolve="_CharConstant_String" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26PihlgGj">
@@ -762,15 +762,67 @@
       <ref role="20lvS9" node="3m26Pihn7yi" resolve="GlobalBoolean" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3m26Pihn7Cu">
-    <property role="3GE5qa" value="setChannelValues.globalTypes" />
-    <property role="TrG5h" value="GlobalFile" />
-    <property role="34LRSv" value="path" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="3m26Pihn852" role="1TKVEl">
-      <property role="TrG5h" value="path" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+  <node concept="1TIwiD" id="3m26PihlgLm">
+    <property role="3GE5qa" value="setChannelValues" />
+    <property role="TrG5h" value="GlobalIntegerExpression" />
+    <property role="34LRSv" value="int" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
+    <node concept="1TJgyj" id="3m26Pihn7Nw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="integer" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3m26Pihn7g0" resolve="GlobalIntegerType" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3m26PihlgMf">
+    <property role="3GE5qa" value="setChannelValues" />
+    <property role="TrG5h" value="GlobalStringExpression" />
+    <property role="34LRSv" value="string" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
+    <node concept="1TJgyj" id="3m26Pihn7N$" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="string" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3m26Pihn7nO" resolve="GlobalStringType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3m26PihlgPf">
+    <property role="3GE5qa" value="setChannelValues" />
+    <property role="TrG5h" value="GlobalListExpression" />
+    <property role="34LRSv" value="list" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
+    <node concept="1TJgyj" id="3m26Pihn7Ny" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3m26Pihn7B_" resolve="GlobalListType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3m26PihlgQQ">
+    <property role="3GE5qa" value="setChannelValues" />
+    <property role="TrG5h" value="GlobalFileExpression" />
+    <property role="34LRSv" value="file" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
+    <node concept="1TJgyj" id="3m26Pihn7Nu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="file" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3m26Pihn7Cu" resolve="GlobalFileType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3m26Pihn7g0">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalIntegerType" />
+    <property role="TrG5h" value="GlobalIntegerType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3m26Pihn7nO">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalStringType" />
+    <property role="TrG5h" value="GlobalStringType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3m26Pihn7yi">
     <property role="3GE5qa" value="setChannelValues.globalTypes" />
@@ -780,6 +832,37 @@
     <node concept="1TJgyi" id="3m26Pihn850" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3m26Pihn7B_">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
+    <property role="TrG5h" value="GlobalListType" />
+    <property role="34LRSv" value="list" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3m26Pihn7Cu">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
+    <property role="TrG5h" value="GlobalFileType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3m26Pihn852" role="1TKVEl">
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3m26Pihn7F7">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
+    <property role="TrG5h" value="GlobalStringList" />
+    <property role="34LRSv" value="string list" />
+    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListType" />
+    <node concept="1TJgyj" id="3m26Pihn7Ho" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="string" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3m26Pihn7nO" resolve="GlobalStringType" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn7Ii">
@@ -792,6 +875,52 @@
       <property role="20kJfa" value="integer" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="3m26Pihn7g0" resolve="GlobalIntegerType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3m26Pihn7Jd">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
+    <property role="TrG5h" value="GlobalBooleanList" />
+    <property role="34LRSv" value="boolean list" />
+    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListType" />
+    <node concept="1TJgyj" id="3m26Pihn7Je" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="boolean" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3m26Pihn7yi" resolve="GlobalBoolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3m26Pihn7K8">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
+    <property role="TrG5h" value="GlobalFileList" />
+    <property role="34LRSv" value="file list" />
+    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListType" />
+    <node concept="1TJgyj" id="3m26Pihn7Mv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="file" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3m26Pihn7Cu" resolve="GlobalFileType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3m26Pihn7Np">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
+    <property role="TrG5h" value="GlobalList" />
+    <property role="34LRSv" value="list" />
+    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListType" />
+    <node concept="1TJgyj" id="3m26Pihn7Nq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3m26Pihn7B_" resolve="GlobalListType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3m26Pihn81q">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalStringType" />
+    <property role="TrG5h" value="GlobalString" />
+    <property role="34LRSv" value="value" />
+    <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="GlobalStringType" />
+    <node concept="1TJgyi" id="3m26Pihn81r" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn82l">
@@ -809,27 +938,6 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3m26PihhBwN">
-    <property role="TrG5h" value="OutChannels" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3m26PihhBwO" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3m26PihlgQQ">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalFileExpression" />
-    <property role="34LRSv" value="file" />
-    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
-    <node concept="1TJgyj" id="3m26Pihn7Nu" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="file" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7Cu" resolve="GlobalFile" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3m26Pihn84X">
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalIntegerType" />
     <property role="TrG5h" value="GlobalInteger" />
@@ -840,76 +948,6 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3m26Pihn7Jd">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
-    <property role="TrG5h" value="GlobalBooleanList" />
-    <property role="34LRSv" value="boolean list" />
-    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListType" />
-    <node concept="1TJgyj" id="3m26Pihn7Je" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="boolean" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7yi" resolve="GlobalBoolean" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3m26PihlgPf">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalListExpression" />
-    <property role="34LRSv" value="list" />
-    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
-    <node concept="1TJgyj" id="3m26Pihn7Ny" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="list" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7B_" resolve="GlobalListType" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3m26Pihn7F7">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
-    <property role="TrG5h" value="GlobalStringList" />
-    <property role="34LRSv" value="string list" />
-    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListType" />
-    <node concept="1TJgyj" id="3m26Pihn7Ho" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="string" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7nO" resolve="GlobalStringType" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3m26Pihn81q">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalStringType" />
-    <property role="TrG5h" value="GlobalString" />
-    <property role="34LRSv" value="value" />
-    <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="GlobalStringType" />
-    <node concept="1TJgyi" id="3m26Pihn81r" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3m26Pihn7Np">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
-    <property role="TrG5h" value="GlobalList" />
-    <property role="34LRSv" value="list" />
-    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListType" />
-    <node concept="1TJgyj" id="3m26Pihn7Nq" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="list" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7B_" resolve="GlobalListType" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3m26PihlgLm">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalIntegerExpression" />
-    <property role="34LRSv" value="int" />
-    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
-    <node concept="1TJgyj" id="3m26Pihn7Nw" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="integer" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7g0" resolve="GlobalIntegerType" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4Toykm43Ope">
     <property role="3GE5qa" value="setChannelValues.globalTypes" />
     <property role="TrG5h" value="GlobalExpression" />
@@ -917,35 +955,63 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-  <node concept="1TIwiD" id="3m26PihhBXV">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalStringType" />
-    <property role="TrG5h" value="RangeOfChars" />
-    <property role="34LRSv" value="range" />
-    <property role="R4oN_" value="creates a range of strings from start to end inclusive as individual emissions" />
-    <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="GlobalStringType" />
-    <node concept="1TJgyi" id="3m26PihhBXW" role="1TKVEl">
-      <property role="TrG5h" value="start" />
-      <ref role="AX2Wp" to="tpee:htXhg4R" resolve="_CharConstant_String" />
-    </node>
-    <node concept="1TJgyi" id="3m26PihhBXY" role="1TKVEl">
-      <property role="TrG5h" value="end" />
-      <ref role="AX2Wp" to="tpee:htXhg4R" resolve="_CharConstant_String" />
+  <node concept="1TIwiD" id="59canFN3Dy7">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
+    <property role="TrG5h" value="GlobalRemoteFile" />
+    <property role="34LRSv" value="remote file" />
+    <property role="R4oN_" value="file's path, which is located on another system" />
+    <ref role="1TJDcQ" node="3m26Pihn7Cu" resolve="GlobalFileType" />
+  </node>
+  <node concept="1TIwiD" id="59canFN3B7g">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
+    <property role="TrG5h" value="GlobalLocalFile" />
+    <property role="34LRSv" value="local file" />
+    <property role="R4oN_" value="file's path, which is located on your system" />
+    <ref role="1TJDcQ" node="3m26Pihn7Cu" resolve="GlobalFileType" />
+    <node concept="1TJgyi" id="59canFN3Dy8" role="1TKVEl">
+      <property role="TrG5h" value="system" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3m26Pihn7B_">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
-    <property role="TrG5h" value="GlobalListType" />
-    <property role="34LRSv" value="list" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  <node concept="1TIwiD" id="YNIIGPa1iv">
+    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="TrG5h" value="BaseLanguageAdapter" />
+    <property role="34LRSv" value="conditional script" />
+    <property role="R4oN_" value="a script that executes when the condition evaluates to true" />
+    <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
+    <node concept="1TJgyj" id="59canFOdI$K" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="statements" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
+    </node>
   </node>
-  <node concept="1TIwiD" id="3m26Pihn7nO">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalStringType" />
-    <property role="TrG5h" value="GlobalStringType" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
+  <node concept="1TIwiD" id="59canFOCShA">
+    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="TrG5h" value="ConditionalExpressionText" />
+    <property role="34LRSv" value="expression script" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="59canFOCShB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5DmojlqPc7e">
+    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="TrG5h" value="ConditionalVariableRef" />
+    <property role="34LRSv" value="variable" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5DmojlqPc9M" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="5DmojlqPcoT" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="variable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
+    </node>
   </node>
 </model>
 
