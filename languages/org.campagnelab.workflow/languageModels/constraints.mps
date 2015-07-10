@@ -142,6 +142,9 @@
       <concept id="3906442776579549644" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parameterNode" flags="nn" index="Bn53e" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="5676632058862809931" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="in" index="13QW63" />
+      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
+        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
+      </concept>
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
@@ -2014,6 +2017,15 @@
             <property role="3clFbU" value="true" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5CFNYIFfnl7">
+    <ref role="1M2myG" to="iowz:5CFNYIF2_uq" resolve="NewInputChannel" />
+    <node concept="1N5Pfh" id="5CFNYIFfnxv" role="1Mr941">
+      <ref role="1N5Vy1" to="iowz:5CFNYIF2AiO" />
+      <node concept="1dDu$B" id="5CFNYIFDYbM" role="1N6uqs">
+        <ref role="1dDu$A" to="iowz:5CFNYIF2_uq" resolve="NewInputChannel" />
       </node>
     </node>
   </node>
