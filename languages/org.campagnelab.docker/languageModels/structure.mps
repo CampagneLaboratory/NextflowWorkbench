@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="440p" ref="r:a6c7903c-0b83-4bcf-8e49-8f150f2412bf(org.campagnelab.nyosh.interactive.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -257,6 +258,29 @@
     </node>
     <node concept="PrWs8" id="5U_2ytMywgb" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4TFseGE78Pk">
+    <property role="TrG5h" value="DockerPath" />
+    <property role="34LRSv" value="path" />
+    <property role="R4oN_" value="path inside a docker container" />
+    <ref role="1TJDcQ" to="440p:7wWmVpyc6O4" resolve="InteractivePath" />
+    <node concept="1TJgyj" id="4TFseGE79bF" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="dockerContainer" />
+      <ref role="20lvS9" node="1D6dZ$xfhyW" resolve="DockerContainer" />
+    </node>
+    <node concept="PrWs8" id="4TFseGE78QH" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4TFseGE9J$G">
+    <property role="TrG5h" value="DockerCommand" />
+    <property role="34LRSv" value="command" />
+    <property role="R4oN_" value="command available a docker container" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4TFseGE9J$H" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
 </model>

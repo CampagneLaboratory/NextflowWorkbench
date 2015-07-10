@@ -33,6 +33,7 @@
         <language id="f2801650-65d5-424e-bb1b-463a8781b786" fqName="jetbrains.mps.baseLanguage.javadoc" version="1" />
         <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" fqName="jetbrains.mps.baseLanguage.logging" version="0" />
         <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" fqName="jetbrains.mps.baseLanguage.tuples" version="0" />
+        <language id="4caf0310-491e-41f5-8a9b-2006b3a94898" fqName="jetbrains.mps.execution.util" version="0" />
         <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
         <language id="b401a680-8325-4110-8fd3-84331ff25bef" fqName="jetbrains.mps.lang.generator" version="0" />
         <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" fqName="jetbrains.mps.lang.generator.generationContext" version="0" />
@@ -40,6 +41,8 @@
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" fqName="org.campagnelab.docker" version="-1" />
+        <language id="c6567f13-87ab-4686-8f6f-42e8228c0e27" fqName="org.campagnelab.nyosh.gstring" version="0" />
+        <language id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" fqName="org.campagnelab.nyosh.interactive" version="0" />
       </languageVersions>
       <mapping-priorities />
     </generator>
@@ -57,6 +60,10 @@
     <dependency reexport="false">1f5314a5-15b8-491d-89ca-13256a5ead51(org.campagnelab.gobyweb.tags)</dependency>
     <dependency reexport="true">20d83b64-d10f-48d1-990d-513b574c4956(org.campagnelab.background)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
+    <dependency reexport="false">66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43(org.campagnelab.nyosh.interactive)</dependency>
+    <dependency reexport="false">a5e4de53-46a3-44da-aab3-68fdf1c34ed0(jetbrains.mps.console.ideCommands)</dependency>
+    <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
+    <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>c1ba4037-e4db-47d8-8b61-b3c805b648f2(org.campagnelab.ui)</usedLanguage>
@@ -138,7 +145,7 @@
     <language id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" fqName="org.campagnelab.nyosh.environment" version="0" />
     <language id="c1d262c7-5fba-470b-a7ad-87f5e0ae0a99" fqName="org.campagnelab.nyosh.functions" version="0" />
     <language id="c6567f13-87ab-4686-8f6f-42e8228c0e27" fqName="org.campagnelab.nyosh.gstring" version="0" />
-    <language id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" fqName="org.campagnelab.nyosh.interactive" version="0" />
+    <language id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" fqName="org.campagnelab.nyosh.interactive" version="-1" />
     <language id="0202ed86-955d-4227-9c20-377dd6b1f9ff" fqName="org.campagnelab.nyosh.lib" version="0" />
     <language id="901f5cf3-dc77-4c1e-bc5a-6382baee28b4" fqName="org.campagnelab.textoutput" version="0" />
     <language id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" fqName="org.campagnelab.ui" version="0" />
@@ -147,6 +154,7 @@
   </languageVersions>
   <extendedLanguages>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
+    <extendedLanguage>66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43(org.campagnelab.nyosh.interactive)</extendedLanguage>
   </extendedLanguages>
 </language>
 

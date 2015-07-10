@@ -69,6 +69,7 @@
     </language>
     <language id="82ffebe3-3685-4fd9-b560-0c1d348d295c" name="org.campagnelab.logger">
       <concept id="1925991773568778810" name="org.campagnelab.logger.structure.Message" flags="ng" index="1lnzPE">
+        <property id="681402515497888013" name="detailedPresentation" index="1ceZFR" />
         <property id="1925991773568778812" name="message" index="1lnzPG" />
       </concept>
       <concept id="1925991773566712428" name="org.campagnelab.logger.structure.Logger" flags="ng" index="1lvGkW">
@@ -83,6 +84,16 @@
         <child id="331977639694004412" name="pluginSystemRootDirectory" index="23NxHr" />
         <child id="331977639693048103" name="availableVariables" index="23Rrb0" />
         <child id="6386724582662879362" name="requires" index="NgwMD" />
+      </concept>
+    </language>
+    <language id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" name="org.campagnelab.nyosh.interactive">
+      <concept id="8663900622043507972" name="org.campagnelab.nyosh.interactive.structure.InteractivePath" flags="ng" index="q33qM">
+        <child id="8663900622043508056" name="path" index="q33rI" />
+      </concept>
+      <concept id="8663900622043508058" name="org.campagnelab.nyosh.interactive.structure.PathPart" flags="ng" index="q33rG">
+        <property id="8663900622043508062" name="part" index="q33rC" />
+        <property id="8663900622047510234" name="isRoot" index="qkilG" />
+        <property id="8663900622046639162" name="isDirectory" index="qn6Yc" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -179,6 +190,7 @@
         <property id="1893262236499912677" name="tag" index="VuL0s" />
         <property id="1893262236499912678" name="userName" index="VuL0v" />
       </concept>
+      <concept id="5650734312792558932" name="org.campagnelab.docker.structure.DockerPath" flags="ng" index="1$tZQZ" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
       <concept id="2329585396107819892" name="org.campagnelab.workflow.structure.NumCPUs" flags="ng" index="oDubB">
@@ -480,6 +492,77 @@
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
+    <node concept="NgwLd" id="4uxaUi8HzI9" role="2ulM7a">
+      <node concept="1XFuE8" id="4uxaUi8HzIa" role="23NxHr">
+        <property role="1XFuEG" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins" />
+      </node>
+      <node concept="19SGf9" id="4uxaUi8HzIc" role="3Y$PkS">
+        <node concept="19SUe$" id="4uxaUi8HzId" role="19SJt6" />
+      </node>
+      <node concept="3jXLau" id="4uxaUi8HzI_" role="NgwMD">
+        <ref role="3jXLav" node="1D6dZ$x23eL" resolve="GOBY" />
+      </node>
+      <node concept="1IqXV7" id="4uxaUi8H_os" role="23Rrb0">
+        <property role="2rInPY" value="/private/tmp/com.apple.launchd.7nGPBrfBp9/Render" />
+        <property role="TrG5h" value="Apple_PubSub_Socket_Render" />
+        <property role="3vthGj" value="STRING" />
+      </node>
+      <node concept="1IqXV7" id="4uxaUi8H_ou" role="23Rrb0">
+        <property role="2rInPY" value="/private/tmp/com.apple.launchd.IQjRWGky2j/org.macosforge.xquartz:0" />
+        <property role="TrG5h" value="DISPLAY" />
+        <property role="3vthGj" value="STRING" />
+      </node>
+      <node concept="1IqXV7" id="4uxaUi8H_ow" role="23Rrb0">
+        <property role="2rInPY" value="/Users/fac2003" />
+        <property role="TrG5h" value="HOME" />
+        <property role="3vthGj" value="STRING" />
+      </node>
+      <node concept="1IqXV7" id="4uxaUi8H_oy" role="23Rrb0">
+        <property role="2rInPY" value="fac2003" />
+        <property role="TrG5h" value="LOGNAME" />
+        <property role="3vthGj" value="STRING" />
+      </node>
+      <node concept="1IqXV7" id="4uxaUi8H_o$" role="23Rrb0">
+        <property role="2rInPY" value="/usr/bin:/bin:/usr/sbin:/sbin" />
+        <property role="TrG5h" value="PATH" />
+        <property role="3vthGj" value="STRING" />
+      </node>
+      <node concept="1IqXV7" id="4uxaUi8H_oA" role="23Rrb0">
+        <property role="2rInPY" value="/bin/bash" />
+        <property role="TrG5h" value="SHELL" />
+        <property role="3vthGj" value="STRING" />
+      </node>
+      <node concept="1IqXV7" id="4uxaUi8H_oC" role="23Rrb0">
+        <property role="2rInPY" value="/private/tmp/com.apple.launchd.mWXtfXC70y/Listeners" />
+        <property role="TrG5h" value="SSH_AUTH_SOCK" />
+        <property role="3vthGj" value="STRING" />
+      </node>
+      <node concept="1IqXV7" id="4uxaUi8H_oE" role="23Rrb0">
+        <property role="2rInPY" value="/var/folders/fc/7z2dj0594zxbw1qsgvtydyvw0000gp/T/" />
+        <property role="TrG5h" value="TMPDIR" />
+        <property role="3vthGj" value="STRING" />
+      </node>
+      <node concept="1IqXV7" id="4uxaUi8H_oG" role="23Rrb0">
+        <property role="2rInPY" value="fac2003" />
+        <property role="TrG5h" value="USER" />
+        <property role="3vthGj" value="STRING" />
+      </node>
+      <node concept="1IqXV7" id="4uxaUi8H_oI" role="23Rrb0">
+        <property role="2rInPY" value="0x0" />
+        <property role="TrG5h" value="XPC_FLAGS" />
+        <property role="3vthGj" value="STRING" />
+      </node>
+      <node concept="1IqXV7" id="4uxaUi8H_oK" role="23Rrb0">
+        <property role="2rInPY" value="com.jetbrains.intellij.42632" />
+        <property role="TrG5h" value="XPC_SERVICE_NAME" />
+        <property role="3vthGj" value="STRING" />
+      </node>
+      <node concept="1IqXV7" id="4uxaUi8H_oM" role="23Rrb0">
+        <property role="2rInPY" value="0x1F6:0x0:0x0" />
+        <property role="TrG5h" value="__CF_USER_TEXT_ENCODING" />
+        <property role="3vthGj" value="STRING" />
+      </node>
+    </node>
     <node concept="1uY1Ls" id="6IBo8PYLtHk" role="2ulM7n">
       <node concept="16pRw0" id="6IBo8PYLtHl" role="1uY1Lt">
         <property role="TrG5h" value="fileCh" />
@@ -488,15 +571,37 @@
     <node concept="3Y$Zt1" id="34JZ5vsuI0l" role="2ulM7a">
       <node concept="19SGf9" id="34JZ5vsuI0m" role="3Y$PkS">
         <node concept="19SUe$" id="34JZ5vsz_hP" role="19SJt6">
-          <property role="19SUeA" value="java -jar /Users/jasonkurs/Downloads/2.3.5/goby.jar -m suggest-position-slices  -n 200 -o slicingPlan.tsv \n  &gt; /dev/null\t" />
+          <property role="19SUeA" value="java -jar /Users/jasonkurs/Downloads/2.3.5/goby.jar -m suggest-position-slices  -n 200 -o slicingPlan.tsv &#10;  &gt; /dev/null&#9;" />
         </node>
-        <node concept="3Y$Zt1" id="34JZ5vsx7x3" role="19SJt6">
-          <node concept="19SGf9" id="34JZ5vsx7x5" role="3Y$PkS">
-            <node concept="19SUe$" id="34JZ5vsx7x6" role="19SJt6" />
+        <node concept="1$tZQZ" id="4TFseGE9CgO" role="19SJt6">
+          <node concept="q33rG" id="4TFseGE9GVn" role="q33rI">
+            <property role="q33rC" value="dirname" />
+            <property role="qn6Yc" value="true" />
+            <property role="qkilG" value="false" />
+          </node>
+          <node concept="q33rG" id="4TFseGE9GVq" role="q33rI">
+            <property role="q33rC" value="" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
           </node>
         </node>
-        <node concept="19SUe$" id="648FhJi$_HI" role="19SJt6">
-          <property role="19SUeA" value="\nsplit -l 1 slicingPlan.tsv index_\n\n" />
+        <node concept="19SUe$" id="4TFseGE9CgN" role="19SJt6">
+          <property role="19SUeA" value="&#10;split -l 1 slicingPlan.tsv index_&#10;" />
+        </node>
+        <node concept="1$tZQZ" id="4TFseGE9GVQ" role="19SJt6">
+          <node concept="q33rG" id="4TFseGE9GVR" role="q33rI">
+            <property role="q33rC" value="" />
+            <property role="qn6Yc" value="true" />
+            <property role="qkilG" value="false" />
+          </node>
+          <node concept="q33rG" id="4TFseGE9GWd" role="q33rI">
+            <property role="q33rC" value="dirname" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="4TFseGE9GVP" role="19SJt6">
+          <property role="19SUeA" value=" &#10;&#10;&#10;" />
         </node>
       </node>
     </node>
@@ -505,8 +610,15 @@
         <property role="TrG5h" value="'index_*'" />
       </node>
     </node>
-    <node concept="VtuK3" id="1BdDHvV4mLI" role="234boB">
+    <node concept="GbKB8" id="4uxaUi8HzZz" role="234boB">
       <property role="VuL0s" value="latest" />
+      <property role="3yMj3R" value="sleep 1000" />
+      <property role="GbyUj" value="rocker-metar" />
+      <property role="3zaeVo" value="true" />
+      <property role="VuL0v" value="fac2003" />
+      <property role="TrG5h" value="interactive" />
+      <property role="1vm7qE" value="true" />
+      <ref role="3zcJb$" node="4uxaUi8HzZ$" resolve="image" />
     </node>
   </node>
   <node concept="2ulcR8" id="34JZ5vsmm0i">
@@ -524,7 +636,11 @@
     <node concept="3Y$Zt1" id="34JZ5vs_Ul8" role="2ulM7a">
       <node concept="19SGf9" id="34JZ5vs_Ul9" role="3Y$PkS">
         <node concept="19SUe$" id="34JZ5vs_Ula" role="19SJt6">
-          <property role="19SUeA" value="cat index_* &gt; xfdf &#10;&#10;" />
+          <property role="19SUeA" value="cat index_* &gt; xfdf &#10;" />
+        </node>
+        <node concept="23RE8j" id="4uxaUi8H3gN" role="19SJt6" />
+        <node concept="19SUe$" id="4uxaUi8H3gM" role="19SJt6">
+          <property role="19SUeA" value="&#10;" />
         </node>
         <node concept="3Y$Zt1" id="1psOhWnMn0h" role="19SJt6">
           <node concept="19SGf9" id="1psOhWnMn0j" role="3Y$PkS">
@@ -6603,267 +6719,6 @@
     </node>
   </node>
   <node concept="1lvGkW" id="VMSWAF0h1v">
-    <node concept="1lnzPE" id="VMSWAFlYQ0" role="1lvGkX">
-      <property role="1lnzPG" value="daaa37358747: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYQ1" role="1lvGkX">
-      <property role="1lnzPG" value="9809fd3cbe8e: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYQ2" role="1lvGkX">
-      <property role="1lnzPG" value="30d7dd0a3b57: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYQ3" role="1lvGkX">
-      <property role="1lnzPG" value="e22f9076658e: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYQ4" role="1lvGkX">
-      <property role="1lnzPG" value="4b7eb1f91fca: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYQ5" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYQ6" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYQ7" role="1lvGkX">
-      <property role="1lnzPG" value="Status: Image is up to date for fac2003/rocker-metar:latest" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYRI" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYRJ" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFlYRK" role="1lvGkX">
-      <property role="1lnzPG" value="with name=PJJIJYCUQF" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFnwPK" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFnwPL" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:1.4.0" />
-    </node>
-    <node concept="1lnzPE" id="VMSWAFnwPM" role="1lvGkX">
-      <property role="1lnzPG" value="with name=VFBYBYFHGI" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLCI1v" role="1lvGkX">
-      <property role="1lnzPG" value="Starting container " />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLCI35" role="1lvGkX">
-      <property role="1lnzPG" value="Error response from daemon: No such container: interactive" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLCI36" role="1lvGkX">
-      <property role="1lnzPG" value="time=&quot;2015-07-08T16:58:41-04:00&quot; level=&quot;fatal&quot; msg=&quot;Error: failed to start one or more containers&quot; " />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLCIsQ" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLCIsR" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:1.4.0" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLCIsS" role="1lvGkX">
-      <property role="1lnzPG" value="with name=OLRJXDSDKB" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf2t" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker pull image " />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf2u" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf44" role="1lvGkX">
-      <property role="1lnzPG" value="Pulling repository fac2003/rocker-metar" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf45" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Pulling image (latest) from fac2003/rocker-metar" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf46" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Pulling image (latest) from fac2003/rocker-metar, endpoint: https://registry-1.docker.io/v1/" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf47" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Pulling dependent layers" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf48" role="1lvGkX">
-      <property role="1lnzPG" value="511136ea3c5a: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf49" role="1lvGkX">
-      <property role="1lnzPG" value="d338bb63f151: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4a" role="1lvGkX">
-      <property role="1lnzPG" value="65688f7c61c4: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4b" role="1lvGkX">
-      <property role="1lnzPG" value="0fd733e8d724: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4c" role="1lvGkX">
-      <property role="1lnzPG" value="0468b9322615: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4d" role="1lvGkX">
-      <property role="1lnzPG" value="5ea9ae3d3d68: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4e" role="1lvGkX">
-      <property role="1lnzPG" value="15796e780ac5: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4f" role="1lvGkX">
-      <property role="1lnzPG" value="d8b3ccf99925: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4g" role="1lvGkX">
-      <property role="1lnzPG" value="b0482ab12284: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4h" role="1lvGkX">
-      <property role="1lnzPG" value="e815c21da931: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4i" role="1lvGkX">
-      <property role="1lnzPG" value="f015cfd25eab: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4j" role="1lvGkX">
-      <property role="1lnzPG" value="ae4f2ebcea93: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4k" role="1lvGkX">
-      <property role="1lnzPG" value="119cf916a7b6: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4l" role="1lvGkX">
-      <property role="1lnzPG" value="4e2cdcddef37: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4m" role="1lvGkX">
-      <property role="1lnzPG" value="1b3c4aae7b76: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4n" role="1lvGkX">
-      <property role="1lnzPG" value="80199069ce97: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4o" role="1lvGkX">
-      <property role="1lnzPG" value="17d3a7cbd684: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4p" role="1lvGkX">
-      <property role="1lnzPG" value="578a0a017866: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4q" role="1lvGkX">
-      <property role="1lnzPG" value="a97660ee018c: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4r" role="1lvGkX">
-      <property role="1lnzPG" value="5bd3bcf9e3c6: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4s" role="1lvGkX">
-      <property role="1lnzPG" value="f0a43ca4151c: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4t" role="1lvGkX">
-      <property role="1lnzPG" value="daaa37358747: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4u" role="1lvGkX">
-      <property role="1lnzPG" value="9809fd3cbe8e: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4v" role="1lvGkX">
-      <property role="1lnzPG" value="30d7dd0a3b57: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4w" role="1lvGkX">
-      <property role="1lnzPG" value="e22f9076658e: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4x" role="1lvGkX">
-      <property role="1lnzPG" value="4b7eb1f91fca: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4y" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4z" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf4$" role="1lvGkX">
-      <property role="1lnzPG" value="Status: Image is up to date for fac2003/rocker-metar:latest" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf6c" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf6d" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLGf6e" role="1lvGkX">
-      <property role="1lnzPG" value="with name=interactive" />
-    </node>
-    <node concept="1lnzPE" id="7VaNOCLHz62" role="1lvGkX">
-      <property role="1lnzPG" value="" />
-    </node>
-    <node concept="1lnzPE" id="4MfZ7_pHuQD" role="1lvGkX">
-      <property role="1lnzPG" value="Stopping container " />
-    </node>
-    <node concept="1lnzPE" id="4MfZ7_pHuSf" role="1lvGkX">
-      <property role="1lnzPG" value="interactive" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q2S" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker pull image " />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q2T" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4v" role="1lvGkX">
-      <property role="1lnzPG" value="Pulling repository fac2003/rocker-metar" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4w" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Pulling image (latest) from fac2003/rocker-metar" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4x" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Pulling image (latest) from fac2003/rocker-metar, endpoint: https://registry-1.docker.io/v1/" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4y" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Pulling dependent layers" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4z" role="1lvGkX">
-      <property role="1lnzPG" value="511136ea3c5a: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4$" role="1lvGkX">
-      <property role="1lnzPG" value="d338bb63f151: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4_" role="1lvGkX">
-      <property role="1lnzPG" value="65688f7c61c4: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4A" role="1lvGkX">
-      <property role="1lnzPG" value="0fd733e8d724: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4B" role="1lvGkX">
-      <property role="1lnzPG" value="0468b9322615: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4C" role="1lvGkX">
-      <property role="1lnzPG" value="5ea9ae3d3d68: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4D" role="1lvGkX">
-      <property role="1lnzPG" value="15796e780ac5: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4E" role="1lvGkX">
-      <property role="1lnzPG" value="d8b3ccf99925: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4F" role="1lvGkX">
-      <property role="1lnzPG" value="b0482ab12284: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4G" role="1lvGkX">
-      <property role="1lnzPG" value="e815c21da931: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4H" role="1lvGkX">
-      <property role="1lnzPG" value="f015cfd25eab: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4I" role="1lvGkX">
-      <property role="1lnzPG" value="ae4f2ebcea93: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4J" role="1lvGkX">
-      <property role="1lnzPG" value="119cf916a7b6: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4K" role="1lvGkX">
-      <property role="1lnzPG" value="4e2cdcddef37: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4L" role="1lvGkX">
-      <property role="1lnzPG" value="1b3c4aae7b76: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4M" role="1lvGkX">
-      <property role="1lnzPG" value="80199069ce97: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4N" role="1lvGkX">
-      <property role="1lnzPG" value="17d3a7cbd684: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4O" role="1lvGkX">
-      <property role="1lnzPG" value="578a0a017866: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4P" role="1lvGkX">
-      <property role="1lnzPG" value="a97660ee018c: Download complete" />
-    </node>
-    <node concept="1lnzPE" id="4pljpe$4q4Q" role="1lvGkX">
-      <property role="1lnzPG" value="5bd3bcf9e3c6: Download complete" />
-    </node>
     <node concept="1lnzPE" id="4pljpe$4q4R" role="1lvGkX">
       <property role="1lnzPG" value="f0a43ca4151c: Download complete" />
     </node>
@@ -6906,15 +6761,313 @@
     <node concept="1lnzPE" id="4pljpe$5fEU" role="1lvGkX">
       <property role="1lnzPG" value="interactive" />
     </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJu" role="1lvGkX">
+      <property role="1lnzPG" value="About to reload variables." />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJw" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=Apple_PubSub_Socket_Render" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJy" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=DISPLAY" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJ$" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=HOME" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJA" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=LOGNAME" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJC" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=PATH" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJE" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=SHELL" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJG" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=SSH_AUTH_SOCK" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJI" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=TMPDIR" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJK" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=USER" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJM" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=XPC_FLAGS" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJO" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=XPC_SERVICE_NAME" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJQ" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=__CF_USER_TEXT_ENCODING" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzJR" role="1lvGkX">
+      <property role="1lnzPG" value="Reloading resource=GOBY" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzNQ" role="1lvGkX">
+      <property role="1lnzPG" value="About to reload variables." />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzNS" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=Apple_PubSub_Socket_Render" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzNU" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=DISPLAY" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzNW" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=HOME" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzNY" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=LOGNAME" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzO0" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=PATH" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzO2" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=SHELL" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzO4" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=SSH_AUTH_SOCK" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzO6" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=TMPDIR" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzO8" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=USER" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzOa" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=XPC_FLAGS" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzOc" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=XPC_SERVICE_NAME" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzOe" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=__CF_USER_TEXT_ENCODING" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzOf" role="1lvGkX">
+      <property role="1lnzPG" value="Reloading resource=GOBY" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzSG" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker pull image " />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzSH" role="1lvGkX">
+      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzVS" role="1lvGkX">
+      <property role="1lnzPG" value="Pulling repository fac2003/rocker-metar" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzVT" role="1lvGkX">
+      <property role="1lnzPG" value="0eef498fe749: Pulling image (latest) from fac2003/rocker-metar" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzVU" role="1lvGkX">
+      <property role="1lnzPG" value="0eef498fe749: Pulling image (latest) from fac2003/rocker-metar, endpoint: https://registry-1.docker.io/v1/" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzVV" role="1lvGkX">
+      <property role="1lnzPG" value="0eef498fe749: Pulling dependent layers" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzVW" role="1lvGkX">
+      <property role="1lnzPG" value="511136ea3c5a: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzVX" role="1lvGkX">
+      <property role="1lnzPG" value="d338bb63f151: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzVY" role="1lvGkX">
+      <property role="1lnzPG" value="65688f7c61c4: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzVZ" role="1lvGkX">
+      <property role="1lnzPG" value="0fd733e8d724: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzW0" role="1lvGkX">
+      <property role="1lnzPG" value="0468b9322615: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzW1" role="1lvGkX">
+      <property role="1lnzPG" value="5ea9ae3d3d68: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzW2" role="1lvGkX">
+      <property role="1lnzPG" value="15796e780ac5: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzW3" role="1lvGkX">
+      <property role="1lnzPG" value="d8b3ccf99925: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzW4" role="1lvGkX">
+      <property role="1lnzPG" value="b0482ab12284: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzW5" role="1lvGkX">
+      <property role="1lnzPG" value="e815c21da931: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzW6" role="1lvGkX">
+      <property role="1lnzPG" value="f015cfd25eab: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzW7" role="1lvGkX">
+      <property role="1lnzPG" value="ae4f2ebcea93: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzW8" role="1lvGkX">
+      <property role="1lnzPG" value="119cf916a7b6: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzW9" role="1lvGkX">
+      <property role="1lnzPG" value="4e2cdcddef37: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWa" role="1lvGkX">
+      <property role="1lnzPG" value="1b3c4aae7b76: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWb" role="1lvGkX">
+      <property role="1lnzPG" value="80199069ce97: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWc" role="1lvGkX">
+      <property role="1lnzPG" value="17d3a7cbd684: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWd" role="1lvGkX">
+      <property role="1lnzPG" value="578a0a017866: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWe" role="1lvGkX">
+      <property role="1lnzPG" value="a97660ee018c: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWf" role="1lvGkX">
+      <property role="1lnzPG" value="5bd3bcf9e3c6: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWg" role="1lvGkX">
+      <property role="1lnzPG" value="f0a43ca4151c: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWh" role="1lvGkX">
+      <property role="1lnzPG" value="daaa37358747: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWi" role="1lvGkX">
+      <property role="1lnzPG" value="9809fd3cbe8e: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWj" role="1lvGkX">
+      <property role="1lnzPG" value="30d7dd0a3b57: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWk" role="1lvGkX">
+      <property role="1lnzPG" value="e22f9076658e: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWl" role="1lvGkX">
+      <property role="1lnzPG" value="4b7eb1f91fca: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWm" role="1lvGkX">
+      <property role="1lnzPG" value="0eef498fe749: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWn" role="1lvGkX">
+      <property role="1lnzPG" value="0eef498fe749: Download complete" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzWo" role="1lvGkX">
+      <property role="1lnzPG" value="Status: Image is up to date for fac2003/rocker-metar:latest" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzZ_" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker run " />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzZA" role="1lvGkX">
+      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8HzZB" role="1lvGkX">
+      <property role="1lnzPG" value="with name=interactive" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H$2P" role="1lvGkX">
+      <property role="1lnzPG" value="time=&quot;2015-07-09T14:57:38-04:00&quot; level=&quot;fatal&quot; msg=&quot;Error response from daemon: Conflict. The name \&quot;interactive\&quot; is already in use by container fe13cbbf7249. You have to delete (or rename) that container to be able to reuse that name.&quot; " />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_or" role="1lvGkX">
+      <property role="1lnzPG" value="About to reload variables." />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_ot" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=Apple_PubSub_Socket_Render" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_ov" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=DISPLAY" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_ox" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=HOME" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_oz" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=LOGNAME" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_o_" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=PATH" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_oB" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=SHELL" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_oD" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=SSH_AUTH_SOCK" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_oF" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=TMPDIR" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_oH" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=USER" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_oJ" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=XPC_FLAGS" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_oL" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=XPC_SERVICE_NAME" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_oN" role="1lvGkX">
+      <property role="1lnzPG" value="found variable=__CF_USER_TEXT_ENCODING" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4uxaUi8H_oO" role="1lvGkX">
+      <property role="1lnzPG" value="Reloading resource=GOBY" />
+      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    </node>
+    <node concept="1lnzPE" id="4TFseGE9HTK" role="1lvGkX">
+      <property role="1lnzPG" value="Starting container " />
+    </node>
+    <node concept="1lnzPE" id="4TFseGE9HWV" role="1lvGkX">
+      <property role="1lnzPG" value="Error response from daemon: no such id: interactive" />
+    </node>
+    <node concept="1lnzPE" id="4TFseGE9HWW" role="1lvGkX">
+      <property role="1lnzPG" value="time=&quot;2015-07-09T17:02:25-04:00&quot; level=&quot;fatal&quot; msg=&quot;Error: failed to start one or more containers&quot; " />
+    </node>
+    <node concept="1lnzPE" id="4TFseGE9IoD" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker run " />
+    </node>
+    <node concept="1lnzPE" id="4TFseGE9IoE" role="1lvGkX">
+      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
+    </node>
+    <node concept="1lnzPE" id="4TFseGE9IoF" role="1lvGkX">
+      <property role="1lnzPG" value="with name=interactive" />
+    </node>
   </node>
   <node concept="2EEQw1" id="7MTH03m5und">
     <property role="2EEQw2" value="/usr/local/bin/docker" />
     <property role="2E$TAj" value="--tls --tlscacert=/Users/fac2003/.docker/machine/machines/dev/ca.pem --tlscert=/Users/fac2003/.docker/machine/machines/dev/cert.pem --tlskey=/Users/fac2003/.docker/machine/machines/dev/key.pem -H=tcp://192.168.99.100:2376" />
-  </node>
-  <node concept="2E_JVc" id="VMSWAFiabX">
-    <property role="GSh9r" value="fac2003/rocker-metar:latest" />
-    <property role="2E_JEh" value="rocker-metar" />
-    <property role="TrG5h" value="image" />
   </node>
   <node concept="GbKB8" id="VMSWAFiac1">
     <property role="TrG5h" value="LOIIOPLSWP" />
@@ -6923,11 +7076,6 @@
     <property role="3yMj3R" value="sleep 1000" />
     <ref role="3zcJb$" node="VMSWAFiabX" resolve="image" />
   </node>
-  <node concept="2E_JVc" id="VMSWAFibhP">
-    <property role="GSh9r" value="fac2003/rocker-metar:latest" />
-    <property role="2E_JEh" value="rocker-metar" />
-    <property role="TrG5h" value="image" />
-  </node>
   <node concept="GbKB8" id="VMSWAFibhT">
     <property role="TrG5h" value="ABSWBWCVGL" />
     <property role="GbyUj" value="rocker-metar" />
@@ -6935,22 +7083,12 @@
     <property role="3yMj3R" value="sleep 1000" />
     <ref role="3zcJb$" node="VMSWAFibhP" resolve="image" />
   </node>
-  <node concept="2E_JVc" id="VMSWAFlYRH">
-    <property role="GSh9r" value="fac2003/rocker-metar:latest" />
-    <property role="2E_JEh" value="rocker-metar" />
-    <property role="TrG5h" value="image" />
-  </node>
   <node concept="GbKB8" id="VMSWAFlYRL">
     <property role="TrG5h" value="PJJIJYCUQF" />
     <property role="GbyUj" value="rocker-metar" />
     <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="sleep 1000" />
     <ref role="3zcJb$" node="VMSWAFlYRH" resolve="image" />
-  </node>
-  <node concept="2E_JVc" id="VMSWAFnwPJ">
-    <property role="GSh9r" value="fac2003/rocker-metar:1.4.0" />
-    <property role="2E_JEh" value="rocker-metar" />
-    <property role="TrG5h" value="image" />
   </node>
   <node concept="GbKB8" id="VMSWAFnwPN">
     <property role="TrG5h" value="VFBYBYFHGI" />
@@ -6966,11 +7104,6 @@
     <property role="3yMj3R" value="sleep 1000" />
     <ref role="3zcJb$" node="VMSWAFnwPJ" resolve="image" />
   </node>
-  <node concept="2E_JVc" id="7VaNOCLGf6b">
-    <property role="GSh9r" value="fac2003/rocker-metar:latest" />
-    <property role="2E_JEh" value="rocker-metar" />
-    <property role="TrG5h" value="image" />
-  </node>
   <node concept="GbKB8" id="7VaNOCLGf6f">
     <property role="TrG5h" value="interactive" />
     <property role="GbyUj" value="rocker-metar" />
@@ -6978,17 +7111,31 @@
     <property role="3yMj3R" value="sleep 1000" />
     <ref role="3zcJb$" node="7VaNOCLGf6b" resolve="image" />
   </node>
-  <node concept="2E_JVc" id="4pljpe$4q6A">
-    <property role="GSh9r" value="fac2003/rocker-metar:latest" />
-    <property role="2E_JEh" value="rocker-metar" />
-    <property role="TrG5h" value="image" />
-  </node>
   <node concept="GbKB8" id="4pljpe$4q6E">
     <property role="TrG5h" value="interactive" />
     <property role="GbyUj" value="rocker-metar" />
     <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="sleep 1000" />
     <ref role="3zcJb$" node="4pljpe$4q6A" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="4uxaUi8HzZ$">
+    <property role="GSh9r" value="fac2003/rocker-metar:latest" />
+    <property role="2E_JEh" value="rocker-metar" />
+    <property role="TrG5h" value="image" />
+  </node>
+  <node concept="GbKB8" id="4uxaUi8HzZC">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="rocker-metar" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="4uxaUi8HzZ$" resolve="image" />
+  </node>
+  <node concept="GbKB8" id="4TFseGE9IoG">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="rocker-metar" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="4uxaUi8HzZ$" resolve="image" />
   </node>
 </model>
 
