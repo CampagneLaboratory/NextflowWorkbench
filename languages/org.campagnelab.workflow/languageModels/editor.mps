@@ -43,6 +43,7 @@
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -601,6 +602,7 @@
     <ref role="1XX52x" to="iowz:70dPcAeBye8" resolve="RichScript" />
     <node concept="3F1sOY" id="70dPcAeCQJe" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:70dPcAeBC7L" />
+      <ref role="1k5W1q" node="4MfZ7_pOGNL" resolve="ScriptBody" />
     </node>
   </node>
   <node concept="24kQdi" id="70dPcAeDqfD">
@@ -1417,6 +1419,14 @@
         <property role="Vb096" value="lightGray" />
         <node concept="1iSF2X" id="5yyd2HFN6xP" role="VblUZ">
           <property role="1iTho6" value="777777" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="4MfZ7_pOGNL" role="V601i">
+      <property role="TrG5h" value="ScriptBody" />
+      <node concept="Veino" id="4MfZ7_pOGO6" role="3F10Kt">
+        <node concept="1iSF2X" id="4MfZ7_pOGO8" role="VblUZ">
+          <property role="1iTho6" value="CCA37A" />
         </node>
       </node>
     </node>
