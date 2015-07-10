@@ -647,11 +647,7 @@
     <node concept="3Y$Zt1" id="34JZ5vs_Ul8" role="2ulM7a">
       <node concept="19SGf9" id="34JZ5vs_Ul9" role="3Y$PkS">
         <node concept="19SUe$" id="34JZ5vs_Ula" role="19SJt6">
-          <property role="19SUeA" value="cat index_* &gt; xfdf &#10;" />
-        </node>
-        <node concept="23RE8j" id="4uxaUi8H3gN" role="19SJt6" />
-        <node concept="19SUe$" id="4uxaUi8H3gM" role="19SJt6">
-          <property role="19SUeA" value="&#10;" />
+          <property role="19SUeA" value="cat index_* &gt; x&#10;" />
         </node>
         <node concept="1$tZQZ" id="1m401f$ebSN" role="19SJt6">
           <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
