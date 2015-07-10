@@ -5,6 +5,12 @@
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker" version="-1" />
+    <use id="c6567f13-87ab-4686-8f6f-42e8228c0e27" name="org.campagnelab.nyosh.gstring" version="0" />
+    <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" name="org.campagnelab.nyosh.interactive" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
   </languages>
   <imports>
     <import index="whle" ref="r:8e4fd1b7-1955-43a4-ace6-aaf9d13814f8(org.campagnelab.logger.structure)" />
@@ -103,7 +109,6 @@
     </language>
     <language id="82ffebe3-3685-4fd9-b560-0c1d348d295c" name="org.campagnelab.logger">
       <concept id="1925991773568778810" name="org.campagnelab.logger.structure.Message" flags="ng" index="1lnzPE">
-        <property id="681402515497888013" name="detailedPresentation" index="1ceZFR" />
         <property id="1925991773568778812" name="message" index="1lnzPG" />
       </concept>
       <concept id="1925991773566712428" name="org.campagnelab.logger.structure.Logger" flags="ng" index="1lvGkW">
@@ -224,7 +229,9 @@
         <property id="1893262236499912677" name="tag" index="VuL0s" />
         <property id="1893262236499912678" name="userName" index="VuL0v" />
       </concept>
-      <concept id="5650734312792558932" name="org.campagnelab.docker.structure.DockerPath" flags="ng" index="1$tZQZ" />
+      <concept id="5650734312792558932" name="org.campagnelab.docker.structure.DockerPath" flags="ng" index="1$tZQZ">
+        <reference id="5650734312792560363" name="dockerContainer" index="1$tY80" />
+      </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
@@ -627,16 +634,6 @@
   </node>
   <node concept="2ulcR8" id="34JZ5vsmm0i">
     <property role="TrG5h" value="analyze" />
-    <node concept="GbKB8" id="4pljpe$4q6_" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="3yMj3R" value="sleep 1000" />
-      <property role="GbyUj" value="rocker-metar" />
-      <property role="3zaeVo" value="true" />
-      <property role="VuL0v" value="fac2003" />
-      <property role="TrG5h" value="interactive" />
-      <property role="1vm7qE" value="true" />
-      <ref role="3zcJb$" node="4pljpe$4q6A" resolve="image" />
-    </node>
     <node concept="1uY1Ls" id="34JZ5vs$nPw" role="2ulM79">
       <node concept="16pRw0" id="34JZ5vs$nPy" role="1uY1Lt">
         <property role="TrG5h" value="'*.txt'" />
@@ -656,17 +653,123 @@
         <node concept="19SUe$" id="4uxaUi8H3gM" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
-        <node concept="3Y$Zt1" id="1psOhWnMn0h" role="19SJt6">
-          <node concept="19SGf9" id="1psOhWnMn0j" role="3Y$PkS">
-            <node concept="19SUe$" id="1psOhWnMn0_" role="19SJt6">
-              <property role="19SUeA" value="" />
-            </node>
+        <node concept="1$tZQZ" id="1m401f$ebSN" role="19SJt6">
+          <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
+          <node concept="q33rG" id="1m401f$ebSO" role="q33rI">
+            <property role="q33rC" value="" />
+            <property role="qn6Yc" value="true" />
+            <property role="qkilG" value="false" />
+          </node>
+          <node concept="q33rG" id="1m401f$hKP8" role="q33rI">
+            <property role="q33rC" value="bin" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
+          </node>
+          <node concept="q33rG" id="1m401f$hKQT" role="q33rI">
+            <property role="q33rC" value="boot" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
+          </node>
+          <node concept="q33rG" id="1m401f$j8vB" role="q33rI">
+            <property role="q33rC" value="etc" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
           </node>
         </node>
-        <node concept="19SUe$" id="1psOhWn$0CC" role="19SJt6">
-          <property role="19SUeA" value="\n\n\n" />
+        <node concept="19SUe$" id="1m401f$j8RF" role="19SJt6" />
+        <node concept="1$tZQZ" id="1m401f$j8z7" role="19SJt6">
+          <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
+          <node concept="q33rG" id="1m401f$j8_3" role="q33rI">
+            <property role="q33rC" value="t" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
+          </node>
+          <node concept="q33rG" id="1m401f$j8Vf" role="q33rI">
+            <property role="q33rC" value="dev" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
+          </node>
+          <node concept="q33rG" id="1m401f$j90k" role="q33rI">
+            <property role="q33rC" value="lib64" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
+          </node>
+          <node concept="q33rG" id="1m401f$j90o" role="q33rI">
+            <property role="q33rC" value="" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
+          </node>
         </node>
+        <node concept="19SUe$" id="1m401f$j8z6" role="19SJt6">
+          <property role="19SUeA" value="&#10;" />
+        </node>
+        <node concept="1$tZQZ" id="1m401f$ms3K" role="19SJt6">
+          <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
+          <node concept="q33rG" id="1m401f$ms3M" role="q33rI">
+            <property role="q33rC" value="" />
+            <property role="qn6Yc" value="true" />
+            <property role="qkilG" value="true" />
+          </node>
+          <node concept="q33rG" id="1m401f$ms7G" role="q33rI">
+            <property role="q33rC" value="bin" />
+            <property role="qn6Yc" value="true" />
+            <property role="qkilG" value="false" />
+          </node>
+          <node concept="q33rG" id="1m401f$ms9s" role="q33rI">
+            <property role="q33rC" value="" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="1m401f$ms3J" role="19SJt6">
+          <property role="19SUeA" value="&#10;" />
+        </node>
+        <node concept="1$tZQZ" id="1m401f$k1QD" role="19SJt6">
+          <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
+          <node concept="q33rG" id="1m401f$k1QE" role="q33rI">
+            <property role="q33rC" value="" />
+            <property role="qn6Yc" value="true" />
+            <property role="qkilG" value="false" />
+          </node>
+          <node concept="q33rG" id="1m401f$k1SH" role="q33rI">
+            <property role="q33rC" value="boot" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
+          </node>
+          <node concept="q33rG" id="1m401f$k1SK" role="q33rI">
+            <property role="q33rC" value="" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="1m401f$k1QC" role="19SJt6">
+          <property role="19SUeA" value="&#10;" />
+        </node>
+        <node concept="1$tZQZ" id="1m401f$j927" role="19SJt6">
+          <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
+          <node concept="q33rG" id="1m401f$j946" role="q33rI">
+            <property role="q33rC" value="bin" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
+          </node>
+          <node concept="q33rG" id="1m401f$j95P" role="q33rI">
+            <property role="q33rC" value="boot" />
+            <property role="qn6Yc" value="false" />
+            <property role="qkilG" value="false" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="1m401f$j929" role="19SJt6" />
       </node>
+    </node>
+    <node concept="GbKB8" id="56asy6tpjxG" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="3yMj3R" value="sleep 1000" />
+      <property role="GbyUj" value="rocker-metar" />
+      <property role="3zaeVo" value="true" />
+      <property role="VuL0v" value="fac2003" />
+      <property role="TrG5h" value="interactive" />
+      <property role="1vm7qE" value="true" />
+      <ref role="3zcJb$" node="56asy6tpjxH" resolve="image" />
     </node>
   </node>
   <node concept="2ulcR8" id="6t646FqPoxG">
@@ -858,350 +961,308 @@
     </node>
   </node>
   <node concept="1lvGkW" id="VMSWAF0h1v">
-    <node concept="1lnzPE" id="4pljpe$4q4W" role="1lvGkX">
-      <property role="1lnzPG" value="4b7eb1f91fca: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j8Hw" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4pljpe$4q4X" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j8J6" role="1lvGkX">
+      <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="4pljpe$4q4Y" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j8J7" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4pljpe$4q4Z" role="1lvGkX">
-      <property role="1lnzPG" value="Status: Image is up to date for fac2003/rocker-metar:latest" />
+    <node concept="1lnzPE" id="1m401f$j8J8" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="4pljpe$4q6B" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
+    <node concept="1lnzPE" id="1m401f$j8J9" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: e91aba490ebda5d118e773c93d3ebb7ba3f1011ac7d9f4195ad246e3c7ebbe71" />
     </node>
-    <node concept="1lnzPE" id="4pljpe$4q6C" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
+    <node concept="1lnzPE" id="1m401f$j8Ja" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4pljpe$4q6D" role="1lvGkX">
-      <property role="1lnzPG" value="with name=interactive" />
+    <node concept="1lnzPE" id="1m401f$j8KK" role="1lvGkX">
+      <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="4pljpe$5fDk" role="1lvGkX">
-      <property role="1lnzPG" value="Starting container " />
+    <node concept="1lnzPE" id="1m401f$j8KL" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4pljpe$5fEU" role="1lvGkX">
-      <property role="1lnzPG" value="interactive" />
+    <node concept="1lnzPE" id="1m401f$j8KM" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJu" role="1lvGkX">
-      <property role="1lnzPG" value="About to reload variables." />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8KN" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 9d52b8f89d47333c47dfb2ebd9858e734110f1d4c239427c6a3771fac28292c7" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJw" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=Apple_PubSub_Socket_Render" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8KO" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJy" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=DISPLAY" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8Mq" role="1lvGkX">
+      <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJ$" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=HOME" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8Mr" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJA" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=LOGNAME" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8Ms" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJC" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=PATH" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8Mt" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: c63c4f3bcb57caa952073f351b36440e0907628089c5b34b137aa499b678bd3f" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJE" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=SHELL" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8Mu" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJG" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=SSH_AUTH_SOCK" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8O4" role="1lvGkX">
+      <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJI" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=TMPDIR" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8O5" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJK" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=USER" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8O6" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJM" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=XPC_FLAGS" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8O7" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: aa64007c7f15983185cb182097361b206a869a66ddb791faa695e83d4effbfa8" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJO" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=XPC_SERVICE_NAME" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8O8" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJQ" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=__CF_USER_TEXT_ENCODING" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8PI" role="1lvGkX">
+      <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzJR" role="1lvGkX">
-      <property role="1lnzPG" value="Reloading resource=GOBY" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8PJ" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzNQ" role="1lvGkX">
-      <property role="1lnzPG" value="About to reload variables." />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8PK" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzNS" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=Apple_PubSub_Socket_Render" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8PL" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 91277aef2489b94b4aa5e410af3352e15f95b7c04263f1b63ba339565fa814b6" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzNU" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=DISPLAY" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8PM" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzNW" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=HOME" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8RS" role="1lvGkX">
+      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzNY" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=LOGNAME" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8RT" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzO0" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=PATH" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8RU" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzO2" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=SHELL" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8RV" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: e47bea5b538042fe91836bba350d96b3489e450f420093748d27e6b633810dd4" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzO4" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=SSH_AUTH_SOCK" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8RW" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzO6" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=TMPDIR" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8T_" role="1lvGkX">
+      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzO8" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=USER" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8TA" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzOa" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=XPC_FLAGS" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8TB" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzOc" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=XPC_SERVICE_NAME" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8TC" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: ba80cbd5f947c28e8a580bc464c1a9975a2430a19b6eb761524aeef5f84743e9" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzOe" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=__CF_USER_TEXT_ENCODING" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8TD" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzOf" role="1lvGkX">
-      <property role="1lnzPG" value="Reloading resource=GOBY" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$j8Vm" role="1lvGkX">
+      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzSG" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker pull image " />
+    <node concept="1lnzPE" id="1m401f$j8Vn" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzSH" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
+    <node concept="1lnzPE" id="1m401f$j8Vo" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzVS" role="1lvGkX">
-      <property role="1lnzPG" value="Pulling repository fac2003/rocker-metar" />
+    <node concept="1lnzPE" id="1m401f$j8Vp" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 3c4606cc8f8c54bb46afe9b7740e434c70a98277a74e24cc18a47211bd622a66" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzVT" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Pulling image (latest) from fac2003/rocker-metar" />
+    <node concept="1lnzPE" id="1m401f$j8Vq" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzVU" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Pulling image (latest) from fac2003/rocker-metar, endpoint: https://registry-1.docker.io/v1/" />
+    <node concept="1lnzPE" id="1m401f$j8X0" role="1lvGkX">
+      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzVV" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Pulling dependent layers" />
+    <node concept="1lnzPE" id="1m401f$j8X1" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzVW" role="1lvGkX">
-      <property role="1lnzPG" value="511136ea3c5a: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j8X2" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzVX" role="1lvGkX">
-      <property role="1lnzPG" value="d338bb63f151: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j8X3" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 8d6a47c0a1d37d79043ae02d5f176cd6d70256f0d53e58e059790fc72c21f418" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzVY" role="1lvGkX">
-      <property role="1lnzPG" value="65688f7c61c4: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j8X4" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzVZ" role="1lvGkX">
-      <property role="1lnzPG" value="0fd733e8d724: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j8YE" role="1lvGkX">
+      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzW0" role="1lvGkX">
-      <property role="1lnzPG" value="0468b9322615: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j8YF" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzW1" role="1lvGkX">
-      <property role="1lnzPG" value="5ea9ae3d3d68: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j8YG" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzW2" role="1lvGkX">
-      <property role="1lnzPG" value="15796e780ac5: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j8YH" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 7198b1c2d0cb19328e4d097c59f41c32644f48cbb22bab27f717bcf36a0fbc63" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzW3" role="1lvGkX">
-      <property role="1lnzPG" value="d8b3ccf99925: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j8YI" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzW4" role="1lvGkX">
-      <property role="1lnzPG" value="b0482ab12284: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j90t" role="1lvGkX">
+      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzW5" role="1lvGkX">
-      <property role="1lnzPG" value="e815c21da931: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j90u" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzW6" role="1lvGkX">
-      <property role="1lnzPG" value="f015cfd25eab: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j90v" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzW7" role="1lvGkX">
-      <property role="1lnzPG" value="ae4f2ebcea93: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j90w" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: fd861434138de9e785bcf17f6bea7d7c80cbb9f2a11f4d71a2dd4416fce3128f" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzW8" role="1lvGkX">
-      <property role="1lnzPG" value="119cf916a7b6: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j90x" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzW9" role="1lvGkX">
-      <property role="1lnzPG" value="4e2cdcddef37: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j92s" role="1lvGkX">
+      <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWa" role="1lvGkX">
-      <property role="1lnzPG" value="1b3c4aae7b76: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j92t" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWb" role="1lvGkX">
-      <property role="1lnzPG" value="80199069ce97: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j92u" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWc" role="1lvGkX">
-      <property role="1lnzPG" value="17d3a7cbd684: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j92v" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 1564a8fafbf4b71e0c74c0b4bd37a9b8e46e613da3ae68d23ae935ec2033d947" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWd" role="1lvGkX">
-      <property role="1lnzPG" value="578a0a017866: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j92w" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWe" role="1lvGkX">
-      <property role="1lnzPG" value="a97660ee018c: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j94b" role="1lvGkX">
+      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWf" role="1lvGkX">
-      <property role="1lnzPG" value="5bd3bcf9e3c6: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j94c" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWg" role="1lvGkX">
-      <property role="1lnzPG" value="f0a43ca4151c: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j94d" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWh" role="1lvGkX">
-      <property role="1lnzPG" value="daaa37358747: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j94e" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: c7d7868a10fcea038bad48cfd2582345bcd486143cce6b0b8a36a697c57b716f" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWi" role="1lvGkX">
-      <property role="1lnzPG" value="9809fd3cbe8e: Download complete" />
+    <node concept="1lnzPE" id="1m401f$j94f" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWj" role="1lvGkX">
-      <property role="1lnzPG" value="30d7dd0a3b57: Download complete" />
+    <node concept="1lnzPE" id="1m401f$k1R3" role="1lvGkX">
+      <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWk" role="1lvGkX">
-      <property role="1lnzPG" value="e22f9076658e: Download complete" />
+    <node concept="1lnzPE" id="1m401f$k1R4" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWl" role="1lvGkX">
-      <property role="1lnzPG" value="4b7eb1f91fca: Download complete" />
+    <node concept="1lnzPE" id="1m401f$k1R5" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWm" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Download complete" />
+    <node concept="1lnzPE" id="1m401f$k1R6" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 6036e02a7ee268a2623f53f652b4960cf3fbba041fc670e9bb05f9709cebee8a" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWn" role="1lvGkX">
-      <property role="1lnzPG" value="0eef498fe749: Download complete" />
+    <node concept="1lnzPE" id="1m401f$k1R7" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzWo" role="1lvGkX">
-      <property role="1lnzPG" value="Status: Image is up to date for fac2003/rocker-metar:latest" />
+    <node concept="1lnzPE" id="1m401f$k1SO" role="1lvGkX">
+      <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzZ_" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
+    <node concept="1lnzPE" id="1m401f$k1SP" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzZA" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
+    <node concept="1lnzPE" id="1m401f$k1SQ" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8HzZB" role="1lvGkX">
-      <property role="1lnzPG" value="with name=interactive" />
+    <node concept="1lnzPE" id="1m401f$k1SR" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 870ab16312012a969e1d0472a9cb5d24e0721b7a527d816baf1828efb6a79974" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H$2P" role="1lvGkX">
-      <property role="1lnzPG" value="time=&quot;2015-07-09T14:57:38-04:00&quot; level=&quot;fatal&quot; msg=&quot;Error response from daemon: Conflict. The name \&quot;interactive\&quot; is already in use by container fe13cbbf7249. You have to delete (or rename) that container to be able to reuse that name.&quot; " />
+    <node concept="1lnzPE" id="1m401f$k1SS" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_or" role="1lvGkX">
-      <property role="1lnzPG" value="About to reload variables." />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms4h" role="1lvGkX">
+      <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_ot" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=Apple_PubSub_Socket_Render" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms4i" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_ov" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=DISPLAY" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms4j" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_ox" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=HOME" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms4k" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: e427fd554fa0e687c180f606b5ec39902b008aa40b9c1a0616f608cb1977647f" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_oz" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=LOGNAME" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms4l" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_o_" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=PATH" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms62" role="1lvGkX">
+      <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_oB" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=SHELL" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms63" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_oD" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=SSH_AUTH_SOCK" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms64" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_oF" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=TMPDIR" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms65" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 17ad55a11e9044131faa5624c01eba8f5eb481d906c0a40daa9b8c481c647e2c" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_oH" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=USER" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms66" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_oJ" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=XPC_FLAGS" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms7M" role="1lvGkX">
+      <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_oL" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=XPC_SERVICE_NAME" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms7N" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_oN" role="1lvGkX">
-      <property role="1lnzPG" value="found variable=__CF_USER_TEXT_ENCODING" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms7O" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="4uxaUi8H_oO" role="1lvGkX">
-      <property role="1lnzPG" value="Reloading resource=GOBY" />
-      <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.reloadVariables" />
+    <node concept="1lnzPE" id="1m401f$ms7P" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 234f3451390cfaa84912b2aee7601b88a8094d8d9bac25418fbd21cffef1095e" />
     </node>
-    <node concept="1lnzPE" id="4TFseGE9HTK" role="1lvGkX">
-      <property role="1lnzPG" value="Starting container " />
+    <node concept="1lnzPE" id="1m401f$ms7Q" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="4TFseGE9HWV" role="1lvGkX">
-      <property role="1lnzPG" value="Error response from daemon: no such id: interactive" />
+    <node concept="1lnzPE" id="1m401f$ms9w" role="1lvGkX">
+      <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="4TFseGE9HWW" role="1lvGkX">
-      <property role="1lnzPG" value="time=&quot;2015-07-09T17:02:25-04:00&quot; level=&quot;fatal&quot; msg=&quot;Error: failed to start one or more containers&quot; " />
+    <node concept="1lnzPE" id="1m401f$ms9x" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="4TFseGE9IoD" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
+    <node concept="1lnzPE" id="1m401f$ms9y" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="4TFseGE9IoE" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: fac2003/rocker-metar:latest" />
+    <node concept="1lnzPE" id="1m401f$ms9z" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: aaba95fc381b666f2237bdc97892ed0320075a860af3bfccde43faa12b8dba15" />
     </node>
-    <node concept="1lnzPE" id="4TFseGE9IoF" role="1lvGkX">
-      <property role="1lnzPG" value="with name=interactive" />
+    <node concept="1lnzPE" id="1m401f$ms9$" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
-    <node concept="1lnzPE" id="6aaEnU94dWw" role="1lvGkX">
-      <property role="1lnzPG" value="Stopping container " />
+    <node concept="1lnzPE" id="1m401f$msba" role="1lvGkX">
+      <property role="1lnzPG" value="path=/bin" />
     </node>
-    <node concept="1lnzPE" id="56asy6t1AEy" role="1lvGkX">
-      <property role="1lnzPG" value="Stopping container " />
+    <node concept="1lnzPE" id="1m401f$msbb" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="56asy6t1AG9" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
+    <node concept="1lnzPE" id="1m401f$msbc" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /bin" />
     </node>
-    <node concept="1lnzPE" id="56asy6t1AGa" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: rocker-metar" />
+    <node concept="1lnzPE" id="1m401f$msbd" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: f593aa1fea1c42b99b05aae880e03704101e0ef90f75c3c46ecde827eedd4b25" />
     </node>
-    <node concept="1lnzPE" id="56asy6t1AGb" role="1lvGkX">
-      <property role="1lnzPG" value="with name=OLRJXDSDKB" />
+    <node concept="1lnzPE" id="1m401f$msbe" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
     </node>
   </node>
   <node concept="GbKB8" id="VMSWAFibhT">
@@ -7319,6 +7380,18 @@
     <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="sleep 1000" />
     <ref role="3zcJb$" node="56asy6t1AG8" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="56asy6tpjxH">
+    <property role="GSh9r" value="fac2003/rocker-metar:latest" />
+    <property role="2E_JEh" value="rocker-metar" />
+    <property role="TrG5h" value="image" />
+  </node>
+  <node concept="GbKB8" id="56asy6tpjxL">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="rocker-metar" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="56asy6tpjxH" resolve="image" />
   </node>
 </model>
 
