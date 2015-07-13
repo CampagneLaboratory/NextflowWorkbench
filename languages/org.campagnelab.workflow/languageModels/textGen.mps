@@ -1667,12 +1667,6 @@
               </node>
               <node concept="3eNFk2" id="5Dmojlqsg4X" role="3eNLev">
                 <node concept="3clFbS" id="5Dmojlqsg4Z" role="3eOfB_">
-                  <node concept="34ab3g" id="5Dmojlqsyef" role="3cqZAp">
-                    <property role="35gtTG" value="info" />
-                    <node concept="Xl_RD" id="5Dmojlqsyeh" role="34bqiv">
-                      <property role="Xl_RC" value="BLA HIT" />
-                    </node>
-                  </node>
                   <node concept="lc7rE" id="5Dmojlqsmw_" role="3cqZAp">
                     <node concept="1bDJIP" id="5Dmojlqsm_2" role="lcghm">
                       <ref role="1rvKf6" node="59canFPcp4s" resolve="baseLanguageAdapter" />

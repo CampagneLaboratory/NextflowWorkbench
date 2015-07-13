@@ -148,12 +148,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7gAPJCERwXU" resolve="InputChannel" />
     </node>
-    <node concept="1TJgyj" id="5CFNYIF2M_8" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="newInChannel" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5CFNYIF2_uq" resolve="NewInputChannel" />
-    </node>
     <node concept="1TJgyj" id="7gAPJCESMIs" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="outChannel" />
@@ -1022,23 +1016,6 @@
       <property role="20kJfa" value="variable" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5CFNYIF2_uq">
-    <property role="TrG5h" value="NewInputChannel" />
-    <property role="34LRSv" value="new input channel" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5CFNYIF2_HB" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="functions" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3m9W35nCwTK" resolve="ChannelFunctions" />
-    </node>
-    <node concept="1TJgyj" id="5CFNYIF2AiO" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="connectedTo" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3m26PihhBwN" resolve="OutChannels" />
     </node>
   </node>
   <node concept="1TIwiD" id="33IVfFaApTg">

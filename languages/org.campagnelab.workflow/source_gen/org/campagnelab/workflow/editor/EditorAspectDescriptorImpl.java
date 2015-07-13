@@ -91,70 +91,68 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 37:
         return Collections.<ConceptEditor>singletonList(new Memory_Editor());
       case 38:
-        return Collections.<ConceptEditor>singletonList(new NewInputChannel_Editor());
-      case 39:
         return Collections.<ConceptEditor>singletonList(new NextflowConfig_Editor());
-      case 40:
+      case 39:
         return Collections.<ConceptEditor>singletonList(new NumCPUs_Editor());
-      case 41:
+      case 40:
         return Collections.<ConceptEditor>singletonList(new OutputChannel_Editor());
-      case 42:
+      case 41:
         return Collections.<ConceptEditor>singletonList(new Penv_Editor());
-      case 43:
+      case 42:
         return Collections.<ConceptEditor>singletonList(new Process_Editor());
-      case 44:
+      case 43:
         return Collections.<ConceptEditor>singletonList(new ProcessRef_Editor());
-      case 45:
+      case 44:
         return Collections.<ConceptEditor>singletonList(new Queue_Editor());
-      case 46:
+      case 45:
         return Collections.<ConceptEditor>singletonList(new QueueElement_Editor());
-      case 47:
+      case 46:
         return Collections.<ConceptEditor>singletonList(new RangeOfCharLiterals_Editor());
-      case 48:
+      case 47:
         return Collections.<ConceptEditor>singletonList(new RangeOfIntegerLiterals_Editor());
-      case 49:
+      case 48:
         return Collections.<ConceptEditor>singletonList(new Retry_Editor());
-      case 50:
+      case 49:
         return Collections.<ConceptEditor>singletonList(new RichScript_Editor());
-      case 51:
+      case 50:
         return Collections.<ConceptEditor>singletonList(new SGE_Editor());
-      case 52:
+      case 51:
         return Collections.<ConceptEditor>singletonList(new ScriptBooleanArgs_Editor());
-      case 53:
+      case 52:
         return Collections.<ConceptEditor>singletonList(new ScriptIntegerArgs_Editor());
-      case 54:
+      case 53:
         return Collections.<ConceptEditor>singletonList(new ScriptListArgs_Editor());
-      case 55:
+      case 54:
         return Collections.<ConceptEditor>singletonList(new ScriptStringArgs_Editor());
-      case 56:
+      case 55:
         return Collections.<ConceptEditor>singletonList(new String_Editor());
-      case 57:
+      case 56:
         return Collections.<ConceptEditor>singletonList(new StringChannel_Editor());
-      case 58:
+      case 57:
         return Collections.<ConceptEditor>singletonList(new StringElement_Editor());
-      case 59:
+      case 58:
         return Collections.<ConceptEditor>singletonList(new TimeAllowed_Editor());
-      case 60:
+      case 59:
         return Collections.<ConceptEditor>singletonList(new ToList_Editor());
-      case 61:
+      case 60:
         return Collections.<ConceptEditor>singletonList(new ToSortedList_Editor());
-      case 62:
+      case 61:
         return Collections.<ConceptEditor>singletonList(new Tuple_Editor());
-      case 63:
+      case 62:
         return Collections.<ConceptEditor>singletonList(new TupleChannel_Editor());
-      case 64:
+      case 63:
         return Collections.<ConceptEditor>singletonList(new ValueFromWorkflowRef_Editor());
-      case 65:
+      case 64:
         return Collections.<ConceptEditor>singletonList(new ValueInAChannelRef_Editor());
-      case 66:
+      case 65:
         return Collections.<ConceptEditor>singletonList(new Workflow_Editor());
-      case 67:
+      case 66:
         return Collections.<ConceptEditor>singletonList(new WorkflowBoolean_Editor());
-      case 68:
+      case 67:
         return Collections.<ConceptEditor>singletonList(new WorkflowInteger_Editor());
-      case 69:
+      case 68:
         return Collections.<ConceptEditor>singletonList(new WorkflowList_Editor());
-      case 70:
+      case 69:
         return Collections.<ConceptEditor>singletonList(new WorkflowString_Editor());
       default:
     }
@@ -165,5 +163,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.workflow.structure.BaseLanguageAdapter", "org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.BooleanChannel", "org.campagnelab.workflow.structure.BooleanElement", "org.campagnelab.workflow.structure.ChannelType", "org.campagnelab.workflow.structure.ClusterOptions", "org.campagnelab.workflow.structure.Collate", "org.campagnelab.workflow.structure.ConditionalExpressionText", "org.campagnelab.workflow.structure.ConditionalVariableRef", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.FileChannel", "org.campagnelab.workflow.structure.Flatten", "org.campagnelab.workflow.structure.GlobalBooleanExpression", "org.campagnelab.workflow.structure.GlobalBooleanLiteral", "org.campagnelab.workflow.structure.GlobalBooleanLiteralList", "org.campagnelab.workflow.structure.GlobalChannel", "org.campagnelab.workflow.structure.GlobalFileExpression", "org.campagnelab.workflow.structure.GlobalFileLiteralList", "org.campagnelab.workflow.structure.GlobalIntegerExpression", "org.campagnelab.workflow.structure.GlobalIntegerLiteral", "org.campagnelab.workflow.structure.GlobalIntegerLiteralList", "org.campagnelab.workflow.structure.GlobalListExpression", "org.campagnelab.workflow.structure.GlobalListLiteral", "org.campagnelab.workflow.structure.GlobalLocalFilePath", "org.campagnelab.workflow.structure.GlobalRemoteFilePath", "org.campagnelab.workflow.structure.GlobalStringExpression", "org.campagnelab.workflow.structure.GlobalStringLiteral", "org.campagnelab.workflow.structure.GlobalStringLiteralList", "org.campagnelab.workflow.structure.Ignore", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.IntegerChannel", "org.campagnelab.workflow.structure.IntegerElement", "org.campagnelab.workflow.structure.List", "org.campagnelab.workflow.structure.ListChannel", "org.campagnelab.workflow.structure.ListElement", "org.campagnelab.workflow.structure.Local", "org.campagnelab.workflow.structure.Memory", "org.campagnelab.workflow.structure.NewInputChannel", "org.campagnelab.workflow.structure.NextflowConfig", "org.campagnelab.workflow.structure.NumCPUs", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.Penv", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.Queue", "org.campagnelab.workflow.structure.QueueElement", "org.campagnelab.workflow.structure.RangeOfCharLiterals", "org.campagnelab.workflow.structure.RangeOfIntegerLiterals", "org.campagnelab.workflow.structure.Retry", "org.campagnelab.workflow.structure.RichScript", "org.campagnelab.workflow.structure.SGE", "org.campagnelab.workflow.structure.ScriptBooleanArgs", "org.campagnelab.workflow.structure.ScriptIntegerArgs", "org.campagnelab.workflow.structure.ScriptListArgs", "org.campagnelab.workflow.structure.ScriptStringArgs", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.StringChannel", "org.campagnelab.workflow.structure.StringElement", "org.campagnelab.workflow.structure.TimeAllowed", "org.campagnelab.workflow.structure.ToList", "org.campagnelab.workflow.structure.ToSortedList", "org.campagnelab.workflow.structure.Tuple", "org.campagnelab.workflow.structure.TupleChannel", "org.campagnelab.workflow.structure.ValueFromWorkflowRef", "org.campagnelab.workflow.structure.ValueInAChannelRef", "org.campagnelab.workflow.structure.Workflow", "org.campagnelab.workflow.structure.WorkflowBoolean", "org.campagnelab.workflow.structure.WorkflowInteger", "org.campagnelab.workflow.structure.WorkflowList", "org.campagnelab.workflow.structure.WorkflowString"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.workflow.structure.BaseLanguageAdapter", "org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.BooleanChannel", "org.campagnelab.workflow.structure.BooleanElement", "org.campagnelab.workflow.structure.ChannelType", "org.campagnelab.workflow.structure.ClusterOptions", "org.campagnelab.workflow.structure.Collate", "org.campagnelab.workflow.structure.ConditionalExpressionText", "org.campagnelab.workflow.structure.ConditionalVariableRef", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.FileChannel", "org.campagnelab.workflow.structure.Flatten", "org.campagnelab.workflow.structure.GlobalBooleanExpression", "org.campagnelab.workflow.structure.GlobalBooleanLiteral", "org.campagnelab.workflow.structure.GlobalBooleanLiteralList", "org.campagnelab.workflow.structure.GlobalChannel", "org.campagnelab.workflow.structure.GlobalFileExpression", "org.campagnelab.workflow.structure.GlobalFileLiteralList", "org.campagnelab.workflow.structure.GlobalIntegerExpression", "org.campagnelab.workflow.structure.GlobalIntegerLiteral", "org.campagnelab.workflow.structure.GlobalIntegerLiteralList", "org.campagnelab.workflow.structure.GlobalListExpression", "org.campagnelab.workflow.structure.GlobalListLiteral", "org.campagnelab.workflow.structure.GlobalLocalFilePath", "org.campagnelab.workflow.structure.GlobalRemoteFilePath", "org.campagnelab.workflow.structure.GlobalStringExpression", "org.campagnelab.workflow.structure.GlobalStringLiteral", "org.campagnelab.workflow.structure.GlobalStringLiteralList", "org.campagnelab.workflow.structure.Ignore", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.IntegerChannel", "org.campagnelab.workflow.structure.IntegerElement", "org.campagnelab.workflow.structure.List", "org.campagnelab.workflow.structure.ListChannel", "org.campagnelab.workflow.structure.ListElement", "org.campagnelab.workflow.structure.Local", "org.campagnelab.workflow.structure.Memory", "org.campagnelab.workflow.structure.NextflowConfig", "org.campagnelab.workflow.structure.NumCPUs", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.Penv", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.Queue", "org.campagnelab.workflow.structure.QueueElement", "org.campagnelab.workflow.structure.RangeOfCharLiterals", "org.campagnelab.workflow.structure.RangeOfIntegerLiterals", "org.campagnelab.workflow.structure.Retry", "org.campagnelab.workflow.structure.RichScript", "org.campagnelab.workflow.structure.SGE", "org.campagnelab.workflow.structure.ScriptBooleanArgs", "org.campagnelab.workflow.structure.ScriptIntegerArgs", "org.campagnelab.workflow.structure.ScriptListArgs", "org.campagnelab.workflow.structure.ScriptStringArgs", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.StringChannel", "org.campagnelab.workflow.structure.StringElement", "org.campagnelab.workflow.structure.TimeAllowed", "org.campagnelab.workflow.structure.ToList", "org.campagnelab.workflow.structure.ToSortedList", "org.campagnelab.workflow.structure.Tuple", "org.campagnelab.workflow.structure.TupleChannel", "org.campagnelab.workflow.structure.ValueFromWorkflowRef", "org.campagnelab.workflow.structure.ValueInAChannelRef", "org.campagnelab.workflow.structure.Workflow", "org.campagnelab.workflow.structure.WorkflowBoolean", "org.campagnelab.workflow.structure.WorkflowInteger", "org.campagnelab.workflow.structure.WorkflowList", "org.campagnelab.workflow.structure.WorkflowString"};
 }
