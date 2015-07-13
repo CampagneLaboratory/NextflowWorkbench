@@ -120,10 +120,9 @@
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
         <child id="5930160417388206667" name="processOptions" index="2xNrcL" />
       </concept>
-      <concept id="5930160417380659664" name="org.campagnelab.workflow.structure.GlobalLocalFilePath" flags="ng" index="2xg_yE">
-        <property id="5930160417380669576" name="system" index="2xgF7M" />
+      <concept id="5930160417380669575" name="org.campagnelab.workflow.structure.GlobalFilePath" flags="ng" index="2xgF7X">
+        <property id="571300755983255909" name="path" index="2VDI9B" />
       </concept>
-      <concept id="5930160417380669575" name="org.campagnelab.workflow.structure.GlobalRemoteFilePath" flags="ng" index="2xgF7X" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
         <child id="6992028756512319947" name="processOptions" index="2McKjg" />
@@ -159,9 +158,6 @@
       </concept>
       <concept id="3855674281012525970" name="org.campagnelab.workflow.structure.GlobalIntegerLiteralList" flags="ng" index="2$RA36">
         <child id="3855674281012525971" name="integer" index="2$RA37" />
-      </concept>
-      <concept id="3855674281012525598" name="org.campagnelab.workflow.structure.GlobalFileContainer" flags="ng" index="2$RA5a">
-        <property id="3855674281012527426" name="path" index="2$RDCm" />
       </concept>
       <concept id="3855674281012525767" name="org.campagnelab.workflow.structure.GlobalStringLiteralList" flags="ng" index="2$RA6j">
         <child id="3855674281012525912" name="string" index="2$RA0c" />
@@ -293,12 +289,11 @@
     <node concept="1CVceo" id="5Sz2Ie0VFbM" role="2$L6iY">
       <property role="TrG5h" value="fileCh" />
       <node concept="2$PLry" id="59canFN7QR0" role="2$L62I">
-        <node concept="2xgF7X" id="7b7Ia6OpqCj" role="2$RAua">
-          <property role="2$RDCm" value="awefwae" />
+        <node concept="2xgF7X" id="vHEKaWuHOY" role="2$RAua">
+          <property role="2VDI9B" value="awefawef" />
         </node>
-        <node concept="2xg_yE" id="59canFNtJtV" role="2$RAua">
-          <property role="2$RDCm" value="faewfwa" />
-          <property role="2xgF7M" value="ujhui" />
+        <node concept="2xgF7X" id="vHEKaWuHQn" role="2$RAua">
+          <property role="2VDI9B" value="eareg" />
         </node>
       </node>
     </node>
@@ -318,6 +313,14 @@
       <property role="TrG5h" value="GBE" />
       <node concept="2$PL17" id="5Sz2Ie0VBp7" role="2$L62I">
         <node concept="2$RAf6" id="5Sz2Ie0VBp9" role="2$RAu8" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="vHEKaWiRyP" role="2$L6iY">
+      <property role="TrG5h" value="remoteFile" />
+      <node concept="2$PLry" id="vHEKaWiRAN" role="2$L62I">
+        <node concept="2xgF7X" id="vHEKaWuHPO" role="2$RAua">
+          <property role="2VDI9B" value="fawefw" />
+        </node>
       </node>
     </node>
     <node concept="1CVceo" id="673qGN$syV4" role="2$L6iY">
@@ -366,9 +369,9 @@
           <node concept="2$RA2p" id="5TwkIb4L$3t" role="2$RAue">
             <node concept="2$RAf6" id="5TwkIb4L$3v" role="2$RA2q" />
           </node>
-          <node concept="2$RAts" id="5TwkIb4LC9K" role="2$RAue">
-            <node concept="2xgF7X" id="5TwkIb4LKDD" role="2$RAvb">
-              <property role="2$RDCm" value="path" />
+          <node concept="2$RAts" id="vHEKaWuM1L" role="2$RAue">
+            <node concept="2xgF7X" id="vHEKaWuM1N" role="2$RAvb">
+              <property role="2VDI9B" value="/this/is/a/file" />
             </node>
           </node>
         </node>
@@ -473,7 +476,7 @@
       <node concept="19SGf9" id="6YYJWE30TP3" role="3Y$PkS">
         <node concept="19SUe$" id="6YYJWE30TPa" role="19SJt6" />
         <node concept="3YE7tV" id="6YYJWE30TP9" role="19SJt6">
-          <ref role="3YE7sm" node="6YYJWE30TOY" resolve="file" />
+          <ref role="3YE7sm" node="vHEKaW471$" resolve="bools" />
         </node>
         <node concept="19SUe$" id="6YYJWE30TPb" role="19SJt6">
           <property role="19SUeA" value="\n" />

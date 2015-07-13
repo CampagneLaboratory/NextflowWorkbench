@@ -1467,35 +1467,13 @@
     </node>
   </node>
   <node concept="24kQdi" id="59canFN3Dyf">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
-    <ref role="1XX52x" to="iowz:59canFN3Dy7" resolve="GlobalRemoteFilePath" />
+    <property role="3GE5qa" value="setChannelValues.globalTypes" />
+    <ref role="1XX52x" to="iowz:59canFN3Dy7" resolve="GlobalFilePath" />
     <node concept="3EZMnI" id="59canFN3DZ1" role="2wV5jI">
-      <node concept="3F0A7n" id="59canFN3DZ8" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:3m26Pihn852" resolve="path" />
+      <node concept="3F0A7n" id="vHEKaWoMi8" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:vHEKaWiO__" resolve="path" />
       </node>
       <node concept="l2Vlx" id="59canFN3DZ4" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="59canFN3Dym">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
-    <ref role="1XX52x" to="iowz:59canFN3B7g" resolve="GlobalLocalFilePath" />
-    <node concept="3EZMnI" id="59canFN3DYD" role="2wV5jI">
-      <node concept="3F0ifn" id="59canFO33dv" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-      </node>
-      <node concept="3F0A7n" id="59canFN3DYK" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:3m26Pihn852" resolve="path" />
-      </node>
-      <node concept="3F0ifn" id="59canFO33cR" role="3EZMnx">
-        <property role="3F0ifm" value="," />
-      </node>
-      <node concept="3F0A7n" id="59canFO33cZ" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:59canFN3Dy8" resolve="system" />
-      </node>
-      <node concept="3F0ifn" id="59canFO33dj" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-      </node>
-      <node concept="l2Vlx" id="59canFN3DYG" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="59canFOHYiD">

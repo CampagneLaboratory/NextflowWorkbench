@@ -15,7 +15,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BaseLanguageAdapter_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,162,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,160,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BooleanChannel_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
@@ -80,14 +80,14 @@
     <file name="GlobalExpression_BehaviorDescriptor.java">
       <unit at="8,0,18,0" name="org.campagnelab.workflow.behavior.GlobalExpression_BehaviorDescriptor" />
     </file>
-    <file name="GlobalFileContainer_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.GlobalFileContainer_BehaviorDescriptor" />
-    </file>
     <file name="GlobalFileExpression_BehaviorDescriptor.java">
       <unit at="7,0,21,0" name="org.campagnelab.workflow.behavior.GlobalFileExpression_BehaviorDescriptor" />
     </file>
     <file name="GlobalFileLiteralList_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalFileLiteralList_BehaviorDescriptor" />
+    </file>
+    <file name="GlobalFilePath_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.GlobalFilePath_BehaviorDescriptor" />
     </file>
     <file name="GlobalIntegerContainer_BehaviorDescriptor.java">
       <unit at="8,0,17,0" name="org.campagnelab.workflow.behavior.GlobalIntegerContainer_BehaviorDescriptor" />
@@ -109,12 +109,6 @@
     </file>
     <file name="GlobalListLiteral_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalListLiteral_BehaviorDescriptor" />
-    </file>
-    <file name="GlobalLocalFilePath_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalLocalFilePath_BehaviorDescriptor" />
-    </file>
-    <file name="GlobalRemoteFilePath_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalRemoteFilePath_BehaviorDescriptor" />
     </file>
     <file name="GlobalStringContainer_BehaviorDescriptor.java">
       <unit at="8,0,17,0" name="org.campagnelab.workflow.behavior.GlobalStringContainer_BehaviorDescriptor" />
@@ -716,7 +710,7 @@
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/6783277435987824820">
     <file name="GlobalFileExpression_Behavior.java">
       <node id="6783277435987824936" at="17,80,18,32" concept="5" />
-      <node id="6783277435987824943" at="19,217,20,189" concept="1" />
+      <node id="6783277435987824943" at="19,217,20,188" concept="1" />
       <node id="6783277435987824949" at="21,220,22,23" concept="1" />
       <node id="6783277435987824963" at="23,14,24,22" concept="1" />
       <node id="6783277435987824967" at="26,5,27,18" concept="6" />
@@ -725,7 +719,7 @@
       <node id="6783277435987824820" at="15,0,17,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="7757275043994553938" at="23,12,25,7" concept="0" />
       <node id="6783277435987824820" at="29,0,33,0" concept="9" trace="virtual_getType_3526016120160454965#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="6783277435987824947" at="20,189,25,7" concept="3" />
+      <node id="6783277435987824947" at="20,188,25,7" concept="3" />
       <node id="6783277435987824940" at="18,32,26,5" concept="2" />
       <node id="6783277435987824820" at="17,0,29,0" concept="9" trace="virtual_getFunction_6783277435987822218#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="6783277435987824822" at="15,43,15,43" />
@@ -992,13 +986,13 @@
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/6783277435987905735">
     <file name="GlobalFileLiteralList_Behavior.java">
       <node id="6783277435987905845" at="14,76,15,24" concept="5" />
-      <node id="6783277435987905852" at="16,217,17,189" concept="1" />
+      <node id="6783277435987905852" at="16,217,17,188" concept="1" />
       <node id="6783277435987905860" at="18,220,19,23" concept="1" />
       <node id="6783277435987919480" at="20,14,21,22" concept="1" />
       <node id="6783277435987905874" at="23,5,24,18" concept="6" />
       <node id="6783277435987905735" at="12,0,14,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6783277435987919166" at="20,12,22,7" concept="0" />
-      <node id="6783277435987905858" at="17,189,22,7" concept="3" />
+      <node id="6783277435987905858" at="17,188,22,7" concept="3" />
       <node id="6783277435987905849" at="15,24,23,5" concept="2" />
       <node id="6783277435987905735" at="14,0,26,0" concept="9" trace="virtual_getList_6783277435987880839#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="6783277435987905737" at="12,43,12,43" />

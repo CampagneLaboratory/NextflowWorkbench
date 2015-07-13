@@ -974,7 +974,7 @@
   </node>
   <node concept="1YbPZF" id="673qGN$5_Bl">
     <property role="TrG5h" value="typeof_GlobalRemoteFilePath" />
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
+    <property role="3GE5qa" value="setChannelValues.globalTypes" />
     <node concept="3clFbS" id="673qGN$5_Bm" role="18ibNy">
       <node concept="1Z5TYs" id="673qGN$5_B_" role="3cqZAp">
         <property role="3wDh2S" value="false" />
@@ -994,31 +994,7 @@
     </node>
     <node concept="1YaCAy" id="673qGN$5_Bo" role="1YuTPh">
       <property role="TrG5h" value="globalRemoteFilePath" />
-      <ref role="1YaFvo" to="iowz:59canFN3Dy7" resolve="GlobalRemoteFilePath" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="673qGN$5_$1">
-    <property role="TrG5h" value="typeof_GlobalLocalFilePath" />
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
-    <node concept="3clFbS" id="673qGN$5_$2" role="18ibNy">
-      <node concept="1Z5TYs" id="673qGN$5__$" role="3cqZAp">
-        <node concept="mw_s8" id="673qGN$5_A0" role="1ZfhKB">
-          <node concept="2c44tf" id="673qGN$5__W" role="mwGJk">
-            <node concept="3UtRaE" id="673qGN$mFZp" role="2c44tc" />
-          </node>
-        </node>
-        <node concept="mw_s8" id="673qGN$5__B" role="1ZfhK$">
-          <node concept="1Z2H0r" id="673qGN$5_$8" role="mwGJk">
-            <node concept="1YBJjd" id="673qGN$5_$B" role="1Z2MuG">
-              <ref role="1YBMHb" node="673qGN$5_$4" resolve="globalLocalFilePath" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="673qGN$5_$4" role="1YuTPh">
-      <property role="TrG5h" value="globalLocalFilePath" />
-      <ref role="1YaFvo" to="iowz:59canFN3B7g" resolve="GlobalLocalFilePath" />
+      <ref role="1YaFvo" to="iowz:59canFN3Dy7" resolve="GlobalFilePath" />
     </node>
   </node>
   <node concept="1YbPZF" id="673qGN$pDGr">

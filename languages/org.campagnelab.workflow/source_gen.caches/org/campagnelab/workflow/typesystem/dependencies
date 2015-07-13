@@ -19,7 +19,6 @@
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_GlobalIntegerLiteralList_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_GlobalIntegerLiteral_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_GlobalListLiteral_InferenceRule" />
-    <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_GlobalLocalFilePath_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_GlobalRemoteFilePath_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_GlobalStringExpression_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_GlobalStringLiteralList_InferenceRule" />
@@ -244,18 +243,6 @@
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
     <classNode dependClassName="org.apache.log4j.LogManager" />
     <classNode dependClassName="org.apache.log4j.Logger" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
-    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
-    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
-  </dependency>
-  <dependency className="org.campagnelab.workflow.typesystem.typeof_GlobalLocalFilePath_InferenceRule" file="typeof_GlobalLocalFilePath_InferenceRule.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
-    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
-    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />

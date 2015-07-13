@@ -812,7 +812,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="file" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7Cu" resolve="GlobalFileContainer" />
+      <ref role="20lvS9" node="59canFN3Dy7" resolve="GlobalFilePath" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn7g0">
@@ -846,17 +846,6 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="3m26Pihn7Cu">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
-    <property role="TrG5h" value="GlobalFileContainer" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="3m26Pihn852" role="1TKVEl">
-      <property role="TrG5h" value="path" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn7F7">
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
@@ -903,7 +892,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="file" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7Cu" resolve="GlobalFileContainer" />
+      <ref role="20lvS9" node="59canFN3Dy7" resolve="GlobalFilePath" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn7Np">
@@ -963,8 +952,8 @@
   <node concept="1TIwiD" id="YNIIGPa1iv">
     <property role="3GE5qa" value="Script.conditionalScript" />
     <property role="TrG5h" value="BaseLanguageAdapter" />
-    <property role="34LRSv" value="conditional script" />
-    <property role="R4oN_" value="a script that executes when the condition evaluates to true" />
+    <property role="34LRSv" value="base language script" />
+    <property role="R4oN_" value="a script that contains base language, such as for the use of conditional statements" />
     <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
     <node concept="1TJgyj" id="59canFOdI$K" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -973,23 +962,16 @@
       <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
     </node>
   </node>
-  <node concept="1TIwiD" id="59canFN3B7g">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
-    <property role="TrG5h" value="GlobalLocalFilePath" />
-    <property role="34LRSv" value="local file" />
-    <property role="R4oN_" value="file's path, which is located on your system" />
-    <ref role="1TJDcQ" node="3m26Pihn7Cu" resolve="GlobalFileContainer" />
-    <node concept="1TJgyi" id="59canFN3Dy8" role="1TKVEl">
-      <property role="TrG5h" value="system" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="59canFN3Dy7">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalFileType" />
-    <property role="TrG5h" value="GlobalRemoteFilePath" />
+    <property role="3GE5qa" value="setChannelValues.globalTypes" />
+    <property role="TrG5h" value="GlobalFilePath" />
     <property role="34LRSv" value="remote file" />
     <property role="R4oN_" value="file's path, which is located on another system" />
-    <ref role="1TJDcQ" node="3m26Pihn7Cu" resolve="GlobalFileContainer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="vHEKaWiO__" role="1TKVEl">
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="59canFOCShA">
     <property role="3GE5qa" value="Script.conditionalScript" />
