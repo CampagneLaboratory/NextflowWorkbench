@@ -279,6 +279,15 @@
     <property role="34LRSv" value="command" />
     <property role="R4oN_" value="command available a docker container" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6hgQMA_NQAW" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="dockerContainer" />
+      <ref role="20lvS9" node="1D6dZ$xfhyW" resolve="DockerContainer" />
+    </node>
+    <node concept="1TJgyi" id="6hgQMA_N9RE" role="1TKVEl">
+      <property role="TrG5h" value="commandName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="4TFseGE9J$H" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>

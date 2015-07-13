@@ -199,5 +199,36 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="6hgQMA_WCNJ">
+    <property role="TrG5h" value="AutoCompleteCommand" />
+    <ref role="2ZfgGC" to="6jv6:4TFseGE9J$G" resolve="DockerCommand" />
+    <node concept="2S6ZIM" id="6hgQMA_WCNK" role="2ZfVej">
+      <node concept="3clFbS" id="6hgQMA_WCNL" role="2VODD2">
+        <node concept="3clFbF" id="6hgQMA_WCZt" role="3cqZAp">
+          <node concept="Xl_RD" id="6hgQMA_WCZs" role="3clFbG">
+            <property role="Xl_RC" value="Auto-complete" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6hgQMA_WCNM" role="2ZfgGD">
+      <node concept="3clFbS" id="6hgQMA_WCNN" role="2VODD2">
+        <node concept="3clFbF" id="6hgQMA_WDf8" role="3cqZAp">
+          <node concept="2OqwBi" id="6hgQMA_WDgD" role="3clFbG">
+            <node concept="2Sf5sV" id="6hgQMA_WDf7" role="2Oq$k0" />
+            <node concept="2qgKlT" id="6hgQMA_WDyY" role="2OqNvi">
+              <ref role="37wK5l" to="rzxe:6hgQMA_Nf1h" resolve="autoComplete" />
+              <node concept="2OqwBi" id="6hgQMA_WDB3" role="37wK5m">
+                <node concept="2Sf5sV" id="6hgQMA_WD$K" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6hgQMA_WDUH" role="2OqNvi">
+                  <ref role="3TsBF5" to="6jv6:6hgQMA_N9RE" resolve="commandName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

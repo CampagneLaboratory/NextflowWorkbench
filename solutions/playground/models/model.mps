@@ -229,9 +229,8 @@
         <property id="1893262236499912677" name="tag" index="VuL0s" />
         <property id="1893262236499912678" name="userName" index="VuL0v" />
       </concept>
-      <concept id="5650734312792558932" name="org.campagnelab.docker.structure.DockerPath" flags="ng" index="1$tZQZ">
-        <reference id="5650734312792560363" name="dockerContainer" index="1$tY80" />
-      </concept>
+      <concept id="5650734312793241900" name="org.campagnelab.docker.structure.DockerCommand" flags="ng" index="1$joB7" />
+      <concept id="5650734312792558932" name="org.campagnelab.docker.structure.DockerPath" flags="ng" index="1$tZQZ" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
@@ -644,41 +643,21 @@
         <property role="TrG5h" value="'index_*'" />
       </node>
     </node>
-    <node concept="GbKB8" id="56asy6tpjxG" role="234boB">
+    <node concept="GbKB8" id="6hgQMAA5tWr" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="3yMj3R" value="sleep 1000" />
-      <property role="GbyUj" value="rocker-metar" />
+      <property role="GbyUj" value="test" />
       <property role="3zaeVo" value="true" />
-      <property role="VuL0v" value="fac2003" />
-      <property role="TrG5h" value="interactive" />
+      <property role="VuL0v" value="campagnelab" />
+      <property role="TrG5h" value="interactive3" />
       <property role="1vm7qE" value="true" />
-      <ref role="3zcJb$" node="56asy6tpjxH" resolve="image" />
+      <ref role="3zcJb$" node="6hgQMAA5tWs" resolve="image" />
     </node>
-    <node concept="3Y$Zt1" id="7lMr3OmD$oH" role="2ulM7a">
-      <node concept="19SGf9" id="7lMr3OmD$oJ" role="3Y$PkS">
-        <node concept="19SUe$" id="6hgQMA_Gs2g" role="19SJt6" />
-        <node concept="1$tZQZ" id="6hgQMA_Gs2d" role="19SJt6">
-          <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
-          <node concept="q33rG" id="6hgQMA_Gs2f" role="q33rI">
-            <property role="q33rC" value="" />
-            <property role="qn6Yc" value="true" />
-          </node>
-          <node concept="q33rG" id="6hgQMA_N1UB" role="q33rI">
-            <property role="q33rC" value="etc" />
-            <property role="qn6Yc" value="true" />
-          </node>
-          <node concept="q33rG" id="6hgQMA_N1ZS" role="q33rI">
-            <property role="q33rC" value="alternatives" />
-            <property role="qn6Yc" value="true" />
-          </node>
-          <node concept="q33rG" id="6hgQMA_N23A" role="q33rI">
-            <property role="q33rC" value="awk.1.gz" />
-            <property role="qn6Yc" value="false" />
-          </node>
-        </node>
-        <node concept="19SUe$" id="6hgQMA_Gs2c" role="19SJt6">
-          <property role="19SUeA" value="&#10;&#10;" />
-        </node>
+    <node concept="3Y$Zt1" id="6hgQMAAfUhv" role="2ulM7a">
+      <node concept="19SGf9" id="6hgQMAAfUhx" role="3Y$PkS">
+        <node concept="19SUe$" id="51H4qOrLaKd" role="19SJt6" />
+        <node concept="1$joB7" id="51H4qOrLaKc" role="19SJt6" />
+        <node concept="19SUe$" id="51H4qOrLaKe" role="19SJt6" />
       </node>
     </node>
   </node>
@@ -871,316 +850,316 @@
     </node>
   </node>
   <node concept="1lvGkW" id="VMSWAF0h1v">
-    <node concept="1lnzPE" id="6hgQMA_N1Dz" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: " />
+    <node concept="1lnzPE" id="6hgQMAA5tUA" role="1lvGkX">
+      <property role="1lnzPG" value="5bd3bcf9e3c6: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1D$" role="1lvGkX">
-      <property role="1lnzPG" value="result=false" />
+    <node concept="1lnzPE" id="6hgQMAA5tUB" role="1lvGkX">
+      <property role="1lnzPG" value="f0a43ca4151c: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Fa" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etcalternati/" />
+    <node concept="1lnzPE" id="6hgQMAA5tUC" role="1lvGkX">
+      <property role="1lnzPG" value="daaa37358747: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Fb" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etcalternati/" />
+    <node concept="1lnzPE" id="6hgQMAA5tUD" role="1lvGkX">
+      <property role="1lnzPG" value="9809fd3cbe8e: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Fc" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="6hgQMAA5tUE" role="1lvGkX">
+      <property role="1lnzPG" value="30d7dd0a3b57: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Fd" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcalternati/" />
+    <node concept="1lnzPE" id="6hgQMAA5tUF" role="1lvGkX">
+      <property role="1lnzPG" value="e22f9076658e: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Fe" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: e54c51d054f4fecd81e70016981d84aef028e7a21f7a0497fa5e4bb1c364b543" />
+    <node concept="1lnzPE" id="6hgQMAA5tUG" role="1lvGkX">
+      <property role="1lnzPG" value="4b7eb1f91fca: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Ff" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: " />
+    <node concept="1lnzPE" id="6hgQMAA5tUH" role="1lvGkX">
+      <property role="1lnzPG" value="0eef498fe749: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Fg" role="1lvGkX">
-      <property role="1lnzPG" value="result=false" />
+    <node concept="1lnzPE" id="6hgQMAA5tUI" role="1lvGkX">
+      <property role="1lnzPG" value="50d813a4d4e0: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1GQ" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etcalternat/" />
+    <node concept="1lnzPE" id="6hgQMAA5tUJ" role="1lvGkX">
+      <property role="1lnzPG" value="a3c45fd23542: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1GR" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etcalternat/" />
+    <node concept="1lnzPE" id="6hgQMAA5tUK" role="1lvGkX">
+      <property role="1lnzPG" value="2aed1bf7b9c9: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1GS" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="6hgQMAA5tUL" role="1lvGkX">
+      <property role="1lnzPG" value="08f519753ae0: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1GT" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcalternat/" />
+    <node concept="1lnzPE" id="6hgQMAA5tUM" role="1lvGkX">
+      <property role="1lnzPG" value="fc59bf1b10f4: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1GU" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 9ce0c4e12107d7d0fe149e054dd0d288a23946600caddcca02b5cf519f093295" />
+    <node concept="1lnzPE" id="6hgQMAA5tUN" role="1lvGkX">
+      <property role="1lnzPG" value="2ceb1c18b8ff: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1GV" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: " />
+    <node concept="1lnzPE" id="6hgQMAA5tUO" role="1lvGkX">
+      <property role="1lnzPG" value="2ceb1c18b8ff: Download complete" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1GW" role="1lvGkX">
-      <property role="1lnzPG" value="result=false" />
+    <node concept="1lnzPE" id="6hgQMAA5tUP" role="1lvGkX">
+      <property role="1lnzPG" value="Status: Image is up to date for campagnelab/test:latest" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Iy" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etcalterna/" />
+    <node concept="1lnzPE" id="6hgQMAA5tWt" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker run " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Iz" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etcalterna/" />
+    <node concept="1lnzPE" id="6hgQMAA5tWu" role="1lvGkX">
+      <property role="1lnzPG" value="deployAddress: campagnelab/test:latest" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1I$" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="6hgQMAA5tWv" role="1lvGkX">
+      <property role="1lnzPG" value="with name=interactive" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1I_" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcalterna/" />
+    <node concept="1lnzPE" id="6hgQMAA5tY7" role="1lvGkX">
+      <property role="1lnzPG" value="Starting container " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1IA" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 72c4059bc1d1d31f79615dc1e0b204fad4158be52b5b4d9874c53f86c54294e9" />
+    <node concept="1lnzPE" id="6hgQMAA5tZH" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker run " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1IB" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: " />
+    <node concept="1lnzPE" id="6hgQMAA5tZI" role="1lvGkX">
+      <property role="1lnzPG" value="deployAddress: campagnelab/test:latest" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1IC" role="1lvGkX">
-      <property role="1lnzPG" value="result=false" />
+    <node concept="1lnzPE" id="6hgQMAA5tZJ" role="1lvGkX">
+      <property role="1lnzPG" value="with name=interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Ke" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etcaltern/" />
+    <node concept="1lnzPE" id="6hgQMAA5u1m" role="1lvGkX">
+      <property role="1lnzPG" value="path=sor" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Kf" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etcaltern/" />
+    <node concept="1lnzPE" id="6hgQMAA5u1n" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Kg" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="6hgQMAA5u1o" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c echo $PATH | awk  -v MT=sor ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'|xargs " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Kh" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcaltern/" />
+    <node concept="1lnzPE" id="6hgQMAA5u1p" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: locate /usr/local/sbin/*sor* /usr/local/bin/*sor* /usr/sbin/*sor* /usr/bin/*sor* /sbin/*sor* /bin/*sor*&#10;" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Ki" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 1763007a6568caed111853fd67dac8f2445a1f2b67106990ee809897f1f2e0aa" />
+    <node concept="1lnzPE" id="6hgQMAA77kw" role="1lvGkX">
+      <property role="1lnzPG" value="path=sor" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Kj" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: " />
+    <node concept="1lnzPE" id="6hgQMAA77kx" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Kk" role="1lvGkX">
-      <property role="1lnzPG" value="result=false" />
+    <node concept="1lnzPE" id="6hgQMAA77ky" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=sor ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1LU" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etcalter/" />
+    <node concept="1lnzPE" id="6hgQMAA77kz" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: /usr/bin/sort&#10;/usr/bin/tsort&#10;" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1LV" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etcalter/" />
+    <node concept="1lnzPE" id="6hgQMAA8JoC" role="1lvGkX">
+      <property role="1lnzPG" value="path=sor" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1LW" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="6hgQMAA8JoD" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1LX" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcalter/" />
+    <node concept="1lnzPE" id="6hgQMAA8JoE" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=sor ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1LY" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 460aa8a3218d22777abac579625b61d5e894624a2d82a803827494d79d21c41c" />
+    <node concept="1lnzPE" id="6hgQMAA8JoF" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: /usr/bin/sort&#10;/usr/bin/tsort&#10;" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1LZ" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: " />
+    <node concept="1lnzPE" id="6hgQMAAacdP" role="1lvGkX">
+      <property role="1lnzPG" value="path=sor" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1M0" role="1lvGkX">
-      <property role="1lnzPG" value="result=false" />
+    <node concept="1lnzPE" id="6hgQMAAacdQ" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1NA" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etcalte/" />
+    <node concept="1lnzPE" id="6hgQMAAacdR" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=sor ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1NB" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etcalte/" />
+    <node concept="1lnzPE" id="6hgQMAAacdS" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: /usr/bin/sort&#10;/usr/bin/tsort&#10;" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1NC" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="6hgQMAAeHmT" role="1lvGkX">
+      <property role="1lnzPG" value="path=s" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1ND" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcalte/" />
+    <node concept="1lnzPE" id="6hgQMAAeHmU" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1NE" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: c05b68b0c686cf64e6062f8d9bafa49e3865a325181178c5ebbcacedf76a5f3b" />
+    <node concept="1lnzPE" id="6hgQMAAeHmV" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=s ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1NF" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: " />
+    <node concept="1lnzPE" id="6hgQMAAeHmW" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: /bin/bash&#10;/bin/bzless&#10;/bin/dash&#10;/bin/dmesg&#10;/bin/dnsdomainname&#10;/bin/false&#10;/bin/hostname&#10;/bin/less&#10;/bin/lessecho&#10;/bin/lessfile&#10;/bin/lesskey&#10;/bin/lesspipe&#10;/bin/ls&#10;/bin/lsblk&#10;/bin/nisdomainname&#10;/bin/ps&#10;/bin/rbash&#10;/bin/run-parts&#10;/bin/sed&#10;/bin/setfacl&#10;/bin/sh&#10;/bin/sh.distrib&#10;/bin/sleep&#10;/bin/ss&#10;/bin/stty&#10;/bin/su&#10;/bin/sync&#10;/bin/systemctl&#10;/bin/systemd&#10;/bin/systemd-ask-password&#10;/bin/systemd-escape&#10;/bin/systemd-inhibit&#10;/bin/systemd-machine-id-setup&#10;/bin/systemd-notify&#10;/bin/systemd-tmpfiles&#10;/bin/systemd-tty-ask-password-agent&#10;/bin/uncompress&#10;/bin/zless&#10;/sbin/badblocks&#10;/sbin/blkdiscard&#10;/sbin/capsh&#10;/sbin/cfdisk&#10;/sbin/debugfs&#10;/sbin/dmsetup&#10;/sbin/dumpe2fs&#10;/sbin/e2fsck&#10;/sbin/fdisk&#10;/sbin/findfs&#10;/sbin/fsck&#10;/sbin/fsck.cramfs&#10;/sbin/fsck.ext2&#10;/sbin/fsck.ext3&#10;/sbin/fsck.ext4&#10;/sbin/fsck.ext4dev&#10;/sbin/fsck.minix&#10;/sbin/fsck.nfs&#10;/sbin/fsfreeze&#10;/sbin/fstab-decode&#10;/sbin/fstrim&#10;/sbin/getpcaps&#10;/sbin/insserv&#10;/sbin/installkernel&#10;/sbin/isosize&#10;/sbin/logsave&#10;/sbin/losetup&#10;/sbin/mke2fs&#10;/sbin/mkfs&#10;/sbin/mkfs.bfs&#10;/sbin/mkfs.cramfs&#10;/sbin/mkfs.ext2&#10;/sbin/mkfs.ext3&#10;/sbin/mkfs.ext4&#10;/sbin/mkfs.ext4dev&#10;/sbin/mkfs.minix&#10;/sbin/mkswap&#10;/sbin/resize2fs&#10;/sbin/runuser&#10;/sbin/setcap&#10;/sbin/sfdisk&#10;/sbin/shadowconfig&#10;/sbin/shutdown&#10;/sbin/start-stop-daemon&#10;/sbin/sulogin&#10;/sbin/swaplabel&#10;/sbin/swapoff&#10;/sbin/swapon&#10;/sbin/switch_root&#10;/sbin/sysctl&#10;/sbin/tune2fs&#10;/sbin/wipefs&#10;/usr/bin/Rscript&#10;/usr/bin/apropos&#10;/usr/bin/as&#10;/usr/bin/base64&#10;/usr/bin/basename&#10;/usr/bin/bashbug&#10;/usr/bin/bsd-from&#10;/usr/bin/bsd-write&#10;/usr/bin/busctl&#10;/usr/bin/catchsegv&#10;/usr/bin/cdbs-edit-patch&#10;/usr/bin/chsh&#10;/usr/bin/cksum&#10;/usr/bin/clear_console&#10;/usr/bin/compose&#10;/usr/bin/corelist&#10;/usr/bin/csplit&#10;/usr/bin/ctstat&#10;/usr/bin/debconf-apt-progress&#10;/usr/bin/debconf-escape&#10;/usr/bin/debconf-set-selections&#10;/usr/bin/debconf-show&#10;/usr/bin/dh_auto_install&#10;/usr/bin/dh_auto_test&#10;/usr/bin/dh_autotools-dev_restoreconfig&#10;/usr/bin/dh_autotools-dev_updateconfig&#10;/usr/bin/dh_bugfiles&#10;/usr/bin/dh_compress&#10;/usr/bin/dh_desktop&#10;/usr/bin/dh_fixperms&#10;/usr/bin/dh_icons&#10;/usr/bin/dh_install&#10;/usr/bin/dh_installcatalogs&#10;/usr/bin/dh_installchangelogs&#10;/usr/bin/dh_installcron&#10;/usr/bin/dh_installdeb&#10;/usr/bin/dh_installdebconf&#10;/usr/bin/dh_installdirs&#10;/usr/bin/dh_installdocs&#10;/usr/bin/dh_installemacsen&#10;/usr/bin/dh_installexamples&#10;/usr/bin/dh_installgsettings&#10;/usr/bin/dh_installifupdown&#10;/usr/bin/dh_installinfo&#10;/usr/bin/dh_installinit&#10;/usr/bin/dh_installlogcheck&#10;/usr/bin/dh_installlogrotate&#10;/usr/bin/dh_installman&#10;/usr/bin/dh_installmanpages&#10;/usr/bin/dh_installmenu&#10;/usr/bin/dh_installmime&#10;/usr/bin/dh_installmodules&#10;/usr/bin/dh_installpam&#10;/usr/bin/dh_installppp&#10;/usr/bin/dh_installudev&#10;/usr/bin/dh_installwm&#10;/usr/bin/dh_installxfonts&#10;/usr/bin/dh_listpackages&#10;/usr/bin/dh_makeshlibs&#10;/usr/bin/dh_md5sums&#10;/usr/bin/dh_movefiles&#10;/usr/bin/dh_scrollkeeper&#10;/usr/bin/dh_shlibdeps&#10;/usr/bin/dh_strip&#10;/usr/bin/dh_suidregister&#10;/usr/bin/dh_testdir&#10;/usr/bin/dh_testroot&#10;/usr/bin/dh_usrlocal&#10;/usr/bin/dircolors&#10;/usr/bin/dpkg-buildflags&#10;/usr/bin/dpkg-checkbuilddeps&#10;/usr/bin/dpkg-distaddfile&#10;/usr/bin/dpkg-genchanges&#10;/usr/bin/dpkg-gensymbols&#10;/usr/bin/dpkg-maintscript-helper&#10;/usr/bin/dpkg-mergechangelogs&#10;/usr/bin/dpkg-parsechangelog&#10;/usr/bin/dpkg-scanpackages&#10;/usr/bin/dpkg-scansources&#10;/usr/bin/dpkg-shlibdeps&#10;/usr/bin/dpkg-source&#10;/usr/bin/dpkg-split&#10;/usr/bin/dpkg-statoverride&#10;/usr/bin/enc2xs&#10;/usr/bin/envsubst&#10;/usr/bin/fc-list&#10;/usr/bin/fc-scan&#10;/usr/bin/gdbus&#10;/usr/bin/gdbus-codegen&#10;/usr/bin/gettext.sh&#10;/usr/bin/gio-querymodules&#10;/usr/bin/glib-compile-resources&#10;/usr/bin/glib-compile-schemas&#10;/usr/bin/glib-genmarshal&#10;/usr/bin/glib-mkenums&#10;/usr/bin/gpasswd&#10;/usr/bin/gpgsplit&#10;/usr/bin/gresource&#10;/usr/bin/grops&#10;/usr/bin/groups&#10;/usr/bin/gsettings&#10;/usr/bin/gtester&#10;/usr/bin/gtester-report&#10;/usr/bin/h2xs&#10;/usr/bin/helpztags&#10;/usr/bin/hostid&#10;/usr/bin/hostnamectl&#10;/usr/bin/install&#10;/usr/bin/instmodsh&#10;/usr/bin/ipcs&#10;/usr/bin/ischroot&#10;/usr/bin/json_pp&#10;/usr/bin/last&#10;/usr/bin/lastb&#10;/usr/bin/lastlog&#10;/usr/bin/less&#10;/usr/bin/lessecho&#10;/usr/bin/lessfile&#10;/usr/bin/lesskey&#10;/usr/bin/lesspipe&#10;/usr/bin/lnstat&#10;/usr/bin/lsattr&#10;/usr/bin/lscpu&#10;/usr/bin/lslocks&#10;/usr/bin/lspgpot&#10;/usr/bin/lzless&#10;/usr/bin/make-first-existing-target&#10;/usr/bin/md5sum&#10;/usr/bin/md5sum.textutils&#10;/usr/bin/mesg&#10;/usr/bin/msgattrib&#10;/usr/bin/msgcat&#10;/usr/bin/msgcmp&#10;/usr/bin/msgcomm&#10;/usr/bin/msgconv&#10;/usr/bin/msgen&#10;/usr/bin/msgexec&#10;/usr/bin/msgfilter&#10;/usr/bin/msgfmt&#10;/usr/bin/msggrep&#10;/usr/bin/msginit&#10;/usr/bin/msgmerge&#10;/usr/bin/msgunfmt&#10;/usr/bin/msguniq&#10;/usr/bin/ncurses5-config&#10;/usr/bin/ncursesw5-config&#10;/usr/bin/nsenter&#10;/usr/bin/nstat&#10;/usr/bin/passwd&#10;/usr/bin/paste&#10;/usr/bin/perlthanks&#10;/usr/bin/pod2usage&#10;/usr/bin/podebconf-display-po&#10;/usr/bin/podselect&#10;/usr/bin/psed&#10;/usr/bin/pstruct&#10;/usr/bin/pyversions&#10;/usr/bin/recode-sr-latin&#10;/usr/bin/reset&#10;/usr/bin/resizepart&#10;/usr/bin/rtstat&#10;/usr/bin/s2p&#10;/usr/bin/savelog&#10;/usr/bin/script&#10;/usr/bin/scriptreplay&#10;/usr/bin/sdiff&#10;/usr/bin/see&#10;/usr/bin/select-editor&#10;/usr/bin/sensible-browser&#10;/usr/bin/sensible-editor&#10;/usr/bin/sensible-pager&#10;/usr/bin/seq&#10;/usr/bin/setarch&#10;/usr/bin/setfacl&#10;/usr/bin/setsid&#10;/usr/bin/setterm&#10;/usr/bin/sg&#10;/usr/bin/sha1sum&#10;/usr/bin/sha224sum&#10;/usr/bin/sha256sum&#10;/usr/bin/sha384sum&#10;/usr/bin/sha512sum&#10;/usr/bin/shasum&#10;/usr/bin/shred&#10;/usr/bin/shuf&#10;/usr/bin/size&#10;/usr/bin/skill&#10;/usr/bin/slabtop&#10;/usr/bin/snice&#10;/usr/bin/soelim&#10;/usr/bin/sort&#10;/usr/bin/sotruss&#10;/usr/bin/splain&#10;/usr/bin/split&#10;/usr/bin/sprof&#10;/usr/bin/stat&#10;/usr/bin/stdbuf&#10;/usr/bin/strings&#10;/usr/bin/strip&#10;/usr/bin/sum&#10;/usr/bin/systemd-analyze&#10;/usr/bin/systemd-cat&#10;/usr/bin/systemd-cgls&#10;/usr/bin/systemd-cgtop&#10;/usr/bin/systemd-delta&#10;/usr/bin/systemd-detect-virt&#10;/usr/bin/systemd-nspawn&#10;/usr/bin/systemd-path&#10;/usr/bin/systemd-run&#10;/usr/bin/systemd-stdio-bridge&#10;/usr/bin/tabs&#10;/usr/bin/taskset&#10;/usr/bin/test&#10;/usr/bin/tset&#10;/usr/bin/tsort&#10;/usr/bin/tzselect&#10;/usr/bin/unshare&#10;/usr/bin/unzipsfx&#10;/usr/bin/update-alternatives&#10;/usr/bin/users&#10;/usr/bin/vmstat&#10;/usr/bin/w.procps&#10;/usr/bin/whatis&#10;/usr/bin/whereis&#10;/usr/bin/x86_64-linux-gnu-as&#10;/usr/bin/x86_64-linux-gnu-size&#10;/usr/bin/x86_64-linux-gnu-strings&#10;/usr/bin/x86_64-linux-gnu-strip&#10;/usr/bin/xargs&#10;/usr/bin/xdg-desktop-icon&#10;/usr/bin/xdg-desktop-menu&#10;/usr/bin/xdg-icon-resource&#10;/usr/bin/xdg-screensaver&#10;/usr/bin/xdg-settings&#10;/usr/bin/xslt-config&#10;/usr/bin/xsubpp&#10;/usr/bin/xzless&#10;/usr/bin/yes&#10;/usr/bin/zipdetails&#10;/usr/bin/zipsplit&#10;/usr/local/bin/install.r&#10;/usr/local/bin/install2.r&#10;/usr/local/bin/installGithub.r&#10;/usr/local/bin/testInstalled.r&#10;/usr/sbin/accessdb&#10;/usr/sbin/add-shell&#10;/usr/sbin/adduser&#10;/usr/sbin/chgpasswd&#10;/usr/sbin/chpasswd&#10;/usr/sbin/deluser&#10;/usr/sbin/dpkg-statoverride&#10;/usr/sbin/mklost+found&#10;/usr/sbin/newusers&#10;/usr/sbin/pam_timestamp_check&#10;/usr/sbin/remove-shell&#10;/usr/sbin/service&#10;/usr/sbin/update-alternatives&#10;/usr/sbin/update-passwd&#10;/usr/sbin/useradd&#10;/usr/sbin/userdel&#10;/usr/sbin/usermod&#10;" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1NG" role="1lvGkX">
-      <property role="1lnzPG" value="result=false" />
+    <node concept="1lnzPE" id="6hgQMAAeHoy" role="1lvGkX">
+      <property role="1lnzPG" value="path=s" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Pi" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etcalt/" />
+    <node concept="1lnzPE" id="6hgQMAAeHoz" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Pj" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etcalt/" />
+    <node concept="1lnzPE" id="6hgQMAAeHo$" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=s ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Pk" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="6hgQMAAeHo_" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: /bin/bash&#10;/bin/bzless&#10;/bin/dash&#10;/bin/dmesg&#10;/bin/dnsdomainname&#10;/bin/false&#10;/bin/hostname&#10;/bin/less&#10;/bin/lessecho&#10;/bin/lessfile&#10;/bin/lesskey&#10;/bin/lesspipe&#10;/bin/ls&#10;/bin/lsblk&#10;/bin/nisdomainname&#10;/bin/ps&#10;/bin/rbash&#10;/bin/run-parts&#10;/bin/sed&#10;/bin/setfacl&#10;/bin/sh&#10;/bin/sh.distrib&#10;/bin/sleep&#10;/bin/ss&#10;/bin/stty&#10;/bin/su&#10;/bin/sync&#10;/bin/systemctl&#10;/bin/systemd&#10;/bin/systemd-ask-password&#10;/bin/systemd-escape&#10;/bin/systemd-inhibit&#10;/bin/systemd-machine-id-setup&#10;/bin/systemd-notify&#10;/bin/systemd-tmpfiles&#10;/bin/systemd-tty-ask-password-agent&#10;/bin/uncompress&#10;/bin/zless&#10;/sbin/badblocks&#10;/sbin/blkdiscard&#10;/sbin/capsh&#10;/sbin/cfdisk&#10;/sbin/debugfs&#10;/sbin/dmsetup&#10;/sbin/dumpe2fs&#10;/sbin/e2fsck&#10;/sbin/fdisk&#10;/sbin/findfs&#10;/sbin/fsck&#10;/sbin/fsck.cramfs&#10;/sbin/fsck.ext2&#10;/sbin/fsck.ext3&#10;/sbin/fsck.ext4&#10;/sbin/fsck.ext4dev&#10;/sbin/fsck.minix&#10;/sbin/fsck.nfs&#10;/sbin/fsfreeze&#10;/sbin/fstab-decode&#10;/sbin/fstrim&#10;/sbin/getpcaps&#10;/sbin/insserv&#10;/sbin/installkernel&#10;/sbin/isosize&#10;/sbin/logsave&#10;/sbin/losetup&#10;/sbin/mke2fs&#10;/sbin/mkfs&#10;/sbin/mkfs.bfs&#10;/sbin/mkfs.cramfs&#10;/sbin/mkfs.ext2&#10;/sbin/mkfs.ext3&#10;/sbin/mkfs.ext4&#10;/sbin/mkfs.ext4dev&#10;/sbin/mkfs.minix&#10;/sbin/mkswap&#10;/sbin/resize2fs&#10;/sbin/runuser&#10;/sbin/setcap&#10;/sbin/sfdisk&#10;/sbin/shadowconfig&#10;/sbin/shutdown&#10;/sbin/start-stop-daemon&#10;/sbin/sulogin&#10;/sbin/swaplabel&#10;/sbin/swapoff&#10;/sbin/swapon&#10;/sbin/switch_root&#10;/sbin/sysctl&#10;/sbin/tune2fs&#10;/sbin/wipefs&#10;/usr/bin/Rscript&#10;/usr/bin/apropos&#10;/usr/bin/as&#10;/usr/bin/base64&#10;/usr/bin/basename&#10;/usr/bin/bashbug&#10;/usr/bin/bsd-from&#10;/usr/bin/bsd-write&#10;/usr/bin/busctl&#10;/usr/bin/catchsegv&#10;/usr/bin/cdbs-edit-patch&#10;/usr/bin/chsh&#10;/usr/bin/cksum&#10;/usr/bin/clear_console&#10;/usr/bin/compose&#10;/usr/bin/corelist&#10;/usr/bin/csplit&#10;/usr/bin/ctstat&#10;/usr/bin/debconf-apt-progress&#10;/usr/bin/debconf-escape&#10;/usr/bin/debconf-set-selections&#10;/usr/bin/debconf-show&#10;/usr/bin/dh_auto_install&#10;/usr/bin/dh_auto_test&#10;/usr/bin/dh_autotools-dev_restoreconfig&#10;/usr/bin/dh_autotools-dev_updateconfig&#10;/usr/bin/dh_bugfiles&#10;/usr/bin/dh_compress&#10;/usr/bin/dh_desktop&#10;/usr/bin/dh_fixperms&#10;/usr/bin/dh_icons&#10;/usr/bin/dh_install&#10;/usr/bin/dh_installcatalogs&#10;/usr/bin/dh_installchangelogs&#10;/usr/bin/dh_installcron&#10;/usr/bin/dh_installdeb&#10;/usr/bin/dh_installdebconf&#10;/usr/bin/dh_installdirs&#10;/usr/bin/dh_installdocs&#10;/usr/bin/dh_installemacsen&#10;/usr/bin/dh_installexamples&#10;/usr/bin/dh_installgsettings&#10;/usr/bin/dh_installifupdown&#10;/usr/bin/dh_installinfo&#10;/usr/bin/dh_installinit&#10;/usr/bin/dh_installlogcheck&#10;/usr/bin/dh_installlogrotate&#10;/usr/bin/dh_installman&#10;/usr/bin/dh_installmanpages&#10;/usr/bin/dh_installmenu&#10;/usr/bin/dh_installmime&#10;/usr/bin/dh_installmodules&#10;/usr/bin/dh_installpam&#10;/usr/bin/dh_installppp&#10;/usr/bin/dh_installudev&#10;/usr/bin/dh_installwm&#10;/usr/bin/dh_installxfonts&#10;/usr/bin/dh_listpackages&#10;/usr/bin/dh_makeshlibs&#10;/usr/bin/dh_md5sums&#10;/usr/bin/dh_movefiles&#10;/usr/bin/dh_scrollkeeper&#10;/usr/bin/dh_shlibdeps&#10;/usr/bin/dh_strip&#10;/usr/bin/dh_suidregister&#10;/usr/bin/dh_testdir&#10;/usr/bin/dh_testroot&#10;/usr/bin/dh_usrlocal&#10;/usr/bin/dircolors&#10;/usr/bin/dpkg-buildflags&#10;/usr/bin/dpkg-checkbuilddeps&#10;/usr/bin/dpkg-distaddfile&#10;/usr/bin/dpkg-genchanges&#10;/usr/bin/dpkg-gensymbols&#10;/usr/bin/dpkg-maintscript-helper&#10;/usr/bin/dpkg-mergechangelogs&#10;/usr/bin/dpkg-parsechangelog&#10;/usr/bin/dpkg-scanpackages&#10;/usr/bin/dpkg-scansources&#10;/usr/bin/dpkg-shlibdeps&#10;/usr/bin/dpkg-source&#10;/usr/bin/dpkg-split&#10;/usr/bin/dpkg-statoverride&#10;/usr/bin/enc2xs&#10;/usr/bin/envsubst&#10;/usr/bin/fc-list&#10;/usr/bin/fc-scan&#10;/usr/bin/gdbus&#10;/usr/bin/gdbus-codegen&#10;/usr/bin/gettext.sh&#10;/usr/bin/gio-querymodules&#10;/usr/bin/glib-compile-resources&#10;/usr/bin/glib-compile-schemas&#10;/usr/bin/glib-genmarshal&#10;/usr/bin/glib-mkenums&#10;/usr/bin/gpasswd&#10;/usr/bin/gpgsplit&#10;/usr/bin/gresource&#10;/usr/bin/grops&#10;/usr/bin/groups&#10;/usr/bin/gsettings&#10;/usr/bin/gtester&#10;/usr/bin/gtester-report&#10;/usr/bin/h2xs&#10;/usr/bin/helpztags&#10;/usr/bin/hostid&#10;/usr/bin/hostnamectl&#10;/usr/bin/install&#10;/usr/bin/instmodsh&#10;/usr/bin/ipcs&#10;/usr/bin/ischroot&#10;/usr/bin/json_pp&#10;/usr/bin/last&#10;/usr/bin/lastb&#10;/usr/bin/lastlog&#10;/usr/bin/less&#10;/usr/bin/lessecho&#10;/usr/bin/lessfile&#10;/usr/bin/lesskey&#10;/usr/bin/lesspipe&#10;/usr/bin/lnstat&#10;/usr/bin/lsattr&#10;/usr/bin/lscpu&#10;/usr/bin/lslocks&#10;/usr/bin/lspgpot&#10;/usr/bin/lzless&#10;/usr/bin/make-first-existing-target&#10;/usr/bin/md5sum&#10;/usr/bin/md5sum.textutils&#10;/usr/bin/mesg&#10;/usr/bin/msgattrib&#10;/usr/bin/msgcat&#10;/usr/bin/msgcmp&#10;/usr/bin/msgcomm&#10;/usr/bin/msgconv&#10;/usr/bin/msgen&#10;/usr/bin/msgexec&#10;/usr/bin/msgfilter&#10;/usr/bin/msgfmt&#10;/usr/bin/msggrep&#10;/usr/bin/msginit&#10;/usr/bin/msgmerge&#10;/usr/bin/msgunfmt&#10;/usr/bin/msguniq&#10;/usr/bin/ncurses5-config&#10;/usr/bin/ncursesw5-config&#10;/usr/bin/nsenter&#10;/usr/bin/nstat&#10;/usr/bin/passwd&#10;/usr/bin/paste&#10;/usr/bin/perlthanks&#10;/usr/bin/pod2usage&#10;/usr/bin/podebconf-display-po&#10;/usr/bin/podselect&#10;/usr/bin/psed&#10;/usr/bin/pstruct&#10;/usr/bin/pyversions&#10;/usr/bin/recode-sr-latin&#10;/usr/bin/reset&#10;/usr/bin/resizepart&#10;/usr/bin/rtstat&#10;/usr/bin/s2p&#10;/usr/bin/savelog&#10;/usr/bin/script&#10;/usr/bin/scriptreplay&#10;/usr/bin/sdiff&#10;/usr/bin/see&#10;/usr/bin/select-editor&#10;/usr/bin/sensible-browser&#10;/usr/bin/sensible-editor&#10;/usr/bin/sensible-pager&#10;/usr/bin/seq&#10;/usr/bin/setarch&#10;/usr/bin/setfacl&#10;/usr/bin/setsid&#10;/usr/bin/setterm&#10;/usr/bin/sg&#10;/usr/bin/sha1sum&#10;/usr/bin/sha224sum&#10;/usr/bin/sha256sum&#10;/usr/bin/sha384sum&#10;/usr/bin/sha512sum&#10;/usr/bin/shasum&#10;/usr/bin/shred&#10;/usr/bin/shuf&#10;/usr/bin/size&#10;/usr/bin/skill&#10;/usr/bin/slabtop&#10;/usr/bin/snice&#10;/usr/bin/soelim&#10;/usr/bin/sort&#10;/usr/bin/sotruss&#10;/usr/bin/splain&#10;/usr/bin/split&#10;/usr/bin/sprof&#10;/usr/bin/stat&#10;/usr/bin/stdbuf&#10;/usr/bin/strings&#10;/usr/bin/strip&#10;/usr/bin/sum&#10;/usr/bin/systemd-analyze&#10;/usr/bin/systemd-cat&#10;/usr/bin/systemd-cgls&#10;/usr/bin/systemd-cgtop&#10;/usr/bin/systemd-delta&#10;/usr/bin/systemd-detect-virt&#10;/usr/bin/systemd-nspawn&#10;/usr/bin/systemd-path&#10;/usr/bin/systemd-run&#10;/usr/bin/systemd-stdio-bridge&#10;/usr/bin/tabs&#10;/usr/bin/taskset&#10;/usr/bin/test&#10;/usr/bin/tset&#10;/usr/bin/tsort&#10;/usr/bin/tzselect&#10;/usr/bin/unshare&#10;/usr/bin/unzipsfx&#10;/usr/bin/update-alternatives&#10;/usr/bin/users&#10;/usr/bin/vmstat&#10;/usr/bin/w.procps&#10;/usr/bin/whatis&#10;/usr/bin/whereis&#10;/usr/bin/x86_64-linux-gnu-as&#10;/usr/bin/x86_64-linux-gnu-size&#10;/usr/bin/x86_64-linux-gnu-strings&#10;/usr/bin/x86_64-linux-gnu-strip&#10;/usr/bin/xargs&#10;/usr/bin/xdg-desktop-icon&#10;/usr/bin/xdg-desktop-menu&#10;/usr/bin/xdg-icon-resource&#10;/usr/bin/xdg-screensaver&#10;/usr/bin/xdg-settings&#10;/usr/bin/xslt-config&#10;/usr/bin/xsubpp&#10;/usr/bin/xzless&#10;/usr/bin/yes&#10;/usr/bin/zipdetails&#10;/usr/bin/zipsplit&#10;/usr/local/bin/install.r&#10;/usr/local/bin/install2.r&#10;/usr/local/bin/installGithub.r&#10;/usr/local/bin/testInstalled.r&#10;/usr/sbin/accessdb&#10;/usr/sbin/add-shell&#10;/usr/sbin/adduser&#10;/usr/sbin/chgpasswd&#10;/usr/sbin/chpasswd&#10;/usr/sbin/deluser&#10;/usr/sbin/dpkg-statoverride&#10;/usr/sbin/mklost+found&#10;/usr/sbin/newusers&#10;/usr/sbin/pam_timestamp_check&#10;/usr/sbin/remove-shell&#10;/usr/sbin/service&#10;/usr/sbin/update-alternatives&#10;/usr/sbin/update-passwd&#10;/usr/sbin/useradd&#10;/usr/sbin/userdel&#10;/usr/sbin/usermod&#10;" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Pl" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcalt/" />
+    <node concept="1lnzPE" id="6hgQMAAfUhH" role="1lvGkX">
+      <property role="1lnzPG" value="path=sort" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Pm" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 815af5c627df255ef77447aa0ce5195f8d2718f1f8acceb63f6f37e2907587f4" />
+    <node concept="1lnzPE" id="6hgQMAAfUhI" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Pn" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: " />
+    <node concept="1lnzPE" id="6hgQMAAfUhJ" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=sort ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Po" role="1lvGkX">
-      <property role="1lnzPG" value="result=false" />
+    <node concept="1lnzPE" id="6hgQMAAfUjl" role="1lvGkX">
+      <property role="1lnzPG" value="Stopping container " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1QY" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etcal/" />
+    <node concept="1lnzPE" id="6hgQMAAfUkV" role="1lvGkX">
+      <property role="1lnzPG" value="Starting container " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1QZ" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etcal/" />
+    <node concept="1lnzPE" id="6hgQMAAfUmx" role="1lvGkX">
+      <property role="1lnzPG" value="path=sort" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1R0" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="6hgQMAAfUmy" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1R1" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcal/" />
+    <node concept="1lnzPE" id="6hgQMAAfUmz" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=sort ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1R2" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: d8fec9c8d28eba3eb4dd4d72b84d569435171d9672e02c1d114947552c59fffe" />
+    <node concept="1lnzPE" id="6hgQMAAfUm$" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: /usr/bin/sort&#10;/usr/bin/tsort&#10;" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1R3" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: " />
+    <node concept="1lnzPE" id="6hgQMAAgD4Y" role="1lvGkX">
+      <property role="1lnzPG" value="path=null" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1R4" role="1lvGkX">
-      <property role="1lnzPG" value="result=false" />
+    <node concept="1lnzPE" id="6hgQMAAgD4Z" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1SJ" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etca/" />
+    <node concept="1lnzPE" id="6hgQMAAgD50" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=null ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1SK" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etca/" />
+    <node concept="1lnzPE" id="6hgQMAAgD51" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1SL" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="6hgQMAAgD6B" role="1lvGkX">
+      <property role="1lnzPG" value="path=null" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1SM" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etca/" />
+    <node concept="1lnzPE" id="6hgQMAAgD6C" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1SN" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 78c656b517f8d4a784eaefa944c3ca68a66937ee682e268e2b43c49e2c486fe8" />
+    <node concept="1lnzPE" id="6hgQMAAgD6D" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=null ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1SO" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: " />
+    <node concept="1lnzPE" id="6hgQMAAgD6E" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1SP" role="1lvGkX">
-      <property role="1lnzPG" value="result=false" />
+    <node concept="1lnzPE" id="6hgQMAAjnr_" role="1lvGkX">
+      <property role="1lnzPG" value="Stopping container " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Uy" role="1lvGkX">
-      <property role="1lnzPG" value="path=/" />
+    <node concept="1lnzPE" id="6hgQMAAjntb" role="1lvGkX">
+      <property role="1lnzPG" value="Starting container " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Uz" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="6hgQMAAjnuL" role="1lvGkX">
+      <property role="1lnzPG" value="path=sort" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1U$" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
+    <node concept="1lnzPE" id="6hgQMAAjnuM" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1U_" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: bc668b32fb8c0f5bb32f26acb9eafa0d3edc1968f777428c829cd54747367ea0" />
+    <node concept="1lnzPE" id="6hgQMAAjnuN" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=sort ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1UA" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin/&#10;boot/&#10;dev/&#10;etc/&#10;home/&#10;lib/&#10;lib64/&#10;media/&#10;mnt/&#10;opt/&#10;proc/&#10;root/&#10;run/&#10;sbin/&#10;srv/&#10;sys/&#10;test.R&#10;tmp/&#10;usr/&#10;var/&#10;" />
+    <node concept="1lnzPE" id="6hgQMAAjnuO" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: /usr/bin/sort&#10;/usr/bin/tsort&#10;" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Wl" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etc//" />
+    <node concept="1lnzPE" id="6hgQMAAjUHs" role="1lvGkX">
+      <property role="1lnzPG" value="path=sort" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Wm" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etc//" />
+    <node concept="1lnzPE" id="6hgQMAAjUHt" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Wn" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="6hgQMAAjUHu" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=sort ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Wo" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etc//" />
+    <node concept="1lnzPE" id="6hgQMAAjUHv" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: /usr/bin/sort&#10;/usr/bin/tsort&#10;" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Wp" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 46f2a3eceea2d52313278dc9405f3726f46842138ab011b778b2e99f89fed851" />
+    <node concept="1lnzPE" id="51H4qOr__ui" role="1lvGkX">
+      <property role="1lnzPG" value="Stopping container " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Wq" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: adduser.conf&#10;alternatives/&#10;apt/&#10;bash.bashrc&#10;bash_completion.d/&#10;bindresvport.blacklist&#10;binfmt.d/&#10;calendar/&#10;cron.daily/&#10;cron.weekly/&#10;dbus-1/&#10;debconf.conf&#10;debian_version&#10;default/&#10;deluser.conf&#10;dpkg/&#10;environment&#10;fonts/&#10;fstab&#10;gai.conf&#10;groff/&#10;group&#10;group-&#10;gshadow&#10;gshadow-&#10;gss/&#10;host.conf&#10;hostname&#10;hosts&#10;init/&#10;init.d/&#10;inputrc&#10;insserv/&#10;insserv.conf&#10;insserv.conf.d/&#10;iproute2/&#10;issue&#10;issue.net&#10;kernel/&#10;ldap/&#10;ld.so.cache&#10;ld.so.conf&#10;ld.so.conf.d/&#10;libaudit.conf&#10;libpaper.d/&#10;littler.r&#10;locale.alias&#10;locale.gen&#10;localtime&#10;login.defs&#10;logrotate.d/&#10;machine-id&#10;magic&#10;magic.mime&#10;mailcap&#10;mailcap.order&#10;manpath.config&#10;mime.types&#10;mke2fs.conf&#10;modprobe.d/&#10;modules-load.d/&#10;motd&#10;mtab@&#10;network/&#10;networks&#10;nsswitch.conf&#10;opt/&#10;os-release@&#10;pam.conf&#10;pam.d/&#10;papersize&#10;passwd&#10;passwd-&#10;perl/&#10;profile&#10;profile.d/&#10;protocols&#10;python/&#10;python2.7/&#10;R/&#10;rc0.d/&#10;rc1.d/&#10;rc2.d/&#10;rc3.d/&#10;rc4.d/&#10;rc5.d/&#10;rc6.d/&#10;rc.local*&#10;rcS.d/&#10;resolv.conf&#10;rmt*&#10;rpc&#10;securetty&#10;security/&#10;selinux/&#10;services&#10;shadow&#10;shadow-&#10;shells&#10;skel/&#10;staff-group-for-usr-local&#10;subgid&#10;subgid-&#10;subuid&#10;subuid-&#10;sysctl.conf&#10;sysctl.d/&#10;systemd/&#10;terminfo/&#10;timezone&#10;tmpfiles.d/&#10;ucf.conf&#10;udev/&#10;vim/&#10;wgetrc&#10;X11/&#10;xdg/&#10;" />
+    <node concept="1lnzPE" id="51H4qOr__vS" role="1lvGkX">
+      <property role="1lnzPG" value="Starting container " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Wr" role="1lvGkX">
-      <property role="1lnzPG" value="result=true" />
+    <node concept="1lnzPE" id="51H4qOrJ3Wy" role="1lvGkX">
+      <property role="1lnzPG" value="path=null" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Y9" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etc/" />
+    <node concept="1lnzPE" id="51H4qOrJ3Wz" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Ya" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="51H4qOrJ3W$" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=null ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Yb" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etc/" />
+    <node concept="1lnzPE" id="51H4qOrJ3W_" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Yc" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 027e4cbbc07986ee3d382625c7d0fe377befac97e43a57bded662524aa0bc451" />
+    <node concept="1lnzPE" id="51H4qOrJ3Yb" role="1lvGkX">
+      <property role="1lnzPG" value="path=null" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N1Yd" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: adduser.conf&#10;alternatives/&#10;apt/&#10;bash.bashrc&#10;bash_completion.d/&#10;bindresvport.blacklist&#10;binfmt.d/&#10;calendar/&#10;cron.daily/&#10;cron.weekly/&#10;dbus-1/&#10;debconf.conf&#10;debian_version&#10;default/&#10;deluser.conf&#10;dpkg/&#10;environment&#10;fonts/&#10;fstab&#10;gai.conf&#10;groff/&#10;group&#10;group-&#10;gshadow&#10;gshadow-&#10;gss/&#10;host.conf&#10;hostname&#10;hosts&#10;init/&#10;init.d/&#10;inputrc&#10;insserv/&#10;insserv.conf&#10;insserv.conf.d/&#10;iproute2/&#10;issue&#10;issue.net&#10;kernel/&#10;ldap/&#10;ld.so.cache&#10;ld.so.conf&#10;ld.so.conf.d/&#10;libaudit.conf&#10;libpaper.d/&#10;littler.r&#10;locale.alias&#10;locale.gen&#10;localtime&#10;login.defs&#10;logrotate.d/&#10;machine-id&#10;magic&#10;magic.mime&#10;mailcap&#10;mailcap.order&#10;manpath.config&#10;mime.types&#10;mke2fs.conf&#10;modprobe.d/&#10;modules-load.d/&#10;motd&#10;mtab@&#10;network/&#10;networks&#10;nsswitch.conf&#10;opt/&#10;os-release@&#10;pam.conf&#10;pam.d/&#10;papersize&#10;passwd&#10;passwd-&#10;perl/&#10;profile&#10;profile.d/&#10;protocols&#10;python/&#10;python2.7/&#10;R/&#10;rc0.d/&#10;rc1.d/&#10;rc2.d/&#10;rc3.d/&#10;rc4.d/&#10;rc5.d/&#10;rc6.d/&#10;rc.local*&#10;rcS.d/&#10;resolv.conf&#10;rmt*&#10;rpc&#10;securetty&#10;security/&#10;selinux/&#10;services&#10;shadow&#10;shadow-&#10;shells&#10;skel/&#10;staff-group-for-usr-local&#10;subgid&#10;subgid-&#10;subuid&#10;subuid-&#10;sysctl.conf&#10;sysctl.d/&#10;systemd/&#10;terminfo/&#10;timezone&#10;tmpfiles.d/&#10;ucf.conf&#10;udev/&#10;vim/&#10;wgetrc&#10;X11/&#10;xdg/&#10;" />
+    <node concept="1lnzPE" id="51H4qOrJ3Yc" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N202" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etc/alternatives//" />
+    <node concept="1lnzPE" id="51H4qOrJ3Yd" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=null ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N203" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etc/alternatives//" />
+    <node concept="1lnzPE" id="51H4qOrJ3Ye" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N204" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="51H4qOrJ3ZO" role="1lvGkX">
+      <property role="1lnzPG" value="path=" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N205" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etc/alternatives//" />
+    <node concept="1lnzPE" id="51H4qOrJ3ZP" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N206" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 83ceea01f47e8a143519917cc88e0f69cbe95a59e0b7c9986cfc6484701e6b9a" />
+    <node concept="1lnzPE" id="51H4qOrJ3ZQ" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT= ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N207" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: awk@&#10;awk.1.gz@&#10;blas.pc@&#10;builtins.7.gz@&#10;c++@&#10;c89@&#10;c89.1.gz@&#10;c99@&#10;c99.1.gz@&#10;cc@&#10;cpp@&#10;editor@&#10;editor.1.gz@&#10;editor.fr.1.gz@&#10;editor.it.1.gz@&#10;editor.ja.1.gz@&#10;editor.pl.1.gz@&#10;editor.ru.1.gz@&#10;ex@&#10;ex.1.gz@&#10;ex.fr.1.gz@&#10;ex.it.1.gz@&#10;ex.ja.1.gz@&#10;ex.pl.1.gz@&#10;ex.ru.1.gz@&#10;f77@&#10;f95@&#10;from@&#10;from.1.gz@&#10;lapack.pc@&#10;libblas.a@&#10;libblas.so@&#10;libblas.so.3@&#10;libblas.so.3gf@&#10;liblapack.a@&#10;liblapack.so@&#10;liblapack.so.3@&#10;liblapack.so.3gf@&#10;lzcat@&#10;lzcat.1.gz@&#10;lzcmp@&#10;lzcmp.1.gz@&#10;lzdiff@&#10;lzdiff.1.gz@&#10;lzegrep@&#10;lzegrep.1.gz@&#10;lzfgrep@&#10;lzfgrep.1.gz@&#10;lzgrep@&#10;lzgrep.1.gz@&#10;lzless@&#10;lzless.1.gz@&#10;lzma@&#10;lzma.1.gz@&#10;lzmore@&#10;lzmore.1.gz@&#10;nawk@&#10;nawk.1.gz@&#10;pager@&#10;pager.1.gz@&#10;README&#10;rename@&#10;rename.1.gz@&#10;rmt@&#10;rmt.8.gz@&#10;rview@&#10;unlzma@&#10;unlzma.1.gz@&#10;vi@&#10;vi.1.gz@&#10;view@&#10;view.1.gz@&#10;view.fr.1.gz@&#10;view.it.1.gz@&#10;view.ja.1.gz@&#10;view.pl.1.gz@&#10;view.ru.1.gz@&#10;vi.fr.1.gz@&#10;vi.it.1.gz@&#10;vi.ja.1.gz@&#10;vi.pl.1.gz@&#10;vi.ru.1.gz@&#10;w@&#10;w.1.gz@&#10;write@&#10;write.1.gz@&#10;" />
+    <node concept="1lnzPE" id="51H4qOrJ3ZR" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: /bin/bash&#10;/bin/bunzip2&#10;/bin/bzcat&#10;/bin/bzcmp&#10;/bin/bzdiff&#10;/bin/bzegrep&#10;/bin/bzexe&#10;/bin/bzfgrep&#10;/bin/bzgrep&#10;/bin/bzip2&#10;/bin/bzip2recover&#10;/bin/bzless&#10;/bin/bzmore&#10;/bin/cat&#10;/bin/chacl&#10;/bin/chgrp&#10;/bin/chmod&#10;/bin/chown&#10;/bin/cp&#10;/bin/dash&#10;/bin/date&#10;/bin/dd&#10;/bin/df&#10;/bin/dir&#10;/bin/dmesg&#10;/bin/dnsdomainname&#10;/bin/domainname&#10;/bin/echo&#10;/bin/ed&#10;/bin/egrep&#10;/bin/false&#10;/bin/fgrep&#10;/bin/findmnt&#10;/bin/getfacl&#10;/bin/grep&#10;/bin/gunzip&#10;/bin/gzexe&#10;/bin/gzip&#10;/bin/hostname&#10;/bin/ip&#10;/bin/journalctl&#10;/bin/kill&#10;/bin/less&#10;/bin/lessecho&#10;/bin/lessfile&#10;/bin/lesskey&#10;/bin/lesspipe&#10;/bin/ln&#10;/bin/login&#10;/bin/loginctl&#10;/bin/ls&#10;/bin/lsblk&#10;/bin/machinectl&#10;/bin/mkdir&#10;/bin/mknod&#10;/bin/mktemp&#10;/bin/more&#10;/bin/mount&#10;/bin/mountpoint&#10;/bin/mv&#10;/bin/nisdomainname&#10;/bin/pidof&#10;/bin/ping&#10;/bin/ping6&#10;/bin/ps&#10;/bin/pwd&#10;/bin/rbash&#10;/bin/readlink&#10;/bin/red&#10;/bin/rm&#10;/bin/rmdir&#10;/bin/run-parts&#10;/bin/sed&#10;/bin/setfacl&#10;/bin/sh&#10;/bin/sh.distrib&#10;/bin/sleep&#10;/bin/ss&#10;/bin/stty&#10;/bin/su&#10;/bin/sync&#10;/bin/systemctl&#10;/bin/systemd&#10;/bin/systemd-ask-password&#10;/bin/systemd-escape&#10;/bin/systemd-inhibit&#10;/bin/systemd-machine-id-setup&#10;/bin/systemd-notify&#10;/bin/systemd-tmpfiles&#10;/bin/systemd-tty-ask-password-agent&#10;/bin/tailf&#10;/bin/tar&#10;/bin/tempfile&#10;/bin/touch&#10;/bin/true&#10;/bin/udevadm&#10;/bin/umount&#10;/bin/uname&#10;/bin/uncompress&#10;/bin/vdir&#10;/bin/wdctl&#10;/bin/which&#10;/bin/ypdomainname&#10;/bin/zcat&#10;/bin/zcmp&#10;/bin/zdiff&#10;/bin/zegrep&#10;/bin/zfgrep&#10;/bin/zforce&#10;/bin/zgrep&#10;/bin/zless&#10;/bin/zmore&#10;/bin/znew&#10;/sbin/agetty&#10;/sbin/badblocks&#10;/sbin/blkdiscard&#10;/sbin/blkid&#10;/sbin/blockdev&#10;/sbin/bridge&#10;/sbin/capsh&#10;/sbin/cfdisk&#10;/sbin/chcpu&#10;/sbin/ctrlaltdel&#10;/sbin/debugfs&#10;/sbin/dmsetup&#10;/sbin/dumpe2fs&#10;/sbin/e2fsck&#10;/sbin/e2image&#10;/sbin/e2label&#10;/sbin/e2undo&#10;/sbin/fdisk&#10;/sbin/findfs&#10;/sbin/fsck&#10;/sbin/fsck.cramfs&#10;/sbin/fsck.ext2&#10;/sbin/fsck.ext3&#10;/sbin/fsck.ext4&#10;/sbin/fsck.ext4dev&#10;/sbin/fsck.minix&#10;/sbin/fsck.nfs&#10;/sbin/fsfreeze&#10;/sbin/fstab-decode&#10;/sbin/fstrim&#10;/sbin/getcap&#10;/sbin/getpcaps&#10;/sbin/getty&#10;/sbin/halt&#10;/sbin/hwclock&#10;/sbin/init&#10;/sbin/initctl&#10;/sbin/insserv&#10;/sbin/installkernel&#10;/sbin/ip&#10;/sbin/isosize&#10;/sbin/killall5&#10;/sbin/ldconfig&#10;/sbin/ldconfig.real&#10;/sbin/logsave&#10;/sbin/losetup&#10;/sbin/mke2fs&#10;/sbin/mkfs&#10;/sbin/mkfs.bfs&#10;/sbin/mkfs.cramfs&#10;/sbin/mkfs.ext2&#10;/sbin/mkfs.ext3&#10;/sbin/mkfs.ext4&#10;/sbin/mkfs.ext4dev&#10;/sbin/mkfs.minix&#10;/sbin/mkhomedir_helper&#10;/sbin/mkswap&#10;/sbin/pam_tally&#10;/sbin/pam_tally2&#10;/sbin/pivot_root&#10;/sbin/poweroff&#10;/sbin/raw&#10;/sbin/reboot&#10;/sbin/resize2fs&#10;/sbin/rtacct&#10;/sbin/rtmon&#10;/sbin/runlevel&#10;/sbin/runuser&#10;/sbin/setcap&#10;/sbin/sfdisk&#10;/sbin/shadowconfig&#10;/sbin/shutdown&#10;/sbin/start-stop-daemon&#10;/sbin/sulogin&#10;/sbin/swaplabel&#10;/sbin/swapoff&#10;/sbin/swapon&#10;/sbin/switch_root&#10;/sbin/sysctl&#10;/sbin/tc&#10;/sbin/telinit&#10;/sbin/tune2fs&#10;/sbin/udevadm&#10;/sbin/udevd&#10;/sbin/unix_chkpwd&#10;/sbin/unix_update&#10;/sbin/wipefs&#10;/usr/bin/2to3&#10;/usr/bin/2to3-2.7&#10;/usr/bin/R&#10;/usr/bin/Rscript&#10;/usr/bin/X11&#10;/usr/bin/[&#10;/usr/bin/a2p&#10;/usr/bin/addpart&#10;/usr/bin/addr2line&#10;/usr/bin/apropos&#10;/usr/bin/apt&#10;/usr/bin/apt-cache&#10;/usr/bin/apt-cdrom&#10;/usr/bin/apt-config&#10;/usr/bin/apt-get&#10;/usr/bin/apt-key&#10;/usr/bin/apt-mark&#10;/usr/bin/ar&#10;/usr/bin/arch&#10;/usr/bin/as&#10;/usr/bin/awk&#10;/usr/bin/base64&#10;/usr/bin/basename&#10;/usr/bin/bashbug&#10;/usr/bin/bsd-from&#10;/usr/bin/bsd-write&#10;/usr/bin/busctl&#10;/usr/bin/c++&#10;/usr/bin/c++filt&#10;/usr/bin/c2ph&#10;/usr/bin/c89&#10;/usr/bin/c89-gcc&#10;/usr/bin/c99&#10;/usr/bin/c99-gcc&#10;/usr/bin/cal&#10;/usr/bin/calendar&#10;/usr/bin/captoinfo&#10;/usr/bin/catchsegv&#10;/usr/bin/catman&#10;/usr/bin/cc&#10;/usr/bin/cdbs-edit-patch&#10;/usr/bin/chacl&#10;/usr/bin/chage&#10;/usr/bin/chattr&#10;/usr/bin/chcon&#10;/usr/bin/chfn&#10;/usr/bin/chrt&#10;/usr/bin/chsh&#10;/usr/bin/cksum&#10;/usr/bin/clear&#10;/usr/bin/clear_console&#10;/usr/bin/cmp&#10;/usr/bin/col&#10;/usr/bin/colcrt&#10;/usr/bin/colrm&#10;/usr/bin/column&#10;/usr/bin/comm&#10;/usr/bin/compose&#10;/usr/bin/config_data&#10;/usr/bin/corelist&#10;/usr/bin/cpan&#10;/usr/bin/cpp&#10;/usr/bin/cpp-4.9&#10;/usr/bin/csplit&#10;/usr/bin/ctstat&#10;/usr/bin/curl-config&#10;/usr/bin/cut&#10;/usr/bin/debconf&#10;/usr/bin/debconf-apt-progress&#10;/usr/bin/debconf-communicate&#10;/usr/bin/debconf-copydb&#10;/usr/bin/debconf-escape&#10;/usr/bin/debconf-gettextize&#10;/usr/bin/debconf-set-selections&#10;/usr/bin/debconf-show&#10;/usr/bin/debconf-updatepo&#10;/usr/bin/delpart&#10;/usr/bin/dh&#10;/usr/bin/dh_auto_build&#10;/usr/bin/dh_auto_clean&#10;/usr/bin/dh_auto_configure&#10;/usr/bin/dh_auto_install&#10;/usr/bin/dh_auto_test&#10;/usr/bin/dh_autotools-dev_restoreconfig&#10;/usr/bin/dh_autotools-dev_updateconfig&#10;/usr/bin/dh_bugfiles&#10;/usr/bin/dh_builddeb&#10;/usr/bin/dh_clean&#10;/usr/bin/dh_compress&#10;/usr/bin/dh_desktop&#10;/usr/bin/dh_fixperms&#10;/usr/bin/dh_gconf&#10;/usr/bin/dh_gencontrol&#10;/usr/bin/dh_icons&#10;/usr/bin/dh_install&#10;/usr/bin/dh_installcatalogs&#10;/usr/bin/dh_installchangelogs&#10;/usr/bin/dh_installcron&#10;/usr/bin/dh_installdeb&#10;/usr/bin/dh_installdebconf&#10;/usr/bin/dh_installdirs&#10;/usr/bin/dh_installdocs&#10;/usr/bin/dh_installemacsen&#10;/usr/bin/dh_installexamples&#10;/usr/bin/dh_installgsettings&#10;/usr/bin/dh_installifupdown&#10;/usr/bin/dh_installinfo&#10;/usr/bin/dh_installinit&#10;/usr/bin/dh_installlogcheck&#10;/usr/bin/dh_installlogrotate&#10;/usr/bin/dh_installman&#10;/usr/bin/dh_installmanpages&#10;/usr/bin/dh_installmenu&#10;/usr/bin/dh_installmime&#10;/usr/bin/dh_installmodules&#10;/usr/bin/dh_installpam&#10;/usr/bin/dh_installppp&#10;/usr/bin/dh_installudev&#10;/usr/bin/dh_installwm&#10;/usr/bin/dh_installxfonts&#10;/usr/bin/dh_link&#10;/usr/bin/dh_lintian&#10;/usr/bin/dh_listpackages&#10;/usr/bin/dh_makeshlibs&#10;/usr/bin/dh_md5sums&#10;/usr/bin/dh_movefiles&#10;/usr/bin/dh_perl&#10;/usr/bin/dh_prep&#10;/usr/bin/dh_python2&#10;/usr/bin/dh_scrollkeeper&#10;/usr/bin/dh_shlibdeps&#10;/usr/bin/dh_strip&#10;/usr/bin/dh_suidregister&#10;/usr/bin/dh_testdir&#10;/usr/bin/dh_testroot&#10;/usr/bin/dh_ucf&#10;/usr/bin/dh_undocumented&#10;/usr/bin/dh_usrlocal&#10;/usr/bin/diff&#10;/usr/bin/diff3&#10;/usr/bin/dircolors&#10;/usr/bin/dirname&#10;/usr/bin/dpkg&#10;/usr/bin/dpkg-architecture&#10;/usr/bin/dpkg-buildflags&#10;/usr/bin/dpkg-buildpackage&#10;/usr/bin/dpkg-checkbuilddeps&#10;/usr/bin/dpkg-deb&#10;/usr/bin/dpkg-distaddfile&#10;/usr/bin/dpkg-divert&#10;/usr/bin/dpkg-genchanges&#10;/usr/bin/dpkg-gencontrol&#10;/usr/bin/dpkg-gensymbols&#10;/usr/bin/dpkg-maintscript-helper&#10;/usr/bin/dpkg-mergechangelogs&#10;/usr/bin/dpkg-name&#10;/usr/bin/dpkg-parsechangelog&#10;/usr/bin/dpkg-query&#10;/usr/bin/dpkg-scanpackages&#10;/usr/bin/dpkg-scansources&#10;/usr/bin/dpkg-shlibdeps&#10;/usr/bin/dpkg-source&#10;/usr/bin/dpkg-split&#10;/usr/bin/dpkg-statoverride&#10;/usr/bin/dpkg-trigger&#10;/usr/bin/dpkg-vendor&#10;/usr/bin/du&#10;/usr/bin/dwp&#10;/usr/bin/edit&#10;/usr/bin/editor&#10;/usr/bin/elfedit&#10;/usr/bin/enc2xs&#10;/usr/bin/env&#10;/usr/bin/envsubst&#10;/usr/bin/eqn&#10;/usr/bin/ex&#10;/usr/bin/expand&#10;/usr/bin/expiry&#10;/usr/bin/expr&#10;/usr/bin/f77&#10;/usr/bin/f95&#10;/usr/bin/factor&#10;/usr/bin/faillog&#10;/usr/bin/fallocate&#10;/usr/bin/fc-cache&#10;/usr/bin/fc-cat&#10;/usr/bin/fc-list&#10;/usr/bin/fc-match&#10;/usr/bin/fc-pattern&#10;/usr/bin/fc-query&#10;/usr/bin/fc-scan&#10;/usr/bin/fc-validate&#10;/usr/bin/file&#10;/usr/bin/find&#10;/usr/bin/find2perl&#10;/usr/bin/flock&#10;/usr/bin/fmt&#10;/usr/bin/fold&#10;/usr/bin/free&#10;/usr/bin/freetype-config&#10;/usr/bin/from&#10;/usr/bin/funzip&#10;/usr/bin/g++&#10;/usr/bin/g++-4.9&#10;/usr/bin/gapplication&#10;/usr/bin/gcc&#10;/usr/bin/gcc-4.9&#10;/usr/bin/gcc-ar&#10;/usr/bin/gcc-ar-4.9&#10;/usr/bin/gcc-nm&#10;/usr/bin/gcc-nm-4.9&#10;/usr/bin/gcc-ranlib&#10;/usr/bin/gcc-ranlib-4.9&#10;/usr/bin/gcov&#10;/usr/bin/gcov-4.9&#10;/usr/bin/gdbus&#10;/usr/bin/gdbus-codegen&#10;/usr/bin/gencat&#10;/usr/bin/geqn&#10;/usr/bin/getconf&#10;/usr/bin/getent&#10;/usr/bin/getfacl&#10;/usr/bin/getopt&#10;/usr/bin/gettext&#10;/usr/bin/gettext.sh&#10;/usr/bin/gettextize&#10;/usr/bin/gfortran&#10;/usr/bin/gfortran-4.9&#10;/usr/bin/gio-querymodules&#10;/usr/bin/glib-compile-resources&#10;/usr/bin/glib-compile-schemas&#10;/usr/bin/glib-genmarshal&#10;/usr/bin/glib-gettextize&#10;/usr/bin/glib-mkenums&#10;/usr/bin/gobject-query&#10;/usr/bin/gold&#10;/usr/bin/gpasswd&#10;/usr/bin/gpg&#10;/usr/bin/gpg-zip&#10;/usr/bin/gpgsplit&#10;/usr/bin/gpgv&#10;/usr/bin/gpic&#10;/usr/bin/gprof&#10;/usr/bin/gresource&#10;/usr/bin/groff&#10;/usr/bin/grog&#10;/usr/bin/grops&#10;/usr/bin/grotty&#10;/usr/bin/groups&#10;/usr/bin/gsettings&#10;/usr/bin/gtbl&#10;/usr/bin/gtester&#10;/usr/bin/gtester-report&#10;/usr/bin/h2ph&#10;/usr/bin/h2xs&#10;/usr/bin/hd&#10;/usr/bin/head&#10;/usr/bin/helpztags&#10;/usr/bin/hexdump&#10;/usr/bin/hostid&#10;/usr/bin/hostnamectl&#10;/usr/bin/i386&#10;/usr/bin/iconv&#10;/usr/bin/id&#10;/usr/bin/infocmp&#10;/usr/bin/infotocap&#10;/usr/bin/install&#10;/usr/bin/instmodsh&#10;/usr/bin/ionice&#10;/usr/bin/ipcmk&#10;/usr/bin/ipcrm&#10;/usr/bin/ipcs&#10;/usr/bin/ischroot&#10;/usr/bin/join&#10;/usr/bin/json_pp&#10;/usr/bin/last&#10;/usr/bin/lastb&#10;/usr/bin/lastlog&#10;/usr/bin/lcf&#10;/usr/bin/ld&#10;/usr/bin/ld.bfd&#10;/usr/bin/ld.gold&#10;/usr/bin/ldd&#10;/usr/bin/less&#10;/usr/bin/lessecho&#10;/usr/bin/lessfile&#10;/usr/bin/lesskey&#10;/usr/bin/lesspipe&#10;/usr/bin/lexgrog&#10;/usr/bin/libnetcfg&#10;/usr/bin/libpng-config&#10;/usr/bin/libpng12-config&#10;/usr/bin/line&#10;/usr/bin/link&#10;/usr/bin/linux32&#10;/usr/bin/linux64&#10;/usr/bin/lnstat&#10;/usr/bin/locale&#10;/usr/bin/localectl&#10;/usr/bin/localedef&#10;/usr/bin/locate&#10;/usr/bin/logger&#10;/usr/bin/logname&#10;/usr/bin/look&#10;/usr/bin/lorder&#10;/usr/bin/lsattr&#10;/usr/bin/lscpu&#10;/usr/bin/lslocks&#10;/usr/bin/lspgpot&#10;/usr/bin/lzcat&#10;/usr/bin/lzcmp&#10;/usr/bin/lzdiff&#10;/usr/bin/lzegrep&#10;/usr/bin/lzfgrep&#10;/usr/bin/lzgrep&#10;/usr/bin/lzless&#10;/usr/bin/lzma&#10;/usr/bin/lzmainfo&#10;/usr/bin/lzmore&#10;/usr/bin/make&#10;/usr/bin/make-first-existing-target&#10;/usr/bin/man&#10;/usr/bin/mandb&#10;/usr/bin/manpath&#10;/usr/bin/mawk&#10;/usr/bin/mcookie&#10;/usr/bin/md5sum&#10;/usr/bin/md5sum.textutils&#10;/usr/bin/mesg&#10;/usr/bin/mkfifo&#10;/usr/bin/mlocate&#10;/usr/bin/msgattrib&#10;/usr/bin/msgcat&#10;/usr/bin/msgcmp&#10;/usr/bin/msgcomm&#10;/usr/bin/msgconv&#10;/usr/bin/msgen&#10;/usr/bin/msgexec&#10;/usr/bin/msgfilter&#10;/usr/bin/msgfmt&#10;/usr/bin/msggrep&#10;/usr/bin/msginit&#10;/usr/bin/msgmerge&#10;/usr/bin/msgunfmt&#10;/usr/bin/msguniq&#10;/usr/bin/mtrace&#10;/usr/bin/namei&#10;/usr/bin/nawk&#10;/usr/bin/ncal&#10;/usr/bin/ncurses5-config&#10;/usr/bin/ncursesw5-config&#10;/usr/bin/neqn&#10;/usr/bin/newgrp&#10;/usr/bin/ngettext&#10;/usr/bin/nice&#10;/usr/bin/nl&#10;/usr/bin/nm&#10;/usr/bin/nohup&#10;/usr/bin/nproc&#10;/usr/bin/nroff&#10;/usr/bin/nsenter&#10;/usr/bin/nstat&#10;/usr/bin/numfmt&#10;/usr/bin/objcopy&#10;/usr/bin/objdump&#10;/usr/bin/od&#10;/usr/bin/oldfind&#10;/usr/bin/pager&#10;/usr/bin/paperconf&#10;/usr/bin/partx&#10;/usr/bin/passwd&#10;/usr/bin/paste&#10;/usr/bin/patch&#10;/usr/bin/pathchk&#10;/usr/bin/pcre-config&#10;/usr/bin/pdb&#10;/usr/bin/pdb2.7&#10;/usr/bin/perl&#10;/usr/bin/perl5.20.2&#10;/usr/bin/perlbug&#10;/usr/bin/perldoc&#10;/usr/bin/perlivp&#10;/usr/bin/perlthanks&#10;/usr/bin/pg&#10;/usr/bin/pgrep&#10;/usr/bin/pic&#10;/usr/bin/piconv&#10;/usr/bin/pinky&#10;/usr/bin/pkg-config&#10;/usr/bin/pkill&#10;/usr/bin/pl2pm&#10;/usr/bin/pldd&#10;/usr/bin/pmap&#10;/usr/bin/po2debconf&#10;/usr/bin/pod2html&#10;/usr/bin/pod2man&#10;/usr/bin/pod2text&#10;/usr/bin/pod2usage&#10;/usr/bin/podchecker&#10;/usr/bin/podebconf-display-po&#10;/usr/bin/podebconf-report-po&#10;/usr/bin/podselect&#10;/usr/bin/pr&#10;/usr/bin/preconv&#10;/usr/bin/prename&#10;/usr/bin/print&#10;/usr/bin/printenv&#10;/usr/bin/printerbanner&#10;/usr/bin/printf&#10;/usr/bin/prlimit&#10;/usr/bin/prove&#10;/usr/bin/psed&#10;/usr/bin/pstruct&#10;/usr/bin/ptar&#10;/usr/bin/ptardiff&#10;/usr/bin/ptargrep&#10;/usr/bin/ptx&#10;/usr/bin/pwdx&#10;/usr/bin/pyclean&#10;/usr/bin/pycompile&#10;/usr/bin/pydoc&#10;/usr/bin/pydoc2.7&#10;/usr/bin/pygettext&#10;/usr/bin/pygettext2.7&#10;/usr/bin/python&#10;/usr/bin/python2&#10;/usr/bin/python2.7&#10;/usr/bin/pyversions&#10;/usr/bin/r&#10;/usr/bin/ranlib&#10;/usr/bin/readelf&#10;/usr/bin/realpath&#10;/usr/bin/recode-sr-latin&#10;/usr/bin/rename&#10;/usr/bin/rename.ul&#10;/usr/bin/renice&#10;/usr/bin/reset&#10;/usr/bin/resizepart&#10;/usr/bin/rev&#10;/usr/bin/rgrep&#10;/usr/bin/routef&#10;/usr/bin/routel&#10;/usr/bin/rpcgen&#10;/usr/bin/rtstat&#10;/usr/bin/run-mailcap&#10;/usr/bin/runcon&#10;/usr/bin/rview&#10;/usr/bin/s2p&#10;/usr/bin/savelog&#10;/usr/bin/script&#10;/usr/bin/scriptreplay&#10;/usr/bin/sdiff&#10;/usr/bin/see&#10;/usr/bin/select-editor&#10;/usr/bin/sensible-browser&#10;/usr/bin/sensible-editor&#10;/usr/bin/sensible-pager&#10;/usr/bin/seq&#10;/usr/bin/setarch&#10;/usr/bin/setfacl&#10;/usr/bin/setsid&#10;/usr/bin/setterm&#10;/usr/bin/sg&#10;/usr/bin/sha1sum&#10;/usr/bin/sha224sum&#10;/usr/bin/sha256sum&#10;/usr/bin/sha384sum&#10;/usr/bin/sha512sum&#10;/usr/bin/shasum&#10;/usr/bin/shred&#10;/usr/bin/shuf&#10;/usr/bin/size&#10;/usr/bin/skill&#10;/usr/bin/slabtop&#10;/usr/bin/snice&#10;/usr/bin/soelim&#10;/usr/bin/sort&#10;/usr/bin/sotruss&#10;/usr/bin/splain&#10;/usr/bin/split&#10;/usr/bin/sprof&#10;/usr/bin/stat&#10;/usr/bin/stdbuf&#10;/usr/bin/strings&#10;/usr/bin/strip&#10;/usr/bin/sum&#10;/usr/bin/systemd-analyze&#10;/usr/bin/systemd-cat&#10;/usr/bin/systemd-cgls&#10;/usr/bin/systemd-cgtop&#10;/usr/bin/systemd-delta&#10;/usr/bin/systemd-detect-virt&#10;/usr/bin/systemd-nspawn&#10;/usr/bin/systemd-path&#10;/usr/bin/systemd-run&#10;/usr/bin/systemd-stdio-bridge&#10;/usr/bin/tabs&#10;/usr/bin/tac&#10;/usr/bin/tail&#10;/usr/bin/taskset&#10;/usr/bin/tbl&#10;/usr/bin/tee&#10;/usr/bin/test&#10;/usr/bin/tic&#10;/usr/bin/timedatectl&#10;/usr/bin/timeout&#10;/usr/bin/tload&#10;/usr/bin/toe&#10;/usr/bin/top&#10;/usr/bin/touch&#10;/usr/bin/tput&#10;/usr/bin/tr&#10;/usr/bin/troff&#10;/usr/bin/truncate&#10;/usr/bin/tset&#10;/usr/bin/tsort&#10;/usr/bin/tty&#10;/usr/bin/tzselect&#10;/usr/bin/ucf&#10;/usr/bin/ucfq&#10;/usr/bin/ucfr&#10;/usr/bin/ul&#10;/usr/bin/unexpand&#10;/usr/bin/uniq&#10;/usr/bin/unlink&#10;/usr/bin/unlzma&#10;/usr/bin/unshare&#10;/usr/bin/unxz&#10;/usr/bin/unzip&#10;/usr/bin/unzipsfx&#10;/usr/bin/update-alternatives&#10;/usr/bin/updatedb&#10;/usr/bin/updatedb.mlocate&#10;/usr/bin/uptime&#10;/usr/bin/users&#10;/usr/bin/utmpdump&#10;/usr/bin/vi&#10;/usr/bin/view&#10;/usr/bin/vim.tiny&#10;/usr/bin/vmstat&#10;/usr/bin/w&#10;/usr/bin/w.procps&#10;/usr/bin/wall&#10;/usr/bin/watch&#10;/usr/bin/wc&#10;/usr/bin/wget&#10;/usr/bin/whatis&#10;/usr/bin/whereis&#10;/usr/bin/which&#10;/usr/bin/who&#10;/usr/bin/whoami&#10;/usr/bin/write&#10;/usr/bin/x86_64&#10;/usr/bin/x86_64-linux-gnu-addr2line&#10;/usr/bin/x86_64-linux-gnu-ar&#10;/usr/bin/x86_64-linux-gnu-as&#10;/usr/bin/x86_64-linux-gnu-c++filt&#10;/usr/bin/x86_64-linux-gnu-cpp&#10;/usr/bin/x86_64-linux-gnu-cpp-4.9&#10;/usr/bin/x86_64-linux-gnu-dwp&#10;/usr/bin/x86_64-linux-gnu-elfedit&#10;/usr/bin/x86_64-linux-gnu-g++&#10;/usr/bin/x86_64-linux-gnu-g++-4.9&#10;/usr/bin/x86_64-linux-gnu-gcc&#10;/usr/bin/x86_64-linux-gnu-gcc-4.9&#10;/usr/bin/x86_64-linux-gnu-gcc-ar&#10;/usr/bin/x86_64-linux-gnu-gcc-ar-4.9&#10;/usr/bin/x86_64-linux-gnu-gcc-nm&#10;/usr/bin/x86_64-linux-gnu-gcc-nm-4.9&#10;/usr/bin/x86_64-linux-gnu-gcc-ranlib&#10;/usr/bin/x86_64-linux-gnu-gcc-ranlib-4.9&#10;/usr/bin/x86_64-linux-gnu-gcov&#10;/usr/bin/x86_64-linux-gnu-gcov-4.9&#10;/usr/bin/x86_64-linux-gnu-gfortran&#10;/usr/bin/x86_64-linux-gnu-gfortran-4.9&#10;/usr/bin/x86_64-linux-gnu-gprof&#10;/usr/bin/x86_64-linux-gnu-ld&#10;/usr/bin/x86_64-linux-gnu-ld.bfd&#10;/usr/bin/x86_64-linux-gnu-ld.gold&#10;/usr/bin/x86_64-linux-gnu-nm&#10;/usr/bin/x86_64-linux-gnu-objcopy&#10;/usr/bin/x86_64-linux-gnu-objdump&#10;/usr/bin/x86_64-linux-gnu-ranlib&#10;/usr/bin/x86_64-linux-gnu-readelf&#10;/usr/bin/x86_64-linux-gnu-size&#10;/usr/bin/x86_64-linux-gnu-strings&#10;/usr/bin/x86_64-linux-gnu-strip&#10;/usr/bin/x86_64-pc-linux-gnu-pkg-config&#10;/usr/bin/xargs&#10;/usr/bin/xdg-desktop-icon&#10;/usr/bin/xdg-desktop-menu&#10;/usr/bin/xdg-email&#10;/usr/bin/xdg-icon-resource&#10;/usr/bin/xdg-mime&#10;/usr/bin/xdg-open&#10;/usr/bin/xdg-screensaver&#10;/usr/bin/xdg-settings&#10;/usr/bin/xgettext&#10;/usr/bin/xml2-config&#10;/usr/bin/xslt-config&#10;/usr/bin/xsubpp&#10;/usr/bin/xxd&#10;/usr/bin/xz&#10;/usr/bin/xzcat&#10;/usr/bin/xzcmp&#10;/usr/bin/xzdiff&#10;/usr/bin/xzegrep&#10;/usr/bin/xzfgrep&#10;/usr/bin/xzgrep&#10;/usr/bin/xzless&#10;/usr/bin/xzmore&#10;/usr/bin/yes&#10;/usr/bin/zdump&#10;/usr/bin/zip&#10;/usr/bin/zipcloak&#10;/usr/bin/zipdetails&#10;/usr/bin/zipgrep&#10;/usr/bin/zipinfo&#10;/usr/bin/zipnote&#10;/usr/bin/zipsplit&#10;/usr/local/bin/install.r&#10;/usr/local/bin/install2.r&#10;/usr/local/bin/installGithub.r&#10;/usr/local/bin/testInstalled.r&#10;/usr/sbin/accessdb&#10;/usr/sbin/add-shell&#10;/usr/sbin/addgroup&#10;/usr/sbin/adduser&#10;/usr/sbin/arpd&#10;/usr/sbin/chgpasswd&#10;/usr/sbin/chpasswd&#10;/usr/sbin/chroot&#10;/usr/sbin/cpgr&#10;/usr/sbin/cppw&#10;/usr/sbin/delgroup&#10;/usr/sbin/deluser&#10;/usr/sbin/dpkg-divert&#10;/usr/sbin/dpkg-preconfigure&#10;/usr/sbin/dpkg-reconfigure&#10;/usr/sbin/dpkg-statoverride&#10;/usr/sbin/e2freefrag&#10;/usr/sbin/e4defrag&#10;/usr/sbin/fdformat&#10;/usr/sbin/filefrag&#10;/usr/sbin/groupadd&#10;/usr/sbin/groupdel&#10;/usr/sbin/groupmod&#10;/usr/sbin/grpck&#10;/usr/sbin/grpconv&#10;/usr/sbin/grpunconv&#10;/usr/sbin/iconvconfig&#10;/usr/sbin/invoke-rc.d&#10;/usr/sbin/ldattach&#10;/usr/sbin/locale-gen&#10;/usr/sbin/mklost+found&#10;/usr/sbin/newusers&#10;/usr/sbin/nologin&#10;/usr/sbin/pam-auth-update&#10;/usr/sbin/pam_getenv&#10;/usr/sbin/pam_timestamp_check&#10;/usr/sbin/paperconfig&#10;/usr/sbin/policy-rc.d&#10;/usr/sbin/pwck&#10;/usr/sbin/pwconv&#10;/usr/sbin/pwunconv&#10;/usr/sbin/readprofile&#10;/usr/sbin/remove-shell&#10;/usr/sbin/rmt&#10;/usr/sbin/rmt-tar&#10;/usr/sbin/rtcwake&#10;/usr/sbin/service&#10;/usr/sbin/tarcat&#10;/usr/sbin/tunelp&#10;/usr/sbin/tzconfig&#10;/usr/sbin/update-alternatives&#10;/usr/sbin/update-locale&#10;/usr/sbin/update-mime&#10;/usr/sbin/update-passwd&#10;/usr/sbin/update-rc.d&#10;/usr/sbin/useradd&#10;/usr/sbin/userdel&#10;/usr/sbin/usermod&#10;/usr/sbin/validlocale&#10;/usr/sbin/vigr&#10;/usr/sbin/vipw&#10;/usr/sbin/zic&#10;" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N208" role="1lvGkX">
-      <property role="1lnzPG" value="result=true" />
+    <node concept="1lnzPE" id="51H4qOrJ41t" role="1lvGkX">
+      <property role="1lnzPG" value="path=" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N21R" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etc/alternatives/" />
+    <node concept="1lnzPE" id="51H4qOrJ41u" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N21S" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="51H4qOrJ41v" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT= ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N21T" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etc/alternatives/" />
+    <node concept="1lnzPE" id="51H4qOrJ41w" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: /bin/bash&#10;/bin/bunzip2&#10;/bin/bzcat&#10;/bin/bzcmp&#10;/bin/bzdiff&#10;/bin/bzegrep&#10;/bin/bzexe&#10;/bin/bzfgrep&#10;/bin/bzgrep&#10;/bin/bzip2&#10;/bin/bzip2recover&#10;/bin/bzless&#10;/bin/bzmore&#10;/bin/cat&#10;/bin/chacl&#10;/bin/chgrp&#10;/bin/chmod&#10;/bin/chown&#10;/bin/cp&#10;/bin/dash&#10;/bin/date&#10;/bin/dd&#10;/bin/df&#10;/bin/dir&#10;/bin/dmesg&#10;/bin/dnsdomainname&#10;/bin/domainname&#10;/bin/echo&#10;/bin/ed&#10;/bin/egrep&#10;/bin/false&#10;/bin/fgrep&#10;/bin/findmnt&#10;/bin/getfacl&#10;/bin/grep&#10;/bin/gunzip&#10;/bin/gzexe&#10;/bin/gzip&#10;/bin/hostname&#10;/bin/ip&#10;/bin/journalctl&#10;/bin/kill&#10;/bin/less&#10;/bin/lessecho&#10;/bin/lessfile&#10;/bin/lesskey&#10;/bin/lesspipe&#10;/bin/ln&#10;/bin/login&#10;/bin/loginctl&#10;/bin/ls&#10;/bin/lsblk&#10;/bin/machinectl&#10;/bin/mkdir&#10;/bin/mknod&#10;/bin/mktemp&#10;/bin/more&#10;/bin/mount&#10;/bin/mountpoint&#10;/bin/mv&#10;/bin/nisdomainname&#10;/bin/pidof&#10;/bin/ping&#10;/bin/ping6&#10;/bin/ps&#10;/bin/pwd&#10;/bin/rbash&#10;/bin/readlink&#10;/bin/red&#10;/bin/rm&#10;/bin/rmdir&#10;/bin/run-parts&#10;/bin/sed&#10;/bin/setfacl&#10;/bin/sh&#10;/bin/sh.distrib&#10;/bin/sleep&#10;/bin/ss&#10;/bin/stty&#10;/bin/su&#10;/bin/sync&#10;/bin/systemctl&#10;/bin/systemd&#10;/bin/systemd-ask-password&#10;/bin/systemd-escape&#10;/bin/systemd-inhibit&#10;/bin/systemd-machine-id-setup&#10;/bin/systemd-notify&#10;/bin/systemd-tmpfiles&#10;/bin/systemd-tty-ask-password-agent&#10;/bin/tailf&#10;/bin/tar&#10;/bin/tempfile&#10;/bin/touch&#10;/bin/true&#10;/bin/udevadm&#10;/bin/umount&#10;/bin/uname&#10;/bin/uncompress&#10;/bin/vdir&#10;/bin/wdctl&#10;/bin/which&#10;/bin/ypdomainname&#10;/bin/zcat&#10;/bin/zcmp&#10;/bin/zdiff&#10;/bin/zegrep&#10;/bin/zfgrep&#10;/bin/zforce&#10;/bin/zgrep&#10;/bin/zless&#10;/bin/zmore&#10;/bin/znew&#10;/sbin/agetty&#10;/sbin/badblocks&#10;/sbin/blkdiscard&#10;/sbin/blkid&#10;/sbin/blockdev&#10;/sbin/bridge&#10;/sbin/capsh&#10;/sbin/cfdisk&#10;/sbin/chcpu&#10;/sbin/ctrlaltdel&#10;/sbin/debugfs&#10;/sbin/dmsetup&#10;/sbin/dumpe2fs&#10;/sbin/e2fsck&#10;/sbin/e2image&#10;/sbin/e2label&#10;/sbin/e2undo&#10;/sbin/fdisk&#10;/sbin/findfs&#10;/sbin/fsck&#10;/sbin/fsck.cramfs&#10;/sbin/fsck.ext2&#10;/sbin/fsck.ext3&#10;/sbin/fsck.ext4&#10;/sbin/fsck.ext4dev&#10;/sbin/fsck.minix&#10;/sbin/fsck.nfs&#10;/sbin/fsfreeze&#10;/sbin/fstab-decode&#10;/sbin/fstrim&#10;/sbin/getcap&#10;/sbin/getpcaps&#10;/sbin/getty&#10;/sbin/halt&#10;/sbin/hwclock&#10;/sbin/init&#10;/sbin/initctl&#10;/sbin/insserv&#10;/sbin/installkernel&#10;/sbin/ip&#10;/sbin/isosize&#10;/sbin/killall5&#10;/sbin/ldconfig&#10;/sbin/ldconfig.real&#10;/sbin/logsave&#10;/sbin/losetup&#10;/sbin/mke2fs&#10;/sbin/mkfs&#10;/sbin/mkfs.bfs&#10;/sbin/mkfs.cramfs&#10;/sbin/mkfs.ext2&#10;/sbin/mkfs.ext3&#10;/sbin/mkfs.ext4&#10;/sbin/mkfs.ext4dev&#10;/sbin/mkfs.minix&#10;/sbin/mkhomedir_helper&#10;/sbin/mkswap&#10;/sbin/pam_tally&#10;/sbin/pam_tally2&#10;/sbin/pivot_root&#10;/sbin/poweroff&#10;/sbin/raw&#10;/sbin/reboot&#10;/sbin/resize2fs&#10;/sbin/rtacct&#10;/sbin/rtmon&#10;/sbin/runlevel&#10;/sbin/runuser&#10;/sbin/setcap&#10;/sbin/sfdisk&#10;/sbin/shadowconfig&#10;/sbin/shutdown&#10;/sbin/start-stop-daemon&#10;/sbin/sulogin&#10;/sbin/swaplabel&#10;/sbin/swapoff&#10;/sbin/swapon&#10;/sbin/switch_root&#10;/sbin/sysctl&#10;/sbin/tc&#10;/sbin/telinit&#10;/sbin/tune2fs&#10;/sbin/udevadm&#10;/sbin/udevd&#10;/sbin/unix_chkpwd&#10;/sbin/unix_update&#10;/sbin/wipefs&#10;/usr/bin/2to3&#10;/usr/bin/2to3-2.7&#10;/usr/bin/R&#10;/usr/bin/Rscript&#10;/usr/bin/X11&#10;/usr/bin/[&#10;/usr/bin/a2p&#10;/usr/bin/addpart&#10;/usr/bin/addr2line&#10;/usr/bin/apropos&#10;/usr/bin/apt&#10;/usr/bin/apt-cache&#10;/usr/bin/apt-cdrom&#10;/usr/bin/apt-config&#10;/usr/bin/apt-get&#10;/usr/bin/apt-key&#10;/usr/bin/apt-mark&#10;/usr/bin/ar&#10;/usr/bin/arch&#10;/usr/bin/as&#10;/usr/bin/awk&#10;/usr/bin/base64&#10;/usr/bin/basename&#10;/usr/bin/bashbug&#10;/usr/bin/bsd-from&#10;/usr/bin/bsd-write&#10;/usr/bin/busctl&#10;/usr/bin/c++&#10;/usr/bin/c++filt&#10;/usr/bin/c2ph&#10;/usr/bin/c89&#10;/usr/bin/c89-gcc&#10;/usr/bin/c99&#10;/usr/bin/c99-gcc&#10;/usr/bin/cal&#10;/usr/bin/calendar&#10;/usr/bin/captoinfo&#10;/usr/bin/catchsegv&#10;/usr/bin/catman&#10;/usr/bin/cc&#10;/usr/bin/cdbs-edit-patch&#10;/usr/bin/chacl&#10;/usr/bin/chage&#10;/usr/bin/chattr&#10;/usr/bin/chcon&#10;/usr/bin/chfn&#10;/usr/bin/chrt&#10;/usr/bin/chsh&#10;/usr/bin/cksum&#10;/usr/bin/clear&#10;/usr/bin/clear_console&#10;/usr/bin/cmp&#10;/usr/bin/col&#10;/usr/bin/colcrt&#10;/usr/bin/colrm&#10;/usr/bin/column&#10;/usr/bin/comm&#10;/usr/bin/compose&#10;/usr/bin/config_data&#10;/usr/bin/corelist&#10;/usr/bin/cpan&#10;/usr/bin/cpp&#10;/usr/bin/cpp-4.9&#10;/usr/bin/csplit&#10;/usr/bin/ctstat&#10;/usr/bin/curl-config&#10;/usr/bin/cut&#10;/usr/bin/debconf&#10;/usr/bin/debconf-apt-progress&#10;/usr/bin/debconf-communicate&#10;/usr/bin/debconf-copydb&#10;/usr/bin/debconf-escape&#10;/usr/bin/debconf-gettextize&#10;/usr/bin/debconf-set-selections&#10;/usr/bin/debconf-show&#10;/usr/bin/debconf-updatepo&#10;/usr/bin/delpart&#10;/usr/bin/dh&#10;/usr/bin/dh_auto_build&#10;/usr/bin/dh_auto_clean&#10;/usr/bin/dh_auto_configure&#10;/usr/bin/dh_auto_install&#10;/usr/bin/dh_auto_test&#10;/usr/bin/dh_autotools-dev_restoreconfig&#10;/usr/bin/dh_autotools-dev_updateconfig&#10;/usr/bin/dh_bugfiles&#10;/usr/bin/dh_builddeb&#10;/usr/bin/dh_clean&#10;/usr/bin/dh_compress&#10;/usr/bin/dh_desktop&#10;/usr/bin/dh_fixperms&#10;/usr/bin/dh_gconf&#10;/usr/bin/dh_gencontrol&#10;/usr/bin/dh_icons&#10;/usr/bin/dh_install&#10;/usr/bin/dh_installcatalogs&#10;/usr/bin/dh_installchangelogs&#10;/usr/bin/dh_installcron&#10;/usr/bin/dh_installdeb&#10;/usr/bin/dh_installdebconf&#10;/usr/bin/dh_installdirs&#10;/usr/bin/dh_installdocs&#10;/usr/bin/dh_installemacsen&#10;/usr/bin/dh_installexamples&#10;/usr/bin/dh_installgsettings&#10;/usr/bin/dh_installifupdown&#10;/usr/bin/dh_installinfo&#10;/usr/bin/dh_installinit&#10;/usr/bin/dh_installlogcheck&#10;/usr/bin/dh_installlogrotate&#10;/usr/bin/dh_installman&#10;/usr/bin/dh_installmanpages&#10;/usr/bin/dh_installmenu&#10;/usr/bin/dh_installmime&#10;/usr/bin/dh_installmodules&#10;/usr/bin/dh_installpam&#10;/usr/bin/dh_installppp&#10;/usr/bin/dh_installudev&#10;/usr/bin/dh_installwm&#10;/usr/bin/dh_installxfonts&#10;/usr/bin/dh_link&#10;/usr/bin/dh_lintian&#10;/usr/bin/dh_listpackages&#10;/usr/bin/dh_makeshlibs&#10;/usr/bin/dh_md5sums&#10;/usr/bin/dh_movefiles&#10;/usr/bin/dh_perl&#10;/usr/bin/dh_prep&#10;/usr/bin/dh_python2&#10;/usr/bin/dh_scrollkeeper&#10;/usr/bin/dh_shlibdeps&#10;/usr/bin/dh_strip&#10;/usr/bin/dh_suidregister&#10;/usr/bin/dh_testdir&#10;/usr/bin/dh_testroot&#10;/usr/bin/dh_ucf&#10;/usr/bin/dh_undocumented&#10;/usr/bin/dh_usrlocal&#10;/usr/bin/diff&#10;/usr/bin/diff3&#10;/usr/bin/dircolors&#10;/usr/bin/dirname&#10;/usr/bin/dpkg&#10;/usr/bin/dpkg-architecture&#10;/usr/bin/dpkg-buildflags&#10;/usr/bin/dpkg-buildpackage&#10;/usr/bin/dpkg-checkbuilddeps&#10;/usr/bin/dpkg-deb&#10;/usr/bin/dpkg-distaddfile&#10;/usr/bin/dpkg-divert&#10;/usr/bin/dpkg-genchanges&#10;/usr/bin/dpkg-gencontrol&#10;/usr/bin/dpkg-gensymbols&#10;/usr/bin/dpkg-maintscript-helper&#10;/usr/bin/dpkg-mergechangelogs&#10;/usr/bin/dpkg-name&#10;/usr/bin/dpkg-parsechangelog&#10;/usr/bin/dpkg-query&#10;/usr/bin/dpkg-scanpackages&#10;/usr/bin/dpkg-scansources&#10;/usr/bin/dpkg-shlibdeps&#10;/usr/bin/dpkg-source&#10;/usr/bin/dpkg-split&#10;/usr/bin/dpkg-statoverride&#10;/usr/bin/dpkg-trigger&#10;/usr/bin/dpkg-vendor&#10;/usr/bin/du&#10;/usr/bin/dwp&#10;/usr/bin/edit&#10;/usr/bin/editor&#10;/usr/bin/elfedit&#10;/usr/bin/enc2xs&#10;/usr/bin/env&#10;/usr/bin/envsubst&#10;/usr/bin/eqn&#10;/usr/bin/ex&#10;/usr/bin/expand&#10;/usr/bin/expiry&#10;/usr/bin/expr&#10;/usr/bin/f77&#10;/usr/bin/f95&#10;/usr/bin/factor&#10;/usr/bin/faillog&#10;/usr/bin/fallocate&#10;/usr/bin/fc-cache&#10;/usr/bin/fc-cat&#10;/usr/bin/fc-list&#10;/usr/bin/fc-match&#10;/usr/bin/fc-pattern&#10;/usr/bin/fc-query&#10;/usr/bin/fc-scan&#10;/usr/bin/fc-validate&#10;/usr/bin/file&#10;/usr/bin/find&#10;/usr/bin/find2perl&#10;/usr/bin/flock&#10;/usr/bin/fmt&#10;/usr/bin/fold&#10;/usr/bin/free&#10;/usr/bin/freetype-config&#10;/usr/bin/from&#10;/usr/bin/funzip&#10;/usr/bin/g++&#10;/usr/bin/g++-4.9&#10;/usr/bin/gapplication&#10;/usr/bin/gcc&#10;/usr/bin/gcc-4.9&#10;/usr/bin/gcc-ar&#10;/usr/bin/gcc-ar-4.9&#10;/usr/bin/gcc-nm&#10;/usr/bin/gcc-nm-4.9&#10;/usr/bin/gcc-ranlib&#10;/usr/bin/gcc-ranlib-4.9&#10;/usr/bin/gcov&#10;/usr/bin/gcov-4.9&#10;/usr/bin/gdbus&#10;/usr/bin/gdbus-codegen&#10;/usr/bin/gencat&#10;/usr/bin/geqn&#10;/usr/bin/getconf&#10;/usr/bin/getent&#10;/usr/bin/getfacl&#10;/usr/bin/getopt&#10;/usr/bin/gettext&#10;/usr/bin/gettext.sh&#10;/usr/bin/gettextize&#10;/usr/bin/gfortran&#10;/usr/bin/gfortran-4.9&#10;/usr/bin/gio-querymodules&#10;/usr/bin/glib-compile-resources&#10;/usr/bin/glib-compile-schemas&#10;/usr/bin/glib-genmarshal&#10;/usr/bin/glib-gettextize&#10;/usr/bin/glib-mkenums&#10;/usr/bin/gobject-query&#10;/usr/bin/gold&#10;/usr/bin/gpasswd&#10;/usr/bin/gpg&#10;/usr/bin/gpg-zip&#10;/usr/bin/gpgsplit&#10;/usr/bin/gpgv&#10;/usr/bin/gpic&#10;/usr/bin/gprof&#10;/usr/bin/gresource&#10;/usr/bin/groff&#10;/usr/bin/grog&#10;/usr/bin/grops&#10;/usr/bin/grotty&#10;/usr/bin/groups&#10;/usr/bin/gsettings&#10;/usr/bin/gtbl&#10;/usr/bin/gtester&#10;/usr/bin/gtester-report&#10;/usr/bin/h2ph&#10;/usr/bin/h2xs&#10;/usr/bin/hd&#10;/usr/bin/head&#10;/usr/bin/helpztags&#10;/usr/bin/hexdump&#10;/usr/bin/hostid&#10;/usr/bin/hostnamectl&#10;/usr/bin/i386&#10;/usr/bin/iconv&#10;/usr/bin/id&#10;/usr/bin/infocmp&#10;/usr/bin/infotocap&#10;/usr/bin/install&#10;/usr/bin/instmodsh&#10;/usr/bin/ionice&#10;/usr/bin/ipcmk&#10;/usr/bin/ipcrm&#10;/usr/bin/ipcs&#10;/usr/bin/ischroot&#10;/usr/bin/join&#10;/usr/bin/json_pp&#10;/usr/bin/last&#10;/usr/bin/lastb&#10;/usr/bin/lastlog&#10;/usr/bin/lcf&#10;/usr/bin/ld&#10;/usr/bin/ld.bfd&#10;/usr/bin/ld.gold&#10;/usr/bin/ldd&#10;/usr/bin/less&#10;/usr/bin/lessecho&#10;/usr/bin/lessfile&#10;/usr/bin/lesskey&#10;/usr/bin/lesspipe&#10;/usr/bin/lexgrog&#10;/usr/bin/libnetcfg&#10;/usr/bin/libpng-config&#10;/usr/bin/libpng12-config&#10;/usr/bin/line&#10;/usr/bin/link&#10;/usr/bin/linux32&#10;/usr/bin/linux64&#10;/usr/bin/lnstat&#10;/usr/bin/locale&#10;/usr/bin/localectl&#10;/usr/bin/localedef&#10;/usr/bin/locate&#10;/usr/bin/logger&#10;/usr/bin/logname&#10;/usr/bin/look&#10;/usr/bin/lorder&#10;/usr/bin/lsattr&#10;/usr/bin/lscpu&#10;/usr/bin/lslocks&#10;/usr/bin/lspgpot&#10;/usr/bin/lzcat&#10;/usr/bin/lzcmp&#10;/usr/bin/lzdiff&#10;/usr/bin/lzegrep&#10;/usr/bin/lzfgrep&#10;/usr/bin/lzgrep&#10;/usr/bin/lzless&#10;/usr/bin/lzma&#10;/usr/bin/lzmainfo&#10;/usr/bin/lzmore&#10;/usr/bin/make&#10;/usr/bin/make-first-existing-target&#10;/usr/bin/man&#10;/usr/bin/mandb&#10;/usr/bin/manpath&#10;/usr/bin/mawk&#10;/usr/bin/mcookie&#10;/usr/bin/md5sum&#10;/usr/bin/md5sum.textutils&#10;/usr/bin/mesg&#10;/usr/bin/mkfifo&#10;/usr/bin/mlocate&#10;/usr/bin/msgattrib&#10;/usr/bin/msgcat&#10;/usr/bin/msgcmp&#10;/usr/bin/msgcomm&#10;/usr/bin/msgconv&#10;/usr/bin/msgen&#10;/usr/bin/msgexec&#10;/usr/bin/msgfilter&#10;/usr/bin/msgfmt&#10;/usr/bin/msggrep&#10;/usr/bin/msginit&#10;/usr/bin/msgmerge&#10;/usr/bin/msgunfmt&#10;/usr/bin/msguniq&#10;/usr/bin/mtrace&#10;/usr/bin/namei&#10;/usr/bin/nawk&#10;/usr/bin/ncal&#10;/usr/bin/ncurses5-config&#10;/usr/bin/ncursesw5-config&#10;/usr/bin/neqn&#10;/usr/bin/newgrp&#10;/usr/bin/ngettext&#10;/usr/bin/nice&#10;/usr/bin/nl&#10;/usr/bin/nm&#10;/usr/bin/nohup&#10;/usr/bin/nproc&#10;/usr/bin/nroff&#10;/usr/bin/nsenter&#10;/usr/bin/nstat&#10;/usr/bin/numfmt&#10;/usr/bin/objcopy&#10;/usr/bin/objdump&#10;/usr/bin/od&#10;/usr/bin/oldfind&#10;/usr/bin/pager&#10;/usr/bin/paperconf&#10;/usr/bin/partx&#10;/usr/bin/passwd&#10;/usr/bin/paste&#10;/usr/bin/patch&#10;/usr/bin/pathchk&#10;/usr/bin/pcre-config&#10;/usr/bin/pdb&#10;/usr/bin/pdb2.7&#10;/usr/bin/perl&#10;/usr/bin/perl5.20.2&#10;/usr/bin/perlbug&#10;/usr/bin/perldoc&#10;/usr/bin/perlivp&#10;/usr/bin/perlthanks&#10;/usr/bin/pg&#10;/usr/bin/pgrep&#10;/usr/bin/pic&#10;/usr/bin/piconv&#10;/usr/bin/pinky&#10;/usr/bin/pkg-config&#10;/usr/bin/pkill&#10;/usr/bin/pl2pm&#10;/usr/bin/pldd&#10;/usr/bin/pmap&#10;/usr/bin/po2debconf&#10;/usr/bin/pod2html&#10;/usr/bin/pod2man&#10;/usr/bin/pod2text&#10;/usr/bin/pod2usage&#10;/usr/bin/podchecker&#10;/usr/bin/podebconf-display-po&#10;/usr/bin/podebconf-report-po&#10;/usr/bin/podselect&#10;/usr/bin/pr&#10;/usr/bin/preconv&#10;/usr/bin/prename&#10;/usr/bin/print&#10;/usr/bin/printenv&#10;/usr/bin/printerbanner&#10;/usr/bin/printf&#10;/usr/bin/prlimit&#10;/usr/bin/prove&#10;/usr/bin/psed&#10;/usr/bin/pstruct&#10;/usr/bin/ptar&#10;/usr/bin/ptardiff&#10;/usr/bin/ptargrep&#10;/usr/bin/ptx&#10;/usr/bin/pwdx&#10;/usr/bin/pyclean&#10;/usr/bin/pycompile&#10;/usr/bin/pydoc&#10;/usr/bin/pydoc2.7&#10;/usr/bin/pygettext&#10;/usr/bin/pygettext2.7&#10;/usr/bin/python&#10;/usr/bin/python2&#10;/usr/bin/python2.7&#10;/usr/bin/pyversions&#10;/usr/bin/r&#10;/usr/bin/ranlib&#10;/usr/bin/readelf&#10;/usr/bin/realpath&#10;/usr/bin/recode-sr-latin&#10;/usr/bin/rename&#10;/usr/bin/rename.ul&#10;/usr/bin/renice&#10;/usr/bin/reset&#10;/usr/bin/resizepart&#10;/usr/bin/rev&#10;/usr/bin/rgrep&#10;/usr/bin/routef&#10;/usr/bin/routel&#10;/usr/bin/rpcgen&#10;/usr/bin/rtstat&#10;/usr/bin/run-mailcap&#10;/usr/bin/runcon&#10;/usr/bin/rview&#10;/usr/bin/s2p&#10;/usr/bin/savelog&#10;/usr/bin/script&#10;/usr/bin/scriptreplay&#10;/usr/bin/sdiff&#10;/usr/bin/see&#10;/usr/bin/select-editor&#10;/usr/bin/sensible-browser&#10;/usr/bin/sensible-editor&#10;/usr/bin/sensible-pager&#10;/usr/bin/seq&#10;/usr/bin/setarch&#10;/usr/bin/setfacl&#10;/usr/bin/setsid&#10;/usr/bin/setterm&#10;/usr/bin/sg&#10;/usr/bin/sha1sum&#10;/usr/bin/sha224sum&#10;/usr/bin/sha256sum&#10;/usr/bin/sha384sum&#10;/usr/bin/sha512sum&#10;/usr/bin/shasum&#10;/usr/bin/shred&#10;/usr/bin/shuf&#10;/usr/bin/size&#10;/usr/bin/skill&#10;/usr/bin/slabtop&#10;/usr/bin/snice&#10;/usr/bin/soelim&#10;/usr/bin/sort&#10;/usr/bin/sotruss&#10;/usr/bin/splain&#10;/usr/bin/split&#10;/usr/bin/sprof&#10;/usr/bin/stat&#10;/usr/bin/stdbuf&#10;/usr/bin/strings&#10;/usr/bin/strip&#10;/usr/bin/sum&#10;/usr/bin/systemd-analyze&#10;/usr/bin/systemd-cat&#10;/usr/bin/systemd-cgls&#10;/usr/bin/systemd-cgtop&#10;/usr/bin/systemd-delta&#10;/usr/bin/systemd-detect-virt&#10;/usr/bin/systemd-nspawn&#10;/usr/bin/systemd-path&#10;/usr/bin/systemd-run&#10;/usr/bin/systemd-stdio-bridge&#10;/usr/bin/tabs&#10;/usr/bin/tac&#10;/usr/bin/tail&#10;/usr/bin/taskset&#10;/usr/bin/tbl&#10;/usr/bin/tee&#10;/usr/bin/test&#10;/usr/bin/tic&#10;/usr/bin/timedatectl&#10;/usr/bin/timeout&#10;/usr/bin/tload&#10;/usr/bin/toe&#10;/usr/bin/top&#10;/usr/bin/touch&#10;/usr/bin/tput&#10;/usr/bin/tr&#10;/usr/bin/troff&#10;/usr/bin/truncate&#10;/usr/bin/tset&#10;/usr/bin/tsort&#10;/usr/bin/tty&#10;/usr/bin/tzselect&#10;/usr/bin/ucf&#10;/usr/bin/ucfq&#10;/usr/bin/ucfr&#10;/usr/bin/ul&#10;/usr/bin/unexpand&#10;/usr/bin/uniq&#10;/usr/bin/unlink&#10;/usr/bin/unlzma&#10;/usr/bin/unshare&#10;/usr/bin/unxz&#10;/usr/bin/unzip&#10;/usr/bin/unzipsfx&#10;/usr/bin/update-alternatives&#10;/usr/bin/updatedb&#10;/usr/bin/updatedb.mlocate&#10;/usr/bin/uptime&#10;/usr/bin/users&#10;/usr/bin/utmpdump&#10;/usr/bin/vi&#10;/usr/bin/view&#10;/usr/bin/vim.tiny&#10;/usr/bin/vmstat&#10;/usr/bin/w&#10;/usr/bin/w.procps&#10;/usr/bin/wall&#10;/usr/bin/watch&#10;/usr/bin/wc&#10;/usr/bin/wget&#10;/usr/bin/whatis&#10;/usr/bin/whereis&#10;/usr/bin/which&#10;/usr/bin/who&#10;/usr/bin/whoami&#10;/usr/bin/write&#10;/usr/bin/x86_64&#10;/usr/bin/x86_64-linux-gnu-addr2line&#10;/usr/bin/x86_64-linux-gnu-ar&#10;/usr/bin/x86_64-linux-gnu-as&#10;/usr/bin/x86_64-linux-gnu-c++filt&#10;/usr/bin/x86_64-linux-gnu-cpp&#10;/usr/bin/x86_64-linux-gnu-cpp-4.9&#10;/usr/bin/x86_64-linux-gnu-dwp&#10;/usr/bin/x86_64-linux-gnu-elfedit&#10;/usr/bin/x86_64-linux-gnu-g++&#10;/usr/bin/x86_64-linux-gnu-g++-4.9&#10;/usr/bin/x86_64-linux-gnu-gcc&#10;/usr/bin/x86_64-linux-gnu-gcc-4.9&#10;/usr/bin/x86_64-linux-gnu-gcc-ar&#10;/usr/bin/x86_64-linux-gnu-gcc-ar-4.9&#10;/usr/bin/x86_64-linux-gnu-gcc-nm&#10;/usr/bin/x86_64-linux-gnu-gcc-nm-4.9&#10;/usr/bin/x86_64-linux-gnu-gcc-ranlib&#10;/usr/bin/x86_64-linux-gnu-gcc-ranlib-4.9&#10;/usr/bin/x86_64-linux-gnu-gcov&#10;/usr/bin/x86_64-linux-gnu-gcov-4.9&#10;/usr/bin/x86_64-linux-gnu-gfortran&#10;/usr/bin/x86_64-linux-gnu-gfortran-4.9&#10;/usr/bin/x86_64-linux-gnu-gprof&#10;/usr/bin/x86_64-linux-gnu-ld&#10;/usr/bin/x86_64-linux-gnu-ld.bfd&#10;/usr/bin/x86_64-linux-gnu-ld.gold&#10;/usr/bin/x86_64-linux-gnu-nm&#10;/usr/bin/x86_64-linux-gnu-objcopy&#10;/usr/bin/x86_64-linux-gnu-objdump&#10;/usr/bin/x86_64-linux-gnu-ranlib&#10;/usr/bin/x86_64-linux-gnu-readelf&#10;/usr/bin/x86_64-linux-gnu-size&#10;/usr/bin/x86_64-linux-gnu-strings&#10;/usr/bin/x86_64-linux-gnu-strip&#10;/usr/bin/x86_64-pc-linux-gnu-pkg-config&#10;/usr/bin/xargs&#10;/usr/bin/xdg-desktop-icon&#10;/usr/bin/xdg-desktop-menu&#10;/usr/bin/xdg-email&#10;/usr/bin/xdg-icon-resource&#10;/usr/bin/xdg-mime&#10;/usr/bin/xdg-open&#10;/usr/bin/xdg-screensaver&#10;/usr/bin/xdg-settings&#10;/usr/bin/xgettext&#10;/usr/bin/xml2-config&#10;/usr/bin/xslt-config&#10;/usr/bin/xsubpp&#10;/usr/bin/xxd&#10;/usr/bin/xz&#10;/usr/bin/xzcat&#10;/usr/bin/xzcmp&#10;/usr/bin/xzdiff&#10;/usr/bin/xzegrep&#10;/usr/bin/xzfgrep&#10;/usr/bin/xzgrep&#10;/usr/bin/xzless&#10;/usr/bin/xzmore&#10;/usr/bin/yes&#10;/usr/bin/zdump&#10;/usr/bin/zip&#10;/usr/bin/zipcloak&#10;/usr/bin/zipdetails&#10;/usr/bin/zipgrep&#10;/usr/bin/zipinfo&#10;/usr/bin/zipnote&#10;/usr/bin/zipsplit&#10;/usr/local/bin/install.r&#10;/usr/local/bin/install2.r&#10;/usr/local/bin/installGithub.r&#10;/usr/local/bin/testInstalled.r&#10;/usr/sbin/accessdb&#10;/usr/sbin/add-shell&#10;/usr/sbin/addgroup&#10;/usr/sbin/adduser&#10;/usr/sbin/arpd&#10;/usr/sbin/chgpasswd&#10;/usr/sbin/chpasswd&#10;/usr/sbin/chroot&#10;/usr/sbin/cpgr&#10;/usr/sbin/cppw&#10;/usr/sbin/delgroup&#10;/usr/sbin/deluser&#10;/usr/sbin/dpkg-divert&#10;/usr/sbin/dpkg-preconfigure&#10;/usr/sbin/dpkg-reconfigure&#10;/usr/sbin/dpkg-statoverride&#10;/usr/sbin/e2freefrag&#10;/usr/sbin/e4defrag&#10;/usr/sbin/fdformat&#10;/usr/sbin/filefrag&#10;/usr/sbin/groupadd&#10;/usr/sbin/groupdel&#10;/usr/sbin/groupmod&#10;/usr/sbin/grpck&#10;/usr/sbin/grpconv&#10;/usr/sbin/grpunconv&#10;/usr/sbin/iconvconfig&#10;/usr/sbin/invoke-rc.d&#10;/usr/sbin/ldattach&#10;/usr/sbin/locale-gen&#10;/usr/sbin/mklost+found&#10;/usr/sbin/newusers&#10;/usr/sbin/nologin&#10;/usr/sbin/pam-auth-update&#10;/usr/sbin/pam_getenv&#10;/usr/sbin/pam_timestamp_check&#10;/usr/sbin/paperconfig&#10;/usr/sbin/policy-rc.d&#10;/usr/sbin/pwck&#10;/usr/sbin/pwconv&#10;/usr/sbin/pwunconv&#10;/usr/sbin/readprofile&#10;/usr/sbin/remove-shell&#10;/usr/sbin/rmt&#10;/usr/sbin/rmt-tar&#10;/usr/sbin/rtcwake&#10;/usr/sbin/service&#10;/usr/sbin/tarcat&#10;/usr/sbin/tunelp&#10;/usr/sbin/tzconfig&#10;/usr/sbin/update-alternatives&#10;/usr/sbin/update-locale&#10;/usr/sbin/update-mime&#10;/usr/sbin/update-passwd&#10;/usr/sbin/update-rc.d&#10;/usr/sbin/useradd&#10;/usr/sbin/userdel&#10;/usr/sbin/usermod&#10;/usr/sbin/validlocale&#10;/usr/sbin/vigr&#10;/usr/sbin/vipw&#10;/usr/sbin/zic&#10;" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N21U" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: f0c160badb75eac4aec226537b75b385a9fa951f5f73cfefa7e670fcb5b0371b" />
+    <node concept="1lnzPE" id="51H4qOrJ436" role="1lvGkX">
+      <property role="1lnzPG" value="path=" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N21V" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: awk@&#10;awk.1.gz@&#10;blas.pc@&#10;builtins.7.gz@&#10;c++@&#10;c89@&#10;c89.1.gz@&#10;c99@&#10;c99.1.gz@&#10;cc@&#10;cpp@&#10;editor@&#10;editor.1.gz@&#10;editor.fr.1.gz@&#10;editor.it.1.gz@&#10;editor.ja.1.gz@&#10;editor.pl.1.gz@&#10;editor.ru.1.gz@&#10;ex@&#10;ex.1.gz@&#10;ex.fr.1.gz@&#10;ex.it.1.gz@&#10;ex.ja.1.gz@&#10;ex.pl.1.gz@&#10;ex.ru.1.gz@&#10;f77@&#10;f95@&#10;from@&#10;from.1.gz@&#10;lapack.pc@&#10;libblas.a@&#10;libblas.so@&#10;libblas.so.3@&#10;libblas.so.3gf@&#10;liblapack.a@&#10;liblapack.so@&#10;liblapack.so.3@&#10;liblapack.so.3gf@&#10;lzcat@&#10;lzcat.1.gz@&#10;lzcmp@&#10;lzcmp.1.gz@&#10;lzdiff@&#10;lzdiff.1.gz@&#10;lzegrep@&#10;lzegrep.1.gz@&#10;lzfgrep@&#10;lzfgrep.1.gz@&#10;lzgrep@&#10;lzgrep.1.gz@&#10;lzless@&#10;lzless.1.gz@&#10;lzma@&#10;lzma.1.gz@&#10;lzmore@&#10;lzmore.1.gz@&#10;nawk@&#10;nawk.1.gz@&#10;pager@&#10;pager.1.gz@&#10;README&#10;rename@&#10;rename.1.gz@&#10;rmt@&#10;rmt.8.gz@&#10;rview@&#10;unlzma@&#10;unlzma.1.gz@&#10;vi@&#10;vi.1.gz@&#10;view@&#10;view.1.gz@&#10;view.fr.1.gz@&#10;view.it.1.gz@&#10;view.ja.1.gz@&#10;view.pl.1.gz@&#10;view.ru.1.gz@&#10;vi.fr.1.gz@&#10;vi.it.1.gz@&#10;vi.ja.1.gz@&#10;vi.pl.1.gz@&#10;vi.ru.1.gz@&#10;w@&#10;w.1.gz@&#10;write@&#10;write.1.gz@&#10;" />
+    <node concept="1lnzPE" id="51H4qOrJ437" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive3" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N23L" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etc/alternatives/awk.1.gz/" />
+    <node concept="1lnzPE" id="51H4qOrJ438" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT= ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N23M" role="1lvGkX">
-      <property role="1lnzPG" value="path=/etc/alternatives/awk.1.gz/" />
+    <node concept="1lnzPE" id="51H4qOrJ439" role="1lvGkX">
+      <property role="1lnzPG" value="docker locate returned: /bin/bash&#10;/bin/bunzip2&#10;/bin/bzcat&#10;/bin/bzcmp&#10;/bin/bzdiff&#10;/bin/bzegrep&#10;/bin/bzexe&#10;/bin/bzfgrep&#10;/bin/bzgrep&#10;/bin/bzip2&#10;/bin/bzip2recover&#10;/bin/bzless&#10;/bin/bzmore&#10;/bin/cat&#10;/bin/chacl&#10;/bin/chgrp&#10;/bin/chmod&#10;/bin/chown&#10;/bin/cp&#10;/bin/dash&#10;/bin/date&#10;/bin/dd&#10;/bin/df&#10;/bin/dir&#10;/bin/dmesg&#10;/bin/dnsdomainname&#10;/bin/domainname&#10;/bin/echo&#10;/bin/ed&#10;/bin/egrep&#10;/bin/false&#10;/bin/fgrep&#10;/bin/findmnt&#10;/bin/getfacl&#10;/bin/grep&#10;/bin/gunzip&#10;/bin/gzexe&#10;/bin/gzip&#10;/bin/hostname&#10;/bin/ip&#10;/bin/journalctl&#10;/bin/kill&#10;/bin/less&#10;/bin/lessecho&#10;/bin/lessfile&#10;/bin/lesskey&#10;/bin/lesspipe&#10;/bin/ln&#10;/bin/login&#10;/bin/loginctl&#10;/bin/ls&#10;/bin/lsblk&#10;/bin/machinectl&#10;/bin/mkdir&#10;/bin/mknod&#10;/bin/mktemp&#10;/bin/more&#10;/bin/mount&#10;/bin/mountpoint&#10;/bin/mv&#10;/bin/nisdomainname&#10;/bin/pidof&#10;/bin/ping&#10;/bin/ping6&#10;/bin/ps&#10;/bin/pwd&#10;/bin/rbash&#10;/bin/readlink&#10;/bin/red&#10;/bin/rm&#10;/bin/rmdir&#10;/bin/run-parts&#10;/bin/sed&#10;/bin/setfacl&#10;/bin/sh&#10;/bin/sh.distrib&#10;/bin/sleep&#10;/bin/ss&#10;/bin/stty&#10;/bin/su&#10;/bin/sync&#10;/bin/systemctl&#10;/bin/systemd&#10;/bin/systemd-ask-password&#10;/bin/systemd-escape&#10;/bin/systemd-inhibit&#10;/bin/systemd-machine-id-setup&#10;/bin/systemd-notify&#10;/bin/systemd-tmpfiles&#10;/bin/systemd-tty-ask-password-agent&#10;/bin/tailf&#10;/bin/tar&#10;/bin/tempfile&#10;/bin/touch&#10;/bin/true&#10;/bin/udevadm&#10;/bin/umount&#10;/bin/uname&#10;/bin/uncompress&#10;/bin/vdir&#10;/bin/wdctl&#10;/bin/which&#10;/bin/ypdomainname&#10;/bin/zcat&#10;/bin/zcmp&#10;/bin/zdiff&#10;/bin/zegrep&#10;/bin/zfgrep&#10;/bin/zforce&#10;/bin/zgrep&#10;/bin/zless&#10;/bin/zmore&#10;/bin/znew&#10;/sbin/agetty&#10;/sbin/badblocks&#10;/sbin/blkdiscard&#10;/sbin/blkid&#10;/sbin/blockdev&#10;/sbin/bridge&#10;/sbin/capsh&#10;/sbin/cfdisk&#10;/sbin/chcpu&#10;/sbin/ctrlaltdel&#10;/sbin/debugfs&#10;/sbin/dmsetup&#10;/sbin/dumpe2fs&#10;/sbin/e2fsck&#10;/sbin/e2image&#10;/sbin/e2label&#10;/sbin/e2undo&#10;/sbin/fdisk&#10;/sbin/findfs&#10;/sbin/fsck&#10;/sbin/fsck.cramfs&#10;/sbin/fsck.ext2&#10;/sbin/fsck.ext3&#10;/sbin/fsck.ext4&#10;/sbin/fsck.ext4dev&#10;/sbin/fsck.minix&#10;/sbin/fsck.nfs&#10;/sbin/fsfreeze&#10;/sbin/fstab-decode&#10;/sbin/fstrim&#10;/sbin/getcap&#10;/sbin/getpcaps&#10;/sbin/getty&#10;/sbin/halt&#10;/sbin/hwclock&#10;/sbin/init&#10;/sbin/initctl&#10;/sbin/insserv&#10;/sbin/installkernel&#10;/sbin/ip&#10;/sbin/isosize&#10;/sbin/killall5&#10;/sbin/ldconfig&#10;/sbin/ldconfig.real&#10;/sbin/logsave&#10;/sbin/losetup&#10;/sbin/mke2fs&#10;/sbin/mkfs&#10;/sbin/mkfs.bfs&#10;/sbin/mkfs.cramfs&#10;/sbin/mkfs.ext2&#10;/sbin/mkfs.ext3&#10;/sbin/mkfs.ext4&#10;/sbin/mkfs.ext4dev&#10;/sbin/mkfs.minix&#10;/sbin/mkhomedir_helper&#10;/sbin/mkswap&#10;/sbin/pam_tally&#10;/sbin/pam_tally2&#10;/sbin/pivot_root&#10;/sbin/poweroff&#10;/sbin/raw&#10;/sbin/reboot&#10;/sbin/resize2fs&#10;/sbin/rtacct&#10;/sbin/rtmon&#10;/sbin/runlevel&#10;/sbin/runuser&#10;/sbin/setcap&#10;/sbin/sfdisk&#10;/sbin/shadowconfig&#10;/sbin/shutdown&#10;/sbin/start-stop-daemon&#10;/sbin/sulogin&#10;/sbin/swaplabel&#10;/sbin/swapoff&#10;/sbin/swapon&#10;/sbin/switch_root&#10;/sbin/sysctl&#10;/sbin/tc&#10;/sbin/telinit&#10;/sbin/tune2fs&#10;/sbin/udevadm&#10;/sbin/udevd&#10;/sbin/unix_chkpwd&#10;/sbin/unix_update&#10;/sbin/wipefs&#10;/usr/bin/2to3&#10;/usr/bin/2to3-2.7&#10;/usr/bin/R&#10;/usr/bin/Rscript&#10;/usr/bin/X11&#10;/usr/bin/[&#10;/usr/bin/a2p&#10;/usr/bin/addpart&#10;/usr/bin/addr2line&#10;/usr/bin/apropos&#10;/usr/bin/apt&#10;/usr/bin/apt-cache&#10;/usr/bin/apt-cdrom&#10;/usr/bin/apt-config&#10;/usr/bin/apt-get&#10;/usr/bin/apt-key&#10;/usr/bin/apt-mark&#10;/usr/bin/ar&#10;/usr/bin/arch&#10;/usr/bin/as&#10;/usr/bin/awk&#10;/usr/bin/base64&#10;/usr/bin/basename&#10;/usr/bin/bashbug&#10;/usr/bin/bsd-from&#10;/usr/bin/bsd-write&#10;/usr/bin/busctl&#10;/usr/bin/c++&#10;/usr/bin/c++filt&#10;/usr/bin/c2ph&#10;/usr/bin/c89&#10;/usr/bin/c89-gcc&#10;/usr/bin/c99&#10;/usr/bin/c99-gcc&#10;/usr/bin/cal&#10;/usr/bin/calendar&#10;/usr/bin/captoinfo&#10;/usr/bin/catchsegv&#10;/usr/bin/catman&#10;/usr/bin/cc&#10;/usr/bin/cdbs-edit-patch&#10;/usr/bin/chacl&#10;/usr/bin/chage&#10;/usr/bin/chattr&#10;/usr/bin/chcon&#10;/usr/bin/chfn&#10;/usr/bin/chrt&#10;/usr/bin/chsh&#10;/usr/bin/cksum&#10;/usr/bin/clear&#10;/usr/bin/clear_console&#10;/usr/bin/cmp&#10;/usr/bin/col&#10;/usr/bin/colcrt&#10;/usr/bin/colrm&#10;/usr/bin/column&#10;/usr/bin/comm&#10;/usr/bin/compose&#10;/usr/bin/config_data&#10;/usr/bin/corelist&#10;/usr/bin/cpan&#10;/usr/bin/cpp&#10;/usr/bin/cpp-4.9&#10;/usr/bin/csplit&#10;/usr/bin/ctstat&#10;/usr/bin/curl-config&#10;/usr/bin/cut&#10;/usr/bin/debconf&#10;/usr/bin/debconf-apt-progress&#10;/usr/bin/debconf-communicate&#10;/usr/bin/debconf-copydb&#10;/usr/bin/debconf-escape&#10;/usr/bin/debconf-gettextize&#10;/usr/bin/debconf-set-selections&#10;/usr/bin/debconf-show&#10;/usr/bin/debconf-updatepo&#10;/usr/bin/delpart&#10;/usr/bin/dh&#10;/usr/bin/dh_auto_build&#10;/usr/bin/dh_auto_clean&#10;/usr/bin/dh_auto_configure&#10;/usr/bin/dh_auto_install&#10;/usr/bin/dh_auto_test&#10;/usr/bin/dh_autotools-dev_restoreconfig&#10;/usr/bin/dh_autotools-dev_updateconfig&#10;/usr/bin/dh_bugfiles&#10;/usr/bin/dh_builddeb&#10;/usr/bin/dh_clean&#10;/usr/bin/dh_compress&#10;/usr/bin/dh_desktop&#10;/usr/bin/dh_fixperms&#10;/usr/bin/dh_gconf&#10;/usr/bin/dh_gencontrol&#10;/usr/bin/dh_icons&#10;/usr/bin/dh_install&#10;/usr/bin/dh_installcatalogs&#10;/usr/bin/dh_installchangelogs&#10;/usr/bin/dh_installcron&#10;/usr/bin/dh_installdeb&#10;/usr/bin/dh_installdebconf&#10;/usr/bin/dh_installdirs&#10;/usr/bin/dh_installdocs&#10;/usr/bin/dh_installemacsen&#10;/usr/bin/dh_installexamples&#10;/usr/bin/dh_installgsettings&#10;/usr/bin/dh_installifupdown&#10;/usr/bin/dh_installinfo&#10;/usr/bin/dh_installinit&#10;/usr/bin/dh_installlogcheck&#10;/usr/bin/dh_installlogrotate&#10;/usr/bin/dh_installman&#10;/usr/bin/dh_installmanpages&#10;/usr/bin/dh_installmenu&#10;/usr/bin/dh_installmime&#10;/usr/bin/dh_installmodules&#10;/usr/bin/dh_installpam&#10;/usr/bin/dh_installppp&#10;/usr/bin/dh_installudev&#10;/usr/bin/dh_installwm&#10;/usr/bin/dh_installxfonts&#10;/usr/bin/dh_link&#10;/usr/bin/dh_lintian&#10;/usr/bin/dh_listpackages&#10;/usr/bin/dh_makeshlibs&#10;/usr/bin/dh_md5sums&#10;/usr/bin/dh_movefiles&#10;/usr/bin/dh_perl&#10;/usr/bin/dh_prep&#10;/usr/bin/dh_python2&#10;/usr/bin/dh_scrollkeeper&#10;/usr/bin/dh_shlibdeps&#10;/usr/bin/dh_strip&#10;/usr/bin/dh_suidregister&#10;/usr/bin/dh_testdir&#10;/usr/bin/dh_testroot&#10;/usr/bin/dh_ucf&#10;/usr/bin/dh_undocumented&#10;/usr/bin/dh_usrlocal&#10;/usr/bin/diff&#10;/usr/bin/diff3&#10;/usr/bin/dircolors&#10;/usr/bin/dirname&#10;/usr/bin/dpkg&#10;/usr/bin/dpkg-architecture&#10;/usr/bin/dpkg-buildflags&#10;/usr/bin/dpkg-buildpackage&#10;/usr/bin/dpkg-checkbuilddeps&#10;/usr/bin/dpkg-deb&#10;/usr/bin/dpkg-distaddfile&#10;/usr/bin/dpkg-divert&#10;/usr/bin/dpkg-genchanges&#10;/usr/bin/dpkg-gencontrol&#10;/usr/bin/dpkg-gensymbols&#10;/usr/bin/dpkg-maintscript-helper&#10;/usr/bin/dpkg-mergechangelogs&#10;/usr/bin/dpkg-name&#10;/usr/bin/dpkg-parsechangelog&#10;/usr/bin/dpkg-query&#10;/usr/bin/dpkg-scanpackages&#10;/usr/bin/dpkg-scansources&#10;/usr/bin/dpkg-shlibdeps&#10;/usr/bin/dpkg-source&#10;/usr/bin/dpkg-split&#10;/usr/bin/dpkg-statoverride&#10;/usr/bin/dpkg-trigger&#10;/usr/bin/dpkg-vendor&#10;/usr/bin/du&#10;/usr/bin/dwp&#10;/usr/bin/edit&#10;/usr/bin/editor&#10;/usr/bin/elfedit&#10;/usr/bin/enc2xs&#10;/usr/bin/env&#10;/usr/bin/envsubst&#10;/usr/bin/eqn&#10;/usr/bin/ex&#10;/usr/bin/expand&#10;/usr/bin/expiry&#10;/usr/bin/expr&#10;/usr/bin/f77&#10;/usr/bin/f95&#10;/usr/bin/factor&#10;/usr/bin/faillog&#10;/usr/bin/fallocate&#10;/usr/bin/fc-cache&#10;/usr/bin/fc-cat&#10;/usr/bin/fc-list&#10;/usr/bin/fc-match&#10;/usr/bin/fc-pattern&#10;/usr/bin/fc-query&#10;/usr/bin/fc-scan&#10;/usr/bin/fc-validate&#10;/usr/bin/file&#10;/usr/bin/find&#10;/usr/bin/find2perl&#10;/usr/bin/flock&#10;/usr/bin/fmt&#10;/usr/bin/fold&#10;/usr/bin/free&#10;/usr/bin/freetype-config&#10;/usr/bin/from&#10;/usr/bin/funzip&#10;/usr/bin/g++&#10;/usr/bin/g++-4.9&#10;/usr/bin/gapplication&#10;/usr/bin/gcc&#10;/usr/bin/gcc-4.9&#10;/usr/bin/gcc-ar&#10;/usr/bin/gcc-ar-4.9&#10;/usr/bin/gcc-nm&#10;/usr/bin/gcc-nm-4.9&#10;/usr/bin/gcc-ranlib&#10;/usr/bin/gcc-ranlib-4.9&#10;/usr/bin/gcov&#10;/usr/bin/gcov-4.9&#10;/usr/bin/gdbus&#10;/usr/bin/gdbus-codegen&#10;/usr/bin/gencat&#10;/usr/bin/geqn&#10;/usr/bin/getconf&#10;/usr/bin/getent&#10;/usr/bin/getfacl&#10;/usr/bin/getopt&#10;/usr/bin/gettext&#10;/usr/bin/gettext.sh&#10;/usr/bin/gettextize&#10;/usr/bin/gfortran&#10;/usr/bin/gfortran-4.9&#10;/usr/bin/gio-querymodules&#10;/usr/bin/glib-compile-resources&#10;/usr/bin/glib-compile-schemas&#10;/usr/bin/glib-genmarshal&#10;/usr/bin/glib-gettextize&#10;/usr/bin/glib-mkenums&#10;/usr/bin/gobject-query&#10;/usr/bin/gold&#10;/usr/bin/gpasswd&#10;/usr/bin/gpg&#10;/usr/bin/gpg-zip&#10;/usr/bin/gpgsplit&#10;/usr/bin/gpgv&#10;/usr/bin/gpic&#10;/usr/bin/gprof&#10;/usr/bin/gresource&#10;/usr/bin/groff&#10;/usr/bin/grog&#10;/usr/bin/grops&#10;/usr/bin/grotty&#10;/usr/bin/groups&#10;/usr/bin/gsettings&#10;/usr/bin/gtbl&#10;/usr/bin/gtester&#10;/usr/bin/gtester-report&#10;/usr/bin/h2ph&#10;/usr/bin/h2xs&#10;/usr/bin/hd&#10;/usr/bin/head&#10;/usr/bin/helpztags&#10;/usr/bin/hexdump&#10;/usr/bin/hostid&#10;/usr/bin/hostnamectl&#10;/usr/bin/i386&#10;/usr/bin/iconv&#10;/usr/bin/id&#10;/usr/bin/infocmp&#10;/usr/bin/infotocap&#10;/usr/bin/install&#10;/usr/bin/instmodsh&#10;/usr/bin/ionice&#10;/usr/bin/ipcmk&#10;/usr/bin/ipcrm&#10;/usr/bin/ipcs&#10;/usr/bin/ischroot&#10;/usr/bin/join&#10;/usr/bin/json_pp&#10;/usr/bin/last&#10;/usr/bin/lastb&#10;/usr/bin/lastlog&#10;/usr/bin/lcf&#10;/usr/bin/ld&#10;/usr/bin/ld.bfd&#10;/usr/bin/ld.gold&#10;/usr/bin/ldd&#10;/usr/bin/less&#10;/usr/bin/lessecho&#10;/usr/bin/lessfile&#10;/usr/bin/lesskey&#10;/usr/bin/lesspipe&#10;/usr/bin/lexgrog&#10;/usr/bin/libnetcfg&#10;/usr/bin/libpng-config&#10;/usr/bin/libpng12-config&#10;/usr/bin/line&#10;/usr/bin/link&#10;/usr/bin/linux32&#10;/usr/bin/linux64&#10;/usr/bin/lnstat&#10;/usr/bin/locale&#10;/usr/bin/localectl&#10;/usr/bin/localedef&#10;/usr/bin/locate&#10;/usr/bin/logger&#10;/usr/bin/logname&#10;/usr/bin/look&#10;/usr/bin/lorder&#10;/usr/bin/lsattr&#10;/usr/bin/lscpu&#10;/usr/bin/lslocks&#10;/usr/bin/lspgpot&#10;/usr/bin/lzcat&#10;/usr/bin/lzcmp&#10;/usr/bin/lzdiff&#10;/usr/bin/lzegrep&#10;/usr/bin/lzfgrep&#10;/usr/bin/lzgrep&#10;/usr/bin/lzless&#10;/usr/bin/lzma&#10;/usr/bin/lzmainfo&#10;/usr/bin/lzmore&#10;/usr/bin/make&#10;/usr/bin/make-first-existing-target&#10;/usr/bin/man&#10;/usr/bin/mandb&#10;/usr/bin/manpath&#10;/usr/bin/mawk&#10;/usr/bin/mcookie&#10;/usr/bin/md5sum&#10;/usr/bin/md5sum.textutils&#10;/usr/bin/mesg&#10;/usr/bin/mkfifo&#10;/usr/bin/mlocate&#10;/usr/bin/msgattrib&#10;/usr/bin/msgcat&#10;/usr/bin/msgcmp&#10;/usr/bin/msgcomm&#10;/usr/bin/msgconv&#10;/usr/bin/msgen&#10;/usr/bin/msgexec&#10;/usr/bin/msgfilter&#10;/usr/bin/msgfmt&#10;/usr/bin/msggrep&#10;/usr/bin/msginit&#10;/usr/bin/msgmerge&#10;/usr/bin/msgunfmt&#10;/usr/bin/msguniq&#10;/usr/bin/mtrace&#10;/usr/bin/namei&#10;/usr/bin/nawk&#10;/usr/bin/ncal&#10;/usr/bin/ncurses5-config&#10;/usr/bin/ncursesw5-config&#10;/usr/bin/neqn&#10;/usr/bin/newgrp&#10;/usr/bin/ngettext&#10;/usr/bin/nice&#10;/usr/bin/nl&#10;/usr/bin/nm&#10;/usr/bin/nohup&#10;/usr/bin/nproc&#10;/usr/bin/nroff&#10;/usr/bin/nsenter&#10;/usr/bin/nstat&#10;/usr/bin/numfmt&#10;/usr/bin/objcopy&#10;/usr/bin/objdump&#10;/usr/bin/od&#10;/usr/bin/oldfind&#10;/usr/bin/pager&#10;/usr/bin/paperconf&#10;/usr/bin/partx&#10;/usr/bin/passwd&#10;/usr/bin/paste&#10;/usr/bin/patch&#10;/usr/bin/pathchk&#10;/usr/bin/pcre-config&#10;/usr/bin/pdb&#10;/usr/bin/pdb2.7&#10;/usr/bin/perl&#10;/usr/bin/perl5.20.2&#10;/usr/bin/perlbug&#10;/usr/bin/perldoc&#10;/usr/bin/perlivp&#10;/usr/bin/perlthanks&#10;/usr/bin/pg&#10;/usr/bin/pgrep&#10;/usr/bin/pic&#10;/usr/bin/piconv&#10;/usr/bin/pinky&#10;/usr/bin/pkg-config&#10;/usr/bin/pkill&#10;/usr/bin/pl2pm&#10;/usr/bin/pldd&#10;/usr/bin/pmap&#10;/usr/bin/po2debconf&#10;/usr/bin/pod2html&#10;/usr/bin/pod2man&#10;/usr/bin/pod2text&#10;/usr/bin/pod2usage&#10;/usr/bin/podchecker&#10;/usr/bin/podebconf-display-po&#10;/usr/bin/podebconf-report-po&#10;/usr/bin/podselect&#10;/usr/bin/pr&#10;/usr/bin/preconv&#10;/usr/bin/prename&#10;/usr/bin/print&#10;/usr/bin/printenv&#10;/usr/bin/printerbanner&#10;/usr/bin/printf&#10;/usr/bin/prlimit&#10;/usr/bin/prove&#10;/usr/bin/psed&#10;/usr/bin/pstruct&#10;/usr/bin/ptar&#10;/usr/bin/ptardiff&#10;/usr/bin/ptargrep&#10;/usr/bin/ptx&#10;/usr/bin/pwdx&#10;/usr/bin/pyclean&#10;/usr/bin/pycompile&#10;/usr/bin/pydoc&#10;/usr/bin/pydoc2.7&#10;/usr/bin/pygettext&#10;/usr/bin/pygettext2.7&#10;/usr/bin/python&#10;/usr/bin/python2&#10;/usr/bin/python2.7&#10;/usr/bin/pyversions&#10;/usr/bin/r&#10;/usr/bin/ranlib&#10;/usr/bin/readelf&#10;/usr/bin/realpath&#10;/usr/bin/recode-sr-latin&#10;/usr/bin/rename&#10;/usr/bin/rename.ul&#10;/usr/bin/renice&#10;/usr/bin/reset&#10;/usr/bin/resizepart&#10;/usr/bin/rev&#10;/usr/bin/rgrep&#10;/usr/bin/routef&#10;/usr/bin/routel&#10;/usr/bin/rpcgen&#10;/usr/bin/rtstat&#10;/usr/bin/run-mailcap&#10;/usr/bin/runcon&#10;/usr/bin/rview&#10;/usr/bin/s2p&#10;/usr/bin/savelog&#10;/usr/bin/script&#10;/usr/bin/scriptreplay&#10;/usr/bin/sdiff&#10;/usr/bin/see&#10;/usr/bin/select-editor&#10;/usr/bin/sensible-browser&#10;/usr/bin/sensible-editor&#10;/usr/bin/sensible-pager&#10;/usr/bin/seq&#10;/usr/bin/setarch&#10;/usr/bin/setfacl&#10;/usr/bin/setsid&#10;/usr/bin/setterm&#10;/usr/bin/sg&#10;/usr/bin/sha1sum&#10;/usr/bin/sha224sum&#10;/usr/bin/sha256sum&#10;/usr/bin/sha384sum&#10;/usr/bin/sha512sum&#10;/usr/bin/shasum&#10;/usr/bin/shred&#10;/usr/bin/shuf&#10;/usr/bin/size&#10;/usr/bin/skill&#10;/usr/bin/slabtop&#10;/usr/bin/snice&#10;/usr/bin/soelim&#10;/usr/bin/sort&#10;/usr/bin/sotruss&#10;/usr/bin/splain&#10;/usr/bin/split&#10;/usr/bin/sprof&#10;/usr/bin/stat&#10;/usr/bin/stdbuf&#10;/usr/bin/strings&#10;/usr/bin/strip&#10;/usr/bin/sum&#10;/usr/bin/systemd-analyze&#10;/usr/bin/systemd-cat&#10;/usr/bin/systemd-cgls&#10;/usr/bin/systemd-cgtop&#10;/usr/bin/systemd-delta&#10;/usr/bin/systemd-detect-virt&#10;/usr/bin/systemd-nspawn&#10;/usr/bin/systemd-path&#10;/usr/bin/systemd-run&#10;/usr/bin/systemd-stdio-bridge&#10;/usr/bin/tabs&#10;/usr/bin/tac&#10;/usr/bin/tail&#10;/usr/bin/taskset&#10;/usr/bin/tbl&#10;/usr/bin/tee&#10;/usr/bin/test&#10;/usr/bin/tic&#10;/usr/bin/timedatectl&#10;/usr/bin/timeout&#10;/usr/bin/tload&#10;/usr/bin/toe&#10;/usr/bin/top&#10;/usr/bin/touch&#10;/usr/bin/tput&#10;/usr/bin/tr&#10;/usr/bin/troff&#10;/usr/bin/truncate&#10;/usr/bin/tset&#10;/usr/bin/tsort&#10;/usr/bin/tty&#10;/usr/bin/tzselect&#10;/usr/bin/ucf&#10;/usr/bin/ucfq&#10;/usr/bin/ucfr&#10;/usr/bin/ul&#10;/usr/bin/unexpand&#10;/usr/bin/uniq&#10;/usr/bin/unlink&#10;/usr/bin/unlzma&#10;/usr/bin/unshare&#10;/usr/bin/unxz&#10;/usr/bin/unzip&#10;/usr/bin/unzipsfx&#10;/usr/bin/update-alternatives&#10;/usr/bin/updatedb&#10;/usr/bin/updatedb.mlocate&#10;/usr/bin/uptime&#10;/usr/bin/users&#10;/usr/bin/utmpdump&#10;/usr/bin/vi&#10;/usr/bin/view&#10;/usr/bin/vim.tiny&#10;/usr/bin/vmstat&#10;/usr/bin/w&#10;/usr/bin/w.procps&#10;/usr/bin/wall&#10;/usr/bin/watch&#10;/usr/bin/wc&#10;/usr/bin/wget&#10;/usr/bin/whatis&#10;/usr/bin/whereis&#10;/usr/bin/which&#10;/usr/bin/who&#10;/usr/bin/whoami&#10;/usr/bin/write&#10;/usr/bin/x86_64&#10;/usr/bin/x86_64-linux-gnu-addr2line&#10;/usr/bin/x86_64-linux-gnu-ar&#10;/usr/bin/x86_64-linux-gnu-as&#10;/usr/bin/x86_64-linux-gnu-c++filt&#10;/usr/bin/x86_64-linux-gnu-cpp&#10;/usr/bin/x86_64-linux-gnu-cpp-4.9&#10;/usr/bin/x86_64-linux-gnu-dwp&#10;/usr/bin/x86_64-linux-gnu-elfedit&#10;/usr/bin/x86_64-linux-gnu-g++&#10;/usr/bin/x86_64-linux-gnu-g++-4.9&#10;/usr/bin/x86_64-linux-gnu-gcc&#10;/usr/bin/x86_64-linux-gnu-gcc-4.9&#10;/usr/bin/x86_64-linux-gnu-gcc-ar&#10;/usr/bin/x86_64-linux-gnu-gcc-ar-4.9&#10;/usr/bin/x86_64-linux-gnu-gcc-nm&#10;/usr/bin/x86_64-linux-gnu-gcc-nm-4.9&#10;/usr/bin/x86_64-linux-gnu-gcc-ranlib&#10;/usr/bin/x86_64-linux-gnu-gcc-ranlib-4.9&#10;/usr/bin/x86_64-linux-gnu-gcov&#10;/usr/bin/x86_64-linux-gnu-gcov-4.9&#10;/usr/bin/x86_64-linux-gnu-gfortran&#10;/usr/bin/x86_64-linux-gnu-gfortran-4.9&#10;/usr/bin/x86_64-linux-gnu-gprof&#10;/usr/bin/x86_64-linux-gnu-ld&#10;/usr/bin/x86_64-linux-gnu-ld.bfd&#10;/usr/bin/x86_64-linux-gnu-ld.gold&#10;/usr/bin/x86_64-linux-gnu-nm&#10;/usr/bin/x86_64-linux-gnu-objcopy&#10;/usr/bin/x86_64-linux-gnu-objdump&#10;/usr/bin/x86_64-linux-gnu-ranlib&#10;/usr/bin/x86_64-linux-gnu-readelf&#10;/usr/bin/x86_64-linux-gnu-size&#10;/usr/bin/x86_64-linux-gnu-strings&#10;/usr/bin/x86_64-linux-gnu-strip&#10;/usr/bin/x86_64-pc-linux-gnu-pkg-config&#10;/usr/bin/xargs&#10;/usr/bin/xdg-desktop-icon&#10;/usr/bin/xdg-desktop-menu&#10;/usr/bin/xdg-email&#10;/usr/bin/xdg-icon-resource&#10;/usr/bin/xdg-mime&#10;/usr/bin/xdg-open&#10;/usr/bin/xdg-screensaver&#10;/usr/bin/xdg-settings&#10;/usr/bin/xgettext&#10;/usr/bin/xml2-config&#10;/usr/bin/xslt-config&#10;/usr/bin/xsubpp&#10;/usr/bin/xxd&#10;/usr/bin/xz&#10;/usr/bin/xzcat&#10;/usr/bin/xzcmp&#10;/usr/bin/xzdiff&#10;/usr/bin/xzegrep&#10;/usr/bin/xzfgrep&#10;/usr/bin/xzgrep&#10;/usr/bin/xzless&#10;/usr/bin/xzmore&#10;/usr/bin/yes&#10;/usr/bin/zdump&#10;/usr/bin/zip&#10;/usr/bin/zipcloak&#10;/usr/bin/zipdetails&#10;/usr/bin/zipgrep&#10;/usr/bin/zipinfo&#10;/usr/bin/zipnote&#10;/usr/bin/zipsplit&#10;/usr/local/bin/install.r&#10;/usr/local/bin/install2.r&#10;/usr/local/bin/installGithub.r&#10;/usr/local/bin/testInstalled.r&#10;/usr/sbin/accessdb&#10;/usr/sbin/add-shell&#10;/usr/sbin/addgroup&#10;/usr/sbin/adduser&#10;/usr/sbin/arpd&#10;/usr/sbin/chgpasswd&#10;/usr/sbin/chpasswd&#10;/usr/sbin/chroot&#10;/usr/sbin/cpgr&#10;/usr/sbin/cppw&#10;/usr/sbin/delgroup&#10;/usr/sbin/deluser&#10;/usr/sbin/dpkg-divert&#10;/usr/sbin/dpkg-preconfigure&#10;/usr/sbin/dpkg-reconfigure&#10;/usr/sbin/dpkg-statoverride&#10;/usr/sbin/e2freefrag&#10;/usr/sbin/e4defrag&#10;/usr/sbin/fdformat&#10;/usr/sbin/filefrag&#10;/usr/sbin/groupadd&#10;/usr/sbin/groupdel&#10;/usr/sbin/groupmod&#10;/usr/sbin/grpck&#10;/usr/sbin/grpconv&#10;/usr/sbin/grpunconv&#10;/usr/sbin/iconvconfig&#10;/usr/sbin/invoke-rc.d&#10;/usr/sbin/ldattach&#10;/usr/sbin/locale-gen&#10;/usr/sbin/mklost+found&#10;/usr/sbin/newusers&#10;/usr/sbin/nologin&#10;/usr/sbin/pam-auth-update&#10;/usr/sbin/pam_getenv&#10;/usr/sbin/pam_timestamp_check&#10;/usr/sbin/paperconfig&#10;/usr/sbin/policy-rc.d&#10;/usr/sbin/pwck&#10;/usr/sbin/pwconv&#10;/usr/sbin/pwunconv&#10;/usr/sbin/readprofile&#10;/usr/sbin/remove-shell&#10;/usr/sbin/rmt&#10;/usr/sbin/rmt-tar&#10;/usr/sbin/rtcwake&#10;/usr/sbin/service&#10;/usr/sbin/tarcat&#10;/usr/sbin/tunelp&#10;/usr/sbin/tzconfig&#10;/usr/sbin/update-alternatives&#10;/usr/sbin/update-locale&#10;/usr/sbin/update-mime&#10;/usr/sbin/update-passwd&#10;/usr/sbin/update-rc.d&#10;/usr/sbin/useradd&#10;/usr/sbin/userdel&#10;/usr/sbin/usermod&#10;/usr/sbin/validlocale&#10;/usr/sbin/vigr&#10;/usr/sbin/vipw&#10;/usr/sbin/zic&#10;" />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N23N" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
+    <node concept="1lnzPE" id="51H4qOrLaFn" role="1lvGkX">
+      <property role="1lnzPG" value="Stopping container " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N23O" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etc/alternatives/awk.1.gz/" />
+    <node concept="1lnzPE" id="51H4qOrLaGX" role="1lvGkX">
+      <property role="1lnzPG" value="Stopping container " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N23P" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 66ebc6962643bf2a527b98e8da062b4ca037c201f6a165641211bf1abe78681d" />
+    <node concept="1lnzPE" id="51H4qOrLaIz" role="1lvGkX">
+      <property role="1lnzPG" value="Starting container " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N23Q" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: " />
+    <node concept="1lnzPE" id="51H4qOrMGCH" role="1lvGkX">
+      <property role="1lnzPG" value="Stopping container " />
     </node>
-    <node concept="1lnzPE" id="6hgQMA_N23R" role="1lvGkX">
-      <property role="1lnzPG" value="result=false" />
+    <node concept="1lnzPE" id="51H4qOrMGEj" role="1lvGkX">
+      <property role="1lnzPG" value="Starting container " />
     </node>
   </node>
   <node concept="GbKB8" id="VMSWAFibhT">
     <property role="TrG5h" value="ABSWBWCVGL" />
     <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="false" />
+    <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="VMSWAFibhP" resolve="image" />
+    <ref role="3zcJb$" to="x247:6hgQMAA3qzj" resolve="Dockerfile_Image" />
   </node>
   <node concept="GbKB8" id="4TFseGE9IoG">
     <property role="TrG5h" value="interactive" />
@@ -7309,6 +7288,72 @@
     <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="sleep 1000" />
     <ref role="3zcJb$" node="56asy6tpjxH" resolve="image" />
+  </node>
+  <node concept="GbKB8" id="6hgQMA_W_bi">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="rocker-metar" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="56asy6tpjxH" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="6hgQMAA5rLh">
+    <property role="GSh9r" value="campagnelab/test:latest" />
+    <property role="2E_JEh" value="test" />
+    <property role="TrG5h" value="image" />
+  </node>
+  <node concept="GbKB8" id="6hgQMAA5rLl">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="test" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
+  </node>
+  <node concept="GbKB8" id="6hgQMAA5shk">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="test" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
+  </node>
+  <node concept="GbKB8" id="6hgQMAA5sTM">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="test" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
+  </node>
+  <node concept="GbKB8" id="6hgQMAA5tmW">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="test" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
+  </node>
+  <node concept="GbKB8" id="6hgQMAA5tPn">
+    <property role="TrG5h" value="interactive2" />
+    <property role="GbyUj" value="test" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="6hgQMAA5tWs">
+    <property role="GSh9r" value="campagnelab/test:latest" />
+    <property role="2E_JEh" value="test" />
+    <property role="TrG5h" value="image" />
+  </node>
+  <node concept="GbKB8" id="6hgQMAA5tWw">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="test" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="6hgQMAA5tWs" resolve="image" />
+  </node>
+  <node concept="GbKB8" id="6hgQMAA5tZK">
+    <property role="TrG5h" value="interactive3" />
+    <property role="GbyUj" value="test" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="6hgQMAA5tWs" resolve="image" />
   </node>
 </model>
 
