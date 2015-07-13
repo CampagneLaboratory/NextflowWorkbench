@@ -100,7 +100,7 @@
       <node concept="3clFbS" id="VMSWAF3YlL" role="2VODD2">
         <node concept="3clFbF" id="VMSWAF3YEG" role="3cqZAp">
           <node concept="Xl_RD" id="VMSWAF3YEF" role="3clFbG">
-            <property role="Xl_RC" value="Start Container For Interactive Use" />
+            <property role="Xl_RC" value="Start Container for Interactive Use" />
           </node>
         </node>
       </node>

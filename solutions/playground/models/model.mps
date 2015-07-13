@@ -644,119 +644,6 @@
         <property role="TrG5h" value="'index_*'" />
       </node>
     </node>
-    <node concept="3Y$Zt1" id="34JZ5vs_Ul8" role="2ulM7a">
-      <node concept="19SGf9" id="34JZ5vs_Ul9" role="3Y$PkS">
-        <node concept="19SUe$" id="34JZ5vs_Ula" role="19SJt6">
-          <property role="19SUeA" value="cat index_* &gt; x&#10;" />
-        </node>
-        <node concept="1$tZQZ" id="1m401f$ebSN" role="19SJt6">
-          <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
-          <node concept="q33rG" id="1m401f$ebSO" role="q33rI">
-            <property role="q33rC" value="" />
-            <property role="qn6Yc" value="true" />
-            <property role="qkilG" value="false" />
-          </node>
-          <node concept="q33rG" id="1m401f$hKP8" role="q33rI">
-            <property role="q33rC" value="bin" />
-            <property role="qn6Yc" value="false" />
-            <property role="qkilG" value="false" />
-          </node>
-          <node concept="q33rG" id="1m401f$hKQT" role="q33rI">
-            <property role="q33rC" value="boot" />
-            <property role="qn6Yc" value="false" />
-            <property role="qkilG" value="false" />
-          </node>
-          <node concept="q33rG" id="1m401f$j8vB" role="q33rI">
-            <property role="q33rC" value="etc" />
-            <property role="qn6Yc" value="false" />
-            <property role="qkilG" value="false" />
-          </node>
-        </node>
-        <node concept="19SUe$" id="1m401f$j8RF" role="19SJt6" />
-        <node concept="1$tZQZ" id="1m401f$j8z7" role="19SJt6">
-          <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
-          <node concept="q33rG" id="1m401f$j8_3" role="q33rI">
-            <property role="q33rC" value="t" />
-            <property role="qn6Yc" value="false" />
-            <property role="qkilG" value="false" />
-          </node>
-          <node concept="q33rG" id="1m401f$j8Vf" role="q33rI">
-            <property role="q33rC" value="dev" />
-            <property role="qn6Yc" value="false" />
-            <property role="qkilG" value="false" />
-          </node>
-          <node concept="q33rG" id="1m401f$j90k" role="q33rI">
-            <property role="q33rC" value="lib64" />
-            <property role="qn6Yc" value="false" />
-            <property role="qkilG" value="false" />
-          </node>
-          <node concept="q33rG" id="1m401f$j90o" role="q33rI">
-            <property role="q33rC" value="" />
-            <property role="qn6Yc" value="false" />
-            <property role="qkilG" value="false" />
-          </node>
-        </node>
-        <node concept="19SUe$" id="1m401f$j8z6" role="19SJt6">
-          <property role="19SUeA" value="&#10;" />
-        </node>
-        <node concept="1$tZQZ" id="1m401f$ms3K" role="19SJt6">
-          <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
-          <node concept="q33rG" id="1m401f$ms3M" role="q33rI">
-            <property role="q33rC" value="" />
-            <property role="qn6Yc" value="true" />
-            <property role="qkilG" value="true" />
-          </node>
-          <node concept="q33rG" id="1m401f$ms7G" role="q33rI">
-            <property role="q33rC" value="bin" />
-            <property role="qn6Yc" value="true" />
-            <property role="qkilG" value="false" />
-          </node>
-          <node concept="q33rG" id="1m401f$ms9s" role="q33rI">
-            <property role="q33rC" value="" />
-            <property role="qn6Yc" value="false" />
-            <property role="qkilG" value="false" />
-          </node>
-        </node>
-        <node concept="19SUe$" id="1m401f$ms3J" role="19SJt6">
-          <property role="19SUeA" value="&#10;" />
-        </node>
-        <node concept="1$tZQZ" id="1m401f$k1QD" role="19SJt6">
-          <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
-          <node concept="q33rG" id="1m401f$k1QE" role="q33rI">
-            <property role="q33rC" value="" />
-            <property role="qn6Yc" value="true" />
-            <property role="qkilG" value="false" />
-          </node>
-          <node concept="q33rG" id="1m401f$k1SH" role="q33rI">
-            <property role="q33rC" value="boot" />
-            <property role="qn6Yc" value="false" />
-            <property role="qkilG" value="false" />
-          </node>
-          <node concept="q33rG" id="1m401f$k1SK" role="q33rI">
-            <property role="q33rC" value="" />
-            <property role="qn6Yc" value="false" />
-            <property role="qkilG" value="false" />
-          </node>
-        </node>
-        <node concept="19SUe$" id="1m401f$k1QC" role="19SJt6">
-          <property role="19SUeA" value="&#10;" />
-        </node>
-        <node concept="1$tZQZ" id="1m401f$j927" role="19SJt6">
-          <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
-          <node concept="q33rG" id="1m401f$j946" role="q33rI">
-            <property role="q33rC" value="bin" />
-            <property role="qn6Yc" value="false" />
-            <property role="qkilG" value="false" />
-          </node>
-          <node concept="q33rG" id="1m401f$j95P" role="q33rI">
-            <property role="q33rC" value="boot" />
-            <property role="qn6Yc" value="false" />
-            <property role="qkilG" value="false" />
-          </node>
-        </node>
-        <node concept="19SUe$" id="1m401f$j929" role="19SJt6" />
-      </node>
-    </node>
     <node concept="GbKB8" id="56asy6tpjxG" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="3yMj3R" value="sleep 1000" />
@@ -766,6 +653,33 @@
       <property role="TrG5h" value="interactive" />
       <property role="1vm7qE" value="true" />
       <ref role="3zcJb$" node="56asy6tpjxH" resolve="image" />
+    </node>
+    <node concept="3Y$Zt1" id="7lMr3OmD$oH" role="2ulM7a">
+      <node concept="19SGf9" id="7lMr3OmD$oJ" role="3Y$PkS">
+        <node concept="19SUe$" id="6hgQMA_Gs2g" role="19SJt6" />
+        <node concept="1$tZQZ" id="6hgQMA_Gs2d" role="19SJt6">
+          <ref role="1$tY80" node="56asy6tpjxG" resolve="interactive" />
+          <node concept="q33rG" id="6hgQMA_Gs2f" role="q33rI">
+            <property role="q33rC" value="" />
+            <property role="qn6Yc" value="true" />
+          </node>
+          <node concept="q33rG" id="6hgQMA_N1UB" role="q33rI">
+            <property role="q33rC" value="etc" />
+            <property role="qn6Yc" value="true" />
+          </node>
+          <node concept="q33rG" id="6hgQMA_N1ZS" role="q33rI">
+            <property role="q33rC" value="alternatives" />
+            <property role="qn6Yc" value="true" />
+          </node>
+          <node concept="q33rG" id="6hgQMA_N23A" role="q33rI">
+            <property role="q33rC" value="awk.1.gz" />
+            <property role="qn6Yc" value="false" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="6hgQMA_Gs2c" role="19SJt6">
+          <property role="19SUeA" value="&#10;&#10;" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2ulcR8" id="6t646FqPoxG">
@@ -957,308 +871,308 @@
     </node>
   </node>
   <node concept="1lvGkW" id="VMSWAF0h1v">
-    <node concept="1lnzPE" id="1m401f$j8Hw" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
+    <node concept="1lnzPE" id="6hgQMA_N1Dz" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: " />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8J6" role="1lvGkX">
+    <node concept="1lnzPE" id="6hgQMA_N1D$" role="1lvGkX">
+      <property role="1lnzPG" value="result=false" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Fa" role="1lvGkX">
+      <property role="1lnzPG" value="Evaluating isDirectory /etcalternati/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Fb" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etcalternati/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Fc" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Fd" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcalternati/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Fe" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: e54c51d054f4fecd81e70016981d84aef028e7a21f7a0497fa5e4bb1c364b543" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Ff" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: " />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Fg" role="1lvGkX">
+      <property role="1lnzPG" value="result=false" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1GQ" role="1lvGkX">
+      <property role="1lnzPG" value="Evaluating isDirectory /etcalternat/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1GR" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etcalternat/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1GS" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1GT" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcalternat/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1GU" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 9ce0c4e12107d7d0fe149e054dd0d288a23946600caddcca02b5cf519f093295" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1GV" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: " />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1GW" role="1lvGkX">
+      <property role="1lnzPG" value="result=false" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Iy" role="1lvGkX">
+      <property role="1lnzPG" value="Evaluating isDirectory /etcalterna/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Iz" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etcalterna/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1I$" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1I_" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcalterna/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1IA" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 72c4059bc1d1d31f79615dc1e0b204fad4158be52b5b4d9874c53f86c54294e9" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1IB" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: " />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1IC" role="1lvGkX">
+      <property role="1lnzPG" value="result=false" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Ke" role="1lvGkX">
+      <property role="1lnzPG" value="Evaluating isDirectory /etcaltern/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Kf" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etcaltern/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Kg" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Kh" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcaltern/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Ki" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 1763007a6568caed111853fd67dac8f2445a1f2b67106990ee809897f1f2e0aa" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Kj" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: " />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Kk" role="1lvGkX">
+      <property role="1lnzPG" value="result=false" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1LU" role="1lvGkX">
+      <property role="1lnzPG" value="Evaluating isDirectory /etcalter/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1LV" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etcalter/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1LW" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1LX" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcalter/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1LY" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 460aa8a3218d22777abac579625b61d5e894624a2d82a803827494d79d21c41c" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1LZ" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: " />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1M0" role="1lvGkX">
+      <property role="1lnzPG" value="result=false" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1NA" role="1lvGkX">
+      <property role="1lnzPG" value="Evaluating isDirectory /etcalte/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1NB" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etcalte/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1NC" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1ND" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcalte/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1NE" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: c05b68b0c686cf64e6062f8d9bafa49e3865a325181178c5ebbcacedf76a5f3b" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1NF" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: " />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1NG" role="1lvGkX">
+      <property role="1lnzPG" value="result=false" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Pi" role="1lvGkX">
+      <property role="1lnzPG" value="Evaluating isDirectory /etcalt/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Pj" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etcalt/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Pk" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Pl" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcalt/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Pm" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 815af5c627df255ef77447aa0ce5195f8d2718f1f8acceb63f6f37e2907587f4" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Pn" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: " />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Po" role="1lvGkX">
+      <property role="1lnzPG" value="result=false" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1QY" role="1lvGkX">
+      <property role="1lnzPG" value="Evaluating isDirectory /etcal/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1QZ" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etcal/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1R0" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1R1" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etcal/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1R2" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: d8fec9c8d28eba3eb4dd4d72b84d569435171d9672e02c1d114947552c59fffe" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1R3" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: " />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1R4" role="1lvGkX">
+      <property role="1lnzPG" value="result=false" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1SJ" role="1lvGkX">
+      <property role="1lnzPG" value="Evaluating isDirectory /etca/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1SK" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etca/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1SL" role="1lvGkX">
+      <property role="1lnzPG" value="docker containerId: interactive" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1SM" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etca/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1SN" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 78c656b517f8d4a784eaefa944c3ca68a66937ee682e268e2b43c49e2c486fe8" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1SO" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: " />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1SP" role="1lvGkX">
+      <property role="1lnzPG" value="result=false" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Uy" role="1lvGkX">
       <property role="1lnzPG" value="path=/" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8J7" role="1lvGkX">
+    <node concept="1lnzPE" id="6hgQMA_N1Uz" role="1lvGkX">
       <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8J8" role="1lvGkX">
+    <node concept="1lnzPE" id="6hgQMA_N1U$" role="1lvGkX">
       <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8J9" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: e91aba490ebda5d118e773c93d3ebb7ba3f1011ac7d9f4195ad246e3c7ebbe71" />
+    <node concept="1lnzPE" id="6hgQMA_N1U_" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: bc668b32fb8c0f5bb32f26acb9eafa0d3edc1968f777428c829cd54747367ea0" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8Ja" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
+    <node concept="1lnzPE" id="6hgQMA_N1UA" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: bin/&#10;boot/&#10;dev/&#10;etc/&#10;home/&#10;lib/&#10;lib64/&#10;media/&#10;mnt/&#10;opt/&#10;proc/&#10;root/&#10;run/&#10;sbin/&#10;srv/&#10;sys/&#10;test.R&#10;tmp/&#10;usr/&#10;var/&#10;" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8KK" role="1lvGkX">
-      <property role="1lnzPG" value="path=/" />
+    <node concept="1lnzPE" id="6hgQMA_N1Wl" role="1lvGkX">
+      <property role="1lnzPG" value="Evaluating isDirectory /etc//" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8KL" role="1lvGkX">
+    <node concept="1lnzPE" id="6hgQMA_N1Wm" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etc//" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Wn" role="1lvGkX">
       <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8KM" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
+    <node concept="1lnzPE" id="6hgQMA_N1Wo" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etc//" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8KN" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 9d52b8f89d47333c47dfb2ebd9858e734110f1d4c239427c6a3771fac28292c7" />
+    <node concept="1lnzPE" id="6hgQMA_N1Wp" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 46f2a3eceea2d52313278dc9405f3726f46842138ab011b778b2e99f89fed851" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8KO" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
+    <node concept="1lnzPE" id="6hgQMA_N1Wq" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: adduser.conf&#10;alternatives/&#10;apt/&#10;bash.bashrc&#10;bash_completion.d/&#10;bindresvport.blacklist&#10;binfmt.d/&#10;calendar/&#10;cron.daily/&#10;cron.weekly/&#10;dbus-1/&#10;debconf.conf&#10;debian_version&#10;default/&#10;deluser.conf&#10;dpkg/&#10;environment&#10;fonts/&#10;fstab&#10;gai.conf&#10;groff/&#10;group&#10;group-&#10;gshadow&#10;gshadow-&#10;gss/&#10;host.conf&#10;hostname&#10;hosts&#10;init/&#10;init.d/&#10;inputrc&#10;insserv/&#10;insserv.conf&#10;insserv.conf.d/&#10;iproute2/&#10;issue&#10;issue.net&#10;kernel/&#10;ldap/&#10;ld.so.cache&#10;ld.so.conf&#10;ld.so.conf.d/&#10;libaudit.conf&#10;libpaper.d/&#10;littler.r&#10;locale.alias&#10;locale.gen&#10;localtime&#10;login.defs&#10;logrotate.d/&#10;machine-id&#10;magic&#10;magic.mime&#10;mailcap&#10;mailcap.order&#10;manpath.config&#10;mime.types&#10;mke2fs.conf&#10;modprobe.d/&#10;modules-load.d/&#10;motd&#10;mtab@&#10;network/&#10;networks&#10;nsswitch.conf&#10;opt/&#10;os-release@&#10;pam.conf&#10;pam.d/&#10;papersize&#10;passwd&#10;passwd-&#10;perl/&#10;profile&#10;profile.d/&#10;protocols&#10;python/&#10;python2.7/&#10;R/&#10;rc0.d/&#10;rc1.d/&#10;rc2.d/&#10;rc3.d/&#10;rc4.d/&#10;rc5.d/&#10;rc6.d/&#10;rc.local*&#10;rcS.d/&#10;resolv.conf&#10;rmt*&#10;rpc&#10;securetty&#10;security/&#10;selinux/&#10;services&#10;shadow&#10;shadow-&#10;shells&#10;skel/&#10;staff-group-for-usr-local&#10;subgid&#10;subgid-&#10;subuid&#10;subuid-&#10;sysctl.conf&#10;sysctl.d/&#10;systemd/&#10;terminfo/&#10;timezone&#10;tmpfiles.d/&#10;ucf.conf&#10;udev/&#10;vim/&#10;wgetrc&#10;X11/&#10;xdg/&#10;" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8Mq" role="1lvGkX">
-      <property role="1lnzPG" value="path=/" />
+    <node concept="1lnzPE" id="6hgQMA_N1Wr" role="1lvGkX">
+      <property role="1lnzPG" value="result=true" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8Mr" role="1lvGkX">
+    <node concept="1lnzPE" id="6hgQMA_N1Y9" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etc/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N1Ya" role="1lvGkX">
       <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8Ms" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
+    <node concept="1lnzPE" id="6hgQMA_N1Yb" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etc/" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8Mt" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: c63c4f3bcb57caa952073f351b36440e0907628089c5b34b137aa499b678bd3f" />
+    <node concept="1lnzPE" id="6hgQMA_N1Yc" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 027e4cbbc07986ee3d382625c7d0fe377befac97e43a57bded662524aa0bc451" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8Mu" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
+    <node concept="1lnzPE" id="6hgQMA_N1Yd" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: adduser.conf&#10;alternatives/&#10;apt/&#10;bash.bashrc&#10;bash_completion.d/&#10;bindresvport.blacklist&#10;binfmt.d/&#10;calendar/&#10;cron.daily/&#10;cron.weekly/&#10;dbus-1/&#10;debconf.conf&#10;debian_version&#10;default/&#10;deluser.conf&#10;dpkg/&#10;environment&#10;fonts/&#10;fstab&#10;gai.conf&#10;groff/&#10;group&#10;group-&#10;gshadow&#10;gshadow-&#10;gss/&#10;host.conf&#10;hostname&#10;hosts&#10;init/&#10;init.d/&#10;inputrc&#10;insserv/&#10;insserv.conf&#10;insserv.conf.d/&#10;iproute2/&#10;issue&#10;issue.net&#10;kernel/&#10;ldap/&#10;ld.so.cache&#10;ld.so.conf&#10;ld.so.conf.d/&#10;libaudit.conf&#10;libpaper.d/&#10;littler.r&#10;locale.alias&#10;locale.gen&#10;localtime&#10;login.defs&#10;logrotate.d/&#10;machine-id&#10;magic&#10;magic.mime&#10;mailcap&#10;mailcap.order&#10;manpath.config&#10;mime.types&#10;mke2fs.conf&#10;modprobe.d/&#10;modules-load.d/&#10;motd&#10;mtab@&#10;network/&#10;networks&#10;nsswitch.conf&#10;opt/&#10;os-release@&#10;pam.conf&#10;pam.d/&#10;papersize&#10;passwd&#10;passwd-&#10;perl/&#10;profile&#10;profile.d/&#10;protocols&#10;python/&#10;python2.7/&#10;R/&#10;rc0.d/&#10;rc1.d/&#10;rc2.d/&#10;rc3.d/&#10;rc4.d/&#10;rc5.d/&#10;rc6.d/&#10;rc.local*&#10;rcS.d/&#10;resolv.conf&#10;rmt*&#10;rpc&#10;securetty&#10;security/&#10;selinux/&#10;services&#10;shadow&#10;shadow-&#10;shells&#10;skel/&#10;staff-group-for-usr-local&#10;subgid&#10;subgid-&#10;subuid&#10;subuid-&#10;sysctl.conf&#10;sysctl.d/&#10;systemd/&#10;terminfo/&#10;timezone&#10;tmpfiles.d/&#10;ucf.conf&#10;udev/&#10;vim/&#10;wgetrc&#10;X11/&#10;xdg/&#10;" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8O4" role="1lvGkX">
-      <property role="1lnzPG" value="path=/" />
+    <node concept="1lnzPE" id="6hgQMA_N202" role="1lvGkX">
+      <property role="1lnzPG" value="Evaluating isDirectory /etc/alternatives//" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8O5" role="1lvGkX">
+    <node concept="1lnzPE" id="6hgQMA_N203" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etc/alternatives//" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N204" role="1lvGkX">
       <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8O6" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
+    <node concept="1lnzPE" id="6hgQMA_N205" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etc/alternatives//" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8O7" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: aa64007c7f15983185cb182097361b206a869a66ddb791faa695e83d4effbfa8" />
+    <node concept="1lnzPE" id="6hgQMA_N206" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 83ceea01f47e8a143519917cc88e0f69cbe95a59e0b7c9986cfc6484701e6b9a" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8O8" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
+    <node concept="1lnzPE" id="6hgQMA_N207" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: awk@&#10;awk.1.gz@&#10;blas.pc@&#10;builtins.7.gz@&#10;c++@&#10;c89@&#10;c89.1.gz@&#10;c99@&#10;c99.1.gz@&#10;cc@&#10;cpp@&#10;editor@&#10;editor.1.gz@&#10;editor.fr.1.gz@&#10;editor.it.1.gz@&#10;editor.ja.1.gz@&#10;editor.pl.1.gz@&#10;editor.ru.1.gz@&#10;ex@&#10;ex.1.gz@&#10;ex.fr.1.gz@&#10;ex.it.1.gz@&#10;ex.ja.1.gz@&#10;ex.pl.1.gz@&#10;ex.ru.1.gz@&#10;f77@&#10;f95@&#10;from@&#10;from.1.gz@&#10;lapack.pc@&#10;libblas.a@&#10;libblas.so@&#10;libblas.so.3@&#10;libblas.so.3gf@&#10;liblapack.a@&#10;liblapack.so@&#10;liblapack.so.3@&#10;liblapack.so.3gf@&#10;lzcat@&#10;lzcat.1.gz@&#10;lzcmp@&#10;lzcmp.1.gz@&#10;lzdiff@&#10;lzdiff.1.gz@&#10;lzegrep@&#10;lzegrep.1.gz@&#10;lzfgrep@&#10;lzfgrep.1.gz@&#10;lzgrep@&#10;lzgrep.1.gz@&#10;lzless@&#10;lzless.1.gz@&#10;lzma@&#10;lzma.1.gz@&#10;lzmore@&#10;lzmore.1.gz@&#10;nawk@&#10;nawk.1.gz@&#10;pager@&#10;pager.1.gz@&#10;README&#10;rename@&#10;rename.1.gz@&#10;rmt@&#10;rmt.8.gz@&#10;rview@&#10;unlzma@&#10;unlzma.1.gz@&#10;vi@&#10;vi.1.gz@&#10;view@&#10;view.1.gz@&#10;view.fr.1.gz@&#10;view.it.1.gz@&#10;view.ja.1.gz@&#10;view.pl.1.gz@&#10;view.ru.1.gz@&#10;vi.fr.1.gz@&#10;vi.it.1.gz@&#10;vi.ja.1.gz@&#10;vi.pl.1.gz@&#10;vi.ru.1.gz@&#10;w@&#10;w.1.gz@&#10;write@&#10;write.1.gz@&#10;" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8PI" role="1lvGkX">
-      <property role="1lnzPG" value="path=/" />
+    <node concept="1lnzPE" id="6hgQMA_N208" role="1lvGkX">
+      <property role="1lnzPG" value="result=true" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8PJ" role="1lvGkX">
+    <node concept="1lnzPE" id="6hgQMA_N21R" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etc/alternatives/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N21S" role="1lvGkX">
       <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8PK" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
+    <node concept="1lnzPE" id="6hgQMA_N21T" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etc/alternatives/" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8PL" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 91277aef2489b94b4aa5e410af3352e15f95b7c04263f1b63ba339565fa814b6" />
+    <node concept="1lnzPE" id="6hgQMA_N21U" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: f0c160badb75eac4aec226537b75b385a9fa951f5f73cfefa7e670fcb5b0371b" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8PM" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
+    <node concept="1lnzPE" id="6hgQMA_N21V" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: awk@&#10;awk.1.gz@&#10;blas.pc@&#10;builtins.7.gz@&#10;c++@&#10;c89@&#10;c89.1.gz@&#10;c99@&#10;c99.1.gz@&#10;cc@&#10;cpp@&#10;editor@&#10;editor.1.gz@&#10;editor.fr.1.gz@&#10;editor.it.1.gz@&#10;editor.ja.1.gz@&#10;editor.pl.1.gz@&#10;editor.ru.1.gz@&#10;ex@&#10;ex.1.gz@&#10;ex.fr.1.gz@&#10;ex.it.1.gz@&#10;ex.ja.1.gz@&#10;ex.pl.1.gz@&#10;ex.ru.1.gz@&#10;f77@&#10;f95@&#10;from@&#10;from.1.gz@&#10;lapack.pc@&#10;libblas.a@&#10;libblas.so@&#10;libblas.so.3@&#10;libblas.so.3gf@&#10;liblapack.a@&#10;liblapack.so@&#10;liblapack.so.3@&#10;liblapack.so.3gf@&#10;lzcat@&#10;lzcat.1.gz@&#10;lzcmp@&#10;lzcmp.1.gz@&#10;lzdiff@&#10;lzdiff.1.gz@&#10;lzegrep@&#10;lzegrep.1.gz@&#10;lzfgrep@&#10;lzfgrep.1.gz@&#10;lzgrep@&#10;lzgrep.1.gz@&#10;lzless@&#10;lzless.1.gz@&#10;lzma@&#10;lzma.1.gz@&#10;lzmore@&#10;lzmore.1.gz@&#10;nawk@&#10;nawk.1.gz@&#10;pager@&#10;pager.1.gz@&#10;README&#10;rename@&#10;rename.1.gz@&#10;rmt@&#10;rmt.8.gz@&#10;rview@&#10;unlzma@&#10;unlzma.1.gz@&#10;vi@&#10;vi.1.gz@&#10;view@&#10;view.1.gz@&#10;view.fr.1.gz@&#10;view.it.1.gz@&#10;view.ja.1.gz@&#10;view.pl.1.gz@&#10;view.ru.1.gz@&#10;vi.fr.1.gz@&#10;vi.it.1.gz@&#10;vi.ja.1.gz@&#10;vi.pl.1.gz@&#10;vi.ru.1.gz@&#10;w@&#10;w.1.gz@&#10;write@&#10;write.1.gz@&#10;" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8RS" role="1lvGkX">
-      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
+    <node concept="1lnzPE" id="6hgQMA_N23L" role="1lvGkX">
+      <property role="1lnzPG" value="Evaluating isDirectory /etc/alternatives/awk.1.gz/" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8RT" role="1lvGkX">
+    <node concept="1lnzPE" id="6hgQMA_N23M" role="1lvGkX">
+      <property role="1lnzPG" value="path=/etc/alternatives/awk.1.gz/" />
+    </node>
+    <node concept="1lnzPE" id="6hgQMA_N23N" role="1lvGkX">
       <property role="1lnzPG" value="docker containerId: interactive" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8RU" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
+    <node concept="1lnzPE" id="6hgQMA_N23O" role="1lvGkX">
+      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /etc/alternatives/awk.1.gz/" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8RV" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: e47bea5b538042fe91836bba350d96b3489e450f420093748d27e6b633810dd4" />
+    <node concept="1lnzPE" id="6hgQMA_N23P" role="1lvGkX">
+      <property role="1lnzPG" value="docker execId returned: 66ebc6962643bf2a527b98e8da062b4ca037c201f6a165641211bf1abe78681d" />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8RW" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
+    <node concept="1lnzPE" id="6hgQMA_N23Q" role="1lvGkX">
+      <property role="1lnzPG" value="docker ls returned: " />
     </node>
-    <node concept="1lnzPE" id="1m401f$j8T_" role="1lvGkX">
-      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8TA" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8TB" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8TC" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: ba80cbd5f947c28e8a580bc464c1a9975a2430a19b6eb761524aeef5f84743e9" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8TD" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8Vm" role="1lvGkX">
-      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8Vn" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8Vo" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8Vp" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 3c4606cc8f8c54bb46afe9b7740e434c70a98277a74e24cc18a47211bd622a66" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8Vq" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8X0" role="1lvGkX">
-      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8X1" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8X2" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8X3" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 8d6a47c0a1d37d79043ae02d5f176cd6d70256f0d53e58e059790fc72c21f418" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8X4" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8YE" role="1lvGkX">
-      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8YF" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8YG" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8YH" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 7198b1c2d0cb19328e4d097c59f41c32644f48cbb22bab27f717bcf36a0fbc63" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j8YI" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j90t" role="1lvGkX">
-      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j90u" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j90v" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j90w" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: fd861434138de9e785bcf17f6bea7d7c80cbb9f2a11f4d71a2dd4416fce3128f" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j90x" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j92s" role="1lvGkX">
-      <property role="1lnzPG" value="path=/" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j92t" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j92u" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j92v" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 1564a8fafbf4b71e0c74c0b4bd37a9b8e46e613da3ae68d23ae935ec2033d947" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j92w" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j94b" role="1lvGkX">
-      <property role="1lnzPG" value="path=/Applications/MPS 3.2.app/Contents/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j94c" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j94d" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /Applications/MPS 3.2.app/Contents/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j94e" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: c7d7868a10fcea038bad48cfd2582345bcd486143cce6b0b8a36a697c57b716f" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$j94f" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$k1R3" role="1lvGkX">
-      <property role="1lnzPG" value="path=/" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$k1R4" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$k1R5" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$k1R6" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 6036e02a7ee268a2623f53f652b4960cf3fbba041fc670e9bb05f9709cebee8a" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$k1R7" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$k1SO" role="1lvGkX">
-      <property role="1lnzPG" value="path=/" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$k1SP" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$k1SQ" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$k1SR" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 870ab16312012a969e1d0472a9cb5d24e0721b7a527d816baf1828efb6a79974" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$k1SS" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms4h" role="1lvGkX">
-      <property role="1lnzPG" value="path=/" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms4i" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms4j" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms4k" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: e427fd554fa0e687c180f606b5ec39902b008aa40b9c1a0616f608cb1977647f" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms4l" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms62" role="1lvGkX">
-      <property role="1lnzPG" value="path=/" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms63" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms64" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms65" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 17ad55a11e9044131faa5624c01eba8f5eb481d906c0a40daa9b8c481c647e2c" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms66" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms7M" role="1lvGkX">
-      <property role="1lnzPG" value="path=/" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms7N" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms7O" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms7P" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 234f3451390cfaa84912b2aee7601b88a8094d8d9bac25418fbd21cffef1095e" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms7Q" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms9w" role="1lvGkX">
-      <property role="1lnzPG" value="path=/" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms9x" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms9y" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms9z" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: aaba95fc381b666f2237bdc97892ed0320075a860af3bfccde43faa12b8dba15" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$ms9$" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$msba" role="1lvGkX">
-      <property role="1lnzPG" value="path=/bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$msbb" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$msbc" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F /bin" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$msbd" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: f593aa1fea1c42b99b05aae880e03704101e0ef90f75c3c46ecde827eedd4b25" />
-    </node>
-    <node concept="1lnzPE" id="1m401f$msbe" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: bin&#10;boot&#10;dev&#10;etc&#10;home&#10;lib&#10;lib64&#10;media&#10;mnt&#10;opt&#10;proc&#10;root&#10;run&#10;sbin&#10;srv&#10;sys&#10;test.R&#10;tmp&#10;usr&#10;var&#10;" />
+    <node concept="1lnzPE" id="6hgQMA_N23R" role="1lvGkX">
+      <property role="1lnzPG" value="result=false" />
     </node>
   </node>
   <node concept="GbKB8" id="VMSWAFibhT">
@@ -7383,6 +7297,13 @@
     <property role="TrG5h" value="image" />
   </node>
   <node concept="GbKB8" id="56asy6tpjxL">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="rocker-metar" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="56asy6tpjxH" resolve="image" />
+  </node>
+  <node concept="GbKB8" id="6hgQMA_cClh">
     <property role="TrG5h" value="interactive" />
     <property role="GbyUj" value="rocker-metar" />
     <property role="1vm7qE" value="true" />
