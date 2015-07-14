@@ -684,7 +684,7 @@
             <property role="qn6Yc" value="true" />
           </node>
           <node concept="q33rG" id="7aSP7xMzste" role="q33rI">
-            <property role="q33rC" value="Xsession" />
+            <property role="q33rC" value="Xses" />
             <property role="qn6Yc" value="false" />
           </node>
         </node>
