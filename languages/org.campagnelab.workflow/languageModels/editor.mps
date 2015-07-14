@@ -730,12 +730,12 @@
       <node concept="3F0ifn" id="3m9W35nCx5o" role="3EZMnx">
         <property role="3F0ifm" value="collate(" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
+        <node concept="11LMrY" id="vHEKaYx36i" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0A7n" id="3m9W35nCx5u" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:3m9W35nCx58" resolve="n" />
-        <node concept="11L4FC" id="5yyd2HFFSOa" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
       <node concept="3F0ifn" id="3m9W35nCx5F" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -1131,6 +1131,7 @@
       </node>
       <node concept="3F0A7n" id="3m26PihhBYo" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:3m26PihhBXW" resolve="start" />
+        <ref role="1k5W1q" node="vHEKaWTFXx" resolve="StringChannelValue" />
       </node>
       <node concept="3F0ifn" id="3m26PihhBYA" role="3EZMnx">
         <property role="3F0ifm" value="'" />
@@ -1143,6 +1144,7 @@
       </node>
       <node concept="3F0A7n" id="3m26PihhBZh" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:3m26PihhBXY" resolve="end" />
+        <ref role="1k5W1q" node="vHEKaWTFXx" resolve="StringChannelValue" />
       </node>
       <node concept="3F0ifn" id="3m26PihhBZx" role="3EZMnx">
         <property role="3F0ifm" value="'" />
@@ -1235,6 +1237,7 @@
     <ref role="1XX52x" to="iowz:3m26Pihn81q" resolve="GlobalStringLiteral" />
     <node concept="3F0A7n" id="3m26PihtnlE" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:3m26Pihn81r" resolve="value" />
+      <ref role="1k5W1q" node="vHEKaWTFXx" resolve="StringChannelValue" />
     </node>
   </node>
   <node concept="24kQdi" id="3m26PihtnlM">
@@ -1430,6 +1433,23 @@
         </node>
       </node>
     </node>
+    <node concept="14StLt" id="vHEKaWKkod" role="V601i">
+      <property role="TrG5h" value="FileChannelValue" />
+      <node concept="VechU" id="vHEKaWKlzw" role="3F10Kt">
+        <property role="Vb096" value="cyan" />
+        <node concept="1iSF2X" id="vHEKaWQwvr" role="VblUZ">
+          <property role="1iTho6" value="71C1FF" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="vHEKaWTFXx" role="V601i">
+      <property role="TrG5h" value="StringChannelValue" />
+      <node concept="VechU" id="vHEKaWTFXY" role="3F10Kt">
+        <node concept="1iSF2X" id="vHEKaWTFY0" role="VblUZ">
+          <property role="1iTho6" value="FFAB91" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1h_SRR" id="68uCiTD$ub$">
     <property role="TrG5h" value="InputChannelMap" />
@@ -1472,6 +1492,7 @@
     <node concept="3EZMnI" id="59canFN3DZ1" role="2wV5jI">
       <node concept="3F0A7n" id="vHEKaWoMi8" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:vHEKaWiO__" resolve="path" />
+        <ref role="1k5W1q" node="vHEKaWKkod" resolve="FileChannelValue" />
       </node>
       <node concept="l2Vlx" id="59canFN3DZ4" role="2iSdaV" />
     </node>
