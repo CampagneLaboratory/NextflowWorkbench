@@ -254,8 +254,8 @@
                   </node>
                   <node concept="2Rf3mk" id="3m26Pih5sh8" role="2OqNvi">
                     <node concept="1xMEDy" id="3m26Pih5sh9" role="1xVPHs">
-                      <node concept="chp4Y" id="3m26Pih5sha" role="ri$Ld">
-                        <ref role="cht4Q" to="iowz:70dPcAeD8Uh" resolve="ValueInAChannel" />
+                      <node concept="chp4Y" id="2Hhp$WE1Td8" role="ri$Ld">
+                        <ref role="cht4Q" to="iowz:3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
                       </node>
                     </node>
                   </node>
@@ -283,10 +283,10 @@
                 <node concept="3cpWsn" id="3m26Pih5JQW" role="3cpWs9">
                   <property role="TrG5h" value="value" />
                   <node concept="3Tqbb2" id="3m26Pih5JQS" role="1tU5fm">
-                    <ref role="ehGHo" to="iowz:70dPcAeD8Uh" resolve="ValueInAChannel" />
+                    <ref role="ehGHo" to="iowz:3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
                   </node>
                   <node concept="1PxgMI" id="3m26Pih5ZT3" role="33vP2m">
-                    <ref role="1PxNhF" to="iowz:70dPcAeD8Uh" resolve="ValueInAChannel" />
+                    <ref role="1PxNhF" to="iowz:3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
                     <node concept="2GrUjf" id="3m26Pih5K8s" role="1PxMeX">
                       <ref role="2Gs0qQ" node="3m26Pih5JL7" resolve="element" />
                     </node>
@@ -366,8 +366,8 @@
                   </node>
                   <node concept="2Rf3mk" id="3m26Pih5WOg" role="2OqNvi">
                     <node concept="1xMEDy" id="3m26Pih5WOh" role="1xVPHs">
-                      <node concept="chp4Y" id="3m26Pih5WOi" role="ri$Ld">
-                        <ref role="cht4Q" to="iowz:70dPcAeD8Uh" resolve="ValueInAChannel" />
+                      <node concept="chp4Y" id="2Hhp$WE1TnB" role="ri$Ld">
+                        <ref role="cht4Q" to="iowz:3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
                       </node>
                     </node>
                   </node>

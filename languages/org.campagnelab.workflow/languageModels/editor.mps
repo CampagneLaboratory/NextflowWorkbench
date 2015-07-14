@@ -658,23 +658,10 @@
       <node concept="l2Vlx" id="3v6eDgzARiX" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="3v6eDgzARjg">
-    <property role="3GE5qa" value="types" />
-    <ref role="1XX52x" to="iowz:3v6eDgzA3wg" resolve="Tuple" />
-    <node concept="3EZMnI" id="3v6eDgzARji" role="2wV5jI">
-      <node concept="3F0ifn" id="3v6eDgzARjp" role="3EZMnx">
-        <property role="3F0ifm" value="tuple set " />
-      </node>
-      <node concept="3F0A7n" id="3v6eDgzARjz" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="l2Vlx" id="3v6eDgzARjl" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="3v6eDgzBG4V">
     <property role="3GE5qa" value="channelTypes" />
     <ref role="1XX52x" to="iowz:3v6eDgzA3ze" resolve="TupleChannel" />
-    <node concept="3F1sOY" id="3v6eDgzBG4X" role="2wV5jI">
+    <node concept="3F1sOY" id="2Hhp$WDzSo_" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:3v6eDgzA3zf" />
     </node>
   </node>
@@ -1541,6 +1528,90 @@
         <property role="3F0ifm" value="&gt;" />
       </node>
       <node concept="l2Vlx" id="7b7Ia6Oh4pj" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3v6eDgzARjg">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="iowz:3v6eDgzA3wg" resolve="Tuple" />
+    <node concept="3EZMnI" id="3v6eDgzARji" role="2wV5jI">
+      <node concept="3F0ifn" id="3v6eDgzARjp" role="3EZMnx">
+        <property role="3F0ifm" value="tuple set" />
+      </node>
+      <node concept="3F2HdR" id="2Hhp$WDzSdG" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:2Hhp$WDzSdA" />
+        <node concept="l2Vlx" id="2Hhp$WDzSdI" role="2czzBx" />
+        <node concept="3F0ifn" id="2Hhp$WDBd$r" role="2czzBI">
+          <property role="3F0ifm" value="&lt;&lt;no input&gt;&gt;" />
+          <ref role="1k5W1q" node="5yyd2HFN6xi" resolve="EmptyCell" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3v6eDgzARjl" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2Hhp$WEiKpb">
+    <property role="3GE5qa" value="setChannelValues" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEiKnI" resolve="GlobalTupleExpression" />
+    <node concept="3EZMnI" id="2Hhp$WEiKpd" role="2wV5jI">
+      <node concept="3F2HdR" id="2Hhp$WEiKpk" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:2Hhp$WEiKnJ" />
+        <node concept="l2Vlx" id="2Hhp$WEiKpm" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="2Hhp$WEiKpg" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2Hhp$WEw$fm">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEw$fe" resolve="GlobalBooleanLiteralTuple" />
+    <node concept="3F1sOY" id="2Hhp$WEw$fo" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:2Hhp$WEw$ff" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2Hhp$WEw$ie">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEw$i6" resolve="GlobalIntegerLiteralTuple" />
+    <node concept="3F1sOY" id="2Hhp$WEw$ig" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:2Hhp$WEw$i7" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2Hhp$WEw$io">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEw$gJ" resolve="GlobalTupleLiteral" />
+    <node concept="3EZMnI" id="2Hhp$WEw$iq" role="2wV5jI">
+      <node concept="3F0ifn" id="2Hhp$WEw$ix" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F2HdR" id="2Hhp$WEw$iB" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:2Hhp$WEw$gK" />
+        <node concept="l2Vlx" id="2Hhp$WEw$iD" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="2Hhp$WEw$iM" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="l2Vlx" id="2Hhp$WEw$it" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2Hhp$WEw$lN">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEw$lF" resolve="GlobalFileLiteralTuple" />
+    <node concept="3F1sOY" id="2Hhp$WEw$lP" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:2Hhp$WEw$lG" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2Hhp$WEw$nk">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEw$nc" resolve="GlobalListLiteralTuple" />
+    <node concept="3F1sOY" id="2Hhp$WEw$nm" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:2Hhp$WEw$nd" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5rnWeHKVZUW">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEw$km" resolve="GlobalStringLiteralTuple" />
+    <node concept="3F1sOY" id="5rnWeHKVZUY" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:2Hhp$WEw$np" />
     </node>
   </node>
 </model>

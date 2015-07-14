@@ -1109,6 +1109,58 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="3eNFk2" id="5rnWeHLdvm0" role="3eNLev">
+                            <node concept="3clFbC" id="5rnWeHLdvm1" role="3eO9$A">
+                              <node concept="35c_gC" id="5rnWeHLdvm2" role="3uHU7w">
+                                <ref role="35c_gD" to="iowz:3v6eDgzA3ze" resolve="TupleChannel" />
+                              </node>
+                              <node concept="2OqwBi" id="5rnWeHLdvm3" role="3uHU7B">
+                                <node concept="2GrUjf" id="5rnWeHLdvHy" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="34JZ5vrZa4I" resolve="input" />
+                                </node>
+                                <node concept="2yIwOk" id="5rnWeHLdvm5" role="2OqNvi" />
+                              </node>
+                            </node>
+                            <node concept="3clFbS" id="5rnWeHLdvm6" role="3eOfB_">
+                              <node concept="lc7rE" id="5rnWeHLdvm7" role="3cqZAp">
+                                <node concept="1bDJIP" id="5rnWeHLdvm8" role="lcghm">
+                                  <ref role="1rvKf6" node="3m9W35noEi5" resolve="tupleChannel" />
+                                  <node concept="1PxgMI" id="5rnWeHLdvm9" role="1ryhcI">
+                                    <ref role="1PxNhF" to="iowz:3v6eDgzA3ze" resolve="TupleChannel" />
+                                    <node concept="2GrUjf" id="5rnWeHLdvUW" role="1PxMeX">
+                                      <ref role="2Gs0qQ" node="34JZ5vrZa4I" resolve="input" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3eNFk2" id="5rnWeHLdvmb" role="3eNLev">
+                            <node concept="3clFbC" id="5rnWeHLdvmc" role="3eO9$A">
+                              <node concept="35c_gC" id="5rnWeHLdvmd" role="3uHU7w">
+                                <ref role="35c_gD" to="iowz:3v6eDgz_YY9" resolve="ListChannel" />
+                              </node>
+                              <node concept="2OqwBi" id="5rnWeHLdvme" role="3uHU7B">
+                                <node concept="2GrUjf" id="5rnWeHLdw8k" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="34JZ5vrZa4I" resolve="input" />
+                                </node>
+                                <node concept="2yIwOk" id="5rnWeHLdvmg" role="2OqNvi" />
+                              </node>
+                            </node>
+                            <node concept="3clFbS" id="5rnWeHLdvmh" role="3eOfB_">
+                              <node concept="lc7rE" id="5rnWeHLdvmi" role="3cqZAp">
+                                <node concept="1bDJIP" id="5rnWeHLdvmj" role="lcghm">
+                                  <ref role="1rvKf6" node="3m9W35nokRx" resolve="listChannel" />
+                                  <node concept="1PxgMI" id="5rnWeHLdvmk" role="1ryhcI">
+                                    <ref role="1PxNhF" to="iowz:3v6eDgz_YY9" resolve="ListChannel" />
+                                    <node concept="2GrUjf" id="5rnWeHLdwo5" role="1PxMeX">
+                                      <ref role="2Gs0qQ" node="34JZ5vrZa4I" resolve="input" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                         </node>
                         <node concept="lc7rE" id="34JZ5vrZlN2" role="3cqZAp">
                           <node concept="la8eA" id="6t646FqRhlf" role="lcghm">
@@ -1496,6 +1548,58 @@
                                   <node concept="1PxgMI" id="34JZ5vs6K0U" role="1ryhcI">
                                     <ref role="1PxNhF" to="iowz:7gAPJCERGEA" resolve="FileChannel" />
                                     <node concept="2GrUjf" id="34JZ5vs6JYv" role="1PxMeX">
+                                      <ref role="2Gs0qQ" node="34JZ5vs6EQX" resolve="output" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3eNFk2" id="5rnWeHLcrbV" role="3eNLev">
+                            <node concept="3clFbC" id="5rnWeHLcryD" role="3eO9$A">
+                              <node concept="35c_gC" id="5rnWeHLcrGv" role="3uHU7w">
+                                <ref role="35c_gD" to="iowz:3v6eDgzA3ze" resolve="TupleChannel" />
+                              </node>
+                              <node concept="2OqwBi" id="5rnWeHLcrjK" role="3uHU7B">
+                                <node concept="2GrUjf" id="5rnWeHLcrin" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="34JZ5vs6EQX" resolve="output" />
+                                </node>
+                                <node concept="2yIwOk" id="5rnWeHLcrx6" role="2OqNvi" />
+                              </node>
+                            </node>
+                            <node concept="3clFbS" id="5rnWeHLcrbX" role="3eOfB_">
+                              <node concept="lc7rE" id="5rnWeHLcrQJ" role="3cqZAp">
+                                <node concept="1bDJIP" id="5rnWeHLcrVk" role="lcghm">
+                                  <ref role="1rvKf6" node="3m9W35noEi5" resolve="tupleChannel" />
+                                  <node concept="1PxgMI" id="5rnWeHLcs6V" role="1ryhcI">
+                                    <ref role="1PxNhF" to="iowz:3v6eDgzA3ze" resolve="TupleChannel" />
+                                    <node concept="2GrUjf" id="5rnWeHLcrZW" role="1PxMeX">
+                                      <ref role="2Gs0qQ" node="34JZ5vs6EQX" resolve="output" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3eNFk2" id="5rnWeHLcsss" role="3eNLev">
+                            <node concept="3clFbC" id="5rnWeHLcsT6" role="3eO9$A">
+                              <node concept="35c_gC" id="5rnWeHLct4b" role="3uHU7w">
+                                <ref role="35c_gD" to="iowz:3v6eDgz_YY9" resolve="ListChannel" />
+                              </node>
+                              <node concept="2OqwBi" id="5rnWeHLcsDf" role="3uHU7B">
+                                <node concept="2GrUjf" id="5rnWeHLcsBQ" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="34JZ5vs6EQX" resolve="output" />
+                                </node>
+                                <node concept="2yIwOk" id="5rnWeHLcsRz" role="2OqNvi" />
+                              </node>
+                            </node>
+                            <node concept="3clFbS" id="5rnWeHLcssu" role="3eOfB_">
+                              <node concept="lc7rE" id="5rnWeHLcteV" role="3cqZAp">
+                                <node concept="1bDJIP" id="5rnWeHLctjK" role="lcghm">
+                                  <ref role="1rvKf6" node="3m9W35nokRx" resolve="listChannel" />
+                                  <node concept="1PxgMI" id="5rnWeHLctuT" role="1ryhcI">
+                                    <ref role="1PxNhF" to="iowz:3v6eDgz_YY9" resolve="ListChannel" />
+                                    <node concept="2GrUjf" id="5rnWeHLctoC" role="1PxMeX">
                                       <ref role="2Gs0qQ" node="34JZ5vs6EQX" resolve="output" />
                                     </node>
                                   </node>
@@ -1894,22 +1998,14 @@
       <property role="TrG5h" value="tupleChannel" />
       <node concept="3cqZAl" id="3m9W35noEi6" role="3clF45" />
       <node concept="3clFbS" id="3m9W35noEi7" role="3clF47">
-        <node concept="lc7rE" id="3m9W35noEsV" role="3cqZAp">
-          <node concept="la8eA" id="3m9W35noEt2" role="lcghm">
-            <property role="lacIc" value="set " />
-          </node>
-          <node concept="l9hG8" id="3m9W35noEtq" role="lcghm">
-            <node concept="2OqwBi" id="3m9W35noEOv" role="lb14g">
-              <node concept="2OqwBi" id="3m9W35noEvT" role="2Oq$k0">
-                <node concept="37vLTw" id="3m9W35noEu4" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3m9W35noEsL" resolve="tupleChannel" />
-                </node>
-                <node concept="3TrEf2" id="3m9W35noEDg" role="2OqNvi">
-                  <ref role="3Tt5mk" to="iowz:3v6eDgzA3zf" />
-                </node>
+        <node concept="lc7rE" id="5rnWeHL3EtI" role="3cqZAp">
+          <node concept="l9hG8" id="5rnWeHL3EtV" role="lcghm">
+            <node concept="2OqwBi" id="5rnWeHL3Ewq" role="lb14g">
+              <node concept="37vLTw" id="5rnWeHL3Euy" role="2Oq$k0">
+                <ref role="3cqZAo" node="3m9W35noEsL" resolve="tupleChannel" />
               </node>
-              <node concept="3TrcHB" id="3m9W35noF00" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="2qgKlT" id="5rnWeHL3EDL" role="2OqNvi">
+                <ref role="37wK5l" to="mqvz:5rnWeHL3tNy" resolve="getOutput" />
               </node>
             </node>
           </node>

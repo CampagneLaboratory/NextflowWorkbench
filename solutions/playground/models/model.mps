@@ -88,9 +88,36 @@
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
         <reference id="6509497193195685433" name="variable" index="0wEsc" />
       </concept>
+      <concept id="3121388506942473710" name="org.campagnelab.workflow.structure.GlobalTupleExpression" flags="ng" index="16Aex">
+        <child id="3121388506942473711" name="tuple" index="16Aew" />
+      </concept>
+      <concept id="3121388506946094127" name="org.campagnelab.workflow.structure.GlobalTupleLiteral" flags="ng" index="1OM9w">
+        <child id="3121388506946094128" name="tuple" index="1OM9Z" />
+      </concept>
+      <concept id="3121388506946094214" name="org.campagnelab.workflow.structure.GlobalIntegerLiteralTuple" flags="ng" index="1OMb9">
+        <child id="3121388506946094215" name="integer" index="1OMb8" />
+      </concept>
+      <concept id="3121388506946094443" name="org.campagnelab.workflow.structure.GlobalFileLiteralTuple" flags="ng" index="1OMc$">
+        <child id="3121388506946094444" name="file" index="1OMcz" />
+      </concept>
+      <concept id="3121388506946094358" name="org.campagnelab.workflow.structure.GlobalStringLiteralTuple" flags="ng" index="1OMdp">
+        <child id="3121388506946094553" name="string" index="1OMem" />
+      </concept>
+      <concept id="3121388506946094540" name="org.campagnelab.workflow.structure.GlobalListLiteralTuple" flags="ng" index="1OMe3">
+        <child id="3121388506946094541" name="list" index="1OMe2" />
+      </concept>
+      <concept id="3121388506946094030" name="org.campagnelab.workflow.structure.GlobalBooleanLiteralTuple" flags="ng" index="1OMm1">
+        <child id="3121388506946094031" name="boolean" index="1OMm0" />
+      </concept>
       <concept id="4018964125401476997" name="org.campagnelab.workflow.structure.List" flags="ng" index="kktkh" />
       <concept id="4018964125401477001" name="org.campagnelab.workflow.structure.ListChannel" flags="ng" index="kktkt">
         <child id="4018964125401477073" name="list" index="kktl5" />
+      </concept>
+      <concept id="4018964125401495758" name="org.campagnelab.workflow.structure.TupleChannel" flags="ng" index="knw9q">
+        <child id="4018964125401495759" name="tuple" index="knw9r" />
+      </concept>
+      <concept id="4018964125401495568" name="org.campagnelab.workflow.structure.Tuple" flags="ng" index="knwa4">
+        <child id="3121388506930185062" name="value" index="2RIkD" />
       </concept>
       <concept id="2329585396107819892" name="org.campagnelab.workflow.structure.NumCPUs" flags="ng" index="oDubB">
         <property id="2329585396107820961" name="num" index="oDuoM" />
@@ -191,8 +218,10 @@
       <concept id="1131453450772026527" name="org.campagnelab.workflow.structure.BaseLanguageAdapter" flags="ng" index="UAUTO">
         <child id="5930160417400088880" name="statements" index="2AuG1a" />
       </concept>
+      <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
+      <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
       <concept id="8369613327464057507" name="org.campagnelab.workflow.structure.BooleanChannel" flags="ng" index="1uY1Lp">
         <child id="8369613327464057508" name="boolean" index="1uY1Lu" />
@@ -205,7 +234,6 @@
         <child id="3857878650537656757" name="functions" index="1ylr64" />
       </concept>
       <concept id="3857878650533843630" name="org.campagnelab.workflow.structure.ToList" flags="ng" index="1yaYav" />
-      <concept id="3857878650533844000" name="org.campagnelab.workflow.structure.ToSortedList" flags="ng" index="1yaYgh" />
       <concept id="3857878650533842545" name="org.campagnelab.workflow.structure.Collate" flags="ng" index="1yaZT0" />
       <concept id="3857878650533842792" name="org.campagnelab.workflow.structure.Flatten" flags="ng" index="1yaZXp" />
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
@@ -238,6 +266,9 @@
       <node concept="1uLkD0" id="5CFNYIF7pBe" role="1uLvPA">
         <property role="TrG5h" value="Z" />
       </node>
+      <node concept="1uLkD0" id="5rnWeHL7kjf" role="1uLvPA">
+        <property role="TrG5h" value="tupleCh2" />
+      </node>
       <node concept="1uYdA0" id="vHEKaVXXQ0" role="1uLvPH">
         <ref role="1uK_4X" node="5Sz2Ie0VBoQ" resolve="GBE" />
         <node concept="1yaZT0" id="vHEKaYEwVW" role="1ylr64" />
@@ -258,27 +289,11 @@
         <node concept="1yaYav" id="2HUohs0Di$n" role="1ylr64" />
         <node concept="1yaZXp" id="2HUohs0DiAp" role="1ylr64" />
       </node>
+      <node concept="1uYdA0" id="5rnWeHL7k9U" role="1uLvPH">
+        <ref role="1uK_4X" node="5rnWeHL7kjf" resolve="tupleCh2" />
+      </node>
       <node concept="1uLkD0" id="7mWvTulz6_4" role="1uLvPA">
         <property role="TrG5h" value="D" />
-      </node>
-    </node>
-    <node concept="2$rEH5" id="68uCiTDD6dG" role="2$rEHq">
-      <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTest" />
-      <node concept="1uYdA0" id="vHEKaVXXRc" role="1uLvPH">
-        <ref role="1uK_4X" node="5Sz2Ie0Rdgu" resolve="boolch" />
-        <node concept="1yaYgh" id="7mWvTum$zAZ" role="1ylr64" />
-        <node concept="1yaZXp" id="2HUohs0iBBq" role="1ylr64" />
-        <node concept="1yaZXp" id="2HUohs0rfTc" role="1ylr64" />
-      </node>
-    </node>
-    <node concept="2$rEH5" id="YNIIGP$Wys" role="2$rEHq">
-      <ref role="2$rEH4" node="YNIIGPcu0K" resolve="conditionDummy" />
-      <node concept="1uYdA0" id="YNIIGP$WyV" role="1uLvPH">
-        <ref role="1uK_4X" node="3dl4$WVg72A" resolve="Y" />
-        <node concept="1yaZXp" id="2HUohs0CXe5" role="1ylr64" />
-      </node>
-      <node concept="1uLkD0" id="YNIIGP$WzL" role="1uLvPA">
-        <property role="TrG5h" value="X" />
       </node>
     </node>
     <node concept="2LyH2v" id="235lbi5JUAj" role="2LyH5s" />
@@ -443,6 +458,60 @@
         </node>
       </node>
     </node>
+    <node concept="1CVceo" id="2Hhp$WE$byT" role="2$L6iY">
+      <property role="TrG5h" value="tupleCh" />
+      <node concept="16Aex" id="5rnWeHKQwoB" role="2$L62I">
+        <node concept="1OM9w" id="5rnWeHKQwoD" role="16Aew">
+          <node concept="1OMb9" id="5rnWeHKVZKl" role="1OM9Z">
+            <node concept="2$RDDD" id="5rnWeHKVZKn" role="1OMb8">
+              <property role="2$RDDE" value="3" />
+            </node>
+          </node>
+          <node concept="1OMm1" id="5rnWeHKVZK_" role="1OM9Z">
+            <node concept="2$RAf6" id="5rnWeHKVZKB" role="1OMm0" />
+          </node>
+        </node>
+        <node concept="1OM9w" id="5rnWeHKVZKK" role="16Aew">
+          <node concept="1OMb9" id="5rnWeHKVZKX" role="1OM9Z">
+            <node concept="2$RDDD" id="5rnWeHKVZKZ" role="1OMb8">
+              <property role="2$RDDE" value="2" />
+            </node>
+          </node>
+          <node concept="1OMm1" id="5rnWeHKVZLg" role="1OM9Z">
+            <node concept="2$RAf6" id="5rnWeHKVZLi" role="1OMm0">
+              <property role="2$RDCk" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="1OM9w" id="5rnWeHKVZLu" role="16Aew">
+          <node concept="1OMm1" id="5rnWeHKVZLK" role="1OM9Z">
+            <node concept="2$RAf6" id="5rnWeHKVZLM" role="1OMm0" />
+          </node>
+          <node concept="1OMc$" id="5rnWeHKVZLX" role="1OM9Z">
+            <node concept="2xgF7X" id="5rnWeHKVZLZ" role="1OMcz">
+              <property role="2VDI9B" value="path" />
+            </node>
+          </node>
+          <node concept="1OMb9" id="5rnWeHKVZMq" role="1OM9Z">
+            <node concept="2$RDDD" id="5rnWeHKVZMs" role="1OMb8">
+              <property role="2$RDDE" value="5" />
+            </node>
+          </node>
+          <node concept="1OMe3" id="5rnWeHKVZMM" role="1OM9Z">
+            <node concept="2$RA36" id="5rnWeHKVZMY" role="1OMe2">
+              <node concept="2$RDDD" id="5rnWeHKVZNb" role="2$RA37">
+                <property role="2$RDDE" value="2" />
+              </node>
+            </node>
+          </node>
+          <node concept="1OMdp" id="5rnWeHL31IW" role="1OM9Z">
+            <node concept="2$RDGe" id="5rnWeHL31IY" role="1OMem">
+              <property role="2$RDGf" value="bill" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
@@ -486,14 +555,31 @@
     </node>
     <node concept="3Y$Zt1" id="34JZ5vs_Ul8" role="2ulM7a">
       <node concept="19SGf9" id="34JZ5vs_Ul9" role="3Y$PkS">
-        <node concept="19SUe$" id="34JZ5vs_Ula" role="19SJt6">
-          <property role="19SUeA" value="cat index_* &gt; '*.txt'\n" />
+        <node concept="19SUe$" id="2Hhp$WE5fb5" role="19SJt6" />
+        <node concept="3YE7tV" id="2Hhp$WE5fb4" role="19SJt6">
+          <ref role="3YE7sm" node="2Hhp$WE5faQ" resolve="strings" />
+        </node>
+        <node concept="19SUe$" id="2Hhp$WE5fb3" role="19SJt6">
+          <property role="19SUeA" value="\ncat index_* &gt; '*.txt'\n" />
         </node>
       </node>
     </node>
-    <node concept="kktkt" id="vHEKaW4732" role="2ulM7n">
-      <node concept="kktkh" id="vHEKaW4733" role="kktl5">
+    <node concept="kktkt" id="2Hhp$WDYzDC" role="2ulM7n">
+      <node concept="kktkh" id="2Hhp$WDYzDE" role="kktl5">
         <property role="TrG5h" value="lists" />
+      </node>
+    </node>
+    <node concept="knw9q" id="2Hhp$WE1T6P" role="2ulM7n">
+      <node concept="knwa4" id="2Hhp$WE1T6R" role="knw9r">
+        <node concept="1utKzZ" id="2Hhp$WE1T72" role="2RIkD">
+          <property role="TrG5h" value="bool2" />
+        </node>
+        <node concept="16pbKc" id="2Hhp$WE5faQ" role="2RIkD">
+          <property role="TrG5h" value="strings" />
+        </node>
+        <node concept="16pRw0" id="5rnWeHLh3In" role="2RIkD">
+          <property role="TrG5h" value="files" />
+        </node>
       </node>
     </node>
   </node>
@@ -504,11 +590,18 @@
         <property role="TrG5h" value="'*.txt'" />
       </node>
     </node>
+    <node concept="1uY1Lp" id="2Hhp$WDYzcg" role="2ulM7n">
+      <node concept="1utKzZ" id="2Hhp$WDYzci" role="1uY1Lu">
+        <property role="TrG5h" value="bools" />
+      </node>
+    </node>
     <node concept="3Y$Zt1" id="4KI7BXrwLPT" role="2ulM7a">
       <node concept="19SGf9" id="4KI7BXrwLPU" role="3Y$PkS">
         <node concept="19SUe$" id="4KI7BXrwLPV" role="19SJt6">
-          <property role="19SUeA" value="cat *.txt &gt;&gt; finalFile" />
+          <property role="19SUeA" value="cat *.txt &gt;&gt; finalFile\n" />
         </node>
+        <node concept="3YE7tV" id="2Hhp$WDYzc_" role="19SJt6" />
+        <node concept="19SUe$" id="2Hhp$WDYzcA" role="19SJt6" />
       </node>
     </node>
   </node>
@@ -568,6 +661,16 @@
     <node concept="kktkt" id="3dl4$WVfOQH" role="2ulM79">
       <node concept="kktkh" id="3dl4$WVfOQI" role="kktl5">
         <property role="TrG5h" value="lsts" />
+      </node>
+    </node>
+    <node concept="knw9q" id="5rnWeHL7kce" role="2ulM79">
+      <node concept="knwa4" id="5rnWeHL7kcg" role="knw9r">
+        <node concept="1utKN4" id="5rnWeHL7kcz" role="2RIkD">
+          <property role="TrG5h" value="ints" />
+        </node>
+        <node concept="1utKzZ" id="5rnWeHL7kcS" role="2RIkD">
+          <property role="TrG5h" value="bools2" />
+        </node>
       </node>
     </node>
   </node>

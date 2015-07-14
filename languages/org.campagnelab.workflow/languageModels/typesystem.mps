@@ -228,6 +228,7 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="3121388506938957370" name="org.campagnelab.workflow.structure.TupleType" flags="ig" index="1h3xP" />
       <concept id="3526016120162721360" name="org.campagnelab.workflow.structure.FileType" flags="ig" index="3UtRaE" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -2487,6 +2488,56 @@
     <node concept="1YaCAy" id="2Hhp$WDbPOj" role="1YuTPh">
       <property role="TrG5h" value="globalListLiteral" />
       <ref role="1YaFvo" to="iowz:3m26Pihn7Np" resolve="GlobalListLiteral" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2Hhp$WE5lyW">
+    <property role="TrG5h" value="typeof_Tuple" />
+    <property role="3GE5qa" value="types" />
+    <node concept="3clFbS" id="2Hhp$WE5lyX" role="18ibNy">
+      <node concept="1Z5TYs" id="2Hhp$WEfpHP" role="3cqZAp">
+        <node concept="mw_s8" id="2Hhp$WEfpI9" role="1ZfhKB">
+          <node concept="2c44tf" id="2Hhp$WEfpI5" role="mwGJk">
+            <node concept="1h3xP" id="2Hhp$WEfpIv" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="2Hhp$WEfpHS" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2Hhp$WEfpGh" role="mwGJk">
+            <node concept="1YBJjd" id="2Hhp$WEfpGH" role="1Z2MuG">
+              <ref role="1YBMHb" node="2Hhp$WE5lyZ" resolve="tuple" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2Hhp$WE5lyZ" role="1YuTPh">
+      <property role="TrG5h" value="tuple" />
+      <ref role="1YaFvo" to="iowz:3v6eDgzA3wg" resolve="Tuple" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2Hhp$WEiKhS">
+    <property role="TrG5h" value="typeof_TupleChannel" />
+    <property role="3GE5qa" value="channelTypes" />
+    <node concept="3clFbS" id="2Hhp$WEiKhT" role="18ibNy">
+      <node concept="1Z5TYs" id="2Hhp$WEiKjy" role="3cqZAp">
+        <node concept="mw_s8" id="2Hhp$WEiKjQ" role="1ZfhKB">
+          <node concept="2c44tf" id="2Hhp$WEiKjM" role="mwGJk">
+            <node concept="_YKpA" id="2Hhp$WEiKkc" role="2c44tc">
+              <node concept="1h3xP" id="2Hhp$WEiKkO" role="_ZDj9" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2Hhp$WEiKj_" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2Hhp$WEiKhZ" role="mwGJk">
+            <node concept="1YBJjd" id="2Hhp$WEiKir" role="1Z2MuG">
+              <ref role="1YBMHb" node="2Hhp$WEiKhV" resolve="tupleChannel" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2Hhp$WEiKhV" role="1YuTPh">
+      <property role="TrG5h" value="tupleChannel" />
+      <ref role="1YaFvo" to="iowz:3v6eDgzA3ze" resolve="TupleChannel" />
     </node>
   </node>
 </model>
