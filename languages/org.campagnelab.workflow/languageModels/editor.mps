@@ -77,6 +77,7 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -410,6 +411,10 @@
         <node concept="lj46D" id="3ETEwC$mubo" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="3F0ifn" id="205Ijh3MlyE" role="2czzBI">
+          <property role="3F0ifm" value="&lt;input channel&gt;" />
+          <ref role="1k5W1q" node="5yyd2HFN6xi" resolve="EmptyCell" />
+        </node>
       </node>
       <node concept="1iCGBv" id="46nPNk8aIgE" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:5D7AjvYaj9N" />
@@ -429,6 +434,10 @@
         <node concept="l2Vlx" id="46nPNk8aIhY" role="2czzBx" />
         <node concept="lj46D" id="3ETEwC$mubr" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="205Ijh3MlyH" role="2czzBI">
+          <property role="3F0ifm" value="&lt;output channel&gt;" />
+          <ref role="1k5W1q" node="5yyd2HFN6xi" resolve="EmptyCell" />
         </node>
       </node>
       <node concept="3F0ifn" id="21kmpcTtAe6" role="3EZMnx">
@@ -499,6 +508,7 @@
     <ref role="1XX52x" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
     <node concept="3EZMnI" id="3pxfPu9PvGa" role="2wV5jI">
       <node concept="1iCGBv" id="3pxfPu9PvGk" role="3EZMnx">
+        <property role="1$x2rV" value="&lt;input channel&gt;" />
         <ref role="1NtTu8" to="iowz:7gAPJCET8v7" />
         <ref role="1ERwB7" node="68uCiTD$ub$" resolve="InputChannelMap" />
         <node concept="1sVBvm" id="3pxfPu9PvGm" role="1sWHZn">
