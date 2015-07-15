@@ -27,7 +27,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Boolean_BehaviorDescriptor" />
     </file>
     <file name="ChannelFunctions_BehaviorDescriptor.java">
-      <unit at="8,0,17,0" name="org.campagnelab.workflow.behavior.ChannelFunctions_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ChannelFunctions_BehaviorDescriptor" />
     </file>
     <file name="ChannelType_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ChannelType_BehaviorDescriptor" />
@@ -39,7 +39,7 @@
       <unit at="7,0,24,0" name="org.campagnelab.workflow.behavior.ClusterOptions_BehaviorDescriptor" />
     </file>
     <file name="Collate_BehaviorDescriptor.java">
-      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.Collate_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Collate_BehaviorDescriptor" />
     </file>
     <file name="ConditionalExpressionText_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ConditionalExpressionText_BehaviorDescriptor" />
@@ -63,7 +63,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.File_BehaviorDescriptor" />
     </file>
     <file name="Flatten_BehaviorDescriptor.java">
-      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.Flatten_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Flatten_BehaviorDescriptor" />
     </file>
     <file name="GlobalBooleanExpression_BehaviorDescriptor.java">
       <unit at="7,0,21,0" name="org.campagnelab.workflow.behavior.GlobalBooleanExpression_BehaviorDescriptor" />
@@ -258,10 +258,10 @@
       <unit at="7,0,24,0" name="org.campagnelab.workflow.behavior.TimeAllowed_BehaviorDescriptor" />
     </file>
     <file name="ToList_BehaviorDescriptor.java">
-      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.ToList_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ToList_BehaviorDescriptor" />
     </file>
     <file name="ToSortedList_BehaviorDescriptor.java">
-      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.ToSortedList_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ToSortedList_BehaviorDescriptor" />
     </file>
     <file name="TupleChannel_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.TupleChannel_BehaviorDescriptor" />
@@ -1411,270 +1411,66 @@
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/8483796087097631737">
     <file name="ToList_Behavior.java">
-      <node id="3698882800454420305" at="19,57,20,471" concept="5" />
-      <node id="8483796087097634232" at="20,471,21,96" concept="6" />
-      <node id="8483796087097638620" at="22,12,23,289" concept="6" />
-      <node id="8483796087097634279" at="26,80,27,63" concept="5" />
-      <node id="8483796087097634279" at="27,63,28,30" concept="5" />
-      <node id="8483796087097634279" at="28,30,29,30" concept="5" />
-      <node id="8483796087097634279" at="29,30,30,233" concept="1" />
-      <node id="8483796087097634279" at="30,233,31,39" concept="1" />
-      <node id="8483796087097634279" at="32,31,33,193" concept="1" />
-      <node id="8483796087097634279" at="34,5,35,24" concept="6" />
-      <node id="8483796087097638696" at="37,81,38,63" concept="5" />
-      <node id="8483796087097638696" at="38,63,39,30" concept="5" />
-      <node id="8483796087097638696" at="39,30,40,30" concept="5" />
-      <node id="8483796087097638696" at="40,30,41,233" concept="1" />
-      <node id="8483796087097638696" at="41,233,42,39" concept="1" />
-      <node id="8483796087097638696" at="43,31,44,193" concept="1" />
-      <node id="8483796087097638696" at="45,5,46,24" concept="6" />
-      <node id="8483796087097631737" at="16,0,18,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="571300756006669469" at="22,10,24,5" concept="0" />
-      <node id="8483796087097634279" at="31,39,34,5" concept="3" />
-      <node id="8483796087097638696" at="42,39,45,5" concept="3" />
-      <node id="8483796087097634279" at="30,233,34,5" concept="0" />
-      <node id="8483796087097634279" at="30,233,34,5" concept="0" />
-      <node id="8483796087097638696" at="41,233,45,5" concept="0" />
-      <node id="8483796087097638696" at="41,233,45,5" concept="0" />
-      <node id="8483796087097634279" at="29,30,34,5" concept="0" />
-      <node id="8483796087097634279" at="29,30,34,5" concept="0" />
-      <node id="8483796087097638696" at="40,30,45,5" concept="0" />
-      <node id="8483796087097638696" at="40,30,45,5" concept="0" />
-      <node id="571300756006669434" at="18,83,24,5" concept="3" />
-      <node id="8483796087097631737" at="18,0,26,0" concept="9" trace="virtual_getPreviousType_8483796087097632087#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="8483796087097634279" at="26,0,37,0" concept="9" trace="_quotation_createNode_cdpe6k_a1a0a0#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="8483796087097638696" at="37,0,48,0" concept="9" trace="_quotation_createNode_cdpe6k_a0a0a0a#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="8483796087097631739" at="16,43,16,43" />
-      <scope id="571300756006669470" at="22,12,23,289" />
-      <scope id="8483796087097634279" at="32,31,33,193" />
-      <scope id="8483796087097638696" at="43,31,44,193" />
-      <scope id="8483796087097631737" at="16,0,18,0">
+      <node id="8483796087097631737" at="8,0,10,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8483796087097631739" at="8,43,8,43" />
+      <scope id="8483796087097631737" at="8,0,10,0">
         <var name="thisNode" id="8483796087097631737" />
       </scope>
-      <scope id="571300756006669435" at="19,57,21,96">
-        <var name="function" id="3698882800454420306" />
-      </scope>
-      <scope id="8483796087097634279" at="30,233,34,5" />
-      <scope id="8483796087097638696" at="41,233,45,5" />
-      <scope id="8483796087097634279" at="29,30,34,5" />
-      <scope id="8483796087097638696" at="40,30,45,5" />
-      <scope id="8483796087097633361" at="18,83,24,5" />
-      <scope id="8483796087097631737" at="18,0,26,0">
-        <var name="thisNode" id="8483796087097631737" />
-      </scope>
-      <scope id="8483796087097634279" at="26,80,35,24">
-        <var name="facade" id="8483796087097634279" />
-        <var name="quotedNode_2" id="8483796087097634279" />
-        <var name="quotedNode_3" id="8483796087097634279" />
-      </scope>
-      <scope id="8483796087097638696" at="37,81,46,24">
-        <var name="facade" id="8483796087097638696" />
-        <var name="quotedNode_2" id="8483796087097638696" />
-        <var name="quotedNode_3" id="8483796087097638696" />
-      </scope>
-      <scope id="8483796087097634279" at="26,0,37,0">
-        <var name="parameter_1" id="8483796087097634279" />
-      </scope>
-      <scope id="8483796087097638696" at="37,0,48,0">
-        <var name="parameter_1" id="8483796087097638696" />
-      </scope>
-      <unit id="8483796087097631737" at="15,0,49,0" name="org.campagnelab.workflow.behavior.ToList_Behavior" />
+      <unit id="8483796087097631737" at="7,0,11,0" name="org.campagnelab.workflow.behavior.ToList_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/8483796087097631740">
     <file name="ChannelFunctions_Behavior.java">
-      <node id="8483796087097631740" at="8,0,10,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="8483796087097631742" at="8,43,8,43" />
-      <scope id="8483796087097631740" at="8,0,10,0">
+      <node id="8483796087098509932" at="15,57,16,471" concept="5" />
+      <node id="8483796087098509949" at="16,471,17,22" concept="6" />
+      <node id="8483796087098509964" at="18,12,19,377" concept="6" />
+      <node id="8483796087097631740" at="12,0,14,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8483796087098509962" at="18,10,20,5" concept="0" />
+      <node id="8483796087098509930" at="14,80,20,5" concept="3" />
+      <node id="8483796087097631740" at="14,0,22,0" concept="9" trace="call_getPreviousNode_8483796087098509928#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="8483796087097631742" at="12,43,12,43" />
+      <scope id="8483796087098509963" at="18,12,19,377" />
+      <scope id="8483796087097631740" at="12,0,14,0">
         <var name="thisNode" id="8483796087097631740" />
       </scope>
-      <unit id="8483796087097631740" at="7,0,11,0" name="org.campagnelab.workflow.behavior.ChannelFunctions_Behavior" />
+      <scope id="8483796087098509931" at="15,57,17,22">
+        <var name="function" id="8483796087098509933" />
+      </scope>
+      <scope id="8483796087098509929" at="14,80,20,5" />
+      <scope id="8483796087097631740" at="14,0,22,0">
+        <var name="thisNode" id="8483796087097631740" />
+      </scope>
+      <unit id="8483796087097631740" at="11,0,23,0" name="org.campagnelab.workflow.behavior.ChannelFunctions_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/8483796087098509775">
     <file name="Collate_Behavior.java">
-      <node id="8483796087098509932" at="19,57,20,471" concept="5" />
-      <node id="8483796087098509949" at="20,471,21,96" concept="6" />
-      <node id="8483796087098509964" at="22,12,23,289" concept="6" />
-      <node id="8483796087098509950" at="26,80,27,63" concept="5" />
-      <node id="8483796087098509950" at="27,63,28,30" concept="5" />
-      <node id="8483796087098509950" at="28,30,29,30" concept="5" />
-      <node id="8483796087098509950" at="29,30,30,233" concept="1" />
-      <node id="8483796087098509950" at="30,233,31,39" concept="1" />
-      <node id="8483796087098509950" at="32,31,33,193" concept="1" />
-      <node id="8483796087098509950" at="34,5,35,24" concept="6" />
-      <node id="8483796087098509965" at="37,81,38,63" concept="5" />
-      <node id="8483796087098509965" at="38,63,39,30" concept="5" />
-      <node id="8483796087098509965" at="39,30,40,30" concept="5" />
-      <node id="8483796087098509965" at="40,30,41,233" concept="1" />
-      <node id="8483796087098509965" at="41,233,42,39" concept="1" />
-      <node id="8483796087098509965" at="43,31,44,193" concept="1" />
-      <node id="8483796087098509965" at="45,5,46,24" concept="6" />
-      <node id="8483796087098509775" at="16,0,18,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="8483796087098509962" at="22,10,24,5" concept="0" />
-      <node id="8483796087098509950" at="31,39,34,5" concept="3" />
-      <node id="8483796087098509965" at="42,39,45,5" concept="3" />
-      <node id="8483796087098509950" at="30,233,34,5" concept="0" />
-      <node id="8483796087098509950" at="30,233,34,5" concept="0" />
-      <node id="8483796087098509965" at="41,233,45,5" concept="0" />
-      <node id="8483796087098509965" at="41,233,45,5" concept="0" />
-      <node id="8483796087098509950" at="29,30,34,5" concept="0" />
-      <node id="8483796087098509950" at="29,30,34,5" concept="0" />
-      <node id="8483796087098509965" at="40,30,45,5" concept="0" />
-      <node id="8483796087098509965" at="40,30,45,5" concept="0" />
-      <node id="8483796087098509930" at="18,83,24,5" concept="3" />
-      <node id="8483796087098509775" at="18,0,26,0" concept="9" trace="virtual_getPreviousType_8483796087097632087#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="8483796087098509950" at="26,0,37,0" concept="9" trace="_quotation_createNode_1zsxtx_a1a0a0#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="8483796087098509965" at="37,0,48,0" concept="9" trace="_quotation_createNode_1zsxtx_a0a0a0a#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="8483796087098509777" at="16,43,16,43" />
-      <scope id="8483796087098509963" at="22,12,23,289" />
-      <scope id="8483796087098509950" at="32,31,33,193" />
-      <scope id="8483796087098509965" at="43,31,44,193" />
-      <scope id="8483796087098509775" at="16,0,18,0">
+      <node id="8483796087098509775" at="8,0,10,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8483796087098509777" at="8,43,8,43" />
+      <scope id="8483796087098509775" at="8,0,10,0">
         <var name="thisNode" id="8483796087098509775" />
       </scope>
-      <scope id="8483796087098509931" at="19,57,21,96">
-        <var name="function" id="8483796087098509933" />
-      </scope>
-      <scope id="8483796087098509950" at="30,233,34,5" />
-      <scope id="8483796087098509965" at="41,233,45,5" />
-      <scope id="8483796087098509950" at="29,30,34,5" />
-      <scope id="8483796087098509965" at="40,30,45,5" />
-      <scope id="8483796087098509929" at="18,83,24,5" />
-      <scope id="8483796087098509775" at="18,0,26,0">
-        <var name="thisNode" id="8483796087098509775" />
-      </scope>
-      <scope id="8483796087098509950" at="26,80,35,24">
-        <var name="facade" id="8483796087098509950" />
-        <var name="quotedNode_2" id="8483796087098509950" />
-        <var name="quotedNode_3" id="8483796087098509950" />
-      </scope>
-      <scope id="8483796087098509965" at="37,81,46,24">
-        <var name="facade" id="8483796087098509965" />
-        <var name="quotedNode_2" id="8483796087098509965" />
-        <var name="quotedNode_3" id="8483796087098509965" />
-      </scope>
-      <scope id="8483796087098509950" at="26,0,37,0">
-        <var name="parameter_1" id="8483796087098509950" />
-      </scope>
-      <scope id="8483796087098509965" at="37,0,48,0">
-        <var name="parameter_1" id="8483796087098509965" />
-      </scope>
-      <unit id="8483796087098509775" at="15,0,49,0" name="org.campagnelab.workflow.behavior.Collate_Behavior" />
+      <unit id="8483796087098509775" at="7,0,11,0" name="org.campagnelab.workflow.behavior.Collate_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/8483796087098510342">
     <file name="Flatten_Behavior.java">
-      <node id="8483796087098510499" at="17,57,18,471" concept="5" />
-      <node id="3132923242205280419" at="19,238,20,388" concept="6" />
-      <node id="3132923242210697331" at="21,14,22,20" concept="6" />
-      <node id="8483796087098510531" at="25,506,26,580" concept="6" />
-      <node id="3132923242205080998" at="26,580,27,0" concept="8" />
-      <node id="3132923242210698605" at="28,14,29,20" concept="6" />
-      <node id="3132923242205171052" at="33,65,34,46" concept="6" />
-      <node id="8483796087098510342" at="14,0,16,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="3132923242205286640" at="21,12,23,7" concept="0" />
-      <node id="3132923242205243766" at="28,12,30,7" concept="0" />
-      <node id="3132923242205171052" at="33,0,36,0" concept="9" trace="eq_th15iu_a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="3132923242205277227" at="18,471,23,7" concept="3" />
-      <node id="3132923242205080997" at="24,12,30,7" concept="3" />
-      <node id="8483796087098510529" at="24,10,31,5" concept="0" />
-      <node id="8483796087098510497" at="16,83,31,5" concept="3" />
-      <node id="8483796087098510342" at="16,0,33,0" concept="9" trace="virtual_getPreviousType_8483796087097632087#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="8483796087098510344" at="14,43,14,43" />
-      <scope id="3132923242205277229" at="19,238,20,388" />
-      <scope id="3132923242205286641" at="21,14,22,20" />
-      <scope id="3132923242205243767" at="28,14,29,20" />
-      <scope id="3132923242205171052" at="33,65,34,46" />
-      <scope id="8483796087098510342" at="14,0,16,0">
+      <node id="8483796087098510342" at="8,0,10,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8483796087098510344" at="8,43,8,43" />
+      <scope id="8483796087098510342" at="8,0,10,0">
         <var name="thisNode" id="8483796087098510342" />
       </scope>
-      <scope id="3132923242205080999" at="25,506,27,0" />
-      <scope id="3132923242205171052" at="33,0,36,0">
-        <var name="a" id="3132923242205171052" />
-        <var name="b" id="3132923242205171052" />
-      </scope>
-      <scope id="8483796087098510498" at="17,57,23,7">
-        <var name="function" id="8483796087098510500" />
-      </scope>
-      <scope id="8483796087098510530" at="24,12,30,7" />
-      <scope id="8483796087098510496" at="16,83,31,5" />
-      <scope id="8483796087098510342" at="16,0,33,0">
-        <var name="thisNode" id="8483796087098510342" />
-      </scope>
-      <unit id="8483796087098510342" at="13,0,37,0" name="org.campagnelab.workflow.behavior.Flatten_Behavior" />
+      <unit id="8483796087098510342" at="7,0,11,0" name="org.campagnelab.workflow.behavior.Flatten_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/8483796087098510909">
     <file name="ToSortedList_Behavior.java">
-      <node id="8483796087098511066" at="19,57,20,471" concept="5" />
-      <node id="8483796087098511083" at="20,471,21,96" concept="6" />
-      <node id="8483796087098511098" at="22,12,23,289" concept="6" />
-      <node id="8483796087098511084" at="26,80,27,63" concept="5" />
-      <node id="8483796087098511084" at="27,63,28,30" concept="5" />
-      <node id="8483796087098511084" at="28,30,29,30" concept="5" />
-      <node id="8483796087098511084" at="29,30,30,233" concept="1" />
-      <node id="8483796087098511084" at="30,233,31,39" concept="1" />
-      <node id="8483796087098511084" at="32,31,33,193" concept="1" />
-      <node id="8483796087098511084" at="34,5,35,24" concept="6" />
-      <node id="8483796087098511099" at="37,81,38,63" concept="5" />
-      <node id="8483796087098511099" at="38,63,39,30" concept="5" />
-      <node id="8483796087098511099" at="39,30,40,30" concept="5" />
-      <node id="8483796087098511099" at="40,30,41,233" concept="1" />
-      <node id="8483796087098511099" at="41,233,42,39" concept="1" />
-      <node id="8483796087098511099" at="43,31,44,193" concept="1" />
-      <node id="8483796087098511099" at="45,5,46,24" concept="6" />
-      <node id="8483796087098510909" at="16,0,18,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="8483796087098511096" at="22,10,24,5" concept="0" />
-      <node id="8483796087098511084" at="31,39,34,5" concept="3" />
-      <node id="8483796087098511099" at="42,39,45,5" concept="3" />
-      <node id="8483796087098511084" at="30,233,34,5" concept="0" />
-      <node id="8483796087098511084" at="30,233,34,5" concept="0" />
-      <node id="8483796087098511099" at="41,233,45,5" concept="0" />
-      <node id="8483796087098511099" at="41,233,45,5" concept="0" />
-      <node id="8483796087098511084" at="29,30,34,5" concept="0" />
-      <node id="8483796087098511084" at="29,30,34,5" concept="0" />
-      <node id="8483796087098511099" at="40,30,45,5" concept="0" />
-      <node id="8483796087098511099" at="40,30,45,5" concept="0" />
-      <node id="8483796087098511064" at="18,83,24,5" concept="3" />
-      <node id="8483796087098510909" at="18,0,26,0" concept="9" trace="virtual_getPreviousType_8483796087097632087#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="8483796087098511084" at="26,0,37,0" concept="9" trace="_quotation_createNode_7w2lhp_a1a0a0#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="8483796087098511099" at="37,0,48,0" concept="9" trace="_quotation_createNode_7w2lhp_a0a0a0a#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="8483796087098510911" at="16,43,16,43" />
-      <scope id="8483796087098511097" at="22,12,23,289" />
-      <scope id="8483796087098511084" at="32,31,33,193" />
-      <scope id="8483796087098511099" at="43,31,44,193" />
-      <scope id="8483796087098510909" at="16,0,18,0">
+      <node id="8483796087098510909" at="8,0,10,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8483796087098510911" at="8,43,8,43" />
+      <scope id="8483796087098510909" at="8,0,10,0">
         <var name="thisNode" id="8483796087098510909" />
       </scope>
-      <scope id="8483796087098511065" at="19,57,21,96">
-        <var name="function" id="8483796087098511067" />
-      </scope>
-      <scope id="8483796087098511084" at="30,233,34,5" />
-      <scope id="8483796087098511099" at="41,233,45,5" />
-      <scope id="8483796087098511084" at="29,30,34,5" />
-      <scope id="8483796087098511099" at="40,30,45,5" />
-      <scope id="8483796087098511063" at="18,83,24,5" />
-      <scope id="8483796087098510909" at="18,0,26,0">
-        <var name="thisNode" id="8483796087098510909" />
-      </scope>
-      <scope id="8483796087098511084" at="26,80,35,24">
-        <var name="facade" id="8483796087098511084" />
-        <var name="quotedNode_2" id="8483796087098511084" />
-        <var name="quotedNode_3" id="8483796087098511084" />
-      </scope>
-      <scope id="8483796087098511099" at="37,81,46,24">
-        <var name="facade" id="8483796087098511099" />
-        <var name="quotedNode_2" id="8483796087098511099" />
-        <var name="quotedNode_3" id="8483796087098511099" />
-      </scope>
-      <scope id="8483796087098511084" at="26,0,37,0">
-        <var name="parameter_1" id="8483796087098511084" />
-      </scope>
-      <scope id="8483796087098511099" at="37,0,48,0">
-        <var name="parameter_1" id="8483796087098511099" />
-      </scope>
-      <unit id="8483796087098510909" at="15,0,49,0" name="org.campagnelab.workflow.behavior.ToSortedList_Behavior" />
+      <unit id="8483796087098510909" at="7,0,11,0" name="org.campagnelab.workflow.behavior.ToSortedList_Behavior" />
     </file>
   </root>
 </debug-info>
