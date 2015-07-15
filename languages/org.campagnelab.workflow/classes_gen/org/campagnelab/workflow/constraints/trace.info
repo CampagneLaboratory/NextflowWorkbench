@@ -8,19 +8,16 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
-  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,45,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
+      <unit at="10,0,40,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/1611392698174077817">
     <file name="ValueFromWorkflowRef_Constraints.java">
-      <node id="1611392698174077817" at="27,45,28,98" concept="12" />
+      <node id="1611392698174077817" at="27,45,28,98" concept="9" />
       <node id="1611392698174077817" at="31,98,32,135" concept="6" />
       <node id="1611392698174077817" at="35,44,36,20" concept="7" />
       <node id="1611392698174077817" at="43,44,44,24" concept="7" />
@@ -29,7 +26,7 @@
       <node id="1611392698174077817" at="55,122,56,479" concept="0" />
       <node id="1611392698174079320" at="55,122,56,479" concept="7" />
       <node id="1611392698174077817" at="60,7,61,22" concept="7" />
-      <node id="1611392698174077817" at="63,0,64,0" concept="10" trace="breakingNode_f3jydk_a0a2a0a0a1a0b0a1a1" />
+      <node id="1611392698174077817" at="63,0,64,0" concept="8" trace="breakingNode_f3jydk_a0a2a0a0a1a0b0a1a1" />
       <node id="1611392698174077817" at="27,0,30,0" concept="1" trace="ValueFromWorkflowRef_Constraints#()V" />
       <node id="1611392698174077817" at="34,0,38,0" concept="5" trace="hasOwnScopeProvider#()Z" />
       <node id="1611392698174077817" at="42,0,46,0" concept="5" trace="hasPresentation#()Z" />
@@ -70,62 +67,9 @@
       <unit id="1611392698174077817" at="26,0,65,0" name="org.campagnelab.workflow.constraints.ValueFromWorkflowRef_Constraints" />
     </file>
   </root>
-  <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/4717081913779649776">
-    <file name="Flatten_Constraints.java">
-      <node id="4717081913779649776" at="14,32,15,98" concept="12" />
-      <node id="4717081913779649776" at="18,43,19,16" concept="7" />
-      <node id="4717081913779649776" at="22,200,23,96" concept="6" />
-      <node id="4717081913779649776" at="23,96,24,0" concept="9" />
-      <node id="4717081913779649776" at="25,51,26,67" concept="2" />
-      <node id="4717081913779649776" at="27,5,28,0" concept="9" />
-      <node id="4717081913779649776" at="28,0,29,18" concept="7" />
-      <node id="4219150516209786946" at="31,148,32,14" concept="8" />
-      <node id="4219150516204675631" at="32,14,33,14" concept="8" />
-      <node id="4219150516204676350" at="33,14,34,14" concept="8" />
-      <node id="4717081913783928844" at="34,14,35,120" concept="8" />
-      <node id="4219150516204680269" at="35,120,36,14" concept="8" />
-      <node id="4219150516204681021" at="36,14,37,14" concept="8" />
-      <node id="4219150516209789383" at="37,14,38,14" concept="8" />
-      <node id="4219150516209790476" at="38,14,39,14" concept="8" />
-      <node id="4219150516204683100" at="39,14,40,14" concept="8" />
-      <node id="4219150516209788250" at="40,14,41,14" concept="8" />
-      <node id="4717081913779715814" at="41,14,42,16" concept="7" />
-      <node id="4717081913779649776" at="44,0,45,0" concept="10" trace="canBeChildBreakingPoint" />
-      <node id="4717081913779649776" at="14,0,17,0" concept="1" trace="Flatten_Constraints#()V" />
-      <node id="4717081913779649776" at="24,0,27,5" concept="4" />
-      <node id="4717081913779649776" at="17,0,21,0" concept="5" trace="hasOwnCanBeChildMethod#()Z" />
-      <node id="4717081913779649776" at="21,0,31,0" concept="5" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
-      <node id="4717081913779649776" at="31,0,44,0" concept="11" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
-      <scope id="4717081913779649776" at="14,32,15,98" />
-      <scope id="4717081913779649776" at="18,43,19,16" />
-      <scope id="4717081913779649776" at="25,51,26,67" />
-      <scope id="4717081913779649776" at="14,0,17,0" />
-      <scope id="4717081913779649776" at="17,0,21,0" />
-      <scope id="4717081913779649776" at="22,200,29,18">
-        <var name="result" id="4717081913779649776" />
-      </scope>
-      <scope id="4717081913779649776" at="21,0,31,0">
-        <var name="checkingNodeContext" id="4717081913779649776" />
-        <var name="childConcept" id="4717081913779649776" />
-        <var name="link" id="4717081913779649776" />
-        <var name="node" id="4717081913779649776" />
-        <var name="operationContext" id="4717081913779649776" />
-        <var name="parentNode" id="4717081913779649776" />
-      </scope>
-      <scope id="4717081913779649784" at="31,148,42,16" />
-      <scope id="4717081913779649776" at="31,0,44,0">
-        <var name="childConcept" id="4717081913779649776" />
-        <var name="link" id="4717081913779649776" />
-        <var name="node" id="4717081913779649776" />
-        <var name="operationContext" id="4717081913779649776" />
-        <var name="parentNode" id="4717081913779649776" />
-      </scope>
-      <unit id="4717081913779649776" at="13,0,46,0" name="org.campagnelab.workflow.constraints.Flatten_Constraints" />
-    </file>
-  </root>
   <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/8074343669092053908">
     <file name="ValueInAChannelRef_Constraints.java">
-      <node id="8074343669092053908" at="33,43,34,98" concept="12" />
+      <node id="8074343669092053908" at="33,43,34,98" concept="9" />
       <node id="8074343669092053908" at="37,98,38,135" concept="6" />
       <node id="8074343669092053908" at="41,44,42,20" concept="7" />
       <node id="8074343669092053908" at="49,44,50,24" concept="7" />
@@ -137,7 +81,7 @@
       <node id="3855674281007997529" at="67,361,68,70" concept="2" />
       <node id="3855674281008016163" at="70,15,71,58" concept="7" />
       <node id="8074343669092053908" at="76,7,77,22" concept="7" />
-      <node id="8074343669092053908" at="79,0,80,0" concept="10" trace="breakingNode_wugdrt_a0a2a0a0a1a0b0a1a1" />
+      <node id="8074343669092053908" at="79,0,80,0" concept="8" trace="breakingNode_wugdrt_a0a2a0a0a1a0b0a1a1" />
       <node id="8074343669092053908" at="33,0,36,0" concept="1" trace="ValueInAChannelRef_Constraints#()V" />
       <node id="3855674281007978209" at="66,215,69,17" concept="4" />
       <node id="8074343669092053908" at="40,0,44,0" concept="5" trace="hasOwnScopeProvider#()Z" />
@@ -193,14 +137,14 @@
   </root>
   <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/8369613327464641695">
     <file name="InputChannel_Constraints.java">
-      <node id="8369613327464641695" at="25,37,26,98" concept="12" />
+      <node id="8369613327464641695" at="25,37,26,98" concept="9" />
       <node id="8369613327464641695" at="29,98,30,135" concept="6" />
       <node id="8369613327464641695" at="33,44,34,20" concept="7" />
       <node id="8369613327464641695" at="41,63,42,58" concept="7" />
       <node id="8369613327464641695" at="46,13,47,223" concept="6" />
       <node id="8369613327464641695" at="47,223,48,64" concept="7" />
       <node id="8369613327464641695" at="53,7,54,22" concept="7" />
-      <node id="8369613327464641695" at="56,0,57,0" concept="10" trace="breakingNode_op4ui0_a0a0a0a0a1a0b0a1a1" />
+      <node id="8369613327464641695" at="56,0,57,0" concept="8" trace="breakingNode_op4ui0_a0a0a0a0a1a0b0a1a1" />
       <node id="8369613327464641695" at="25,0,28,0" concept="1" trace="InputChannel_Constraints#()V" />
       <node id="8369613327464641695" at="32,0,36,0" concept="5" trace="hasOwnScopeProvider#()Z" />
       <node id="8369613327464641695" at="40,0,44,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />

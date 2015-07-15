@@ -205,9 +205,11 @@
         <child id="3857878650537656757" name="functions" index="1ylr64" />
       </concept>
       <concept id="3857878650533843630" name="org.campagnelab.workflow.structure.ToList" flags="ng" index="1yaYav" />
+      <concept id="3857878650533844000" name="org.campagnelab.workflow.structure.ToSortedList" flags="ng" index="1yaYgh" />
       <concept id="3857878650533842545" name="org.campagnelab.workflow.structure.Collate" flags="ng" index="1yaZT0">
         <property id="3857878650533843272" name="n" index="1yaY5T" />
       </concept>
+      <concept id="3857878650533842544" name="org.campagnelab.workflow.structure.ChannelFunctions" flags="ng" index="1yaZT1" />
       <concept id="3857878650533842792" name="org.campagnelab.workflow.structure.Flatten" flags="ng" index="1yaZXp" />
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
@@ -255,7 +257,6 @@
       </node>
       <node concept="1uYdA0" id="3dl4$WVg70h" role="1uLvPH">
         <ref role="1uK_4X" node="5CFNYIF7pBe" resolve="Z" />
-        <node concept="1yaYav" id="12v1CqH5LXn" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="7mWvTulz6_4" role="1uLvPA">
         <property role="TrG5h" value="D" />
@@ -272,12 +273,9 @@
       <ref role="2$rEH4" node="YNIIGPcu0K" resolve="conditionDummy" />
       <node concept="1uYdA0" id="12v1CqH5M7x" role="1uLvPH">
         <ref role="1uK_4X" node="5Sz2Ie0VFbM" resolve="fileCh" />
-        <node concept="1yaZT0" id="12v1CqH5M8l" role="1ylr64">
-          <property role="1yaY5T" value="4" />
-        </node>
-        <node concept="1yaZT0" id="12v1CqH7fup" role="1ylr64">
-          <property role="1yaY5T" value="2" />
-        </node>
+        <node concept="1yaYgh" id="3JbPZMXDPFv" role="1ylr64" />
+        <node concept="1yaZXp" id="3JbPZMXHqG$" role="1ylr64" />
+        <node concept="1yaZT1" id="3JbPZMXHqHU" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="YNIIGP$WzL" role="1uLvPA">
         <property role="TrG5h" value="X" />
@@ -481,15 +479,10 @@
         <property role="TrG5h" value="'*.txt'" />
       </node>
     </node>
-    <node concept="1uY1Ls" id="7mWvTulz0Bd" role="2ulM79">
-      <node concept="16pRw0" id="7mWvTulz0Bf" role="1uY1Lt">
-        <property role="TrG5h" value="txt2" />
-      </node>
-    </node>
     <node concept="3Y$Zt1" id="34JZ5vs_Ul8" role="2ulM7a">
       <node concept="19SGf9" id="34JZ5vs_Ul9" role="3Y$PkS">
         <node concept="19SUe$" id="34JZ5vs_Ula" role="19SJt6">
-          <property role="19SUeA" value="cat index_* &gt; '*.txt'\n" />
+          <property role="19SUeA" value="cat index_* &gt; '*.txt'\n\n" />
         </node>
       </node>
     </node>
@@ -578,11 +571,6 @@
     <node concept="1uY1Ls" id="YNIIGPvZlS" role="2ulM7n">
       <node concept="16pRw0" id="YNIIGPvZlT" role="1uY1Lt">
         <property role="TrG5h" value="fileCh" />
-      </node>
-    </node>
-    <node concept="1uY1Lp" id="5TwkIb4OLmq" role="2ulM7n">
-      <node concept="1utKzZ" id="5TwkIb4OLms" role="1uY1Lu">
-        <property role="TrG5h" value="boolCh" />
       </node>
     </node>
     <node concept="1uY1Ls" id="YNIIGPywa9" role="2ulM79">

@@ -160,9 +160,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.workflow.behavior.Collate_Behavior" file="Collate_Behavior.java">
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-  </dependency>
   <dependency className="org.campagnelab.workflow.behavior.Collate_BehaviorDescriptor" file="Collate_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -222,9 +219,6 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.ValueInAChannelNoTuple_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.workflow.behavior.Flatten_Behavior" file="Flatten_Behavior.java">
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.Flatten_BehaviorDescriptor" file="Flatten_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -762,7 +756,6 @@
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ITranslator2" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
@@ -963,17 +956,11 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.workflow.behavior.ToList_Behavior" file="ToList_Behavior.java">
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-  </dependency>
   <dependency className="org.campagnelab.workflow.behavior.ToList_BehaviorDescriptor" file="ToList_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.ChannelFunctions_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.workflow.behavior.ToSortedList_Behavior" file="ToSortedList_Behavior.java">
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.ToSortedList_BehaviorDescriptor" file="ToSortedList_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />

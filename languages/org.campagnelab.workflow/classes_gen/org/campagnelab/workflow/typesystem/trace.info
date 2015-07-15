@@ -12,7 +12,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="9,0,169,0" name="org.campagnelab.workflow.typesystem.TypesystemDescriptor" />
+      <unit at="9,0,173,0" name="org.campagnelab.workflow.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/1076210821072148930">
@@ -522,54 +522,72 @@
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/3132923242209828356">
     <file name="check_ChannelFunctions_NonTypesystemRule.java">
-      <node id="3132923242209832529" at="24,9,25,62" concept="6" />
-      <node id="3132923242209832529" at="25,62,26,276" concept="6" />
-      <node id="3132923242209828356" at="31,46,32,65" concept="7" />
-      <node id="3132923242209828356" at="35,5,36,130" concept="6" />
-      <node id="3132923242209828356" at="36,130,37,45" concept="7" />
-      <node id="3132923242209828356" at="40,30,41,17" concept="7" />
-      <node id="3132923242209830605" at="43,65,44,46" concept="7" />
-      <node id="3132923242209828356" at="19,0,21,0" concept="1" trace="check_ChannelFunctions_NonTypesystemRule#()V" />
-      <node id="3132923242209828356" at="31,0,34,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
-      <node id="3132923242209828356" at="40,0,43,0" concept="5" trace="overrides#()Z" />
-      <node id="3132923242209830605" at="43,0,46,0" concept="9" trace="eq_yvssi9_a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="3132923242209832529" at="23,454,27,9" concept="0" />
-      <node id="3132923242209828356" at="34,68,38,5" concept="0" />
-      <node id="3132923242209828988" at="22,37,28,7" concept="4" />
-      <node id="3132923242209828356" at="34,0,40,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="3132923242209828363" at="21,129,29,5" concept="4" />
-      <node id="3132923242209828356" at="21,0,31,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="3132923242209828356" at="19,53,19,53" />
-      <scope id="3132923242209828356" at="31,46,32,65" />
-      <scope id="3132923242209828356" at="40,30,41,17" />
-      <scope id="3132923242209830605" at="43,65,44,46" />
-      <scope id="3132923242209828356" at="19,0,21,0" />
-      <scope id="3132923242209832529" at="24,9,26,276">
+      <node id="4308774949022717128" at="22,129,23,234" concept="6" />
+      <node id="3132923242209832529" at="26,9,27,62" concept="6" />
+      <node id="3132923242209832529" at="27,62,28,276" concept="6" />
+      <node id="4308774949018128943" at="31,9,32,62" concept="6" />
+      <node id="4308774949018128943" at="32,62,33,259" concept="6" />
+      <node id="3132923242209828356" at="38,46,39,65" concept="7" />
+      <node id="3132923242209828356" at="42,5,43,130" concept="6" />
+      <node id="3132923242209828356" at="43,130,44,45" concept="7" />
+      <node id="3132923242209828356" at="47,30,48,17" concept="7" />
+      <node id="3132923242209830605" at="50,65,51,46" concept="7" />
+      <node id="4308774949015355868" at="53,69,54,51" concept="7" />
+      <node id="3132923242209828356" at="20,0,22,0" concept="1" trace="check_ChannelFunctions_NonTypesystemRule#()V" />
+      <node id="3132923242209828356" at="38,0,41,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="3132923242209828356" at="47,0,50,0" concept="5" trace="overrides#()Z" />
+      <node id="3132923242209830605" at="50,0,53,0" concept="9" trace="eq_yvssi9_a0a0a1a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="4308774949015355868" at="53,0,56,0" concept="9" trace="neq_yvssi9_a0a0a0a0b0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="3132923242209832529" at="25,454,29,9" concept="0" />
+      <node id="4308774949018128943" at="30,1744,34,9" concept="0" />
+      <node id="3132923242209828356" at="41,68,45,5" concept="0" />
+      <node id="3132923242209828356" at="41,0,47,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3132923242209828988" at="24,37,35,7" concept="4" />
+      <node id="3132923242209828363" at="23,234,36,5" concept="4" />
+      <node id="3132923242209828356" at="22,0,38,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="3132923242209828356" at="20,53,20,53" />
+      <scope id="3132923242209828356" at="38,46,39,65" />
+      <scope id="3132923242209828356" at="47,30,48,17" />
+      <scope id="3132923242209830605" at="50,65,51,46" />
+      <scope id="4308774949015355868" at="53,69,54,51" />
+      <scope id="3132923242209828356" at="20,0,22,0" />
+      <scope id="3132923242209832529" at="26,9,28,276">
         <var name="_reporter_2309309498" id="3132923242209832529" />
         <var name="errorTarget" id="3132923242209832529" />
       </scope>
-      <scope id="3132923242209828356" at="35,5,37,45">
+      <scope id="4308774949018128943" at="31,9,33,259">
+        <var name="_reporter_2309309498" id="4308774949018128943" />
+        <var name="errorTarget" id="4308774949018128943" />
+      </scope>
+      <scope id="3132923242209828356" at="42,5,44,45">
         <var name="b" id="3132923242209828356" />
       </scope>
-      <scope id="3132923242209828356" at="31,0,34,0" />
-      <scope id="3132923242209828356" at="40,0,43,0" />
-      <scope id="3132923242209830605" at="43,0,46,0">
+      <scope id="3132923242209828356" at="38,0,41,0" />
+      <scope id="3132923242209828356" at="47,0,50,0" />
+      <scope id="3132923242209830605" at="50,0,53,0">
         <var name="a" id="3132923242209830605" />
         <var name="b" id="3132923242209830605" />
       </scope>
-      <scope id="3132923242209828989" at="23,454,27,9" />
-      <scope id="3132923242209828356" at="34,68,38,5" />
-      <scope id="3132923242209828364" at="22,37,28,7" />
-      <scope id="3132923242209828356" at="34,0,40,0">
+      <scope id="4308774949015355868" at="53,0,56,0">
+        <var name="a" id="4308774949015355868" />
+        <var name="b" id="4308774949015355868" />
+      </scope>
+      <scope id="3132923242209828989" at="25,454,29,9" />
+      <scope id="4308774949015345017" at="30,1744,34,9" />
+      <scope id="3132923242209828356" at="41,68,45,5" />
+      <scope id="3132923242209828356" at="41,0,47,0">
         <var name="argument" id="3132923242209828356" />
       </scope>
-      <scope id="3132923242209828357" at="21,129,29,5" />
-      <scope id="3132923242209828356" at="21,0,31,0">
+      <scope id="3132923242209828364" at="24,37,35,7" />
+      <scope id="3132923242209828357" at="22,129,36,5">
+        <var name="inputChannel" id="4308774949022717131" />
+      </scope>
+      <scope id="3132923242209828356" at="22,0,38,0">
         <var name="channelFunctions" id="3132923242209828356" />
         <var name="status" id="3132923242209828356" />
         <var name="typeCheckingContext" id="3132923242209828356" />
       </scope>
-      <unit id="3132923242209828356" at="18,0,47,0" name="org.campagnelab.workflow.typesystem.check_ChannelFunctions_NonTypesystemRule" />
+      <unit id="3132923242209828356" at="19,0,57,0" name="org.campagnelab.workflow.typesystem.check_ChannelFunctions_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/3526016120162761355">
@@ -625,6 +643,82 @@
         <var name="typeCheckingContext" id="3526016120162761355" />
       </scope>
       <unit id="3526016120162761355" at="15,0,44,0" name="org.campagnelab.workflow.typesystem.typeof_GlobalBooleanLiteral_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/4308774949023603458">
+    <file name="typeof_ToSortedList_InferenceRule.java">
+      <node id="4308774949023622823" at="21,5,22,254" concept="6" />
+      <node id="4308774949023622825" at="25,11,26,60" concept="6" />
+      <node id="4308774949023622825" at="26,60,27,207" concept="6" />
+      <node id="4308774949023622825" at="27,207,28,339" concept="2" />
+      <node id="4308774949023603458" at="34,46,35,61" concept="7" />
+      <node id="4308774949023603458" at="38,5,39,130" concept="6" />
+      <node id="4308774949023603458" at="39,130,40,45" concept="7" />
+      <node id="4308774949023603458" at="43,30,44,17" concept="7" />
+      <node id="4308774949023622830" at="46,81,47,63" concept="6" />
+      <node id="4308774949023622830" at="47,63,48,30" concept="6" />
+      <node id="4308774949023622830" at="48,30,49,30" concept="6" />
+      <node id="4308774949023622830" at="49,30,50,233" concept="2" />
+      <node id="4308774949023622830" at="50,233,51,39" concept="2" />
+      <node id="4308774949023622830" at="52,31,53,193" concept="2" />
+      <node id="4308774949023622830" at="54,5,55,24" concept="7" />
+      <node id="4308774949023603458" at="18,0,20,0" concept="1" trace="typeof_ToSortedList_InferenceRule#()V" />
+      <node id="4308774949023603458" at="34,0,37,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="4308774949023603458" at="43,0,46,0" concept="5" trace="overrides#()Z" />
+      <node id="4308774949023622830" at="51,39,54,5" concept="4" />
+      <node id="4308774949023603458" at="37,68,41,5" concept="0" />
+      <node id="4308774949023622830" at="50,233,54,5" concept="0" />
+      <node id="4308774949023622830" at="50,233,54,5" concept="0" />
+      <node id="4308774949023622825" at="24,27,29,11" concept="0" />
+      <node id="4308774949023622830" at="49,30,54,5" concept="0" />
+      <node id="4308774949023622830" at="49,30,54,5" concept="0" />
+      <node id="4308774949023603458" at="37,0,43,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4308774949023622823" at="24,0,31,0" concept="5" trace="run#()V" />
+      <node id="4308774949023622823" at="22,254,31,125" concept="2" />
+      <node id="4308774949023622830" at="46,0,57,0" concept="9" trace="_quotation_createNode_t9pgzh_a0a0a0b#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4308774949023622823" at="20,125,32,5" concept="0" />
+      <node id="4308774949023603458" at="20,0,34,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4308774949023603458" at="18,46,18,46" />
+      <scope id="4308774949023603458" at="34,46,35,61" />
+      <scope id="4308774949023603458" at="43,30,44,17" />
+      <scope id="4308774949023622830" at="52,31,53,193" />
+      <scope id="4308774949023603458" at="18,0,20,0" />
+      <scope id="4308774949023603458" at="38,5,40,45">
+        <var name="b" id="4308774949023603458" />
+      </scope>
+      <scope id="4308774949023622825" at="25,11,28,339">
+        <var name="_info_12389875345" id="4308774949023622825" />
+        <var name="_nodeToCheck_1029348928467" id="4308774949023622825" />
+      </scope>
+      <scope id="4308774949023603458" at="34,0,37,0" />
+      <scope id="4308774949023603458" at="43,0,46,0" />
+      <scope id="4308774949023603458" at="37,68,41,5" />
+      <scope id="4308774949023622830" at="50,233,54,5" />
+      <scope id="4308774949023622824" at="24,27,29,11" />
+      <scope id="4308774949023622830" at="49,30,54,5" />
+      <scope id="4308774949023603458" at="37,0,43,0">
+        <var name="argument" id="4308774949023603458" />
+      </scope>
+      <scope id="4308774949023622823" at="24,0,31,0" />
+      <scope id="4308774949023622830" at="46,81,55,24">
+        <var name="facade" id="4308774949023622830" />
+        <var name="quotedNode_2" id="4308774949023622830" />
+        <var name="quotedNode_3" id="4308774949023622830" />
+      </scope>
+      <scope id="4308774949023622823" at="21,5,31,125">
+        <var name="previousNodeType" id="4308774949023622823" />
+      </scope>
+      <scope id="4308774949023622830" at="46,0,57,0">
+        <var name="parameter_1" id="4308774949023622830" />
+      </scope>
+      <scope id="4308774949023603459" at="20,125,32,5" />
+      <scope id="4308774949023603458" at="20,0,34,0">
+        <var name="status" id="4308774949023603458" />
+        <var name="toSortedList" id="4308774949023603458" />
+        <var name="typeCheckingContext" id="4308774949023603458" />
+      </scope>
+      <unit id="4308774949023622823" at="23,61,31,7" name="org.campagnelab.workflow.typesystem.typeof_ToSortedList_InferenceRule$1" />
+      <unit id="4308774949023603458" at="17,0,58,0" name="org.campagnelab.workflow.typesystem.typeof_ToSortedList_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/5489358528154741522">

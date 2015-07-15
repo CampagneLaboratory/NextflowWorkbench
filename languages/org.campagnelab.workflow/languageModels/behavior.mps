@@ -97,7 +97,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -210,9 +210,6 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
-      <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
-        <child id="1145567471833" name="createdType" index="2T96Bj" />
-      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1227264722563" name="jetbrains.mps.lang.smodel.structure.EqualsStructurallyExpression" flags="nn" index="2YFouu" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
@@ -1219,71 +1216,14 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="2KODxJkD$wv" role="3cqZAp">
-              <node concept="3cpWsn" id="2KODxJkD$wy" role="3cpWs9">
-                <property role="TrG5h" value="compatibleChannels" />
-                <node concept="2I9FWS" id="2KODxJkD$wt" role="1tU5fm">
-                  <ref role="2I9WkF" to="iowz:3m26PihhBwN" resolve="OutChannels" />
-                </node>
-                <node concept="2ShNRf" id="2KODxJkJ28u" role="33vP2m">
-                  <node concept="2T8Vx0" id="2KODxJkJ7HB" role="2ShVmc">
-                    <node concept="2I9FWS" id="2KODxJkJ7HD" role="2T96Bj">
-                      <ref role="2I9WkF" to="iowz:3m26PihhBwN" resolve="OutChannels" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2KODxJkD_9y" role="3cqZAp">
-              <node concept="37vLTI" id="2KODxJkD_ll" role="3clFbG">
-                <node concept="BsUDl" id="2KODxJkD_lE" role="37vLTx">
-                  <ref role="37wK5l" node="33IVfFauftl" resolve="removeDifferentTypeGlobalChannels" />
-                  <node concept="2OqwBi" id="2KODxJkMwRg" role="37wK5m">
-                    <node concept="2OqwBi" id="2KODxJkMvRD" role="2Oq$k0">
-                      <node concept="2OqwBi" id="2KODxJkMs1l" role="2Oq$k0">
-                        <node concept="2OqwBi" id="2KODxJkMrF8" role="2Oq$k0">
-                          <node concept="37vLTw" id="2KODxJkMrDC" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5CFNYIF2$hA" resolve="child" />
-                          </node>
-                          <node concept="2Xjw5R" id="2KODxJkMrQE" role="2OqNvi">
-                            <node concept="1xMEDy" id="2KODxJkMrQG" role="1xVPHs">
-                              <node concept="chp4Y" id="2KODxJkMrUr" role="ri$Ld">
-                                <ref role="cht4Q" to="iowz:5D7AjvYaj9M" resolve="ProcessRef" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3TrEf2" id="2KODxJkMvOM" role="2OqNvi">
-                          <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
-                        </node>
-                      </node>
-                      <node concept="3Tsc0h" id="2KODxJkMw7i" role="2OqNvi">
-                        <ref role="3TtcxE" to="iowz:6tX5nBTaziI" />
-                      </node>
-                    </node>
-                    <node concept="34jXtK" id="2KODxJkMy5f" role="2OqNvi">
-                      <node concept="37vLTw" id="2KODxJkMyaT" role="25WWJ7">
-                        <ref role="3cqZAo" node="5CFNYIGPzmz" resolve="channelIndex" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="37vLTw" id="2KODxJkD_PL" role="37wK5m">
-                    <ref role="3cqZAo" node="5CFNYII$Ldk" resolve="noUsedChannels" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="2KODxJkDCOm" role="37vLTJ">
-                  <ref role="3cqZAo" node="2KODxJkD$wy" resolve="compatibleChannels" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbH" id="2KODxJkDtKe" role="3cqZAp" />
             <node concept="3clFbF" id="5CFNYIIGl$Y" role="3cqZAp">
               <node concept="37vLTI" id="5CFNYIIGlGh" role="3clFbG">
                 <node concept="2YIFZM" id="5CFNYIJg_cT" role="37vLTx">
                   <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
                   <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-                  <node concept="37vLTw" id="2KODxJkFSR8" role="37wK5m">
-                    <ref role="3cqZAo" node="2KODxJkD$wy" resolve="compatibleChannels" />
+                  <node concept="37vLTw" id="3JbPZMX5bxj" role="37wK5m">
+                    <ref role="3cqZAo" node="5CFNYII$Ldk" resolve="noUsedChannels" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="5CFNYIIGl$W" role="37vLTJ">
@@ -3851,13 +3791,6 @@
       <node concept="3Tm1VV" id="vHEKaVPJP1" role="1B3o_S" />
     </node>
   </node>
-  <node concept="13h7C7" id="7mWvTumjqfT">
-    <property role="3GE5qa" value="channelFunctions" />
-    <ref role="13h7C2" to="iowz:3m9W35nCxaI" resolve="ToList" />
-    <node concept="13hLZK" id="7mWvTumjqfU" role="13h7CW">
-      <node concept="3clFbS" id="7mWvTumjqfV" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="7mWvTumjqfW">
     <property role="3GE5qa" value="channelFunctions" />
     <ref role="13h7C2" to="iowz:3m9W35nCwTK" resolve="ChannelFunctions" />
@@ -3946,27 +3879,6 @@
     </node>
     <node concept="13hLZK" id="7mWvTumjqfX" role="13h7CW">
       <node concept="3clFbS" id="7mWvTumjqfY" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="7mWvTummKBf">
-    <property role="3GE5qa" value="channelFunctions" />
-    <ref role="13h7C2" to="iowz:3m9W35nCwTL" resolve="Collate" />
-    <node concept="13hLZK" id="7mWvTummKBg" role="13h7CW">
-      <node concept="3clFbS" id="7mWvTummKBh" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="7mWvTummKK6">
-    <property role="3GE5qa" value="channelFunctions" />
-    <ref role="13h7C2" to="iowz:3m9W35nCwXC" resolve="Flatten" />
-    <node concept="13hLZK" id="7mWvTummKK7" role="13h7CW">
-      <node concept="3clFbS" id="7mWvTummKK8" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="7mWvTummKSX">
-    <property role="3GE5qa" value="channelFunctions" />
-    <ref role="13h7C2" to="iowz:3m9W35nCxgw" resolve="ToSortedList" />
-    <node concept="13hLZK" id="7mWvTummKSY" role="13h7CW">
-      <node concept="3clFbS" id="7mWvTummKSZ" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="2Hhp$WEpGHy">
