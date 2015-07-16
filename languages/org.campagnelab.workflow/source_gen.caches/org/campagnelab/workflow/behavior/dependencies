@@ -685,8 +685,6 @@
   <dependency className="org.campagnelab.workflow.behavior.NonListNonFileChannel_Behavior" file="NonListNonFileChannel_Behavior.java">
     <classNode dependClassName="jetbrains.mps.lang.pattern.util.MatchingUtil" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeChecker" />
-    <classNode dependClassName="org.apache.log4j.LogManager" />
-    <classNode dependClassName="org.apache.log4j.Logger" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.NonListNonFileChannel_BehaviorDescriptor" file="NonListNonFileChannel_BehaviorDescriptor.java">

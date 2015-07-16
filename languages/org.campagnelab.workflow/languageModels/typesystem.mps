@@ -124,6 +124,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -2584,6 +2587,23 @@
     <node concept="1YaCAy" id="4TfcfnmaUJ5" role="1YuTPh">
       <property role="TrG5h" value="inputChannel" />
       <ref role="1YaFvo" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5ok1XDlYe32">
+    <property role="TrG5h" value="check_GlobalFilePath" />
+    <node concept="3clFbS" id="5ok1XDlYe33" role="18ibNy">
+      <node concept="a7r0C" id="5ok1XDlYeiu" role="3cqZAp">
+        <node concept="1YBJjd" id="5ok1XDlYej0" role="2OEOjV">
+          <ref role="1YBMHb" node="5ok1XDlYeil" resolve="globalFilePath" />
+        </node>
+        <node concept="Xl_RD" id="5ok1XDlUJ3l" role="a7wSD">
+          <property role="Xl_RC" value="Make sure that the file exists on the cluster prior to running" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5ok1XDlYeil" role="1YuTPh">
+      <property role="TrG5h" value="globalFilePath" />
+      <ref role="1YaFvo" to="iowz:59canFN3Dy7" resolve="GlobalFilePath" />
     </node>
   </node>
 </model>
