@@ -1016,8 +1016,8 @@
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/6783277435987824820">
     <file name="GlobalFileExpression_Behavior.java">
-      <node id="6783277435987824936" at="17,80,18,32" concept="5" />
-      <node id="6783277435987824943" at="19,217,20,188" concept="1" />
+      <node id="6783277435987824936" at="17,80,18,28" concept="5" />
+      <node id="6783277435987824943" at="19,217,20,194" concept="1" />
       <node id="6783277435987824949" at="21,220,22,23" concept="1" />
       <node id="6783277435987824963" at="23,14,24,22" concept="1" />
       <node id="6783277435987824967" at="26,5,27,18" concept="6" />
@@ -1026,8 +1026,8 @@
       <node id="6783277435987824820" at="15,0,17,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="7757275043994553938" at="23,12,25,7" concept="0" />
       <node id="6783277435987824820" at="29,0,33,0" concept="9" trace="virtual_getType_3526016120160454965#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="6783277435987824947" at="20,188,25,7" concept="3" />
-      <node id="6783277435987824940" at="18,32,26,5" concept="2" />
+      <node id="6783277435987824947" at="20,194,25,7" concept="3" />
+      <node id="6783277435987824940" at="18,28,26,5" concept="2" />
       <node id="6783277435987824820" at="17,0,29,0" concept="9" trace="virtual_getFunction_6783277435987822218#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="6783277435987824822" at="15,43,15,43" />
       <scope id="6783277435987824948" at="21,220,22,23" />
@@ -1042,7 +1042,7 @@
         <var name="thisNode" id="6783277435987824820" />
       </scope>
       <scope id="6783277435987824942" at="19,217,25,7" />
-      <scope id="6783277435987824940" at="18,32,26,5">
+      <scope id="6783277435987824940" at="18,28,26,5">
         <var name="value" id="6783277435987824941" />
       </scope>
       <scope id="6783277435987824935" at="17,80,27,18">
