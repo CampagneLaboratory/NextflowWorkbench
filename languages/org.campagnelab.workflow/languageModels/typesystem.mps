@@ -158,6 +158,10 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="1176543928247" name="jetbrains.mps.lang.typesystem.structure.IsSubtypeExpression" flags="nn" index="3JuTUA">
+        <child id="1176543945045" name="subtypeExpression" index="3JuY14" />
+        <child id="1176543950311" name="supertypeExpression" index="3JuZjQ" />
+      </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -2308,16 +2312,24 @@
               <ref role="1YBMHb" node="3JbPZMXXtZG" resolve="toListFunction" />
             </node>
           </node>
-          <node concept="3y3z36" id="3JbPZMY4wUb" role="3uHU7w">
-            <node concept="Xl_RD" id="3JbPZMYia7Y" role="3uHU7w">
-              <property role="Xl_RC" value="list" />
-            </node>
-            <node concept="2OqwBi" id="3JbPZMYblQE" role="3uHU7B">
-              <node concept="37vLTw" id="3JbPZMY4vcQ" role="2Oq$k0">
-                <ref role="3cqZAo" node="3JbPZMY0YY2" resolve="processInputChannel" />
+          <node concept="3JuTUA" id="5ok1XDmXUjI" role="3uHU7w">
+            <node concept="2c44tf" id="5ok1XDmXUu6" role="3JuZjQ">
+              <node concept="_YKpA" id="5ok1XDmXUzx" role="2c44tc">
+                <node concept="3qTvmN" id="5ok1XDmXUCV" role="_ZDj9" />
               </node>
-              <node concept="2qgKlT" id="3JbPZMYi9KG" role="2OqNvi">
-                <ref role="37wK5l" to="mqvz:2Ztc8$x0LcL" resolve="returnKind" />
+            </node>
+            <node concept="2OqwBi" id="5ok1XDmU9zh" role="3JuY14">
+              <node concept="1PxgMI" id="5ok1XDmU9iz" role="2Oq$k0">
+                <ref role="1PxNhF" to="tp2q:gK_YKtE" resolve="ListType" />
+                <node concept="2OqwBi" id="3JbPZMYblQE" role="1PxMeX">
+                  <node concept="37vLTw" id="3JbPZMY4vcQ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3JbPZMY0YY2" resolve="processInputChannel" />
+                  </node>
+                  <node concept="3JvlWi" id="5ok1XDmU93Q" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="5ok1XDmU9Rb" role="2OqNvi">
+                <ref role="3Tt5mk" to="tp2q:gK_ZDn5" />
               </node>
             </node>
           </node>
@@ -2604,6 +2616,88 @@
     <node concept="1YaCAy" id="5ok1XDlYeil" role="1YuTPh">
       <property role="TrG5h" value="globalFilePath" />
       <ref role="1YaFvo" to="iowz:59canFN3Dy7" resolve="GlobalFilePath" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5ok1XDm1QsY">
+    <property role="TrG5h" value="typeof_FileList" />
+    <property role="3GE5qa" value="types" />
+    <node concept="3clFbS" id="5ok1XDm1QsZ" role="18ibNy">
+      <node concept="1Z5TYs" id="5ok1XDm1QHu" role="3cqZAp">
+        <node concept="mw_s8" id="5ok1XDm1QHv" role="1ZfhKB">
+          <node concept="2c44tf" id="5ok1XDm1QHw" role="mwGJk">
+            <node concept="_YKpA" id="5ok1XDm1QHx" role="2c44tc">
+              <node concept="3UtRaE" id="5ok1XDm1QI$" role="_ZDj9" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5ok1XDm1QHz" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5ok1XDm1QH$" role="mwGJk">
+            <node concept="1YBJjd" id="5ok1XDm1QIh" role="1Z2MuG">
+              <ref role="1YBMHb" node="5ok1XDm1Qt1" resolve="fileList" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5ok1XDm1Qt1" role="1YuTPh">
+      <property role="TrG5h" value="fileList" />
+      <ref role="1YaFvo" to="iowz:5ok1XDm1MHo" resolve="FileList" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5ok1XDm1XW5">
+    <property role="TrG5h" value="typeof_FileListChannel" />
+    <property role="3GE5qa" value="channelTypes" />
+    <node concept="3clFbS" id="5ok1XDm1XW6" role="18ibNy">
+      <node concept="1Z5TYs" id="5ok1XDm1XWB" role="3cqZAp">
+        <node concept="mw_s8" id="5ok1XDm1XWC" role="1ZfhKB">
+          <node concept="2c44tf" id="5ok1XDm1XWD" role="mwGJk">
+            <node concept="_YKpA" id="5ok1XDm1XWE" role="2c44tc">
+              <node concept="_YKpA" id="5ok1XDm1XWF" role="_ZDj9">
+                <node concept="3UtRaE" id="5ok1XDm1XXJ" role="_ZDj9" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5ok1XDm1XWH" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5ok1XDm1XWI" role="mwGJk">
+            <node concept="1YBJjd" id="5ok1XDm1XXs" role="1Z2MuG">
+              <ref role="1YBMHb" node="5ok1XDm1XW8" resolve="fileListChannel" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5ok1XDm1XW8" role="1YuTPh">
+      <property role="TrG5h" value="fileListChannel" />
+      <ref role="1YaFvo" to="iowz:5ok1XDm1KPg" resolve="FileListChannel" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5ok1XDmh4Zy">
+    <property role="TrG5h" value="typeof_GlobalFileListExpression" />
+    <property role="3GE5qa" value="setChannelValues" />
+    <node concept="3clFbS" id="5ok1XDmh4Zz" role="18ibNy">
+      <node concept="1Z5TYs" id="5ok1XDmh501" role="3cqZAp">
+        <node concept="mw_s8" id="5ok1XDmh502" role="1ZfhKB">
+          <node concept="2c44tf" id="5ok1XDmh503" role="mwGJk">
+            <node concept="_YKpA" id="5ok1XDmh504" role="2c44tc">
+              <node concept="_YKpA" id="5ok1XDmh517" role="_ZDj9">
+                <node concept="3UtRaE" id="5ok1XDmh51t" role="_ZDj9" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5ok1XDmh506" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5ok1XDmh507" role="mwGJk">
+            <node concept="1YBJjd" id="5ok1XDmh51w" role="1Z2MuG">
+              <ref role="1YBMHb" node="5ok1XDmh4Z_" resolve="globalFileListExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5ok1XDmh4Z_" role="1YuTPh">
+      <property role="TrG5h" value="globalFileListExpression" />
+      <ref role="1YaFvo" to="iowz:5ok1XDmh3fW" resolve="GlobalFileListExpression" />
     </node>
   </node>
 </model>

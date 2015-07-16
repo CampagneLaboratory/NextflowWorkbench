@@ -877,7 +877,7 @@
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
     <property role="TrG5h" value="GlobalFileLiteralList" />
     <property role="34LRSv" value="file list" />
-    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListContainer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3m26Pihn7Mv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="file" />
@@ -1127,6 +1127,36 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="Channel" />
+  </node>
+  <node concept="1TIwiD" id="5ok1XDm1KPg">
+    <property role="3GE5qa" value="channelTypes" />
+    <property role="TrG5h" value="FileListChannel" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="Channel" />
+    <node concept="1TJgyj" id="5ok1XDm1QXV" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fileList" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ok1XDm1MHo" resolve="FileList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5ok1XDm1MHo">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="FileList" />
+    <property role="34LRSv" value="file list" />
+    <property role="R4oN_" value="list of files as input or output" />
+    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
+  </node>
+  <node concept="1TIwiD" id="5ok1XDmh3fW">
+    <property role="3GE5qa" value="setChannelValues" />
+    <property role="TrG5h" value="GlobalFileListExpression" />
+    <property role="34LRSv" value="file list" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
+    <node concept="1TJgyj" id="5ok1XDmh3gw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fileList" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3m26Pihn7K8" resolve="GlobalFileLiteralList" />
+    </node>
   </node>
 </model>
 

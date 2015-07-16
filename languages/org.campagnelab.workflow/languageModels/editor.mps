@@ -1614,5 +1614,41 @@
       <ref role="1NtTu8" to="iowz:2Hhp$WEw$np" />
     </node>
   </node>
+  <node concept="24kQdi" id="5ok1XDm1MHu">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="iowz:5ok1XDm1MHo" resolve="FileList" />
+    <node concept="3EZMnI" id="5ok1XDm1QsC" role="2wV5jI">
+      <node concept="3F0ifn" id="5ok1XDm1QsJ" role="3EZMnx">
+        <property role="3F0ifm" value="list file" />
+      </node>
+      <node concept="3F0A7n" id="5ok1XDm1QsP" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VechU" id="5ok1XDmh2Xl" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5ok1XDm1QsF" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5ok1XDm1QY2">
+    <property role="3GE5qa" value="channelTypes" />
+    <ref role="1XX52x" to="iowz:5ok1XDm1KPg" resolve="FileListChannel" />
+    <node concept="3F1sOY" id="5ok1XDm1QY4" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:5ok1XDm1QXV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5ok1XDmh4P6">
+    <property role="3GE5qa" value="setChannelValues" />
+    <ref role="1XX52x" to="iowz:5ok1XDmh3fW" resolve="GlobalFileListExpression" />
+    <node concept="3EZMnI" id="5ok1XDmh4P8" role="2wV5jI">
+      <node concept="3F2HdR" id="5ok1XDmh4Pf" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:5ok1XDmh3gw" />
+        <node concept="l2Vlx" id="5ok1XDmh4Ph" role="2czzBx" />
+      </node>
+      <node concept="35HoNQ" id="5ok1XDmoCpt" role="3EZMnx" />
+      <node concept="l2Vlx" id="5ok1XDmh4Pb" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
