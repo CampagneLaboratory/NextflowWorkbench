@@ -17,23 +17,23 @@ maxRetries 1
 cpus 5
 memory '5 GB'
 input:
-val bools from GBE.collate(0).collate(0).collate(0).toList().flatten()
+val ints from GBE
 
 output:
 val lsts into Z
 
 script:
 """
-bools
+
 """
 }
 process analyze {
 
 input:
-val lists from Z
+val lists from fileCh.toList()
 
 output:
-file '*.txt' into Y
+val files into Y
 
 script:
 """
@@ -46,21 +46,22 @@ process inputRefTestWithBools {
 cpus 4
 memory '5 GB'
 input:
-val bools from boolch.flatten()
+val ints from boolch.flatten()
 
 output:
 val lsts into 
 
 script:
 """
-bools
+
 """
 }
 process conditionDummy {
 
 input:
-file fileCh from fileCh.collate(4).collate(2)
-val boolCh from output:
+file fileCh from intCh.toSortedList().flatten()
+
+output:
 file 'index_*' into X
 
 script:

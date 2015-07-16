@@ -209,7 +209,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="functions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3m9W35nCwTK" resolve="ChannelFunctions" />
+      <ref role="20lvS9" node="3m9W35nCwTK" resolve="ChannelFunction" />
     </node>
     <node concept="PrWs8" id="5CFNYIF2xH7" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -220,7 +220,7 @@
     <property role="TrG5h" value="StringChannel" />
     <property role="34LRSv" value="string channel" />
     <property role="R4oN_" value="this channel will contain strings" />
-    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="Channel" />
+    <ref role="1TJDcQ" node="5ok1XDk_tCa" resolve="NonListNonFileChannel" />
     <node concept="1TJgyj" id="7gAPJCESTOD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="string" />
@@ -233,7 +233,7 @@
     <property role="TrG5h" value="IntegerChannel" />
     <property role="34LRSv" value="integer channel" />
     <property role="R4oN_" value="this channel will contain integers" />
-    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="Channel" />
+    <ref role="1TJDcQ" node="5ok1XDk_tCa" resolve="NonListNonFileChannel" />
     <node concept="1TJgyj" id="7gAPJCERGEx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="integer" />
@@ -246,7 +246,7 @@
     <property role="TrG5h" value="BooleanChannel" />
     <property role="34LRSv" value="boolean channel" />
     <property role="R4oN_" value="this channel will contain booleans" />
-    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="Channel" />
+    <ref role="1TJDcQ" node="5ok1XDk_tCa" resolve="NonListNonFileChannel" />
     <node concept="1TJgyj" id="7gAPJCERGE$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="boolean" />
@@ -383,7 +383,7 @@
     <property role="TrG5h" value="TupleChannel" />
     <property role="34LRSv" value="tuple channel" />
     <property role="R4oN_" value="this channel will contain tuples" />
-    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="Channel" />
+    <ref role="1TJDcQ" node="5ok1XDk_tCa" resolve="NonListNonFileChannel" />
     <node concept="1TJgyj" id="3v6eDgzA3zf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tuple" />
@@ -448,7 +448,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3m9W35nCwTK">
-    <property role="TrG5h" value="ChannelFunctions" />
+    <property role="TrG5h" value="ChannelFunction" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="channelFunctions" />
@@ -459,7 +459,7 @@
     <property role="TrG5h" value="Collate" />
     <property role="34LRSv" value="collate" />
     <property role="R4oN_" value="transforms a channel such that the emitted values are grouped into lists containing n items" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunctions" />
+    <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
     <node concept="1TJgyi" id="3m9W35nCx58" role="1TKVEl">
       <property role="TrG5h" value="n" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -470,21 +470,21 @@
     <property role="TrG5h" value="Flatten" />
     <property role="34LRSv" value="flatten" />
     <property role="R4oN_" value="transforms a channel's lists of elements into single entries to be emitted separately" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunctions" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCxaI">
     <property role="3GE5qa" value="channelFunctions" />
     <property role="TrG5h" value="ToList" />
     <property role="34LRSv" value="toList" />
     <property role="R4oN_" value="converts all the items emitted by a channel to a single list object and emits the list as a single item " />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunctions" />
+    <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCxgw">
     <property role="3GE5qa" value="channelFunctions" />
     <property role="TrG5h" value="ToSortedList" />
     <property role="34LRSv" value="toSortedList" />
     <property role="R4oN_" value="collects all the items emitted by a list object, sorts them, and then emits the list as a single item" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunctions" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
   <node concept="1TIwiD" id="1psOhWn_9uY">
     <property role="TrG5h" value="ValueFromWorkflow" />
@@ -701,9 +701,6 @@
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4Toykm43Ope" resolve="GlobalExpression" />
-    </node>
-    <node concept="PrWs8" id="5CFNYIFq5Eu" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="5AoFZCLzEJD">
@@ -1116,6 +1113,20 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3m26Pihn7B_" resolve="GlobalListContainer" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3JbPZMXXswk">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="ToListFunction" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+  </node>
+  <node concept="1TIwiD" id="5ok1XDk_tCa">
+    <property role="3GE5qa" value="channelTypes" />
+    <property role="TrG5h" value="NonListNonFileChannel" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="Channel" />
   </node>
 </model>
 

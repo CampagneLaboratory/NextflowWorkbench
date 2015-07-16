@@ -3,11 +3,13 @@
   <dependency className="org.campagnelab.workflow.typesystem.TypesystemDescriptor" file="TypesystemDescriptor.java">
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
-    <classNode dependClassName="org.campagnelab.workflow.typesystem.check_ChannelFunctions_NonTypesystemRule" />
+    <classNode dependClassName="org.campagnelab.workflow.typesystem.check_Flatten_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_GlobalListExpression_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_GlobalListLiteral_NonTypesystemRule" />
+    <classNode dependClassName="org.campagnelab.workflow.typesystem.check_InputChannel_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_OutChannels_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_ScriptArgs_NonTypesystemRule" />
+    <classNode dependClassName="org.campagnelab.workflow.typesystem.check_ToListFunction_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_BooleanChannel_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_Boolean_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_Collate_InferenceRule" />
@@ -45,12 +47,12 @@
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_Tuple_InferenceRule" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.BaseHelginsDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.workflow.typesystem.check_ChannelFunctions_NonTypesystemRule" file="check_ChannelFunctions_NonTypesystemRule.java">
-    <classNode dependClassName="java.lang.Object" />
+  <dependency className="org.campagnelab.workflow.typesystem.check_Flatten_NonTypesystemRule" file="check_Flatten_NonTypesystemRule.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.NodeMessageTarget" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
@@ -96,6 +98,28 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
+  <dependency className="org.campagnelab.workflow.typesystem.check_InputChannel_NonTypesystemRule" file="check_InputChannel_NonTypesystemRule.java">
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
+    <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
+    <classNode dependClassName="jetbrains.mps.errors.messageTargets.NodeMessageTarget" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeChecker" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
+  </dependency>
   <dependency className="org.campagnelab.workflow.typesystem.check_OutChannels_NonTypesystemRule" file="check_OutChannels_NonTypesystemRule.java">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
@@ -128,6 +152,24 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.scope.Scope" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.typesystem.check_ToListFunction_NonTypesystemRule" file="check_ToListFunction_NonTypesystemRule.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
+    <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
+    <classNode dependClassName="jetbrains.mps.errors.messageTargets.NodeMessageTarget" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
@@ -170,7 +212,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.ChannelFunctions_Behavior" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.ChannelFunction_Behavior" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
@@ -211,7 +253,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.ChannelFunctions_Behavior" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.ChannelFunction_Behavior" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
@@ -411,6 +453,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
@@ -541,7 +584,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.ChannelFunctions_Behavior" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.ChannelFunction_Behavior" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
@@ -557,7 +600,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.ChannelFunctions_Behavior" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.ChannelFunction_Behavior" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
