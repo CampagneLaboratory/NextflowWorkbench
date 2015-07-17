@@ -190,6 +190,12 @@
         <reference id="1174666276259" name="typeVarDeclaration" index="1Z$eMM" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -2117,8 +2123,20 @@
     <property role="TrG5h" value="typeof_ToList" />
     <property role="3GE5qa" value="channelFunctions" />
     <node concept="3clFbS" id="12v1CqH7fxw" role="18ibNy">
+      <node concept="34ab3g" id="PffOQSmMQx" role="3cqZAp">
+        <property role="35gtTG" value="info" />
+        <node concept="Xl_RD" id="PffOQSmMQz" role="34bqiv">
+          <property role="Xl_RC" value="hit one" />
+        </node>
+      </node>
       <node concept="nvevp" id="2vUqkAIUAXO" role="3cqZAp">
         <node concept="3clFbS" id="2vUqkAIUAXP" role="nvhr_">
+          <node concept="34ab3g" id="PffOQSmMTf" role="3cqZAp">
+            <property role="35gtTG" value="info" />
+            <node concept="Xl_RD" id="PffOQSmMTh" role="34bqiv">
+              <property role="Xl_RC" value="hit2" />
+            </node>
+          </node>
           <node concept="1Z5TYs" id="2vUqkAIUAXQ" role="3cqZAp">
             <property role="3wDh2S" value="false" />
             <node concept="mw_s8" id="2vUqkAIUAXR" role="1ZfhK$">
@@ -2139,6 +2157,19 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+          <node concept="34ab3g" id="PffOQSmMU5" role="3cqZAp">
+            <property role="35gtTG" value="info" />
+            <node concept="3cpWs3" id="PffOQSmOCz" role="34bqiv">
+              <node concept="1Z2H0r" id="PffOQSmOCE" role="3uHU7w">
+                <node concept="1YBJjd" id="PffOQSmOFt" role="1Z2MuG">
+                  <ref role="1YBMHb" node="12v1CqH7fxN" resolve="toList" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="PffOQSmMU7" role="3uHU7B">
+                <property role="Xl_RC" value="type: " />
               </node>
             </node>
           </node>
@@ -2433,6 +2464,20 @@
       </node>
       <node concept="3clFbJ" id="4TfcfnmaUJe" role="3cqZAp">
         <node concept="3clFbS" id="4TfcfnmaUJf" role="3clFbx">
+          <node concept="34ab3g" id="PffOQSquWG" role="3cqZAp">
+            <property role="35gtTG" value="info" />
+            <node concept="3cpWs3" id="PffOQSqvak" role="34bqiv">
+              <node concept="2OqwBi" id="PffOQSqvVw" role="3uHU7w">
+                <node concept="1YBJjd" id="PffOQSqvaC" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4TfcfnmaUJ5" resolve="inputChannel" />
+                </node>
+                <node concept="3JvlWi" id="PffOQSqwbk" role="2OqNvi" />
+              </node>
+              <node concept="Xl_RD" id="PffOQSquWI" role="3uHU7B">
+                <property role="Xl_RC" value="type: " />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbJ" id="5ok1XDkYcDq" role="3cqZAp">
             <node concept="3clFbS" id="5ok1XDkYcDs" role="3clFbx">
               <node concept="2MkqsV" id="3f$SU0Y6hiW" role="3cqZAp">
@@ -2649,6 +2694,32 @@
     <node concept="1YaCAy" id="5ok1XDmh4Z_" role="1YuTPh">
       <property role="TrG5h" value="globalFileListExpression" />
       <ref role="1YaFvo" to="iowz:5ok1XDmh3fW" resolve="GlobalFileListExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="PffOQSxPLl">
+    <property role="TrG5h" value="typeof_GlobalTupleExpression" />
+    <property role="3GE5qa" value="setChannelValues" />
+    <node concept="3clFbS" id="PffOQSxPLm" role="18ibNy">
+      <node concept="1Z5TYs" id="PffOQSxUsg" role="3cqZAp">
+        <node concept="mw_s8" id="PffOQSxUsh" role="1ZfhKB">
+          <node concept="2c44tf" id="PffOQSxUsi" role="mwGJk">
+            <node concept="_YKpA" id="PffOQSxUsj" role="2c44tc">
+              <node concept="1h3xP" id="PffOQSxUtF" role="_ZDj9" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="PffOQSxUsl" role="1ZfhK$">
+          <node concept="1Z2H0r" id="PffOQSxUsm" role="mwGJk">
+            <node concept="1YBJjd" id="PffOQSxUtj" role="1Z2MuG">
+              <ref role="1YBMHb" node="PffOQSxPLo" resolve="globalTupleExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="PffOQSxPLo" role="1YuTPh">
+      <property role="TrG5h" value="globalTupleExpression" />
+      <ref role="1YaFvo" to="iowz:2Hhp$WEiKnI" resolve="GlobalTupleExpression" />
     </node>
   </node>
 </model>

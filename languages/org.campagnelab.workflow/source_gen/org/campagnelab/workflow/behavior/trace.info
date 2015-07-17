@@ -78,7 +78,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalBooleanLiteralList_BehaviorDescriptor" />
     </file>
     <file name="GlobalBooleanLiteralTuple_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalBooleanLiteralTuple_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalBooleanLiteralTuple_BehaviorDescriptor" />
     </file>
     <file name="GlobalBooleanLiteral_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.GlobalBooleanLiteral_BehaviorDescriptor" />
@@ -99,7 +99,7 @@
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.GlobalFileLiteralList_BehaviorDescriptor" />
     </file>
     <file name="GlobalFileLiteralTuple_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalFileLiteralTuple_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalFileLiteralTuple_BehaviorDescriptor" />
     </file>
     <file name="GlobalFilePath_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.GlobalFilePath_BehaviorDescriptor" />
@@ -114,7 +114,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalIntegerLiteralList_BehaviorDescriptor" />
     </file>
     <file name="GlobalIntegerLiteralTuple_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalIntegerLiteralTuple_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalIntegerLiteralTuple_BehaviorDescriptor" />
     </file>
     <file name="GlobalIntegerLiteral_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalIntegerLiteral_BehaviorDescriptor" />
@@ -126,7 +126,7 @@
       <unit at="7,0,21,0" name="org.campagnelab.workflow.behavior.GlobalListExpression_BehaviorDescriptor" />
     </file>
     <file name="GlobalListLiteralTuple_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalListLiteralTuple_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalListLiteralTuple_BehaviorDescriptor" />
     </file>
     <file name="GlobalListLiteral_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalListLiteral_BehaviorDescriptor" />
@@ -141,19 +141,22 @@
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalStringLiteralList_BehaviorDescriptor" />
     </file>
     <file name="GlobalStringLiteralTuple_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalStringLiteralTuple_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalStringLiteralTuple_BehaviorDescriptor" />
     </file>
     <file name="GlobalStringLiteral_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.GlobalStringLiteral_BehaviorDescriptor" />
     </file>
     <file name="GlobalTupleContainer_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.GlobalTupleContainer_BehaviorDescriptor" />
+      <unit at="8,0,17,0" name="org.campagnelab.workflow.behavior.GlobalTupleContainer_BehaviorDescriptor" />
     </file>
     <file name="GlobalTupleExpression_BehaviorDescriptor.java">
       <unit at="7,0,21,0" name="org.campagnelab.workflow.behavior.GlobalTupleExpression_BehaviorDescriptor" />
     </file>
     <file name="GlobalTupleLiteral_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.GlobalTupleLiteral_BehaviorDescriptor" />
+    </file>
+    <file name="GlobalValueLiteralTuple_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalValueLiteralTuple_BehaviorDescriptor" />
     </file>
     <file name="Ignore_BehaviorDescriptor.java">
       <unit at="7,0,24,0" name="org.campagnelab.workflow.behavior.Ignore_BehaviorDescriptor" />
@@ -320,24 +323,53 @@
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/3121388506944293730">
     <file name="GlobalTupleExpression_Behavior.java">
-      <node id="3121388506944296425" at="10,80,11,16" concept="6" />
-      <node id="3121388506944296469" at="13,76,14,16" concept="6" />
-      <node id="3121388506944293730" at="8,0,10,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="3121388506944293730" at="10,0,13,0" concept="9" trace="virtual_getFunction_6783277435987822218#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="3121388506944293730" at="13,0,16,0" concept="9" trace="virtual_getType_3526016120160454965#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <scope id="3121388506944293732" at="8,43,8,43" />
-      <scope id="3121388506944295828" at="10,80,11,16" />
-      <scope id="3121388506944296451" at="13,76,14,16" />
-      <scope id="3121388506944293730" at="8,0,10,0">
+      <node id="959054848695118340" at="16,80,17,29" concept="5" />
+      <node id="959054848695138652" at="18,218,19,20" concept="1" />
+      <node id="959054848695140815" at="20,217,21,128" concept="1" />
+      <node id="959054848696183743" at="22,240,23,25" concept="1" />
+      <node id="959054848696184846" at="25,7,26,20" concept="1" />
+      <node id="959054848696186350" at="27,5,28,25" concept="6" />
+      <node id="959054848695104380" at="30,76,31,233" concept="5" />
+      <node id="959054848695111692" at="31,233,32,125" concept="6" />
+      <node id="959054848696169202" at="34,67,35,51" concept="6" />
+      <node id="3121388506944293730" at="14,0,16,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="959054848696168497" at="21,128,24,9" concept="3" />
+      <node id="959054848696169202" at="34,0,37,0" concept="9" trace="neq_1bsv16_a0b0b0b0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="3121388506944293730" at="30,0,34,0" concept="9" trace="virtual_getType_3526016120160454965#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="959054848695139972" at="19,20,25,7" concept="2" />
+      <node id="959054848695118498" at="17,29,27,5" concept="2" />
+      <node id="3121388506944293730" at="16,0,30,0" concept="9" trace="virtual_getFunction_6783277435987822218#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="3121388506944293732" at="14,43,14,43" />
+      <scope id="959054848696168499" at="22,240,23,25" />
+      <scope id="959054848696169202" at="34,67,35,51" />
+      <scope id="3121388506944293730" at="14,0,16,0">
         <var name="thisNode" id="3121388506944293730" />
       </scope>
-      <scope id="3121388506944293730" at="10,0,13,0">
+      <scope id="3121388506944296451" at="30,76,32,125">
+        <var name="tupleCh" id="959054848695104383" />
+      </scope>
+      <scope id="959054848696169202" at="34,0,37,0">
+        <var name="a" id="959054848696169202" />
+        <var name="b" id="959054848696169202" />
+      </scope>
+      <scope id="959054848695139976" at="20,217,24,9" />
+      <scope id="3121388506944293730" at="30,0,34,0">
         <var name="thisNode" id="3121388506944293730" />
       </scope>
-      <scope id="3121388506944293730" at="13,0,16,0">
+      <scope id="959054848695139972" at="19,20,25,7">
+        <var name="value" id="959054848695139974" />
+      </scope>
+      <scope id="959054848695118502" at="18,218,26,20" />
+      <scope id="959054848695118498" at="17,29,27,5">
+        <var name="tuple" id="959054848695118500" />
+      </scope>
+      <scope id="3121388506944295828" at="16,80,28,25">
+        <var name="output" id="959054848695118343" />
+      </scope>
+      <scope id="3121388506944293730" at="16,0,30,0">
         <var name="thisNode" id="3121388506944293730" />
       </scope>
-      <unit id="3121388506944293730" at="7,0,17,0" name="org.campagnelab.workflow.behavior.GlobalTupleExpression_Behavior" />
+      <unit id="3121388506944293730" at="13,0,38,0" name="org.campagnelab.workflow.behavior.GlobalTupleExpression_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/3448966255158170359">
@@ -1757,6 +1789,125 @@
         <var name="thisNode" id="8483796087097631740" />
       </scope>
       <unit id="8483796087097631740" at="11,0,23,0" name="org.campagnelab.workflow.behavior.ChannelFunction_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/959054848695158229">
+    <file name="GlobalValueLiteralTuple_Behavior.java">
+      <node id="959054848695158229" at="8,0,10,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="959054848695158231" at="8,43,8,43" />
+      <scope id="959054848695158229" at="8,0,10,0">
+        <var name="thisNode" id="959054848695158229" />
+      </scope>
+      <unit id="959054848695158229" at="7,0,11,0" name="org.campagnelab.workflow.behavior.GlobalValueLiteralTuple_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/959054848695158243">
+    <file name="GlobalBooleanLiteralTuple_Behavior.java">
+      <node id="959054848695161740" at="13,77,14,356" concept="6" />
+      <node id="959054848695158243" at="11,0,13,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="959054848695158243" at="13,0,16,0" concept="9" trace="virtual_getOutput_959054848695158257#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="959054848695158245" at="11,43,11,43" />
+      <scope id="959054848695158249" at="13,77,14,356" />
+      <scope id="959054848695158243" at="11,0,13,0">
+        <var name="thisNode" id="959054848695158243" />
+      </scope>
+      <scope id="959054848695158243" at="13,0,16,0">
+        <var name="thisNode" id="959054848695158243" />
+      </scope>
+      <unit id="959054848695158243" at="10,0,17,0" name="org.campagnelab.workflow.behavior.GlobalBooleanLiteralTuple_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/959054848695158254">
+    <file name="GlobalTupleContainer_Behavior.java">
+      <node id="959054848695158254" at="8,0,10,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="959054848695158256" at="8,43,8,43" />
+      <scope id="959054848695158254" at="8,0,10,0">
+        <var name="thisNode" id="959054848695158254" />
+      </scope>
+      <unit id="959054848695158254" at="7,0,11,0" name="org.campagnelab.workflow.behavior.GlobalTupleContainer_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/959054848695158268">
+    <file name="GlobalStringLiteralTuple_Behavior.java">
+      <node id="959054848695158283" at="13,77,14,284" concept="6" />
+      <node id="959054848695158268" at="11,0,13,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="959054848695158268" at="13,0,16,0" concept="9" trace="virtual_getOutput_959054848695158257#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="959054848695158270" at="11,43,11,43" />
+      <scope id="959054848695158274" at="13,77,14,284" />
+      <scope id="959054848695158268" at="11,0,13,0">
+        <var name="thisNode" id="959054848695158268" />
+      </scope>
+      <scope id="959054848695158268" at="13,0,16,0">
+        <var name="thisNode" id="959054848695158268" />
+      </scope>
+      <unit id="959054848695158268" at="10,0,17,0" name="org.campagnelab.workflow.behavior.GlobalStringLiteralTuple_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/959054848695162535">
+    <file name="GlobalIntegerLiteralTuple_Behavior.java">
+      <node id="959054848695162550" at="13,77,14,285" concept="6" />
+      <node id="959054848695162535" at="11,0,13,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="959054848695162535" at="13,0,16,0" concept="9" trace="virtual_getOutput_959054848695158257#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="959054848695162537" at="11,43,11,43" />
+      <scope id="959054848695162541" at="13,77,14,285" />
+      <scope id="959054848695162535" at="11,0,13,0">
+        <var name="thisNode" id="959054848695162535" />
+      </scope>
+      <scope id="959054848695162535" at="13,0,16,0">
+        <var name="thisNode" id="959054848695162535" />
+      </scope>
+      <unit id="959054848695162535" at="10,0,17,0" name="org.campagnelab.workflow.behavior.GlobalIntegerLiteralTuple_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/959054848695163587">
+    <file name="GlobalListLiteralTuple_Behavior.java">
+      <node id="959054848695164490" at="14,77,15,24" concept="5" />
+      <node id="959054848695165756" at="16,217,17,126" concept="1" />
+      <node id="959054848695185211" at="18,238,19,23" concept="1" />
+      <node id="959054848695164633" at="21,5,22,25" concept="6" />
+      <node id="959054848695169093" at="24,65,25,51" concept="6" />
+      <node id="959054848695163587" at="12,0,14,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="959054848695168349" at="17,126,20,7" concept="3" />
+      <node id="959054848695169093" at="24,0,27,0" concept="9" trace="neq_f6tnrf_a0b0b0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="959054848695163602" at="15,24,21,5" concept="2" />
+      <node id="959054848695163587" at="14,0,24,0" concept="9" trace="virtual_getOutput_959054848695158257#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="959054848695163589" at="12,43,12,43" />
+      <scope id="959054848695168351" at="18,238,19,23" />
+      <scope id="959054848695169093" at="24,65,25,51" />
+      <scope id="959054848695163587" at="12,0,14,0">
+        <var name="thisNode" id="959054848695163587" />
+      </scope>
+      <scope id="959054848695169093" at="24,0,27,0">
+        <var name="a" id="959054848695169093" />
+        <var name="b" id="959054848695169093" />
+      </scope>
+      <scope id="959054848695163604" at="16,217,20,7" />
+      <scope id="959054848695163602" at="15,24,21,5">
+        <var name="value" id="959054848695163603" />
+      </scope>
+      <scope id="959054848695163593" at="14,77,22,25">
+        <var name="output" id="959054848695164493" />
+      </scope>
+      <scope id="959054848695163587" at="14,0,24,0">
+        <var name="thisNode" id="959054848695163587" />
+      </scope>
+      <unit id="959054848695163587" at="11,0,28,0" name="org.campagnelab.workflow.behavior.GlobalListLiteralTuple_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/959054848695186105">
+    <file name="GlobalFileLiteralTuple_Behavior.java">
+      <node id="959054848695186120" at="12,77,13,190" concept="6" />
+      <node id="959054848695186105" at="10,0,12,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="959054848695186105" at="12,0,15,0" concept="9" trace="virtual_getOutput_959054848695158257#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="959054848695186107" at="10,43,10,43" />
+      <scope id="959054848695186111" at="12,77,13,190" />
+      <scope id="959054848695186105" at="10,0,12,0">
+        <var name="thisNode" id="959054848695186105" />
+      </scope>
+      <scope id="959054848695186105" at="12,0,15,0">
+        <var name="thisNode" id="959054848695186105" />
+      </scope>
+      <unit id="959054848695186105" at="9,0,16,0" name="org.campagnelab.workflow.behavior.GlobalFileLiteralTuple_Behavior" />
     </file>
   </root>
 </debug-info>

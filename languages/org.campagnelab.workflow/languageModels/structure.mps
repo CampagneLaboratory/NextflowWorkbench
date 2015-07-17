@@ -1047,7 +1047,7 @@
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
     <property role="TrG5h" value="GlobalBooleanLiteralTuple" />
     <property role="34LRSv" value="boolean element" />
-    <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="GlobalTupleContainer" />
+    <ref role="1TJDcQ" node="PffOQS_Koi" resolve="GlobalValueLiteralTuple" />
     <node concept="1TJgyj" id="2Hhp$WEw$ff" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="boolean" />
@@ -1070,7 +1070,7 @@
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
     <property role="TrG5h" value="GlobalIntegerLiteralTuple" />
     <property role="34LRSv" value="integer element" />
-    <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="GlobalTupleContainer" />
+    <ref role="1TJDcQ" node="PffOQS_Koi" resolve="GlobalValueLiteralTuple" />
     <node concept="1TJgyj" id="2Hhp$WEw$i7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="integer" />
@@ -1082,7 +1082,7 @@
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
     <property role="TrG5h" value="GlobalStringLiteralTuple" />
     <property role="34LRSv" value="string element" />
-    <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="GlobalTupleContainer" />
+    <ref role="1TJDcQ" node="PffOQS_Koi" resolve="GlobalValueLiteralTuple" />
     <node concept="1TJgyj" id="2Hhp$WEw$np" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="string" />
@@ -1110,8 +1110,8 @@
     <node concept="1TJgyj" id="2Hhp$WEw$nd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="list" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3m26Pihn7B_" resolve="GlobalListContainer" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="PffOQS_Koi" resolve="GlobalValueLiteralTuple" />
     </node>
   </node>
   <node concept="1TIwiD" id="3JbPZMXXswk">
@@ -1157,6 +1157,13 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="3m26Pihn7K8" resolve="GlobalFileLiteralList" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="PffOQS_Koi">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
+    <property role="TrG5h" value="GlobalValueLiteralTuple" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="GlobalTupleContainer" />
   </node>
 </model>
 

@@ -1603,8 +1603,19 @@
   <node concept="24kQdi" id="2Hhp$WEw$nk">
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
     <ref role="1XX52x" to="iowz:2Hhp$WEw$nc" resolve="GlobalListLiteralTuple" />
-    <node concept="3F1sOY" id="2Hhp$WEw$nm" role="2wV5jI">
-      <ref role="1NtTu8" to="iowz:2Hhp$WEw$nd" />
+    <node concept="3EZMnI" id="PffOQS_OmJ" role="2wV5jI">
+      <node concept="3F0ifn" id="PffOQS_OmZ" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F2HdR" id="PffOQS_OmQ" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:2Hhp$WEw$nd" />
+        <node concept="l2Vlx" id="PffOQS_OmS" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="PffOQS_Onf" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="l2Vlx" id="PffOQS_OmM" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="5rnWeHKVZUW">
