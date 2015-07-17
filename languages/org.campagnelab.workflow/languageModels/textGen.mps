@@ -10,8 +10,8 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
@@ -921,34 +921,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="1psOhWoncZi">
-    <ref role="WuzLi" to="iowz:1psOhWn_9xo" resolve="ValueFromWorkflowRef" />
-    <node concept="11bSqf" id="1psOhWoncZj" role="11c4hB">
-      <node concept="3clFbS" id="1psOhWoncZk" role="2VODD2">
-        <node concept="lc7rE" id="1psOhWondAj" role="3cqZAp">
-          <node concept="la8eA" id="648FhJjd7wd" role="lcghm">
-            <property role="lacIc" value="${" />
-          </node>
-          <node concept="l9hG8" id="1psOhWondAA" role="lcghm">
-            <node concept="2OqwBi" id="1psOhWonekM" role="lb14g">
-              <node concept="2OqwBi" id="1psOhWondZ5" role="2Oq$k0">
-                <node concept="117lpO" id="1psOhWondX6" role="2Oq$k0" />
-                <node concept="3TrEf2" id="1psOhWone94" role="2OqNvi">
-                  <ref role="3Tt5mk" to="iowz:1psOhWn_9xv" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="1psOhWonevy" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="648FhJjd7zs" role="lcghm">
-            <property role="lacIc" value="}" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="21kmpcT4bdw">
     <ref role="WuzLi" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
     <node concept="11bSqf" id="21kmpcT4bdx" role="11c4hB">
@@ -1122,7 +1094,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="759DxHIOLWT">
-    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="3GE5qa" value="scripts.conditionalScript" />
     <ref role="WuzLi" to="iowz:YNIIGPa1iv" resolve="BaseLanguageAdapter" />
     <node concept="11bSqf" id="759DxHIOLWU" role="11c4hB">
       <node concept="3clFbS" id="759DxHIOLWV" role="2VODD2">
@@ -1150,7 +1122,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="759DxHIOOj3">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <ref role="WuzLi" to="iowz:70dPcAeBye8" resolve="RichScript" />
     <node concept="11bSqf" id="759DxHIOOj4" role="11c4hB">
       <node concept="3clFbS" id="759DxHIOOj5" role="2VODD2">

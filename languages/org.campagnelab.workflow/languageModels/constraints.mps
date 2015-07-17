@@ -337,53 +337,5 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="1psOhWokJHT">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <ref role="1M2myG" to="iowz:1psOhWn_9xo" resolve="ValueFromWorkflowRef" />
-    <node concept="1N5Pfh" id="1psOhWokJI0" role="1Mr941">
-      <ref role="1N5Vy1" to="iowz:1psOhWn_9xv" />
-      <node concept="13QW63" id="1psOhWokK4U" role="1N6uqs">
-        <node concept="3clFbS" id="1psOhWokK4W" role="2VODD2">
-          <node concept="3clFbF" id="1psOhWokK5o" role="3cqZAp">
-            <node concept="2YIFZM" id="1psOhWokK91" role="3clFbG">
-              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
-              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="1psOhWokKBO" role="37wK5m">
-                <node concept="2OqwBi" id="1psOhWokKfv" role="2Oq$k0">
-                  <node concept="2rP1CM" id="1psOhWokKcU" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="1psOhWokKz5" role="2OqNvi">
-                    <node concept="1xMEDy" id="1psOhWokKz7" role="1xVPHs">
-                      <node concept="chp4Y" id="1psOhWokK$R" role="ri$Ld">
-                        <ref role="cht4Q" to="iowz:6tX5nBTatyL" resolve="Process" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2Rf3mk" id="1psOhWokKWs" role="2OqNvi">
-                  <node concept="1xMEDy" id="1psOhWokKWu" role="1xVPHs">
-                    <node concept="chp4Y" id="1psOhWokKZS" role="ri$Ld">
-                      <ref role="cht4Q" to="iowz:1psOhWn_9uY" resolve="ValueFromWorkflow" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="Bn3R3" id="1psOhWokL3N" role="Bn3R6">
-        <node concept="3clFbS" id="1psOhWokL3O" role="2VODD2">
-          <node concept="3clFbF" id="1psOhWokLaU" role="3cqZAp">
-            <node concept="3cpWs3" id="1psOhWokLC6" role="3clFbG">
-              <node concept="Bn53e" id="1psOhWokLHn" role="3uHU7w" />
-              <node concept="Xl_RD" id="1psOhWokLaT" role="3uHU7B">
-                <property role="Xl_RC" value="parameter " />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
 </model>
 

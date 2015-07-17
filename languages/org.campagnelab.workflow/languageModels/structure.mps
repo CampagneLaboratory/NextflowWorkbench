@@ -35,6 +35,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -63,6 +64,7 @@
     <property role="R4oN_" value="a Nextflow-like process" />
     <property role="19KtqR" value="true" />
     <property role="R5$K7" value="false" />
+    <property role="MwhBj" value="${module}/icons/ProcessIcon-2.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="59canFNwpDb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -99,7 +101,7 @@
     <property role="TrG5h" value="Script" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
   </node>
   <node concept="1TIwiD" id="5D7AjvYabas">
@@ -107,6 +109,7 @@
     <property role="34LRSv" value="workflow" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="A Nextflow-like workflow" />
+    <property role="MwhBj" value="${module}/icons/WorkflowIcon-2.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3m26PihhBZE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -282,7 +285,7 @@
     <ref role="1TJDcQ" node="3m26PihhBwN" resolve="OutChannels" />
   </node>
   <node concept="1TIwiD" id="dxSprUGgfG">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ScriptStringArgs" />
     <property role="R4oN_" value="string arguments to be referenced in script" />
     <ref role="1TJDcQ" node="5c2H0VLJOBl" resolve="ScriptArgs" />
@@ -292,7 +295,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5c2H0VLJOBl">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ScriptArgs" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -302,7 +305,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5c2H0VLJOBo">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ScriptIntegerArgs" />
     <property role="R4oN_" value="integer arguments to be referenced in script" />
     <ref role="1TJDcQ" node="5c2H0VLJOBl" resolve="ScriptArgs" />
@@ -312,7 +315,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5c2H0VLJOEo">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ScriptBooleanArgs" />
     <property role="R4oN_" value="boolean arguments to be referenced in script" />
     <ref role="1TJDcQ" node="5c2H0VLJOBl" resolve="ScriptArgs" />
@@ -322,7 +325,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="70dPcAeBye8">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="RichScript" />
     <property role="R4oN_" value="a script using the richtext plugin" />
     <property role="34LRSv" value="script" />
@@ -392,7 +395,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3m9W35noFal">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ScriptListArgs" />
     <property role="R4oN_" value="list arguments to be referenced in script" />
     <ref role="1TJDcQ" node="5c2H0VLJOBl" resolve="ScriptArgs" />
@@ -411,14 +414,14 @@
     <ref role="1TJDcQ" node="70dPcAeD8Uh" resolve="ValueInAChannel" />
   </node>
   <node concept="1TIwiD" id="3m9W35nx3Yj">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ListElements" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3m9W35nx3Yk">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="IntegerElement" />
     <property role="R4oN_" value="integer element for a list" />
     <ref role="1TJDcQ" node="3m9W35nx3Yj" resolve="ListElements" />
@@ -428,7 +431,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3m9W35nx3Yn">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="StringElement" />
     <property role="R4oN_" value="string element for a list" />
     <ref role="1TJDcQ" node="3m9W35nx3Yj" resolve="ListElements" />
@@ -438,7 +441,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3m9W35nx3Yq">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="BooleanElement" />
     <property role="R4oN_" value="boolean element of a list" />
     <ref role="1TJDcQ" node="3m9W35nx3Yj" resolve="ListElements" />
@@ -486,71 +489,22 @@
     <property role="R4oN_" value="collects all the items emitted by a list object, sorts them, and then emits the list as a single item" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
-  <node concept="1TIwiD" id="1psOhWn_9uY">
-    <property role="TrG5h" value="ValueFromWorkflow" />
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1psOhWn_9uZ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1psOhWn_9xo">
-    <property role="TrG5h" value="ValueFromWorkflowRef" />
-    <property role="34LRSv" value="@" />
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1psOhWn_9xv" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1psOhWn_9uY" resolve="ValueFromWorkflow" />
-    </node>
-    <node concept="PrWs8" id="1psOhWn_9xy" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1psOhWn_9AH">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <property role="TrG5h" value="WorkflowBoolean" />
-    <property role="34LRSv" value="boolean" />
-    <ref role="1TJDcQ" node="1psOhWn_9uY" resolve="ValueFromWorkflow" />
-  </node>
-  <node concept="1TIwiD" id="1psOhWn_9AM">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <property role="TrG5h" value="WorkflowString" />
-    <property role="34LRSv" value="string" />
-    <ref role="1TJDcQ" node="1psOhWn_9uY" resolve="ValueFromWorkflow" />
-  </node>
-  <node concept="1TIwiD" id="1psOhWn_9AR">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <property role="TrG5h" value="WorkflowInteger" />
-    <property role="34LRSv" value="integer" />
-    <ref role="1TJDcQ" node="1psOhWn_9uY" resolve="ValueFromWorkflow" />
-  </node>
-  <node concept="1TIwiD" id="1psOhWofHGP">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <property role="TrG5h" value="WorkflowList" />
-    <property role="34LRSv" value="list" />
-    <ref role="1TJDcQ" node="1psOhWn_9uY" resolve="ValueFromWorkflow" />
-  </node>
   <node concept="1TIwiD" id="49c3W7NLHXs">
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="Executor" />
-    <property role="3GE5qa" value="Executors" />
+    <property role="3GE5qa" value="executors" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="49c3W7NLHXt">
-    <property role="3GE5qa" value="Executors" />
+    <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="Local" />
     <property role="34LRSv" value="local" />
     <property role="R4oN_" value="executes the workflow on the local, single machine" />
     <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
   </node>
   <node concept="1TIwiD" id="49c3W7NLHXu">
-    <property role="3GE5qa" value="Executors" />
+    <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="SGE" />
     <property role="R4oN_" value="executes the workflow on the SGE computer network" />
     <property role="34LRSv" value="sge" />
@@ -704,14 +658,14 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5AoFZCLzEJD">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ListTypes" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5AoFZCLzEMK">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ListElement" />
     <ref role="1TJDcQ" node="3m9W35nx3Yj" resolve="ListElements" />
     <node concept="1TJgyj" id="5AoFZCLzEML" role="1TKVEi">
@@ -940,7 +894,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="YNIIGPa1iv">
-    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="3GE5qa" value="scripts.conditionalScript" />
     <property role="TrG5h" value="BaseLanguageAdapter" />
     <property role="34LRSv" value="base language script" />
     <property role="R4oN_" value="a script that contains base language, such as for the use of conditional statements" />
@@ -964,7 +918,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="59canFOCShA">
-    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="3GE5qa" value="scripts.conditionalScript" />
     <property role="TrG5h" value="ConditionalExpressionText" />
     <property role="34LRSv" value="expression script" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
@@ -976,7 +930,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5DmojlqPc7e">
-    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="3GE5qa" value="scripts.conditionalScript" />
     <property role="TrG5h" value="ConditionalVariableRef" />
     <property role="34LRSv" value="variable" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
