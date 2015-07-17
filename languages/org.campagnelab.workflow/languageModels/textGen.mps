@@ -10,8 +10,8 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
@@ -71,7 +71,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -132,7 +132,7 @@
       <concept id="1233921373471" name="jetbrains.mps.lang.textGen.structure.LanguageTextGenDeclaration" flags="ig" index="1bsvg0">
         <child id="1233922432965" name="operation" index="1bwxVq" />
       </concept>
-      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" stub="3147100357551177019" index="1bwezc" />
+      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" index="1bwezc" />
       <concept id="1233924848298" name="jetbrains.mps.lang.textGen.structure.OperationCall" flags="ng" index="1bDJIP">
         <reference id="1234190664409" name="function" index="1rvKf6" />
         <child id="1234191323697" name="parameter" index="1ryhcI" />
@@ -1100,7 +1100,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="759DxHIOLWT">
-    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="3GE5qa" value="scripts.conditionalScript" />
     <ref role="WuzLi" to="iowz:YNIIGPa1iv" resolve="BaseLanguageAdapter" />
     <node concept="11bSqf" id="759DxHIOLWU" role="11c4hB">
       <node concept="3clFbS" id="759DxHIOLWV" role="2VODD2">
@@ -1128,7 +1128,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="759DxHIOOj3">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <ref role="WuzLi" to="iowz:70dPcAeBye8" resolve="RichScript" />
     <node concept="11bSqf" id="759DxHIOOj4" role="11c4hB">
       <node concept="3clFbS" id="759DxHIOOj5" role="2VODD2">
