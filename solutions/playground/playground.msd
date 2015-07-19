@@ -16,6 +16,7 @@
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
     <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
     <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
+    <usedLanguage>316e8289-cb69-4927-8bfe-edde5cd32037(org.campagnelab.workflow.languages)</usedLanguage>
   </usedLanguages>
   <languageVersions>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
@@ -24,6 +25,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="-1" />
+    <language id="316e8289-cb69-4927-8bfe-edde5cd32037" fqName="org.campagnelab.workflow.languages" version="0" />
   </languageVersions>
 </solution>
 
