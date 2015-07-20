@@ -277,6 +277,10 @@
       <concept id="4202970468879724310" name="org.campagnelab.docker.structure.CmdInstruction" flags="ng" index="2XmTL9">
         <child id="3515886879324529689" name="elements" index="gkDh$" />
       </concept>
+      <concept id="716770353519888845" name="org.campagnelab.docker.structure.VolumeName" flags="ng" index="3aTZcr" />
+      <concept id="716770353519888084" name="org.campagnelab.docker.structure.VolumeInstruction" flags="ng" index="3aTZK2">
+        <child id="716770353519888851" name="volumes" index="3aTZc5" />
+      </concept>
       <concept id="716770353519069414" name="org.campagnelab.docker.structure.EntrypointInstruction" flags="ng" index="3aYR8K" />
       <concept id="716770353515919183" name="org.campagnelab.docker.structure.CopyInstruction" flags="ng" index="3baCQp" />
       <concept id="716770353516261633" name="org.campagnelab.docker.structure.SourceFile" flags="ng" index="3bb4Jn">
@@ -7529,6 +7533,21 @@
       </node>
       <node concept="gkxfm" id="BMuHr3596t" role="gkDh$">
         <property role="gkxfh" value="param2" />
+      </node>
+    </node>
+    <node concept="3aTZK2" id="BMuHr39RSA" role="VuOVn">
+      <node concept="3aTZcr" id="BMuHr39RSB" role="3aTZc5">
+        <property role="gkxfh" value="/data" />
+      </node>
+    </node>
+    <node concept="3aTZK2" id="BMuHr39Rs2" role="VuOVn">
+      <node concept="3aTZcr" id="BMuHr39Rs3" role="3aTZc5">
+        <property role="gkxfh" value="/myvol" />
+      </node>
+    </node>
+    <node concept="3aTZK2" id="BMuHr3bKYS" role="VuOVn">
+      <node concept="3aTZcr" id="BMuHr3bKYT" role="3aTZc5">
+        <property role="TrG5h" value="/data" />
       </node>
     </node>
     <node concept="hSj51" id="33aW7Oxfb3Z" role="VuOVn">

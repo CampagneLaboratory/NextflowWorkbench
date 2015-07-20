@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="rk0i" ref="r:5c1a2e64-6ce3-44f3-9901-91d04f21d955(org.campagnelab.nyosh.interactive.behavior)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" implicit="true" />
@@ -102,6 +103,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
     </language>
   </registry>
   <node concept="WtQ9Q" id="5BbChSjL4ZU">
@@ -643,6 +645,74 @@
           </node>
           <node concept="la8eA" id="BMuHr32gNO" role="lcghm">
             <property role="lacIc" value="]" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="BMuHr35qtZ">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="WuzLi" to="6jv6:BMuHr35ork" resolve="VolumeInstruction" />
+    <node concept="11bSqf" id="BMuHr35qu0" role="11c4hB">
+      <node concept="3clFbS" id="BMuHr35qu1" role="2VODD2">
+        <node concept="3clFbJ" id="BMuHr3ch7N" role="3cqZAp">
+          <node concept="3clFbS" id="BMuHr3ch7P" role="3clFbx">
+            <node concept="1ZvZ2y" id="BMuHr3ckVZ" role="3cqZAp">
+              <node concept="Xl_RD" id="BMuHr3ckW5" role="v0bCk">
+                <property role="Xl_RC" value="VOLUME must declare at least one volume name" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="BMuHr3cig$" role="3clFbw">
+            <node concept="2OqwBi" id="BMuHr3chal" role="2Oq$k0">
+              <node concept="117lpO" id="BMuHr3ch86" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="BMuHr3chsr" role="2OqNvi">
+                <ref role="3TtcxE" to="6jv6:BMuHr35oBj" />
+              </node>
+            </node>
+            <node concept="1v1jN8" id="BMuHr3ckVT" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="lc7rE" id="BMuHr35qxQ" role="3cqZAp">
+          <node concept="la8eA" id="BMuHr35qxX" role="lcghm">
+            <property role="lacIc" value="VOLUME [" />
+          </node>
+          <node concept="l9S2W" id="BMuHr35qy9" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value=", " />
+            <node concept="2OqwBi" id="BMuHr35qzY" role="lbANJ">
+              <node concept="117lpO" id="BMuHr35qyj" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="BMuHr35qQ3" role="2OqNvi">
+                <ref role="3TtcxE" to="6jv6:BMuHr35oBj" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="BMuHr35tuB" role="lcghm">
+            <property role="lacIc" value="]" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="BMuHr35qQy">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="WuzLi" to="6jv6:BMuHr35oBd" resolve="VolumeName" />
+    <node concept="11bSqf" id="BMuHr35qQz" role="11c4hB">
+      <node concept="3clFbS" id="BMuHr35qQ$" role="2VODD2">
+        <node concept="lc7rE" id="BMuHr35qQL" role="3cqZAp">
+          <node concept="la8eA" id="BMuHr3bYPm" role="lcghm">
+            <property role="lacIc" value="&quot;" />
+          </node>
+          <node concept="l9hG8" id="BMuHr35qQS" role="lcghm">
+            <node concept="2OqwBi" id="BMuHr35qSW" role="lb14g">
+              <node concept="117lpO" id="BMuHr35qR1" role="2Oq$k0" />
+              <node concept="3TrcHB" id="BMuHr35rb_" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="BMuHr3bYP2" role="lcghm">
+            <property role="lacIc" value="&quot;" />
           </node>
         </node>
       </node>

@@ -469,5 +469,26 @@
       <ref role="20lvS9" node="33aW7OwAeeF" resolve="CommandElement" />
     </node>
   </node>
+  <node concept="1TIwiD" id="BMuHr35ork">
+    <property role="3GE5qa" value="instructions" />
+    <property role="TrG5h" value="VolumeInstruction" />
+    <property role="34LRSv" value="VOLUME" />
+    <property role="R4oN_" value="Define one or more mount volumes" />
+    <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+    <node concept="1TJgyj" id="BMuHr35oBj" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="volumes" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="BMuHr35oBd" resolve="VolumeName" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="BMuHr35oBd">
+    <property role="3GE5qa" value="instructions" />
+    <property role="TrG5h" value="VolumeName" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="BMuHr35oBh" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
