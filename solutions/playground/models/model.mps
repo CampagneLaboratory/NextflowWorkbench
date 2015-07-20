@@ -209,6 +209,12 @@
       <concept id="5930160417407206502" name="org.campagnelab.workflow.structure.ConditionalExpressionText" flags="ng" index="2AVUOs">
         <child id="5930160417407206503" name="text" index="2AVUOt" />
       </concept>
+      <concept id="3389024761279334223" name="org.campagnelab.workflow.structure.CollateStepSize" flags="ng" index="2C1JHv">
+        <property id="3389024761279335520" name="stepSize" index="2C1J1K" />
+      </concept>
+      <concept id="3389024761279333047" name="org.campagnelab.workflow.structure.CollateAllowIncompleteTuples" flags="ng" index="2C1JUB">
+        <property id="3389024761279333625" name="allowIncomplete" index="2C1JzD" />
+      </concept>
       <concept id="3389024761263420810" name="org.campagnelab.workflow.structure.GlobalTupleListExpression" flags="ng" index="2D4WAq">
         <child id="3389024761263427870" name="list" index="2D52Oe" />
       </concept>
@@ -245,6 +251,8 @@
       <concept id="3857878650533843630" name="org.campagnelab.workflow.structure.ToList" flags="ng" index="1yaYav" />
       <concept id="3857878650533842545" name="org.campagnelab.workflow.structure.Collate" flags="ng" index="1yaZT0">
         <property id="3857878650533843272" name="n" index="1yaY5T" />
+        <child id="3389024761279334185" name="option" index="2C1JGT" />
+        <child id="3389024761282619905" name="allowIncomplete" index="2Cidoh" />
       </concept>
       <concept id="3857878650533842792" name="org.campagnelab.workflow.structure.Flatten" flags="ng" index="1yaZXp" />
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
@@ -679,10 +687,17 @@
         <ref role="1uK_4X" node="ZOADNCEA2e" resolve="booleanList" />
         <node concept="1yaZT0" id="ZOADNDt3j2" role="1ylr64">
           <property role="1yaY5T" value="3" />
+          <node concept="2C1JUB" id="2W8f127DC9D" role="2C1JGT" />
         </node>
         <node concept="1yaZXp" id="ZOADNCIMKx" role="1ylr64" />
         <node concept="1yaZT0" id="ZOADND34p_" role="1ylr64">
           <property role="1yaY5T" value="4" />
+          <node concept="2C1JHv" id="2W8f127sQaC" role="2C1JGT">
+            <property role="2C1J1K" value="3" />
+          </node>
+          <node concept="2C1JUB" id="2W8f127DCHn" role="2Cidoh">
+            <property role="2C1JzD" value="true" />
+          </node>
         </node>
         <node concept="1yaZT0" id="ZOADNDe4A_" role="1ylr64">
           <property role="1yaY5T" value="4" />

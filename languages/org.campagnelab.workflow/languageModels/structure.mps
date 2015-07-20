@@ -468,6 +468,16 @@
       <property role="TrG5h" value="n" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyj" id="2W8f1273GsD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="option" />
+      <ref role="20lvS9" node="2W8f1273G7R" resolve="CollateOption" />
+    </node>
+    <node concept="1TJgyj" id="2W8f127geC1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="allowIncomplete" />
+      <ref role="20lvS9" node="2W8f1273GaR" resolve="CollateAllowIncompleteTuples" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3m9W35nCwXC">
     <property role="3GE5qa" value="channelFunctions" />
@@ -1167,6 +1177,35 @@
       <property role="20kJfa" value="list" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="2Hhp$WEw$gJ" resolve="GlobalTupleLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2W8f1273G7R">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="CollateOption" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2W8f1273GaR">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="CollateAllowIncompleteTuples" />
+    <property role="34LRSv" value="allow incomplete tuples" />
+    <property role="R4oN_" value="specify false if you want to avoid the last tuple being incomplete" />
+    <ref role="1TJDcQ" node="2W8f1273G7R" resolve="CollateOption" />
+    <node concept="1TJgyi" id="2W8f1273GjT" role="1TKVEl">
+      <property role="TrG5h" value="allowIncomplete" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2W8f1273Gtf">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="CollateStepSize" />
+    <property role="34LRSv" value="step size" />
+    <property role="R4oN_" value="specifies the step by which elements are collected in tuples" />
+    <ref role="1TJDcQ" node="2W8f1273G7R" resolve="CollateOption" />
+    <node concept="1TJgyi" id="2W8f1273GLw" role="1TKVEl">
+      <property role="TrG5h" value="stepSize" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

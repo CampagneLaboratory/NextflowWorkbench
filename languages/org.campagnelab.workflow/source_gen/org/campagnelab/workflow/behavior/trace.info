@@ -17,7 +17,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BaseLanguageAdapter_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,180,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,184,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BooleanChannel_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
@@ -39,6 +39,15 @@
     </file>
     <file name="ClusterOptions_BehaviorDescriptor.java">
       <unit at="7,0,24,0" name="org.campagnelab.workflow.behavior.ClusterOptions_BehaviorDescriptor" />
+    </file>
+    <file name="CollateAllowIncompleteTuples_BehaviorDescriptor.java">
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.CollateAllowIncompleteTuples_BehaviorDescriptor" />
+    </file>
+    <file name="CollateOption_BehaviorDescriptor.java">
+      <unit at="8,0,17,0" name="org.campagnelab.workflow.behavior.CollateOption_BehaviorDescriptor" />
+    </file>
+    <file name="CollateStepSize_BehaviorDescriptor.java">
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.CollateStepSize_BehaviorDescriptor" />
     </file>
     <file name="Collate_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.Collate_BehaviorDescriptor" />
@@ -454,6 +463,48 @@
         <var name="thisNode" id="3389024761264504394" />
       </scope>
       <unit id="3389024761264504394" at="13,0,54,0" name="org.campagnelab.workflow.behavior.GlobalTupleListExpression_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/3389024761288149714">
+    <file name="CollateOption_Behavior.java">
+      <node id="3389024761288149714" at="8,0,10,0" concept="11" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="3389024761288149716" at="8,43,8,43" />
+      <scope id="3389024761288149714" at="8,0,10,0">
+        <var name="thisNode" id="3389024761288149714" />
+      </scope>
+      <unit id="3389024761288149714" at="7,0,11,0" name="org.campagnelab.workflow.behavior.CollateOption_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/3389024761288149728">
+    <file name="CollateStepSize_Behavior.java">
+      <node id="3389024761288149743" at="12,80,13,198" concept="7" />
+      <node id="3389024761288149728" at="10,0,12,0" concept="11" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3389024761288149728" at="12,0,15,0" concept="11" trace="virtual_getProperty_3389024761288149717#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="3389024761288149730" at="10,43,10,43" />
+      <scope id="3389024761288149734" at="12,80,13,198" />
+      <scope id="3389024761288149728" at="10,0,12,0">
+        <var name="thisNode" id="3389024761288149728" />
+      </scope>
+      <scope id="3389024761288149728" at="12,0,15,0">
+        <var name="thisNode" id="3389024761288149728" />
+      </scope>
+      <unit id="3389024761288149728" at="9,0,16,0" name="org.campagnelab.workflow.behavior.CollateStepSize_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/3389024761288150707">
+    <file name="CollateAllowIncompleteTuples_Behavior.java">
+      <node id="3389024761288150722" at="12,80,13,205" concept="7" />
+      <node id="3389024761288150707" at="10,0,12,0" concept="11" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3389024761288150707" at="12,0,15,0" concept="11" trace="virtual_getProperty_3389024761288149717#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="3389024761288150709" at="10,43,10,43" />
+      <scope id="3389024761288150713" at="12,80,13,205" />
+      <scope id="3389024761288150707" at="10,0,12,0">
+        <var name="thisNode" id="3389024761288150707" />
+      </scope>
+      <scope id="3389024761288150707" at="12,0,15,0">
+        <var name="thisNode" id="3389024761288150707" />
+      </scope>
+      <unit id="3389024761288150707" at="9,0,16,0" name="org.campagnelab.workflow.behavior.CollateAllowIncompleteTuples_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/3448966255158170359">
@@ -2153,18 +2204,28 @@
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/8163238436332446250">
     <file name="Collate_Behavior.java">
-      <node id="8163238436332446934" at="12,78,13,192" concept="7" />
-      <node id="8163238436332446250" at="10,0,12,0" concept="11" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="8163238436332446250" at="12,0,15,0" concept="11" trace="virtual_getOutput_8163238436332402135#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <scope id="8163238436332446252" at="10,43,10,43" />
-      <scope id="8163238436332446256" at="12,78,13,192" />
-      <scope id="8163238436332446250" at="10,0,12,0">
+      <node id="3389024761288135014" at="14,78,15,195" concept="6" />
+      <node id="3389024761288143116" at="16,189,17,299" concept="1" />
+      <node id="3389024761288157757" at="19,198,20,308" concept="1" />
+      <node id="3389024761288163957" at="21,5,22,18" concept="1" />
+      <node id="3389024761288162905" at="22,18,23,18" concept="7" />
+      <node id="8163238436332446250" at="12,0,14,0" concept="11" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3389024761288139213" at="15,195,18,5" concept="4" />
+      <node id="3389024761288154338" at="18,5,21,5" concept="4" />
+      <node id="8163238436332446250" at="14,0,25,0" concept="11" trace="virtual_getOutput_8163238436332402135#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="8163238436332446252" at="12,43,12,43" />
+      <scope id="3389024761288139215" at="16,189,17,299" />
+      <scope id="3389024761288154340" at="19,198,20,308" />
+      <scope id="8163238436332446250" at="12,0,14,0">
         <var name="thisNode" id="8163238436332446250" />
       </scope>
-      <scope id="8163238436332446250" at="12,0,15,0">
+      <scope id="8163238436332446256" at="14,78,23,18">
+        <var name="output" id="3389024761288135017" />
+      </scope>
+      <scope id="8163238436332446250" at="14,0,25,0">
         <var name="thisNode" id="8163238436332446250" />
       </scope>
-      <unit id="8163238436332446250" at="9,0,16,0" name="org.campagnelab.workflow.behavior.Collate_Behavior" />
+      <unit id="8163238436332446250" at="11,0,26,0" name="org.campagnelab.workflow.behavior.Collate_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/8163238436332463041">
