@@ -2759,6 +2759,60 @@
             <property role="3SKdUp" value="set default values here. tuples do not appear to have a constructor.." />
           </node>
         </node>
+        <node concept="3clFbH" id="1A9XvpsE7kk" role="3cqZAp" />
+        <node concept="3cpWs8" id="274AKIgYJs9" role="3cqZAp">
+          <node concept="3cpWsn" id="274AKIgYJsc" role="3cpWs9">
+            <property role="TrG5h" value="pathVar" />
+            <node concept="17QB3L" id="274AKIgYJs7" role="1tU5fm" />
+            <node concept="2OqwBi" id="274AKIgZJY2" role="33vP2m">
+              <node concept="2YIFZM" id="274AKIgZJqr" role="2Oq$k0">
+                <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+                <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+              </node>
+              <node concept="liA8E" id="274AKIgZKKP" role="2OqNvi">
+                <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                <node concept="Xl_RD" id="274AKIgZLku" role="37wK5m">
+                  <property role="Xl_RC" value="${NEXTFLOW_PATH}" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="274AKIh2$Sx" role="3cqZAp">
+          <node concept="3clFbS" id="274AKIh2$S$" role="3clFbx">
+            <node concept="3clFbF" id="3R5AwWRXIK2" role="3cqZAp">
+              <node concept="37vLTI" id="3R5AwWRXNe$" role="3clFbG">
+                <node concept="37vLTw" id="3R5AwWRXNnb" role="37vLTx">
+                  <ref role="3cqZAo" node="274AKIgYJsc" resolve="pathVar" />
+                </node>
+                <node concept="2OqwBi" id="3R5AwWRXIRc" role="37vLTJ">
+                  <node concept="Xjq3P" id="3R5AwWRXIK1" role="2Oq$k0" />
+                  <node concept="2sxana" id="3R5AwWRXMjt" role="2OqNvi">
+                    <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="3R5AwWRXRSh" role="3clFbw">
+            <node concept="3y3z36" id="3R5AwWRSEOY" role="3uHU7w">
+              <node concept="10Nm6u" id="3R5AwWRSEUP" role="3uHU7w" />
+              <node concept="37vLTw" id="3R5AwWRSEBj" role="3uHU7B">
+                <ref role="3cqZAo" node="274AKIgYJsc" resolve="pathVar" />
+              </node>
+            </node>
+            <node concept="3clFbC" id="3R5AwWRXS4n" role="3uHU7B">
+              <node concept="10Nm6u" id="3R5AwWRXS4o" role="3uHU7w" />
+              <node concept="2OqwBi" id="3R5AwWRXS4p" role="3uHU7B">
+                <node concept="Xjq3P" id="3R5AwWRXS4q" role="2Oq$k0" />
+                <node concept="2sxana" id="3R5AwWRXS4r" role="2OqNvi">
+                  <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1A9XvpsE6ZE" role="3cqZAp" />
         <node concept="3cpWs8" id="274AKIgYEsE" role="3cqZAp">
           <node concept="3cpWsn" id="274AKIgYEsH" role="3cpWs9">
             <property role="TrG5h" value="env" />
@@ -2812,59 +2866,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="4oJiZHqTiMZ" role="3cqZAp" />
-        <node concept="3cpWs8" id="274AKIgYJs9" role="3cqZAp">
-          <node concept="3cpWsn" id="274AKIgYJsc" role="3cpWs9">
-            <property role="TrG5h" value="pathVar" />
-            <node concept="17QB3L" id="274AKIgYJs7" role="1tU5fm" />
-            <node concept="2OqwBi" id="274AKIgZJY2" role="33vP2m">
-              <node concept="2YIFZM" id="274AKIgZJqr" role="2Oq$k0">
-                <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
-                <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
-              </node>
-              <node concept="liA8E" id="274AKIgZKKP" role="2OqNvi">
-                <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
-                <node concept="Xl_RD" id="274AKIgZLku" role="37wK5m">
-                  <property role="Xl_RC" value="${NEXTFLOW_PATH}" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="274AKIh2$Sx" role="3cqZAp">
-          <node concept="3clFbS" id="274AKIh2$S$" role="3clFbx">
-            <node concept="3clFbF" id="3R5AwWRXIK2" role="3cqZAp">
-              <node concept="37vLTI" id="3R5AwWRXNe$" role="3clFbG">
-                <node concept="37vLTw" id="3R5AwWRXNnb" role="37vLTx">
-                  <ref role="3cqZAo" node="274AKIgYJsc" resolve="pathVar" />
-                </node>
-                <node concept="2OqwBi" id="3R5AwWRXIRc" role="37vLTJ">
-                  <node concept="Xjq3P" id="3R5AwWRXIK1" role="2Oq$k0" />
-                  <node concept="2sxana" id="3R5AwWRXMjt" role="2OqNvi">
-                    <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1Wc70l" id="3R5AwWRXRSh" role="3clFbw">
-            <node concept="3y3z36" id="3R5AwWRSEOY" role="3uHU7w">
-              <node concept="10Nm6u" id="3R5AwWRSEUP" role="3uHU7w" />
-              <node concept="37vLTw" id="3R5AwWRSEBj" role="3uHU7B">
-                <ref role="3cqZAo" node="274AKIgYJsc" resolve="pathVar" />
-              </node>
-            </node>
-            <node concept="3clFbC" id="3R5AwWRXS4n" role="3uHU7B">
-              <node concept="10Nm6u" id="3R5AwWRXS4o" role="3uHU7w" />
-              <node concept="2OqwBi" id="3R5AwWRXS4p" role="3uHU7B">
-                <node concept="Xjq3P" id="3R5AwWRXS4q" role="2Oq$k0" />
-                <node concept="2sxana" id="3R5AwWRXS4r" role="2OqNvi">
-                  <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1FuqtLmVUUv" role="3cqZAp" />
         <node concept="3cpWs8" id="274AKIh3hdv" role="3cqZAp">
           <node concept="3cpWsn" id="274AKIh3hdw" role="3cpWs9">
             <property role="TrG5h" value="dir" />
