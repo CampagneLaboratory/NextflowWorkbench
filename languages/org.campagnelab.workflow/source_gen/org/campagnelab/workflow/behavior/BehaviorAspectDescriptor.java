@@ -51,6 +51,8 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new List_BehaviorDescriptor();
       case 44:
         return new ListChannel_BehaviorDescriptor();
+      case 71:
+        return new Tuple_BehaviorDescriptor();
       case 72:
         return new TupleChannel_BehaviorDescriptor();
       case 63:
@@ -135,34 +137,32 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new ConditionalExpressionText_BehaviorDescriptor();
       case 8:
         return new ConditionalVariableRef_BehaviorDescriptor();
-      case 13:
-        return new FileType_BehaviorDescriptor();
-      case 4:
-        return new ChannelType_BehaviorDescriptor();
-      case 71:
-        return new Tuple_BehaviorDescriptor();
-      case 73:
-        return new TupleType_BehaviorDescriptor();
-      case 36:
-        return new GlobalTupleExpression_BehaviorDescriptor();
-      case 18:
-        return new GlobalBooleanLiteralTuple_BehaviorDescriptor();
-      case 37:
-        return new GlobalTupleLiteral_BehaviorDescriptor();
       case 28:
         return new GlobalIntegerLiteralTuple_BehaviorDescriptor();
-      case 35:
-        return new GlobalStringLiteralTuple_BehaviorDescriptor();
-      case 23:
-        return new GlobalFileLiteralTuple_BehaviorDescriptor();
+      case 73:
+        return new TupleType_BehaviorDescriptor();
+      case 4:
+        return new ChannelType_BehaviorDescriptor();
       case 31:
         return new GlobalListLiteralTuple_BehaviorDescriptor();
-      case 12:
-        return new FileListChannel_BehaviorDescriptor();
-      case 11:
-        return new FileList_BehaviorDescriptor();
+      case 18:
+        return new GlobalBooleanLiteralTuple_BehaviorDescriptor();
       case 21:
         return new GlobalFileListExpression_BehaviorDescriptor();
+      case 35:
+        return new GlobalStringLiteralTuple_BehaviorDescriptor();
+      case 11:
+        return new FileList_BehaviorDescriptor();
+      case 12:
+        return new FileListChannel_BehaviorDescriptor();
+      case 37:
+        return new GlobalTupleLiteral_BehaviorDescriptor();
+      case 36:
+        return new GlobalTupleExpression_BehaviorDescriptor();
+      case 13:
+        return new FileType_BehaviorDescriptor();
+      case 23:
+        return new GlobalFileLiteralTuple_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

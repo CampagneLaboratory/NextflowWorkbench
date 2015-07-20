@@ -15,7 +15,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BaseLanguageAdapter_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,182,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,172,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BooleanChannel_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
@@ -290,12 +290,6 @@
     <file name="Tuple_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Tuple_BehaviorDescriptor" />
     </file>
-    <file name="ValueFromWorkflowRef_BehaviorDescriptor.java">
-      <unit at="11,0,25,0" name="org.campagnelab.workflow.behavior.ValueFromWorkflowRef_BehaviorDescriptor" />
-    </file>
-    <file name="ValueFromWorkflow_BehaviorDescriptor.java">
-      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.ValueFromWorkflow_BehaviorDescriptor" />
-    </file>
     <file name="ValueInAChannelNoTuple_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ValueInAChannelNoTuple_BehaviorDescriptor" />
     </file>
@@ -304,18 +298,6 @@
     </file>
     <file name="ValueInAChannel_BehaviorDescriptor.java">
       <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.ValueInAChannel_BehaviorDescriptor" />
-    </file>
-    <file name="WorkflowBoolean_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.WorkflowBoolean_BehaviorDescriptor" />
-    </file>
-    <file name="WorkflowInteger_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.WorkflowInteger_BehaviorDescriptor" />
-    </file>
-    <file name="WorkflowList_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.WorkflowList_BehaviorDescriptor" />
-    </file>
-    <file name="WorkflowString_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.WorkflowString_BehaviorDescriptor" />
     </file>
     <file name="Workflow_BehaviorDescriptor.java">
       <unit at="13,0,30,0" name="org.campagnelab.workflow.behavior.Workflow_BehaviorDescriptor" />

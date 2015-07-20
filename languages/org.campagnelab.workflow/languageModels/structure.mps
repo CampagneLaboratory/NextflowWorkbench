@@ -65,7 +65,7 @@
     <property role="R4oN_" value="a Nextflow-like process" />
     <property role="19KtqR" value="true" />
     <property role="R5$K7" value="false" />
-    <property role="MwhBj" value="${module}/icons/ProcessIcon-2.png" />
+    <property role="MwhBj" value="${module}/icons/ProcessIcon-5.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="59canFNwpDb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
