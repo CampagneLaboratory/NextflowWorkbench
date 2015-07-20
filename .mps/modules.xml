@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow.languages/org.campagnelab.workflow.languages.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow/org.campagnelab.workflow.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/NextflowWorkbench.build/NextflowWorkbench.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.workflow.run/org.campagnelab.workflow.run.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />
     </projectModules>
