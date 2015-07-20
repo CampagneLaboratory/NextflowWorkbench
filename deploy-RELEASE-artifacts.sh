@@ -12,14 +12,14 @@ echo "detected version: ${version}"
 
 $1mvn deploy:deploy-file -DgroupId=org.campagnelab.mps \
   -DartifactId=nextflow-workbench \
-  -Dversion="$version"-SNAPSHOT \
+  -Dversion="$version" \
   -Dpackaging=zip \
   -Dclassifier=${BUILD_NUMBER} \
   -DgeneratePom=true \
   -DgeneratePom.description="Git commit: ${GIT_COMMIT}" \
   -Dfile=${ARTIFACT_FOLDER}/NextflowWorkbench_"${version}".zip \
-  -DrepositoryId=repository-SNAPSHOT.campagnelab.org \
-  -Durl=http://repository.campagnelab.org/artifactory/CampagneLab-SNAPSHOT/
+  -DrepositoryId=repository.campagnelab.org \
+  -Durl=http://repository.campagnelab.org/artifactory/CampagneLab/
 
 NOW=$(date +"%m-%d-%Y %T")
 echo "${BUILD_NUMBER} nextflow-workbench ${GIT_COMMIT} ${GIT_BRANCH} ${NOW}" >> ../builds-to-commits.tsv
