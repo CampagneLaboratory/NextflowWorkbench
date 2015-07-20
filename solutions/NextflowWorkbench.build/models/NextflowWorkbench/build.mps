@@ -131,9 +131,9 @@
     </node>
     <node concept="398rNT" id="4oJiZHqUhiI" role="1l3spd">
       <property role="TrG5h" value="mps-richtext.location" />
-      <node concept="55IIr" id="4oJiZHqVHZR" role="398pKh">
-        <node concept="2Ry0Ak" id="4oJiZHqVI0F" role="iGT6I">
-          <property role="2Ry0Am" value="target" />
+      <node concept="55IIr" id="4oJiZHqW0Ad" role="398pKh">
+        <node concept="2Ry0Ak" id="4oJiZHqW0BF" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
         </node>
       </node>
     </node>

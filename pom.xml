@@ -37,8 +37,8 @@
                   <groupId>de.itemis.mps</groupId>
                   <artifactId>mps-sl-all</artifactId>
                   <type>zip</type>
-		  <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}</outputDirectory>
+		          <overWrite>false</overWrite>
+                  <outputDirectory>${project.basedir}/..</outputDirectory>
                   <destFileName>mps-sl-all.zip</destFileName>
                 </artifactItem>
               </artifactItems>
