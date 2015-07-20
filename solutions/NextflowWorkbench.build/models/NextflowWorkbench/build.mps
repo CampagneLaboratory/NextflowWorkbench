@@ -150,14 +150,14 @@
         <ref role="398BVh" node="4oJiZHqUh9O" resolve="mvn_repo" />
         <node concept="2Ry0Ak" id="4oJiZHqUhk9" role="iGT6I">
           <property role="2Ry0Am" value="de" />
-          <node concept="2Ry0Ak" id="4oJiZHqUhkw" role="2Ry0An">
+          <node concept="2Ry0Ak" id="4oJiZHqVovN" role="2Ry0An">
             <property role="2Ry0Am" value="itemis" />
-            <node concept="2Ry0Ak" id="4oJiZHqUhkR" role="2Ry0An">
+            <node concept="2Ry0Ak" id="4oJiZHqVowq" role="2Ry0An">
               <property role="2Ry0Am" value="mps" />
-              <node concept="2Ry0Ak" id="4oJiZHqUhle" role="2Ry0An">
-                <property role="2Ry0Am" value="mps-richtext" />
-                <node concept="2Ry0Ak" id="4oJiZHqUhl_" role="2Ry0An">
-                  <property role="2Ry0Am" value="2.0" />
+              <node concept="2Ry0Ak" id="4oJiZHqVowB" role="2Ry0An">
+                <property role="2Ry0Am" value="mps-sl-all" />
+                <node concept="2Ry0Ak" id="4oJiZHqVzgU" role="2Ry0An">
+                  <property role="2Ry0Am" value="2.0.0" />
                 </node>
               </node>
             </node>

@@ -6,7 +6,7 @@
   <property name="build.layout" location="${build.dir}/artifacts/NextflowWorkbench" />
   <property name="mps_home" location="" />
   <property name="mvn_repo" location="${basedir}/../../../../.m2/repository" />
-  <property name="mps-richtext.location" location="${mvn_repo}/de/itemis/mps/mps-richtext/2.0" />
+  <property name="mps-richtext.location" location="${mvn_repo}/de/itemis/mps/mps-sl-all/2.0.0" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
   <property name="artifacts.mps-sl-all" location="${mps-richtext.location}" />
