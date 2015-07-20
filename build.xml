@@ -5,8 +5,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/NextflowWorkbench" />
   <property name="build.layout" location="${build.dir}/artifacts/NextflowWorkbench" />
   <property name="mps_home" location="" />
-  <property name="mvn_repo" location="${basedir}/../../../../.m2/repository" />
-  <property name="mps-richtext.location" location="${mvn_repo}/de/itemis/mps/mps-sl-all/2.0.0" />
+  <property name="mps-richtext.location" location="${basedir}/target" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
   <property name="artifacts.mps-sl-all" location="${mps-richtext.location}" />
@@ -277,7 +276,6 @@
         <arg value="-Xmx512m" />
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
-      <macro name="mvn_repo" path="${mvn_repo}" />
       <macro name="mps-richtext.location" path="${mps-richtext.location}" />
     </generate>
   </target>

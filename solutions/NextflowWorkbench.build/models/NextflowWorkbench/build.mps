@@ -121,47 +121,11 @@
     <node concept="398rNT" id="4oJiZHqTePq" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
     </node>
-    <node concept="398rNT" id="4oJiZHqUh9O" role="1l3spd">
-      <property role="TrG5h" value="mvn_repo" />
-      <node concept="55IIr" id="4oJiZHqUhce" role="398pKh">
-        <node concept="2Ry0Ak" id="4oJiZHqUhcE" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="4oJiZHqUhd6" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="4oJiZHqUhdi" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="4oJiZHqUhe2" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="4oJiZHqUhf1" role="2Ry0An">
-                  <property role="2Ry0Am" value=".m2" />
-                  <node concept="2Ry0Ak" id="4oJiZHqUhfE" role="2Ry0An">
-                    <property role="2Ry0Am" value="repository" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="398rNT" id="4oJiZHqUhiI" role="1l3spd">
       <property role="TrG5h" value="mps-richtext.location" />
-      <node concept="398BVA" id="4oJiZHqUhjM" role="398pKh">
-        <ref role="398BVh" node="4oJiZHqUh9O" resolve="mvn_repo" />
-        <node concept="2Ry0Ak" id="4oJiZHqUhk9" role="iGT6I">
-          <property role="2Ry0Am" value="de" />
-          <node concept="2Ry0Ak" id="4oJiZHqVovN" role="2Ry0An">
-            <property role="2Ry0Am" value="itemis" />
-            <node concept="2Ry0Ak" id="4oJiZHqVowq" role="2Ry0An">
-              <property role="2Ry0Am" value="mps" />
-              <node concept="2Ry0Ak" id="4oJiZHqVowB" role="2Ry0An">
-                <property role="2Ry0Am" value="mps-sl-all" />
-                <node concept="2Ry0Ak" id="4oJiZHqVzgU" role="2Ry0An">
-                  <property role="2Ry0Am" value="2.0.0" />
-                </node>
-              </node>
-            </node>
-          </node>
+      <node concept="55IIr" id="4oJiZHqVHZR" role="398pKh">
+        <node concept="2Ry0Ak" id="4oJiZHqVI0F" role="iGT6I">
+          <property role="2Ry0Am" value="target" />
         </node>
       </node>
     </node>
