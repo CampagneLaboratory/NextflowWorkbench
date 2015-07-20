@@ -6,6 +6,7 @@
   <property name="build.layout" location="${build.dir}/artifacts/NextflowWorkbench" />
   <property name="mps_home" location="" />
   <property name="mps-richtext.location" location="${basedir}/target" />
+  <property name="workbench_version" value="1.0.0" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
   <property name="artifacts.mps-sl-all" location="${mps-richtext.location}" />
@@ -25,10 +26,10 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/NextflowWorkbench.zip" />
-    <mkdir dir="${build.tmp}/default/NextflowWorkbench.zip/NextflowWorkbench" />
-    <mkdir dir="${build.tmp}/default/NextflowWorkbench.zip/NextflowWorkbench/META-INF" />
-    <echoxml file="${build.tmp}/default/NextflowWorkbench.zip/NextflowWorkbench/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench" />
+    <mkdir dir="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/META-INF" />
+    <echoxml file="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/META-INF/plugin.xml">
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>NextflowWorkbench</id>
         <name>NextflowWorkbench</name>
@@ -42,8 +43,8 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/NextflowWorkbench.zip/NextflowWorkbench/languages" />
-    <mkdir dir="${build.tmp}/default/NextflowWorkbench.zip/NextflowWorkbench/languages/NextflowWorkbench" />
+    <mkdir dir="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/languages" />
+    <mkdir dir="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/languages/NextflowWorkbench" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.workflow.run.jar" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.workflow.run.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.campagnelab.workflow.run.jar/META-INF/module.xml">
@@ -68,7 +69,7 @@
         <sources jar="org.campagnelab.workflow.run-src.jar" descriptor="org.campagnelab.workflow.run.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/NextflowWorkbench.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow.run.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow.run.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.workflow.run" />
       <fileset dir="${basedir}/solutions/org.campagnelab.workflow.run" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/solutions/org.campagnelab.workflow.run/source_gen" includes="**/trace.info, **/exports" />
@@ -77,7 +78,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.workflow.run-models">
       <fileset dir="${basedir}/solutions/org.campagnelab.workflow.run/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/NextflowWorkbench.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow.run-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow.run-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/org.campagnelab.workflow.run/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -107,13 +108,13 @@
         <sources jar="org.campagnelab.workflow-src.jar" descriptor="org.campagnelab.workflow.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/NextflowWorkbench.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.workflow" />
       <fileset dir="${basedir}/languages/org.campagnelab.workflow" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/languages/org.campagnelab.workflow/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.campagnelab.workflow.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/NextflowWorkbench.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.workflow#7457140171610884905" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.workflow-generator-template">
@@ -122,7 +123,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.workflow-languageModels">
       <fileset dir="${basedir}/languages/org.campagnelab.workflow/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/NextflowWorkbench.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/org.campagnelab.workflow/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -135,10 +136,10 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.workflow-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.workflow-languageModels" prefix="module/languageModels" />
     </jar>
-    <zip destfile="${build.layout}/NextflowWorkbench.zip">
-      <fileset dir="${build.tmp}/default/NextflowWorkbench.zip" />
+    <zip destfile="${build.layout}/NextflowWorkbench_${workbench_version}.zip">
+      <fileset dir="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">NextflowWorkbench.build_number=${build_number}${line.separator}NextflowWorkbench.reference_commit=${reference_commit}${line.separator}NextflowWorkbench.reference_branch=${reference_branch}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">NextflowWorkbench.workbench_version=${workbench_version}${line.separator}NextflowWorkbench.build_number=${build_number}${line.separator}NextflowWorkbench.reference_commit=${reference_commit}${line.separator}NextflowWorkbench.reference_branch=${reference_branch}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents" />
