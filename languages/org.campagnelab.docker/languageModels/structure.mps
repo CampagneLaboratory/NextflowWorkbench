@@ -354,5 +354,27 @@
       <ref role="20lvS9" node="3DjWPY6PrI8" resolve="EnvVariableAssignment" />
     </node>
   </node>
+  <node concept="1TIwiD" id="33aW7OxaW4W">
+    <property role="3GE5qa" value="instructions" />
+    <property role="TrG5h" value="ExposeInstruction" />
+    <property role="34LRSv" value="EXPOSE" />
+    <property role="R4oN_" value="Expose ports, declaring that the container will listen to them" />
+    <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+    <node concept="1TJgyj" id="33aW7OxaWlY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ports" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="33aW7OxaW6z" resolve="ExposedPort" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="33aW7OxaW6z">
+    <property role="3GE5qa" value="instructions" />
+    <property role="TrG5h" value="ExposedPort" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="33aW7OxaW6Q" role="1TKVEl">
+      <property role="TrG5h" value="number" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

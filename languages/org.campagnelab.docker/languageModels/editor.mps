@@ -1216,5 +1216,26 @@
       <node concept="l2Vlx" id="33aW7Ox1omn" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="33aW7OxaWm5">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1XX52x" to="6jv6:33aW7OxaW4W" resolve="ExposeInstruction" />
+    <node concept="3EZMnI" id="33aW7OxaWt5" role="2wV5jI">
+      <node concept="3F0ifn" id="33aW7OxaWtc" role="3EZMnx">
+        <property role="3F0ifm" value="EXPOSE" />
+      </node>
+      <node concept="3F2HdR" id="33aW7OxaWti" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:33aW7OxaWlY" />
+        <node concept="l2Vlx" id="33aW7OxaWtk" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="33aW7OxaWt8" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="33aW7Oxfbvn">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1XX52x" to="6jv6:33aW7OxaW6z" resolve="ExposedPort" />
+    <node concept="3F0A7n" id="33aW7OxfbvP" role="2wV5jI">
+      <ref role="1NtTu8" to="6jv6:33aW7OxaW6Q" resolve="number" />
+    </node>
+  </node>
 </model>
 

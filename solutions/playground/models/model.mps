@@ -217,6 +217,12 @@
       <concept id="3515886879331681162" name="org.campagnelab.docker.structure.LabelInstruction" flags="ng" index="hNRfR">
         <child id="3515886879331681241" name="labels" index="hNRe$" />
       </concept>
+      <concept id="3515886879334187324" name="org.campagnelab.docker.structure.ExposeInstruction" flags="ng" index="hSj51">
+        <child id="3515886879334188414" name="ports" index="hSjk3" />
+      </concept>
+      <concept id="3515886879334187427" name="org.campagnelab.docker.structure.ExposedPort" flags="ng" index="hSj7u">
+        <property id="3515886879334187446" name="number" index="hSj7b" />
+      </concept>
       <concept id="8987412447080958668" name="org.campagnelab.docker.structure.DockerImage" flags="ng" index="2E_JVc">
         <property id="8987412447080959633" name="id" index="2E_JEh" />
         <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
@@ -7460,6 +7466,22 @@
       <node concept="2Wx$zn" id="33aW7Ox7gOR" role="hNRe$">
         <property role="2LBJJH" value="a" />
         <property role="2LBJJG" value="3" />
+      </node>
+    </node>
+    <node concept="hSj51" id="33aW7Oxfb3Z" role="VuOVn">
+      <node concept="hSj7u" id="33aW7Oxfb40" role="hSjk3">
+        <property role="hSj7b" value="3434" />
+      </node>
+      <node concept="hSj7u" id="33aW7Oxfb41" role="hSjk3">
+        <property role="hSj7b" value="222" />
+      </node>
+    </node>
+    <node concept="hSj51" id="33aW7OxgfRT" role="VuOVn">
+      <node concept="hSj7u" id="33aW7OxgfRU" role="hSjk3">
+        <property role="hSj7b" value="3434" />
+      </node>
+      <node concept="hSj7u" id="33aW7OxgfRV" role="hSjk3">
+        <property role="hSj7b" value="222" />
       </node>
     </node>
   </node>

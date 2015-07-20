@@ -30,6 +30,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -453,6 +456,51 @@
               <node concept="117lpO" id="33aW7Ox3dBy" role="2Oq$k0" />
               <node concept="3Tsc0h" id="33aW7Ox3dKn" role="2OqNvi">
                 <ref role="3TtcxE" to="6jv6:33aW7Ox1ofp" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="33aW7OxaWto">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="WuzLi" to="6jv6:33aW7OxaW4W" resolve="ExposeInstruction" />
+    <node concept="11bSqf" id="33aW7OxaWtp" role="11c4hB">
+      <node concept="3clFbS" id="33aW7OxaWtq" role="2VODD2">
+        <node concept="lc7rE" id="33aW7OxaWwi" role="3cqZAp">
+          <node concept="la8eA" id="33aW7OxaWwv" role="lcghm">
+            <property role="lacIc" value="EXPOSE " />
+          </node>
+          <node concept="l9S2W" id="33aW7OxaWwA" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value=" " />
+            <node concept="2OqwBi" id="33aW7OxaWyr" role="lbANJ">
+              <node concept="117lpO" id="33aW7OxaWwK" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="33aW7OxaWFE" role="2OqNvi">
+                <ref role="3TtcxE" to="6jv6:33aW7OxaWlY" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="33aW7OxaWFS">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="WuzLi" to="6jv6:33aW7OxaW6z" resolve="ExposedPort" />
+    <node concept="11bSqf" id="33aW7OxaWFT" role="11c4hB">
+      <node concept="3clFbS" id="33aW7OxaWFU" role="2VODD2">
+        <node concept="lc7rE" id="33aW7OxaWGm" role="3cqZAp">
+          <node concept="l9hG8" id="33aW7OxaWGt" role="lcghm">
+            <node concept="2YIFZM" id="33aW7OxeTXl" role="lb14g">
+              <ref role="37wK5l" to="e2lb:~Integer.toString(int):java.lang.String" resolve="toString" />
+              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+              <node concept="2OqwBi" id="33aW7OxaWIf" role="37wK5m">
+                <node concept="117lpO" id="33aW7OxaWGA" role="2Oq$k0" />
+                <node concept="3TrcHB" id="33aW7OxaWQj" role="2OqNvi">
+                  <ref role="3TsBF5" to="6jv6:33aW7OxaW6Q" resolve="number" />
+                </node>
               </node>
             </node>
           </node>
