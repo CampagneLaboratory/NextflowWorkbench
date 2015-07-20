@@ -237,25 +237,24 @@
     <ref role="WuzLi" to="6jv6:1D6dZ$xgNkx" resolve="AddInstruction" />
     <node concept="11bSqf" id="5BbChSjL9Ej" role="11c4hB">
       <node concept="3clFbS" id="5BbChSjL9Ek" role="2VODD2">
-        <node concept="lc7rE" id="5BbChSjL9El" role="3cqZAp">
-          <node concept="la8eA" id="5BbChSjL9Em" role="lcghm">
+        <node concept="lc7rE" id="BMuHr2T9Sa" role="3cqZAp">
+          <node concept="la8eA" id="BMuHr2T9Sb" role="lcghm">
             <property role="lacIc" value="ADD " />
           </node>
-          <node concept="l9hG8" id="5BbChSjL9En" role="lcghm">
-            <node concept="2OqwBi" id="5BbChSjL9Eo" role="lb14g">
-              <node concept="117lpO" id="5BbChSjL9Ep" role="2Oq$k0" />
-              <node concept="3TrcHB" id="5BbChSjL9SA" role="2OqNvi">
-                <ref role="3TsBF5" to="6jv6:1D6dZ$xgNvn" resolve="source" />
+          <node concept="l9S2W" id="BMuHr2T9Sc" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value=" " />
+            <node concept="2OqwBi" id="BMuHr2T9Sd" role="lbANJ">
+              <node concept="117lpO" id="BMuHr2T9Se" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="BMuHr2T9Sf" role="2OqNvi">
+                <ref role="3TtcxE" to="6jv6:BMuHr2RziJ" />
               </node>
             </node>
           </node>
-          <node concept="la8eA" id="5BbChSjL9Er" role="lcghm">
-            <property role="lacIc" value=" " />
-          </node>
-          <node concept="l9hG8" id="5BbChSjL9Es" role="lcghm">
-            <node concept="2OqwBi" id="5BbChSjL9Et" role="lb14g">
-              <node concept="117lpO" id="5BbChSjL9Eu" role="2Oq$k0" />
-              <node concept="3TrcHB" id="5BbChSjLa55" role="2OqNvi">
+          <node concept="l9hG8" id="BMuHr2T9Sg" role="lcghm">
+            <node concept="2OqwBi" id="BMuHr2T9Sh" role="lb14g">
+              <node concept="117lpO" id="BMuHr2T9Si" role="2Oq$k0" />
+              <node concept="3TrcHB" id="BMuHr2T9Sj" role="2OqNvi">
                 <ref role="3TsBF5" to="6jv6:1D6dZ$xgNvp" resolve="destination" />
               </node>
             </node>
@@ -564,6 +563,55 @@
               <node concept="117lpO" id="BMuHr2BJx0" role="2Oq$k0" />
               <node concept="3TrcHB" id="BMuHr2BJPA" role="2OqNvi">
                 <ref role="3TsBF5" to="6jv6:BMuHr2ADDB" resolve="username" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="BMuHr2Rz5k">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="WuzLi" to="6jv6:BMuHr2Rz41" resolve="SourceFile" />
+    <node concept="11bSqf" id="BMuHr2Rz5l" role="11c4hB">
+      <node concept="3clFbS" id="BMuHr2Rz5m" role="2VODD2">
+        <node concept="lc7rE" id="BMuHr2Rz8D" role="3cqZAp">
+          <node concept="l9hG8" id="BMuHr2Rz8K" role="lcghm">
+            <node concept="2OqwBi" id="BMuHr2Rzat" role="lb14g">
+              <node concept="117lpO" id="BMuHr2Rz8T" role="2Oq$k0" />
+              <node concept="3TrcHB" id="BMuHr2Rzix" role="2OqNvi">
+                <ref role="3TsBF5" to="6jv6:BMuHr2Rz5i" resolve="path" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="BMuHr2T9bK">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="WuzLi" to="6jv6:BMuHr2Qftf" resolve="CopyInstruction" />
+    <node concept="11bSqf" id="BMuHr2T9bL" role="11c4hB">
+      <node concept="3clFbS" id="BMuHr2T9bM" role="2VODD2">
+        <node concept="lc7rE" id="BMuHr2T9bZ" role="3cqZAp">
+          <node concept="la8eA" id="BMuHr2T9c6" role="lcghm">
+            <property role="lacIc" value="COPY " />
+          </node>
+          <node concept="l9S2W" id="BMuHr2T9ci" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value=" " />
+            <node concept="2OqwBi" id="BMuHr2T9et" role="lbANJ">
+              <node concept="117lpO" id="BMuHr2T9cs" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="BMuHr2T9pr" role="2OqNvi">
+                <ref role="3TtcxE" to="6jv6:BMuHr2RziJ" />
+              </node>
+            </node>
+          </node>
+          <node concept="l9hG8" id="BMuHr2T9pF" role="lcghm">
+            <node concept="2OqwBi" id="BMuHr2T9sd" role="lb14g">
+              <node concept="117lpO" id="BMuHr2T9pT" role="2Oq$k0" />
+              <node concept="3TrcHB" id="BMuHr2T9Mk" role="2OqNvi">
+                <ref role="3TsBF5" to="6jv6:1D6dZ$xgNvp" resolve="destination" />
               </node>
             </node>
           </node>

@@ -243,6 +243,10 @@
       <concept id="4077712437829700149" name="org.campagnelab.docker.structure.EnvInstruction" flags="ng" index="2LBJJI">
         <child id="4202970468876361856" name="assignments" index="2WxHfv" />
       </concept>
+      <concept id="1893262236500309281" name="org.campagnelab.docker.structure.AddInstruction" flags="ng" index="V1gbo">
+        <property id="1893262236500309977" name="destination" index="V1g0w" />
+        <child id="716770353516262575" name="sources" index="3bb4TT" />
+      </concept>
       <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
         <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
       </concept>
@@ -272,6 +276,10 @@
       </concept>
       <concept id="4202970468879724310" name="org.campagnelab.docker.structure.CmdInstruction" flags="ng" index="2XmTL9">
         <child id="3515886879324529689" name="elements" index="gkDh$" />
+      </concept>
+      <concept id="716770353515919183" name="org.campagnelab.docker.structure.CopyInstruction" flags="ng" index="3baCQp" />
+      <concept id="716770353516261633" name="org.campagnelab.docker.structure.SourceFile" flags="ng" index="3bb4Jn">
+        <property id="716770353516261714" name="path" index="3bb4I4" />
       </concept>
       <concept id="716770353512671076" name="org.campagnelab.docker.structure.ImageRef" flags="ng" index="3blhQM">
         <reference id="716770353512671080" name="image" index="3blhQY" />
@@ -7522,6 +7530,24 @@
         </node>
       </node>
     </node>
+    <node concept="V1gbo" id="BMuHr325dV" role="VuOVn">
+      <property role="V1g0w" value="/mydir/" />
+      <node concept="3bb4Jn" id="BMuHr325dW" role="3bb4TT">
+        <property role="3bb4I4" value="hom?.txt" />
+      </node>
+    </node>
+    <node concept="3baCQp" id="BMuHr325F7" role="VuOVn">
+      <property role="V1g0w" value="dist/" />
+      <node concept="3bb4Jn" id="BMuHr325F8" role="3bb4TT">
+        <property role="3bb4I4" value="a" />
+      </node>
+      <node concept="3bb4Jn" id="BMuHr325F9" role="3bb4TT">
+        <property role="3bb4I4" value="b" />
+      </node>
+      <node concept="3bb4Jn" id="BMuHr325Fa" role="3bb4TT">
+        <property role="3bb4I4" value="c" />
+      </node>
+    </node>
   </node>
   <node concept="VuPG2" id="BMuHr2HU09">
     <property role="TrG5h" value="SimpleImage" />
@@ -7543,6 +7569,18 @@
         <node concept="19SUe$" id="BMuHr2HU0M" role="19SJt6">
           <property role="19SUeA" value="apt-get update" />
         </node>
+      </node>
+    </node>
+    <node concept="V1gbo" id="BMuHr2XMw6" role="VuOVn">
+      <property role="V1g0w" value="/mydir/" />
+    </node>
+    <node concept="V1gbo" id="BMuHr2ZJ6c" role="VuOVn">
+      <property role="V1g0w" value="/mydir/" />
+      <node concept="3bb4Jn" id="BMuHr2ZJ6d" role="3bb4TT">
+        <property role="3bb4I4" value="hom?.txt" />
+      </node>
+      <node concept="3bb4Jn" id="BMuHr2ZJ6e" role="3bb4TT">
+        <property role="3bb4I4" value="/mydir/" />
       </node>
     </node>
     <node concept="3blhQM" id="BMuHr2Q4EU" role="3blhQR">

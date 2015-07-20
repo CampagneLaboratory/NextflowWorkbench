@@ -366,9 +366,9 @@
       <node concept="3F0ifn" id="1D6dZ$xgNvH" role="3EZMnx">
         <property role="3F0ifm" value="ADD" />
       </node>
-      <node concept="3F0A7n" id="1D6dZ$xgNvN" role="3EZMnx">
-        <property role="1$x2rV" value="&lt;source filename?&gt;" />
-        <ref role="1NtTu8" to="6jv6:1D6dZ$xgNvn" resolve="source" />
+      <node concept="3F2HdR" id="BMuHr2U$c_" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:BMuHr2RziJ" />
+        <node concept="l2Vlx" id="BMuHr2U$cB" role="2czzBx" />
       </node>
       <node concept="3F0A7n" id="1D6dZ$xgNvV" role="3EZMnx">
         <property role="1$x2rV" value="&lt;container filename?&gt;" />
@@ -1328,6 +1328,16 @@
         </node>
       </node>
       <node concept="l2Vlx" id="BMuHr2HUb3" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="BMuHr30TE4">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1XX52x" to="6jv6:BMuHr2Rz41" resolve="SourceFile" />
+    <node concept="3EZMnI" id="BMuHr30TE9" role="2wV5jI">
+      <node concept="3F0A7n" id="BMuHr30TEg" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:BMuHr2Rz5i" resolve="path" />
+      </node>
+      <node concept="l2Vlx" id="BMuHr30TEc" role="2iSdaV" />
     </node>
   </node>
 </model>
