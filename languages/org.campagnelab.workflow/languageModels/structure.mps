@@ -132,6 +132,10 @@
     <node concept="PrWs8" id="4KI7BXrs$YH" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="1TJgyi" id="PffOQSWT20" role="1TKVEl">
+      <property role="TrG5h" value="description" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5D7AjvYaj9M">
     <property role="TrG5h" value="ProcessRef" />
@@ -203,7 +207,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="connectedTo" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3m26PihhBwN" resolve="OutChannels" />
+      <ref role="20lvS9" node="3m26PihhBwN" resolve="OutChannelContainer" />
     </node>
     <node concept="1TJgyj" id="3m9W35nR46P" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -279,7 +283,7 @@
     <property role="TrG5h" value="OutputChannel" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="3m26PihhBwN" resolve="OutChannels" />
+    <ref role="1TJDcQ" node="3m26PihhBwN" resolve="OutChannelContainer" />
   </node>
   <node concept="1TIwiD" id="dxSprUGgfG">
     <property role="3GE5qa" value="Script" />
@@ -486,55 +490,6 @@
     <property role="R4oN_" value="collects all the items emitted by a list object, sorts them, and then emits the list as a single item" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
-  <node concept="1TIwiD" id="1psOhWn_9uY">
-    <property role="TrG5h" value="ValueFromWorkflow" />
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1psOhWn_9uZ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1psOhWn_9xo">
-    <property role="TrG5h" value="ValueFromWorkflowRef" />
-    <property role="34LRSv" value="@" />
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1psOhWn_9xv" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1psOhWn_9uY" resolve="ValueFromWorkflow" />
-    </node>
-    <node concept="PrWs8" id="1psOhWn_9xy" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1psOhWn_9AH">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <property role="TrG5h" value="WorkflowBoolean" />
-    <property role="34LRSv" value="boolean" />
-    <ref role="1TJDcQ" node="1psOhWn_9uY" resolve="ValueFromWorkflow" />
-  </node>
-  <node concept="1TIwiD" id="1psOhWn_9AM">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <property role="TrG5h" value="WorkflowString" />
-    <property role="34LRSv" value="string" />
-    <ref role="1TJDcQ" node="1psOhWn_9uY" resolve="ValueFromWorkflow" />
-  </node>
-  <node concept="1TIwiD" id="1psOhWn_9AR">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <property role="TrG5h" value="WorkflowInteger" />
-    <property role="34LRSv" value="integer" />
-    <ref role="1TJDcQ" node="1psOhWn_9uY" resolve="ValueFromWorkflow" />
-  </node>
-  <node concept="1TIwiD" id="1psOhWofHGP">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <property role="TrG5h" value="WorkflowList" />
-    <property role="34LRSv" value="list" />
-    <ref role="1TJDcQ" node="1psOhWn_9uY" resolve="ValueFromWorkflow" />
-  </node>
   <node concept="1TIwiD" id="49c3W7NLHXs">
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -695,7 +650,7 @@
   <node concept="1TIwiD" id="5AoFZCLt6Ly">
     <property role="TrG5h" value="GlobalChannel" />
     <property role="34LRSv" value="global channel" />
-    <ref role="1TJDcQ" node="3m26PihhBwN" resolve="OutChannels" />
+    <ref role="1TJDcQ" node="3m26PihhBwN" resolve="OutChannelContainer" />
     <node concept="1TJgyj" id="3m26PihhBJU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
@@ -722,7 +677,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3m26PihhBwN">
-    <property role="TrG5h" value="OutChannels" />
+    <property role="TrG5h" value="OutChannelContainer" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />

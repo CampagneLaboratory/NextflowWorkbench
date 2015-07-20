@@ -12,59 +12,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,40,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
-    </file>
-  </root>
-  <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/1611392698174077817">
-    <file name="ValueFromWorkflowRef_Constraints.java">
-      <node id="1611392698174077817" at="27,45,28,98" concept="9" />
-      <node id="1611392698174077817" at="31,98,32,135" concept="6" />
-      <node id="1611392698174077817" at="35,44,36,20" concept="7" />
-      <node id="1611392698174077817" at="43,44,44,24" concept="7" />
-      <node id="1611392698174083770" at="47,128,48,62" concept="7" />
-      <node id="1611392698174077817" at="51,63,52,58" concept="7" />
-      <node id="1611392698174077817" at="55,122,56,479" concept="0" />
-      <node id="1611392698174079320" at="55,122,56,479" concept="7" />
-      <node id="1611392698174077817" at="60,7,61,22" concept="7" />
-      <node id="1611392698174077817" at="63,0,64,0" concept="8" trace="breakingNode_f3jydk_a0a2a0a0a1a0b0a1a1" />
-      <node id="1611392698174077817" at="27,0,30,0" concept="1" trace="ValueFromWorkflowRef_Constraints#()V" />
-      <node id="1611392698174077817" at="34,0,38,0" concept="5" trace="hasOwnScopeProvider#()Z" />
-      <node id="1611392698174077817" at="42,0,46,0" concept="5" trace="hasPresentation#()Z" />
-      <node id="1611392698174077817" at="46,0,50,0" concept="5" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
-      <node id="1611392698174077817" at="50,0,54,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
-      <node id="1611392698174077817" at="54,0,58,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
-      <node id="1611392698174077817" at="40,56,58,10" concept="7" />
-      <node id="1611392698174077817" at="38,0,60,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="1611392698174077817" at="32,135,60,7" concept="2" />
-      <node id="1611392698174077817" at="30,0,63,0" concept="5" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
-      <scope id="1611392698174077817" at="27,45,28,98" />
-      <scope id="1611392698174077817" at="35,44,36,20" />
-      <scope id="1611392698174077817" at="43,44,44,24" />
-      <scope id="1611392698174083316" at="47,128,48,62" />
-      <scope id="1611392698174077817" at="51,63,52,58" />
-      <scope id="1611392698174077817" at="55,122,56,479" />
-      <scope id="1611392698174079292" at="55,122,56,479" />
-      <scope id="1611392698174077817" at="27,0,30,0" />
-      <scope id="1611392698174077817" at="34,0,38,0" />
-      <scope id="1611392698174077817" at="42,0,46,0" />
-      <scope id="1611392698174077817" at="46,0,50,0">
-        <var name="_context" id="1611392698174077817" />
-        <var name="operationContext" id="1611392698174077817" />
-      </scope>
-      <scope id="1611392698174077817" at="50,0,54,0" />
-      <scope id="1611392698174077817" at="54,0,58,0">
-        <var name="_context" id="1611392698174077817" />
-        <var name="operationContext" id="1611392698174077817" />
-      </scope>
-      <scope id="1611392698174077817" at="40,56,58,10" />
-      <scope id="1611392698174077817" at="38,0,60,0" />
-      <scope id="1611392698174077817" at="31,98,61,22">
-        <var name="references" id="1611392698174077817" />
-      </scope>
-      <scope id="1611392698174077817" at="30,0,63,0" />
-      <unit id="1611392698174077817" at="41,19,58,9" name="org.campagnelab.workflow.constraints.ValueFromWorkflowRef_Constraints$2" />
-      <unit id="1611392698174077817" at="33,128,60,5" name="org.campagnelab.workflow.constraints.ValueFromWorkflowRef_Constraints$1" />
-      <unit id="1611392698174077817" at="26,0,65,0" name="org.campagnelab.workflow.constraints.ValueFromWorkflowRef_Constraints" />
+      <unit at="10,0,35,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/8074343669092053908">
