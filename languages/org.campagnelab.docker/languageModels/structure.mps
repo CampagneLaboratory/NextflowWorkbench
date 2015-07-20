@@ -91,6 +91,7 @@
     <property role="TrG5h" value="Dockerfile" />
     <property role="R4oN_" value="A recipe to construct a docker container" />
     <property role="19KtqR" value="true" />
+    <property role="MwhBj" value="${module}/icons/paintbrush-3.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="36oLgaWGnQ0" role="1TKVEl">
       <property role="TrG5h" value="username" />
