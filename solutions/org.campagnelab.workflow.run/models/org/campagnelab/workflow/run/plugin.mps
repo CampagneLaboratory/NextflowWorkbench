@@ -50,9 +50,9 @@
     <import index="gs1f" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.execution.filters(MPS.IDEA/com.intellij.execution.filters@java_stub)" />
     <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
     <import index="b2mh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" />
-    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
+    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -2759,7 +2759,59 @@
             <property role="3SKdUp" value="set default values here. tuples do not appear to have a constructor.." />
           </node>
         </node>
-        <node concept="3clFbH" id="3R5AwWRWhYD" role="3cqZAp" />
+        <node concept="3cpWs8" id="274AKIgYEsE" role="3cqZAp">
+          <node concept="3cpWsn" id="274AKIgYEsH" role="3cpWs9">
+            <property role="TrG5h" value="env" />
+            <node concept="17QB3L" id="274AKIgYEsC" role="1tU5fm" />
+            <node concept="2OqwBi" id="274AKIgXrP1" role="33vP2m">
+              <node concept="2YIFZM" id="274AKIgXrlj" role="2Oq$k0">
+                <ref role="37wK5l" to="e2lb:~System.getenv():java.util.Map" resolve="getenv" />
+                <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+              </node>
+              <node concept="liA8E" id="274AKIgXvhL" role="2OqNvi">
+                <ref role="37wK5l" to="k7g3:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <node concept="Xl_RD" id="274AKIgXvxA" role="37wK5m">
+                  <property role="Xl_RC" value="NEXTFLOW_PATH" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3R5AwWRWiah" role="3cqZAp">
+          <node concept="3clFbS" id="3R5AwWRWiai" role="3clFbx">
+            <node concept="3clFbF" id="3R5AwWRXFZ1" role="3cqZAp">
+              <node concept="37vLTI" id="3R5AwWRXI_P" role="3clFbG">
+                <node concept="37vLTw" id="3R5AwWRXIAw" role="37vLTx">
+                  <ref role="3cqZAo" node="274AKIgYEsH" resolve="env" />
+                </node>
+                <node concept="2OqwBi" id="3R5AwWRXG6b" role="37vLTJ">
+                  <node concept="Xjq3P" id="3R5AwWRXFYS" role="2Oq$k0" />
+                  <node concept="2sxana" id="3R5AwWRXHEA" role="2OqNvi">
+                    <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="3R5AwWRXPFQ" role="3clFbw">
+            <node concept="3clFbC" id="3R5AwWRXROV" role="3uHU7B">
+              <node concept="10Nm6u" id="3R5AwWRXRQG" role="3uHU7w" />
+              <node concept="2OqwBi" id="3R5AwWRXPWf" role="3uHU7B">
+                <node concept="Xjq3P" id="3R5AwWRXPMB" role="2Oq$k0" />
+                <node concept="2sxana" id="3R5AwWRXQOu" role="2OqNvi">
+                  <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="3R5AwWRWia$" role="3uHU7w">
+              <node concept="10Nm6u" id="3R5AwWRWia_" role="3uHU7w" />
+              <node concept="37vLTw" id="3R5AwWRWiaA" role="3uHU7B">
+                <ref role="3cqZAo" node="274AKIgYEsH" resolve="env" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4oJiZHqTiMZ" role="3cqZAp" />
         <node concept="3cpWs8" id="274AKIgYJs9" role="3cqZAp">
           <node concept="3cpWsn" id="274AKIgYJsc" role="3cpWs9">
             <property role="TrG5h" value="pathVar" />
@@ -2808,58 +2860,6 @@
                 <node concept="2sxana" id="3R5AwWRXS4r" role="2OqNvi">
                   <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="274AKIgYEsE" role="3cqZAp">
-          <node concept="3cpWsn" id="274AKIgYEsH" role="3cpWs9">
-            <property role="TrG5h" value="env" />
-            <node concept="17QB3L" id="274AKIgYEsC" role="1tU5fm" />
-            <node concept="2OqwBi" id="274AKIgXrP1" role="33vP2m">
-              <node concept="2YIFZM" id="274AKIgXrlj" role="2Oq$k0">
-                <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
-                <ref role="37wK5l" to="e2lb:~System.getenv():java.util.Map" resolve="getenv" />
-              </node>
-              <node concept="liA8E" id="274AKIgXvhL" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
-                <node concept="Xl_RD" id="274AKIgXvxA" role="37wK5m">
-                  <property role="Xl_RC" value="NEXTFLOW_HOME" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="3R5AwWRWiah" role="3cqZAp">
-          <node concept="3clFbS" id="3R5AwWRWiai" role="3clFbx">
-            <node concept="3clFbF" id="3R5AwWRXFZ1" role="3cqZAp">
-              <node concept="37vLTI" id="3R5AwWRXI_P" role="3clFbG">
-                <node concept="37vLTw" id="3R5AwWRXIAw" role="37vLTx">
-                  <ref role="3cqZAo" node="274AKIgYEsH" resolve="env" />
-                </node>
-                <node concept="2OqwBi" id="3R5AwWRXG6b" role="37vLTJ">
-                  <node concept="Xjq3P" id="3R5AwWRXFYS" role="2Oq$k0" />
-                  <node concept="2sxana" id="3R5AwWRXHEA" role="2OqNvi">
-                    <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1Wc70l" id="3R5AwWRXPFQ" role="3clFbw">
-            <node concept="3clFbC" id="3R5AwWRXROV" role="3uHU7B">
-              <node concept="10Nm6u" id="3R5AwWRXRQG" role="3uHU7w" />
-              <node concept="2OqwBi" id="3R5AwWRXPWf" role="3uHU7B">
-                <node concept="Xjq3P" id="3R5AwWRXPMB" role="2Oq$k0" />
-                <node concept="2sxana" id="3R5AwWRXQOu" role="2OqNvi">
-                  <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
-                </node>
-              </node>
-            </node>
-            <node concept="3y3z36" id="3R5AwWRWia$" role="3uHU7w">
-              <node concept="10Nm6u" id="3R5AwWRWia_" role="3uHU7w" />
-              <node concept="37vLTw" id="3R5AwWRWiaA" role="3uHU7B">
-                <ref role="3cqZAo" node="274AKIgYEsH" resolve="env" />
               </node>
             </node>
           </node>
