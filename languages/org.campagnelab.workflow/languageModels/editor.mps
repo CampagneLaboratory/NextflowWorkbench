@@ -1594,5 +1594,57 @@
       <node concept="l2Vlx" id="5ok1XDmh4Pb" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="53DXNxI64zQ">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="iowz:53DXNxI64zK" resolve="TupleList" />
+    <node concept="3EZMnI" id="53DXNxI654G" role="2wV5jI">
+      <node concept="3F0ifn" id="53DXNxI654N" role="3EZMnx">
+        <property role="3F0ifm" value="tuple-list" />
+      </node>
+      <node concept="3F2HdR" id="53DXNxI65rz" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:53DXNxI65rt" />
+        <node concept="l2Vlx" id="53DXNxI65r_" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="53DXNxI654J" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="53DXNxI64Gd">
+    <property role="3GE5qa" value="channelTypes" />
+    <ref role="1XX52x" to="iowz:53DXNxI640U" resolve="TupleListChannel" />
+    <node concept="3F1sOY" id="53DXNxI654D" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:53DXNxI64xS" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2W8f126714_">
+    <property role="3GE5qa" value="setChannelValues" />
+    <ref role="1XX52x" to="iowz:2W8f1266Zma" resolve="GlobalTupleListExpression" />
+    <node concept="3EZMnI" id="2W8f12674Fn" role="2wV5jI">
+      <node concept="3F2HdR" id="2W8f12674F$" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:2W8f126714u" />
+        <node concept="l2Vlx" id="2W8f12674FA" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="2W8f12674Fq" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2W8f126b9JL">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
+    <ref role="1XX52x" to="iowz:2W8f126b9Ff" resolve="GlobalTupleListLiteral" />
+    <node concept="3EZMnI" id="2W8f126b9JN" role="2wV5jI">
+      <node concept="3F0ifn" id="2W8f126b9JU" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F2HdR" id="2W8f126b9K0" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:2W8f126b9JE" />
+        <node concept="l2Vlx" id="2W8f126b9K2" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="2W8f126b9Kb" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="l2Vlx" id="2W8f126b9JQ" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

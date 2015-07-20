@@ -209,12 +209,24 @@
       <concept id="5930160417407206502" name="org.campagnelab.workflow.structure.ConditionalExpressionText" flags="ng" index="2AVUOs">
         <child id="5930160417407206503" name="text" index="2AVUOt" />
       </concept>
+      <concept id="3389024761263420810" name="org.campagnelab.workflow.structure.GlobalTupleListExpression" flags="ng" index="2D4WAq">
+        <child id="3389024761263427870" name="list" index="2D52Oe" />
+      </concept>
+      <concept id="3389024761264511695" name="org.campagnelab.workflow.structure.GlobalTupleListLiteral" flags="ng" index="2D9arv">
+        <child id="3389024761264511978" name="list" index="2D9avU" />
+      </concept>
       <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="6992028756512830254" name="org.campagnelab.workflow.structure.QueueElement" flags="ng" index="2MiXSP">
         <property id="6992028756512830255" name="queue" index="2MiXSO" />
       </concept>
       <concept id="1131453450772026527" name="org.campagnelab.workflow.structure.BaseLanguageAdapter" flags="ng" index="UAUTO">
         <child id="5930160417400088880" name="statements" index="2AuG1a" />
+      </concept>
+      <concept id="5830463014345130042" name="org.campagnelab.workflow.structure.TupleListChannel" flags="ng" index="YWrs2">
+        <child id="5830463014345132152" name="list" index="YWrX0" />
+      </concept>
+      <concept id="5830463014345132272" name="org.campagnelab.workflow.structure.TupleList" flags="ng" index="YWrZ8">
+        <child id="5830463014345135837" name="values" index="YWq7_" />
       </concept>
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
@@ -423,6 +435,16 @@
     <node concept="1uY1Ls" id="6t646FqPoxL" role="2ulM7n">
       <node concept="16pRw0" id="6t646FqPoxM" role="1uY1Lt">
         <property role="TrG5h" value="'*.txt'" />
+      </node>
+    </node>
+    <node concept="YWrs2" id="53DXNxIeboj" role="2ulM7n">
+      <node concept="YWrZ8" id="53DXNxIebol" role="YWrX0">
+        <node concept="1utKN4" id="53DXNxIeboM" role="YWq7_">
+          <property role="TrG5h" value="testInt" />
+        </node>
+        <node concept="16pbKc" id="53DXNxIebpu" role="YWq7_">
+          <property role="TrG5h" value="testString" />
+        </node>
       </node>
     </node>
     <node concept="3Y$Zt1" id="4KI7BXrwLPT" role="2ulM7a">
@@ -872,8 +894,13 @@
     </node>
     <node concept="2$rEH5" id="5ok1XDlQAfP" role="2$rEHq">
       <ref role="2$rEH4" node="6t646FqPoxG" resolve="combine" />
-      <node concept="1uYdA0" id="5ok1XDlQAg5" role="1uLvPH">
+      <node concept="1uYdA0" id="2W8f125KgjU" role="1uLvPH">
         <ref role="1uK_4X" node="5ok1XDlQAgk" resolve="file2" />
+      </node>
+      <node concept="1uYdA0" id="2W8f125Kp8O" role="1uLvPH">
+        <ref role="1uK_4X" node="2W8f126jouu" resolve="tupleList" />
+        <node concept="1yaYav" id="2W8f1273eRi" role="1ylr64" />
+        <node concept="1yaZXp" id="2W8f1273eVY" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="5ok1XDlQAhs" role="1uLvPA">
         <property role="TrG5h" value="intOut" />
@@ -1156,6 +1183,68 @@
           <node concept="1OMc$" id="53DXNxHPISy" role="1OM9Z">
             <node concept="2xgF7X" id="53DXNxHPIS$" role="1OMcz">
               <property role="2VDI9B" value="path" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="2W8f125Kpga" role="2$L6iY">
+      <property role="TrG5h" value="tupleToBeList" />
+      <node concept="16Aex" id="2W8f125Kpo3" role="2$L62I">
+        <node concept="1OM9w" id="2W8f125Kpo5" role="16Aew">
+          <node concept="1OMb9" id="2W8f125KpoB" role="1OM9Z">
+            <node concept="2$RDDD" id="2W8f125KpoD" role="1OMb8">
+              <property role="2$RDDE" value="3" />
+            </node>
+          </node>
+          <node concept="1OMdp" id="2W8f125Kpp0" role="1OM9Z">
+            <node concept="2$RDGe" id="2W8f125Kpp2" role="1OMem">
+              <property role="2$RDGf" value="str" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="2W8f126jouu" role="2$L6iY">
+      <property role="TrG5h" value="tupleList" />
+      <node concept="2D4WAq" id="2W8f126joyj" role="2$L62I">
+        <node concept="2D9arv" id="2W8f126nBNd" role="2D52Oe">
+          <node concept="1OM9w" id="2W8f126nBNe" role="2D9avU">
+            <node concept="1OMb9" id="2W8f126nBNq" role="1OM9Z">
+              <node concept="2$RDDD" id="2W8f126nBNs" role="1OMb8">
+                <property role="2$RDDE" value="3" />
+              </node>
+            </node>
+            <node concept="1OMdp" id="2W8f126nBNN" role="1OM9Z">
+              <node concept="2$RDGe" id="2W8f126nBNP" role="1OMem">
+                <property role="2$RDGf" value="str" />
+              </node>
+            </node>
+          </node>
+          <node concept="1OM9w" id="2W8f126nBOa" role="2D9avU">
+            <node concept="1OMb9" id="2W8f126CpU1" role="1OM9Z">
+              <node concept="2$RDDD" id="2W8f126CpU2" role="1OMb8">
+                <property role="2$RDDE" value="4" />
+              </node>
+            </node>
+            <node concept="1OMdp" id="2W8f126YWIs" role="1OM9Z">
+              <node concept="2$RDGe" id="2W8f126YWIu" role="1OMem">
+                <property role="2$RDGf" value="str2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2D9arv" id="2W8f126rJds" role="2D52Oe">
+          <node concept="1OM9w" id="2W8f126rJdt" role="2D9avU">
+            <node concept="1OMb9" id="2W8f126CpV1" role="1OM9Z">
+              <node concept="2$RDDD" id="2W8f126CpV2" role="1OMb8">
+                <property role="2$RDDE" value="5" />
+              </node>
+            </node>
+            <node concept="1OMdp" id="2W8f1273f1d" role="1OM9Z">
+              <node concept="2$RDGe" id="2W8f1273f1f" role="1OMem">
+                <property role="2$RDGf" value="str3" />
+              </node>
             </node>
           </node>
         </node>

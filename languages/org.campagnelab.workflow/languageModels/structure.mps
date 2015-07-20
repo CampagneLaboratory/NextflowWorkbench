@@ -1120,5 +1120,54 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="GlobalTupleContainer" />
   </node>
+  <node concept="1TIwiD" id="53DXNxI640U">
+    <property role="3GE5qa" value="channelTypes" />
+    <property role="TrG5h" value="TupleListChannel" />
+    <property role="34LRSv" value="tuple list channel" />
+    <property role="R4oN_" value="this channel will contain lists of tuples" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="Channel" />
+    <node concept="1TJgyj" id="53DXNxI64xS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="53DXNxI64zK" resolve="TupleList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="53DXNxI64zK">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="TupleList" />
+    <property role="34LRSv" value="tuple list" />
+    <property role="R4oN_" value="list of tuples as input or output" />
+    <ref role="1TJDcQ" node="70dPcAeD8Uh" resolve="ValueInAChannel" />
+    <node concept="1TJgyj" id="53DXNxI65rt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1..n" />
+      <property role="20kJfa" value="values" />
+      <ref role="20lvS9" node="3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2W8f1266Zma">
+    <property role="3GE5qa" value="setChannelValues" />
+    <property role="TrG5h" value="GlobalTupleListExpression" />
+    <property role="34LRSv" value="tuple list" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
+    <node concept="1TJgyj" id="2W8f126714u" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="2W8f126b9Ff" resolve="GlobalTupleListLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2W8f126b9Ff">
+    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
+    <property role="TrG5h" value="GlobalTupleListLiteral" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2W8f126b9JE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="2Hhp$WEw$gJ" resolve="GlobalTupleLiteral" />
+    </node>
+  </node>
 </model>
 
