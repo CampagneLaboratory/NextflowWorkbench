@@ -222,6 +222,12 @@
       <property role="20kJfa" value="tagAs" />
       <ref role="20lvS9" node="5U_2ytMbL_w" resolve="TagInfo" />
     </node>
+    <node concept="1TJgyj" id="nU1NoTl5$b" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="containers" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="nU1NoTkZdT" resolve="ContainerRef" />
+    </node>
     <node concept="1TJgyj" id="7MTH03mbWLF" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="buildInstructions" />
@@ -504,6 +510,17 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="BMuHr35oBh" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="nU1NoTkZdT">
+    <property role="3GE5qa" value="containers" />
+    <property role="TrG5h" value="ContainerRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="nU1NoTkZfg" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="container" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1D6dZ$xfhyW" resolve="DockerContainer" />
     </node>
   </node>
 </model>

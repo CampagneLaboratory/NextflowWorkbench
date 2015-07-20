@@ -110,7 +110,12 @@
       </concept>
     </language>
     <language id="82ffebe3-3685-4fd9-b560-0c1d348d295c" name="org.campagnelab.logger">
-      <concept id="1925991773566712428" name="org.campagnelab.logger.structure.Logger" flags="ng" index="1lvGkW" />
+      <concept id="1925991773568778810" name="org.campagnelab.logger.structure.Message" flags="ng" index="1lnzPE">
+        <property id="1925991773568778812" name="message" index="1lnzPG" />
+      </concept>
+      <concept id="1925991773566712428" name="org.campagnelab.logger.structure.Logger" flags="ng" index="1lvGkW">
+        <child id="1925991773566712429" name="messages" index="1lvGkX" />
+      </concept>
     </language>
     <language id="5cf93bc1-d0da-4893-b739-63b17fe296b1" name="org.campagnelab.workflow.nyosh">
       <concept id="331977639692978676" name="org.campagnelab.workflow.nyosh.structure.NyoShEnvVariableRef" flags="ng" index="23RE8j">
@@ -224,6 +229,7 @@
         <property id="8987412447080959633" name="id" index="2E_JEh" />
         <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
         <reference id="8987412447080991851" name="buildInstructions" index="2E_BxF" />
+        <child id="430664643838761227" name="containers" index="WF_SX" />
       </concept>
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
         <property id="8987412447080623507" name="options" index="2E$TAj" />
@@ -267,6 +273,9 @@
       <concept id="4202970468876401544" name="org.campagnelab.docker.structure.EnvVariableAssignment" flags="ng" index="2Wx$zn">
         <property id="4077712437829700151" name="value" index="2LBJJG" />
         <property id="4077712437829700150" name="name" index="2LBJJH" />
+      </concept>
+      <concept id="430664643838735225" name="org.campagnelab.docker.structure.ContainerRef" flags="ng" index="WEvhf">
+        <reference id="430664643838735312" name="container" index="WEvjA" />
       </concept>
       <concept id="4202970468879724310" name="org.campagnelab.docker.structure.CmdInstruction" flags="ng" index="2XmTL9">
         <child id="3515886879324529689" name="elements" index="gkDh$" />
@@ -1615,7 +1624,17 @@
       </node>
     </node>
   </node>
-  <node concept="1lvGkW" id="VMSWAF0h1v" />
+  <node concept="1lvGkW" id="VMSWAF0h1v">
+    <node concept="1lnzPE" id="nU1NoTqWyf" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker run " />
+    </node>
+    <node concept="1lnzPE" id="nU1NoTqWyg" role="1lvGkX">
+      <property role="1lnzPG" value="deployAddress: campagnelab/test:latest" />
+    </node>
+    <node concept="1lnzPE" id="nU1NoTqWyh" role="1lvGkX">
+      <property role="1lnzPG" value="with name=RWQXRLTPDE" />
+    </node>
+  </node>
   <node concept="2E_JVc" id="56asy6t1AG8">
     <property role="GSh9r" value="rocker-metar" />
     <property role="2E_JEh" value="rocker-metar" />
@@ -7840,6 +7859,16 @@
     <property role="GSh9r" value="campagnelab/test:latest" />
     <property role="2E_JEh" value="test" />
     <property role="TrG5h" value="image" />
+    <node concept="WEvhf" id="nU1NoTqWZ4" role="WF_SX">
+      <ref role="WEvjA" node="nU1NoTqWyi" resolve="RWQXRLTPDE" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="nU1NoTqWyi">
+    <property role="TrG5h" value="RWQXRLTPDE" />
+    <property role="GbyUj" value="test" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="" />
+    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
   </node>
 </model>
 
