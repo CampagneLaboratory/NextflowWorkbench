@@ -51,7 +51,6 @@
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
-      <concept id="1184319644772" name="jetbrains.mps.lang.editor.structure.CellModel_NonEmptyProperty" flags="sg" stub="730538219796134178" index="2YWUlR" />
       <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
@@ -79,6 +78,7 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -244,7 +244,7 @@
     <ref role="1XX52x" to="iowz:1HX2cDt6rj6" resolve="String" />
     <node concept="3EZMnI" id="4exDSOtPHRd" role="2wV5jI">
       <node concept="3F0ifn" id="4exDSOtQaGg" role="3EZMnx">
-        <property role="3F0ifm" value="string val" />
+        <property role="3F0ifm" value="string" />
       </node>
       <node concept="3F0A7n" id="4exDSOtQ7Lw" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -260,7 +260,7 @@
     <ref role="1XX52x" to="iowz:4exDSOtPEH9" resolve="Integer" />
     <node concept="3EZMnI" id="4exDSOtQcK7" role="2wV5jI">
       <node concept="3F0ifn" id="4exDSOtQcK8" role="3EZMnx">
-        <property role="3F0ifm" value="int val" />
+        <property role="3F0ifm" value="int" />
       </node>
       <node concept="3F0A7n" id="4exDSOtQcK9" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -276,7 +276,7 @@
     <ref role="1XX52x" to="iowz:4exDSOtPEXM" resolve="Boolean" />
     <node concept="3EZMnI" id="4exDSOtQcKQ" role="2wV5jI">
       <node concept="3F0ifn" id="4exDSOtQcKR" role="3EZMnx">
-        <property role="3F0ifm" value="boolean val" />
+        <property role="3F0ifm" value="boolean" />
       </node>
       <node concept="3F0A7n" id="4exDSOtQcKS" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -306,6 +306,11 @@
   <node concept="24kQdi" id="7gAPJCETi9R">
     <ref role="1XX52x" to="iowz:5D7AjvYabas" resolve="Workflow" />
     <node concept="3EZMnI" id="7gAPJCEToIg" role="2wV5jI">
+      <node concept="3F0A7n" id="PffOQSWTe5" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="iowz:PffOQSWT20" resolve="description" />
+        <ref role="1k5W1q" node="5yyd2HFN6xi" resolve="EmptyCell" />
+      </node>
       <node concept="3EZMnI" id="3ETEwC$l2vy" role="3EZMnx">
         <node concept="2iRfu4" id="3ETEwC$l2vz" role="2iSdaV" />
         <node concept="3F0ifn" id="3ETEwC$l2uO" role="3EZMnx">
@@ -650,7 +655,7 @@
     <ref role="1XX52x" to="iowz:3v6eDgz_YY5" resolve="List" />
     <node concept="3EZMnI" id="3v6eDgzARiU" role="2wV5jI">
       <node concept="3F0ifn" id="3v6eDgzARj1" role="3EZMnx">
-        <property role="3F0ifm" value="list val" />
+        <property role="3F0ifm" value="value-list" />
       </node>
       <node concept="3F0A7n" id="3v6eDgzARj7" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -766,84 +771,6 @@
     <node concept="3F0ifn" id="3m9W35nIEYJ" role="2wV5jI">
       <property role="3F0ifm" value="toSortedList()" />
       <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1psOhWnBiE9">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <ref role="1XX52x" to="iowz:1psOhWn_9xo" resolve="ValueFromWorkflowRef" />
-    <node concept="3EZMnI" id="1psOhWnBiE_" role="2wV5jI">
-      <node concept="l2Vlx" id="1psOhWnBiEA" role="2iSdaV" />
-      <node concept="3F0ifn" id="648FhJj9zHO" role="3EZMnx">
-        <property role="3F0ifm" value="${" />
-      </node>
-      <node concept="1iCGBv" id="1psOhWnBiEF" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:1psOhWn_9xv" />
-        <node concept="1sVBvm" id="1psOhWnBiEG" role="1sWHZn">
-          <node concept="2YWUlR" id="648FhJjbkyV" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-        <node concept="VechU" id="1psOhWnH4cU" role="3F10Kt">
-          <property role="Vb096" value="blue" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="648FhJj9zH$" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
-      </node>
-      <node concept="3F0ifn" id="1psOhWnBiF5" role="3EZMnx" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1psOhWnBiJX">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <ref role="1XX52x" to="iowz:1psOhWn_9AH" resolve="WorkflowBoolean" />
-    <node concept="3EZMnI" id="1psOhWnBiJZ" role="2wV5jI">
-      <node concept="3F0ifn" id="1psOhWnBiKd" role="3EZMnx">
-        <property role="3F0ifm" value="boolean" />
-      </node>
-      <node concept="3F0A7n" id="1psOhWnBiKm" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="l2Vlx" id="1psOhWnBiK2" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1psOhWnBiKx">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <ref role="1XX52x" to="iowz:1psOhWn_9AR" resolve="WorkflowInteger" />
-    <node concept="3EZMnI" id="1psOhWnBiKz" role="2wV5jI">
-      <node concept="3F0ifn" id="1psOhWnBiKH" role="3EZMnx">
-        <property role="3F0ifm" value="int" />
-      </node>
-      <node concept="3F0A7n" id="1psOhWnBiKQ" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="l2Vlx" id="1psOhWnBiKA" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1psOhWnBiL1">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <ref role="1XX52x" to="iowz:1psOhWn_9AM" resolve="WorkflowString" />
-    <node concept="3EZMnI" id="1psOhWnBiL3" role="2wV5jI">
-      <node concept="3F0ifn" id="1psOhWnBiLd" role="3EZMnx">
-        <property role="3F0ifm" value="string" />
-      </node>
-      <node concept="3F0A7n" id="1psOhWnBiLm" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="l2Vlx" id="1psOhWnBiL6" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1psOhWofHGV">
-    <property role="3GE5qa" value="valueFromWorkflow (not used)" />
-    <ref role="1XX52x" to="iowz:1psOhWofHGP" resolve="WorkflowList" />
-    <node concept="3EZMnI" id="1psOhWofHN5" role="2wV5jI">
-      <node concept="3F0ifn" id="1psOhWofHNf" role="3EZMnx">
-        <property role="3F0ifm" value="list" />
-      </node>
-      <node concept="3F0A7n" id="1psOhWofHNo" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="l2Vlx" id="1psOhWofHN8" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="235lbi5IybY">
@@ -1535,7 +1462,10 @@
     <ref role="1XX52x" to="iowz:3v6eDgzA3wg" resolve="Tuple" />
     <node concept="3EZMnI" id="3v6eDgzARji" role="2wV5jI">
       <node concept="3F0ifn" id="3v6eDgzARjp" role="3EZMnx">
-        <property role="3F0ifm" value="tuple set" />
+        <property role="3F0ifm" value="tuple" />
+      </node>
+      <node concept="3F0ifn" id="PffOQTbIFx" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
       </node>
       <node concept="3F2HdR" id="2Hhp$WDzSdG" role="3EZMnx">
         <property role="2czwfO" value="," />
@@ -1547,6 +1477,9 @@
         </node>
       </node>
       <node concept="l2Vlx" id="3v6eDgzARjl" role="2iSdaV" />
+      <node concept="3F0ifn" id="PffOQTbIFJ" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="2Hhp$WEiKpb">
@@ -1630,7 +1563,7 @@
     <ref role="1XX52x" to="iowz:5ok1XDm1MHo" resolve="FileList" />
     <node concept="3EZMnI" id="5ok1XDm1QsC" role="2wV5jI">
       <node concept="3F0ifn" id="5ok1XDm1QsJ" role="3EZMnx">
-        <property role="3F0ifm" value="list file" />
+        <property role="3F0ifm" value="file-list" />
       </node>
       <node concept="3F0A7n" id="5ok1XDm1QsP" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

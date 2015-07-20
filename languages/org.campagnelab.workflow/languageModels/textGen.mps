@@ -226,6 +226,12 @@
     <ref role="WuzLi" to="iowz:5D7AjvYabas" resolve="Workflow" />
     <node concept="11bSqf" id="34JZ5vrKEbX" role="11c4hB">
       <node concept="3clFbS" id="34JZ5vrKEbY" role="2VODD2">
+        <node concept="lc7rE" id="PffOQTbIZv" role="3cqZAp">
+          <node concept="la8eA" id="PffOQTbIZU" role="lcghm">
+            <property role="lacIc" value="#!/usr/bin/env nextflow" />
+          </node>
+          <node concept="l8MVK" id="PffOQTbJ7B" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="34JZ5vrO7Lo" role="3cqZAp">
           <node concept="1bDJIP" id="34JZ5vrO7LC" role="lcghm">
             <ref role="1rvKf6" node="34JZ5vrM0V4" resolve="workflow" />
@@ -917,34 +923,6 @@
         <property role="TrG5h" value="processRef" />
         <node concept="3Tqbb2" id="34JZ5vrXtnP" role="1tU5fm">
           <ref role="ehGHo" to="iowz:5D7AjvYaj9M" resolve="ProcessRef" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="WtQ9Q" id="1psOhWoncZi">
-    <ref role="WuzLi" to="iowz:1psOhWn_9xo" resolve="ValueFromWorkflowRef" />
-    <node concept="11bSqf" id="1psOhWoncZj" role="11c4hB">
-      <node concept="3clFbS" id="1psOhWoncZk" role="2VODD2">
-        <node concept="lc7rE" id="1psOhWondAj" role="3cqZAp">
-          <node concept="la8eA" id="648FhJjd7wd" role="lcghm">
-            <property role="lacIc" value="${" />
-          </node>
-          <node concept="l9hG8" id="1psOhWondAA" role="lcghm">
-            <node concept="2OqwBi" id="1psOhWonekM" role="lb14g">
-              <node concept="2OqwBi" id="1psOhWondZ5" role="2Oq$k0">
-                <node concept="117lpO" id="1psOhWondX6" role="2Oq$k0" />
-                <node concept="3TrEf2" id="1psOhWone94" role="2OqNvi">
-                  <ref role="3Tt5mk" to="iowz:1psOhWn_9xv" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="1psOhWonevy" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="648FhJjd7zs" role="lcghm">
-            <property role="lacIc" value="}" />
-          </node>
         </node>
       </node>
     </node>
