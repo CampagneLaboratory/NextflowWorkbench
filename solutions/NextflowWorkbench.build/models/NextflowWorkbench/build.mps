@@ -111,6 +111,15 @@
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
+      <concept id="322010710375794190" name="jetbrains.mps.build.mps.structure.BuildMps_DevKit" flags="ng" index="3LEwk6">
+        <child id="322010710375832962" name="exports" index="3LEDUa" />
+      </concept>
+      <concept id="322010710375832938" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportLanguage" flags="ng" index="3LEDTy">
+        <reference id="322010710375832947" name="language" index="3LEDTV" />
+      </concept>
+      <concept id="322010710375832954" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportSolution" flags="ng" index="3LEDTM">
+        <reference id="322010710375832955" name="solution" index="3LEDTN" />
+      </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
@@ -373,6 +382,25 @@
           <property role="TrG5h" value="org.campagnelab.workflow#7457140171610884905" />
           <property role="3LESm3" value="597ce3f0-8d25-41b5-ae5e-1cf342507ff6" />
           <property role="2GAjPV" value="false" />
+        </node>
+      </node>
+      <node concept="3LEwk6" id="7sNx9BmIXy0" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.campagnelab.NextflowWorkbench" />
+        <property role="3LESm3" value="74a4431b-c31f-4707-ad8a-3f4f3c105ee2" />
+        <node concept="55IIr" id="7sNx9BmIXy3" role="3LF7KH">
+          <node concept="2Ry0Ak" id="7sNx9BmIX$C" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="7sNx9BmIX_D" role="2Ry0An">
+              <property role="2Ry0Am" value="org.campagnelab.NextflowWorkbench.devkit" />
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="7sNx9BmJ8OP" role="3LEDUa">
+          <ref role="3LEDTV" node="4oJiZHqTePI" resolve="org.campagnelab.workflow" />
+        </node>
+        <node concept="3LEDTM" id="7sNx9BmJ8OQ" role="3LEDUa">
+          <ref role="3LEDTN" node="4oJiZHqTePC" resolve="org.campagnelab.workflow.run" />
         </node>
       </node>
     </node>
