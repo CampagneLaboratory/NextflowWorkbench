@@ -214,6 +214,9 @@
       <concept id="3515886879324562347" name="org.campagnelab.docker.structure.CommandElement" flags="ng" index="gkxfm">
         <property id="3515886879324562348" name="command" index="gkxfh" />
       </concept>
+      <concept id="3515886879335677516" name="org.campagnelab.docker.structure.OnBuildInstruction" flags="ng" index="hy8SL">
+        <child id="3515886879335677589" name="instruction" index="hy8VC" />
+      </concept>
       <concept id="3515886879331681162" name="org.campagnelab.docker.structure.LabelInstruction" flags="ng" index="hNRfR">
         <child id="3515886879331681241" name="labels" index="hNRe$" />
       </concept>
@@ -266,6 +269,9 @@
       </concept>
       <concept id="4202970468879724310" name="org.campagnelab.docker.structure.CmdInstruction" flags="ng" index="2XmTL9">
         <child id="3515886879324529689" name="elements" index="gkDh$" />
+      </concept>
+      <concept id="716770353510735278" name="org.campagnelab.docker.structure.WorkdirInstruction" flags="ng" index="3buUtS">
+        <property id="716770353510735484" name="path" index="3buUiE" />
       </concept>
       <concept id="5650734312792558932" name="org.campagnelab.docker.structure.DockerPath" flags="ng" index="1$tZQZ">
         <reference id="5650734312792560363" name="dockerContainer" index="1$tY80" />
@@ -7442,6 +7448,16 @@
         </node>
       </node>
     </node>
+    <node concept="hy8SL" id="BMuHr2yeRv" role="VuOVn">
+      <node concept="VugRC" id="BMuHr2yeRw" role="hy8VC">
+        <node concept="19SGf9" id="BMuHr2yeRx" role="Vugyn">
+          <node concept="19SUe$" id="BMuHr2yeRy" role="19SJt6" />
+          <node concept="19SUe$" id="BMuHr2yeRz" role="19SJt6">
+            <property role="19SUeA" value="/usr/local/bin/python-build --dir /app/src" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="VugRC" id="3DjWPY726xy" role="VuOVn">
       <node concept="19SGf9" id="3DjWPY726xz" role="Vugyn">
         <node concept="19SUe$" id="3DjWPY726x$" role="19SJt6" />
@@ -7474,6 +7490,23 @@
       </node>
       <node concept="hSj7u" id="33aW7Oxfb41" role="hSjk3">
         <property role="hSj7b" value="222" />
+      </node>
+    </node>
+    <node concept="3buUtS" id="BMuHr2Ahs6" role="VuOVn">
+      <property role="3buUiE" value="/a" />
+    </node>
+    <node concept="3buUtS" id="BMuHr2Ahs7" role="VuOVn">
+      <property role="3buUiE" value="b" />
+    </node>
+    <node concept="3buUtS" id="BMuHr2Ahs8" role="VuOVn">
+      <property role="3buUiE" value="c" />
+    </node>
+    <node concept="VugRC" id="BMuHr2Ahs9" role="VuOVn">
+      <node concept="19SGf9" id="BMuHr2Ahsa" role="Vugyn">
+        <node concept="19SUe$" id="BMuHr2Ahsb" role="19SJt6" />
+        <node concept="19SUe$" id="BMuHr2Ahsc" role="19SJt6">
+          <property role="19SUeA" value="pwd" />
+        </node>
       </node>
     </node>
   </node>

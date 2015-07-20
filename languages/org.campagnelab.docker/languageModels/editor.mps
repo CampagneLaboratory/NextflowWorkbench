@@ -1239,7 +1239,7 @@
   </node>
   <node concept="24kQdi" id="33aW7OxgBUs">
     <property role="3GE5qa" value="instructions" />
-    <ref role="1XX52x" to="6jv6:33aW7OxgBTc" resolve="nBuildInstruction" />
+    <ref role="1XX52x" to="6jv6:33aW7OxgBTc" resolve="OnBuildInstruction" />
     <node concept="3EZMnI" id="33aW7OxgC1o" role="2wV5jI">
       <node concept="3F0ifn" id="33aW7OxgC1v" role="3EZMnx">
         <property role="3F0ifm" value="ONBUILD" />
@@ -1248,6 +1248,19 @@
         <ref role="1NtTu8" to="6jv6:33aW7OxgBUl" />
       </node>
       <node concept="l2Vlx" id="33aW7OxgC1r" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="BMuHr2ywI5">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1XX52x" to="6jv6:BMuHr2ytQI" resolve="WorkdirInstruction" />
+    <node concept="3EZMnI" id="BMuHr2yxdq" role="2wV5jI">
+      <node concept="3F0ifn" id="BMuHr2yxdx" role="3EZMnx">
+        <property role="3F0ifm" value="WORKDIR " />
+      </node>
+      <node concept="3F0A7n" id="BMuHr2yxdF" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:BMuHr2ytTW" resolve="path" />
+      </node>
+      <node concept="l2Vlx" id="BMuHr2yxdt" role="2iSdaV" />
     </node>
   </node>
 </model>

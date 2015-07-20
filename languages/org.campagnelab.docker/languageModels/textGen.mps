@@ -510,7 +510,7 @@
   </node>
   <node concept="WtQ9Q" id="33aW7OxgC1D">
     <property role="3GE5qa" value="instructions" />
-    <ref role="WuzLi" to="6jv6:33aW7OxgBTc" resolve="nBuildInstruction" />
+    <ref role="WuzLi" to="6jv6:33aW7OxgBTc" resolve="OnBuildInstruction" />
     <node concept="11bSqf" id="33aW7OxgC1E" role="11c4hB">
       <node concept="3clFbS" id="33aW7OxgC1F" role="2VODD2">
         <node concept="lc7rE" id="33aW7OxgC4D" role="3cqZAp">
@@ -522,6 +522,27 @@
               <node concept="117lpO" id="33aW7OxgC56" role="2Oq$k0" />
               <node concept="3TrEf2" id="33aW7OxgCpL" role="2OqNvi">
                 <ref role="3Tt5mk" to="6jv6:33aW7OxgBUl" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="BMuHr2yw0Y">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="WuzLi" to="6jv6:BMuHr2ytQI" resolve="WorkdirInstruction" />
+    <node concept="11bSqf" id="BMuHr2yw0Z" role="11c4hB">
+      <node concept="3clFbS" id="BMuHr2yw10" role="2VODD2">
+        <node concept="lc7rE" id="BMuHr2ywoJ" role="3cqZAp">
+          <node concept="la8eA" id="BMuHr2ywoQ" role="lcghm">
+            <property role="lacIc" value="WORKDIR " />
+          </node>
+          <node concept="l9hG8" id="BMuHr2ywp2" role="lcghm">
+            <node concept="2OqwBi" id="BMuHr2ywr9" role="lb14g">
+              <node concept="117lpO" id="BMuHr2ywpc" role="2Oq$k0" />
+              <node concept="3TrcHB" id="BMuHr2ywHM" role="2OqNvi">
+                <ref role="3TsBF5" to="6jv6:BMuHr2ytTW" resolve="path" />
               </node>
             </node>
           </node>

@@ -389,5 +389,16 @@
       <ref role="20lvS9" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     </node>
   </node>
+  <node concept="1TIwiD" id="BMuHr2ytQI">
+    <property role="3GE5qa" value="instructions" />
+    <property role="TrG5h" value="WorkdirInstruction" />
+    <property role="34LRSv" value="WORKDIR" />
+    <property role="R4oN_" value="Set the work directory to use when running the container" />
+    <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+    <node concept="1TJgyi" id="BMuHr2ytTW" role="1TKVEl">
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
