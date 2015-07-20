@@ -211,6 +211,9 @@
       </concept>
     </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
+      <concept id="3515886879324562347" name="org.campagnelab.docker.structure.CommandElement" flags="ng" index="gkxfm">
+        <property id="3515886879324562348" name="command" index="gkxfh" />
+      </concept>
       <concept id="8987412447080958668" name="org.campagnelab.docker.structure.DockerImage" flags="ng" index="2E_JVc">
         <property id="8987412447080959633" name="id" index="2E_JEh" />
         <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
@@ -224,13 +227,36 @@
         <property id="1859325667733444128" name="command" index="3yMj3R" />
         <reference id="1859325667733099571" name="image" index="3zcJb$" />
       </concept>
+      <concept id="4077712437829700149" name="org.campagnelab.docker.structure.EnvInstruction" flags="ng" index="2LBJJI">
+        <child id="4202970468876361856" name="assignments" index="2WxHfv" />
+      </concept>
       <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
         <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
+      </concept>
+      <concept id="1893262236500048401" name="org.campagnelab.docker.structure.RunInstruction" flags="ng" index="VugRC">
+        <child id="1893262236500049774" name="command" index="Vugyn" />
       </concept>
       <concept id="1893262236499908796" name="org.campagnelab.docker.structure.DockerContainer" flags="ng" index="VuMX5">
         <property id="6819868375264208052" name="id" index="GbyUj" />
         <property id="1893262236499912677" name="tag" index="VuL0s" />
         <property id="1893262236499912678" name="userName" index="VuL0v" />
+      </concept>
+      <concept id="1893262236499932797" name="org.campagnelab.docker.structure.FromInstruction" flags="ng" index="VuO64">
+        <child id="1893262236499932800" name="foundationContainer" index="VuO5T" />
+      </concept>
+      <concept id="1893262236499932072" name="org.campagnelab.docker.structure.MaintainerInstruction" flags="ng" index="VuOhh">
+        <property id="1893262236499932073" name="fullName" index="VuOhg" />
+        <property id="1893262236499932075" name="email" index="VuOhi" />
+      </concept>
+      <concept id="1893262236499930363" name="org.campagnelab.docker.structure.Dockerfile" flags="ng" index="VuPG2">
+        <child id="1893262236499933486" name="instructions" index="VuOVn" />
+      </concept>
+      <concept id="4202970468876401544" name="org.campagnelab.docker.structure.EnvVariableAssignment" flags="ng" index="2Wx$zn">
+        <property id="4077712437829700151" name="value" index="2LBJJG" />
+        <property id="4077712437829700150" name="name" index="2LBJJH" />
+      </concept>
+      <concept id="4202970468879724310" name="org.campagnelab.docker.structure.CmdInstruction" flags="ng" index="2XmTL9">
+        <child id="3515886879324529689" name="elements" index="gkDh$" />
       </concept>
       <concept id="5650734312792558932" name="org.campagnelab.docker.structure.DockerPath" flags="ng" index="1$tZQZ">
         <reference id="5650734312792560363" name="dockerContainer" index="1$tY80" />
@@ -925,7 +951,7 @@
       <property role="VuL0v" value="fac2003" />
       <property role="TrG5h" value="interactive" />
       <property role="1vm7qE" value="false" />
-      <ref role="3zcJb$" node="VMSWAFnwPJ" resolve="image" />
+      <ref role="3zcJb$" node="4uxaUi8HzZ$" resolve="image" />
     </node>
   </node>
   <node concept="1lvGkW" id="VMSWAF0h1v">
@@ -1232,20 +1258,6 @@
     <node concept="1lnzPE" id="7aSP7xMzstD" role="1lvGkX">
       <property role="1lnzPG" value="cached docker ls called with path=etc/X11" />
     </node>
-  </node>
-  <node concept="GbKB8" id="VMSWAFibhT">
-    <property role="TrG5h" value="ABSWBWCVGL" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" to="x247:6hgQMAA3qzj" resolve="Dockerfile_Image" />
-  </node>
-  <node concept="GbKB8" id="4TFseGE9IoG">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="4uxaUi8HzZ$" resolve="image" />
   </node>
   <node concept="3lueso" id="irqYu7g08g">
     <property role="TrG5h" value="MyEnv" />
@@ -7133,20 +7145,6 @@
       </node>
     </node>
   </node>
-  <node concept="GbKB8" id="VMSWAFiac1">
-    <property role="TrG5h" value="LOIIOPLSWP" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="VMSWAFiabX" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="VMSWAFnwPN">
-    <property role="TrG5h" value="VFBYBYFHGI" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="VMSWAFnwPJ" resolve="image" />
-  </node>
   <node concept="2E_JVc" id="4uxaUi8HzZ$">
     <property role="GSh9r" value="fac2003/rocker-metar:latest" />
     <property role="2E_JEh" value="rocker-metar" />
@@ -7302,244 +7300,155 @@
       <property role="TrG5h" value="Fabien Campagne" />
     </node>
   </node>
-  <node concept="GbKB8" id="7VaNOCLCIsT">
-    <property role="TrG5h" value="OLRJXDSDKB" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="false" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="56asy6t1AG8" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="4uxaUi8HzZC">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="false" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="4uxaUi8HzZ$" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="VMSWAFlYRL">
-    <property role="TrG5h" value="PJJIJYCUQF" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="VMSWAFlYRH" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="4pljpe$4q6E">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="4pljpe$4q6A" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="7VaNOCLGf6f">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="7VaNOCLGf6b" resolve="image" />
-  </node>
   <node concept="2E_JVc" id="56asy6t1AG8">
     <property role="GSh9r" value="rocker-metar" />
     <property role="2E_JEh" value="rocker-metar" />
     <property role="TrG5h" value="image" />
-  </node>
-  <node concept="GbKB8" id="56asy6t1AGc">
-    <property role="TrG5h" value="OLRJXDSDKB" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="56asy6t1AG8" resolve="image" />
   </node>
   <node concept="2E_JVc" id="56asy6tpjxH">
     <property role="GSh9r" value="fac2003/rocker-metar:latest" />
     <property role="2E_JEh" value="rocker-metar" />
     <property role="TrG5h" value="image" />
   </node>
-  <node concept="GbKB8" id="56asy6tpjxL">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="56asy6tpjxH" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="6hgQMA_cClh">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="56asy6tpjxH" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="6hgQMA_W_bi">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="56asy6tpjxH" resolve="image" />
-  </node>
   <node concept="2E_JVc" id="6hgQMAA5rLh">
     <property role="GSh9r" value="campagnelab/test:latest" />
     <property role="2E_JEh" value="test" />
     <property role="TrG5h" value="image" />
-  </node>
-  <node concept="GbKB8" id="6hgQMAA5rLl">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="6hgQMAA5shk">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="6hgQMAA5sTM">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="6hgQMAA5tmW">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="6hgQMAA5tPn">
-    <property role="TrG5h" value="interactive2" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
   </node>
   <node concept="2E_JVc" id="6hgQMAA5tWs">
     <property role="GSh9r" value="campagnelab/test:latest" />
     <property role="2E_JEh" value="test" />
     <property role="TrG5h" value="image" />
   </node>
-  <node concept="GbKB8" id="6hgQMAA5tWw">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="6hgQMAA5tWs" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="6hgQMAA5tZK">
-    <property role="TrG5h" value="interactive3" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="6hgQMAA5tWs" resolve="image" />
-  </node>
   <node concept="2E_JVc" id="51H4qOrQb$j">
     <property role="GSh9r" value="fac2003/rocker-metar:latest" />
     <property role="2E_JEh" value="rocker-metar" />
     <property role="TrG5h" value="image" />
   </node>
-  <node concept="GbKB8" id="51H4qOrQb$n">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="rocker-metar" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="51H4qOrQb$j" resolve="image" />
-  </node>
-  <node concept="2ulcR8" id="51H4qOrQfBb">
-    <node concept="NgwLd" id="51H4qOrQAmU" role="2ulM7a">
-      <node concept="3jXLau" id="51H4qOrQAn4" role="NgwMD">
-        <ref role="3jXLav" node="1D6dZ$x23el" resolve="BOWTIE2" />
-      </node>
-      <node concept="3jXLau" id="51H4qOrQAn6" role="NgwMD">
-        <ref role="3jXLav" node="1D6dZ$x23ef" resolve="ANNOTATE_VCF" />
-      </node>
-      <node concept="1XFuE8" id="51H4qOrQAmV" role="23NxHr">
-        <property role="1XFuEG" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins" />
-      </node>
-      <node concept="19SGf9" id="51H4qOrQAmX" role="3Y$PkS">
-        <node concept="19SUe$" id="51H4qOrQAng" role="19SJt6">
-          <property role="19SUeA" value="" />
-        </node>
-        <node concept="23RE8j" id="51H4qOrQAnu" role="19SJt6">
-          <ref role="23RE8i" node="51H4qOrQAnA" resolve="DISPLAY" />
-        </node>
-        <node concept="19SUe$" id="51H4qOrQAmY" role="19SJt6">
-          <property role="19SUeA" value=" " />
-        </node>
-        <node concept="23RE8j" id="51H4qOrQApZ" role="19SJt6" />
-        <node concept="19SUe$" id="51H4qOrQApY" role="19SJt6">
-          <property role="19SUeA" value="&#10;" />
-        </node>
-      </node>
-      <node concept="1IqXV7" id="51H4qOrQAn$" role="23Rrb0">
-        <property role="2rInPY" value="/private/tmp/com.apple.launchd.YBZUiPHrKK/Render" />
-        <property role="TrG5h" value="Apple_PubSub_Socket_Render" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="51H4qOrQAnA" role="23Rrb0">
-        <property role="2rInPY" value="/private/tmp/com.apple.launchd.ARCfpuYm0R/org.macosforge.xquartz:0" />
-        <property role="TrG5h" value="DISPLAY" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="51H4qOrQAnC" role="23Rrb0">
-        <property role="2rInPY" value="/Users/fac2003" />
-        <property role="TrG5h" value="HOME" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="51H4qOrQAnE" role="23Rrb0">
-        <property role="2rInPY" value="fac2003" />
-        <property role="TrG5h" value="LOGNAME" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="51H4qOrQAnG" role="23Rrb0">
-        <property role="2rInPY" value="/usr/bin:/bin:/usr/sbin:/sbin" />
-        <property role="TrG5h" value="PATH" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="51H4qOrQAnI" role="23Rrb0">
-        <property role="2rInPY" value="/bin/bash" />
-        <property role="TrG5h" value="SHELL" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="51H4qOrQAnK" role="23Rrb0">
-        <property role="2rInPY" value="/private/tmp/com.apple.launchd.5UchrB2ZSQ/Listeners" />
-        <property role="TrG5h" value="SSH_AUTH_SOCK" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="51H4qOrQAnM" role="23Rrb0">
-        <property role="2rInPY" value="/var/folders/7c/dskpdg6x6f384r541lfzmjk00000gp/T/" />
-        <property role="TrG5h" value="TMPDIR" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="51H4qOrQAnO" role="23Rrb0">
-        <property role="2rInPY" value="fac2003" />
-        <property role="TrG5h" value="USER" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="51H4qOrQAnQ" role="23Rrb0">
-        <property role="2rInPY" value="0x0" />
-        <property role="TrG5h" value="XPC_FLAGS" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="51H4qOrQAnS" role="23Rrb0">
-        <property role="2rInPY" value="com.jetbrains.intellij.122152" />
-        <property role="TrG5h" value="XPC_SERVICE_NAME" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="51H4qOrQAnU" role="23Rrb0">
-        <property role="2rInPY" value="0x1F6:0x0:0x0" />
-        <property role="TrG5h" value="__CF_USER_TEXT_ENCODING" />
-        <property role="3vthGj" value="STRING" />
+  <node concept="VuPG2" id="3ymWtI94ikR">
+    <property role="TrG5h" value="SomeContainer" />
+    <node concept="VuO64" id="3ymWtI94ikS" role="VuOVn">
+      <node concept="VtuK3" id="33aW7Ox0YQR" role="VuO5T">
+        <property role="VuL0s" value="latest" />
+        <property role="VuL0v" value="fac2003" />
+        <property role="GbyUj" value="rocker-metar" />
       </node>
     </node>
-  </node>
-  <node concept="GbKB8" id="51H4qOsnqPG">
-    <property role="TrG5h" value="interactive4" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 100000" />
-    <ref role="3zcJb$" node="6hgQMAA5tWs" resolve="image" />
+    <node concept="VuOhh" id="3ymWtI94ikT" role="VuOVn">
+      <property role="VuOhg" value="Fabien Campagne" />
+      <property role="VuOhi" value="fac2003@campagnelab.org" />
+    </node>
+    <node concept="2LBJJI" id="3DjWPY6VTn7" role="VuOVn">
+      <node concept="2Wx$zn" id="3DjWPY6Z$Lm" role="2WxHfv">
+        <property role="2LBJJH" value="name" />
+        <property role="2LBJJG" value="value " />
+      </node>
+      <node concept="2Wx$zn" id="3DjWPY6Z$LG" role="2WxHfv">
+        <property role="2LBJJH" value="name" />
+        <property role="2LBJJG" value="value" />
+      </node>
+    </node>
+    <node concept="2XmTL9" id="33aW7OwUwi4" role="VuOVn">
+      <node concept="gkxfm" id="33aW7OwUwi5" role="gkDh$">
+        <property role="gkxfh" value="sh" />
+      </node>
+      <node concept="gkxfm" id="33aW7OwUwi6" role="gkDh$">
+        <property role="gkxfh" value="-c" />
+      </node>
+      <node concept="gkxfm" id="33aW7OwUwi7" role="gkDh$">
+        <property role="gkxfh" value="echo" />
+      </node>
+      <node concept="gkxfm" id="33aW7OwUwi8" role="gkDh$">
+        <property role="gkxfh" value="$HOME" />
+      </node>
+    </node>
+    <node concept="2XmTL9" id="33aW7OwXfeV" role="VuOVn">
+      <node concept="gkxfm" id="33aW7OwXfeW" role="gkDh$">
+        <property role="gkxfh" value="/usr/bin/wc" />
+      </node>
+      <node concept="gkxfm" id="33aW7OwXfeX" role="gkDh$">
+        <property role="gkxfh" value="--help" />
+      </node>
+    </node>
+    <node concept="2XmTL9" id="33aW7OwXg5i" role="VuOVn">
+      <node concept="gkxfm" id="33aW7OwXg5j" role="gkDh$">
+        <property role="gkxfh" value="/bin/sh" />
+      </node>
+      <node concept="gkxfm" id="33aW7OwXg5k" role="gkDh$">
+        <property role="gkxfh" value="-c" />
+      </node>
+      <node concept="gkxfm" id="33aW7OwXg5l" role="gkDh$">
+        <property role="gkxfh" value="command" />
+      </node>
+      <node concept="gkxfm" id="33aW7OwXg5m" role="gkDh$">
+        <property role="gkxfh" value="param1" />
+      </node>
+      <node concept="gkxfm" id="33aW7OwXg5n" role="gkDh$">
+        <property role="gkxfh" value="param2" />
+      </node>
+    </node>
+    <node concept="2XmTL9" id="33aW7OwXfEk" role="VuOVn">
+      <node concept="gkxfm" id="33aW7OwXfEl" role="gkDh$">
+        <property role="gkxfh" value="sh" />
+      </node>
+      <node concept="gkxfm" id="33aW7OwXfEm" role="gkDh$">
+        <property role="gkxfh" value="-c" />
+      </node>
+      <node concept="gkxfm" id="33aW7OwXfEn" role="gkDh$">
+        <property role="gkxfh" value="echo" />
+      </node>
+      <node concept="gkxfm" id="33aW7OwXfEo" role="gkDh$">
+        <property role="gkxfh" value="$HOME" />
+      </node>
+    </node>
+    <node concept="VugRC" id="3DjWPY726xi" role="VuOVn">
+      <node concept="19SGf9" id="3DjWPY726xj" role="Vugyn">
+        <node concept="19SUe$" id="3DjWPY726xk" role="19SJt6" />
+        <node concept="19SUe$" id="3DjWPY726xl" role="19SJt6">
+          <property role="19SUeA" value="apt-get install -y python-software-properties python" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="3DjWPY726xm" role="VuOVn">
+      <node concept="19SGf9" id="3DjWPY726xn" role="Vugyn">
+        <node concept="19SUe$" id="3DjWPY726xo" role="19SJt6" />
+        <node concept="19SUe$" id="3DjWPY726xp" role="19SJt6">
+          <property role="19SUeA" value="add-apt-repository ppa:chris-lea/node.js" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="3DjWPY726xq" role="VuOVn">
+      <node concept="19SGf9" id="3DjWPY726xr" role="Vugyn">
+        <node concept="19SUe$" id="3DjWPY726xs" role="19SJt6" />
+        <node concept="19SUe$" id="3DjWPY726xt" role="19SJt6">
+          <property role="19SUeA" value="echo &quot;deb http://us.archive.ubuntu.com/ubuntu/ precise universe&quot; &gt;&gt; /etc/apt/sources.list" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="3DjWPY726xu" role="VuOVn">
+      <node concept="19SGf9" id="3DjWPY726xv" role="Vugyn">
+        <node concept="19SUe$" id="3DjWPY726xw" role="19SJt6" />
+        <node concept="19SUe$" id="3DjWPY726xx" role="19SJt6">
+          <property role="19SUeA" value="apt-get update" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="3DjWPY726xy" role="VuOVn">
+      <node concept="19SGf9" id="3DjWPY726xz" role="Vugyn">
+        <node concept="19SUe$" id="3DjWPY726x$" role="19SJt6" />
+        <node concept="19SUe$" id="3DjWPY726x_" role="19SJt6">
+          <property role="19SUeA" value="apt-get install -y nodejs git" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="3DjWPY726xA" role="VuOVn">
+      <node concept="19SGf9" id="3DjWPY726xB" role="Vugyn">
+        <node concept="19SUe$" id="3DjWPY726xC" role="19SJt6" />
+        <node concept="19SUe$" id="3DjWPY726xD" role="19SJt6">
+          <property role="19SUeA" value="npm install -g docpad@6.44" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

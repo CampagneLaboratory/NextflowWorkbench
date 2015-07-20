@@ -30,6 +30,7 @@
       <concept id="1164052439493" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_MatchingText" flags="in" index="6VE3a" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
@@ -549,6 +550,12 @@
     <node concept="3EZMnI" id="7MTH03mbOUs" role="2wV5jI">
       <node concept="3F0ifn" id="7MTH03mbOUz" role="3EZMnx">
         <property role="3F0ifm" value="docker image" />
+      </node>
+      <node concept="1u4HXA" id="3DjWPY70EAe" role="3EZMnx">
+        <property role="1ubRXE" value="${module}/icons/DockerImage-1.png" />
+      </node>
+      <node concept="3F0ifn" id="3DjWPY71oij" role="3EZMnx">
+        <property role="3F0ifm" value=" " />
       </node>
       <node concept="3F0A7n" id="7MTH03mbOUQ" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1101,6 +1108,79 @@
       </node>
       <node concept="3F0ifn" id="51H4qOrDqzc" role="3EZMnx">
         <property role="3F0ifm" value="&lt;" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3ymWtI920DN">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1XX52x" to="6jv6:3ymWtI920CP" resolve="EnvInstruction" />
+    <node concept="3EZMnI" id="3ymWtI921Cg" role="2wV5jI">
+      <node concept="3F0ifn" id="3ymWtI921Cn" role="3EZMnx">
+        <property role="3F0ifm" value="ENV" />
+      </node>
+      <node concept="3F2HdR" id="3DjWPY6P_bF" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:3DjWPY6Pi20" />
+        <node concept="l2Vlx" id="3DjWPY6P_bH" role="2czzBx" />
+        <node concept="3F0ifn" id="3DjWPY6P_bL" role="2czzBI" />
+      </node>
+      <node concept="l2Vlx" id="3ymWtI921Cj" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3DjWPY6PyDL">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1XX52x" to="6jv6:3DjWPY6PrI8" resolve="EnvVariableAssignment" />
+    <node concept="3EZMnI" id="3DjWPY6P_b8" role="2wV5jI">
+      <node concept="3F0A7n" id="3DjWPY6P_bf" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:3ymWtI920CQ" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="3DjWPY6P_bl" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F0A7n" id="3DjWPY6P_bt" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:3ymWtI920CR" resolve="value" />
+      </node>
+      <node concept="l2Vlx" id="3DjWPY6P_bb" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="33aW7OwBk_8">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1XX52x" to="6jv6:33aW7OwAeeF" resolve="CommandElement" />
+    <node concept="3EZMnI" id="33aW7OwBnjT" role="2wV5jI">
+      <node concept="3F0ifn" id="33aW7OwBnk6" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <node concept="11LMrY" id="33aW7OwLahr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="33aW7OwBnke" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:33aW7OwAeeG" resolve="command" />
+      </node>
+      <node concept="3F0ifn" id="33aW7OwBnko" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <node concept="11L4FC" id="33aW7OwLaj5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="33aW7OwBnjW" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="33aW7OwCv5n">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1XX52x" to="6jv6:3DjWPY726Wm" resolve="CmdInstruction" />
+    <node concept="3EZMnI" id="33aW7OwCv5p" role="2wV5jI">
+      <node concept="3F0ifn" id="33aW7OwK3dX" role="3EZMnx">
+        <property role="3F0ifm" value="CMD" />
+      </node>
+      <node concept="3F0ifn" id="33aW7OwSbmm" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F2HdR" id="33aW7OwCv5w" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:33aW7OwA6gp" />
+        <node concept="l2Vlx" id="33aW7OwCv5y" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="33aW7OwCv5s" role="2iSdaV" />
+      <node concept="3F0ifn" id="33aW7OwSbmy" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
       </node>
     </node>
   </node>

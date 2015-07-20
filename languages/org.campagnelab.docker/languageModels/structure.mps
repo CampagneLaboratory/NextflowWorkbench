@@ -50,7 +50,7 @@
   </registry>
   <node concept="1TIwiD" id="1D6dZ$xcXJU">
     <property role="TrG5h" value="ImageInfoForDockerContainer" />
-    <property role="MwhBj" value="${module}/icons/docker-logo-loggedout.png" />
+    <property role="MwhBj" value="${module}/icons/RunningDockerContainer-1.png" />
     <property role="3GE5qa" value="containers" />
     <property role="34LRSv" value="image info" />
     <property role="R4oN_" value="Information about a Docker image, sufficient to pull and run with the image" />
@@ -190,6 +190,7 @@
     <property role="TrG5h" value="DockerImage" />
     <property role="R4oN_" value="An image built with docker build" />
     <property role="19KtqR" value="true" />
+    <property role="MwhBj" value="${module}/icons/DockerImage-1.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5U_2ytMbL$O" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -290,6 +291,54 @@
     </node>
     <node concept="PrWs8" id="4TFseGE9J$H" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ymWtI920CP">
+    <property role="TrG5h" value="EnvInstruction" />
+    <property role="34LRSv" value="ENV" />
+    <property role="3GE5qa" value="instructions" />
+    <property role="R4oN_" value="Define an environment variable" />
+    <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+    <node concept="1TJgyj" id="3DjWPY6Pi20" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="assignments" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3DjWPY6PrI8" resolve="EnvVariableAssignment" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3DjWPY6PrI8">
+    <property role="3GE5qa" value="instructions" />
+    <property role="TrG5h" value="EnvVariableAssignment" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3ymWtI920CQ" role="1TKVEl">
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3ymWtI920CR" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3DjWPY726Wm">
+    <property role="TrG5h" value="CmdInstruction" />
+    <property role="34LRSv" value="CMD" />
+    <property role="R4oN_" value="Specifies the default command arguments for the container" />
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+    <node concept="1TJgyj" id="33aW7OwA6gp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="33aW7OwAeeF" resolve="CommandElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="33aW7OwAeeF">
+    <property role="3GE5qa" value="instructions" />
+    <property role="TrG5h" value="CommandElement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="33aW7OwAeeG" role="1TKVEl">
+      <property role="TrG5h" value="command" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
