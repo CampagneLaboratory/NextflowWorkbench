@@ -341,5 +341,18 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="33aW7Ox1oea">
+    <property role="3GE5qa" value="instructions" />
+    <property role="TrG5h" value="LabelInstruction" />
+    <property role="34LRSv" value="LABEL" />
+    <property role="R4oN_" value="Use to define meta-data for an image" />
+    <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+    <node concept="1TJgyj" id="33aW7Ox1ofp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="labels" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3DjWPY6PrI8" resolve="EnvVariableAssignment" />
+    </node>
+  </node>
 </model>
 

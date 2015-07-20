@@ -214,6 +214,9 @@
       <concept id="3515886879324562347" name="org.campagnelab.docker.structure.CommandElement" flags="ng" index="gkxfm">
         <property id="3515886879324562348" name="command" index="gkxfh" />
       </concept>
+      <concept id="3515886879331681162" name="org.campagnelab.docker.structure.LabelInstruction" flags="ng" index="hNRfR">
+        <child id="3515886879331681241" name="labels" index="hNRe$" />
+      </concept>
       <concept id="8987412447080958668" name="org.campagnelab.docker.structure.DockerImage" flags="ng" index="2E_JVc">
         <property id="8987412447080959633" name="id" index="2E_JEh" />
         <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
@@ -7447,6 +7450,16 @@
         <node concept="19SUe$" id="3DjWPY726xD" role="19SJt6">
           <property role="19SUeA" value="npm install -g docpad@6.44" />
         </node>
+      </node>
+    </node>
+    <node concept="hNRfR" id="33aW7Ox7gJh" role="VuOVn">
+      <node concept="2Wx$zn" id="33aW7Ox7gTL" role="hNRe$">
+        <property role="2LBJJH" value="a  a" />
+        <property role="2LBJJG" value="b" />
+      </node>
+      <node concept="2Wx$zn" id="33aW7Ox7gOR" role="hNRe$">
+        <property role="2LBJJH" value="a" />
+        <property role="2LBJJG" value="3" />
       </node>
     </node>
   </node>
