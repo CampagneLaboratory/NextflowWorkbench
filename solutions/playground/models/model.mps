@@ -229,6 +229,7 @@
       <concept id="8987412447080958668" name="org.campagnelab.docker.structure.DockerImage" flags="ng" index="2E_JVc">
         <property id="8987412447080959633" name="id" index="2E_JEh" />
         <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
+        <reference id="8987412447080991851" name="buildInstructions" index="2E_BxF" />
       </concept>
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
         <property id="8987412447080623507" name="options" index="2E$TAj" />
@@ -261,7 +262,9 @@
         <property id="1893262236499932075" name="email" index="VuOhi" />
       </concept>
       <concept id="1893262236499930363" name="org.campagnelab.docker.structure.Dockerfile" flags="ng" index="VuPG2">
+        <property id="8987412447078877922" name="message" index="2EHzVy" />
         <child id="1893262236499933486" name="instructions" index="VuOVn" />
+        <child id="716770353512671073" name="images" index="3blhQR" />
       </concept>
       <concept id="4202970468876401544" name="org.campagnelab.docker.structure.EnvVariableAssignment" flags="ng" index="2Wx$zn">
         <property id="4077712437829700151" name="value" index="2LBJJG" />
@@ -269,6 +272,12 @@
       </concept>
       <concept id="4202970468879724310" name="org.campagnelab.docker.structure.CmdInstruction" flags="ng" index="2XmTL9">
         <child id="3515886879324529689" name="elements" index="gkDh$" />
+      </concept>
+      <concept id="716770353512671076" name="org.campagnelab.docker.structure.ImageRef" flags="ng" index="3blhQM">
+        <reference id="716770353512671080" name="image" index="3blhQY" />
+      </concept>
+      <concept id="716770353511832166" name="org.campagnelab.docker.structure.UserInstruction" flags="ng" index="3bqe2K">
+        <property id="716770353511832167" name="username" index="3bqe2L" />
       </concept>
       <concept id="716770353510735278" name="org.campagnelab.docker.structure.WorkdirInstruction" flags="ng" index="3buUtS">
         <property id="716770353510735484" name="path" index="3buUiE" />
@@ -970,24 +979,6 @@
     </node>
   </node>
   <node concept="1lvGkW" id="VMSWAF0h1v">
-    <node concept="1lnzPE" id="7aSP7xMyf8k" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive4" />
-    </node>
-    <node concept="1lnzPE" id="7aSP7xMyf8l" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c ls -1F etc/X11" />
-    </node>
-    <node concept="1lnzPE" id="7aSP7xMyf8m" role="1lvGkX">
-      <property role="1lnzPG" value="docker execId returned: 9659ad0cbd519fdd4a1e44a07ce3ae20534285bd9516bab40e79a682290e3185" />
-    </node>
-    <node concept="1lnzPE" id="7aSP7xMyf8n" role="1lvGkX">
-      <property role="1lnzPG" value="docker ls returned: rgb.txt&#10;Xreset*&#10;Xreset.d/&#10;Xresources/&#10;Xsession*&#10;Xsession.d/&#10;Xsession.options&#10;Xwrapper.config&#10;" />
-    </node>
-    <node concept="1lnzPE" id="7aSP7xMyfbH" role="1lvGkX">
-      <property role="1lnzPG" value="Evaluating isDirectory /etc/X11/Xreset/" />
-    </node>
-    <node concept="1lnzPE" id="7aSP7xMyfbI" role="1lvGkX">
-      <property role="1lnzPG" value="cached docker ls called with path=/etc/X11/Xreset/" />
-    </node>
     <node concept="1lnzPE" id="7aSP7xMyfbJ" role="1lvGkX">
       <property role="1lnzPG" value="path=/etc/X11/Xreset/" />
     </node>
@@ -1272,6 +1263,24 @@
     </node>
     <node concept="1lnzPE" id="7aSP7xMzstD" role="1lvGkX">
       <property role="1lnzPG" value="cached docker ls called with path=etc/X11" />
+    </node>
+    <node concept="1lnzPE" id="BMuHr2HTUf" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker build" />
+    </node>
+    <node concept="1lnzPE" id="BMuHr2HU2i" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker build" />
+    </node>
+    <node concept="1lnzPE" id="BMuHr2HU7j" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker build" />
+    </node>
+    <node concept="1lnzPE" id="BMuHr2HU9b" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker build" />
+    </node>
+    <node concept="1lnzPE" id="BMuHr2Q4Dj" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker build" />
+    </node>
+    <node concept="1lnzPE" id="BMuHr2Q4F0" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker build" />
     </node>
   </node>
   <node concept="3lueso" id="irqYu7g08g">
@@ -7342,6 +7351,7 @@
   </node>
   <node concept="VuPG2" id="3ymWtI94ikR">
     <property role="TrG5h" value="SomeContainer" />
+    <property role="2EHzVy" value="wrote /Users/fac2003/Library/Caches/MPS32/tmp/dockerfile3219695529381066178.txt" />
     <node concept="VuO64" id="3ymWtI94ikS" role="VuOVn">
       <node concept="VtuK3" id="33aW7Ox0YQR" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -7498,6 +7508,9 @@
     <node concept="3buUtS" id="BMuHr2Ahs7" role="VuOVn">
       <property role="3buUiE" value="b" />
     </node>
+    <node concept="3bqe2K" id="BMuHr2DBFu" role="VuOVn">
+      <property role="3bqe2L" value="daemon" />
+    </node>
     <node concept="3buUtS" id="BMuHr2Ahs8" role="VuOVn">
       <property role="3buUiE" value="c" />
     </node>
@@ -7509,6 +7522,50 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="VuPG2" id="BMuHr2HU09">
+    <property role="TrG5h" value="SimpleImage" />
+    <property role="2EHzVy" value="wrote /Users/fac2003/Library/Caches/MPS32/tmp/dockerfile3994008918372700797.txt" />
+    <node concept="VuO64" id="BMuHr2HU0a" role="VuOVn">
+      <node concept="VtuK3" id="BMuHr2HU0b" role="VuO5T">
+        <property role="VuL0s" value="latest" />
+        <property role="VuL0v" value="fac2003" />
+        <property role="GbyUj" value="rocker-metar" />
+      </node>
+    </node>
+    <node concept="VuOhh" id="BMuHr2HU0c" role="VuOVn">
+      <property role="VuOhg" value="Fabien Campagne" />
+      <property role="VuOhi" value="fac2003@campagnelab.org" />
+    </node>
+    <node concept="VugRC" id="BMuHr2HU0J" role="VuOVn">
+      <node concept="19SGf9" id="BMuHr2HU0K" role="Vugyn">
+        <node concept="19SUe$" id="BMuHr2HU0L" role="19SJt6" />
+        <node concept="19SUe$" id="BMuHr2HU0M" role="19SJt6">
+          <property role="19SUeA" value="apt-get update" />
+        </node>
+      </node>
+    </node>
+    <node concept="3blhQM" id="BMuHr2Q4EU" role="3blhQR">
+      <ref role="3blhQY" node="BMuHr2Q4ET" resolve="SimpleImage_Image" />
+    </node>
+    <node concept="3blhQM" id="BMuHr2Q4GB" role="3blhQR">
+      <ref role="3blhQY" node="BMuHr2Q4GA" resolve="SimpleImage_Image2" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="BMuHr2HUaL">
+    <property role="2E_JEh" value="a3c45fd23542" />
+    <property role="TrG5h" value="SimpleImage_Image" />
+    <ref role="2E_BxF" node="BMuHr2HU09" resolve="SimpleImage" />
+  </node>
+  <node concept="2E_JVc" id="BMuHr2Q4ET">
+    <property role="2E_JEh" value="a3c45fd23542" />
+    <property role="TrG5h" value="SimpleImage_Image" />
+    <ref role="2E_BxF" node="BMuHr2HU09" resolve="SimpleImage" />
+  </node>
+  <node concept="2E_JVc" id="BMuHr2Q4GA">
+    <property role="2E_JEh" value="a3c45fd23542" />
+    <property role="TrG5h" value="SimpleImage_Image2" />
+    <ref role="2E_BxF" node="BMuHr2HU09" resolve="SimpleImage" />
   </node>
 </model>
 

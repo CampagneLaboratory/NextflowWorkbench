@@ -106,6 +106,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     </node>
+    <node concept="1TJgyj" id="BMuHr2DQtx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="images" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="BMuHr2DQt$" resolve="ImageRef" />
+    </node>
     <node concept="PrWs8" id="36oLgaWEyq3" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -398,6 +404,27 @@
     <node concept="1TJgyi" id="BMuHr2ytTW" role="1TKVEl">
       <property role="TrG5h" value="path" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="BMuHr2ADDA">
+    <property role="3GE5qa" value="instructions" />
+    <property role="TrG5h" value="UserInstruction" />
+    <property role="34LRSv" value="USER" />
+    <property role="R4oN_" value="Set the user to run as" />
+    <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+    <node concept="1TJgyi" id="BMuHr2ADDB" role="1TKVEl">
+      <property role="TrG5h" value="username" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="BMuHr2DQt$">
+    <property role="TrG5h" value="ImageRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="BMuHr2DQtC" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="image" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7MTH03mbOFc" resolve="DockerImage" />
     </node>
   </node>
 </model>

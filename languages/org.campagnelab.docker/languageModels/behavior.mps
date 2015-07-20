@@ -1063,6 +1063,64 @@
       </node>
       <node concept="3cqZAl" id="5BbChSjHCey" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="BMuHr2NDni" role="13h7CS">
+      <property role="TrG5h" value="registerImage" />
+      <node concept="37vLTG" id="BMuHr2NDt$" role="3clF46">
+        <property role="TrG5h" value="image" />
+        <node concept="3Tqbb2" id="BMuHr2NDzu" role="1tU5fm">
+          <ref role="ehGHo" to="6jv6:7MTH03mbOFc" resolve="DockerImage" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="BMuHr2NDnj" role="1B3o_S" />
+      <node concept="3clFbS" id="BMuHr2NDnk" role="3clF47">
+        <node concept="3cpWs8" id="BMuHr2NDDo" role="3cqZAp">
+          <node concept="3cpWsn" id="BMuHr2NDDr" role="3cpWs9">
+            <property role="TrG5h" value="ref" />
+            <node concept="3Tqbb2" id="BMuHr2NDDn" role="1tU5fm">
+              <ref role="ehGHo" to="6jv6:BMuHr2DQt$" resolve="ImageRef" />
+            </node>
+            <node concept="2ShNRf" id="BMuHr2NDDD" role="33vP2m">
+              <node concept="3zrR0B" id="BMuHr2NDDB" role="2ShVmc">
+                <node concept="3Tqbb2" id="BMuHr2NDDC" role="3zrR0E">
+                  <ref role="ehGHo" to="6jv6:BMuHr2DQt$" resolve="ImageRef" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="BMuHr2NKEB" role="3cqZAp">
+          <node concept="37vLTI" id="BMuHr2NLii" role="3clFbG">
+            <node concept="37vLTw" id="BMuHr2NLj6" role="37vLTx">
+              <ref role="3cqZAo" node="BMuHr2NDt$" resolve="image" />
+            </node>
+            <node concept="2OqwBi" id="BMuHr2NKKh" role="37vLTJ">
+              <node concept="37vLTw" id="BMuHr2NKE_" role="2Oq$k0">
+                <ref role="3cqZAo" node="BMuHr2NDDr" resolve="ref" />
+              </node>
+              <node concept="3TrEf2" id="BMuHr2NL5E" role="2OqNvi">
+                <ref role="3Tt5mk" to="6jv6:BMuHr2DQtC" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="BMuHr2NDGN" role="3cqZAp">
+          <node concept="2OqwBi" id="BMuHr2NFpM" role="3clFbG">
+            <node concept="2OqwBi" id="BMuHr2NEcE" role="2Oq$k0">
+              <node concept="13iPFW" id="BMuHr2NDGL" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="BMuHr2NEBJ" role="2OqNvi">
+                <ref role="3TtcxE" to="6jv6:BMuHr2DQtx" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="BMuHr2NKBi" role="2OqNvi">
+              <node concept="37vLTw" id="BMuHr2NKBo" role="25WWJ7">
+                <ref role="3cqZAo" node="BMuHr2NDDr" resolve="ref" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="BMuHr2NDtx" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="1hjSjLb6Au2" role="13h7CS">
       <property role="TrG5h" value="parseInstructions" />
       <property role="2Ki8OM" value="true" />
@@ -3841,6 +3899,19 @@
                           </node>
                           <node concept="3TrEf2" id="6aaEnU91pzu" role="2OqNvi">
                             <ref role="3Tt5mk" to="6jv6:7MTH03mbWLF" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="BMuHr2FXXY" role="3cqZAp">
+                      <node concept="2OqwBi" id="BMuHr2NDmT" role="3clFbG">
+                        <node concept="37vLTw" id="BMuHr2NDjl" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7MTH03mctFL" resolve="dockerFile" />
+                        </node>
+                        <node concept="2qgKlT" id="BMuHr2OVqV" role="2OqNvi">
+                          <ref role="37wK5l" node="BMuHr2NDni" resolve="registerImage" />
+                          <node concept="37vLTw" id="BMuHr2OVDm" role="37wK5m">
+                            <ref role="3cqZAo" node="6aaEnU91pz2" resolve="image" />
                           </node>
                         </node>
                       </node>
@@ -9274,6 +9345,73 @@
         <node concept="17QB3L" id="BMuHr2yuPJ" role="1tU5fm" />
       </node>
       <node concept="3Tqbb2" id="BMuHr2yuPK" role="3clF45">
+        <ref role="ehGHo" to="6jv6:1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="BMuHr2ADIK">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="13h7C2" to="6jv6:BMuHr2ADDA" resolve="UserInstruction" />
+    <node concept="13hLZK" id="BMuHr2ADIL" role="13h7CW">
+      <node concept="3clFbS" id="BMuHr2ADIM" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="BMuHr2ADIN" role="13h7CS">
+      <property role="TrG5h" value="parse" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="1hjSjLb6kbW" resolve="parse" />
+      <node concept="3Tm1VV" id="BMuHr2ADIO" role="1B3o_S" />
+      <node concept="3clFbS" id="BMuHr2ADIP" role="3clF47">
+        <node concept="3cpWs8" id="BMuHr2ADIQ" role="3cqZAp">
+          <node concept="3cpWsn" id="BMuHr2ADIR" role="3cpWs9">
+            <property role="TrG5h" value="tokens" />
+            <node concept="10Q1$e" id="BMuHr2ADIS" role="1tU5fm">
+              <node concept="17QB3L" id="BMuHr2ADIT" role="10Q1$1" />
+            </node>
+            <node concept="2OqwBi" id="BMuHr2ADIU" role="33vP2m">
+              <node concept="35c_gC" id="BMuHr2ADIV" role="2Oq$k0">
+                <ref role="35c_gD" to="6jv6:1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+              </node>
+              <node concept="2qgKlT" id="BMuHr2ADIW" role="2OqNvi">
+                <ref role="37wK5l" node="1hjSjLb6tAu" resolve="tokens" />
+                <node concept="37vLTw" id="BMuHr2ADIX" role="37wK5m">
+                  <ref role="3cqZAo" node="BMuHr2ADJa" resolve="line" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="BMuHr2ADIY" role="3cqZAp">
+          <node concept="37vLTI" id="BMuHr2ADIZ" role="3clFbG">
+            <node concept="AH0OO" id="BMuHr2ADJ0" role="37vLTx">
+              <node concept="3cmrfG" id="BMuHr2ADJ1" role="AHEQo">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="37vLTw" id="BMuHr2ADJ2" role="AHHXb">
+                <ref role="3cqZAo" node="BMuHr2ADIR" resolve="tokens" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="BMuHr2ADJ3" role="37vLTJ">
+              <node concept="13iPFW" id="BMuHr2ADJ4" role="2Oq$k0" />
+              <node concept="3TrcHB" id="BMuHr2AF6L" role="2OqNvi">
+                <ref role="3TsBF5" to="6jv6:BMuHr2ADDB" resolve="username" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="BMuHr2ADJ6" role="3cqZAp">
+          <node concept="13iPFW" id="BMuHr2ADJ7" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="BMuHr2ADJ8" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="BMuHr2ADJ9" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="BMuHr2ADJa" role="3clF46">
+        <property role="TrG5h" value="line" />
+        <node concept="17QB3L" id="BMuHr2ADJb" role="1tU5fm" />
+      </node>
+      <node concept="3Tqbb2" id="BMuHr2ADJc" role="3clF45">
         <ref role="ehGHo" to="6jv6:1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
       </node>
     </node>

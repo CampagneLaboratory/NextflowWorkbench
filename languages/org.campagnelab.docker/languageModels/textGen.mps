@@ -550,5 +550,26 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="BMuHr2BJtn">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="WuzLi" to="6jv6:BMuHr2ADDA" resolve="UserInstruction" />
+    <node concept="11bSqf" id="BMuHr2BJto" role="11c4hB">
+      <node concept="3clFbS" id="BMuHr2BJtp" role="2VODD2">
+        <node concept="lc7rE" id="BMuHr2BJwz" role="3cqZAp">
+          <node concept="la8eA" id="BMuHr2BJwE" role="lcghm">
+            <property role="lacIc" value="USER " />
+          </node>
+          <node concept="l9hG8" id="BMuHr2BJwQ" role="lcghm">
+            <node concept="2OqwBi" id="BMuHr2BJyX" role="lb14g">
+              <node concept="117lpO" id="BMuHr2BJx0" role="2Oq$k0" />
+              <node concept="3TrcHB" id="BMuHr2BJPA" role="2OqNvi">
+                <ref role="3TsBF5" to="6jv6:BMuHr2ADDB" resolve="username" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
