@@ -8,7 +8,6 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
-    <import index="trsn" ref="r:f0ddd417-c8a1-40da-9335-f5b63a47dd8c(build.plugins)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -234,7 +233,7 @@
     <node concept="2G$12M" id="4oJiZHqTePJ" role="3989C9">
       <property role="TrG5h" value="NextflowWorkbench" />
       <node concept="1E1JtA" id="4oJiZHqTePC" role="2G$12L">
-        <property role="BnDLt" value="false" />
+        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.campagnelab.workflow.run" />
         <property role="3LESm3" value="c039a1a6-4680-46fa-b571-a6a5f1e49ab6" />
         <property role="2GAjPV" value="false" />
@@ -335,7 +334,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="4oJiZHqTePI" role="2G$12L">
-        <property role="BnDLt" value="false" />
+        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.campagnelab.workflow" />
         <property role="3LESm3" value="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" />
         <property role="2GAjPV" value="false" />
