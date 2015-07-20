@@ -619,5 +619,34 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="BMuHr32gJA">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="WuzLi" to="6jv6:BMuHr32gzA" resolve="EntrypointInstruction" />
+    <node concept="11bSqf" id="BMuHr32gJB" role="11c4hB">
+      <node concept="3clFbS" id="BMuHr32gJC" role="2VODD2">
+        <node concept="lc7rE" id="BMuHr32gNH" role="3cqZAp">
+          <node concept="la8eA" id="BMuHr32gNI" role="lcghm">
+            <property role="lacIc" value="ENTRYPOINT " />
+          </node>
+          <node concept="la8eA" id="BMuHr32gNJ" role="lcghm">
+            <property role="lacIc" value="[" />
+          </node>
+          <node concept="l9S2W" id="BMuHr32gNK" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value="," />
+            <node concept="2OqwBi" id="BMuHr32gNL" role="lbANJ">
+              <node concept="117lpO" id="BMuHr32gNM" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="BMuHr32gNN" role="2OqNvi">
+                <ref role="3TtcxE" to="6jv6:33aW7OwA6gp" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="BMuHr32gNO" role="lcghm">
+            <property role="lacIc" value="]" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

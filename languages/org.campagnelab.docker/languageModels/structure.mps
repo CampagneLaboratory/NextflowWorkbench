@@ -456,5 +456,18 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="BMuHr32gzA">
+    <property role="TrG5h" value="EntrypointInstruction" />
+    <property role="34LRSv" value="ENTRYPOINT" />
+    <property role="R4oN_" value="Specifies the default command/entry point" />
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1TJDcQ" node="3DjWPY726Wm" resolve="CmdInstruction" />
+    <node concept="1TJgyj" id="BMuHr32gzB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="33aW7OwAeeF" resolve="CommandElement" />
+    </node>
+  </node>
 </model>
 

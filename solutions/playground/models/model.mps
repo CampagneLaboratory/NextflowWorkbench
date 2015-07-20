@@ -277,6 +277,7 @@
       <concept id="4202970468879724310" name="org.campagnelab.docker.structure.CmdInstruction" flags="ng" index="2XmTL9">
         <child id="3515886879324529689" name="elements" index="gkDh$" />
       </concept>
+      <concept id="716770353519069414" name="org.campagnelab.docker.structure.EntrypointInstruction" flags="ng" index="3aYR8K" />
       <concept id="716770353515919183" name="org.campagnelab.docker.structure.CopyInstruction" flags="ng" index="3baCQp" />
       <concept id="716770353516261633" name="org.campagnelab.docker.structure.SourceFile" flags="ng" index="3bb4Jn">
         <property id="716770353516261714" name="path" index="3bb4I4" />
@@ -7500,6 +7501,34 @@
       <node concept="2Wx$zn" id="33aW7Ox7gOR" role="hNRe$">
         <property role="2LBJJH" value="a" />
         <property role="2LBJJG" value="3" />
+      </node>
+    </node>
+    <node concept="3aYR8K" id="BMuHr34hv2" role="VuOVn">
+      <node concept="gkxfm" id="BMuHr34hv3" role="gkDh$">
+        <property role="gkxfh" value="executable" />
+      </node>
+      <node concept="gkxfm" id="BMuHr34hv4" role="gkDh$">
+        <property role="gkxfh" value="param1" />
+      </node>
+      <node concept="gkxfm" id="BMuHr34hv5" role="gkDh$">
+        <property role="gkxfh" value="param2" />
+      </node>
+    </node>
+    <node concept="3aYR8K" id="BMuHr3596o" role="VuOVn">
+      <node concept="gkxfm" id="BMuHr3596p" role="gkDh$">
+        <property role="gkxfh" value="/bin/sh" />
+      </node>
+      <node concept="gkxfm" id="BMuHr3596q" role="gkDh$">
+        <property role="gkxfh" value="-c" />
+      </node>
+      <node concept="gkxfm" id="BMuHr3596r" role="gkDh$">
+        <property role="gkxfh" value="command" />
+      </node>
+      <node concept="gkxfm" id="BMuHr3596s" role="gkDh$">
+        <property role="gkxfh" value="param1" />
+      </node>
+      <node concept="gkxfm" id="BMuHr3596t" role="gkDh$">
+        <property role="gkxfh" value="param2" />
       </node>
     </node>
     <node concept="hSj51" id="33aW7Oxfb3Z" role="VuOVn">

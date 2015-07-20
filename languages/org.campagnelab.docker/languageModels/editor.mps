@@ -1340,5 +1340,25 @@
       <node concept="l2Vlx" id="BMuHr30TEc" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="BMuHr32gBy">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1XX52x" to="6jv6:BMuHr32gzA" resolve="EntrypointInstruction" />
+    <node concept="3EZMnI" id="BMuHr32gJ6" role="2wV5jI">
+      <node concept="3F0ifn" id="BMuHr32gJd" role="3EZMnx">
+        <property role="3F0ifm" value="ENTRYPOINT" />
+      </node>
+      <node concept="3F0ifn" id="BMuHr34iLt" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F2HdR" id="BMuHr32gJj" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:BMuHr32gzB" />
+        <node concept="l2Vlx" id="BMuHr32gJl" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="BMuHr32gJ9" role="2iSdaV" />
+      <node concept="3F0ifn" id="BMuHr34iLD" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+    </node>
+  </node>
 </model>
 
