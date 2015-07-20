@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.campagnelab.workflow.scripts" uuid="316e8289-cb69-4927-8bfe-edde5cd32037" version="0">
+<language namespace="org.campagnelab.workflow.languages" uuid="316e8289-cb69-4927-8bfe-edde5cd32037" version="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="org.campagnelab.workflow.scripts#2613339075984005628" uuid="a953ec99-49a8-418c-a187-d9076e97113d">
+    <generator generatorUID="org.campagnelab.workflow.languages#2613339075984005628" uuid="a953ec99-49a8-418c-a187-d9076e97113d">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -17,7 +17,7 @@
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
-        <usedLanguage>316e8289-cb69-4927-8bfe-edde5cd32037(org.campagnelab.workflow.scripts)</usedLanguage>
+        <usedLanguage>316e8289-cb69-4927-8bfe-edde5cd32037(org.campagnelab.workflow.languages)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -38,16 +38,19 @@
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="0" />
-        <language id="316e8289-cb69-4927-8bfe-edde5cd32037" fqName="org.campagnelab.workflow.scripts" version="-1" />
+        <language id="316e8289-cb69-4927-8bfe-edde5cd32037" fqName="org.campagnelab.workflow.languages" version="-1" />
       </languageVersions>
       <mapping-priorities />
     </generator>
   </generators>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="true">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)</usedLanguage>
     <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
-    <usedLanguage>316e8289-cb69-4927-8bfe-edde5cd32037(org.campagnelab.workflow.scripts)</usedLanguage>
+    <usedLanguage>316e8289-cb69-4927-8bfe-edde5cd32037(org.campagnelab.workflow.languages)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -86,7 +89,7 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="0" />
-    <language id="316e8289-cb69-4927-8bfe-edde5cd32037" fqName="org.campagnelab.workflow.scripts" version="0" />
+    <language id="316e8289-cb69-4927-8bfe-edde5cd32037" fqName="org.campagnelab.workflow.languages" version="0" />
   </languageVersions>
   <extendedLanguages>
     <extendedLanguage>c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)</extendedLanguage>

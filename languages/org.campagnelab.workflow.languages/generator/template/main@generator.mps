@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:36ab5a6c-c2bc-403c-a003-0455a37c0577(org.campagnelab.workflow.scripts.generator.template.main@generator)">
+<model ref="r:36ab5a6c-c2bc-403c-a003-0455a37c0577(org.campagnelab.workflow.languages.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
