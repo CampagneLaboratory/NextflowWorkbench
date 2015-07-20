@@ -376,5 +376,18 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="33aW7OxgBTc">
+    <property role="3GE5qa" value="instructions" />
+    <property role="TrG5h" value="OnBuildInstruction" />
+    <property role="34LRSv" value="ONBUILD" />
+    <property role="R4oN_" value="Execute this intruction on the next build that uses this image (FROM)" />
+    <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+    <node concept="1TJgyj" id="33aW7OxgBUl" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="instruction" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+    </node>
+  </node>
 </model>
 

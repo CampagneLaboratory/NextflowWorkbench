@@ -7476,14 +7476,6 @@
         <property role="hSj7b" value="222" />
       </node>
     </node>
-    <node concept="hSj51" id="33aW7OxgfRT" role="VuOVn">
-      <node concept="hSj7u" id="33aW7OxgfRU" role="hSjk3">
-        <property role="hSj7b" value="3434" />
-      </node>
-      <node concept="hSj7u" id="33aW7OxgfRV" role="hSjk3">
-        <property role="hSj7b" value="222" />
-      </node>
-    </node>
   </node>
 </model>
 

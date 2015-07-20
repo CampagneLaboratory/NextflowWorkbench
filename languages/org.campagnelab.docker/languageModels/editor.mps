@@ -1237,5 +1237,18 @@
       <ref role="1NtTu8" to="6jv6:33aW7OxaW6Q" resolve="number" />
     </node>
   </node>
+  <node concept="24kQdi" id="33aW7OxgBUs">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1XX52x" to="6jv6:33aW7OxgBTc" resolve="nBuildInstruction" />
+    <node concept="3EZMnI" id="33aW7OxgC1o" role="2wV5jI">
+      <node concept="3F0ifn" id="33aW7OxgC1v" role="3EZMnx">
+        <property role="3F0ifm" value="ONBUILD" />
+      </node>
+      <node concept="3F1sOY" id="33aW7OxgC1_" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:33aW7OxgBUl" />
+      </node>
+      <node concept="l2Vlx" id="33aW7OxgC1r" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
