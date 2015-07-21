@@ -44,7 +44,7 @@ public class Language extends LanguageRuntime {
   }
   @Override
   public Collection<TemplateModule> getGenerators() {
-    return TemplateUtil.<TemplateModule>asCollection(TemplateUtil.createInterpretedGenerator(this, "597ce3f0-8d25-41b5-ae5e-1cf342507ff6(org.campagnelab.workflow#7457140171610884905)"));
+    return TemplateUtil.<TemplateModule>asCollection(TemplateUtil.createInterpretedGenerator(this, "74f88e3b-6560-4b8e-b494-6ac3e36982ec(org.campagnelab.workflow#4801669429698558903)"));
   }
   @Override
   protected <T extends LanguageAspectDescriptor> T createAspectDescriptor(Class<T> descriptorClass) {
