@@ -186,9 +186,6 @@
       <concept id="3855674281012525970" name="org.campagnelab.workflow.structure.GlobalIntegerLiteralList" flags="ng" index="2$RA36">
         <child id="3855674281012525971" name="integer" index="2$RA37" />
       </concept>
-      <concept id="3855674281012525767" name="org.campagnelab.workflow.structure.GlobalStringLiteralList" flags="ng" index="2$RA6j">
-        <child id="3855674281012525912" name="string" index="2$RA0c" />
-      </concept>
       <concept id="3855674281012525202" name="org.campagnelab.workflow.structure.GlobalBooleanLiteral" flags="ng" index="2$RAf6" />
       <concept id="3855674281012526088" name="org.campagnelab.workflow.structure.GlobalFileLiteralList" flags="ng" index="2$RAts">
         <child id="3855674281012526239" name="file" index="2$RAvb" />
@@ -208,12 +205,6 @@
       </concept>
       <concept id="5930160417407206502" name="org.campagnelab.workflow.structure.ConditionalExpressionText" flags="ng" index="2AVUOs">
         <child id="5930160417407206503" name="text" index="2AVUOt" />
-      </concept>
-      <concept id="3389024761279334223" name="org.campagnelab.workflow.structure.CollateStepSize" flags="ng" index="2C1JHv">
-        <property id="3389024761279335520" name="stepSize" index="2C1J1K" />
-      </concept>
-      <concept id="3389024761279333047" name="org.campagnelab.workflow.structure.CollateAllowIncompleteTuples" flags="ng" index="2C1JUB">
-        <property id="3389024761279333625" name="allowIncomplete" index="2C1JzD" />
       </concept>
       <concept id="3389024761263420810" name="org.campagnelab.workflow.structure.GlobalTupleListExpression" flags="ng" index="2D4WAq">
         <child id="3389024761263427870" name="list" index="2D52Oe" />
@@ -252,8 +243,6 @@
       <concept id="3857878650533844000" name="org.campagnelab.workflow.structure.ToSortedList" flags="ng" index="1yaYgh" />
       <concept id="3857878650533842545" name="org.campagnelab.workflow.structure.Collate" flags="ng" index="1yaZT0">
         <property id="3857878650533843272" name="n" index="1yaY5T" />
-        <child id="3389024761279334185" name="option" index="2C1JGT" />
-        <child id="3389024761282619905" name="allowIncomplete" index="2Cidoh" />
       </concept>
       <concept id="3857878650533842792" name="org.campagnelab.workflow.structure.Flatten" flags="ng" index="1yaZXp" />
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
@@ -672,131 +661,6 @@
       </node>
     </node>
   </node>
-  <node concept="2$rMIF" id="ZOADNCEA22">
-    <property role="TrG5h" value="SimpleTypeBoolean" />
-    <node concept="1CVceo" id="ZOADNCEA2e" role="2$L6iY">
-      <property role="TrG5h" value="booleanList" />
-      <node concept="2$PL17" id="ZOADNCEA2i" role="2$L62I">
-        <node concept="2$RAf6" id="ZOADNCEA2k" role="2$RAu8" />
-        <node concept="2$RAf6" id="ZOADNCEA2o" role="2$RAu8" />
-      </node>
-    </node>
-    <node concept="2LyH2v" id="ZOADNCEA2b" role="2LyH5s" />
-    <node concept="2$rEH5" id="ZOADNCEA24" role="2$rEHq">
-      <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTestWithBools" />
-      <node concept="1uYdA0" id="ZOADNCEA3b" role="1uLvPH">
-        <ref role="1uK_4X" node="ZOADNCEA2e" resolve="booleanList" />
-        <node concept="1yaZT0" id="ZOADNDt3j2" role="1ylr64">
-          <property role="1yaY5T" value="3" />
-          <node concept="2C1JUB" id="6sdFEaZLMMD" role="2C1JGT" />
-        </node>
-        <node concept="1yaZXp" id="ZOADNCIMKx" role="1ylr64" />
-        <node concept="1yaZT0" id="ZOADNDe4A_" role="1ylr64">
-          <property role="1yaY5T" value="4" />
-          <node concept="2C1JHv" id="7b1yRZVcSwk" role="2C1JGT">
-            <property role="2C1J1K" value="4" />
-          </node>
-          <node concept="2C1JUB" id="7b1yRZVcSy3" role="2Cidoh">
-            <property role="2C1JzD" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2$rMIF" id="3JbPZMXSrZN">
-    <property role="TrG5h" value="SimpleTypeList" />
-    <node concept="2LyH2v" id="3JbPZMXSs3i" role="2LyH5s" />
-    <node concept="2$rEH5" id="3JbPZMXSrZP" role="2$rEHq">
-      <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
-      <node concept="1uYdA0" id="3JbPZMXSs95" role="1uLvPH">
-        <ref role="1uK_4X" node="3JbPZMXSs3l" resolve="ints" />
-        <node concept="1yaYav" id="3JbPZMXSs9d" role="1ylr64" />
-      </node>
-    </node>
-    <node concept="1CVceo" id="3JbPZMXSs3l" role="2$L6iY">
-      <property role="TrG5h" value="ints" />
-      <node concept="2$PLs2" id="3JbPZMXSs5F" role="2$L62I">
-        <node concept="2$RDDD" id="3JbPZMXSs69" role="2$RAuO">
-          <property role="2$RDDE" value="3" />
-        </node>
-        <node concept="2$RDDD" id="3JbPZMXSs75" role="2$RAuO">
-          <property role="2$RDDE" value="4" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2$rMIF" id="3JbPZMY0QMF">
-    <property role="TrG5h" value="SimpleFlattenTest" />
-    <node concept="2LyH2v" id="3JbPZMY0QQi" role="2LyH5s" />
-    <node concept="2$rEH5" id="3JbPZMY0QMH" role="2$rEHq">
-      <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
-      <node concept="1uYdA0" id="3JbPZMY0R0v" role="1uLvPH">
-        <ref role="1uK_4X" node="3JbPZMY0QQl" resolve="ints" />
-        <node concept="1yaZXp" id="3JbPZMY0R0G" role="1ylr64" />
-      </node>
-      <node concept="1uLkD0" id="3JbPZMY0R2B" role="1uLvPA">
-        <property role="TrG5h" value="Z" />
-      </node>
-    </node>
-    <node concept="2$rEH5" id="3JbPZMY0R34" role="2$rEHq">
-      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combine" />
-      <node concept="1uYdA0" id="3f$SU0Ydnay" role="1uLvPH">
-        <ref role="1uK_4X" node="3JbPZMY0R2B" resolve="Z" />
-        <node concept="1yaZXp" id="3f$SU0Ydnbt" role="1ylr64" />
-      </node>
-    </node>
-    <node concept="2$rEH5" id="4Tfcfnm7sVH" role="2$rEHq">
-      <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
-      <node concept="1uYdA0" id="4Tfcfnm7sVQ" role="1uLvPH">
-        <ref role="1uK_4X" node="4Tfcfnm7sR7" resolve="strings" />
-        <node concept="1yaZXp" id="4Tfcfnm7sW3" role="1ylr64" />
-        <node concept="1yaYav" id="4Tfcfnm7sZH" role="1ylr64" />
-      </node>
-      <node concept="1uLkD0" id="5ok1XDkR4N_" role="1uLvPA">
-        <property role="TrG5h" value="W" />
-      </node>
-    </node>
-    <node concept="2$rEH5" id="5ok1XDlU7uM" role="2$rEHq">
-      <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTestWithBools" />
-      <node concept="1uYdA0" id="5ok1XDlU7z8" role="1uLvPH">
-        <ref role="1uK_4X" node="5ok1XDlU7v2" resolve="ints2" />
-        <node concept="1yaZXp" id="5ok1XDlU7zB" role="1ylr64" />
-      </node>
-    </node>
-    <node concept="1CVceo" id="3JbPZMY0QQl" role="2$L6iY">
-      <property role="TrG5h" value="ints" />
-      <node concept="2$PLor" id="3JbPZMY0QQt" role="2$L62I">
-        <node concept="2$RA36" id="3JbPZMY0QQW" role="2$RAuQ">
-          <node concept="2$RDDD" id="3JbPZMY0QSe" role="2$RA37">
-            <property role="2$RDDE" value="3" />
-          </node>
-          <node concept="2$RDDD" id="3JbPZMY0QUS" role="2$RA37">
-            <property role="2$RDDE" value="4" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1CVceo" id="5ok1XDlU7v2" role="2$L6iY">
-      <property role="TrG5h" value="ints2" />
-      <node concept="2$PLor" id="5ok1XDlU7w2" role="2$L62I">
-        <node concept="2$RA36" id="5ok1XDlU7wx" role="2$RAuQ">
-          <node concept="2$RDDD" id="5ok1XDlU7xN" role="2$RA37">
-            <property role="2$RDDE" value="5" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1CVceo" id="4Tfcfnm7sR7" role="2$L6iY">
-      <property role="TrG5h" value="strings" />
-      <node concept="2$PLor" id="4Tfcfnm7sRs" role="2$L62I">
-        <node concept="2$RA6j" id="4Tfcfnm7sRV" role="2$RAuQ">
-          <node concept="2$RDGe" id="4Tfcfnm7sTd" role="2$RA0c">
-            <property role="2$RDGf" value="awefaf" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="2$rMIF" id="5ok1XDkUCNF">
     <property role="TrG5h" value="ChannelTypeMatchTest" />
     <node concept="2$rEH5" id="5ok1XDmkVRC" role="2$rEHq">
@@ -856,6 +720,7 @@
       <node concept="1uYdA0" id="5ok1XDl8JbO" role="1uLvPH">
         <ref role="1uK_4X" node="5ok1XDl8Ja5" resolve="conditionOut" />
       </node>
+      <node concept="1uLkD0" id="2rkU84PeIKb" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="5ok1XDl8Jnv" role="2$rEHq">
       <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
@@ -881,6 +746,7 @@
         <ref role="1uK_4X" node="5ok1XDlU6Um" resolve="listInts" />
         <node concept="1yaZXp" id="5ok1XDn5oX4" role="1ylr64" />
       </node>
+      <node concept="1uLkD0" id="2rkU84PeFb8" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="5ok1XDlQBgy" role="2$rEHq">
       <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
@@ -889,6 +755,7 @@
         <node concept="1yaYav" id="5ok1XDlU6Rz" role="1ylr64" />
         <node concept="1yaYgh" id="2rkU84P9EfA" role="1ylr64" />
       </node>
+      <node concept="1uLkD0" id="2rkU84PeFPr" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="PffOQSmK7w" role="2$rEHq">
       <ref role="2$rEH4" node="PffOQSmJ$r" resolve="inputRefTestWithTuple" />
@@ -907,12 +774,14 @@
       <node concept="1uYdA0" id="5ok1XDlU79P" role="1uLvPH">
         <ref role="1uK_4X" node="5ok1XDlcfAC" resolve="outputList2" />
       </node>
+      <node concept="1uLkD0" id="2rkU84PeGIa" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="5ok1XDlU7bz" role="2$rEHq">
       <ref role="2$rEH4" node="YNIIGPcu0K" resolve="conditionDummy" />
       <node concept="1uYdA0" id="5ok1XDlU7dF" role="1uLvPH">
         <ref role="1uK_4X" node="5ok1XDlU7c4" resolve="str" />
       </node>
+      <node concept="1uLkD0" id="2rkU84PeH9S" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="5ok1XDlU7fp" role="2$rEHq">
       <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTestWithBools" />
@@ -924,18 +793,21 @@
           <property role="1yaY5T" value="2" />
         </node>
       </node>
+      <node concept="1uLkD0" id="2rkU84PeH_C" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="5ok1XDlU7jZ" role="2$rEHq">
       <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTestWithBools" />
       <node concept="1uYdA0" id="5ok1XDlU7k$" role="1uLvPH">
         <ref role="1uK_4X" node="5ok1XDlU7iL" resolve="bool" />
       </node>
+      <node concept="1uLkD0" id="2rkU84PeI3G" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="5ok1XDlU7ri" role="2$rEHq">
       <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
       <node concept="1uYdA0" id="5ok1XDlU7rT" role="1uLvPH">
         <ref role="1uK_4X" node="5ok1XDlU7pv" resolve="str2" />
       </node>
+      <node concept="1uLkD0" id="2rkU84PeIhG" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="5ok1XDmXUb9" role="2$rEHq">
       <ref role="2$rEH4" node="5ok1XDmh2WI" resolve="inputRefTestWithFileList" />
@@ -1182,18 +1054,20 @@
   </node>
   <node concept="2ulcR8" id="5ok1XDmh2WI">
     <property role="TrG5h" value="inputRefTestWithFileList" />
-    <node concept="3Y$Zt1" id="5ok1XDn9GE$" role="2ulM7a">
-      <node concept="19SGf9" id="5ok1XDn9GEA" role="3Y$PkS">
-        <node concept="19SUe$" id="5ok1XDn9GEH" role="19SJt6" />
-        <node concept="3YE7tV" id="5ok1XDn9GEG" role="19SJt6">
-          <ref role="3YE7sm" node="5ok1XDmh2WL" resolve="fileList" />
-        </node>
-        <node concept="19SUe$" id="5ok1XDn9GEI" role="19SJt6" />
-      </node>
-    </node>
     <node concept="04KEa" id="5ok1XDmh2WK" role="2ulM7n">
       <node concept="04MM2" id="5ok1XDmh2WL" role="04Qyx">
         <property role="TrG5h" value="fileList" />
+      </node>
+    </node>
+    <node concept="UAUTO" id="2rkU84PeMBN" role="2ulM7a">
+      <node concept="3Y$Zt1" id="2rkU84PeMBR" role="2AuG1a">
+        <node concept="19SGf9" id="2rkU84PeMBT" role="3Y$PkS">
+          <node concept="19SUe$" id="2rkU84PeMC0" role="19SJt6" />
+          <node concept="3YE7tV" id="2rkU84PeMBZ" role="19SJt6">
+            <ref role="3YE7sm" node="5ok1XDmh2WL" resolve="fileList" />
+          </node>
+          <node concept="19SUe$" id="2rkU84PeMC1" role="19SJt6" />
+        </node>
       </node>
     </node>
   </node>

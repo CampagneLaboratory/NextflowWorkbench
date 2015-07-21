@@ -47,15 +47,25 @@
   </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2613339075984406752">
     <file name="ValueInAChannelRef_TextGen.java">
-      <node id="2613339075984407223" at="12,42,13,324" concept="0" />
-      <node id="2613339075984407223" at="12,42,13,324" concept="1" />
-      <node id="2613339075984406752" at="12,0,15,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="2613339075984406752" at="12,42,13,324" />
-      <scope id="2613339075984407223" at="12,42,13,324" />
-      <scope id="2613339075984406752" at="12,0,15,0">
+      <node id="2798116910144208239" at="14,692,15,24" concept="1" />
+      <node id="2798116910144208239" at="15,24,16,326" concept="1" />
+      <node id="2798116910144208239" at="16,326,17,23" concept="1" />
+      <node id="2798116910145418711" at="18,12,19,23" concept="1" />
+      <node id="2798116910145418711" at="19,23,20,326" concept="1" />
+      <node id="2798116910145418711" at="18,12,20,326" concept="0" />
+      <node id="2798116910144208239" at="14,692,17,23" concept="0" />
+      <node id="2798116910145419426" at="18,10,21,5" concept="0" />
+      <node id="2798116910144200607" at="13,42,21,5" concept="3" />
+      <node id="2613339075984406752" at="13,0,23,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="2798116910145418711" at="18,12,20,326" />
+      <scope id="2798116910145419427" at="18,12,20,326" />
+      <scope id="2798116910144200609" at="14,692,17,23" />
+      <scope id="2798116910144208239" at="14,692,17,23" />
+      <scope id="2613339075984406752" at="13,42,21,5" />
+      <scope id="2613339075984406752" at="13,0,23,0">
         <var name="node" id="2613339075984406752" />
       </scope>
-      <unit id="2613339075984406752" at="11,0,16,0" name="org.campagnelab.workflow.textGen.ValueInAChannelRef_TextGen" />
+      <unit id="2613339075984406752" at="12,0,24,0" name="org.campagnelab.workflow.textGen.ValueInAChannelRef_TextGen" />
     </file>
   </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/3544328886043190012">
