@@ -290,7 +290,7 @@
       <unit at="7,0,24,0" name="org.campagnelab.workflow.behavior.TimeAllowed_BehaviorDescriptor" />
     </file>
     <file name="ToListFunction_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ToListFunction_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.ToListFunction_BehaviorDescriptor" />
     </file>
     <file name="ToList_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.ToList_BehaviorDescriptor" />
@@ -324,6 +324,34 @@
     </file>
     <file name="Workflow_BehaviorDescriptor.java">
       <unit at="13,0,30,0" name="org.campagnelab.workflow.behavior.Workflow_BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/2798116910141687608">
+    <file name="ToListFunction_Behavior.java">
+      <node id="2798116910141687701" at="15,57,16,461" concept="7" />
+      <node id="2798116910141687721" at="17,5,18,16" concept="7" />
+      <node id="2798116910141688644" at="21,456,22,461" concept="7" />
+      <node id="2798116910141688674" at="23,5,24,16" concept="7" />
+      <node id="2798116910141687608" at="12,0,14,0" concept="11" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2798116910141687699" at="14,87,17,5" concept="4" />
+      <node id="2798116910141688642" at="20,80,23,5" concept="4" />
+      <node id="2798116910141687608" at="14,0,20,0" concept="11" trace="virtual_getPreviousFunction_2798116910141687695#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2798116910141687608" at="20,0,26,0" concept="11" trace="call_getNextFunction_2798116910141688638#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2798116910141687610" at="12,43,12,43" />
+      <scope id="2798116910141687700" at="15,57,16,461" />
+      <scope id="2798116910141688643" at="21,456,22,461" />
+      <scope id="2798116910141687608" at="12,0,14,0">
+        <var name="thisNode" id="2798116910141687608" />
+      </scope>
+      <scope id="2798116910141687698" at="14,87,18,16" />
+      <scope id="2798116910141688641" at="20,80,24,16" />
+      <scope id="2798116910141687608" at="14,0,20,0">
+        <var name="thisNode" id="2798116910141687608" />
+      </scope>
+      <scope id="2798116910141687608" at="20,0,26,0">
+        <var name="thisNode" id="2798116910141687608" />
+      </scope>
+      <unit id="2798116910141687608" at="11,0,27,0" name="org.campagnelab.workflow.behavior.ToListFunction_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/3121388506944293730">

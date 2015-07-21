@@ -190,7 +190,6 @@
         <child id="3857878650537656757" name="functions" index="1ylr64" />
       </concept>
       <concept id="3857878650533843630" name="org.campagnelab.workflow.structure.ToList" flags="ng" index="1yaYav" />
-      <concept id="3857878650533842792" name="org.campagnelab.workflow.structure.Flatten" flags="ng" index="1yaZXp" />
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
       </concept>
@@ -216,13 +215,13 @@
         <ref role="1uK_4X" node="3JbPZMY4uTj" resolve="paths" />
         <node concept="1yaYav" id="3JbPZMY4v1l" role="1ylr64" />
       </node>
+      <node concept="1uLkD0" id="2rkU84P9CS6" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="3JbPZMYlz5C" role="2$rEHq">
       <ref role="2$rEH4" node="YNIIGPcu0K" resolve="conditionDummy" />
       <node concept="1uYdA0" id="3JbPZMYlzd1" role="1uLvPH">
         <ref role="1uK_4X" node="3JbPZMYlzd4" resolve="paths2" />
-        <node concept="1yaYav" id="3JbPZMYlzh2" role="1ylr64" />
-        <node concept="1yaZXp" id="3JbPZMYlziz" role="1ylr64" />
+        <node concept="1yaYav" id="2rkU84P9D1r" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="qQieKH_3pz" role="1uLvPA" />
     </node>

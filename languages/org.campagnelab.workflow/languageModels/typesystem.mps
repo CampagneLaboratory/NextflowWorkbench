@@ -68,7 +68,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -253,8 +253,8 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="3121388506938957370" name="org.campagnelab.workflow.structure.TupleType" flags="ig" index="1h3xP" />
-      <concept id="3526016120162721360" name="org.campagnelab.workflow.structure.FileType" flags="ig" index="3UtRaE" />
+      <concept id="3121388506938957370" name="org.campagnelab.workflow.structure.TupleType" flags="ng" index="1h3xP" />
+      <concept id="3526016120162721360" name="org.campagnelab.workflow.structure.FileType" flags="ng" index="3UtRaE" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1176906603202" name="jetbrains.mps.baseLanguage.collections.structure.BinaryOperation" flags="nn" index="56pJg">
@@ -2385,6 +2385,14 @@
           <node concept="35c_gC" id="3JbPZMXXuaX" role="3uHU7w">
             <ref role="35c_gD" to="tp2q:gK_YKtE" resolve="ListType" />
           </node>
+        </node>
+      </node>
+      <node concept="a7r0C" id="2rkU84OU2qQ" role="3cqZAp">
+        <node concept="Xl_RD" id="2rkU84OU2rn" role="a7wSD">
+          <property role="Xl_RC" value="Every item that is a list is flattened, such that each single entry is emitted seperately" />
+        </node>
+        <node concept="1YBJjd" id="2rkU84OU4FU" role="2OEOjV">
+          <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
         </node>
       </node>
     </node>

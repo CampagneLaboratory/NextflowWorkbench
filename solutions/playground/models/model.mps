@@ -38,7 +38,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -249,6 +249,7 @@
         <child id="3857878650537656757" name="functions" index="1ylr64" />
       </concept>
       <concept id="3857878650533843630" name="org.campagnelab.workflow.structure.ToList" flags="ng" index="1yaYav" />
+      <concept id="3857878650533844000" name="org.campagnelab.workflow.structure.ToSortedList" flags="ng" index="1yaYgh" />
       <concept id="3857878650533842545" name="org.campagnelab.workflow.structure.Collate" flags="ng" index="1yaZT0">
         <property id="3857878650533843272" name="n" index="1yaY5T" />
         <child id="3389024761279334185" name="option" index="2C1JGT" />
@@ -886,6 +887,7 @@
       <node concept="1uYdA0" id="5ok1XDlQBir" role="1uLvPH">
         <ref role="1uK_4X" node="5ok1XDlQBgT" resolve="ints2" />
         <node concept="1yaYav" id="5ok1XDlU6Rz" role="1ylr64" />
+        <node concept="1yaYgh" id="2rkU84P9EfA" role="1ylr64" />
       </node>
     </node>
     <node concept="2$rEH5" id="PffOQSmK7w" role="2$rEHq">
@@ -916,6 +918,11 @@
       <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTestWithBools" />
       <node concept="1uYdA0" id="5ok1XDlU7fW" role="1uLvPH">
         <ref role="1uK_4X" node="5ok1XDl8Jqn" resolve="outputtedList2" />
+        <node concept="1yaYgh" id="2rkU84P9Ezq" role="1ylr64" />
+        <node concept="1yaYav" id="2rkU84P9ELg" role="1ylr64" />
+        <node concept="1yaZT0" id="2rkU84P9F0$" role="1ylr64">
+          <property role="1yaY5T" value="2" />
+        </node>
       </node>
     </node>
     <node concept="2$rEH5" id="5ok1XDlU7jZ" role="2$rEHq">
