@@ -123,6 +123,7 @@
       <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.GlobalStringLiteral" flags="ng" index="2$RDGe">
         <property id="3855674281012527195" name="value" index="2$RDGf" />
       </concept>
+      <concept id="4777210630426255196" name="org.campagnelab.workflow.structure.Executor" flags="ng" index="2LyH2t" />
       <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
@@ -286,9 +287,9 @@
       </node>
     </node>
   </node>
-  <node concept="pkhaZ" id="5$YFgXZ1Dmq">
+  <node concept="pkhaZ" id="5$YFgXZ5Cgo">
     <property role="TrG5h" value="nextflow.config" />
-    <node concept="2LyH2v" id="5$YFgXZ1Dnl" role="pkh9A" />
+    <node concept="2LyH2t" id="5$YFgXZ5Cgp" role="pkh9A" />
   </node>
 </model>
 
