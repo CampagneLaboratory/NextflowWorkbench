@@ -94,7 +94,7 @@
       <property role="TrG5h" value="fastafile" />
       <node concept="2$PLry" id="15T_Bumjmdg" role="2$L62I">
         <node concept="2xgF7X" id="15T_Bumjmdh" role="2$RAua">
-          <property role="2VDI9B" value="/Users/williamdigan/Desktop/NextFlowFix/data/sample1.fasta" />
+          <property role="2VDI9B" value="${org.campagnelab.workflow.HOME}/data/sample1.fasta" />
         </node>
       </node>
     </node>

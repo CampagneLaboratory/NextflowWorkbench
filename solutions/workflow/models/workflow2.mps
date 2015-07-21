@@ -100,7 +100,7 @@
       <property role="TrG5h" value="inputPath" />
       <node concept="2$PLvr" id="6b8WuiG4iig" role="2$L62I">
         <node concept="2$RDGe" id="6b8WuiG4iiP" role="2$RAuK">
-          <property role="2$RDGf" value="/Users/williamdigan/Desktop/id.txt" />
+          <property role="2$RDGf" value="${org.campagnelab.workflow.HOME}/data/id.txt" />
         </node>
       </node>
     </node>
