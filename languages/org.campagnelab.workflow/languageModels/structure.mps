@@ -539,7 +539,7 @@
     <property role="3GE5qa" value="processOptions" />
     <property role="TrG5h" value="Queue" />
     <property role="34LRSv" value="queue" />
-    <property role="R4oN_" value="allows you to set the queue where jobs are schedules when using a grid based executor in the pipeline" />
+    <property role="R4oN_" value="allows you to set the queue where jobs are scheduled when using a grid based executor in the pipeline" />
     <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
     <node concept="1TJgyj" id="648FhJjgR8q" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
