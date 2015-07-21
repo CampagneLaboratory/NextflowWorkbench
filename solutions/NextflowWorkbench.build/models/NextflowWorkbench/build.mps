@@ -378,8 +378,8 @@
           </node>
         </node>
         <node concept="1yeLz9" id="4oJiZHqUwpG" role="1TViLv">
-          <property role="TrG5h" value="org.campagnelab.workflow#7457140171610884905" />
-          <property role="3LESm3" value="597ce3f0-8d25-41b5-ae5e-1cf342507ff6" />
+          <property role="TrG5h" value="org.campagnelab.workflow#4801669429698558903" />
+          <property role="3LESm3" value="74f88e3b-6560-4b8e-b494-6ac3e36982ec" />
           <property role="2GAjPV" value="false" />
         </node>
       </node>
