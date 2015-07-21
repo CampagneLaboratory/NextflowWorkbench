@@ -115,7 +115,7 @@
       <fileset dir="${build.tmp}/default/org.campagnelab.workflow.jar" />
     </jar>
     <jar destfile="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow-generator.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/org.campagnelab.workflow#7457140171610884905" />
+      <fileset dir="${build.tmp}/java/out/org.campagnelab.workflow#4801669429698558903" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.workflow-generator-template">
       <fileset dir="${basedir}/languages/org.campagnelab.workflow/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
@@ -157,7 +157,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.campagnelab.workflow.run, java.compile.org.campagnelab.workflow, java.compile.org.campagnelab.workflow#7457140171610884905" />
+  <target name="compileJava" depends="java.compile.org.campagnelab.workflow.run, java.compile.org.campagnelab.workflow, java.compile.org.campagnelab.workflow#4801669429698558903" />
   
   <target name="processResources" />
   
@@ -323,6 +323,7 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
@@ -378,6 +379,7 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
@@ -400,10 +402,10 @@
     </javac>
   </target>
   
-  <target name="java.compile.org.campagnelab.workflow#7457140171610884905" depends="java.compile.org.campagnelab.workflow, fetchDependencies">
+  <target name="java.compile.org.campagnelab.workflow#4801669429698558903" depends="java.compile.org.campagnelab.workflow, fetchDependencies">
     <mkdir dir="${basedir}/languages/org.campagnelab.workflow/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/org.campagnelab.workflow#7457140171610884905" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow#7457140171610884905" fork="true" includeantruntime="false">
+    <mkdir dir="${build.tmp}/java/out/org.campagnelab.workflow#4801669429698558903" />
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow#4801669429698558903" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/org.campagnelab.workflow/generator/source_gen" />
@@ -429,6 +431,7 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
