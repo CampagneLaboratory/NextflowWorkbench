@@ -5,7 +5,6 @@
 */*/classes_gen/**/*.class
 */*/classes_gen/**/trace.info
 *.class
-trace.info
 dependencies
 generated
 #QueriesGenerated.java

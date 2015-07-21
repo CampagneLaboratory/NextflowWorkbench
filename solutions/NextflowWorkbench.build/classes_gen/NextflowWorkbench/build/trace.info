@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root nodeRef="r:3c9ce9c4-b824-4204-b3ff-92b36c743d9d(NextflowWorkbench.build)/5057344449494183255">
+    <file name="NextflowWorkbench.properties">
+      <unit id="5057344449494183255" at="1,0,4,0" name="NextflowWorkbench.build.NextflowWorkbench" />
+    </file>
+    <file name="NextflowWorkbench.xml">
+      <unit id="5057344449494183255" at="1,0,457,10" name="NextflowWorkbench.build.NextflowWorkbench" />
+    </file>
+  </root>
+</debug-info>
+

@@ -163,18 +163,18 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new FileList_BehaviorDescriptor();
       case 23:
         return new GlobalFileListExpression_BehaviorDescriptor();
-      case 78:
-        return new TupleListChannel_BehaviorDescriptor();
       case 77:
         return new TupleList_BehaviorDescriptor();
-      case 39:
-        return new GlobalTupleListExpression_BehaviorDescriptor();
-      case 40:
-        return new GlobalTupleListLiteral_BehaviorDescriptor();
-      case 7:
-        return new CollateAllowIncompleteTuples_BehaviorDescriptor();
       case 8:
         return new CollateStepSize_BehaviorDescriptor();
+      case 39:
+        return new GlobalTupleListExpression_BehaviorDescriptor();
+      case 7:
+        return new CollateAllowIncompleteTuples_BehaviorDescriptor();
+      case 78:
+        return new TupleListChannel_BehaviorDescriptor();
+      case 40:
+        return new GlobalTupleListLiteral_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

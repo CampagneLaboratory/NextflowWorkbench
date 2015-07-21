@@ -38,7 +38,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -503,7 +503,7 @@
       <node concept="19SGf9" id="6YYJWE30TP3" role="3Y$PkS">
         <node concept="19SUe$" id="6YYJWE30TPa" role="19SJt6" />
         <node concept="3YE7tV" id="6YYJWE30TP9" role="19SJt6">
-          <ref role="3YE7sm" node="vHEKaW471$" resolve="bools" />
+          <ref role="3YE7sm" node="3f$SU0Y0VLj" resolve="ints" />
         </node>
         <node concept="19SUe$" id="6YYJWE30TPb" role="19SJt6">
           <property role="19SUeA" value="\n" />
@@ -671,6 +671,37 @@
       </node>
     </node>
   </node>
+  <node concept="2$rMIF" id="ZOADNCEA22">
+    <property role="TrG5h" value="SimpleTypeBoolean" />
+    <node concept="1CVceo" id="ZOADNCEA2e" role="2$L6iY">
+      <property role="TrG5h" value="booleanList" />
+      <node concept="2$PL17" id="ZOADNCEA2i" role="2$L62I">
+        <node concept="2$RAf6" id="ZOADNCEA2k" role="2$RAu8" />
+        <node concept="2$RAf6" id="ZOADNCEA2o" role="2$RAu8" />
+      </node>
+    </node>
+    <node concept="2LyH2v" id="ZOADNCEA2b" role="2LyH5s" />
+    <node concept="2$rEH5" id="ZOADNCEA24" role="2$rEHq">
+      <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTestWithBools" />
+      <node concept="1uYdA0" id="ZOADNCEA3b" role="1uLvPH">
+        <ref role="1uK_4X" node="ZOADNCEA2e" resolve="booleanList" />
+        <node concept="1yaZT0" id="ZOADNDt3j2" role="1ylr64">
+          <property role="1yaY5T" value="3" />
+          <node concept="2C1JUB" id="6sdFEaZLMMD" role="2C1JGT" />
+        </node>
+        <node concept="1yaZXp" id="ZOADNCIMKx" role="1ylr64" />
+        <node concept="1yaZT0" id="ZOADNDe4A_" role="1ylr64">
+          <property role="1yaY5T" value="4" />
+          <node concept="2C1JHv" id="7b1yRZVcSwk" role="2C1JGT">
+            <property role="2C1J1K" value="4" />
+          </node>
+          <node concept="2C1JUB" id="7b1yRZVcSy3" role="2Cidoh">
+            <property role="2C1JzD" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
   <node concept="2$rMIF" id="3JbPZMXSrZN">
     <property role="TrG5h" value="SimpleTypeList" />
     <node concept="2LyH2v" id="3JbPZMXSs3i" role="2LyH5s" />
@@ -799,25 +830,25 @@
     </node>
     <node concept="2$rEH5" id="5ok1XDlQBfw" role="2$rEHq">
       <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTestWithBools" />
+      <node concept="1uLkD0" id="66DRDNmzyIk" role="1uLvPA" />
       <node concept="1uYdA0" id="5ok1XDlQBfP" role="1uLvPH">
         <ref role="1uK_4X" node="5ok1XDlQAhs" resolve="intOut" />
       </node>
-      <node concept="1uLkD0" id="66DRDNmzyIk" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="5ok1XDl8J9A" role="2$rEHq">
       <ref role="2$rEH4" node="YNIIGPcu0K" resolve="conditionDummy" />
+      <node concept="1uLkD0" id="66DRDNmzzK4" role="1uLvPA" />
       <node concept="1uYdA0" id="5ok1XDl8J9E" role="1uLvPH">
         <ref role="1uK_4X" node="5ok1XDl8J8N" resolve="file" />
       </node>
-      <node concept="1uLkD0" id="66DRDNmzzK4" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="5ok1XDn5nNV" role="2$rEHq">
       <ref role="2$rEH4" node="YNIIGPcu0K" resolve="conditionDummy" />
+      <node concept="1uLkD0" id="66DRDNmz$sO" role="1uLvPA" />
       <node concept="1uYdA0" id="5ok1XDn5nYe" role="1uLvPH">
         <ref role="1uK_4X" node="5ok1XDn5nT$" resolve="fileList2" />
         <node concept="1yaZXp" id="5ok1XDn5o3H" role="1ylr64" />
       </node>
-      <node concept="1uLkD0" id="66DRDNmz$sO" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="5ok1XDl8JbF" role="2$rEHq">
       <ref role="2$rEH4" node="YNIIGPcu0K" resolve="conditionDummy" />
@@ -1178,37 +1209,6 @@
         </node>
         <node concept="16pRw0" id="PffOQSmJEO" role="2RIkD">
           <property role="TrG5h" value="file" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2$rMIF" id="ZOADNCEA22">
-    <property role="TrG5h" value="SimpleTypeBoolean" />
-    <node concept="1CVceo" id="ZOADNCEA2e" role="2$L6iY">
-      <property role="TrG5h" value="booleanList" />
-      <node concept="2$PL17" id="ZOADNCEA2i" role="2$L62I">
-        <node concept="2$RAf6" id="ZOADNCEA2k" role="2$RAu8" />
-        <node concept="2$RAf6" id="ZOADNCEA2o" role="2$RAu8" />
-      </node>
-    </node>
-    <node concept="2LyH2v" id="ZOADNCEA2b" role="2LyH5s" />
-    <node concept="2$rEH5" id="ZOADNCEA24" role="2$rEHq">
-      <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTestWithBools" />
-      <node concept="1uYdA0" id="ZOADNCEA3b" role="1uLvPH">
-        <ref role="1uK_4X" node="ZOADNCEA2e" resolve="booleanList" />
-        <node concept="1yaZT0" id="ZOADNDt3j2" role="1ylr64">
-          <property role="1yaY5T" value="3" />
-          <node concept="2C1JUB" id="6sdFEaZLMMD" role="2C1JGT" />
-        </node>
-        <node concept="1yaZXp" id="ZOADNCIMKx" role="1ylr64" />
-        <node concept="1yaZT0" id="ZOADNDe4A_" role="1ylr64">
-          <property role="1yaY5T" value="4" />
-          <node concept="2C1JHv" id="7b1yRZVcSwk" role="2C1JGT">
-            <property role="2C1J1K" value="4" />
-          </node>
-          <node concept="2C1JUB" id="7b1yRZVcSy3" role="2Cidoh">
-            <property role="2C1JzD" value="false" />
-          </node>
         </node>
       </node>
     </node>

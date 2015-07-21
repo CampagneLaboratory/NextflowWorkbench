@@ -47,6 +47,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
@@ -65,7 +66,7 @@
         <child id="1139535280620" name="executeFunction" index="1hA7z_" />
       </concept>
       <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
-      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
       <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
@@ -85,23 +86,23 @@
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
-      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" index="3F2HdR" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
       </concept>
-      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
+      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
@@ -121,7 +122,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -557,7 +558,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3ETEwC$n1Ys">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <ref role="1XX52x" to="iowz:5c2H0VLJOEo" resolve="ScriptBooleanArgs" />
     <node concept="3EZMnI" id="3ETEwC$n1Yu" role="2wV5jI">
       <node concept="3F0ifn" id="3ETEwC$n1Y_" role="3EZMnx">
@@ -576,7 +577,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3ETEwC$n1Zd">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <ref role="1XX52x" to="iowz:5c2H0VLJOBo" resolve="ScriptIntegerArgs" />
     <node concept="3EZMnI" id="3ETEwC$n1Zf" role="2wV5jI">
       <node concept="3F0ifn" id="3ETEwC$n1Zp" role="3EZMnx">
@@ -595,7 +596,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3ETEwC$n202">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <ref role="1XX52x" to="iowz:dxSprUGgfG" resolve="ScriptStringArgs" />
     <node concept="3EZMnI" id="3ETEwC$n204" role="2wV5jI">
       <node concept="3F0ifn" id="3ETEwC$n20b" role="3EZMnx">
@@ -614,7 +615,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="70dPcAeCQ1r">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <ref role="1XX52x" to="iowz:70dPcAeBye8" resolve="RichScript" />
     <node concept="3F1sOY" id="70dPcAeCQJe" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:70dPcAeBC7L" />
@@ -679,7 +680,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3m9W35nqLcN">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <ref role="1XX52x" to="iowz:3m9W35noFal" resolve="ScriptListArgs" />
     <node concept="3EZMnI" id="3m9W35nqLVO" role="2wV5jI">
       <node concept="3F0ifn" id="3m9W35nqLVV" role="3EZMnx">
@@ -706,21 +707,21 @@
     </node>
   </node>
   <node concept="24kQdi" id="3m9W35nxYor">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <ref role="1XX52x" to="iowz:3m9W35nx3Yq" resolve="BooleanElement" />
     <node concept="3F0A7n" id="3m9W35nxYot" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:3m9W35nx3Yr" resolve="bool" />
     </node>
   </node>
   <node concept="24kQdi" id="3m9W35nxYo_">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <ref role="1XX52x" to="iowz:3m9W35nx3Yk" resolve="IntegerElement" />
     <node concept="3F0A7n" id="3m9W35nxYoB" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:3m9W35nx3Yl" resolve="int" />
     </node>
   </node>
   <node concept="24kQdi" id="3m9W35nxYoJ">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <ref role="1XX52x" to="iowz:3m9W35nx3Yn" resolve="StringElement" />
     <node concept="3F0A7n" id="3m9W35nxYoL" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:3m9W35nx3Yo" resolve="str" />
@@ -849,14 +850,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="235lbi5IybY">
-    <property role="3GE5qa" value="Executors" />
+    <property role="3GE5qa" value="executors" />
     <ref role="1XX52x" to="iowz:49c3W7NLHXu" resolve="SGE" />
     <node concept="3F0ifn" id="235lbi5ICNi" role="2wV5jI">
       <property role="3F0ifm" value="sge" />
     </node>
   </node>
   <node concept="24kQdi" id="235lbi5ICNr">
-    <property role="3GE5qa" value="Executors" />
+    <property role="3GE5qa" value="executors" />
     <ref role="1XX52x" to="iowz:49c3W7NLHXt" resolve="Local" />
     <node concept="3F0ifn" id="235lbi5ICNt" role="2wV5jI">
       <property role="3F0ifm" value="local" />
@@ -890,6 +891,9 @@
       </node>
       <node concept="3F0A7n" id="21kmpcTkFBY" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VPxyj" id="5$YFgXYYiJz" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
       </node>
       <node concept="3F0ifn" id="21kmpcT2J$m" role="3EZMnx">
         <property role="3F0ifm" value="executor =" />
@@ -1104,7 +1108,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5AoFZCLzEOO">
-    <property role="3GE5qa" value="Script" />
+    <property role="3GE5qa" value="scripts" />
     <ref role="1XX52x" to="iowz:5AoFZCLzEMK" resolve="ListElement" />
     <node concept="3EZMnI" id="5AoFZCLzEOQ" role="2wV5jI">
       <node concept="3F0ifn" id="5AoFZCLzEOX" role="3EZMnx">
@@ -1469,7 +1473,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="YNIIGPa1I6">
-    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="3GE5qa" value="scripts.conditionalScript" />
     <ref role="1XX52x" to="iowz:YNIIGPa1iv" resolve="BaseLanguageAdapter" />
     <node concept="3EZMnI" id="59canFOdIGX" role="2wV5jI">
       <node concept="3F2HdR" id="59canFOdIH4" role="3EZMnx">
@@ -1491,7 +1495,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="59canFOHYiD">
-    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="3GE5qa" value="scripts.conditionalScript" />
     <ref role="1XX52x" to="iowz:59canFOCShA" resolve="ConditionalExpressionText" />
     <node concept="3EZMnI" id="59canFP7o9M" role="2wV5jI">
       <node concept="l2Vlx" id="59canFP7o9N" role="2iSdaV" />
@@ -1501,7 +1505,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5DmojlrbQ9z">
-    <property role="3GE5qa" value="Script.conditionalScript" />
+    <property role="3GE5qa" value="scripts.conditionalScript" />
     <ref role="1XX52x" to="iowz:5DmojlqPc7e" resolve="ConditionalVariableRef" />
     <node concept="3EZMnI" id="5DmojlrovCv" role="2wV5jI">
       <node concept="l2Vlx" id="5DmojlrovCw" role="2iSdaV" />
@@ -1551,10 +1555,10 @@
           <ref role="1k5W1q" node="5yyd2HFN6xi" resolve="EmptyCell" />
         </node>
       </node>
-      <node concept="l2Vlx" id="3v6eDgzARjl" role="2iSdaV" />
       <node concept="3F0ifn" id="PffOQTbIFJ" role="3EZMnx">
         <property role="3F0ifm" value="]" />
       </node>
+      <node concept="l2Vlx" id="3v6eDgzARjl" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="2Hhp$WEiKpb">
@@ -1669,6 +1673,26 @@
       <node concept="l2Vlx" id="5ok1XDmh4Pb" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="2W8f1273Gk0">
+    <property role="3GE5qa" value="channelFunctions" />
+    <ref role="1XX52x" to="iowz:2W8f1273GaR" resolve="CollateAllowIncompleteTuples" />
+    <node concept="3F0ifn" id="6sdFEaZLVyB" role="2wV5jI">
+      <property role="3F0ifm" value="Complete Only" />
+      <ref role="1k5W1q" node="3ftTtbydPOt" resolve="Keyword" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2W8f126714_">
+    <property role="3GE5qa" value="setChannelValues" />
+    <ref role="1XX52x" to="iowz:2W8f1266Zma" resolve="GlobalTupleListExpression" />
+    <node concept="3EZMnI" id="2W8f12674Fn" role="2wV5jI">
+      <node concept="3F2HdR" id="2W8f12674F$" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:2W8f126714u" />
+        <node concept="l2Vlx" id="2W8f12674FA" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="2W8f12674Fq" role="2iSdaV" />
+    </node>
+  </node>
   <node concept="24kQdi" id="53DXNxI64zQ">
     <property role="3GE5qa" value="types" />
     <ref role="1XX52x" to="iowz:53DXNxI64zK" resolve="TupleList" />
@@ -1691,18 +1715,6 @@
       <ref role="1NtTu8" to="iowz:53DXNxI64xS" />
     </node>
   </node>
-  <node concept="24kQdi" id="2W8f126714_">
-    <property role="3GE5qa" value="setChannelValues" />
-    <ref role="1XX52x" to="iowz:2W8f1266Zma" resolve="GlobalTupleListExpression" />
-    <node concept="3EZMnI" id="2W8f12674Fn" role="2wV5jI">
-      <node concept="3F2HdR" id="2W8f12674F$" role="3EZMnx">
-        <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="iowz:2W8f126714u" />
-        <node concept="l2Vlx" id="2W8f12674FA" role="2czzBx" />
-      </node>
-      <node concept="l2Vlx" id="2W8f12674Fq" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="2W8f126b9JL">
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
     <ref role="1XX52x" to="iowz:2W8f126b9Ff" resolve="GlobalTupleListLiteral" />
@@ -1719,14 +1731,6 @@
         <property role="3F0ifm" value="]" />
       </node>
       <node concept="l2Vlx" id="2W8f126b9JQ" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2W8f1273Gk0">
-    <property role="3GE5qa" value="channelFunctions" />
-    <ref role="1XX52x" to="iowz:2W8f1273GaR" resolve="CollateAllowIncompleteTuples" />
-    <node concept="3F0ifn" id="6sdFEaZLVyB" role="2wV5jI">
-      <property role="3F0ifm" value="Complete Only" />
-      <ref role="1k5W1q" node="3ftTtbydPOt" resolve="Keyword" />
     </node>
   </node>
   <node concept="24kQdi" id="2W8f127kt$f">

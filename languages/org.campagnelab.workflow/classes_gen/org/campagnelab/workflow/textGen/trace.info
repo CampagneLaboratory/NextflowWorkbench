@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2329585396109849440">
+    <file name="NextflowConfig_TextGen.java">
+      <node id="2329585396110230848" at="15,343,16,46" concept="1" />
+      <node id="2329585396110230848" at="16,46,17,27" concept="1" />
+      <node id="2329585396110233546" at="18,352,19,48" concept="1" />
+      <node id="2329585396110233546" at="19,48,20,27" concept="1" />
+      <node id="5930160417389559196" at="23,196,24,139" concept="1" />
+      <node id="5930160417389559196" at="24,139,25,29" concept="1" />
+      <node id="5930160417389533745" at="27,5,28,0" concept="7" />
+      <node id="2329585396110230848" at="15,343,17,27" concept="0" />
+      <node id="2329585396110233546" at="18,352,20,27" concept="0" />
+      <node id="5930160417389559196" at="23,196,25,29" concept="0" />
+      <node id="5930160417395169786" at="22,224,26,7" concept="3" />
+      <node id="5930160417389558366" at="21,5,27,5" concept="2" />
+      <node id="2329585396110228327" at="14,42,21,5" concept="3" />
+      <node id="2329585396109849440" at="14,0,30,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="2329585396110228329" at="15,343,17,27" />
+      <scope id="2329585396110230848" at="15,343,17,27" />
+      <scope id="2329585396110231429" at="18,352,20,27" />
+      <scope id="2329585396110233546" at="18,352,20,27" />
+      <scope id="5930160417389559196" at="23,196,25,29" />
+      <scope id="5930160417395169788" at="23,196,25,29" />
+      <scope id="5930160417389558368" at="22,224,26,7" />
+      <scope id="5930160417389558366" at="21,5,27,5">
+        <var name="option" id="5930160417389558367" />
+      </scope>
+      <scope id="2329585396109849440" at="14,42,28,0" />
+      <scope id="2329585396109849440" at="14,0,30,0">
+        <var name="node" id="2329585396109849440" />
+      </scope>
+      <unit id="2329585396109849440" at="13,0,31,0" name="org.campagnelab.workflow.textGen.NextflowConfig_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2613339075984406752">
+    <file name="ValueInAChannelRef_TextGen.java">
+      <node id="2613339075984407223" at="12,42,13,324" concept="0" />
+      <node id="2613339075984407223" at="12,42,13,324" concept="1" />
+      <node id="2613339075984406752" at="12,0,15,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="2613339075984406752" at="12,42,13,324" />
+      <scope id="2613339075984407223" at="12,42,13,324" />
+      <scope id="2613339075984406752" at="12,0,15,0">
+        <var name="node" id="2613339075984406752" />
+      </scope>
+      <unit id="2613339075984406752" at="11,0,16,0" name="org.campagnelab.workflow.textGen.ValueInAChannelRef_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/3544328886043190012">
+    <file name="Workflow_TextGen.java">
+      <node id="959054848705097695" at="13,42,14,43" concept="1" />
+      <node id="959054848705097695" at="14,43,15,25" concept="1" />
+      <node id="8269043772627435311" at="16,30,17,185" concept="1" />
+      <node id="3544328886044097624" at="18,5,19,44" concept="0" />
+      <node id="3544328886044097624" at="18,5,19,44" concept="1" />
+      <node id="3737395959686356003" at="21,42,22,16" concept="6" />
+      <node id="3544328886043190012" at="24,0,25,0" concept="8" trace="LOG" />
+      <node id="959054848705097695" at="13,42,15,25" concept="0" />
+      <node id="8269043772627435311" at="15,25,18,5" concept="0" />
+      <node id="8269043772627435311" at="15,25,18,5" concept="3" />
+      <node id="3544328886043190012" at="21,0,24,0" concept="4" trace="getExtension#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3544328886043190012" at="13,0,21,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8269043772627435311" at="16,30,17,185" />
+      <scope id="3544328886044097624" at="18,5,19,44" />
+      <scope id="3544328886043190012" at="21,42,22,16" />
+      <scope id="959054848705097695" at="13,42,15,25" />
+      <scope id="8269043772627435311" at="15,25,18,5" />
+      <scope id="3544328886043190012" at="21,0,24,0">
+        <var name="node" id="3544328886043190012" />
+      </scope>
+      <scope id="3544328886043190012" at="13,42,19,44" />
+      <scope id="3544328886043190012" at="13,0,21,0">
+        <var name="node" id="3544328886043190012" />
+      </scope>
+      <unit id="3544328886043190012" at="12,0,26,0" name="org.campagnelab.workflow.textGen.Workflow_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/3544328886043545220">
+    <file name="WorkflowToNextflow.java">
+      <node id="6783277435987936392" at="22,229,23,175" concept="1" />
+      <node id="6783277435987936392" at="23,175,24,36" concept="1" />
+      <node id="6783277435987936392" at="24,36,25,91" concept="1" />
+      <node id="6783277435987936392" at="25,91,26,30" concept="1" />
+      <node id="3544328886046547710" at="29,227,30,57" concept="0" />
+      <node id="3544328886046547710" at="29,227,30,57" concept="1" />
+      <node id="3544328886046545412" at="34,79,35,31" concept="1" />
+      <node id="3544328886046545412" at="35,31,36,335" concept="1" />
+      <node id="3544328886046545412" at="36,335,37,25" concept="1" />
+      <node id="3544328886046547448" at="37,25,38,28" concept="1" />
+      <node id="3544328886046547448" at="38,28,39,28" concept="1" />
+      <node id="3544328886046547583" at="39,28,40,28" concept="1" />
+      <node id="5930160417393093066" at="42,196,43,136" concept="1" />
+      <node id="5930160417393093066" at="43,136,44,32" concept="1" />
+      <node id="5930160417395928715" at="49,41,50,86" concept="6" />
+      <node id="5930160417395929287" at="52,12,53,136" concept="1" />
+      <node id="5930160417395929287" at="53,136,54,32" concept="1" />
+      <node id="3544328886046547615" at="57,378,58,31" concept="0" />
+      <node id="3544328886046547615" at="57,378,58,31" concept="1" />
+      <node id="3544328886046748446" at="58,31,59,30" concept="0" />
+      <node id="3544328886046748446" at="58,31,59,30" concept="1" />
+      <node id="3544328886046990569" at="60,11,61,18" concept="5" />
+      <node id="8269043772624005608" at="63,239,64,50" concept="10" />
+      <node id="8163238436330457107" at="65,11,66,36" concept="0" />
+      <node id="8163238436330457107" at="65,11,66,36" concept="0" />
+      <node id="8163238436330457107" at="65,11,66,36" concept="1" />
+      <node id="3544328886047038658" at="66,36,67,35" concept="1" />
+      <node id="3544328886047038658" at="67,35,68,547" concept="1" />
+      <node id="3857878650538262530" at="70,56,71,189" concept="6" />
+      <node id="3857878650538247680" at="75,58,76,191" concept="6" />
+      <node id="8163238436332499122" at="78,17,79,34" concept="1" />
+      <node id="8163238436332499122" at="79,34,80,43" concept="0" />
+      <node id="8163238436332499122" at="79,34,80,43" concept="1" />
+      <node id="3544328886047050514" at="82,11,83,34" concept="0" />
+      <node id="3544328886047050514" at="82,11,83,34" concept="1" />
+      <node id="3544328886047051594" at="83,34,84,14" concept="1" />
+      <node id="3544328886047487159" at="85,9,86,32" concept="0" />
+      <node id="3544328886047487159" at="85,9,86,32" concept="1" />
+      <node id="3544328886048970167" at="88,44,89,382" concept="1" />
+      <node id="8269043772625185233" at="90,9,91,399" concept="1" />
+      <node id="3544328886048959780" at="94,379,95,32" concept="0" />
+      <node id="3544328886048959780" at="94,379,95,32" concept="1" />
+      <node id="3544328886048959821" at="95,32,96,30" concept="0" />
+      <node id="3544328886048959821" at="95,32,96,30" concept="1" />
+      <node id="3544328886048959866" at="97,11,98,18" concept="5" />
+      <node id="8269043772624039561" at="100,240,101,50" concept="10" />
+      <node id="8163238436329003460" at="102,11,103,37" concept="0" />
+      <node id="8163238436329003460" at="102,11,103,37" concept="0" />
+      <node id="8163238436329003460" at="102,11,103,37" concept="1" />
+      <node id="3544328886048986566" at="103,37,104,35" concept="1" />
+      <node id="3544328886048986566" at="104,35,105,385" concept="1" />
+      <node id="3544328886049221657" at="105,385,106,34" concept="0" />
+      <node id="3544328886049221657" at="105,385,106,34" concept="1" />
+      <node id="3544328886049223550" at="106,34,107,14" concept="1" />
+      <node id="3544328886050733098" at="108,9,109,32" concept="0" />
+      <node id="3544328886050733098" at="108,9,109,32" concept="1" />
+      <node id="3544328886048982022" at="111,44,112,383" concept="1" />
+      <node id="8269043772625180853" at="113,9,114,400" concept="1" />
+      <node id="959054848690203171" at="117,513,118,31" concept="1" />
+      <node id="959054848690203171" at="118,31,119,30" concept="1" />
+      <node id="959054848690205065" at="120,12,121,32" concept="1" />
+      <node id="959054848690205065" at="121,32,122,30" concept="1" />
+      <node id="8163238436339406101" at="123,5,124,354" concept="0" />
+      <node id="8163238436339406101" at="123,5,124,354" concept="0" />
+      <node id="8163238436339406101" at="123,5,124,354" concept="1" />
+      <node id="3544328886046547583" at="124,354,125,28" concept="1" />
+      <node id="3544328886047900205" at="125,28,126,24" concept="0" />
+      <node id="3544328886047900205" at="125,28,126,24" concept="1" />
+      <node id="3544328886048313069" at="126,24,127,28" concept="0" />
+      <node id="3544328886048313069" at="126,24,127,28" concept="1" />
+      <node id="3544328886043545220" at="129,0,130,0" concept="8" trace="LOG" />
+      <node id="3544328886046547448" at="37,25,39,28" concept="0" />
+      <node id="5930160417393093066" at="42,196,44,32" concept="0" />
+      <node id="5930160417395929287" at="52,12,54,32" concept="0" />
+      <node id="3544328886047038658" at="66,36,68,547" concept="0" />
+      <node id="8163238436332499122" at="78,17,80,43" concept="0" />
+      <node id="3544328886048986566" at="103,37,105,385" concept="0" />
+      <node id="959054848690203171" at="117,513,119,30" concept="0" />
+      <node id="959054848690205065" at="120,12,122,30" concept="0" />
+      <node id="3544328886046534947" at="28,220,31,7" concept="2" />
+      <node id="3544328886046545412" at="34,79,37,25" concept="0" />
+      <node id="5930160417395928713" at="49,0,52,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8269043772623986210" at="62,384,65,11" concept="3" />
+      <node id="3857878650538262530" at="70,0,73,0" concept="4" trace="translate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="3857878650538247680" at="75,0,78,0" concept="4" trace="translate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="3544328886048970167" at="87,45,90,9" concept="0" />
+      <node id="3544328886048970167" at="87,45,90,9" concept="3" />
+      <node id="8269043772624039559" at="99,386,102,11" concept="3" />
+      <node id="3544328886048982022" at="110,45,113,9" concept="0" />
+      <node id="3544328886048982022" at="110,45,113,9" concept="3" />
+      <node id="959054848690204810" at="120,10,123,5" concept="0" />
+      <node id="6783277435987936392" at="22,229,26,30" concept="0" />
+      <node id="5930160417393792794" at="41,230,45,7" concept="3" />
+      <node id="3544328886046525407" at="27,5,32,5" concept="3" />
+      <node id="6783277435987725036" at="21,75,27,5" concept="2" />
+      <node id="6992028756512777202" at="40,28,46,5" concept="2" />
+      <node id="959054848690192458" at="116,5,123,5" concept="3" />
+      <node id="5930160417395857402" at="47,395,55,7" concept="3" />
+      <node id="3857878650538238598" at="73,28,81,13" concept="2" />
+      <node id="5930160417395853044" at="46,5,56,5" concept="2" />
+      <node id="3544328886048959931" at="98,18,108,9" concept="2" />
+      <node id="3544328886043545220" at="21,0,34,0" concept="9" trace="workflow#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/textGen/SNodeTextGen;)V" />
+      <node id="3857878650538248889" at="68,547,82,11" concept="3" />
+      <node id="3544328886048976823" at="96,30,115,7" concept="11" />
+      <node id="3544328886048943406" at="93,5,116,5" concept="3" />
+      <node id="3544328886046990636" at="61,18,85,9" concept="2" />
+      <node id="3544328886048969481" at="59,30,92,7" concept="11" />
+      <node id="3544328886047471330" at="56,5,93,5" concept="3" />
+      <node id="3544328886046547583" at="39,28,125,28" concept="0" />
+      <node id="3544328886043545220" at="34,0,129,0" concept="9" trace="processRef#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/textGen/SNodeTextGen;)V" />
+      <scope id="3544328886046534949" at="29,227,30,57" />
+      <scope id="3544328886046547710" at="29,227,30,57" />
+      <scope id="5930160417395928714" at="49,41,50,86" />
+      <scope id="3544328886046547615" at="57,378,58,31" />
+      <scope id="3544328886046748446" at="58,31,59,30" />
+      <scope id="8269043772623986212" at="63,239,64,50" />
+      <scope id="8163238436330457107" at="65,11,66,36" />
+      <scope id="3857878650538262530" at="70,56,71,189" />
+      <scope id="3857878650538247680" at="75,58,76,191" />
+      <scope id="8163238436332499122" at="79,34,80,43" />
+      <scope id="3544328886047050514" at="82,11,83,34" />
+      <scope id="3544328886047487159" at="85,9,86,32" />
+      <scope id="3544328886048970167" at="88,44,89,382" />
+      <scope id="3544328886048959780" at="94,379,95,32" />
+      <scope id="3544328886048959821" at="95,32,96,30" />
+      <scope id="8269043772624039560" at="100,240,101,50" />
+      <scope id="8163238436329003460" at="102,11,103,37" />
+      <scope id="3544328886049221657" at="105,385,106,34" />
+      <scope id="3544328886050733098" at="108,9,109,32" />
+      <scope id="3544328886048982022" at="111,44,112,383" />
+      <scope id="8163238436339406101" at="123,5,124,354" />
+      <scope id="3544328886047900205" at="125,28,126,24" />
+      <scope id="3544328886048313069" at="126,24,127,28" />
+      <scope id="3544328886046547448" at="37,25,39,28" />
+      <scope id="5930160417393093066" at="42,196,44,32" />
+      <scope id="5930160417393792796" at="42,196,44,32" />
+      <scope id="5930160417395857403" at="52,12,54,32" />
+      <scope id="5930160417395929287" at="52,12,54,32" />
+      <scope id="3544328886047038658" at="66,36,68,547" />
+      <scope id="3857878650538238602" at="78,17,80,43" />
+      <scope id="8163238436332499122" at="78,17,80,43" />
+      <scope id="3544328886048986566" at="103,37,105,385" />
+      <scope id="959054848690192460" at="117,513,119,30" />
+      <scope id="959054848690203171" at="117,513,119,30" />
+      <scope id="959054848690204811" at="120,12,122,30" />
+      <scope id="959054848690205065" at="120,12,122,30" />
+      <scope id="3544328886046525409" at="28,220,31,7" />
+      <scope id="3544328886046534947" at="28,220,31,7">
+        <var name="instance" id="3544328886046534948" />
+      </scope>
+      <scope id="3544328886046545412" at="34,79,37,25" />
+      <scope id="5930160417395928713" at="49,0,52,0">
+        <var name="it" id="5930160417395928713" />
+      </scope>
+      <scope id="3857878650538262530" at="70,0,73,0">
+        <var name="it" id="3857878650538262530" />
+      </scope>
+      <scope id="3857878650538247680" at="75,0,78,0">
+        <var name="it" id="3857878650538247680" />
+      </scope>
+      <scope id="3544328886048970167" at="87,45,90,9" />
+      <scope id="3544328886048982022" at="110,45,113,9" />
+      <scope id="6783277435987725040" at="22,229,26,30" />
+      <scope id="6783277435987936392" at="22,229,26,30" />
+      <scope id="6992028756512777206" at="41,230,45,7" />
+      <scope id="3544328886048969484" at="87,0,91,399">
+        <var name="e" id="3544328886048969488" />
+      </scope>
+      <scope id="3544328886048969486" at="87,45,91,399" />
+      <scope id="3544328886048976826" at="110,0,114,400">
+        <var name="e" id="3544328886048976830" />
+      </scope>
+      <scope id="3544328886048976828" at="110,45,114,400" />
+      <scope id="6783277435987725036" at="21,75,27,5">
+        <var name="channel" id="6783277435987725038" />
+      </scope>
+      <scope id="6992028756512777202" at="40,28,46,5">
+        <var name="option" id="6992028756512777204" />
+      </scope>
+      <scope id="5930160417395853048" at="47,395,55,7" />
+      <scope id="3857878650538238598" at="73,28,81,13">
+        <var name="function" id="3857878650538238600" />
+      </scope>
+      <scope id="3857878650538248891" at="73,28,81,13" />
+      <scope id="3544328886048959935" at="99,386,107,14" />
+      <scope id="5930160417395853044" at="46,5,56,5">
+        <var name="option" id="5930160417395853046" />
+      </scope>
+      <scope id="3544328886048959931" at="98,18,108,9">
+        <var name="output" id="3544328886048959933" />
+      </scope>
+      <scope id="3544328886043545220" at="21,75,32,5" />
+      <scope id="3544328886048976825" at="97,11,109,32">
+        <var name="i" id="3544328886048959869" />
+      </scope>
+      <scope id="3544328886043545220" at="21,0,34,0">
+        <var name="textGen" id="3544328886043545220" />
+        <var name="workflow" id="3544328886043545294" />
+      </scope>
+      <scope id="3544328886048943408" at="94,379,115,7" />
+      <scope id="3544328886046990640" at="62,384,84,14" />
+      <scope id="3544328886046990636" at="61,18,85,9">
+        <var name="input" id="3544328886046990638" />
+      </scope>
+      <scope id="3544328886048969483" at="60,11,86,32">
+        <var name="i" id="3544328886046990572" />
+      </scope>
+      <scope id="3544328886047471332" at="57,378,92,7" />
+      <scope id="3544328886046547583" at="39,28,125,28" />
+      <scope id="3544328886043545220" at="34,79,127,28" />
+      <scope id="3544328886043545220" at="34,0,129,0">
+        <var name="processRef" id="3544328886046545398" />
+        <var name="textGen" id="3544328886043545220" />
+      </scope>
+      <unit id="5930160417395928713" at="48,411,52,7" name="org.campagnelab.workflow.textGen.WorkflowToNextflow$1" />
+      <unit id="3857878650538262530" at="69,227,73,11" name="org.campagnelab.workflow.textGen.WorkflowToNextflow$3" />
+      <unit id="3857878650538247680" at="74,247,78,13" name="org.campagnelab.workflow.textGen.WorkflowToNextflow$2" />
+      <unit id="3544328886043545220" at="20,0,131,0" name="org.campagnelab.workflow.textGen.WorkflowToNextflow" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6202591221152351589">
+    <file name="Channel_TextGen.java">
+      <node id="6202591221152352660" at="10,42,11,130" concept="0" />
+      <node id="6202591221152352660" at="10,42,11,130" concept="1" />
+      <node id="6202591221152351589" at="10,0,13,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6202591221152351589" at="10,42,11,130" />
+      <scope id="6202591221152352660" at="10,42,11,130" />
+      <scope id="6202591221152351589" at="10,0,13,0">
+        <var name="node" id="6202591221152351589" />
+      </scope>
+      <unit id="6202591221152351589" at="9,0,14,0" name="org.campagnelab.workflow.textGen.Channel_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6509497193194282040">
+    <file name="ConditionalExpressionText_TextGen.java">
+      <node id="6509497193194282058" at="11,42,12,179" concept="0" />
+      <node id="6509497193194282058" at="11,42,12,179" concept="0" />
+      <node id="6509497193194282058" at="11,42,12,179" concept="1" />
+      <node id="6509497193194282040" at="11,0,14,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6509497193194282040" at="11,42,12,179" />
+      <scope id="6509497193194282058" at="11,42,12,179" />
+      <scope id="6509497193194282040" at="11,0,14,0">
+        <var name="node" id="6509497193194282040" />
+      </scope>
+      <unit id="6509497193194282040" at="10,0,15,0" name="org.campagnelab.workflow.textGen.ConditionalExpressionText_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6509497193205602217">
+    <file name="ConditionalVariableRef_TextGen.java">
+      <node id="6509497193205603116" at="12,42,13,327" concept="0" />
+      <node id="6509497193205603116" at="12,42,13,327" concept="1" />
+      <node id="6509497193205602217" at="12,0,15,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6509497193205602217" at="12,42,13,327" />
+      <scope id="6509497193205603116" at="12,42,13,327" />
+      <scope id="6509497193205602217" at="12,0,15,0">
+        <var name="node" id="6509497193205602217" />
+      </scope>
+      <unit id="6509497193205602217" at="11,0,16,0" name="org.campagnelab.workflow.textGen.ConditionalVariableRef_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/8163238436332496214">
+    <file name="ChannelFunction_TextGen.java">
+      <node id="8163238436332496234" at="10,42,11,127" concept="0" />
+      <node id="8163238436332496234" at="10,42,11,127" concept="1" />
+      <node id="8163238436332496214" at="10,0,13,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8163238436332496214" at="10,42,11,127" />
+      <scope id="8163238436332496234" at="10,42,11,127" />
+      <scope id="8163238436332496214" at="10,0,13,0">
+        <var name="node" id="8163238436332496214" />
+      </scope>
+      <unit id="8163238436332496214" at="9,0,14,0" name="org.campagnelab.workflow.textGen.ChannelFunction_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/8163238436339392313">
+    <file name="BaseLanguageAdapter_TextGen.java">
+      <node id="8163238436339392313" at="19,44,20,61" concept="1" />
+      <node id="8163238436339397849" at="22,222,23,28" concept="0" />
+      <node id="8163238436339397849" at="22,222,23,28" concept="0" />
+      <node id="8163238436339397849" at="22,222,23,28" concept="1" />
+      <node id="8163238436339392313" at="26,7,27,38" concept="5" />
+      <node id="8163238436339392313" at="28,13,29,335" concept="1" />
+      <node id="8163238436339392313" at="31,46,32,88" concept="1" />
+      <node id="8163238436339392313" at="34,9,35,80" concept="1" />
+      <node id="8163238436339392313" at="39,0,40,0" concept="8" trace="LOG" />
+      <node id="8163238436339392313" at="18,42,21,5" concept="3" />
+      <node id="8163238436339395417" at="21,5,24,5" concept="2" />
+      <node id="8163238436339392313" at="30,31,33,11" concept="0" />
+      <node id="8163238436339392313" at="30,31,33,11" concept="3" />
+      <node id="8163238436339392313" at="27,38,34,9" concept="11" />
+      <node id="8163238436339392313" at="25,44,36,7" concept="0" />
+      <node id="8163238436339392313" at="24,5,37,5" concept="3" />
+      <node id="8163238436339392313" at="18,0,39,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8163238436339392313" at="19,44,20,61" />
+      <scope id="8163238436339395419" at="22,222,23,28" />
+      <scope id="8163238436339397849" at="22,222,23,28" />
+      <scope id="8163238436339392313" at="28,13,29,335" />
+      <scope id="8163238436339392313" at="31,46,32,88" />
+      <scope id="8163238436339395417" at="21,5,24,5">
+        <var name="statement" id="8163238436339395418" />
+      </scope>
+      <scope id="8163238436339392313" at="30,0,33,11">
+        <var name="t" id="8163238436339392313" />
+      </scope>
+      <scope id="8163238436339392313" at="30,31,33,11" />
+      <scope id="8163238436339392313" at="26,7,35,80">
+        <var name="traceableProperty" id="8163238436339392313" />
+      </scope>
+      <scope id="8163238436339392313" at="25,44,36,7" />
+      <scope id="8163238436339392313" at="18,42,37,5" />
+      <scope id="8163238436339392313" at="18,0,39,0">
+        <var name="node" id="8163238436339392313" />
+      </scope>
+      <unit id="8163238436339392313" at="17,0,41,0" name="org.campagnelab.workflow.textGen.BaseLanguageAdapter_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/8163238436339401923">
+    <file name="RichScript_TextGen.java">
+      <node id="8163238436339401923" at="18,44,19,61" concept="1" />
+      <node id="8163238436339401946" at="20,5,21,25" concept="1" />
+      <node id="8163238436339401946" at="21,25,22,30" concept="1" />
+      <node id="8163238436339401946" at="22,30,23,25" concept="1" />
+      <node id="8163238436339401946" at="23,25,24,179" concept="0" />
+      <node id="8163238436339401946" at="23,25,24,179" concept="1" />
+      <node id="8163238436339401946" at="24,179,25,25" concept="1" />
+      <node id="8163238436339401946" at="25,25,26,30" concept="1" />
+      <node id="8163238436339401946" at="26,30,27,25" concept="1" />
+      <node id="8163238436339401923" at="29,7,30,38" concept="5" />
+      <node id="8163238436339401923" at="31,13,32,335" concept="1" />
+      <node id="8163238436339401923" at="34,46,35,88" concept="1" />
+      <node id="8163238436339401923" at="37,9,38,80" concept="1" />
+      <node id="8163238436339401923" at="42,0,43,0" concept="8" trace="LOG" />
+      <node id="8163238436339401923" at="17,42,20,5" concept="3" />
+      <node id="8163238436339401923" at="33,31,36,11" concept="0" />
+      <node id="8163238436339401923" at="33,31,36,11" concept="3" />
+      <node id="8163238436339401946" at="20,5,27,25" concept="0" />
+      <node id="8163238436339401923" at="30,38,37,9" concept="11" />
+      <node id="8163238436339401923" at="28,44,39,7" concept="0" />
+      <node id="8163238436339401923" at="27,25,40,5" concept="3" />
+      <node id="8163238436339401923" at="17,0,42,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8163238436339401923" at="18,44,19,61" />
+      <scope id="8163238436339401946" at="23,25,24,179" />
+      <scope id="8163238436339401923" at="31,13,32,335" />
+      <scope id="8163238436339401923" at="34,46,35,88" />
+      <scope id="8163238436339401923" at="33,0,36,11">
+        <var name="t" id="8163238436339401923" />
+      </scope>
+      <scope id="8163238436339401923" at="33,31,36,11" />
+      <scope id="8163238436339401946" at="20,5,27,25" />
+      <scope id="8163238436339401923" at="29,7,38,80">
+        <var name="traceableProperty" id="8163238436339401923" />
+      </scope>
+      <scope id="8163238436339401923" at="28,44,39,7" />
+      <scope id="8163238436339401923" at="17,42,40,5" />
+      <scope id="8163238436339401923" at="17,0,42,0">
+        <var name="node" id="8163238436339401923" />
+      </scope>
+      <unit id="8163238436339401923" at="16,0,44,0" name="org.campagnelab.workflow.textGen.RichScript_TextGen" />
+    </file>
+  </root>
+</debug-info>
+

@@ -68,7 +68,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -87,6 +87,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -201,6 +202,7 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
@@ -210,6 +212,9 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
+        <reference id="1171315804605" name="concept" index="2RRcyH" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1227264722563" name="jetbrains.mps.lang.smodel.structure.EqualsStructurallyExpression" flags="nn" index="2YFouu" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
@@ -2978,6 +2983,46 @@
     <node concept="1YaCAy" id="7b1yRZVKXFF" role="1YuTPh">
       <property role="TrG5h" value="processRef" />
       <ref role="1YaFvo" to="iowz:5D7AjvYaj9M" resolve="ProcessRef" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5$YFgXZ1Doo">
+    <property role="TrG5h" value="check_NextflowConfig" />
+    <node concept="3clFbS" id="5$YFgXZ1Dop" role="18ibNy">
+      <node concept="3clFbJ" id="5$YFgXZ1Eat" role="3cqZAp">
+        <node concept="3clFbS" id="5$YFgXZ1Eau" role="3clFbx">
+          <node concept="2MkqsV" id="5$YFgXZ1MoV" role="3cqZAp">
+            <node concept="1YBJjd" id="5$YFgXZ1Mpq" role="2OEOjV">
+              <ref role="1YBMHb" node="5$YFgXZ1Dor" resolve="nextflowConfig" />
+            </node>
+            <node concept="Xl_RD" id="5$YFgXZ1Mpd" role="2MkJ7o">
+              <property role="Xl_RC" value="Only one nextflow.config can be defined in the model." />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOSWO" id="5$YFgXZ1Mla" role="3clFbw">
+          <node concept="3cmrfG" id="5$YFgXZ1Mn7" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="5$YFgXZ1Fym" role="3uHU7B">
+            <node concept="2OqwBi" id="5$YFgXZ1ECB" role="2Oq$k0">
+              <node concept="2OqwBi" id="5$YFgXZ1Ec_" role="2Oq$k0">
+                <node concept="1YBJjd" id="5$YFgXZ1EaJ" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5$YFgXZ1Dor" resolve="nextflowConfig" />
+                </node>
+                <node concept="I4A8Y" id="5$YFgXZ1Ev2" role="2OqNvi" />
+              </node>
+              <node concept="2RRcyG" id="5$YFgXZ1ELg" role="2OqNvi">
+                <ref role="2RRcyH" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="5$YFgXZ1LKL" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5$YFgXZ1Dor" role="1YuTPh">
+      <property role="TrG5h" value="nextflowConfig" />
+      <ref role="1YaFvo" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
     </node>
   </node>
 </model>

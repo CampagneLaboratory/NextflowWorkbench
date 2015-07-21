@@ -99,6 +99,9 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.NextflowConfig" flags="ng" index="pkhaZ">
+        <child id="2329585396109102069" name="executor" index="pkh9A" />
+      </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -120,7 +123,7 @@
       <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.GlobalStringLiteral" flags="ng" index="2$RDGe">
         <property id="3855674281012527195" name="value" index="2$RDGf" />
       </concept>
-      <concept id="4777210630426255197" name="org.campagnelab.workflow.structure.Local" flags="ng" index="2LyH2s" />
+      <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
@@ -258,7 +261,7 @@
   </node>
   <node concept="2$rMIF" id="rix53J9vVI">
     <property role="TrG5h" value="MultiLanguageWorkflow" />
-    <node concept="2LyH2s" id="rix53J9vVL" role="2LyH5s" />
+    <node concept="2LyH2v" id="5$YFgXYY8Ij" role="2LyH5s" />
     <node concept="2$rEH5" id="rix53J9vVK" role="2$rEHq">
       <ref role="2$rEH4" node="4GDrEajU_lY" resolve="CloneRepoWithBash" />
       <node concept="1uYdA0" id="rix53J9vX2" role="1uLvPH">
@@ -274,9 +277,6 @@
         <ref role="1uK_4X" node="rix53J9w4v" resolve="clonedRepo" />
       </node>
     </node>
-    <node concept="2$rEH5" id="rix53J9wn7" role="2$rEHq">
-      <ref role="2$rEH4" node="4GDrEajULn6" resolve="DoneWithJava" />
-    </node>
     <node concept="1CVceo" id="rix53J9w0w" role="2$L6iY">
       <property role="TrG5h" value="repoURL" />
       <node concept="2$PLvr" id="rix53J9w0Y" role="2$L62I">
@@ -285,6 +285,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="pkhaZ" id="5$YFgXZ5Cgo">
+    <property role="TrG5h" value="nextflow.config" />
+    <node concept="2LyH2v" id="5$YFgXZekej" role="pkh9A" />
   </node>
 </model>
 
