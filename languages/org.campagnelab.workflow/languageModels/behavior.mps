@@ -6215,5 +6215,25 @@
       <node concept="3Tm1VV" id="PffOQS_Vb5" role="1B3o_S" />
     </node>
   </node>
+  <node concept="13h7C7" id="5$YFgXYYiRR">
+    <ref role="13h7C2" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
+    <node concept="13hLZK" id="5$YFgXYYiRS" role="13h7CW">
+      <node concept="3clFbS" id="5$YFgXYYiRT" role="2VODD2">
+        <node concept="3clFbF" id="5$YFgXYYlfO" role="3cqZAp">
+          <node concept="37vLTI" id="5$YFgXYYmPV" role="3clFbG">
+            <node concept="Xl_RD" id="5$YFgXYYmRg" role="37vLTx">
+              <property role="Xl_RC" value="nextflow.config" />
+            </node>
+            <node concept="2OqwBi" id="5$YFgXYYmlr" role="37vLTJ">
+              <node concept="13iPFW" id="5$YFgXYYlfN" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5$YFgXYYmB$" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
