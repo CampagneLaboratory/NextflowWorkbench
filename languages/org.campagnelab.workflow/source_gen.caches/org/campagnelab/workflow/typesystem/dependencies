@@ -9,6 +9,7 @@
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_GlobalListLiteral_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_InputChannel_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_OutChannels_NonTypesystemRule" />
+    <classNode dependClassName="org.campagnelab.workflow.typesystem.check_ProcessRef_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_ScriptArgs_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_ToListFunction_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_BooleanChannel_InferenceRule" />
@@ -157,6 +158,21 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.typesystem.check_ProcessRef_NonTypesystemRule" file="check_ProcessRef_NonTypesystemRule.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
+    <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
+    <classNode dependClassName="jetbrains.mps.errors.messageTargets.NodeMessageTarget" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />

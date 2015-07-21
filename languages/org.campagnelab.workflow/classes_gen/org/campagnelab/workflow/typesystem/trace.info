@@ -13,7 +13,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="9,0,237,0" name="org.campagnelab.workflow.typesystem.TypesystemDescriptor" />
+      <unit at="9,0,241,0" name="org.campagnelab.workflow.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/1076210821072148930">
@@ -2571,6 +2571,58 @@
         <var name="typeCheckingContext" id="8052084060281611198" />
       </scope>
       <unit id="8052084060281611198" at="21,0,71,0" name="org.campagnelab.workflow.typesystem.check_OutChannels_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/8269043772629965544">
+    <file name="check_ProcessRef_NonTypesystemRule.java">
+      <node id="8269043772630020666" at="23,7,24,60" concept="6" />
+      <node id="8269043772630020666" at="24,60,25,253" concept="6" />
+      <node id="8269043772635961130" at="29,7,30,60" concept="6" />
+      <node id="8269043772635961130" at="30,60,31,254" concept="6" />
+      <node id="8269043772629965544" at="35,46,36,59" concept="7" />
+      <node id="8269043772629965544" at="39,5,40,130" concept="6" />
+      <node id="8269043772629965544" at="40,130,41,45" concept="7" />
+      <node id="8269043772629965544" at="44,30,45,17" concept="7" />
+      <node id="8269043772629965544" at="19,0,21,0" concept="1" trace="check_ProcessRef_NonTypesystemRule#()V" />
+      <node id="8269043772629965544" at="35,0,38,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="8269043772629965544" at="44,0,47,0" concept="5" trace="overrides#()Z" />
+      <node id="8269043772630020666" at="22,583,26,7" concept="0" />
+      <node id="8269043772635961130" at="28,585,32,7" concept="0" />
+      <node id="8269043772629965544" at="38,68,42,5" concept="0" />
+      <node id="8269043772629965557" at="21,123,27,5" concept="4" />
+      <node id="8269043772630020917" at="27,5,33,5" concept="4" />
+      <node id="8269043772629965544" at="38,0,44,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8269043772629965544" at="21,0,35,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="8269043772629965544" at="19,47,19,47" />
+      <scope id="8269043772629965544" at="35,46,36,59" />
+      <scope id="8269043772629965544" at="44,30,45,17" />
+      <scope id="8269043772629965544" at="19,0,21,0" />
+      <scope id="8269043772630020666" at="23,7,25,253">
+        <var name="_reporter_2309309498" id="8269043772630020666" />
+        <var name="errorTarget" id="8269043772630020666" />
+      </scope>
+      <scope id="8269043772635961130" at="29,7,31,254">
+        <var name="_reporter_2309309498" id="8269043772635961130" />
+        <var name="errorTarget" id="8269043772635961130" />
+      </scope>
+      <scope id="8269043772629965544" at="39,5,41,45">
+        <var name="b" id="8269043772629965544" />
+      </scope>
+      <scope id="8269043772629965544" at="35,0,38,0" />
+      <scope id="8269043772629965544" at="44,0,47,0" />
+      <scope id="8269043772629965558" at="22,583,26,7" />
+      <scope id="8269043772630020919" at="28,585,32,7" />
+      <scope id="8269043772629965544" at="38,68,42,5" />
+      <scope id="8269043772629965544" at="38,0,44,0">
+        <var name="argument" id="8269043772629965544" />
+      </scope>
+      <scope id="8269043772629965545" at="21,123,33,5" />
+      <scope id="8269043772629965544" at="21,0,35,0">
+        <var name="processRef" id="8269043772629965544" />
+        <var name="status" id="8269043772629965544" />
+        <var name="typeCheckingContext" id="8269043772629965544" />
+      </scope>
+      <unit id="8269043772629965544" at="18,0,48,0" name="org.campagnelab.workflow.typesystem.check_ProcessRef_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/8270782245330525438">

@@ -2889,5 +2889,96 @@
       <ref role="1YaFvo" to="iowz:2W8f1266Zma" resolve="GlobalTupleListExpression" />
     </node>
   </node>
+  <node concept="18kY7G" id="7b1yRZVKXFC">
+    <property role="TrG5h" value="check_ProcessRef" />
+    <node concept="3clFbS" id="7b1yRZVKXFD" role="18ibNy">
+      <node concept="3clFbJ" id="7b1yRZVKXFP" role="3cqZAp">
+        <node concept="3clFbS" id="7b1yRZVKXFQ" role="3clFbx">
+          <node concept="2MkqsV" id="7b1yRZVLb8U" role="3cqZAp">
+            <node concept="1YBJjd" id="7b1yRZW7P_S" role="2OEOjV">
+              <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+            </node>
+            <node concept="Xl_RD" id="7b1yRZVLb96" role="2MkJ7o">
+              <property role="Xl_RC" value="Incorrect number of input channels" />
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="7b1yRZVL2Zr" role="3clFbw">
+          <node concept="2OqwBi" id="7b1yRZVL4$8" role="3uHU7w">
+            <node concept="2OqwBi" id="7b1yRZVL3zp" role="2Oq$k0">
+              <node concept="2OqwBi" id="7b1yRZVL38t" role="2Oq$k0">
+                <node concept="1YBJjd" id="7b1yRZVL31l" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+                </node>
+                <node concept="3TrEf2" id="7b1yRZVL3iA" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="7b1yRZVL3Jo" role="2OqNvi">
+                <ref role="3TtcxE" to="iowz:6tX5nBTaziI" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="7b1yRZVL6P4" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="7b1yRZVKYFS" role="3uHU7B">
+            <node concept="2OqwBi" id="7b1yRZVKXHP" role="2Oq$k0">
+              <node concept="1YBJjd" id="7b1yRZVKXG1" role="2Oq$k0">
+                <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+              </node>
+              <node concept="3Tsc0h" id="7b1yRZVKXRb" role="2OqNvi">
+                <ref role="3TtcxE" to="iowz:7gAPJCESMIn" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="7b1yRZVL1lV" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="7b1yRZVLbcP" role="3cqZAp">
+        <node concept="3clFbS" id="7b1yRZVLbcR" role="3clFbx">
+          <node concept="2MkqsV" id="7b1yRZW7PsE" role="3cqZAp">
+            <node concept="1YBJjd" id="7b1yRZW7P_$" role="2OEOjV">
+              <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+            </node>
+            <node concept="Xl_RD" id="7b1yRZW7P$5" role="2MkJ7o">
+              <property role="Xl_RC" value="Incorrect number of output channels" />
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="7b1yRZVLh77" role="3clFbw">
+          <node concept="2OqwBi" id="7b1yRZVLiWl" role="3uHU7w">
+            <node concept="2OqwBi" id="7b1yRZVLhSf" role="2Oq$k0">
+              <node concept="2OqwBi" id="7b1yRZVLhi5" role="2Oq$k0">
+                <node concept="1YBJjd" id="7b1yRZVLhaX" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+                </node>
+                <node concept="3TrEf2" id="7b1yRZVLhA5" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="7b1yRZVLi6e" role="2OqNvi">
+                <ref role="3TtcxE" to="iowz:6tX5nBTaziK" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="7b1yRZVLlhi" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="7b1yRZVLcw7" role="3uHU7B">
+            <node concept="2OqwBi" id="7b1yRZVLbhL" role="2Oq$k0">
+              <node concept="1YBJjd" id="7b1yRZVLbfX" role="2Oq$k0">
+                <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+              </node>
+              <node concept="3Tsc0h" id="7b1yRZVLb_r" role="2OqNvi">
+                <ref role="3TtcxE" to="iowz:7gAPJCESMIs" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="7b1yRZVLfo7" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7b1yRZVKXFF" role="1YuTPh">
+      <property role="TrG5h" value="processRef" />
+      <ref role="1YaFvo" to="iowz:5D7AjvYaj9M" resolve="ProcessRef" />
+    </node>
+  </node>
 </model>
 
