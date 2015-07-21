@@ -68,7 +68,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -2850,6 +2850,88 @@
     <node concept="1YaCAy" id="5$YFgXZ1Dor" role="1YuTPh">
       <property role="TrG5h" value="nextflowConfig" />
       <ref role="1YaFvo" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="53DXNxI65Wd">
+    <property role="TrG5h" value="typeof_TupleList" />
+    <property role="3GE5qa" value="types" />
+    <node concept="3clFbS" id="53DXNxI65We" role="18ibNy">
+      <node concept="1Z5TYs" id="53DXNxI66eo" role="3cqZAp">
+        <node concept="mw_s8" id="53DXNxI66eG" role="1ZfhKB">
+          <node concept="2c44tf" id="53DXNxI66eC" role="mwGJk">
+            <node concept="_YKpA" id="53DXNxI66eZ" role="2c44tc">
+              <node concept="1h3xP" id="53DXNxI66fp" role="_ZDj9" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="53DXNxI66er" role="1ZfhK$">
+          <node concept="1Z2H0r" id="53DXNxI66cX" role="mwGJk">
+            <node concept="1YBJjd" id="53DXNxI66dp" role="1Z2MuG">
+              <ref role="1YBMHb" node="53DXNxI65Wg" resolve="tupleList" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="53DXNxI65Wg" role="1YuTPh">
+      <property role="TrG5h" value="tupleList" />
+      <ref role="1YaFvo" to="iowz:53DXNxI64zK" resolve="TupleList" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2W8f126UMkZ">
+    <property role="TrG5h" value="typeof_GlobalTupleListExpression" />
+    <property role="3GE5qa" value="setChannelValues" />
+    <node concept="3clFbS" id="2W8f126UMl0" role="18ibNy">
+      <node concept="1Z5TYs" id="2W8f126UMDb" role="3cqZAp">
+        <node concept="mw_s8" id="2W8f126UMDv" role="1ZfhKB">
+          <node concept="2c44tf" id="2W8f126UMDr" role="mwGJk">
+            <node concept="_YKpA" id="2W8f126UMDP" role="2c44tc">
+              <node concept="_YKpA" id="2W8f126UMEi" role="_ZDj9">
+                <node concept="1h3xP" id="2W8f126UMEJ" role="_ZDj9" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2W8f126UMDe" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2W8f126UMBH" role="mwGJk">
+            <node concept="1YBJjd" id="2W8f126UMC9" role="1Z2MuG">
+              <ref role="1YBMHb" node="2W8f126UMl2" resolve="globalTupleListExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2W8f126UMl2" role="1YuTPh">
+      <property role="TrG5h" value="globalTupleListExpression" />
+      <ref role="1YaFvo" to="iowz:2W8f1266Zma" resolve="GlobalTupleListExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="53DXNxI66gw">
+    <property role="TrG5h" value="typeof_TupleListChannel" />
+    <property role="3GE5qa" value="channelTypes" />
+    <node concept="3clFbS" id="53DXNxI66gx" role="18ibNy">
+      <node concept="1Z5TYs" id="53DXNxI66i2" role="3cqZAp">
+        <node concept="mw_s8" id="53DXNxI66iH" role="1ZfhKB">
+          <node concept="2c44tf" id="53DXNxI66iD" role="mwGJk">
+            <node concept="_YKpA" id="53DXNxI66j0" role="2c44tc">
+              <node concept="_YKpA" id="53DXNxI66jq" role="_ZDj9">
+                <node concept="1h3xP" id="53DXNxI66jO" role="_ZDj9" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="53DXNxI66i5" role="1ZfhK$">
+          <node concept="1Z2H0r" id="53DXNxI66gB" role="mwGJk">
+            <node concept="1YBJjd" id="53DXNxI66h3" role="1Z2MuG">
+              <ref role="1YBMHb" node="53DXNxI66gz" resolve="tupleListChannel" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="53DXNxI66gz" role="1YuTPh">
+      <property role="TrG5h" value="tupleListChannel" />
+      <ref role="1YaFvo" to="iowz:53DXNxI640U" resolve="TupleListChannel" />
     </node>
   </node>
 </model>

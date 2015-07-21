@@ -1,3 +1,4 @@
+#!/usr/bin/env nextflow
 boolch = Channel.from(false, false, false, false)
 strch = Channel.from('esrg', 'e'..'F')
 boolch2 = Channel.from(false)
