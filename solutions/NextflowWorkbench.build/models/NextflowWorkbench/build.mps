@@ -87,17 +87,23 @@
       <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh">
         <property id="6503355885715353788" name="bootstrap" index="2igJW4" />
       </concept>
+      <concept id="7832771629084799699" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginVendor" flags="ng" index="2iUeEo">
+        <property id="7832771629084799702" name="name" index="2iUeEt" />
+        <property id="7832771629084799701" name="url" index="2iUeEu" />
+      </concept>
       <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
         <reference id="6592112598314586626" name="group" index="m$f5T" />
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="1359186315025500371" name="xml" index="20twgj" />
+        <child id="7832771629084912518" name="vendor" index="2iVFfd" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
+        <child id="2172791612906637490" name="description" index="3s6cr7" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
@@ -165,7 +171,7 @@
       <node concept="aVJcg" id="3gMg70bX6HN" role="aVJcv">
         <node concept="NbPM2" id="3gMg70bX6HM" role="aVJcq">
           <node concept="3Mxwew" id="3gMg70bX6HL" role="3MwsjC">
-            <property role="3MwjfP" value="1.0.0" />
+            <property role="3MwjfP" value="1.0" />
           </node>
         </node>
       </node>
@@ -211,12 +217,12 @@
           </node>
         </node>
         <node concept="m$_wl" id="4oJiZHqTePX" role="39821P">
-          <ref role="m_rDy" node="4oJiZHqTePK" resolve="NextflowWorkbench" />
+          <ref role="m_rDy" node="4oJiZHqTePK" resolve="org.campagnelab.NextflowWorkbench" />
         </node>
       </node>
     </node>
     <node concept="m$_wf" id="4oJiZHqTePK" role="3989C9">
-      <property role="m$_wk" value="NextflowWorkbench" />
+      <property role="m$_wk" value="org.campagnelab.NextflowWorkbench" />
       <node concept="2pNNFK" id="7ZmC9JYEfXQ" role="20twgj">
         <property role="2pNNFO" value="idea-version" />
         <node concept="2pNUuL" id="7ZmC9JYEfXR" role="2pNNFR">
@@ -234,12 +240,12 @@
       </node>
       <node concept="3_J27D" id="4oJiZHqTePL" role="m$_yQ">
         <node concept="3Mxwew" id="4oJiZHqTePM" role="3MwsjC">
-          <property role="3MwjfP" value="NextflowWorkbench" />
+          <property role="3MwjfP" value="org.campagnelab.NextflowWorkbench" />
         </node>
       </node>
       <node concept="3_J27D" id="4oJiZHqTePN" role="m$_w8">
-        <node concept="3Mxwew" id="4oJiZHqTePO" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
+        <node concept="3Mxwey" id="5OPtsOYwrY" role="3MwsjC">
+          <ref role="3Mxwex" node="3gMg70bX6Gp" resolve="workbench_version" />
         </node>
       </node>
       <node concept="m$f5U" id="4oJiZHqTePP" role="m$_yh">
@@ -257,6 +263,30 @@
       <node concept="3_J27D" id="4oJiZHqTePR" role="m_cZH">
         <node concept="3Mxwew" id="4oJiZHqTePS" role="3MwsjC">
           <property role="3MwjfP" value="NextflowWorkbench" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="5OPtsOYjYH" role="2iVFfd">
+        <property role="2iUeEt" value="Campagne Laboratory" />
+        <property role="2iUeEu" value="http://campagnelab.org/software/nextflow-workbench/" />
+      </node>
+      <node concept="3_J27D" id="5OPtsOYvYn" role="3s6cr7">
+        <node concept="3Mxwew" id="H0TQXNF9To" role="3MwsjC">
+          <property role="3MwjfP" value="The Nextflow workbench is a set of languages developed with the Jetbrains MPS Language Workbench that make it easier to write data analysis workflows with Nextflow (see http://www.nextflow.io/). Reference build: " />
+        </node>
+        <node concept="3Mxwey" id="4RSqyaA4csT" role="3MwsjC">
+          <ref role="3Mxwex" node="4RSqyaA4c2V" resolve="build_number" />
+        </node>
+        <node concept="3Mxwew" id="5OPtsOYwok" role="3MwsjC">
+          <property role="3MwjfP" value=", commit: " />
+        </node>
+        <node concept="3Mxwey" id="5OPtsOYwoW" role="3MwsjC">
+          <ref role="3Mxwex" node="4RSqyaA6FWL" resolve="reference_commit" />
+        </node>
+        <node concept="3Mxwew" id="5OPtsOYwq4" role="3MwsjC">
+          <property role="3MwjfP" value=", branch: " />
+        </node>
+        <node concept="3Mxwey" id="5OPtsOYwqL" role="3MwsjC">
+          <ref role="3Mxwex" node="4RSqyaA6G6g" resolve="reference_branch" />
         </node>
       </node>
     </node>
