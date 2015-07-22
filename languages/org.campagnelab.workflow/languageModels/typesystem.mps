@@ -253,8 +253,8 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="3121388506938957370" name="org.campagnelab.workflow.structure.TupleType" flags="ng" index="1h3xP" />
-      <concept id="3526016120162721360" name="org.campagnelab.workflow.structure.FileType" flags="ng" index="3UtRaE" />
+      <concept id="3121388506938957370" name="org.campagnelab.workflow.structure.TupleType" flags="ig" index="1h3xP" />
+      <concept id="3526016120162721360" name="org.campagnelab.workflow.structure.FileType" flags="ig" index="3UtRaE" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1176906603202" name="jetbrains.mps.baseLanguage.collections.structure.BinaryOperation" flags="nn" index="56pJg">
@@ -2071,20 +2071,31 @@
               </node>
               <node concept="3clFbS" id="ZOADNDrMkw" role="DmIXo">
                 <node concept="1Z5TYs" id="ZOADNDmy0V" role="3cqZAp">
-                  <node concept="mw_s8" id="ZOADNDmy1a" role="1ZfhKB">
-                    <node concept="2OqwBi" id="ZOADNDrMpN" role="mwGJk">
-                      <node concept="1YBJjd" id="ZOADNDrMll" role="2Oq$k0">
-                        <ref role="1YBMHb" node="ZOADNDrMkM" resolve="listType" />
-                      </node>
-                      <node concept="3TrEf2" id="ZOADNDrMCm" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tp2q:gK_ZDn5" />
-                      </node>
-                    </node>
-                  </node>
                   <node concept="mw_s8" id="ZOADNDmy0Y" role="1ZfhK$">
                     <node concept="1Z2H0r" id="ZOADNDmxXe" role="mwGJk">
                       <node concept="1YBJjd" id="ZOADNDmxZg" role="1Z2MuG">
                         <ref role="1YBMHb" node="12v1CqH7fDG" resolve="flatten" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="mw_s8" id="5rY6S$LVuSo" role="1ZfhKB">
+                    <node concept="2c44tf" id="5rY6S$LVuSm" role="mwGJk">
+                      <node concept="_YKpA" id="5rY6S$LVuSI" role="2c44tc">
+                        <node concept="33vP2l" id="5rY6S$LVuSK" role="_ZDj9">
+                          <node concept="2c44te" id="5rY6S$LVuZE" role="lGtFl">
+                            <node concept="2OqwBi" id="5rY6S$LVv1x" role="2c44t1">
+                              <node concept="1YBJjd" id="5rY6S$LVuZT" role="2Oq$k0">
+                                <ref role="1YBMHb" node="12v1CqH7fDG" resolve="flatten" />
+                              </node>
+                              <node concept="2qgKlT" id="5rY6S$LVvcY" role="2OqNvi">
+                                <ref role="37wK5l" to="mqvz:5rY6S$LQTw$" resolve="getDeepestType" />
+                                <node concept="1YBJjd" id="5rY6S$LVveB" role="37wK5m">
+                                  <ref role="1YBMHb" node="ZOADNDrMkM" resolve="listType" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>

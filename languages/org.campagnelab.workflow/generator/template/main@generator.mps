@@ -16,7 +16,6 @@
   <imports>
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="f33h" ref="r:f320954b-8bda-45ee-99de-4ca75050906f(org.campagnelab.workflow.generator.template.main@generator)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
@@ -176,7 +175,7 @@
     <node concept="3lhOvk" id="2cffJJS7$6E" role="3lj3bC">
       <property role="13Pg2o" value="true" />
       <ref role="30HIoZ" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
-      <ref role="3lhOvi" to="f33h:2cffJJS8DVj" resolve="build" />
+      <ref role="3lhOvi" node="2cffJJS8DVj" resolve="build" />
       <node concept="30G5F_" id="2cffJJS7$6G" role="30HLyM">
         <node concept="3clFbS" id="2cffJJS7$6H" role="2VODD2">
           <node concept="3clFbF" id="2cffJJS7$pH" role="3cqZAp">

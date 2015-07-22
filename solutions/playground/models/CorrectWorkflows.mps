@@ -89,6 +89,9 @@
         <child id="6202591221123608443" name="fileList" index="04Qyx" />
       </concept>
       <concept id="6202591221123591000" name="org.campagnelab.workflow.structure.FileList" flags="ng" index="04MM2" />
+      <concept id="6202591221127590908" name="org.campagnelab.workflow.structure.GlobalFileListExpression" flags="ng" index="0k3gA">
+        <child id="6202591221127590944" name="fileList" index="0k3fU" />
+      </concept>
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
         <reference id="6509497193195685433" name="variable" index="0wEsc" />
       </concept>
@@ -152,9 +155,11 @@
       <concept id="3855674281012038742" name="org.campagnelab.workflow.structure.GlobalIntegerExpression" flags="ng" index="2$PLs2">
         <child id="3855674281012526304" name="integer" index="2$RAuO" />
       </concept>
-      <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.GlobalStringExpression" flags="ng" index="2$PLvr" />
       <concept id="3855674281012525767" name="org.campagnelab.workflow.structure.GlobalStringLiteralList" flags="ng" index="2$RA6j">
         <child id="3855674281012525912" name="string" index="2$RA0c" />
+      </concept>
+      <concept id="3855674281012526088" name="org.campagnelab.workflow.structure.GlobalFileLiteralList" flags="ng" index="2$RAts">
+        <child id="3855674281012526239" name="file" index="2$RAvb" />
       </concept>
       <concept id="3855674281012527421" name="org.campagnelab.workflow.structure.GlobalIntegerLiteral" flags="ng" index="2$RDDD">
         <property id="3855674281012527422" name="value" index="2$RDDE" />
@@ -178,9 +183,6 @@
       </concept>
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
-      <concept id="3341569134395098942" name="org.campagnelab.workflow.structure.ForSideTransformTest" flags="ng" index="1em2hi">
-        <child id="3341569134395107065" name="another" index="1em0ml" />
-      </concept>
       <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
@@ -198,6 +200,7 @@
         <child id="3857878650537656757" name="functions" index="1ylr64" />
       </concept>
       <concept id="3857878650533843630" name="org.campagnelab.workflow.structure.ToList" flags="ng" index="1yaYav" />
+      <concept id="3857878650533842792" name="org.campagnelab.workflow.structure.Flatten" flags="ng" index="1yaZXp" />
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
       </concept>
@@ -321,10 +324,6 @@
           <property role="2$RDDE" value="4" />
         </node>
       </node>
-    </node>
-    <node concept="1CVceo" id="5rY6S$Ls1jO" role="2$L6iY">
-      <property role="TrG5h" value="stri" />
-      <node concept="2$PLvr" id="5rY6S$Ls1kP" role="2$L62I" />
     </node>
   </node>
   <node concept="2ulcR8" id="6t646FqPoxG">
@@ -653,10 +652,31 @@
       </node>
     </node>
   </node>
-  <node concept="1em2hi" id="2TvCQLw6n$u">
-    <property role="TrG5h" value="sourceNode" />
-    <node concept="1em2hi" id="2TvCQLw6nCh" role="1em0ml">
-      <property role="TrG5h" value="targetNode" />
+  <node concept="2$rMIF" id="5rY6S$LVtPP">
+    <property role="TrG5h" value="FlattenTest" />
+    <node concept="2LyH2v" id="5rY6S$LVuy6" role="2LyH5s" />
+    <node concept="2$rEH5" id="5rY6S$LVtPR" role="2$rEHq">
+      <ref role="2$rEH4" node="YNIIGPcu0K" resolve="conditionDummy" />
+      <node concept="1uYdA0" id="5rY6S$LVuDT" role="1uLvPH">
+        <ref role="1uK_4X" node="dNnsoyW5xR" resolve="fileLst" />
+        <node concept="1yaZXp" id="5rY6S$M4e_3" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="5rY6S$LVuDU" role="1uLvPA">
+        <property role="TrG5h" value="fileLstOut" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="dNnsoyW5xR" role="2$L6iY">
+      <property role="TrG5h" value="fileLst" />
+      <node concept="0k3gA" id="dNnsoyW5xZ" role="2$L62I">
+        <node concept="2$RAts" id="dNnsoyW5y1" role="0k3fU">
+          <node concept="2xgF7X" id="dNnsoyW5y3" role="2$RAvb">
+            <property role="2VDI9B" value="path1" />
+          </node>
+          <node concept="2xgF7X" id="dNnsoyW5z7" role="2$RAvb">
+            <property role="2VDI9B" value="path2" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
