@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="7,0,11,0" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated" />
+      <unit at="13,0,26,0" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)/2526307167898569313">
+    <file name="QueriesGenerated.java">
+      <node id="2526307167898584685" at="16,110,17,358" concept="0" />
+      <scope id="2526307167898583469" at="16,110,17,358" />
+    </file>
+  </root>
+  <root nodeRef="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)/2526307167898869459">
+    <file name="QueriesGenerated.java">
+      <node id="2526307167898894455" at="19,112,20,23" concept="0" />
+      <node id="2526307167898883142" at="22,112,23,175" concept="0" />
+      <scope id="2526307167898871065" at="19,112,20,23" />
+      <scope id="2526307167898883136" at="22,112,23,175" />
     </file>
   </root>
 </debug-info>
