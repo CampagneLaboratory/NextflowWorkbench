@@ -152,7 +152,6 @@
       <concept id="3855674281012038742" name="org.campagnelab.workflow.structure.GlobalIntegerExpression" flags="ng" index="2$PLs2">
         <child id="3855674281012526304" name="integer" index="2$RAuO" />
       </concept>
-      <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.GlobalStringExpression" flags="ng" index="2$PLvr" />
       <concept id="3855674281012525767" name="org.campagnelab.workflow.structure.GlobalStringLiteralList" flags="ng" index="2$RA6j">
         <child id="3855674281012525912" name="string" index="2$RA0c" />
       </concept>
@@ -321,10 +320,6 @@
           <property role="2$RDDE" value="4" />
         </node>
       </node>
-    </node>
-    <node concept="1CVceo" id="5rY6S$Ls1jO" role="2$L6iY">
-      <property role="TrG5h" value="stri" />
-      <node concept="2$PLvr" id="5rY6S$Ls1kP" role="2$L62I" />
     </node>
   </node>
   <node concept="2ulcR8" id="6t646FqPoxG">
@@ -532,7 +527,7 @@
       <node concept="19SGf9" id="6YYJWE30TP3" role="3Y$PkS">
         <node concept="19SUe$" id="6YYJWE30TPa" role="19SJt6" />
         <node concept="3YE7tV" id="6YYJWE30TP9" role="19SJt6">
-          <ref role="3YE7sm" to=":^" resolve="bools" />
+          <ref role="3YE7sm" node="3f$SU0Y0VLj" resolve="ints" />
         </node>
         <node concept="19SUe$" id="6YYJWE30TPb" role="19SJt6">
           <property role="19SUeA" value="\n" />
