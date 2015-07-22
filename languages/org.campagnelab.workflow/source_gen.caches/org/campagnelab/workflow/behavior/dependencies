@@ -28,6 +28,7 @@
     <classNode dependClassName="org.campagnelab.workflow.behavior.FileType_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.File_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.Flatten_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.ForSideTransformTest_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.GlobalBooleanExpression_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.GlobalBooleanLiteralList_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.GlobalBooleanLiteralTuple_BehaviorDescriptor" />
@@ -321,6 +322,16 @@
     <classNode dependClassName="org.campagnelab.workflow.behavior.ChannelFunction_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.Flatten_Behavior" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.behavior.ForSideTransformTest_BehaviorDescriptor" file="ForSideTransformTest_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.GlobalBooleanExpression_Behavior" file="GlobalBooleanExpression_Behavior.java">

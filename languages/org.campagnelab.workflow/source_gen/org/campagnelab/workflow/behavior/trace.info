@@ -17,7 +17,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BaseLanguageAdapter_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,184,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,186,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BooleanChannel_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
@@ -81,6 +81,9 @@
     </file>
     <file name="Flatten_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.Flatten_BehaviorDescriptor" />
+    </file>
+    <file name="ForSideTransformTest_BehaviorDescriptor.java">
+      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.ForSideTransformTest_BehaviorDescriptor" />
     </file>
     <file name="GlobalBooleanExpression_BehaviorDescriptor.java">
       <unit at="7,0,21,0" name="org.campagnelab.workflow.behavior.GlobalBooleanExpression_BehaviorDescriptor" />
@@ -1672,42 +1675,43 @@
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/6783277435987830274">
     <file name="GlobalIntegerExpression_Behavior.java">
-      <node id="6783277435987830390" at="16,80,17,28" concept="6" />
-      <node id="6783277435987830397" at="18,220,19,126" concept="1" />
-      <node id="6783277435987830403" at="20,223,21,23" concept="1" />
-      <node id="6783277435987830417" at="22,14,23,22" concept="1" />
-      <node id="6783277435987830421" at="25,5,26,18" concept="7" />
-      <node id="3526016120160539239" at="28,76,29,233" concept="6" />
-      <node id="3526016120160539275" at="29,233,30,123" concept="7" />
-      <node id="6783277435987830274" at="14,0,16,0" concept="11" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="7757275043994555630" at="22,12,24,7" concept="0" />
-      <node id="6783277435987830274" at="28,0,32,0" concept="11" trace="virtual_getType_3526016120160454965#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="6783277435987830401" at="19,126,24,7" concept="4" />
-      <node id="6783277435987830394" at="17,28,25,5" concept="3" />
-      <node id="6783277435987830274" at="16,0,28,0" concept="11" trace="virtual_getFunction_6783277435987822218#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <scope id="6783277435987830276" at="14,43,14,43" />
-      <scope id="6783277435987830402" at="20,223,21,23" />
-      <scope id="7757275043994555631" at="22,14,23,22" />
-      <scope id="6783277435987830274" at="14,0,16,0">
-        <var name="thisNode" id="6783277435987830274" />
-      </scope>
-      <scope id="3526016120160458032" at="28,76,30,123">
+      <node id="3926486501671936949" at="14,43,15,432" concept="1" />
+      <node id="6783277435987830390" at="17,80,18,28" concept="6" />
+      <node id="6783277435987830397" at="19,220,20,126" concept="1" />
+      <node id="6783277435987830403" at="21,223,22,23" concept="1" />
+      <node id="6783277435987830417" at="23,14,24,22" concept="1" />
+      <node id="6783277435987830421" at="26,5,27,18" concept="7" />
+      <node id="3526016120160539239" at="29,76,30,233" concept="6" />
+      <node id="3526016120160539275" at="30,233,31,123" concept="7" />
+      <node id="7757275043994555630" at="23,12,25,7" concept="0" />
+      <node id="6783277435987830274" at="14,0,17,0" concept="11" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6783277435987830274" at="29,0,33,0" concept="11" trace="virtual_getType_3526016120160454965#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="6783277435987830401" at="20,126,25,7" concept="4" />
+      <node id="6783277435987830394" at="18,28,26,5" concept="3" />
+      <node id="6783277435987830274" at="17,0,29,0" concept="11" trace="virtual_getFunction_6783277435987822218#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="6783277435987830276" at="14,43,15,432" />
+      <scope id="6783277435987830402" at="21,223,22,23" />
+      <scope id="7757275043994555631" at="23,14,24,22" />
+      <scope id="3526016120160458032" at="29,76,31,123">
         <var name="intCh" id="3526016120160539242" />
       </scope>
-      <scope id="6783277435987830274" at="28,0,32,0">
+      <scope id="6783277435987830274" at="14,0,17,0">
         <var name="thisNode" id="6783277435987830274" />
       </scope>
-      <scope id="6783277435987830396" at="18,220,24,7" />
-      <scope id="6783277435987830394" at="17,28,25,5">
+      <scope id="6783277435987830274" at="29,0,33,0">
+        <var name="thisNode" id="6783277435987830274" />
+      </scope>
+      <scope id="6783277435987830396" at="19,220,25,7" />
+      <scope id="6783277435987830394" at="18,28,26,5">
         <var name="value" id="6783277435987830395" />
       </scope>
-      <scope id="6783277435987830389" at="16,80,26,18">
+      <scope id="6783277435987830389" at="17,80,27,18">
         <var name="output" id="6783277435987830391" />
       </scope>
-      <scope id="6783277435987830274" at="16,0,28,0">
+      <scope id="6783277435987830274" at="17,0,29,0">
         <var name="thisNode" id="6783277435987830274" />
       </scope>
-      <unit id="6783277435987830274" at="13,0,33,0" name="org.campagnelab.workflow.behavior.GlobalIntegerExpression_Behavior" />
+      <unit id="6783277435987830274" at="13,0,34,0" name="org.campagnelab.workflow.behavior.GlobalIntegerExpression_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/6783277435987832674">
@@ -1722,42 +1726,43 @@
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/6783277435987843463">
     <file name="GlobalStringExpression_Behavior.java">
-      <node id="6783277435987843616" at="16,80,17,28" concept="6" />
-      <node id="6783277435987843623" at="18,219,19,126" concept="1" />
-      <node id="6783277435987843629" at="20,222,21,23" concept="1" />
-      <node id="6783277435987843643" at="22,14,23,22" concept="1" />
-      <node id="6783277435987843647" at="25,5,26,18" concept="7" />
-      <node id="3526016120160572921" at="28,76,29,232" concept="6" />
-      <node id="3526016120160572927" at="29,232,30,123" concept="7" />
-      <node id="6783277435987843463" at="14,0,16,0" concept="11" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="7757275043994558342" at="22,12,24,7" concept="0" />
-      <node id="6783277435987843463" at="28,0,32,0" concept="11" trace="virtual_getType_3526016120160454965#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="6783277435987843627" at="19,126,24,7" concept="4" />
-      <node id="6783277435987843620" at="17,28,25,5" concept="3" />
-      <node id="6783277435987843463" at="16,0,28,0" concept="11" trace="virtual_getFunction_6783277435987822218#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <scope id="6783277435987843465" at="14,43,14,43" />
-      <scope id="6783277435987843628" at="20,222,21,23" />
-      <scope id="7757275043994558343" at="22,14,23,22" />
-      <scope id="6783277435987843463" at="14,0,16,0">
-        <var name="thisNode" id="6783277435987843463" />
-      </scope>
-      <scope id="3526016120160572155" at="28,76,30,123">
+      <node id="3926486501673159758" at="14,43,15,430" concept="1" />
+      <node id="6783277435987843616" at="17,80,18,28" concept="6" />
+      <node id="6783277435987843623" at="19,219,20,126" concept="1" />
+      <node id="6783277435987843629" at="21,222,22,23" concept="1" />
+      <node id="6783277435987843643" at="23,14,24,22" concept="1" />
+      <node id="6783277435987843647" at="26,5,27,18" concept="7" />
+      <node id="3526016120160572921" at="29,76,30,232" concept="6" />
+      <node id="3526016120160572927" at="30,232,31,123" concept="7" />
+      <node id="7757275043994558342" at="23,12,25,7" concept="0" />
+      <node id="6783277435987843463" at="14,0,17,0" concept="11" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6783277435987843463" at="29,0,33,0" concept="11" trace="virtual_getType_3526016120160454965#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="6783277435987843627" at="20,126,25,7" concept="4" />
+      <node id="6783277435987843620" at="18,28,26,5" concept="3" />
+      <node id="6783277435987843463" at="17,0,29,0" concept="11" trace="virtual_getFunction_6783277435987822218#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="6783277435987843465" at="14,43,15,430" />
+      <scope id="6783277435987843628" at="21,222,22,23" />
+      <scope id="7757275043994558343" at="23,14,24,22" />
+      <scope id="3526016120160572155" at="29,76,31,123">
         <var name="strCh" id="3526016120160572922" />
       </scope>
-      <scope id="6783277435987843463" at="28,0,32,0">
+      <scope id="6783277435987843463" at="14,0,17,0">
         <var name="thisNode" id="6783277435987843463" />
       </scope>
-      <scope id="6783277435987843622" at="18,219,24,7" />
-      <scope id="6783277435987843620" at="17,28,25,5">
+      <scope id="6783277435987843463" at="29,0,33,0">
+        <var name="thisNode" id="6783277435987843463" />
+      </scope>
+      <scope id="6783277435987843622" at="19,219,25,7" />
+      <scope id="6783277435987843620" at="18,28,26,5">
         <var name="value" id="6783277435987843621" />
       </scope>
-      <scope id="6783277435987843615" at="16,80,26,18">
+      <scope id="6783277435987843615" at="17,80,27,18">
         <var name="output" id="6783277435987843617" />
       </scope>
-      <scope id="6783277435987843463" at="16,0,28,0">
+      <scope id="6783277435987843463" at="17,0,29,0">
         <var name="thisNode" id="6783277435987843463" />
       </scope>
-      <unit id="6783277435987843463" at="13,0,33,0" name="org.campagnelab.workflow.behavior.GlobalStringExpression_Behavior" />
+      <unit id="6783277435987843463" at="13,0,34,0" name="org.campagnelab.workflow.behavior.GlobalStringExpression_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/6783277435987847673">

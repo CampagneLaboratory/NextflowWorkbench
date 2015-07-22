@@ -701,8 +701,8 @@
   <node concept="1TIwiD" id="3m26PihhBXV">
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalStringType" />
     <property role="TrG5h" value="RangeOfCharLiterals" />
-    <property role="34LRSv" value="range" />
     <property role="R4oN_" value="creates a range of strings from start to end inclusive as individual emissions" />
+    <property role="34LRSv" value="range" />
     <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="GlobalStringContainer" />
     <node concept="1TJgyi" id="3m26PihhBXW" role="1TKVEl">
       <property role="TrG5h" value="start" />
@@ -878,8 +878,8 @@
   <node concept="1TIwiD" id="3m26Pihn82l">
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalIntegerType" />
     <property role="TrG5h" value="RangeOfIntegerLiterals" />
-    <property role="34LRSv" value="range" />
     <property role="R4oN_" value="creates a range of integers from start to end inclusive as individual emissions" />
+    <property role="34LRSv" value="range" />
     <ref role="1TJDcQ" node="3m26Pihn7g0" resolve="GlobalIntegerContainer" />
     <node concept="1TJgyi" id="3m26Pihn82m" role="1TKVEl">
       <property role="TrG5h" value="start" />
@@ -1209,6 +1209,20 @@
       <property role="20kJfa" value="list" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="2Hhp$WEw$gJ" resolve="GlobalTupleLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2TvCQLw1SsY">
+    <property role="TrG5h" value="ForSideTransformTest" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="saddle" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2TvCQLw1UcN" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2TvCQLw1UrT" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="another" />
+      <ref role="20lvS9" node="2TvCQLw1SsY" resolve="ForSideTransformTest" />
     </node>
   </node>
 </model>
