@@ -87,6 +87,9 @@
     </node>
     <node concept="2$rEH5" id="3gLclC5_5RS" role="2$rEHq">
       <ref role="2$rEH4" node="3gLclC5_5QV" resolve="reverse" />
+      <node concept="1uLkD0" id="D$tkU2g9vi" role="1uLvPA">
+        <property role="TrG5h" value="result" />
+      </node>
       <node concept="1uYdA0" id="3gLclC5_5S2" role="1uLvPH">
         <ref role="1uK_4X" node="3gLclC5_5RZ" resolve="splitfile" />
       </node>
@@ -126,6 +129,11 @@
   </node>
   <node concept="2ulcR8" id="3gLclC5_5QV">
     <property role="TrG5h" value="reverse" />
+    <node concept="1uY1Ls" id="D$tkU2g9nc" role="2ulM79">
+      <node concept="16pRw0" id="D$tkU2g9ne" role="1uY1Lt">
+        <property role="TrG5h" value="'finaleres.txt'" />
+      </node>
+    </node>
     <node concept="3Y$Zt1" id="3gLclC5_5RB" role="2ulM7a">
       <node concept="19SGf9" id="3gLclC5_5RD" role="3Y$PkS">
         <node concept="19SUe$" id="3gLclC5_5RE" role="19SJt6">
@@ -135,8 +143,12 @@
           <ref role="3YE7sm" node="3gLclC5_5Rg" resolve="record" />
         </node>
         <node concept="19SUe$" id="3gLclC5_5RK" role="19SJt6">
-          <property role="19SUeA" value="| rev &gt;&gt;finalres.txt" />
+          <property role="19SUeA" value="| rev &gt;&gt;" />
         </node>
+        <node concept="2b_LqF" id="D$tkU2g9nj" role="19SJt6">
+          <ref role="2b_LqC" node="D$tkU2g9ne" resolve="'finaleres.txt'" />
+        </node>
+        <node concept="19SUe$" id="D$tkU2g9ni" role="19SJt6" />
       </node>
     </node>
     <node concept="1uY1Ls" id="3gLclC5_5Rf" role="2ulM7n">
