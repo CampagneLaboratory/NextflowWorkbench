@@ -18,8 +18,8 @@
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -132,6 +132,12 @@
       <property role="20kJfa" value="executor" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="49c3W7NLHXs" resolve="Executor" />
+    </node>
+    <node concept="1TJgyj" id="5HJ0QzxBRcw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="reports" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5HJ0QzxC1s2" resolve="Report" />
     </node>
     <node concept="PrWs8" id="5D7AjvYabat" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -1238,6 +1244,35 @@
     <node concept="PrWs8" id="D$tkU1WQfB" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5HJ0QzxC1s2">
+    <property role="TrG5h" value="Report" />
+    <property role="3GE5qa" value="reports" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5HJ0QzxC1sm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="function" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5HJ0QzxIyJ0" resolve="ReportFunction" />
+    </node>
+    <node concept="1TJgyj" id="5HJ0QzxC1sk" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="channel" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7gAPJCESTMU" resolve="OutputChannel" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5HJ0QzxIyJ0">
+    <property role="3GE5qa" value="reports" />
+    <property role="TrG5h" value="ReportFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="5HJ0QzxIyJ3">
+    <property role="3GE5qa" value="reports" />
+    <property role="TrG5h" value="ReportParameter" />
+    <property role="34LRSv" value="c" />
+    <property role="R4oN_" value="The output channel that will hold values to report about" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>
 

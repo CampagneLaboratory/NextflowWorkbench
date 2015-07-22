@@ -10,6 +10,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
@@ -111,6 +112,12 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -170,6 +177,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
@@ -353,6 +362,42 @@
       <property role="TrG5h" value="workflow" />
       <node concept="3cqZAl" id="34JZ5vrM0V5" role="3clF45" />
       <node concept="3clFbS" id="34JZ5vrM0V6" role="3clF47">
+        <node concept="lc7rE" id="5HJ0Qzzi3Q6" role="3cqZAp">
+          <node concept="la8eA" id="5HJ0Qzzi3QQ" role="lcghm">
+            <property role="lacIc" value="import " />
+          </node>
+          <node concept="l9hG8" id="5HJ0Qzzi3ZV" role="lcghm">
+            <node concept="2OqwBi" id="5HJ0Qzzi4p1" role="lb14g">
+              <node concept="2OqwBi" id="5HJ0Qzzi42N" role="2Oq$k0">
+                <node concept="37vLTw" id="5HJ0Qzzi402" role="2Oq$k0">
+                  <ref role="3cqZAo" node="34JZ5vrM0Ve" resolve="workflow" />
+                </node>
+                <node concept="I4A8Y" id="5HJ0Qzzi4dT" role="2OqNvi" />
+              </node>
+              <node concept="LkI2h" id="5HJ0Qzzi4tI" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="la8eA" id="5HJ0Qzzi4tU" role="lcghm">
+            <property role="lacIc" value="." />
+          </node>
+          <node concept="l9hG8" id="5HJ0Qzzi4ue" role="lcghm">
+            <node concept="2OqwBi" id="5HJ0Qzzi4xD" role="lb14g">
+              <node concept="37vLTw" id="5HJ0Qzzi4us" role="2Oq$k0">
+                <ref role="3cqZAo" node="34JZ5vrM0Ve" resolve="workflow" />
+              </node>
+              <node concept="3TrcHB" id="5HJ0Qzzi4GJ" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="5HJ0Qzzi4H0" role="lcghm">
+            <property role="lacIc" value="_Methods" />
+          </node>
+          <node concept="la8eA" id="5HJ0Qzzi4Hu" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+          <node concept="l8MVK" id="5HJ0Qzzig94" role="lcghm" />
+        </node>
         <node concept="2Gpval" id="5Sz2Ie0Y8FG" role="3cqZAp">
           <node concept="2GrKxI" id="5Sz2Ie0Y8FI" role="2Gsz3X">
             <property role="TrG5h" value="channel" />
@@ -430,6 +475,28 @@
               </node>
             </node>
             <node concept="3GX2aA" id="34JZ5vrXqKy" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="2Gpval" id="5HJ0QzykZXK" role="3cqZAp">
+          <node concept="2GrKxI" id="5HJ0QzykZXM" role="2Gsz3X">
+            <property role="TrG5h" value="report" />
+          </node>
+          <node concept="3clFbS" id="5HJ0QzykZXO" role="2LFqv$">
+            <node concept="lc7rE" id="5HJ0Qzyl0Hj" role="3cqZAp">
+              <node concept="l9hG8" id="5HJ0Qzyl0Hn" role="lcghm">
+                <node concept="2GrUjf" id="5HJ0Qzyl0Ht" role="lb14g">
+                  <ref role="2Gs0qQ" node="5HJ0QzykZXM" resolve="report" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5HJ0Qzyl0o9" role="2GsD0m">
+            <node concept="37vLTw" id="5HJ0QzykZYt" role="2Oq$k0">
+              <ref role="3cqZAo" node="34JZ5vrM0Ve" resolve="workflow" />
+            </node>
+            <node concept="3Tsc0h" id="5HJ0Qzyl0Hg" role="2OqNvi">
+              <ref role="3TtcxE" to="iowz:5HJ0QzxBRcw" />
+            </node>
           </node>
         </node>
       </node>
@@ -1372,6 +1439,113 @@
                   <property role="Xl_RC" value="'" />
                 </node>
                 <node concept="Xl_RD" id="D$tkU2a_qW" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="5HJ0QzykS31">
+    <property role="3GE5qa" value="reports" />
+    <ref role="WuzLi" to="iowz:5HJ0QzxC1s2" resolve="Report" />
+    <node concept="11bSqf" id="5HJ0QzykS32" role="11c4hB">
+      <node concept="3clFbS" id="5HJ0QzykS33" role="2VODD2">
+        <node concept="lc7rE" id="5HJ0QzykSvU" role="3cqZAp">
+          <node concept="l9hG8" id="5HJ0QzykSwa" role="lcghm">
+            <node concept="2OqwBi" id="5HJ0QzykSNy" role="lb14g">
+              <node concept="2OqwBi" id="5HJ0QzykSxW" role="2Oq$k0">
+                <node concept="117lpO" id="5HJ0QzykSwh" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5HJ0QzykSE0" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iowz:5HJ0QzxC1sk" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="5HJ0QzykSZ7" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="5HJ0QzykSZo" role="lcghm">
+            <property role="lacIc" value=".subscribe{ c -&gt; " />
+          </node>
+          <node concept="la8eA" id="5HJ0QzykTj7" role="lcghm">
+            <property role="lacIc" value="\n" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5HJ0Qzz8pCD" role="3cqZAp">
+          <node concept="3cpWsn" id="5HJ0Qzz8pCJ" role="3cpWs9">
+            <property role="TrG5h" value="workflow" />
+            <node concept="3Tqbb2" id="5HJ0Qzz8pFg" role="1tU5fm">
+              <ref role="ehGHo" to="iowz:5D7AjvYabas" resolve="Workflow" />
+            </node>
+            <node concept="2OqwBi" id="5HJ0Qzz8pEw" role="33vP2m">
+              <node concept="117lpO" id="5HJ0Qzz8pEx" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5HJ0Qzz8pEy" role="2OqNvi">
+                <node concept="1xMEDy" id="5HJ0Qzz8pEz" role="1xVPHs">
+                  <node concept="chp4Y" id="5HJ0Qzz8pE$" role="ri$Ld">
+                    <ref role="cht4Q" to="iowz:5D7AjvYabas" resolve="Workflow" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="5HJ0Qzzi3$i" role="3cqZAp">
+          <node concept="3SKdUq" id="5HJ0Qzzi3_0" role="3SKWNk">
+            <property role="3SKdUp" value="warning, the toFile() call is required if the channel contains files, because the actual class name is sun.nio.fs.UnixPath" />
+          </node>
+        </node>
+        <node concept="lc7rE" id="5HJ0QzykSZL" role="3cqZAp">
+          <node concept="l9hG8" id="5HJ0Qzyv8Ud" role="lcghm">
+            <node concept="2OqwBi" id="5HJ0Qzyv9t0" role="lb14g">
+              <node concept="3TrcHB" id="5HJ0Qzyv9Dn" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+              <node concept="37vLTw" id="5HJ0Qzz8pFp" role="2Oq$k0">
+                <ref role="3cqZAo" node="5HJ0Qzz8pCJ" resolve="workflow" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="5HJ0Qzyv9DE" role="lcghm">
+            <property role="lacIc" value="_Methods.reportAbout_" />
+          </node>
+          <node concept="l9hG8" id="5HJ0Qzyv9X5" role="lcghm">
+            <node concept="2OqwBi" id="5HJ0Qzyvao5" role="lb14g">
+              <node concept="2OqwBi" id="5HJ0Qzyv9Zo" role="2Oq$k0">
+                <node concept="117lpO" id="5HJ0Qzyv9Xn" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5HJ0Qzyvaez" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iowz:5HJ0QzxC1sk" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="5HJ0QzyvazE" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="5HJ0QzyvaGN" role="lcghm">
+            <property role="lacIc" value="(c.toFile());" />
+          </node>
+        </node>
+        <node concept="lc7rE" id="5HJ0QzykTii" role="3cqZAp">
+          <node concept="la8eA" id="5HJ0QzykTiC" role="lcghm">
+            <property role="lacIc" value="}" />
+          </node>
+          <node concept="l8MVK" id="5HJ0QzykTiO" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="5HJ0QzylaPB">
+    <property role="3GE5qa" value="reports" />
+    <ref role="WuzLi" to="iowz:5HJ0QzxIyJ0" resolve="ReportFunction" />
+    <node concept="11bSqf" id="5HJ0QzylaPC" role="11c4hB">
+      <node concept="3clFbS" id="5HJ0QzylaPD" role="2VODD2">
+        <node concept="lc7rE" id="5HJ0QzylaPT" role="3cqZAp">
+          <node concept="l9hG8" id="5HJ0QzylaQ0" role="lcghm">
+            <node concept="2OqwBi" id="5HJ0QzylaUk" role="lb14g">
+              <node concept="117lpO" id="5HJ0QzylaQ9" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5HJ0QzylbxL" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:gyVODHa" />
               </node>
             </node>
           </node>
