@@ -1225,5 +1225,19 @@
       <ref role="20lvS9" node="2TvCQLw1SsY" resolve="ForSideTransformTest" />
     </node>
   </node>
+  <node concept="1TIwiD" id="D$tkU1WQf_">
+    <property role="TrG5h" value="NameInAChannelRef" />
+    <property role="34LRSv" value="'" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="D$tkU1WQfA" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="70dPcAeD8Uh" resolve="ValueInAChannel" />
+    </node>
+    <node concept="PrWs8" id="D$tkU1WQfB" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
 </model>
 

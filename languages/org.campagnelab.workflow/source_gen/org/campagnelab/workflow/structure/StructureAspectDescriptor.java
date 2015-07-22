@@ -78,6 +78,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptListTypes = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ListTypes", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5998affa318eabe9L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptLocal = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Local", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x424c0fc1f3c6df5dL)).super_("org.campagnelab.workflow.structure.Executor").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x424c0fc1f3c6df5cL)).parents("org.campagnelab.workflow.structure.Executor").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x424c0fc1f3c6df5cL)).alias("local", "executes the workflow on the local, single machine").create();
   /*package*/ final ConceptDescriptor myConceptMemory = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Memory", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2054599338fca63fL)).super_("org.campagnelab.workflow.structure.ProcessOptions").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).parents("org.campagnelab.workflow.structure.ProcessOptions").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(2329585396108535460L, "memory")).properties("memory").alias("memory", "defines how much memory the process is allowed to use").create();
+  /*package*/ final ConceptDescriptor myConceptNameInAChannelRef = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.NameInAChannelRef", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xa64754e81f363e5L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "de.slisson.mps.richtext.structure.IWord").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0x92d2ea165a424fdfL, 0xa676c7604efe3504L, 0x237c8da86a9e7aecL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(748852418098455526L, "value", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x700dd4c98ea48e91L), false)).references("value").alias("'", "").create();
   /*package*/ final ConceptDescriptor myConceptNextflowConfig = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.NextflowConfig", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2054599339054b2cL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(2329585396109102069L, "executor", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x424c0fc1f3c6df5cL), false, false, false), new ConceptDescriptorBuilder.Link(5930160417388865584L, "processOptions", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L), true, true, false)).children(new String[]{"executor", "processOptions"}, new boolean[]{false, true}).alias("nextflow.config", "configuration for nextflow").create();
   /*package*/ final ConceptDescriptor myConceptNonListNonFileChannel = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.NonListNonFileChannel", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x561407da5495da0aL)).super_("org.campagnelab.workflow.structure.Channel").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae32ad2L)).parents("org.campagnelab.workflow.structure.Channel").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae32ad2L)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptNumCPUs = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.NumCPUs", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2054599338f1bb74L)).super_("org.campagnelab.workflow.structure.ProcessOptions").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).parents("org.campagnelab.workflow.structure.ProcessOptions").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6108ad1bd33ba9c7L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(2329585396107820961L, "num")).properties("num").alias("numCPUs", "defines the number of CPU required by the process' task").create();
@@ -119,13 +120,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBaseLanguageAdapter, myConceptBoolean, myConceptBooleanChannel, myConceptBooleanElement, myConceptChannel, myConceptChannelFunction, myConceptChannelType, myConceptClusterOptions, myConceptCollate, myConceptCollateAllowIncompleteTuples, myConceptCollateOption, myConceptCollateStepSize, myConceptConditionalExpressionText, myConceptConditionalVariableRef, myConceptErrorStrategies, myConceptExecutor, myConceptFile, myConceptFileChannel, myConceptFileList, myConceptFileListChannel, myConceptFileType, myConceptFlatten, myConceptForSideTransformTest, myConceptGlobalBooleanExpression, myConceptGlobalBooleanLiteral, myConceptGlobalBooleanLiteralList, myConceptGlobalBooleanLiteralTuple, myConceptGlobalChannel, myConceptGlobalExpression, myConceptGlobalFileExpression, myConceptGlobalFileListExpression, myConceptGlobalFileLiteralList, myConceptGlobalFileLiteralTuple, myConceptGlobalFilePath, myConceptGlobalIntegerContainer, myConceptGlobalIntegerExpression, myConceptGlobalIntegerLiteral, myConceptGlobalIntegerLiteralList, myConceptGlobalIntegerLiteralTuple, myConceptGlobalListContainer, myConceptGlobalListExpression, myConceptGlobalListLiteral, myConceptGlobalListLiteralTuple, myConceptGlobalStringContainer, myConceptGlobalStringExpression, myConceptGlobalStringLiteral, myConceptGlobalStringLiteralList, myConceptGlobalStringLiteralTuple, myConceptGlobalTupleContainer, myConceptGlobalTupleExpression, myConceptGlobalTupleListExpression, myConceptGlobalTupleListLiteral, myConceptGlobalTupleLiteral, myConceptGlobalValueLiteralTuple, myConceptIgnore, myConceptInputChannel, myConceptInteger, myConceptIntegerChannel, myConceptIntegerElement, myConceptList, myConceptListChannel, myConceptListElement, myConceptListElements, myConceptListTypes, myConceptLocal, myConceptMemory, myConceptNextflowConfig, myConceptNonListNonFileChannel, myConceptNumCPUs, myConceptOutChannelContainer, myConceptOutputChannel, myConceptPenv, myConceptProcess, myConceptProcessOptions, myConceptProcessRef, myConceptQueue, myConceptQueueElement, myConceptRangeOfCharLiterals, myConceptRangeOfIntegerLiterals, myConceptRetry, myConceptRichScript, myConceptSGE, myConceptScript, myConceptScriptArgs, myConceptScriptBooleanArgs, myConceptScriptIntegerArgs, myConceptScriptListArgs, myConceptScriptStringArgs, myConceptString, myConceptStringChannel, myConceptStringElement, myConceptTimeAllowed, myConceptToList, myConceptToListFunction, myConceptToSortedList, myConceptTuple, myConceptTupleChannel, myConceptTupleList, myConceptTupleListChannel, myConceptTupleType, myConceptValueInAChannel, myConceptValueInAChannelNoTuple, myConceptValueInAChannelRef, myConceptWorkflow);
+    return Arrays.asList(myConceptBaseLanguageAdapter, myConceptBoolean, myConceptBooleanChannel, myConceptBooleanElement, myConceptChannel, myConceptChannelFunction, myConceptChannelType, myConceptClusterOptions, myConceptCollate, myConceptCollateAllowIncompleteTuples, myConceptCollateOption, myConceptCollateStepSize, myConceptConditionalExpressionText, myConceptConditionalVariableRef, myConceptErrorStrategies, myConceptExecutor, myConceptFile, myConceptFileChannel, myConceptFileList, myConceptFileListChannel, myConceptFileType, myConceptFlatten, myConceptForSideTransformTest, myConceptGlobalBooleanExpression, myConceptGlobalBooleanLiteral, myConceptGlobalBooleanLiteralList, myConceptGlobalBooleanLiteralTuple, myConceptGlobalChannel, myConceptGlobalExpression, myConceptGlobalFileExpression, myConceptGlobalFileListExpression, myConceptGlobalFileLiteralList, myConceptGlobalFileLiteralTuple, myConceptGlobalFilePath, myConceptGlobalIntegerContainer, myConceptGlobalIntegerExpression, myConceptGlobalIntegerLiteral, myConceptGlobalIntegerLiteralList, myConceptGlobalIntegerLiteralTuple, myConceptGlobalListContainer, myConceptGlobalListExpression, myConceptGlobalListLiteral, myConceptGlobalListLiteralTuple, myConceptGlobalStringContainer, myConceptGlobalStringExpression, myConceptGlobalStringLiteral, myConceptGlobalStringLiteralList, myConceptGlobalStringLiteralTuple, myConceptGlobalTupleContainer, myConceptGlobalTupleExpression, myConceptGlobalTupleListExpression, myConceptGlobalTupleListLiteral, myConceptGlobalTupleLiteral, myConceptGlobalValueLiteralTuple, myConceptIgnore, myConceptInputChannel, myConceptInteger, myConceptIntegerChannel, myConceptIntegerElement, myConceptList, myConceptListChannel, myConceptListElement, myConceptListElements, myConceptListTypes, myConceptLocal, myConceptMemory, myConceptNameInAChannelRef, myConceptNextflowConfig, myConceptNonListNonFileChannel, myConceptNumCPUs, myConceptOutChannelContainer, myConceptOutputChannel, myConceptPenv, myConceptProcess, myConceptProcessOptions, myConceptProcessRef, myConceptQueue, myConceptQueueElement, myConceptRangeOfCharLiterals, myConceptRangeOfIntegerLiterals, myConceptRetry, myConceptRichScript, myConceptSGE, myConceptScript, myConceptScriptArgs, myConceptScriptBooleanArgs, myConceptScriptIntegerArgs, myConceptScriptListArgs, myConceptScriptStringArgs, myConceptString, myConceptStringChannel, myConceptStringElement, myConceptTimeAllowed, myConceptToList, myConceptToListFunction, myConceptToSortedList, myConceptTuple, myConceptTupleChannel, myConceptTupleList, myConceptTupleListChannel, myConceptTupleType, myConceptValueInAChannel, myConceptValueInAChannelNoTuple, myConceptValueInAChannelRef, myConceptWorkflow);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0ee, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0fe, conceptFqName)) {
       case 0:
         return myConceptBaseLanguageAdapter;
       case 1:
@@ -259,84 +260,86 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 65:
         return myConceptMemory;
       case 66:
-        return myConceptNextflowConfig;
+        return myConceptNameInAChannelRef;
       case 67:
-        return myConceptNonListNonFileChannel;
+        return myConceptNextflowConfig;
       case 68:
-        return myConceptNumCPUs;
+        return myConceptNonListNonFileChannel;
       case 69:
-        return myConceptOutChannelContainer;
+        return myConceptNumCPUs;
       case 70:
-        return myConceptOutputChannel;
+        return myConceptOutChannelContainer;
       case 71:
-        return myConceptPenv;
+        return myConceptOutputChannel;
       case 72:
-        return myConceptProcess;
+        return myConceptPenv;
       case 73:
-        return myConceptProcessOptions;
+        return myConceptProcess;
       case 74:
-        return myConceptProcessRef;
+        return myConceptProcessOptions;
       case 75:
-        return myConceptQueue;
+        return myConceptProcessRef;
       case 76:
-        return myConceptQueueElement;
+        return myConceptQueue;
       case 77:
-        return myConceptRangeOfCharLiterals;
+        return myConceptQueueElement;
       case 78:
-        return myConceptRangeOfIntegerLiterals;
+        return myConceptRangeOfCharLiterals;
       case 79:
-        return myConceptRetry;
+        return myConceptRangeOfIntegerLiterals;
       case 80:
-        return myConceptRichScript;
+        return myConceptRetry;
       case 81:
-        return myConceptSGE;
+        return myConceptRichScript;
       case 82:
-        return myConceptScript;
+        return myConceptSGE;
       case 83:
-        return myConceptScriptArgs;
+        return myConceptScript;
       case 84:
-        return myConceptScriptBooleanArgs;
+        return myConceptScriptArgs;
       case 85:
-        return myConceptScriptIntegerArgs;
+        return myConceptScriptBooleanArgs;
       case 86:
-        return myConceptScriptListArgs;
+        return myConceptScriptIntegerArgs;
       case 87:
-        return myConceptScriptStringArgs;
+        return myConceptScriptListArgs;
       case 88:
-        return myConceptString;
+        return myConceptScriptStringArgs;
       case 89:
-        return myConceptStringChannel;
+        return myConceptString;
       case 90:
-        return myConceptStringElement;
+        return myConceptStringChannel;
       case 91:
-        return myConceptTimeAllowed;
+        return myConceptStringElement;
       case 92:
-        return myConceptToList;
+        return myConceptTimeAllowed;
       case 93:
-        return myConceptToListFunction;
+        return myConceptToList;
       case 94:
-        return myConceptToSortedList;
+        return myConceptToListFunction;
       case 95:
-        return myConceptTuple;
+        return myConceptToSortedList;
       case 96:
-        return myConceptTupleChannel;
+        return myConceptTuple;
       case 97:
-        return myConceptTupleList;
+        return myConceptTupleChannel;
       case 98:
-        return myConceptTupleListChannel;
+        return myConceptTupleList;
       case 99:
-        return myConceptTupleType;
+        return myConceptTupleListChannel;
       case 100:
-        return myConceptValueInAChannel;
+        return myConceptTupleType;
       case 101:
-        return myConceptValueInAChannelNoTuple;
+        return myConceptValueInAChannel;
       case 102:
-        return myConceptValueInAChannelRef;
+        return myConceptValueInAChannelNoTuple;
       case 103:
+        return myConceptValueInAChannelRef;
+      case 104:
         return myConceptWorkflow;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0ee = new String[]{"org.campagnelab.workflow.structure.BaseLanguageAdapter", "org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.BooleanChannel", "org.campagnelab.workflow.structure.BooleanElement", "org.campagnelab.workflow.structure.Channel", "org.campagnelab.workflow.structure.ChannelFunction", "org.campagnelab.workflow.structure.ChannelType", "org.campagnelab.workflow.structure.ClusterOptions", "org.campagnelab.workflow.structure.Collate", "org.campagnelab.workflow.structure.CollateAllowIncompleteTuples", "org.campagnelab.workflow.structure.CollateOption", "org.campagnelab.workflow.structure.CollateStepSize", "org.campagnelab.workflow.structure.ConditionalExpressionText", "org.campagnelab.workflow.structure.ConditionalVariableRef", "org.campagnelab.workflow.structure.ErrorStrategies", "org.campagnelab.workflow.structure.Executor", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.FileChannel", "org.campagnelab.workflow.structure.FileList", "org.campagnelab.workflow.structure.FileListChannel", "org.campagnelab.workflow.structure.FileType", "org.campagnelab.workflow.structure.Flatten", "org.campagnelab.workflow.structure.ForSideTransformTest", "org.campagnelab.workflow.structure.GlobalBooleanExpression", "org.campagnelab.workflow.structure.GlobalBooleanLiteral", "org.campagnelab.workflow.structure.GlobalBooleanLiteralList", "org.campagnelab.workflow.structure.GlobalBooleanLiteralTuple", "org.campagnelab.workflow.structure.GlobalChannel", "org.campagnelab.workflow.structure.GlobalExpression", "org.campagnelab.workflow.structure.GlobalFileExpression", "org.campagnelab.workflow.structure.GlobalFileListExpression", "org.campagnelab.workflow.structure.GlobalFileLiteralList", "org.campagnelab.workflow.structure.GlobalFileLiteralTuple", "org.campagnelab.workflow.structure.GlobalFilePath", "org.campagnelab.workflow.structure.GlobalIntegerContainer", "org.campagnelab.workflow.structure.GlobalIntegerExpression", "org.campagnelab.workflow.structure.GlobalIntegerLiteral", "org.campagnelab.workflow.structure.GlobalIntegerLiteralList", "org.campagnelab.workflow.structure.GlobalIntegerLiteralTuple", "org.campagnelab.workflow.structure.GlobalListContainer", "org.campagnelab.workflow.structure.GlobalListExpression", "org.campagnelab.workflow.structure.GlobalListLiteral", "org.campagnelab.workflow.structure.GlobalListLiteralTuple", "org.campagnelab.workflow.structure.GlobalStringContainer", "org.campagnelab.workflow.structure.GlobalStringExpression", "org.campagnelab.workflow.structure.GlobalStringLiteral", "org.campagnelab.workflow.structure.GlobalStringLiteralList", "org.campagnelab.workflow.structure.GlobalStringLiteralTuple", "org.campagnelab.workflow.structure.GlobalTupleContainer", "org.campagnelab.workflow.structure.GlobalTupleExpression", "org.campagnelab.workflow.structure.GlobalTupleListExpression", "org.campagnelab.workflow.structure.GlobalTupleListLiteral", "org.campagnelab.workflow.structure.GlobalTupleLiteral", "org.campagnelab.workflow.structure.GlobalValueLiteralTuple", "org.campagnelab.workflow.structure.Ignore", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.IntegerChannel", "org.campagnelab.workflow.structure.IntegerElement", "org.campagnelab.workflow.structure.List", "org.campagnelab.workflow.structure.ListChannel", "org.campagnelab.workflow.structure.ListElement", "org.campagnelab.workflow.structure.ListElements", "org.campagnelab.workflow.structure.ListTypes", "org.campagnelab.workflow.structure.Local", "org.campagnelab.workflow.structure.Memory", "org.campagnelab.workflow.structure.NextflowConfig", "org.campagnelab.workflow.structure.NonListNonFileChannel", "org.campagnelab.workflow.structure.NumCPUs", "org.campagnelab.workflow.structure.OutChannelContainer", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.Penv", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessOptions", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.Queue", "org.campagnelab.workflow.structure.QueueElement", "org.campagnelab.workflow.structure.RangeOfCharLiterals", "org.campagnelab.workflow.structure.RangeOfIntegerLiterals", "org.campagnelab.workflow.structure.Retry", "org.campagnelab.workflow.structure.RichScript", "org.campagnelab.workflow.structure.SGE", "org.campagnelab.workflow.structure.Script", "org.campagnelab.workflow.structure.ScriptArgs", "org.campagnelab.workflow.structure.ScriptBooleanArgs", "org.campagnelab.workflow.structure.ScriptIntegerArgs", "org.campagnelab.workflow.structure.ScriptListArgs", "org.campagnelab.workflow.structure.ScriptStringArgs", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.StringChannel", "org.campagnelab.workflow.structure.StringElement", "org.campagnelab.workflow.structure.TimeAllowed", "org.campagnelab.workflow.structure.ToList", "org.campagnelab.workflow.structure.ToListFunction", "org.campagnelab.workflow.structure.ToSortedList", "org.campagnelab.workflow.structure.Tuple", "org.campagnelab.workflow.structure.TupleChannel", "org.campagnelab.workflow.structure.TupleList", "org.campagnelab.workflow.structure.TupleListChannel", "org.campagnelab.workflow.structure.TupleType", "org.campagnelab.workflow.structure.ValueInAChannel", "org.campagnelab.workflow.structure.ValueInAChannelNoTuple", "org.campagnelab.workflow.structure.ValueInAChannelRef", "org.campagnelab.workflow.structure.Workflow"};
+  private static String[] stringSwitchCases_1htk8d_a0a0fe = new String[]{"org.campagnelab.workflow.structure.BaseLanguageAdapter", "org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.BooleanChannel", "org.campagnelab.workflow.structure.BooleanElement", "org.campagnelab.workflow.structure.Channel", "org.campagnelab.workflow.structure.ChannelFunction", "org.campagnelab.workflow.structure.ChannelType", "org.campagnelab.workflow.structure.ClusterOptions", "org.campagnelab.workflow.structure.Collate", "org.campagnelab.workflow.structure.CollateAllowIncompleteTuples", "org.campagnelab.workflow.structure.CollateOption", "org.campagnelab.workflow.structure.CollateStepSize", "org.campagnelab.workflow.structure.ConditionalExpressionText", "org.campagnelab.workflow.structure.ConditionalVariableRef", "org.campagnelab.workflow.structure.ErrorStrategies", "org.campagnelab.workflow.structure.Executor", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.FileChannel", "org.campagnelab.workflow.structure.FileList", "org.campagnelab.workflow.structure.FileListChannel", "org.campagnelab.workflow.structure.FileType", "org.campagnelab.workflow.structure.Flatten", "org.campagnelab.workflow.structure.ForSideTransformTest", "org.campagnelab.workflow.structure.GlobalBooleanExpression", "org.campagnelab.workflow.structure.GlobalBooleanLiteral", "org.campagnelab.workflow.structure.GlobalBooleanLiteralList", "org.campagnelab.workflow.structure.GlobalBooleanLiteralTuple", "org.campagnelab.workflow.structure.GlobalChannel", "org.campagnelab.workflow.structure.GlobalExpression", "org.campagnelab.workflow.structure.GlobalFileExpression", "org.campagnelab.workflow.structure.GlobalFileListExpression", "org.campagnelab.workflow.structure.GlobalFileLiteralList", "org.campagnelab.workflow.structure.GlobalFileLiteralTuple", "org.campagnelab.workflow.structure.GlobalFilePath", "org.campagnelab.workflow.structure.GlobalIntegerContainer", "org.campagnelab.workflow.structure.GlobalIntegerExpression", "org.campagnelab.workflow.structure.GlobalIntegerLiteral", "org.campagnelab.workflow.structure.GlobalIntegerLiteralList", "org.campagnelab.workflow.structure.GlobalIntegerLiteralTuple", "org.campagnelab.workflow.structure.GlobalListContainer", "org.campagnelab.workflow.structure.GlobalListExpression", "org.campagnelab.workflow.structure.GlobalListLiteral", "org.campagnelab.workflow.structure.GlobalListLiteralTuple", "org.campagnelab.workflow.structure.GlobalStringContainer", "org.campagnelab.workflow.structure.GlobalStringExpression", "org.campagnelab.workflow.structure.GlobalStringLiteral", "org.campagnelab.workflow.structure.GlobalStringLiteralList", "org.campagnelab.workflow.structure.GlobalStringLiteralTuple", "org.campagnelab.workflow.structure.GlobalTupleContainer", "org.campagnelab.workflow.structure.GlobalTupleExpression", "org.campagnelab.workflow.structure.GlobalTupleListExpression", "org.campagnelab.workflow.structure.GlobalTupleListLiteral", "org.campagnelab.workflow.structure.GlobalTupleLiteral", "org.campagnelab.workflow.structure.GlobalValueLiteralTuple", "org.campagnelab.workflow.structure.Ignore", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.IntegerChannel", "org.campagnelab.workflow.structure.IntegerElement", "org.campagnelab.workflow.structure.List", "org.campagnelab.workflow.structure.ListChannel", "org.campagnelab.workflow.structure.ListElement", "org.campagnelab.workflow.structure.ListElements", "org.campagnelab.workflow.structure.ListTypes", "org.campagnelab.workflow.structure.Local", "org.campagnelab.workflow.structure.Memory", "org.campagnelab.workflow.structure.NameInAChannelRef", "org.campagnelab.workflow.structure.NextflowConfig", "org.campagnelab.workflow.structure.NonListNonFileChannel", "org.campagnelab.workflow.structure.NumCPUs", "org.campagnelab.workflow.structure.OutChannelContainer", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.Penv", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessOptions", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.Queue", "org.campagnelab.workflow.structure.QueueElement", "org.campagnelab.workflow.structure.RangeOfCharLiterals", "org.campagnelab.workflow.structure.RangeOfIntegerLiterals", "org.campagnelab.workflow.structure.Retry", "org.campagnelab.workflow.structure.RichScript", "org.campagnelab.workflow.structure.SGE", "org.campagnelab.workflow.structure.Script", "org.campagnelab.workflow.structure.ScriptArgs", "org.campagnelab.workflow.structure.ScriptBooleanArgs", "org.campagnelab.workflow.structure.ScriptIntegerArgs", "org.campagnelab.workflow.structure.ScriptListArgs", "org.campagnelab.workflow.structure.ScriptStringArgs", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.StringChannel", "org.campagnelab.workflow.structure.StringElement", "org.campagnelab.workflow.structure.TimeAllowed", "org.campagnelab.workflow.structure.ToList", "org.campagnelab.workflow.structure.ToListFunction", "org.campagnelab.workflow.structure.ToSortedList", "org.campagnelab.workflow.structure.Tuple", "org.campagnelab.workflow.structure.TupleChannel", "org.campagnelab.workflow.structure.TupleList", "org.campagnelab.workflow.structure.TupleListChannel", "org.campagnelab.workflow.structure.TupleType", "org.campagnelab.workflow.structure.ValueInAChannel", "org.campagnelab.workflow.structure.ValueInAChannelNoTuple", "org.campagnelab.workflow.structure.ValueInAChannelRef", "org.campagnelab.workflow.structure.Workflow"};
 }

@@ -10,8 +10,8 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
@@ -20,6 +20,7 @@
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -98,6 +99,7 @@
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
@@ -1342,6 +1344,37 @@
             <property role="lacIc" value="    &quot;&quot;&quot;" />
           </node>
           <node concept="l8MVK" id="759DxHJ3$EH" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="D$tkU1WQ$b">
+    <ref role="WuzLi" to="iowz:D$tkU1WQf_" resolve="NameInAChannelRef" />
+    <node concept="11bSqf" id="D$tkU1WQ$c" role="11c4hB">
+      <node concept="3clFbS" id="D$tkU1WQ$d" role="2VODD2">
+        <node concept="lc7rE" id="D$tkU1WRra" role="3cqZAp">
+          <node concept="l9hG8" id="D$tkU1WRrh" role="lcghm">
+            <node concept="2OqwBi" id="D$tkU2a$GK" role="lb14g">
+              <node concept="2OqwBi" id="D$tkU1WRV7" role="2Oq$k0">
+                <node concept="2OqwBi" id="D$tkU1WRtw" role="2Oq$k0">
+                  <node concept="117lpO" id="D$tkU1WRrq" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="D$tkU1WRK9" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iowz:D$tkU1WQfA" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="D$tkU1WS4W" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="liA8E" id="D$tkU2a_pL" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="D$tkU2a_pR" role="37wK5m">
+                  <property role="Xl_RC" value="'" />
+                </node>
+                <node concept="Xl_RD" id="D$tkU2a_qW" role="37wK5m" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
