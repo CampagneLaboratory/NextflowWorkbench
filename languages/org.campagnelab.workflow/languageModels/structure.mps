@@ -539,7 +539,7 @@
     <property role="3GE5qa" value="processOptions" />
     <property role="TrG5h" value="Queue" />
     <property role="34LRSv" value="queue" />
-    <property role="R4oN_" value="allows you to set the queue where jobs are schedules when using a grid based executor in the pipeline" />
+    <property role="R4oN_" value="allows you to set the queue where jobs are scheduled when using a grid based executor in the pipeline" />
     <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
     <node concept="1TJgyj" id="648FhJjgR8q" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -701,8 +701,8 @@
   <node concept="1TIwiD" id="3m26PihhBXV">
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalStringType" />
     <property role="TrG5h" value="RangeOfCharLiterals" />
-    <property role="R4oN_" value="creates a range of strings from start to end inclusive as individual emissions" />
     <property role="34LRSv" value="range" />
+    <property role="R4oN_" value="creates a range of strings from start to end inclusive as individual emissions" />
     <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="GlobalStringContainer" />
     <node concept="1TJgyi" id="3m26PihhBXW" role="1TKVEl">
       <property role="TrG5h" value="start" />
@@ -878,8 +878,8 @@
   <node concept="1TIwiD" id="3m26Pihn82l">
     <property role="3GE5qa" value="setChannelValues.globalTypes.globalIntegerType" />
     <property role="TrG5h" value="RangeOfIntegerLiterals" />
-    <property role="R4oN_" value="creates a range of integers from start to end inclusive as individual emissions" />
     <property role="34LRSv" value="range" />
+    <property role="R4oN_" value="creates a range of integers from start to end inclusive as individual emissions" />
     <ref role="1TJDcQ" node="3m26Pihn7g0" resolve="GlobalIntegerContainer" />
     <node concept="1TJgyi" id="3m26Pihn82m" role="1TKVEl">
       <property role="TrG5h" value="start" />
