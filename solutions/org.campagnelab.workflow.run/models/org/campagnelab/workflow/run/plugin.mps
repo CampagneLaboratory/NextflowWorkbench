@@ -2700,22 +2700,53 @@
               </node>
             </node>
           </node>
-          <node concept="1Wc70l" id="3R5AwWRXS6i" role="3clFbw">
-            <node concept="3clFbC" id="3R5AwWRXV6x" role="3uHU7B">
-              <node concept="10Nm6u" id="3R5AwWRXV6U" role="3uHU7w" />
-              <node concept="2OqwBi" id="3R5AwWRXSru" role="3uHU7B">
-                <node concept="Xjq3P" id="3R5AwWRXShM" role="2Oq$k0" />
-                <node concept="2sxana" id="3R5AwWRXU6z" role="2OqNvi">
-                  <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+          <node concept="1Wc70l" id="D$tkU2gdQW" role="3clFbw">
+            <node concept="2OqwBi" id="D$tkU2gx1l" role="3uHU7w">
+              <node concept="37vLTw" id="D$tkU2gwM0" role="2Oq$k0">
+                <ref role="3cqZAo" node="3R5AwWRT5k$" resolve="workingDir" />
+              </node>
+              <node concept="liA8E" id="D$tkU2g_yS" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~File.canWrite():boolean" resolve="canWrite" />
+              </node>
+            </node>
+            <node concept="1Wc70l" id="3R5AwWRXS6i" role="3uHU7B">
+              <node concept="3clFbC" id="3R5AwWRXV6x" role="3uHU7B">
+                <node concept="10Nm6u" id="3R5AwWRXV6U" role="3uHU7w" />
+                <node concept="2OqwBi" id="3R5AwWRXSru" role="3uHU7B">
+                  <node concept="Xjq3P" id="3R5AwWRXShM" role="2Oq$k0" />
+                  <node concept="2sxana" id="3R5AwWRXU6z" role="2OqNvi">
+                    <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3R5AwWRT1xt" role="3uHU7w">
+                <node concept="liA8E" id="3R5AwWRT4Fa" role="2OqNvi">
+                  <ref role="37wK5l" to="fxg7:~File.exists():boolean" resolve="exists" />
+                </node>
+                <node concept="37vLTw" id="3R5AwWRT5NA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3R5AwWRT5k$" resolve="workingDir" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="3R5AwWRT1xt" role="3uHU7w">
-              <node concept="liA8E" id="3R5AwWRT4Fa" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~File.exists():boolean" resolve="exists" />
-              </node>
-              <node concept="37vLTw" id="3R5AwWRT5NA" role="2Oq$k0">
-                <ref role="3cqZAo" node="3R5AwWRT5k$" resolve="workingDir" />
+          </node>
+          <node concept="9aQIb" id="5HJ0Qzx$t7w" role="9aQIa">
+            <node concept="3clFbS" id="5HJ0Qzx$t7x" role="9aQI4">
+              <node concept="3clFbF" id="5HJ0Qzx$U2M" role="3cqZAp">
+                <node concept="37vLTI" id="5HJ0Qzx_jih" role="3clFbG">
+                  <node concept="2YIFZM" id="5HJ0Qzx_jTO" role="37vLTx">
+                    <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                    <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                    <node concept="Xl_RD" id="5HJ0Qzx_jTW" role="37wK5m">
+                      <property role="Xl_RC" value="user.home" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="5HJ0Qzx_hi5" role="37vLTJ">
+                    <node concept="Xjq3P" id="5HJ0Qzx$U2L" role="2Oq$k0" />
+                    <node concept="2sxana" id="5HJ0Qzx_iwW" role="2OqNvi">
+                      <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
