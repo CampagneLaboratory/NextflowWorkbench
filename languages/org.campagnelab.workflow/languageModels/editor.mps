@@ -8,8 +8,9 @@
   <imports>
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -45,6 +46,9 @@
         <property id="1136923970224" name="keycode" index="2PWKIS" />
       </concept>
       <concept id="1136917288805" name="jetbrains.mps.lang.editor.structure.CellKeyMap_ExecuteFunction" flags="in" index="2PzhpH" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styleClass" index="V601i" />
@@ -952,6 +956,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="21kmpcT2J$a">
+    <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
     <node concept="3EZMnI" id="21kmpcT2J$c" role="2wV5jI">
       <node concept="3F0ifn" id="21kmpcTkFBv" role="3EZMnx">
@@ -2017,6 +2022,82 @@
         </node>
       </node>
       <node concept="l2Vlx" id="D$tkU1WQzV" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5OPtsPGnXC">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <ref role="1XX52x" to="iowz:5OPtsPGn$n" resolve="SubmissionOption" />
+    <node concept="3EZMnI" id="5OPtsPGnXE" role="2wV5jI">
+      <node concept="PMmxH" id="5OPtsPGnXO" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="Vb9p2" id="5OPtsPKTJx" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5OPtsPGnXW" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F0A7n" id="5OPtsPGnY9" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:5OPtsPGn$r" resolve="value" />
+        <node concept="VechU" id="5OPtsPKTXJ" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5OPtsPGnXH" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5OPtsPGnYn">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <ref role="1XX52x" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
+    <node concept="3EZMnI" id="5OPtsPGnYp" role="2wV5jI">
+      <node concept="3F0ifn" id="5OPtsPGnYz" role="3EZMnx">
+        <property role="3F0ifm" value="Configuration for remote submissions: " />
+        <node concept="ljvvj" id="3LlDVJS0fua" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3LlDVJS0fsA" role="3EZMnx">
+        <node concept="ljvvj" id="3LlDVJS0ftl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5OPtsPGnZ1" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:5OPtsPGnXu" />
+        <node concept="pVoyu" id="5OPtsQ4JTD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5OPtsQdNEj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5OPtsPGnYT" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:5OPtsPGnXr" />
+        <node concept="lj46D" id="5OPtsQdNEx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="5OPtsQdNE_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="5OPtsQdNQn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5OPtsQdNPY" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:5OPtsQdNPR" />
+        <node concept="ljvvj" id="5OPtsQdNQk" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5OPtsQdNQu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5OPtsQdOcc" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:5OPtsQdObC" />
+        <node concept="lj46D" id="5OPtsQdOcC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5OPtsQdNEf" role="2iSdaV" />
     </node>
   </node>
 </model>

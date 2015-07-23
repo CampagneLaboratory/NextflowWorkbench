@@ -20,9 +20,9 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -7823,6 +7823,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5$YFgXYYiRR">
+    <property role="3GE5qa" value="" />
     <ref role="13h7C2" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
     <node concept="13hLZK" id="5$YFgXYYiRS" role="13h7CW">
       <node concept="3clFbS" id="5$YFgXYYiRT" role="2VODD2">
@@ -8254,6 +8255,48 @@
       </node>
       <node concept="3uibUv" id="D$tkU20uyg" role="3clF45">
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5OPtsPPsKf">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <ref role="13h7C2" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
+    <node concept="13hLZK" id="5OPtsPPsKg" role="13h7CW">
+      <node concept="3clFbS" id="5OPtsPPsKh" role="2VODD2">
+        <node concept="3clFbF" id="5OPtsPPsKj" role="3cqZAp">
+          <node concept="37vLTI" id="5OPtsPPto0" role="3clFbG">
+            <node concept="Xl_RD" id="5OPtsPPtoE" role="37vLTx">
+              <property role="Xl_RC" value="remote.config" />
+            </node>
+            <node concept="2OqwBi" id="5OPtsPPsLM" role="37vLTJ">
+              <node concept="13iPFW" id="5OPtsPPsKi" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5OPtsPPt3Q" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3LlDVJRYIvm">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <ref role="13h7C2" to="iowz:5OPtsQdO4R" resolve="KeyFile" />
+    <node concept="13hLZK" id="3LlDVJRYIvn" role="13h7CW">
+      <node concept="3clFbS" id="3LlDVJRYIvo" role="2VODD2">
+        <node concept="3clFbF" id="3LlDVJRYUyI" role="3cqZAp">
+          <node concept="37vLTI" id="3LlDVJRZ6sj" role="3clFbG">
+            <node concept="Xl_RD" id="3LlDVJRZ6tF" role="37vLTx">
+              <property role="Xl_RC" value="${user.home}/.ssh/id_rsa" />
+            </node>
+            <node concept="2OqwBi" id="3LlDVJRYVKa" role="37vLTJ">
+              <node concept="13iPFW" id="3LlDVJRYUyH" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3LlDVJRZ5WD" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:5OPtsPGn$r" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

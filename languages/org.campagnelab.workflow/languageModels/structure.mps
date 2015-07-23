@@ -1239,5 +1239,82 @@
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5OPtsPGg59">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <property role="TrG5h" value="RemoteSubmissionConfig" />
+    <property role="34LRSv" value="remote.config" />
+    <property role="R4oN_" value="configuration for remote submission" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5OPtsPGg5a" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="5OPtsPGnXr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="hostname" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5OPtsPGnF0" resolve="Hostname" />
+    </node>
+    <node concept="1TJgyj" id="5OPtsPGnXu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="username" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5OPtsPGnYh" resolve="Username" />
+    </node>
+    <node concept="1TJgyj" id="5OPtsQdNPR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="jobArea" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5OPtsQdNPQ" resolve="JobArea" />
+    </node>
+    <node concept="1TJgyj" id="5OPtsQdObC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="keyfile" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5OPtsQdO4R" resolve="KeyFile" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5OPtsPGn$n">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <property role="TrG5h" value="SubmissionOption" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5OPtsPGn$r" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="5OPtsPGn$o" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5OPtsPGnF0">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <property role="TrG5h" value="Hostname" />
+    <property role="34LRSv" value="hostname" />
+    <property role="R4oN_" value="hostname or IP address of the submission host" />
+    <ref role="1TJDcQ" node="5OPtsPGn$n" resolve="SubmissionOption" />
+  </node>
+  <node concept="1TIwiD" id="5OPtsPGnYh">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <property role="TrG5h" value="Username" />
+    <property role="34LRSv" value="username" />
+    <property role="R4oN_" value="username on the submission host" />
+    <ref role="1TJDcQ" node="5OPtsPGn$n" resolve="SubmissionOption" />
+  </node>
+  <node concept="1TIwiD" id="5OPtsQdNPQ">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <property role="TrG5h" value="JobArea" />
+    <property role="34LRSv" value="jobarea" />
+    <property role="R4oN_" value="folder where scripts are copied and executed" />
+    <ref role="1TJDcQ" node="5OPtsPGn$n" resolve="SubmissionOption" />
+  </node>
+  <node concept="1TIwiD" id="5OPtsQdO4R">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <property role="TrG5h" value="KeyFile" />
+    <property role="34LRSv" value="key file" />
+    <property role="R4oN_" value="location of the file holding the private key" />
+    <ref role="1TJDcQ" node="5OPtsPGn$n" resolve="SubmissionOption" />
+  </node>
 </model>
 

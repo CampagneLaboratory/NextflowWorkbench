@@ -253,8 +253,8 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="3121388506938957370" name="org.campagnelab.workflow.structure.TupleType" flags="ng" index="1h3xP" />
-      <concept id="3526016120162721360" name="org.campagnelab.workflow.structure.FileType" flags="ng" index="3UtRaE" />
+      <concept id="3121388506938957370" name="org.campagnelab.workflow.structure.TupleType" flags="ig" index="1h3xP" />
+      <concept id="3526016120162721360" name="org.campagnelab.workflow.structure.FileType" flags="ig" index="3UtRaE" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1176906603202" name="jetbrains.mps.baseLanguage.collections.structure.BinaryOperation" flags="nn" index="56pJg">
@@ -2995,6 +2995,7 @@
   </node>
   <node concept="18kY7G" id="5$YFgXZ1Doo">
     <property role="TrG5h" value="check_NextflowConfig" />
+    <property role="3GE5qa" value="" />
     <node concept="3clFbS" id="5$YFgXZ1Dop" role="18ibNy">
       <node concept="3clFbJ" id="5$YFgXZ1Eat" role="3cqZAp">
         <node concept="3clFbS" id="5$YFgXZ1Eau" role="3clFbx">

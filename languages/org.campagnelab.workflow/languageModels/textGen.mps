@@ -10,8 +10,8 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1121,6 +1121,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="21kmpcT4bdw">
+    <property role="3GE5qa" value="" />
     <ref role="WuzLi" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
     <node concept="11bSqf" id="21kmpcT4bdx" role="11c4hB">
       <node concept="3clFbS" id="21kmpcT4bdy" role="2VODD2">
