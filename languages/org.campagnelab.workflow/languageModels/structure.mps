@@ -1217,33 +1217,17 @@
       <ref role="20lvS9" node="2Hhp$WEw$gJ" resolve="GlobalTupleLiteral" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2TvCQLw1SsY">
-    <property role="TrG5h" value="ForSideTransformTest" />
-    <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="saddle" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2TvCQLw1UcN" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="2TvCQLw1UrT" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="another" />
-      <ref role="20lvS9" node="2TvCQLw1SsY" resolve="ForSideTransformTest" />
-    </node>
+  <node concept="1TIwiD" id="5HJ0QzxIyJ0">
+    <property role="3GE5qa" value="reports" />
+    <property role="TrG5h" value="ReportFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
-  <node concept="1TIwiD" id="D$tkU1WQf_">
-    <property role="TrG5h" value="NameInAChannelRef" />
-    <property role="34LRSv" value="'" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="D$tkU1WQfA" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="70dPcAeD8Uh" resolve="ValueInAChannel" />
-    </node>
-    <node concept="PrWs8" id="D$tkU1WQfB" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
+  <node concept="1TIwiD" id="5HJ0QzxIyJ3">
+    <property role="3GE5qa" value="reports" />
+    <property role="TrG5h" value="ReportParameter" />
+    <property role="34LRSv" value="c" />
+    <property role="R4oN_" value="The output channel that will hold values to report about" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="5HJ0QzxC1s2">
     <property role="TrG5h" value="Report" />
@@ -1261,18 +1245,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7gAPJCESTMU" resolve="OutputChannel" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="5HJ0QzxIyJ0">
-    <property role="3GE5qa" value="reports" />
-    <property role="TrG5h" value="ReportFunction" />
-    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
-  </node>
-  <node concept="1TIwiD" id="5HJ0QzxIyJ3">
-    <property role="3GE5qa" value="reports" />
-    <property role="TrG5h" value="ReportParameter" />
-    <property role="34LRSv" value="c" />
-    <property role="R4oN_" value="The output channel that will hold values to report about" />
-    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>
 

@@ -2,12 +2,12 @@
 <model ref="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)">
   <persistence version="9" />
   <languages>
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="-1" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -54,6 +54,7 @@
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -70,7 +71,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -2076,13 +2077,24 @@
               </node>
               <node concept="3clFbS" id="ZOADNDrMkw" role="DmIXo">
                 <node concept="1Z5TYs" id="ZOADNDmy0V" role="3cqZAp">
-                  <node concept="mw_s8" id="ZOADNDmy1a" role="1ZfhKB">
-                    <node concept="2OqwBi" id="ZOADNDrMpN" role="mwGJk">
-                      <node concept="1YBJjd" id="ZOADNDrMll" role="2Oq$k0">
-                        <ref role="1YBMHb" node="ZOADNDrMkM" resolve="listType" />
-                      </node>
-                      <node concept="3TrEf2" id="ZOADNDrMCm" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tp2q:gK_ZDn5" />
+                  <node concept="mw_s8" id="5rY6S$LVuSo" role="1ZfhKB">
+                    <node concept="2c44tf" id="5rY6S$LVuSm" role="mwGJk">
+                      <node concept="_YKpA" id="5rY6S$LVuSI" role="2c44tc">
+                        <node concept="33vP2l" id="5rY6S$LVuSK" role="_ZDj9">
+                          <node concept="2c44te" id="5rY6S$LVuZE" role="lGtFl">
+                            <node concept="2OqwBi" id="5rY6S$LVv1x" role="2c44t1">
+                              <node concept="1YBJjd" id="5rY6S$LVuZT" role="2Oq$k0">
+                                <ref role="1YBMHb" node="12v1CqH7fDG" resolve="flatten" />
+                              </node>
+                              <node concept="2qgKlT" id="5rY6S$LVvcY" role="2OqNvi">
+                                <ref role="37wK5l" to="mqvz:5rY6S$LQTw$" resolve="getDeepestType" />
+                                <node concept="1YBJjd" id="5rY6S$LVveB" role="37wK5m">
+                                  <ref role="1YBMHb" node="ZOADNDrMkM" resolve="listType" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -2548,12 +2560,41 @@
   <node concept="18kY7G" id="5ok1XDlYe32">
     <property role="TrG5h" value="check_GlobalFilePath" />
     <node concept="3clFbS" id="5ok1XDlYe33" role="18ibNy">
-      <node concept="a7r0C" id="5ok1XDlYeiu" role="3cqZAp">
-        <node concept="1YBJjd" id="5ok1XDlYej0" role="2OEOjV">
-          <ref role="1YBMHb" node="5ok1XDlYeil" resolve="globalFilePath" />
+      <node concept="3clFbJ" id="dNnsoz0Q$L" role="3cqZAp">
+        <node concept="3clFbS" id="dNnsoz0Q$N" role="3clFbx">
+          <node concept="a7r0C" id="5ok1XDlYeiu" role="3cqZAp">
+            <node concept="1YBJjd" id="5ok1XDlYej0" role="2OEOjV">
+              <ref role="1YBMHb" node="5ok1XDlYeil" resolve="globalFilePath" />
+            </node>
+            <node concept="Xl_RD" id="5ok1XDlUJ3l" role="a7wSD">
+              <property role="Xl_RC" value="Make sure that the file exists on the cluster prior to running" />
+            </node>
+          </node>
         </node>
-        <node concept="Xl_RD" id="5ok1XDlUJ3l" role="a7wSD">
-          <property role="Xl_RC" value="Make sure that the file exists on the cluster prior to running" />
+        <node concept="17QLQc" id="dNnsoz5eIm" role="3clFbw">
+          <node concept="2OqwBi" id="dNnsoz0RYV" role="3uHU7B">
+            <node concept="2OqwBi" id="dNnsoz0QLz" role="2Oq$k0">
+              <node concept="2OqwBi" id="dNnsoz0QAs" role="2Oq$k0">
+                <node concept="1YBJjd" id="dNnsoz0Q_3" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5ok1XDlYeil" resolve="globalFilePath" />
+                </node>
+                <node concept="2Xjw5R" id="dNnsoz0QIg" role="2OqNvi">
+                  <node concept="1xMEDy" id="dNnsoz0QIi" role="1xVPHs">
+                    <node concept="chp4Y" id="dNnsoz0QIU" role="ri$Ld">
+                      <ref role="cht4Q" to="iowz:5D7AjvYabas" resolve="Workflow" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrEf2" id="dNnsoz0QXC" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:49c3W7NLHUt" />
+              </node>
+            </node>
+            <node concept="2yIwOk" id="dNnsoz0SeS" role="2OqNvi" />
+          </node>
+          <node concept="35c_gC" id="dNnsoz0SiM" role="3uHU7w">
+            <ref role="35c_gD" to="iowz:49c3W7NLHXt" resolve="Local" />
+          </node>
         </node>
       </node>
     </node>

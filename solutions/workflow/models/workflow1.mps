@@ -33,7 +33,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -117,33 +117,6 @@
   </registry>
   <node concept="2$rMIF" id="3gLclC5_5Jz">
     <property role="TrG5h" value="workflowBash" />
-    <node concept="2LyH2s" id="3gLclC5_5JA" role="2LyH5s" />
-    <node concept="2$rEH5" id="3gLclC5_5J_" role="2$rEHq">
-      <ref role="2$rEH4" node="3gLclC5_5KA" resolve="splitSequence" />
-      <node concept="1uYdA0" id="3gLclC5_5NX" role="1uLvPH">
-        <ref role="1uK_4X" node="3gLclC5_5JD" resolve="fastafile" />
-      </node>
-      <node concept="1uLkD0" id="3gLclC5_5RZ" role="1uLvPA">
-        <property role="TrG5h" value="splitfile" />
-      </node>
-    </node>
-    <node concept="2$rEH5" id="3gLclC5_5RS" role="2$rEHq">
-      <ref role="2$rEH4" node="3gLclC5_5QV" resolve="reverse" />
-      <node concept="1uLkD0" id="D$tkU2g9vi" role="1uLvPA">
-        <property role="TrG5h" value="result" />
-      </node>
-      <node concept="1uYdA0" id="3gLclC5_5S2" role="1uLvPH">
-        <ref role="1uK_4X" node="3gLclC5_5RZ" resolve="splitfile" />
-      </node>
-    </node>
-    <node concept="1CVceo" id="3gLclC5_5JD" role="2$L6iY">
-      <property role="TrG5h" value="fastafile" />
-      <node concept="2$PLry" id="15T_Bumjmdg" role="2$L62I">
-        <node concept="2xgF7X" id="15T_Bumjmdh" role="2$RAua">
-          <property role="2VDI9B" value="${org.campagnelab.workflow.home}/data/sample1.fasta" />
-        </node>
-      </node>
-    </node>
     <node concept="2UNLhE" id="5HJ0QzxKmkh" role="2UW718">
       <ref role="2UNLhW" node="D$tkU2g9vi" resolve="result" />
       <node concept="2UPiyC" id="5HJ0QzxRwrg" role="2UNLhY">
@@ -173,18 +146,41 @@
         </node>
       </node>
     </node>
+    <node concept="2LyH2s" id="3gLclC5_5JA" role="2LyH5s" />
+    <node concept="2$rEH5" id="3gLclC5_5J_" role="2$rEHq">
+      <ref role="2$rEH4" node="3gLclC5_5KA" resolve="splitSequence" />
+      <node concept="1uYdA0" id="3gLclC5_5NX" role="1uLvPH">
+        <ref role="1uK_4X" node="3gLclC5_5JD" resolve="fastafile" />
+      </node>
+      <node concept="1uLkD0" id="3gLclC5_5RZ" role="1uLvPA">
+        <property role="TrG5h" value="splitfile" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="3gLclC5_5RS" role="2$rEHq">
+      <ref role="2$rEH4" node="3gLclC5_5QV" resolve="reverse" />
+      <node concept="1uLkD0" id="D$tkU2g9vi" role="1uLvPA">
+        <property role="TrG5h" value="result" />
+      </node>
+      <node concept="1uYdA0" id="3gLclC5_5S2" role="1uLvPH">
+        <ref role="1uK_4X" node="3gLclC5_5RZ" resolve="splitfile" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="3gLclC5_5JD" role="2$L6iY">
+      <property role="TrG5h" value="fastafile" />
+      <node concept="2$PLry" id="15T_Bumjmdg" role="2$L62I">
+        <node concept="2xgF7X" id="15T_Bumjmdh" role="2$RAua">
+          <property role="2VDI9B" value="${org.campagnelab.workflow.home}/data/sample1.fasta" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2ulcR8" id="3gLclC5_5KA">
     <property role="TrG5h" value="splitSequence" />
     <node concept="3Y$Zt1" id="3gLclC5_5Mj" role="2ulM7a">
       <node concept="19SGf9" id="3gLclC5_5Ml" role="3Y$PkS">
         <node concept="19SUe$" id="3gLclC5_5Mm" role="19SJt6">
-          <property role="19SUeA" value="awk '/^&gt;/{f=&quot;seq_&quot;++d} {print &gt; f}' &lt; " />
+          <property role="19SUeA" value="awk '/^&gt;/{f=&quot;seq_&quot;++d} {print &gt; f}' &lt; input" />
         </node>
-        <node concept="2b_LqF" id="D$tkU2a$ns" role="19SJt6">
-          <ref role="2b_LqC" node="3gLclC5_5KD" resolve="'input'" />
-        </node>
-        <node concept="19SUe$" id="D$tkU2a$nt" role="19SJt6" />
       </node>
     </node>
     <node concept="1uY1Ls" id="3gLclC5_5KC" role="2ulM7n">

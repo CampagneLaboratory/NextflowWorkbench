@@ -1,0 +1,3 @@
+<project name="RemoteRun" defaul="submit">
+  <property name="to remove"></property>
+</project>
