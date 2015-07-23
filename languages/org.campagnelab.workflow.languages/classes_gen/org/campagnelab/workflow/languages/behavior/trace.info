@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root>
+    <file name="AdditionalPaths_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.languages.behavior.AdditionalPaths_BehaviorDescriptor" />
+    </file>
+    <file name="BashScript_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.languages.behavior.BashScript_BehaviorDescriptor" />
+    </file>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="9,0,32,0" name="org.campagnelab.workflow.languages.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="JavaClass_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.languages.behavior.JavaClass_BehaviorDescriptor" />
+    </file>
+    <file name="Path_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.languages.behavior.Path_BehaviorDescriptor" />
+    </file>
+    <file name="ProcessDeclaration_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.languages.behavior.ProcessDeclaration_BehaviorDescriptor" />
+    </file>
+    <file name="PythonScript_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.languages.behavior.PythonScript_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+
