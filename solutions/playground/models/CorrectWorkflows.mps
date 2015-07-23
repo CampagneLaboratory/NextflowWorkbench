@@ -89,11 +89,20 @@
         <child id="6202591221123608443" name="fileList" index="04Qyx" />
       </concept>
       <concept id="6202591221123591000" name="org.campagnelab.workflow.structure.FileList" flags="ng" index="04MM2" />
-      <concept id="6202591221127590908" name="org.campagnelab.workflow.structure.GlobalFileListExpression" flags="ng" index="0k3gA">
-        <child id="6202591221127590944" name="fileList" index="0k3fU" />
-      </concept>
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
         <reference id="6509497193195685433" name="variable" index="0wEsc" />
+      </concept>
+      <concept id="3121388506942473710" name="org.campagnelab.workflow.structure.GlobalTupleExpression" flags="ng" index="16Aex">
+        <child id="3121388506942473711" name="tuple" index="16Aew" />
+      </concept>
+      <concept id="3121388506946094127" name="org.campagnelab.workflow.structure.GlobalTupleLiteral" flags="ng" index="1OM9w">
+        <child id="3121388506946094128" name="tuple" index="1OM9Z" />
+      </concept>
+      <concept id="3121388506946094214" name="org.campagnelab.workflow.structure.GlobalIntegerLiteralTuple" flags="ng" index="1OMb9">
+        <child id="3121388506946094215" name="integer" index="1OMb8" />
+      </concept>
+      <concept id="3121388506946094358" name="org.campagnelab.workflow.structure.GlobalStringLiteralTuple" flags="ng" index="1OMdp">
+        <child id="3121388506946094553" name="string" index="1OMem" />
       </concept>
       <concept id="4018964125401476997" name="org.campagnelab.workflow.structure.List" flags="ng" index="kktkh" />
       <concept id="4018964125401477001" name="org.campagnelab.workflow.structure.ListChannel" flags="ng" index="kktkt">
@@ -108,24 +117,11 @@
       <concept id="2329585396107819892" name="org.campagnelab.workflow.structure.NumCPUs" flags="ng" index="oDubB">
         <property id="2329585396107820961" name="num" index="oDuoM" />
       </concept>
-      <concept id="2329585396108534973" name="org.campagnelab.workflow.structure.Queue" flags="ng" index="oEfOI">
-        <child id="6992028756512829978" name="queueElement" index="2MiXW1" />
-      </concept>
-      <concept id="2329585396108535569" name="org.campagnelab.workflow.structure.TimeAllowed" flags="ng" index="oEfU2">
-        <property id="2329585396108535674" name="time" index="oEfVD" />
-      </concept>
-      <concept id="2329585396108535677" name="org.campagnelab.workflow.structure.ClusterOptions" flags="ng" index="oEfVI">
-        <property id="2329585396108535784" name="clusterOptions" index="oEfTV" />
-      </concept>
-      <concept id="2329585396108535463" name="org.campagnelab.workflow.structure.Penv" flags="ng" index="oEfWO">
-        <property id="2329585396108535566" name="penv" index="oEfUt" />
-      </concept>
       <concept id="2329585396108535359" name="org.campagnelab.workflow.structure.Memory" flags="ng" index="oEfYG">
         <property id="2329585396108535460" name="memory" index="oEfWR" />
       </concept>
       <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.NextflowConfig" flags="ng" index="pkhaZ">
         <child id="2329585396109102069" name="executor" index="pkh9A" />
-        <child id="5930160417388865584" name="processOptions" index="2xLS5a" />
       </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
@@ -155,11 +151,11 @@
       <concept id="3855674281012038742" name="org.campagnelab.workflow.structure.GlobalIntegerExpression" flags="ng" index="2$PLs2">
         <child id="3855674281012526304" name="integer" index="2$RAuO" />
       </concept>
+      <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.GlobalStringExpression" flags="ng" index="2$PLvr">
+        <child id="3855674281012526308" name="string" index="2$RAuK" />
+      </concept>
       <concept id="3855674281012525767" name="org.campagnelab.workflow.structure.GlobalStringLiteralList" flags="ng" index="2$RA6j">
         <child id="3855674281012525912" name="string" index="2$RA0c" />
-      </concept>
-      <concept id="3855674281012526088" name="org.campagnelab.workflow.structure.GlobalFileLiteralList" flags="ng" index="2$RAts">
-        <child id="3855674281012526239" name="file" index="2$RAvb" />
       </concept>
       <concept id="3855674281012527421" name="org.campagnelab.workflow.structure.GlobalIntegerLiteral" flags="ng" index="2$RDDD">
         <property id="3855674281012527422" name="value" index="2$RDDE" />
@@ -174,40 +170,33 @@
       <concept id="5930160417407206502" name="org.campagnelab.workflow.structure.ConditionalExpressionText" flags="ng" index="2AVUOs">
         <child id="5930160417407206503" name="text" index="2AVUOt" />
       </concept>
+      <concept id="4777210630426255197" name="org.campagnelab.workflow.structure.Local" flags="ng" index="2LyH2s" />
       <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
-      <concept id="6992028756512830254" name="org.campagnelab.workflow.structure.QueueElement" flags="ng" index="2MiXSP">
-        <property id="6992028756512830255" name="queue" index="2MiXSO" />
-      </concept>
       <concept id="1131453450772026527" name="org.campagnelab.workflow.structure.BaseLanguageAdapter" flags="ng" index="UAUTO">
         <child id="5930160417400088880" name="statements" index="2AuG1a" />
       </concept>
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
-      <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
-      <concept id="8369613327464057507" name="org.campagnelab.workflow.structure.BooleanChannel" flags="ng" index="1uY1Lp">
-        <child id="8369613327464057508" name="boolean" index="1uY1Lu" />
-      </concept>
       <concept id="8369613327464057510" name="org.campagnelab.workflow.structure.FileChannel" flags="ng" index="1uY1Ls">
         <child id="8369613327464057511" name="file" index="1uY1Lt" />
       </concept>
       <concept id="8369613327464057502" name="org.campagnelab.workflow.structure.IntegerChannel" flags="ng" index="1uY1L$">
         <child id="8369613327464057505" name="integer" index="1uY1Lr" />
       </concept>
+      <concept id="8369613327464053589" name="org.campagnelab.workflow.structure.StringChannel" flags="ng" index="1uY6QJ">
+        <child id="8369613327464373545" name="string" index="1uLkJj" />
+      </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
         <child id="3857878650537656757" name="functions" index="1ylr64" />
       </concept>
       <concept id="3857878650533843630" name="org.campagnelab.workflow.structure.ToList" flags="ng" index="1yaYav" />
+      <concept id="3857878650533844000" name="org.campagnelab.workflow.structure.ToSortedList" flags="ng" index="1yaYgh" />
       <concept id="3857878650533842792" name="org.campagnelab.workflow.structure.Flatten" flags="ng" index="1yaZXp" />
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
-      </concept>
-      <concept id="5476153351823634555" name="org.campagnelab.workflow.structure.Ignore" flags="ng" index="3GZ0ge" />
-      <concept id="5476153351823634565" name="org.campagnelab.workflow.structure.Retry" flags="ng" index="3GZ0jK">
-        <property id="7757275043996805618" name="maxErrors" index="lMs_Z" />
-        <property id="4717081913776959662" name="maxRetries" index="1Arw6G" />
       </concept>
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
@@ -244,7 +233,7 @@
       <node concept="1uLkD0" id="qQieKH_3rA" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="5ok1XDlU7L9" role="2$rEHq">
-      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combine" />
+      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
       <node concept="1uYdA0" id="5ok1XDlU7Pu" role="1uLvPH">
         <ref role="1uK_4X" node="5ok1XDlU7LC" resolve="path3" />
         <node concept="1yaYav" id="5ok1XDlU7PT" role="1ylr64" />
@@ -327,17 +316,7 @@
     </node>
   </node>
   <node concept="2ulcR8" id="6t646FqPoxG">
-    <property role="TrG5h" value="combine" />
-    <node concept="1uY1Ls" id="6t646FqPoxL" role="2ulM7n">
-      <node concept="16pRw0" id="6t646FqPoxM" role="1uY1Lt">
-        <property role="TrG5h" value="'*.txt'" />
-      </node>
-    </node>
-    <node concept="1uY1Lp" id="4J2lLmlncjs" role="2ulM7n">
-      <node concept="1utKzZ" id="4J2lLmlncju" role="1uY1Lu">
-        <property role="TrG5h" value="wha" />
-      </node>
-    </node>
+    <property role="TrG5h" value="combineFiles" />
     <node concept="3Y$Zt1" id="4KI7BXrwLPT" role="2ulM7a">
       <node concept="19SGf9" id="4KI7BXrwLPU" role="3Y$PkS">
         <node concept="19SUe$" id="4KI7BXrwLPV" role="19SJt6">
@@ -345,19 +324,9 @@
         </node>
       </node>
     </node>
-    <node concept="1uY1L$" id="5ok1XDlQAf$" role="2ulM79">
-      <node concept="1utKN4" id="5ok1XDlQAf_" role="1uY1Lr">
-        <property role="TrG5h" value="int" />
-      </node>
-    </node>
-    <node concept="1uY1Ls" id="4J2lLmlrS7L" role="2ulM79">
-      <node concept="16pRw0" id="4J2lLmlrS7N" role="1uY1Lt">
-        <property role="TrG5h" value="rae" />
-      </node>
-    </node>
-    <node concept="1uY1Lp" id="4J2lLmlrSTq" role="2ulM79">
-      <node concept="1utKzZ" id="4J2lLmlrSTs" role="1uY1Lu">
-        <property role="TrG5h" value="fawe" />
+    <node concept="04KEa" id="dNnsoyWsWA" role="2ulM7n">
+      <node concept="04MM2" id="dNnsoyWsWB" role="04Qyx">
+        <property role="TrG5h" value="'*.txt'" />
       </node>
     </node>
   </node>
@@ -370,14 +339,14 @@
         </node>
       </node>
     </node>
-    <node concept="kktkt" id="vHEKaW4732" role="2ulM7n">
-      <node concept="kktkh" id="vHEKaW4733" role="kktl5">
-        <property role="TrG5h" value="lists" />
+    <node concept="1uY1Ls" id="dNnsoyWsUD" role="2ulM7n">
+      <node concept="16pRw0" id="dNnsoyWsUE" role="1uY1Lt">
+        <property role="TrG5h" value="'index_*'" />
       </node>
     </node>
-    <node concept="kktkt" id="4Tfcfnm0jaB" role="2ulM79">
-      <node concept="kktkh" id="4Tfcfnm0jaC" role="kktl5">
-        <property role="TrG5h" value="files" />
+    <node concept="1uY1Ls" id="dNnsoyWsV9" role="2ulM79">
+      <node concept="16pRw0" id="dNnsoyWsVa" role="1uY1Lt">
+        <property role="TrG5h" value="&quot;*.txt&quot;" />
       </node>
     </node>
   </node>
@@ -597,85 +566,353 @@
   </node>
   <node concept="pkhaZ" id="21kmpcT2JwM">
     <property role="TrG5h" value="nextflow.config" />
-    <node concept="2LyH2v" id="21kmpcT2Jx$" role="pkh9A" />
-    <node concept="3GZ0jK" id="59canFNCm9b" role="2xLS5a">
-      <property role="1Arw6G" value="1" />
-      <property role="lMs_Z" value="3" />
-    </node>
-    <node concept="3GZ0ge" id="59canFNF2og" role="2xLS5a" />
-    <node concept="oEfVI" id="59canFNF2oo" role="2xLS5a">
-      <property role="oEfTV" value="whatever" />
-    </node>
-    <node concept="oDubB" id="59canFNF2oy" role="2xLS5a">
-      <property role="oDuoM" value="4" />
-    </node>
-    <node concept="oEfYG" id="59canFNF2oI" role="2xLS5a">
-      <property role="oEfWR" value="3 GB" />
-    </node>
-    <node concept="oEfWO" id="59canFNF2oW" role="2xLS5a">
-      <property role="oEfUt" value="smp" />
-    </node>
-    <node concept="oEfU2" id="59canFNF2pc" role="2xLS5a">
-      <property role="oEfVD" value="1h" />
-    </node>
-    <node concept="oEfOI" id="59canFOCQz8" role="2xLS5a">
-      <node concept="2MiXSP" id="59canFOCQza" role="2MiXW1">
-        <property role="2MiXSO" value="long" />
-      </node>
-    </node>
+    <node concept="2LyH2s" id="6zpIx1pCnuR" role="pkh9A" />
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
     <node concept="3Y$Zt1" id="34JZ5vsuI0l" role="2ulM7a">
       <node concept="19SGf9" id="34JZ5vsuI0m" role="3Y$PkS">
         <node concept="19SUe$" id="34JZ5vsz_hP" role="19SJt6">
-          <property role="19SUeA" value="java -jar /Users/jasonkurs/Downloads/2.3.5/goby.jar -m suggest-position-slices  -n 200 -o slicingPlan.tsv \n  &gt; /dev/null\t" />
+          <property role="19SUeA" value="java -jar /Users/jasonkurs/Downloads/2.3.5/goby.jar -m suggest-position-slices  -n 200 -o slicingPlan.tsv " />
         </node>
-        <node concept="3Y$Zt1" id="34JZ5vsx7x3" role="19SJt6">
-          <node concept="19SGf9" id="34JZ5vsx7x5" role="3Y$PkS">
-            <node concept="19SUe$" id="34JZ5vsx7x6" role="19SJt6" />
-          </node>
+        <node concept="3YE7tV" id="dNnsoyWuwX" role="19SJt6">
+          <ref role="3YE7sm" node="dNnsoyWuvZ" resolve="alignment" />
         </node>
-        <node concept="19SUe$" id="648FhJi$_HI" role="19SJt6">
-          <property role="19SUeA" value="\nsplit -l 1 slicingPlan.tsv index_\n\n" />
+        <node concept="19SUe$" id="dNnsoyWuwW" role="19SJt6">
+          <property role="19SUeA" value="\n  &gt; /dev/null\t\nsplit -l 1 slicingPlan.tsv index_\n\n" />
         </node>
       </node>
     </node>
-    <node concept="1uY1Ls" id="34JZ5vs$nNE" role="2ulM79">
-      <node concept="16pRw0" id="34JZ5vs$nNF" role="1uY1Lt">
+    <node concept="04KEa" id="dNnsoyWsXW" role="2ulM79">
+      <node concept="04MM2" id="dNnsoyWsXX" role="04Qyx">
         <property role="TrG5h" value="'index_*'" />
       </node>
     </node>
-    <node concept="1uY1Ls" id="6IBo8PYLtHk" role="2ulM7n">
-      <node concept="16pRw0" id="6IBo8PYLtHl" role="1uY1Lt">
-        <property role="TrG5h" value="fileCh" />
+    <node concept="04KEa" id="dNnsoyWuvY" role="2ulM7n">
+      <node concept="04MM2" id="dNnsoyWuvZ" role="04Qyx">
+        <property role="TrG5h" value="alignment" />
       </node>
     </node>
   </node>
   <node concept="2$rMIF" id="5rY6S$LVtPP">
     <property role="TrG5h" value="FlattenTest" />
-    <node concept="2LyH2v" id="5rY6S$LVuy6" role="2LyH5s" />
-    <node concept="2$rEH5" id="5rY6S$LVtPR" role="2$rEHq">
-      <ref role="2$rEH4" node="YNIIGPcu0K" resolve="conditionDummy" />
-      <node concept="1uYdA0" id="5rY6S$LVuDT" role="1uLvPH">
-        <ref role="1uK_4X" node="dNnsoyW5xR" resolve="fileLst" />
-        <node concept="1yaZXp" id="5rY6S$M4e_3" role="1ylr64" />
+    <node concept="2$rEH5" id="6zpIx1pCOOk" role="2$rEHq">
+      <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
+      <node concept="1uYdA0" id="6zpIx1pCOOm" role="1uLvPH">
+        <ref role="1uK_4X" node="6zpIx1pCOLX" resolve="strListCh" />
+        <node concept="1yaZXp" id="6zpIx1pCQ1T" role="1ylr64" />
       </node>
-      <node concept="1uLkD0" id="5rY6S$LVuDU" role="1uLvPA">
-        <property role="TrG5h" value="fileLstOut" />
+      <node concept="1uLkD0" id="6zpIx1pCOOn" role="1uLvPA">
+        <property role="TrG5h" value="filesWithText" />
       </node>
     </node>
-    <node concept="1CVceo" id="dNnsoyW5xR" role="2$L6iY">
-      <property role="TrG5h" value="fileLst" />
-      <node concept="0k3gA" id="dNnsoyW5xZ" role="2$L62I">
-        <node concept="2$RAts" id="dNnsoyW5y1" role="0k3fU">
-          <node concept="2xgF7X" id="dNnsoyW5y3" role="2$RAvb">
-            <property role="2VDI9B" value="path1" />
+    <node concept="2$rEH5" id="6zpIx1pCOQG" role="2$rEHq">
+      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uYdA0" id="6zpIx1pCOQL" role="1uLvPH">
+        <ref role="1uK_4X" node="6zpIx1pCOOn" resolve="filesWithText" />
+        <node concept="1yaYav" id="6zpIx1pCORs" role="1ylr64" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6zpIx1pCSpS" role="2$rEHq">
+      <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
+      <node concept="1uYdA0" id="6zpIx1pCSqv" role="1uLvPH">
+        <ref role="1uK_4X" node="6zpIx1pCSnb" resolve="strCh" />
+        <node concept="1yaYav" id="6zpIx1pCSuG" role="1ylr64" />
+        <node concept="1yaZXp" id="6zpIx1pCS$t" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="6zpIx1pCSBX" role="1uLvPA">
+        <property role="TrG5h" value="filesWithText2" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6zpIx1pCSKF" role="2$rEHq">
+      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uYdA0" id="6zpIx1pCSOa" role="1uLvPH">
+        <ref role="1uK_4X" node="6zpIx1pCSBX" resolve="filesWithText2" />
+        <node concept="1yaYav" id="6zpIx1pCSQY" role="1ylr64" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6zpIx1pCZTH" role="2$rEHq">
+      <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
+      <node concept="1uYdA0" id="6zpIx1pCZUv" role="1uLvPH">
+        <ref role="1uK_4X" node="6zpIx1pCZMx" resolve="strListChCopy" />
+        <node concept="1yaZXp" id="6zpIx1pD00A" role="1ylr64" />
+        <node concept="1yaZXp" id="6zpIx1pD0b$" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="6zpIx1pCZUw" role="1uLvPA">
+        <property role="TrG5h" value="filesWithText3" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6zpIx1pD0vh" role="2$rEHq">
+      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uYdA0" id="6zpIx1pD0w8" role="1uLvPH">
+        <ref role="1uK_4X" node="6zpIx1pCZUw" resolve="filesWithText3" />
+        <node concept="1yaYgh" id="6zpIx1pD0yD" role="1ylr64" />
+      </node>
+    </node>
+    <node concept="2LyH2v" id="5rY6S$LVuy6" role="2LyH5s" />
+    <node concept="1CVceo" id="6zpIx1pCOLX" role="2$L6iY">
+      <property role="TrG5h" value="strListCh" />
+      <node concept="2$PLor" id="6zpIx1pCPPO" role="2$L62I">
+        <node concept="2$RA6j" id="6zpIx1pCPQu" role="2$RAuQ">
+          <node concept="2$RDGe" id="6zpIx1pCPQv" role="2$RA0c">
+            <property role="2$RDGf" value="hi" />
           </node>
-          <node concept="2xgF7X" id="dNnsoyW5z7" role="2$RAvb">
-            <property role="2VDI9B" value="path2" />
+          <node concept="2$RDGe" id="6zpIx1pCPTy" role="2$RA0c">
+            <property role="2$RDGf" value="hello" />
+          </node>
+          <node concept="2$RDGe" id="6zpIx1pCPVe" role="2$RA0c">
+            <property role="2$RDGf" value="how are you?" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="6zpIx1pCZMx" role="2$L6iY">
+      <property role="TrG5h" value="strListChCopy" />
+      <node concept="2$PLor" id="6zpIx1pCZMy" role="2$L62I">
+        <node concept="2$RA6j" id="6zpIx1pCZMz" role="2$RAuQ">
+          <node concept="2$RDGe" id="6zpIx1pCZM$" role="2$RA0c">
+            <property role="2$RDGf" value="hi" />
+          </node>
+          <node concept="2$RDGe" id="6zpIx1pCZM_" role="2$RA0c">
+            <property role="2$RDGf" value="hello" />
+          </node>
+          <node concept="2$RDGe" id="6zpIx1pCZMA" role="2$RA0c">
+            <property role="2$RDGf" value="how are you?" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="6zpIx1pCSnb" role="2$L6iY">
+      <property role="TrG5h" value="strCh" />
+      <node concept="2$PLvr" id="6zpIx1pCSo3" role="2$L62I">
+        <node concept="2$RDGe" id="6zpIx1pCSo4" role="2$RAuK">
+          <property role="2$RDGf" value="I am well" />
+        </node>
+        <node concept="2$RDGe" id="6zpIx1pCSoD" role="2$RAuK">
+          <property role="2$RDGf" value="yourself?" />
+        </node>
+        <node concept="2$RDGe" id="6zpIx1pCSpj" role="2$RAuK">
+          <property role="2$RDGf" value="Good" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2$rMIF" id="dNnsoyWtYg">
+    <property role="TrG5h" value="SubmitAnalyzeCombineWorkflow" />
+    <node concept="2LyH2s" id="dNnsoz9$Cj" role="2LyH5s" />
+    <node concept="2$rEH5" id="dNnsoyWtYi" role="2$rEHq">
+      <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
+      <node concept="1uLkD0" id="dNnsoyWtYm" role="1uLvPA">
+        <property role="TrG5h" value="Y" />
+      </node>
+      <node concept="1uYdA0" id="dNnsoyWuJu" role="1uLvPH">
+        <ref role="1uK_4X" node="dNnsoyWu_$" resolve="alignments" />
+        <node concept="1yaZXp" id="dNnsoz9$Ii" role="1ylr64" />
+        <node concept="1yaYav" id="dNnsoyWuMx" role="1ylr64" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="dNnsoyWtZd" role="2$rEHq">
+      <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
+      <node concept="1uYdA0" id="dNnsoyWtZh" role="1uLvPH">
+        <ref role="1uK_4X" node="dNnsoyWtYm" resolve="Y" />
+        <node concept="1yaZXp" id="dNnsoyWu0d" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="dNnsoyWtZi" role="1uLvPA">
+        <property role="TrG5h" value="X" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="dNnsoyWu1B" role="2$rEHq">
+      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uYdA0" id="dNnsoyWu1K" role="1uLvPH">
+        <ref role="1uK_4X" node="dNnsoyWtZi" resolve="X" />
+        <node concept="1yaYav" id="dNnsoyWu2s" role="1ylr64" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="dNnsoyWu_$" role="2$L6iY">
+      <property role="TrG5h" value="alignments" />
+      <node concept="2$PLry" id="dNnsoyWuA1" role="2$L62I">
+        <node concept="2xgF7X" id="dNnsoyWuAy" role="2$RAua">
+          <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*" />
+        </node>
+        <node concept="2xgF7X" id="dNnsoyWuEI" role="2$RAua">
+          <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2ulcR8" id="6zpIx1pCL0V">
+    <property role="TrG5h" value="addTextToFile" />
+    <node concept="3Y$Zt1" id="6zpIx1pCOJo" role="2ulM7a">
+      <node concept="19SGf9" id="6zpIx1pCOJq" role="3Y$PkS">
+        <node concept="19SUe$" id="6zpIx1pCOJr" role="19SJt6">
+          <property role="19SUeA" value="echo " />
+        </node>
+        <node concept="3YE7tV" id="6zpIx1pCOJG" role="19SJt6">
+          <ref role="3YE7sm" node="6zpIx1pCL0Y" resolve="strInput" />
+        </node>
+        <node concept="19SUe$" id="6zpIx1pCOJH" role="19SJt6">
+          <property role="19SUeA" value=" &gt; file.txt" />
+        </node>
+      </node>
+    </node>
+    <node concept="1uY6QJ" id="6zpIx1pCL0X" role="2ulM7n">
+      <node concept="16pbKc" id="6zpIx1pCL0Y" role="1uLkJj">
+        <property role="TrG5h" value="strInput" />
+      </node>
+    </node>
+    <node concept="1uY1Ls" id="6zpIx1pCL1w" role="2ulM79">
+      <node concept="16pRw0" id="6zpIx1pCL1x" role="1uY1Lt">
+        <property role="TrG5h" value="'file.txt'" />
+      </node>
+    </node>
+  </node>
+  <node concept="2$rMIF" id="6zpIx1pD2QL">
+    <property role="TrG5h" value="ToListTest" />
+    <node concept="2LyH2s" id="6zpIx1pD2R0" role="2LyH5s" />
+    <node concept="2$rEH5" id="6zpIx1pD2QN" role="2$rEHq">
+      <ref role="2$rEH4" node="6zpIx1pD2V4" resolve="appendValueToFile" />
+      <node concept="1uYdA0" id="6zpIx1pD3jC" role="1uLvPH">
+        <ref role="1uK_4X" node="6zpIx1pD2UK" resolve="strListCh" />
+        <node concept="1yaYav" id="6zpIx1pD3mE" role="1ylr64" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6zpIx1pD8up" role="2$rEHq">
+      <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
+      <node concept="1uYdA0" id="6zpIx1pD8v2" role="1uLvPH">
+        <ref role="1uK_4X" node="6zpIx1pD8tq" resolve="alignments" />
+        <node concept="1yaZXp" id="6zpIx1pD8w$" role="1ylr64" />
+        <node concept="1yaYav" id="6zpIx1pD8yK" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="6zpIx1pD8AS" role="1uLvPA">
+        <property role="TrG5h" value="submittedFiles" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6zpIx1pD8Eq" role="2$rEHq">
+      <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
+      <node concept="1uYdA0" id="6zpIx1pD8F2" role="1uLvPH">
+        <ref role="1uK_4X" node="6zpIx1pD8AS" resolve="submittedFiles" />
+        <node concept="1yaZXp" id="6zpIx1pD8Gs" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="6zpIx1pD8F3" role="1uLvPA">
+        <property role="TrG5h" value="analyzedFiles" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6zpIx1pD8II" role="2$rEHq">
+      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uYdA0" id="6zpIx1pD8Jr" role="1uLvPH">
+        <ref role="1uK_4X" node="6zpIx1pD8F3" resolve="analyzedFiles" />
+        <node concept="1yaYav" id="6zpIx1pD8K_" role="1ylr64" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="6zpIx1pD2UK" role="2$L6iY">
+      <property role="TrG5h" value="strListCh" />
+      <node concept="2$PLvr" id="6zpIx1pD3cZ" role="2$L62I">
+        <node concept="2$RDGe" id="6zpIx1pD3d0" role="2$RAuK">
+          <property role="2$RDGf" value="The" />
+        </node>
+        <node concept="2$RDGe" id="6zpIx1pD3dC" role="2$RAuK">
+          <property role="2$RDGf" value="Krusty" />
+        </node>
+        <node concept="2$RDGe" id="6zpIx1pD3ec" role="2$RAuK">
+          <property role="2$RDGf" value="Krab" />
+        </node>
+        <node concept="2$RDGe" id="6zpIx1pD3eI" role="2$RAuK">
+          <property role="2$RDGf" value="Pizza" />
+        </node>
+        <node concept="2$RDGe" id="6zpIx1pD3fk" role="2$RAuK">
+          <property role="2$RDGf" value="Is" />
+        </node>
+        <node concept="2$RDGe" id="6zpIx1pD3fS" role="2$RAuK">
+          <property role="2$RDGf" value="The" />
+        </node>
+        <node concept="2$RDGe" id="6zpIx1pD3gt" role="2$RAuK">
+          <property role="2$RDGf" value="Pizza" />
+        </node>
+        <node concept="2$RDGe" id="6zpIx1pD3h0" role="2$RAuK">
+          <property role="2$RDGf" value="For" />
+        </node>
+        <node concept="2$RDGe" id="6zpIx1pD3hE" role="2$RAuK">
+          <property role="2$RDGf" value="You" />
+        </node>
+        <node concept="2$RDGe" id="6zpIx1pD3ii" role="2$RAuK">
+          <property role="2$RDGf" value="And" />
+        </node>
+        <node concept="2$RDGe" id="6zpIx1pD3iY" role="2$RAuK">
+          <property role="2$RDGf" value="Me" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="6zpIx1pD8tq" role="2$L6iY">
+      <property role="TrG5h" value="alignments" />
+      <node concept="2$PLry" id="6zpIx1pD8tr" role="2$L62I">
+        <node concept="2xgF7X" id="6zpIx1pD8ts" role="2$RAua">
+          <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*" />
+        </node>
+        <node concept="2xgF7X" id="6zpIx1pD8tt" role="2$RAua">
+          <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="6zpIx1pD9T0" role="2$L6iY">
+      <property role="TrG5h" value="tupleListCh" />
+      <node concept="16Aex" id="6zpIx1pD9U3" role="2$L62I">
+        <node concept="1OM9w" id="6zpIx1pD9U5" role="16Aew">
+          <node concept="1OMb9" id="6zpIx1pD9UB" role="1OM9Z">
+            <node concept="2$RDDD" id="6zpIx1pD9UD" role="1OMb8">
+              <property role="2$RDDE" value="0" />
+            </node>
+          </node>
+          <node concept="1OMdp" id="6zpIx1pD9V0" role="1OM9Z">
+            <node concept="2$RDGe" id="6zpIx1pD9V2" role="1OMem">
+              <property role="2$RDGf" value="hi" />
+            </node>
+          </node>
+        </node>
+        <node concept="1OM9w" id="6zpIx1pD9V$" role="16Aew">
+          <node concept="1OMb9" id="6zpIx1pD9W8" role="1OM9Z">
+            <node concept="2$RDDD" id="6zpIx1pD9Wa" role="1OMb8">
+              <property role="2$RDDE" value="1" />
+            </node>
+          </node>
+          <node concept="1OMdp" id="6zpIx1pD9Wx" role="1OM9Z">
+            <node concept="2$RDGe" id="6zpIx1pD9Wz" role="1OMem">
+              <property role="2$RDGf" value="hello" />
+            </node>
+          </node>
+        </node>
+        <node concept="1OM9w" id="6zpIx1pD9X8" role="16Aew">
+          <node concept="1OMb9" id="6zpIx1pD9XL" role="1OM9Z">
+            <node concept="2$RDDD" id="6zpIx1pD9XN" role="1OMb8">
+              <property role="2$RDDE" value="2" />
+            </node>
+          </node>
+          <node concept="1OMdp" id="6zpIx1pD9Ya" role="1OM9Z">
+            <node concept="2$RDGe" id="6zpIx1pD9Yc" role="1OMem">
+              <property role="2$RDGf" value="bye" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2ulcR8" id="6zpIx1pD2V4">
+    <property role="TrG5h" value="appendValueToFile" />
+    <node concept="3Y$Zt1" id="6zpIx1pD2W8" role="2ulM7a">
+      <node concept="19SGf9" id="6zpIx1pD2Wa" role="3Y$PkS">
+        <node concept="19SUe$" id="6zpIx1pD2Wb" role="19SJt6">
+          <property role="19SUeA" value="echo " />
+        </node>
+        <node concept="3YE7tV" id="6zpIx1pD2Wg" role="19SJt6">
+          <ref role="3YE7sm" node="6zpIx1pD2V7" resolve="info" />
+        </node>
+        <node concept="19SUe$" id="6zpIx1pD2Wh" role="19SJt6">
+          <property role="19SUeA" value=" &gt;&gt; finalFile" />
+        </node>
+      </node>
+    </node>
+    <node concept="kktkt" id="6zpIx1pD2V6" role="2ulM7n">
+      <node concept="kktkh" id="6zpIx1pD2V7" role="kktl5">
+        <property role="TrG5h" value="info" />
       </node>
     </node>
   </node>

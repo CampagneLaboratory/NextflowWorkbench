@@ -52,6 +52,7 @@
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -2554,12 +2555,41 @@
   <node concept="18kY7G" id="5ok1XDlYe32">
     <property role="TrG5h" value="check_GlobalFilePath" />
     <node concept="3clFbS" id="5ok1XDlYe33" role="18ibNy">
-      <node concept="a7r0C" id="5ok1XDlYeiu" role="3cqZAp">
-        <node concept="1YBJjd" id="5ok1XDlYej0" role="2OEOjV">
-          <ref role="1YBMHb" node="5ok1XDlYeil" resolve="globalFilePath" />
+      <node concept="3clFbJ" id="dNnsoz0Q$L" role="3cqZAp">
+        <node concept="3clFbS" id="dNnsoz0Q$N" role="3clFbx">
+          <node concept="a7r0C" id="5ok1XDlYeiu" role="3cqZAp">
+            <node concept="1YBJjd" id="5ok1XDlYej0" role="2OEOjV">
+              <ref role="1YBMHb" node="5ok1XDlYeil" resolve="globalFilePath" />
+            </node>
+            <node concept="Xl_RD" id="5ok1XDlUJ3l" role="a7wSD">
+              <property role="Xl_RC" value="Make sure that the file exists on the cluster prior to running" />
+            </node>
+          </node>
         </node>
-        <node concept="Xl_RD" id="5ok1XDlUJ3l" role="a7wSD">
-          <property role="Xl_RC" value="Make sure that the file exists on the cluster prior to running" />
+        <node concept="17QLQc" id="dNnsoz5eIm" role="3clFbw">
+          <node concept="2OqwBi" id="dNnsoz0RYV" role="3uHU7B">
+            <node concept="2OqwBi" id="dNnsoz0QLz" role="2Oq$k0">
+              <node concept="2OqwBi" id="dNnsoz0QAs" role="2Oq$k0">
+                <node concept="1YBJjd" id="dNnsoz0Q_3" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5ok1XDlYeil" resolve="globalFilePath" />
+                </node>
+                <node concept="2Xjw5R" id="dNnsoz0QIg" role="2OqNvi">
+                  <node concept="1xMEDy" id="dNnsoz0QIi" role="1xVPHs">
+                    <node concept="chp4Y" id="dNnsoz0QIU" role="ri$Ld">
+                      <ref role="cht4Q" to="iowz:5D7AjvYabas" resolve="Workflow" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrEf2" id="dNnsoz0QXC" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:49c3W7NLHUt" />
+              </node>
+            </node>
+            <node concept="2yIwOk" id="dNnsoz0SeS" role="2OqNvi" />
+          </node>
+          <node concept="35c_gC" id="dNnsoz0SiM" role="3uHU7w">
+            <ref role="35c_gD" to="iowz:49c3W7NLHXt" resolve="Local" />
+          </node>
         </node>
       </node>
     </node>

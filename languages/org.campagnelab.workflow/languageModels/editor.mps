@@ -13,7 +13,9 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
@@ -1189,7 +1191,6 @@
         <ref role="1NtTu8" to="iowz:3m26Pihn7Ns" />
         <node concept="l2Vlx" id="3m26Pihn88g" role="2czzBx" />
       </node>
-      <node concept="35HoNQ" id="3m26PihzN3o" role="3EZMnx" />
       <node concept="l2Vlx" id="3m26Pihn87M" role="2iSdaV" />
     </node>
   </node>
@@ -1203,7 +1204,6 @@
         <node concept="l2Vlx" id="3m26Pihn88Y" role="2czzBx" />
       </node>
       <node concept="l2Vlx" id="3m26Pihn88w" role="2iSdaV" />
-      <node concept="35HoNQ" id="3m26PihzN3B" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="3m26Pihn899">
@@ -1240,7 +1240,6 @@
         <ref role="1NtTu8" to="iowz:3m26Pihn7Ny" />
         <node concept="l2Vlx" id="3m26Pihn8ay" role="2czzBx" />
       </node>
-      <node concept="35HoNQ" id="3m26PihzN45" role="3EZMnx" />
       <node concept="l2Vlx" id="3m26Pihn8a4" role="2iSdaV" />
     </node>
   </node>
@@ -1266,7 +1265,6 @@
           </node>
         </node>
       </node>
-      <node concept="35HoNQ" id="3m26PihxDF6" role="3EZMnx" />
       <node concept="l2Vlx" id="3m26Pihn8aM" role="2iSdaV" />
     </node>
   </node>
@@ -1596,6 +1594,9 @@
       </node>
       <node concept="l2Vlx" id="59canFN3DZ4" role="2iSdaV" />
     </node>
+    <node concept="3F0ifn" id="dNnsoyWv_F" role="6VMZX">
+      <property role="3F0ifm" value="When using a wildcard character, a list object is returned containing the path of files whose name matches the pattern." />
+    </node>
   </node>
   <node concept="24kQdi" id="59canFOHYiD">
     <property role="3GE5qa" value="scripts.conditionalScript" />
@@ -1772,7 +1773,6 @@
         <ref role="1NtTu8" to="iowz:5ok1XDmh3gw" />
         <node concept="l2Vlx" id="5ok1XDmh4Ph" role="2czzBx" />
       </node>
-      <node concept="35HoNQ" id="5ok1XDmoCpt" role="3EZMnx" />
       <node concept="l2Vlx" id="5ok1XDmh4Pb" role="2iSdaV" />
     </node>
   </node>
