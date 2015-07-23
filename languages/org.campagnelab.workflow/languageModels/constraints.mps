@@ -12,9 +12,9 @@
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
+    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -937,6 +937,27 @@
                 <node concept="3clFbT" id="2rkU84P5aW_" role="3cqZAk">
                   <property role="3clFbU" value="true" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="nhsmU64ELr">
+    <ref role="1M2myG" to="iowz:D$tkU1WQf_" resolve="NameInAChannelRef" />
+    <node concept="1N5Pfh" id="D$tkU23JiX" role="1Mr941">
+      <ref role="1N5Vy1" to="iowz:D$tkU1WQfA" />
+      <node concept="1dDu$B" id="D$tkU23Jj1" role="1N6uqs">
+        <ref role="1dDu$A" to="iowz:70dPcAeD8Uh" resolve="ValueInAChannel" />
+      </node>
+      <node concept="Bn3R3" id="D$tkU23Jj4" role="Bn3R6">
+        <node concept="3clFbS" id="D$tkU23Jj5" role="2VODD2">
+          <node concept="3clFbF" id="D$tkU23Jjc" role="3cqZAp">
+            <node concept="2OqwBi" id="D$tkU23JnD" role="3clFbG">
+              <node concept="Bn53e" id="D$tkU23Jjb" role="2Oq$k0" />
+              <node concept="3TrcHB" id="D$tkU23Jzi" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>

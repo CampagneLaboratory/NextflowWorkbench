@@ -1,5 +1,6 @@
 #!/usr/bin/env nextflow
-fastafile = Channel.from(file('${org.campagnelab.workflow.home}/data/sample1.fasta'))
+import workflow1.workflowBash_Methods;
+fastafile = Channel.from(file('/Users/fac2003/MPSProjects/git/NextflowWorkbench/data/sample1.fasta'))
 process splitSequence {
 
 input:
@@ -19,9 +20,14 @@ process reverse {
 input:
 file record from splitfile
 
+output:
+file 'finaleres.txt' into result
+
 shell:
 
     '''
-cat !{record}| rev >>finalres.txt
+cat !{record}| rev >>finaleres.txt
     '''
 }
+result.subscribe{ c -> 
+workflowBash_Methods.reportAbout_result(c.toFile());}
