@@ -11,10 +11,15 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
+    <use id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.multifiles" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
+    <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.multifiles.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
@@ -26,11 +31,25 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -56,6 +75,7 @@
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
@@ -74,6 +94,18 @@
         <reference id="1167514355421" name="template" index="3lhOvi" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
+      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
+      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
+        <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
+      </concept>
+    </language>
+    <language id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.multifiles">
+      <concept id="4347565441068751386" name="org.campagnelab.util.multifiles.structure.Line" flags="ng" index="34ZRQx">
+        <property id="4347565441068751408" name="text" index="34ZRQb" />
+      </concept>
+      <concept id="4347565441068751425" name="org.campagnelab.util.multifiles.structure.File" flags="ng" index="34ZRRU">
+        <child id="4347565441068751450" name="lines" index="34ZRRx" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -81,6 +113,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -98,7 +133,7 @@
     </language>
   </registry>
   <node concept="2pMbU2" id="2cffJJS8DVj">
-    <property role="TrG5h" value="run-remote" />
+    <property role="TrG5h" value="runRemote" />
     <property role="3GE5qa" value="" />
     <node concept="3rIKKV" id="2cffJJS8DVk" role="2pMbU3">
       <node concept="2pNNFK" id="2cffJJS8Eiq" role="2pNm8H">
@@ -166,15 +201,26 @@
                 <node concept="3zFVjK" id="3LlDVJS4Olg" role="3zH0cK">
                   <node concept="3clFbS" id="3LlDVJS4Olh" role="2VODD2">
                     <node concept="3clFbF" id="3LlDVJS4OtJ" role="3cqZAp">
-                      <node concept="2OqwBi" id="3LlDVJS4P1_" role="3clFbG">
-                        <node concept="2OqwBi" id="3LlDVJS4Oya" role="2Oq$k0">
-                          <node concept="30H73N" id="3LlDVJS4OtI" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="3LlDVJS4OND" role="2OqNvi">
-                            <ref role="3Tt5mk" to="iowz:5OPtsQdNPR" />
-                          </node>
+                      <node concept="3cpWs3" id="3LlDVJTC$vP" role="3clFbG">
+                        <node concept="2YIFZM" id="3LlDVJTC$mJ" role="3uHU7w">
+                          <ref role="37wK5l" to="e2lb:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                          <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
                         </node>
-                        <node concept="3TrcHB" id="3LlDVJS4Piq" role="2OqNvi">
-                          <ref role="3TsBF5" to="iowz:5OPtsPGn$r" resolve="value" />
+                        <node concept="3cpWs3" id="3LlDVJTCzNU" role="3uHU7B">
+                          <node concept="2OqwBi" id="3LlDVJS4P1_" role="3uHU7B">
+                            <node concept="2OqwBi" id="3LlDVJS4Oya" role="2Oq$k0">
+                              <node concept="30H73N" id="3LlDVJS4OtI" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="3LlDVJS4OND" role="2OqNvi">
+                                <ref role="3Tt5mk" to="iowz:5OPtsQdNPR" />
+                              </node>
+                            </node>
+                            <node concept="3TrcHB" id="3LlDVJS4Piq" role="2OqNvi">
+                              <ref role="3TsBF5" to="iowz:5OPtsPGn$r" resolve="value" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="3LlDVJTC$DI" role="3uHU7w">
+                            <property role="Xl_RC" value="-" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -293,6 +339,19 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="3LlDVJTLYvg" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="3LlDVJTLYLZ" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="3LlDVJTLYM4" role="2pMdts">
+              <property role="2pMdty" value="workflow.script" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="3LlDVJTLYMc" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
           </node>
         </node>
         <node concept="3o6iSG" id="5OPtsPp$58" role="3o6s8t" />
@@ -457,7 +516,7 @@
             <node concept="2pNUuL" id="5OPtsPp_p0" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp_sx" role="2pMdts">
-                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${remote.job.dir}/Workflow" />
+                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${remote.job.dir}/${workflow.script}" />
               </node>
             </node>
           </node>
@@ -511,8 +570,78 @@
     <property role="3GE5qa" value="" />
     <node concept="3lhOvk" id="2cffJJS7$6E" role="3lj3bC">
       <property role="13Pg2o" value="true" />
-      <ref role="3lhOvi" node="2cffJJS8DVj" resolve="run-remote" />
+      <ref role="3lhOvi" node="2cffJJS8DVj" resolve="runRemote" />
       <ref role="30HIoZ" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
+    </node>
+    <node concept="3lhOvk" id="3LlDVJTpNSM" role="3lj3bC">
+      <property role="13Pg2o" value="true" />
+      <ref role="30HIoZ" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
+      <ref role="3lhOvi" node="3LlDVJTpNST" resolve="setEnv" />
+    </node>
+    <node concept="3lhOvk" id="3LlDVJTCyTt" role="3lj3bC">
+      <property role="13Pg2o" value="true" />
+      <ref role="30HIoZ" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
+      <ref role="3lhOvi" node="3LlDVJTCyTB" resolve="runNextflow" />
+    </node>
+  </node>
+  <node concept="34ZRRU" id="3LlDVJTpNST">
+    <property role="TrG5h" value="setEnv" />
+    <property role="3GE5qa" value="" />
+    <node concept="n94m4" id="3LlDVJTpNSU" role="lGtFl">
+      <ref role="n9lRv" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
+    </node>
+    <node concept="34ZRQx" id="3LlDVJTzG4M" role="34ZRRx">
+      <property role="34ZRQb" value="text" />
+      <node concept="1WS0z7" id="3LlDVJTzGlL" role="lGtFl">
+        <node concept="3JmXsc" id="3LlDVJTzGlO" role="3Jn$fo">
+          <node concept="3clFbS" id="3LlDVJTzGlP" role="2VODD2">
+            <node concept="3clFbF" id="3LlDVJTzGlV" role="3cqZAp">
+              <node concept="2OqwBi" id="3LlDVJTzHOG" role="3clFbG">
+                <node concept="2OqwBi" id="3LlDVJTzGQF" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3LlDVJTzGlQ" role="2Oq$k0">
+                    <node concept="3TrEf2" id="3LlDVJTzGAc" role="2OqNvi">
+                      <ref role="3Tt5mk" to="iowz:3LlDVJS9v3K" />
+                    </node>
+                    <node concept="30H73N" id="3LlDVJTzGlU" role="2Oq$k0" />
+                  </node>
+                  <node concept="3TrEf2" id="3LlDVJTzH_m" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iowz:3LlDVJSjnDI" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="3LlDVJTzISj" role="2OqNvi">
+                  <ref role="3TtcxE" to="q2ta:3LlDVJSEHDq" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="29HgVG" id="3LlDVJTzJaY" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="34ZRRU" id="3LlDVJTCyTB">
+    <property role="TrG5h" value="runNextflow" />
+    <property role="3GE5qa" value="" />
+    <node concept="n94m4" id="3LlDVJTCyTC" role="lGtFl">
+      <ref role="n9lRv" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
+    </node>
+    <node concept="34ZRQx" id="3LlDVJTCyWk" role="34ZRRx">
+      <property role="34ZRQb" value="#!/bin/bash -l" />
+    </node>
+    <node concept="34ZRQx" id="3LlDVJTCyYY" role="34ZRRx">
+      <property role="34ZRQb" value="nextflowScript=$1" />
+    </node>
+    <node concept="34ZRQx" id="3LlDVJTCz1G" role="34ZRRx">
+      <property role="34ZRQb" value="SCRIPT_DIR=&quot;$( cd &quot;$( dirname &quot;${BASH_SOURCE[0]}&quot; )&quot; &amp;&amp; pwd )&quot;" />
+    </node>
+    <node concept="34ZRQx" id="3LlDVJTCz4u" role="34ZRRx">
+      <property role="34ZRQb" value="source ${SCRIPT_DIR}/setEnv" />
+    </node>
+    <node concept="34ZRQx" id="3LlDVJTCz7k" role="34ZRRx">
+      <property role="34ZRQb" value="echo &quot;Executing ${nextflowScript}&quot;" />
+    </node>
+    <node concept="34ZRQx" id="3LlDVJTCzae" role="34ZRRx">
+      <property role="34ZRQb" value="nohup nextflow ${nextflowScript} 2&gt;&amp;1 | less" />
     </node>
   </node>
 </model>

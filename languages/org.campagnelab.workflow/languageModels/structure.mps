@@ -13,11 +13,13 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.utils.multifiles" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.multifiles.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
@@ -1273,6 +1275,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5OPtsQdO4R" resolve="KeyFile" />
     </node>
+    <node concept="1TJgyj" id="3LlDVJS9v3K" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="setEnv" />
+      <ref role="20lvS9" node="3LlDVJS9v0m" resolve="RemoteSetEnv" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5OPtsPGn$n">
     <property role="3GE5qa" value="remoteSubmission" />
@@ -1315,6 +1322,18 @@
     <property role="34LRSv" value="key file" />
     <property role="R4oN_" value="location of the file holding the private key" />
     <ref role="1TJDcQ" node="5OPtsPGn$n" resolve="SubmissionOption" />
+  </node>
+  <node concept="1TIwiD" id="3LlDVJS9v0m">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <property role="TrG5h" value="RemoteSetEnv" />
+    <property role="R4oN_" value="custom settings to add to the remote environment" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3LlDVJSjnDI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="file" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="q2ta:3LlDVJSEHD1" resolve="File" />
+    </node>
   </node>
 </model>
 

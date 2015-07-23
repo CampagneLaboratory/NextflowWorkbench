@@ -4,10 +4,19 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="-1" />
+    <use id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.multifiles" version="0" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports />
   <registry>
+    <language id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.multifiles">
+      <concept id="4347565441068751386" name="org.campagnelab.util.multifiles.structure.Line" flags="ng" index="34ZRQx">
+        <property id="4347565441068751408" name="text" index="34ZRQb" />
+      </concept>
+      <concept id="4347565441068751425" name="org.campagnelab.util.multifiles.structure.File" flags="ng" index="34ZRRU">
+        <child id="4347565441068751450" name="lines" index="34ZRRx" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -32,9 +41,13 @@
         <child id="104943811631873883" name="hostname" index="OLqEc" />
         <child id="104943811640640232" name="keyfile" index="RgTsZ" />
         <child id="104943811640638839" name="jobArea" index="RgYyw" />
+        <child id="4347565441060040944" name="setEnv" index="34s5tb" />
       </concept>
       <concept id="104943811640639799" name="org.campagnelab.workflow.structure.KeyFile" flags="ng" index="RgTjw" />
       <concept id="104943811640638838" name="org.campagnelab.workflow.structure.JobArea" flags="ng" index="RgYyx" />
+      <concept id="4347565441060040726" name="org.campagnelab.workflow.structure.RemoteSetEnv" flags="ng" index="34s5uH">
+        <child id="4347565441062632046" name="file" index="346dRl" />
+      </concept>
     </language>
   </registry>
   <node concept="pkhaZ" id="5OPtsPBKOO">
@@ -57,6 +70,16 @@
     </node>
     <node concept="OLqWn" id="3LlDVJRPAWE" role="OLqEc">
       <property role="OLqNc" value="darla.med.cornell.edu" />
+    </node>
+    <node concept="34s5uH" id="3LlDVJSSJnF" role="34s5tb">
+      <node concept="34ZRRU" id="3LlDVJSSJnK" role="346dRl">
+        <node concept="34ZRQx" id="3LlDVJSSJpf" role="34ZRRx">
+          <property role="34ZRQb" value="slchoose sun_jdk 7.0.17 dist" />
+        </node>
+        <node concept="34ZRQx" id="3LlDVJSSJoA" role="34ZRRx">
+          <property role="34ZRQb" value="export JAVA_HOME=/softlib/exe/x86_64/pkg/sun_jdk/7.0.17/dist/bin/java" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

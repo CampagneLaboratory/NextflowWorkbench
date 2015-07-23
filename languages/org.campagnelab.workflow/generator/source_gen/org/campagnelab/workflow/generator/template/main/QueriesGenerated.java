@@ -7,12 +7,14 @@ import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 
 @Generated
 public class QueriesGenerated {
   public final boolean NEEDS_OPCONTEXT = false;
   public static Object propertyMacro_GetPropertyValue_4347565441058817360(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x174d5d735b10149L, 0x174d5d736373d77L, "jobArea")), MetaAdapterFactory.getProperty(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x174d5d735b17917L, 0x174d5d735b1791bL, "value"));
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x174d5d735b10149L, 0x174d5d736373d77L, "jobArea")), MetaAdapterFactory.getProperty(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x174d5d735b17917L, 0x174d5d735b1791bL, "value")) + "-" + System.currentTimeMillis();
   }
   public static Object propertyMacro_GetPropertyValue_4347565441058821691(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x174d5d735b10149L, 0x174d5d735b17f5eL, "username")), MetaAdapterFactory.getProperty(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x174d5d735b17917L, 0x174d5d735b1791bL, "value"));
@@ -22,5 +24,8 @@ public class QueriesGenerated {
   }
   public static Object propertyMacro_GetPropertyValue_4347565441058826089(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x174d5d735b10149L, 0x174d5d7363742e8L, "keyfile")), MetaAdapterFactory.getProperty(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x174d5d735b17917L, 0x174d5d735b1791bL, "value"));
+  }
+  public static Iterable<SNode> sourceNodesQuery_4347565441083688308(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x174d5d735b10149L, 0x3c55a7bbf825f0f0L, "setEnv")), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3c55a7bbf825f016L, 0x3c55a7bbf84d7a6eL, "file")), MetaAdapterFactory.getContainmentLink(0xd4767029894b41e1L, 0xb76e850baa598e5bL, 0x3c55a7bbf8aada41L, 0x3c55a7bbf8aada5aL, "lines"));
   }
 }

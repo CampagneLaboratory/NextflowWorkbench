@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
+    <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.multifiles.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
@@ -2096,8 +2097,54 @@
         <node concept="lj46D" id="5OPtsQdOcC" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="ljvvj" id="3LlDVJS9vfZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="5OPtsQdNEf" role="2iSdaV" />
+      <node concept="3F0ifn" id="3LlDVJSe4sq" role="3EZMnx">
+        <node concept="ljvvj" id="3LlDVJSe4tu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3LlDVJS9vi6" role="3EZMnx">
+        <property role="3F0ifm" value="Settings to add to the remote environment:" />
+        <node concept="ljvvj" id="3LlDVJS9vjU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3LlDVJS9vk2" role="3EZMnx">
+        <property role="1$x2rV" value="Add settings" />
+        <ref role="1NtTu8" to="iowz:3LlDVJS9v3K" />
+        <node concept="lj46D" id="3LlDVJS9vl1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3LlDVJSjnTp">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <ref role="1XX52x" to="iowz:3LlDVJS9v0m" resolve="RemoteSetEnv" />
+    <node concept="1iCGBv" id="3LlDVJSO7mZ" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:3LlDVJSjnDI" />
+      <node concept="pVoyu" id="3LlDVJSSJpK" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="pj6Ft" id="3LlDVJSSJpL" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="1sVBvm" id="3LlDVJSO7n0" role="1sWHZn">
+        <node concept="3F2HdR" id="3LlDVJSO7nb" role="2wV5jI">
+          <ref role="1NtTu8" to="q2ta:3LlDVJSEHDq" />
+          <node concept="pVoyu" id="3LlDVJSEHIr" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="pj6Ft" id="3LlDVJSEHIs" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="2iRkQZ" id="3LlDVJSSJpU" role="2czzBx" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
