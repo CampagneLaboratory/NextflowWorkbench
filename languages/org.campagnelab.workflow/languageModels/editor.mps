@@ -7,11 +7,11 @@
   </languages>
   <imports>
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
-    <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.files.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.files.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -2078,6 +2078,34 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="1B2iUhm8hYw" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="pkWqt" id="1B2iUhm8hYx" role="pqm2j">
+          <node concept="3clFbS" id="1B2iUhm8hYy" role="2VODD2">
+            <node concept="3clFbF" id="1B2iUhm8hYz" role="3cqZAp">
+              <node concept="2OqwBi" id="1B2iUhm8hY$" role="3clFbG">
+                <node concept="2OqwBi" id="1B2iUhm8hY_" role="2Oq$k0">
+                  <node concept="pncrf" id="1B2iUhm8hYA" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="1B2iUhm8kaW" role="2OqNvi">
+                    <ref role="3TtcxE" to="iowz:1B2iUhm8ilv" />
+                  </node>
+                </node>
+                <node concept="3GX2aA" id="1B2iUhm8hYC" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Vb9p2" id="1B2iUhm8hYD" role="3F10Kt" />
+        <node concept="11L4FC" id="1B2iUhm8hYE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1B2iUhm8hZD" role="3EZMnx">
+        <property role="2czwfO" value="." />
+        <property role="S$F3r" value="true" />
+        <ref role="1NtTu8" to="iowz:1B2iUhm8ilv" />
+        <node concept="2iRfu4" id="1B2iUhm8hZE" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="5HJ0QzxKmlb" role="3EZMnx">
         <property role="3F0ifm" value="do:" />
