@@ -11,9 +11,9 @@
   <imports>
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -79,7 +79,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -148,7 +148,7 @@
       <concept id="1233921373471" name="jetbrains.mps.lang.textGen.structure.LanguageTextGenDeclaration" flags="ig" index="1bsvg0">
         <child id="1233922432965" name="operation" index="1bwxVq" />
       </concept>
-      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" index="1bwezc" />
+      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" stub="3147100357551177019" index="1bwezc" />
       <concept id="1233924848298" name="jetbrains.mps.lang.textGen.structure.OperationCall" flags="ng" index="1bDJIP">
         <reference id="1234190664409" name="function" index="1rvKf6" />
         <child id="1234191323697" name="parameter" index="1ryhcI" />
@@ -179,6 +179,7 @@
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
@@ -362,41 +363,60 @@
       <property role="TrG5h" value="workflow" />
       <node concept="3cqZAl" id="34JZ5vrM0V5" role="3clF45" />
       <node concept="3clFbS" id="34JZ5vrM0V6" role="3clF47">
-        <node concept="lc7rE" id="5HJ0Qzzi3Q6" role="3cqZAp">
-          <node concept="la8eA" id="5HJ0Qzzi3QQ" role="lcghm">
-            <property role="lacIc" value="import " />
-          </node>
-          <node concept="l9hG8" id="5HJ0Qzzi3ZV" role="lcghm">
-            <node concept="2OqwBi" id="5HJ0Qzzi4p1" role="lb14g">
-              <node concept="2OqwBi" id="5HJ0Qzzi42N" role="2Oq$k0">
-                <node concept="37vLTw" id="5HJ0Qzzi402" role="2Oq$k0">
-                  <ref role="3cqZAo" node="34JZ5vrM0Ve" resolve="workflow" />
-                </node>
-                <node concept="I4A8Y" id="5HJ0Qzzi4dT" role="2OqNvi" />
+        <node concept="3clFbJ" id="1B2iUhm80A4" role="3cqZAp">
+          <node concept="3clFbS" id="1B2iUhm80A6" role="3clFbx">
+            <node concept="lc7rE" id="5HJ0Qzzi3Q6" role="3cqZAp">
+              <node concept="la8eA" id="5HJ0Qzzi3QQ" role="lcghm">
+                <property role="lacIc" value="import " />
               </node>
-              <node concept="LkI2h" id="5HJ0Qzzi4tI" role="2OqNvi" />
+              <node concept="l9hG8" id="5HJ0Qzzi3ZV" role="lcghm">
+                <node concept="2OqwBi" id="5HJ0Qzzi4p1" role="lb14g">
+                  <node concept="2OqwBi" id="5HJ0Qzzi42N" role="2Oq$k0">
+                    <node concept="37vLTw" id="5HJ0Qzzi402" role="2Oq$k0">
+                      <ref role="3cqZAo" node="34JZ5vrM0Ve" resolve="workflow" />
+                    </node>
+                    <node concept="I4A8Y" id="5HJ0Qzzi4dT" role="2OqNvi" />
+                  </node>
+                  <node concept="LkI2h" id="5HJ0Qzzi4tI" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="la8eA" id="5HJ0Qzzi4tU" role="lcghm">
+                <property role="lacIc" value="." />
+              </node>
+              <node concept="l9hG8" id="5HJ0Qzzi4ue" role="lcghm">
+                <node concept="2OqwBi" id="5HJ0Qzzi4xD" role="lb14g">
+                  <node concept="37vLTw" id="5HJ0Qzzi4us" role="2Oq$k0">
+                    <ref role="3cqZAo" node="34JZ5vrM0Ve" resolve="workflow" />
+                  </node>
+                  <node concept="3TrcHB" id="5HJ0Qzzi4GJ" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="5HJ0Qzzi4H0" role="lcghm">
+                <property role="lacIc" value="_Methods" />
+              </node>
+              <node concept="la8eA" id="5HJ0Qzzi4Hu" role="lcghm">
+                <property role="lacIc" value=";" />
+              </node>
+              <node concept="l8MVK" id="5HJ0Qzzig94" role="lcghm" />
             </node>
           </node>
-          <node concept="la8eA" id="5HJ0Qzzi4tU" role="lcghm">
-            <property role="lacIc" value="." />
-          </node>
-          <node concept="l9hG8" id="5HJ0Qzzi4ue" role="lcghm">
-            <node concept="2OqwBi" id="5HJ0Qzzi4xD" role="lb14g">
-              <node concept="37vLTw" id="5HJ0Qzzi4us" role="2Oq$k0">
+          <node concept="2OqwBi" id="1B2iUhm828Q" role="3clFbw">
+            <node concept="2OqwBi" id="1B2iUhm812w" role="2Oq$k0">
+              <node concept="37vLTw" id="1B2iUhm80B7" role="2Oq$k0">
                 <ref role="3cqZAo" node="34JZ5vrM0Ve" resolve="workflow" />
               </node>
-              <node concept="3TrcHB" id="5HJ0Qzzi4GJ" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="2Rf3mk" id="1B2iUhm81z4" role="2OqNvi">
+                <node concept="1xMEDy" id="1B2iUhm81z6" role="1xVPHs">
+                  <node concept="chp4Y" id="1B2iUhm81zy" role="ri$Ld">
+                    <ref role="cht4Q" to="iowz:5HJ0QzxC1s2" resolve="Report" />
+                  </node>
+                </node>
               </node>
             </node>
+            <node concept="3GX2aA" id="1B2iUhm85fn" role="2OqNvi" />
           </node>
-          <node concept="la8eA" id="5HJ0Qzzi4H0" role="lcghm">
-            <property role="lacIc" value="_Methods" />
-          </node>
-          <node concept="la8eA" id="5HJ0Qzzi4Hu" role="lcghm">
-            <property role="lacIc" value=";" />
-          </node>
-          <node concept="l8MVK" id="5HJ0Qzzig94" role="lcghm" />
         </node>
         <node concept="2Gpval" id="5Sz2Ie0Y8FG" role="3cqZAp">
           <node concept="2GrKxI" id="5Sz2Ie0Y8FI" role="2Gsz3X">
