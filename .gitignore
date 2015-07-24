@@ -4,6 +4,7 @@
 */*/source_gen.caches/**/*
 */*/classes_gen/**/*.class
 */*/classes_gen/**/trace.info
+*/*/*/*.nf
 *.class
 dependencies
 generated
