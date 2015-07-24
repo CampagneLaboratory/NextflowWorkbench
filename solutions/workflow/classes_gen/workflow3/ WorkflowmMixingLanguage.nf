@@ -1,4 +1,5 @@
 #!/usr/bin/env nextflow
+import workflow3. WorkflowmMixingLanguage_Methods;
 val = Channel.from(100)
 process perlTask {
 

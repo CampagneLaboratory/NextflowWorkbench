@@ -1,27 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="13,0,32,0" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated" />
+      <unit at="18,0,57,0" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)/2526307167898569313">
+    <file name="QueriesGenerated.java">
+      <node id="6588488528875770534" at="21,110,22,229" concept="1" />
+      <scope id="6588488528875770527" at="21,110,22,229" />
     </file>
   </root>
   <root nodeRef="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)/2526307167898869459">
     <file name="QueriesGenerated.java">
-      <node id="4347565441058817903" at="16,112,17,378" concept="0" />
-      <node id="4347565441058822021" at="19,112,20,344" concept="0" />
-      <node id="4347565441058834816" at="22,112,23,344" concept="0" />
-      <node id="4347565441058826419" at="25,112,26,343" concept="0" />
-      <scope id="4347565441058817361" at="16,112,17,378" />
-      <scope id="4347565441058821692" at="19,112,20,344" />
-      <scope id="4347565441058834642" at="22,112,23,344" />
-      <scope id="4347565441058826090" at="25,112,26,343" />
+      <node id="4347565441058817903" at="24,112,25,378" concept="1" />
+      <node id="4347565441058822021" at="27,112,28,344" concept="1" />
+      <node id="4347565441058834816" at="30,112,31,344" concept="1" />
+      <node id="4347565441058826419" at="33,112,34,343" concept="1" />
+      <scope id="4347565441058817361" at="24,112,25,378" />
+      <scope id="4347565441058821692" at="27,112,28,344" />
+      <scope id="4347565441058834642" at="30,112,31,344" />
+      <scope id="4347565441058826090" at="33,112,34,343" />
     </file>
   </root>
   <root nodeRef="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)/4347565441081097785">
     <file name="QueriesGenerated.java">
-      <node id="4347565441083688315" at="28,120,29,508" concept="0" />
-      <scope id="4347565441083688309" at="28,120,29,508" />
+      <node id="4347565441083688315" at="50,120,51,508" concept="1" />
+      <scope id="4347565441083688309" at="50,120,51,508" />
+    </file>
+  </root>
+  <root nodeRef="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)/6588488528875764625">
+    <file name="QueriesGenerated.java">
+      <node id="6588488528877589413" at="36,112,37,351" concept="1" />
+      <node id="6588488528877569061" at="39,112,40,193" concept="1" />
+      <node id="6588488528884068356" at="42,109,43,52" concept="2" />
+      <node id="6588488528883705764" at="43,52,44,266" concept="0" />
+      <node id="6588488528884068273" at="44,266,45,30" concept="1" />
+      <node id="6588488528877576933" at="47,108,48,192" concept="1" />
+      <node id="6588488528877579980" at="53,120,54,193" concept="1" />
+      <scope id="6588488528877583533" at="36,112,37,351" />
+      <scope id="6588488528875764643" at="39,112,40,193" />
+      <scope id="6588488528877576899" at="47,108,48,192" />
+      <scope id="6588488528877577844" at="53,120,54,193" />
+      <scope id="6588488528877591736" at="42,109,45,30">
+        <var name="channelElementType" id="6588488528883705767" />
+      </scope>
     </file>
   </root>
 </debug-info>

@@ -1,4 +1,5 @@
 #!/usr/bin/env nextflow
+import workflow2.workflowReadFileInPython_Methods;
 inputPath = Channel.from('${org.campagnelab.workflow.HOME}/data/id.txt')
 process testPython {
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env nextflow
+import workflow5.TestWithR_Methods;
 valueOfA = Channel.from(2, 5, 10, 100, 1000, 25)
 InsideRscript = Channel.from(5, 10, 20, 30, 40, 50)
 process writeScript {
