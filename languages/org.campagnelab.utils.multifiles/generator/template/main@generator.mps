@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e53c519d-6973-46b3-b469-f2d4eea05b6a(org.campagnelab.util.multifiles.generator.template.main@generator)">
+<model ref="r:e53c519d-6973-46b3-b469-f2d4eea05b6a(org.campagnelab.util.files.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />

@@ -18,7 +18,7 @@
   </languages>
   <imports>
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
-    <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.multifiles.structure)" implicit="true" />
+    <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.files.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
@@ -103,7 +103,7 @@
       <concept id="4347565441068751386" name="org.campagnelab.util.multifiles.structure.Line" flags="ng" index="34ZRQx">
         <property id="4347565441068751408" name="text" index="34ZRQb" />
       </concept>
-      <concept id="4347565441068751425" name="org.campagnelab.util.multifiles.structure.File" flags="ng" index="34ZRRU">
+      <concept id="4347565441068751425" name="org.campagnelab.util.multifiles.structure.PlainTextFile" flags="ng" index="34ZRRU">
         <child id="4347565441068751450" name="lines" index="34ZRRx" />
       </concept>
     </language>

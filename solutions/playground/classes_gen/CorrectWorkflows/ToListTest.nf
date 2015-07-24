@@ -1,4 +1,5 @@
 #!/usr/bin/env nextflow
+import CorrectWorkflows.ToListTest_Methods;
 strListCh = Channel.from('The', 'Krusty', 'Krab', 'Pizza', 'Is', 'The', 'Pizza', 'For', 'You', 'And', 'Me')
 alignments = Channel.from(file('/Users/jasonkurs/Documents/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*'), file('/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*'))
 tupleListCh = Channel.from( [0, 'hi'], [1, 'hello'], [2, 'bye'])

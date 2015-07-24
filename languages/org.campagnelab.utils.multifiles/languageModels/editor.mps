@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7ef95b56-0be7-450e-a194-4f55e37ba2d2(org.campagnelab.util.multifiles.editor)">
+<model ref="r:7ef95b56-0be7-450e-a194-4f55e37ba2d2(org.campagnelab.util.files.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.multifiles.structure)" implicit="true" />
+    <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.files.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -76,7 +76,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3LlDVJSEHHq">
-    <ref role="1XX52x" to="q2ta:3LlDVJSEHD1" resolve="File" />
+    <ref role="1XX52x" to="q2ta:3LlDVJSEHD1" resolve="PlainTextFile" />
     <node concept="3EZMnI" id="3LlDVJSEHHv" role="2wV5jI">
       <node concept="3F0ifn" id="3LlDVJSEHHD" role="3EZMnx">
         <property role="3F0ifm" value="Filename: " />

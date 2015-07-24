@@ -1,4 +1,5 @@
 #!/usr/bin/env nextflow
+import CorrectWorkflows.FlattenTest_Methods;
 strListCh = Channel.from(['hi', 'hello', 'how are you?'])
 strListChCopy = Channel.from(['hi', 'hello', 'how are you?'])
 strCh = Channel.from('I am well', 'yourself?', 'Good')

@@ -1,4 +1,5 @@
 #!/usr/bin/env nextflow
+import CorrectWorkflows.SimpleToListFunctions_Methods;
 paths = Channel.from(file('path1'), file('path2'))
 paths2 = Channel.from(file('path1'), file('path2'))
 path3 = Channel.from(file('path3'))

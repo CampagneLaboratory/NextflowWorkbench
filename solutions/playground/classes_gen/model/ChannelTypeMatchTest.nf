@@ -1,4 +1,5 @@
 #!/usr/bin/env nextflow
+import model.ChannelTypeMatchTest_Methods;
 ints = Channel.from(3)
 str = Channel.from('hi')
 str2 = Channel.from('bye')

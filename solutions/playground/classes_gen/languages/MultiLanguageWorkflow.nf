@@ -1,4 +1,5 @@
 #!/usr/bin/env nextflow
+import languages.MultiLanguageWorkflow_Methods;
 repoURL = Channel.from('git@bitbucket.org:campagnelaboratory/metar.git')
 process CloneRepoWithBash {
 

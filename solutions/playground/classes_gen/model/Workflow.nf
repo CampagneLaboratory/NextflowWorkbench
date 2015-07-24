@@ -1,4 +1,5 @@
 #!/usr/bin/env nextflow
+import model.Workflow_Methods;
 boolch = Channel.from(false, false, false, false)
 strch = Channel.from('esrg', 'e'..'F')
 boolch2 = Channel.from(false)

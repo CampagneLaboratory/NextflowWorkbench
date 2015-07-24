@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:73462f7e-8fea-42ea-8d33-14f6dce0c40d(org.campagnelab.util.multifiles.typesystem)">
+<model ref="r:73462f7e-8fea-42ea-8d33-14f6dce0c40d(org.campagnelab.util.files.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />

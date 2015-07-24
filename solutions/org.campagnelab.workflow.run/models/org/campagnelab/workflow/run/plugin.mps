@@ -52,9 +52,9 @@
     <import index="b2mh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" />
     <import index="e3c0" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.jar(JDK/java.util.jar@java_stub)" />
     <import index="qgx3" ref="r:89153c4d-ca4d-49a8-9d3a-0c8ff364404d(org.campagnelab.util.build)" />
-    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
+    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -185,7 +185,10 @@
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
-      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
+      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
+        <property id="8606350594693632173" name="isTransient" index="eg7rD" />
+        <property id="1240249534625" name="isVolatile" index="34CwA1" />
+      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
@@ -1038,7 +1041,7 @@
                   </node>
                   <node concept="2ShNRf" id="16M54ouy4kN" role="33vP2m">
                     <node concept="1pGfFk" id="16M54ouy4kM" role="2ShVmc">
-                      <ref role="37wK5l" to="fxg7:~FileWriter.&lt;init&gt;(java.lang.String)" resolve="FileWriter" />
+                      <ref role="37wK5l" to="fxg7:~FileWriter.&lt;init&gt;(java.io.File)" resolve="FileWriter" />
                       <node concept="2ShNRf" id="nhsmU5EYX5" role="37wK5m">
                         <node concept="1pGfFk" id="nhsmU5EZJt" role="2ShVmc">
                           <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
@@ -1278,11 +1281,11 @@
         <property role="TrG5h" value="panel" />
         <node concept="2ShNRf" id="14R2qyOBxq0" role="33vP2m">
           <node concept="1pGfFk" id="v01rbu1v$S" role="2ShVmc">
-            <ref role="37wK5l" node="v01rbtVBnZ" resolve="RConfigurationOptions" />
+            <ref role="37wK5l" node="v01rbtVBnZ" resolve="NextFlowConfigurationOptions" />
           </node>
         </node>
         <node concept="3uibUv" id="1iB3OwqtTZf" role="1tU5fm">
-          <ref role="3uigEE" node="v01rbtVlXX" resolve="RConfigurationOptions" />
+          <ref role="3uigEE" node="v01rbtVlXX" resolve="NextFlowConfigurationOptions" />
         </node>
       </node>
       <node concept="yHkD3" id="1iB3OwqDHId" role="yHkCN">
@@ -1314,6 +1317,12 @@
                   <node concept="2r$n1x" id="1cesPfBOb3k" role="2r_Bvh">
                     <ref role="2r$qp6" node="1iB3OwqDbTh" resolve="workingDirectory" />
                     <node concept="10Nm6u" id="1cesPfBObGu" role="2r_lH1" />
+                  </node>
+                  <node concept="2r$n1x" id="3LlDVJTZQnu" role="2r_Bvh">
+                    <ref role="2r$qp6" node="3LlDVJTZNEZ" resolve="remoteSubmission" />
+                    <node concept="3clFbT" id="3LlDVJTZQGb" role="2r_lH1">
+                      <property role="3clFbU" value="false" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1400,6 +1409,12 @@
             <ref role="2r$qp6" node="1iB3OwqDbTh" resolve="workingDirectory" />
             <node concept="10Nm6u" id="20R_QEEvNu0" role="2r_lH1" />
           </node>
+          <node concept="2r$n1x" id="3LlDVJTZNs0" role="2r_Bvh">
+            <ref role="2r$qp6" node="3LlDVJTZNEZ" resolve="remoteSubmission" />
+            <node concept="3clFbT" id="3LlDVJTZQjY" role="2r_lH1">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -1464,7 +1479,7 @@
     </node>
   </node>
   <node concept="312cEu" id="v01rbtVlXX">
-    <property role="TrG5h" value="RConfigurationOptions" />
+    <property role="TrG5h" value="NextFlowConfigurationOptions" />
     <node concept="312cEg" id="v01rbtY19H" role="jymVt">
       <property role="TrG5h" value="myWorkingDirectory" />
       <property role="3TUv4t" value="true" />
@@ -1481,6 +1496,17 @@
         <ref role="3uigEE" to="xk9i:14R2qyOCo9f" resolve="FieldWithPathChooseDialog" />
       </node>
     </node>
+    <node concept="312cEg" id="7jqSt7yvZuu" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="remoteSubmission" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="7jqSt7yvYOz" role="1B3o_S" />
+      <node concept="3uibUv" id="7jqSt7ywy5f" role="1tU5fm">
+        <ref role="3uigEE" to="dbrf:~JCheckBox" resolve="JCheckBox" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3LlDVJTZpo8" role="jymVt" />
     <node concept="3clFbW" id="v01rbtVBnZ" role="jymVt">
       <node concept="3cqZAl" id="v01rbtVBo1" role="3clF45" />
       <node concept="3Tm1VV" id="v01rbtVBo2" role="1B3o_S" />
@@ -1514,6 +1540,18 @@
             </node>
             <node concept="37vLTw" id="1iB3Owqz5K6" role="37vLTJ">
               <ref role="3cqZAo" node="1iB3Owqz3gM" resolve="NEXTFLOW_HOME_Directory" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3LlDVJTZu0h" role="3cqZAp">
+          <node concept="37vLTI" id="3LlDVJTZv63" role="3clFbG">
+            <node concept="2ShNRf" id="3LlDVJTZvlV" role="37vLTx">
+              <node concept="1pGfFk" id="3LlDVJTZJ_D" role="2ShVmc">
+                <ref role="37wK5l" to="dbrf:~JCheckBox.&lt;init&gt;()" resolve="JCheckBox" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="3LlDVJTZu0f" role="37vLTJ">
+              <ref role="3cqZAo" node="7jqSt7yvZuu" resolve="remoteSubmission" />
             </node>
           </node>
         </node>
@@ -1583,6 +1621,40 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="7jqSt7yw2PA" role="3cqZAp">
+          <node concept="1rXfSq" id="7jqSt7yw2PB" role="3clFbG">
+            <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+            <node concept="2ShNRf" id="7jqSt7yw2PC" role="37wK5m">
+              <node concept="1pGfFk" id="7jqSt7yw2PD" role="2ShVmc">
+                <ref role="37wK5l" to="xg1q:~JBLabel.&lt;init&gt;(java.lang.String)" resolve="JBLabel" />
+                <node concept="Xl_RD" id="7jqSt7yw2PE" role="37wK5m">
+                  <property role="Xl_RC" value="Remote submission?" />
+                </node>
+              </node>
+            </node>
+            <node concept="1rwKMM" id="7jqSt7yw2PF" role="37wK5m">
+              <property role="1rwKMK" value="label" />
+              <node concept="3cmrfG" id="7jqSt7yw3jT" role="1rxHDW">
+                <property role="3cmrfH" value="7" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3LlDVJTZqlw" role="3cqZAp">
+          <node concept="1rXfSq" id="7jqSt7yw1Fu" role="3clFbG">
+            <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+            <node concept="37vLTw" id="3LlDVJTZt00" role="37wK5m">
+              <ref role="3cqZAo" node="7jqSt7yvZuu" resolve="remoteSubmission" />
+            </node>
+            <node concept="1rwKMM" id="7jqSt7yw1Fw" role="37wK5m">
+              <property role="1rwKMK" value="panel" />
+              <node concept="3cmrfG" id="7jqSt7yw1Fx" role="1rxHDW">
+                <property role="3cmrfH" value="8" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3LlDVJTZqco" role="3cqZAp" />
       </node>
     </node>
     <node concept="2tJIrI" id="v01rbtX9ck" role="jymVt" />
@@ -1739,6 +1811,26 @@
               </node>
               <node concept="2sxana" id="20R_QEEvgvr" role="2OqNvi">
                 <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3LlDVJTZJNq" role="3cqZAp">
+          <node concept="37vLTI" id="3LlDVJTZTZN" role="3clFbG">
+            <node concept="2OqwBi" id="3LlDVJTZU__" role="37vLTx">
+              <node concept="37vLTw" id="3LlDVJTZUbK" role="2Oq$k0">
+                <ref role="3cqZAo" node="7jqSt7yvZuu" resolve="remoteSubmission" />
+              </node>
+              <node concept="liA8E" id="3LlDVJTZZr4" role="2OqNvi">
+                <ref role="37wK5l" to="dbrf:~AbstractButton.isSelected():boolean" resolve="isSelected" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3LlDVJTZK17" role="37vLTJ">
+              <node concept="37vLTw" id="3LlDVJTZJNo" role="2Oq$k0">
+                <ref role="3cqZAo" node="14R2qyOCuvw" resolve="options" />
+              </node>
+              <node concept="2sxana" id="3LlDVJTZSY2" role="2OqNvi">
+                <ref role="2sxfKC" node="3LlDVJTZNEZ" resolve="remoteSubmission" />
               </node>
             </node>
           </node>
@@ -2831,7 +2923,7 @@
             <node concept="3cpWsn" id="5gyVhZ17JjJ" role="3cpWs9">
               <property role="TrG5h" value="rRunParametersEditor" />
               <node concept="3uibUv" id="1iB3OwqudJo" role="1tU5fm">
-                <ref role="3uigEE" node="v01rbtVlXX" resolve="RConfigurationOptions" />
+                <ref role="3uigEE" node="v01rbtVlXX" resolve="NextFlowConfigurationOptions" />
               </node>
               <node concept="2OqwBi" id="5gyVhZ17JjL" role="33vP2m">
                 <node concept="yHkDH" id="5gyVhZ17JjM" role="2Oq$k0">
@@ -3291,6 +3383,15 @@
                 </node>
               </node>
             </node>
+            <node concept="2r$n1x" id="3LlDVJTZOkG" role="2r_Bvh">
+              <ref role="2r$qp6" node="3LlDVJTZNEZ" resolve="remoteSubmission" />
+              <node concept="2OqwBi" id="3LlDVJTZOxi" role="2r_lH1">
+                <node concept="Xjq3P" id="3LlDVJTZOmx" role="2Oq$k0" />
+                <node concept="2sxana" id="3LlDVJTZQ06" role="2OqNvi">
+                  <ref role="2sxfKC" node="3LlDVJTZNEZ" resolve="remoteSubmission" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -3306,6 +3407,11 @@
       <node concept="3uibUv" id="1iB3OwqDc2P" role="2lK19J">
         <ref role="3uigEE" to="fxg7:~File" resolve="File" />
       </node>
+    </node>
+    <node concept="2lGYhJ" id="3LlDVJTZNEZ" role="2pHZQ9">
+      <property role="3dDGau" value="false" />
+      <property role="TrG5h" value="remoteSubmission" />
+      <node concept="10P_77" id="3LlDVJTZNRv" role="2lK19J" />
     </node>
     <node concept="3Tm1VV" id="1iB3OwqtihT" role="1B3o_S" />
     <node concept="3uibUv" id="1iB3OwqttR2" role="3TOOP4">

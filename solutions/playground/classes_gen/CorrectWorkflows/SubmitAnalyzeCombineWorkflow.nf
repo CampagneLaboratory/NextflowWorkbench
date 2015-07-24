@@ -1,4 +1,5 @@
 #!/usr/bin/env nextflow
+import CorrectWorkflows.SubmitAnalyzeCombineWorkflow_Methods;
 alignments = Channel.from(file('/Users/jasonkurs/Documents/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*'), file('/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*'))
 process submit {
 
