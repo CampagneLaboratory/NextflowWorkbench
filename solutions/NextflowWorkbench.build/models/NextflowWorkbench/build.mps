@@ -53,7 +53,6 @@
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
-      <concept id="7389400916848036997" name="jetbrains.mps.build.structure.BuildLayout_Node" flags="ng" index="39821Y" />
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -255,7 +254,6 @@
       </node>
     </node>
     <node concept="1l3spV" id="4oJiZHqTePT" role="1l3spN">
-      <node concept="39821Y" id="1B2iUhm7u8t" role="39821P" />
       <node concept="3981dG" id="4oJiZHqTePU" role="39821P">
         <node concept="3_J27D" id="4oJiZHqTePV" role="Nbhlr">
           <node concept="3Mxwew" id="4oJiZHqTePW" role="3MwsjC">
@@ -326,6 +324,9 @@
       </node>
       <node concept="m$_yC" id="_lyg7TiUSg" role="m$_yJ">
         <ref role="m$_y1" to="ael0:5KK2jWpWo0m" resolve="org.campagnelab.mps.UI" />
+      </node>
+      <node concept="m$_yC" id="_lyg7TkoHz" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
       </node>
       <node concept="3_J27D" id="4oJiZHqTePR" role="m_cZH">
         <node concept="3Mxwew" id="4oJiZHqTePS" role="3MwsjC">
