@@ -69,6 +69,9 @@
         <child id="5617550519002745378" name="macros" index="1l3spd" />
         <child id="5617550519002745372" name="layout" index="1l3spN" />
       </concept>
+      <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
+        <property id="8654221991637384184" name="pattern" index="3qWCbO" />
+      </concept>
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
@@ -77,9 +80,6 @@
         <child id="6789562173791401562" name="selectors" index="1juEy9" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
-      <concept id="5248329904288051100" name="jetbrains.mps.build.structure.BuildFileIncludeSelector" flags="ng" index="3LWZYx">
-        <property id="5248329904288051101" name="pattern" index="3LWZYw" />
-      </concept>
       <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
         <property id="4903714810883755350" name="text" index="3MwjfP" />
       </concept>
@@ -266,20 +266,38 @@
             <property role="3MwjfP" value=".zip" />
           </node>
         </node>
-        <node concept="3ygNvl" id="1B2iUhm7u9t" role="39821P">
-          <ref role="3ygNvj" to="90a9:2Xjt3l59CSm" resolve="mps-sl-all.zip" />
-          <node concept="3LWZYx" id="1B2iUhm7u9v" role="1juEy9">
-            <property role="3LWZYw" value="mps-multiline/**/*" />
-          </node>
-          <node concept="3LWZYx" id="1B2iUhm7u9C" role="1juEy9">
-            <property role="3LWZYw" value="mps-richtext/**/*" />
-          </node>
-          <node concept="3LWZYx" id="1B2iUhm7u9K" role="1juEy9">
-            <property role="3LWZYw" value="de.itemis.mps.selection/**/*" />
-          </node>
-        </node>
         <node concept="m$_wl" id="4oJiZHqTePX" role="39821P">
           <ref role="m_rDy" node="4oJiZHqTePK" resolve="org.campagnelab.NextflowWorkbench" />
+          <node concept="3ygNvl" id="1PXjV8YMesz" role="39821P">
+            <ref role="3ygNvj" to="90a9:1sO539bGQvs" resolve="mps-richtext" />
+            <node concept="3qWCbU" id="1PXjV8YMeuk" role="1juEy9">
+              <property role="3qWCbO" value="**/*.jar" />
+            </node>
+          </node>
+          <node concept="3ygNvl" id="1PXjV8YM$rH" role="39821P">
+            <ref role="3ygNvj" to="90a9:4p3FRivDLPx" resolve="mps-multiline" />
+            <node concept="3qWCbU" id="1PXjV8YM$rI" role="1juEy9">
+              <property role="3qWCbO" value="**/*.jar" />
+            </node>
+          </node>
+          <node concept="3ygNvl" id="1PXjV8YM$t2" role="39821P">
+            <ref role="3ygNvj" to="90a9:6Y0V2RJk5G9" resolve="de.itemis.mps.selection" />
+            <node concept="3qWCbU" id="1PXjV8YM$t3" role="1juEy9">
+              <property role="3qWCbO" value="**/*.jar" />
+            </node>
+          </node>
+          <node concept="3ygNvl" id="1PXjV8YM$zc" role="39821P">
+            <ref role="3ygNvj" to="90a9:31bAEZ0ssNL" resolve="mps-apache-commons" />
+            <node concept="3qWCbU" id="1PXjV8YM$zd" role="1juEy9">
+              <property role="3qWCbO" value="**/*.jar" />
+            </node>
+          </node>
+          <node concept="3ygNvl" id="6r9ecMqJtA2" role="39821P">
+            <ref role="3ygNvj" to="90a9:2Xjt3l57guk" resolve="de.slisson.mps.hacks" />
+            <node concept="3qWCbU" id="6r9ecMqJtA3" role="1juEy9">
+              <property role="3qWCbO" value="**/*.jar" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
