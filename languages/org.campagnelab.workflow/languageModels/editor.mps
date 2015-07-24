@@ -1318,6 +1318,9 @@
         <node concept="2V7CMv" id="5rY6S$L$R3L" role="3F10Kt">
           <property role="2V7CMs" value="ext_1_RTransform" />
         </node>
+        <node concept="11LMrY" id="1B2iUhmcPxg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0A7n" id="3m26PihtnlE" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:3m26Pihn81r" resolve="value" />
@@ -1330,6 +1333,9 @@
         </node>
         <node concept="2V7CMv" id="5rY6S$L$R2V" role="3F10Kt">
           <property role="2V7CMs" value="ext_2_RTransform" />
+        </node>
+        <node concept="11L4FC" id="1B2iUhmcPzS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>
@@ -1565,9 +1571,7 @@
     <node concept="14StLt" id="vHEKaWTFXx" role="V601i">
       <property role="TrG5h" value="StringChannelValue" />
       <node concept="VechU" id="vHEKaWTFXY" role="3F10Kt">
-        <node concept="1iSF2X" id="vHEKaWTFY0" role="VblUZ">
-          <property role="1iTho6" value="FF4C00" />
-        </node>
+        <property role="Vb096" value="blue" />
       </node>
     </node>
     <node concept="14StLt" id="5HJ0Qzylzqv" role="V601i">
