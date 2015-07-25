@@ -213,7 +213,6 @@
       <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
       <node concept="1uYdA0" id="3JbPZMY4v00" role="1uLvPH">
         <ref role="1uK_4X" node="3JbPZMY4uTj" resolve="paths" />
-        <node concept="1yaYav" id="3JbPZMY4v1l" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="2rkU84P9CS6" role="1uLvPA" />
     </node>
@@ -221,7 +220,6 @@
       <ref role="2$rEH4" node="YNIIGPcu0K" resolve="conditionDummy" />
       <node concept="1uYdA0" id="3JbPZMYlzd1" role="1uLvPH">
         <ref role="1uK_4X" node="3JbPZMYlzd4" resolve="paths2" />
-        <node concept="1yaYav" id="2rkU84P9D1r" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="qQieKH_3pz" role="1uLvPA" />
     </node>
@@ -570,27 +568,27 @@
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
+    <node concept="1uY1Ls" id="6qiI2N4$8bb" role="2ulM7n">
+      <node concept="16pRw0" id="6qiI2N4$8bd" role="1uY1Lt">
+        <property role="TrG5h" value="alignment" />
+      </node>
+    </node>
     <node concept="3Y$Zt1" id="34JZ5vsuI0l" role="2ulM7a">
       <node concept="19SGf9" id="34JZ5vsuI0m" role="3Y$PkS">
         <node concept="19SUe$" id="34JZ5vsz_hP" role="19SJt6">
           <property role="19SUeA" value="java -jar /Users/jasonkurs/Downloads/2.3.5/goby.jar -m suggest-position-slices  -n 200 -o slicingPlan.tsv " />
         </node>
         <node concept="3YE7tV" id="dNnsoyWuwX" role="19SJt6">
-          <ref role="3YE7sm" node="dNnsoyWuvZ" resolve="alignment" />
+          <ref role="3YE7sm" node="6qiI2N4$8bd" resolve="alignment" />
         </node>
         <node concept="19SUe$" id="dNnsoyWuwW" role="19SJt6">
-          <property role="19SUeA" value="\n  &gt; /dev/null\t\nsplit -l 1 slicingPlan.tsv index_\n\n" />
+          <property role="19SUeA" value="  split -l 1 slicingPlan.tsv index_" />
         </node>
       </node>
     </node>
     <node concept="04KEa" id="dNnsoyWsXW" role="2ulM79">
       <node concept="04MM2" id="dNnsoyWsXX" role="04Qyx">
         <property role="TrG5h" value="'index_*'" />
-      </node>
-    </node>
-    <node concept="04KEa" id="dNnsoyWuvY" role="2ulM7n">
-      <node concept="04MM2" id="dNnsoyWuvZ" role="04Qyx">
-        <property role="TrG5h" value="alignment" />
       </node>
     </node>
   </node>
