@@ -7,6 +7,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
+    <import index="j1b0" ref="r:f90cb088-6ac1-4c26-816f-c7d69af35a24(workflow2)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
@@ -123,7 +124,7 @@
                 <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="5HJ0Qzy4qnO" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println():void" resolve="println" />
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="3cpWs3" id="nhsmU5RIRb" role="37wK5m">
                   <node concept="Xl_RD" id="nhsmU5RIRu" role="3uHU7B">
                     <property role="Xl_RC" value="This worflow has produced this file: " />
@@ -158,6 +159,12 @@
       </node>
       <node concept="1uYdA0" id="3gLclC5_5S2" role="1uLvPH">
         <ref role="1uK_4X" node="3gLclC5_5RZ" resolve="splitfile" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6qiI2N4jW8c" role="2$rEHq">
+      <ref role="2$rEH4" to="j1b0:3gLclC5BNlX" resolve="testPython" />
+      <node concept="1uYdA0" id="6qiI2N4jWfQ" role="1uLvPH">
+        <ref role="1uK_4X" node="D$tkU2g9vi" resolve="result" />
       </node>
     </node>
     <node concept="1CVceo" id="3gLclC5_5JD" role="2$L6iY">

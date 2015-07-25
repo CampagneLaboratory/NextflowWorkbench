@@ -14,9 +14,10 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
-    <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -40,6 +41,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -69,24 +73,18 @@
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
-        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
-        <child id="1206060619838" name="condition" index="3eO9$A" />
-        <child id="1206060644605" name="statementList" index="3eOfB_" />
-      </concept>
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
@@ -2421,6 +2419,31 @@
   <node concept="18kY7G" id="4TfcfnmaUJ2">
     <property role="TrG5h" value="check_InputChannel" />
     <node concept="3clFbS" id="4TfcfnmaUJ3" role="18ibNy">
+      <node concept="3cpWs8" id="6qiI2N4ktgS" role="3cqZAp">
+        <node concept="3cpWsn" id="6qiI2N4ktgT" role="3cpWs9">
+          <property role="TrG5h" value="process" />
+          <node concept="3Tqbb2" id="6qiI2N4ktgQ" role="1tU5fm">
+            <ref role="ehGHo" to="iowz:6tX5nBTatyL" resolve="Process" />
+          </node>
+          <node concept="2OqwBi" id="6qiI2N4ktgU" role="33vP2m">
+            <node concept="2OqwBi" id="6qiI2N4ktgV" role="2Oq$k0">
+              <node concept="1YBJjd" id="6qiI2N4ktgW" role="2Oq$k0">
+                <ref role="1YBMHb" node="4TfcfnmaUJ5" resolve="inputChannel" />
+              </node>
+              <node concept="2Xjw5R" id="6qiI2N4ktgX" role="2OqNvi">
+                <node concept="1xMEDy" id="6qiI2N4ktgY" role="1xVPHs">
+                  <node concept="chp4Y" id="6qiI2N4ktgZ" role="ri$Ld">
+                    <ref role="cht4Q" to="iowz:5D7AjvYaj9M" resolve="ProcessRef" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3TrEf2" id="6qiI2N4kth0" role="2OqNvi">
+              <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3cpWs8" id="4Tfcfnmb0Dh" role="3cqZAp">
         <node concept="3cpWsn" id="4Tfcfnmb0Di" role="3cpWs9">
           <property role="TrG5h" value="processInputChannel" />
@@ -2429,22 +2452,8 @@
           </node>
           <node concept="2OqwBi" id="4Tfcfnmb0Dk" role="33vP2m">
             <node concept="2OqwBi" id="4Tfcfnmb0Dl" role="2Oq$k0">
-              <node concept="2OqwBi" id="4Tfcfnmb0Dm" role="2Oq$k0">
-                <node concept="2OqwBi" id="4Tfcfnmb0Dn" role="2Oq$k0">
-                  <node concept="1YBJjd" id="4Tfcfnmb0OE" role="2Oq$k0">
-                    <ref role="1YBMHb" node="4TfcfnmaUJ5" resolve="inputChannel" />
-                  </node>
-                  <node concept="2Xjw5R" id="4Tfcfnmb0Dp" role="2OqNvi">
-                    <node concept="1xMEDy" id="4Tfcfnmb0Dq" role="1xVPHs">
-                      <node concept="chp4Y" id="4Tfcfnmb0Dr" role="ri$Ld">
-                        <ref role="cht4Q" to="iowz:5D7AjvYaj9M" resolve="ProcessRef" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3TrEf2" id="4Tfcfnmb0Ds" role="2OqNvi">
-                  <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
-                </node>
+              <node concept="37vLTw" id="6qiI2N4kth1" role="2Oq$k0">
+                <ref role="3cqZAo" node="6qiI2N4ktgT" resolve="process" />
               </node>
               <node concept="3Tsc0h" id="4Tfcfnmb0Dt" role="2OqNvi">
                 <ref role="3TtcxE" to="iowz:6tX5nBTaziI" />
@@ -2461,90 +2470,64 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbJ" id="4TfcfnmaUJe" role="3cqZAp">
-        <node concept="3clFbS" id="4TfcfnmaUJf" role="3clFbx">
-          <node concept="3clFbJ" id="5ok1XDkYcDq" role="3cqZAp">
-            <node concept="3clFbS" id="5ok1XDkYcDs" role="3clFbx">
-              <node concept="2MkqsV" id="3f$SU0Y6hiW" role="3cqZAp">
-                <node concept="1YBJjd" id="3f$SU0Y6hjX" role="2OEOjV">
-                  <ref role="1YBMHb" node="4TfcfnmaUJ5" resolve="inputChannel" />
-                </node>
-                <node concept="3cpWs3" id="5ok1XDkR5nH" role="2MkJ7o">
-                  <node concept="Xl_RD" id="3f$SU0Y6hj8" role="3uHU7B">
-                    <property role="Xl_RC" value="Channel type mismatch. Should be: " />
-                  </node>
-                  <node concept="2OqwBi" id="5ok1XDkR6mP" role="3uHU7w">
-                    <node concept="37vLTw" id="5ok1XDkR69V" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4Tfcfnmb0Di" resolve="processInputChannel" />
-                    </node>
-                    <node concept="3JvlWi" id="5ok1XDkR6CA" role="2OqNvi" />
-                  </node>
-                </node>
-              </node>
+      <node concept="3clFbJ" id="5ok1XDkYcDq" role="3cqZAp">
+        <node concept="3clFbS" id="5ok1XDkYcDs" role="3clFbx">
+          <node concept="2MkqsV" id="3f$SU0Y6hiW" role="3cqZAp">
+            <node concept="1YBJjd" id="6qiI2N4kaL2" role="2OEOjV">
+              <ref role="1YBMHb" node="4TfcfnmaUJ5" resolve="inputChannel" />
             </node>
-            <node concept="3fqX7Q" id="5ok1XDkUD9q" role="3clFbw">
-              <node concept="1eOMI4" id="5ok1XDkUDaE" role="3fr31v">
-                <node concept="2OqwBi" id="5ok1XDkUDe0" role="1eOMHV">
-                  <node concept="37vLTw" id="5ok1XDkUDbW" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4Tfcfnmb0Di" resolve="processInputChannel" />
-                  </node>
-                  <node concept="2qgKlT" id="5ok1XDkUDsW" role="2OqNvi">
-                    <ref role="37wK5l" to="mqvz:5ok1XDk_mC0" resolve="isCompatible" />
-                    <node concept="1YBJjd" id="53DXNxH72HL" role="37wK5m">
-                      <ref role="1YBMHb" node="4TfcfnmaUJ5" resolve="inputChannel" />
-                    </node>
-                  </node>
-                </node>
+            <node concept="2YIFZM" id="6qiI2N4kpmo" role="2MkJ7o">
+              <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+              <node concept="Xl_RD" id="3f$SU0Y6hj8" role="37wK5m">
+                <property role="Xl_RC" value="Process %s expects %s as input, but %s has type %s instead" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbC" id="4TfcfnmaZmo" role="3clFbw">
-          <node concept="2OqwBi" id="4TfcfnmaVD5" role="3uHU7B">
-            <node concept="2OqwBi" id="4TfcfnmaULe" role="2Oq$k0">
-              <node concept="1YBJjd" id="4TfcfnmaUJq" role="2Oq$k0">
-                <ref role="1YBMHb" node="4TfcfnmaUJ5" resolve="inputChannel" />
+              <node concept="37vLTw" id="6qiI2N4ktoK" role="37wK5m">
+                <ref role="3cqZAo" node="6qiI2N4ktgT" resolve="process" />
               </node>
-              <node concept="3Tsc0h" id="4TfcfnmaUU$" role="2OqNvi">
-                <ref role="3TtcxE" to="iowz:3m9W35nR46P" />
-              </node>
-            </node>
-            <node concept="34oBXx" id="4TfcfnmaXTG" role="2OqNvi" />
-          </node>
-          <node concept="3cmrfG" id="4TfcfnmaZoi" role="3uHU7w">
-            <property role="3cmrfH" value="0" />
-          </node>
-        </node>
-        <node concept="3eNFk2" id="4Tfcfnmb26E" role="3eNLev">
-          <node concept="3fqX7Q" id="5ok1XDkK2bt" role="3eO9$A">
-            <node concept="1eOMI4" id="5ok1XDkK2w0" role="3fr31v">
-              <node concept="2OqwBi" id="5ok1XDkK2bv" role="1eOMHV">
-                <node concept="37vLTw" id="5ok1XDkK2bw" role="2Oq$k0">
+              <node concept="2OqwBi" id="5ok1XDkR6mP" role="37wK5m">
+                <node concept="37vLTw" id="5ok1XDkR69V" role="2Oq$k0">
                   <ref role="3cqZAo" node="4Tfcfnmb0Di" resolve="processInputChannel" />
                 </node>
-                <node concept="2qgKlT" id="5ok1XDkK2bx" role="2OqNvi">
-                  <ref role="37wK5l" to="mqvz:5ok1XDk_mC0" resolve="isCompatible" />
-                  <node concept="1YBJjd" id="53DXNxH72J0" role="37wK5m">
+                <node concept="3JvlWi" id="5ok1XDkR6CA" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="6qiI2N4kroJ" role="37wK5m">
+                <node concept="2OqwBi" id="6qiI2N4kqCj" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6qiI2N4kq$_" role="2Oq$k0">
                     <ref role="1YBMHb" node="4TfcfnmaUJ5" resolve="inputChannel" />
                   </node>
+                  <node concept="3TrEf2" id="6qiI2N4kr8S" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iowz:7gAPJCET8v7" />
+                  </node>
                 </node>
+                <node concept="3TrcHB" id="6qiI2N4krKx" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6qiI2N4ksq9" role="37wK5m">
+                <node concept="2OqwBi" id="6qiI2N4ks8s" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6qiI2N4ks8t" role="2Oq$k0">
+                    <ref role="1YBMHb" node="4TfcfnmaUJ5" resolve="inputChannel" />
+                  </node>
+                  <node concept="3TrEf2" id="6qiI2N4ks8u" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iowz:7gAPJCET8v7" />
+                  </node>
+                </node>
+                <node concept="3JvlWi" id="6qiI2N4kt8l" role="2OqNvi" />
               </node>
             </node>
           </node>
-          <node concept="3clFbS" id="4Tfcfnmb26G" role="3eOfB_">
-            <node concept="2MkqsV" id="5ok1XDkukjp" role="3cqZAp">
-              <node concept="1YBJjd" id="5ok1XDkukjY" role="2OEOjV">
-                <ref role="1YBMHb" node="4TfcfnmaUJ5" resolve="inputChannel" />
+        </node>
+        <node concept="3fqX7Q" id="5ok1XDkUD9q" role="3clFbw">
+          <node concept="1eOMI4" id="5ok1XDkUDaE" role="3fr31v">
+            <node concept="2OqwBi" id="5ok1XDkUDe0" role="1eOMHV">
+              <node concept="37vLTw" id="5ok1XDkUDbW" role="2Oq$k0">
+                <ref role="3cqZAo" node="4Tfcfnmb0Di" resolve="processInputChannel" />
               </node>
-              <node concept="3cpWs3" id="5ok1XDkR6ZT" role="2MkJ7o">
-                <node concept="2OqwBi" id="5ok1XDkR7eN" role="3uHU7w">
-                  <node concept="37vLTw" id="5ok1XDkR7b1" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4Tfcfnmb0Di" resolve="processInputChannel" />
-                  </node>
-                  <node concept="3JvlWi" id="5ok1XDkR7m3" role="2OqNvi" />
-                </node>
-                <node concept="Xl_RD" id="5ok1XDkukj_" role="3uHU7B">
-                  <property role="Xl_RC" value="Channel type mismatch. Should be: " />
+              <node concept="2qgKlT" id="5ok1XDkUDsW" role="2OqNvi">
+                <ref role="37wK5l" to="mqvz:5ok1XDk_mC0" resolve="isCompatible" />
+                <node concept="1YBJjd" id="53DXNxH72HL" role="37wK5m">
+                  <ref role="1YBMHb" node="4TfcfnmaUJ5" resolve="inputChannel" />
                 </node>
               </node>
             </node>
