@@ -1595,7 +1595,7 @@
     <node concept="3clFbS" id="vHEKaWXs5I" role="18ibNy">
       <node concept="nvevp" id="7mWvTuli1c7" role="3cqZAp">
         <node concept="2X1qdy" id="7mWvTuli1c9" role="2X0Ygz">
-          <property role="TrG5h" value="channel" />
+          <property role="TrG5h" value="channelProcessOutput" />
           <node concept="2jxLKc" id="7mWvTuli1ca" role="1tU5fm" />
         </node>
         <node concept="3clFbS" id="7mWvTuli1cc" role="nvhr_">
@@ -1610,72 +1610,19 @@
             </node>
             <node concept="mw_s8" id="vHEKaXckfB" role="1ZfhKB">
               <node concept="1Z2H0r" id="vHEKaXckf_" role="mwGJk">
-                <node concept="2OqwBi" id="vHEKaXcmY2" role="1Z2MuG">
-                  <node concept="2OqwBi" id="vHEKaXclDC" role="2Oq$k0">
-                    <node concept="2OqwBi" id="vHEKaXckZS" role="2Oq$k0">
-                      <node concept="2OqwBi" id="vHEKaXckjl" role="2Oq$k0">
-                        <node concept="1YBJjd" id="vHEKaXckhi" role="2Oq$k0">
-                          <ref role="1YBMHb" node="vHEKaWXs5K" resolve="outputChannel" />
-                        </node>
-                        <node concept="2Xjw5R" id="vHEKaXckIK" role="2OqNvi">
-                          <node concept="1xMEDy" id="vHEKaXckIM" role="1xVPHs">
-                            <node concept="chp4Y" id="vHEKaXckQy" role="ri$Ld">
-                              <ref role="cht4Q" to="iowz:5D7AjvYaj9M" resolve="ProcessRef" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="vHEKaXcloB" role="2OqNvi">
-                        <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
-                      </node>
-                    </node>
-                    <node concept="3Tsc0h" id="vHEKaXcm7b" role="2OqNvi">
-                      <ref role="3TtcxE" to="iowz:6tX5nBTaziK" />
-                    </node>
-                  </node>
-                  <node concept="34jXtK" id="vHEKaXcrnV" role="2OqNvi">
-                    <node concept="2OqwBi" id="vHEKaXcrEF" role="25WWJ7">
-                      <node concept="1YBJjd" id="vHEKaXcrwf" role="2Oq$k0">
-                        <ref role="1YBMHb" node="vHEKaWXs5K" resolve="outputChannel" />
-                      </node>
-                      <node concept="2bSWHS" id="vHEKaXcrW6" role="2OqNvi" />
-                    </node>
-                  </node>
+                <node concept="2X3wrD" id="6qiI2N4vvjX" role="1Z2MuG">
+                  <ref role="2X3Bk0" node="7mWvTuli1c9" resolve="channelProcessOutput" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="2OqwBi" id="7mWvTuli865" role="nvjzm">
-          <node concept="2OqwBi" id="7mWvTuli7bU" role="2Oq$k0">
-            <node concept="2OqwBi" id="7mWvTuli6Jc" role="2Oq$k0">
-              <node concept="2OqwBi" id="7mWvTuli6ft" role="2Oq$k0">
-                <node concept="1YBJjd" id="7mWvTuli6dk" role="2Oq$k0">
-                  <ref role="1YBMHb" node="vHEKaWXs5K" resolve="outputChannel" />
-                </node>
-                <node concept="2Xjw5R" id="7mWvTuli6ER" role="2OqNvi">
-                  <node concept="1xMEDy" id="7mWvTuli6ET" role="1xVPHs">
-                    <node concept="chp4Y" id="7mWvTuli6H3" role="ri$Ld">
-                      <ref role="cht4Q" to="iowz:5D7AjvYaj9M" resolve="ProcessRef" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3TrEf2" id="7mWvTuli70y" role="2OqNvi">
-                <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
-              </node>
-            </node>
-            <node concept="3Tsc0h" id="7mWvTuli7v0" role="2OqNvi">
-              <ref role="3TtcxE" to="iowz:6tX5nBTaziK" />
-            </node>
+        <node concept="2OqwBi" id="6qiI2N4vveI" role="nvjzm">
+          <node concept="1YBJjd" id="6qiI2N4vveJ" role="2Oq$k0">
+            <ref role="1YBMHb" node="vHEKaWXs5K" resolve="outputChannel" />
           </node>
-          <node concept="34jXtK" id="7mWvTuliasV" role="2OqNvi">
-            <node concept="2OqwBi" id="7mWvTulia_0" role="25WWJ7">
-              <node concept="1YBJjd" id="7mWvTuliawv" role="2Oq$k0">
-                <ref role="1YBMHb" node="vHEKaWXs5K" resolve="outputChannel" />
-              </node>
-              <node concept="2bSWHS" id="7mWvTuliaQH" role="2OqNvi" />
-            </node>
+          <node concept="2qgKlT" id="6qiI2N4vveK" role="2OqNvi">
+            <ref role="37wK5l" to="mqvz:6qiI2N4uAUN" resolve="getProcessOutput" />
           </node>
         </node>
       </node>

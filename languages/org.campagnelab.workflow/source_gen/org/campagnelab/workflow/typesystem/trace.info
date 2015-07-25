@@ -1489,54 +1489,54 @@
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/571300755994427757">
     <file name="typeof_OutputChannel_InferenceRule.java">
-      <node id="8483796087080489735" at="21,5,22,637" concept="6" />
-      <node id="571300755994427914" at="25,11,26,61" concept="6" />
-      <node id="571300755994427914" at="26,61,27,206" concept="6" />
-      <node id="571300755994427914" at="27,206,28,990" concept="2" />
-      <node id="571300755994427757" at="34,46,35,62" concept="7" />
-      <node id="571300755994427757" at="38,5,39,130" concept="6" />
-      <node id="571300755994427757" at="39,130,40,45" concept="7" />
-      <node id="571300755994427757" at="43,30,44,17" concept="7" />
-      <node id="571300755994427757" at="18,0,20,0" concept="1" trace="typeof_OutputChannel_InferenceRule#()V" />
-      <node id="571300755994427757" at="34,0,37,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
-      <node id="571300755994427757" at="43,0,46,0" concept="5" trace="overrides#()Z" />
-      <node id="571300755994427757" at="37,68,41,5" concept="0" />
-      <node id="571300755994427914" at="24,27,29,11" concept="0" />
-      <node id="571300755994427757" at="37,0,43,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="8483796087080489735" at="24,0,31,0" concept="5" trace="run#()V" />
-      <node id="8483796087080489735" at="22,637,31,125" concept="2" />
-      <node id="8483796087080489735" at="20,126,32,5" concept="0" />
-      <node id="571300755994427757" at="20,0,34,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="571300755994427757" at="18,47,18,47" />
-      <scope id="571300755994427757" at="34,46,35,62" />
-      <scope id="571300755994427757" at="43,30,44,17" />
-      <scope id="571300755994427757" at="18,0,20,0" />
-      <scope id="571300755994427757" at="38,5,40,45">
+      <node id="8483796087080489735" at="18,5,19,127" concept="6" />
+      <node id="571300755994427914" at="22,11,23,61" concept="6" />
+      <node id="571300755994427914" at="23,61,24,206" concept="6" />
+      <node id="571300755994427914" at="24,206,25,439" concept="2" />
+      <node id="571300755994427757" at="31,46,32,62" concept="7" />
+      <node id="571300755994427757" at="35,5,36,130" concept="6" />
+      <node id="571300755994427757" at="36,130,37,45" concept="7" />
+      <node id="571300755994427757" at="40,30,41,17" concept="7" />
+      <node id="571300755994427757" at="15,0,17,0" concept="1" trace="typeof_OutputChannel_InferenceRule#()V" />
+      <node id="571300755994427757" at="31,0,34,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="571300755994427757" at="40,0,43,0" concept="5" trace="overrides#()Z" />
+      <node id="571300755994427757" at="34,68,38,5" concept="0" />
+      <node id="571300755994427914" at="21,27,26,11" concept="0" />
+      <node id="571300755994427757" at="34,0,40,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8483796087080489735" at="21,0,28,0" concept="5" trace="run#()V" />
+      <node id="8483796087080489735" at="19,127,28,125" concept="2" />
+      <node id="8483796087080489735" at="17,126,29,5" concept="0" />
+      <node id="571300755994427757" at="17,0,31,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="571300755994427757" at="15,47,15,47" />
+      <scope id="571300755994427757" at="31,46,32,62" />
+      <scope id="571300755994427757" at="40,30,41,17" />
+      <scope id="571300755994427757" at="15,0,17,0" />
+      <scope id="571300755994427757" at="35,5,37,45">
         <var name="b" id="571300755994427757" />
       </scope>
-      <scope id="571300755994427914" at="25,11,28,990">
+      <scope id="571300755994427914" at="22,11,25,439">
         <var name="_info_12389875345" id="571300755994427914" />
         <var name="_nodeToCheck_1029348928467" id="571300755994427914" />
       </scope>
-      <scope id="571300755994427757" at="34,0,37,0" />
-      <scope id="571300755994427757" at="43,0,46,0" />
-      <scope id="571300755994427757" at="37,68,41,5" />
-      <scope id="8483796087080489740" at="24,27,29,11" />
-      <scope id="571300755994427757" at="37,0,43,0">
+      <scope id="571300755994427757" at="31,0,34,0" />
+      <scope id="571300755994427757" at="40,0,43,0" />
+      <scope id="571300755994427757" at="34,68,38,5" />
+      <scope id="8483796087080489740" at="21,27,26,11" />
+      <scope id="571300755994427757" at="34,0,40,0">
         <var name="argument" id="571300755994427757" />
       </scope>
-      <scope id="8483796087080489735" at="24,0,31,0" />
-      <scope id="8483796087080489735" at="21,5,31,125">
-        <var name="channel" id="8483796087080489735" />
+      <scope id="8483796087080489735" at="21,0,28,0" />
+      <scope id="8483796087080489735" at="18,5,28,125">
+        <var name="channelProcessOutput" id="8483796087080489735" />
       </scope>
-      <scope id="571300755994427758" at="20,126,32,5" />
-      <scope id="571300755994427757" at="20,0,34,0">
+      <scope id="571300755994427758" at="17,126,29,5" />
+      <scope id="571300755994427757" at="17,0,31,0">
         <var name="outputChannel" id="571300755994427757" />
         <var name="status" id="571300755994427757" />
         <var name="typeCheckingContext" id="571300755994427757" />
       </scope>
-      <unit id="8483796087080489735" at="23,52,31,7" name="org.campagnelab.workflow.typesystem.typeof_OutputChannel_InferenceRule$1" />
-      <unit id="571300755994427757" at="17,0,47,0" name="org.campagnelab.workflow.typesystem.typeof_OutputChannel_InferenceRule" />
+      <unit id="8483796087080489735" at="20,65,28,7" name="org.campagnelab.workflow.typesystem.typeof_OutputChannel_InferenceRule$1" />
+      <unit id="571300755994427757" at="14,0,44,0" name="org.campagnelab.workflow.typesystem.typeof_OutputChannel_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/5830463014345137933">
