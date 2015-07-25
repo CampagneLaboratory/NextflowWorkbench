@@ -1219,20 +1219,6 @@
       <ref role="20lvS9" node="2Hhp$WEw$gJ" resolve="GlobalTupleLiteral" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2TvCQLw1SsY">
-    <property role="TrG5h" value="ForSideTransformTest" />
-    <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="saddle" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2TvCQLw1UcN" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="2TvCQLw1UrT" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="another" />
-      <ref role="20lvS9" node="2TvCQLw1SsY" resolve="ForSideTransformTest" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="D$tkU1WQf_">
     <property role="TrG5h" value="NameInAChannelRef" />
     <property role="34LRSv" value="'" />
