@@ -42,10 +42,10 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Boolean_BehaviorDescriptor" />
     </file>
     <file name="ChannelFunction_BehaviorDescriptor.java">
-      <unit at="8,0,17,0" name="org.campagnelab.workflow.behavior.ChannelFunction_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ChannelFunction_BehaviorDescriptor" />
     </file>
     <file name="ChannelInitializerExpression_BehaviorDescriptor.java">
-      <unit at="8,0,18,0" name="org.campagnelab.workflow.behavior.ChannelInitializerExpression_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ChannelInitializerExpression_BehaviorDescriptor" />
     </file>
     <file name="ChannelType_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ChannelType_BehaviorDescriptor" />
@@ -57,7 +57,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.CollateAllowIncompleteTuples_BehaviorDescriptor" />
     </file>
     <file name="CollateOption_BehaviorDescriptor.java">
-      <unit at="8,0,17,0" name="org.campagnelab.workflow.behavior.CollateOption_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.CollateOption_BehaviorDescriptor" />
     </file>
     <file name="CollateStepSize_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.CollateStepSize_BehaviorDescriptor" />
@@ -195,16 +195,16 @@
       <unit at="7,0,24,0" name="org.campagnelab.workflow.behavior.NumCPUs_BehaviorDescriptor" />
     </file>
     <file name="OneOrMoreIntegers_BehaviorDescriptor.java">
-      <unit at="8,0,17,0" name="org.campagnelab.workflow.behavior.OneOrMoreIntegers_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.OneOrMoreIntegers_BehaviorDescriptor" />
     </file>
     <file name="OneOrMoreLists_BehaviorDescriptor.java">
-      <unit at="8,0,17,0" name="org.campagnelab.workflow.behavior.OneOrMoreLists_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.OneOrMoreLists_BehaviorDescriptor" />
     </file>
     <file name="OneOrMoreStrings_BehaviorDescriptor.java">
-      <unit at="8,0,17,0" name="org.campagnelab.workflow.behavior.OneOrMoreStrings_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.OneOrMoreStrings_BehaviorDescriptor" />
     </file>
     <file name="OutChannelContainer_BehaviorDescriptor.java">
-      <unit at="10,0,22,0" name="org.campagnelab.workflow.behavior.OutChannelContainer_BehaviorDescriptor" />
+      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.OutChannelContainer_BehaviorDescriptor" />
     </file>
     <file name="OutputChannel_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.OutputChannel_BehaviorDescriptor" />
@@ -216,7 +216,7 @@
       <unit at="10,0,30,0" name="org.campagnelab.workflow.behavior.ProcessInputOutput_BehaviorDescriptor" />
     </file>
     <file name="ProcessOptions_BehaviorDescriptor.java">
-      <unit at="8,0,19,0" name="org.campagnelab.workflow.behavior.ProcessOptions_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ProcessOptions_BehaviorDescriptor" />
     </file>
     <file name="ProcessRef_BehaviorDescriptor.java">
       <unit at="11,0,25,0" name="org.campagnelab.workflow.behavior.ProcessRef_BehaviorDescriptor" />
@@ -324,10 +324,10 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.TupleChannel_BehaviorDescriptor" />
     </file>
     <file name="TupleContainer_BehaviorDescriptor.java">
-      <unit at="8,0,17,0" name="org.campagnelab.workflow.behavior.TupleContainer_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.TupleContainer_BehaviorDescriptor" />
     </file>
     <file name="TupleElement_BehaviorDescriptor.java">
-      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.TupleElement_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.TupleElement_BehaviorDescriptor" />
     </file>
     <file name="TupleInitializer_BehaviorDescriptor.java">
       <unit at="7,0,21,0" name="org.campagnelab.workflow.behavior.TupleInitializer_BehaviorDescriptor" />

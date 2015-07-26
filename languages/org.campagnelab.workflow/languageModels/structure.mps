@@ -52,6 +52,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -1394,12 +1395,13 @@
   <node concept="1TIwiD" id="6qiI2N5sbyo">
     <property role="3GE5qa" value="processTypeDeclarations" />
     <property role="TrG5h" value="TupleElement" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     <node concept="1TJgyj" id="6qiI2N5sbyp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3m9W35nszV6" resolve="NotATupleType" />
+      <ref role="20ksaX" node="6qiI2N4J0hS" />
     </node>
     <node concept="PrWs8" id="6qiI2N5sbyr" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
