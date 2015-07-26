@@ -2,7 +2,7 @@
 <debug-info>
   <root>
     <file name="StructureAspectDescriptor.java">
-      <unit at="13,0,373,0" name="org.campagnelab.workflow.structure.StructureAspectDescriptor" />
+      <unit at="13,0,370,0" name="org.campagnelab.workflow.structure.StructureAspectDescriptor" />
     </file>
   </root>
 </debug-info>

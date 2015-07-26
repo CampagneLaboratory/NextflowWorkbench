@@ -111,11 +111,11 @@
     </language>
   </registry>
   <node concept="3UOs0u" id="3pXFEHVNiuC">
-    <property role="3GE5qa" value="setChannelValues" />
+    <property role="3GE5qa" value="channelInitializers" />
     <property role="TrG5h" value="LiteralTransform" />
     <node concept="3UNGvq" id="2TvCQLwfaLa" role="3UOs0v">
       <property role="2uHTBK" value="ext_2_RTransform" />
-      <ref role="3UNGvu" to="iowz:3m26Pihn81q" resolve="GlobalStringLiteral" />
+      <ref role="3UNGvu" to="iowz:3m26Pihn81q" resolve="StringLiteral" />
       <node concept="tYCnQ" id="2TvCQLwfaLc" role="_1QTJ">
         <ref role="uz4UX" to="iowz:3m26PihhBXV" resolve="RangeOfCharLiterals" />
         <node concept="Cmt7Y" id="2TvCQLwfaLe" role="uz6Si">
@@ -200,7 +200,7 @@
     <node concept="3UNGvq" id="5rY6S$LhfKi" role="3UOs0v">
       <property role="2uHTBK" value="ext_1_RTransform" />
       <property role="7I3sp" value="left" />
-      <ref role="3UNGvu" to="iowz:3m26Pihn81q" resolve="GlobalStringLiteral" />
+      <ref role="3UNGvu" to="iowz:3m26Pihn81q" resolve="StringLiteral" />
       <node concept="3kRJcU" id="5rY6S$Lhhji" role="3kShCk">
         <node concept="3clFbS" id="5rY6S$Lhhjj" role="2VODD2">
           <node concept="3clFbF" id="5rY6S$Lhicp" role="3cqZAp">
@@ -280,7 +280,7 @@
       </node>
     </node>
     <node concept="3UNGvq" id="5rY6S$Ls2hN" role="3UOs0v">
-      <ref role="3UNGvu" to="iowz:3m26Pihn84X" resolve="GlobalIntegerLiteral" />
+      <ref role="3UNGvu" to="iowz:3m26Pihn84X" resolve="IntegerLiteral" />
       <node concept="tYCnQ" id="5rY6S$Ls2jS" role="_1QTJ">
         <ref role="uz4UX" to="iowz:3m26Pihn82l" resolve="RangeOfIntegerLiterals" />
         <node concept="Cmt7Y" id="5rY6S$Ls2k0" role="uz6Si">
@@ -339,7 +339,7 @@
     </node>
     <node concept="3UNGvq" id="5rY6S$LM1WT" role="3UOs0v">
       <property role="7I3sp" value="left" />
-      <ref role="3UNGvu" to="iowz:3m26Pihn84X" resolve="GlobalIntegerLiteral" />
+      <ref role="3UNGvu" to="iowz:3m26Pihn84X" resolve="IntegerLiteral" />
       <node concept="tYCnQ" id="5rY6S$LM1YH" role="_1QTJ">
         <ref role="uz4UX" to="iowz:3m26Pihn82l" resolve="RangeOfIntegerLiterals" />
         <node concept="Cmt7Y" id="5rY6S$LM1YJ" role="uz6Si">

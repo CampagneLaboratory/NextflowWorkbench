@@ -18,12 +18,12 @@
       <node id="3341569134398604017" at="26,94,27,246" concept="3" />
       <node id="3341569134398604700" at="27,246,28,350" concept="1" />
       <node id="3341569134407821679" at="28,350,29,87" concept="4" />
-      <node id="6268478007397471781" at="50,211,51,205" concept="4" />
+      <node id="6268478007397471781" at="50,205,51,205" concept="4" />
       <node id="6268478007397472429" at="56,94,57,246" concept="3" />
       <node id="6268478007397472435" at="57,246,58,348" concept="1" />
       <node id="6268478007397472443" at="58,348,59,87" concept="4" />
-      <node id="6268478007397393177" at="77,211,78,205" concept="4" />
-      <node id="6268478007400211571" at="80,203,81,93" concept="3" />
+      <node id="6268478007397393177" at="77,205,78,205" concept="4" />
+      <node id="6268478007400211571" at="80,197,81,93" concept="3" />
       <node id="6268478007400211780" at="83,94,84,249" concept="3" />
       <node id="6268478007400212018" at="84,249,85,358" concept="1" />
       <node id="6268478007400217486" at="85,358,86,87" concept="4" />
@@ -34,7 +34,7 @@
       <node id="6268478007400211571" at="97,61,98,88" concept="3" />
       <node id="6268478007400211571" at="98,88,99,532" concept="4" />
       <node id="6268478007400211571" at="101,7,102,18" concept="4" />
-      <node id="6268478007405977401" at="104,203,105,93" concept="3" />
+      <node id="6268478007405977401" at="104,197,105,93" concept="3" />
       <node id="6268478007405977607" at="107,94,108,249" concept="3" />
       <node id="6268478007405977701" at="108,249,109,356" concept="1" />
       <node id="6268478007405982963" at="109,356,110,87" concept="4" />
@@ -45,8 +45,8 @@
       <node id="6268478007405977401" at="121,61,122,88" concept="3" />
       <node id="6268478007405977401" at="122,88,123,532" concept="4" />
       <node id="6268478007405977401" at="125,7,126,18" concept="4" />
-      <node id="3341569134398581946" at="50,0,53,0" concept="5" trace="sideTransformHintSubstituteActionsBuilder_Precondition_GlobalStringLiteral_3341569134398581946#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
-      <node id="6268478007397389522" at="77,0,80,0" concept="5" trace="sideTransformHintSubstituteActionsBuilder_Precondition_GlobalStringLiteral_6268478007397389522#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
+      <node id="3341569134398581946" at="50,0,53,0" concept="5" trace="sideTransformHintSubstituteActionsBuilder_Precondition_StringLiteral_3341569134398581946#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
+      <node id="6268478007397389522" at="77,0,80,0" concept="5" trace="sideTransformHintSubstituteActionsBuilder_Precondition_StringLiteral_6268478007397389522#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
       <node id="6268478007400211571" at="88,0,91,0" concept="2" trace="getMatchingText#(Ljava/lang/String;)Ljava/lang/String;" />
       <node id="6268478007400211571" at="91,0,94,0" concept="2" trace="getVisibleMatchingText#(Ljava/lang/String;)Ljava/lang/String;" />
       <node id="6268478007405977401" at="112,0,115,0" concept="2" trace="getMatchingText#(Ljava/lang/String;)Ljava/lang/String;" />
@@ -59,10 +59,10 @@
       <node id="6268478007400211571" at="81,93,101,7" concept="1" />
       <node id="6268478007405977401" at="105,93,125,7" concept="0" />
       <node id="6268478007405977401" at="105,93,125,7" concept="1" />
-      <node id="6268478007400211571" at="80,0,104,0" concept="5" trace="sideTransform_ActionsFactory_GlobalIntegerLiteral_6268478007400211571#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformActionsBuilderContext;)Ljava/util/List;" />
-      <node id="6268478007405977401" at="104,0,128,0" concept="5" trace="sideTransform_ActionsFactory_GlobalIntegerLiteral_6268478007405977401#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformActionsBuilderContext;)Ljava/util/List;" />
-      <scope id="3341569134398581947" at="50,211,51,205" />
-      <scope id="6268478007397389523" at="77,211,78,205" />
+      <node id="6268478007400211571" at="80,0,104,0" concept="5" trace="sideTransform_ActionsFactory_IntegerLiteral_6268478007400211571#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformActionsBuilderContext;)Ljava/util/List;" />
+      <node id="6268478007405977401" at="104,0,128,0" concept="5" trace="sideTransform_ActionsFactory_IntegerLiteral_6268478007405977401#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformActionsBuilderContext;)Ljava/util/List;" />
+      <scope id="3341569134398581947" at="50,205,51,205" />
+      <scope id="6268478007397389523" at="77,205,78,205" />
       <scope id="6268478007400211571" at="88,53,89,20" />
       <scope id="6268478007400211571" at="91,60,92,40" />
       <scope id="6268478007405977401" at="112,53,113,20" />
@@ -121,10 +121,10 @@
       <scope id="6268478007405977401" at="118,0,125,0" />
       <scope id="6268478007400211571" at="81,93,101,7" />
       <scope id="6268478007405977401" at="105,93,125,7" />
-      <scope id="6268478007400211571" at="80,203,102,18">
+      <scope id="6268478007400211571" at="80,197,102,18">
         <var name="result" id="6268478007400211571" />
       </scope>
-      <scope id="6268478007405977401" at="104,203,126,18">
+      <scope id="6268478007405977401" at="104,197,126,18">
         <var name="result" id="6268478007405977401" />
       </scope>
       <scope id="6268478007400211571" at="80,0,104,0">

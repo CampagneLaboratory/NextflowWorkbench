@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.campagnelab.workflow" uuid="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" version="1">
+<language namespace="org.campagnelab.workflow" uuid="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" version="2">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -52,7 +52,7 @@
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
         <language id="d4767029-894b-41e1-b76e-850baa598e5b" fqName="org.campagnelab.util.files" version="0" />
-        <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="0" />
+        <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="2" />
       </languageVersions>
       <mapping-priorities />
     </generator>
@@ -130,7 +130,7 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
     <language id="d4767029-894b-41e1-b76e-850baa598e5b" fqName="org.campagnelab.util.files" version="0" />
-    <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="0" />
+    <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="2" />
   </languageVersions>
   <extendedLanguages>
     <extendedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</extendedLanguage>

@@ -55,10 +55,10 @@
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
         <child id="4777210630426255005" name="executor" index="2LyH5s" />
       </concept>
-      <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.GlobalStringExpression" flags="ng" index="2$PLvr">
+      <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.StringInitializer" flags="ng" index="2$PLvr">
         <child id="3855674281012526308" name="string" index="2$RAuK" />
       </concept>
-      <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.GlobalStringLiteral" flags="ng" index="2$RDGe">
+      <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.StringLiteral" flags="ng" index="2$RDGe">
         <property id="3855674281012527195" name="value" index="2$RDGf" />
       </concept>
       <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
@@ -83,8 +83,8 @@
         <child id="4347565441062632046" name="file" index="346dRl" />
       </concept>
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
-      <concept id="8369613327464053589" name="org.campagnelab.workflow.structure.StringChannel" flags="ng" index="1uY6QJ">
-        <child id="8369613327464373545" name="string" index="1uLkJj" />
+      <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
+        <child id="7391172440887133304" name="type" index="2ybFLk" />
       </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
@@ -140,15 +140,14 @@
           <property role="19SUeA" value="echo " />
         </node>
         <node concept="3YE7tV" id="3LlDVJUaZzJ" role="19SJt6">
-          <ref role="3YE7sm" node="3LlDVJUaZz1" resolve="stringToEcho" />
+          <ref role="3YE7sm" node="2bVBkcP9XXP" resolve="stringToEcho" />
         </node>
         <node concept="19SUe$" id="3LlDVJUaZzK" role="19SJt6" />
       </node>
     </node>
-    <node concept="1uY6QJ" id="3LlDVJUaZz0" role="2ulM7n">
-      <node concept="16pbKc" id="3LlDVJUaZz1" role="1uLkJj">
-        <property role="TrG5h" value="stringToEcho" />
-      </node>
+    <node concept="1uLvKC" id="2bVBkcP9XXP" role="2ulM7n">
+      <property role="TrG5h" value="stringToEcho" />
+      <node concept="16pbKc" id="2bVBkcP9XXQ" role="2ybFLk" />
     </node>
   </node>
   <node concept="2$rMIF" id="3LlDVJUaZ$b">
