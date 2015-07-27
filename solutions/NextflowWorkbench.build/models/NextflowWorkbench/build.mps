@@ -168,10 +168,10 @@
       <property role="TrG5h" value="mps_home" />
     </node>
     <node concept="398rNT" id="4oJiZHqUhiI" role="1l3spd">
-      <property role="TrG5h" value="mps-richtext.location" />
+      <property role="TrG5h" value="mps-sl-all.location" />
       <node concept="55IIr" id="4oJiZHqW0Ad" role="398pKh">
-        <node concept="2Ry0Ak" id="4oJiZHqW0BF" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
+        <node concept="2Ry0Ak" id="6HMVtk2BbO6" role="iGT6I">
+          <property role="2Ry0Am" value="itemis" />
         </node>
       </node>
     </node>
@@ -220,7 +220,7 @@
     <node concept="2sgV4H" id="4oJiZHqURiI" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
       <node concept="398BVA" id="4oJiZHqURjj" role="2JcizS">
-        <ref role="398BVh" node="4oJiZHqUhiI" resolve="mps-richtext.location" />
+        <ref role="398BVh" node="4oJiZHqUhiI" resolve="mps-sl-all.location" />
       </node>
     </node>
     <node concept="2sgV4H" id="_lyg7ThFgU" role="1l3spa">
@@ -283,12 +283,6 @@
           <node concept="3ygNvl" id="1PXjV8YM$t2" role="39821P">
             <ref role="3ygNvj" to="90a9:6Y0V2RJk5G9" resolve="de.itemis.mps.selection" />
             <node concept="3qWCbU" id="1PXjV8YM$t3" role="1juEy9">
-              <property role="3qWCbO" value="**/*.jar" />
-            </node>
-          </node>
-          <node concept="3ygNvl" id="1PXjV8YM$zc" role="39821P">
-            <ref role="3ygNvj" to="90a9:31bAEZ0ssNL" resolve="mps-apache-commons" />
-            <node concept="3qWCbU" id="1PXjV8YM$zd" role="1juEy9">
               <property role="3qWCbO" value="**/*.jar" />
             </node>
           </node>
@@ -562,6 +556,12 @@
           <node concept="3bR9La" id="1B2iUhm3c5a" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="1B2iUhm3bS8" resolve="org.campagnelab.util.files" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6HMVtk2BbUu" role="3bR37C">
+          <node concept="3bR9La" id="6HMVtk2BbUv" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
       </node>
