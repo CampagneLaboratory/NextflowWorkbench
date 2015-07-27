@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${NEXTFLOW_PATH}/mps-all-campagne/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" folder="" />
       <modulePath path="${org.campagnelab.goby.workbench.home}/solutions/NYoSh.build-plugins/NYoSh.build-plugins.msd" folder="" />
       <modulePath path="${org.campagnelab.xchart.home}/solutions/XChart.build0/XChart.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/org.campagnelab.NextflowWorkbench.devkit" folder="" />
@@ -13,7 +14,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.workflow.run/org.campagnelab.workflow.run.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/workflow/workflow.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/../mps-all-campagne/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" folder="" />
     </projectModules>
   </component>
 </project>

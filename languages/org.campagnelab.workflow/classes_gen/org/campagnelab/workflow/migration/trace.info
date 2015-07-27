@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root>
+    <file name="MigrationDescriptorImpl.java">
+      <unit at="11,0,17,0" name="org.campagnelab.workflow.migration.MigrationDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:8c069579-e909-448e-bf9a-3d322f6e1f22(org.campagnelab.workflow.migration)/7391172440894582240">
+    <file name="MigrateToProcessInputOutput.java">
+      <node id="7391172440894582240" at="12,30,13,51" concept="1" />
+      <node id="7391172440894582240" at="15,35,16,16" concept="1" />
+      <node id="7391172440894582240" at="18,51,19,145" concept="1" />
+      <node id="7391172440894582240" at="12,0,15,0" concept="0" trace="getCaption#()Ljava/lang/String;" />
+      <node id="7391172440894582240" at="15,0,18,0" concept="0" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7391172440894582240" at="18,0,21,0" concept="0" trace="getDescriptor#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <scope id="7391172440894582240" at="12,30,13,51" />
+      <scope id="7391172440894582240" at="15,35,16,16" />
+      <scope id="7391172440894582240" at="18,51,19,145" />
+      <scope id="7391172440894582240" at="12,0,15,0" />
+      <scope id="7391172440894582240" at="15,0,18,0">
+        <var name="m" id="7391172440894582240" />
+      </scope>
+      <scope id="7391172440894582240" at="18,0,21,0" />
+      <unit id="7391172440894582240" at="11,0,22,0" name="org.campagnelab.workflow.migration.MigrateToProcessInputOutput" />
+    </file>
+  </root>
+  <root nodeRef="r:8c069579-e909-448e-bf9a-3d322f6e1f22(org.campagnelab.workflow.migration)/7391172440894817148">
+    <file name="DummyMigration.java">
+      <node id="7391172440894817148" at="12,30,13,46" concept="1" />
+      <node id="7391172440894817148" at="15,35,16,16" concept="1" />
+      <node id="7391172440894817148" at="18,51,19,145" concept="1" />
+      <node id="7391172440894817148" at="12,0,15,0" concept="0" trace="getCaption#()Ljava/lang/String;" />
+      <node id="7391172440894817148" at="15,0,18,0" concept="0" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7391172440894817148" at="18,0,21,0" concept="0" trace="getDescriptor#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <scope id="7391172440894817148" at="12,30,13,46" />
+      <scope id="7391172440894817148" at="15,35,16,16" />
+      <scope id="7391172440894817148" at="18,51,19,145" />
+      <scope id="7391172440894817148" at="12,0,15,0" />
+      <scope id="7391172440894817148" at="15,0,18,0">
+        <var name="m" id="7391172440894817148" />
+      </scope>
+      <scope id="7391172440894817148" at="18,0,21,0" />
+      <unit id="7391172440894817148" at="11,0,22,0" name="org.campagnelab.workflow.migration.DummyMigration" />
+    </file>
+  </root>
+</debug-info>
+
