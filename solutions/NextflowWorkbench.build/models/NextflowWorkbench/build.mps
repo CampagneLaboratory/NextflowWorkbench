@@ -168,9 +168,9 @@
       <property role="TrG5h" value="mps_home" />
     </node>
     <node concept="398rNT" id="4oJiZHqUhiI" role="1l3spd">
-      <property role="TrG5h" value="mps-sl-all.location" />
+      <property role="TrG5h" value="mps-richtext.location" />
       <node concept="55IIr" id="4oJiZHqW0Ad" role="398pKh">
-        <node concept="2Ry0Ak" id="1Bysfy35vsl" role="iGT6I">
+        <node concept="2Ry0Ak" id="4oJiZHqW0BF" role="iGT6I">
           <property role="2Ry0Am" value=".." />
         </node>
       </node>
@@ -220,7 +220,7 @@
     <node concept="2sgV4H" id="4oJiZHqURiI" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
       <node concept="398BVA" id="4oJiZHqURjj" role="2JcizS">
-        <ref role="398BVh" node="4oJiZHqUhiI" resolve="mps-sl-all.location" />
+        <ref role="398BVh" node="4oJiZHqUhiI" resolve="mps-richtext.location" />
       </node>
     </node>
     <node concept="2sgV4H" id="_lyg7ThFgU" role="1l3spa">
@@ -336,9 +336,6 @@
       </node>
       <node concept="m$_yC" id="_lyg7TiUSg" role="m$_yJ">
         <ref role="m$_y1" to="ael0:5KK2jWpWo0m" resolve="org.campagnelab.mps.UI" />
-      </node>
-      <node concept="m$_yC" id="_lyg7TkoHz" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
       </node>
       <node concept="3_J27D" id="4oJiZHqTePR" role="m_cZH">
         <node concept="3Mxwew" id="4oJiZHqTePS" role="3MwsjC">
@@ -558,8 +555,8 @@
             <ref role="3bR37D" node="1B2iUhm3bS8" resolve="org.campagnelab.util.files" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6HMVtk2BbUu" role="3bR37C">
-          <node concept="3bR9La" id="6HMVtk2BbUv" role="1SiIV1">
+        <node concept="1SiIV0" id="2IuZDKtxyco" role="3bR37C">
+          <node concept="3bR9La" id="2IuZDKtxycp" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
