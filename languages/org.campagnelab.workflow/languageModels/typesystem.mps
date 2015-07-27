@@ -14,10 +14,10 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -1665,10 +1665,18 @@
                 </node>
               </node>
             </node>
-            <node concept="mw_s8" id="vHEKaXckfB" role="1ZfhKB">
-              <node concept="1Z2H0r" id="vHEKaXckf_" role="mwGJk">
-                <node concept="2X3wrD" id="6qiI2N4vvjX" role="1Z2MuG">
-                  <ref role="2X3Bk0" node="7mWvTuli1c9" resolve="channelProcessOutput" />
+            <node concept="mw_s8" id="5FDPSDjP0rK" role="1ZfhKB">
+              <node concept="2c44tf" id="5FDPSDjP0rG" role="mwGJk">
+                <node concept="_YKpA" id="5FDPSDjP0sr" role="2c44tc">
+                  <node concept="33vP2l" id="5FDPSDjP0st" role="_ZDj9">
+                    <node concept="2c44te" id="5FDPSDjP0sL" role="lGtFl">
+                      <node concept="1Z2H0r" id="vHEKaXckf_" role="2c44t1">
+                        <node concept="2X3wrD" id="6qiI2N4vvjX" role="1Z2MuG">
+                          <ref role="2X3Bk0" node="7mWvTuli1c9" resolve="channelProcessOutput" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -2468,7 +2476,7 @@
               <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
             </node>
             <node concept="Xl_RD" id="3JbPZMXXudN" role="2MkJ7o">
-              <property role="Xl_RC" value="This function must be being used on a list channel" />
+              <property role="Xl_RC" value="This function can only be used on a list channel" />
             </node>
           </node>
         </node>
@@ -2488,14 +2496,6 @@
           <node concept="35c_gC" id="3JbPZMXXuaX" role="3uHU7w">
             <ref role="35c_gD" to="iowz:3v6eDgz_YY5" resolve="List" />
           </node>
-        </node>
-      </node>
-      <node concept="a7r0C" id="2rkU84OU2qQ" role="3cqZAp">
-        <node concept="Xl_RD" id="2rkU84OU2rn" role="a7wSD">
-          <property role="Xl_RC" value="Every item that is a list is flattened, such that each single entry is emitted seperately" />
-        </node>
-        <node concept="1YBJjd" id="2rkU84OU4FU" role="2OEOjV">
-          <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
         </node>
       </node>
     </node>
@@ -3153,6 +3153,7 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="5FDPSDjExhC" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="7b1yRZVKXFF" role="1YuTPh">
       <property role="TrG5h" value="processRef" />
