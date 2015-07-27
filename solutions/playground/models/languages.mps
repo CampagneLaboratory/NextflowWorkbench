@@ -2,14 +2,14 @@
 <model ref="r:a7cc3d8b-e817-41cb-8059-fcdad8161bef(languages)">
   <persistence version="9" />
   <languages>
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="-1" />
     <use id="316e8289-cb69-4927-8bfe-edde5cd32037" name="org.campagnelab.workflow.languages" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="2" />
   </languages>
   <imports>
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -117,21 +117,18 @@
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
         <child id="4777210630426255005" name="executor" index="2LyH5s" />
       </concept>
-      <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.GlobalStringExpression" flags="ng" index="2$PLvr">
+      <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.StringInitializer" flags="ng" index="2$PLvr">
         <child id="3855674281012526308" name="string" index="2$RAuK" />
       </concept>
-      <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.GlobalStringLiteral" flags="ng" index="2$RDGe">
+      <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.StringLiteral" flags="ng" index="2$RDGe">
         <property id="3855674281012527195" name="value" index="2$RDGf" />
       </concept>
       <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
-      <concept id="8369613327464057510" name="org.campagnelab.workflow.structure.FileChannel" flags="ng" index="1uY1Ls">
-        <child id="8369613327464057511" name="file" index="1uY1Lt" />
-      </concept>
-      <concept id="8369613327464053589" name="org.campagnelab.workflow.structure.StringChannel" flags="ng" index="1uY6QJ">
-        <child id="8369613327464373545" name="string" index="1uLkJj" />
+      <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
+        <child id="7391172440887133304" name="type" index="2ybFLk" />
       </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
@@ -160,26 +157,24 @@
           <property role="19SUeA" value="git clone " />
         </node>
         <node concept="3YE7tV" id="rix53J9waF" role="19SJt6">
-          <ref role="3YE7sm" node="rix53J9vYJ" resolve="repoURL" />
+          <ref role="3YE7sm" node="6qiI2N5urrh" resolve="repoURL" />
         </node>
         <node concept="19SUe$" id="rix53J9wbp" role="19SJt6" />
         <node concept="3YE7tV" id="rix53J9wbo" role="19SJt6">
-          <ref role="3YE7sm" node="rix53J9w2$" resolve="repoDir" />
+          <ref role="3YE7sm" node="6qiI2N5urvJ" resolve="repoDir" />
         </node>
         <node concept="19SUe$" id="rix53J9wbn" role="19SJt6">
           <property role="19SUeA" value=" " />
         </node>
       </node>
     </node>
-    <node concept="1uY6QJ" id="rix53J9vYG" role="2ulM7n">
-      <node concept="16pbKc" id="rix53J9vYJ" role="1uLkJj">
-        <property role="TrG5h" value="repoURL" />
-      </node>
+    <node concept="1uLvKC" id="6qiI2N5urrh" role="2ulM7n">
+      <property role="TrG5h" value="repoURL" />
+      <node concept="16pbKc" id="6qiI2N5urri" role="2ybFLk" />
     </node>
-    <node concept="1uY1Ls" id="rix53J9w2z" role="2ulM79">
-      <node concept="16pRw0" id="rix53J9w2$" role="1uY1Lt">
-        <property role="TrG5h" value="repoDir" />
-      </node>
+    <node concept="1uLvKC" id="6qiI2N5urvJ" role="2ulM79">
+      <property role="TrG5h" value="repoDir" />
+      <node concept="16pRw0" id="6qiI2N5urvK" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="4GDrEajU_mv">
@@ -198,20 +193,18 @@
           <property role="19SUeA" value="print " />
         </node>
         <node concept="3YE7tV" id="rix53J9qrP" role="19SJt6">
-          <ref role="3YE7sm" node="rix53J9w7d" resolve="repo" />
+          <ref role="3YE7sm" node="6qiI2N5urAM" resolve="repo" />
         </node>
         <node concept="19SUe$" id="rix53J9qrQ" role="19SJt6" />
       </node>
     </node>
-    <node concept="1uY1Ls" id="rix53J9qoY" role="2ulM79">
-      <node concept="16pRw0" id="rix53J9qoZ" role="1uY1Lt">
-        <property role="TrG5h" value="output.txt" />
-      </node>
+    <node concept="1uLvKC" id="6qiI2N5urDN" role="2ulM79">
+      <property role="TrG5h" value="output.txt" />
+      <node concept="16pRw0" id="6qiI2N5urDO" role="2ybFLk" />
     </node>
-    <node concept="1uY1Ls" id="rix53J9w7c" role="2ulM7n">
-      <node concept="16pRw0" id="rix53J9w7d" role="1uY1Lt">
-        <property role="TrG5h" value="repo" />
-      </node>
+    <node concept="1uLvKC" id="6qiI2N5urAM" role="2ulM7n">
+      <property role="TrG5h" value="repo" />
+      <node concept="16pRw0" id="6qiI2N5urAN" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="4GDrEajULn6">

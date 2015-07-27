@@ -43,7 +43,6 @@
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_GlobalStringLiteralTuple_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_GlobalStringLiteral_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_GlobalTupleExpression_InferenceRule" />
-    <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_GlobalTupleListExpression_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_GlobalTupleLiteral_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_InputChannel_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_IntegerChannel_InferenceRule" />
@@ -51,6 +50,7 @@
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_ListChannel_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_List_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_OutputChannel_InferenceRule" />
+    <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_ProcessInputOutput_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_RangeOfCharLiterals_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_RangeOfIntegerLiterals_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_ReportFunction_InferenceRule" />
@@ -60,22 +60,26 @@
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_ToList_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_ToSortedList_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_TupleChannel_InferenceRule" />
-    <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_TupleListChannel_InferenceRule" />
-    <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_TupleList_InferenceRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.typeof_Tuple_InferenceRule" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.BaseHelginsDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.typesystem.check_Flatten_NonTypesystemRule" file="check_Flatten_NonTypesystemRule.java">
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.NodeMessageTarget" />
+    <classNode dependClassName="jetbrains.mps.lang.pattern.GeneratedMatchingPattern" />
+    <classNode dependClassName="jetbrains.mps.lang.pattern.IMatchingPattern" />
+    <classNode dependClassName="jetbrains.mps.lang.pattern.runtime.PatternUtil" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeChecker" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="jetbrains.mps.util.IterableUtil" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
@@ -618,18 +622,6 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
-  <dependency className="org.campagnelab.workflow.typesystem.typeof_GlobalTupleListExpression_InferenceRule" file="typeof_GlobalTupleListExpression_InferenceRule.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
-    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
-    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
-    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
-    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
-  </dependency>
   <dependency className="org.campagnelab.workflow.typesystem.typeof_GlobalTupleLiteral_InferenceRule" file="typeof_GlobalTupleLiteral_InferenceRule.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
@@ -693,7 +685,10 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
   <dependency className="org.campagnelab.workflow.typesystem.typeof_List_InferenceRule" file="typeof_List_InferenceRule.java">
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.HUtil" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
@@ -712,6 +707,18 @@
     <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.OutChannelContainer_Behavior" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.typesystem.typeof_ProcessInputOutput_InferenceRule" file="typeof_ProcessInputOutput_InferenceRule.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
@@ -833,30 +840,6 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
   <dependency className="org.campagnelab.workflow.typesystem.typeof_TupleChannel_InferenceRule" file="typeof_TupleChannel_InferenceRule.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
-    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
-    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
-    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
-    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
-  </dependency>
-  <dependency className="org.campagnelab.workflow.typesystem.typeof_TupleListChannel_InferenceRule" file="typeof_TupleListChannel_InferenceRule.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
-    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
-    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
-    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
-    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
-  </dependency>
-  <dependency className="org.campagnelab.workflow.typesystem.typeof_TupleList_InferenceRule" file="typeof_TupleList_InferenceRule.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />

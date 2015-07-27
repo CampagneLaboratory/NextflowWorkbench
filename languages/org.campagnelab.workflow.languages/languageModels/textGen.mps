@@ -6,8 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
     <import index="x2t3" ref="r:8b21a7be-f3e0-446c-818d-d242846e3ce7(org.campagnelab.workflow.languages.structure)" implicit="true" />
+    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -89,7 +89,6 @@
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
-      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
@@ -188,14 +187,11 @@
       <node concept="3clFbS" id="2h4swG_Gzww" role="2VODD2">
         <node concept="lc7rE" id="2h4swG_Gzxv" role="3cqZAp">
           <node concept="l9hG8" id="2h4swG_G$yH" role="lcghm">
-            <node concept="2OqwBi" id="2h4swG_GAD4" role="lb14g">
-              <node concept="2OqwBi" id="2h4swG_G$_Q" role="2Oq$k0">
-                <node concept="117lpO" id="2h4swG_G$zr" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="2h4swG_G_jh" role="2OqNvi">
-                  <ref role="3TtcxE" to="iowz:6tX5nBTaziN" />
-                </node>
+            <node concept="2OqwBi" id="2h4swG_G$_Q" role="lb14g">
+              <node concept="117lpO" id="2h4swG_G$zr" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6qiI2N576Jn" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:6tX5nBTaziN" />
               </node>
-              <node concept="1uHKPH" id="2h4swG_GBZH" role="2OqNvi" />
             </node>
           </node>
         </node>
