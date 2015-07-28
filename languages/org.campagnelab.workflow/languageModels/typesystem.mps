@@ -77,7 +77,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -2608,7 +2608,7 @@
                             <node concept="37vLTw" id="6qiI2N4APFF" role="2Oq$k0">
                               <ref role="3cqZAo" node="6qiI2N4APvI" resolve="it" />
                             </node>
-                            <node concept="2qgKlT" id="6qiI2N4AQ8E" role="2OqNvi">
+                            <node concept="2qgKlT" id="3aOvEIsH7S4" role="2OqNvi">
                               <ref role="37wK5l" to="mqvz:759DxHIq7nn" resolve="getOutput" />
                             </node>
                           </node>
@@ -2658,23 +2658,23 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="2BFWbNo1gz3" role="37wK5m">
-                <node concept="2qgKlT" id="vYJNJ3ACP1" role="2OqNvi">
-                  <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
-                </node>
-                <node concept="2OqwBi" id="vYJNJ3AAiJ" role="2Oq$k0">
-                  <node concept="1PxgMI" id="vYJNJ3A5hV" role="2Oq$k0">
+              <node concept="2OqwBi" id="3aOvEIsepHz" role="37wK5m">
+                <node concept="2OqwBi" id="3aOvEIseoV_" role="2Oq$k0">
+                  <node concept="1PxgMI" id="3aOvEIseoCA" role="2Oq$k0">
                     <ref role="1PxNhF" to="tp2q:gK_YKtE" resolve="ListType" />
-                    <node concept="2OqwBi" id="6qiI2N4ksq9" role="1PxMeX">
+                    <node concept="2OqwBi" id="3aOvEIs9hTT" role="1PxMeX">
                       <node concept="1YBJjd" id="6qiI2N4ks8t" role="2Oq$k0">
                         <ref role="1YBMHb" node="4TfcfnmaUJ5" resolve="inputChannel" />
                       </node>
-                      <node concept="3JvlWi" id="2BFWbNo1glJ" role="2OqNvi" />
+                      <node concept="3JvlWi" id="3aOvEIseorf" role="2OqNvi" />
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="vYJNJ3AC_e" role="2OqNvi">
+                  <node concept="3TrEf2" id="3aOvEIsepnO" role="2OqNvi">
                     <ref role="3Tt5mk" to="tp2q:gK_ZDn5" />
                   </node>
+                </node>
+                <node concept="2qgKlT" id="3aOvEIseqdE" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
                 </node>
               </node>
             </node>
@@ -3540,38 +3540,150 @@
     <property role="TrG5h" value="typeof_ToTuple" />
     <property role="3GE5qa" value="channelFunctions" />
     <node concept="3clFbS" id="6$PrPkYFQlV" role="18ibNy">
-      <node concept="3cpWs8" id="2BFWbNnzbgC" role="3cqZAp">
-        <node concept="3cpWsn" id="2BFWbNnzbgF" role="3cpWs9">
-          <property role="TrG5h" value="prevNode" />
-          <node concept="3Tqbb2" id="2BFWbNnzbgA" role="1tU5fm" />
-          <node concept="2OqwBi" id="2BFWbNnzc0V" role="33vP2m">
-            <node concept="1YBJjd" id="2BFWbNnzbhz" role="2Oq$k0">
+      <node concept="3cpWs8" id="3aOvEIrYSfK" role="3cqZAp">
+        <node concept="3cpWsn" id="3aOvEIrYSfN" role="3cpWs9">
+          <property role="TrG5h" value="inputChannel" />
+          <node concept="3Tqbb2" id="3aOvEIrYSfI" role="1tU5fm">
+            <ref role="ehGHo" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
+          </node>
+          <node concept="2OqwBi" id="3aOvEIrYSid" role="33vP2m">
+            <node concept="1YBJjd" id="3aOvEIrYSgl" role="2Oq$k0">
               <ref role="1YBMHb" node="6$PrPkYFQlX" resolve="toTuple" />
             </node>
-            <node concept="2qgKlT" id="2BFWbNnzcaF" role="2OqNvi">
-              <ref role="37wK5l" to="mqvz:7mWvTummKDC" resolve="getPreviousNode" />
+            <node concept="2Xjw5R" id="3aOvEIrYS$x" role="2OqNvi">
+              <node concept="1xMEDy" id="3aOvEIrYS$z" role="1xVPHs">
+                <node concept="chp4Y" id="3aOvEIrYS$X" role="ri$Ld">
+                  <ref role="cht4Q" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="1Z5TYs" id="6$PrPkYFQHf" role="3cqZAp">
-        <node concept="mw_s8" id="6$PrPkYFQHF" role="1ZfhKB">
-          <node concept="2c44tf" id="6$PrPkYFQHB" role="mwGJk">
-            <node concept="1h3xP" id="6$PrPkYXbi4" role="2c44tc">
-              <node concept="33vP2l" id="6$PrPkYXbi6" role="1nAwDi" />
+      <node concept="3cpWs8" id="3aOvEIrYSfb" role="3cqZAp">
+        <node concept="3cpWsn" id="3aOvEIrYSfe" role="3cpWs9">
+          <property role="TrG5h" value="processInput" />
+          <node concept="3Tqbb2" id="3aOvEIrYSfa" role="1tU5fm">
+            <ref role="ehGHo" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
+          </node>
+          <node concept="2OqwBi" id="3aOvEIrYSBq" role="33vP2m">
+            <node concept="37vLTw" id="3aOvEIrYS_y" role="2Oq$k0">
+              <ref role="3cqZAo" node="3aOvEIrYSfN" resolve="inputChannel" />
+            </node>
+            <node concept="2qgKlT" id="3aOvEIrYSKj" role="2OqNvi">
+              <ref role="37wK5l" to="mqvz:6qiI2N4uaAF" resolve="getProcessInput" />
             </node>
           </node>
         </node>
-        <node concept="mw_s8" id="6$PrPkYFQHi" role="1ZfhK$">
-          <node concept="1Z2H0r" id="6$PrPkYFQFN" role="mwGJk">
-            <node concept="1YBJjd" id="6$PrPkYFQGi" role="1Z2MuG">
+      </node>
+      <node concept="1Z5TYs" id="3aOvEIrYSQ0" role="3cqZAp">
+        <node concept="mw_s8" id="3aOvEIrYSQ3" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3aOvEIrYSN8" role="mwGJk">
+            <node concept="1YBJjd" id="3aOvEIrYSP5" role="1Z2MuG">
               <ref role="1YBMHb" node="6$PrPkYFQlX" resolve="toTuple" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3aOvEIso_jt" role="1ZfhKB">
+          <node concept="2c44tf" id="3aOvEIso_jp" role="mwGJk">
+            <node concept="_YKpA" id="3aOvEIso_jK" role="2c44tc">
+              <node concept="33vP2l" id="3aOvEIso_jM" role="_ZDj9">
+                <node concept="2c44te" id="3aOvEIso_k6" role="lGtFl">
+                  <node concept="1Z2H0r" id="3aOvEIso_kg" role="2c44t1">
+                    <node concept="37vLTw" id="3aOvEIso_kw" role="1Z2MuG">
+                      <ref role="3cqZAo" node="3aOvEIrYSfe" resolve="processInput" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="6$PrPkYFQlX" role="1YuTPh">
+      <property role="TrG5h" value="toTuple" />
+      <ref role="1YaFvo" to="iowz:6$PrPkYEpK2" resolve="ToTuple" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3aOvEIsyKGL">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="check_ToTuple" />
+    <node concept="3clFbS" id="3aOvEIsyKGM" role="18ibNy">
+      <node concept="3cpWs8" id="3aOvEIsyKGY" role="3cqZAp">
+        <node concept="3cpWsn" id="3aOvEIsyKH1" role="3cpWs9">
+          <property role="TrG5h" value="inputChannel" />
+          <node concept="3Tqbb2" id="3aOvEIsyKGX" role="1tU5fm">
+            <ref role="ehGHo" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
+          </node>
+          <node concept="2OqwBi" id="3aOvEIsyKJn" role="33vP2m">
+            <node concept="1YBJjd" id="3aOvEIsyKHv" role="2Oq$k0">
+              <ref role="1YBMHb" node="3aOvEIsyKGO" resolve="toTuple" />
+            </node>
+            <node concept="2Xjw5R" id="3aOvEIsyL1F" role="2OqNvi">
+              <node concept="1xMEDy" id="3aOvEIsyL1H" role="1xVPHs">
+                <node concept="chp4Y" id="3aOvEIsyL22" role="ri$Ld">
+                  <ref role="cht4Q" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="3aOvEIsyLNR" role="3cqZAp">
+        <node concept="3cpWsn" id="3aOvEIsyLNU" role="3cpWs9">
+          <property role="TrG5h" value="processInput" />
+          <node concept="3Tqbb2" id="3aOvEIsyLNP" role="1tU5fm">
+            <ref role="ehGHo" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
+          </node>
+          <node concept="2OqwBi" id="3aOvEIsyLQ_" role="33vP2m">
+            <node concept="37vLTw" id="3aOvEIsyLOH" role="2Oq$k0">
+              <ref role="3cqZAo" node="3aOvEIsyKH1" resolve="inputChannel" />
+            </node>
+            <node concept="2qgKlT" id="3aOvEIsyLZu" role="2OqNvi">
+              <ref role="37wK5l" to="mqvz:6qiI2N4uaAF" resolve="getProcessInput" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="3aOvEIsyM2b" role="3cqZAp">
+        <node concept="3clFbS" id="3aOvEIsyM2d" role="3clFbx">
+          <node concept="2MkqsV" id="3aOvEIsyNxL" role="3cqZAp">
+            <node concept="1YBJjd" id="3aOvEIsyN$L" role="2OEOjV">
+              <ref role="1YBMHb" node="3aOvEIsyKGO" resolve="toTuple" />
+            </node>
+            <node concept="Xl_RD" id="3aOvEIsyNy0" role="2MkJ7o">
+              <property role="Xl_RC" value="This function cannot be called when the process input is not a tuple" />
+            </node>
+          </node>
+          <node concept="2MkqsV" id="3aOvEIsyNBE" role="3cqZAp">
+            <node concept="37vLTw" id="3aOvEIsyNCb" role="2OEOjV">
+              <ref role="3cqZAo" node="3aOvEIsyKH1" resolve="inputChannel" />
+            </node>
+            <node concept="Xl_RD" id="3aOvEIsyNC0" role="2MkJ7o">
+              <property role="Xl_RC" value="This function cannot be called when the process input is not a tuple" />
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="3aOvEIsyNvn" role="3clFbw">
+          <node concept="35c_gC" id="3aOvEIsyNvY" role="3uHU7w">
+            <ref role="35c_gD" to="iowz:3v6eDgzA3wg" resolve="Tuple" />
+          </node>
+          <node concept="2OqwBi" id="3aOvEIsyN2p" role="3uHU7B">
+            <node concept="2OqwBi" id="3aOvEIsyM5H" role="2Oq$k0">
+              <node concept="37vLTw" id="3aOvEIsyM3T" role="2Oq$k0">
+                <ref role="3cqZAo" node="3aOvEIsyLNU" resolve="processInput" />
+              </node>
+              <node concept="3TrEf2" id="3aOvEIsyMQ2" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:6qiI2N4J0hS" />
+              </node>
+            </node>
+            <node concept="2yIwOk" id="3aOvEIsyNkJ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3aOvEIsyKGO" role="1YuTPh">
       <property role="TrG5h" value="toTuple" />
       <ref role="1YaFvo" to="iowz:6$PrPkYEpK2" resolve="ToTuple" />
     </node>

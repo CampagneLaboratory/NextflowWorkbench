@@ -52,7 +52,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -199,6 +199,7 @@
       <concept id="6588488528864881603" name="org.campagnelab.workflow.structure.ReportParameter" flags="ng" index="2UPiyF" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
+      <concept id="7581087959662304258" name="org.campagnelab.workflow.structure.ToTuple" flags="ng" index="1nBfdn" />
       <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
@@ -987,6 +988,7 @@
       <ref role="2$rEH4" node="PffOQSmJ$r" resolve="inputRefTestWithTuple" />
       <node concept="1uYdA0" id="47MGIsN_Ey5" role="1uLvPH">
         <ref role="1uK_4X" node="47MGIsN_Ey$" resolve="tupleChannel" />
+        <node concept="1nBfdn" id="3aOvEIsMeOk" role="1ylr64" />
       </node>
     </node>
     <node concept="1CVceo" id="47MGIsN_Ey$" role="2$L6iY">
