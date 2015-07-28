@@ -31,11 +31,14 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="2329585396107819892" name="org.campagnelab.workflow.structure.NumCPUs" flags="ng" index="oDubB">
-        <property id="2329585396107820961" name="num" index="oDuoM" />
-      </concept>
       <concept id="2329585396108534973" name="org.campagnelab.workflow.structure.Queue" flags="ng" index="oEfOI">
         <child id="6992028756512829978" name="queueElement" index="2MiXW1" />
+      </concept>
+      <concept id="2329585396108535677" name="org.campagnelab.workflow.structure.ClusterOptions" flags="ng" index="oEfVI">
+        <property id="2329585396108535784" name="clusterOptions" index="oEfTV" />
+      </concept>
+      <concept id="2329585396108535463" name="org.campagnelab.workflow.structure.Penv" flags="ng" index="oEfWO">
+        <property id="2329585396108535566" name="penv" index="oEfUt" />
       </concept>
       <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.NextflowConfig" flags="ng" index="pkhaZ">
         <child id="2329585396109102069" name="executor" index="pkh9A" />
@@ -103,8 +106,16 @@
   <node concept="pkhaZ" id="5OPtsPBKOO">
     <property role="TrG5h" value="nextflow.config" />
     <node concept="2LyH2v" id="5OPtsPBKOQ" role="pkh9A" />
-    <node concept="oDubB" id="5OPtsPKTW1" role="2xLS5a">
-      <property role="oDuoM" value="4" />
+    <node concept="oEfOI" id="1d37CfppYSd" role="2xLS5a">
+      <node concept="2MiXSP" id="1d37CfppYSf" role="2MiXW1">
+        <property role="2MiXSO" value="rascals.q" />
+      </node>
+    </node>
+    <node concept="oEfWO" id="1d37CfppZ2K" role="2xLS5a">
+      <property role="oEfUt" value="smp" />
+    </node>
+    <node concept="oEfVI" id="1d37CfppVBF" role="2xLS5a">
+      <property role="oEfTV" value="-l h_vmem=2G  -pe smp 4" />
     </node>
   </node>
   <node concept="OLtiu" id="3LlDVJRPAWA">
@@ -116,7 +127,7 @@
       <property role="OLqNc" value="gobyweb" />
     </node>
     <node concept="RgYyx" id="3LlDVJRPAWD" role="RgYyw">
-      <property role="OLqNc" value="/home/gobyweb/nextflow-tests/" />
+      <property role="OLqNc" value="/home/gobyweb/nextflow-tests" />
     </node>
     <node concept="OLqWn" id="3LlDVJRPAWE" role="OLqEc">
       <property role="OLqNc" value="darla.med.cornell.edu" />

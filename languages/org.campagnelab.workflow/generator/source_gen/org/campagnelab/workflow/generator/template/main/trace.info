@@ -16,11 +16,11 @@
   </root>
   <root nodeRef="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)/2526307167898869459">
     <file name="QueriesGenerated.java">
-      <node id="4347565441058817903" at="24,112,25,378" concept="1" />
+      <node id="1387986661790794347" at="24,112,25,378" concept="1" />
       <node id="4347565441058822021" at="27,112,28,344" concept="1" />
       <node id="4347565441058834816" at="30,112,31,344" concept="1" />
       <node id="4347565441058826419" at="33,112,34,343" concept="1" />
-      <scope id="4347565441058817361" at="24,112,25,378" />
+      <scope id="1387986661790793474" at="24,112,25,378" />
       <scope id="4347565441058821692" at="27,112,28,344" />
       <scope id="4347565441058834642" at="30,112,31,344" />
       <scope id="4347565441058826090" at="33,112,34,343" />
