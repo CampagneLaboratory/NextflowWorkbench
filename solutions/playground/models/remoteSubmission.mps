@@ -42,6 +42,7 @@
       </concept>
       <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.NextflowConfig" flags="ng" index="pkhaZ">
         <child id="2329585396109102069" name="executor" index="pkh9A" />
+        <child id="6352769549764279065" name="remoteSubmission" index="pHU$A" />
         <child id="5930160417388865584" name="processOptions" index="2xLS5a" />
       </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
@@ -117,6 +118,30 @@
     <node concept="oEfVI" id="1d37CfppVBF" role="2xLS5a">
       <property role="oEfTV" value="-l h_vmem=2G  -pe smp 4" />
     </node>
+    <node concept="OLtiu" id="5wD$zX1ImOS" role="pHU$A">
+      <property role="TrG5h" value="remote.config" />
+      <node concept="RgTjw" id="5wD$zX1ImOT" role="RgTsZ">
+        <property role="OLqNc" value="${user.home}/.ssh/id_rsa" />
+      </node>
+      <node concept="OLqD6" id="5wD$zX1ImOU" role="OLqE9" />
+      <node concept="RgYyx" id="5wD$zX1ImOV" role="RgYyw" />
+      <node concept="OLqWn" id="5wD$zX1ImOW" role="OLqEc" />
+      <node concept="34s5uH" id="5wD$zX1ImP7" role="34s5tb">
+        <node concept="34ZRRU" id="5wD$zX1ImPa" role="346dRl">
+          <node concept="34ZRQx" id="5wD$zX1OsSA" role="34ZRRx" />
+          <node concept="34ZRQx" id="5wD$zX1OsSt" role="34ZRRx" />
+          <node concept="34ZRQx" id="5wD$zX1OsSm" role="34ZRRx">
+            <property role="34ZRQb" value="fsfsd" />
+          </node>
+          <node concept="34ZRQx" id="5wD$zX1OsSh" role="34ZRRx">
+            <property role="34ZRQb" value="fdsfdsfs" />
+          </node>
+          <node concept="34ZRQx" id="5wD$zX1OsSe" role="34ZRRx">
+            <property role="34ZRQb" value="fdsfds" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="OLtiu" id="3LlDVJRPAWA">
     <property role="TrG5h" value="remote.config" />
@@ -183,6 +208,15 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="34ZRRU" id="5wD$zX1IPqa">
+    <node concept="34ZRQx" id="5wD$zX1IPqb" role="34ZRRx">
+      <property role="34ZRQb" value="dsfsdfds" />
+    </node>
+    <node concept="34ZRQx" id="5wD$zX1IPri" role="34ZRRx">
+      <property role="34ZRQb" value="fdsfsd" />
+    </node>
+    <node concept="34ZRQx" id="5wD$zX1IPrn" role="34ZRRx" />
   </node>
 </model>
 
