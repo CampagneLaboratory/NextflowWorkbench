@@ -186,6 +186,19 @@
       <concept id="5930160417407206502" name="org.campagnelab.workflow.structure.ConditionalExpressionText" flags="ng" index="2AVUOs">
         <child id="5930160417407206503" name="text" index="2AVUOt" />
       </concept>
+      <concept id="3653684473245040477" name="org.campagnelab.workflow.structure.NewChannelInitializerExpression" flags="ng" index="2J_g7Q">
+        <child id="3653684473245056445" name="channelContents" index="2J_scm" />
+      </concept>
+      <concept id="3653684473245061739" name="org.campagnelab.workflow.structure.Range" flags="ng" index="2J_qN0">
+        <child id="3653684473245061743" name="start" index="2J_qN4" />
+        <child id="3653684473245061745" name="end" index="2J_qNq" />
+      </concept>
+      <concept id="3653684473245054612" name="org.campagnelab.workflow.structure.NewIntegerLiteral" flags="ng" index="2J_swZ">
+        <property id="3653684473245054659" name="value" index="2J_sxC" />
+      </concept>
+      <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
+        <child id="3653684473245054701" name="elementType" index="2J_sx6" />
+      </concept>
       <concept id="4777210630426255197" name="org.campagnelab.workflow.structure.Local" flags="ng" index="2LyH2s" />
       <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="1131453450772026527" name="org.campagnelab.workflow.structure.BaseLanguageAdapter" flags="ng" index="UAUTO">
@@ -681,6 +694,14 @@
         <property role="TrG5h" value="filesWithText3" />
       </node>
     </node>
+    <node concept="2$rEH5" id="3aOvEIt8mzl" role="2$rEHq">
+      <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTestWithBools" />
+      <node concept="1uYdA0" id="3aOvEIt8mzI" role="1uLvPH">
+        <ref role="1uK_4X" node="3aOvEIt8mtQ" resolve="tupleCh" />
+        <node concept="1yaZXp" id="3aOvEIt8m_g" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="3aOvEIt8mzJ" role="1uLvPA" />
+    </node>
     <node concept="2$rEH5" id="6zpIx1pD0vh" role="2$rEHq">
       <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
       <node concept="1uYdA0" id="6zpIx1pD0w8" role="1uLvPH">
@@ -732,6 +753,23 @@
         </node>
         <node concept="2$RDGe" id="6zpIx1pCSpj" role="2$RAuK">
           <property role="2$RDGf" value="Good" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="3aOvEIt8mtQ" role="2$L6iY">
+      <property role="TrG5h" value="tupleCh" />
+      <node concept="16Aex" id="3aOvEIt8muz" role="2$L62I">
+        <node concept="1OM9w" id="3aOvEIt8mu_" role="16Aew">
+          <node concept="1OMb9" id="3aOvEIt8mvu" role="1OM9Z">
+            <node concept="2$RDDD" id="3aOvEIt8mvw" role="1OMb8">
+              <property role="2$RDDE" value="3" />
+            </node>
+          </node>
+          <node concept="1OMdp" id="3aOvEIt8mxM" role="1OM9Z">
+            <node concept="2$RDGe" id="3aOvEIt8mxO" role="1OMem">
+              <property role="2$RDGf" value="a" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -1003,6 +1041,21 @@
           <node concept="1OMdp" id="47MGIsNOBqG" role="1OM9Z">
             <node concept="2$RDGe" id="47MGIsNOBqI" role="1OMem">
               <property role="2$RDGf" value="hello" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="9PzSb87A2i" role="2$L6iY">
+      <property role="TrG5h" value="tuplech" />
+      <node concept="2J_g7Q" id="9PzSb87A2j" role="2$L62I">
+        <node concept="2J_sx7" id="9PzSb87A2k" role="2J_scm">
+          <node concept="2J_qN0" id="9PzSb8BYMB" role="2J_sx6">
+            <node concept="2J_swZ" id="9PzSb8BYMD" role="2J_qN4">
+              <property role="2J_sxC" value="1" />
+            </node>
+            <node concept="2J_swZ" id="9PzSb8BYMC" role="2J_qNq">
+              <property role="2J_sxC" value="2" />
             </node>
           </node>
         </node>
