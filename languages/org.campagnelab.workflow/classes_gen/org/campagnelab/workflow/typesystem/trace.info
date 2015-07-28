@@ -1379,12 +1379,12 @@
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/5642782690536827842">
     <file name="check_InputChannel_NonTypesystemRule.java">
       <node id="7391172440880174136" at="30,125,31,382" concept="6" />
-      <node id="5642782690536852049" at="31,382,32,109" concept="6" />
-      <node id="7391172440884945608" at="33,155,34,74" concept="6" />
+      <node id="5642782690536852049" at="31,382,32,102" concept="6" />
+      <node id="7391172440884945608" at="33,148,34,74" concept="6" />
       <node id="7391172440884946662" at="34,74,35,368" concept="2" />
       <node id="7391172440884992748" at="37,40,38,125" concept="7" />
       <node id="3739363868000457916" at="41,7,42,60" concept="6" />
-      <node id="3739363868000457916" at="42,60,43,754" concept="6" />
+      <node id="3739363868000457916" at="42,60,43,1074" concept="6" />
       <node id="7391172440884945898" at="45,5,46,0" concept="9" />
       <node id="5642782690536827842" at="48,46,49,61" concept="7" />
       <node id="5642782690536827842" at="52,5,53,130" concept="6" />
@@ -1398,14 +1398,14 @@
       <node id="5642782690536827842" at="51,68,55,5" concept="0" />
       <node id="7391172440884956047" at="35,368,40,10" concept="2" />
       <node id="5642782690536827842" at="51,0,57,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="6202591221105871450" at="32,109,45,5" concept="4" />
+      <node id="6202591221105871450" at="32,102,45,5" concept="4" />
       <node id="5642782690536827842" at="30,0,48,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="5642782690536827842" at="28,49,28,49" />
       <scope id="7391172440884991981" at="37,40,38,125" />
       <scope id="5642782690536827842" at="48,46,49,61" />
       <scope id="5642782690536827842" at="57,30,58,17" />
       <scope id="5642782690536827842" at="28,0,30,0" />
-      <scope id="3739363868000457916" at="41,7,43,754">
+      <scope id="3739363868000457916" at="41,7,43,1074">
         <var name="_reporter_2309309498" id="3739363868000457916" />
         <var name="errorTarget" id="3739363868000457916" />
       </scope>
@@ -1421,12 +1421,12 @@
       <scope id="5642782690536827842" at="51,0,57,0">
         <var name="argument" id="5642782690536827842" />
       </scope>
-      <scope id="6202591221105871452" at="33,155,44,7">
+      <scope id="6202591221105871452" at="33,148,44,7">
         <var name="names" id="7391172440884945614" />
       </scope>
       <scope id="5642782690536827843" at="30,125,46,0">
         <var name="process" id="7391172440880174137" />
-        <var name="processInputChannel" id="5642782690536852050" />
+        <var name="processInput" id="5642782690536852050" />
       </scope>
       <scope id="5642782690536827842" at="30,0,48,0">
         <var name="inputChannel" id="5642782690536827842" />

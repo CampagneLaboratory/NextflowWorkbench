@@ -343,7 +343,7 @@
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.TupleLiteral_BehaviorDescriptor" />
     </file>
     <file name="TupleType_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.TupleType_BehaviorDescriptor" />
+      <unit at="8,0,19,0" name="org.campagnelab.workflow.behavior.TupleType_BehaviorDescriptor" />
     </file>
     <file name="Tuple_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Tuple_BehaviorDescriptor" />
@@ -398,6 +398,38 @@
         <var name="thisNode" id="2798116910141687608" />
       </scope>
       <unit id="2798116910141687608" at="11,0,27,0" name="org.campagnelab.workflow.behavior.ToListFunction_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/3020772668952219663">
+    <file name="TupleType_Behavior.java">
+      <node id="3020772668952222411" at="14,92,15,175" concept="3" />
+      <node id="576108065752425342" at="15,175,16,29" concept="8" />
+      <node id="576108065752425730" at="17,216,18,140" concept="3" />
+      <node id="576108065752450804" at="19,219,20,23" concept="3" />
+      <node id="576108065754195067" at="21,14,22,22" concept="3" />
+      <node id="576108065752452308" at="24,5,25,18" concept="9" />
+      <node id="3020772668952219663" at="12,0,14,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="576108065754194707" at="21,12,23,7" concept="0" />
+      <node id="576108065752430139" at="18,140,23,7" concept="6" />
+      <node id="576108065752418603" at="16,29,24,5" concept="5" />
+      <node id="3020772668952219663" at="14,0,27,0" concept="13" trace="virtual_getDetailedPresentation_2354269628709769373#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="3020772668952219665" at="12,43,12,43" />
+      <scope id="576108065752430141" at="19,219,20,23" />
+      <scope id="576108065754194708" at="21,14,22,22" />
+      <scope id="3020772668952219663" at="12,0,14,0">
+        <var name="thisNode" id="3020772668952219663" />
+      </scope>
+      <scope id="576108065752418607" at="17,216,23,7" />
+      <scope id="576108065752418603" at="16,29,24,5">
+        <var name="type" id="576108065752418605" />
+      </scope>
+      <scope id="3020772668952222406" at="14,92,25,18">
+        <var name="output" id="576108065752425345" />
+      </scope>
+      <scope id="3020772668952219663" at="14,0,27,0">
+        <var name="thisNode" id="3020772668952219663" />
+      </scope>
+      <unit id="3020772668952219663" at="11,0,28,0" name="org.campagnelab.workflow.behavior.TupleType_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/3121388506944293730">

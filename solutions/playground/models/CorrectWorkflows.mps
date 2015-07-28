@@ -98,9 +98,6 @@
       <concept id="3121388506946094214" name="org.campagnelab.workflow.structure.IntegerLiteralTuple" flags="ng" index="1OMb9">
         <child id="3121388506946094215" name="integer" index="1OMb8" />
       </concept>
-      <concept id="3121388506946094443" name="org.campagnelab.workflow.structure.FileLiteralTuple" flags="ng" index="1OMc$">
-        <child id="3121388506946094444" name="file" index="1OMcz" />
-      </concept>
       <concept id="3121388506946094358" name="org.campagnelab.workflow.structure.StringLiteralTuple" flags="ng" index="1OMdp">
         <child id="3121388506946094553" name="string" index="1OMem" />
       </concept>
@@ -939,11 +936,6 @@
           <node concept="1OMdp" id="47MGIsNOBqG" role="1OM9Z">
             <node concept="2$RDGe" id="47MGIsNOBqI" role="1OMem">
               <property role="2$RDGf" value="hello" />
-            </node>
-          </node>
-          <node concept="1OMc$" id="47MGIsNOBxd" role="1OM9Z">
-            <node concept="2xgF7X" id="47MGIsNOBxf" role="1OMcz">
-              <property role="2VDI9B" value="pathA" />
             </node>
           </node>
         </node>
