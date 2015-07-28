@@ -4,7 +4,7 @@ someTupleChannel = Channel.from( [false, 'file.txt'], [false, 'file.txt'])
 process AcceptTupple {
 
 input:
-val(aaa), file(bcc) from someTupleChannel
+set val(aaa), file(bcc) from someTupleChannel
 
 shell:
 

@@ -29,6 +29,7 @@
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="2465654535473034588" name="helpURL" index="2Bxbrw" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
@@ -133,12 +134,6 @@
       <property role="20kJfa" value="processes" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="5D7AjvYaj9M" resolve="ProcessRef" />
-    </node>
-    <node concept="1TJgyj" id="49c3W7NLHUt" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="executor" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="49c3W7NLHXs" resolve="Executor" />
     </node>
     <node concept="1TJgyj" id="5HJ0QzxBRcw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -567,6 +562,7 @@
     <property role="TrG5h" value="Local" />
     <property role="34LRSv" value="local" />
     <property role="R4oN_" value="executes the workflow on the local, single machine" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#local-executor" />
     <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
   </node>
   <node concept="1TIwiD" id="49c3W7NLHXu">
@@ -574,6 +570,7 @@
     <property role="TrG5h" value="SGE" />
     <property role="R4oN_" value="executes the workflow on the SGE computer network" />
     <property role="34LRSv" value="sge" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#sge-executor" />
     <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
   </node>
   <node concept="1TIwiD" id="21kmpcSWrHO">
@@ -1420,40 +1417,6 @@
     <property role="R4oN_" value="converts all of the elements in the channel into tuples matching the size of the input channel the function is applied to" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
-  <node concept="1TIwiD" id="3aOvEIt8nSZ">
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="PrimitiveType" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-  </node>
-  <node concept="1TIwiD" id="3aOvEIt8nXt">
-    <property role="TrG5h" value="NewChannelInitializerExpression" />
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="3aOvEIt8nXu">
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="NewStringLiteral" />
-    <property role="34LRSv" value="string" />
-    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
-    <node concept="1TJgyi" id="3aOvEIt8ocz" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3aOvEIt8rqk">
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="NewIntegerLiteral" />
-    <property role="34LRSv" value="integer" />
-    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
-    <node concept="1TJgyi" id="3aOvEIt8rr3" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3aOvEIt8rrn">
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="NewBooleanLiteral" />
@@ -1462,40 +1425,6 @@
     <node concept="1TJgyi" id="3aOvEIt8rro" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3aOvEIt8rrG">
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="NewListLiteral" />
-    <property role="34LRSv" value="list" />
-    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-    <node concept="1TJgyj" id="3aOvEIt8rrH" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="elementType" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3aOvEIt8rQW">
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="NewTupleLiteral" />
-    <property role="34LRSv" value="tuple" />
-    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-    <node concept="1TJgyj" id="3aOvEIt8rRi" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="elementType" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3aOvEIt8sII">
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="NewFileLiteral" />
-    <property role="34LRSv" value="file" />
-    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-    <node concept="1TJgyi" id="3aOvEIt8sIM" role="1TKVEl">
-      <property role="TrG5h" value="path" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="3aOvEIt8t9F">
@@ -1513,6 +1442,126 @@
       <property role="20kJfa" value="end" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8rrG">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewListLiteral" />
+    <property role="34LRSv" value="list" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyj" id="3aOvEIt8rrH" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8sII">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewFileLiteral" />
+    <property role="34LRSv" value="file" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyi" id="3aOvEIt8sIM" role="1TKVEl">
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8rqk">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewIntegerLiteral" />
+    <property role="34LRSv" value="integer" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <node concept="1TJgyi" id="3aOvEIt8rr3" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8nXu">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewStringLiteral" />
+    <property role="34LRSv" value="string" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <node concept="1TJgyi" id="3aOvEIt8ocz" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8nXt">
+    <property role="TrG5h" value="NewChannelInitializerExpression" />
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8rQW">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewTupleLiteral" />
+    <property role="34LRSv" value="tuple" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyj" id="3aOvEIt8rRi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8nSZ">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="PrimitiveType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+  </node>
+  <node concept="1TIwiD" id="5FDPSDjYRpO">
+    <property role="3GE5qa" value="executors" />
+    <property role="TrG5h" value="PBS" />
+    <property role="R4oN_" value="Execute Worflows with PBS" />
+    <property role="34LRSv" value="pbs" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#pbs-torque-executor" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+  </node>
+  <node concept="1TIwiD" id="5FDPSDjYRtR">
+    <property role="3GE5qa" value="executors" />
+    <property role="TrG5h" value="DRMAA" />
+    <property role="R4oN_" value="Execute Worflows with DRMAA" />
+    <property role="34LRSv" value="drmaa" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#drmaa-executor" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+  </node>
+  <node concept="1TIwiD" id="5FDPSDjYLwl">
+    <property role="3GE5qa" value="executors" />
+    <property role="TrG5h" value="LSF" />
+    <property role="R4oN_" value="Execute Worflows with LSF" />
+    <property role="34LRSv" value="lsf" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#lsf-executor" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+  </node>
+  <node concept="1TIwiD" id="5FDPSDjYR_F">
+    <property role="3GE5qa" value="executors" />
+    <property role="TrG5h" value="Cirrus" />
+    <property role="R4oN_" value="Execute Worflows with Cirrus" />
+    <property role="34LRSv" value="cirrus" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#clusterk-cirrus" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+  </node>
+  <node concept="1TIwiD" id="5FDPSDjYQuX">
+    <property role="3GE5qa" value="executors" />
+    <property role="TrG5h" value="Slurm" />
+    <property role="R4oN_" value="Execute Worflows with Slurm" />
+    <property role="34LRSv" value="slurm" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#slurm-executor" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+  </node>
+  <node concept="1TIwiD" id="5FDPSDjYS8d">
+    <property role="3GE5qa" value="executors" />
+    <property role="TrG5h" value="DNANexus" />
+    <property role="R4oN_" value="Execute Worflows with DNANexus" />
+    <property role="34LRSv" value="dnanexus" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#dnanexus" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+    <node concept="1TJgyi" id="5FDPSDk4MVL" role="1TKVEl">
+      <property role="TrG5h" value="instanceType" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

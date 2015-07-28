@@ -42,7 +42,6 @@
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
-        <child id="4777210630426255005" name="executor" index="2LyH5s" />
       </concept>
       <concept id="3855674281012038742" name="org.campagnelab.workflow.structure.IntegerInitializer" flags="ng" index="2$PLs2">
         <child id="3855674281012526304" name="integer" index="2$RAuO" />
@@ -50,11 +49,10 @@
       <concept id="3855674281012527421" name="org.campagnelab.workflow.structure.IntegerLiteral" flags="ng" index="2$RDDD">
         <property id="3855674281012527422" name="value" index="2$RDDE" />
       </concept>
-      <concept id="4777210630426255197" name="org.campagnelab.workflow.structure.Local" flags="ng" index="2LyH2s" />
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
-      <concept id="8369613327464057502" name="org.campagnelab.workflow.structure.IntegerChannel" flags="ng" index="1uY1L$">
-        <child id="8369613327464057505" name="integer" index="1uY1Lr" />
+      <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
+        <child id="7391172440887133304" name="type" index="2ybFLk" />
       </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
@@ -76,10 +74,9 @@
         </node>
       </node>
     </node>
-    <node concept="1uY1L$" id="367MW53_KlU" role="2ulM7n">
-      <node concept="1utKN4" id="367MW53_KlV" role="1uY1Lr">
-        <property role="TrG5h" value="stdout" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hLj4" role="2ulM7n">
+      <property role="TrG5h" value="stdout" />
+      <node concept="1utKN4" id="5UkDK45hLj5" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="367MW52M$ui">
@@ -91,10 +88,9 @@
         </node>
       </node>
     </node>
-    <node concept="1uY1L$" id="367MW53_KkL" role="2ulM79">
-      <node concept="1utKN4" id="367MW53_KkM" role="1uY1Lr">
-        <property role="TrG5h" value="val" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hLiL" role="2ulM79">
+      <property role="TrG5h" value="val" />
+      <node concept="1utKN4" id="5UkDK45hLiM" role="2ybFLk" />
     </node>
   </node>
   <node concept="2$rMIF" id="367MW52M$vs">
@@ -107,7 +103,6 @@
         </node>
       </node>
     </node>
-    <node concept="2LyH2s" id="367MW52M$vv" role="2LyH5s" />
     <node concept="2$rEH5" id="367MW52M$vu" role="2$rEHq">
       <ref role="2$rEH4" node="367MW52M$ui" resolve="perlTask" />
       <node concept="1uLkD0" id="367MW52UdB7" role="1uLvPA">

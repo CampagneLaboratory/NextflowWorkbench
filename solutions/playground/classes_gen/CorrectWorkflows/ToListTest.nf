@@ -38,7 +38,9 @@ file "*.txt" into analyzedFiles
 shell:
 
     '''
-cat index_* > '*.txt'\n\n
+cat index_* > '*.txt'
+
+
     '''
 }
 process combineFiles {
@@ -47,6 +49,8 @@ input:
 set file processedFiles from analyzedFiles.toList()
 
 output:
+file finalFile into result
+
 shell:
 
     '''

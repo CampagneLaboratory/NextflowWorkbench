@@ -42,7 +42,6 @@
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
-        <child id="4777210630426255005" name="executor" index="2LyH5s" />
       </concept>
       <concept id="3855674281012038742" name="org.campagnelab.workflow.structure.IntegerInitializer" flags="ng" index="2$PLs2">
         <child id="3855674281012526304" name="integer" index="2$RAuO" />
@@ -50,15 +49,11 @@
       <concept id="3855674281012527421" name="org.campagnelab.workflow.structure.IntegerLiteral" flags="ng" index="2$RDDD">
         <property id="3855674281012527422" name="value" index="2$RDDE" />
       </concept>
-      <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
-      <concept id="8369613327464057510" name="org.campagnelab.workflow.structure.FileChannel" flags="ng" index="1uY1Ls">
-        <child id="8369613327464057511" name="file" index="1uY1Lt" />
-      </concept>
-      <concept id="8369613327464057502" name="org.campagnelab.workflow.structure.IntegerChannel" flags="ng" index="1uY1L$">
-        <child id="8369613327464057505" name="integer" index="1uY1Lr" />
+      <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
+        <child id="7391172440887133304" name="type" index="2ybFLk" />
       </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
@@ -80,20 +75,17 @@
         </node>
       </node>
     </node>
-    <node concept="1uY1L$" id="367MW53DevG" role="2ulM7n">
-      <node concept="1utKN4" id="367MW53DevJ" role="1uY1Lr">
-        <property role="TrG5h" value="integer" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hLp3" role="2ulM7n">
+      <property role="TrG5h" value="integer" />
+      <node concept="1utKN4" id="5UkDK45hLp4" role="2ybFLk" />
     </node>
-    <node concept="1uY1Ls" id="3YQd1FoMqY3" role="2ulM7n">
-      <node concept="16pRw0" id="3YQd1FoMqY5" role="1uY1Lt">
-        <property role="TrG5h" value="'test.R'" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hLpl" role="2ulM7n">
+      <property role="TrG5h" value="'test.R'" />
+      <node concept="16pRw0" id="5UkDK45hLpm" role="2ybFLk" />
     </node>
   </node>
   <node concept="2$rMIF" id="367MW53_NlO">
     <property role="TrG5h" value="TestWithR" />
-    <node concept="2LyH2v" id="3YQd1FoMM22" role="2LyH5s" />
     <node concept="2$rEH5" id="367MW53_NlQ" role="2$rEHq">
       <ref role="2$rEH4" node="367MW53_Ny$" resolve="writeScript" />
       <node concept="1uYdA0" id="367MW53_Nqj" role="1uLvPH">
@@ -172,15 +164,13 @@
         </node>
       </node>
     </node>
-    <node concept="1uY1Ls" id="367MW53_NyR" role="2ulM79">
-      <node concept="16pRw0" id="367MW53_NyS" role="1uY1Lt">
-        <property role="TrG5h" value="'myRscript.R'" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hLqo" role="2ulM79">
+      <property role="TrG5h" value="'myRscript.R'" />
+      <node concept="16pRw0" id="5UkDK45hLqp" role="2ybFLk" />
     </node>
-    <node concept="1uY1L$" id="367MW53_NzU" role="2ulM7n">
-      <node concept="1utKN4" id="367MW53_NzV" role="1uY1Lr">
-        <property role="TrG5h" value="myInt" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hLq8" role="2ulM7n">
+      <property role="TrG5h" value="myInt" />
+      <node concept="1utKN4" id="5UkDK45hLq9" role="2ybFLk" />
     </node>
   </node>
 </model>

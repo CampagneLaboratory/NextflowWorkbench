@@ -26,7 +26,9 @@ file "*.txt" into processed
 shell:
 
     '''
-cat index_* > '*.txt'\n\n
+cat index_* > '*.txt'
+
+
     '''
 }
 process combineFiles {

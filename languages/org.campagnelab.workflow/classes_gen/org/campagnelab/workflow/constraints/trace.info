@@ -15,7 +15,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,135,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
+      <unit at="10,0,130,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/177205552212758053">
@@ -512,15 +512,6 @@
         <var name="parentNode" id="2798116910142893631" />
       </scope>
       <unit id="2798116910142893631" at="16,0,44,0" name="org.campagnelab.workflow.constraints.Collate_Constraints" />
-    </file>
-  </root>
-  <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/3653684473245056468">
-    <file name="NewListLiteral_Constraints.java">
-      <node id="3653684473245056468" at="9,39,10,98" concept="11" />
-      <node id="3653684473245056468" at="9,0,12,0" concept="1" trace="NewListLiteral_Constraints#()V" />
-      <scope id="3653684473245056468" at="9,39,10,98" />
-      <scope id="3653684473245056468" at="9,0,12,0" />
-      <unit id="3653684473245056468" at="8,0,13,0" name="org.campagnelab.workflow.constraints.NewListLiteral_Constraints" />
     </file>
   </root>
   <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/419240959831878747">

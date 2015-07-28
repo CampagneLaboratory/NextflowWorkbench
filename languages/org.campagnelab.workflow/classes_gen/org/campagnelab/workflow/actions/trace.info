@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,27,0" name="org.campagnelab.workflow.actions.ActionAspectDescriptorImpl" />
+    </file>
     <file name="QueriesGenerated.java">
       <unit at="59,49,81,5" name="org.campagnelab.workflow.actions.QueriesGenerated$2" />
       <unit at="89,49,111,5" name="org.campagnelab.workflow.actions.QueriesGenerated$3" />
@@ -15,38 +19,38 @@
   </root>
   <root nodeRef="r:2e1393ae-2a7b-4fb2-add1-db11113c776d(org.campagnelab.workflow.actions)/3926486501676623784">
     <file name="QueriesGenerated.java">
-      <node id="177205552208591368" at="27,94,28,232" concept="1" />
-      <node id="177205552208591374" at="28,232,29,103" concept="1" />
+      <node id="177205552208591368" at="27,94,28,232" concept="2" />
+      <node id="177205552208591374" at="28,232,29,103" concept="2" />
       <node id="177205552208591382" at="29,103,30,172" concept="0" />
       <node id="177205552208591388" at="30,172,31,257" concept="0" />
       <node id="177205552208591398" at="31,257,32,184" concept="0" />
-      <node id="177205552208591404" at="32,184,33,87" concept="2" />
-      <node id="6268478007397471781" at="54,208,55,428" concept="2" />
-      <node id="177205552208593537" at="60,94,61,232" concept="1" />
-      <node id="177205552208593543" at="61,232,62,105" concept="1" />
+      <node id="177205552208591404" at="32,184,33,87" concept="3" />
+      <node id="6268478007397471781" at="54,208,55,428" concept="3" />
+      <node id="177205552208593537" at="60,94,61,232" concept="2" />
+      <node id="177205552208593543" at="61,232,62,105" concept="2" />
       <node id="177205552208593551" at="62,105,63,174" concept="0" />
       <node id="177205552208593557" at="63,174,64,255" concept="0" />
       <node id="177205552208593567" at="64,255,65,188" concept="0" />
-      <node id="177205552208593573" at="65,188,66,87" concept="2" />
-      <node id="6268478007397393177" at="84,208,85,428" concept="2" />
-      <node id="6268478007400211780" at="90,94,91,232" concept="1" />
-      <node id="177205552203018181" at="91,232,92,103" concept="1" />
+      <node id="177205552208593573" at="65,188,66,87" concept="3" />
+      <node id="6268478007397393177" at="84,208,85,428" concept="3" />
+      <node id="6268478007400211780" at="90,94,91,232" concept="2" />
+      <node id="177205552203018181" at="91,232,92,103" concept="2" />
       <node id="177205552203025969" at="92,103,93,172" concept="0" />
       <node id="6268478007400212018" at="93,172,94,257" concept="0" />
       <node id="177205552203012451" at="94,257,95,184" concept="0" />
-      <node id="177205552204425568" at="95,184,96,87" concept="2" />
-      <node id="177205552207202342" at="114,208,115,231" concept="2" />
-      <node id="6268478007405977607" at="120,94,121,232" concept="1" />
-      <node id="177205552205808018" at="121,232,122,105" concept="1" />
+      <node id="177205552204425568" at="95,184,96,87" concept="3" />
+      <node id="177205552207202342" at="114,208,115,231" concept="3" />
+      <node id="6268478007405977607" at="120,94,121,232" concept="2" />
+      <node id="177205552205808018" at="121,232,122,105" concept="2" />
       <node id="177205552205808026" at="122,105,123,174" concept="0" />
       <node id="177205552205808032" at="123,174,124,255" concept="0" />
       <node id="177205552205808042" at="124,255,125,188" concept="0" />
-      <node id="177205552205808048" at="125,188,126,87" concept="2" />
-      <node id="177205552207196798" at="144,208,145,231" concept="2" />
-      <node id="3341569134398581946" at="54,0,57,0" concept="3" trace="sideTransformHintSubstituteActionsBuilder_Precondition_NewStringLiteral_3341569134398581946#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
-      <node id="6268478007397389522" at="84,0,87,0" concept="3" trace="sideTransformHintSubstituteActionsBuilder_Precondition_NewStringLiteral_6268478007397389522#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
-      <node id="177205552207201766" at="114,0,117,0" concept="3" trace="sideTransformHintSubstituteActionsBuilder_Precondition_NewIntegerLiteral_177205552207201766#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
-      <node id="177205552207196245" at="144,0,147,0" concept="3" trace="sideTransformHintSubstituteActionsBuilder_Precondition_NewIntegerLiteral_177205552207196245#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
+      <node id="177205552205808048" at="125,188,126,87" concept="3" />
+      <node id="177205552207196798" at="144,208,145,231" concept="3" />
+      <node id="3341569134398581946" at="54,0,57,0" concept="4" trace="sideTransformHintSubstituteActionsBuilder_Precondition_NewStringLiteral_3341569134398581946#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
+      <node id="6268478007397389522" at="84,0,87,0" concept="4" trace="sideTransformHintSubstituteActionsBuilder_Precondition_NewStringLiteral_6268478007397389522#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
+      <node id="177205552207201766" at="114,0,117,0" concept="4" trace="sideTransformHintSubstituteActionsBuilder_Precondition_NewIntegerLiteral_177205552207201766#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
+      <node id="177205552207196245" at="144,0,147,0" concept="4" trace="sideTransformHintSubstituteActionsBuilder_Precondition_NewIntegerLiteral_177205552207196245#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
       <scope id="3341569134398581947" at="54,208,55,428" />
       <scope id="6268478007397389523" at="84,208,85,428" />
       <scope id="177205552207201767" at="114,208,115,231" />
@@ -83,6 +87,21 @@
         <var name="addedNode" id="6268478007405977608" />
         <var name="startNode" id="177205552205808019" />
       </scope>
+    </file>
+  </root>
+  <root nodeRef="r:2e1393ae-2a7b-4fb2-add1-db11113c776d(org.campagnelab.workflow.actions)/5289029620234673436">
+    <file name="DefaultNodeFactory_.java">
+      <node id="5289029620234676612" at="15,91,16,389" concept="0" />
+      <node id="5289029620234673944" at="15,0,18,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="5289029620234673944" at="15,91,16,389" />
+      <scope id="5289029620234673944" at="15,0,18,0">
+        <var name="enclosingNode" id="5289029620234673944" />
+        <var name="model" id="5289029620234673944" />
+        <var name="newNode" id="5289029620234673944" />
+        <var name="sampleNode" id="5289029620234673944" />
+      </scope>
+      <unit id="5289029620234673944" at="14,0,19,0" name="org.campagnelab.workflow.actions.DefaultNodeFactory_$NodeFactory_5289029620234673944" />
+      <unit id="5289029620234673436" at="13,0,20,0" name="org.campagnelab.workflow.actions.DefaultNodeFactory_" />
     </file>
   </root>
 </debug-info>

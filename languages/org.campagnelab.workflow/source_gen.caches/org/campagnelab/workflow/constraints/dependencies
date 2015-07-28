@@ -42,7 +42,6 @@
     <classNode dependClassName="org.campagnelab.workflow.constraints.NewBooleanLiteral_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.NewFileLiteral_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.NewIntegerLiteral_Constraints" />
-    <classNode dependClassName="org.campagnelab.workflow.constraints.NewListLiteral_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.NewStringLiteral_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.NewTupleLiteral_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.PrimitiveType_Constraints" />
@@ -175,10 +174,6 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.workflow.constraints.NewListLiteral_Constraints" file="NewListLiteral_Constraints.java">
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.constraints.NewStringLiteral_Constraints" file="NewStringLiteral_Constraints.java">
