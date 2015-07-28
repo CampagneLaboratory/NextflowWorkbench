@@ -157,7 +157,6 @@
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
-        <child id="4777210630426255005" name="executor" index="2LyH5s" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
       </concept>
       <concept id="3855674281012038991" name="org.campagnelab.workflow.structure.ListInitializer" flags="ng" index="2$PLor">
@@ -188,8 +187,6 @@
       <concept id="5930160417407206502" name="org.campagnelab.workflow.structure.ConditionalExpressionText" flags="ng" index="2AVUOs">
         <child id="5930160417407206503" name="text" index="2AVUOt" />
       </concept>
-      <concept id="4777210630426255197" name="org.campagnelab.workflow.structure.Local" flags="ng" index="2LyH2s" />
-      <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="1131453450772026527" name="org.campagnelab.workflow.structure.BaseLanguageAdapter" flags="ng" index="UAUTO">
         <child id="5930160417400088880" name="statements" index="2AuG1a" />
       </concept>
@@ -228,7 +225,6 @@
   </registry>
   <node concept="2$rMIF" id="3JbPZMY4uTd">
     <property role="TrG5h" value="SimpleToListFunctions" />
-    <node concept="2LyH2v" id="3JbPZMY4uTg" role="2LyH5s" />
     <node concept="2$rEH5" id="3JbPZMY4uTf" role="2$rEHq">
       <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
       <node concept="1uYdA0" id="3JbPZMY4v00" role="1uLvPH">
@@ -692,7 +688,6 @@
         <node concept="1yaYgh" id="6zpIx1pD0yD" role="1ylr64" />
       </node>
     </node>
-    <node concept="2LyH2v" id="5rY6S$LVuy6" role="2LyH5s" />
     <node concept="1CVceo" id="6zpIx1pCOLX" role="2$L6iY">
       <property role="TrG5h" value="strListCh" />
       <node concept="2$PLor" id="6zpIx1pCPPO" role="2$L62I">
@@ -835,7 +830,6 @@
   </node>
   <node concept="2$rMIF" id="6zpIx1pD2QL">
     <property role="TrG5h" value="ToListTest" />
-    <node concept="2LyH2s" id="6zpIx1pD2R0" role="2LyH5s" />
     <node concept="2$rEH5" id="6zpIx1pD2QN" role="2$rEHq">
       <ref role="2$rEH4" node="6zpIx1pD2V4" resolve="appendValueToFile" />
       <node concept="1uYdA0" id="6zpIx1pD3jC" role="1uLvPH">
@@ -989,7 +983,6 @@
   </node>
   <node concept="2$rMIF" id="47MGIsN_DHy">
     <property role="TrG5h" value="ToTupleTest" />
-    <node concept="2LyH2s" id="47MGIsN_Ey1" role="2LyH5s" />
     <node concept="2$rEH5" id="47MGIsN_DH$" role="2$rEHq">
       <ref role="2$rEH4" node="PffOQSmJ$r" resolve="inputRefTestWithTuple" />
       <node concept="1uLkD0" id="5FDPSDjYtmT" role="1uLvPA">

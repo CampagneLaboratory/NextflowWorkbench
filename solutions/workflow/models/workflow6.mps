@@ -50,10 +50,9 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="6202591221123583312" name="org.campagnelab.workflow.structure.FileListChannel" flags="ng" index="04KEa">
-        <child id="6202591221123608443" name="fileList" index="04Qyx" />
+      <concept id="4018964125401476997" name="org.campagnelab.workflow.structure.List" flags="ng" index="kktkh">
+        <child id="7391172440886351025" name="elementType" index="2y8EMt" />
       </concept>
-      <concept id="6202591221123591000" name="org.campagnelab.workflow.structure.FileList" flags="ng" index="04MM2" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -67,7 +66,6 @@
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
-        <child id="4777210630426255005" name="executor" index="2LyH5s" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
       </concept>
       <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.StringInitializer" flags="ng" index="2$PLvr">
@@ -76,7 +74,6 @@
       <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.StringLiteral" flags="ng" index="2$RDGe">
         <property id="3855674281012527195" name="value" index="2$RDGf" />
       </concept>
-      <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="6588488528863172354" name="org.campagnelab.workflow.structure.Report" flags="ng" index="2UNLhE">
         <reference id="6588488528863172372" name="channel" index="2UNLhW" />
         <child id="6588488528863172374" name="function" index="2UNLhY" />
@@ -86,11 +83,8 @@
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
-      <concept id="8369613327464057510" name="org.campagnelab.workflow.structure.FileChannel" flags="ng" index="1uY1Ls">
-        <child id="8369613327464057511" name="file" index="1uY1Lt" />
-      </concept>
-      <concept id="8369613327464053589" name="org.campagnelab.workflow.structure.StringChannel" flags="ng" index="1uY6QJ">
-        <child id="8369613327464373545" name="string" index="1uLkJj" />
+      <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
+        <child id="7391172440887133304" name="type" index="2ybFLk" />
       </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
@@ -130,15 +124,13 @@
         </node>
       </node>
     </node>
-    <node concept="1uY6QJ" id="75jmBOYk5Vb" role="2ulM7n">
-      <node concept="16pbKc" id="75jmBOYk5Vc" role="1uLkJj">
-        <property role="TrG5h" value="idsList" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hL_c" role="2ulM7n">
+      <property role="TrG5h" value="idsList" />
+      <node concept="16pbKc" id="5UkDK45hL_d" role="2ybFLk" />
     </node>
-    <node concept="1uY1Ls" id="75jmBOYpHal" role="2ulM79">
-      <node concept="16pRw0" id="75jmBOYpHam" role="1uY1Lt">
-        <property role="TrG5h" value="&quot;${idsList}.R&quot;" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hLIO" role="2ulM79">
+      <property role="TrG5h" value="&quot;${idsList}.R&quot;" />
+      <node concept="16pRw0" id="5UkDK45hLIP" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="4vJs_UWM9nR">
@@ -162,23 +154,20 @@
         </node>
       </node>
     </node>
-    <node concept="1uY6QJ" id="4vJs_UWM9nZ" role="2ulM7n">
-      <node concept="16pbKc" id="4vJs_UWM9o0" role="1uLkJj">
-        <property role="TrG5h" value="idsList" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hLK9" role="2ulM7n">
+      <property role="TrG5h" value="idsList" />
+      <node concept="16pbKc" id="5UkDK45hLKa" role="2ybFLk" />
     </node>
-    <node concept="1uY1Ls" id="4vJs_UWM9o1" role="2ulM79">
-      <node concept="16pRw0" id="4vJs_UWM9o2" role="1uY1Lt">
-        <property role="TrG5h" value="'MyRscript.R'" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hLKp" role="2ulM79">
+      <property role="TrG5h" value="'MyRscript.R'" />
+      <node concept="16pRw0" id="5UkDK45hLKq" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="367MW53_NkX">
     <property role="TrG5h" value="runRBiomart" />
-    <node concept="1uY1Ls" id="4vJs_UWMby$" role="2ulM79">
-      <node concept="16pRw0" id="4vJs_UWMbyA" role="1uY1Lt">
-        <property role="TrG5h" value="&quot;${Rscript}_fasta.fasta&quot;" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hM_T" role="2ulM79">
+      <property role="TrG5h" value="&quot;${Rscript}_fasta.fasta&quot;" />
+      <node concept="16pRw0" id="5UkDK45hM_U" role="2ybFLk" />
     </node>
     <node concept="3Y$Zt1" id="367MW53_Nl8" role="2ulM7a">
       <node concept="19SGf9" id="367MW53_Nla" role="3Y$PkS">
@@ -186,15 +175,14 @@
           <property role="19SUeA" value=" R --slave --args 'mydataset=&quot;hsapiens_gene_ensembl&quot;' &lt; " />
         </node>
         <node concept="3YE7tV" id="4vJs_UWMb_z" role="19SJt6">
-          <ref role="3YE7sm" node="3YQd1FoMqY5" resolve="Rscript" />
+          <ref role="3YE7sm" node="5UkDK45hM_D" resolve="Rscript" />
         </node>
         <node concept="19SUe$" id="4vJs_UWMb_y" role="19SJt6" />
       </node>
     </node>
-    <node concept="1uY1Ls" id="3YQd1FoMqY3" role="2ulM7n">
-      <node concept="16pRw0" id="3YQd1FoMqY5" role="1uY1Lt">
-        <property role="TrG5h" value="Rscript" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hM_D" role="2ulM7n">
+      <property role="TrG5h" value="Rscript" />
+      <node concept="16pRw0" id="5UkDK45hM_E" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="3gLclC5_5KA">
@@ -206,15 +194,13 @@
         </node>
       </node>
     </node>
-    <node concept="1uY1Ls" id="3gLclC5_5KC" role="2ulM7n">
-      <node concept="16pRw0" id="3gLclC5_5KD" role="1uY1Lt">
-        <property role="TrG5h" value="'input'" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hMBi" role="2ulM7n">
+      <property role="TrG5h" value="'input'" />
+      <node concept="16pRw0" id="5UkDK45hMBj" role="2ybFLk" />
     </node>
-    <node concept="1uY1Ls" id="3gLclC5_5KG" role="2ulM79">
-      <node concept="16pRw0" id="3gLclC5_5KH" role="1uY1Lt">
-        <property role="TrG5h" value="'seq_*'" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hMBy" role="2ulM79">
+      <property role="TrG5h" value="'seq_*'" />
+      <node concept="16pRw0" id="5UkDK45hMBz" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="4sdy0eirjMY">
@@ -225,28 +211,26 @@
           <property role="19SUeA" value="#!/usr/bin/env python&#10;&#10;from Bio import SeqIO&#10;from Bio.SeqRecord import SeqRecord&#10;def make_protein_record(nuc_record):&#10;    &quot;&quot;&quot;Returns a new SeqRecord with the translated sequence.&quot;&quot;&quot;&#10;    return SeqRecord(seq = nuc_record.seq.translate(), \&#10;        id = &quot;trans_&quot; + nuc_record.id, \&#10;        description = &quot;translation of CDS&quot;)    &#10;    &#10;proteins = (make_protein_record(nuc_rec) for nuc_rec in \&#10;    SeqIO.parse(&quot;" />
         </node>
         <node concept="3YE7tV" id="4sdy0eirjSU" role="19SJt6">
-          <ref role="3YE7sm" node="4sdy0eirjSn" resolve="myfasta" />
+          <ref role="3YE7sm" node="5UkDK45hMxI" resolve="myfasta" />
         </node>
         <node concept="19SUe$" id="4sdy0eirjST" role="19SJt6">
           <property role="19SUeA" value="&quot;, &quot;fasta&quot;))&#10;SeqIO.write(proteins, &quot;" />
         </node>
         <node concept="3YE7tV" id="4sdy0eirjSZ" role="19SJt6">
-          <ref role="3YE7sm" node="4sdy0eirjSn" resolve="myfasta" />
+          <ref role="3YE7sm" node="5UkDK45hMxI" resolve="myfasta" />
         </node>
         <node concept="19SUe$" id="4sdy0eirjSY" role="19SJt6">
           <property role="19SUeA" value="_translations.fasta&quot;, &quot;fasta&quot;)" />
         </node>
       </node>
     </node>
-    <node concept="1uY1Ls" id="4sdy0eirjSm" role="2ulM7n">
-      <node concept="16pRw0" id="4sdy0eirjSn" role="1uY1Lt">
-        <property role="TrG5h" value="myfasta" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hMxI" role="2ulM7n">
+      <property role="TrG5h" value="myfasta" />
+      <node concept="16pRw0" id="5UkDK45hMxJ" role="2ybFLk" />
     </node>
-    <node concept="1uY1Ls" id="4sdy0eirjT5" role="2ulM79">
-      <node concept="16pRw0" id="4sdy0eirjT6" role="1uY1Lt">
-        <property role="TrG5h" value="&quot;${myfasta}_translations.fasta&quot;" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hMxY" role="2ulM79">
+      <property role="TrG5h" value="&quot;${myfasta}_translations.fasta&quot;" />
+      <node concept="16pRw0" id="5UkDK45hMxZ" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="4sdy0ei$bIM">
@@ -257,22 +241,22 @@
           <property role="19SUeA" value="cat " />
         </node>
         <node concept="3YE7tV" id="4sdy0ei$bMc" role="19SJt6">
-          <ref role="3YE7sm" node="4sdy0ei$bKQ" resolve="allFiles" />
+          <ref role="3YE7sm" node="5UkDK45hLMn" resolve="allFiles" />
         </node>
         <node concept="19SUe$" id="4sdy0ei$bMd" role="19SJt6">
           <property role="19SUeA" value=" &gt; myFinalOutput" />
         </node>
       </node>
     </node>
-    <node concept="04KEa" id="4sdy0ei$bKO" role="2ulM7n">
-      <node concept="04MM2" id="4sdy0ei$bKQ" role="04Qyx">
-        <property role="TrG5h" value="allFiles" />
+    <node concept="1uLvKC" id="5UkDK45hLMn" role="2ulM7n">
+      <property role="TrG5h" value="allFiles" />
+      <node concept="kktkh" id="5UkDK45hLMo" role="2ybFLk">
+        <node concept="16pRw0" id="5UkDK45hLMp" role="2y8EMt" />
       </node>
     </node>
-    <node concept="1uY1Ls" id="4sdy0ei$bLE" role="2ulM79">
-      <node concept="16pRw0" id="4sdy0ei$bLF" role="1uY1Lt">
-        <property role="TrG5h" value="'myFinalOutput'" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hLMM" role="2ulM79">
+      <property role="TrG5h" value="'myFinalOutput'" />
+      <node concept="16pRw0" id="5UkDK45hLMN" role="2ybFLk" />
     </node>
   </node>
   <node concept="2$rMIF" id="261znZpTS25">
@@ -288,7 +272,7 @@
                 <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="1B2iUhmcjMo" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println():void" resolve="println" />
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.Object):void" resolve="println" />
                 <node concept="2UPiyF" id="1B2iUhmcjMF" role="37wK5m" />
               </node>
             </node>
@@ -296,7 +280,6 @@
         </node>
       </node>
     </node>
-    <node concept="2LyH2v" id="261znZqj_bb" role="2LyH5s" />
     <node concept="2$rEH5" id="261znZpTS27" role="2$rEHq">
       <ref role="2$rEH4" node="75jmBOYk5Ua" resolve="BiomartRscript" />
       <node concept="1uYdA0" id="261znZpTS2m" role="1uLvPH">

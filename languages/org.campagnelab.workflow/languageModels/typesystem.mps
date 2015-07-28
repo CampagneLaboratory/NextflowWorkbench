@@ -14,10 +14,10 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -248,6 +248,9 @@
       <concept id="1227264722563" name="jetbrains.mps.lang.smodel.structure.EqualsStructurallyExpression" flags="nn" index="2YFouu" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
+        <reference id="1176109685394" name="concept" index="3lApI3" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -2719,24 +2722,26 @@
         </node>
         <node concept="17QLQc" id="dNnsoz5eIm" role="3clFbw">
           <node concept="2OqwBi" id="dNnsoz0RYV" role="3uHU7B">
-            <node concept="2OqwBi" id="dNnsoz0QLz" role="2Oq$k0">
-              <node concept="2OqwBi" id="dNnsoz0QAs" role="2Oq$k0">
-                <node concept="1YBJjd" id="dNnsoz0Q_3" role="2Oq$k0">
-                  <ref role="1YBMHb" node="5ok1XDlYeil" resolve="globalFilePath" />
-                </node>
-                <node concept="2Xjw5R" id="dNnsoz0QIg" role="2OqNvi">
-                  <node concept="1xMEDy" id="dNnsoz0QIi" role="1xVPHs">
-                    <node concept="chp4Y" id="dNnsoz0QIU" role="ri$Ld">
-                      <ref role="cht4Q" to="iowz:5D7AjvYabas" resolve="Workflow" />
+            <node concept="2yIwOk" id="dNnsoz0SeS" role="2OqNvi" />
+            <node concept="2OqwBi" id="5UkDK45eV74" role="2Oq$k0">
+              <node concept="2OqwBi" id="5UkDK45eZRg" role="2Oq$k0">
+                <node concept="2OqwBi" id="5UkDK45eBp1" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5UkDK45eB8p" role="2Oq$k0">
+                    <node concept="1YBJjd" id="5UkDK45eA6u" role="2Oq$k0">
+                      <ref role="1YBMHb" node="5ok1XDlYeil" resolve="globalFilePath" />
                     </node>
+                    <node concept="I4A8Y" id="5UkDK45eBgz" role="2OqNvi" />
+                  </node>
+                  <node concept="3lApI0" id="5UkDK45eBxN" role="2OqNvi">
+                    <ref role="3lApI3" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
                   </node>
                 </node>
+                <node concept="1uHKPH" id="5UkDK45f41B" role="2OqNvi" />
               </node>
-              <node concept="3TrEf2" id="dNnsoz0QXC" role="2OqNvi">
-                <ref role="3Tt5mk" to="iowz:49c3W7NLHUt" />
+              <node concept="3TrEf2" id="5UkDK45f4hT" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:21kmpcT1kJP" />
               </node>
             </node>
-            <node concept="2yIwOk" id="dNnsoz0SeS" role="2OqNvi" />
           </node>
           <node concept="35c_gC" id="dNnsoz0SiM" role="3uHU7w">
             <ref role="35c_gD" to="iowz:49c3W7NLHXt" resolve="Local" />

@@ -50,8 +50,8 @@
       </concept>
       <concept id="4777210630426255197" name="org.campagnelab.workflow.structure.Local" flags="ng" index="2LyH2s" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
-      <concept id="8369613327464053589" name="org.campagnelab.workflow.structure.StringChannel" flags="ng" index="1uY6QJ">
-        <child id="8369613327464373545" name="string" index="1uLkJj" />
+      <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
+        <child id="7391172440887133304" name="type" index="2ybFLk" />
       </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
@@ -97,17 +97,16 @@
           <property role="19SUeA" value="&#10;#!/usr/bin/env python&#10;import re&#10;&#10;MHFC_ID=open(&quot;" />
         </node>
         <node concept="3YE7tV" id="367MW52nIIf" role="19SJt6">
-          <ref role="3YE7sm" node="3gLclC5BNm0" resolve="MyinputPath" />
+          <ref role="3YE7sm" node="5UkDK45hLfP" resolve="MyinputPath" />
         </node>
         <node concept="19SUe$" id="367MW52nIIe" role="19SJt6">
           <property role="19SUeA" value="&quot;,&quot;r&quot;)&#10;CFS_ID=[]&#10;CTL_ID=[]&#10;for thisID in MHFC_ID.readlines():&#10;    if re.search(&quot;CFS&quot;,thisID):&#10;        CFS_ID.append(thisID)&#10;        print(&quot;CFS&quot;)&#10;    elif re.search(&quot;CTL&quot;,thisID):&#10;        CTL_ID.append(thisID)&#10;        print(&quot;CTL&quot;)&#10;    else:&#10;        print (&quot;EMPTY&quot;+thisID)&#10;        &#10;print(CTL_ID)&#10;print(CFS_ID) &#10;outputFile=open(&quot;outputFile.txt&quot;,'w')&#10;outputFile.write(&quot; I write my result&quot;)&#10;&#10;for element in CTL_ID:&#10;    outputFile.write(element)&#10;&#10;for element in CFS_ID:&#10;    outputFile.write(element)  " />
         </node>
       </node>
     </node>
-    <node concept="1uY6QJ" id="3gLclC5BNlZ" role="2ulM7n">
-      <node concept="16pbKc" id="3gLclC5BNm0" role="1uLkJj">
-        <property role="TrG5h" value="MyinputPath" />
-      </node>
+    <node concept="1uLvKC" id="5UkDK45hLfP" role="2ulM7n">
+      <property role="TrG5h" value="MyinputPath" />
+      <node concept="16pbKc" id="5UkDK45hLfQ" role="2ybFLk" />
     </node>
   </node>
 </model>

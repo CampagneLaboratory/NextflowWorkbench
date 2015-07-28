@@ -29,13 +29,8 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="4018964125401476997" name="org.campagnelab.workflow.structure.List" flags="ng" index="kktkh" />
-      <concept id="4018964125401477001" name="org.campagnelab.workflow.structure.ListChannel" flags="ng" index="kktkt">
-        <child id="4018964125401477073" name="list" index="kktl5" />
-      </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928307" name="script" index="2ulM7a" />
-        <child id="7457140171610928302" name="inputs" index="2ulM7n" />
       </concept>
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
@@ -43,7 +38,6 @@
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
-        <child id="4777210630426255005" name="executor" index="2LyH5s" />
       </concept>
       <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.StringInitializer" flags="ng" index="2$PLvr">
         <child id="3855674281012526308" name="string" index="2$RAuK" />
@@ -51,7 +45,6 @@
       <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.StringLiteral" flags="ng" index="2$RDGe">
         <property id="3855674281012527195" name="value" index="2$RDGf" />
       </concept>
-      <concept id="4777210630426255197" name="org.campagnelab.workflow.structure.Local" flags="ng" index="2LyH2s" />
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
       </concept>
@@ -69,15 +62,9 @@
         </node>
       </node>
     </node>
-    <node concept="kktkt" id="367MW53mivk" role="2ulM7n">
-      <node concept="kktkh" id="367MW53mivl" role="kktl5">
-        <property role="TrG5h" value="val" />
-      </node>
-    </node>
   </node>
   <node concept="2$rMIF" id="49g6NCYekoj">
     <property role="TrG5h" value="test" />
-    <node concept="2LyH2s" id="49g6NCYeltI" role="2LyH5s" />
     <node concept="2$rEH5" id="49g6NCYekol" role="2$rEHq">
       <ref role="2$rEH4" node="49g6NCYekns" resolve="testFile" />
     </node>
