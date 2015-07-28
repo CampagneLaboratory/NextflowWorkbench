@@ -151,9 +151,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -236,20 +233,16 @@
       <node concept="3cqZAl" id="_lyg7Tk6if" role="3clF45" />
       <node concept="3Tm1VV" id="_lyg7Tk6ig" role="1B3o_S" />
       <node concept="3clFbS" id="_lyg7Tk6ih" role="3clF47">
-        <node concept="3SKdUt" id="1d37CfoJJWB" role="3cqZAp">
-          <node concept="3SKWN0" id="1d37CfoJJWG" role="3SKWNk">
-            <node concept="3clFbF" id="1d37CfoJBVl" role="3SKWNf">
-              <node concept="2YIFZM" id="1d37CfoJCjb" role="3clFbG">
-                <ref role="37wK5l" to="e2lb:~System.setProperty(java.lang.String,java.lang.String):java.lang.String" resolve="setProperty" />
-                <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
-                <node concept="Xl_RD" id="1d37CfoJCl6" role="37wK5m">
-                  <property role="Xl_RC" value="ANT_HOME" />
-                </node>
-                <node concept="2YIFZM" id="1d37CfoJCy_" role="37wK5m">
-                  <ref role="37wK5l" node="1d37CfoDvYn" resolve="getAntHome" />
-                  <ref role="1Pybhc" node="1d37CfoDvht" resolve="AntEnvironment" />
-                </node>
-              </node>
+        <node concept="3clFbF" id="1d37CfoJBVl" role="3cqZAp">
+          <node concept="2YIFZM" id="1d37CfoJCjb" role="3clFbG">
+            <ref role="37wK5l" to="e2lb:~System.setProperty(java.lang.String,java.lang.String):java.lang.String" resolve="setProperty" />
+            <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+            <node concept="Xl_RD" id="1d37CfoJCl6" role="37wK5m">
+              <property role="Xl_RC" value="ANT_HOME" />
+            </node>
+            <node concept="2YIFZM" id="1d37CfoJCy_" role="37wK5m">
+              <ref role="37wK5l" node="1d37CfoDvYn" resolve="getAntHome" />
+              <ref role="1Pybhc" node="1d37CfoDvht" resolve="AntEnvironment" />
             </node>
           </node>
         </node>
