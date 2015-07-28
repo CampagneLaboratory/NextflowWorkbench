@@ -22,6 +22,8 @@ input:
 set file processedFiles from filesWithText.toList()
 
 output:
+file finalFile into out1
+
 shell:
 
     '''
@@ -48,6 +50,8 @@ input:
 set file processedFiles from filesWithText2.toList()
 
 output:
+file finalFile into out2
+
 shell:
 
     '''
@@ -74,6 +78,8 @@ input:
 set file processedFiles from filesWithText3.toSortedList()
 
 output:
+file finalFile into out3
+
 shell:
 
     '''

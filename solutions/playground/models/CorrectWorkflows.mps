@@ -7,8 +7,8 @@
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="2" />
   </languages>
   <imports>
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -52,7 +52,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -103,7 +103,6 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="6202591221123591000" name="org.campagnelab.workflow.structure.FileList" flags="ng" index="04MM2" />
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
         <reference id="6509497193195685433" name="variable" index="0wEsc" />
       </concept>
@@ -118,6 +117,9 @@
       </concept>
       <concept id="3121388506946094358" name="org.campagnelab.workflow.structure.StringLiteralTuple" flags="ng" index="1OMdp">
         <child id="3121388506946094553" name="string" index="1OMem" />
+      </concept>
+      <concept id="6551004122101547533" name="org.campagnelab.workflow.structure.DNANexus" flags="ng" index="94_m7">
+        <property id="6551004122103099121" name="instanceType" index="eYJ_V" />
       </concept>
       <concept id="748852418098455525" name="org.campagnelab.workflow.structure.NameInAChannelRef" flags="ng" index="2b_LqF">
         <reference id="748852418098455526" name="value" index="2b_LqC" />
@@ -155,7 +157,6 @@
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
-        <child id="4777210630426255005" name="executor" index="2LyH5s" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
       </concept>
       <concept id="3855674281012038991" name="org.campagnelab.workflow.structure.ListInitializer" flags="ng" index="2$PLor">
@@ -186,8 +187,6 @@
       <concept id="5930160417407206502" name="org.campagnelab.workflow.structure.ConditionalExpressionText" flags="ng" index="2AVUOs">
         <child id="5930160417407206503" name="text" index="2AVUOt" />
       </concept>
-      <concept id="4777210630426255197" name="org.campagnelab.workflow.structure.Local" flags="ng" index="2LyH2s" />
-      <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="1131453450772026527" name="org.campagnelab.workflow.structure.BaseLanguageAdapter" flags="ng" index="UAUTO">
         <child id="5930160417400088880" name="statements" index="2AuG1a" />
       </concept>
@@ -199,6 +198,7 @@
       <concept id="6588488528864881603" name="org.campagnelab.workflow.structure.ReportParameter" flags="ng" index="2UPiyF" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
+      <concept id="7581087959662304258" name="org.campagnelab.workflow.structure.ToTuple" flags="ng" index="1nBfdn" />
       <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
@@ -225,7 +225,6 @@
   </registry>
   <node concept="2$rMIF" id="3JbPZMY4uTd">
     <property role="TrG5h" value="SimpleToListFunctions" />
-    <node concept="2LyH2v" id="3JbPZMY4uTg" role="2LyH5s" />
     <node concept="2$rEH5" id="3JbPZMY4uTf" role="2$rEHq">
       <ref role="2$rEH4" node="34JZ5vsmm0i" resolve="analyze" />
       <node concept="1uYdA0" id="3JbPZMY4v00" role="1uLvPH">
@@ -246,17 +245,6 @@
         <ref role="1uK_4X" node="53DXNxI1Lvd" resolve="strings" />
       </node>
       <node concept="1uLkD0" id="qQieKH_3rA" role="1uLvPA" />
-    </node>
-    <node concept="2$rEH5" id="5ok1XDlU7L9" role="2$rEHq">
-      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
-      <node concept="1uYdA0" id="5ok1XDlU7Pu" role="1uLvPH">
-        <ref role="1uK_4X" node="5ok1XDlU7LC" resolve="path3" />
-        <node concept="1yaYav" id="5ok1XDlU7PT" role="1ylr64" />
-      </node>
-      <node concept="1uYdA0" id="qQieKH_3w0" role="1uLvPH" />
-      <node concept="1uLkD0" id="qQieKH_3w1" role="1uLvPA" />
-      <node concept="1uLkD0" id="66DRDNmsKx4" role="1uLvPA" />
-      <node concept="1uLkD0" id="66DRDNmsKx5" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="PffOQSmKP7" role="2$rEHq">
       <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTestWithBools" />
@@ -604,7 +592,9 @@
   </node>
   <node concept="pkhaZ" id="21kmpcT2JwM">
     <property role="TrG5h" value="nextflow.config" />
-    <node concept="2LyH2s" id="6zpIx1pCnuR" role="pkh9A" />
+    <node concept="94_m7" id="5FDPSDk94XD" role="pkh9A">
+      <property role="eYJ_V" value="mem2_hdd2_x2" />
+    </node>
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
@@ -629,7 +619,9 @@
     </node>
     <node concept="1uLvKC" id="2BFWbNo6gbW" role="2ulM7n">
       <property role="TrG5h" value="alignment" />
-      <node concept="04MM2" id="2BFWbNo6geM" role="2ybFLk" />
+      <node concept="kktkh" id="5FDPSDk34_T" role="2ybFLk">
+        <node concept="16pRw0" id="5FDPSDk34AL" role="2y8EMt" />
+      </node>
     </node>
   </node>
   <node concept="2$rMIF" id="5rY6S$LVtPP">
@@ -646,6 +638,9 @@
     </node>
     <node concept="2$rEH5" id="6zpIx1pCOQG" role="2$rEHq">
       <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uLkD0" id="5FDPSDjYuoq" role="1uLvPA">
+        <property role="TrG5h" value="out1" />
+      </node>
       <node concept="1uYdA0" id="6zpIx1pCOQL" role="1uLvPH">
         <ref role="1uK_4X" node="6zpIx1pCOOn" resolve="filesWithText" />
         <node concept="1yaYav" id="6zpIx1pCORs" role="1ylr64" />
@@ -664,6 +659,9 @@
     </node>
     <node concept="2$rEH5" id="6zpIx1pCSKF" role="2$rEHq">
       <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uLkD0" id="5FDPSDjYul_" role="1uLvPA">
+        <property role="TrG5h" value="out2" />
+      </node>
       <node concept="1uYdA0" id="6zpIx1pCSOa" role="1uLvPH">
         <ref role="1uK_4X" node="6zpIx1pCSBX" resolve="filesWithText2" />
         <node concept="1yaYav" id="6zpIx1pCSQY" role="1ylr64" />
@@ -682,12 +680,14 @@
     </node>
     <node concept="2$rEH5" id="6zpIx1pD0vh" role="2$rEHq">
       <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uLkD0" id="5FDPSDjYurf" role="1uLvPA">
+        <property role="TrG5h" value="out3" />
+      </node>
       <node concept="1uYdA0" id="6zpIx1pD0w8" role="1uLvPH">
         <ref role="1uK_4X" node="6zpIx1pCZUw" resolve="filesWithText3" />
         <node concept="1yaYgh" id="6zpIx1pD0yD" role="1ylr64" />
       </node>
     </node>
-    <node concept="2LyH2v" id="5rY6S$LVuy6" role="2LyH5s" />
     <node concept="1CVceo" id="6zpIx1pCOLX" role="2$L6iY">
       <property role="TrG5h" value="strListCh" />
       <node concept="2$PLor" id="6zpIx1pCPPO" role="2$L62I">
@@ -761,7 +761,6 @@
         </node>
       </node>
     </node>
-    <node concept="2LyH2s" id="dNnsoz9$Cj" role="2LyH5s" />
     <node concept="2$rEH5" id="dNnsoyWtYi" role="2$rEHq">
       <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
       <node concept="1uLkD0" id="dNnsoyWtYm" role="1uLvPA">
@@ -816,7 +815,7 @@
           <ref role="3YE7sm" node="6qiI2N5urdM" resolve="strInput" />
         </node>
         <node concept="19SUe$" id="6zpIx1pCOJH" role="19SJt6">
-          <property role="19SUeA" value=" &gt; file.txt" />
+          <property role="19SUeA" value=" &gt; file.tx&#10;&#10;&#10;t" />
         </node>
       </node>
     </node>
@@ -831,7 +830,6 @@
   </node>
   <node concept="2$rMIF" id="6zpIx1pD2QL">
     <property role="TrG5h" value="ToListTest" />
-    <node concept="2LyH2s" id="6zpIx1pD2R0" role="2LyH5s" />
     <node concept="2$rEH5" id="6zpIx1pD2QN" role="2$rEHq">
       <ref role="2$rEH4" node="6zpIx1pD2V4" resolve="appendValueToFile" />
       <node concept="1uYdA0" id="6zpIx1pD3jC" role="1uLvPH">
@@ -862,6 +860,9 @@
     </node>
     <node concept="2$rEH5" id="6zpIx1pD8II" role="2$rEHq">
       <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uLkD0" id="5FDPSDjYtj0" role="1uLvPA">
+        <property role="TrG5h" value="result" />
+      </node>
       <node concept="1uYdA0" id="6zpIx1pD8Jr" role="1uLvPH">
         <ref role="1uK_4X" node="6zpIx1pD8F3" resolve="analyzedFiles" />
         <node concept="1yaYav" id="6zpIx1pD8K_" role="1ylr64" />
@@ -982,11 +983,14 @@
   </node>
   <node concept="2$rMIF" id="47MGIsN_DHy">
     <property role="TrG5h" value="ToTupleTest" />
-    <node concept="2LyH2s" id="47MGIsN_Ey1" role="2LyH5s" />
     <node concept="2$rEH5" id="47MGIsN_DH$" role="2$rEHq">
       <ref role="2$rEH4" node="PffOQSmJ$r" resolve="inputRefTestWithTuple" />
+      <node concept="1uLkD0" id="5FDPSDjYtmT" role="1uLvPA">
+        <property role="TrG5h" value="out" />
+      </node>
       <node concept="1uYdA0" id="47MGIsN_Ey5" role="1uLvPH">
         <ref role="1uK_4X" node="47MGIsN_Ey$" resolve="tupleChannel" />
+        <node concept="1nBfdn" id="3aOvEIsMeOk" role="1ylr64" />
       </node>
     </node>
     <node concept="1CVceo" id="47MGIsN_Ey$" role="2$L6iY">
