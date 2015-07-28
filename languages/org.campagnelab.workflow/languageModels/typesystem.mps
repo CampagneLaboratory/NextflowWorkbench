@@ -77,7 +77,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1658,17 +1658,25 @@
         <node concept="3clFbS" id="7mWvTuli1cc" role="nvhr_">
           <node concept="1Z5TYs" id="vHEKaWXs8a" role="3cqZAp">
             <property role="3wDh2S" value="false" />
+            <node concept="mw_s8" id="5FDPSDjP0rK" role="1ZfhKB">
+              <node concept="2c44tf" id="5FDPSDjP0rG" role="mwGJk">
+                <node concept="_YKpA" id="5FDPSDjP0sr" role="2c44tc">
+                  <node concept="33vP2l" id="5FDPSDjP0st" role="_ZDj9">
+                    <node concept="2c44te" id="5FDPSDjP0sL" role="lGtFl">
+                      <node concept="1Z2H0r" id="vHEKaXckf_" role="2c44t1">
+                        <node concept="2X3wrD" id="6qiI2N4vvjX" role="1Z2MuG">
+                          <ref role="2X3Bk0" node="7mWvTuli1c9" resolve="channelProcessOutput" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="mw_s8" id="vHEKaWXs8d" role="1ZfhK$">
               <node concept="1Z2H0r" id="vHEKaWXs8e" role="mwGJk">
                 <node concept="1YBJjd" id="vHEKaWXs8f" role="1Z2MuG">
                   <ref role="1YBMHb" node="vHEKaWXs5K" resolve="outputChannel" />
-                </node>
-              </node>
-            </node>
-            <node concept="mw_s8" id="vHEKaXckfB" role="1ZfhKB">
-              <node concept="1Z2H0r" id="vHEKaXckf_" role="mwGJk">
-                <node concept="2X3wrD" id="6qiI2N4vvjX" role="1Z2MuG">
-                  <ref role="2X3Bk0" node="7mWvTuli1c9" resolve="channelProcessOutput" />
                 </node>
               </node>
             </node>
@@ -2468,7 +2476,7 @@
               <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
             </node>
             <node concept="Xl_RD" id="3JbPZMXXudN" role="2MkJ7o">
-              <property role="Xl_RC" value="This function must be being used on a list channel" />
+              <property role="Xl_RC" value="This function can only be used on a list channel" />
             </node>
           </node>
         </node>
@@ -2488,14 +2496,6 @@
           <node concept="35c_gC" id="3JbPZMXXuaX" role="3uHU7w">
             <ref role="35c_gD" to="iowz:3v6eDgz_YY5" resolve="List" />
           </node>
-        </node>
-      </node>
-      <node concept="a7r0C" id="2rkU84OU2qQ" role="3cqZAp">
-        <node concept="Xl_RD" id="2rkU84OU2rn" role="a7wSD">
-          <property role="Xl_RC" value="Every item that is a list is flattened, such that each single entry is emitted seperately" />
-        </node>
-        <node concept="1YBJjd" id="2rkU84OU4FU" role="2OEOjV">
-          <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
         </node>
       </node>
     </node>
@@ -2659,6 +2659,9 @@
                 </node>
               </node>
               <node concept="2OqwBi" id="2BFWbNo1gz3" role="37wK5m">
+                <node concept="2qgKlT" id="vYJNJ3ACP1" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
+                </node>
                 <node concept="2OqwBi" id="vYJNJ3AAiJ" role="2Oq$k0">
                   <node concept="1PxgMI" id="vYJNJ3A5hV" role="2Oq$k0">
                     <ref role="1PxNhF" to="tp2q:gK_YKtE" resolve="ListType" />
@@ -2672,9 +2675,6 @@
                   <node concept="3TrEf2" id="vYJNJ3AC_e" role="2OqNvi">
                     <ref role="3Tt5mk" to="tp2q:gK_ZDn5" />
                   </node>
-                </node>
-                <node concept="2qgKlT" id="vYJNJ3ACP1" role="2OqNvi">
-                  <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
                 </node>
               </node>
             </node>
@@ -3161,6 +3161,7 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="5FDPSDjExhC" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="7b1yRZVKXFF" role="1YuTPh">
       <property role="TrG5h" value="processRef" />
