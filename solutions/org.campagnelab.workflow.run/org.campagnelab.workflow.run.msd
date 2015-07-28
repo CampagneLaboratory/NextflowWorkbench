@@ -5,6 +5,9 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <stubModelEntries>
+    <stubModelEntry path="${module}/jsch-0.1.53.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
@@ -22,6 +25,7 @@
     <dependency reexport="false">933a68f9-aab6-401b-b5c5-5ca7783dce5f(jetbrains.mps.execution.configurations.pluginSolution)</dependency>
     <dependency reexport="false">c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)</dependency>
     <dependency reexport="true">3b3d39a8-ff6e-47f3-9c9e-1888a27699ed(org.campagnelab.util)</dependency>
+    <dependency reexport="false">268ae620-360b-4da4-bb01-fad761632e6c(jetbrains.mps.ant.execution)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)</usedLanguage>
@@ -42,6 +46,7 @@
     <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
     <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
     <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
+    <usedLanguage>857bd616-7b17-4127-8074-519f20641bdb(org.campagnelab.ssh)</usedLanguage>
   </usedLanguages>
   <languageVersions>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
@@ -66,6 +71,7 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="0" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
+    <language id="857bd616-7b17-4127-8074-519f20641bdb" fqName="org.campagnelab.ssh" version="0" />
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="2" />
   </languageVersions>
 </solution>

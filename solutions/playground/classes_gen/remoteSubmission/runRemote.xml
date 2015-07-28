@@ -1,11 +1,11 @@
 <project name="nextflow-remote" default="submit">
   <dirname property="nextflow-remote.basedir" file="${ant.file.nextflow-remote}" />
+  <property name="workflow.script" value="" />
   <property name="source.dir" location="${nextflow-remote.basedir}" />
-  <property name="remote.job.dir" location="/home/gobyweb/nextflow-tests/-1438091124355" />
+  <property name="remote.job.dir" location="/home/gobyweb/nextflow-tests/1438111556509" />
   <property name="remote.username" value="gobyweb" />
   <property name="submission.machine" value="darla.med.cornell.edu" />
   <property name="keyfile" location="${user.home}/.ssh/id_rsa" />
-  <property name="workflow.script" name="" />
   
   <target name="create-job-dir">
     <sshexec host="${submission.machine}" username="${remote.username}" keyfile="${keyfile}" command="mkdir -p ${remote.job.dir}" />

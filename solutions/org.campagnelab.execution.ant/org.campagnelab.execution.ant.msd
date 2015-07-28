@@ -9,7 +9,6 @@
     <stubModelEntry path="${mps_home}/lib/ant/lib/ant.jar" />
     <stubModelEntry path="${mps_home}/lib/ant/lib/ant-jsch.jar" />
     <stubModelEntry path="${mps_home}/lib/ant/lib/ant-launcher.jar" />
-    <stubModelEntry path="/Users/mas2182/Lab/Projects/Nextflow-remote/lib/jsch-0.1.53.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

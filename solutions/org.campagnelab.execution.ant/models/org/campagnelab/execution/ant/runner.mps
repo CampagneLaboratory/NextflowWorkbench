@@ -18,6 +18,8 @@
     <import index="yla8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.application(MPS.IDEA/com.intellij.openapi.application@java_stub)" />
     <import index="jgti" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.execution(MPS.IDEA/com.intellij.execution@java_stub)" />
     <import index="n13f" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.reloading(MPS.Core/jetbrains.mps.reloading@java_stub)" />
+    <import index="wlgq" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ide.plugins(MPS.IDEA/com.intellij.ide.plugins@java_stub)" />
+    <import index="mo84" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.extensions(MPS.IDEA/com.intellij.openapi.extensions@java_stub)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -150,6 +152,9 @@
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -940,46 +945,119 @@
       <node concept="3Tm1VV" id="_lyg7TklOw" role="1B3o_S" />
       <node concept="3clFbS" id="_lyg7TklOx" role="3clF47">
         <node concept="3clFbH" id="1d37CfoDGkN" role="3cqZAp" />
-        <node concept="3cpWs8" id="_lyg7TkmV3" role="3cqZAp">
-          <node concept="3cpWsn" id="_lyg7TkmV4" role="3cpWs9">
-            <property role="TrG5h" value="runner" />
-            <node concept="3uibUv" id="_lyg7TkmV5" role="1tU5fm">
-              <ref role="3uigEE" node="_lyg7Tk64z" resolve="AntRunner" />
-            </node>
-            <node concept="2ShNRf" id="_lyg7TkmX1" role="33vP2m">
-              <node concept="1pGfFk" id="_lyg7Tkn6g" role="2ShVmc">
-                <ref role="37wK5l" node="_lyg7Tkk6l" resolve="AntRunner" />
-                <node concept="Xl_RD" id="_lyg7Tkn76" role="37wK5m">
-                  <property role="Xl_RC" value="/Users/mas2182/Lab/Projects/MPS/NextflowWorkbench-origin/solutions/playground/classes_gen/remoteSubmission/runRemote.xml" />
+        <node concept="3SKdUt" id="O5CqsGp_V3" role="3cqZAp">
+          <node concept="3SKWN0" id="O5CqsGp_Va" role="3SKWNk">
+            <node concept="3cpWs8" id="_lyg7TkmV3" role="3SKWNf">
+              <node concept="3cpWsn" id="_lyg7TkmV4" role="3cpWs9">
+                <property role="TrG5h" value="runner" />
+                <node concept="3uibUv" id="_lyg7TkmV5" role="1tU5fm">
+                  <ref role="3uigEE" node="_lyg7Tk64z" resolve="AntRunner" />
+                </node>
+                <node concept="2ShNRf" id="_lyg7TkmX1" role="33vP2m">
+                  <node concept="1pGfFk" id="_lyg7Tkn6g" role="2ShVmc">
+                    <ref role="37wK5l" node="_lyg7Tkk6l" resolve="AntRunner" />
+                    <node concept="Xl_RD" id="_lyg7Tkn76" role="37wK5m">
+                      <property role="Xl_RC" value="/Users/mas2182/Lab/Projects/MPS/NextflowWorkbench-origin/solutions/playground/classes_gen/remoteSubmission/runRemote.xml" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
         <node concept="3clFbH" id="1d37CfoJuOd" role="3cqZAp" />
-        <node concept="3clFbF" id="1d37CfoJu__" role="3cqZAp">
-          <node concept="2OqwBi" id="1d37CfoJuCa" role="3clFbG">
-            <node concept="37vLTw" id="1d37CfoJu_z" role="2Oq$k0">
-              <ref role="3cqZAo" node="_lyg7TkmV4" resolve="runner" />
-            </node>
-            <node concept="liA8E" id="1d37CfoJuLY" role="2OqNvi">
-              <ref role="37wK5l" node="1d37CfppIHe" resolve="setPropertyWithPriority" />
-              <node concept="Xl_RD" id="1d37CfoJ$93" role="37wK5m">
-                <property role="Xl_RC" value="workflow.script" />
-              </node>
-              <node concept="Xl_RD" id="1d37CfoJ$L7" role="37wK5m">
-                <property role="Xl_RC" value="EchoWorkflow.nf" />
+        <node concept="3SKdUt" id="O5CqsGp_ZL" role="3cqZAp">
+          <node concept="3SKWN0" id="O5CqsGp_ZS" role="3SKWNk">
+            <node concept="3clFbF" id="1d37CfoJu__" role="3SKWNf">
+              <node concept="2OqwBi" id="1d37CfoJuCa" role="3clFbG">
+                <node concept="37vLTw" id="1d37CfoJu_z" role="2Oq$k0">
+                  <ref role="3cqZAo" node="_lyg7TkmV4" resolve="runner" />
+                </node>
+                <node concept="liA8E" id="1d37CfoJuLY" role="2OqNvi">
+                  <ref role="37wK5l" node="1d37CfppIHe" resolve="setPropertyWithPriority" />
+                  <node concept="Xl_RD" id="1d37CfoJ$93" role="37wK5m">
+                    <property role="Xl_RC" value="workflow.script" />
+                  </node>
+                  <node concept="Xl_RD" id="1d37CfoJ$L7" role="37wK5m">
+                    <property role="Xl_RC" value="EchoWorkflow.nf" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1d37CfoCcwp" role="3cqZAp">
-          <node concept="2OqwBi" id="1d37CfoCcyp" role="3clFbG">
-            <node concept="37vLTw" id="1d37CfoCcwn" role="2Oq$k0">
-              <ref role="3cqZAo" node="_lyg7TkmV4" resolve="runner" />
+        <node concept="3SKdUt" id="O5CqsGpAKE" role="3cqZAp">
+          <node concept="3SKWN0" id="O5CqsGpAKJ" role="3SKWNk">
+            <node concept="3clFbF" id="1d37CfoCcwp" role="3SKWNf">
+              <node concept="2OqwBi" id="1d37CfoCcyp" role="3clFbG">
+                <node concept="37vLTw" id="1d37CfoCcwn" role="2Oq$k0">
+                  <ref role="3cqZAo" node="_lyg7TkmV4" resolve="runner" />
+                </node>
+                <node concept="liA8E" id="1d37CfoCc$U" role="2OqNvi">
+                  <ref role="37wK5l" node="_lyg7Tkhab" resolve="runDefaultTarget" />
+                </node>
+              </node>
             </node>
-            <node concept="liA8E" id="1d37CfoCc$U" role="2OqNvi">
-              <ref role="37wK5l" node="_lyg7Tkhab" resolve="runDefaultTarget" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="O5CqsGrHfL" role="3cqZAp">
+          <node concept="3cpWsn" id="O5CqsGrHfM" role="3cpWs9">
+            <property role="TrG5h" value="id" />
+            <node concept="3uibUv" id="O5CqsGrHfN" role="1tU5fm">
+              <ref role="3uigEE" to="mo84:~PluginId" resolve="PluginId" />
+            </node>
+            <node concept="2ShNRf" id="O5CqsGrHna" role="33vP2m">
+              <node concept="1pGfFk" id="O5CqsGrHEE" role="2ShVmc">
+                <ref role="37wK5l" to="mo84:~PluginId.&lt;init&gt;(java.lang.String)" resolve="PluginId" />
+                <node concept="Xl_RD" id="O5CqsGrHGL" role="37wK5m">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="O5CqsGrG4F" role="3cqZAp">
+          <node concept="2YIFZM" id="O5CqsGrGd7" role="3clFbG">
+            <ref role="37wK5l" to="wlgq:~PluginManager.isPluginInstalled(com.intellij.openapi.extensions.PluginId):boolean" resolve="isPluginInstalled" />
+            <ref role="1Pybhc" to="wlgq:~PluginManager" resolve="PluginManager" />
+          </node>
+        </node>
+        <node concept="2Gpval" id="O5CqsGrrhV" role="3cqZAp">
+          <node concept="2GrKxI" id="O5CqsGrrhX" role="2Gsz3X">
+            <property role="TrG5h" value="plugin" />
+          </node>
+          <node concept="3clFbS" id="O5CqsGrrhZ" role="2LFqv$">
+            <node concept="3clFbF" id="O5CqsGrt3N" role="3cqZAp">
+              <node concept="2OqwBi" id="O5CqsGrtax" role="3clFbG">
+                <node concept="10M0yZ" id="O5CqsGrt3M" role="2Oq$k0">
+                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                  <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                </node>
+                <node concept="liA8E" id="O5CqsGrvtB" role="2OqNvi">
+                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="2OqwBi" id="O5CqsGrwyS" role="37wK5m">
+                    <node concept="2OqwBi" id="O5CqsGrvBS" role="2Oq$k0">
+                      <node concept="2GrUjf" id="O5CqsGrvxb" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="O5CqsGrrhX" resolve="plugin" />
+                      </node>
+                      <node concept="liA8E" id="O5CqsGrwj4" role="2OqNvi">
+                        <ref role="37wK5l" to="wlgq:~IdeaPluginDescriptor.getPath():java.io.File" resolve="getPath" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="O5CqsGrxNv" role="2OqNvi">
+                      <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="O5CqsGrrH2" role="2GsD0m">
+            <node concept="37vLTw" id="O5CqsGrrz6" role="2Oq$k0">
+              <ref role="3cqZAo" node="O5CqsGriBH" resolve="repo" />
+            </node>
+            <node concept="liA8E" id="O5CqsGrsSC" role="2OqNvi">
+              <ref role="37wK5l" to="wlgq:~RepositoryContentHandler.getPluginsList():java.util.List" resolve="getPluginsList" />
             </node>
           </node>
         </node>
