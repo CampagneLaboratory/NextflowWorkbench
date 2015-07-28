@@ -19,7 +19,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BaseLanguageAdapter_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,220,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,218,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BooleanChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
@@ -194,9 +194,6 @@
     </file>
     <file name="NewIntegerLiteral_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.NewIntegerLiteral_BehaviorDescriptor" />
-    </file>
-    <file name="NewListElement_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.NewListElement_BehaviorDescriptor" />
     </file>
     <file name="NewListLiteral_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.NewListLiteral_BehaviorDescriptor" />
@@ -1126,6 +1123,27 @@
         <var name="thisNode" id="4801669429688091528" />
       </scope>
       <unit id="4801669429688091528" at="10,0,18,0" name="org.campagnelab.workflow.behavior.FilePath_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/5289029620221295909">
+    <file name="Range_Behavior.java">
+      <node id="5289029620221348098" at="15,705,16,1030" concept="9" />
+      <node id="5289029620221363008" at="17,12,18,18" concept="9" />
+      <node id="5289029620221295909" at="12,0,14,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5289029620221362591" at="17,10,19,5" concept="0" />
+      <node id="5289029620221339271" at="14,78,19,5" concept="6" />
+      <node id="5289029620221295909" at="14,0,21,0" concept="13" trace="call_isOnlyChars_5289029620221298584#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <scope id="5289029620221295911" at="12,43,12,43" />
+      <scope id="5289029620221339272" at="15,705,16,1030" />
+      <scope id="5289029620221362592" at="17,12,18,18" />
+      <scope id="5289029620221295909" at="12,0,14,0">
+        <var name="thisNode" id="5289029620221295909" />
+      </scope>
+      <scope id="5289029620221298587" at="14,78,19,5" />
+      <scope id="5289029620221295909" at="14,0,21,0">
+        <var name="thisNode" id="5289029620221295909" />
+      </scope>
+      <unit id="5289029620221295909" at="11,0,22,0" name="org.campagnelab.workflow.behavior.Range_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/5476153351823627882">

@@ -1644,6 +1644,23 @@
       <property role="TrG5h" value="Descriptive" />
       <node concept="Vb9p2" id="5HJ0QzylzqX" role="3F10Kt" />
     </node>
+    <node concept="14StLt" id="4_Aq6F8akQl" role="V601i">
+      <property role="TrG5h" value="Tuple" />
+      <node concept="VechU" id="4_Aq6F8aotX" role="3F10Kt">
+        <node concept="1iSF2X" id="4_Aq6F8aou3" role="VblUZ">
+          <property role="1iTho6" value="b38b6d" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="4_Aq6F8aouA" role="V601i">
+      <property role="TrG5h" value="List" />
+      <node concept="VechU" id="4_Aq6F8aov8" role="3F10Kt">
+        <property role="Vb096" value="blue" />
+        <node concept="1iSF2X" id="4_Aq6F8r2LQ" role="VblUZ">
+          <property role="1iTho6" value="4169e1" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1h_SRR" id="68uCiTD$ub$">
     <property role="TrG5h" value="InputChannelMap" />
@@ -2385,6 +2402,7 @@
     <node concept="3EZMnI" id="3aOvEIt8rrQ" role="2wV5jI">
       <node concept="3F0ifn" id="3aOvEIt8rs6" role="3EZMnx">
         <property role="3F0ifm" value="[" />
+        <ref role="1k5W1q" node="4_Aq6F8aouA" resolve="List" />
       </node>
       <node concept="3F2HdR" id="3aOvEIt8rrX" role="3EZMnx">
         <property role="2czwfO" value="," />
@@ -2394,19 +2412,8 @@
       <node concept="l2Vlx" id="3aOvEIt8rrT" role="2iSdaV" />
       <node concept="3F0ifn" id="3aOvEIt8rsg" role="3EZMnx">
         <property role="3F0ifm" value="]" />
+        <ref role="1k5W1q" node="4_Aq6F8aouA" resolve="List" />
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="3aOvEIt8rR4">
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <ref role="1XX52x" to="iowz:3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-    <node concept="3EZMnI" id="3aOvEIt8rR6" role="2wV5jI">
-      <node concept="3F2HdR" id="3aOvEIt8rRd" role="3EZMnx">
-        <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="iowz:3aOvEIt8rQX" />
-        <node concept="l2Vlx" id="3aOvEIt8rRf" role="2czzBx" />
-      </node>
-      <node concept="l2Vlx" id="3aOvEIt8rR9" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="3aOvEIt8sIT">
@@ -2607,6 +2614,26 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="9PzSb9cruQ">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <ref role="1XX52x" to="iowz:3aOvEIt8rQW" resolve="NewTupleLiteral" />
+    <node concept="3EZMnI" id="9PzSb9cruS" role="2wV5jI">
+      <node concept="3F0ifn" id="9PzSb9cruZ" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <ref role="1k5W1q" node="4_Aq6F8akQl" resolve="Tuple" />
+      </node>
+      <node concept="3F2HdR" id="9PzSb9crvi" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:3aOvEIt8rRi" />
+        <node concept="l2Vlx" id="9PzSb9crvk" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="9PzSb9crv5" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <ref role="1k5W1q" node="4_Aq6F8akQl" resolve="Tuple" />
+      </node>
+      <node concept="l2Vlx" id="9PzSb9cruV" role="2iSdaV" />
     </node>
   </node>
 </model>
