@@ -16,7 +16,9 @@ file "*.txt" into
 shell:
 
     '''
-cat index_* > '*.txt'\n\n
+cat index_* > '*.txt'
+
+
     '''
 }
 process conditionDummy {
@@ -31,7 +33,8 @@ script:
 
   if ('$fileCh' == 1) {
     '''
-fawef\n$fileCh
+fawef
+$fileCh
     '''
 
   } else if (2 == 2) {
@@ -39,7 +42,9 @@ fawef\n$fileCh
     int i = 4;
     i++;
     '''
-blahbla\necho i\n
+blahbla
+echo i
+
     '''
 
   } else {
@@ -71,21 +76,9 @@ file "*.txt" into
 shell:
 
     '''
-cat index_* > '*.txt'\n\n
-    '''
-}
-process combineFiles {
+cat index_* > '*.txt'
 
-input:
-set file processedFiles from path3.toList()
 
-output:
-file finalFile into 
-
-shell:
-
-    '''
-cat !{processedFiles} >>finalFile
     '''
 }
 process inputRefTestWithBools {
@@ -101,6 +94,7 @@ set val bools into
 shell:
 
     '''
-!{bools}\n
+!{bools}
+
     '''
 }

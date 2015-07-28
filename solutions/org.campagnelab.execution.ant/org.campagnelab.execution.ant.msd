@@ -9,13 +9,13 @@
     <stubModelEntry path="${mps_home}/lib/ant/lib/ant.jar" />
     <stubModelEntry path="${mps_home}/lib/ant/lib/ant-jsch.jar" />
     <stubModelEntry path="${mps_home}/lib/ant/lib/ant-launcher.jar" />
-    <stubModelEntry path="/Users/mas2182/Lab/Projects/Nextflow-remote/lib/jsch-0.1.53.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">847a3235-09f9-403c-b6a9-1c294a212e92(Ant)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
+    <dependency reexport="false">0202ed86-955d-4227-9c20-377dd6b1f9ff(org.campagnelab.nyosh.lib)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>de1ad86d-6e50-4a02-b306-d4d17f64c375(jetbrains.mps.console.base)</usedLanguage>

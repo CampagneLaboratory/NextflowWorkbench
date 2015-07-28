@@ -7,8 +7,8 @@
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="2" />
   </languages>
   <imports>
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -247,17 +247,6 @@
         <ref role="1uK_4X" node="53DXNxI1Lvd" resolve="strings" />
       </node>
       <node concept="1uLkD0" id="qQieKH_3rA" role="1uLvPA" />
-    </node>
-    <node concept="2$rEH5" id="5ok1XDlU7L9" role="2$rEHq">
-      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
-      <node concept="1uYdA0" id="5ok1XDlU7Pu" role="1uLvPH">
-        <ref role="1uK_4X" node="5ok1XDlU7LC" resolve="path3" />
-        <node concept="1yaYav" id="5ok1XDlU7PT" role="1ylr64" />
-      </node>
-      <node concept="1uYdA0" id="qQieKH_3w0" role="1uLvPH" />
-      <node concept="1uLkD0" id="qQieKH_3w1" role="1uLvPA" />
-      <node concept="1uLkD0" id="66DRDNmsKx4" role="1uLvPA" />
-      <node concept="1uLkD0" id="66DRDNmsKx5" role="1uLvPA" />
     </node>
     <node concept="2$rEH5" id="PffOQSmKP7" role="2$rEHq">
       <ref role="2$rEH4" node="6YYJWE30TOV" resolve="inputRefTestWithBools" />
@@ -647,6 +636,9 @@
     </node>
     <node concept="2$rEH5" id="6zpIx1pCOQG" role="2$rEHq">
       <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uLkD0" id="5FDPSDjYuoq" role="1uLvPA">
+        <property role="TrG5h" value="out1" />
+      </node>
       <node concept="1uYdA0" id="6zpIx1pCOQL" role="1uLvPH">
         <ref role="1uK_4X" node="6zpIx1pCOOn" resolve="filesWithText" />
         <node concept="1yaYav" id="6zpIx1pCORs" role="1ylr64" />
@@ -665,6 +657,9 @@
     </node>
     <node concept="2$rEH5" id="6zpIx1pCSKF" role="2$rEHq">
       <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uLkD0" id="5FDPSDjYul_" role="1uLvPA">
+        <property role="TrG5h" value="out2" />
+      </node>
       <node concept="1uYdA0" id="6zpIx1pCSOa" role="1uLvPH">
         <ref role="1uK_4X" node="6zpIx1pCSBX" resolve="filesWithText2" />
         <node concept="1yaYav" id="6zpIx1pCSQY" role="1ylr64" />
@@ -683,6 +678,9 @@
     </node>
     <node concept="2$rEH5" id="6zpIx1pD0vh" role="2$rEHq">
       <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uLkD0" id="5FDPSDjYurf" role="1uLvPA">
+        <property role="TrG5h" value="out3" />
+      </node>
       <node concept="1uYdA0" id="6zpIx1pD0w8" role="1uLvPH">
         <ref role="1uK_4X" node="6zpIx1pCZUw" resolve="filesWithText3" />
         <node concept="1yaYgh" id="6zpIx1pD0yD" role="1ylr64" />
@@ -762,7 +760,7 @@
         </node>
       </node>
     </node>
-    <node concept="2LyH2s" id="dNnsoz9$Cj" role="2LyH5s" />
+    <node concept="2LyH2s" id="5FDPSDjYqL8" role="2LyH5s" />
     <node concept="2$rEH5" id="dNnsoyWtYi" role="2$rEHq">
       <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
       <node concept="1uLkD0" id="dNnsoyWtYm" role="1uLvPA">
@@ -863,6 +861,9 @@
     </node>
     <node concept="2$rEH5" id="6zpIx1pD8II" role="2$rEHq">
       <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uLkD0" id="5FDPSDjYtj0" role="1uLvPA">
+        <property role="TrG5h" value="result" />
+      </node>
       <node concept="1uYdA0" id="6zpIx1pD8Jr" role="1uLvPH">
         <ref role="1uK_4X" node="6zpIx1pD8F3" resolve="analyzedFiles" />
         <node concept="1yaYav" id="6zpIx1pD8K_" role="1ylr64" />
@@ -986,6 +987,9 @@
     <node concept="2LyH2s" id="47MGIsN_Ey1" role="2LyH5s" />
     <node concept="2$rEH5" id="47MGIsN_DH$" role="2$rEHq">
       <ref role="2$rEH4" node="PffOQSmJ$r" resolve="inputRefTestWithTuple" />
+      <node concept="1uLkD0" id="5FDPSDjYtmT" role="1uLvPA">
+        <property role="TrG5h" value="out" />
+      </node>
       <node concept="1uYdA0" id="47MGIsN_Ey5" role="1uLvPH">
         <ref role="1uK_4X" node="47MGIsN_Ey$" resolve="tupleChannel" />
         <node concept="1nBfdn" id="3aOvEIsMeOk" role="1ylr64" />
