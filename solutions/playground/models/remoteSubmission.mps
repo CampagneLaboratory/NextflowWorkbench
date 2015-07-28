@@ -37,6 +37,9 @@
       <concept id="2329585396108534973" name="org.campagnelab.workflow.structure.Queue" flags="ng" index="oEfOI">
         <child id="6992028756512829978" name="queueElement" index="2MiXW1" />
       </concept>
+      <concept id="2329585396108535677" name="org.campagnelab.workflow.structure.ClusterOptions" flags="ng" index="oEfVI">
+        <property id="2329585396108535784" name="clusterOptions" index="oEfTV" />
+      </concept>
       <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.NextflowConfig" flags="ng" index="pkhaZ">
         <child id="2329585396109102069" name="executor" index="pkh9A" />
         <child id="5930160417388865584" name="processOptions" index="2xLS5a" />
@@ -106,6 +109,9 @@
     <node concept="oDubB" id="5OPtsPKTW1" role="2xLS5a">
       <property role="oDuoM" value="4" />
     </node>
+    <node concept="oEfVI" id="1d37CfppVBF" role="2xLS5a">
+      <property role="oEfTV" value="-l h_vmem=2G  -pe smp 4" />
+    </node>
   </node>
   <node concept="OLtiu" id="3LlDVJRPAWA">
     <property role="TrG5h" value="remote.config" />
@@ -116,7 +122,7 @@
       <property role="OLqNc" value="gobyweb" />
     </node>
     <node concept="RgYyx" id="3LlDVJRPAWD" role="RgYyw">
-      <property role="OLqNc" value="/home/gobyweb/nextflow-tests/" />
+      <property role="OLqNc" value="/home/gobyweb/nextflow-tests" />
     </node>
     <node concept="OLqWn" id="3LlDVJRPAWE" role="OLqEc">
       <property role="OLqNc" value="darla.med.cornell.edu" />
