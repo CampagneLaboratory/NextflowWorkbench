@@ -56,7 +56,6 @@
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
-        <child id="4777210630426255005" name="executor" index="2LyH5s" />
       </concept>
       <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.StringInitializer" flags="ng" index="2$PLvr">
         <child id="3855674281012526308" name="string" index="2$RAuK" />
@@ -163,7 +162,6 @@
   </node>
   <node concept="2$rMIF" id="3LlDVJUaZ$b">
     <property role="TrG5h" value="EchoWorkflow" />
-    <node concept="2LyH2v" id="3LlDVJUaZ$G" role="2LyH5s" />
     <node concept="2$rEH5" id="3LlDVJUaZ$d" role="2$rEHq">
       <ref role="2$rEH4" node="3LlDVJUaZyv" resolve="EchoString" />
       <node concept="1uYdA0" id="3LlDVJUaZ$s" role="1uLvPH">

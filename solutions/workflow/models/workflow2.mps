@@ -40,7 +40,6 @@
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
-        <child id="4777210630426255005" name="executor" index="2LyH5s" />
       </concept>
       <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.StringInitializer" flags="ng" index="2$PLvr">
         <child id="3855674281012526308" name="string" index="2$RAuK" />
@@ -48,7 +47,6 @@
       <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.StringLiteral" flags="ng" index="2$RDGe">
         <property id="3855674281012527195" name="value" index="2$RDGf" />
       </concept>
-      <concept id="4777210630426255197" name="org.campagnelab.workflow.structure.Local" flags="ng" index="2LyH2s" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
         <child id="7391172440887133304" name="type" index="2ybFLk" />
@@ -73,7 +71,6 @@
   </node>
   <node concept="2$rMIF" id="3gLclC5BNlN">
     <property role="TrG5h" value="workflowReadFileInPython" />
-    <node concept="2LyH2s" id="3gLclC5BNlQ" role="2LyH5s" />
     <node concept="2$rEH5" id="3gLclC5BNlP" role="2$rEHq">
       <ref role="2$rEH4" node="3gLclC5BNlX" resolve="testPython" />
       <node concept="1uYdA0" id="3gLclC5BNnw" role="1uLvPH">

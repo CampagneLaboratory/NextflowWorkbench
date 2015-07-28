@@ -8,12 +8,13 @@
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.utils.multifiles/org.campagnelab.utils.multifiles.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow.languages/org.campagnelab.workflow.languages.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow/org.campagnelab.workflow.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/mps-all-campagne/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NextflowWorkbench.build/NextflowWorkbench.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/documentation/documentation.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.execution.ant/org.campagnelab.execution.ant.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.workflow.run/org.campagnelab.workflow.run.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/workflow/workflow.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/../mps-all/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" folder="" />
     </projectModules>
   </component>
 </project>
