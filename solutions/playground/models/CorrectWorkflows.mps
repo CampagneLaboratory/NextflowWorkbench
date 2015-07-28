@@ -4,7 +4,7 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="2" />
   </languages>
   <imports>
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
@@ -52,7 +52,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -194,6 +194,10 @@
       <concept id="5930160417407206502" name="org.campagnelab.workflow.structure.ConditionalExpressionText" flags="ng" index="2AVUOs">
         <child id="5930160417407206503" name="text" index="2AVUOt" />
       </concept>
+      <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
+        <child id="3653684473245054701" name="elementType" index="2J_sx6" />
+      </concept>
+      <concept id="3653684473245054679" name="org.campagnelab.workflow.structure.NewBooleanLiteral" flags="ng" index="2J_sxW" />
       <concept id="1131453450772026527" name="org.campagnelab.workflow.structure.BaseLanguageAdapter" flags="ng" index="UAUTO">
         <child id="5930160417400088880" name="statements" index="2AuG1a" />
       </concept>
@@ -643,7 +647,7 @@
       <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
       <node concept="1uYdA0" id="6zpIx1pCOOm" role="1uLvPH">
         <ref role="1uK_4X" node="6zpIx1pCOLX" resolve="strListCh" />
-        <node concept="1yaZXp" id="6zpIx1pCQ1T" role="1ylr64" />
+        <node concept="1yaZXp" id="9PzSb940$j" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="6zpIx1pCOOn" role="1uLvPA">
         <property role="TrG5h" value="filesWithText" />
@@ -747,9 +751,45 @@
         </node>
       </node>
     </node>
+    <node concept="1CVceo" id="3aOvEIt8mtQ" role="2$L6iY">
+      <property role="TrG5h" value="tupleCh" />
+      <node concept="16Aex" id="3aOvEIt8muz" role="2$L62I">
+        <node concept="1OM9w" id="3aOvEIt8mu_" role="16Aew">
+          <node concept="1OMb9" id="3aOvEIt8mvu" role="1OM9Z">
+            <node concept="2$RDDD" id="3aOvEIt8mvw" role="1OMb8">
+              <property role="2$RDDE" value="3" />
+            </node>
+          </node>
+          <node concept="1OMdp" id="3aOvEIt8mxM" role="1OM9Z">
+            <node concept="2$RDGe" id="3aOvEIt8mxO" role="1OMem">
+              <property role="2$RDGf" value="a" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2$rMIF" id="dNnsoyWtYg">
     <property role="TrG5h" value="SubmitAnalyzeCombineWorkflow" />
+    <node concept="19SGf9" id="5wcZjhPahNp" role="GZ$AB">
+      <node concept="19SUe$" id="5wcZjhPahNq" role="19SJt6" />
+      <node concept="19SUe$" id="5wcZjhPahNr" role="19SJt6">
+        <property role="19SUeA" value="Workflow to evaluate Workflow languages" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="5UkDK45juxi" role="2$L6iY">
+      <property role="TrG5h" value="alignments" />
+      <node concept="0k3gA" id="5UkDK45ju_c" role="2$L62I">
+        <node concept="2$RAts" id="5UkDK45ju_e" role="0k3fU">
+          <node concept="2xgF7X" id="5UkDK45jxz$" role="2$RAvb">
+            <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*" />
+          </node>
+          <node concept="2xgF7X" id="5UkDK45jxz_" role="2$RAvb">
+            <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2UNLhE" id="5FDPSDjP0m8" role="2UW718">
       <ref role="2UNLhW" node="5FDPSDjP0kn" resolve="result" />
       <node concept="2UPiyC" id="5FDPSDjP0m9" role="2UNLhY">
@@ -803,25 +843,6 @@
       <node concept="1uYdA0" id="5FDPSDjQq$I" role="1uLvPH">
         <ref role="1uK_4X" node="dNnsoyWtZi" resolve="processed" />
         <node concept="1yaYav" id="5FDPSDjQqBV" role="1ylr64" />
-      </node>
-    </node>
-    <node concept="1CVceo" id="5UkDK45juxi" role="2$L6iY">
-      <property role="TrG5h" value="alignments" />
-      <node concept="0k3gA" id="5UkDK45ju_c" role="2$L62I">
-        <node concept="2$RAts" id="5UkDK45ju_e" role="0k3fU">
-          <node concept="2xgF7X" id="5UkDK45jxz$" role="2$RAvb">
-            <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*" />
-          </node>
-          <node concept="2xgF7X" id="5UkDK45jxz_" role="2$RAvb">
-            <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="19SGf9" id="5wcZjhPahNp" role="GZ$AB">
-      <node concept="19SUe$" id="5wcZjhPahNq" role="19SJt6" />
-      <node concept="19SUe$" id="5wcZjhPahNr" role="19SJt6">
-        <property role="19SUeA" value="Workflow to evaluate Workflow languages" />
       </node>
     </node>
   </node>
@@ -1030,6 +1051,20 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1CVceo" id="9PzSb9YGLS" role="2$L6iY">
+      <node concept="2J_sx7" id="4_Aq6F7CIo8" role="2$L62I">
+        <node concept="2J_sx7" id="4_Aq6F8wAv_" role="2J_sx6">
+          <node concept="2J_sxW" id="4_Aq6F8wAwC" role="2J_sx6" />
+        </node>
+        <node concept="2J_sx7" id="4_Aq6F8wArf" role="2J_sx6">
+          <node concept="2J_sxW" id="4_Aq6F8wAsL" role="2J_sx6" />
+          <node concept="2J_sxW" id="4_Aq6F8AaMr" role="2J_sx6" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="4_Aq6F8M4SA" role="2$L6iY">
+      <node concept="2J_sx7" id="4_Aq6F8M4SB" role="2$L62I" />
     </node>
   </node>
 </model>

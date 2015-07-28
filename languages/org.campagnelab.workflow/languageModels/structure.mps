@@ -722,7 +722,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="5AoFZCLzEJD">
@@ -1472,6 +1472,101 @@
     <node concept="1TJgyi" id="5FDPSDk4MVL" role="1TKVEl">
       <property role="TrG5h" value="instanceType" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8nSZ">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="PrimitiveType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8t9F">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="Range" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyj" id="3aOvEIt8t9J" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="start" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    </node>
+    <node concept="1TJgyj" id="3aOvEIt8t9L" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="end" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8nXu">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewStringLiteral" />
+    <property role="34LRSv" value="string" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <node concept="1TJgyi" id="3aOvEIt8ocz" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8nXt">
+    <property role="TrG5h" value="NewChannelInitializerExpression" />
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8rQW">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewTupleLiteral" />
+    <property role="34LRSv" value="tuple" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyj" id="3aOvEIt8rRi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8sII">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewFileLiteral" />
+    <property role="34LRSv" value="file" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyi" id="3aOvEIt8sIM" role="1TKVEl">
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8rqk">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewIntegerLiteral" />
+    <property role="34LRSv" value="integer" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <node concept="1TJgyi" id="3aOvEIt8rr3" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8rrG">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewListLiteral" />
+    <property role="34LRSv" value="list" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyj" id="3aOvEIt8rrH" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8rrn">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewBooleanLiteral" />
+    <property role="34LRSv" value="boolean" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <node concept="1TJgyi" id="3aOvEIt8rro" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

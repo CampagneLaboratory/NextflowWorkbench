@@ -28,6 +28,9 @@
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
+      <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
+        <child id="9126048691955220762" name="path" index="28jJRO" />
+      </concept>
       <concept id="2755237150521975431" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithString" flags="ng" index="aVJcg">
         <child id="2755237150521975437" name="value" index="aVJcq" />
       </concept>
@@ -133,6 +136,9 @@
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
+      <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
+        <child id="4278635856200826394" name="path" index="1BurEY" />
+      </concept>
       <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
         <reference id="4278635856200794928" name="language" index="1Busuk" />
       </concept>
@@ -268,6 +274,19 @@
         </node>
         <node concept="m$_wl" id="4oJiZHqTePX" role="39821P">
           <ref role="m_rDy" node="4oJiZHqTePK" resolve="org.campagnelab.NextflowWorkbench" />
+          <node concept="28jJK3" id="5wD$zX1xK1f" role="39821P">
+            <node concept="55IIr" id="5wD$zX1xK1h" role="28jJRO">
+              <node concept="2Ry0Ak" id="5wD$zX1xKlr" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5wD$zX1xKly" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.workflow.run" />
+                  <node concept="2Ry0Ak" id="5wD$zX1xKlD" role="2Ry0An">
+                    <property role="2Ry0Am" value="jsch-0.1.53.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3ygNvl" id="1PXjV8YMesz" role="39821P">
             <ref role="3ygNvj" to="90a9:1sO539bGQvs" resolve="mps-richtext" />
             <node concept="3qWCbU" id="1PXjV8YMeuk" role="1juEy9">
@@ -473,6 +492,33 @@
           <node concept="3bR9La" id="_lyg7ThSuR" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="t9i9:nhsmU5vDUv" resolve="org.campagnelab.util" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5wD$zX1xHLO" role="3bR37C">
+          <node concept="3bR9La" id="5wD$zX1xHLP" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:5xa9wY2vhaQ" resolve="jetbrains.mps.baseLanguage.execution.util" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5wD$zX1xHLQ" role="3bR37C">
+          <node concept="3bR9La" id="5wD$zX1xHLR" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:sx8XDLCp97" resolve="jetbrains.mps.execution.util" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5wD$zX1xHM1" role="3bR37C">
+          <node concept="1BurEX" id="5wD$zX1xHM2" role="1SiIV1">
+            <node concept="55IIr" id="5wD$zX1xHLS" role="1BurEY">
+              <node concept="2Ry0Ak" id="5wD$zX1xHLT" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5wD$zX1xHLU" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.workflow.run" />
+                  <node concept="2Ry0Ak" id="5wD$zX1xHLV" role="2Ry0An">
+                    <property role="2Ry0Am" value="jsch-0.1.53.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
