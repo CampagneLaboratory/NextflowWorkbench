@@ -4,7 +4,7 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="2" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
   </languages>
   <imports>
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
@@ -158,9 +158,9 @@
         <child id="8369613327464344471" name="inChannel" index="1uLvPH" />
       </concept>
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
-        <property id="959054848701206656" name="description" index="2PJaZd" />
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
+        <child id="6344724376800375955" name="description" index="GZ$AB" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
       </concept>
       <concept id="3855674281012038991" name="org.campagnelab.workflow.structure.ListInitializer" flags="ng" index="2$PLor">
@@ -750,7 +750,6 @@
   </node>
   <node concept="2$rMIF" id="dNnsoyWtYg">
     <property role="TrG5h" value="SubmitAnalyzeCombineWorkflow" />
-    <property role="2PJaZd" value="Workflow to evaluate Workflow languages" />
     <node concept="2UNLhE" id="5FDPSDjP0m8" role="2UW718">
       <ref role="2UNLhW" node="5FDPSDjP0kn" resolve="result" />
       <node concept="2UPiyC" id="5FDPSDjP0m9" role="2UNLhY">
@@ -817,6 +816,12 @@
             <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="19SGf9" id="5wcZjhPahNp" role="GZ$AB">
+      <node concept="19SUe$" id="5wcZjhPahNq" role="19SJt6" />
+      <node concept="19SUe$" id="5wcZjhPahNr" role="19SJt6">
+        <property role="19SUeA" value="Workflow to evaluate Workflow languages" />
       </node>
     </node>
   </node>
