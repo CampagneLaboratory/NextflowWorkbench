@@ -103,7 +103,6 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="6202591221123591000" name="org.campagnelab.workflow.structure.FileList" flags="ng" index="04MM2" />
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
         <reference id="6509497193195685433" name="variable" index="0wEsc" />
       </concept>
@@ -118,6 +117,9 @@
       </concept>
       <concept id="3121388506946094358" name="org.campagnelab.workflow.structure.StringLiteralTuple" flags="ng" index="1OMdp">
         <child id="3121388506946094553" name="string" index="1OMem" />
+      </concept>
+      <concept id="6551004122101547533" name="org.campagnelab.workflow.structure.DNANexus" flags="ng" index="94_m7">
+        <property id="6551004122103099121" name="instanceType" index="eYJ_V" />
       </concept>
       <concept id="748852418098455525" name="org.campagnelab.workflow.structure.NameInAChannelRef" flags="ng" index="2b_LqF">
         <reference id="748852418098455526" name="value" index="2b_LqC" />
@@ -594,7 +596,9 @@
   </node>
   <node concept="pkhaZ" id="21kmpcT2JwM">
     <property role="TrG5h" value="nextflow.config" />
-    <node concept="2LyH2s" id="6zpIx1pCnuR" role="pkh9A" />
+    <node concept="94_m7" id="5FDPSDk94XD" role="pkh9A">
+      <property role="eYJ_V" value="mem2_hdd2_x2" />
+    </node>
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
@@ -619,7 +623,9 @@
     </node>
     <node concept="1uLvKC" id="2BFWbNo6gbW" role="2ulM7n">
       <property role="TrG5h" value="alignment" />
-      <node concept="04MM2" id="2BFWbNo6geM" role="2ybFLk" />
+      <node concept="kktkh" id="5FDPSDk34_T" role="2ybFLk">
+        <node concept="16pRw0" id="5FDPSDk34AL" role="2y8EMt" />
+      </node>
     </node>
   </node>
   <node concept="2$rMIF" id="5rY6S$LVtPP">
@@ -760,7 +766,6 @@
         </node>
       </node>
     </node>
-    <node concept="2LyH2s" id="5FDPSDjYqL8" role="2LyH5s" />
     <node concept="2$rEH5" id="dNnsoyWtYi" role="2$rEHq">
       <ref role="2$rEH4" node="3YXYb8iAEl2" resolve="submit" />
       <node concept="1uLkD0" id="dNnsoyWtYm" role="1uLvPA">

@@ -11,10 +11,10 @@
     <import index="tp2u" ref="r:00000000-0000-4000-0000-011c8959032a(jetbrains.mps.baseLanguage.collections.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
-    <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.files.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.files.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -68,7 +68,6 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
-      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
@@ -377,23 +376,9 @@
           <ref role="1k5W1q" node="6aaE4aM9P_2" resolve="Label" />
         </node>
       </node>
-      <node concept="3EZMnI" id="49c3W7NMZtx" role="3EZMnx">
-        <node concept="VPM3Z" id="49c3W7NMZt$" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="lj46D" id="5yyd2HFBxNu" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="3F0ifn" id="49c3W7NMZtA" role="3EZMnx">
-          <property role="3F0ifm" value="executor = " />
-          <node concept="pVoyu" id="49c3W7NMZtB" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F1sOY" id="49c3W7NMZuO" role="3EZMnx">
-          <ref role="1NtTu8" to="iowz:49c3W7NLHUt" />
-        </node>
-        <node concept="2iRfu4" id="49c3W7NMZtC" role="2iSdaV" />
+      <node concept="3F0ifn" id="5FDPSDkcCC6" role="3EZMnx" />
+      <node concept="3F0ifn" id="5FDPSDkaXfO" role="3EZMnx">
+        <property role="3F0ifm" value="with input:" />
       </node>
       <node concept="3F2HdR" id="3m26PihhC01" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:3m26PihhBZE" />
@@ -427,7 +412,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="5HJ0QzxFaFl" role="3EZMnx">
-        <property role="3F0ifm" value="reports:" />
+        <property role="3F0ifm" value="and report:" />
       </node>
       <node concept="3EZMnI" id="5HJ0QzxFaGF" role="3EZMnx">
         <node concept="2iRkQZ" id="5HJ0QzxFaGG" role="2iSdaV" />
@@ -949,20 +934,6 @@
     <node concept="3F0ifn" id="3m9W35nIEYJ" role="2wV5jI">
       <property role="3F0ifm" value="toSortedList()" />
       <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="235lbi5IybY">
-    <property role="3GE5qa" value="executors" />
-    <ref role="1XX52x" to="iowz:49c3W7NLHXu" resolve="SGE" />
-    <node concept="3F0ifn" id="235lbi5ICNi" role="2wV5jI">
-      <property role="3F0ifm" value="sge" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="235lbi5ICNr">
-    <property role="3GE5qa" value="executors" />
-    <ref role="1XX52x" to="iowz:49c3W7NLHXt" resolve="Local" />
-    <node concept="3F0ifn" id="235lbi5ICNt" role="2wV5jI">
-      <property role="3F0ifm" value="local" />
     </node>
   </node>
   <node concept="24kQdi" id="21kmpcSWrYD">
@@ -2286,6 +2257,33 @@
         </node>
       </node>
       <node concept="l2Vlx" id="3aOvEIsZGAt" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5FDPSDjYL$n">
+    <property role="3GE5qa" value="executors" />
+    <ref role="1XX52x" to="iowz:49c3W7NLHXs" resolve="Executor" />
+    <node concept="PMmxH" id="5FDPSDjYM96" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5FDPSDk4MZI">
+    <property role="3GE5qa" value="executors" />
+    <ref role="1XX52x" to="iowz:5FDPSDjYS8d" resolve="DNANexus" />
+    <node concept="3EZMnI" id="5FDPSDk4MZK" role="2wV5jI">
+      <node concept="3F0ifn" id="5FDPSDk4MZR" role="3EZMnx">
+        <property role="3F0ifm" value="DNANexus {" />
+      </node>
+      <node concept="3F0ifn" id="5FDPSDk4MZX" role="3EZMnx">
+        <property role="3F0ifm" value="instanceType=" />
+        <node concept="Vb9p2" id="5FDPSDk4N1X" role="3F10Kt" />
+      </node>
+      <node concept="3F0A7n" id="5FDPSDk4N05" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:5FDPSDk4MVL" resolve="instanceType" />
+      </node>
+      <node concept="3F0ifn" id="5FDPSDk4N0f" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="l2Vlx" id="5FDPSDk4MZN" role="2iSdaV" />
     </node>
   </node>
 </model>

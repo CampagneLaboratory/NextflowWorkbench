@@ -19,7 +19,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BaseLanguageAdapter_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,204,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,216,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BooleanChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
@@ -51,6 +51,9 @@
     <file name="ChannelType_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ChannelType_BehaviorDescriptor" />
     </file>
+    <file name="Cirrus_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Cirrus_BehaviorDescriptor" />
+    </file>
     <file name="ClusterOptions_BehaviorDescriptor.java">
       <unit at="7,0,24,0" name="org.campagnelab.workflow.behavior.ClusterOptions_BehaviorDescriptor" />
     </file>
@@ -71,6 +74,12 @@
     </file>
     <file name="ConditionalVariableRef_BehaviorDescriptor.java">
       <unit at="11,0,25,0" name="org.campagnelab.workflow.behavior.ConditionalVariableRef_BehaviorDescriptor" />
+    </file>
+    <file name="DNANexus_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.DNANexus_BehaviorDescriptor" />
+    </file>
+    <file name="DRMAA_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.DRMAA_BehaviorDescriptor" />
     </file>
     <file name="ErrorStrategies_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ErrorStrategies_BehaviorDescriptor" />
@@ -150,6 +159,9 @@
     <file name="KeyFile_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.KeyFile_BehaviorDescriptor" />
     </file>
+    <file name="LSF_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.LSF_BehaviorDescriptor" />
+    </file>
     <file name="ListChannel_BehaviorDescriptor.java">
       <unit at="7,0,21,0" name="org.campagnelab.workflow.behavior.ListChannel_BehaviorDescriptor" />
     </file>
@@ -209,6 +221,9 @@
     </file>
     <file name="OutputChannel_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.OutputChannel_BehaviorDescriptor" />
+    </file>
+    <file name="PBS_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.PBS_BehaviorDescriptor" />
     </file>
     <file name="Penv_BehaviorDescriptor.java">
       <unit at="7,0,24,0" name="org.campagnelab.workflow.behavior.Penv_BehaviorDescriptor" />
@@ -284,6 +299,9 @@
     </file>
     <file name="Script_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.Script_BehaviorDescriptor" />
+    </file>
+    <file name="Slurm_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Slurm_BehaviorDescriptor" />
     </file>
     <file name="StringChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.StringChannel_BehaviorDescriptor" />
@@ -1552,6 +1570,17 @@
         <var name="thisNode" id="6430767599998021111" />
       </scope>
       <unit id="6430767599998021111" at="9,0,14,0" name="org.campagnelab.workflow.behavior.NextflowConfig_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/6551004122103099520">
+    <file name="DNANexus_Behavior.java">
+      <node id="6551004122103102316" at="10,43,11,186" concept="3" />
+      <node id="6551004122103099520" at="10,0,13,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6551004122103099522" at="10,43,11,186" />
+      <scope id="6551004122103099520" at="10,0,13,0">
+        <var name="thisNode" id="6551004122103099520" />
+      </scope>
+      <unit id="6551004122103099520" at="9,0,14,0" name="org.campagnelab.workflow.behavior.DNANexus_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/6588488528864881604">
