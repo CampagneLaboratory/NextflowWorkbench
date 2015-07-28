@@ -626,6 +626,12 @@
   </node>
   <node concept="2$rMIF" id="5rY6S$LVtPP">
     <property role="TrG5h" value="FlattenTest" />
+    <node concept="2UNLhE" id="5UkDK45ik_c" role="2UW718">
+      <ref role="2UNLhW" node="5FDPSDjYurf" resolve="out3" />
+      <node concept="2UPiyC" id="5UkDK45ik_d" role="2UNLhY">
+        <node concept="3clFbS" id="5UkDK45ik_e" role="2VODD2" />
+      </node>
+    </node>
     <node concept="2$rEH5" id="6zpIx1pCOOk" role="2$rEHq">
       <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
       <node concept="1uYdA0" id="6zpIx1pCOOm" role="1uLvPH">
