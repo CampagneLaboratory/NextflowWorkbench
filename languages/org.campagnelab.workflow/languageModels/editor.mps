@@ -116,6 +116,7 @@
         <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1139416841293" name="usesBraces" index="1ayjP4" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -389,6 +390,9 @@
         <node concept="lj46D" id="5yyd2HFBxNz" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+      </node>
+      <node concept="3F0ifn" id="5FDPSDkeA_x" role="3EZMnx">
+        <property role="3F0ifm" value="" />
       </node>
       <node concept="3F0ifn" id="5yyd2HFI_i2" role="3EZMnx">
         <property role="3F0ifm" value="do:" />
@@ -689,9 +693,13 @@
   <node concept="24kQdi" id="70dPcAeCQ1r">
     <property role="3GE5qa" value="scripts" />
     <ref role="1XX52x" to="iowz:70dPcAeBye8" resolve="RichScript" />
-    <node concept="3F1sOY" id="70dPcAeCQJe" role="2wV5jI">
-      <ref role="1NtTu8" to="iowz:70dPcAeBC7L" />
-      <ref role="1k5W1q" node="4MfZ7_pOGNL" resolve="ScriptBody" />
+    <node concept="3EZMnI" id="5FDPSDkeABD" role="2wV5jI">
+      <property role="1ayjP4" value="true" />
+      <node concept="2iRkQZ" id="5FDPSDkgpHn" role="2iSdaV" />
+      <node concept="3F1sOY" id="70dPcAeCQJe" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:70dPcAeBC7L" />
+        <ref role="1k5W1q" node="4MfZ7_pOGNL" resolve="ScriptBody" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="70dPcAeDqfD">

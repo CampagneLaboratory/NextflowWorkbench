@@ -820,7 +820,7 @@
           <ref role="3YE7sm" node="6qiI2N5urdM" resolve="strInput" />
         </node>
         <node concept="19SUe$" id="6zpIx1pCOJH" role="19SJt6">
-          <property role="19SUeA" value=" &gt; file.txt" />
+          <property role="19SUeA" value=" &gt; file.tx&#10;&#10;&#10;t" />
         </node>
       </node>
     </node>
