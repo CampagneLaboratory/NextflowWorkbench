@@ -181,7 +181,7 @@
     </node>
     <node concept="19SGf9" id="5wcZjhPahNh" role="GZ$AB">
       <node concept="19SUe$" id="5wcZjhPahNi" role="19SJt6">
-        <property role="19SUeA" value="Workflow to evaluate Workflow languages" />
+        <property role="19SUeA" value="Workflow to evaluate Workflow languages " />
       </node>
     </node>
   </node>
