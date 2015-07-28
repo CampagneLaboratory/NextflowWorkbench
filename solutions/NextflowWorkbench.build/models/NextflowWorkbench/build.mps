@@ -322,7 +322,7 @@
           <ref role="3Mxwex" node="3gMg70bX6Gp" resolve="workbench_version" />
         </node>
       </node>
-      <node concept="m$f5U" id="4oJiZHqTePP" role="m$_yh">
+      <node concept="m$f5U" id="3aOvEIrY2eP" role="m$_yh">
         <ref role="m$f5T" node="4oJiZHqTePJ" resolve="NextflowWorkbench" />
       </node>
       <node concept="m$_yC" id="4oJiZHqTePQ" role="m$_yJ">

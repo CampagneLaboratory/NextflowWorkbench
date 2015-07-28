@@ -769,5 +769,96 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="47MGIsNO_Wo">
+    <property role="3GE5qa" value="channelTypes" />
+    <ref role="1M2myG" to="iowz:7gAPJCERGEz" resolve="BooleanChannel" />
+    <node concept="nKS2y" id="47MGIsNOA0L" role="1MLUbF">
+      <node concept="3clFbS" id="47MGIsNOA0M" role="2VODD2">
+        <node concept="3clFbF" id="47MGIsNOA5J" role="3cqZAp">
+          <node concept="3clFbT" id="47MGIsNOA5I" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="47MGIsNOAaU">
+    <property role="3GE5qa" value="channelTypes" />
+    <ref role="1M2myG" to="iowz:7gAPJCERGEA" resolve="FileChannel" />
+    <node concept="nKS2y" id="47MGIsNOAaY" role="1MLUbF">
+      <node concept="3clFbS" id="47MGIsNOAaZ" role="2VODD2">
+        <node concept="3clFbF" id="47MGIsNOAfW" role="3cqZAp">
+          <node concept="3clFbT" id="47MGIsNOAfV" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="47MGIsNOAl7">
+    <property role="3GE5qa" value="channelTypes" />
+    <ref role="1M2myG" to="iowz:5ok1XDm1KPg" resolve="FileListChannel" />
+    <node concept="nKS2y" id="47MGIsNOAle" role="1MLUbF">
+      <node concept="3clFbS" id="47MGIsNOAlf" role="2VODD2">
+        <node concept="3clFbF" id="47MGIsNOAqc" role="3cqZAp">
+          <node concept="3clFbT" id="47MGIsNOAqb" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="47MGIsNOAvn">
+    <property role="3GE5qa" value="channelTypes" />
+    <ref role="1M2myG" to="iowz:7gAPJCERGEu" resolve="IntegerChannel" />
+    <node concept="nKS2y" id="47MGIsNOAvx" role="1MLUbF">
+      <node concept="3clFbS" id="47MGIsNOAvy" role="2VODD2">
+        <node concept="3clFbF" id="47MGIsNOA$v" role="3cqZAp">
+          <node concept="3clFbT" id="47MGIsNOA$u" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="47MGIsNOADE">
+    <property role="3GE5qa" value="channelTypes" />
+    <ref role="1M2myG" to="iowz:3v6eDgz_YY9" resolve="ListChannel" />
+    <node concept="nKS2y" id="47MGIsNOADR" role="1MLUbF">
+      <node concept="3clFbS" id="47MGIsNOADS" role="2VODD2">
+        <node concept="3clFbF" id="47MGIsNOAIP" role="3cqZAp">
+          <node concept="3clFbT" id="47MGIsNOAIO" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="47MGIsNOAO0">
+    <property role="3GE5qa" value="channelTypes" />
+    <ref role="1M2myG" to="iowz:7gAPJCERFHl" resolve="StringChannel" />
+    <node concept="nKS2y" id="47MGIsNOAOg" role="1MLUbF">
+      <node concept="3clFbS" id="47MGIsNOAOh" role="2VODD2">
+        <node concept="3clFbF" id="47MGIsNOATe" role="3cqZAp">
+          <node concept="3clFbT" id="47MGIsNOATd" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="47MGIsNOAYp">
+    <property role="3GE5qa" value="channelTypes" />
+    <ref role="1M2myG" to="iowz:3v6eDgzA3ze" resolve="TupleChannel" />
+    <node concept="nKS2y" id="47MGIsNOAYG" role="1MLUbF">
+      <node concept="3clFbS" id="47MGIsNOAYH" role="2VODD2">
+        <node concept="3clFbF" id="47MGIsNOB1h" role="3cqZAp">
+          <node concept="3clFbT" id="47MGIsNOB1g" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
