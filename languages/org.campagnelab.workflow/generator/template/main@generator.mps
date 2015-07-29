@@ -1022,7 +1022,7 @@
             </node>
           </node>
           <node concept="2pNUuL" id="6qWs7gtKwU3" role="2pNNFR">
-            <property role="2pNUuO" value="value" />
+            <property role="2pNUuO" value="location" />
           </node>
         </node>
         <node concept="2pNNFK" id="6qWs7gtKxMs" role="3o6s8t">
@@ -1036,6 +1036,19 @@
           </node>
           <node concept="2pNUuL" id="6qWs7gtKxMv" role="2pNNFR">
             <property role="2pNUuO" value="location" />
+          </node>
+        </node>
+        <node concept="2pNNFK" id="7XcQC$Ho0C4" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="7XcQC$Ho0C5" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="7XcQC$Ho0C6" role="2pMdts">
+              <property role="2pMdty" value="nxf.classpath" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="7XcQC$Ho0C7" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
           </node>
         </node>
         <node concept="3o6iSG" id="6qWs7gtKwVd" role="3o6s8t" />
@@ -1053,6 +1066,22 @@
               <property role="2pNUuO" value="dir" />
               <node concept="2pMdtt" id="6qWs7gtKymh" role="2pMdts">
                 <property role="2pMdty" value="${working.dir}" />
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7XcQC$Ho0Bw" role="3o6s8t">
+              <property role="2pNNFO" value="env" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="7XcQC$Ho0BB" role="2pNNFR">
+                <property role="2pNUuO" value="key" />
+                <node concept="2pMdtt" id="7XcQC$Ho0BD" role="2pMdts">
+                  <property role="2pMdty" value="NXF_CLASSPATH" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7XcQC$Ho0BH" role="2pNNFR">
+                <property role="2pNUuO" value="path" />
+                <node concept="2pMdtt" id="7XcQC$Ho0BM" role="2pMdts">
+                  <property role="2pMdty" value="${nxf.classpath}" />
+                </node>
               </node>
             </node>
             <node concept="2pNNFK" id="6qWs7gtKyb9" role="3o6s8t">
