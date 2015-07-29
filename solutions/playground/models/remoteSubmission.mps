@@ -162,18 +162,18 @@
   </node>
   <node concept="2$rMIF" id="5wD$zX2n8RY">
     <property role="TrG5h" value="EchoWorkflow" />
-    <node concept="1CVceo" id="5wD$zX2n8Te" role="2$L6iY">
-      <property role="TrG5h" value="stringToEcho" />
-      <node concept="2J_sx7" id="5wD$zX2n8Tf" role="2$L62I">
-        <node concept="2J_g7P" id="5wD$zX2n8Uc" role="2J_sx6">
-          <property role="2J_vQ8" value="Hello from $HOSTNAME" />
-        </node>
-      </node>
-    </node>
     <node concept="2$rEH5" id="5wD$zX2n8RZ" role="2$rEHq">
       <ref role="2$rEH4" node="3LlDVJUaZyv" resolve="EchoString" />
       <node concept="1uYdA0" id="5wD$zX2n8T3" role="1uLvPH">
-        <ref role="1uK_4X" node="5wD$zX2n8Te" resolve="stringToEcho" />
+        <ref role="1uK_4X" node="6qWs7gtKn23" resolve="stringToEcho" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="6qWs7gtKn23" role="2$L6iY">
+      <property role="TrG5h" value="stringToEcho" />
+      <node concept="2J_sx7" id="6qWs7gtKn24" role="2$L62I">
+        <node concept="2J_g7P" id="6qWs7gtKn2D" role="2J_sx6">
+          <property role="2J_vQ8" value="Hello from $HOSTNAME" />
+        </node>
       </node>
     </node>
   </node>
