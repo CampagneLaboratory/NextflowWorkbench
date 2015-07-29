@@ -837,7 +837,6 @@
         <ref role="1uK_4X" node="47MGIsN_Ey$" resolve="tupleChannel" />
         <node concept="1nBfdn" id="3aOvEIsMeOk" role="1ylr64" />
       </node>
-      <node concept="1uYdA0" id="5wcZjhPSgQH" role="1uLvPH" />
     </node>
     <node concept="1CVceo" id="47MGIsN_Ey$" role="2$L6iY">
       <property role="TrG5h" value="tupleChannel" />
