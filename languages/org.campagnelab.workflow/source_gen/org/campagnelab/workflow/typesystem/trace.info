@@ -730,52 +730,43 @@
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/177205552232765611">
     <file name="check_NewFileLiteral_NonTypesystemRule.java">
-      <node id="177205552232765673" at="23,7,24,60" concept="6" />
-      <node id="177205552232765673" at="24,60,25,282" concept="6" />
-      <node id="177205552232765611" at="29,46,30,63" concept="7" />
-      <node id="177205552232765611" at="33,5,34,130" concept="6" />
-      <node id="177205552232765611" at="34,130,35,45" concept="7" />
-      <node id="177205552232765611" at="38,30,39,17" concept="7" />
-      <node id="177205552232765676" at="41,62,42,51" concept="7" />
-      <node id="177205552232765611" at="19,0,21,0" concept="1" trace="check_NewFileLiteral_NonTypesystemRule#()V" />
-      <node id="177205552232765611" at="29,0,32,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
-      <node id="177205552232765611" at="38,0,41,0" concept="5" trace="overrides#()Z" />
-      <node id="177205552232765676" at="41,0,44,0" concept="11" trace="neq_waz7y_a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="177205552232765673" at="22,558,26,7" concept="0" />
-      <node id="177205552232765611" at="32,68,36,5" concept="0" />
-      <node id="177205552232765671" at="21,127,27,5" concept="4" />
-      <node id="177205552232765611" at="32,0,38,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="177205552232765611" at="21,0,29,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="177205552232765611" at="19,51,19,51" />
-      <scope id="177205552232765611" at="29,46,30,63" />
-      <scope id="177205552232765611" at="38,30,39,17" />
-      <scope id="177205552232765676" at="41,62,42,51" />
-      <scope id="177205552232765611" at="19,0,21,0" />
-      <scope id="177205552232765673" at="23,7,25,282">
+      <node id="177205552232765673" at="19,5,20,58" concept="6" />
+      <node id="177205552232765673" at="20,58,21,280" concept="6" />
+      <node id="177205552232765611" at="24,46,25,63" concept="7" />
+      <node id="177205552232765611" at="28,5,29,130" concept="6" />
+      <node id="177205552232765611" at="29,130,30,45" concept="7" />
+      <node id="177205552232765611" at="33,30,34,17" concept="7" />
+      <node id="177205552232765611" at="16,0,18,0" concept="1" trace="check_NewFileLiteral_NonTypesystemRule#()V" />
+      <node id="177205552232765611" at="24,0,27,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="177205552232765611" at="33,0,36,0" concept="5" trace="overrides#()Z" />
+      <node id="177205552232765673" at="18,127,22,5" concept="0" />
+      <node id="177205552232765611" at="27,68,31,5" concept="0" />
+      <node id="177205552232765611" at="18,0,24,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <node id="177205552232765611" at="27,0,33,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <scope id="177205552232765611" at="16,51,16,51" />
+      <scope id="177205552232765611" at="24,46,25,63" />
+      <scope id="177205552232765611" at="33,30,34,17" />
+      <scope id="177205552232765611" at="16,0,18,0" />
+      <scope id="177205552232765673" at="19,5,21,280">
         <var name="_reporter_2309309498" id="177205552232765673" />
         <var name="errorTarget" id="177205552232765673" />
       </scope>
-      <scope id="177205552232765611" at="33,5,35,45">
+      <scope id="177205552232765611" at="28,5,30,45">
         <var name="b" id="177205552232765611" />
       </scope>
-      <scope id="177205552232765611" at="29,0,32,0" />
-      <scope id="177205552232765611" at="38,0,41,0" />
-      <scope id="177205552232765676" at="41,0,44,0">
-        <var name="a" id="177205552232765676" />
-        <var name="b" id="177205552232765676" />
-      </scope>
-      <scope id="177205552232765672" at="22,558,26,7" />
-      <scope id="177205552232765611" at="32,68,36,5" />
-      <scope id="177205552232765612" at="21,127,27,5" />
-      <scope id="177205552232765611" at="32,0,38,0">
-        <var name="argument" id="177205552232765611" />
-      </scope>
-      <scope id="177205552232765611" at="21,0,29,0">
+      <scope id="177205552232765611" at="24,0,27,0" />
+      <scope id="177205552232765611" at="33,0,36,0" />
+      <scope id="177205552232765612" at="18,127,22,5" />
+      <scope id="177205552232765611" at="27,68,31,5" />
+      <scope id="177205552232765611" at="18,0,24,0">
         <var name="newFileLiteral" id="177205552232765611" />
         <var name="status" id="177205552232765611" />
         <var name="typeCheckingContext" id="177205552232765611" />
       </scope>
-      <unit id="177205552232765611" at="18,0,45,0" name="org.campagnelab.workflow.typesystem.check_NewFileLiteral_NonTypesystemRule" />
+      <scope id="177205552232765611" at="27,0,33,0">
+        <var name="argument" id="177205552232765611" />
+      </scope>
+      <unit id="177205552232765611" at="15,0,37,0" name="org.campagnelab.workflow.typesystem.check_NewFileLiteral_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/177205552232770388">
@@ -2257,52 +2248,52 @@
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/6202591221122654402">
     <file name="check_GlobalFilePath_NonTypesystemRule.java">
-      <node id="6202591221122655390" at="23,7,24,60" concept="6" />
-      <node id="6202591221122655390" at="24,60,25,283" concept="6" />
-      <node id="6202591221122654402" at="29,46,30,57" concept="7" />
-      <node id="6202591221122654402" at="33,5,34,130" concept="6" />
-      <node id="6202591221122654402" at="34,130,35,45" concept="7" />
-      <node id="6202591221122654402" at="38,30,39,17" concept="7" />
-      <node id="248645510008990614" at="41,63,42,51" concept="7" />
-      <node id="6202591221122654402" at="19,0,21,0" concept="1" trace="check_GlobalFilePath_NonTypesystemRule#()V" />
-      <node id="6202591221122654402" at="29,0,32,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
-      <node id="6202591221122654402" at="38,0,41,0" concept="5" trace="overrides#()Z" />
-      <node id="248645510008990614" at="41,0,44,0" concept="11" trace="neq_axmccn_a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6202591221122655390" at="22,559,26,7" concept="0" />
-      <node id="6202591221122654402" at="32,68,36,5" concept="0" />
-      <node id="248645510007843121" at="21,127,27,5" concept="4" />
-      <node id="6202591221122654402" at="32,0,38,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="6202591221122654402" at="21,0,29,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="6202591221122654402" at="19,51,19,51" />
-      <scope id="6202591221122654402" at="29,46,30,57" />
-      <scope id="6202591221122654402" at="38,30,39,17" />
-      <scope id="248645510008990614" at="41,63,42,51" />
-      <scope id="6202591221122654402" at="19,0,21,0" />
-      <scope id="6202591221122655390" at="23,7,25,283">
+      <node id="6202591221122655390" at="25,7,26,60" concept="6" />
+      <node id="6202591221122655390" at="26,60,27,283" concept="6" />
+      <node id="6202591221122654402" at="31,46,32,57" concept="7" />
+      <node id="6202591221122654402" at="35,5,36,130" concept="6" />
+      <node id="6202591221122654402" at="36,130,37,45" concept="7" />
+      <node id="6202591221122654402" at="40,30,41,17" concept="7" />
+      <node id="248645510008990614" at="43,63,44,51" concept="7" />
+      <node id="6202591221122654402" at="21,0,23,0" concept="1" trace="check_GlobalFilePath_NonTypesystemRule#()V" />
+      <node id="6202591221122654402" at="31,0,34,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="6202591221122654402" at="40,0,43,0" concept="5" trace="overrides#()Z" />
+      <node id="248645510008990614" at="43,0,46,0" concept="11" trace="neq_axmccn_a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6202591221122655390" at="24,616,28,7" concept="0" />
+      <node id="6202591221122654402" at="34,68,38,5" concept="0" />
+      <node id="248645510007843121" at="23,127,29,5" concept="4" />
+      <node id="6202591221122654402" at="34,0,40,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6202591221122654402" at="23,0,31,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6202591221122654402" at="21,51,21,51" />
+      <scope id="6202591221122654402" at="31,46,32,57" />
+      <scope id="6202591221122654402" at="40,30,41,17" />
+      <scope id="248645510008990614" at="43,63,44,51" />
+      <scope id="6202591221122654402" at="21,0,23,0" />
+      <scope id="6202591221122655390" at="25,7,27,283">
         <var name="_reporter_2309309498" id="6202591221122655390" />
         <var name="errorTarget" id="6202591221122655390" />
       </scope>
-      <scope id="6202591221122654402" at="33,5,35,45">
+      <scope id="6202591221122654402" at="35,5,37,45">
         <var name="b" id="6202591221122654402" />
       </scope>
-      <scope id="6202591221122654402" at="29,0,32,0" />
-      <scope id="6202591221122654402" at="38,0,41,0" />
-      <scope id="248645510008990614" at="41,0,44,0">
+      <scope id="6202591221122654402" at="31,0,34,0" />
+      <scope id="6202591221122654402" at="40,0,43,0" />
+      <scope id="248645510008990614" at="43,0,46,0">
         <var name="a" id="248645510008990614" />
         <var name="b" id="248645510008990614" />
       </scope>
-      <scope id="248645510007843123" at="22,559,26,7" />
-      <scope id="6202591221122654402" at="32,68,36,5" />
-      <scope id="6202591221122654403" at="21,127,27,5" />
-      <scope id="6202591221122654402" at="32,0,38,0">
+      <scope id="248645510007843123" at="24,616,28,7" />
+      <scope id="6202591221122654402" at="34,68,38,5" />
+      <scope id="6202591221122654403" at="23,127,29,5" />
+      <scope id="6202591221122654402" at="34,0,40,0">
         <var name="argument" id="6202591221122654402" />
       </scope>
-      <scope id="6202591221122654402" at="21,0,29,0">
+      <scope id="6202591221122654402" at="23,0,31,0">
         <var name="globalFilePath" id="6202591221122654402" />
         <var name="status" id="6202591221122654402" />
         <var name="typeCheckingContext" id="6202591221122654402" />
       </scope>
-      <unit id="6202591221122654402" at="18,0,45,0" name="org.campagnelab.workflow.typesystem.check_GlobalFilePath_NonTypesystemRule" />
+      <unit id="6202591221122654402" at="20,0,47,0" name="org.campagnelab.workflow.typesystem.check_GlobalFilePath_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/6202591221123606334">

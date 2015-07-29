@@ -124,7 +124,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -5741,13 +5741,13 @@
   </node>
   <node concept="13h7C7" id="5$YFgXYYiRR">
     <property role="3GE5qa" value="" />
-    <ref role="13h7C2" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
+    <ref role="13h7C2" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
     <node concept="13hLZK" id="5$YFgXYYiRS" role="13h7CW">
       <node concept="3clFbS" id="5$YFgXYYiRT" role="2VODD2">
         <node concept="3clFbF" id="5$YFgXYYlfO" role="3cqZAp">
           <node concept="37vLTI" id="5$YFgXYYmPV" role="3clFbG">
             <node concept="Xl_RD" id="5$YFgXYYmRg" role="37vLTx">
-              <property role="Xl_RC" value="nextflow.config" />
+              <property role="Xl_RC" value="workflow.config" />
             </node>
             <node concept="2OqwBi" id="5$YFgXYYmlr" role="37vLTJ">
               <node concept="13iPFW" id="5$YFgXYYlfN" role="2Oq$k0" />

@@ -45,7 +45,7 @@
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
       </concept>
-      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" index="PMmxH">
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
@@ -85,7 +85,7 @@
         <child id="1139535280620" name="executeFunction" index="1hA7z_" />
       </concept>
       <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
-      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" index="1iCGBv">
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
       <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
@@ -95,7 +95,7 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
-      <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" index="1u4HXA">
+      <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
         <property id="1139746504291" name="imageFile" index="1ubRXE" />
       </concept>
       <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
@@ -115,24 +115,24 @@
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
         <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
-      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" index="3EZMnI">
+      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1139416841293" name="usesBraces" index="1ayjP4" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" index="3F0ifn">
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" index="3F0A7n" />
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" index="3F1sOY" />
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" index="3F2HdR" />
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
       </concept>
-      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" index="1HlG4h">
+      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
@@ -164,7 +164,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -978,15 +978,24 @@
   </node>
   <node concept="24kQdi" id="21kmpcT2J$a">
     <property role="3GE5qa" value="" />
-    <ref role="1XX52x" to="iowz:21kmpcT1kGG" resolve="NextflowConfig" />
+    <ref role="1XX52x" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
     <node concept="3EZMnI" id="21kmpcT2J$c" role="2wV5jI">
-      <node concept="3F0ifn" id="21kmpcTkFBv" role="3EZMnx">
-        <property role="3F0ifm" value="name =" />
+      <node concept="3F0ifn" id="5wD$zX1ZHg9" role="3EZMnx">
+        <property role="3F0ifm" value="Workflow configuration" />
+        <ref role="1k5W1q" node="3ftTtbydPOt" resolve="Keyword" />
+        <node concept="ljvvj" id="5wD$zX1ZHhy" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
-      <node concept="3F0A7n" id="21kmpcTkFBY" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <node concept="VPxyj" id="5$YFgXYYiJz" role="3F10Kt">
-          <property role="VOm3f" value="false" />
+      <node concept="3F0ifn" id="5wD$zX1ZHie" role="3EZMnx">
+        <node concept="ljvvj" id="5wD$zX1ZHiN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="21kmpcTkFBv" role="3EZMnx">
+        <property role="3F0ifm" value="nextflow.config: " />
+        <node concept="ljvvj" id="5wD$zX1ZHh_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="21kmpcT2J$m" role="3EZMnx">
@@ -1016,6 +1025,14 @@
         </node>
       </node>
       <node concept="l2Vlx" id="21kmpcT2J$f" role="2iSdaV" />
+      <node concept="3F0ifn" id="5wD$zX1E3yW" role="3EZMnx" />
+      <node concept="3F1sOY" id="5wD$zX1BDZS" role="3EZMnx">
+        <property role="1$x2rV" value="optional config for remote submissions" />
+        <ref role="1NtTu8" to="iowz:5wD$zX1BzGp" />
+        <node concept="pVoyu" id="5wD$zX1E3yp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="21kmpcT9Xd$">
@@ -1984,7 +2001,7 @@
           <node concept="pj6Ft" id="3LlDVJSEHIs" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="2iRkQZ" id="3LlDVJSSJpU" role="2czzBx" />
+          <node concept="l2Vlx" id="5wD$zX1IPsL" role="2czzBx" />
         </node>
       </node>
     </node>
@@ -1994,13 +2011,8 @@
     <ref role="1XX52x" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
     <node concept="3EZMnI" id="5OPtsPGnYp" role="2wV5jI">
       <node concept="3F0ifn" id="5OPtsPGnYz" role="3EZMnx">
-        <property role="3F0ifm" value="Configuration for remote submissions: " />
+        <property role="3F0ifm" value="remote workflow execution: " />
         <node concept="ljvvj" id="3LlDVJS0fua" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="3LlDVJS0fsA" role="3EZMnx">
-        <node concept="ljvvj" id="3LlDVJS0ftl" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -2050,7 +2062,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="3LlDVJS9vi6" role="3EZMnx">
-        <property role="3F0ifm" value="Settings to add to the remote environment:" />
+        <property role="3F0ifm" value="settings to add to the remote environment: " />
         <node concept="ljvvj" id="3LlDVJS9vjU" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
