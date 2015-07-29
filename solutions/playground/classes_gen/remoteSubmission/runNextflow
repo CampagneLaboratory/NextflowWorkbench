@@ -1,6 +1,0 @@
-#!/bin/bash -l
-nextflowScript=$1
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source ${SCRIPT_DIR}/setEnv
-echo "Executing ${nextflowScript}"
-nohup nextflow ${nextflowScript} 2>&1 | less
