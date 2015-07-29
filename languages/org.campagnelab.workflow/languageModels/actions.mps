@@ -660,6 +660,7 @@
     </node>
   </node>
   <node concept="37WguZ" id="4_Aq6F8APOs">
+    <property role="TrG5h" value="GlobalChannelFactory" />
     <node concept="37WvkG" id="4_Aq6F8APWo" role="37WGs$">
       <ref role="37XkoT" to="iowz:5AoFZCLt6Ly" resolve="GlobalChannel" />
       <node concept="37Y9Zx" id="4_Aq6F8APWp" role="37ZfLb">

@@ -54,13 +54,11 @@
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
-        <child id="4777210630426255005" name="executor" index="2LyH5s" />
       </concept>
       <concept id="3855674281012038419" name="org.campagnelab.workflow.structure.BooleanInitializer" flags="ng" index="2$PL17">
         <child id="3855674281012526300" name="boolean" index="2$RAu8" />
       </concept>
       <concept id="3855674281012525202" name="org.campagnelab.workflow.structure.BooleanLiteral" flags="ng" index="2$RAf6" />
-      <concept id="4777210630426255197" name="org.campagnelab.workflow.structure.Local" flags="ng" index="2LyH2s" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
@@ -110,7 +108,6 @@
         </node>
       </node>
     </node>
-    <node concept="2LyH2s" id="6qiI2N4zIqV" role="2LyH5s" />
     <node concept="2$rEH5" id="6qiI2N4zIqU" role="2$rEHq">
       <ref role="2$rEH4" node="6qiI2N4zIuI" resolve="AcceptTupple" />
       <node concept="1uYdA0" id="6qiI2N4zIvS" role="1uLvPH">

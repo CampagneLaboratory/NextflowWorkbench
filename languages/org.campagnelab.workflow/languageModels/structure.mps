@@ -141,6 +141,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5HJ0QzxC1s2" resolve="Report" />
     </node>
+    <node concept="1TJgyj" id="5wcZjhOWFij" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="description" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
     <node concept="PrWs8" id="5D7AjvYabat" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

@@ -70,7 +70,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -756,14 +756,14 @@
               <node concept="2OqwBi" id="3LlDVJTzHOG" role="3clFbG">
                 <node concept="2OqwBi" id="3LlDVJTzGQF" role="2Oq$k0">
                   <node concept="2OqwBi" id="3LlDVJTzGlQ" role="2Oq$k0">
-                    <node concept="3TrEf2" id="3LlDVJTzGAc" role="2OqNvi">
-                      <ref role="3Tt5mk" to="iowz:3LlDVJS9v3K" />
-                    </node>
                     <node concept="2OqwBi" id="7peEqOxMY2i" role="2Oq$k0">
                       <node concept="30H73N" id="3LlDVJTzGlU" role="2Oq$k0" />
                       <node concept="3TrEf2" id="7peEqOxMYu3" role="2OqNvi">
                         <ref role="3Tt5mk" to="iowz:5wD$zX1BzGp" />
                       </node>
+                    </node>
+                    <node concept="3TrEf2" id="3LlDVJTzGAc" role="2OqNvi">
+                      <ref role="3Tt5mk" to="iowz:3LlDVJS9v3K" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="3LlDVJTzH_m" role="2OqNvi">

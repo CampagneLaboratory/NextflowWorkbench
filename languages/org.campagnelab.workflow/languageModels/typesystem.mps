@@ -14,10 +14,10 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -77,7 +77,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -2729,6 +2729,7 @@
         </node>
         <node concept="17QLQc" id="dNnsoz5eIm" role="3clFbw">
           <node concept="2OqwBi" id="dNnsoz0RYV" role="3uHU7B">
+            <node concept="2yIwOk" id="dNnsoz0SeS" role="2OqNvi" />
             <node concept="2OqwBi" id="5UkDK45eV74" role="2Oq$k0">
               <node concept="2OqwBi" id="5UkDK45eZRg" role="2Oq$k0">
                 <node concept="2OqwBi" id="5UkDK45eBp1" role="2Oq$k0">
@@ -2748,7 +2749,6 @@
                 <ref role="3Tt5mk" to="iowz:21kmpcT1kJP" />
               </node>
             </node>
-            <node concept="2yIwOk" id="dNnsoz0SeS" role="2OqNvi" />
           </node>
           <node concept="35c_gC" id="dNnsoz0SiM" role="3uHU7w">
             <ref role="35c_gD" to="iowz:49c3W7NLHXt" resolve="Local" />
@@ -3700,6 +3700,109 @@
       <ref role="1YaFvo" to="iowz:6$PrPkYEpK2" resolve="ToTuple" />
     </node>
   </node>
+  <node concept="1YbPZF" id="9PzSb8HKN7">
+    <property role="TrG5h" value="typeof_NewIntegerLiteral" />
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <node concept="3clFbS" id="9PzSb8HKN8" role="18ibNy">
+      <node concept="1Z5TYs" id="9PzSb8HKOE" role="3cqZAp">
+        <node concept="mw_s8" id="9PzSb8HKOY" role="1ZfhKB">
+          <node concept="2c44tf" id="9PzSb8HKOU" role="mwGJk">
+            <node concept="10Oyi0" id="9PzSb8HKPh" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="9PzSb8HKOH" role="1ZfhK$">
+          <node concept="1Z2H0r" id="9PzSb8HKNe" role="mwGJk">
+            <node concept="1YBJjd" id="9PzSb8HKNE" role="1Z2MuG">
+              <ref role="1YBMHb" node="9PzSb8HKNa" resolve="newIntegerLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="9PzSb8HKNa" role="1YuTPh">
+      <property role="TrG5h" value="newIntegerLiteral" />
+      <ref role="1YaFvo" to="iowz:3aOvEIt8rqk" resolve="NewIntegerLiteral" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="9PzSb8HJBa">
+    <property role="TrG5h" value="typeof_NewBooleanLiteral" />
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <node concept="3clFbS" id="9PzSb8HJBb" role="18ibNy">
+      <node concept="1Z5TYs" id="9PzSb8HK19" role="3cqZAp">
+        <node concept="mw_s8" id="9PzSb8HK1r" role="1ZfhKB">
+          <node concept="2c44tf" id="9PzSb8HK2o" role="mwGJk">
+            <node concept="10P_77" id="9PzSb8HK2G" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="9PzSb8HK1c" role="1ZfhK$">
+          <node concept="1Z2H0r" id="9PzSb8HJZH" role="mwGJk">
+            <node concept="1YBJjd" id="9PzSb8HK09" role="1Z2MuG">
+              <ref role="1YBMHb" node="9PzSb8HJBd" resolve="newBooleanLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="9PzSb8HJBd" role="1YuTPh">
+      <property role="TrG5h" value="newBooleanLiteral" />
+      <ref role="1YaFvo" to="iowz:3aOvEIt8rrn" resolve="NewBooleanLiteral" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="9PzSb8SRiq">
+    <property role="TrG5h" value="typeof_Range" />
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <node concept="3clFbS" id="9PzSb8SRir" role="18ibNy">
+      <node concept="1Z5TYs" id="9PzSb8SRjL" role="3cqZAp">
+        <node concept="mw_s8" id="9PzSb8SRk5" role="1ZfhKB">
+          <node concept="1Z2H0r" id="9PzSb8SRk1" role="mwGJk">
+            <node concept="2OqwBi" id="9PzSb8SRm4" role="1Z2MuG">
+              <node concept="1YBJjd" id="9PzSb8SRkm" role="2Oq$k0">
+                <ref role="1YBMHb" node="9PzSb8SRit" resolve="range" />
+              </node>
+              <node concept="3TrEf2" id="9PzSb8SRvP" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:3aOvEIt8t9J" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="9PzSb8SRjO" role="1ZfhK$">
+          <node concept="1Z2H0r" id="9PzSb8SRix" role="mwGJk">
+            <node concept="1YBJjd" id="9PzSb8SRiL" role="1Z2MuG">
+              <ref role="1YBMHb" node="9PzSb8SRit" resolve="range" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="9PzSb8SRit" role="1YuTPh">
+      <property role="TrG5h" value="range" />
+      <ref role="1YaFvo" to="iowz:3aOvEIt8t9F" resolve="Range" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="9PzSb8HMXA">
+    <property role="TrG5h" value="typeof_NewStringLiteral" />
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <node concept="3clFbS" id="9PzSb8HMXB" role="18ibNy">
+      <node concept="1Z5TYs" id="9PzSb8HMZ9" role="3cqZAp">
+        <node concept="mw_s8" id="9PzSb8HMZt" role="1ZfhKB">
+          <node concept="2c44tf" id="9PzSb8HMZp" role="mwGJk">
+            <node concept="17QB3L" id="9PzSb8HMZK" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="9PzSb8HMZc" role="1ZfhK$">
+          <node concept="1Z2H0r" id="9PzSb8HMXH" role="mwGJk">
+            <node concept="1YBJjd" id="9PzSb8HMY9" role="1Z2MuG">
+              <ref role="1YBMHb" node="9PzSb8HMXD" resolve="newStringLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="9PzSb8HMXD" role="1YuTPh">
+      <property role="TrG5h" value="newStringLiteral" />
+      <ref role="1YaFvo" to="iowz:3aOvEIt8nXu" resolve="NewStringLiteral" />
+    </node>
+  </node>
   <node concept="18kY7G" id="9PzSb93UHk">
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="check_NewListLiteral" />
@@ -3815,61 +3918,6 @@
       <ref role="1YaFvo" to="iowz:3aOvEIt8rrG" resolve="NewListLiteral" />
     </node>
   </node>
-  <node concept="1YbPZF" id="9PzSb8SRiq">
-    <property role="TrG5h" value="typeof_Range" />
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <node concept="3clFbS" id="9PzSb8SRir" role="18ibNy">
-      <node concept="1Z5TYs" id="9PzSb8SRjL" role="3cqZAp">
-        <node concept="mw_s8" id="9PzSb8SRk5" role="1ZfhKB">
-          <node concept="1Z2H0r" id="9PzSb8SRk1" role="mwGJk">
-            <node concept="2OqwBi" id="9PzSb8SRm4" role="1Z2MuG">
-              <node concept="1YBJjd" id="9PzSb8SRkm" role="2Oq$k0">
-                <ref role="1YBMHb" node="9PzSb8SRit" resolve="range" />
-              </node>
-              <node concept="3TrEf2" id="9PzSb8SRvP" role="2OqNvi">
-                <ref role="3Tt5mk" to="iowz:3aOvEIt8t9J" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="9PzSb8SRjO" role="1ZfhK$">
-          <node concept="1Z2H0r" id="9PzSb8SRix" role="mwGJk">
-            <node concept="1YBJjd" id="9PzSb8SRiL" role="1Z2MuG">
-              <ref role="1YBMHb" node="9PzSb8SRit" resolve="range" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="9PzSb8SRit" role="1YuTPh">
-      <property role="TrG5h" value="range" />
-      <ref role="1YaFvo" to="iowz:3aOvEIt8t9F" resolve="Range" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="9PzSb8HJBa">
-    <property role="TrG5h" value="typeof_NewBooleanLiteral" />
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <node concept="3clFbS" id="9PzSb8HJBb" role="18ibNy">
-      <node concept="1Z5TYs" id="9PzSb8HK19" role="3cqZAp">
-        <node concept="mw_s8" id="9PzSb8HK1r" role="1ZfhKB">
-          <node concept="2c44tf" id="9PzSb8HK2o" role="mwGJk">
-            <node concept="10P_77" id="9PzSb8HK2G" role="2c44tc" />
-          </node>
-        </node>
-        <node concept="mw_s8" id="9PzSb8HK1c" role="1ZfhK$">
-          <node concept="1Z2H0r" id="9PzSb8HJZH" role="mwGJk">
-            <node concept="1YBJjd" id="9PzSb8HK09" role="1Z2MuG">
-              <ref role="1YBMHb" node="9PzSb8HJBd" resolve="newBooleanLiteral" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="9PzSb8HJBd" role="1YuTPh">
-      <property role="TrG5h" value="newBooleanLiteral" />
-      <ref role="1YaFvo" to="iowz:3aOvEIt8rrn" resolve="NewBooleanLiteral" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="9PzSb8HKPN">
     <property role="TrG5h" value="typeof_NewListLiteral" />
     <property role="3GE5qa" value="newChannelInitializer" />
@@ -3910,48 +3958,6 @@
     <node concept="1YaCAy" id="9PzSb8HKPQ" role="1YuTPh">
       <property role="TrG5h" value="newListLiteral" />
       <ref role="1YaFvo" to="iowz:3aOvEIt8rrG" resolve="NewListLiteral" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="9PzSb93TyF">
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="check_NewFileLiteral" />
-    <node concept="3clFbS" id="9PzSb93TyG" role="18ibNy">
-      <node concept="a7r0C" id="9PzSb93TzD" role="3cqZAp">
-        <node concept="1YBJjd" id="9PzSb93UkG" role="2OEOjV">
-          <ref role="1YBMHb" node="9PzSb93TyI" resolve="newFileLiteral" />
-        </node>
-        <node concept="Xl_RD" id="9PzSb93TzF" role="a7wSD">
-          <property role="Xl_RC" value="Make sure that the file exists on the cluster prior to running" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="9PzSb93TyI" role="1YuTPh">
-      <property role="TrG5h" value="newFileLiteral" />
-      <ref role="1YaFvo" to="iowz:3aOvEIt8sII" resolve="NewFileLiteral" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="9PzSb8HKN7">
-    <property role="TrG5h" value="typeof_NewIntegerLiteral" />
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <node concept="3clFbS" id="9PzSb8HKN8" role="18ibNy">
-      <node concept="1Z5TYs" id="9PzSb8HKOE" role="3cqZAp">
-        <node concept="mw_s8" id="9PzSb8HKOY" role="1ZfhKB">
-          <node concept="2c44tf" id="9PzSb8HKOU" role="mwGJk">
-            <node concept="10Oyi0" id="9PzSb8HKPh" role="2c44tc" />
-          </node>
-        </node>
-        <node concept="mw_s8" id="9PzSb8HKOH" role="1ZfhK$">
-          <node concept="1Z2H0r" id="9PzSb8HKNe" role="mwGJk">
-            <node concept="1YBJjd" id="9PzSb8HKNE" role="1Z2MuG">
-              <ref role="1YBMHb" node="9PzSb8HKNa" resolve="newIntegerLiteral" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="9PzSb8HKNa" role="1YuTPh">
-      <property role="TrG5h" value="newIntegerLiteral" />
-      <ref role="1YaFvo" to="iowz:3aOvEIt8rqk" resolve="NewIntegerLiteral" />
     </node>
   </node>
   <node concept="1YbPZF" id="9PzSb8HN0h">
@@ -4026,28 +4032,22 @@
       <ref role="1YaFvo" to="iowz:3aOvEIt8rQW" resolve="NewTupleLiteral" />
     </node>
   </node>
-  <node concept="1YbPZF" id="9PzSb8HMXA">
-    <property role="TrG5h" value="typeof_NewStringLiteral" />
+  <node concept="18kY7G" id="9PzSb93TyF">
     <property role="3GE5qa" value="newChannelInitializer" />
-    <node concept="3clFbS" id="9PzSb8HMXB" role="18ibNy">
-      <node concept="1Z5TYs" id="9PzSb8HMZ9" role="3cqZAp">
-        <node concept="mw_s8" id="9PzSb8HMZt" role="1ZfhKB">
-          <node concept="2c44tf" id="9PzSb8HMZp" role="mwGJk">
-            <node concept="17QB3L" id="9PzSb8HMZK" role="2c44tc" />
-          </node>
+    <property role="TrG5h" value="check_NewFileLiteral" />
+    <node concept="3clFbS" id="9PzSb93TyG" role="18ibNy">
+      <node concept="a7r0C" id="9PzSb93TzD" role="3cqZAp">
+        <node concept="1YBJjd" id="9PzSb93UkG" role="2OEOjV">
+          <ref role="1YBMHb" node="9PzSb93TyI" resolve="newFileLiteral" />
         </node>
-        <node concept="mw_s8" id="9PzSb8HMZc" role="1ZfhK$">
-          <node concept="1Z2H0r" id="9PzSb8HMXH" role="mwGJk">
-            <node concept="1YBJjd" id="9PzSb8HMY9" role="1Z2MuG">
-              <ref role="1YBMHb" node="9PzSb8HMXD" resolve="newStringLiteral" />
-            </node>
-          </node>
+        <node concept="Xl_RD" id="9PzSb93TzF" role="a7wSD">
+          <property role="Xl_RC" value="Make sure that the file exists on the cluster prior to running" />
         </node>
       </node>
     </node>
-    <node concept="1YaCAy" id="9PzSb8HMXD" role="1YuTPh">
-      <property role="TrG5h" value="newStringLiteral" />
-      <ref role="1YaFvo" to="iowz:3aOvEIt8nXu" resolve="NewStringLiteral" />
+    <node concept="1YaCAy" id="9PzSb93TyI" role="1YuTPh">
+      <property role="TrG5h" value="newFileLiteral" />
+      <ref role="1YaFvo" to="iowz:3aOvEIt8sII" resolve="NewFileLiteral" />
     </node>
   </node>
   <node concept="1YbPZF" id="9PzSb8HKKs">

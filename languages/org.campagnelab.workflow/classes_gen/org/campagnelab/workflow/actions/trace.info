@@ -90,7 +90,7 @@
     </file>
   </root>
   <root nodeRef="r:2e1393ae-2a7b-4fb2-add1-db11113c776d(org.campagnelab.workflow.actions)/5289029620234673436">
-    <file name="DefaultNodeFactory_.java">
+    <file name="GlobalChannelFactory.java">
       <node id="5289029620234676612" at="15,91,16,389" concept="0" />
       <node id="5289029620234673944" at="15,0,18,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
       <scope id="5289029620234673944" at="15,91,16,389" />
@@ -100,8 +100,8 @@
         <var name="newNode" id="5289029620234673944" />
         <var name="sampleNode" id="5289029620234673944" />
       </scope>
-      <unit id="5289029620234673944" at="14,0,19,0" name="org.campagnelab.workflow.actions.DefaultNodeFactory_$NodeFactory_5289029620234673944" />
-      <unit id="5289029620234673436" at="13,0,20,0" name="org.campagnelab.workflow.actions.DefaultNodeFactory_" />
+      <unit id="5289029620234673944" at="14,0,19,0" name="org.campagnelab.workflow.actions.GlobalChannelFactory$NodeFactory_5289029620234673944" />
+      <unit id="5289029620234673436" at="13,0,20,0" name="org.campagnelab.workflow.actions.GlobalChannelFactory" />
     </file>
   </root>
 </debug-info>
