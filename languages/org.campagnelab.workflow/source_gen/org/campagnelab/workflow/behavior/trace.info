@@ -1418,18 +1418,24 @@
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/571300755975609337">
     <file name="OutChannelContainer_Behavior.java">
-      <node id="7391172440882835408" at="14,81,15,610" concept="9" />
-      <node id="571300755975609337" at="12,0,14,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="571300755975609337" at="14,0,17,0" concept="13" trace="call_getProcessOutput_7391172440882835123#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="571300755975609339" at="12,43,12,43" />
-      <scope id="7391172440882835125" at="14,81,15,610" />
-      <scope id="571300755975609337" at="12,0,14,0">
+      <node id="6344724376814421047" at="15,81,16,547" concept="8" />
+      <node id="6344724376814434825" at="17,95,18,18" concept="9" />
+      <node id="7391172440882835408" at="19,5,20,97" concept="9" />
+      <node id="571300755975609337" at="13,0,15,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6344724376814420786" at="16,547,19,5" concept="6" />
+      <node id="571300755975609337" at="15,0,22,0" concept="13" trace="call_getProcessOutput_7391172440882835123#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="571300755975609339" at="13,43,13,43" />
+      <scope id="6344724376814420788" at="17,95,18,18" />
+      <scope id="571300755975609337" at="13,0,15,0">
         <var name="thisNode" id="571300755975609337" />
       </scope>
-      <scope id="571300755975609337" at="14,0,17,0">
+      <scope id="7391172440882835125" at="15,81,20,97">
+        <var name="outputs" id="6344724376814421050" />
+      </scope>
+      <scope id="571300755975609337" at="15,0,22,0">
         <var name="thisNode" id="571300755975609337" />
       </scope>
-      <unit id="571300755975609337" at="11,0,18,0" name="org.campagnelab.workflow.behavior.OutChannelContainer_Behavior" />
+      <unit id="571300755975609337" at="12,0,23,0" name="org.campagnelab.workflow.behavior.OutChannelContainer_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/571300755975634226">
