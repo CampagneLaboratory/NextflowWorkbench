@@ -196,25 +196,25 @@
       <unit at="11,0,25,0" name="org.campagnelab.workflow.behavior.NameInAChannelRef_BehaviorDescriptor" />
     </file>
     <file name="NewBooleanLiteral_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.NewBooleanLiteral_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.NewBooleanLiteral_BehaviorDescriptor" />
     </file>
     <file name="NewChannelInitializerExpression_BehaviorDescriptor.java">
-      <unit at="8,0,22,0" name="org.campagnelab.workflow.behavior.NewChannelInitializerExpression_BehaviorDescriptor" />
+      <unit at="8,0,23,0" name="org.campagnelab.workflow.behavior.NewChannelInitializerExpression_BehaviorDescriptor" />
     </file>
     <file name="NewFileLiteral_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.NewFileLiteral_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.NewFileLiteral_BehaviorDescriptor" />
     </file>
     <file name="NewIntegerLiteral_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.NewIntegerLiteral_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.NewIntegerLiteral_BehaviorDescriptor" />
     </file>
     <file name="NewListLiteral_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.NewListLiteral_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.NewListLiteral_BehaviorDescriptor" />
     </file>
     <file name="NewStringLiteral_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.NewStringLiteral_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.NewStringLiteral_BehaviorDescriptor" />
     </file>
     <file name="NewTupleLiteral_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.NewTupleLiteral_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.NewTupleLiteral_BehaviorDescriptor" />
     </file>
     <file name="NextflowConfig_BehaviorDescriptor.java">
       <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.NextflowConfig_BehaviorDescriptor" />
@@ -283,7 +283,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.RangeOfIntegerLiterals_BehaviorDescriptor" />
     </file>
     <file name="Range_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Range_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.Range_BehaviorDescriptor" />
     </file>
     <file name="RemoteSetEnv_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.RemoteSetEnv_BehaviorDescriptor" />
@@ -415,6 +415,112 @@
         <var name="thisNode" id="104943811634252815" />
       </scope>
       <unit id="104943811634252815" at="9,0,14,0" name="org.campagnelab.workflow.behavior.RemoteSubmissionConfig_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/2498161758010471427">
+    <file name="NewBooleanLiteral_Behavior.java">
+      <node id="2498161758010471443" at="12,81,13,169" concept="3" />
+      <node id="2498161758010471427" at="10,0,12,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2498161758010471427" at="12,0,15,0" concept="13" trace="virtual_removeProperty_2498161758010463869#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="2498161758010471429" at="10,43,10,43" />
+      <scope id="2498161758010471433" at="12,81,13,169" />
+      <scope id="2498161758010471427" at="10,0,12,0">
+        <var name="thisNode" id="2498161758010471427" />
+      </scope>
+      <scope id="2498161758010471427" at="12,0,15,0">
+        <var name="thisNode" id="2498161758010471427" />
+      </scope>
+      <unit id="2498161758010471427" at="9,0,16,0" name="org.campagnelab.workflow.behavior.NewBooleanLiteral_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/2498161758010474550">
+    <file name="NewFileLiteral_Behavior.java">
+      <node id="2498161758010474566" at="12,81,13,168" concept="3" />
+      <node id="2498161758010474550" at="10,0,12,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2498161758010474550" at="12,0,15,0" concept="13" trace="virtual_removeProperty_2498161758010463869#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="2498161758010474552" at="10,43,10,43" />
+      <scope id="2498161758010474556" at="12,81,13,168" />
+      <scope id="2498161758010474550" at="10,0,12,0">
+        <var name="thisNode" id="2498161758010474550" />
+      </scope>
+      <scope id="2498161758010474550" at="12,0,15,0">
+        <var name="thisNode" id="2498161758010474550" />
+      </scope>
+      <unit id="2498161758010474550" at="9,0,16,0" name="org.campagnelab.workflow.behavior.NewFileLiteral_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/2498161758010479900">
+    <file name="NewIntegerLiteral_Behavior.java">
+      <node id="2498161758010479916" at="12,81,13,169" concept="3" />
+      <node id="2498161758010479900" at="10,0,12,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2498161758010479900" at="12,0,15,0" concept="13" trace="virtual_removeProperty_2498161758010463869#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="2498161758010479902" at="10,43,10,43" />
+      <scope id="2498161758010479906" at="12,81,13,169" />
+      <scope id="2498161758010479900" at="10,0,12,0">
+        <var name="thisNode" id="2498161758010479900" />
+      </scope>
+      <scope id="2498161758010479900" at="12,0,15,0">
+        <var name="thisNode" id="2498161758010479900" />
+      </scope>
+      <unit id="2498161758010479900" at="9,0,16,0" name="org.campagnelab.workflow.behavior.NewIntegerLiteral_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/2498161758010484774">
+    <file name="NewListLiteral_Behavior.java">
+      <node id="2498161758010485642" at="15,226,16,122" concept="3" />
+      <node id="2498161758010484774" at="12,0,14,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2498161758010484801" at="14,81,17,5" concept="5" />
+      <node id="2498161758010484774" at="14,0,19,0" concept="13" trace="virtual_removeProperty_2498161758010463869#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="2498161758010484776" at="12,43,12,43" />
+      <scope id="2498161758010484803" at="15,226,16,122" />
+      <scope id="2498161758010484774" at="12,0,14,0">
+        <var name="thisNode" id="2498161758010484774" />
+      </scope>
+      <scope id="2498161758010484780" at="14,81,17,5" />
+      <scope id="2498161758010484801" at="14,81,17,5">
+        <var name="element" id="2498161758010484802" />
+      </scope>
+      <scope id="2498161758010484774" at="14,0,19,0">
+        <var name="thisNode" id="2498161758010484774" />
+      </scope>
+      <unit id="2498161758010484774" at="11,0,20,0" name="org.campagnelab.workflow.behavior.NewListLiteral_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/2498161758010486475">
+    <file name="NewStringLiteral_Behavior.java">
+      <node id="2498161758010486491" at="12,81,13,169" concept="3" />
+      <node id="2498161758010486475" at="10,0,12,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2498161758010486475" at="12,0,15,0" concept="13" trace="virtual_removeProperty_2498161758010463869#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="2498161758010486477" at="10,43,10,43" />
+      <scope id="2498161758010486481" at="12,81,13,169" />
+      <scope id="2498161758010486475" at="10,0,12,0">
+        <var name="thisNode" id="2498161758010486475" />
+      </scope>
+      <scope id="2498161758010486475" at="12,0,15,0">
+        <var name="thisNode" id="2498161758010486475" />
+      </scope>
+      <unit id="2498161758010486475" at="9,0,16,0" name="org.campagnelab.workflow.behavior.NewStringLiteral_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/2498161758010491192">
+    <file name="NewTupleLiteral_Behavior.java">
+      <node id="2498161758010492740" at="15,226,16,122" concept="3" />
+      <node id="2498161758010491192" at="12,0,14,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2498161758010491935" at="14,81,17,5" concept="5" />
+      <node id="2498161758010491192" at="14,0,19,0" concept="13" trace="virtual_removeProperty_2498161758010463869#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="2498161758010491194" at="12,43,12,43" />
+      <scope id="2498161758010491937" at="15,226,16,122" />
+      <scope id="2498161758010491192" at="12,0,14,0">
+        <var name="thisNode" id="2498161758010491192" />
+      </scope>
+      <scope id="2498161758010491198" at="14,81,17,5" />
+      <scope id="2498161758010491935" at="14,81,17,5">
+        <var name="element" id="2498161758010491936" />
+      </scope>
+      <scope id="2498161758010491192" at="14,0,19,0">
+        <var name="thisNode" id="2498161758010491192" />
+      </scope>
+      <unit id="2498161758010491192" at="11,0,20,0" name="org.campagnelab.workflow.behavior.NewTupleLiteral_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/2798116910141687608">
@@ -1145,23 +1251,30 @@
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/5289029620221295909">
     <file name="Range_Behavior.java">
-      <node id="5289029620221348098" at="15,705,16,1030" concept="9" />
-      <node id="5289029620221363008" at="17,12,18,18" concept="9" />
-      <node id="5289029620221295909" at="12,0,14,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5289029620221362591" at="17,10,19,5" concept="0" />
-      <node id="5289029620221339271" at="14,78,19,5" concept="6" />
-      <node id="5289029620221295909" at="14,0,21,0" concept="13" trace="call_isOnlyChars_5289029620221298584#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <scope id="5289029620221295911" at="12,43,12,43" />
-      <scope id="5289029620221339272" at="15,705,16,1030" />
-      <scope id="5289029620221362592" at="17,12,18,18" />
-      <scope id="5289029620221295909" at="12,0,14,0">
+      <node id="5289029620221348098" at="16,705,17,1030" concept="9" />
+      <node id="5289029620221363008" at="18,12,19,18" concept="9" />
+      <node id="2498161758019470132" at="22,81,23,280" concept="3" />
+      <node id="2498161758025447108" at="23,280,24,278" concept="3" />
+      <node id="5289029620221295909" at="13,0,15,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5289029620221362591" at="18,10,20,5" concept="0" />
+      <node id="5289029620221295909" at="22,0,26,0" concept="13" trace="virtual_removeProperty_2498161758010463869#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5289029620221339271" at="15,78,20,5" concept="6" />
+      <node id="5289029620221295909" at="15,0,22,0" concept="13" trace="call_isOnlyChars_5289029620221298584#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <scope id="5289029620221295911" at="13,43,13,43" />
+      <scope id="5289029620221339272" at="16,705,17,1030" />
+      <scope id="5289029620221362592" at="18,12,19,18" />
+      <scope id="5289029620221295909" at="13,0,15,0">
         <var name="thisNode" id="5289029620221295909" />
       </scope>
-      <scope id="5289029620221298587" at="14,78,19,5" />
-      <scope id="5289029620221295909" at="14,0,21,0">
+      <scope id="2498161758010493927" at="22,81,24,278" />
+      <scope id="5289029620221295909" at="22,0,26,0">
         <var name="thisNode" id="5289029620221295909" />
       </scope>
-      <unit id="5289029620221295909" at="11,0,22,0" name="org.campagnelab.workflow.behavior.Range_Behavior" />
+      <scope id="5289029620221298587" at="15,78,20,5" />
+      <scope id="5289029620221295909" at="15,0,22,0">
+        <var name="thisNode" id="5289029620221295909" />
+      </scope>
+      <unit id="5289029620221295909" at="12,0,27,0" name="org.campagnelab.workflow.behavior.Range_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/5476153351823627882">

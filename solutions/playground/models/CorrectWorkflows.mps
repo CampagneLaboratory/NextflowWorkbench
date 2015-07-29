@@ -187,6 +187,18 @@
       <concept id="5930160417407206502" name="org.campagnelab.workflow.structure.ConditionalExpressionText" flags="ng" index="2AVUOs">
         <child id="5930160417407206503" name="text" index="2AVUOt" />
       </concept>
+      <concept id="3653684473245040478" name="org.campagnelab.workflow.structure.NewStringLiteral" flags="ng" index="2J_g7P">
+        <property id="3653684473245041443" name="value" index="2J_vQ8" />
+      </concept>
+      <concept id="3653684473245060014" name="org.campagnelab.workflow.structure.NewFileLiteral" flags="ng" index="2J_rk5">
+        <property id="3653684473245060018" name="path" index="2J_rkp" />
+      </concept>
+      <concept id="3653684473245056444" name="org.campagnelab.workflow.structure.NewTupleLiteral" flags="ng" index="2J_scn">
+        <child id="3653684473245056466" name="elementType" index="2J_sdT" />
+      </concept>
+      <concept id="3653684473245054612" name="org.campagnelab.workflow.structure.NewIntegerLiteral" flags="ng" index="2J_swZ">
+        <property id="3653684473245054659" name="value" index="2J_sxC" />
+      </concept>
       <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
         <child id="3653684473245054701" name="elementType" index="2J_sx6" />
       </concept>
@@ -1016,17 +1028,13 @@
     </node>
     <node concept="1CVceo" id="47MGIsN_Ey$" role="2$L6iY">
       <property role="TrG5h" value="tupleChannel" />
-      <node concept="16Aex" id="47MGIsNJB_T" role="2$L62I">
-        <node concept="1OM9w" id="47MGIsNJB_V" role="16Aew">
-          <node concept="1OMb9" id="47MGIsNOBkq" role="1OM9Z">
-            <node concept="2$RDDD" id="47MGIsNOBkr" role="1OMb8">
-              <property role="2$RDDE" value="1" />
-            </node>
+      <node concept="2J_sx7" id="2aFge8hnFuO" role="2$L62I">
+        <node concept="2J_scn" id="2aFge8hnFvh" role="2J_sx6">
+          <node concept="2J_swZ" id="2aFge8hnFy_" role="2J_sdT">
+            <property role="2J_sxC" value="1" />
           </node>
-          <node concept="1OMdp" id="47MGIsNOBqG" role="1OM9Z">
-            <node concept="2$RDGe" id="47MGIsNOBqI" role="1OMem">
-              <property role="2$RDGf" value="hello" />
-            </node>
+          <node concept="2J_g7P" id="2aFge8hnF__" role="2J_sdT">
+            <property role="2J_vQ8" value="hi" />
           </node>
         </node>
       </node>
@@ -1042,8 +1050,13 @@
         </node>
       </node>
     </node>
-    <node concept="1CVceo" id="4_Aq6F8M4SA" role="2$L6iY">
-      <node concept="2J_sx7" id="4_Aq6F8M4SB" role="2$L62I" />
+    <node concept="1CVceo" id="2aFge8iVW5p" role="2$L6iY">
+      <node concept="2J_sx7" id="2aFge8iVW6P" role="2$L62I">
+        <node concept="2J_rk5" id="2aFge8iVW7i" role="2J_sx6">
+          <property role="2J_rkp" value="pa" />
+        </node>
+        <node concept="2J_rk5" id="2aFge8iVW89" role="2J_sx6" />
+      </node>
     </node>
   </node>
 </model>
