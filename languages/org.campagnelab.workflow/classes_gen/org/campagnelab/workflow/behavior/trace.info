@@ -249,9 +249,6 @@
     <file name="NewTupleLiteral_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.NewTupleLiteral_BehaviorDescriptor" />
     </file>
-    <file name="NextflowConfig_BehaviorDescriptor.java">
-      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.NextflowConfig_BehaviorDescriptor" />
-    </file>
     <file name="NonListNonFileChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.NonListNonFileChannel_BehaviorDescriptor" />
     </file>
@@ -461,6 +458,9 @@
     </file>
     <file name="ValueLiteralTuple_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ValueLiteralTuple_BehaviorDescriptor" />
+    </file>
+    <file name="WorkflowConfig_BehaviorDescriptor.java">
+      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.WorkflowConfig_BehaviorDescriptor" />
     </file>
     <file name="Workflow_BehaviorDescriptor.java">
       <unit at="13,0,30,0" name="org.campagnelab.workflow.behavior.Workflow_BehaviorDescriptor" />
@@ -2020,14 +2020,14 @@
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/6430767599998021111">
-    <file name="NextflowConfig_Behavior.java">
+    <file name="WorkflowConfig_Behavior.java">
       <node id="6430767599998030836" at="10,43,11,171" concept="3" />
       <node id="6430767599998021111" at="10,0,13,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="6430767599998021113" at="10,43,11,171" />
       <scope id="6430767599998021111" at="10,0,13,0">
         <var name="thisNode" id="6430767599998021111" />
       </scope>
-      <unit id="6430767599998021111" at="9,0,14,0" name="org.campagnelab.workflow.behavior.NextflowConfig_Behavior" />
+      <unit id="6430767599998021111" at="9,0,14,0" name="org.campagnelab.workflow.behavior.WorkflowConfig_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/6551004122103099520">
