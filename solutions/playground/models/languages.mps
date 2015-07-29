@@ -5,7 +5,7 @@
     <use id="316e8289-cb69-4927-8bfe-edde5cd32037" name="org.campagnelab.workflow.languages" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="2" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
   </languages>
   <imports>
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
@@ -115,7 +115,6 @@
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
-        <child id="4777210630426255005" name="executor" index="2LyH5s" />
       </concept>
       <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.StringInitializer" flags="ng" index="2$PLvr">
         <child id="3855674281012526308" name="string" index="2$RAuK" />
@@ -254,7 +253,6 @@
   </node>
   <node concept="2$rMIF" id="rix53J9vVI">
     <property role="TrG5h" value="MultiLanguageWorkflow" />
-    <node concept="2LyH2v" id="5$YFgXYY8Ij" role="2LyH5s" />
     <node concept="2$rEH5" id="rix53J9vVK" role="2$rEHq">
       <ref role="2$rEH4" node="4GDrEajU_lY" resolve="CloneRepoWithBash" />
       <node concept="1uYdA0" id="rix53J9vX2" role="1uLvPH">

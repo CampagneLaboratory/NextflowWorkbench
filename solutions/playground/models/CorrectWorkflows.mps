@@ -52,7 +52,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -103,6 +103,9 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="6202591221127590908" name="org.campagnelab.workflow.structure.FileListInitializer" flags="ng" index="0k3gA">
+        <child id="6202591221127590944" name="fileList" index="0k3fU" />
+      </concept>
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
         <reference id="6509497193195685433" name="variable" index="0wEsc" />
       </concept>
@@ -157,6 +160,7 @@
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
+        <child id="6344724376800375955" name="description" index="GZ$AB" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
       </concept>
       <concept id="3855674281012038991" name="org.campagnelab.workflow.structure.ListInitializer" flags="ng" index="2$PLor">
@@ -173,6 +177,9 @@
       </concept>
       <concept id="3855674281012525767" name="org.campagnelab.workflow.structure.StringLiteralList" flags="ng" index="2$RA6j">
         <child id="3855674281012525912" name="string" index="2$RA0c" />
+      </concept>
+      <concept id="3855674281012526088" name="org.campagnelab.workflow.structure.FileLiteralList" flags="ng" index="2$RAts">
+        <child id="3855674281012526239" name="file" index="2$RAvb" />
       </concept>
       <concept id="3855674281012527421" name="org.campagnelab.workflow.structure.IntegerLiteral" flags="ng" index="2$RDDD">
         <property id="3855674281012527422" name="value" index="2$RDDE" />
@@ -642,6 +649,12 @@
   </node>
   <node concept="2$rMIF" id="5rY6S$LVtPP">
     <property role="TrG5h" value="FlattenTest" />
+    <node concept="2UNLhE" id="5UkDK45ik_c" role="2UW718">
+      <ref role="2UNLhW" node="5FDPSDjYurf" resolve="out3" />
+      <node concept="2UPiyC" id="5UkDK45ik_d" role="2UNLhY">
+        <node concept="3clFbS" id="5UkDK45ik_e" role="2VODD2" />
+      </node>
+    </node>
     <node concept="2$rEH5" id="6zpIx1pCOOk" role="2$rEHq">
       <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
       <node concept="1uYdA0" id="6zpIx1pCOOm" role="1uLvPH">
@@ -770,6 +783,25 @@
   </node>
   <node concept="2$rMIF" id="dNnsoyWtYg">
     <property role="TrG5h" value="SubmitAnalyzeCombineWorkflow" />
+    <node concept="19SGf9" id="5wcZjhPahNp" role="GZ$AB">
+      <node concept="19SUe$" id="5wcZjhPahNq" role="19SJt6" />
+      <node concept="19SUe$" id="5wcZjhPahNr" role="19SJt6">
+        <property role="19SUeA" value="Workflow to evaluate Workflow languages" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="5UkDK45juxi" role="2$L6iY">
+      <property role="TrG5h" value="alignments" />
+      <node concept="0k3gA" id="5UkDK45ju_c" role="2$L62I">
+        <node concept="2$RAts" id="5UkDK45ju_e" role="0k3fU">
+          <node concept="2xgF7X" id="5UkDK45jxz$" role="2$RAvb">
+            <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*" />
+          </node>
+          <node concept="2xgF7X" id="5UkDK45jxz_" role="2$RAvb">
+            <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2UNLhE" id="5FDPSDjP0m8" role="2UW718">
       <ref role="2UNLhW" node="5FDPSDjP0kn" resolve="result" />
       <node concept="2UPiyC" id="5FDPSDjP0m9" role="2UNLhY">
@@ -800,7 +832,7 @@
         <property role="TrG5h" value="chunk" />
       </node>
       <node concept="1uYdA0" id="dNnsoyWuJu" role="1uLvPH">
-        <ref role="1uK_4X" node="dNnsoyWu_$" resolve="alignments" />
+        <ref role="1uK_4X" node="5UkDK45juxi" resolve="alignments" />
         <node concept="1yaZXp" id="dNnsoz9$Ii" role="1ylr64" />
         <node concept="1yaYav" id="2BFWbNnMeY5" role="1ylr64" />
       </node>
@@ -823,17 +855,6 @@
       <node concept="1uYdA0" id="5FDPSDjQq$I" role="1uLvPH">
         <ref role="1uK_4X" node="dNnsoyWtZi" resolve="processed" />
         <node concept="1yaYav" id="5FDPSDjQqBV" role="1ylr64" />
-      </node>
-    </node>
-    <node concept="1CVceo" id="dNnsoyWu_$" role="2$L6iY">
-      <property role="TrG5h" value="alignments" />
-      <node concept="2$PLry" id="dNnsoyWuA1" role="2$L62I">
-        <node concept="2xgF7X" id="dNnsoyWuAy" role="2$RAua">
-          <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*" />
-        </node>
-        <node concept="2xgF7X" id="dNnsoyWuEI" role="2$RAua">
-          <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*" />
-        </node>
       </node>
     </node>
   </node>

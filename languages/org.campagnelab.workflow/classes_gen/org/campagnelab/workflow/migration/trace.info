@@ -1,20 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="MigrationDescriptorImpl.java">
       <unit at="11,0,17,0" name="org.campagnelab.workflow.migration.MigrationDescriptorImpl" />
     </file>
   </root>
+  <root nodeRef="r:8c069579-e909-448e-bf9a-3d322f6e1f22(org.campagnelab.workflow.migration)/6344724376802294559">
+    <file name="DescriptionToRichtext.java">
+      <node id="6344724376802294559" at="24,30,25,70" concept="3" />
+      <node id="5636302460526807553" at="29,51,30,183" concept="3" />
+      <node id="6344724376802365139" at="33,39,34,197" concept="3" />
+      <node id="6344724376802387676" at="37,41,38,387" concept="0" />
+      <node id="6344724376802427026" at="38,387,39,226" concept="2" />
+      <node id="6344724376802436455" at="39,226,40,233" concept="0" />
+      <node id="6344724376802396564" at="40,233,41,384" concept="0" />
+      <node id="6344724376802450664" at="41,384,42,178" concept="0" />
+      <node id="6344724376802294559" at="44,7,45,16" concept="3" />
+      <node id="6344724376802294559" at="47,51,48,145" concept="3" />
+      <node id="6344724376802376444" at="50,55,51,43" concept="3" />
+      <node id="6344724376802294559" at="24,0,27,0" concept="1" trace="getCaption#()Ljava/lang/String;" />
+      <node id="5636302460526807551" at="29,0,32,0" concept="1" trace="translate#(Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/lang/Iterable;" />
+      <node id="6344724376802364464" at="33,0,36,0" concept="1" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="6344724376802294559" at="47,0,50,0" concept="1" trace="getDescriptor#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="6344724376802376444" at="50,0,53,0" concept="4" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="6344724376802384883" at="37,0,44,0" concept="1" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6344724376802328625" at="27,35,44,7" concept="0" />
+      <node id="6344724376802294559" at="27,0,47,0" concept="1" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="6344724376802294559" at="24,30,25,70" />
+      <scope id="5636302460526807552" at="29,51,30,183" />
+      <scope id="6344724376802364465" at="33,39,34,197" />
+      <scope id="6344724376802294559" at="47,51,48,145" />
+      <scope id="6344724376802376444" at="50,55,51,43" />
+      <scope id="6344724376802294559" at="24,0,27,0" />
+      <scope id="5636302460526807551" at="29,0,32,0">
+        <var name="it" id="5636302460526807551" />
+      </scope>
+      <scope id="6344724376802364464" at="33,0,36,0">
+        <var name="it" id="6344724376802364464" />
+      </scope>
+      <scope id="6344724376802294559" at="47,0,50,0" />
+      <scope id="6344724376802376444" at="50,0,53,0">
+        <var name="str" id="6344724376802376444" />
+      </scope>
+      <scope id="6344724376802384884" at="37,41,42,178">
+        <var name="descr" id="6344724376802427032" />
+      </scope>
+      <scope id="6344724376802384883" at="37,0,44,0">
+        <var name="workflow" id="6344724376802384883" />
+      </scope>
+      <scope id="6344724376802294559" at="27,35,45,16" />
+      <scope id="6344724376802294559" at="27,0,47,0">
+        <var name="m" id="6344724376802294559" />
+      </scope>
+      <unit id="5636302460526807551" at="28,124,32,5" name="org.campagnelab.workflow.migration.DescriptionToRichtext$1" />
+      <unit id="6344724376802364464" at="32,160,36,5" name="org.campagnelab.workflow.migration.DescriptionToRichtext$2" />
+      <unit id="6344724376802384883" at="36,20,44,5" name="org.campagnelab.workflow.migration.DescriptionToRichtext$3" />
+      <unit id="6344724376802294559" at="23,0,54,0" name="org.campagnelab.workflow.migration.DescriptionToRichtext" />
+    </file>
+  </root>
   <root nodeRef="r:8c069579-e909-448e-bf9a-3d322f6e1f22(org.campagnelab.workflow.migration)/7391172440894582240">
     <file name="MigrateToProcessInputOutput.java">
-      <node id="7391172440894582240" at="12,30,13,51" concept="1" />
-      <node id="7391172440894582240" at="15,35,16,16" concept="1" />
-      <node id="7391172440894582240" at="18,51,19,145" concept="1" />
-      <node id="7391172440894582240" at="12,0,15,0" concept="0" trace="getCaption#()Ljava/lang/String;" />
-      <node id="7391172440894582240" at="15,0,18,0" concept="0" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="7391172440894582240" at="18,0,21,0" concept="0" trace="getDescriptor#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="7391172440894582240" at="12,30,13,51" concept="3" />
+      <node id="7391172440894582240" at="15,35,16,16" concept="3" />
+      <node id="7391172440894582240" at="18,51,19,145" concept="3" />
+      <node id="7391172440894582240" at="12,0,15,0" concept="1" trace="getCaption#()Ljava/lang/String;" />
+      <node id="7391172440894582240" at="15,0,18,0" concept="1" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7391172440894582240" at="18,0,21,0" concept="1" trace="getDescriptor#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
       <scope id="7391172440894582240" at="12,30,13,51" />
       <scope id="7391172440894582240" at="15,35,16,16" />
       <scope id="7391172440894582240" at="18,51,19,145" />
@@ -28,12 +84,12 @@
   </root>
   <root nodeRef="r:8c069579-e909-448e-bf9a-3d322f6e1f22(org.campagnelab.workflow.migration)/7391172440894817148">
     <file name="DummyMigration.java">
-      <node id="7391172440894817148" at="12,30,13,46" concept="1" />
-      <node id="7391172440894817148" at="15,35,16,16" concept="1" />
-      <node id="7391172440894817148" at="18,51,19,145" concept="1" />
-      <node id="7391172440894817148" at="12,0,15,0" concept="0" trace="getCaption#()Ljava/lang/String;" />
-      <node id="7391172440894817148" at="15,0,18,0" concept="0" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="7391172440894817148" at="18,0,21,0" concept="0" trace="getDescriptor#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="7391172440894817148" at="12,30,13,46" concept="3" />
+      <node id="7391172440894817148" at="15,35,16,16" concept="3" />
+      <node id="7391172440894817148" at="18,51,19,145" concept="3" />
+      <node id="7391172440894817148" at="12,0,15,0" concept="1" trace="getCaption#()Ljava/lang/String;" />
+      <node id="7391172440894817148" at="15,0,18,0" concept="1" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7391172440894817148" at="18,0,21,0" concept="1" trace="getDescriptor#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
       <scope id="7391172440894817148" at="12,30,13,46" />
       <scope id="7391172440894817148" at="15,35,16,16" />
       <scope id="7391172440894817148" at="18,51,19,145" />
