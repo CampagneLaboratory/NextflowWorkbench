@@ -40,8 +40,9 @@
       <concept id="2329585396108535463" name="org.campagnelab.workflow.structure.Penv" flags="ng" index="oEfWO">
         <property id="2329585396108535566" name="penv" index="oEfUt" />
       </concept>
-      <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.NextflowConfig" flags="ng" index="pkhaZ">
+      <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.WorkflowConfig" flags="ng" index="pkhaZ">
         <child id="2329585396109102069" name="executor" index="pkh9A" />
+        <child id="6352769549764279065" name="remoteSubmission" index="pHU$A" />
         <child id="5930160417388865584" name="processOptions" index="2xLS5a" />
       </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
@@ -50,18 +51,17 @@
       </concept>
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
-        <child id="6992028756512319947" name="processOptions" index="2McKjg" />
         <child id="8369613327464344471" name="inChannel" index="1uLvPH" />
       </concept>
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
       </concept>
-      <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.StringInitializer" flags="ng" index="2$PLvr">
-        <child id="3855674281012526308" name="string" index="2$RAuK" />
+      <concept id="3653684473245040478" name="org.campagnelab.workflow.structure.NewStringLiteral" flags="ng" index="2J_g7P">
+        <property id="3653684473245041443" name="value" index="2J_vQ8" />
       </concept>
-      <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.StringLiteral" flags="ng" index="2$RDGe">
-        <property id="3855674281012527195" name="value" index="2$RDGf" />
+      <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
+        <child id="3653684473245054701" name="elementType" index="2J_sx6" />
       </concept>
       <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="6992028756512830254" name="org.campagnelab.workflow.structure.QueueElement" flags="ng" index="2MiXSP">
@@ -102,46 +102,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="pkhaZ" id="5OPtsPBKOO">
-    <property role="TrG5h" value="nextflow.config" />
-    <node concept="2LyH2v" id="5OPtsPBKOQ" role="pkh9A" />
-    <node concept="oEfOI" id="1d37CfppYSd" role="2xLS5a">
-      <node concept="2MiXSP" id="1d37CfppYSf" role="2MiXW1">
-        <property role="2MiXSO" value="rascals.q" />
-      </node>
-    </node>
-    <node concept="oEfWO" id="1d37CfppZ2K" role="2xLS5a">
-      <property role="oEfUt" value="smp" />
-    </node>
-    <node concept="oEfVI" id="1d37CfppVBF" role="2xLS5a">
-      <property role="oEfTV" value="-l h_vmem=2G  -pe smp 4" />
-    </node>
-  </node>
-  <node concept="OLtiu" id="3LlDVJRPAWA">
-    <property role="TrG5h" value="remote.config" />
-    <node concept="RgTjw" id="3LlDVJRPAWB" role="RgTsZ">
-      <property role="OLqNc" value="${user.home}/.ssh/id_rsa" />
-    </node>
-    <node concept="OLqD6" id="3LlDVJRPAWC" role="OLqE9">
-      <property role="OLqNc" value="gobyweb" />
-    </node>
-    <node concept="RgYyx" id="3LlDVJRPAWD" role="RgYyw">
-      <property role="OLqNc" value="/home/gobyweb/nextflow-tests" />
-    </node>
-    <node concept="OLqWn" id="3LlDVJRPAWE" role="OLqEc">
-      <property role="OLqNc" value="darla.med.cornell.edu" />
-    </node>
-    <node concept="34s5uH" id="3LlDVJSSJnF" role="34s5tb">
-      <node concept="34ZRRU" id="3LlDVJSSJnK" role="346dRl">
-        <node concept="34ZRQx" id="3LlDVJSSJpf" role="34ZRRx">
-          <property role="34ZRQb" value="slchoose sun_jdk 7.0.17 dist" />
-        </node>
-        <node concept="34ZRQx" id="3LlDVJSSJoA" role="34ZRRx">
-          <property role="34ZRQb" value="export JAVA_HOME=/softlib/exe/x86_64/pkg/sun_jdk/7.0.17/dist/bin/java" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="2ulcR8" id="3LlDVJUaZyv">
     <property role="TrG5h" value="EchoString" />
     <node concept="3Y$Zt1" id="3LlDVJUaZyJ" role="2ulM7a">
@@ -160,24 +120,59 @@
       <node concept="16pbKc" id="2bVBkcP9XXQ" role="2ybFLk" />
     </node>
   </node>
-  <node concept="2$rMIF" id="3LlDVJUaZ$b">
-    <property role="TrG5h" value="EchoWorkflow" />
-    <node concept="2$rEH5" id="3LlDVJUaZ$d" role="2$rEHq">
-      <ref role="2$rEH4" node="3LlDVJUaZyv" resolve="EchoString" />
-      <node concept="1uYdA0" id="3LlDVJUaZ$s" role="1uLvPH">
-        <ref role="1uK_4X" node="3LlDVJUaZ$M" resolve="parameter1" />
+  <node concept="pkhaZ" id="5wD$zX25kgg">
+    <property role="TrG5h" value="workflow.config" />
+    <node concept="oEfOI" id="5wD$zX25khL" role="2xLS5a">
+      <node concept="2MiXSP" id="5wD$zX25khM" role="2MiXW1">
+        <property role="2MiXSO" value="rascals.q" />
       </node>
-      <node concept="oEfOI" id="3LlDVJUaZAZ" role="2McKjg">
-        <node concept="2MiXSP" id="3LlDVJUaZB0" role="2MiXW1">
-          <property role="2MiXSO" value="rascals.q" />
+    </node>
+    <node concept="oEfWO" id="5wD$zX25khN" role="2xLS5a">
+      <property role="oEfUt" value="smp" />
+    </node>
+    <node concept="oEfVI" id="5wD$zX25khO" role="2xLS5a">
+      <property role="oEfTV" value="-l h_vmem=2G  -pe smp 4" />
+    </node>
+    <node concept="2LyH2v" id="5wD$zX25khq" role="pkh9A" />
+    <node concept="OLtiu" id="5wD$zX25khX" role="pHU$A">
+      <property role="TrG5h" value="remote.config" />
+      <node concept="RgTjw" id="5wD$zX25khY" role="RgTsZ">
+        <property role="OLqNc" value="${user.home}/.ssh/id_rsa" />
+      </node>
+      <node concept="OLqD6" id="5wD$zX25khZ" role="OLqE9">
+        <property role="OLqNc" value="gobyweb" />
+      </node>
+      <node concept="RgYyx" id="5wD$zX25ki0" role="RgYyw">
+        <property role="OLqNc" value="/home/gobyweb/nextflow-tests" />
+      </node>
+      <node concept="OLqWn" id="5wD$zX25ki1" role="OLqEc">
+        <property role="OLqNc" value="darla.med.cornell.edu" />
+      </node>
+      <node concept="34s5uH" id="5wD$zX25kic" role="34s5tb">
+        <node concept="34ZRRU" id="5wD$zX25kif" role="346dRl">
+          <node concept="34ZRQx" id="5wD$zX25kip" role="34ZRRx">
+            <property role="34ZRQb" value="slchoose sun_jdk 7.0.17 dist" />
+          </node>
+          <node concept="34ZRQx" id="5wD$zX25kig" role="34ZRRx">
+            <property role="34ZRQb" value="export JAVA_HOME=/softlib/exe/x86_64/pkg/sun_jdk/7.0.17/dist/bin/java" />
+          </node>
         </node>
       </node>
     </node>
-    <node concept="1CVceo" id="3LlDVJUaZ$M" role="2$L6iY">
-      <property role="TrG5h" value="parameter1" />
-      <node concept="2$PLvr" id="3LlDVJUaZ_8" role="2$L62I">
-        <node concept="2$RDGe" id="3LlDVJUaZ_9" role="2$RAuK">
-          <property role="2$RDGf" value="Hello from $HOSTNAME" />
+  </node>
+  <node concept="2$rMIF" id="5wD$zX2n8RY">
+    <property role="TrG5h" value="EchoWorkflow" />
+    <node concept="2$rEH5" id="5wD$zX2n8RZ" role="2$rEHq">
+      <ref role="2$rEH4" node="3LlDVJUaZyv" resolve="EchoString" />
+      <node concept="1uYdA0" id="5wD$zX2n8T3" role="1uLvPH">
+        <ref role="1uK_4X" node="6qWs7gtKn23" resolve="stringToEcho" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="6qWs7gtKn23" role="2$L6iY">
+      <property role="TrG5h" value="stringToEcho" />
+      <node concept="2J_sx7" id="6qWs7gtKn24" role="2$L62I">
+        <node concept="2J_g7P" id="6qWs7gtKn2D" role="2J_sx6">
+          <property role="2J_vQ8" value="Hello from $HOSTNAME" />
         </node>
       </node>
     </node>

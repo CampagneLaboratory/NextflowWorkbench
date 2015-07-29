@@ -14,16 +14,16 @@
     <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
     <use id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.files" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.files.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -172,6 +172,7 @@
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -293,7 +294,12 @@
                         <node concept="3cpWs3" id="1d37Cfp1m3k" role="3uHU7B">
                           <node concept="2OqwBi" id="1d37Cfp1kGp" role="3uHU7B">
                             <node concept="2OqwBi" id="1d37Cfp1ke6" role="2Oq$k0">
-                              <node concept="30H73N" id="1d37Cfp1k9E" role="2Oq$k0" />
+                              <node concept="2OqwBi" id="5wD$zX25wHG" role="2Oq$k0">
+                                <node concept="30H73N" id="1d37Cfp1k9E" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="5wD$zX25x98" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="iowz:5wD$zX1BzGp" />
+                                </node>
+                              </node>
                               <node concept="3TrEf2" id="1d37Cfp1krv" role="2OqNvi">
                                 <ref role="3Tt5mk" to="iowz:5OPtsQdNPR" />
                               </node>
@@ -335,7 +341,12 @@
                     <node concept="3clFbF" id="3LlDVJS4Pu5" role="3cqZAp">
                       <node concept="2OqwBi" id="3LlDVJS4PYS" role="3clFbG">
                         <node concept="2OqwBi" id="3LlDVJS4Pyw" role="2Oq$k0">
-                          <node concept="30H73N" id="3LlDVJS4Pu4" role="2Oq$k0" />
+                          <node concept="2OqwBi" id="5wD$zX25xln" role="2Oq$k0">
+                            <node concept="30H73N" id="3LlDVJS4Pu4" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="5wD$zX25xIh" role="2OqNvi">
+                              <ref role="3Tt5mk" to="iowz:5wD$zX1BzGp" />
+                            </node>
+                          </node>
                           <node concept="3TrEf2" id="3LlDVJS4PKW" role="2OqNvi">
                             <ref role="3Tt5mk" to="iowz:5OPtsPGnXu" />
                           </node>
@@ -372,7 +383,12 @@
                     <node concept="3clFbF" id="3LlDVJS4SA0" role="3cqZAp">
                       <node concept="2OqwBi" id="3LlDVJS4T4m" role="3clFbG">
                         <node concept="2OqwBi" id="3LlDVJS4SEr" role="2Oq$k0">
-                          <node concept="30H73N" id="3LlDVJS4S_Z" role="2Oq$k0" />
+                          <node concept="2OqwBi" id="5wD$zX2bSxm" role="2Oq$k0">
+                            <node concept="30H73N" id="3LlDVJS4S_Z" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="5wD$zX2bSTF" role="2OqNvi">
+                              <ref role="3Tt5mk" to="iowz:5wD$zX1BzGp" />
+                            </node>
+                          </node>
                           <node concept="3TrEf2" id="3LlDVJS4SQq" role="2OqNvi">
                             <ref role="3Tt5mk" to="iowz:5OPtsPGnXr" />
                           </node>
@@ -409,7 +425,12 @@
                     <node concept="3clFbF" id="3LlDVJS4QyN" role="3cqZAp">
                       <node concept="2OqwBi" id="3LlDVJS4R6A" role="3clFbG">
                         <node concept="2OqwBi" id="3LlDVJS4QBe" role="2Oq$k0">
-                          <node concept="30H73N" id="3LlDVJS4QyM" role="2Oq$k0" />
+                          <node concept="2OqwBi" id="5wD$zX2bT2G" role="2Oq$k0">
+                            <node concept="30H73N" id="3LlDVJS4QyM" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="5wD$zX2bTqL" role="2OqNvi">
+                              <ref role="3Tt5mk" to="iowz:5wD$zX1BzGp" />
+                            </node>
+                          </node>
                           <node concept="3TrEf2" id="3LlDVJS4QPE" role="2OqNvi">
                             <ref role="3Tt5mk" to="iowz:5OPtsQdObC" />
                           </node>
@@ -633,7 +654,7 @@
       </node>
     </node>
     <node concept="n94m4" id="2cffJJS8DVm" role="lGtFl">
-      <ref role="n9lRv" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
+      <ref role="n9lRv" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
     </node>
   </node>
   <node concept="bUwia" id="2cffJJS7wDx">
@@ -642,17 +663,67 @@
     <node concept="3lhOvk" id="2cffJJS7$6E" role="3lj3bC">
       <property role="13Pg2o" value="true" />
       <ref role="3lhOvi" node="2cffJJS8DVj" resolve="runRemote" />
-      <ref role="30HIoZ" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
+      <ref role="30HIoZ" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
+      <node concept="30G5F_" id="5wD$zX25pMc" role="30HLyM">
+        <node concept="3clFbS" id="5wD$zX25pMd" role="2VODD2">
+          <node concept="3clFbF" id="5wD$zX25raU" role="3cqZAp">
+            <node concept="2OqwBi" id="5wD$zX25s5y" role="3clFbG">
+              <node concept="2OqwBi" id="5wD$zX25rzO" role="2Oq$k0">
+                <node concept="30H73N" id="5wD$zX25raT" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5wD$zX25rP6" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iowz:5wD$zX1BzGp" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="5wD$zX25st5" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3lhOvk" id="4EhqUfwetZA" role="3lj3bC">
+      <property role="13Pg2o" value="true" />
+      <ref role="30HIoZ" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
+      <ref role="3lhOvi" node="6qWs7gtKwTO" resolve="runLocal" />
     </node>
     <node concept="3lhOvk" id="3LlDVJTpNSM" role="3lj3bC">
       <property role="13Pg2o" value="true" />
-      <ref role="30HIoZ" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
       <ref role="3lhOvi" node="3LlDVJTpNST" resolve="setEnv" />
+      <ref role="30HIoZ" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
+      <node concept="30G5F_" id="5wD$zX25sEN" role="30HLyM">
+        <node concept="3clFbS" id="5wD$zX25sEO" role="2VODD2">
+          <node concept="3clFbF" id="5wD$zX25sJL" role="3cqZAp">
+            <node concept="2OqwBi" id="5wD$zX25tJt" role="3clFbG">
+              <node concept="2OqwBi" id="5wD$zX25sOa" role="2Oq$k0">
+                <node concept="30H73N" id="5wD$zX25sJK" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5wD$zX25tv1" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iowz:5wD$zX1BzGp" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="5wD$zX25u70" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3lhOvk" id="3LlDVJTCyTt" role="3lj3bC">
       <property role="13Pg2o" value="true" />
-      <ref role="30HIoZ" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
       <ref role="3lhOvi" node="3LlDVJTCyTB" resolve="runNextflow" />
+      <ref role="30HIoZ" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
+      <node concept="30G5F_" id="5wD$zX25ulf" role="30HLyM">
+        <node concept="3clFbS" id="5wD$zX25ulg" role="2VODD2">
+          <node concept="3clFbF" id="5wD$zX25uqd" role="3cqZAp">
+            <node concept="2OqwBi" id="5wD$zX25v39" role="3clFbG">
+              <node concept="2OqwBi" id="5wD$zX25uuA" role="2Oq$k0">
+                <node concept="30H73N" id="5wD$zX25uqc" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5wD$zX25uPF" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iowz:5wD$zX1BzGp" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="5wD$zX25vT5" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3lhOvk" id="5HJ0Qzyo5a4" role="3lj3bC">
       <property role="13Pg2o" value="true" />
@@ -679,7 +750,7 @@
     <property role="TrG5h" value="setEnv" />
     <property role="3GE5qa" value="" />
     <node concept="n94m4" id="3LlDVJTpNSU" role="lGtFl">
-      <ref role="n9lRv" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
+      <ref role="n9lRv" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
     </node>
     <node concept="34ZRQx" id="3LlDVJTzG4M" role="34ZRRx">
       <property role="34ZRQb" value="text" />
@@ -690,10 +761,15 @@
               <node concept="2OqwBi" id="3LlDVJTzHOG" role="3clFbG">
                 <node concept="2OqwBi" id="3LlDVJTzGQF" role="2Oq$k0">
                   <node concept="2OqwBi" id="3LlDVJTzGlQ" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7peEqOxMY2i" role="2Oq$k0">
+                      <node concept="30H73N" id="3LlDVJTzGlU" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="7peEqOxMYu3" role="2OqNvi">
+                        <ref role="3Tt5mk" to="iowz:5wD$zX1BzGp" />
+                      </node>
+                    </node>
                     <node concept="3TrEf2" id="3LlDVJTzGAc" role="2OqNvi">
                       <ref role="3Tt5mk" to="iowz:3LlDVJS9v3K" />
                     </node>
-                    <node concept="30H73N" id="3LlDVJTzGlU" role="2Oq$k0" />
                   </node>
                   <node concept="3TrEf2" id="3LlDVJTzH_m" role="2OqNvi">
                     <ref role="3Tt5mk" to="iowz:3LlDVJSjnDI" />
@@ -714,7 +790,7 @@
     <property role="TrG5h" value="runNextflow" />
     <property role="3GE5qa" value="" />
     <node concept="n94m4" id="3LlDVJTCyTC" role="lGtFl">
-      <ref role="n9lRv" to="iowz:5OPtsPGg59" resolve="RemoteSubmissionConfig" />
+      <ref role="n9lRv" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
     </node>
     <node concept="34ZRQx" id="3LlDVJTCyWk" role="34ZRRx">
       <property role="34ZRQb" value="#!/bin/bash -l" />
@@ -884,6 +960,124 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2pMbU2" id="6qWs7gtKwTO">
+    <property role="TrG5h" value="runLocal" />
+    <property role="3GE5qa" value="" />
+    <node concept="3rIKKV" id="6qWs7gtKwTP" role="2pMbU3">
+      <node concept="2pNNFK" id="6qWs7gtKwTQ" role="2pNm8H">
+        <property role="2pNNFO" value="project" />
+        <node concept="2pNUuL" id="6qWs7gtKwTR" role="2pNNFR">
+          <property role="2pNUuO" value="name" />
+          <node concept="2pMdtt" id="6qWs7gtKwTS" role="2pMdts">
+            <property role="2pMdty" value="nextflow-local" />
+          </node>
+        </node>
+        <node concept="2pNUuL" id="6qWs7gtKwTT" role="2pNNFR">
+          <property role="2pNUuO" value="default" />
+          <node concept="2pMdtt" id="6qWs7gtKwTU" role="2pMdts">
+            <property role="2pMdty" value="submit" />
+          </node>
+        </node>
+        <node concept="2pNNFK" id="6qWs7gtKwTV" role="3o6s8t">
+          <property role="2pNNFO" value="dirname" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="6qWs7gtKwTW" role="2pNNFR">
+            <property role="2pNUuO" value="property" />
+            <node concept="2pMdtt" id="6qWs7gtKwTX" role="2pMdts">
+              <property role="2pMdty" value="nextflow-local.basedir" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="6qWs7gtKwTY" role="2pNNFR">
+            <property role="2pNUuO" value="file" />
+            <node concept="2pMdtt" id="6qWs7gtKwTZ" role="2pMdts">
+              <property role="2pMdty" value="${ant.file.nextflow-local}" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="6qWs7gtLbNh" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="6qWs7gtLbNQ" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="6qWs7gtLbNS" role="2pMdts">
+              <property role="2pMdty" value="working.dir" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="6qWs7gtLbNW" role="2pNNFR">
+            <property role="2pNUuO" value="location" />
+            <node concept="2pMdtt" id="6qWs7gtLbO3" role="2pMdts">
+              <property role="2pMdty" value="${nextflow-local.basedir}" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="6qWs7gtKwU0" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="6qWs7gtKwU1" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="6qWs7gtKwU2" role="2pMdts">
+              <property role="2pMdty" value="workflow.script" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="6qWs7gtKwU3" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+          </node>
+        </node>
+        <node concept="2pNNFK" id="6qWs7gtKxMs" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="6qWs7gtKxMt" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="6qWs7gtKxMu" role="2pMdts">
+              <property role="2pMdty" value="nextflow.home" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="6qWs7gtKxMv" role="2pNNFR">
+            <property role="2pNUuO" value="location" />
+          </node>
+        </node>
+        <node concept="3o6iSG" id="6qWs7gtKwVd" role="3o6s8t" />
+        <node concept="2pNNFK" id="6qWs7gtKwVS" role="3o6s8t">
+          <property role="2pNNFO" value="target" />
+          <node concept="2pNNFK" id="6qWs7gtKy5n" role="3o6s8t">
+            <property role="2pNNFO" value="exec" />
+            <node concept="2pNUuL" id="6qWs7gtKwW4" role="2pNNFR">
+              <property role="2pNUuO" value="executable" />
+              <node concept="2pMdtt" id="6qWs7gtKwW5" role="2pMdts">
+                <property role="2pMdty" value="${nextflow.home}/nextflow" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="6qWs7gtKymd" role="2pNNFR">
+              <property role="2pNUuO" value="dir" />
+              <node concept="2pMdtt" id="6qWs7gtKymh" role="2pMdts">
+                <property role="2pMdty" value="${working.dir}" />
+              </node>
+            </node>
+            <node concept="2pNNFK" id="6qWs7gtKyb9" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="6qWs7gtKygC" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="6qWs7gtKygF" role="2pMdts">
+                  <property role="2pMdty" value="${workflow.script}" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2pNUuL" id="6qWs7gtKwVT" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="6qWs7gtKwVU" role="2pMdts">
+              <property role="2pMdty" value="submit" />
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="6qWs7gtKwW6" role="3o6s8t" />
+      </node>
+    </node>
+    <node concept="n94m4" id="6qWs7gtKwWj" role="lGtFl">
+      <ref role="n9lRv" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
     </node>
   </node>
 </model>

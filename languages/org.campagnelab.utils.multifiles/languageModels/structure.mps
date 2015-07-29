@@ -70,7 +70,7 @@
     <node concept="1TJgyj" id="3LlDVJSEHDq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="lines" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="3LlDVJSEHCq" resolve="Line" />
     </node>
   </node>
