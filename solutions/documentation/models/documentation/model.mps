@@ -86,6 +86,19 @@
       <concept id="3855674281012526088" name="org.campagnelab.workflow.structure.FileLiteralList" flags="ng" index="2$RAts">
         <child id="3855674281012526239" name="file" index="2$RAvb" />
       </concept>
+      <concept id="3653684473245040477" name="org.campagnelab.workflow.structure.NewChannelInitializerExpression" flags="ng" index="2J_g7Q" />
+      <concept id="3653684473245056444" name="org.campagnelab.workflow.structure.NewTupleLiteral" flags="ng" index="2J_scn">
+        <child id="3653684473245056466" name="elementType" index="2J_sdT" />
+      </concept>
+      <concept id="3653684473245054612" name="org.campagnelab.workflow.structure.NewIntegerLiteral" flags="ng" index="2J_swZ">
+        <property id="3653684473245054659" name="value" index="2J_sxC" />
+      </concept>
+      <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
+        <child id="3653684473245054701" name="elementType" index="2J_sx6" />
+      </concept>
+      <concept id="3653684473245054679" name="org.campagnelab.workflow.structure.NewBooleanLiteral" flags="ng" index="2J_sxW">
+        <property id="3653684473245054680" name="value" index="2J_sxN" />
+      </concept>
       <concept id="6588488528863172354" name="org.campagnelab.workflow.structure.Report" flags="ng" index="2UNLhE">
         <reference id="6588488528863172372" name="channel" index="2UNLhW" />
         <child id="6588488528863172374" name="function" index="2UNLhY" />
@@ -173,6 +186,39 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1CVceo" id="5wcZjhPjWc2" role="2$L6iY">
+      <property role="TrG5h" value="test" />
+      <node concept="2J_sx7" id="5wcZjhPjWc3" role="2$L62I">
+        <node concept="2J_scn" id="5wcZjhPjWeZ" role="2J_sx6">
+          <node concept="2J_sxW" id="5wcZjhPjWgk" role="2J_sdT">
+            <property role="2J_sxN" value="true" />
+          </node>
+          <node concept="2J_swZ" id="5wcZjhPjWod" role="2J_sdT">
+            <property role="2J_sxC" value="3" />
+          </node>
+        </node>
+        <node concept="2J_scn" id="5wcZjhPjWvh" role="2J_sx6">
+          <node concept="2J_sxW" id="5wcZjhPjWvi" role="2J_sdT">
+            <property role="2J_sxN" value="true" />
+          </node>
+          <node concept="2J_swZ" id="5wcZjhPjWvj" role="2J_sdT">
+            <property role="2J_sxC" value="3" />
+          </node>
+        </node>
+        <node concept="2J_scn" id="5wcZjhPjWyF" role="2J_sx6">
+          <node concept="2J_sxW" id="5wcZjhPjWyG" role="2J_sdT">
+            <property role="2J_sxN" value="true" />
+          </node>
+          <node concept="2J_swZ" id="5wcZjhPjWyH" role="2J_sdT">
+            <property role="2J_sxC" value="3" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="5wcZjhPjYBD" role="2$L6iY">
+      <property role="TrG5h" value="za" />
+      <node concept="2J_g7Q" id="5wcZjhPjYCN" role="2$L62I" />
     </node>
     <node concept="3ZW7eb" id="5wcZjhOWEpM" role="lGtFl">
       <property role="2ripvU" value="1" />

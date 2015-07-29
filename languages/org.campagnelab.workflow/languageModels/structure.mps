@@ -763,6 +763,7 @@
     <property role="34LRSv" value="range" />
     <property role="R4oN_" value="creates a range of strings from start to end inclusive as individual emissions" />
     <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="OneOrMoreStrings" />
+    <node concept="asaX9" id="5wcZjhPjV0s" role="lGtFl" />
     <node concept="1TJgyi" id="3m26PihhBXW" role="1TKVEl">
       <property role="TrG5h" value="start" />
       <ref role="AX2Wp" to="tpee:htXhg4R" resolve="_CharConstant_String" />
@@ -777,6 +778,7 @@
     <property role="TrG5h" value="BooleanInitializer" />
     <property role="34LRSv" value="booleans" />
     <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUZV" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Ns" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="boolean" />
@@ -789,6 +791,7 @@
     <property role="TrG5h" value="IntegerInitializer" />
     <property role="34LRSv" value="ints" />
     <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUZJ" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Nw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="integer" />
@@ -801,6 +804,7 @@
     <property role="TrG5h" value="StringInitializer" />
     <property role="34LRSv" value="strings" />
     <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUUC" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7N$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="string" />
@@ -813,6 +817,7 @@
     <property role="TrG5h" value="ListInitializer" />
     <property role="34LRSv" value="lists" />
     <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUZG" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Ny" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="list" />
@@ -825,6 +830,7 @@
     <property role="TrG5h" value="FileInitializer" />
     <property role="34LRSv" value="files" />
     <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUZP" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Nu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="file" />
@@ -838,6 +844,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjV01" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="3m26Pihn7nO">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalStringType" />
@@ -845,12 +852,14 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjV0p" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="3m26Pihn7yi">
     <property role="3GE5qa" value="channelInitializers.globalTypes" />
     <property role="TrG5h" value="BooleanLiteral" />
     <property role="34LRSv" value="value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjYDv" role="lGtFl" />
     <node concept="1TJgyi" id="3m26Pihn850" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -862,12 +871,14 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjV0j" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="3m26Pihn7F7">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalListType" />
     <property role="TrG5h" value="StringLiteralList" />
     <property role="34LRSv" value="list&lt;string&gt;" />
     <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="OneOrMoreLists" />
+    <node concept="asaX9" id="5wcZjhPjV0m" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Ho" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="string" />
@@ -880,6 +891,7 @@
     <property role="TrG5h" value="IntegerLiteralList" />
     <property role="34LRSv" value="list&lt;int&gt;" />
     <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="OneOrMoreLists" />
+    <node concept="asaX9" id="5wcZjhPjV0a" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Ij" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="integer" />
@@ -892,6 +904,7 @@
     <property role="TrG5h" value="BooleanLiteralList" />
     <property role="34LRSv" value="boolean list" />
     <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="OneOrMoreLists" />
+    <node concept="asaX9" id="5wcZjhPjV0d" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Je" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="boolean" />
@@ -904,6 +917,7 @@
     <property role="TrG5h" value="FileLiteralList" />
     <property role="34LRSv" value="list&lt;file&gt;" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjV07" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Mv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="file" />
@@ -916,6 +930,7 @@
     <property role="TrG5h" value="ListLiteral" />
     <property role="34LRSv" value="list" />
     <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="OneOrMoreLists" />
+    <node concept="asaX9" id="5wcZjhPjV0g" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Nq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="list" />
@@ -928,6 +943,7 @@
     <property role="TrG5h" value="StringLiteral" />
     <property role="34LRSv" value="value" />
     <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="OneOrMoreStrings" />
+    <node concept="asaX9" id="5wcZjhPjYD4" role="lGtFl" />
     <node concept="1TJgyi" id="3m26Pihn81r" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -939,6 +955,7 @@
     <property role="34LRSv" value="range" />
     <property role="R4oN_" value="creates a range of integers from start to end inclusive as individual emissions" />
     <ref role="1TJDcQ" node="3m26Pihn7g0" resolve="OneOrMoreIntegers" />
+    <node concept="asaX9" id="5wcZjhPjV04" role="lGtFl" />
     <node concept="1TJgyi" id="3m26Pihn82m" role="1TKVEl">
       <property role="TrG5h" value="start" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -953,6 +970,7 @@
     <property role="TrG5h" value="IntegerLiteral" />
     <property role="34LRSv" value="value" />
     <ref role="1TJDcQ" node="3m26Pihn7g0" resolve="OneOrMoreIntegers" />
+    <node concept="asaX9" id="5wcZjhPjUZY" role="lGtFl" />
     <node concept="1TJgyi" id="3m26Pihn84Y" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -964,6 +982,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjUZS" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="YNIIGPa1iv">
     <property role="3GE5qa" value="scripts.conditionalScript" />
@@ -984,6 +1003,7 @@
     <property role="34LRSv" value="file" />
     <property role="R4oN_" value="file's path, located on the machine where the workflow will execute" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjYDy" role="lGtFl" />
     <node concept="1TJgyi" id="vHEKaWiO__" role="1TKVEl">
       <property role="TrG5h" value="path" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -1069,6 +1089,7 @@
     <property role="TrG5h" value="TupleInitializer" />
     <property role="34LRSv" value="tuples" />
     <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUZD" role="lGtFl" />
     <node concept="1TJgyj" id="2Hhp$WEiKnJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tuple" />
@@ -1083,12 +1104,14 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjYDm" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="2Hhp$WEw$fe">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
     <property role="TrG5h" value="BooleanLiteralTuple" />
     <property role="34LRSv" value="boolean" />
     <ref role="1TJDcQ" node="PffOQS_Koi" resolve="ValueLiteralTuple" />
+    <node concept="asaX9" id="5wcZjhPjYD7" role="lGtFl" />
     <node concept="1TJgyj" id="2Hhp$WEw$ff" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="boolean" />
@@ -1101,6 +1124,7 @@
     <property role="TrG5h" value="TupleLiteral" />
     <property role="34LRSv" value="[" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjYDs" role="lGtFl" />
     <node concept="1TJgyj" id="2Hhp$WEw$gK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tuple" />
@@ -1113,6 +1137,7 @@
     <property role="TrG5h" value="IntegerLiteralTuple" />
     <property role="34LRSv" value="integer" />
     <ref role="1TJDcQ" node="PffOQS_Koi" resolve="ValueLiteralTuple" />
+    <node concept="asaX9" id="5wcZjhPjYDd" role="lGtFl" />
     <node concept="1TJgyj" id="2Hhp$WEw$i7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="integer" />
@@ -1125,6 +1150,7 @@
     <property role="TrG5h" value="StringLiteralTuple" />
     <property role="34LRSv" value="string" />
     <ref role="1TJDcQ" node="PffOQS_Koi" resolve="ValueLiteralTuple" />
+    <node concept="asaX9" id="5wcZjhPjYDj" role="lGtFl" />
     <node concept="1TJgyj" id="2Hhp$WEw$np" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="string" />
@@ -1137,6 +1163,7 @@
     <property role="TrG5h" value="FileLiteralTuple" />
     <property role="34LRSv" value="file" />
     <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="TupleContainer" />
+    <node concept="asaX9" id="5wcZjhPjYDa" role="lGtFl" />
     <node concept="1TJgyj" id="2Hhp$WEw$lG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="file" />
@@ -1149,6 +1176,7 @@
     <property role="TrG5h" value="ListLiteralTuple" />
     <property role="34LRSv" value="list" />
     <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="TupleContainer" />
+    <node concept="asaX9" id="5wcZjhPjYDg" role="lGtFl" />
     <node concept="1TJgyj" id="2Hhp$WEw$nd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="list" />
@@ -1197,6 +1225,7 @@
     <property role="TrG5h" value="FileListInitializer" />
     <property role="34LRSv" value="file lists" />
     <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUZM" role="lGtFl" />
     <node concept="1TJgyj" id="5ok1XDmh3gw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="fileList" />
@@ -1210,6 +1239,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="TupleContainer" />
+    <node concept="asaX9" id="5wcZjhPjYD_" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="2W8f1273Gtf">
     <property role="3GE5qa" value="channelFunctions" />
@@ -1245,6 +1275,7 @@
     <property role="TrG5h" value="TupleListLiteral" />
     <property role="34LRSv" value="list" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjYDp" role="lGtFl" />
     <node concept="1TJgyj" id="2W8f126b9JE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="list" />
@@ -1426,15 +1457,64 @@
     <property role="R4oN_" value="converts all of the elements in the channel into tuples matching the size of the input channel the function is applied to" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
-  <node concept="1TIwiD" id="3aOvEIt8rrn">
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="NewBooleanLiteral" />
-    <property role="34LRSv" value="boolean" />
-    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
-    <node concept="1TJgyi" id="3aOvEIt8rro" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+  <node concept="1TIwiD" id="5FDPSDjYLwl">
+    <property role="3GE5qa" value="executors" />
+    <property role="TrG5h" value="LSF" />
+    <property role="R4oN_" value="Execute Worflows with LSF" />
+    <property role="34LRSv" value="lsf" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#lsf-executor" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+  </node>
+  <node concept="1TIwiD" id="5FDPSDjYQuX">
+    <property role="3GE5qa" value="executors" />
+    <property role="TrG5h" value="Slurm" />
+    <property role="R4oN_" value="Execute Worflows with Slurm" />
+    <property role="34LRSv" value="slurm" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#slurm-executor" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+  </node>
+  <node concept="1TIwiD" id="5FDPSDjYRpO">
+    <property role="3GE5qa" value="executors" />
+    <property role="TrG5h" value="PBS" />
+    <property role="R4oN_" value="Execute Worflows with PBS" />
+    <property role="34LRSv" value="pbs" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#pbs-torque-executor" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+  </node>
+  <node concept="1TIwiD" id="5FDPSDjYRtR">
+    <property role="3GE5qa" value="executors" />
+    <property role="TrG5h" value="DRMAA" />
+    <property role="R4oN_" value="Execute Worflows with DRMAA" />
+    <property role="34LRSv" value="drmaa" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#drmaa-executor" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+  </node>
+  <node concept="1TIwiD" id="5FDPSDjYR_F">
+    <property role="3GE5qa" value="executors" />
+    <property role="TrG5h" value="Cirrus" />
+    <property role="R4oN_" value="Execute Worflows with Cirrus" />
+    <property role="34LRSv" value="cirrus" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#clusterk-cirrus" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+  </node>
+  <node concept="1TIwiD" id="5FDPSDjYS8d">
+    <property role="3GE5qa" value="executors" />
+    <property role="TrG5h" value="DNANexus" />
+    <property role="R4oN_" value="Execute Worflows with DNANexus" />
+    <property role="34LRSv" value="dnanexus" />
+    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#dnanexus" />
+    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
+    <node concept="1TJgyi" id="5FDPSDk4MVL" role="1TKVEl">
+      <property role="TrG5h" value="instanceType" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8nSZ">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="PrimitiveType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
   </node>
   <node concept="1TIwiD" id="3aOvEIt8t9F">
     <property role="3GE5qa" value="newChannelInitializer" />
@@ -1453,12 +1533,31 @@
       <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3aOvEIt8rrG">
+  <node concept="1TIwiD" id="3aOvEIt8nXu">
     <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="NewListLiteral" />
-    <property role="34LRSv" value="list" />
+    <property role="TrG5h" value="NewStringLiteral" />
+    <property role="34LRSv" value="&quot;" />
+    <property role="R4oN_" value="string literal" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <node concept="1TJgyi" id="3aOvEIt8ocz" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8nXt">
+    <property role="TrG5h" value="NewChannelInitializerExpression" />
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8rQW">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewTupleLiteral" />
+    <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="Tuple literal" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-    <node concept="1TJgyj" id="3aOvEIt8rrH" role="1TKVEi">
+    <node concept="1TJgyj" id="3aOvEIt8rRi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elementType" />
       <property role="20lbJX" value="1..n" />
@@ -1485,92 +1584,27 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3aOvEIt8nXu">
+  <node concept="1TIwiD" id="3aOvEIt8rrG">
     <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="NewStringLiteral" />
-    <property role="34LRSv" value="string" />
-    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
-    <node concept="1TJgyi" id="3aOvEIt8ocz" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3aOvEIt8nXt">
-    <property role="TrG5h" value="NewChannelInitializerExpression" />
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="3aOvEIt8rQW">
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="NewTupleLiteral" />
-    <property role="34LRSv" value="tuple" />
+    <property role="TrG5h" value="NewListLiteral" />
+    <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="List literal" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-    <node concept="1TJgyj" id="3aOvEIt8rRi" role="1TKVEi">
+    <node concept="1TJgyj" id="3aOvEIt8rrH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elementType" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3aOvEIt8nSZ">
+  <node concept="1TIwiD" id="3aOvEIt8rrn">
     <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="PrimitiveType" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-  </node>
-  <node concept="1TIwiD" id="5FDPSDjYRpO">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="PBS" />
-    <property role="R4oN_" value="Execute Worflows with PBS" />
-    <property role="34LRSv" value="pbs" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#pbs-torque-executor" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="5FDPSDjYRtR">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="DRMAA" />
-    <property role="R4oN_" value="Execute Worflows with DRMAA" />
-    <property role="34LRSv" value="drmaa" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#drmaa-executor" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="5FDPSDjYLwl">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="LSF" />
-    <property role="R4oN_" value="Execute Worflows with LSF" />
-    <property role="34LRSv" value="lsf" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#lsf-executor" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="5FDPSDjYR_F">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="Cirrus" />
-    <property role="R4oN_" value="Execute Worflows with Cirrus" />
-    <property role="34LRSv" value="cirrus" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#clusterk-cirrus" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="5FDPSDjYQuX">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="Slurm" />
-    <property role="R4oN_" value="Execute Worflows with Slurm" />
-    <property role="34LRSv" value="slurm" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#slurm-executor" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="5FDPSDjYS8d">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="DNANexus" />
-    <property role="R4oN_" value="Execute Worflows with DNANexus" />
-    <property role="34LRSv" value="dnanexus" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#dnanexus" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-    <node concept="1TJgyi" id="5FDPSDk4MVL" role="1TKVEl">
-      <property role="TrG5h" value="instanceType" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <property role="TrG5h" value="NewBooleanLiteral" />
+    <property role="34LRSv" value="boolean" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <node concept="1TJgyi" id="3aOvEIt8rro" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

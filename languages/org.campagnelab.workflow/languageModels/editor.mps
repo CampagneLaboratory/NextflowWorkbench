@@ -2792,5 +2792,15 @@
       <node concept="l2Vlx" id="5FDPSDk4MZN" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5wcZjhPkI9N">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <ref role="1XX52x" to="iowz:3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="3EZMnI" id="5wcZjhPkIqa" role="2wV5jI">
+      <node concept="3F0ifn" id="5wcZjhPkIqh" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+      </node>
+      <node concept="l2Vlx" id="5wcZjhPkIqd" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
