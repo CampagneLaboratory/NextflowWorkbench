@@ -1,18 +1,19 @@
 #!/usr/bin/env nextflow
 import CorrectWorkflows.SubmitAnalyzeCombineWorkflow_Methods;
-alignments = Channel.from(file('/Users/jasonkurs/Documents/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*'), file('/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*'))
+alignments = [file("/Users/jasonkurs/Documents/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*"), file("/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*")].channel()
 process submit {
 
 input:
-<!TextGen not found for 'org.campagnelab.workflow.structure.FileList'!> alignment from alignments.flatten().toList()
+file alignment from alignments.flatten().toList()
 
 output:
-set file slices into chunk
+file 'index_*' into chunk
 
 shell:
 
     '''
-java -jar /Users/jasonkurs/Downloads/2.3.5/goby.jar -m suggest-position-slices  -n 200 -o slicingPlan.tsv !{alignment}  split -l 1 slicingPlan.tsv index_
+java -jar /Users/jasonkurs/Downloads/2.3.5/goby.jar -m suggest-position-slices  -n 200 -o slicingPlan.tsv !{alignment} 
+split -l 1 slicingPlan.tsv index_
     '''
 }
 process analyze {
@@ -26,23 +27,21 @@ file "*.txt" into processed
 shell:
 
     '''
-cat index_* > '*.txt'
-
-
+cat index_* > '*.txt'\n\n
     '''
 }
 process combineFiles {
 
 input:
-set file processedFiles from processed.toList()
+file '*.txt' from processed.toList()
 
 output:
-file finalFile into result
+file 'finalFile' into result
 
 shell:
 
     '''
-cat !{processedFiles} >>finalFile
+cat !{'*.txt'} >>finalFile
     '''
 }
 result.subscribe{ c -> 

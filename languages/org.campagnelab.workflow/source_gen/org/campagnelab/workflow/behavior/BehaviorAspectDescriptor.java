@@ -195,32 +195,32 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new TupleElement_BehaviorDescriptor();
       case 94:
         return new ToTuple_BehaviorDescriptor();
-      case 52:
-        return new NewBooleanLiteral_BehaviorDescriptor();
-      case 68:
-        return new Range_BehaviorDescriptor();
-      case 55:
-        return new NewListLiteral_BehaviorDescriptor();
-      case 53:
-        return new NewFileLiteral_BehaviorDescriptor();
-      case 54:
-        return new NewIntegerLiteral_BehaviorDescriptor();
-      case 56:
-        return new NewStringLiteral_BehaviorDescriptor();
-      case 57:
-        return new NewTupleLiteral_BehaviorDescriptor();
+      case 42:
+        return new LSF_BehaviorDescriptor();
+      case 83:
+        return new Slurm_BehaviorDescriptor();
       case 61:
         return new PBS_BehaviorDescriptor();
       case 17:
         return new DRMAA_BehaviorDescriptor();
-      case 42:
-        return new LSF_BehaviorDescriptor();
       case 9:
         return new Cirrus_BehaviorDescriptor();
-      case 83:
-        return new Slurm_BehaviorDescriptor();
       case 16:
         return new DNANexus_BehaviorDescriptor();
+      case 68:
+        return new Range_BehaviorDescriptor();
+      case 56:
+        return new NewStringLiteral_BehaviorDescriptor();
+      case 57:
+        return new NewTupleLiteral_BehaviorDescriptor();
+      case 53:
+        return new NewFileLiteral_BehaviorDescriptor();
+      case 54:
+        return new NewIntegerLiteral_BehaviorDescriptor();
+      case 55:
+        return new NewListLiteral_BehaviorDescriptor();
+      case 52:
+        return new NewBooleanLiteral_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

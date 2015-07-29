@@ -15,7 +15,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,130,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
+      <unit at="10,0,135,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/177205552212758053">
@@ -936,6 +936,50 @@
       <unit id="483654189197274240" at="61,19,61,41" name="org.campagnelab.workflow.constraints.ProcessRef_Constraints$2" />
       <unit id="483654189197274240" at="29,128,63,5" name="org.campagnelab.workflow.constraints.ProcessRef_Constraints$1" />
       <unit id="483654189197274240" at="22,0,67,0" name="org.campagnelab.workflow.constraints.ProcessRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/6815255758943898346">
+    <file name="Report_Constraints.java">
+      <node id="6815255758943898346" at="25,31,26,98" concept="11" />
+      <node id="6815255758943898346" at="29,98,30,135" concept="6" />
+      <node id="6815255758943898346" at="33,44,34,20" concept="7" />
+      <node id="6815255758943898346" at="41,63,42,58" concept="7" />
+      <node id="6815255758943898346" at="46,13,47,224" concept="6" />
+      <node id="6815255758943898346" at="47,224,48,64" concept="7" />
+      <node id="6815255758943898346" at="53,7,54,22" concept="7" />
+      <node id="6815255758943898346" at="56,0,57,0" concept="9" trace="breakingNode_y6msid_a0a0a0a0a1a0b0a1a1" />
+      <node id="6815255758943898346" at="25,0,28,0" concept="1" trace="Report_Constraints#()V" />
+      <node id="6815255758943898346" at="32,0,36,0" concept="5" trace="hasOwnScopeProvider#()Z" />
+      <node id="6815255758943898346" at="40,0,44,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="6815255758943898346" at="45,122,49,13" concept="0" />
+      <node id="6815255758943898346" at="44,0,51,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="6815255758943898346" at="38,56,51,10" concept="7" />
+      <node id="6815255758943898346" at="36,0,53,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="6815255758943898346" at="30,135,53,7" concept="2" />
+      <node id="6815255758943898346" at="28,0,56,0" concept="5" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="6815255758943898346" at="25,31,26,98" />
+      <scope id="6815255758943898346" at="33,44,34,20" />
+      <scope id="6815255758943898346" at="41,63,42,58" />
+      <scope id="6815255758943898346" at="46,13,48,64">
+        <var name="scope" id="6815255758943898346" />
+      </scope>
+      <scope id="6815255758943898346" at="25,0,28,0" />
+      <scope id="6815255758943898346" at="32,0,36,0" />
+      <scope id="6815255758943898346" at="40,0,44,0" />
+      <scope id="6815255758943898346" at="45,122,49,13" />
+      <scope id="6815255758943898346" at="44,0,51,0">
+        <var name="_context" id="6815255758943898346" />
+        <var name="operationContext" id="6815255758943898346" />
+      </scope>
+      <scope id="6815255758943898346" at="38,56,51,10" />
+      <scope id="6815255758943898346" at="36,0,53,0" />
+      <scope id="6815255758943898346" at="29,98,54,22">
+        <var name="references" id="6815255758943898346" />
+      </scope>
+      <scope id="6815255758943898346" at="28,0,56,0" />
+      <unit id="6815255758943898346" at="39,19,51,9" name="org.campagnelab.workflow.constraints.Report_Constraints$2" />
+      <unit id="6815255758943898346" at="31,128,53,5" name="org.campagnelab.workflow.constraints.Report_Constraints$1" />
+      <unit id="6815255758943898346" at="24,0,58,0" name="org.campagnelab.workflow.constraints.Report_Constraints" />
     </file>
   </root>
   <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/8074343669092053908">
