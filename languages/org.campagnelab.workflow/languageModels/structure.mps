@@ -20,8 +20,8 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.files.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -514,7 +514,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCwTL">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <property role="TrG5h" value="Collate" />
     <property role="34LRSv" value="collate" />
     <property role="R4oN_" value="transforms a channel such that the emitted values are grouped into lists containing n items" />
@@ -535,21 +535,21 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3m9W35nCwXC">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <property role="TrG5h" value="Flatten" />
     <property role="34LRSv" value="flatten" />
     <property role="R4oN_" value="transforms a channel's lists of elements into single entries to be emitted separately" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="TransformingOperator" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCxaI">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <property role="TrG5h" value="ToList" />
     <property role="34LRSv" value="toList" />
     <property role="R4oN_" value="converts all the items emitted by a channel to a single list object and emits the list as a single item " />
     <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCxgw">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <property role="TrG5h" value="ToSortedList" />
     <property role="34LRSv" value="toSortedList" />
     <property role="R4oN_" value="collects all the items emitted by a list object, sorts them, and then emits the list as a single item" />
@@ -1180,11 +1180,11 @@
     <node concept="asaX9" id="5wcZjhPjYDg" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="3JbPZMXXswk">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <property role="TrG5h" value="ToListFunction" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="TransformingOperator" />
   </node>
   <node concept="1TIwiD" id="5ok1XDk_tCa">
     <property role="3GE5qa" value="channelTypes" />
@@ -1237,7 +1237,7 @@
     <node concept="asaX9" id="5wcZjhPjYD_" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="2W8f1273Gtf">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <property role="TrG5h" value="CollateStepSize" />
     <property role="34LRSv" value="step size" />
     <property role="R4oN_" value="specifies the step by which elements are collected in tuples" />
@@ -1248,7 +1248,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2W8f1273GaR">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <property role="TrG5h" value="CollateAllowIncompleteTuples" />
     <property role="34LRSv" value="allow incomplete tuples" />
     <property role="R4oN_" value="specify false if you want to avoid the last tuple being incomplete" />
@@ -1259,7 +1259,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2W8f1273G7R">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="CollateOption" />
@@ -1447,11 +1447,11 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6$PrPkYEpK2">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <property role="TrG5h" value="ToTuple" />
     <property role="34LRSv" value="toTuple" />
     <property role="R4oN_" value="converts all of the elements in the channel into tuples matching the size of the input channel the function is applied to" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="TransformingOperator" />
   </node>
   <node concept="1TIwiD" id="5FDPSDjYLwl">
     <property role="3GE5qa" value="executors" />
@@ -1515,6 +1515,7 @@
   <node concept="1TIwiD" id="3aOvEIt8t9F">
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="Range" />
+    <property role="34LRSv" value="range" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyj" id="3aOvEIt8t9J" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1602,6 +1603,172 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILhrTOx">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <property role="TrG5h" value="FilteringOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+  </node>
+  <node concept="1TIwiD" id="XaRILhslAr">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <property role="TrG5h" value="Filter" />
+    <property role="R4oN_" value="use a regular expression, a literal value, a type qualifier, or any boolean predicate to get only the items in a channel satisfying the condition" />
+    <property role="34LRSv" value="filter" />
+    <ref role="1TJDcQ" node="XaRILhrTOx" resolve="FilteringOperator" />
+    <node concept="1TJgyj" id="XaRILhsnTe" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="condition" />
+      <ref role="20lvS9" to="tpee:gPCKINj" resolve="Number" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILhIYk3">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <property role="TrG5h" value="Unique" />
+    <property role="34LRSv" value="unique" />
+    <property role="R4oN_" value="removes duplicate elements from a channel" />
+    <ref role="1TJDcQ" node="XaRILhrTOx" resolve="FilteringOperator" />
+    <node concept="1TJgyj" id="XaRILhIYk4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tpee:gLzXffN" resolve="Closure" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILilDAq">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <property role="TrG5h" value="Distinct" />
+    <property role="34LRSv" value="distinct" />
+    <property role="R4oN_" value="removes consecutive duplicated items from a channel" />
+    <ref role="1TJDcQ" node="XaRILhrTOx" resolve="FilteringOperator" />
+    <node concept="1TJgyj" id="XaRILilDAr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILilGma">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <property role="TrG5h" value="First" />
+    <property role="34LRSv" value="first" />
+    <property role="R4oN_" value="returns the first item emitted by the channel, or the first item that matches a condition" />
+    <ref role="1TJDcQ" node="XaRILhrTOx" resolve="FilteringOperator" />
+    <node concept="1TJgyj" id="XaRILilGqT" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <ref role="20lvS9" to="tpee:gLzXffN" resolve="Closure" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILilHC4">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <property role="TrG5h" value="Take" />
+    <property role="34LRSv" value="take" />
+    <property role="R4oN_" value="allows you to filter only the first n items emitted by a channel" />
+    <ref role="1TJDcQ" node="XaRILhrTOx" resolve="FilteringOperator" />
+    <node concept="1TJgyi" id="XaRILilJ46" role="1TKVEl">
+      <property role="TrG5h" value="n" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILirYxk">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <property role="TrG5h" value="Last" />
+    <property role="34LRSv" value="last" />
+    <property role="R4oN_" value="returns the last item emitted by the channel" />
+    <ref role="1TJDcQ" node="XaRILhrTOx" resolve="FilteringOperator" />
+  </node>
+  <node concept="1TIwiD" id="XaRILis0lI">
+    <property role="3GE5qa" value="channelFunctions.splittingOperators" />
+    <property role="TrG5h" value="SplittingOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+  </node>
+  <node concept="1TIwiD" id="XaRILis0lJ">
+    <property role="3GE5qa" value="channelFunctions.splittingOperators" />
+    <property role="TrG5h" value="SplitCSV" />
+    <property role="34LRSv" value="splitCSV" />
+    <property role="R4oN_" value="parse text items emitted by a channel into records or group them into lists of records with a specific length" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="SplittingOperator" />
+  </node>
+  <node concept="1TIwiD" id="XaRILisH5y">
+    <property role="3GE5qa" value="channelFunctions.splittingOperators" />
+    <property role="TrG5h" value="SplitFasta" />
+    <property role="34LRSv" value="splitFasta" />
+    <property role="R4oN_" value="split the entries emitted by a channel into text items for each sequence in the received FASTA content" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="SplittingOperator" />
+  </node>
+  <node concept="1TIwiD" id="XaRILisJ6K">
+    <property role="3GE5qa" value="channelFunctions.splittingOperators" />
+    <property role="TrG5h" value="SplitFastq" />
+    <property role="34LRSv" value="splitFastq" />
+    <property role="R4oN_" value="split the entries emitted by a channel into a text chunk for each sequence in the received item" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="SplittingOperator" />
+  </node>
+  <node concept="1TIwiD" id="XaRILisJqL">
+    <property role="3GE5qa" value="channelFunctions.splittingOperators" />
+    <property role="TrG5h" value="SplitText" />
+    <property role="34LRSv" value="splitText" />
+    <property role="R4oN_" value="split multi-line strings or text file items into chunks containing n lines, which will be emitted by the channel" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="SplittingOperator" />
+  </node>
+  <node concept="1TIwiD" id="XaRILisNjl">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="TrG5h" value="TransformingOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+  </node>
+  <node concept="1TIwiD" id="XaRILisPoE">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="TrG5h" value="Map" />
+    <property role="34LRSv" value="map" />
+    <property role="R4oN_" value="applies a function to every item emitted by a channel, and returns the items into the channel" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="TransformingOperator" />
+  </node>
+  <node concept="1TIwiD" id="XaRILisRbb">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="TrG5h" value="FlatMap" />
+    <property role="34LRSv" value="flatMap" />
+    <property role="R4oN_" value="applies a function to every item emitted by a channel and returns the items into the channel; if a mapping function returns a list, the list is flattened such that each element is emitted individually" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="TransformingOperator" />
+  </node>
+  <node concept="1TIwiD" id="XaRILjgRyP">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="TrG5h" value="Reduce" />
+    <property role="34LRSv" value="reduce" />
+    <property role="R4oN_" value="applies a function to every item in the channel and emits the result of the last call of the function as the only output" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="TransformingOperator" />
+  </node>
+  <node concept="1TIwiD" id="XaRILjgRRX">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="TrG5h" value="GroupBy" />
+    <property role="34LRSv" value="groupBy" />
+    <property role="R4oN_" value="collects the values emitted by the channel grouping them together using a mapping function that associates each item with a key. Emits an associative array that maps each key to the set of items identified by that key" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="TransformingOperator" />
+  </node>
+  <node concept="1TIwiD" id="XaRILjgU7G">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="TrG5h" value="GroupTuple" />
+    <property role="34LRSv" value="groupTuple" />
+    <property role="R4oN_" value="collects tuples of values emitted by the channel grouping together the values that share the same key, and then emits a new tuple for each distinct key" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="TransformingOperator" />
+  </node>
+  <node concept="1TIwiD" id="XaRILjgXaG">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="TrG5h" value="Buffer" />
+    <property role="34LRSv" value="buffer" />
+    <property role="R4oN_" value="gathers the items emitted by the channel into subsets and then emits the subsets separately" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="TransformingOperator" />
+  </node>
+  <node concept="1TIwiD" id="XaRILjgYLb">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="It" />
+    <property role="34LRSv" value="it" />
+    <property role="R4oN_" value="the element that is currently being used" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
 </model>
 
