@@ -53,27 +53,27 @@
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="Hostname" />
     <property role="34LRSv" value="hostname" />
-    <property role="R4oN_" value="hostname or IP address of the submission host" />
+    <property role="R4oN_" value="Hostname or IP address of the submission host" />
     <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqYQkSJ">
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="JobArea" />
     <property role="34LRSv" value="jobarea" />
-    <property role="R4oN_" value="folder where scripts are copied and executed" />
+    <property role="R4oN_" value="Folder where scripts are copied and submitted" />
     <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqYQkSK">
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="KeyFile" />
     <property role="34LRSv" value="key file" />
-    <property role="R4oN_" value="location of the file holding the private key" />
+    <property role="R4oN_" value="Location of the file holding the private key to connect to the submission host" />
     <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqYQkSL">
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="RemoteSetEnv" />
-    <property role="R4oN_" value="custom settings to add to the remote environment" />
+    <property role="R4oN_" value="Custom settings to add to the remote environment" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5KN4KqYQkSM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -86,7 +86,7 @@
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="RemoteSubmissionConfig" />
     <property role="34LRSv" value="remote.config" />
-    <property role="R4oN_" value="configuration for remote execution" />
+    <property role="R4oN_" value="Configuration for remote execution" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5KN4KqYQkSO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -139,7 +139,7 @@
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="Username" />
     <property role="34LRSv" value="username" />
-    <property role="R4oN_" value="username on the submission host" />
+    <property role="R4oN_" value="Username to connect to the submission host" />
     <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqYYwDS">
@@ -325,7 +325,7 @@
     <property role="TrG5h" value="WorkflowConfig" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="workflow.config" />
-    <property role="R4oN_" value="configuration for workflow submission" />
+    <property role="R4oN_" value="Configuration for workflow submissions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5KN4KqZiCv$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
