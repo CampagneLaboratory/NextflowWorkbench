@@ -2646,5 +2646,61 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2fLVrqQ2D_x">
+    <property role="3GE5qa" value="channelTypes" />
+    <ref role="1XX52x" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+    <node concept="3EZMnI" id="2fLVrqQ2DQv" role="2wV5jI">
+      <node concept="3F1sOY" id="2fLVrqQ2DQw" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:6qiI2N4J0hS" />
+      </node>
+      <node concept="3F0A7n" id="2fLVrqQ2DQx" role="3EZMnx">
+        <ref role="1k5W1q" node="5yyd2HFrskG" resolve="ChannelName" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="pkWqt" id="2fLVrqQ2DQy" role="pqm2j">
+          <node concept="3clFbS" id="2fLVrqQ2DQz" role="2VODD2">
+            <node concept="3SKdUt" id="2fLVrqQ2DQ$" role="3cqZAp">
+              <node concept="3SKdUq" id="2fLVrqQ2DQ_" role="3SKWNk">
+                <property role="3SKdUp" value="do not show a name if the input is a tuple with named elements" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="2fLVrqQ2DQA" role="3cqZAp">
+              <node concept="2OqwBi" id="2fLVrqQ2DQB" role="3clFbG">
+                <node concept="2OqwBi" id="2fLVrqQ2DQC" role="2Oq$k0">
+                  <node concept="pncrf" id="2fLVrqQ2DQD" role="2Oq$k0" />
+                  <node concept="2Rf3mk" id="2fLVrqQ2DQE" role="2OqNvi">
+                    <node concept="1xMEDy" id="2fLVrqQ2DQF" role="1xVPHs">
+                      <node concept="chp4Y" id="2fLVrqQ2DQG" role="ri$Ld">
+                        <ref role="cht4Q" to="iowz:3v6eDgzA3wg" resolve="Tuple" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="2fLVrqQ2DQH" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2fLVrqQ2DQI" role="2iSdaV" />
+      <node concept="3F0ifn" id="2fLVrqQ2DQJ" role="3EZMnx">
+        <property role="3F0ifm" value="set value from script standard output" />
+        <node concept="Vb9p2" id="2fLVrqQ2DQK" role="3F10Kt">
+          <property role="Vbekb" value="BOLD_ITALIC" />
+        </node>
+        <node concept="pkWqt" id="2fLVrqQ2DQL" role="pqm2j">
+          <node concept="3clFbS" id="2fLVrqQ2DQM" role="2VODD2">
+            <node concept="3clFbF" id="2fLVrqQ2DQN" role="3cqZAp">
+              <node concept="2OqwBi" id="2fLVrqQ2DQO" role="3clFbG">
+                <node concept="pncrf" id="2fLVrqQ2DQP" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2fLVrqQ2FN0" role="2OqNvi">
+                  <ref role="3TsBF5" to="iowz:2fLVrqQ2EIf" resolve="fromStandardOutput" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

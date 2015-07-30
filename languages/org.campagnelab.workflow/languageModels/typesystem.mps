@@ -4650,10 +4650,13 @@
                   <node concept="3clFbS" id="2fLVrqPYLuI" role="1bW5cS">
                     <node concept="3clFbF" id="2fLVrqPYLuJ" role="3cqZAp">
                       <node concept="2OqwBi" id="2fLVrqPYLuK" role="3clFbG">
-                        <node concept="37vLTw" id="2fLVrqPYLuL" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2fLVrqPYLuN" resolve="it" />
+                        <node concept="1PxgMI" id="2fLVrqQ8w64" role="2Oq$k0">
+                          <ref role="1PxNhF" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
+                          <node concept="37vLTw" id="2fLVrqPYLuL" role="1PxMeX">
+                            <ref role="3cqZAo" node="2fLVrqPYLuN" resolve="it" />
+                          </node>
                         </node>
-                        <node concept="3TrcHB" id="2fLVrqPYLuM" role="2OqNvi">
+                        <node concept="3TrcHB" id="2fLVrqQ8wuW" role="2OqNvi">
                           <ref role="3TsBF5" to="iowz:2fLVrqPJUQP" resolve="toStandardInput" />
                         </node>
                       </node>
@@ -4674,6 +4677,78 @@
     <node concept="1YaCAy" id="2fLVrqPUgA0" role="1YuTPh">
       <property role="TrG5h" value="processInput" />
       <ref role="1YaFvo" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2fLVrqQ2FTa">
+    <property role="TrG5h" value="check_ProcessOutput" />
+    <property role="3GE5qa" value="channelTypes" />
+    <node concept="3clFbS" id="2fLVrqQ2FTb" role="18ibNy">
+      <node concept="3clFbJ" id="2fLVrqQ2Gug" role="3cqZAp">
+        <node concept="3clFbS" id="2fLVrqQ2Guh" role="3clFbx">
+          <node concept="2MkqsV" id="2fLVrqQ2Gui" role="3cqZAp">
+            <node concept="Xl_RD" id="2fLVrqQ2Guj" role="2MkJ7o">
+              <property role="Xl_RC" value="Process can have at most one output assigned from STDOUT" />
+            </node>
+            <node concept="1YBJjd" id="2fLVrqQ2H0D" role="2OEOjV">
+              <ref role="1YBMHb" node="2fLVrqQ2FTd" resolve="processOutput" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOSWO" id="2fLVrqQ2Gul" role="3clFbw">
+          <node concept="3cmrfG" id="2fLVrqQ2Gum" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="2fLVrqQ2Gun" role="3uHU7B">
+            <node concept="2OqwBi" id="2fLVrqQ2Guo" role="2Oq$k0">
+              <node concept="2OqwBi" id="2fLVrqQ2Gup" role="2Oq$k0">
+                <node concept="2OqwBi" id="2fLVrqQ2Guq" role="2Oq$k0">
+                  <node concept="1YBJjd" id="2fLVrqQ2GVE" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2fLVrqQ2FTd" resolve="processOutput" />
+                  </node>
+                  <node concept="2Xjw5R" id="2fLVrqQ2Gus" role="2OqNvi">
+                    <node concept="1xMEDy" id="2fLVrqQ2Gut" role="1xVPHs">
+                      <node concept="chp4Y" id="2fLVrqQ2Guu" role="ri$Ld">
+                        <ref role="cht4Q" to="iowz:6tX5nBTatyL" resolve="Process" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="2fLVrqQ2HP5" role="2OqNvi">
+                  <ref role="3TtcxE" to="iowz:6tX5nBTaziK" />
+                </node>
+              </node>
+              <node concept="3zZkjj" id="2fLVrqQ2Guw" role="2OqNvi">
+                <node concept="1bVj0M" id="2fLVrqQ2Gux" role="23t8la">
+                  <node concept="3clFbS" id="2fLVrqQ2Guy" role="1bW5cS">
+                    <node concept="3clFbF" id="2fLVrqQ2Guz" role="3cqZAp">
+                      <node concept="2OqwBi" id="2fLVrqQ2Gu$" role="3clFbG">
+                        <node concept="1PxgMI" id="2fLVrqQ8wFI" role="2Oq$k0">
+                          <ref role="1PxNhF" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+                          <node concept="37vLTw" id="2fLVrqQ2Gu_" role="1PxMeX">
+                            <ref role="3cqZAo" node="2fLVrqQ2GuB" resolve="it" />
+                          </node>
+                        </node>
+                        <node concept="3TrcHB" id="2fLVrqQ8x3b" role="2OqNvi">
+                          <ref role="3TsBF5" to="iowz:2fLVrqQ2EIf" resolve="fromStandardOutput" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="2fLVrqQ2GuB" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="2fLVrqQ2GuC" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="34oBXx" id="2fLVrqQ2GuD" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2fLVrqQ2FTd" role="1YuTPh">
+      <property role="TrG5h" value="processOutput" />
+      <ref role="1YaFvo" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
     </node>
   </node>
 </model>
