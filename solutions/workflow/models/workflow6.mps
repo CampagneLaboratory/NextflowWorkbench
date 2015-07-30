@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="4" />
   </languages>
   <imports>
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
@@ -53,6 +53,7 @@
       <concept id="4018964125401476997" name="org.campagnelab.workflow.structure.List" flags="ng" index="kktkh">
         <child id="7391172440886351025" name="elementType" index="2y8EMt" />
       </concept>
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -124,9 +125,9 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hL_c" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hL_c" role="2ulM7n">
       <property role="TrG5h" value="idsList" />
-      <node concept="16pbKc" id="5UkDK45hL_d" role="2ybFLk" />
+      <node concept="16pbKc" id="2fLVrqPYDx1" role="2ybFLk" />
     </node>
     <node concept="1uLvKC" id="5UkDK45hLIO" role="2ulM79">
       <property role="TrG5h" value="&quot;${idsList}.R&quot;" />
@@ -154,9 +155,9 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hLK9" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hLK9" role="2ulM7n">
       <property role="TrG5h" value="idsList" />
-      <node concept="16pbKc" id="5UkDK45hLKa" role="2ybFLk" />
+      <node concept="16pbKc" id="2fLVrqPYDx4" role="2ybFLk" />
     </node>
     <node concept="1uLvKC" id="5UkDK45hLKp" role="2ulM79">
       <property role="TrG5h" value="'MyRscript.R'" />
@@ -180,9 +181,9 @@
         <node concept="19SUe$" id="4vJs_UWMb_y" role="19SJt6" />
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hM_D" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hM_D" role="2ulM7n">
       <property role="TrG5h" value="Rscript" />
-      <node concept="16pRw0" id="5UkDK45hM_E" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqPYDx7" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="3gLclC5_5KA">
@@ -194,9 +195,9 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hMBi" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hMBi" role="2ulM7n">
       <property role="TrG5h" value="'input'" />
-      <node concept="16pRw0" id="5UkDK45hMBj" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqPYDxa" role="2ybFLk" />
     </node>
     <node concept="1uLvKC" id="5UkDK45hMBy" role="2ulM79">
       <property role="TrG5h" value="'seq_*'" />
@@ -224,9 +225,9 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hMxI" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hMxI" role="2ulM7n">
       <property role="TrG5h" value="myfasta" />
-      <node concept="16pRw0" id="5UkDK45hMxJ" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqPYDxd" role="2ybFLk" />
     </node>
     <node concept="1uLvKC" id="5UkDK45hMxY" role="2ulM79">
       <property role="TrG5h" value="&quot;${myfasta}_translations.fasta&quot;" />
@@ -248,10 +249,10 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hLMn" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hLMn" role="2ulM7n">
       <property role="TrG5h" value="allFiles" />
-      <node concept="kktkh" id="5UkDK45hLMo" role="2ybFLk">
-        <node concept="16pRw0" id="5UkDK45hLMp" role="2y8EMt" />
+      <node concept="kktkh" id="2fLVrqPYDxg" role="2ybFLk">
+        <node concept="16pRw0" id="2fLVrqPYDxh" role="2y8EMt" />
       </node>
     </node>
     <node concept="1uLvKC" id="5UkDK45hLMM" role="2ulM79">

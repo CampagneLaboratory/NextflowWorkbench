@@ -133,6 +133,7 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -199,9 +200,9 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="2bVBkcP9XXP" role="2ulM7n">
+    <node concept="2mjA9o" id="2bVBkcP9XXP" role="2ulM7n">
       <property role="TrG5h" value="stringToEcho" />
-      <node concept="16pbKc" id="2bVBkcP9XXQ" role="2ybFLk" />
+      <node concept="16pbKc" id="2fLVrqPYDsX" role="2ybFLk" />
     </node>
   </node>
   <node concept="2$rMIF" id="5wD$zX2n8RY">

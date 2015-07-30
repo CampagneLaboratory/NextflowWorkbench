@@ -4,7 +4,7 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="4" />
   </languages>
   <imports>
     <import index="j1b0" ref="r:f90cb088-6ac1-4c26-816f-c7d69af35a24(workflow2)" />
@@ -63,6 +63,7 @@
       <concept id="748852418098455525" name="org.campagnelab.workflow.structure.NameInAChannelRef" flags="ng" index="2b_LqF">
         <reference id="748852418098455526" name="value" index="2b_LqC" />
       </concept>
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -182,9 +183,9 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hL9m" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hL9m" role="2ulM7n">
       <property role="TrG5h" value="'input'" />
-      <node concept="16pRw0" id="5UkDK45hL9n" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqPYDwG" role="2ybFLk" />
     </node>
     <node concept="1uLvKC" id="5UkDK45hLaj" role="2ulM79">
       <property role="TrG5h" value="'seq_*'" />
@@ -214,9 +215,9 @@
         <node concept="19SUe$" id="D$tkU2g9ni" role="19SJt6" />
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hME3" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hME3" role="2ulM7n">
       <property role="TrG5h" value="record" />
-      <node concept="16pRw0" id="5UkDK45hME4" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqPYDwJ" role="2ybFLk" />
     </node>
   </node>
 </model>

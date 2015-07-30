@@ -39,6 +39,7 @@
       <concept id="4018964125401495568" name="org.campagnelab.workflow.structure.Tuple" flags="ng" index="knwa4">
         <child id="7391172440899058539" name="elements" index="2zSOd7" />
       </concept>
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
@@ -117,15 +118,15 @@
   </node>
   <node concept="2ulcR8" id="6qiI2N4zIuI">
     <property role="TrG5h" value="AcceptTupple" />
-    <node concept="1uLvKC" id="2bVBkcPgVxr" role="2ulM7n">
-      <node concept="knwa4" id="2bVBkcPgVxF" role="2ybFLk">
-        <node concept="2zSw2O" id="2bVBkcPgVxH" role="2zSOd7">
+    <node concept="2mjA9o" id="2bVBkcPgVxr" role="2ulM7n">
+      <node concept="knwa4" id="2fLVrqPYDsb" role="2ybFLk">
+        <node concept="2zSw2O" id="2fLVrqPYDsc" role="2zSOd7">
           <property role="TrG5h" value="aaa" />
-          <node concept="1utKzZ" id="2bVBkcPgVyp" role="2ybFLk" />
+          <node concept="1utKzZ" id="2fLVrqPYDsd" role="2ybFLk" />
         </node>
-        <node concept="2zSw2O" id="2bVBkcPgVzQ" role="2zSOd7">
+        <node concept="2zSw2O" id="2fLVrqPYDse" role="2zSOd7">
           <property role="TrG5h" value="bcc" />
-          <node concept="16pRw0" id="2bVBkcPgV$P" role="2ybFLk" />
+          <node concept="16pRw0" id="2fLVrqPYDsf" role="2ybFLk" />
         </node>
       </node>
     </node>

@@ -4,7 +4,7 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="4" />
   </languages>
   <imports />
   <registry>
@@ -29,6 +29,7 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
@@ -101,9 +102,9 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hLfP" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hLfP" role="2ulM7n">
       <property role="TrG5h" value="MyinputPath" />
-      <node concept="16pbKc" id="5UkDK45hLfQ" role="2ybFLk" />
+      <node concept="16pbKc" id="2fLVrqPYDwM" role="2ybFLk" />
     </node>
   </node>
 </model>
