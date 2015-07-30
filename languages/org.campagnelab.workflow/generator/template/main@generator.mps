@@ -404,6 +404,19 @@
             </node>
           </node>
         </node>
+        <node concept="2pNNFK" id="7TupKkjsb27" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="7TupKkjsbo_" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="7TupKkjsboC" role="2pMdts">
+              <property role="2pMdty" value="jar.script" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="7TupKkjsboL" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+          </node>
+        </node>
         <node concept="2pNNFK" id="5OPtsPp$nx" role="3o6s8t">
           <property role="2pNNFO" value="property" />
           <property role="qg3DV" value="true" />
@@ -608,7 +621,7 @@
             <node concept="2pNUuL" id="5OPtsPp_p0" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp_sx" role="2pMdts">
-                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${remote.job.dir}/${workflow.script}" />
+                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${remote.job.dir}/${workflow.script} ${remote.job.dir}/${jar.script} " />
               </node>
             </node>
           </node>
@@ -798,11 +811,17 @@
     <node concept="34ZRQx" id="3LlDVJTCyYY" role="34ZRRx">
       <property role="34ZRQb" value="nextflowScript=$1" />
     </node>
+    <node concept="34ZRQx" id="7TupKkjs9RB" role="34ZRRx">
+      <property role="34ZRQb" value="jarScript=$2" />
+    </node>
     <node concept="34ZRQx" id="3LlDVJTCz1G" role="34ZRRx">
       <property role="34ZRQb" value="SCRIPT_DIR=&quot;$( cd &quot;$( dirname &quot;${BASH_SOURCE[0]}&quot; )&quot; &amp;&amp; pwd )&quot;" />
     </node>
     <node concept="34ZRQx" id="3LlDVJTCz4u" role="34ZRRx">
       <property role="34ZRQb" value="source ${SCRIPT_DIR}/setEnv" />
+    </node>
+    <node concept="34ZRQx" id="7TupKkjs9RQ" role="34ZRRx">
+      <property role="34ZRQb" value="export NXF_CLASSPATH=${jarScript}" />
     </node>
     <node concept="34ZRQx" id="3LlDVJTCz7k" role="34ZRRx">
       <property role="34ZRQb" value="echo &quot;Executing ${nextflowScript}&quot;" />

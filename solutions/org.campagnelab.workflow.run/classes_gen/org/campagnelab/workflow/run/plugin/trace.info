@@ -237,51 +237,72 @@
       <node id="1387986661799095063" at="14,0,15,0" concept="4" trace="myScriptPath_String" />
       <node id="1387986661799095063" at="15,0,16,0" concept="4" trace="myWorkflowScript_String" />
       <node id="1387986661799095063" at="16,0,17,0" concept="4" trace="myAdditionalAntLibForSsh_String" />
-      <node id="1387986661799095063" at="20,29,21,39" concept="3" />
-      <node id="1387986661799095063" at="22,5,23,16" concept="9" />
-      <node id="1387986661799095063" at="26,33,27,47" concept="3" />
-      <node id="1387986661799095063" at="28,5,29,16" concept="9" />
-      <node id="1387986661799095063" at="32,41,33,63" concept="3" />
-      <node id="1387986661799095063" at="34,5,35,16" concept="9" />
-      <node id="8932109357802380653" at="38,30,39,35" concept="3" />
-      <node id="8249470738819131017" at="40,5,41,71" concept="8" />
-      <node id="8249470738819179038" at="41,71,42,76" concept="3" />
-      <node id="1387986661800178035" at="42,76,43,211" concept="9" />
-      <node id="1387986661799095063" at="45,0,46,0" concept="12" trace="LOG" />
-      <node id="1387986661799095063" at="17,0,19,0" concept="2" trace="RunRemote_NextflowWithAnt_Command#()V" />
-      <node id="1387986661799095063" at="19,84,22,5" concept="6" />
-      <node id="1387986661799095063" at="25,92,28,5" concept="6" />
-      <node id="1387986661799095063" at="31,108,34,5" concept="6" />
-      <node id="8932109357802380653" at="37,67,40,5" concept="0" />
-      <node id="8932109357802380653" at="37,67,40,5" concept="6" />
-      <node id="1387986661799095063" at="19,0,25,0" concept="7" trace="setScriptPath_String#(Ljava/lang/String;)Lorg/campagnelab/workflow/run/plugin/RunRemote_NextflowWithAnt_Command;" />
-      <node id="1387986661799095063" at="25,0,31,0" concept="7" trace="setWorkflowScript_String#(Ljava/lang/String;)Lorg/campagnelab/workflow/run/plugin/RunRemote_NextflowWithAnt_Command;" />
-      <node id="1387986661799095063" at="31,0,37,0" concept="7" trace="setAdditionalAntLibForSsh_String#(Ljava/lang/String;)Lorg/campagnelab/workflow/run/plugin/RunRemote_NextflowWithAnt_Command;" />
-      <node id="1387986661799095063" at="37,0,45,0" concept="7" trace="createProcess#()Lcom/intellij/execution/process/ProcessHandler;" />
-      <scope id="1387986661799095063" at="17,46,17,46" />
-      <scope id="1387986661799095063" at="20,29,21,39" />
-      <scope id="1387986661799095063" at="26,33,27,47" />
-      <scope id="1387986661799095063" at="32,41,33,63" />
-      <scope id="8932109357802380653" at="38,30,39,35" />
-      <scope id="1387986661799095063" at="17,0,19,0" />
-      <scope id="8932109357802380653" at="37,67,40,5" />
-      <scope id="1387986661799095063" at="19,84,23,16" />
-      <scope id="1387986661799095063" at="25,92,29,16" />
-      <scope id="1387986661799095063" at="31,108,35,16" />
-      <scope id="1387986661799095063" at="19,0,25,0">
+      <node id="1387986661799095063" at="17,0,18,0" concept="4" trace="myHasReports_Boolean" />
+      <node id="1387986661799095063" at="18,0,19,0" concept="4" trace="myJarScript_String" />
+      <node id="1387986661799095063" at="22,29,23,39" concept="3" />
+      <node id="1387986661799095063" at="24,5,25,16" concept="9" />
+      <node id="1387986661799095063" at="28,33,29,47" concept="3" />
+      <node id="1387986661799095063" at="30,5,31,16" concept="9" />
+      <node id="1387986661799095063" at="34,41,35,63" concept="3" />
+      <node id="1387986661799095063" at="36,5,37,16" concept="9" />
+      <node id="1387986661799095063" at="39,86,40,38" concept="3" />
+      <node id="1387986661799095063" at="40,38,41,16" concept="9" />
+      <node id="1387986661799095063" at="44,28,45,37" concept="3" />
+      <node id="1387986661799095063" at="46,5,47,16" concept="9" />
+      <node id="8932109357802380653" at="50,30,51,35" concept="3" />
+      <node id="8249470738819131017" at="52,5,53,71" concept="8" />
+      <node id="8249470738819179038" at="53,71,54,76" concept="3" />
+      <node id="9105828768088381735" at="54,76,55,90" concept="8" />
+      <node id="9105828768088381632" at="55,90,56,0" concept="11" />
+      <node id="1387986661800178035" at="56,0,57,222" concept="9" />
+      <node id="1387986661799095063" at="59,0,60,0" concept="12" trace="LOG" />
+      <node id="1387986661799095063" at="19,0,21,0" concept="2" trace="RunRemote_NextflowWithAnt_Command#()V" />
+      <node id="1387986661799095063" at="21,84,24,5" concept="6" />
+      <node id="1387986661799095063" at="27,92,30,5" concept="6" />
+      <node id="1387986661799095063" at="33,108,36,5" concept="6" />
+      <node id="1387986661799095063" at="43,82,46,5" concept="6" />
+      <node id="8932109357802380653" at="49,67,52,5" concept="0" />
+      <node id="8932109357802380653" at="49,67,52,5" concept="6" />
+      <node id="1387986661799095063" at="39,0,43,0" concept="7" trace="setHasReports_Boolean#(Z)Lorg/campagnelab/workflow/run/plugin/RunRemote_NextflowWithAnt_Command;" />
+      <node id="1387986661799095063" at="21,0,27,0" concept="7" trace="setScriptPath_String#(Ljava/lang/String;)Lorg/campagnelab/workflow/run/plugin/RunRemote_NextflowWithAnt_Command;" />
+      <node id="1387986661799095063" at="27,0,33,0" concept="7" trace="setWorkflowScript_String#(Ljava/lang/String;)Lorg/campagnelab/workflow/run/plugin/RunRemote_NextflowWithAnt_Command;" />
+      <node id="1387986661799095063" at="33,0,39,0" concept="7" trace="setAdditionalAntLibForSsh_String#(Ljava/lang/String;)Lorg/campagnelab/workflow/run/plugin/RunRemote_NextflowWithAnt_Command;" />
+      <node id="1387986661799095063" at="43,0,49,0" concept="7" trace="setJarScript_String#(Ljava/lang/String;)Lorg/campagnelab/workflow/run/plugin/RunRemote_NextflowWithAnt_Command;" />
+      <node id="1387986661799095063" at="49,0,59,0" concept="7" trace="createProcess#()Lcom/intellij/execution/process/ProcessHandler;" />
+      <scope id="1387986661799095063" at="19,46,19,46" />
+      <scope id="1387986661799095063" at="22,29,23,39" />
+      <scope id="1387986661799095063" at="28,33,29,47" />
+      <scope id="1387986661799095063" at="34,41,35,63" />
+      <scope id="1387986661799095063" at="44,28,45,37" />
+      <scope id="8932109357802380653" at="50,30,51,35" />
+      <scope id="1387986661799095063" at="19,0,21,0" />
+      <scope id="1387986661799095063" at="39,86,41,16" />
+      <scope id="8932109357802380653" at="49,67,52,5" />
+      <scope id="1387986661799095063" at="21,84,25,16" />
+      <scope id="1387986661799095063" at="27,92,31,16" />
+      <scope id="1387986661799095063" at="33,108,37,16" />
+      <scope id="1387986661799095063" at="39,0,43,0">
+        <var name="hasReports" id="1387986661799095063" />
+      </scope>
+      <scope id="1387986661799095063" at="43,82,47,16" />
+      <scope id="1387986661799095063" at="21,0,27,0">
         <var name="scriptPath" id="1387986661799095063" />
       </scope>
-      <scope id="1387986661799095063" at="25,0,31,0">
+      <scope id="1387986661799095063" at="27,0,33,0">
         <var name="workflowScript" id="1387986661799095063" />
       </scope>
-      <scope id="1387986661799095063" at="31,0,37,0">
+      <scope id="1387986661799095063" at="33,0,39,0">
         <var name="additionalAntLibForSsh" id="1387986661799095063" />
       </scope>
-      <scope id="1387986661799100098" at="37,67,43,211">
-        <var name="jars" id="8249470738819131023" />
+      <scope id="1387986661799095063" at="43,0,49,0">
+        <var name="jarScript" id="1387986661799095063" />
       </scope>
-      <scope id="1387986661799095063" at="37,0,45,0" />
-      <unit id="1387986661799095063" at="13,0,47,0" name="org.campagnelab.workflow.run.plugin.RunRemote_NextflowWithAnt_Command" />
+      <scope id="1387986661799100098" at="49,67,57,222">
+        <var name="jars" id="8249470738819131023" />
+        <var name="property" id="9105828768088381736" />
+      </scope>
+      <scope id="1387986661799095063" at="49,0,59,0" />
+      <unit id="1387986661799095063" at="13,0,61,0" name="org.campagnelab.workflow.run.plugin.RunRemote_NextflowWithAnt_Command" />
     </file>
   </root>
   <root nodeRef="r:73ca7524-ab13-4206-a565-e392dbbf6517(org.campagnelab.workflow.run.plugin)/1488175004221798872">
@@ -1050,200 +1071,198 @@
       <node id="352677614185351913" at="76,82,77,65" concept="8" />
       <node id="1275103935890843213" at="77,65,78,70" concept="8" />
       <node id="419240959825711881" at="78,70,79,70" concept="8" />
-      <node id="7402915531508051720" at="79,70,80,0" concept="11" />
-      <node id="2034046503361585722" at="82,25,83,223" concept="8" />
-      <node id="1856129165616642624" at="83,223,84,276" concept="3" />
-      <node id="5300623296655352037" at="84,276,85,18" concept="10" />
-      <node id="2034046503361585731" at="85,18,86,138" concept="8" />
-      <node id="5300623296657305952" at="86,138,87,114" concept="8" />
-      <node id="419240959824924582" at="87,114,88,35" concept="3" />
-      <node id="5300623296656305083" at="89,33,90,103" concept="3" />
-      <node id="2034046503361585752" at="90,103,91,116" concept="3" />
-      <node id="1275103935890341696" at="93,34,94,91" concept="3" />
-      <node id="6588488528891784575" at="96,13,97,115" concept="3" />
-      <node id="1275103935890846953" at="97,115,98,89" concept="3" />
-      <node id="1275103935890558397" at="100,46,101,61" concept="3" />
-      <node id="7402915531508050552" at="105,7,106,0" concept="11" />
-      <node id="7402915531509795808" at="107,29,108,108" concept="15" />
-      <node id="7402915531509791670" at="108,108,109,0" concept="11" />
-      <node id="7402915531509788822" at="110,5,111,0" concept="11" />
-      <node id="7402915531509839096" at="112,93,113,82" concept="8" />
-      <node id="7402915531509839104" at="115,27,116,300" concept="8" />
-      <node id="7402915531509839117" at="116,300,117,69" concept="3" />
-      <node id="7402915531509839123" at="120,7,121,276" concept="8" />
-      <node id="7402915531509839123" at="121,276,122,90" concept="8" />
-      <node id="7402915531509839123" at="122,90,123,85" concept="3" />
-      <node id="7402915531509839123" at="125,32,126,35" concept="3" />
-      <node id="475874339508045915" at="131,7,132,481" concept="8" />
-      <node id="475874339508045915" at="132,481,133,90" concept="8" />
-      <node id="475874339508045915" at="133,90,134,85" concept="3" />
-      <node id="475874339508045915" at="136,32,137,35" concept="3" />
-      <node id="9172946823753212054" at="141,5,142,0" concept="11" />
-      <node id="7402915531509800047" at="142,0,143,0" concept="11" />
-      <node id="3066236890325155864" at="145,31,146,110" concept="15" />
-      <node id="938333836753764820" at="147,102,148,84" concept="8" />
-      <node id="6712790454895771548" at="148,84,149,0" concept="11" />
-      <node id="938333836753776651" at="151,29,152,302" concept="8" />
-      <node id="6712790454895851514" at="152,302,153,71" concept="3" />
-      <node id="1387986661799534376" at="156,9,157,278" concept="8" />
-      <node id="1387986661799534376" at="157,278,158,92" concept="8" />
-      <node id="1387986661799534376" at="158,92,159,87" concept="3" />
-      <node id="1387986661799534376" at="161,34,162,37" concept="3" />
-      <node id="7402915531508060121" at="166,14,167,0" concept="11" />
-      <node id="1275103935891780250" at="169,11,170,400" concept="8" />
-      <node id="1275103935891780250" at="170,400,171,53" concept="8" />
-      <node id="1275103935891780250" at="171,53,172,89" concept="3" />
-      <node id="1275103935891780250" at="174,36,175,39" concept="3" />
-      <node id="1275103935891777549" at="178,11,179,0" concept="11" />
-      <node id="7402915531508127538" at="181,11,182,412" concept="8" />
-      <node id="7402915531508127538" at="182,412,183,94" concept="8" />
-      <node id="7402915531508127538" at="183,94,184,89" concept="3" />
-      <node id="7402915531508127538" at="186,36,187,39" concept="3" />
-      <node id="6062668769033909668" at="191,11,192,341" concept="8" />
-      <node id="6062668769033909668" at="192,341,193,53" concept="8" />
-      <node id="6062668769033909668" at="193,53,194,89" concept="3" />
-      <node id="6062668769033909668" at="196,36,197,39" concept="3" />
-      <node id="8969925079113009519" at="201,9,202,0" concept="11" />
-      <node id="4451133196878694324" at="204,6,205,0" concept="11" />
-      <node id="6062668769033909643" at="208,60,209,18" concept="9" />
-      <node id="6062668769033909643" at="210,5,211,17" concept="9" />
-      <node id="6062668769033909643" at="213,0,214,0" concept="12" trace="LOG" />
+      <node id="2465737025016871043" at="79,70,80,77" concept="8" />
+      <node id="7402915531508051720" at="80,77,81,0" concept="11" />
+      <node id="2034046503361585722" at="83,25,84,223" concept="8" />
+      <node id="1856129165616642624" at="84,223,85,276" concept="3" />
+      <node id="5300623296655352037" at="85,276,86,18" concept="10" />
+      <node id="2034046503361585731" at="86,18,87,138" concept="8" />
+      <node id="5300623296657305952" at="87,138,88,114" concept="8" />
+      <node id="419240959824924582" at="88,114,89,35" concept="3" />
+      <node id="2465737025016884125" at="89,35,90,107" concept="3" />
+      <node id="5300623296656305083" at="91,33,92,103" concept="3" />
+      <node id="2034046503361585752" at="92,103,93,116" concept="3" />
+      <node id="6588488528891784575" at="95,13,96,92" concept="3" />
+      <node id="1275103935890846953" at="96,92,97,82" concept="3" />
+      <node id="1275103935890558397" at="99,46,100,61" concept="3" />
+      <node id="7402915531508050552" at="104,7,105,0" concept="11" />
+      <node id="7402915531509795808" at="106,29,107,108" concept="15" />
+      <node id="7402915531509791670" at="107,108,108,0" concept="11" />
+      <node id="7402915531509788822" at="109,5,110,0" concept="11" />
+      <node id="7402915531509839096" at="111,93,112,82" concept="8" />
+      <node id="7402915531509839104" at="114,27,115,300" concept="8" />
+      <node id="7402915531509839117" at="115,300,116,69" concept="3" />
+      <node id="7402915531509839123" at="119,7,120,359" concept="8" />
+      <node id="7402915531509839123" at="120,359,121,90" concept="8" />
+      <node id="7402915531509839123" at="121,90,122,85" concept="3" />
+      <node id="7402915531509839123" at="124,32,125,35" concept="3" />
+      <node id="475874339508045915" at="130,7,131,469" concept="8" />
+      <node id="475874339508045915" at="131,469,132,90" concept="8" />
+      <node id="475874339508045915" at="132,90,133,85" concept="3" />
+      <node id="475874339508045915" at="135,32,136,35" concept="3" />
+      <node id="9172946823753212054" at="140,5,141,0" concept="11" />
+      <node id="7402915531509800047" at="141,0,142,0" concept="11" />
+      <node id="3066236890325155864" at="144,31,145,110" concept="15" />
+      <node id="938333836753764820" at="146,102,147,84" concept="8" />
+      <node id="6712790454895771548" at="147,84,148,0" concept="11" />
+      <node id="938333836753776651" at="150,29,151,302" concept="8" />
+      <node id="6712790454895851514" at="151,302,152,71" concept="3" />
+      <node id="1387986661799534376" at="155,9,156,278" concept="8" />
+      <node id="1387986661799534376" at="156,278,157,92" concept="8" />
+      <node id="1387986661799534376" at="157,92,158,87" concept="3" />
+      <node id="1387986661799534376" at="160,34,161,37" concept="3" />
+      <node id="7402915531508060121" at="165,14,166,0" concept="11" />
+      <node id="1275103935891780250" at="168,11,169,400" concept="8" />
+      <node id="1275103935891780250" at="169,400,170,53" concept="8" />
+      <node id="1275103935891780250" at="170,53,171,89" concept="3" />
+      <node id="1275103935891780250" at="173,36,174,39" concept="3" />
+      <node id="1275103935891777549" at="177,11,178,0" concept="11" />
+      <node id="7402915531508127538" at="180,11,181,412" concept="8" />
+      <node id="7402915531508127538" at="181,412,182,94" concept="8" />
+      <node id="7402915531508127538" at="182,94,183,89" concept="3" />
+      <node id="7402915531508127538" at="185,36,186,39" concept="3" />
+      <node id="6062668769033909668" at="190,11,191,341" concept="8" />
+      <node id="6062668769033909668" at="191,341,192,53" concept="8" />
+      <node id="6062668769033909668" at="192,53,193,89" concept="3" />
+      <node id="6062668769033909668" at="195,36,196,39" concept="3" />
+      <node id="8969925079113009519" at="200,9,201,0" concept="11" />
+      <node id="4451133196878694324" at="203,6,204,0" concept="11" />
+      <node id="6062668769033909643" at="207,60,208,18" concept="9" />
+      <node id="6062668769033909643" at="209,5,210,17" concept="9" />
+      <node id="6062668769033909643" at="212,0,213,0" concept="12" trace="LOG" />
       <node id="6062668769033909643" at="51,0,53,0" concept="4" trace="myRunConfiguration" />
       <node id="6062668769033909643" at="53,0,55,0" concept="4" trace="myEnvironment" />
       <node id="6062668769033909643" at="59,0,62,0" concept="7" trace="getConfigurationSettings#()Lcom/intellij/execution/configurations/ConfigurationPerRunnerSettings;" />
       <node id="6062668769033909643" at="62,0,65,0" concept="7" trace="getRunnerSettings#()Lcom/intellij/execution/configurations/RunnerSettings;" />
       <node id="2403604400354643150" at="72,77,75,5" concept="6" />
-      <node id="1275103935890341696" at="92,9,95,9" concept="0" />
-      <node id="1275103935890341696" at="92,9,95,9" concept="6" />
-      <node id="1275103935890558397" at="99,31,102,11" concept="0" />
-      <node id="1275103935890558397" at="99,31,102,11" concept="6" />
-      <node id="7402915531509839123" at="125,0,128,0" concept="7" trace="invoke#()V" />
-      <node id="475874339508045915" at="136,0,139,0" concept="7" trace="invoke#()V" />
-      <node id="1387986661799534376" at="161,0,164,0" concept="7" trace="invoke#()V" />
-      <node id="1275103935891780250" at="174,0,177,0" concept="7" trace="invoke#()V" />
-      <node id="7402915531508127538" at="186,0,189,0" concept="7" trace="invoke#()V" />
-      <node id="6062668769033909668" at="196,0,199,0" concept="7" trace="invoke#()V" />
-      <node id="6062668769033909643" at="207,55,210,5" concept="6" />
+      <node id="1275103935890558397" at="98,31,101,11" concept="0" />
+      <node id="1275103935890558397" at="98,31,101,11" concept="6" />
+      <node id="7402915531509839123" at="124,0,127,0" concept="7" trace="invoke#()V" />
+      <node id="475874339508045915" at="135,0,138,0" concept="7" trace="invoke#()V" />
+      <node id="1387986661799534376" at="160,0,163,0" concept="7" trace="invoke#()V" />
+      <node id="1275103935891780250" at="173,0,176,0" concept="7" trace="invoke#()V" />
+      <node id="7402915531508127538" at="185,0,188,0" concept="7" trace="invoke#()V" />
+      <node id="6062668769033909668" at="195,0,198,0" concept="7" trace="invoke#()V" />
+      <node id="6062668769033909643" at="206,55,209,5" concept="6" />
       <node id="6062668769033909643" at="55,0,59,0" concept="2" trace="NextFlow_Configuration_RunProfileState#(Lorg/campagnelab/workflow/run/plugin/NextFlow_Configuration;Lcom/intellij/execution/Executor;Lcom/intellij/execution/runners/ExecutionEnvironment;)V" />
-      <node id="2034046503361585738" at="88,35,92,9" concept="6" />
-      <node id="7402915531509791669" at="106,0,110,5" concept="6" />
-      <node id="7402915531509839102" at="115,0,119,0" concept="7" trace="run#()V" />
-      <node id="1649079607297185209" at="151,0,155,0" concept="7" trace="run#()V" />
-      <node id="7402915531509839123" at="123,85,128,12" concept="9" />
-      <node id="475874339508045915" at="134,85,139,12" concept="9" />
-      <node id="1387986661799534376" at="159,87,164,14" concept="9" />
-      <node id="1275103935891780250" at="172,89,177,16" concept="9" />
-      <node id="7402915531508127538" at="184,89,189,16" concept="9" />
-      <node id="6062668769033909668" at="194,89,199,16" concept="9" />
-      <node id="7402915531509839101" at="113,82,119,9" concept="3" />
-      <node id="1649079607297185207" at="149,0,155,11" concept="3" />
-      <node id="6062668769033909643" at="207,0,213,0" concept="13" trace="canExecute#(Ljava/lang/String;)Z" />
-      <node id="1275103935890554911" at="95,9,103,9" concept="16" />
-      <node id="7402915531509839123" at="119,9,129,7" concept="0" />
-      <node id="475874339508045915" at="130,12,140,7" concept="0" />
-      <node id="1387986661799534376" at="155,11,165,9" concept="0" />
-      <node id="1275103935891780250" at="168,31,178,11" concept="0" />
-      <node id="7402915531508127538" at="180,16,190,11" concept="0" />
-      <node id="6062668769033909668" at="190,11,200,11" concept="0" />
-      <node id="7402915531509840651" at="130,10,141,5" concept="0" />
-      <node id="1275103935891778860" at="180,14,201,9" concept="0" />
-      <node id="7402915531508051722" at="82,0,105,0" concept="7" trace="run#()V" />
-      <node id="7402915531508051721" at="80,0,105,7" concept="3" />
-      <node id="7402915531509805083" at="111,0,141,5" concept="6" />
-      <node id="1275103935891777548" at="167,0,201,9" concept="6" />
-      <node id="4451133196878695127" at="166,12,203,7" concept="0" />
-      <node id="3066236890325142091" at="144,6,203,7" concept="6" />
-      <node id="7402915531509843175" at="143,0,204,6" concept="1" />
-      <node id="6062668769033909643" at="65,0,207,0" concept="7" trace="execute#(Lcom/intellij/execution/Executor;Lcom/intellij/execution/runners/ProgramRunner;)Lcom/intellij/execution/ExecutionResult;" />
+      <node id="2034046503361585738" at="90,107,94,9" concept="6" />
+      <node id="7402915531509791669" at="105,0,109,5" concept="6" />
+      <node id="7402915531509839102" at="114,0,118,0" concept="7" trace="run#()V" />
+      <node id="1649079607297185209" at="150,0,154,0" concept="7" trace="run#()V" />
+      <node id="7402915531509839123" at="122,85,127,12" concept="9" />
+      <node id="475874339508045915" at="133,85,138,12" concept="9" />
+      <node id="1387986661799534376" at="158,87,163,14" concept="9" />
+      <node id="1275103935891780250" at="171,89,176,16" concept="9" />
+      <node id="7402915531508127538" at="183,89,188,16" concept="9" />
+      <node id="6062668769033909668" at="193,89,198,16" concept="9" />
+      <node id="7402915531509839101" at="112,82,118,9" concept="3" />
+      <node id="1649079607297185207" at="148,0,154,11" concept="3" />
+      <node id="6062668769033909643" at="206,0,212,0" concept="13" trace="canExecute#(Ljava/lang/String;)Z" />
+      <node id="1275103935890554911" at="94,9,102,9" concept="16" />
+      <node id="7402915531509839123" at="118,9,128,7" concept="0" />
+      <node id="475874339508045915" at="129,12,139,7" concept="0" />
+      <node id="1387986661799534376" at="154,11,164,9" concept="0" />
+      <node id="1275103935891780250" at="167,31,177,11" concept="0" />
+      <node id="7402915531508127538" at="179,16,189,11" concept="0" />
+      <node id="6062668769033909668" at="189,11,199,11" concept="0" />
+      <node id="7402915531509840651" at="129,10,140,5" concept="0" />
+      <node id="7402915531508051722" at="83,0,104,0" concept="7" trace="run#()V" />
+      <node id="1275103935891778860" at="179,14,200,9" concept="0" />
+      <node id="7402915531508051721" at="81,0,104,7" concept="3" />
+      <node id="7402915531509805083" at="110,0,140,5" concept="6" />
+      <node id="1275103935891777548" at="166,0,200,9" concept="6" />
+      <node id="4451133196878695127" at="165,12,202,7" concept="0" />
+      <node id="3066236890325142091" at="143,6,202,7" concept="6" />
+      <node id="7402915531509843175" at="142,0,203,6" concept="1" />
+      <node id="6062668769033909643" at="65,0,206,0" concept="7" trace="execute#(Lcom/intellij/execution/Executor;Lcom/intellij/execution/runners/ProgramRunner;)Lcom/intellij/execution/ExecutionResult;" />
       <scope id="6062668769033909643" at="59,68,60,16" />
       <scope id="6062668769033909643" at="62,45,63,16" />
       <scope id="2403604400354643153" at="73,28,74,56" />
-      <scope id="1275103935890341696" at="93,34,94,91" />
-      <scope id="1275103935890558397" at="100,46,101,61" />
-      <scope id="7402915531509839123" at="125,32,126,35" />
-      <scope id="475874339508045915" at="136,32,137,35" />
-      <scope id="3066236890325142093" at="145,31,146,110" />
-      <scope id="1387986661799534376" at="161,34,162,37" />
-      <scope id="1275103935891780250" at="174,36,175,39" />
-      <scope id="7402915531508127538" at="186,36,187,39" />
-      <scope id="6062668769033909668" at="196,36,197,39" />
-      <scope id="6062668769033909643" at="208,60,209,18" />
+      <scope id="1275103935890558397" at="99,46,100,61" />
+      <scope id="7402915531509839123" at="124,32,125,35" />
+      <scope id="475874339508045915" at="135,32,136,35" />
+      <scope id="3066236890325142093" at="144,31,145,110" />
+      <scope id="1387986661799534376" at="160,34,161,37" />
+      <scope id="1275103935891780250" at="173,36,174,39" />
+      <scope id="7402915531508127538" at="185,36,186,39" />
+      <scope id="6062668769033909668" at="195,36,196,39" />
+      <scope id="6062668769033909643" at="207,60,208,18" />
       <scope id="6062668769033909643" at="55,167,57,32" />
-      <scope id="2034046503361585742" at="89,33,91,116" />
-      <scope id="1275103935890554913" at="96,13,98,89" />
-      <scope id="7402915531509791671" at="107,29,109,0" />
-      <scope id="7402915531509839103" at="115,27,117,69">
+      <scope id="2034046503361585742" at="91,33,93,116" />
+      <scope id="1275103935890554913" at="95,13,97,82" />
+      <scope id="7402915531509791671" at="106,29,108,0" />
+      <scope id="7402915531509839103" at="114,27,116,69">
         <var name="relativePathHelper" id="7402915531509839105" />
       </scope>
-      <scope id="1649079607297185211" at="151,29,153,71">
+      <scope id="1649079607297185211" at="150,29,152,71">
         <var name="relativePathHelper" id="938333836753776652" />
       </scope>
       <scope id="6062668769033909643" at="59,0,62,0" />
       <scope id="6062668769033909643" at="62,0,65,0" />
-      <scope id="1275103935890341696" at="92,9,95,9" />
-      <scope id="1275103935890554914" at="99,0,102,11">
+      <scope id="1275103935890554914" at="98,0,101,11">
         <var name="e" id="1275103935890554916" />
       </scope>
-      <scope id="1275103935890554920" at="99,31,102,11" />
-      <scope id="1275103935890558397" at="99,31,102,11" />
-      <scope id="7402915531509839123" at="125,0,128,0" />
-      <scope id="475874339508045915" at="136,0,139,0" />
-      <scope id="1387986661799534376" at="161,0,164,0" />
-      <scope id="1275103935891780250" at="174,0,177,0" />
-      <scope id="7402915531508127538" at="186,0,189,0" />
-      <scope id="6062668769033909668" at="196,0,199,0" />
+      <scope id="1275103935890554920" at="98,31,101,11" />
+      <scope id="1275103935890558397" at="98,31,101,11" />
+      <scope id="7402915531509839123" at="124,0,127,0" />
+      <scope id="475874339508045915" at="135,0,138,0" />
+      <scope id="1387986661799534376" at="160,0,163,0" />
+      <scope id="1275103935891780250" at="173,0,176,0" />
+      <scope id="7402915531508127538" at="185,0,188,0" />
+      <scope id="6062668769033909668" at="195,0,198,0" />
       <scope id="6062668769033909643" at="55,0,59,0">
         <var name="configuration" id="6062668769033909643" />
         <var name="environment" id="6062668769033909643" />
         <var name="executor" id="6062668769033909643" />
       </scope>
-      <scope id="7402915531509839102" at="115,0,119,0" />
-      <scope id="1649079607297185209" at="151,0,155,0" />
-      <scope id="6062668769033909643" at="207,55,211,17" />
-      <scope id="6062668769033909643" at="207,0,213,0">
+      <scope id="7402915531509839102" at="114,0,118,0" />
+      <scope id="1649079607297185209" at="150,0,154,0" />
+      <scope id="6062668769033909643" at="206,55,210,17" />
+      <scope id="6062668769033909643" at="206,0,212,0">
         <var name="executorId" id="6062668769033909643" />
       </scope>
-      <scope id="7402915531509839123" at="120,7,128,12">
+      <scope id="7402915531509839123" at="119,7,127,12">
         <var name="_consoleView" id="7402915531509839123" />
         <var name="_processHandler" id="7402915531509839123" />
       </scope>
-      <scope id="475874339508045915" at="131,7,139,12">
+      <scope id="475874339508045915" at="130,7,138,12">
         <var name="_consoleView" id="475874339508045915" />
         <var name="_processHandler" id="475874339508045915" />
       </scope>
-      <scope id="1387986661799534376" at="156,9,164,14">
+      <scope id="1387986661799534376" at="155,9,163,14">
         <var name="_consoleView" id="1387986661799534376" />
         <var name="_processHandler" id="1387986661799534376" />
       </scope>
-      <scope id="1275103935891780250" at="169,11,177,16">
+      <scope id="1275103935891780250" at="168,11,176,16">
         <var name="_consoleView" id="1275103935891780250" />
         <var name="_processHandler" id="1275103935891780250" />
       </scope>
-      <scope id="7402915531508127538" at="181,11,189,16">
+      <scope id="7402915531508127538" at="180,11,188,16">
         <var name="_consoleView" id="7402915531508127538" />
         <var name="_processHandler" id="7402915531508127538" />
       </scope>
-      <scope id="6062668769033909668" at="191,11,199,16">
+      <scope id="6062668769033909668" at="190,11,198,16">
         <var name="_consoleView" id="6062668769033909668" />
         <var name="_processHandler" id="6062668769033909668" />
       </scope>
-      <scope id="7402915531509840652" at="130,12,140,7" />
-      <scope id="1275103935891777550" at="168,31,179,0" />
-      <scope id="7402915531509805084" at="112,93,129,7">
+      <scope id="7402915531509840652" at="129,12,139,7" />
+      <scope id="1275103935891777550" at="167,31,178,0" />
+      <scope id="7402915531509805084" at="111,93,128,7">
         <var name="additionalLibPath" id="7402915531509839097" />
       </scope>
-      <scope id="1387986661799350537" at="147,102,165,9">
+      <scope id="1387986661799350537" at="146,102,164,9">
         <var name="additionalLibPath" id="938333836753764823" />
       </scope>
-      <scope id="1275103935891778861" at="180,16,200,11" />
-      <scope id="7402915531508051723" at="82,25,103,9">
+      <scope id="7402915531508051723" at="83,25,102,9">
         <var name="modelName" id="5300623296657305955" />
         <var name="node" id="2034046503361585723" />
         <var name="scriptPath" id="2034046503361585732" />
       </scope>
-      <scope id="7402915531508051722" at="82,0,105,0" />
-      <scope id="4451133196878695128" at="166,14,202,0" />
-      <scope id="6062668769033909643" at="66,110,205,0">
+      <scope id="1275103935891778861" at="179,16,199,11" />
+      <scope id="7402915531508051722" at="83,0,104,0" />
+      <scope id="4451133196878695128" at="165,14,201,0" />
+      <scope id="6062668769033909643" at="66,110,204,0">
+        <var name="classesGenPath" id="2465737025016871046" />
         <var name="console" id="6062668769033909656" />
         <var name="file" id="352677614185351914" />
         <var name="genPath" id="1275103935890843216" />
@@ -1254,20 +1273,20 @@
         <var name="project" id="6062668769033909643" />
         <var name="reference" id="2403604400354586087" />
       </scope>
-      <scope id="6062668769033909643" at="65,0,207,0">
+      <scope id="6062668769033909643" at="65,0,206,0">
         <var name="executor" id="6062668769033909643" />
         <var name="runner" id="6062668769033909643" />
       </scope>
-      <unit id="7402915531509839123" at="124,120,128,9" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$3" />
-      <unit id="475874339508045915" at="135,120,139,9" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$4" />
-      <unit id="1387986661799534376" at="160,122,164,11" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$6" />
-      <unit id="1275103935891780250" at="173,124,177,13" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$7" />
-      <unit id="7402915531508127538" at="185,124,189,13" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$8" />
-      <unit id="6062668769033909668" at="195,124,199,13" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$9" />
-      <unit id="7402915531509839102" at="114,47,119,7" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$2" />
-      <unit id="1649079607297185209" at="150,49,155,9" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$5" />
-      <unit id="7402915531508051722" at="81,45,105,5" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$1" />
-      <unit id="6062668769033909643" at="50,0,215,0" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState" />
+      <unit id="7402915531509839123" at="123,120,127,9" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$3" />
+      <unit id="475874339508045915" at="134,120,138,9" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$4" />
+      <unit id="1387986661799534376" at="159,122,163,11" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$6" />
+      <unit id="1275103935891780250" at="172,124,176,13" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$7" />
+      <unit id="7402915531508127538" at="184,124,188,13" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$8" />
+      <unit id="6062668769033909668" at="194,124,198,13" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$9" />
+      <unit id="7402915531509839102" at="113,47,118,7" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$2" />
+      <unit id="1649079607297185209" at="149,49,154,9" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$5" />
+      <unit id="7402915531508051722" at="82,45,104,5" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState$1" />
+      <unit id="6062668769033909643" at="50,0,214,0" name="org.campagnelab.workflow.run.plugin.NextFlow_Configuration_RunProfileState" />
     </file>
   </root>
   <root nodeRef="r:73ca7524-ab13-4206-a565-e392dbbf6517(org.campagnelab.workflow.run.plugin)/6062668769033909683">

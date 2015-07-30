@@ -130,7 +130,7 @@
       <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
         <child id="3653684473245054701" name="elementType" index="2J_sx6" />
       </concept>
-      <concept id="4777210630426255197" name="org.campagnelab.workflow.structure.Local" flags="ng" index="2LyH2s" />
+      <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="6992028756512830254" name="org.campagnelab.workflow.structure.QueueElement" flags="ng" index="2MiXSP">
         <property id="6992028756512830255" name="queue" index="2MiXSO" />
       </concept>
@@ -203,7 +203,7 @@
   </node>
   <node concept="pkhaZ" id="5wD$zX25kgg">
     <property role="TrG5h" value="workflow.config" />
-    <node concept="2LyH2s" id="7XcQC$Hms52" role="pkh9A" />
+    <node concept="2LyH2v" id="1nt77LU3j3T" role="pkh9A" />
     <node concept="oEfOI" id="5wD$zX25khL" role="2xLS5a">
       <node concept="2MiXSP" id="5wD$zX25khM" role="2MiXW1">
         <property role="2MiXSO" value="rascals.q" />
