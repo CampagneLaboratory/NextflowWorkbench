@@ -25,7 +25,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BaseLanguageAdapter_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,216,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,220,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BooleanChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
@@ -248,6 +248,12 @@
     </file>
     <file name="ProcessInputOutput_BehaviorDescriptor.java">
       <unit at="10,0,27,0" name="org.campagnelab.workflow.behavior.ProcessInputOutput_BehaviorDescriptor" />
+    </file>
+    <file name="ProcessInput_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ProcessInput_BehaviorDescriptor" />
+    </file>
+    <file name="ProcessOutput_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ProcessOutput_BehaviorDescriptor" />
     </file>
     <file name="ProcessRef_BehaviorDescriptor.java">
       <unit at="11,0,25,0" name="org.campagnelab.workflow.behavior.ProcessRef_BehaviorDescriptor" />

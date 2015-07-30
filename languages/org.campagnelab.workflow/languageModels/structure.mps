@@ -1494,5 +1494,61 @@
       <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6TmjYLGcN_3">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="ifEmpty" />
+    <property role="34LRSv" value="ifEmpty" />
+    <property role="R4oN_" value="emits a value as specified the operator parameter, when the channel to which is applied is empty" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcNQe">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="34LRSv" value="print" />
+    <property role="TrG5h" value="Print" />
+    <property role="R4oN_" value="prints items emitted by a channel to the console standard. Consume items emitted by the source." />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcNYR">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Println" />
+    <property role="34LRSv" value="println" />
+    <property role="R4oN_" value="prints items emitted by a channel to the console standard appending a new line character. Consume items emitted by the source " />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcO3d">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="View" />
+    <property role="34LRSv" value="view" />
+    <property role="R4oN_" value="prints the items emitted by a channel to the console standard output. Do not consume item from the source Channel" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcOkA">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="CountBy" />
+    <property role="34LRSv" value="countBy" />
+    <property role="R4oN_" value="creates a channel which emits a n associative array (Map) that counts the occurrences of the emitted items in the source channel having the same key." />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcOoY">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Min" />
+    <property role="34LRSv" value="min" />
+    <property role="R4oN_" value="waits until the source channel completes, and then emits the item that has the lowest value." />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcOtn">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Max" />
+    <property role="34LRSv" value="max" />
+    <property role="R4oN_" value="waits until the source channel completes, and then emits the item that has the greatest value." />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcOto">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Sum" />
+    <property role="34LRSv" value="sum" />
+    <property role="R4oN_" value="operator creates a channel that emits the sum of all the items emitted by the channel itself" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
 </model>
 
