@@ -1129,7 +1129,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     </node>
-    <node concept="PrWs8" id="D$tkU1WQfB" role="PzmwI">
+    <node concept="PrWs8" id="6TmjYLGgm0h" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
@@ -1549,6 +1549,68 @@
     <property role="34LRSv" value="sum" />
     <property role="R4oN_" value="operator creates a channel that emits the sum of all the items emitted by the channel itself" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcWld">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="ClosureFunctionWithChannelRef" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <node concept="1TJgyj" id="6TmjYLGeFMw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="outChannelContainerRef" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6TmjYLGeFpH" resolve="OutChannelContainerRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeFpH">
+    <property role="TrG5h" value="OutChannelContainerRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6TmjYLGeFMt" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="outChannelContainer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3m26PihhBwN" resolve="OutChannelContainer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeGXs">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Merge" />
+    <property role="34LRSv" value="merge" />
+    <property role="R4oN_" value="lets you join items emitted by two (or more) channels into a new channel." />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeHlg">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Phase" />
+    <property role="34LRSv" value="phase" />
+    <property role="R4oN_" value="creates a channel that synchronizes the values emitted by two other channels, in such a way that it emits pairs of items that have a matching key." />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+    <node concept="1TJgyi" id="6TmjYLGeHuE" role="1TKVEl">
+      <property role="TrG5h" value="remainder" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeHOd">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Cross" />
+    <property role="34LRSv" value="cross" />
+    <property role="R4oN_" value="allows you to combine the items of two channels in such a way that the items of the source channel are emitted along with the items emitted by the target channel for which they have a matching key" />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeHXi">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Choice" />
+    <property role="34LRSv" value="choice" />
+    <property role="R4oN_" value=" allows you to forward the items emitted by a source channel to two (or more) output channels, choosing one out of them at a time." />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeIaW">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Separate" />
+    <property role="34LRSv" value="separate" />
+    <property role="R4oN_" value="lets you copy the items emitted by the source channel into multiple channels, which each of these can receive a separate version of the same item." />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
   </node>
 </model>
 
