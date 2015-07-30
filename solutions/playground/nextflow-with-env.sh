@@ -1,0 +1,2 @@
+export NXF_CLASSPATH=/Users/jasonkurs/nextflowworkbench/solutions/playground/classes_gen/CorrectWorkflows/generated.jar
+/Users/jasonkurs/nextflow /Users/jasonkurs/nextflowworkbench/solutions/playground/source_gen/CorrectWorkflows/FlattenTest.nf
