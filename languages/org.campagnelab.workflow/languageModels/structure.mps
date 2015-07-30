@@ -20,7 +20,7 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.files.structure)" implicit="true" />
+    <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -29,7 +29,6 @@
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="2465654535473034588" name="helpURL" index="2Bxbrw" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
@@ -78,7 +77,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="processOptions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="648FhJjeUB7" resolve="ProcessOptions" />
+      <ref role="20lvS9" to="dlwq:5KN4KqZbJnZ" resolve="ProcessOptions" />
     </node>
     <node concept="1TJgyj" id="6tX5nBTaziI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -178,7 +177,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="processOptions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="648FhJjeUB7" resolve="ProcessOptions" />
+      <ref role="20lvS9" to="dlwq:5KN4KqZbJnZ" resolve="ProcessOptions" />
     </node>
     <node concept="PrWs8" id="5CFNYIF2zMf" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -554,170 +553,6 @@
     <property role="34LRSv" value="toSortedList" />
     <property role="R4oN_" value="collects all the items emitted by a list object, sorts them, and then emits the list as a single item" />
     <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
-  </node>
-  <node concept="1TIwiD" id="49c3W7NLHXs">
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="TrG5h" value="Executor" />
-    <property role="3GE5qa" value="executors" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="49c3W7NLHXt">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="Local" />
-    <property role="34LRSv" value="local" />
-    <property role="R4oN_" value="executes the workflow on the local, single machine" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#local-executor" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="49c3W7NLHXu">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="SGE" />
-    <property role="R4oN_" value="executes the workflow on the SGE computer network" />
-    <property role="34LRSv" value="sge" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#sge-executor" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="21kmpcSWrHO">
-    <property role="TrG5h" value="NumCPUs" />
-    <property role="34LRSv" value="numCPUs" />
-    <property role="R4oN_" value="defines the number of CPU required by the process' task" />
-    <property role="3GE5qa" value="processOptions" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-    <node concept="1TJgyi" id="21kmpcSWrYx" role="1TKVEl">
-      <property role="TrG5h" value="num" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="21kmpcSZaiX">
-    <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="Queue" />
-    <property role="34LRSv" value="queue" />
-    <property role="R4oN_" value="allows you to set the queue where jobs are scheduled when using a grid based executor in the pipeline" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-    <node concept="1TJgyj" id="648FhJjgR8q" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="queueElement" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="648FhJjgRcI" resolve="QueueElement" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="21kmpcSZaoZ">
-    <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="Memory" />
-    <property role="34LRSv" value="memory" />
-    <property role="R4oN_" value="defines how much memory the process is allowed to use" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-    <node concept="1TJgyi" id="21kmpcSZaq$" role="1TKVEl">
-      <property role="TrG5h" value="memory" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="21kmpcSZaqB">
-    <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="Penv" />
-    <property role="34LRSv" value="penv" />
-    <property role="R4oN_" value="define the parallel environment to be used when submitting a parallel task to the SGE resource manager" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-    <node concept="1TJgyi" id="21kmpcSZase" role="1TKVEl">
-      <property role="TrG5h" value="penv" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="21kmpcSZash">
-    <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="TimeAllowed" />
-    <property role="34LRSv" value="time allowed" />
-    <property role="R4oN_" value="allows you to define how long a process is allowed to run" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-    <node concept="1TJgyi" id="21kmpcSZatU" role="1TKVEl">
-      <property role="TrG5h" value="time" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="21kmpcSZatX">
-    <property role="TrG5h" value="ClusterOptions" />
-    <property role="34LRSv" value="cluster options" />
-    <property role="R4oN_" value="allows native configuration options to be accepted by the cluster submit command" />
-    <property role="3GE5qa" value="processOptions" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-    <node concept="1TJgyi" id="21kmpcSZavC" role="1TKVEl">
-      <property role="TrG5h" value="clusterOptions" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="21kmpcT1kGG">
-    <property role="TrG5h" value="WorkflowConfig" />
-    <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="workflow.config" />
-    <property role="R4oN_" value="configuration for workflow submission" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="21kmpcT1kJP" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="executor" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="49c3W7NLHXs" resolve="Executor" />
-    </node>
-    <node concept="1TJgyj" id="59canFNyUwK" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="processOptions" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="648FhJjeUB7" resolve="ProcessOptions" />
-    </node>
-    <node concept="1TJgyj" id="5wD$zX1BzGp" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="remoteSubmission" />
-      <ref role="20lvS9" node="5OPtsPGg59" resolve="RemoteSubmissionConfig" />
-    </node>
-    <node concept="PrWs8" id="21kmpcThJdl" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4JZd7mB0N1L">
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="TrG5h" value="ErrorStrategies" />
-    <property role="3GE5qa" value="processOptions.errorStrategies" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-  </node>
-  <node concept="1TIwiD" id="4JZd7mB0N1V">
-    <property role="3GE5qa" value="processOptions.errorStrategies" />
-    <property role="TrG5h" value="Ignore" />
-    <property role="34LRSv" value="ignore" />
-    <property role="R4oN_" value="the process does not stop on an error condition, it only notifies of the error" />
-    <ref role="1TJDcQ" node="4JZd7mB0N1L" resolve="ErrorStrategies" />
-  </node>
-  <node concept="1TIwiD" id="4JZd7mB0N25">
-    <property role="3GE5qa" value="processOptions.errorStrategies" />
-    <property role="TrG5h" value="Retry" />
-    <property role="34LRSv" value="retry" />
-    <property role="R4oN_" value="allows for a process to be resubmitted for execution after returning an error condition" />
-    <ref role="1TJDcQ" node="4JZd7mB0N1L" resolve="ErrorStrategies" />
-    <node concept="1TJgyi" id="45Qsg8B672I" role="1TKVEl">
-      <property role="TrG5h" value="maxRetries" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="6IBo8PYrEBM" role="1TKVEl">
-      <property role="TrG5h" value="maxErrors" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="648FhJjeUB7">
-    <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="ProcessOptions" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="648FhJjgRcI">
-    <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="QueueElement" />
-    <property role="34LRSv" value="name" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="648FhJjgRcJ" role="1TKVEl">
-      <property role="TrG5h" value="queue" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5AoFZCLt6Ly">
     <property role="TrG5h" value="GlobalChannel" />
@@ -1297,99 +1132,6 @@
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5OPtsPGg59">
-    <property role="3GE5qa" value="remoteSubmission" />
-    <property role="TrG5h" value="RemoteSubmissionConfig" />
-    <property role="34LRSv" value="remote.config" />
-    <property role="R4oN_" value="configuration for remote execution" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5OPtsPGg5a" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="5OPtsPGnXr" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="hostname" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5OPtsPGnF0" resolve="Hostname" />
-    </node>
-    <node concept="1TJgyj" id="5OPtsPGnXu" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="username" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5OPtsPGnYh" resolve="Username" />
-    </node>
-    <node concept="1TJgyj" id="5OPtsQdNPR" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="jobArea" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5OPtsQdNPQ" resolve="JobArea" />
-    </node>
-    <node concept="1TJgyj" id="5OPtsQdObC" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="keyfile" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5OPtsQdO4R" resolve="KeyFile" />
-    </node>
-    <node concept="1TJgyj" id="3LlDVJS9v3K" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="setEnv" />
-      <ref role="20lvS9" node="3LlDVJS9v0m" resolve="RemoteSetEnv" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3LlDVJS9v0m">
-    <property role="3GE5qa" value="remoteSubmission" />
-    <property role="TrG5h" value="RemoteSetEnv" />
-    <property role="R4oN_" value="custom settings to add to the remote environment" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="3LlDVJSjnDI" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="file" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="q2ta:3LlDVJSEHD1" resolve="PlainTextFile" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5OPtsQdNPQ">
-    <property role="3GE5qa" value="remoteSubmission" />
-    <property role="TrG5h" value="JobArea" />
-    <property role="34LRSv" value="jobarea" />
-    <property role="R4oN_" value="folder where scripts are copied and executed" />
-    <ref role="1TJDcQ" node="5OPtsPGn$n" resolve="SubmissionOption" />
-  </node>
-  <node concept="1TIwiD" id="5OPtsPGn$n">
-    <property role="3GE5qa" value="remoteSubmission" />
-    <property role="TrG5h" value="SubmissionOption" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5OPtsPGn$r" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="5OPtsPGn$o" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5OPtsQdO4R">
-    <property role="3GE5qa" value="remoteSubmission" />
-    <property role="TrG5h" value="KeyFile" />
-    <property role="34LRSv" value="key file" />
-    <property role="R4oN_" value="location of the file holding the private key" />
-    <ref role="1TJDcQ" node="5OPtsPGn$n" resolve="SubmissionOption" />
-  </node>
-  <node concept="1TIwiD" id="5OPtsPGnF0">
-    <property role="3GE5qa" value="remoteSubmission" />
-    <property role="TrG5h" value="Hostname" />
-    <property role="34LRSv" value="hostname" />
-    <property role="R4oN_" value="hostname or IP address of the submission host" />
-    <ref role="1TJDcQ" node="5OPtsPGn$n" resolve="SubmissionOption" />
-  </node>
-  <node concept="1TIwiD" id="5OPtsPGnYh">
-    <property role="3GE5qa" value="remoteSubmission" />
-    <property role="TrG5h" value="Username" />
-    <property role="34LRSv" value="username" />
-    <property role="R4oN_" value="username on the submission host" />
-    <ref role="1TJDcQ" node="5OPtsPGn$n" resolve="SubmissionOption" />
-  </node>
   <node concept="1TIwiD" id="5HJ0QzxC1s2">
     <property role="TrG5h" value="Report" />
     <property role="3GE5qa" value="reports" />
@@ -1456,58 +1198,6 @@
     <property role="34LRSv" value="toTuple" />
     <property role="R4oN_" value="converts all of the elements in the channel into tuples matching the size of the input channel the function is applied to" />
     <ref role="1TJDcQ" node="XaRILisNjl" resolve="TransformingOperator" />
-  </node>
-  <node concept="1TIwiD" id="5FDPSDjYLwl">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="LSF" />
-    <property role="R4oN_" value="Execute Worflows with LSF" />
-    <property role="34LRSv" value="lsf" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#lsf-executor" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="5FDPSDjYQuX">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="Slurm" />
-    <property role="R4oN_" value="Execute Worflows with Slurm" />
-    <property role="34LRSv" value="slurm" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#slurm-executor" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="5FDPSDjYRpO">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="PBS" />
-    <property role="R4oN_" value="Execute Worflows with PBS" />
-    <property role="34LRSv" value="pbs" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#pbs-torque-executor" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="5FDPSDjYRtR">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="DRMAA" />
-    <property role="R4oN_" value="Execute Worflows with DRMAA" />
-    <property role="34LRSv" value="drmaa" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#drmaa-executor" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="5FDPSDjYR_F">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="Cirrus" />
-    <property role="R4oN_" value="Execute Worflows with Cirrus" />
-    <property role="34LRSv" value="cirrus" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#clusterk-cirrus" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="5FDPSDjYS8d">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="DNANexus" />
-    <property role="R4oN_" value="Execute Worflows with DNANexus" />
-    <property role="34LRSv" value="dnanexus" />
-    <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#dnanexus" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-    <node concept="1TJgyi" id="5FDPSDk4MVL" role="1TKVEl">
-      <property role="TrG5h" value="instanceType" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3aOvEIt8nSZ">
     <property role="3GE5qa" value="newChannelInitializer" />

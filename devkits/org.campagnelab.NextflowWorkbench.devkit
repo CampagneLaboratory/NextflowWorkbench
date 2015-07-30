@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="org.campagnelab.NextflowWorkbench" uuid="74a4431b-c31f-4707-ad8a-3f4f3c105ee2">
   <exported-language name="c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)" />
+  <exported-language name="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc(org.campagnelab.workflow.configuration)" />
+  <exported-language name="d4767029-894b-41e1-b76e-850baa598e5b(org.campagnelab.util.files)" />
   <exported-solutions>
     <exported-solution>c039a1a6-4680-46fa-b571-a6a5f1e49ab6(org.campagnelab.workflow.run)</exported-solution>
   </exported-solutions>
