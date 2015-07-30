@@ -615,8 +615,20 @@
         </node>
         <node concept="1SiIV0" id="1d37CfpqS93" role="3bR37C">
           <node concept="3bR9La" id="1d37CfpqS94" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7TupKkjrRbA" role="3bR37C">
+          <node concept="3bR9La" id="7TupKkjrRbB" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1CtrbKI23Wm" resolve="jetbrains.mps.lang.migration" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7TupKkjrRbC" role="3bR37C">
+          <node concept="3bR9La" id="7TupKkjrRbD" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1YAozCvot2i" resolve="jetbrains.mps.baseLanguage.regexp" />
           </node>
         </node>
       </node>

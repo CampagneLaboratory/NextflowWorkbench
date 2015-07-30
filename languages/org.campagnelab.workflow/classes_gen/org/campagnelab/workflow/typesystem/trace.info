@@ -1508,53 +1508,54 @@
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/177205552226971665">
     <file name="typeof_NewTupleLiteral_InferenceRule.java">
-      <node id="799068410621000301" at="21,128,22,232" concept="6" />
-      <node id="177205552228426706" at="23,230,24,506" concept="2" />
-      <node id="177205552226971764" at="26,5,27,57" concept="6" />
-      <node id="177205552226971764" at="27,57,28,200" concept="6" />
-      <node id="177205552226971764" at="28,200,29,250" concept="2" />
-      <node id="177205552226971665" at="32,46,33,64" concept="7" />
-      <node id="177205552226971665" at="36,5,37,130" concept="6" />
-      <node id="177205552226971665" at="37,130,38,45" concept="7" />
-      <node id="177205552226971665" at="41,30,42,17" concept="7" />
+      <node id="799068410622204543" at="21,128,22,32" concept="8" />
+      <node id="799068410621000301" at="22,32,23,232" concept="6" />
+      <node id="177205552228426706" at="24,230,25,506" concept="2" />
+      <node id="177205552226971764" at="27,5,28,57" concept="6" />
+      <node id="177205552226971764" at="28,57,29,200" concept="6" />
+      <node id="177205552226971764" at="29,200,30,250" concept="2" />
+      <node id="177205552226971665" at="33,46,34,64" concept="7" />
+      <node id="177205552226971665" at="37,5,38,130" concept="6" />
+      <node id="177205552226971665" at="38,130,39,45" concept="7" />
+      <node id="177205552226971665" at="42,30,43,17" concept="7" />
       <node id="177205552226971665" at="19,0,21,0" concept="1" trace="typeof_NewTupleLiteral_InferenceRule#()V" />
-      <node id="177205552226982572" at="22,232,25,5" concept="3" />
-      <node id="177205552226971665" at="32,0,35,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
-      <node id="177205552226971665" at="41,0,44,0" concept="5" trace="overrides#()Z" />
-      <node id="177205552226971665" at="35,68,39,5" concept="0" />
-      <node id="177205552226971764" at="25,5,30,5" concept="0" />
-      <node id="177205552226971665" at="35,0,41,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="177205552226971665" at="21,0,32,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <node id="177205552226982572" at="23,232,26,5" concept="3" />
+      <node id="177205552226971665" at="33,0,36,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="177205552226971665" at="42,0,45,0" concept="5" trace="overrides#()Z" />
+      <node id="177205552226971665" at="36,68,40,5" concept="0" />
+      <node id="177205552226971764" at="26,5,31,5" concept="0" />
+      <node id="177205552226971665" at="36,0,42,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="177205552226971665" at="21,0,33,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="177205552226971665" at="19,49,19,49" />
-      <scope id="177205552226982576" at="23,230,24,506" />
-      <scope id="177205552226971665" at="32,46,33,64" />
-      <scope id="177205552226971665" at="41,30,42,17" />
+      <scope id="177205552226982576" at="24,230,25,506" />
+      <scope id="177205552226971665" at="33,46,34,64" />
+      <scope id="177205552226971665" at="42,30,43,17" />
       <scope id="177205552226971665" at="19,0,21,0" />
-      <scope id="177205552226971665" at="36,5,38,45">
+      <scope id="177205552226971665" at="37,5,39,45">
         <var name="b" id="177205552226971665" />
       </scope>
-      <scope id="177205552226982572" at="22,232,25,5">
+      <scope id="177205552226982572" at="23,232,26,5">
         <var name="type" id="177205552226982574" />
       </scope>
-      <scope id="177205552226971764" at="26,5,29,250">
+      <scope id="177205552226971764" at="27,5,30,250">
         <var name="_info_12389875345" id="177205552226971764" />
         <var name="_nodeToCheck_1029348928467" id="177205552226971764" />
       </scope>
-      <scope id="177205552226971665" at="32,0,35,0" />
-      <scope id="177205552226971665" at="41,0,44,0" />
-      <scope id="177205552226971665" at="35,68,39,5" />
-      <scope id="177205552226971665" at="35,0,41,0">
+      <scope id="177205552226971665" at="33,0,36,0" />
+      <scope id="177205552226971665" at="42,0,45,0" />
+      <scope id="177205552226971665" at="36,68,40,5" />
+      <scope id="177205552226971665" at="36,0,42,0">
         <var name="argument" id="177205552226971665" />
       </scope>
-      <scope id="177205552226971666" at="21,128,30,5">
+      <scope id="177205552226971666" at="21,128,31,5">
         <var name="tupleType" id="799068410621000307" />
       </scope>
-      <scope id="177205552226971665" at="21,0,32,0">
+      <scope id="177205552226971665" at="21,0,33,0">
         <var name="newTupleLiteral" id="177205552226971665" />
         <var name="status" id="177205552226971665" />
         <var name="typeCheckingContext" id="177205552226971665" />
       </scope>
-      <unit id="177205552226971665" at="18,0,45,0" name="org.campagnelab.workflow.typesystem.typeof_NewTupleLiteral_InferenceRule" />
+      <unit id="177205552226971665" at="18,0,46,0" name="org.campagnelab.workflow.typesystem.typeof_NewTupleLiteral_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/177205552229872794">
