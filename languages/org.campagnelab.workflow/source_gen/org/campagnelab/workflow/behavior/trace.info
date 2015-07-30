@@ -15,11 +15,17 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
+    <file name="ArgRegexLiteralQualifierPredicate_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ArgRegexLiteralQualifierPredicate_BehaviorDescriptor" />
+    </file>
+    <file name="ArgRegexQualifierPredicate_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ArgRegexQualifierPredicate_BehaviorDescriptor" />
+    </file>
     <file name="BaseLanguageAdapter_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BaseLanguageAdapter_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,220,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,216,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BooleanChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
@@ -53,6 +59,9 @@
     </file>
     <file name="ChannelType_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ChannelType_BehaviorDescriptor" />
+    </file>
+    <file name="Closurefunction_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
     </file>
     <file name="CollateAllowIncompleteTuples_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.CollateAllowIncompleteTuples_BehaviorDescriptor" />
@@ -107,9 +116,6 @@
     </file>
     <file name="Filter_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Filter_BehaviorDescriptor" />
-    </file>
-    <file name="FilteringOperator_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.FilteringOperator_BehaviorDescriptor" />
     </file>
     <file name="First_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.First_BehaviorDescriptor" />
@@ -183,6 +189,9 @@
     <file name="List_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.List_BehaviorDescriptor" />
     </file>
+    <file name="LiteralFunction_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.LiteralFunction_BehaviorDescriptor" />
+    </file>
     <file name="Map_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Map_BehaviorDescriptor" />
     </file>
@@ -210,6 +219,9 @@
     <file name="NewTupleLiteral_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.NewTupleLiteral_BehaviorDescriptor" />
     </file>
+    <file name="NoArgFunction_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.NoArgFunction_BehaviorDescriptor" />
+    </file>
     <file name="NonListNonFileChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.NonListNonFileChannel_BehaviorDescriptor" />
     </file>
@@ -236,12 +248,6 @@
     </file>
     <file name="ProcessInputOutput_BehaviorDescriptor.java">
       <unit at="10,0,27,0" name="org.campagnelab.workflow.behavior.ProcessInputOutput_BehaviorDescriptor" />
-    </file>
-    <file name="ProcessInput_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ProcessInput_BehaviorDescriptor" />
-    </file>
-    <file name="ProcessOutput_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ProcessOutput_BehaviorDescriptor" />
     </file>
     <file name="ProcessRef_BehaviorDescriptor.java">
       <unit at="11,0,25,0" name="org.campagnelab.workflow.behavior.ProcessRef_BehaviorDescriptor" />
@@ -306,11 +312,11 @@
     <file name="SplitFastq_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.SplitFastq_BehaviorDescriptor" />
     </file>
+    <file name="SplitFunction_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.SplitFunction_BehaviorDescriptor" />
+    </file>
     <file name="SplitText_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.SplitText_BehaviorDescriptor" />
-    </file>
-    <file name="SplittingOperator_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.SplittingOperator_BehaviorDescriptor" />
     </file>
     <file name="StringChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.StringChannel_BehaviorDescriptor" />
@@ -347,9 +353,6 @@
     </file>
     <file name="ToTuple_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ToTuple_BehaviorDescriptor" />
-    </file>
-    <file name="TransformingOperator_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.TransformingOperator_BehaviorDescriptor" />
     </file>
     <file name="TupleChannel_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.TupleChannel_BehaviorDescriptor" />
