@@ -100,13 +100,12 @@
       </concept>
     </language>
     <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
-      <concept id="2329585396109101868" name="" flags="ng" index="pkhaZ" />
-      <concept id="6643674795001609834" name="" flags="ng" index="3zuAPG" />
+      <concept id="6643674795001677795" name="org.campagnelab.workflow.configuration.structure.WorkflowConfig" flags="ng" index="3zupj_">
+        <child id="6643674795001677796" name="executor" index="3zupjy" />
+      </concept>
+      <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.WorkflowConfig" flags="ng" index="pkhb0">
-        <child id="2329585396109102069" name="executor" index="pkh9A" />
-      </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -281,9 +280,9 @@
       </node>
     </node>
   </node>
-  <node concept="pkhaZ" id="5$YFgXZ5Cgo">
-    <property role="TrG5h" value="nextflow.config" />
-    <node concept="3zuAPG" id="5$YFgXZekej" role="pkh9A" />
+  <node concept="3zupj_" id="6eMkF2c4L$x">
+    <property role="TrG5h" value="workflow.config" />
+    <node concept="3zuAPG" id="6eMkF2c4LBC" role="3zupjy" />
   </node>
 </model>
 

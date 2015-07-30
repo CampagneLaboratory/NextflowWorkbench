@@ -107,10 +107,12 @@
       </concept>
     </language>
     <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
-      <concept id="2329585396109101868" name="" flags="ng" index="pkhaZ" />
       <concept id="6643674794996402808" name="org.campagnelab.workflow.configuration.structure.Memory" flags="ng" index="3yMh_Y" />
       <concept id="6643674794999860384" name="org.campagnelab.workflow.configuration.structure.NumCPUs" flags="ng" index="3z7tYA" />
-      <concept id="6643674795001609832" name="" flags="ng" index="3zuAPI" />
+      <concept id="6643674795001677795" name="org.campagnelab.workflow.configuration.structure.WorkflowConfig" flags="ng" index="3zupj_">
+        <child id="6643674795001677796" name="executor" index="3zupjy" />
+      </concept>
+      <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
@@ -130,9 +132,6 @@
       </concept>
       <concept id="2329585396108535359" name="org.campagnelab.workflow.structure.Memory" flags="ng" index="oEfYG">
         <property id="2329585396108535460" name="memory" index="oEfWR" />
-      </concept>
-      <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.WorkflowConfig" flags="ng" index="pkhb0">
-        <child id="2329585396109102069" name="executor" index="pkh9A" />
       </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
@@ -483,10 +482,6 @@
       <property role="TrG5h" value="weawef" />
       <node concept="16pbKc" id="47MGIsNJBQb" role="2ybFLk" />
     </node>
-  </node>
-  <node concept="pkhaZ" id="21kmpcT2JwM">
-    <property role="TrG5h" value="nextflow.config" />
-    <node concept="3zuAPI" id="3TB2PodQjQm" role="pkh9A" />
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
@@ -935,6 +930,10 @@
         <node concept="2J_swZ" id="5wcZjhPJMhu" role="2J_sx6" />
       </node>
     </node>
+  </node>
+  <node concept="3zupj_" id="6eMkF2c4Hdz">
+    <property role="TrG5h" value="workflow.config" />
+    <node concept="3zuAPI" id="6eMkF2c4LmG" role="3zupjy" />
   </node>
 </model>
 
