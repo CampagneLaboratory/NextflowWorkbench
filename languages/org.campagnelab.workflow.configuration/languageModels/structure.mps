@@ -220,8 +220,8 @@
   <node concept="1TIwiD" id="5KN4KqZbNxe">
     <property role="3GE5qa" value="processOptions.errorStrategies" />
     <property role="TrG5h" value="Retry" />
-    <property role="34LRSv" value="retry" />
-    <property role="R4oN_" value="allows for a process to be resubmitted for execution after returning an error condition" />
+    <property role="34LRSv" value="error strategy: retry" />
+    <property role="R4oN_" value="The process is resubmitted after returning an error condition" />
     <ref role="1TJDcQ" node="5KN4KqZbPTd" resolve="ErrorStrategies" />
     <node concept="1TJgyi" id="5KN4KqZbNxf" role="1TKVEl">
       <property role="TrG5h" value="maxRetries" />
@@ -235,8 +235,8 @@
   <node concept="1TIwiD" id="5KN4KqZbOHI">
     <property role="3GE5qa" value="processOptions.errorStrategies" />
     <property role="TrG5h" value="Ignore" />
-    <property role="34LRSv" value="ignore" />
-    <property role="R4oN_" value="the process does not stop on an error condition, it only notifies of the error" />
+    <property role="34LRSv" value="error strategy: ignore" />
+    <property role="R4oN_" value="The process does not stop on an error condition" />
     <ref role="1TJDcQ" node="5KN4KqZbPTd" resolve="ErrorStrategies" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZbPTd">
