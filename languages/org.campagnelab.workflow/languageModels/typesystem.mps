@@ -80,8 +80,11 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
@@ -92,6 +95,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -4600,6 +4604,75 @@
     <node concept="1YaCAy" id="XaRILjgXcz" role="1YuTPh">
       <property role="TrG5h" value="buffer" />
       <ref role="1YaFvo" to="iowz:XaRILjgXaG" resolve="Buffer" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2fLVrqPUg_X">
+    <property role="TrG5h" value="check_ProcessInput" />
+    <property role="3GE5qa" value="channelTypes" />
+    <node concept="3clFbS" id="2fLVrqPUg_Y" role="18ibNy">
+      <node concept="3clFbJ" id="2fLVrqPUocm" role="3cqZAp">
+        <node concept="3clFbS" id="2fLVrqPUocn" role="3clFbx">
+          <node concept="2MkqsV" id="2fLVrqPUokr" role="3cqZAp">
+            <node concept="Xl_RD" id="2fLVrqPUokB" role="2MkJ7o">
+              <property role="Xl_RC" value="Process can have at most one input redirected to STDIN" />
+            </node>
+            <node concept="1YBJjd" id="2fLVrqPUonx" role="2OEOjV">
+              <ref role="1YBMHb" node="2fLVrqPUgA0" resolve="processInput" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOSWO" id="2fLVrqPUo16" role="3clFbw">
+          <node concept="3cmrfG" id="2fLVrqPUo19" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="2fLVrqPUm4Y" role="3uHU7B">
+            <node concept="2OqwBi" id="2fLVrqPUirJ" role="2Oq$k0">
+              <node concept="2OqwBi" id="2fLVrqPUhp1" role="2Oq$k0">
+                <node concept="2OqwBi" id="2fLVrqPUh0l" role="2Oq$k0">
+                  <node concept="1YBJjd" id="2fLVrqPUgLt" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2fLVrqPUgA0" resolve="processInput" />
+                  </node>
+                  <node concept="2Xjw5R" id="2fLVrqPUhm2" role="2OqNvi">
+                    <node concept="1xMEDy" id="2fLVrqPUhm4" role="1xVPHs">
+                      <node concept="chp4Y" id="2fLVrqPUhmI" role="ri$Ld">
+                        <ref role="cht4Q" to="iowz:6tX5nBTatyL" resolve="Process" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="2fLVrqPUhJK" role="2OqNvi">
+                  <ref role="3TtcxE" to="iowz:6tX5nBTaziI" />
+                </node>
+              </node>
+              <node concept="3$u5V9" id="2fLVrqPUl8T" role="2OqNvi">
+                <node concept="1bVj0M" id="2fLVrqPUl8V" role="23t8la">
+                  <node concept="3clFbS" id="2fLVrqPUl8W" role="1bW5cS">
+                    <node concept="3clFbF" id="2fLVrqPUlbe" role="3cqZAp">
+                      <node concept="2OqwBi" id="2fLVrqPUlel" role="3clFbG">
+                        <node concept="37vLTw" id="2fLVrqPUlbd" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2fLVrqPUl8X" resolve="it" />
+                        </node>
+                        <node concept="3TrcHB" id="2fLVrqPUlU8" role="2OqNvi">
+                          <ref role="3TsBF5" to="iowz:2fLVrqPJUQP" resolve="toStandardInput" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="2fLVrqPUl8X" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="2fLVrqPUl8Y" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="34oBXx" id="2fLVrqPUnbQ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2fLVrqPUgA0" role="1YuTPh">
+      <property role="TrG5h" value="processInput" />
+      <ref role="1YaFvo" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
     </node>
   </node>
 </model>

@@ -13,11 +13,11 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
       case 58:
         return new Process_BehaviorDescriptor();
-      case 97:
+      case 98:
         return new Workflow_BehaviorDescriptor();
-      case 60:
+      case 61:
         return new ProcessRef_BehaviorDescriptor();
-      case 77:
+      case 78:
         return new String_BehaviorDescriptor();
       case 16:
         return new File_BehaviorDescriptor();
@@ -27,7 +27,7 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new Boolean_BehaviorDescriptor();
       case 33:
         return new InputChannel_BehaviorDescriptor();
-      case 78:
+      case 79:
         return new StringChannel_BehaviorDescriptor();
       case 35:
         return new IntegerChannel_BehaviorDescriptor();
@@ -35,31 +35,31 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new BooleanChannel_BehaviorDescriptor();
       case 17:
         return new FileChannel_BehaviorDescriptor();
-      case 59:
+      case 60:
         return new ProcessInputOutput_BehaviorDescriptor();
       case 57:
         return new OutputChannel_BehaviorDescriptor();
-      case 72:
+      case 73:
         return new ScriptStringArgs_BehaviorDescriptor();
-      case 70:
+      case 71:
         return new ScriptIntegerArgs_BehaviorDescriptor();
-      case 69:
+      case 70:
         return new ScriptBooleanArgs_BehaviorDescriptor();
-      case 68:
+      case 69:
         return new RichScript_BehaviorDescriptor();
-      case 96:
+      case 97:
         return new ValueInAChannelRef_BehaviorDescriptor();
       case 43:
         return new List_BehaviorDescriptor();
       case 44:
         return new ListChannel_BehaviorDescriptor();
-      case 89:
+      case 90:
         return new TupleChannel_BehaviorDescriptor();
-      case 71:
+      case 72:
         return new ScriptListArgs_BehaviorDescriptor();
       case 36:
         return new IntegerElement_BehaviorDescriptor();
-      case 79:
+      case 80:
         return new StringElement_BehaviorDescriptor();
       case 3:
         return new BooleanElement_BehaviorDescriptor();
@@ -67,21 +67,21 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new Collate_BehaviorDescriptor();
       case 29:
         return new Flatten_BehaviorDescriptor();
-      case 85:
-        return new ToList_BehaviorDescriptor();
       case 86:
+        return new ToList_BehaviorDescriptor();
+      case 87:
         return new ToSortedList_BehaviorDescriptor();
       case 30:
         return new GlobalChannel_BehaviorDescriptor();
       case 45:
         return new ListElement_BehaviorDescriptor();
-      case 62:
+      case 63:
         return new RangeOfCharLiterals_BehaviorDescriptor();
       case 4:
         return new BooleanInitializer_BehaviorDescriptor();
       case 37:
         return new IntegerInitializer_BehaviorDescriptor();
-      case 80:
+      case 81:
         return new StringInitializer_BehaviorDescriptor();
       case 46:
         return new ListInitializer_BehaviorDescriptor();
@@ -89,7 +89,7 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new FileInitializer_BehaviorDescriptor();
       case 5:
         return new BooleanLiteral_BehaviorDescriptor();
-      case 82:
+      case 83:
         return new StringLiteralList_BehaviorDescriptor();
       case 39:
         return new IntegerLiteralList_BehaviorDescriptor();
@@ -99,9 +99,9 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new FileLiteralList_BehaviorDescriptor();
       case 47:
         return new ListLiteral_BehaviorDescriptor();
-      case 81:
+      case 82:
         return new StringLiteral_BehaviorDescriptor();
-      case 63:
+      case 64:
         return new RangeOfIntegerLiterals_BehaviorDescriptor();
       case 38:
         return new IntegerLiteral_BehaviorDescriptor();
@@ -117,19 +117,19 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new FileType_BehaviorDescriptor();
       case 9:
         return new ChannelType_BehaviorDescriptor();
-      case 88:
+      case 89:
         return new Tuple_BehaviorDescriptor();
-      case 94:
+      case 95:
         return new TupleType_BehaviorDescriptor();
-      case 91:
+      case 92:
         return new TupleInitializer_BehaviorDescriptor();
       case 7:
         return new BooleanLiteralTuple_BehaviorDescriptor();
-      case 93:
+      case 94:
         return new TupleLiteral_BehaviorDescriptor();
       case 40:
         return new IntegerLiteralTuple_BehaviorDescriptor();
-      case 83:
+      case 84:
         return new StringLiteralTuple_BehaviorDescriptor();
       case 23:
         return new FileLiteralTuple_BehaviorDescriptor();
@@ -145,21 +145,21 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new CollateStepSize_BehaviorDescriptor();
       case 11:
         return new CollateAllowIncompleteTuples_BehaviorDescriptor();
-      case 92:
+      case 93:
         return new TupleListLiteral_BehaviorDescriptor();
       case 50:
         return new NameInAChannelRef_BehaviorDescriptor();
-      case 65:
-        return new Report_BehaviorDescriptor();
-      case 67:
-        return new ReportParameter_BehaviorDescriptor();
       case 66:
+        return new Report_BehaviorDescriptor();
+      case 68:
+        return new ReportParameter_BehaviorDescriptor();
+      case 67:
         return new ReportFunction_BehaviorDescriptor();
-      case 90:
+      case 91:
         return new TupleElement_BehaviorDescriptor();
-      case 87:
+      case 88:
         return new ToTuple_BehaviorDescriptor();
-      case 61:
+      case 62:
         return new Range_BehaviorDescriptor();
       case 55:
         return new NewStringLiteral_BehaviorDescriptor();
@@ -173,27 +173,27 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new NewListLiteral_BehaviorDescriptor();
       case 51:
         return new NewBooleanLiteral_BehaviorDescriptor();
-      case 76:
+      case 77:
         return new SplitText_BehaviorDescriptor();
       case 8:
         return new Buffer_BehaviorDescriptor();
       case 27:
         return new First_BehaviorDescriptor();
-      case 73:
+      case 74:
         return new SplitCSV_BehaviorDescriptor();
       case 28:
         return new FlatMap_BehaviorDescriptor();
-      case 84:
+      case 85:
         return new Take_BehaviorDescriptor();
       case 41:
         return new It_BehaviorDescriptor();
-      case 75:
+      case 76:
         return new SplitFastq_BehaviorDescriptor();
       case 15:
         return new Distinct_BehaviorDescriptor();
       case 32:
         return new GroupTuple_BehaviorDescriptor();
-      case 95:
+      case 96:
         return new Unique_BehaviorDescriptor();
       case 49:
         return new Map_BehaviorDescriptor();
@@ -201,15 +201,17 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new GroupBy_BehaviorDescriptor();
       case 42:
         return new Last_BehaviorDescriptor();
-      case 74:
+      case 75:
         return new SplitFasta_BehaviorDescriptor();
-      case 64:
+      case 65:
         return new Reduce_BehaviorDescriptor();
       case 26:
         return new Filter_BehaviorDescriptor();
+      case 59:
+        return new ProcessInput_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.workflow.structure.BaseLanguageAdapter", "org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.BooleanChannel", "org.campagnelab.workflow.structure.BooleanElement", "org.campagnelab.workflow.structure.BooleanInitializer", "org.campagnelab.workflow.structure.BooleanLiteral", "org.campagnelab.workflow.structure.BooleanLiteralList", "org.campagnelab.workflow.structure.BooleanLiteralTuple", "org.campagnelab.workflow.structure.Buffer", "org.campagnelab.workflow.structure.ChannelType", "org.campagnelab.workflow.structure.Collate", "org.campagnelab.workflow.structure.CollateAllowIncompleteTuples", "org.campagnelab.workflow.structure.CollateStepSize", "org.campagnelab.workflow.structure.ConditionalExpressionText", "org.campagnelab.workflow.structure.ConditionalVariableRef", "org.campagnelab.workflow.structure.Distinct", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.FileChannel", "org.campagnelab.workflow.structure.FileInitializer", "org.campagnelab.workflow.structure.FileList", "org.campagnelab.workflow.structure.FileListChannel", "org.campagnelab.workflow.structure.FileListInitializer", "org.campagnelab.workflow.structure.FileLiteralList", "org.campagnelab.workflow.structure.FileLiteralTuple", "org.campagnelab.workflow.structure.FilePath", "org.campagnelab.workflow.structure.FileType", "org.campagnelab.workflow.structure.Filter", "org.campagnelab.workflow.structure.First", "org.campagnelab.workflow.structure.FlatMap", "org.campagnelab.workflow.structure.Flatten", "org.campagnelab.workflow.structure.GlobalChannel", "org.campagnelab.workflow.structure.GroupBy", "org.campagnelab.workflow.structure.GroupTuple", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.IntegerChannel", "org.campagnelab.workflow.structure.IntegerElement", "org.campagnelab.workflow.structure.IntegerInitializer", "org.campagnelab.workflow.structure.IntegerLiteral", "org.campagnelab.workflow.structure.IntegerLiteralList", "org.campagnelab.workflow.structure.IntegerLiteralTuple", "org.campagnelab.workflow.structure.It", "org.campagnelab.workflow.structure.Last", "org.campagnelab.workflow.structure.List", "org.campagnelab.workflow.structure.ListChannel", "org.campagnelab.workflow.structure.ListElement", "org.campagnelab.workflow.structure.ListInitializer", "org.campagnelab.workflow.structure.ListLiteral", "org.campagnelab.workflow.structure.ListLiteralTuple", "org.campagnelab.workflow.structure.Map", "org.campagnelab.workflow.structure.NameInAChannelRef", "org.campagnelab.workflow.structure.NewBooleanLiteral", "org.campagnelab.workflow.structure.NewFileLiteral", "org.campagnelab.workflow.structure.NewIntegerLiteral", "org.campagnelab.workflow.structure.NewListLiteral", "org.campagnelab.workflow.structure.NewStringLiteral", "org.campagnelab.workflow.structure.NewTupleLiteral", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessInputOutput", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.Range", "org.campagnelab.workflow.structure.RangeOfCharLiterals", "org.campagnelab.workflow.structure.RangeOfIntegerLiterals", "org.campagnelab.workflow.structure.Reduce", "org.campagnelab.workflow.structure.Report", "org.campagnelab.workflow.structure.ReportFunction", "org.campagnelab.workflow.structure.ReportParameter", "org.campagnelab.workflow.structure.RichScript", "org.campagnelab.workflow.structure.ScriptBooleanArgs", "org.campagnelab.workflow.structure.ScriptIntegerArgs", "org.campagnelab.workflow.structure.ScriptListArgs", "org.campagnelab.workflow.structure.ScriptStringArgs", "org.campagnelab.workflow.structure.SplitCSV", "org.campagnelab.workflow.structure.SplitFasta", "org.campagnelab.workflow.structure.SplitFastq", "org.campagnelab.workflow.structure.SplitText", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.StringChannel", "org.campagnelab.workflow.structure.StringElement", "org.campagnelab.workflow.structure.StringInitializer", "org.campagnelab.workflow.structure.StringLiteral", "org.campagnelab.workflow.structure.StringLiteralList", "org.campagnelab.workflow.structure.StringLiteralTuple", "org.campagnelab.workflow.structure.Take", "org.campagnelab.workflow.structure.ToList", "org.campagnelab.workflow.structure.ToSortedList", "org.campagnelab.workflow.structure.ToTuple", "org.campagnelab.workflow.structure.Tuple", "org.campagnelab.workflow.structure.TupleChannel", "org.campagnelab.workflow.structure.TupleElement", "org.campagnelab.workflow.structure.TupleInitializer", "org.campagnelab.workflow.structure.TupleListLiteral", "org.campagnelab.workflow.structure.TupleLiteral", "org.campagnelab.workflow.structure.TupleType", "org.campagnelab.workflow.structure.Unique", "org.campagnelab.workflow.structure.ValueInAChannelRef", "org.campagnelab.workflow.structure.Workflow"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.workflow.structure.BaseLanguageAdapter", "org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.BooleanChannel", "org.campagnelab.workflow.structure.BooleanElement", "org.campagnelab.workflow.structure.BooleanInitializer", "org.campagnelab.workflow.structure.BooleanLiteral", "org.campagnelab.workflow.structure.BooleanLiteralList", "org.campagnelab.workflow.structure.BooleanLiteralTuple", "org.campagnelab.workflow.structure.Buffer", "org.campagnelab.workflow.structure.ChannelType", "org.campagnelab.workflow.structure.Collate", "org.campagnelab.workflow.structure.CollateAllowIncompleteTuples", "org.campagnelab.workflow.structure.CollateStepSize", "org.campagnelab.workflow.structure.ConditionalExpressionText", "org.campagnelab.workflow.structure.ConditionalVariableRef", "org.campagnelab.workflow.structure.Distinct", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.FileChannel", "org.campagnelab.workflow.structure.FileInitializer", "org.campagnelab.workflow.structure.FileList", "org.campagnelab.workflow.structure.FileListChannel", "org.campagnelab.workflow.structure.FileListInitializer", "org.campagnelab.workflow.structure.FileLiteralList", "org.campagnelab.workflow.structure.FileLiteralTuple", "org.campagnelab.workflow.structure.FilePath", "org.campagnelab.workflow.structure.FileType", "org.campagnelab.workflow.structure.Filter", "org.campagnelab.workflow.structure.First", "org.campagnelab.workflow.structure.FlatMap", "org.campagnelab.workflow.structure.Flatten", "org.campagnelab.workflow.structure.GlobalChannel", "org.campagnelab.workflow.structure.GroupBy", "org.campagnelab.workflow.structure.GroupTuple", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.IntegerChannel", "org.campagnelab.workflow.structure.IntegerElement", "org.campagnelab.workflow.structure.IntegerInitializer", "org.campagnelab.workflow.structure.IntegerLiteral", "org.campagnelab.workflow.structure.IntegerLiteralList", "org.campagnelab.workflow.structure.IntegerLiteralTuple", "org.campagnelab.workflow.structure.It", "org.campagnelab.workflow.structure.Last", "org.campagnelab.workflow.structure.List", "org.campagnelab.workflow.structure.ListChannel", "org.campagnelab.workflow.structure.ListElement", "org.campagnelab.workflow.structure.ListInitializer", "org.campagnelab.workflow.structure.ListLiteral", "org.campagnelab.workflow.structure.ListLiteralTuple", "org.campagnelab.workflow.structure.Map", "org.campagnelab.workflow.structure.NameInAChannelRef", "org.campagnelab.workflow.structure.NewBooleanLiteral", "org.campagnelab.workflow.structure.NewFileLiteral", "org.campagnelab.workflow.structure.NewIntegerLiteral", "org.campagnelab.workflow.structure.NewListLiteral", "org.campagnelab.workflow.structure.NewStringLiteral", "org.campagnelab.workflow.structure.NewTupleLiteral", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessInput", "org.campagnelab.workflow.structure.ProcessInputOutput", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.Range", "org.campagnelab.workflow.structure.RangeOfCharLiterals", "org.campagnelab.workflow.structure.RangeOfIntegerLiterals", "org.campagnelab.workflow.structure.Reduce", "org.campagnelab.workflow.structure.Report", "org.campagnelab.workflow.structure.ReportFunction", "org.campagnelab.workflow.structure.ReportParameter", "org.campagnelab.workflow.structure.RichScript", "org.campagnelab.workflow.structure.ScriptBooleanArgs", "org.campagnelab.workflow.structure.ScriptIntegerArgs", "org.campagnelab.workflow.structure.ScriptListArgs", "org.campagnelab.workflow.structure.ScriptStringArgs", "org.campagnelab.workflow.structure.SplitCSV", "org.campagnelab.workflow.structure.SplitFasta", "org.campagnelab.workflow.structure.SplitFastq", "org.campagnelab.workflow.structure.SplitText", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.StringChannel", "org.campagnelab.workflow.structure.StringElement", "org.campagnelab.workflow.structure.StringInitializer", "org.campagnelab.workflow.structure.StringLiteral", "org.campagnelab.workflow.structure.StringLiteralList", "org.campagnelab.workflow.structure.StringLiteralTuple", "org.campagnelab.workflow.structure.Take", "org.campagnelab.workflow.structure.ToList", "org.campagnelab.workflow.structure.ToSortedList", "org.campagnelab.workflow.structure.ToTuple", "org.campagnelab.workflow.structure.Tuple", "org.campagnelab.workflow.structure.TupleChannel", "org.campagnelab.workflow.structure.TupleElement", "org.campagnelab.workflow.structure.TupleInitializer", "org.campagnelab.workflow.structure.TupleListLiteral", "org.campagnelab.workflow.structure.TupleLiteral", "org.campagnelab.workflow.structure.TupleType", "org.campagnelab.workflow.structure.Unique", "org.campagnelab.workflow.structure.ValueInAChannelRef", "org.campagnelab.workflow.structure.Workflow"};
 }

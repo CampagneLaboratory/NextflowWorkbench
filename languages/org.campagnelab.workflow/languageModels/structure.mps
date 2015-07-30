@@ -83,7 +83,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="inputs" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+      <ref role="20lvS9" node="2fLVrqPJSZI" resolve="ProcessInput" />
     </node>
     <node concept="1TJgyj" id="6tX5nBTaziK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1462,6 +1462,15 @@
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="condition" />
       <ref role="20lvS9" to="tpee:gPCKINj" resolve="Number" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2fLVrqPJSZI">
+    <property role="3GE5qa" value="channelTypes" />
+    <property role="TrG5h" value="ProcessInput" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+    <node concept="1TJgyi" id="2fLVrqPJUQP" role="1TKVEl">
+      <property role="TrG5h" value="toStandardInput" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

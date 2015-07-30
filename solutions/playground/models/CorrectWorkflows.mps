@@ -54,7 +54,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -123,17 +123,10 @@
       <concept id="4018964125401495568" name="org.campagnelab.workflow.structure.Tuple" flags="ng" index="knwa4">
         <child id="7391172440899058539" name="elements" index="2zSOd7" />
       </concept>
-      <concept id="2329585396107819892" name="org.campagnelab.workflow.structure.NumCPUs" flags="ng" index="oDubB">
-        <property id="2329585396107820961" name="num" index="oDuoM" />
-      </concept>
-      <concept id="2329585396108535359" name="org.campagnelab.workflow.structure.Memory" flags="ng" index="oEfYG">
-        <property id="2329585396108535460" name="memory" index="oEfWR" />
-      </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
-        <child id="5930160417388206667" name="processOptions" index="2xNrcL" />
       </concept>
       <concept id="7391172440898975896" name="org.campagnelab.workflow.structure.TupleElement" flags="ng" index="2zSw2O" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
@@ -401,12 +394,6 @@
           <property role="19SUeA" value="\n" />
         </node>
       </node>
-    </node>
-    <node concept="oDubB" id="59canFO0rTg" role="2xNrcL">
-      <property role="oDuoM" value="4" />
-    </node>
-    <node concept="oEfYG" id="vHEKaWDKyz" role="2xNrcL">
-      <property role="oEfWR" value="5 GB" />
     </node>
     <node concept="1uLvKC" id="6qiI2N5qFAZ" role="2ulM7n">
       <property role="TrG5h" value="ints" />

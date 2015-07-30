@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.campagnelab.workflow" uuid="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" version="3">
+<language namespace="org.campagnelab.workflow" uuid="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" version="4">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />

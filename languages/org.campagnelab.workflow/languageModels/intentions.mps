@@ -45,6 +45,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -55,9 +56,17 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -988,6 +997,55 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2fLVrqPKakU">
+    <property role="3GE5qa" value="channelTypes" />
+    <property role="TrG5h" value="ToggleStandardInput" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
+    <node concept="2S6ZIM" id="2fLVrqPKakV" role="2ZfVej">
+      <node concept="3clFbS" id="2fLVrqPKakW" role="2VODD2">
+        <node concept="3clFbF" id="2fLVrqPKaQf" role="3cqZAp">
+          <node concept="3K4zz7" id="2fLVrqPKbvk" role="3clFbG">
+            <node concept="Xl_RD" id="2fLVrqPKbyw" role="3K4E3e">
+              <property role="Xl_RC" value="Do Not Use for Standard Input" />
+            </node>
+            <node concept="Xl_RD" id="2fLVrqPKcp$" role="3K4GZi">
+              <property role="Xl_RC" value="Use Value for Standard Input" />
+            </node>
+            <node concept="2OqwBi" id="2fLVrqPKaUH" role="3K4Cdx">
+              <node concept="2Sf5sV" id="2fLVrqPKaQd" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2fLVrqPKbaO" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:2fLVrqPJUQP" resolve="toStandardInput" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2fLVrqPKakX" role="2ZfgGD">
+      <node concept="3clFbS" id="2fLVrqPKakY" role="2VODD2">
+        <node concept="3clFbF" id="2fLVrqPKcM7" role="3cqZAp">
+          <node concept="37vLTI" id="2fLVrqPKdsq" role="3clFbG">
+            <node concept="3fqX7Q" id="2fLVrqPKdxc" role="37vLTx">
+              <node concept="2OqwBi" id="2fLVrqPKd$g" role="3fr31v">
+                <node concept="2Sf5sV" id="2fLVrqPKdxE" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2fLVrqPKdXa" role="2OqNvi">
+                  <ref role="3TsBF5" to="iowz:2fLVrqPJUQP" resolve="toStandardInput" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2fLVrqPKcNY" role="37vLTJ">
+              <node concept="2Sf5sV" id="2fLVrqPKcM6" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2fLVrqPKd9D" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:2fLVrqPJUQP" resolve="toStandardInput" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2fLVrqPKdw4" role="3cqZAp" />
       </node>
     </node>
   </node>
