@@ -83,13 +83,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="inputs" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+      <ref role="20lvS9" node="2fLVrqPJSZI" resolve="ProcessInput" />
     </node>
     <node concept="1TJgyj" id="6tX5nBTaziK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="outputs" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+      <ref role="20lvS9" node="2fLVrqQ2DkW" resolve="ProcessOutput" />
     </node>
     <node concept="1TJgyj" id="6tX5nBTaziN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

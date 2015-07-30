@@ -2931,20 +2931,52 @@
   <root nodeRef="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/3737395959688551345">
     <file name="WorkflowStyles_StyleSheet.java">
       <node id="3737395959688551345" at="14,72,15,62" concept="2" />
+      <node id="3737395959688551345" at="14,72,15,62" concept="2" />
+      <node id="3737395959688551345" at="14,72,15,62" concept="2" />
+      <node id="3737395959688551345" at="17,72,18,113" concept="2" />
+      <node id="3737395959688551345" at="17,72,18,113" concept="2" />
       <node id="3737395959688551345" at="17,72,18,113" concept="2" />
       <node id="3737395959688551345" at="20,76,21,111" concept="2" />
+      <node id="3737395959688551345" at="20,76,21,111" concept="2" />
+      <node id="3737395959688551345" at="20,76,21,111" concept="2" />
+      <node id="3737395959688551345" at="23,73,24,57" concept="2" />
+      <node id="3737395959688551345" at="23,73,24,57" concept="2" />
       <node id="3737395959688551345" at="23,73,24,57" concept="2" />
       <node id="3737395959688551345" at="24,57,25,61" concept="2" />
+      <node id="3737395959688551345" at="24,57,25,61" concept="2" />
+      <node id="3737395959688551345" at="24,57,25,61" concept="2" />
+      <node id="3737395959688551345" at="27,76,28,122" concept="2" />
+      <node id="3737395959688551345" at="27,76,28,122" concept="2" />
       <node id="3737395959688551345" at="27,76,28,122" concept="2" />
       <node id="3737395959688551345" at="28,122,29,172" concept="2" />
+      <node id="3737395959688551345" at="28,122,29,172" concept="2" />
+      <node id="3737395959688551345" at="28,122,29,172" concept="2" />
+      <node id="3737395959688551345" at="29,172,30,48" concept="2" />
+      <node id="3737395959688551345" at="29,172,30,48" concept="2" />
       <node id="3737395959688551345" at="29,172,30,48" concept="2" />
       <node id="3737395959688551345" at="32,70,33,111" concept="2" />
+      <node id="3737395959688551345" at="32,70,33,111" concept="2" />
+      <node id="3737395959688551345" at="32,70,33,111" concept="2" />
+      <node id="3737395959688551345" at="35,74,36,109" concept="2" />
+      <node id="3737395959688551345" at="35,74,36,109" concept="2" />
       <node id="3737395959688551345" at="35,74,36,109" concept="2" />
       <node id="3737395959688551345" at="38,75,39,116" concept="2" />
+      <node id="3737395959688551345" at="38,75,39,116" concept="2" />
+      <node id="3737395959688551345" at="38,75,39,116" concept="2" />
+      <node id="3737395959688551345" at="41,81,42,107" concept="2" />
+      <node id="3737395959688551345" at="41,81,42,107" concept="2" />
       <node id="3737395959688551345" at="41,81,42,107" concept="2" />
       <node id="3737395959688551345" at="44,83,45,105" concept="2" />
+      <node id="3737395959688551345" at="44,83,45,105" concept="2" />
+      <node id="3737395959688551345" at="44,83,45,105" concept="2" />
+      <node id="3737395959688551345" at="47,76,48,61" concept="2" />
+      <node id="3737395959688551345" at="47,76,48,61" concept="2" />
       <node id="3737395959688551345" at="47,76,48,61" concept="2" />
       <node id="3737395959688551345" at="50,70,51,110" concept="2" />
+      <node id="3737395959688551345" at="50,70,51,110" concept="2" />
+      <node id="3737395959688551345" at="50,70,51,110" concept="2" />
+      <node id="3737395959688551345" at="53,69,54,109" concept="2" />
+      <node id="3737395959688551345" at="53,69,54,109" concept="2" />
       <node id="3737395959688551345" at="53,69,54,109" concept="2" />
       <node id="3737395959688551345" at="14,0,17,0" concept="10" trace="apply_KeyName#(Ljetbrains/mps/openapi/editor/style/Style;Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
       <node id="3737395959688551345" at="17,0,20,0" concept="10" trace="apply_Keyword#(Ljetbrains/mps/openapi/editor/style/Style;Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />

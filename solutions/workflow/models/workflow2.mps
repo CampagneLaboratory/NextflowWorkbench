@@ -42,11 +42,11 @@
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
       </concept>
-      <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.StringInitializer" flags="ng" index="2$PLvr">
-        <child id="3855674281012526308" name="string" index="2$RAuK" />
+      <concept id="3653684473245040478" name="org.campagnelab.workflow.structure.NewStringLiteral" flags="ng" index="2J_g7P">
+        <property id="3653684473245041443" name="value" index="2J_vQ8" />
       </concept>
-      <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.StringLiteral" flags="ng" index="2$RDGe">
-        <property id="3855674281012527195" name="value" index="2$RDGf" />
+      <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
+        <child id="3653684473245054701" name="elementType" index="2J_sx6" />
       </concept>
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
@@ -80,9 +80,9 @@
     </node>
     <node concept="1CVceo" id="6b8WuiG4ihG" role="2$L6iY">
       <property role="TrG5h" value="inputPath" />
-      <node concept="2$PLvr" id="6b8WuiG4iig" role="2$L62I">
-        <node concept="2$RDGe" id="6b8WuiG4iiP" role="2$RAuK">
-          <property role="2$RDGf" value="${org.campagnelab.workflow.HOME}/data/id.txt" />
+      <node concept="2J_sx7" id="2fLVrqQt_p1" role="2$L62I">
+        <node concept="2J_g7P" id="2fLVrqQt_KO" role="2J_sx6">
+          <property role="2J_vQ8" value="a" />
         </node>
       </node>
     </node>

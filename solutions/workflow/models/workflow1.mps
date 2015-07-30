@@ -70,9 +70,6 @@
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
       </concept>
-      <concept id="5930160417380669575" name="org.campagnelab.workflow.structure.FilePath" flags="ng" index="2xgF7X">
-        <property id="571300755983255909" name="path" index="2VDI9B" />
-      </concept>
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
         <child id="8369613327464344476" name="outChannel" index="1uLvPA" />
@@ -83,8 +80,11 @@
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
       </concept>
-      <concept id="3855674281012039094" name="org.campagnelab.workflow.structure.FileInitializer" flags="ng" index="2$PLry">
-        <child id="3855674281012526302" name="file" index="2$RAua" />
+      <concept id="3653684473245060014" name="org.campagnelab.workflow.structure.NewFileLiteral" flags="ng" index="2J_rk5">
+        <property id="3653684473245060018" name="path" index="2J_rkp" />
+      </concept>
+      <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
+        <child id="3653684473245054701" name="elementType" index="2J_sx6" />
       </concept>
       <concept id="6588488528863172354" name="org.campagnelab.workflow.structure.Report" flags="ng" index="2UNLhE">
         <reference id="6588488528863172372" name="channel" index="2UNLhW" />
@@ -160,17 +160,11 @@
         <ref role="1uK_4X" node="3gLclC5_5RZ" resolve="splitfile" />
       </node>
     </node>
-    <node concept="2$rEH5" id="6qiI2N4jW8c" role="2$rEHq">
-      <ref role="2$rEH4" to="j1b0:3gLclC5BNlX" resolve="testPython" />
-      <node concept="1uYdA0" id="6qiI2N4jWfQ" role="1uLvPH">
-        <ref role="1uK_4X" node="D$tkU2g9vi" resolve="result" />
-      </node>
-    </node>
     <node concept="1CVceo" id="3gLclC5_5JD" role="2$L6iY">
       <property role="TrG5h" value="fastafile" />
-      <node concept="2$PLry" id="15T_Bumjmdg" role="2$L62I">
-        <node concept="2xgF7X" id="15T_Bumjmdh" role="2$RAua">
-          <property role="2VDI9B" value="${org.campagnelab.workflow.home}/data/sample1.fasta" />
+      <node concept="2J_sx7" id="2fLVrqQtAa3" role="2$L62I">
+        <node concept="2J_rk5" id="2fLVrqQtAd5" role="2J_sx6">
+          <property role="2J_rkp" value="${org.campagnelab.workflow.home}/data/sample1.fasta" />
         </node>
       </node>
     </node>
