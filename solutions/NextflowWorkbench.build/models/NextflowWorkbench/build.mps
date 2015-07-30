@@ -582,6 +582,12 @@
               <ref role="3bR37D" node="4oJiZHqTePI" resolve="org.campagnelab.workflow" />
             </node>
           </node>
+          <node concept="1SiIV0" id="6eMkF2c4SMA" role="3bR37C">
+            <node concept="3bR9La" id="6eMkF2c4SMB" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="6eMkF2c4Sia" resolve="org.campagnelab.workflow.configuration" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="1B2iUhm3bTx" role="3bR37C">
           <node concept="3bR9La" id="1B2iUhm3bTy" role="1SiIV1">
@@ -631,6 +637,12 @@
             <ref role="3bR37D" to="ffeo:1YAozCvot2i" resolve="jetbrains.mps.baseLanguage.regexp" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6eMkF2c4SM$" role="3bR37C">
+          <node concept="3bR9La" id="6eMkF2c4SM_" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="6eMkF2c4Sia" resolve="org.campagnelab.workflow.configuration" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1B2iUhm3bS8" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -652,6 +664,57 @@
           <property role="TrG5h" value="org.campagnelab.util.files#4347565441068750769" />
           <property role="3LESm3" value="f84cead2-6a53-436c-a6c4-de56c3c6a5d9" />
           <property role="2GAjPV" value="false" />
+        </node>
+      </node>
+      <node concept="1E1JtD" id="6eMkF2c4Sia" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.campagnelab.workflow.configuration" />
+        <property role="3LESm3" value="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="6eMkF2c4Sid" role="3LF7KH">
+          <node concept="2Ry0Ak" id="6eMkF2c4SHv" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="6eMkF2c4SJq" role="2Ry0An">
+              <property role="2Ry0Am" value="org.campagnelab.workflow.configuration" />
+              <node concept="2Ry0Ak" id="6eMkF2c4SLl" role="2Ry0An">
+                <property role="2Ry0Am" value="org.campagnelab.workflow.configuration.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6eMkF2c4SNg" role="3bR37C">
+          <node concept="3bR9La" id="6eMkF2c4SNh" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="1B2iUhm3bS8" resolve="org.campagnelab.util.files" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6eMkF2c4SNi" role="3bR37C">
+          <node concept="1Busua" id="6eMkF2c4SNj" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="6eMkF2c4SNk" role="1TViLv">
+          <property role="TrG5h" value="org.campagnelab.workflow.configuration#6643674794994245037" />
+          <property role="3LESm3" value="32d56c97-ad0e-440c-bf4d-bb2bd39b94ea" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="6eMkF2c4SNl" role="3bR37C">
+            <node concept="3bR9La" id="6eMkF2c4SNm" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1B2iUhm3bS8" resolve="org.campagnelab.util.files" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6eMkF2c4SNn" role="3bR37C">
+            <node concept="3bR9La" id="6eMkF2c4SNo" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4oJiZHqTePI" resolve="org.campagnelab.workflow" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6eMkF2c4SNp" role="3bR37C">
+            <node concept="3bR9La" id="6eMkF2c4SNq" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="6eMkF2c4Sia" resolve="org.campagnelab.workflow.configuration" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3LEwk6" id="7sNx9BmIXy0" role="2G$12L">
