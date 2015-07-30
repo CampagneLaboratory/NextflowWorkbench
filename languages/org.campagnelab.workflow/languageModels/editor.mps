@@ -907,7 +907,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3m9W35nCx5f">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <ref role="1XX52x" to="iowz:3m9W35nCwTL" resolve="Collate" />
     <node concept="3EZMnI" id="3m9W35nCx5h" role="2wV5jI">
       <node concept="3F0ifn" id="3m9W35nCx5o" role="3EZMnx">
@@ -1005,7 +1005,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3m9W35nCx5P">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <ref role="1XX52x" to="iowz:3m9W35nCwXC" resolve="Flatten" />
     <node concept="3F0ifn" id="3m9W35nCx5R" role="2wV5jI">
       <property role="3F0ifm" value="flatten()" />
@@ -1013,7 +1013,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3m9W35nIEUa">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <ref role="1XX52x" to="iowz:3m9W35nCxaI" resolve="ToList" />
     <node concept="3F0ifn" id="3m9W35nIEY_" role="2wV5jI">
       <property role="3F0ifm" value="toList()" />
@@ -1021,7 +1021,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3m9W35nIEYH">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <ref role="1XX52x" to="iowz:3m9W35nCxgw" resolve="ToSortedList" />
     <node concept="3F0ifn" id="3m9W35nIEYJ" role="2wV5jI">
       <property role="3F0ifm" value="toSortedList()" />
@@ -1993,7 +1993,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2W8f1273Gk0">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <ref role="1XX52x" to="iowz:2W8f1273GaR" resolve="CollateAllowIncompleteTuples" />
     <node concept="3F0ifn" id="6sdFEaZLVyB" role="2wV5jI">
       <property role="3F0ifm" value="Complete Only" />
@@ -2019,7 +2019,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2W8f127kt$f">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <ref role="1XX52x" to="iowz:2W8f1273Gtf" resolve="CollateStepSize" />
     <node concept="3EZMnI" id="6sdFEaZUs$b" role="2wV5jI">
       <node concept="l2Vlx" id="6sdFEaZUs$c" role="2iSdaV" />
@@ -2361,7 +2361,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6$PrPkYEqIh">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <ref role="1XX52x" to="iowz:6$PrPkYEpK2" resolve="ToTuple" />
     <node concept="3F0ifn" id="6$PrPkYEx9a" role="2wV5jI">
       <property role="3F0ifm" value="toTuple()" />
@@ -2800,6 +2800,199 @@
         <property role="3F0ifm" value="" />
       </node>
       <node concept="l2Vlx" id="5wcZjhPkIqd" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILhsnTl">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <ref role="1XX52x" to="iowz:XaRILhslAr" resolve="Filter" />
+    <node concept="3EZMnI" id="XaRILhsoQ9" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILhsoQg" role="3EZMnx">
+        <property role="3F0ifm" value="filter(" />
+      </node>
+      <node concept="3F1sOY" id="XaRILhsoQm" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:XaRILhsnTe" />
+      </node>
+      <node concept="3F0ifn" id="XaRILhsoQu" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="XaRILhsoQc" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILjgXaM">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <ref role="1XX52x" to="iowz:XaRILjgXaG" resolve="Buffer" />
+    <node concept="3EZMnI" id="XaRILjgXaO" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILjgXaV" role="3EZMnx">
+        <property role="3F0ifm" value="buffer(condition)" />
+      </node>
+      <node concept="l2Vlx" id="XaRILjgXaR" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILilDFf">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <ref role="1XX52x" to="iowz:XaRILilDAq" resolve="Distinct" />
+    <node concept="3EZMnI" id="XaRILilDFh" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILilDFo" role="3EZMnx">
+        <property role="3F0ifm" value="distinct(" />
+      </node>
+      <node concept="3F1sOY" id="XaRILjn$VG" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:XaRILilDAr" />
+      </node>
+      <node concept="3F0ifn" id="XaRILilDFA" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="XaRILilDFk" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILisRbh">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <ref role="1XX52x" to="iowz:XaRILisRbb" resolve="FlatMap" />
+    <node concept="3EZMnI" id="XaRILisRbj" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILisRbq" role="3EZMnx">
+        <property role="3F0ifm" value="flatMap{closure}" />
+      </node>
+      <node concept="l2Vlx" id="XaRILisRbm" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILirYAc">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <ref role="1XX52x" to="iowz:XaRILirYxk" resolve="Last" />
+    <node concept="3F0ifn" id="XaRILirYAm" role="2wV5jI">
+      <property role="3F0ifm" value="last()" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILisJ7C">
+    <property role="3GE5qa" value="channelFunctions.splittingOperators" />
+    <ref role="1XX52x" to="iowz:XaRILisJ6K" resolve="SplitFastq" />
+    <node concept="3EZMnI" id="XaRILisJ7E" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILisJ7L" role="3EZMnx">
+        <property role="3F0ifm" value="splitFastq()" />
+      </node>
+      <node concept="l2Vlx" id="XaRILisJ7H" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILi3jD4">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <ref role="1XX52x" to="iowz:XaRILhIYk3" resolve="Unique" />
+    <node concept="3EZMnI" id="XaRILi3jD6" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILi3jDd" role="3EZMnx">
+        <property role="3F0ifm" value="unique(" />
+      </node>
+      <node concept="3F1sOY" id="XaRILi3jDj" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:XaRILhIYk4" />
+      </node>
+      <node concept="3F0ifn" id="XaRILi3jDr" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="XaRILi3jD9" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILjgToo">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <ref role="1XX52x" to="iowz:XaRILjgRRX" resolve="GroupBy" />
+    <node concept="3EZMnI" id="XaRILjgToq" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILjgTox" role="3EZMnx">
+        <property role="3F0ifm" value="groupBy{value -&gt; key}" />
+      </node>
+      <node concept="l2Vlx" id="XaRILjgTot" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILilGr0">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <ref role="1XX52x" to="iowz:XaRILilGma" resolve="First" />
+    <node concept="3EZMnI" id="XaRILilGr2" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILilGr9" role="3EZMnx">
+        <property role="3F0ifm" value="first(" />
+      </node>
+      <node concept="3F1sOY" id="XaRILilGrf" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:XaRILilGqT" />
+      </node>
+      <node concept="3F0ifn" id="XaRILilGrn" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="XaRILilGr5" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILisKT3">
+    <property role="3GE5qa" value="channelFunctions.splittingOperators" />
+    <ref role="1XX52x" to="iowz:XaRILisJqL" resolve="SplitText" />
+    <node concept="3EZMnI" id="XaRILisKT5" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILisKTc" role="3EZMnx">
+        <property role="3F0ifm" value="splitText()" />
+      </node>
+      <node concept="l2Vlx" id="XaRILisKT8" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILjgVD0">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <ref role="1XX52x" to="iowz:XaRILjgU7G" resolve="GroupTuple" />
+    <node concept="3EZMnI" id="XaRILjgVD2" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILjgVD9" role="3EZMnx">
+        <property role="3F0ifm" value="groupTuple()" />
+      </node>
+      <node concept="l2Vlx" id="XaRILjgVD5" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILisFq8">
+    <property role="3GE5qa" value="channelFunctions.splittingOperators" />
+    <ref role="1XX52x" to="iowz:XaRILis0lJ" resolve="SplitCSV" />
+    <node concept="3EZMnI" id="XaRILisFqa" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILisFqh" role="3EZMnx">
+        <property role="3F0ifm" value="splitCsv()" />
+      </node>
+      <node concept="l2Vlx" id="XaRILisFqd" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILilJ4d">
+    <property role="3GE5qa" value="channelFunctions.filteringOperators" />
+    <ref role="1XX52x" to="iowz:XaRILilHC4" resolve="Take" />
+    <node concept="3EZMnI" id="XaRILilJ4f" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILilJ4m" role="3EZMnx">
+        <property role="3F0ifm" value="take(" />
+      </node>
+      <node concept="3F0A7n" id="XaRILilJ4s" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:XaRILilJ46" resolve="n" />
+      </node>
+      <node concept="3F0ifn" id="XaRILilJ4$" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="XaRILilJ4i" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILisPoK">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <ref role="1XX52x" to="iowz:XaRILisPoE" resolve="Map" />
+    <node concept="3EZMnI" id="XaRILisPoM" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILisPoT" role="3EZMnx">
+        <property role="3F0ifm" value="map{closure}" />
+      </node>
+      <node concept="l2Vlx" id="XaRILisPoP" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILisH5C">
+    <property role="3GE5qa" value="channelFunctions.splittingOperators" />
+    <ref role="1XX52x" to="iowz:XaRILisH5y" resolve="SplitFasta" />
+    <node concept="3EZMnI" id="XaRILisHqy" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILisHqD" role="3EZMnx">
+        <property role="3F0ifm" value="splitFasta()" />
+      </node>
+      <node concept="l2Vlx" id="XaRILisHq_" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XaRILjgRyV">
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <ref role="1XX52x" to="iowz:XaRILjgRyP" resolve="Reduce" />
+    <node concept="3EZMnI" id="XaRILjgRyX" role="2wV5jI">
+      <node concept="3F0ifn" id="XaRILjgRz4" role="3EZMnx">
+        <property role="3F0ifm" value="reduce {a, b -&gt; " />
+      </node>
+      <node concept="3F0ifn" id="XaRILjgRzi" role="3EZMnx">
+        <property role="3F0ifm" value="function" />
+      </node>
+      <node concept="3F0ifn" id="XaRILjgRza" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="l2Vlx" id="XaRILjgRz0" role="2iSdaV" />
     </node>
   </node>
 </model>

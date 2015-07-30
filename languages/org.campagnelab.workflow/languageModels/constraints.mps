@@ -110,6 +110,12 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -450,7 +456,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2rkU84P04sf">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <ref role="1M2myG" to="iowz:3m9W35nCxaI" resolve="ToList" />
     <node concept="nKS2y" id="2rkU84P04vf" role="1MLUbF">
       <node concept="3clFbS" id="2rkU84P04vg" role="2VODD2">
@@ -577,7 +583,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2rkU84P57Ac">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <ref role="1M2myG" to="iowz:3m9W35nCxgw" resolve="ToSortedList" />
     <node concept="nKS2y" id="2rkU84P57CS" role="1MLUbF">
       <node concept="3clFbS" id="2rkU84P57CT" role="2VODD2">
@@ -704,7 +710,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2rkU84P5aSZ">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
     <ref role="1M2myG" to="iowz:3m9W35nCwTL" resolve="Collate" />
     <node concept="nKS2y" id="2rkU84P5aVI" role="1MLUbF">
       <node concept="3clFbS" id="2rkU84P5aVJ" role="2VODD2">
@@ -1145,6 +1151,22 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="BiltnFwbdq">
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <ref role="1M2myG" to="iowz:5ok1XDm1MHo" resolve="FileList" />
+    <node concept="nKS2y" id="BiltnFwble" role="1MLUbF">
+      <node concept="3clFbS" id="BiltnFwblf" role="2VODD2">
+        <node concept="3SKdUt" id="BiltnFweFc" role="3cqZAp">
+          <node concept="3SKdUq" id="BiltnFweFk" role="3SKWNk">
+            <property role="3SKdUp" value="disabled" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="BiltnFwehB" role="3cqZAp">
+          <node concept="3clFbT" id="BiltnFwehA" role="3clFbG" />
         </node>
       </node>
     </node>
