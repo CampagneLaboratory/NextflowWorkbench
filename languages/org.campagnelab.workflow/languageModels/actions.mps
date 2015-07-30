@@ -35,6 +35,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -65,6 +68,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -99,6 +103,7 @@
         <child id="1177327698839" name="canSubstitute" index="ucKa5" />
         <child id="1177327709106" name="handler" index="ucMEw" />
         <child id="1177336013307" name="matchingText" index="uGu3D" />
+        <child id="1177336018902" name="descriptionText" index="uGvr4" />
       </concept>
       <concept id="1177333529597" name="jetbrains.mps.lang.actions.structure.ConceptPart" flags="ng" index="uyZFJ">
         <reference id="1177333551023" name="concept" index="uz4UX" />
@@ -960,6 +965,18 @@
             <node concept="3clFbS" id="5wcZjhPkAnH" role="2VODD2">
               <node concept="3clFbF" id="5wcZjhPkAw6" role="3cqZAp">
                 <node concept="ub8z3" id="5wcZjhPkAw5" role="3clFbG" />
+              </node>
+            </node>
+          </node>
+          <node concept="uGdhv" id="3CeKZWRVvm_" role="uGvr4">
+            <node concept="3clFbS" id="3CeKZWRVvmB" role="2VODD2">
+              <node concept="3clFbF" id="3CeKZWRVwhV" role="3cqZAp">
+                <node concept="3cpWs3" id="3CeKZWRVxc4" role="3clFbG">
+                  <node concept="Xl_RD" id="3CeKZWRVxeM" role="3uHU7w">
+                    <property role="Xl_RC" value=" (integer)" />
+                  </node>
+                  <node concept="ub8z3" id="3CeKZWRVwhU" role="3uHU7B" />
+                </node>
               </node>
             </node>
           </node>
