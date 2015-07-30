@@ -127,7 +127,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -4538,7 +4538,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2W8f127_kFi">
-    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="3GE5qa" value="channelFunctions.collate" />
     <ref role="13h7C2" to="iowz:2W8f1273G7R" resolve="CollateOption" />
     <node concept="13hLZK" id="2W8f127_kFj" role="13h7CW">
       <node concept="3clFbS" id="2W8f127_kFk" role="2VODD2" />
@@ -4553,7 +4553,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2W8f127_kFw">
-    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="3GE5qa" value="channelFunctions.collate" />
     <ref role="13h7C2" to="iowz:2W8f1273Gtf" resolve="CollateStepSize" />
     <node concept="13hLZK" id="2W8f127_kFx" role="13h7CW">
       <node concept="3clFbS" id="2W8f127_kFy" role="2VODD2" />
@@ -4581,7 +4581,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2W8f127_kUN">
-    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="3GE5qa" value="channelFunctions.collate" />
     <ref role="13h7C2" to="iowz:2W8f1273GaR" resolve="CollateAllowIncompleteTuples" />
     <node concept="13hLZK" id="2W8f127_kUO" role="13h7CW">
       <node concept="3clFbS" id="2W8f127_kUP" role="2VODD2" />
@@ -4679,7 +4679,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2rkU84P0$sS">
-    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
     <ref role="13h7C2" to="iowz:3JbPZMXXswk" resolve="ToListFunction" />
     <node concept="13i0hz" id="2rkU84P0$uf" role="13h7CS">
       <property role="TrG5h" value="getPreviousFunction" />
@@ -5252,7 +5252,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6$PrPkYFjb1">
-    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
     <ref role="13h7C2" to="iowz:6$PrPkYEpK2" resolve="ToTuple" />
     <node concept="13i0hz" id="6Mu0rAxc62D" role="13h7CS">
       <property role="TrG5h" value="getNumberOfElements" />

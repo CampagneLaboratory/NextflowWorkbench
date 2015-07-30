@@ -133,7 +133,7 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="2W8f127Iqa9">
-    <property role="3GE5qa" value="channelFunctions.transformingOperators" />
+    <property role="3GE5qa" value="channelFunctions.collate" />
     <property role="TrG5h" value="StepSize" />
     <ref role="2ZfgGC" to="iowz:3m9W35nCwTL" resolve="Collate" />
     <node concept="2Sbjvc" id="2W8f127Iqaa" role="2ZfgGD">
