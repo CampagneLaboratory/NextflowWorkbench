@@ -2657,5 +2657,25 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6TmjYLGgo$J">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <ref role="1XX52x" to="iowz:6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+    <node concept="3EZMnI" id="6TmjYLGgoOc" role="2wV5jI">
+      <node concept="PMmxH" id="6TmjYLGgoOd" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="6TmjYLGgp8E" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F2HdR" id="6TmjYLGgp8M" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:6TmjYLGgovv" />
+        <node concept="l2Vlx" id="6TmjYLGgp8O" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="6TmjYLGgp8Z" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="6TmjYLGgoOh" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

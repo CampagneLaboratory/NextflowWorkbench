@@ -1612,5 +1612,49 @@
     <property role="R4oN_" value="lets you copy the items emitted by the source channel into multiple channels, which each of these can receive a separate version of the same item." />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
   </node>
+  <node concept="1TIwiD" id="6TmjYLGgnIR">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <property role="TrG5h" value="ChannelFunctionWithChannelRef" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="6TmjYLGgovv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="channelContainerRef" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6TmjYLGeFpH" resolve="OutChannelContainerRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgoqS">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <property role="TrG5h" value="Tap" />
+    <property role="34LRSv" value="tap" />
+    <property role="R4oN_" value="it connects two channels, copying the values from the source into the tapped channel. " />
+    <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgovJ">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <property role="34LRSv" value="mix" />
+    <property role="TrG5h" value="Mix" />
+    <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgpKC">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <property role="TrG5h" value="Concat" />
+    <property role="34LRSv" value="concat" />
+    <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgpKP">
+    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
+    <property role="TrG5h" value="Spread" />
+    <property role="34LRSv" value="spread" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="6TmjYLGgpKQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3v6eDgz_YY5" resolve="List" />
+    </node>
+  </node>
 </model>
 
