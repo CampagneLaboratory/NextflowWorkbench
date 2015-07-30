@@ -146,7 +146,7 @@
     <property role="3GE5qa" value="processOptions" />
     <property role="TrG5h" value="Memory" />
     <property role="34LRSv" value="memory" />
-    <property role="R4oN_" value="defines how much memory the process is allowed to use" />
+    <property role="R4oN_" value="Memory allocated for the process' execution" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="5KN4KqYYwDT" role="1TKVEl">
       <property role="TrG5h" value="memory" />
@@ -157,7 +157,7 @@
     <property role="3GE5qa" value="processOptions" />
     <property role="TrG5h" value="TimeAllowed" />
     <property role="34LRSv" value="time allowed" />
-    <property role="R4oN_" value="allows you to define how long a process is allowed to run" />
+    <property role="R4oN_" value="How long a process is allowed to run" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="5KN4KqZ56xY" role="1TKVEl">
       <property role="TrG5h" value="time" />
@@ -167,7 +167,7 @@
   <node concept="1TIwiD" id="5KN4KqZ57HB">
     <property role="TrG5h" value="ClusterOptions" />
     <property role="34LRSv" value="cluster options" />
-    <property role="R4oN_" value="allows native configuration options to be accepted by the cluster submit command" />
+    <property role="R4oN_" value="Native configuration options to be accepted by the cluster submit command" />
     <property role="3GE5qa" value="processOptions" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="5KN4KqZ57HC" role="1TKVEl">
@@ -178,7 +178,7 @@
   <node concept="1TIwiD" id="5KN4KqZbGMw">
     <property role="TrG5h" value="NumCPUs" />
     <property role="34LRSv" value="numCPUs" />
-    <property role="R4oN_" value="defines the number of CPU required by the process' task" />
+    <property role="R4oN_" value="Number of CPU required by the process' task" />
     <property role="3GE5qa" value="processOptions" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="5KN4KqZbGMx" role="1TKVEl">
@@ -197,7 +197,7 @@
     <property role="3GE5qa" value="processOptions" />
     <property role="TrG5h" value="Queue" />
     <property role="34LRSv" value="queue" />
-    <property role="R4oN_" value="allows you to set the queue where jobs are scheduled when using a grid based executor in the pipeline" />
+    <property role="R4oN_" value="Queue where jobs are scheduled when using a grid based executor" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
     <node concept="1TJgyj" id="5KN4KqZbL4m" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -210,7 +210,7 @@
     <property role="3GE5qa" value="processOptions" />
     <property role="TrG5h" value="Penv" />
     <property role="34LRSv" value="penv" />
-    <property role="R4oN_" value="define the parallel environment to be used when submitting a parallel task to the SGE resource manager" />
+    <property role="R4oN_" value="Parallel environment to be used when submitting to the SGE executor" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="5KN4KqZbMk_" role="1TKVEl">
       <property role="TrG5h" value="penv" />
