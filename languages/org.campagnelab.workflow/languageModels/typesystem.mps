@@ -8,18 +8,20 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="2" />
+    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
+    <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
+    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -81,9 +83,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -93,7 +92,6 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
-      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -248,9 +246,6 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
-      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
-      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1227264722563" name="jetbrains.mps.lang.smodel.structure.EqualsStructurallyExpression" flags="nn" index="2YFouu" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
@@ -2703,18 +2698,18 @@
                     <node concept="I4A8Y" id="5UkDK45eBgz" role="2OqNvi" />
                   </node>
                   <node concept="3lApI0" id="5UkDK45eBxN" role="2OqNvi">
-                    <ref role="3lApI3" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
+                    <ref role="3lApI3" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
                   </node>
                 </node>
                 <node concept="1uHKPH" id="5UkDK45f41B" role="2OqNvi" />
               </node>
               <node concept="3TrEf2" id="5UkDK45f4hT" role="2OqNvi">
-                <ref role="3Tt5mk" to="iowz:21kmpcT1kJP" />
+                <ref role="3Tt5mk" to="dlwq:5KN4KqZiCv$" />
               </node>
             </node>
           </node>
           <node concept="35c_gC" id="dNnsoz0SiM" role="3uHU7w">
-            <ref role="35c_gD" to="iowz:49c3W7NLHXt" resolve="Local" />
+            <ref role="35c_gD" to="dlwq:5KN4KqZinTC" resolve="Local" />
           </node>
         </node>
       </node>
@@ -3018,47 +3013,6 @@
     <node concept="1YaCAy" id="7b1yRZVKXFF" role="1YuTPh">
       <property role="TrG5h" value="processRef" />
       <ref role="1YaFvo" to="iowz:5D7AjvYaj9M" resolve="ProcessRef" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="5$YFgXZ1Doo">
-    <property role="TrG5h" value="check_NextflowConfig" />
-    <property role="3GE5qa" value="" />
-    <node concept="3clFbS" id="5$YFgXZ1Dop" role="18ibNy">
-      <node concept="3clFbJ" id="5$YFgXZ1Eat" role="3cqZAp">
-        <node concept="3clFbS" id="5$YFgXZ1Eau" role="3clFbx">
-          <node concept="2MkqsV" id="5$YFgXZ1MoV" role="3cqZAp">
-            <node concept="1YBJjd" id="5$YFgXZ1Mpq" role="2OEOjV">
-              <ref role="1YBMHb" node="5$YFgXZ1Dor" resolve="nextflowConfig" />
-            </node>
-            <node concept="Xl_RD" id="5$YFgXZ1Mpd" role="2MkJ7o">
-              <property role="Xl_RC" value="Only one nextflow.config can be defined in the model." />
-            </node>
-          </node>
-        </node>
-        <node concept="3eOSWO" id="5$YFgXZ1Mla" role="3clFbw">
-          <node concept="3cmrfG" id="5$YFgXZ1Mn7" role="3uHU7w">
-            <property role="3cmrfH" value="1" />
-          </node>
-          <node concept="2OqwBi" id="5$YFgXZ1Fym" role="3uHU7B">
-            <node concept="2OqwBi" id="5$YFgXZ1ECB" role="2Oq$k0">
-              <node concept="2OqwBi" id="5$YFgXZ1Ec_" role="2Oq$k0">
-                <node concept="1YBJjd" id="5$YFgXZ1EaJ" role="2Oq$k0">
-                  <ref role="1YBMHb" node="5$YFgXZ1Dor" resolve="nextflowConfig" />
-                </node>
-                <node concept="I4A8Y" id="5$YFgXZ1Ev2" role="2OqNvi" />
-              </node>
-              <node concept="2RRcyG" id="5$YFgXZ1ELg" role="2OqNvi">
-                <ref role="2RRcyH" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
-              </node>
-            </node>
-            <node concept="34oBXx" id="5$YFgXZ1LKL" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="5$YFgXZ1Dor" role="1YuTPh">
-      <property role="TrG5h" value="nextflowConfig" />
-      <ref role="1YaFvo" to="iowz:21kmpcT1kGG" resolve="WorkflowConfig" />
     </node>
   </node>
   <node concept="1YbPZF" id="5HJ0QzyQBsf">

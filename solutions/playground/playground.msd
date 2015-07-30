@@ -20,6 +20,7 @@
     <usedLanguage>316e8289-cb69-4927-8bfe-edde5cd32037(org.campagnelab.workflow.languages)</usedLanguage>
     <usedLanguage>31c91def-a131-41a1-9018-102874f49a12(de.slisson.mps.editor.multiline)</usedLanguage>
     <usedLanguage>d4767029-894b-41e1-b76e-850baa598e5b(org.campagnelab.util.files)</usedLanguage>
+    <usedLanguage>f9b7dda6-7ab5-4936-ad1b-2d45c57833dc(org.campagnelab.workflow.configuration)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)</usedDevKit>
@@ -41,6 +42,7 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="d4767029-894b-41e1-b76e-850baa598e5b" fqName="org.campagnelab.util.files" version="0" />
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="3" />
+    <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" fqName="org.campagnelab.workflow.configuration" version="-1" />
     <language id="316e8289-cb69-4927-8bfe-edde5cd32037" fqName="org.campagnelab.workflow.languages" version="0" />
   </languageVersions>
 </solution>

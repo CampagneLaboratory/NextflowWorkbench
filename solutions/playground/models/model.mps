@@ -5,6 +5,7 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
+    <use id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration" version="0" />
   </languages>
   <imports />
   <registry>
@@ -61,6 +62,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
+      <concept id="6643674794999865527" name="" flags="ng" index="3z7veL" />
       <concept id="1163670490218" name="jetbrains.mps.baseLanguage.structure.SwitchStatement" flags="nn" index="3KaCP$">
         <child id="1163670592366" name="defaultBlock" index="3Kb1Dw" />
         <child id="1163670766145" name="expression" index="3KbGdf" />
@@ -83,6 +85,18 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
+      <concept id="2329585396109101868" name="" flags="ng" index="pkhaZ" />
+      <concept id="6643674794996402808" name="org.campagnelab.workflow.configuration.structure.Memory" flags="ng" index="3yMh_Y" />
+      <concept id="6643674794999877909" name="org.campagnelab.workflow.configuration.structure.Queue" flags="ng" index="3z708j" />
+      <concept id="6643674794999887950" name="org.campagnelab.workflow.configuration.structure.Retry" flags="ng" index="3z72H8" />
+      <concept id="6643674794999883044" name="org.campagnelab.workflow.configuration.structure.Penv" flags="ng" index="3z73oy" />
+      <concept id="6643674794999892846" name="org.campagnelab.workflow.configuration.structure.Ignore" flags="ng" index="3z75xC" />
+      <concept id="6643674794999860384" name="org.campagnelab.workflow.configuration.structure.NumCPUs" flags="ng" index="3z7tYA" />
+      <concept id="6643674794998135655" name="org.campagnelab.workflow.configuration.structure.ClusterOptions" flags="ng" index="3z9Qxx" />
+      <concept id="6643674794998130813" name="org.campagnelab.workflow.configuration.structure.TimeAllowed" flags="ng" index="3z9RHV" />
+      <concept id="6643674795001609834" name="" flags="ng" index="3zuAPG" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
       <concept id="6202591221127590908" name="org.campagnelab.workflow.structure.FileListInitializer" flags="ng" index="0k3gA">
@@ -133,7 +147,7 @@
       <concept id="2329585396108535359" name="org.campagnelab.workflow.structure.Memory" flags="ng" index="oEfYG">
         <property id="2329585396108535460" name="memory" index="oEfWR" />
       </concept>
-      <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.NextflowConfig" flags="ng" index="pkhaZ">
+      <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.WorkflowConfig" flags="ng" index="pkhb0">
         <child id="2329585396109102069" name="executor" index="pkh9A" />
         <child id="5930160417388865584" name="processOptions" index="2xLS5a" />
       </concept>
@@ -201,7 +215,6 @@
       <concept id="5930160417407206502" name="org.campagnelab.workflow.structure.ConditionalExpressionText" flags="ng" index="2AVUOs">
         <child id="5930160417407206503" name="text" index="2AVUOt" />
       </concept>
-      <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
       <concept id="6992028756512830254" name="org.campagnelab.workflow.structure.QueueElement" flags="ng" index="2MiXSP">
         <property id="6992028756512830255" name="queue" index="2MiXSO" />
       </concept>
@@ -229,7 +242,6 @@
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
       </concept>
-      <concept id="5476153351823634555" name="org.campagnelab.workflow.structure.Ignore" flags="ng" index="3GZ0ge" />
       <concept id="5476153351823634565" name="org.campagnelab.workflow.structure.Retry" flags="ng" index="3GZ0jK">
         <property id="7757275043996805618" name="maxErrors" index="lMs_Z" />
         <property id="4717081913776959662" name="maxRetries" index="1Arw6G" />
@@ -432,29 +444,29 @@
   </node>
   <node concept="pkhaZ" id="21kmpcT2JwM">
     <property role="TrG5h" value="nextflow.config" />
-    <node concept="2LyH2v" id="21kmpcT2Jx$" role="pkh9A" />
-    <node concept="3GZ0jK" id="59canFNCm9b" role="2xLS5a">
+    <node concept="3zuAPG" id="21kmpcT2Jx$" role="pkh9A" />
+    <node concept="3z72H8" id="59canFNCm9b" role="2xLS5a">
       <property role="1Arw6G" value="1" />
       <property role="lMs_Z" value="3" />
     </node>
-    <node concept="3GZ0ge" id="59canFNF2og" role="2xLS5a" />
-    <node concept="oEfVI" id="59canFNF2oo" role="2xLS5a">
+    <node concept="3z75xC" id="59canFNF2og" role="2xLS5a" />
+    <node concept="3z9Qxx" id="59canFNF2oo" role="2xLS5a">
       <property role="oEfTV" value="whatever" />
     </node>
-    <node concept="oDubB" id="59canFNF2oy" role="2xLS5a">
+    <node concept="3z7tYA" id="59canFNF2oy" role="2xLS5a">
       <property role="oDuoM" value="4" />
     </node>
-    <node concept="oEfYG" id="59canFNF2oI" role="2xLS5a">
+    <node concept="3yMh_Y" id="59canFNF2oI" role="2xLS5a">
       <property role="oEfWR" value="3 GB" />
     </node>
-    <node concept="oEfWO" id="59canFNF2oW" role="2xLS5a">
+    <node concept="3z73oy" id="59canFNF2oW" role="2xLS5a">
       <property role="oEfUt" value="smp" />
     </node>
-    <node concept="oEfU2" id="59canFNF2pc" role="2xLS5a">
+    <node concept="3z9RHV" id="59canFNF2pc" role="2xLS5a">
       <property role="oEfVD" value="1h" />
     </node>
-    <node concept="oEfOI" id="59canFOCQz8" role="2xLS5a">
-      <node concept="2MiXSP" id="59canFOCQza" role="2MiXW1">
+    <node concept="3z708j" id="59canFOCQz8" role="2xLS5a">
+      <node concept="3z7veL" id="59canFOCQza" role="2MiXW1">
         <property role="2MiXSO" value="long" />
       </node>
     </node>
@@ -472,10 +484,10 @@
         </node>
       </node>
     </node>
-    <node concept="oDubB" id="59canFO0rTg" role="2xNrcL">
+    <node concept="3z7tYA" id="59canFO0rTg" role="2xNrcL">
       <property role="oDuoM" value="4" />
     </node>
-    <node concept="oEfYG" id="vHEKaWDKyz" role="2xNrcL">
+    <node concept="3yMh_Y" id="vHEKaWDKyz" role="2xNrcL">
       <property role="oEfWR" value="5 GB" />
     </node>
     <node concept="1uLvKC" id="2bVBkcP9YNY" role="2ulM7n">

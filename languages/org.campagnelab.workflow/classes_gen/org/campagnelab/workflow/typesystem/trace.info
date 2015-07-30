@@ -14,7 +14,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="9,0,341,0" name="org.campagnelab.workflow.typesystem.TypesystemDescriptor" />
+      <unit at="9,0,337,0" name="org.campagnelab.workflow.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/1076210821072148930">
@@ -2939,7 +2939,7 @@
       <node id="6202591221122654402" at="31,0,34,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
       <node id="6202591221122654402" at="40,0,43,0" concept="5" trace="overrides#()Z" />
       <node id="248645510008990614" at="43,0,46,0" concept="11" trace="neq_axmccn_a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6202591221122655390" at="24,616,28,7" concept="0" />
+      <node id="6202591221122655390" at="24,644,28,7" concept="0" />
       <node id="6202591221122654402" at="34,68,38,5" concept="0" />
       <node id="248645510007843121" at="23,127,29,5" concept="4" />
       <node id="6202591221122654402" at="34,0,40,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
@@ -2962,7 +2962,7 @@
         <var name="a" id="248645510008990614" />
         <var name="b" id="248645510008990614" />
       </scope>
-      <scope id="248645510007843123" at="24,616,28,7" />
+      <scope id="248645510007843123" at="24,644,28,7" />
       <scope id="6202591221122654402" at="34,68,38,5" />
       <scope id="6202591221122654403" at="23,127,29,5" />
       <scope id="6202591221122654402" at="34,0,40,0">
@@ -3174,49 +3174,6 @@
       </scope>
       <scope id="6202591221127598083" at="37,0,49,0" />
       <unit id="6202591221127598050" at="15,0,50,0" name="org.campagnelab.workflow.typesystem.typeof_GlobalFileListExpression_InferenceRule" />
-    </file>
-  </root>
-  <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/6430767599998899736">
-    <file name="check_NextflowConfig_NonTypesystemRule.java">
-      <node id="6430767599998936635" at="24,7,25,60" concept="6" />
-      <node id="6430767599998936635" at="25,60,26,276" concept="6" />
-      <node id="6430767599998899736" at="30,46,31,63" concept="7" />
-      <node id="6430767599998899736" at="34,5,35,130" concept="6" />
-      <node id="6430767599998899736" at="35,130,36,45" concept="7" />
-      <node id="6430767599998899736" at="39,30,40,17" concept="7" />
-      <node id="6430767599998899736" at="20,0,22,0" concept="1" trace="check_NextflowConfig_NonTypesystemRule#()V" />
-      <node id="6430767599998899736" at="30,0,33,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
-      <node id="6430767599998899736" at="39,0,42,0" concept="5" trace="overrides#()Z" />
-      <node id="6430767599998936635" at="23,257,27,7" concept="0" />
-      <node id="6430767599998899736" at="33,68,37,5" concept="0" />
-      <node id="6430767599998902941" at="22,127,28,5" concept="4" />
-      <node id="6430767599998899736" at="33,0,39,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="6430767599998899736" at="22,0,30,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="6430767599998899736" at="20,51,20,51" />
-      <scope id="6430767599998899736" at="30,46,31,63" />
-      <scope id="6430767599998899736" at="39,30,40,17" />
-      <scope id="6430767599998899736" at="20,0,22,0" />
-      <scope id="6430767599998936635" at="24,7,26,276">
-        <var name="_reporter_2309309498" id="6430767599998936635" />
-        <var name="errorTarget" id="6430767599998936635" />
-      </scope>
-      <scope id="6430767599998899736" at="34,5,36,45">
-        <var name="b" id="6430767599998899736" />
-      </scope>
-      <scope id="6430767599998899736" at="30,0,33,0" />
-      <scope id="6430767599998899736" at="39,0,42,0" />
-      <scope id="6430767599998902942" at="23,257,27,7" />
-      <scope id="6430767599998899736" at="33,68,37,5" />
-      <scope id="6430767599998899737" at="22,127,28,5" />
-      <scope id="6430767599998899736" at="33,0,39,0">
-        <var name="argument" id="6430767599998899736" />
-      </scope>
-      <scope id="6430767599998899736" at="22,0,30,0">
-        <var name="nextflowConfig" id="6430767599998899736" />
-        <var name="status" id="6430767599998899736" />
-        <var name="typeCheckingContext" id="6430767599998899736" />
-      </scope>
-      <unit id="6430767599998899736" at="19,0,43,0" name="org.campagnelab.workflow.typesystem.check_NextflowConfig_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/6588488528866938063">

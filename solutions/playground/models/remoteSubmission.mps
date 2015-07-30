@@ -6,6 +6,7 @@
     <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="-1" />
     <use id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.files" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration" version="0" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports>
@@ -94,21 +95,44 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
+      <concept id="6643674794994257454" name="org.campagnelab.workflow.configuration.structure.Hostname" flags="ng" index="3yU_OC" />
+      <concept id="6643674794994257455" name="org.campagnelab.workflow.configuration.structure.JobArea" flags="ng" index="3yU_OD" />
+      <concept id="6643674794994257459" name="org.campagnelab.workflow.configuration.structure.RemoteSubmissionConfig" flags="ng" index="3yU_OP">
+        <child id="6643674794994257462" name="username" index="3yU_OK" />
+        <child id="6643674794994257463" name="jobArea" index="3yU_OL" />
+        <child id="6643674794994257461" name="hostname" index="3yU_ON" />
+        <child id="6643674794994257464" name="keyfile" index="3yU_OY" />
+        <child id="6643674794994257465" name="setEnv" index="3yU_OZ" />
+      </concept>
+      <concept id="6643674794994257456" name="org.campagnelab.workflow.configuration.structure.KeyFile" flags="ng" index="3yU_OQ" />
+      <concept id="6643674794994257457" name="org.campagnelab.workflow.configuration.structure.RemoteSetEnv" flags="ng" index="3yU_OR">
+        <child id="6643674794994257458" name="file" index="3yU_OO" />
+      </concept>
+      <concept id="6643674794994257469" name="org.campagnelab.workflow.configuration.structure.Username" flags="ng" index="3yU_OV" />
+      <concept id="6643674794994257466" name="org.campagnelab.workflow.configuration.structure.SubmissionOption" flags="ng" index="3yU_OW">
+        <property id="6643674794994257467" name="value" index="3yU_OX" />
+      </concept>
+      <concept id="6643674794999877909" name="org.campagnelab.workflow.configuration.structure.Queue" flags="ng" index="3z708j">
+        <child id="6643674794999877910" name="queueElement" index="3z708g" />
+      </concept>
+      <concept id="6643674794999883044" name="org.campagnelab.workflow.configuration.structure.Penv" flags="ng" index="3z73oy">
+        <property id="6643674794999883045" name="penv" index="3z73oz" />
+      </concept>
+      <concept id="6643674794998135655" name="org.campagnelab.workflow.configuration.structure.ClusterOptions" flags="ng" index="3z9Qxx">
+        <property id="6643674794998135656" name="clusterOptions" index="3z9QxI" />
+      </concept>
+      <concept id="6643674795001677795" name="org.campagnelab.workflow.configuration.structure.WorkflowConfig" flags="ng" index="3zupj_">
+        <child id="6643674795001677798" name="remoteSubmission" index="3zupjw" />
+        <child id="6643674795001677796" name="executor" index="3zupjy" />
+        <child id="6643674795001677797" name="processOptions" index="3zupjz" />
+      </concept>
+      <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG" />
+      <concept id="6643674795006467852" name="org.campagnelab.workflow.configuration.structure.QueueElement" flags="ng" index="3zC8Ka">
+        <property id="6643674795006468239" name="queue" index="3zCbe9" />
+      </concept>
+    </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="2329585396108534973" name="org.campagnelab.workflow.structure.Queue" flags="ng" index="oEfOI">
-        <child id="6992028756512829978" name="queueElement" index="2MiXW1" />
-      </concept>
-      <concept id="2329585396108535677" name="org.campagnelab.workflow.structure.ClusterOptions" flags="ng" index="oEfVI">
-        <property id="2329585396108535784" name="clusterOptions" index="oEfTV" />
-      </concept>
-      <concept id="2329585396108535463" name="org.campagnelab.workflow.structure.Penv" flags="ng" index="oEfWO">
-        <property id="2329585396108535566" name="penv" index="oEfUt" />
-      </concept>
-      <concept id="2329585396109101868" name="org.campagnelab.workflow.structure.WorkflowConfig" flags="ng" index="pkhaZ">
-        <child id="2329585396109102069" name="executor" index="pkh9A" />
-        <child id="6352769549764279065" name="remoteSubmission" index="pHU$A" />
-        <child id="5930160417388865584" name="processOptions" index="2xLS5a" />
-      </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -130,33 +154,12 @@
       <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
         <child id="3653684473245054701" name="elementType" index="2J_sx6" />
       </concept>
-      <concept id="4777210630426255198" name="org.campagnelab.workflow.structure.SGE" flags="ng" index="2LyH2v" />
-      <concept id="6992028756512830254" name="org.campagnelab.workflow.structure.QueueElement" flags="ng" index="2MiXSP">
-        <property id="6992028756512830255" name="queue" index="2MiXSO" />
-      </concept>
-      <concept id="104943811631873937" name="org.campagnelab.workflow.structure.Username" flags="ng" index="OLqD6" />
-      <concept id="104943811631872279" name="org.campagnelab.workflow.structure.SubmissionOption" flags="ng" index="OLqN0">
-        <property id="104943811631872283" name="value" index="OLqNc" />
-      </concept>
-      <concept id="104943811631872704" name="org.campagnelab.workflow.structure.Hostname" flags="ng" index="OLqWn" />
-      <concept id="104943811631841609" name="org.campagnelab.workflow.structure.RemoteSubmissionConfig" flags="ng" index="OLtiu">
-        <child id="104943811631873886" name="username" index="OLqE9" />
-        <child id="104943811631873883" name="hostname" index="OLqEc" />
-        <child id="104943811640640232" name="keyfile" index="RgTsZ" />
-        <child id="104943811640638839" name="jobArea" index="RgYyw" />
-        <child id="4347565441060040944" name="setEnv" index="34s5tb" />
-      </concept>
-      <concept id="104943811640639799" name="org.campagnelab.workflow.structure.KeyFile" flags="ng" index="RgTjw" />
-      <concept id="104943811640638838" name="org.campagnelab.workflow.structure.JobArea" flags="ng" index="RgYyx" />
       <concept id="6588488528863172354" name="org.campagnelab.workflow.structure.Report" flags="ng" index="2UNLhE">
         <reference id="6588488528863172372" name="channel" index="2UNLhW" />
         <child id="6588488528863172374" name="function" index="2UNLhY" />
       </concept>
       <concept id="6588488528864881600" name="org.campagnelab.workflow.structure.ReportFunction" flags="ig" index="2UPiyC" />
       <concept id="6588488528864881603" name="org.campagnelab.workflow.structure.ReportParameter" flags="ng" index="2UPiyF" />
-      <concept id="4347565441060040726" name="org.campagnelab.workflow.structure.RemoteSetEnv" flags="ng" index="34s5uH">
-        <child id="4347565441062632046" name="file" index="346dRl" />
-      </concept>
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
@@ -199,46 +202,6 @@
     <node concept="1uLvKC" id="2bVBkcP9XXP" role="2ulM7n">
       <property role="TrG5h" value="stringToEcho" />
       <node concept="16pbKc" id="2bVBkcP9XXQ" role="2ybFLk" />
-    </node>
-  </node>
-  <node concept="pkhaZ" id="5wD$zX25kgg">
-    <property role="TrG5h" value="workflow.config" />
-    <node concept="2LyH2v" id="1nt77LU3j3T" role="pkh9A" />
-    <node concept="oEfOI" id="5wD$zX25khL" role="2xLS5a">
-      <node concept="2MiXSP" id="5wD$zX25khM" role="2MiXW1">
-        <property role="2MiXSO" value="rascals.q" />
-      </node>
-    </node>
-    <node concept="oEfWO" id="5wD$zX25khN" role="2xLS5a">
-      <property role="oEfUt" value="smp" />
-    </node>
-    <node concept="oEfVI" id="5wD$zX25khO" role="2xLS5a">
-      <property role="oEfTV" value="-l h_vmem=2G  -pe smp 4" />
-    </node>
-    <node concept="OLtiu" id="5wD$zX25khX" role="pHU$A">
-      <property role="TrG5h" value="remote.config" />
-      <node concept="RgTjw" id="5wD$zX25khY" role="RgTsZ">
-        <property role="OLqNc" value="${user.home}/.ssh/id_rsa" />
-      </node>
-      <node concept="OLqD6" id="5wD$zX25khZ" role="OLqE9">
-        <property role="OLqNc" value="gobyweb" />
-      </node>
-      <node concept="RgYyx" id="5wD$zX25ki0" role="RgYyw">
-        <property role="OLqNc" value="/home/gobyweb/nextflow-tests" />
-      </node>
-      <node concept="OLqWn" id="5wD$zX25ki1" role="OLqEc">
-        <property role="OLqNc" value="darla.med.cornell.edu" />
-      </node>
-      <node concept="34s5uH" id="5wD$zX25kic" role="34s5tb">
-        <node concept="34ZRRU" id="5wD$zX25kif" role="346dRl">
-          <node concept="34ZRQx" id="5wD$zX25kip" role="34ZRRx">
-            <property role="34ZRQb" value="slchoose sun_jdk 7.0.17 dist" />
-          </node>
-          <node concept="34ZRQx" id="5wD$zX25kig" role="34ZRRx">
-            <property role="34ZRQb" value="export JAVA_HOME=/softlib/exe/x86_64/pkg/sun_jdk/7.0.17/dist/bin/java" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="2$rMIF" id="5wD$zX2n8RY">
@@ -347,6 +310,46 @@
       <node concept="2J_sx7" id="6qWs7gtKn24" role="2$L62I">
         <node concept="2J_g7P" id="6qWs7gtKn2D" role="2J_sx6">
           <property role="2J_vQ8" value="Hello from $HOSTNAME" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3zupj_" id="5KN4KqZ$Tsz">
+    <property role="TrG5h" value="workflow.config" />
+    <node concept="3z708j" id="5KN4KqZ$Two" role="3zupjz">
+      <node concept="3zC8Ka" id="5KN4KqZ_IKx" role="3z708g">
+        <property role="3zCbe9" value="rascals.q" />
+      </node>
+    </node>
+    <node concept="3z73oy" id="5KN4KqZ_ILW" role="3zupjz">
+      <property role="3z73oz" value="smp" />
+    </node>
+    <node concept="3z9Qxx" id="5KN4KqZ_IOM" role="3zupjz">
+      <property role="3z9QxI" value="-l h_vmem=2G  -pe smp 4" />
+    </node>
+    <node concept="3zuAPG" id="5KN4KqZ$Tua" role="3zupjy" />
+    <node concept="3yU_OP" id="5KN4KqZ$Tue" role="3zupjw">
+      <property role="TrG5h" value="remote.config" />
+      <node concept="3yU_OD" id="5KN4KqZ$Tuf" role="3yU_OL">
+        <property role="3yU_OX" value="/home/gobyweb/nextflow-tests" />
+      </node>
+      <node concept="3yU_OV" id="5KN4KqZ$Tug" role="3yU_OK">
+        <property role="3yU_OX" value="gobyweb" />
+      </node>
+      <node concept="3yU_OQ" id="5KN4KqZ$Tuh" role="3yU_OY">
+        <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
+      </node>
+      <node concept="3yU_OC" id="5KN4KqZ$Tui" role="3yU_ON">
+        <property role="3yU_OX" value="darla.med.cornell.edu" />
+      </node>
+      <node concept="3yU_OR" id="5KN4KqZ$Tut" role="3yU_OZ">
+        <node concept="34ZRRU" id="5KN4KqZ$Tuw" role="3yU_OO">
+          <node concept="34ZRQx" id="5KN4KqZ$TuX" role="34ZRRx">
+            <property role="34ZRQb" value="slchoose sun_jdk 7.0.17 dist" />
+          </node>
+          <node concept="34ZRQx" id="5KN4KqZ$Tux" role="34ZRRx">
+            <property role="34ZRQb" value="export JAVA_HOME=/softlib/exe/x86_64/pkg/sun_jdk/7.0.17/dist/bin/java" />
+          </node>
         </node>
       </node>
     </node>
