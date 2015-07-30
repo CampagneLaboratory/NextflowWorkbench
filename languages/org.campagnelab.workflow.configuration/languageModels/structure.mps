@@ -249,7 +249,7 @@
   <node concept="1TIwiD" id="5KN4KqZinTy">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="Cirrus" />
-    <property role="R4oN_" value="Execute Worflows with Cirrus" />
+    <property role="R4oN_" value="Execute Workflows with Cirrus" />
     <property role="34LRSv" value="cirrus" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#clusterk-cirrus" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -257,7 +257,7 @@
   <node concept="1TIwiD" id="5KN4KqZinTz">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="DNANexus" />
-    <property role="R4oN_" value="Execute Worflows with DNANexus" />
+    <property role="R4oN_" value="Execute Workflows with DNANexus" />
     <property role="34LRSv" value="dnanexus" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#dnanexus" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -269,7 +269,7 @@
   <node concept="1TIwiD" id="5KN4KqZinT_">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="DRMAA" />
-    <property role="R4oN_" value="Execute Worflows with DRMAA" />
+    <property role="R4oN_" value="Execute Workflows with DRMAA" />
     <property role="34LRSv" value="drmaa" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#drmaa-executor" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -284,7 +284,7 @@
   <node concept="1TIwiD" id="5KN4KqZinTB">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="LSF" />
-    <property role="R4oN_" value="Execute Worflows with LSF" />
+    <property role="R4oN_" value="Execute Workflows with LSF" />
     <property role="34LRSv" value="lsf" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#lsf-executor" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -293,14 +293,14 @@
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="Local" />
     <property role="34LRSv" value="local" />
-    <property role="R4oN_" value="executes the workflow on the local, single machine" />
+    <property role="R4oN_" value="Execute Workflows on the local, single machine" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#local-executor" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZinTD">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="PBS" />
-    <property role="R4oN_" value="Execute Worflows with PBS" />
+    <property role="R4oN_" value="Execute Workflows with PBS" />
     <property role="34LRSv" value="pbs" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#pbs-torque-executor" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -308,7 +308,7 @@
   <node concept="1TIwiD" id="5KN4KqZinTE">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="SGE" />
-    <property role="R4oN_" value="executes the workflow on the SGE computer network" />
+    <property role="R4oN_" value="Execute Workflows with SGE" />
     <property role="34LRSv" value="sge" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#sge-executor" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -316,7 +316,7 @@
   <node concept="1TIwiD" id="5KN4KqZinTF">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="Slurm" />
-    <property role="R4oN_" value="Execute Worflows with Slurm" />
+    <property role="R4oN_" value="Execute Workflows with Slurm" />
     <property role="34LRSv" value="slurm" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#slurm-executor" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
