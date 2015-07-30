@@ -1049,5 +1049,54 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="2fLVrqQljft">
+    <property role="3GE5qa" value="channelTypes" />
+    <property role="TrG5h" value="ToggleStandardOutput" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+    <node concept="2S6ZIM" id="2fLVrqQljfu" role="2ZfVej">
+      <node concept="3clFbS" id="2fLVrqQljfv" role="2VODD2">
+        <node concept="3clFbF" id="2fLVrqQljfw" role="3cqZAp">
+          <node concept="3K4zz7" id="2fLVrqQljfx" role="3clFbG">
+            <node concept="Xl_RD" id="2fLVrqQljfy" role="3K4E3e">
+              <property role="Xl_RC" value="Do Not Use for Standard Output" />
+            </node>
+            <node concept="Xl_RD" id="2fLVrqQljfz" role="3K4GZi">
+              <property role="Xl_RC" value="Set Value from Standard Output" />
+            </node>
+            <node concept="2OqwBi" id="2fLVrqQljf$" role="3K4Cdx">
+              <node concept="2Sf5sV" id="2fLVrqQljf_" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2fLVrqQlkB7" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:2fLVrqQ2EIf" resolve="fromStandardOutput" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2fLVrqQljfB" role="2ZfgGD">
+      <node concept="3clFbS" id="2fLVrqQljfC" role="2VODD2">
+        <node concept="3clFbF" id="2fLVrqQljfD" role="3cqZAp">
+          <node concept="37vLTI" id="2fLVrqQljfE" role="3clFbG">
+            <node concept="3fqX7Q" id="2fLVrqQljfF" role="37vLTx">
+              <node concept="2OqwBi" id="2fLVrqQljfG" role="3fr31v">
+                <node concept="2Sf5sV" id="2fLVrqQljfH" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2fLVrqQll46" role="2OqNvi">
+                  <ref role="3TsBF5" to="iowz:2fLVrqQ2EIf" resolve="fromStandardOutput" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2fLVrqQljfJ" role="37vLTJ">
+              <node concept="2Sf5sV" id="2fLVrqQljfK" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2fLVrqQlkS9" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:2fLVrqQ2EIf" resolve="fromStandardOutput" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2fLVrqQljfM" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
 </model>
 
