@@ -83,7 +83,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -155,7 +155,7 @@
       <concept id="1233921373471" name="jetbrains.mps.lang.textGen.structure.LanguageTextGenDeclaration" flags="ig" index="1bsvg0">
         <child id="1233922432965" name="operation" index="1bwxVq" />
       </concept>
-      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" index="1bwezc" />
+      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" stub="3147100357551177019" index="1bwezc" />
       <concept id="1233924848298" name="jetbrains.mps.lang.textGen.structure.OperationCall" flags="ng" index="1bDJIP">
         <reference id="1234190664409" name="function" index="1rvKf6" />
         <child id="1234191323697" name="parameter" index="1ryhcI" />
@@ -1486,12 +1486,16 @@
       <node concept="3clFbS" id="759DxHIqulo" role="2VODD2">
         <node concept="lc7rE" id="759DxHIqulE" role="3cqZAp">
           <node concept="l9hG8" id="759DxHIqulS" role="lcghm">
-            <node concept="2OqwBi" id="759DxHIquoc" role="lb14g">
-              <node concept="117lpO" id="759DxHIqumC" role="2Oq$k0" />
-              <node concept="2qgKlT" id="759DxHIquwk" role="2OqNvi">
-                <ref role="37wK5l" to="mqvz:759DxHIq7nn" resolve="getOutput" />
+            <node concept="2OqwBi" id="1qs9CHFGS7b" role="lb14g">
+              <node concept="2OqwBi" id="1qs9CHFAelf" role="2Oq$k0">
+                <node concept="117lpO" id="759DxHIqumC" role="2Oq$k0" />
+                <node concept="2yIwOk" id="1qs9CHFGRY0" role="2OqNvi" />
               </node>
+              <node concept="3n3YKJ" id="1qs9CHFGSiu" role="2OqNvi" />
             </node>
+          </node>
+          <node concept="la8eA" id="1qs9CHFAewM" role="lcghm">
+            <property role="lacIc" value="()" />
           </node>
         </node>
       </node>
