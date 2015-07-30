@@ -53,27 +53,27 @@
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="Hostname" />
     <property role="34LRSv" value="hostname" />
-    <property role="R4oN_" value="hostname or IP address of the submission host" />
+    <property role="R4oN_" value="Hostname or IP address of the submission host" />
     <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqYQkSJ">
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="JobArea" />
     <property role="34LRSv" value="jobarea" />
-    <property role="R4oN_" value="folder where scripts are copied and executed" />
+    <property role="R4oN_" value="Folder where scripts are copied and submitted" />
     <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqYQkSK">
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="KeyFile" />
     <property role="34LRSv" value="key file" />
-    <property role="R4oN_" value="location of the file holding the private key" />
+    <property role="R4oN_" value="Location of the file holding the private key to connect to the submission host" />
     <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqYQkSL">
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="RemoteSetEnv" />
-    <property role="R4oN_" value="custom settings to add to the remote environment" />
+    <property role="R4oN_" value="Custom settings to add to the remote environment" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5KN4KqYQkSM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -86,7 +86,7 @@
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="RemoteSubmissionConfig" />
     <property role="34LRSv" value="remote.config" />
-    <property role="R4oN_" value="configuration for remote execution" />
+    <property role="R4oN_" value="Configuration for remote execution" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5KN4KqYQkSO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -139,14 +139,14 @@
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="Username" />
     <property role="34LRSv" value="username" />
-    <property role="R4oN_" value="username on the submission host" />
+    <property role="R4oN_" value="Username to connect to the submission host" />
     <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqYYwDS">
     <property role="3GE5qa" value="processOptions" />
     <property role="TrG5h" value="Memory" />
     <property role="34LRSv" value="memory" />
-    <property role="R4oN_" value="defines how much memory the process is allowed to use" />
+    <property role="R4oN_" value="Memory allocated for the process' execution" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="5KN4KqYYwDT" role="1TKVEl">
       <property role="TrG5h" value="memory" />
@@ -157,7 +157,7 @@
     <property role="3GE5qa" value="processOptions" />
     <property role="TrG5h" value="TimeAllowed" />
     <property role="34LRSv" value="time allowed" />
-    <property role="R4oN_" value="allows you to define how long a process is allowed to run" />
+    <property role="R4oN_" value="How long a process is allowed to run" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="5KN4KqZ56xY" role="1TKVEl">
       <property role="TrG5h" value="time" />
@@ -167,7 +167,7 @@
   <node concept="1TIwiD" id="5KN4KqZ57HB">
     <property role="TrG5h" value="ClusterOptions" />
     <property role="34LRSv" value="cluster options" />
-    <property role="R4oN_" value="allows native configuration options to be accepted by the cluster submit command" />
+    <property role="R4oN_" value="Native configuration options to be accepted by the cluster submit command" />
     <property role="3GE5qa" value="processOptions" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="5KN4KqZ57HC" role="1TKVEl">
@@ -178,7 +178,7 @@
   <node concept="1TIwiD" id="5KN4KqZbGMw">
     <property role="TrG5h" value="NumCPUs" />
     <property role="34LRSv" value="numCPUs" />
-    <property role="R4oN_" value="defines the number of CPU required by the process' task" />
+    <property role="R4oN_" value="Number of CPU required by the process' task" />
     <property role="3GE5qa" value="processOptions" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="5KN4KqZbGMx" role="1TKVEl">
@@ -197,7 +197,7 @@
     <property role="3GE5qa" value="processOptions" />
     <property role="TrG5h" value="Queue" />
     <property role="34LRSv" value="queue" />
-    <property role="R4oN_" value="allows you to set the queue where jobs are scheduled when using a grid based executor in the pipeline" />
+    <property role="R4oN_" value="Queue where jobs are scheduled when using a grid based executor" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
     <node concept="1TJgyj" id="5KN4KqZbL4m" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -210,7 +210,7 @@
     <property role="3GE5qa" value="processOptions" />
     <property role="TrG5h" value="Penv" />
     <property role="34LRSv" value="penv" />
-    <property role="R4oN_" value="define the parallel environment to be used when submitting a parallel task to the SGE resource manager" />
+    <property role="R4oN_" value="Parallel environment to be used when submitting to the SGE executor" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
     <node concept="1TJgyi" id="5KN4KqZbMk_" role="1TKVEl">
       <property role="TrG5h" value="penv" />
@@ -220,8 +220,8 @@
   <node concept="1TIwiD" id="5KN4KqZbNxe">
     <property role="3GE5qa" value="processOptions.errorStrategies" />
     <property role="TrG5h" value="Retry" />
-    <property role="34LRSv" value="retry" />
-    <property role="R4oN_" value="allows for a process to be resubmitted for execution after returning an error condition" />
+    <property role="34LRSv" value="error strategy: retry" />
+    <property role="R4oN_" value="The process is resubmitted after returning an error condition" />
     <ref role="1TJDcQ" node="5KN4KqZbPTd" resolve="ErrorStrategies" />
     <node concept="1TJgyi" id="5KN4KqZbNxf" role="1TKVEl">
       <property role="TrG5h" value="maxRetries" />
@@ -235,8 +235,8 @@
   <node concept="1TIwiD" id="5KN4KqZbOHI">
     <property role="3GE5qa" value="processOptions.errorStrategies" />
     <property role="TrG5h" value="Ignore" />
-    <property role="34LRSv" value="ignore" />
-    <property role="R4oN_" value="the process does not stop on an error condition, it only notifies of the error" />
+    <property role="34LRSv" value="error strategy: ignore" />
+    <property role="R4oN_" value="The process does not stop on an error condition" />
     <ref role="1TJDcQ" node="5KN4KqZbPTd" resolve="ErrorStrategies" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZbPTd">
@@ -249,7 +249,7 @@
   <node concept="1TIwiD" id="5KN4KqZinTy">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="Cirrus" />
-    <property role="R4oN_" value="Execute Worflows with Cirrus" />
+    <property role="R4oN_" value="Execute Workflows with Cirrus" />
     <property role="34LRSv" value="cirrus" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#clusterk-cirrus" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -257,7 +257,7 @@
   <node concept="1TIwiD" id="5KN4KqZinTz">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="DNANexus" />
-    <property role="R4oN_" value="Execute Worflows with DNANexus" />
+    <property role="R4oN_" value="Execute Workflows with DNANexus" />
     <property role="34LRSv" value="dnanexus" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#dnanexus" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -269,7 +269,7 @@
   <node concept="1TIwiD" id="5KN4KqZinT_">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="DRMAA" />
-    <property role="R4oN_" value="Execute Worflows with DRMAA" />
+    <property role="R4oN_" value="Execute Workflows with DRMAA" />
     <property role="34LRSv" value="drmaa" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#drmaa-executor" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -284,7 +284,7 @@
   <node concept="1TIwiD" id="5KN4KqZinTB">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="LSF" />
-    <property role="R4oN_" value="Execute Worflows with LSF" />
+    <property role="R4oN_" value="Execute Workflows with LSF" />
     <property role="34LRSv" value="lsf" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#lsf-executor" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -293,14 +293,14 @@
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="Local" />
     <property role="34LRSv" value="local" />
-    <property role="R4oN_" value="executes the workflow on the local, single machine" />
+    <property role="R4oN_" value="Execute Workflows on the local, single machine" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#local-executor" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZinTD">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="PBS" />
-    <property role="R4oN_" value="Execute Worflows with PBS" />
+    <property role="R4oN_" value="Execute Workflows with PBS" />
     <property role="34LRSv" value="pbs" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#pbs-torque-executor" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -308,7 +308,7 @@
   <node concept="1TIwiD" id="5KN4KqZinTE">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="SGE" />
-    <property role="R4oN_" value="executes the workflow on the SGE computer network" />
+    <property role="R4oN_" value="Execute Workflows with SGE" />
     <property role="34LRSv" value="sge" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#sge-executor" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -316,7 +316,7 @@
   <node concept="1TIwiD" id="5KN4KqZinTF">
     <property role="3GE5qa" value="executors" />
     <property role="TrG5h" value="Slurm" />
-    <property role="R4oN_" value="Execute Worflows with Slurm" />
+    <property role="R4oN_" value="Execute Workflows with Slurm" />
     <property role="34LRSv" value="slurm" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#slurm-executor" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
@@ -325,7 +325,7 @@
     <property role="TrG5h" value="WorkflowConfig" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="workflow.config" />
-    <property role="R4oN_" value="configuration for workflow submission" />
+    <property role="R4oN_" value="Configuration for workflow submissions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5KN4KqZiCv$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
