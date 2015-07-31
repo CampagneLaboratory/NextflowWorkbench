@@ -8,6 +8,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
@@ -20,6 +21,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
@@ -160,9 +162,25 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="jetbrains.mps.smodel.action.NodeFactoryManager" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" file="ChannelFunction_KeyMap.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.cells.KeyMapActionImpl" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.KeyMapAction" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConceptRepository" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeUtil" />
+    <classNode extendsClassName="jetbrains.mps.editor.runtime.cells.KeyMapImpl" />
   </dependency>
   <dependency className="org.campagnelab.workflow.editor.ChannelType_Editor" file="ChannelType_Editor.java">
     <classNode dependClassName="java.lang.Class" />
@@ -197,6 +215,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="jetbrains.mps.smodel.action.NodeFactoryManager" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
@@ -213,6 +232,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
@@ -256,6 +276,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
@@ -538,6 +559,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
@@ -808,6 +830,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
@@ -956,6 +979,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
@@ -995,6 +1019,8 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="jetbrains.mps.smodel.action.NodeFactoryManager" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
@@ -1174,6 +1200,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
@@ -1294,6 +1321,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />

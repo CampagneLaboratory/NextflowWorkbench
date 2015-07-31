@@ -20,6 +20,7 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
@@ -46,6 +47,15 @@
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
       </concept>
+      <concept id="1136916919141" name="jetbrains.mps.lang.editor.structure.CellKeyMapItem" flags="lg" index="2PxR9H">
+        <child id="1136916998332" name="keystroke" index="2PyaAO" />
+        <child id="1136920925604" name="executeFunction" index="2PL9iG" />
+      </concept>
+      <concept id="1136916976737" name="jetbrains.mps.lang.editor.structure.CellKeyMapKeystroke" flags="ng" index="2Py5lD">
+        <property id="1136923970223" name="modifiers" index="2PWKIB" />
+        <property id="1136923970224" name="keycode" index="2PWKIS" />
+      </concept>
+      <concept id="1136917288805" name="jetbrains.mps.lang.editor.structure.CellKeyMap_ExecuteFunction" flags="in" index="2PzhpH" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -75,6 +85,10 @@
       <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1081293058843" name="jetbrains.mps.lang.editor.structure.CellKeyMapDeclaration" flags="ig" index="325Ffw">
+        <reference id="1139445935125" name="applicableConcept" index="1chiOs" />
+        <child id="1136930944870" name="item" index="2QnnpI" />
+      </concept>
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
@@ -111,6 +125,7 @@
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
+        <reference id="1081339532145" name="keyMap" index="34QXea" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
@@ -248,6 +263,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
+        <reference id="1139867957129" name="concept" index="1_rbq0" />
+      </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
@@ -916,6 +934,7 @@
         <property role="3F0ifm" value="collate(" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
         <node concept="11LMrY" id="vHEKaYx36i" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -2367,6 +2386,7 @@
         <property role="3F0ifm" value="groupTuple()" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
       </node>
       <node concept="l2Vlx" id="XaRILjgVD5" role="2iSdaV" />
     </node>
@@ -2378,6 +2398,7 @@
       <node concept="3F0ifn" id="XaRILjgRz4" role="3EZMnx">
         <property role="3F0ifm" value="reduce {a, b -&gt; " />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
       </node>
       <node concept="3F0ifn" id="XaRILjgRzi" role="3EZMnx">
         <property role="3F0ifm" value="function" />
@@ -2396,6 +2417,7 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
       </node>
       <node concept="3F0ifn" id="1qs9CHFOs9z" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -2419,6 +2441,7 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
       </node>
       <node concept="3F0ifn" id="1qs9CHFOv4I" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -2443,6 +2466,7 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
       </node>
       <node concept="3F0ifn" id="1qs9CHFOwzW" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -2466,6 +2490,7 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
       </node>
       <node concept="3F0ifn" id="1qs9CHFOw$L" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -2489,6 +2514,7 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
       </node>
       <node concept="3F0ifn" id="1qs9CHFOCp4" role="3EZMnx">
         <property role="3F0ifm" value="()" />
@@ -2505,6 +2531,7 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
       </node>
       <node concept="3F0ifn" id="1qs9CHG0jkk" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -2528,6 +2555,7 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
       </node>
       <node concept="3F0ifn" id="6TmjYLGgp8E" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -2551,6 +2579,8 @@
       <node concept="PMmxH" id="6TmjYLGeHvd" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
+        <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
       </node>
       <node concept="3F0ifn" id="6TmjYLGeHve" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -2590,6 +2620,7 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
       </node>
       <node concept="3F0ifn" id="6TmjYLGeG21" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -2733,6 +2764,35 @@
             <node concept="2OqwBi" id="3OiMbJld5s" role="3clFbG">
               <node concept="0IXxy" id="3OiMbJlcJY" role="2Oq$k0" />
               <node concept="1PgB_6" id="3OiMbJlnKN" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="325Ffw" id="5cB7qdZLDF0">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="ChannelFunction_KeyMap" />
+    <ref role="1chiOs" to="iowz:3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="2PxR9H" id="5cB7qdZLDF1" role="2QnnpI">
+      <node concept="2Py5lD" id="5cB7qdZLDF2" role="2PyaAO">
+        <property role="2PWKIB" value="ctrl" />
+        <property role="2PWKIS" value="VK_SPACE" />
+      </node>
+      <node concept="2PzhpH" id="5cB7qdZLDF3" role="2PL9iG">
+        <node concept="3clFbS" id="5cB7qdZLDF4" role="2VODD2">
+          <node concept="34ab3g" id="5cB7qdZRYu0" role="3cqZAp">
+            <property role="35gtTG" value="info" />
+            <node concept="Xl_RD" id="5cB7qdZRYu2" role="34bqiv">
+              <property role="Xl_RC" value="ctrl space being hit" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="5cB7qdZLEqr" role="3cqZAp">
+            <node concept="2OqwBi" id="5cB7qdZLF8i" role="3clFbG">
+              <node concept="0GJ7k" id="5cB7qdZLEqq" role="2Oq$k0" />
+              <node concept="1_qnLN" id="5cB7qdZLPN8" role="2OqNvi">
+                <ref role="1_rbq0" to="iowz:3m9W35nCwTK" resolve="ChannelFunction" />
+              </node>
             </node>
           </node>
         </node>
