@@ -10,7 +10,7 @@
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_InputChannel_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_NewFileLiteral_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_NewListLiteral_NonTypesystemRule" />
-    <classNode dependClassName="org.campagnelab.workflow.typesystem.check_OutChannels_NonTypesystemRule" />
+    <classNode dependClassName="org.campagnelab.workflow.typesystem.check_OutChannelContainer_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_ProcessRef_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_ScriptArgs_NonTypesystemRule" />
     <classNode dependClassName="org.campagnelab.workflow.typesystem.check_ToListFunction_NonTypesystemRule" />
@@ -204,7 +204,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="org.campagnelab.workflow.typesystem.check_OutChannels_NonTypesystemRule" file="check_OutChannels_NonTypesystemRule.java">
+  <dependency className="org.campagnelab.workflow.typesystem.check_OutChannelContainer_NonTypesystemRule" file="check_OutChannelContainer_NonTypesystemRule.java">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />

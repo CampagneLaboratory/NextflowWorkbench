@@ -158,6 +158,7 @@
       <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
         <child id="3653684473245054701" name="elementType" index="2J_sx6" />
       </concept>
+      <concept id="3653684473245054679" name="org.campagnelab.workflow.structure.NewBooleanLiteral" flags="ng" index="2J_sxW" />
       <concept id="1131453450772026527" name="org.campagnelab.workflow.structure.BaseLanguageAdapter" flags="ng" index="UAUTO">
         <child id="5930160417400088880" name="statements" index="2AuG1a" />
       </concept>
@@ -538,6 +539,22 @@
         </node>
         <node concept="2J_g7P" id="3TB2PodQAS5" role="2J_sx6">
           <property role="2J_vQ8" value="Good" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="94Z48Y4Hdi" role="2$L6iY">
+      <property role="TrG5h" value="boolCh" />
+      <node concept="2J_sx7" id="94Z48Y4Hdj" role="2$L62I">
+        <node concept="2J_sx7" id="94Z48Y4Heb" role="2J_sx6">
+          <node concept="2J_sx7" id="94Z48YdcHY" role="2J_sx6">
+            <node concept="2J_sxW" id="94Z48Yddh6" role="2J_sx6" />
+            <node concept="2J_sxW" id="94Z48YddiA" role="2J_sx6" />
+          </node>
+        </node>
+        <node concept="2J_sx7" id="94Z48Yddnn" role="2J_sx6">
+          <node concept="2J_sx7" id="94Z48Yddno" role="2J_sx6">
+            <node concept="2J_sxW" id="94Z48Yddnp" role="2J_sx6" />
+          </node>
         </node>
       </node>
     </node>

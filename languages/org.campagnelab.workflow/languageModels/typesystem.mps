@@ -536,7 +536,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="6YYJWE2EUeY">
-    <property role="TrG5h" value="check_OutChannels" />
+    <property role="TrG5h" value="check_OutChannelContainer" />
     <node concept="3clFbS" id="6YYJWE2EUeZ" role="18ibNy">
       <node concept="3clFbJ" id="6YYJWE2F3YV" role="3cqZAp">
         <node concept="3clFbS" id="6YYJWE2F3YW" role="3clFbx">
