@@ -56,6 +56,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -133,6 +136,10 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
+        <child id="2590112629714222385" name="expression" index="2lFT27" />
+      </concept>
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -182,9 +189,12 @@
   </registry>
   <node concept="2ulcR8" id="3LlDVJUaZyv">
     <property role="TrG5h" value="EchoString" />
-    <node concept="1uLvKC" id="67XPjarXEap" role="2ulM79">
+    <node concept="2lYRya" id="67XPjarXEap" role="2ulM79">
       <property role="TrG5h" value="fileWithEcho" />
-      <node concept="16pRw0" id="67XPjarXEbb" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqQhloh" role="2ybFLk" />
+      <node concept="3clFbT" id="2fLVrqQt$lj" role="2lFT27">
+        <property role="3clFbU" value="true" />
+      </node>
     </node>
     <node concept="3Y$Zt1" id="3LlDVJUaZyJ" role="2ulM7a">
       <node concept="19SGf9" id="3LlDVJUaZyL" role="3Y$PkS">
@@ -199,9 +209,9 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="2bVBkcP9XXP" role="2ulM7n">
+    <node concept="2mjA9o" id="2bVBkcP9XXP" role="2ulM7n">
       <property role="TrG5h" value="stringToEcho" />
-      <node concept="16pbKc" id="2bVBkcP9XXQ" role="2ybFLk" />
+      <node concept="16pbKc" id="2fLVrqPYDsX" role="2ybFLk" />
     </node>
   </node>
   <node concept="2$rMIF" id="5wD$zX2n8RY">
@@ -327,7 +337,7 @@
     <node concept="3z9Qxx" id="5KN4KqZ_IOM" role="3zupjz">
       <property role="3z9QxI" value="-l h_vmem=2G  -pe smp 4" />
     </node>
-    <node concept="3zuAPG" id="5KN4KqZ$Tua" role="3zupjy" />
+    <node concept="3zuAPG" id="2fLVrqQnv8f" role="3zupjy" />
     <node concept="3yU_OP" id="5KN4KqZ$Tue" role="3zupjw">
       <property role="TrG5h" value="remote.config" />
       <node concept="3yU_OD" id="5KN4KqZ$Tuf" role="3yU_OL">

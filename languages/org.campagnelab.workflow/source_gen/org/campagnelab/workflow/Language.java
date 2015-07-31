@@ -32,7 +32,7 @@ public class Language extends LanguageRuntime {
 
   @Override
   public int getVersion() {
-    return 3;
+    return 5;
   }
 
   public SLanguageId getId() {
@@ -40,7 +40,7 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected String[] getExtendedLanguageIDs() {
-    return new String[]{"de.slisson.mps.richtext", "jetbrains.mps.baseLanguage"};
+    return new String[]{"jetbrains.mps.baseLanguage"};
   }
   @Override
   public Collection<TemplateModule> getGenerators() {

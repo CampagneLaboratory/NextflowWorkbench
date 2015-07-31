@@ -84,13 +84,14 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -113,6 +114,9 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -154,7 +158,7 @@
       <concept id="1233921373471" name="jetbrains.mps.lang.textGen.structure.LanguageTextGenDeclaration" flags="ig" index="1bsvg0">
         <child id="1233922432965" name="operation" index="1bwxVq" />
       </concept>
-      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" index="1bwezc" />
+      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" stub="3147100357551177019" index="1bwezc" />
       <concept id="1233924848298" name="jetbrains.mps.lang.textGen.structure.OperationCall" flags="ng" index="1bDJIP">
         <reference id="1234190664409" name="function" index="1rvKf6" />
         <child id="1234191323697" name="parameter" index="1ryhcI" />
@@ -184,6 +188,14 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
@@ -199,6 +211,7 @@
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
@@ -1283,6 +1296,82 @@
           </node>
           <node concept="9aQIb" id="2bVBkcPi8n1" role="9aQIa">
             <node concept="3clFbS" id="2bVBkcPi8n2" role="9aQI4">
+              <node concept="Jncv_" id="2fLVrqPKgx2" role="3cqZAp">
+                <ref role="JncvD" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
+                <node concept="2OqwBi" id="2fLVrqPKgyp" role="JncvB">
+                  <node concept="37vLTw" id="2fLVrqPKgxz" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bVBkcPi8pk" resolve="node" />
+                  </node>
+                  <node concept="1mfA1w" id="2fLVrqPKgH$" role="2OqNvi" />
+                </node>
+                <node concept="JncvC" id="2fLVrqPKgx6" role="JncvA">
+                  <property role="TrG5h" value="processInput" />
+                  <node concept="2jxLKc" id="2fLVrqPKgx7" role="1tU5fm" />
+                </node>
+                <node concept="3clFbS" id="2fLVrqPKgx9" role="Jncv$">
+                  <node concept="3clFbJ" id="2fLVrqPKgJx" role="3cqZAp">
+                    <node concept="3clFbS" id="2fLVrqPKgJy" role="3clFbx">
+                      <node concept="3SKdUt" id="2fLVrqPKhqK" role="3cqZAp">
+                        <node concept="3SKdUq" id="2fLVrqPKhqS" role="3SKWNk">
+                          <property role="3SKdUp" value="when the input is a ProcessInput and is marked with stdin, print stdin instead of val" />
+                        </node>
+                      </node>
+                      <node concept="lc7rE" id="2fLVrqPKgYC" role="3cqZAp">
+                        <node concept="la8eA" id="2fLVrqPKgYD" role="lcghm">
+                          <property role="lacIc" value="stdin" />
+                        </node>
+                      </node>
+                      <node concept="3cpWs6" id="2fLVrqPKho1" role="3cqZAp" />
+                    </node>
+                    <node concept="2OqwBi" id="2fLVrqPKgLW" role="3clFbw">
+                      <node concept="Jnkvi" id="2fLVrqPKgJH" role="2Oq$k0">
+                        <ref role="1M0zk5" node="2fLVrqPKgx6" resolve="processInput" />
+                      </node>
+                      <node concept="3TrcHB" id="2fLVrqPKgXw" role="2OqNvi">
+                        <ref role="3TsBF5" to="iowz:2fLVrqPJUQP" resolve="toStandardInput" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="Jncv_" id="2fLVrqQnxfR" role="3cqZAp">
+                <ref role="JncvD" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+                <node concept="2OqwBi" id="2fLVrqQnxfS" role="JncvB">
+                  <node concept="37vLTw" id="2fLVrqQnxfT" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bVBkcPi8pk" resolve="node" />
+                  </node>
+                  <node concept="1mfA1w" id="2fLVrqQnxfU" role="2OqNvi" />
+                </node>
+                <node concept="JncvC" id="2fLVrqQnxfV" role="JncvA">
+                  <property role="TrG5h" value="processInput" />
+                  <node concept="2jxLKc" id="2fLVrqQnxfW" role="1tU5fm" />
+                </node>
+                <node concept="3clFbS" id="2fLVrqQnxfX" role="Jncv$">
+                  <node concept="3clFbJ" id="2fLVrqQnxfY" role="3cqZAp">
+                    <node concept="3clFbS" id="2fLVrqQnxfZ" role="3clFbx">
+                      <node concept="3SKdUt" id="2fLVrqQnxg0" role="3cqZAp">
+                        <node concept="3SKdUq" id="2fLVrqQnxg1" role="3SKWNk">
+                          <property role="3SKdUp" value="when the output is a ProcessOutput and is marked with stdout print stdout instead of val" />
+                        </node>
+                      </node>
+                      <node concept="lc7rE" id="2fLVrqQnxg2" role="3cqZAp">
+                        <node concept="la8eA" id="2fLVrqQnxg3" role="lcghm">
+                          <property role="lacIc" value="stdout" />
+                        </node>
+                      </node>
+                      <node concept="3cpWs6" id="2fLVrqQnxg4" role="3cqZAp" />
+                    </node>
+                    <node concept="2OqwBi" id="2fLVrqQnxg5" role="3clFbw">
+                      <node concept="Jnkvi" id="2fLVrqQnxg6" role="2Oq$k0">
+                        <ref role="1M0zk5" node="2fLVrqQnxfV" resolve="processInput" />
+                      </node>
+                      <node concept="3TrcHB" id="2fLVrqQnxDc" role="2OqNvi">
+                        <ref role="3TsBF5" to="iowz:2fLVrqQ2EIf" resolve="fromStandardOutput" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="lc7rE" id="2bVBkcPi8n3" role="3cqZAp">
                 <node concept="la8eA" id="2bVBkcPi8n4" role="lcghm">
                   <property role="lacIc" value="val" />

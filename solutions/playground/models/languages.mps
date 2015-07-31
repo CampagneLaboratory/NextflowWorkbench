@@ -5,8 +5,8 @@
     <use id="316e8289-cb69-4927-8bfe-edde5cd32037" name="org.campagnelab.workflow.languages" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
     <use id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration" version="0" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="5" />
   </languages>
   <imports>
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
@@ -106,6 +106,8 @@
       <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -170,13 +172,13 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="6qiI2N5urrh" role="2ulM7n">
+    <node concept="2mjA9o" id="6qiI2N5urrh" role="2ulM7n">
       <property role="TrG5h" value="repoURL" />
-      <node concept="16pbKc" id="6qiI2N5urri" role="2ybFLk" />
+      <node concept="16pbKc" id="2fLVrqPYDsi" role="2ybFLk" />
     </node>
-    <node concept="1uLvKC" id="6qiI2N5urvJ" role="2ulM79">
+    <node concept="2lYRya" id="6qiI2N5urvJ" role="2ulM79">
       <property role="TrG5h" value="repoDir" />
-      <node concept="16pRw0" id="6qiI2N5urvK" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqQhlnO" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="4GDrEajU_mv">
@@ -200,13 +202,13 @@
         <node concept="19SUe$" id="rix53J9qrQ" role="19SJt6" />
       </node>
     </node>
-    <node concept="1uLvKC" id="6qiI2N5urDN" role="2ulM79">
+    <node concept="2lYRya" id="6qiI2N5urDN" role="2ulM79">
       <property role="TrG5h" value="output.txt" />
-      <node concept="16pRw0" id="6qiI2N5urDO" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqQhlnR" role="2ybFLk" />
     </node>
-    <node concept="1uLvKC" id="6qiI2N5urAM" role="2ulM7n">
+    <node concept="2mjA9o" id="6qiI2N5urAM" role="2ulM7n">
       <property role="TrG5h" value="repo" />
-      <node concept="16pRw0" id="6qiI2N5urAN" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqPYDsl" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="4GDrEajULn6">

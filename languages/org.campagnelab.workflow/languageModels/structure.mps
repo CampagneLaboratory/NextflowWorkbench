@@ -21,8 +21,8 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
-    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -84,13 +84,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="inputs" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+      <ref role="20lvS9" node="2fLVrqPJSZI" resolve="ProcessInput" />
     </node>
     <node concept="1TJgyj" id="6tX5nBTaziK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="outputs" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+      <ref role="20lvS9" node="2fLVrqQ2DkW" resolve="ProcessOutput" />
     </node>
     <node concept="1TJgyj" id="6tX5nBTaziN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1129,7 +1129,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     </node>
-    <node concept="PrWs8" id="D$tkU1WQfB" role="PzmwI">
+    <node concept="PrWs8" id="6TmjYLGgm0h" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
@@ -1449,6 +1449,32 @@
     <property role="34LRSv" value="filter" />
     <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
   </node>
+  <node concept="1TIwiD" id="2fLVrqPJSZI">
+    <property role="3GE5qa" value="channelTypes" />
+    <property role="TrG5h" value="ProcessInput" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+    <node concept="1TJgyi" id="2fLVrqPJUQP" role="1TKVEl">
+      <property role="TrG5h" value="toStandardInput" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2fLVrqQ2DkW">
+    <property role="3GE5qa" value="channelTypes" />
+    <property role="TrG5h" value="ProcessOutput" />
+    <property role="R4oN_" value="Output of a Process" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+    <node concept="1TJgyi" id="2fLVrqQ2EIf" role="1TKVEl">
+      <property role="TrG5h" value="fromStandardOutput" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1qs9CHFOrh8">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions" />
+    <property role="TrG5h" value="SplitFunction" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+  </node>
   <node concept="1TIwiD" id="1qs9CHFOmDW">
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
     <property role="TrG5h" value="ArgRegexQualifierPredicate" />
@@ -1468,12 +1494,167 @@
       <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1qs9CHFOrh8">
-    <property role="3GE5qa" value="channelFunctions.splitFunctions" />
-    <property role="TrG5h" value="SplitFunction" />
+  <node concept="1TIwiD" id="6TmjYLGcN_3">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="ifEmpty" />
+    <property role="34LRSv" value="ifEmpty" />
+    <property role="R4oN_" value="emits a value as specified the operator parameter, when the channel to which is applied is empty" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcNQe">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="34LRSv" value="print" />
+    <property role="TrG5h" value="Print" />
+    <property role="R4oN_" value="prints items emitted by a channel to the console standard. Consume items emitted by the source." />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcNYR">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Println" />
+    <property role="34LRSv" value="println" />
+    <property role="R4oN_" value="prints items emitted by a channel to the console standard appending a new line character. Consume items emitted by the source " />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcO3d">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="View" />
+    <property role="34LRSv" value="view" />
+    <property role="R4oN_" value="prints the items emitted by a channel to the console standard output. Do not consume item from the source Channel" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcOkA">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="CountBy" />
+    <property role="34LRSv" value="countBy" />
+    <property role="R4oN_" value="creates a channel which emits a n associative array (Map) that counts the occurrences of the emitted items in the source channel having the same key." />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcOoY">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Min" />
+    <property role="34LRSv" value="min" />
+    <property role="R4oN_" value="waits until the source channel completes, and then emits the item that has the lowest value." />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcOtn">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Max" />
+    <property role="34LRSv" value="max" />
+    <property role="R4oN_" value="waits until the source channel completes, and then emits the item that has the greatest value." />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcOto">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Sum" />
+    <property role="34LRSv" value="sum" />
+    <property role="R4oN_" value="operator creates a channel that emits the sum of all the items emitted by the channel itself" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcWld">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="ClosureFunctionWithChannelRef" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <node concept="1TJgyj" id="6TmjYLGeFMw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="outChannelContainerRef" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6TmjYLGeFpH" resolve="OutChannelContainerRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeFpH">
+    <property role="TrG5h" value="OutChannelContainerRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6TmjYLGeFMt" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="outChannelContainer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3m26PihhBwN" resolve="OutChannelContainer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeGXs">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Merge" />
+    <property role="34LRSv" value="merge" />
+    <property role="R4oN_" value="lets you join items emitted by two (or more) channels into a new channel." />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeHlg">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Phase" />
+    <property role="34LRSv" value="phase" />
+    <property role="R4oN_" value="creates a channel that synchronizes the values emitted by two other channels, in such a way that it emits pairs of items that have a matching key." />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+    <node concept="1TJgyi" id="6TmjYLGeHuE" role="1TKVEl">
+      <property role="TrG5h" value="remainder" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeHOd">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Cross" />
+    <property role="34LRSv" value="cross" />
+    <property role="R4oN_" value="allows you to combine the items of two channels in such a way that the items of the source channel are emitted along with the items emitted by the target channel for which they have a matching key" />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeHXi">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Choice" />
+    <property role="34LRSv" value="choice" />
+    <property role="R4oN_" value=" allows you to forward the items emitted by a source channel to two (or more) output channels, choosing one out of them at a time." />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeIaW">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Separate" />
+    <property role="34LRSv" value="separate" />
+    <property role="R4oN_" value="lets you copy the items emitted by the source channel into multiple channels, which each of these can receive a separate version of the same item." />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgnIR">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <property role="TrG5h" value="ChannelFunctionWithChannelRef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="6TmjYLGgovv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="channelContainerRef" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6TmjYLGeFpH" resolve="OutChannelContainerRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgoqS">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <property role="TrG5h" value="Tap" />
+    <property role="34LRSv" value="tap" />
+    <property role="R4oN_" value="it connects two channels, copying the values from the source into the tapped channel. " />
+    <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgovJ">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <property role="34LRSv" value="mix" />
+    <property role="TrG5h" value="Mix" />
+    <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgpKC">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <property role="TrG5h" value="Concat" />
+    <property role="34LRSv" value="concat" />
+    <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgpKP">
+    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
+    <property role="TrG5h" value="Spread" />
+    <property role="34LRSv" value="spread" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="6TmjYLGgpKQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3v6eDgz_YY5" resolve="List" />
+    </node>
   </node>
 </model>
 

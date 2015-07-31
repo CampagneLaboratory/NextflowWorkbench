@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="5" />
   </languages>
   <imports>
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
@@ -53,6 +53,8 @@
       <concept id="4018964125401476997" name="org.campagnelab.workflow.structure.List" flags="ng" index="kktkh">
         <child id="7391172440886351025" name="elementType" index="2y8EMt" />
       </concept>
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -74,6 +76,10 @@
       <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.StringLiteral" flags="ng" index="2$RDGe">
         <property id="3855674281012527195" name="value" index="2$RDGf" />
       </concept>
+      <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
+        <child id="3653684473245054701" name="elementType" index="2J_sx6" />
+      </concept>
+      <concept id="3653684473245054679" name="org.campagnelab.workflow.structure.NewBooleanLiteral" flags="ng" index="2J_sxW" />
       <concept id="6588488528863172354" name="org.campagnelab.workflow.structure.Report" flags="ng" index="2UNLhE">
         <reference id="6588488528863172372" name="channel" index="2UNLhW" />
         <child id="6588488528863172374" name="function" index="2UNLhY" />
@@ -124,13 +130,13 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hL_c" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hL_c" role="2ulM7n">
       <property role="TrG5h" value="idsList" />
-      <node concept="16pbKc" id="5UkDK45hL_d" role="2ybFLk" />
+      <node concept="16pbKc" id="2fLVrqPYDx1" role="2ybFLk" />
     </node>
-    <node concept="1uLvKC" id="5UkDK45hLIO" role="2ulM79">
+    <node concept="2lYRya" id="5UkDK45hLIO" role="2ulM79">
       <property role="TrG5h" value="&quot;${idsList}.R&quot;" />
-      <node concept="16pRw0" id="5UkDK45hLIP" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqQhlYV" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="4vJs_UWM9nR">
@@ -154,20 +160,20 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hLK9" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hLK9" role="2ulM7n">
       <property role="TrG5h" value="idsList" />
-      <node concept="16pbKc" id="5UkDK45hLKa" role="2ybFLk" />
+      <node concept="16pbKc" id="2fLVrqPYDx4" role="2ybFLk" />
     </node>
-    <node concept="1uLvKC" id="5UkDK45hLKp" role="2ulM79">
+    <node concept="2lYRya" id="5UkDK45hLKp" role="2ulM79">
       <property role="TrG5h" value="'MyRscript.R'" />
-      <node concept="16pRw0" id="5UkDK45hLKq" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqQhlYY" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="367MW53_NkX">
     <property role="TrG5h" value="runRBiomart" />
-    <node concept="1uLvKC" id="5UkDK45hM_T" role="2ulM79">
+    <node concept="2lYRya" id="5UkDK45hM_T" role="2ulM79">
       <property role="TrG5h" value="&quot;${Rscript}_fasta.fasta&quot;" />
-      <node concept="16pRw0" id="5UkDK45hM_U" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqQhlZ1" role="2ybFLk" />
     </node>
     <node concept="3Y$Zt1" id="367MW53_Nl8" role="2ulM7a">
       <node concept="19SGf9" id="367MW53_Nla" role="3Y$PkS">
@@ -180,9 +186,9 @@
         <node concept="19SUe$" id="4vJs_UWMb_y" role="19SJt6" />
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hM_D" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hM_D" role="2ulM7n">
       <property role="TrG5h" value="Rscript" />
-      <node concept="16pRw0" id="5UkDK45hM_E" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqPYDx7" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="3gLclC5_5KA">
@@ -194,13 +200,13 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hMBi" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hMBi" role="2ulM7n">
       <property role="TrG5h" value="'input'" />
-      <node concept="16pRw0" id="5UkDK45hMBj" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqPYDxa" role="2ybFLk" />
     </node>
-    <node concept="1uLvKC" id="5UkDK45hMBy" role="2ulM79">
+    <node concept="2lYRya" id="5UkDK45hMBy" role="2ulM79">
       <property role="TrG5h" value="'seq_*'" />
-      <node concept="16pRw0" id="5UkDK45hMBz" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqQhlZ4" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="4sdy0eirjMY">
@@ -224,13 +230,13 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hMxI" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hMxI" role="2ulM7n">
       <property role="TrG5h" value="myfasta" />
-      <node concept="16pRw0" id="5UkDK45hMxJ" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqPYDxd" role="2ybFLk" />
     </node>
-    <node concept="1uLvKC" id="5UkDK45hMxY" role="2ulM79">
+    <node concept="2lYRya" id="5UkDK45hMxY" role="2ulM79">
       <property role="TrG5h" value="&quot;${myfasta}_translations.fasta&quot;" />
-      <node concept="16pRw0" id="5UkDK45hMxZ" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqQhlZ7" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="4sdy0ei$bIM">
@@ -248,15 +254,15 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hLMn" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hLMn" role="2ulM7n">
       <property role="TrG5h" value="allFiles" />
-      <node concept="kktkh" id="5UkDK45hLMo" role="2ybFLk">
-        <node concept="16pRw0" id="5UkDK45hLMp" role="2y8EMt" />
+      <node concept="kktkh" id="2fLVrqPYDxg" role="2ybFLk">
+        <node concept="16pRw0" id="2fLVrqPYDxh" role="2y8EMt" />
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hLMM" role="2ulM79">
+    <node concept="2lYRya" id="5UkDK45hLMM" role="2ulM79">
       <property role="TrG5h" value="'myFinalOutput'" />
-      <node concept="16pRw0" id="5UkDK45hLMN" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqQhlZa" role="2ybFLk" />
     </node>
   </node>
   <node concept="2$rMIF" id="261znZpTS25">
@@ -1849,6 +1855,17 @@
         <node concept="2$RDGe" id="4vJs_UWLQKK" role="2$RAuK">
           <property role="2$RDGf" value="ENSG00000089199" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2$rMIF" id="6TmjYLGe$$6">
+    <property role="TrG5h" value="dd" />
+    <node concept="2$rEH5" id="6TmjYLGe$$7" role="2$rEHq" />
+    <node concept="1CVceo" id="6TmjYLGe$$8" role="2$L6iY">
+      <property role="TrG5h" value="ddd" />
+      <node concept="2J_sx7" id="6TmjYLGe$$9" role="2$L62I">
+        <node concept="2J_sxW" id="6TmjYLGe$$G" role="2J_sx6" />
+        <node concept="2J_sxW" id="6TmjYLGe$_8" role="2J_sx6" />
       </node>
     </node>
   </node>

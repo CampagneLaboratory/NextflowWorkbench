@@ -4,7 +4,7 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="5" />
   </languages>
   <imports>
     <import index="j1b0" ref="r:f90cb088-6ac1-4c26-816f-c7d69af35a24(workflow2)" />
@@ -63,13 +63,12 @@
       <concept id="748852418098455525" name="org.campagnelab.workflow.structure.NameInAChannelRef" flags="ng" index="2b_LqF">
         <reference id="748852418098455526" name="value" index="2b_LqC" />
       </concept>
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
-      </concept>
-      <concept id="5930160417380669575" name="org.campagnelab.workflow.structure.FilePath" flags="ng" index="2xgF7X">
-        <property id="571300755983255909" name="path" index="2VDI9B" />
       </concept>
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
@@ -81,8 +80,11 @@
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
       </concept>
-      <concept id="3855674281012039094" name="org.campagnelab.workflow.structure.FileInitializer" flags="ng" index="2$PLry">
-        <child id="3855674281012526302" name="file" index="2$RAua" />
+      <concept id="3653684473245060014" name="org.campagnelab.workflow.structure.NewFileLiteral" flags="ng" index="2J_rk5">
+        <property id="3653684473245060018" name="path" index="2J_rkp" />
+      </concept>
+      <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
+        <child id="3653684473245054701" name="elementType" index="2J_sx6" />
       </concept>
       <concept id="6588488528863172354" name="org.campagnelab.workflow.structure.Report" flags="ng" index="2UNLhE">
         <reference id="6588488528863172372" name="channel" index="2UNLhW" />
@@ -158,17 +160,11 @@
         <ref role="1uK_4X" node="3gLclC5_5RZ" resolve="splitfile" />
       </node>
     </node>
-    <node concept="2$rEH5" id="6qiI2N4jW8c" role="2$rEHq">
-      <ref role="2$rEH4" to="j1b0:3gLclC5BNlX" resolve="testPython" />
-      <node concept="1uYdA0" id="6qiI2N4jWfQ" role="1uLvPH">
-        <ref role="1uK_4X" node="D$tkU2g9vi" resolve="result" />
-      </node>
-    </node>
     <node concept="1CVceo" id="3gLclC5_5JD" role="2$L6iY">
       <property role="TrG5h" value="fastafile" />
-      <node concept="2$PLry" id="15T_Bumjmdg" role="2$L62I">
-        <node concept="2xgF7X" id="15T_Bumjmdh" role="2$RAua">
-          <property role="2VDI9B" value="${org.campagnelab.workflow.home}/data/sample1.fasta" />
+      <node concept="2J_sx7" id="2fLVrqQtAa3" role="2$L62I">
+        <node concept="2J_rk5" id="2fLVrqQtAd5" role="2J_sx6">
+          <property role="2J_rkp" value="${org.campagnelab.workflow.home}/data/sample1.fasta" />
         </node>
       </node>
     </node>
@@ -182,20 +178,20 @@
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hL9m" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hL9m" role="2ulM7n">
       <property role="TrG5h" value="'input'" />
-      <node concept="16pRw0" id="5UkDK45hL9n" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqPYDwG" role="2ybFLk" />
     </node>
-    <node concept="1uLvKC" id="5UkDK45hLaj" role="2ulM79">
+    <node concept="2lYRya" id="5UkDK45hLaj" role="2ulM79">
       <property role="TrG5h" value="'seq_*'" />
-      <node concept="16pRw0" id="5UkDK45hLak" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqQhlYJ" role="2ybFLk" />
     </node>
   </node>
   <node concept="2ulcR8" id="3gLclC5_5QV">
     <property role="TrG5h" value="reverse" />
-    <node concept="1uLvKC" id="5UkDK45hMEj" role="2ulM79">
+    <node concept="2lYRya" id="5UkDK45hMEj" role="2ulM79">
       <property role="TrG5h" value="'finaleres.txt'" />
-      <node concept="16pRw0" id="5UkDK45hMEk" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqQhlYM" role="2ybFLk" />
     </node>
     <node concept="3Y$Zt1" id="3gLclC5_5RB" role="2ulM7a">
       <node concept="19SGf9" id="3gLclC5_5RD" role="3Y$PkS">
@@ -214,9 +210,9 @@
         <node concept="19SUe$" id="D$tkU2g9ni" role="19SJt6" />
       </node>
     </node>
-    <node concept="1uLvKC" id="5UkDK45hME3" role="2ulM7n">
+    <node concept="2mjA9o" id="5UkDK45hME3" role="2ulM7n">
       <property role="TrG5h" value="record" />
-      <node concept="16pRw0" id="5UkDK45hME4" role="2ybFLk" />
+      <node concept="16pRw0" id="2fLVrqPYDwJ" role="2ybFLk" />
     </node>
   </node>
 </model>
