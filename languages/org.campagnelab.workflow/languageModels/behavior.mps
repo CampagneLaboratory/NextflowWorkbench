@@ -7,11 +7,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -24,9 +20,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
-    <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
     <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="aa39" ref="r:0819daa0-5dc7-4220-a7f7-72d3079e60c6(org.campagnelab.workflow.configuration.behavior)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -127,7 +121,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -393,6 +387,7 @@
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="3055999550620853964" name="jetbrains.mps.baseLanguage.collections.structure.RemoveWhereOperation" flags="nn" index="1aUR6E" />
       <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
@@ -402,14 +397,14 @@
     </language>
   </registry>
   <node concept="13h7C7" id="2Ztc8$x0Lpg">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <ref role="13h7C2" to="iowz:7gAPJCERFHl" resolve="StringChannel" />
     <node concept="13hLZK" id="2Ztc8$x0Lph" role="13h7CW">
       <node concept="3clFbS" id="2Ztc8$x0Lpi" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="2Ztc8$x0Lnc">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <ref role="13h7C2" to="iowz:7gAPJCERGEA" resolve="FileChannel" />
     <node concept="13hLZK" id="2Ztc8$x0Lnd" role="13h7CW">
       <node concept="3clFbS" id="2Ztc8$x0Lne" role="2VODD2" />
@@ -498,21 +493,21 @@
     </node>
   </node>
   <node concept="13h7C7" id="2Ztc8$x0LjT">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <ref role="13h7C2" to="iowz:7gAPJCERGEu" resolve="IntegerChannel" />
     <node concept="13hLZK" id="2Ztc8$x0LjU" role="13h7CW">
       <node concept="3clFbS" id="2Ztc8$x0LjV" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="2Ztc8$x0LgT">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <ref role="13h7C2" to="iowz:7gAPJCERGEz" resolve="BooleanChannel" />
     <node concept="13hLZK" id="2Ztc8$x0LgU" role="13h7CW">
       <node concept="3clFbS" id="2Ztc8$x0LgV" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="2Ztc8$x0LbR">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <ref role="13h7C2" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
     <node concept="13hLZK" id="2Ztc8$x0LbS" role="13h7CW">
       <node concept="3clFbS" id="2Ztc8$x0LbT" role="2VODD2" />
@@ -594,7 +589,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3v6eDgzA3rE">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <ref role="13h7C2" to="iowz:3v6eDgz_YY9" resolve="ListChannel" />
     <node concept="13i0hz" id="3v6eDgzA3sG" role="13h7CS">
       <property role="TrG5h" value="returnKind" />
@@ -901,7 +896,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3v6eDgzA3zh">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <ref role="13h7C2" to="iowz:3v6eDgzA3ze" resolve="TupleChannel" />
     <node concept="13i0hz" id="3v6eDgzA3zA" role="13h7CS">
       <property role="TrG5h" value="returnKind" />
@@ -3892,14 +3887,14 @@
     </node>
   </node>
   <node concept="13h7C7" id="5ok1XDk_v7q">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <ref role="13h7C2" to="iowz:5ok1XDk_tCa" resolve="NonListNonFileChannel" />
     <node concept="13hLZK" id="5ok1XDk_v7r" role="13h7CW">
       <node concept="3clFbS" id="5ok1XDk_v7s" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="5ok1XDm1QY7">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <ref role="13h7C2" to="iowz:5ok1XDm1KPg" resolve="FileListChannel" />
     <node concept="13hLZK" id="5ok1XDm1QY8" role="13h7CW">
       <node concept="3clFbS" id="5ok1XDm1QY9" role="2VODD2" />
@@ -4959,6 +4954,82 @@
       <ref role="13i0hy" to="tpcu:3fifI_xCJOQ" resolve="getScope" />
       <node concept="3Tm1VV" id="D$tkU20uy2" role="1B3o_S" />
       <node concept="3clFbS" id="D$tkU20uyb" role="3clF47">
+        <node concept="3clFbJ" id="2fLVrqR9lM6" role="3cqZAp">
+          <node concept="3clFbS" id="2fLVrqR9lM7" role="3clFbx">
+            <node concept="3SKdUt" id="2fLVrqReyIT" role="3cqZAp">
+              <node concept="3SKdUq" id="2fLVrqReyJJ" role="3SKWNk">
+                <property role="3SKdUp" value="remove tuples from inputs because they don'ts have names. Their elements do" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="2fLVrqR9mJb" role="3cqZAp">
+              <node concept="2YIFZM" id="2fLVrqR9lMb" role="3cqZAk">
+                <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+                <node concept="2OqwBi" id="2fLVrqRcPYH" role="37wK5m">
+                  <node concept="2OqwBi" id="2fLVrqR9lMc" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2fLVrqR9lMd" role="2Oq$k0">
+                      <node concept="13iPFW" id="2fLVrqR9lMe" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="2fLVrqR9lMf" role="2OqNvi">
+                        <node concept="1xMEDy" id="2fLVrqR9lMg" role="1xVPHs">
+                          <node concept="chp4Y" id="2fLVrqR9lMh" role="ri$Ld">
+                            <ref role="cht4Q" to="iowz:6tX5nBTatyL" resolve="Process" />
+                          </node>
+                        </node>
+                        <node concept="1xIGOp" id="2fLVrqR9lMi" role="1xVPHs" />
+                      </node>
+                    </node>
+                    <node concept="2Rf3mk" id="2fLVrqR9lMj" role="2OqNvi">
+                      <node concept="1xMEDy" id="2fLVrqR9lMk" role="1xVPHs">
+                        <node concept="chp4Y" id="2fLVrqR9me$" role="ri$Ld">
+                          <ref role="cht4Q" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1aUR6E" id="2fLVrqRgaFZ" role="2OqNvi">
+                    <node concept="1bVj0M" id="2fLVrqRgaG1" role="23t8la">
+                      <node concept="3clFbS" id="2fLVrqRgaG2" role="1bW5cS">
+                        <node concept="3clFbF" id="2fLVrqRgaG3" role="3cqZAp">
+                          <node concept="2OqwBi" id="2fLVrqRgaG4" role="3clFbG">
+                            <node concept="2OqwBi" id="2fLVrqRgaG5" role="2Oq$k0">
+                              <node concept="37vLTw" id="2fLVrqRgaG6" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2fLVrqRgaGa" resolve="it" />
+                              </node>
+                              <node concept="3TrEf2" id="2fLVrqRgaG7" role="2OqNvi">
+                                <ref role="3Tt5mk" to="iowz:6qiI2N4J0hS" />
+                              </node>
+                            </node>
+                            <node concept="1mIQ4w" id="2fLVrqRgaG8" role="2OqNvi">
+                              <node concept="chp4Y" id="2fLVrqRgaG9" role="cj9EA">
+                                <ref role="cht4Q" to="iowz:3v6eDgzA3wg" resolve="Tuple" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Rh6nW" id="2fLVrqRgaGa" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="2fLVrqRgaGb" role="1tU5fm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2fLVrqR9lNn" role="3clFbw">
+            <node concept="2OqwBi" id="2fLVrqR9lNo" role="3uHU7w">
+              <node concept="35c_gC" id="2fLVrqR9lNp" role="2Oq$k0">
+                <ref role="35c_gD" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
+              </node>
+              <node concept="FGMqu" id="2fLVrqR9lNq" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="2fLVrqR9lNr" role="3uHU7B">
+              <ref role="3cqZAo" node="D$tkU20uyc" resolve="kind" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2fLVrqR9l$y" role="3cqZAp" />
         <node concept="3clFbJ" id="D$tkU20uzQ" role="3cqZAp">
           <node concept="3clFbS" id="D$tkU20uzR" role="3clFbx">
             <node concept="3cpWs8" id="3m26Pih5kRp" role="3cqZAp">
@@ -4984,8 +5055,8 @@
                     </node>
                     <node concept="2Rf3mk" id="3m26Pih5sh8" role="2OqNvi">
                       <node concept="1xMEDy" id="3m26Pih5sh9" role="1xVPHs">
-                        <node concept="chp4Y" id="6qiI2N52p6F" role="ri$Ld">
-                          <ref role="cht4Q" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
+                        <node concept="chp4Y" id="3VDmkwCwLAI" role="ri$Ld">
+                          <ref role="cht4Q" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
                         </node>
                       </node>
                     </node>
@@ -5013,10 +5084,10 @@
                   <node concept="3cpWsn" id="3m26Pih5JQW" role="3cpWs9">
                     <property role="TrG5h" value="value" />
                     <node concept="3Tqbb2" id="3m26Pih5JQS" role="1tU5fm">
-                      <ref role="ehGHo" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
+                      <ref role="ehGHo" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
                     </node>
                     <node concept="1PxgMI" id="3m26Pih5ZT3" role="33vP2m">
-                      <ref role="1PxNhF" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
+                      <ref role="1PxNhF" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
                       <node concept="2GrUjf" id="3m26Pih5K8s" role="1PxMeX">
                         <ref role="2Gs0qQ" node="3m26Pih5JL7" resolve="element" />
                       </node>
@@ -5111,8 +5182,8 @@
                     </node>
                     <node concept="2Rf3mk" id="3m26Pih5WOg" role="2OqNvi">
                       <node concept="1xMEDy" id="3m26Pih5WOh" role="1xVPHs">
-                        <node concept="chp4Y" id="6qiI2N4PdSg" role="ri$Ld">
-                          <ref role="cht4Q" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
+                        <node concept="chp4Y" id="3VDmkwCwNaZ" role="ri$Ld">
+                          <ref role="cht4Q" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
                         </node>
                       </node>
                     </node>
@@ -5124,21 +5195,12 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs6" id="6qiI2N55hlN" role="3cqZAp">
-              <node concept="37vLTw" id="6qiI2N55hn6" role="3cqZAk">
-                <ref role="3cqZAo" node="3m26Pih5kRq" resolve="scope" />
-              </node>
-            </node>
-            <node concept="3SKdUt" id="6qiI2N55gZs" role="3cqZAp">
-              <node concept="3SKWN0" id="6qiI2N55gZt" role="3SKWNk">
-                <node concept="3cpWs6" id="D$tkU20v3M" role="3SKWNf">
-                  <node concept="2YIFZM" id="3m26Pih5USk" role="3cqZAk">
-                    <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
-                    <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-                    <node concept="37vLTw" id="3m26Pih5V0F" role="37wK5m">
-                      <ref role="3cqZAo" node="3m26Pih5R16" resolve="newScope" />
-                    </node>
-                  </node>
+            <node concept="3cpWs6" id="D$tkU20v3M" role="3cqZAp">
+              <node concept="2YIFZM" id="3m26Pih5USk" role="3cqZAk">
+                <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+                <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                <node concept="37vLTw" id="3m26Pih5V0F" role="37wK5m">
+                  <ref role="3cqZAo" node="3m26Pih5R16" resolve="newScope" />
                 </node>
               </node>
             </node>
@@ -5146,7 +5208,7 @@
           <node concept="3clFbC" id="D$tkU20uAc" role="3clFbw">
             <node concept="2OqwBi" id="D$tkU20uCO" role="3uHU7w">
               <node concept="35c_gC" id="D$tkU20uAj" role="2Oq$k0">
-                <ref role="35c_gD" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
+                <ref role="35c_gD" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
               </node>
               <node concept="FGMqu" id="D$tkU21x$a" role="2OqNvi" />
             </node>

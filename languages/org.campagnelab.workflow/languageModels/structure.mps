@@ -236,7 +236,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCERFHl">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="StringChannel" />
     <property role="34LRSv" value="string channel" />
     <property role="R4oN_" value="this channel will contain strings" />
@@ -252,7 +252,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCERGEu">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="IntegerChannel" />
     <property role="34LRSv" value="integer channel" />
     <property role="R4oN_" value="this channel will contain integers" />
@@ -268,7 +268,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCERGEz">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="BooleanChannel" />
     <property role="34LRSv" value="boolean channel" />
     <property role="R4oN_" value="this channel will contain booleans" />
@@ -284,7 +284,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCERGEA">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="FileChannel" />
     <property role="34LRSv" value="file channel" />
     <property role="R4oN_" value="this channel will contain files" />
@@ -300,7 +300,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCESMFi">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="ProcessInputOutput" />
@@ -419,7 +419,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3v6eDgz_YY9">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="ListChannel" />
     <property role="34LRSv" value="list channel" />
     <property role="R4oN_" value="this channel contains lists" />
@@ -435,7 +435,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3v6eDgzA3ze">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="TupleChannel" />
     <property role="34LRSv" value="tuple channel" />
     <property role="R4oN_" value="this channel will contain tuples" />
@@ -1028,14 +1028,14 @@
     <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
   </node>
   <node concept="1TIwiD" id="5ok1XDk_tCa">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="NonListNonFileChannel" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
   </node>
   <node concept="1TIwiD" id="5ok1XDm1KPg">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="FileListChannel" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     <node concept="1TJgyj" id="5ok1XDm1QXV" role="1TKVEi">
@@ -1450,7 +1450,7 @@
     <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
   </node>
   <node concept="1TIwiD" id="2fLVrqPJSZI">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="ProcessInput" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     <node concept="1TJgyi" id="2fLVrqPJUQP" role="1TKVEl">
@@ -1459,10 +1459,16 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2fLVrqQ2DkW">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="ProcessOutput" />
     <property role="R4oN_" value="Output of a Process" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+    <node concept="1TJgyj" id="2fLVrqQF2Pv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2fLVrqQF3tr" resolve="OutputExpression" />
+    </node>
     <node concept="1TJgyi" id="2fLVrqQ2EIf" role="1TKVEl">
       <property role="TrG5h" value="fromStandardOutput" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -1492,6 +1498,39 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="literal" />
       <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2fLVrqQF3tr">
+    <property role="3GE5qa" value="processIO" />
+    <property role="TrG5h" value="OutputExpression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2fLVrqQF3uo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2fLVrqQZ5d5">
+    <property role="3GE5qa" value="processIO" />
+    <property role="TrG5h" value="InputValue" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="2fLVrqQZ5t6" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="input" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2fLVrqPJSZI" resolve="ProcessInput" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2fLVrqRhKBd">
+    <property role="3GE5qa" value="processIO" />
+    <property role="TrG5h" value="InputFromBaseLanguageScript" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="2fLVrqRhKBe" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
     </node>
   </node>
 </model>

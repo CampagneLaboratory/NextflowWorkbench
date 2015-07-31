@@ -50,10 +50,10 @@
     <import index="go48" ref="r:fc6b4266-fe93-4e02-bc36-aebff4c903c3(jetbrains.mps.baseLanguage.execution.api)" />
     <import index="jgti" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.execution(MPS.IDEA/com.intellij.execution@java_stub)" />
     <import index="yla8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.application(MPS.IDEA/com.intellij.openapi.application@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" implicit="true" />
-    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
+    <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1412,27 +1412,6 @@
             <node concept="2OqwBi" id="5gyVhZ17Jmi" role="2Oq$k0">
               <node concept="RBKsg" id="5gyVhZ17Jmj" role="2Oq$k0" />
               <node concept="yHkDZ" id="5gyVhZ17Jmk" role="2OqNvi">
-                <ref role="yHkDY" node="6efZaUfTws1" resolve="myNode" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="yYvg6" id="1t7sLRHnoDZ" role="yYvgT">
-      <ref role="yYvg7" node="5$YFgXYV4JA" resolve="GenerateThenMake2" />
-      <node concept="2ShNRf" id="1t7sLRHuZas" role="1ZwhtC">
-        <node concept="Tc6Ow" id="1t7sLRHuZat" role="2ShVmc">
-          <node concept="3uibUv" id="1t7sLRHuZau" role="HW$YZ">
-            <ref role="3uigEE" to="ec5l:~SNodeReference" resolve="SNodeReference" />
-          </node>
-          <node concept="2OqwBi" id="1t7sLRHuZav" role="HW$Y0">
-            <node concept="2XshWL" id="1t7sLRHuZaw" role="2OqNvi">
-              <ref role="2WH_rO" to="awpe:7byHRlLCxOy" resolve="getNodePointer" />
-            </node>
-            <node concept="2OqwBi" id="1t7sLRHuZax" role="2Oq$k0">
-              <node concept="RBKsg" id="1t7sLRHuZay" role="2Oq$k0" />
-              <node concept="yHkDZ" id="1t7sLRHuZaz" role="2OqNvi">
                 <ref role="yHkDY" node="6efZaUfTws1" resolve="myNode" />
               </node>
             </node>

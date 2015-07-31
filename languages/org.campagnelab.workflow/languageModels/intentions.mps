@@ -46,7 +46,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1001,7 +1001,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="2fLVrqPKakU">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="ToggleStandardInput" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
@@ -1050,7 +1050,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="2fLVrqQljft">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="ToggleStandardOutput" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
