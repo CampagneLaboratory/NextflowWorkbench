@@ -789,6 +789,23 @@
       <unit id="4533252666382818192" at="11,0,16,0" name="org.campagnelab.workflow.textGen.InputValue_TextGen" />
     </file>
   </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/4900271829463226840">
+    <file name="HiddenTypeVarDeclaration_TextGen.java">
+      <node id="4900271829463239863" at="12,42,13,329" concept="1" />
+      <node id="4900271829463239863" at="13,329,14,21" concept="1" />
+      <node id="4900271829463239863" at="14,21,15,336" concept="0" />
+      <node id="4900271829463239863" at="14,21,15,336" concept="1" />
+      <node id="4900271829463239863" at="12,42,15,336" concept="0" />
+      <node id="4900271829463226840" at="12,0,17,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="4900271829463239863" at="14,21,15,336" />
+      <scope id="4900271829463226840" at="12,42,15,336" />
+      <scope id="4900271829463239863" at="12,42,15,336" />
+      <scope id="4900271829463226840" at="12,0,17,0">
+        <var name="node" id="4900271829463226840" />
+      </scope>
+      <unit id="4900271829463226840" at="11,0,18,0" name="org.campagnelab.workflow.textGen.HiddenTypeVarDeclaration_TextGen" />
+    </file>
+  </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6202591221152351589">
     <file name="ProcessInputOutput_TextGen.java">
       <node id="2520781328424155217" at="16,599,17,181" concept="0" />

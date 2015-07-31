@@ -4392,5 +4392,36 @@
       <ref role="1YaFvo" to="iowz:2fLVrqRhKBd" resolve="InputFromBaseLanguageScript" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4g1gOgyhkdv">
+    <property role="TrG5h" value="typeof_HiddenTypeVarDeclaration" />
+    <property role="3GE5qa" value="processIO" />
+    <node concept="3clFbS" id="4g1gOgyhkdw" role="18ibNy">
+      <node concept="1Z5TYs" id="4g1gOgyhkIr" role="3cqZAp">
+        <node concept="mw_s8" id="4g1gOgyhkIR" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4g1gOgyhkIN" role="mwGJk">
+            <node concept="2OqwBi" id="4g1gOgyhkPq" role="1Z2MuG">
+              <node concept="1YBJjd" id="4g1gOgyhkJb" role="2Oq$k0">
+                <ref role="1YBMHb" node="4g1gOgyhkdy" resolve="hiddenTypeVarDeclaration" />
+              </node>
+              <node concept="3TrEf2" id="4g1gOgyhlOw" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:4g1gOgy0_Bl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4g1gOgyhkIu" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4g1gOgyhkFn" role="mwGJk">
+            <node concept="1YBJjd" id="4g1gOgyhkFQ" role="1Z2MuG">
+              <ref role="1YBMHb" node="4g1gOgyhkdy" resolve="hiddenTypeVarDeclaration" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4g1gOgyhkdy" role="1YuTPh">
+      <property role="TrG5h" value="hiddenTypeVarDeclaration" />
+      <ref role="1YaFvo" to="iowz:4g1gOgy0q_n" resolve="HiddenTypeVarDeclaration" />
+    </node>
+  </node>
 </model>
 

@@ -256,6 +256,7 @@
     <classNode dependClassName="org.campagnelab.workflow.editor.File_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.GlobalChannel_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.GroupTuple_Editor" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.HiddenTypeVarDeclaration_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.InputChannel_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.InputFromBaseLanguageScript_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.InputValue_Editor" />
@@ -464,6 +465,19 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.editor.GroupTuple_Editor" file="GroupTuple_Editor.java">
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.editor.HiddenTypeVarDeclaration_Editor" file="HiddenTypeVarDeclaration_Editor.java">
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />

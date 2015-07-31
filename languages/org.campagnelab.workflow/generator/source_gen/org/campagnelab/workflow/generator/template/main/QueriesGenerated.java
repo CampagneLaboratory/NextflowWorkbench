@@ -4,25 +4,55 @@ package org.campagnelab.workflow.generator.template.main;
 
 import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.template.BaseMappingRuleContext;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ISelector;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.generator.template.ReferenceMacroContext;
 import jetbrains.mps.typesystem.inference.TypeChecker;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.ITranslator2;
 
 @Generated
 public class QueriesGenerated {
   public final boolean NEEDS_OPCONTEXT = false;
+  public static boolean baseMappingRule_Condition_4900271829464885558(final BaseMappingRuleContext _context) {
+    // wrap only variable declarations in a Process, that are referenced from the expressions in the Process  
+    // output 
+    SNode process = SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x677d1579f929d8b1L, "org.campagnelab.workflow.structure.Process"), false, false);
+    return (process != null) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x440143442201a957L, "org.campagnelab.workflow.structure.HiddenTypeVarDeclaration"))) && ListSequence.fromList(SLinkOperations.getChildren(process, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x677d1579f929d8b1L, 0x677d1579f92a34b0L, "outputs"))).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b60a953cL, 0x23f1edb6b6ac2d5fL, "expression")) != null);
+      }
+    }).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b60a953cL, 0x23f1edb6b6ac2d5fL, "expression"));
+      }
+    }).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")) != null);
+      }
+    }).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression"));
+      }
+    }).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode e) {
+        return ListSequence.fromList(SNodeOperations.getNodeDescendants(e, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b74709cdL, "org.campagnelab.workflow.structure.InputFromBaseLanguageScript"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return eq_x583g4_a0a0a0a0a0a0a0a0a0a0d0b(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b74709cdL, 0x23f1edb6b74709ceL, "var")), _context.getNode());
+          }
+        }).isNotEmpty();
+      }
+    });
+  }
   public static boolean baseMappingRule_Condition_6588488528875770526(final BaseMappingRuleContext _context) {
     return ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, 0x5b6f0368e19f7320L, "reports"))).isNotEmpty() || ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, 0x5a479937fe29326dL, "processes"))).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode p) {
@@ -37,6 +67,9 @@ public class QueriesGenerated {
         }) != null;
       }
     });
+  }
+  public static Object propertyMacro_GetPropertyValue_4900271829469085915(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
   public static Object propertyMacro_GetPropertyValue_6588488528877583532(final PropertyMacroContext _context) {
     return "reportAbout_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5b6f0368e1a01702L, 0x5b6f0368e1a01714L, "channel")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
@@ -63,6 +96,15 @@ public class QueriesGenerated {
   }
   public static Object referenceMacro_GetReferent_8584871179158628605(final ReferenceMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6fc5345L, 0x23f1edb6b6fc5746L, "input")), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae32ad2L, 0x6692b82cc4bc0478L, "type")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+  }
+  public static SNode sourceNodeQuery_4900271829466337049(final SourceSubstituteMacroNodeContext _context) {
+    return _context.getNode();
+  }
+  public static SNode sourceNodeQuery_4900271829469084864(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x450368d90ce15bc3L, 0x4ed4d318133c80ceL, "type"));
+  }
+  public static SNode sourceNodeQuery_4900271829469087454(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37a7f6eL, 0xf8c37f506eL, "initializer"));
   }
   public static SNode sourceNodeQuery_4533252666381299731(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression"));
@@ -113,5 +155,8 @@ public class QueriesGenerated {
   }
   public static Iterable<SNode> sourceNodesQuery_8584871179160222277(final SourceSubstituteMacroNodesContext _context) {
     return SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6fc5345L, "org.campagnelab.workflow.structure.InputValue"), false, new SAbstractConcept[]{});
+  }
+  private static boolean eq_x583g4_a0a0a0a0a0a0a0a0a0a0d0b(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
   }
 }
