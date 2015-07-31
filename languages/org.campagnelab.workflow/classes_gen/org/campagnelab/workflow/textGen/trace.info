@@ -791,19 +791,36 @@
   </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/4900271829463226840">
     <file name="HiddenTypeVarDeclaration_TextGen.java">
-      <node id="4900271829463239863" at="12,42,13,329" concept="1" />
-      <node id="4900271829463239863" at="13,329,14,21" concept="1" />
-      <node id="4900271829463239863" at="14,21,15,336" concept="0" />
-      <node id="4900271829463239863" at="14,21,15,336" concept="1" />
-      <node id="4900271829463239863" at="12,42,15,336" concept="0" />
+      <node id="4900271829463239863" at="12,42,13,167" concept="1" />
+      <node id="4900271829463239863" at="13,167,14,21" concept="1" />
+      <node id="4900271829463239863" at="14,21,15,174" concept="0" />
+      <node id="4900271829463239863" at="14,21,15,174" concept="1" />
+      <node id="4900271829463239863" at="12,42,15,174" concept="0" />
       <node id="4900271829463226840" at="12,0,17,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="4900271829463239863" at="14,21,15,336" />
-      <scope id="4900271829463226840" at="12,42,15,336" />
-      <scope id="4900271829463239863" at="12,42,15,336" />
+      <scope id="4900271829463239863" at="14,21,15,174" />
+      <scope id="4900271829463226840" at="12,42,15,174" />
+      <scope id="4900271829463239863" at="12,42,15,174" />
       <scope id="4900271829463226840" at="12,0,17,0">
         <var name="node" id="4900271829463226840" />
       </scope>
       <unit id="4900271829463226840" at="11,0,18,0" name="org.campagnelab.workflow.textGen.HiddenTypeVarDeclaration_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/4900271829469558059">
+    <file name="LocalVariableDeclaration_TextGen.java">
+      <node id="4900271829469559152" at="12,42,13,167" concept="1" />
+      <node id="4900271829469559152" at="13,167,14,21" concept="1" />
+      <node id="4900271829469559152" at="14,21,15,174" concept="0" />
+      <node id="4900271829469559152" at="14,21,15,174" concept="1" />
+      <node id="4900271829469559152" at="12,42,15,174" concept="0" />
+      <node id="4900271829469558059" at="12,0,17,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="4900271829469559152" at="14,21,15,174" />
+      <scope id="4900271829469558059" at="12,42,15,174" />
+      <scope id="4900271829469559152" at="12,42,15,174" />
+      <scope id="4900271829469558059" at="12,0,17,0">
+        <var name="node" id="4900271829469558059" />
+      </scope>
+      <unit id="4900271829469558059" at="11,0,18,0" name="org.campagnelab.workflow.textGen.LocalVariableDeclaration_TextGen" />
     </file>
   </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6202591221152351589">
@@ -941,7 +958,7 @@
     </file>
   </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/8163238436339392313">
-    <file name="BaseLanguageAdapter_TextGen.java">
+    <file name="BaseLanguageScriptAdapter_TextGen.java">
       <node id="8163238436339392313" at="19,44,20,61" concept="1" />
       <node id="8163238436339397849" at="22,222,23,28" concept="0" />
       <node id="8163238436339397849" at="22,222,23,28" concept="0" />
@@ -979,7 +996,7 @@
       <scope id="8163238436339392313" at="18,0,39,0">
         <var name="node" id="8163238436339392313" />
       </scope>
-      <unit id="8163238436339392313" at="17,0,41,0" name="org.campagnelab.workflow.textGen.BaseLanguageAdapter_TextGen" />
+      <unit id="8163238436339392313" at="17,0,41,0" name="org.campagnelab.workflow.textGen.BaseLanguageScriptAdapter_TextGen" />
     </file>
   </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/8163238436339401923">

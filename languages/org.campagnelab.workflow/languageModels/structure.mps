@@ -822,15 +822,15 @@
   </node>
   <node concept="1TIwiD" id="YNIIGPa1iv">
     <property role="3GE5qa" value="scripts.conditionalScript" />
-    <property role="TrG5h" value="BaseLanguageAdapter" />
+    <property role="TrG5h" value="BaseLanguageScriptAdapter" />
     <property role="34LRSv" value="base language script" />
-    <property role="R4oN_" value="a script that contains base language, such as for the use of conditional statements" />
+    <property role="R4oN_" value="Script with conditional statements and BASH" />
     <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
     <node concept="1TJgyj" id="59canFOdI$K" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="statements" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
     </node>
   </node>
   <node concept="1TIwiD" id="59canFN3Dy7">
@@ -1530,19 +1530,15 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
+      <ref role="20lvS9" node="4g1gOgy0q_n" resolve="HiddenTypeVarDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="4g1gOgy0q_n">
     <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="HiddenTypeVarDeclaration" />
+    <property role="34LRSv" value="val" />
+    <property role="R4oN_" value="Declare a variable visible in Pocess output expressions " />
     <ref role="1TJDcQ" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
-    <node concept="1TJgyj" id="4g1gOgy0_Bl" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="original" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
-    </node>
   </node>
 </model>
 
