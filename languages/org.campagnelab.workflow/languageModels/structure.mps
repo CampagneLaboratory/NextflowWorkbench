@@ -21,8 +21,8 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -1645,16 +1645,10 @@
     <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgpKP">
-    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
+    <property role="3GE5qa" value="channelFunctions.literalFunctions" />
     <property role="TrG5h" value="Spread" />
     <property role="34LRSv" value="spread" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
-    <node concept="1TJgyj" id="6TmjYLGgpKQ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="list" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3v6eDgz_YY5" resolve="List" />
-    </node>
+    <ref role="1TJDcQ" node="1qs9CHFOmDX" resolve="LiteralFunction" />
   </node>
 </model>
 
