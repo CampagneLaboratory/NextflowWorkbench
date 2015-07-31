@@ -9,6 +9,7 @@
   </languages>
   <imports>
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" />
+    <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
@@ -54,6 +55,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -158,12 +160,16 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1166648550386" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewRootNodeOperation" flags="nn" index="2xF2bX" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143235216708" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewNodeOperation" flags="nn" index="I8ghe">
         <reference id="1143235391024" name="concept" index="I8UWU" />
       </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
+        <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
@@ -225,6 +231,7 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
   <node concept="3UOs0u" id="3pXFEHVNiuC">
@@ -977,6 +984,41 @@
                   </node>
                   <node concept="ub8z3" id="3CeKZWRVwhU" role="3uHU7B" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="37WguZ" id="dhtvqDDenq">
+    <node concept="37WvkG" id="dhtvqDDenr" role="37WGs$">
+      <ref role="37XkoT" to="iowz:5D7AjvYabas" resolve="Workflow" />
+      <node concept="37Y9Zx" id="dhtvqDDetu" role="37ZfLb">
+        <node concept="3clFbS" id="dhtvqDDetv" role="2VODD2">
+          <node concept="3clFbJ" id="dhtvqDDetA" role="3cqZAp">
+            <node concept="3clFbS" id="dhtvqDDetB" role="3clFbx">
+              <node concept="3clFbF" id="dhtvqDDltD" role="3cqZAp">
+                <node concept="2OqwBi" id="dhtvqDDlub" role="3clFbG">
+                  <node concept="1Q6Npb" id="dhtvqDDltC" role="2Oq$k0" />
+                  <node concept="2xF2bX" id="dhtvqDDly8" role="2OqNvi">
+                    <ref role="I8UWU" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="dhtvqDDlrr" role="3clFbw">
+              <node concept="3cmrfG" id="dhtvqDDlt6" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="2OqwBi" id="dhtvqDDfFn" role="3uHU7B">
+                <node concept="2OqwBi" id="dhtvqDDeQe" role="2Oq$k0">
+                  <node concept="1Q6Npb" id="dhtvqDDetS" role="2Oq$k0" />
+                  <node concept="1j9C0f" id="dhtvqDDeUf" role="2OqNvi">
+                    <ref role="1j9C0d" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="dhtvqDDjj4" role="2OqNvi" />
               </node>
             </node>
           </node>
