@@ -54,7 +54,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -150,6 +150,12 @@
       </concept>
       <concept id="3653684473245060014" name="org.campagnelab.workflow.structure.NewFileLiteral" flags="ng" index="2J_rk5">
         <property id="3653684473245060018" name="path" index="2J_rkp" />
+      </concept>
+      <concept id="3653684473245056444" name="org.campagnelab.workflow.structure.NewTupleLiteral" flags="ng" index="2J_scn">
+        <child id="3653684473245056466" name="elementType" index="2J_sdT" />
+      </concept>
+      <concept id="3653684473245054612" name="org.campagnelab.workflow.structure.NewIntegerLiteral" flags="ng" index="2J_swZ">
+        <property id="3653684473245054659" name="value" index="2J_sxC" />
       </concept>
       <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
         <child id="3653684473245054701" name="elementType" index="2J_sx6" />
@@ -531,6 +537,23 @@
         </node>
       </node>
     </node>
+    <node concept="1CVceo" id="94Z48YjNyj" role="2$L6iY">
+      <property role="TrG5h" value="tupleCh" />
+      <node concept="2J_sx7" id="94Z48YjNyk" role="2$L62I">
+        <node concept="2J_scn" id="94Z48YjNzg" role="2J_sx6">
+          <node concept="2J_swZ" id="94Z48YjN$6" role="2J_sdT">
+            <property role="2J_sxC" value="3" />
+          </node>
+          <node concept="2J_rk5" id="94Z48YjNB6" role="2J_sdT">
+            <property role="2J_rkp" value="path" />
+          </node>
+        </node>
+        <node concept="2J_scn" id="94Z48YjNDI" role="2J_sx6">
+          <node concept="2J_swZ" id="94Z48YjNDJ" role="2J_sdT" />
+          <node concept="2J_rk5" id="94Z48YjNDK" role="2J_sdT" />
+        </node>
+      </node>
+    </node>
     <node concept="2UNLhE" id="5UkDK45ik_c" role="2UW718">
       <ref role="2UNLhW" node="5FDPSDjYurf" resolve="out3" />
       <node concept="2UPiyC" id="5UkDK45ik_d" role="2UNLhY">
@@ -541,7 +564,7 @@
       <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
       <node concept="1uYdA0" id="1qs9CHFyR5m" role="1uLvPH">
         <ref role="1uK_4X" node="3TB2PodQAEn" resolve="strListCh" />
-        <node concept="1yaZXp" id="1qs9CHFyRrY" role="1ylr64" />
+        <node concept="1yaZXp" id="5cB7qe0gzy7" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="6zpIx1pCOOn" role="1uLvPA">
         <property role="TrG5h" value="filesWithText" />

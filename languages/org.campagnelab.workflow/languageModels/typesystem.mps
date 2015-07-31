@@ -80,7 +80,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -542,7 +542,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="6YYJWE2EUeY">
-    <property role="TrG5h" value="check_OutChannels" />
+    <property role="TrG5h" value="check_OutChannelContainer" />
     <node concept="3clFbS" id="6YYJWE2EUeZ" role="18ibNy">
       <node concept="3clFbJ" id="6YYJWE2F3YV" role="3cqZAp">
         <node concept="3clFbS" id="6YYJWE2F3YW" role="3clFbx">

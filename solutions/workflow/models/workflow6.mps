@@ -76,6 +76,10 @@
       <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.StringLiteral" flags="ng" index="2$RDGe">
         <property id="3855674281012527195" name="value" index="2$RDGf" />
       </concept>
+      <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
+        <child id="3653684473245054701" name="elementType" index="2J_sx6" />
+      </concept>
+      <concept id="3653684473245054679" name="org.campagnelab.workflow.structure.NewBooleanLiteral" flags="ng" index="2J_sxW" />
       <concept id="6588488528863172354" name="org.campagnelab.workflow.structure.Report" flags="ng" index="2UNLhE">
         <reference id="6588488528863172372" name="channel" index="2UNLhW" />
         <child id="6588488528863172374" name="function" index="2UNLhY" />
@@ -1851,6 +1855,17 @@
         <node concept="2$RDGe" id="4vJs_UWLQKK" role="2$RAuK">
           <property role="2$RDGf" value="ENSG00000089199" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2$rMIF" id="6TmjYLGe$$6">
+    <property role="TrG5h" value="dd" />
+    <node concept="2$rEH5" id="6TmjYLGe$$7" role="2$rEHq" />
+    <node concept="1CVceo" id="6TmjYLGe$$8" role="2$L6iY">
+      <property role="TrG5h" value="ddd" />
+      <node concept="2J_sx7" id="6TmjYLGe$$9" role="2$L62I">
+        <node concept="2J_sxW" id="6TmjYLGe$$G" role="2J_sx6" />
+        <node concept="2J_sxW" id="6TmjYLGe$_8" role="2J_sx6" />
       </node>
     </node>
   </node>
