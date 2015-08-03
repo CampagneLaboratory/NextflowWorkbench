@@ -2462,58 +2462,65 @@
       <node id="7391172440884945608" at="34,148,35,74" concept="6" />
       <node id="7391172440884946662" at="35,74,36,368" concept="2" />
       <node id="7391172440884992748" at="38,40,39,88" concept="7" />
-      <node id="3739363868000457916" at="42,7,43,60" concept="6" />
-      <node id="3739363868000457916" at="43,60,44,1074" concept="6" />
-      <node id="7391172440884945898" at="46,5,47,0" concept="9" />
-      <node id="5642782690536827842" at="49,46,50,61" concept="7" />
-      <node id="5642782690536827842" at="53,5,54,130" concept="6" />
-      <node id="5642782690536827842" at="54,130,55,45" concept="7" />
-      <node id="5642782690536827842" at="58,30,59,17" concept="7" />
+      <node id="976376310261665343" at="42,7,43,77" concept="6" />
+      <node id="3739363868000457916" at="45,11,46,64" concept="6" />
+      <node id="3739363868000457916" at="46,64,47,861" concept="6" />
+      <node id="7391172440884945898" at="51,5,52,0" concept="9" />
+      <node id="5642782690536827842" at="54,46,55,61" concept="7" />
+      <node id="5642782690536827842" at="58,5,59,130" concept="6" />
+      <node id="5642782690536827842" at="59,130,60,45" concept="7" />
+      <node id="5642782690536827842" at="63,30,64,17" concept="7" />
       <node id="5642782690536827842" at="29,0,31,0" concept="1" trace="check_InputChannel_NonTypesystemRule#()V" />
       <node id="7391172440884991980" at="38,0,41,0" concept="5" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5642782690536827842" at="49,0,52,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
-      <node id="5642782690536827842" at="58,0,61,0" concept="5" trace="overrides#()Z" />
-      <node id="3739363868000457916" at="41,10,45,7" concept="0" />
-      <node id="5642782690536827842" at="52,68,56,5" concept="0" />
+      <node id="5642782690536827842" at="54,0,57,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="5642782690536827842" at="63,0,66,0" concept="5" trace="overrides#()Z" />
+      <node id="3739363868000457916" at="44,199,48,11" concept="0" />
+      <node id="5642782690536827842" at="57,68,61,5" concept="0" />
       <node id="2029968904561807100" at="36,368,41,10" concept="2" />
-      <node id="5642782690536827842" at="52,0,58,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="6202591221105871450" at="33,102,46,5" concept="4" />
-      <node id="5642782690536827842" at="31,0,49,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <node id="976376310261665343" at="43,77,49,9" concept="4" />
+      <node id="5642782690536827842" at="57,0,63,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="976376310261665343" at="41,10,50,7" concept="0" />
+      <node id="6202591221105871450" at="33,102,51,5" concept="4" />
+      <node id="5642782690536827842" at="31,0,54,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="5642782690536827842" at="29,49,29,49" />
       <scope id="7391172440884991981" at="38,40,39,88" />
-      <scope id="5642782690536827842" at="49,46,50,61" />
-      <scope id="5642782690536827842" at="58,30,59,17" />
+      <scope id="5642782690536827842" at="54,46,55,61" />
+      <scope id="5642782690536827842" at="63,30,64,17" />
       <scope id="5642782690536827842" at="29,0,31,0" />
-      <scope id="3739363868000457916" at="42,7,44,1074">
+      <scope id="3739363868000457916" at="45,11,47,861">
         <var name="_reporter_2309309498" id="3739363868000457916" />
         <var name="errorTarget" id="3739363868000457916" />
       </scope>
-      <scope id="5642782690536827842" at="53,5,55,45">
+      <scope id="5642782690536827842" at="58,5,60,45">
         <var name="b" id="5642782690536827842" />
       </scope>
       <scope id="7391172440884991980" at="38,0,41,0">
         <var name="it" id="7391172440884991980" />
       </scope>
-      <scope id="5642782690536827842" at="49,0,52,0" />
-      <scope id="5642782690536827842" at="58,0,61,0" />
-      <scope id="5642782690536827842" at="52,68,56,5" />
-      <scope id="5642782690536827842" at="52,0,58,0">
+      <scope id="5642782690536827842" at="54,0,57,0" />
+      <scope id="5642782690536827842" at="63,0,66,0" />
+      <scope id="976376310261665350" at="44,199,48,11" />
+      <scope id="5642782690536827842" at="57,68,61,5" />
+      <scope id="5642782690536827842" at="57,0,63,0">
         <var name="argument" id="5642782690536827842" />
       </scope>
-      <scope id="6202591221105871452" at="34,148,45,7">
+      <scope id="976376310261665343" at="42,7,49,9">
+        <var name="list" id="976376310261665343" />
+      </scope>
+      <scope id="6202591221105871452" at="34,148,50,7">
         <var name="names" id="7391172440884945614" />
       </scope>
-      <scope id="5642782690536827843" at="31,125,47,0">
+      <scope id="5642782690536827843" at="31,125,52,0">
         <var name="process" id="7391172440880174137" />
         <var name="processInput" id="5642782690536852050" />
       </scope>
-      <scope id="5642782690536827842" at="31,0,49,0">
+      <scope id="5642782690536827842" at="31,0,54,0">
         <var name="inputChannel" id="5642782690536827842" />
         <var name="status" id="5642782690536827842" />
         <var name="typeCheckingContext" id="5642782690536827842" />
       </scope>
       <unit id="7391172440884991980" at="37,259,41,7" name="org.campagnelab.workflow.typesystem.check_InputChannel_NonTypesystemRule$1" />
-      <unit id="5642782690536827842" at="28,0,62,0" name="org.campagnelab.workflow.typesystem.check_InputChannel_NonTypesystemRule" />
+      <unit id="5642782690536827842" at="28,0,67,0" name="org.campagnelab.workflow.typesystem.check_InputChannel_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/571300755990936038">

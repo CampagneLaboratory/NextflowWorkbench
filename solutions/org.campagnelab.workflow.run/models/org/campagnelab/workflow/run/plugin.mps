@@ -1420,6 +1420,27 @@
         </node>
       </node>
     </node>
+    <node concept="yYvg6" id="1t7sLRHnoDZ" role="yYvgT">
+      <ref role="yYvg7" node="5$YFgXYV4JA" resolve="GenerateThenMake2" />
+      <node concept="2ShNRf" id="1t7sLRHuZas" role="1ZwhtC">
+        <node concept="Tc6Ow" id="1t7sLRHuZat" role="2ShVmc">
+          <node concept="3uibUv" id="1t7sLRHuZau" role="HW$YZ">
+            <ref role="3uigEE" to="ec5l:~SNodeReference" resolve="SNodeReference" />
+          </node>
+          <node concept="2OqwBi" id="1t7sLRHuZav" role="HW$Y0">
+            <node concept="2XshWL" id="1t7sLRHuZaw" role="2OqNvi">
+              <ref role="2WH_rO" to="awpe:7byHRlLCxOy" resolve="getNodePointer" />
+            </node>
+            <node concept="2OqwBi" id="1t7sLRHuZax" role="2Oq$k0">
+              <node concept="RBKsg" id="1t7sLRHuZay" role="2Oq$k0" />
+              <node concept="yHkDZ" id="dhtvqExL7b" role="2OqNvi">
+                <ref role="yHkDY" node="6efZaUfTws1" resolve="myNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3CCWSg" id="5gyVhZ17Jml" role="35uJNn">
       <node concept="3clFbS" id="5gyVhZ17Jmm" role="2VODD2">
         <node concept="3cpWs8" id="1B2iUhlOB0G" role="3cqZAp">

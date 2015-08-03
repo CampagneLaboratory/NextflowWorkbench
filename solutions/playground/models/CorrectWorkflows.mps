@@ -126,6 +126,7 @@
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
         <property id="2590112629708729231" name="fromStandardOutput" index="2lYOoT" />
       </concept>
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -677,21 +678,21 @@
           <property role="19SUeA" value="echo " />
         </node>
         <node concept="3YE7tV" id="6zpIx1pCOJG" role="19SJt6">
-          <ref role="3YE7sm" node="6qiI2N5urdM" resolve="strInput" />
+          <ref role="3YE7sm" node="3rUult4B$5l" resolve="strInput" />
         </node>
         <node concept="19SUe$" id="6zpIx1pCOJH" role="19SJt6">
           <property role="19SUeA" value=" &gt; file.txt" />
         </node>
       </node>
     </node>
-    <node concept="1uLvKC" id="6qiI2N5urdM" role="2ulM7n">
-      <property role="TrG5h" value="strInput" />
-      <node concept="16pbKc" id="2fLVrqPYDsQ" role="2ybFLk" />
-    </node>
     <node concept="1uLvKC" id="6qiI2N5urgN" role="2ulM79">
       <property role="TrG5h" value="'file.txt'" />
       <property role="2lYOoT" value="false" />
       <node concept="16pRw0" id="2fLVrqQhloe" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="3rUult4B$5l" role="2ulM7n">
+      <property role="TrG5h" value="strInput" />
+      <node concept="16pbKc" id="3rUult4B$5t" role="2ybFLk" />
     </node>
   </node>
   <node concept="2$rMIF" id="6zpIx1pD2QL">

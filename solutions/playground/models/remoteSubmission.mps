@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="-1" />
     <use id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.files" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration" version="0" />
@@ -55,9 +54,6 @@
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -136,9 +132,10 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
-        <child id="2590112629714222385" name="expression" index="2lFT27" />
+      <concept id="748852418098455525" name="org.campagnelab.workflow.structure.NameInAChannelRef" flags="ng" index="2b_LqF">
+        <reference id="748852418098455526" name="value" index="2b_LqC" />
       </concept>
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
@@ -192,20 +189,23 @@
     <node concept="2lYRya" id="67XPjarXEap" role="2ulM79">
       <property role="TrG5h" value="fileWithEcho" />
       <node concept="16pRw0" id="2fLVrqQhloh" role="2ybFLk" />
-      <node concept="3clFbT" id="2fLVrqQt$lj" role="2lFT27">
-        <property role="3clFbU" value="true" />
-      </node>
     </node>
     <node concept="3Y$Zt1" id="3LlDVJUaZyJ" role="2ulM7a">
       <node concept="19SGf9" id="3LlDVJUaZyL" role="3Y$PkS">
         <node concept="19SUe$" id="3LlDVJUaZyM" role="19SJt6">
-          <property role="19SUeA" value="echo " />
+          <property role="19SUeA" value="echo  " />
         </node>
-        <node concept="3YE7tV" id="3LlDVJUaZzJ" role="19SJt6">
+        <node concept="3YE7tV" id="QcMhj40dgx" role="19SJt6">
           <ref role="3YE7sm" node="2bVBkcP9XXP" resolve="stringToEcho" />
         </node>
-        <node concept="19SUe$" id="3LlDVJUaZzK" role="19SJt6">
-          <property role="19SUeA" value=" &gt;&gt; fileWithEcho" />
+        <node concept="19SUe$" id="QcMhj40dgw" role="19SJt6">
+          <property role="19SUeA" value=" &gt;&gt;  " />
+        </node>
+        <node concept="2b_LqF" id="QcMhj4fU86" role="19SJt6">
+          <ref role="2b_LqC" node="67XPjarXEap" resolve="fileWithEcho" />
+        </node>
+        <node concept="19SUe$" id="QcMhj4fU87" role="19SJt6">
+          <property role="19SUeA" value=" " />
         </node>
       </node>
     </node>
