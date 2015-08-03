@@ -1495,9 +1495,7 @@
     <node concept="14StLt" id="4_Aq6F8akQl" role="V601i">
       <property role="TrG5h" value="Tuple" />
       <node concept="VechU" id="4_Aq6F8aotX" role="3F10Kt">
-        <node concept="1iSF2X" id="4_Aq6F8aou3" role="VblUZ">
-          <property role="1iTho6" value="b38b6d" />
-        </node>
+        <property role="Vb096" value="DARK_GREEN" />
       </node>
     </node>
     <node concept="14StLt" id="4_Aq6F8aouA" role="V601i">
