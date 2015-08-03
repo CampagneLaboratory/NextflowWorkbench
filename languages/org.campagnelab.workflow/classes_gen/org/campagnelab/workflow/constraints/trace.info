@@ -16,7 +16,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,140,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
+      <unit at="10,0,145,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/177205552212758053">
@@ -1124,6 +1124,40 @@
       <unit id="8369613327464641695" at="39,19,51,9" name="org.campagnelab.workflow.constraints.InputChannel_Constraints$2" />
       <unit id="8369613327464641695" at="31,128,53,5" name="org.campagnelab.workflow.constraints.InputChannel_Constraints$1" />
       <unit id="8369613327464641695" at="24,0,58,0" name="org.campagnelab.workflow.constraints.InputChannel_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/9054784760950122448">
+    <file name="OutChannelContainer_Constraints.java">
+      <node id="9054784760950122448" at="17,44,18,98" concept="12" />
+      <node id="9054784760950122448" at="21,88,22,123" concept="6" />
+      <node id="9054784760950122448" at="25,40,26,20" concept="7" />
+      <node id="9054784760950122448" at="29,70,30,37" concept="6" />
+      <node id="9054784760950122448" at="30,37,31,177" concept="0" />
+      <node id="9054784760950273338" at="30,37,31,177" concept="7" />
+      <node id="9054784760950122448" at="33,7,34,22" concept="7" />
+      <node id="9054784760950122448" at="17,0,20,0" concept="1" trace="OutChannelContainer_Constraints#()V" />
+      <node id="9054784760950122448" at="24,0,28,0" concept="5" trace="hasOwnValidator#()Z" />
+      <node id="9054784760950122448" at="28,0,33,0" concept="5" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="9054784760950122448" at="22,123,33,7" concept="2" />
+      <node id="9054784760950122448" at="20,0,36,0" concept="5" trace="getNotDefaultSProperties#()Ljava/util/Map;" />
+      <scope id="9054784760950122448" at="17,44,18,98" />
+      <scope id="9054784760950122448" at="25,40,26,20" />
+      <scope id="9054784760950149397" at="30,37,31,177" />
+      <scope id="9054784760950122448" at="29,70,31,177">
+        <var name="propertyName" id="9054784760950122448" />
+      </scope>
+      <scope id="9054784760950122448" at="17,0,20,0" />
+      <scope id="9054784760950122448" at="24,0,28,0" />
+      <scope id="9054784760950122448" at="28,0,33,0">
+        <var name="node" id="9054784760950122448" />
+        <var name="propertyValue" id="9054784760950122448" />
+      </scope>
+      <scope id="9054784760950122448" at="21,88,34,22">
+        <var name="properties" id="9054784760950122448" />
+      </scope>
+      <scope id="9054784760950122448" at="20,0,36,0" />
+      <unit id="9054784760950122448" at="23,119,33,5" name="org.campagnelab.workflow.constraints.OutChannelContainer_Constraints$1" />
+      <unit id="9054784760950122448" at="16,0,37,0" name="org.campagnelab.workflow.constraints.OutChannelContainer_Constraints" />
     </file>
   </root>
 </debug-info>
