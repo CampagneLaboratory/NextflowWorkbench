@@ -3906,7 +3906,7 @@
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/8052084060281611198">
-    <file name="check_OutChannels_NonTypesystemRule.java">
+    <file name="check_OutChannelContainer_NonTypesystemRule.java">
       <node id="6344724376810798305" at="25,32,26,240" concept="6" />
       <node id="6344724376810803558" at="27,34,28,15" concept="7" />
       <node id="6344724376810805249" at="29,7,30,0" concept="9" />
@@ -3931,11 +3931,11 @@
       <node id="8052084060281611198" at="70,130,71,45" concept="7" />
       <node id="8052084060281611198" at="74,30,75,17" concept="7" />
       <node id="8052084060281651187" at="77,73,78,46" concept="7" />
-      <node id="8052084060281611198" at="22,0,24,0" concept="1" trace="check_OutChannels_NonTypesystemRule#()V" />
+      <node id="8052084060281611198" at="22,0,24,0" concept="1" trace="check_OutChannelContainer_NonTypesystemRule#()V" />
       <node id="6344724376810802713" at="26,240,29,7" concept="4" />
       <node id="8052084060281611198" at="65,0,68,0" concept="5" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
       <node id="8052084060281611198" at="74,0,77,0" concept="5" trace="overrides#()Z" />
-      <node id="8052084060281651187" at="77,0,80,0" concept="11" trace="eq_5zs09p_a0a0a1a0a3a9a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="8052084060281651187" at="77,0,80,0" concept="11" trace="eq_5n8nf8_a0a0a1a0a3a9a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
       <node id="6344724376813468616" at="35,183,39,7" concept="0" />
       <node id="8052084060281651183" at="48,383,52,17" concept="0" />
       <node id="6202591221112308913" at="52,17,56,17" concept="0" />
@@ -3948,7 +3948,7 @@
       <node id="8052084060281651152" at="39,7,62,7" concept="4" />
       <node id="8052084060281651131" at="24,124,63,5" concept="4" />
       <node id="8052084060281611198" at="24,0,65,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="8052084060281611198" at="22,48,22,48" />
+      <scope id="8052084060281611198" at="22,56,22,56" />
       <scope id="6344724376810802715" at="27,34,28,15" />
       <scope id="8052084060281611198" at="65,46,66,68" />
       <scope id="8052084060281611198" at="74,30,75,17" />
@@ -4003,7 +4003,7 @@
         <var name="status" id="8052084060281611198" />
         <var name="typeCheckingContext" id="8052084060281611198" />
       </scope>
-      <unit id="8052084060281611198" at="21,0,81,0" name="org.campagnelab.workflow.typesystem.check_OutChannels_NonTypesystemRule" />
+      <unit id="8052084060281611198" at="21,0,81,0" name="org.campagnelab.workflow.typesystem.check_OutChannelContainer_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:ab866d87-5ca1-4c05-be72-23e5fe95b380(org.campagnelab.workflow.typesystem)/8269043772629965544">
