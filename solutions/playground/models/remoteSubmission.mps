@@ -96,6 +96,9 @@
       </concept>
     </language>
     <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
+      <concept id="239101957522210043" name="org.campagnelab.workflow.configuration.structure.StringOption" flags="ng" index="2CpO$d">
+        <property id="239101957524078947" name="value" index="2C0Vil" />
+      </concept>
       <concept id="6643674794994257454" name="org.campagnelab.workflow.configuration.structure.Hostname" flags="ng" index="3yU_OC" />
       <concept id="6643674794994257455" name="org.campagnelab.workflow.configuration.structure.JobArea" flags="ng" index="3yU_OD" />
       <concept id="6643674794994257459" name="org.campagnelab.workflow.configuration.structure.RemoteSubmissionConfig" flags="ng" index="3yU_OP">
@@ -116,12 +119,8 @@
       <concept id="6643674794999877909" name="org.campagnelab.workflow.configuration.structure.Queue" flags="ng" index="3z708j">
         <child id="6643674794999877910" name="queueElements" index="3z708g" />
       </concept>
-      <concept id="6643674794999883044" name="org.campagnelab.workflow.configuration.structure.Penv" flags="ng" index="3z73oy">
-        <property id="6643674794999883045" name="penv" index="3z73oz" />
-      </concept>
-      <concept id="6643674794998135655" name="org.campagnelab.workflow.configuration.structure.ClusterOptions" flags="ng" index="3z9Qxx">
-        <property id="6643674794998135656" name="clusterOptions" index="3z9QxI" />
-      </concept>
+      <concept id="6643674794999883044" name="org.campagnelab.workflow.configuration.structure.Penv" flags="ng" index="3z73oy" />
+      <concept id="6643674794998135655" name="org.campagnelab.workflow.configuration.structure.ClusterOptions" flags="ng" index="3z9Qxx" />
       <concept id="6643674795001677795" name="org.campagnelab.workflow.configuration.structure.WorkflowConfig" flags="ng" index="3zupj_">
         <child id="6643674795001677798" name="remoteSubmission" index="3zupjw" />
         <child id="6643674795001677796" name="executor" index="3zupjy" />
@@ -177,7 +176,9 @@
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
       </concept>
-      <concept id="8074343669091902386" name="org.campagnelab.workflow.structure.ValueInAChannelRef" flags="ng" index="3YE7tV" />
+      <concept id="8074343669091902386" name="org.campagnelab.workflow.structure.ValueInAChannelRef" flags="ng" index="3YE7tV">
+        <reference id="8074343669091902431" name="value" index="3YE7sm" />
+      </concept>
     </language>
   </registry>
   <node concept="2ulcR8" id="3LlDVJUaZyv">
@@ -191,14 +192,16 @@
         <node concept="19SUe$" id="3LlDVJUaZyM" role="19SJt6">
           <property role="19SUeA" value="echo  " />
         </node>
-        <node concept="3YE7tV" id="dhtvqFdAIn" role="19SJt6" />
+        <node concept="3YE7tV" id="dhtvqFdAIn" role="19SJt6">
+          <ref role="3YE7sm" node="dhtvqFdAHD" resolve="stringToEcho" />
+        </node>
         <node concept="19SUe$" id="dhtvqFdAIm" role="19SJt6">
           <property role="19SUeA" value="&gt;&gt; fileWithEcho" />
         </node>
       </node>
     </node>
     <node concept="2mjA9o" id="dhtvqFdAHD" role="2ulM7n">
-      <property role="TrG5h" value="s" />
+      <property role="TrG5h" value="stringToEcho" />
       <node concept="16pbKc" id="dhtvqFdAHP" role="2ybFLk" />
     </node>
   </node>
@@ -319,11 +322,11 @@
         <property role="3zCbe9" value="rascals.q" />
       </node>
     </node>
-    <node concept="3z73oy" id="5KN4KqZ_ILW" role="3zupjz">
-      <property role="3z73oz" value="smp" />
+    <node concept="3z73oy" id="7UVJCi2pjRB" role="3zupjz">
+      <property role="2C0Vil" value="smp" />
     </node>
-    <node concept="3z9Qxx" id="5KN4KqZ_IOM" role="3zupjz">
-      <property role="3z9QxI" value="-l h_vmem=2G  -pe smp 4" />
+    <node concept="3z9Qxx" id="7UVJCi2pjSe" role="3zupjz">
+      <property role="2C0Vil" value="-l h_vmem=2G  -pe smp 4" />
     </node>
     <node concept="3zuAPG" id="2fLVrqQnv8f" role="3zupjy" />
     <node concept="3yU_OP" id="5KN4KqZ$Tue" role="3zupjw">
