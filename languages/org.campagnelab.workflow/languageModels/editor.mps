@@ -322,7 +322,7 @@
         <property role="3F0ifm" value="Process " />
       </node>
       <node concept="1u4HXA" id="4g1gOgyVIbM" role="3EZMnx">
-        <property role="1ubRXE" value="${module}/icons/ProcessIcon-2.png" />
+        <property role="1ubRXE" value="${module}/icons/ProcessIcon-5.png" />
       </node>
       <node concept="3F0A7n" id="6tX5nBTaKMX" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1115,7 +1115,7 @@
   </node>
   <node concept="24kQdi" id="3m26Pihn87H">
     <property role="3GE5qa" value="channelInitializers" />
-    <ref role="1XX52x" to="iowz:3m26PihlgGj" resolve="GlobalBooleanExpression" />
+    <ref role="1XX52x" to="iowz:3m26PihlgGj" resolve="BooleanInitializer" />
     <node concept="3EZMnI" id="3m26Pihn87J" role="2wV5jI">
       <node concept="3F2HdR" id="3m26Pihn88e" role="3EZMnx">
         <property role="2czwfO" value="," />
@@ -1127,7 +1127,7 @@
   </node>
   <node concept="24kQdi" id="3m26Pihn88r">
     <property role="3GE5qa" value="channelInitializers" />
-    <ref role="1XX52x" to="iowz:3m26PihlgQQ" resolve="GlobalFileExpression" />
+    <ref role="1XX52x" to="iowz:3m26PihlgQQ" resolve="FileInitializer" />
     <node concept="3EZMnI" id="3m26Pihn88t" role="2wV5jI">
       <node concept="3F2HdR" id="3m26Pihn88W" role="3EZMnx">
         <property role="2czwfO" value="," />
@@ -1139,7 +1139,7 @@
   </node>
   <node concept="24kQdi" id="3m26Pihn899">
     <property role="3GE5qa" value="channelInitializers" />
-    <ref role="1XX52x" to="iowz:3m26PihlgLm" resolve="GlobalIntegerExpression" />
+    <ref role="1XX52x" to="iowz:3m26PihlgLm" resolve="IntegerInitializer" />
     <node concept="3EZMnI" id="3m26Pihn89b" role="2wV5jI">
       <node concept="3F2HdR" id="3m26Pihn89M" role="3EZMnx">
         <property role="2czwfO" value="," />
@@ -1150,7 +1150,7 @@
               <node concept="2ShNRf" id="2rkU84PwX_C" role="3clFbG">
                 <node concept="3zrR0B" id="2rkU84PwXFM" role="2ShVmc">
                   <node concept="3Tqbb2" id="2rkU84PwXFO" role="3zrR0E">
-                    <ref role="ehGHo" to="iowz:3m26Pihn84X" resolve="GlobalIntegerLiteral" />
+                    <ref role="ehGHo" to="iowz:3m26Pihn84X" resolve="IntegerLiteral" />
                   </node>
                 </node>
               </node>
@@ -1164,7 +1164,7 @@
   </node>
   <node concept="24kQdi" id="3m26Pihn89Z">
     <property role="3GE5qa" value="channelInitializers" />
-    <ref role="1XX52x" to="iowz:3m26PihlgPf" resolve="GlobalListExpression" />
+    <ref role="1XX52x" to="iowz:3m26PihlgPf" resolve="ListInitializer" />
     <node concept="3EZMnI" id="3m26Pihn8a1" role="2wV5jI">
       <node concept="3F2HdR" id="3m26Pihn8aw" role="3EZMnx">
         <property role="2czwfO" value="," />
@@ -1176,7 +1176,7 @@
   </node>
   <node concept="24kQdi" id="3m26Pihn8aH">
     <property role="3GE5qa" value="channelInitializers" />
-    <ref role="1XX52x" to="iowz:3m26PihlgMf" resolve="GlobalStringExpression" />
+    <ref role="1XX52x" to="iowz:3m26PihlgMf" resolve="StringInitializer" />
     <node concept="3EZMnI" id="3m26Pihn8aJ" role="2wV5jI">
       <node concept="3F2HdR" id="3m26Pihn8be" role="3EZMnx">
         <property role="2czwfO" value="," />
@@ -1187,7 +1187,7 @@
               <node concept="2ShNRf" id="dNnsoyOSY0" role="3clFbG">
                 <node concept="3zrR0B" id="dNnsoyOWd7" role="2ShVmc">
                   <node concept="3Tqbb2" id="dNnsoyOWd9" role="3zrR0E">
-                    <ref role="ehGHo" to="iowz:3m26Pihn81q" resolve="GlobalStringLiteral" />
+                    <ref role="ehGHo" to="iowz:3m26Pihn81q" resolve="StringLiteral" />
                   </node>
                 </node>
               </node>
@@ -1216,7 +1216,7 @@
   </node>
   <node concept="24kQdi" id="3m26PihtnlC">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalStringType" />
-    <ref role="1XX52x" to="iowz:3m26Pihn81q" resolve="GlobalStringLiteral" />
+    <ref role="1XX52x" to="iowz:3m26Pihn81q" resolve="StringLiteral" />
     <node concept="3EZMnI" id="2TvCQLwDILx" role="2wV5jI">
       <node concept="2iRfu4" id="2TvCQLwDILy" role="2iSdaV" />
       <node concept="3F0ifn" id="5rY6S$LnDTJ" role="3EZMnx">
@@ -1251,7 +1251,7 @@
   </node>
   <node concept="24kQdi" id="3m26PihtnlM">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalIntegerType" />
-    <ref role="1XX52x" to="iowz:3m26Pihn84X" resolve="GlobalIntegerLiteral" />
+    <ref role="1XX52x" to="iowz:3m26Pihn84X" resolve="IntegerLiteral" />
     <node concept="3F0A7n" id="3m26PihtnlO" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:3m26Pihn84Y" resolve="value" />
     </node>
@@ -1280,14 +1280,14 @@
   </node>
   <node concept="24kQdi" id="3m26PihtnmT">
     <property role="3GE5qa" value="channelInitializers.globalTypes" />
-    <ref role="1XX52x" to="iowz:3m26Pihn7yi" resolve="GlobalBooleanLiteral" />
+    <ref role="1XX52x" to="iowz:3m26Pihn7yi" resolve="BooleanLiteral" />
     <node concept="3F0A7n" id="3m26PihtnmV" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:3m26Pihn850" resolve="value" />
     </node>
   </node>
   <node concept="24kQdi" id="3m26PihC7K3">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalListType" />
-    <ref role="1XX52x" to="iowz:3m26Pihn7Jd" resolve="GlobalBooleanLiteralList" />
+    <ref role="1XX52x" to="iowz:3m26Pihn7Jd" resolve="BooleanLiteralList" />
     <node concept="3EZMnI" id="3m26PihEjf6" role="2wV5jI">
       <node concept="l2Vlx" id="3m26PihEjf7" role="2iSdaV" />
       <node concept="3F0ifn" id="3m26PihEjlK" role="3EZMnx">
@@ -1304,7 +1304,7 @@
   </node>
   <node concept="24kQdi" id="3m26PihEjm2">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalListType" />
-    <ref role="1XX52x" to="iowz:3m26Pihn7K8" resolve="GlobalFileLiteralList" />
+    <ref role="1XX52x" to="iowz:3m26Pihn7K8" resolve="FileLiteralList" />
     <node concept="3EZMnI" id="3m26PihEjm4" role="2wV5jI">
       <node concept="3F0ifn" id="3m26PihEjmk" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -1322,7 +1322,7 @@
   </node>
   <node concept="24kQdi" id="3m26PihEjmD">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalListType" />
-    <ref role="1XX52x" to="iowz:3m26Pihn7Ii" resolve="GlobalIntegerLiteralList" />
+    <ref role="1XX52x" to="iowz:3m26Pihn7Ii" resolve="IntegerLiteralList" />
     <node concept="3EZMnI" id="3m26PihEjmF" role="2wV5jI">
       <node concept="3F0ifn" id="3m26PihEjmM" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -1336,7 +1336,7 @@
               <node concept="2ShNRf" id="4bDu_McZNjD" role="3clFbG">
                 <node concept="3zrR0B" id="4bDu_McZR2u" role="2ShVmc">
                   <node concept="3Tqbb2" id="4bDu_McZR2w" role="3zrR0E">
-                    <ref role="ehGHo" to="iowz:3m26Pihn84X" resolve="GlobalIntegerLiteral" />
+                    <ref role="ehGHo" to="iowz:3m26Pihn84X" resolve="IntegerLiteral" />
                   </node>
                 </node>
               </node>
@@ -1353,7 +1353,7 @@
   </node>
   <node concept="24kQdi" id="3m26PihEjnu">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalListType" />
-    <ref role="1XX52x" to="iowz:3m26Pihn7Np" resolve="GlobalListLiteral" />
+    <ref role="1XX52x" to="iowz:3m26Pihn7Np" resolve="ListLiteral" />
     <node concept="3EZMnI" id="3m26PihEjnw" role="2wV5jI">
       <node concept="3F0ifn" id="3m26PihEjnB" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -1371,7 +1371,7 @@
   </node>
   <node concept="24kQdi" id="3m26PihEjo3">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalListType" />
-    <ref role="1XX52x" to="iowz:3m26Pihn7F7" resolve="GlobalStringLiteralList" />
+    <ref role="1XX52x" to="iowz:3m26Pihn7F7" resolve="StringLiteralList" />
     <node concept="3EZMnI" id="3m26PihEjo5" role="2wV5jI">
       <node concept="3F0ifn" id="3m26PihEjoc" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -1391,7 +1391,7 @@
               <node concept="2ShNRf" id="4CJwdf9uPbN" role="3clFbG">
                 <node concept="3zrR0B" id="4CJwdf9uSZE" role="2ShVmc">
                   <node concept="3Tqbb2" id="4CJwdf9uSZG" role="3zrR0E">
-                    <ref role="ehGHo" to="iowz:3m26Pihn81q" resolve="GlobalStringLiteral" />
+                    <ref role="ehGHo" to="iowz:3m26Pihn81q" resolve="StringLiteral" />
                   </node>
                 </node>
               </node>
@@ -1533,7 +1533,7 @@
   </node>
   <node concept="24kQdi" id="YNIIGPa1I6">
     <property role="3GE5qa" value="scripts.conditionalScript" />
-    <ref role="1XX52x" to="iowz:YNIIGPa1iv" resolve="BaseLanguageAdapter" />
+    <ref role="1XX52x" to="iowz:YNIIGPa1iv" resolve="BaseLanguageScriptAdapter" />
     <node concept="3EZMnI" id="59canFOdIGX" role="2wV5jI">
       <node concept="3F1sOY" id="4g1gOgyC6bi" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:59canFOdI$K" />
@@ -1543,7 +1543,7 @@
   </node>
   <node concept="24kQdi" id="59canFN3Dyf">
     <property role="3GE5qa" value="channelInitializers.globalTypes" />
-    <ref role="1XX52x" to="iowz:59canFN3Dy7" resolve="GlobalFilePath" />
+    <ref role="1XX52x" to="iowz:59canFN3Dy7" resolve="FilePath" />
     <node concept="3F0ifn" id="dNnsoyWv_F" role="6VMZX">
       <property role="3F0ifm" value="When using a wildcard character, a list object is returned containing the path of files whose name matches the pattern." />
     </node>
@@ -1660,7 +1660,7 @@
   </node>
   <node concept="24kQdi" id="2Hhp$WEiKpb">
     <property role="3GE5qa" value="channelInitializers" />
-    <ref role="1XX52x" to="iowz:2Hhp$WEiKnI" resolve="GlobalTupleExpression" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEiKnI" resolve="TupleInitializer" />
     <node concept="3EZMnI" id="2Hhp$WEiKpd" role="2wV5jI">
       <node concept="3F2HdR" id="2Hhp$WEiKpk" role="3EZMnx">
         <property role="2czwfO" value="," />
@@ -1672,21 +1672,21 @@
   </node>
   <node concept="24kQdi" id="2Hhp$WEw$fm">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
-    <ref role="1XX52x" to="iowz:2Hhp$WEw$fe" resolve="GlobalBooleanLiteralTuple" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEw$fe" resolve="BooleanLiteralTuple" />
     <node concept="3F1sOY" id="2Hhp$WEw$fo" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:2Hhp$WEw$ff" />
     </node>
   </node>
   <node concept="24kQdi" id="2Hhp$WEw$ie">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
-    <ref role="1XX52x" to="iowz:2Hhp$WEw$i6" resolve="GlobalIntegerLiteralTuple" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEw$i6" resolve="IntegerLiteralTuple" />
     <node concept="3F1sOY" id="2Hhp$WEw$ig" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:2Hhp$WEw$i7" />
     </node>
   </node>
   <node concept="24kQdi" id="2Hhp$WEw$io">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
-    <ref role="1XX52x" to="iowz:2Hhp$WEw$gJ" resolve="GlobalTupleLiteral" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEw$gJ" resolve="TupleLiteral" />
     <node concept="3EZMnI" id="2Hhp$WEw$iq" role="2wV5jI">
       <node concept="3F0ifn" id="2Hhp$WEw$ix" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -1704,14 +1704,14 @@
   </node>
   <node concept="24kQdi" id="2Hhp$WEw$lN">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
-    <ref role="1XX52x" to="iowz:2Hhp$WEw$lF" resolve="GlobalFileLiteralTuple" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEw$lF" resolve="FileLiteralTuple" />
     <node concept="3F1sOY" id="2Hhp$WEw$lP" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:2Hhp$WEw$lG" />
     </node>
   </node>
   <node concept="24kQdi" id="2Hhp$WEw$nk">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
-    <ref role="1XX52x" to="iowz:2Hhp$WEw$nc" resolve="GlobalListLiteralTuple" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEw$nc" resolve="ListLiteralTuple" />
     <node concept="3EZMnI" id="PffOQS_OmJ" role="2wV5jI">
       <node concept="3F0ifn" id="PffOQS_OmZ" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -1729,7 +1729,7 @@
   </node>
   <node concept="24kQdi" id="5rnWeHKVZUW">
     <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
-    <ref role="1XX52x" to="iowz:2Hhp$WEw$km" resolve="GlobalStringLiteralTuple" />
+    <ref role="1XX52x" to="iowz:2Hhp$WEw$km" resolve="StringLiteralTuple" />
     <node concept="3F1sOY" id="5rnWeHKVZUY" role="2wV5jI">
       <ref role="1NtTu8" to="iowz:2Hhp$WEw$np" />
     </node>
@@ -1759,7 +1759,7 @@
   </node>
   <node concept="24kQdi" id="5ok1XDmh4P6">
     <property role="3GE5qa" value="channelInitializers" />
-    <ref role="1XX52x" to="iowz:5ok1XDmh3fW" resolve="GlobalFileListExpression" />
+    <ref role="1XX52x" to="iowz:5ok1XDmh3fW" resolve="FileListInitializer" />
     <node concept="3EZMnI" id="5ok1XDmh4P8" role="2wV5jI">
       <node concept="3F2HdR" id="5ok1XDmh4Pf" role="3EZMnx">
         <property role="2czwfO" value="," />
@@ -1853,7 +1853,7 @@
   </node>
   <node concept="24kQdi" id="6qiI2N4J14F">
     <property role="3GE5qa" value="processIO" />
-    <ref role="1XX52x" to="iowz:7gAPJCESMFi" resolve="Channel" />
+    <ref role="1XX52x" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
     <node concept="3EZMnI" id="6qiI2N4J14H" role="2wV5jI">
       <node concept="3F1sOY" id="6qiI2N4J14O" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:6qiI2N4J0hS" />
