@@ -11,7 +11,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="ActionAspectDescriptorImpl.java">
-      <unit at="12,0,29,0" name="org.campagnelab.workflow.actions.ActionAspectDescriptorImpl" />
+      <unit at="12,0,31,0" name="org.campagnelab.workflow.actions.ActionAspectDescriptorImpl" />
     </file>
     <file name="QueriesGenerated.java">
       <unit at="130,49,152,5" name="org.campagnelab.workflow.actions.QueriesGenerated$5" />
@@ -22,7 +22,7 @@
     </file>
   </root>
   <root nodeRef="r:2e1393ae-2a7b-4fb2-add1-db11113c776d(org.campagnelab.workflow.actions)/239101957495907802">
-    <file name="DefaultNodeFactory_.java">
+    <file name="CreateConfigWhenAbsent.java">
       <node id="239101957495936873" at="16,256,17,246" concept="1" />
       <node id="239101957495908198" at="15,91,18,7" concept="3" />
       <node id="239101957495907803" at="15,0,20,0" concept="4" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
@@ -34,8 +34,8 @@
         <var name="newNode" id="239101957495907803" />
         <var name="sampleNode" id="239101957495907803" />
       </scope>
-      <unit id="239101957495907803" at="14,0,21,0" name="org.campagnelab.workflow.actions.DefaultNodeFactory_$NodeFactory_239101957495907803" />
-      <unit id="239101957495907802" at="13,0,22,0" name="org.campagnelab.workflow.actions.DefaultNodeFactory_" />
+      <unit id="239101957495907803" at="14,0,21,0" name="org.campagnelab.workflow.actions.CreateConfigWhenAbsent$NodeFactory_239101957495907803" />
+      <unit id="239101957495907802" at="13,0,22,0" name="org.campagnelab.workflow.actions.CreateConfigWhenAbsent" />
     </file>
   </root>
   <root nodeRef="r:2e1393ae-2a7b-4fb2-add1-db11113c776d(org.campagnelab.workflow.actions)/3926486501676623784">
@@ -250,6 +250,33 @@
       <unit id="6344724376806575221" at="37,44,41,9" name="org.campagnelab.workflow.actions.QueriesGenerated$1" />
       <unit id="6344724376806575221" at="44,57,56,13" name="org.campagnelab.workflow.actions.QueriesGenerated$2" />
       <unit id="6344724376806575221" at="65,53,90,9" name="org.campagnelab.workflow.actions.QueriesGenerated$3" />
+    </file>
+  </root>
+  <root nodeRef="r:2e1393ae-2a7b-4fb2-add1-db11113c776d(org.campagnelab.workflow.actions)/976376310257314185">
+    <file name="ChannelWithFunctionRef.java">
+      <node id="976376310257317208" at="16,7,17,44" concept="5" />
+      <node id="976376310257318812" at="19,236,20,260" concept="1" />
+      <node id="976376310257373354" at="18,217,21,11" concept="2" />
+      <node id="976376310257317208" at="17,44,22,9" concept="3" />
+      <node id="976376310257317208" at="15,91,23,7" concept="0" />
+      <node id="976376310257314189" at="15,0,25,0" concept="4" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="976376310257373358" at="19,236,20,260" />
+      <scope id="976376310257317212" at="18,217,21,11" />
+      <scope id="976376310257373354" at="18,217,21,11">
+        <var name="e" id="976376310257373356" />
+      </scope>
+      <scope id="976376310257317208" at="16,7,22,9">
+        <var name="channelRef" id="976376310257317208" />
+      </scope>
+      <scope id="976376310257314189" at="15,91,23,7" />
+      <scope id="976376310257314189" at="15,0,25,0">
+        <var name="enclosingNode" id="976376310257314189" />
+        <var name="model" id="976376310257314189" />
+        <var name="newNode" id="976376310257314189" />
+        <var name="sampleNode" id="976376310257314189" />
+      </scope>
+      <unit id="976376310257314189" at="14,0,26,0" name="org.campagnelab.workflow.actions.ChannelWithFunctionRef$NodeFactory_976376310257314189" />
+      <unit id="976376310257314185" at="13,0,27,0" name="org.campagnelab.workflow.actions.ChannelWithFunctionRef" />
     </file>
   </root>
 </debug-info>
