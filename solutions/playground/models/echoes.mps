@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:20efe704-5371-4a36-8d28-0a5af453d84a(remoteSubmission)">
+<model ref="r:20efe704-5371-4a36-8d28-0a5af453d84a(echoes)">
   <persistence version="9" />
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
@@ -126,14 +126,18 @@
         <child id="6643674795001677796" name="executor" index="3zupjy" />
         <child id="6643674795001677797" name="processOptions" index="3zupjz" />
       </concept>
-      <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG" />
+      <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
       <concept id="6643674795006467852" name="org.campagnelab.workflow.configuration.structure.QueueElement" flags="ng" index="3zC8Ka">
         <property id="6643674795006468239" name="queue" index="3zCbe9" />
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
-      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
+        <property id="2590112629708729231" name="fromStandardOutput" index="2lYOoT" />
+      </concept>
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o">
+        <property id="2590112629703814581" name="toStandardInput" index="2mj$03" />
+      </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -182,7 +186,7 @@
     </language>
   </registry>
   <node concept="2ulcR8" id="3LlDVJUaZyv">
-    <property role="TrG5h" value="EchoString" />
+    <property role="TrG5h" value="EchoStringToFile" />
     <node concept="2lYRya" id="67XPjarXEap" role="2ulM79">
       <property role="TrG5h" value="fileWithEcho" />
       <node concept="16pRw0" id="2fLVrqQhloh" role="2ybFLk" />
@@ -206,27 +210,13 @@
     </node>
   </node>
   <node concept="2$rMIF" id="5wD$zX2n8RY">
-    <property role="TrG5h" value="EchoWorkflow" />
+    <property role="TrG5h" value="EchoToFileWorkflow" />
     <node concept="2UNLhE" id="67XPjarXExO" role="2UW718">
-      <ref role="2UNLhW" node="67XPjarXql3" resolve="echo" />
+      <ref role="2UNLhW" node="7UVJCi2pEBq" resolve="echo" />
       <node concept="2UPiyC" id="67XPjarXExP" role="2UNLhY">
         <node concept="3clFbS" id="67XPjarXExQ" role="2VODD2">
           <node concept="SfApY" id="7TupKkjiR$$" role="3cqZAp">
             <node concept="3clFbS" id="7TupKkjiR$A" role="SfCbr">
-              <node concept="3cpWs8" id="7TupKkjiG_h" role="3cqZAp">
-                <node concept="3cpWsn" id="7TupKkjiG_i" role="3cpWs9">
-                  <property role="TrG5h" value="reader" />
-                  <node concept="3uibUv" id="7TupKkjiG_j" role="1tU5fm">
-                    <ref role="3uigEE" to="fxg7:~FileReader" resolve="FileReader" />
-                  </node>
-                  <node concept="2ShNRf" id="7TupKkjiGDU" role="33vP2m">
-                    <node concept="1pGfFk" id="7TupKkjiIte" role="2ShVmc">
-                      <ref role="37wK5l" to="fxg7:~FileReader.&lt;init&gt;(java.io.File)" resolve="FileReader" />
-                      <node concept="2UPiyF" id="7TupKkjiIts" role="37wK5m" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs8" id="7TupKkjiPeH" role="3cqZAp">
                 <node concept="3cpWsn" id="7TupKkjiPeI" role="3cpWs9">
                   <property role="TrG5h" value="breader" />
@@ -236,8 +226,11 @@
                   <node concept="2ShNRf" id="7TupKkjiPkH" role="33vP2m">
                     <node concept="1pGfFk" id="7TupKkjiQ6N" role="2ShVmc">
                       <ref role="37wK5l" to="fxg7:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
-                      <node concept="37vLTw" id="7TupKkjiQ71" role="37wK5m">
-                        <ref role="3cqZAo" node="7TupKkjiG_i" resolve="reader" />
+                      <node concept="2ShNRf" id="6xlRqabyMwy" role="37wK5m">
+                        <node concept="1pGfFk" id="6xlRqabyP0R" role="2ShVmc">
+                          <ref role="37wK5l" to="fxg7:~FileReader.&lt;init&gt;(java.io.File)" resolve="FileReader" />
+                          <node concept="2UPiyF" id="6xlRqabyP5f" role="37wK5m" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -298,8 +291,8 @@
       </node>
     </node>
     <node concept="2$rEH5" id="5wD$zX2n8RZ" role="2$rEHq">
-      <ref role="2$rEH4" node="3LlDVJUaZyv" resolve="EchoString" />
-      <node concept="1uLkD0" id="67XPjarXql3" role="1uLvPA">
+      <ref role="2$rEH4" node="3LlDVJUaZyv" resolve="EchoStringToFile" />
+      <node concept="1uLkD0" id="7UVJCi2pEBq" role="1uLvPA">
         <property role="TrG5h" value="echo" />
       </node>
       <node concept="1uYdA0" id="5wD$zX2n8T3" role="1uLvPH">
@@ -328,7 +321,7 @@
     <node concept="3z9Qxx" id="7UVJCi2pjSe" role="3zupjz">
       <property role="2C0Vil" value="-l h_vmem=2G  -pe smp 4" />
     </node>
-    <node concept="3zuAPG" id="2fLVrqQnv8f" role="3zupjy" />
+    <node concept="3zuAPI" id="6xlRqabyFCT" role="3zupjy" />
     <node concept="3yU_OP" id="5KN4KqZ$Tue" role="3zupjw">
       <property role="TrG5h" value="remote.config" />
       <node concept="3yU_OD" id="5KN4KqZ$Tuf" role="3yU_OL">
@@ -352,6 +345,207 @@
             <property role="34ZRQb" value="export JAVA_HOME=/softlib/exe/x86_64/pkg/sun_jdk/7.0.17/dist/bin/java" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2ulcR8" id="6xlRqabyCgU">
+    <property role="TrG5h" value="EchoStringToStandardOut" />
+    <node concept="2lYRya" id="6xlRqabyCvO" role="2ulM79">
+      <property role="TrG5h" value="echo" />
+      <property role="2lYOoT" value="true" />
+      <node concept="16pbKc" id="6xlRqabyCw4" role="2ybFLk" />
+    </node>
+    <node concept="3Y$Zt1" id="6xlRqabyCgX" role="2ulM7a">
+      <node concept="19SGf9" id="6xlRqabyCgY" role="3Y$PkS">
+        <node concept="19SUe$" id="6xlRqabyCgZ" role="19SJt6">
+          <property role="19SUeA" value="echo  &quot;" />
+        </node>
+        <node concept="3YE7tV" id="6xlRqabyCh0" role="19SJt6">
+          <ref role="3YE7sm" node="6xlRqabyCh2" resolve="stringToEcho" />
+        </node>
+        <node concept="19SUe$" id="6xlRqabyCh1" role="19SJt6">
+          <property role="19SUeA" value="&quot;" />
+        </node>
+      </node>
+    </node>
+    <node concept="2mjA9o" id="6xlRqabyCh2" role="2ulM7n">
+      <property role="TrG5h" value="stringToEcho" />
+      <node concept="16pbKc" id="6xlRqabyCh3" role="2ybFLk" />
+    </node>
+  </node>
+  <node concept="2$rMIF" id="6xlRqabyDAB">
+    <property role="TrG5h" value="EchoToStdOutWorkflow" />
+    <node concept="2UNLhE" id="6xlRqabyHcb" role="2UW718">
+      <ref role="2UNLhW" node="6xlRqabyDSQ" resolve="echo" />
+      <node concept="2UPiyC" id="6xlRqabyHcc" role="2UNLhY">
+        <node concept="3clFbS" id="6xlRqabyHcd" role="2VODD2">
+          <node concept="3clFbF" id="6xlRqabyJwC" role="3cqZAp">
+            <node concept="2OqwBi" id="6xlRqabyL1B" role="3clFbG">
+              <node concept="10M0yZ" id="6xlRqabyJwB" role="2Oq$k0">
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="6xlRqabyMhP" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="3cpWs3" id="6xlRqabyPP4" role="37wK5m">
+                  <node concept="2UPiyF" id="6xlRqabyPRd" role="3uHU7w" />
+                  <node concept="Xl_RD" id="6xlRqabyPnH" role="3uHU7B">
+                    <property role="Xl_RC" value="Here's the echo: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="6xlRqabyDRU" role="2$L6iY">
+      <property role="TrG5h" value="stringToEcho" />
+      <node concept="2J_sx7" id="6xlRqabyDRV" role="2$L62I">
+        <node concept="2J_g7P" id="6xlRqabyDRW" role="2J_sx6">
+          <property role="2J_vQ8" value="Hello from $HOSTNAME" />
+        </node>
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6xlRqabyDAC" role="2$rEHq">
+      <ref role="2$rEH4" node="6xlRqabyCgU" resolve="EchoStringToStandardOut" />
+      <node concept="1uYdA0" id="6xlRqabyDSA" role="1uLvPH">
+        <ref role="1uK_4X" node="6xlRqabyDRU" resolve="stringToEcho" />
+      </node>
+      <node concept="1uLkD0" id="6xlRqabyDSQ" role="1uLvPA">
+        <property role="TrG5h" value="echo" />
+      </node>
+    </node>
+  </node>
+  <node concept="2ulcR8" id="6xlRqabySbi">
+    <property role="TrG5h" value="EchoFromStandardInToFile" />
+    <node concept="3Y$Zt1" id="6xlRqabySew" role="2ulM7a">
+      <node concept="19SGf9" id="6xlRqabySey" role="3Y$PkS">
+        <node concept="19SUe$" id="6xlRqabySez" role="19SJt6">
+          <property role="19SUeA" value="cat " />
+        </node>
+        <node concept="3YE7tV" id="6xlRqabNCd2" role="19SJt6">
+          <ref role="3YE7sm" node="6xlRqabySdm" resolve="stringToEcho" />
+        </node>
+        <node concept="19SUe$" id="6xlRqabNCd1" role="19SJt6">
+          <property role="19SUeA" value=" &gt; fileWithEcho" />
+        </node>
+      </node>
+    </node>
+    <node concept="2mjA9o" id="6xlRqabySdm" role="2ulM7n">
+      <property role="TrG5h" value="stringToEcho" />
+      <property role="2mj$03" value="true" />
+      <node concept="16pbKc" id="6xlRqabySdy" role="2ybFLk" />
+    </node>
+    <node concept="2lYRya" id="6xlRqabySe5" role="2ulM79">
+      <property role="TrG5h" value="fileWithEcho" />
+      <node concept="16pRw0" id="6xlRqabySeh" role="2ybFLk" />
+    </node>
+  </node>
+  <node concept="2$rMIF" id="6xlRqabySiU">
+    <property role="TrG5h" value="EchoFromStandardInToFile" />
+    <node concept="2UNLhE" id="6xlRqabyT4H" role="2UW718">
+      <ref role="2UNLhW" node="6xlRqabySIz" resolve="secondEchoInFile" />
+      <node concept="2UPiyC" id="6xlRqabyT4I" role="2UNLhY">
+        <node concept="3clFbS" id="6xlRqabyT4J" role="2VODD2">
+          <node concept="SfApY" id="6xlRqabyTkQ" role="3cqZAp">
+            <node concept="3clFbS" id="6xlRqabyTkR" role="SfCbr">
+              <node concept="3cpWs8" id="6xlRqabyTkS" role="3cqZAp">
+                <node concept="3cpWsn" id="6xlRqabyTkT" role="3cpWs9">
+                  <property role="TrG5h" value="breader" />
+                  <node concept="3uibUv" id="6xlRqabyTkU" role="1tU5fm">
+                    <ref role="3uigEE" to="fxg7:~BufferedReader" resolve="BufferedReader" />
+                  </node>
+                  <node concept="2ShNRf" id="6xlRqabyTkV" role="33vP2m">
+                    <node concept="1pGfFk" id="6xlRqabyTkW" role="2ShVmc">
+                      <ref role="37wK5l" to="fxg7:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
+                      <node concept="2ShNRf" id="6xlRqabyTkX" role="37wK5m">
+                        <node concept="1pGfFk" id="6xlRqabyTkY" role="2ShVmc">
+                          <ref role="37wK5l" to="fxg7:~FileReader.&lt;init&gt;(java.io.File)" resolve="FileReader" />
+                          <node concept="2UPiyF" id="6xlRqabyTkZ" role="37wK5m" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6xlRqabyTl0" role="3cqZAp">
+                <node concept="2OqwBi" id="6xlRqabyTl1" role="3clFbG">
+                  <node concept="10M0yZ" id="6xlRqabyTl2" role="2Oq$k0">
+                    <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                    <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                  </node>
+                  <node concept="liA8E" id="6xlRqabyTl3" role="2OqNvi">
+                    <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="3cpWs3" id="6xlRqabyTl4" role="37wK5m">
+                      <node concept="Xl_RD" id="6xlRqabyTl5" role="3uHU7B">
+                        <property role="Xl_RC" value="Here's the echo: " />
+                      </node>
+                      <node concept="2OqwBi" id="6xlRqabyTl6" role="3uHU7w">
+                        <node concept="37vLTw" id="6xlRqabyTl7" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6xlRqabyTkT" resolve="breader" />
+                        </node>
+                        <node concept="liA8E" id="6xlRqabyTl8" role="2OqNvi">
+                          <ref role="37wK5l" to="fxg7:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="TDmWw" id="6xlRqabyTl9" role="TEbGg">
+              <node concept="3clFbS" id="6xlRqabyTla" role="TDEfX">
+                <node concept="3clFbF" id="6xlRqabyTlb" role="3cqZAp">
+                  <node concept="2OqwBi" id="6xlRqabyTlc" role="3clFbG">
+                    <node concept="10M0yZ" id="6xlRqabyTld" role="2Oq$k0">
+                      <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                      <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+                    </node>
+                    <node concept="liA8E" id="6xlRqabyTle" role="2OqNvi">
+                      <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <node concept="Xl_RD" id="6xlRqabyTlf" role="37wK5m">
+                        <property role="Xl_RC" value="Wooops" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWsn" id="6xlRqabyTlg" role="TDEfY">
+                <property role="TrG5h" value="ioe" />
+                <node concept="3uibUv" id="6xlRqabyTlh" role="1tU5fm">
+                  <ref role="3uigEE" to="fxg7:~IOException" resolve="IOException" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="6xlRqabySwP" role="2$L6iY">
+      <property role="TrG5h" value="stringToEcho" />
+      <node concept="2J_sx7" id="6xlRqabySwQ" role="2$L62I">
+        <node concept="2J_g7P" id="6xlRqabySwR" role="2J_sx6">
+          <property role="2J_vQ8" value="Hello from $HOSTNAME" />
+        </node>
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6xlRqabySiV" role="2$rEHq">
+      <ref role="2$rEH4" node="6xlRqabyCgU" resolve="EchoStringToStandardOut" />
+      <node concept="1uYdA0" id="6xlRqabySxx" role="1uLvPH">
+        <ref role="1uK_4X" node="6xlRqabySwP" resolve="stringToEcho" />
+      </node>
+      <node concept="1uLkD0" id="6xlRqabySxy" role="1uLvPA">
+        <property role="TrG5h" value="firstEchoInStdOut" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6xlRqabySGP" role="2$rEHq">
+      <ref role="2$rEH4" node="6xlRqabySbi" resolve="EchoFromStandardInToFile" />
+      <node concept="1uYdA0" id="6xlRqabySHi" role="1uLvPH">
+        <ref role="1uK_4X" node="6xlRqabySxy" resolve="firstEchoInStdOut" />
+      </node>
+      <node concept="1uLkD0" id="6xlRqabySIz" role="1uLvPA">
+        <property role="TrG5h" value="secondEchoInFile" />
       </node>
     </node>
   </node>
