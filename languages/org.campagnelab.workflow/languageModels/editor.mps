@@ -1502,11 +1502,8 @@
     </node>
     <node concept="14StLt" id="4_Aq6F8aouA" role="V601i">
       <property role="TrG5h" value="List" />
-      <node concept="VechU" id="4_Aq6F8aov8" role="3F10Kt">
-        <property role="Vb096" value="blue" />
-        <node concept="1iSF2X" id="4_Aq6F8r2LQ" role="VblUZ">
-          <property role="1iTho6" value="4169e1" />
-        </node>
+      <node concept="Vb9p2" id="QcMhj4yR6h" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
       </node>
     </node>
   </node>
