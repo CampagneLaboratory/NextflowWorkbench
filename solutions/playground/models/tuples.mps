@@ -33,6 +33,12 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
+      <concept id="6643674795001677795" name="org.campagnelab.workflow.configuration.structure.WorkflowConfig" flags="ng" index="3zupj_">
+        <child id="6643674795001677796" name="executor" index="3zupjy" />
+      </concept>
+      <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
+    </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
       <concept id="3121388506942473710" name="org.campagnelab.workflow.structure.TupleInitializer" flags="ng" index="16Aex">
         <child id="3121388506942473711" name="tuple" index="16Aew" />
@@ -202,6 +208,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3zupj_" id="7UVJCi2pqTD">
+    <property role="TrG5h" value="workflow.config" />
+    <node concept="3zuAPI" id="7UVJCi2pqTE" role="3zupjy" />
   </node>
 </model>
 
