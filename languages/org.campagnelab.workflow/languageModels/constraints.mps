@@ -14,6 +14,7 @@
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
@@ -23,6 +24,7 @@
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
@@ -70,7 +72,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -133,7 +135,12 @@
       <concept id="1203001236505" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="nn" index="otxO1" />
       <concept id="3906442776579556545" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Presentation" flags="in" index="Bn3R3" />
       <concept id="3906442776579549644" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parameterNode" flags="nn" index="Bn53e" />
+      <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
+        <reference id="1147467295099" name="applicableProperty" index="EomxK" />
+        <child id="1212097481299" name="propertyValidator" index="QCWH9" />
+      </concept>
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
+      <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="7855321458717464197" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAnAncestor" flags="in" index="Um2eU" />
       <concept id="5676632058862809931" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="in" index="13QW63" />
       <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
@@ -145,6 +152,7 @@
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="7852712695066883424" name="canBeAncestor" index="1kkKnR" />
+        <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
         <child id="1213106463729" name="canBeChild" index="1MLUbF" />
         <child id="1213106478122" name="canBeParent" index="1MLXOK" />
@@ -155,6 +163,7 @@
         <child id="1163203787401" name="referentSetHandler" index="3kmjI7" />
         <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
+      <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -1209,6 +1218,39 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7QD3Gga3mvg">
+    <ref role="1M2myG" to="iowz:3m26PihhBwN" resolve="OutChannelContainer" />
+    <node concept="EnEH3" id="7QD3Gga3t4i" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="7QD3Gga3t4k" role="QCWH9">
+        <node concept="3clFbS" id="7QD3Gga3t4l" role="2VODD2">
+          <node concept="3clFbF" id="7QD3Gga3VkU" role="3cqZAp">
+            <node concept="1Wc70l" id="4O3IO9qObUi" role="3clFbG">
+              <node concept="2OqwBi" id="4O3IO9qOdkj" role="3uHU7w">
+                <node concept="EsrRn" id="4O3IO9qOdfg" role="2Oq$k0" />
+                <node concept="2qgKlT" id="4O3IO9qOni8" role="2OqNvi">
+                  <ref role="37wK5l" to="mqvz:7QD3GgaNk9s" resolve="stringAlreadyExists" />
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="7QD3Ggaov9m" role="3uHU7B">
+                <node concept="1eOMI4" id="7QD3Ggaovyw" role="3fr31v">
+                  <node concept="2OqwBi" id="7QD3Ggaov9o" role="1eOMHV">
+                    <node concept="1Wqviy" id="7QD3Ggaov9p" role="2Oq$k0" />
+                    <node concept="liA8E" id="7QD3Ggaov9q" role="2OqNvi">
+                      <ref role="37wK5l" to="e2lb:~String.matches(java.lang.String):boolean" resolve="matches" />
+                      <node concept="Xl_RD" id="7QD3Ggaov9r" role="37wK5m">
+                        <property role="Xl_RC" value=".*[\\W&amp;&amp;[^ ]].*" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
   <node concept="1M2fIO" id="2fLVrqR921B">
     <property role="3GE5qa" value="processIO" />
     <ref role="1M2myG" to="iowz:2fLVrqQZ5d5" resolve="InputValue" />
@@ -1216,6 +1258,54 @@
       <ref role="1N5Vy1" to="iowz:2fLVrqQZ5t6" />
       <node concept="1dDu$B" id="2fLVrqR922B" role="1N6uqs">
         <ref role="1dDu$A" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3VDmkwCJ8g5">
+    <property role="3GE5qa" value="scripts.conditionalScript" />
+    <ref role="1M2myG" to="iowz:YNIIGPa1iv" resolve="BaseLanguageScriptAdapter" />
+    <node concept="Um2eU" id="3VDmkwCJ8oe" role="1kkKnR">
+      <node concept="3clFbS" id="3VDmkwCJ8of" role="2VODD2">
+        <node concept="3SKdUt" id="3VDmkwCJa1R" role="3cqZAp">
+          <node concept="3SKdUq" id="3VDmkwCJa9n" role="3SKWNk">
+            <property role="3SKdUp" value="script cannot refer to static fields" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3VDmkwCJ8U8" role="3cqZAp">
+          <node concept="3y3z36" id="3VDmkwCJ8y2" role="3cqZAk">
+            <node concept="2OqwBi" id="3VDmkwCJ9iM" role="3uHU7w">
+              <node concept="35c_gC" id="3VDmkwCJ8Bn" role="2Oq$k0">
+                <ref role="35c_gD" to="tpee:f_0M0x6" resolve="StaticFieldReference" />
+              </node>
+              <node concept="FGMqu" id="3VDmkwCJ9Q6" role="2OqNvi" />
+            </node>
+            <node concept="otxO1" id="3VDmkwCJ8tb" role="3uHU7B" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4g1gOgyr5va">
+    <property role="3GE5qa" value="processIO" />
+    <ref role="1M2myG" to="iowz:4g1gOgy0q_n" resolve="HiddenTypeVarDeclaration" />
+    <node concept="nKS2y" id="4g1gOgyr5BC" role="1MLUbF">
+      <node concept="3clFbS" id="4g1gOgyr5BD" role="2VODD2">
+        <node concept="3clFbF" id="4g1gOgyr5GA" role="3cqZAp">
+          <node concept="2OqwBi" id="4g1gOgyr6UI" role="3clFbG">
+            <node concept="2OqwBi" id="4g1gOgyr5Kd" role="2Oq$k0">
+              <node concept="nLn13" id="4g1gOgyr5G_" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4g1gOgyr60f" role="2OqNvi">
+                <node concept="1xMEDy" id="4g1gOgyr60h" role="1xVPHs">
+                  <node concept="chp4Y" id="4g1gOgyr65A" role="ri$Ld">
+                    <ref role="cht4Q" to="iowz:YNIIGPa1iv" resolve="BaseLanguageScriptAdapter" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="4g1gOgyr7DG" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="4g1gOgyr7wE" role="2OqNvi" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -1388,54 +1478,6 @@
               </node>
             </node>
             <node concept="3x8VRR" id="7sz_HDjV7$I" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="3VDmkwCJ8g5">
-    <property role="3GE5qa" value="scripts.conditionalScript" />
-    <ref role="1M2myG" to="iowz:YNIIGPa1iv" resolve="BaseLanguageScriptAdapter" />
-    <node concept="Um2eU" id="3VDmkwCJ8oe" role="1kkKnR">
-      <node concept="3clFbS" id="3VDmkwCJ8of" role="2VODD2">
-        <node concept="3SKdUt" id="3VDmkwCJa1R" role="3cqZAp">
-          <node concept="3SKdUq" id="3VDmkwCJa9n" role="3SKWNk">
-            <property role="3SKdUp" value="script cannot refer to static fields" />
-          </node>
-        </node>
-        <node concept="3cpWs6" id="3VDmkwCJ8U8" role="3cqZAp">
-          <node concept="3y3z36" id="3VDmkwCJ8y2" role="3cqZAk">
-            <node concept="2OqwBi" id="3VDmkwCJ9iM" role="3uHU7w">
-              <node concept="35c_gC" id="3VDmkwCJ8Bn" role="2Oq$k0">
-                <ref role="35c_gD" to="tpee:f_0M0x6" resolve="StaticFieldReference" />
-              </node>
-              <node concept="FGMqu" id="3VDmkwCJ9Q6" role="2OqNvi" />
-            </node>
-            <node concept="otxO1" id="3VDmkwCJ8tb" role="3uHU7B" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="4g1gOgyr5va">
-    <property role="3GE5qa" value="processIO" />
-    <ref role="1M2myG" to="iowz:4g1gOgy0q_n" resolve="HiddenTypeVarDeclaration" />
-    <node concept="nKS2y" id="4g1gOgyr5BC" role="1MLUbF">
-      <node concept="3clFbS" id="4g1gOgyr5BD" role="2VODD2">
-        <node concept="3clFbF" id="4g1gOgyr5GA" role="3cqZAp">
-          <node concept="2OqwBi" id="4g1gOgyr6UI" role="3clFbG">
-            <node concept="2OqwBi" id="4g1gOgyr5Kd" role="2Oq$k0">
-              <node concept="nLn13" id="4g1gOgyr5G_" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="4g1gOgyr60f" role="2OqNvi">
-                <node concept="1xMEDy" id="4g1gOgyr60h" role="1xVPHs">
-                  <node concept="chp4Y" id="4g1gOgyr65A" role="ri$Ld">
-                    <ref role="cht4Q" to="iowz:YNIIGPa1iv" resolve="BaseLanguageScriptAdapter" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="4g1gOgyr7DG" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="4g1gOgyr7wE" role="2OqNvi" />
           </node>
         </node>
       </node>
