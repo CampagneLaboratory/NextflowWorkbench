@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="org.campagnelab.workflow.configuration#6643674794994245037" uuid="32d56c97-ad0e-440c-bf4d-bb2bd39b94ea">
+    <generator name="" generatorUID="org.campagnelab.workflow.configuration#6643674794994245037" uuid="32d56c97-ad0e-440c-bf4d-bb2bd39b94ea">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -17,7 +17,6 @@
       <dependencies>
         <dependency reexport="false">f9b7dda6-7ab5-4936-ad1b-2d45c57833dc(org.campagnelab.workflow.configuration)</dependency>
         <dependency reexport="false">d4767029-894b-41e1-b76e-850baa598e5b(org.campagnelab.util.files)</dependency>
-        <dependency reexport="false">c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>

@@ -703,12 +703,6 @@
               <ref role="3bR37D" node="1B2iUhm3bS8" resolve="org.campagnelab.util.files" />
             </node>
           </node>
-          <node concept="1SiIV0" id="6eMkF2c4SNn" role="3bR37C">
-            <node concept="3bR9La" id="6eMkF2c4SNo" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="4oJiZHqTePI" resolve="org.campagnelab.workflow" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="6eMkF2c4SNp" role="3bR37C">
             <node concept="3bR9La" id="6eMkF2c4SNq" role="1SiIV1">
               <property role="3bR36h" value="false" />
