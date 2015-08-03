@@ -8,6 +8,10 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.generator.template.IfMacroContext;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 
@@ -34,6 +38,15 @@ public class QueriesGenerated {
   }
   public static Object propertyMacro_GetPropertyValue_4347565441058826089(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e33L, 0x5c331306bed94e38L, "keyfile")), MetaAdapterFactory.getProperty(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e3aL, 0x5c331306bed94e3bL, "value"));
+  }
+  public static boolean ifMacro_Condition_1572763280063425857(final IfMacroContext _context) {
+    return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x15d393decff85ddcL, "containerOptions")), MetaAdapterFactory.getConcept(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x15d393decff86092L, "org.campagnelab.workflow.configuration.structure.WithDocker"))).isNotEmpty();
+  }
+  public static boolean ifMacro_Condition_1572763280063664352(final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x15d393decff85ddcL, "containerOptions"))).isEmpty();
+  }
+  public static boolean ifMacro_Condition_1572763280063657222(final IfMacroContext _context) {
+    return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x15d393decff85ddcL, "containerOptions")), MetaAdapterFactory.getConcept(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x15d393decff86092L, "org.campagnelab.workflow.configuration.structure.WithDocker"))).isNotEmpty();
   }
   public static Iterable<SNode> sourceNodesQuery_4347565441083688308(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e33L, 0x5c331306bed94e39L, "setEnv")), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e31L, 0x5c331306bed94e32L, "file")), MetaAdapterFactory.getContainmentLink(0xd4767029894b41e1L, 0xb76e850baa598e5bL, 0x3c55a7bbf8aada41L, 0x3c55a7bbf8aada5aL, "lines"));

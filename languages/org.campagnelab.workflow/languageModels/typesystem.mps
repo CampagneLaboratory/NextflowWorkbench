@@ -45,6 +45,9 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -174,8 +177,22 @@
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
+        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
       </concept>
+      <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
+        <child id="1216383424566" name="executeBlock" index="Q6x$H" />
+        <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
+        <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
+      </concept>
+      <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
+      <concept id="1216383482742" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgument" flags="ng" index="Q6JDH">
+        <child id="1216383511839" name="argumentType" index="Q6QK4" />
+      </concept>
+      <concept id="1216390348809" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgumentReference" flags="nn" index="QwW4i">
+        <reference id="1216390348810" name="quickFixArgument" index="QwW4h" />
+      </concept>
+      <concept id="1216390987552" name="jetbrains.mps.lang.typesystem.structure.QuickFixDescriptionBlock" flags="in" index="QznSV" />
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -185,6 +202,14 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
+        <reference id="1216388525179" name="quickFix" index="QpYPw" />
+        <child id="1210784493590" name="actualArgument" index="3Coj4f" />
+      </concept>
+      <concept id="1210784384552" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntentionArgument" flags="ng" index="3CnSsL">
+        <reference id="1216386999476" name="quickFixArgument" index="QkamJ" />
+        <child id="1210784642750" name="value" index="3CoRuB" />
+      </concept>
       <concept id="1176543928247" name="jetbrains.mps.lang.typesystem.structure.IsSubtypeExpression" flags="nn" index="3JuTUA">
         <child id="1176543945045" name="subtypeExpression" index="3JuY14" />
         <child id="1176543950311" name="supertypeExpression" index="3JuZjQ" />
@@ -250,11 +275,17 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
+        <reference id="1171315804605" name="concept" index="2RRcyH" />
+      </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1227264722563" name="jetbrains.mps.lang.smodel.structure.EqualsStructurallyExpression" flags="nn" index="2YFouu" />
+      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
+        <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -343,6 +374,7 @@
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
@@ -4126,16 +4158,28 @@
               <node concept="3zZkjj" id="2fLVrqQ2Guw" role="2OqNvi">
                 <node concept="1bVj0M" id="2fLVrqQ2Gux" role="23t8la">
                   <node concept="3clFbS" id="2fLVrqQ2Guy" role="1bW5cS">
-                    <node concept="3clFbF" id="2fLVrqQ2Guz" role="3cqZAp">
-                      <node concept="2OqwBi" id="2fLVrqQ2Gu$" role="3clFbG">
-                        <node concept="1PxgMI" id="2fLVrqQ8wFI" role="2Oq$k0">
-                          <ref role="1PxNhF" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
-                          <node concept="37vLTw" id="2fLVrqQ2Gu_" role="1PxMeX">
+                    <node concept="3clFbF" id="1nj$XVg2ugF" role="3cqZAp">
+                      <node concept="1Wc70l" id="1nj$XVg2v9P" role="3clFbG">
+                        <node concept="2OqwBi" id="1nj$XVg2ung" role="3uHU7B">
+                          <node concept="37vLTw" id="1nj$XVg2ugD" role="2Oq$k0">
                             <ref role="3cqZAo" node="2fLVrqQ2GuB" resolve="it" />
                           </node>
+                          <node concept="1mIQ4w" id="1nj$XVg2uOd" role="2OqNvi">
+                            <node concept="chp4Y" id="1nj$XVg2uVv" role="cj9EA">
+                              <ref role="cht4Q" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+                            </node>
+                          </node>
                         </node>
-                        <node concept="3TrcHB" id="2fLVrqQ8x3b" role="2OqNvi">
-                          <ref role="3TsBF5" to="iowz:2fLVrqQ2EIf" resolve="fromStandardOutput" />
+                        <node concept="2OqwBi" id="2fLVrqQ2Gu$" role="3uHU7w">
+                          <node concept="1PxgMI" id="2fLVrqQ8wFI" role="2Oq$k0">
+                            <ref role="1PxNhF" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+                            <node concept="37vLTw" id="2fLVrqQ2Gu_" role="1PxMeX">
+                              <ref role="3cqZAo" node="2fLVrqQ2GuB" resolve="it" />
+                            </node>
+                          </node>
+                          <node concept="3TrcHB" id="2fLVrqQ8x3b" role="2OqNvi">
+                            <ref role="3TsBF5" to="iowz:2fLVrqQ2EIf" resolve="fromStandardOutput" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -4198,16 +4242,28 @@
               <node concept="3zZkjj" id="2fLVrqPYLuF" role="2OqNvi">
                 <node concept="1bVj0M" id="2fLVrqPYLuH" role="23t8la">
                   <node concept="3clFbS" id="2fLVrqPYLuI" role="1bW5cS">
-                    <node concept="3clFbF" id="2fLVrqPYLuJ" role="3cqZAp">
-                      <node concept="2OqwBi" id="2fLVrqPYLuK" role="3clFbG">
-                        <node concept="1PxgMI" id="2fLVrqQ8w64" role="2Oq$k0">
-                          <ref role="1PxNhF" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
-                          <node concept="37vLTw" id="2fLVrqPYLuL" role="1PxMeX">
+                    <node concept="3clFbF" id="1nj$XVg2vAX" role="3cqZAp">
+                      <node concept="1Wc70l" id="1nj$XVg2wst" role="3clFbG">
+                        <node concept="2OqwBi" id="1nj$XVg2vGe" role="3uHU7B">
+                          <node concept="37vLTw" id="1nj$XVg2vAV" role="2Oq$k0">
                             <ref role="3cqZAo" node="2fLVrqPYLuN" resolve="it" />
                           </node>
+                          <node concept="1mIQ4w" id="1nj$XVg2w9b" role="2OqNvi">
+                            <node concept="chp4Y" id="1nj$XVg2wgt" role="cj9EA">
+                              <ref role="cht4Q" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
+                            </node>
+                          </node>
                         </node>
-                        <node concept="3TrcHB" id="2fLVrqQ8wuW" role="2OqNvi">
-                          <ref role="3TsBF5" to="iowz:2fLVrqPJUQP" resolve="toStandardInput" />
+                        <node concept="2OqwBi" id="2fLVrqPYLuK" role="3uHU7w">
+                          <node concept="1PxgMI" id="2fLVrqQ8w64" role="2Oq$k0">
+                            <ref role="1PxNhF" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
+                            <node concept="37vLTw" id="2fLVrqPYLuL" role="1PxMeX">
+                              <ref role="3cqZAo" node="2fLVrqPYLuN" resolve="it" />
+                            </node>
+                          </node>
+                          <node concept="3TrcHB" id="2fLVrqQ8wuW" role="2OqNvi">
+                            <ref role="3TsBF5" to="iowz:2fLVrqPJUQP" resolve="toStandardInput" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -4570,6 +4626,124 @@
     <node concept="1YaCAy" id="4O3IO9sQXsx" role="1YuTPh">
       <property role="TrG5h" value="spread" />
       <ref role="1YaFvo" to="iowz:6TmjYLGgpKP" resolve="Spread" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="1nj$XVfZClb">
+    <property role="TrG5h" value="ConfigMustHaveWithDocker" />
+    <node concept="3clFbS" id="1nj$XVfZClc" role="18ibNy">
+      <node concept="3clFbJ" id="1nj$XVfZE3X" role="3cqZAp">
+        <node concept="3clFbS" id="1nj$XVfZE3Y" role="3clFbx">
+          <node concept="3clFbJ" id="1nj$XVfZHQP" role="3cqZAp">
+            <node concept="3clFbS" id="1nj$XVfZHQQ" role="3clFbx">
+              <node concept="2MkqsV" id="1nj$XVfZUzL" role="3cqZAp">
+                <node concept="Xl_RD" id="1nj$XVfZU$A" role="2MkJ7o">
+                  <property role="Xl_RC" value="Configuration must declare with-docker when some Process declares using a docker container." />
+                </node>
+                <node concept="1YBJjd" id="1nj$XVfZUBw" role="2OEOjV">
+                  <ref role="1YBMHb" node="1nj$XVfZE3N" resolve="workflowConfig" />
+                </node>
+                <node concept="3Cnw8n" id="1nj$XVfZZCU" role="2OEOjU">
+                  <ref role="QpYPw" node="1nj$XVfZUBX" resolve="AddWithDockerToConfig" />
+                  <node concept="3CnSsL" id="1nj$XVfZZEC" role="3Coj4f">
+                    <ref role="QkamJ" node="1nj$XVfZUTX" resolve="workflowConfig" />
+                    <node concept="1YBJjd" id="1nj$XVfZZER" role="3CoRuB">
+                      <ref role="1YBMHb" node="1nj$XVfZE3N" resolve="workflowConfig" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1nj$XVfZTS6" role="3clFbw">
+              <node concept="2OqwBi" id="1nj$XVfZSHp" role="2Oq$k0">
+                <node concept="2OqwBi" id="1nj$XVfZRS1" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1nj$XVfZJdv" role="2Oq$k0">
+                    <node concept="2OqwBi" id="1nj$XVfZIdq" role="2Oq$k0">
+                      <node concept="2OqwBi" id="1nj$XVfZHUf" role="2Oq$k0">
+                        <node concept="1YBJjd" id="1nj$XVfZHR4" role="2Oq$k0">
+                          <ref role="1YBMHb" node="1nj$XVfZE3N" resolve="workflowConfig" />
+                        </node>
+                        <node concept="I4A8Y" id="1nj$XVfZI3Q" role="2OqNvi" />
+                      </node>
+                      <node concept="2RRcyG" id="1nj$XVfZIm8" role="2OqNvi">
+                        <ref role="2RRcyH" to="iowz:5D7AjvYabas" resolve="Workflow" />
+                      </node>
+                    </node>
+                    <node concept="13MTOL" id="1nj$XVfZP_e" role="2OqNvi">
+                      <ref role="13MTZf" to="iowz:5D7AjvYaj9H" />
+                    </node>
+                  </node>
+                  <node concept="13MTOL" id="1nj$XVfZSf9" role="2OqNvi">
+                    <ref role="13MTZf" to="iowz:5D7AjvYaj9N" />
+                  </node>
+                </node>
+                <node concept="13MTOL" id="1nj$XVfZTpy" role="2OqNvi">
+                  <ref role="13MTZf" to="iowz:irqYu7yXR0" />
+                </node>
+              </node>
+              <node concept="3GX2aA" id="1nj$XVfZUz_" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="1nj$XVfZHRz" role="3cqZAp" />
+        </node>
+        <node concept="2OqwBi" id="1nj$XVfZFz_" role="3clFbw">
+          <node concept="2OqwBi" id="1nj$XVfZE6c" role="2Oq$k0">
+            <node concept="1YBJjd" id="1nj$XVfZE4c" role="2Oq$k0">
+              <ref role="1YBMHb" node="1nj$XVfZE3N" resolve="workflowConfig" />
+            </node>
+            <node concept="3Tsc0h" id="1nj$XVfZEPA" role="2OqNvi">
+              <ref role="3TtcxE" to="dlwq:1nj$XVfY5Rs" />
+            </node>
+          </node>
+          <node concept="1v1jN8" id="1nj$XVfZHQc" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1nj$XVfZE3N" role="1YuTPh">
+      <property role="TrG5h" value="workflowConfig" />
+      <ref role="1YaFvo" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="1nj$XVfZUBX">
+    <property role="TrG5h" value="AddWithDockerToConfig" />
+    <node concept="Q6JDH" id="1nj$XVfZUTX" role="Q6Id_">
+      <property role="TrG5h" value="workflowConfig" />
+      <node concept="3Tqbb2" id="1nj$XVfZUU5" role="Q6QK4">
+        <ref role="ehGHo" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
+      </node>
+    </node>
+    <node concept="Q5ZZ6" id="1nj$XVfZUBY" role="Q6x$H">
+      <node concept="3clFbS" id="1nj$XVfZUBZ" role="2VODD2">
+        <node concept="3clFbF" id="1nj$XVfZV6J" role="3cqZAp">
+          <node concept="2OqwBi" id="1nj$XVfZWtc" role="3clFbG">
+            <node concept="2OqwBi" id="1nj$XVfZVb0" role="2Oq$k0">
+              <node concept="QwW4i" id="1nj$XVfZV6I" role="2Oq$k0">
+                <ref role="QwW4h" node="1nj$XVfZUTX" resolve="workflowConfig" />
+              </node>
+              <node concept="3Tsc0h" id="1nj$XVfZVO_" role="2OqNvi">
+                <ref role="3TtcxE" to="dlwq:1nj$XVfY5Rs" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="1nj$XVfZYIy" role="2OqNvi">
+              <node concept="2ShNRf" id="1nj$XVfZYOB" role="25WWJ7">
+                <node concept="3zrR0B" id="1nj$XVfZZpg" role="2ShVmc">
+                  <node concept="3Tqbb2" id="1nj$XVfZZpi" role="3zrR0E">
+                    <ref role="ehGHo" to="dlwq:1nj$XVfY62i" resolve="WithDocker" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="1nj$XVfZZFS" role="QzAvj">
+      <node concept="3clFbS" id="1nj$XVfZZFT" role="2VODD2">
+        <node concept="3clFbF" id="1nj$XVfZZL0" role="3cqZAp">
+          <node concept="Xl_RD" id="1nj$XVfZZKZ" role="3clFbG">
+            <property role="Xl_RC" value="Add WithDocker Container Option" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
