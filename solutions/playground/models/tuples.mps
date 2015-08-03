@@ -3,10 +3,23 @@
   <persistence version="9" />
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports />
   <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+    </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
@@ -39,8 +52,18 @@
       <concept id="4018964125401495568" name="org.campagnelab.workflow.structure.Tuple" flags="ng" index="knwa4">
         <child id="7391172440899058539" name="elements" index="2zSOd7" />
       </concept>
+      <concept id="2590112629724566341" name="org.campagnelab.workflow.structure.InputValue" flags="ng" index="2l3rVN">
+        <reference id="2590112629724567366" name="input" index="2l3rFK" />
+      </concept>
+      <concept id="2590112629719316315" name="org.campagnelab.workflow.structure.OutputExpression" flags="ng" index="2lntFH">
+        <child id="2590112629719316376" name="expression" index="2lntCI" />
+      </concept>
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
+        <child id="2590112629719313759" name="expression" index="2lns3D" />
+      </concept>
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
+        <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
       </concept>
@@ -61,12 +84,14 @@
       </concept>
       <concept id="3855674281012525202" name="org.campagnelab.workflow.structure.BooleanLiteral" flags="ng" index="2$RAf6" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
+      <concept id="1101938165405538715" name="org.campagnelab.workflow.structure.Filter" flags="ng" index="1ueStR" />
       <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
         <child id="7391172440887133304" name="type" index="2ybFLk" />
       </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
+        <child id="3857878650537656757" name="functions" index="1ylr64" />
       </concept>
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
@@ -113,11 +138,35 @@
       <ref role="2$rEH4" node="6qiI2N4zIuI" resolve="AcceptTupple" />
       <node concept="1uYdA0" id="6qiI2N4zIvS" role="1uLvPH">
         <ref role="1uK_4X" node="6qiI2N4zIr2" resolve="someTupleChannel" />
+        <node concept="1ueStR" id="2fLVrqQF2MJ" role="1ylr64" />
       </node>
     </node>
   </node>
   <node concept="2ulcR8" id="6qiI2N4zIuI">
     <property role="TrG5h" value="AcceptTupple" />
+    <node concept="2lYRya" id="2fLVrqQRirE" role="2ulM79">
+      <property role="TrG5h" value="a" />
+      <node concept="1utKzZ" id="2fLVrqQRirU" role="2ybFLk" />
+      <node concept="2lntFH" id="2fLVrqR9lhY" role="2lns3D">
+        <node concept="2l3rVN" id="2fLVrqRb0yD" role="2lntCI">
+          <ref role="2l3rFK" node="2fLVrqQH3SD" resolve="value" />
+        </node>
+      </node>
+    </node>
+    <node concept="2lYRya" id="2fLVrqRb0yH" role="2ulM79">
+      <property role="TrG5h" value="x" />
+      <node concept="16pRw0" id="2fLVrqRb0yZ" role="2ybFLk" />
+      <node concept="2lntFH" id="2fLVrqRb0zd" role="2lns3D">
+        <node concept="3cpWs3" id="2fLVrqRb0zx" role="2lntCI">
+          <node concept="2l3rVN" id="2fLVrqRb0zo" role="3uHU7B">
+            <ref role="2l3rFK" node="2fLVrqQH3SD" resolve="value" />
+          </node>
+          <node concept="3cmrfG" id="2fLVrqRcO9U" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2mjA9o" id="2bVBkcPgVxr" role="2ulM7n">
       <node concept="knwa4" id="2fLVrqPYDsb" role="2ybFLk">
         <node concept="2zSw2O" id="2fLVrqPYDsc" role="2zSOd7">
@@ -129,6 +178,10 @@
           <node concept="16pRw0" id="2fLVrqPYDsf" role="2ybFLk" />
         </node>
       </node>
+    </node>
+    <node concept="2mjA9o" id="2fLVrqQH3SD" role="2ulM7n">
+      <property role="TrG5h" value="value" />
+      <node concept="1utKzZ" id="2fLVrqQH3SZ" role="2ybFLk" />
     </node>
     <node concept="3Y$Zt1" id="6qiI2N4zIv$" role="2ulM7a">
       <node concept="19SGf9" id="6qiI2N4zIvA" role="3Y$PkS">

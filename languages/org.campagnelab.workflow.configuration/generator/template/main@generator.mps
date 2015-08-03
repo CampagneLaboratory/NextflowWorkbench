@@ -153,8 +153,8 @@
     </node>
     <node concept="3lhOvk" id="4EhqUfwetZA" role="3lj3bC">
       <property role="13Pg2o" value="true" />
-      <ref role="30HIoZ" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
       <ref role="3lhOvi" node="6qWs7gtKwTO" resolve="runLocal" />
+      <ref role="30HIoZ" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
     </node>
     <node concept="3lhOvk" id="3LlDVJTpNSM" role="3lj3bC">
       <property role="13Pg2o" value="true" />
