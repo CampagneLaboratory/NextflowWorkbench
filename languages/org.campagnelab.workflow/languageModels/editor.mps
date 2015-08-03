@@ -2,12 +2,13 @@
 <model ref="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,6 +21,7 @@
     <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.files.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
+    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
@@ -160,6 +162,7 @@
       <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
+      <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
         <property id="1088613081987" name="vertical" index="1QpmdY" />
         <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
@@ -280,9 +283,6 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
-        <reference id="1139867957129" name="concept" index="1_rbq0" />
-      </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
@@ -2876,17 +2876,12 @@
       </node>
       <node concept="2PzhpH" id="5cB7qdZLDF3" role="2PL9iG">
         <node concept="3clFbS" id="5cB7qdZLDF4" role="2VODD2">
-          <node concept="34ab3g" id="5cB7qdZRYu0" role="3cqZAp">
-            <property role="35gtTG" value="info" />
-            <node concept="Xl_RD" id="5cB7qdZRYu2" role="34bqiv">
-              <property role="Xl_RC" value="ctrl space being hit" />
-            </node>
-          </node>
-          <node concept="3clFbF" id="5cB7qdZLEqr" role="3cqZAp">
-            <node concept="2OqwBi" id="5cB7qdZLF8i" role="3clFbG">
-              <node concept="0GJ7k" id="5cB7qdZLEqq" role="2Oq$k0" />
-              <node concept="1_qnLN" id="5cB7qdZLPN8" role="2OqNvi">
-                <ref role="1_rbq0" to="iowz:3m9W35nCwTK" resolve="ChannelFunction" />
+          <node concept="3clFbF" id="QcMhj4wH5f" role="3cqZAp">
+            <node concept="2OqwBi" id="QcMhj4wH5Q" role="3clFbG">
+              <node concept="1Q80Hx" id="QcMhj4wH5d" role="2Oq$k0" />
+              <node concept="liA8E" id="QcMhj4wHsx" role="2OqNvi">
+                <ref role="37wK5l" to="srng:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+                <node concept="0GJ7k" id="QcMhj4wHtU" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -2962,31 +2957,6 @@
       <node concept="l2Vlx" id="6TmjYLGeG24" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="6TmjYLGgo$J">
-    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
-    <ref role="1XX52x" to="iowz:6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
-    <node concept="3EZMnI" id="6TmjYLGgoOc" role="2wV5jI">
-      <node concept="PMmxH" id="6TmjYLGgoOd" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
-        <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
-        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
-      </node>
-      <node concept="3F0ifn" id="6TmjYLGgp8E" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
-      </node>
-      <node concept="3F2HdR" id="6TmjYLGgp8M" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:6TmjYLGgovv" />
-        <node concept="l2Vlx" id="6TmjYLGgp8O" role="2czzBx" />
-      </node>
-      <node concept="3F0ifn" id="6TmjYLGgp8Z" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
-      </node>
-      <node concept="l2Vlx" id="6TmjYLGgoOh" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="1h_SRR" id="3OiMbJl7VF">
     <property role="TrG5h" value="ChannelFunctionMap" />
     <property role="3GE5qa" value="channelFunctions" />
@@ -3021,6 +2991,34 @@
         </node>
       </node>
       <node concept="l2Vlx" id="QcMhj3Vu63" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6TmjYLGgo$J">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <ref role="1XX52x" to="iowz:6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+    <node concept="3EZMnI" id="6TmjYLGgoOc" role="2wV5jI">
+      <node concept="PMmxH" id="6TmjYLGgoOd" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
+        <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
+        <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
+      </node>
+      <node concept="3F0ifn" id="6TmjYLGgp8E" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
+        <node concept="11LMrY" id="QcMhj4opl8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="6TmjYLGgp8M" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:6TmjYLGgovv" />
+        <node concept="l2Vlx" id="6TmjYLGgp8O" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="6TmjYLGgp8Z" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
+      </node>
+      <node concept="l2Vlx" id="6TmjYLGgoOh" role="2iSdaV" />
     </node>
   </node>
 </model>

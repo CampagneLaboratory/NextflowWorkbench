@@ -1111,5 +1111,14 @@
       </node>
     </node>
   </node>
+  <node concept="3FK_9_" id="QcMhj4i2iQ">
+    <property role="TrG5h" value="SubstituteFunctionsForOthers" />
+    <node concept="3FOIzC" id="QcMhj4i2oX" role="3FOPby">
+      <ref role="3FOWKa" to="iowz:6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+      <node concept="tYCnQ" id="QcMhj4i4qf" role="tZc4B">
+        <ref role="uz4UX" to="iowz:6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+      </node>
+    </node>
+  </node>
 </model>
 
