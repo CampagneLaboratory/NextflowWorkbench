@@ -199,12 +199,14 @@
           <ref role="3YE7sm" node="2bVBkcP9XXP" resolve="stringToEcho" />
         </node>
         <node concept="19SUe$" id="QcMhj40dgw" role="19SJt6">
-          <property role="19SUeA" value=" &gt;&gt; " />
+          <property role="19SUeA" value=" &gt;&gt;  " />
         </node>
-        <node concept="2b_LqF" id="QcMhj47$IO" role="19SJt6">
+        <node concept="2b_LqF" id="QcMhj4fU86" role="19SJt6">
           <ref role="2b_LqC" node="67XPjarXEap" resolve="fileWithEcho" />
         </node>
-        <node concept="19SUe$" id="QcMhj47$IP" role="19SJt6" />
+        <node concept="19SUe$" id="QcMhj4fU87" role="19SJt6">
+          <property role="19SUeA" value=" " />
+        </node>
       </node>
     </node>
     <node concept="2mjA9o" id="2bVBkcP9XXP" role="2ulM7n">
