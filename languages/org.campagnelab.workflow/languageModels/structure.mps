@@ -13,6 +13,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.files" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -21,9 +22,14 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
+    <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -48,12 +54,14 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -71,19 +79,19 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="processOptions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="648FhJjeUB7" resolve="ProcessOptions" />
+      <ref role="20lvS9" to="dlwq:5KN4KqZbJnZ" resolve="ProcessOptions" />
     </node>
     <node concept="1TJgyj" id="6tX5nBTaziI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="inputs" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7gAPJCESMFi" resolve="Channel" />
+      <ref role="20lvS9" node="2fLVrqPJSZI" resolve="ProcessInput" />
     </node>
     <node concept="1TJgyj" id="6tX5nBTaziK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="outputs" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7gAPJCESMFi" resolve="Channel" />
+      <ref role="20lvS9" node="2fLVrqQ2DkW" resolve="ProcessOutput" />
     </node>
     <node concept="1TJgyj" id="6tX5nBTaziN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -117,6 +125,10 @@
     <property role="R4oN_" value="A Nextflow-like workflow" />
     <property role="MwhBj" value="${module}/icons/WorkflowIcon-2.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="PffOQSWT20" role="1TKVEl">
+      <property role="TrG5h" value="description" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="3m26PihhBZE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="globalChannels" />
@@ -129,11 +141,16 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="5D7AjvYaj9M" resolve="ProcessRef" />
     </node>
-    <node concept="1TJgyj" id="49c3W7NLHUt" role="1TKVEi">
+    <node concept="1TJgyj" id="5HJ0QzxBRcw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="executor" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="49c3W7NLHXs" resolve="Executor" />
+      <property role="20kJfa" value="reports" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5HJ0QzxC1s2" resolve="Report" />
+    </node>
+    <node concept="1TJgyj" id="5wcZjhOWFij" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="description" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
     <node concept="PrWs8" id="5D7AjvYabat" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -145,9 +162,6 @@
   <node concept="1TIwiD" id="5D7AjvYaj9M">
     <property role="TrG5h" value="ProcessRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5CFNYIF2zMf" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
     <node concept="1TJgyj" id="5D7AjvYaj9N" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="process" />
@@ -170,36 +184,39 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="processOptions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="648FhJjeUB7" resolve="ProcessOptions" />
+      <ref role="20lvS9" to="dlwq:5KN4KqZbJnZ" resolve="ProcessOptions" />
+    </node>
+    <node concept="PrWs8" id="5CFNYIF2zMf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="1HX2cDt6rj6">
     <property role="TrG5h" value="String" />
     <property role="34LRSv" value="string" />
     <property role="R4oN_" value="string as input or output" />
-    <property role="3GE5qa" value="types" />
-    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
   </node>
   <node concept="1TIwiD" id="1HX2cDt6B3a">
     <property role="TrG5h" value="File" />
     <property role="34LRSv" value="file" />
     <property role="R4oN_" value="file as input or output" />
-    <property role="3GE5qa" value="types" />
-    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
   </node>
   <node concept="1TIwiD" id="4exDSOtPEH9">
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="processTypeDeclarations" />
     <property role="TrG5h" value="Integer" />
     <property role="34LRSv" value="int" />
     <property role="R4oN_" value="integer as input or output" />
-    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
+    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
   </node>
   <node concept="1TIwiD" id="4exDSOtPEXM">
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="processTypeDeclarations" />
     <property role="TrG5h" value="Boolean" />
     <property role="34LRSv" value="boolean" />
     <property role="R4oN_" value="boolean as input or output" />
-    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
+    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
   </node>
   <node concept="1TIwiD" id="7gAPJCERwXU">
     <property role="3GE5qa" value="" />
@@ -208,14 +225,11 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5CFNYIF2xH7" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
     <node concept="1TJgyj" id="7gAPJCET8v7" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="connectedTo" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3m26PihhBwN" resolve="OutChannels" />
+      <ref role="20lvS9" node="3m26PihhBwN" resolve="OutChannelContainer" />
     </node>
     <node concept="1TJgyj" id="3m9W35nR46P" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -223,13 +237,19 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3m9W35nCwTK" resolve="ChannelFunction" />
     </node>
+    <node concept="PrWs8" id="5CFNYIF2xH7" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCERFHl">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="StringChannel" />
     <property role="34LRSv" value="string channel" />
     <property role="R4oN_" value="this channel will contain strings" />
     <ref role="1TJDcQ" node="5ok1XDk_tCa" resolve="NonListNonFileChannel" />
+    <node concept="asaX9" id="2bVBkcPdwTk" role="lGtFl">
+      <property role="YLQ7P" value="Use ProcessInputOutput instead" />
+    </node>
     <node concept="1TJgyj" id="7gAPJCESTOD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="string" />
@@ -238,11 +258,14 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCERGEu">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="IntegerChannel" />
     <property role="34LRSv" value="integer channel" />
     <property role="R4oN_" value="this channel will contain integers" />
     <ref role="1TJDcQ" node="5ok1XDk_tCa" resolve="NonListNonFileChannel" />
+    <node concept="asaX9" id="6qiI2N5o0Ba" role="lGtFl">
+      <property role="YLQ7P" value="Use ProcessInputOutput instead" />
+    </node>
     <node concept="1TJgyj" id="7gAPJCERGEx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="integer" />
@@ -251,11 +274,14 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCERGEz">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="BooleanChannel" />
     <property role="34LRSv" value="boolean channel" />
     <property role="R4oN_" value="this channel will contain booleans" />
     <ref role="1TJDcQ" node="5ok1XDk_tCa" resolve="NonListNonFileChannel" />
+    <node concept="asaX9" id="6qiI2N5o0w2" role="lGtFl">
+      <property role="YLQ7P" value="Use ProcessInputOutput instead" />
+    </node>
     <node concept="1TJgyj" id="7gAPJCERGE$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="boolean" />
@@ -264,11 +290,14 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCERGEA">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="FileChannel" />
     <property role="34LRSv" value="file channel" />
     <property role="R4oN_" value="this channel will contain files" />
-    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="Channel" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+    <node concept="asaX9" id="6qiI2N5o0B6" role="lGtFl">
+      <property role="YLQ7P" value="Use ProcessInputOutput instead" />
+    </node>
     <node concept="1TJgyj" id="7gAPJCERGEB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="file" />
@@ -277,16 +306,27 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCESMFi">
-    <property role="3GE5qa" value="channelTypes" />
-    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="processIO" />
+    <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
-    <property role="TrG5h" value="Channel" />
+    <property role="TrG5h" value="ProcessInputOutput" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6qiI2N4IZn1" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6qiI2N4J0hS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCESTMU">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="OutputChannel" />
-    <ref role="1TJDcQ" node="3m26PihhBwN" resolve="OutChannels" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3m26PihhBwN" resolve="OutChannelContainer" />
   </node>
   <node concept="1TIwiD" id="dxSprUGgfG">
     <property role="3GE5qa" value="scripts" />
@@ -342,11 +382,17 @@
     </node>
   </node>
   <node concept="1TIwiD" id="70dPcAeD8Uh">
-    <property role="3GE5qa" value="types" />
-    <property role="TrG5h" value="ValueInAChannel" />
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="TrG5h" value="ProcessValueTypeDeclaration" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6qiI2N4Hxhu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
+    </node>
     <node concept="PrWs8" id="70dPcAeD8VZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -359,25 +405,34 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="70dPcAeD8Uh" resolve="ValueInAChannel" />
+      <ref role="20lvS9" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     </node>
     <node concept="PrWs8" id="70dPcAeDqfq" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
   <node concept="1TIwiD" id="3v6eDgz_YY5">
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="processTypeDeclarations" />
     <property role="TrG5h" value="List" />
     <property role="34LRSv" value="list" />
     <property role="R4oN_" value="list as input or output" />
-    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
+    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
+    <node concept="1TJgyj" id="6qiI2N4G1iL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3v6eDgz_YY9">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="ListChannel" />
     <property role="34LRSv" value="list channel" />
-    <property role="R4oN_" value="this channel will contain lists" />
-    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="Channel" />
+    <property role="R4oN_" value="this channel contains lists" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+    <node concept="asaX9" id="6qiI2N5o0Bc" role="lGtFl">
+      <property role="YLQ7P" value="Use ProcessInputOutput instead" />
+    </node>
     <node concept="1TJgyj" id="3v6eDgz_YZh" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="list" />
@@ -385,25 +440,15 @@
       <ref role="20lvS9" node="3v6eDgz_YY5" resolve="List" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3v6eDgzA3wg">
-    <property role="3GE5qa" value="types" />
-    <property role="TrG5h" value="Tuple" />
-    <property role="34LRSv" value="tuple" />
-    <property role="R4oN_" value="tuple as input or output" />
-    <ref role="1TJDcQ" node="70dPcAeD8Uh" resolve="ValueInAChannel" />
-    <node concept="1TJgyj" id="2Hhp$WDzSdA" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3v6eDgzA3ze">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="TupleChannel" />
     <property role="34LRSv" value="tuple channel" />
     <property role="R4oN_" value="this channel will contain tuples" />
     <ref role="1TJDcQ" node="5ok1XDk_tCa" resolve="NonListNonFileChannel" />
+    <node concept="asaX9" id="6qiI2N5o0Bg" role="lGtFl">
+      <property role="YLQ7P" value="Use ProcessInputOutput instead" />
+    </node>
     <node concept="1TJgyj" id="3v6eDgzA3zf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tuple" />
@@ -424,11 +469,11 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3m9W35nszV6">
-    <property role="3GE5qa" value="types" />
-    <property role="TrG5h" value="ValueInAChannelNoTuple" />
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="TrG5h" value="NotATupleType" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="70dPcAeD8Uh" resolve="ValueInAChannel" />
+    <ref role="1TJDcQ" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
   </node>
   <node concept="1TIwiD" id="3m9W35nx3Yj">
     <property role="3GE5qa" value="scripts" />
@@ -475,203 +520,56 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCwTL">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.collate" />
     <property role="TrG5h" value="Collate" />
     <property role="34LRSv" value="collate" />
     <property role="R4oN_" value="transforms a channel such that the emitted values are grouped into lists containing n items" />
     <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
+    <node concept="1TJgyj" id="2W8f1273GsD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="option" />
+      <ref role="20lvS9" node="2W8f1273G7R" resolve="CollateOption" />
+    </node>
+    <node concept="1TJgyj" id="2W8f127geC1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="allowIncomplete" />
+      <ref role="20lvS9" node="2W8f1273GaR" resolve="CollateAllowIncompleteTuples" />
+    </node>
     <node concept="1TJgyi" id="3m9W35nCx58" role="1TKVEl">
       <property role="TrG5h" value="n" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m9W35nCwXC">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
     <property role="TrG5h" value="Flatten" />
     <property role="34LRSv" value="flatten" />
     <property role="R4oN_" value="transforms a channel's lists of elements into single entries to be emitted separately" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCxaI">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
     <property role="TrG5h" value="ToList" />
     <property role="34LRSv" value="toList" />
     <property role="R4oN_" value="converts all the items emitted by a channel to a single list object and emits the list as a single item " />
     <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCxgw">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
     <property role="TrG5h" value="ToSortedList" />
     <property role="34LRSv" value="toSortedList" />
     <property role="R4oN_" value="collects all the items emitted by a list object, sorts them, and then emits the list as a single item" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
-  </node>
-  <node concept="1TIwiD" id="49c3W7NLHXs">
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="TrG5h" value="Executor" />
-    <property role="3GE5qa" value="executors" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="49c3W7NLHXt">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="Local" />
-    <property role="34LRSv" value="local" />
-    <property role="R4oN_" value="executes the workflow on the local, single machine" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="49c3W7NLHXu">
-    <property role="3GE5qa" value="executors" />
-    <property role="TrG5h" value="SGE" />
-    <property role="R4oN_" value="executes the workflow on the SGE computer network" />
-    <property role="34LRSv" value="sge" />
-    <ref role="1TJDcQ" node="49c3W7NLHXs" resolve="Executor" />
-  </node>
-  <node concept="1TIwiD" id="21kmpcSWrHO">
-    <property role="TrG5h" value="NumCPUs" />
-    <property role="34LRSv" value="numCPUs" />
-    <property role="R4oN_" value="defines the number of CPU required by the process' task" />
-    <property role="3GE5qa" value="processOptions" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-    <node concept="1TJgyi" id="21kmpcSWrYx" role="1TKVEl">
-      <property role="TrG5h" value="num" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="21kmpcSZaiX">
-    <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="Queue" />
-    <property role="34LRSv" value="queue" />
-    <property role="R4oN_" value="allows you to set the queue where jobs are schedules when using a grid based executor in the pipeline" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-    <node concept="1TJgyj" id="648FhJjgR8q" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="queueElement" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="648FhJjgRcI" resolve="QueueElement" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="21kmpcSZaoZ">
-    <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="Memory" />
-    <property role="34LRSv" value="memory" />
-    <property role="R4oN_" value="defines how much memory the process is allowed to use" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-    <node concept="1TJgyi" id="21kmpcSZaq$" role="1TKVEl">
-      <property role="TrG5h" value="memory" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="21kmpcSZaqB">
-    <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="Penv" />
-    <property role="34LRSv" value="penv" />
-    <property role="R4oN_" value="define the parallel environment to be used when submitting a parallel task to the SGE resource manager" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-    <node concept="1TJgyi" id="21kmpcSZase" role="1TKVEl">
-      <property role="TrG5h" value="penv" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="21kmpcSZash">
-    <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="TimeAllowed" />
-    <property role="34LRSv" value="time allowed" />
-    <property role="R4oN_" value="allows you to define how long a process is allowed to run" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-    <node concept="1TJgyi" id="21kmpcSZatU" role="1TKVEl">
-      <property role="TrG5h" value="time" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="21kmpcSZatX">
-    <property role="TrG5h" value="ClusterOptions" />
-    <property role="34LRSv" value="cluster options" />
-    <property role="R4oN_" value="allows native configuration options to be accepted by the cluster submit command" />
-    <property role="3GE5qa" value="processOptions" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-    <node concept="1TJgyi" id="21kmpcSZavC" role="1TKVEl">
-      <property role="TrG5h" value="clusterOptions" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="21kmpcT1kGG">
-    <property role="TrG5h" value="NextflowConfig" />
-    <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="nextflow.config" />
-    <property role="R4oN_" value="configuration for nextflow" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="21kmpcT1kJP" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="executor" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="49c3W7NLHXs" resolve="Executor" />
-    </node>
-    <node concept="1TJgyj" id="59canFNyUwK" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="processOptions" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="648FhJjeUB7" resolve="ProcessOptions" />
-    </node>
-    <node concept="PrWs8" id="21kmpcThJdl" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4JZd7mB0N1L">
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="TrG5h" value="ErrorStrategies" />
-    <property role="3GE5qa" value="processOptions.errorStrategies" />
-    <ref role="1TJDcQ" node="648FhJjeUB7" resolve="ProcessOptions" />
-  </node>
-  <node concept="1TIwiD" id="4JZd7mB0N1V">
-    <property role="3GE5qa" value="processOptions.errorStrategies" />
-    <property role="TrG5h" value="Ignore" />
-    <property role="34LRSv" value="ignore" />
-    <property role="R4oN_" value="the process does not stop on an error condition, it only notifies of the error" />
-    <ref role="1TJDcQ" node="4JZd7mB0N1L" resolve="ErrorStrategies" />
-  </node>
-  <node concept="1TIwiD" id="4JZd7mB0N25">
-    <property role="3GE5qa" value="processOptions.errorStrategies" />
-    <property role="TrG5h" value="Retry" />
-    <property role="34LRSv" value="retry" />
-    <property role="R4oN_" value="allows for a process to be resubmitted for execution after returning an error condition" />
-    <ref role="1TJDcQ" node="4JZd7mB0N1L" resolve="ErrorStrategies" />
-    <node concept="1TJgyi" id="45Qsg8B672I" role="1TKVEl">
-      <property role="TrG5h" value="maxRetries" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="6IBo8PYrEBM" role="1TKVEl">
-      <property role="TrG5h" value="maxErrors" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="648FhJjeUB7">
-    <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="ProcessOptions" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="648FhJjgRcI">
-    <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="QueueElement" />
-    <property role="34LRSv" value="name" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="648FhJjgRcJ" role="1TKVEl">
-      <property role="TrG5h" value="queue" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
+    <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
   </node>
   <node concept="1TIwiD" id="5AoFZCLt6Ly">
     <property role="TrG5h" value="GlobalChannel" />
     <property role="34LRSv" value="global channel" />
-    <ref role="1TJDcQ" node="3m26PihhBwN" resolve="OutChannels" />
+    <ref role="1TJDcQ" node="3m26PihhBwN" resolve="OutChannelContainer" />
     <node concept="1TJgyj" id="3m26PihhBJU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4Toykm43Ope" resolve="GlobalExpression" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="5AoFZCLzEJD">
@@ -693,7 +591,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3m26PihhBwN">
-    <property role="TrG5h" value="OutChannels" />
+    <property role="TrG5h" value="OutChannelContainer" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -702,11 +600,12 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3m26PihhBXV">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalStringType" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalStringType" />
     <property role="TrG5h" value="RangeOfCharLiterals" />
     <property role="34LRSv" value="range" />
     <property role="R4oN_" value="creates a range of strings from start to end inclusive as individual emissions" />
-    <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="GlobalStringContainer" />
+    <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="OneOrMoreStrings" />
+    <node concept="asaX9" id="5wcZjhPjV0s" role="lGtFl" />
     <node concept="1TJgyi" id="3m26PihhBXW" role="1TKVEl">
       <property role="TrG5h" value="start" />
       <ref role="AX2Wp" to="tpee:htXhg4R" resolve="_CharConstant_String" />
@@ -717,173 +616,188 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3m26PihlgGj">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalBooleanExpression" />
-    <property role="34LRSv" value="boolean" />
-    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
+    <property role="3GE5qa" value="channelInitializers" />
+    <property role="TrG5h" value="BooleanInitializer" />
+    <property role="34LRSv" value="booleans" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUZV" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Ns" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="boolean" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7yi" resolve="GlobalBooleanLiteral" />
+      <ref role="20lvS9" node="3m26Pihn7yi" resolve="BooleanLiteral" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26PihlgLm">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalIntegerExpression" />
-    <property role="34LRSv" value="int" />
-    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
+    <property role="3GE5qa" value="channelInitializers" />
+    <property role="TrG5h" value="IntegerInitializer" />
+    <property role="34LRSv" value="ints" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUZJ" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Nw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="integer" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7g0" resolve="GlobalIntegerContainer" />
+      <ref role="20lvS9" node="3m26Pihn7g0" resolve="OneOrMoreIntegers" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26PihlgMf">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalStringExpression" />
-    <property role="34LRSv" value="string" />
-    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
+    <property role="3GE5qa" value="channelInitializers" />
+    <property role="TrG5h" value="StringInitializer" />
+    <property role="34LRSv" value="strings" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUUC" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7N$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="string" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7nO" resolve="GlobalStringContainer" />
+      <ref role="20lvS9" node="3m26Pihn7nO" resolve="OneOrMoreStrings" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26PihlgPf">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalListExpression" />
-    <property role="34LRSv" value="list" />
-    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
+    <property role="3GE5qa" value="channelInitializers" />
+    <property role="TrG5h" value="ListInitializer" />
+    <property role="34LRSv" value="lists" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUZG" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Ny" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="list" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7B_" resolve="GlobalListContainer" />
+      <ref role="20lvS9" node="3m26Pihn7B_" resolve="OneOrMoreLists" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26PihlgQQ">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalFileExpression" />
-    <property role="34LRSv" value="file" />
-    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
+    <property role="3GE5qa" value="channelInitializers" />
+    <property role="TrG5h" value="FileInitializer" />
+    <property role="34LRSv" value="files" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUZP" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Nu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="file" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="59canFN3Dy7" resolve="GlobalFilePath" />
+      <ref role="20lvS9" node="59canFN3Dy7" resolve="FilePath" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn7g0">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalIntegerType" />
-    <property role="TrG5h" value="GlobalIntegerContainer" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalIntegerType" />
+    <property role="TrG5h" value="OneOrMoreIntegers" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjV01" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="3m26Pihn7nO">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalStringType" />
-    <property role="TrG5h" value="GlobalStringContainer" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalStringType" />
+    <property role="TrG5h" value="OneOrMoreStrings" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjV0p" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="3m26Pihn7yi">
-    <property role="3GE5qa" value="setChannelValues.globalTypes" />
-    <property role="TrG5h" value="GlobalBooleanLiteral" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes" />
+    <property role="TrG5h" value="BooleanLiteral" />
     <property role="34LRSv" value="value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjYDv" role="lGtFl" />
     <node concept="1TJgyi" id="3m26Pihn850" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn7B_">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
-    <property role="TrG5h" value="GlobalListContainer" />
-    <property role="34LRSv" value="list" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalListType" />
+    <property role="TrG5h" value="OneOrMoreLists" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjV0j" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="3m26Pihn7F7">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
-    <property role="TrG5h" value="GlobalStringLiteralList" />
-    <property role="34LRSv" value="string list" />
-    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListContainer" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalListType" />
+    <property role="TrG5h" value="StringLiteralList" />
+    <property role="34LRSv" value="list&lt;string&gt;" />
+    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="OneOrMoreLists" />
+    <node concept="asaX9" id="5wcZjhPjV0m" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Ho" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="string" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7nO" resolve="GlobalStringContainer" />
+      <ref role="20lvS9" node="3m26Pihn7nO" resolve="OneOrMoreStrings" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn7Ii">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
-    <property role="TrG5h" value="GlobalIntegerLiteralList" />
-    <property role="34LRSv" value="int list" />
-    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListContainer" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalListType" />
+    <property role="TrG5h" value="IntegerLiteralList" />
+    <property role="34LRSv" value="list&lt;int&gt;" />
+    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="OneOrMoreLists" />
+    <node concept="asaX9" id="5wcZjhPjV0a" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Ij" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="integer" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7g0" resolve="GlobalIntegerContainer" />
+      <ref role="20lvS9" node="3m26Pihn7g0" resolve="OneOrMoreIntegers" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn7Jd">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
-    <property role="TrG5h" value="GlobalBooleanLiteralList" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalListType" />
+    <property role="TrG5h" value="BooleanLiteralList" />
     <property role="34LRSv" value="boolean list" />
-    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListContainer" />
+    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="OneOrMoreLists" />
+    <node concept="asaX9" id="5wcZjhPjV0d" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Je" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="boolean" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7yi" resolve="GlobalBooleanLiteral" />
+      <ref role="20lvS9" node="3m26Pihn7yi" resolve="BooleanLiteral" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn7K8">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
-    <property role="TrG5h" value="GlobalFileLiteralList" />
-    <property role="34LRSv" value="file list" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalListType" />
+    <property role="TrG5h" value="FileLiteralList" />
+    <property role="34LRSv" value="list&lt;file&gt;" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjV07" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Mv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="file" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="59canFN3Dy7" resolve="GlobalFilePath" />
+      <ref role="20lvS9" node="59canFN3Dy7" resolve="FilePath" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn7Np">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalListType" />
-    <property role="TrG5h" value="GlobalListLiteral" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalListType" />
+    <property role="TrG5h" value="ListLiteral" />
     <property role="34LRSv" value="list" />
-    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="GlobalListContainer" />
+    <ref role="1TJDcQ" node="3m26Pihn7B_" resolve="OneOrMoreLists" />
+    <node concept="asaX9" id="5wcZjhPjV0g" role="lGtFl" />
     <node concept="1TJgyj" id="3m26Pihn7Nq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="list" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7B_" resolve="GlobalListContainer" />
+      <ref role="20lvS9" node="3m26Pihn7B_" resolve="OneOrMoreLists" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn81q">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalStringType" />
-    <property role="TrG5h" value="GlobalStringLiteral" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalStringType" />
+    <property role="TrG5h" value="StringLiteral" />
     <property role="34LRSv" value="value" />
-    <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="GlobalStringContainer" />
+    <ref role="1TJDcQ" node="3m26Pihn7nO" resolve="OneOrMoreStrings" />
+    <node concept="asaX9" id="5wcZjhPjYD4" role="lGtFl" />
     <node concept="1TJgyi" id="3m26Pihn81r" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn82l">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalIntegerType" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalIntegerType" />
     <property role="TrG5h" value="RangeOfIntegerLiterals" />
     <property role="34LRSv" value="range" />
     <property role="R4oN_" value="creates a range of integers from start to end inclusive as individual emissions" />
-    <ref role="1TJDcQ" node="3m26Pihn7g0" resolve="GlobalIntegerContainer" />
+    <ref role="1TJDcQ" node="3m26Pihn7g0" resolve="OneOrMoreIntegers" />
+    <node concept="asaX9" id="5wcZjhPjV04" role="lGtFl" />
     <node concept="1TJgyi" id="3m26Pihn82m" role="1TKVEl">
       <property role="TrG5h" value="start" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -894,41 +808,44 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3m26Pihn84X">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalIntegerType" />
-    <property role="TrG5h" value="GlobalIntegerLiteral" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalIntegerType" />
+    <property role="TrG5h" value="IntegerLiteral" />
     <property role="34LRSv" value="value" />
-    <ref role="1TJDcQ" node="3m26Pihn7g0" resolve="GlobalIntegerContainer" />
+    <ref role="1TJDcQ" node="3m26Pihn7g0" resolve="OneOrMoreIntegers" />
+    <node concept="asaX9" id="5wcZjhPjUZY" role="lGtFl" />
     <node concept="1TJgyi" id="3m26Pihn84Y" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="4Toykm43Ope">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalExpression" />
+    <property role="3GE5qa" value="channelInitializers" />
+    <property role="TrG5h" value="ChannelInitializerExpression" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjUZS" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="YNIIGPa1iv">
     <property role="3GE5qa" value="scripts.conditionalScript" />
-    <property role="TrG5h" value="BaseLanguageAdapter" />
+    <property role="TrG5h" value="BaseLanguageScriptAdapter" />
     <property role="34LRSv" value="base language script" />
-    <property role="R4oN_" value="a script that contains base language, such as for the use of conditional statements" />
+    <property role="R4oN_" value="Script with conditional statements and BASH" />
     <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
     <node concept="1TJgyj" id="59canFOdI$K" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="statements" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
     </node>
   </node>
   <node concept="1TIwiD" id="59canFN3Dy7">
-    <property role="3GE5qa" value="setChannelValues.globalTypes" />
-    <property role="TrG5h" value="GlobalFilePath" />
-    <property role="34LRSv" value="remote file" />
-    <property role="R4oN_" value="file's path, which is located on another system" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes" />
+    <property role="TrG5h" value="FilePath" />
+    <property role="34LRSv" value="file" />
+    <property role="R4oN_" value="file's path, located on the machine where the workflow will execute" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjYDy" role="lGtFl" />
     <node concept="1TJgyi" id="vHEKaWiO__" role="1TKVEl">
       <property role="TrG5h" value="path" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -961,29 +878,9 @@
       <ref role="20lvS9" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2Hhp$WEiKp5">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
-    <property role="TrG5h" value="GlobalTupleContainer" />
-    <property role="34LRSv" value="tuple" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="2Hhp$WEw$i6">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
-    <property role="TrG5h" value="GlobalIntegerLiteralTuple" />
-    <property role="34LRSv" value="integer element" />
-    <ref role="1TJDcQ" node="PffOQS_Koi" resolve="GlobalValueLiteralTuple" />
-    <node concept="1TJgyj" id="2Hhp$WEw$i7" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="integer" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3m26Pihn84X" resolve="GlobalIntegerLiteral" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2Hhp$WE5lSU">
-    <property role="TrG5h" value="TupleType" />
-    <property role="34LRSv" value="tuple" />
+  <node concept="1TIwiD" id="33IVfFaApTg">
+    <property role="TrG5h" value="FileType" />
+    <property role="34LRSv" value="file" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="7b7Ia6NI2vy">
@@ -996,79 +893,160 @@
       <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2Hhp$WEw$nc">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
-    <property role="TrG5h" value="GlobalListLiteralTuple" />
-    <property role="34LRSv" value="list element" />
-    <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="GlobalTupleContainer" />
-    <node concept="1TJgyj" id="2Hhp$WEw$nd" role="1TKVEi">
+  <node concept="1TIwiD" id="3v6eDgzA3wg">
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="TrG5h" value="Tuple" />
+    <property role="34LRSv" value="tuple" />
+    <property role="R4oN_" value="tuple as input or output" />
+    <ref role="1TJDcQ" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
+    <node concept="1TJgyj" id="2Hhp$WDzSdA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="list" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3m9W35nszV6" resolve="NotATupleType" />
+      <node concept="asaX9" id="6qiI2N5svI1" role="lGtFl">
+        <property role="YLQ7P" value="Use elements instead" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="6qiI2N5svHF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="PffOQS_Koi" resolve="GlobalValueLiteralTuple" />
+      <ref role="20lvS9" node="6qiI2N5sbyo" resolve="TupleElement" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5ok1XDk_tCa">
-    <property role="3GE5qa" value="channelTypes" />
-    <property role="TrG5h" value="NonListNonFileChannel" />
+  <node concept="1TIwiD" id="2Hhp$WE5lSU">
+    <property role="TrG5h" value="TupleType" />
+    <property role="34LRSv" value="tuple" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <node concept="1TJgyj" id="6$PrPkYFQk7" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2Hhp$WEiKnI">
+    <property role="3GE5qa" value="channelInitializers" />
+    <property role="TrG5h" value="TupleInitializer" />
+    <property role="34LRSv" value="tuples" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUZD" role="lGtFl" />
+    <node concept="1TJgyj" id="2Hhp$WEiKnJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tuple" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="2Hhp$WEw$gJ" resolve="TupleLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2Hhp$WEiKp5">
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
+    <property role="TrG5h" value="TupleContainer" />
+    <property role="34LRSv" value="tuple" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="Channel" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjYDm" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="2Hhp$WEw$fe">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
-    <property role="TrG5h" value="GlobalBooleanLiteralTuple" />
-    <property role="34LRSv" value="boolean element" />
-    <ref role="1TJDcQ" node="PffOQS_Koi" resolve="GlobalValueLiteralTuple" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
+    <property role="TrG5h" value="BooleanLiteralTuple" />
+    <property role="34LRSv" value="boolean" />
+    <ref role="1TJDcQ" node="PffOQS_Koi" resolve="ValueLiteralTuple" />
+    <node concept="asaX9" id="5wcZjhPjYD7" role="lGtFl" />
     <node concept="1TJgyj" id="2Hhp$WEw$ff" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="boolean" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3m26Pihn7yi" resolve="GlobalBooleanLiteral" />
+      <ref role="20lvS9" node="3m26Pihn7yi" resolve="BooleanLiteral" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5ok1XDmh3fW">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalFileListExpression" />
-    <property role="34LRSv" value="file list" />
-    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
-    <node concept="1TJgyj" id="5ok1XDmh3gw" role="1TKVEi">
+  <node concept="1TIwiD" id="2Hhp$WEw$gJ">
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
+    <property role="TrG5h" value="TupleLiteral" />
+    <property role="34LRSv" value="[" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5wcZjhPjYDs" role="lGtFl" />
+    <node concept="1TJgyj" id="2Hhp$WEw$gK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="fileList" />
+      <property role="20kJfa" value="tuple" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3m26Pihn7K8" resolve="GlobalFileLiteralList" />
+      <ref role="20lvS9" node="2Hhp$WEiKp5" resolve="TupleContainer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="PffOQS_Koi">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
-    <property role="TrG5h" value="GlobalValueLiteralTuple" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="GlobalTupleContainer" />
+  <node concept="1TIwiD" id="2Hhp$WEw$i6">
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
+    <property role="TrG5h" value="IntegerLiteralTuple" />
+    <property role="34LRSv" value="integer" />
+    <ref role="1TJDcQ" node="PffOQS_Koi" resolve="ValueLiteralTuple" />
+    <node concept="asaX9" id="5wcZjhPjYDd" role="lGtFl" />
+    <node concept="1TJgyj" id="2Hhp$WEw$i7" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="integer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3m26Pihn84X" resolve="IntegerLiteral" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2Hhp$WEw$km">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
-    <property role="TrG5h" value="GlobalStringLiteralTuple" />
-    <property role="34LRSv" value="string element" />
-    <ref role="1TJDcQ" node="PffOQS_Koi" resolve="GlobalValueLiteralTuple" />
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
+    <property role="TrG5h" value="StringLiteralTuple" />
+    <property role="34LRSv" value="string" />
+    <ref role="1TJDcQ" node="PffOQS_Koi" resolve="ValueLiteralTuple" />
+    <node concept="asaX9" id="5wcZjhPjYDj" role="lGtFl" />
     <node concept="1TJgyj" id="2Hhp$WEw$np" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="string" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3m26Pihn81q" resolve="GlobalStringLiteral" />
+      <ref role="20lvS9" node="3m26Pihn81q" resolve="StringLiteral" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5ok1XDm1MHo">
-    <property role="3GE5qa" value="types" />
-    <property role="TrG5h" value="FileList" />
-    <property role="34LRSv" value="file list" />
-    <property role="R4oN_" value="list of files as input or output" />
-    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="ValueInAChannelNoTuple" />
+  <node concept="1TIwiD" id="2Hhp$WEw$lF">
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
+    <property role="TrG5h" value="FileLiteralTuple" />
+    <property role="34LRSv" value="file" />
+    <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="TupleContainer" />
+    <node concept="asaX9" id="5wcZjhPjYDa" role="lGtFl" />
+    <node concept="1TJgyj" id="2Hhp$WEw$lG" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="file" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="59canFN3Dy7" resolve="FilePath" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2Hhp$WEw$nc">
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
+    <property role="TrG5h" value="ListLiteralTuple" />
+    <property role="34LRSv" value="list" />
+    <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="TupleContainer" />
+    <node concept="asaX9" id="5wcZjhPjYDg" role="lGtFl" />
+    <node concept="1TJgyj" id="2Hhp$WEw$nd" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="PffOQS_Koi" resolve="ValueLiteralTuple" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3JbPZMXXswk">
+    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
+    <property role="TrG5h" value="ToListFunction" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
+  </node>
+  <node concept="1TIwiD" id="5ok1XDk_tCa">
+    <property role="3GE5qa" value="processIO" />
+    <property role="TrG5h" value="NonListNonFileChannel" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
   </node>
   <node concept="1TIwiD" id="5ok1XDm1KPg">
-    <property role="3GE5qa" value="channelTypes" />
+    <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="FileListChannel" />
-    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="Channel" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+    <node concept="asaX9" id="6qiI2N5o0B8" role="lGtFl">
+      <property role="YLQ7P" value="Use ProcessInputOutput instead" />
+    </node>
     <node concept="1TJgyj" id="5ok1XDm1QXV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="fileList" />
@@ -1076,52 +1054,653 @@
       <ref role="20lvS9" node="5ok1XDm1MHo" resolve="FileList" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2Hhp$WEw$gJ">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
-    <property role="TrG5h" value="GlobalTupleLiteral" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2Hhp$WEw$gK" role="1TKVEi">
+  <node concept="1TIwiD" id="5ok1XDm1MHo">
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="TrG5h" value="FileList" />
+    <property role="34LRSv" value="list&lt;file&gt;" />
+    <property role="R4oN_" value="list of files as input or output" />
+    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
+    <node concept="asaX9" id="6qiI2N5bpUl" role="lGtFl" />
+  </node>
+  <node concept="1TIwiD" id="5ok1XDmh3fW">
+    <property role="3GE5qa" value="channelInitializers" />
+    <property role="TrG5h" value="FileListInitializer" />
+    <property role="34LRSv" value="file lists" />
+    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="ChannelInitializerExpression" />
+    <node concept="asaX9" id="5wcZjhPjUZM" role="lGtFl" />
+    <node concept="1TJgyj" id="5ok1XDmh3gw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tuple" />
+      <property role="20kJfa" value="fileList" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="2Hhp$WEiKp5" resolve="GlobalTupleContainer" />
+      <ref role="20lvS9" node="3m26Pihn7K8" resolve="FileLiteralList" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2Hhp$WEiKnI">
-    <property role="3GE5qa" value="setChannelValues" />
-    <property role="TrG5h" value="GlobalTupleExpression" />
-    <property role="34LRSv" value="tuple" />
-    <ref role="1TJDcQ" node="4Toykm43Ope" resolve="GlobalExpression" />
-    <node concept="1TJgyj" id="2Hhp$WEiKnJ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tuple" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="2Hhp$WEw$gJ" resolve="GlobalTupleLiteral" />
-    </node>
+  <node concept="1TIwiD" id="PffOQS_Koi">
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
+    <property role="TrG5h" value="ValueLiteralTuple" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="TupleContainer" />
+    <node concept="asaX9" id="5wcZjhPjYD_" role="lGtFl" />
   </node>
-  <node concept="1TIwiD" id="3JbPZMXXswk">
-    <property role="3GE5qa" value="channelFunctions" />
-    <property role="TrG5h" value="ToListFunction" />
+  <node concept="1TIwiD" id="XaRILisNjl">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="TrG5h" value="ArgRegexLiteralQualifierPredicate" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
-  <node concept="1TIwiD" id="33IVfFaApTg">
-    <property role="TrG5h" value="FileType" />
-    <property role="34LRSv" value="file" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+  <node concept="1TIwiD" id="3aOvEIt8nSZ">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="PrimitiveType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
   </node>
-  <node concept="1TIwiD" id="2Hhp$WEw$lF">
-    <property role="3GE5qa" value="setChannelValues.globalTypes.globalTupleType" />
-    <property role="TrG5h" value="GlobalFileLiteralTuple" />
-    <property role="34LRSv" value="file element" />
-    <ref role="1TJDcQ" node="2Hhp$WEiKp5" resolve="GlobalTupleContainer" />
-    <node concept="1TJgyj" id="2Hhp$WEw$lG" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="file" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="59canFN3Dy7" resolve="GlobalFilePath" />
+  <node concept="1TIwiD" id="6TmjYLGcNQe">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="34LRSv" value="print" />
+    <property role="TrG5h" value="Print" />
+    <property role="R4oN_" value="prints items emitted by a channel to the console standard. Consume items emitted by the source." />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="XaRILjgU7G">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="GroupTuple" />
+    <property role="34LRSv" value="groupTuple" />
+    <property role="R4oN_" value="collects tuples of values emitted by the channel grouping together the values that share the same key, and then emits a new tuple for each distinct key" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
+  </node>
+  <node concept="1TIwiD" id="4g1gOgy0q_n">
+    <property role="3GE5qa" value="processIO" />
+    <property role="TrG5h" value="HiddenTypeVarDeclaration" />
+    <property role="34LRSv" value="val" />
+    <property role="R4oN_" value="Declare a variable visible in Pocess output expressions " />
+    <ref role="1TJDcQ" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgovJ">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <property role="34LRSv" value="mix" />
+    <property role="TrG5h" value="Mix" />
+    <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="2fLVrqPJSZI">
+    <property role="3GE5qa" value="processIO" />
+    <property role="TrG5h" value="ProcessInput" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+    <node concept="1TJgyi" id="2fLVrqPJUQP" role="1TKVEl">
+      <property role="TrG5h" value="toStandardInput" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILjgRRX">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="GroupBy" />
+    <property role="34LRSv" value="groupBy" />
+    <property role="R4oN_" value="collects the values emitted by the channel grouping them together using a mapping function that associates each item with a key. Emits an associative array that maps each key to the set of items identified by that key" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="XaRILisRbb">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="FlatMap" />
+    <property role="34LRSv" value="flatMap" />
+    <property role="R4oN_" value="applies a function to every item emitted by a channel and returns the items into the channel; if a mapping function returns a list, the list is flattened such that each element is emitted individually" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="XaRILhIYk3">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Unique" />
+    <property role="34LRSv" value="unique" />
+    <property role="R4oN_" value="removes duplicate elements from a channel" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="D$tkU1WQf_">
+    <property role="TrG5h" value="NameInAChannelRef" />
+    <property role="34LRSv" value="'" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6TmjYLGgm0h" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="D$tkU1WQfA" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeIaW">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Separate" />
+    <property role="34LRSv" value="separate" />
+    <property role="R4oN_" value="lets you copy the items emitted by the source channel into multiple channels, which each of these can receive a separate version of the same item." />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcNYR">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Println" />
+    <property role="34LRSv" value="println" />
+    <property role="R4oN_" value="prints items emitted by a channel to the console standard appending a new line character. Consume items emitted by the source " />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgoqS">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <property role="TrG5h" value="Tap" />
+    <property role="34LRSv" value="tap" />
+    <property role="R4oN_" value="it connects two channels, copying the values from the source into the tapped channel. " />
+    <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcO3d">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="View" />
+    <property role="34LRSv" value="view" />
+    <property role="R4oN_" value="prints the items emitted by a channel to the console standard output. Do not consume item from the source Channel" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="XaRILjgXaG">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="TrG5h" value="Buffer" />
+    <property role="34LRSv" value="buffer" />
+    <property role="R4oN_" value="gathers the items emitted by the channel into subsets and then emits the subsets separately" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
+  </node>
+  <node concept="1TIwiD" id="XaRILhslAr">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="TrG5h" value="Filter" />
+    <property role="R4oN_" value="use a regular expression, a literal value, a type qualifier, or any boolean predicate to get only the items in a channel satisfying the condition" />
+    <property role="34LRSv" value="filter" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgnIR">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <property role="TrG5h" value="ChannelFunctionWithChannelRef" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="6TmjYLGgovv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="channelContainerRef" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6TmjYLGeFpH" resolve="OutChannelContainerRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILjgRyP">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="Reduce" />
+    <property role="34LRSv" value="reduce" />
+    <property role="R4oN_" value="applies a function to every item in the channel and emits the result of the last call of the function as the only output" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8t9F">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="Range" />
+    <property role="34LRSv" value="range" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyj" id="3aOvEIt8t9J" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="start" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    </node>
+    <node concept="1TJgyj" id="3aOvEIt8t9L" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="end" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6qiI2N5sbyo">
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="TrG5h" value="TupleElement" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+    <node concept="1TJgyj" id="6qiI2N5sbyp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3m9W35nszV6" resolve="NotATupleType" />
+      <ref role="20ksaX" node="6qiI2N4J0hS" />
+    </node>
+    <node concept="PrWs8" id="6qiI2N5sbyr" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2W8f1273Gtf">
+    <property role="3GE5qa" value="channelFunctions.collate" />
+    <property role="TrG5h" value="CollateStepSize" />
+    <property role="34LRSv" value="step size" />
+    <property role="R4oN_" value="specifies the step by which elements are collected in tuples" />
+    <ref role="1TJDcQ" node="2W8f1273G7R" resolve="CollateOption" />
+    <node concept="1TJgyi" id="2W8f1273GLw" role="1TKVEl">
+      <property role="TrG5h" value="stepSize" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8nXu">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewStringLiteral" />
+    <property role="34LRSv" value="&quot;" />
+    <property role="R4oN_" value="string literal" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <node concept="1TJgyi" id="3aOvEIt8ocz" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6qiI2N4Hx1D">
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="TrG5h" value="ProcessTypeDeclaration" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6qiI2N5buWm" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8nXt">
+    <property role="TrG5h" value="NewChannelInitializerExpression" />
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="XaRILisJ6K">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions" />
+    <property role="TrG5h" value="SplitFastq" />
+    <property role="34LRSv" value="splitFastq" />
+    <property role="R4oN_" value="split the entries emitted by a channel into a text chunk for each sequence in the received item" />
+    <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
+  </node>
+  <node concept="1TIwiD" id="XaRILisJqL">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions" />
+    <property role="TrG5h" value="SplitText" />
+    <property role="34LRSv" value="splitText" />
+    <property role="R4oN_" value="split multi-line strings or text file items into chunks containing n lines, which will be emitted by the channel" />
+    <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
+  </node>
+  <node concept="1TIwiD" id="XaRILilDAq">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Distinct" />
+    <property role="34LRSv" value="distinct" />
+    <property role="R4oN_" value="removes consecutive duplicated items from a channel" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <node concept="1TJgyj" id="XaRILilDAr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2fLVrqQ2DkW">
+    <property role="3GE5qa" value="processIO" />
+    <property role="TrG5h" value="ProcessOutput" />
+    <property role="R4oN_" value="Output of a Process" />
+    <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+    <node concept="1TJgyj" id="2fLVrqQF2Pv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2fLVrqQF3tr" resolve="OutputExpression" />
+    </node>
+    <node concept="1TJgyi" id="2fLVrqQ2EIf" role="1TKVEl">
+      <property role="TrG5h" value="fromStandardOutput" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILilGma">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="TrG5h" value="First" />
+    <property role="34LRSv" value="first" />
+    <property role="R4oN_" value="returns the first item emitted by the channel, or the first item that matches a condition" />
+    <ref role="1TJDcQ" node="1qs9CHFOmDW" resolve="ArgRegexQualifierPredicate" />
+  </node>
+  <node concept="1TIwiD" id="5HJ0QzxIyJ0">
+    <property role="3GE5qa" value="reports" />
+    <property role="TrG5h" value="ReportFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="5HJ0QzxIyJ3">
+    <property role="3GE5qa" value="reports" />
+    <property role="TrG5h" value="ReportParameter" />
+    <property role="34LRSv" value="c" />
+    <property role="R4oN_" value="The output channel that will hold values to report about" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8rQW">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewTupleLiteral" />
+    <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="Tuple literal" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyj" id="3aOvEIt8rRi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeHOd">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Cross" />
+    <property role="34LRSv" value="cross" />
+    <property role="R4oN_" value="allows you to combine the items of two channels in such a way that the items of the source channel are emitted along with the items emitted by the target channel for which they have a matching key" />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="1qs9CHFOrh8">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions" />
+    <property role="TrG5h" value="SplitFunction" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8sII">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewFileLiteral" />
+    <property role="34LRSv" value="file" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyi" id="3aOvEIt8sIM" role="1TKVEl">
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILirYxk">
+    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
+    <property role="TrG5h" value="Last" />
+    <property role="34LRSv" value="last" />
+    <property role="R4oN_" value="returns the last item emitted by the channel" />
+    <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
+  </node>
+  <node concept="1TIwiD" id="2W8f1273GaR">
+    <property role="3GE5qa" value="channelFunctions.collate" />
+    <property role="TrG5h" value="CollateAllowIncompleteTuples" />
+    <property role="34LRSv" value="allow incomplete tuples" />
+    <property role="R4oN_" value="specify false if you want to avoid the last tuple being incomplete" />
+    <ref role="1TJDcQ" node="2W8f1273G7R" resolve="CollateOption" />
+    <node concept="1TJgyi" id="2W8f1273GjT" role="1TKVEl">
+      <property role="TrG5h" value="allowIncomplete" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5HJ0QzxC1s2">
+    <property role="TrG5h" value="Report" />
+    <property role="3GE5qa" value="reports" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5HJ0QzxC1sm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="function" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5HJ0QzxIyJ0" resolve="ReportFunction" />
+    </node>
+    <node concept="1TJgyj" id="1B2iUhm8ilv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="channelFunctions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    </node>
+    <node concept="1TJgyj" id="5HJ0QzxC1sk" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="channel" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7gAPJCESTMU" resolve="OutputChannel" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8rqk">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewIntegerLiteral" />
+    <property role="34LRSv" value="integer" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <node concept="1TJgyi" id="3aOvEIt8rr3" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILjgYLb">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="It" />
+    <property role="34LRSv" value="it" />
+    <property role="R4oN_" value="the element that is currently being used" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcOkA">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="CountBy" />
+    <property role="34LRSv" value="countBy" />
+    <property role="R4oN_" value="creates a channel which emits a n associative array (Map) that counts the occurrences of the emitted items in the source channel having the same key." />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="2fLVrqQF3tr">
+    <property role="3GE5qa" value="processIO" />
+    <property role="TrG5h" value="OutputExpression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2fLVrqQF3uo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILisH5y">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions" />
+    <property role="TrG5h" value="SplitFasta" />
+    <property role="34LRSv" value="splitFasta" />
+    <property role="R4oN_" value="split the entries emitted by a channel into text items for each sequence in the received FASTA content" />
+    <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcOoY">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Min" />
+    <property role="34LRSv" value="min" />
+    <property role="R4oN_" value="waits until the source channel completes, and then emits the item that has the lowest value." />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="XaRILis0lI">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Closurefunction" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="1qs9CHFOsoJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="closure" />
+      <ref role="20lvS9" to="tp2c:htbVj4_" resolve="ClosureLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILis0lJ">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions" />
+    <property role="TrG5h" value="SplitCSV" />
+    <property role="34LRSv" value="splitCSV" />
+    <property role="R4oN_" value="parse text items emitted by a channel into records or group them into lists of records with a specific length" />
+    <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
+  </node>
+  <node concept="1TIwiD" id="1qs9CHFOmDW">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="TrG5h" value="ArgRegexQualifierPredicate" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcWld">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="ClosureFunctionWithChannelRef" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <node concept="1TJgyj" id="6TmjYLGeFMw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="outChannelContainerRef" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6TmjYLGeFpH" resolve="OutChannelContainerRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcN_3">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="ifEmpty" />
+    <property role="34LRSv" value="ifEmpty" />
+    <property role="R4oN_" value="emits a value as specified the operator parameter, when the channel to which is applied is empty" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="6$PrPkYEpK2">
+    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
+    <property role="TrG5h" value="ToTuple" />
+    <property role="34LRSv" value="toTuple" />
+    <property role="R4oN_" value="converts all of the elements in the channel into tuples matching the size of the input channel the function is applied to" />
+    <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
+  </node>
+  <node concept="1TIwiD" id="2fLVrqRhKBd">
+    <property role="3GE5qa" value="processIO" />
+    <property role="TrG5h" value="InputFromBaseLanguageScript" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="2fLVrqRhKBe" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4g1gOgy0q_n" resolve="HiddenTypeVarDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgpKP">
+    <property role="3GE5qa" value="channelFunctions.literalFunctions" />
+    <property role="TrG5h" value="Spread" />
+    <property role="34LRSv" value="spread" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="4O3IO9swAdJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="array" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8rrG" resolve="NewListLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeHlg">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Phase" />
+    <property role="34LRSv" value="phase" />
+    <property role="R4oN_" value="creates a channel that synchronizes the values emitted by two other channels, in such a way that it emits pairs of items that have a matching key." />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+    <node concept="1TJgyi" id="6TmjYLGeHuE" role="1TKVEl">
+      <property role="TrG5h" value="remainder" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcOto">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Sum" />
+    <property role="34LRSv" value="sum" />
+    <property role="R4oN_" value="operator creates a channel that emits the sum of all the items emitted by the channel itself" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8rrG">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewListLiteral" />
+    <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="List literal" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyj" id="3aOvEIt8rrH" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeHXi">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Choice" />
+    <property role="34LRSv" value="choice" />
+    <property role="R4oN_" value=" allows you to forward the items emitted by a source channel to two (or more) output channels, choosing one out of them at a time." />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGgpKC">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <property role="TrG5h" value="Concat" />
+    <property role="34LRSv" value="concat" />
+    <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeGXs">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Merge" />
+    <property role="34LRSv" value="merge" />
+    <property role="R4oN_" value="lets you join items emitted by two (or more) channels into a new channel." />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGcOtn">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Max" />
+    <property role="34LRSv" value="max" />
+    <property role="R4oN_" value="waits until the source channel completes, and then emits the item that has the greatest value." />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+  </node>
+  <node concept="1TIwiD" id="2W8f1273G7R">
+    <property role="3GE5qa" value="channelFunctions.collate" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="CollateOption" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="XaRILhrTOx">
+    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
+    <property role="TrG5h" value="NoArgFunction" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+  </node>
+  <node concept="1TIwiD" id="3aOvEIt8rrn">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="NewBooleanLiteral" />
+    <property role="34LRSv" value="boolean" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <node concept="1TJgyi" id="3aOvEIt8rro" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TmjYLGeFpH">
+    <property role="TrG5h" value="OutChannelContainerRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6TmjYLGeFMt" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="outChannelContainer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3m26PihhBwN" resolve="OutChannelContainer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILilHC4">
+    <property role="3GE5qa" value="channelFunctions.literalFunctions" />
+    <property role="TrG5h" value="Take" />
+    <property role="34LRSv" value="take" />
+    <property role="R4oN_" value="allows you to filter only the first n items emitted by a channel" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="4O3IO9sBqd3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="n" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8rqk" resolve="NewIntegerLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2W8f126b9Ff">
+    <property role="3GE5qa" value="channelInitializers.globalTypes.globalTupleType" />
+    <property role="TrG5h" value="TupleListLiteral" />
+    <property role="34LRSv" value="list" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2W8f126b9JE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="2Hhp$WEw$gJ" resolve="TupleLiteral" />
+    </node>
+    <node concept="asaX9" id="5wcZjhPjYDp" role="lGtFl" />
+  </node>
+  <node concept="1TIwiD" id="2fLVrqQZ5d5">
+    <property role="3GE5qa" value="processIO" />
+    <property role="TrG5h" value="InputValue" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="2fLVrqQZ5t6" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="input" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2fLVrqPJSZI" resolve="ProcessInput" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILisPoE">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="Map" />
+    <property role="34LRSv" value="map" />
+    <property role="R4oN_" value="applies a function to every item emitted by a channel, and returns the items into the channel" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
   </node>
 </model>
 

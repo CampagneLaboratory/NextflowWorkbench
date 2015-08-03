@@ -4,8 +4,9 @@
 */*/source_gen.caches/**/*
 */*/classes_gen/**/*.class
 */*/classes_gen/**/trace.info
-*.class
+*.nf
 trace.info
+*.class
 dependencies
 generated
 #QueriesGenerated.java

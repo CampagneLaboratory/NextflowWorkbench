@@ -67,7 +67,7 @@
   <node concept="1TIwiD" id="4HNd3hiUKIF">
     <property role="TrG5h" value="ExplicitFileBagRef" />
     <property role="34LRSv" value="files from a setOfBags" />
-    <ref role="1TJDcQ" to="iowz:3m26PihlgQQ" resolve="GlobalFileExpression" />
+    <ref role="1TJDcQ" to="iowz:3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyj" id="4HNd3hiUKXQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="ExplicitFileBag" />

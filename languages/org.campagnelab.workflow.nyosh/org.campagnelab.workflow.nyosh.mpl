@@ -64,6 +64,7 @@
     <dependency reexport="false">0202ed86-955d-4227-9c20-377dd6b1f9ff(org.campagnelab.nyosh.lib)</dependency>
     <dependency reexport="false">a8fb88b0-7e9f-478c-aab4-a1b076131192(org.campagnelab.gobyweb.interactive)</dependency>
     <dependency reexport="false">5cf93bc1-d0da-4893-b739-63b17fe296b1(org.campagnelab.workflow.nyosh)</dependency>
+    <dependency reexport="false">c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>c1ba4037-e4db-47d8-8b61-b3c805b648f2(org.campagnelab.ui)</usedLanguage>

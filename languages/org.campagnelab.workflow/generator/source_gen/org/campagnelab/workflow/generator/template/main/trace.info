@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="23,0,118,0" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)/2526307167898569313">
+    <file name="QueriesGenerated.java">
+      <node id="3123079328004828532" at="30,43,31,196" concept="2" />
+      <node id="3123079328004828532" at="34,41,35,186" concept="2" />
+      <node id="3123079328004828532" at="30,0,33,0" concept="0" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3123079328004828532" at="34,0,37,0" concept="0" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3123079328004819253" at="28,38,37,19" concept="2" />
+      <node id="3123079328004817641" at="28,0,39,0" concept="0" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3123079328005533276" at="26,110,39,7" concept="2" />
+      <scope id="3123079328004828532" at="30,43,31,196" />
+      <scope id="3123079328004828532" at="34,41,35,186" />
+      <scope id="3123079328004828532" at="30,0,33,0">
+        <var name="it" id="3123079328004828532" />
+      </scope>
+      <scope id="3123079328004828532" at="34,0,37,0">
+        <var name="it" id="3123079328004828532" />
+      </scope>
+      <scope id="3123079328004817642" at="28,38,37,19" />
+      <scope id="3123079328004817641" at="28,0,39,0">
+        <var name="p" id="3123079328004817641" />
+      </scope>
+      <scope id="6588488528875770527" at="26,110,39,7" />
+      <unit id="3123079328004828532" at="29,372,33,9" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated$2" />
+      <unit id="3123079328004828532" at="33,22,37,9" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated$2" />
+      <unit id="3123079328004817641" at="27,447,39,5" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated$1" />
+    </file>
+  </root>
+  <root nodeRef="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)/6588488528875764625">
+    <file name="QueriesGenerated.java">
+      <node id="6588488528877589413" at="41,112,42,351" concept="2" />
+      <node id="4533252666381197542" at="44,112,45,907" concept="2" />
+      <node id="8584871179161878514" at="47,112,48,332" concept="2" />
+      <node id="8584871179163434039" at="50,112,51,330" concept="2" />
+      <node id="6588488528877569061" at="53,112,54,193" concept="2" />
+      <node id="6588488528884068356" at="59,109,60,52" concept="3" />
+      <node id="6588488528883705764" at="60,52,61,266" concept="1" />
+      <node id="6588488528884068273" at="61,266,62,30" concept="2" />
+      <node id="4533252666381299738" at="67,108,68,194" concept="2" />
+      <node id="8584871179166981496" at="70,108,71,231" concept="2" />
+      <node id="8584871179163796304" at="73,108,74,382" concept="2" />
+      <node id="8584871179163878949" at="76,108,77,343" concept="2" />
+      <node id="5772540756690224234" at="79,120,80,493" concept="2" />
+      <node id="6588488528877579980" at="82,120,83,193" concept="2" />
+      <node id="8584871179161866975" at="85,120,86,406" concept="2" />
+      <node id="8584871179163434028" at="88,120,89,423" concept="2" />
+      <node id="4533252666381250639" at="93,39,94,187" concept="2" />
+      <node id="4533252666381250639" at="97,37,98,177" concept="2" />
+      <node id="3123079328005980065" at="101,50,102,181" concept="2" />
+      <node id="4533252666381250639" at="105,39,106,192" concept="2" />
+      <node id="4533252666381250639" at="109,37,110,182" concept="2" />
+      <node id="4533252666381250639" at="93,0,96,0" concept="0" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="4533252666381250639" at="97,0,100,0" concept="0" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3123079328005980065" at="101,0,104,0" concept="0" trace="translate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="4533252666381250639" at="105,0,108,0" concept="0" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="4533252666381250639" at="109,0,112,0" concept="0" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4533252666381197535" at="91,120,112,7" concept="2" />
+      <scope id="6588488528877583533" at="41,112,42,351" />
+      <scope id="4533252666381197541" at="44,112,45,907" />
+      <scope id="8584871179161877729" at="47,112,48,332" />
+      <scope id="8584871179163434038" at="50,112,51,330" />
+      <scope id="6588488528875764643" at="53,112,54,193" />
+      <scope id="4533252666381299732" at="67,108,68,194" />
+      <scope id="8584871179166981490" at="70,108,71,231" />
+      <scope id="8584871179163796298" at="73,108,74,382" />
+      <scope id="8584871179163878943" at="76,108,77,343" />
+      <scope id="5772540756690217681" at="79,120,80,493" />
+      <scope id="6588488528877577844" at="82,120,83,193" />
+      <scope id="8584871179161866618" at="85,120,86,406" />
+      <scope id="8584871179163434027" at="88,120,89,423" />
+      <scope id="4533252666381250639" at="93,39,94,187" />
+      <scope id="4533252666381250639" at="97,37,98,177" />
+      <scope id="3123079328005980065" at="101,50,102,181" />
+      <scope id="4533252666381250639" at="105,39,106,192" />
+      <scope id="4533252666381250639" at="109,37,110,182" />
+      <scope id="6588488528877591736" at="59,109,62,30">
+        <var name="channelElementType" id="6588488528883705767" />
+      </scope>
+      <scope id="4533252666381250639" at="93,0,96,0">
+        <var name="it" id="4533252666381250639" />
+      </scope>
+      <scope id="4533252666381250639" at="97,0,100,0">
+        <var name="it" id="4533252666381250639" />
+      </scope>
+      <scope id="3123079328005980065" at="101,0,104,0">
+        <var name="it" id="3123079328005980065" />
+      </scope>
+      <scope id="4533252666381250639" at="105,0,108,0">
+        <var name="it" id="4533252666381250639" />
+      </scope>
+      <scope id="4533252666381250639" at="109,0,112,0">
+        <var name="it" id="4533252666381250639" />
+      </scope>
+      <scope id="8584871179158476145" at="91,120,112,7" />
+      <unit id="4533252666381250639" at="92,228,96,5" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated$2" />
+      <unit id="4533252666381250639" at="96,18,100,5" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated$3" />
+      <unit id="3123079328005980065" at="100,21,104,5" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated$4" />
+      <unit id="4533252666381250639" at="104,17,108,5" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated$5" />
+      <unit id="4533252666381250639" at="108,18,112,5" name="org.campagnelab.workflow.generator.template.main.QueriesGenerated$6" />
+    </file>
+  </root>
+  <root nodeRef="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)/8584871179158469346">
+    <file name="QueriesGenerated.java">
+      <node id="8584871179158633950" at="56,112,57,332" concept="2" />
+      <node id="8584871179158628612" at="64,109,65,490" concept="2" />
+      <node id="8584871179160222284" at="114,120,115,406" concept="2" />
+      <scope id="8584871179158633315" at="56,112,57,332" />
+      <scope id="8584871179158628606" at="64,109,65,490" />
+      <scope id="8584871179160222278" at="114,120,115,406" />
+    </file>
+  </root>
+</debug-info>
+
