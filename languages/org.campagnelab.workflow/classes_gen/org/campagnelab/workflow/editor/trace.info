@@ -3059,8 +3059,8 @@
       <node id="3737395959688551345" at="45,81,46,107" concept="2" />
       <node id="3737395959688551345" at="48,83,49,105" concept="2" />
       <node id="3737395959688551345" at="51,76,52,61" concept="2" />
-      <node id="3737395959688551345" at="54,70,55,110" concept="2" />
-      <node id="3737395959688551345" at="57,69,58,109" concept="2" />
+      <node id="3737395959688551345" at="54,70,55,111" concept="2" />
+      <node id="3737395959688551345" at="57,69,58,60" concept="2" />
       <node id="3737395959688551345" at="14,0,17,0" concept="10" trace="apply_KeyName#(Ljetbrains/mps/openapi/editor/style/Style;Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
       <node id="3737395959688551345" at="17,0,20,0" concept="10" trace="apply_Keyword#(Ljetbrains/mps/openapi/editor/style/Style;Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
       <node id="3737395959688551345" at="20,0,23,0" concept="10" trace="apply_ChannelName#(Ljetbrains/mps/openapi/editor/style/Style;Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
@@ -3085,8 +3085,8 @@
       <scope id="3737395959688551345" at="45,81,46,107" />
       <scope id="3737395959688551345" at="48,83,49,105" />
       <scope id="3737395959688551345" at="51,76,52,61" />
-      <scope id="3737395959688551345" at="54,70,55,110" />
-      <scope id="3737395959688551345" at="57,69,58,109" />
+      <scope id="3737395959688551345" at="54,70,55,111" />
+      <scope id="3737395959688551345" at="57,69,58,60" />
       <scope id="3737395959688551345" at="14,0,17,0">
         <var name="editorCell" id="3737395959688551345" />
         <var name="style" id="3737395959688551345" />

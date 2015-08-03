@@ -80,7 +80,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -169,9 +169,6 @@
       <concept id="1177514840044" name="jetbrains.mps.lang.typesystem.structure.MatchStatementItem" flags="ng" index="DmCVY">
         <child id="1177514849858" name="condition" index="DmFtg" />
         <child id="1177514864202" name="ifTrue" index="DmIXo" />
-      </concept>
-      <concept id="1224760201579" name="jetbrains.mps.lang.typesystem.structure.InfoStatement" flags="nn" index="Dpp1Q">
-        <child id="1224760230762" name="infoText" index="Dpw9R" />
       </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
@@ -660,19 +657,6 @@
                 <node concept="3TrcHB" id="6YYJWE3daYd" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="Dpp1Q" id="5wcZjhPIBJ8" role="3cqZAp">
-            <node concept="1YBJjd" id="5wcZjhPIC43" role="2OEOjV">
-              <ref role="1YBMHb" node="6YYJWE2EUf1" resolve="outChannels" />
-            </node>
-            <node concept="3cpWs3" id="5wcZjhPIC0Z" role="Dpw9R">
-              <node concept="37vLTw" id="5wcZjhPIC1n" role="3uHU7w">
-                <ref role="3cqZAo" node="5wcZjhPIB16" resolve="namePrefix" />
-              </node>
-              <node concept="Xl_RD" id="5wcZjhPIBUT" role="3uHU7B">
-                <property role="Xl_RC" value="namePrefix=" />
               </node>
             </node>
           </node>
