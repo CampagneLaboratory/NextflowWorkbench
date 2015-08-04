@@ -21,8 +21,8 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
-    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -1377,7 +1377,7 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="Distinct" />
     <property role="34LRSv" value="distinct" />
-    <property role="R4oN_" value="removes consecutive duplicated items from a channel" />
+    <property role="R4oN_" value="Removes consecutive duplicated items from a channel" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
     <node concept="1TJgyj" id="XaRILilDAr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1544,7 +1544,7 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="34LRSv" value="print" />
     <property role="TrG5h" value="Print" />
-    <property role="R4oN_" value="prints items emitted by a channel to the console standard. Consume items emitted by the source." />
+    <property role="R4oN_" value="Print items emitted by a source channel and consume it" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgovJ">
@@ -1557,14 +1557,14 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="Separate" />
     <property role="34LRSv" value="separate" />
-    <property role="R4oN_" value="lets you copy the items emitted by the source channel into multiple channels, which each of these can receive a separate version of the same item." />
+    <property role="R4oN_" value="Copy items emitted by the source channel into multiple channels" />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcNYR">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="Println" />
     <property role="34LRSv" value="println" />
-    <property role="R4oN_" value="prints items emitted by a channel to the console standard appending a new line character. Consume items emitted by the source " />
+    <property role="R4oN_" value="Print items emitted by a source channel with a new line and consume it" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgoqS">
@@ -1578,7 +1578,7 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="View" />
     <property role="34LRSv" value="view" />
-    <property role="R4oN_" value="prints the items emitted by a channel to the console standard output. Do not consume item from the source Channel" />
+    <property role="R4oN_" value="Print items emitted by a source channel without consuming it" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgnIR">
@@ -1598,21 +1598,21 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="Cross" />
     <property role="34LRSv" value="cross" />
-    <property role="R4oN_" value="Combine items of two channels where items of the source channel are emitted where they have a matching key with the target channel" />
+    <property role="R4oN_" value="Combine items of two channels where items of the source and the target have a matching key" />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOkA">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="CountBy" />
     <property role="34LRSv" value="countBy" />
-    <property role="R4oN_" value="Creates a channel which emits a n associative array (Map) for items in the source channel having the same key" />
+    <property role="R4oN_" value="Creates a channel which emits a Map from items in the source channel having the same key" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOoY">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="Min" />
     <property role="34LRSv" value="min" />
-    <property role="R4oN_" value="waits until the source channel completes, and then emits the item that has the lowest value." />
+    <property role="R4oN_" value="Emits the item that has the lowest value from a complete source channel" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcWld">
@@ -1632,7 +1632,7 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="ifEmpty" />
     <property role="34LRSv" value="ifEmpty" />
-    <property role="R4oN_" value="emits a value as specified the operator parameter, when the channel to which is applied is empty" />
+    <property role="R4oN_" value="emits a value specified as aparameter, when the source channel is empty" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgpKP">
@@ -1651,7 +1651,7 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="Phase" />
     <property role="34LRSv" value="phase" />
-    <property role="R4oN_" value="creates a channel that synchronizes the values emitted by two other channels, in such a way that it emits pairs of items that have a matching key." />
+    <property role="R4oN_" value="Synchronizes values emitted by two channels and emits pairs of items which have a matching key" />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
     <node concept="1TJgyi" id="6TmjYLGeHuE" role="1TKVEl">
       <property role="TrG5h" value="remainder" />
@@ -1662,7 +1662,7 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="Sum" />
     <property role="34LRSv" value="sum" />
-    <property role="R4oN_" value="operator creates a channel that emits the sum of all the items emitted by the channel itself" />
+    <property role="R4oN_" value="Emits the sum of all the items emitted by the source channel itself" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeHXi">
@@ -1682,14 +1682,14 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="Merge" />
     <property role="34LRSv" value="merge" />
-    <property role="R4oN_" value="lets you join items emitted by two (or more) channels into a new channel." />
+    <property role="R4oN_" value="Join items emitted by two (or more) channels into a new one" />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOtn">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="Max" />
     <property role="34LRSv" value="max" />
-    <property role="R4oN_" value="waits until the source channel completes, and then emits the item that has the greatest value." />
+    <property role="R4oN_" value="Emits the item that has the greatest value from a complete source channel" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeFpH">
