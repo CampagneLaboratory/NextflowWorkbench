@@ -703,6 +703,9 @@
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="6kZ7DevEMDj" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
       <node concept="l2Vlx" id="46nPNk8aIgz" role="2iSdaV" />
       <node concept="pVoyu" id="1B2iUhmvylz" role="3F10Kt">
         <property role="VOm3f" value="true" />
@@ -2562,7 +2565,7 @@
       </node>
       <node concept="l2Vlx" id="2fLVrqPJXXQ" role="2iSdaV" />
       <node concept="3F0ifn" id="2fLVrqPJYzM" role="3EZMnx">
-        <property role="3F0ifm" value="use value for script standard input" />
+        <property role="3F0ifm" value="feed value to script standard input" />
         <node concept="Vb9p2" id="2fLVrqPJYEZ" role="3F10Kt">
           <property role="Vbekb" value="BOLD_ITALIC" />
         </node>
