@@ -16,24 +16,14 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2498161758031678324">
     <file name="NewListLiteral_TextGen.java">
       <node id="2498161758031679676" at="12,42,13,21" concept="1" />
-      <node id="2498161758031679676" at="12,42,13,21" concept="1" />
-      <node id="2498161758031679676" at="14,5,15,207" concept="5" />
       <node id="2498161758031679676" at="14,5,15,207" concept="5" />
       <node id="2498161758031679676" at="15,207,16,70" concept="5" />
-      <node id="2498161758031679676" at="15,207,16,70" concept="5" />
-      <node id="2498161758031679676" at="17,37,18,25" concept="1" />
       <node id="2498161758031679676" at="17,37,18,25" concept="1" />
       <node id="2498161758031679676" at="19,31,20,23" concept="1" />
-      <node id="2498161758031679676" at="19,31,20,23" concept="1" />
-      <node id="2498161758031679676" at="23,5,24,21" concept="1" />
       <node id="2498161758031679676" at="23,5,24,21" concept="1" />
       <node id="2498161758031679676" at="18,25,21,9" concept="3" />
-      <node id="2498161758031679676" at="18,25,21,9" concept="3" />
-      <node id="2498161758031679676" at="16,70,22,7" concept="2" />
       <node id="2498161758031679676" at="16,70,22,7" concept="2" />
       <node id="2498161758031679676" at="13,21,23,5" concept="0" />
-      <node id="2498161758031679676" at="13,21,23,5" concept="0" />
-      <node id="2498161758031679676" at="12,42,24,21" concept="0" />
       <node id="2498161758031679676" at="12,42,24,21" concept="0" />
       <node id="2498161758031678324" at="12,0,26,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2498161758031679676" at="19,31,20,23" />
@@ -56,8 +46,6 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2498161758031697621">
     <file name="NewBooleanLiteral_TextGen.java">
       <node id="2498161758031697650" at="11,42,12,197" concept="0" />
-      <node id="2498161758031697650" at="11,42,12,197" concept="0" />
-      <node id="2498161758031697650" at="11,42,12,197" concept="1" />
       <node id="2498161758031697650" at="11,42,12,197" concept="1" />
       <node id="2498161758031697621" at="11,0,14,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2498161758031697621" at="11,42,12,197" />
@@ -71,12 +59,8 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2498161758031700101">
     <file name="NewFileLiteral_TextGen.java">
       <node id="2498161758031700133" at="10,42,11,27" concept="1" />
-      <node id="2498161758031700133" at="10,42,11,27" concept="1" />
-      <node id="2498161758031700133" at="11,27,12,80" concept="1" />
       <node id="2498161758031700133" at="11,27,12,80" concept="1" />
       <node id="2498161758031700133" at="12,80,13,23" concept="1" />
-      <node id="2498161758031700133" at="12,80,13,23" concept="1" />
-      <node id="2498161758031700133" at="10,42,13,23" concept="0" />
       <node id="2498161758031700133" at="10,42,13,23" concept="0" />
       <node id="2498161758031700101" at="10,0,15,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2498161758031700101" at="10,42,13,23" />
@@ -90,8 +74,6 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2498161758031701186">
     <file name="NewIntegerLiteral_TextGen.java">
       <node id="2498161758031701221" at="11,42,12,197" concept="0" />
-      <node id="2498161758031701221" at="11,42,12,197" concept="0" />
-      <node id="2498161758031701221" at="11,42,12,197" concept="1" />
       <node id="2498161758031701221" at="11,42,12,197" concept="1" />
       <node id="2498161758031701186" at="11,0,14,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2498161758031701186" at="11,42,12,197" />
@@ -105,12 +87,8 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2498161758031702411">
     <file name="NewStringLiteral_TextGen.java">
       <node id="2498161758031702543" at="11,42,12,21" concept="1" />
-      <node id="2498161758031702543" at="11,42,12,21" concept="1" />
-      <node id="2498161758031702543" at="12,21,13,178" concept="1" />
       <node id="2498161758031702543" at="12,21,13,178" concept="1" />
       <node id="2498161758031702543" at="13,178,14,21" concept="1" />
-      <node id="2498161758031702543" at="13,178,14,21" concept="1" />
-      <node id="2498161758031702543" at="11,42,14,21" concept="0" />
       <node id="2498161758031702543" at="11,42,14,21" concept="0" />
       <node id="2498161758031702411" at="11,0,16,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2498161758031702411" at="11,42,14,21" />
@@ -124,29 +102,17 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2498161758031703698">
     <file name="NewTupleLiteral_TextGen.java">
       <node id="2498161758031703739" at="12,42,13,21" concept="0" />
-      <node id="2498161758031703739" at="12,42,13,21" concept="0" />
-      <node id="2498161758031703739" at="12,42,13,21" concept="1" />
       <node id="2498161758031703739" at="12,42,13,21" concept="1" />
       <node id="2498161758031704637" at="14,222,15,26" concept="0" />
       <node id="2498161758031704637" at="14,222,15,26" concept="0" />
-      <node id="2498161758031704637" at="14,222,15,26" concept="0" />
-      <node id="2498161758031704637" at="14,222,15,26" concept="0" />
-      <node id="2498161758031704637" at="14,222,15,26" concept="1" />
       <node id="2498161758031704637" at="14,222,15,26" concept="1" />
       <node id="2498161758031718450" at="16,242,17,26" concept="0" />
-      <node id="2498161758031718450" at="16,242,17,26" concept="0" />
-      <node id="2498161758031718450" at="16,242,17,26" concept="1" />
       <node id="2498161758031718450" at="16,242,17,26" concept="1" />
       <node id="2498161758031704795" at="19,5,20,21" concept="0" />
-      <node id="2498161758031704795" at="19,5,20,21" concept="0" />
-      <node id="2498161758031704795" at="19,5,20,21" concept="1" />
       <node id="2498161758031704795" at="19,5,20,21" concept="1" />
       <node id="2498161758031705051" at="22,64,23,51" concept="6" />
-      <node id="2498161758031705051" at="22,64,23,51" concept="6" />
-      <node id="2498161758031704930" at="15,26,18,7" concept="3" />
       <node id="2498161758031704930" at="15,26,18,7" concept="3" />
       <node id="2498161758031705051" at="22,0,25,0" concept="10" trace="neq_brzzp_a0b0b0a#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="2498161758031703797" at="13,21,19,5" concept="2" />
       <node id="2498161758031703797" at="13,21,19,5" concept="2" />
       <node id="2498161758031703698" at="12,0,22,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2498161758031703739" at="12,42,13,21" />
@@ -173,16 +139,10 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2498161758031718477">
     <file name="Range_TextGen.java">
       <node id="2498161758031718518" at="11,42,12,180" concept="0" />
-      <node id="2498161758031718518" at="11,42,12,180" concept="0" />
-      <node id="2498161758031718518" at="11,42,12,180" concept="1" />
       <node id="2498161758031718518" at="11,42,12,180" concept="1" />
       <node id="2498161758031718518" at="12,180,13,22" concept="1" />
-      <node id="2498161758031718518" at="12,180,13,22" concept="1" />
-      <node id="2498161758031718518" at="13,22,14,178" concept="0" />
       <node id="2498161758031718518" at="13,22,14,178" concept="0" />
       <node id="2498161758031718518" at="13,22,14,178" concept="1" />
-      <node id="2498161758031718518" at="13,22,14,178" concept="1" />
-      <node id="2498161758031718518" at="11,42,14,178" concept="0" />
       <node id="2498161758031718518" at="11,42,14,178" concept="0" />
       <node id="2498161758031718477" at="11,0,16,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2498161758031718518" at="11,42,12,180" />
@@ -237,22 +197,13 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2520781328424158668">
     <file name="File_TextGen.java">
       <node id="2520781328424981350" at="12,42,13,222" concept="5" />
-      <node id="2520781328424981350" at="12,42,13,222" concept="5" />
-      <node id="2520781328424981258" at="14,33,15,27" concept="1" />
       <node id="2520781328424981258" at="14,33,15,27" concept="1" />
       <node id="2520781328424981258" at="15,27,16,177" concept="1" />
-      <node id="2520781328424981258" at="15,27,16,177" concept="1" />
-      <node id="2520781328424981258" at="16,177,17,23" concept="1" />
       <node id="2520781328424981258" at="16,177,17,23" concept="1" />
       <node id="2520781328424158671" at="18,12,19,26" concept="0" />
-      <node id="2520781328424158671" at="18,12,19,26" concept="0" />
-      <node id="2520781328424158671" at="18,12,19,26" concept="1" />
       <node id="2520781328424158671" at="18,12,19,26" concept="1" />
       <node id="2520781328424983198" at="18,10,20,5" concept="0" />
-      <node id="2520781328424983198" at="18,10,20,5" concept="0" />
       <node id="2520781328424981258" at="14,33,17,23" concept="0" />
-      <node id="2520781328424981258" at="14,33,17,23" concept="0" />
-      <node id="2520781328424977774" at="13,222,20,5" concept="3" />
       <node id="2520781328424977774" at="13,222,20,5" concept="3" />
       <node id="2520781328424158668" at="12,0,22,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2520781328424158671" at="18,12,19,26" />
@@ -272,9 +223,6 @@
     <file name="List_TextGen.java">
       <node id="2520781328424158815" at="11,42,12,186" concept="0" />
       <node id="2520781328424158815" at="11,42,12,186" concept="0" />
-      <node id="2520781328424158815" at="11,42,12,186" concept="0" />
-      <node id="2520781328424158815" at="11,42,12,186" concept="0" />
-      <node id="2520781328424158815" at="11,42,12,186" concept="1" />
       <node id="2520781328424158815" at="11,42,12,186" concept="1" />
       <node id="2520781328424158777" at="11,0,14,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2520781328424158777" at="11,42,12,186" />
@@ -288,22 +236,13 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2520781328424983384">
     <file name="Tuple_TextGen.java">
       <node id="2520781328424983413" at="12,42,13,24" concept="1" />
-      <node id="2520781328424983413" at="12,42,13,24" concept="1" />
-      <node id="2520781328424983413" at="14,5,15,204" concept="5" />
       <node id="2520781328424983413" at="14,5,15,204" concept="5" />
       <node id="2520781328424983413" at="15,204,16,70" concept="5" />
-      <node id="2520781328424983413" at="15,204,16,70" concept="5" />
-      <node id="2520781328424983413" at="17,37,18,25" concept="1" />
       <node id="2520781328424983413" at="17,37,18,25" concept="1" />
       <node id="2520781328424983413" at="19,31,20,23" concept="1" />
-      <node id="2520781328424983413" at="19,31,20,23" concept="1" />
-      <node id="2520781328424983413" at="18,25,21,9" concept="3" />
       <node id="2520781328424983413" at="18,25,21,9" concept="3" />
       <node id="2520781328424983413" at="16,70,22,7" concept="2" />
-      <node id="2520781328424983413" at="16,70,22,7" concept="2" />
       <node id="2520781328424983413" at="13,24,23,5" concept="0" />
-      <node id="2520781328424983413" at="13,24,23,5" concept="0" />
-      <node id="2520781328424983413" at="12,42,23,5" concept="0" />
       <node id="2520781328424983413" at="12,42,23,5" concept="0" />
       <node id="2520781328424983384" at="12,0,25,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2520781328424983413" at="19,31,20,23" />
@@ -327,9 +266,6 @@
     <file name="TupleElement_TextGen.java">
       <node id="2520781328424986586" at="11,42,12,179" concept="0" />
       <node id="2520781328424986586" at="11,42,12,179" concept="0" />
-      <node id="2520781328424986586" at="11,42,12,179" concept="0" />
-      <node id="2520781328424986586" at="11,42,12,179" concept="0" />
-      <node id="2520781328424986586" at="11,42,12,179" concept="1" />
       <node id="2520781328424986586" at="11,42,12,179" concept="1" />
       <node id="2520781328424986554" at="11,0,14,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2520781328424986554" at="11,42,12,179" />
@@ -343,22 +279,13 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2613339075984406752">
     <file name="ValueInAChannelRef_TextGen.java">
       <node id="2798116910144208239" at="14,692,15,24" concept="1" />
-      <node id="2798116910144208239" at="14,692,15,24" concept="1" />
-      <node id="2798116910144208239" at="15,24,16,326" concept="1" />
       <node id="2798116910144208239" at="15,24,16,326" concept="1" />
       <node id="2798116910144208239" at="16,326,17,23" concept="1" />
-      <node id="2798116910144208239" at="16,326,17,23" concept="1" />
-      <node id="2798116910145418711" at="18,12,19,23" concept="1" />
       <node id="2798116910145418711" at="18,12,19,23" concept="1" />
       <node id="2798116910145418711" at="19,23,20,326" concept="1" />
-      <node id="2798116910145418711" at="19,23,20,326" concept="1" />
-      <node id="2798116910145418711" at="18,12,20,326" concept="0" />
       <node id="2798116910145418711" at="18,12,20,326" concept="0" />
       <node id="2798116910144208239" at="14,692,17,23" concept="0" />
-      <node id="2798116910144208239" at="14,692,17,23" concept="0" />
       <node id="2798116910145419426" at="18,10,21,5" concept="0" />
-      <node id="2798116910145419426" at="18,10,21,5" concept="0" />
-      <node id="2798116910144200607" at="13,42,21,5" concept="3" />
       <node id="2798116910144200607" at="13,42,21,5" concept="3" />
       <node id="2613339075984406752" at="13,0,23,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2798116910145418711" at="18,12,20,326" />
@@ -803,33 +730,19 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/3544328886056335982">
     <file name="RichScript_TextGen.java">
       <node id="3544328886056335982" at="18,44,19,61" concept="1" />
-      <node id="3544328886056335982" at="18,44,19,61" concept="1" />
-      <node id="3544328886056336005" at="20,5,21,179" concept="0" />
-      <node id="3544328886056336005" at="20,5,21,179" concept="0" />
       <node id="3544328886056336005" at="20,5,21,179" concept="0" />
       <node id="3544328886056336005" at="20,5,21,179" concept="0" />
       <node id="3544328886056336005" at="20,5,21,179" concept="1" />
-      <node id="3544328886056336005" at="20,5,21,179" concept="1" />
-      <node id="3544328886056335982" at="23,7,24,38" concept="5" />
       <node id="3544328886056335982" at="23,7,24,38" concept="5" />
       <node id="3544328886056335982" at="25,13,26,335" concept="1" />
-      <node id="3544328886056335982" at="25,13,26,335" concept="1" />
       <node id="3544328886056335982" at="28,46,29,88" concept="1" />
-      <node id="3544328886056335982" at="28,46,29,88" concept="1" />
-      <node id="3544328886056335982" at="31,9,32,80" concept="1" />
       <node id="3544328886056335982" at="31,9,32,80" concept="1" />
       <node id="3544328886056335982" at="36,0,37,0" concept="9" trace="LOG" />
       <node id="3544328886056335982" at="17,42,20,5" concept="3" />
-      <node id="3544328886056335982" at="17,42,20,5" concept="3" />
-      <node id="3544328886056335982" at="27,31,30,11" concept="0" />
       <node id="3544328886056335982" at="27,31,30,11" concept="0" />
       <node id="3544328886056335982" at="27,31,30,11" concept="3" />
-      <node id="3544328886056335982" at="27,31,30,11" concept="3" />
-      <node id="3544328886056335982" at="24,38,31,9" concept="12" />
       <node id="3544328886056335982" at="24,38,31,9" concept="12" />
       <node id="3544328886056335982" at="22,44,33,7" concept="0" />
-      <node id="3544328886056335982" at="22,44,33,7" concept="0" />
-      <node id="3544328886056335982" at="21,179,34,5" concept="3" />
       <node id="3544328886056335982" at="21,179,34,5" concept="3" />
       <node id="3544328886056335982" at="17,0,36,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="3544328886056335982" at="18,44,19,61" />
@@ -854,8 +767,6 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/419240959831383329">
     <file name="NameInAChannelRef_TextGen.java">
       <node id="748852418098460362" at="12,42,13,342" concept="0" />
-      <node id="748852418098460362" at="12,42,13,342" concept="0" />
-      <node id="748852418098460362" at="12,42,13,342" concept="1" />
       <node id="748852418098460362" at="12,42,13,342" concept="1" />
       <node id="419240959831383329" at="12,0,15,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="419240959831383329" at="12,42,13,342" />
@@ -903,8 +814,6 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/4533252666382812955">
     <file name="InputFromBaseLanguageScript_TextGen.java">
       <node id="4533252666382813857" at="12,42,13,322" concept="0" />
-      <node id="4533252666382813857" at="12,42,13,322" concept="0" />
-      <node id="4533252666382813857" at="12,42,13,322" concept="1" />
       <node id="4533252666382813857" at="12,42,13,322" concept="1" />
       <node id="4533252666382812955" at="12,0,15,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="4533252666382812955" at="12,42,13,322" />
@@ -918,8 +827,6 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/4533252666382818192">
     <file name="InputValue_TextGen.java">
       <node id="4533252666382818218" at="12,42,13,324" concept="0" />
-      <node id="4533252666382818218" at="12,42,13,324" concept="0" />
-      <node id="4533252666382818218" at="12,42,13,324" concept="1" />
       <node id="4533252666382818218" at="12,42,13,324" concept="1" />
       <node id="4533252666382818192" at="12,0,15,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="4533252666382818192" at="12,42,13,324" />
@@ -933,14 +840,9 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/4900271829463226840">
     <file name="HiddenTypeVarDeclaration_TextGen.java">
       <node id="4900271829463239863" at="12,42,13,167" concept="1" />
-      <node id="4900271829463239863" at="12,42,13,167" concept="1" />
-      <node id="4900271829463239863" at="13,167,14,21" concept="1" />
       <node id="4900271829463239863" at="13,167,14,21" concept="1" />
       <node id="4900271829463239863" at="14,21,15,174" concept="0" />
-      <node id="4900271829463239863" at="14,21,15,174" concept="0" />
       <node id="4900271829463239863" at="14,21,15,174" concept="1" />
-      <node id="4900271829463239863" at="14,21,15,174" concept="1" />
-      <node id="4900271829463239863" at="12,42,15,174" concept="0" />
       <node id="4900271829463239863" at="12,42,15,174" concept="0" />
       <node id="4900271829463226840" at="12,0,17,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="4900271829463239863" at="14,21,15,174" />
@@ -955,14 +857,9 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/4900271829469558059">
     <file name="LocalVariableDeclaration_TextGen.java">
       <node id="4900271829469559152" at="12,42,13,167" concept="1" />
-      <node id="4900271829469559152" at="12,42,13,167" concept="1" />
-      <node id="4900271829469559152" at="13,167,14,21" concept="1" />
       <node id="4900271829469559152" at="13,167,14,21" concept="1" />
       <node id="4900271829469559152" at="14,21,15,174" concept="0" />
-      <node id="4900271829469559152" at="14,21,15,174" concept="0" />
       <node id="4900271829469559152" at="14,21,15,174" concept="1" />
-      <node id="4900271829469559152" at="14,21,15,174" concept="1" />
-      <node id="4900271829469559152" at="12,42,15,174" concept="0" />
       <node id="4900271829469559152" at="12,42,15,174" concept="0" />
       <node id="4900271829469558059" at="12,0,17,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="4900271829469559152" at="14,21,15,174" />
@@ -1002,47 +899,26 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6509497193190345809">
     <file name="RichScript_TextGen.java">
       <node id="6509497193190345809" at="18,44,19,61" concept="1" />
-      <node id="6509497193190345809" at="18,44,19,61" concept="1" />
-      <node id="6509497193190345853" at="20,5,21,25" concept="1" />
       <node id="6509497193190345853" at="20,5,21,25" concept="1" />
       <node id="6509497193190345853" at="21,25,22,30" concept="1" />
-      <node id="6509497193190345853" at="21,25,22,30" concept="1" />
-      <node id="6509497193190345853" at="22,30,23,25" concept="1" />
       <node id="6509497193190345853" at="22,30,23,25" concept="1" />
       <node id="6509497193190345853" at="23,25,24,24" concept="1" />
-      <node id="6509497193190345853" at="23,25,24,24" concept="1" />
-      <node id="6509497193190345853" at="24,24,25,179" concept="0" />
       <node id="6509497193190345853" at="24,24,25,179" concept="0" />
       <node id="6509497193190345853" at="24,24,25,179" concept="1" />
-      <node id="6509497193190345853" at="24,24,25,179" concept="1" />
-      <node id="6509497193190345853" at="25,179,26,25" concept="1" />
       <node id="6509497193190345853" at="25,179,26,25" concept="1" />
       <node id="6509497193190345853" at="26,25,27,30" concept="1" />
-      <node id="6509497193190345853" at="26,25,27,30" concept="1" />
-      <node id="6509497193190345853" at="27,30,28,25" concept="1" />
       <node id="6509497193190345853" at="27,30,28,25" concept="1" />
       <node id="6509497193190345809" at="30,7,31,38" concept="5" />
-      <node id="6509497193190345809" at="30,7,31,38" concept="5" />
-      <node id="6509497193190345809" at="32,13,33,335" concept="1" />
       <node id="6509497193190345809" at="32,13,33,335" concept="1" />
       <node id="6509497193190345809" at="35,46,36,88" concept="1" />
-      <node id="6509497193190345809" at="35,46,36,88" concept="1" />
-      <node id="6509497193190345809" at="38,9,39,80" concept="1" />
       <node id="6509497193190345809" at="38,9,39,80" concept="1" />
       <node id="6509497193190345809" at="43,0,44,0" concept="9" trace="LOG" />
       <node id="6509497193190345809" at="17,42,20,5" concept="3" />
-      <node id="6509497193190345809" at="17,42,20,5" concept="3" />
-      <node id="6509497193190345809" at="34,31,37,11" concept="0" />
       <node id="6509497193190345809" at="34,31,37,11" concept="0" />
       <node id="6509497193190345809" at="34,31,37,11" concept="3" />
-      <node id="6509497193190345809" at="34,31,37,11" concept="3" />
-      <node id="6509497193190345809" at="31,38,38,9" concept="12" />
       <node id="6509497193190345809" at="31,38,38,9" concept="12" />
       <node id="6509497193190345853" at="20,5,28,25" concept="0" />
-      <node id="6509497193190345853" at="20,5,28,25" concept="0" />
       <node id="6509497193190345809" at="29,44,40,7" concept="0" />
-      <node id="6509497193190345809" at="29,44,40,7" concept="0" />
-      <node id="6509497193190345809" at="28,25,41,5" concept="3" />
       <node id="6509497193190345809" at="28,25,41,5" concept="3" />
       <node id="6509497193190345809" at="17,0,43,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="6509497193190345809" at="18,44,19,61" />
@@ -1069,9 +945,6 @@
     <file name="ConditionalExpressionText_TextGen.java">
       <node id="6509497193194282058" at="11,42,12,179" concept="0" />
       <node id="6509497193194282058" at="11,42,12,179" concept="0" />
-      <node id="6509497193194282058" at="11,42,12,179" concept="0" />
-      <node id="6509497193194282058" at="11,42,12,179" concept="0" />
-      <node id="6509497193194282058" at="11,42,12,179" concept="1" />
       <node id="6509497193194282058" at="11,42,12,179" concept="1" />
       <node id="6509497193194282040" at="11,0,14,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="6509497193194282040" at="11,42,12,179" />
@@ -1085,8 +958,6 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6509497193205602217">
     <file name="ConditionalVariableRef_TextGen.java">
       <node id="6509497193205603116" at="12,42,13,327" concept="0" />
-      <node id="6509497193205603116" at="12,42,13,327" concept="0" />
-      <node id="6509497193205603116" at="12,42,13,327" concept="1" />
       <node id="6509497193205603116" at="12,42,13,327" concept="1" />
       <node id="6509497193205602217" at="12,0,15,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="6509497193205602217" at="12,42,13,327" />
@@ -1100,68 +971,37 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6588488528874930369">
     <file name="Report_TextGen.java">
       <node id="6588488528874932218" at="19,42,20,326" concept="0" />
-      <node id="6588488528874932218" at="19,42,20,326" concept="0" />
-      <node id="6588488528874932218" at="19,42,20,326" concept="1" />
       <node id="6588488528874932218" at="19,42,20,326" concept="1" />
       <node id="1856129165622871865" at="21,223,22,23" concept="0" />
-      <node id="1856129165622871865" at="21,223,22,23" concept="0" />
-      <node id="1856129165622871865" at="21,223,22,23" concept="1" />
       <node id="1856129165622871865" at="21,223,22,23" concept="1" />
       <node id="1856129165622871887" at="23,7,24,214" concept="5" />
-      <node id="1856129165622871887" at="23,7,24,214" concept="5" />
-      <node id="1856129165622871887" at="24,214,25,72" concept="5" />
       <node id="1856129165622871887" at="24,214,25,72" concept="5" />
       <node id="1856129165622871887" at="26,39,27,27" concept="1" />
-      <node id="1856129165622871887" at="26,39,27,27" concept="1" />
-      <node id="1856129165622871887" at="28,33,29,24" concept="1" />
       <node id="1856129165622871887" at="28,33,29,24" concept="1" />
       <node id="1856129165622858366" at="33,5,34,37" concept="1" />
-      <node id="1856129165622858366" at="33,5,34,37" concept="1" />
-      <node id="1856129165622858366" at="34,37,35,22" concept="1" />
       <node id="1856129165622858366" at="34,37,35,22" concept="1" />
       <node id="6588488528888437289" at="35,22,36,214" concept="5" />
-      <node id="6588488528888437289" at="35,22,36,214" concept="5" />
-      <node id="6588488528890968338" at="36,214,37,130" concept="7" />
       <node id="6588488528890968338" at="36,214,37,130" concept="7" />
       <node id="976376310253527192" at="37,130,38,660" concept="5" />
-      <node id="976376310253527192" at="37,130,38,660" concept="5" />
-      <node id="2554826849524102869" at="38,660,39,14" concept="7" />
       <node id="2554826849524102869" at="38,660,39,14" concept="7" />
       <node id="6588488528874934257" at="39,14,40,171" concept="1" />
-      <node id="6588488528874934257" at="39,14,40,171" concept="1" />
-      <node id="6588488528874934257" at="40,171,41,41" concept="1" />
       <node id="6588488528874934257" at="40,171,41,41" concept="1" />
       <node id="6588488528874934257" at="41,41,42,326" concept="1" />
-      <node id="6588488528874934257" at="41,41,42,326" concept="1" />
-      <node id="6588488528874934257" at="42,326,43,22" concept="1" />
       <node id="6588488528874934257" at="42,326,43,22" concept="1" />
       <node id="6588488528874934257" at="43,22,44,24" concept="1" />
-      <node id="6588488528874934257" at="43,22,44,24" concept="1" />
-      <node id="6588488528874934257" at="44,24,45,22" concept="1" />
       <node id="6588488528874934257" at="44,24,45,22" concept="1" />
       <node id="6588488528874935442" at="45,22,46,21" concept="1" />
-      <node id="6588488528874935442" at="45,22,46,21" concept="1" />
-      <node id="6588488528874935442" at="46,21,47,25" concept="1" />
       <node id="6588488528874935442" at="46,21,47,25" concept="1" />
       <node id="6588488528874930369" at="49,0,50,0" concept="9" trace="LOG" />
       <node id="976376310253557703" at="50,64,51,46" concept="6" />
-      <node id="976376310253557703" at="50,64,51,46" concept="6" />
-      <node id="1856129165622858366" at="33,5,35,22" concept="0" />
       <node id="1856129165622858366" at="33,5,35,22" concept="0" />
       <node id="6588488528874935442" at="45,22,47,25" concept="0" />
-      <node id="6588488528874935442" at="45,22,47,25" concept="0" />
-      <node id="1856129165622871887" at="27,27,30,11" concept="3" />
       <node id="1856129165622871887" at="27,27,30,11" concept="3" />
       <node id="976376310253557703" at="50,0,53,0" concept="10" trace="eq_xnn2wc_a0a0f0a#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
       <node id="1856129165622871887" at="25,72,31,9" concept="2" />
-      <node id="1856129165622871887" at="25,72,31,9" concept="2" />
-      <node id="6588488528874934257" at="39,14,45,22" concept="0" />
       <node id="6588488528874934257" at="39,14,45,22" concept="0" />
       <node id="1856129165622871887" at="22,23,32,7" concept="0" />
       <node id="1856129165622871887" at="22,23,32,7" concept="0" />
-      <node id="1856129165622871887" at="22,23,32,7" concept="0" />
-      <node id="1856129165622871887" at="22,23,32,7" concept="0" />
-      <node id="1856129165622858490" at="20,326,33,5" concept="3" />
       <node id="1856129165622858490" at="20,326,33,5" concept="3" />
       <node id="6588488528874930369" at="19,0,49,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="6588488528874932218" at="19,42,20,326" />
@@ -1199,9 +1039,6 @@
     <file name="ReportFunction_TextGen.java">
       <node id="6588488528875007353" at="11,42,12,169" concept="0" />
       <node id="6588488528875007353" at="11,42,12,169" concept="0" />
-      <node id="6588488528875007353" at="11,42,12,169" concept="0" />
-      <node id="6588488528875007353" at="11,42,12,169" concept="0" />
-      <node id="6588488528875007353" at="11,42,12,169" concept="1" />
       <node id="6588488528875007353" at="11,42,12,169" concept="1" />
       <node id="6588488528875007335" at="11,0,14,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="6588488528875007335" at="11,42,12,169" />
@@ -1215,10 +1052,7 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/8163238436332496214">
     <file name="ChannelFunction_TextGen.java">
       <node id="8163238436332496234" at="11,42,12,83" concept="1" />
-      <node id="8163238436332496234" at="11,42,12,83" concept="1" />
       <node id="8163238436332496234" at="12,83,13,22" concept="1" />
-      <node id="8163238436332496234" at="12,83,13,22" concept="1" />
-      <node id="8163238436332496234" at="11,42,13,22" concept="0" />
       <node id="8163238436332496234" at="11,42,13,22" concept="0" />
       <node id="8163238436332496214" at="11,0,15,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="8163238436332496214" at="11,42,13,22" />
@@ -1274,45 +1108,25 @@
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/8163238436339401923">
     <file name="RichScript_TextGen.java">
       <node id="8163238436339401923" at="18,44,19,61" concept="1" />
-      <node id="8163238436339401923" at="18,44,19,61" concept="1" />
-      <node id="8163238436339401946" at="20,5,21,25" concept="1" />
       <node id="8163238436339401946" at="20,5,21,25" concept="1" />
       <node id="8163238436339401946" at="21,25,22,27" concept="1" />
-      <node id="8163238436339401946" at="21,25,22,27" concept="1" />
-      <node id="8163238436339401946" at="22,27,23,25" concept="1" />
       <node id="8163238436339401946" at="22,27,23,25" concept="1" />
       <node id="8163238436339401946" at="23,25,24,179" concept="0" />
-      <node id="8163238436339401946" at="23,25,24,179" concept="0" />
-      <node id="8163238436339401946" at="23,25,24,179" concept="1" />
       <node id="8163238436339401946" at="23,25,24,179" concept="1" />
       <node id="8163238436339401946" at="24,179,25,25" concept="1" />
-      <node id="8163238436339401946" at="24,179,25,25" concept="1" />
-      <node id="8163238436339401946" at="25,25,26,27" concept="1" />
       <node id="8163238436339401946" at="25,25,26,27" concept="1" />
       <node id="8163238436339401946" at="26,27,27,25" concept="1" />
-      <node id="8163238436339401946" at="26,27,27,25" concept="1" />
-      <node id="8163238436339401923" at="29,7,30,38" concept="5" />
       <node id="8163238436339401923" at="29,7,30,38" concept="5" />
       <node id="8163238436339401923" at="31,13,32,335" concept="1" />
-      <node id="8163238436339401923" at="31,13,32,335" concept="1" />
       <node id="8163238436339401923" at="34,46,35,88" concept="1" />
-      <node id="8163238436339401923" at="34,46,35,88" concept="1" />
-      <node id="8163238436339401923" at="37,9,38,80" concept="1" />
       <node id="8163238436339401923" at="37,9,38,80" concept="1" />
       <node id="8163238436339401923" at="42,0,43,0" concept="9" trace="LOG" />
       <node id="8163238436339401923" at="17,42,20,5" concept="3" />
-      <node id="8163238436339401923" at="17,42,20,5" concept="3" />
-      <node id="8163238436339401923" at="33,31,36,11" concept="0" />
       <node id="8163238436339401923" at="33,31,36,11" concept="0" />
       <node id="8163238436339401923" at="33,31,36,11" concept="3" />
-      <node id="8163238436339401923" at="33,31,36,11" concept="3" />
-      <node id="8163238436339401946" at="20,5,27,25" concept="0" />
       <node id="8163238436339401946" at="20,5,27,25" concept="0" />
       <node id="8163238436339401923" at="30,38,37,9" concept="12" />
-      <node id="8163238436339401923" at="30,38,37,9" concept="12" />
       <node id="8163238436339401923" at="28,44,39,7" concept="0" />
-      <node id="8163238436339401923" at="28,44,39,7" concept="0" />
-      <node id="8163238436339401923" at="27,25,40,5" concept="3" />
       <node id="8163238436339401923" at="27,25,40,5" concept="3" />
       <node id="8163238436339401923" at="17,0,42,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="8163238436339401923" at="18,44,19,61" />
