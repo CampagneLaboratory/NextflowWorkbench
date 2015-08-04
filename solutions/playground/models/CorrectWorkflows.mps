@@ -721,10 +721,6 @@
   </node>
   <node concept="2ulcR8" id="6zpIx1pCL0V">
     <property role="TrG5h" value="addTextToFile" />
-    <node concept="1uLvKC" id="6qiI2N5urdM" role="2ulM7n">
-      <property role="TrG5h" value="strInput" />
-      <node concept="16pbKc" id="2fLVrqPYDsQ" role="2ybFLk" />
-    </node>
     <node concept="2lYRya" id="3rUult5h7x6" role="2ulM79">
       <property role="TrG5h" value="'file.txt'" />
       <node concept="16pRw0" id="3rUult5h7xe" role="2ybFLk" />
@@ -741,6 +737,10 @@
           <property role="19SUeA" value=" &gt; file.txt" />
         </node>
       </node>
+    </node>
+    <node concept="1uLvKC" id="6qiI2N5urdM" role="2ulM7n">
+      <property role="TrG5h" value="strInput" />
+      <node concept="16pbKc" id="2fLVrqPYDsQ" role="2ybFLk" />
     </node>
   </node>
   <node concept="2$rMIF" id="6zpIx1pD2QL">
@@ -858,36 +858,6 @@
   <node concept="3zupj_" id="6eMkF2c4Hdz">
     <property role="TrG5h" value="workflow.config" />
     <node concept="3zuAPI" id="6eMkF2c4LmG" role="3zupjy" />
-  </node>
-  <node concept="2$rMIF" id="3EHTfOJ130B">
-    <property role="TrG5h" value="SplitFunctionTest" />
-    <node concept="2$rEH5" id="3EHTfOJ130C" role="2$rEHq">
-      <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
-      <node concept="1uYdA0" id="3EHTfOJ139x" role="1uLvPH">
-        <ref role="1uK_4X" node="3EHTfOJ135G" resolve="paths" />
-        <node concept="1teHI3" id="dOBxzzmFdJ" role="1ylr64">
-          <node concept="3xIkQH" id="dOBxzztIyE" role="3hXsJg">
-            <node concept="2J_g7P" id="dOBxzz$Mha" role="3xIkc1">
-              <property role="2J_vQ8" value="path" />
-            </node>
-          </node>
-          <node concept="ksxz_" id="dOBxz_y5AG" role="3hXsJg">
-            <property role="3x3bhU" value="UTF-8" />
-          </node>
-        </node>
-      </node>
-      <node concept="1uLkD0" id="dOBxz_y4wF" role="1uLvPA">
-        <property role="TrG5h" value="" />
-      </node>
-    </node>
-    <node concept="1CVceo" id="3EHTfOJ135G" role="2$L6iY">
-      <property role="TrG5h" value="paths" />
-      <node concept="2J_sx7" id="3EHTfOJ135H" role="2$L62I">
-        <node concept="2J_rk5" id="3EHTfOJ137C" role="2J_sx6">
-          <property role="2J_rkp" value="path1" />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="2$rMIF" id="7T1vD2UvCAy">
     <property role="TrG5h" value="LiteralFunctionTest" />
@@ -1033,6 +1003,36 @@
           <node concept="2J_g7P" id="5vsFYeca_Oe" role="2J_sx6">
             <property role="2J_vQ8" value="how are you?" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2$rMIF" id="3EHTfOJ130B">
+    <property role="TrG5h" value="SplitFunctionTest" />
+    <node concept="2$rEH5" id="3EHTfOJ130C" role="2$rEHq">
+      <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
+      <node concept="1uYdA0" id="3EHTfOJ139x" role="1uLvPH">
+        <ref role="1uK_4X" node="3EHTfOJ135G" resolve="paths" />
+        <node concept="1teHI3" id="dOBxzzmFdJ" role="1ylr64">
+          <node concept="3xIkQH" id="dOBxzztIyE" role="3hXsJg">
+            <node concept="2J_g7P" id="dOBxzz$Mha" role="3xIkc1">
+              <property role="2J_vQ8" value="path" />
+            </node>
+          </node>
+          <node concept="ksxz_" id="dOBxz_y5AG" role="3hXsJg">
+            <property role="3x3bhU" value="UTF-8" />
+          </node>
+        </node>
+      </node>
+      <node concept="1uLkD0" id="dOBxz_y4wF" role="1uLvPA">
+        <property role="TrG5h" value="" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="3EHTfOJ135G" role="2$L6iY">
+      <property role="TrG5h" value="paths" />
+      <node concept="2J_sx7" id="3EHTfOJ135H" role="2$L62I">
+        <node concept="2J_rk5" id="3EHTfOJ137C" role="2J_sx6">
+          <property role="2J_rkp" value="path1" />
         </node>
       </node>
     </node>
