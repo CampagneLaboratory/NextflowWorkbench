@@ -263,25 +263,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="org.campagnelab.workflow.editor.Closurefunction_Editor" file="Closurefunction_Editor.java">
-    <classNode dependClassName="java.lang.Class" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.style.FocusPolicy" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
-    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
-    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
-    <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
   <dependency className="org.campagnelab.workflow.editor.CollateAllowIncompleteTuples_Editor" file="CollateAllowIncompleteTuples_Editor.java">
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
@@ -392,7 +373,6 @@
     <classNode dependClassName="org.campagnelab.workflow.editor.ChannelType_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.Charset_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.ClosureFunctionWithChannelRef_Editor" />
-    <classNode dependClassName="org.campagnelab.workflow.editor.Closurefunction_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.CollateAllowIncompleteTuples_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.CollateStepSize_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.Collate_Editor" />
@@ -410,6 +390,7 @@
     <classNode dependClassName="org.campagnelab.workflow.editor.FilePath_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.FileSplitOption_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.File_Editor" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.FunctionWithClosure_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.GlobalChannel_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.GroupTuple_Editor" />
     <classNode dependClassName="org.campagnelab.workflow.editor.Header_Editor" />
@@ -648,6 +629,25 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.editor.FunctionWithClosure_Editor" file="FunctionWithClosure_Editor.java">
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.FocusPolicy" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunctionMap" />
+    <classNode dependClassName="org.campagnelab.workflow.editor.ChannelFunction_KeyMap" />
     <classNode dependClassName="org.campagnelab.workflow.editor.WorkflowStyles_StyleSheet" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />

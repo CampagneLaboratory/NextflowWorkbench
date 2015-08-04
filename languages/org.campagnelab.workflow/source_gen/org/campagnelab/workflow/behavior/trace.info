@@ -81,9 +81,6 @@
     <file name="ClosureLiteralWorkFlow_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ClosureLiteralWorkFlow_BehaviorDescriptor" />
     </file>
-    <file name="Closurefunction_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
-    </file>
     <file name="CollateAllowIncompleteTuples_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.CollateAllowIncompleteTuples_BehaviorDescriptor" />
     </file>
@@ -167,6 +164,9 @@
     </file>
     <file name="Flatten_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Flatten_BehaviorDescriptor" />
+    </file>
+    <file name="FunctionWithClosure_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     </file>
     <file name="GlobalChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalChannel_BehaviorDescriptor" />

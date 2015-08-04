@@ -6,6 +6,7 @@
   <exported-language name="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <exported-solutions>
     <exported-solution>c039a1a6-4680-46fa-b571-a6a5f1e49ab6(org.campagnelab.workflow.run)</exported-solution>
+    <exported-solution>4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)</exported-solution>
   </exported-solutions>
 </dev-kit>
 

@@ -1322,7 +1322,7 @@
   </node>
   <node concept="1TIwiD" id="XaRILis0lI">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
-    <property role="TrG5h" value="Closurefunction" />
+    <property role="TrG5h" value="FunctionWithClosure" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
@@ -1344,7 +1344,7 @@
     <property role="TrG5h" value="FlatMap" />
     <property role="34LRSv" value="flatMap" />
     <property role="R4oN_" value="applies a function to every item emitted by a channel and returns the items into the channel; if a mapping function returns a list, the list is flattened such that each element is emitted individually" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILilHC4">
     <property role="3GE5qa" value="channelFunctions.literalFunctions" />
@@ -1378,7 +1378,7 @@
     <property role="TrG5h" value="Distinct" />
     <property role="34LRSv" value="distinct" />
     <property role="R4oN_" value="Removes consecutive duplicated items from a channel" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
     <node concept="1TJgyj" id="XaRILilDAr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="condition" />
@@ -1404,7 +1404,7 @@
     <property role="TrG5h" value="Unique" />
     <property role="34LRSv" value="unique" />
     <property role="R4oN_" value="removes duplicate elements from a channel" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILisNjl">
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
@@ -1418,14 +1418,14 @@
     <property role="TrG5h" value="Map" />
     <property role="34LRSv" value="map" />
     <property role="R4oN_" value="applies a function to every item emitted by a channel, and returns the items into the channel" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILjgRRX">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="GroupBy" />
     <property role="34LRSv" value="groupBy" />
     <property role="R4oN_" value="collects the values emitted by the channel grouping them together using a mapping function that associates each item with a key. Emits an associative array that maps each key to the set of items identified by that key" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILirYxk">
     <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
@@ -1545,7 +1545,7 @@
     <property role="34LRSv" value="print" />
     <property role="TrG5h" value="Print" />
     <property role="R4oN_" value="Print items emitted by a source channel and consume it" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgovJ">
     <property role="3GE5qa" value="channelFunctions.withChannelRef" />
@@ -1565,7 +1565,7 @@
     <property role="TrG5h" value="Println" />
     <property role="34LRSv" value="println" />
     <property role="R4oN_" value="Print items emitted by a source channel with a new line and consume it" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgoqS">
     <property role="3GE5qa" value="channelFunctions.withChannelRef" />
@@ -1579,7 +1579,7 @@
     <property role="TrG5h" value="View" />
     <property role="34LRSv" value="view" />
     <property role="R4oN_" value="Print items emitted by a source channel without consuming it" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgnIR">
     <property role="3GE5qa" value="channelFunctions.withChannelRef" />
@@ -1606,21 +1606,21 @@
     <property role="TrG5h" value="CountBy" />
     <property role="34LRSv" value="countBy" />
     <property role="R4oN_" value="Creates a channel which emits a Map from items in the source channel having the same key" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOoY">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="Min" />
     <property role="34LRSv" value="min" />
     <property role="R4oN_" value="Emits the item that has the lowest value from a complete source channel" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcWld">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="ClosureFunctionWithChannelRef" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
     <node concept="1TJgyj" id="6TmjYLGeFMw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="outChannelContainerRef" />
@@ -1633,7 +1633,7 @@
     <property role="TrG5h" value="ifEmpty" />
     <property role="34LRSv" value="ifEmpty" />
     <property role="R4oN_" value="emits a value specified as aparameter, when the source channel is empty" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgpKP">
     <property role="3GE5qa" value="channelFunctions.literalFunctions" />
@@ -1663,7 +1663,7 @@
     <property role="TrG5h" value="Sum" />
     <property role="34LRSv" value="sum" />
     <property role="R4oN_" value="Emits the sum of all the items emitted by the source channel itself" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeHXi">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
@@ -1690,7 +1690,7 @@
     <property role="TrG5h" value="Max" />
     <property role="34LRSv" value="max" />
     <property role="R4oN_" value="Emits the item that has the greatest value from a complete source channel" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeFpH">
     <property role="TrG5h" value="OutChannelContainerRef" />

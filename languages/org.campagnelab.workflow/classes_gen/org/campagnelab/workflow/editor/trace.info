@@ -405,7 +405,7 @@
     </file>
   </root>
   <root nodeRef="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/1629219545452493880">
-    <file name="Closurefunction_Editor.java">
+    <file name="FunctionWithClosure_Editor.java">
       <node id="1629219545452493880" at="20,79,21,63" concept="7" />
       <node id="1629219545452493880" at="23,89,24,96" concept="6" />
       <node id="1629219545452493880" at="24,96,25,48" concept="2" />
@@ -457,11 +457,11 @@
       <node id="1629219545452496433" at="56,58,59,5" concept="4" />
       <node id="1629219545452496433" at="59,5,62,5" concept="4" />
       <node id="1629219545452496433" at="65,59,70,22" concept="4" />
-      <node id="1629219545452495454" at="33,0,42,0" concept="5" trace="createComponent_a9bwvg_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1629219545452495459" at="42,0,51,0" concept="5" trace="createConstant_a9bwvg_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1629219545452496443" at="72,0,81,0" concept="5" trace="createConstant_a9bwvg_d0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1629219545452493880" at="23,0,33,0" concept="5" trace="createCollection_a9bwvg_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1629219545452496433" at="51,0,72,0" concept="5" trace="createRefNode_a9bwvg_c0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1629219545452495454" at="33,0,42,0" concept="5" trace="createComponent_5gq5vr_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1629219545452495459" at="42,0,51,0" concept="5" trace="createConstant_5gq5vr_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1629219545452496443" at="72,0,81,0" concept="5" trace="createConstant_5gq5vr_d0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1629219545452493880" at="23,0,33,0" concept="5" trace="createCollection_5gq5vr_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1629219545452496433" at="51,0,72,0" concept="5" trace="createRefNode_5gq5vr_c0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="1629219545452493880" at="20,79,21,63" />
       <scope id="1629219545452493880" at="26,28,27,82" />
       <scope id="1629219545452493880" at="27,82,28,81" />
@@ -517,7 +517,7 @@
         <var name="editorContext" id="1629219545452496433" />
         <var name="node" id="1629219545452496433" />
       </scope>
-      <unit id="1629219545452493880" at="19,0,82,0" name="org.campagnelab.workflow.editor.Closurefunction_Editor" />
+      <unit id="1629219545452493880" at="19,0,82,0" name="org.campagnelab.workflow.editor.FunctionWithClosure_Editor" />
     </file>
   </root>
   <root nodeRef="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/1629219545452513518">

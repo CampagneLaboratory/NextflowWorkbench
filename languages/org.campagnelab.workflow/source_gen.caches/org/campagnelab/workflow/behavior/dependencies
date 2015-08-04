@@ -324,7 +324,7 @@
   <dependency className="org.campagnelab.workflow.behavior.ClosureFunctionWithChannelRef_BehaviorDescriptor" file="ClosureFunctionWithChannelRef_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.ClosureLiteralWorkFlow_Behavior" file="ClosureLiteralWorkFlow_Behavior.java">
@@ -338,12 +338,6 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.closures.behavior.ClosureLiteral_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" file="Closurefunction_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.ChannelFunction_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.CollateAllowIncompleteTuples_Behavior" file="CollateAllowIncompleteTuples_Behavior.java">
@@ -419,7 +413,7 @@
   <dependency className="org.campagnelab.workflow.behavior.CountBy_BehaviorDescriptor" file="CountBy_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.Cross_BehaviorDescriptor" file="Cross_BehaviorDescriptor.java">
@@ -443,7 +437,7 @@
   <dependency className="org.campagnelab.workflow.behavior.Distinct_BehaviorDescriptor" file="Distinct_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.Elem_BehaviorDescriptor" file="Elem_BehaviorDescriptor.java">
@@ -618,13 +612,19 @@
   <dependency className="org.campagnelab.workflow.behavior.FlatMap_BehaviorDescriptor" file="FlatMap_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.Flatten_BehaviorDescriptor" file="Flatten_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.workflow.behavior.NoArgFunction_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" file="FunctionWithClosure_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.ChannelFunction_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.GlobalChannel_Behavior" file="GlobalChannel_Behavior.java">
@@ -639,7 +639,7 @@
   <dependency className="org.campagnelab.workflow.behavior.GroupBy_BehaviorDescriptor" file="GroupBy_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.GroupTuple_BehaviorDescriptor" file="GroupTuple_BehaviorDescriptor.java">
@@ -911,13 +911,13 @@
   <dependency className="org.campagnelab.workflow.behavior.Map_BehaviorDescriptor" file="Map_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.Max_BehaviorDescriptor" file="Max_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.Merge_BehaviorDescriptor" file="Merge_BehaviorDescriptor.java">
@@ -929,7 +929,7 @@
   <dependency className="org.campagnelab.workflow.behavior.Min_BehaviorDescriptor" file="Min_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.Mix_BehaviorDescriptor" file="Mix_BehaviorDescriptor.java">
@@ -1163,13 +1163,13 @@
   <dependency className="org.campagnelab.workflow.behavior.Print_BehaviorDescriptor" file="Print_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.Println_BehaviorDescriptor" file="Println_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.ProcessInputOutput_Behavior" file="ProcessInputOutput_Behavior.java">
@@ -1653,7 +1653,7 @@
   <dependency className="org.campagnelab.workflow.behavior.Sum_BehaviorDescriptor" file="Sum_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.Take_BehaviorDescriptor" file="Take_BehaviorDescriptor.java">
@@ -1806,7 +1806,7 @@
   <dependency className="org.campagnelab.workflow.behavior.Unique_BehaviorDescriptor" file="Unique_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.ValueInAChannelRef_BehaviorDescriptor" file="ValueInAChannelRef_BehaviorDescriptor.java">
@@ -1833,7 +1833,7 @@
   <dependency className="org.campagnelab.workflow.behavior.View_BehaviorDescriptor" file="View_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.behavior.Workflow_Behavior" file="Workflow_Behavior.java">
@@ -1867,7 +1867,7 @@
   <dependency className="org.campagnelab.workflow.behavior.ifEmpty_BehaviorDescriptor" file="ifEmpty_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
 </dependenciesRoot>
