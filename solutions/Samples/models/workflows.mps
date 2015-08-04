@@ -169,7 +169,7 @@
       </node>
     </node>
     <node concept="1CVceo" id="1WG1fjcFRAL" role="2$L6iY">
-      <property role="TrG5h" value="initialBytes" />
+      <property role="TrG5h" value="bytesForTheSequencesToGenerate" />
       <node concept="2J_sx7" id="1WG1fjcFRAM" role="2$L62I">
         <node concept="2J_swZ" id="1WG1fjcFRJ2" role="2J_sx6">
           <property role="2J_sxC" value="100000" />
@@ -187,7 +187,7 @@
     <node concept="2$rEH5" id="1WG1fjcFR_I" role="2$rEHq">
       <ref role="2$rEH4" to="hg90:1WG1fjcFlGX" resolve="GenerateRandomSequences" />
       <node concept="1uYdA0" id="1WG1fjcFRAk" role="1uLvPH">
-        <ref role="1uK_4X" node="1WG1fjcFRAL" resolve="initialBytes" />
+        <ref role="1uK_4X" node="1WG1fjcFRAL" resolve="bytesForTheSequencesToGenerate" />
       </node>
       <node concept="1uLkD0" id="1WG1fjcFRMh" role="1uLvPA">
         <property role="TrG5h" value="sequences" />
@@ -365,7 +365,7 @@
       </node>
     </node>
     <node concept="1CVceo" id="1WG1fjcG2jV" role="2$L6iY">
-      <property role="TrG5h" value="initialBytes" />
+      <property role="TrG5h" value="bytesForTheSequencesToGenerate" />
       <node concept="2J_sx7" id="1WG1fjcG2jW" role="2$L62I">
         <node concept="2J_swZ" id="1WG1fjcG2jX" role="2J_sx6">
           <property role="2J_sxC" value="10000" />
@@ -383,7 +383,7 @@
     <node concept="2$rEH5" id="1WG1fjcG2k1" role="2$rEHq">
       <ref role="2$rEH4" to="hg90:1WG1fjcFlGX" resolve="GenerateRandomSequences" />
       <node concept="1uYdA0" id="1WG1fjcG2k2" role="1uLvPH">
-        <ref role="1uK_4X" node="1WG1fjcG2jV" resolve="initialBytes" />
+        <ref role="1uK_4X" node="1WG1fjcG2jV" resolve="bytesForTheSequencesToGenerate" />
       </node>
       <node concept="1uLkD0" id="1WG1fjcG2k3" role="1uLvPA">
         <property role="TrG5h" value="sequences" />
@@ -428,6 +428,84 @@
   <node concept="3zupj_" id="1WG1fjcGDWX">
     <property role="TrG5h" value="workflow.config" />
     <node concept="3zuAPI" id="1WG1fjcGDWY" role="3zupjy" />
+  </node>
+  <node concept="2$rMIF" id="6kZ7DevQGNz">
+    <property role="TrG5h" value="ShowSortedSequencesMatchingAPattern" />
+    <node concept="1CVceo" id="6kZ7DevSyOQ" role="2$L6iY">
+      <property role="TrG5h" value="inputSequences" />
+      <node concept="2J_sx7" id="6kZ7DevSyOR" role="2$L62I">
+        <node concept="2J_g7P" id="6kZ7DevS$8P" role="2J_sx6">
+          <property role="2J_vQ8" value="CGAATCG AGAAA CGTGTTG CGTGTTG GAGGTGTGTGTA CAAACCT TCGGAT AACGCCA TTTGGACC GACGAAA CTCCAGGA GGCATCCT GACGAAA CTAGGAACTAC AGGTCTTTGT A CCTT ATA A " />
+        </node>
+      </node>
+    </node>
+    <node concept="2UNLhE" id="6kZ7DevQVMD" role="2UW718">
+      <ref role="2UNLhW" node="6kZ7DevS$$k" resolve="sortedSequences" />
+      <node concept="2UPiyC" id="6kZ7DevQVME" role="2UNLhY">
+        <node concept="3clFbS" id="6kZ7DevQVMF" role="2VODD2">
+          <node concept="3clFbF" id="6kZ7DevQX_Y" role="3cqZAp">
+            <node concept="2OqwBi" id="6kZ7DevQXFH" role="3clFbG">
+              <node concept="10M0yZ" id="6kZ7DevQX_X" role="2Oq$k0">
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="6kZ7DevQXVo" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="Xl_RD" id="6kZ7DevQYbW" role="37wK5m">
+                  <property role="Xl_RC" value="Matches found: " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6kZ7DevSD$F" role="3cqZAp">
+            <node concept="2OqwBi" id="6kZ7DevSDKK" role="3clFbG">
+              <node concept="10M0yZ" id="6kZ7DevSD$E" role="2Oq$k0">
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="6kZ7DevSE49" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="2UPiyF" id="6kZ7DevSEaA" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="6kZ7DevQRRC" role="2$L6iY">
+      <property role="TrG5h" value="searchFor" />
+      <node concept="2J_sx7" id="6kZ7DevQRRD" role="2$L62I">
+        <node concept="2J_g7P" id="6kZ7DevQSbS" role="2J_sx6">
+          <property role="2J_vQ8" value="GAA" />
+        </node>
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6kZ7DevQGN$" role="2$rEHq">
+      <ref role="2$rEH4" to="hg90:1WG1fjcFXUQ" resolve="SelectSequencesByPattern" />
+      <node concept="1uYdA0" id="6kZ7DevQSja" role="1uLvPH">
+        <ref role="1uK_4X" node="6kZ7DevSyOQ" resolve="inputSequences" />
+      </node>
+      <node concept="1uYdA0" id="6kZ7DevQSjb" role="1uLvPH">
+        <ref role="1uK_4X" node="6kZ7DevQRRC" resolve="searchFor" />
+      </node>
+      <node concept="1uLkD0" id="6kZ7DevQSo6" role="1uLvPA">
+        <property role="TrG5h" value="matchingSequences" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6kZ7DevS$x9" role="2$rEHq">
+      <ref role="2$rEH4" to="hg90:1WG1fjcGqMw" resolve="SortSequences" />
+      <node concept="1uYdA0" id="6kZ7DevS$$j" role="1uLvPH">
+        <ref role="1uK_4X" node="6kZ7DevQSo6" resolve="matchingSequences" />
+      </node>
+      <node concept="1uLkD0" id="6kZ7DevS$$k" role="1uLvPA">
+        <property role="TrG5h" value="sortedSequences" />
+      </node>
+    </node>
+    <node concept="19SGf9" id="6kZ7DevSNs6" role="GZ$AB">
+      <node concept="19SUe$" id="6kZ7DevSNs7" role="19SJt6">
+        <property role="19SUeA" value="This workflow searches for a specific pattern in a set of input sequences, sorts the matching sequences and prints them." />
+      </node>
+    </node>
   </node>
 </model>
 
