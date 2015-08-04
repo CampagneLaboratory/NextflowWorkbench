@@ -31,11 +31,6 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
-      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
-        <child id="5680397130376446158" name="type" index="1tU5fm" />
-      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -58,12 +53,6 @@
       </concept>
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
-      </concept>
-    </language>
-    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
-      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
-        <child id="1199569906740" name="parameter" index="1bW2Oz" />
-        <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -110,11 +99,8 @@
         <child id="6588488528863172374" name="function" index="2UNLhY" />
       </concept>
       <concept id="6588488528864881600" name="org.campagnelab.workflow.structure.ReportFunction" flags="ig" index="2UPiyC" />
+      <concept id="6588488528864881603" name="org.campagnelab.workflow.structure.ReportParameter" flags="ng" index="2UPiyF" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
-      <concept id="6514615324151249770" name="org.campagnelab.workflow.structure.ClosureLiteralWorkFlow" flags="ng" index="1ecmHP" />
-      <concept id="1101938165422228846" name="org.campagnelab.workflow.structure.Closurefunction" flags="ng" index="1teHI2">
-        <child id="1629219545452496431" name="closure" index="1Xju2$" />
-      </concept>
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
@@ -131,11 +117,6 @@
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
       </concept>
     </language>
-    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
-        <child id="1151688676805" name="elementType" index="_ZDj9" />
-      </concept>
-    </language>
   </registry>
   <node concept="2$rMIF" id="2hwCr1Mk2me">
     <property role="TrG5h" value="MonWorkflowqq" />
@@ -143,28 +124,7 @@
       <ref role="2$rEH4" node="2hwCr1MjRuG" resolve="testw" />
       <node concept="1uYdA0" id="1m6aGq8QnLq" role="1uLvPH">
         <ref role="1uK_4X" node="1m6aGq9bdYF" resolve="newChannel" />
-        <node concept="2pgWx" id="5h9rZfhOOTB" role="1ylr64">
-          <node concept="1ecmHP" id="5h9rZfhOOUB" role="1Xju2$">
-            <node concept="37vLTG" id="5h9rZfhOOV8" role="1bW2Oz">
-              <property role="TrG5h" value="empty" />
-              <node concept="_YKpA" id="5h9rZfhOOW4" role="1tU5fm">
-                <node concept="17QB3L" id="5h9rZfhOOW7" role="_ZDj9" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="5h9rZfhOOW9" role="1bW5cS">
-              <node concept="3clFbF" id="5h9rZfhOOXH" role="3cqZAp">
-                <node concept="3cpWs3" id="5h9rZfhOPr5" role="3clFbG">
-                  <node concept="Xl_RD" id="5h9rZfhOPrH" role="3uHU7B">
-                    <property role="Xl_RC" value="this is myvalue" />
-                  </node>
-                  <node concept="37vLTw" id="5h9rZfhOOXG" role="3uHU7w">
-                    <ref role="3cqZAo" node="5h9rZfhOOV8" resolve="empty" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="2pgWx" id="4PfLmWnhvvh" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="1m6aGq8QnMc" role="1uLvPA">
         <property role="TrG5h" value="file" />
@@ -182,8 +142,11 @@
               </node>
               <node concept="liA8E" id="3x6pbm2KHUY" role="2OqNvi">
                 <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-                <node concept="Xl_RD" id="3x6pbm2KHW3" role="37wK5m">
-                  <property role="Xl_RC" value="I can have both function" />
+                <node concept="3cpWs3" id="4FWUYVFsnLc" role="37wK5m">
+                  <node concept="2UPiyF" id="4FWUYVFsnQU" role="3uHU7w" />
+                  <node concept="Xl_RD" id="3x6pbm2KHW3" role="3uHU7B">
+                    <property role="Xl_RC" value="I can have both function" />
+                  </node>
                 </node>
               </node>
             </node>

@@ -190,7 +190,6 @@ public class QueriesGenerated {
   }
   public static Iterable<SNode> sourceNodesQuery_3280266319710997398(final SourceSubstituteMacroNodesContext _context) {
 
-
     final SNode myWorkflow = SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, "org.campagnelab.workflow.structure.Workflow"), false, false);
     ListSequence.fromList(SModelOperations.roots(_context.getInputModel(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, "org.campagnelab.workflow.structure.Workflow"))).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
@@ -198,7 +197,15 @@ public class QueriesGenerated {
       }
     });
 
-    return SNodeOperations.getNodeDescendants(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.Closurefunction"), false, new SAbstractConcept[]{});
+    return ListSequence.fromList(SNodeOperations.getNodeDescendants(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.Closurefunction"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
+      public boolean accept(final SNode clrfct) {
+        return ListSequence.fromList(SNodeOperations.getNodeDescendants(myWorkflow, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.Closurefunction"), false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return (SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, 0x169c268b6bd1c62fL, "closure")) != null) & SNodeOperations.getIndexInParent(clrfct) == SNodeOperations.getIndexInParent(it);
+          }
+        });
+      }
+    });
   }
   public static Iterable<SNode> sourceNodesQuery_8584871179160222277(final SourceSubstituteMacroNodesContext _context) {
     return SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6fc5345L, "org.campagnelab.workflow.structure.InputValue"), false, new SAbstractConcept[]{});
