@@ -71,6 +71,8 @@
     <classNode dependClassName="org.campagnelab.workflow.constraints.Report_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.Sep_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.Skip_Constraints" />
+    <classNode dependClassName="org.campagnelab.workflow.constraints.SplitFastaRecordFields_Constraints" />
+    <classNode dependClassName="org.campagnelab.workflow.constraints.SplitFastqRecordFields_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.StringChannel_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.Strip_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.ToList_Constraints" />
@@ -433,6 +435,30 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.workflow.constraints.Skip_Constraints" file="Skip_Constraints.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.constraints.SplitFastaRecordFields_Constraints" file="SplitFastaRecordFields_Constraints.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.constraints.SplitFastqRecordFields_Constraints" file="SplitFastqRecordFields_Constraints.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />

@@ -3259,67 +3259,37 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="5h9rZfh0W2p">
-    <ref role="1XX52x" to="iowz:6TmjYLGeFpH" resolve="OutChannelContainerRef" />
-    <node concept="1iCGBv" id="5h9rZfh0WTa" role="2wV5jI">
-      <ref role="1NtTu8" to="iowz:6TmjYLGeFMt" />
-      <node concept="1sVBvm" id="5h9rZfh0WTc" role="1sWHZn">
-        <node concept="3F0A7n" id="5h9rZfh0WTj" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
+  <node concept="24kQdi" id="3EHTfOIRURe">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <ref role="1XX52x" to="iowz:3EHTfOIRUR6" resolve="Sep" />
+    <node concept="3EZMnI" id="3EHTfOIRURg" role="2wV5jI">
+      <node concept="PMmxH" id="3EHTfOIRURq" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
+      <node concept="3F0ifn" id="3EHTfOIRURv" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="3EHTfOIRURB" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:3EHTfOIRUR7" resolve="seperator" />
+      </node>
+      <node concept="l2Vlx" id="3EHTfOIRURj" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="3EHTfOIS_vf">
+  <node concept="24kQdi" id="dOBxzyNtOw">
     <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
-    <ref role="1XX52x" to="iowz:3EHTfOIRZKo" resolve="Charset" />
-    <node concept="3EZMnI" id="3EHTfOIS_vh" role="2wV5jI">
-      <node concept="PMmxH" id="3EHTfOIS_vr" role="3EZMnx">
+    <ref role="1XX52x" to="iowz:dOBxzyNteP" resolve="FileSplitOption" />
+    <node concept="3EZMnI" id="dOBxzyNub3" role="2wV5jI">
+      <node concept="PMmxH" id="dOBxzyNuba" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" node="dOBxzy_svD" resolve="SplitOption" />
       </node>
-      <node concept="3F0ifn" id="3EHTfOIS_vw" role="3EZMnx">
+      <node concept="3F0ifn" id="dOBxzyNubj" role="3EZMnx">
         <property role="3F0ifm" value=":" />
       </node>
-      <node concept="l2Vlx" id="3EHTfOIS_vk" role="2iSdaV" />
-      <node concept="3F0A7n" id="dOBxzyu3ta" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:dOBxzyu2Dy" resolve="charset" />
+      <node concept="3F1sOY" id="dOBxzzmFVT" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:dOBxzyNtOp" />
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="3EHTfOIRUwF">
-    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
-    <ref role="1XX52x" to="iowz:3EHTfOIRUwz" resolve="Limit" />
-    <node concept="3EZMnI" id="3EHTfOIRUwH" role="2wV5jI">
-      <node concept="PMmxH" id="3EHTfOIRUwR" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" node="dOBxzy_svD" resolve="SplitOption" />
-      </node>
-      <node concept="3F0ifn" id="3EHTfOIRUwW" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-      </node>
-      <node concept="3F0A7n" id="3EHTfOIRUx9" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:3EHTfOIRUw$" resolve="n" />
-      </node>
-      <node concept="l2Vlx" id="3EHTfOIRUwK" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="dOBxzyNteo">
-    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
-    <ref role="1XX52x" to="iowz:dOBxzyNsaE" resolve="Decompress" />
-    <node concept="3EZMnI" id="dOBxzyNteq" role="2wV5jI">
-      <node concept="PMmxH" id="dOBxzyNtex" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" node="dOBxzy_svD" resolve="SplitOption" />
-      </node>
-      <node concept="3F0ifn" id="dOBxzyNteA" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-      </node>
-      <node concept="3F0A7n" id="dOBxzyNteI" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:dOBxzyNteh" resolve="flag" />
-      </node>
-      <node concept="l2Vlx" id="dOBxzyNtet" role="2iSdaV" />
+      <node concept="l2Vlx" id="dOBxzyNub6" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="dOBxz$1hTb">
@@ -3339,6 +3309,23 @@
       <node concept="l2Vlx" id="dOBxz$1hTg" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3EHTfOIRUwF">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <ref role="1XX52x" to="iowz:3EHTfOIRUwz" resolve="Limit" />
+    <node concept="3EZMnI" id="3EHTfOIRUwH" role="2wV5jI">
+      <node concept="PMmxH" id="3EHTfOIRUwR" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" node="dOBxzy_svD" resolve="SplitOption" />
+      </node>
+      <node concept="3F0ifn" id="3EHTfOIRUwW" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="3EHTfOIRUx9" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:3EHTfOIRUw$" resolve="n" />
+      </node>
+      <node concept="l2Vlx" id="3EHTfOIRUwK" role="2iSdaV" />
+    </node>
+  </node>
   <node concept="24kQdi" id="dOBxz_E3$c">
     <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
     <ref role="1XX52x" to="iowz:3EHTfOIRURG" resolve="Record" />
@@ -3350,28 +3337,10 @@
       <node concept="3F0ifn" id="dOBxz_E3$w" role="3EZMnx">
         <property role="3F0ifm" value=":" />
       </node>
-      <node concept="3F2HdR" id="dOBxz_IrcS" role="3EZMnx">
+      <node concept="3F1sOY" id="1jEBYCnAOxQ" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:dOBxz_E3uU" />
-        <node concept="l2Vlx" id="dOBxz_IrcU" role="2czzBx" />
       </node>
       <node concept="l2Vlx" id="dOBxz_E3$k" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="dOBxzyNtOw">
-    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
-    <ref role="1XX52x" to="iowz:dOBxzyNteP" resolve="FileSplitOption" />
-    <node concept="3EZMnI" id="dOBxzyNub3" role="2wV5jI">
-      <node concept="PMmxH" id="dOBxzyNuba" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" node="dOBxzy_svD" resolve="SplitOption" />
-      </node>
-      <node concept="3F0ifn" id="dOBxzyNubj" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-      </node>
-      <node concept="3F1sOY" id="dOBxzzmFVT" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:dOBxzyNtOp" />
-      </node>
-      <node concept="l2Vlx" id="dOBxzyNub6" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="dOBxz$1hU6">
@@ -3408,20 +3377,33 @@
       <node concept="l2Vlx" id="3EHTfOIRTHs" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="3EHTfOIRURe">
-    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
-    <ref role="1XX52x" to="iowz:3EHTfOIRUR6" resolve="Sep" />
-    <node concept="3EZMnI" id="3EHTfOIRURg" role="2wV5jI">
-      <node concept="PMmxH" id="3EHTfOIRURq" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+  <node concept="24kQdi" id="dOBxz_E3VL">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <ref role="1XX52x" to="iowz:3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="3EZMnI" id="dOBxz_E3VN" role="2wV5jI">
+      <node concept="3F0ifn" id="dOBxz_E3VY" role="3EZMnx">
+        <node concept="VPxyj" id="dOBxz_E3WP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
-      <node concept="3F0ifn" id="3EHTfOIRURv" role="3EZMnx">
+      <node concept="l2Vlx" id="dOBxz_E3VQ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="dOBxzyNteo">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <ref role="1XX52x" to="iowz:dOBxzyNsaE" resolve="Decompress" />
+    <node concept="3EZMnI" id="dOBxzyNteq" role="2wV5jI">
+      <node concept="PMmxH" id="dOBxzyNtex" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" node="dOBxzy_svD" resolve="SplitOption" />
+      </node>
+      <node concept="3F0ifn" id="dOBxzyNteA" role="3EZMnx">
         <property role="3F0ifm" value=":" />
       </node>
-      <node concept="3F0A7n" id="3EHTfOIRURB" role="3EZMnx">
-        <ref role="1NtTu8" to="iowz:3EHTfOIRUR7" resolve="seperator" />
+      <node concept="3F0A7n" id="dOBxzyNteI" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:dOBxzyNteh" resolve="flag" />
       </node>
-      <node concept="l2Vlx" id="3EHTfOIRURj" role="2iSdaV" />
+      <node concept="l2Vlx" id="dOBxzyNtet" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="dOBxzz$NE$">
@@ -3458,16 +3440,117 @@
       <node concept="l2Vlx" id="dOBxzz$MAf" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="dOBxz_E3VL">
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <ref role="1XX52x" to="iowz:3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-    <node concept="3EZMnI" id="dOBxz_E3VN" role="2wV5jI">
-      <node concept="3F0ifn" id="dOBxz_E3VY" role="3EZMnx">
-        <node concept="VPxyj" id="dOBxz_E3WP" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+  <node concept="24kQdi" id="3EHTfOIS_vf">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <ref role="1XX52x" to="iowz:3EHTfOIRZKo" resolve="Charset" />
+    <node concept="3EZMnI" id="3EHTfOIS_vh" role="2wV5jI">
+      <node concept="PMmxH" id="3EHTfOIS_vr" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" node="dOBxzy_svD" resolve="SplitOption" />
+      </node>
+      <node concept="3F0ifn" id="3EHTfOIS_vw" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="l2Vlx" id="3EHTfOIS_vk" role="2iSdaV" />
+      <node concept="3F0A7n" id="dOBxzyu3ta" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:dOBxzyu2Dy" resolve="charset" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5h9rZfh0W2p">
+    <ref role="1XX52x" to="iowz:6TmjYLGeFpH" resolve="OutChannelContainerRef" />
+    <node concept="1iCGBv" id="5h9rZfh0WTa" role="2wV5jI">
+      <ref role="1NtTu8" to="iowz:6TmjYLGeFMt" />
+      <node concept="1sVBvm" id="5h9rZfh0WTc" role="1sWHZn">
+        <node concept="3F0A7n" id="5h9rZfh0WTj" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
-      <node concept="l2Vlx" id="dOBxz_E3VQ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6rc3Z5NdWzb">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions.recordOptions.recordFields" />
+    <ref role="1XX52x" to="iowz:1jEBYCnvoYF" resolve="SplitFastqRecordFields" />
+    <node concept="3EZMnI" id="6rc3Z5NdWzd" role="2wV5jI">
+      <node concept="PMmxH" id="6rc3Z5NdWzn" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" node="dOBxzy_svD" resolve="SplitOption" />
+        <node concept="VPxyj" id="6rc3Z5NlqM_" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6rc3Z5NdWzs" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="6rc3Z5NdWz$" role="3EZMnx">
+        <property role="1cu_pB" value="1" />
+        <ref role="1NtTu8" to="iowz:1jEBYCnvnP7" resolve="flag" />
+      </node>
+      <node concept="l2Vlx" id="6rc3Z5NdWzg" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1jEBYCnvm7R">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions.recordOptions" />
+    <ref role="1XX52x" to="iowz:1jEBYCnvdDo" resolve="NonBooleanOption" />
+    <node concept="3EZMnI" id="1jEBYCnvm7W" role="2wV5jI">
+      <node concept="3F0ifn" id="1jEBYCnvm7Y" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F2HdR" id="1jEBYCnvmE$" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:1jEBYCnvm8e" />
+        <ref role="1k5W1q" node="dOBxzy_svD" resolve="SplitOption" />
+        <node concept="l2Vlx" id="1jEBYCnvmEA" role="2czzBx" />
+        <node concept="4$FPG" id="1jEBYCnWWKF" role="4_6I_">
+          <node concept="3clFbS" id="1jEBYCnWWKG" role="2VODD2">
+            <node concept="3cpWs6" id="1jEBYCnWWLs" role="3cqZAp">
+              <node concept="2ShNRf" id="1jEBYCnWWM0" role="3cqZAk">
+                <node concept="3zrR0B" id="1jEBYCnWYzW" role="2ShVmc">
+                  <node concept="3Tqbb2" id="1jEBYCnWYzY" role="3zrR0E">
+                    <ref role="ehGHo" to="iowz:1jEBYCnvm_j" resolve="RecordField" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1jEBYCnvm86" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="l2Vlx" id="1jEBYCnvm7Z" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6rc3Z5NdU1c">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions.recordOptions.recordFields" />
+    <ref role="1XX52x" to="iowz:1jEBYCnvqGY" resolve="SplitFastaRecordFields" />
+    <node concept="3EZMnI" id="6rc3Z5NdWyH" role="2wV5jI">
+      <node concept="PMmxH" id="6rc3Z5NdWyO" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" node="dOBxzy_svD" resolve="SplitOption" />
+        <node concept="VPxyj" id="6rc3Z5NlqLI" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6rc3Z5NdWyT" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="6rc3Z5NdWz1" role="3EZMnx">
+        <property role="1cu_pB" value="1" />
+        <ref role="1NtTu8" to="iowz:1jEBYCnvnP7" resolve="flag" />
+      </node>
+      <node concept="l2Vlx" id="6rc3Z5NdWyK" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1jEBYCnbhyt">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions.recordOptions" />
+    <ref role="1XX52x" to="iowz:1jEBYCnbe45" resolve="BooleanRecordOption" />
+    <node concept="3EZMnI" id="1jEBYCnbigJ" role="2wV5jI">
+      <node concept="l2Vlx" id="1jEBYCnbigM" role="2iSdaV" />
+      <node concept="3F0A7n" id="1jEBYCngt$V" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:1jEBYCnbSzi" resolve="flag" />
+      </node>
     </node>
   </node>
 </model>
