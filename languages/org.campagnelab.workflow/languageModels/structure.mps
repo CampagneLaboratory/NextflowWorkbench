@@ -1329,7 +1329,7 @@
     <node concept="1TJgyj" id="1qs9CHFOsoJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="closure" />
-      <ref role="20lvS9" to="tp2c:htbVj4_" resolve="ClosureLiteral" />
+      <ref role="20lvS9" node="5DC$1WkmvHE" resolve="ClosureLiteralWorkFlow" />
     </node>
   </node>
   <node concept="1TIwiD" id="XaRILis0lJ">
@@ -1598,14 +1598,14 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="Cross" />
     <property role="34LRSv" value="cross" />
-    <property role="R4oN_" value="allows you to combine the items of two channels in such a way that the items of the source channel are emitted along with the items emitted by the target channel for which they have a matching key" />
+    <property role="R4oN_" value="Combine items of two channels where items of the source channel are emitted where they have a matching key with the target channel" />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOkA">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="CountBy" />
     <property role="34LRSv" value="countBy" />
-    <property role="R4oN_" value="creates a channel which emits a n associative array (Map) that counts the occurrences of the emitted items in the source channel having the same key." />
+    <property role="R4oN_" value="Creates a channel which emits a n associative array (Map) for items in the source channel having the same key" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="Closurefunction" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOoY">
@@ -1663,7 +1663,7 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="Choice" />
     <property role="34LRSv" value="choice" />
-    <property role="R4oN_" value=" allows you to forward the items emitted by a source channel to two (or more) output channels, choosing one out of them at a time." />
+    <property role="R4oN_" value=" Forward items emitted by a source channel to two (or more) output channels" />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgpKC">
@@ -1695,6 +1695,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3m26PihhBwN" resolve="OutChannelContainer" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5DC$1WkmvHE">
+    <property role="TrG5h" value="ClosureLiteralWorkFlow" />
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="1TJDcQ" to="tp2c:htbVj4_" resolve="ClosureLiteral" />
   </node>
 </model>
 

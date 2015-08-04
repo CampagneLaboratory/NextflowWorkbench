@@ -40,7 +40,7 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected String[] getExtendedLanguageIDs() {
-    return new String[]{"de.slisson.mps.richtext", "jetbrains.mps.baseLanguage"};
+    return new String[]{"de.slisson.mps.richtext", "jetbrains.mps.baseLanguage", "jetbrains.mps.baseLanguage.closures"};
   }
   @Override
   public Collection<TemplateModule> getGenerators() {

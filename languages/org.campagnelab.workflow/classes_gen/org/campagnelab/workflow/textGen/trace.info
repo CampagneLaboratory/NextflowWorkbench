@@ -848,6 +848,50 @@
       <unit id="6202591221152351589" at="14,0,25,0" name="org.campagnelab.workflow.textGen.ProcessInputOutput_TextGen" />
     </file>
   </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6446596574627776256">
+    <file name="Closurefunction_TextGen.java">
+      <node id="6446596574627787289" at="15,185,16,85" concept="1" />
+      <node id="6446596574627787289" at="16,85,17,24" concept="1" />
+      <node id="3280266319715010816" at="18,12,19,85" concept="1" />
+      <node id="3280266319715010816" at="19,85,20,23" concept="1" />
+      <node id="3280266319715010816" at="20,23,21,524" concept="1" />
+      <node id="3280266319715010816" at="21,524,22,25" concept="1" />
+      <node id="3280266319714995324" at="22,25,23,216" concept="5" />
+      <node id="3280266319714995332" at="23,216,24,132" concept="7" />
+      <node id="3280266319714995334" at="24,132,25,173" concept="1" />
+      <node id="3280266319714995334" at="25,173,26,39" concept="1" />
+      <node id="3280266319714995334" at="26,39,27,524" concept="1" />
+      <node id="3280266319714995334" at="27,524,28,23" concept="1" />
+      <node id="3280266319714995334" at="28,23,29,85" concept="1" />
+      <node id="3280266319714995334" at="29,85,30,23" concept="1" />
+      <node id="3280266319714995334" at="30,23,31,524" concept="1" />
+      <node id="3280266319714995334" at="31,524,32,23" concept="1" />
+      <node id="3280266319714995347" at="32,23,33,23" concept="1" />
+      <node id="3280266319714995347" at="33,23,34,27" concept="1" />
+      <node id="3280266319714993889" at="34,27,35,0" concept="8" />
+      <node id="3280266319715026857" at="35,0,36,16" concept="7" />
+      <node id="6446596574627787289" at="15,185,17,24" concept="0" />
+      <node id="3280266319714995347" at="32,23,34,27" concept="0" />
+      <node id="3280266319715010816" at="18,12,22,25" concept="0" />
+      <node id="3280266319714995334" at="24,132,32,23" concept="0" />
+      <node id="6446596574627787370" at="18,10,37,5" concept="0" />
+      <node id="6446596574627779139" at="14,42,37,5" concept="3" />
+      <node id="6446596574627776256" at="14,0,39,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6446596574627779140" at="15,185,17,24" />
+      <scope id="6446596574627787289" at="15,185,17,24" />
+      <scope id="3280266319714995347" at="32,23,34,27" />
+      <scope id="3280266319715010816" at="18,12,22,25" />
+      <scope id="3280266319714995334" at="24,132,32,23" />
+      <scope id="6446596574627787371" at="18,12,36,16">
+        <var name="workflow" id="3280266319714995325" />
+      </scope>
+      <scope id="6446596574627776256" at="14,42,37,5" />
+      <scope id="6446596574627776256" at="14,0,39,0">
+        <var name="node" id="6446596574627776256" />
+      </scope>
+      <unit id="6446596574627776256" at="13,0,40,0" name="org.campagnelab.workflow.textGen.Closurefunction_TextGen" />
+    </file>
+  </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6509497193194282040">
     <file name="ConditionalExpressionText_TextGen.java">
       <node id="6509497193194282058" at="11,42,12,179" concept="0" />
