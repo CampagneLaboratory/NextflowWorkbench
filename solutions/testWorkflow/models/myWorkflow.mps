@@ -146,7 +146,7 @@
     </language>
   </registry>
   <node concept="2$rMIF" id="2hwCr1Mk2me">
-    <property role="TrG5h" value="MonWorkflowqq" />
+    <property role="TrG5h" value="ClosureExample" />
     <node concept="2$rEH5" id="1m6aGq8QnLc" role="2$rEHq">
       <ref role="2$rEH4" node="2hwCr1MjRuG" resolve="testw" />
       <node concept="1uYdA0" id="1m6aGq8QnLq" role="1uLvPH">

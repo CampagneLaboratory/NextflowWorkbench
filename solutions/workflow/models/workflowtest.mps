@@ -31,11 +31,11 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -115,7 +115,7 @@
       <concept id="6588488528864881600" name="org.campagnelab.workflow.structure.ReportFunction" flags="ig" index="2UPiyC" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="6514615324151249770" name="org.campagnelab.workflow.structure.ClosureLiteralWorkFlow" flags="ng" index="1ecmHP" />
-      <concept id="1101938165422228846" name="org.campagnelab.workflow.structure.Closurefunction" flags="ng" index="1teHI2">
+      <concept id="1101938165422228846" name="org.campagnelab.workflow.structure.FunctionWithClosure" flags="ng" index="1teHI2">
         <child id="1629219545452496431" name="closure" index="1Xju2$" />
       </concept>
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
@@ -132,11 +132,6 @@
       </concept>
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
-      </concept>
-    </language>
-    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
-        <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
     </language>
   </registry>
@@ -167,23 +162,21 @@
     <node concept="2$rEH5" id="1m6aGq8QnLc" role="2$rEHq">
       <ref role="2$rEH4" node="2hwCr1MjRuG" resolve="test" />
       <node concept="1uYdA0" id="1m6aGq8QnLq" role="1uLvPH">
-        <ref role="1uK_4X" node="5h9rZfh0RW9" resolve="empty" />
+        <ref role="1uK_4X" node="5h9rZfh0UmX" resolve="newChannel2" />
         <node concept="2pgWx" id="5h9rZfhOOTB" role="1ylr64">
-          <node concept="1ecmHP" id="5h9rZfhOOUB" role="1Xju2$">
-            <node concept="37vLTG" id="5h9rZfhOOV8" role="1bW2Oz">
-              <property role="TrG5h" value="empty" />
-              <node concept="_YKpA" id="5h9rZfhOOW4" role="1tU5fm">
-                <node concept="17QB3L" id="5h9rZfhOOW7" role="_ZDj9" />
-              </node>
+          <node concept="1ecmHP" id="7wWbCzZfph0" role="1Xju2$">
+            <node concept="37vLTG" id="7wWbCzZfphW" role="1bW2Oz">
+              <property role="TrG5h" value="newChannel2" />
+              <node concept="10Oyi0" id="7wWbCzZfpiD" role="1tU5fm" />
             </node>
-            <node concept="3clFbS" id="5h9rZfhOOW9" role="1bW5cS">
-              <node concept="3clFbF" id="5h9rZfhOOXH" role="3cqZAp">
+            <node concept="3clFbS" id="7wWbCzZfpiT" role="1bW5cS">
+              <node concept="3clFbF" id="7wWbCzZfpmD" role="3cqZAp">
                 <node concept="3cpWs3" id="5h9rZfhOPr5" role="3clFbG">
                   <node concept="Xl_RD" id="5h9rZfhOPrH" role="3uHU7B">
                     <property role="Xl_RC" value="this is myvalue" />
                   </node>
-                  <node concept="37vLTw" id="5h9rZfhOOXG" role="3uHU7w">
-                    <ref role="3cqZAo" node="5h9rZfhOOV8" resolve="empty" />
+                  <node concept="37vLTw" id="7wWbCzZfpur" role="3uHU7w">
+                    <ref role="3cqZAo" node="7wWbCzZfphW" resolve="newChannel2" />
                   </node>
                 </node>
               </node>
