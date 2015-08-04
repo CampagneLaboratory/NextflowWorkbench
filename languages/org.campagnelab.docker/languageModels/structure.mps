@@ -115,7 +115,7 @@
     <node concept="1TJgyj" id="BMuHr2DQtx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="images" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="BMuHr2DQt$" resolve="ImageRef" />
     </node>
     <node concept="PrWs8" id="36oLgaWEyq3" role="PzmwI">

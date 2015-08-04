@@ -559,10 +559,13 @@
       <property role="1lnzPG" value="returning parent scope" />
       <property role="1ceZFR" value="org.campagnelab.workflow.nyosh.behavior.getScope" />
     </node>
+    <node concept="1lnzPE" id="wcFktQl6$d" role="1lvGkX">
+      <property role="1lnzPG" value="Starting docker build" />
+    </node>
   </node>
   <node concept="VuPG2" id="3ymWtI94ikR">
     <property role="TrG5h" value="SomeContainer" />
-    <property role="2EHzVy" value="wrote /Users/fac2003/Library/Caches/MPS32/tmp/dockerfile3219695529381066178.txt" />
+    <property role="2EHzVy" value="wrote /Users/fac2003/Library/Caches/MPS32/tmp/dockerfile7786192258702427868.txt" />
     <node concept="VuO64" id="3ymWtI94ikS" role="VuOVn">
       <node concept="VtuK3" id="33aW7Ox0YQR" role="VuO5T">
         <property role="VuL0s" value="latest" />
