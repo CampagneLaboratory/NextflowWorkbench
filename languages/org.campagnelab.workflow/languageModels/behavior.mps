@@ -22,8 +22,8 @@
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -121,7 +121,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -6005,6 +6005,27 @@
     </node>
     <node concept="13hLZK" id="5h9rZfgRSfq" role="13h7CW">
       <node concept="3clFbS" id="5h9rZfgRSfr" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3uBbkEdUp4n">
+    <property role="3GE5qa" value="channelFunctions.withChannelRef" />
+    <ref role="13h7C2" to="iowz:6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+    <node concept="13hLZK" id="3uBbkEdUp4o" role="13h7CW">
+      <node concept="3clFbS" id="3uBbkEdUp4p" role="2VODD2">
+        <node concept="3clFbF" id="3uBbkEdUqcp" role="3cqZAp">
+          <node concept="37vLTI" id="3uBbkEdUqAb" role="3clFbG">
+            <node concept="Xl_RD" id="3uBbkEdUqAt" role="37vLTx">
+              <property role="Xl_RC" value="ref" />
+            </node>
+            <node concept="2OqwBi" id="3uBbkEdUqes" role="37vLTJ">
+              <node concept="13iPFW" id="3uBbkEdUqco" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3uBbkEdUqn_" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:3uBbkEdUoTn" resolve="role" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

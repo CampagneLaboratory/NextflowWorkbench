@@ -1558,7 +1558,7 @@
     <property role="TrG5h" value="Separate" />
     <property role="34LRSv" value="separate" />
     <property role="R4oN_" value="Copy items emitted by the source channel into multiple channels" />
-    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcNYR">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
@@ -1587,6 +1587,10 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyi" id="3uBbkEdUoTn" role="1TKVEl">
+      <property role="TrG5h" value="role" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="6TmjYLGgovv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="channelContainerRef" />
@@ -1599,7 +1603,7 @@
     <property role="TrG5h" value="Cross" />
     <property role="34LRSv" value="cross" />
     <property role="R4oN_" value="Combine items of two channels where items of the source and the target have a matching key" />
-    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOkA">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
@@ -1619,13 +1623,16 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="TrG5h" value="ClosureFunctionWithChannelRef" />
+    <property role="TrG5h" value="FunctionWithClosureAndChannelRefs" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
     <node concept="1TJgyj" id="6TmjYLGeFMw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="outChannelContainerRef" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="6TmjYLGeFpH" resolve="OutChannelContainerRef" />
+    </node>
+    <node concept="PrWs8" id="3uBbkEdUqJ_" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="6TmjYLGcN_3">
@@ -1652,7 +1659,7 @@
     <property role="TrG5h" value="Phase" />
     <property role="34LRSv" value="phase" />
     <property role="R4oN_" value="Synchronizes values emitted by two channels and emits pairs of items which have a matching key" />
-    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
     <node concept="1TJgyi" id="6TmjYLGeHuE" role="1TKVEl">
       <property role="TrG5h" value="remainder" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -1670,7 +1677,7 @@
     <property role="TrG5h" value="Choice" />
     <property role="34LRSv" value="choice" />
     <property role="R4oN_" value=" Forward items emitted by a source channel to two (or more) output channels" />
-    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgpKC">
     <property role="3GE5qa" value="channelFunctions.withChannelRef" />
@@ -1683,7 +1690,7 @@
     <property role="TrG5h" value="Merge" />
     <property role="34LRSv" value="merge" />
     <property role="R4oN_" value="Join items emitted by two (or more) channels into a new one" />
-    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="ClosureFunctionWithChannelRef" />
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOtn">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
@@ -1700,6 +1707,9 @@
       <property role="20kJfa" value="outChannelContainer" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3m26PihhBwN" resolve="OutChannelContainer" />
+    </node>
+    <node concept="PrWs8" id="3uBbkEdUmQN" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="dOBxzyNsaE">

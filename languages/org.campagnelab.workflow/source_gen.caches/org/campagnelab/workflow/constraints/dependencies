@@ -50,6 +50,7 @@
     <classNode dependClassName="org.campagnelab.workflow.constraints.FileListChannel_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.FileList_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.FileSplitOption_Constraints" />
+    <classNode dependClassName="org.campagnelab.workflow.constraints.FunctionWithClosureAndChannelRefs_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.Header_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.HiddenTypeVarDeclaration_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.InputChannel_Constraints" />
@@ -118,6 +119,16 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.constraints.FunctionWithClosureAndChannelRefs_Constraints" file="FunctionWithClosureAndChannelRefs_Constraints.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
