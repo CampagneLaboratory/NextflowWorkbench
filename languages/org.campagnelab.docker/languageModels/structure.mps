@@ -483,12 +483,6 @@
     <property role="3GE5qa" value="instructions" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#entrypoint" />
     <ref role="1TJDcQ" node="3DjWPY726Wm" resolve="CmdInstruction" />
-    <node concept="1TJgyj" id="BMuHr32gzB" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="elements" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="33aW7OwAeeF" resolve="CommandElement" />
-    </node>
   </node>
   <node concept="1TIwiD" id="BMuHr35ork">
     <property role="3GE5qa" value="instructions" />
