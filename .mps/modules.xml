@@ -12,6 +12,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow.nyosh/org.campagnelab.workflow.nyosh.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow/org.campagnelab.workflow.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NextflowWorkbench.build/NextflowWorkbench.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Samples/Samples.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.docker.actions/org.campagnelab.docker.actions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.workflow.run/org.campagnelab.workflow.run.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />
