@@ -78,7 +78,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="processOptions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="dlwq:5KN4KqZbJnZ" resolve="ProcessOptions" />
+      <ref role="20lvS9" to="dlwq:5KN4KqZbJnZ" resolve="ProcessOption" />
     </node>
     <node concept="1TJgyj" id="6tX5nBTaziI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -178,7 +178,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="processOptions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="dlwq:5KN4KqZbJnZ" resolve="ProcessOptions" />
+      <ref role="20lvS9" to="dlwq:5KN4KqZbJnZ" resolve="ProcessOption" />
     </node>
     <node concept="PrWs8" id="5CFNYIF2zMf" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -1486,6 +1486,12 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="5SFkxYfRDBf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="option" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3EHTfOIRFIy" resolve="SplitOption" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1qs9CHFOmDW">
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
@@ -1700,6 +1706,147 @@
     <property role="TrG5h" value="ClosureLiteralWorkFlow" />
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <ref role="1TJDcQ" to="tp2c:htbVj4_" resolve="ClosureLiteral" />
+  </node>
+  <node concept="1TIwiD" id="dOBxzz$N_i">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <property role="TrG5h" value="Header" />
+    <property role="34LRSv" value="header" />
+    <property role="R4oN_" value="when true, the first line is used as column names. Can also provide the list of column names" />
+    <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
+    <node concept="1TJgyj" id="dOBxzz$NEt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cols" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3EHTfOIRUwz">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <property role="TrG5h" value="Limit" />
+    <property role="34LRSv" value="limit" />
+    <property role="R4oN_" value="limits the number of expected elements to the specified value" />
+    <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
+    <node concept="1TJgyi" id="3EHTfOIRUw$" role="1TKVEl">
+      <property role="TrG5h" value="n" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="dOBxzyNteP">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <property role="TrG5h" value="FileSplitOption" />
+    <property role="34LRSv" value="file" />
+    <property role="R4oN_" value="when true saves each split to a file. strings may also be used to create files with a specific name" />
+    <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
+    <node concept="1TJgyj" id="dOBxzyNtOp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="val" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="dOBxzyNsaE">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <property role="TrG5h" value="Decompress" />
+    <property role="34LRSv" value="decompress" />
+    <property role="R4oN_" value="when true, decompress the content using the GZIP format before processing" />
+    <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
+    <node concept="1TJgyi" id="dOBxzyNteh" role="1TKVEl">
+      <property role="TrG5h" value="flag" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="dOBxz$1hT1">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <property role="TrG5h" value="Strip" />
+    <property role="34LRSv" value="strip" />
+    <property role="R4oN_" value="remove leading and trailing blanks from values" />
+    <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
+    <node concept="1TJgyi" id="dOBxz$1hT4" role="1TKVEl">
+      <property role="TrG5h" value="trim" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="dOBxz_E3j_">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions.recordOptions" />
+    <property role="TrG5h" value="RecordOption" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="dOBxz$1hTY">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <property role="TrG5h" value="Skip" />
+    <property role="34LRSv" value="skip" />
+    <property role="R4oN_" value="ignore n lines since the file beginning when parsing content" />
+    <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
+    <node concept="1TJgyi" id="dOBxz$1hTZ" role="1TKVEl">
+      <property role="TrG5h" value="n" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3EHTfOIRFIy">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <property role="TrG5h" value="SplitOption" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3EHTfOIRURG">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <property role="TrG5h" value="Record" />
+    <property role="34LRSv" value="record" />
+    <property role="R4oN_" value="parse each entry in the file as record objects" />
+    <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
+    <node concept="1TJgyj" id="dOBxz_E3uU" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="option" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="dOBxz_E3j_" resolve="RecordOption" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3EHTfOIRUR6">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <property role="TrG5h" value="Sep" />
+    <property role="34LRSv" value="sep" />
+    <property role="R4oN_" value="the character used to seperate the values" />
+    <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
+    <node concept="1TJgyi" id="3EHTfOIRUR7" role="1TKVEl">
+      <property role="TrG5h" value="seperator" />
+      <ref role="AX2Wp" to="tpee:htXhg4R" resolve="_CharConstant_String" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3EHTfOIRZKo">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <property role="TrG5h" value="Charset" />
+    <property role="34LRSv" value="charset" />
+    <property role="R4oN_" value="parse the content by using the specified charset" />
+    <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
+    <node concept="1TJgyi" id="dOBxzyu2Dy" role="1TKVEl">
+      <property role="TrG5h" value="charset" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="dOBxzz$Mh$">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <property role="TrG5h" value="Elem" />
+    <property role="34LRSv" value="elem" />
+    <property role="R4oN_" value="splits the list/tuple at the specified index of the element" />
+    <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
+    <node concept="1TJgyi" id="dOBxzz$MrR" role="1TKVEl">
+      <property role="TrG5h" value="index" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3EHTfOIRJOj">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <property role="TrG5h" value="By" />
+    <property role="34LRSv" value="by" />
+    <property role="R4oN_" value="the number of expected pieces in each chunk" />
+    <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
+    <node concept="1TJgyi" id="3EHTfOIRPOP" role="1TKVEl">
+      <property role="TrG5h" value="n" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
 </model>
 
