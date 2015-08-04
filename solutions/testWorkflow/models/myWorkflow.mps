@@ -198,7 +198,7 @@
                 <node concept="3cpWs3" id="4FWUYVFsnLc" role="37wK5m">
                   <node concept="2UPiyF" id="4FWUYVFsnQU" role="3uHU7w" />
                   <node concept="Xl_RD" id="3x6pbm2KHW3" role="3uHU7B">
-                    <property role="Xl_RC" value="I can have both function" />
+                    <property role="Xl_RC" value="Result written to this file: " />
                   </node>
                 </node>
               </node>
