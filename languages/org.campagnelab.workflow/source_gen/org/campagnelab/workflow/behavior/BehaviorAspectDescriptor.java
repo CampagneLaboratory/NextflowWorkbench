@@ -255,28 +255,28 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new Max_BehaviorDescriptor();
       case 75:
         return new OutChannelContainerRef_BehaviorDescriptor();
-      case 42:
-        return new Header_BehaviorDescriptor();
-      case 56:
-        return new Limit_BehaviorDescriptor();
-      case 33:
-        return new FileSplitOption_BehaviorDescriptor();
       case 21:
         return new Decompress_BehaviorDescriptor();
-      case 114:
-        return new Strip_BehaviorDescriptor();
+      case 33:
+        return new FileSplitOption_BehaviorDescriptor();
       case 101:
         return new Skip_BehaviorDescriptor();
-      case 89:
-        return new Record_BehaviorDescriptor();
+      case 114:
+        return new Strip_BehaviorDescriptor();
       case 99:
         return new Sep_BehaviorDescriptor();
+      case 89:
+        return new Record_BehaviorDescriptor();
       case 11:
         return new Charset_BehaviorDescriptor();
       case 23:
         return new Elem_BehaviorDescriptor();
       case 9:
         return new By_BehaviorDescriptor();
+      case 56:
+        return new Limit_BehaviorDescriptor();
+      case 42:
+        return new Header_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
