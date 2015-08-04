@@ -23,10 +23,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBooleanLiteralList = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.BooleanLiteralList", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7bcdL)).super_("org.campagnelab.workflow.structure.OneOrMoreLists").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).parents("org.campagnelab.workflow.structure.OneOrMoreLists").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012526030L, "boolean", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7892L), false, true, false)).children(new String[]{"boolean"}, new boolean[]{true}).alias("boolean list", "").create();
   /*package*/ final ConceptDescriptor myConceptBooleanLiteralTuple = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.BooleanLiteralTuple", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2b51664f2a8243ceL)).super_("org.campagnelab.workflow.structure.ValueLiteralTuple").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xd4f3f4db8970612L)).parents("org.campagnelab.workflow.structure.ValueLiteralTuple").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xd4f3f4db8970612L)).childDescriptors(new ConceptDescriptorBuilder.Link(3121388506946094031L, "boolean", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7892L), false, false, false)).children(new String[]{"boolean"}, new boolean[]{false}).alias("boolean", "").create();
   /*package*/ final ConceptDescriptor myConceptBuffer = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Buffer", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5343d2acL)).super_("org.campagnelab.workflow.structure.ArgRegexLiteralQualifierPredicate").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec527334d5L)).parents("org.campagnelab.workflow.structure.ArgRegexLiteralQualifierPredicate").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec527334d5L)).alias("buffer", "gathers the items emitted by the channel into subsets and then emits the subsets separately").create();
+  /*package*/ final ConceptDescriptor myConceptBy = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.By", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edefd13L)).super_("org.campagnelab.workflow.structure.SplitOption").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).parents("org.campagnelab.workflow.structure.SplitOption").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(4228287401235012917L, "n")).properties("n").alias("by", "the number of expected pieces in each chunk").create();
   /*package*/ final ConceptDescriptor myConceptChannelFunction = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ChannelFunction", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptChannelFunctionWithChannelRef = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ChannelFunctionWithChannelRef", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c417bb7L)).super_("org.campagnelab.workflow.structure.ChannelFunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).parents("org.campagnelab.workflow.structure.ChannelFunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).childDescriptors(new ConceptDescriptorBuilder.Link(7950630069016299487L, "channelContainerRef", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c3ab66dL), false, true, false)).children(new String[]{"channelContainerRef"}, new boolean[]{true}).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptChannelInitializerExpression = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ChannelInitializerExpression", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptChannelType = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ChannelType", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x72c7b8a1b3b827e2L)).super_("jetbrains.mps.baseLanguage.structure.Type").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL)).parents("jetbrains.mps.baseLanguage.structure.Type").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL)).childDescriptors(new ConceptDescriptorBuilder.Link(8270782245342809231L, "elementType", MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL), false, false, false)).children(new String[]{"elementType"}, new boolean[]{false}).create();
+  /*package*/ final ConceptDescriptor myConceptCharset = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Charset", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edffc18L)).super_("org.campagnelab.workflow.structure.SplitOption").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).parents("org.campagnelab.workflow.structure.SplitOption").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(248997709128149602L, "charset")).properties("charset").alias("charset", "parse the content by using the specified charset").create();
   /*package*/ final ConceptDescriptor myConceptChoice = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Choice", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c3adf52L)).super_("org.campagnelab.workflow.structure.ClosureFunctionWithChannelRef").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c33c54dL)).parents("org.campagnelab.workflow.structure.ClosureFunctionWithChannelRef").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c33c54dL)).alias("choice", " allows you to forward the items emitted by a source channel to two (or more) output channels, choosing one out of them at a time.").create();
   /*package*/ final ConceptDescriptor myConceptClosureFunctionWithChannelRef = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ClosureFunctionWithChannelRef", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c33c54dL)).super_("org.campagnelab.workflow.structure.Closurefunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL)).parents("org.campagnelab.workflow.structure.Closurefunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL)).childDescriptors(new ConceptDescriptorBuilder.Link(7950630069015854240L, "outChannelContainerRef", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c3ab66dL), false, true, false)).children(new String[]{"outChannelContainerRef"}, new boolean[]{true}).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptClosurefunction = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Closurefunction", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL)).super_("org.campagnelab.workflow.structure.ChannelFunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).parents("org.campagnelab.workflow.structure.ChannelFunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).childDescriptors(new ConceptDescriptorBuilder.Link(1629219545452496431L, "closure", MetaIdFactory.conceptId(0xfd3920347849419dL, 0x907112563d152375L, 0x1174bed3125L), true, false, false)).children(new String[]{"closure"}, new boolean[]{false}).abstract_().create();
@@ -39,7 +41,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptConditionalVariableRef = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ConditionalVariableRef", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a5661355ad4c1ceL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "de.slisson.mps.richtext.structure.IWord").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0x92d2ea165a424fdfL, 0xa676c7604efe3504L, 0x237c8da86a9e7aecL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(6509497193195685433L, "variable", MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7efL), false)).references("variable").alias("variable", "").create();
   /*package*/ final ConceptDescriptor myConceptCountBy = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.CountBy", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c334526L)).super_("org.campagnelab.workflow.structure.Closurefunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL)).parents("org.campagnelab.workflow.structure.Closurefunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL)).alias("countBy", "creates a channel which emits a n associative array (Map) that counts the occurrences of the emitted items in the source channel having the same key.").create();
   /*package*/ final ConceptDescriptor myConceptCross = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Cross", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c3add0dL)).super_("org.campagnelab.workflow.structure.ClosureFunctionWithChannelRef").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c33c54dL)).parents("org.campagnelab.workflow.structure.ClosureFunctionWithChannelRef").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c33c54dL)).alias("cross", "allows you to combine the items of two channels in such a way that the items of the source channel are emitted along with the items emitted by the target channel for which they have a matching key").create();
+  /*package*/ final ConceptDescriptor myConceptDecompress = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Decompress", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3749e18e2cdc2aaL)).super_("org.campagnelab.workflow.structure.SplitOption").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).parents("org.campagnelab.workflow.structure.SplitOption").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(248997709133763473L, "flag")).properties("flag").alias("decompress", "when true, decompress the content using the GZIP format before processing").create();
   /*package*/ final ConceptDescriptor myConceptDistinct = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Distinct", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5256999aL)).super_("org.campagnelab.workflow.structure.Closurefunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL)).parents("org.campagnelab.workflow.structure.Closurefunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL)).childDescriptors(new ConceptDescriptorBuilder.Link(1101938165420562843L, "condition", MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b215L), true, false, false)).children(new String[]{"condition"}, new boolean[]{false}).alias("distinct", "removes consecutive duplicated items from a channel").create();
+  /*package*/ final ConceptDescriptor myConceptElem = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Elem", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3749e18e3932464L)).super_("org.campagnelab.workflow.structure.SplitOption").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).parents("org.campagnelab.workflow.structure.SplitOption").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(248997709146695415L, "index")).properties("index").alias("elem", "splits the list/tuple at the specified index of the element").create();
   /*package*/ final ConceptDescriptor myConceptFile = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.File", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x1b7d08ca5d1a70caL)).super_("org.campagnelab.workflow.structure.NotATupleType").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157723ec6L)).parents("org.campagnelab.workflow.structure.NotATupleType").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157723ec6L)).alias("file", "file as input or output").create();
   /*package*/ final ConceptDescriptor myConceptFileChannel = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.FileChannel", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2adecaa6L)).super_("org.campagnelab.workflow.structure.ProcessInputOutput").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae32ad2L)).parents("org.campagnelab.workflow.structure.ProcessInputOutput").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae32ad2L)).childDescriptors(new ConceptDescriptorBuilder.Link(8369613327464057511L, "file", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x1b7d08ca5d1a70caL), false, false, false)).children(new String[]{"file"}, new boolean[]{false}).alias("file channel", "this channel will contain files").create();
   /*package*/ final ConceptDescriptor myConceptFileInitializer = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.FileInitializer", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491550db6L)).super_("org.campagnelab.workflow.structure.ChannelInitializerExpression").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL)).parents("org.campagnelab.workflow.structure.ChannelInitializerExpression").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x4e588945840f464eL)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012526302L, "file", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x524c297af30e9887L), false, true, false)).children(new String[]{"file"}, new boolean[]{true}).alias("files", "").create();
@@ -49,6 +53,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptFileLiteralList = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.FileLiteralList", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7c08L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012526239L, "file", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x524c297af30e9887L), false, true, false)).children(new String[]{"file"}, new boolean[]{true}).alias("list<file>", "").create();
   /*package*/ final ConceptDescriptor myConceptFileLiteralTuple = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.FileLiteralTuple", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2b51664f2a82456bL)).super_("org.campagnelab.workflow.structure.TupleContainer").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2b51664f2a4b0645L)).parents("org.campagnelab.workflow.structure.TupleContainer").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2b51664f2a4b0645L)).childDescriptors(new ConceptDescriptorBuilder.Link(3121388506946094444L, "file", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x524c297af30e9887L), false, false, false)).children(new String[]{"file"}, new boolean[]{false}).alias("file", "").create();
   /*package*/ final ConceptDescriptor myConceptFilePath = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.FilePath", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x524c297af30e9887L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(571300755983255909L, "path")).properties("path").alias("file", "file's path, located on the machine where the workflow will execute").create();
+  /*package*/ final ConceptDescriptor myConceptFileSplitOption = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.FileSplitOption", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3749e18e2cdd3b5L)).super_("org.campagnelab.workflow.structure.SplitOption").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).parents("org.campagnelab.workflow.structure.SplitOption").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).childDescriptors(new ConceptDescriptorBuilder.Link(248997709133765913L, "val", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x32b47eab9d217e3fL), false, false, false)).children(new String[]{"val"}, new boolean[]{false}).alias("file", "when true saves each split to a file. strings may also be used to create files with a specific name").create();
   /*package*/ final ConceptDescriptor myConceptFileType = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.FileType", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x30eeecfaca999e50L)).super_("jetbrains.mps.baseLanguage.structure.Type").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL)).parents("jetbrains.mps.baseLanguage.structure.Type").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL)).alias("file", "").create();
   /*package*/ final ConceptDescriptor myConceptFilter = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Filter", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5171599bL)).super_("org.campagnelab.workflow.structure.ArgRegexLiteralQualifierPredicate").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec527334d5L)).parents("org.campagnelab.workflow.structure.ArgRegexLiteralQualifierPredicate").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec527334d5L)).alias("filter", "use a regular expression, a literal value, a type qualifier, or any boolean predicate to get only the items in a channel satisfying the condition").create();
   /*package*/ final ConceptDescriptor myConceptFirst = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.First", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5256c58aL)).super_("org.campagnelab.workflow.structure.ArgRegexQualifierPredicate").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x169c268b6bd16a7cL)).parents("org.campagnelab.workflow.structure.ArgRegexQualifierPredicate").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x169c268b6bd16a7cL)).alias("first", "returns the first item emitted by the channel, or the first item that matches a condition").create();
@@ -57,6 +62,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptGlobalChannel = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GlobalChannel", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5998affa31746c62L)).super_("org.campagnelab.workflow.structure.OutChannelContainer").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491467833L)).parents("org.campagnelab.workflow.structure.OutChannelContainer").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491467833L)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281011084282L, "value", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x32b47eab9d217f5dL), false, false, false)).children(new String[]{"value"}, new boolean[]{false}).alias("global channel", "").create();
   /*package*/ final ConceptDescriptor myConceptGroupBy = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GroupBy", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec53437dfdL)).super_("org.campagnelab.workflow.structure.Closurefunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL)).parents("org.campagnelab.workflow.structure.Closurefunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL)).alias("groupBy", "collects the values emitted by the channel grouping them together using a mapping function that associates each item with a key. Emits an associative array that maps each key to the set of items identified by that key").create();
   /*package*/ final ConceptDescriptor myConceptGroupTuple = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.GroupTuple", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5343a1ecL)).super_("org.campagnelab.workflow.structure.ArgRegexLiteralQualifierPredicate").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec527334d5L)).parents("org.campagnelab.workflow.structure.ArgRegexLiteralQualifierPredicate").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec527334d5L)).alias("groupTuple", "collects tuples of values emitted by the channel grouping together the values that share the same key, and then emits a new tuple for each distinct key").create();
+  /*package*/ final ConceptDescriptor myConceptHeader = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Header", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3749e18e3933952L)).super_("org.campagnelab.workflow.structure.SplitOption").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).parents("org.campagnelab.workflow.structure.SplitOption").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).childDescriptors(new ConceptDescriptorBuilder.Link(248997709146700445L, "cols", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x32b47eab9d217f5dL), false, false, false)).children(new String[]{"cols"}, new boolean[]{false}).alias("header", "when true, the first line is used as column names. Can also provide the list of column names").create();
   /*package*/ final ConceptDescriptor myConceptHiddenTypeVarDeclaration = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.HiddenTypeVarDeclaration", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x440143442201a957L)).super_("jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7efL)).parents("jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7efL)).alias("val", "Declare a variable visible in Pocess output expressions ").create();
   /*package*/ final ConceptDescriptor myConceptInputChannel = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.InputChannel", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.ScopeProvider").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(8369613327464433607L, "connectedTo", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491467833L), false)).references("connectedTo").childDescriptors(new ConceptDescriptorBuilder.Link(3857878650537656757L, "functions", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L), true, true, false)).children(new String[]{"functions"}, new boolean[]{true}).alias("input channel", "").create();
   /*package*/ final ConceptDescriptor myConceptInputFromBaseLanguageScript = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.InputFromBaseLanguageScript", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b74709cdL)).super_("jetbrains.mps.baseLanguage.structure.Expression").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).parents("jetbrains.mps.baseLanguage.structure.Expression").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(2590112629729462734L, "var", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x440143442201a957L), false)).references("var").create();
@@ -70,6 +76,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIntegerLiteralTuple = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.IntegerLiteralTuple", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2b51664f2a824486L)).super_("org.campagnelab.workflow.structure.ValueLiteralTuple").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xd4f3f4db8970612L)).parents("org.campagnelab.workflow.structure.ValueLiteralTuple").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xd4f3f4db8970612L)).childDescriptors(new ConceptDescriptorBuilder.Link(3121388506946094215L, "integer", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c813dL), false, false, false)).children(new String[]{"integer"}, new boolean[]{false}).alias("integer", "").create();
   /*package*/ final ConceptDescriptor myConceptIt = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.It", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5343ec4bL)).super_("jetbrains.mps.baseLanguage.structure.Expression").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).parents("jetbrains.mps.baseLanguage.structure.Expression").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).alias("it", "the element that is currently being used").create();
   /*package*/ final ConceptDescriptor myConceptLast = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Last", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec526fe854L)).super_("org.campagnelab.workflow.structure.NoArgFunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec516f9d21L)).parents("org.campagnelab.workflow.structure.NoArgFunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec516f9d21L)).alias("last", "returns the last item emitted by the channel").create();
+  /*package*/ final ConceptDescriptor myConceptLimit = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Limit", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edfa823L)).super_("org.campagnelab.workflow.structure.SplitOption").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).parents("org.campagnelab.workflow.structure.SplitOption").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(4228287401235032100L, "n")).properties("n").alias("limit", "limits the number of expected elements to the specified value").create();
   /*package*/ final ConceptDescriptor myConceptList = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.List", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x37c63a942397ef85L)).super_("org.campagnelab.workflow.structure.NotATupleType").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157723ec6L)).parents("org.campagnelab.workflow.structure.NotATupleType").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157723ec6L)).childDescriptors(new ConceptDescriptorBuilder.Link(7391172440886351025L, "elementType", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6692b82cc4b61069L), false, false, false)).children(new String[]{"elementType"}, new boolean[]{false}).alias("list", "list as input or output").create();
   /*package*/ final ConceptDescriptor myConceptListChannel = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ListChannel", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x37c63a942397ef89L)).super_("org.campagnelab.workflow.structure.ProcessInputOutput").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae32ad2L)).parents("org.campagnelab.workflow.structure.ProcessInputOutput").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae32ad2L)).childDescriptors(new ConceptDescriptorBuilder.Link(4018964125401477073L, "list", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x37c63a942397ef85L), false, false, false)).children(new String[]{"list"}, new boolean[]{false}).alias("list channel", "this channel contains lists").create();
   /*package*/ final ConceptDescriptor myConceptListElement = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ListElement", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5998affa318eacb0L)).super_("org.campagnelab.workflow.structure.ListElements").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157843f93L)).parents("org.campagnelab.workflow.structure.ListElements").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157843f93L)).childDescriptors(new ConceptDescriptorBuilder.Link(6456103554943724721L, "listElement", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157843f93L), true, true, false)).children(new String[]{"listElement"}, new boolean[]{true}).create();
@@ -115,6 +122,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptRange = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Range", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x32b47eab9d21d26bL)).super_("org.campagnelab.workflow.structure.NewChannelInitializerExpression").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x32b47eab9d217f5dL)).parents("org.campagnelab.workflow.structure.NewChannelInitializerExpression").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x32b47eab9d217f5dL)).childDescriptors(new ConceptDescriptorBuilder.Link(3653684473245061743L, "start", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x32b47eab9d217e3fL), false, false, false), new ConceptDescriptorBuilder.Link(3653684473245061745L, "end", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x32b47eab9d217e3fL), false, false, false)).children(new String[]{"start", "end"}, new boolean[]{false, false}).alias("range", "").create();
   /*package*/ final ConceptDescriptor myConceptRangeOfCharLiterals = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.RangeOfCharLiterals", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b5491467f7bL)).super_("org.campagnelab.workflow.structure.OneOrMoreStrings").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c75f4L)).parents("org.campagnelab.workflow.structure.OneOrMoreStrings").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c75f4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(3855674281011085180L, "start"), new ConceptDescriptorBuilder.Prop(3855674281011085182L, "end")).properties("start", "end").alias("range", "creates a range of strings from start to end inclusive as individual emissions").create();
   /*package*/ final ConceptDescriptor myConceptRangeOfIntegerLiterals = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.RangeOfIntegerLiterals", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c8095L)).super_("org.campagnelab.workflow.structure.OneOrMoreIntegers").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7400L)).parents("org.campagnelab.workflow.structure.OneOrMoreIntegers").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7400L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(3855674281012527254L, "start"), new ConceptDescriptorBuilder.Prop(3855674281012527256L, "end")).properties("start", "end").alias("range", "creates a range of integers from start to end inclusive as individual emissions").create();
+  /*package*/ final ConceptDescriptor myConceptRecord = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Record", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edfadecL)).super_("org.campagnelab.workflow.structure.SplitOption").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).parents("org.campagnelab.workflow.structure.SplitOption").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).childDescriptors(new ConceptDescriptorBuilder.Link(248997709181630394L, "option", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3749e18e5a834e5L), false, true, false)).children(new String[]{"option"}, new boolean[]{true}).alias("record", "parse each entry in the file as record objects").create();
+  /*package*/ final ConceptDescriptor myConceptRecordOption = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.RecordOption", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3749e18e5a834e5L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptReduce = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Reduce", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec534378b5L)).super_("org.campagnelab.workflow.structure.ChannelFunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).parents("org.campagnelab.workflow.structure.ChannelFunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).alias("reduce", "applies a function to every item in the channel and emits the result of the last call of the function as the only output").create();
   /*package*/ final ConceptDescriptor myConceptReport = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Report", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5b6f0368e1a01702L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(6588488528863172372L, "channel", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ae39cbaL), false)).references("channel").childDescriptors(new ConceptDescriptorBuilder.Link(6588488528863172374L, "function", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5b6f0368e1ba2bc0L), false, false, false), new ConceptDescriptorBuilder.Link(1856129165621798239L, "channelFunctions", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L), true, true, false)).children(new String[]{"function", "channelFunctions"}, new boolean[]{false, true}).create();
   /*package*/ final ConceptDescriptor myConceptReportFunction = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ReportFunction", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5b6f0368e1ba2bc0L)).super_("jetbrains.mps.baseLanguage.structure.ConceptFunction").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x108bbca0f48L)).parents("jetbrains.mps.baseLanguage.structure.ConceptFunction").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x108bbca0f48L)).create();
@@ -126,11 +135,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptScriptIntegerArgs = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ScriptIntegerArgs", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5302b40ef1bf49d8L)).super_("org.campagnelab.workflow.structure.ScriptArgs").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5302b40ef1bf49d5L)).parents("org.campagnelab.workflow.structure.ScriptArgs").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5302b40ef1bf49d5L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(5981541231379827161L, "intArg")).properties("intArg").alias("", "integer arguments to be referenced in script").create();
   /*package*/ final ConceptDescriptor myConceptScriptListArgs = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ScriptListArgs", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f0315762b295L)).super_("org.campagnelab.workflow.structure.ScriptArgs").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5302b40ef1bf49d5L)).parents("org.campagnelab.workflow.structure.ScriptArgs").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5302b40ef1bf49d5L)).childDescriptors(new ConceptDescriptorBuilder.Link(3857878650529699445L, "listArg", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157843f93L), true, true, false)).children(new String[]{"listArg"}, new boolean[]{true}).alias("", "list arguments to be referenced in script").create();
   /*package*/ final ConceptDescriptor myConceptScriptStringArgs = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.ScriptStringArgs", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x361e196fab103ecL)).super_("org.campagnelab.workflow.structure.ScriptArgs").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5302b40ef1bf49d5L)).parents("org.campagnelab.workflow.structure.ScriptArgs").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5302b40ef1bf49d5L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(243723893421966319L, "stringArg")).properties("stringArg").alias("", "string arguments to be referenced in script").create();
+  /*package*/ final ConceptDescriptor myConceptSep = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Sep", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edfadc6L)).super_("org.campagnelab.workflow.structure.SplitOption").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).parents("org.campagnelab.workflow.structure.SplitOption").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(4228287401235033543L, "seperator")).properties("seperator").alias("sep", "the character used to seperate the values").create();
   /*package*/ final ConceptDescriptor myConceptSeparate = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Separate", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c3ae2bcL)).super_("org.campagnelab.workflow.structure.ClosureFunctionWithChannelRef").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c33c54dL)).parents("org.campagnelab.workflow.structure.ClosureFunctionWithChannelRef").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c33c54dL)).alias("separate", "lets you copy the items emitted by the source channel into multiple channels, which each of these can receive a separate version of the same item.").create();
+  /*package*/ final ConceptDescriptor myConceptSkip = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Skip", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3749e18e4051e7eL)).super_("org.campagnelab.workflow.structure.SplitOption").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).parents("org.campagnelab.workflow.structure.SplitOption").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(248997709154164351L, "n")).properties("n").alias("skip", "ignore n lines since the file beginning when parsing content").create();
   /*package*/ final ConceptDescriptor myConceptSplitCSV = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.SplitCSV", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056fL)).super_("org.campagnelab.workflow.structure.SplitFunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x169c268b6bd1b448L)).parents("org.campagnelab.workflow.structure.SplitFunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x169c268b6bd1b448L)).alias("splitCSV", "parse text items emitted by a channel into records or group them into lists of records with a specific length").create();
   /*package*/ final ConceptDescriptor myConceptSplitFasta = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.SplitFasta", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5272d162L)).super_("org.campagnelab.workflow.structure.SplitFunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x169c268b6bd1b448L)).parents("org.campagnelab.workflow.structure.SplitFunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x169c268b6bd1b448L)).alias("splitFasta", "split the entries emitted by a channel into text items for each sequence in the received FASTA content").create();
   /*package*/ final ConceptDescriptor myConceptSplitFastq = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.SplitFastq", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5272f1b0L)).super_("org.campagnelab.workflow.structure.SplitFunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x169c268b6bd1b448L)).parents("org.campagnelab.workflow.structure.SplitFunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x169c268b6bd1b448L)).alias("splitFastq", "split the entries emitted by a channel into a text chunk for each sequence in the received item").create();
-  /*package*/ final ConceptDescriptor myConceptSplitFunction = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.SplitFunction", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x169c268b6bd1b448L)).super_("org.campagnelab.workflow.structure.ChannelFunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).parents("org.campagnelab.workflow.structure.ChannelFunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).abstract_().create();
+  /*package*/ final ConceptDescriptor myConceptSplitFunction = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.SplitFunction", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x169c268b6bd1b448L)).super_("org.campagnelab.workflow.structure.ChannelFunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).parents("org.campagnelab.workflow.structure.ChannelFunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).childDescriptors(new ConceptDescriptorBuilder.Link(6785607559074978255L, "option", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L), true, true, false)).children(new String[]{"option"}, new boolean[]{true}).abstract_().create();
+  /*package*/ final ConceptDescriptor myConceptSplitOption = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.SplitOption", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptSplitText = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.SplitText", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5272f6b1L)).super_("org.campagnelab.workflow.structure.SplitFunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x169c268b6bd1b448L)).parents("org.campagnelab.workflow.structure.SplitFunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x169c268b6bd1b448L)).alias("splitText", "split multi-line strings or text file items into chunks containing n lines, which will be emitted by the channel").create();
   /*package*/ final ConceptDescriptor myConceptSpread = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Spread", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c419c35L)).super_("org.campagnelab.workflow.structure.ChannelFunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).parents("org.campagnelab.workflow.structure.ChannelFunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).childDescriptors(new ConceptDescriptorBuilder.Link(5549485059544867695L, "array", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x32b47eab9d21b6ecL), false, false, false)).children(new String[]{"array"}, new boolean[]{false}).alias("spread", "").create();
   /*package*/ final ConceptDescriptor myConceptString = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.String", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x1b7d08ca5d19b4c6L)).super_("org.campagnelab.workflow.structure.NotATupleType").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157723ec6L)).parents("org.campagnelab.workflow.structure.NotATupleType").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157723ec6L)).alias("string", "string as input or output").create();
@@ -140,6 +152,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptStringLiteral = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.StringLiteral", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c805aL)).super_("org.campagnelab.workflow.structure.OneOrMoreStrings").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c75f4L)).parents("org.campagnelab.workflow.structure.OneOrMoreStrings").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c75f4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(3855674281012527195L, "value")).properties("value").alias("value", "").create();
   /*package*/ final ConceptDescriptor myConceptStringLiteralList = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.StringLiteralList", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c7ac7L)).super_("org.campagnelab.workflow.structure.OneOrMoreLists").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).parents("org.campagnelab.workflow.structure.OneOrMoreLists").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c79e5L)).childDescriptors(new ConceptDescriptorBuilder.Link(3855674281012525912L, "string", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c75f4L), false, true, false)).children(new String[]{"string"}, new boolean[]{true}).alias("list<string>", "").create();
   /*package*/ final ConceptDescriptor myConceptStringLiteralTuple = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.StringLiteralTuple", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x2b51664f2a824516L)).super_("org.campagnelab.workflow.structure.ValueLiteralTuple").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xd4f3f4db8970612L)).parents("org.campagnelab.workflow.structure.ValueLiteralTuple").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xd4f3f4db8970612L)).childDescriptors(new ConceptDescriptorBuilder.Link(3121388506946094553L, "string", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x35821b54915c805aL), false, false, false)).children(new String[]{"string"}, new boolean[]{false}).alias("string", "").create();
+  /*package*/ final ConceptDescriptor myConceptStrip = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Strip", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3749e18e4051e41L)).super_("org.campagnelab.workflow.structure.SplitOption").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).parents("org.campagnelab.workflow.structure.SplitOption").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3aade4fd2edebba2L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(248997709154164292L, "trim")).properties("trim").alias("strip", "remove leading and trailing blanks from values").create();
   /*package*/ final ConceptDescriptor myConceptSum = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Sum", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c334758L)).super_("org.campagnelab.workflow.structure.Closurefunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL)).parents("org.campagnelab.workflow.structure.Closurefunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL)).alias("sum", "operator creates a channel that emits the sum of all the items emitted by the channel itself").create();
   /*package*/ final ConceptDescriptor myConceptTake = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Take", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5256da04L)).super_("org.campagnelab.workflow.structure.ChannelFunction").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).parents("org.campagnelab.workflow.structure.ChannelFunction").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x3589f03157a20e70L)).childDescriptors(new ConceptDescriptorBuilder.Link(5549485059546653507L, "n", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x32b47eab9d21b694L), false, false, false)).children(new String[]{"n"}, new boolean[]{false}).alias("take", "allows you to filter only the first n items emitted by a channel").create();
   /*package*/ final ConceptDescriptor myConceptTap = new ConceptDescriptorBuilder("org.campagnelab.workflow.structure.Tap", MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c4186b8L)).super_("org.campagnelab.workflow.structure.ChannelFunctionWithChannelRef").super_(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c417bb7L)).parents("org.campagnelab.workflow.structure.ChannelFunctionWithChannelRef").parentIds(MetaIdFactory.conceptId(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x6e564fec6c417bb7L)).alias("tap", "it connects two channels, copying the values from the source into the tapped channel. ").create();
@@ -164,13 +177,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptArgRegexLiteralQualifierPredicate, myConceptArgRegexQualifierPredicate, myConceptBaseLanguageScriptAdapter, myConceptBoolean, myConceptBooleanChannel, myConceptBooleanElement, myConceptBooleanInitializer, myConceptBooleanLiteral, myConceptBooleanLiteralList, myConceptBooleanLiteralTuple, myConceptBuffer, myConceptChannelFunction, myConceptChannelFunctionWithChannelRef, myConceptChannelInitializerExpression, myConceptChannelType, myConceptChoice, myConceptClosureFunctionWithChannelRef, myConceptClosurefunction, myConceptCollate, myConceptCollateAllowIncompleteTuples, myConceptCollateOption, myConceptCollateStepSize, myConceptConcat, myConceptConditionalExpressionText, myConceptConditionalVariableRef, myConceptCountBy, myConceptCross, myConceptDistinct, myConceptFile, myConceptFileChannel, myConceptFileInitializer, myConceptFileList, myConceptFileListChannel, myConceptFileListInitializer, myConceptFileLiteralList, myConceptFileLiteralTuple, myConceptFilePath, myConceptFileType, myConceptFilter, myConceptFirst, myConceptFlatMap, myConceptFlatten, myConceptGlobalChannel, myConceptGroupBy, myConceptGroupTuple, myConceptHiddenTypeVarDeclaration, myConceptInputChannel, myConceptInputFromBaseLanguageScript, myConceptInputValue, myConceptInteger, myConceptIntegerChannel, myConceptIntegerElement, myConceptIntegerInitializer, myConceptIntegerLiteral, myConceptIntegerLiteralList, myConceptIntegerLiteralTuple, myConceptIt, myConceptLast, myConceptList, myConceptListChannel, myConceptListElement, myConceptListElements, myConceptListInitializer, myConceptListLiteral, myConceptListLiteralTuple, myConceptListTypes, myConceptMap, myConceptMax, myConceptMerge, myConceptMin, myConceptMix, myConceptNameInAChannelRef, myConceptNewBooleanLiteral, myConceptNewChannelInitializerExpression, myConceptNewFileLiteral, myConceptNewIntegerLiteral, myConceptNewListLiteral, myConceptNewStringLiteral, myConceptNewTupleLiteral, myConceptNoArgFunction, myConceptNonListNonFileChannel, myConceptNotATupleType, myConceptOneOrMoreIntegers, myConceptOneOrMoreLists, myConceptOneOrMoreStrings, myConceptOutChannelContainer, myConceptOutChannelContainerRef, myConceptOutputChannel, myConceptOutputExpression, myConceptPhase, myConceptPrimitiveType, myConceptPrint, myConceptPrintln, myConceptProcess, myConceptProcessInput, myConceptProcessInputOutput, myConceptProcessOutput, myConceptProcessRef, myConceptProcessTypeDeclaration, myConceptProcessValueTypeDeclaration, myConceptRange, myConceptRangeOfCharLiterals, myConceptRangeOfIntegerLiterals, myConceptReduce, myConceptReport, myConceptReportFunction, myConceptReportParameter, myConceptRichScript, myConceptScript, myConceptScriptArgs, myConceptScriptBooleanArgs, myConceptScriptIntegerArgs, myConceptScriptListArgs, myConceptScriptStringArgs, myConceptSeparate, myConceptSplitCSV, myConceptSplitFasta, myConceptSplitFastq, myConceptSplitFunction, myConceptSplitText, myConceptSpread, myConceptString, myConceptStringChannel, myConceptStringElement, myConceptStringInitializer, myConceptStringLiteral, myConceptStringLiteralList, myConceptStringLiteralTuple, myConceptSum, myConceptTake, myConceptTap, myConceptToList, myConceptToListFunction, myConceptToSortedList, myConceptToTuple, myConceptTuple, myConceptTupleChannel, myConceptTupleContainer, myConceptTupleElement, myConceptTupleInitializer, myConceptTupleListLiteral, myConceptTupleLiteral, myConceptTupleType, myConceptUnique, myConceptValueInAChannelRef, myConceptValueLiteralTuple, myConceptView, myConceptWorkflow, myConceptifEmpty);
+    return Arrays.asList(myConceptArgRegexLiteralQualifierPredicate, myConceptArgRegexQualifierPredicate, myConceptBaseLanguageScriptAdapter, myConceptBoolean, myConceptBooleanChannel, myConceptBooleanElement, myConceptBooleanInitializer, myConceptBooleanLiteral, myConceptBooleanLiteralList, myConceptBooleanLiteralTuple, myConceptBuffer, myConceptBy, myConceptChannelFunction, myConceptChannelFunctionWithChannelRef, myConceptChannelInitializerExpression, myConceptChannelType, myConceptCharset, myConceptChoice, myConceptClosureFunctionWithChannelRef, myConceptClosurefunction, myConceptCollate, myConceptCollateAllowIncompleteTuples, myConceptCollateOption, myConceptCollateStepSize, myConceptConcat, myConceptConditionalExpressionText, myConceptConditionalVariableRef, myConceptCountBy, myConceptCross, myConceptDecompress, myConceptDistinct, myConceptElem, myConceptFile, myConceptFileChannel, myConceptFileInitializer, myConceptFileList, myConceptFileListChannel, myConceptFileListInitializer, myConceptFileLiteralList, myConceptFileLiteralTuple, myConceptFilePath, myConceptFileSplitOption, myConceptFileType, myConceptFilter, myConceptFirst, myConceptFlatMap, myConceptFlatten, myConceptGlobalChannel, myConceptGroupBy, myConceptGroupTuple, myConceptHeader, myConceptHiddenTypeVarDeclaration, myConceptInputChannel, myConceptInputFromBaseLanguageScript, myConceptInputValue, myConceptInteger, myConceptIntegerChannel, myConceptIntegerElement, myConceptIntegerInitializer, myConceptIntegerLiteral, myConceptIntegerLiteralList, myConceptIntegerLiteralTuple, myConceptIt, myConceptLast, myConceptLimit, myConceptList, myConceptListChannel, myConceptListElement, myConceptListElements, myConceptListInitializer, myConceptListLiteral, myConceptListLiteralTuple, myConceptListTypes, myConceptMap, myConceptMax, myConceptMerge, myConceptMin, myConceptMix, myConceptNameInAChannelRef, myConceptNewBooleanLiteral, myConceptNewChannelInitializerExpression, myConceptNewFileLiteral, myConceptNewIntegerLiteral, myConceptNewListLiteral, myConceptNewStringLiteral, myConceptNewTupleLiteral, myConceptNoArgFunction, myConceptNonListNonFileChannel, myConceptNotATupleType, myConceptOneOrMoreIntegers, myConceptOneOrMoreLists, myConceptOneOrMoreStrings, myConceptOutChannelContainer, myConceptOutChannelContainerRef, myConceptOutputChannel, myConceptOutputExpression, myConceptPhase, myConceptPrimitiveType, myConceptPrint, myConceptPrintln, myConceptProcess, myConceptProcessInput, myConceptProcessInputOutput, myConceptProcessOutput, myConceptProcessRef, myConceptProcessTypeDeclaration, myConceptProcessValueTypeDeclaration, myConceptRange, myConceptRangeOfCharLiterals, myConceptRangeOfIntegerLiterals, myConceptRecord, myConceptRecordOption, myConceptReduce, myConceptReport, myConceptReportFunction, myConceptReportParameter, myConceptRichScript, myConceptScript, myConceptScriptArgs, myConceptScriptBooleanArgs, myConceptScriptIntegerArgs, myConceptScriptListArgs, myConceptScriptStringArgs, myConceptSep, myConceptSeparate, myConceptSkip, myConceptSplitCSV, myConceptSplitFasta, myConceptSplitFastq, myConceptSplitFunction, myConceptSplitOption, myConceptSplitText, myConceptSpread, myConceptString, myConceptStringChannel, myConceptStringElement, myConceptStringInitializer, myConceptStringLiteral, myConceptStringLiteralList, myConceptStringLiteralTuple, myConceptStrip, myConceptSum, myConceptTake, myConceptTap, myConceptToList, myConceptToListFunction, myConceptToSortedList, myConceptToTuple, myConceptTuple, myConceptTupleChannel, myConceptTupleContainer, myConceptTupleElement, myConceptTupleInitializer, myConceptTupleListLiteral, myConceptTupleLiteral, myConceptTupleType, myConceptUnique, myConceptValueInAChannelRef, myConceptValueLiteralTuple, myConceptView, myConceptWorkflow, myConceptifEmpty);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0xf, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0kg, conceptFqName)) {
       case 0:
         return myConceptArgRegexLiteralQualifierPredicate;
       case 1:
@@ -194,284 +207,310 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 10:
         return myConceptBuffer;
       case 11:
-        return myConceptChannelFunction;
+        return myConceptBy;
       case 12:
-        return myConceptChannelFunctionWithChannelRef;
+        return myConceptChannelFunction;
       case 13:
-        return myConceptChannelInitializerExpression;
+        return myConceptChannelFunctionWithChannelRef;
       case 14:
-        return myConceptChannelType;
+        return myConceptChannelInitializerExpression;
       case 15:
-        return myConceptChoice;
+        return myConceptChannelType;
       case 16:
-        return myConceptClosureFunctionWithChannelRef;
+        return myConceptCharset;
       case 17:
-        return myConceptClosurefunction;
+        return myConceptChoice;
       case 18:
-        return myConceptCollate;
+        return myConceptClosureFunctionWithChannelRef;
       case 19:
-        return myConceptCollateAllowIncompleteTuples;
+        return myConceptClosurefunction;
       case 20:
-        return myConceptCollateOption;
+        return myConceptCollate;
       case 21:
-        return myConceptCollateStepSize;
+        return myConceptCollateAllowIncompleteTuples;
       case 22:
-        return myConceptConcat;
+        return myConceptCollateOption;
       case 23:
-        return myConceptConditionalExpressionText;
+        return myConceptCollateStepSize;
       case 24:
-        return myConceptConditionalVariableRef;
+        return myConceptConcat;
       case 25:
-        return myConceptCountBy;
+        return myConceptConditionalExpressionText;
       case 26:
-        return myConceptCross;
+        return myConceptConditionalVariableRef;
       case 27:
-        return myConceptDistinct;
+        return myConceptCountBy;
       case 28:
-        return myConceptFile;
+        return myConceptCross;
       case 29:
-        return myConceptFileChannel;
+        return myConceptDecompress;
       case 30:
-        return myConceptFileInitializer;
+        return myConceptDistinct;
       case 31:
-        return myConceptFileList;
+        return myConceptElem;
       case 32:
-        return myConceptFileListChannel;
+        return myConceptFile;
       case 33:
-        return myConceptFileListInitializer;
+        return myConceptFileChannel;
       case 34:
-        return myConceptFileLiteralList;
+        return myConceptFileInitializer;
       case 35:
-        return myConceptFileLiteralTuple;
+        return myConceptFileList;
       case 36:
-        return myConceptFilePath;
+        return myConceptFileListChannel;
       case 37:
-        return myConceptFileType;
+        return myConceptFileListInitializer;
       case 38:
-        return myConceptFilter;
+        return myConceptFileLiteralList;
       case 39:
-        return myConceptFirst;
+        return myConceptFileLiteralTuple;
       case 40:
-        return myConceptFlatMap;
+        return myConceptFilePath;
       case 41:
-        return myConceptFlatten;
+        return myConceptFileSplitOption;
       case 42:
-        return myConceptGlobalChannel;
+        return myConceptFileType;
       case 43:
-        return myConceptGroupBy;
+        return myConceptFilter;
       case 44:
-        return myConceptGroupTuple;
+        return myConceptFirst;
       case 45:
-        return myConceptHiddenTypeVarDeclaration;
+        return myConceptFlatMap;
       case 46:
-        return myConceptInputChannel;
+        return myConceptFlatten;
       case 47:
-        return myConceptInputFromBaseLanguageScript;
+        return myConceptGlobalChannel;
       case 48:
-        return myConceptInputValue;
+        return myConceptGroupBy;
       case 49:
-        return myConceptInteger;
+        return myConceptGroupTuple;
       case 50:
-        return myConceptIntegerChannel;
+        return myConceptHeader;
       case 51:
-        return myConceptIntegerElement;
+        return myConceptHiddenTypeVarDeclaration;
       case 52:
-        return myConceptIntegerInitializer;
+        return myConceptInputChannel;
       case 53:
-        return myConceptIntegerLiteral;
+        return myConceptInputFromBaseLanguageScript;
       case 54:
-        return myConceptIntegerLiteralList;
+        return myConceptInputValue;
       case 55:
-        return myConceptIntegerLiteralTuple;
+        return myConceptInteger;
       case 56:
-        return myConceptIt;
+        return myConceptIntegerChannel;
       case 57:
-        return myConceptLast;
+        return myConceptIntegerElement;
       case 58:
-        return myConceptList;
+        return myConceptIntegerInitializer;
       case 59:
-        return myConceptListChannel;
+        return myConceptIntegerLiteral;
       case 60:
-        return myConceptListElement;
+        return myConceptIntegerLiteralList;
       case 61:
-        return myConceptListElements;
+        return myConceptIntegerLiteralTuple;
       case 62:
-        return myConceptListInitializer;
+        return myConceptIt;
       case 63:
-        return myConceptListLiteral;
+        return myConceptLast;
       case 64:
-        return myConceptListLiteralTuple;
+        return myConceptLimit;
       case 65:
-        return myConceptListTypes;
+        return myConceptList;
       case 66:
-        return myConceptMap;
+        return myConceptListChannel;
       case 67:
-        return myConceptMax;
+        return myConceptListElement;
       case 68:
-        return myConceptMerge;
+        return myConceptListElements;
       case 69:
-        return myConceptMin;
+        return myConceptListInitializer;
       case 70:
-        return myConceptMix;
+        return myConceptListLiteral;
       case 71:
-        return myConceptNameInAChannelRef;
+        return myConceptListLiteralTuple;
       case 72:
-        return myConceptNewBooleanLiteral;
+        return myConceptListTypes;
       case 73:
-        return myConceptNewChannelInitializerExpression;
+        return myConceptMap;
       case 74:
-        return myConceptNewFileLiteral;
+        return myConceptMax;
       case 75:
-        return myConceptNewIntegerLiteral;
+        return myConceptMerge;
       case 76:
-        return myConceptNewListLiteral;
+        return myConceptMin;
       case 77:
-        return myConceptNewStringLiteral;
+        return myConceptMix;
       case 78:
-        return myConceptNewTupleLiteral;
+        return myConceptNameInAChannelRef;
       case 79:
-        return myConceptNoArgFunction;
+        return myConceptNewBooleanLiteral;
       case 80:
-        return myConceptNonListNonFileChannel;
+        return myConceptNewChannelInitializerExpression;
       case 81:
-        return myConceptNotATupleType;
+        return myConceptNewFileLiteral;
       case 82:
-        return myConceptOneOrMoreIntegers;
+        return myConceptNewIntegerLiteral;
       case 83:
-        return myConceptOneOrMoreLists;
+        return myConceptNewListLiteral;
       case 84:
-        return myConceptOneOrMoreStrings;
+        return myConceptNewStringLiteral;
       case 85:
-        return myConceptOutChannelContainer;
+        return myConceptNewTupleLiteral;
       case 86:
-        return myConceptOutChannelContainerRef;
+        return myConceptNoArgFunction;
       case 87:
-        return myConceptOutputChannel;
+        return myConceptNonListNonFileChannel;
       case 88:
-        return myConceptOutputExpression;
+        return myConceptNotATupleType;
       case 89:
-        return myConceptPhase;
+        return myConceptOneOrMoreIntegers;
       case 90:
-        return myConceptPrimitiveType;
+        return myConceptOneOrMoreLists;
       case 91:
-        return myConceptPrint;
+        return myConceptOneOrMoreStrings;
       case 92:
-        return myConceptPrintln;
+        return myConceptOutChannelContainer;
       case 93:
-        return myConceptProcess;
+        return myConceptOutChannelContainerRef;
       case 94:
-        return myConceptProcessInput;
+        return myConceptOutputChannel;
       case 95:
-        return myConceptProcessInputOutput;
+        return myConceptOutputExpression;
       case 96:
-        return myConceptProcessOutput;
+        return myConceptPhase;
       case 97:
-        return myConceptProcessRef;
+        return myConceptPrimitiveType;
       case 98:
-        return myConceptProcessTypeDeclaration;
+        return myConceptPrint;
       case 99:
-        return myConceptProcessValueTypeDeclaration;
+        return myConceptPrintln;
       case 100:
-        return myConceptRange;
+        return myConceptProcess;
       case 101:
-        return myConceptRangeOfCharLiterals;
+        return myConceptProcessInput;
       case 102:
-        return myConceptRangeOfIntegerLiterals;
+        return myConceptProcessInputOutput;
       case 103:
-        return myConceptReduce;
+        return myConceptProcessOutput;
       case 104:
-        return myConceptReport;
+        return myConceptProcessRef;
       case 105:
-        return myConceptReportFunction;
+        return myConceptProcessTypeDeclaration;
       case 106:
-        return myConceptReportParameter;
+        return myConceptProcessValueTypeDeclaration;
       case 107:
-        return myConceptRichScript;
+        return myConceptRange;
       case 108:
-        return myConceptScript;
+        return myConceptRangeOfCharLiterals;
       case 109:
-        return myConceptScriptArgs;
+        return myConceptRangeOfIntegerLiterals;
       case 110:
-        return myConceptScriptBooleanArgs;
+        return myConceptRecord;
       case 111:
-        return myConceptScriptIntegerArgs;
+        return myConceptRecordOption;
       case 112:
-        return myConceptScriptListArgs;
+        return myConceptReduce;
       case 113:
-        return myConceptScriptStringArgs;
+        return myConceptReport;
       case 114:
-        return myConceptSeparate;
+        return myConceptReportFunction;
       case 115:
-        return myConceptSplitCSV;
+        return myConceptReportParameter;
       case 116:
-        return myConceptSplitFasta;
+        return myConceptRichScript;
       case 117:
-        return myConceptSplitFastq;
+        return myConceptScript;
       case 118:
-        return myConceptSplitFunction;
+        return myConceptScriptArgs;
       case 119:
-        return myConceptSplitText;
+        return myConceptScriptBooleanArgs;
       case 120:
-        return myConceptSpread;
+        return myConceptScriptIntegerArgs;
       case 121:
-        return myConceptString;
+        return myConceptScriptListArgs;
       case 122:
-        return myConceptStringChannel;
+        return myConceptScriptStringArgs;
       case 123:
-        return myConceptStringElement;
+        return myConceptSep;
       case 124:
-        return myConceptStringInitializer;
+        return myConceptSeparate;
       case 125:
-        return myConceptStringLiteral;
+        return myConceptSkip;
       case 126:
-        return myConceptStringLiteralList;
+        return myConceptSplitCSV;
       case 127:
-        return myConceptStringLiteralTuple;
+        return myConceptSplitFasta;
       case 128:
-        return myConceptSum;
+        return myConceptSplitFastq;
       case 129:
-        return myConceptTake;
+        return myConceptSplitFunction;
       case 130:
-        return myConceptTap;
+        return myConceptSplitOption;
       case 131:
-        return myConceptToList;
+        return myConceptSplitText;
       case 132:
-        return myConceptToListFunction;
+        return myConceptSpread;
       case 133:
-        return myConceptToSortedList;
+        return myConceptString;
       case 134:
-        return myConceptToTuple;
+        return myConceptStringChannel;
       case 135:
-        return myConceptTuple;
+        return myConceptStringElement;
       case 136:
-        return myConceptTupleChannel;
+        return myConceptStringInitializer;
       case 137:
-        return myConceptTupleContainer;
+        return myConceptStringLiteral;
       case 138:
-        return myConceptTupleElement;
+        return myConceptStringLiteralList;
       case 139:
-        return myConceptTupleInitializer;
+        return myConceptStringLiteralTuple;
       case 140:
-        return myConceptTupleListLiteral;
+        return myConceptStrip;
       case 141:
-        return myConceptTupleLiteral;
+        return myConceptSum;
       case 142:
-        return myConceptTupleType;
+        return myConceptTake;
       case 143:
-        return myConceptUnique;
+        return myConceptTap;
       case 144:
-        return myConceptValueInAChannelRef;
+        return myConceptToList;
       case 145:
-        return myConceptValueLiteralTuple;
+        return myConceptToListFunction;
       case 146:
-        return myConceptView;
+        return myConceptToSortedList;
       case 147:
-        return myConceptWorkflow;
+        return myConceptToTuple;
       case 148:
+        return myConceptTuple;
+      case 149:
+        return myConceptTupleChannel;
+      case 150:
+        return myConceptTupleContainer;
+      case 151:
+        return myConceptTupleElement;
+      case 152:
+        return myConceptTupleInitializer;
+      case 153:
+        return myConceptTupleListLiteral;
+      case 154:
+        return myConceptTupleLiteral;
+      case 155:
+        return myConceptTupleType;
+      case 156:
+        return myConceptUnique;
+      case 157:
+        return myConceptValueInAChannelRef;
+      case 158:
+        return myConceptValueLiteralTuple;
+      case 159:
+        return myConceptView;
+      case 160:
+        return myConceptWorkflow;
+      case 161:
         return myConceptifEmpty;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0xf = new String[]{"org.campagnelab.workflow.structure.ArgRegexLiteralQualifierPredicate", "org.campagnelab.workflow.structure.ArgRegexQualifierPredicate", "org.campagnelab.workflow.structure.BaseLanguageScriptAdapter", "org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.BooleanChannel", "org.campagnelab.workflow.structure.BooleanElement", "org.campagnelab.workflow.structure.BooleanInitializer", "org.campagnelab.workflow.structure.BooleanLiteral", "org.campagnelab.workflow.structure.BooleanLiteralList", "org.campagnelab.workflow.structure.BooleanLiteralTuple", "org.campagnelab.workflow.structure.Buffer", "org.campagnelab.workflow.structure.ChannelFunction", "org.campagnelab.workflow.structure.ChannelFunctionWithChannelRef", "org.campagnelab.workflow.structure.ChannelInitializerExpression", "org.campagnelab.workflow.structure.ChannelType", "org.campagnelab.workflow.structure.Choice", "org.campagnelab.workflow.structure.ClosureFunctionWithChannelRef", "org.campagnelab.workflow.structure.Closurefunction", "org.campagnelab.workflow.structure.Collate", "org.campagnelab.workflow.structure.CollateAllowIncompleteTuples", "org.campagnelab.workflow.structure.CollateOption", "org.campagnelab.workflow.structure.CollateStepSize", "org.campagnelab.workflow.structure.Concat", "org.campagnelab.workflow.structure.ConditionalExpressionText", "org.campagnelab.workflow.structure.ConditionalVariableRef", "org.campagnelab.workflow.structure.CountBy", "org.campagnelab.workflow.structure.Cross", "org.campagnelab.workflow.structure.Distinct", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.FileChannel", "org.campagnelab.workflow.structure.FileInitializer", "org.campagnelab.workflow.structure.FileList", "org.campagnelab.workflow.structure.FileListChannel", "org.campagnelab.workflow.structure.FileListInitializer", "org.campagnelab.workflow.structure.FileLiteralList", "org.campagnelab.workflow.structure.FileLiteralTuple", "org.campagnelab.workflow.structure.FilePath", "org.campagnelab.workflow.structure.FileType", "org.campagnelab.workflow.structure.Filter", "org.campagnelab.workflow.structure.First", "org.campagnelab.workflow.structure.FlatMap", "org.campagnelab.workflow.structure.Flatten", "org.campagnelab.workflow.structure.GlobalChannel", "org.campagnelab.workflow.structure.GroupBy", "org.campagnelab.workflow.structure.GroupTuple", "org.campagnelab.workflow.structure.HiddenTypeVarDeclaration", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.InputFromBaseLanguageScript", "org.campagnelab.workflow.structure.InputValue", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.IntegerChannel", "org.campagnelab.workflow.structure.IntegerElement", "org.campagnelab.workflow.structure.IntegerInitializer", "org.campagnelab.workflow.structure.IntegerLiteral", "org.campagnelab.workflow.structure.IntegerLiteralList", "org.campagnelab.workflow.structure.IntegerLiteralTuple", "org.campagnelab.workflow.structure.It", "org.campagnelab.workflow.structure.Last", "org.campagnelab.workflow.structure.List", "org.campagnelab.workflow.structure.ListChannel", "org.campagnelab.workflow.structure.ListElement", "org.campagnelab.workflow.structure.ListElements", "org.campagnelab.workflow.structure.ListInitializer", "org.campagnelab.workflow.structure.ListLiteral", "org.campagnelab.workflow.structure.ListLiteralTuple", "org.campagnelab.workflow.structure.ListTypes", "org.campagnelab.workflow.structure.Map", "org.campagnelab.workflow.structure.Max", "org.campagnelab.workflow.structure.Merge", "org.campagnelab.workflow.structure.Min", "org.campagnelab.workflow.structure.Mix", "org.campagnelab.workflow.structure.NameInAChannelRef", "org.campagnelab.workflow.structure.NewBooleanLiteral", "org.campagnelab.workflow.structure.NewChannelInitializerExpression", "org.campagnelab.workflow.structure.NewFileLiteral", "org.campagnelab.workflow.structure.NewIntegerLiteral", "org.campagnelab.workflow.structure.NewListLiteral", "org.campagnelab.workflow.structure.NewStringLiteral", "org.campagnelab.workflow.structure.NewTupleLiteral", "org.campagnelab.workflow.structure.NoArgFunction", "org.campagnelab.workflow.structure.NonListNonFileChannel", "org.campagnelab.workflow.structure.NotATupleType", "org.campagnelab.workflow.structure.OneOrMoreIntegers", "org.campagnelab.workflow.structure.OneOrMoreLists", "org.campagnelab.workflow.structure.OneOrMoreStrings", "org.campagnelab.workflow.structure.OutChannelContainer", "org.campagnelab.workflow.structure.OutChannelContainerRef", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.OutputExpression", "org.campagnelab.workflow.structure.Phase", "org.campagnelab.workflow.structure.PrimitiveType", "org.campagnelab.workflow.structure.Print", "org.campagnelab.workflow.structure.Println", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessInput", "org.campagnelab.workflow.structure.ProcessInputOutput", "org.campagnelab.workflow.structure.ProcessOutput", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.ProcessTypeDeclaration", "org.campagnelab.workflow.structure.ProcessValueTypeDeclaration", "org.campagnelab.workflow.structure.Range", "org.campagnelab.workflow.structure.RangeOfCharLiterals", "org.campagnelab.workflow.structure.RangeOfIntegerLiterals", "org.campagnelab.workflow.structure.Reduce", "org.campagnelab.workflow.structure.Report", "org.campagnelab.workflow.structure.ReportFunction", "org.campagnelab.workflow.structure.ReportParameter", "org.campagnelab.workflow.structure.RichScript", "org.campagnelab.workflow.structure.Script", "org.campagnelab.workflow.structure.ScriptArgs", "org.campagnelab.workflow.structure.ScriptBooleanArgs", "org.campagnelab.workflow.structure.ScriptIntegerArgs", "org.campagnelab.workflow.structure.ScriptListArgs", "org.campagnelab.workflow.structure.ScriptStringArgs", "org.campagnelab.workflow.structure.Separate", "org.campagnelab.workflow.structure.SplitCSV", "org.campagnelab.workflow.structure.SplitFasta", "org.campagnelab.workflow.structure.SplitFastq", "org.campagnelab.workflow.structure.SplitFunction", "org.campagnelab.workflow.structure.SplitText", "org.campagnelab.workflow.structure.Spread", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.StringChannel", "org.campagnelab.workflow.structure.StringElement", "org.campagnelab.workflow.structure.StringInitializer", "org.campagnelab.workflow.structure.StringLiteral", "org.campagnelab.workflow.structure.StringLiteralList", "org.campagnelab.workflow.structure.StringLiteralTuple", "org.campagnelab.workflow.structure.Sum", "org.campagnelab.workflow.structure.Take", "org.campagnelab.workflow.structure.Tap", "org.campagnelab.workflow.structure.ToList", "org.campagnelab.workflow.structure.ToListFunction", "org.campagnelab.workflow.structure.ToSortedList", "org.campagnelab.workflow.structure.ToTuple", "org.campagnelab.workflow.structure.Tuple", "org.campagnelab.workflow.structure.TupleChannel", "org.campagnelab.workflow.structure.TupleContainer", "org.campagnelab.workflow.structure.TupleElement", "org.campagnelab.workflow.structure.TupleInitializer", "org.campagnelab.workflow.structure.TupleListLiteral", "org.campagnelab.workflow.structure.TupleLiteral", "org.campagnelab.workflow.structure.TupleType", "org.campagnelab.workflow.structure.Unique", "org.campagnelab.workflow.structure.ValueInAChannelRef", "org.campagnelab.workflow.structure.ValueLiteralTuple", "org.campagnelab.workflow.structure.View", "org.campagnelab.workflow.structure.Workflow", "org.campagnelab.workflow.structure.ifEmpty"};
+  private static String[] stringSwitchCases_1htk8d_a0a0kg = new String[]{"org.campagnelab.workflow.structure.ArgRegexLiteralQualifierPredicate", "org.campagnelab.workflow.structure.ArgRegexQualifierPredicate", "org.campagnelab.workflow.structure.BaseLanguageScriptAdapter", "org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.BooleanChannel", "org.campagnelab.workflow.structure.BooleanElement", "org.campagnelab.workflow.structure.BooleanInitializer", "org.campagnelab.workflow.structure.BooleanLiteral", "org.campagnelab.workflow.structure.BooleanLiteralList", "org.campagnelab.workflow.structure.BooleanLiteralTuple", "org.campagnelab.workflow.structure.Buffer", "org.campagnelab.workflow.structure.By", "org.campagnelab.workflow.structure.ChannelFunction", "org.campagnelab.workflow.structure.ChannelFunctionWithChannelRef", "org.campagnelab.workflow.structure.ChannelInitializerExpression", "org.campagnelab.workflow.structure.ChannelType", "org.campagnelab.workflow.structure.Charset", "org.campagnelab.workflow.structure.Choice", "org.campagnelab.workflow.structure.ClosureFunctionWithChannelRef", "org.campagnelab.workflow.structure.Closurefunction", "org.campagnelab.workflow.structure.Collate", "org.campagnelab.workflow.structure.CollateAllowIncompleteTuples", "org.campagnelab.workflow.structure.CollateOption", "org.campagnelab.workflow.structure.CollateStepSize", "org.campagnelab.workflow.structure.Concat", "org.campagnelab.workflow.structure.ConditionalExpressionText", "org.campagnelab.workflow.structure.ConditionalVariableRef", "org.campagnelab.workflow.structure.CountBy", "org.campagnelab.workflow.structure.Cross", "org.campagnelab.workflow.structure.Decompress", "org.campagnelab.workflow.structure.Distinct", "org.campagnelab.workflow.structure.Elem", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.FileChannel", "org.campagnelab.workflow.structure.FileInitializer", "org.campagnelab.workflow.structure.FileList", "org.campagnelab.workflow.structure.FileListChannel", "org.campagnelab.workflow.structure.FileListInitializer", "org.campagnelab.workflow.structure.FileLiteralList", "org.campagnelab.workflow.structure.FileLiteralTuple", "org.campagnelab.workflow.structure.FilePath", "org.campagnelab.workflow.structure.FileSplitOption", "org.campagnelab.workflow.structure.FileType", "org.campagnelab.workflow.structure.Filter", "org.campagnelab.workflow.structure.First", "org.campagnelab.workflow.structure.FlatMap", "org.campagnelab.workflow.structure.Flatten", "org.campagnelab.workflow.structure.GlobalChannel", "org.campagnelab.workflow.structure.GroupBy", "org.campagnelab.workflow.structure.GroupTuple", "org.campagnelab.workflow.structure.Header", "org.campagnelab.workflow.structure.HiddenTypeVarDeclaration", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.InputFromBaseLanguageScript", "org.campagnelab.workflow.structure.InputValue", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.IntegerChannel", "org.campagnelab.workflow.structure.IntegerElement", "org.campagnelab.workflow.structure.IntegerInitializer", "org.campagnelab.workflow.structure.IntegerLiteral", "org.campagnelab.workflow.structure.IntegerLiteralList", "org.campagnelab.workflow.structure.IntegerLiteralTuple", "org.campagnelab.workflow.structure.It", "org.campagnelab.workflow.structure.Last", "org.campagnelab.workflow.structure.Limit", "org.campagnelab.workflow.structure.List", "org.campagnelab.workflow.structure.ListChannel", "org.campagnelab.workflow.structure.ListElement", "org.campagnelab.workflow.structure.ListElements", "org.campagnelab.workflow.structure.ListInitializer", "org.campagnelab.workflow.structure.ListLiteral", "org.campagnelab.workflow.structure.ListLiteralTuple", "org.campagnelab.workflow.structure.ListTypes", "org.campagnelab.workflow.structure.Map", "org.campagnelab.workflow.structure.Max", "org.campagnelab.workflow.structure.Merge", "org.campagnelab.workflow.structure.Min", "org.campagnelab.workflow.structure.Mix", "org.campagnelab.workflow.structure.NameInAChannelRef", "org.campagnelab.workflow.structure.NewBooleanLiteral", "org.campagnelab.workflow.structure.NewChannelInitializerExpression", "org.campagnelab.workflow.structure.NewFileLiteral", "org.campagnelab.workflow.structure.NewIntegerLiteral", "org.campagnelab.workflow.structure.NewListLiteral", "org.campagnelab.workflow.structure.NewStringLiteral", "org.campagnelab.workflow.structure.NewTupleLiteral", "org.campagnelab.workflow.structure.NoArgFunction", "org.campagnelab.workflow.structure.NonListNonFileChannel", "org.campagnelab.workflow.structure.NotATupleType", "org.campagnelab.workflow.structure.OneOrMoreIntegers", "org.campagnelab.workflow.structure.OneOrMoreLists", "org.campagnelab.workflow.structure.OneOrMoreStrings", "org.campagnelab.workflow.structure.OutChannelContainer", "org.campagnelab.workflow.structure.OutChannelContainerRef", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.OutputExpression", "org.campagnelab.workflow.structure.Phase", "org.campagnelab.workflow.structure.PrimitiveType", "org.campagnelab.workflow.structure.Print", "org.campagnelab.workflow.structure.Println", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessInput", "org.campagnelab.workflow.structure.ProcessInputOutput", "org.campagnelab.workflow.structure.ProcessOutput", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.ProcessTypeDeclaration", "org.campagnelab.workflow.structure.ProcessValueTypeDeclaration", "org.campagnelab.workflow.structure.Range", "org.campagnelab.workflow.structure.RangeOfCharLiterals", "org.campagnelab.workflow.structure.RangeOfIntegerLiterals", "org.campagnelab.workflow.structure.Record", "org.campagnelab.workflow.structure.RecordOption", "org.campagnelab.workflow.structure.Reduce", "org.campagnelab.workflow.structure.Report", "org.campagnelab.workflow.structure.ReportFunction", "org.campagnelab.workflow.structure.ReportParameter", "org.campagnelab.workflow.structure.RichScript", "org.campagnelab.workflow.structure.Script", "org.campagnelab.workflow.structure.ScriptArgs", "org.campagnelab.workflow.structure.ScriptBooleanArgs", "org.campagnelab.workflow.structure.ScriptIntegerArgs", "org.campagnelab.workflow.structure.ScriptListArgs", "org.campagnelab.workflow.structure.ScriptStringArgs", "org.campagnelab.workflow.structure.Sep", "org.campagnelab.workflow.structure.Separate", "org.campagnelab.workflow.structure.Skip", "org.campagnelab.workflow.structure.SplitCSV", "org.campagnelab.workflow.structure.SplitFasta", "org.campagnelab.workflow.structure.SplitFastq", "org.campagnelab.workflow.structure.SplitFunction", "org.campagnelab.workflow.structure.SplitOption", "org.campagnelab.workflow.structure.SplitText", "org.campagnelab.workflow.structure.Spread", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.StringChannel", "org.campagnelab.workflow.structure.StringElement", "org.campagnelab.workflow.structure.StringInitializer", "org.campagnelab.workflow.structure.StringLiteral", "org.campagnelab.workflow.structure.StringLiteralList", "org.campagnelab.workflow.structure.StringLiteralTuple", "org.campagnelab.workflow.structure.Strip", "org.campagnelab.workflow.structure.Sum", "org.campagnelab.workflow.structure.Take", "org.campagnelab.workflow.structure.Tap", "org.campagnelab.workflow.structure.ToList", "org.campagnelab.workflow.structure.ToListFunction", "org.campagnelab.workflow.structure.ToSortedList", "org.campagnelab.workflow.structure.ToTuple", "org.campagnelab.workflow.structure.Tuple", "org.campagnelab.workflow.structure.TupleChannel", "org.campagnelab.workflow.structure.TupleContainer", "org.campagnelab.workflow.structure.TupleElement", "org.campagnelab.workflow.structure.TupleInitializer", "org.campagnelab.workflow.structure.TupleListLiteral", "org.campagnelab.workflow.structure.TupleLiteral", "org.campagnelab.workflow.structure.TupleType", "org.campagnelab.workflow.structure.Unique", "org.campagnelab.workflow.structure.ValueInAChannelRef", "org.campagnelab.workflow.structure.ValueLiteralTuple", "org.campagnelab.workflow.structure.View", "org.campagnelab.workflow.structure.Workflow", "org.campagnelab.workflow.structure.ifEmpty"};
 }
