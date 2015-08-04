@@ -30,7 +30,7 @@
       <concept id="239101957515394455" name="org.campagnelab.workflow.configuration.structure.MaxErrors" flags="ng" index="2DBOxx" />
       <concept id="239101957515394401" name="org.campagnelab.workflow.configuration.structure.MaxRetries" flags="ng" index="2DBOyn" />
       <concept id="6643674794996402808" name="org.campagnelab.workflow.configuration.structure.Memory" flags="ng" index="3yMh_Y">
-        <property id="6643674794996402809" name="memory" index="3yMh_Z" />
+        <property id="3125850575942966518" name="unit" index="2VpDLZ" />
       </concept>
       <concept id="6643674794999877909" name="org.campagnelab.workflow.configuration.structure.Queue" flags="ng" index="3z708j">
         <child id="6643674794999877910" name="queueElements" index="3z708g" />
@@ -100,15 +100,15 @@
       <property role="2C0Vil" value="1h" />
     </node>
     <node concept="3yMh_Y" id="dhtvqFllxj" role="3zupjz">
-      <property role="2C0Vil" value="30 GB" />
+      <property role="2C0Vil" value="30" />
+      <property role="2VpDLZ" value="TB" />
     </node>
     <node concept="3zuAPI" id="dhtvqF2mCN" role="3zupjy" />
   </node>
   <node concept="2ulcR8" id="dhtvqF4gWY">
     <property role="TrG5h" value="JustToTestConfigDirectives" />
-    <node concept="3yMh_Y" id="dhtvqF4gY5" role="2xNrcL">
-      <property role="3yMh_Z" value="20 GB" />
-      <property role="2C0Vil" value="2 GB" />
+    <node concept="3yMh_Y" id="2Hxg8Ag5tkn" role="2xNrcL">
+      <property role="2C0Vil" value="23" />
     </node>
     <node concept="3z7tYA" id="dhtvqFqA9G" role="2xNrcL">
       <property role="2C3xdR" value="45" />
@@ -129,7 +129,7 @@
     <node concept="2$rEH5" id="dhtvqF4gZr" role="2$rEHq">
       <ref role="2$rEH4" node="dhtvqF4gWY" resolve="JustToTestConfigDirectives" />
       <node concept="3yMh_Y" id="dhtvqFuAQF" role="2McKjg">
-        <property role="2C0Vil" value="35 G" />
+        <property role="2C0Vil" value="35" />
       </node>
       <node concept="3z7tYA" id="dhtvqFuAQO" role="2McKjg">
         <property role="2C3xdR" value="456" />
