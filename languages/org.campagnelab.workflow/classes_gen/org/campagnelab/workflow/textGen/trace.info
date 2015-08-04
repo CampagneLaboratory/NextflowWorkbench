@@ -1171,6 +1171,105 @@
       <unit id="6588488528875007335" at="10,0,15,0" name="org.campagnelab.workflow.textGen.ReportFunction_TextGen" />
     </file>
   </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/7407313016816099113">
+    <file name="Record_TextGen.java">
+      <node id="7407313016816130433" at="13,42,14,83" concept="1" />
+      <node id="7407313016816130433" at="14,83,15,21" concept="1" />
+      <node id="7407313016816130433" at="15,21,16,180" concept="0" />
+      <node id="7407313016816130433" at="15,21,16,180" concept="1" />
+      <node id="7407313016816130433" at="13,42,16,180" concept="0" />
+      <node id="7407313016816099113" at="13,0,18,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="7407313016816130433" at="15,21,16,180" />
+      <scope id="7407313016816099113" at="13,42,16,180" />
+      <scope id="7407313016816130433" at="13,42,16,180" />
+      <scope id="7407313016816099113" at="13,0,18,0">
+        <var name="node" id="7407313016816099113" />
+      </scope>
+      <unit id="7407313016816099113" at="12,0,19,0" name="org.campagnelab.workflow.textGen.Record_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/7407313016816176374">
+    <file name="BooleanRecordOption_TextGen.java">
+      <node id="7407313016816176394" at="11,42,12,196" concept="0" />
+      <node id="7407313016816176394" at="11,42,12,196" concept="1" />
+      <node id="7407313016816176374" at="11,0,14,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="7407313016816176374" at="11,42,12,196" />
+      <scope id="7407313016816176394" at="11,42,12,196" />
+      <scope id="7407313016816176374" at="11,0,14,0">
+        <var name="node" id="7407313016816176374" />
+      </scope>
+      <unit id="7407313016816176374" at="10,0,15,0" name="org.campagnelab.workflow.textGen.BooleanRecordOption_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/7407313016816178446">
+    <file name="NonBooleanOption_TextGen.java">
+      <node id="7407313016816178469" at="12,42,13,21" concept="0" />
+      <node id="7407313016816178469" at="12,42,13,21" concept="1" />
+      <node id="7407313016816179329" at="14,215,15,24" concept="0" />
+      <node id="7407313016816179329" at="14,215,15,24" concept="0" />
+      <node id="7407313016816179329" at="14,215,15,24" concept="1" />
+      <node id="7407313016816193130" at="16,236,17,26" concept="0" />
+      <node id="7407313016816193130" at="16,236,17,26" concept="1" />
+      <node id="7407313016816193250" at="18,14,19,25" concept="0" />
+      <node id="7407313016816193250" at="18,14,19,25" concept="1" />
+      <node id="7407313016816179777" at="23,65,24,51" concept="6" />
+      <node id="7407313016816193162" at="18,12,20,7" concept="0" />
+      <node id="7407313016816179777" at="23,0,26,0" concept="10" trace="neq_a7otoq_a0b0b0a#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="7407313016816179440" at="15,24,20,7" concept="3" />
+      <node id="7407313016816178527" at="13,21,21,5" concept="2" />
+      <node id="7407313016816178446" at="12,0,23,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="7407313016816178469" at="12,42,13,21" />
+      <scope id="7407313016816179329" at="14,215,15,24" />
+      <scope id="7407313016816179442" at="16,236,17,26" />
+      <scope id="7407313016816193130" at="16,236,17,26" />
+      <scope id="7407313016816193163" at="18,14,19,25" />
+      <scope id="7407313016816193250" at="18,14,19,25" />
+      <scope id="7407313016816179777" at="23,65,24,51" />
+      <scope id="7407313016816179777" at="23,0,26,0">
+        <var name="a" id="7407313016816179777" />
+        <var name="b" id="7407313016816179777" />
+      </scope>
+      <scope id="7407313016816178531" at="14,215,20,7" />
+      <scope id="7407313016816178527" at="13,21,21,5">
+        <var name="field" id="7407313016816178529" />
+      </scope>
+      <scope id="7407313016816178446" at="12,42,21,5" />
+      <scope id="7407313016816178446" at="12,0,23,0">
+        <var name="node" id="7407313016816178446" />
+      </scope>
+      <unit id="7407313016816178446" at="11,0,27,0" name="org.campagnelab.workflow.textGen.NonBooleanOption_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/7407313016816193272">
+    <file name="SplitFastaRecordFields_TextGen.java">
+      <node id="7407313016816193298" at="13,42,14,83" concept="1" />
+      <node id="7407313016816193298" at="14,83,15,21" concept="1" />
+      <node id="7407313016816193298" at="15,21,16,196" concept="1" />
+      <node id="7407313016816193298" at="13,42,16,196" concept="0" />
+      <node id="7407313016816193272" at="13,0,18,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="7407313016816193272" at="13,42,16,196" />
+      <scope id="7407313016816193298" at="13,42,16,196" />
+      <scope id="7407313016816193272" at="13,0,18,0">
+        <var name="node" id="7407313016816193272" />
+      </scope>
+      <unit id="7407313016816193272" at="12,0,19,0" name="org.campagnelab.workflow.textGen.SplitFastaRecordFields_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/7407313016816207208">
+    <file name="SplitFastqRecordFields_TextGen.java">
+      <node id="7407313016816207276" at="13,42,14,83" concept="1" />
+      <node id="7407313016816207276" at="14,83,15,21" concept="1" />
+      <node id="7407313016816207276" at="15,21,16,196" concept="1" />
+      <node id="7407313016816207276" at="13,42,16,196" concept="0" />
+      <node id="7407313016816207208" at="13,0,18,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="7407313016816207208" at="13,42,16,196" />
+      <scope id="7407313016816207276" at="13,42,16,196" />
+      <scope id="7407313016816207208" at="13,0,18,0">
+        <var name="node" id="7407313016816207208" />
+      </scope>
+      <unit id="7407313016816207208" at="12,0,19,0" name="org.campagnelab.workflow.textGen.SplitFastqRecordFields_TextGen" />
+    </file>
+  </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/8163238436332496214">
     <file name="ChannelFunction_TextGen.java">
       <node id="8163238436332496234" at="11,42,12,83" concept="1" />
