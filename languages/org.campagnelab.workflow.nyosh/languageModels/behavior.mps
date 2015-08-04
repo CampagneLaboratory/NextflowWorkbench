@@ -168,6 +168,9 @@
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
@@ -1072,7 +1075,11 @@
       <ref role="13i0hy" to="tpcu:3fifI_xCJOQ" resolve="getScope" />
       <node concept="3Tm1VV" id="irqYu7mpmG" role="1B3o_S" />
       <node concept="3clFbS" id="irqYu7mpmP" role="3clF47">
-        <node concept="EQwU8" id="irqYu7obl2" role="3cqZAp" />
+        <node concept="3SKdUt" id="wcFktQlCdF" role="3cqZAp">
+          <node concept="3SKdUq" id="wcFktQlCe0" role="3SKWNk">
+            <property role="3SKdUp" value="do not use logger in getScope, there is no write lock when the method is called." />
+          </node>
+        </node>
         <node concept="3clFbJ" id="irqYu7mr2o" role="3cqZAp">
           <node concept="3clFbS" id="irqYu7mr2q" role="3clFbx">
             <node concept="3cpWs6" id="irqYu7mr9W" role="3cqZAp">
@@ -1098,12 +1105,6 @@
             <node concept="37vLTw" id="irqYu7mr3W" role="3uHU7B">
               <ref role="3cqZAo" node="irqYu7mpmQ" resolve="kind" />
             </node>
-          </node>
-        </node>
-        <node concept="EQg8h" id="irqYu7obhZ" role="3cqZAp">
-          <ref role="EQkJd" node="irqYu7mpmF" resolve="getScope" />
-          <node concept="Xl_RD" id="irqYu7obnW" role="1l2uex">
-            <property role="Xl_RC" value="returning parent scope" />
           </node>
         </node>
         <node concept="3clFbF" id="irqYu7mpn0" role="3cqZAp">
