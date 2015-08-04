@@ -22,8 +22,8 @@
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -5876,6 +5876,30 @@
       </node>
       <node concept="3cqZAl" id="2aFge8hFw11" role="3clF45" />
       <node concept="3Tm1VV" id="2aFge8hFw12" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="5JRMEWtN987" role="13h7CS">
+      <property role="TrG5h" value="getPath" />
+      <node concept="3Tm1VV" id="5JRMEWtN988" role="1B3o_S" />
+      <node concept="3clFbS" id="5JRMEWtN989" role="3clF47">
+        <node concept="3clFbF" id="5JRMEWtN98a" role="3cqZAp">
+          <node concept="2OqwBi" id="5JRMEWtN98b" role="3clFbG">
+            <node concept="liA8E" id="5JRMEWtN98c" role="2OqNvi">
+              <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+              <node concept="2OqwBi" id="5JRMEWtN98d" role="37wK5m">
+                <node concept="13iPFW" id="5JRMEWtN98e" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5JRMEWtN98f" role="2OqNvi">
+                  <ref role="3TsBF5" to="iowz:3aOvEIt8sIM" resolve="path" />
+                </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="5JRMEWtN98g" role="2Oq$k0">
+              <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+              <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5JRMEWtN98z" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="2aFge8hF$4S">

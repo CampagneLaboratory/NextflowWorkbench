@@ -23,9 +23,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -320,13 +317,8 @@
                 <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="3VDmkwCJ7r7" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-                <node concept="3cpWs3" id="QcMhj3MHRd" role="37wK5m">
-                  <node concept="2UPiyF" id="QcMhj3MHRg" role="3uHU7w" />
-                  <node concept="Xl_RD" id="QcMhj3MH6F" role="3uHU7B">
-                    <property role="Xl_RC" value="result: " />
-                  </node>
-                </node>
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(int):void" resolve="println" />
+                <node concept="2UPiyF" id="3VDmkwCJ7s7" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -361,7 +353,7 @@
       <property role="TrG5h" value="d" />
       <node concept="2J_sx7" id="7sz_HDkx_cj" role="2$L62I">
         <node concept="2J_swZ" id="7sz_HDkx_di" role="2J_sx6">
-          <property role="2J_sxC" value="4" />
+          <property role="2J_sxC" value="1" />
         </node>
         <node concept="2J_swZ" id="7sz_HDkx_dJ" role="2J_sx6">
           <property role="2J_sxC" value="2" />

@@ -4,11 +4,11 @@
   <languages>
     <use id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" name="org.campagnelab.mps.editor2pdf" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="5" />
   </languages>
   <imports>
-    <import index="2hwc" ref="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)" />
+    <import index="2hwc" ref="r:e9410272-2b63-4194-bbf1-939c80e0d366(docker)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="xtuj" ref="r:b3d6bed8-7d36-47a6-b17a-037b1c81e85e(CorrectWorkflows)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -66,12 +66,6 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="6202591221127590908" name="org.campagnelab.workflow.structure.FileListInitializer" flags="ng" index="0k3gA">
-        <child id="6202591221127590944" name="fileList" index="0k3fU" />
-      </concept>
-      <concept id="5930160417380669575" name="org.campagnelab.workflow.structure.FilePath" flags="ng" index="2xgF7X">
-        <property id="571300755983255909" name="path" index="2VDI9B" />
-      </concept>
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
         <child id="8369613327464344476" name="outChannel" index="1uLvPA" />
@@ -83,10 +77,9 @@
         <child id="6344724376800375955" name="description" index="GZ$AB" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
       </concept>
-      <concept id="3855674281012526088" name="org.campagnelab.workflow.structure.FileLiteralList" flags="ng" index="2$RAts">
-        <child id="3855674281012526239" name="file" index="2$RAvb" />
+      <concept id="3653684473245060014" name="org.campagnelab.workflow.structure.NewFileLiteral" flags="ng" index="2J_rk5">
+        <property id="3653684473245060018" name="path" index="2J_rkp" />
       </concept>
-      <concept id="3653684473245040477" name="org.campagnelab.workflow.structure.NewChannelInitializerExpression" flags="ng" index="2J_g7Q" />
       <concept id="3653684473245056444" name="org.campagnelab.workflow.structure.NewTupleLiteral" flags="ng" index="2J_scn">
         <child id="3653684473245056466" name="elementType" index="2J_sdT" />
       </concept>
@@ -149,7 +142,7 @@
         <property role="TrG5h" value="chunk" />
       </node>
       <node concept="1uYdA0" id="dNnsoyWuJu" role="1uLvPH">
-        <ref role="1uK_4X" node="5UkDK45juxi" resolve="alignments" />
+        <ref role="1uK_4X" node="7wWbCzYoxwH" resolve="alignments" />
         <node concept="1yaZXp" id="dNnsoz9$Ii" role="1ylr64" />
         <node concept="1yaYav" id="2BFWbNnMeY5" role="1ylr64" />
       </node>
@@ -174,16 +167,14 @@
         <node concept="1yaYav" id="5FDPSDjQqBV" role="1ylr64" />
       </node>
     </node>
-    <node concept="1CVceo" id="5UkDK45juxi" role="2$L6iY">
+    <node concept="1CVceo" id="7wWbCzYoxwH" role="2$L6iY">
       <property role="TrG5h" value="alignments" />
-      <node concept="0k3gA" id="5UkDK45ju_c" role="2$L62I">
-        <node concept="2$RAts" id="5UkDK45ju_e" role="0k3fU">
-          <node concept="2xgF7X" id="5UkDK45jxz$" role="2$RAvb">
-            <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*" />
-          </node>
-          <node concept="2xgF7X" id="5UkDK45jxz_" role="2$RAvb">
-            <property role="2VDI9B" value="/Users/jasonkurs/Documents/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*" />
-          </node>
+      <node concept="2J_sx7" id="7wWbCzYoxwI" role="2$L62I">
+        <node concept="2J_rk5" id="7wWbCzYoyBN" role="2J_sx6">
+          <property role="2J_rkp" value="${project}/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*" />
+        </node>
+        <node concept="2J_rk5" id="7wWbCzYozEm" role="2J_sx6">
+          <property role="2J_rkp" value="${project}/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*" />
         </node>
       </node>
     </node>
@@ -215,10 +206,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="1CVceo" id="5wcZjhPjYBD" role="2$L6iY">
-      <property role="TrG5h" value="za" />
-      <node concept="2J_g7Q" id="5wcZjhPjYCN" role="2$L62I" />
     </node>
     <node concept="3ZW7eb" id="5wcZjhOWEpM" role="lGtFl">
       <property role="2ripvU" value="1" />

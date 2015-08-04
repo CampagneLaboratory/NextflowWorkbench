@@ -523,18 +523,24 @@
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/2498161758010474550">
     <file name="NewFileLiteral_Behavior.java">
-      <node id="2498161758010474566" at="12,81,13,168" concept="3" />
-      <node id="2498161758010474550" at="10,0,12,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="2498161758010474550" at="12,0,15,0" concept="13" trace="virtual_removeProperty_2498161758010463869#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="2498161758010474552" at="10,43,10,43" />
-      <scope id="2498161758010474556" at="12,81,13,168" />
-      <scope id="2498161758010474550" at="10,0,12,0">
+      <node id="2498161758010474566" at="13,81,14,168" concept="3" />
+      <node id="6626988230167007754" at="16,73,17,213" concept="9" />
+      <node id="2498161758010474550" at="11,0,13,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2498161758010474550" at="13,0,16,0" concept="13" trace="virtual_removeProperty_2498161758010463869#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2498161758010474550" at="16,0,19,0" concept="13" trace="call_getPath_6626988230167007751#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="2498161758010474552" at="11,43,11,43" />
+      <scope id="2498161758010474556" at="13,81,14,168" />
+      <scope id="6626988230167007753" at="16,73,17,213" />
+      <scope id="2498161758010474550" at="11,0,13,0">
         <var name="thisNode" id="2498161758010474550" />
       </scope>
-      <scope id="2498161758010474550" at="12,0,15,0">
+      <scope id="2498161758010474550" at="13,0,16,0">
         <var name="thisNode" id="2498161758010474550" />
       </scope>
-      <unit id="2498161758010474550" at="9,0,16,0" name="org.campagnelab.workflow.behavior.NewFileLiteral_Behavior" />
+      <scope id="2498161758010474550" at="16,0,19,0">
+        <var name="thisNode" id="2498161758010474550" />
+      </scope>
+      <unit id="2498161758010474550" at="10,0,20,0" name="org.campagnelab.workflow.behavior.NewFileLiteral_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/2498161758010479900">

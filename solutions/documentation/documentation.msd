@@ -31,7 +31,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="0" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" fqName="org.campagnelab.mps.editor2pdf" version="0" />
-    <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="3" />
+    <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="5" />
   </languageVersions>
 </solution>
 
