@@ -1,8 +1,0 @@
-#!/bin/bash -l
-nextflowScript=$1
-jarScript=$2
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source ${SCRIPT_DIR}/setEnv
-export NXF_CLASSPATH=${jarScript}
-echo "Executing ${nextflowScript}"
-nohup nextflow ${nextflowScript} 2>&1 | less
