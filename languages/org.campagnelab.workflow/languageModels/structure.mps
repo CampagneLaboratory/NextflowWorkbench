@@ -21,8 +21,8 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -72,7 +72,7 @@
     <property role="R4oN_" value="a Nextflow-like process" />
     <property role="19KtqR" value="true" />
     <property role="R5$K7" value="false" />
-    <property role="MwhBj" value="${module}/icons/ProcessIcon-2.png" />
+    <property role="MwhBj" value="${module}/icons/ProcessIcon-5.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="59canFNwpDb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1285,7 +1285,7 @@
     <node concept="1TJgyj" id="3aOvEIt8rrH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elementType" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     </node>
   </node>
@@ -1351,7 +1351,13 @@
     <property role="TrG5h" value="Take" />
     <property role="34LRSv" value="take" />
     <property role="R4oN_" value="allows you to filter only the first n items emitted by a channel" />
-    <ref role="1TJDcQ" node="1qs9CHFOmDX" resolve="LiteralFunction" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="4O3IO9sBqd3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="n" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8rqk" resolve="NewIntegerLiteral" />
+    </node>
   </node>
   <node concept="1TIwiD" id="XaRILjgYLb">
     <property role="3GE5qa" value="channelFunctions" />
@@ -1487,18 +1493,6 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
-  </node>
-  <node concept="1TIwiD" id="1qs9CHFOmDX">
-    <property role="3GE5qa" value="channelFunctions.literalFunctions" />
-    <property role="TrG5h" value="LiteralFunction" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
-    <node concept="1TJgyj" id="1qs9CHFOvZR" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="literal" />
-      <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4g1gOgy0q_n">
     <property role="3GE5qa" value="processIO" />
@@ -1639,7 +1633,13 @@
     <property role="3GE5qa" value="channelFunctions.literalFunctions" />
     <property role="TrG5h" value="Spread" />
     <property role="34LRSv" value="spread" />
-    <ref role="1TJDcQ" node="1qs9CHFOmDX" resolve="LiteralFunction" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="4O3IO9swAdJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="array" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8rrG" resolve="NewListLiteral" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6TmjYLGeHlg">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />

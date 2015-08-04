@@ -1,2 +1,0 @@
-slchoose sun_jdk 7.0.17 dist
-export JAVA_HOME=/softlib/exe/x86_64/pkg/sun_jdk/7.0.17/dist/bin/java
