@@ -174,7 +174,7 @@
   </node>
   <node concept="1TIwiD" id="5KN4KqZbJnZ">
     <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="ProcessOptions" />
+    <property role="TrG5h" value="ProcessOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -184,7 +184,7 @@
     <property role="TrG5h" value="Queue" />
     <property role="34LRSv" value="queue" />
     <property role="R4oN_" value="Queue where jobs are scheduled when using a grid based executor" />
-    <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
+    <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOption" />
     <node concept="1TJgyj" id="5KN4KqZbL4m" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="queueElements" />
@@ -323,7 +323,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="processOptions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
+      <ref role="20lvS9" node="5KN4KqZbJnZ" resolve="ProcessOption" />
     </node>
     <node concept="1TJgyj" id="5KN4KqZiCvA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -361,7 +361,7 @@
     <property role="TrG5h" value="StringOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
+    <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOption" />
     <node concept="1TJgyi" id="dhtvqFkG5z" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -372,7 +372,7 @@
     <property role="TrG5h" value="IntegerOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
+    <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOption" />
     <node concept="1TJgyi" id="dhtvqFnQq1" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
