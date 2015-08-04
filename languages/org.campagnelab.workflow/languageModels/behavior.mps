@@ -121,7 +121,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -3530,6 +3530,37 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="3ziB45$3KqB" role="13h7CS">
+      <property role="TrG5h" value="asValidId" />
+      <node concept="3Tm1VV" id="3ziB45$3KqC" role="1B3o_S" />
+      <node concept="3clFbS" id="3ziB45$3KqD" role="3clF47">
+        <node concept="3clFbF" id="3ziB45$4eYL" role="3cqZAp">
+          <node concept="3cpWs3" id="3ziB45$4fl6" role="3clFbG">
+            <node concept="Xl_RD" id="3ziB45$4eYK" role="3uHU7B">
+              <property role="Xl_RC" value="_" />
+            </node>
+            <node concept="2OqwBi" id="3ziB45$4dyf" role="3uHU7w">
+              <node concept="2OqwBi" id="3ziB45$4d1L" role="2Oq$k0">
+                <node concept="13iPFW" id="3ziB45$4c21" role="2Oq$k0" />
+                <node concept="3TrcHB" id="3ziB45$4djK" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3ziB45$4eNL" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="3ziB45$4ePq" role="37wK5m">
+                  <property role="Xl_RC" value=" " />
+                </node>
+                <node concept="Xl_RD" id="3ziB45$4eTW" role="37wK5m">
+                  <property role="Xl_RC" value="_" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3ziB45$415t" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="vHEKaVPJOM">
