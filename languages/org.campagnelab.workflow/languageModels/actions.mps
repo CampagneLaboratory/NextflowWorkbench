@@ -68,7 +68,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -123,6 +123,7 @@
         <child id="1177337679534" name="type" index="uMOYW" />
         <child id="1177338017561" name="query" index="uO7ob" />
         <child id="1177339176647" name="matchingText" index="uSyvl" />
+        <child id="1177339186632" name="descriptionText" index="uS$Nq" />
         <child id="1177339421668" name="handler" index="uTubQ" />
       </concept>
       <concept id="1177337833147" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_parameterObject" flags="nn" index="uNquD" />
@@ -827,6 +828,23 @@
       <node concept="tYCnQ" id="5wcZjhPoRub" role="tZc4B">
         <ref role="uz4UX" to="iowz:3aOvEIt8rrn" resolve="NewBooleanLiteral" />
         <node concept="uMFAO" id="5wcZjhPp5em" role="uz6Si">
+          <node concept="uSjag" id="7wWbCzYvYPP" role="uS$Nq">
+            <node concept="3clFbS" id="7wWbCzYvYPQ" role="2VODD2">
+              <node concept="3clFbF" id="7wWbCzYvZ3i" role="3cqZAp">
+                <node concept="2OqwBi" id="7wWbCzYwp3B" role="3clFbG">
+                  <node concept="2OqwBi" id="7wWbCzYw0eq" role="2Oq$k0">
+                    <node concept="uNquD" id="7wWbCzYw01u" role="2Oq$k0" />
+                    <node concept="liA8E" id="7wWbCzYw0Zd" role="2OqNvi">
+                      <ref role="37wK5l" to="e2lb:~Boolean.toString():java.lang.String" resolve="toString" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7wWbCzYwpS2" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3uibUv" id="5wcZjhPp5ko" role="uMOYW">
             <ref role="3uigEE" to="e2lb:~Boolean" resolve="Boolean" />
           </node>
@@ -890,10 +908,15 @@
           <node concept="uSjag" id="5wcZjhPp7Bs" role="uSyvl">
             <node concept="3clFbS" id="5wcZjhPp7Bt" role="2VODD2">
               <node concept="3clFbF" id="5wcZjhPp7Nm" role="3cqZAp">
-                <node concept="2OqwBi" id="5wcZjhPp7XC" role="3clFbG">
-                  <node concept="uNquD" id="5wcZjhPp7Nl" role="2Oq$k0" />
-                  <node concept="liA8E" id="5wcZjhPp8Il" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Boolean.toString():java.lang.String" resolve="toString" />
+                <node concept="2OqwBi" id="7wWbCzYwnXd" role="3clFbG">
+                  <node concept="2OqwBi" id="5wcZjhPp7XC" role="2Oq$k0">
+                    <node concept="uNquD" id="5wcZjhPp7Nl" role="2Oq$k0" />
+                    <node concept="liA8E" id="5wcZjhPp8Il" role="2OqNvi">
+                      <ref role="37wK5l" to="e2lb:~Boolean.toString():java.lang.String" resolve="toString" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7wWbCzYwoT6" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
                   </node>
                 </node>
               </node>

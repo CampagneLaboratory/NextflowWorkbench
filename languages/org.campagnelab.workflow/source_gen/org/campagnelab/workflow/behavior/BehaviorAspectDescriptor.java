@@ -277,30 +277,30 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new Elem_BehaviorDescriptor();
       case 10:
         return new By_BehaviorDescriptor();
-      case 8:
-        return new BooleanRecordOption_BehaviorDescriptor();
-      case 78:
-        return new NonBooleanOption_BehaviorDescriptor();
-      case 46:
-        return new Id_BehaviorDescriptor();
-      case 98:
-        return new RecordHeader_BehaviorDescriptor();
-      case 23:
-        return new Desc_BehaviorDescriptor();
-      case 129:
-        return new Text_BehaviorDescriptor();
       case 110:
         return new SeqString_BehaviorDescriptor();
+      case 23:
+        return new Desc_BehaviorDescriptor();
+      case 8:
+        return new BooleanRecordOption_BehaviorDescriptor();
+      case 46:
+        return new Id_BehaviorDescriptor();
       case 111:
         return new Sequence_BehaviorDescriptor();
+      case 129:
+        return new Text_BehaviorDescriptor();
+      case 91:
+        return new QualityString_BehaviorDescriptor();
+      case 90:
+        return new QualityHeader_BehaviorDescriptor();
+      case 98:
+        return new RecordHeader_BehaviorDescriptor();
       case 95:
         return new ReadHeader_BehaviorDescriptor();
       case 96:
         return new ReadString_BehaviorDescriptor();
-      case 90:
-        return new QualityHeader_BehaviorDescriptor();
-      case 91:
-        return new QualityString_BehaviorDescriptor();
+      case 78:
+        return new NonBooleanOption_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

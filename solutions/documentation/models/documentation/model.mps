@@ -8,7 +8,7 @@
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="5" />
   </languages>
   <imports>
-    <import index="2hwc" ref="r:e9410272-2b63-4194-bbf1-939c80e0d366(docker)" />
+    <import index="2hwc" ref="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="xtuj" ref="r:b3d6bed8-7d36-47a6-b17a-037b1c81e85e(CorrectWorkflows)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -76,6 +76,9 @@
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
         <child id="6344724376800375955" name="description" index="GZ$AB" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
+      </concept>
+      <concept id="3653684473245040478" name="org.campagnelab.workflow.structure.NewStringLiteral" flags="ng" index="2J_g7P">
+        <property id="3653684473245041443" name="value" index="2J_vQ8" />
       </concept>
       <concept id="3653684473245060014" name="org.campagnelab.workflow.structure.NewFileLiteral" flags="ng" index="2J_rk5">
         <property id="3653684473245060018" name="path" index="2J_rkp" />
@@ -205,6 +208,12 @@
             <property role="2J_sxC" value="3" />
           </node>
         </node>
+        <node concept="2J_scn" id="7wWbCzYFscj" role="2J_sx6">
+          <node concept="2J_sxW" id="7wWbCzYFsck" role="2J_sdT" />
+          <node concept="2J_swZ" id="7wWbCzYKk$n" role="2J_sdT">
+            <property role="2J_sxC" value="4" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3ZW7eb" id="5wcZjhOWEpM" role="lGtFl">
@@ -221,6 +230,145 @@
   <node concept="KZc4b" id="5wcZjhOWEre">
     <property role="TrG5h" value="FIGURES" />
     <property role="KZc57" value="/Users/fac2003/Documents/Workflow_Doc/figures" />
+  </node>
+  <node concept="2$rMIF" id="7wWbCzYoDIy">
+    <node concept="2$rEH5" id="7wWbCzYoDIz" role="2$rEHq" />
+    <node concept="3ZW7eb" id="7wWbCzYoDJf" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="NewWorkflow" />
+      <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
+    </node>
+  </node>
+  <node concept="2$rMIF" id="7wWbCzYoG60">
+    <property role="TrG5h" value="InputData" />
+    <node concept="1CVceo" id="7wWbCzYoG6O" role="2$L6iY">
+      <property role="TrG5h" value="" />
+      <node concept="2J_sx7" id="7wWbCzYoG6P" role="2$L62I" />
+      <node concept="3ZW7eb" id="7wWbCzYoG74" role="lGtFl">
+        <property role="2ripvU" value="1" />
+        <property role="TrG5h" value="NewInputData" />
+        <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="7wWbCzYoG61" role="2$rEHq" />
+  </node>
+  <node concept="2$rMIF" id="7wWbCzYoG8D">
+    <property role="TrG5h" value="InputDataExamples" />
+    <node concept="1CVceo" id="7wWbCzYoG8E" role="2$L6iY">
+      <property role="TrG5h" value="integer values" />
+      <node concept="2J_sx7" id="7wWbCzYoG8F" role="2$L62I">
+        <node concept="2J_swZ" id="7wWbCzYoGWq" role="2J_sx6">
+          <property role="2J_sxC" value="1" />
+        </node>
+        <node concept="2J_swZ" id="7wWbCzYoGWW" role="2J_sx6">
+          <property role="2J_sxC" value="2" />
+        </node>
+        <node concept="2J_swZ" id="7wWbCzYoGY5" role="2J_sx6">
+          <property role="2J_sxC" value="3" />
+        </node>
+        <node concept="2J_swZ" id="7wWbCzYoGZi" role="2J_sx6">
+          <property role="2J_sxC" value="4" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="7wWbCzYoH1Y" role="2$L6iY">
+      <property role="TrG5h" value="string values" />
+      <node concept="2J_sx7" id="7wWbCzYoH1Z" role="2$L62I">
+        <node concept="2J_g7P" id="7wWbCzYoHi0" role="2J_sx6">
+          <property role="2J_vQ8" value="hello" />
+        </node>
+        <node concept="2J_g7P" id="7wWbCzYoHjG" role="2J_sx6">
+          <property role="2J_vQ8" value="world" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="7wWbCzYCMMV" role="2$L6iY">
+      <property role="TrG5h" value="boolean values" />
+      <node concept="2J_sx7" id="7wWbCzYCMMW" role="2$L62I">
+        <node concept="2J_sxW" id="7wWbCzYCOni" role="2J_sx6">
+          <property role="2J_sxN" value="true" />
+        </node>
+        <node concept="2J_sxW" id="7wWbCzYCOtm" role="2J_sx6" />
+        <node concept="2J_sxW" id="7wWbCzYCOzC" role="2J_sx6" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="7wWbCzYoHn7" role="2$L6iY">
+      <property role="TrG5h" value="list values" />
+      <node concept="2J_sx7" id="7wWbCzYoHn8" role="2$L62I">
+        <node concept="2J_sx7" id="7wWbCzYoHY5" role="2J_sx6">
+          <node concept="2J_swZ" id="7wWbCzYpuGL" role="2J_sx6">
+            <property role="2J_sxC" value="1" />
+          </node>
+          <node concept="2J_swZ" id="7wWbCzYpuJ9" role="2J_sx6">
+            <property role="2J_sxC" value="2" />
+          </node>
+          <node concept="2J_swZ" id="7wWbCzYpuNn" role="2J_sx6">
+            <property role="2J_sxC" value="3" />
+          </node>
+        </node>
+        <node concept="2J_sx7" id="7wWbCzYoHZJ" role="2J_sx6">
+          <node concept="2J_swZ" id="7wWbCzYpuRJ" role="2J_sx6">
+            <property role="2J_sxC" value="21" />
+          </node>
+          <node concept="2J_swZ" id="7wWbCzYpv0m" role="2J_sx6">
+            <property role="2J_sxC" value="4" />
+          </node>
+        </node>
+        <node concept="2J_sx7" id="7wWbCzYpuEQ" role="2J_sx6">
+          <node concept="2J_swZ" id="7wWbCzYpv5r" role="2J_sx6">
+            <property role="2J_sxC" value="1" />
+          </node>
+          <node concept="2J_swZ" id="7wWbCzYpv8w" role="2J_sx6">
+            <property role="2J_sxC" value="5" />
+          </node>
+          <node concept="2J_swZ" id="7wWbCzYpvdQ" role="2J_sx6">
+            <property role="2J_sxC" value="6" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="7wWbCzYpvvC" role="2$L6iY">
+      <property role="TrG5h" value="tuple values" />
+      <node concept="2J_sx7" id="7wWbCzYpvvD" role="2$L62I">
+        <node concept="2J_scn" id="7wWbCzYwB7V" role="2J_sx6">
+          <node concept="2J_sxW" id="7wWbCzYyI2$" role="2J_sdT">
+            <property role="2J_sxN" value="true" />
+          </node>
+          <node concept="2J_sxW" id="7wWbCzYyIb_" role="2J_sdT">
+            <property role="2J_sxN" value="true" />
+          </node>
+          <node concept="2J_swZ" id="7wWbCzYyIlK" role="2J_sdT">
+            <property role="2J_sxC" value="12" />
+          </node>
+        </node>
+        <node concept="2J_scn" id="7wWbCzYCMCt" role="2J_sx6">
+          <node concept="2J_sxW" id="7wWbCzYCMCu" role="2J_sdT" />
+          <node concept="2J_sxW" id="7wWbCzYCMCv" role="2J_sdT" />
+          <node concept="2J_swZ" id="7wWbCzYCMCw" role="2J_sdT">
+            <property role="2J_sxC" value="45" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="7wWbCzYCOYV" role="2$L6iY">
+      <property role="TrG5h" value="file paths" />
+      <node concept="2J_sx7" id="7wWbCzYCOYW" role="2$L62I">
+        <node concept="2J_rk5" id="7wWbCzYCQzt" role="2J_sx6">
+          <property role="2J_rkp" value="1.txt" />
+        </node>
+        <node concept="2J_rk5" id="7wWbCzYCQJP" role="2J_sx6">
+          <property role="2J_rkp" value="2.txt" />
+        </node>
+        <node concept="2J_rk5" id="7wWbCzYCRae" role="2J_sx6">
+          <property role="2J_rkp" value="/bin/cat" />
+        </node>
+      </node>
+    </node>
+    <node concept="3ZW7eb" id="7wWbCzYCOPZ" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="ExamplesOfInputData" />
+      <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
+    </node>
   </node>
 </model>
 
