@@ -370,5 +370,19 @@
       <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
     </node>
   </node>
+  <node concept="2$rMIF" id="7wWbCzYVUxD">
+    <node concept="2$rEH5" id="7wWbCzYVUxE" role="2$rEHq">
+      <node concept="3ZW7eb" id="7wWbCzYVUxJ" role="lGtFl">
+        <property role="2ripvU" value="1" />
+        <property role="TrG5h" value="NewProcessReference" />
+        <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
+      </node>
+    </node>
+    <node concept="19SGf9" id="7wWbCzYVUxF" role="GZ$AB">
+      <node concept="19SUe$" id="7wWbCzYVUxG" role="19SJt6">
+        <property role="19SUeA" value="New process reference" />
+      </node>
+    </node>
+  </node>
 </model>
 
