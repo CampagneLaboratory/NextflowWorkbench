@@ -22,7 +22,6 @@ import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 import jetbrains.mps.internal.collections.runtime.ITranslator2;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.generator.template.TemplateQueryContext;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
@@ -108,8 +107,7 @@ public class QueriesGenerated {
   public static SNode sourceNodeQuery_5076706242462689989(final SourceSubstituteMacroNodeContext _context) {
     return BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x450368d90ce15bc3L, 0x4ed4d318133c80ceL, "type")), "virtual_getJavaType_1213877337345", new Object[]{});
   }
-  public static SNode sourceNodeQuery_4055039245245913334(final SourceSubstituteMacroNodeContext _context) {
-
+  public static SNode sourceNodeQuery_6004877973590147755(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, 0x169c268b6bd1c62fL, "closure"));
   }
   public static Iterable<SNode> sourceNodesQuery_5772540756690217673(final SourceSubstituteMacroNodesContext _context) {
@@ -204,48 +202,6 @@ public class QueriesGenerated {
   }
   public static Iterable<SNode> sourceNodesQuery_8584871179160222277(final SourceSubstituteMacroNodesContext _context) {
     return SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6fc5345L, "org.campagnelab.workflow.structure.InputValue"), false, new SAbstractConcept[]{});
-  }
-  public static Object insertMacro_varValue_4565753524567455400(final TemplateQueryContext _context) {
-    SNode currentWorkflow = SNodeOperations.as(_context.getOriginalCopiedInputNode(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, "org.campagnelab.workflow.structure.Workflow"), false, false)), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, "org.campagnelab.workflow.structure.Workflow"));
-
-    StringBuffer buff = new StringBuffer();
-    buff.append("\'" + ListSequence.fromList(SNodeOperations.getNodeDescendants(currentWorkflow, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.Closurefunction"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
-      public boolean accept(SNode closure) {
-        return SNodeOperations.getIndexInParent(closure) == SNodeOperations.getIndexInParent(_context.getNode()) & SPropertyOperations.hasValue(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(closure, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, "org.campagnelab.workflow.structure.InputChannel"), false, false), MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, 0x7426d6fa2ae487c7L, "connectedTo")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, "org.campagnelab.workflow.structure.InputChannel"), false, false), MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, 0x7426d6fa2ae487c7L, "connectedTo")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-      }
-    }).where(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return (SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, 0x169c268b6bd1c62fL, "closure")) != null);
-      }
-    }).select(new ISelector<SNode, SNode>() {
-      public SNode select(SNode it) {
-        return SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, 0x169c268b6bd1c62fL, "closure"));
-      }
-    }) + "\'");
-    System.out.print(buff);
-
-    return buff;
-  }
-  public static Object insertMacro_varValue_4565753524567363989(final TemplateQueryContext _context) {
-    SNode currentWorkflow = SNodeOperations.as(_context.getOriginalCopiedInputNode(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, "org.campagnelab.workflow.structure.Workflow"), false, false)), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, "org.campagnelab.workflow.structure.Workflow"));
-
-    StringBuffer buff = new StringBuffer();
-    buff.append("\'" + ListSequence.fromList(SNodeOperations.getNodeDescendants(currentWorkflow, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.Closurefunction"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
-      public boolean accept(SNode closure) {
-        return SNodeOperations.getIndexInParent(closure) == SNodeOperations.getIndexInParent(_context.getNode()) & SPropertyOperations.hasValue(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(closure, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, "org.campagnelab.workflow.structure.InputChannel"), false, false), MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, 0x7426d6fa2ae487c7L, "connectedTo")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, "org.campagnelab.workflow.structure.InputChannel"), false, false), MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, 0x7426d6fa2ae487c7L, "connectedTo")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-      }
-    }).where(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return (SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, 0x169c268b6bd1c62fL, "closure")) != null);
-      }
-    }).select(new ISelector<SNode, SNode>() {
-      public SNode select(SNode it) {
-        return SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, 0x169c268b6bd1c62fL, "closure"));
-      }
-    }) + "\'");
-    System.out.print(buff);
-
-    return buff;
   }
   protected static Logger LOG = LogManager.getLogger(QueriesGenerated.class);
 }

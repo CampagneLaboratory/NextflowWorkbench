@@ -127,7 +127,7 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 55:
         return Collections.<ConceptEditor>singletonList(new NoArgFunction_Editor());
       case 56:
-        return Collections.<ConceptEditor>singletonList(new OutChannelContainerRef_Editor());
+        return Arrays.asList(new ConceptEditor[]{new OutChannelContainerRef_Editor(), new OutChannelContainerRef_Editor()});
       case 57:
         return Collections.<ConceptEditor>singletonList(new OutputChannel_Editor());
       case 58:

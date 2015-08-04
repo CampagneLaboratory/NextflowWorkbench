@@ -98,7 +98,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -182,7 +182,7 @@
         <child id="1233922432965" name="operation" index="1bwxVq" />
         <child id="1234526822589" name="function" index="1Jy66y" />
       </concept>
-      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" index="1bwezc" />
+      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" stub="3147100357551177019" index="1bwezc" />
       <concept id="1233924848298" name="jetbrains.mps.lang.textGen.structure.OperationCall" flags="ng" index="1bDJIP">
         <reference id="1234190664409" name="function" index="1rvKf6" />
         <child id="1234191323697" name="parameter" index="1ryhcI" />
@@ -2002,8 +2002,8 @@
           </node>
           <node concept="2OqwBi" id="759DxHIOMLU" role="2GsD0m">
             <node concept="117lpO" id="759DxHIOMI8" role="2Oq$k0" />
-            <node concept="3Tsc0h" id="759DxHIONhS" role="2OqNvi">
-              <ref role="3TtcxE" to="iowz:59canFOdI$K" />
+            <node concept="3TrEf2" id="652tBboLbIe" role="2OqNvi">
+              <ref role="3Tt5mk" to="iowz:59canFOdI$K" />
             </node>
           </node>
         </node>
@@ -2928,7 +2928,7 @@
                   </node>
                 </node>
                 <node concept="la8eA" id="4afugyzuEYN" role="lcghm">
-                  <property role="lacIc" value=" -&gt;" />
+                  <property role="lacIc" value=" -&gt; " />
                 </node>
               </node>
               <node concept="3cpWs8" id="2Q5Qdqji$LW" role="3cqZAp">
