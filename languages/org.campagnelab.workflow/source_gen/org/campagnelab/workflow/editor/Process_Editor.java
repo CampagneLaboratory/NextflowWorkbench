@@ -60,7 +60,7 @@ public class Process_Editor extends DefaultNodeEditor {
     EditorCell_Image editorCell;
     {
       Language language = (Language) node.getConcept().getLanguage().getSourceModule();
-      String filename = MacrosFactory.forModule(language).expandPath("${module}/icons/ProcessIcon-2.png");
+      String filename = MacrosFactory.forModule(language).expandPath("${module}/icons/ProcessIcon-5.png");
       editorCell = EditorCell_Image.createImageCell(editorContext, node, filename);
     }
     editorCell.setCellId("Image_grok3i_b0");
