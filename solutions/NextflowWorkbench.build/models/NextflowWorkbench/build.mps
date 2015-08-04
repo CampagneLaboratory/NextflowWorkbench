@@ -643,6 +643,12 @@
             <ref role="3bR37D" node="6eMkF2c4Sia" resolve="org.campagnelab.workflow.configuration" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1WG1fjcFvnk" role="3bR37C">
+          <node concept="3bR9La" id="1WG1fjcFvnl" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1B2iUhm3bS8" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -734,6 +740,9 @@
         </node>
         <node concept="3LEDTy" id="dhtvqDS6Ck" role="3LEDUa">
           <ref role="3LEDTV" node="1B2iUhm3bS8" resolve="org.campagnelab.util.files" />
+        </node>
+        <node concept="3LEDTy" id="1WG1fjcFvoi" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
         </node>
       </node>
     </node>

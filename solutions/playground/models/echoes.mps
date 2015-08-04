@@ -422,13 +422,7 @@
     <node concept="3Y$Zt1" id="6xlRqabySew" role="2ulM7a">
       <node concept="19SGf9" id="6xlRqabySey" role="3Y$PkS">
         <node concept="19SUe$" id="6xlRqabySez" role="19SJt6">
-          <property role="19SUeA" value="cat " />
-        </node>
-        <node concept="3YE7tV" id="6xlRqabNCd2" role="19SJt6">
-          <ref role="3YE7sm" node="6xlRqabySdm" resolve="stringToEcho" />
-        </node>
-        <node concept="19SUe$" id="6xlRqabNCd1" role="19SJt6">
-          <property role="19SUeA" value=" &gt; fileWithEcho" />
+          <property role="19SUeA" value="cat  &gt; fileWithEcho" />
         </node>
       </node>
     </node>
