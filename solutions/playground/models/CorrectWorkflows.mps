@@ -121,6 +121,11 @@
       <concept id="7950630069016304693" name="org.campagnelab.workflow.structure.Spread" flags="ng" index="25Xfp">
         <child id="5549485059544867695" name="array" index="hwtwH" />
       </concept>
+      <concept id="1507192853074074200" name="org.campagnelab.workflow.structure.NonBooleanOption" flags="ng" index="3_$mM">
+        <child id="1507192853074108942" name="option" index="3_ZR$" />
+      </concept>
+      <concept id="1507192853074120212" name="org.campagnelab.workflow.structure.QualityHeader" flags="ng" index="3_L7Y" />
+      <concept id="1507192853074120154" name="org.campagnelab.workflow.structure.ReadHeader" flags="ng" index="3_L8K" />
       <concept id="748852418098455525" name="org.campagnelab.workflow.structure.NameInAChannelRef" flags="ng" index="2b_LqF">
         <reference id="748852418098455526" name="value" index="2b_LqC" />
       </concept>
@@ -132,6 +137,9 @@
       </concept>
       <concept id="4228287401235053592" name="org.campagnelab.workflow.structure.Charset" flags="ng" index="ksxz_">
         <property id="248997709128149602" name="charset" index="3x3bhU" />
+      </concept>
+      <concept id="4228287401235033580" name="org.campagnelab.workflow.structure.Record" flags="ng" index="ks$$h">
+        <child id="248997709181630394" name="option" index="3ARaAy" />
       </concept>
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
@@ -186,6 +194,7 @@
       <concept id="1101938165420579332" name="org.campagnelab.workflow.structure.Take" flags="ng" index="1t70jC">
         <child id="5549485059546653507" name="n" index="hBxw1" />
       </concept>
+      <concept id="1101938165422420400" name="org.campagnelab.workflow.structure.SplitFastq" flags="ng" index="1te2Xs" />
       <concept id="1101938165422228847" name="org.campagnelab.workflow.structure.SplitCSV" flags="ng" index="1teHI3" />
       <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
@@ -880,11 +889,36 @@
         <property role="TrG5h" value="" />
       </node>
     </node>
+    <node concept="2$rEH5" id="1jEBYCnnM9R" role="2$rEHq">
+      <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
+      <node concept="1uYdA0" id="1jEBYCnnMa_" role="1uLvPH">
+        <ref role="1uK_4X" node="1jEBYCnnLPE" resolve="pathsCopy" />
+        <node concept="1te2Xs" id="6rc3Z5N$I2G" role="1ylr64">
+          <node concept="ks$$h" id="6rc3Z5N$I4L" role="3hXsJg">
+            <node concept="3_$mM" id="6rc3Z5N$I6r" role="3ARaAy">
+              <node concept="3_L8K" id="6rc3Z5N$I6R" role="3_ZR$" />
+              <node concept="3_L7Y" id="6rc3Z5N$I7D" role="3_ZR$" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1uLkD0" id="1jEBYCnnMaA" role="1uLvPA">
+        <property role="TrG5h" value="" />
+      </node>
+    </node>
     <node concept="1CVceo" id="3EHTfOJ135G" role="2$L6iY">
       <property role="TrG5h" value="paths" />
       <node concept="2J_sx7" id="3EHTfOJ135H" role="2$L62I">
         <node concept="2J_rk5" id="3EHTfOJ137C" role="2J_sx6">
           <property role="2J_rkp" value="path1" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="1jEBYCnnLPE" role="2$L6iY">
+      <property role="TrG5h" value="pathsCopy" />
+      <node concept="2J_sx7" id="1jEBYCnnLPF" role="2$L62I">
+        <node concept="2J_rk5" id="1jEBYCnnM4w" role="2J_sx6">
+          <property role="2J_rkp" value="path" />
         </node>
       </node>
     </node>

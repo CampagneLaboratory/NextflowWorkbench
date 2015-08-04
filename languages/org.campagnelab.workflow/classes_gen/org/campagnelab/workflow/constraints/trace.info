@@ -16,7 +16,93 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,195,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
+      <unit at="10,0,205,0" name="org.campagnelab.workflow.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/1507192853074121692">
+    <file name="SplitFastqRecordFields_Constraints.java">
+      <node id="1507192853074121692" at="16,47,17,98" concept="12" />
+      <node id="1507192853074121692" at="20,43,21,16" concept="7" />
+      <node id="1507192853074121692" at="24,200,25,96" concept="6" />
+      <node id="1507192853074121692" at="25,96,26,0" concept="9" />
+      <node id="1507192853074121692" at="27,51,28,67" concept="2" />
+      <node id="1507192853074121692" at="29,5,30,0" concept="9" />
+      <node id="1507192853074121692" at="30,0,31,18" concept="7" />
+      <node id="1507192853074122759" at="33,148,34,248" concept="7" />
+      <node id="1507192853074121692" at="36,0,37,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="1507192853074121692" at="16,0,19,0" concept="1" trace="SplitFastqRecordFields_Constraints#()V" />
+      <node id="1507192853074121692" at="26,0,29,5" concept="4" />
+      <node id="1507192853074121692" at="33,0,36,0" concept="11" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="1507192853074121692" at="19,0,23,0" concept="5" trace="hasOwnCanBeChildMethod#()Z" />
+      <node id="1507192853074121692" at="23,0,33,0" concept="5" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="1507192853074121692" at="16,47,17,98" />
+      <scope id="1507192853074121692" at="20,43,21,16" />
+      <scope id="1507192853074121692" at="27,51,28,67" />
+      <scope id="1507192853074122444" at="33,148,34,248" />
+      <scope id="1507192853074121692" at="16,0,19,0" />
+      <scope id="1507192853074121692" at="33,0,36,0">
+        <var name="childConcept" id="1507192853074121692" />
+        <var name="link" id="1507192853074121692" />
+        <var name="node" id="1507192853074121692" />
+        <var name="operationContext" id="1507192853074121692" />
+        <var name="parentNode" id="1507192853074121692" />
+      </scope>
+      <scope id="1507192853074121692" at="19,0,23,0" />
+      <scope id="1507192853074121692" at="24,200,31,18">
+        <var name="result" id="1507192853074121692" />
+      </scope>
+      <scope id="1507192853074121692" at="23,0,33,0">
+        <var name="checkingNodeContext" id="1507192853074121692" />
+        <var name="childConcept" id="1507192853074121692" />
+        <var name="link" id="1507192853074121692" />
+        <var name="node" id="1507192853074121692" />
+        <var name="operationContext" id="1507192853074121692" />
+        <var name="parentNode" id="1507192853074121692" />
+      </scope>
+      <unit id="1507192853074121692" at="15,0,38,0" name="org.campagnelab.workflow.constraints.SplitFastqRecordFields_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/1507192853074129921">
+    <file name="SplitFastaRecordFields_Constraints.java">
+      <node id="1507192853074129921" at="16,47,17,98" concept="12" />
+      <node id="1507192853074129921" at="20,43,21,16" concept="7" />
+      <node id="1507192853074129921" at="24,200,25,96" concept="6" />
+      <node id="1507192853074129921" at="25,96,26,0" concept="9" />
+      <node id="1507192853074129921" at="27,51,28,67" concept="2" />
+      <node id="1507192853074129921" at="29,5,30,0" concept="9" />
+      <node id="1507192853074129921" at="30,0,31,18" concept="7" />
+      <node id="1507192853074130238" at="33,148,34,248" concept="7" />
+      <node id="1507192853074129921" at="36,0,37,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="1507192853074129921" at="16,0,19,0" concept="1" trace="SplitFastaRecordFields_Constraints#()V" />
+      <node id="1507192853074129921" at="26,0,29,5" concept="4" />
+      <node id="1507192853074129921" at="33,0,36,0" concept="11" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="1507192853074129921" at="19,0,23,0" concept="5" trace="hasOwnCanBeChildMethod#()Z" />
+      <node id="1507192853074129921" at="23,0,33,0" concept="5" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="1507192853074129921" at="16,47,17,98" />
+      <scope id="1507192853074129921" at="20,43,21,16" />
+      <scope id="1507192853074129921" at="27,51,28,67" />
+      <scope id="1507192853074129923" at="33,148,34,248" />
+      <scope id="1507192853074129921" at="16,0,19,0" />
+      <scope id="1507192853074129921" at="33,0,36,0">
+        <var name="childConcept" id="1507192853074129921" />
+        <var name="link" id="1507192853074129921" />
+        <var name="node" id="1507192853074129921" />
+        <var name="operationContext" id="1507192853074129921" />
+        <var name="parentNode" id="1507192853074129921" />
+      </scope>
+      <scope id="1507192853074129921" at="19,0,23,0" />
+      <scope id="1507192853074129921" at="24,200,31,18">
+        <var name="result" id="1507192853074129921" />
+      </scope>
+      <scope id="1507192853074129921" at="23,0,33,0">
+        <var name="checkingNodeContext" id="1507192853074129921" />
+        <var name="childConcept" id="1507192853074129921" />
+        <var name="link" id="1507192853074129921" />
+        <var name="node" id="1507192853074129921" />
+        <var name="operationContext" id="1507192853074129921" />
+        <var name="parentNode" id="1507192853074129921" />
+      </scope>
+      <unit id="1507192853074129921" at="15,0,38,0" name="org.campagnelab.workflow.constraints.SplitFastaRecordFields_Constraints" />
     </file>
   </root>
   <root nodeRef="r:3b9cc781-1b4b-4721-bc9c-ddd61f544bf1(org.campagnelab.workflow.constraints)/177205552212758053">

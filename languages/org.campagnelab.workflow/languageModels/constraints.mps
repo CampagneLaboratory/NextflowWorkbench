@@ -72,7 +72,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -210,6 +210,7 @@
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -1895,6 +1896,56 @@
             </node>
             <node concept="35c_gC" id="dOBxzyNuUD" role="3uHU7w">
               <ref role="35c_gD" to="iowz:3aOvEIt8rqk" resolve="NewIntegerLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1jEBYCnvpfs">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions.recordOptions.recordFields" />
+    <ref role="1M2myG" to="iowz:1jEBYCnvoYF" resolve="SplitFastqRecordFields" />
+    <node concept="nKS2y" id="1jEBYCnvprb" role="1MLUbF">
+      <node concept="3clFbS" id="1jEBYCnvprc" role="2VODD2">
+        <node concept="3clFbF" id="1jEBYCnvpw7" role="3cqZAp">
+          <node concept="3clFbC" id="1jEBYCnvqro" role="3clFbG">
+            <node concept="35c_gC" id="1jEBYCnvqxb" role="3uHU7w">
+              <ref role="35c_gD" to="iowz:XaRILisJ6K" resolve="SplitFastq" />
+            </node>
+            <node concept="2OqwBi" id="1jEBYCnvqf7" role="3uHU7B">
+              <node concept="2OqwBi" id="1jEBYCnvpV6" role="2Oq$k0">
+                <node concept="2OqwBi" id="1jEBYCnvpzG" role="2Oq$k0">
+                  <node concept="nLn13" id="1jEBYCnvpw6" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="1jEBYCnvpJI" role="2OqNvi" />
+                </node>
+                <node concept="1mfA1w" id="1jEBYCnvq5Z" role="2OqNvi" />
+              </node>
+              <node concept="2yIwOk" id="1jEBYCnvqnL" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1jEBYCnvrg1">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions.recordOptions.recordFields" />
+    <ref role="1M2myG" to="iowz:1jEBYCnvqGY" resolve="SplitFastaRecordFields" />
+    <node concept="nKS2y" id="1jEBYCnvrg2" role="1MLUbF">
+      <node concept="3clFbS" id="1jEBYCnvrg3" role="2VODD2">
+        <node concept="3clFbF" id="1jEBYCnvrkY" role="3cqZAp">
+          <node concept="3clFbC" id="1jEBYCnvs7u" role="3clFbG">
+            <node concept="35c_gC" id="1jEBYCnvsdh" role="3uHU7w">
+              <ref role="35c_gD" to="iowz:XaRILisH5y" resolve="SplitFasta" />
+            </node>
+            <node concept="2OqwBi" id="1jEBYCnvrVd" role="3uHU7B">
+              <node concept="2OqwBi" id="1jEBYCnvrDC" role="2Oq$k0">
+                <node concept="2OqwBi" id="1jEBYCnvroz" role="2Oq$k0">
+                  <node concept="nLn13" id="1jEBYCnvrkX" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="1jEBYCnvrwG" role="2OqNvi" />
+                </node>
+                <node concept="1mfA1w" id="1jEBYCnvrM5" role="2OqNvi" />
+              </node>
+              <node concept="2yIwOk" id="1jEBYCnvs3R" role="2OqNvi" />
             </node>
           </node>
         </node>
