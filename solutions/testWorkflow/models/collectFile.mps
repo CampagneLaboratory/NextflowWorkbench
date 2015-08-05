@@ -56,10 +56,6 @@
       <concept id="9145969939518178826" name="org.campagnelab.workflow.structure.CollectFile" flags="ng" index="2_zckT">
         <child id="9145969939518479896" name="parameters" index="2_yPOF" />
       </concept>
-      <concept id="8055765297242645187" name="org.campagnelab.workflow.structure.Sort" flags="ng" index="BQJ4o">
-        <child id="8055765297244923319" name="sortParameter" index="BY3pG" />
-      </concept>
-      <concept id="8055765297244333520" name="org.campagnelab.workflow.structure.SortIndex" flags="ng" index="BSjob" />
       <concept id="3653684473245040478" name="org.campagnelab.workflow.structure.NewStringLiteral" flags="ng" index="2J_g7P">
         <property id="3653684473245041443" name="value" index="2J_vQ8" />
       </concept>
@@ -82,10 +78,6 @@
       <concept id="3857878650533842792" name="org.campagnelab.workflow.structure.Flatten" flags="ng" index="1yaZXp" />
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
-      </concept>
-      <concept id="6744285848802440958" name="org.campagnelab.workflow.structure.OutputDirectory" flags="ng" index="1O2bb1" />
-      <concept id="6744285848799741411" name="org.campagnelab.workflow.structure.Newline" flags="ng" index="1OZS7s">
-        <property id="6744285848799741778" name="boolValue" index="1OZSdH" />
       </concept>
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
@@ -148,32 +140,6 @@
         <node concept="1yaZXp" id="71QPUOF$9q2" role="1ylr64" />
       </node>
     </node>
-    <node concept="2$rEH5" id="2VBNKJVuJci" role="2$rEHq">
-      <ref role="2$rEH4" node="7VH0NfrxObQ" resolve="MyFile" />
-      <node concept="1uYdA0" id="2VBNKJVuJil" role="1uLvPH">
-        <ref role="1uK_4X" node="61ZqhN45gsP" resolve="duplicate" />
-        <node concept="2_zckT" id="2VBNKJVuO2$" role="1ylr64">
-          <node concept="2_yPE3" id="7MtdJW5ts0z" role="2_yPOF">
-            <property role="TrG5h" value="Result_our.txt" />
-          </node>
-          <node concept="1OZS7s" id="1a2GXkERfJj" role="2_yPOF">
-            <property role="1OZSdH" value="true" />
-          </node>
-          <node concept="2_yQF2" id="2VBNKJVuOrA" role="2_yPOF">
-            <property role="TrG5h" value="This is a new header" />
-          </node>
-          <node concept="1O2bb1" id="2VBNKJVuO$0" role="2_yPOF">
-            <property role="TrG5h" value="/Users/williamdigan" />
-          </node>
-          <node concept="BQJ4o" id="6ZbOXH8h_cg" role="2_yPOF">
-            <node concept="BSjob" id="3mXhy$YpkT7" role="BY3pG" />
-          </node>
-        </node>
-      </node>
-      <node concept="1uLkD0" id="2VBNKJVuNfT" role="1uLvPA">
-        <property role="TrG5h" value="lawawi" />
-      </node>
-    </node>
     <node concept="1CVceo" id="1m6aGq9bdYF" role="2$L6iY">
       <property role="TrG5h" value="newChannel" />
       <node concept="2J_sx7" id="1m6aGq9bdYG" role="2$L62I">
@@ -216,7 +182,7 @@
       </node>
     </node>
     <node concept="1CVceo" id="5h9rZfh0RW9" role="2$L6iY">
-      <property role="TrG5h" value="empty" />
+      <property role="TrG5h" value="stringChannel" />
       <node concept="2J_sx7" id="5h9rZfh0RWa" role="2$L62I">
         <node concept="2J_g7P" id="5h9rZfh0T$Z" role="2J_sx6">
           <property role="2J_vQ8" value="aa" />
@@ -269,6 +235,10 @@
           <property role="2J_sxC" value="21" />
         </node>
       </node>
+    </node>
+    <node concept="1CVceo" id="102fhRFx9fA" role="2$L6iY">
+      <property role="TrG5h" value="empty" />
+      <node concept="2J_sx7" id="102fhRFx9fB" role="2$L62I" />
     </node>
   </node>
   <node concept="2ulcR8" id="2hwCr1MjRuG">
