@@ -22,6 +22,16 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
+  <dependency className="org.campagnelab.workflow.constraints.Closurefunction_Constraints" file="Closurefunction_Constraints.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
   <dependency className="org.campagnelab.workflow.constraints.Collate_Constraints" file="Collate_Constraints.java">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
@@ -45,6 +55,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.BaseLanguageScriptAdapter_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.BooleanChannel_Constraints" />
+    <classNode dependClassName="org.campagnelab.workflow.constraints.Closurefunction_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.Collate_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.FileChannel_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.FileListChannel_Constraints" />
