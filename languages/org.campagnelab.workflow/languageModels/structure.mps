@@ -21,8 +21,8 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
-    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -1211,6 +1211,7 @@
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="Range" />
     <property role="34LRSv" value="range" />
+    <property role="R4oN_" value="Range literal" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyj" id="3aOvEIt8t9J" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1229,7 +1230,7 @@
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="NewStringLiteral" />
     <property role="34LRSv" value="&quot;" />
-    <property role="R4oN_" value="string literal" />
+    <property role="R4oN_" value="String literal" />
     <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
     <node concept="1TJgyi" id="3aOvEIt8ocz" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -1260,6 +1261,7 @@
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="NewFileLiteral" />
     <property role="34LRSv" value="file" />
+    <property role="R4oN_" value="File path literal" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyi" id="3aOvEIt8sIM" role="1TKVEl">
       <property role="TrG5h" value="path" />
@@ -1270,6 +1272,7 @@
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="NewIntegerLiteral" />
     <property role="34LRSv" value="integer" />
+    <property role="R4oN_" value="Integer literal" />
     <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
     <node concept="1TJgyi" id="3aOvEIt8rr3" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -1293,6 +1296,7 @@
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="NewBooleanLiteral" />
     <property role="34LRSv" value="boolean" />
+    <property role="R4oN_" value="Boolean literal" />
     <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
     <node concept="1TJgyi" id="3aOvEIt8rro" role="1TKVEl">
       <property role="TrG5h" value="value" />
