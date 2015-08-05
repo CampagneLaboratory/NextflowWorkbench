@@ -1317,7 +1317,7 @@
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
     <property role="TrG5h" value="First" />
     <property role="34LRSv" value="first" />
-    <property role="R4oN_" value="Returns the first item emitted by the source channel, or the first item that matches a condition" />
+    <property role="R4oN_" value="Return the first item or the first item that matches a condition from a source channel" />
     <ref role="1TJDcQ" node="1qs9CHFOmDW" resolve="ArgRegexQualifierPredicate" />
   </node>
   <node concept="1TIwiD" id="XaRILis0lI">
@@ -1551,6 +1551,7 @@
     <property role="3GE5qa" value="channelFunctions.withChannelRef" />
     <property role="34LRSv" value="mix" />
     <property role="TrG5h" value="Mix" />
+    <property role="R4oN_" value="Items emitted by two or more channels will be combine with the source channel" />
     <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeIaW">
@@ -1571,7 +1572,7 @@
     <property role="3GE5qa" value="channelFunctions.withChannelRef" />
     <property role="TrG5h" value="Tap" />
     <property role="34LRSv" value="tap" />
-    <property role="R4oN_" value="it connects two channels, copying the values from the source into the tapped channel. " />
+    <property role="R4oN_" value="Copy values from the source channel into the tapped channel" />
     <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcO3d">
@@ -1646,7 +1647,7 @@
     <property role="3GE5qa" value="channelFunctions.literalFunctions" />
     <property role="TrG5h" value="Spread" />
     <property role="34LRSv" value="spread" />
-    <property role="R4oN_" value="Conbine items emitted by a source channel with all value in an array" />
+    <property role="R4oN_" value="Combine items emitted by a source channel with all value in an array" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
     <node concept="1TJgyj" id="4O3IO9swAdJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1684,6 +1685,7 @@
     <property role="3GE5qa" value="channelFunctions.withChannelRef" />
     <property role="TrG5h" value="Concat" />
     <property role="34LRSv" value="concat" />
+    <property role="R4oN_" value="Items emitted by two or more channels will be concatanate with the source channel" />
     <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeGXs">
