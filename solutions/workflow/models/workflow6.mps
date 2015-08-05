@@ -7,8 +7,8 @@
     <use id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration" version="-1" />
   </languages>
   <imports>
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -124,13 +124,13 @@
           <property role="19SUeA" value="echo &quot;&quot;&quot;&#10;#!/usr/bin/env Rscript&#10;library(biomaRt);&#10;args=(commandArgs(TRUE));&#10;#need to use simple cote&#10;if(length(args)==0){&#10;    print('No arguments supplied.')&#10;&#10;mart &lt;- useMart('ensembl',dataset='hsapiens_gene_ensembl');&#10;}else{&#10;for(i in 1:length(args)){eval(parse(text=args[[i]]))}&#10;mart &lt;- useMart('ensembl',dataset=mydataset);&#10;}&#10;&#10;path&lt;-paste('" />
         </node>
         <node concept="3YE7tV" id="75jmBOYk6i9" role="19SJt6">
-          <ref role="3YE7sm" node="75jmBOYk5Vc" resolve="idsList" />
+          <ref role="3YE7sm" node="5UkDK45hL_c" resolve="idsList" />
         </node>
         <node concept="19SUe$" id="75jmBOYk6ia" role="19SJt6">
           <property role="19SUeA" value=".R_fasta.fasta',sep='');&#10;sequence&lt;-getSequence(id='" />
         </node>
         <node concept="3YE7tV" id="75jmBOYk6a9" role="19SJt6">
-          <ref role="3YE7sm" node="75jmBOYk5Vc" resolve="idsList" />
+          <ref role="3YE7sm" node="5UkDK45hL_c" resolve="idsList" />
         </node>
         <node concept="19SUe$" id="75jmBOYk6a8" role="19SJt6">
           <property role="19SUeA" value="',type='ensembl_gene_id',seqType='cdna',mart=mart);&#10;exportFASTA(sequence,file=path);&#10;#exportFASTA(getSequence(id='',type='ensembl_gene_id',seqType='cdna',mart=mart),file='!{idsList}_fasta.fasta'); &quot;&quot;&quot;&gt;!{idsList}.R &#10;" />
@@ -154,13 +154,13 @@
           <property role="19SUeA" value="echo &quot;#!/usr/bin/env Rscript&quot;&gt;MyRScript.R&#10;echo &quot;library(biomaRt);&quot;&gt;&gt;MyRScript.R&#10;&#10;echo &quot;mart &lt;- useMart(&quot;ensembl&quot;,dataset=&quot;hsapiens_gene_ensembl&quot;) &quot;&gt;&gt;MyRScript.R&#10;echo &quot;path&lt;-paste(getwd(),&quot;/" />
         </node>
         <node concept="3YE7tV" id="4vJs_UWM9nV" role="19SJt6">
-          <ref role="3YE7sm" node="4vJs_UWM9o0" resolve="idsList" />
+          <ref role="3YE7sm" node="5UkDK45hLK9" resolve="idsList" />
         </node>
         <node concept="19SUe$" id="4vJs_UWM9nW" role="19SJt6">
           <property role="19SUeA" value="_fasta.fasta&quot;,sep=&quot;&quot;)  &quot;&gt;&gt;MyRScript.R&#10;echo &quot;sequence&lt;-getSequence(id=&quot;" />
         </node>
         <node concept="3YE7tV" id="4vJs_UWM9nX" role="19SJt6">
-          <ref role="3YE7sm" node="4vJs_UWM9o0" resolve="idsList" />
+          <ref role="3YE7sm" node="5UkDK45hLK9" resolve="idsList" />
         </node>
         <node concept="19SUe$" id="4vJs_UWM9nY" role="19SJt6">
           <property role="19SUeA" value="&quot;,type=&quot;ensembl_gene_id&quot;,seqType=&quot;cdna&quot;,mart=mart) &quot;&gt;&gt;MyRScript.R&#10;echo &quot;exportFASTA(sequence,file=path) &quot;&gt;&gt;MyRScript.R&#10;echo &quot;#exportFASTA(getSequence(id=&quot;&quot;,type=&quot;ensembl_gene_id&quot;,seqType=&quot;cdna&quot;,mart=mart),file=&quot;!{idsList}_fasta.fasta&quot;) &quot;&gt;&gt;MyRScript.R &#10;" />

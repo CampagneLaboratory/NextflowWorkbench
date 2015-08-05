@@ -6028,5 +6028,32 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="61ZqhN4nHP$">
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <ref role="13h7C2" to="iowz:7VH0Nfrp_AK" resolve="FileName" />
+    <node concept="13hLZK" id="61ZqhN4nHP_" role="13h7CW">
+      <node concept="3clFbS" id="61ZqhN4nHPA" role="2VODD2">
+        <node concept="3clFbH" id="61ZqhN4nVBW" role="3cqZAp" />
+        <node concept="3clFbF" id="61ZqhN4nINn" role="3cqZAp">
+          <node concept="37vLTI" id="61ZqhN4nVvp" role="3clFbG">
+            <node concept="3cpWs3" id="61ZqhN4nY$h" role="37vLTx">
+              <node concept="Xl_RD" id="61ZqhN4nYGg" role="3uHU7w">
+                <property role="Xl_RC" value=".txt" />
+              </node>
+              <node concept="Xl_RD" id="61ZqhN4nVyP" role="3uHU7B">
+                <property role="Xl_RC" value="Result" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="61ZqhN4nKjr" role="37vLTJ">
+              <node concept="13iPFW" id="61ZqhN4nINm" role="2Oq$k0" />
+              <node concept="3TrcHB" id="61ZqhN4nUDd" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

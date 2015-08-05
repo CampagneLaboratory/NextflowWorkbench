@@ -4572,5 +4572,29 @@
       <ref role="1YaFvo" to="iowz:6TmjYLGgpKP" resolve="Spread" />
     </node>
   </node>
+  <node concept="1YbPZF" id="61ZqhN4whgY">
+    <property role="TrG5h" value="typeof_CollectFile" />
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <node concept="3clFbS" id="61ZqhN4whgZ" role="18ibNy">
+      <node concept="1Z5TYs" id="61ZqhN4whH8" role="3cqZAp">
+        <node concept="mw_s8" id="61ZqhN4whHe" role="1ZfhK$">
+          <node concept="1Z2H0r" id="61ZqhN4whHf" role="mwGJk">
+            <node concept="1YBJjd" id="61ZqhN4wirL" role="1Z2MuG">
+              <ref role="1YBMHb" node="61ZqhN4whh1" resolve="collectFile" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="61ZqhN4wkih" role="1ZfhKB">
+          <node concept="2c44tf" id="61ZqhN4wkjd" role="mwGJk">
+            <node concept="3UtRaE" id="61ZqhN4wkje" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="61ZqhN4whh1" role="1YuTPh">
+      <property role="TrG5h" value="collectFile" />
+      <ref role="1YaFvo" to="iowz:7VH0Nfrosoa" resolve="CollectFile" />
+    </node>
+  </node>
 </model>
 
