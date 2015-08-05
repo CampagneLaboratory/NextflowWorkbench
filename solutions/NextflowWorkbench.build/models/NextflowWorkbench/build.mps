@@ -744,19 +744,22 @@
         <node concept="3LEDTy" id="1WG1fjcFvoi" role="3LEDUa">
           <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
         </node>
+        <node concept="3LEDTy" id="1D3_UgeC9KH" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+        </node>
       </node>
       <node concept="1E1JtA" id="1WG1fjcGJ1r" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="Samples" />
+        <property role="TrG5h" value="org.campagnelab.workflow.Samples" />
         <property role="3LESm3" value="8f30b27b-57ec-411a-9ffa-0c6f223dcf72" />
         <property role="2GAjPV" value="false" />
         <node concept="55IIr" id="1WG1fjcGJ1u" role="3LF7KH">
           <node concept="2Ry0Ak" id="1WG1fjcGJxS" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="1WG1fjcGJ$r" role="2Ry0An">
-              <property role="2Ry0Am" value="Samples" />
-              <node concept="2Ry0Ak" id="1WG1fjcGJAY" role="2Ry0An">
-                <property role="2Ry0Am" value="Samples.msd" />
+              <property role="2Ry0Am" value="org.campagnelab.workflow.Samples" />
+              <node concept="2Ry0Ak" id="1D3_UgeC9Ie" role="2Ry0An">
+                <property role="2Ry0Am" value="org.campagnelab.workflow.Samples.msd" />
               </node>
             </node>
           </node>

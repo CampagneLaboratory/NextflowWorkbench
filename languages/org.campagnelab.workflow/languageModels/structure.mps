@@ -132,7 +132,7 @@
     <node concept="1TJgyj" id="5D7AjvYaj9H" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="processes" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5D7AjvYaj9M" resolve="ProcessRef" />
     </node>
     <node concept="1TJgyj" id="5HJ0QzxBRcw" role="1TKVEi">
@@ -1211,6 +1211,7 @@
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="Range" />
     <property role="34LRSv" value="range" />
+    <property role="R4oN_" value="Range literal" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyj" id="3aOvEIt8t9J" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1229,7 +1230,7 @@
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="NewStringLiteral" />
     <property role="34LRSv" value="&quot;" />
-    <property role="R4oN_" value="string literal" />
+    <property role="R4oN_" value="String literal" />
     <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
     <node concept="1TJgyi" id="3aOvEIt8ocz" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -1260,6 +1261,7 @@
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="NewFileLiteral" />
     <property role="34LRSv" value="file" />
+    <property role="R4oN_" value="File path literal" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyi" id="3aOvEIt8sIM" role="1TKVEl">
       <property role="TrG5h" value="path" />
@@ -1270,6 +1272,7 @@
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="NewIntegerLiteral" />
     <property role="34LRSv" value="integer" />
+    <property role="R4oN_" value="Integer literal" />
     <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
     <node concept="1TJgyi" id="3aOvEIt8rr3" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -1293,6 +1296,7 @@
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="NewBooleanLiteral" />
     <property role="34LRSv" value="boolean" />
+    <property role="R4oN_" value="Boolean literal" />
     <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
     <node concept="1TJgyi" id="3aOvEIt8rro" role="1TKVEl">
       <property role="TrG5h" value="value" />
