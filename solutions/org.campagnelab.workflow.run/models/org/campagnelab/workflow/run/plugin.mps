@@ -116,6 +116,7 @@
         <child id="6129022259108579262" name="executePart" index="3rFUVV" />
       </concept>
       <concept id="856705193941281792" name="jetbrains.mps.execution.commands.structure.ReportErrorStatement" flags="nn" index="2LYoNl">
+        <child id="856705193941281796" name="exception" index="2LYoNh" />
         <child id="856705193941281795" name="message" index="2LYoNm" />
       </concept>
       <concept id="8478830098674460022" name="jetbrains.mps.execution.commands.structure.DebuggerSettingsCommandParameterDeclaration" flags="ng" index="VMRTV" />
@@ -1639,66 +1640,64 @@
                   </node>
                 </node>
               </node>
-              <node concept="SfApY" id="16M54outo0v" role="3cqZAp">
-                <node concept="3clFbS" id="16M54outo0x" role="SfCbr">
-                  <node concept="3clFbF" id="5HJ0QzzlaPZ" role="3cqZAp">
-                    <node concept="2YIFZM" id="5HJ0QzzlaQ0" role="3clFbG">
-                      <ref role="37wK5l" to="qgx3:3FOZ2RY2537" resolve="createDistributionPackage" />
-                      <ref role="1Pybhc" to="qgx3:3FOZ2RXSWlV" resolve="JarManager" />
-                      <node concept="2ShNRf" id="5HJ0QzzlMB7" role="37wK5m">
-                        <node concept="1pGfFk" id="5HJ0QzzlMB6" role="2ShVmc">
-                          <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                          <node concept="37vLTw" id="28S3GatEpbD" role="37wK5m">
-                            <ref role="3cqZAo" node="28S3GatEby6" resolve="classesGenPath" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="5HJ0QzzlaQ7" role="37wK5m">
-                        <property role="Xl_RC" value="generated" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="16M54ouuvjD" role="3cqZAp">
-                    <node concept="37vLTI" id="16M54ouuwpk" role="3clFbG">
-                      <node concept="37vLTw" id="nhsmU5H9vZ" role="37vLTJ">
-                        <ref role="3cqZAo" node="nhsmU5H9cc" resolve="jarPath" />
-                      </node>
-                      <node concept="3cpWs3" id="16M54ouuwXI" role="37vLTx">
-                        <node concept="Xl_RD" id="16M54ouuxaC" role="3uHU7w">
-                          <property role="Xl_RC" value="generated.jar" />
-                        </node>
-                        <node concept="3cpWs3" id="28S3GatErV5" role="3uHU7B">
-                          <node concept="10M0yZ" id="28S3GatEsih" role="3uHU7w">
-                            <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
-                            <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
-                          </node>
-                          <node concept="37vLTw" id="28S3GatErwz" role="3uHU7B">
-                            <ref role="3cqZAo" node="28S3GatEby6" resolve="classesGenPath" />
-                          </node>
-                        </node>
-                      </node>
+            </node>
+          </node>
+        </node>
+        <node concept="SfApY" id="16M54outo0v" role="3cqZAp">
+          <node concept="3clFbS" id="16M54outo0x" role="SfCbr">
+            <node concept="3clFbF" id="5HJ0QzzlaPZ" role="3cqZAp">
+              <node concept="2YIFZM" id="5HJ0QzzlaQ0" role="3clFbG">
+                <ref role="1Pybhc" to="qgx3:3FOZ2RXSWlV" resolve="JarManager" />
+                <ref role="37wK5l" to="qgx3:3FOZ2RY2537" resolve="createDistributionPackage" />
+                <node concept="2ShNRf" id="5HJ0QzzlMB7" role="37wK5m">
+                  <node concept="1pGfFk" id="5HJ0QzzlMB6" role="2ShVmc">
+                    <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                    <node concept="37vLTw" id="28S3GatEpbD" role="37wK5m">
+                      <ref role="3cqZAo" node="28S3GatEby6" resolve="classesGenPath" />
                     </node>
                   </node>
                 </node>
-                <node concept="TDmWw" id="16M54outo0y" role="TEbGg">
-                  <node concept="3cpWsn" id="16M54outo0$" role="TDEfY">
-                    <property role="TrG5h" value="e" />
-                    <node concept="3uibUv" id="16M54outoCa" role="1tU5fm">
-                      <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                <node concept="Xl_RD" id="5HJ0QzzlaQ7" role="37wK5m">
+                  <property role="Xl_RC" value="generated" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="16M54ouuvjD" role="3cqZAp">
+              <node concept="37vLTI" id="16M54ouuwpk" role="3clFbG">
+                <node concept="37vLTw" id="nhsmU5H9vZ" role="37vLTJ">
+                  <ref role="3cqZAo" node="nhsmU5H9cc" resolve="jarPath" />
+                </node>
+                <node concept="3cpWs3" id="16M54ouuwXI" role="37vLTx">
+                  <node concept="Xl_RD" id="16M54ouuxaC" role="3uHU7w">
+                    <property role="Xl_RC" value="generated.jar" />
+                  </node>
+                  <node concept="3cpWs3" id="28S3GatErV5" role="3uHU7B">
+                    <node concept="10M0yZ" id="28S3GatEsih" role="3uHU7w">
+                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                      <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                    </node>
+                    <node concept="37vLTw" id="28S3GatErwz" role="3uHU7B">
+                      <ref role="3cqZAo" node="28S3GatEby6" resolve="classesGenPath" />
                     </node>
                   </node>
-                  <node concept="3clFbS" id="16M54outo0C" role="TDEfX">
-                    <node concept="34ab3g" id="16M54outoQX" role="3cqZAp">
-                      <property role="35gtTG" value="error" />
-                      <property role="34fQS0" value="true" />
-                      <node concept="Xl_RD" id="16M54outoQZ" role="34bqiv">
-                        <property role="Xl_RC" value="Unable to assemble generated.jar" />
-                      </node>
-                      <node concept="37vLTw" id="16M54outoR1" role="34bMjA">
-                        <ref role="3cqZAo" node="16M54outo0$" resolve="e" />
-                      </node>
-                    </node>
-                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="16M54outo0y" role="TEbGg">
+            <node concept="3cpWsn" id="16M54outo0$" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="16M54outoCa" role="1tU5fm">
+                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="16M54outo0C" role="TDEfX">
+              <node concept="2LYoGF" id="566CxCqa_Ka" role="3cqZAp">
+                <node concept="Xl_RD" id="16M54outoQZ" role="2LYoNm">
+                  <property role="Xl_RC" value="Unable to assemble generated.jar" />
+                </node>
+                <node concept="37vLTw" id="566CxCqdkbg" role="2LYoNh">
+                  <ref role="3cqZAo" node="16M54outo0$" resolve="e" />
                 </node>
               </node>
             </node>
@@ -3226,7 +3225,16 @@
                     <ref role="3uigEE" to="53gy:~CancellationException" resolve="CancellationException" />
                   </node>
                 </node>
-                <node concept="3clFbS" id="5$YFgXYVhnE" role="TDEfX" />
+                <node concept="3clFbS" id="5$YFgXYVhnE" role="TDEfX">
+                  <node concept="34ab3g" id="566CxCqgcTR" role="3cqZAp">
+                    <property role="35gtTG" value="error" />
+                    <property role="34fQS0" value="true" />
+                    <node concept="Xl_RD" id="566CxCqgcTT" role="34bqiv" />
+                    <node concept="37vLTw" id="566CxCqgcTV" role="34bMjA">
+                      <ref role="3cqZAo" node="5$YFgXYVhnC" resolve="ignore" />
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="TDmWw" id="5$YFgXYVhnF" role="TEbGg">
                 <node concept="3cpWsn" id="5$YFgXYVhnG" role="TDEfY">
@@ -3235,7 +3243,16 @@
                     <ref role="3uigEE" to="e2lb:~InterruptedException" resolve="InterruptedException" />
                   </node>
                 </node>
-                <node concept="3clFbS" id="5$YFgXYVhnI" role="TDEfX" />
+                <node concept="3clFbS" id="5$YFgXYVhnI" role="TDEfX">
+                  <node concept="34ab3g" id="566CxCqgdtO" role="3cqZAp">
+                    <property role="35gtTG" value="error" />
+                    <property role="34fQS0" value="true" />
+                    <node concept="Xl_RD" id="566CxCqgdtP" role="34bqiv" />
+                    <node concept="37vLTw" id="566CxCqgdtQ" role="34bMjA">
+                      <ref role="3cqZAo" node="5$YFgXYVhnG" resolve="ignore" />
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="TDmWw" id="5$YFgXYVhnJ" role="TEbGg">
                 <node concept="3cpWsn" id="5$YFgXYVhnK" role="TDEfY">
@@ -3244,7 +3261,16 @@
                     <ref role="3uigEE" to="53gy:~ExecutionException" resolve="ExecutionException" />
                   </node>
                 </node>
-                <node concept="3clFbS" id="5$YFgXYVhnM" role="TDEfX" />
+                <node concept="3clFbS" id="5$YFgXYVhnM" role="TDEfX">
+                  <node concept="34ab3g" id="566CxCqgdDN" role="3cqZAp">
+                    <property role="35gtTG" value="error" />
+                    <property role="34fQS0" value="true" />
+                    <node concept="Xl_RD" id="566CxCqgdDO" role="34bqiv" />
+                    <node concept="37vLTw" id="566CxCqgdDP" role="34bMjA">
+                      <ref role="3cqZAo" node="5$YFgXYVhnK" resolve="ignore" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="3cpWs6" id="5$YFgXYVhnN" role="3cqZAp">
