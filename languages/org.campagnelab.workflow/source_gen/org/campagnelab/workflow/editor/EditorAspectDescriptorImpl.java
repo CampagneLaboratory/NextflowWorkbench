@@ -45,13 +45,13 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 14:
         return Collections.<ConceptEditor>singletonList(new Charset_Editor());
       case 15:
-        return Collections.<ConceptEditor>singletonList(new Collate_Editor());
+        return Collections.<ConceptEditor>singletonList(new ClosureLiteralWorkFlow_Editor());
       case 16:
-        return Collections.<ConceptEditor>singletonList(new CollateAllowIncompleteTuples_Editor());
+        return Collections.<ConceptEditor>singletonList(new Collate_Editor());
       case 17:
-        return Collections.<ConceptEditor>singletonList(new CollateStepSize_Editor());
+        return Collections.<ConceptEditor>singletonList(new CollateAllowIncompleteTuples_Editor());
       case 18:
-        return Collections.<ConceptEditor>singletonList(new CollectFile_Editor());
+        return Collections.<ConceptEditor>singletonList(new CollateStepSize_Editor());
       case 19:
         return Collections.<ConceptEditor>singletonList(new ConditionalExpressionText_Editor());
       case 20:
@@ -143,100 +143,96 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 63:
         return Collections.<ConceptEditor>singletonList(new NewTupleLiteral_Editor());
       case 64:
-        return Collections.<ConceptEditor>singletonList(new Newline_Editor());
-      case 65:
         return Collections.<ConceptEditor>singletonList(new NoArgFunction_Editor());
-      case 66:
+      case 65:
         return Collections.<ConceptEditor>singletonList(new NonBooleanOption_Editor());
-      case 67:
+      case 66:
         return Collections.<ConceptEditor>singletonList(new OutChannelContainerRef_Editor());
-      case 68:
+      case 67:
         return Collections.<ConceptEditor>singletonList(new OutputChannel_Editor());
-      case 69:
+      case 68:
         return Collections.<ConceptEditor>singletonList(new OutputExpression_Editor());
-      case 70:
-        return Collections.<ConceptEditor>singletonList(new ParamatersWithName_Editor());
-      case 71:
+      case 69:
         return Collections.<ConceptEditor>singletonList(new Phase_Editor());
-      case 72:
+      case 70:
         return Collections.<ConceptEditor>singletonList(new Process_Editor());
-      case 73:
+      case 71:
         return Collections.<ConceptEditor>singletonList(new ProcessInput_Editor());
-      case 74:
+      case 72:
         return Collections.<ConceptEditor>singletonList(new ProcessInputOutput_Editor());
-      case 75:
+      case 73:
         return Collections.<ConceptEditor>singletonList(new ProcessOutput_Editor());
-      case 76:
+      case 74:
         return Collections.<ConceptEditor>singletonList(new ProcessRef_Editor());
-      case 77:
+      case 75:
         return Collections.<ConceptEditor>singletonList(new Range_Editor());
-      case 78:
+      case 76:
         return Collections.<ConceptEditor>singletonList(new RangeOfCharLiterals_Editor());
-      case 79:
+      case 77:
         return Collections.<ConceptEditor>singletonList(new RangeOfIntegerLiterals_Editor());
-      case 80:
+      case 78:
         return Collections.<ConceptEditor>singletonList(new Record_Editor());
-      case 81:
+      case 79:
         return Collections.<ConceptEditor>singletonList(new Reduce_Editor());
-      case 82:
+      case 80:
         return Collections.<ConceptEditor>singletonList(new Report_Editor());
-      case 83:
+      case 81:
         return Collections.<ConceptEditor>singletonList(new RichScript_Editor());
-      case 84:
+      case 82:
         return Collections.<ConceptEditor>singletonList(new ScriptBooleanArgs_Editor());
-      case 85:
+      case 83:
         return Collections.<ConceptEditor>singletonList(new ScriptIntegerArgs_Editor());
-      case 86:
+      case 84:
         return Collections.<ConceptEditor>singletonList(new ScriptListArgs_Editor());
-      case 87:
+      case 85:
         return Collections.<ConceptEditor>singletonList(new ScriptStringArgs_Editor());
-      case 88:
+      case 86:
         return Collections.<ConceptEditor>singletonList(new Sep_Editor());
-      case 89:
+      case 87:
         return Collections.<ConceptEditor>singletonList(new Skip_Editor());
-      case 90:
+      case 88:
         return Collections.<ConceptEditor>singletonList(new SplitFastaRecordFields_Editor());
-      case 91:
+      case 89:
         return Collections.<ConceptEditor>singletonList(new SplitFastqRecordFields_Editor());
-      case 92:
+      case 90:
         return Collections.<ConceptEditor>singletonList(new SplitFunction_Editor());
-      case 93:
+      case 91:
         return Collections.<ConceptEditor>singletonList(new Spread_Editor());
-      case 94:
+      case 92:
         return Collections.<ConceptEditor>singletonList(new String_Editor());
-      case 95:
+      case 93:
         return Collections.<ConceptEditor>singletonList(new StringChannel_Editor());
-      case 96:
+      case 94:
         return Collections.<ConceptEditor>singletonList(new StringElement_Editor());
-      case 97:
+      case 95:
         return Collections.<ConceptEditor>singletonList(new StringInitializer_Editor());
-      case 98:
+      case 96:
         return Collections.<ConceptEditor>singletonList(new StringLiteral_Editor());
-      case 99:
+      case 97:
         return Collections.<ConceptEditor>singletonList(new StringLiteralList_Editor());
-      case 100:
+      case 98:
         return Collections.<ConceptEditor>singletonList(new StringLiteralTuple_Editor());
-      case 101:
+      case 99:
         return Collections.<ConceptEditor>singletonList(new Strip_Editor());
-      case 102:
+      case 100:
         return Collections.<ConceptEditor>singletonList(new Take_Editor());
-      case 103:
+      case 101:
         return Collections.<ConceptEditor>singletonList(new Tuple_Editor());
-      case 104:
+      case 102:
         return Collections.<ConceptEditor>singletonList(new TupleChannel_Editor());
-      case 105:
+      case 103:
         return Collections.<ConceptEditor>singletonList(new TupleElement_Editor());
-      case 106:
+      case 104:
         return Collections.<ConceptEditor>singletonList(new TupleInitializer_Editor());
-      case 107:
+      case 105:
         return Collections.<ConceptEditor>singletonList(new TupleListLiteral_Editor());
-      case 108:
+      case 106:
         return Collections.<ConceptEditor>singletonList(new TupleLiteral_Editor());
-      case 109:
+      case 107:
         return Collections.<ConceptEditor>singletonList(new TupleType_Editor());
-      case 110:
+      case 108:
         return Collections.<ConceptEditor>singletonList(new ValueInAChannelRef_Editor());
-      case 111:
+      case 109:
         return Collections.<ConceptEditor>singletonList(new Workflow_Editor());
       default:
     }
@@ -247,5 +243,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.workflow.structure.ArgRegexLiteralQualifierPredicate", "org.campagnelab.workflow.structure.ArgRegexQualifierPredicate", "org.campagnelab.workflow.structure.BaseLanguageScriptAdapter", "org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.BooleanChannel", "org.campagnelab.workflow.structure.BooleanElement", "org.campagnelab.workflow.structure.BooleanInitializer", "org.campagnelab.workflow.structure.BooleanLiteral", "org.campagnelab.workflow.structure.BooleanLiteralList", "org.campagnelab.workflow.structure.BooleanLiteralTuple", "org.campagnelab.workflow.structure.BooleanRecordOption", "org.campagnelab.workflow.structure.By", "org.campagnelab.workflow.structure.ChannelFunctionWithChannelRef", "org.campagnelab.workflow.structure.ChannelType", "org.campagnelab.workflow.structure.Charset", "org.campagnelab.workflow.structure.Collate", "org.campagnelab.workflow.structure.CollateAllowIncompleteTuples", "org.campagnelab.workflow.structure.CollateStepSize", "org.campagnelab.workflow.structure.CollectFile", "org.campagnelab.workflow.structure.ConditionalExpressionText", "org.campagnelab.workflow.structure.ConditionalVariableRef", "org.campagnelab.workflow.structure.Decompress", "org.campagnelab.workflow.structure.Elem", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.FileChannel", "org.campagnelab.workflow.structure.FileInitializer", "org.campagnelab.workflow.structure.FileList", "org.campagnelab.workflow.structure.FileListChannel", "org.campagnelab.workflow.structure.FileListInitializer", "org.campagnelab.workflow.structure.FileLiteralList", "org.campagnelab.workflow.structure.FileLiteralTuple", "org.campagnelab.workflow.structure.FilePath", "org.campagnelab.workflow.structure.FileSplitOption", "org.campagnelab.workflow.structure.FunctionWithClosure", "org.campagnelab.workflow.structure.FunctionWithClosureAndChannelRefs", "org.campagnelab.workflow.structure.GlobalChannel", "org.campagnelab.workflow.structure.GroupTuple", "org.campagnelab.workflow.structure.Header", "org.campagnelab.workflow.structure.HiddenTypeVarDeclaration", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.InputFromBaseLanguageScript", "org.campagnelab.workflow.structure.InputValue", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.IntegerChannel", "org.campagnelab.workflow.structure.IntegerElement", "org.campagnelab.workflow.structure.IntegerInitializer", "org.campagnelab.workflow.structure.IntegerLiteral", "org.campagnelab.workflow.structure.IntegerLiteralList", "org.campagnelab.workflow.structure.IntegerLiteralTuple", "org.campagnelab.workflow.structure.Limit", "org.campagnelab.workflow.structure.List", "org.campagnelab.workflow.structure.ListChannel", "org.campagnelab.workflow.structure.ListElement", "org.campagnelab.workflow.structure.ListInitializer", "org.campagnelab.workflow.structure.ListLiteral", "org.campagnelab.workflow.structure.ListLiteralTuple", "org.campagnelab.workflow.structure.NameInAChannelRef", "org.campagnelab.workflow.structure.NewBooleanLiteral", "org.campagnelab.workflow.structure.NewChannelInitializerExpression", "org.campagnelab.workflow.structure.NewFileLiteral", "org.campagnelab.workflow.structure.NewIntegerLiteral", "org.campagnelab.workflow.structure.NewListLiteral", "org.campagnelab.workflow.structure.NewStringLiteral", "org.campagnelab.workflow.structure.NewTupleLiteral", "org.campagnelab.workflow.structure.Newline", "org.campagnelab.workflow.structure.NoArgFunction", "org.campagnelab.workflow.structure.NonBooleanOption", "org.campagnelab.workflow.structure.OutChannelContainerRef", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.OutputExpression", "org.campagnelab.workflow.structure.ParamatersWithName", "org.campagnelab.workflow.structure.Phase", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessInput", "org.campagnelab.workflow.structure.ProcessInputOutput", "org.campagnelab.workflow.structure.ProcessOutput", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.Range", "org.campagnelab.workflow.structure.RangeOfCharLiterals", "org.campagnelab.workflow.structure.RangeOfIntegerLiterals", "org.campagnelab.workflow.structure.Record", "org.campagnelab.workflow.structure.Reduce", "org.campagnelab.workflow.structure.Report", "org.campagnelab.workflow.structure.RichScript", "org.campagnelab.workflow.structure.ScriptBooleanArgs", "org.campagnelab.workflow.structure.ScriptIntegerArgs", "org.campagnelab.workflow.structure.ScriptListArgs", "org.campagnelab.workflow.structure.ScriptStringArgs", "org.campagnelab.workflow.structure.Sep", "org.campagnelab.workflow.structure.Skip", "org.campagnelab.workflow.structure.SplitFastaRecordFields", "org.campagnelab.workflow.structure.SplitFastqRecordFields", "org.campagnelab.workflow.structure.SplitFunction", "org.campagnelab.workflow.structure.Spread", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.StringChannel", "org.campagnelab.workflow.structure.StringElement", "org.campagnelab.workflow.structure.StringInitializer", "org.campagnelab.workflow.structure.StringLiteral", "org.campagnelab.workflow.structure.StringLiteralList", "org.campagnelab.workflow.structure.StringLiteralTuple", "org.campagnelab.workflow.structure.Strip", "org.campagnelab.workflow.structure.Take", "org.campagnelab.workflow.structure.Tuple", "org.campagnelab.workflow.structure.TupleChannel", "org.campagnelab.workflow.structure.TupleElement", "org.campagnelab.workflow.structure.TupleInitializer", "org.campagnelab.workflow.structure.TupleListLiteral", "org.campagnelab.workflow.structure.TupleLiteral", "org.campagnelab.workflow.structure.TupleType", "org.campagnelab.workflow.structure.ValueInAChannelRef", "org.campagnelab.workflow.structure.Workflow"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.workflow.structure.ArgRegexLiteralQualifierPredicate", "org.campagnelab.workflow.structure.ArgRegexQualifierPredicate", "org.campagnelab.workflow.structure.BaseLanguageScriptAdapter", "org.campagnelab.workflow.structure.Boolean", "org.campagnelab.workflow.structure.BooleanChannel", "org.campagnelab.workflow.structure.BooleanElement", "org.campagnelab.workflow.structure.BooleanInitializer", "org.campagnelab.workflow.structure.BooleanLiteral", "org.campagnelab.workflow.structure.BooleanLiteralList", "org.campagnelab.workflow.structure.BooleanLiteralTuple", "org.campagnelab.workflow.structure.BooleanRecordOption", "org.campagnelab.workflow.structure.By", "org.campagnelab.workflow.structure.ChannelFunctionWithChannelRef", "org.campagnelab.workflow.structure.ChannelType", "org.campagnelab.workflow.structure.Charset", "org.campagnelab.workflow.structure.ClosureLiteralWorkFlow", "org.campagnelab.workflow.structure.Collate", "org.campagnelab.workflow.structure.CollateAllowIncompleteTuples", "org.campagnelab.workflow.structure.CollateStepSize", "org.campagnelab.workflow.structure.ConditionalExpressionText", "org.campagnelab.workflow.structure.ConditionalVariableRef", "org.campagnelab.workflow.structure.Decompress", "org.campagnelab.workflow.structure.Elem", "org.campagnelab.workflow.structure.File", "org.campagnelab.workflow.structure.FileChannel", "org.campagnelab.workflow.structure.FileInitializer", "org.campagnelab.workflow.structure.FileList", "org.campagnelab.workflow.structure.FileListChannel", "org.campagnelab.workflow.structure.FileListInitializer", "org.campagnelab.workflow.structure.FileLiteralList", "org.campagnelab.workflow.structure.FileLiteralTuple", "org.campagnelab.workflow.structure.FilePath", "org.campagnelab.workflow.structure.FileSplitOption", "org.campagnelab.workflow.structure.FunctionWithClosure", "org.campagnelab.workflow.structure.FunctionWithClosureAndChannelRefs", "org.campagnelab.workflow.structure.GlobalChannel", "org.campagnelab.workflow.structure.GroupTuple", "org.campagnelab.workflow.structure.Header", "org.campagnelab.workflow.structure.HiddenTypeVarDeclaration", "org.campagnelab.workflow.structure.InputChannel", "org.campagnelab.workflow.structure.InputFromBaseLanguageScript", "org.campagnelab.workflow.structure.InputValue", "org.campagnelab.workflow.structure.Integer", "org.campagnelab.workflow.structure.IntegerChannel", "org.campagnelab.workflow.structure.IntegerElement", "org.campagnelab.workflow.structure.IntegerInitializer", "org.campagnelab.workflow.structure.IntegerLiteral", "org.campagnelab.workflow.structure.IntegerLiteralList", "org.campagnelab.workflow.structure.IntegerLiteralTuple", "org.campagnelab.workflow.structure.Limit", "org.campagnelab.workflow.structure.List", "org.campagnelab.workflow.structure.ListChannel", "org.campagnelab.workflow.structure.ListElement", "org.campagnelab.workflow.structure.ListInitializer", "org.campagnelab.workflow.structure.ListLiteral", "org.campagnelab.workflow.structure.ListLiteralTuple", "org.campagnelab.workflow.structure.NameInAChannelRef", "org.campagnelab.workflow.structure.NewBooleanLiteral", "org.campagnelab.workflow.structure.NewChannelInitializerExpression", "org.campagnelab.workflow.structure.NewFileLiteral", "org.campagnelab.workflow.structure.NewIntegerLiteral", "org.campagnelab.workflow.structure.NewListLiteral", "org.campagnelab.workflow.structure.NewStringLiteral", "org.campagnelab.workflow.structure.NewTupleLiteral", "org.campagnelab.workflow.structure.NoArgFunction", "org.campagnelab.workflow.structure.NonBooleanOption", "org.campagnelab.workflow.structure.OutChannelContainerRef", "org.campagnelab.workflow.structure.OutputChannel", "org.campagnelab.workflow.structure.OutputExpression", "org.campagnelab.workflow.structure.Phase", "org.campagnelab.workflow.structure.Process", "org.campagnelab.workflow.structure.ProcessInput", "org.campagnelab.workflow.structure.ProcessInputOutput", "org.campagnelab.workflow.structure.ProcessOutput", "org.campagnelab.workflow.structure.ProcessRef", "org.campagnelab.workflow.structure.Range", "org.campagnelab.workflow.structure.RangeOfCharLiterals", "org.campagnelab.workflow.structure.RangeOfIntegerLiterals", "org.campagnelab.workflow.structure.Record", "org.campagnelab.workflow.structure.Reduce", "org.campagnelab.workflow.structure.Report", "org.campagnelab.workflow.structure.RichScript", "org.campagnelab.workflow.structure.ScriptBooleanArgs", "org.campagnelab.workflow.structure.ScriptIntegerArgs", "org.campagnelab.workflow.structure.ScriptListArgs", "org.campagnelab.workflow.structure.ScriptStringArgs", "org.campagnelab.workflow.structure.Sep", "org.campagnelab.workflow.structure.Skip", "org.campagnelab.workflow.structure.SplitFastaRecordFields", "org.campagnelab.workflow.structure.SplitFastqRecordFields", "org.campagnelab.workflow.structure.SplitFunction", "org.campagnelab.workflow.structure.Spread", "org.campagnelab.workflow.structure.String", "org.campagnelab.workflow.structure.StringChannel", "org.campagnelab.workflow.structure.StringElement", "org.campagnelab.workflow.structure.StringInitializer", "org.campagnelab.workflow.structure.StringLiteral", "org.campagnelab.workflow.structure.StringLiteralList", "org.campagnelab.workflow.structure.StringLiteralTuple", "org.campagnelab.workflow.structure.Strip", "org.campagnelab.workflow.structure.Take", "org.campagnelab.workflow.structure.Tuple", "org.campagnelab.workflow.structure.TupleChannel", "org.campagnelab.workflow.structure.TupleElement", "org.campagnelab.workflow.structure.TupleInitializer", "org.campagnelab.workflow.structure.TupleListLiteral", "org.campagnelab.workflow.structure.TupleLiteral", "org.campagnelab.workflow.structure.TupleType", "org.campagnelab.workflow.structure.ValueInAChannelRef", "org.campagnelab.workflow.structure.Workflow"};
 }

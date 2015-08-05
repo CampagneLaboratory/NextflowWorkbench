@@ -21,8 +21,8 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -1856,7 +1856,13 @@
   <node concept="1TIwiD" id="5DC$1WkmvHE">
     <property role="TrG5h" value="ClosureLiteralWorkFlow" />
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
-    <ref role="1TJDcQ" to="tp2c:htbVj4_" resolve="ClosureLiteral" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6rO6MaAYBoU" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="closure" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp2c:htbVj4_" resolve="ClosureLiteral" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1jEBYCnvoL9">
     <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions.recordOptions.recordFields" />
@@ -1976,19 +1982,6 @@
       <ref role="20lvS9" node="1jEBYCnvm_j" resolve="RecordField" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7VH0Nfrosoa">
-    <property role="3GE5qa" value="channelFunctions.CollectFile" />
-    <property role="TrG5h" value="CollectFile" />
-    <property role="34LRSv" value="collectFile" />
-    <property role="R4oN_" value="Items emits by a source channel can be saved to one ore more files" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
-    <node concept="1TJgyj" id="7VH0Nfrp_So" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parameters" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7VH0NfrpztH" resolve="Parameters" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7VH0NfrpztH">
     <property role="3GE5qa" value="channelFunctions.CollectFile" />
     <property role="TrG5h" value="Parameters" />
@@ -1996,30 +1989,6 @@
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="parameter?" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="7VH0Nfrp_AK">
-    <property role="3GE5qa" value="channelFunctions.CollectFile" />
-    <property role="TrG5h" value="FileName" />
-    <property role="34LRSv" value="name" />
-    <property role="R4oN_" value="Name of the files where all received values are stored" />
-    <ref role="1TJDcQ" node="7VH0NfrpAAS" resolve="ParamatersWithName" />
-  </node>
-  <node concept="1TIwiD" id="7VH0NfrpAAS">
-    <property role="3GE5qa" value="channelFunctions.CollectFile" />
-    <property role="TrG5h" value="ParamatersWithName" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="7VH0NfrpztH" resolve="Parameters" />
-    <node concept="PrWs8" id="7VH0NfrpAAT" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7VH0NfrpABL">
-    <property role="3GE5qa" value="channelFunctions.CollectFile" />
-    <property role="TrG5h" value="Seed" />
-    <property role="34LRSv" value="seed" />
-    <property role="R4oN_" value="Header of your output file" />
-    <ref role="1TJDcQ" node="7VH0NfrpAAS" resolve="ParamatersWithName" />
   </node>
   <node concept="1TIwiD" id="5Qox3WDpKnz">
     <property role="3GE5qa" value="channelFunctions.CollectFile" />
@@ -2030,6 +1999,16 @@
     <node concept="1TJgyi" id="5Qox3WDpKti" role="1TKVEl">
       <property role="TrG5h" value="boolValue" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7VH0NfrpAAS">
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <property role="TrG5h" value="ParamatersWithName" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="7VH0NfrpztH" resolve="Parameters" />
+    <node concept="PrWs8" id="7VH0NfrpAAT" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="5Qox3WD$3rY">
@@ -2045,6 +2024,33 @@
     <property role="34LRSv" value="tempDir" />
     <property role="R4oN_" value="Folder where temporary files used by the collecting process, are stored" />
     <ref role="1TJDcQ" node="7VH0NfrpAAS" resolve="ParamatersWithName" />
+  </node>
+  <node concept="1TIwiD" id="7VH0NfrpABL">
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <property role="TrG5h" value="Seed" />
+    <property role="34LRSv" value="seed" />
+    <property role="R4oN_" value="Header of your output file" />
+    <ref role="1TJDcQ" node="7VH0NfrpAAS" resolve="ParamatersWithName" />
+  </node>
+  <node concept="1TIwiD" id="7VH0Nfrp_AK">
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <property role="TrG5h" value="FileName" />
+    <property role="34LRSv" value="name" />
+    <property role="R4oN_" value="Name of the files where all received values are stored" />
+    <ref role="1TJDcQ" node="7VH0NfrpAAS" resolve="ParamatersWithName" />
+  </node>
+  <node concept="1TIwiD" id="7VH0Nfrosoa">
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <property role="TrG5h" value="CollectFile" />
+    <property role="34LRSv" value="collectFile" />
+    <property role="R4oN_" value="Items emits by a source channel can be saved to one ore more files" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="7VH0Nfrp_So" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7VH0NfrpztH" resolve="Parameters" />
+    </node>
   </node>
 </model>
 
