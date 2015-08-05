@@ -1856,7 +1856,13 @@
   <node concept="1TIwiD" id="5DC$1WkmvHE">
     <property role="TrG5h" value="ClosureLiteralWorkFlow" />
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
-    <ref role="1TJDcQ" to="tp2c:htbVj4_" resolve="ClosureLiteral" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6rO6MaAYBoU" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="closure" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp2c:htbVj4_" resolve="ClosureLiteral" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1jEBYCnvoL9">
     <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions.recordOptions.recordFields" />

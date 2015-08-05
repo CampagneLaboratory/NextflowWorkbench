@@ -9,6 +9,7 @@
   <property name="org.campagnelab.goby.workbench.home" location="${basedir}/../NYoSh" />
   <property name="workbench_version" value="1.0" />
   <property name="artifacts.mps" location="${mps_home}" />
+  <property name="artifacts.mpsWorkbench" location="${mps_home}" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
   <property name="artifacts.mps-sl-all" location="${mps-richtext.location}" />
   <property name="artifacts.org.campagnelab.NYoSh" location="${org.campagnelab.goby.workbench.home}/build/artifacts/org.campagnelab.NYoSh" />
@@ -81,6 +82,7 @@
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <library jar="../../jsch-0.1.53.jar" />
+        <library jar="../../closures-runtime.jar" />
         <sources jar="org.campagnelab.workflow.run-src.jar" descriptor="org.campagnelab.workflow.run.msd" />
       </module>
     </echoxml>
@@ -280,6 +282,7 @@
     </jar>
     <zip destfile="${build.layout}/NextflowWorkbench_${workbench_version}.zip">
       <zipfileset file="${basedir}/solutions/org.campagnelab.workflow.run/jsch-0.1.53.jar" prefix="NextflowWorkbench" />
+      <zipfileset file="${basedir}/solutions/org.campagnelab.workflow.run/closures-runtime.jar" prefix="NextflowWorkbench" />
       <zipfileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext" prefix="NextflowWorkbench" includes="**/*.jar" />
       <zipfileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline" prefix="NextflowWorkbench" includes="**/*.jar" />
       <zipfileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.selection" prefix="NextflowWorkbench" includes="**/*.jar" />
@@ -481,6 +484,7 @@
         <fileset file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/lib/execution-configurations.jar" />
         <fileset file="${basedir}/solutions/org.campagnelab.workflow.run/jsch-0.1.53.jar" />
+        <fileset file="${basedir}/solutions/org.campagnelab.workflow.run/closures-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -797,6 +801,7 @@
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/lib/execution-configurations.jar" />
         <pathelement path="${build.tmp}/java/out/org.campagnelab.workflow.run" />
         <fileset file="${basedir}/solutions/org.campagnelab.workflow.run/jsch-0.1.53.jar" />
+        <fileset file="${basedir}/solutions/org.campagnelab.workflow.run/closures-runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
