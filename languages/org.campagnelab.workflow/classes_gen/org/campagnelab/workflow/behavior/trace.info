@@ -25,7 +25,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BaseLanguageScriptAdapter_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,310,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,312,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BooleanChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
@@ -77,6 +77,9 @@
     </file>
     <file name="ClosureFunctionWithChannelRef_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ClosureFunctionWithChannelRef_BehaviorDescriptor" />
+    </file>
+    <file name="ClosureLiteralWorkFlow_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ClosureLiteralWorkFlow_BehaviorDescriptor" />
     </file>
     <file name="Closurefunction_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
@@ -1495,14 +1498,16 @@
       <node id="5549485059524505818" at="30,96,31,193" concept="8" />
       <node id="9054784760962730914" at="32,126,33,21" concept="9" />
       <node id="9054784760962731428" at="35,5,36,16" concept="9" />
-      <node id="5549485059518606519" at="38,65,39,46" concept="9" />
-      <node id="9054784760962711658" at="41,66,42,51" concept="9" />
+      <node id="4094506815898841009" at="38,75,39,192" concept="9" />
+      <node id="5549485059518606519" at="41,65,42,46" concept="9" />
+      <node id="9054784760962711658" at="44,66,45,51" concept="9" />
       <node id="571300755975609337" at="15,0,18,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6344724376814420786" at="19,547,22,5" concept="6" />
       <node id="5549485059521866845" at="25,99,28,5" concept="6" />
       <node id="9054784760962708490" at="31,193,34,7" concept="6" />
-      <node id="5549485059518606519" at="38,0,41,0" concept="13" trace="eq_hirhya_a0a2a1a2#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="9054784760962711658" at="41,0,44,0" concept="13" trace="neq_hirhya_a0a2a1a2#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="571300755975609337" at="38,0,41,0" concept="13" trace="call_asValidId_4094506815898715815#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5549485059518606519" at="41,0,44,0" concept="13" trace="eq_hirhya_a0a2a1a2#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="9054784760962711658" at="44,0,47,0" concept="13" trace="neq_hirhya_a0a2a1a2#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
       <node id="571300755975609337" at="18,0,25,0" concept="13" trace="call_getProcessOutput_7391172440882835123#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="9054784760962703079" at="28,5,35,5" concept="5" />
       <node id="571300755975609337" at="25,0,38,0" concept="13" trace="call_stringAlreadyExists_9054784760962695772#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
@@ -1510,16 +1515,20 @@
       <scope id="6344724376814420788" at="20,95,21,18" />
       <scope id="5549485059521866847" at="26,43,27,19" />
       <scope id="9054784760962708491" at="32,126,33,21" />
-      <scope id="5549485059518606519" at="38,65,39,46" />
-      <scope id="9054784760962711658" at="41,66,42,51" />
+      <scope id="4094506815898715817" at="38,75,39,192" />
+      <scope id="5549485059518606519" at="41,65,42,46" />
+      <scope id="9054784760962711658" at="44,66,45,51" />
       <scope id="571300755975609337" at="15,0,18,0">
         <var name="thisNode" id="571300755975609337" />
       </scope>
-      <scope id="5549485059518606519" at="38,0,41,0">
+      <scope id="571300755975609337" at="38,0,41,0">
+        <var name="thisNode" id="571300755975609337" />
+      </scope>
+      <scope id="5549485059518606519" at="41,0,44,0">
         <var name="a" id="5549485059518606519" />
         <var name="b" id="5549485059518606519" />
       </scope>
-      <scope id="9054784760962711658" at="41,0,44,0">
+      <scope id="9054784760962711658" at="44,0,47,0">
         <var name="a" id="9054784760962711658" />
         <var name="b" id="9054784760962711658" />
       </scope>
@@ -1541,7 +1550,7 @@
         <var name="name" id="3961612237955148525" />
         <var name="thisNode" id="571300755975609337" />
       </scope>
-      <unit id="571300755975609337" at="14,0,45,0" name="org.campagnelab.workflow.behavior.OutChannelContainer_Behavior" />
+      <unit id="571300755975609337" at="14,0,48,0" name="org.campagnelab.workflow.behavior.OutChannelContainer_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/571300755975634226">

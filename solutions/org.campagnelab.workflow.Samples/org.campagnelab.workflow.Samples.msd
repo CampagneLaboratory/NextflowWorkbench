@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Samples" uuid="8f30b27b-57ec-411a-9ffa-0c6f223dcf72" compileInMPS="true">
+<solution name="org.campagnelab.workflow.Samples" uuid="8f30b27b-57ec-411a-9ffa-0c6f223dcf72" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
