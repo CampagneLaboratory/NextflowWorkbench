@@ -53,7 +53,6 @@
     <import index="yla8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.application(MPS.IDEA/com.intellij.openapi.application@java_stub)" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
-    <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -442,6 +441,10 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
+        <property id="559557797393021807" name="stereotype" index="BaGAP" />
+        <property id="559557797393017702" name="name" index="BaHAW" />
+      </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
@@ -449,9 +452,6 @@
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="8339862546319741524" name="jetbrains.mps.lang.smodel.structure.ConceptFqNameRefExpression" flags="nn" index="3nh3qo">
         <reference id="8339862546319741525" name="conceptDeclaration" index="3nh3qp" />
-      </concept>
-      <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
-        <property id="4040588429969021683" name="moduleId" index="3rM5sR" />
       </concept>
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -1750,22 +1750,20 @@
                       <node concept="2OqwBi" id="6qWs7gtRrk3" role="33vP2m">
                         <node concept="liA8E" id="6qWs7gtRrk4" role="2OqNvi">
                           <ref role="37wK5l" to="o3n2:1AfwOXhJadN" resolve="getRelativePathHelper" />
-                          <node concept="2OqwBi" id="6qWs7gtRrk5" role="37wK5m">
-                            <node concept="2OqwBi" id="6qWs7gtRrk6" role="2Oq$k0">
-                              <node concept="2OqwBi" id="6qWs7gtRrk7" role="2Oq$k0">
-                                <node concept="3rM5sP" id="6qWs7gtRrk8" role="2Oq$k0">
-                                  <property role="3rM5sR" value="c039a1a6-4680-46fa-b571-a6a5f1e49ab6" />
-                                </node>
-                                <node concept="liA8E" id="6qWs7gtRrk9" role="2OqNvi">
-                                  <ref role="37wK5l" to="88zw:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="6qWs7gtRrka" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
-                              </node>
+                          <node concept="2OqwBi" id="2RvrqSkrvWw" role="37wK5m">
+                            <node concept="2YIFZM" id="2RvrqSkrv_O" role="2Oq$k0">
+                              <ref role="1Pybhc" to="cu2c:~SModelRepository" resolve="SModelRepository" />
+                              <ref role="37wK5l" to="cu2c:~SModelRepository.getInstance():jetbrains.mps.smodel.SModelRepository" resolve="getInstance" />
                             </node>
-                            <node concept="liA8E" id="6qWs7gtRrkb" role="2OqNvi">
-                              <ref role="37wK5l" to="k7g3:~Iterator.next():java.lang.Object" resolve="next" />
+                            <node concept="liA8E" id="2RvrqSkrygB" role="2OqNvi">
+                              <ref role="37wK5l" to="cu2c:~SModelRepository.getModelDescriptor(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="getModelDescriptor" />
+                              <node concept="2OqwBi" id="2RvrqSkrI25" role="37wK5m">
+                                <node concept="BaHAS" id="2RvrqSkrHK5" role="2Oq$k0">
+                                  <property role="BaHAW" value="org.campagnelab.workflow.run.plugin" />
+                                  <property role="BaGAP" value="" />
+                                </node>
+                                <node concept="LkI2h" id="2RvrqSkrIm_" role="2OqNvi" />
+                              </node>
                             </node>
                           </node>
                         </node>
