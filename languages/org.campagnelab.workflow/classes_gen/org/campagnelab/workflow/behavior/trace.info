@@ -337,7 +337,7 @@
       <unit at="10,0,27,0" name="org.campagnelab.workflow.behavior.ProcessInputOutput_BehaviorDescriptor" />
     </file>
     <file name="ProcessInput_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ProcessInput_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.ProcessInput_BehaviorDescriptor" />
     </file>
     <file name="ProcessOutput_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ProcessOutput_BehaviorDescriptor" />
@@ -532,7 +532,7 @@
       <unit at="8,0,19,0" name="org.campagnelab.workflow.behavior.TupleType_BehaviorDescriptor" />
     </file>
     <file name="Tuple_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Tuple_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.Tuple_BehaviorDescriptor" />
     </file>
     <file name="Unique_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Unique_BehaviorDescriptor" />
@@ -551,6 +551,57 @@
     </file>
     <file name="ifEmpty_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ifEmpty_BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/1892522999309922405">
+    <file name="Tuple_Behavior.java">
+      <node id="1892522999309934641" at="16,78,17,0" concept="11" />
+      <node id="1892522999309913800" at="19,38,20,163" concept="9" />
+      <node id="1892522999309922405" at="14,0,16,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1892522999309913466" at="19,0,22,0" concept="7" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1892522999309900404" at="17,0,22,20" concept="9" />
+      <node id="1892522999309922405" at="16,0,24,0" concept="13" trace="virtual_getPresentation_1213877396640#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="1892522999309922407" at="14,43,14,43" />
+      <scope id="1892522999309913467" at="19,38,20,163" />
+      <scope id="1892522999309922405" at="14,0,16,0">
+        <var name="thisNode" id="1892522999309922405" />
+      </scope>
+      <scope id="1892522999309913466" at="19,0,22,0">
+        <var name="it" id="1892522999309913466" />
+      </scope>
+      <scope id="1892522999309897602" at="16,78,22,20" />
+      <scope id="1892522999309922405" at="16,0,24,0">
+        <var name="thisNode" id="1892522999309922405" />
+      </scope>
+      <unit id="1892522999309913466" at="18,243,22,5" name="org.campagnelab.workflow.behavior.Tuple_Behavior$1" />
+      <unit id="1892522999309922405" at="13,0,25,0" name="org.campagnelab.workflow.behavior.Tuple_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/1892522999313362909">
+    <file name="ProcessInput_Behavior.java">
+      <node id="1892522999313372248" at="15,179,16,285" concept="9" />
+      <node id="1892522999313377613" at="17,12,18,182" concept="9" />
+      <node id="1892522999313372187" at="21,52,22,44" concept="9" />
+      <node id="1892522999313362909" at="12,0,14,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1892522999313376039" at="17,10,19,5" concept="0" />
+      <node id="1892522999313372187" at="21,0,24,0" concept="13" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="1892522999313363093" at="14,78,19,5" concept="6" />
+      <node id="1892522999313362909" at="14,0,21,0" concept="13" trace="virtual_getPresentation_1213877396640#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="1892522999313362911" at="12,43,12,43" />
+      <scope id="1892522999313363094" at="15,179,16,285" />
+      <scope id="1892522999313376040" at="17,12,18,182" />
+      <scope id="1892522999313372187" at="21,52,22,44" />
+      <scope id="1892522999313362909" at="12,0,14,0">
+        <var name="thisNode" id="1892522999313362909" />
+      </scope>
+      <scope id="1892522999313372187" at="21,0,24,0">
+        <var name="str" id="1892522999313372187" />
+      </scope>
+      <scope id="1892522999313362985" at="14,78,19,5" />
+      <scope id="1892522999313362909" at="14,0,21,0">
+        <var name="thisNode" id="1892522999313362909" />
+      </scope>
+      <unit id="1892522999313362909" at="11,0,25,0" name="org.campagnelab.workflow.behavior.ProcessInput_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/2498161758010471427">
