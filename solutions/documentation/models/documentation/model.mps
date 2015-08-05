@@ -232,6 +232,7 @@
     <property role="KZc57" value="/Users/fac2003/Documents/Workflow_Doc/figures" />
   </node>
   <node concept="2$rMIF" id="7wWbCzYoDIy">
+    <property role="TrG5h" value="NewWorkflow" />
     <node concept="2$rEH5" id="7wWbCzYoDIz" role="2$rEHq" />
     <node concept="3ZW7eb" id="7wWbCzYoDJf" role="lGtFl">
       <property role="2ripvU" value="1" />
@@ -371,6 +372,7 @@
     </node>
   </node>
   <node concept="2$rMIF" id="7wWbCzYVUxD">
+    <property role="TrG5h" value="NewProcess" />
     <node concept="2$rEH5" id="7wWbCzYVUxE" role="2$rEHq">
       <node concept="3ZW7eb" id="7wWbCzYVUxJ" role="lGtFl">
         <property role="2ripvU" value="1" />

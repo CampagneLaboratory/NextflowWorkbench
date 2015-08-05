@@ -1064,7 +1064,7 @@
     </file>
   </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6446596574627776256">
-    <file name="Closurefunction_TextGen.java">
+    <file name="FunctionWithClosure_TextGen.java">
       <node id="6446596574627787289" at="15,185,16,85" concept="1" />
       <node id="6446596574627787289" at="16,85,17,24" concept="1" />
       <node id="3280266319715010816" at="18,12,19,85" concept="1" />
@@ -1104,7 +1104,7 @@
       <scope id="6446596574627776256" at="14,0,39,0">
         <var name="node" id="6446596574627776256" />
       </scope>
-      <unit id="6446596574627776256" at="13,0,40,0" name="org.campagnelab.workflow.textGen.Closurefunction_TextGen" />
+      <unit id="6446596574627776256" at="13,0,40,0" name="org.campagnelab.workflow.textGen.FunctionWithClosure_TextGen" />
     </file>
   </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6509497193194282040">

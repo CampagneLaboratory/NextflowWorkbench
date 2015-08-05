@@ -75,14 +75,8 @@
     <file name="Choice_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Choice_BehaviorDescriptor" />
     </file>
-    <file name="ClosureFunctionWithChannelRef_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.ClosureFunctionWithChannelRef_BehaviorDescriptor" />
-    </file>
     <file name="ClosureLiteralWorkFlow_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.ClosureLiteralWorkFlow_BehaviorDescriptor" />
-    </file>
-    <file name="Closurefunction_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Closurefunction_BehaviorDescriptor" />
     </file>
     <file name="CollateAllowIncompleteTuples_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.workflow.behavior.CollateAllowIncompleteTuples_BehaviorDescriptor" />
@@ -167,6 +161,12 @@
     </file>
     <file name="Flatten_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Flatten_BehaviorDescriptor" />
+    </file>
+    <file name="FunctionWithClosureAndChannelRefs_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.FunctionWithClosureAndChannelRefs_BehaviorDescriptor" />
+    </file>
+    <file name="FunctionWithClosure_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.FunctionWithClosure_BehaviorDescriptor" />
     </file>
     <file name="GlobalChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.GlobalChannel_BehaviorDescriptor" />
@@ -310,7 +310,7 @@
       <unit at="8,0,17,0" name="org.campagnelab.workflow.behavior.OneOrMoreStrings_BehaviorDescriptor" />
     </file>
     <file name="OutChannelContainerRef_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.OutChannelContainerRef_BehaviorDescriptor" />
+      <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.OutChannelContainerRef_BehaviorDescriptor" />
     </file>
     <file name="OutChannelContainer_BehaviorDescriptor.java">
       <unit at="10,0,21,0" name="org.campagnelab.workflow.behavior.OutChannelContainer_BehaviorDescriptor" />
@@ -976,6 +976,17 @@
         <var name="thisNode" id="3653684473245044751" />
       </scope>
       <unit id="3653684473245044751" at="7,0,11,0" name="org.campagnelab.workflow.behavior.NewChannelInitializerExpression_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/4010223791428440343">
+    <file name="ChannelFunctionWithChannelRef_Behavior.java">
+      <node id="4010223791428444953" at="10,43,11,169" concept="3" />
+      <node id="4010223791428440343" at="10,0,13,0" concept="13" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="4010223791428440345" at="10,43,11,169" />
+      <scope id="4010223791428440343" at="10,0,13,0">
+        <var name="thisNode" id="4010223791428440343" />
+      </scope>
+      <unit id="4010223791428440343" at="9,0,14,0" name="org.campagnelab.workflow.behavior.ChannelFunctionWithChannelRef_Behavior" />
     </file>
   </root>
   <root nodeRef="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)/4018964125401495274">

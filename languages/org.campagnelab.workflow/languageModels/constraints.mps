@@ -14,8 +14,8 @@
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1947,6 +1947,24 @@
               </node>
               <node concept="2yIwOk" id="1jEBYCnvs3R" role="2OqNvi" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3uBbkEdVkhE">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="1M2myG" to="iowz:6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
+    <node concept="nKS2y" id="3uBbkEdVkDV" role="1MLUbF">
+      <node concept="3clFbS" id="3uBbkEdVkDW" role="2VODD2">
+        <node concept="3SKdUt" id="3uBbkEdVkT8" role="3cqZAp">
+          <node concept="3SKdUq" id="3uBbkEdVkVP" role="3SKWNk">
+            <property role="3SKdUp" value="temporarily disable functions with closures and channel refs. They need review and discussion" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3uBbkEdVkIR" role="3cqZAp">
+          <node concept="3clFbT" id="3uBbkEdVkIQ" role="3clFbG">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>

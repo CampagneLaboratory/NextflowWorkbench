@@ -41,7 +41,7 @@ public class QueriesGenerated {
           }
         }) != null;
       }
-    }) || ListSequence.fromList(SNodeOperations.getNodeDescendants(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.Closurefunction"), false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
+    }) || ListSequence.fromList(SNodeOperations.getNodeDescendants(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.FunctionWithClosure"), false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode closurefct) {
         return (SLinkOperations.getTarget(closurefct, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, 0x169c268b6bd1c62fL, "closure")) != null);
       }
@@ -150,7 +150,7 @@ public class QueriesGenerated {
     SNode currentWorkflow = SNodeOperations.as(_context.getOriginalCopiedInputNode(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, "org.campagnelab.workflow.structure.Workflow"), false, false)), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, "org.campagnelab.workflow.structure.Workflow"));
 
     if (LOG.isInfoEnabled()) {
-      LOG.info("Parameter current" + ListSequence.fromList(SNodeOperations.getNodeDescendants(currentWorkflow, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.Closurefunction"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
+      LOG.info("Parameter current" + ListSequence.fromList(SNodeOperations.getNodeDescendants(currentWorkflow, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.FunctionWithClosure"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode closure) {
           return SNodeOperations.getIndexInParent(closure) == SNodeOperations.getIndexInParent(_context.getNode()) & SPropertyOperations.hasValue(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(closure, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, "org.campagnelab.workflow.structure.InputChannel"), false, false), MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, 0x7426d6fa2ae487c7L, "connectedTo")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, "org.campagnelab.workflow.structure.InputChannel"), false, false), MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, 0x7426d6fa2ae487c7L, "connectedTo")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
         }
@@ -169,7 +169,7 @@ public class QueriesGenerated {
       }));
     }
 
-    return ListSequence.fromList(SNodeOperations.getNodeDescendants(currentWorkflow, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.Closurefunction"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
+    return ListSequence.fromList(SNodeOperations.getNodeDescendants(currentWorkflow, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.FunctionWithClosure"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode closure) {
         return SNodeOperations.getIndexInParent(closure) == SNodeOperations.getIndexInParent(_context.getNode()) & SPropertyOperations.hasValue(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(closure, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, "org.campagnelab.workflow.structure.InputChannel"), false, false), MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, 0x7426d6fa2ae487c7L, "connectedTo")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, "org.campagnelab.workflow.structure.InputChannel"), false, false), MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x7426d6fa2ade0f7aL, 0x7426d6fa2ae487c7L, "connectedTo")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
       }
@@ -197,13 +197,9 @@ public class QueriesGenerated {
       }
     });
 
-    return ListSequence.fromList(SNodeOperations.getNodeDescendants(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.Closurefunction"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
-      public boolean accept(final SNode clrfct) {
-        return ListSequence.fromList(SNodeOperations.getNodeDescendants(myWorkflow, MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.Closurefunction"), false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
-          public boolean accept(SNode it) {
-            return (SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, 0x169c268b6bd1c62fL, "closure")) != null) & SNodeOperations.getIndexInParent(clrfct) == SNodeOperations.getIndexInParent(it);
-          }
-        });
+    return ListSequence.fromList(SNodeOperations.getNodeDescendants(_context.getNode(), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, "org.campagnelab.workflow.structure.FunctionWithClosure"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0xf4adeec5270056eL, 0x169c268b6bd1c62fL, "closure")) != null);
       }
     });
   }

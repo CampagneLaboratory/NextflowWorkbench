@@ -28,8 +28,13 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -37,7 +42,13 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -55,6 +66,12 @@
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -68,6 +85,9 @@
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
       <concept id="7950630069015363789" name="org.campagnelab.workflow.structure.View" flags="ng" index="2pgWx" />
+      <concept id="748852418098455525" name="org.campagnelab.workflow.structure.NameInAChannelRef" flags="ng" index="2b_LqF">
+        <reference id="748852418098455526" name="value" index="2b_LqC" />
+      </concept>
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
@@ -101,6 +121,10 @@
       <concept id="6588488528864881600" name="org.campagnelab.workflow.structure.ReportFunction" flags="ig" index="2UPiyC" />
       <concept id="6588488528864881603" name="org.campagnelab.workflow.structure.ReportParameter" flags="ng" index="2UPiyF" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
+      <concept id="6514615324151249770" name="org.campagnelab.workflow.structure.ClosureLiteralWorkFlow" flags="ng" index="1ecmHP" />
+      <concept id="1101938165422228846" name="org.campagnelab.workflow.structure.FunctionWithClosure" flags="ng" index="1teHI2">
+        <child id="1629219545452496431" name="closure" index="1Xju2$" />
+      </concept>
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
@@ -116,18 +140,56 @@
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
       </concept>
+      <concept id="8074343669091902386" name="org.campagnelab.workflow.structure.ValueInAChannelRef" flags="ng" index="3YE7tV">
+        <reference id="8074343669091902431" name="value" index="3YE7sm" />
+      </concept>
     </language>
   </registry>
   <node concept="2$rMIF" id="2hwCr1Mk2me">
-    <property role="TrG5h" value="MonWorkflowqq" />
+    <property role="TrG5h" value="ClosureExample" />
     <node concept="2$rEH5" id="1m6aGq8QnLc" role="2$rEHq">
       <ref role="2$rEH4" node="2hwCr1MjRuG" resolve="testw" />
       <node concept="1uYdA0" id="1m6aGq8QnLq" role="1uLvPH">
         <ref role="1uK_4X" node="1m6aGq9bdYF" resolve="newChannel" />
-        <node concept="2pgWx" id="4PfLmWnhvvh" role="1ylr64" />
+        <node concept="2pgWx" id="4PfLmWnhvvh" role="1ylr64">
+          <node concept="1ecmHP" id="5Ehkzh1N$RP" role="1Xju2$">
+            <node concept="37vLTG" id="5Ehkzh1N$SL" role="1bW2Oz">
+              <property role="TrG5h" value="newChannel" />
+              <node concept="10Oyi0" id="5Ehkzh1N$TA" role="1tU5fm" />
+            </node>
+            <node concept="3clFbS" id="5Ehkzh1N$TI" role="1bW5cS">
+              <node concept="3clFbF" id="5Ehkzh1NHT4" role="3cqZAp">
+                <node concept="3cpWs3" id="5Ehkzh1NI4p" role="3clFbG">
+                  <node concept="1eOMI4" id="5Ehkzh1NI70" role="3uHU7w">
+                    <node concept="3cpWs3" id="5Ehkzh1NIw7" role="1eOMHV">
+                      <node concept="3cmrfG" id="5Ehkzh1NIyi" role="3uHU7w">
+                        <property role="3cmrfH" value="1" />
+                      </node>
+                      <node concept="37vLTw" id="5Ehkzh1NIeN" role="3uHU7B">
+                        <ref role="3cqZAo" node="5Ehkzh1N$SL" resolve="newChannel" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="5Ehkzh1NHT3" role="3uHU7B">
+                    <property role="Xl_RC" value="value+1: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1uLkD0" id="1m6aGq8QnMc" role="1uLvPA">
         <property role="TrG5h" value="file" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="3uBbkEdVk3a" role="2$rEHq">
+      <ref role="2$rEH4" node="2hwCr1MjRuG" resolve="testw" />
+      <node concept="1uYdA0" id="3uBbkEdVk7R" role="1uLvPH">
+        <ref role="1uK_4X" node="5h9rZfh0RW9" resolve="empty" />
+      </node>
+      <node concept="1uLkD0" id="3uBbkEdVk7S" role="1uLvPA">
+        <property role="TrG5h" value="" />
       </node>
     </node>
     <node concept="2UNLhE" id="3x6pbm2KGj7" role="2UW718">
@@ -145,7 +207,7 @@
                 <node concept="3cpWs3" id="4FWUYVFsnLc" role="37wK5m">
                   <node concept="2UPiyF" id="4FWUYVFsnQU" role="3uHU7w" />
                   <node concept="Xl_RD" id="3x6pbm2KHW3" role="3uHU7B">
-                    <property role="Xl_RC" value="I can have both function" />
+                    <property role="Xl_RC" value="Result written to this file: " />
                   </node>
                 </node>
               </node>
@@ -260,12 +322,22 @@
     <node concept="3Y$Zt1" id="2hwCr1Mk2m6" role="2ulM7a">
       <node concept="19SGf9" id="2hwCr1Mk2m8" role="3Y$PkS">
         <node concept="19SUe$" id="2hwCr1Mk2m9" role="19SJt6">
-          <property role="19SUeA" value="echo !{mavaleur} &gt; output" />
+          <property role="19SUeA" value="echo " />
         </node>
+        <node concept="3YE7tV" id="5Ehkzh1NKP9" role="19SJt6">
+          <ref role="3YE7sm" node="2hwCr1MjYBP" resolve="value" />
+        </node>
+        <node concept="19SUe$" id="5Ehkzh1NKP8" role="19SJt6">
+          <property role="19SUeA" value=" &gt; " />
+        </node>
+        <node concept="2b_LqF" id="5Ehkzh1NKPd" role="19SJt6">
+          <ref role="2b_LqC" node="3x6pbm2KG4z" resolve="'output'" />
+        </node>
+        <node concept="19SUe$" id="5Ehkzh1NKPe" role="19SJt6" />
       </node>
     </node>
     <node concept="2mjA9o" id="2hwCr1MjYBP" role="2ulM7n">
-      <property role="TrG5h" value="mavaleur" />
+      <property role="TrG5h" value="value" />
       <node concept="1utKN4" id="2hwCr1MjYBX" role="2ybFLk" />
     </node>
   </node>

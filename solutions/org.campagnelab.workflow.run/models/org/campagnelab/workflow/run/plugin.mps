@@ -52,9 +52,9 @@
     <import index="jgti" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.execution(MPS.IDEA/com.intellij.execution@java_stub)" />
     <import index="yla8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.application(MPS.IDEA/com.intellij.openapi.application@java_stub)" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
+    <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1810,72 +1810,175 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6qWs7gtRf2m" role="3cqZAp" />
-        <node concept="3clFbJ" id="6qWs7gtRj0r" role="3cqZAp">
-          <node concept="3clFbS" id="6qWs7gtRj0s" role="3clFbx">
-            <node concept="3cpWs8" id="6qWs7gtRrjS" role="3cqZAp">
-              <node concept="3cpWsn" id="6qWs7gtRrjT" role="3cpWs9">
-                <property role="TrG5h" value="additionalLibPath" />
-                <node concept="17QB3L" id="6qWs7gtRrjU" role="1tU5fm" />
-                <node concept="10Nm6u" id="6qWs7gtRrjV" role="33vP2m" />
-              </node>
-            </node>
-            <node concept="1QHqEK" id="6qWs7gtRrjX" role="3cqZAp">
-              <node concept="1QHqEC" id="6qWs7gtRrjY" role="1QHqEI">
-                <node concept="3clFbS" id="6qWs7gtRrjZ" role="1bW5cS">
-                  <node concept="3cpWs8" id="6qWs7gtRrk0" role="3cqZAp">
-                    <node concept="3cpWsn" id="6qWs7gtRrk1" role="3cpWs9">
-                      <property role="TrG5h" value="relativePathHelper" />
-                      <node concept="3uibUv" id="6qWs7gtRrk2" role="1tU5fm">
-                        <ref role="3uigEE" to="o3n2:5iAPpylXsc4" resolve="RelativePathHelper" />
-                      </node>
-                      <node concept="2OqwBi" id="6qWs7gtRrk3" role="33vP2m">
-                        <node concept="liA8E" id="6qWs7gtRrk4" role="2OqNvi">
-                          <ref role="37wK5l" to="o3n2:1AfwOXhJadN" resolve="getRelativePathHelper" />
-                          <node concept="2OqwBi" id="6qWs7gtRrk5" role="37wK5m">
-                            <node concept="2OqwBi" id="6qWs7gtRrk6" role="2Oq$k0">
-                              <node concept="2OqwBi" id="6qWs7gtRrk7" role="2Oq$k0">
-                                <node concept="3rM5sP" id="6qWs7gtRrk8" role="2Oq$k0">
-                                  <property role="3rM5sR" value="c039a1a6-4680-46fa-b571-a6a5f1e49ab6" />
-                                </node>
-                                <node concept="liA8E" id="6qWs7gtRrk9" role="2OqNvi">
-                                  <ref role="37wK5l" to="88zw:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="6qWs7gtRrka" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
-                              </node>
+        <node concept="3cpWs8" id="6qWs7gtRrjS" role="3cqZAp">
+          <node concept="3cpWsn" id="6qWs7gtRrjT" role="3cpWs9">
+            <property role="TrG5h" value="additionalLibPath" />
+            <node concept="17QB3L" id="6qWs7gtRrjU" role="1tU5fm" />
+            <node concept="10Nm6u" id="6qWs7gtRrjV" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="1QHqEK" id="6qWs7gtRrjX" role="3cqZAp">
+          <node concept="1QHqEC" id="6qWs7gtRrjY" role="1QHqEI">
+            <node concept="3clFbS" id="6qWs7gtRrjZ" role="1bW5cS">
+              <node concept="3cpWs8" id="6qWs7gtRrk0" role="3cqZAp">
+                <node concept="3cpWsn" id="6qWs7gtRrk1" role="3cpWs9">
+                  <property role="TrG5h" value="relativePathHelper" />
+                  <node concept="3uibUv" id="6qWs7gtRrk2" role="1tU5fm">
+                    <ref role="3uigEE" to="o3n2:5iAPpylXsc4" resolve="RelativePathHelper" />
+                  </node>
+                  <node concept="2OqwBi" id="6qWs7gtRrk3" role="33vP2m">
+                    <node concept="liA8E" id="6qWs7gtRrk4" role="2OqNvi">
+                      <ref role="37wK5l" to="o3n2:1AfwOXhJadN" resolve="getRelativePathHelper" />
+                      <node concept="2OqwBi" id="6qWs7gtRrk5" role="37wK5m">
+                        <node concept="2OqwBi" id="6qWs7gtRrk6" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6qWs7gtRrk7" role="2Oq$k0">
+                            <node concept="3rM5sP" id="6qWs7gtRrk8" role="2Oq$k0">
+                              <property role="3rM5sR" value="c039a1a6-4680-46fa-b571-a6a5f1e49ab6" />
                             </node>
-                            <node concept="liA8E" id="6qWs7gtRrkb" role="2OqNvi">
-                              <ref role="37wK5l" to="k7g3:~Iterator.next():java.lang.Object" resolve="next" />
+                            <node concept="liA8E" id="6qWs7gtRrk9" role="2OqNvi">
+                              <ref role="37wK5l" to="88zw:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
                             </node>
                           </node>
+                          <node concept="liA8E" id="6qWs7gtRrka" role="2OqNvi">
+                            <ref role="37wK5l" to="e2lb:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                          </node>
                         </node>
-                        <node concept="2YIFZM" id="6qWs7gtRrkc" role="2Oq$k0">
-                          <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
-                          <ref role="37wK5l" to="o3n2:4jjtc7WZTjd" resolve="defaultContext" />
+                        <node concept="liA8E" id="6qWs7gtRrkb" role="2OqNvi">
+                          <ref role="37wK5l" to="k7g3:~Iterator.next():java.lang.Object" resolve="next" />
                         </node>
                       </node>
                     </node>
-                  </node>
-                  <node concept="3clFbF" id="6qWs7gtRrkd" role="3cqZAp">
-                    <node concept="37vLTI" id="6qWs7gtRrke" role="3clFbG">
-                      <node concept="2OqwBi" id="6qWs7gtRrkf" role="37vLTx">
-                        <node concept="37vLTw" id="6qWs7gtRrkg" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6qWs7gtRrk1" resolve="relativePathHelper" />
-                        </node>
-                        <node concept="liA8E" id="6qWs7gtRrkh" role="2OqNvi">
-                          <ref role="37wK5l" to="o3n2:1AfwOXhJahx" resolve="getBasePath" />
-                        </node>
-                      </node>
-                      <node concept="37vLTw" id="6qWs7gtRrki" role="37vLTJ">
-                        <ref role="3cqZAo" node="6qWs7gtRrjT" resolve="additionalLibPath" />
-                      </node>
+                    <node concept="2YIFZM" id="6qWs7gtRrkc" role="2Oq$k0">
+                      <ref role="37wK5l" to="o3n2:4jjtc7WZTjd" resolve="defaultContext" />
+                      <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
                     </node>
                   </node>
                 </node>
               </node>
+              <node concept="3clFbF" id="6qWs7gtRrkd" role="3cqZAp">
+                <node concept="37vLTI" id="6qWs7gtRrke" role="3clFbG">
+                  <node concept="2OqwBi" id="6qWs7gtRrkf" role="37vLTx">
+                    <node concept="37vLTw" id="6qWs7gtRrkg" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6qWs7gtRrk1" resolve="relativePathHelper" />
+                    </node>
+                    <node concept="liA8E" id="6qWs7gtRrkh" role="2OqNvi">
+                      <ref role="37wK5l" to="o3n2:1AfwOXhJahx" resolve="getBasePath" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="6qWs7gtRrki" role="37vLTJ">
+                    <ref role="3cqZAo" node="6qWs7gtRrjT" resolve="additionalLibPath" />
+                  </node>
+                </node>
+              </node>
             </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3uBbkEdPdaE" role="3cqZAp">
+          <node concept="3cpWsn" id="3uBbkEdPdaF" role="3cpWs9">
+            <property role="TrG5h" value="closureRuntimeJar" />
+            <node concept="3uibUv" id="3uBbkEdPdaG" role="1tU5fm">
+              <ref role="3uigEE" to="fxg7:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="3uBbkEdPc3$" role="33vP2m">
+              <node concept="1pGfFk" id="3uBbkEdPc3_" role="2ShVmc">
+                <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="3cpWs3" id="3uBbkEdPc3A" role="37wK5m">
+                  <node concept="3cpWs3" id="3uBbkEdPc3B" role="3uHU7B">
+                    <node concept="37vLTw" id="3uBbkEdPchG" role="3uHU7B">
+                      <ref role="3cqZAo" node="28S3GatEby6" resolve="classesGenPath" />
+                    </node>
+                    <node concept="10M0yZ" id="3uBbkEdPc3D" role="3uHU7w">
+                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                      <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="3uBbkEdPc3E" role="3uHU7w">
+                    <property role="Xl_RC" value="closures-runtime.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3uBbkEdT2L$" role="3cqZAp">
+          <node concept="2YIFZM" id="3uBbkEdP5Ug" role="3clFbG">
+            <ref role="1Pybhc" to="msyo:~FileUtil" resolve="FileUtil" />
+            <ref role="37wK5l" to="msyo:~FileUtil.copyFile(java.io.File,java.io.File):void" resolve="copyFile" />
+            <node concept="2ShNRf" id="3uBbkEdP61q" role="37wK5m">
+              <node concept="1pGfFk" id="3uBbkEdP6Vs" role="2ShVmc">
+                <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="3cpWs3" id="3uBbkEdP7TY" role="37wK5m">
+                  <node concept="3cpWs3" id="3uBbkEdP7iF" role="3uHU7B">
+                    <node concept="37vLTw" id="3uBbkEdP72L" role="3uHU7B">
+                      <ref role="3cqZAo" node="6qWs7gtRrjT" resolve="additionalLibPath" />
+                    </node>
+                    <node concept="10M0yZ" id="3uBbkEdP7pU" role="3uHU7w">
+                      <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="3uBbkEdP8uv" role="3uHU7w">
+                    <property role="Xl_RC" value="closures-runtime.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="3uBbkEdPeP2" role="37wK5m">
+              <ref role="3cqZAo" node="3uBbkEdPdaF" resolve="closureRuntimeJar" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3uBbkEdSYQT" role="3cqZAp">
+          <node concept="3clFbS" id="3uBbkEdSYQV" role="3clFbx">
+            <node concept="2LYoGF" id="3uBbkEdSZWZ" role="3cqZAp">
+              <node concept="Xl_RD" id="3uBbkEdT0gt" role="2LYoNm">
+                <property role="Xl_RC" value="Unable to locate the closure-runtime.jar file and copy to class-gen directory." />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="3uBbkEdT6tp" role="3clFbw">
+            <node concept="2OqwBi" id="3uBbkEdT6tr" role="3fr31v">
+              <node concept="37vLTw" id="3uBbkEdT6ts" role="2Oq$k0">
+                <ref role="3cqZAo" node="3uBbkEdPdaF" resolve="closureRuntimeJar" />
+              </node>
+              <node concept="liA8E" id="3uBbkEdT6tt" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~File.exists():boolean" resolve="exists" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3uBbkEdPgdE" role="3cqZAp">
+          <node concept="3cpWsn" id="3uBbkEdPgdH" role="3cpWs9">
+            <property role="TrG5h" value="executionClassPath" />
+            <node concept="17QB3L" id="3uBbkEdPgdC" role="1tU5fm" />
+            <node concept="3cpWs3" id="3uBbkEdPfqO" role="33vP2m">
+              <node concept="37vLTw" id="3uBbkEdPfwy" role="3uHU7w">
+                <ref role="3cqZAo" node="3uBbkEdPdaF" resolve="closureRuntimeJar" />
+              </node>
+              <node concept="3cpWs3" id="3uBbkEdPf8Z" role="3uHU7B">
+                <node concept="2OqwBi" id="7TupKkjsCR2" role="3uHU7B">
+                  <node concept="2ShNRf" id="7TupKkjshKC" role="2Oq$k0">
+                    <node concept="1pGfFk" id="7TupKkjsCGB" role="2ShVmc">
+                      <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                      <node concept="37vLTw" id="7TupKkjsCHZ" role="37wK5m">
+                        <ref role="3cqZAo" node="nhsmU5H9cc" resolve="jarPath" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7TupKkjsG$r" role="2OqNvi">
+                    <ref role="37wK5l" to="fxg7:~File.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="3uBbkEdPf9G" role="3uHU7w">
+                  <property role="Xl_RC" value=":" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6qWs7gtRf2m" role="3cqZAp" />
+        <node concept="3clFbJ" id="6qWs7gtRj0r" role="3cqZAp">
+          <node concept="3clFbS" id="6qWs7gtRj0s" role="3clFbx">
             <node concept="yIgYw" id="6qWs7gtRrkj" role="3cqZAp">
               <node concept="2LYoGx" id="6qWs7gtRrkk" role="3cqZAk">
                 <ref role="3rFKlk" node="1d37CfpwZV0" resolve="RunRemote_NextflowWithAnt" />
@@ -1915,18 +2018,8 @@
                 </node>
                 <node concept="2LYoGL" id="7TupKkjshlw" role="2LYoGw">
                   <ref role="2LYoGK" node="7TupKkjsbE$" resolve="jarScript" />
-                  <node concept="2OqwBi" id="7TupKkjsCR2" role="2LYoGN">
-                    <node concept="2ShNRf" id="7TupKkjshKC" role="2Oq$k0">
-                      <node concept="1pGfFk" id="7TupKkjsCGB" role="2ShVmc">
-                        <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                        <node concept="37vLTw" id="7TupKkjsCHZ" role="37wK5m">
-                          <ref role="3cqZAo" node="nhsmU5H9cc" resolve="jarPath" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="7TupKkjsG$r" role="2OqNvi">
-                      <ref role="37wK5l" to="fxg7:~File.getName():java.lang.String" resolve="getName" />
-                    </node>
+                  <node concept="37vLTw" id="3uBbkEdPh_G" role="2LYoGN">
+                    <ref role="3cqZAo" node="3uBbkEdPgdH" resolve="executionClassPath" />
                   </node>
                 </node>
               </node>
@@ -2021,8 +2114,8 @@
                   </node>
                   <node concept="2LYoGL" id="qqDj346uhj" role="2LYoGw">
                     <ref role="2LYoGK" node="qqDj346m8y" resolve="jarPath" />
-                    <node concept="37vLTw" id="qqDj346uLa" role="2LYoGN">
-                      <ref role="3cqZAo" node="nhsmU5H9cc" resolve="jarPath" />
+                    <node concept="37vLTw" id="3uBbkEdPngh" role="2LYoGN">
+                      <ref role="3cqZAo" node="3uBbkEdPgdH" resolve="executionClassPath" />
                     </node>
                   </node>
                 </node>

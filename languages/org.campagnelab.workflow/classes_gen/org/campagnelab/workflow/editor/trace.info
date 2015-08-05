@@ -405,7 +405,7 @@
     </file>
   </root>
   <root nodeRef="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/1629219545452493880">
-    <file name="Closurefunction_Editor.java">
+    <file name="FunctionWithClosure_Editor.java">
       <node id="1629219545452493880" at="20,79,21,63" concept="7" />
       <node id="1629219545452493880" at="23,89,24,96" concept="6" />
       <node id="1629219545452493880" at="24,96,25,48" concept="2" />
@@ -457,11 +457,11 @@
       <node id="1629219545452496433" at="56,58,59,5" concept="4" />
       <node id="1629219545452496433" at="59,5,62,5" concept="4" />
       <node id="1629219545452496433" at="65,59,70,22" concept="4" />
-      <node id="1629219545452495454" at="33,0,42,0" concept="5" trace="createComponent_a9bwvg_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1629219545452495459" at="42,0,51,0" concept="5" trace="createConstant_a9bwvg_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1629219545452496443" at="72,0,81,0" concept="5" trace="createConstant_a9bwvg_d0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1629219545452493880" at="23,0,33,0" concept="5" trace="createCollection_a9bwvg_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1629219545452496433" at="51,0,72,0" concept="5" trace="createRefNode_a9bwvg_c0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1629219545452495454" at="33,0,42,0" concept="5" trace="createComponent_5gq5vr_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1629219545452495459" at="42,0,51,0" concept="5" trace="createConstant_5gq5vr_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1629219545452496443" at="72,0,81,0" concept="5" trace="createConstant_5gq5vr_d0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1629219545452493880" at="23,0,33,0" concept="5" trace="createCollection_5gq5vr_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1629219545452496433" at="51,0,72,0" concept="5" trace="createRefNode_5gq5vr_c0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="1629219545452493880" at="20,79,21,63" />
       <scope id="1629219545452493880" at="26,28,27,82" />
       <scope id="1629219545452493880" at="27,82,28,81" />
@@ -517,7 +517,7 @@
         <var name="editorContext" id="1629219545452496433" />
         <var name="node" id="1629219545452496433" />
       </scope>
-      <unit id="1629219545452493880" at="19,0,82,0" name="org.campagnelab.workflow.editor.Closurefunction_Editor" />
+      <unit id="1629219545452493880" at="19,0,82,0" name="org.campagnelab.workflow.editor.FunctionWithClosure_Editor" />
     </file>
   </root>
   <root nodeRef="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/1629219545452513518">
@@ -11786,7 +11786,7 @@
     </file>
   </root>
   <root nodeRef="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/7950630069015854271">
-    <file name="ClosureFunctionWithChannelRef_Editor.java">
+    <file name="FunctionWithClosureAndChannelRefs_Editor.java">
       <node id="7950630069015854271" at="32,79,33,63" concept="7" />
       <node id="7950630069015854271" at="35,89,36,96" concept="6" />
       <node id="7950630069015854271" at="36,96,37,48" concept="2" />
@@ -11822,8 +11822,8 @@
       <node id="7950630069015855233" at="62,64,63,40" concept="2" />
       <node id="7950630069015855233" at="63,40,64,34" concept="2" />
       <node id="7950630069015855233" at="64,34,65,22" concept="7" />
-      <node id="7950630069015854271" at="67,91,68,170" concept="6" />
-      <node id="7950630069015854271" at="68,170,69,106" concept="6" />
+      <node id="7950630069015854271" at="67,91,68,174" concept="6" />
+      <node id="7950630069015854271" at="68,174,69,106" concept="6" />
       <node id="7950630069015854271" at="69,106,70,63" concept="2" />
       <node id="7950630069015854271" at="70,63,71,49" concept="2" />
       <node id="7950630069015854271" at="71,49,72,22" concept="7" />
@@ -11878,7 +11878,7 @@
       <node id="7950630069015855235" at="156,40,157,34" concept="2" />
       <node id="7950630069015855235" at="157,34,158,22" concept="7" />
       <node id="7950630069015854271" at="32,0,35,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="7950630069015854271" at="75,0,78,0" concept="1" trace="outChannelContainerRefListHandler_cxm9n5_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="7950630069015854271" at="75,0,78,0" concept="1" trace="outChannelContainerRefListHandler_u4is5t_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="7950630069015854271" at="108,9,111,9" concept="4" />
       <node id="7950630069015855234" at="138,58,141,5" concept="4" />
       <node id="7950630069015854271" at="78,0,82,0" concept="5" trace="createNodeToInsert#(Ljetbrains/mps/openapi/editor/EditorContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -11887,18 +11887,18 @@
       <node id="7950630069015854271" at="91,0,96,0" concept="5" trace="createNodeCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="7950630069015855234" at="144,59,149,22" concept="4" />
       <node id="7950630069015854271" at="96,0,102,0" concept="5" trace="createEmptyCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="6073508665469994355" at="115,0,121,0" concept="5" trace="createConstant_cxm9n5_d0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="6073508665471924792" at="121,0,127,0" concept="5" trace="createConstant_cxm9n5_e0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="6073508665469996623" at="127,0,133,0" concept="5" trace="createConstant_cxm9n5_f0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="7950630069015854271" at="67,0,74,0" concept="5" trace="createRefNodeList_cxm9n5_c0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="7950630069015855232" at="49,0,58,0" concept="5" trace="createComponent_cxm9n5_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="7950630069015855233" at="58,0,67,0" concept="5" trace="createConstant_cxm9n5_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="6073508665469994355" at="115,0,121,0" concept="5" trace="createConstant_u4is5t_d0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="6073508665471924792" at="121,0,127,0" concept="5" trace="createConstant_u4is5t_e0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="6073508665469996623" at="127,0,133,0" concept="5" trace="createConstant_u4is5t_f0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7950630069015854271" at="67,0,74,0" concept="5" trace="createRefNodeList_u4is5t_c0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7950630069015855232" at="49,0,58,0" concept="5" trace="createComponent_u4is5t_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7950630069015855233" at="58,0,67,0" concept="5" trace="createConstant_u4is5t_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="7950630069015854271" at="82,0,91,0" concept="5" trace="nodeFactory#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="7950630069015855235" at="151,0,160,0" concept="5" trace="createConstant_cxm9n5_h0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7950630069015855235" at="151,0,160,0" concept="5" trace="createConstant_u4is5t_h0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="7950630069015854271" at="102,132,112,7" concept="4" />
       <node id="7950630069015854271" at="102,0,114,0" concept="5" trace="installElementCellActions#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/cells/EditorCell;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-      <node id="7950630069015854271" at="35,0,49,0" concept="5" trace="createCollection_cxm9n5_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="7950630069015855234" at="133,0,151,0" concept="5" trace="createRefNode_cxm9n5_g0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7950630069015854271" at="35,0,49,0" concept="5" trace="createCollection_u4is5t_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7950630069015855234" at="133,0,151,0" concept="5" trace="createRefNode_u4is5t_g0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="7950630069015854271" at="32,79,33,63" />
       <scope id="7950630069015854271" at="38,28,39,82" />
       <scope id="7950630069015854271" at="39,82,40,81" />
@@ -12029,8 +12029,8 @@
         <var name="editorContext" id="7950630069015855234" />
         <var name="node" id="7950630069015855234" />
       </scope>
-      <unit id="7950630069015854271" at="74,0,115,0" name="org.campagnelab.workflow.editor.ClosureFunctionWithChannelRef_Editor$outChannelContainerRefListHandler_cxm9n5_c0" />
-      <unit id="7950630069015854271" at="31,0,161,0" name="org.campagnelab.workflow.editor.ClosureFunctionWithChannelRef_Editor" />
+      <unit id="7950630069015854271" at="74,0,115,0" name="org.campagnelab.workflow.editor.FunctionWithClosureAndChannelRefs_Editor$outChannelContainerRefListHandler_u4is5t_c0" />
+      <unit id="7950630069015854271" at="31,0,161,0" name="org.campagnelab.workflow.editor.FunctionWithClosureAndChannelRefs_Editor" />
     </file>
   </root>
   <root nodeRef="r:5ad3f196-646c-4457-8b31-f073cd454bf2(org.campagnelab.workflow.editor)/7950630069015861160">
