@@ -116,6 +116,7 @@
         <child id="6129022259108579262" name="executePart" index="3rFUVV" />
       </concept>
       <concept id="856705193941281792" name="jetbrains.mps.execution.commands.structure.ReportErrorStatement" flags="nn" index="2LYoNl">
+        <child id="856705193941281796" name="exception" index="2LYoNh" />
         <child id="856705193941281795" name="message" index="2LYoNm" />
       </concept>
       <concept id="8478830098674460022" name="jetbrains.mps.execution.commands.structure.DebuggerSettingsCommandParameterDeclaration" flags="ng" index="VMRTV" />
@@ -428,10 +429,8 @@
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
         <property id="1167245565795" name="severity" index="35gtTG" />
         <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1434,7 +1433,14 @@
             <node concept="10Nm6u" id="28S3GatEe7a" role="33vP2m" />
           </node>
         </node>
-        <node concept="3clFbH" id="6qWs7gtKAW8" role="3cqZAp" />
+        <node concept="3cpWs8" id="5TV3dRDbXaR" role="3cqZAp">
+          <node concept="3cpWsn" id="5TV3dRDbXaS" role="3cpWs9">
+            <property role="TrG5h" value="exception" />
+            <node concept="3uibUv" id="5TV3dRDbXaT" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+            </node>
+          </node>
+        </node>
         <node concept="1QHqEK" id="6qWs7gtKAW9" role="3cqZAp">
           <node concept="1QHqEC" id="6qWs7gtKAWa" role="1QHqEI">
             <node concept="3clFbS" id="6qWs7gtKAWb" role="1bW5cS">
@@ -1688,19 +1694,37 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="16M54outo0C" role="TDEfX">
-                    <node concept="34ab3g" id="16M54outoQX" role="3cqZAp">
-                      <property role="35gtTG" value="error" />
-                      <property role="34fQS0" value="true" />
-                      <node concept="Xl_RD" id="16M54outoQZ" role="34bqiv">
-                        <property role="Xl_RC" value="Unable to assemble generated.jar" />
-                      </node>
-                      <node concept="37vLTw" id="16M54outoR1" role="34bMjA">
-                        <ref role="3cqZAo" node="16M54outo0$" resolve="e" />
+                    <node concept="3clFbF" id="5TV3dRDbZo2" role="3cqZAp">
+                      <node concept="37vLTI" id="5TV3dRDbZAK" role="3clFbG">
+                        <node concept="37vLTw" id="5TV3dRDbZPX" role="37vLTx">
+                          <ref role="3cqZAo" node="16M54outo0$" resolve="e" />
+                        </node>
+                        <node concept="37vLTw" id="5TV3dRDbZo0" role="37vLTJ">
+                          <ref role="3cqZAo" node="5TV3dRDbXaS" resolve="exception" />
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5TV3dRDc0_A" role="3cqZAp">
+          <node concept="3clFbS" id="5TV3dRDc0_C" role="3clFbx">
+            <node concept="2LYoGF" id="5TV3dRD8102" role="3cqZAp">
+              <node concept="Xl_RD" id="5TV3dRD81sK" role="2LYoNm">
+                <property role="Xl_RC" value="Unable to assemble generated.jar " />
+              </node>
+              <node concept="37vLTw" id="5TV3dRDc5WE" role="2LYoNh">
+                <ref role="3cqZAo" node="5TV3dRDbXaS" resolve="exception" />
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="5TV3dRDc1l$" role="3clFbw">
+            <node concept="10Nm6u" id="5TV3dRDc1$A" role="3uHU7w" />
+            <node concept="37vLTw" id="5TV3dRDc15H" role="3uHU7B">
+              <ref role="3cqZAo" node="5TV3dRDbXaS" resolve="exception" />
             </node>
           </node>
         </node>

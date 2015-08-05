@@ -217,6 +217,18 @@
         <ref role="398BVh" node="4oJiZHqTePq" resolve="mps_home" />
       </node>
     </node>
+    <node concept="2sgV4H" id="5yGi5zw88cL" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:6qT2v0qOlpw" resolve="mpsJava" />
+      <node concept="398BVA" id="5yGi5zw88ew" role="2JcizS">
+        <ref role="398BVh" node="4oJiZHqTePq" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="5yGi5zw887Y" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:5D1dJ7xWer5" resolve="mpsCore" />
+      <node concept="398BVA" id="5yGi5zw889D" role="2JcizS">
+        <ref role="398BVh" node="4oJiZHqTePq" resolve="mps_home" />
+      </node>
+    </node>
     <node concept="2sgV4H" id="3gMg70bWO7m" role="1l3spa">
       <ref role="1l3spb" to="ffeo:5xa9wY2vh7j" resolve="mpsExecutionPlugin" />
       <node concept="398BVA" id="3gMg70bWO9I" role="2JcizS">
@@ -229,35 +241,11 @@
         <ref role="398BVh" node="4oJiZHqUhiI" resolve="mps-richtext.location" />
       </node>
     </node>
-    <node concept="2sgV4H" id="_lyg7ThFgU" role="1l3spa">
+    <node concept="2sgV4H" id="1mAimv7pcKM" role="1l3spa">
       <ref role="1l3spb" to="t9i9:2mFg1uCD9ps" resolve="org.campagnelab.NYoSh" />
-      <node concept="398BVA" id="_lyg7ThQGW" role="2JcizS">
-        <ref role="398BVh" node="2mFg1uCEf5s" resolve="org.campagnelab.goby.workbench.home" />
-        <node concept="2Ry0Ak" id="_lyg7ThQHz" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="_lyg7ThQHG" role="2Ry0An">
-            <property role="2Ry0Am" value="artifacts" />
-            <node concept="2Ry0Ak" id="_lyg7TiodE" role="2Ry0An">
-              <property role="2Ry0Am" value="org.campagnelab.NYoSh" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
-    <node concept="2sgV4H" id="2mFg1uCEfdP" role="1l3spa">
+    <node concept="2sgV4H" id="1mAimv7pcKU" role="1l3spa">
       <ref role="1l3spb" to="ael0:5KK2jWpWo00" resolve="org.campagnelab.mps.UI" />
-      <node concept="398BVA" id="_lyg7ThTet" role="2JcizS">
-        <ref role="398BVh" node="2mFg1uCEf5s" resolve="org.campagnelab.goby.workbench.home" />
-        <node concept="2Ry0Ak" id="_lyg7ThTey" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="_lyg7ThTez" role="2Ry0An">
-            <property role="2Ry0Am" value="artifacts" />
-            <node concept="2Ry0Ak" id="_lyg7ThTfy" role="2Ry0An">
-              <property role="2Ry0Am" value="org.campagnelab.mps.UI" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="1l3spV" id="4oJiZHqTePT" role="1l3spN">
       <node concept="3981dG" id="4oJiZHqTePU" role="39821P">
@@ -350,11 +338,17 @@
       <node concept="m$_yC" id="4oJiZHqUwu6" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5CFKsRWVb8B" resolve="jetbrains.mps.execution.configurations" />
       </node>
-      <node concept="m$_yC" id="_lyg7TiUQg" role="m$_yJ">
+      <node concept="m$_yC" id="1mAimv7pcKS" role="m$_yJ">
         <ref role="m$_y1" to="t9i9:2mFg1uCD9qh" resolve="org.campagnelab.NYoSh" />
       </node>
-      <node concept="m$_yC" id="_lyg7TiUSg" role="m$_yJ">
+      <node concept="m$_yC" id="1mAimv7pcL0" role="m$_yJ">
         <ref role="m$_y1" to="ael0:5KK2jWpWo0m" resolve="org.campagnelab.mps.UI" />
+      </node>
+      <node concept="m$_yC" id="5yGi5zw8dMK" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5CFKsRWV4Nl" resolve="jetbrains.mps.execution.languages" />
+      </node>
+      <node concept="m$_yC" id="5yGi5zw8dPR" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
       <node concept="3_J27D" id="4oJiZHqTePR" role="m_cZH">
         <node concept="3Mxwew" id="4oJiZHqTePS" role="3MwsjC">
@@ -525,6 +519,30 @@
           <node concept="3bR9La" id="dhtvqDS6B4" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="6eMkF2c4Sia" resolve="org.campagnelab.workflow.configuration" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5yGi5zw8eP8" role="3bR37C">
+          <node concept="3bR9La" id="5yGi5zw8eP9" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5yGi5zw8ePa" role="3bR37C">
+          <node concept="3bR9La" id="5yGi5zw8ePb" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:5xwbQ0eEV3B" resolve="jetbrains.mps.ide.java.basePlatform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5yGi5zw8ePc" role="3bR37C">
+          <node concept="3bR9La" id="5yGi5zw8ePd" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:5xwbQ0eEV3x" resolve="jetbrains.mps.ide.java.platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5yGi5zw9JEr" role="3bR37C">
+          <node concept="3bR9La" id="5yGi5zw9JEs" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
       </node>
