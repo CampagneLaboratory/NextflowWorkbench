@@ -21,8 +21,8 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
-    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -2051,6 +2051,53 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7VH0NfrpztH" resolve="Parameters" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6ZbOXH84ib3">
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <property role="TrG5h" value="Sort" />
+    <property role="34LRSv" value="sort" />
+    <property role="R4oN_" value="Defines sorting criteria of content in resulting file(s)." />
+    <ref role="1TJDcQ" node="7VH0NfrpztH" resolve="Parameters" />
+    <node concept="1TJgyj" id="6ZbOXH8cYmR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sortParameter" />
+      <ref role="20lvS9" node="6ZbOXH8aImN" resolve="SortParameter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6ZbOXH8aImN">
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <property role="TrG5h" value="SortParameter" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6ZbOXH8aInf">
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <property role="TrG5h" value="Sorttrue" />
+    <property role="34LRSv" value="true" />
+    <property role="R4oN_" value="Order by the entries natural ordering i.e. numerical,lexicographic" />
+    <ref role="1TJDcQ" node="6ZbOXH8aImN" resolve="SortParameter" />
+  </node>
+  <node concept="1TIwiD" id="6ZbOXH8aIng">
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <property role="TrG5h" value="SortIndex" />
+    <property role="34LRSv" value="&quot;index&quot;" />
+    <property role="R4oN_" value="Order by the incremental index number assigned to each entry" />
+    <ref role="1TJDcQ" node="6ZbOXH8aImN" resolve="SortParameter" />
+  </node>
+  <node concept="1TIwiD" id="6ZbOXH8aIMG">
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <property role="TrG5h" value="SortHash" />
+    <property role="34LRSv" value="&quot;hash&quot;" />
+    <property role="R4oN_" value="Order by the hash number associated to each entry" />
+    <ref role="1TJDcQ" node="6ZbOXH8aImN" resolve="SortParameter" />
+  </node>
+  <node concept="1TIwiD" id="6ZbOXH8aIMI">
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <property role="R4oN_" value="Order by the hash number created on actual entries" />
+    <property role="34LRSv" value="&quot;deep&quot;" />
+    <property role="TrG5h" value="SortDeep" />
+    <ref role="1TJDcQ" node="6ZbOXH8aImN" resolve="SortParameter" />
   </node>
 </model>
 

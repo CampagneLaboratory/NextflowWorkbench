@@ -7,6 +7,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration" version="0" />
   </languages>
   <imports>
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
@@ -55,6 +56,10 @@
       <concept id="9145969939518178826" name="org.campagnelab.workflow.structure.CollectFile" flags="ng" index="2_zckT">
         <child id="9145969939518479896" name="parameters" index="2_yPOF" />
       </concept>
+      <concept id="8055765297242645187" name="org.campagnelab.workflow.structure.Sort" flags="ng" index="BQJ4o">
+        <child id="8055765297244923319" name="sortParameter" index="BY3pG" />
+      </concept>
+      <concept id="8055765297244333520" name="org.campagnelab.workflow.structure.SortIndex" flags="ng" index="BSjob" />
       <concept id="3653684473245040478" name="org.campagnelab.workflow.structure.NewStringLiteral" flags="ng" index="2J_g7P">
         <property id="3653684473245041443" name="value" index="2J_vQ8" />
       </concept>
@@ -74,6 +79,7 @@
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
         <child id="3857878650537656757" name="functions" index="1ylr64" />
       </concept>
+      <concept id="3857878650533842792" name="org.campagnelab.workflow.structure.Flatten" flags="ng" index="1yaZXp" />
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
       </concept>
@@ -139,6 +145,7 @@
             <property role="TrG5h" value="I am a test \n" />
           </node>
         </node>
+        <node concept="1yaZXp" id="71QPUOF$9q2" role="1ylr64" />
       </node>
     </node>
     <node concept="2$rEH5" id="2VBNKJVuJci" role="2$rEHq">
@@ -147,7 +154,7 @@
         <ref role="1uK_4X" node="61ZqhN45gsP" resolve="duplicate" />
         <node concept="2_zckT" id="2VBNKJVuO2$" role="1ylr64">
           <node concept="2_yPE3" id="7MtdJW5ts0z" role="2_yPOF">
-            <property role="TrG5h" value="Result.txt" />
+            <property role="TrG5h" value="Result_our.txt" />
           </node>
           <node concept="1OZS7s" id="1a2GXkERfJj" role="2_yPOF">
             <property role="1OZSdH" value="true" />
@@ -157,6 +164,9 @@
           </node>
           <node concept="1O2bb1" id="2VBNKJVuO$0" role="2_yPOF">
             <property role="TrG5h" value="/Users/williamdigan" />
+          </node>
+          <node concept="BQJ4o" id="6ZbOXH8h_cg" role="2_yPOF">
+            <node concept="BSjob" id="3mXhy$YpkT7" role="BY3pG" />
           </node>
         </node>
       </node>

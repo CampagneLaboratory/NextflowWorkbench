@@ -25,7 +25,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BaseLanguageScriptAdapter_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,324,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,334,0" name="org.campagnelab.workflow.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BooleanChannel_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.BooleanChannel_BehaviorDescriptor" />
@@ -455,6 +455,24 @@
     </file>
     <file name="Skip_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Skip_BehaviorDescriptor" />
+    </file>
+    <file name="SortDeep_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.SortDeep_BehaviorDescriptor" />
+    </file>
+    <file name="SortHash_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.SortHash_BehaviorDescriptor" />
+    </file>
+    <file name="SortIndex_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.SortIndex_BehaviorDescriptor" />
+    </file>
+    <file name="SortParameter_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.workflow.behavior.SortParameter_BehaviorDescriptor" />
+    </file>
+    <file name="Sort_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Sort_BehaviorDescriptor" />
+    </file>
+    <file name="Sorttrue_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.Sorttrue_BehaviorDescriptor" />
     </file>
     <file name="SplitCSV_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.workflow.behavior.SplitCSV_BehaviorDescriptor" />
