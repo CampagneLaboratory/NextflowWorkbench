@@ -98,7 +98,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -182,7 +182,7 @@
         <child id="1233922432965" name="operation" index="1bwxVq" />
         <child id="1234526822589" name="function" index="1Jy66y" />
       </concept>
-      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" index="1bwezc" />
+      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" stub="3147100357551177019" index="1bwezc" />
       <concept id="1233924848298" name="jetbrains.mps.lang.textGen.structure.OperationCall" flags="ng" index="1bDJIP">
         <reference id="1234190664409" name="function" index="1rvKf6" />
         <child id="1234191323697" name="parameter" index="1ryhcI" />
@@ -506,20 +506,13 @@
               <node concept="l8MVK" id="5HJ0Qzzig94" role="lcghm" />
             </node>
           </node>
-          <node concept="2OqwBi" id="1B2iUhm828Q" role="3clFbw">
-            <node concept="2OqwBi" id="1B2iUhm812w" role="2Oq$k0">
-              <node concept="37vLTw" id="1B2iUhm80B7" role="2Oq$k0">
-                <ref role="3cqZAo" node="34JZ5vrM0Ve" resolve="workflow" />
-              </node>
-              <node concept="2Rf3mk" id="1B2iUhm81z4" role="2OqNvi">
-                <node concept="1xMEDy" id="1B2iUhm81z6" role="1xVPHs">
-                  <node concept="chp4Y" id="1B2iUhm81zy" role="ri$Ld">
-                    <ref role="cht4Q" to="iowz:5HJ0QzxC1s2" resolve="Report" />
-                  </node>
-                </node>
-              </node>
+          <node concept="2OqwBi" id="1B2iUhm812w" role="3clFbw">
+            <node concept="37vLTw" id="1B2iUhm80B7" role="2Oq$k0">
+              <ref role="3cqZAo" node="34JZ5vrM0Ve" resolve="workflow" />
             </node>
-            <node concept="3GX2aA" id="1B2iUhm85fn" role="2OqNvi" />
+            <node concept="2qgKlT" id="1D3_Ugf4R8J" role="2OqNvi">
+              <ref role="37wK5l" to="mqvz:1D3_Ugf4Nkh" resolve="needsMethodHelpers" />
+            </node>
           </node>
         </node>
         <node concept="2Gpval" id="5Sz2Ie0Y8FG" role="3cqZAp">
