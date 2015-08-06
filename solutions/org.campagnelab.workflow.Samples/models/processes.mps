@@ -139,7 +139,7 @@
     <node concept="3Y$Zt1" id="1WG1fjcG2cN" role="2ulM7a">
       <node concept="19SGf9" id="1WG1fjcG2cP" role="3Y$PkS">
         <node concept="19SUe$" id="1WG1fjcG2cQ" role="19SJt6">
-          <property role="19SUeA" value="awk '{print &quot;&gt;name&quot;; print $1;}' &gt; " />
+          <property role="19SUeA" value="awk 'BEGIN{INDEX=1} {print &quot;&gt;seq_&quot;(INDEX++); print $1;}' &gt; " />
         </node>
         <node concept="2b_LqF" id="1WG1fjcGb9m" role="19SJt6">
           <ref role="2b_LqC" node="1WG1fjcG4PF" resolve="'sequences.fasta'" />
