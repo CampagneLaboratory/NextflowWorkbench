@@ -37,6 +37,7 @@
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
+      <concept id="1461424660015405635" name="jetbrains.mps.baseLanguage.structure.EscapeOperation" flags="nn" index="EvHYZ" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -2544,10 +2545,24 @@
             <property role="lacIc" value="'" />
           </node>
           <node concept="l9hG8" id="2aFge8iWuCY" role="lcghm">
-            <node concept="2OqwBi" id="2aFge8iWuFW" role="lb14g">
-              <node concept="117lpO" id="2aFge8iWuDJ" role="2Oq$k0" />
-              <node concept="3TrcHB" id="2aFge8iWuRy" role="2OqNvi">
-                <ref role="3TsBF5" to="iowz:3aOvEIt8ocz" resolve="value" />
+            <node concept="2OqwBi" id="3VFQyZMUdCW" role="lb14g">
+              <node concept="2OqwBi" id="3VFQyZNacjg" role="2Oq$k0">
+                <node concept="2OqwBi" id="2aFge8iWuFW" role="2Oq$k0">
+                  <node concept="117lpO" id="2aFge8iWuDJ" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="2aFge8iWuRy" role="2OqNvi">
+                    <ref role="3TsBF5" to="iowz:3aOvEIt8ocz" resolve="value" />
+                  </node>
+                </node>
+                <node concept="EvHYZ" id="3VFQyZNadWq" role="2OqNvi" />
+              </node>
+              <node concept="liA8E" id="3VFQyZNaeJN" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="3VFQyZNaeLR" role="37wK5m">
+                  <property role="Xl_RC" value="\\'" />
+                </node>
+                <node concept="Xl_RD" id="3VFQyZNaeTg" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\'" />
+                </node>
               </node>
             </node>
           </node>
