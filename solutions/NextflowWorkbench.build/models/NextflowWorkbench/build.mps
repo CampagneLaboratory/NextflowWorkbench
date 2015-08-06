@@ -383,7 +383,7 @@
     <node concept="2G$12M" id="4oJiZHqTePJ" role="3989C9">
       <property role="TrG5h" value="NextflowWorkbench" />
       <node concept="1E1JtA" id="4oJiZHqTePC" role="2G$12L">
-        <property role="BnDLt" value="false" />
+        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.campagnelab.workflow.run" />
         <property role="3LESm3" value="c039a1a6-4680-46fa-b571-a6a5f1e49ab6" />
         <property role="2GAjPV" value="false" />
@@ -537,6 +537,12 @@
           <node concept="3bR9La" id="5yGi5zw9JEs" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1QijaVwhSbR" role="3bR37C">
+          <node concept="3bR9La" id="1QijaVwhSbS" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="t9i9:nhsmU5vDUv" resolve="org.campagnelab.util" />
           </node>
         </node>
       </node>
