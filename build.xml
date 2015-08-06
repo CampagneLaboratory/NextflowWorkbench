@@ -13,8 +13,8 @@
   <property name="artifacts.mpsCore" location="${mps_home}" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
   <property name="artifacts.mps-sl-all" location="${mps-richtext.location}" />
-  <property name="artifacts.org.campagnelab.NYoSh" location="../nyosh/build/artifacts/org.campagnelab.NYoSh" />
-  <property name="artifacts.org.campagnelab.mps.UI" location="../nyosh/build/artifacts/org.campagnelab.mps.UI" />
+  <property name="artifacts.org.campagnelab.NYoSh" location="../NYoSh/build/artifacts/org.campagnelab.NYoSh" />
+  <property name="artifacts.org.campagnelab.mps.UI" location="../NYoSh/build/artifacts/org.campagnelab.mps.UI" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.org.campagnelab.NYoSh}/build.properties" prefix="import.org.campagnelab.NYoSh" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -295,8 +295,8 @@
   </target>
   
   <target name="buildDependents">
-    <ant antfile="../nyosh/NYoSh.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../nyosh/ui.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../NYoSh/NYoSh.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../NYoSh/ui.xml" inheritAll="false" useNativeBasedir="true" />
   </target>
   
   <target name="fetchDependencies">
@@ -430,8 +430,6 @@
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-      <library file="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip/NYoSh/languages/NYoSh/org.campagnelab.nyosh.lib.jar" />
-      <library file="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip/NYoSh/languages/NYoSh/org.campagnelab.util.jar" />
       <library file="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages/org.campagnelab.ui.code.jar" />
       <library file="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages/org.campagnelab.ui.jar" />
       <chunk>
@@ -460,11 +458,11 @@
   </target>
   
   <target name="makeDependents">
-    <ant antfile="../nyosh/NYoSh.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../NYoSh/NYoSh.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
-    <ant antfile="../nyosh/ui.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../NYoSh/ui.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
@@ -534,7 +532,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip/NYoSh/languages/NYoSh/org.campagnelab.util.jar" />
       </classpath>
     </javac>
   </target>
@@ -829,7 +826,6 @@
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip/NYoSh/languages/NYoSh/org.campagnelab.util.jar" />
       </classpath>
     </javac>
   </target>
