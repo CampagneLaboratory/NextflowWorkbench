@@ -178,14 +178,14 @@
     </node>
   </node>
   <node concept="2ulcR8" id="1WG1fjcGqMw">
-    <property role="TrG5h" value="SortSequences" />
+    <property role="TrG5h" value="Sort" />
     <node concept="2mjA9o" id="1WG1fjcGqNJ" role="2ulM7n">
-      <property role="TrG5h" value="sequences" />
+      <property role="TrG5h" value="lines" />
       <property role="2mj$03" value="true" />
       <node concept="16pbKc" id="1WG1fjcGqNT" role="2ybFLk" />
     </node>
     <node concept="2lYRya" id="1WG1fjcGqOw" role="2ulM79">
-      <property role="TrG5h" value="sortedSequences" />
+      <property role="TrG5h" value="sortedLines" />
       <property role="2lYOoT" value="true" />
       <node concept="16pbKc" id="1WG1fjcGqOE" role="2ybFLk" />
     </node>
