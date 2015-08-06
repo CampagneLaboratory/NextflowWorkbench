@@ -52,8 +52,9 @@
     <import index="jgti" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.execution(MPS.IDEA/com.intellij.execution@java_stub)" />
     <import index="yla8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.application(MPS.IDEA/com.intellij.openapi.application@java_stub)" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="d4yz" ref="r:9aacb4c5-da89-46f5-8c41-93d864945583(jetbrains.mps.tool.common.util)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -293,9 +294,6 @@
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -603,32 +601,141 @@
             <property role="3SKdUp" value="try to find the installed plugin path:" />
           </node>
         </node>
-        <node concept="3clFbF" id="4kZvAQCcCyd" role="3cqZAp">
-          <node concept="37vLTI" id="4kZvAQCcD82" role="3clFbG">
-            <node concept="37vLTw" id="4kZvAQCcCyb" role="37vLTJ">
-              <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
-            </node>
-            <node concept="2YIFZM" id="4kZvAQCcC2C" role="37vLTx">
-              <ref role="37wK5l" to="yla8:~PluginPathManager.getPluginHomePath(java.lang.String):java.lang.String" resolve="getPluginHomePath" />
-              <ref role="1Pybhc" to="yla8:~PluginPathManager" resolve="PluginPathManager" />
-              <node concept="Xl_RD" id="4kZvAQCcC5j" role="37wK5m">
-                <property role="Xl_RC" value="NextflowWorkbench" />
+        <node concept="3cpWs8" id="58EhtUpZfMi" role="3cqZAp">
+          <node concept="3cpWsn" id="58EhtUpZfMj" role="3cpWs9">
+            <property role="TrG5h" value="pathSelector" />
+            <node concept="17QB3L" id="58EhtUpZfMk" role="1tU5fm" />
+            <node concept="2YIFZM" id="58EhtUpZfMl" role="33vP2m">
+              <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+              <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+              <node concept="Xl_RD" id="58EhtUpZfMm" role="37wK5m">
+                <property role="Xl_RC" value="idea.path.selector" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="4kZvAQCcC0s" role="3cqZAp">
-          <node concept="3clFbS" id="4kZvAQCcC0u" role="3clFbx">
+        <node concept="3cpWs8" id="1xXyUiDtnBY" role="3cqZAp">
+          <node concept="3cpWsn" id="1xXyUiDtnBX" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="isMac" />
+            <node concept="10P_77" id="1xXyUiDtnBZ" role="1tU5fm" />
+            <node concept="10M0yZ" id="1xXyUiDuAX7" role="33vP2m">
+              <ref role="1PxDUh" to="d4yz:7vzkp06ON77" resolve="SystemInfo" />
+              <ref role="3cqZAo" to="d4yz:7vzkp06ON8T" resolve="isMac" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1xXyUiDtnC2" role="3cqZAp">
+          <node concept="3cpWsn" id="1xXyUiDtnC1" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="userHome" />
+            <node concept="3uibUv" id="1xXyUiDtnC3" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1xXyUiDtnCm" role="33vP2m">
+              <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+              <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+              <node concept="Xl_RD" id="1xXyUiDtnC5" role="37wK5m">
+                <property role="Xl_RC" value="user.home" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1xXyUiDtnC7" role="3cqZAp">
+          <node concept="3cpWsn" id="1xXyUiDtnC6" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="pluginDirectory" />
+            <node concept="3uibUv" id="1xXyUiDtnC8" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+            </node>
+            <node concept="3cpWs3" id="1xXyUiDvkdT" role="33vP2m">
+              <node concept="Xl_RD" id="1xXyUiDuCaN" role="3uHU7w">
+                <property role="Xl_RC" value="NextflowWorkbench" />
+              </node>
+              <node concept="3cpWs3" id="1xXyUiDvkus" role="3uHU7B">
+                <node concept="10M0yZ" id="1xXyUiDvk_S" role="3uHU7w">
+                  <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                  <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                </node>
+                <node concept="3cpWs3" id="1xXyUiDuC49" role="3uHU7B">
+                  <node concept="3cpWs3" id="1xXyUiDuBCU" role="3uHU7B">
+                    <node concept="1eOMI4" id="1xXyUiDtnCl" role="3uHU7B">
+                      <node concept="3K4zz7" id="1xXyUiDtnCk" role="1eOMHV">
+                        <node concept="37vLTw" id="1xXyUiDtnC9" role="3K4Cdx">
+                          <ref role="3cqZAo" node="1xXyUiDtnBX" resolve="isMac" />
+                        </node>
+                        <node concept="3cpWs3" id="1xXyUiDtnCa" role="3K4E3e">
+                          <node concept="3cpWs3" id="1xXyUiDtnCb" role="3uHU7B">
+                            <node concept="3cpWs3" id="1xXyUiDtnCc" role="3uHU7B">
+                              <node concept="3cpWs3" id="1xXyUiDtnCd" role="3uHU7B">
+                                <node concept="37vLTw" id="1xXyUiDtnCe" role="3uHU7B">
+                                  <ref role="3cqZAo" node="1xXyUiDtnC1" resolve="userHome" />
+                                </node>
+                                <node concept="10M0yZ" id="1xXyUiDtnCs" role="3uHU7w">
+                                  <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                                  <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="1xXyUiDtnCg" role="3uHU7w">
+                                <property role="Xl_RC" value="Library" />
+                              </node>
+                            </node>
+                            <node concept="10M0yZ" id="1xXyUiDtnCt" role="3uHU7w">
+                              <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                              <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="1xXyUiDtnCi" role="3uHU7w">
+                            <property role="Xl_RC" value="Application Support" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="1xXyUiDtnCj" role="3K4GZi">
+                          <ref role="3cqZAo" node="1xXyUiDtnC1" resolve="userHome" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="10M0yZ" id="1xXyUiDuBJT" role="3uHU7w">
+                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                      <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="1xXyUiDvkml" role="3uHU7w">
+                    <ref role="3cqZAo" node="58EhtUpZfMj" resolve="pathSelector" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1xXyUiDxpUB" role="3cqZAp">
+          <node concept="3clFbS" id="1xXyUiDxpUD" role="3clFbx">
+            <node concept="3clFbF" id="4kZvAQCcCyd" role="3cqZAp">
+              <node concept="37vLTI" id="4kZvAQCcD82" role="3clFbG">
+                <node concept="37vLTw" id="4kZvAQCcCyb" role="37vLTJ">
+                  <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
+                </node>
+                <node concept="37vLTw" id="1xXyUiDzjfq" role="37vLTx">
+                  <ref role="3cqZAo" node="1xXyUiDtnC6" resolve="pluginDirectory" />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs6" id="4kZvAQCcDni" role="3cqZAp">
               <node concept="37vLTw" id="4kZvAQCcDnD" role="3cqZAk">
                 <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
               </node>
             </node>
           </node>
-          <node concept="3y3z36" id="4kZvAQCcDjx" role="3clFbw">
-            <node concept="10Nm6u" id="4kZvAQCcDjS" role="3uHU7w" />
-            <node concept="37vLTw" id="4kZvAQCcD9c" role="3uHU7B">
-              <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
+          <node concept="2OqwBi" id="1xXyUiDxGYD" role="3clFbw">
+            <node concept="2ShNRf" id="1xXyUiDxq2l" role="2Oq$k0">
+              <node concept="1pGfFk" id="1xXyUiDxGLM" role="2ShVmc">
+                <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="37vLTw" id="1xXyUiDzjc5" role="37wK5m">
+                  <ref role="3cqZAo" node="1xXyUiDtnC6" resolve="pluginDirectory" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="1xXyUiDxJ8p" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~File.isDirectory():boolean" resolve="isDirectory" />
             </node>
           </node>
         </node>
@@ -1024,8 +1131,8 @@
             </node>
             <node concept="1rwKMM" id="v01rbtWi52" role="37wK5m">
               <property role="1rwKMK" value="label" />
-              <node concept="3cmrfG" id="1iB3OwqzoQz" role="1rxHDW">
-                <property role="3cmrfH" value="5" />
+              <node concept="3cmrfG" id="6yzdeBRJ4Ho" role="1rxHDW">
+                <property role="3cmrfH" value="3" />
               </node>
             </node>
           </node>
@@ -1038,8 +1145,8 @@
             </node>
             <node concept="1rwKMM" id="v01rbtWiN8" role="37wK5m">
               <property role="1rwKMK" value="panel" />
-              <node concept="3cmrfG" id="1iB3OwqzoX1" role="1rxHDW">
-                <property role="3cmrfH" value="6" />
+              <node concept="3cmrfG" id="6yzdeBRJ4Mw" role="1rxHDW">
+                <property role="3cmrfH" value="4" />
               </node>
             </node>
           </node>
@@ -1049,56 +1156,35 @@
             <property role="3SKdUp" value="TODO: renable when remote submission is working in the plugin" />
           </node>
         </node>
-        <node concept="3SKdUt" id="12uRwu$ftY9" role="3cqZAp">
-          <node concept="3SKWN0" id="12uRwu$ftYh" role="3SKWNk">
-            <node concept="3clFbF" id="7jqSt7yw2PA" role="3SKWNf">
-              <node concept="1rXfSq" id="7jqSt7yw2PB" role="3clFbG">
-                <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
-                <node concept="2ShNRf" id="7jqSt7yw2PC" role="37wK5m">
-                  <node concept="1pGfFk" id="7jqSt7yw2PD" role="2ShVmc">
-                    <ref role="37wK5l" to="xg1q:~JBLabel.&lt;init&gt;(java.lang.String)" resolve="JBLabel" />
-                    <node concept="Xl_RD" id="7jqSt7yw2PE" role="37wK5m">
-                      <property role="Xl_RC" value="Remote submission?" />
-                    </node>
-                  </node>
+        <node concept="3clFbF" id="7jqSt7yw2PA" role="3cqZAp">
+          <node concept="1rXfSq" id="7jqSt7yw2PB" role="3clFbG">
+            <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+            <node concept="2ShNRf" id="7jqSt7yw2PC" role="37wK5m">
+              <node concept="1pGfFk" id="7jqSt7yw2PD" role="2ShVmc">
+                <ref role="37wK5l" to="xg1q:~JBLabel.&lt;init&gt;(java.lang.String)" resolve="JBLabel" />
+                <node concept="Xl_RD" id="7jqSt7yw2PE" role="37wK5m">
+                  <property role="Xl_RC" value="Remote submission?" />
                 </node>
-                <node concept="1rwKMM" id="7jqSt7yw2PF" role="37wK5m">
-                  <property role="1rwKMK" value="label" />
-                  <node concept="3cmrfG" id="7jqSt7yw3jT" role="1rxHDW">
-                    <property role="3cmrfH" value="7" />
-                  </node>
-                </node>
+              </node>
+            </node>
+            <node concept="1rwKMM" id="7jqSt7yw2PF" role="37wK5m">
+              <property role="1rwKMK" value="label" />
+              <node concept="3cmrfG" id="6yzdeBRJEJN" role="1rxHDW">
+                <property role="3cmrfH" value="5" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="12uRwu$fune" role="3cqZAp">
-          <node concept="3SKWN0" id="12uRwu$funk" role="3SKWNk">
-            <node concept="3clFbF" id="3LlDVJTZqlw" role="3SKWNf">
-              <node concept="1rXfSq" id="7jqSt7yw1Fu" role="3clFbG">
-                <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
-                <node concept="37vLTw" id="3LlDVJTZt00" role="37wK5m">
-                  <ref role="3cqZAo" node="7jqSt7yvZuu" resolve="remoteSubmission" />
-                </node>
-                <node concept="1rwKMM" id="7jqSt7yw1Fw" role="37wK5m">
-                  <property role="1rwKMK" value="panel" />
-                  <node concept="3cmrfG" id="7jqSt7yw1Fx" role="1rxHDW">
-                    <property role="3cmrfH" value="8" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="12uRwu$ewKj" role="3cqZAp">
-          <node concept="2OqwBi" id="12uRwu$exXo" role="3clFbG">
-            <node concept="37vLTw" id="12uRwu$ewKh" role="2Oq$k0">
+        <node concept="3clFbF" id="3LlDVJTZqlw" role="3cqZAp">
+          <node concept="1rXfSq" id="7jqSt7yw1Fu" role="3clFbG">
+            <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+            <node concept="37vLTw" id="3LlDVJTZt00" role="37wK5m">
               <ref role="3cqZAo" node="7jqSt7yvZuu" resolve="remoteSubmission" />
             </node>
-            <node concept="liA8E" id="12uRwu$eElX" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~AbstractButton.setEnabled(boolean):void" resolve="setEnabled" />
-              <node concept="3clFbT" id="12uRwu$eEX_" role="37wK5m">
-                <property role="3clFbU" value="false" />
+            <node concept="1rwKMM" id="7jqSt7yw1Fw" role="37wK5m">
+              <property role="1rwKMK" value="panel" />
+              <node concept="3cmrfG" id="6yzdeBRJEOV" role="1rxHDW">
+                <property role="3cmrfH" value="6" />
               </node>
             </node>
           </node>
@@ -1976,6 +2062,8 @@
           </node>
           <node concept="9aQIb" id="6qWs7gtRrGb" role="9aQIa">
             <node concept="3clFbS" id="6qWs7gtRrGc" role="9aQI4">
+              <node concept="3clFbH" id="1xXyUiDtnzG" role="3cqZAp" />
+              <node concept="3clFbH" id="58EhtUpZfFC" role="3cqZAp" />
               <node concept="yIgYw" id="qqDj346sxr" role="3cqZAp">
                 <node concept="2LYoGx" id="qqDj346sxs" role="3cqZAk">
                   <ref role="3rFKlk" node="6qWs7gtK_Mo" resolve="RunLocal_NextflowWithAnt" />
