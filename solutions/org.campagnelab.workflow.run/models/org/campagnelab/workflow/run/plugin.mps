@@ -294,6 +294,9 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -1041,40 +1044,65 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7jqSt7yw2PA" role="3cqZAp">
-          <node concept="1rXfSq" id="7jqSt7yw2PB" role="3clFbG">
-            <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
-            <node concept="2ShNRf" id="7jqSt7yw2PC" role="37wK5m">
-              <node concept="1pGfFk" id="7jqSt7yw2PD" role="2ShVmc">
-                <ref role="37wK5l" to="xg1q:~JBLabel.&lt;init&gt;(java.lang.String)" resolve="JBLabel" />
-                <node concept="Xl_RD" id="7jqSt7yw2PE" role="37wK5m">
-                  <property role="Xl_RC" value="Remote submission?" />
+        <node concept="3SKdUt" id="12uRwu$eFp6" role="3cqZAp">
+          <node concept="3SKdUq" id="12uRwu$eF$F" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: renable when remote submission is working in the plugin" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="12uRwu$ftY9" role="3cqZAp">
+          <node concept="3SKWN0" id="12uRwu$ftYh" role="3SKWNk">
+            <node concept="3clFbF" id="7jqSt7yw2PA" role="3SKWNf">
+              <node concept="1rXfSq" id="7jqSt7yw2PB" role="3clFbG">
+                <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+                <node concept="2ShNRf" id="7jqSt7yw2PC" role="37wK5m">
+                  <node concept="1pGfFk" id="7jqSt7yw2PD" role="2ShVmc">
+                    <ref role="37wK5l" to="xg1q:~JBLabel.&lt;init&gt;(java.lang.String)" resolve="JBLabel" />
+                    <node concept="Xl_RD" id="7jqSt7yw2PE" role="37wK5m">
+                      <property role="Xl_RC" value="Remote submission?" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1rwKMM" id="7jqSt7yw2PF" role="37wK5m">
+                  <property role="1rwKMK" value="label" />
+                  <node concept="3cmrfG" id="7jqSt7yw3jT" role="1rxHDW">
+                    <property role="3cmrfH" value="7" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="1rwKMM" id="7jqSt7yw2PF" role="37wK5m">
-              <property role="1rwKMK" value="label" />
-              <node concept="3cmrfG" id="7jqSt7yw3jT" role="1rxHDW">
-                <property role="3cmrfH" value="7" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="12uRwu$fune" role="3cqZAp">
+          <node concept="3SKWN0" id="12uRwu$funk" role="3SKWNk">
+            <node concept="3clFbF" id="3LlDVJTZqlw" role="3SKWNf">
+              <node concept="1rXfSq" id="7jqSt7yw1Fu" role="3clFbG">
+                <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+                <node concept="37vLTw" id="3LlDVJTZt00" role="37wK5m">
+                  <ref role="3cqZAo" node="7jqSt7yvZuu" resolve="remoteSubmission" />
+                </node>
+                <node concept="1rwKMM" id="7jqSt7yw1Fw" role="37wK5m">
+                  <property role="1rwKMK" value="panel" />
+                  <node concept="3cmrfG" id="7jqSt7yw1Fx" role="1rxHDW">
+                    <property role="3cmrfH" value="8" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3LlDVJTZqlw" role="3cqZAp">
-          <node concept="1rXfSq" id="7jqSt7yw1Fu" role="3clFbG">
-            <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
-            <node concept="37vLTw" id="3LlDVJTZt00" role="37wK5m">
+        <node concept="3clFbF" id="12uRwu$ewKj" role="3cqZAp">
+          <node concept="2OqwBi" id="12uRwu$exXo" role="3clFbG">
+            <node concept="37vLTw" id="12uRwu$ewKh" role="2Oq$k0">
               <ref role="3cqZAo" node="7jqSt7yvZuu" resolve="remoteSubmission" />
             </node>
-            <node concept="1rwKMM" id="7jqSt7yw1Fw" role="37wK5m">
-              <property role="1rwKMK" value="panel" />
-              <node concept="3cmrfG" id="7jqSt7yw1Fx" role="1rxHDW">
-                <property role="3cmrfH" value="8" />
+            <node concept="liA8E" id="12uRwu$eElX" role="2OqNvi">
+              <ref role="37wK5l" to="dbrf:~AbstractButton.setEnabled(boolean):void" resolve="setEnabled" />
+              <node concept="3clFbT" id="12uRwu$eEX_" role="37wK5m">
+                <property role="3clFbU" value="false" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3LlDVJTZqco" role="3cqZAp" />
       </node>
     </node>
     <node concept="2tJIrI" id="v01rbtX9ck" role="jymVt" />

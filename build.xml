@@ -460,11 +460,11 @@
   </target>
   
   <target name="makeDependents">
-    <ant antfile="../NYoSh/NYoSh.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../nyosh/NYoSh.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
-    <ant antfile="../NYoSh/ui.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../nyosh/ui.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
