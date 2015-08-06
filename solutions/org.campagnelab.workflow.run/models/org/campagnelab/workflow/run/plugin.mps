@@ -585,6 +585,117 @@
         <node concept="H_c77" id="7OkpSXJSgRu" role="1tU5fm" />
       </node>
     </node>
+    <node concept="yHkHE" id="4kZvAQCc$VM" role="yHkHi">
+      <property role="TrG5h" value="getAdditionalLibPath" />
+      <node concept="3clFbS" id="4kZvAQCc$VN" role="3clF47">
+        <node concept="3cpWs8" id="4kZvAQCcBJo" role="3cqZAp">
+          <node concept="3cpWsn" id="4kZvAQCcBJr" role="3cpWs9">
+            <property role="TrG5h" value="additionalLibPath" />
+            <node concept="17QB3L" id="4kZvAQCcBJm" role="1tU5fm" />
+            <node concept="10Nm6u" id="4kZvAQCfv_B" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4kZvAQCfvGZ" role="3cqZAp">
+          <node concept="3SKdUq" id="4kZvAQCfvHD" role="3SKWNk">
+            <property role="3SKdUp" value="try to find the installed plugin path:" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="4kZvAQCcCyd" role="3cqZAp">
+          <node concept="37vLTI" id="4kZvAQCcD82" role="3clFbG">
+            <node concept="37vLTw" id="4kZvAQCcCyb" role="37vLTJ">
+              <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
+            </node>
+            <node concept="2YIFZM" id="4kZvAQCcC2C" role="37vLTx">
+              <ref role="37wK5l" to="yla8:~PluginPathManager.getPluginHomePath(java.lang.String):java.lang.String" resolve="getPluginHomePath" />
+              <ref role="1Pybhc" to="yla8:~PluginPathManager" resolve="PluginPathManager" />
+              <node concept="Xl_RD" id="4kZvAQCcC5j" role="37wK5m">
+                <property role="Xl_RC" value="NextflowWorkbench" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4kZvAQCcC0s" role="3cqZAp">
+          <node concept="3clFbS" id="4kZvAQCcC0u" role="3clFbx">
+            <node concept="3cpWs6" id="4kZvAQCcDni" role="3cqZAp">
+              <node concept="37vLTw" id="4kZvAQCcDnD" role="3cqZAk">
+                <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="4kZvAQCcDjx" role="3clFbw">
+            <node concept="10Nm6u" id="4kZvAQCcDjS" role="3uHU7w" />
+            <node concept="37vLTw" id="4kZvAQCcD9c" role="3uHU7B">
+              <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4kZvAQCfvUQ" role="3cqZAp">
+          <node concept="3SKdUq" id="4kZvAQCfvVy" role="3SKWNk">
+            <property role="3SKdUp" value="if not found, continue looking for a development environment, in the run module:" />
+          </node>
+        </node>
+        <node concept="1QHqEK" id="6qWs7gtRrjX" role="3cqZAp">
+          <node concept="1QHqEC" id="6qWs7gtRrjY" role="1QHqEI">
+            <node concept="3clFbS" id="6qWs7gtRrjZ" role="1bW5cS">
+              <node concept="3cpWs8" id="6qWs7gtRrk0" role="3cqZAp">
+                <node concept="3cpWsn" id="6qWs7gtRrk1" role="3cpWs9">
+                  <property role="TrG5h" value="relativePathHelper" />
+                  <node concept="3uibUv" id="6qWs7gtRrk2" role="1tU5fm">
+                    <ref role="3uigEE" to="o3n2:5iAPpylXsc4" resolve="RelativePathHelper" />
+                  </node>
+                  <node concept="2OqwBi" id="6qWs7gtRrk3" role="33vP2m">
+                    <node concept="liA8E" id="6qWs7gtRrk4" role="2OqNvi">
+                      <ref role="37wK5l" to="o3n2:1AfwOXhJadN" resolve="getRelativePathHelper" />
+                      <node concept="2OqwBi" id="2RvrqSkrvWw" role="37wK5m">
+                        <node concept="2YIFZM" id="2RvrqSkrv_O" role="2Oq$k0">
+                          <ref role="37wK5l" to="cu2c:~SModelRepository.getInstance():jetbrains.mps.smodel.SModelRepository" resolve="getInstance" />
+                          <ref role="1Pybhc" to="cu2c:~SModelRepository" resolve="SModelRepository" />
+                        </node>
+                        <node concept="liA8E" id="2RvrqSkrygB" role="2OqNvi">
+                          <ref role="37wK5l" to="cu2c:~SModelRepository.getModelDescriptor(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="getModelDescriptor" />
+                          <node concept="2OqwBi" id="2RvrqSkrI25" role="37wK5m">
+                            <node concept="BaHAS" id="2RvrqSkrHK5" role="2Oq$k0">
+                              <property role="BaHAW" value="org.campagnelab.workflow.run.plugin" />
+                              <property role="BaGAP" value="" />
+                            </node>
+                            <node concept="LkI2h" id="2RvrqSkrIm_" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2YIFZM" id="6qWs7gtRrkc" role="2Oq$k0">
+                      <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
+                      <ref role="37wK5l" to="o3n2:4jjtc7WZTjd" resolve="defaultContext" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6qWs7gtRrkd" role="3cqZAp">
+                <node concept="37vLTI" id="6qWs7gtRrke" role="3clFbG">
+                  <node concept="2OqwBi" id="6qWs7gtRrkf" role="37vLTx">
+                    <node concept="37vLTw" id="6qWs7gtRrkg" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6qWs7gtRrk1" resolve="relativePathHelper" />
+                    </node>
+                    <node concept="liA8E" id="6qWs7gtRrkh" role="2OqNvi">
+                      <ref role="37wK5l" to="o3n2:1AfwOXhJahx" resolve="getBasePath" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="6qWs7gtRrki" role="37vLTJ">
+                    <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4kZvAQCcBSD" role="3cqZAp">
+          <node concept="37vLTw" id="4kZvAQCcBTS" role="3cqZAk">
+            <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4kZvAQCc_Va" role="3clF45" />
+    </node>
     <node concept="yHkDc" id="14R2qyOBxpX" role="yHkHg">
       <node concept="yHkD3" id="14R2qyOBxpY" role="yHkCN">
         <property role="TrG5h" value="panel" />
@@ -1735,60 +1846,31 @@
               <node concept="3cpWsn" id="6qWs7gtRrjT" role="3cpWs9">
                 <property role="TrG5h" value="additionalLibPath" />
                 <node concept="17QB3L" id="6qWs7gtRrjU" role="1tU5fm" />
-                <node concept="10Nm6u" id="6qWs7gtRrjV" role="33vP2m" />
+                <node concept="2OqwBi" id="4kZvAQCdzhB" role="33vP2m">
+                  <node concept="2OqwBi" id="4kZvAQCdyU9" role="2Oq$k0">
+                    <node concept="RBKsg" id="4kZvAQCdyUa" role="2Oq$k0" />
+                    <node concept="yHkDZ" id="4kZvAQCdyUb" role="2OqNvi">
+                      <ref role="yHkDY" node="5gyVhZ17Jlr" resolve="myRunParameters" />
+                    </node>
+                  </node>
+                  <node concept="2XshWL" id="4kZvAQCd$gO" role="2OqNvi">
+                    <ref role="2WH_rO" node="4kZvAQCc$VM" resolve="getAdditionalLibPath" />
+                  </node>
+                </node>
               </node>
             </node>
-            <node concept="1QHqEK" id="6qWs7gtRrjX" role="3cqZAp">
-              <node concept="1QHqEC" id="6qWs7gtRrjY" role="1QHqEI">
-                <node concept="3clFbS" id="6qWs7gtRrjZ" role="1bW5cS">
-                  <node concept="3cpWs8" id="6qWs7gtRrk0" role="3cqZAp">
-                    <node concept="3cpWsn" id="6qWs7gtRrk1" role="3cpWs9">
-                      <property role="TrG5h" value="relativePathHelper" />
-                      <node concept="3uibUv" id="6qWs7gtRrk2" role="1tU5fm">
-                        <ref role="3uigEE" to="o3n2:5iAPpylXsc4" resolve="RelativePathHelper" />
-                      </node>
-                      <node concept="2OqwBi" id="6qWs7gtRrk3" role="33vP2m">
-                        <node concept="liA8E" id="6qWs7gtRrk4" role="2OqNvi">
-                          <ref role="37wK5l" to="o3n2:1AfwOXhJadN" resolve="getRelativePathHelper" />
-                          <node concept="2OqwBi" id="2RvrqSkrvWw" role="37wK5m">
-                            <node concept="2YIFZM" id="2RvrqSkrv_O" role="2Oq$k0">
-                              <ref role="1Pybhc" to="cu2c:~SModelRepository" resolve="SModelRepository" />
-                              <ref role="37wK5l" to="cu2c:~SModelRepository.getInstance():jetbrains.mps.smodel.SModelRepository" resolve="getInstance" />
-                            </node>
-                            <node concept="liA8E" id="2RvrqSkrygB" role="2OqNvi">
-                              <ref role="37wK5l" to="cu2c:~SModelRepository.getModelDescriptor(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="getModelDescriptor" />
-                              <node concept="2OqwBi" id="2RvrqSkrI25" role="37wK5m">
-                                <node concept="BaHAS" id="2RvrqSkrHK5" role="2Oq$k0">
-                                  <property role="BaHAW" value="org.campagnelab.workflow.run.plugin" />
-                                  <property role="BaGAP" value="" />
-                                </node>
-                                <node concept="LkI2h" id="2RvrqSkrIm_" role="2OqNvi" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="2YIFZM" id="6qWs7gtRrkc" role="2Oq$k0">
-                          <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
-                          <ref role="37wK5l" to="o3n2:4jjtc7WZTjd" resolve="defaultContext" />
-                        </node>
-                      </node>
-                    </node>
+            <node concept="3clFbJ" id="4kZvAQCfK7D" role="3cqZAp">
+              <node concept="3clFbS" id="4kZvAQCfK7F" role="3clFbx">
+                <node concept="2LYoGF" id="4kZvAQCfKOa" role="3cqZAp">
+                  <node concept="Xl_RD" id="4kZvAQCfKVk" role="2LYoNm">
+                    <property role="Xl_RC" value="Unable to obtain additionalLibPath" />
                   </node>
-                  <node concept="3clFbF" id="6qWs7gtRrkd" role="3cqZAp">
-                    <node concept="37vLTI" id="6qWs7gtRrke" role="3clFbG">
-                      <node concept="2OqwBi" id="6qWs7gtRrkf" role="37vLTx">
-                        <node concept="37vLTw" id="6qWs7gtRrkg" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6qWs7gtRrk1" resolve="relativePathHelper" />
-                        </node>
-                        <node concept="liA8E" id="6qWs7gtRrkh" role="2OqNvi">
-                          <ref role="37wK5l" to="o3n2:1AfwOXhJahx" resolve="getBasePath" />
-                        </node>
-                      </node>
-                      <node concept="37vLTw" id="6qWs7gtRrki" role="37vLTJ">
-                        <ref role="3cqZAo" node="6qWs7gtRrjT" resolve="additionalLibPath" />
-                      </node>
-                    </node>
-                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="4kZvAQCfKwR" role="3clFbw">
+                <node concept="10Nm6u" id="4kZvAQCfKB3" role="3uHU7w" />
+                <node concept="37vLTw" id="4kZvAQCfKfx" role="3uHU7B">
+                  <ref role="3cqZAo" node="6qWs7gtRrjT" resolve="additionalLibPath" />
                 </node>
               </node>
             </node>
