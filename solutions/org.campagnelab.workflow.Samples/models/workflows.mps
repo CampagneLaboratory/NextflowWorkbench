@@ -402,7 +402,7 @@
       </node>
     </node>
     <node concept="2$rEH5" id="1WG1fjcG53S" role="2$rEHq">
-      <ref role="2$rEH4" to="hg90:1WG1fjcGqMw" resolve="SortSequences" />
+      <ref role="2$rEH4" to="hg90:1WG1fjcGqMw" resolve="Sort" />
       <node concept="1uYdA0" id="1WG1fjcG55t" role="1uLvPH">
         <ref role="1uK_4X" node="1WG1fjcG2k7" resolve="sequencesWithPattern" />
       </node>
@@ -493,7 +493,7 @@
       </node>
     </node>
     <node concept="2$rEH5" id="6kZ7DevS$x9" role="2$rEHq">
-      <ref role="2$rEH4" to="hg90:1WG1fjcGqMw" resolve="SortSequences" />
+      <ref role="2$rEH4" to="hg90:1WG1fjcGqMw" resolve="Sort" />
       <node concept="1uYdA0" id="6kZ7DevS$$j" role="1uLvPH">
         <ref role="1uK_4X" node="6kZ7DevQSo6" resolve="matchingSequences" />
       </node>
