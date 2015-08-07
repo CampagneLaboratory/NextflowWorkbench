@@ -260,11 +260,13 @@
     <property role="TrG5h" value="analyze" />
     <node concept="2lYRya" id="3rUult5h7Fc" role="2ulM79">
       <property role="TrG5h" value="*.txt" />
-      <node concept="16pRw0" id="3rUult5h7Ff" role="2ybFLk" />
+      <node concept="kktkh" id="1NhN7oYQGQt" role="2ybFLk">
+        <node concept="16pRw0" id="1NhN7oYQGQu" role="2y8EMt" />
+      </node>
     </node>
     <node concept="2mjA9o" id="3rUult5h7Ei" role="2ulM7n">
       <property role="TrG5h" value="'index_*'" />
-      <node concept="16pRw0" id="3rUult5h7Eq" role="2ybFLk" />
+      <node concept="16pRw0" id="1NhN7oYYeeS" role="2ybFLk" />
     </node>
     <node concept="3Y$Zt1" id="34JZ5vs_Ul8" role="2ulM7a">
       <node concept="19SGf9" id="34JZ5vs_Ul9" role="3Y$PkS">
@@ -871,7 +873,7 @@
   <node concept="2$rMIF" id="3EHTfOJ130B">
     <property role="TrG5h" value="SplitFunctionTest" />
     <node concept="2$rEH5" id="3EHTfOJ130C" role="2$rEHq">
-      <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
+      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
       <node concept="1uYdA0" id="3EHTfOJ139x" role="1uLvPH">
         <ref role="1uK_4X" node="3EHTfOJ135G" resolve="paths" />
         <node concept="1teHI3" id="dOBxzzmFdJ" role="1ylr64">
@@ -884,13 +886,14 @@
             <property role="3x3bhU" value="UTF-8" />
           </node>
         </node>
+        <node concept="1yaYav" id="1NhN7oY8TgB" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="dOBxz_y4wF" role="1uLvPA">
-        <property role="TrG5h" value="" />
+        <property role="TrG5h" value="newFile" />
       </node>
     </node>
     <node concept="2$rEH5" id="1jEBYCnnM9R" role="2$rEHq">
-      <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
+      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
       <node concept="1uYdA0" id="1jEBYCnnMa_" role="1uLvPH">
         <ref role="1uK_4X" node="1jEBYCnnLPE" resolve="pathsCopy" />
         <node concept="1te2Xs" id="6rc3Z5N$I2G" role="1ylr64">
@@ -901,9 +904,10 @@
             </node>
           </node>
         </node>
+        <node concept="1yaYav" id="1NhN7oY8Tm6" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="1jEBYCnnMaA" role="1uLvPA">
-        <property role="TrG5h" value="" />
+        <property role="TrG5h" value="newFile2" />
       </node>
     </node>
     <node concept="1CVceo" id="3EHTfOJ135G" role="2$L6iY">
