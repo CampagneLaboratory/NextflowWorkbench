@@ -313,7 +313,6 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -3483,19 +3482,11 @@
               </node>
             </node>
           </node>
-          <node concept="22lmx$" id="4O3IO9rcFMl" role="3clFbw">
-            <node concept="3clFbC" id="4O3IO9r_wEF" role="3uHU7w">
-              <node concept="37vLTw" id="3rUult5a2Qc" role="3uHU7B">
-                <ref role="3cqZAo" node="3rUult5a2FH" resolve="name" />
-              </node>
-              <node concept="Xl_RD" id="4O3IO9scWUZ" role="3uHU7w">
-                <property role="Xl_RC" value="" />
-              </node>
+          <node concept="2OqwBi" id="1NhN7oYoxRO" role="3clFbw">
+            <node concept="37vLTw" id="1NhN7oYoxHg" role="2Oq$k0">
+              <ref role="3cqZAo" node="3rUult5a2FH" resolve="name" />
             </node>
-            <node concept="2OqwBi" id="4O3IO9r8QT_" role="3uHU7B">
-              <node concept="13iPFW" id="4O3IO9r8QPB" role="2Oq$k0" />
-              <node concept="3w_OXm" id="4O3IO9r8Rfs" role="2OqNvi" />
-            </node>
+            <node concept="17RlXB" id="1NhN7oYoyAT" role="2OqNvi" />
           </node>
         </node>
         <node concept="2Gpval" id="7QD3GgaNlVB" role="3cqZAp">
@@ -3503,33 +3494,22 @@
             <property role="TrG5h" value="outputChannel" />
           </node>
           <node concept="3clFbS" id="7QD3GgaNlVD" role="2LFqv$">
-            <node concept="3cpWs8" id="4O3IO9rvjJq" role="3cqZAp">
-              <node concept="3cpWsn" id="4O3IO9rvjJt" role="3cpWs9">
-                <property role="TrG5h" value="copiedChannel" />
-                <node concept="3Tqbb2" id="4O3IO9rvjJo" role="1tU5fm">
-                  <ref role="ehGHo" to="iowz:3m26PihhBwN" resolve="OutChannelContainer" />
-                </node>
-                <node concept="2OqwBi" id="4O3IO9rvkrR" role="33vP2m">
-                  <node concept="2OqwBi" id="4O3IO9rvjZm" role="2Oq$k0">
-                    <node concept="2GrUjf" id="4O3IO9rvjXI" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="7QD3GgaNlVC" resolve="outputChannel" />
-                    </node>
-                    <node concept="1$rogu" id="4O3IO9rvkf4" role="2OqNvi" />
-                  </node>
-                  <node concept="3YRAZt" id="4O3IO9rvkVz" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="4O3IO9riV3q" role="3cqZAp">
               <node concept="3cpWsn" id="4O3IO9riV3t" role="3cpWs9">
                 <property role="TrG5h" value="changedChannelName" />
                 <node concept="17QB3L" id="4O3IO9riV3o" role="1tU5fm" />
                 <node concept="2OqwBi" id="4O3IO9riVbf" role="33vP2m">
-                  <node concept="37vLTw" id="4O3IO9rvkW5" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4O3IO9rvjJt" resolve="copiedChannel" />
-                  </node>
                   <node concept="3TrcHB" id="4O3IO9rvl9t" role="2OqNvi">
                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                  <node concept="2OqwBi" id="1NhN7oYgWKF" role="2Oq$k0">
+                    <node concept="2OqwBi" id="1NhN7oYgWKG" role="2Oq$k0">
+                      <node concept="2GrUjf" id="1NhN7oYgWKH" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="7QD3GgaNlVC" resolve="outputChannel" />
+                      </node>
+                      <node concept="1$rogu" id="1NhN7oYgWKI" role="2OqNvi" />
+                    </node>
+                    <node concept="3YRAZt" id="1NhN7oYgWKJ" role="2OqNvi" />
                   </node>
                 </node>
               </node>
