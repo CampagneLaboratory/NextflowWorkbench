@@ -13,8 +13,8 @@
   <property name="artifacts.mpsCore" location="${mps_home}" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
   <property name="artifacts.mps-sl-all" location="${mps-richtext.location}" />
-  <property name="artifacts.org.campagnelab.NYoSh" location="../nyosh/build/artifacts/org.campagnelab.NYoSh" />
-  <property name="artifacts.org.campagnelab.mps.UI" location="../nyosh/build/artifacts/org.campagnelab.mps.UI" />
+  <property name="artifacts.org.campagnelab.NYoSh" location="../NYoSh/build/artifacts/org.campagnelab.NYoSh" />
+  <property name="artifacts.org.campagnelab.mps.UI" location="../NYoSh/build/artifacts/org.campagnelab.mps.UI" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.org.campagnelab.NYoSh}/build.properties" prefix="import.org.campagnelab.NYoSh" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -295,8 +295,8 @@
   </target>
   
   <target name="buildDependents">
-    <ant antfile="../nyosh/NYoSh.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../nyosh/ui.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../NYoSh/NYoSh.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../NYoSh/ui.xml" inheritAll="false" useNativeBasedir="true" />
   </target>
   
   <target name="fetchDependencies">
@@ -460,11 +460,11 @@
   </target>
   
   <target name="makeDependents">
-    <ant antfile="../nyosh/NYoSh.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../NYoSh/NYoSh.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
-    <ant antfile="../nyosh/ui.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../NYoSh/ui.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
