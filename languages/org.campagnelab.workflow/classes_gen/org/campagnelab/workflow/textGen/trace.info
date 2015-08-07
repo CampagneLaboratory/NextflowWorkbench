@@ -13,6 +13,66 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2076665711407130938">
+    <file name="Collate_TextGen.java">
+      <node id="2076665711407186709" at="14,42,15,83" concept="1" />
+      <node id="2076665711407186709" at="15,83,16,21" concept="1" />
+      <node id="2076665711407186709" at="16,21,17,193" concept="1" />
+      <node id="2076665711407258239" at="18,185,19,24" concept="1" />
+      <node id="2076665711407258239" at="19,24,20,183" concept="0" />
+      <node id="2076665711407258239" at="19,24,20,183" concept="1" />
+      <node id="2076665711407263429" at="22,194,23,24" concept="1" />
+      <node id="2076665711407263429" at="23,24,24,192" concept="0" />
+      <node id="2076665711407263429" at="23,24,24,192" concept="1" />
+      <node id="2076665711409232074" at="25,5,26,21" concept="0" />
+      <node id="2076665711409232074" at="25,5,26,21" concept="1" />
+      <node id="2076665711407258239" at="18,185,20,183" concept="0" />
+      <node id="2076665711407263429" at="22,194,24,192" concept="0" />
+      <node id="2076665711407186709" at="14,42,17,193" concept="0" />
+      <node id="2076665711407242802" at="17,193,21,5" concept="3" />
+      <node id="2076665711407259689" at="21,5,25,5" concept="3" />
+      <node id="2076665711407130938" at="14,0,28,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="2076665711407258239" at="19,24,20,183" />
+      <scope id="2076665711407263429" at="23,24,24,192" />
+      <scope id="2076665711409232074" at="25,5,26,21" />
+      <scope id="2076665711407242804" at="18,185,20,183" />
+      <scope id="2076665711407258239" at="18,185,20,183" />
+      <scope id="2076665711407259691" at="22,194,24,192" />
+      <scope id="2076665711407263429" at="22,194,24,192" />
+      <scope id="2076665711407186709" at="14,42,17,193" />
+      <scope id="2076665711407130938" at="14,42,26,21" />
+      <scope id="2076665711407130938" at="14,0,28,0">
+        <var name="node" id="2076665711407130938" />
+      </scope>
+      <unit id="2076665711407130938" at="13,0,29,0" name="org.campagnelab.workflow.textGen.Collate_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2076665711407264644">
+    <file name="CollateAllowIncompleteTuples_TextGen.java">
+      <node id="2076665711407264667" at="11,42,12,207" concept="0" />
+      <node id="2076665711407264667" at="11,42,12,207" concept="1" />
+      <node id="2076665711407264644" at="11,0,14,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="2076665711407264644" at="11,42,12,207" />
+      <scope id="2076665711407264667" at="11,42,12,207" />
+      <scope id="2076665711407264644" at="11,0,14,0">
+        <var name="node" id="2076665711407264644" />
+      </scope>
+      <unit id="2076665711407264644" at="10,0,15,0" name="org.campagnelab.workflow.textGen.CollateAllowIncompleteTuples_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2076665711407267190">
+    <file name="CollateStepSize_TextGen.java">
+      <node id="2076665711407267216" at="11,42,12,200" concept="0" />
+      <node id="2076665711407267216" at="11,42,12,200" concept="1" />
+      <node id="2076665711407267190" at="11,0,14,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="2076665711407267190" at="11,42,12,200" />
+      <scope id="2076665711407267216" at="11,42,12,200" />
+      <scope id="2076665711407267190" at="11,0,14,0">
+        <var name="node" id="2076665711407267190" />
+      </scope>
+      <unit id="2076665711407267190" at="10,0,15,0" name="org.campagnelab.workflow.textGen.CollateStepSize_TextGen" />
+    </file>
+  </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/248997709128152911">
     <file name="Charset_TextGen.java">
       <node id="248997709128183913" at="13,42,14,83" concept="1" />

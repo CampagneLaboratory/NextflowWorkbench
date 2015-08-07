@@ -6,6 +6,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="5" />
+    <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports>
     <import index="2hwc" ref="r:e9410272-2b63-4194-bbf1-939c80e0d366(model)" />
@@ -66,6 +67,24 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="748852418098455525" name="org.campagnelab.workflow.structure.NameInAChannelRef" flags="ng" index="2b_LqF">
+        <reference id="748852418098455526" name="value" index="2b_LqC" />
+      </concept>
+      <concept id="4018964125401476997" name="org.campagnelab.workflow.structure.List" flags="ng" index="kktkh">
+        <child id="7391172440886351025" name="elementType" index="2y8EMt" />
+      </concept>
+      <concept id="4018964125401495568" name="org.campagnelab.workflow.structure.Tuple" flags="ng" index="knwa4">
+        <child id="7391172440899058539" name="elements" index="2zSOd7" />
+      </concept>
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
+      <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
+        <child id="7457140171610928304" name="outputs" index="2ulM79" />
+        <child id="7457140171610928307" name="script" index="2ulM7a" />
+        <child id="7457140171610928302" name="inputs" index="2ulM7n" />
+      </concept>
+      <concept id="7457140171610954017" name="org.campagnelab.workflow.structure.Script" flags="ng" index="2ulSLo" />
+      <concept id="7391172440898975896" name="org.campagnelab.workflow.structure.TupleElement" flags="ng" index="2zSw2O" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
         <child id="8369613327464344476" name="outChannel" index="1uLvPA" />
@@ -101,7 +120,14 @@
       </concept>
       <concept id="6588488528864881600" name="org.campagnelab.workflow.structure.ReportFunction" flags="ig" index="2UPiyC" />
       <concept id="6588488528864881603" name="org.campagnelab.workflow.structure.ReportParameter" flags="ng" index="2UPiyF" />
+      <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
+      <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
+      <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
+      <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
+      <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
+        <child id="7391172440887133304" name="type" index="2ybFLk" />
+      </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
         <child id="3857878650537656757" name="functions" index="1ylr64" />
@@ -110,6 +136,9 @@
       <concept id="3857878650533842792" name="org.campagnelab.workflow.structure.Flatten" flags="ng" index="1yaZXp" />
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
+      </concept>
+      <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
+        <child id="8074343669091434993" name="text" index="3Y$PkS" />
       </concept>
     </language>
   </registry>
@@ -219,7 +248,7 @@
     <node concept="3ZW7eb" id="5wcZjhOWEpM" role="lGtFl">
       <property role="2ripvU" value="1" />
       <property role="TrG5h" value="WorkflowIllustration" />
-      <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
+      <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
     </node>
     <node concept="19SGf9" id="5wcZjhPahNh" role="GZ$AB">
       <node concept="19SUe$" id="5wcZjhPahNi" role="19SJt6">
@@ -232,6 +261,7 @@
     <property role="KZc57" value="/Users/fac2003/Documents/Workflow_Doc/figures" />
   </node>
   <node concept="2$rMIF" id="7wWbCzYoDIy">
+    <property role="TrG5h" value="NewWorkflow" />
     <node concept="2$rEH5" id="7wWbCzYoDIz" role="2$rEHq" />
     <node concept="3ZW7eb" id="7wWbCzYoDJf" role="lGtFl">
       <property role="2ripvU" value="1" />
@@ -368,6 +398,100 @@
       <property role="2ripvU" value="1" />
       <property role="TrG5h" value="ExamplesOfInputData" />
       <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
+    </node>
+  </node>
+  <node concept="2$rMIF" id="7wWbCzYVUxD">
+    <property role="TrG5h" value="NewProcess" />
+    <node concept="2$rEH5" id="7wWbCzYVUxE" role="2$rEHq">
+      <node concept="3ZW7eb" id="7wWbCzYVUxJ" role="lGtFl">
+        <property role="2ripvU" value="1" />
+        <property role="TrG5h" value="NewProcessReference" />
+        <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
+      </node>
+    </node>
+    <node concept="19SGf9" id="7wWbCzYVUxF" role="GZ$AB">
+      <node concept="19SUe$" id="7wWbCzYVUxG" role="19SJt6">
+        <property role="19SUeA" value="New process reference" />
+      </node>
+    </node>
+  </node>
+  <node concept="KZc4b" id="3WNK9KXJFMx">
+    <property role="TrG5h" value="JasonFIGURES" />
+    <property role="KZc57" value="/Users/jasonkurs/Workflow_Doc/figures" />
+  </node>
+  <node concept="2ulcR8" id="3WNK9KXJFgM">
+    <node concept="2ulSLo" id="3WNK9KXJFgN" role="2ulM7a" />
+    <node concept="3ZW7eb" id="3WNK9KXJFin" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="ProcessWithSetInput" />
+      <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
+    </node>
+    <node concept="2mjA9o" id="17cHcBwD1wN" role="2ulM7n">
+      <property role="TrG5h" value="boolVal" />
+      <node concept="1utKzZ" id="17cHcBwD1wV" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="17cHcBwD1xZ" role="2ulM7n">
+      <property role="TrG5h" value="filePath" />
+      <node concept="16pRw0" id="17cHcBwD1y9" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="17cHcBwD1yE" role="2ulM7n">
+      <property role="TrG5h" value="num" />
+      <node concept="1utKN4" id="17cHcBwD1yQ" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="17cHcBwD1yY" role="2ulM7n">
+      <property role="TrG5h" value="listOfNums" />
+      <node concept="kktkh" id="17cHcBwD1zh" role="2ybFLk">
+        <node concept="1utKN4" id="17cHcBwD1_w" role="2y8EMt" />
+      </node>
+    </node>
+    <node concept="2mjA9o" id="17cHcBwD1B5" role="2ulM7n">
+      <property role="TrG5h" value="name" />
+      <node concept="16pbKc" id="17cHcBwD1Bm" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="17cHcBwD1Bu" role="2ulM7n">
+      <node concept="knwa4" id="17cHcBwD1BQ" role="2ybFLk">
+        <node concept="2zSw2O" id="17cHcBwD1BS" role="2zSOd7">
+          <property role="TrG5h" value="fileName" />
+          <node concept="16pRw0" id="17cHcBwD1Cc" role="2ybFLk" />
+        </node>
+        <node concept="2zSw2O" id="17cHcBwD1Df" role="2zSOd7">
+          <property role="TrG5h" value="flag" />
+          <node concept="1utKzZ" id="17cHcBwD1DH" role="2ybFLk" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2ulcR8" id="34JZ5vsmm0i">
+    <property role="TrG5h" value="BashEx" />
+    <node concept="2lYRya" id="3rUult5h7Fc" role="2ulM79">
+      <property role="TrG5h" value="'finalFile.txt'" />
+      <node concept="16pRw0" id="3rUult5h7Ff" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="3rUult5h7Ei" role="2ulM7n">
+      <property role="TrG5h" value="'exampleFile.txt'" />
+      <node concept="16pRw0" id="3rUult5h7Eq" role="2ybFLk" />
+    </node>
+    <node concept="3Y$Zt1" id="34JZ5vs_Ul8" role="2ulM7a">
+      <node concept="19SGf9" id="34JZ5vs_Ul9" role="3Y$PkS">
+        <node concept="19SUe$" id="34JZ5vs_Ula" role="19SJt6">
+          <property role="19SUeA" value="cat " />
+        </node>
+        <node concept="2b_LqF" id="x9V7s05QUx" role="19SJt6">
+          <ref role="2b_LqC" node="3rUult5h7Ei" resolve="'exampleFile.txt'" />
+        </node>
+        <node concept="19SUe$" id="x9V7s05QUw" role="19SJt6">
+          <property role="19SUeA" value=" &gt; " />
+        </node>
+        <node concept="2b_LqF" id="x9V7s05QUJ" role="19SJt6">
+          <ref role="2b_LqC" node="3rUult5h7Fc" resolve="'finalFile.txt'" />
+        </node>
+        <node concept="19SUe$" id="x9V7s05QUK" role="19SJt6" />
+      </node>
+    </node>
+    <node concept="3ZW7eb" id="x9V7s05XuY" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="BashExample" />
+      <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
     </node>
   </node>
 </model>
