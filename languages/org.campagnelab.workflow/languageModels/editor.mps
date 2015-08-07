@@ -2607,7 +2607,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="XaRILjgVD0">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
     <ref role="1XX52x" to="iowz:XaRILjgU7G" resolve="GroupTuple" />
     <node concept="3EZMnI" id="XaRILjgVD2" role="2wV5jI">
       <node concept="3F0ifn" id="XaRILjgVD9" role="3EZMnx">

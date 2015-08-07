@@ -4033,7 +4033,7 @@
   </node>
   <node concept="1YbPZF" id="XaRILjgVE_">
     <property role="TrG5h" value="typeof_GroupTuple" />
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
     <property role="18ip37" value="true" />
     <node concept="3clFbS" id="XaRILjgVEA" role="18ibNy">
       <node concept="1Z5TYs" id="XaRILjgX9i" role="3cqZAp">

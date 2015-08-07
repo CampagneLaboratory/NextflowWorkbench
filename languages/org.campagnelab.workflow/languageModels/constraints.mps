@@ -2006,5 +2006,31 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="71ITBVySQCa">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="1M2myG" to="iowz:XaRILjgU7G" resolve="GroupTuple" />
+    <node concept="nKS2y" id="71ITBVySQCq" role="1MLUbF">
+      <node concept="3clFbS" id="71ITBVySQCr" role="2VODD2">
+        <node concept="3clFbF" id="71ITBVySQC$" role="3cqZAp">
+          <node concept="3clFbT" id="71ITBVySQCz" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="71ITBVySQS_">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="1M2myG" to="iowz:1qs9CHFOmDW" resolve="ArgRegexQualifierPredicate" />
+    <node concept="nKS2y" id="71ITBVySQSS" role="1MLUbF">
+      <node concept="3clFbS" id="71ITBVySQST" role="2VODD2">
+        <node concept="3clFbF" id="71ITBVySQXQ" role="3cqZAp">
+          <node concept="3clFbT" id="71ITBVySQXP" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

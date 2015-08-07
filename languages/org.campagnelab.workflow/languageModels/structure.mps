@@ -517,7 +517,7 @@
     <property role="3GE5qa" value="channelFunctions.collate" />
     <property role="TrG5h" value="Collate" />
     <property role="34LRSv" value="collate" />
-    <property role="R4oN_" value="transforms a channel such that the emitted values are grouped into lists containing n items" />
+    <property role="R4oN_" value="Group elements into lists of n elements" />
     <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
     <node concept="1TJgyj" id="2W8f1273GsD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -538,21 +538,21 @@
     <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
     <property role="TrG5h" value="Flatten" />
     <property role="34LRSv" value="flatten" />
-    <property role="R4oN_" value="transforms a channel's lists of elements into single entries to be emitted separately" />
+    <property role="R4oN_" value="Flatten lists of elements into single elements" />
     <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCxaI">
     <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
     <property role="TrG5h" value="ToList" />
     <property role="34LRSv" value="toList" />
-    <property role="R4oN_" value="converts all the items emitted by a channel to a single list object and emits the list as a single item " />
+    <property role="R4oN_" value="Convert elements to a list element" />
     <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCxgw">
     <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
     <property role="TrG5h" value="ToSortedList" />
     <property role="34LRSv" value="toSortedList" />
-    <property role="R4oN_" value="collects all the items emitted by a list object, sorts them, and then emits the list as a single item" />
+    <property role="R4oN_" value="Convert elements to a sorted list element" />
     <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
   </node>
   <node concept="1TIwiD" id="5AoFZCLt6Ly">
@@ -1197,7 +1197,7 @@
     <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
     <property role="TrG5h" value="ToTuple" />
     <property role="34LRSv" value="toTuple" />
-    <property role="R4oN_" value="converts all of the elements in the channel into tuples matching the size of the input channel the function is applied to" />
+    <property role="R4oN_" value="Convert elements into tuples" />
     <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
   </node>
   <node concept="1TIwiD" id="3aOvEIt8nSZ">
@@ -1307,21 +1307,21 @@
     <property role="3GE5qa" value="channelFunctions.splitFunctions" />
     <property role="TrG5h" value="SplitText" />
     <property role="34LRSv" value="splitText" />
-    <property role="R4oN_" value="split multi-line strings or text file items into chunks containing n lines, which will be emitted by the channel" />
+    <property role="R4oN_" value=" Create records from elements in plain text format" />
     <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILjgXaG">
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
     <property role="TrG5h" value="Buffer" />
     <property role="34LRSv" value="buffer" />
-    <property role="R4oN_" value="gathers the items emitted by the channel into subsets and then emits the subsets separately" />
+    <property role="R4oN_" value="Gather elements into subsets, emit the subsets separately" />
     <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
   </node>
   <node concept="1TIwiD" id="XaRILilGma">
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
     <property role="TrG5h" value="First" />
     <property role="34LRSv" value="first" />
-    <property role="R4oN_" value="returns the first item emitted by the channel, or the first item that matches a condition" />
+    <property role="R4oN_" value="Pick the first element or the first matching the condition" />
     <ref role="1TJDcQ" node="1qs9CHFOmDW" resolve="ArgRegexQualifierPredicate" />
   </node>
   <node concept="1TIwiD" id="XaRILis0lI">
@@ -1340,7 +1340,7 @@
     <property role="3GE5qa" value="channelFunctions.splitFunctions" />
     <property role="TrG5h" value="SplitCSV" />
     <property role="34LRSv" value="splitCSV" />
-    <property role="R4oN_" value="parse text items emitted by a channel into records or group them into lists of records with a specific length" />
+    <property role="R4oN_" value="Create records from elements in CSV format" />
     <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILisRbb">
@@ -1354,7 +1354,7 @@
     <property role="3GE5qa" value="channelFunctions.literalFunctions" />
     <property role="TrG5h" value="Take" />
     <property role="34LRSv" value="take" />
-    <property role="R4oN_" value="allows you to filter only the first n items emitted by a channel" />
+    <property role="R4oN_" value="Pick the first n elements" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
     <node concept="1TJgyj" id="4O3IO9sBqd3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1374,7 +1374,7 @@
     <property role="3GE5qa" value="channelFunctions.splitFunctions" />
     <property role="TrG5h" value="SplitFastq" />
     <property role="34LRSv" value="splitFastq" />
-    <property role="R4oN_" value="split the entries emitted by a channel into a text chunk for each sequence in the received item" />
+    <property role="R4oN_" value="Create records from elements in FASTQ format" />
     <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILilDAq">
@@ -1397,10 +1397,10 @@
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILjgU7G">
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
     <property role="TrG5h" value="GroupTuple" />
     <property role="34LRSv" value="groupTuple" />
-    <property role="R4oN_" value="collects tuples of values emitted by the channel grouping together the values that share the same key, and then emits a new tuple for each distinct key" />
+    <property role="R4oN_" value="Collect tuples of elements that share the same key" />
     <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
   </node>
   <node concept="1TIwiD" id="XaRILhIYk3">
@@ -1435,27 +1435,27 @@
     <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
     <property role="TrG5h" value="Last" />
     <property role="34LRSv" value="last" />
-    <property role="R4oN_" value="returns the last item emitted by the channel" />
+    <property role="R4oN_" value="Pick the last element" />
     <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILisH5y">
     <property role="3GE5qa" value="channelFunctions.splitFunctions" />
     <property role="TrG5h" value="SplitFasta" />
     <property role="34LRSv" value="splitFasta" />
-    <property role="R4oN_" value="split the entries emitted by a channel into text items for each sequence in the received FASTA content" />
+    <property role="R4oN_" value="Create records from elements in FASTA format" />
     <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILjgRyP">
     <property role="3GE5qa" value="channelFunctions" />
     <property role="TrG5h" value="Reduce" />
     <property role="34LRSv" value="reduce" />
-    <property role="R4oN_" value="applies a function to every item in the channel and emits the result of the last call of the function as the only output" />
+    <property role="R4oN_" value="Apply a function to every elements" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILhslAr">
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
     <property role="TrG5h" value="Filter" />
-    <property role="R4oN_" value="use a regular expression, a literal value, a type qualifier, or any boolean predicate to get only the items in a channel satisfying the condition" />
+    <property role="R4oN_" value="Filter elements matching the condition" />
     <property role="34LRSv" value="filter" />
     <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
   </node>
@@ -1555,7 +1555,7 @@
     <property role="3GE5qa" value="channelFunctions.withChannelRef" />
     <property role="34LRSv" value="mix" />
     <property role="TrG5h" value="Mix" />
-    <property role="R4oN_" value="Combines the items emitted by two (or more) channels into the source channel" />
+    <property role="R4oN_" value="Combine elements from different channels" />
     <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeIaW">
@@ -1576,7 +1576,7 @@
     <property role="3GE5qa" value="channelFunctions.withChannelRef" />
     <property role="TrG5h" value="Tap" />
     <property role="34LRSv" value="tap" />
-    <property role="R4oN_" value="it connects two channels, copying the values from the source into the tapped channel. " />
+    <property role="R4oN_" value="Copy the elements into a new channel " />
     <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcO3d">
@@ -1644,7 +1644,7 @@
     <property role="3GE5qa" value="channelFunctions.literalFunctions" />
     <property role="TrG5h" value="Spread" />
     <property role="34LRSv" value="spread" />
-    <property role="R4oN_" value="combines each object in the channel with each object in the argument into a tuple" />
+    <property role="R4oN_" value="Combine each element with the argument into a tuple" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
     <node concept="1TJgyj" id="4O3IO9swAdJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1682,6 +1682,7 @@
     <property role="3GE5qa" value="channelFunctions.withChannelRef" />
     <property role="TrG5h" value="Concat" />
     <property role="34LRSv" value="concat" />
+    <property role="R4oN_" value="Concatenate elements by keeping the same order" />
     <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeGXs">
