@@ -1555,6 +1555,7 @@
     <property role="3GE5qa" value="channelFunctions.withChannelRef" />
     <property role="34LRSv" value="mix" />
     <property role="TrG5h" value="Mix" />
+    <property role="R4oN_" value="Combines the items emitted by two (or more) channels into the source channel" />
     <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeIaW">
