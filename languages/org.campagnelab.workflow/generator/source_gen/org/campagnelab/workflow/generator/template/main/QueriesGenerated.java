@@ -72,10 +72,10 @@ public class QueriesGenerated {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, 0x5b6f0368e19f7320L, "reports"));
   }
   public static Iterable<SNode> sourceNodesQuery_8584871179161866609(final SourceSubstituteMacroNodesContext _context) {
-    return SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6fc5345L, "org.campagnelab.workflow.structure.InputValue"), false, new SAbstractConcept[]{});
+    return SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6fc5345L, "org.campagnelab.workflow.structure.InputValue"), true, new SAbstractConcept[]{});
   }
   public static Iterable<SNode> sourceNodesQuery_8584871179163434026(final SourceSubstituteMacroNodesContext _context) {
-    return SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b74709cdL, "org.campagnelab.workflow.structure.InputFromBaseLanguageScript"), false, new SAbstractConcept[]{});
+    return SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b74709cdL, "org.campagnelab.workflow.structure.InputFromBaseLanguageScript"), true, new SAbstractConcept[]{});
   }
   public static Iterable<SNode> sourceNodesQuery_8584871179158476143(final SourceSubstituteMacroNodesContext _context) {
     return ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, 0x5a479937fe29326dL, "processes"))).where(new IWhereFilter<SNode>() {

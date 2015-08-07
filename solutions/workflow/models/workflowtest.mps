@@ -80,6 +80,13 @@
       <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="7950630069016296375" name="org.campagnelab.workflow.structure.ChannelFunctionWithChannelRef" flags="ng" index="25Nhr">
+        <child id="7950630069016299487" name="channelContainerRef" index="25WwN" />
+      </concept>
+      <concept id="7950630069016299192" name="org.campagnelab.workflow.structure.Tap" flags="ng" index="25W_k" />
+      <concept id="7950630069015852653" name="org.campagnelab.workflow.structure.OutChannelContainerRef" flags="ng" index="2rfA1">
+        <reference id="7950630069015854237" name="outChannelContainer" index="2rfdL" />
+      </concept>
       <concept id="2590112629724566341" name="org.campagnelab.workflow.structure.InputValue" flags="ng" index="2l3rVN">
         <reference id="2590112629724567366" name="input" index="2l3rFK" />
       </concept>
@@ -121,7 +128,6 @@
       <concept id="6588488528864881600" name="org.campagnelab.workflow.structure.ReportFunction" flags="ig" index="2UPiyC" />
       <concept id="6588488528864881603" name="org.campagnelab.workflow.structure.ReportParameter" flags="ng" index="2UPiyF" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
-      <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
@@ -129,6 +135,7 @@
       </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
+        <child id="3857878650537656757" name="functions" index="1ylr64" />
       </concept>
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
@@ -145,12 +152,13 @@
     <property role="TrG5h" value="test" />
     <node concept="2lYRya" id="3x6pbm2KG4z" role="2ulM79">
       <property role="TrG5h" value="'output'" />
-      <node concept="16pRw0" id="3x6pbm2KGhk" role="2ybFLk" />
+      <property role="2lYOoT" value="true" />
+      <node concept="16pbKc" id="79W9gdUekdo" role="2ybFLk" />
     </node>
     <node concept="3Y$Zt1" id="2hwCr1Mk2m6" role="2ulM7a">
       <node concept="19SGf9" id="2hwCr1Mk2m8" role="3Y$PkS">
         <node concept="19SUe$" id="2hwCr1Mk2m9" role="19SJt6">
-          <property role="19SUeA" value="echo !{mavaleur} &gt; output" />
+          <property role="19SUeA" value="echo !{mavaleur} " />
         </node>
       </node>
     </node>
@@ -169,6 +177,11 @@
       <ref role="2$rEH4" node="2hwCr1MjRuG" resolve="test" />
       <node concept="1uYdA0" id="1m6aGq8QnLq" role="1uLvPH">
         <ref role="1uK_4X" node="1m6aGq9bdYF" resolve="newChannel" />
+        <node concept="25W_k" id="79W9gdUel$G" role="1ylr64">
+          <node concept="2rfA1" id="79W9gdUel$I" role="25WwN">
+            <ref role="2rfdL" node="5h9rZfh0RW9" resolve="empty" />
+          </node>
+        </node>
       </node>
       <node concept="1uLkD0" id="1m6aGq8QnMc" role="1uLvPA">
         <property role="TrG5h" value="file" />
@@ -203,7 +216,7 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="3x6pbm2KHW3" role="3uHU7B">
-                    <property role="Xl_RC" value="I can have both function" />
+                    <property role="Xl_RC" value="I can have both function " />
                   </node>
                 </node>
               </node>
@@ -316,6 +329,10 @@
           <property role="2J_sxC" value="21" />
         </node>
       </node>
+    </node>
+    <node concept="1CVceo" id="79W9gdUc4D4" role="2$L6iY">
+      <property role="TrG5h" value="mynew" />
+      <node concept="2J_sx7" id="79W9gdUc4D5" role="2$L62I" />
     </node>
   </node>
   <node concept="2ulcR8" id="4QP3kc3jDnU">
