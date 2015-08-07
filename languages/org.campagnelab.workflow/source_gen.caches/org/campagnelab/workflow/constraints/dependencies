@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="org.campagnelab.workflow.constraints.ArgRegexLiteralQualifierPredicate_Constraints" file="ArgRegexLiteralQualifierPredicate_Constraints.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
   <dependency className="org.campagnelab.workflow.constraints.BaseLanguageScriptAdapter_Constraints" file="BaseLanguageScriptAdapter_Constraints.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
@@ -53,6 +63,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SConceptId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+    <classNode dependClassName="org.campagnelab.workflow.constraints.ArgRegexLiteralQualifierPredicate_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.BaseLanguageScriptAdapter_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.BooleanChannel_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.Closurefunction_Constraints" />
@@ -79,6 +90,7 @@
     <classNode dependClassName="org.campagnelab.workflow.constraints.ProcessRef_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.Range_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.Record_Constraints" />
+    <classNode dependClassName="org.campagnelab.workflow.constraints.Reduce_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.Report_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.Sep_Constraints" />
     <classNode dependClassName="org.campagnelab.workflow.constraints.Skip_Constraints" />
@@ -407,6 +419,16 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.workflow.constraints.Reduce_Constraints" file="Reduce_Constraints.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
