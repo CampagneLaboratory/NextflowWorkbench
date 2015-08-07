@@ -13,8 +13,8 @@
   <property name="artifacts.mpsCore" location="${mps_home}" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
   <property name="artifacts.mps-sl-all" location="${mps-richtext.location}" />
-  <property name="artifacts.org.campagnelab.NYoSh" location="../NYoSh/build/artifacts/org.campagnelab.NYoSh" />
-  <property name="artifacts.org.campagnelab.mps.UI" location="../NYoSh/build/artifacts/org.campagnelab.mps.UI" />
+  <property name="artifacts.org.campagnelab.NYoSh" location="../nyosh/build/artifacts/org.campagnelab.NYoSh" />
+  <property name="artifacts.org.campagnelab.mps.UI" location="../nyosh/build/artifacts/org.campagnelab.mps.UI" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.org.campagnelab.NYoSh}/build.properties" prefix="import.org.campagnelab.NYoSh" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -295,8 +295,8 @@
   </target>
   
   <target name="buildDependents">
-    <ant antfile="../NYoSh/NYoSh.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../NYoSh/ui.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../nyosh/NYoSh.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../nyosh/ui.xml" inheritAll="false" useNativeBasedir="true" />
   </target>
   
   <target name="fetchDependencies">
@@ -498,6 +498,7 @@
         <fileset file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/lib/execution-configurations.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-java/lib/mps-java-common.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
         <fileset file="${basedir}/solutions/org.campagnelab.workflow.run/jsch-0.1.53.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
@@ -509,6 +510,7 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
@@ -814,6 +816,7 @@
         <fileset file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/lib/execution-configurations.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-java/lib/mps-java-common.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
         <pathelement path="${build.tmp}/java/out/org.campagnelab.workflow.run" />
         <fileset file="${basedir}/solutions/org.campagnelab.workflow.run/jsch-0.1.53.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
@@ -826,6 +829,7 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
