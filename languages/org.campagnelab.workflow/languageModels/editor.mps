@@ -2997,7 +2997,7 @@
     <ref role="1XX52x" to="iowz:4g1gOgy0q_n" resolve="HiddenTypeVarDeclaration" />
     <node concept="3EZMnI" id="4g1gOgy$laU" role="2wV5jI">
       <node concept="3F0ifn" id="4g1gOgy$lb4" role="3EZMnx">
-        <property role="3F0ifm" value="val" />
+        <property role="3F0ifm" value="var" />
       </node>
       <node concept="3F1sOY" id="4g1gOgy$lbj" role="3EZMnx">
         <ref role="1NtTu8" to="tpee:4VkOLwjf83e" />

@@ -1507,8 +1507,8 @@
   <node concept="1TIwiD" id="4g1gOgy0q_n">
     <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="HiddenTypeVarDeclaration" />
-    <property role="34LRSv" value="val" />
-    <property role="R4oN_" value="Declare a variable visible in Pocess output expressions " />
+    <property role="34LRSv" value="var" />
+    <property role="R4oN_" value="Declare a variable visible in Process output expressions " />
     <ref role="1TJDcQ" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
   </node>
   <node concept="1TIwiD" id="2fLVrqQF3tr">
