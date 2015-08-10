@@ -11,6 +11,15 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="2465654535473034588" name="helpURL" index="2Bxbrw" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -24,6 +33,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -146,9 +156,9 @@
     <property role="34LRSv" value="memory" />
     <property role="R4oN_" value="Memory allocated for the process' execution" />
     <ref role="1TJDcQ" node="dhtvqFdzNV" resolve="StringOption" />
-    <node concept="1TJgyi" id="5KN4KqYYwDT" role="1TKVEl">
-      <property role="TrG5h" value="memory" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyi" id="2Hxg8Ag1XNQ" role="1TKVEl">
+      <property role="TrG5h" value="unit" />
+      <ref role="AX2Wp" node="2Hxg8Ag1XIC" resolve="MemoryUnit" />
     </node>
   </node>
   <node concept="1TIwiD" id="5KN4KqZ56xX">
@@ -174,7 +184,7 @@
   </node>
   <node concept="1TIwiD" id="5KN4KqZbJnZ">
     <property role="3GE5qa" value="processOptions" />
-    <property role="TrG5h" value="ProcessOptions" />
+    <property role="TrG5h" value="ProcessOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -184,7 +194,7 @@
     <property role="TrG5h" value="Queue" />
     <property role="34LRSv" value="queue" />
     <property role="R4oN_" value="Queue where jobs are scheduled when using a grid based executor" />
-    <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
+    <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOption" />
     <node concept="1TJgyj" id="5KN4KqZbL4m" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="queueElements" />
@@ -312,6 +322,7 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="workflow.config" />
     <property role="R4oN_" value="Configuration for workflow submissions" />
+    <property role="MwhBj" value="${module}/icons/ConfigIcon-1.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5KN4KqZiCv$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -323,7 +334,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="processOptions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
+      <ref role="20lvS9" node="5KN4KqZbJnZ" resolve="ProcessOption" />
     </node>
     <node concept="1TJgyj" id="5KN4KqZiCvA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -367,7 +378,7 @@
     <property role="TrG5h" value="StringOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
+    <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOption" />
     <node concept="1TJgyi" id="dhtvqFkG5z" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -378,7 +389,7 @@
     <property role="TrG5h" value="IntegerOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOptions" />
+    <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOption" />
     <node concept="1TJgyi" id="dhtvqFnQq1" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -392,6 +403,24 @@
     <property role="TrG5h" value="WithDocker" />
     <property role="34LRSv" value="with-docker" />
     <ref role="1TJDcQ" node="1nj$XVfY5RF" resolve="ContainerOption" />
+  </node>
+  <node concept="AxPO7" id="2Hxg8Ag1XIC">
+    <property role="3GE5qa" value="processOptions" />
+    <property role="TrG5h" value="MemoryUnit" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="2Hxg8Ag1XID" role="M5hS2">
+      <property role="1uS6qv" value="GB" />
+      <property role="1uS6qo" value="GB" />
+    </node>
+    <node concept="M4N5e" id="2Hxg8Ag1XLK" role="M5hS2">
+      <property role="1uS6qo" value="TB" />
+      <property role="1uS6qv" value="TB" />
+    </node>
+    <node concept="M4N5e" id="2Hxg8Ag1XMJ" role="M5hS2">
+      <property role="1uS6qo" value="PB" />
+      <property role="1uS6qv" value="PB" />
+    </node>
   </node>
 </model>
 
