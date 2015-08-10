@@ -9,11 +9,12 @@
   <property name="org.campagnelab.goby.workbench.home" location="${basedir}/../NYoSh" />
   <property name="workbench_version" value="1.0" />
   <property name="artifacts.mps" location="${mps_home}" />
-  <property name="artifacts.mpsWorkbench" location="${mps_home}" />
+  <property name="artifacts.mpsJava" location="${mps_home}" />
+  <property name="artifacts.mpsCore" location="${mps_home}" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
   <property name="artifacts.mps-sl-all" location="${mps-richtext.location}" />
-  <property name="artifacts.org.campagnelab.NYoSh" location="${org.campagnelab.goby.workbench.home}/build/artifacts/org.campagnelab.NYoSh" />
-  <property name="artifacts.org.campagnelab.mps.UI" location="${org.campagnelab.goby.workbench.home}/build/artifacts/org.campagnelab.mps.UI" />
+  <property name="artifacts.org.campagnelab.NYoSh" location="../NYoSh/build/artifacts/org.campagnelab.NYoSh" />
+  <property name="artifacts.org.campagnelab.mps.UI" location="../NYoSh/build/artifacts/org.campagnelab.mps.UI" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.org.campagnelab.NYoSh}/build.properties" prefix="import.org.campagnelab.NYoSh" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -51,6 +52,8 @@
         <depends>jetbrains.mps.execution.configurations</depends>
         <depends>org.campagnelab.NYoSh</depends>
         <depends>org.campagnelab.mps.UI</depends>
+        <depends>jetbrains.mps.execution.languages</depends>
+        <depends>jetbrains.mps.build</depends>
         <idea-version until-build="140.1" since-build="139.1" />
         
         <extensions defaultExtensionNs="com.intellij">
@@ -82,7 +85,6 @@
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <library jar="../../jsch-0.1.53.jar" />
-        <library jar="../../closures-runtime.jar" />
         <sources jar="org.campagnelab.workflow.run-src.jar" descriptor="org.campagnelab.workflow.run.msd" />
       </module>
     </echoxml>
@@ -252,37 +254,36 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.workflow.configuration-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.workflow.configuration-languageModels" prefix="module/languageModels" />
     </jar>
-    <mkdir dir="${build.tmp}/default/Samples.jar" />
-    <mkdir dir="${build.tmp}/default/Samples.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/Samples.jar/META-INF/module.xml">
-      <module namespace="Samples" type="solution" uuid="8f30b27b-57ec-411a-9ffa-0c6f223dcf72">
+    <mkdir dir="${build.tmp}/default/org.campagnelab.workflow.Samples.jar" />
+    <mkdir dir="${build.tmp}/default/org.campagnelab.workflow.Samples.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/org.campagnelab.workflow.Samples.jar/META-INF/module.xml">
+      <module namespace="org.campagnelab.workflow.Samples" type="solution" uuid="8f30b27b-57ec-411a-9ffa-0c6f223dcf72">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
           <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
         </dependencies>
-        <sources jar="Samples-src.jar" descriptor="Samples.msd" />
+        <sources jar="org.campagnelab.workflow.Samples-src.jar" descriptor="org.campagnelab.workflow.Samples.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/languages/NextflowWorkbench/Samples.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/Samples" />
-      <fileset dir="${basedir}/solutions/Samples" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/Samples/source_gen" includes="**/trace.info, **/exports" />
-      <fileset dir="${build.tmp}/default/Samples.jar" />
+    <jar destfile="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow.Samples.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/org.campagnelab.workflow.Samples" />
+      <fileset dir="${basedir}/solutions/org.campagnelab.workflow.Samples" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/solutions/org.campagnelab.workflow.Samples/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${build.tmp}/default/org.campagnelab.workflow.Samples.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-Samples-models">
-      <fileset dir="${basedir}/solutions/Samples/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.workflow.Samples-models">
+      <fileset dir="${basedir}/solutions/org.campagnelab.workflow.Samples/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/languages/NextflowWorkbench/Samples-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/Samples/source_gen">
+    <jar destfile="${build.tmp}/default/NextflowWorkbench__dl__lbrace_workbench_version_rbrace_.zip/NextflowWorkbench/languages/NextflowWorkbench/org.campagnelab.workflow.Samples-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/org.campagnelab.workflow.Samples/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
       </fileset>
-      <zipfileset file="${basedir}/solutions/Samples/Samples.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-Samples-models" prefix="module/models" />
+      <zipfileset file="${basedir}/solutions/org.campagnelab.workflow.Samples/org.campagnelab.workflow.Samples.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.workflow.Samples-models" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/NextflowWorkbench_${workbench_version}.zip">
       <zipfileset file="${basedir}/solutions/org.campagnelab.workflow.run/jsch-0.1.53.jar" prefix="NextflowWorkbench" />
-      <zipfileset file="${basedir}/solutions/org.campagnelab.workflow.run/closures-runtime.jar" prefix="NextflowWorkbench" />
       <zipfileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext" prefix="NextflowWorkbench" includes="**/*.jar" />
       <zipfileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline" prefix="NextflowWorkbench" includes="**/*.jar" />
       <zipfileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.selection" prefix="NextflowWorkbench" includes="**/*.jar" />
@@ -293,13 +294,16 @@
     <echo file="${build.layout}/build.properties">NextflowWorkbench.workbench_version=${workbench_version}${line.separator}NextflowWorkbench.build_number=${build_number}${line.separator}NextflowWorkbench.reference_commit=${reference_commit}${line.separator}NextflowWorkbench.reference_branch=${reference_branch}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}org.campagnelab.NYoSh.nyosh_version=${org.campagnelab.NYoSh.nyosh_version}${line.separator}org.campagnelab.NYoSh.build_number=${org.campagnelab.NYoSh.build_number}${line.separator}org.campagnelab.mps.UI.ui_version=${org.campagnelab.mps.UI.ui_version}${line.separator}org.campagnelab.mps.UI.build_number=${org.campagnelab.mps.UI.build_number}${line.separator}org.campagnelab.Logger.logger.version=${org.campagnelab.Logger.logger.version}${line.separator}org.campagnelab.Logger.build_number=${org.campagnelab.Logger.build_number}</echo>
   </target>
   
-  <target name="buildDependents" />
+  <target name="buildDependents">
+    <ant antfile="../NYoSh/NYoSh.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../NYoSh/ui.xml" inheritAll="false" useNativeBasedir="true" />
+  </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-${org.campagnelab.mps.UI.ui_version}.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
     <unzip src="${artifacts.org.campagnelab.NYoSh}/org.campagnelab.NYoSh-${org.campagnelab.NYoSh.nyosh_version}.zip" dest="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-${org.campagnelab.mps.UI.ui_version}.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
   </target>
@@ -311,7 +315,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.campagnelab.workflow.run, java.compile.org.campagnelab.workflow, java.compile.org.campagnelab.workflow#4801669429698558903, java.compile.org.campagnelab.util.files, java.compile.org.campagnelab.util.files#4347565441068750769, java.compile.org.campagnelab.workflow.configuration, java.compile.org.campagnelab.workflow.configuration#6643674794994245037, java.compile.Samples" />
+  <target name="compileJava" depends="java.compile.org.campagnelab.workflow.run, java.compile.org.campagnelab.workflow, java.compile.org.campagnelab.workflow#4801669429698558903, java.compile.org.campagnelab.util.files, java.compile.org.campagnelab.util.files#4347565441068750769, java.compile.org.campagnelab.workflow.configuration, java.compile.org.campagnelab.workflow.configuration#6643674794994245037, java.compile.org.campagnelab.workflow.Samples" />
   
   <target name="processResources" />
   
@@ -419,6 +423,7 @@
       <library file="${artifacts.mps}/plugins/mps-execution-languages/languages/mps-execution-languages/jetbrains.mps.execution.configurations.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-languages/languages/mps-execution-languages/jetbrains.mps.execution.configurations.pluginSolution.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
+      <library file="${artifacts.mps}/plugins/mps-java/lib/mps-java-common.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
@@ -437,8 +442,8 @@
         <module file="${basedir}/languages/org.campagnelab.workflow/org.campagnelab.workflow.mpl" bootstrap="true" />
       </chunk>
       <chunk>
-        <module file="${basedir}/solutions/Samples/Samples.msd" />
         <module file="${basedir}/devkits/org.campagnelab.NextflowWorkbench.devkit" />
+        <module file="${basedir}/solutions/org.campagnelab.workflow.Samples/org.campagnelab.workflow.Samples.msd" />
         <module file="${basedir}/solutions/org.campagnelab.workflow.run/org.campagnelab.workflow.run.msd" />
       </chunk>
       <jvmargs>
@@ -454,7 +459,16 @@
     <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
   </target>
   
-  <target name="makeDependents" />
+  <target name="makeDependents">
+    <ant antfile="../NYoSh/NYoSh.xml" inheritAll="false" useNativeBasedir="true">
+      <target name="generate" />
+      <target name="assemble" />
+    </ant>
+    <ant antfile="../NYoSh/ui.xml" inheritAll="false" useNativeBasedir="true">
+      <target name="generate" />
+      <target name="assemble" />
+    </ant>
+  </target>
   
   <target name="java.compile.org.campagnelab.workflow.run" depends="java.compile.org.campagnelab.util.files, java.compile.org.campagnelab.workflow, java.compile.org.campagnelab.workflow.configuration, fetchDependencies">
     <mkdir dir="${basedir}/solutions/org.campagnelab.workflow.run/source_gen" />
@@ -483,8 +497,9 @@
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/lib/execution-configurations.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-java/lib/mps-java-common.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
         <fileset file="${basedir}/solutions/org.campagnelab.workflow.run/jsch-0.1.53.jar" />
-        <fileset file="${basedir}/solutions/org.campagnelab.workflow.run/closures-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -495,6 +510,7 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
@@ -773,13 +789,13 @@
     </javac>
   </target>
   
-  <target name="java.compile.Samples" depends="java.compile.org.campagnelab.util.files, java.compile.org.campagnelab.workflow.configuration, java.compile.org.campagnelab.workflow.run, fetchDependencies">
-    <mkdir dir="${basedir}/solutions/Samples/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/Samples" />
-    <javac destdir="${build.tmp}/java/out/Samples" fork="true" includeantruntime="false">
+  <target name="java.compile.org.campagnelab.workflow.Samples" depends="java.compile.org.campagnelab.util.files, java.compile.org.campagnelab.workflow.configuration, java.compile.org.campagnelab.workflow.run, fetchDependencies">
+    <mkdir dir="${basedir}/solutions/org.campagnelab.workflow.Samples/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.campagnelab.workflow.Samples" />
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow.Samples" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/solutions/Samples/source_gen" />
+        <path location="${basedir}/solutions/org.campagnelab.workflow.Samples/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
@@ -799,9 +815,10 @@
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/lib/execution-configurations.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-java/lib/mps-java-common.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
         <pathelement path="${build.tmp}/java/out/org.campagnelab.workflow.run" />
         <fileset file="${basedir}/solutions/org.campagnelab.workflow.run/jsch-0.1.53.jar" />
-        <fileset file="${basedir}/solutions/org.campagnelab.workflow.run/closures-runtime.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -812,6 +829,7 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
@@ -823,8 +841,8 @@
   <target name="cleanSources">
     <delete dir="${basedir}/languages/org.campagnelab.utils.multifiles/source_gen" />
     <delete dir="${basedir}/languages/org.campagnelab.workflow.configuration/source_gen" />
-    <delete dir="${basedir}/solutions/Samples/source_gen" />
     <delete dir="${basedir}/languages/org.campagnelab.workflow/generator/source_gen" />
+    <delete dir="${basedir}/solutions/org.campagnelab.workflow.Samples/source_gen" />
     <delete dir="${basedir}/solutions/org.campagnelab.workflow.run/source_gen" />
   </target>
 </project>

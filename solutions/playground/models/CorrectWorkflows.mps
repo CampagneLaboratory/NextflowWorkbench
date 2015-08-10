@@ -259,12 +259,14 @@
   <node concept="2ulcR8" id="34JZ5vsmm0i">
     <property role="TrG5h" value="analyze" />
     <node concept="2lYRya" id="3rUult5h7Fc" role="2ulM79">
-      <property role="TrG5h" value="&quot;*.txt&quot;" />
-      <node concept="16pRw0" id="3rUult5h7Ff" role="2ybFLk" />
+      <property role="TrG5h" value="*.txt" />
+      <node concept="kktkh" id="1NhN7oYQGQt" role="2ybFLk">
+        <node concept="16pRw0" id="1NhN7oYQGQu" role="2y8EMt" />
+      </node>
     </node>
     <node concept="2mjA9o" id="3rUult5h7Ei" role="2ulM7n">
       <property role="TrG5h" value="'index_*'" />
-      <node concept="16pRw0" id="3rUult5h7Eq" role="2ybFLk" />
+      <node concept="16pRw0" id="1NhN7oYYeeS" role="2ybFLk" />
     </node>
     <node concept="3Y$Zt1" id="34JZ5vs_Ul8" role="2ulM7a">
       <node concept="19SGf9" id="34JZ5vs_Ul9" role="3Y$PkS">
@@ -394,7 +396,7 @@
           <node concept="19SGf9" id="5DmojlqMpHu" role="2AVUOt">
             <node concept="19SUe$" id="5DmojlqMpH_" role="19SJt6" />
             <node concept="3YE7tV" id="5DmojlqMpH$" role="19SJt6">
-              <ref role="3YE7sm" node="6qiI2N5qEB8" resolve="fileCh" />
+              <ref role="3YE7sm" node="3rUult5h8eW" resolve="fileCh" />
             </node>
             <node concept="19SUe$" id="5DmojlqMpHA" role="19SJt6" />
           </node>
@@ -726,6 +728,10 @@
   </node>
   <node concept="2ulcR8" id="6zpIx1pCL0V">
     <property role="TrG5h" value="addTextToFile" />
+    <node concept="1uLvKC" id="6qiI2N5urdM" role="2ulM7n">
+      <property role="TrG5h" value="strInput" />
+      <node concept="16pbKc" id="2fLVrqPYDsQ" role="2ybFLk" />
+    </node>
     <node concept="2lYRya" id="3rUult5h7x6" role="2ulM79">
       <property role="TrG5h" value="'file.txt'" />
       <node concept="16pRw0" id="3rUult5h7xe" role="2ybFLk" />
@@ -742,10 +748,6 @@
           <property role="19SUeA" value=" &gt; file.txt" />
         </node>
       </node>
-    </node>
-    <node concept="1uLvKC" id="6qiI2N5urdM" role="2ulM7n">
-      <property role="TrG5h" value="strInput" />
-      <node concept="16pbKc" id="2fLVrqPYDsQ" role="2ybFLk" />
     </node>
   </node>
   <node concept="2$rMIF" id="6zpIx1pD2QL">
@@ -863,6 +865,63 @@
   <node concept="3zupj_" id="6eMkF2c4Hdz">
     <property role="TrG5h" value="workflow.config" />
     <node concept="3zuAPI" id="6eMkF2c4LmG" role="3zupjy" />
+  </node>
+  <node concept="2$rMIF" id="3EHTfOJ130B">
+    <property role="TrG5h" value="SplitFunctionTest" />
+    <node concept="2$rEH5" id="3EHTfOJ130C" role="2$rEHq">
+      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uYdA0" id="3EHTfOJ139x" role="1uLvPH">
+        <ref role="1uK_4X" node="3EHTfOJ135G" resolve="paths" />
+        <node concept="1teHI3" id="dOBxzzmFdJ" role="1ylr64">
+          <node concept="3xIkQH" id="dOBxzztIyE" role="3hXsJg">
+            <node concept="2J_g7P" id="dOBxzz$Mha" role="3xIkc1">
+              <property role="2J_vQ8" value="path" />
+            </node>
+          </node>
+          <node concept="ksxz_" id="dOBxz_y5AG" role="3hXsJg">
+            <property role="3x3bhU" value="UTF-8" />
+          </node>
+        </node>
+        <node concept="1yaYav" id="1NhN7oY8TgB" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="dOBxz_y4wF" role="1uLvPA">
+        <property role="TrG5h" value="newFile" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="1jEBYCnnM9R" role="2$rEHq">
+      <ref role="2$rEH4" node="6t646FqPoxG" resolve="combineFiles" />
+      <node concept="1uYdA0" id="1jEBYCnnMa_" role="1uLvPH">
+        <ref role="1uK_4X" node="1jEBYCnnLPE" resolve="pathsCopy" />
+        <node concept="1te2Xs" id="6rc3Z5N$I2G" role="1ylr64">
+          <node concept="ks$$h" id="6rc3Z5N$I4L" role="3hXsJg">
+            <node concept="3_$mM" id="6rc3Z5N$I6r" role="3ARaAy">
+              <node concept="3_L8K" id="6rc3Z5N$I6R" role="3_ZR$" />
+              <node concept="3_L7Y" id="6rc3Z5N$I7D" role="3_ZR$" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yaYav" id="1NhN7oY8Tm6" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="1jEBYCnnMaA" role="1uLvPA">
+        <property role="TrG5h" value="newFile2" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="3EHTfOJ135G" role="2$L6iY">
+      <property role="TrG5h" value="paths" />
+      <node concept="2J_sx7" id="3EHTfOJ135H" role="2$L62I">
+        <node concept="2J_rk5" id="3EHTfOJ137C" role="2J_sx6">
+          <property role="2J_rkp" value="path1" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="1jEBYCnnLPE" role="2$L6iY">
+      <property role="TrG5h" value="pathsCopy" />
+      <node concept="2J_sx7" id="1jEBYCnnLPF" role="2$L62I">
+        <node concept="2J_rk5" id="1jEBYCnnM4w" role="2J_sx6">
+          <property role="2J_rkp" value="path" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2$rMIF" id="7T1vD2UvCAy">
     <property role="TrG5h" value="LiteralFunctionTest" />
@@ -1008,61 +1067,6 @@
           <node concept="2J_g7P" id="5vsFYeca_Oe" role="2J_sx6">
             <property role="2J_vQ8" value="how are you?" />
           </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2$rMIF" id="3EHTfOJ130B">
-    <property role="TrG5h" value="SplitFunctionTest" />
-    <node concept="2$rEH5" id="3EHTfOJ130C" role="2$rEHq">
-      <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
-      <node concept="1uYdA0" id="3EHTfOJ139x" role="1uLvPH">
-        <ref role="1uK_4X" node="3EHTfOJ135G" resolve="paths" />
-        <node concept="1teHI3" id="dOBxzzmFdJ" role="1ylr64">
-          <node concept="3xIkQH" id="dOBxzztIyE" role="3hXsJg">
-            <node concept="2J_g7P" id="dOBxzz$Mha" role="3xIkc1">
-              <property role="2J_vQ8" value="path" />
-            </node>
-          </node>
-          <node concept="ksxz_" id="dOBxz_y5AG" role="3hXsJg">
-            <property role="3x3bhU" value="UTF-8" />
-          </node>
-        </node>
-      </node>
-      <node concept="1uLkD0" id="dOBxz_y4wF" role="1uLvPA">
-        <property role="TrG5h" value="" />
-      </node>
-    </node>
-    <node concept="2$rEH5" id="1jEBYCnnM9R" role="2$rEHq">
-      <ref role="2$rEH4" node="6zpIx1pCL0V" resolve="addTextToFile" />
-      <node concept="1uYdA0" id="1jEBYCnnMa_" role="1uLvPH">
-        <ref role="1uK_4X" node="1jEBYCnnLPE" resolve="pathsCopy" />
-        <node concept="1te2Xs" id="6rc3Z5N$I2G" role="1ylr64">
-          <node concept="ks$$h" id="6rc3Z5N$I4L" role="3hXsJg">
-            <node concept="3_$mM" id="6rc3Z5N$I6r" role="3ARaAy">
-              <node concept="3_L8K" id="6rc3Z5N$I6R" role="3_ZR$" />
-              <node concept="3_L7Y" id="6rc3Z5N$I7D" role="3_ZR$" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1uLkD0" id="1jEBYCnnMaA" role="1uLvPA">
-        <property role="TrG5h" value="" />
-      </node>
-    </node>
-    <node concept="1CVceo" id="3EHTfOJ135G" role="2$L6iY">
-      <property role="TrG5h" value="paths" />
-      <node concept="2J_sx7" id="3EHTfOJ135H" role="2$L62I">
-        <node concept="2J_rk5" id="3EHTfOJ137C" role="2J_sx6">
-          <property role="2J_rkp" value="path1" />
-        </node>
-      </node>
-    </node>
-    <node concept="1CVceo" id="1jEBYCnnLPE" role="2$L6iY">
-      <property role="TrG5h" value="pathsCopy" />
-      <node concept="2J_sx7" id="1jEBYCnnLPF" role="2$L62I">
-        <node concept="2J_rk5" id="1jEBYCnnM4w" role="2J_sx6">
-          <property role="2J_rkp" value="path" />
         </node>
       </node>
     </node>

@@ -5,16 +5,14 @@
       <modulePath path="${NEXTFLOW_PATH}/NYoSh/solutions/NYoSh.build-plugins/NYoSh.build-plugins.msd" folder="" />
       <modulePath path="${org.campagnelab.xchart.home}/solutions/XChart.build0/XChart.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/org.campagnelab.NextflowWorkbench.devkit" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.docker/org.campagnelab.docker.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.utils.multifiles/org.campagnelab.utils.multifiles.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow.configuration/org.campagnelab.workflow.configuration.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow.languages/org.campagnelab.workflow.languages.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow.nyosh/org.campagnelab.workflow.nyosh.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow/org.campagnelab.workflow.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/FileQuotes/FileQuotes.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NextflowWorkbench.build/NextflowWorkbench.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/Samples/Samples.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/documentation/documentation.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.docker.actions/org.campagnelab.docker.actions.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.workflow.Samples/org.campagnelab.workflow.Samples.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.workflow.run/org.campagnelab.workflow.run.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/testWorkflow/testWorkflow.msd" folder="" />

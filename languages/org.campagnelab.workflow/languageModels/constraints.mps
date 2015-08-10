@@ -1970,5 +1970,95 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="71ITBVySQS_">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="1M2myG" to="iowz:1qs9CHFOmDW" resolve="ArgRegexQualifierPredicate" />
+    <node concept="nKS2y" id="71ITBVySQSS" role="1MLUbF">
+      <node concept="3clFbS" id="71ITBVySQST" role="2VODD2">
+        <node concept="3clFbF" id="71ITBVySQXQ" role="3cqZAp">
+          <node concept="3clFbT" id="71ITBVySQXP" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1fcQp_G2XV">
+    <property role="3GE5qa" value="scripts.conditionalScript" />
+    <ref role="1M2myG" to="iowz:5DmojlqPc7e" resolve="ConditionalVariableRef" />
+    <node concept="nKS2y" id="1fcQp_G3mq" role="1MLUbF">
+      <node concept="3clFbS" id="1fcQp_G3mr" role="2VODD2">
+        <node concept="3clFbF" id="1fcQp_G60v" role="3cqZAp">
+          <node concept="2OqwBi" id="1fcQp_GgZr" role="3clFbG">
+            <node concept="2OqwBi" id="1fcQp_G6qU" role="2Oq$k0">
+              <node concept="nLn13" id="1fcQp_G60u" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="1fcQp_GgBN" role="2OqNvi">
+                <node concept="1xMEDy" id="1fcQp_GgBP" role="1xVPHs">
+                  <node concept="chp4Y" id="1fcQp_GgHa" role="ri$Ld">
+                    <ref role="cht4Q" to="iowz:YNIIGPa1iv" resolve="BaseLanguageScriptAdapter" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="1fcQp_GgQI" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1fcQp_GuhR" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="79W9gdU9UVO">
+    <property role="3GE5qa" value="channelFunctions" />
+    <ref role="1M2myG" to="iowz:XaRILjgRyP" resolve="Reduce" />
+    <node concept="nKS2y" id="79W9gdU9UW7" role="1MLUbF">
+      <node concept="3clFbS" id="79W9gdU9UW8" role="2VODD2">
+        <node concept="3SKdUt" id="79W9gdU9V1e" role="3cqZAp">
+          <node concept="3SKdUq" id="79W9gdU9V1f" role="3SKWNk">
+            <property role="3SKdUp" value="Functions with closures are disabled in 1.0." />
+          </node>
+        </node>
+        <node concept="3clFbF" id="79W9gdU9V1g" role="3cqZAp">
+          <node concept="3clFbT" id="79W9gdU9V1h" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="79W9gdU9U3E">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="1M2myG" to="iowz:XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
+    <node concept="nKS2y" id="79W9gdU9Ug3" role="1MLUbF">
+      <node concept="3clFbS" id="79W9gdU9Ug4" role="2VODD2">
+        <node concept="3SKdUt" id="79W9gdU9Uu1" role="3cqZAp">
+          <node concept="3SKdUq" id="79W9gdU9Uu2" role="3SKWNk">
+            <property role="3SKdUp" value="Functions with closures are disabled in 1.0." />
+          </node>
+        </node>
+        <node concept="3clFbF" id="79W9gdU9Uu3" role="3cqZAp">
+          <node concept="3clFbT" id="79W9gdU9Uu4" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="71ITBVySQCa">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="1M2myG" to="iowz:XaRILjgU7G" resolve="GroupTuple" />
+    <node concept="nKS2y" id="71ITBVySQCq" role="1MLUbF">
+      <node concept="3clFbS" id="71ITBVySQCr" role="2VODD2">
+        <node concept="3clFbF" id="71ITBVySQC$" role="3cqZAp">
+          <node concept="3clFbT" id="71ITBVySQCz" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1D3_UgeJcz_">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="1M2myG" to="iowz:XaRILis0lI" resolve="FunctionWithClosure" />
+  </node>
 </model>
 

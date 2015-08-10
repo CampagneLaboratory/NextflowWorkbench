@@ -24,8 +24,18 @@
       <concept id="748852418098455525" name="org.campagnelab.workflow.structure.NameInAChannelRef" flags="ng" index="2b_LqF">
         <reference id="748852418098455526" name="value" index="2b_LqC" />
       </concept>
+      <concept id="4018964125401476997" name="org.campagnelab.workflow.structure.List" flags="ng" index="kktkh">
+        <child id="7391172440886351025" name="elementType" index="2y8EMt" />
+      </concept>
+      <concept id="2590112629724566341" name="org.campagnelab.workflow.structure.InputValue" flags="ng" index="2l3rVN">
+        <reference id="2590112629724567366" name="input" index="2l3rFK" />
+      </concept>
+      <concept id="2590112629719316315" name="org.campagnelab.workflow.structure.OutputExpression" flags="ng" index="2lntFH">
+        <child id="2590112629719316376" name="expression" index="2lntCI" />
+      </concept>
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
         <property id="2590112629708729231" name="fromStandardOutput" index="2lYOoT" />
+        <child id="2590112629719313759" name="expression" index="2lns3D" />
       </concept>
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o">
         <property id="2590112629703814581" name="toStandardInput" index="2mj$03" />
@@ -139,7 +149,7 @@
     <node concept="3Y$Zt1" id="1WG1fjcG2cN" role="2ulM7a">
       <node concept="19SGf9" id="1WG1fjcG2cP" role="3Y$PkS">
         <node concept="19SUe$" id="1WG1fjcG2cQ" role="19SJt6">
-          <property role="19SUeA" value="awk '{print &quot;&gt;name&quot;; print $1;}' &gt; " />
+          <property role="19SUeA" value="awk 'BEGIN{INDEX=1} {print &quot;&gt;seq_&quot;(INDEX++); print $1;}' &gt; " />
         </node>
         <node concept="2b_LqF" id="1WG1fjcGb9m" role="19SJt6">
           <ref role="2b_LqC" node="1WG1fjcG4PF" resolve="'sequences.fasta'" />
@@ -178,14 +188,14 @@
     </node>
   </node>
   <node concept="2ulcR8" id="1WG1fjcGqMw">
-    <property role="TrG5h" value="SortSequences" />
+    <property role="TrG5h" value="Sort" />
     <node concept="2mjA9o" id="1WG1fjcGqNJ" role="2ulM7n">
-      <property role="TrG5h" value="sequences" />
+      <property role="TrG5h" value="lines" />
       <property role="2mj$03" value="true" />
       <node concept="16pbKc" id="1WG1fjcGqNT" role="2ybFLk" />
     </node>
     <node concept="2lYRya" id="1WG1fjcGqOw" role="2ulM79">
-      <property role="TrG5h" value="sortedSequences" />
+      <property role="TrG5h" value="sortedLines" />
       <property role="2lYOoT" value="true" />
       <node concept="16pbKc" id="1WG1fjcGqOE" role="2ybFLk" />
     </node>
@@ -195,6 +205,93 @@
           <property role="19SUeA" value=" sort " />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2ulcR8" id="2qcvB08TdBW">
+    <property role="TrG5h" value="AddRandom" />
+    <node concept="2lYRya" id="2qcvB08TdCE" role="2ulM79">
+      <property role="TrG5h" value="value" />
+      <node concept="16pbKc" id="2qcvB08TdCM" role="2ybFLk" />
+      <node concept="2lntFH" id="2qcvB08TdE7" role="2lns3D">
+        <node concept="2l3rVN" id="2qcvB08TdEg" role="2lntCI">
+          <ref role="2l3rFK" node="2qcvB08TdC4" resolve="inputValue" />
+        </node>
+      </node>
+    </node>
+    <node concept="2lYRya" id="2qcvB08TdCZ" role="2ulM79">
+      <property role="TrG5h" value="random" />
+      <property role="2lYOoT" value="true" />
+      <node concept="16pbKc" id="2qcvB08TdDe" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="2qcvB08TdC4" role="2ulM7n">
+      <property role="TrG5h" value="inputValue" />
+      <node concept="16pbKc" id="2qcvB08TdCc" role="2ybFLk" />
+    </node>
+    <node concept="3Y$Zt1" id="2qcvB08TdDU" role="2ulM7a">
+      <node concept="19SGf9" id="2qcvB08TdDW" role="3Y$PkS">
+        <node concept="19SUe$" id="2qcvB08TdDX" role="19SJt6">
+          <property role="19SUeA" value=" echo ${RANDOM}" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2ulcR8" id="2qcvB08SRn_">
+    <property role="TrG5h" value="Concatenate" />
+    <node concept="2lYRya" id="2qcvB08SRoH" role="2ulM79">
+      <property role="TrG5h" value="out" />
+      <node concept="16pRw0" id="2qcvB08SRoP" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="2qcvB08SRnH" role="2ulM7n">
+      <property role="TrG5h" value="'*'" />
+      <node concept="kktkh" id="2qcvB08SRnP" role="2ybFLk">
+        <node concept="16pRw0" id="2qcvB08SRo6" role="2y8EMt" />
+      </node>
+    </node>
+    <node concept="3Y$Zt1" id="2qcvB08SRph" role="2ulM7a">
+      <node concept="19SGf9" id="2qcvB08SRpj" role="3Y$PkS">
+        <node concept="19SUe$" id="2qcvB08SRpk" role="19SJt6">
+          <property role="19SUeA" value="cat  * &gt; " />
+        </node>
+        <node concept="2b_LqF" id="2qcvB08SRpX" role="19SJt6">
+          <ref role="2b_LqC" node="2qcvB08SRoH" resolve="out" />
+        </node>
+        <node concept="19SUe$" id="2qcvB08SRpq" role="19SJt6" />
+      </node>
+    </node>
+  </node>
+  <node concept="2ulcR8" id="3OzmMkAr5Oo">
+    <property role="TrG5h" value="ToFastaFile" />
+    <node concept="2mjA9o" id="2qcvB08TeB4" role="2ulM7n">
+      <property role="TrG5h" value="sequenceId" />
+      <node concept="16pbKc" id="2qcvB08TeBo" role="2ybFLk" />
+    </node>
+    <node concept="3Y$Zt1" id="3OzmMkAr5Op" role="2ulM7a">
+      <node concept="19SGf9" id="3OzmMkAr5Oq" role="3Y$PkS">
+        <node concept="19SUe$" id="3OzmMkAr5Or" role="19SJt6">
+          <property role="19SUeA" value="id=" />
+        </node>
+        <node concept="3YE7tV" id="3OzmMkAqKzu" role="19SJt6">
+          <ref role="3YE7sm" node="2qcvB08TeB4" resolve="sequenceId" />
+        </node>
+        <node concept="19SUe$" id="3OzmMkAqKzt" role="19SJt6">
+          <property role="19SUeA" value="&#10;echo &quot;&gt;seq_${id}&quot; &gt;sequence_${id}.fasta &#10;echo &quot;" />
+        </node>
+        <node concept="3YE7tV" id="2qcvB08TeC4" role="19SJt6">
+          <ref role="3YE7sm" node="3OzmMkAr5Ou" resolve="sequence" />
+        </node>
+        <node concept="19SUe$" id="2qcvB08TeC3" role="19SJt6">
+          <property role="19SUeA" value="&quot; &gt;&gt;sequence_${id}.fasta " />
+        </node>
+      </node>
+    </node>
+    <node concept="2lYRya" id="3OzmMkAr5Os" role="2ulM79">
+      <property role="TrG5h" value="'sequence_*.fasta'" />
+      <node concept="16pRw0" id="3OzmMkAr5Ot" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="3OzmMkAr5Ou" role="2ulM7n">
+      <property role="TrG5h" value="sequence" />
+      <property role="2mj$03" value="false" />
+      <node concept="16pbKc" id="3OzmMkAr5Ov" role="2ybFLk" />
     </node>
   </node>
 </model>

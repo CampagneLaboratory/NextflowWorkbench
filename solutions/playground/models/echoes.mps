@@ -126,7 +126,7 @@
         <child id="6643674795001677796" name="executor" index="3zupjy" />
         <child id="6643674795001677797" name="processOptions" index="3zupjz" />
       </concept>
-      <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
+      <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG" />
       <concept id="6643674795006467852" name="org.campagnelab.workflow.configuration.structure.QueueElement" flags="ng" index="3zC8Ka">
         <property id="6643674795006468239" name="queue" index="3zCbe9" />
       </concept>
@@ -321,7 +321,7 @@
     <node concept="3z9Qxx" id="7UVJCi2pjSe" role="3zupjz">
       <property role="2C0Vil" value="-l h_vmem=2G  -pe smp 4" />
     </node>
-    <node concept="3zuAPI" id="6xlRqabyFCT" role="3zupjy" />
+    <node concept="3zuAPG" id="5yGi5zw7rLO" role="3zupjy" />
     <node concept="3yU_OP" id="5KN4KqZ$Tue" role="3zupjw">
       <property role="TrG5h" value="remote.config" />
       <node concept="3yU_OD" id="5KN4KqZ$Tuf" role="3yU_OL">
