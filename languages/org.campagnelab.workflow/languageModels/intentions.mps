@@ -97,10 +97,6 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
-      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
-        <reference id="1139867957129" name="concept" index="1_rbq0" />
-      </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -1099,114 +1095,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="2fLVrqQljfM" role="3cqZAp" />
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="1NhN7oY9j$O">
-    <property role="3GE5qa" value="processTypeDeclarations" />
-    <property role="TrG5h" value="ConvertToFileList" />
-    <ref role="2ZfgGC" to="iowz:1HX2cDt6B3a" resolve="File" />
-    <node concept="2S6ZIM" id="1NhN7oY9j$P" role="2ZfVej">
-      <node concept="3clFbS" id="1NhN7oY9j$Q" role="2VODD2">
-        <node concept="3clFbF" id="1NhN7oY9k6h" role="3cqZAp">
-          <node concept="Xl_RD" id="1NhN7oY9k6g" role="3clFbG">
-            <property role="Xl_RC" value="Convert to list of files" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="1NhN7oY9j$R" role="2ZfgGD">
-      <node concept="3clFbS" id="1NhN7oY9j$S" role="2VODD2">
-        <node concept="3cpWs8" id="1NhN7oY9kyF" role="3cqZAp">
-          <node concept="3cpWsn" id="1NhN7oY9kyI" role="3cpWs9">
-            <property role="TrG5h" value="fileList" />
-            <node concept="3Tqbb2" id="1NhN7oY9kyE" role="1tU5fm">
-              <ref role="ehGHo" to="iowz:3v6eDgz_YY5" resolve="List" />
-            </node>
-            <node concept="2ShNRf" id="1NhN7oY9kzo" role="33vP2m">
-              <node concept="3zrR0B" id="1NhN7oY9mwF" role="2ShVmc">
-                <node concept="3Tqbb2" id="1NhN7oY9mwH" role="3zrR0E">
-                  <ref role="ehGHo" to="iowz:3v6eDgz_YY5" resolve="List" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1NhN7oY9mxz" role="3cqZAp">
-          <node concept="37vLTI" id="1NhN7oY9n0I" role="3clFbG">
-            <node concept="2OqwBi" id="1NhN7oYBB5h" role="37vLTx">
-              <node concept="2OqwBi" id="1NhN7oYBACF" role="2Oq$k0">
-                <node concept="2Sf5sV" id="1NhN7oY9n2s" role="2Oq$k0" />
-                <node concept="1$rogu" id="1NhN7oYBAQh" role="2OqNvi" />
-              </node>
-              <node concept="3YRAZt" id="1NhN7oYBBku" role="2OqNvi" />
-            </node>
-            <node concept="2OqwBi" id="1NhN7oY9mzT" role="37vLTJ">
-              <node concept="37vLTw" id="1NhN7oY9mxx" role="2Oq$k0">
-                <ref role="3cqZAo" node="1NhN7oY9kyI" resolve="fileList" />
-              </node>
-              <node concept="3TrEf2" id="1NhN7oY9mKk" role="2OqNvi">
-                <ref role="3Tt5mk" to="iowz:6qiI2N4G1iL" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1NhN7oYw69z" role="3cqZAp">
-          <node concept="2OqwBi" id="1NhN7oYw6fY" role="3clFbG">
-            <node concept="2Sf5sV" id="1NhN7oYw6dK" role="2Oq$k0" />
-            <node concept="1P9Npp" id="1NhN7oYw6sJ" role="2OqNvi">
-              <node concept="37vLTw" id="1NhN7oYw6t$" role="1P9ThW">
-                <ref role="3cqZAo" node="1NhN7oY9kyI" resolve="fileList" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="1NhN7oYJ8sS">
-    <property role="3GE5qa" value="processTypeDeclarations" />
-    <property role="TrG5h" value="ConvertToFile" />
-    <ref role="2ZfgGC" to="iowz:3v6eDgz_YY5" resolve="List" />
-    <node concept="2S6ZIM" id="1NhN7oYJ8sT" role="2ZfVej">
-      <node concept="3clFbS" id="1NhN7oYJ8sU" role="2VODD2">
-        <node concept="3clFbF" id="1NhN7oYJbmw" role="3cqZAp">
-          <node concept="Xl_RD" id="1NhN7oYJbmv" role="3clFbG">
-            <property role="Xl_RC" value="Convert to file" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="1NhN7oYJ8sV" role="2ZfgGD">
-      <node concept="3clFbS" id="1NhN7oYJ8sW" role="2VODD2">
-        <node concept="3clFbF" id="1NhN7oYJbK$" role="3cqZAp">
-          <node concept="2OqwBi" id="1NhN7oYJbML" role="3clFbG">
-            <node concept="2Sf5sV" id="1NhN7oYJbKz" role="2Oq$k0" />
-            <node concept="1_qnLN" id="1NhN7oYJcbU" role="2OqNvi">
-              <ref role="1_rbq0" to="iowz:1HX2cDt6B3a" resolve="File" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="1NhN7oYJ8AY" role="2ZfVeh">
-      <node concept="3clFbS" id="1NhN7oYJ8AZ" role="2VODD2">
-        <node concept="3clFbF" id="1NhN7oYJ9Yh" role="3cqZAp">
-          <node concept="3clFbC" id="1NhN7oYJb0e" role="3clFbG">
-            <node concept="35c_gC" id="1NhN7oYJb3w" role="3uHU7w">
-              <ref role="35c_gD" to="iowz:1HX2cDt6B3a" resolve="File" />
-            </node>
-            <node concept="2OqwBi" id="1NhN7oYJaJS" role="3uHU7B">
-              <node concept="2OqwBi" id="1NhN7oYJa3w" role="2Oq$k0">
-                <node concept="2Sf5sV" id="1NhN7oYJ9Yg" role="2Oq$k0" />
-                <node concept="3TrEf2" id="1NhN7oYJauX" role="2OqNvi">
-                  <ref role="3Tt5mk" to="iowz:6qiI2N4G1iL" />
-                </node>
-              </node>
-              <node concept="2yIwOk" id="1NhN7oYJaVD" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>

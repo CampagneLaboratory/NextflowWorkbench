@@ -45,6 +45,9 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -80,7 +83,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -176,6 +179,13 @@
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
       </concept>
+      <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
+        <child id="1216383424566" name="executeBlock" index="Q6x$H" />
+        <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
+      </concept>
+      <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
+      <concept id="1216383337216" name="jetbrains.mps.lang.typesystem.structure.ConceptFunctionParameter_node" flags="nn" index="Q6c8r" />
+      <concept id="1216390987552" name="jetbrains.mps.lang.typesystem.structure.QuickFixDescriptionBlock" flags="in" index="QznSV" />
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -274,6 +284,13 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
+        <reference id="1139867957129" name="concept" index="1_rbq0" />
+      </concept>
+      <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
+        <child id="1140131861877" name="replacementNode" index="1P9ThW" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
@@ -290,6 +307,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -4799,6 +4817,95 @@
     <node concept="1YaCAy" id="1NhN7oY9gKG" role="1YuTPh">
       <property role="TrG5h" value="list" />
       <ref role="1YaFvo" to="iowz:3v6eDgz_YY5" resolve="List" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="6BD$$Fyg5ot">
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="TrG5h" value="quickfix_ListOfFilesToFile" />
+    <node concept="Q5ZZ6" id="6BD$$Fyg5ou" role="Q6x$H">
+      <node concept="3clFbS" id="6BD$$Fyg5ov" role="2VODD2">
+        <node concept="3clFbF" id="6BD$$FygiUf" role="3cqZAp">
+          <node concept="2OqwBi" id="6BD$$FygjWB" role="3clFbG">
+            <node concept="Q6c8r" id="6BD$$FygiUe" role="2Oq$k0" />
+            <node concept="1_qnLN" id="6BD$$Fygu4$" role="2OqNvi">
+              <ref role="1_rbq0" to="iowz:1HX2cDt6B3a" resolve="File" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="6BD$$FygdRG" role="QzAvj">
+      <node concept="3clFbS" id="6BD$$FygdRH" role="2VODD2">
+        <node concept="3clFbF" id="6BD$$FygiBZ" role="3cqZAp">
+          <node concept="Xl_RD" id="6BD$$FygiBY" role="3clFbG">
+            <property role="Xl_RC" value="Convert to file" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="6BD$$Fygu5o">
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="TrG5h" value="quickfix_FileToListOfFiles" />
+    <node concept="Q5ZZ6" id="6BD$$Fygu5p" role="Q6x$H">
+      <node concept="3clFbS" id="6BD$$Fygu5q" role="2VODD2">
+        <node concept="3cpWs8" id="6BD$$FyguQV" role="3cqZAp">
+          <node concept="3cpWsn" id="6BD$$FyguQY" role="3cpWs9">
+            <property role="TrG5h" value="fileList" />
+            <node concept="3Tqbb2" id="6BD$$FyguQU" role="1tU5fm">
+              <ref role="ehGHo" to="iowz:3v6eDgz_YY5" resolve="List" />
+            </node>
+            <node concept="2ShNRf" id="6BD$$FyguRO" role="33vP2m">
+              <node concept="3zrR0B" id="6BD$$FygwSb" role="2ShVmc">
+                <node concept="3Tqbb2" id="6BD$$FygwSd" role="3zrR0E">
+                  <ref role="ehGHo" to="iowz:3v6eDgz_YY5" resolve="List" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6BD$$FygwT3" role="3cqZAp">
+          <node concept="37vLTI" id="6BD$$Fygxz3" role="3clFbG">
+            <node concept="2OqwBi" id="6BD$$Fygy9M" role="37vLTx">
+              <node concept="2OqwBi" id="6BD$$FygxF9" role="2Oq$k0">
+                <node concept="1PxgMI" id="6BD$$FygxAy" role="2Oq$k0">
+                  <ref role="1PxNhF" to="iowz:1HX2cDt6B3a" resolve="File" />
+                  <node concept="Q6c8r" id="6BD$$Fygxzx" role="1PxMeX" />
+                </node>
+                <node concept="1$rogu" id="6BD$$FygxTp" role="2OqNvi" />
+              </node>
+              <node concept="3YRAZt" id="6BD$$FygyDH" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="6BD$$FygwVp" role="37vLTJ">
+              <node concept="37vLTw" id="6BD$$FygwT1" role="2Oq$k0">
+                <ref role="3cqZAo" node="6BD$$FyguQY" resolve="fileList" />
+              </node>
+              <node concept="3TrEf2" id="6BD$$FygxjI" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:6qiI2N4G1iL" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6BD$$FygyIZ" role="3cqZAp">
+          <node concept="2OqwBi" id="6BD$$FygyLf" role="3clFbG">
+            <node concept="Q6c8r" id="6BD$$FygyIX" role="2Oq$k0" />
+            <node concept="1P9Npp" id="6BD$$FygyXE" role="2OqNvi">
+              <node concept="37vLTw" id="6BD$$FygyYh" role="1P9ThW">
+                <ref role="3cqZAo" node="6BD$$FyguQY" resolve="fileList" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="6BD$$Fygu5_" role="QzAvj">
+      <node concept="3clFbS" id="6BD$$Fygu5A" role="2VODD2">
+        <node concept="3clFbF" id="6BD$$Fygua_" role="3cqZAp">
+          <node concept="Xl_RD" id="6BD$$Fygua$" role="3clFbG">
+            <property role="Xl_RC" value="Convert to list of files" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
