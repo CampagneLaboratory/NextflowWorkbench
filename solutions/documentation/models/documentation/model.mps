@@ -42,7 +42,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -76,8 +76,12 @@
       <concept id="4018964125401495568" name="org.campagnelab.workflow.structure.Tuple" flags="ng" index="knwa4">
         <child id="7391172440899058539" name="elements" index="2zSOd7" />
       </concept>
-      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
-      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
+        <property id="2590112629708729231" name="fromStandardOutput" index="2lYOoT" />
+      </concept>
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o">
+        <property id="2590112629703814581" name="toStandardInput" index="2mj$03" />
+      </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -139,6 +143,9 @@
       </concept>
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
+      </concept>
+      <concept id="8074343669091902386" name="org.campagnelab.workflow.structure.ValueInAChannelRef" flags="ng" index="3YE7tV">
+        <reference id="8074343669091902431" name="value" index="3YE7sm" />
       </concept>
     </language>
   </registry>
@@ -491,6 +498,41 @@
     <node concept="3ZW7eb" id="x9V7s05XuY" role="lGtFl">
       <property role="2ripvU" value="1" />
       <property role="TrG5h" value="BashExample" />
+      <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
+    </node>
+  </node>
+  <node concept="2ulcR8" id="6BD$$Fyp1pe">
+    <property role="TrG5h" value="SelectSequencesByPattern" />
+    <node concept="2lYRya" id="6BD$$Fyp2R3" role="2ulM79">
+      <property role="TrG5h" value="matchingSequences" />
+      <property role="2lYOoT" value="true" />
+      <node concept="16pbKc" id="6BD$$Fyp30z" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="6BD$$Fyp28q" role="2ulM7n">
+      <property role="TrG5h" value="sequences" />
+      <property role="2mj$03" value="true" />
+      <node concept="16pbKc" id="6BD$$Fyp2aK" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="6BD$$Fyp2M7" role="2ulM7n">
+      <property role="TrG5h" value="pattern" />
+      <node concept="16pbKc" id="6BD$$Fyp2Ox" role="2ybFLk" />
+    </node>
+    <node concept="3Y$Zt1" id="6BD$$Fyp5jW" role="2ulM7a">
+      <node concept="19SGf9" id="6BD$$Fyp5jY" role="3Y$PkS">
+        <node concept="19SUe$" id="6BD$$Fyp5jZ" role="19SJt6">
+          <property role="19SUeA" value="awk '{for (i=1;i&lt;NF;i++) { if ($i ~ &quot;" />
+        </node>
+        <node concept="3YE7tV" id="6BD$$Fyp5xO" role="19SJt6">
+          <ref role="3YE7sm" node="6BD$$Fyp2M7" resolve="pattern" />
+        </node>
+        <node concept="19SUe$" id="6BD$$Fyp5xN" role="19SJt6">
+          <property role="19SUeA" value="&quot;) print $i;}}'" />
+        </node>
+      </node>
+    </node>
+    <node concept="3ZW7eb" id="6BD$$Fyp5A$" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="SelectSequencesByPattern" />
       <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
     </node>
   </node>
