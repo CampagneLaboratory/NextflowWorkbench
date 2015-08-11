@@ -1630,9 +1630,6 @@
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="FunctionWithClosureAndChannelRefs" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
-    <node concept="PrWs8" id="3uBbkEdUqJ_" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
     <node concept="1TJgyj" id="6TmjYLGeFMw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="outChannelContainerRef" />
@@ -1642,7 +1639,7 @@
   </node>
   <node concept="1TIwiD" id="6TmjYLGcN_3">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
-    <property role="TrG5h" value="ifEmpty" />
+    <property role="TrG5h" value="IfEmpty" />
     <property role="34LRSv" value="ifEmpty" />
     <property role="R4oN_" value="Emit a value specified as parameter, when the source channel is empty" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
@@ -2105,6 +2102,13 @@
     <property role="34LRSv" value="true" />
     <property role="R4oN_" value="Order by the entries natural ordering i.e. numerical,lexicographic" />
     <ref role="1TJDcQ" node="6ZbOXH8aImN" resolve="SortParameter" />
+  </node>
+  <node concept="1TIwiD" id="1pJCaaoz_yY">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="TrG5h" value="Count" />
+    <property role="34LRSv" value="count" />
+    <property role="R4oN_" value="Creates a channel that emits the number of items in the source channel" />
+    <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
   </node>
 </model>
 

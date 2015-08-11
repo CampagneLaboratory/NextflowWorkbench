@@ -1955,20 +1955,6 @@
   <node concept="1M2fIO" id="3uBbkEdVkhE">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <ref role="1M2myG" to="iowz:6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
-    <node concept="nKS2y" id="3uBbkEdVkDV" role="1MLUbF">
-      <node concept="3clFbS" id="3uBbkEdVkDW" role="2VODD2">
-        <node concept="3SKdUt" id="3uBbkEdVkT8" role="3cqZAp">
-          <node concept="3SKdUq" id="3uBbkEdVkVP" role="3SKWNk">
-            <property role="3SKdUp" value="temporarily disable functions with closures and channel refs. They need review and discussion" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="3uBbkEdVkIR" role="3cqZAp">
-          <node concept="3clFbT" id="3uBbkEdVkIQ" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="71ITBVySQS_">
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
@@ -2059,6 +2045,30 @@
   <node concept="1M2fIO" id="1D3_UgeJcz_">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <ref role="1M2myG" to="iowz:XaRILis0lI" resolve="FunctionWithClosure" />
+  </node>
+  <node concept="1M2fIO" id="4vNpgMrPKYD">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="1M2myG" to="iowz:6TmjYLGeHOd" resolve="Cross" />
+    <node concept="nKS2y" id="4vNpgMrPL7x" role="1MLUbF">
+      <node concept="3clFbS" id="4vNpgMrPL7y" role="2VODD2">
+        <node concept="3clFbF" id="4vNpgMrPMdY" role="3cqZAp">
+          <node concept="3eOVzh" id="4vNpgMrPPaA" role="3clFbG">
+            <node concept="2OqwBi" id="4vNpgMrPQUG" role="3uHU7B">
+              <node concept="2OqwBi" id="4vNpgMrPMjd" role="2Oq$k0">
+                <node concept="EsrRn" id="4vNpgMrPMdX" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="4vNpgMrPML6" role="2OqNvi">
+                  <ref role="3TtcxE" to="iowz:6TmjYLGeFMw" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="4vNpgMrPTCP" role="2OqNvi" />
+            </node>
+            <node concept="3cmrfG" id="4vNpgMrPPIE" role="3uHU7w">
+              <property role="3cmrfH" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
