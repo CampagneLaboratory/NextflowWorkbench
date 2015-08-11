@@ -1438,6 +1438,12 @@
     <node concept="3EZMnI" id="xP2fmw6Wxp" role="2wV5jI">
       <node concept="PMmxH" id="xP2fmw6X$C" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="Vb9p2" id="tbMEt6Cs1K" role="3F10Kt">
+          <property role="Vbekb" value="ITALIC" />
+        </node>
+        <node concept="VechU" id="tbMEt6Cs1L" role="3F10Kt">
+          <property role="Vb096" value="gray" />
+        </node>
       </node>
       <node concept="3F0A7n" id="1q4iT9$FPLh" role="3EZMnx">
         <property role="1O74Pk" value="true" />
@@ -1446,7 +1452,7 @@
           <property role="Vbekb" value="ITALIC" />
         </node>
         <node concept="VechU" id="1q4iT9$FZTC" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="gray" />
         </node>
       </node>
       <node concept="l2Vlx" id="xP2fmw6Wxs" role="2iSdaV" />
