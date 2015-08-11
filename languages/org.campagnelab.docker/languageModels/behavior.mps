@@ -9845,5 +9845,35 @@
       <node concept="3cqZAl" id="BMuHr35pIy" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="xP2fmw5ca1">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="13h7C2" to="6jv6:xP2fmw5bYR" resolve="Comment" />
+    <node concept="13hLZK" id="xP2fmw5ca2" role="13h7CW">
+      <node concept="3clFbS" id="xP2fmw5ca3" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="xP2fmw5fia" role="13h7CS">
+      <property role="TrG5h" value="parse" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="1hjSjLb6kbW" resolve="parse" />
+      <node concept="3Tm1VV" id="xP2fmw5fif" role="1B3o_S" />
+      <node concept="3clFbS" id="xP2fmw5fii" role="3clF47">
+        <node concept="3clFbF" id="xP2fmw5rst" role="3cqZAp">
+          <node concept="13iPFW" id="xP2fmw5rss" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="xP2fmw5fij" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="xP2fmw5fik" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="xP2fmw5fil" role="3clF46">
+        <property role="TrG5h" value="line" />
+        <node concept="17QB3L" id="xP2fmw5fim" role="1tU5fm" />
+      </node>
+      <node concept="3Tqbb2" id="xP2fmw5fin" role="3clF45">
+        <ref role="ehGHo" to="6jv6:1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+      </node>
+    </node>
+  </node>
 </model>
 

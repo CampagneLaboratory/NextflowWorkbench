@@ -51,9 +51,13 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -1426,6 +1430,26 @@
         </node>
       </node>
       <node concept="l2Vlx" id="nU1NoTl5zV" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="xP2fmw6WoV">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="1XX52x" to="6jv6:xP2fmw5bYR" resolve="Comment" />
+    <node concept="3EZMnI" id="xP2fmw6Wxp" role="2wV5jI">
+      <node concept="PMmxH" id="xP2fmw6X$C" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0A7n" id="1q4iT9$FPLh" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="6jv6:1q4iT9$FIVt" resolve="description" />
+        <node concept="Vb9p2" id="1q4iT9$FZSG" role="3F10Kt">
+          <property role="Vbekb" value="ITALIC" />
+        </node>
+        <node concept="VechU" id="1q4iT9$FZTC" role="3F10Kt">
+          <property role="Vb096" value="lightGray" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="xP2fmw6Wxs" role="2iSdaV" />
     </node>
   </node>
 </model>
