@@ -83,7 +83,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -4065,7 +4065,7 @@
   </node>
   <node concept="1YbPZF" id="XaRILjgVE_">
     <property role="TrG5h" value="typeof_GroupTuple" />
-    <property role="3GE5qa" value="channelFunctions" />
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
     <property role="18ip37" value="true" />
     <node concept="3clFbS" id="XaRILjgVEA" role="18ibNy">
       <node concept="1Z5TYs" id="XaRILjgX9i" role="3cqZAp">
@@ -4628,6 +4628,49 @@
       <ref role="1YaFvo" to="iowz:6TmjYLGgpKP" resolve="Spread" />
     </node>
   </node>
+  <node concept="Q5z_Y" id="1nj$XVfZUBX">
+    <property role="TrG5h" value="AddWithDockerToConfig" />
+    <node concept="Q6JDH" id="1nj$XVfZUTX" role="Q6Id_">
+      <property role="TrG5h" value="workflowConfig" />
+      <node concept="3Tqbb2" id="1nj$XVfZUU5" role="Q6QK4">
+        <ref role="ehGHo" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
+      </node>
+    </node>
+    <node concept="Q5ZZ6" id="1nj$XVfZUBY" role="Q6x$H">
+      <node concept="3clFbS" id="1nj$XVfZUBZ" role="2VODD2">
+        <node concept="3clFbF" id="1nj$XVfZV6J" role="3cqZAp">
+          <node concept="2OqwBi" id="1nj$XVfZWtc" role="3clFbG">
+            <node concept="2OqwBi" id="1nj$XVfZVb0" role="2Oq$k0">
+              <node concept="QwW4i" id="1nj$XVfZV6I" role="2Oq$k0">
+                <ref role="QwW4h" node="1nj$XVfZUTX" resolve="workflowConfig" />
+              </node>
+              <node concept="3Tsc0h" id="1nj$XVfZVO_" role="2OqNvi">
+                <ref role="3TtcxE" to="dlwq:1nj$XVfY5Rs" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="1nj$XVfZYIy" role="2OqNvi">
+              <node concept="2ShNRf" id="1nj$XVfZYOB" role="25WWJ7">
+                <node concept="3zrR0B" id="1nj$XVfZZpg" role="2ShVmc">
+                  <node concept="3Tqbb2" id="1nj$XVfZZpi" role="3zrR0E">
+                    <ref role="ehGHo" to="dlwq:1nj$XVfY62i" resolve="WithDocker" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="1nj$XVfZZFS" role="QzAvj">
+      <node concept="3clFbS" id="1nj$XVfZZFT" role="2VODD2">
+        <node concept="3clFbF" id="1nj$XVfZZL0" role="3cqZAp">
+          <node concept="Xl_RD" id="1nj$XVfZZKZ" role="3clFbG">
+            <property role="Xl_RC" value="Add WithDocker Container Option" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
   <node concept="18kY7G" id="1nj$XVfZClb">
     <property role="TrG5h" value="ConfigMustHaveWithDocker" />
     <node concept="3clFbS" id="1nj$XVfZClc" role="18ibNy">
@@ -4703,31 +4746,85 @@
       <ref role="1YaFvo" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
     </node>
   </node>
-  <node concept="Q5z_Y" id="1nj$XVfZUBX">
-    <property role="TrG5h" value="AddWithDockerToConfig" />
-    <node concept="Q6JDH" id="1nj$XVfZUTX" role="Q6Id_">
-      <property role="TrG5h" value="workflowConfig" />
-      <node concept="3Tqbb2" id="1nj$XVfZUU5" role="Q6QK4">
-        <ref role="ehGHo" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
-      </node>
-    </node>
-    <node concept="Q5ZZ6" id="1nj$XVfZUBY" role="Q6x$H">
-      <node concept="3clFbS" id="1nj$XVfZUBZ" role="2VODD2">
-        <node concept="3clFbF" id="1nj$XVfZV6J" role="3cqZAp">
-          <node concept="2OqwBi" id="1nj$XVfZWtc" role="3clFbG">
-            <node concept="2OqwBi" id="1nj$XVfZVb0" role="2Oq$k0">
-              <node concept="QwW4i" id="1nj$XVfZV6I" role="2Oq$k0">
-                <ref role="QwW4h" node="1nj$XVfZUTX" resolve="workflowConfig" />
-              </node>
-              <node concept="3Tsc0h" id="1nj$XVfZVO_" role="2OqNvi">
-                <ref role="3TtcxE" to="dlwq:1nj$XVfY5Rs" />
-              </node>
+  <node concept="18kY7G" id="1NhN7oY8Vo_">
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="TrG5h" value="check_File" />
+    <node concept="3clFbS" id="1NhN7oY8VoA" role="18ibNy">
+      <node concept="3clFbJ" id="1NhN7oY8VRD" role="3cqZAp">
+        <node concept="3clFbS" id="1NhN7oY8VRE" role="3clFbx">
+          <node concept="a7r0C" id="1NhN7oY9dhy" role="3cqZAp">
+            <node concept="1YBJjd" id="1NhN7oY9gKd" role="2OEOjV">
+              <ref role="1YBMHb" node="1NhN7oY8VP9" resolve="file" />
             </node>
-            <node concept="TSZUe" id="1nj$XVfZYIy" role="2OqNvi">
-              <node concept="2ShNRf" id="1nj$XVfZYOB" role="25WWJ7">
-                <node concept="3zrR0B" id="1nj$XVfZZpg" role="2ShVmc">
-                  <node concept="3Tqbb2" id="1nj$XVfZZpi" role="3zrR0E">
-                    <ref role="ehGHo" to="dlwq:1nj$XVfY62i" resolve="WithDocker" />
+            <node concept="Xl_RD" id="1NhN7oY9dhO" role="a7wSD">
+              <property role="Xl_RC" value="The process may output lists of files, make sure the script outputs individual files" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="1NhN7oY9dnv" role="3clFbw">
+          <node concept="3clFbC" id="1NhN7oY9df$" role="3uHU7B">
+            <node concept="2OqwBi" id="1NhN7oY9d7T" role="3uHU7B">
+              <node concept="2OqwBi" id="1NhN7oY9d7U" role="2Oq$k0">
+                <node concept="1YBJjd" id="1NhN7oY9d7V" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1NhN7oY8VP9" resolve="file" />
+                </node>
+                <node concept="1mfA1w" id="1NhN7oY9d7W" role="2OqNvi" />
+              </node>
+              <node concept="2yIwOk" id="1NhN7oY9d7X" role="2OqNvi" />
+            </node>
+            <node concept="35c_gC" id="1NhN7oY9dge" role="3uHU7w">
+              <ref role="35c_gD" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+            </node>
+          </node>
+          <node concept="1eOMI4" id="1NhN7oY9gEM" role="3uHU7w">
+            <node concept="22lmx$" id="1NhN7oY9fay" role="1eOMHV">
+              <node concept="2OqwBi" id="1NhN7oY9e_2" role="3uHU7B">
+                <node concept="2OqwBi" id="1NhN7oY9drV" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1NhN7oY9qnv" role="2Oq$k0">
+                    <node concept="1YBJjd" id="1NhN7oY9doE" role="2Oq$k0">
+                      <ref role="1YBMHb" node="1NhN7oY8VP9" resolve="file" />
+                    </node>
+                    <node concept="2Xjw5R" id="1NhN7oY9qNR" role="2OqNvi">
+                      <node concept="1xMEDy" id="1NhN7oY9qNT" role="1xVPHs">
+                        <node concept="chp4Y" id="1NhN7oY9qUw" role="ri$Ld">
+                          <ref role="cht4Q" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="1NhN7oY9rcs" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1NhN7oY9eWh" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="Xl_RD" id="1NhN7oY9eYA" role="37wK5m">
+                    <property role="Xl_RC" value="*" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1NhN7oY9g2T" role="3uHU7w">
+                <node concept="2OqwBi" id="1NhN7oY9ftx" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1NhN7oY9ri9" role="2Oq$k0">
+                    <node concept="1YBJjd" id="1NhN7oY9fpf" role="2Oq$k0">
+                      <ref role="1YBMHb" node="1NhN7oY8VP9" resolve="file" />
+                    </node>
+                    <node concept="2Xjw5R" id="1NhN7oY9rHM" role="2OqNvi">
+                      <node concept="1xMEDy" id="1NhN7oY9rHO" role="1xVPHs">
+                        <node concept="chp4Y" id="1NhN7oY9rLb" role="ri$Ld">
+                          <ref role="cht4Q" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="1NhN7oY9rZc" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1NhN7oY9grf" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="Xl_RD" id="1NhN7oY9gus" role="37wK5m">
+                    <property role="Xl_RC" value="?" />
                   </node>
                 </node>
               </node>
@@ -4736,14 +4833,146 @@
         </node>
       </node>
     </node>
-    <node concept="QznSV" id="1nj$XVfZZFS" role="QzAvj">
-      <node concept="3clFbS" id="1nj$XVfZZFT" role="2VODD2">
-        <node concept="3clFbF" id="1nj$XVfZZL0" role="3cqZAp">
-          <node concept="Xl_RD" id="1nj$XVfZZKZ" role="3clFbG">
-            <property role="Xl_RC" value="Add WithDocker Container Option" />
+    <node concept="1YaCAy" id="1NhN7oY8VP9" role="1YuTPh">
+      <property role="TrG5h" value="file" />
+      <ref role="1YaFvo" to="iowz:1HX2cDt6B3a" resolve="File" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="1NhN7oY9gKD">
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="TrG5h" value="check_List" />
+    <node concept="3clFbS" id="1NhN7oY9gKE" role="18ibNy">
+      <node concept="3clFbJ" id="1NhN7oY9gLQ" role="3cqZAp">
+        <node concept="3clFbS" id="1NhN7oY9gLR" role="3clFbx">
+          <node concept="a7r0C" id="1NhN7oY9j9l" role="3cqZAp">
+            <node concept="1YBJjd" id="1NhN7oY9jbE" role="2OEOjV">
+              <ref role="1YBMHb" node="1NhN7oY9gKG" resolve="list" />
+            </node>
+            <node concept="Xl_RD" id="1NhN7oY9j9n" role="a7wSD">
+              <property role="Xl_RC" value="The process may output individual files, make sure the script outputs a list of files" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="1NhN7oY9iHP" role="3clFbw">
+          <node concept="1Wc70l" id="1NhN7oY9iEq" role="3uHU7B">
+            <node concept="3clFbC" id="1NhN7oY9hAj" role="3uHU7B">
+              <node concept="2OqwBi" id="1NhN7oY9hhu" role="3uHU7B">
+                <node concept="2OqwBi" id="1NhN7oY9gPp" role="2Oq$k0">
+                  <node concept="1YBJjd" id="1NhN7oY9gMJ" role="2Oq$k0">
+                    <ref role="1YBMHb" node="1NhN7oY9gKG" resolve="list" />
+                  </node>
+                  <node concept="3TrEf2" id="1NhN7oY9h2d" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iowz:6qiI2N4G1iL" />
+                  </node>
+                </node>
+                <node concept="2yIwOk" id="1NhN7oY9hr_" role="2OqNvi" />
+              </node>
+              <node concept="35c_gC" id="1NhN7oY9hBZ" role="3uHU7w">
+                <ref role="35c_gD" to="iowz:1HX2cDt6B3a" resolve="File" />
+              </node>
+            </node>
+            <node concept="3clFbC" id="1NhN7oY9iHQ" role="3uHU7w">
+              <node concept="2OqwBi" id="1NhN7oY9iHR" role="3uHU7B">
+                <node concept="2OqwBi" id="1NhN7oY9iHS" role="2Oq$k0">
+                  <node concept="1YBJjd" id="1NhN7oY9iTR" role="2Oq$k0">
+                    <ref role="1YBMHb" node="1NhN7oY9gKG" resolve="list" />
+                  </node>
+                  <node concept="1mfA1w" id="1NhN7oY9iHU" role="2OqNvi" />
+                </node>
+                <node concept="2yIwOk" id="1NhN7oY9iHV" role="2OqNvi" />
+              </node>
+              <node concept="35c_gC" id="1NhN7oY9iHW" role="3uHU7w">
+                <ref role="35c_gD" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+              </node>
+            </node>
+          </node>
+          <node concept="1eOMI4" id="1NhN7oY9iHX" role="3uHU7w">
+            <node concept="22lmx$" id="1NhN7oY9iHY" role="1eOMHV">
+              <node concept="2OqwBi" id="1NhN7oY9iHZ" role="3uHU7B">
+                <node concept="2OqwBi" id="1NhN7oY9iI0" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1NhN7oY9psb" role="2Oq$k0">
+                    <node concept="1YBJjd" id="1NhN7oY9iXX" role="2Oq$k0">
+                      <ref role="1YBMHb" node="1NhN7oY9gKG" resolve="list" />
+                    </node>
+                    <node concept="2Xjw5R" id="1NhN7oY9pUi" role="2OqNvi">
+                      <node concept="1xMEDy" id="1NhN7oY9pUk" role="1xVPHs">
+                        <node concept="chp4Y" id="1NhN7oY9pYl" role="ri$Ld">
+                          <ref role="cht4Q" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="1NhN7oY9qds" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1NhN7oY9iI3" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="Xl_RD" id="1NhN7oY9iI4" role="37wK5m">
+                    <property role="Xl_RC" value="*" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1NhN7oY9iI5" role="3uHU7w">
+                <node concept="2OqwBi" id="1NhN7oY9iI6" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1NhN7oY9o6e" role="2Oq$k0">
+                    <node concept="1YBJjd" id="1NhN7oY9j2E" role="2Oq$k0">
+                      <ref role="1YBMHb" node="1NhN7oY9gKG" resolve="list" />
+                    </node>
+                    <node concept="2Xjw5R" id="1NhN7oY9p1D" role="2OqNvi">
+                      <node concept="1xMEDy" id="1NhN7oY9p1F" role="1xVPHs">
+                        <node concept="chp4Y" id="1NhN7oY9p5S" role="ri$Ld">
+                          <ref role="cht4Q" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="1NhN7oY9plv" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1NhN7oY9iI9" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="Xl_RD" id="1NhN7oY9iIa" role="37wK5m">
+                    <property role="Xl_RC" value="?" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1YaCAy" id="1NhN7oY9gKG" role="1YuTPh">
+      <property role="TrG5h" value="list" />
+      <ref role="1YaFvo" to="iowz:3v6eDgz_YY5" resolve="List" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="61ZqhN4whgY">
+    <property role="TrG5h" value="typeof_CollectFile" />
+    <property role="3GE5qa" value="channelFunctions.CollectFile" />
+    <property role="18ip37" value="true" />
+    <node concept="3clFbS" id="61ZqhN4whgZ" role="18ibNy">
+      <node concept="1Z5TYs" id="61ZqhN4whH8" role="3cqZAp">
+        <node concept="mw_s8" id="61ZqhN4whHe" role="1ZfhK$">
+          <node concept="1Z2H0r" id="61ZqhN4whHf" role="mwGJk">
+            <node concept="1YBJjd" id="61ZqhN4wirL" role="1Z2MuG">
+              <ref role="1YBMHb" node="61ZqhN4whh1" resolve="collectFile" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="61ZqhN4wkih" role="1ZfhKB">
+          <node concept="2c44tf" id="61ZqhN4wkjd" role="mwGJk">
+            <node concept="_YKpA" id="71QPUOF$APK" role="2c44tc">
+              <node concept="3UtRaE" id="71QPUOF$Bi4" role="_ZDj9" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="61ZqhN4whh1" role="1YuTPh">
+      <property role="TrG5h" value="collectFile" />
+      <ref role="1YaFvo" to="iowz:7VH0Nfrosoa" resolve="CollectFile" />
     </node>
   </node>
 </model>

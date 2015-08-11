@@ -643,6 +643,12 @@
             <ref role="3bR37D" node="6eMkF2c4Sia" resolve="org.campagnelab.workflow.configuration" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1WG1fjcFvnk" role="3bR37C">
+          <node concept="3bR9La" id="1WG1fjcFvnl" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1B2iUhm3bS8" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -734,6 +740,32 @@
         </node>
         <node concept="3LEDTy" id="dhtvqDS6Ck" role="3LEDUa">
           <ref role="3LEDTV" node="1B2iUhm3bS8" resolve="org.campagnelab.util.files" />
+        </node>
+        <node concept="3LEDTy" id="1WG1fjcFvoi" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+        </node>
+      </node>
+      <node concept="1E1JtA" id="1WG1fjcGJ1r" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="Samples" />
+        <property role="3LESm3" value="8f30b27b-57ec-411a-9ffa-0c6f223dcf72" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="1WG1fjcGJ1u" role="3LF7KH">
+          <node concept="2Ry0Ak" id="1WG1fjcGJxS" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="1WG1fjcGJ$r" role="2Ry0An">
+              <property role="2Ry0Am" value="Samples" />
+              <node concept="2Ry0Ak" id="1WG1fjcGJAY" role="2Ry0An">
+                <property role="2Ry0Am" value="Samples.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1WG1fjcGJCf" role="3bR37C">
+          <node concept="3bR9La" id="1WG1fjcGJCg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
         </node>
       </node>
     </node>

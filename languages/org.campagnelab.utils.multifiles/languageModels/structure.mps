@@ -40,7 +40,6 @@
   </registry>
   <node concept="1TIwiD" id="3LlDVJSEHBN">
     <property role="TrG5h" value="MultiFile" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3LlDVJSEHDz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
