@@ -2088,7 +2088,35 @@
         <node concept="3clFbH" id="6qWs7gtRf2m" role="3cqZAp" />
         <node concept="3clFbJ" id="6qWs7gtRj0r" role="3cqZAp">
           <node concept="3clFbS" id="6qWs7gtRj0s" role="3clFbx">
-            <node concept="3clFbH" id="CaUCS_WA6x" role="3cqZAp" />
+            <node concept="3clFbJ" id="6cH1r31syt_" role="3cqZAp">
+              <node concept="3clFbS" id="6cH1r31sytB" role="3clFbx">
+                <node concept="2LYoGF" id="6cH1r31tgMv" role="3cqZAp">
+                  <node concept="Xl_RD" id="6cH1r31thHs" role="2LYoNm">
+                    <property role="Xl_RC" value="No remote configuration found. Please, add remote configuration settings to workflow.config in the model." />
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="6cH1r31tgkc" role="3clFbw">
+                <node concept="2OqwBi" id="6cH1r31tgke" role="3fr31v">
+                  <node concept="2ShNRf" id="6cH1r31tgkf" role="2Oq$k0">
+                    <node concept="1pGfFk" id="6cH1r31tgkg" role="2ShVmc">
+                      <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                      <node concept="3cpWs3" id="6cH1r31tgkh" role="37wK5m">
+                        <node concept="Xl_RD" id="6cH1r31tgki" role="3uHU7w">
+                          <property role="Xl_RC" value="/runRemote.xml" />
+                        </node>
+                        <node concept="37vLTw" id="6cH1r31tgkj" role="3uHU7B">
+                          <ref role="3cqZAo" node="28S3GatEby6" resolve="classesGenPath" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6cH1r31tgkk" role="2OqNvi">
+                    <ref role="37wK5l" to="fxg7:~File.exists():boolean" resolve="exists" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="yIgYw" id="6qWs7gtRrkj" role="3cqZAp">
               <node concept="2LYoGx" id="6qWs7gtRrkk" role="3cqZAk">
                 <ref role="3rFKlk" node="1d37CfpwZV0" resolve="RunRemote_NextflowWithAnt" />
