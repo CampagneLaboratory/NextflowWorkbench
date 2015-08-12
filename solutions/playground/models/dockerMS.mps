@@ -17,6 +17,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -27,11 +30,23 @@
       </concept>
       <concept id="8987412447080958668" name="org.campagnelab.docker.structure.DockerImage" flags="ng" index="2E_JVc">
         <property id="8987412447080959633" name="id" index="2E_JEh" />
+        <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
         <reference id="8987412447080991851" name="buildInstructions" index="2E_BxF" />
+        <child id="6819868375258175796" name="tagAs" index="Gyxcj" />
+        <child id="430664643838761227" name="containers" index="WF_SX" />
       </concept>
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
         <property id="8987412447080623507" name="options" index="2E$TAj" />
         <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
+      </concept>
+      <concept id="6819868375264134127" name="org.campagnelab.docker.structure.RunningContainer" flags="ng" index="GbKB8">
+        <property id="1464761952898881430" name="running" index="1vm7qE" />
+        <property id="1859325667733444128" name="command" index="3yMj3R" />
+        <reference id="1859325667733099571" name="image" index="3zcJb$" />
+      </concept>
+      <concept id="6819868375258175840" name="org.campagnelab.docker.structure.TagInfo" flags="ng" index="Gyxd7">
+        <property id="6819868375258175846" name="tag" index="Gyxd1" />
+        <property id="6819868375258175942" name="userName" index="Gyxfx" />
       </concept>
       <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
         <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
@@ -42,15 +57,21 @@
       <concept id="1893262236499908796" name="org.campagnelab.docker.structure.DockerContainer" flags="ng" index="VuMX5">
         <property id="6819868375264208052" name="id" index="GbyUj" />
         <property id="1893262236499912677" name="tag" index="VuL0s" />
+        <property id="1893262236499912678" name="userName" index="VuL0v" />
       </concept>
       <concept id="1893262236499932797" name="org.campagnelab.docker.structure.FromInstruction" flags="ng" index="VuO64">
         <child id="1893262236499932800" name="foundationContainer" index="VuO5T" />
       </concept>
-      <concept id="1893262236499932072" name="org.campagnelab.docker.structure.MaintainerInstruction" flags="ng" index="VuOhh" />
+      <concept id="1893262236499932072" name="org.campagnelab.docker.structure.MaintainerInstruction" flags="ng" index="VuOhh">
+        <property id="1893262236499932073" name="fullName" index="VuOhg" />
+      </concept>
       <concept id="1893262236499930363" name="org.campagnelab.docker.structure.Dockerfile" flags="ng" index="VuPG2">
         <property id="8987412447078877922" name="message" index="2EHzVy" />
         <child id="1893262236499933486" name="instructions" index="VuOVn" />
         <child id="716770353512671073" name="images" index="3blhQR" />
+      </concept>
+      <concept id="430664643838735225" name="org.campagnelab.docker.structure.ContainerRef" flags="ng" index="WEvhf">
+        <reference id="430664643838735312" name="container" index="WEvjA" />
       </concept>
       <concept id="716770353512671076" name="org.campagnelab.docker.structure.ImageRef" flags="ng" index="3blhQM">
         <reference id="716770353512671080" name="image" index="3blhQY" />
@@ -62,8 +83,9 @@
     <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
   <node concept="VuPG2" id="xP2fmw4YHs">
-    <property role="TrG5h" value="ArtifactRepository" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile8217040565774921079.txt" />
+    <property role="TrG5h" value="ubuntu-java8" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2521916477109517031.txt" />
+    <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="xP2fmw4YHt" role="VuOVn">
       <node concept="VtuK3" id="xP2fmw5bR5" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -71,7 +93,9 @@
         <property role="3zaeVo" value="true" />
       </node>
     </node>
-    <node concept="VuOhh" id="xP2fmw4YHu" role="VuOVn" />
+    <node concept="VuOhh" id="xP2fmw4YHu" role="VuOVn">
+      <property role="VuOhg" value="Campagne Lab" />
+    </node>
     <node concept="2Cort2" id="tbMEt6C6lq" role="VuOVn">
       <property role="1MaElf" value="install java 8 in the image" />
     </node>
@@ -113,14 +137,103 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="tbMEt6Cg9X" role="3blhQR">
-      <ref role="3blhQY" node="tbMEt6Cg9W" resolve="ArtifactRepository_Image" />
+    <node concept="2Cort2" id="6fIiQMMyrnq" role="VuOVn">
+      <property role="1MaElf" value="aadd a package to set Java environment variables" />
+    </node>
+    <node concept="VugRC" id="6fIiQMMyjy2" role="VuOVn">
+      <node concept="19SGf9" id="6fIiQMMyjyI" role="Vugyn">
+        <node concept="19SUe$" id="6fIiQMMyjyJ" role="19SJt6">
+          <property role="19SUeA" value="apt-get install oracle-java8-set-default&#10;" />
+        </node>
+      </node>
+    </node>
+    <node concept="3blhQM" id="6fIiQMMzYhG" role="3blhQR">
+      <ref role="3blhQY" node="6fIiQMMzYq_" resolve="ubuntu-java8_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="tbMEt6Cg9W">
-    <property role="2E_JEh" value="d28fb2d6d2c1" />
-    <property role="TrG5h" value="ArtifactRepository_Image" />
-    <ref role="2E_BxF" node="xP2fmw4YHs" resolve="ArtifactRepository" />
+  <node concept="VuPG2" id="6fIiQMMz3r_">
+    <property role="TrG5h" value="artifacts-software" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile7818349743402857895.txt" />
+    <property role="3GE5qa" value="dockerfiles" />
+    <node concept="VuO64" id="6fIiQMM$wKy" role="VuOVn">
+      <node concept="VtuK3" id="6fIiQMM$_RF" role="VuO5T">
+        <property role="VuL0s" value="1.0" />
+        <property role="VuL0v" value="mas2181" />
+        <property role="GbyUj" value="ubuntu-java8" />
+        <property role="3zaeVo" value="true" />
+      </node>
+    </node>
+    <node concept="VuOhh" id="6fIiQMMz3rB" role="VuOVn">
+      <property role="VuOhg" value="Campagne Lab" />
+    </node>
+    <node concept="VugRC" id="6fIiQMMzYrC" role="VuOVn">
+      <node concept="19SGf9" id="6fIiQMMzYrS" role="Vugyn">
+        <node concept="19SUe$" id="6fIiQMMzYrT" role="19SJt6">
+          <property role="19SUeA" value="mkdir -p /software" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="6fIiQMMyrqU" role="VuOVn">
+      <node concept="19SGf9" id="6fIiQMMyrrI" role="Vugyn">
+        <node concept="19SUe$" id="6fIiQMMyrrJ" role="19SJt6">
+          <property role="19SUeA" value="mkdir -p /artifactsRepository" />
+        </node>
+      </node>
+    </node>
+    <node concept="3blhQM" id="6fIiQMM$_TV" role="3blhQR">
+      <ref role="3blhQY" node="6fIiQMM$A4g" resolve="artifacts-software_Image" />
+    </node>
+    <node concept="3blhQM" id="6fIiQMM$A4h" role="3blhQR">
+      <ref role="3blhQY" node="6fIiQMM$A4g" resolve="artifacts-software_Image" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="6fIiQMMzYq_">
+    <property role="2E_JEh" value="cbc87332e2dc" />
+    <property role="TrG5h" value="ubuntu-java8_Image" />
+    <property role="GSh9r" value="mas2181/ubuntu-java8:latest" />
+    <property role="3GE5qa" value="images" />
+    <ref role="2E_BxF" node="xP2fmw4YHs" resolve="ubuntu-java8" />
+    <node concept="WEvhf" id="6fIiQMMzYsI" role="WF_SX">
+      <ref role="WEvjA" node="6fIiQMMzYs$" resolve="cbc87332e2dc" />
+    </node>
+    <node concept="Gyxd7" id="6fIiQMM$3GH" role="Gyxcj">
+      <property role="TrG5h" value="ubuntu-java8" />
+      <property role="Gyxd1" value="latest" />
+      <property role="Gyxfx" value="mas2181" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="6fIiQMMzYs$">
+    <property role="TrG5h" value="cbc87332e2dc" />
+    <property role="GbyUj" value="cbc87332e2dc" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="" />
+    <ref role="3zcJb$" node="6fIiQMMzYq_" resolve="ubuntu-java8_Image" />
+  </node>
+  <node concept="2E_JVc" id="6fIiQMM$A4g">
+    <property role="2E_JEh" value="74b4b725b2ba" />
+    <property role="TrG5h" value="artifacts-software_Image" />
+    <property role="GSh9r" value="mas2181/artifacts-software:1.0" />
+    <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifacts-software" />
+    <node concept="Gyxd7" id="6fIiQMM$A4v" role="Gyxcj">
+      <property role="TrG5h" value="artifacts-software" />
+      <property role="Gyxfx" value="mas2181" />
+      <property role="Gyxd1" value="1.0" />
+    </node>
+    <node concept="WEvhf" id="6fIiQMM$A4G" role="WF_SX">
+      <ref role="WEvjA" node="6fIiQMM$A4y" resolve="MNXMTRGRKU" />
+    </node>
+    <node concept="WEvhf" id="6fIiQMM$A6n" role="WF_SX">
+      <ref role="WEvjA" node="6fIiQMM$A4y" resolve="MNXMTRGRKU" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="6fIiQMM$A4y">
+    <property role="VuL0s" value="1.0" />
+    <property role="TrG5h" value="MNXMTRGRKU" />
+    <property role="VuL0v" value="mas2181" />
+    <property role="GbyUj" value="artifacts-software" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="" />
+    <ref role="3zcJb$" node="6fIiQMM$A4g" resolve="artifacts-software_Image" />
   </node>
 </model>
 
