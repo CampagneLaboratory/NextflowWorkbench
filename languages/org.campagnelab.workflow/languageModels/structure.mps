@@ -1363,13 +1363,6 @@
       <ref role="20lvS9" node="3aOvEIt8rqk" resolve="NewIntegerLiteral" />
     </node>
   </node>
-  <node concept="1TIwiD" id="XaRILjgYLb">
-    <property role="3GE5qa" value="channelFunctions" />
-    <property role="TrG5h" value="It" />
-    <property role="34LRSv" value="it" />
-    <property role="R4oN_" value="the element that is currently being used" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-  </node>
   <node concept="1TIwiD" id="XaRILisJ6K">
     <property role="3GE5qa" value="channelFunctions.splitFunctions" />
     <property role="TrG5h" value="SplitFastq" />
@@ -1383,11 +1376,6 @@
     <property role="34LRSv" value="distinct" />
     <property role="R4oN_" value="Remove consecutive duplicated items from a channel" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
-    <node concept="1TJgyj" id="XaRILilDAr" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="condition" />
-      <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
-    </node>
   </node>
   <node concept="1TIwiD" id="XaRILhrTOx">
     <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
