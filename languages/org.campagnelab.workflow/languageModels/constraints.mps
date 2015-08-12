@@ -2079,5 +2079,29 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="2zKoo7aBG_a">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="1M2myG" to="iowz:6TmjYLGeHlg" resolve="Phase" />
+    <node concept="nKS2y" id="2zKoo7aBGMM" role="1MLUbF">
+      <node concept="3clFbS" id="2zKoo7aBGMN" role="2VODD2">
+        <node concept="3clFbF" id="2zKoo7aBGMO" role="3cqZAp">
+          <node concept="3eOVzh" id="2zKoo7aBGMP" role="3clFbG">
+            <node concept="2OqwBi" id="2zKoo7aBGMQ" role="3uHU7B">
+              <node concept="2OqwBi" id="2zKoo7aBGMR" role="2Oq$k0">
+                <node concept="EsrRn" id="2zKoo7aBGMS" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="2zKoo7aBGMT" role="2OqNvi">
+                  <ref role="3TtcxE" to="iowz:6TmjYLGeFMw" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="2zKoo7aBGMU" role="2OqNvi" />
+            </node>
+            <node concept="3cmrfG" id="2zKoo7aBGMV" role="3uHU7w">
+              <property role="3cmrfH" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -108,7 +108,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -204,7 +204,7 @@
         <child id="1233922432965" name="operation" index="1bwxVq" />
         <child id="1234526822589" name="function" index="1Jy66y" />
       </concept>
-      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" index="1bwezc" />
+      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" stub="3147100357551177019" index="1bwezc" />
       <concept id="1233924848298" name="jetbrains.mps.lang.textGen.structure.OperationCall" flags="ng" index="1bDJIP">
         <reference id="1234190664409" name="function" index="1rvKf6" />
         <child id="1234191323697" name="parameter" index="1ryhcI" />
@@ -4475,6 +4475,58 @@
             </node>
           </node>
           <node concept="la8eA" id="2UMxsfkKi8u" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="2zKoo7aBuVO">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="WuzLi" to="iowz:6TmjYLGeHlg" resolve="Phase" />
+    <node concept="11bSqf" id="2zKoo7aBuVP" role="11c4hB">
+      <node concept="3clFbS" id="2zKoo7aBuVQ" role="2VODD2">
+        <node concept="lc7rE" id="2zKoo7aBvET" role="3cqZAp">
+          <node concept="la8eA" id="2zKoo7aBvEU" role="lcghm">
+            <property role="lacIc" value="phase(" />
+          </node>
+          <node concept="l9hG8" id="2zKoo7aBvEV" role="lcghm">
+            <node concept="2OqwBi" id="2zKoo7aBvEW" role="lb14g">
+              <node concept="2OqwBi" id="2zKoo7aBvEX" role="2Oq$k0">
+                <node concept="2OqwBi" id="2zKoo7aBvEY" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2zKoo7aBvEZ" role="2Oq$k0">
+                    <node concept="117lpO" id="2zKoo7aBvF0" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="2zKoo7aBvF1" role="2OqNvi">
+                      <ref role="3TtcxE" to="iowz:6TmjYLGeFMw" />
+                    </node>
+                  </node>
+                  <node concept="1uHKPH" id="2zKoo7aBvF2" role="2OqNvi" />
+                </node>
+                <node concept="3TrEf2" id="2zKoo7aBvF3" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iowz:6TmjYLGeFMt" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="2zKoo7aBvF4" role="2OqNvi">
+                <ref role="37wK5l" to="mqvz:3ziB45$3KqB" resolve="asValidId" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="2zKoo7aBvF5" role="lcghm">
+            <property role="lacIc" value=").flatten().collate(" />
+          </node>
+          <node concept="l9hG8" id="2zKoo7aBvF6" role="lcghm">
+            <node concept="2YIFZM" id="2zKoo7aBvF7" role="lb14g">
+              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="e2lb:~Integer.toString(int):java.lang.String" resolve="toString" />
+              <node concept="2OqwBi" id="2zKoo7aBvF8" role="37wK5m">
+                <node concept="117lpO" id="2zKoo7aBvF9" role="2Oq$k0" />
+                <node concept="2qgKlT" id="2zKoo7aBEQq" role="2OqNvi">
+                  <ref role="37wK5l" to="mqvz:2zKoo7aButX" resolve="combinedTupleSize" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="2zKoo7aBvFb" role="lcghm">
             <property role="lacIc" value=")" />
           </node>
         </node>

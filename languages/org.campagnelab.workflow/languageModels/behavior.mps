@@ -6532,5 +6532,138 @@
       <node concept="3clFbS" id="2UMxsfkJk8X" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="2zKoo7aBtKq">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="13h7C2" to="iowz:6TmjYLGeHlg" resolve="Phase" />
+    <node concept="13i0hz" id="2zKoo7aButX" role="13h7CS">
+      <property role="TrG5h" value="combinedTupleSize" />
+      <node concept="3Tm1VV" id="2zKoo7aButY" role="1B3o_S" />
+      <node concept="3clFbS" id="2zKoo7aButZ" role="3clF47">
+        <node concept="3cpWs8" id="2zKoo7aBuu0" role="3cqZAp">
+          <node concept="3cpWsn" id="2zKoo7aBuu1" role="3cpWs9">
+            <property role="TrG5h" value="channelTypes" />
+            <node concept="2I9FWS" id="2zKoo7aBuu2" role="1tU5fm">
+              <ref role="2I9WkF" to="tpee:fz3vP1H" resolve="Type" />
+            </node>
+            <node concept="2ShNRf" id="2zKoo7aBuu3" role="33vP2m">
+              <node concept="2T8Vx0" id="2zKoo7aBuu4" role="2ShVmc">
+                <node concept="2I9FWS" id="2zKoo7aBuu5" role="2T96Bj">
+                  <ref role="2I9WkF" to="tpee:fz3vP1H" resolve="Type" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2zKoo7aBuu6" role="3cqZAp">
+          <node concept="2OqwBi" id="2zKoo7aBuu7" role="3clFbG">
+            <node concept="37vLTw" id="2zKoo7aBuu8" role="2Oq$k0">
+              <ref role="3cqZAo" node="2zKoo7aBuu1" resolve="channelTypes" />
+            </node>
+            <node concept="TSZUe" id="2zKoo7aBuu9" role="2OqNvi">
+              <node concept="1PxgMI" id="2zKoo7aBuua" role="25WWJ7">
+                <ref role="1PxNhF" to="tpee:fz3vP1H" resolve="Type" />
+                <node concept="2OqwBi" id="2zKoo7aBuub" role="1PxMeX">
+                  <node concept="2OqwBi" id="2zKoo7aBuuc" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2zKoo7aBuud" role="2Oq$k0">
+                      <node concept="2OqwBi" id="2zKoo7aBuue" role="2Oq$k0">
+                        <node concept="13iPFW" id="2zKoo7aBuuf" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="2zKoo7aBuug" role="2OqNvi">
+                          <ref role="3TtcxE" to="iowz:6TmjYLGeFMw" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="2zKoo7aBuuh" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrEf2" id="2zKoo7aBuui" role="2OqNvi">
+                      <ref role="3Tt5mk" to="iowz:6TmjYLGeFMt" />
+                    </node>
+                  </node>
+                  <node concept="3JvlWi" id="2zKoo7aBuuj" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2zKoo7aBuuk" role="3cqZAp">
+          <node concept="37vLTI" id="2zKoo7aBuul" role="3clFbG">
+            <node concept="37vLTw" id="2zKoo7aBuum" role="37vLTJ">
+              <ref role="3cqZAo" node="2zKoo7aBuu1" resolve="channelTypes" />
+            </node>
+            <node concept="BsUDl" id="2zKoo7aBuun" role="37vLTx">
+              <ref role="37wK5l" node="2PYiycRumBm" resolve="getComposedType" />
+              <node concept="37vLTw" id="2zKoo7aBuuo" role="37wK5m">
+                <ref role="3cqZAo" node="2zKoo7aBuu1" resolve="channelTypes" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2zKoo7aBuup" role="3cqZAp">
+          <node concept="3cpWsn" id="2zKoo7aBuuq" role="3cpWs9">
+            <property role="TrG5h" value="previousTypes" />
+            <node concept="2I9FWS" id="2zKoo7aBuur" role="1tU5fm">
+              <ref role="2I9WkF" to="tpee:fz3vP1H" resolve="Type" />
+            </node>
+            <node concept="2ShNRf" id="2zKoo7aBuus" role="33vP2m">
+              <node concept="2T8Vx0" id="2zKoo7aBuut" role="2ShVmc">
+                <node concept="2I9FWS" id="2zKoo7aBuuu" role="2T96Bj">
+                  <ref role="2I9WkF" to="tpee:fz3vP1H" resolve="Type" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2zKoo7aBuuv" role="3cqZAp">
+          <node concept="2OqwBi" id="2zKoo7aBuuw" role="3clFbG">
+            <node concept="37vLTw" id="2zKoo7aBuux" role="2Oq$k0">
+              <ref role="3cqZAo" node="2zKoo7aBuuq" resolve="previousTypes" />
+            </node>
+            <node concept="TSZUe" id="2zKoo7aBuuy" role="2OqNvi">
+              <node concept="1PxgMI" id="2zKoo7aBuuz" role="25WWJ7">
+                <ref role="1PxNhF" to="tpee:fz3vP1H" resolve="Type" />
+                <node concept="2OqwBi" id="2zKoo7aBuu$" role="1PxMeX">
+                  <node concept="BsUDl" id="2zKoo7aBuu_" role="2Oq$k0">
+                    <ref role="37wK5l" node="7mWvTummKDC" resolve="getPreviousNode" />
+                  </node>
+                  <node concept="3JvlWi" id="2zKoo7aBuuA" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2zKoo7aBuuB" role="3cqZAp">
+          <node concept="37vLTI" id="2zKoo7aBuuC" role="3clFbG">
+            <node concept="37vLTw" id="2zKoo7aBuuD" role="37vLTJ">
+              <ref role="3cqZAo" node="2zKoo7aBuuq" resolve="previousTypes" />
+            </node>
+            <node concept="BsUDl" id="2zKoo7aBuuE" role="37vLTx">
+              <ref role="37wK5l" node="2PYiycRumBm" resolve="getComposedType" />
+              <node concept="37vLTw" id="2zKoo7aBuuF" role="37wK5m">
+                <ref role="3cqZAo" node="2zKoo7aBuuq" resolve="previousTypes" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2zKoo7aBuuG" role="3cqZAp">
+          <node concept="3cpWs3" id="2zKoo7aBuuH" role="3cqZAk">
+            <node concept="2OqwBi" id="2zKoo7aBuuI" role="3uHU7w">
+              <node concept="37vLTw" id="2zKoo7aBuuJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="2zKoo7aBuuq" resolve="previousTypes" />
+              </node>
+              <node concept="34oBXx" id="2zKoo7aBuuK" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="2zKoo7aBuuL" role="3uHU7B">
+              <node concept="37vLTw" id="2zKoo7aBuuM" role="2Oq$k0">
+                <ref role="3cqZAo" node="2zKoo7aBuu1" resolve="channelTypes" />
+              </node>
+              <node concept="34oBXx" id="2zKoo7aBuuN" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="2zKoo7aBuuO" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="2zKoo7aBtKr" role="13h7CW">
+      <node concept="3clFbS" id="2zKoo7aBtKs" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
