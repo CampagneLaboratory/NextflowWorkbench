@@ -151,6 +151,8 @@
     <usedLanguage>774bf8a0-62e5-41e1-af63-f4812e60e48b(jetbrains.mps.baseLanguage.checkedDots)</usedLanguage>
     <usedLanguage>20d83b64-d10f-48d1-990d-513b574c4956(org.campagnelab.background)</usedLanguage>
     <usedLanguage>aee9cad2-acd4-4608-aef2-0004f6a1cdbd(jetbrains.mps.lang.actions)</usedLanguage>
+    <usedLanguage>a8fb88b0-7e9f-478c-aab4-a1b076131192(org.campagnelab.gobyweb.interactive)</usedLanguage>
+    <usedLanguage>66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43(org.campagnelab.nyosh.interactive)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -203,6 +205,9 @@
     <language id="a21a7294-c126-4f63-8335-8fecd8c28c7e" fqName="org.campagnelab.NYoSh" version="0" />
     <language id="20d83b64-d10f-48d1-990d-513b574c4956" fqName="org.campagnelab.background" version="0" />
     <language id="adfd00cb-58d7-4094-bca8-f941a491e04f" fqName="org.campagnelab.gobyweb" version="0" />
+    <language id="a8fb88b0-7e9f-478c-aab4-a1b076131192" fqName="org.campagnelab.gobyweb.interactive" version="0" />
+    <language id="57af9408-ffae-472e-9367-5cb44434e8b3" fqName="org.campagnelab.gobyweb.interactive.users" version="0" />
+    <language id="f05c05d7-dafb-4c87-b842-b836f305120f" fqName="org.campagnelab.gobyweb.monitoring" version="0" />
     <language id="1f5314a5-15b8-491d-89ca-13256a5ead51" fqName="org.campagnelab.gobyweb.tags" version="0" />
     <language id="82ffebe3-3685-4fd9-b560-0c1d348d295c" fqName="org.campagnelab.logger" version="0" />
     <language id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" fqName="org.campagnelab.nyosh.environment" version="0" />
