@@ -2070,5 +2070,14 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5l6FUy8NIyU">
+    <ref role="1M2myG" to="iowz:6TmjYLGeFpH" resolve="OutChannelContainerRef" />
+    <node concept="1N5Pfh" id="5l6FUy8NIK3" role="1Mr941">
+      <ref role="1N5Vy1" to="iowz:6TmjYLGeFMt" />
+      <node concept="1dDu$B" id="5l6FUy8NJ8v" role="1N6uqs">
+        <ref role="1dDu$A" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
+      </node>
+    </node>
+  </node>
 </model>
 
