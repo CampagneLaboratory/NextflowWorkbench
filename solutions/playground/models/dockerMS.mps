@@ -33,7 +33,6 @@
         <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
         <reference id="8987412447080991851" name="buildInstructions" index="2E_BxF" />
         <child id="6819868375258175796" name="tagAs" index="Gyxcj" />
-        <child id="430664643838761227" name="containers" index="WF_SX" />
       </concept>
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
         <property id="8987412447080623507" name="options" index="2E$TAj" />
@@ -65,9 +64,6 @@
         <property id="8987412447078877922" name="message" index="2EHzVy" />
         <child id="1893262236499933486" name="instructions" index="VuOVn" />
         <child id="716770353512671073" name="images" index="3blhQR" />
-      </concept>
-      <concept id="430664643838735225" name="org.campagnelab.docker.structure.ContainerRef" flags="ng" index="WEvhf">
-        <reference id="430664643838735312" name="container" index="WEvjA" />
       </concept>
       <concept id="716770353512671076" name="org.campagnelab.docker.structure.ImageRef" flags="ng" index="3blhQM">
         <reference id="716770353512671080" name="image" index="3blhQY" />
@@ -181,19 +177,22 @@
       </node>
     </node>
     <node concept="2Cort2" id="4Q_FQlAkVk4" role="VuOVn">
-      <property role="1MaElf" value="clone the plugins repository" />
+      <property role="1MaElf" value="ssh settings needed to clone " />
     </node>
     <node concept="VugRC" id="3P1oJbjPVIA" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPVJe" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPVJf" role="19SJt6">
-          <property role="19SUeA" value="mkdir -p /root/.ssh &amp;&amp; touch /root/.ssh/known_hosts &amp;&amp; ssh-keyscan github.com &gt;&gt; /root/.ssh/known_hosts" />
+          <property role="19SUeA" value="mkdir -p /root/.ssh &amp;&amp; touch /root/.ssh/known_hosts &amp;&amp; ssh-keyscan github.com &gt;&gt; /root/.ssh/known_hosts \&#10;&amp;&amp; ssh-keygen -t rsa -f /root/.ssh/id_rsa -b 4096 -q -N &quot;&quot;" />
         </node>
       </node>
+    </node>
+    <node concept="2Cort2" id="3P1oJbjPW2K" role="VuOVn">
+      <property role="1MaElf" value="clone the plugins repository" />
     </node>
     <node concept="VugRC" id="3P1oJbjPLK9" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPLKD" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPLKE" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone git@github.com:CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; /root/.bashrc" />
+          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; /root/.bashrc" />
         </node>
       </node>
     </node>
@@ -207,34 +206,32 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2E_JVc" id="6fIiQMM$A4g">
-    <property role="2E_JEh" value="74b4b725b2ba" />
-    <property role="TrG5h" value="artifacts-software_Image" />
-    <property role="GSh9r" value="mas2181/artifacts-software:1.0" />
-    <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifacts-software" />
-    <node concept="Gyxd7" id="6fIiQMM$A4v" role="Gyxcj">
-      <property role="TrG5h" value="artifacts-software" />
-      <property role="Gyxfx" value="mas2181" />
-      <property role="Gyxd1" value="1.0" />
-    </node>
-    <node concept="WEvhf" id="6fIiQMM$A4G" role="WF_SX">
-      <ref role="WEvjA" node="6fIiQMM$A4y" resolve="MNXMTRGRKU" />
-    </node>
-    <node concept="WEvhf" id="6fIiQMM$A6n" role="WF_SX">
-      <ref role="WEvjA" node="6fIiQMM$A4y" resolve="MNXMTRGRKU" />
+    <node concept="3blhQM" id="3P1oJbjPW3O" role="3blhQR">
+      <ref role="3blhQY" node="3P1oJbjPW3N" resolve="artifacts-software_Image" />
     </node>
   </node>
   <node concept="2E_JVc" id="3P1oJbjPVxa">
     <property role="2E_JEh" value="154693612d15" />
     <property role="TrG5h" value="ubuntu-java8_Image" />
-    <property role="GSh9r" value="mas2181/ubuntu-java8:latest" />
     <property role="3GE5qa" value="images" />
+    <property role="GSh9r" value="mas2181/ubuntu-java8:latest" />
     <ref role="2E_BxF" node="xP2fmw4YHs" resolve="ubuntu-java8" />
     <node concept="Gyxd7" id="3P1oJbjPVxt" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="ubuntu-java8" />
       <property role="Gyxd1" value="latest" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="3P1oJbjPW3N">
+    <property role="2E_JEh" value="d79d6cccb9d1" />
+    <property role="TrG5h" value="artifacts-software_Image" />
+    <property role="3GE5qa" value="images" />
+    <property role="GSh9r" value="mas2181/artifacts-software:1.0" />
+    <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifacts-software" />
+    <node concept="Gyxd7" id="3P1oJbjPW4W" role="Gyxcj">
+      <property role="Gyxfx" value="mas2181" />
+      <property role="TrG5h" value="artifacts-software" />
+      <property role="Gyxd1" value="1.0" />
     </node>
   </node>
 </model>
