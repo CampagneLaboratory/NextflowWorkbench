@@ -18,7 +18,10 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
+import java.util.List;
+import java.util.ArrayList;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.internal.collections.runtime.ITranslator2;
@@ -102,10 +105,36 @@ public class QueriesGenerated {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, 0x5b6f0368e19f7320L, "reports"));
   }
   public static Iterable<SNode> sourceNodesQuery_8584871179161866609(final SourceSubstituteMacroNodesContext _context) {
-    return SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6fc5345L, "org.campagnelab.workflow.structure.InputValue"), true, new SAbstractConcept[]{});
+    // remove duplicates that have the same input name: 
+    final List<SNode> values = new ArrayList<SNode>();
+    ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6fc5345L, "org.campagnelab.workflow.structure.InputValue"), true, new SAbstractConcept[]{})).visitAll(new IVisitor<SNode>() {
+      public void visit(final SNode inputValue) {
+        if (ListSequence.fromList(values).all(new IWhereFilter<SNode>() {
+          public boolean accept(SNode previous) {
+            return neq_x583g4_a0a0a0a0a0a0a0a0a0c0u(SPropertyOperations.getString(SLinkOperations.getTarget(previous, MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6fc5345L, 0x23f1edb6b6fc5746L, "input")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), SPropertyOperations.getString(SLinkOperations.getTarget(inputValue, MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6fc5345L, 0x23f1edb6b6fc5746L, "input")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          }
+        })) {
+          ListSequence.fromList(values).addElement(inputValue);
+        }
+      }
+    });
+    return values;
   }
   public static Iterable<SNode> sourceNodesQuery_8584871179163434026(final SourceSubstituteMacroNodesContext _context) {
-    return SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b74709cdL, "org.campagnelab.workflow.structure.InputFromBaseLanguageScript"), true, new SAbstractConcept[]{});
+    // remove duplicates that have the same input name: 
+    final List<SNode> vars = new ArrayList<SNode>();
+    ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b74709cdL, "org.campagnelab.workflow.structure.InputFromBaseLanguageScript"), true, new SAbstractConcept[]{})).visitAll(new IVisitor<SNode>() {
+      public void visit(final SNode variable) {
+        if (ListSequence.fromList(vars).all(new IWhereFilter<SNode>() {
+          public boolean accept(SNode previous) {
+            return neq_x583g4_a0a0a0a0a0a0a0a0a0c0v(SPropertyOperations.getString(SLinkOperations.getTarget(previous, MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b74709cdL, 0x23f1edb6b74709ceL, "var")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), SPropertyOperations.getString(SLinkOperations.getTarget(variable, MetaAdapterFactory.getReferenceLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b74709cdL, 0x23f1edb6b74709ceL, "var")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          }
+        })) {
+          ListSequence.fromList(vars).addElement(variable);
+        }
+      }
+    });
+    return vars;
   }
   public static Iterable<SNode> sourceNodesQuery_8584871179158476143(final SourceSubstituteMacroNodesContext _context) {
     return ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a479937fe28b29cL, 0x5a479937fe29326dL, "processes"))).where(new IWhereFilter<SNode>() {
@@ -184,4 +213,10 @@ public class QueriesGenerated {
     return SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6ac375bL, 0x23f1edb6b6ac3798L, "expression")), MetaAdapterFactory.getConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x23f1edb6b6fc5345L, "org.campagnelab.workflow.structure.InputValue"), false, new SAbstractConcept[]{});
   }
   protected static Logger LOG = LogManager.getLogger(QueriesGenerated.class);
+  private static boolean neq_x583g4_a0a0a0a0a0a0a0a0a0c0u(Object a, Object b) {
+    return !(((a != null ? a.equals(b) : a == b)));
+  }
+  private static boolean neq_x583g4_a0a0a0a0a0a0a0a0a0c0v(Object a, Object b) {
+    return !(((a != null ? a.equals(b) : a == b)));
+  }
 }
