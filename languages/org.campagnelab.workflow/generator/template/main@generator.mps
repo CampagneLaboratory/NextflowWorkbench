@@ -12,6 +12,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <generationPart ref="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc(org.campagnelab.workflow.configuration)" />
     <generationPart ref="774bf8a0-62e5-41e1-af63-f4812e60e48b(jetbrains.mps.baseLanguage.checkedDots)" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -24,6 +25,7 @@
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="tp2n" ref="r:00000000-0000-4000-0000-011c89590333(jetbrains.mps.baseLanguage.closures.behavior)" />
+    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
@@ -565,7 +567,7 @@
             <node concept="3NFfHV" id="7sz_HDkz0d9" role="3NFExx">
               <node concept="3clFbS" id="7sz_HDkz0da" role="2VODD2">
                 <node concept="3clFbF" id="7sz_HDkz0dg" role="3cqZAp">
-                  <node concept="2OqwBi" id="7sz_HDkz25P" role="3clFbG">
+                  <node concept="2OqwBi" id="26uPfVcSL4M" role="3clFbG">
                     <node concept="2OqwBi" id="7sz_HDkz115" role="2Oq$k0">
                       <node concept="2OqwBi" id="7sz_HDkz0db" role="2Oq$k0">
                         <node concept="3TrEf2" id="4$GDkRnJR$K" role="2OqNvi">
@@ -577,7 +579,7 @@
                         <ref role="3Tt5mk" to="iowz:6qiI2N4J0hS" />
                       </node>
                     </node>
-                    <node concept="3JvlWi" id="7sz_HDkz2oQ" role="2OqNvi" />
+                    <node concept="3JvlWi" id="26uPfVcSLy_" role="2OqNvi" />
                   </node>
                 </node>
               </node>
