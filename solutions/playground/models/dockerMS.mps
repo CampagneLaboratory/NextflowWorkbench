@@ -243,5 +243,59 @@
     <property role="TrG5h" value="artifacts-software_Image" />
     <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifacts-software" />
   </node>
+  <node concept="VuPG2" id="39YFbxZh5KP">
+    <property role="TrG5h" value="centos-java8" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2039242695725913630.txt" />
+    <property role="3GE5qa" value="dockerfiles" />
+    <node concept="VuO64" id="39YFbxZh5KQ" role="VuOVn">
+      <node concept="VtuK3" id="39YFbxZh5KR" role="VuO5T">
+        <property role="VuL0s" value="latest" />
+        <property role="GbyUj" value="centos-baseimage" />
+        <property role="3zaeVo" value="true" />
+        <property role="VuL0v" value="poklet" />
+      </node>
+    </node>
+    <node concept="VuOhh" id="39YFbxZh5KS" role="VuOVn">
+      <property role="VuOhg" value="Campagne Lab" />
+      <property role="VuOhi" value="manuele.simi@campagnelab.org" />
+    </node>
+    <node concept="2Cort2" id="39YFbxZh5KT" role="VuOVn">
+      <property role="1MaElf" value="curl commad" />
+    </node>
+    <node concept="VugRC" id="39YFbxZh5KU" role="VuOVn">
+      <node concept="19SGf9" id="39YFbxZh5KV" role="Vugyn">
+        <node concept="19SUe$" id="39YFbxZh5KW" role="19SJt6">
+          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="39YFbxZh5KX" role="VuOVn">
+      <property role="1MaElf" value="git client" />
+    </node>
+    <node concept="VugRC" id="39YFbxZh5KY" role="VuOVn">
+      <node concept="19SGf9" id="39YFbxZh5KZ" role="Vugyn">
+        <node concept="19SUe$" id="39YFbxZh5L0" role="19SJt6">
+          <property role="19SUeA" value="yum install -y git-core" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="39YFbxZh5L8" role="VuOVn">
+      <node concept="19SGf9" id="39YFbxZh5L9" role="Vugyn">
+        <node concept="19SUe$" id="39YFbxZh5La" role="19SJt6">
+          <property role="19SUeA" value="echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="39YFbxZh5Lb" role="VuOVn">
+      <property role="1MaElf" value="install java 8 and set Java environment variables" />
+    </node>
+    <node concept="VugRC" id="39YFbxZhcK2" role="VuOVn">
+      <node concept="19SGf9" id="39YFbxZhcK$" role="Vugyn">
+        <node concept="19SUe$" id="39YFbxZhcK_" role="19SJt6">
+          <property role="19SUeA" value="cd /opt/ \&#10;&amp;&amp; wget wget --no-cookies --no-check-certificate --header &quot;Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie&quot; &quot;http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-i586.tar.gz&quot; \&#10;&amp;&amp; tar xzf jdk-8u45-linux-i586.tar.gz&#10; " />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
