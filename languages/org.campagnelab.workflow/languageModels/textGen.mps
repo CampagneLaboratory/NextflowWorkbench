@@ -3365,7 +3365,7 @@
             </node>
           </node>
           <node concept="la8eA" id="dOBxz_qN3I" role="lcghm">
-            <property role="lacIc" value="(" />
+            <property role="lacIc" value="([" />
           </node>
           <node concept="l9S2W" id="PuHam2cjSj" role="lcghm">
             <property role="XA4eZ" value="true" />
@@ -3378,7 +3378,7 @@
             </node>
           </node>
           <node concept="la8eA" id="PuHam2cjPW" role="lcghm">
-            <property role="lacIc" value=")" />
+            <property role="lacIc" value="])" />
           </node>
         </node>
       </node>

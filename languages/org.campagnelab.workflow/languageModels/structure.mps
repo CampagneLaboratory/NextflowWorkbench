@@ -1339,7 +1339,7 @@
   <node concept="1TIwiD" id="XaRILis0lJ">
     <property role="3GE5qa" value="channelFunctions.splitFunctions" />
     <property role="TrG5h" value="SplitCSV" />
-    <property role="34LRSv" value="splitCSV" />
+    <property role="34LRSv" value="splitCsv" />
     <property role="R4oN_" value="Create records from elements in CSV format" />
     <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
   </node>
