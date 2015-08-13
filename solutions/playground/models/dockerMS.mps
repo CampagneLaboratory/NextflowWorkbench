@@ -64,6 +64,7 @@
       </concept>
       <concept id="1893262236499932072" name="org.campagnelab.docker.structure.MaintainerInstruction" flags="ng" index="VuOhh">
         <property id="1893262236499932073" name="fullName" index="VuOhg" />
+        <property id="1893262236499932075" name="email" index="VuOhi" />
       </concept>
       <concept id="1893262236499930363" name="org.campagnelab.docker.structure.Dockerfile" flags="ng" index="VuPG2">
         <property id="8987412447078877922" name="message" index="2EHzVy" />
@@ -84,7 +85,7 @@
   </node>
   <node concept="VuPG2" id="xP2fmw4YHs">
     <property role="TrG5h" value="ubuntu-java8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2521916477109517031.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile6232312655975113845.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="xP2fmw4YHt" role="VuOVn">
       <node concept="VtuK3" id="xP2fmw5bR5" role="VuO5T">
@@ -95,9 +96,27 @@
     </node>
     <node concept="VuOhh" id="xP2fmw4YHu" role="VuOVn">
       <property role="VuOhg" value="Campagne Lab" />
+      <property role="VuOhi" value="manuele.simi@campagnelab.org" />
     </node>
-    <node concept="2Cort2" id="tbMEt6C6lq" role="VuOVn">
-      <property role="1MaElf" value="install java 8 in the image" />
+    <node concept="2Cort2" id="4Q_FQlAkVyB" role="VuOVn">
+      <property role="1MaElf" value="curl commad" />
+    </node>
+    <node concept="VugRC" id="4Q_FQlAkVm1" role="VuOVn">
+      <node concept="19SGf9" id="4Q_FQlAkVmP" role="Vugyn">
+        <node concept="19SUe$" id="4Q_FQlAkVmQ" role="19SJt6">
+          <property role="19SUeA" value="apt-get install -y curl libc6 libcurl3 zlib1g" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="4Q_FQlAkVx2" role="VuOVn">
+      <property role="1MaElf" value="git client" />
+    </node>
+    <node concept="VugRC" id="4Q_FQlAkVtg" role="VuOVn">
+      <node concept="19SGf9" id="4Q_FQlAkVuC" role="Vugyn">
+        <node concept="19SUe$" id="4Q_FQlAkVuD" role="19SJt6">
+          <property role="19SUeA" value="apt-get install -y git-core" />
+        </node>
+      </node>
     </node>
     <node concept="VugRC" id="tbMEt6C6bv" role="VuOVn">
       <node concept="19SGf9" id="tbMEt6C6bX" role="Vugyn">
@@ -109,14 +128,7 @@
     <node concept="VugRC" id="tbMEt6C6cA" role="VuOVn">
       <node concept="19SGf9" id="tbMEt6C6da" role="Vugyn">
         <node concept="19SUe$" id="tbMEt6C6db" role="19SJt6">
-          <property role="19SUeA" value="add-apt-repository -y ppa:webupd8team/java" />
-        </node>
-      </node>
-    </node>
-    <node concept="VugRC" id="xP2fmw5bRY" role="VuOVn">
-      <node concept="19SGf9" id="xP2fmw5bS4" role="Vugyn">
-        <node concept="19SUe$" id="xP2fmw5bS5" role="19SJt6">
-          <property role="19SUeA" value="apt-get update" />
+          <property role="19SUeA" value="add-apt-repository -y ppa:webupd8team/java &amp;&amp; apt-get update" />
         </node>
       </node>
     </node>
@@ -130,25 +142,18 @@
         </node>
       </node>
     </node>
+    <node concept="2Cort2" id="tbMEt6C6lq" role="VuOVn">
+      <property role="1MaElf" value="install java 8 and set Java environment variables" />
+    </node>
     <node concept="VugRC" id="xP2fmw5bWR" role="VuOVn">
       <node concept="19SGf9" id="xP2fmw5bX9" role="Vugyn">
         <node concept="19SUe$" id="xP2fmw5bXa" role="19SJt6">
-          <property role="19SUeA" value="apt-get install -y oracle-java8-installer &amp;&amp; apt-get clean" />
+          <property role="19SUeA" value="apt-get install -y oracle-java8-installer &amp;&amp; apt-get install oracle-java8-set-default \&#10;&amp;&amp; apt-get clean" />
         </node>
       </node>
     </node>
-    <node concept="2Cort2" id="6fIiQMMyrnq" role="VuOVn">
-      <property role="1MaElf" value="aadd a package to set Java environment variables" />
-    </node>
-    <node concept="VugRC" id="6fIiQMMyjy2" role="VuOVn">
-      <node concept="19SGf9" id="6fIiQMMyjyI" role="Vugyn">
-        <node concept="19SUe$" id="6fIiQMMyjyJ" role="19SJt6">
-          <property role="19SUeA" value="apt-get install oracle-java8-set-default&#10;" />
-        </node>
-      </node>
-    </node>
-    <node concept="3blhQM" id="6fIiQMMzYhG" role="3blhQR">
-      <ref role="3blhQY" node="6fIiQMMzYq_" resolve="ubuntu-java8_Image" />
+    <node concept="3blhQM" id="3P1oJbjPVxb" role="3blhQR">
+      <ref role="3blhQY" node="3P1oJbjPVxa" resolve="ubuntu-java8_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="6fIiQMMz3r_">
@@ -187,21 +192,6 @@
       <ref role="3blhQY" node="6fIiQMM$A4g" resolve="artifacts-software_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="6fIiQMMzYq_">
-    <property role="2E_JEh" value="cbc87332e2dc" />
-    <property role="TrG5h" value="ubuntu-java8_Image" />
-    <property role="GSh9r" value="mas2181/ubuntu-java8:latest" />
-    <property role="3GE5qa" value="images" />
-    <ref role="2E_BxF" node="xP2fmw4YHs" resolve="ubuntu-java8" />
-    <node concept="WEvhf" id="6fIiQMMzYsI" role="WF_SX">
-      <ref role="WEvjA" node="6fIiQMMzYs$" resolve="cbc87332e2dc" />
-    </node>
-    <node concept="Gyxd7" id="6fIiQMM$3GH" role="Gyxcj">
-      <property role="TrG5h" value="ubuntu-java8" />
-      <property role="Gyxd1" value="latest" />
-      <property role="Gyxfx" value="mas2181" />
-    </node>
-  </node>
   <node concept="GbKB8" id="6fIiQMMzYs$">
     <property role="TrG5h" value="cbc87332e2dc" />
     <property role="GbyUj" value="cbc87332e2dc" />
@@ -234,6 +224,18 @@
     <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="" />
     <ref role="3zcJb$" node="6fIiQMM$A4g" resolve="artifacts-software_Image" />
+  </node>
+  <node concept="2E_JVc" id="3P1oJbjPVxa">
+    <property role="2E_JEh" value="154693612d15" />
+    <property role="TrG5h" value="ubuntu-java8_Image" />
+    <property role="GSh9r" value="mas2181/ubuntu-java8:latest" />
+    <property role="3GE5qa" value="images" />
+    <ref role="2E_BxF" node="xP2fmw4YHs" resolve="ubuntu-java8" />
+    <node concept="Gyxd7" id="3P1oJbjPVxt" role="Gyxcj">
+      <property role="Gyxfx" value="mas2181" />
+      <property role="TrG5h" value="ubuntu-java8" />
+      <property role="Gyxd1" value="latest" />
+    </node>
   </node>
 </model>
 
