@@ -26,8 +26,8 @@
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="tp2n" ref="r:00000000-0000-4000-0000-011c89590333(jetbrains.mps.baseLanguage.closures.behavior)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
@@ -935,6 +935,7 @@
       <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="2Q5Qdqj3kIk" role="1B3o_S" />
       <node concept="37vLTG" id="2Q5Qdqj3kHK" role="3clF46">
         <property role="TrG5h" value="name" />
         <node concept="3uibUv" id="2OrG0Jly86X" role="1tU5fm">
@@ -1194,7 +1195,6 @@
           </node>
         </node>
       </node>
-      <node concept="3Tm1VV" id="2Q5Qdqj3kIk" role="1B3o_S" />
       <node concept="1WS0z7" id="2Q5Qdqj3kIl" role="lGtFl">
         <node concept="3JmXsc" id="2Q5Qdqj3kIm" role="3Jn$fo">
           <node concept="3clFbS" id="2Q5Qdqj3kIn" role="2VODD2">

@@ -1811,32 +1811,6 @@
   <node concept="1M2fIO" id="dOBxzz$NF8">
     <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
     <ref role="1M2myG" to="iowz:dOBxzz$N_i" resolve="Header" />
-    <node concept="osYL8" id="dOBxzzN2Az" role="1MLXOK">
-      <node concept="3clFbS" id="dOBxzzN2A$" role="2VODD2">
-        <node concept="3cpWs6" id="dOBxzzN5tY" role="3cqZAp">
-          <node concept="22lmx$" id="dOBxzzN4wO" role="3cqZAk">
-            <node concept="3clFbC" id="dOBxzzN4P_" role="3uHU7w">
-              <node concept="35c_gC" id="dOBxzzN4Tg" role="3uHU7w">
-                <ref role="35c_gD" to="iowz:3aOvEIt8rrG" resolve="NewListLiteral" />
-              </node>
-              <node concept="2OqwBi" id="dOBxzzN4C_" role="3uHU7B">
-                <node concept="2H4GUG" id="dOBxzzN4$o" role="2Oq$k0" />
-                <node concept="2yIwOk" id="dOBxzzN4Lv" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="3clFbC" id="dOBxzzN45G" role="3uHU7B">
-              <node concept="2OqwBi" id="dOBxzzN3U6" role="3uHU7B">
-                <node concept="2H4GUG" id="dOBxzzN3QF" role="2Oq$k0" />
-                <node concept="2yIwOk" id="dOBxzzN42n" role="2OqNvi" />
-              </node>
-              <node concept="35c_gC" id="dOBxzzN4jO" role="3uHU7w">
-                <ref role="35c_gD" to="iowz:3aOvEIt8rrn" resolve="NewBooleanLiteral" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="nKS2y" id="dOBxz$1jJj" role="1MLUbF">
       <node concept="3clFbS" id="dOBxz$1jJk" role="2VODD2">
         <node concept="3clFbF" id="dOBxz$1jJl" role="3cqZAp">

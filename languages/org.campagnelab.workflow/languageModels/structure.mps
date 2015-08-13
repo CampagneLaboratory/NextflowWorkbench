@@ -1407,7 +1407,7 @@
   </node>
   <node concept="1TIwiD" id="XaRILisPoE">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
-    <property role="TrG5h" value="Map" />
+    <property role="TrG5h" value="MapFunction" />
     <property role="34LRSv" value="map" />
     <property role="R4oN_" value="Transform each items emitted by a source channel with a user define function and return them" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
@@ -1710,12 +1710,6 @@
     <property role="34LRSv" value="header" />
     <property role="R4oN_" value="when true, the first line is used as column names. Can also provide the list of column names" />
     <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
-    <node concept="1TJgyj" id="dOBxzz$NEt" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="cols" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3EHTfOIRUwz">
     <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
@@ -2097,6 +2091,25 @@
     <property role="34LRSv" value="count" />
     <property role="R4oN_" value="Creates a channel that emits the number of items in the source channel" />
     <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
+  </node>
+  <node concept="1TIwiD" id="1shE7Zwr$_B">
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="TrG5h" value="Map" />
+    <property role="34LRSv" value="map" />
+    <property role="R4oN_" value="map as input or output" />
+    <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
+    <node concept="1TJgyj" id="1shE7ZwrEjU" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="keyType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="1shE7Zwr$_C" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
+    </node>
   </node>
 </model>
 
