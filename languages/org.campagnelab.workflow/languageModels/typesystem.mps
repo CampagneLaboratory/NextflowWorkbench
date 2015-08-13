@@ -248,6 +248,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
@@ -5388,6 +5391,128 @@
     <node concept="1YaCAy" id="3dMnRJY3y8f" role="1YuTPh">
       <property role="TrG5h" value="sum" />
       <ref role="1YaFvo" to="iowz:6TmjYLGcOto" resolve="Sum" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="7lYuJAlASMU">
+    <property role="TrG5h" value="typeof_SplitCSV" />
+    <property role="3GE5qa" value="channelFunctions.splitFunctions" />
+    <node concept="3clFbS" id="7lYuJAlASMV" role="18ibNy">
+      <node concept="3clFbH" id="7lYuJAlBSbM" role="3cqZAp" />
+      <node concept="3clFbJ" id="7lYuJAlBjZF" role="3cqZAp">
+        <node concept="3clFbS" id="7lYuJAlBjZH" role="3clFbx">
+          <node concept="3SKdUt" id="7lYuJAlBTZG" role="3cqZAp">
+            <node concept="3SKdUq" id="7lYuJAlBU06" role="3SKWNk">
+              <property role="3SKdUp" value="Split will chunk the result and produce lists of maps" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7lYuJAlBwWK" role="3cqZAp">
+            <node concept="3SKdUq" id="7lYuJAlBwX6" role="3SKWNk">
+              <property role="3SKdUp" value="technically, the inner list type should be map." />
+            </node>
+          </node>
+          <node concept="1Z5TYs" id="7lYuJAlAV$E" role="3cqZAp">
+            <property role="3wDh2S" value="false" />
+            <node concept="mw_s8" id="7lYuJAlAV$H" role="1ZfhK$">
+              <node concept="1Z2H0r" id="7lYuJAlAV$I" role="mwGJk">
+                <node concept="1YBJjd" id="7lYuJAlAV$J" role="1Z2MuG">
+                  <ref role="1YBMHb" node="7lYuJAlASMX" resolve="splitCSV" />
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="7lYuJAlAV_h" role="1ZfhKB">
+              <node concept="2c44tf" id="7lYuJAlAV_d" role="mwGJk">
+                <node concept="_YKpA" id="7lYuJAlBU0Z" role="2c44tc">
+                  <node concept="_YKpA" id="7lYuJAlBwVp" role="_ZDj9">
+                    <node concept="_YKpA" id="7lYuJAlAV_B" role="_ZDj9">
+                      <node concept="17QB3L" id="7lYuJAlAV_Z" role="_ZDj9" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="7lYuJAlBS_y" role="3clFbw">
+          <node concept="3eOSWO" id="7lYuJAlBtxn" role="3uHU7w">
+            <node concept="3cmrfG" id="7lYuJAlBt$D" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="7lYuJAlBsmt" role="3uHU7B">
+              <node concept="2OqwBi" id="7lYuJAlBrnR" role="2Oq$k0">
+                <node concept="2OqwBi" id="7lYuJAlBmmY" role="2Oq$k0">
+                  <node concept="2OqwBi" id="7lYuJAlBkns" role="2Oq$k0">
+                    <node concept="1YBJjd" id="7lYuJAlBk0e" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7lYuJAlASMX" resolve="splitCSV" />
+                    </node>
+                    <node concept="3Tsc0h" id="7lYuJAlBkyQ" role="2OqNvi">
+                      <ref role="3TtcxE" to="iowz:5SFkxYfRDBf" />
+                    </node>
+                  </node>
+                  <node concept="v3k3i" id="7lYuJAlBrax" role="2OqNvi">
+                    <node concept="chp4Y" id="7lYuJAlBrc5" role="v3oSu">
+                      <ref role="cht4Q" to="iowz:3EHTfOIRJOj" resolve="By" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="7lYuJAlBs0U" role="2OqNvi" />
+              </node>
+              <node concept="3TrcHB" id="7lYuJAlBs_9" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:3EHTfOIRPOP" resolve="n" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7lYuJAlBST$" role="3uHU7B">
+            <node concept="2OqwBi" id="7lYuJAlBSFm" role="2Oq$k0">
+              <node concept="2OqwBi" id="7lYuJAlBSFn" role="2Oq$k0">
+                <node concept="1YBJjd" id="7lYuJAlBSFo" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7lYuJAlASMX" resolve="splitCSV" />
+                </node>
+                <node concept="3Tsc0h" id="7lYuJAlBSFp" role="2OqNvi">
+                  <ref role="3TtcxE" to="iowz:5SFkxYfRDBf" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="7lYuJAlBSFq" role="2OqNvi">
+                <node concept="chp4Y" id="7lYuJAlBSFr" role="v3oSu">
+                  <ref role="cht4Q" to="iowz:3EHTfOIRJOj" resolve="By" />
+                </node>
+              </node>
+            </node>
+            <node concept="3GX2aA" id="7lYuJAlBTVX" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="9aQIb" id="7lYuJAlBwQa" role="9aQIa">
+          <node concept="3clFbS" id="7lYuJAlBwQb" role="9aQI4">
+            <node concept="3SKdUt" id="7lYuJAlBwX$" role="3cqZAp">
+              <node concept="3SKdUq" id="7lYuJAlBwX_" role="3SKWNk">
+                <property role="3SKdUp" value="technically, the inner list type should be map here:" />
+              </node>
+            </node>
+            <node concept="1Z5TYs" id="7lYuJAlBwUl" role="3cqZAp">
+              <property role="3wDh2S" value="false" />
+              <node concept="mw_s8" id="7lYuJAlBwUm" role="1ZfhK$">
+                <node concept="1Z2H0r" id="7lYuJAlBwUn" role="mwGJk">
+                  <node concept="1YBJjd" id="7lYuJAlBwUo" role="1Z2MuG">
+                    <ref role="1YBMHb" node="7lYuJAlASMX" resolve="splitCSV" />
+                  </node>
+                </node>
+              </node>
+              <node concept="mw_s8" id="7lYuJAlBwUp" role="1ZfhKB">
+                <node concept="2c44tf" id="7lYuJAlBwUq" role="mwGJk">
+                  <node concept="_YKpA" id="7lYuJAlBU0l" role="2c44tc">
+                    <node concept="_YKpA" id="7lYuJAlBU0m" role="_ZDj9">
+                      <node concept="17QB3L" id="7lYuJAlBU0n" role="_ZDj9" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7lYuJAlASMX" role="1YuTPh">
+      <property role="TrG5h" value="splitCSV" />
+      <ref role="1YaFvo" to="iowz:XaRILis0lJ" resolve="SplitCSV" />
     </node>
   </node>
 </model>
