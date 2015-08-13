@@ -10,6 +10,7 @@
   <imports>
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -18,11 +19,11 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
-        <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
@@ -30,16 +31,23 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -62,21 +70,26 @@
       <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="5954930966410664724" name="org.campagnelab.workflow.structure.HasExpression" flags="ng" index="20hr4X">
+        <child id="5954930966410666282" name="expression" index="20hoG3" />
+      </concept>
+      <concept id="4018964125401495568" name="org.campagnelab.workflow.structure.Tuple" flags="ng" index="knwa4">
+        <child id="7391172440899058539" name="elements" index="2zSOd7" />
+      </concept>
       <concept id="2590112629724566341" name="org.campagnelab.workflow.structure.InputValue" flags="ng" index="2l3rVN">
         <reference id="2590112629724567366" name="input" index="2l3rFK" />
       </concept>
       <concept id="2590112629719316315" name="org.campagnelab.workflow.structure.OutputExpression" flags="ng" index="2lntFH">
         <child id="2590112629719316376" name="expression" index="2lntCI" />
       </concept>
-      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
-        <child id="2590112629719313759" name="expression" index="2lns3D" />
-      </concept>
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
       </concept>
+      <concept id="7391172440898975896" name="org.campagnelab.workflow.structure.TupleElement" flags="ng" index="2zSw2O" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
         <child id="8369613327464344476" name="outChannel" index="1uLvPA" />
@@ -100,6 +113,7 @@
       <concept id="6588488528864881600" name="org.campagnelab.workflow.structure.ReportFunction" flags="ig" index="2UPiyC" />
       <concept id="6588488528864881603" name="org.campagnelab.workflow.structure.ReportParameter" flags="ng" index="2UPiyF" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
+      <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
         <child id="7391172440887133304" name="type" index="2ybFLk" />
@@ -110,26 +124,8 @@
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
       </concept>
-      <concept id="1662295004656060775" name="org.campagnelab.workflow.structure.Map" flags="ng" index="3RvY4o">
-        <child id="1662295004656084218" name="keyType" index="3RvKM5" />
-        <child id="1662295004656060776" name="elementType" index="3RvY4n" />
-      </concept>
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
-      </concept>
-    </language>
-    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV">
-        <child id="1197687026896" name="keyType" index="3rHrn6" />
-        <child id="1197687035757" name="valueType" index="3rHtpV" />
-        <child id="1206655950512" name="initializer" index="3Mj9YC" />
-      </concept>
-      <concept id="1206655653991" name="jetbrains.mps.baseLanguage.collections.structure.MapInitializer" flags="ng" index="3Mi1_Z">
-        <child id="1206655902276" name="entries" index="3MiYds" />
-      </concept>
-      <concept id="1206655735055" name="jetbrains.mps.baseLanguage.collections.structure.MapEntry" flags="ng" index="3Milgn">
-        <child id="1206655844556" name="key" index="3MiK7k" />
-        <child id="1206655853135" name="value" index="3MiMdn" />
       </concept>
     </language>
   </registry>
@@ -143,26 +139,23 @@
       <property role="TrG5h" value="aValue" />
       <node concept="16pbKc" id="1mGDKBDyDFP" role="2ybFLk" />
     </node>
-    <node concept="2lYRya" id="1mGDKBDyDAG" role="2ulM79">
-      <property role="TrG5h" value="aMapOutput" />
-      <node concept="3RvY4o" id="1mGDKBDyDAO" role="2ybFLk">
-        <node concept="16pbKc" id="1mGDKBDyDBe" role="3RvKM5" />
-        <node concept="16pbKc" id="1mGDKBDyDB_" role="3RvY4n" />
-      </node>
-      <node concept="2lntFH" id="1mGDKBDyDG2" role="2lns3D">
-        <node concept="2ShNRf" id="1mGDKBDyDH2" role="2lntCI">
-          <node concept="3rGOSV" id="1mGDKBDyFDW" role="2ShVmc">
-            <node concept="17QB3L" id="1mGDKBDyFHb" role="3rHrn6" />
-            <node concept="17QB3L" id="1mGDKBDyFHx" role="3rHtpV" />
-            <node concept="3Mi1_Z" id="1mGDKBDyFOU" role="3Mj9YC">
-              <node concept="3Milgn" id="1mGDKBDyFPf" role="3MiYds">
-                <node concept="2l3rVN" id="1mGDKBDyFPq" role="3MiMdn">
-                  <ref role="2l3rFK" node="1mGDKBDyDFF" resolve="aValue" />
-                </node>
-                <node concept="2l3rVN" id="5a$ayBiRfct" role="3MiK7k">
-                  <ref role="2l3rFK" node="1mGDKBDyDFm" resolve="aKey" />
-                </node>
-              </node>
+    <node concept="2lYRya" id="5a$ayBj1rQ9" role="2ulM79">
+      <node concept="knwa4" id="5a$ayBj1rRV" role="2ybFLk">
+        <node concept="2zSw2O" id="5a$ayBj1rRX" role="2zSOd7">
+          <property role="TrG5h" value="key" />
+          <node concept="2lntFH" id="5a$ayBj40de" role="20hoG3">
+            <node concept="2l3rVN" id="1Zy6PKDtzKS" role="2lntCI">
+              <ref role="2l3rFK" node="1mGDKBDyDFm" resolve="aKey" />
+            </node>
+          </node>
+          <node concept="1utKzZ" id="3sGzFmk4qQi" role="2ybFLk" />
+        </node>
+        <node concept="2zSw2O" id="3df2pFev1rC" role="2zSOd7">
+          <property role="TrG5h" value="value" />
+          <node concept="16pbKc" id="3df2pFev1sw" role="2ybFLk" />
+          <node concept="2lntFH" id="3df2pFezLrh" role="20hoG3">
+            <node concept="2l3rVN" id="3df2pFezMJA" role="2lntCI">
+              <ref role="2l3rFK" node="1mGDKBDyDFF" resolve="aValue" />
             </node>
           </node>
         </node>
@@ -182,19 +175,43 @@
   </node>
   <node concept="2$rMIF" id="1mGDKBDyJPR">
     <property role="TrG5h" value="MapTest" />
-    <node concept="2UNLhE" id="1mGDKBDyKpV" role="2UW718">
+    <node concept="2UNLhE" id="3sGzFmk4pOA" role="2UW718">
       <ref role="2UNLhW" node="1mGDKBDyK53" resolve="output" />
-      <node concept="2UPiyC" id="1mGDKBDyKpW" role="2UNLhY">
-        <node concept="3clFbS" id="1mGDKBDyKpX" role="2VODD2">
-          <node concept="3clFbF" id="1mGDKBDyKsG" role="3cqZAp">
-            <node concept="2OqwBi" id="1mGDKBDyKsD" role="3clFbG">
-              <node concept="10M0yZ" id="1mGDKBDyKsE" role="2Oq$k0">
+      <node concept="2UPiyC" id="3sGzFmk4pOB" role="2UNLhY">
+        <node concept="3clFbS" id="3sGzFmk4pOC" role="2VODD2">
+          <node concept="3clFbF" id="3sGzFmk4pS7" role="3cqZAp">
+            <node concept="2OqwBi" id="3sGzFmk4pS4" role="3clFbG">
+              <node concept="10M0yZ" id="3sGzFmk4pS5" role="2Oq$k0">
                 <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
                 <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
               </node>
-              <node concept="liA8E" id="1mGDKBDyKsF" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.Object):void" resolve="println" />
-                <node concept="2UPiyF" id="1mGDKBDzRCZ" role="37wK5m" />
+              <node concept="liA8E" id="3sGzFmk4pS6" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="3cpWs3" id="3sGzFmkKgIx" role="37wK5m">
+                  <node concept="2OqwBi" id="3sGzFmkKheG" role="3uHU7w">
+                    <node concept="2UPiyF" id="3sGzFmkKgJb" role="2Oq$k0" />
+                    <node concept="liA8E" id="3sGzFmkKhIr" role="2OqNvi">
+                      <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                      <node concept="3cmrfG" id="3sGzFmkKhTd" role="37wK5m">
+                        <property role="3cmrfH" value="1" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWs3" id="3sGzFmkKg1E" role="3uHU7B">
+                    <node concept="2OqwBi" id="3sGzFmkK9I4" role="3uHU7B">
+                      <node concept="2UPiyF" id="3sGzFmk4pTt" role="2Oq$k0" />
+                      <node concept="liA8E" id="3sGzFmkKayj" role="2OqNvi">
+                        <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                        <node concept="3cmrfG" id="3sGzFmkKaFJ" role="37wK5m">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="3sGzFmkKg2k" role="3uHU7w">
+                      <property role="Xl_RC" value="/" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
