@@ -2,6 +2,9 @@
 <model ref="r:38f71353-97fb-4960-8138-4b820cc4c207(maps)">
   <persistence version="9" />
   <languages>
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports>
@@ -156,7 +159,7 @@
                 <node concept="2l3rVN" id="1mGDKBDyFPq" role="3MiMdn">
                   <ref role="2l3rFK" node="1mGDKBDyDFF" resolve="aValue" />
                 </node>
-                <node concept="2l3rVN" id="1mGDKBDyFPl" role="3MiK7k">
+                <node concept="2l3rVN" id="5a$ayBiRfct" role="3MiK7k">
                   <ref role="2l3rFK" node="1mGDKBDyDFm" resolve="aKey" />
                 </node>
               </node>
@@ -191,7 +194,7 @@
               </node>
               <node concept="liA8E" id="1mGDKBDyKsF" role="2OqNvi">
                 <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.Object):void" resolve="println" />
-                <node concept="2UPiyF" id="1mGDKBDyKtM" role="37wK5m" />
+                <node concept="2UPiyF" id="1mGDKBDzRCZ" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -205,7 +208,13 @@
           <property role="2J_vQ8" value="a" />
         </node>
         <node concept="2J_g7P" id="1mGDKBDyJSw" role="2J_sx6">
-          <property role="2J_vQ8" value="&quot;b" />
+          <property role="2J_vQ8" value="b" />
+        </node>
+        <node concept="2J_g7P" id="1mGDKBDzO4_" role="2J_sx6">
+          <property role="2J_vQ8" value="a" />
+        </node>
+        <node concept="2J_g7P" id="5a$ayBiRc2C" role="2J_sx6">
+          <property role="2J_vQ8" value="c" />
         </node>
       </node>
     </node>
@@ -216,7 +225,13 @@
           <property role="2J_vQ8" value="i1" />
         </node>
         <node concept="2J_g7P" id="1mGDKBDyK12" role="2J_sx6">
+          <property role="2J_vQ8" value="j" />
+        </node>
+        <node concept="2J_g7P" id="1mGDKBDzOEK" role="2J_sx6">
           <property role="2J_vQ8" value="i2" />
+        </node>
+        <node concept="2J_g7P" id="5a$ayBiRcg3" role="2J_sx6">
+          <property role="2J_vQ8" value="j" />
         </node>
       </node>
     </node>

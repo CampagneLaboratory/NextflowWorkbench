@@ -37,6 +37,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -1192,6 +1193,9 @@
     <node concept="PrWs8" id="6qiI2N5sbyr" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="5a$ayBiSqE8" role="PzmwI">
+      <ref role="PrY4T" node="5a$ayBiSpGk" resolve="HasExpression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6$PrPkYEpK2">
     <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
@@ -1463,13 +1467,19 @@
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     <node concept="1TJgyj" id="2fLVrqQF2Pv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expression" />
+      <property role="20kJfa" value="expression_old" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="2fLVrqQF3tr" resolve="OutputExpression" />
+      <node concept="asaX9" id="5a$ayBiSq4F" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to superconcept &quot;org.campagnelab.workflow.structure.HasExpression&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="2fLVrqQ2EIf" role="1TKVEl">
       <property role="TrG5h" value="fromStandardOutput" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="5a$ayBiSq3R" role="PzmwI">
+      <ref role="PrY4T" node="5a$ayBiSpGk" resolve="HasExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="1qs9CHFOrh8">
@@ -2109,6 +2119,16 @@
       <property role="20kJfa" value="elementType" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5a$ayBiSpGk">
+    <property role="3GE5qa" value="processIO" />
+    <property role="TrG5h" value="HasExpression" />
+    <node concept="1TJgyj" id="5a$ayBiSq4E" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2fLVrqQF3tr" resolve="OutputExpression" />
     </node>
   </node>
 </model>
