@@ -149,7 +149,7 @@
   </node>
   <node concept="VuPG2" id="6fIiQMMz3r_">
     <property role="TrG5h" value="artifacts-software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2725471205201988412.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile5957082852317471898.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="6fIiQMM$wKy" role="VuOVn">
       <node concept="VtuK3" id="6fIiQMM$_RF" role="VuO5T">
@@ -203,12 +203,15 @@
     <node concept="VugRC" id="3P1oJbjPVEr" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPVEs" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPVEt" role="19SJt6">
-          <property role="19SUeA" value="mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY &amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS" />
+          <property role="19SUeA" value="mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export REPOSITORY_DIR=/scratchLocal/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; /root/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS" />
         </node>
       </node>
     </node>
     <node concept="3blhQM" id="3P1oJbjPWX9" role="3blhQR">
       <ref role="3blhQY" node="3P1oJbjPWX8" resolve="artifacts-software_Image" />
+    </node>
+    <node concept="3blhQM" id="3P1oJbjPX4z" role="3blhQR">
+      <ref role="3blhQY" node="3P1oJbjPX4y" resolve="artifacts-software_Image" />
     </node>
   </node>
   <node concept="2E_JVc" id="3P1oJbjPVxa">
@@ -234,6 +237,11 @@
       <property role="Gyxfx" value="mas2181" />
       <property role="Gyxd1" value="1.0" />
     </node>
+  </node>
+  <node concept="2E_JVc" id="3P1oJbjPX4y">
+    <property role="2E_JEh" value="2d3f97738dab" />
+    <property role="TrG5h" value="artifacts-software_Image" />
+    <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifacts-software" />
   </node>
 </model>
 
