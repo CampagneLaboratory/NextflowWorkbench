@@ -149,7 +149,7 @@
   </node>
   <node concept="VuPG2" id="6fIiQMMz3r_">
     <property role="TrG5h" value="artifacts-software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile775623055838286026.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2725471205201988412.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="6fIiQMM$wKy" role="VuOVn">
       <node concept="VtuK3" id="6fIiQMM$_RF" role="VuO5T">
@@ -161,6 +161,7 @@
     </node>
     <node concept="VuOhh" id="6fIiQMMz3rB" role="VuOVn">
       <property role="VuOhg" value="Campagne Lab" />
+      <property role="VuOhi" value="manuele.simi@campagnelab.org" />
     </node>
     <node concept="VugRC" id="3P1oJbjPLIh" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPLIH" role="Vugyn">
@@ -172,7 +173,7 @@
     <node concept="VugRC" id="3P1oJbjPVEo" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPVEp" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPVEq" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software \&#10;&amp;&amp; curl -fsSLJ -o /home/gobyweb/software/plugins-2.5.0-sdk.tar.gz  &quot;http://campagnelab.org/?wpdmact=process&amp;did=MTM1LmhvdGxpbms&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.5.0-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=/home/gobyweb/software/plugins-sdk-2.5.0/bin:${PATH}&quot; &gt;&gt; /root/.bashrc \&#10;&amp;&amp; echo &quot;source $INSTALLATION_DIRECTORY/home/gobyweb/software/plugins-sdk-2.5.0/bin/plugins-export-env&quot; &gt;&gt; /root/.bashrc" />
+          <property role="19SUeA" value="cd /home/gobyweb/software \&#10;&amp;&amp; curl -fsSLJ -o /home/gobyweb/software/plugins-2.5.0-sdk.tar.gz  &quot;http://campagnelab.org/?wpdmact=process&amp;did=MTM1LmhvdGxpbms&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.5.0-sdk.tar.gz \&#10;&amp;&amp; rm -f plugins-2.5.0-sdk.tar.gz/home/gobyweb/software/plugins-2.5.0-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=/home/gobyweb/software/plugins-sdk-2.5.0/bin:${PATH}&quot; &gt;&gt; /root/.bashrc \&#10;&amp;&amp; echo &quot;source $INSTALLATION_DIRECTORY/home/gobyweb/software/plugins-sdk-2.5.0/bin/plugins-export-env&quot; &gt;&gt; /root/.bashrc" />
         </node>
       </node>
     </node>
@@ -206,14 +207,14 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3P1oJbjPW3O" role="3blhQR">
-      <ref role="3blhQY" node="3P1oJbjPW3N" resolve="artifacts-software_Image" />
+    <node concept="3blhQM" id="3P1oJbjPWX9" role="3blhQR">
+      <ref role="3blhQY" node="3P1oJbjPWX8" resolve="artifacts-software_Image" />
     </node>
   </node>
   <node concept="2E_JVc" id="3P1oJbjPVxa">
     <property role="2E_JEh" value="154693612d15" />
     <property role="TrG5h" value="ubuntu-java8_Image" />
-    <property role="3GE5qa" value="images" />
+    <property role="3GE5qa" value="published_images" />
     <property role="GSh9r" value="mas2181/ubuntu-java8:latest" />
     <ref role="2E_BxF" node="xP2fmw4YHs" resolve="ubuntu-java8" />
     <node concept="Gyxd7" id="3P1oJbjPVxt" role="Gyxcj">
@@ -222,15 +223,15 @@
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3P1oJbjPW3N">
-    <property role="2E_JEh" value="d79d6cccb9d1" />
+  <node concept="2E_JVc" id="3P1oJbjPWX8">
+    <property role="2E_JEh" value="6ca3b1c76bd7" />
     <property role="TrG5h" value="artifacts-software_Image" />
-    <property role="3GE5qa" value="images" />
+    <property role="3GE5qa" value="published_images" />
     <property role="GSh9r" value="mas2181/artifacts-software:1.0" />
     <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifacts-software" />
-    <node concept="Gyxd7" id="3P1oJbjPW4W" role="Gyxcj">
-      <property role="Gyxfx" value="mas2181" />
+    <node concept="Gyxd7" id="3P1oJbjPWX_" role="Gyxcj">
       <property role="TrG5h" value="artifacts-software" />
+      <property role="Gyxfx" value="mas2181" />
       <property role="Gyxd1" value="1.0" />
     </node>
   </node>
