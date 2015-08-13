@@ -85,6 +85,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
+        <child id="1138662048170" name="value" index="tz02z" />
+      </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1143235216708" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewNodeOperation" flags="nn" index="I8ghe">
@@ -1095,6 +1098,108 @@
           </node>
         </node>
         <node concept="3clFbH" id="2fLVrqQljfM" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5SDnWB_4562">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="allowIncompletePairs" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="iowz:6TmjYLGeHlg" resolve="Phase" />
+    <node concept="2S6ZIM" id="5SDnWB_4563" role="2ZfVej">
+      <node concept="3clFbS" id="5SDnWB_4564" role="2VODD2">
+        <node concept="3clFbF" id="5SDnWB_45$u" role="3cqZAp">
+          <node concept="Xl_RD" id="5SDnWB_45$t" role="3clFbG">
+            <property role="Xl_RC" value="Allow Emissions of Incomplete Pairs" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5SDnWB_4565" role="2ZfgGD">
+      <node concept="3clFbS" id="5SDnWB_4566" role="2VODD2">
+        <node concept="3clFbF" id="5SDnWB_46dM" role="3cqZAp">
+          <node concept="2OqwBi" id="5SDnWB_46Gx" role="3clFbG">
+            <node concept="2OqwBi" id="5SDnWB_46fZ" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5SDnWB_46dL" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5SDnWB_4cZG" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:5SDnWB_47yw" resolve="remainder" />
+              </node>
+            </node>
+            <node concept="tyxLq" id="5SDnWB_4di6" role="2OqNvi">
+              <node concept="3clFbT" id="5SDnWB_4djl" role="tz02z">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5SDnWB_4mIl" role="2ZfVeh">
+      <node concept="3clFbS" id="5SDnWB_4mIm" role="2VODD2">
+        <node concept="3clFbF" id="5SDnWB_4mOh" role="3cqZAp">
+          <node concept="3clFbC" id="5SDnWB_CPr2" role="3clFbG">
+            <node concept="3clFbT" id="5SDnWB_CPx6" role="3uHU7w">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="2OqwBi" id="5SDnWB_4mTw" role="3uHU7B">
+              <node concept="2Sf5sV" id="5SDnWB_4mOg" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5SDnWB_4nkX" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:5SDnWB_47yw" resolve="remainder" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5SDnWB_4i57">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="disallowIncompletePairs" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="iowz:6TmjYLGeHlg" resolve="Phase" />
+    <node concept="2S6ZIM" id="5SDnWB_4i58" role="2ZfVej">
+      <node concept="3clFbS" id="5SDnWB_4i59" role="2VODD2">
+        <node concept="3clFbF" id="5SDnWB_4kME" role="3cqZAp">
+          <node concept="Xl_RD" id="5SDnWB_4kMD" role="3clFbG">
+            <property role="Xl_RC" value="Disallow emissions of incomplete pairs" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5SDnWB_4i5a" role="2ZfgGD">
+      <node concept="3clFbS" id="5SDnWB_4i5b" role="2VODD2">
+        <node concept="3clFbF" id="5SDnWB_4ond" role="3cqZAp">
+          <node concept="2OqwBi" id="5SDnWB_4oTC" role="3clFbG">
+            <node concept="2OqwBi" id="5SDnWB_4opq" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5SDnWB_4onc" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5SDnWB_4oA8" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:5SDnWB_47yw" resolve="remainder" />
+              </node>
+            </node>
+            <node concept="tyxLq" id="5SDnWB_4pb$" role="2OqNvi">
+              <node concept="3clFbT" id="5SDnWB_4pbX" role="tz02z">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5SDnWB_4lmz" role="2ZfVeh">
+      <node concept="3clFbS" id="5SDnWB_4lm$" role="2VODD2">
+        <node concept="3clFbF" id="5SDnWB_4ltQ" role="3cqZAp">
+          <node concept="3clFbC" id="5SDnWB_CQhg" role="3clFbG">
+            <node concept="3clFbT" id="5SDnWB_CQkd" role="3uHU7w">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="5SDnWB_4lz5" role="3uHU7B">
+              <node concept="2Sf5sV" id="5SDnWB_4ltP" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5SDnWB_4lOD" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:5SDnWB_47yw" resolve="remainder" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

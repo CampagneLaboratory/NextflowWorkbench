@@ -133,7 +133,9 @@
       </concept>
       <concept id="7950630069015859036" name="org.campagnelab.workflow.structure.Merge" flags="ng" index="2r82K" />
       <concept id="7950630069015862541" name="org.campagnelab.workflow.structure.Cross" flags="ng" index="2r9bx" />
-      <concept id="7950630069015860560" name="org.campagnelab.workflow.structure.Phase" flags="ng" index="2r9EW" />
+      <concept id="7950630069015860560" name="org.campagnelab.workflow.structure.Phase" flags="ng" index="2r9EW">
+        <property id="6785059634346490016" name="remainder" index="2VeitD" />
+      </concept>
       <concept id="7950630069015852653" name="org.campagnelab.workflow.structure.OutChannelContainerRef" flags="ng" index="2rfA1">
         <reference id="7950630069015854237" name="outChannelContainer" index="2rfdL" />
       </concept>
@@ -988,6 +990,12 @@
           <ref role="3YE7sm" node="5jV0u9kMZeT" resolve="index" />
         </node>
         <node concept="19SUe$" id="5jV0u9kN7AK" role="19SJt6">
+          <property role="19SUeA" value=", " />
+        </node>
+        <node concept="3YE7tV" id="6jIGV5kE_6O" role="19SJt6">
+          <ref role="3YE7sm" node="5jV0u9kMZg0" resolve="throwaway" />
+        </node>
+        <node concept="19SUe$" id="6jIGV5kE_6N" role="19SJt6">
           <property role="19SUeA" value=" &gt; " />
         </node>
         <node concept="2b_LqF" id="5jV0u9kN7AO" role="19SJt6">
@@ -2169,6 +2177,30 @@
         </node>
       </node>
     </node>
+    <node concept="2UNLhE" id="5SDnWBAaAmI" role="2UW718">
+      <ref role="2UNLhW" node="5SDnWBAax14" resolve="file5" />
+      <node concept="2UPiyC" id="5SDnWBAaAmJ" role="2UNLhY">
+        <node concept="3clFbS" id="5SDnWBAaAmK" role="2VODD2">
+          <node concept="3clFbF" id="5SDnWBAaB_v" role="3cqZAp">
+            <node concept="2OqwBi" id="5SDnWBAaDo$" role="3clFbG">
+              <node concept="10M0yZ" id="5SDnWBAaBSL" role="2Oq$k0">
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="5SDnWBAaDPx" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="3cpWs3" id="6jIGV5kEd5i" role="37wK5m">
+                  <node concept="2UPiyF" id="6jIGV5kEdOO" role="3uHU7w" />
+                  <node concept="Xl_RD" id="5SDnWBAaEav" role="3uHU7B">
+                    <property role="Xl_RC" value="Result written to this file file5" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2$rEH5" id="LDlI_0uIE2" role="2$rEHq">
       <ref role="2$rEH4" node="20sqvYk4pFn" resolve="testTuple" />
       <node concept="1uYdA0" id="LDlI_0uIE3" role="1uLvPH">
@@ -2216,6 +2248,7 @@
       <node concept="1uYdA0" id="LDlI_0uIEi" role="1uLvPH">
         <ref role="1uK_4X" node="LDlI_0uHvc" resolve="namesNoNumbersCopy" />
         <node concept="2r9EW" id="LDlI_0uPKU" role="1ylr64">
+          <property role="2VeitD" value="false" />
           <node concept="2rfA1" id="LDlI_0uQ0D" role="2rfdc">
             <ref role="2rfdL" node="LDlI_0uHuW" resolve="indicesCopy3" />
           </node>
@@ -2223,6 +2256,21 @@
       </node>
       <node concept="1uLkD0" id="LDlI_0uIEl" role="1uLvPA">
         <property role="TrG5h" value="file4" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="5SDnWBAawsH" role="2$rEHq">
+      <ref role="2$rEH4" node="5jV0u9kMQ9G" resolve="crossTupleTest" />
+      <node concept="1uYdA0" id="5SDnWBAax13" role="1uLvPH">
+        <ref role="1uK_4X" node="5SDnWBAaohj" resolve="ch1" />
+        <node concept="2r9EW" id="5SDnWBAay4d" role="1ylr64">
+          <property role="2VeitD" value="false" />
+          <node concept="2rfA1" id="5SDnWBAazEV" role="2rfdc">
+            <ref role="2rfdL" node="5SDnWBAasgI" resolve="ch2" />
+          </node>
+        </node>
+      </node>
+      <node concept="1uLkD0" id="5SDnWBAax14" role="1uLvPA">
+        <property role="TrG5h" value="file5" />
       </node>
     </node>
     <node concept="1CVceo" id="LDlI_0uHuo" role="2$L6iY">
@@ -2392,6 +2440,46 @@
           <node concept="2J_g7P" id="LDlI_0uHvm" role="2J_sdT">
             <property role="2J_vQ8" value="Richard" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="5SDnWBAaohj" role="2$L6iY">
+      <property role="TrG5h" value="ch1" />
+      <node concept="2J_sx7" id="5SDnWBAaohk" role="2$L62I">
+        <node concept="2J_swZ" id="5SDnWBAapVJ" role="2J_sx6">
+          <property role="2J_sxC" value="1" />
+        </node>
+        <node concept="2J_swZ" id="5SDnWBAaqoB" role="2J_sx6">
+          <property role="2J_sxC" value="0" />
+        </node>
+        <node concept="2J_swZ" id="5SDnWBAar4P" role="2J_sx6">
+          <property role="2J_sxC" value="0" />
+        </node>
+        <node concept="2J_swZ" id="5SDnWBAarjx" role="2J_sx6">
+          <property role="2J_sxC" value="2" />
+        </node>
+        <node concept="2J_swZ" id="5SDnWBAaryr" role="2J_sx6">
+          <property role="2J_sxC" value="5" />
+        </node>
+        <node concept="2J_swZ" id="5SDnWBAarLz" role="2J_sx6">
+          <property role="2J_sxC" value="3" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="5SDnWBAasgI" role="2$L6iY">
+      <property role="TrG5h" value="ch2" />
+      <node concept="2J_sx7" id="5SDnWBAasgJ" role="2$L62I">
+        <node concept="2J_swZ" id="5SDnWBAaueC" role="2J_sx6">
+          <property role="2J_sxC" value="1" />
+        </node>
+        <node concept="2J_swZ" id="5SDnWBAauvI" role="2J_sx6">
+          <property role="2J_sxC" value="2" />
+        </node>
+        <node concept="2J_swZ" id="5SDnWBAauL3" role="2J_sx6">
+          <property role="2J_sxC" value="3" />
+        </node>
+        <node concept="2J_swZ" id="5SDnWBAavA$" role="2J_sx6">
+          <property role="2J_sxC" value="4" />
         </node>
       </node>
     </node>
