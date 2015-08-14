@@ -1916,13 +1916,12 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2xLnOmQeTSA" role="3cqZAp" />
-        <node concept="SfApY" id="16M54outo0v" role="3cqZAp">
-          <node concept="3clFbS" id="16M54outo0x" role="SfCbr">
+        <node concept="SfApY" id="M9caYnNSvm" role="3cqZAp">
+          <node concept="3clFbS" id="M9caYnNSvo" role="SfCbr">
             <node concept="3clFbF" id="5HJ0QzzlaPZ" role="3cqZAp">
               <node concept="2YIFZM" id="5HJ0QzzlaQ0" role="3clFbG">
-                <ref role="1Pybhc" to="qgx3:3FOZ2RXSWlV" resolve="JarManager" />
                 <ref role="37wK5l" to="qgx3:3FOZ2RY2537" resolve="createDistributionPackage" />
+                <ref role="1Pybhc" to="qgx3:3FOZ2RXSWlV" resolve="JarManager" />
                 <node concept="2ShNRf" id="5HJ0QzzlMB7" role="37wK5m">
                   <node concept="1pGfFk" id="5HJ0QzzlMB6" role="2ShVmc">
                     <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
@@ -1947,8 +1946,8 @@
                   </node>
                   <node concept="3cpWs3" id="28S3GatErV5" role="3uHU7B">
                     <node concept="10M0yZ" id="28S3GatEsih" role="3uHU7w">
-                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
                       <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
                     </node>
                     <node concept="37vLTw" id="28S3GatErwz" role="3uHU7B">
                       <ref role="3cqZAo" node="28S3GatEby6" resolve="classesGenPath" />
@@ -1957,29 +1956,44 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="M9caYnNSvn" role="3cqZAp" />
           </node>
-          <node concept="TDmWw" id="16M54outo0y" role="TEbGg">
-            <node concept="3cpWsn" id="16M54outo0$" role="TDEfY">
-              <property role="TrG5h" value="ex" />
-              <node concept="3uibUv" id="16M54outoCa" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+          <node concept="TDmWw" id="M9caYnNSvp" role="TEbGg">
+            <node concept="3cpWsn" id="M9caYnNSvr" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="M9caYnNUni" role="1tU5fm">
+                <ref role="3uigEE" to="fxg7:~IOException" resolve="IOException" />
               </node>
             </node>
-            <node concept="3clFbS" id="16M54outo0C" role="TDEfX">
-              <node concept="2LYoGF" id="2xLnOmQfS0I" role="3cqZAp">
-                <node concept="3cpWs3" id="2xLnOmQgmju" role="2LYoNh">
-                  <node concept="2OqwBi" id="2xLnOmQgmZl" role="3uHU7w">
-                    <node concept="37vLTw" id="2xLnOmQgmCF" role="2Oq$k0">
-                      <ref role="3cqZAo" node="16M54outo0$" resolve="ex" />
-                    </node>
-                    <node concept="liA8E" id="2xLnOmQgnCr" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="2xLnOmQfSo7" role="3uHU7B">
-                    <property role="Xl_RC" value="Unable to assemble generated.jar" />
+            <node concept="3clFbS" id="M9caYnNSvv" role="TDEfX">
+              <node concept="3SKdUt" id="M9caYnNV6M" role="3cqZAp">
+                <node concept="3SKdUq" id="M9caYnNVue" role="3SKWNk">
+                  <property role="3SKdUp" value="ignore: we test for the presence of the jar below." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="M9caYnLLbk" role="3cqZAp">
+          <node concept="3clFbS" id="M9caYnLLbm" role="3clFbx">
+            <node concept="2LYoGF" id="2xLnOmQfS0I" role="3cqZAp">
+              <node concept="Xl_RD" id="2xLnOmQfSo7" role="2LYoNh">
+                <property role="Xl_RC" value="Unable to assemble generated.jar" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="M9caYnMnhk" role="3clFbw">
+            <node concept="2OqwBi" id="M9caYnMnhm" role="3fr31v">
+              <node concept="2ShNRf" id="M9caYnMnhn" role="2Oq$k0">
+                <node concept="1pGfFk" id="M9caYnMnho" role="2ShVmc">
+                  <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                  <node concept="37vLTw" id="M9caYnMnhp" role="37wK5m">
+                    <ref role="3cqZAo" node="nhsmU5H9cc" resolve="jarPath" />
                   </node>
                 </node>
+              </node>
+              <node concept="liA8E" id="M9caYnMnhq" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~File.exists():boolean" resolve="exists" />
               </node>
             </node>
           </node>
