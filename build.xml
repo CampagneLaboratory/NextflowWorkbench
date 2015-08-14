@@ -281,6 +281,8 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.workflow.Samples-models" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/NextflowWorkbench_${workbench_version}.zip">
+      <zipfileset file="${basedir}/solutions/org.campagnelab.workflow.run/mps-collections.jar" prefix="NextflowWorkbench" />
+      <zipfileset file="${basedir}/solutions/org.campagnelab.workflow.run/closures-runtime.jar" prefix="NextflowWorkbench" />
       <zipfileset file="${basedir}/solutions/org.campagnelab.workflow.run/jsch-0.1.53.jar" prefix="NextflowWorkbench" />
       <zipfileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext" prefix="NextflowWorkbench" includes="**/*.jar" />
       <zipfileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline" prefix="NextflowWorkbench" includes="**/*.jar" />
@@ -570,6 +572,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />

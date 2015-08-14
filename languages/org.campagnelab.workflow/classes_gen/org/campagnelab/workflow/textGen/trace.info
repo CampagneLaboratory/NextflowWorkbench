@@ -833,7 +833,7 @@
       <node id="8584871179168577853" at="172,103,173,80" concept="7" />
       <node id="8584871179168549924" at="173,80,174,221" concept="5" />
       <node id="1517393569245883378" at="174,221,175,0" concept="8" />
-      <node id="3697184379591032586" at="176,882,177,62" concept="7" />
+      <node id="3697184379591032586" at="176,1094,177,62" concept="7" />
       <node id="3697184379590736143" at="177,62,178,745" concept="0" />
       <node id="3697184379590736143" at="177,62,178,745" concept="1" />
       <node id="3697184379590891256" at="178,745,179,13" concept="6" />
@@ -857,6 +857,8 @@
       <node id="4533252666380993314" at="211,32,212,27" concept="1" />
       <node id="8584871179168520351" at="214,95,215,37" concept="6" />
       <node id="3544328886043545220" at="217,0,218,0" concept="9" trace="LOG" />
+      <node id="3975709481597263512" at="218,63,219,46" concept="6" />
+      <node id="3975709481597273766" at="221,65,222,46" concept="6" />
       <node id="3544328886046547448" at="57,25,59,28" concept="0" />
       <node id="5930160417393093066" at="62,63,64,32" concept="0" />
       <node id="239101957515213725" at="72,12,74,32" concept="0" />
@@ -882,6 +884,8 @@
       <node id="5272771017493800049" at="195,38,198,7" concept="3" />
       <node id="5772540756690604602" at="199,5,202,5" concept="3" />
       <node id="3544328886043545220" at="214,0,217,0" concept="10" trace="getMethodClassName#(Ljava/lang/String;Ljetbrains/mps/textGen/SNodeTextGen;)Ljava/lang/String;" />
+      <node id="3975709481597263512" at="218,0,221,0" concept="10" trace="eq_qa3d8d_a0a3a3#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="3975709481597273766" at="221,0,224,0" concept="10" trace="eq_qa3d8d_a0a3a3_0#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
       <node id="5930160417393792794" at="61,230,65,7" concept="3" />
       <node id="3857878650538238598" at="90,230,94,13" concept="2" />
       <node id="6783277435987936392" at="38,98,43,30" concept="0" />
@@ -953,6 +957,8 @@
       <scope id="5272771017493800051" at="196,82,197,28" />
       <scope id="5772540756690604604" at="200,80,201,43" />
       <scope id="3544328886043545220" at="214,95,215,37" />
+      <scope id="3975709481597263512" at="218,63,219,46" />
+      <scope id="3975709481597273766" at="221,65,222,46" />
       <scope id="3544328886046547448" at="57,25,59,28" />
       <scope id="5930160417393093066" at="62,63,64,32" />
       <scope id="5930160417393792796" at="62,63,64,32" />
@@ -983,7 +989,7 @@
       <scope id="2520781328426239415" at="144,33,147,26" />
       <scope id="2590112629703904226" at="152,196,155,19" />
       <scope id="2590112629714195455" at="162,199,165,19" />
-      <scope id="3697184379590680940" at="176,882,179,13" />
+      <scope id="3697184379590680940" at="176,1094,179,13" />
       <scope id="8584871179168510367" at="183,0,186,0">
         <var name="it" id="8584871179168510367" />
       </scope>
@@ -993,6 +999,14 @@
       <scope id="3544328886043545220" at="214,0,217,0">
         <var name="textGen" id="3544328886043545220" />
         <var name="workflowName" id="1517393569246571618" />
+      </scope>
+      <scope id="3975709481597263512" at="218,0,221,0">
+        <var name="a" id="3975709481597263512" />
+        <var name="b" id="3975709481597263512" />
+      </scope>
+      <scope id="3975709481597273766" at="221,0,224,0">
+        <var name="a" id="3975709481597273766" />
+        <var name="b" id="3975709481597273766" />
       </scope>
       <scope id="6992028756512777206" at="61,230,65,7" />
       <scope id="3857878650538238598" at="90,230,94,13">
@@ -1084,7 +1098,7 @@
       <unit id="5930160417395928713" at="68,278,72,7" name="org.campagnelab.workflow.textGen.WorkflowToNextflow$1" />
       <unit id="8584871179168510367" at="182,495,186,5" name="org.campagnelab.workflow.textGen.WorkflowToNextflow$2" />
       <unit id="8584871179168515953" at="187,473,191,5" name="org.campagnelab.workflow.textGen.WorkflowToNextflow$3" />
-      <unit id="3544328886043545220" at="24,0,219,0" name="org.campagnelab.workflow.textGen.WorkflowToNextflow" />
+      <unit id="3544328886043545220" at="24,0,225,0" name="org.campagnelab.workflow.textGen.WorkflowToNextflow" />
     </file>
   </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/419240959831383329">
