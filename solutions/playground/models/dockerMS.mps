@@ -63,7 +63,6 @@
         <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
         <reference id="8987412447080991851" name="buildInstructions" index="2E_BxF" />
         <child id="6819868375258175796" name="tagAs" index="Gyxcj" />
-        <child id="430664643838761227" name="containers" index="WF_SX" />
       </concept>
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
         <property id="8987412447080623507" name="options" index="2E$TAj" />
@@ -77,6 +76,9 @@
       <concept id="6819868375258175840" name="org.campagnelab.docker.structure.TagInfo" flags="ng" index="Gyxd7">
         <property id="6819868375258175846" name="tag" index="Gyxd1" />
         <property id="6819868375258175942" name="userName" index="Gyxfx" />
+      </concept>
+      <concept id="4077712437829700149" name="org.campagnelab.docker.structure.EnvInstruction" flags="ng" index="2LBJJI">
+        <child id="4202970468876361856" name="assignments" index="2WxHfv" />
       </concept>
       <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
         <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
@@ -101,8 +103,8 @@
         <child id="1893262236499933486" name="instructions" index="VuOVn" />
         <child id="716770353512671073" name="images" index="3blhQR" />
       </concept>
-      <concept id="430664643838735225" name="org.campagnelab.docker.structure.ContainerRef" flags="ng" index="WEvhf">
-        <reference id="430664643838735312" name="container" index="WEvjA" />
+      <concept id="4202970468876401544" name="org.campagnelab.docker.structure.EnvVariableAssignment" flags="ng" index="2Wx$zn">
+        <property id="4077712437829700150" name="name" index="2LBJJH" />
       </concept>
       <concept id="716770353512671076" name="org.campagnelab.docker.structure.ImageRef" flags="ng" index="3blhQM">
         <reference id="716770353512671080" name="image" index="3blhQY" />
@@ -205,13 +207,13 @@
   </node>
   <node concept="VuPG2" id="6fIiQMMz3r_">
     <property role="TrG5h" value="artifacts-software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile5957082852317471898.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1380388903303267147.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="6fIiQMM$wKy" role="VuOVn">
       <node concept="VtuK3" id="6fIiQMM$_RF" role="VuO5T">
-        <property role="VuL0s" value="1.1" />
+        <property role="VuL0s" value="1.0" />
         <property role="VuL0v" value="mas2181" />
-        <property role="GbyUj" value="ubuntu-java8" />
+        <property role="GbyUj" value="centos-java8" />
         <property role="3zaeVo" value="true" />
       </node>
     </node>
@@ -229,7 +231,7 @@
     <node concept="VugRC" id="3P1oJbjPVEo" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPVEp" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPVEq" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software \&#10;&amp;&amp; curl -fsSLJ -o /home/gobyweb/software/plugins-2.5.0-sdk.tar.gz  &quot;http://campagnelab.org/?wpdmact=process&amp;did=MTM1LmhvdGxpbms&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.5.0-sdk.tar.gz \&#10;&amp;&amp; rm -f plugins-2.5.0-sdk.tar.gz/home/gobyweb/software/plugins-2.5.0-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=/home/gobyweb/software/plugins-sdk-2.5.0/bin:${PATH}&quot; &gt;&gt; /root/.bashrc \&#10;&amp;&amp; echo &quot;source $INSTALLATION_DIRECTORY/home/gobyweb/software/plugins-sdk-2.5.0/bin/plugins-export-env&quot; &gt;&gt; /root/.bashrc" />
+          <property role="19SUeA" value="cd /home/gobyweb/software \&#10;&amp;&amp; wget -O /home/gobyweb/software/plugins-2.5.0-sdk.tar.gz  &quot;http://campagnelab.org/?wpdmact=process&amp;did=MTM1LmhvdGxpbms&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.5.0-sdk.tar.gz \&#10;&amp;&amp; rm -f /home/gobyweb/software/plugins-2.5.0-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin:/home/gobyweb/software/plugins-sdk-2.5.0/bin&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;source $INSTALLATION_DIRECTORY/home/gobyweb/software/plugins-sdk-2.5.0/bin/plugins-export-env&quot; &gt;&gt; $HOME/.bashrc" />
         </node>
       </node>
     </node>
@@ -239,7 +241,7 @@
     <node concept="VugRC" id="3P1oJbjPVIA" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPVJe" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPVJf" role="19SJt6">
-          <property role="19SUeA" value="mkdir -p /root/.ssh &amp;&amp; touch /root/.ssh/known_hosts &amp;&amp; ssh-keyscan github.com &gt;&gt; /root/.ssh/known_hosts \&#10;&amp;&amp; ssh-keygen -t rsa -f /root/.ssh/id_rsa -b 4096 -q -N &quot;&quot;" />
+          <property role="19SUeA" value="mkdir -p $HOME/.ssh &amp;&amp; touch $HOME/.ssh/known_hosts &amp;&amp; ssh-keyscan github.com &gt;&gt; $HOME/.ssh/known_hosts \&#10;&amp;&amp; ssh-keygen -t rsa -f $HOME/.ssh/id_rsa -b 4096 -q -N &quot;&quot;" />
         </node>
       </node>
     </node>
@@ -249,7 +251,7 @@
     <node concept="VugRC" id="3P1oJbjPLK9" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPLKD" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPLKE" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; /root/.bashrc" />
+          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; $HOME/.bashrc" />
         </node>
       </node>
     </node>
@@ -259,52 +261,35 @@
     <node concept="VugRC" id="3P1oJbjPVEr" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPVEs" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPVEt" role="19SJt6">
-          <property role="19SUeA" value="mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export REPOSITORY_DIR=/scratchLocal/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; /root/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS" />
+          <property role="19SUeA" value="mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export REPOSITORY_DIR=/scratchLocal/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS" />
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3P1oJbjPWX9" role="3blhQR">
-      <ref role="3blhQY" node="3P1oJbjPWX8" resolve="artifacts-software_Image" />
+    <node concept="3blhQM" id="39YFbxZhHcT" role="3blhQR">
+      <ref role="3blhQY" node="39YFbxZhHnV" resolve="artifacts-software_Image" />
     </node>
-    <node concept="3blhQM" id="3P1oJbjPX4z" role="3blhQR">
-      <ref role="3blhQY" node="3P1oJbjPX4y" resolve="artifacts-software_Image" />
+    <node concept="3blhQM" id="39YFbxZhHin" role="3blhQR">
+      <ref role="3blhQY" node="39YFbxZhHnV" resolve="artifacts-software_Image" />
+    </node>
+    <node concept="3blhQM" id="39YFbxZhHnW" role="3blhQR">
+      <ref role="3blhQY" node="39YFbxZhHnV" resolve="artifacts-software_Image" />
     </node>
   </node>
   <node concept="2E_JVc" id="3P1oJbjPVxa">
     <property role="2E_JEh" value="154693612d15" />
     <property role="TrG5h" value="ubuntu-java8_Image" />
     <property role="3GE5qa" value="published_images" />
-    <property role="GSh9r" value="mas2181/ubuntu-java8:latest" />
+    <property role="GSh9r" value="mas2181/ubuntu-java8:1.0" />
     <ref role="2E_BxF" node="xP2fmw4YHs" resolve="ubuntu-java8" />
     <node concept="Gyxd7" id="3P1oJbjPVxt" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="ubuntu-java8" />
-      <property role="Gyxd1" value="latest" />
-    </node>
-  </node>
-  <node concept="2E_JVc" id="3P1oJbjPWX8">
-    <property role="2E_JEh" value="6ca3b1c76bd7" />
-    <property role="TrG5h" value="artifacts-software_Image" />
-    <property role="3GE5qa" value="published_images" />
-    <property role="GSh9r" value="mas2181/artifacts-software:1.0" />
-    <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifacts-software" />
-    <node concept="Gyxd7" id="3P1oJbjPWX_" role="Gyxcj">
-      <property role="TrG5h" value="artifacts-software" />
-      <property role="Gyxfx" value="mas2181" />
       <property role="Gyxd1" value="1.0" />
-    </node>
-  </node>
-  <node concept="2E_JVc" id="3P1oJbjPX4y">
-    <property role="2E_JEh" value="2d3f97738dab" />
-    <property role="TrG5h" value="artifacts-software_Image" />
-    <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifacts-software" />
-    <node concept="WEvhf" id="39YFbxZhCa_" role="WF_SX">
-      <ref role="WEvjA" node="39YFbxZhCar" resolve="interactive" />
     </node>
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
     <property role="TrG5h" value="centos-java8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile5422921419532113561.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile5609152452824039712.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="39YFbxZh5KQ" role="VuOVn">
       <node concept="VtuK3" id="39YFbxZh5KR" role="VuO5T">
@@ -317,6 +302,11 @@
     <node concept="VuOhh" id="39YFbxZh5KS" role="VuOVn">
       <property role="VuOhg" value="Campagne Lab" />
       <property role="VuOhi" value="manuele.simi@campagnelab.org" />
+    </node>
+    <node concept="2LBJJI" id="39YFbxZhH12" role="VuOVn">
+      <node concept="2Wx$zn" id="39YFbxZhH13" role="2WxHfv">
+        <property role="2LBJJH" value="HOME" />
+      </node>
     </node>
     <node concept="2Cort2" id="39YFbxZh5KT" role="VuOVn">
       <property role="1MaElf" value="install commads needed for the installation" />
@@ -344,12 +334,12 @@
     <node concept="VugRC" id="39YFbxZhcK2" role="VuOVn">
       <node concept="19SGf9" id="39YFbxZhcK$" role="Vugyn">
         <node concept="19SUe$" id="39YFbxZhcK_" role="19SJt6">
-          <property role="19SUeA" value="cd /opt/ \&#10;&amp;&amp; wget --no-cookies --no-check-certificate --header &quot;Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie&quot; &quot;http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.tar.gz&quot; \&#10;&amp;&amp; tar -zxvf jdk-8u45-linux-x64.tar.gz &amp;&amp; rm -f jdk-8u45-linux-x64.tar.gz \&#10;&amp;&amp; echo &quot;export JAVA_HOME=/opt/jdk1.8.0_45&quot; &gt;&gt; /.bashrc \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin&quot; &gt;&gt; /.bashrc &#10;&#10;" />
+          <property role="19SUeA" value="cd /opt/ \&#10;&amp;&amp; wget --no-cookies --no-check-certificate --header &quot;Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie&quot; &quot;http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.tar.gz&quot; \&#10;&amp;&amp; tar -zxvf jdk-8u45-linux-x64.tar.gz &amp;&amp; rm -f jdk-8u45-linux-x64.tar.gz \&#10;&amp;&amp; echo &quot;export JAVA_HOME=/opt/jdk1.8.0_45&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin&quot; &gt;&gt; $HOME/.bashrc &#10;&#10;" />
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="39YFbxZhGgI" role="3blhQR">
-      <ref role="3blhQY" node="39YFbxZhGgH" resolve="centos-java8_Image" />
+    <node concept="3blhQM" id="39YFbxZhH57" role="3blhQR">
+      <ref role="3blhQY" node="39YFbxZhH56" resolve="centos-java8_Image" />
     </node>
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
@@ -465,16 +455,28 @@
     <property role="3yMj3R" value="sleep 1000" />
     <ref role="3zcJb$" node="3P1oJbjPX4y" resolve="artifacts-software_Image" />
   </node>
-  <node concept="2E_JVc" id="39YFbxZhGgH">
-    <property role="2E_JEh" value="f13f0980ec66" />
+  <node concept="2E_JVc" id="39YFbxZhH56">
+    <property role="2E_JEh" value="6e83efbb2132" />
     <property role="TrG5h" value="centos-java8_Image" />
     <property role="GSh9r" value="mas2181/centos-java8:latest" />
     <property role="3GE5qa" value="published_images" />
     <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
-    <node concept="Gyxd7" id="39YFbxZhGiE" role="Gyxcj">
+    <node concept="Gyxd7" id="39YFbxZhH5j" role="Gyxcj">
+      <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="centos-java8" />
       <property role="Gyxd1" value="latest" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="39YFbxZhHnV">
+    <property role="2E_JEh" value="16fa5d5ecaa8" />
+    <property role="TrG5h" value="artifacts-software_Image" />
+    <property role="GSh9r" value="mas2181/artifacts-software:latest" />
+    <property role="3GE5qa" value="published_images" />
+    <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifacts-software" />
+    <node concept="Gyxd7" id="39YFbxZhHrK" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
+      <property role="TrG5h" value="artifacts-software" />
+      <property role="Gyxd1" value="latest" />
     </node>
   </node>
 </model>
