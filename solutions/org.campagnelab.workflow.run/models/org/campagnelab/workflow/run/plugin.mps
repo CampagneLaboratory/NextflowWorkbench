@@ -4884,9 +4884,7 @@
                           </node>
                           <node concept="37vLTG" id="1qn_o2sMHcn" role="3clF46">
                             <property role="TrG5h" value="filename" />
-                            <node concept="3uibUv" id="1qn_o2sMHco" role="1tU5fm">
-                              <ref role="3uigEE" to="e2lb:~String" resolve="String" />
-                            </node>
+                            <node concept="17QB3L" id="4Tf9NjMgA6W" role="1tU5fm" />
                           </node>
                           <node concept="3clFbS" id="1qn_o2sMHcp" role="3clF47">
                             <node concept="3clFbF" id="1qn_o2sMMif" role="3cqZAp">
