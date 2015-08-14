@@ -54,7 +54,6 @@
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="d4yz" ref="r:9aacb4c5-da89-46f5-8c41-93d864945583(jetbrains.mps.tool.common.util)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
-    <import index="tb5g" ref="f:diff_old#r:73ca7524-ab13-4206-a565-e392dbbf6517(org.campagnelab.workflow.run.plugin@old)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -2141,7 +2140,7 @@
                   </node>
                   <node concept="3cpWs3" id="3uBbkEdP7iF" role="3uHU7B">
                     <node concept="37vLTw" id="3uBbkEdP72L" role="3uHU7B">
-                      <ref role="3cqZAo" to="tb5g:6qWs7gtRrjT" resolve="additionalLibPath" />
+                      <ref role="3cqZAo" node="6qWs7gtRrjT" resolve="additionalLibPath" />
                     </node>
                     <node concept="10M0yZ" id="3uBbkEdP7pU" role="3uHU7w">
                       <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
@@ -2169,7 +2168,7 @@
                 <node concept="3cpWs3" id="1iK0rY9btSH" role="37wK5m">
                   <node concept="3cpWs3" id="1iK0rY9btSI" role="3uHU7B">
                     <node concept="37vLTw" id="1iK0rY9btSJ" role="3uHU7B">
-                      <ref role="3cqZAo" to="tb5g:28S3GatEby6" resolve="classesGenPath" />
+                      <ref role="3cqZAo" node="28S3GatEby6" resolve="classesGenPath" />
                     </node>
                     <node concept="10M0yZ" id="1iK0rY9btSK" role="3uHU7w">
                       <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
@@ -2197,7 +2196,7 @@
                   </node>
                   <node concept="3cpWs3" id="1iK0rY9btSR" role="3uHU7B">
                     <node concept="37vLTw" id="1iK0rY9btSS" role="3uHU7B">
-                      <ref role="3cqZAo" to="tb5g:6qWs7gtRrjT" resolve="additionalLibPath" />
+                      <ref role="3cqZAo" node="6qWs7gtRrjT" resolve="additionalLibPath" />
                     </node>
                     <node concept="10M0yZ" id="1iK0rY9btST" role="3uHU7w">
                       <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
