@@ -221,7 +221,7 @@ public class QueriesGenerated {
       public SNode select(SNode it) {
         return SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x5a68901f1459fb6aL, 0x66f41b22a6fa763aL, "closure"));
       }
-    });
+    }).first();
   }
   protected static Logger LOG = LogManager.getLogger(QueriesGenerated.class);
   private static boolean neq_x583g4_a0a0a0a0a0a0a0a0a0c0v(Object a, Object b) {
