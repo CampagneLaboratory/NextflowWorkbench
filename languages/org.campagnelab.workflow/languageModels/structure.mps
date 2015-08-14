@@ -1465,6 +1465,9 @@
     <property role="TrG5h" value="ProcessOutput" />
     <property role="R4oN_" value="Output of a Process" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
+    <node concept="PrWs8" id="5a$ayBiSq3R" role="PzmwI">
+      <ref role="PrY4T" node="5a$ayBiSpGk" resolve="HasExpression" />
+    </node>
     <node concept="1TJgyj" id="2fLVrqQF2Pv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression_old" />
@@ -1477,9 +1480,6 @@
     <node concept="1TJgyi" id="2fLVrqQ2EIf" role="1TKVEl">
       <property role="TrG5h" value="fromStandardOutput" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="PrWs8" id="5a$ayBiSq3R" role="PzmwI">
-      <ref role="PrY4T" node="5a$ayBiSpGk" resolve="HasExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="1qs9CHFOrh8">
@@ -1661,7 +1661,7 @@
     <property role="34LRSv" value="phase" />
     <property role="R4oN_" value="Synchronize values emitted by two channels and emits pairs of items which have a matching key" />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
-    <node concept="1TJgyi" id="6TmjYLGeHuE" role="1TKVEl">
+    <node concept="1TJgyi" id="5SDnWB_47yw" role="1TKVEl">
       <property role="TrG5h" value="remainder" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
