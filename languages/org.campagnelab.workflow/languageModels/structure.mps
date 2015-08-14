@@ -1692,7 +1692,7 @@
     <property role="TrG5h" value="Merge" />
     <property role="34LRSv" value="merge" />
     <property role="R4oN_" value="Merge items emitted by two (or more) channels into a new one" />
-    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
+    <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOtn">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
