@@ -21,6 +21,9 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="5954930966410664724" name="org.campagnelab.workflow.structure.HasExpression" flags="ng" index="20hr4X">
+        <child id="5954930966410666282" name="expression" index="20hoG3" />
+      </concept>
       <concept id="748852418098455525" name="org.campagnelab.workflow.structure.NameInAChannelRef" flags="ng" index="2b_LqF">
         <reference id="748852418098455526" name="value" index="2b_LqC" />
       </concept>
@@ -35,7 +38,6 @@
       </concept>
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
         <property id="2590112629708729231" name="fromStandardOutput" index="2lYOoT" />
-        <child id="2590112629719313759" name="expression" index="2lns3D" />
       </concept>
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o">
         <property id="2590112629703814581" name="toStandardInput" index="2mj$03" />
@@ -212,7 +214,7 @@
     <node concept="2lYRya" id="2qcvB08TdCE" role="2ulM79">
       <property role="TrG5h" value="value" />
       <node concept="16pbKc" id="2qcvB08TdCM" role="2ybFLk" />
-      <node concept="2lntFH" id="2qcvB08TdE7" role="2lns3D">
+      <node concept="2lntFH" id="2qcvB08TdE7" role="20hoG3">
         <node concept="2l3rVN" id="2qcvB08TdEg" role="2lntCI">
           <ref role="2l3rFK" node="2qcvB08TdC4" resolve="inputValue" />
         </node>

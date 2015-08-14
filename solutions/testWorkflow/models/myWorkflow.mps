@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration" version="-1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
@@ -11,6 +10,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="6" />
   </languages>
   <imports>
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
@@ -122,6 +122,9 @@
       <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="5954930966410664724" name="org.campagnelab.workflow.structure.HasExpression" flags="ng" index="20hr4X">
+        <child id="5954930966410666282" name="expression" index="20hoG3" />
+      </concept>
       <concept id="7950630069015365464" name="org.campagnelab.workflow.structure.Sum" flags="ng" index="2pgyO" />
       <concept id="7950630069015365463" name="org.campagnelab.workflow.structure.Max" flags="ng" index="2pgyV" />
       <concept id="7950630069015365182" name="org.campagnelab.workflow.structure.Min" flags="ng" index="2pgBi" />
@@ -149,9 +152,7 @@
       <concept id="2590112629719316315" name="org.campagnelab.workflow.structure.OutputExpression" flags="ng" index="2lntFH">
         <child id="2590112629719316376" name="expression" index="2lntCI" />
       </concept>
-      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
-        <child id="2590112629719313759" name="expression" index="2lns3D" />
-      </concept>
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
@@ -197,7 +198,7 @@
         <child id="7418584321830319674" name="closure" index="303AOo" />
       </concept>
       <concept id="1101938165420562842" name="org.campagnelab.workflow.structure.Distinct" flags="ng" index="1t74tQ" />
-      <concept id="1101938165422446122" name="org.campagnelab.workflow.structure.Map" flags="ng" index="1teoz6" />
+      <concept id="1101938165422446122" name="org.campagnelab.workflow.structure.MapFunction" flags="ng" index="1teoz6" />
       <concept id="1101938165422453451" name="org.campagnelab.workflow.structure.FlatMap" flags="ng" index="1teqKB" />
       <concept id="1101938165422228846" name="org.campagnelab.workflow.structure.FunctionWithClosure" flags="ng" index="1teHI2">
         <child id="1629219545452496431" name="closure" index="1Xju2$" />
@@ -2891,7 +2892,7 @@
     <node concept="2lYRya" id="grC471x5OQ" role="2ulM79">
       <property role="TrG5h" value="a" />
       <node concept="1utKN4" id="grC471x5OY" role="2ybFLk" />
-      <node concept="2lntFH" id="grC471x5Py" role="2lns3D">
+      <node concept="2lntFH" id="grC471x5Py" role="20hoG3">
         <node concept="3cpWs3" id="grC471x5ZP" role="2lntCI">
           <node concept="3cmrfG" id="grC471x5ZS" role="3uHU7w">
             <property role="3cmrfH" value="1" />
@@ -2905,7 +2906,7 @@
     <node concept="2lYRya" id="grC471x5Pb" role="2ulM79">
       <property role="TrG5h" value="b" />
       <node concept="1utKN4" id="grC471x5Pl" role="2ybFLk" />
-      <node concept="2lntFH" id="grC471x65J" role="2lns3D">
+      <node concept="2lntFH" id="grC471x65J" role="20hoG3">
         <node concept="17qRlL" id="grC471x6g2" role="2lntCI">
           <node concept="2l3rVN" id="grC471x6lY" role="3uHU7w">
             <ref role="2l3rFK" node="grC471x5Os" resolve="num" />

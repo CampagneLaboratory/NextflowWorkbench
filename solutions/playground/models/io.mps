@@ -88,6 +88,9 @@
       <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="5954930966410664724" name="org.campagnelab.workflow.structure.HasExpression" flags="ng" index="20hr4X">
+        <child id="5954930966410666282" name="expression" index="20hoG3" />
+      </concept>
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
         <reference id="6509497193195685433" name="variable" index="0wEsc" />
       </concept>
@@ -105,7 +108,6 @@
       </concept>
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
         <property id="2590112629708729231" name="fromStandardOutput" index="2lYOoT" />
-        <child id="2590112629719313759" name="expression" index="2lns3D" />
       </concept>
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o">
         <property id="2590112629703814581" name="toStandardInput" index="2mj$03" />
@@ -179,7 +181,7 @@
     <node concept="2lYRya" id="2fLVrqRcOqM" role="2ulM79">
       <property role="TrG5h" value="a" />
       <node concept="1utKN4" id="2fLVrqRxQLT" role="2ybFLk" />
-      <node concept="2lntFH" id="2fLVrqRti6E" role="2lns3D">
+      <node concept="2lntFH" id="2fLVrqRti6E" role="20hoG3">
         <node concept="3cpWs3" id="7sz_HDkxz$j" role="2lntCI">
           <node concept="3cpWs3" id="2fLVrqRxQNh" role="3uHU7B">
             <node concept="2kHIhV" id="2fLVrqRxx_z" role="3uHU7B">

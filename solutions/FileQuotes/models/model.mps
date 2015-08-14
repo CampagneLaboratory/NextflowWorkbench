@@ -49,6 +49,9 @@
       <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="5954930966410664724" name="org.campagnelab.workflow.structure.HasExpression" flags="ng" index="20hr4X">
+        <child id="5954930966410666282" name="expression" index="20hoG3" />
+      </concept>
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
         <reference id="6509497193195685433" name="variable" index="0wEsc" />
       </concept>
@@ -58,9 +61,7 @@
       <concept id="2590112629719316315" name="org.campagnelab.workflow.structure.OutputExpression" flags="ng" index="2lntFH">
         <child id="2590112629719316376" name="expression" index="2lntCI" />
       </concept>
-      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
-        <child id="2590112629719313759" name="expression" index="2lns3D" />
-      </concept>
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -91,7 +92,7 @@
     <node concept="2lYRya" id="3OzmMkAsAcY" role="2ulM79">
       <property role="TrG5h" value="a" />
       <node concept="16pRw0" id="3OzmMkAsAd6" role="2ybFLk" />
-      <node concept="2lntFH" id="3OzmMkAsANn" role="2lns3D">
+      <node concept="2lntFH" id="3OzmMkAsANn" role="20hoG3">
         <node concept="2kHIhV" id="3OzmMkAsGa4" role="2lntCI">
           <ref role="2kHIhS" node="3OzmMkAsG4y" resolve="newFile" />
         </node>
