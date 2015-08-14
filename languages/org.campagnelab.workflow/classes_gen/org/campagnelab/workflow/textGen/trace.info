@@ -1146,15 +1146,17 @@
   </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6509497193205602217">
     <file name="ConditionalVariableRef_TextGen.java">
-      <node id="6509497193205603116" at="12,42,13,327" concept="0" />
-      <node id="6509497193205603116" at="12,42,13,327" concept="1" />
-      <node id="6509497193205602217" at="12,0,15,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="6509497193205602217" at="12,42,13,327" />
-      <scope id="6509497193205603116" at="12,42,13,327" />
-      <scope id="6509497193205602217" at="12,0,15,0">
+      <node id="6509497193205603116" at="12,42,13,22" concept="1" />
+      <node id="6509497193205603116" at="13,22,14,327" concept="1" />
+      <node id="6509497193205603116" at="14,327,15,21" concept="1" />
+      <node id="6509497193205603116" at="12,42,15,21" concept="0" />
+      <node id="6509497193205602217" at="12,0,17,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6509497193205602217" at="12,42,15,21" />
+      <scope id="6509497193205603116" at="12,42,15,21" />
+      <scope id="6509497193205602217" at="12,0,17,0">
         <var name="node" id="6509497193205602217" />
       </scope>
-      <unit id="6509497193205602217" at="11,0,16,0" name="org.campagnelab.workflow.textGen.ConditionalVariableRef_TextGen" />
+      <unit id="6509497193205602217" at="11,0,18,0" name="org.campagnelab.workflow.textGen.ConditionalVariableRef_TextGen" />
     </file>
   </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/6588488528874930369">
