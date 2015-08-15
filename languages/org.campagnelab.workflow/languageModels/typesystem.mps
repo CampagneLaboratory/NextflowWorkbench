@@ -2293,12 +2293,6 @@
     <node concept="3clFbS" id="3JbPZMXXu8o" role="18ibNy">
       <node concept="3Knyl0" id="2bVBkcPaUgm" role="3cqZAp">
         <node concept="3clFbS" id="2bVBkcPaUgq" role="3KnTvU" />
-        <node concept="2OqwBi" id="2bVBkcPaTwM" role="3Ko5Z1">
-          <node concept="1YBJjd" id="2bVBkcPaTvh" role="2Oq$k0">
-            <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
-          </node>
-          <node concept="3JvlWi" id="2bVBkcPaUam" role="2OqNvi" />
-        </node>
         <node concept="1Yb3XT" id="2bVBkcPaUaB" role="3KnVwV">
           <property role="TrG5h" value="listType" />
           <node concept="2DMOqp" id="2bVBkcPaUaD" role="1YbcFS">
@@ -2317,6 +2311,14 @@
             <node concept="Xl_RD" id="3JbPZMXXudN" role="2MkJ7o">
               <property role="Xl_RC" value="This function can only be used on a list channel" />
             </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="2bVBkcPaTwM" role="3Ko5Z1">
+          <node concept="1YBJjd" id="2bVBkcPaTvh" role="2Oq$k0">
+            <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
+          </node>
+          <node concept="2qgKlT" id="1z1zDa9ZgPA" role="2OqNvi">
+            <ref role="37wK5l" to="mqvz:7mWvTummKDC" resolve="getPreviousNode" />
           </node>
         </node>
       </node>

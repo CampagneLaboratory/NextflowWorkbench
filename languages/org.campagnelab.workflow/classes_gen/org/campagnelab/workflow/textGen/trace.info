@@ -95,6 +95,66 @@
       <unit id="1662295004658654831" at="8,0,13,0" name="org.campagnelab.workflow.textGen.Map_TextGen" />
     </file>
   </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/1783863687449194723">
+    <file name="Merge_TextGen.java">
+      <node id="1783863687449198852" at="18,42,19,83" concept="1" />
+      <node id="1783863687449198852" at="19,83,20,21" concept="1" />
+      <node id="1783863687449198861" at="22,39,23,199" concept="6" />
+      <node id="1783863687449198861" at="26,37,27,189" concept="6" />
+      <node id="1783863687449198871" at="30,38,31,83" concept="6" />
+      <node id="1783863687449198852" at="33,14,34,21" concept="1" />
+      <node id="1783863687449420891" at="35,184,36,59" concept="0" />
+      <node id="1783863687449420891" at="35,184,36,59" concept="1" />
+      <node id="1783863687449426403" at="37,12,38,146" concept="1" />
+      <node id="1783863687449426336" at="37,10,39,5" concept="0" />
+      <node id="1783863687449198861" at="22,0,25,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1783863687449198861" at="26,0,29,0" concept="4" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1783863687449198869" at="30,0,33,0" concept="4" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1783863687449418751" at="34,21,39,5" concept="3" />
+      <node id="1783863687449198852" at="20,21,33,14" concept="1" />
+      <node id="1783863687449198852" at="18,42,34,21" concept="0" />
+      <node id="1783863687449194723" at="18,0,41,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="1783863687449198861" at="22,39,23,199" />
+      <scope id="1783863687449198861" at="26,37,27,189" />
+      <scope id="1783863687449198870" at="30,38,31,83" />
+      <scope id="1783863687449418753" at="35,184,36,59" />
+      <scope id="1783863687449420891" at="35,184,36,59" />
+      <scope id="1783863687449426337" at="37,12,38,146" />
+      <scope id="1783863687449198861" at="22,0,25,0">
+        <var name="it" id="1783863687449198861" />
+      </scope>
+      <scope id="1783863687449198861" at="26,0,29,0">
+        <var name="it" id="1783863687449198861" />
+      </scope>
+      <scope id="1783863687449198869" at="30,0,33,0">
+        <var name="it" id="1783863687449198869" />
+      </scope>
+      <scope id="1783863687449198852" at="18,42,34,21" />
+      <scope id="1783863687449194723" at="18,42,39,5" />
+      <scope id="1783863687449194723" at="18,0,41,0">
+        <var name="node" id="1783863687449194723" />
+      </scope>
+      <unit id="1783863687449198861" at="21,248,25,5" name="org.campagnelab.workflow.textGen.Merge_TextGen$1" />
+      <unit id="1783863687449198861" at="25,18,29,5" name="org.campagnelab.workflow.textGen.Merge_TextGen$2" />
+      <unit id="1783863687449198869" at="29,18,33,5" name="org.campagnelab.workflow.textGen.Merge_TextGen$3" />
+      <unit id="1783863687449194723" at="17,0,42,0" name="org.campagnelab.workflow.textGen.Merge_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/1783863687450207537">
+    <file name="ToTuple_TextGen.java">
+      <node id="1783863687450207662" at="10,42,11,38" concept="1" />
+      <node id="1783863687450207662" at="11,38,12,103" concept="1" />
+      <node id="1783863687450207662" at="12,103,13,21" concept="1" />
+      <node id="1783863687450207662" at="10,42,13,21" concept="0" />
+      <node id="1783863687450207537" at="10,0,15,0" concept="4" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="1783863687450207537" at="10,42,13,21" />
+      <scope id="1783863687450207662" at="10,42,13,21" />
+      <scope id="1783863687450207537" at="10,0,15,0">
+        <var name="node" id="1783863687450207537" />
+      </scope>
+      <unit id="1783863687450207537" at="9,0,16,0" name="org.campagnelab.workflow.textGen.ToTuple_TextGen" />
+    </file>
+  </root>
   <root nodeRef="r:bb4b0e2d-ae9c-4abc-ab1e-fcb06cf3d71b(org.campagnelab.workflow.textGen)/2076665711407130938">
     <file name="Collate_TextGen.java">
       <node id="2076665711407186709" at="14,42,15,83" concept="1" />

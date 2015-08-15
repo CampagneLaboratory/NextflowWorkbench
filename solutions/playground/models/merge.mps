@@ -35,6 +35,14 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
     </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -65,7 +73,6 @@
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
       </concept>
-      <concept id="7457140171610954017" name="org.campagnelab.workflow.structure.Script" flags="ng" index="2ulSLo" />
       <concept id="7391172440898975896" name="org.campagnelab.workflow.structure.TupleElement" flags="ng" index="2zSw2O" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
@@ -75,6 +82,7 @@
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
+        <child id="6344724376800375955" name="description" index="GZ$AB" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
       </concept>
       <concept id="3653684473245040478" name="org.campagnelab.workflow.structure.NewStringLiteral" flags="ng" index="2J_g7P">
@@ -105,6 +113,9 @@
       </concept>
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
+      </concept>
+      <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
+        <child id="8074343669091434993" name="text" index="3Y$PkS" />
       </concept>
     </language>
   </registry>
@@ -200,6 +211,11 @@
         </node>
       </node>
     </node>
+    <node concept="19SGf9" id="1z1zDaapeJZ" role="GZ$AB">
+      <node concept="19SUe$" id="1z1zDaapeK0" role="19SJt6">
+        <property role="19SUeA" value="Shows how merge() and toTuple() work together. &#10;Note that the second merge is not deterministic: both results below are possible, depending on &#10;execution timing:&#10;1. [a2, b2, 1]&#10;   [a1, b2, 2]&#10;2. [a2, b2, 2]&#10;   [a1, b2, 1]&#10;" />
+      </node>
+    </node>
   </node>
   <node concept="2ulcR8" id="1z1zDa9YX4t">
     <property role="TrG5h" value="AcceptsMerge1" />
@@ -227,7 +243,13 @@
         </node>
       </node>
     </node>
-    <node concept="2ulSLo" id="1z1zDa9YX4u" role="2ulM7a" />
+    <node concept="3Y$Zt1" id="1z1zDaa7A_Q" role="2ulM7a">
+      <node concept="19SGf9" id="1z1zDaa7A_S" role="3Y$PkS">
+        <node concept="19SUe$" id="1z1zDaa7A_T" role="19SJt6">
+          <property role="19SUeA" value="echo " />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2ulcR8" id="1z1zDa9Z5kF">
     <property role="TrG5h" value="AcceptsMerge2" />
@@ -263,7 +285,13 @@
         </node>
       </node>
     </node>
-    <node concept="2ulSLo" id="1z1zDa9Z5kS" role="2ulM7a" />
+    <node concept="3Y$Zt1" id="1z1zDaa7ACs" role="2ulM7a">
+      <node concept="19SGf9" id="1z1zDaa7ACu" role="3Y$PkS">
+        <node concept="19SUe$" id="1z1zDaa7ACv" role="19SJt6">
+          <property role="19SUeA" value="echo " />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

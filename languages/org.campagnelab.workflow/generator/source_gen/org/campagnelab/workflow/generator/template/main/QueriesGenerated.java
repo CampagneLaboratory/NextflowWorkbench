@@ -163,11 +163,15 @@ public class QueriesGenerated {
       }
     }).translate(new ITranslator2<SNode, SNode>() {
       public Iterable<SNode> translate(SNode it) {
-        return ListSequence.fromList(SNodeOperations.getNodeDescendants(it, MetaAdapterFactory.getInterfaceConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x52a42a29d2e19b14L, "org.campagnelab.workflow.structure.HasExpression"), false, new SAbstractConcept[]{})).select(new ISelector<SNode, SNode>() {
+        return ListSequence.fromList(SNodeOperations.getNodeDescendants(it, MetaAdapterFactory.getInterfaceConcept(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x52a42a29d2e19b14L, "org.campagnelab.workflow.structure.HasExpression"), true, new SAbstractConcept[]{})).select(new ISelector<SNode, SNode>() {
           public SNode select(SNode it) {
-            return SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x52a42a29d2e19b14L, 0x52a42a29d2e1a12aL, "expression"));
+            return check_x583g4_a0a0a0a0a0a0a0x(it);
           }
         });
+      }
+    }).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return it != null;
       }
     });
   }
@@ -224,6 +228,12 @@ public class QueriesGenerated {
     }).first();
   }
   protected static Logger LOG = LogManager.getLogger(QueriesGenerated.class);
+  private static SNode check_x583g4_a0a0a0a0a0a0a0x(SNode checkedDotOperand) {
+    if (null != checkedDotOperand) {
+      return SLinkOperations.getTarget(checkedDotOperand, MetaAdapterFactory.getContainmentLink(0xc6c823fba9da46e7L, 0x9850129b0f7a7aa5L, 0x52a42a29d2e19b14L, 0x52a42a29d2e1a12aL, "expression"));
+    }
+    return null;
+  }
   private static boolean neq_x583g4_a0a0a0a0a0a0a0a0a0c0v(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
   }

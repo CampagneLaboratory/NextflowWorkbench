@@ -1693,6 +1693,11 @@
     <property role="34LRSv" value="merge" />
     <property role="R4oN_" value="Merge items emitted by two (or more) channels into a new one" />
     <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+    <node concept="1TJgyj" id="1z1zDaa8aXC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="closure" />
+      <ref role="20lvS9" node="5DC$1WkmvHE" resolve="ClosureLiteralWorkFlow" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOtn">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
