@@ -235,6 +235,9 @@
     <node concept="PrWs8" id="5CFNYIF2xH7" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="PrWs8" id="1z1zDaaJrpo" role="PzmwI">
+      <ref role="PrY4T" node="1z1zDaaJoJq" resolve="HasConnectedChannel" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCERFHl">
     <property role="3GE5qa" value="processIO" />
@@ -1156,6 +1159,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7gAPJCESTMU" resolve="OutputChannel" />
     </node>
+    <node concept="PrWs8" id="1z1zDaaJr7K" role="PzmwI">
+      <ref role="PrY4T" node="1z1zDaaJoJq" resolve="HasConnectedChannel" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5HJ0QzxIyJ3">
     <property role="3GE5qa" value="reports" />
@@ -1441,8 +1447,8 @@
     <property role="3GE5qa" value="channelFunctions" />
     <property role="TrG5h" value="Reduce" />
     <property role="34LRSv" value="reduce" />
-    <property role="R4oN_" value="Apply a function to every elements" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <property role="R4oN_" value="Apply a function to every input value" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILhslAr">
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
@@ -1539,7 +1545,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="input" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2fLVrqPJSZI" resolve="ProcessInput" />
+      <ref role="20lvS9" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     </node>
   </node>
   <node concept="1TIwiD" id="6TmjYLGcNQe">
@@ -2135,6 +2141,9 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="2fLVrqQF3tr" resolve="OutputExpression" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="1z1zDaaJoJq">
+    <property role="TrG5h" value="HasConnectedChannel" />
   </node>
 </model>
 

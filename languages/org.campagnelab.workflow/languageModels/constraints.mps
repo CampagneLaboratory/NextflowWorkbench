@@ -1526,7 +1526,7 @@
     <node concept="1N5Pfh" id="2fLVrqR922$" role="1Mr941">
       <ref role="1N5Vy1" to="iowz:2fLVrqQZ5t6" />
       <node concept="1dDu$B" id="2fLVrqR922B" role="1N6uqs">
-        <ref role="1dDu$A" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
+        <ref role="1dDu$A" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
       </node>
     </node>
   </node>
@@ -1971,20 +1971,6 @@
   <node concept="1M2fIO" id="79W9gdU9UVO">
     <property role="3GE5qa" value="channelFunctions" />
     <ref role="1M2myG" to="iowz:XaRILjgRyP" resolve="Reduce" />
-    <node concept="nKS2y" id="79W9gdU9UW7" role="1MLUbF">
-      <node concept="3clFbS" id="79W9gdU9UW8" role="2VODD2">
-        <node concept="3SKdUt" id="79W9gdU9V1e" role="3cqZAp">
-          <node concept="3SKdUq" id="79W9gdU9V1f" role="3SKWNk">
-            <property role="3SKdUp" value="Functions with closures are disabled in 1.0." />
-          </node>
-        </node>
-        <node concept="3clFbF" id="79W9gdU9V1g" role="3cqZAp">
-          <node concept="3clFbT" id="79W9gdU9V1h" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="79W9gdU9U3E">
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
@@ -2176,6 +2162,30 @@
         <node concept="3clFbF" id="1z1zDaapqvl" role="3cqZAp">
           <node concept="3clFbT" id="1z1zDaapqvk" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1xqcHZawFvX">
+    <property role="3GE5qa" value="processIO" />
+    <ref role="1M2myG" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+    <node concept="EnEH3" id="1xqcHZawFvY" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="1xqcHZawFw0" role="QCWH9">
+        <node concept="3clFbS" id="1xqcHZawFw1" role="2VODD2">
+          <node concept="3clFbF" id="1xqcHZawFDP" role="3cqZAp">
+            <node concept="3fqX7Q" id="1xqcHZawNYS" role="3clFbG">
+              <node concept="2OqwBi" id="1xqcHZawNYU" role="3fr31v">
+                <node concept="1Wqviy" id="1xqcHZawNYV" role="2Oq$k0" />
+                <node concept="liA8E" id="1xqcHZawNYW" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="Xl_RD" id="1xqcHZawNYX" role="37wK5m">
+                    <property role="Xl_RC" value="=" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

@@ -114,6 +114,7 @@
       <concept id="6588488528864881603" name="org.campagnelab.workflow.structure.ReportParameter" flags="ng" index="2UPiyF" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
+      <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
         <child id="7391172440887133304" name="type" index="2ybFLk" />
@@ -158,6 +159,10 @@
               <ref role="2l3rFK" node="1mGDKBDyDFF" resolve="aValue" />
             </node>
           </node>
+        </node>
+        <node concept="2zSw2O" id="1xqcHZb4_7j" role="2zSOd7">
+          <property role="TrG5h" value="a" />
+          <node concept="1utKN4" id="1xqcHZb4_82" role="2ybFLk" />
         </node>
       </node>
     </node>
