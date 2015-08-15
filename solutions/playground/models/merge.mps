@@ -211,6 +211,20 @@
         </node>
       </node>
     </node>
+    <node concept="1CVceo" id="1z1zDaapf2V" role="2$L6iY">
+      <property role="TrG5h" value="D" />
+      <node concept="2J_sx7" id="1z1zDaapf2W" role="2$L62I">
+        <node concept="2J_swZ" id="1z1zDaapfmQ" role="2J_sx6">
+          <property role="2J_sxC" value="1" />
+        </node>
+        <node concept="2J_swZ" id="1z1zDaapfqE" role="2J_sx6">
+          <property role="2J_sxC" value="2" />
+        </node>
+        <node concept="2J_swZ" id="1z1zDaapfwX" role="2J_sx6">
+          <property role="2J_sxC" value="3" />
+        </node>
+      </node>
+    </node>
     <node concept="19SGf9" id="1z1zDaapeJZ" role="GZ$AB">
       <node concept="19SUe$" id="1z1zDaapeK0" role="19SJt6">
         <property role="19SUeA" value="Shows how merge() and toTuple() work together. &#10;Note that the second merge is not deterministic: both results below are possible, depending on &#10;execution timing:&#10;1. [a2, b2, 1]&#10;   [a1, b2, 2]&#10;2. [a2, b2, 2]&#10;   [a1, b2, 1]&#10;" />

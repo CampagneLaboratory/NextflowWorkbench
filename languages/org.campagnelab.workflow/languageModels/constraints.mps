@@ -262,6 +262,7 @@
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
     </language>
   </registry>
   <node concept="1M2fIO" id="7gAPJCETViv">
@@ -2109,6 +2110,72 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1z1zDaaphSF">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="1M2myG" to="iowz:6TmjYLGeGXs" resolve="Merge" />
+    <node concept="osYL8" id="1z1zDaapiiY" role="1MLXOK">
+      <node concept="3clFbS" id="1z1zDaapiiZ" role="2VODD2">
+        <node concept="3SKdUt" id="1z1zDaaprKY" role="3cqZAp">
+          <node concept="3SKdUq" id="1z1zDaaprQZ" role="3SKWNk">
+            <property role="3SKdUp" value="prevent adding more than one other channel to merge. Not supported by typesystem or textgen at this time" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1z1zDaapjvz" role="3cqZAp">
+          <node concept="3clFbS" id="1z1zDaapjv_" role="3clFbx">
+            <node concept="3cpWs6" id="1z1zDaapqGL" role="3cqZAp">
+              <node concept="3clFbT" id="1z1zDaapqP9" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="1z1zDaarDyx" role="3clFbw">
+            <node concept="3y3z36" id="1z1zDaarDOZ" role="3uHU7w">
+              <node concept="2OqwBi" id="1z1zDaarFmM" role="3uHU7w">
+                <node concept="2OqwBi" id="1z1zDaarE6z" role="2Oq$k0">
+                  <node concept="EsrRn" id="1z1zDaarDYt" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="1z1zDaarEqK" role="2OqNvi">
+                    <ref role="3TtcxE" to="iowz:6TmjYLGgovv" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="1z1zDaarIai" role="2OqNvi" />
+              </node>
+              <node concept="2H4GUG" id="1z1zDaarDH5" role="3uHU7B" />
+            </node>
+            <node concept="1Wc70l" id="1z1zDaapjYb" role="3uHU7B">
+              <node concept="3clFbC" id="1z1zDaapjFK" role="3uHU7B">
+                <node concept="otxO1" id="1z1zDaapj$D" role="3uHU7B" />
+                <node concept="2OqwBi" id="1z1zDaapr6p" role="3uHU7w">
+                  <node concept="35c_gC" id="1z1zDaapjKT" role="2Oq$k0">
+                    <ref role="35c_gD" to="iowz:6TmjYLGeFpH" resolve="OutChannelContainerRef" />
+                  </node>
+                  <node concept="FGMqu" id="1z1zDaaprxP" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3eOSWO" id="1z1zDaapq9q" role="3uHU7w">
+                <node concept="2OqwBi" id="1z1zDaapliL" role="3uHU7B">
+                  <node concept="2OqwBi" id="1z1zDaapk87" role="2Oq$k0">
+                    <node concept="EsrRn" id="1z1zDaapk29" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="1z1zDaapkp8" role="2OqNvi">
+                      <ref role="3TtcxE" to="iowz:6TmjYLGgovv" />
+                    </node>
+                  </node>
+                  <node concept="34oBXx" id="1z1zDaapo55" role="2OqNvi" />
+                </node>
+                <node concept="3cmrfG" id="1z1zDaapq9w" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1z1zDaapqvl" role="3cqZAp">
+          <node concept="3clFbT" id="1z1zDaapqvk" role="3clFbG">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>

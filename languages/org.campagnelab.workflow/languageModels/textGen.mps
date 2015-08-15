@@ -133,6 +133,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -326,6 +327,7 @@
         <child id="4611582986551314344" name="requestedType" index="UnYnz" />
       </concept>
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
@@ -4691,6 +4693,29 @@
     <ref role="WuzLi" to="iowz:6TmjYLGeGXs" resolve="Merge" />
     <node concept="11bSqf" id="1z1zDaa8b3$" role="11c4hB">
       <node concept="3clFbS" id="1z1zDaa8b3_" role="2VODD2">
+        <node concept="3clFbJ" id="1z1zDaarPSW" role="3cqZAp">
+          <node concept="3clFbS" id="1z1zDaarPSY" role="3clFbx">
+            <node concept="1ZvZ2y" id="1z1zDaarVKj" role="3cqZAp">
+              <node concept="Xl_RD" id="1z1zDaarVKu" role="v0bCk">
+                <property role="Xl_RC" value="Merge currently does not supporting merging more than two channels." />
+              </node>
+            </node>
+          </node>
+          <node concept="3eOSWO" id="1z1zDaarVHt" role="3clFbw">
+            <node concept="3cmrfG" id="1z1zDaarVHz" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="1z1zDaarR2m" role="3uHU7B">
+              <node concept="2OqwBi" id="1z1zDaarQ1j" role="2Oq$k0">
+                <node concept="117lpO" id="1z1zDaarPYY" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="1z1zDaarQcm" role="2OqNvi">
+                  <ref role="3TtcxE" to="iowz:6TmjYLGgovv" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="1z1zDaarTIG" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
         <node concept="lc7rE" id="1z1zDaa8c44" role="3cqZAp">
           <node concept="l9hG8" id="1z1zDaa8c45" role="lcghm">
             <node concept="2OqwBi" id="1z1zDaa8c46" role="lb14g">
