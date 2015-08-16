@@ -43,9 +43,17 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -147,6 +155,7 @@
         <child id="3857878650537656757" name="functions" index="1ylr64" />
       </concept>
       <concept id="248997709146700114" name="org.campagnelab.workflow.structure.Header" flags="ng" index="3wTUta" />
+      <concept id="3857878650533843630" name="org.campagnelab.workflow.structure.ToList" flags="ng" index="1yaYav" />
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
       </concept>
@@ -319,7 +328,7 @@
                 <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="1PVBxDepKLs" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.Object):void" resolve="println" />
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="2UPiyF" id="79AYUVoBQKa" role="37wK5m" />
               </node>
             </node>
@@ -331,6 +340,31 @@
           <property role="ks$$U" value="\t" />
         </node>
         <node concept="3wTUta" id="1PVBxDepK5c" role="3hXsJg" />
+      </node>
+      <node concept="1s2qpp" id="3ynbr3KJ1gR" role="1fSQVV">
+        <node concept="1ecmHP" id="3ynbr3KJ1i$" role="1Xju2$">
+          <node concept="1bVj0M" id="3ynbr3KJ1i_" role="303AOo">
+            <node concept="3clFbS" id="3ynbr3KJ1iA" role="1bW5cS">
+              <node concept="3cpWs6" id="3ynbr3KJkig" role="3cqZAp">
+                <node concept="3EllGN" id="3ynbr3KJ622" role="3cqZAk">
+                  <node concept="Xl_RD" id="3ynbr3KJ64l" role="3ElVtu">
+                    <property role="Xl_RC" value="column-A" />
+                  </node>
+                  <node concept="37vLTw" id="3ynbr3KJ5Po" role="3ElQJh">
+                    <ref role="3cqZAo" node="3ynbr3KJ1iU" resolve="it" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTG" id="3ynbr3KJ1iU" role="1bW2Oz">
+              <property role="TrG5h" value="it" />
+              <node concept="3rvAFt" id="3ynbr3KJ1jb" role="1tU5fm">
+                <node concept="17QB3L" id="3ynbr3KJ1jc" role="3rvQeY" />
+                <node concept="17QB3L" id="3ynbr3KJ1jd" role="3rvSg0" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2$rEH5" id="1PVBxDepJTr" role="2$rEHq">
@@ -352,6 +386,91 @@
     </node>
     <node concept="19SGf9" id="1PVBxDepJTO" role="GZ$AB">
       <node concept="19SUe$" id="1PVBxDepJTP" role="19SJt6">
+        <property role="19SUeA" value="Example using splitCSV" />
+      </node>
+    </node>
+  </node>
+  <node concept="2$rMIF" id="34xjE1yNOHL">
+    <property role="TrG5h" value="SplitWorkflow3" />
+    <node concept="2UNLhE" id="34xjE1yNOHM" role="2UW718">
+      <ref role="2UNLhW" node="34xjE1yNOIf" resolve="out" />
+      <node concept="2UPiyC" id="34xjE1yNOHN" role="2UNLhY">
+        <node concept="3clFbS" id="34xjE1yNOHO" role="2VODD2">
+          <node concept="3clFbF" id="5oiwyauV3$d" role="3cqZAp">
+            <node concept="2OqwBi" id="5oiwyauV3$a" role="3clFbG">
+              <node concept="10M0yZ" id="5oiwyauV3$b" role="2Oq$k0">
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="5oiwyauV3$c" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.Object):void" resolve="println" />
+                <node concept="2UPiyF" id="5oiwyauV3C4" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1teHI3" id="34xjE1yNOHY" role="1fSQVV">
+        <node concept="ks$$V" id="34xjE1yNOHZ" role="3hXsJg">
+          <property role="ks$$U" value="\t" />
+        </node>
+        <node concept="3wTUta" id="34xjE1yNOI0" role="3hXsJg" />
+      </node>
+      <node concept="1s2qpp" id="5oiwyauU0Bx" role="1fSQVV">
+        <node concept="1ecmHP" id="5oiwyauU0Dy" role="1Xju2$">
+          <node concept="1bVj0M" id="34xjE1yNW1w" role="303AOo">
+            <node concept="3clFbS" id="34xjE1yNW1x" role="1bW5cS">
+              <node concept="3cpWs6" id="5oiwyauUfLt" role="3cqZAp">
+                <node concept="3cpWs3" id="5oiwyauVh1P" role="3cqZAk">
+                  <node concept="37vLTw" id="5oiwyauVh4K" role="3uHU7w">
+                    <ref role="3cqZAo" node="5oiwyauUOMG" resolve="previousResult" />
+                  </node>
+                  <node concept="3EllGN" id="34xjE1yNXQG" role="3uHU7B">
+                    <node concept="Xl_RD" id="34xjE1yNXS3" role="3ElVtu">
+                      <property role="Xl_RC" value="column-A" />
+                    </node>
+                    <node concept="37vLTw" id="34xjE1yNW79" role="3ElQJh">
+                      <ref role="3cqZAo" node="34xjE1yNW1P" resolve="it" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTG" id="34xjE1yNW1P" role="1bW2Oz">
+              <property role="TrG5h" value="it" />
+              <node concept="3rvAFt" id="34xjE1yNW26" role="1tU5fm">
+                <node concept="17QB3L" id="34xjE1yNW27" role="3rvQeY" />
+                <node concept="17QB3L" id="34xjE1yNW28" role="3rvSg0" />
+              </node>
+            </node>
+            <node concept="37vLTG" id="5oiwyauUOMG" role="1bW2Oz">
+              <property role="TrG5h" value="previousResult" />
+              <node concept="17QB3L" id="5oiwyauUTcZ" role="1tU5fm" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1yaYav" id="5oiwyauVbJt" role="1fSQVV" />
+    </node>
+    <node concept="2$rEH5" id="34xjE1yNOId" role="2$rEHq">
+      <ref role="2$rEH4" node="1z1zDaatVPL" resolve="SplitLines" />
+      <node concept="1uYdA0" id="34xjE1yNOIe" role="1uLvPH">
+        <ref role="1uK_4X" node="34xjE1yNOIg" resolve="input" />
+      </node>
+      <node concept="1uLkD0" id="34xjE1yNOIf" role="1uLvPA">
+        <property role="TrG5h" value="out" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="34xjE1yNOIg" role="2$L6iY">
+      <property role="TrG5h" value="input" />
+      <node concept="2J_sx7" id="34xjE1yNOIh" role="2$L62I">
+        <node concept="2J_rk5" id="34xjE1yNOIi" role="2J_sx6">
+          <property role="2J_rkp" value="${org.campagnelab.workflow.home}/data/csv/example-1.tsv" />
+        </node>
+      </node>
+    </node>
+    <node concept="19SGf9" id="34xjE1yNOIj" role="GZ$AB">
+      <node concept="19SUe$" id="34xjE1yNOIk" role="19SJt6">
         <property role="19SUeA" value="Example using splitCSV" />
       </node>
     </node>
