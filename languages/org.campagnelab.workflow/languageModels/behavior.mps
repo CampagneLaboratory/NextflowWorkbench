@@ -5032,14 +5032,14 @@
                     <node concept="13iPFW" id="2rkU84P0$up" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="2rkU84P0$uq" role="2OqNvi">
                       <node concept="1xMEDy" id="2rkU84P0$ur" role="1xVPHs">
-                        <node concept="chp4Y" id="2rkU84P0$us" role="ri$Ld">
-                          <ref role="cht4Q" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
+                        <node concept="chp4Y" id="34xjE1yRcJZ" role="ri$Ld">
+                          <ref role="cht4Q" to="iowz:1z1zDaaJoJq" resolve="HasConnectedChannel" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="3Tsc0h" id="2rkU84P0$ut" role="2OqNvi">
-                    <ref role="3TtcxE" to="iowz:3m9W35nR46P" />
+                  <node concept="2qgKlT" id="34xjE1yRdD6" role="2OqNvi">
+                    <ref role="37wK5l" node="1z1zDaaQN1w" resolve="functions" />
                   </node>
                 </node>
                 <node concept="34jXtK" id="2rkU84P0$uu" role="2OqNvi">
@@ -5078,24 +5078,35 @@
         <ref role="ehGHo" to="iowz:3m9W35nCwTK" resolve="ChannelFunction" />
       </node>
       <node concept="3clFbS" id="2rkU84P0$H1" role="3clF47">
+        <node concept="3cpWs8" id="34xjE1yRf3i" role="3cqZAp">
+          <node concept="3cpWsn" id="34xjE1yRf3j" role="3cpWs9">
+            <property role="TrG5h" value="functions" />
+            <node concept="2I9FWS" id="34xjE1yRf3e" role="1tU5fm">
+              <ref role="2I9WkF" to="iowz:3m9W35nCwTK" resolve="ChannelFunction" />
+            </node>
+            <node concept="2OqwBi" id="34xjE1yRf3k" role="33vP2m">
+              <node concept="2OqwBi" id="34xjE1yRf3l" role="2Oq$k0">
+                <node concept="13iPFW" id="34xjE1yRf3m" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="34xjE1yRf3n" role="2OqNvi">
+                  <node concept="1xMEDy" id="34xjE1yRf3o" role="1xVPHs">
+                    <node concept="chp4Y" id="34xjE1yRf3p" role="ri$Ld">
+                      <ref role="cht4Q" to="iowz:1z1zDaaJoJq" resolve="HasConnectedChannel" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="34xjE1yRf3q" role="2OqNvi">
+                <ref role="37wK5l" node="1z1zDaaQN1w" resolve="functions" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="2rkU84P0$H2" role="3cqZAp">
           <node concept="3clFbS" id="2rkU84P0$H3" role="3clFbx">
             <node concept="3cpWs6" id="2rkU84P0$H4" role="3cqZAp">
               <node concept="2OqwBi" id="2rkU84P0$H5" role="3cqZAk">
-                <node concept="2OqwBi" id="2rkU84P0$H6" role="2Oq$k0">
-                  <node concept="2OqwBi" id="2rkU84P0$H7" role="2Oq$k0">
-                    <node concept="13iPFW" id="2rkU84P0$H8" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="2rkU84P0$H9" role="2OqNvi">
-                      <node concept="1xMEDy" id="2rkU84P0$Ha" role="1xVPHs">
-                        <node concept="chp4Y" id="2rkU84P0$Hb" role="ri$Ld">
-                          <ref role="cht4Q" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="2rkU84P0$Hc" role="2OqNvi">
-                    <ref role="3TtcxE" to="iowz:3m9W35nR46P" />
-                  </node>
+                <node concept="37vLTw" id="34xjE1yRf3s" role="2Oq$k0">
+                  <ref role="3cqZAo" node="34xjE1yRf3j" resolve="functions" />
                 </node>
                 <node concept="34jXtK" id="2rkU84P0$Hd" role="2OqNvi">
                   <node concept="3cpWs3" id="2rkU84P0$He" role="25WWJ7">
@@ -5121,20 +5132,8 @@
                 <property role="3cmrfH" value="1" />
               </node>
               <node concept="2OqwBi" id="2rkU84P0$Hp" role="3uHU7B">
-                <node concept="2OqwBi" id="2rkU84P0$Hq" role="2Oq$k0">
-                  <node concept="2OqwBi" id="2rkU84P0$Hr" role="2Oq$k0">
-                    <node concept="13iPFW" id="2rkU84P0$Hs" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="2rkU84P0$Ht" role="2OqNvi">
-                      <node concept="1xMEDy" id="2rkU84P0$Hu" role="1xVPHs">
-                        <node concept="chp4Y" id="2rkU84P0$Hv" role="ri$Ld">
-                          <ref role="cht4Q" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="2rkU84P0$Hw" role="2OqNvi">
-                    <ref role="3TtcxE" to="iowz:3m9W35nR46P" />
-                  </node>
+                <node concept="37vLTw" id="34xjE1yRf3r" role="2Oq$k0">
+                  <ref role="3cqZAo" node="34xjE1yRf3j" resolve="functions" />
                 </node>
                 <node concept="34oBXx" id="2rkU84P0$Hx" role="2OqNvi" />
               </node>
