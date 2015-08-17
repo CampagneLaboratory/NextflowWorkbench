@@ -407,6 +407,9 @@
       <concept id="946964771156066588" name="jetbrains.mps.execution.settings.structure.EditorExpression" flags="nn" index="yHkDH">
         <reference id="946964771156066589" name="persistentPropertyDeclaration" index="yHkDG" />
       </concept>
+      <concept id="946964771156066563" name="jetbrains.mps.execution.settings.structure.ReportConfigurationErrorStatement" flags="nn" index="yHkDM">
+        <child id="946964771156066565" name="expression" index="yHkDO" />
+      </concept>
       <concept id="946964771156066566" name="jetbrains.mps.execution.settings.structure.CreateEditor_Function" flags="ig" index="yHkDR" />
       <concept id="946964771156066571" name="jetbrains.mps.execution.settings.structure.Dispose_Function" flags="ig" index="yHkDU" />
       <concept id="946964771156066574" name="jetbrains.mps.execution.settings.structure.PersistentPropertyReferenceOperation" flags="nn" index="yHkDZ">
@@ -1097,9 +1100,8 @@
       <node concept="3clFbS" id="274AKIgY7iP" role="2VODD2">
         <node concept="3clFbJ" id="1vrbdFdH7xY" role="3cqZAp">
           <node concept="3clFbS" id="1vrbdFdH7y0" role="3clFbx">
-            <node concept="34ab3g" id="1vrbdFdHazU" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="Xl_RD" id="1vrbdFdHazW" role="34bqiv">
+            <node concept="yHkDM" id="5FbWHdWeLej" role="3cqZAp">
+              <node concept="Xl_RD" id="1vrbdFdHazW" role="yHkDO">
                 <property role="Xl_RC" value="NEXTFLOW_HOME must be defined to a directory where the nextflow executable script exists." />
               </node>
             </node>
@@ -1146,9 +1148,8 @@
         </node>
         <node concept="3clFbJ" id="1vrbdFdH$ed" role="3cqZAp">
           <node concept="3clFbS" id="1vrbdFdH$ef" role="3clFbx">
-            <node concept="34ab3g" id="1vrbdFdHCld" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="Xl_RD" id="1vrbdFdHClf" role="34bqiv">
+            <node concept="yHkDM" id="5FbWHdWeLmv" role="3cqZAp">
+              <node concept="Xl_RD" id="1vrbdFdHClf" role="yHkDO">
                 <property role="Xl_RC" value="workingDirectory must be defined to a directory where nextflow will be stated." />
               </node>
             </node>
@@ -2040,14 +2041,7 @@
                       </node>
                     </node>
                     <node concept="9aQIb" id="1qn_o2sPduy" role="9aQIa">
-                      <node concept="3clFbS" id="1qn_o2sPduz" role="9aQI4">
-                        <node concept="34ab3g" id="1qn_o2sQUQC" role="3cqZAp">
-                          <property role="35gtTG" value="error" />
-                          <node concept="Xl_RD" id="1qn_o2sQUQE" role="34bqiv">
-                            <property role="Xl_RC" value="Node or node.model was null" />
-                          </node>
-                        </node>
-                      </node>
+                      <node concept="3clFbS" id="1qn_o2sPduz" role="9aQI4" />
                     </node>
                   </node>
                 </node>
