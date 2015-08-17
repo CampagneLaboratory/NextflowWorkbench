@@ -2,6 +2,7 @@
 <model ref="r:ac0618c4-3080-4c60-bf01-a2244d903554(merge)">
   <persistence version="9" />
   <languages>
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports>
@@ -21,8 +22,14 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -43,6 +50,12 @@
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -55,9 +68,11 @@
       <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="7950630069016296375" name="org.campagnelab.workflow.structure.ChannelFunctionWithChannelRef" flags="ng" index="25Nhr">
-        <property id="4010223791428439639" name="role" index="2UjEct" />
-        <child id="7950630069016299487" name="channelContainerRef" index="25WwN" />
+      <concept id="3121388506938957370" name="org.campagnelab.workflow.structure.TupleType" flags="ig" index="1h3xP">
+        <child id="7581087959662683399" name="type" index="1nAwDi" />
+      </concept>
+      <concept id="7950630069015397709" name="org.campagnelab.workflow.structure.FunctionWithClosureAndChannelRefs" flags="ng" index="2poEx">
+        <child id="7950630069015854240" name="outChannelContainerRef" index="2rfdc" />
       </concept>
       <concept id="7950630069015859036" name="org.campagnelab.workflow.structure.Merge" flags="ng" index="2r82K" />
       <concept id="7950630069015852653" name="org.campagnelab.workflow.structure.OutChannelContainerRef" flags="ng" index="2rfA1">
@@ -101,7 +116,13 @@
       <concept id="6588488528864881600" name="org.campagnelab.workflow.structure.ReportFunction" flags="ig" index="2UPiyC" />
       <concept id="6588488528864881603" name="org.campagnelab.workflow.structure.ReportParameter" flags="ng" index="2UPiyF" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
+      <concept id="6514615324151249770" name="org.campagnelab.workflow.structure.ClosureLiteralWorkFlow" flags="ng" index="1ecmHP">
+        <child id="7418584321830319674" name="closure" index="303AOo" />
+      </concept>
       <concept id="7581087959662304258" name="org.campagnelab.workflow.structure.ToTuple" flags="ng" index="1nBfdn" />
+      <concept id="1101938165422228846" name="org.campagnelab.workflow.structure.FunctionWithClosure" flags="ng" index="1teHI2">
+        <child id="1629219545452496431" name="closure" index="1Xju2$" />
+      </concept>
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
@@ -151,10 +172,22 @@
       </node>
       <node concept="1uYdA0" id="1z1zDa9YWuA" role="1uLvPH">
         <ref role="1uK_4X" node="1z1zDa9YRON" resolve="A" />
-        <node concept="2r82K" id="1z1zDa9YWve" role="1ylr64">
-          <property role="2UjEct" value="ref" />
-          <node concept="2rfA1" id="1z1zDa9YWwp" role="25WwN">
+        <node concept="2r82K" id="10nk9FD0uDp" role="1ylr64">
+          <node concept="2rfA1" id="10nk9FD0uKE" role="2rfdc">
             <ref role="2rfdL" node="1z1zDa9YWl6" resolve="B" />
+          </node>
+          <node concept="1ecmHP" id="10nk9FDMsDc" role="1Xju2$">
+            <node concept="1bVj0M" id="10nk9FDMsDd" role="303AOo">
+              <node concept="3clFbS" id="10nk9FDMsDe" role="1bW5cS" />
+              <node concept="37vLTG" id="10nk9FDMsDf" role="1bW2Oz">
+                <property role="TrG5h" value="it" />
+                <node concept="17QB3L" id="10nk9FDMsE3" role="1tU5fm" />
+              </node>
+              <node concept="37vLTG" id="10nk9FDMsEa" role="1bW2Oz">
+                <property role="TrG5h" value="B" />
+                <node concept="17QB3L" id="10nk9FDMsEy" role="1tU5fm" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -163,10 +196,25 @@
       <ref role="2$rEH4" node="1z1zDa9Z5kF" resolve="AcceptsMerge2" />
       <node concept="1uYdA0" id="1z1zDa9ZdWb" role="1uLvPH">
         <ref role="1uK_4X" node="1z1zDa9ZdZ2" resolve="merged1" />
-        <node concept="2r82K" id="1z1zDa9ZeAB" role="1ylr64">
-          <property role="2UjEct" value="ref" />
-          <node concept="2rfA1" id="1z1zDa9ZeDW" role="25WwN">
+        <node concept="2r82K" id="10nk9FDLqcX" role="1ylr64">
+          <node concept="2rfA1" id="10nk9FDLqlo" role="2rfdc">
             <ref role="2rfdL" node="1z1zDa9YXa2" resolve="C" />
+          </node>
+          <node concept="1ecmHP" id="10nk9FDLqsG" role="1Xju2$">
+            <node concept="1bVj0M" id="10nk9FDLqsH" role="303AOo">
+              <node concept="3clFbS" id="10nk9FDLqsI" role="1bW5cS" />
+              <node concept="37vLTG" id="10nk9FDLqsJ" role="1bW2Oz">
+                <property role="TrG5h" value="it" />
+                <node concept="1h3xP" id="10nk9FDLqu_" role="1tU5fm">
+                  <node concept="17QB3L" id="10nk9FDLquA" role="1nAwDi" />
+                  <node concept="17QB3L" id="10nk9FDLquB" role="1nAwDi" />
+                </node>
+              </node>
+              <node concept="37vLTG" id="10nk9FDLquU" role="1bW2Oz">
+                <property role="TrG5h" value="C" />
+                <node concept="10Oyi0" id="10nk9FDLqvj" role="1tU5fm" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1nBfdn" id="1z1zDaa0SZe" role="1ylr64" />

@@ -1253,17 +1253,6 @@
               </node>
               <node concept="3clFbF" id="1tMFr$HPa4h" role="3cqZAp">
                 <node concept="2OqwBi" id="1tMFr$HPa4i" role="3clFbG">
-                  <node concept="2OqwBi" id="1tMFr$HPa4j" role="2Oq$k0">
-                    <node concept="1r4N1M" id="1tMFr$HPa4k" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="1tMFr$HPa4l" role="2OqNvi">
-                      <node concept="1xMEDy" id="1tMFr$HPa4m" role="1xVPHs">
-                        <node concept="chp4Y" id="1tMFr$HPa4n" role="ri$Ld">
-                          <ref role="cht4Q" to="iowz:1tMFr$HNUs9" resolve="HasClosure" />
-                        </node>
-                      </node>
-                      <node concept="1xIGOp" id="1tMFr$HPa4o" role="1xVPHs" />
-                    </node>
-                  </node>
                   <node concept="2qgKlT" id="1tMFr$HPa4p" role="2OqNvi">
                     <ref role="37wK5l" to="mqvz:1tMFr$HNWQy" resolve="initializeClosureParameters" />
                     <node concept="2OqwBi" id="1tMFr$HPg9J" role="37wK5m">
@@ -1279,6 +1268,9 @@
                         <ref role="3Tt5mk" to="iowz:6rO6MaAYBoU" />
                       </node>
                     </node>
+                  </node>
+                  <node concept="37vLTw" id="10nk9FCY7Tt" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1tMFr$HPaJ6" resolve="functionWithClosureAndRefs" />
                   </node>
                 </node>
               </node>

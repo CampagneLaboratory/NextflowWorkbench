@@ -99,10 +99,6 @@
       <concept id="5954930966410664724" name="org.campagnelab.workflow.structure.HasExpression" flags="ng" index="20hr4X">
         <child id="5954930966410666282" name="expression" index="20hoG3" />
       </concept>
-      <concept id="7950630069016296375" name="org.campagnelab.workflow.structure.ChannelFunctionWithChannelRef" flags="ng" index="25Nhr">
-        <property id="4010223791428439639" name="role" index="2UjEct" />
-        <child id="7950630069016299487" name="channelContainerRef" index="25WwN" />
-      </concept>
       <concept id="7950630069015365464" name="org.campagnelab.workflow.structure.Sum" flags="ng" index="2pgyO" />
       <concept id="7950630069015365463" name="org.campagnelab.workflow.structure.Max" flags="ng" index="2pgyV" />
       <concept id="7950630069015365182" name="org.campagnelab.workflow.structure.Min" flags="ng" index="2pgBi" />
@@ -1197,23 +1193,23 @@
       <node concept="1uYdA0" id="5l6FUy8XFUO" role="1uLvPH">
         <ref role="1uK_4X" node="5l6FUy8XEXI" resolve="nums2" />
         <node concept="1t74tQ" id="5l6FUy8XFYO" role="1ylr64">
-          <node concept="1ecmHP" id="5l6FUy8XG1q" role="1Xju2$">
-            <node concept="1bVj0M" id="5l6FUy8XG1r" role="303AOo">
-              <node concept="3clFbS" id="5l6FUy8XG1s" role="1bW5cS">
-                <node concept="3clFbF" id="5l6FUy8XGOa" role="3cqZAp">
-                  <node concept="2dk9JS" id="5l6FUy8XHz9" role="3clFbG">
-                    <node concept="3cmrfG" id="5l6FUy8XH$V" role="3uHU7w">
+          <node concept="1ecmHP" id="10nk9FDMHcH" role="1Xju2$">
+            <node concept="1bVj0M" id="10nk9FDMHcI" role="303AOo">
+              <node concept="3clFbS" id="10nk9FDMHcJ" role="1bW5cS">
+                <node concept="3clFbF" id="10nk9FDMHPs" role="3cqZAp">
+                  <node concept="2dk9JS" id="10nk9FDMIrg" role="3clFbG">
+                    <node concept="3cmrfG" id="10nk9FDMIt3" role="3uHU7w">
                       <property role="3cmrfH" value="2" />
                     </node>
-                    <node concept="37vLTw" id="5l6FUy8XGO9" role="3uHU7B">
-                      <ref role="3cqZAo" node="5l6FUy8XG2l" resolve="nums2" />
+                    <node concept="37vLTw" id="10nk9FDMHPr" role="3uHU7B">
+                      <ref role="3cqZAo" node="10nk9FDMHcK" resolve="it" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="37vLTG" id="5l6FUy8XG2l" role="1bW2Oz">
-                <property role="TrG5h" value="nums2" />
-                <node concept="10Oyi0" id="5l6FUy8XG2Y" role="1tU5fm" />
+              <node concept="37vLTG" id="10nk9FDMHcK" role="1bW2Oz">
+                <property role="TrG5h" value="it" />
+                <node concept="10Oyi0" id="10nk9FDMHep" role="1tU5fm" />
               </node>
             </node>
           </node>
@@ -1830,10 +1826,18 @@
       <ref role="2$rEH4" node="2hwCr1MjRuG" resolve="testInt" />
       <node concept="1uYdA0" id="3uCJghveP6p" role="1uLvPH">
         <ref role="1uK_4X" node="2zKoo7ayjNU" resolve="odds" />
-        <node concept="2r82K" id="1z1zDaaZxFh" role="1ylr64">
-          <property role="2UjEct" value="ref" />
-          <node concept="2rfA1" id="1z1zDaaZxPl" role="25WwN">
+        <node concept="2r82K" id="10nk9FCYk_X" role="1ylr64">
+          <node concept="2rfA1" id="10nk9FCYkFE" role="2rfdc">
             <ref role="2rfdL" node="2zKoo7ayk4x" resolve="evens" />
+          </node>
+          <node concept="1ecmHP" id="10nk9FCYkJf" role="1Xju2$">
+            <node concept="1bVj0M" id="10nk9FCYkJg" role="303AOo">
+              <node concept="3clFbS" id="10nk9FCYkJh" role="1bW5cS" />
+              <node concept="37vLTG" id="10nk9FCYkJi" role="1bW2Oz">
+                <property role="TrG5h" value="it" />
+                <node concept="10Oyi0" id="10nk9FCYkJJ" role="1tU5fm" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

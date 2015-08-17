@@ -1648,7 +1648,7 @@
     <node concept="1TJgyj" id="6TmjYLGeFMw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="outChannelContainerRef" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6TmjYLGeFpH" resolve="OutChannelContainerRef" />
     </node>
     <node concept="PrWs8" id="1tMFr$HOyvu" role="PzmwI">
@@ -1712,12 +1712,7 @@
     <property role="TrG5h" value="Merge" />
     <property role="34LRSv" value="merge" />
     <property role="R4oN_" value="Merge items emitted by two (or more) channels into a new one" />
-    <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
-    <node concept="1TJgyj" id="1z1zDaa8aXC" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="closure" />
-      <ref role="20lvS9" node="5DC$1WkmvHE" resolve="ClosureLiteralWorkFlow" />
-    </node>
+    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOtn">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
@@ -2083,6 +2078,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tp2c:htbVj4_" resolve="ClosureLiteral" />
     </node>
+    <node concept="1TJgyj" id="10nk9FBT7En" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameterList" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="10nk9FBT4zy" resolve="ParameterContainer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7VH0NfrpABL">
     <property role="3GE5qa" value="channelFunctions.CollectFile" />
@@ -2162,6 +2163,16 @@
   <node concept="PlHQZ" id="1tMFr$HNUs9">
     <property role="3GE5qa" value="channelFunctions" />
     <property role="TrG5h" value="HasClosure" />
+  </node>
+  <node concept="1TIwiD" id="10nk9FBT4zy">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="ParameterContainer" />
+    <property role="R4oN_" value="contains the parameter of a closure" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="10nk9FBT6qI" role="1TKVEl">
+      <property role="TrG5h" value="parameter" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 
