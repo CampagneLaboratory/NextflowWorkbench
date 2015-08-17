@@ -235,6 +235,9 @@
     <node concept="PrWs8" id="5CFNYIF2xH7" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="PrWs8" id="1z1zDaaJrpo" role="PzmwI">
+      <ref role="PrY4T" node="1z1zDaaJoJq" resolve="HasConnectedChannel" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7gAPJCERFHl">
     <property role="3GE5qa" value="processIO" />
@@ -1156,6 +1159,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7gAPJCESTMU" resolve="OutputChannel" />
     </node>
+    <node concept="PrWs8" id="1z1zDaaJr7K" role="PzmwI">
+      <ref role="PrY4T" node="1z1zDaaJoJq" resolve="HasConnectedChannel" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5HJ0QzxIyJ3">
     <property role="3GE5qa" value="reports" />
@@ -1339,6 +1345,9 @@
       <property role="20kJfa" value="closure" />
       <ref role="20lvS9" node="5DC$1WkmvHE" resolve="ClosureLiteralWorkFlow" />
     </node>
+    <node concept="PrWs8" id="1tMFr$HOyvs" role="PzmwI">
+      <ref role="PrY4T" node="1tMFr$HNUs9" resolve="HasClosure" />
+    </node>
   </node>
   <node concept="1TIwiD" id="XaRILis0lJ">
     <property role="3GE5qa" value="channelFunctions.splitFunctions" />
@@ -1441,8 +1450,16 @@
     <property role="3GE5qa" value="channelFunctions" />
     <property role="TrG5h" value="Reduce" />
     <property role="34LRSv" value="reduce" />
-    <property role="R4oN_" value="Apply a function to every elements" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <property role="R4oN_" value="Apply a function to every input value" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
+    <node concept="PrWs8" id="5kDh3zAyJ3D" role="PzmwI">
+      <ref role="PrY4T" node="1tMFr$HNUs9" resolve="HasClosure" />
+    </node>
+    <node concept="1TJgyj" id="1tMFr$HRpPV" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="initialValue" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="XaRILhslAr">
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
@@ -1539,7 +1556,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="input" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2fLVrqPJSZI" resolve="ProcessInput" />
+      <ref role="20lvS9" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     </node>
   </node>
   <node concept="1TIwiD" id="6TmjYLGcNQe">
@@ -1634,6 +1651,9 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="6TmjYLGeFpH" resolve="OutChannelContainerRef" />
     </node>
+    <node concept="PrWs8" id="1tMFr$HOyvu" role="PzmwI">
+      <ref role="PrY4T" node="1tMFr$HNUs9" resolve="HasClosure" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6TmjYLGcN_3">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
@@ -1692,7 +1712,12 @@
     <property role="TrG5h" value="Merge" />
     <property role="34LRSv" value="merge" />
     <property role="R4oN_" value="Merge items emitted by two (or more) channels into a new one" />
-    <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
+    <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
+    <node concept="1TJgyj" id="1z1zDaa8aXC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="closure" />
+      <ref role="20lvS9" node="5DC$1WkmvHE" resolve="ClosureLiteralWorkFlow" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOtn">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
@@ -2130,6 +2155,13 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="2fLVrqQF3tr" resolve="OutputExpression" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="1z1zDaaJoJq">
+    <property role="TrG5h" value="HasConnectedChannel" />
+  </node>
+  <node concept="PlHQZ" id="1tMFr$HNUs9">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="HasClosure" />
   </node>
 </model>
 

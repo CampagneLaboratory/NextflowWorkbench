@@ -99,6 +99,10 @@
       <concept id="5954930966410664724" name="org.campagnelab.workflow.structure.HasExpression" flags="ng" index="20hr4X">
         <child id="5954930966410666282" name="expression" index="20hoG3" />
       </concept>
+      <concept id="7950630069016296375" name="org.campagnelab.workflow.structure.ChannelFunctionWithChannelRef" flags="ng" index="25Nhr">
+        <property id="4010223791428439639" name="role" index="2UjEct" />
+        <child id="7950630069016299487" name="channelContainerRef" index="25WwN" />
+      </concept>
       <concept id="7950630069015365464" name="org.campagnelab.workflow.structure.Sum" flags="ng" index="2pgyO" />
       <concept id="7950630069015365463" name="org.campagnelab.workflow.structure.Max" flags="ng" index="2pgyV" />
       <concept id="7950630069015365182" name="org.campagnelab.workflow.structure.Min" flags="ng" index="2pgBi" />
@@ -367,9 +371,13 @@
           <property role="19SUeA" value="echo " />
         </node>
         <node concept="3YE7tV" id="5Ehkzh1NKP9" role="19SJt6">
-          <ref role="3YE7sm" node="2hwCr1MjYBP" resolve="value" />
+          <ref role="3YE7sm" node="1z1zDaaZAQl" resolve="a" />
         </node>
-        <node concept="19SUe$" id="5Ehkzh1NKP8" role="19SJt6">
+        <node concept="19SUe$" id="1z1zDaaZB6i" role="19SJt6" />
+        <node concept="3YE7tV" id="1z1zDaaZB6h" role="19SJt6">
+          <ref role="3YE7sm" node="1z1zDaaZARw" resolve="b" />
+        </node>
+        <node concept="19SUe$" id="1z1zDaaZB6j" role="19SJt6">
           <property role="19SUeA" value=" &gt; " />
         </node>
         <node concept="2b_LqF" id="5Ehkzh1NKPd" role="19SJt6">
@@ -378,9 +386,17 @@
         <node concept="19SUe$" id="5Ehkzh1NKPe" role="19SJt6" />
       </node>
     </node>
-    <node concept="2mjA9o" id="2hwCr1MjYBP" role="2ulM7n">
-      <property role="TrG5h" value="value" />
-      <node concept="1utKN4" id="2hwCr1MjYBX" role="2ybFLk" />
+    <node concept="2mjA9o" id="1z1zDaaZAPR" role="2ulM7n">
+      <node concept="knwa4" id="1z1zDaaZAQj" role="2ybFLk">
+        <node concept="2zSw2O" id="1z1zDaaZAQl" role="2zSOd7">
+          <property role="TrG5h" value="a" />
+          <node concept="1utKN4" id="1z1zDaaZAQX" role="2ybFLk" />
+        </node>
+        <node concept="2zSw2O" id="1z1zDaaZARw" role="2zSOd7">
+          <property role="TrG5h" value="b" />
+          <node concept="1utKN4" id="1z1zDaaZARY" role="2ybFLk" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="3zupj_" id="2hwCr1Mk2mf">
@@ -1814,36 +1830,10 @@
       <ref role="2$rEH4" node="2hwCr1MjRuG" resolve="testInt" />
       <node concept="1uYdA0" id="3uCJghveP6p" role="1uLvPH">
         <ref role="1uK_4X" node="2zKoo7ayjNU" resolve="odds" />
-        <node concept="2r82K" id="3uCJghveP9H" role="1ylr64">
-          <node concept="2rfA1" id="3uCJghvePbF" role="2rfdc">
+        <node concept="2r82K" id="1z1zDaaZxFh" role="1ylr64">
+          <property role="2UjEct" value="ref" />
+          <node concept="2rfA1" id="1z1zDaaZxPl" role="25WwN">
             <ref role="2rfdL" node="2zKoo7ayk4x" resolve="evens" />
-          </node>
-          <node concept="1ecmHP" id="3uCJghvKSQo" role="1Xju2$">
-            <node concept="1bVj0M" id="3uCJghvKSQp" role="303AOo">
-              <node concept="3clFbS" id="3uCJghvKSQq" role="1bW5cS">
-                <node concept="3clFbF" id="3uCJghvKSVy" role="3cqZAp">
-                  <node concept="2ShNRf" id="3uCJghvKSVw" role="3clFbG">
-                    <node concept="3g6Rrh" id="3uCJghvKT3Z" role="2ShVmc">
-                      <node concept="10Oyi0" id="3uCJghvKT05" role="3g7fb8" />
-                      <node concept="37vLTw" id="3uCJghvKT6a" role="3g7hyw">
-                        <ref role="3cqZAo" node="3uCJghvKSRD" resolve="odds" />
-                      </node>
-                      <node concept="37vLTw" id="3uCJghvKTkq" role="3g7hyw">
-                        <ref role="3cqZAo" node="3uCJghvKSSb" resolve="evens" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="37vLTG" id="3uCJghvKSRD" role="1bW2Oz">
-                <property role="TrG5h" value="odds" />
-                <node concept="10Oyi0" id="3uCJghvKSRE" role="1tU5fm" />
-              </node>
-              <node concept="37vLTG" id="3uCJghvKSSb" role="1bW2Oz">
-                <property role="TrG5h" value="evens" />
-                <node concept="10Oyi0" id="3uCJghvKSSc" role="1tU5fm" />
-              </node>
-            </node>
           </node>
         </node>
       </node>
@@ -1925,7 +1915,7 @@
     </node>
     <node concept="19SGf9" id="2zKoo7azI6g" role="GZ$AB">
       <node concept="19SUe$" id="2zKoo7azI6h" role="19SJt6">
-        <property role="19SUeA" value="THIS DOESN'T WORK. Investigate how to put lists in closures." />
+        <property role="19SUeA" value="Demonstrate how to use the merge function" />
       </node>
     </node>
   </node>

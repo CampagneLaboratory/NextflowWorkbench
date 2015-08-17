@@ -281,6 +281,8 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.workflow.Samples-models" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/NextflowWorkbench_${workbench_version}.zip">
+      <zipfileset file="${basedir}/solutions/org.campagnelab.workflow.run/mps-collections.jar" prefix="NextflowWorkbench" />
+      <zipfileset file="${basedir}/solutions/org.campagnelab.workflow.run/closures-runtime.jar" prefix="NextflowWorkbench" />
       <zipfileset file="${basedir}/solutions/org.campagnelab.workflow.run/jsch-0.1.53.jar" prefix="NextflowWorkbench" />
       <zipfileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext" prefix="NextflowWorkbench" includes="**/*.jar" />
       <zipfileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline" prefix="NextflowWorkbench" includes="**/*.jar" />
@@ -295,10 +297,10 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-${org.campagnelab.mps.UI.ui_version}.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
     <unzip src="${artifacts.org.campagnelab.NYoSh}/org.campagnelab.NYoSh-${org.campagnelab.NYoSh.nyosh_version}.zip" dest="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-${org.campagnelab.mps.UI.ui_version}.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
   </target>
@@ -570,6 +572,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
