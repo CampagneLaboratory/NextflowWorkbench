@@ -878,7 +878,7 @@
       </node>
       <node concept="yHkD3" id="1iB3OwqDHId" role="yHkCN">
         <property role="TrG5h" value="mySettings" />
-        <node concept="yHkHH" id="1iB3OwqDIhd" role="1tU5fm">
+        <node concept="yHkHH" id="7gqUGqcSLM2" role="1tU5fm">
           <ref role="yHkHG" node="14R2qyOBxpW" resolve="NextFlow_RunParameters" />
         </node>
         <node concept="2ShNRf" id="1iB3OwqDIP3" role="33vP2m">
@@ -900,16 +900,50 @@
                   <ref role="2ryb1Q" node="1iB3OwqtihS" resolve="NextFlow_Options" />
                   <node concept="2r$n1x" id="1cesPfBOb3i" role="2r_Bvh">
                     <ref role="2r$qp6" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
-                    <node concept="10Nm6u" id="1cesPfBObe3" role="2r_lH1" />
+                    <node concept="2OqwBi" id="7gqUGqcS4PJ" role="2r_lH1">
+                      <node concept="2OqwBi" id="7gqUGqcS4cR" role="2Oq$k0">
+                        <node concept="yHkD2" id="7gqUGqcS3HJ" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1iB3OwqDHId" resolve="mySettings" />
+                        </node>
+                        <node concept="yHkDZ" id="7gqUGqcS4uB" role="2OqNvi">
+                          <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
+                        </node>
+                      </node>
+                      <node concept="2sxana" id="7gqUGqcS5Ji" role="2OqNvi">
+                        <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
+                      </node>
+                    </node>
                   </node>
                   <node concept="2r$n1x" id="1cesPfBOb3k" role="2r_Bvh">
                     <ref role="2r$qp6" node="1iB3OwqDbTh" resolve="workingDirectory" />
-                    <node concept="10Nm6u" id="1cesPfBObGu" role="2r_lH1" />
+                    <node concept="2OqwBi" id="7gqUGqcS6QI" role="2r_lH1">
+                      <node concept="2OqwBi" id="7gqUGqcS64L" role="2Oq$k0">
+                        <node concept="yHkD2" id="7gqUGqcS5TW" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1iB3OwqDHId" resolve="mySettings" />
+                        </node>
+                        <node concept="yHkDZ" id="7gqUGqcS6mG" role="2OqNvi">
+                          <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
+                        </node>
+                      </node>
+                      <node concept="2sxana" id="7gqUGqcS7Ku" role="2OqNvi">
+                        <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+                      </node>
+                    </node>
                   </node>
                   <node concept="2r$n1x" id="3LlDVJTZQnu" role="2r_Bvh">
                     <ref role="2r$qp6" node="3LlDVJTZNEZ" resolve="remoteSubmission" />
-                    <node concept="3clFbT" id="3LlDVJTZQGb" role="2r_lH1">
-                      <property role="3clFbU" value="false" />
+                    <node concept="2OqwBi" id="7gqUGqcSaDL" role="2r_lH1">
+                      <node concept="2OqwBi" id="7gqUGqcS9GS" role="2Oq$k0">
+                        <node concept="yHkD2" id="7gqUGqcS9An" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1iB3OwqDHId" resolve="mySettings" />
+                        </node>
+                        <node concept="yHkDZ" id="7gqUGqcSaij" role="2OqNvi">
+                          <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
+                        </node>
+                      </node>
+                      <node concept="2sxana" id="7gqUGqcSbzE" role="2OqNvi">
+                        <ref role="2sxfKC" node="3LlDVJTZNEZ" resolve="remoteSubmission" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1014,7 +1048,7 @@
               <node concept="2OqwBi" id="7bNG6p2G7Mr" role="3clFbG">
                 <node concept="2OqwBi" id="7bNG6p2G5YQ" role="2Oq$k0">
                   <node concept="2WthIp" id="7bNG6p2G5QM" role="2Oq$k0" />
-                  <node concept="yHkDZ" id="7bNG6p2G77g" role="2OqNvi">
+                  <node concept="yHkDZ" id="7gqUGqcSMrd" role="2OqNvi">
                     <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
                   </node>
                 </node>
@@ -1094,7 +1128,6 @@
         <ref role="3uigEE" to="dbrf:~JCheckBox" resolve="JCheckBox" />
       </node>
     </node>
-    <node concept="2tJIrI" id="3LlDVJTZpo8" role="jymVt" />
     <node concept="3clFbW" id="v01rbtVBnZ" role="jymVt">
       <node concept="3cqZAl" id="v01rbtVBo1" role="3clF45" />
       <node concept="3Tm1VV" id="v01rbtVBo2" role="1B3o_S" />
@@ -1476,7 +1509,7 @@
     </node>
     <node concept="2tJIrI" id="7OkpSXJRsfB" role="jymVt" />
     <node concept="3Tm1VV" id="v01rbtVlXY" role="1B3o_S" />
-    <node concept="3uibUv" id="v01rbtVAVU" role="1zkMxy">
+    <node concept="3uibUv" id="7gqUGqcS2sV" role="1zkMxy">
       <ref role="3uigEE" to="xg1q:~JBPanel" resolve="JBPanel" />
     </node>
   </node>
