@@ -915,7 +915,7 @@
                     </node>
                   </node>
                   <node concept="2r$n1x" id="1cesPfBOb3k" role="2r_Bvh">
-                    <ref role="2r$qp6" node="1iB3OwqDbTh" resolve="workingDirectory" />
+                    <ref role="2r$qp6" node="5xwuoKL7P2L" resolve="workDirectory" />
                     <node concept="2OqwBi" id="7gqUGqcS6QI" role="2r_lH1">
                       <node concept="2OqwBi" id="7gqUGqcS64L" role="2Oq$k0">
                         <node concept="yHkD2" id="7gqUGqcS5TW" role="2Oq$k0">
@@ -925,8 +925,8 @@
                           <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
                         </node>
                       </node>
-                      <node concept="2sxana" id="7gqUGqcS7Ku" role="2OqNvi">
-                        <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+                      <node concept="2sxana" id="5xwuoKL8wHe" role="2OqNvi">
+                        <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
                       </node>
                     </node>
                   </node>
@@ -1028,7 +1028,7 @@
             <node concept="10Nm6u" id="20R_QEEvNqV" role="2r_lH1" />
           </node>
           <node concept="2r$n1x" id="20R_QEEvNnx" role="2r_Bvh">
-            <ref role="2r$qp6" node="1iB3OwqDbTh" resolve="workingDirectory" />
+            <ref role="2r$qp6" node="5xwuoKL7P2L" resolve="workDirectory" />
             <node concept="10Nm6u" id="20R_QEEvNu0" role="2r_lH1" />
           </node>
           <node concept="2r$n1x" id="3LlDVJTZNs0" role="2r_Bvh">
@@ -1044,16 +1044,24 @@
       <node concept="3clFbS" id="274AKIgY7iP" role="2VODD2">
         <node concept="3clFbJ" id="274AKIgYkvS" role="3cqZAp">
           <node concept="3clFbS" id="274AKIgYkvV" role="3clFbx">
-            <node concept="3clFbF" id="7bNG6p2G5QO" role="3cqZAp">
-              <node concept="2OqwBi" id="7bNG6p2G7Mr" role="3clFbG">
-                <node concept="2OqwBi" id="7bNG6p2G5YQ" role="2Oq$k0">
-                  <node concept="2WthIp" id="7bNG6p2G5QM" role="2Oq$k0" />
-                  <node concept="yHkDZ" id="7gqUGqcSMrd" role="2OqNvi">
+            <node concept="3clFbF" id="5xwuoKLacVk" role="3cqZAp">
+              <node concept="37vLTI" id="5xwuoKLaexD" role="3clFbG">
+                <node concept="2OqwBi" id="5xwuoKLad3l" role="37vLTJ">
+                  <node concept="2WthIp" id="5xwuoKLacVi" role="2Oq$k0" />
+                  <node concept="yHkDZ" id="5xwuoKLadWV" role="2OqNvi">
                     <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
                   </node>
                 </node>
-                <node concept="liA8E" id="7bNG6p2G9$J" role="2OqNvi">
-                  <ref role="37wK5l" node="1iB3OwqwhC6" resolve="clone" />
+                <node concept="2OqwBi" id="7bNG6p2G7Mr" role="37vLTx">
+                  <node concept="2OqwBi" id="7bNG6p2G5YQ" role="2Oq$k0">
+                    <node concept="2WthIp" id="7bNG6p2G5QM" role="2Oq$k0" />
+                    <node concept="yHkDZ" id="7gqUGqcSMrd" role="2OqNvi">
+                      <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7bNG6p2G9$J" role="2OqNvi">
+                    <ref role="37wK5l" node="1iB3OwqwhC6" resolve="clone" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1075,8 +1083,8 @@
                     <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
                   </node>
                 </node>
-                <node concept="2sxana" id="20R_QEEvOFJ" role="2OqNvi">
-                  <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+                <node concept="2sxana" id="5xwuoKL8vMg" role="2OqNvi">
+                  <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
                 </node>
               </node>
               <node concept="10Nm6u" id="3R5AwWRTsfC" role="3uHU7w" />
@@ -1331,17 +1339,12 @@
                 </node>
                 <node concept="liA8E" id="1iB3OwqFFf_" role="2OqNvi">
                   <ref role="37wK5l" to="810:~TextFieldWithBrowseButton.setText(java.lang.String):void" resolve="setText" />
-                  <node concept="2OqwBi" id="1iB3OwqFIHV" role="37wK5m">
-                    <node concept="2OqwBi" id="1iB3OwqFFGh" role="2Oq$k0">
-                      <node concept="37vLTw" id="1iB3OwqFFs$" role="2Oq$k0">
-                        <ref role="3cqZAo" node="14R2qyOCuuF" resolve="options" />
-                      </node>
-                      <node concept="2sxana" id="20R_QEEvfj1" role="2OqNvi">
-                        <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
-                      </node>
+                  <node concept="2OqwBi" id="1iB3OwqFFGh" role="37wK5m">
+                    <node concept="37vLTw" id="1iB3OwqFFs$" role="2Oq$k0">
+                      <ref role="3cqZAo" node="14R2qyOCuuF" resolve="options" />
                     </node>
-                    <node concept="liA8E" id="1iB3OwqFM3P" role="2OqNvi">
-                      <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                    <node concept="2sxana" id="5xwuoKL8sS_" role="2OqNvi">
+                      <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
                     </node>
                   </node>
                 </node>
@@ -1354,8 +1357,8 @@
               <node concept="37vLTw" id="6wrdLWIamUL" role="2Oq$k0">
                 <ref role="3cqZAo" node="14R2qyOCuuF" resolve="options" />
               </node>
-              <node concept="2sxana" id="20R_QEEvfTe" role="2OqNvi">
-                <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+              <node concept="2sxana" id="5xwuoKL8s8q" role="2OqNvi">
+                <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
               </node>
             </node>
           </node>
@@ -1430,25 +1433,20 @@
         </node>
         <node concept="3clFbF" id="1iB3OwqFjJQ" role="3cqZAp">
           <node concept="37vLTI" id="1iB3OwqFmGN" role="3clFbG">
-            <node concept="2ShNRf" id="1iB3OwqFmVK" role="37vLTx">
-              <node concept="1pGfFk" id="1iB3OwqFmVJ" role="2ShVmc">
-                <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="2OqwBi" id="1iB3OwqFosw" role="37wK5m">
-                  <node concept="37vLTw" id="1iB3OwqFn1v" role="2Oq$k0">
-                    <ref role="3cqZAo" node="v01rbtY19H" resolve="myWorkingDirectory" />
-                  </node>
-                  <node concept="liA8E" id="1iB3OwqFwq9" role="2OqNvi">
-                    <ref role="37wK5l" to="810:~TextFieldWithBrowseButton.getText():java.lang.String" resolve="getText" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="2OqwBi" id="1iB3OwqFjWI" role="37vLTJ">
               <node concept="37vLTw" id="1iB3OwqFjJO" role="2Oq$k0">
                 <ref role="3cqZAo" node="14R2qyOCuvw" resolve="options" />
               </node>
-              <node concept="2sxana" id="20R_QEEvgvr" role="2OqNvi">
-                <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+              <node concept="2sxana" id="5xwuoKL8tPA" role="2OqNvi">
+                <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1iB3OwqFosw" role="37vLTx">
+              <node concept="37vLTw" id="5xwuoKL8ucc" role="2Oq$k0">
+                <ref role="3cqZAo" node="v01rbtY19H" resolve="myWorkingDirectory" />
+              </node>
+              <node concept="liA8E" id="1iB3OwqFwq9" role="2OqNvi">
+                <ref role="37wK5l" to="810:~TextFieldWithBrowseButton.getText():java.lang.String" resolve="getText" />
               </node>
             </node>
           </node>
@@ -2450,20 +2448,25 @@
                   </node>
                   <node concept="2LYoGL" id="qqDj346sx_" role="2LYoGw">
                     <ref role="2LYoGK" node="6qWs7gtKR4u" resolve="workingDirectory" />
-                    <node concept="2OqwBi" id="qqDj346sxA" role="2LYoGN">
-                      <node concept="2OqwBi" id="qqDj346sxB" role="2Oq$k0">
-                        <node concept="2OqwBi" id="qqDj346sxC" role="2Oq$k0">
-                          <node concept="RBKsg" id="qqDj346sxD" role="2Oq$k0" />
-                          <node concept="yHkDZ" id="qqDj346sxE" role="2OqNvi">
-                            <ref role="yHkDY" node="5gyVhZ17Jlr" resolve="myRunParameters" />
+                    <node concept="2ShNRf" id="5xwuoKL83KT" role="2LYoGN">
+                      <node concept="1pGfFk" id="5xwuoKL8qlS" role="2ShVmc">
+                        <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                        <node concept="2OqwBi" id="qqDj346sxA" role="37wK5m">
+                          <node concept="2OqwBi" id="qqDj346sxB" role="2Oq$k0">
+                            <node concept="2OqwBi" id="qqDj346sxC" role="2Oq$k0">
+                              <node concept="RBKsg" id="qqDj346sxD" role="2Oq$k0" />
+                              <node concept="yHkDZ" id="qqDj346sxE" role="2OqNvi">
+                                <ref role="yHkDY" node="5gyVhZ17Jlr" resolve="myRunParameters" />
+                              </node>
+                            </node>
+                            <node concept="yHkDZ" id="qqDj346sxF" role="2OqNvi">
+                              <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
+                            </node>
+                          </node>
+                          <node concept="2sxana" id="5xwuoKL83Ix" role="2OqNvi">
+                            <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
                           </node>
                         </node>
-                        <node concept="yHkDZ" id="qqDj346sxF" role="2OqNvi">
-                          <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
-                        </node>
-                      </node>
-                      <node concept="2sxana" id="qqDj346sxG" role="2OqNvi">
-                        <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
                       </node>
                     </node>
                   </node>
@@ -2999,13 +3002,18 @@
           <node concept="3clFbS" id="274AKIh2CIy" role="3clFbx">
             <node concept="3clFbF" id="3R5AwWRXNzc" role="3cqZAp">
               <node concept="37vLTI" id="3R5AwWRXPnL" role="3clFbG">
-                <node concept="37vLTw" id="3R5AwWRXPu9" role="37vLTx">
-                  <ref role="3cqZAo" node="3R5AwWRT5k$" resolve="workingDir" />
+                <node concept="2OqwBi" id="5xwuoKL7Y5e" role="37vLTx">
+                  <node concept="37vLTw" id="3R5AwWRXPu9" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3R5AwWRT5k$" resolve="workingDir" />
+                  </node>
+                  <node concept="liA8E" id="5xwuoKL7ZAe" role="2OqNvi">
+                    <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="3R5AwWRXNEA" role="37vLTJ">
                   <node concept="Xjq3P" id="3R5AwWRXNza" role="2Oq$k0" />
-                  <node concept="2sxana" id="3R5AwWRXOt7" role="2OqNvi">
-                    <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+                  <node concept="2sxana" id="5xwuoKL7X_C" role="2OqNvi">
+                    <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
                   </node>
                 </node>
               </node>
@@ -3025,8 +3033,8 @@
                 <node concept="10Nm6u" id="3R5AwWRXV6U" role="3uHU7w" />
                 <node concept="2OqwBi" id="3R5AwWRXSru" role="3uHU7B">
                   <node concept="Xjq3P" id="3R5AwWRXShM" role="2Oq$k0" />
-                  <node concept="2sxana" id="3R5AwWRXU6z" role="2OqNvi">
-                    <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+                  <node concept="2sxana" id="5xwuoKL7UtT" role="2OqNvi">
+                    <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
                   </node>
                 </node>
               </node>
@@ -3046,20 +3054,15 @@
                 <node concept="37vLTI" id="5HJ0Qzx_jih" role="3clFbG">
                   <node concept="2OqwBi" id="5HJ0Qzx_hi5" role="37vLTJ">
                     <node concept="Xjq3P" id="5HJ0Qzx$U2L" role="2Oq$k0" />
-                    <node concept="2sxana" id="5HJ0Qzx_iwW" role="2OqNvi">
-                      <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+                    <node concept="2sxana" id="5xwuoKL80mN" role="2OqNvi">
+                      <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
                     </node>
                   </node>
-                  <node concept="2ShNRf" id="5HJ0Qzz7bPN" role="37vLTx">
-                    <node concept="1pGfFk" id="5HJ0Qzz7lob" role="2ShVmc">
-                      <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                      <node concept="2YIFZM" id="5HJ0Qzx_jTO" role="37wK5m">
-                        <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
-                        <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
-                        <node concept="Xl_RD" id="5HJ0Qzx_jTW" role="37wK5m">
-                          <property role="Xl_RC" value="user.home" />
-                        </node>
-                      </node>
+                  <node concept="2YIFZM" id="5HJ0Qzx_jTO" role="37vLTx">
+                    <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                    <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                    <node concept="Xl_RD" id="5HJ0Qzx_jTW" role="37wK5m">
+                      <property role="Xl_RC" value="user.home" />
                     </node>
                   </node>
                 </node>
@@ -3090,11 +3093,11 @@
               </node>
             </node>
             <node concept="2r$n1x" id="7k$Lj9FXhZw" role="2r_Bvh">
-              <ref role="2r$qp6" node="1iB3OwqDbTh" resolve="workingDirectory" />
+              <ref role="2r$qp6" node="5xwuoKL7P2L" resolve="workDirectory" />
               <node concept="2OqwBi" id="7k$Lj9FXkwd" role="2r_lH1">
                 <node concept="Xjq3P" id="7k$Lj9FXkip" role="2Oq$k0" />
-                <node concept="2sxana" id="7k$Lj9FXmaV" role="2OqNvi">
-                  <ref role="2sxfKC" node="1iB3OwqDbTh" resolve="workingDirectory" />
+                <node concept="2sxana" id="5xwuoKL81dI" role="2OqNvi">
+                  <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
                 </node>
               </node>
             </node>
@@ -3116,12 +3119,10 @@
       <property role="TrG5h" value="NEXTFLOW_HOME" />
       <node concept="17QB3L" id="1iB3Owqtilh" role="2lK19J" />
     </node>
-    <node concept="2lGYhJ" id="1iB3OwqDbTh" role="2pHZQ9">
+    <node concept="2lGYhJ" id="5xwuoKL7P2L" role="2pHZQ9">
       <property role="3dDGau" value="false" />
-      <property role="TrG5h" value="workingDirectory" />
-      <node concept="3uibUv" id="1iB3OwqDc2P" role="2lK19J">
-        <ref role="3uigEE" to="fxg7:~File" resolve="File" />
-      </node>
+      <property role="TrG5h" value="workDirectory" />
+      <node concept="17QB3L" id="5xwuoKL7Pdc" role="2lK19J" />
     </node>
     <node concept="2lGYhJ" id="3LlDVJTZNEZ" role="2pHZQ9">
       <property role="3dDGau" value="false" />
