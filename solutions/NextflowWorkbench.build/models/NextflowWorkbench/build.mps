@@ -198,7 +198,7 @@
       <node concept="aVJcg" id="3gMg70bX6HN" role="aVJcv">
         <node concept="NbPM2" id="3gMg70bX6HM" role="aVJcq">
           <node concept="3Mxwew" id="3gMg70bX6HL" role="3MwsjC">
-            <property role="3MwjfP" value="1.0" />
+            <property role="3MwjfP" value="1.0.1" />
           </node>
         </node>
       </node>
@@ -515,7 +515,7 @@
         </node>
         <node concept="1SiIV0" id="dhtvqDS6B3" role="3bR37C">
           <node concept="3bR9La" id="dhtvqDS6B4" role="1SiIV1">
-            <property role="3bR36h" value="true" />
+            <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="6eMkF2c4Sia" resolve="org.campagnelab.workflow.configuration" />
           </node>
         </node>
@@ -541,12 +541,6 @@
           <node concept="3bR9La" id="5yGi5zw9JEs" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1QijaVwhSbR" role="3bR37C">
-          <node concept="3bR9La" id="1QijaVwhSbS" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="t9i9:nhsmU5vDUv" resolve="org.campagnelab.util" />
           </node>
         </node>
         <node concept="1SiIV0" id="71ITBVyKU6g" role="3bR37C">
