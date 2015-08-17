@@ -407,6 +407,12 @@
         <ref role="v9R2y" node="1z1zDaaT30I" resolve="reduce_TupleType" />
       </node>
     </node>
+    <node concept="3aamgX" id="10nk9FDYWfa" role="3acgRq">
+      <ref role="30HIoZ" to="iowz:33IVfFaApTg" resolve="FileType" />
+      <node concept="j$656" id="10nk9FDYWrK" role="1lVwrX">
+        <ref role="v9R2y" node="10nk9FDYWrI" resolve="reduce_FileType" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5HJ0Qzyo3Ih">
     <property role="TrG5h" value="WorkflowName_Methods" />
@@ -1138,15 +1144,10 @@
             <node concept="3NFfHV" id="4pO5mSiZMF5" role="3NFExx">
               <node concept="3clFbS" id="4pO5mSiZMF6" role="2VODD2">
                 <node concept="3clFbF" id="4lUgfnI$hc4" role="3cqZAp">
-                  <node concept="2OqwBi" id="4lUgfnI$kMf" role="3clFbG">
-                    <node concept="2OqwBi" id="4lUgfnI$hPP" role="2Oq$k0">
-                      <node concept="30H73N" id="4lUgfnI$hc2" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="6rO6MaB6T4E" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="3mz0l1QkkUk" role="2OqNvi">
-                      <ref role="37wK5l" to="tpek:hEwIzO1" resolve="getJavaType" />
+                  <node concept="2OqwBi" id="4lUgfnI$hPP" role="3clFbG">
+                    <node concept="30H73N" id="4lUgfnI$hc2" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="6rO6MaB6T4E" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
                     </node>
                   </node>
                 </node>
@@ -1855,6 +1856,15 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="10nk9FDYWrI">
+    <property role="TrG5h" value="reduce_FileType" />
+    <property role="3GE5qa" value="" />
+    <ref role="3gUMe" to="iowz:33IVfFaApTg" resolve="FileType" />
+    <node concept="3uibUv" id="10nk9FDYWyA" role="13RCb5">
+      <ref role="3uigEE" to="fxg7:~File" resolve="File" />
+      <node concept="raruj" id="10nk9FDYWyE" role="lGtFl" />
     </node>
   </node>
 </model>
