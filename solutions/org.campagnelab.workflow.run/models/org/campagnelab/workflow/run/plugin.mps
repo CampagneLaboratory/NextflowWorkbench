@@ -136,7 +136,6 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1224500790866" name="jetbrains.mps.baseLanguage.structure.BitwiseOrExpression" flags="nn" index="pVOtf" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
         <child id="1177326540772" name="statement" index="u8lrQ" />
@@ -944,62 +943,19 @@
       </node>
       <node concept="yHkDR" id="14R2qyOBxq2" role="yHkDf">
         <node concept="3clFbS" id="14R2qyOBxq3" role="2VODD2">
-          <node concept="3clFbF" id="274AKIh1TVq" role="3cqZAp">
-            <node concept="2OqwBi" id="274AKIh1Uxc" role="3clFbG">
-              <node concept="yHkD2" id="274AKIh1TVo" role="2Oq$k0">
+          <node concept="3clFbF" id="6tb0ZSuo0TO" role="3cqZAp">
+            <node concept="2OqwBi" id="6tb0ZSuo1GB" role="3clFbG">
+              <node concept="yHkD2" id="6tb0ZSuo0TM" role="2Oq$k0">
                 <ref role="3cqZAo" node="14R2qyOBxpY" resolve="panel" />
               </node>
-              <node concept="liA8E" id="274AKIh1Zj$" role="2OqNvi">
+              <node concept="liA8E" id="6tb0ZSuo6bp" role="2OqNvi">
                 <ref role="37wK5l" node="v01rbtX9nK" resolve="reset" />
-                <node concept="2ry78W" id="1cesPfBOb3m" role="37wK5m">
-                  <ref role="2ryb1Q" node="1iB3OwqtihS" resolve="NextFlow_Options" />
-                  <node concept="2r$n1x" id="1cesPfBOb3i" role="2r_Bvh">
-                    <ref role="2r$qp6" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
-                    <node concept="2OqwBi" id="7gqUGqcS4PJ" role="2r_lH1">
-                      <node concept="2OqwBi" id="7gqUGqcS4cR" role="2Oq$k0">
-                        <node concept="yHkD2" id="7gqUGqcS3HJ" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1iB3OwqDHId" resolve="mySettings" />
-                        </node>
-                        <node concept="yHkDZ" id="7gqUGqcS4uB" role="2OqNvi">
-                          <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
-                        </node>
-                      </node>
-                      <node concept="2sxana" id="7gqUGqcS5Ji" role="2OqNvi">
-                        <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
-                      </node>
-                    </node>
+                <node concept="2OqwBi" id="6tb0ZSuo7B9" role="37wK5m">
+                  <node concept="yHkD2" id="6tb0ZSuo7wZ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1iB3OwqDHId" resolve="mySettings" />
                   </node>
-                  <node concept="2r$n1x" id="1cesPfBOb3k" role="2r_Bvh">
-                    <ref role="2r$qp6" node="5xwuoKL7P2L" resolve="workDirectory" />
-                    <node concept="2OqwBi" id="7gqUGqcS6QI" role="2r_lH1">
-                      <node concept="2OqwBi" id="7gqUGqcS64L" role="2Oq$k0">
-                        <node concept="yHkD2" id="7gqUGqcS5TW" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1iB3OwqDHId" resolve="mySettings" />
-                        </node>
-                        <node concept="yHkDZ" id="7gqUGqcS6mG" role="2OqNvi">
-                          <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
-                        </node>
-                      </node>
-                      <node concept="2sxana" id="5xwuoKL8wHe" role="2OqNvi">
-                        <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2r$n1x" id="3LlDVJTZQnu" role="2r_Bvh">
-                    <ref role="2r$qp6" node="3LlDVJTZNEZ" resolve="remoteSubmission" />
-                    <node concept="2OqwBi" id="7gqUGqcSaDL" role="2r_lH1">
-                      <node concept="2OqwBi" id="7gqUGqcS9GS" role="2Oq$k0">
-                        <node concept="yHkD2" id="7gqUGqcS9An" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1iB3OwqDHId" resolve="mySettings" />
-                        </node>
-                        <node concept="yHkDZ" id="7gqUGqcSaij" role="2OqNvi">
-                          <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
-                        </node>
-                      </node>
-                      <node concept="2sxana" id="7gqUGqcSbzE" role="2OqNvi">
-                        <ref role="2sxfKC" node="3LlDVJTZNEZ" resolve="remoteSubmission" />
-                      </node>
-                    </node>
+                  <node concept="yHkDZ" id="6tb0ZSuo7Zr" role="2OqNvi">
+                    <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
                   </node>
                 </node>
               </node>
@@ -1072,31 +1028,31 @@
       <node concept="2pR195" id="1iB3OwqtnHv" role="1tU5fm">
         <ref role="3uigEE" node="1iB3OwqtihS" resolve="NextFlow_Options" />
       </node>
-      <node concept="2OqwBi" id="7bNG6p2G2kQ" role="33vP2m">
-        <node concept="liA8E" id="7bNG6p2G4BV" role="2OqNvi">
-          <ref role="37wK5l" node="1iB3OwqwhC6" resolve="clone" />
+      <node concept="2ry78W" id="7nP575hsYUT" role="33vP2m">
+        <ref role="2ryb1Q" node="1iB3OwqtihS" resolve="NextFlow_Options" />
+        <node concept="2r$n1x" id="7nP575hsYUU" role="2r_Bvh">
+          <ref role="2r$qp6" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
+          <node concept="Xl_RD" id="7nP575hsYUV" role="2r_lH1">
+            <property role="Xl_RC" value="${NEXTFLOW_PATH}" />
+          </node>
         </node>
-        <node concept="2ry78W" id="20R_QEEvNnz" role="2Oq$k0">
-          <ref role="2ryb1Q" node="1iB3OwqtihS" resolve="NextFlow_Options" />
-          <node concept="2r$n1x" id="20R_QEEvNnv" role="2r_Bvh">
-            <ref role="2r$qp6" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
-            <node concept="10Nm6u" id="20R_QEEvNqV" role="2r_lH1" />
+        <node concept="2r$n1x" id="7nP575hsYUW" role="2r_Bvh">
+          <ref role="2r$qp6" node="5xwuoKL7P2L" resolve="workDirectory" />
+          <node concept="Xl_RD" id="6tb0ZSulozJ" role="2r_lH1">
+            <property role="Xl_RC" value="${org.campagnelab.workflow.work_dir}" />
           </node>
-          <node concept="2r$n1x" id="20R_QEEvNnx" role="2r_Bvh">
-            <ref role="2r$qp6" node="5xwuoKL7P2L" resolve="workDirectory" />
-            <node concept="10Nm6u" id="20R_QEEvNu0" role="2r_lH1" />
-          </node>
-          <node concept="2r$n1x" id="3LlDVJTZNs0" role="2r_Bvh">
-            <ref role="2r$qp6" node="3LlDVJTZNEZ" resolve="remoteSubmission" />
-            <node concept="3clFbT" id="3LlDVJTZQjY" role="2r_lH1">
-              <property role="3clFbU" value="false" />
-            </node>
+        </node>
+        <node concept="2r$n1x" id="7nP575hsYUY" role="2r_Bvh">
+          <ref role="2r$qp6" node="3LlDVJTZNEZ" resolve="remoteSubmission" />
+          <node concept="3clFbT" id="7nP575hsYUZ" role="2r_lH1">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
     </node>
     <node concept="yHkDk" id="274AKIgY7iO" role="yHkHj">
       <node concept="3clFbS" id="274AKIgY7iP" role="2VODD2">
+        <node concept="3clFbH" id="5smwd6IJl1A" role="3cqZAp" />
         <node concept="3clFbJ" id="1vrbdFdH7xY" role="3cqZAp">
           <node concept="3clFbS" id="1vrbdFdH7y0" role="3clFbx">
             <node concept="yHkDM" id="5FbWHdWeLej" role="3cqZAp">
@@ -1105,7 +1061,21 @@
               </node>
             </node>
           </node>
-          <node concept="pVOtf" id="1vrbdFdHaUq" role="3clFbw">
+          <node concept="22lmx$" id="4McdSzeRyJN" role="3clFbw">
+            <node concept="3clFbC" id="274AKIgYeo$" role="3uHU7B">
+              <node concept="2OqwBi" id="274AKIgYao1" role="3uHU7B">
+                <node concept="2OqwBi" id="274AKIgY8zD" role="2Oq$k0">
+                  <node concept="2WthIp" id="274AKIgY8rD" role="2Oq$k0" />
+                  <node concept="yHkDZ" id="274AKIgY9Gt" role="2OqNvi">
+                    <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4McdSzeRx8K" role="2OqNvi">
+                  <ref role="37wK5l" node="4McdSzeQEJX" resolve="nextflowPathExpanded" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="274AKIgYepJ" role="3uHU7w" />
+            </node>
             <node concept="3fqX7Q" id="1vrbdFdH$12" role="3uHU7w">
               <node concept="2OqwBi" id="1vrbdFdH$14" role="3fr31v">
                 <node concept="2ShNRf" id="1vrbdFdH$15" role="2Oq$k0">
@@ -1118,8 +1088,8 @@
                           <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
                         </node>
                       </node>
-                      <node concept="2sxana" id="1vrbdFdH$1b" role="2OqNvi">
-                        <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
+                      <node concept="liA8E" id="4McdSzeRyFQ" role="2OqNvi">
+                        <ref role="37wK5l" node="4McdSzeQEJX" resolve="nextflowPathExpanded" />
                       </node>
                     </node>
                   </node>
@@ -1128,20 +1098,6 @@
                   <ref role="37wK5l" to="fxg7:~File.canExecute():boolean" resolve="canExecute" />
                 </node>
               </node>
-            </node>
-            <node concept="3clFbC" id="274AKIgYeo$" role="3uHU7B">
-              <node concept="2OqwBi" id="274AKIgYao1" role="3uHU7B">
-                <node concept="2OqwBi" id="274AKIgY8zD" role="2Oq$k0">
-                  <node concept="2WthIp" id="274AKIgY8rD" role="2Oq$k0" />
-                  <node concept="yHkDZ" id="274AKIgY9Gt" role="2OqNvi">
-                    <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
-                  </node>
-                </node>
-                <node concept="2sxana" id="20R_QEEvPhW" role="2OqNvi">
-                  <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
-                </node>
-              </node>
-              <node concept="10Nm6u" id="274AKIgYepJ" role="3uHU7w" />
             </node>
           </node>
         </node>
@@ -1166,8 +1122,8 @@
                           <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
                         </node>
                       </node>
-                      <node concept="2sxana" id="1vrbdFdHCfH" role="2OqNvi">
-                        <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
+                      <node concept="liA8E" id="4McdSzeR_O8" role="2OqNvi">
+                        <ref role="37wK5l" node="4McdSzeRsvn" resolve="workDirectoryExpanded" />
                       </node>
                     </node>
                   </node>
@@ -1185,8 +1141,8 @@
                     <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
                   </node>
                 </node>
-                <node concept="2sxana" id="5xwuoKL8vMg" role="2OqNvi">
-                  <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
+                <node concept="liA8E" id="4McdSzeR$jA" role="2OqNvi">
+                  <ref role="37wK5l" node="4McdSzeRsvn" resolve="workDirectoryExpanded" />
                 </node>
               </node>
               <node concept="10Nm6u" id="3R5AwWRTsfC" role="3uHU7w" />
@@ -1400,6 +1356,18 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="3Fn3V3URk_J" role="3cqZAp">
+          <node concept="3cpWsn" id="3Fn3V3URk_K" role="3cpWs9">
+            <property role="TrG5h" value="helper" />
+            <node concept="2YIFZM" id="3Fn3V3URk_L" role="33vP2m">
+              <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+              <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+            </node>
+            <node concept="3uibUv" id="3Fn3V3URk_M" role="1tU5fm">
+              <ref role="3uigEE" to="msyo:~MacroHelper" resolve="MacroHelper" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="v01rbtY5l3" role="3cqZAp">
           <node concept="2OqwBi" id="v01rbtY6vf" role="3clFbG">
             <node concept="37vLTw" id="1iB3OwqHdpa" role="2Oq$k0">
@@ -1407,12 +1375,20 @@
             </node>
             <node concept="liA8E" id="v01rbtYhDL" role="2OqNvi">
               <ref role="37wK5l" to="810:~TextFieldWithBrowseButton.setText(java.lang.String):void" resolve="setText" />
-              <node concept="2OqwBi" id="1iB3OwquLnv" role="37wK5m">
-                <node concept="37vLTw" id="v01rbtYhE7" role="2Oq$k0">
-                  <ref role="3cqZAo" node="14R2qyOCuuF" resolve="options" />
+              <node concept="2OqwBi" id="3Fn3V3URl3H" role="37wK5m">
+                <node concept="37vLTw" id="3Fn3V3URkYB" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3Fn3V3URk_K" resolve="helper" />
                 </node>
-                <node concept="2sxana" id="20R_QEEvdSL" role="2OqNvi">
-                  <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
+                <node concept="liA8E" id="3Fn3V3URloY" role="2OqNvi">
+                  <ref role="37wK5l" to="msyo:~MacroHelper.shrinkPath(java.lang.String):java.lang.String" resolve="shrinkPath" />
+                  <node concept="2OqwBi" id="1iB3OwquLnv" role="37wK5m">
+                    <node concept="37vLTw" id="v01rbtYhE7" role="2Oq$k0">
+                      <ref role="3cqZAo" node="14R2qyOCuuF" resolve="options" />
+                    </node>
+                    <node concept="2sxana" id="20R_QEEvdSL" role="2OqNvi">
+                      <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -1427,12 +1403,20 @@
                 </node>
                 <node concept="liA8E" id="1iB3OwqFFf_" role="2OqNvi">
                   <ref role="37wK5l" to="810:~TextFieldWithBrowseButton.setText(java.lang.String):void" resolve="setText" />
-                  <node concept="2OqwBi" id="1iB3OwqFFGh" role="37wK5m">
-                    <node concept="37vLTw" id="1iB3OwqFFs$" role="2Oq$k0">
-                      <ref role="3cqZAo" node="14R2qyOCuuF" resolve="options" />
+                  <node concept="2OqwBi" id="3Fn3V3URlVU" role="37wK5m">
+                    <node concept="37vLTw" id="3Fn3V3URlMm" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3Fn3V3URk_K" resolve="helper" />
                     </node>
-                    <node concept="2sxana" id="5xwuoKL8sS_" role="2OqNvi">
-                      <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
+                    <node concept="liA8E" id="3Fn3V3URmhb" role="2OqNvi">
+                      <ref role="37wK5l" to="msyo:~MacroHelper.shrinkPath(java.lang.String):java.lang.String" resolve="shrinkPath" />
+                      <node concept="2OqwBi" id="1iB3OwqFFGh" role="37wK5m">
+                        <node concept="37vLTw" id="1iB3OwqFFs$" role="2Oq$k0">
+                          <ref role="3cqZAo" node="14R2qyOCuuF" resolve="options" />
+                        </node>
+                        <node concept="2sxana" id="5xwuoKL8sS_" role="2OqNvi">
+                          <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1499,22 +1483,42 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="3Fn3V3URgsJ" role="3cqZAp">
+          <node concept="3cpWsn" id="3Fn3V3URgsM" role="3cpWs9">
+            <property role="TrG5h" value="helper" />
+            <node concept="2YIFZM" id="3Fn3V3URfbS" role="33vP2m">
+              <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+              <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+            </node>
+            <node concept="3uibUv" id="3Fn3V3URjiX" role="1tU5fm">
+              <ref role="3uigEE" to="msyo:~MacroHelper" resolve="MacroHelper" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="v01rbtZxjd" role="3cqZAp">
           <node concept="37vLTI" id="v01rbtZFia" role="3clFbG">
-            <node concept="2OqwBi" id="v01rbtZGJp" role="37vLTx">
-              <node concept="37vLTw" id="1iB3OwqHd4N" role="2Oq$k0">
-                <ref role="3cqZAo" node="1iB3Owqz3gM" resolve="NEXTFLOW_HOME_Directory" />
-              </node>
-              <node concept="liA8E" id="1iB3OwquBEO" role="2OqNvi">
-                <ref role="37wK5l" to="810:~TextFieldWithBrowseButton.getText():java.lang.String" resolve="getText" />
-              </node>
-            </node>
             <node concept="2OqwBi" id="v01rbtZy4X" role="37vLTJ">
               <node concept="37vLTw" id="v01rbtZxjc" role="2Oq$k0">
                 <ref role="3cqZAo" node="14R2qyOCuvw" resolve="options" />
               </node>
               <node concept="2sxana" id="20R_QEEvh5C" role="2OqNvi">
                 <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3Fn3V3URjzT" role="37vLTx">
+              <node concept="37vLTw" id="3Fn3V3URjvt" role="2Oq$k0">
+                <ref role="3cqZAo" node="3Fn3V3URgsM" resolve="helper" />
+              </node>
+              <node concept="liA8E" id="3Fn3V3URjOx" role="2OqNvi">
+                <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                <node concept="2OqwBi" id="v01rbtZGJp" role="37wK5m">
+                  <node concept="37vLTw" id="1iB3OwqHd4N" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1iB3Owqz3gM" resolve="NEXTFLOW_HOME_Directory" />
+                  </node>
+                  <node concept="liA8E" id="1iB3OwquBEO" role="2OqNvi">
+                    <ref role="37wK5l" to="810:~TextFieldWithBrowseButton.getText():java.lang.String" resolve="getText" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1529,12 +1533,20 @@
                 <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
               </node>
             </node>
-            <node concept="2OqwBi" id="1iB3OwqFosw" role="37vLTx">
-              <node concept="37vLTw" id="5xwuoKL8ucc" role="2Oq$k0">
-                <ref role="3cqZAo" node="v01rbtY19H" resolve="myWorkingDirectory" />
+            <node concept="2OqwBi" id="3Fn3V3URk6H" role="37vLTx">
+              <node concept="37vLTw" id="3Fn3V3URk2h" role="2Oq$k0">
+                <ref role="3cqZAo" node="3Fn3V3URgsM" resolve="helper" />
               </node>
-              <node concept="liA8E" id="1iB3OwqFwq9" role="2OqNvi">
-                <ref role="37wK5l" to="810:~TextFieldWithBrowseButton.getText():java.lang.String" resolve="getText" />
+              <node concept="liA8E" id="3Fn3V3URkmS" role="2OqNvi">
+                <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                <node concept="2OqwBi" id="1iB3OwqFosw" role="37wK5m">
+                  <node concept="37vLTw" id="5xwuoKL8ucc" role="2Oq$k0">
+                    <ref role="3cqZAo" node="v01rbtY19H" resolve="myWorkingDirectory" />
+                  </node>
+                  <node concept="liA8E" id="1iB3OwqFwq9" role="2OqNvi">
+                    <ref role="37wK5l" to="810:~TextFieldWithBrowseButton.getText():java.lang.String" resolve="getText" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2559,8 +2571,8 @@
                           <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
                         </node>
                       </node>
-                      <node concept="2sxana" id="qqDj346sx$" role="2OqNvi">
-                        <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
+                      <node concept="liA8E" id="4McdSzeUaQz" role="2OqNvi">
+                        <ref role="37wK5l" node="4McdSzeQEJX" resolve="nextflowPathExpanded" />
                       </node>
                     </node>
                   </node>
@@ -2581,8 +2593,8 @@
                               <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
                             </node>
                           </node>
-                          <node concept="2sxana" id="5xwuoKL83Ix" role="2OqNvi">
-                            <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
+                          <node concept="liA8E" id="4McdSzeUbBn" role="2OqNvi">
+                            <ref role="37wK5l" node="4McdSzeRsvn" resolve="workDirectoryExpanded" />
                           </node>
                         </node>
                       </node>
@@ -3258,6 +3270,76 @@
                 <node concept="Xjq3P" id="3LlDVJTZOmx" role="2Oq$k0" />
                 <node concept="2sxana" id="3LlDVJTZQ06" role="2OqNvi">
                   <ref role="2sxfKC" node="3LlDVJTZNEZ" resolve="remoteSubmission" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="4McdSzeQEJX" role="3MN40a">
+      <property role="TrG5h" value="nextflowPathExpanded" />
+      <node concept="17QB3L" id="4McdSzeR1AE" role="3clF45" />
+      <node concept="3Tm1VV" id="4McdSzeQEJZ" role="1B3o_S" />
+      <node concept="3clFbS" id="4McdSzeQEK0" role="3clF47">
+        <node concept="3cpWs8" id="4McdSzeRmnU" role="3cqZAp">
+          <node concept="3cpWsn" id="4McdSzeRmnV" role="3cpWs9">
+            <property role="TrG5h" value="helper" />
+            <node concept="2YIFZM" id="4McdSzeRmnW" role="33vP2m">
+              <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+              <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+            </node>
+            <node concept="3uibUv" id="4McdSzeRmnX" role="1tU5fm">
+              <ref role="3uigEE" to="msyo:~MacroHelper" resolve="MacroHelper" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4McdSzeRo9A" role="3cqZAp">
+          <node concept="2OqwBi" id="4McdSzeRmo3" role="3clFbG">
+            <node concept="37vLTw" id="4McdSzeRmo4" role="2Oq$k0">
+              <ref role="3cqZAo" node="4McdSzeRmnV" resolve="helper" />
+            </node>
+            <node concept="liA8E" id="4McdSzeRmo5" role="2OqNvi">
+              <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+              <node concept="2OqwBi" id="4McdSzeRqXl" role="37wK5m">
+                <node concept="Xjq3P" id="4McdSzeRpJR" role="2Oq$k0" />
+                <node concept="2sxana" id="4McdSzeRssR" role="2OqNvi">
+                  <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="4McdSzeRsvn" role="3MN40a">
+      <property role="TrG5h" value="workDirectoryExpanded" />
+      <node concept="17QB3L" id="4McdSzeRsK4" role="3clF45" />
+      <node concept="3Tm1VV" id="4McdSzeRsvp" role="1B3o_S" />
+      <node concept="3clFbS" id="4McdSzeRsvq" role="3clF47">
+        <node concept="3cpWs8" id="4McdSzeRsKS" role="3cqZAp">
+          <node concept="3cpWsn" id="4McdSzeRsKT" role="3cpWs9">
+            <property role="TrG5h" value="helper" />
+            <node concept="2YIFZM" id="4McdSzeRsKU" role="33vP2m">
+              <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+              <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+            </node>
+            <node concept="3uibUv" id="4McdSzeRsKV" role="1tU5fm">
+              <ref role="3uigEE" to="msyo:~MacroHelper" resolve="MacroHelper" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4McdSzeRsKW" role="3cqZAp">
+          <node concept="2OqwBi" id="4McdSzeRsKX" role="3clFbG">
+            <node concept="37vLTw" id="4McdSzeRsKY" role="2Oq$k0">
+              <ref role="3cqZAo" node="4McdSzeRsKT" resolve="helper" />
+            </node>
+            <node concept="liA8E" id="4McdSzeRsKZ" role="2OqNvi">
+              <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+              <node concept="2OqwBi" id="4McdSzeRsL0" role="37wK5m">
+                <node concept="Xjq3P" id="4McdSzeRsL1" role="2Oq$k0" />
+                <node concept="2sxana" id="4McdSzeRuvS" role="2OqNvi">
+                  <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
                 </node>
               </node>
             </node>
