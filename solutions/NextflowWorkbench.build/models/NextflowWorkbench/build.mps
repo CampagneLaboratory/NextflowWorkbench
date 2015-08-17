@@ -276,6 +276,32 @@
               </node>
             </node>
           </node>
+          <node concept="28jJK3" id="1mpT3Anovj$" role="39821P">
+            <node concept="55IIr" id="1mpT3AnovjA" role="28jJRO">
+              <node concept="2Ry0Ak" id="1mpT3AnovC4" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1mpT3AnovC9" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.workflow.run" />
+                  <node concept="2Ry0Ak" id="1mpT3AnovCe" role="2Ry0An">
+                    <property role="2Ry0Am" value="closures-runtime.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="1mpT3AnovTI" role="39821P">
+            <node concept="55IIr" id="1mpT3AnovTK" role="28jJRO">
+              <node concept="2Ry0Ak" id="1mpT3AnovVu" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1mpT3AnovVz" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.workflow.run" />
+                  <node concept="2Ry0Ak" id="1mpT3AnovVC" role="2Ry0An">
+                    <property role="2Ry0Am" value="mps-collections.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3ygNvl" id="1PXjV8YMesz" role="39821P">
             <ref role="3ygNvj" to="90a9:1sO539bGQvs" resolve="mps-richtext" />
             <node concept="3qWCbU" id="1PXjV8YMeuk" role="1juEy9">
