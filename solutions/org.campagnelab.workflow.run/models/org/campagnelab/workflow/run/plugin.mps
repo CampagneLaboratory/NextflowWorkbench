@@ -588,15 +588,8 @@
               </node>
             </node>
             <node concept="3clFbS" id="5FbWHdVWKHX" role="TDEfX">
-              <node concept="2LYoGF" id="5FbWHdVWNOb" role="3cqZAp">
-                <node concept="2OqwBi" id="5FbWHdVWO9U" role="2LYoNh">
-                  <node concept="37vLTw" id="5FbWHdVWNOz" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5FbWHdVWKHT" resolve="e" />
-                  </node>
-                  <node concept="liA8E" id="5FbWHdVWOv8" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
-                  </node>
-                </node>
+              <node concept="3cpWs6" id="5FbWHdWjOmM" role="3cqZAp">
+                <node concept="10Nm6u" id="5FbWHdWjOmZ" role="3cqZAk" />
               </node>
             </node>
           </node>
@@ -611,9 +604,6 @@
       <node concept="37vLTG" id="7OkpSXJSgOa" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="H_c77" id="7OkpSXJSgRu" role="1tU5fm" />
-      </node>
-      <node concept="3uibUv" id="5FbWHdWitXF" role="Sfmx6">
-        <ref role="3uigEE" to="53gy:~ExecutionException" resolve="ExecutionException" />
       </node>
     </node>
     <node concept="yHkHE" id="4kZvAQCc$VM" role="yHkHi">
