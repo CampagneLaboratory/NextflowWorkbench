@@ -1398,11 +1398,16 @@
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILjgU7G">
-    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="3GE5qa" value="channelFunctions" />
     <property role="TrG5h" value="GroupTuple" />
     <property role="34LRSv" value="groupTuple" />
     <property role="R4oN_" value="Collect tuples of elements that share the same key" />
-    <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="6LbMDSKNY_2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="by" />
+      <ref role="20lvS9" node="6LbMDSKO4yv" resolve="ChooseKeyIndex" />
+    </node>
   </node>
   <node concept="1TIwiD" id="XaRILhIYk3">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
@@ -2172,6 +2177,17 @@
     <node concept="1TJgyi" id="10nk9FBT6qI" role="1TKVEl">
       <property role="TrG5h" value="parameter" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6LbMDSKO4yv">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="ChooseKeyIndex" />
+    <property role="34LRSv" value="by" />
+    <property role="R4oN_" value="index of entry used as key" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6LbMDSKO4yw" role="1TKVEl">
+      <property role="TrG5h" value="n" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

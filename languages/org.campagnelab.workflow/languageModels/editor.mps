@@ -2634,16 +2634,41 @@
     </node>
   </node>
   <node concept="24kQdi" id="XaRILjgVD0">
-    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="3GE5qa" value="channelFunctions" />
     <ref role="1XX52x" to="iowz:XaRILjgU7G" resolve="GroupTuple" />
     <node concept="3EZMnI" id="XaRILjgVD2" role="2wV5jI">
       <node concept="3F0ifn" id="XaRILjgVD9" role="3EZMnx">
-        <property role="3F0ifm" value="groupTuple()" />
+        <property role="3F0ifm" value="groupTuple(" />
         <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
         <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
+        <node concept="11LMrY" id="6LbMDSL71GN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="6LbMDSKNZi$" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:6LbMDSKNY_2" />
+        <node concept="pkWqt" id="6LbMDSKO6Ns" role="pqm2j">
+          <node concept="3clFbS" id="6LbMDSKO6Nt" role="2VODD2">
+            <node concept="3clFbF" id="6LbMDSKO6Wz" role="3cqZAp">
+              <node concept="2OqwBi" id="6LbMDSKO7x7" role="3clFbG">
+                <node concept="2OqwBi" id="6LbMDSKO70W" role="2Oq$k0">
+                  <node concept="pncrf" id="6LbMDSKO6Wy" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6LbMDSKO7fZ" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iowz:6LbMDSKNY_2" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="6LbMDSKO7KA" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="XaRILjgVD5" role="2iSdaV" />
+      <node concept="3F0ifn" id="6LbMDSKO7WU" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="2fLVrqQ2D_x">
@@ -3750,6 +3775,20 @@
         <node concept="Vb9p2" id="1tMFr$HRw01" role="3F10Kt" />
       </node>
       <node concept="l2Vlx" id="1tMFr$HRvMI" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6LbMDSKO4yB">
+    <property role="3GE5qa" value="channelFunctions" />
+    <ref role="1XX52x" to="iowz:6LbMDSKO4yv" resolve="ChooseKeyIndex" />
+    <node concept="3EZMnI" id="6LbMDSKO4yD" role="2wV5jI">
+      <node concept="3F0ifn" id="6LbMDSKO4yK" role="3EZMnx">
+        <property role="3F0ifm" value="key index:" />
+        <ref role="1k5W1q" node="dOBxzy_svD" resolve="SplitOption" />
+      </node>
+      <node concept="3F0A7n" id="6LbMDSKO4yQ" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:6LbMDSKO4yw" resolve="n" />
+      </node>
+      <node concept="l2Vlx" id="6LbMDSKO4yG" role="2iSdaV" />
     </node>
   </node>
 </model>

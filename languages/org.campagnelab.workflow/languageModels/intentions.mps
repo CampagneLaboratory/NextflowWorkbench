@@ -97,12 +97,14 @@
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
+      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
@@ -1198,6 +1200,101 @@
                 <ref role="3TsBF5" to="iowz:5SDnWB_47yw" resolve="remainder" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6LbMDSKO839">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="addGroupingKey" />
+    <ref role="2ZfgGC" to="iowz:XaRILjgU7G" resolve="GroupTuple" />
+    <node concept="2S6ZIM" id="6LbMDSKO83a" role="2ZfVej">
+      <node concept="3clFbS" id="6LbMDSKO83b" role="2VODD2">
+        <node concept="3clFbF" id="6LbMDSKO8pd" role="3cqZAp">
+          <node concept="Xl_RD" id="6LbMDSKO8pc" role="3clFbG">
+            <property role="Xl_RC" value="Add a Key Index for Grouping" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6LbMDSKO83c" role="2ZfgGD">
+      <node concept="3clFbS" id="6LbMDSKO83d" role="2VODD2">
+        <node concept="3clFbF" id="6LbMDSKO92f" role="3cqZAp">
+          <node concept="37vLTI" id="6LbMDSKO9J7" role="3clFbG">
+            <node concept="2ShNRf" id="6LbMDSKO9KB" role="37vLTx">
+              <node concept="3zrR0B" id="6LbMDSKObJ8" role="2ShVmc">
+                <node concept="3Tqbb2" id="6LbMDSKObJa" role="3zrR0E">
+                  <ref role="ehGHo" to="iowz:6LbMDSKO4yv" resolve="ChooseKeyIndex" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6LbMDSKO93K" role="37vLTJ">
+              <node concept="2Sf5sV" id="6LbMDSKO92e" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6LbMDSKO9d7" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:6LbMDSKNY_2" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="6LbMDSLgriA" role="2ZfVeh">
+      <node concept="3clFbS" id="6LbMDSLgriB" role="2VODD2">
+        <node concept="3clFbF" id="6LbMDSLgrom" role="3cqZAp">
+          <node concept="2OqwBi" id="6LbMDSLgrUB" role="3clFbG">
+            <node concept="2OqwBi" id="6LbMDSLgrsJ" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6LbMDSLgrol" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6LbMDSLgrEQ" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:6LbMDSKNY_2" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="6LbMDSLgsei" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6LbMDSKOc2Z">
+    <property role="3GE5qa" value="channelFunctions" />
+    <property role="TrG5h" value="removeGroupingKey" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="iowz:XaRILjgU7G" resolve="GroupTuple" />
+    <node concept="2S6ZIM" id="6LbMDSKOc30" role="2ZfVej">
+      <node concept="3clFbS" id="6LbMDSKOc31" role="2VODD2">
+        <node concept="3clFbF" id="6LbMDSKOckt" role="3cqZAp">
+          <node concept="Xl_RD" id="6LbMDSKOcks" role="3clFbG">
+            <property role="Xl_RC" value="Remove a Key Index for Grouping" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6LbMDSKOc32" role="2ZfgGD">
+      <node concept="3clFbS" id="6LbMDSKOc33" role="2VODD2">
+        <node concept="3clFbF" id="6LbMDSKOcNJ" role="3cqZAp">
+          <node concept="2OqwBi" id="6LbMDSKOdov" role="3clFbG">
+            <node concept="2OqwBi" id="6LbMDSKOcOU" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6LbMDSKOcNI" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6LbMDSKOddF" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:6LbMDSKNY_2" />
+              </node>
+            </node>
+            <node concept="1PgB_6" id="6LbMDSKOdwF" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="6LbMDSLgsqo" role="2ZfVeh">
+      <node concept="3clFbS" id="6LbMDSLgsqp" role="2VODD2">
+        <node concept="3clFbF" id="6LbMDSLgsw5" role="3cqZAp">
+          <node concept="2OqwBi" id="6LbMDSLgsX9" role="3clFbG">
+            <node concept="2OqwBi" id="6LbMDSLgs$u" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6LbMDSLgsw4" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6LbMDSLgsKc" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:6LbMDSKNY_2" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6LbMDSLgte0" role="2OqNvi" />
           </node>
         </node>
       </node>
