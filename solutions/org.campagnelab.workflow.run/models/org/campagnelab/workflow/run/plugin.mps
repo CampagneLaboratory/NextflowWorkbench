@@ -138,9 +138,6 @@
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
-        <child id="1177326540772" name="statement" index="u8lrQ" />
-      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -831,75 +828,75 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="5hUuk00i14p" role="3cqZAp">
-          <node concept="10Nm6u" id="5hUuk00i1i5" role="3cqZAk" />
-        </node>
-        <node concept="u8gfJ" id="5hUuk00i1th" role="3cqZAp">
-          <node concept="3clFbF" id="7MQ4nb0hh7W" role="u8lrQ">
-            <node concept="2OqwBi" id="7MQ4nb0hh7X" role="3clFbG">
-              <node concept="2ShNRf" id="7MQ4nb0hh7Y" role="2Oq$k0">
-                <node concept="1pGfFk" id="7MQ4nb0hh7Z" role="2ShVmc">
-                  <ref role="37wK5l" to="vsqj:~ProjectModelAccess.&lt;init&gt;(jetbrains.mps.project.Project)" resolve="ProjectModelAccess" />
-                  <node concept="37vLTw" id="7MQ4nb0hjZb" role="37wK5m">
-                    <ref role="3cqZAo" node="7MQ4nb0hiIP" resolve="project" />
-                  </node>
+        <node concept="3clFbF" id="2usLrE8T6Pl" role="3cqZAp">
+          <node concept="2OqwBi" id="2usLrE8T9JT" role="3clFbG">
+            <node concept="2OqwBi" id="2usLrE8T9fW" role="2Oq$k0">
+              <node concept="2OqwBi" id="2usLrE8T89z" role="2Oq$k0">
+                <node concept="37vLTw" id="2usLrE8T6Pj" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7MQ4nb0hiIP" resolve="project" />
+                </node>
+                <node concept="liA8E" id="2usLrE8T9f5" role="2OqNvi">
+                  <ref role="37wK5l" to="vsqj:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                 </node>
               </node>
-              <node concept="liA8E" id="7MQ4nb0hh83" role="2OqNvi">
-                <ref role="37wK5l" to="cu2c:~ModelAccessBase.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
-                <node concept="1bVj0M" id="7MQ4nb0hh84" role="37wK5m">
-                  <node concept="3clFbS" id="7MQ4nb0hh85" role="1bW5cS">
-                    <node concept="3SKdUt" id="4kZvAQCfvUQ" role="3cqZAp">
-                      <node concept="3SKdUq" id="4kZvAQCfvVy" role="3SKWNk">
-                        <property role="3SKdUp" value="if not found, continue looking for a development environment, in the run module:" />
-                      </node>
+              <node concept="liA8E" id="2usLrE8T9II" role="2OqNvi">
+                <ref role="37wK5l" to="88zw:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2usLrE8TakF" role="2OqNvi">
+              <ref role="37wK5l" to="88zw:~ModelAccess.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
+              <node concept="1bVj0M" id="7MQ4nb0hh84" role="37wK5m">
+                <node concept="3clFbS" id="7MQ4nb0hh85" role="1bW5cS">
+                  <node concept="3SKdUt" id="4kZvAQCfvUQ" role="3cqZAp">
+                    <node concept="3SKdUq" id="4kZvAQCfvVy" role="3SKWNk">
+                      <property role="3SKdUp" value="if not found, continue looking for a development environment, in the run module:" />
                     </node>
-                    <node concept="3cpWs8" id="CaUCS_Wyoh" role="3cqZAp">
-                      <node concept="3cpWsn" id="CaUCS_Wyoi" role="3cpWs9">
-                        <property role="TrG5h" value="relativePathHelper" />
-                        <node concept="3uibUv" id="CaUCS_Wyoj" role="1tU5fm">
-                          <ref role="3uigEE" to="o3n2:5iAPpylXsc4" resolve="RelativePathHelper" />
-                        </node>
-                        <node concept="2OqwBi" id="CaUCS_Wyok" role="33vP2m">
-                          <node concept="liA8E" id="CaUCS_Wyol" role="2OqNvi">
-                            <ref role="37wK5l" to="o3n2:1AfwOXhJadN" resolve="getRelativePathHelper" />
-                            <node concept="2OqwBi" id="2RvrqSkrvWw" role="37wK5m">
-                              <node concept="2YIFZM" id="2RvrqSkrv_O" role="2Oq$k0">
-                                <ref role="37wK5l" to="cu2c:~SModelRepository.getInstance():jetbrains.mps.smodel.SModelRepository" resolve="getInstance" />
-                                <ref role="1Pybhc" to="cu2c:~SModelRepository" resolve="SModelRepository" />
-                              </node>
-                              <node concept="liA8E" id="2RvrqSkrygB" role="2OqNvi">
-                                <ref role="37wK5l" to="cu2c:~SModelRepository.getModelDescriptor(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="getModelDescriptor" />
-                                <node concept="2OqwBi" id="2RvrqSkrI25" role="37wK5m">
-                                  <node concept="BaHAS" id="2RvrqSkrHK5" role="2Oq$k0">
-                                    <property role="BaHAW" value="org.campagnelab.workflow.run.plugin" />
-                                    <property role="BaGAP" value="" />
-                                  </node>
-                                  <node concept="LkI2h" id="2RvrqSkrIm_" role="2OqNvi" />
+                  </node>
+                  <node concept="3cpWs8" id="CaUCS_Wyoh" role="3cqZAp">
+                    <node concept="3cpWsn" id="CaUCS_Wyoi" role="3cpWs9">
+                      <property role="TrG5h" value="relativePathHelper" />
+                      <node concept="3uibUv" id="CaUCS_Wyoj" role="1tU5fm">
+                        <ref role="3uigEE" to="o3n2:5iAPpylXsc4" resolve="RelativePathHelper" />
+                      </node>
+                      <node concept="2OqwBi" id="CaUCS_Wyok" role="33vP2m">
+                        <node concept="liA8E" id="CaUCS_Wyol" role="2OqNvi">
+                          <ref role="37wK5l" to="o3n2:1AfwOXhJadN" resolve="getRelativePathHelper" />
+                          <node concept="2OqwBi" id="2RvrqSkrvWw" role="37wK5m">
+                            <node concept="2YIFZM" id="2RvrqSkrv_O" role="2Oq$k0">
+                              <ref role="37wK5l" to="cu2c:~SModelRepository.getInstance():jetbrains.mps.smodel.SModelRepository" resolve="getInstance" />
+                              <ref role="1Pybhc" to="cu2c:~SModelRepository" resolve="SModelRepository" />
+                            </node>
+                            <node concept="liA8E" id="2RvrqSkrygB" role="2OqNvi">
+                              <ref role="37wK5l" to="cu2c:~SModelRepository.getModelDescriptor(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="getModelDescriptor" />
+                              <node concept="2OqwBi" id="2RvrqSkrI25" role="37wK5m">
+                                <node concept="BaHAS" id="2RvrqSkrHK5" role="2Oq$k0">
+                                  <property role="BaHAW" value="org.campagnelab.workflow.run.plugin" />
+                                  <property role="BaGAP" value="" />
                                 </node>
+                                <node concept="LkI2h" id="2RvrqSkrIm_" role="2OqNvi" />
                               </node>
                             </node>
                           </node>
-                          <node concept="2YIFZM" id="CaUCS_Wyom" role="2Oq$k0">
-                            <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
-                            <ref role="37wK5l" to="o3n2:4jjtc7WZTjd" resolve="defaultContext" />
-                          </node>
+                        </node>
+                        <node concept="2YIFZM" id="CaUCS_Wyom" role="2Oq$k0">
+                          <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
+                          <ref role="37wK5l" to="o3n2:4jjtc7WZTjd" resolve="defaultContext" />
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbF" id="CaUCS_Wyon" role="3cqZAp">
-                      <node concept="37vLTI" id="CaUCS_Wyoo" role="3clFbG">
-                        <node concept="2OqwBi" id="CaUCS_Wyop" role="37vLTx">
-                          <node concept="37vLTw" id="CaUCS_Wyoq" role="2Oq$k0">
-                            <ref role="3cqZAo" node="CaUCS_Wyoi" resolve="relativePathHelper" />
-                          </node>
-                          <node concept="liA8E" id="CaUCS_Wyor" role="2OqNvi">
-                            <ref role="37wK5l" to="o3n2:1AfwOXhJahx" resolve="getBasePath" />
-                          </node>
+                  </node>
+                  <node concept="3clFbF" id="CaUCS_Wyon" role="3cqZAp">
+                    <node concept="37vLTI" id="CaUCS_Wyoo" role="3clFbG">
+                      <node concept="2OqwBi" id="CaUCS_Wyop" role="37vLTx">
+                        <node concept="37vLTw" id="CaUCS_Wyoq" role="2Oq$k0">
+                          <ref role="3cqZAo" node="CaUCS_Wyoi" resolve="relativePathHelper" />
                         </node>
-                        <node concept="37vLTw" id="CaUCS_Wyos" role="37vLTJ">
-                          <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
+                        <node concept="liA8E" id="CaUCS_Wyor" role="2OqNvi">
+                          <ref role="37wK5l" to="o3n2:1AfwOXhJahx" resolve="getBasePath" />
                         </node>
+                      </node>
+                      <node concept="37vLTw" id="CaUCS_Wyos" role="37vLTJ">
+                        <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
                       </node>
                     </node>
                   </node>
@@ -907,11 +904,11 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="7MQ4nb0hkeB" role="u8lrQ" />
-          <node concept="3cpWs6" id="4kZvAQCcBSD" role="u8lrQ">
-            <node concept="37vLTw" id="4kZvAQCcBTS" role="3cqZAk">
-              <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
-            </node>
+        </node>
+        <node concept="3clFbH" id="7MQ4nb0hkeB" role="3cqZAp" />
+        <node concept="3cpWs6" id="4kZvAQCcBSD" role="3cqZAp">
+          <node concept="37vLTw" id="4kZvAQCcBTS" role="3cqZAk">
+            <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
           </node>
         </node>
       </node>
