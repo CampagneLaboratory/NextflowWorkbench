@@ -186,7 +186,7 @@
       <node concept="aVJcg" id="3gMg70bX6HN" role="aVJcv">
         <node concept="NbPM2" id="3gMg70bX6HM" role="aVJcq">
           <node concept="3Mxwew" id="3gMg70bX6HL" role="3MwsjC">
-            <property role="3MwjfP" value="1.0" />
+            <property role="3MwjfP" value="1.0.1" />
           </node>
         </node>
       </node>
@@ -253,6 +253,32 @@
                   <property role="2Ry0Am" value="org.campagnelab.workflow.run" />
                   <node concept="2Ry0Ak" id="5wD$zX1xKlD" role="2Ry0An">
                     <property role="2Ry0Am" value="jsch-0.1.53.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="1mpT3Anovj$" role="39821P">
+            <node concept="55IIr" id="1mpT3AnovjA" role="28jJRO">
+              <node concept="2Ry0Ak" id="1mpT3AnovC4" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1mpT3AnovC9" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.workflow.run" />
+                  <node concept="2Ry0Ak" id="1mpT3AnovCe" role="2Ry0An">
+                    <property role="2Ry0Am" value="closures-runtime.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="1mpT3AnovTI" role="39821P">
+            <node concept="55IIr" id="1mpT3AnovTK" role="28jJRO">
+              <node concept="2Ry0Ak" id="1mpT3AnovVu" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1mpT3AnovVz" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.workflow.run" />
+                  <node concept="2Ry0Ak" id="1mpT3AnovVC" role="2Ry0An">
+                    <property role="2Ry0Am" value="mps-collections.jar" />
                   </node>
                 </node>
               </node>
@@ -488,7 +514,7 @@
         </node>
         <node concept="1SiIV0" id="dhtvqDS6B3" role="3bR37C">
           <node concept="3bR9La" id="dhtvqDS6B4" role="1SiIV1">
-            <property role="3bR36h" value="true" />
+            <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="6eMkF2c4Sia" resolve="org.campagnelab.workflow.configuration" />
           </node>
         </node>
