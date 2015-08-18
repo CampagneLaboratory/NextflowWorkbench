@@ -3625,10 +3625,15 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1ERwB7" node="3OiMbJl7VF" resolve="ChannelFunctionMap" />
         <ref role="34QXea" node="5cB7qdZLDF0" resolve="ChannelFunction_KeyMap" />
+        <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
         <node concept="Vb9p2" id="7VH0NfrUwi$" role="3F10Kt" />
       </node>
       <node concept="3F0ifn" id="7VH0Nfrp_T0" role="3EZMnx">
         <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
+        <node concept="11LMrY" id="1NWscNjv$As" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F2HdR" id="7VH0Nfrp_T8" role="3EZMnx">
         <property role="2czwfO" value="," />
@@ -3637,6 +3642,7 @@
       </node>
       <node concept="3F0ifn" id="7VH0Nfrp_Tl" role="3EZMnx">
         <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
       </node>
       <node concept="2iRfu4" id="7VH0Nfrp_SQ" role="2iSdaV" />
     </node>
