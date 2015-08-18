@@ -1032,14 +1032,22 @@
           <ref role="2ryb1Q" node="1iB3OwqtihS" resolve="NextFlow_Options" />
           <node concept="2r$n1x" id="7nP575hsYUU" role="2r_Bvh">
             <ref role="2r$qp6" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
-            <node concept="Xl_RD" id="7nP575hsYUV" role="2r_lH1">
-              <property role="Xl_RC" value="${NEXTFLOW_PATH}" />
+            <node concept="2YIFZM" id="63JSI34uMkH" role="2r_lH1">
+              <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+              <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+              <node concept="Xl_RD" id="63JSI34uMzv" role="37wK5m">
+                <property role="Xl_RC" value="user.home" />
+              </node>
             </node>
           </node>
           <node concept="2r$n1x" id="7nP575hsYUW" role="2r_Bvh">
             <ref role="2r$qp6" node="5xwuoKL7P2L" resolve="workDirectory" />
-            <node concept="Xl_RD" id="6tb0ZSulozJ" role="2r_lH1">
-              <property role="Xl_RC" value="${org.campagnelab.workflow.work_dir}" />
+            <node concept="2YIFZM" id="63JSI34uQ4X" role="2r_lH1">
+              <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+              <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+              <node concept="Xl_RD" id="63JSI34uQ4Y" role="37wK5m">
+                <property role="Xl_RC" value="user.home" />
+              </node>
             </node>
           </node>
           <node concept="2r$n1x" id="7nP575hsYUY" role="2r_Bvh">
