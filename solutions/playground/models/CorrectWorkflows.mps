@@ -260,9 +260,7 @@
     <property role="TrG5h" value="analyze" />
     <node concept="2lYRya" id="3rUult5h7Fc" role="2ulM79">
       <property role="TrG5h" value="*.txt" />
-      <node concept="kktkh" id="1NhN7oYQGQt" role="2ybFLk">
-        <node concept="16pRw0" id="1NhN7oYQGQu" role="2y8EMt" />
-      </node>
+      <node concept="16pRw0" id="5Y8i9dED3Lr" role="2ybFLk" />
     </node>
     <node concept="2mjA9o" id="3rUult5h7Ei" role="2ulM7n">
       <property role="TrG5h" value="'index_*'" />
@@ -701,7 +699,6 @@
       </node>
       <node concept="1uYdA0" id="dNnsoyWuJu" role="1uLvPH">
         <ref role="1uK_4X" node="2aFge8j2_1t" resolve="alignments" />
-        <node concept="1yaZXp" id="dNnsoz9$Ii" role="1ylr64" />
         <node concept="1yaYav" id="2BFWbNnMeY5" role="1ylr64" />
       </node>
     </node>

@@ -2262,64 +2262,6 @@
       <ref role="1YaFvo" to="iowz:3JbPZMXXswk" resolve="ToListFunction" />
     </node>
   </node>
-  <node concept="18kY7G" id="3JbPZMXXu8n">
-    <property role="3GE5qa" value="channelFunctions" />
-    <property role="TrG5h" value="check_Flatten" />
-    <node concept="3clFbS" id="3JbPZMXXu8o" role="18ibNy">
-      <node concept="3Knyl0" id="2bVBkcPaUgm" role="3cqZAp">
-        <node concept="3clFbS" id="2bVBkcPaUgq" role="3KnTvU" />
-        <node concept="1Yb3XT" id="2bVBkcPaUaB" role="3KnVwV">
-          <property role="TrG5h" value="listType" />
-          <node concept="2DMOqp" id="2bVBkcPaUaD" role="1YbcFS">
-            <node concept="_YKpA" id="2bVBkcPaUb5" role="2DMOqq">
-              <node concept="33vP2l" id="2bVBkcPaUb6" role="_ZDj9">
-                <node concept="2DMOqv" id="2bVBkcPaUbS" role="lGtFl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="2bVBkcPaV6R" role="CjY0n">
-          <node concept="2MkqsV" id="3JbPZMXXudL" role="3cqZAp">
-            <node concept="1YBJjd" id="3JbPZMXXuee" role="2OEOjV">
-              <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
-            </node>
-            <node concept="Xl_RD" id="3JbPZMXXudN" role="2MkJ7o">
-              <property role="Xl_RC" value="This function can only be used on a list channel" />
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="2bVBkcPaTwM" role="3Ko5Z1">
-          <node concept="1YBJjd" id="2bVBkcPaTvh" role="2Oq$k0">
-            <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
-          </node>
-          <node concept="2qgKlT" id="1z1zDa9ZgPA" role="2OqNvi">
-            <ref role="37wK5l" to="mqvz:7mWvTummKDC" resolve="getPreviousNode" />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbJ" id="3JbPZMXXu9F" role="3cqZAp">
-        <node concept="3clFbS" id="3JbPZMXXu9G" role="3clFbx" />
-        <node concept="3y3z36" id="3JbPZMXXuaR" role="3clFbw">
-          <node concept="2OqwBi" id="3JbPZMXXuaS" role="3uHU7B">
-            <node concept="2OqwBi" id="3JbPZMXXuaT" role="2Oq$k0">
-              <node concept="1YBJjd" id="3JbPZMXXubZ" role="2Oq$k0">
-                <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
-              </node>
-              <node concept="3JvlWi" id="3JbPZMXXuaV" role="2OqNvi" />
-            </node>
-            <node concept="2yIwOk" id="3JbPZMXXuaW" role="2OqNvi" />
-          </node>
-          <node concept="35c_gC" id="3JbPZMXXuaX" role="3uHU7w">
-            <ref role="35c_gD" to="iowz:3v6eDgz_YY5" resolve="List" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="3JbPZMXXu8q" role="1YuTPh">
-      <property role="TrG5h" value="flatten" />
-      <ref role="1YaFvo" to="iowz:3m9W35nCwXC" resolve="Flatten" />
-    </node>
-  </node>
   <node concept="18kY7G" id="4TfcfnmaUJ2">
     <property role="TrG5h" value="check_InputChannel" />
     <node concept="3clFbS" id="4TfcfnmaUJ3" role="18ibNy">
@@ -4808,25 +4750,6 @@
                 <ref role="1YaFvo" to="tp2q:gK_YKtE" resolve="ListType" />
               </node>
               <node concept="3clFbS" id="4O3IO9tc9$h" role="DmIXo">
-                <node concept="34ab3g" id="4O3IO9tc9$i" role="3cqZAp">
-                  <property role="35gtTG" value="info" />
-                  <node concept="3cpWs3" id="4O3IO9tc9$j" role="34bqiv">
-                    <node concept="2OqwBi" id="4O3IO9tc9$k" role="3uHU7w">
-                      <node concept="1YBJjd" id="1Dtsvikuw2b" role="2Oq$k0">
-                        <ref role="1YBMHb" node="4O3IO9sQXsx" resolve="spread" />
-                      </node>
-                      <node concept="2qgKlT" id="4O3IO9tc9$m" role="2OqNvi">
-                        <ref role="37wK5l" to="mqvz:5rY6S$LQTw$" resolve="getDeepestType" />
-                        <node concept="1YBJjd" id="4O3IO9tc9$n" role="37wK5m">
-                          <ref role="1YBMHb" node="4O3IO9tc9$g" resolve="listType" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="4O3IO9tc9$o" role="3uHU7B">
-                      <property role="Xl_RC" value="type: " />
-                    </node>
-                  </node>
-                </node>
                 <node concept="3clFbF" id="1Dtsviku$q2" role="3cqZAp">
                   <node concept="2OqwBi" id="1Dtsviku_W5" role="3clFbG">
                     <node concept="37vLTw" id="1Dtsviku$q0" role="2Oq$k0">
@@ -6524,6 +6447,71 @@
     <node concept="1YaCAy" id="3AGDzXANhit" role="1YuTPh">
       <property role="TrG5h" value="hasConnectedChannel" />
       <ref role="1YaFvo" to="iowz:1z1zDaaJoJq" resolve="HasConnectedChannel" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3JbPZMXXu8n">
+    <property role="3GE5qa" value="channelFunctions.noArgFunctions" />
+    <property role="TrG5h" value="check_Flatten" />
+    <node concept="3clFbS" id="3JbPZMXXu8o" role="18ibNy">
+      <node concept="3Knyl0" id="2bVBkcPaUgm" role="3cqZAp">
+        <node concept="3clFbS" id="2bVBkcPaUgq" role="3KnTvU" />
+        <node concept="1Yb3XT" id="2bVBkcPaUaB" role="3KnVwV">
+          <property role="TrG5h" value="listType" />
+          <node concept="2DMOqp" id="2bVBkcPaUaD" role="1YbcFS">
+            <node concept="_YKpA" id="413P2gbYoBc" role="2DMOqq">
+              <node concept="33vP2l" id="413P2gbYoBd" role="_ZDj9">
+                <node concept="2DMOqv" id="413P2gbYoBl" role="lGtFl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="2bVBkcPaV6R" role="CjY0n">
+          <node concept="2MkqsV" id="3JbPZMXXudL" role="3cqZAp">
+            <node concept="1YBJjd" id="3JbPZMXXuee" role="2OEOjV">
+              <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
+            </node>
+            <node concept="Xl_RD" id="3JbPZMXXudN" role="2MkJ7o">
+              <property role="Xl_RC" value="This function can only be used on a list channel" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="413P2gbOfbG" role="3Ko5Z1">
+          <node concept="2OqwBi" id="2bVBkcPaTwM" role="2Oq$k0">
+            <node concept="1YBJjd" id="2bVBkcPaTvh" role="2Oq$k0">
+              <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
+            </node>
+            <node concept="2qgKlT" id="1z1zDa9ZgPA" role="2OqNvi">
+              <ref role="37wK5l" to="mqvz:7mWvTummKDC" resolve="getPreviousNode" />
+            </node>
+          </node>
+          <node concept="3JvlWi" id="413P2gbOfiy" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7jGIXQ0J2eZ" role="3cqZAp">
+        <node concept="3SKWN0" id="7jGIXQ0J2f9" role="3SKWNk">
+          <node concept="3clFbJ" id="3JbPZMXXu9F" role="3SKWNf">
+            <node concept="3clFbS" id="3JbPZMXXu9G" role="3clFbx" />
+            <node concept="3y3z36" id="3JbPZMXXuaR" role="3clFbw">
+              <node concept="2OqwBi" id="3JbPZMXXuaS" role="3uHU7B">
+                <node concept="2OqwBi" id="3JbPZMXXuaT" role="2Oq$k0">
+                  <node concept="1YBJjd" id="3JbPZMXXubZ" role="2Oq$k0">
+                    <ref role="1YBMHb" node="3JbPZMXXu8q" resolve="flatten" />
+                  </node>
+                  <node concept="3JvlWi" id="3JbPZMXXuaV" role="2OqNvi" />
+                </node>
+                <node concept="2yIwOk" id="3JbPZMXXuaW" role="2OqNvi" />
+              </node>
+              <node concept="35c_gC" id="3JbPZMXXuaX" role="3uHU7w">
+                <ref role="35c_gD" to="iowz:3v6eDgz_YY5" resolve="List" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3JbPZMXXu8q" role="1YuTPh">
+      <property role="TrG5h" value="flatten" />
+      <ref role="1YaFvo" to="iowz:3m9W35nCwXC" resolve="Flatten" />
     </node>
   </node>
 </model>
