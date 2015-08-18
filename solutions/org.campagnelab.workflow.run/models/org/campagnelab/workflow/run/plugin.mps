@@ -1031,14 +1031,22 @@
         <ref role="2ryb1Q" node="1iB3OwqtihS" resolve="NextFlow_Options" />
         <node concept="2r$n1x" id="7nP575hsYUU" role="2r_Bvh">
           <ref role="2r$qp6" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
-          <node concept="Xl_RD" id="3gR3WIjHE8B" role="2r_lH1">
-            <property role="Xl_RC" value="${NEXTFLOW_PATH}" />
+          <node concept="2YIFZM" id="12yE5OdHBwK" role="2r_lH1">
+            <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+            <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+            <node concept="Xl_RD" id="12yE5OdHBwL" role="37wK5m">
+              <property role="Xl_RC" value="user.home" />
+            </node>
           </node>
         </node>
         <node concept="2r$n1x" id="7nP575hsYUW" role="2r_Bvh">
           <ref role="2r$qp6" node="5xwuoKL7P2L" resolve="workDirectory" />
-          <node concept="Xl_RD" id="3gR3WIjHEGp" role="2r_lH1">
-            <property role="Xl_RC" value="${org.campagnelab.workflow.work_dir}" />
+          <node concept="2YIFZM" id="12yE5OdEQZP" role="2r_lH1">
+            <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+            <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+            <node concept="Xl_RD" id="12yE5OdEQZQ" role="37wK5m">
+              <property role="Xl_RC" value="user.home" />
+            </node>
           </node>
         </node>
         <node concept="2r$n1x" id="7nP575hsYUY" role="2r_Bvh">
@@ -1371,18 +1379,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="3Fn3V3URk_J" role="3cqZAp">
-          <node concept="3cpWsn" id="3Fn3V3URk_K" role="3cpWs9">
-            <property role="TrG5h" value="helper" />
-            <node concept="2YIFZM" id="3Fn3V3URk_L" role="33vP2m">
-              <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
-              <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
-            </node>
-            <node concept="3uibUv" id="3Fn3V3URk_M" role="1tU5fm">
-              <ref role="3uigEE" to="msyo:~MacroHelper" resolve="MacroHelper" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="v01rbtY5l3" role="3cqZAp">
           <node concept="2OqwBi" id="v01rbtY6vf" role="3clFbG">
             <node concept="37vLTw" id="1iB3OwqHdpa" role="2Oq$k0">
@@ -1390,20 +1386,12 @@
             </node>
             <node concept="liA8E" id="v01rbtYhDL" role="2OqNvi">
               <ref role="37wK5l" to="810:~TextFieldWithBrowseButton.setText(java.lang.String):void" resolve="setText" />
-              <node concept="2OqwBi" id="3Fn3V3URl3H" role="37wK5m">
-                <node concept="37vLTw" id="3Fn3V3URkYB" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3Fn3V3URk_K" resolve="helper" />
+              <node concept="2OqwBi" id="1iB3OwquLnv" role="37wK5m">
+                <node concept="37vLTw" id="v01rbtYhE7" role="2Oq$k0">
+                  <ref role="3cqZAo" node="14R2qyOCuuF" resolve="options" />
                 </node>
-                <node concept="liA8E" id="3Fn3V3URloY" role="2OqNvi">
-                  <ref role="37wK5l" to="msyo:~MacroHelper.shrinkPath(java.lang.String):java.lang.String" resolve="shrinkPath" />
-                  <node concept="2OqwBi" id="1iB3OwquLnv" role="37wK5m">
-                    <node concept="37vLTw" id="v01rbtYhE7" role="2Oq$k0">
-                      <ref role="3cqZAo" node="14R2qyOCuuF" resolve="options" />
-                    </node>
-                    <node concept="2sxana" id="20R_QEEvdSL" role="2OqNvi">
-                      <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
-                    </node>
-                  </node>
+                <node concept="2sxana" id="20R_QEEvdSL" role="2OqNvi">
+                  <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
                 </node>
               </node>
             </node>
@@ -1416,20 +1404,12 @@
             </node>
             <node concept="liA8E" id="1iB3OwqFFf_" role="2OqNvi">
               <ref role="37wK5l" to="810:~TextFieldWithBrowseButton.setText(java.lang.String):void" resolve="setText" />
-              <node concept="2OqwBi" id="3Fn3V3URlVU" role="37wK5m">
-                <node concept="37vLTw" id="3Fn3V3URlMm" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3Fn3V3URk_K" resolve="helper" />
+              <node concept="2OqwBi" id="1iB3OwqFFGh" role="37wK5m">
+                <node concept="37vLTw" id="1iB3OwqFFs$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="14R2qyOCuuF" resolve="options" />
                 </node>
-                <node concept="liA8E" id="3Fn3V3URmhb" role="2OqNvi">
-                  <ref role="37wK5l" to="msyo:~MacroHelper.shrinkPath(java.lang.String):java.lang.String" resolve="shrinkPath" />
-                  <node concept="2OqwBi" id="1iB3OwqFFGh" role="37wK5m">
-                    <node concept="37vLTw" id="1iB3OwqFFs$" role="2Oq$k0">
-                      <ref role="3cqZAo" node="14R2qyOCuuF" resolve="options" />
-                    </node>
-                    <node concept="2sxana" id="5xwuoKL8sS_" role="2OqNvi">
-                      <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
-                    </node>
-                  </node>
+                <node concept="2sxana" id="5xwuoKL8sS_" role="2OqNvi">
+                  <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
                 </node>
               </node>
             </node>
@@ -3396,8 +3376,12 @@
                     <ref role="2sxfKC" node="1iB3Owqtii7" resolve="NEXTFLOW_HOME" />
                   </node>
                 </node>
-                <node concept="Xl_RD" id="274AKIgZLku" role="37vLTx">
-                  <property role="Xl_RC" value="${NEXTFLOW_PATH}" />
+                <node concept="2YIFZM" id="3NOLkRLvn6v" role="37vLTx">
+                  <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                  <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                  <node concept="Xl_RD" id="3NOLkRLvn6w" role="37wK5m">
+                    <property role="Xl_RC" value="user.home" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -3422,8 +3406,12 @@
                     <ref role="2sxfKC" node="5xwuoKL7P2L" resolve="workDirectory" />
                   </node>
                 </node>
-                <node concept="Xl_RD" id="274AKIh3fqP" role="37vLTx">
-                  <property role="Xl_RC" value="${org.campagnelab.workflow.work_dir}" />
+                <node concept="2YIFZM" id="58x94mnjfex" role="37vLTx">
+                  <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                  <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                  <node concept="Xl_RD" id="58x94mnjfey" role="37wK5m">
+                    <property role="Xl_RC" value="user.home" />
+                  </node>
                 </node>
               </node>
             </node>
