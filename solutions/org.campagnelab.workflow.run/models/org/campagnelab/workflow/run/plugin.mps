@@ -923,13 +923,8 @@
     <node concept="yHkDc" id="14R2qyOBxpX" role="yHkHg">
       <node concept="yHkD3" id="14R2qyOBxpY" role="yHkCN">
         <property role="TrG5h" value="panel" />
-        <node concept="2ShNRf" id="14R2qyOBxq0" role="33vP2m">
-          <node concept="1pGfFk" id="v01rbu1v$S" role="2ShVmc">
-            <ref role="37wK5l" node="v01rbtVBnZ" resolve="NextFlowConfigurationOptions" />
-          </node>
-        </node>
         <node concept="3uibUv" id="1iB3OwqtTZf" role="1tU5fm">
-          <ref role="3uigEE" node="v01rbtVlXX" resolve="NextFlowConfigurationOptions" />
+          <ref role="3uigEE" node="v01rbtVlXX" resolve="NextFlowConfigurationEditor" />
         </node>
       </node>
       <node concept="yHkD3" id="1iB3OwqDHId" role="yHkCN">
@@ -937,34 +932,35 @@
         <node concept="yHkHH" id="7gqUGqcSLM2" role="1tU5fm">
           <ref role="yHkHG" node="14R2qyOBxpW" resolve="NextFlow_RunParameters" />
         </node>
-        <node concept="2ShNRf" id="1iB3OwqDIP3" role="33vP2m">
-          <node concept="yHkDB" id="1iB3OwqDJxZ" role="2ShVmc">
-            <ref role="yHkDA" node="14R2qyOBxpW" resolve="NextFlow_RunParameters" />
-          </node>
-        </node>
       </node>
       <node concept="yHkDR" id="14R2qyOBxq2" role="yHkDf">
         <node concept="3clFbS" id="14R2qyOBxq3" role="2VODD2">
-          <node concept="3clFbF" id="6tb0ZSuo0TO" role="3cqZAp">
-            <node concept="2OqwBi" id="6tb0ZSuo1GB" role="3clFbG">
-              <node concept="yHkD2" id="6tb0ZSuo0TM" role="2Oq$k0">
+          <node concept="3clFbF" id="14R2qyOBxq4" role="3cqZAp">
+            <node concept="37vLTI" id="20L0oaSh9cL" role="3clFbG">
+              <node concept="yHkD2" id="14R2qyOBxq5" role="37vLTJ">
                 <ref role="3cqZAo" node="14R2qyOBxpY" resolve="panel" />
               </node>
-              <node concept="liA8E" id="6tb0ZSuo6bp" role="2OqNvi">
-                <ref role="37wK5l" node="v01rbtX9nK" resolve="reset" />
-                <node concept="2OqwBi" id="6tb0ZSuo7B9" role="37wK5m">
-                  <node concept="yHkD2" id="6tb0ZSuo7wZ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1iB3OwqDHId" resolve="mySettings" />
-                  </node>
-                  <node concept="yHkDZ" id="6tb0ZSuo7Zr" role="2OqNvi">
-                    <ref role="yHkDY" node="1iB3Owqtn$$" resolve="properties" />
-                  </node>
+              <node concept="2ShNRf" id="20L0oaShbZT" role="37vLTx">
+                <node concept="1pGfFk" id="20L0oaShbZU" role="2ShVmc">
+                  <ref role="37wK5l" node="v01rbtVBnZ" resolve="NextFlowConfigurationEditor" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="14R2qyOBxq4" role="3cqZAp">
-            <node concept="yHkD2" id="14R2qyOBxq5" role="3clFbG">
+          <node concept="3clFbF" id="NJYnVBMVW5" role="3cqZAp">
+            <node concept="37vLTI" id="NJYnVBMWsO" role="3clFbG">
+              <node concept="yHkD2" id="NJYnVBMVW3" role="37vLTJ">
+                <ref role="3cqZAo" node="1iB3OwqDHId" resolve="mySettings" />
+              </node>
+              <node concept="2ShNRf" id="NJYnVBMXre" role="37vLTx">
+                <node concept="yHkDB" id="NJYnVBMXrf" role="2ShVmc">
+                  <ref role="yHkDA" node="14R2qyOBxpW" resolve="NextFlow_RunParameters" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="20L0oaShcmi" role="3cqZAp">
+            <node concept="yHkD2" id="20L0oaShcmg" role="3clFbG">
               <ref role="3cqZAo" node="14R2qyOBxpY" resolve="panel" />
             </node>
           </node>
@@ -1173,7 +1169,7 @@
     </node>
   </node>
   <node concept="312cEu" id="v01rbtVlXX">
-    <property role="TrG5h" value="NextFlowConfigurationOptions" />
+    <property role="TrG5h" value="NextFlowConfigurationEditor" />
     <node concept="3uibUv" id="7gqUGqcS2sV" role="1zkMxy">
       <ref role="3uigEE" to="xg1q:~JBPanel" resolve="JBPanel" />
     </node>
@@ -2785,7 +2781,7 @@
             <node concept="3cpWsn" id="5gyVhZ17JjJ" role="3cpWs9">
               <property role="TrG5h" value="rRunParametersEditor" />
               <node concept="3uibUv" id="1iB3OwqudJo" role="1tU5fm">
-                <ref role="3uigEE" node="v01rbtVlXX" resolve="NextFlowConfigurationOptions" />
+                <ref role="3uigEE" node="v01rbtVlXX" resolve="NextFlowConfigurationEditor" />
               </node>
               <node concept="2OqwBi" id="5gyVhZ17JjL" role="33vP2m">
                 <node concept="yHkDH" id="5gyVhZ17JjM" role="2Oq$k0">
