@@ -5,9 +5,6 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/jsch-0.1.53.jar" />
-  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
