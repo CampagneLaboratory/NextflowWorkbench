@@ -935,11 +935,31 @@
     <node concept="yHkHE" id="6jJN$rY0V2h" role="yHkHi">
       <property role="TrG5h" value="nextflowPathExpanded" />
       <node concept="3clFbS" id="6jJN$rY0V2i" role="3clF47">
-        <node concept="3cpWs6" id="6jJN$rY0VLm" role="3cqZAp">
-          <node concept="2OqwBi" id="6jJN$rY0VUO" role="3cqZAk">
-            <node concept="2WthIp" id="6jJN$rY0VLE" role="2Oq$k0" />
-            <node concept="yHkDZ" id="6jJN$rY0WOp" role="2OqNvi">
-              <ref role="yHkDY" node="6jJN$rY0pjT" resolve="nextflowPath" />
+        <node concept="3cpWs8" id="3CMBNK_lF4D" role="3cqZAp">
+          <node concept="3cpWsn" id="3CMBNK_lF4E" role="3cpWs9">
+            <property role="TrG5h" value="helper" />
+            <node concept="2YIFZM" id="3CMBNK_lF4F" role="33vP2m">
+              <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+              <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+            </node>
+            <node concept="3uibUv" id="3CMBNK_lF4G" role="1tU5fm">
+              <ref role="3uigEE" to="msyo:~MacroHelper" resolve="MacroHelper" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3CMBNK_lF4H" role="3cqZAp">
+          <node concept="2OqwBi" id="3CMBNK_lF4I" role="3cqZAk">
+            <node concept="37vLTw" id="3CMBNK_lF4J" role="2Oq$k0">
+              <ref role="3cqZAo" node="3CMBNK_lF4E" resolve="helper" />
+            </node>
+            <node concept="liA8E" id="3CMBNK_lF4K" role="2OqNvi">
+              <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+              <node concept="2OqwBi" id="3CMBNK_lF4L" role="37wK5m">
+                <node concept="2WthIp" id="3CMBNK_lF4M" role="2Oq$k0" />
+                <node concept="yHkDZ" id="3CMBNK_lF4N" role="2OqNvi">
+                  <ref role="yHkDY" node="6jJN$rY0pjT" resolve="nextflowPath" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -949,11 +969,31 @@
     <node concept="yHkHE" id="6jJN$rY0ZuN" role="yHkHi">
       <property role="TrG5h" value="workDirectoryExpanded" />
       <node concept="3clFbS" id="6jJN$rY0ZuO" role="3clF47">
-        <node concept="3cpWs6" id="6jJN$rY0ZuP" role="3cqZAp">
-          <node concept="2OqwBi" id="6jJN$rY0ZuQ" role="3cqZAk">
-            <node concept="2WthIp" id="6jJN$rY0ZuR" role="2Oq$k0" />
-            <node concept="yHkDZ" id="6jJN$rY0ZuS" role="2OqNvi">
-              <ref role="yHkDY" node="6jJN$rY0pjT" resolve="nextflowPath" />
+        <node concept="3cpWs8" id="3CMBNK_lt2X" role="3cqZAp">
+          <node concept="3cpWsn" id="3CMBNK_lt2Y" role="3cpWs9">
+            <property role="TrG5h" value="helper" />
+            <node concept="2YIFZM" id="3CMBNK_lt2Z" role="33vP2m">
+              <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+              <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+            </node>
+            <node concept="3uibUv" id="3CMBNK_lt30" role="1tU5fm">
+              <ref role="3uigEE" to="msyo:~MacroHelper" resolve="MacroHelper" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3CMBNK_lEWH" role="3cqZAp">
+          <node concept="2OqwBi" id="3CMBNK_lt32" role="3cqZAk">
+            <node concept="37vLTw" id="3CMBNK_lt33" role="2Oq$k0">
+              <ref role="3cqZAo" node="3CMBNK_lt2Y" resolve="helper" />
+            </node>
+            <node concept="liA8E" id="3CMBNK_lt34" role="2OqNvi">
+              <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+              <node concept="2OqwBi" id="6jJN$rY0ZuQ" role="37wK5m">
+                <node concept="2WthIp" id="6jJN$rY0ZuR" role="2Oq$k0" />
+                <node concept="yHkDZ" id="3CMBNK_lG3B" role="2OqNvi">
+                  <ref role="yHkDY" node="6jJN$rY0OQg" resolve="workDirectory" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1333,6 +1373,67 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="7gJlaQtJr33" role="3cqZAp">
+          <node concept="3clFbS" id="7gJlaQtJr35" role="3clFbx">
+            <node concept="3clFbF" id="7gJlaQtJsC0" role="3cqZAp">
+              <node concept="37vLTI" id="7gJlaQtJtgZ" role="3clFbG">
+                <node concept="Xl_RD" id="7gJlaQtJtl9" role="37vLTx">
+                  <property role="Xl_RC" value="${NEXTFLOW_PATH}" />
+                </node>
+                <node concept="2OqwBi" id="7gJlaQtJsGz" role="37vLTJ">
+                  <node concept="37vLTw" id="7gJlaQtJsBY" role="2Oq$k0">
+                    <ref role="3cqZAo" node="14R2qyOCuuF" resolve="configuration" />
+                  </node>
+                  <node concept="yHkDZ" id="7gJlaQtJsWd" role="2OqNvi">
+                    <ref role="yHkDY" node="6jJN$rY0pjT" resolve="nextflowPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="7gJlaQtJsji" role="3clFbw">
+            <node concept="10Nm6u" id="7gJlaQtJspM" role="3uHU7w" />
+            <node concept="2OqwBi" id="7gJlaQtJrJp" role="3uHU7B">
+              <node concept="37vLTw" id="7gJlaQtJrix" role="2Oq$k0">
+                <ref role="3cqZAo" node="14R2qyOCuuF" resolve="configuration" />
+              </node>
+              <node concept="yHkDZ" id="7gJlaQtJs1c" role="2OqNvi">
+                <ref role="yHkDY" node="6jJN$rY0pjT" resolve="nextflowPath" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7gJlaQtJwa4" role="3cqZAp">
+          <node concept="3clFbS" id="7gJlaQtJwa5" role="3clFbx">
+            <node concept="3clFbF" id="7gJlaQtJwa6" role="3cqZAp">
+              <node concept="37vLTI" id="7gJlaQtJwa7" role="3clFbG">
+                <node concept="Xl_RD" id="7gJlaQtJwa8" role="37vLTx">
+                  <property role="Xl_RC" value="${org.campagnelab.workflow.work_dir}" />
+                </node>
+                <node concept="2OqwBi" id="7gJlaQtJwa9" role="37vLTJ">
+                  <node concept="37vLTw" id="7gJlaQtJwaa" role="2Oq$k0">
+                    <ref role="3cqZAo" node="14R2qyOCuuF" resolve="configuration" />
+                  </node>
+                  <node concept="yHkDZ" id="7gJlaQtLinD" role="2OqNvi">
+                    <ref role="yHkDY" node="6jJN$rY0OQg" resolve="workDirectory" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="7gJlaQtJwac" role="3clFbw">
+            <node concept="10Nm6u" id="7gJlaQtJwad" role="3uHU7w" />
+            <node concept="2OqwBi" id="7gJlaQtJwae" role="3uHU7B">
+              <node concept="37vLTw" id="7gJlaQtJwaf" role="2Oq$k0">
+                <ref role="3cqZAo" node="14R2qyOCuuF" resolve="configuration" />
+              </node>
+              <node concept="yHkDZ" id="7gJlaQtJwyS" role="2OqNvi">
+                <ref role="yHkDY" node="6jJN$rY0OQg" resolve="workDirectory" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7gJlaQtJtnR" role="3cqZAp" />
         <node concept="3clFbF" id="v01rbtY5l3" role="3cqZAp">
           <node concept="2OqwBi" id="v01rbtY6vf" role="3clFbG">
             <node concept="37vLTw" id="1iB3OwqHdpa" role="2Oq$k0">
