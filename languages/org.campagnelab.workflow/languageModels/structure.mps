@@ -2046,7 +2046,7 @@
     <property role="TrG5h" value="CollectFile" />
     <property role="34LRSv" value="collectFile" />
     <property role="R4oN_" value="Items emits by a source channel can be saved to one ore more files" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
     <node concept="1TJgyj" id="7VH0Nfrp_So" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parameters" />
