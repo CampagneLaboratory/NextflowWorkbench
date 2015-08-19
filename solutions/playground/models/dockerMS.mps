@@ -207,7 +207,7 @@
   </node>
   <node concept="VuPG2" id="6fIiQMMz3r_">
     <property role="TrG5h" value="artifacts-software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1380388903303267147.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2009622775710127905.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="6fIiQMM$wKy" role="VuOVn">
       <node concept="VtuK3" id="6fIiQMM$_RF" role="VuO5T">
@@ -231,7 +231,7 @@
     <node concept="VugRC" id="3P1oJbjPVEo" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPVEp" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPVEq" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software \&#10;&amp;&amp; wget -O /home/gobyweb/software/plugins-2.5.0-sdk.tar.gz  &quot;http://campagnelab.org/?wpdmact=process&amp;did=MTM1LmhvdGxpbms&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.5.0-sdk.tar.gz \&#10;&amp;&amp; rm -f /home/gobyweb/software/plugins-2.5.0-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin:/home/gobyweb/software/plugins-sdk-2.5.0/bin&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;source $INSTALLATION_DIRECTORY/home/gobyweb/software/plugins-sdk-2.5.0/bin/plugins-export-env&quot; &gt;&gt; $HOME/.bashrc" />
+          <property role="19SUeA" value="cd /home/gobyweb/software \&#10;&amp;&amp; wget -O /home/gobyweb/software/plugins-2.5.1-sdk.tar.gz  &quot;http://campagnelab.org/?wpdmact=process&amp;did=MTM2LmhvdGxpbms&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.5.1-sdk.tar.gz \&#10;&amp;&amp; rm -f /home/gobyweb/software/plugins-2.5.1-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin:/home/gobyweb/software/plugins-sdk-2.5.1/bin&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;source $INSTALLATION_DIRECTORY/home/gobyweb/software/plugins-sdk-2.5.1/bin/plugins-export-env&quot; &gt;&gt; $HOME/.bashrc" />
         </node>
       </node>
     </node>
@@ -251,7 +251,7 @@
     <node concept="VugRC" id="3P1oJbjPLK9" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPLKD" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPLKE" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; $HOME/.bashrc" />
+          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; rm -rf plugins/analyses/ plugins/aligners/ plugins/tasks/ plugins/filesets \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; $HOME/.bashrc " />
         </node>
       </node>
     </node>
@@ -261,18 +261,12 @@
     <node concept="VugRC" id="3P1oJbjPVEr" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPVEs" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPVEt" role="19SJt6">
-          <property role="19SUeA" value="mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export REPOSITORY_DIR=/scratchLocal/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS" />
+          <property role="19SUeA" value="mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export REPOSITORY_DIR=/scratchLocal/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS \&#10;&amp;&amp; echo &quot;export JOB_AREA=/home/gobyweb/GOBYWEB_SGE_JOBS&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/FILESET_AREA \&#10;&amp;&amp; echo &quot;export FILESET_AREA=/home/gobyweb/FILESET_AREA&quot; &gt;&gt; $HOME/.bashrc " />
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="39YFbxZhHcT" role="3blhQR">
-      <ref role="3blhQY" node="39YFbxZhHnV" resolve="artifacts-software_Image" />
-    </node>
-    <node concept="3blhQM" id="39YFbxZhHin" role="3blhQR">
-      <ref role="3blhQY" node="39YFbxZhHnV" resolve="artifacts-software_Image" />
-    </node>
-    <node concept="3blhQM" id="39YFbxZhHnW" role="3blhQR">
-      <ref role="3blhQY" node="39YFbxZhHnV" resolve="artifacts-software_Image" />
+    <node concept="3blhQM" id="39YFbxZhJU4" role="3blhQR">
+      <ref role="3blhQY" node="39YFbxZhJU3" resolve="artifacts-software_Image" />
     </node>
   </node>
   <node concept="2E_JVc" id="3P1oJbjPVxa">
@@ -467,13 +461,12 @@
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="39YFbxZhHnV">
-    <property role="2E_JEh" value="16fa5d5ecaa8" />
+  <node concept="2E_JVc" id="39YFbxZhJU3">
+    <property role="2E_JEh" value="87b7e0bd8036" />
     <property role="TrG5h" value="artifacts-software_Image" />
     <property role="GSh9r" value="mas2181/artifacts-software:latest" />
-    <property role="3GE5qa" value="published_images" />
     <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifacts-software" />
-    <node concept="Gyxd7" id="39YFbxZhHrK" role="Gyxcj">
+    <node concept="Gyxd7" id="39YFbxZhJUg" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="artifacts-software" />
       <property role="Gyxd1" value="latest" />
