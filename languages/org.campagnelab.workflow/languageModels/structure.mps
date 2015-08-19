@@ -2193,6 +2193,7 @@
   <node concept="1TIwiD" id="3dQaW8GDxTQ">
     <property role="TrG5h" value="TupleLiteralExpression" />
     <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="tuple expression" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="3dQaW8GDyl9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
