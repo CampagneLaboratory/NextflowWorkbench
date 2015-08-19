@@ -532,10 +532,16 @@
     <node concept="yHkDC" id="6jJN$rY0pjT" role="yHkDi">
       <property role="TrG5h" value="nextflowPath" />
       <node concept="17QB3L" id="6jJN$rY0NDN" role="1tU5fm" />
+      <node concept="Xl_RD" id="4g4np3aj9wK" role="33vP2m">
+        <property role="Xl_RC" value="${NEXTFLOW_PATH}" />
+      </node>
     </node>
     <node concept="yHkDC" id="6jJN$rY0OQg" role="yHkDi">
       <property role="TrG5h" value="workDirectory" />
       <node concept="17QB3L" id="6jJN$rY0P6P" role="1tU5fm" />
+      <node concept="Xl_RD" id="4g4np3ajabM" role="33vP2m">
+        <property role="Xl_RC" value="${org.campagnelab.workflow.work_dir}" />
+      </node>
     </node>
     <node concept="yHkDC" id="6jJN$rY0POI" role="yHkDi">
       <property role="TrG5h" value="remoteSubmission" />
@@ -935,11 +941,20 @@
     <node concept="yHkHE" id="6jJN$rY0V2h" role="yHkHi">
       <property role="TrG5h" value="nextflowPathExpanded" />
       <node concept="3clFbS" id="6jJN$rY0V2i" role="3clF47">
-        <node concept="3cpWs6" id="6jJN$rY0VLm" role="3cqZAp">
-          <node concept="2OqwBi" id="6jJN$rY0VUO" role="3cqZAk">
-            <node concept="2WthIp" id="6jJN$rY0VLE" role="2Oq$k0" />
-            <node concept="yHkDZ" id="6jJN$rY0WOp" role="2OqNvi">
-              <ref role="yHkDY" node="6jJN$rY0pjT" resolve="nextflowPath" />
+        <node concept="3cpWs6" id="4g4np3ajgxu" role="3cqZAp">
+          <node concept="2OqwBi" id="1dZwp69gkbY" role="3cqZAk">
+            <node concept="2YIFZM" id="1dZwp69gkbd" role="2Oq$k0">
+              <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+              <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+            </node>
+            <node concept="liA8E" id="1dZwp69gkkm" role="2OqNvi">
+              <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+              <node concept="2OqwBi" id="4g4np3ajgxv" role="37wK5m">
+                <node concept="2WthIp" id="4g4np3ajgxw" role="2Oq$k0" />
+                <node concept="yHkDZ" id="4g4np3ajgxx" role="2OqNvi">
+                  <ref role="yHkDY" node="6jJN$rY0pjT" resolve="nextflowPath" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -949,11 +964,20 @@
     <node concept="yHkHE" id="6jJN$rY0ZuN" role="yHkHi">
       <property role="TrG5h" value="workDirectoryExpanded" />
       <node concept="3clFbS" id="6jJN$rY0ZuO" role="3clF47">
-        <node concept="3cpWs6" id="6jJN$rY0ZuP" role="3cqZAp">
-          <node concept="2OqwBi" id="6jJN$rY0ZuQ" role="3cqZAk">
-            <node concept="2WthIp" id="6jJN$rY0ZuR" role="2Oq$k0" />
-            <node concept="yHkDZ" id="6jJN$rY0ZuS" role="2OqNvi">
-              <ref role="yHkDY" node="6jJN$rY0pjT" resolve="nextflowPath" />
+        <node concept="3cpWs6" id="6jJN$rY0VLm" role="3cqZAp">
+          <node concept="2OqwBi" id="4g4np3ajgBB" role="3cqZAk">
+            <node concept="2YIFZM" id="4g4np3ajgBC" role="2Oq$k0">
+              <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+              <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+            </node>
+            <node concept="liA8E" id="4g4np3ajgBD" role="2OqNvi">
+              <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+              <node concept="2OqwBi" id="6jJN$rY0VUO" role="37wK5m">
+                <node concept="2WthIp" id="6jJN$rY0VLE" role="2Oq$k0" />
+                <node concept="yHkDZ" id="4g4np3ajh_C" role="2OqNvi">
+                  <ref role="yHkDY" node="6jJN$rY0OQg" resolve="workDirectory" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
