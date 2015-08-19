@@ -262,6 +262,7 @@
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
     </language>
   </registry>
   <node concept="1M2fIO" id="7gAPJCETViv">
@@ -1525,7 +1526,7 @@
     <node concept="1N5Pfh" id="2fLVrqR922$" role="1Mr941">
       <ref role="1N5Vy1" to="iowz:2fLVrqQZ5t6" />
       <node concept="1dDu$B" id="2fLVrqR922B" role="1N6uqs">
-        <ref role="1dDu$A" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
+        <ref role="1dDu$A" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
       </node>
     </node>
   </node>
@@ -1751,6 +1752,25 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="dOBxz$1jVt">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <ref role="1M2myG" to="iowz:dOBxz$1hTY" resolve="Skip" />
+    <node concept="nKS2y" id="dOBxz$1jW2" role="1MLUbF">
+      <node concept="3clFbS" id="dOBxz$1jW3" role="2VODD2">
+        <node concept="3clFbF" id="dOBxz$1jW4" role="3cqZAp">
+          <node concept="3clFbC" id="dOBxz$1jW5" role="3clFbG">
+            <node concept="35c_gC" id="dOBxz$1jW6" role="3uHU7w">
+              <ref role="35c_gD" to="iowz:XaRILis0lJ" resolve="SplitCSV" />
+            </node>
+            <node concept="2OqwBi" id="dOBxz$1jW7" role="3uHU7B">
+              <node concept="nLn13" id="dOBxz$1jW8" role="2Oq$k0" />
+              <node concept="2yIwOk" id="dOBxz$1jW9" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
   <node concept="1M2fIO" id="dOBxz$1iID">
     <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
     <ref role="1M2myG" to="iowz:3EHTfOIRUR6" resolve="Sep" />
@@ -1770,19 +1790,38 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="dOBxzyNubw">
+  <node concept="1M2fIO" id="dOBxz$1jP7">
     <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
-    <ref role="1M2myG" to="iowz:dOBxzyNteP" resolve="FileSplitOption" />
-    <node concept="osYL8" id="dOBxzyNulz" role="1MLXOK">
-      <node concept="3clFbS" id="dOBxzyNul$" role="2VODD2">
-        <node concept="3clFbF" id="dOBxzyNuqv" role="3cqZAp">
-          <node concept="3y3z36" id="dOBxzyNvO7" role="3clFbG">
-            <node concept="2OqwBi" id="dOBxzyNvul" role="3uHU7B">
-              <node concept="2H4GUG" id="dOBxzyNvqk" role="2Oq$k0" />
-              <node concept="2yIwOk" id="dOBxzyNvIv" role="2OqNvi" />
+    <ref role="1M2myG" to="iowz:dOBxz$1hT1" resolve="Strip" />
+    <node concept="nKS2y" id="dOBxz$1jPD" role="1MLUbF">
+      <node concept="3clFbS" id="dOBxz$1jPE" role="2VODD2">
+        <node concept="3clFbF" id="dOBxz$1jPF" role="3cqZAp">
+          <node concept="3clFbC" id="dOBxz$1jPG" role="3clFbG">
+            <node concept="35c_gC" id="dOBxz$1jPH" role="3uHU7w">
+              <ref role="35c_gD" to="iowz:XaRILis0lJ" resolve="SplitCSV" />
             </node>
-            <node concept="35c_gC" id="dOBxzyNuUD" role="3uHU7w">
-              <ref role="35c_gD" to="iowz:3aOvEIt8rqk" resolve="NewIntegerLiteral" />
+            <node concept="2OqwBi" id="dOBxz$1jPI" role="3uHU7B">
+              <node concept="nLn13" id="dOBxz$1jPJ" role="2Oq$k0" />
+              <node concept="2yIwOk" id="dOBxz$1jPK" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="dOBxzz$NF8">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <ref role="1M2myG" to="iowz:dOBxzz$N_i" resolve="Header" />
+    <node concept="nKS2y" id="dOBxz$1jJj" role="1MLUbF">
+      <node concept="3clFbS" id="dOBxz$1jJk" role="2VODD2">
+        <node concept="3clFbF" id="dOBxz$1jJl" role="3cqZAp">
+          <node concept="3clFbC" id="dOBxz$1jJm" role="3clFbG">
+            <node concept="35c_gC" id="dOBxz$1jJn" role="3uHU7w">
+              <ref role="35c_gD" to="iowz:XaRILis0lJ" resolve="SplitCSV" />
+            </node>
+            <node concept="2OqwBi" id="dOBxz$1jJo" role="3uHU7B">
+              <node concept="nLn13" id="dOBxz$1jJp" role="2Oq$k0" />
+              <node concept="2yIwOk" id="dOBxz$1jJq" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -1819,14 +1858,20 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="71ITBVySQS_">
-    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
-    <ref role="1M2myG" to="iowz:1qs9CHFOmDW" resolve="ArgRegexQualifierPredicate" />
-    <node concept="nKS2y" id="71ITBVySQSS" role="1MLUbF">
-      <node concept="3clFbS" id="71ITBVySQST" role="2VODD2">
-        <node concept="3clFbF" id="71ITBVySQXQ" role="3cqZAp">
-          <node concept="3clFbT" id="71ITBVySQXP" role="3clFbG">
-            <property role="3clFbU" value="false" />
+  <node concept="1M2fIO" id="dOBxzyNubw">
+    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
+    <ref role="1M2myG" to="iowz:dOBxzyNteP" resolve="FileSplitOption" />
+    <node concept="osYL8" id="dOBxzyNulz" role="1MLXOK">
+      <node concept="3clFbS" id="dOBxzyNul$" role="2VODD2">
+        <node concept="3clFbF" id="dOBxzyNuqv" role="3cqZAp">
+          <node concept="3y3z36" id="dOBxzyNvO7" role="3clFbG">
+            <node concept="2OqwBi" id="dOBxzyNvul" role="3uHU7B">
+              <node concept="2H4GUG" id="dOBxzyNvqk" role="2Oq$k0" />
+              <node concept="2yIwOk" id="dOBxzyNvIv" role="2OqNvi" />
+            </node>
+            <node concept="35c_gC" id="dOBxzyNuUD" role="3uHU7w">
+              <ref role="35c_gD" to="iowz:3aOvEIt8rqk" resolve="NewIntegerLiteral" />
+            </node>
           </node>
         </node>
       </node>
@@ -1857,180 +1902,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="1fcQp_G2XV">
-    <property role="3GE5qa" value="scripts.conditionalScript" />
-    <ref role="1M2myG" to="iowz:5DmojlqPc7e" resolve="ConditionalVariableRef" />
-    <node concept="nKS2y" id="1fcQp_G3mq" role="1MLUbF">
-      <node concept="3clFbS" id="1fcQp_G3mr" role="2VODD2">
-        <node concept="3clFbF" id="1fcQp_G60v" role="3cqZAp">
-          <node concept="2OqwBi" id="1fcQp_GgZr" role="3clFbG">
-            <node concept="2OqwBi" id="1fcQp_G6qU" role="2Oq$k0">
-              <node concept="nLn13" id="1fcQp_G60u" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="1fcQp_GgBN" role="2OqNvi">
-                <node concept="1xMEDy" id="1fcQp_GgBP" role="1xVPHs">
-                  <node concept="chp4Y" id="1fcQp_GgHa" role="ri$Ld">
-                    <ref role="cht4Q" to="iowz:YNIIGPa1iv" resolve="BaseLanguageScriptAdapter" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="1fcQp_GgQI" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="1fcQp_GuhR" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="3uBbkEdVkhE">
-    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
-    <ref role="1M2myG" to="iowz:6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
-    <node concept="nKS2y" id="3uBbkEdVkDV" role="1MLUbF">
-      <node concept="3clFbS" id="3uBbkEdVkDW" role="2VODD2">
-        <node concept="3SKdUt" id="3uBbkEdVkT8" role="3cqZAp">
-          <node concept="3SKdUq" id="3uBbkEdVkVP" role="3SKWNk">
-            <property role="3SKdUp" value="temporarily disable functions with closures and channel refs. They need review and discussion" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="3uBbkEdVkIR" role="3cqZAp">
-          <node concept="3clFbT" id="3uBbkEdVkIQ" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="79W9gdU9UVO">
-    <property role="3GE5qa" value="channelFunctions" />
-    <ref role="1M2myG" to="iowz:XaRILjgRyP" resolve="Reduce" />
-    <node concept="nKS2y" id="79W9gdU9UW7" role="1MLUbF">
-      <node concept="3clFbS" id="79W9gdU9UW8" role="2VODD2">
-        <node concept="3SKdUt" id="79W9gdU9V1e" role="3cqZAp">
-          <node concept="3SKdUq" id="79W9gdU9V1f" role="3SKWNk">
-            <property role="3SKdUp" value="Functions with closures are disabled in 1.0." />
-          </node>
-        </node>
-        <node concept="3clFbF" id="79W9gdU9V1g" role="3cqZAp">
-          <node concept="3clFbT" id="79W9gdU9V1h" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="dOBxz$1jP7">
-    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
-    <ref role="1M2myG" to="iowz:dOBxz$1hT1" resolve="Strip" />
-    <node concept="nKS2y" id="dOBxz$1jPD" role="1MLUbF">
-      <node concept="3clFbS" id="dOBxz$1jPE" role="2VODD2">
-        <node concept="3clFbF" id="dOBxz$1jPF" role="3cqZAp">
-          <node concept="3clFbC" id="dOBxz$1jPG" role="3clFbG">
-            <node concept="35c_gC" id="dOBxz$1jPH" role="3uHU7w">
-              <ref role="35c_gD" to="iowz:XaRILis0lJ" resolve="SplitCSV" />
-            </node>
-            <node concept="2OqwBi" id="dOBxz$1jPI" role="3uHU7B">
-              <node concept="nLn13" id="dOBxz$1jPJ" role="2Oq$k0" />
-              <node concept="2yIwOk" id="dOBxz$1jPK" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="79W9gdU9U3E">
-    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
-    <ref role="1M2myG" to="iowz:XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
-    <node concept="nKS2y" id="79W9gdU9Ug3" role="1MLUbF">
-      <node concept="3clFbS" id="79W9gdU9Ug4" role="2VODD2">
-        <node concept="3SKdUt" id="79W9gdU9Uu1" role="3cqZAp">
-          <node concept="3SKdUq" id="79W9gdU9Uu2" role="3SKWNk">
-            <property role="3SKdUp" value="Functions with closures are disabled in 1.0." />
-          </node>
-        </node>
-        <node concept="3clFbF" id="79W9gdU9Uu3" role="3cqZAp">
-          <node concept="3clFbT" id="79W9gdU9Uu4" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="dOBxz$1jVt">
-    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
-    <ref role="1M2myG" to="iowz:dOBxz$1hTY" resolve="Skip" />
-    <node concept="nKS2y" id="dOBxz$1jW2" role="1MLUbF">
-      <node concept="3clFbS" id="dOBxz$1jW3" role="2VODD2">
-        <node concept="3clFbF" id="dOBxz$1jW4" role="3cqZAp">
-          <node concept="3clFbC" id="dOBxz$1jW5" role="3clFbG">
-            <node concept="35c_gC" id="dOBxz$1jW6" role="3uHU7w">
-              <ref role="35c_gD" to="iowz:XaRILis0lJ" resolve="SplitCSV" />
-            </node>
-            <node concept="2OqwBi" id="dOBxz$1jW7" role="3uHU7B">
-              <node concept="nLn13" id="dOBxz$1jW8" role="2Oq$k0" />
-              <node concept="2yIwOk" id="dOBxz$1jW9" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="dOBxzz$NF8">
-    <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions" />
-    <ref role="1M2myG" to="iowz:dOBxzz$N_i" resolve="Header" />
-    <node concept="osYL8" id="dOBxzzN2Az" role="1MLXOK">
-      <node concept="3clFbS" id="dOBxzzN2A$" role="2VODD2">
-        <node concept="3cpWs6" id="dOBxzzN5tY" role="3cqZAp">
-          <node concept="22lmx$" id="dOBxzzN4wO" role="3cqZAk">
-            <node concept="3clFbC" id="dOBxzzN4P_" role="3uHU7w">
-              <node concept="35c_gC" id="dOBxzzN4Tg" role="3uHU7w">
-                <ref role="35c_gD" to="iowz:3aOvEIt8rrG" resolve="NewListLiteral" />
-              </node>
-              <node concept="2OqwBi" id="dOBxzzN4C_" role="3uHU7B">
-                <node concept="2H4GUG" id="dOBxzzN4$o" role="2Oq$k0" />
-                <node concept="2yIwOk" id="dOBxzzN4Lv" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="3clFbC" id="dOBxzzN45G" role="3uHU7B">
-              <node concept="2OqwBi" id="dOBxzzN3U6" role="3uHU7B">
-                <node concept="2H4GUG" id="dOBxzzN3QF" role="2Oq$k0" />
-                <node concept="2yIwOk" id="dOBxzzN42n" role="2OqNvi" />
-              </node>
-              <node concept="35c_gC" id="dOBxzzN4jO" role="3uHU7w">
-                <ref role="35c_gD" to="iowz:3aOvEIt8rrn" resolve="NewBooleanLiteral" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="nKS2y" id="dOBxz$1jJj" role="1MLUbF">
-      <node concept="3clFbS" id="dOBxz$1jJk" role="2VODD2">
-        <node concept="3clFbF" id="dOBxz$1jJl" role="3cqZAp">
-          <node concept="3clFbC" id="dOBxz$1jJm" role="3clFbG">
-            <node concept="35c_gC" id="dOBxz$1jJn" role="3uHU7w">
-              <ref role="35c_gD" to="iowz:XaRILis0lJ" resolve="SplitCSV" />
-            </node>
-            <node concept="2OqwBi" id="dOBxz$1jJo" role="3uHU7B">
-              <node concept="nLn13" id="dOBxz$1jJp" role="2Oq$k0" />
-              <node concept="2yIwOk" id="dOBxz$1jJq" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="71ITBVySQCa">
-    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
-    <ref role="1M2myG" to="iowz:XaRILjgU7G" resolve="GroupTuple" />
-    <node concept="nKS2y" id="71ITBVySQCq" role="1MLUbF">
-      <node concept="3clFbS" id="71ITBVySQCr" role="2VODD2">
-        <node concept="3clFbF" id="71ITBVySQC$" role="3cqZAp">
-          <node concept="3clFbT" id="71ITBVySQCz" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="1jEBYCnvrg1">
     <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions.recordOptions.recordFields" />
     <ref role="1M2myG" to="iowz:1jEBYCnvqGY" resolve="SplitFastaRecordFields" />
@@ -2056,9 +1927,269 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3uBbkEdVkhE">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="1M2myG" to="iowz:6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
+  </node>
+  <node concept="1M2fIO" id="71ITBVySQS_">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="1M2myG" to="iowz:1qs9CHFOmDW" resolve="ArgRegexQualifierPredicate" />
+    <node concept="nKS2y" id="71ITBVySQSS" role="1MLUbF">
+      <node concept="3clFbS" id="71ITBVySQST" role="2VODD2">
+        <node concept="3clFbF" id="71ITBVySQXQ" role="3cqZAp">
+          <node concept="3clFbT" id="71ITBVySQXP" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1fcQp_G2XV">
+    <property role="3GE5qa" value="scripts.conditionalScript" />
+    <ref role="1M2myG" to="iowz:5DmojlqPc7e" resolve="ConditionalVariableRef" />
+    <node concept="nKS2y" id="1fcQp_G3mq" role="1MLUbF">
+      <node concept="3clFbS" id="1fcQp_G3mr" role="2VODD2">
+        <node concept="3clFbF" id="1fcQp_G60v" role="3cqZAp">
+          <node concept="2OqwBi" id="1fcQp_GgZr" role="3clFbG">
+            <node concept="2OqwBi" id="1fcQp_G6qU" role="2Oq$k0">
+              <node concept="nLn13" id="1fcQp_G60u" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="1fcQp_GgBN" role="2OqNvi">
+                <node concept="1xMEDy" id="1fcQp_GgBP" role="1xVPHs">
+                  <node concept="chp4Y" id="1fcQp_GgHa" role="ri$Ld">
+                    <ref role="cht4Q" to="iowz:YNIIGPa1iv" resolve="BaseLanguageScriptAdapter" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="1fcQp_GgQI" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1fcQp_GuhR" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="79W9gdU9UVO">
+    <property role="3GE5qa" value="channelFunctions" />
+    <ref role="1M2myG" to="iowz:XaRILjgRyP" resolve="Reduce" />
+  </node>
+  <node concept="1M2fIO" id="79W9gdU9U3E">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="1M2myG" to="iowz:XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
+    <node concept="nKS2y" id="79W9gdU9Ug3" role="1MLUbF">
+      <node concept="3clFbS" id="79W9gdU9Ug4" role="2VODD2">
+        <node concept="3SKdUt" id="79W9gdU9Uu1" role="3cqZAp">
+          <node concept="3SKdUq" id="79W9gdU9Uu2" role="3SKWNk">
+            <property role="3SKdUp" value="Functions with closures are disabled in 1.0." />
+          </node>
+        </node>
+        <node concept="3clFbF" id="79W9gdU9Uu3" role="3cqZAp">
+          <node concept="3clFbT" id="79W9gdU9Uu4" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="71ITBVySQCa">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="1M2myG" to="iowz:XaRILjgU7G" resolve="GroupTuple" />
+    <node concept="nKS2y" id="71ITBVySQCq" role="1MLUbF">
+      <node concept="3clFbS" id="71ITBVySQCr" role="2VODD2">
+        <node concept="3clFbF" id="71ITBVySQC$" role="3cqZAp">
+          <node concept="3clFbT" id="71ITBVySQCz" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
   <node concept="1M2fIO" id="1D3_UgeJcz_">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <ref role="1M2myG" to="iowz:XaRILis0lI" resolve="FunctionWithClosure" />
+  </node>
+  <node concept="1M2fIO" id="4vNpgMrPKYD">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="1M2myG" to="iowz:6TmjYLGeHOd" resolve="Cross" />
+    <node concept="nKS2y" id="4vNpgMrPL7x" role="1MLUbF">
+      <node concept="3clFbS" id="4vNpgMrPL7y" role="2VODD2">
+        <node concept="3clFbF" id="4vNpgMrPMdY" role="3cqZAp">
+          <node concept="3eOVzh" id="4vNpgMrPPaA" role="3clFbG">
+            <node concept="2OqwBi" id="4vNpgMrPQUG" role="3uHU7B">
+              <node concept="2OqwBi" id="4vNpgMrPMjd" role="2Oq$k0">
+                <node concept="EsrRn" id="4vNpgMrPMdX" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="4vNpgMrPML6" role="2OqNvi">
+                  <ref role="3TtcxE" to="iowz:6TmjYLGeFMw" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="4vNpgMrPTCP" role="2OqNvi" />
+            </node>
+            <node concept="3cmrfG" id="4vNpgMrPPIE" role="3uHU7w">
+              <property role="3cmrfH" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5l6FUy8NIyU">
+    <ref role="1M2myG" to="iowz:6TmjYLGeFpH" resolve="OutChannelContainerRef" />
+    <node concept="1N5Pfh" id="5l6FUy8NIK3" role="1Mr941">
+      <ref role="1N5Vy1" to="iowz:6TmjYLGeFMt" />
+      <node concept="1dDu$B" id="5l6FUy8NJ8v" role="1N6uqs">
+        <ref role="1dDu$A" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1z1zDaaphSF">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="1M2myG" to="iowz:6TmjYLGeGXs" resolve="Merge" />
+    <node concept="osYL8" id="1z1zDaapiiY" role="1MLXOK">
+      <node concept="3clFbS" id="1z1zDaapiiZ" role="2VODD2">
+        <node concept="3SKdUt" id="1z1zDaaprKY" role="3cqZAp">
+          <node concept="3SKdUq" id="1z1zDaaprQZ" role="3SKWNk">
+            <property role="3SKdUp" value="prevent adding more than one other channel to merge. Not supported by typesystem or textgen at this time" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1z1zDaapjvz" role="3cqZAp">
+          <node concept="3clFbS" id="1z1zDaapjv_" role="3clFbx">
+            <node concept="3cpWs6" id="1z1zDaapqGL" role="3cqZAp">
+              <node concept="3clFbT" id="1z1zDaapqP9" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="1z1zDaarDyx" role="3clFbw">
+            <node concept="3y3z36" id="1z1zDaarDOZ" role="3uHU7w">
+              <node concept="2OqwBi" id="1z1zDaarFmM" role="3uHU7w">
+                <node concept="2OqwBi" id="1z1zDaarE6z" role="2Oq$k0">
+                  <node concept="EsrRn" id="1z1zDaarDYt" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="1z1zDaarEqK" role="2OqNvi">
+                    <ref role="3TtcxE" to="iowz:6TmjYLGgovv" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="1z1zDaarIai" role="2OqNvi" />
+              </node>
+              <node concept="2H4GUG" id="1z1zDaarDH5" role="3uHU7B" />
+            </node>
+            <node concept="1Wc70l" id="1z1zDaapjYb" role="3uHU7B">
+              <node concept="3clFbC" id="1z1zDaapjFK" role="3uHU7B">
+                <node concept="otxO1" id="1z1zDaapj$D" role="3uHU7B" />
+                <node concept="2OqwBi" id="1z1zDaapr6p" role="3uHU7w">
+                  <node concept="35c_gC" id="1z1zDaapjKT" role="2Oq$k0">
+                    <ref role="35c_gD" to="iowz:6TmjYLGeFpH" resolve="OutChannelContainerRef" />
+                  </node>
+                  <node concept="FGMqu" id="1z1zDaaprxP" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3eOSWO" id="1z1zDaapq9q" role="3uHU7w">
+                <node concept="2OqwBi" id="1z1zDaapliL" role="3uHU7B">
+                  <node concept="2OqwBi" id="1z1zDaapk87" role="2Oq$k0">
+                    <node concept="EsrRn" id="1z1zDaapk29" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="1z1zDaapkp8" role="2OqNvi">
+                      <ref role="3TtcxE" to="iowz:6TmjYLGgovv" />
+                    </node>
+                  </node>
+                  <node concept="34oBXx" id="1z1zDaapo55" role="2OqNvi" />
+                </node>
+                <node concept="3cmrfG" id="1z1zDaapq9w" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1z1zDaapqvl" role="3cqZAp">
+          <node concept="3clFbT" id="1z1zDaapqvk" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2zKoo7aBG_a">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="1M2myG" to="iowz:6TmjYLGeHlg" resolve="Phase" />
+    <node concept="nKS2y" id="2zKoo7aBGMM" role="1MLUbF">
+      <node concept="3clFbS" id="2zKoo7aBGMN" role="2VODD2">
+        <node concept="3clFbF" id="2zKoo7aBGMO" role="3cqZAp">
+          <node concept="3eOVzh" id="2zKoo7aBGMP" role="3clFbG">
+            <node concept="2OqwBi" id="2zKoo7aBGMQ" role="3uHU7B">
+              <node concept="2OqwBi" id="2zKoo7aBGMR" role="2Oq$k0">
+                <node concept="EsrRn" id="2zKoo7aBGMS" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="2zKoo7aBGMT" role="2OqNvi">
+                  <ref role="3TtcxE" to="iowz:6TmjYLGeFMw" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="2zKoo7aBGMU" role="2OqNvi" />
+            </node>
+            <node concept="3cmrfG" id="2zKoo7aBGMV" role="3uHU7w">
+              <property role="3cmrfH" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3df2pFev5nw">
+    <property role="3GE5qa" value="processTypeDeclarations" />
+    <ref role="1M2myG" to="iowz:6qiI2N5sbyo" resolve="TupleElement" />
+    <node concept="EnEH3" id="3df2pFev5Lj" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="3df2pFev5Uc" role="QCWH9">
+        <node concept="3clFbS" id="3df2pFev5Ud" role="2VODD2">
+          <node concept="3clFbF" id="3df2pFevfQ0" role="3cqZAp">
+            <node concept="3fqX7Q" id="3df2pFevfPW" role="3clFbG">
+              <node concept="1eOMI4" id="3df2pFevfWW" role="3fr31v">
+                <node concept="22lmx$" id="3df2pFeve5i" role="1eOMHV">
+                  <node concept="2OqwBi" id="3df2pFeveFm" role="3uHU7w">
+                    <node concept="1Wqviy" id="3df2pFevebH" role="2Oq$k0" />
+                    <node concept="liA8E" id="3df2pFevfui" role="2OqNvi">
+                      <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                      <node concept="Xl_RD" id="3df2pFevf$O" role="37wK5m">
+                        <property role="Xl_RC" value="=" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="3df2pFevcHY" role="3uHU7B">
+                    <node concept="1Wqviy" id="3df2pFevcf8" role="2Oq$k0" />
+                    <node concept="liA8E" id="3df2pFevdGX" role="2OqNvi">
+                      <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                      <node concept="Xl_RD" id="3df2pFevdMw" role="37wK5m">
+                        <property role="Xl_RC" value=" " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1xqcHZawFvX">
+    <property role="3GE5qa" value="processIO" />
+    <ref role="1M2myG" to="iowz:2fLVrqQ2DkW" resolve="ProcessOutput" />
+    <node concept="EnEH3" id="1xqcHZawFvY" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="1xqcHZawFw0" role="QCWH9">
+        <node concept="3clFbS" id="1xqcHZawFw1" role="2VODD2">
+          <node concept="3clFbF" id="1xqcHZawFDP" role="3cqZAp">
+            <node concept="3fqX7Q" id="1xqcHZawNYS" role="3clFbG">
+              <node concept="2OqwBi" id="1xqcHZawNYU" role="3fr31v">
+                <node concept="1Wqviy" id="1xqcHZawNYV" role="2Oq$k0" />
+                <node concept="liA8E" id="1xqcHZawNYW" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="Xl_RD" id="1xqcHZawNYX" role="37wK5m">
+                    <property role="Xl_RC" value="=" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
