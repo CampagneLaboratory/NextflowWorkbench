@@ -37,6 +37,11 @@
         <property id="8987412447080623507" name="options" index="2E$TAj" />
         <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
       </concept>
+      <concept id="6819868375264134127" name="org.campagnelab.docker.structure.RunningContainer" flags="ng" index="GbKB8">
+        <property id="1464761952898881430" name="running" index="1vm7qE" />
+        <property id="1859325667733444128" name="command" index="3yMj3R" />
+        <reference id="1859325667733099571" name="image" index="3zcJb$" />
+      </concept>
       <concept id="6819868375258175840" name="org.campagnelab.docker.structure.TagInfo" flags="ng" index="Gyxd7">
         <property id="6819868375258175846" name="tag" index="Gyxd1" />
         <property id="6819868375258175942" name="userName" index="Gyxfx" />
@@ -81,7 +86,7 @@
   </node>
   <node concept="VuPG2" id="6fIiQMMz3r_">
     <property role="TrG5h" value="artifact-software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1914814354593509336.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile8070880757163765141.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="6fIiQMM$wKy" role="VuOVn">
       <node concept="VtuK3" id="6fIiQMM$_RF" role="VuO5T">
@@ -139,10 +144,13 @@
         </node>
       </node>
     </node>
+    <node concept="3blhQM" id="R1cm0IuH1E" role="3blhQR">
+      <ref role="3blhQY" node="R1cm0IuH1D" resolve="artifact-software_Image" />
+    </node>
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
     <property role="TrG5h" value="centos-java8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile4499320352476977732.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile8847061077512070380.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="39YFbxZh5KQ" role="VuOVn">
       <node concept="VtuK3" id="39YFbxZh5KR" role="VuO5T">
@@ -167,7 +175,7 @@
     <node concept="VugRC" id="39YFbxZh5KU" role="VuOVn">
       <node concept="19SGf9" id="39YFbxZh5KV" role="Vugyn">
         <node concept="19SUe$" id="39YFbxZh5KW" role="19SJt6">
-          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget \&#10;&amp;&amp; yum install -y tar \&#10;&amp;&amp; yum install -y which \&#10;&amp;&amp; yum install -y unzip \&#10;&amp;&amp; yum groupinstall -y &quot;Development Tools&quot; \&#10;&amp;&amp; yum install -y zlib-devel.x86_64 \&#10;&amp;&amp; yum install -y ncurses-devel.x86_64 \&#10;&amp;&amp; yum install -y readline-devel " />
+          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget \&#10;&amp;&amp; yum install -y tar \&#10;&amp;&amp; yum install -y which \&#10;&amp;&amp; yum install -y unzip \&#10;&amp;&amp; yum groupinstall -y &quot;Development Tools&quot; \&#10;&amp;&amp; yum install -y zlib-devel.x86_64 \&#10;&amp;&amp; yum install -y ncurses-devel.x86_64 \&#10;&amp;&amp; yum install -y readline-devel \&#10;&amp;&amp; yum clean all" />
         </node>
       </node>
     </node>
@@ -191,30 +199,38 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="6T428Q5Xmbd" role="3blhQR">
-      <ref role="3blhQY" node="6T428Q5Xmbc" resolve="centos-java8_Image" />
+    <node concept="3blhQM" id="2FvOOfVWzTd" role="3blhQR">
+      <ref role="3blhQY" node="2FvOOfVWzTc" resolve="centos-java8_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="6T428Q5Xm8a">
-    <property role="2E_JEh" value="02abb2b81a09" />
-    <property role="TrG5h" value="artifact-software_Image" />
-    <property role="GSh9r" value="mas2181/artifact-software:latest" />
-    <property role="3GE5qa" value="published_images" />
-    <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifact-software" />
-    <node concept="Gyxd7" id="6T428Q5Xm8s" role="Gyxcj">
-      <property role="Gyxfx" value="mas2181" />
-      <property role="TrG5h" value="artifact-software" />
-      <property role="Gyxd1" value="latest" />
-    </node>
-  </node>
-  <node concept="2E_JVc" id="6T428Q5Xmbc">
-    <property role="2E_JEh" value="5a76a628bced" />
+  <node concept="2E_JVc" id="2FvOOfVWzTc">
+    <property role="2E_JEh" value="27c3b97f619d" />
     <property role="TrG5h" value="centos-java8_Image" />
     <property role="GSh9r" value="mas2181/centos-java8:latest" />
     <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
-    <node concept="Gyxd7" id="6T428Q5Xmbu" role="Gyxcj">
+    <node concept="Gyxd7" id="2FvOOfVWzTv" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="centos-java8" />
+      <property role="Gyxd1" value="latest" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="2FvOOfVWzUe">
+    <property role="VuL0s" value="1.0" />
+    <property role="TrG5h" value="NESUOHPBAN" />
+    <property role="VuL0v" value="mas2181" />
+    <property role="GbyUj" value="centos-java8" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="" />
+    <ref role="3zcJb$" node="2FvOOfVWzTc" resolve="centos-java8_Image" />
+  </node>
+  <node concept="2E_JVc" id="R1cm0IuH1D">
+    <property role="2E_JEh" value="3db9f85312eb" />
+    <property role="TrG5h" value="artifact-software_Image" />
+    <property role="GSh9r" value="mas2181/artifact-software:latest" />
+    <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifact-software" />
+    <node concept="Gyxd7" id="R1cm0IuL00" role="Gyxcj">
+      <property role="Gyxfx" value="mas2181" />
+      <property role="TrG5h" value="artifact-software" />
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
