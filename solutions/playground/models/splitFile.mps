@@ -420,7 +420,13 @@
       <node concept="1s2qpp" id="1tMFr$HYxmp" role="1fSQVV">
         <node concept="1ecmHP" id="1tMFr$HYxo1" role="1Xju2$">
           <node concept="1bVj0M" id="1tMFr$HYxo2" role="303AOo">
-            <node concept="3clFbS" id="1tMFr$HYxo3" role="1bW5cS" />
+            <node concept="3clFbS" id="1tMFr$HYxo3" role="1bW5cS">
+              <node concept="3clFbF" id="6MWjaHTpvcZ" role="3cqZAp">
+                <node concept="37vLTw" id="6MWjaHTpvcY" role="3clFbG">
+                  <ref role="3cqZAo" node="1tMFr$HYxo4" resolve="it" />
+                </node>
+              </node>
+            </node>
             <node concept="37vLTG" id="1tMFr$HYxo4" role="1bW2Oz">
               <property role="TrG5h" value="it" />
               <node concept="3rvAFt" id="1tMFr$HYxol" role="1tU5fm">
@@ -452,7 +458,7 @@
     </node>
     <node concept="19SGf9" id="34xjE1yNOIj" role="GZ$AB">
       <node concept="19SUe$" id="34xjE1yNOIk" role="19SJt6">
-        <property role="19SUeA" value="Example using splitCSV" />
+        <property role="19SUeA" value=" Example using splitCSV" />
       </node>
     </node>
   </node>
