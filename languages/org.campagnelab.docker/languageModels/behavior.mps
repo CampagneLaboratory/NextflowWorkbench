@@ -53,8 +53,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="fx27" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#com.google.common.cache(MPS.Core/com.google.common.cache@java_stub)" />
     <import index="53gy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.concurrent(JDK/java.util.concurrent@java_stub)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="owhg" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.util(MPS.IDEA/com.intellij.util@java_stub)" />
+    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="mak5" ref="r:977bf260-4884-422e-9656-9f0bb268fcb0(org.campagnelab.logger.behavior)" implicit="true" />
     <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" implicit="true" />
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" implicit="true" />
@@ -212,7 +212,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -9975,6 +9975,36 @@
         </node>
       </node>
       <node concept="3cqZAl" id="BMuHr35pIy" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="xP2fmw5ca1">
+    <property role="3GE5qa" value="instructions" />
+    <ref role="13h7C2" to="6jv6:xP2fmw5bYR" resolve="Comment" />
+    <node concept="13hLZK" id="xP2fmw5ca2" role="13h7CW">
+      <node concept="3clFbS" id="xP2fmw5ca3" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="xP2fmw5fia" role="13h7CS">
+      <property role="TrG5h" value="parse" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="1hjSjLb6kbW" resolve="parse" />
+      <node concept="3Tm1VV" id="xP2fmw5fif" role="1B3o_S" />
+      <node concept="3clFbS" id="xP2fmw5fii" role="3clF47">
+        <node concept="3clFbF" id="xP2fmw5rst" role="3cqZAp">
+          <node concept="13iPFW" id="xP2fmw5rss" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="xP2fmw5fij" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="xP2fmw5fik" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="xP2fmw5fil" role="3clF46">
+        <property role="TrG5h" value="line" />
+        <node concept="17QB3L" id="xP2fmw5fim" role="1tU5fm" />
+      </node>
+      <node concept="3Tqbb2" id="xP2fmw5fin" role="3clF45">
+        <ref role="ehGHo" to="6jv6:1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+      </node>
     </node>
   </node>
 </model>

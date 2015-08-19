@@ -175,7 +175,7 @@
   <node concept="1TIwiD" id="1D6dZ$xgNkx">
     <property role="TrG5h" value="AddInstruction" />
     <property role="34LRSv" value="ADD" />
-    <property role="R4oN_" value="Add a fileto the container" />
+    <property role="R4oN_" value="Add a file to the container" />
     <property role="3GE5qa" value="instructions" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#add" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
@@ -515,6 +515,17 @@
       <property role="20kJfa" value="container" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1D6dZ$xfhyW" resolve="DockerContainer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="xP2fmw5bYR">
+    <property role="3GE5qa" value="instructions" />
+    <property role="TrG5h" value="Comment" />
+    <property role="34LRSv" value="#" />
+    <property role="R4oN_" value="Comment" />
+    <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
+    <node concept="1TJgyi" id="1q4iT9$FIVt" role="1TKVEl">
+      <property role="TrG5h" value="description" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

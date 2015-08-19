@@ -250,14 +250,8 @@
       <concept id="716770353510735278" name="org.campagnelab.docker.structure.WorkdirInstruction" flags="ng" index="3buUtS">
         <property id="716770353510735484" name="path" index="3buUiE" />
       </concept>
-      <concept id="5650734312793241900" name="org.campagnelab.docker.structure.DockerCommand" flags="ng" index="1$joB7">
-        <property id="7228518373851438570" name="commandName" index="31B4r3" />
-      </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="4018964125401476997" name="org.campagnelab.workflow.structure.List" flags="ng" index="kktkh">
-        <child id="7391172440886351025" name="elementType" index="2y8EMt" />
-      </concept>
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
@@ -301,9 +295,7 @@
     </node>
     <node concept="2lYRya" id="wcFktQkkas" role="2ulM79">
       <property role="TrG5h" value="'index_*'" />
-      <node concept="kktkh" id="1OJ3YQ2DMod" role="2ybFLk">
-        <node concept="16pRw0" id="1OJ3YQ2DMoe" role="2y8EMt" />
-      </node>
+      <node concept="16pRw0" id="wcFktQkkxS" role="2ybFLk" />
     </node>
     <node concept="2mjA9o" id="wcFktQkkyp" role="2ulM7n">
       <property role="TrG5h" value="fileCh" />
@@ -314,13 +306,7 @@
         <property role="1XFuEG" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins" />
       </node>
       <node concept="19SGf9" id="4uxaUi8HzIc" role="3Y$PkS">
-        <node concept="19SUe$" id="1OJ3YQ2Gd5_" role="19SJt6">
-          <property role="19SUeA" value=" " />
-        </node>
-        <node concept="1$joB7" id="1OJ3YQ2IRq6" role="19SJt6">
-          <property role="31B4r3" value="echo" />
-        </node>
-        <node concept="19SUe$" id="1OJ3YQ2IQFp" role="19SJt6">
+        <node concept="19SUe$" id="4uxaUi8HzId" role="19SJt6">
           <property role="19SUeA" value="&#10;&#10;" />
         </node>
       </node>
@@ -575,222 +561,6 @@
     </node>
     <node concept="1lnzPE" id="wcFktQl6$d" role="1lvGkX">
       <property role="1lnzPG" value="Starting docker build" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUbd" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUbe" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: campagnelab/test:latest" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUbf" role="1lvGkX">
-      <property role="1lnzPG" value="with name=interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUbt" role="1lvGkX">
-      <property role="1lnzPG" value="Stopping container " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUbC" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUbD" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: campagnelab/test:latest" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUbE" role="1lvGkX">
-      <property role="1lnzPG" value="with name=interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUbX" role="1lvGkX">
-      <property role="1lnzPG" value="Starting container " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUzb" role="1lvGkX">
-      <property role="1lnzPG" value="Stopping container " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUzr" role="1lvGkX">
-      <property role="1lnzPG" value="Starting container " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUzG" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUzH" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: campagnelab/test:latest" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2DUzI" role="1lvGkX">
-      <property role="1lnzPG" value="with name=interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2FaCs" role="1lvGkX">
-      <property role="1lnzPG" value="path=ls" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2FaCt" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2FaCu" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=ls ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2FaCv" role="1lvGkX">
-      <property role="1lnzPG" value="docker locate returned: /bin/false&#10;/bin/ls&#10;/bin/lsblk&#10;/usr/bin/dh_autotools-dev_restoreconfig&#10;/usr/bin/dh_autotools-dev_updateconfig&#10;/usr/bin/dpkg-gensymbols&#10;/usr/bin/lsattr&#10;/usr/bin/lscpu&#10;/usr/bin/lslocks&#10;/usr/bin/lspgpot&#10;/usr/bin/md5sum.textutils&#10;/usr/bin/systemd-cgls&#10;/usr/bin/zipdetails&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2FaCR" role="1lvGkX">
-      <property role="1lnzPG" value="path=ls" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2FaCS" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2FaCT" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=ls ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2FaCU" role="1lvGkX">
-      <property role="1lnzPG" value="docker locate returned: /bin/false&#10;/bin/ls&#10;/bin/lsblk&#10;/usr/bin/dh_autotools-dev_restoreconfig&#10;/usr/bin/dh_autotools-dev_updateconfig&#10;/usr/bin/dpkg-gensymbols&#10;/usr/bin/lsattr&#10;/usr/bin/lscpu&#10;/usr/bin/lslocks&#10;/usr/bin/lspgpot&#10;/usr/bin/md5sum.textutils&#10;/usr/bin/systemd-cgls&#10;/usr/bin/zipdetails&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2FaDm" role="1lvGkX">
-      <property role="1lnzPG" value="path=ca" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2FaDn" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2FaDo" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=ca ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2FaDp" role="1lvGkX">
-      <property role="1lnzPG" value="docker locate returned: /bin/bzcat&#10;/bin/cat&#10;/bin/systemd-escape&#10;/bin/zcat&#10;/sbin/blkdiscard&#10;/sbin/capsh&#10;/sbin/getcap&#10;/sbin/getpcaps&#10;/sbin/setcap&#10;/usr/bin/apt-cache&#10;/usr/bin/cal&#10;/usr/bin/calendar&#10;/usr/bin/captoinfo&#10;/usr/bin/catchsegv&#10;/usr/bin/catman&#10;/usr/bin/debconf-communicate&#10;/usr/bin/debconf-escape&#10;/usr/bin/dh_installcatalogs&#10;/usr/bin/dh_usrlocal&#10;/usr/bin/dpkg-scanpackages&#10;/usr/bin/dpkg-scansources&#10;/usr/bin/fallocate&#10;/usr/bin/fc-cache&#10;/usr/bin/fc-cat&#10;/usr/bin/fc-scan&#10;/usr/bin/gapplication&#10;/usr/bin/gencat&#10;/usr/bin/infotocap&#10;/usr/bin/locale&#10;/usr/bin/localectl&#10;/usr/bin/localedef&#10;/usr/bin/locate&#10;/usr/bin/lzcat&#10;/usr/bin/mlocate&#10;/usr/bin/msgcat&#10;/usr/bin/ncal&#10;/usr/bin/run-mailcap&#10;/usr/bin/systemd-cat&#10;/usr/bin/truncate&#10;/usr/bin/updatedb.mlocate&#10;/usr/bin/xzcat&#10;/usr/sbin/locale-gen&#10;/usr/sbin/tarcat&#10;/usr/sbin/update-locale&#10;/usr/sbin/validlocale&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2Kc8c" role="1lvGkX">
-      <property role="1lnzPG" value="path=ca" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2Kc8d" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2Kc8e" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=ca ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O0xO" role="1lvGkX">
-      <property role="1lnzPG" value="path=ca" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O0xP" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O0xQ" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=ca ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O0ys" role="1lvGkX">
-      <property role="1lnzPG" value="path=caller" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O0yt" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O0yu" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=caller ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O14E" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O14F" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: campagnelab/test:latest" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O14G" role="1lvGkX">
-      <property role="1lnzPG" value="with name=interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O15v" role="1lvGkX">
-      <property role="1lnzPG" value="path=caller" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O15w" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O15x" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=caller ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O16g" role="1lvGkX">
-      <property role="1lnzPG" value="path=caller" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O16h" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O16i" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=caller ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1uE" role="1lvGkX">
-      <property role="1lnzPG" value="Stopping container " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1vt" role="1lvGkX">
-      <property role="1lnzPG" value="Starting container " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1wh" role="1lvGkX">
-      <property role="1lnzPG" value="path=caller" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1wi" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1wj" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=caller ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1wk" role="1lvGkX">
-      <property role="1lnzPG" value="docker locate returned: " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1xc" role="1lvGkX">
-      <property role="1lnzPG" value="Starting docker run " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1xd" role="1lvGkX">
-      <property role="1lnzPG" value="deployAddress: campagnelab/test:latest" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1xe" role="1lvGkX">
-      <property role="1lnzPG" value="with name=interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1yh" role="1lvGkX">
-      <property role="1lnzPG" value="path=caller" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1yi" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1yj" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=caller ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1yk" role="1lvGkX">
-      <property role="1lnzPG" value="docker locate returned: " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1zj" role="1lvGkX">
-      <property role="1lnzPG" value="path=caller" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1zk" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1zl" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=caller ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1zm" role="1lvGkX">
-      <property role="1lnzPG" value="docker locate returned: " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1$p" role="1lvGkX">
-      <property role="1lnzPG" value="path=ls" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1$q" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1$r" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=ls ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1$s" role="1lvGkX">
-      <property role="1lnzPG" value="docker locate returned: /bin/false&#10;/bin/ls&#10;/bin/lsblk&#10;/usr/bin/dh_autotools-dev_restoreconfig&#10;/usr/bin/dh_autotools-dev_updateconfig&#10;/usr/bin/dpkg-gensymbols&#10;/usr/bin/lsattr&#10;/usr/bin/lscpu&#10;/usr/bin/lslocks&#10;/usr/bin/lspgpot&#10;/usr/bin/md5sum.textutils&#10;/usr/bin/systemd-cgls&#10;/usr/bin/zipdetails&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1_z" role="1lvGkX">
-      <property role="1lnzPG" value="path=ca" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1_$" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1__" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=ca ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1_A" role="1lvGkX">
-      <property role="1lnzPG" value="docker locate returned: /bin/bzcat&#10;/bin/cat&#10;/bin/systemd-escape&#10;/bin/zcat&#10;/sbin/blkdiscard&#10;/sbin/capsh&#10;/sbin/getcap&#10;/sbin/getpcaps&#10;/sbin/setcap&#10;/usr/bin/apt-cache&#10;/usr/bin/cal&#10;/usr/bin/calendar&#10;/usr/bin/captoinfo&#10;/usr/bin/catchsegv&#10;/usr/bin/catman&#10;/usr/bin/debconf-communicate&#10;/usr/bin/debconf-escape&#10;/usr/bin/dh_installcatalogs&#10;/usr/bin/dh_usrlocal&#10;/usr/bin/dpkg-scanpackages&#10;/usr/bin/dpkg-scansources&#10;/usr/bin/fallocate&#10;/usr/bin/fc-cache&#10;/usr/bin/fc-cat&#10;/usr/bin/fc-scan&#10;/usr/bin/gapplication&#10;/usr/bin/gencat&#10;/usr/bin/infotocap&#10;/usr/bin/locale&#10;/usr/bin/localectl&#10;/usr/bin/localedef&#10;/usr/bin/locate&#10;/usr/bin/lzcat&#10;/usr/bin/mlocate&#10;/usr/bin/msgcat&#10;/usr/bin/ncal&#10;/usr/bin/run-mailcap&#10;/usr/bin/systemd-cat&#10;/usr/bin/truncate&#10;/usr/bin/updatedb.mlocate&#10;/usr/bin/xzcat&#10;/usr/sbin/locale-gen&#10;/usr/sbin/tarcat&#10;/usr/sbin/update-locale&#10;/usr/sbin/validlocale&#10;" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1AL" role="1lvGkX">
-      <property role="1lnzPG" value="path=ech" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1AM" role="1lvGkX">
-      <property role="1lnzPG" value="docker containerId: interactive" />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1AN" role="1lvGkX">
-      <property role="1lnzPG" value="docker command /bin/bash -c `echo $PATH | awk  -v MT=ech ' BEGIN{FS=&quot;:&quot;;} { printf(&quot;locate &quot;);  for (i=1;i&lt;=NF;i++) printf(&quot; &quot;$i&quot;/*&quot;MT&quot;*&quot;)}'` " />
-    </node>
-    <node concept="1lnzPE" id="1OJ3YQ2O1AO" role="1lvGkX">
-      <property role="1lnzPG" value="docker locate returned: /bin/echo&#10;/bin/lessecho&#10;/usr/bin/dpkg-mergechangelogs&#10;/usr/bin/dpkg-parsechangelog&#10;/usr/bin/lessecho&#10;" />
     </node>
   </node>
   <node concept="VuPG2" id="3ymWtI94ikR">
@@ -6916,62 +6686,12 @@
     <node concept="WEvhf" id="nU1NoTqWZ4" role="WF_SX">
       <ref role="WEvjA" node="nU1NoTqWyi" resolve="RWQXRLTPDE" />
     </node>
-    <node concept="WEvhf" id="1OJ3YQ2DUbq" role="WF_SX">
-      <ref role="WEvjA" node="1OJ3YQ2DUbg" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="1OJ3YQ2DUbT" role="WF_SX">
-      <ref role="WEvjA" node="1OJ3YQ2DUbF" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="1OJ3YQ2IQFu" role="WF_SX">
-      <ref role="WEvjA" node="1OJ3YQ2DUzJ" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="1OJ3YQ2O15p" role="WF_SX">
-      <ref role="WEvjA" node="1OJ3YQ2O14H" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="1OJ3YQ2O1ya" role="WF_SX">
-      <ref role="WEvjA" node="1OJ3YQ2O1xf" resolve="interactive" />
-    </node>
   </node>
   <node concept="3zupj_" id="6eMkF2c4Hdz">
     <property role="TrG5h" value="workflow.config" />
     <node concept="3zuAPI" id="6eMkF2c4LmG" role="3zupjy" />
     <node concept="3qaZdc" id="1nj$XVg1Idv" role="3qaWS2" />
     <node concept="3qaWSP" id="1nj$XVg2tMG" role="3qaWS2" />
-  </node>
-  <node concept="GbKB8" id="1OJ3YQ2DUbg">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="1OJ3YQ2DUbF">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="1OJ3YQ2DUzJ">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="1OJ3YQ2O14H">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="1OJ3YQ2O1xf">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
   </node>
 </model>
 
