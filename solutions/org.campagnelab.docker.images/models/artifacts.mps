@@ -125,7 +125,7 @@
     <node concept="VugRC" id="3P1oJbjPLK9" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPLKD" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPLKE" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; rm -rf plugins/analyses/ plugins/aligners/ plugins/tasks/ plugins/filesets .git \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;done&quot;" />
+          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; rm -rf plugins/analyses/ plugins/aligners/ plugins/tasks/ plugins/filesets .git \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; $HOME/.bashrc " />
         </node>
       </node>
     </node>
@@ -142,7 +142,7 @@
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
     <property role="TrG5h" value="centos-java8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile5609152452824039712.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile4499320352476977732.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="39YFbxZh5KQ" role="VuOVn">
       <node concept="VtuK3" id="39YFbxZh5KR" role="VuO5T">
@@ -167,7 +167,7 @@
     <node concept="VugRC" id="39YFbxZh5KU" role="VuOVn">
       <node concept="19SGf9" id="39YFbxZh5KV" role="Vugyn">
         <node concept="19SUe$" id="39YFbxZh5KW" role="19SJt6">
-          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget \&#10;&amp;&amp; yum install -y tar" />
+          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget \&#10;&amp;&amp; yum install -y tar \&#10;&amp;&amp; yum install -y which \&#10;&amp;&amp; yum install -y unzip \&#10;&amp;&amp; yum groupinstall -y &quot;Development Tools&quot; \&#10;&amp;&amp; yum install -y zlib-devel.x86_64 \&#10;&amp;&amp; yum install -y ncurses-devel.x86_64 \&#10;&amp;&amp; yum install -y readline-devel " />
         </node>
       </node>
     </node>
@@ -191,20 +191,8 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="39YFbxZhH57" role="3blhQR">
-      <ref role="3blhQY" node="39YFbxZhH56" resolve="centos-java8_Image" />
-    </node>
-  </node>
-  <node concept="2E_JVc" id="39YFbxZhH56">
-    <property role="2E_JEh" value="6e83efbb2132" />
-    <property role="TrG5h" value="centos-java8_Image" />
-    <property role="GSh9r" value="mas2181/centos-java8:latest" />
-    <property role="3GE5qa" value="published_images" />
-    <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
-    <node concept="Gyxd7" id="39YFbxZhH5j" role="Gyxcj">
-      <property role="Gyxfx" value="mas2181" />
-      <property role="TrG5h" value="centos-java8" />
-      <property role="Gyxd1" value="latest" />
+    <node concept="3blhQM" id="6T428Q5Xmbd" role="3blhQR">
+      <ref role="3blhQY" node="6T428Q5Xmbc" resolve="centos-java8_Image" />
     </node>
   </node>
   <node concept="2E_JVc" id="6T428Q5Xm8a">
@@ -216,6 +204,17 @@
     <node concept="Gyxd7" id="6T428Q5Xm8s" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="artifact-software" />
+      <property role="Gyxd1" value="latest" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="6T428Q5Xmbc">
+    <property role="2E_JEh" value="5a76a628bced" />
+    <property role="TrG5h" value="centos-java8_Image" />
+    <property role="GSh9r" value="mas2181/centos-java8:latest" />
+    <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
+    <node concept="Gyxd7" id="6T428Q5Xmbu" role="Gyxcj">
+      <property role="Gyxfx" value="mas2181" />
+      <property role="TrG5h" value="centos-java8" />
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
