@@ -38,9 +38,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
@@ -131,11 +128,6 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
-        <child id="1237721435808" name="initValue" index="HW$Y0" />
-        <child id="1237721435807" name="elementType" index="HW$YZ" />
-      </concept>
-      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -252,64 +244,7 @@
       </node>
       <node concept="3cqZAl" id="3dQaW8H8rfD" role="3clF45" />
       <node concept="3Tm1VV" id="3dQaW8H8rfE" role="1B3o_S" />
-      <node concept="3clFbS" id="3dQaW8H8rfF" role="3clF47">
-        <node concept="3cpWs8" id="3dQaW8H8s8u" role="3cqZAp">
-          <node concept="3cpWsn" id="3dQaW8H8s8v" role="3cpWs9">
-            <property role="TrG5h" value="dummy" />
-            <node concept="3uibUv" id="1$nyghyx9gI" role="1tU5fm">
-              <ref role="3uigEE" to="8dm4:~IListSequence" resolve="IListSequence" />
-              <node concept="3uibUv" id="1$nyghyxfCJ" role="11_B2D">
-                <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-              </node>
-            </node>
-            <node concept="2ShNRf" id="1$nyghyxdIb" role="33vP2m">
-              <node concept="Tc6Ow" id="1$nyghyxe1p" role="2ShVmc">
-                <node concept="Xl_RD" id="1$nyghyxg39" role="HW$Y0">
-                  <property role="Xl_RC" value="2" />
-                </node>
-                <node concept="Xl_RD" id="1$nyghyxgvz" role="HW$Y0">
-                  <property role="Xl_RC" value="3" />
-                </node>
-                <node concept="3uibUv" id="1$nyghyxhpE" role="HW$YZ">
-                  <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3dQaW8H8sdR" role="3cqZAp">
-          <node concept="2OqwBi" id="3dQaW8H8sdO" role="3clFbG">
-            <node concept="10M0yZ" id="3dQaW8H8sdP" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="3dQaW8H8sdQ" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.Object):void" resolve="println" />
-              <node concept="37vLTw" id="3dQaW8H8sfW" role="37wK5m">
-                <ref role="3cqZAo" node="3dQaW8H8s8v" resolve="dummy" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1$nyghyx55V" role="3cqZAp">
-          <node concept="2OqwBi" id="1$nyghyx55S" role="3clFbG">
-            <node concept="10M0yZ" id="1$nyghyx55T" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="1$nyghyx55U" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.Object):void" resolve="println" />
-              <node concept="2YIFZM" id="1$nyghyx4if" role="37wK5m">
-                <ref role="37wK5l" node="1$nyghyx31U" resolve="from_2" />
-                <ref role="1Pybhc" node="1$nyghyx3wI" resolve="ListToTupleWrapper" />
-                <node concept="37vLTw" id="1$nyghyx4ig" role="37wK5m">
-                  <ref role="3cqZAo" node="3dQaW8H8s8v" resolve="dummy" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="3dQaW8H8rfF" role="3clF47" />
     </node>
     <node concept="3Tm1VV" id="3dQaW8H8nB2" role="1B3o_S" />
   </node>

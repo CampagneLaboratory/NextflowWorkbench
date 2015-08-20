@@ -64,7 +64,6 @@
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
         <child id="5930160417388206667" name="processOptions" index="2xNrcL" />
       </concept>
-      <concept id="7457140171610954017" name="org.campagnelab.workflow.structure.Script" flags="ng" index="2ulSLo" />
       <concept id="7391172440898975896" name="org.campagnelab.workflow.structure.TupleElement" flags="ng" index="2zSw2O" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
@@ -274,7 +273,13 @@
         </node>
       </node>
     </node>
-    <node concept="2ulSLo" id="1D3_Ugf9EaQ" role="2ulM7a" />
+    <node concept="3Y$Zt1" id="4VptOfxGZOu" role="2ulM7a">
+      <node concept="19SGf9" id="4VptOfxGZOw" role="3Y$PkS">
+        <node concept="19SUe$" id="4VptOfxGZOx" role="19SJt6">
+          <property role="19SUeA" value="echo " />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

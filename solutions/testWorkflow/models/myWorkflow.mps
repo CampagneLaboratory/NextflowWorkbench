@@ -253,30 +253,6 @@
         <property role="TrG5h" value="file" />
       </node>
     </node>
-    <node concept="2UNLhE" id="3x6pbm2KGj7" role="2UW718">
-      <ref role="2UNLhW" node="1m6aGq8QnMc" resolve="file" />
-      <node concept="2UPiyC" id="3x6pbm2KGj8" role="2UNLhY">
-        <node concept="3clFbS" id="3x6pbm2KGj9" role="2VODD2">
-          <node concept="3clFbF" id="3x6pbm2KGsd" role="3cqZAp">
-            <node concept="2OqwBi" id="3x6pbm2KHLb" role="3clFbG">
-              <node concept="10M0yZ" id="3x6pbm2KGsc" role="2Oq$k0">
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              </node>
-              <node concept="liA8E" id="3x6pbm2KHUY" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-                <node concept="3cpWs3" id="4FWUYVFsnLc" role="37wK5m">
-                  <node concept="2UPiyF" id="4FWUYVFsnQU" role="3uHU7w" />
-                  <node concept="Xl_RD" id="3x6pbm2KHW3" role="3uHU7B">
-                    <property role="Xl_RC" value="Result written to this file: " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1CVceo" id="1m6aGq9bdYF" role="2$L6iY">
       <property role="TrG5h" value="newChannel" />
       <node concept="2J_sx7" id="1m6aGq9bdYG" role="2$L62I">
