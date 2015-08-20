@@ -18,6 +18,11 @@
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
+    <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
+      <concept id="1238853782547" name="jetbrains.mps.baseLanguage.tuples.structure.IndexedTupleLiteral" flags="nn" index="1Ls8ON">
+        <child id="1238853845806" name="component" index="1Lso8e" />
+      </concept>
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1153422105332" name="jetbrains.mps.baseLanguage.structure.RemExpression" flags="nn" index="2dk9JS" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -3149,12 +3154,12 @@
           <node concept="1ecmHP" id="10nk9FDZjZn" role="1Xju2$">
             <node concept="1bVj0M" id="10nk9FDZjZo" role="303AOo">
               <node concept="3clFbS" id="10nk9FDZjZp" role="1bW5cS">
-                <node concept="3clFbF" id="3dQaW8GXv8u" role="3cqZAp">
-                  <node concept="vO3mO" id="3dQaW8GXv8s" role="3clFbG">
-                    <node concept="37vLTw" id="3dQaW8GXvdq" role="vO0Ub">
+                <node concept="3clFbF" id="1$nyghyU4zl" role="3cqZAp">
+                  <node concept="1Ls8ON" id="1$nyghyU4zj" role="3clFbG">
+                    <node concept="37vLTw" id="1$nyghyU4Gr" role="1Lso8e">
                       <ref role="3cqZAo" node="10nk9FDZjZq" resolve="it" />
                     </node>
-                    <node concept="37vLTw" id="3dQaW8GXviK" role="vO0Ub">
+                    <node concept="37vLTw" id="1$nyghyU4OM" role="1Lso8e">
                       <ref role="3cqZAo" node="10nk9FDZjZT" resolve="evensCopy" />
                     </node>
                   </node>
