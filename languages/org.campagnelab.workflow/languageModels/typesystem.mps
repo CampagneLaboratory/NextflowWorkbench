@@ -98,7 +98,9 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
-      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -172,6 +174,10 @@
         <child id="1185805056450" name="argument" index="nvjzm" />
         <child id="1205761991995" name="argumentRepresentator" index="2X0Ygz" />
       </concept>
+      <concept id="1175147569072" name="jetbrains.mps.lang.typesystem.structure.AbstractSubtypingRule" flags="ig" index="2sgdUx">
+        <child id="1175147624276" name="body" index="2sgrp5" />
+      </concept>
+      <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
       <concept id="3585736512129529703" name="jetbrains.mps.lang.typesystem.structure.CreateStrongGreaterThanInequationStatement" flags="nn" index="AoYWV" />
       <concept id="1177514343197" name="jetbrains.mps.lang.typesystem.structure.MatchStatement" flags="nn" index="DkJCf">
         <child id="1177514345236" name="ifFalseStatement" index="DkK86" />
@@ -6803,6 +6809,25 @@
     <node concept="1YaCAy" id="2_d934XTXAb" role="1YuTPh">
       <property role="TrG5h" value="tupleLiteralExpression" />
       <ref role="1YaFvo" to="iowz:3dQaW8GDxTQ" resolve="TupleLiteralExpression" />
+    </node>
+  </node>
+  <node concept="2sgARr" id="2J6W_b7iMkD">
+    <property role="TrG5h" value="TupleTypeIsArrayList" />
+    <node concept="3clFbS" id="2J6W_b7iMkE" role="2sgrp5">
+      <node concept="3cpWs6" id="2J6W_b7jmKe" role="3cqZAp">
+        <node concept="2c44tf" id="2J6W_b7jmKn" role="3cqZAk">
+          <node concept="3uibUv" id="2J6W_b7jueh" role="2c44tc">
+            <ref role="3uigEE" to="k7g3:~ArrayList" resolve="ArrayList" />
+            <node concept="3uibUv" id="2J6W_b7jueK" role="11_B2D">
+              <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2J6W_b7iMkG" role="1YuTPh">
+      <property role="TrG5h" value="tupleType" />
+      <ref role="1YaFvo" to="iowz:2Hhp$WE5lSU" resolve="TupleType" />
     </node>
   </node>
 </model>
