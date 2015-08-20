@@ -4611,8 +4611,8 @@
                     <node concept="117lpO" id="10nk9FCcKMd" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="10nk9FCcL1a" role="2OqNvi">
                       <node concept="1xMEDy" id="10nk9FCcL1c" role="1xVPHs">
-                        <node concept="chp4Y" id="10nk9FCcL2$" role="ri$Ld">
-                          <ref role="cht4Q" to="iowz:7gAPJCERwXU" resolve="InputChannel" />
+                        <node concept="chp4Y" id="4VptOfxQRvW" role="ri$Ld">
+                          <ref role="cht4Q" to="iowz:1z1zDaaJoJq" resolve="HasConnectedChannel" />
                         </node>
                       </node>
                     </node>
@@ -5344,6 +5344,41 @@
         </node>
         <node concept="lc7rE" id="6LbMDSLGHPQ" role="3cqZAp">
           <node concept="la8eA" id="6LbMDSLGHS4" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="4VptOfxQA6S">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="WuzLi" to="iowz:4VptOfxQzIk" resolve="BufferRange" />
+    <node concept="11bSqf" id="4VptOfxQA6T" role="11c4hB">
+      <node concept="3clFbS" id="4VptOfxQA6U" role="2VODD2">
+        <node concept="lc7rE" id="4VptOfxQBh9" role="3cqZAp">
+          <node concept="la8eA" id="4VptOfxQBhn" role="lcghm">
+            <property role="lacIc" value="buffer(" />
+          </node>
+          <node concept="l9hG8" id="4VptOfyCht_" role="lcghm">
+            <node concept="2OqwBi" id="4VptOfyChxJ" role="lb14g">
+              <node concept="117lpO" id="4VptOfyChvK" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4VptOfyChFA" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:4VptOfxQzN8" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="4VptOfxQRZU" role="lcghm">
+            <property role="lacIc" value="," />
+          </node>
+          <node concept="l9hG8" id="4VptOfyChIW" role="lcghm">
+            <node concept="2OqwBi" id="4VptOfyChMc" role="lb14g">
+              <node concept="117lpO" id="4VptOfyChKd" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4VptOfyChVZ" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:4VptOfxQzNa" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="4VptOfxQSgn" role="lcghm">
             <property role="lacIc" value=")" />
           </node>
         </node>

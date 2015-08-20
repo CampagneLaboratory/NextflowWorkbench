@@ -340,6 +340,7 @@
       <concept id="3121388506938957370" name="org.campagnelab.workflow.structure.TupleType" flags="ig" index="1h3xP">
         <child id="7581087959662683399" name="type" index="1nAwDi" />
       </concept>
+      <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="3526016120162721360" name="org.campagnelab.workflow.structure.FileType" flags="ig" index="3UtRaE" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -3502,33 +3503,6 @@
       <ref role="1YaFvo" to="iowz:XaRILjgU7G" resolve="GroupTuple" />
     </node>
   </node>
-  <node concept="1YbPZF" id="XaRILjgXcw">
-    <property role="TrG5h" value="typeof_Buffer" />
-    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
-    <property role="18ip37" value="true" />
-    <node concept="3clFbS" id="XaRILjgXcx" role="18ibNy">
-      <node concept="1Z5TYs" id="XaRILjgXdM" role="3cqZAp">
-        <node concept="mw_s8" id="XaRILjgXe6" role="1ZfhKB">
-          <node concept="2c44tf" id="XaRILjgXe2" role="mwGJk">
-            <node concept="1h3xP" id="XaRILjgXep" role="2c44tc">
-              <node concept="3qTvmN" id="XaRILjgXeI" role="1nAwDi" />
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="XaRILjgXdP" role="1ZfhK$">
-          <node concept="1Z2H0r" id="XaRILjgXcB" role="mwGJk">
-            <node concept="1YBJjd" id="XaRILjgXcR" role="1Z2MuG">
-              <ref role="1YBMHb" node="XaRILjgXcz" resolve="buffer" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="XaRILjgXcz" role="1YuTPh">
-      <property role="TrG5h" value="buffer" />
-      <ref role="1YaFvo" to="iowz:XaRILjgXaG" resolve="Buffer" />
-    </node>
-  </node>
   <node concept="18kY7G" id="2fLVrqQ2FTa">
     <property role="TrG5h" value="check_ProcessOutput" />
     <property role="3GE5qa" value="processIO" />
@@ -5974,6 +5948,30 @@
     <node concept="1YaCAy" id="2J6W_b7iMkG" role="1YuTPh">
       <property role="TrG5h" value="tupleType" />
       <ref role="1YaFvo" to="iowz:2Hhp$WE5lSU" resolve="TupleType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4VptOfyYqwH">
+    <property role="TrG5h" value="typeof_RegexpValue" />
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <node concept="3clFbS" id="4VptOfyYqwI" role="18ibNy">
+      <node concept="1Z5TYs" id="4VptOfyYq_T" role="3cqZAp">
+        <node concept="mw_s8" id="4VptOfyYqAd" role="1ZfhKB">
+          <node concept="2c44tf" id="4VptOfyYqA9" role="mwGJk">
+            <node concept="16pbKc" id="4VptOfyYqAw" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4VptOfyYq_W" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4VptOfyYqzb" role="mwGJk">
+            <node concept="1YBJjd" id="4VptOfyYqzB" role="1Z2MuG">
+              <ref role="1YBMHb" node="4VptOfyYqwK" resolve="regexpValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4VptOfyYqwK" role="1YuTPh">
+      <property role="TrG5h" value="regexpValue" />
+      <ref role="1YaFvo" to="iowz:4VptOfyOwZ4" resolve="RegexpValue" />
     </node>
   </node>
 </model>

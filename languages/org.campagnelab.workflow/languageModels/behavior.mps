@@ -5365,17 +5365,21 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="10nk9FDCau2" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="10nk9FDCaNb" role="34bqiv">
-            <node concept="2OqwBi" id="10nk9FDCaW5" role="3uHU7w">
-              <node concept="37vLTw" id="10nk9FDCaQt" role="2Oq$k0">
-                <ref role="3cqZAo" node="1z1zDaaSzHC" resolve="previousNodeType" />
+        <node concept="3SKdUt" id="4VptOfyi5Gt" role="3cqZAp">
+          <node concept="3SKWN0" id="4VptOfyi5Gu" role="3SKWNk">
+            <node concept="34ab3g" id="10nk9FDCau2" role="3SKWNf">
+              <property role="35gtTG" value="info" />
+              <node concept="3cpWs3" id="10nk9FDCaNb" role="34bqiv">
+                <node concept="2OqwBi" id="10nk9FDCaW5" role="3uHU7w">
+                  <node concept="37vLTw" id="10nk9FDCaQt" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1z1zDaaSzHC" resolve="previousNodeType" />
+                  </node>
+                  <node concept="3JvlWi" id="10nk9FDCb7i" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="10nk9FDCau4" role="3uHU7B">
+                  <property role="Xl_RC" value="previous type: " />
+                </node>
               </node>
-              <node concept="3JvlWi" id="10nk9FDCb7i" role="2OqNvi" />
-            </node>
-            <node concept="Xl_RD" id="10nk9FDCau4" role="3uHU7B">
-              <property role="Xl_RC" value="previous type: " />
             </node>
           </node>
         </node>
@@ -5987,6 +5991,29 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="4VptOfydfEH">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="13h7C2" to="iowz:4VptOfxQzIk" resolve="BufferRange" />
+    <node concept="13hLZK" id="4VptOfydfEI" role="13h7CW">
+      <node concept="3clFbS" id="4VptOfydfEJ" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4VptOfyOwZ7">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <ref role="13h7C2" to="iowz:4VptOfyOwZ4" resolve="RegexpValue" />
+    <node concept="13hLZK" id="4VptOfyOwZ8" role="13h7CW">
+      <node concept="3clFbS" id="4VptOfyOwZ9" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4VptOfyOwZa" role="13h7CS">
+      <property role="TrG5h" value="removeProperty" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="2aFge8hFtpX" resolve="removeProperty" />
+      <node concept="3Tm1VV" id="4VptOfyOwZb" role="1B3o_S" />
+      <node concept="3clFbS" id="4VptOfyOwZe" role="3clF47" />
+      <node concept="3cqZAl" id="4VptOfyOwZf" role="3clF45" />
     </node>
   </node>
 </model>

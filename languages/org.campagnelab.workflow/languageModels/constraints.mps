@@ -220,6 +220,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -2325,6 +2326,39 @@
         <node concept="3clFbF" id="1$nyghz3l2S" role="3cqZAp">
           <node concept="3clFbT" id="1$nyghz3l2R" role="3clFbG">
             <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4VptOfyOwZk">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <ref role="1M2myG" to="iowz:3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+  </node>
+  <node concept="1M2fIO" id="4VptOfyXOaU">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <ref role="1M2myG" to="iowz:4VptOfyOwZ4" resolve="RegexpValue" />
+    <node concept="nKS2y" id="4VptOfyXOaV" role="1MLUbF">
+      <node concept="3clFbS" id="4VptOfyXOaW" role="2VODD2">
+        <node concept="3SKdUt" id="4VptOfyOyFa" role="3cqZAp">
+          <node concept="3SKdUq" id="4VptOfyOyFp" role="3SKWNk">
+            <property role="3SKdUp" value="do not allow regexp initializers below GlobalChannels" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="4VptOfyOxiX" role="3cqZAp">
+          <node concept="2OqwBi" id="4VptOfyOy3O" role="3clFbG">
+            <node concept="2OqwBi" id="4VptOfyOxmy" role="2Oq$k0">
+              <node concept="nLn13" id="4VptOfyOxiW" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4VptOfyOxFR" role="2OqNvi">
+                <node concept="1xMEDy" id="4VptOfyOxFT" role="1xVPHs">
+                  <node concept="chp4Y" id="4VptOfyOxNo" role="ri$Ld">
+                    <ref role="cht4Q" to="iowz:5AoFZCLt6Ly" resolve="GlobalChannel" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="4VptOfyOxWr" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="4VptOfyOyve" role="2OqNvi" />
           </node>
         </node>
       </node>

@@ -23,6 +23,7 @@
     <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
+    <import index="tpfo" ref="r:00000000-0000-4000-0000-011c89590518(jetbrains.mps.baseLanguage.regexp.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -947,19 +948,12 @@
     <property role="R4oN_" value=" Create records from elements in plain text format" />
     <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
   </node>
-  <node concept="1TIwiD" id="XaRILjgXaG">
-    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
-    <property role="TrG5h" value="Buffer" />
-    <property role="34LRSv" value="buffer" />
-    <property role="R4oN_" value="Gather elements into subsets, emit the subsets separately" />
-    <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
-  </node>
   <node concept="1TIwiD" id="XaRILilGma">
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
     <property role="TrG5h" value="First" />
     <property role="34LRSv" value="first" />
     <property role="R4oN_" value="Pick the first element or the first matching the condition" />
-    <ref role="1TJDcQ" node="1qs9CHFOmDW" resolve="ArgRegexQualifierPredicate" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILis0lI">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
@@ -1098,7 +1092,7 @@
     <property role="TrG5h" value="Filter" />
     <property role="R4oN_" value="Filter elements matching the condition" />
     <property role="34LRSv" value="filter" />
-    <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="2fLVrqPJSZI">
     <property role="3GE5qa" value="processIO" />
@@ -1758,7 +1752,7 @@
     <property role="TrG5h" value="Count" />
     <property role="34LRSv" value="count" />
     <property role="R4oN_" value="Creates a channel that emits the number of items in the source channel" />
-    <ref role="1TJDcQ" node="XaRILisNjl" resolve="ArgRegexLiteralQualifierPredicate" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="1shE7Zwr$_B">
     <property role="3GE5qa" value="processTypeDeclarations" />
@@ -1835,6 +1829,45 @@
       <property role="20kJfa" value="expressions" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XaRILjgXaG">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="TrG5h" value="Buffer" />
+    <property role="34LRSv" value="buffer" />
+    <property role="R4oN_" value="Gather elements into subsets, emit the subsets separately" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
+  </node>
+  <node concept="1TIwiD" id="4VptOfxQzIk">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="TrG5h" value="BufferRange" />
+    <property role="34LRSv" value="bufferRange" />
+    <property role="R4oN_" value="Gather elements into subsets, emit the subsets separately" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="4VptOfxQzN8" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="start" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
+    <node concept="1TJgyj" id="4VptOfxQzNa" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="end" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4VptOfyOwZ4">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="RegexpValue" />
+    <property role="34LRSv" value="regexp" />
+    <property role="R4oN_" value="Regular expression" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyj" id="4VptOfyOwZ5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="regexp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpfo:h5OC6VX" resolve="Regexp" />
     </node>
   </node>
 </model>

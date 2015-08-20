@@ -3388,5 +3388,56 @@
       <node concept="l2Vlx" id="3dQaW8GDzl8" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="4VptOfxQzNi">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="1XX52x" to="iowz:4VptOfxQzIk" resolve="BufferRange" />
+    <node concept="3EZMnI" id="4VptOfxQ$RE" role="2wV5jI">
+      <node concept="3F0ifn" id="4VptOfxQ$RL" role="3EZMnx">
+        <property role="3F0ifm" value="bufferRange(" />
+        <node concept="Vb9p2" id="4VptOfxQA6m" role="3F10Kt" />
+      </node>
+      <node concept="3F0ifn" id="4VptOfxQ$RR" role="3EZMnx">
+        <property role="3F0ifm" value="from:" />
+        <node concept="pVoyu" id="4VptOfxQ$S1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4VptOfxQ$SK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="4VptOfxQA6x" role="3F10Kt" />
+      </node>
+      <node concept="3F1sOY" id="4VptOfxQ$Sb" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:4VptOfxQzN8" />
+      </node>
+      <node concept="3F0ifn" id="4VptOfxQ$Sn" role="3EZMnx">
+        <property role="3F0ifm" value="to" />
+        <node concept="pVoyu" id="4VptOfxQ$SH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4VptOfxQ$SP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="4VptOfxQA6J" role="3F10Kt" />
+      </node>
+      <node concept="3F1sOY" id="4VptOfxQ$S_" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:4VptOfxQzNa" />
+      </node>
+      <node concept="3F0ifn" id="4VptOfyHkVT" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="Vb9p2" id="4VptOfyHkXK" role="3F10Kt" />
+      </node>
+      <node concept="l2Vlx" id="4VptOfxQ$RH" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4VptOfyQPJH">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <ref role="1XX52x" to="iowz:4VptOfyOwZ4" resolve="RegexpValue" />
+    <node concept="3EZMnI" id="4VptOfyQPJM" role="2wV5jI">
+      <node concept="3F1sOY" id="4VptOfyQPJT" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:4VptOfyOwZ5" />
+      </node>
+      <node concept="l2Vlx" id="4VptOfyQPJP" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
