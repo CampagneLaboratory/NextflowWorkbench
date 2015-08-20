@@ -4,8 +4,8 @@
   <languages>
     <use id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" name="org.campagnelab.mps.editor2pdf" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="3" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="5" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports>
@@ -76,8 +76,12 @@
       <concept id="4018964125401495568" name="org.campagnelab.workflow.structure.Tuple" flags="ng" index="knwa4">
         <child id="7391172440899058539" name="elements" index="2zSOd7" />
       </concept>
-      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
-      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
+        <property id="2590112629708729231" name="fromStandardOutput" index="2lYOoT" />
+      </concept>
+      <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o">
+        <property id="2590112629703814581" name="toStandardInput" index="2mj$03" />
+      </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -140,21 +144,13 @@
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
       </concept>
+      <concept id="8074343669091902386" name="org.campagnelab.workflow.structure.ValueInAChannelRef" flags="ng" index="3YE7tV">
+        <reference id="8074343669091902431" name="value" index="3YE7sm" />
+      </concept>
     </language>
   </registry>
   <node concept="2$rMIF" id="dNnsoyWtYg">
     <property role="TrG5h" value="SubmitAnalyzeCombineWorkflow" />
-    <node concept="1CVceo" id="7wWbCzYoxwH" role="2$L6iY">
-      <property role="TrG5h" value="alignments" />
-      <node concept="2J_sx7" id="7wWbCzYoxwI" role="2$L62I">
-        <node concept="2J_rk5" id="7wWbCzYoyBN" role="2J_sx6">
-          <property role="2J_rkp" value="${project}/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*" />
-        </node>
-        <node concept="2J_rk5" id="7wWbCzYozEm" role="2J_sx6">
-          <property role="2J_rkp" value="${project}/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*" />
-        </node>
-      </node>
-    </node>
     <node concept="2UNLhE" id="5FDPSDjP0m8" role="2UW718">
       <ref role="2UNLhW" node="5FDPSDjP0kn" resolve="result" />
       <node concept="2UPiyC" id="5FDPSDjP0m9" role="2UNLhY">
@@ -210,6 +206,17 @@
         <node concept="1yaYav" id="5FDPSDjQqBV" role="1ylr64" />
       </node>
     </node>
+    <node concept="1CVceo" id="7wWbCzYoxwH" role="2$L6iY">
+      <property role="TrG5h" value="alignments" />
+      <node concept="2J_sx7" id="7wWbCzYoxwI" role="2$L62I">
+        <node concept="2J_rk5" id="7wWbCzYoyBN" role="2J_sx6">
+          <property role="2J_rkp" value="${project}/inputAlignments/NYJZLNL-exome-S34-Donor-ACR.*" />
+        </node>
+        <node concept="2J_rk5" id="7wWbCzYozEm" role="2J_sx6">
+          <property role="2J_rkp" value="${project}/inputAlignments/CMJYDVS-exome-S18-Donor-Normal.*" />
+        </node>
+      </node>
+    </node>
     <node concept="1CVceo" id="5wcZjhPjWc2" role="2$L6iY">
       <property role="TrG5h" value="test" />
       <node concept="2J_sx7" id="5wcZjhPjWc3" role="2$L62I">
@@ -259,100 +266,6 @@
   <node concept="KZc4b" id="5wcZjhOWEre">
     <property role="TrG5h" value="FIGURES" />
     <property role="KZc57" value="/Users/fac2003/Documents/Workflow_Doc/figures" />
-  </node>
-  <node concept="KZc4b" id="3WNK9KXJFMx">
-    <property role="TrG5h" value="JasonFIGURES" />
-    <property role="KZc57" value="/Users/jasonkurs/Workflow_Doc/figures" />
-  </node>
-  <node concept="2$rMIF" id="7wWbCzYVUxD">
-    <property role="TrG5h" value="NewProcess" />
-    <node concept="2$rEH5" id="7wWbCzYVUxE" role="2$rEHq">
-      <node concept="3ZW7eb" id="7wWbCzYVUxJ" role="lGtFl">
-        <property role="2ripvU" value="1" />
-        <property role="TrG5h" value="NewProcessReference" />
-        <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
-      </node>
-    </node>
-    <node concept="19SGf9" id="7wWbCzYVUxF" role="GZ$AB">
-      <node concept="19SUe$" id="7wWbCzYVUxG" role="19SJt6">
-        <property role="19SUeA" value="New process reference" />
-      </node>
-    </node>
-  </node>
-  <node concept="2ulcR8" id="3WNK9KXJFgM">
-    <node concept="2ulSLo" id="3WNK9KXJFgN" role="2ulM7a" />
-    <node concept="3ZW7eb" id="3WNK9KXJFin" role="lGtFl">
-      <property role="2ripvU" value="1" />
-      <property role="TrG5h" value="ProcessWithSetInput" />
-      <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
-    </node>
-    <node concept="2mjA9o" id="17cHcBwD1wN" role="2ulM7n">
-      <property role="TrG5h" value="boolVal" />
-      <node concept="1utKzZ" id="17cHcBwD1wV" role="2ybFLk" />
-    </node>
-    <node concept="2mjA9o" id="17cHcBwD1xZ" role="2ulM7n">
-      <property role="TrG5h" value="filePath" />
-      <node concept="16pRw0" id="17cHcBwD1y9" role="2ybFLk" />
-    </node>
-    <node concept="2mjA9o" id="17cHcBwD1yE" role="2ulM7n">
-      <property role="TrG5h" value="num" />
-      <node concept="1utKN4" id="17cHcBwD1yQ" role="2ybFLk" />
-    </node>
-    <node concept="2mjA9o" id="17cHcBwD1yY" role="2ulM7n">
-      <property role="TrG5h" value="listOfNums" />
-      <node concept="kktkh" id="17cHcBwD1zh" role="2ybFLk">
-        <node concept="1utKN4" id="17cHcBwD1_w" role="2y8EMt" />
-      </node>
-    </node>
-    <node concept="2mjA9o" id="17cHcBwD1B5" role="2ulM7n">
-      <property role="TrG5h" value="name" />
-      <node concept="16pbKc" id="17cHcBwD1Bm" role="2ybFLk" />
-    </node>
-    <node concept="2mjA9o" id="17cHcBwD1Bu" role="2ulM7n">
-      <node concept="knwa4" id="17cHcBwD1BQ" role="2ybFLk">
-        <node concept="2zSw2O" id="17cHcBwD1BS" role="2zSOd7">
-          <property role="TrG5h" value="fileName" />
-          <node concept="16pRw0" id="17cHcBwD1Cc" role="2ybFLk" />
-        </node>
-        <node concept="2zSw2O" id="17cHcBwD1Df" role="2zSOd7">
-          <property role="TrG5h" value="flag" />
-          <node concept="1utKzZ" id="17cHcBwD1DH" role="2ybFLk" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2ulcR8" id="34JZ5vsmm0i">
-    <property role="TrG5h" value="BashEx" />
-    <node concept="2lYRya" id="3rUult5h7Fc" role="2ulM79">
-      <property role="TrG5h" value="'finalFile.txt'" />
-      <node concept="16pRw0" id="3rUult5h7Ff" role="2ybFLk" />
-    </node>
-    <node concept="2mjA9o" id="3rUult5h7Ei" role="2ulM7n">
-      <property role="TrG5h" value="'exampleFile.txt'" />
-      <node concept="16pRw0" id="3rUult5h7Eq" role="2ybFLk" />
-    </node>
-    <node concept="3Y$Zt1" id="34JZ5vs_Ul8" role="2ulM7a">
-      <node concept="19SGf9" id="34JZ5vs_Ul9" role="3Y$PkS">
-        <node concept="19SUe$" id="34JZ5vs_Ula" role="19SJt6">
-          <property role="19SUeA" value="cat " />
-        </node>
-        <node concept="2b_LqF" id="x9V7s05QUx" role="19SJt6">
-          <ref role="2b_LqC" node="3rUult5h7Ei" resolve="'exampleFile.txt'" />
-        </node>
-        <node concept="19SUe$" id="x9V7s05QUw" role="19SJt6">
-          <property role="19SUeA" value=" &gt; " />
-        </node>
-        <node concept="2b_LqF" id="x9V7s05QUJ" role="19SJt6">
-          <ref role="2b_LqC" node="3rUult5h7Fc" resolve="'finalFile.txt'" />
-        </node>
-        <node concept="19SUe$" id="x9V7s05QUK" role="19SJt6" />
-      </node>
-    </node>
-    <node concept="3ZW7eb" id="x9V7s05XuY" role="lGtFl">
-      <property role="2ripvU" value="1" />
-      <property role="TrG5h" value="BashExample" />
-      <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
-    </node>
   </node>
   <node concept="2$rMIF" id="7wWbCzYoDIy">
     <property role="TrG5h" value="NewWorkflow" />
@@ -492,6 +405,135 @@
       <property role="2ripvU" value="1" />
       <property role="TrG5h" value="ExamplesOfInputData" />
       <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
+    </node>
+  </node>
+  <node concept="2$rMIF" id="7wWbCzYVUxD">
+    <property role="TrG5h" value="NewProcess" />
+    <node concept="2$rEH5" id="7wWbCzYVUxE" role="2$rEHq">
+      <node concept="3ZW7eb" id="7wWbCzYVUxJ" role="lGtFl">
+        <property role="2ripvU" value="1" />
+        <property role="TrG5h" value="NewProcessReference" />
+        <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
+      </node>
+    </node>
+    <node concept="19SGf9" id="7wWbCzYVUxF" role="GZ$AB">
+      <node concept="19SUe$" id="7wWbCzYVUxG" role="19SJt6">
+        <property role="19SUeA" value="New process reference" />
+      </node>
+    </node>
+  </node>
+  <node concept="KZc4b" id="3WNK9KXJFMx">
+    <property role="TrG5h" value="JasonFIGURES" />
+    <property role="KZc57" value="/Users/jasonkurs/Workflow_Doc/figures" />
+  </node>
+  <node concept="2ulcR8" id="3WNK9KXJFgM">
+    <node concept="2ulSLo" id="3WNK9KXJFgN" role="2ulM7a" />
+    <node concept="3ZW7eb" id="3WNK9KXJFin" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="ProcessWithSetInput" />
+      <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
+    </node>
+    <node concept="2mjA9o" id="17cHcBwD1wN" role="2ulM7n">
+      <property role="TrG5h" value="boolVal" />
+      <node concept="1utKzZ" id="17cHcBwD1wV" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="17cHcBwD1xZ" role="2ulM7n">
+      <property role="TrG5h" value="filePath" />
+      <node concept="16pRw0" id="17cHcBwD1y9" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="17cHcBwD1yE" role="2ulM7n">
+      <property role="TrG5h" value="num" />
+      <node concept="1utKN4" id="17cHcBwD1yQ" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="17cHcBwD1yY" role="2ulM7n">
+      <property role="TrG5h" value="listOfNums" />
+      <node concept="kktkh" id="17cHcBwD1zh" role="2ybFLk">
+        <node concept="1utKN4" id="17cHcBwD1_w" role="2y8EMt" />
+      </node>
+    </node>
+    <node concept="2mjA9o" id="17cHcBwD1B5" role="2ulM7n">
+      <property role="TrG5h" value="name" />
+      <node concept="16pbKc" id="17cHcBwD1Bm" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="17cHcBwD1Bu" role="2ulM7n">
+      <node concept="knwa4" id="17cHcBwD1BQ" role="2ybFLk">
+        <node concept="2zSw2O" id="17cHcBwD1BS" role="2zSOd7">
+          <property role="TrG5h" value="fileName" />
+          <node concept="16pRw0" id="17cHcBwD1Cc" role="2ybFLk" />
+        </node>
+        <node concept="2zSw2O" id="17cHcBwD1Df" role="2zSOd7">
+          <property role="TrG5h" value="flag" />
+          <node concept="1utKzZ" id="17cHcBwD1DH" role="2ybFLk" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2ulcR8" id="34JZ5vsmm0i">
+    <property role="TrG5h" value="BashEx" />
+    <node concept="2lYRya" id="3rUult5h7Fc" role="2ulM79">
+      <property role="TrG5h" value="'finalFile.txt'" />
+      <node concept="16pRw0" id="3rUult5h7Ff" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="3rUult5h7Ei" role="2ulM7n">
+      <property role="TrG5h" value="'exampleFile.txt'" />
+      <node concept="16pRw0" id="3rUult5h7Eq" role="2ybFLk" />
+    </node>
+    <node concept="3Y$Zt1" id="34JZ5vs_Ul8" role="2ulM7a">
+      <node concept="19SGf9" id="34JZ5vs_Ul9" role="3Y$PkS">
+        <node concept="19SUe$" id="34JZ5vs_Ula" role="19SJt6">
+          <property role="19SUeA" value="cat " />
+        </node>
+        <node concept="2b_LqF" id="x9V7s05QUx" role="19SJt6">
+          <ref role="2b_LqC" node="3rUult5h7Ei" resolve="'exampleFile.txt'" />
+        </node>
+        <node concept="19SUe$" id="x9V7s05QUw" role="19SJt6">
+          <property role="19SUeA" value=" &gt; " />
+        </node>
+        <node concept="2b_LqF" id="x9V7s05QUJ" role="19SJt6">
+          <ref role="2b_LqC" node="3rUult5h7Fc" resolve="'finalFile.txt'" />
+        </node>
+        <node concept="19SUe$" id="x9V7s05QUK" role="19SJt6" />
+      </node>
+    </node>
+    <node concept="3ZW7eb" id="x9V7s05XuY" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="BashExample" />
+      <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
+    </node>
+  </node>
+  <node concept="2ulcR8" id="6BD$$Fyp1pe">
+    <property role="TrG5h" value="SelectSequencesByPattern" />
+    <node concept="2lYRya" id="6BD$$Fyp2R3" role="2ulM79">
+      <property role="TrG5h" value="matchingSequences" />
+      <property role="2lYOoT" value="true" />
+      <node concept="16pbKc" id="6BD$$Fyp30z" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="6BD$$Fyp28q" role="2ulM7n">
+      <property role="TrG5h" value="sequences" />
+      <property role="2mj$03" value="true" />
+      <node concept="16pbKc" id="6BD$$Fyp2aK" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="6BD$$Fyp2M7" role="2ulM7n">
+      <property role="TrG5h" value="pattern" />
+      <node concept="16pbKc" id="6BD$$Fyp2Ox" role="2ybFLk" />
+    </node>
+    <node concept="3Y$Zt1" id="6BD$$Fyp5jW" role="2ulM7a">
+      <node concept="19SGf9" id="6BD$$Fyp5jY" role="3Y$PkS">
+        <node concept="19SUe$" id="6BD$$Fyp5jZ" role="19SJt6">
+          <property role="19SUeA" value="awk '{for (i=1;i&lt;NF;i++) { if ($i ~ &quot;" />
+        </node>
+        <node concept="3YE7tV" id="6BD$$Fyp5xO" role="19SJt6">
+          <ref role="3YE7sm" node="6BD$$Fyp2M7" resolve="pattern" />
+        </node>
+        <node concept="19SUe$" id="6BD$$Fyp5xN" role="19SJt6">
+          <property role="19SUeA" value="&quot;) print $i;}}'" />
+        </node>
+      </node>
+    </node>
+    <node concept="3ZW7eb" id="6BD$$Fyp5A$" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="SelectSequencesByPattern" />
+      <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
     </node>
   </node>
 </model>

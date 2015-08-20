@@ -562,9 +562,6 @@
     <node concept="1lnzPE" id="wcFktQl6$d" role="1lvGkX">
       <property role="1lnzPG" value="Starting docker build" />
     </node>
-    <node concept="1lnzPE" id="xP2fmw4Qyt" role="1lvGkX">
-      <property role="1lnzPG" value="Stopping container " />
-    </node>
   </node>
   <node concept="VuPG2" id="3ymWtI94ikR">
     <property role="TrG5h" value="SomeContainer" />
@@ -6672,7 +6669,7 @@
   <node concept="GbKB8" id="nU1NoTqWyi">
     <property role="TrG5h" value="RWQXRLTPDE" />
     <property role="GbyUj" value="test" />
-    <property role="1vm7qE" value="false" />
+    <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="" />
     <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
   </node>
