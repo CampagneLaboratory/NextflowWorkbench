@@ -2312,5 +2312,23 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1$nyghz3kJm">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="1M2myG" to="iowz:6TmjYLGeIaW" resolve="Separate" />
+    <node concept="nKS2y" id="1$nyghz3kXW" role="1MLUbF">
+      <node concept="3clFbS" id="1$nyghz3kXX" role="2VODD2">
+        <node concept="3SKdUt" id="1$nyghz3ld8" role="3cqZAp">
+          <node concept="3SKdUq" id="1$nyghz3ldg" role="3SKWNk">
+            <property role="3SKdUp" value="disabled as it is not working yet." />
+          </node>
+        </node>
+        <node concept="3clFbF" id="1$nyghz3l2S" role="3cqZAp">
+          <node concept="3clFbT" id="1$nyghz3l2R" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
