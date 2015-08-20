@@ -86,7 +86,7 @@
   </node>
   <node concept="VuPG2" id="6fIiQMMz3r_">
     <property role="TrG5h" value="artifact-software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile3548767540903669133.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1661175231725542149.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="6fIiQMM$wKy" role="VuOVn">
       <node concept="VtuK3" id="6fIiQMM$_RF" role="VuO5T">
@@ -100,12 +100,32 @@
       <property role="VuOhg" value="Campagne Lab" />
       <property role="VuOhi" value="manuele.simi@campagnelab.org" />
     </node>
+    <node concept="2Cort2" id="R1cm0Ivk3B" role="VuOVn">
+      <property role="1MaElf" value="add gobyweb user" />
+    </node>
+    <node concept="VugRC" id="R1cm0IvjTa" role="VuOVn">
+      <node concept="19SGf9" id="R1cm0IvjTA" role="Vugyn">
+        <node concept="19SUe$" id="R1cm0IvjTB" role="19SJt6">
+          <property role="19SUeA" value="useradd gobyweb &amp;&amp; su gobyweb &amp;&amp; /bin/bash" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="R1cm0Ivk1z" role="VuOVn">
+      <node concept="19SGf9" id="R1cm0Ivk22" role="Vugyn">
+        <node concept="19SUe$" id="R1cm0Ivk23" role="19SJt6">
+          <property role="19SUeA" value="echo &quot;export JAVA_HOME=/opt/jdk1.8.0_45&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin&quot; &gt;&gt; $HOME/.bashrc " />
+        </node>
+      </node>
+    </node>
     <node concept="VugRC" id="3P1oJbjPLIh" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPLIH" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPLII" role="19SJt6">
           <property role="19SUeA" value="mkdir -p /home/gobyweb/software " />
         </node>
       </node>
+    </node>
+    <node concept="2Cort2" id="R1cm0Ivk4F" role="VuOVn">
+      <property role="1MaElf" value="download and install the plugins SDK" />
     </node>
     <node concept="VugRC" id="3P1oJbjPVEo" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPVEp" role="Vugyn">
@@ -154,8 +174,8 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="R1cm0IvaC$" role="3blhQR">
-      <ref role="3blhQY" node="R1cm0IvaCz" resolve="artifact-software_Image" />
+    <node concept="3blhQM" id="R1cm0Ivk8f" role="3blhQR">
+      <ref role="3blhQY" node="R1cm0Ivk8e" resolve="artifact-software_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
@@ -255,15 +275,15 @@
       <property role="Gyxd1" value="1.0" />
     </node>
   </node>
-  <node concept="2E_JVc" id="R1cm0IvaCz">
-    <property role="2E_JEh" value="3be4d9131333" />
+  <node concept="2E_JVc" id="R1cm0Ivk8e">
+    <property role="2E_JEh" value="e13d06e132bd" />
     <property role="TrG5h" value="artifact-software_Image" />
-    <property role="GSh9r" value="mas2181/artifact-software:1.0" />
+    <property role="GSh9r" value="mas2181/artifact-software:latest" />
     <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifact-software" />
-    <node concept="Gyxd7" id="R1cm0IvaCR" role="Gyxcj">
+    <node concept="Gyxd7" id="R1cm0Ivk8w" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="artifact-software" />
-      <property role="Gyxd1" value="1.0" />
+      <property role="Gyxd1" value="latest" />
     </node>
   </node>
 </model>
