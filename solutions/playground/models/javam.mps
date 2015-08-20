@@ -8,15 +8,22 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="6" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
   </languages>
   <imports>
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="qqyk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.baseLanguage.tuples.runtime(MPS.Core/jetbrains.mps.baseLanguage.tuples.runtime@java_stub)" />
+    <import index="o3zc" ref="r:6beda8d8-3c96-48a6-b1c9-68466ee67610(javam)" />
+    <import index="8dm4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.internal.collections.runtime(MPS.Core/jetbrains.mps.internal.collections.runtime@java_stub)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
+        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -28,6 +35,9 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -47,6 +57,8 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
+        <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -64,6 +76,9 @@
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -111,14 +126,16 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="3708199456158916214" name="org.campagnelab.workflow.structure.TupleLiteralExpression" flags="ng" index="vO3mO">
-        <child id="3708199456158917961" name="expressions" index="vO0Ub" />
-      </concept>
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
         <child id="8074343669091434993" name="text" index="3Y$PkS" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -239,15 +256,23 @@
         <node concept="3cpWs8" id="3dQaW8H8s8u" role="3cqZAp">
           <node concept="3cpWsn" id="3dQaW8H8s8v" role="3cpWs9">
             <property role="TrG5h" value="dummy" />
-            <node concept="3uibUv" id="3dQaW8H8s8w" role="1tU5fm">
-              <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-            </node>
-            <node concept="vO3mO" id="3dQaW8H8sbc" role="33vP2m">
-              <node concept="3cmrfG" id="3dQaW8H8sbd" role="vO0Ub">
-                <property role="3cmrfH" value="1" />
+            <node concept="3uibUv" id="1$nyghyx9gI" role="1tU5fm">
+              <ref role="3uigEE" to="8dm4:~IListSequence" resolve="IListSequence" />
+              <node concept="3uibUv" id="1$nyghyxfCJ" role="11_B2D">
+                <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
               </node>
-              <node concept="3cmrfG" id="3dQaW8H8sbe" role="vO0Ub">
-                <property role="3cmrfH" value="2" />
+            </node>
+            <node concept="2ShNRf" id="1$nyghyxdIb" role="33vP2m">
+              <node concept="Tc6Ow" id="1$nyghyxe1p" role="2ShVmc">
+                <node concept="Xl_RD" id="1$nyghyxg39" role="HW$Y0">
+                  <property role="Xl_RC" value="2" />
+                </node>
+                <node concept="Xl_RD" id="1$nyghyxgvz" role="HW$Y0">
+                  <property role="Xl_RC" value="3" />
+                </node>
+                <node concept="3uibUv" id="1$nyghyxhpE" role="HW$YZ">
+                  <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                </node>
               </node>
             </node>
           </node>
@@ -266,9 +291,136 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="1$nyghyx55V" role="3cqZAp">
+          <node concept="2OqwBi" id="1$nyghyx55S" role="3clFbG">
+            <node concept="10M0yZ" id="1$nyghyx55T" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="1$nyghyx55U" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.Object):void" resolve="println" />
+              <node concept="2YIFZM" id="1$nyghyx4if" role="37wK5m">
+                <ref role="37wK5l" node="1$nyghyx31U" resolve="from_2" />
+                <ref role="1Pybhc" node="1$nyghyx3wI" resolve="ListToTupleWrapper" />
+                <node concept="37vLTw" id="1$nyghyx4ig" role="37wK5m">
+                  <ref role="3cqZAo" node="3dQaW8H8s8v" resolve="dummy" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="3dQaW8H8nB2" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="1$nyghyx3wI">
+    <property role="TrG5h" value="ListToTupleWrapper" />
+    <node concept="2YIFZL" id="1$nyghyx31A" role="jymVt">
+      <property role="TrG5h" value="from_0" />
+      <property role="IEkAT" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="1$nyghyx31B" role="3clF46">
+        <property role="TrG5h" value="elements" />
+        <node concept="3uibUv" id="1$nyghyxb8P" role="1tU5fm">
+          <ref role="3uigEE" to="8dm4:~IListSequence" resolve="IListSequence" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1$nyghyx31D" role="3clF47">
+        <node concept="3cpWs6" id="1$nyghyx31E" role="3cqZAp">
+          <node concept="2YIFZM" id="1$nyghyx31F" role="3cqZAk">
+            <ref role="37wK5l" to="qqyk:~MultiTuple.from():jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_0" resolve="from" />
+            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="1$nyghyx31G" role="3clF45">
+        <ref role="3uigEE" to="qqyk:~Tuples$_0" resolve="Tuples._0" />
+      </node>
+      <node concept="3Tm1VV" id="1$nyghyx31H" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="1$nyghyx31I" role="jymVt">
+      <property role="TrG5h" value="from_1" />
+      <property role="IEkAT" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="1$nyghyx31J" role="3clF46">
+        <property role="TrG5h" value="elements" />
+        <node concept="3uibUv" id="1$nyghyxb6I" role="1tU5fm">
+          <ref role="3uigEE" to="8dm4:~IListSequence" resolve="IListSequence" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1$nyghyx31L" role="3clF47">
+        <node concept="3cpWs6" id="1$nyghyx31M" role="3cqZAp">
+          <node concept="2YIFZM" id="1$nyghyx31N" role="3cqZAk">
+            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_1" resolve="from" />
+            <node concept="2OqwBi" id="1$nyghyx31O" role="37wK5m">
+              <node concept="37vLTw" id="1$nyghyx31P" role="2Oq$k0">
+                <ref role="3cqZAo" node="1$nyghyx31J" resolve="elements" />
+              </node>
+              <node concept="liA8E" id="1$nyghyx31Q" role="2OqNvi">
+                <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                <node concept="3cmrfG" id="1$nyghyx31R" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="1$nyghyx31S" role="3clF45">
+        <ref role="3uigEE" to="qqyk:~Tuples$_1" resolve="Tuples._1" />
+      </node>
+      <node concept="3Tm1VV" id="1$nyghyx31T" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="1$nyghyx31U" role="jymVt">
+      <property role="TrG5h" value="from_2" />
+      <property role="IEkAT" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="1$nyghyx31V" role="3clF46">
+        <property role="TrG5h" value="elements" />
+        <node concept="3uibUv" id="1$nyghyx9RR" role="1tU5fm">
+          <ref role="3uigEE" to="8dm4:~IListSequence" resolve="IListSequence" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1$nyghyx31X" role="3clF47">
+        <node concept="3cpWs6" id="1$nyghyx31Y" role="3cqZAp">
+          <node concept="2YIFZM" id="1$nyghyx31Z" role="3cqZAk">
+            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_2" resolve="from" />
+            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
+            <node concept="2OqwBi" id="1$nyghyx320" role="37wK5m">
+              <node concept="37vLTw" id="1$nyghyx321" role="2Oq$k0">
+                <ref role="3cqZAo" node="1$nyghyx31V" resolve="elements" />
+              </node>
+              <node concept="liA8E" id="1$nyghyx322" role="2OqNvi">
+                <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                <node concept="3cmrfG" id="1$nyghyx323" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1$nyghyx324" role="37wK5m">
+              <node concept="37vLTw" id="1$nyghyx325" role="2Oq$k0">
+                <ref role="3cqZAo" node="1$nyghyx31V" resolve="elements" />
+              </node>
+              <node concept="liA8E" id="1$nyghyx326" role="2OqNvi">
+                <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                <node concept="3cmrfG" id="1$nyghyx327" role="37wK5m">
+                  <property role="3cmrfH" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="1$nyghyx328" role="3clF45">
+        <ref role="3uigEE" to="qqyk:~Tuples$_2" resolve="Tuples._2" />
+      </node>
+      <node concept="3Tm1VV" id="1$nyghyx329" role="1B3o_S" />
+    </node>
+    <node concept="3Tm1VV" id="1$nyghyx3wJ" role="1B3o_S" />
   </node>
 </model>
 

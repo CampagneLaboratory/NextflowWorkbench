@@ -2174,6 +2174,14 @@
     <property role="TrG5h" value="ParameterContainer" />
     <property role="R4oN_" value="contains the parameter of a closure" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1$nyghyib1Y" role="1TKVEl">
+      <property role="TrG5h" value="isTuple" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="1$nyghyrQAi" role="1TKVEl">
+      <property role="TrG5h" value="tupleNumElements" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyi" id="10nk9FBT6qI" role="1TKVEl">
       <property role="TrG5h" value="parameter" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />

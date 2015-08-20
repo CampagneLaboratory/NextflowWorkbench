@@ -32,6 +32,11 @@
     <import index="tp2n" ref="r:00000000-0000-4000-0000-011c89590333(jetbrains.mps.baseLanguage.closures.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
+      <concept id="1238852151516" name="jetbrains.mps.baseLanguage.tuples.structure.IndexedTupleType" flags="in" index="1LlUBW">
+        <child id="1238852204892" name="componentType" index="1Lm7xW" />
+      </concept>
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -6814,12 +6819,20 @@
   <node concept="2sgARr" id="2J6W_b7iMkD">
     <property role="TrG5h" value="TupleTypeIsArrayList" />
     <node concept="3clFbS" id="2J6W_b7iMkE" role="2sgrp5">
-      <node concept="3cpWs6" id="2J6W_b7jmKe" role="3cqZAp">
-        <node concept="2c44tf" id="2J6W_b7jmKn" role="3cqZAk">
-          <node concept="3uibUv" id="2J6W_b7jueh" role="2c44tc">
-            <ref role="3uigEE" to="k7g3:~ArrayList" resolve="ArrayList" />
-            <node concept="3uibUv" id="2J6W_b7jueK" role="11_B2D">
-              <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+      <node concept="3cpWs6" id="1$nyghyR1Br" role="3cqZAp">
+        <node concept="2c44tf" id="1$nyghyR1BN" role="3cqZAk">
+          <node concept="1LlUBW" id="1$nyghyR1CX" role="2c44tc">
+            <node concept="10Oyi0" id="1$nyghyR1XY" role="1Lm7xW">
+              <node concept="2c44t8" id="1$nyghyR1Yl" role="lGtFl">
+                <node concept="2OqwBi" id="1$nyghyR21q" role="2c44t1">
+                  <node concept="1YBJjd" id="1$nyghyR1YG" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2J6W_b7iMkG" resolve="tupleType" />
+                  </node>
+                  <node concept="3Tsc0h" id="1$nyghyR2eu" role="2OqNvi">
+                    <ref role="3TtcxE" to="iowz:6$PrPkYFQk7" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

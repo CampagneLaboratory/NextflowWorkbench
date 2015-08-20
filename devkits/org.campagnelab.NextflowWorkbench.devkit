@@ -7,6 +7,9 @@
   <exported-language name="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <exported-language name="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <exported-language name="774bf8a0-62e5-41e1-af63-f4812e60e48b(jetbrains.mps.baseLanguage.checkedDots)" />
+  <exported-language name="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
+  <exported-language name="a247e09e-2435-45ba-b8d2-07e93feba96a(jetbrains.mps.baseLanguage.tuples)" />
+  <exported-language name="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" />
   <exported-solutions>
     <exported-solution>c039a1a6-4680-46fa-b571-a6a5f1e49ab6(org.campagnelab.workflow.run)</exported-solution>
     <exported-solution>4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)</exported-solution>
