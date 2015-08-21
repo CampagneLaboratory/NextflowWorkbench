@@ -3455,5 +3455,50 @@
       <node concept="l2Vlx" id="7pq1c5M4UTy" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="53yaZUNZ9bi">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <ref role="1XX52x" to="iowz:53yaZUNZ6PJ" resolve="ValueOfCommandLineParam" />
+    <node concept="3EZMnI" id="53yaZUNZ9Rf" role="2wV5jI">
+      <node concept="3F0ifn" id="53yaZUNZ9R$" role="3EZMnx">
+        <property role="3F0ifm" value="--" />
+        <node concept="Vb9p2" id="53yaZUOdP$g" role="3F10Kt" />
+      </node>
+      <node concept="3F0A7n" id="53yaZUNZ9Rs" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:53yaZUNZ74y" resolve="longFlag" />
+        <node concept="11L4FC" id="53yaZUOdPy_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="53yaZUNZa_U" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F0A7n" id="53yaZUOdPwO" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:53yaZUO7aBN" resolve="default" />
+      </node>
+      <node concept="l2Vlx" id="53yaZUNZ9Ri" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="53yaZUNZazO" role="6VMZX">
+      <node concept="l2Vlx" id="53yaZUNZazP" role="2iSdaV" />
+      <node concept="3F0ifn" id="53yaZUNZazS" role="3EZMnx">
+        <property role="3F0ifm" value="description of this parameter:" />
+        <node concept="Vb9p2" id="53yaZUNZa_y" role="3F10Kt" />
+      </node>
+      <node concept="3F0A7n" id="53yaZUNZa_H" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:53yaZUNZ79w" resolve="description" />
+        <node concept="pVoyu" id="53yaZUNZa_M" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="53yaZUO7aBx" role="3EZMnx">
+        <property role="3F0ifm" value="default value:" />
+        <node concept="pVoyu" id="53yaZUO7aC3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="53yaZUO7aBV" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:53yaZUO7aBN" resolve="default" />
+      </node>
+    </node>
+  </node>
 </model>
 

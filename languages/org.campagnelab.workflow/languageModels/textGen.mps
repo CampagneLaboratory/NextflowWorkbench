@@ -5455,5 +5455,60 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="53yaZUOiWUJ">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <ref role="WuzLi" to="iowz:53yaZUNZ6PJ" resolve="ValueOfCommandLineParam" />
+    <node concept="11bSqf" id="53yaZUOiWUK" role="11c4hB">
+      <node concept="3clFbS" id="53yaZUOiWUL" role="2VODD2">
+        <node concept="lc7rE" id="53yaZUOiXNM" role="3cqZAp">
+          <node concept="la8eA" id="53yaZUOiXO2" role="lcghm">
+            <property role="lacIc" value="(param." />
+          </node>
+          <node concept="l9hG8" id="53yaZUOiXOx" role="lcghm">
+            <node concept="2OqwBi" id="53yaZUOiXRb" role="lb14g">
+              <node concept="117lpO" id="53yaZUOiXPi" role="2Oq$k0" />
+              <node concept="3TrcHB" id="53yaZUOiY12" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:53yaZUNZ74y" resolve="longFlag" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="53yaZUOiY2T" role="lcghm">
+            <property role="lacIc" value="==null?" />
+          </node>
+          <node concept="la8eA" id="53yaZUOjWF6" role="lcghm">
+            <property role="lacIc" value="&quot;" />
+          </node>
+          <node concept="l9hG8" id="53yaZUOiY5m" role="lcghm">
+            <node concept="2OqwBi" id="53yaZUOiY8Q" role="lb14g">
+              <node concept="117lpO" id="53yaZUOiY6X" role="2Oq$k0" />
+              <node concept="3TrcHB" id="53yaZUOiYrz" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:53yaZUO7aBN" resolve="default" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="53yaZUOjWB5" role="lcghm">
+            <property role="lacIc" value="&quot;" />
+          </node>
+          <node concept="la8eA" id="53yaZUOiYup" role="lcghm">
+            <property role="lacIc" value=":" />
+          </node>
+          <node concept="la8eA" id="53yaZUOiYwV" role="lcghm">
+            <property role="lacIc" value="param." />
+          </node>
+          <node concept="l9hG8" id="53yaZUOiYzv" role="lcghm">
+            <node concept="2OqwBi" id="53yaZUOiYAU" role="lb14g">
+              <node concept="117lpO" id="53yaZUOiY_1" role="2Oq$k0" />
+              <node concept="3TrcHB" id="53yaZUOiYTz" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:53yaZUNZ74y" resolve="longFlag" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="53yaZUOiYWK" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

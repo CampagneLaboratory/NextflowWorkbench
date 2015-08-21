@@ -840,7 +840,7 @@
   </node>
   <node concept="1TIwiD" id="3aOvEIt8nSZ">
     <property role="3GE5qa" value="newChannelInitializer" />
-    <property role="TrG5h" value="PrimitiveType" />
+    <property role="TrG5h" value="PrimitiveTypeValue" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
@@ -855,13 +855,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="start" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+      <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveTypeValue" />
     </node>
     <node concept="1TJgyj" id="3aOvEIt8t9L" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="end" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+      <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveTypeValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="3aOvEIt8nXu">
@@ -869,7 +869,7 @@
     <property role="TrG5h" value="NewStringLiteral" />
     <property role="34LRSv" value="&quot;" />
     <property role="R4oN_" value="String literal" />
-    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveTypeValue" />
     <node concept="1TJgyi" id="3aOvEIt8ocz" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -911,7 +911,7 @@
     <property role="TrG5h" value="NewIntegerLiteral" />
     <property role="34LRSv" value="integer" />
     <property role="R4oN_" value="Integer literal" />
-    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveTypeValue" />
     <node concept="1TJgyi" id="3aOvEIt8rr3" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -935,7 +935,7 @@
     <property role="TrG5h" value="NewBooleanLiteral" />
     <property role="34LRSv" value="boolean" />
     <property role="R4oN_" value="Boolean literal" />
-    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveTypeValue" />
     <node concept="1TJgyi" id="3aOvEIt8rro" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -1388,7 +1388,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="val" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveType" />
+      <ref role="20lvS9" node="3aOvEIt8nSZ" resolve="PrimitiveTypeValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="dOBxzyNsaE">
@@ -1881,6 +1881,25 @@
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="53yaZUNZ6PJ">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="ValueOfCommandLineParam" />
+    <property role="34LRSv" value="parameter" />
+    <property role="R4oN_" value="Parameter value from command line" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyi" id="53yaZUNZ74y" role="1TKVEl">
+      <property role="TrG5h" value="longFlag" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="53yaZUNZ79w" role="1TKVEl">
+      <property role="TrG5h" value="description" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="53yaZUO7aBN" role="1TKVEl">
+      <property role="TrG5h" value="default" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
