@@ -3439,5 +3439,21 @@
       <node concept="l2Vlx" id="4VptOfyQPJP" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="7pq1c5M4QZi">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <ref role="1XX52x" to="iowz:7pq1c5M46gT" resolve="ConstantExpression" />
+    <node concept="3EZMnI" id="7pq1c5M4UTv" role="2wV5jI">
+      <node concept="3F0ifn" id="7pq1c5M4UTA" role="3EZMnx">
+        <property role="3F0ifm" value="constant value" />
+        <node concept="Vb9p2" id="53yaZUNhdZC" role="3F10Kt">
+          <property role="Vbekb" value="ITALIC" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7pq1c5M4UTI" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:7pq1c5M4UTG" />
+      </node>
+      <node concept="l2Vlx" id="7pq1c5M4UTy" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

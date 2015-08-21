@@ -2364,5 +2364,24 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7pq1c5M4O4o">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <ref role="1M2myG" to="iowz:7pq1c5M46gT" resolve="ConstantExpression" />
+    <node concept="nKS2y" id="53yaZUNegT6" role="1MLUbF">
+      <node concept="3clFbS" id="53yaZUNegT7" role="2VODD2">
+        <node concept="3clFbF" id="53yaZUNegY2" role="3cqZAp">
+          <node concept="3clFbC" id="53yaZUNehIT" role="3clFbG">
+            <node concept="35c_gC" id="53yaZUNehOo" role="3uHU7w">
+              <ref role="35c_gD" to="iowz:5AoFZCLt6Ly" resolve="GlobalChannel" />
+            </node>
+            <node concept="2OqwBi" id="53yaZUNehm8" role="3uHU7B">
+              <node concept="nLn13" id="53yaZUNegY1" role="2Oq$k0" />
+              <node concept="2yIwOk" id="53yaZUNehzD" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

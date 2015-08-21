@@ -1870,5 +1870,18 @@
       <ref role="20lvS9" to="tpfo:h5OC6VX" resolve="Regexp" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7pq1c5M46gT">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <property role="TrG5h" value="ConstantExpression" />
+    <property role="34LRSv" value="constant" />
+    <property role="R4oN_" value="Constant value" />
+    <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    <node concept="1TJgyj" id="7pq1c5M4UTG" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
+  </node>
 </model>
 
