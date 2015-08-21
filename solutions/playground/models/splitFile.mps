@@ -166,9 +166,13 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
+      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -216,9 +220,32 @@
           <node concept="1ecmHP" id="5kDh3zA$1mA" role="1Xju2$">
             <node concept="1bVj0M" id="5kDh3zA$1mB" role="303AOo">
               <property role="3yWfEV" value="true" />
-              <node concept="3clFbS" id="5kDh3zA$1mC" role="1bW5cS" />
+              <node concept="3clFbS" id="5kDh3zA$1mC" role="1bW5cS">
+                <node concept="3clFbF" id="7pq1c5Mi8ID" role="3cqZAp">
+                  <node concept="2OqwBi" id="7pq1c5Mi8Wz" role="3clFbG">
+                    <node concept="37vLTw" id="7pq1c5Mi8IB" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5kDh3zA$1ng" resolve="accumulator" />
+                    </node>
+                    <node concept="TSZUe" id="7pq1c5Mi9zm" role="2OqNvi">
+                      <node concept="3EllGN" id="7pq1c5Miarx" role="25WWJ7">
+                        <node concept="Xl_RD" id="7pq1c5Miaxp" role="3ElVtu">
+                          <property role="Xl_RC" value="1" />
+                        </node>
+                        <node concept="37vLTw" id="7pq1c5Mi9EF" role="3ElQJh">
+                          <ref role="3cqZAo" node="5kDh3zA$1mW" resolve="map" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="7pq1c5Mi8pd" role="3cqZAp">
+                  <node concept="37vLTw" id="7pq1c5Mi8pb" role="3clFbG">
+                    <ref role="3cqZAo" node="5kDh3zA$1ng" resolve="accumulator" />
+                  </node>
+                </node>
+              </node>
               <node concept="37vLTG" id="5kDh3zA$1mW" role="1bW2Oz">
-                <property role="TrG5h" value="it" />
+                <property role="TrG5h" value="map" />
                 <node concept="3rvAFt" id="5kDh3zA$1nd" role="1tU5fm">
                   <node concept="17QB3L" id="5kDh3zA$1ne" role="3rvQeY" />
                   <node concept="17QB3L" id="5kDh3zA$1nf" role="3rvSg0" />

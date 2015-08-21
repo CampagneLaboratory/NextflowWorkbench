@@ -109,9 +109,19 @@
       <concept id="1174482753837" name="jetbrains.mps.baseLanguage.regexp.structure.StringLiteralRegexp" flags="ng" index="1OC9wW">
         <property id="1174482761807" name="text" index="1OCb_u" />
       </concept>
+      <concept id="1174482808826" name="jetbrains.mps.baseLanguage.regexp.structure.StarRegexp" flags="ng" index="1OCmVF" />
+      <concept id="1174484562151" name="jetbrains.mps.baseLanguage.regexp.structure.SeqRegexp" flags="ng" index="1OJ37Q" />
+      <concept id="1174485167097" name="jetbrains.mps.baseLanguage.regexp.structure.BinaryRegexp" flags="ng" index="1OLmFC">
+        <child id="1174485176897" name="left" index="1OLpdg" />
+        <child id="1174485181039" name="right" index="1OLqdY" />
+      </concept>
+      <concept id="1174485235885" name="jetbrains.mps.baseLanguage.regexp.structure.UnaryRegexp" flags="ng" index="1OLBAW">
+        <child id="1174485243418" name="regexp" index="1OLDsb" />
+      </concept>
       <concept id="1174510540317" name="jetbrains.mps.baseLanguage.regexp.structure.InlineRegexpExpression" flags="nn" index="1Qi9sc">
         <child id="1174510571016" name="regexp" index="1QigWp" />
       </concept>
+      <concept id="1174556813606" name="jetbrains.mps.baseLanguage.regexp.structure.DotRegexp" flags="ng" index="1T2EwR" />
       <concept id="1174653354106" name="jetbrains.mps.baseLanguage.regexp.structure.RegexpUsingConstruction" flags="ng" index="1YMW5F">
         <child id="1174653387388" name="regexp" index="1YN4dH" />
       </concept>
@@ -180,6 +190,9 @@
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
         <child id="6344724376800375955" name="description" index="GZ$AB" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
+      </concept>
+      <concept id="5681703538356522948" name="org.campagnelab.workflow.structure.RegexpValue" flags="ng" index="2G2Ry7">
+        <child id="5681703538356522949" name="regexp" index="2G2Ry6" />
       </concept>
       <concept id="5681703538340281236" name="org.campagnelab.workflow.structure.BufferRange" flags="ng" index="2J0ONn">
         <child id="5681703538340281546" name="end" index="2J0OI9" />
@@ -3531,6 +3544,48 @@
         <property role="TrG5h" value="out" />
       </node>
     </node>
+    <node concept="2$rEH5" id="4VptOfzewpB" role="2$rEHq">
+      <ref role="2$rEH4" node="6BD$$Fz2N0X" resolve="testString" />
+      <node concept="1uYdA0" id="4VptOfzewvG" role="1uLvPH">
+        <ref role="1uK_4X" node="4VptOfzeuwk" resolve="string" />
+        <node concept="2J0ONn" id="4VptOfzewZN" role="1ylr64">
+          <node concept="2G2Ry7" id="4VptOfzex41" role="2J0OIb">
+            <node concept="1OJ37Q" id="4VptOfzext$" role="2G2Ry6">
+              <node concept="1OJ37Q" id="4VptOfzex$I" role="1OLqdY">
+                <node concept="1OCmVF" id="4VptOfzexJk" role="1OLqdY">
+                  <node concept="1T2EwR" id="4VptOfzexCj" role="1OLDsb" />
+                </node>
+                <node concept="1OC9wW" id="4VptOfzexxe" role="1OLpdg">
+                  <property role="1OCb_u" value="a" />
+                </node>
+              </node>
+              <node concept="1OCmVF" id="4VptOfzexpY" role="1OLpdg">
+                <node concept="1T2EwR" id="4VptOfzex8i" role="1OLDsb" />
+              </node>
+            </node>
+          </node>
+          <node concept="2G2Ry7" id="4VptOfzeyPX" role="2J0OI9">
+            <node concept="1OJ37Q" id="4VptOfzezfZ" role="2G2Ry6">
+              <node concept="1OJ37Q" id="4VptOfzezut" role="1OLqdY">
+                <node concept="1OCmVF" id="4VptOfzezKt" role="1OLqdY">
+                  <node concept="1T2EwR" id="4VptOfzez_G" role="1OLDsb" />
+                </node>
+                <node concept="1OC9wW" id="4VptOfzeznj" role="1OLpdg">
+                  <property role="1OCb_u" value="d" />
+                </node>
+              </node>
+              <node concept="1OCmVF" id="4VptOfzez8J" role="1OLpdg">
+                <node concept="1T2EwR" id="4VptOfzeyXV" role="1OLDsb" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2pgWx" id="4VptOfze$Aj" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="4VptOfzewvH" role="1uLvPA">
+        <property role="TrG5h" value="out3" />
+      </node>
+    </node>
     <node concept="1CVceo" id="4VptOfxXraf" role="2$L6iY">
       <property role="TrG5h" value="newChannel" />
       <node concept="2J_sx7" id="4VptOfxXrag" role="2$L62I">
@@ -3610,6 +3665,32 @@
         </node>
         <node concept="2J_swZ" id="4VptOfyp2A0" role="2J_sx6">
           <property role="2J_sxC" value="21" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="4VptOfzeuwk" role="2$L6iY">
+      <property role="TrG5h" value="string" />
+      <node concept="2J_sx7" id="4VptOfzeuwl" role="2$L62I">
+        <node concept="2J_g7P" id="4VptOfzey_x" role="2J_sx6">
+          <property role="2J_vQ8" value="&quot;!" />
+        </node>
+        <node concept="2J_g7P" id="4VptOfzevz2" role="2J_sx6">
+          <property role="2J_vQ8" value="abc" />
+        </node>
+        <node concept="2J_g7P" id="4VptOfzevL_" role="2J_sx6">
+          <property role="2J_vQ8" value="b" />
+        </node>
+        <node concept="2J_g7P" id="4VptOfzew3P" role="2J_sx6">
+          <property role="2J_vQ8" value="c" />
+        </node>
+        <node concept="2J_g7P" id="4VptOfzewgc" role="2J_sx6">
+          <property role="2J_vQ8" value="da" />
+        </node>
+        <node concept="2J_g7P" id="4VptOfzezRE" role="2J_sx6">
+          <property role="2J_vQ8" value="e" />
+        </node>
+        <node concept="2J_g7P" id="4VptOfze$8B" role="2J_sx6">
+          <property role="2J_vQ8" value="f" />
         </node>
       </node>
     </node>
