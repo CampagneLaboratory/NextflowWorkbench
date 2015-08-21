@@ -24,6 +24,9 @@
       </concept>
     </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
+      <concept id="3515886879324562347" name="org.campagnelab.docker.structure.CommandElement" flags="ng" index="gkxfm">
+        <property id="3515886879324562348" name="command" index="gkxfh" />
+      </concept>
       <concept id="609403175624294327" name="org.campagnelab.docker.structure.Comment" flags="ng" index="2Cort2">
         <property id="1622504857886715613" name="description" index="1MaElf" />
       </concept>
@@ -64,6 +67,9 @@
         <child id="1893262236499933486" name="instructions" index="VuOVn" />
         <child id="716770353512671073" name="images" index="3blhQR" />
       </concept>
+      <concept id="4202970468879724310" name="org.campagnelab.docker.structure.CmdInstruction" flags="ng" index="2XmTL9">
+        <child id="3515886879324529689" name="elements" index="gkDh$" />
+      </concept>
       <concept id="716770353512671076" name="org.campagnelab.docker.structure.ImageRef" flags="ng" index="3blhQM">
         <reference id="716770353512671080" name="image" index="3blhQY" />
       </concept>
@@ -78,7 +84,7 @@
   </node>
   <node concept="VuPG2" id="6fIiQMMz3r_">
     <property role="TrG5h" value="artifact-software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2509427026836826966.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile174712881915590251.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="6fIiQMM$wKy" role="VuOVn">
       <node concept="VtuK3" id="6fIiQMM$_RF" role="VuO5T">
@@ -168,13 +174,27 @@
     <node concept="3bqe2K" id="R1cm0IvkQi" role="VuOVn">
       <property role="3bqe2L" value="gobyweb" />
     </node>
-    <node concept="3blhQM" id="R1cm0IvlTF" role="3blhQR">
-      <ref role="3blhQY" node="R1cm0IvlTE" resolve="artifact-software_Image" />
+    <node concept="2XmTL9" id="4eB6ZTTd6JB" role="VuOVn">
+      <node concept="gkxfm" id="4eB6ZTTd6JC" role="gkDh$">
+        <property role="gkxfh" value="/bin/bash" />
+      </node>
+      <node concept="gkxfm" id="4eB6ZTTd6JD" role="gkDh$">
+        <property role="gkxfh" value="-c" />
+      </node>
+      <node concept="gkxfm" id="4eB6ZTTd6JE" role="gkDh$">
+        <property role="gkxfh" value="source" />
+      </node>
+      <node concept="gkxfm" id="4eB6ZTTd6JF" role="gkDh$">
+        <property role="gkxfh" value="/home/gobyweb/.bashrc" />
+      </node>
+    </node>
+    <node concept="3blhQM" id="4eB6ZTTd6QJ" role="3blhQR">
+      <ref role="3blhQY" node="4eB6ZTTd6QI" resolve="artifact-software_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
     <property role="TrG5h" value="centos-java8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2612350992871162493.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2776231673905043133.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="39YFbxZh5KQ" role="VuOVn">
       <node concept="VtuK3" id="39YFbxZh5KR" role="VuO5T">
@@ -244,34 +264,51 @@
     <node concept="VugRC" id="R1cm0Ivk1z" role="VuOVn">
       <node concept="19SGf9" id="R1cm0Ivk22" role="Vugyn">
         <node concept="19SUe$" id="R1cm0Ivk23" role="19SJt6">
-          <property role="19SUeA" value="echo &quot;export JAVA_HOME=/opt/jdk1.8.0_45&quot; &gt;&gt; /home/gobyweb/.bashrc \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin&quot; &gt;&gt; /home/gobyweb/.bashrc \&#10;&amp;&amp; chown -R gobyweb:gobyweb /home/gobyweb" />
+          <property role="19SUeA" value="echo &quot;export HOME=/home/gobyweb&quot; &gt; /home/gobyweb/.bashrc \&#10;&amp;&amp; echo &quot;export JAVA_HOME=/opt/jdk1.8.0_45&quot; &gt;&gt; /home/gobyweb/.bashrc \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin&quot; &gt;&gt; /home/gobyweb/.bashrc \&#10;&amp;&amp; chown -R gobyweb:gobyweb /home/gobyweb" />
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="R1cm0IvlHJ" role="3blhQR">
-      <ref role="3blhQY" node="R1cm0IvlHI" resolve="centos-java8_Image" />
+    <node concept="2XmTL9" id="4eB6ZTT5GLy" role="VuOVn">
+      <node concept="gkxfm" id="4eB6ZTT5OKJ" role="gkDh$">
+        <property role="gkxfh" value="/bin/bash" />
+      </node>
+      <node concept="gkxfm" id="4eB6ZTT5OKQ" role="gkDh$">
+        <property role="gkxfh" value="-c" />
+      </node>
+      <node concept="gkxfm" id="4eB6ZTT5OMa" role="gkDh$">
+        <property role="gkxfh" value="source" />
+      </node>
+      <node concept="gkxfm" id="4eB6ZTT5GL$" role="gkDh$">
+        <property role="gkxfh" value="/home/gobyweb/.bashrc" />
+      </node>
+    </node>
+    <node concept="3blhQM" id="4eB6ZTTd6Dv" role="3blhQR">
+      <ref role="3blhQY" node="4eB6ZTTd6ME" resolve="centos-java8_Image" />
+    </node>
+    <node concept="3blhQM" id="4eB6ZTTd6MF" role="3blhQR">
+      <ref role="3blhQY" node="4eB6ZTTd6ME" resolve="centos-java8_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="R1cm0IvlHI">
-    <property role="2E_JEh" value="a5bf6beeba9c" />
+  <node concept="2E_JVc" id="4eB6ZTTd6ME">
+    <property role="2E_JEh" value="69c90880dac7" />
     <property role="TrG5h" value="centos-java8_Image" />
-    <property role="GSh9r" value="mas2181/centos-java8:1.0" />
+    <property role="GSh9r" value="mas2181/centos-java8:latest" />
     <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
-    <node concept="Gyxd7" id="R1cm0IvlHX" role="Gyxcj">
+    <node concept="Gyxd7" id="4eB6ZTTd6MY" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="centos-java8" />
-      <property role="Gyxd1" value="1.0" />
+      <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="R1cm0IvlTE">
-    <property role="2E_JEh" value="b2ab2c0e0c85" />
+  <node concept="2E_JVc" id="4eB6ZTTd6QI">
+    <property role="2E_JEh" value="60794200134f" />
     <property role="TrG5h" value="artifact-software_Image" />
-    <property role="GSh9r" value="mas2181/artifact-software:latest" />
+    <property role="GSh9r" value="mas2181/artifact-software:1.0" />
     <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifact-software" />
-    <node concept="Gyxd7" id="R1cm0IvlTT" role="Gyxcj">
+    <node concept="Gyxd7" id="4eB6ZTTd6Se" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="artifact-software" />
-      <property role="Gyxd1" value="latest" />
+      <property role="Gyxd1" value="1.0" />
     </node>
   </node>
 </model>
