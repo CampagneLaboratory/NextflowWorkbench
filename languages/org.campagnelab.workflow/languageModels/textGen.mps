@@ -178,6 +178,7 @@
       </concept>
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
+      <concept id="45307784116571022" name="jetbrains.mps.lang.textGen.structure.FilenameFunction" flags="ig" index="29tfMY" />
       <concept id="8931911391946696733" name="jetbrains.mps.lang.textGen.structure.ExtensionDeclaration" flags="in" index="9MYSb" />
       <concept id="1237305208784" name="jetbrains.mps.lang.textGen.structure.NewLineAppendPart" flags="ng" index="l8MVK" />
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
@@ -196,6 +197,7 @@
       </concept>
       <concept id="1233670071145" name="jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration" flags="ig" index="WtQ9Q">
         <reference id="1233670257997" name="conceptDeclaration" index="WuzLi" />
+        <child id="45307784116711884" name="filename" index="29tGrW" />
         <child id="1233749296504" name="textGenBlock" index="11c4hB" />
         <child id="7991274449437422201" name="extension" index="33IsuW" />
       </concept>
@@ -450,8 +452,8 @@
           <node concept="3cpWs3" id="7b1yRZVBk8C" role="34bqiv">
             <node concept="2OqwBi" id="7b1yRZVBkdw" role="3uHU7w">
               <node concept="117lpO" id="7b1yRZVBk93" role="2Oq$k0" />
-              <node concept="3TrcHB" id="7b1yRZVBkoE" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="2qgKlT" id="4Orz$oyvNRw" role="2OqNvi">
+                <ref role="37wK5l" to="mqvz:7LvyiX4mik0" resolve="getOutputFileName" />
               </node>
             </node>
             <node concept="Xl_RD" id="7b1yRZVBjWL" role="3uHU7B">
@@ -472,6 +474,53 @@
         <node concept="3clFbF" id="3ftTtby5tKz" role="3cqZAp">
           <node concept="Xl_RD" id="3ftTtby5tKy" role="3clFbG">
             <property role="Xl_RC" value="nf" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="29tfMY" id="4Orz$oyvOw5" role="29tGrW">
+      <node concept="3clFbS" id="4Orz$oyvOw6" role="2VODD2">
+        <node concept="3cpWs8" id="4Orz$oyvRaV" role="3cqZAp">
+          <node concept="3cpWsn" id="4Orz$oyvRaW" role="3cpWs9">
+            <property role="TrG5h" value="outputFileName" />
+            <node concept="17QB3L" id="4Orz$oyvRaS" role="1tU5fm" />
+            <node concept="2OqwBi" id="4Orz$oyvRaX" role="33vP2m">
+              <node concept="117lpO" id="4Orz$oyvRaY" role="2Oq$k0" />
+              <node concept="2qgKlT" id="4Orz$oyvRaZ" role="2OqNvi">
+                <ref role="37wK5l" to="mqvz:7LvyiX4mik0" resolve="getOutputFileName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Orz$oyvOY9" role="3cqZAp">
+          <node concept="2OqwBi" id="4Orz$oyvPD_" role="3clFbG">
+            <node concept="37vLTw" id="4Orz$oyvRb0" role="2Oq$k0">
+              <ref role="3cqZAo" node="4Orz$oyvRaW" resolve="outputFileName" />
+            </node>
+            <node concept="liA8E" id="4Orz$oyvQrZ" role="2OqNvi">
+              <ref role="37wK5l" to="e2lb:~String.substring(int,int):java.lang.String" resolve="substring" />
+              <node concept="3cmrfG" id="4Orz$oyvQzr" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="3cpWsd" id="4Orz$oyvSHx" role="37wK5m">
+                <node concept="2OqwBi" id="4Orz$oyvTop" role="3uHU7w">
+                  <node concept="Xl_RD" id="4Orz$oyvSHB" role="2Oq$k0">
+                    <property role="Xl_RC" value=".nf" />
+                  </node>
+                  <node concept="liA8E" id="4Orz$oyvU80" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="4Orz$oyvRuu" role="3uHU7B">
+                  <node concept="37vLTw" id="4Orz$oyvRiH" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4Orz$oyvRaW" resolve="outputFileName" />
+                  </node>
+                  <node concept="liA8E" id="4Orz$oyvShs" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
