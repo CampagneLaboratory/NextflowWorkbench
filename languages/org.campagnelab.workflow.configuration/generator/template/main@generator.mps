@@ -258,6 +258,19 @@
             <property role="2pNUuO" value="location" />
           </node>
         </node>
+        <node concept="2pNNFK" id="53yaZUOmnQD" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="53yaZUOmnQE" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="53yaZUOmnQF" role="2pMdts">
+              <property role="2pMdty" value="workflow.commandline" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="53yaZUOmnQG" role="2pNNFR">
+            <property role="2pNUuO" value="location" />
+          </node>
+        </node>
         <node concept="2pNNFK" id="6qWs7gtKxMs" role="3o6s8t">
           <property role="2pNNFO" value="property" />
           <property role="qg3DV" value="true" />
@@ -284,7 +297,26 @@
             <property role="2pNUuO" value="value" />
           </node>
         </node>
-        <node concept="3o6iSG" id="6qWs7gtKwVd" role="3o6s8t" />
+        <node concept="3o6iSG" id="4Orz$oyiWak" role="3o6s8t" />
+        <node concept="2pNNFK" id="53yaZUOwk3D" role="3o6s8t">
+          <property role="2pNNFO" value="echo" />
+          <node concept="2pNUuL" id="53yaZUOwk4r" role="2pNNFR">
+            <property role="2pNUuO" value="message" />
+            <node concept="2pMdtt" id="53yaZUOwk4u" role="2pMdts">
+              <property role="2pMdty" value="workflow.commandline=${workflow.commandline}" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="4Orz$oylpIV" role="3o6s8t">
+          <property role="2pNNFO" value="echo" />
+          <node concept="2pNUuL" id="4Orz$oylpIW" role="2pNNFR">
+            <property role="2pNUuO" value="message" />
+            <node concept="2pMdtt" id="4Orz$oylpIX" role="2pMdts">
+              <property role="2pMdty" value="nextflowOptions=${nextflowOptions}" />
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="4Orz$oylpHO" role="3o6s8t" />
         <node concept="2pNNFK" id="6qWs7gtKwVS" role="3o6s8t">
           <property role="2pNNFO" value="target" />
           <node concept="2pNNFK" id="6qWs7gtKy5n" role="3o6s8t">
@@ -327,6 +359,15 @@
                 </node>
               </node>
             </node>
+            <node concept="2pNNFK" id="53yaZUOmnDK" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <node concept="2pNUuL" id="53yaZUOmnMl" role="2pNNFR">
+                <property role="2pNUuO" value="line" />
+                <node concept="2pMdtt" id="53yaZUOmnMn" role="2pMdts">
+                  <property role="2pMdty" value=" ${workflow.commandline} " />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="2pNUuL" id="6qWs7gtKwVT" role="2pNNFR">
             <property role="2pNUuO" value="name" />
@@ -357,6 +398,12 @@
     <node concept="34ZRQx" id="7TupKkjs9RB" role="34ZRRx">
       <property role="34ZRQb" value="jarScript=$2" />
     </node>
+    <node concept="34ZRQx" id="4Orz$oyiNmj" role="34ZRRx">
+      <property role="34ZRQb" value="commandLine=$3" />
+    </node>
+    <node concept="34ZRQx" id="4Orz$oyiNmt" role="34ZRRx">
+      <property role="34ZRQb" value=" " />
+    </node>
     <node concept="34ZRQx" id="3LlDVJTCz1G" role="34ZRRx">
       <property role="34ZRQb" value="SCRIPT_DIR=&quot;$( cd &quot;$( dirname &quot;${BASH_SOURCE[0]}&quot; )&quot; &amp;&amp; pwd )&quot;" />
     </node>
@@ -370,7 +417,7 @@
       <property role="34ZRQb" value="echo &quot;Executing ${nextflowScript}&quot;" />
     </node>
     <node concept="34ZRQx" id="3LlDVJTCzae" role="34ZRRx">
-      <property role="34ZRQb" value="nohup nextflow ${nextflowScript} 2&gt;&amp;1 | less" />
+      <property role="34ZRQb" value="nohup nextflow ${nextflowScript} ${commandLine} 2&gt;&amp;1 | less" />
     </node>
   </node>
   <node concept="2pMbU2" id="2cffJJS8DVj">
@@ -628,6 +675,19 @@
             </node>
           </node>
         </node>
+        <node concept="2pNNFK" id="4Orz$oyiN2A" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="4Orz$oyiN2B" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="4Orz$oyiN2C" role="2pMdts">
+              <property role="2pMdty" value="workflow.commandline" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="4Orz$oyiN2D" role="2pNNFR">
+            <property role="2pNUuO" value="location" />
+          </node>
+        </node>
         <node concept="3o6iSG" id="5OPtsPp$58" role="3o6s8t" />
         <node concept="2pNNFK" id="5OPtsPp$vZ" role="3o6s8t">
           <property role="2pNNFO" value="target" />
@@ -790,7 +850,7 @@
             <node concept="2pNUuL" id="5OPtsPp_p0" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp_sx" role="2pMdts">
-                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${remote.job.dir}/${workflow.script} ${remote.job.dir}/${jar.script} " />
+                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${nextflowOptions} ${remote.job.dir}/${workflow.script} ${remote.job.dir}/${jar.script} ${workflow.commandline}" />
               </node>
             </node>
           </node>
