@@ -141,7 +141,7 @@
   <node concept="VuPG2" id="3d0Dghcgitr">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="artifact-software-base" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile3757279839556968587.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile6455365369066230152.txt" />
     <node concept="VuO64" id="3d0Dghcgqgb" role="VuOVn">
       <node concept="VtuK3" id="3d0Dghcgqgc" role="VuO5T">
         <property role="VuL0s" value="1.0" />
@@ -215,18 +215,21 @@
       </node>
     </node>
     <node concept="3blhQM" id="3d0Dghcgqht" role="3blhQR">
-      <ref role="3blhQY" node="3d0Dghcgqhs" resolve="artifact-software-base_Image" />
+      <ref role="3blhQY" node="3d0DghcgPXj" resolve="artifact-software-base_Image" />
+    </node>
+    <node concept="3blhQM" id="3d0DghcgPXk" role="3blhQR">
+      <ref role="3blhQY" node="3d0DghcgPXj" resolve="artifact-software-base_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3d0Dghcgqhs">
-    <property role="2E_JEh" value="fe707a640ccd" />
+  <node concept="2E_JVc" id="3d0DghcgPXj">
+    <property role="2E_JEh" value="c70bcd814885" />
     <property role="TrG5h" value="artifact-software-base_Image" />
-    <property role="GSh9r" value="mas2181/artifact-software:latest" />
+    <property role="GSh9r" value="mas2181/artifact-software:1.0" />
     <ref role="2E_BxF" node="3d0Dghcgitr" resolve="artifact-software-base" />
-    <node concept="Gyxd7" id="3d0DghcgqhD" role="Gyxcj">
+    <node concept="Gyxd7" id="3d0DghcgPYl" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="artifact-software" />
-      <property role="Gyxd1" value="latest" />
+      <property role="Gyxd1" value="1.0" />
     </node>
   </node>
 </model>
