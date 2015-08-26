@@ -8,6 +8,7 @@
     <use id="adfd00cb-58d7-4094-bca8-f941a491e04f" name="org.campagnelab.gobyweb" version="-1" />
     <use id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" name="org.campagnelab.nyosh.environment" version="-1" />
     <use id="5cf93bc1-d0da-4893-b739-63b17fe296b1" name="org.campagnelab.workflow.nyosh" version="-1" />
+    <use id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash" version="0" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports>
@@ -34,6 +35,12 @@
         <child id="331977639694004412" name="pluginSystemRootDirectory" index="23NxHr" />
         <child id="331977639693048103" name="availableVariables" index="23Rrb0" />
         <child id="6386724582662879362" name="requires" index="NgwMD" />
+      </concept>
+    </language>
+    <language id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash">
+      <concept id="1644224175107836969" name="org.campagnelab.docker.bash.structure.DockerBashScript" flags="ng" index="mIf$4">
+        <child id="331977639697571264" name="container" index="234boB" />
+        <child id="1644224175107837124" name="script" index="mIfBD" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -114,7 +121,7 @@
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
-        <child id="331977639697571264" name="container" index="234boB" />
+        <child id="331977639697571264" name="container" index="234boC" />
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
@@ -338,7 +345,7 @@
   </node>
   <node concept="2ulcR8" id="3YXYb8iAEl2">
     <property role="TrG5h" value="submit" />
-    <node concept="GbKB8" id="4uxaUi8HzZz" role="234boB">
+    <node concept="GbKB8" id="4uxaUi8HzZz" role="234boC">
       <property role="VuL0s" value="latest" />
       <property role="3yMj3R" value="sleep 1000" />
       <property role="GbyUj" value="rocker-metar" />
@@ -346,7 +353,7 @@
       <property role="VuL0v" value="fac2003" />
       <property role="TrG5h" value="interactive" />
       <property role="1vm7qE" value="false" />
-      <ref role="3zcJb$" node="3P1oJbjPX4y" resolve="artifacts-software_Image" />
+      <ref role="3zcJb$" node="39YFbxZhJU3" resolve="artifacts-software_Image" />
     </node>
     <node concept="2lYRya" id="wcFktQkkas" role="2ulM79">
       <property role="TrG5h" value="'index_*'" />
@@ -447,7 +454,7 @@
     <property role="GbyUj" value="2d3f97738dab" />
     <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="sleep 1000" />
-    <ref role="3zcJb$" node="3P1oJbjPX4y" resolve="artifacts-software_Image" />
+    <ref role="3zcJb$" node="39YFbxZhJU3" resolve="artifacts-software_Image" />
   </node>
   <node concept="2E_JVc" id="39YFbxZhH56">
     <property role="2E_JEh" value="6e83efbb2132" />
@@ -470,6 +477,20 @@
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="artifacts-software" />
       <property role="Gyxd1" value="latest" />
+    </node>
+  </node>
+  <node concept="mIf$4" id="1rhtiO0qyoS">
+    <property role="TrG5h" value="testscript" />
+    <node concept="VtuK3" id="1rhtiO0qyoT" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="mas2181" />
+      <property role="GbyUj" value="artifact-software" />
+      <property role="3zaeVo" value="true" />
+    </node>
+    <node concept="19SGf9" id="1rhtiO0qy$z" role="mIfBD">
+      <node concept="19SUe$" id="1rhtiO0qy$$" role="19SJt6">
+        <property role="19SUeA" value="plugins-submit-job --job-area \$JOB_AREA --fileset-area \$FILESET_AREA --owner manuele --plugins-dir \&#10; \$PLUGINS_ROOT_LOCATION --env-script \$PLUGINS_ROOT_LOCATION/artifacts-config/env.sh \ &#10;--repository  \$REPOSITORY_DIR  --resource SAMTOOLSenv" />
+      </node>
     </node>
   </node>
 </model>

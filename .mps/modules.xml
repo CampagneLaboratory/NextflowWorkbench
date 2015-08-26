@@ -5,6 +5,7 @@
       <modulePath path="${NEXTFLOW_PATH}/NYoSh/solutions/NYoSh.build-plugins/NYoSh.build-plugins.msd" folder="" />
       <modulePath path="${org.campagnelab.xchart.home}/solutions/XChart.build0/XChart.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/org.campagnelab.NextflowWorkbench.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.docker.bash/org.campagnelab.docker.bash.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.docker/org.campagnelab.docker.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.utils.multifiles/org.campagnelab.utils.multifiles.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow.configuration/org.campagnelab.workflow.configuration.mpl" folder="" />
