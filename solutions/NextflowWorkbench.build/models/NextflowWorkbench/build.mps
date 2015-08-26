@@ -44,6 +44,10 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
+      <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
+        <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
+        <property id="6998860900671147996" name="javaLevel" index="TZNOO" />
+      </concept>
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
@@ -168,6 +172,10 @@
   <node concept="1l3spW" id="4oJiZHqTePn">
     <property role="TrG5h" value="NextflowWorkbench" />
     <property role="2DA0ip" value="../../" />
+    <node concept="2_Ic$z" id="4qUSsYBgymt" role="3989C9">
+      <property role="2_Ic$$" value="true" />
+      <property role="TZNOO" value="1.7" />
+    </node>
     <node concept="10PD9b" id="4oJiZHqTePo" role="10PD9s" />
     <node concept="3b7kt6" id="4oJiZHqTePp" role="10PD9s" />
     <node concept="398rNT" id="4oJiZHqTePq" role="1l3spd">
@@ -259,32 +267,6 @@
         </node>
         <node concept="m$_wl" id="4oJiZHqTePX" role="39821P">
           <ref role="m_rDy" node="4oJiZHqTePK" resolve="org.campagnelab.NextflowWorkbench" />
-          <node concept="28jJK3" id="T2H5Ppt5qy" role="39821P">
-            <node concept="55IIr" id="T2H5Ppt5q$" role="28jJRO">
-              <node concept="2Ry0Ak" id="T2H5Ppt5sJ" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="T2H5Ppt5sS" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.workflow.run" />
-                  <node concept="2Ry0Ak" id="T2H5Ppt5t1" role="2Ry0An">
-                    <property role="2Ry0Am" value="mps-collections.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="28jJK3" id="T2H5Ppt5_L" role="39821P">
-            <node concept="55IIr" id="T2H5Ppt5_M" role="28jJRO">
-              <node concept="2Ry0Ak" id="T2H5Ppt5_N" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="T2H5Ppt5_O" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.workflow.run" />
-                  <node concept="2Ry0Ak" id="T2H5Ppt5Ci" role="2Ry0An">
-                    <property role="2Ry0Am" value="closures-runtime.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="28jJK3" id="5wD$zX1xK1f" role="39821P">
             <node concept="55IIr" id="5wD$zX1xK1h" role="28jJRO">
               <node concept="2Ry0Ak" id="5wD$zX1xKlr" role="iGT6I">
@@ -525,7 +507,7 @@
         </node>
         <node concept="1SiIV0" id="dhtvqDS6B3" role="3bR37C">
           <node concept="3bR9La" id="dhtvqDS6B4" role="1SiIV1">
-            <property role="3bR36h" value="true" />
+            <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="6eMkF2c4Sia" resolve="org.campagnelab.workflow.configuration" />
           </node>
         </node>
@@ -642,6 +624,12 @@
             <node concept="3bR9La" id="T2H5Ppt6Jg" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:7Kfy9QB6L0C" resolve="collections.runtime" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="7NBmetG7njq" role="3bR37C">
+            <node concept="3bR9La" id="7NBmetG7njr" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L2F" resolve="jetbrains.mps.baseLanguage.tuples" />
             </node>
           </node>
         </node>
@@ -829,6 +817,15 @@
         </node>
         <node concept="3LEDTy" id="26uPfVcS9XR" role="3LEDUa">
           <ref role="3LEDTV" to="ffeo:7Kfy9QB6KZc" resolve="jetbrains.mps.baseLanguage.checkedDots" />
+        </node>
+        <node concept="3LEDTy" id="7NBmetG7nko" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KZG" resolve="jetbrains.mps.baseLanguage.closures" />
+        </node>
+        <node concept="3LEDTy" id="7NBmetG7nkp" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6L2F" resolve="jetbrains.mps.baseLanguage.tuples" />
+        </node>
+        <node concept="3LEDTy" id="7NBmetG7nkq" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:1YAozCvot2i" resolve="jetbrains.mps.baseLanguage.regexp" />
         </node>
       </node>
       <node concept="1E1JtA" id="1WG1fjcGJ1r" role="2G$12L">
