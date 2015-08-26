@@ -657,8 +657,85 @@
           <node concept="3cpWsn" id="7Bp6TkCMXy$" role="3cpWs9">
             <property role="TrG5h" value="pluginPath" />
             <node concept="17QB3L" id="7Bp6TkCMXyv" role="1tU5fm" />
+            <node concept="3cpWs3" id="7Bp6TkD9orT" role="33vP2m">
+              <node concept="Xl_RD" id="7Bp6TkD9os0" role="3uHU7w">
+                <property role="Xl_RC" value="NextflowWorkbench" />
+              </node>
+              <node concept="3cpWs3" id="7Bp6TkD9o80" role="3uHU7B">
+                <node concept="2YIFZM" id="7Bp6TkD9k5A" role="3uHU7B">
+                  <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                  <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                  <node concept="Xl_RD" id="7Bp6TkD9k6o" role="37wK5m">
+                    <property role="Xl_RC" value="idea.plugins.path" />
+                  </node>
+                </node>
+                <node concept="10M0yZ" id="7Bp6TkD9of0" role="3uHU7w">
+                  <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                  <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="7Bp6TkD9mZl" role="3cqZAp">
+          <node concept="3clFbS" id="7Bp6TkD9mZm" role="3clFbx">
+            <node concept="3clFbF" id="7Bp6TkD9mZn" role="3cqZAp">
+              <node concept="37vLTI" id="7Bp6TkD9mZo" role="3clFbG">
+                <node concept="37vLTw" id="7Bp6TkD9mZp" role="37vLTJ">
+                  <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
+                </node>
+                <node concept="37vLTw" id="7Bp6TkD9oFY" role="37vLTx">
+                  <ref role="3cqZAo" node="7Bp6TkCMXy$" resolve="pluginPath" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="7Bp6TkD9mZr" role="3cqZAp">
+              <node concept="37vLTw" id="7Bp6TkD9mZs" role="3cqZAk">
+                <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="7Bp6TkD9mZt" role="3clFbw">
+            <node concept="2OqwBi" id="7Bp6TkD9mZu" role="3uHU7B">
+              <node concept="2ShNRf" id="7Bp6TkD9mZv" role="2Oq$k0">
+                <node concept="1pGfFk" id="7Bp6TkD9mZw" role="2ShVmc">
+                  <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                  <node concept="37vLTw" id="7Bp6TkD9ozE" role="37wK5m">
+                    <ref role="3cqZAo" node="7Bp6TkCMXy$" resolve="pluginPath" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="7Bp6TkD9mZy" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~File.isDirectory():boolean" resolve="isDirectory" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7Bp6TkD9mZz" role="3uHU7w">
+              <node concept="2ShNRf" id="7Bp6TkD9mZ$" role="2Oq$k0">
+                <node concept="1pGfFk" id="7Bp6TkD9mZ_" role="2ShVmc">
+                  <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                  <node concept="3cpWs3" id="7Bp6TkD9mZA" role="37wK5m">
+                    <node concept="3cpWs3" id="7Bp6TkD9mZB" role="3uHU7B">
+                      <node concept="37vLTw" id="7Bp6TkD9oC7" role="3uHU7B">
+                        <ref role="3cqZAo" node="7Bp6TkCMXy$" resolve="pluginPath" />
+                      </node>
+                      <node concept="10M0yZ" id="7Bp6TkD9mZD" role="3uHU7w">
+                        <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                        <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="7Bp6TkD9mZE" role="3uHU7w">
+                      <property role="Xl_RC" value="jsch-0.1.53.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="7Bp6TkD9mZF" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~File.exists():boolean" resolve="exists" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7Bp6TkD9mID" role="3cqZAp" />
         <node concept="3cpWs8" id="58EhtUpZfMi" role="3cqZAp">
           <node concept="3cpWsn" id="58EhtUpZfMj" role="3cpWs9">
             <property role="TrG5h" value="pathSelector" />
