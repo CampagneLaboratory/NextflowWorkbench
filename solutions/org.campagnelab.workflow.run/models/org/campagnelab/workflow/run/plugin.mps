@@ -679,70 +679,16 @@
         </node>
         <node concept="34ab3g" id="7Bp6TkDcyL1" role="3cqZAp">
           <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="7Bp6TkDczcf" role="34bqiv">
-            <node concept="37vLTw" id="7Bp6TkDczpb" role="3uHU7w">
-              <ref role="3cqZAo" node="7Bp6TkCMXy$" resolve="pluginPath" />
+          <node concept="3cpWs3" id="7Bp6TkDdSXV" role="34bqiv">
+            <node concept="Xl_RD" id="7Bp6TkDdTaR" role="3uHU7w">
+              <property role="Xl_RC" value=" (from property idea.plugins.path)" />
             </node>
-            <node concept="Xl_RD" id="7Bp6TkDcyL3" role="3uHU7B">
-              <property role="Xl_RC" value="Testing " />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7Bp6TkDczLS" role="3cqZAp">
-          <node concept="2OqwBi" id="7Bp6TkDczLP" role="3clFbG">
-            <node concept="10M0yZ" id="7Bp6TkDczLQ" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="7Bp6TkDczLR" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="7Bp6TkDc$lb" role="37wK5m">
-                <node concept="37vLTw" id="7Bp6TkDc$mR" role="3uHU7w">
-                  <ref role="3cqZAo" node="7Bp6TkCMXy$" resolve="pluginPath" />
-                </node>
-                <node concept="Xl_RD" id="7Bp6TkDc$5g" role="3uHU7B">
-                  <property role="Xl_RC" value="Testing " />
-                </node>
+            <node concept="3cpWs3" id="7Bp6TkDczcf" role="3uHU7B">
+              <node concept="Xl_RD" id="7Bp6TkDcyL3" role="3uHU7B">
+                <property role="Xl_RC" value="Testing " />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7Bp6TkDc$Ih" role="3cqZAp">
-          <node concept="2OqwBi" id="7Bp6TkDc$Ii" role="3clFbG">
-            <node concept="10M0yZ" id="7Bp6TkDc$Ij" role="2Oq$k0">
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="7Bp6TkDc$Ik" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="7Bp6TkDc$Il" role="37wK5m">
-                <node concept="Xl_RD" id="7Bp6TkDc$In" role="3uHU7B">
-                  <property role="Xl_RC" value="Testing " />
-                </node>
-                <node concept="2OqwBi" id="7Bp6TkDc_n8" role="3uHU7w">
-                  <node concept="2ShNRf" id="7Bp6TkDc_88" role="2Oq$k0">
-                    <node concept="1pGfFk" id="7Bp6TkDc_89" role="2ShVmc">
-                      <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                      <node concept="3cpWs3" id="7Bp6TkDc_8a" role="37wK5m">
-                        <node concept="3cpWs3" id="7Bp6TkDc_8b" role="3uHU7B">
-                          <node concept="37vLTw" id="7Bp6TkDc_8c" role="3uHU7B">
-                            <ref role="3cqZAo" node="7Bp6TkCMXy$" resolve="pluginPath" />
-                          </node>
-                          <node concept="10M0yZ" id="7Bp6TkDc_8d" role="3uHU7w">
-                            <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
-                            <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
-                          </node>
-                        </node>
-                        <node concept="Xl_RD" id="7Bp6TkDc_8e" role="3uHU7w">
-                          <property role="Xl_RC" value="jsch-0.1.53.jar" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="7Bp6TkDcB9F" role="2OqNvi">
-                    <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="7Bp6TkDczpb" role="3uHU7w">
+                <ref role="3cqZAo" node="7Bp6TkCMXy$" resolve="pluginPath" />
               </node>
             </node>
           </node>
@@ -806,7 +752,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7Bp6TkD9mID" role="3cqZAp" />
         <node concept="3cpWs8" id="58EhtUpZfMi" role="3cqZAp">
           <node concept="3cpWsn" id="58EhtUpZfMj" role="3cpWs9">
             <property role="TrG5h" value="pathSelector" />
@@ -820,42 +765,14 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7Bp6TkDdJjr" role="3cqZAp" />
-        <node concept="3SKdUt" id="T2H5PpoDU6" role="3cqZAp">
-          <node concept="3SKWN0" id="T2H5PpoDU7" role="3SKWNk">
-            <node concept="3cpWs6" id="5HqGNjfh9WW" role="3SKWNf">
-              <node concept="3cpWs3" id="5HqGNjfha9n" role="3cqZAk">
-                <node concept="10M0yZ" id="5HqGNjfha9o" role="3uHU7w">
-                  <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
-                  <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
-                </node>
-                <node concept="3cpWs3" id="5HqGNjfha9p" role="3uHU7B">
-                  <node concept="3cpWs3" id="5HqGNjfha9q" role="3uHU7B">
-                    <node concept="3cpWs3" id="5HqGNjfha9r" role="3uHU7B">
-                      <node concept="3cpWs3" id="5HqGNjfha9s" role="3uHU7B">
-                        <node concept="2YIFZM" id="5HqGNjfha9t" role="3uHU7B">
-                          <ref role="1Pybhc" to="msyo:~PathManager" resolve="PathManager" />
-                          <ref role="37wK5l" to="msyo:~PathManager.getHomePath():java.lang.String" resolve="getHomePath" />
-                        </node>
-                        <node concept="10M0yZ" id="5HqGNjfha9u" role="3uHU7w">
-                          <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
-                          <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="5HqGNjfha9v" role="3uHU7w">
-                        <property role="Xl_RC" value="languages" />
-                      </node>
-                    </node>
-                    <node concept="10M0yZ" id="5HqGNjfha9w" role="3uHU7w">
-                      <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
-                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="5HqGNjfha9x" role="3uHU7w">
-                    <property role="Xl_RC" value="baseLanguage" />
-                  </node>
-                </node>
-              </node>
+        <node concept="34ab3g" id="7Bp6TkDdQsD" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="7Bp6TkDdQYm" role="34bqiv">
+            <node concept="37vLTw" id="7Bp6TkDdRbI" role="3uHU7w">
+              <ref role="3cqZAo" node="58EhtUpZfMj" resolve="pathSelector" />
+            </node>
+            <node concept="Xl_RD" id="7Bp6TkDdQsF" role="3uHU7B">
+              <property role="Xl_RC" value="With pathSelector (property idea.path.selector)=" />
             </node>
           </node>
         </node>
@@ -979,25 +896,6 @@
             </node>
             <node concept="Xl_RD" id="7Bp6TkDdH5Q" role="3uHU7B">
               <property role="Xl_RC" value="Testing " />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7Bp6TkDdHv5" role="3cqZAp">
-          <node concept="2OqwBi" id="7Bp6TkDdHv6" role="3clFbG">
-            <node concept="10M0yZ" id="7Bp6TkDdHv7" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="7Bp6TkDdHv8" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="7Bp6TkDdHv9" role="37wK5m">
-                <node concept="37vLTw" id="7Bp6TkDdHUH" role="3uHU7w">
-                  <ref role="3cqZAo" node="1xXyUiDtnC6" resolve="pluginDirectory" />
-                </node>
-                <node concept="Xl_RD" id="7Bp6TkDdHvb" role="3uHU7B">
-                  <property role="Xl_RC" value="Testing " />
-                </node>
-              </node>
             </node>
           </node>
         </node>
