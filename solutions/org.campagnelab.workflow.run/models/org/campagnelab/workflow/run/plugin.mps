@@ -811,6 +811,46 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="4qUSsYBhcf5" role="3cqZAp">
+          <node concept="3clFbS" id="4qUSsYBhcf7" role="3clFbx">
+            <node concept="3clFbF" id="4qUSsYBhf9s" role="3cqZAp">
+              <node concept="37vLTI" id="4qUSsYBhgME" role="3clFbG">
+                <node concept="37vLTw" id="4qUSsYBhf9q" role="37vLTJ">
+                  <ref role="3cqZAo" node="1xXyUiDtnC6" resolve="pluginDirectory" />
+                </node>
+                <node concept="3cpWs3" id="4qUSsYBhhOP" role="37vLTx">
+                  <node concept="Xl_RD" id="4qUSsYBhhOQ" role="3uHU7w">
+                    <property role="Xl_RC" value="NextflowWorkbench" />
+                  </node>
+                  <node concept="3cpWs3" id="4qUSsYBhhOR" role="3uHU7B">
+                    <node concept="10M0yZ" id="4qUSsYBhhOS" role="3uHU7w">
+                      <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                    </node>
+                    <node concept="3cpWs3" id="4qUSsYBhhOT" role="3uHU7B">
+                      <node concept="3cpWs3" id="4qUSsYBhhGi" role="3uHU7B">
+                        <node concept="37vLTw" id="4qUSsYBhhmj" role="3uHU7B">
+                          <ref role="3cqZAo" node="1xXyUiDtnC1" resolve="userHome" />
+                        </node>
+                        <node concept="10M0yZ" id="4qUSsYBhhP8" role="3uHU7w">
+                          <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                          <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="4qUSsYBhhP9" role="3uHU7w">
+                        <ref role="3cqZAo" node="58EhtUpZfMj" resolve="pathSelector" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="10M0yZ" id="4qUSsYBhcGh" role="3clFbw">
+            <ref role="1PxDUh" to="d4yz:7vzkp06ON77" resolve="SystemInfo" />
+            <ref role="3cqZAo" to="d4yz:7vzkp06ON97" resolve="isLinux" />
+          </node>
+        </node>
         <node concept="3clFbJ" id="1xXyUiDxpUB" role="3cqZAp">
           <node concept="3clFbS" id="1xXyUiDxpUD" role="3clFbx">
             <node concept="3clFbF" id="4kZvAQCcCyd" role="3cqZAp">
