@@ -706,6 +706,17 @@
                 </node>
               </node>
             </node>
+            <node concept="34ab3g" id="7Bp6TkDi1mB" role="3cqZAp">
+              <property role="35gtTG" value="info" />
+              <node concept="3cpWs3" id="7Bp6TkDi1mC" role="34bqiv">
+                <node concept="37vLTw" id="7Bp6TkDi1mD" role="3uHU7w">
+                  <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
+                </node>
+                <node concept="Xl_RD" id="7Bp6TkDi1mE" role="3uHU7B">
+                  <property role="Xl_RC" value="Using " />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs6" id="7Bp6TkD9mZr" role="3cqZAp">
               <node concept="37vLTw" id="7Bp6TkD9mZs" role="3cqZAk">
                 <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
@@ -760,7 +771,7 @@
               <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
               <ref role="37wK5l" to="e2lb:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
               <node concept="Xl_RD" id="58EhtUpZfMm" role="37wK5m">
-                <property role="Xl_RC" value="idea.path.selector" />
+                <property role="Xl_RC" value="idea.paths.selector" />
               </node>
             </node>
           </node>
@@ -772,11 +783,10 @@
               <ref role="3cqZAo" node="58EhtUpZfMj" resolve="pathSelector" />
             </node>
             <node concept="Xl_RD" id="7Bp6TkDdQsF" role="3uHU7B">
-              <property role="Xl_RC" value="With pathSelector (property idea.path.selector)=" />
+              <property role="Xl_RC" value="With pathSelector (property idea.paths.selector)=" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="T2H5PporfZ" role="3cqZAp" />
         <node concept="3cpWs8" id="1xXyUiDtnBY" role="3cqZAp">
           <node concept="3cpWsn" id="1xXyUiDtnBX" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -807,80 +817,127 @@
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="pluginDirectory" />
             <node concept="17QB3L" id="4$GDkRnRekP" role="1tU5fm" />
-            <node concept="3cpWs3" id="1xXyUiDvkdT" role="33vP2m">
-              <node concept="Xl_RD" id="1xXyUiDuCaN" role="3uHU7w">
-                <property role="Xl_RC" value="NextflowWorkbench" />
-              </node>
-              <node concept="3cpWs3" id="7Bp6TkCMYmk" role="3uHU7B">
-                <node concept="10M0yZ" id="1xXyUiDvk_S" role="3uHU7w">
-                  <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
-                  <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+            <node concept="10Nm6u" id="7Bp6TkDgaL_" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7Bp6TkDgbb6" role="3cqZAp">
+          <node concept="3clFbS" id="7Bp6TkDgbb8" role="3clFbx">
+            <node concept="3clFbF" id="7Bp6TkDgcsn" role="3cqZAp">
+              <node concept="37vLTI" id="7Bp6TkDgc_p" role="3clFbG">
+                <node concept="37vLTw" id="7Bp6TkDgcsl" role="37vLTJ">
+                  <ref role="3cqZAo" node="1xXyUiDtnC6" resolve="pluginDirectory" />
                 </node>
-                <node concept="3cpWs3" id="7Bp6TkCN05F" role="3uHU7B">
-                  <node concept="Xl_RD" id="7Bp6TkCMZkn" role="3uHU7w">
-                    <property role="Xl_RC" value="plugins" />
+                <node concept="3cpWs3" id="1xXyUiDvkdT" role="37vLTx">
+                  <node concept="Xl_RD" id="1xXyUiDuCaN" role="3uHU7w">
+                    <property role="Xl_RC" value="NextflowWorkbench" />
                   </node>
-                  <node concept="3cpWs3" id="7Bp6TkCMZkg" role="3uHU7B">
-                    <node concept="3cpWs3" id="7Bp6TkDdION" role="3uHU7B">
-                      <node concept="Xl_RD" id="7Bp6TkCMYsz" role="3uHU7w">
-                        <property role="Xl_RC" value="config" />
+                  <node concept="3cpWs3" id="7Bp6TkCMYmk" role="3uHU7B">
+                    <node concept="10M0yZ" id="1xXyUiDvk_S" role="3uHU7w">
+                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                      <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                    </node>
+                    <node concept="3cpWs3" id="7Bp6TkDdIws" role="3uHU7B">
+                      <node concept="37vLTw" id="1xXyUiDvkml" role="3uHU7w">
+                        <ref role="3cqZAo" node="58EhtUpZfMj" resolve="pathSelector" />
                       </node>
-                      <node concept="3cpWs3" id="1xXyUiDvkus" role="3uHU7B">
-                        <node concept="3cpWs3" id="7Bp6TkDdIws" role="3uHU7B">
-                          <node concept="37vLTw" id="1xXyUiDvkml" role="3uHU7w">
-                            <ref role="3cqZAo" node="58EhtUpZfMj" resolve="pathSelector" />
-                          </node>
-                          <node concept="3cpWs3" id="1xXyUiDuBCU" role="3uHU7B">
-                            <node concept="1eOMI4" id="1xXyUiDtnCl" role="3uHU7B">
-                              <node concept="3K4zz7" id="1xXyUiDtnCk" role="1eOMHV">
-                                <node concept="37vLTw" id="1xXyUiDtnC9" role="3K4Cdx">
-                                  <ref role="3cqZAo" node="1xXyUiDtnBX" resolve="isMac" />
-                                </node>
-                                <node concept="3cpWs3" id="1xXyUiDtnCa" role="3K4E3e">
-                                  <node concept="3cpWs3" id="1xXyUiDtnCb" role="3uHU7B">
-                                    <node concept="3cpWs3" id="1xXyUiDtnCc" role="3uHU7B">
-                                      <node concept="3cpWs3" id="1xXyUiDtnCd" role="3uHU7B">
-                                        <node concept="37vLTw" id="1xXyUiDtnCe" role="3uHU7B">
-                                          <ref role="3cqZAo" node="1xXyUiDtnC1" resolve="userHome" />
-                                        </node>
-                                        <node concept="10M0yZ" id="1xXyUiDtnCs" role="3uHU7w">
-                                          <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
-                                          <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
-                                        </node>
-                                      </node>
-                                      <node concept="Xl_RD" id="1xXyUiDtnCg" role="3uHU7w">
-                                        <property role="Xl_RC" value="Library" />
-                                      </node>
-                                    </node>
-                                    <node concept="10M0yZ" id="1xXyUiDtnCt" role="3uHU7w">
-                                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
-                                      <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
-                                    </node>
-                                  </node>
-                                  <node concept="Xl_RD" id="1xXyUiDtnCi" role="3uHU7w">
-                                    <property role="Xl_RC" value="Application Support" />
-                                  </node>
-                                </node>
-                                <node concept="37vLTw" id="1xXyUiDtnCj" role="3K4GZi">
-                                  <ref role="3cqZAo" node="1xXyUiDtnC1" resolve="userHome" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="10M0yZ" id="1xXyUiDuBJT" role="3uHU7w">
-                              <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
-                              <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="10M0yZ" id="7Bp6TkDdJ02" role="3uHU7w">
+                      <node concept="3cpWs3" id="1xXyUiDuBCU" role="3uHU7B">
+                        <node concept="10M0yZ" id="1xXyUiDuBJT" role="3uHU7w">
                           <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
                           <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
                         </node>
+                        <node concept="3cpWs3" id="1xXyUiDtnCa" role="3uHU7B">
+                          <node concept="3cpWs3" id="1xXyUiDtnCb" role="3uHU7B">
+                            <node concept="3cpWs3" id="1xXyUiDtnCc" role="3uHU7B">
+                              <node concept="3cpWs3" id="1xXyUiDtnCd" role="3uHU7B">
+                                <node concept="37vLTw" id="1xXyUiDtnCe" role="3uHU7B">
+                                  <ref role="3cqZAo" node="1xXyUiDtnC1" resolve="userHome" />
+                                </node>
+                                <node concept="10M0yZ" id="1xXyUiDtnCs" role="3uHU7w">
+                                  <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                                  <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="1xXyUiDtnCg" role="3uHU7w">
+                                <property role="Xl_RC" value="Library" />
+                              </node>
+                            </node>
+                            <node concept="10M0yZ" id="1xXyUiDtnCt" role="3uHU7w">
+                              <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                              <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="1xXyUiDtnCi" role="3uHU7w">
+                            <property role="Xl_RC" value="Application Support" />
+                          </node>
+                        </node>
                       </node>
                     </node>
-                    <node concept="10M0yZ" id="7Bp6TkCN0cg" role="3uHU7w">
-                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
-                      <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="10M0yZ" id="7Bp6TkDgbAf" role="3clFbw">
+            <ref role="1PxDUh" to="d4yz:7vzkp06ON77" resolve="SystemInfo" />
+            <ref role="3cqZAo" to="d4yz:7vzkp06ON8T" resolve="isMac" />
+          </node>
+          <node concept="9aQIb" id="7Bp6TkDgcWA" role="9aQIa">
+            <node concept="3clFbS" id="7Bp6TkDgcWB" role="9aQI4">
+              <node concept="3clFbF" id="7Bp6TkDgd8o" role="3cqZAp">
+                <node concept="37vLTI" id="7Bp6TkDgd8p" role="3clFbG">
+                  <node concept="37vLTw" id="7Bp6TkDgd8q" role="37vLTJ">
+                    <ref role="3cqZAo" node="1xXyUiDtnC6" resolve="pluginDirectory" />
+                  </node>
+                  <node concept="3cpWs3" id="7Bp6TkDgd8r" role="37vLTx">
+                    <node concept="Xl_RD" id="7Bp6TkDgd8s" role="3uHU7w">
+                      <property role="Xl_RC" value="NextflowWorkbench" />
+                    </node>
+                    <node concept="3cpWs3" id="7Bp6TkDgd8t" role="3uHU7B">
+                      <node concept="10M0yZ" id="7Bp6TkDgd8u" role="3uHU7w">
+                        <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                        <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                      </node>
+                      <node concept="3cpWs3" id="7Bp6TkDgd8v" role="3uHU7B">
+                        <node concept="Xl_RD" id="7Bp6TkDgd8w" role="3uHU7w">
+                          <property role="Xl_RC" value="plugins" />
+                        </node>
+                        <node concept="3cpWs3" id="7Bp6TkDgd8x" role="3uHU7B">
+                          <node concept="3cpWs3" id="7Bp6TkDgd8y" role="3uHU7B">
+                            <node concept="Xl_RD" id="7Bp6TkDgd8z" role="3uHU7w">
+                              <property role="Xl_RC" value="config" />
+                            </node>
+                            <node concept="3cpWs3" id="7Bp6TkDgd8$" role="3uHU7B">
+                              <node concept="3cpWs3" id="7Bp6TkDgef_" role="3uHU7B">
+                                <node concept="37vLTw" id="7Bp6TkDgd8A" role="3uHU7w">
+                                  <ref role="3cqZAo" node="58EhtUpZfMj" resolve="pathSelector" />
+                                </node>
+                                <node concept="3cpWs3" id="7Bp6TkDgd8_" role="3uHU7B">
+                                  <node concept="3cpWs3" id="7Bp6TkDgd8G" role="3uHU7B">
+                                    <node concept="37vLTw" id="7Bp6TkDgd8H" role="3uHU7B">
+                                      <ref role="3cqZAo" node="1xXyUiDtnC1" resolve="userHome" />
+                                    </node>
+                                    <node concept="10M0yZ" id="7Bp6TkDgd8I" role="3uHU7w">
+                                      <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="7Bp6TkDgek1" role="3uHU7w">
+                                    <property role="Xl_RC" value="." />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="10M0yZ" id="7Bp6TkDgd8M" role="3uHU7w">
+                                <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                                <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="10M0yZ" id="7Bp6TkDgd8N" role="3uHU7w">
+                            <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                            <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -909,6 +966,17 @@
                 </node>
                 <node concept="37vLTw" id="1xXyUiDzjfq" role="37vLTx">
                   <ref role="3cqZAo" node="1xXyUiDtnC6" resolve="pluginDirectory" />
+                </node>
+              </node>
+            </node>
+            <node concept="34ab3g" id="7Bp6TkDi0I0" role="3cqZAp">
+              <property role="35gtTG" value="info" />
+              <node concept="3cpWs3" id="7Bp6TkDi158" role="34bqiv">
+                <node concept="37vLTw" id="7Bp6TkDi15I" role="3uHU7w">
+                  <ref role="3cqZAo" node="4kZvAQCcBJr" resolve="additionalLibPath" />
+                </node>
+                <node concept="Xl_RD" id="7Bp6TkDi0I2" role="3uHU7B">
+                  <property role="Xl_RC" value="Using " />
                 </node>
               </node>
             </node>
