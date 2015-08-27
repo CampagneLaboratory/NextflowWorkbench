@@ -8,7 +8,6 @@
   <imports>
     <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="rk0i" ref="r:5c1a2e64-6ce3-44f3-9901-91d04f21d955(org.campagnelab.nyosh.interactive.behavior)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" implicit="true" />
   </imports>
@@ -414,7 +413,7 @@
             <node concept="2OqwBi" id="33aW7OwXBI1" role="lb14g">
               <node concept="117lpO" id="33aW7OwXBFB" role="2Oq$k0" />
               <node concept="2qgKlT" id="33aW7OwYafy" role="2OqNvi">
-                <ref role="37wK5l" to="rk0i:4TFseGE4Kh1" resolve="getRawPath" />
+                <ref role="37wK5l" to="rzxe:4TFseGE4Kh1" resolve="getRawPath" />
               </node>
             </node>
           </node>

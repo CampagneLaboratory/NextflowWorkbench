@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
-    <import index="440p" ref="r:a6c7903c-0b83-4bcf-8e49-8f150f2412bf(org.campagnelab.nyosh.interactive.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -296,7 +295,7 @@
     <property role="TrG5h" value="DockerPath" />
     <property role="34LRSv" value="path" />
     <property role="R4oN_" value="path inside a docker container" />
-    <ref role="1TJDcQ" to="440p:7wWmVpyc6O4" resolve="InteractivePath" />
+    <ref role="1TJDcQ" node="7wWmVpyc6O4" resolve="InteractivePath" />
     <node concept="1TJgyj" id="4TFseGE79bF" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="dockerContainer" />
@@ -526,6 +525,31 @@
     <node concept="1TJgyi" id="1q4iT9$FIVt" role="1TKVEl">
       <property role="TrG5h" value="description" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5sHok87kXvi">
+    <property role="TrG5h" value="PathPart" />
+    <property role="3GE5qa" value="paths" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5sHok87kXvj" role="1TKVEl">
+      <property role="TrG5h" value="part" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5sHok87kXvk" role="1TKVEl">
+      <property role="TrG5h" value="isDirectory" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7wWmVpyc6O4">
+    <property role="TrG5h" value="InteractivePath" />
+    <property role="3GE5qa" value="paths" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7wWmVpyc6Po" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="path" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5sHok87kXvi" resolve="PathPart" />
     </node>
   </node>
 </model>
