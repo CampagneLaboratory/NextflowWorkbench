@@ -3,12 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1276,7 +1272,7 @@
   </node>
   <node concept="1M2fIO" id="9PzSb9CgIj">
     <property role="3GE5qa" value="newChannelInitializer" />
-    <ref role="1M2myG" to="iowz:3aOvEIt8nSZ" resolve="PrimitiveType" />
+    <ref role="1M2myG" to="iowz:3aOvEIt8nSZ" resolve="PrimitiveTypeValue" />
     <node concept="nKS2y" id="9PzSb9CgIn" role="1MLUbF">
       <node concept="3clFbS" id="9PzSb9CgIo" role="2VODD2">
         <node concept="3clFbF" id="9PzSb9CgNj" role="3cqZAp">
