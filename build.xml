@@ -12,10 +12,10 @@
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
   <property name="artifacts.mps-sl-all" location="${mps-richtext.location}" />
   <property name="artifacts.org.campagnelab.mps.UI" location="${org.campagnelab.goby.workbench.home}" />
-  <property name="artifacts.org.campagnelab.Background" location="../nyosh3/build/artifacts/org.campagnelab.Background" />
-  <property name="artifacts.org.campagnelab.GobyWeb" location="../nyosh3/build/artifacts/org.campagnelab.GobyWeb" />
-  <property name="artifacts.org.campagnelab.NYoSh" location="../nyosh3/build/artifacts/org.campagnelab.NYoSh" />
-  <property name="artifacts.org.campagnelab.Logger" location="../nyosh3/build/artifacts/org.campagnelab.Logger" />
+  <property name="artifacts.org.campagnelab.Background" location="../NYoSh/build/artifacts/org.campagnelab.Background" />
+  <property name="artifacts.org.campagnelab.GobyWeb" location="../NYoSh/build/artifacts/org.campagnelab.GobyWeb" />
+  <property name="artifacts.org.campagnelab.NYoSh" location="../NYoSh/build/artifacts/org.campagnelab.NYoSh" />
+  <property name="artifacts.org.campagnelab.Logger" location="../NYoSh/build/artifacts/org.campagnelab.Logger" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.org.campagnelab.mps.UI}/build.properties" prefix="import.org.campagnelab.mps.UI" />
   <property file="${artifacts.org.campagnelab.Background}/build.properties" prefix="import.org.campagnelab.Background" />
@@ -477,23 +477,23 @@
   </target>
   
   <target name="buildDependents">
-    <ant antfile="../nyosh3/background.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../nyosh3/GobyWeb.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../nyosh3/NYoSh.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../nyosh3/logger.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../NYoSh/background.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../NYoSh/GobyWeb.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../NYoSh/NYoSh.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../NYoSh/logger.xml" inheritAll="false" useNativeBasedir="true" />
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.NYoSh}/org.campagnelab.NYoSh-${org.campagnelab.NYoSh.nyosh_version}.zip" dest="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-${org.campagnelab.mps.UI.ui_version}.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.Background/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.Background}/org.campagnelab.background-${org.campagnelab.Background.background_version}.zip" dest="${build.tmp}/deps/org.campagnelab.Background/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.Logger/org.campagnelab.logger-_dl__lbrace_logger.version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.Logger}/org.campagnelab.logger-${org.campagnelab.Logger.logger.version}.zip" dest="${build.tmp}/deps/org.campagnelab.Logger/org.campagnelab.logger-_dl__lbrace_logger.version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/org.campagnelab.GobyWeb/org.campagnelab.GobyWeb-_dl__lbrace_gobyweb_version_rbrace_.zip" />
     <unzip src="${artifacts.org.campagnelab.GobyWeb}/org.campagnelab.GobyWeb-${org.campagnelab.GobyWeb.gobyweb_version}.zip" dest="${build.tmp}/deps/org.campagnelab.GobyWeb/org.campagnelab.GobyWeb-_dl__lbrace_gobyweb_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-${org.campagnelab.mps.UI.ui_version}.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.Logger/org.campagnelab.logger-_dl__lbrace_logger.version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.Logger}/org.campagnelab.logger-${org.campagnelab.Logger.logger.version}.zip" dest="${build.tmp}/deps/org.campagnelab.Logger/org.campagnelab.logger-_dl__lbrace_logger.version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.Background/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.Background}/org.campagnelab.background-${org.campagnelab.Background.background_version}.zip" dest="${build.tmp}/deps/org.campagnelab.Background/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.NYoSh}/org.campagnelab.NYoSh-${org.campagnelab.NYoSh.nyosh_version}.zip" dest="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
   </target>
@@ -664,19 +664,19 @@
   </target>
   
   <target name="makeDependents">
-    <ant antfile="../nyosh3/background.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../NYoSh/background.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
-    <ant antfile="../nyosh3/GobyWeb.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../NYoSh/GobyWeb.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
-    <ant antfile="../nyosh3/NYoSh.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../NYoSh/NYoSh.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
-    <ant antfile="../nyosh3/logger.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../NYoSh/logger.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
