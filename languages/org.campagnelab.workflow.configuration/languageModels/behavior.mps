@@ -7,8 +7,6 @@
   </languages>
   <imports>
     <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
-    <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -203,7 +201,7 @@
   </node>
   <node concept="13h7C7" id="dhtvqF4iPr">
     <property role="3GE5qa" value="processOptions" />
-    <ref role="13h7C2" to="dlwq:5KN4KqZbJnZ" resolve="ProcessOptions" />
+    <ref role="13h7C2" to="dlwq:5KN4KqZbJnZ" resolve="ProcessOption" />
     <node concept="13i0hz" id="dhtvqF4iQ6" role="13h7CS">
       <property role="TrG5h" value="isPartOfWorkflowConfig" />
       <node concept="3Tm1VV" id="dhtvqF4iQ7" role="1B3o_S" />

@@ -4,15 +4,11 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="82ffebe3-3685-4fd9-b560-0c1d348d295c" name="org.campagnelab.logger" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="pyqc" ref="r:72745bf9-459c-4b98-8342-8e5385473026(org.campagnelab.gobyweb.behavior)" />
     <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
@@ -24,8 +20,6 @@
     <import index="6pk0" ref="r:48f4e449-1a18-435e-ae88-4830aa794dc7(org.campagnelab.nyosh.environment.structure)" />
     <import index="935h" ref="r:c68a8ced-fbf7-48e1-b1e0-40266e57501f(org.campagnelab.gobyweb.structure)" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
-    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
-    <import index="lgzw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.regex(JDK/java.util.regex@java_stub)" />
     <import index="rk0i" ref="r:5c1a2e64-6ce3-44f3-9901-91d04f21d955(org.campagnelab.nyosh.interactive.behavior)" implicit="true" />
     <import index="440p" ref="r:a6c7903c-0b83-4bcf-8e49-8f150f2412bf(org.campagnelab.nyosh.interactive.structure)" implicit="true" />
   </imports>
@@ -178,13 +172,6 @@
         <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
-    </language>
-    <language id="82ffebe3-3685-4fd9-b560-0c1d348d295c" name="org.campagnelab.logger">
-      <concept id="6793035292239247242" name="org.campagnelab.logger.structure.LogStatement" flags="ng" index="EQg8h">
-        <reference id="6793035292239265366" name="node" index="EQkJd" />
-        <child id="1925991773565590769" name="message" index="1l2uex" />
-      </concept>
-      <concept id="6793035292239444755" name="org.campagnelab.logger.structure.LogInit" flags="ng" index="EQwU8" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
@@ -613,7 +600,6 @@
       <property role="TrG5h" value="reloadVariables" />
       <node concept="3Tm1VV" id="irqYu7hHBd" role="1B3o_S" />
       <node concept="3clFbS" id="irqYu7hHBe" role="3clF47">
-        <node concept="EQwU8" id="irqYu7npMA" role="3cqZAp" />
         <node concept="3clFbF" id="CB0i$9AIWD" role="3cqZAp">
           <node concept="2OqwBi" id="CB0i$9AIWE" role="3clFbG">
             <node concept="2OqwBi" id="CB0i$9AIWF" role="2Oq$k0">
@@ -628,12 +614,6 @@
         <node concept="34ab3g" id="irqYu7nbA6" role="3cqZAp">
           <property role="35gtTG" value="info" />
           <node concept="Xl_RD" id="irqYu7nbA8" role="34bqiv">
-            <property role="Xl_RC" value="About to reload variables." />
-          </node>
-        </node>
-        <node concept="EQg8h" id="irqYu7noaN" role="3cqZAp">
-          <ref role="EQkJd" node="irqYu7hHBc" resolve="reloadVariables" />
-          <node concept="Xl_RD" id="irqYu7nrqk" role="1l2uex">
             <property role="Xl_RC" value="About to reload variables." />
           </node>
         </node>
@@ -729,22 +709,6 @@
                   <node concept="3TrcHB" id="4Jg$YMkDrQD" role="2OqNvi">
                     <ref role="3TsBF5" to="6pk0:4Jg$YMkDozZ" resolve="kind" />
                   </node>
-                </node>
-              </node>
-            </node>
-            <node concept="EQg8h" id="irqYu7nY3d" role="3cqZAp">
-              <ref role="EQkJd" node="irqYu7hHBc" resolve="reloadVariables" />
-              <node concept="3cpWs3" id="irqYu7nY3e" role="1l2uex">
-                <node concept="2OqwBi" id="irqYu7nY3f" role="3uHU7w">
-                  <node concept="37vLTw" id="irqYu7nY3g" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4Jg$YMkD4Qk" resolve="scriptVariable" />
-                  </node>
-                  <node concept="2OwXpG" id="irqYu7nY3h" role="2OqNvi">
-                    <ref role="2Oxat5" to="evra:~ScriptVariable.name" resolve="name" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="irqYu7nY3i" role="3uHU7B">
-                  <property role="Xl_RC" value="found variable=" />
                 </node>
               </node>
             </node>
@@ -863,27 +827,6 @@
                 </node>
               </node>
             </node>
-            <node concept="EQg8h" id="irqYu7nrTw" role="3cqZAp">
-              <ref role="EQkJd" node="irqYu7hHBc" resolve="reloadVariables" />
-              <node concept="3cpWs3" id="irqYu7nsfK" role="1l2uex">
-                <node concept="2OqwBi" id="irqYu7nsfL" role="3uHU7w">
-                  <node concept="2OqwBi" id="irqYu7nsfM" role="2Oq$k0">
-                    <node concept="2GrUjf" id="irqYu7nsfN" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="irqYu7hUGv" resolve="resource" />
-                    </node>
-                    <node concept="3TrEf2" id="irqYu7nsfO" role="2OqNvi">
-                      <ref role="3Tt5mk" to="dzk5:1ORG9zeKa87" />
-                    </node>
-                  </node>
-                  <node concept="3TrcHB" id="irqYu7nsfP" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="irqYu7nsfQ" role="3uHU7B">
-                  <property role="Xl_RC" value="Reloading resource=" />
-                </node>
-              </node>
-            </node>
             <node concept="1DcWWT" id="CB0i$9AIXg" role="3cqZAp">
               <node concept="3clFbS" id="CB0i$9AIXh" role="2LFqv$">
                 <node concept="34ab3g" id="irqYu7mZfK" role="3cqZAp">
@@ -898,22 +841,6 @@
                       </node>
                     </node>
                     <node concept="Xl_RD" id="irqYu7mZfM" role="3uHU7B">
-                      <property role="Xl_RC" value="found variable=" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="EQg8h" id="irqYu7nsyD" role="3cqZAp">
-                  <ref role="EQkJd" node="irqYu7hHBc" resolve="reloadVariables" />
-                  <node concept="3cpWs3" id="irqYu7nsK1" role="1l2uex">
-                    <node concept="2OqwBi" id="irqYu7nsK2" role="3uHU7w">
-                      <node concept="37vLTw" id="irqYu7nsK3" role="2Oq$k0">
-                        <ref role="3cqZAo" node="CB0i$9AIXT" resolve="scriptVariable" />
-                      </node>
-                      <node concept="2OwXpG" id="irqYu7nsK4" role="2OqNvi">
-                        <ref role="2Oxat5" to="evra:~ScriptVariable.name" resolve="name" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="irqYu7nsK5" role="3uHU7B">
                       <property role="Xl_RC" value="found variable=" />
                     </node>
                   </node>
