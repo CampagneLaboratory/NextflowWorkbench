@@ -2660,7 +2660,7 @@
                 </node>
               </node>
               <node concept="2XshWL" id="4kZvAQCd$gO" role="2OqNvi">
-                <ref role="2WH_rO" node="4kZvAQCc$VM" resolve="getAdditionalLibPath" />
+                <ref role="2WH_rO" node="43Jx5$Dbo1C" resolve="getAdditionalLibPath" />
                 <node concept="2ShNRf" id="7MQ4nb0hVdg" role="2XxRq1">
                   <node concept="1pGfFk" id="7MQ4nb0hVdi" role="2ShVmc">
                     <ref role="37wK5l" to="jrbx:~MPSProject.&lt;init&gt;(com.intellij.openapi.project.Project)" resolve="MPSProject" />
