@@ -512,7 +512,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" targetJavaVersion="1.7">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
@@ -662,7 +662,7 @@
   <target name="java.compile.org.campagnelab.workflow.run" depends="java.compile.org.campagnelab.util.files, java.compile.org.campagnelab.workflow, java.compile.org.campagnelab.workflow.configuration, fetchDependencies">
     <mkdir dir="${basedir}/solutions/org.campagnelab.workflow.run/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.workflow.run" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow.run" fork="true" includeantruntime="false" debug="true" compiler="jikes">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow.run" fork="true" includeantruntime="false" debug="true" source="1.7" target="1.7">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/org.campagnelab.workflow.run/source_gen" />
@@ -731,7 +731,7 @@
   <target name="java.compile.org.campagnelab.workflow" depends="java.compile.org.campagnelab.docker, java.compile.org.campagnelab.util.files, java.compile.org.campagnelab.workflow.configuration, fetchDependencies">
     <mkdir dir="${basedir}/languages/org.campagnelab.workflow/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.workflow" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow" fork="true" includeantruntime="false" debug="true" compiler="jikes">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow" fork="true" includeantruntime="false" debug="true" source="1.7" target="1.7">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/org.campagnelab.workflow/source_gen" />
@@ -872,7 +872,7 @@
   <target name="java.compile.org.campagnelab.workflow#4801669429698558903" depends="java.compile.org.campagnelab.util.files, java.compile.org.campagnelab.workflow, java.compile.org.campagnelab.workflow.configuration, fetchDependencies">
     <mkdir dir="${basedir}/languages/org.campagnelab.workflow/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.workflow#4801669429698558903" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow#4801669429698558903" fork="true" includeantruntime="false" debug="true" compiler="jikes">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow#4801669429698558903" fork="true" includeantruntime="false" debug="true" source="1.7" target="1.7">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/org.campagnelab.workflow/generator/source_gen" />
@@ -929,7 +929,7 @@
   <target name="java.compile.org.campagnelab.util.files" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/org.campagnelab.utils.multifiles/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.util.files" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.util.files" fork="true" includeantruntime="false" debug="true" compiler="jikes">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.util.files" fork="true" includeantruntime="false" debug="true" source="1.7" target="1.7">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/org.campagnelab.utils.multifiles/source_gen" />
@@ -965,7 +965,7 @@
   <target name="java.compile.org.campagnelab.util.files#4347565441068750769" depends="java.compile.org.campagnelab.util.files, fetchDependencies">
     <mkdir dir="${basedir}/languages/org.campagnelab.utils.multifiles/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.util.files#4347565441068750769" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.util.files#4347565441068750769" fork="true" includeantruntime="false" debug="true" compiler="jikes">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.util.files#4347565441068750769" fork="true" includeantruntime="false" debug="true" source="1.7" target="1.7">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/org.campagnelab.utils.multifiles/generator/source_gen" />
@@ -1002,7 +1002,7 @@
   <target name="java.compile.org.campagnelab.workflow.configuration" depends="java.compile.org.campagnelab.util.files, fetchDependencies">
     <mkdir dir="${basedir}/languages/org.campagnelab.workflow.configuration/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.workflow.configuration" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow.configuration" fork="true" includeantruntime="false" debug="true" compiler="jikes">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow.configuration" fork="true" includeantruntime="false" debug="true" source="1.7" target="1.7">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/org.campagnelab.workflow.configuration/source_gen" />
@@ -1039,7 +1039,7 @@
   <target name="java.compile.org.campagnelab.workflow.configuration#6643674794994245037" depends="java.compile.org.campagnelab.util.files, java.compile.org.campagnelab.workflow.configuration, fetchDependencies">
     <mkdir dir="${basedir}/languages/org.campagnelab.workflow.configuration/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.workflow.configuration#6643674794994245037" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow.configuration#6643674794994245037" fork="true" includeantruntime="false" debug="true" compiler="jikes">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow.configuration#6643674794994245037" fork="true" includeantruntime="false" debug="true" source="1.7" target="1.7">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/org.campagnelab.workflow.configuration/generator/source_gen" />
@@ -1077,7 +1077,7 @@
   <target name="java.compile.org.campagnelab.docker" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/org.campagnelab.docker/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.docker" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.docker" fork="true" includeantruntime="false" debug="true" compiler="jikes">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.docker" fork="true" includeantruntime="false" debug="true" source="1.7" target="1.7">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/org.campagnelab.docker/source_gen" />
@@ -1213,7 +1213,7 @@
   <target name="java.compile.org.campagnelab.docker#1893262236498675230" depends="java.compile.org.campagnelab.docker, fetchDependencies">
     <mkdir dir="${basedir}/languages/org.campagnelab.docker/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.docker#1893262236498675230" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.docker#1893262236498675230" fork="true" includeantruntime="false" debug="true" compiler="jikes">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.docker#1893262236498675230" fork="true" includeantruntime="false" debug="true" source="1.7" target="1.7">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/org.campagnelab.docker/generator/source_gen" />
@@ -1345,7 +1345,7 @@
   <target name="java.compile.org.campagnelab.workflow.Samples" depends="java.compile.org.campagnelab.workflow.run, fetchDependencies">
     <mkdir dir="${basedir}/solutions/org.campagnelab.workflow.Samples/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.workflow.Samples" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow.Samples" fork="true" includeantruntime="false" debug="true" compiler="jikes">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.workflow.Samples" fork="true" includeantruntime="false" debug="true" source="1.7" target="1.7">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/org.campagnelab.workflow.Samples/source_gen" />
