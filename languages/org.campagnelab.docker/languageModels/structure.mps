@@ -291,20 +291,6 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4TFseGE78Pk">
-    <property role="TrG5h" value="DockerPath" />
-    <property role="34LRSv" value="path" />
-    <property role="R4oN_" value="path inside a docker container" />
-    <ref role="1TJDcQ" node="7wWmVpyc6O4" resolve="InteractivePath" />
-    <node concept="1TJgyj" id="4TFseGE79bF" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="dockerContainer" />
-      <ref role="20lvS9" node="1D6dZ$xfhyW" resolve="DockerContainer" />
-    </node>
-    <node concept="PrWs8" id="4TFseGE78QH" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4TFseGE9J$G">
     <property role="TrG5h" value="DockerCommand" />
     <property role="34LRSv" value="command" />
@@ -525,31 +511,6 @@
     <node concept="1TJgyi" id="1q4iT9$FIVt" role="1TKVEl">
       <property role="TrG5h" value="description" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5sHok87kXvi">
-    <property role="TrG5h" value="PathPart" />
-    <property role="3GE5qa" value="paths" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5sHok87kXvj" role="1TKVEl">
-      <property role="TrG5h" value="part" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="5sHok87kXvk" role="1TKVEl">
-      <property role="TrG5h" value="isDirectory" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7wWmVpyc6O4">
-    <property role="TrG5h" value="InteractivePath" />
-    <property role="3GE5qa" value="paths" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7wWmVpyc6Po" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="path" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="5sHok87kXvi" resolve="PathPart" />
     </node>
   </node>
 </model>

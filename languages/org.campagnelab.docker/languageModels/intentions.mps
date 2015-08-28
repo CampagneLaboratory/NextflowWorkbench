@@ -6,9 +6,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" implicit="true" />
+    <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" />
+    <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
+    <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -82,9 +83,6 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -93,9 +91,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-    </language>
-    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
     </language>
   </registry>
   <node concept="2S6QgY" id="VMSWAF3YlJ">
@@ -231,34 +226,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="5uN7hWa7UI6">
-    <property role="TrG5h" value="ClearPath" />
-    <ref role="2ZfgGC" to="6jv6:7wWmVpyc6O4" resolve="InteractivePath" />
-    <node concept="2S6ZIM" id="5uN7hWa7UI7" role="2ZfVej">
-      <node concept="3clFbS" id="5uN7hWa7UI8" role="2VODD2">
-        <node concept="3clFbF" id="5uN7hWa7VdA" role="3cqZAp">
-          <node concept="Xl_RD" id="5uN7hWa7Vd_" role="3clFbG">
-            <property role="Xl_RC" value="Clear Path" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="5uN7hWa7UI9" role="2ZfgGD">
-      <node concept="3clFbS" id="5uN7hWa7UIa" role="2VODD2">
-        <node concept="3clFbF" id="5uN7hWa7VHB" role="3cqZAp">
-          <node concept="2OqwBi" id="5uN7hWa7Wz9" role="3clFbG">
-            <node concept="2OqwBi" id="5uN7hWa7VIJ" role="2Oq$k0">
-              <node concept="2Sf5sV" id="5uN7hWa7VH_" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="5sHok87lez4" role="2OqNvi">
-                <ref role="3TtcxE" to="6jv6:7wWmVpyc6Po" />
-              </node>
-            </node>
-            <node concept="2Kehj3" id="5uN7hWa7Ydz" role="2OqNvi" />
           </node>
         </node>
       </node>
