@@ -7,7 +7,7 @@
   <property name="mps_home" location="" />
   <property name="mps-richtext.location" location="${basedir}/.." />
   <property name="org.campagnelab.goby.workbench.home" location="${basedir}/../NYoSh" />
-  <property name="workbench_version" value="1.0" />
+  <property name="workbench_version" value="1.2" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
   <property name="artifacts.mps-sl-all" location="${mps-richtext.location}" />
@@ -479,16 +479,16 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.Background/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.Background}/org.campagnelab.background-${org.campagnelab.Background.background_version}.zip" dest="${build.tmp}/deps/org.campagnelab.Background/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.NYoSh}/org.campagnelab.NYoSh-${org.campagnelab.NYoSh.nyosh_version}.zip" dest="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.Logger/org.campagnelab.logger-_dl__lbrace_logger.version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.Logger}/org.campagnelab.logger-${org.campagnelab.Logger.logger.version}.zip" dest="${build.tmp}/deps/org.campagnelab.Logger/org.campagnelab.logger-_dl__lbrace_logger.version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
     <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-${org.campagnelab.mps.UI.ui_version}.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.Background/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.Background}/org.campagnelab.background-${org.campagnelab.Background.background_version}.zip" dest="${build.tmp}/deps/org.campagnelab.Background/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.Logger/org.campagnelab.logger-_dl__lbrace_logger.version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.Logger}/org.campagnelab.logger-${org.campagnelab.Logger.logger.version}.zip" dest="${build.tmp}/deps/org.campagnelab.Logger/org.campagnelab.logger-_dl__lbrace_logger.version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/org.campagnelab.GobyWeb/org.campagnelab.GobyWeb-_dl__lbrace_gobyweb_version_rbrace_.zip" />
     <unzip src="${artifacts.org.campagnelab.GobyWeb}/org.campagnelab.GobyWeb-${org.campagnelab.GobyWeb.gobyweb_version}.zip" dest="${build.tmp}/deps/org.campagnelab.GobyWeb/org.campagnelab.GobyWeb-_dl__lbrace_gobyweb_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.NYoSh}/org.campagnelab.NYoSh-${org.campagnelab.NYoSh.nyosh_version}.zip" dest="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
   </target>
@@ -617,7 +617,6 @@
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
-      <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
