@@ -2531,6 +2531,56 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2yVjOHGmQjH" role="3bR37C">
+          <node concept="3bR9La" id="2yVjOHGmQjI" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2yVjOHGmOYJ" resolve="org.campagnelab.docker.bash" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="2yVjOHGmOYJ" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.campagnelab.docker.bash" />
+        <property role="3LESm3" value="3b74e3b7-7336-414d-8899-64a293a44a07" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="2yVjOHGmOYM" role="3LF7KH">
+          <node concept="2Ry0Ak" id="2yVjOHGmQie" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="2yVjOHGmQil" role="2Ry0An">
+              <property role="2Ry0Am" value="org.campagnelab.docker.bash" />
+              <node concept="2Ry0Ak" id="2yVjOHGmQis" role="2Ry0An">
+                <property role="2Ry0Am" value="org.campagnelab.docker.bash.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2yVjOHGmQs4" role="3bR37C">
+          <node concept="3bR9La" id="2yVjOHGmQs5" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2yVjOHGmQs6" role="3bR37C">
+          <node concept="3bR9La" id="2yVjOHGmQs7" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1rhtiO0obS0" resolve="org.campagnelab.docker" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2yVjOHGmQs8" role="3bR37C">
+          <node concept="1Busua" id="2yVjOHGmQs9" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2yVjOHGmQsa" role="3bR37C">
+          <node concept="1Busua" id="2yVjOHGmQsb" role="1SiIV1">
+            <ref role="1Busuk" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="2yVjOHGmQsc" role="1TViLv">
+          <property role="TrG5h" value="org.campagnelab.docker.bash#1644224175107836483" />
+          <property role="3LESm3" value="2fea3dc3-81dc-407b-b607-89f08543a577" />
+          <property role="2GAjPV" value="false" />
+        </node>
       </node>
       <node concept="3LEwk6" id="7sNx9BmIXy0" role="2G$12L">
         <property role="BnDLt" value="true" />
