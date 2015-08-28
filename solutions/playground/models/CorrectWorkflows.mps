@@ -123,9 +123,7 @@
       <concept id="4018964125401495568" name="org.campagnelab.workflow.structure.Tuple" flags="ng" index="knwa4">
         <child id="7391172440899058539" name="elements" index="2zSOd7" />
       </concept>
-      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
-        <property id="2590112629708729231" name="fromStandardOutput" index="2lYOoT" />
-      </concept>
+      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
@@ -694,14 +692,13 @@
   </node>
   <node concept="2ulcR8" id="6zpIx1pCL0V">
     <property role="TrG5h" value="addTextToFile" />
-    <node concept="1uLvKC" id="6qiI2N5urgN" role="2ulM79">
-      <property role="TrG5h" value="'file.txt'" />
-      <property role="2lYOoT" value="false" />
-      <node concept="16pRw0" id="2fLVrqQhloe" role="2ybFLk" />
+    <node concept="2lYRya" id="6ZiO7Efq7MM" role="2ulM79">
+      <property role="TrG5h" value="file.txt" />
+      <node concept="16pRw0" id="6ZiO7Efq893" role="2ybFLk" />
     </node>
-    <node concept="1uLvKC" id="6qiI2N5urdM" role="2ulM7n">
+    <node concept="2mjA9o" id="6ZiO7Efq89l" role="2ulM7n">
       <property role="TrG5h" value="strInput" />
-      <node concept="16pbKc" id="2fLVrqPYDsQ" role="2ybFLk" />
+      <node concept="16pbKc" id="6ZiO7Efq89v" role="2ybFLk" />
     </node>
     <node concept="3Y$Zt1" id="6zpIx1pCOJo" role="2ulM7a">
       <node concept="19SGf9" id="6zpIx1pCOJq" role="3Y$PkS">
@@ -709,7 +706,7 @@
           <property role="19SUeA" value="echo " />
         </node>
         <node concept="3YE7tV" id="6zpIx1pCOJG" role="19SJt6">
-          <ref role="3YE7sm" node="6qiI2N5urdM" resolve="strInput" />
+          <ref role="3YE7sm" node="6ZiO7Efq89l" resolve="strInput" />
         </node>
         <node concept="19SUe$" id="6zpIx1pCOJH" role="19SJt6">
           <property role="19SUeA" value=" &gt; file.txt" />
