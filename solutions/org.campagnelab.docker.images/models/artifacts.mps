@@ -170,7 +170,7 @@
     <node concept="VugRC" id="3d0Dghcgqgj" role="VuOVn">
       <node concept="19SGf9" id="3d0Dghcgqgk" role="Vugyn">
         <node concept="19SUe$" id="3d0Dghcgqgl" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software \&#10;&amp;&amp; wget -O /home/gobyweb/software/plugins-2.5.3-sdk.tar.gz  &quot;https://www.dropbox.com/s/w2wydzc24gvfmp5/plugins-2.5.3-SNAPSHOT-sdk.tar.gz?dl=0&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.5.3-sdk.tar.gz \&#10;&amp;&amp; rm -f /home/gobyweb/software/plugins-2.5.3-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin:/home/gobyweb/software/plugins-sdk-2.5.3-SNAPSHOT/bin&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;source /home/gobyweb/software/plugins-sdk-2.5.3-SNAPSHOT/bin/plugins-export-env&quot; &gt;&gt; $HOME/.bashrc " />
+          <property role="19SUeA" value="cd /home/gobyweb/software \&#10;&amp;&amp; wget -O /home/gobyweb/software/plugins-2.5.3-sdk.tar.gz  &quot;http://campagnelab.org/?wpdmact=process&amp;did=MTQxLmhvdGxpbms&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.5.3-sdk.tar.gz \&#10;&amp;&amp; rm -f /home/gobyweb/software/plugins-2.5.3-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin:/home/gobyweb/software/plugins-sdk-2.5.3-SNAPSHOT/bin&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;source /home/gobyweb/software/plugins-sdk-2.5.3-SNAPSHOT/bin/plugins-export-env&quot; &gt;&gt; $HOME/.bashrc " />
         </node>
       </node>
     </node>
