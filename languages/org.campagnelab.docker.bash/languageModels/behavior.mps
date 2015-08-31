@@ -428,6 +428,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2h_fDmyfOwJ">
+    <property role="3GE5qa" value="paths" />
     <ref role="13h7C2" to="r9td:2h_fDmyfOv1" resolve="DockerPath" />
     <node concept="13hLZK" id="2h_fDmyfOwK" role="13h7CW">
       <node concept="3clFbS" id="2h_fDmyfOwL" role="2VODD2">

@@ -58,8 +58,14 @@
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="WtQ9Q" id="2h_fDmyfOwB">
+    <property role="3GE5qa" value="paths" />
     <ref role="WuzLi" to="r9td:2h_fDmyfOv1" resolve="DockerPath" />
     <node concept="11bSqf" id="2h_fDmyfOwC" role="11c4hB">
       <node concept="3clFbS" id="2h_fDmyfOwD" role="2VODD2">

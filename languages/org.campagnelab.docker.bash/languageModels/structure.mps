@@ -95,6 +95,7 @@
     <property role="TrG5h" value="DockerPath" />
     <property role="34LRSv" value="path" />
     <property role="R4oN_" value="path inside a docker container" />
+    <property role="3GE5qa" value="paths" />
     <ref role="1TJDcQ" node="2h_fDmyfOuW" resolve="InteractivePath" />
     <node concept="1TJgyj" id="2h_fDmyfOv2" role="1TKVEi">
       <property role="20lmBu" value="reference" />

@@ -45,7 +45,6 @@
       <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
         <property id="6666499814681541920" name="text" index="2pMdty" />
       </concept>
-      <concept id="6666499814681299053" name="jetbrains.mps.core.xml.structure.XmlBaseElement" flags="ng" index="2pNm8J" />
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
         <property id="6999033275467544021" name="shortEmptyNotation" index="qg3DV" />
@@ -71,10 +70,6 @@
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
-      </concept>
-      <concept id="1092059087312" name="jetbrains.mps.lang.generator.structure.TemplateDeclaration" flags="ig" index="13MO4I">
-        <reference id="1168285871518" name="applicableConcept" index="3gUMe" />
-        <child id="1092060348987" name="contentNode" index="13RCb5" />
       </concept>
       <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
@@ -107,13 +102,6 @@
     <node concept="3lhOvk" id="2aKFOmifa3F" role="3lj3bC">
       <ref role="30HIoZ" to="r9td:1rhtiO0qoKD" resolve="DockerBashScript" />
       <ref role="3lhOvi" node="2aKFOmifaPi" resolve="runBashInDocker" />
-    </node>
-  </node>
-  <node concept="13MO4I" id="2aKFOmie2QI">
-    <property role="TrG5h" value="reduce_DockerBashScript" />
-    <ref role="3gUMe" to="r9td:1rhtiO0qoKD" resolve="DockerBashScript" />
-    <node concept="3rIKKV" id="2aKFOmieXTx" role="13RCb5">
-      <node concept="2pNm8J" id="2aKFOmieXTz" role="2pNm8H" />
     </node>
   </node>
   <node concept="2pMbU2" id="2aKFOmifaPi">
