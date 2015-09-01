@@ -9,12 +9,9 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.files" version="0" />
-    <use id="1f5314a5-15b8-491d-89ca-13256a5ead51" name="org.campagnelab.gobyweb.tags" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="si8h" ref="r:9e7a8e88-a6d8-4893-85c7-e98bc4f8e6c1(org.campagnelab.gobyweb.tags.structure)" />
-    <import index="p3sh" ref="r:88895bb3-ffc1-49c0-97ec-2c49d3499b4b(org.campagnelab.gobyweb.tags.behavior)" />
     <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" implicit="true" />
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -60,9 +57,6 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -149,9 +143,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
-      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -560,26 +551,21 @@
             </node>
             <node concept="2pNNFK" id="4_wVviqFOOq" role="3o6s8t">
               <property role="2pNNFO" value="arg" />
-              <node concept="2pNUuL" id="4_wVviqFOZk" role="2pNNFR">
+              <node concept="2pNUuL" id="6DdhZ$aJQt7" role="2pNNFR">
                 <property role="2pNUuO" value="value" />
-                <node concept="2pMdtt" id="4_wVviqFOZn" role="2pMdts">
-                  <property role="2pMdty" value="container name" />
-                  <node concept="17Uvod" id="4_wVviqFOZq" role="lGtFl">
+                <node concept="2pMdtt" id="6DdhZ$aJQtb" role="2pMdts">
+                  <property role="2pMdty" value="script name" />
+                  <node concept="17Uvod" id="6DdhZ$aJQ_z" role="lGtFl">
                     <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
                     <property role="2qtEX9" value="text" />
-                    <node concept="3zFVjK" id="4_wVviqFOZr" role="3zH0cK">
-                      <node concept="3clFbS" id="4_wVviqFOZs" role="2VODD2">
-                        <node concept="3clFbF" id="4_wVviqFP2a" role="3cqZAp">
-                          <node concept="2OqwBi" id="4_wVviqFQl4" role="3clFbG">
-                            <node concept="35c_gC" id="4_wVviqFQl5" role="2Oq$k0">
-                              <ref role="35c_gD" to="si8h:7bhX9q5D8Vg" resolve="RandomTag" />
+                    <node concept="3zFVjK" id="6DdhZ$aJQ_A" role="3zH0cK">
+                      <node concept="3clFbS" id="6DdhZ$aJQ_B" role="2VODD2">
+                        <node concept="3clFbF" id="6DdhZ$aJQ_H" role="3cqZAp">
+                          <node concept="2OqwBi" id="6DdhZ$aJQ_C" role="3clFbG">
+                            <node concept="3TrcHB" id="6DdhZ$aJQ_F" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                             </node>
-                            <node concept="2qgKlT" id="4_wVviqFQl6" role="2OqNvi">
-                              <ref role="37wK5l" to="p3sh:7bhX9q5D8Vp" resolve="randomCreate" />
-                              <node concept="3cmrfG" id="4_wVviqFQl7" role="37wK5m">
-                                <property role="3cmrfH" value="10" />
-                              </node>
-                            </node>
+                            <node concept="30H73N" id="6DdhZ$aJQ_G" role="2Oq$k0" />
                           </node>
                         </node>
                       </node>
@@ -603,7 +589,7 @@
               <node concept="2pNUuL" id="6qWs7gtKygC" role="2pNNFR">
                 <property role="2pNUuO" value="value" />
                 <node concept="2pMdtt" id="6qWs7gtKygF" role="2pMdts">
-                  <property role="2pMdty" value="$script}" />
+                  <property role="2pMdty" value="script command" />
                   <node concept="17Uvod" id="YbGG05ub$n" role="lGtFl">
                     <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
                     <property role="2qtEX9" value="text" />
