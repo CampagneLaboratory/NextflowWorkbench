@@ -228,6 +228,9 @@
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
+        <reference id="1171315804605" name="concept" index="2RRcyH" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
         <reference id="1176109685394" name="concept" index="3lApI3" />
@@ -2388,6 +2391,35 @@
           <node concept="10P_77" id="2h_fDmyfOIg" role="1Lm7xW" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="4_wVviqFDuU">
+    <ref role="13h7C2" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
+    <node concept="13i0hz" id="4_wVviqFDHQ" role="13h7CS">
+      <property role="TrG5h" value="dockerConfig" />
+      <node concept="3Tm1VV" id="4_wVviqFDHR" role="1B3o_S" />
+      <node concept="3clFbS" id="4_wVviqFDHS" role="3clF47">
+        <node concept="3clFbF" id="4_wVviqFDM1" role="3cqZAp">
+          <node concept="2OqwBi" id="4_wVviqFEQc" role="3clFbG">
+            <node concept="2OqwBi" id="4_wVviqFE6_" role="2Oq$k0">
+              <node concept="2OqwBi" id="4_wVviqFDNS" role="2Oq$k0">
+                <node concept="13iPFW" id="4_wVviqFDM0" role="2Oq$k0" />
+                <node concept="I4A8Y" id="4_wVviqFDX6" role="2OqNvi" />
+              </node>
+              <node concept="2RRcyG" id="4_wVviqFEaP" role="2OqNvi">
+                <ref role="2RRcyH" to="6jv6:7MTH03m4HK1" resolve="Config" />
+              </node>
+            </node>
+            <node concept="1uHKPH" id="4_wVviqFHWW" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="4_wVviqFDI2" role="3clF45">
+        <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="4_wVviqFDuV" role="13h7CW">
+      <node concept="3clFbS" id="4_wVviqFDuW" role="2VODD2" />
     </node>
   </node>
 </model>
