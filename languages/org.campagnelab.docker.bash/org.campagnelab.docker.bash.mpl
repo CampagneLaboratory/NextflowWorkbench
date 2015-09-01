@@ -20,6 +20,7 @@
         <usedLanguage>3b74e3b7-7336-414d-8899-64a293a44a07(org.campagnelab.docker.bash)</usedLanguage>
         <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
         <usedLanguage>479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</usedLanguage>
+        <usedLanguage>d4767029-894b-41e1-b76e-850baa598e5b(org.campagnelab.util.files)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -41,6 +42,7 @@
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="3b74e3b7-7336-414d-8899-64a293a44a07" fqName="org.campagnelab.docker.bash" version="-1" />
+        <language id="d4767029-894b-41e1-b76e-850baa598e5b" fqName="org.campagnelab.util.files" version="0" />
         <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="6" />
       </languageVersions>
       <mapping-priorities />

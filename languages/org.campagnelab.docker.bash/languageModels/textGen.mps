@@ -34,12 +34,8 @@
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
       <concept id="8931911391946696733" name="jetbrains.mps.lang.textGen.structure.ExtensionDeclaration" flags="in" index="9MYSb" />
-      <concept id="1237305208784" name="jetbrains.mps.lang.textGen.structure.NewLineAppendPart" flags="ng" index="l8MVK" />
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
         <child id="1237305790512" name="value" index="lb14g" />
-      </concept>
-      <concept id="1237305557638" name="jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart" flags="ng" index="la8eA">
-        <property id="1237305576108" name="value" index="lacIc" />
       </concept>
       <concept id="1237306079178" name="jetbrains.mps.lang.textGen.structure.AppendOperation" flags="nn" index="lc7rE">
         <child id="1237306115446" name="part" index="lcghm" />
@@ -86,12 +82,6 @@
     <ref role="WuzLi" to="r9td:1rhtiO0qoKD" resolve="DockerBashScript" />
     <node concept="11bSqf" id="2h_fDmykhqF" role="11c4hB">
       <node concept="3clFbS" id="2h_fDmykhqG" role="2VODD2">
-        <node concept="lc7rE" id="PffOQTbIZv" role="3cqZAp">
-          <node concept="la8eA" id="PffOQTbIZU" role="lcghm">
-            <property role="lacIc" value="#!/usr/bin/env bash" />
-          </node>
-          <node concept="l8MVK" id="PffOQTbJ7B" role="lcghm" />
-        </node>
         <node concept="lc7rE" id="2h_fDmymBa9" role="3cqZAp">
           <node concept="l9hG8" id="2h_fDmymBax" role="lcghm">
             <node concept="2OqwBi" id="2h_fDmymBxy" role="lb14g">
