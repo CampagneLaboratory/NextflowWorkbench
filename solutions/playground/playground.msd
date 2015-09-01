@@ -41,6 +41,7 @@
     <usedLanguage>0b7d8bbd-896e-495e-be60-01a0d738a649(org.campagnelab.gobyweb.plugins)</usedLanguage>
     <usedLanguage>5cf93bc1-d0da-4893-b739-63b17fe296b1(org.campagnelab.workflow.nyosh)</usedLanguage>
     <usedLanguage>3b74e3b7-7336-414d-8899-64a293a44a07(org.campagnelab.docker.bash)</usedLanguage>
+    <usedLanguage>1f5314a5-15b8-491d-89ca-13256a5ead51(org.campagnelab.gobyweb.tags)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)</usedDevKit>
@@ -76,6 +77,7 @@
     <language id="57af9408-ffae-472e-9367-5cb44434e8b3" fqName="org.campagnelab.gobyweb.interactive.users" version="0" />
     <language id="f05c05d7-dafb-4c87-b842-b836f305120f" fqName="org.campagnelab.gobyweb.monitoring" version="0" />
     <language id="0b7d8bbd-896e-495e-be60-01a0d738a649" fqName="org.campagnelab.gobyweb.plugins" version="0" />
+    <language id="1f5314a5-15b8-491d-89ca-13256a5ead51" fqName="org.campagnelab.gobyweb.tags" version="0" />
     <language id="82ffebe3-3685-4fd9-b560-0c1d348d295c" fqName="org.campagnelab.logger" version="0" />
     <language id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" fqName="org.campagnelab.nyosh.environment" version="0" />
     <language id="c6567f13-87ab-4686-8f6f-42e8228c0e27" fqName="org.campagnelab.nyosh.gstring" version="0" />
