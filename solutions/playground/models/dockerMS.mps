@@ -42,6 +42,9 @@
         <child id="331977639697571264" name="container" index="234boB" />
         <child id="1644224175107837124" name="script" index="mIfBD" />
       </concept>
+      <concept id="147628039490029687" name="org.campagnelab.docker.bash.structure.DockerBash" flags="ng" index="1QJbas">
+        <child id="147628039490030676" name="script" index="1QJbqZ" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -135,10 +138,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2EEQw1" id="xP2fmw4TV1">
-    <property role="2EEQw2" value="/usr/local/bin//docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
-  </node>
   <node concept="VuPG2" id="xP2fmw4YHs">
     <property role="TrG5h" value="ubuntu-java8" />
     <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile6232312655975113845.txt" />
@@ -479,19 +478,25 @@
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="mIf$4" id="1rhtiO0qyoS">
-    <property role="TrG5h" value="testscript" />
-    <node concept="VtuK3" id="1rhtiO0qyoT" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="VuL0v" value="mas2181" />
-      <property role="GbyUj" value="artifact-software" />
-      <property role="3zaeVo" value="true" />
-    </node>
-    <node concept="19SGf9" id="1rhtiO0qy$z" role="mIfBD">
-      <node concept="19SUe$" id="1rhtiO0qy$$" role="19SJt6">
-        <property role="19SUeA" value="plugins-submit-job --job-area \$JOB_AREA --fileset-area \$FILESET_AREA --owner manuele --plugins-dir \&#10; \$PLUGINS_ROOT_LOCATION --env-script \$PLUGINS_ROOT_LOCATION/artifacts-config/env.sh \ &#10;--repository  \$REPOSITORY_DIR  --resource SAMTOOLSenv" />
+  <node concept="1QJbas" id="2yVjOHGqI36">
+    <property role="TrG5h" value="FirstBash" />
+    <node concept="mIf$4" id="2yVjOHGqI37" role="1QJbqZ">
+      <property role="TrG5h" value="FirstBash" />
+      <node concept="VtuK3" id="2yVjOHGqI38" role="234boB">
+        <property role="VuL0s" value="latest" />
+        <property role="VuL0v" value="mas2181" />
+        <property role="GbyUj" value="artifact-software" />
+      </node>
+      <node concept="19SGf9" id="2yVjOHGqIGE" role="mIfBD">
+        <node concept="19SUe$" id="2yVjOHGqIGF" role="19SJt6">
+          <property role="19SUeA" value="plugins-submit-job --job-area \$JOB_AREA --fileset-area \$FILESET_AREA --owner manuele --plugins-dir \&#10; \$PLUGINS_ROOT_LOCATION --env-script \$PLUGINS_ROOT_LOCATION/artifacts-config/env.sh \ &#10;--repository  \$REPOSITORY_DIR  --resource SAMTOOLS" />
+        </node>
       </node>
     </node>
+  </node>
+  <node concept="2EEQw1" id="xP2fmw4TV1">
+    <property role="2EEQw2" value="/usr/local/bin//docker" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
 </model>
 
