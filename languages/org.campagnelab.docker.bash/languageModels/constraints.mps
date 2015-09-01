@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -91,6 +92,17 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <reference id="1140138128738" name="concept" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -190,6 +202,59 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="8cuIHOLzmt">
+    <ref role="1M2myG" to="r9td:1rhtiO0qoKD" resolve="DockerBashScript" />
+    <node concept="EnEH3" id="8cuIHOLzmE" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="1LLf8_" id="8cuIHOLzmI" role="1LXaQT">
+        <node concept="3clFbS" id="8cuIHOLzmJ" role="2VODD2">
+          <node concept="3clFbJ" id="8cuIHOLzn0" role="3cqZAp">
+            <node concept="3clFbS" id="8cuIHOLzn1" role="3clFbx">
+              <node concept="3clFbF" id="8cuIHOL$It" role="3cqZAp">
+                <node concept="37vLTI" id="8cuIHOLAig" role="3clFbG">
+                  <node concept="1Wqviy" id="8cuIHOLAmS" role="37vLTx" />
+                  <node concept="2OqwBi" id="8cuIHOL_HF" role="37vLTJ">
+                    <node concept="1PxgMI" id="8cuIHOL_EQ" role="2Oq$k0">
+                      <ref role="1PxNhF" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
+                      <node concept="2OqwBi" id="8cuIHOL$LG" role="1PxMeX">
+                        <node concept="EsrRn" id="8cuIHOL$Is" role="2Oq$k0" />
+                        <node concept="1mfA1w" id="8cuIHOL_lu" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="8cuIHOLA2W" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="8cuIHOL$_L" role="3clFbw">
+              <node concept="2OqwBi" id="8cuIHOLzrq" role="2Oq$k0">
+                <node concept="EsrRn" id="8cuIHOLznp" role="2Oq$k0" />
+                <node concept="1mfA1w" id="8cuIHOL$iU" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="8cuIHOL$Gj" role="2OqNvi">
+                <node concept="chp4Y" id="8cuIHOL$Ha" role="cj9EA">
+                  <ref role="cht4Q" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="8cuIHOLArl" role="3cqZAp">
+            <node concept="37vLTI" id="8cuIHOLBt5" role="3clFbG">
+              <node concept="1Wqviy" id="8cuIHOLBxf" role="37vLTx" />
+              <node concept="2OqwBi" id="8cuIHOLAvV" role="37vLTJ">
+                <node concept="EsrRn" id="8cuIHOLArj" role="2Oq$k0" />
+                <node concept="3TrcHB" id="8cuIHOLAMV" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
             </node>

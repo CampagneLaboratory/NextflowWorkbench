@@ -948,5 +948,11 @@
       <node concept="3JiINr" id="2h_fDmyfOPE" role="OY2wv" />
     </node>
   </node>
+  <node concept="24kQdi" id="8cuIHOGcL$">
+    <ref role="1XX52x" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
+    <node concept="3F1sOY" id="8cuIHOLzmo" role="2wV5jI">
+      <ref role="1NtTu8" to="r9td:8cuIHOGcLk" />
+    </node>
+  </node>
 </model>
 

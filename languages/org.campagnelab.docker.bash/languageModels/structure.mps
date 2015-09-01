@@ -9,6 +9,7 @@
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -48,9 +49,8 @@
   <node concept="1TIwiD" id="1rhtiO0qoKD">
     <property role="TrG5h" value="DockerBashScript" />
     <property role="R4oN_" value="a bash script to execute inside a docker container" />
-    <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="bash in docker" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="34LRSv" value="bash script" />
+    <ref role="1TJDcQ" to="iowz:6tX5nBTaD$x" resolve="Script" />
     <node concept="1TJgyj" id="1rhtiO0qoN4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="script" />
@@ -104,6 +104,26 @@
     </node>
     <node concept="PrWs8" id="2h_fDmyfOv3" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="8cuIHOGcxR">
+    <property role="TrG5h" value="DockerBash" />
+    <property role="34LRSv" value="run bash in docker" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="8cuIHOGcLk" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="script" />
+      <ref role="20lvS9" node="1rhtiO0qoKD" resolve="DockerBashScript" />
+    </node>
+    <node concept="1TJgyj" id="8cuIHOGcLo" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="config" />
+      <ref role="20lvS9" to="6jv6:7MTH03m4HK1" resolve="Config" />
+    </node>
+    <node concept="PrWs8" id="8cuIHOGf5W" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
