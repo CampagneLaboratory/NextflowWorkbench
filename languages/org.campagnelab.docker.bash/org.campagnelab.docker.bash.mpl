@@ -57,6 +57,7 @@
   <dependencies>
     <dependency reexport="true">25281c03-4a7c-4b57-9221-24a10fc36ef5(org.campagnelab.docker)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
+    <dependency reexport="false">1f5314a5-15b8-491d-89ca-13256a5ead51(org.campagnelab.gobyweb.tags)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>c1ba4037-e4db-47d8-8b61-b3c805b648f2(org.campagnelab.ui)</usedLanguage>
