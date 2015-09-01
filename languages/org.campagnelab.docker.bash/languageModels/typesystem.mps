@@ -9,6 +9,7 @@
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" />
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
     <import index="k3t9" ref="r:df8b021b-a7f8-4655-bf02-9abcab9131bf(org.campagnelab.docker.typesystem)" />
+    <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -82,10 +83,17 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
+        <reference id="1171315804605" name="concept" index="2RRcyH" />
+      </concept>
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -256,6 +264,51 @@
     <node concept="1YaCAy" id="2h_fDmyfOJf" role="1YuTPh">
       <property role="TrG5h" value="interactivePath" />
       <ref role="1YaFvo" to="r9td:2h_fDmyfOuW" resolve="InteractivePath" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2yVjOHGue$z">
+    <property role="TrG5h" value="CheckDockerConfigExist" />
+    <node concept="3clFbS" id="2yVjOHGue$$" role="18ibNy">
+      <node concept="3clFbJ" id="2yVjOHGueKk" role="3cqZAp">
+        <node concept="3clFbS" id="2yVjOHGueKl" role="3clFbx">
+          <node concept="2MkqsV" id="2yVjOHGum0e" role="3cqZAp">
+            <node concept="Xl_RD" id="2yVjOHGum0t" role="2MkJ7o">
+              <property role="Xl_RC" value="No Docker Config found in the model." />
+            </node>
+            <node concept="2OqwBi" id="4_wVviqBVNn" role="2OEOjV">
+              <node concept="1YBJjd" id="2yVjOHGum0D" role="2Oq$k0">
+                <ref role="1YBMHb" node="2yVjOHGueC4" resolve="dockerBash" />
+              </node>
+              <node concept="3TrEf2" id="4_wVviqC5UF" role="2OqNvi">
+                <ref role="3Tt5mk" to="r9td:8cuIHOGcLk" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbC" id="2yVjOHGulXy" role="3clFbw">
+          <node concept="3cmrfG" id="2yVjOHGulZH" role="3uHU7w">
+            <property role="3cmrfH" value="0" />
+          </node>
+          <node concept="2OqwBi" id="2yVjOHGugC8" role="3uHU7B">
+            <node concept="2OqwBi" id="2yVjOHGufSs" role="2Oq$k0">
+              <node concept="2OqwBi" id="2yVjOHGuf6m" role="2Oq$k0">
+                <node concept="1YBJjd" id="2yVjOHGueKz" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2yVjOHGueC4" resolve="dockerBash" />
+                </node>
+                <node concept="I4A8Y" id="2yVjOHGufIS" role="2OqNvi" />
+              </node>
+              <node concept="2RRcyG" id="4_wVviqDllF" role="2OqNvi">
+                <ref role="2RRcyH" to="6jv6:7MTH03m4HK1" resolve="Config" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="2yVjOHGulCk" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2yVjOHGueC4" role="1YuTPh">
+      <property role="TrG5h" value="dockerBash" />
+      <ref role="1YaFvo" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
     </node>
   </node>
 </model>
