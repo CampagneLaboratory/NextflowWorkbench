@@ -159,7 +159,7 @@
           <node concept="2pNUuL" id="53yaZUOwk4r" role="2pNNFR">
             <property role="2pNUuO" value="message" />
             <node concept="2pMdtt" id="53yaZUOwk4u" role="2pMdts">
-              <property role="2pMdty" value="Executing bash script in docker}" />
+              <property role="2pMdty" value="Executing bash script in docker" />
             </node>
           </node>
         </node>
