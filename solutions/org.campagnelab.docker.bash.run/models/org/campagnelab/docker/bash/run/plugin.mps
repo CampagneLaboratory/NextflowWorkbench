@@ -103,16 +103,8 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
-        <child id="1164879758292" name="body" index="SfCbr" />
-        <child id="1164903496223" name="catchClause" index="TEbGg" />
-      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
-      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
-        <child id="1164903359218" name="catchBody" index="TDEfX" />
-        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -978,7 +970,7 @@
                 <node concept="2ShNRf" id="7MQ4nb0hbbx" role="37wK5m">
                   <node concept="1pGfFk" id="7MQ4nb0hcGM" role="2ShVmc">
                     <ref role="37wK5l" to="jrbx:~MPSProject.&lt;init&gt;(com.intellij.openapi.project.Project)" resolve="MPSProject" />
-                    <node concept="21ER0p" id="7MQ4nb0hdpB" role="37wK5m" />
+                    <node concept="21ER0p" id="6DdhZ$b8EZ1" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -1011,73 +1003,56 @@
                   </node>
                   <node concept="3clFbJ" id="1qn_o2sPaAI" role="3cqZAp">
                     <node concept="3clFbS" id="1qn_o2sPaAK" role="3clFbx">
-                      <node concept="SfApY" id="5FbWHdVWKHO" role="3cqZAp">
-                        <node concept="3clFbS" id="5FbWHdVWKHQ" role="SfCbr">
-                          <node concept="3cpWs8" id="3Ymm378BEoc" role="3cqZAp">
-                            <node concept="3cpWsn" id="3Ymm378BEod" role="3cpWs9">
-                              <property role="TrG5h" value="relativePathHelper" />
-                              <node concept="3uibUv" id="3Ymm378BEoe" role="1tU5fm">
-                                <ref role="3uigEE" to="o3n2:5iAPpylXsc4" resolve="RelativePathHelper" />
+                      <node concept="3cpWs8" id="3Ymm378BEoc" role="3cqZAp">
+                        <node concept="3cpWsn" id="3Ymm378BEod" role="3cpWs9">
+                          <property role="TrG5h" value="relativePathHelper" />
+                          <node concept="3uibUv" id="3Ymm378BEoe" role="1tU5fm">
+                            <ref role="3uigEE" to="o3n2:5iAPpylXsc4" resolve="RelativePathHelper" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="3Ymm378BEoi" role="3cqZAp">
+                        <node concept="37vLTI" id="3Ymm378BEoj" role="3clFbG">
+                          <node concept="37vLTw" id="3Ymm378BEok" role="37vLTJ">
+                            <ref role="3cqZAo" node="3Ymm378BEod" resolve="relativePathHelper" />
+                          </node>
+                          <node concept="2OqwBi" id="3Ymm378BEol" role="37vLTx">
+                            <node concept="liA8E" id="3Ymm378BEon" role="2OqNvi">
+                              <ref role="37wK5l" to="o3n2:1AfwOXhJadN" resolve="getRelativePathHelper" />
+                              <node concept="2OqwBi" id="6qTMo28anHY" role="37wK5m">
+                                <node concept="37vLTw" id="6qTMo28anmJ" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1KUoCipvy8V" resolve="node" />
+                                </node>
+                                <node concept="I4A8Y" id="6qTMo28aqCw" role="2OqNvi" />
                               </node>
                             </node>
-                          </node>
-                          <node concept="3clFbF" id="3Ymm378BEoi" role="3cqZAp">
-                            <node concept="37vLTI" id="3Ymm378BEoj" role="3clFbG">
-                              <node concept="37vLTw" id="3Ymm378BEok" role="37vLTJ">
-                                <ref role="3cqZAo" node="3Ymm378BEod" resolve="relativePathHelper" />
-                              </node>
-                              <node concept="2OqwBi" id="3Ymm378BEol" role="37vLTx">
-                                <node concept="liA8E" id="3Ymm378BEon" role="2OqNvi">
-                                  <ref role="37wK5l" to="o3n2:1AfwOXhJadN" resolve="getRelativePathHelper" />
-                                  <node concept="2OqwBi" id="6qTMo28anHY" role="37wK5m">
-                                    <node concept="37vLTw" id="6qTMo28anmJ" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="1KUoCipvy8V" resolve="node" />
-                                    </node>
-                                    <node concept="I4A8Y" id="6qTMo28aqCw" role="2OqNvi" />
-                                  </node>
-                                </node>
-                                <node concept="2YIFZM" id="6qTMo28amY$" role="2Oq$k0">
-                                  <ref role="37wK5l" to="o3n2:4jjtc7WZTjd" resolve="defaultContext" />
-                                  <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbF" id="6qTMo28asyy" role="3cqZAp">
-                            <node concept="37vLTI" id="6qTMo28atbE" role="3clFbG">
-                              <node concept="37vLTw" id="6qTMo28asyw" role="37vLTJ">
-                                <ref role="3cqZAo" node="6qTMo289E3h" resolve="scriptPath" />
-                              </node>
-                              <node concept="3K4zz7" id="6qTMo28awEe" role="37vLTx">
-                                <node concept="10Nm6u" id="6qTMo28awEf" role="3K4E3e" />
-                                <node concept="2OqwBi" id="6qTMo28awEg" role="3K4GZi">
-                                  <node concept="37vLTw" id="6qTMo28awEh" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="3Ymm378BEod" resolve="relativePathHelper" />
-                                  </node>
-                                  <node concept="liA8E" id="6qTMo28awEi" role="2OqNvi">
-                                    <ref role="37wK5l" to="o3n2:1AfwOXhJahx" resolve="getBasePath" />
-                                  </node>
-                                </node>
-                                <node concept="3clFbC" id="6qTMo28awEj" role="3K4Cdx">
-                                  <node concept="10Nm6u" id="6qTMo28awEk" role="3uHU7w" />
-                                  <node concept="37vLTw" id="6qTMo28awEl" role="3uHU7B">
-                                    <ref role="3cqZAo" node="3Ymm378BEod" resolve="relativePathHelper" />
-                                  </node>
-                                </node>
-                              </node>
+                            <node concept="2YIFZM" id="6qTMo28amY$" role="2Oq$k0">
+                              <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
+                              <ref role="37wK5l" to="o3n2:4jjtc7WZTjd" resolve="defaultContext" />
                             </node>
                           </node>
                         </node>
-                        <node concept="TDmWw" id="5FbWHdVWKHR" role="TEbGg">
-                          <node concept="3cpWsn" id="5FbWHdVWKHT" role="TDEfY">
-                            <property role="TrG5h" value="e" />
-                            <node concept="3uibUv" id="5FbWHdVWNGE" role="1tU5fm">
-                              <ref role="3uigEE" to="e2lb:~AssertionError" resolve="AssertionError" />
-                            </node>
+                      </node>
+                      <node concept="3clFbF" id="6qTMo28asyy" role="3cqZAp">
+                        <node concept="37vLTI" id="6qTMo28atbE" role="3clFbG">
+                          <node concept="37vLTw" id="6qTMo28asyw" role="37vLTJ">
+                            <ref role="3cqZAo" node="6qTMo289E3h" resolve="scriptPath" />
                           </node>
-                          <node concept="3clFbS" id="5FbWHdVWKHX" role="TDEfX">
-                            <node concept="3cpWs6" id="5FbWHdWjOmM" role="3cqZAp">
-                              <node concept="10Nm6u" id="5FbWHdWjOmZ" role="3cqZAk" />
+                          <node concept="3K4zz7" id="6qTMo28awEe" role="37vLTx">
+                            <node concept="10Nm6u" id="6qTMo28awEf" role="3K4E3e" />
+                            <node concept="2OqwBi" id="6qTMo28awEg" role="3K4GZi">
+                              <node concept="37vLTw" id="6qTMo28awEh" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3Ymm378BEod" resolve="relativePathHelper" />
+                              </node>
+                              <node concept="liA8E" id="6qTMo28awEi" role="2OqNvi">
+                                <ref role="37wK5l" to="o3n2:1AfwOXhJahx" resolve="getBasePath" />
+                              </node>
+                            </node>
+                            <node concept="3clFbC" id="6qTMo28awEj" role="3K4Cdx">
+                              <node concept="10Nm6u" id="6qTMo28awEk" role="3uHU7w" />
+                              <node concept="37vLTw" id="6qTMo28awEl" role="3uHU7B">
+                                <ref role="3cqZAo" node="3Ymm378BEod" resolve="relativePathHelper" />
+                              </node>
                             </node>
                           </node>
                         </node>

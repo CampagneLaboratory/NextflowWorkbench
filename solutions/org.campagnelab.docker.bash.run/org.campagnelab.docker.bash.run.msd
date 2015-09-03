@@ -43,7 +43,6 @@
     <usedLanguage>982eb8df-2c96-4bd7-9963-11712ea622e5(jetbrains.mps.lang.resources)</usedLanguage>
     <usedLanguage>3b74e3b7-7336-414d-8899-64a293a44a07(org.campagnelab.docker.bash)</usedLanguage>
     <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
-    <usedLanguage>c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)</usedLanguage>
   </usedLanguages>
   <languageVersions>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
