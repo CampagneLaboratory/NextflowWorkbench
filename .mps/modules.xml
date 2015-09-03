@@ -20,6 +20,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.docker.actions/org.campagnelab.docker.actions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.docker.bash.run/org.campagnelab.docker.bash.run.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.docker.images/org.campagnelab.docker.images.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.util.execution/org.campagnelab.util.execution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.workflow.Samples/org.campagnelab.workflow.Samples.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.workflow.run/org.campagnelab.workflow.run.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />
