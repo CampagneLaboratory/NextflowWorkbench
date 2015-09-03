@@ -600,20 +600,15 @@
                             <node concept="Xl_RD" id="4_wVviqInSn" role="3uHU7w">
                               <property role="Xl_RC" value="&amp;quot;" />
                             </node>
-                            <node concept="3cpWs3" id="YbGG05urnC" role="3uHU7B">
-                              <node concept="3cpWs3" id="4_wVviqImRG" role="3uHU7B">
-                                <node concept="Xl_RD" id="4_wVviqIlBv" role="3uHU7B">
-                                  <property role="Xl_RC" value="/bin/bash -c &amp;quot;" />
-                                </node>
-                                <node concept="2OqwBi" id="YbGG05ugXP" role="3uHU7w">
-                                  <node concept="30H73N" id="YbGG05ug_1" role="2Oq$k0" />
-                                  <node concept="3TrcHB" id="YbGG05urc2" role="2OqNvi">
-                                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                  </node>
-                                </node>
+                            <node concept="3cpWs3" id="4_wVviqImRG" role="3uHU7B">
+                              <node concept="Xl_RD" id="4_wVviqIlBv" role="3uHU7B">
+                                <property role="Xl_RC" value="/bin/bash -c &amp;quot;" />
                               </node>
-                              <node concept="Xl_RD" id="YbGG05urtE" role="3uHU7w">
-                                <property role="Xl_RC" value=".sh" />
+                              <node concept="2OqwBi" id="YbGG05ugXP" role="3uHU7w">
+                                <node concept="30H73N" id="YbGG05ug_1" role="2Oq$k0" />
+                                <node concept="2qgKlT" id="6qTMo28aOMv" role="2OqNvi">
+                                  <ref role="37wK5l" to="cb06:6qTMo28aK0q" resolve="outputFile" />
+                                </node>
                               </node>
                             </node>
                           </node>

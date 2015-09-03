@@ -69,8 +69,6 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="0" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="a21a7294-c126-4f63-8335-8fecd8c28c7e" fqName="org.campagnelab.NYoSh" version="0" />
-    <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" fqName="org.campagnelab.docker" version="0" />
-    <language id="3b74e3b7-7336-414d-8899-64a293a44a07" fqName="org.campagnelab.docker.bash" version="-1" />
     <language id="adfd00cb-58d7-4094-bca8-f941a491e04f" fqName="org.campagnelab.gobyweb" version="0" />
     <language id="27f97fd8-caeb-43a0-a73f-f8ac957f3a17" fqName="org.campagnelab.gobyweb.environment" version="0" />
     <language id="a8fb88b0-7e9f-478c-aab4-a1b076131192" fqName="org.campagnelab.gobyweb.interactive" version="0" />
@@ -88,7 +86,6 @@
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="6" />
     <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" fqName="org.campagnelab.workflow.configuration" version="0" />
     <language id="316e8289-cb69-4927-8bfe-edde5cd32037" fqName="org.campagnelab.workflow.languages" version="0" />
-    <language id="5cf93bc1-d0da-4893-b739-63b17fe296b1" fqName="org.campagnelab.workflow.nyosh" version="-1" />
   </languageVersions>
 </solution>
 
