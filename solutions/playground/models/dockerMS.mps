@@ -499,5 +499,22 @@
     <property role="2EEQw2" value="/usr/local/bin//docker" />
     <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
+  <node concept="1QJbas" id="10rnQzwRthX">
+    <property role="TrG5h" value="UseArtifact" />
+    <node concept="mIf$4" id="10rnQzwRthY" role="1QJbqZ">
+      <property role="TrG5h" value="UseArtifact" />
+      <node concept="VtuK3" id="10rnQzwRthZ" role="234boB">
+        <property role="VuL0s" value="latest" />
+        <property role="VuL0v" value="mas2181" />
+        <property role="GbyUj" value="artifact-software" />
+        <property role="3zaeVo" value="true" />
+      </node>
+      <node concept="19SGf9" id="10rnQzwRti0" role="mIfBD">
+        <node concept="19SUe$" id="10rnQzwRti1" role="19SJt6">
+          <property role="19SUeA" value="$REPOSITORY_DIR/artifacts/SAMTOOLS/BINARIES/0.1.18.1/samtools " />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
