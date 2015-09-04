@@ -383,8 +383,8 @@
   </registry>
   <node concept="2DaZZR" id="6DdhZ$aKDhB" />
   <node concept="3wDVqS" id="6DdhZ$aLpJB">
-    <property role="TrG5h" value="BashInDocker" />
-    <ref role="3wDP8j" node="5gyVhZ17Jm9" resolve="BashInDocker" />
+    <property role="TrG5h" value="Bash In Docker" />
+    <ref role="3wDP8j" node="5gyVhZ17Jm9" resolve="Bash In Docker" />
     <node concept="yHkDC" id="6efZaUfTws1" role="yHkDi">
       <property role="TrG5h" value="myNode" />
       <node concept="2ShNRf" id="4$GDkRnU$jn" role="33vP2m">
@@ -769,7 +769,7 @@
   </node>
   <node concept="3wDVqV" id="5gyVhZ17Jm9">
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="BashInDocker" />
+    <property role="TrG5h" value="Bash In Docker" />
     <node concept="1QGGSu" id="5gyVhZ17Jma" role="1bitO_">
       <node concept="10M0yZ" id="4rA9Dd$Pgjt" role="3xaMm5">
         <ref role="1PxDUh" to="zxm0:~AllIcons$RunConfigurations" resolve="AllIcons.RunConfigurations" />
@@ -780,7 +780,7 @@
   <node concept="2w4XYM" id="5gyVhZ17JmN">
     <property role="3GE5qa" value="" />
     <node concept="yHkHH" id="6DdhZ$aLUh2" role="2w4Pho">
-      <ref role="yHkHG" node="6DdhZ$aLpJB" resolve="BashInDocker" />
+      <ref role="yHkHG" node="6DdhZ$aLpJB" resolve="Bash In Docker" />
     </node>
     <node concept="2w4N4h" id="3I_N3tlyK_c" role="2w4N4r">
       <node concept="2w4N5O" id="3I_N3tlyK_d" role="30xZXv">
@@ -821,11 +821,11 @@
             <node concept="3cpWsn" id="3I_N3tlyLvn" role="3cpWs9">
               <property role="TrG5h" value="configuration" />
               <node concept="yHkHH" id="6DdhZ$aLUp5" role="1tU5fm">
-                <ref role="yHkHG" node="6DdhZ$aLpJB" resolve="BashInDocker" />
+                <ref role="yHkHG" node="6DdhZ$aLpJB" resolve="Bash In Docker" />
               </node>
               <node concept="2ShNRf" id="3I_N3tlyLvp" role="33vP2m">
                 <node concept="30w_07" id="3I_N3tlyLvq" role="2ShVmc">
-                  <ref role="30w_06" node="6DdhZ$aLpJB" resolve="BashInDocker" />
+                  <ref role="30w_06" node="6DdhZ$aLpJB" resolve="Bash In Docker" />
                   <node concept="3cpWs3" id="3I_N3tlyLvr" role="uV2A8">
                     <node concept="Xl_RD" id="3I_N3tlyLvs" role="3uHU7B">
                       <property role="Xl_RC" value="bash script " />
@@ -874,7 +874,7 @@
   <node concept="RBi3j" id="6DdhZ$aPpvl">
     <property role="35f5FB" value="true" />
     <property role="3gLNDv" value="myRunConfiguration" />
-    <ref role="yIonz" node="6DdhZ$aLpJB" resolve="BashInDocker" />
+    <ref role="yIonz" node="6DdhZ$aLpJB" resolve="Bash In Docker" />
     <node concept="yYvg6" id="5gyVhZ17Jmc" role="yYvgT">
       <ref role="yYvg7" to="eva:4KDfkUwMkVJ" resolve="MakeNodePointers" />
       <node concept="2ShNRf" id="5gyVhZ17Jmd" role="1ZwhtC">
