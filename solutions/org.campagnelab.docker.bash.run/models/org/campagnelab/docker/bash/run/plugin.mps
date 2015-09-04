@@ -1287,7 +1287,7 @@
             <node concept="2LYoGL" id="6LeMeIjEHqb" role="2LYoGw">
               <ref role="2LYoGK" to="5wms:79W0uRGhPJn" resolve="targetName" />
               <node concept="Xl_RD" id="6LeMeIjEHqc" role="2LYoGN">
-                <property role="Xl_RC" value="run" />
+                <property role="Xl_RC" value="run clean" />
               </node>
             </node>
           </node>
