@@ -36,7 +36,10 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
   public static Object propertyMacro_GetPropertyValue_1120185470126962968(final PropertyMacroContext _context) {
-    return "/bin/bash -c &quot;" + DockerBash_Behavior.call_outputFile_7402169016437637146(_context.getNode()) + "&quot;";
+    return "'" + DockerBash_Behavior.call_outputFile_7402169016437637146(_context.getNode()) + "'";
+  }
+  public static Object propertyMacro_GetPropertyValue_3578269529271704449(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
   public static Object propertyMacro_GetPropertyValue_1311266352921119148(final PropertyMacroContext _context) {
     return DockerBash_Behavior.call_outputBuildFileNoExt_1311266352921616321(_context.getNode());
@@ -48,10 +51,10 @@ public class QueriesGenerated {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x3b74e3b77336414dL, 0x889964a293a44a07L, 0x20c7aeb74b0c877L, 0x20c7aeb74b0cc54L, "script"));
   }
   public static Iterable<SNode> sourceNodesQuery_5287487597357416361(final SourceSubstituteMacroNodesContext _context) {
-    return Sequence.fromIterable(Sequence.fromArray(SPropertyOperations.getString(DockerBash_Behavior.call_dockerConfig_5287487597355899766(_context.getNode()), MetaAdapterFactory.getProperty(0x25281c034a7c4b57L, 0x922124a10fc36ef5L, 0x7cb9b400d612dc01L, 0x7cb9b400d62a2d93L, "options")).split(" --"))).select(new ISelector<String, SNode>() {
+    return Sequence.fromIterable(Sequence.fromArray(SPropertyOperations.getString(DockerBash_Behavior.call_dockerConfig_5287487597355899766(_context.getNode()), MetaAdapterFactory.getProperty(0x25281c034a7c4b57L, 0x922124a10fc36ef5L, 0x7cb9b400d612dc01L, 0x7cb9b400d62a2d93L, "options")).split(" -"))).select(new ISelector<String, SNode>() {
       public SNode select(String it) {
         SNode option = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, "jetbrains.mps.baseLanguage.structure.StringLiteral")));
-        SPropertyOperations.set(option, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), (it.startsWith("--") ? "" : "--"));
+        SPropertyOperations.set(option, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), (it.startsWith("--") ? "" : "-"));
         SPropertyOperations.set(option, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), SPropertyOperations.getString_def(option, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "") + it);
         return option;
       }

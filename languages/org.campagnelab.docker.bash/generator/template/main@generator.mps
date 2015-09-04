@@ -12,9 +12,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" implicit="true" />
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -84,6 +84,9 @@
       <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
         <property id="6666499814681541920" name="text" index="2pMdty" />
       </concept>
+      <concept id="6666499814681299064" name="jetbrains.mps.core.xml.structure.XmlComment" flags="nn" index="2pNm8U">
+        <child id="1622293396949036151" name="lines" index="3o66t8" />
+      </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
         <property id="6999033275467544021" name="shortEmptyNotation" index="qg3DV" />
@@ -93,6 +96,9 @@
       <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
         <property id="6666499814681447926" name="attrName" index="2pNUuO" />
         <child id="6666499814681541918" name="value" index="2pMdts" />
+      </concept>
+      <concept id="1622293396949036126" name="jetbrains.mps.core.xml.structure.XmlCommentLine" flags="nn" index="3o66tx">
+        <property id="1622293396949036127" name="text" index="3o66tw" />
       </concept>
       <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG" />
       <concept id="6786756355279841993" name="jetbrains.mps.core.xml.structure.XmlDocument" flags="ng" index="3rIKKV">
@@ -443,7 +449,7 @@
                             <node concept="liA8E" id="4_wVviqLtS6" role="2OqNvi">
                               <ref role="37wK5l" to="e2lb:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
                               <node concept="Xl_RD" id="4_wVviqLu3c" role="37wK5m">
-                                <property role="Xl_RC" value=" --" />
+                                <property role="Xl_RC" value=" -" />
                               </node>
                             </node>
                           </node>
@@ -467,30 +473,28 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3clFbF" id="4_wVviqMSqB" role="3cqZAp">
-                                <node concept="37vLTI" id="4_wVviqMUeW" role="3clFbG">
-                                  <node concept="2OqwBi" id="4_wVviqMSDP" role="37vLTJ">
-                                    <node concept="37vLTw" id="4_wVviqMSq_" role="2Oq$k0">
+                              <node concept="3clFbF" id="36C$iQETvgU" role="3cqZAp">
+                                <node concept="37vLTI" id="36C$iQETvgV" role="3clFbG">
+                                  <node concept="2OqwBi" id="36C$iQETvgW" role="37vLTJ">
+                                    <node concept="37vLTw" id="36C$iQETvgX" role="2Oq$k0">
                                       <ref role="3cqZAo" node="4_wVviqLEr2" resolve="option" />
                                     </node>
-                                    <node concept="3TrcHB" id="4_wVviqMTR8" role="2OqNvi">
+                                    <node concept="3TrcHB" id="36C$iQETvgY" role="2OqNvi">
                                       <ref role="3TsBF5" to="tpee:f$Xl_Oh" resolve="value" />
                                     </node>
                                   </node>
-                                  <node concept="3K4zz7" id="4_wVviqMVbp" role="37vLTx">
-                                    <node concept="Xl_RD" id="4_wVviqMY3U" role="3K4E3e">
-                                      <property role="Xl_RC" value="" />
+                                  <node concept="3K4zz7" id="36C$iQETvgZ" role="37vLTx">
+                                    <node concept="Xl_RD" id="36C$iQETvh0" role="3K4E3e" />
+                                    <node concept="Xl_RD" id="36C$iQETvh1" role="3K4GZi">
+                                      <property role="Xl_RC" value="-" />
                                     </node>
-                                    <node concept="Xl_RD" id="4_wVviqMYpp" role="3K4GZi">
-                                      <property role="Xl_RC" value="--" />
-                                    </node>
-                                    <node concept="2OqwBi" id="4_wVviqMVMy" role="3K4Cdx">
-                                      <node concept="37vLTw" id="4_wVviqMVvJ" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="36C$iQETvh7" role="3K4Cdx">
+                                      <node concept="37vLTw" id="36C$iQETvh8" role="2Oq$k0">
                                         <ref role="3cqZAo" node="4_wVviqL$yY" resolve="it" />
                                       </node>
-                                      <node concept="liA8E" id="4_wVviqMXaj" role="2OqNvi">
+                                      <node concept="liA8E" id="36C$iQETvh9" role="2OqNvi">
                                         <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-                                        <node concept="Xl_RD" id="4_wVviqMXw$" role="37wK5m">
+                                        <node concept="Xl_RD" id="36C$iQETvha" role="37wK5m">
                                           <property role="Xl_RC" value="--" />
                                         </node>
                                       </node>
@@ -533,6 +537,7 @@
             </node>
             <node concept="2pNNFK" id="4Orz$oyvKgo" role="3o6s8t">
               <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
               <node concept="2pNUuL" id="4Orz$oyvKgB" role="2pNNFR">
                 <property role="2pNUuO" value="value" />
                 <node concept="2pMdtt" id="4Orz$oyvKgD" role="2pMdts">
@@ -540,8 +545,89 @@
                 </node>
               </node>
             </node>
+            <node concept="2pNNFK" id="36C$iQEOtI7" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="36C$iQEOtI8" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="36C$iQEOtI9" role="2pMdts">
+                  <property role="2pMdty" value="-i" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNm8U" id="36C$iQEPiXh" role="3o6s8t">
+              <node concept="3o66tx" id="36C$iQEPjoj" role="3o66t8">
+                <property role="3o66tw" value="mount the working dir as volume in case we need to refer local files" />
+              </node>
+            </node>
+            <node concept="2pNNFK" id="36C$iQEPfgU" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="36C$iQEPfFM" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="36C$iQEPfFP" role="2pMdts">
+                  <property role="2pMdty" value="-v" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="36C$iQEPgQl" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="36C$iQEPgQm" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="36C$iQEPgQn" role="2pMdts">
+                  <property role="2pMdty" value="${working.dir}:${working.dir}" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="36C$iQEPn1E" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="36C$iQEPn1F" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="36C$iQEPn1G" role="2pMdts">
+                  <property role="2pMdty" value="-w" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="36C$iQEPn1H" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="36C$iQEPn1I" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="36C$iQEPn1J" role="2pMdts">
+                  <property role="2pMdty" value="${working.dir}" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="36C$iQEPnwF" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="36C$iQEPnwG" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="36C$iQEPnwH" role="2pMdts">
+                  <property role="2pMdty" value="--entrypoint" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="36C$iQEPnwI" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="36C$iQEPnwJ" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="36C$iQEPnwK" role="2pMdts">
+                  <property role="2pMdty" value="/bin/bash" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNm8U" id="36C$iQEPo6E" role="3o6s8t">
+              <node concept="3o66tx" id="36C$iQEPoy8" role="3o66t8">
+                <property role="3o66tw" value="engine options go here" />
+              </node>
+            </node>
             <node concept="2pNNFK" id="4_wVviqLfB_" role="3o6s8t">
               <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
               <node concept="2pNUuL" id="4_wVviqLfBA" role="2pNNFR">
                 <property role="2pNUuO" value="value" />
                 <node concept="2pMdtt" id="4_wVviqLfUz" role="2pMdts">
@@ -551,10 +637,11 @@
             </node>
             <node concept="2pNNFK" id="4_wVviqFOOq" role="3o6s8t">
               <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
               <node concept="2pNUuL" id="6DdhZ$aJQt7" role="2pNNFR">
                 <property role="2pNUuO" value="value" />
                 <node concept="2pMdtt" id="6DdhZ$aJQtb" role="2pMdts">
-                  <property role="2pMdty" value="script name" />
+                  <property role="2pMdty" value="container name" />
                   <node concept="17Uvod" id="6DdhZ$aJQ_z" role="lGtFl">
                     <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
                     <property role="2qtEX9" value="text" />
@@ -576,10 +663,41 @@
             </node>
             <node concept="2pNNFK" id="4_wVviqG0lG" role="3o6s8t">
               <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
               <node concept="2pNUuL" id="4_wVviqG0lH" role="2pNNFR">
                 <property role="2pNUuO" value="value" />
                 <node concept="2pMdtt" id="4_wVviqG0lI" role="2pMdts">
                   <property role="2pMdty" value="${docker.image}" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="36C$iQEQCfT" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="36C$iQEQCfU" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="36C$iQEQCfV" role="2pMdts">
+                  <property role="2pMdty" value="-c" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="36C$iQEQDht" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="36C$iQEQDhu" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="36C$iQEQDhv" role="2pMdts">
+                  <property role="2pMdty" value="/bin/bash" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="36C$iQEQDHl" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="36C$iQEQDHm" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="36C$iQEQDHn" role="2pMdts">
+                  <property role="2pMdty" value="-ue" />
                 </node>
               </node>
             </node>
@@ -589,7 +707,7 @@
               <node concept="2pNUuL" id="6qWs7gtKygC" role="2pNNFR">
                 <property role="2pNUuO" value="value" />
                 <node concept="2pMdtt" id="6qWs7gtKygF" role="2pMdts">
-                  <property role="2pMdty" value="script command" />
+                  <property role="2pMdty" value="bash script" />
                   <node concept="17Uvod" id="YbGG05ub$n" role="lGtFl">
                     <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
                     <property role="2qtEX9" value="text" />
@@ -598,11 +716,11 @@
                         <node concept="3clFbF" id="4_wVviqIlBw" role="3cqZAp">
                           <node concept="3cpWs3" id="4_wVviqInJt" role="3clFbG">
                             <node concept="Xl_RD" id="4_wVviqInSn" role="3uHU7w">
-                              <property role="Xl_RC" value="&amp;quot;" />
+                              <property role="Xl_RC" value="'" />
                             </node>
                             <node concept="3cpWs3" id="4_wVviqImRG" role="3uHU7B">
                               <node concept="Xl_RD" id="4_wVviqIlBv" role="3uHU7B">
-                                <property role="Xl_RC" value="/bin/bash -c &amp;quot;" />
+                                <property role="Xl_RC" value="'" />
                               </node>
                               <node concept="2OqwBi" id="YbGG05ugXP" role="3uHU7w">
                                 <node concept="30H73N" id="YbGG05ug_1" role="2Oq$k0" />
@@ -624,6 +742,61 @@
             <property role="2pNUuO" value="name" />
             <node concept="2pMdtt" id="6qWs7gtKwVU" role="2pMdts">
               <property role="2pMdty" value="run" />
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="36C$iQEQ1aM" role="3o6s8t" />
+        <node concept="2pNNFK" id="36C$iQEQ0CO" role="3o6s8t">
+          <property role="2pNNFO" value="target" />
+          <node concept="2pNNFK" id="36C$iQEQ1aw" role="3o6s8t">
+            <property role="2pNNFO" value="exec" />
+            <node concept="2pNNFK" id="36C$iQEQ1aJ" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="36C$iQEQ1Gz" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="36C$iQEQ1GA" role="2pMdts">
+                  <property role="2pMdty" value="rm" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="36C$iQEQ1GZ" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="36C$iQEQ1H0" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="36C$iQEQ1HZ" role="2pMdts">
+                  <property role="2pMdty" value="container name" />
+                  <node concept="17Uvod" id="36C$iQEQ1I0" role="lGtFl">
+                    <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                    <property role="2qtEX9" value="text" />
+                    <node concept="3zFVjK" id="36C$iQEQ1I1" role="3zH0cK">
+                      <node concept="3clFbS" id="36C$iQEQ1I2" role="2VODD2">
+                        <node concept="3clFbF" id="36C$iQEQ1I3" role="3cqZAp">
+                          <node concept="2OqwBi" id="36C$iQEQ1I4" role="3clFbG">
+                            <node concept="3TrcHB" id="36C$iQEQ1I5" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
+                            <node concept="30H73N" id="36C$iQEQ1I6" role="2Oq$k0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2pNUuL" id="36C$iQEQ1aA" role="2pNNFR">
+              <property role="2pNUuO" value="executable" />
+              <node concept="2pMdtt" id="36C$iQEQ1aD" role="2pMdts">
+                <property role="2pMdty" value="docker" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNUuL" id="36C$iQEQ1an" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="36C$iQEQ1aq" role="2pMdts">
+              <property role="2pMdty" value="clean" />
             </node>
           </node>
         </node>
