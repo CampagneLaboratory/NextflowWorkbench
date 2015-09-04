@@ -490,7 +490,7 @@
       </node>
       <node concept="19SGf9" id="2yVjOHGqIGE" role="mIfBD">
         <node concept="19SUe$" id="2yVjOHGqIGF" role="19SJt6">
-          <property role="19SUeA" value="plugins-submit-job --job-area \$JOB_AREA --fileset-area \$FILESET_AREA --owner manuele --plugins-dir \&#10; \$PLUGINS_ROOT_LOCATION --env-script \$PLUGINS_ROOT_LOCATION/artifacts-config/env.sh \ &#10;--repository  \$REPOSITORY_DIR  --resource SAMTOOLS" />
+          <property role="19SUeA" value="plugins-submit-job --job-area $JOB_AREA --fileset-area $FILESET_AREA --owner manuele --plugins-dir $PLUGINS_ROOT_LOCATION --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh  --repository  $REPOSITORY_DIR --resource SAMTOOLS" />
         </node>
       </node>
     </node>
