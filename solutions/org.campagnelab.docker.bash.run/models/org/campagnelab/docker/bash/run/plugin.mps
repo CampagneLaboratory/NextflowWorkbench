@@ -362,15 +362,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
-        <property id="779128492853935960" name="anchorTag" index="1K8rD$" />
-        <property id="779128492853934523" name="cellId" index="1K8rM7" />
-        <property id="779128492853699361" name="side" index="1Kfyot" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -413,13 +407,13 @@
       </node>
     </node>
     <node concept="yHkDC" id="6LeMeIj$TDf" role="yHkDi">
-      <property role="TrG5h" value="parameters" />
+      <property role="TrG5h" value="runOptions" />
       <node concept="yHkIc" id="6LeMeIj_7Cr" role="1tU5fm">
-        <ref role="yHkHG" node="6medo5DSswM" resolve="BashParameters" />
+        <ref role="yHkHG" node="6medo5DSswM" resolve="DockerRunOptions" />
       </node>
       <node concept="2ShNRf" id="6LeMeIj_8$o" role="33vP2m">
         <node concept="yHkDB" id="6LeMeIj_IzJ" role="2ShVmc">
-          <ref role="yHkDA" node="6medo5DSswM" resolve="BashParameters" />
+          <ref role="yHkDA" node="6medo5DSswM" resolve="DockerRunOptions" />
         </node>
       </node>
     </node>
@@ -547,7 +541,7 @@
               </node>
               <node concept="2OqwBi" id="6LeMeIjASgi" role="33vP2m">
                 <node concept="yHkDH" id="6LeMeIjARPb" role="2Oq$k0">
-                  <ref role="yHkDG" node="6LeMeIj$TDf" resolve="parameters" />
+                  <ref role="yHkDG" node="6LeMeIj$TDf" resolve="runOptions" />
                 </node>
                 <node concept="yHkDv" id="6LeMeIjAUDK" role="2OqNvi">
                   <ref role="yHkD0" node="6medo5DSswO" />
@@ -575,11 +569,6 @@
           <node concept="3cpWs6" id="6LeMeIjBYVk" role="3cqZAp">
             <node concept="37vLTw" id="6DdhZ$aPzoO" role="3cqZAk">
               <ref role="3cqZAo" node="5gyVhZ17JjQ" resolve="mainPanel" />
-              <node concept="1KehLL" id="6LeMeIjBYX8" role="lGtFl">
-                <property role="1K8rM7" value="property_name" />
-                <property role="1K8rD$" value="default_RTransform" />
-                <property role="1Kfyot" value="right" />
-              </node>
             </node>
           </node>
           <node concept="3clFbH" id="6DdhZ$aPwq0" role="3cqZAp" />
@@ -606,14 +595,14 @@
           <node concept="3clFbF" id="6LeMeIjB1Ws" role="3cqZAp">
             <node concept="2OqwBi" id="6LeMeIjB2iZ" role="3clFbG">
               <node concept="yHkDH" id="6LeMeIjB1Wq" role="2Oq$k0">
-                <ref role="yHkDG" node="6LeMeIj$TDf" resolve="parameters" />
+                <ref role="yHkDG" node="6LeMeIj$TDf" resolve="runOptions" />
               </node>
               <node concept="yHkDv" id="6LeMeIjB4LA" role="2OqNvi">
                 <ref role="yHkD0" node="5bwR$RU4sBE" />
                 <node concept="2OqwBi" id="6LeMeIjB56R" role="yHkDu">
                   <node concept="yHkzx" id="6LeMeIjB4VW" role="2Oq$k0" />
                   <node concept="yHkDZ" id="6LeMeIjB5yM" role="2OqNvi">
-                    <ref role="yHkDY" node="6LeMeIj$TDf" resolve="parameters" />
+                    <ref role="yHkDY" node="6LeMeIj$TDf" resolve="runOptions" />
                   </node>
                 </node>
               </node>
@@ -642,14 +631,14 @@
           <node concept="3clFbF" id="6LeMeIjB6yb" role="3cqZAp">
             <node concept="2OqwBi" id="6LeMeIjB7f8" role="3clFbG">
               <node concept="yHkDH" id="6LeMeIjB6y9" role="2Oq$k0">
-                <ref role="yHkDG" node="6LeMeIj$TDf" resolve="parameters" />
+                <ref role="yHkDG" node="6LeMeIj$TDf" resolve="runOptions" />
               </node>
               <node concept="yHkDv" id="6LeMeIjB9Y6" role="2OqNvi">
                 <ref role="yHkD0" node="5bwR$RU4D6K" />
                 <node concept="2OqwBi" id="6LeMeIjBari" role="yHkDu">
                   <node concept="yHkzx" id="6LeMeIjBa02" role="2Oq$k0" />
                   <node concept="yHkDZ" id="6LeMeIjBaZo" role="2OqNvi">
-                    <ref role="yHkDY" node="6LeMeIj$TDf" resolve="parameters" />
+                    <ref role="yHkDY" node="6LeMeIj$TDf" resolve="runOptions" />
                   </node>
                 </node>
               </node>
@@ -662,7 +651,7 @@
           <node concept="3clFbF" id="6LeMeIjBcB9" role="3cqZAp">
             <node concept="2OqwBi" id="6LeMeIjBcDd" role="3clFbG">
               <node concept="yHkDH" id="6LeMeIjBcB8" role="2Oq$k0">
-                <ref role="yHkDG" node="6LeMeIj$TDf" resolve="parameters" />
+                <ref role="yHkDG" node="6LeMeIj$TDf" resolve="runOptions" />
               </node>
               <node concept="yHkDv" id="6LeMeIjBfjV" role="2OqNvi">
                 <ref role="yHkD0" node="5bwR$RU4xU5" />
@@ -1280,8 +1269,26 @@
             </node>
             <node concept="2LYoGL" id="6LeMeIjEHq9" role="2LYoGw">
               <ref role="2LYoGK" to="5wms:79W0uRGhPJl" resolve="properties" />
-              <node concept="Xl_RD" id="6LeMeIjEHqa" role="2LYoGN">
-                <property role="Xl_RC" value="" />
+              <node concept="3cpWs3" id="36C$iQEZeRY" role="2LYoGN">
+                <node concept="Xl_RD" id="36C$iQEZeW2" role="3uHU7w">
+                  <property role="Xl_RC" value="\&quot;" />
+                </node>
+                <node concept="3cpWs3" id="36C$iQEXRGP" role="3uHU7B">
+                  <node concept="Xl_RD" id="6LeMeIjEHqa" role="3uHU7B">
+                    <property role="Xl_RC" value="-Dcommand.options=\&quot;" />
+                  </node>
+                  <node concept="2OqwBi" id="36C$iQEYSSV" role="3uHU7w">
+                    <node concept="2OqwBi" id="36C$iQEXS6o" role="2Oq$k0">
+                      <node concept="RBKsg" id="36C$iQEXS2E" role="2Oq$k0" />
+                      <node concept="yHkDZ" id="36C$iQEXSek" role="2OqNvi">
+                        <ref role="yHkDY" node="6LeMeIj$TDf" resolve="runOptions" />
+                      </node>
+                    </node>
+                    <node concept="yHkDZ" id="36C$iQEYTmi" role="2OqNvi">
+                      <ref role="yHkDY" node="53yaZUOu4Cy" resolve="runOptions" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="2LYoGL" id="6LeMeIjEHqb" role="2LYoGw">
@@ -1296,9 +1303,9 @@
     </node>
   </node>
   <node concept="yHkDy" id="6medo5DSswM">
-    <property role="TrG5h" value="BashParameters" />
+    <property role="TrG5h" value="DockerRunOptions" />
     <node concept="yHkDC" id="53yaZUOu4Cy" role="yHkDi">
-      <property role="TrG5h" value="commandLineParameters" />
+      <property role="TrG5h" value="runOptions" />
       <node concept="17QB3L" id="53yaZUOu4Cz" role="1tU5fm" />
       <node concept="Xl_RD" id="53yaZUOu5CF" role="33vP2m">
         <property role="Xl_RC" value="" />
@@ -1387,7 +1394,7 @@
     <node concept="312cEg" id="53yaZUOlaU5" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="commandLineParameters" />
+      <property role="TrG5h" value="runOptions" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="53yaZUOlai$" role="1B3o_S" />
       <node concept="3uibUv" id="53yaZUOlaU2" role="1tU5fm">
@@ -1415,7 +1422,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="53yaZUOlb_j" role="37vLTJ">
-              <ref role="3cqZAo" node="53yaZUOlaU5" resolve="commandLineParameters" />
+              <ref role="3cqZAo" node="53yaZUOlaU5" resolve="runOptions" />
             </node>
           </node>
         </node>
@@ -1435,7 +1442,7 @@
               <node concept="1pGfFk" id="53yaZUOleL5" role="2ShVmc">
                 <ref role="37wK5l" to="xg1q:~JBLabel.&lt;init&gt;(java.lang.String)" resolve="JBLabel" />
                 <node concept="Xl_RD" id="53yaZUOleL6" role="37wK5m">
-                  <property role="Xl_RC" value="Command line parameters:" />
+                  <property role="Xl_RC" value="Docker run options:" />
                 </node>
               </node>
             </node>
@@ -1453,7 +1460,7 @@
           <node concept="1rXfSq" id="53yaZUOleLb" role="3clFbG">
             <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
             <node concept="37vLTw" id="53yaZUOlg4A" role="37wK5m">
-              <ref role="3cqZAo" node="53yaZUOlaU5" resolve="commandLineParameters" />
+              <ref role="3cqZAo" node="53yaZUOlaU5" resolve="runOptions" />
             </node>
             <node concept="1rwKMM" id="53yaZUOleLd" role="37wK5m">
               <property role="1rwKMK" value="panel" />
@@ -1480,7 +1487,7 @@
           <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
         </node>
         <node concept="yHkHH" id="5bwR$RU3TBi" role="1tU5fm">
-          <ref role="yHkHG" node="6medo5DSswM" resolve="BashParameters" />
+          <ref role="yHkHG" node="6medo5DSswM" resolve="DockerRunOptions" />
         </node>
       </node>
       <node concept="3clFbS" id="v01rbtX9nN" role="3clF47">
@@ -1498,7 +1505,7 @@
         <node concept="3clFbF" id="53yaZUOlg9d" role="3cqZAp">
           <node concept="2OqwBi" id="53yaZUOlg9e" role="3clFbG">
             <node concept="37vLTw" id="53yaZUOlgJe" role="2Oq$k0">
-              <ref role="3cqZAo" node="53yaZUOlaU5" resolve="commandLineParameters" />
+              <ref role="3cqZAo" node="53yaZUOlaU5" resolve="runOptions" />
             </node>
             <node concept="liA8E" id="53yaZUOlg9g" role="2OqNvi">
               <ref role="37wK5l" to="oj8w:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
@@ -1507,7 +1514,7 @@
                   <ref role="3cqZAo" node="14R2qyOCuuF" resolve="configuration" />
                 </node>
                 <node concept="yHkDZ" id="53yaZUOu6QJ" role="2OqNvi">
-                  <ref role="yHkDY" node="53yaZUOu4Cy" resolve="commandLineParameters" />
+                  <ref role="yHkDY" node="53yaZUOu4Cy" resolve="runOptions" />
                 </node>
               </node>
             </node>
@@ -1558,7 +1565,7 @@
                 <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
                 <node concept="2OqwBi" id="5bwR$RU41B3" role="37wK5m">
                   <node concept="37vLTw" id="5bwR$RU41B4" role="2Oq$k0">
-                    <ref role="3cqZAo" node="53yaZUOlaU5" resolve="commandLineParameters" />
+                    <ref role="3cqZAo" node="53yaZUOlaU5" resolve="runOptions" />
                   </node>
                   <node concept="liA8E" id="5bwR$RU41B5" role="2OqNvi">
                     <ref role="37wK5l" to="oj8w:~JTextComponent.getText():java.lang.String" resolve="getText" />
@@ -1568,7 +1575,7 @@
             </node>
             <node concept="2OqwBi" id="5bwR$RU41B6" role="37vLTJ">
               <node concept="yHkDZ" id="5bwR$RU41B7" role="2OqNvi">
-                <ref role="yHkDY" node="53yaZUOu4Cy" resolve="commandLineParameters" />
+                <ref role="yHkDY" node="53yaZUOu4Cy" resolve="runOptions" />
               </node>
               <node concept="37vLTw" id="5bwR$RU41B8" role="2Oq$k0">
                 <ref role="3cqZAo" node="5bwR$RU41sk" resolve="configuration" />
@@ -1582,7 +1589,7 @@
       <node concept="37vLTG" id="5bwR$RU41sk" role="3clF46">
         <property role="TrG5h" value="configuration" />
         <node concept="yHkHH" id="5bwR$RU41sj" role="1tU5fm">
-          <ref role="yHkHG" node="6medo5DSswM" resolve="BashParameters" />
+          <ref role="yHkHG" node="6medo5DSswM" resolve="DockerRunOptions" />
         </node>
       </node>
     </node>
