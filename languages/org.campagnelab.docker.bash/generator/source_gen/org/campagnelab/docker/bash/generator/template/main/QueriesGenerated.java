@@ -38,8 +38,11 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_1120185470126962968(final PropertyMacroContext _context) {
     return "/bin/bash -c &quot;" + DockerBash_Behavior.call_outputFile_7402169016437637146(_context.getNode()) + "&quot;";
   }
+  public static Object propertyMacro_GetPropertyValue_1311266352921119148(final PropertyMacroContext _context) {
+    return DockerBash_Behavior.call_outputBuildFileNoExt_1311266352921616321(_context.getNode());
+  }
   public static Object propertyMacro_GetPropertyValue_2935026767522111584(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + ".sh";
+    return DockerBash_Behavior.call_outputFile_7402169016437637146(_context.getNode());
   }
   public static SNode sourceNodeQuery_2935026767522129093(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x3b74e3b77336414dL, 0x889964a293a44a07L, 0x20c7aeb74b0c877L, 0x20c7aeb74b0cc54L, "script"));
