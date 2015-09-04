@@ -35,9 +35,7 @@
         <property id="8987412447080623507" name="options" index="2E$TAj" />
         <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
       </concept>
-      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
-        <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
-      </concept>
+      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3" />
       <concept id="1893262236499908796" name="org.campagnelab.docker.structure.DockerContainer" flags="ng" index="VuMX5">
         <property id="6819868375264208052" name="id" index="GbyUj" />
         <property id="1893262236499912677" name="tag" index="VuL0s" />
@@ -49,19 +47,18 @@
     <property role="2EEQw2" value="/usr/local/bin//docker" />
     <property role="2E$TAj" value="--tls --tlscacert=/Users/manuelesimi/.docker/machine/machines/default/ca.pem --tlscert=/Users/manuelesimi/.docker/machine/machines/default/cert.pem --tlskey=/Users/manuelesimi/.docker/machine/machines/default/key.pem -H=" />
   </node>
-  <node concept="1QJbas" id="2yVjOHGqI36">
-    <property role="TrG5h" value="FirstBash" />
-    <node concept="mIf$4" id="2yVjOHGqI37" role="1QJbqZ">
-      <property role="TrG5h" value="FirstBash" />
-      <node concept="VtuK3" id="2yVjOHGqI38" role="234boB">
+  <node concept="1QJbas" id="18MzsNNQq0r">
+    <property role="TrG5h" value="TestResourceInstallation" />
+    <node concept="mIf$4" id="18MzsNNQq0s" role="1QJbqZ">
+      <property role="TrG5h" value="TestResourceInstallation" />
+      <node concept="VtuK3" id="18MzsNNQq0t" role="234boB">
         <property role="VuL0s" value="latest" />
         <property role="VuL0v" value="mas2181" />
         <property role="GbyUj" value="artifact-software" />
-        <property role="3zaeVo" value="false" />
       </node>
-      <node concept="19SGf9" id="2yVjOHGqIGE" role="mIfBD">
-        <node concept="19SUe$" id="2yVjOHGqIGF" role="19SJt6">
-          <property role="19SUeA" value="plugins-submit-job --job-area \$JOB_AREA --fileset-area \$FILESET_AREA --owner manuele --plugins-dir \&#10; \$PLUGINS_ROOT_LOCATION --env-script \$PLUGINS_ROOT_LOCATION/artifacts-config/env.sh \ &#10;--repository  \$REPOSITORY_DIR  --resource SAMTOOLS" />
+      <node concept="19SGf9" id="18MzsNNQWWy" role="mIfBD">
+        <node concept="19SUe$" id="18MzsNNQWWz" role="19SJt6">
+          <property role="19SUeA" value="plugins-submit-job --job-area $JOB_AREA --fileset-area $FILESET_AREA --owner manuele --plugins-dir $PLUGINS_ROOT_LOCATION --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh  --repository  $REPOSITORY_DIR --resource SAMTOOLS" />
         </node>
       </node>
     </node>

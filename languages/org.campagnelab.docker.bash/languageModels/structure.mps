@@ -9,7 +9,6 @@
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -50,7 +49,6 @@
     <property role="TrG5h" value="DockerBashScript" />
     <property role="R4oN_" value="a bash script to execute inside a docker container" />
     <property role="34LRSv" value="bash script" />
-    <ref role="1TJDcQ" to="iowz:6tX5nBTaD$x" resolve="Script" />
     <node concept="1TJgyj" id="1rhtiO0qoN4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="script" />
