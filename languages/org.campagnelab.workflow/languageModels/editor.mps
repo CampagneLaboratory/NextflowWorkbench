@@ -654,6 +654,15 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="6BUg9uY9I34" role="3EZMnx">
+        <property role="3F0ifm" value="▶" />
+        <node concept="Vb9p2" id="6BUg9uY9I35" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
+        <node concept="VSNWy" id="6BUg9uY9I36" role="3F10Kt">
+          <property role="1lJzqX" value="15" />
+        </node>
+      </node>
       <node concept="1iCGBv" id="46nPNk8aIgE" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:5D7AjvYaj9N" />
         <node concept="1sVBvm" id="46nPNk8aIgG" role="1sWHZn">
@@ -664,8 +673,8 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="5yyd2HFq3rc" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
+      <node concept="3F0ifn" id="6BUg9uYjmN5" role="3EZMnx">
+        <property role="3F0ifm" value="▶" />
       </node>
       <node concept="3F2HdR" id="46nPNk8aIhW" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:7gAPJCESMIs" />
@@ -742,8 +751,11 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <ref role="1k5W1q" node="5yyd2HFrskG" resolve="ChannelName" />
       </node>
-      <node concept="3F0ifn" id="1D3_UgeJIZK" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
+      <node concept="3F0ifn" id="6BUg9uYogaV" role="3EZMnx">
+        <property role="3F0ifm" value="⇢" />
+        <node concept="VSNWy" id="6BUg9uYogRQ" role="3F10Kt">
+          <property role="1lJzqX" value="16" />
+        </node>
       </node>
       <node concept="1HlG4h" id="1D3_UgeJGPU" role="3EZMnx">
         <node concept="1HfYo3" id="1D3_UgeJGPV" role="1HlULh">
@@ -919,8 +931,11 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="7wWbCzYDa$E" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
+      <node concept="3F0ifn" id="6BUg9uYlOuU" role="3EZMnx">
+        <property role="3F0ifm" value="⇠" />
+        <node concept="VSNWy" id="6BUg9uYlP0_" role="3F10Kt">
+          <property role="1lJzqX" value="16" />
+        </node>
       </node>
       <node concept="1iCGBv" id="3pxfPu9PvGk" role="3EZMnx">
         <property role="1$x2rV" value="&lt;input channel&gt;" />
