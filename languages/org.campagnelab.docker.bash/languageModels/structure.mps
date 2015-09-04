@@ -108,7 +108,7 @@
   </node>
   <node concept="1TIwiD" id="8cuIHOGcxR">
     <property role="TrG5h" value="DockerBash" />
-    <property role="34LRSv" value="run bash in docker" />
+    <property role="34LRSv" value="BashInDocker" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="8cuIHOGcLk" role="1TKVEi">
