@@ -28,6 +28,8 @@
     <use id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive" version="-1" />
     <use id="82ffebe3-3685-4fd9-b560-0c1d348d295c" name="org.campagnelab.logger" version="-1" />
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="6" />
+    <use id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh" version="0" />
+    <use id="57af9408-ffae-472e-9367-5cb44434e8b3" name="org.campagnelab.gobyweb.interactive.users" version="0" />
   </languages>
   <imports>
     <import index="whle" ref="r:8e4fd1b7-1955-43a4-ace6-aaf9d13814f8(org.campagnelab.logger.structure)" />
@@ -60,6 +62,9 @@
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
+    </language>
+    <language id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh">
+      <concept id="7604659537829833558" name="" flags="ng" index="2vEKro" />
     </language>
     <language id="82ffebe3-3685-4fd9-b560-0c1d348d295c" name="org.campagnelab.logger">
       <concept id="1925991773568778810" name="org.campagnelab.logger.structure.Message" flags="ng" index="1lnzPE">
@@ -395,19 +400,19 @@
         <node concept="19SUe$" id="irqYu7omtf" role="19SJt6">
           <property role="19SUeA" value="ls " />
         </node>
-        <node concept="23RE8j" id="irqYu7omte" role="19SJt6">
+        <node concept="2vEKro" id="irqYu7omte" role="19SJt6">
           <ref role="23RE8i" node="irqYu7omtF" resolve="DISPLAY" />
         </node>
         <node concept="19SUe$" id="irqYu7omvS" role="19SJt6">
           <property role="19SUeA" value="  " />
         </node>
-        <node concept="23RE8j" id="irqYu7omwi" role="19SJt6">
+        <node concept="2vEKro" id="irqYu7omwi" role="19SJt6">
           <ref role="23RE8i" node="irqYu7omtL" resolve="PATH" />
         </node>
         <node concept="19SUe$" id="irqYu7omwh" role="19SJt6">
           <property role="19SUeA" value="&gt; " />
         </node>
-        <node concept="23RE8j" id="irqYu7oCAh" role="19SJt6">
+        <node concept="2vEKro" id="irqYu7oCAh" role="19SJt6">
           <ref role="23RE8i" node="irqYu7omtJ" resolve="LOGNAME" />
         </node>
         <node concept="19SUe$" id="irqYu7pj4W" role="19SJt6">
