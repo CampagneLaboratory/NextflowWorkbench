@@ -19,7 +19,7 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(DockerBash_Behavior.call_dockerConfig_5287487597355899766(_context.getNode()), MetaAdapterFactory.getProperty(0x25281c034a7c4b57L, 0x922124a10fc36ef5L, 0x7cb9b400d612dc01L, 0x7cb9b400d62a2d93L, "options")).replaceAll("\"", "&quot;");
   }
   public static Object propertyMacro_GetPropertyValue_5287487597357212593(final PropertyMacroContext _context) {
-    return BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x3b74e3b77336414dL, 0x889964a293a44a07L, 0x20c7aeb74b0c877L, 0x20c7aeb74b0cc54L, "script")), MetaAdapterFactory.getContainmentLink(0x3b74e3b77336414dL, 0x889964a293a44a07L, 0x16d1752d00698c29L, 0x49b6be7878bddc0L, "container")), "virtual_formattedAddress_1893262236499909674", new Object[]{});
+    return BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x3b74e3b77336414dL, 0x889964a293a44a07L, 0x20c7aeb74b0c877L, 0x49b6be7878bddc0L, "container")), "virtual_formattedAddress_1893262236499909674", new Object[]{});
   }
   public static Object propertyMacro_GetPropertyValue_5287487597355917719(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(DockerBash_Behavior.call_dockerConfig_5287487597355899766(_context.getNode()), MetaAdapterFactory.getProperty(0x25281c034a7c4b57L, 0x922124a10fc36ef5L, 0x7cb9b400d612dc01L, 0x7cb9b400d612dc02L, "pathToDocker"));
@@ -28,7 +28,7 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
   public static Object propertyMacro_GetPropertyValue_1120185470126962968(final PropertyMacroContext _context) {
-    return "'/bin/bash -ue ${working.dir}/" + DockerBash_Behavior.call_outputFile_7402169016437637146(_context.getNode()) + "'";
+    return "'/bin/bash -ue ${working.dir}/" + DockerBash_Behavior.call_outputBashFile_7402169016437637146(_context.getNode()) + "'";
   }
   public static Object propertyMacro_GetPropertyValue_3578269529271704449(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
@@ -40,7 +40,7 @@ public class QueriesGenerated {
     return DockerBash_Behavior.call_outputBuildFileNoExt_1311266352921616321(_context.getNode());
   }
   public static Object propertyMacro_GetPropertyValue_2935026767522111584(final PropertyMacroContext _context) {
-    return DockerBash_Behavior.call_outputFile_7402169016437637146(_context.getNode());
+    return DockerBash_Behavior.call_outputBashFile_7402169016437637146(_context.getNode());
   }
   public static SNode sourceNodeQuery_2935026767522129093(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x3b74e3b77336414dL, 0x889964a293a44a07L, 0x20c7aeb74b0c877L, 0x20c7aeb74b0cc54L, "script"));

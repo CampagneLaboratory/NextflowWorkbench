@@ -50,21 +50,16 @@
   </registry>
   <node concept="1TIwiD" id="1rhtiO0qoKD">
     <property role="TrG5h" value="DockerBashScript" />
-    <property role="R4oN_" value="a bash script to execute inside a docker container" />
+    <property role="R4oN_" value="a plain bash script" />
     <property role="34LRSv" value="bash script" />
     <node concept="1TJgyj" id="1rhtiO0qoN4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="script" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
-    <node concept="1TJgyj" id="irqYu7yXR0" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="container" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
-    </node>
     <node concept="PrWs8" id="6A9boVQ06Vc" role="PzmwI">
-      <ref role="PrY4T" node="6A9boVQ01ys" resolve="CanRunInDocker" />
+      <ref role="PrY4T" node="6A9boVQ01ys" resolve="GenerateBashFragment" />
     </node>
   </node>
   <node concept="1TIwiD" id="2h_fDmyfOuW">
@@ -116,7 +111,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="script" />
-      <ref role="20lvS9" node="6A9boVQ01ys" resolve="CanRunInDocker" />
+      <ref role="20lvS9" node="6A9boVQ01ys" resolve="GenerateBashFragment" />
+    </node>
+    <node concept="1TJgyj" id="irqYu7yXR0" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="container" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
     </node>
     <node concept="1TJgyj" id="8cuIHOGcLo" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -129,7 +130,7 @@
   </node>
   <node concept="PlHQZ" id="6A9boVQ01ys">
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="CanRunInDocker" />
+    <property role="TrG5h" value="GenerateBashFragment" />
     <node concept="PrWs8" id="6A9boVQ06Vh" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

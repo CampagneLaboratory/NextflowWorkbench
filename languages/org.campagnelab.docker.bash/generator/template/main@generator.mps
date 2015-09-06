@@ -262,12 +262,7 @@
                     <node concept="3clFbF" id="4_wVviqKEeN" role="3cqZAp">
                       <node concept="2OqwBi" id="4_wVviqKEeO" role="3clFbG">
                         <node concept="2OqwBi" id="4_wVviqKEeP" role="2Oq$k0">
-                          <node concept="2OqwBi" id="4_wVviqKEeQ" role="2Oq$k0">
-                            <node concept="30H73N" id="4_wVviqKEeR" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="4_wVviqKEeS" role="2OqNvi">
-                              <ref role="3Tt5mk" to="r9td:8cuIHOGcLk" />
-                            </node>
-                          </node>
+                          <node concept="30H73N" id="4_wVviqKEeR" role="2Oq$k0" />
                           <node concept="3TrEf2" id="4_wVviqKEeT" role="2OqNvi">
                             <ref role="3Tt5mk" to="r9td:irqYu7yXR0" />
                           </node>
@@ -538,7 +533,7 @@
                               <node concept="2OqwBi" id="YbGG05ugXP" role="3uHU7w">
                                 <node concept="30H73N" id="YbGG05ug_1" role="2Oq$k0" />
                                 <node concept="2qgKlT" id="6qTMo28aOMv" role="2OqNvi">
-                                  <ref role="37wK5l" to="cb06:6qTMo28aK0q" resolve="outputFile" />
+                                  <ref role="37wK5l" to="cb06:6qTMo28aK0q" resolve="outputBashFile" />
                                 </node>
                               </node>
                             </node>
@@ -687,7 +682,7 @@
             <node concept="2OqwBi" id="18MzsNNMeWx" role="3clFbG">
               <node concept="30H73N" id="18MzsNNMeS2" role="2Oq$k0" />
               <node concept="2qgKlT" id="18MzsNNMfdO" role="2OqNvi">
-                <ref role="37wK5l" to="cb06:6qTMo28aK0q" resolve="outputFile" />
+                <ref role="37wK5l" to="cb06:6qTMo28aK0q" resolve="outputBashFile" />
               </node>
             </node>
           </node>
@@ -696,9 +691,6 @@
     </node>
     <node concept="34ZRQx" id="2yVjOHGqQSh" role="34ZRRx">
       <property role="34ZRQb" value="#!/usr/bin/env bash" />
-    </node>
-    <node concept="34ZRQx" id="36C$iQEV8b$" role="34ZRRx">
-      <property role="34ZRQb" value="source $HOME/.bashrc" />
     </node>
     <node concept="34ZRQx" id="2yVjOHGqQaR" role="34ZRRx">
       <property role="34ZRQb" value="body" />

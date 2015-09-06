@@ -255,51 +255,17 @@
   </registry>
   <node concept="24kQdi" id="1rhtiO0qoNv">
     <ref role="1XX52x" to="r9td:1rhtiO0qoKD" resolve="DockerBashScript" />
-    <node concept="3EZMnI" id="1rhtiO0qpbY" role="2wV5jI">
-      <node concept="3F0ifn" id="1rhtiO0qtHg" role="3EZMnx">
-        <property role="3F0ifm" value="Bash script:" />
+    <node concept="3F1sOY" id="59canFNtQng" role="2wV5jI">
+      <ref role="1NtTu8" to="r9td:1rhtiO0qoN4" />
+      <node concept="pVoyu" id="59canFNtQn$" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
-      <node concept="3F0A7n" id="1rhtiO0qtHN" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <node concept="ljvvj" id="1rhtiO0quox" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+      <node concept="lj46D" id="59canFNtQnB" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
-      <node concept="3F0ifn" id="1rhtiO0qpc5" role="3EZMnx" />
-      <node concept="3F1sOY" id="1rhtiO0qtHR" role="3EZMnx">
-        <ref role="1NtTu8" to="r9td:irqYu7yXR0" />
-        <node concept="ljvvj" id="1rhtiO0quoy" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+      <node concept="ljvvj" id="1rhtiO0quo$" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
-      <node concept="3F0ifn" id="1rhtiO0qupo" role="3EZMnx" />
-      <node concept="3F0ifn" id="34JZ5vsg0ll" role="3EZMnx">
-        <property role="3F0ifm" value="script:" />
-        <node concept="pVoyu" id="4g1gOgyTz7A" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="1rhtiO0quoz" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="59canFNtQng" role="3EZMnx">
-        <ref role="1NtTu8" to="r9td:1rhtiO0qoN4" />
-        <node concept="pVoyu" id="59canFNtQn$" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="59canFNtQnB" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="1rhtiO0quo$" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="1rhtiO0qpc8" role="3EZMnx">
-        <node concept="ljvvj" id="1rhtiO0quo_" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="1rhtiO0quoA" role="2iSdaV" />
     </node>
   </node>
   <node concept="325Ffw" id="2h_fDmyfOL7">
@@ -950,8 +916,41 @@
   </node>
   <node concept="24kQdi" id="8cuIHOGcL$">
     <ref role="1XX52x" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
-    <node concept="3F1sOY" id="8cuIHOLzmo" role="2wV5jI">
-      <ref role="1NtTu8" to="r9td:8cuIHOGcLk" />
+    <node concept="3EZMnI" id="6A9boVQ2ENa" role="2wV5jI">
+      <node concept="l2Vlx" id="6A9boVQ2ENb" role="2iSdaV" />
+      <node concept="3F0ifn" id="1rhtiO0qtHg" role="3EZMnx">
+        <property role="3F0ifm" value="Bash In Docker:" />
+      </node>
+      <node concept="3F0A7n" id="1rhtiO0qtHN" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="1rhtiO0quox" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1rhtiO0qpc5" role="3EZMnx" />
+      <node concept="3F1sOY" id="1rhtiO0qtHR" role="3EZMnx">
+        <ref role="1NtTu8" to="r9td:irqYu7yXR0" />
+        <node concept="ljvvj" id="1rhtiO0quoy" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6A9boVQ2FyN" role="3EZMnx">
+        <node concept="ljvvj" id="6A9boVQ2Fzn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6A9boVQ2GDT" role="3EZMnx">
+        <property role="3F0ifm" value="script:" />
+        <node concept="pVoyu" id="6A9boVQ2GDU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="6A9boVQ2GDV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="8cuIHOLzmo" role="3EZMnx">
+        <ref role="1NtTu8" to="r9td:8cuIHOGcLk" />
+      </node>
     </node>
   </node>
 </model>
