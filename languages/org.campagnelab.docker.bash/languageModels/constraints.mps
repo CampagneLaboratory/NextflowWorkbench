@@ -210,50 +210,51 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="8cuIHOLzmt">
-    <ref role="1M2myG" to="r9td:1rhtiO0qoKD" resolve="DockerBashScript" />
-    <node concept="EnEH3" id="8cuIHOLzmE" role="1MhHOB">
+  <node concept="1M2fIO" id="6A9boVQ0dkA">
+    <property role="3GE5qa" value="" />
+    <ref role="1M2myG" to="r9td:6A9boVQ01ys" resolve="CanRunInDocker" />
+    <node concept="EnEH3" id="6A9boVQ0dux" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
-      <node concept="1LLf8_" id="8cuIHOLzmI" role="1LXaQT">
-        <node concept="3clFbS" id="8cuIHOLzmJ" role="2VODD2">
-          <node concept="3clFbJ" id="8cuIHOLzn0" role="3cqZAp">
-            <node concept="3clFbS" id="8cuIHOLzn1" role="3clFbx">
-              <node concept="3clFbF" id="8cuIHOL$It" role="3cqZAp">
-                <node concept="37vLTI" id="8cuIHOLAig" role="3clFbG">
-                  <node concept="1Wqviy" id="8cuIHOLAmS" role="37vLTx" />
-                  <node concept="2OqwBi" id="8cuIHOL_HF" role="37vLTJ">
-                    <node concept="1PxgMI" id="8cuIHOL_EQ" role="2Oq$k0">
+      <node concept="1LLf8_" id="6A9boVQ0du_" role="1LXaQT">
+        <node concept="3clFbS" id="6A9boVQ0duA" role="2VODD2">
+          <node concept="3clFbJ" id="6A9boVQ0dvW" role="3cqZAp">
+            <node concept="3clFbS" id="6A9boVQ0dvX" role="3clFbx">
+              <node concept="3clFbF" id="6A9boVQ0dvY" role="3cqZAp">
+                <node concept="37vLTI" id="6A9boVQ0dvZ" role="3clFbG">
+                  <node concept="1Wqviy" id="6A9boVQ0dw0" role="37vLTx" />
+                  <node concept="2OqwBi" id="6A9boVQ0dw1" role="37vLTJ">
+                    <node concept="1PxgMI" id="6A9boVQ0dw2" role="2Oq$k0">
                       <ref role="1PxNhF" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
-                      <node concept="2OqwBi" id="8cuIHOL$LG" role="1PxMeX">
-                        <node concept="EsrRn" id="8cuIHOL$Is" role="2Oq$k0" />
-                        <node concept="1mfA1w" id="8cuIHOL_lu" role="2OqNvi" />
+                      <node concept="2OqwBi" id="6A9boVQ0dw3" role="1PxMeX">
+                        <node concept="EsrRn" id="6A9boVQ0dw4" role="2Oq$k0" />
+                        <node concept="1mfA1w" id="6A9boVQ0dw5" role="2OqNvi" />
                       </node>
                     </node>
-                    <node concept="3TrcHB" id="8cuIHOLA2W" role="2OqNvi">
+                    <node concept="3TrcHB" id="6A9boVQ0dw6" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="8cuIHOL$_L" role="3clFbw">
-              <node concept="2OqwBi" id="8cuIHOLzrq" role="2Oq$k0">
-                <node concept="EsrRn" id="8cuIHOLznp" role="2Oq$k0" />
-                <node concept="1mfA1w" id="8cuIHOL$iU" role="2OqNvi" />
+            <node concept="2OqwBi" id="6A9boVQ0dw7" role="3clFbw">
+              <node concept="2OqwBi" id="6A9boVQ0dw8" role="2Oq$k0">
+                <node concept="EsrRn" id="6A9boVQ0dw9" role="2Oq$k0" />
+                <node concept="1mfA1w" id="6A9boVQ0dwa" role="2OqNvi" />
               </node>
-              <node concept="1mIQ4w" id="8cuIHOL$Gj" role="2OqNvi">
-                <node concept="chp4Y" id="8cuIHOL$Ha" role="cj9EA">
+              <node concept="1mIQ4w" id="6A9boVQ0dwb" role="2OqNvi">
+                <node concept="chp4Y" id="6A9boVQ0dwc" role="cj9EA">
                   <ref role="cht4Q" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="8cuIHOLArl" role="3cqZAp">
-            <node concept="37vLTI" id="8cuIHOLBt5" role="3clFbG">
-              <node concept="1Wqviy" id="8cuIHOLBxf" role="37vLTx" />
-              <node concept="2OqwBi" id="8cuIHOLAvV" role="37vLTJ">
-                <node concept="EsrRn" id="8cuIHOLArj" role="2Oq$k0" />
-                <node concept="3TrcHB" id="8cuIHOLAMV" role="2OqNvi">
+          <node concept="3clFbF" id="6A9boVQ0dwd" role="3cqZAp">
+            <node concept="37vLTI" id="6A9boVQ0dwe" role="3clFbG">
+              <node concept="1Wqviy" id="6A9boVQ0dwf" role="37vLTx" />
+              <node concept="2OqwBi" id="6A9boVQ0dwg" role="37vLTJ">
+                <node concept="EsrRn" id="6A9boVQ0dwh" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6A9boVQ0dwi" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>

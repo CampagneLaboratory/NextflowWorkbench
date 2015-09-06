@@ -18,6 +18,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -60,8 +63,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
     </node>
-    <node concept="PrWs8" id="1rhtiO0qtHe" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="6A9boVQ06Vc" role="PzmwI">
+      <ref role="PrY4T" node="6A9boVQ01ys" resolve="CanRunInDocker" />
     </node>
   </node>
   <node concept="1TIwiD" id="2h_fDmyfOuW">
@@ -113,7 +116,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="script" />
-      <ref role="20lvS9" node="1rhtiO0qoKD" resolve="DockerBashScript" />
+      <ref role="20lvS9" node="6A9boVQ01ys" resolve="CanRunInDocker" />
     </node>
     <node concept="1TJgyj" id="8cuIHOGcLo" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -121,6 +124,13 @@
       <ref role="20lvS9" to="6jv6:7MTH03m4HK1" resolve="Config" />
     </node>
     <node concept="PrWs8" id="8cuIHOGf5W" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6A9boVQ01ys">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="CanRunInDocker" />
+    <node concept="PrWs8" id="6A9boVQ06Vh" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
