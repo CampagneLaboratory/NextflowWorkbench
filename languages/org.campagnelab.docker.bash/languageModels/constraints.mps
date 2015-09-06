@@ -92,19 +92,11 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
-      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
-        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
-      </concept>
-      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
-      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
-        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
-      </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -210,51 +202,34 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="6A9boVQ0dkA">
-    <property role="3GE5qa" value="" />
-    <ref role="1M2myG" to="r9td:6A9boVQ01ys" resolve="CanRunInDocker" />
-    <node concept="EnEH3" id="6A9boVQ0dux" role="1MhHOB">
+  <node concept="1M2fIO" id="6A9boVQ6bYa">
+    <ref role="1M2myG" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
+    <node concept="EnEH3" id="6A9boVQ6bZJ" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
-      <node concept="1LLf8_" id="6A9boVQ0du_" role="1LXaQT">
-        <node concept="3clFbS" id="6A9boVQ0duA" role="2VODD2">
-          <node concept="3clFbJ" id="6A9boVQ0dvW" role="3cqZAp">
-            <node concept="3clFbS" id="6A9boVQ0dvX" role="3clFbx">
-              <node concept="3clFbF" id="6A9boVQ0dvY" role="3cqZAp">
-                <node concept="37vLTI" id="6A9boVQ0dvZ" role="3clFbG">
-                  <node concept="1Wqviy" id="6A9boVQ0dw0" role="37vLTx" />
-                  <node concept="2OqwBi" id="6A9boVQ0dw1" role="37vLTJ">
-                    <node concept="1PxgMI" id="6A9boVQ0dw2" role="2Oq$k0">
-                      <ref role="1PxNhF" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
-                      <node concept="2OqwBi" id="6A9boVQ0dw3" role="1PxMeX">
-                        <node concept="EsrRn" id="6A9boVQ0dw4" role="2Oq$k0" />
-                        <node concept="1mfA1w" id="6A9boVQ0dw5" role="2OqNvi" />
-                      </node>
-                    </node>
-                    <node concept="3TrcHB" id="6A9boVQ0dw6" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
+      <node concept="1LLf8_" id="6A9boVQ6bZN" role="1LXaQT">
+        <node concept="3clFbS" id="6A9boVQ6bZO" role="2VODD2">
+          <node concept="3clFbF" id="6A9boVQ6c06" role="3cqZAp">
+            <node concept="37vLTI" id="6A9boVQ6d4_" role="3clFbG">
+              <node concept="1Wqviy" id="6A9boVQ6d9d" role="37vLTx" />
+              <node concept="2OqwBi" id="6A9boVQ6cmr" role="37vLTJ">
+                <node concept="2OqwBi" id="6A9boVQ6c1B" role="2Oq$k0">
+                  <node concept="EsrRn" id="6A9boVQ6c05" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6A9boVQ6cbg" role="2OqNvi">
+                    <ref role="3Tt5mk" to="r9td:8cuIHOGcLk" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="6A9boVQ0dw7" role="3clFbw">
-              <node concept="2OqwBi" id="6A9boVQ0dw8" role="2Oq$k0">
-                <node concept="EsrRn" id="6A9boVQ0dw9" role="2Oq$k0" />
-                <node concept="1mfA1w" id="6A9boVQ0dwa" role="2OqNvi" />
-              </node>
-              <node concept="1mIQ4w" id="6A9boVQ0dwb" role="2OqNvi">
-                <node concept="chp4Y" id="6A9boVQ0dwc" role="cj9EA">
-                  <ref role="cht4Q" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
+                <node concept="3TrcHB" id="6A9boVQ6cCx" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="6A9boVQ0dwd" role="3cqZAp">
-            <node concept="37vLTI" id="6A9boVQ0dwe" role="3clFbG">
-              <node concept="1Wqviy" id="6A9boVQ0dwf" role="37vLTx" />
-              <node concept="2OqwBi" id="6A9boVQ0dwg" role="37vLTJ">
-                <node concept="EsrRn" id="6A9boVQ0dwh" role="2Oq$k0" />
-                <node concept="3TrcHB" id="6A9boVQ0dwi" role="2OqNvi">
+          <node concept="3clFbF" id="6A9boVQ6dcK" role="3cqZAp">
+            <node concept="37vLTI" id="6A9boVQ6eKp" role="3clFbG">
+              <node concept="1Wqviy" id="6A9boVQ6eOg" role="37vLTx" />
+              <node concept="2OqwBi" id="6A9boVQ6de$" role="37vLTJ">
+                <node concept="EsrRn" id="6A9boVQ6dcI" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6A9boVQ6eru" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
