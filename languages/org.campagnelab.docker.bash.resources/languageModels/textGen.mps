@@ -103,6 +103,7 @@
           <node concept="la8eA" id="6A9boVQ50e9" role="lcghm">
             <property role="lacIc" value="source $HOME/.bashrc" />
           </node>
+          <node concept="l8MVK" id="6A9boVQceNu" role="lcghm" />
         </node>
         <node concept="lc7rE" id="6A9boVQ69gS" role="3cqZAp">
           <node concept="l9S2W" id="6A9boVQ69jd" role="lcghm">

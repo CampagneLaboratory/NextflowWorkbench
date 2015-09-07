@@ -25,10 +25,14 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
+      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styleClass" index="V601i" />
       </concept>
@@ -87,7 +91,16 @@
       </node>
       <node concept="3F2HdR" id="5yyd2HFS3KU" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:5yyd2HFS3y2" />
-        <node concept="l2Vlx" id="5yyd2HFS3KW" role="2czzBx" />
+        <node concept="lj46D" id="2tqsND0ifP4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="2tqsND0ifP5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="2tqsND0ifP6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2EHx9g" id="6A9boVQbQjz" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="5yyd2HFS3D8" role="3EZMnx">
         <property role="3F0ifm" value="#!/bin/bash (with automatic GobyWeb artifact installation)" />
