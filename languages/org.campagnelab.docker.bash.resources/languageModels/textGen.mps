@@ -105,6 +105,20 @@
           </node>
           <node concept="l8MVK" id="6A9boVQceNu" role="lcghm" />
         </node>
+        <node concept="lc7rE" id="6A9boVQd2md" role="3cqZAp">
+          <node concept="la8eA" id="6A9boVQd2p4" role="lcghm">
+            <property role="lacIc" value="RESOURCE_OWNER=" />
+          </node>
+          <node concept="l9hG8" id="6A9boVQd2qF" role="lcghm">
+            <node concept="2OqwBi" id="6A9boVQdNIj" role="lb14g">
+              <node concept="117lpO" id="6A9boVQd2ry" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6A9boVQdO6c" role="2OqNvi">
+                <ref role="37wK5l" to="6na6:6A9boVQd4Jn" resolve="resourceOwner" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="6A9boVQd2tz" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="6A9boVQ69gS" role="3cqZAp">
           <node concept="l9S2W" id="6A9boVQ69jd" role="lcghm">
             <node concept="2OqwBi" id="6A9boVQ69nT" role="lbANJ">
@@ -169,7 +183,7 @@
         </node>
         <node concept="lc7rE" id="6A9boVQ694Y" role="3cqZAp">
           <node concept="la8eA" id="6A9boVQ695s" role="lcghm">
-            <property role="lacIc" value="--owner manuele --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh " />
+            <property role="lacIc" value="--owner $RESOURCE_OWNER --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh " />
           </node>
         </node>
         <node concept="lc7rE" id="6A9boVQ696i" role="3cqZAp">
