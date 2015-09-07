@@ -171,7 +171,7 @@
         </node>
         <node concept="lc7rE" id="6A9boVQ696i" role="3cqZAp">
           <node concept="la8eA" id="6A9boVQ696O" role="lcghm">
-            <property role="lacIc" value="--repository  $REPOSITORY_DIR --resource resource" />
+            <property role="lacIc" value="--repository  $REPOSITORY_DIR --resource " />
           </node>
           <node concept="l9hG8" id="6A9boVQ6hXQ" role="lcghm">
             <node concept="2OqwBi" id="6A9boVQ6in8" role="lb14g">
