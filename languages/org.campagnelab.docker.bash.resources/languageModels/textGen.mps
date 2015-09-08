@@ -160,7 +160,7 @@
         </node>
         <node concept="lc7rE" id="6A9boVQ68VM" role="3cqZAp">
           <node concept="la8eA" id="6A9boVQ68W2" role="lcghm">
-            <property role="lacIc" value="plugin-submit-job --plugins-dir $PLUGINS_ROOT_LOCATION " />
+            <property role="lacIc" value="plugins-submit-job --plugins-dir $PLUGINS_ROOT_LOCATION " />
           </node>
         </node>
         <node concept="lc7rE" id="6A9boVQ6914" role="3cqZAp">
