@@ -87,7 +87,7 @@
     <ref role="1XX52x" to="iuj9:5yyd2HFS3xA" resolve="NYoShAwareScript" />
     <node concept="3EZMnI" id="5yyd2HFS3D1" role="2wV5jI">
       <node concept="3F0ifn" id="5yyd2HFS3Lt" role="3EZMnx">
-        <property role="3F0ifm" value="requires: " />
+        <property role="3F0ifm" value="requires " />
       </node>
       <node concept="3F2HdR" id="5yyd2HFS3KU" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:5yyd2HFS3y2" />
