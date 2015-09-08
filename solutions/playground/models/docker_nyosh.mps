@@ -16,15 +16,18 @@
     <language id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive">
       <concept id="5865189911929158310" name="org.campagnelab.gobyweb.interactive.structure.NYoShUser" flags="ng" index="9QaQ0" />
       <concept id="1997533223701191426" name="org.campagnelab.gobyweb.interactive.structure.PluginRepository" flags="ng" index="Eubbw">
-        <property id="5752449153162294620" name="viewPlugins" index="2_qfHq" />
         <property id="1997533223701200855" name="directory" index="Eu9oP" />
         <property id="5704832314560344592" name="numPluginsLoaded" index="3NC_3j" />
         <property id="5704832314560662319" name="loaded" index="3NDmBG" />
         <child id="4277119496928220709" name="plugins" index="1f5Fuw" />
       </concept>
+      <concept id="2051553890368761083" name="org.campagnelab.gobyweb.interactive.structure.JobArea" flags="ng" index="3lubAv">
+        <property id="1997533223704022892" name="artifactRepoPath" index="EkYqe" />
+      </concept>
       <concept id="2051553890368778876" name="org.campagnelab.gobyweb.interactive.structure.ExecutionEnvironment" flags="ng" index="3lueso">
         <reference id="5865189911929158304" name="owner" index="9QaQ6" />
         <child id="1997533223701807309" name="pluginRepository" index="Esi$J" />
+        <child id="2051553890368785070" name="jobArea" index="3lu1Za" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -180,7 +183,6 @@
       <property role="3NC_3j" value="169" />
       <property role="Eu9oP" value="${org.campagnelab.gobyweb.pluginRepo}" />
       <property role="3NDmBG" value="true" />
-      <property role="2_qfHq" value="true" />
       <node concept="3jXL5H" id="10rnQzwTT1M" role="1f5Fuw">
         <property role="1f4ISL" value="1.2.1" />
         <property role="TrG5h" value="ANNOTATE_VCF" />
@@ -5998,6 +6000,9 @@
           <property role="T_gTM" value="_R2" />
         </node>
       </node>
+    </node>
+    <node concept="3lubAv" id="10rnQzwXsre" role="3lu1Za">
+      <property role="EkYqe" value="/Users/mas2182/temp/ARTIFACT_REPOSITORY" />
     </node>
   </node>
   <node concept="9PoQv" id="10rnQzwTSyK">

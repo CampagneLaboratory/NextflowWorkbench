@@ -3,10 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" implicit="true" />
+    <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" />
+    <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" />
     <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" implicit="true" />
   </imports>
   <registry>
@@ -55,7 +57,7 @@
   <node concept="2S6QgY" id="irqYu7mLhU">
     <property role="TrG5h" value="ReloadResourceVariables" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="iuj9:5yyd2HFS3xA" resolve="NyoShAwareScript" />
+    <ref role="2ZfgGC" to="iuj9:5yyd2HFS3xA" resolve="NYoShAwareScript" />
     <node concept="2S6ZIM" id="irqYu7mLhV" role="2ZfVej">
       <node concept="3clFbS" id="irqYu7mLhW" role="2VODD2">
         <node concept="3clFbF" id="irqYu7mLw4" role="3cqZAp">

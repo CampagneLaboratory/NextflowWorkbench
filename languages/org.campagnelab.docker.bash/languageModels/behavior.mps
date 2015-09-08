@@ -2344,5 +2344,30 @@
       <node concept="3clFbS" id="4_wVviqFDuW" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="10rnQzwVtMX">
+    <property role="3GE5qa" value="" />
+    <ref role="13h7C2" to="r9td:6A9boVQ01ys" resolve="GenerateBashFragment" />
+    <node concept="13i0hz" id="10rnQzwVu2Y" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="dockerOptions" />
+      <node concept="3Tm1VV" id="10rnQzwVu2Z" role="1B3o_S" />
+      <node concept="3clFbS" id="10rnQzwVu30" role="3clF47">
+        <node concept="3clFbF" id="10rnQzwVvgE" role="3cqZAp">
+          <node concept="2ShNRf" id="10rnQzwVKIX" role="3clFbG">
+            <node concept="Tc6Ow" id="10rnQzwXYtc" role="2ShVmc">
+              <node concept="17QB3L" id="10rnQzwXYDN" role="HW$YZ" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="10rnQzwXVm8" role="3clF45">
+        <node concept="17QB3L" id="10rnQzwXVma" role="_ZDj9" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="10rnQzwVtMY" role="13h7CW">
+      <node concept="3clFbS" id="10rnQzwVtMZ" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
