@@ -223,7 +223,7 @@
         </node>
         <node concept="lc7rE" id="6A9boVQ693h" role="3cqZAp">
           <node concept="la8eA" id="6A9boVQ693F" role="lcghm">
-            <property role="lacIc" value="source $JOB_AREA/" />
+            <property role="lacIc" value="source $JOB_AREA/$RESOURCE_OWNER/" />
           </node>
           <node concept="l9hG8" id="6A9boVQ7n1v" role="lcghm">
             <node concept="3cpWs3" id="6A9boVQ7uVD" role="lb14g">
@@ -252,7 +252,7 @@
             </node>
           </node>
           <node concept="la8eA" id="6A9boVQ7uib" role="lcghm">
-            <property role="lacIc" value="/export.sh" />
+            <property role="lacIc" value="/exports.sh" />
           </node>
           <node concept="l8MVK" id="6A9boVQ699L" role="lcghm" />
         </node>
