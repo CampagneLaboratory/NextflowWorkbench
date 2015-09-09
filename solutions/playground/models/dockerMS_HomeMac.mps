@@ -188,7 +188,7 @@
         </node>
       </node>
       <node concept="3xUnCN" id="6A9boVQaqhM" role="NgwMD">
-        <ref role="3jXLav" node="6A9boVQsJ7j" resolve="SAMTOOLS" />
+        <ref role="3jXLav" node="6A9boVQsJ4i" resolve="BISMARK" />
       </node>
       <node concept="3xUnCN" id="6A9boVQbNel" role="NgwMD">
         <ref role="3jXLav" node="6A9boVQsJ48" resolve="ANNOTATE_VCF" />

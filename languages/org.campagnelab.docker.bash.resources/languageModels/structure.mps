@@ -50,9 +50,9 @@
     <ref role="1TJDcQ" to="dzk5:1ORG9zeKa86" resolve="ResourceRef" />
     <node concept="1TJgyj" id="6A9boVQv2Xr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="artifactValues" />
+      <property role="20kJfa" value="attributeValues" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6A9boVQv2O5" resolve="ArtifactValue" />
+      <ref role="20lvS9" node="6A9boVQv2O5" resolve="AttributeValue" />
     </node>
     <node concept="1TJgyi" id="18MzsNNR1MW" role="1TKVEl">
       <property role="TrG5h" value="id" />
@@ -105,7 +105,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6A9boVQv2O5">
-    <property role="TrG5h" value="ArtifactValue" />
+    <property role="TrG5h" value="AttributeValue" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6A9boVQv2Oo" role="1TKVEl">
       <property role="TrG5h" value="value" />
