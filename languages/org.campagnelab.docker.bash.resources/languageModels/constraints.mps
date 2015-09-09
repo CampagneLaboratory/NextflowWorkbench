@@ -25,13 +25,16 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="6A9boVQ8yHp">
-    <ref role="1M2myG" to="iuj9:6A9boVQ8yHm" resolve="NyoShEnvVariableRef" />
+    <ref role="1M2myG" to="iuj9:6A9boVQ8yHm" resolve="NYoShEnvVariableRef" />
     <node concept="1N5Pfh" id="6A9boVQ8yHq" role="1Mr941">
       <ref role="1N5Vy1" to="iuj9:6A9boVQ8yHn" />
       <node concept="1dDu$B" id="6A9boVQ8yHr" role="1N6uqs">
         <ref role="1dDu$A" to="6pk0:5a_m_wWNCiv" resolve="EnvVariableDeclaration" />
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="6A9boVQv91m">
+    <ref role="1M2myG" to="iuj9:18MzsNNQZvZ" resolve="RequiredResource" />
   </node>
 </model>
 
