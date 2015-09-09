@@ -332,6 +332,26 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="5NMxi75S1KS" role="3cqZAp">
+                  <node concept="37vLTI" id="5NMxi75S2xk" role="3clFbG">
+                    <node concept="2OqwBi" id="5NMxi75S2Bj" role="37vLTx">
+                      <node concept="2GrUjf" id="5NMxi75S2$M" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="6A9boVQvD$Z" resolve="artifact" />
+                      </node>
+                      <node concept="3TrcHB" id="5NMxi75S2YN" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="5NMxi75S1Ti" role="37vLTJ">
+                      <node concept="37vLTw" id="5NMxi75S1KQ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6A9boVQvFQO" resolve="value" />
+                      </node>
+                      <node concept="3TrcHB" id="5NMxi75S23O" role="2OqNvi">
+                        <ref role="3TsBF5" to="iuj9:5NMxi75RA94" resolve="artifact" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="6A9boVQvLYb" role="3cqZAp">
                   <node concept="37vLTI" id="6A9boVQvMVh" role="3clFbG">
                     <node concept="2OqwBi" id="6A9boVQvN0O" role="37vLTx">

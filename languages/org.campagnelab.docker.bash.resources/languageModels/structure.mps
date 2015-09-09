@@ -107,6 +107,10 @@
   <node concept="1TIwiD" id="6A9boVQv2O5">
     <property role="TrG5h" value="AttributeValue" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5NMxi75RA94" role="1TKVEl">
+      <property role="TrG5h" value="artifact" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="6A9boVQv2Oo" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
