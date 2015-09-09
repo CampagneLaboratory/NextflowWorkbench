@@ -275,6 +275,25 @@
       <property role="TrG5h" value="reloadArtifacts" />
       <node concept="3Tm1VV" id="6A9boVQvvn_" role="1B3o_S" />
       <node concept="3clFbS" id="6A9boVQvvnA" role="3clF47">
+        <node concept="34ab3g" id="5NMxi75POsP" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="5NMxi75PQ9Q" role="34bqiv">
+            <node concept="2OqwBi" id="5NMxi75PQZW" role="3uHU7w">
+              <node concept="2OqwBi" id="5NMxi75PQeh" role="2Oq$k0">
+                <node concept="13iPFW" id="5NMxi75PQae" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5NMxi75PQMi" role="2OqNvi">
+                  <ref role="3Tt5mk" to="dzk5:1ORG9zeKa87" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="5NMxi75PRcV" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="5NMxi75POsR" role="3uHU7B">
+              <property role="Xl_RC" value="Loading artifacts for " />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="6A9boVQvwn6" role="3cqZAp">
           <node concept="2OqwBi" id="6A9boVQvx_u" role="3clFbG">
             <node concept="2OqwBi" id="6A9boVQvwoB" role="2Oq$k0">
