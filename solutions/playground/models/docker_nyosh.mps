@@ -60,6 +60,7 @@
     <language id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh">
       <concept id="7604659537835732229" name="org.campagnelab.bash.nyosh.structure.AttributeValue" flags="ng" index="2vXg2b">
         <property id="6697561975953449540" name="artifact" index="2pbet_" />
+        <property id="7604659537835732248" name="value" index="2vXg2m" />
       </concept>
       <concept id="6386724582662879334" name="org.campagnelab.bash.nyosh.structure.NYoShAwareScript" flags="ng" index="NgwLd">
         <child id="331977639694004412" name="pluginSystemRootDirectory" index="23NxHr" />
@@ -198,10 +199,12 @@
         <node concept="2vXg2b" id="5NMxi75S8xw" role="2vXgbl">
           <property role="2pbet_" value="VEP_CACHE" />
           <property role="TrG5h" value="organism" />
+          <property role="2vXg2m" value="human" />
         </node>
         <node concept="2vXg2b" id="5NMxi75S8xx" role="2vXgbl">
           <property role="2pbet_" value="VEP_CACHE" />
           <property role="TrG5h" value="ensembl-version-number" />
+          <property role="2vXg2m" value="75" />
         </node>
       </node>
       <node concept="3xUnCN" id="10rnQzwTU1H" role="NgwMD">
@@ -209,10 +212,12 @@
         <node concept="2vXg2b" id="5NMxi75S8xA" role="2vXgbl">
           <property role="2pbet_" value="INDEX" />
           <property role="TrG5h" value="organism" />
+          <property role="2vXg2m" value="human" />
         </node>
         <node concept="2vXg2b" id="5NMxi75S8xB" role="2vXgbl">
           <property role="2pbet_" value="INDEX" />
           <property role="TrG5h" value="reference-build" />
+          <property role="2vXg2m" value="unknown" />
         </node>
         <node concept="2vXg2b" id="5NMxi75S8xC" role="2vXgbl">
           <property role="2pbet_" value="INDEX" />

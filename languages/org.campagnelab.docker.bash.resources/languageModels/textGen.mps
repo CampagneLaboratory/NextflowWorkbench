@@ -186,6 +186,16 @@
             <property role="lacIc" value="--owner $RESOURCE_OWNER --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh " />
           </node>
         </node>
+        <node concept="lc7rE" id="6A9boVQwQFv" role="3cqZAp">
+          <node concept="l9S2W" id="6A9boVQwQOD" role="lcghm">
+            <node concept="2OqwBi" id="6A9boVQwQVn" role="lbANJ">
+              <node concept="117lpO" id="6A9boVQwQTN" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="6A9boVQwR4O" role="2OqNvi">
+                <ref role="3TtcxE" to="iuj9:6A9boVQv2Xr" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="lc7rE" id="6A9boVQ696i" role="3cqZAp">
           <node concept="la8eA" id="6A9boVQ696O" role="lcghm">
             <property role="lacIc" value="--repository  $REPOSITORY_DIR --resource " />
@@ -255,6 +265,51 @@
             <property role="lacIc" value="/exports.sh" />
           </node>
           <node concept="l8MVK" id="6A9boVQ699L" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6A9boVQwR5V">
+    <ref role="WuzLi" to="iuj9:6A9boVQv2O5" resolve="AttributeValue" />
+    <node concept="11bSqf" id="6A9boVQwR5W" role="11c4hB">
+      <node concept="3clFbS" id="6A9boVQwR5X" role="2VODD2">
+        <node concept="lc7rE" id="6A9boVQwR6l" role="3cqZAp">
+          <node concept="la8eA" id="6A9boVQwR6B" role="lcghm">
+            <property role="lacIc" value="--attribute-value " />
+          </node>
+          <node concept="l9hG8" id="6A9boVQwRlo" role="lcghm">
+            <node concept="2OqwBi" id="6A9boVQwRoh" role="lb14g">
+              <node concept="117lpO" id="6A9boVQwRmf" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6A9boVQwRyi" role="2OqNvi">
+                <ref role="3TsBF5" to="iuj9:5NMxi75RA94" resolve="artifact" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6A9boVQwR$Y" role="lcghm">
+            <property role="lacIc" value="." />
+          </node>
+          <node concept="l9hG8" id="6A9boVQwRBN" role="lcghm">
+            <node concept="2OqwBi" id="6A9boVQwRFc" role="lb14g">
+              <node concept="117lpO" id="6A9boVQwRDa" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6A9boVQwRP9" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6A9boVQwRRO" role="lcghm">
+            <property role="lacIc" value="=" />
+          </node>
+          <node concept="l9hG8" id="6A9boVQwRVP" role="lcghm">
+            <node concept="2OqwBi" id="6A9boVQwS0r" role="lb14g">
+              <node concept="117lpO" id="6A9boVQwRYp" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6A9boVQwSji" role="2OqNvi">
+                <ref role="3TsBF5" to="iuj9:6A9boVQv2Oo" resolve="value" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6A9boVQwSna" role="lcghm">
+            <property role="lacIc" value=" " />
+          </node>
         </node>
       </node>
     </node>
