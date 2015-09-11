@@ -62,7 +62,7 @@
   <node concept="1TIwiD" id="5yyd2HFS3xA">
     <property role="TrG5h" value="NYoShAwareScript" />
     <property role="34LRSv" value="nyosh script" />
-    <property role="R4oN_" value="A script that can request installation of NYoSh/GobyWeb resources and their artifacts" />
+    <property role="R4oN_" value="a bash script that can install/use NYoSh/GobyWeb resources" />
     <ref role="1TJDcQ" to="iowz:70dPcAeBye8" resolve="RichScript" />
     <node concept="1TJgyj" id="5yyd2HFS3y2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
