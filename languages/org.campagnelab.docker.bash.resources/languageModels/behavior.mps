@@ -259,6 +259,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1227022159410" name="jetbrains.mps.baseLanguage.collections.structure.AddFirstElementOperation" flags="nn" index="2Ke4WJ" />
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
@@ -526,6 +527,11 @@
             </node>
             <node concept="3clFbJ" id="6ojrriHmdu$" role="3cqZAp">
               <node concept="3clFbS" id="6ojrriHmduA" role="3clFbx">
+                <node concept="3SKdUt" id="6ojrriHpzNX" role="3cqZAp">
+                  <node concept="3SKdUq" id="6ojrriHpzRx" role="3SKWNk">
+                    <property role="3SKdUp" value="dependencies need to be added as first elements in order to be installed before the resource" />
+                  </node>
+                </node>
                 <node concept="3clFbF" id="6ojrriHmhqc" role="3cqZAp">
                   <node concept="2OqwBi" id="6ojrriHmin0" role="3clFbG">
                     <node concept="2OqwBi" id="6ojrriHmhrE" role="2Oq$k0">
@@ -536,8 +542,8 @@
                         <ref role="3TtcxE" to="iuj9:6ojrriHjIeL" />
                       </node>
                     </node>
-                    <node concept="TSZUe" id="6ojrriHmqyl" role="2OqNvi">
-                      <node concept="37vLTw" id="6ojrriHmqBM" role="25WWJ7">
+                    <node concept="2Ke4WJ" id="6ojrriHpwx1" role="2OqNvi">
+                      <node concept="37vLTw" id="6ojrriHpwx3" role="25WWJ7">
                         <ref role="3cqZAo" node="6ojrriHkQa1" resolve="requiredDep" />
                       </node>
                     </node>
