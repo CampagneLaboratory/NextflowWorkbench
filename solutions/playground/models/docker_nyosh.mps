@@ -208,19 +208,17 @@
         </node>
       </node>
       <node concept="3xUnCN" id="10rnQzwTU1H" role="NgwMD">
-        <ref role="3jXLav" node="5NMxi75Qoic" resolve="BWA_WITH_GOBY_ARTIFACT" />
-        <node concept="2vXg2b" id="5NMxi75S8xA" role="2vXgbl">
-          <property role="2pbet_" value="INDEX" />
+        <ref role="3jXLav" node="5NMxi75Qoj4" resolve="FAI_INDEXED_GENOMES" />
+        <node concept="2vXg2b" id="6A9boVQ$bth" role="2vXgbl">
+          <property role="2pbet_" value="SAMTOOLS_FAI_INDEX" />
           <property role="TrG5h" value="organism" />
-          <property role="2vXg2m" value="human" />
         </node>
-        <node concept="2vXg2b" id="5NMxi75S8xB" role="2vXgbl">
-          <property role="2pbet_" value="INDEX" />
+        <node concept="2vXg2b" id="6A9boVQ$bti" role="2vXgbl">
+          <property role="2pbet_" value="SAMTOOLS_FAI_INDEX" />
           <property role="TrG5h" value="reference-build" />
-          <property role="2vXg2m" value="unknown" />
         </node>
-        <node concept="2vXg2b" id="5NMxi75S8xC" role="2vXgbl">
-          <property role="2pbet_" value="INDEX" />
+        <node concept="2vXg2b" id="6A9boVQ$btj" role="2vXgbl">
+          <property role="2pbet_" value="SAMTOOLS_FAI_INDEX" />
           <property role="TrG5h" value="ensembl-version-number" />
         </node>
       </node>
