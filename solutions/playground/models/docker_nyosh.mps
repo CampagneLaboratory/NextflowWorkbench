@@ -202,37 +202,6 @@
           <property role="19SUeA" value="echo Hello" />
         </node>
       </node>
-      <node concept="3xUnCN" id="10rnQzwTU1E" role="NgwMD">
-        <ref role="3jXLav" node="5NMxi75QoiO" resolve="ENSEMBL_API" />
-        <node concept="2vXg2b" id="5NMxi75S8xw" role="2vXgbl">
-          <property role="2pbet_" value="VEP_CACHE" />
-          <property role="TrG5h" value="organism" />
-          <property role="2vXg2m" value="human" />
-        </node>
-        <node concept="2vXg2b" id="5NMxi75S8xx" role="2vXgbl">
-          <property role="2pbet_" value="VEP_CACHE" />
-          <property role="TrG5h" value="ensembl-version-number" />
-          <property role="2vXg2m" value="75" />
-        </node>
-      </node>
-      <node concept="3xUnCN" id="10rnQzwTU1H" role="NgwMD">
-        <ref role="3jXLav" node="6ojrriHiYHO" resolve="FAI_INDEXED_GENOMES" />
-        <node concept="2vXg2b" id="6A9boVQLoc4" role="2vXgbl">
-          <property role="2vd9Bg" value="FAI_INDEXED_GENOMES" />
-          <property role="2pbet_" value="SAMTOOLS_FAI_INDEX" />
-          <property role="TrG5h" value="organism" />
-        </node>
-        <node concept="2vXg2b" id="6A9boVQLoc5" role="2vXgbl">
-          <property role="2vd9Bg" value="FAI_INDEXED_GENOMES" />
-          <property role="2pbet_" value="SAMTOOLS_FAI_INDEX" />
-          <property role="TrG5h" value="reference-build" />
-        </node>
-        <node concept="2vXg2b" id="6A9boVQLoc6" role="2vXgbl">
-          <property role="2vd9Bg" value="FAI_INDEXED_GENOMES" />
-          <property role="2pbet_" value="SAMTOOLS_FAI_INDEX" />
-          <property role="TrG5h" value="ensembl-version-number" />
-        </node>
-      </node>
       <node concept="1IqXV7" id="5NMxi75E_3Y" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.AMF249DSc1/Render" />
         <property role="TrG5h" value="Apple_PubSub_Socket_Render" />
