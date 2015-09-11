@@ -329,6 +329,9 @@
           </node>
           <node concept="3F0ifn" id="6A9boVQKsOa" role="3EmGlc">
             <property role="3F0ifm" value="show attributes" />
+            <node concept="Vb9p2" id="6A9boVQOaNl" role="3F10Kt">
+              <property role="Vbekb" value="ITALIC" />
+            </node>
           </node>
         </node>
         <node concept="pkWqt" id="6A9boVQv4dV" role="pqm2j">
@@ -354,6 +357,9 @@
     <node concept="3EZMnI" id="6A9boVQv2Vw" role="2wV5jI">
       <node concept="3F0A7n" id="5NMxi75RAMD" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:5NMxi75RA94" resolve="artifact" />
+        <node concept="VPxyj" id="6A9boVQOaCa" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
       </node>
       <node concept="3F0ifn" id="5NMxi75RAN2" role="3EZMnx">
         <property role="3F0ifm" value="." />
