@@ -43,6 +43,7 @@
       <concept id="7604659537835732229" name="org.campagnelab.bash.nyosh.structure.AttributeValue" flags="ng" index="2vXg2b">
         <property id="6697561975953449540" name="artifact" index="2pbet_" />
         <property id="7604659537840026718" name="resource" index="2vd9Bg" />
+        <property id="7604659537835732248" name="value" index="2vXg2m" />
       </concept>
       <concept id="6386724582662879334" name="org.campagnelab.bash.nyosh.structure.NYoShAwareScript" flags="ng" index="NgwLd">
         <child id="331977639694004412" name="pluginSystemRootDirectory" index="23NxHr" />
@@ -230,6 +231,7 @@
           <property role="2vd9Bg" value="FAI_INDEXED_GENOMES" />
           <property role="2pbet_" value="SAMTOOLS_FAI_INDEX" />
           <property role="TrG5h" value="organism" />
+          <property role="2vXg2m" value="HOMO_SAPIENS" />
         </node>
         <node concept="2vXg2b" id="6A9boVQO9Oi" role="2vXgbl">
           <property role="2vd9Bg" value="FAI_INDEXED_GENOMES" />
