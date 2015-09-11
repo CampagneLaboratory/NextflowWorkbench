@@ -277,6 +277,17 @@
           <node concept="la8eA" id="6A9boVQwR6B" role="lcghm">
             <property role="lacIc" value="--attribute-value " />
           </node>
+          <node concept="l9hG8" id="6A9boVQJvzl" role="lcghm">
+            <node concept="2OqwBi" id="6A9boVQJvCx" role="lb14g">
+              <node concept="117lpO" id="6A9boVQJvAv" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6A9boVQJvVo" role="2OqNvi">
+                <ref role="3TsBF5" to="iuj9:6A9boVQJrhu" resolve="resource" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6A9boVQJvZI" role="lcghm">
+            <property role="lacIc" value="." />
+          </node>
           <node concept="l9hG8" id="6A9boVQwRlo" role="lcghm">
             <node concept="2OqwBi" id="6A9boVQwRoh" role="lb14g">
               <node concept="117lpO" id="6A9boVQwRmf" role="2Oq$k0" />
