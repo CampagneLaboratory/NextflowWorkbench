@@ -60,6 +60,7 @@
     <language id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh">
       <concept id="7604659537835732229" name="org.campagnelab.bash.nyosh.structure.AttributeValue" flags="ng" index="2vXg2b">
         <property id="6697561975953449540" name="artifact" index="2pbet_" />
+        <property id="7604659537840026718" name="resource" index="2vd9Bg" />
         <property id="7604659537835732248" name="value" index="2vXg2m" />
       </concept>
       <concept id="6386724582662879334" name="org.campagnelab.bash.nyosh.structure.NYoShAwareScript" flags="ng" index="NgwLd">
@@ -209,15 +210,18 @@
       </node>
       <node concept="3xUnCN" id="10rnQzwTU1H" role="NgwMD">
         <ref role="3jXLav" node="5NMxi75Qoj4" resolve="FAI_INDEXED_GENOMES" />
-        <node concept="2vXg2b" id="6A9boVQ$bth" role="2vXgbl">
+        <node concept="2vXg2b" id="6A9boVQLoc4" role="2vXgbl">
+          <property role="2vd9Bg" value="FAI_INDEXED_GENOMES" />
           <property role="2pbet_" value="SAMTOOLS_FAI_INDEX" />
           <property role="TrG5h" value="organism" />
         </node>
-        <node concept="2vXg2b" id="6A9boVQ$bti" role="2vXgbl">
+        <node concept="2vXg2b" id="6A9boVQLoc5" role="2vXgbl">
+          <property role="2vd9Bg" value="FAI_INDEXED_GENOMES" />
           <property role="2pbet_" value="SAMTOOLS_FAI_INDEX" />
           <property role="TrG5h" value="reference-build" />
         </node>
-        <node concept="2vXg2b" id="6A9boVQ$btj" role="2vXgbl">
+        <node concept="2vXg2b" id="6A9boVQLoc6" role="2vXgbl">
+          <property role="2vd9Bg" value="FAI_INDEXED_GENOMES" />
           <property role="2pbet_" value="SAMTOOLS_FAI_INDEX" />
           <property role="TrG5h" value="ensembl-version-number" />
         </node>
