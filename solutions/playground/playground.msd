@@ -44,6 +44,7 @@
     <usedLanguage>1f5314a5-15b8-491d-89ca-13256a5ead51(org.campagnelab.gobyweb.tags)</usedLanguage>
     <usedLanguage>f55d6853-b373-41dd-bc8e-331fd6e2c764(org.campagnelab.bash.nyosh)</usedLanguage>
     <usedLanguage>57af9408-ffae-472e-9367-5cb44434e8b3(org.campagnelab.gobyweb.interactive.users)</usedLanguage>
+    <usedLanguage>b8e13d6b-cd9f-48e3-99ae-1c182918d003(org.campagnelab.gobyweb.interactive.organisms)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)</usedDevKit>

@@ -13,6 +13,7 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -52,7 +53,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="attributeValues" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6A9boVQv2O5" resolve="Attribute" />
+      <ref role="20lvS9" node="6A9boVQPeld" resolve="ClonableAttribute" />
     </node>
     <node concept="1TJgyj" id="6ojrriHjIeL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -126,6 +127,31 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="6A9boVQv2Ok" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6A9boVQPeld">
+    <property role="TrG5h" value="ClonableAttribute" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6A9boVQQrjW" role="1TKVEl">
+      <property role="TrG5h" value="resource" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6A9boVQQrjX" role="1TKVEl">
+      <property role="TrG5h" value="artifact" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6A9boVQQrjY" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="6A9boVQPem8" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="attribute" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="bs99:7arfhhdt3J1" resolve="Attribute" />
+    </node>
+    <node concept="PrWs8" id="6A9boVQQrjJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
