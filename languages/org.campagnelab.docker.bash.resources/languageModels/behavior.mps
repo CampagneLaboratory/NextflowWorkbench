@@ -161,7 +161,6 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
-      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -615,7 +614,7 @@
     </node>
     <node concept="13i0hz" id="6A9boVQTJQ6" role="13h7CS">
       <property role="TrG5h" value="findAttributeToRef" />
-      <node concept="3Tm6S6" id="6A9boVQTMpE" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6A9boVQZdzB" role="1B3o_S" />
       <node concept="3clFbS" id="6A9boVQTJQ8" role="3clF47">
         <node concept="3clFbJ" id="6A9boVQTYs$" role="3cqZAp">
           <node concept="3clFbS" id="6A9boVQTYs_" role="3clFbx">
@@ -703,16 +702,19 @@
                                             </node>
                                           </node>
                                           <node concept="10Nm6u" id="6A9boVQVqAC" role="3K4GZi" />
-                                          <node concept="17R0WA" id="6A9boVQVezl" role="3K4Cdx">
-                                            <node concept="37vLTw" id="6A9boVQVeDz" role="3uHU7w">
-                                              <ref role="3cqZAo" node="6A9boVQTTbs" resolve="attributeName" />
-                                            </node>
-                                            <node concept="2OqwBi" id="6A9boVQVe19" role="3uHU7B">
+                                          <node concept="2OqwBi" id="6A9boVR2Rcp" role="3K4Cdx">
+                                            <node concept="2OqwBi" id="6A9boVQVe19" role="2Oq$k0">
                                               <node concept="37vLTw" id="6A9boVQVdUV" role="2Oq$k0">
                                                 <ref role="3cqZAo" node="6A9boVQVdgc" resolve="attribute" />
                                               </node>
                                               <node concept="3TrcHB" id="6A9boVQVehX" role="2OqNvi">
                                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                              </node>
+                                            </node>
+                                            <node concept="liA8E" id="6A9boVR2SdI" role="2OqNvi">
+                                              <ref role="37wK5l" to="e2lb:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+                                              <node concept="37vLTw" id="6A9boVR2Stq" role="37wK5m">
+                                                <ref role="3cqZAo" node="6A9boVQTTbs" resolve="attributeName" />
                                               </node>
                                             </node>
                                           </node>
