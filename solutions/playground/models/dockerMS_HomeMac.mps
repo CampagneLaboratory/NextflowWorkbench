@@ -259,7 +259,7 @@
           <property role="2vk9_N" value="INDEX" />
           <property role="TrG5h" value="reference-build" />
           <node concept="2t8VsU" id="4DwTgsTI4YK" role="2vnsw6">
-            <property role="2t8Vu2" value="" />
+            <property role="2t8Vu2" value="1000GENOMES" />
             <property role="TrG5h" value="reference-build" />
           </node>
         </node>
@@ -268,7 +268,7 @@
           <property role="2vk9_N" value="INDEX" />
           <property role="TrG5h" value="ensembl-version-number" />
           <node concept="2t8VsU" id="4DwTgsTI4YM" role="2vnsw6">
-            <property role="2t8Vu2" value="" />
+            <property role="2t8Vu2" value="37" />
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
