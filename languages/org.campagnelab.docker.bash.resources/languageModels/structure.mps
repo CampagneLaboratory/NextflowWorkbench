@@ -53,7 +53,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="attributeValues" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6A9boVQPeld" resolve="ClonableAttribute" />
+      <ref role="20lvS9" node="6A9boVQPeld" resolve="AttributeAdapterForResource" />
     </node>
     <node concept="1TJgyj" id="6ojrriHjIeL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -131,7 +131,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6A9boVQPeld">
-    <property role="TrG5h" value="ClonableAttribute" />
+    <property role="TrG5h" value="AttributeAdapterForResource" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6A9boVQQrjW" role="1TKVEl">
       <property role="TrG5h" value="resource" />
@@ -153,6 +153,16 @@
     </node>
     <node concept="PrWs8" id="6A9boVQQrjJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6A9boVQTofD">
+    <property role="TrG5h" value="ReferenceAttribute" />
+    <property role="R4oN_" value="An attribute that references a value in another attribute" />
+    <ref role="1TJDcQ" to="bs99:7arfhhdt3J1" resolve="Attribute" />
+    <node concept="1TJgyj" id="6A9boVQTogb" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <ref role="20lvS9" to="bs99:7arfhhdt3J1" resolve="Attribute" />
     </node>
   </node>
 </model>

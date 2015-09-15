@@ -9,6 +9,7 @@
   <dependencies>
     <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">d0df1055-918a-4cf9-96f9-effded676ae2(org.campagnelab.bio.species.morgs)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)</usedLanguage>
@@ -45,6 +46,8 @@
     <usedLanguage>f55d6853-b373-41dd-bc8e-331fd6e2c764(org.campagnelab.bash.nyosh)</usedLanguage>
     <usedLanguage>57af9408-ffae-472e-9367-5cb44434e8b3(org.campagnelab.gobyweb.interactive.users)</usedLanguage>
     <usedLanguage>b8e13d6b-cd9f-48e3-99ae-1c182918d003(org.campagnelab.gobyweb.interactive.organisms)</usedLanguage>
+    <usedLanguage>0e33afe3-d914-492d-8584-911dae0711b2(org.campagnelab.gobyweb.interactive.genomes)</usedLanguage>
+    <usedLanguage>166cc73c-4d0f-4757-a007-8527cb58de2e(org.campagnelab.bio.species)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)</usedDevKit>
@@ -74,6 +77,7 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="a21a7294-c126-4f63-8335-8fecd8c28c7e" fqName="org.campagnelab.NYoSh" version="0" />
     <language id="f55d6853-b373-41dd-bc8e-331fd6e2c764" fqName="org.campagnelab.bash.nyosh" version="-1" />
+    <language id="166cc73c-4d0f-4757-a007-8527cb58de2e" fqName="org.campagnelab.bio.species" version="0" />
     <language id="7620dd3f-7541-48a3-b1e6-01cced81a7a5" fqName="org.campagnelab.clusterConfig" version="0" />
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" fqName="org.campagnelab.docker" version="0" />
     <language id="3b74e3b7-7336-414d-8899-64a293a44a07" fqName="org.campagnelab.docker.bash" version="0" />

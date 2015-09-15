@@ -18,6 +18,7 @@
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dzk5" ref="r:2bfcc546-5c51-4762-9df2-c43920be4458(org.campagnelab.gobyweb.plugins.structure)" implicit="true" />
+    <import index="lcm8" ref="r:19e666fd-ce33-4549-bbc2-aa106ce25584(org.campagnelab.gobyweb.interactive.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -87,6 +88,13 @@
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
+        <child id="1225898971709" name="getter" index="1Hhtcw" />
+      </concept>
+      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
+        <child id="1225900141900" name="modelAccessor" index="1HlULh" />
+      </concept>
+      <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -106,10 +114,17 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -399,7 +414,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6A9boVQPemh">
-    <ref role="1XX52x" to="iuj9:6A9boVQPeld" resolve="ClonableAttribute" />
+    <ref role="1XX52x" to="iuj9:6A9boVQPeld" resolve="AttributeAdapterForResource" />
     <node concept="3EZMnI" id="6A9boVQPeoe" role="2wV5jI">
       <node concept="3F0A7n" id="6A9boVQRwWl" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:6A9boVQQrjX" resolve="artifact" />
@@ -417,6 +432,48 @@
         <ref role="1NtTu8" to="iuj9:6A9boVQPem8" />
       </node>
       <node concept="2iRfu4" id="6A9boVQPeoh" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6A9boVQTotK">
+    <ref role="1XX52x" to="iuj9:6A9boVQTofD" resolve="ReferenceAttribute" />
+    <node concept="3EZMnI" id="6A9boVQTovQ" role="2wV5jI">
+      <node concept="3F0A7n" id="6A9boVQUZPZ" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="6A9boVQTo$u" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+        <node concept="VPxyj" id="6A9boVQU1VK" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="1HlG4h" id="6A9boVQU0fx" role="3EZMnx">
+        <node concept="1HfYo3" id="6A9boVQU0fz" role="1HlULh">
+          <node concept="3TQlhw" id="6A9boVQU0f_" role="1Hhtcw">
+            <node concept="3clFbS" id="6A9boVQU0fB" role="2VODD2">
+              <node concept="3clFbF" id="6A9boVQU0l0" role="3cqZAp">
+                <node concept="2OqwBi" id="6A9boVQU0Ys" role="3clFbG">
+                  <node concept="2OqwBi" id="6A9boVQU0pQ" role="2Oq$k0">
+                    <node concept="pncrf" id="6A9boVQU0kZ" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="6A9boVQU0F8" role="2OqNvi">
+                      <ref role="3Tt5mk" to="iuj9:6A9boVQTogb" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="6A9boVQU1eu" role="2OqNvi">
+                    <ref role="37wK5l" to="lcm8:1e0XlmeCJpp" resolve="valueAsString" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VPxyj" id="6A9boVQU1Xv" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6A9boVQU2bp" role="3EZMnx">
+        <property role="3F0ifm" value="(ref)" />
+      </node>
+      <node concept="2iRfu4" id="6A9boVQTovT" role="2iSdaV" />
     </node>
   </node>
 </model>
