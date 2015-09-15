@@ -217,27 +217,27 @@
             <property role="2vk9_M" value="ENSEMBL_GENOMES" />
             <property role="2vk9_N" value="TOPLEVEL" />
             <property role="TrG5h" value="organism" />
-            <node concept="2vraTB" id="4DwTgsTI4YY" role="2vnsw6">
+            <node concept="2t8VsU" id="4DwTgsTMtjc" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
               <property role="TrG5h" value="organism" />
-              <ref role="2vraA5" node="4DwTgsTI4YI" resolve="organism" />
             </node>
           </node>
           <node concept="2vnsz3" id="4DwTgsTI4YZ" role="2vXgbl">
             <property role="2vk9_M" value="ENSEMBL_GENOMES" />
             <property role="2vk9_N" value="TOPLEVEL" />
             <property role="TrG5h" value="reference-build" />
-            <node concept="2vraTB" id="4DwTgsTI4Z0" role="2vnsw6">
+            <node concept="2t8VsU" id="4DwTgsTMtjd" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
               <property role="TrG5h" value="reference-build" />
-              <ref role="2vraA5" node="4DwTgsTI4YK" resolve="reference-build" />
             </node>
           </node>
           <node concept="2vnsz3" id="4DwTgsTI4Z1" role="2vXgbl">
             <property role="2vk9_M" value="ENSEMBL_GENOMES" />
             <property role="2vk9_N" value="TOPLEVEL" />
             <property role="TrG5h" value="ensembl-version-number" />
-            <node concept="2vraTB" id="4DwTgsTI4Z2" role="2vnsw6">
+            <node concept="2t8VsU" id="4DwTgsTMtje" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
               <property role="TrG5h" value="ensembl-version-number" />
-              <ref role="2vraA5" node="4DwTgsTI4YM" resolve="ensembl-version-number" />
             </node>
           </node>
         </node>

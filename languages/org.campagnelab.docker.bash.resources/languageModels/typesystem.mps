@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="lcm8" ref="r:19e666fd-ce33-4549-bbc2-aa106ce25584(org.campagnelab.gobyweb.interactive.behavior)" implicit="true" />
     <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" implicit="true" />
     <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" implicit="true" />
     <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" implicit="true" />
@@ -438,6 +439,48 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="4DwTgsTMuy8">
+    <property role="TrG5h" value="check_AttributeAdapterForResource" />
+    <node concept="3clFbS" id="4DwTgsTMuy9" role="18ibNy">
+      <node concept="3clFbJ" id="4DwTgsTMuH1" role="3cqZAp">
+        <node concept="3clFbS" id="4DwTgsTMuH2" role="3clFbx">
+          <node concept="2MkqsV" id="4DwTgsTMxbF" role="3cqZAp">
+            <node concept="Xl_RD" id="4DwTgsTMxbG" role="2MkJ7o">
+              <property role="Xl_RC" value="Value is missing." />
+            </node>
+            <node concept="2OqwBi" id="4DwTgsTMxzY" role="2OEOjV">
+              <node concept="1YBJjd" id="4DwTgsTMxyf" role="2Oq$k0">
+                <ref role="1YBMHb" node="4DwTgsTMuyb" resolve="adapter" />
+              </node>
+              <node concept="3TrEf2" id="4DwTgsTMxJ8" role="2OqNvi">
+                <ref role="3Tt5mk" to="iuj9:6A9boVQPem8" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="4DwTgsTMv$4" role="3clFbw">
+          <node concept="2OqwBi" id="4DwTgsTMv8h" role="2Oq$k0">
+            <node concept="2OqwBi" id="4DwTgsTMuJi" role="2Oq$k0">
+              <node concept="1YBJjd" id="4DwTgsTMuHj" role="2Oq$k0">
+                <ref role="1YBMHb" node="4DwTgsTMuyb" resolve="adapter" />
+              </node>
+              <node concept="3TrEf2" id="4DwTgsTMuSM" role="2OqNvi">
+                <ref role="3Tt5mk" to="iuj9:6A9boVQPem8" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="4DwTgsTMvr5" role="2OqNvi">
+              <ref role="37wK5l" to="lcm8:1e0XlmeCJpp" resolve="valueAsString" />
+            </node>
+          </node>
+          <node concept="17RlXB" id="4DwTgsTMx8C" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4DwTgsTMuyb" role="1YuTPh">
+      <property role="TrG5h" value="adapter" />
+      <ref role="1YaFvo" to="iuj9:6A9boVQPeld" resolve="AttributeAdapterForResource" />
     </node>
   </node>
 </model>
