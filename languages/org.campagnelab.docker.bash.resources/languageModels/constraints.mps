@@ -117,6 +117,11 @@
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="6A9boVQ8yHp">
     <ref role="1M2myG" to="iuj9:6A9boVQ8yHm" resolve="NYoShEnvVariableRef" />
@@ -128,6 +133,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="6A9boVQv91m">
+    <property role="3GE5qa" value="resources" />
     <ref role="1M2myG" to="iuj9:18MzsNNQZvZ" resolve="RequiredResource" />
     <node concept="1N5Pfh" id="6A9boVQvvm_" role="1Mr941">
       <ref role="1N5Vy1" to="dzk5:1ORG9zeKa87" />
@@ -289,6 +295,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="6A9boVQYWZa">
+    <property role="3GE5qa" value="resources" />
     <ref role="1M2myG" to="iuj9:6A9boVQTofD" resolve="ReferenceAttribute" />
     <node concept="nKS2y" id="6A9boVQYX0y" role="1MLUbF">
       <node concept="3clFbS" id="6A9boVQYX0z" role="2VODD2">

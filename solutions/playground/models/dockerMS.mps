@@ -214,7 +214,7 @@
   </node>
   <node concept="VuPG2" id="6fIiQMMz3r_">
     <property role="TrG5h" value="artifacts-software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile7651392845405974052.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile7587648378219641865.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="6fIiQMM$wKy" role="VuOVn">
       <node concept="VtuK3" id="6fIiQMM$_RF" role="VuO5T">
@@ -258,7 +258,7 @@
     <node concept="VugRC" id="3P1oJbjPLK9" role="VuOVn">
       <node concept="19SGf9" id="3P1oJbjPLKD" role="Vugyn">
         <node concept="19SUe$" id="3P1oJbjPLKE" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; rm -rf plugins/analyses/ plugins/aligners/ plugins/tasks/ plugins/filesets \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo done" />
+          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; rm -rf plugins/analyses/ plugins/aligners/ plugins/tasks/ plugins/filesets \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; $HOME/.bashrc " />
         </node>
       </node>
     </node>
@@ -272,8 +272,8 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="17OfmPzVNZa" role="3blhQR">
-      <ref role="3blhQY" node="17OfmPzVNZ9" resolve="artifacts-software_Image" />
+    <node concept="3blhQM" id="17OfmPzVQ0O" role="3blhQR">
+      <ref role="3blhQY" node="17OfmPzVQ0N" resolve="artifacts-software_Image" />
     </node>
   </node>
   <node concept="2E_JVc" id="3P1oJbjPVxa">
@@ -487,12 +487,12 @@
       <property role="GbyUj" value="artifact-software" />
     </node>
   </node>
-  <node concept="2E_JVc" id="17OfmPzVNZ9">
-    <property role="2E_JEh" value="2617f0f53ec0" />
+  <node concept="2E_JVc" id="17OfmPzVQ0N">
+    <property role="2E_JEh" value="017ab789fa4a" />
     <property role="TrG5h" value="artifacts-software_Image" />
     <property role="GSh9r" value="mas2181/artifact-software:latest" />
     <ref role="2E_BxF" node="6fIiQMMz3r_" resolve="artifacts-software" />
-    <node concept="Gyxd7" id="17OfmPzVO19" role="Gyxcj">
+    <node concept="Gyxd7" id="17OfmPzVQ2F" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="artifact-software" />
       <property role="Gyxd1" value="latest" />

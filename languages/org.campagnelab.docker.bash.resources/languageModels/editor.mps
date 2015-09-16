@@ -26,6 +26,7 @@
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="6046489571270834038" name="foldedCellModel" index="3EmGlc" />
@@ -131,6 +132,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -212,6 +216,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6A9boVQurqD">
+    <property role="3GE5qa" value="resources" />
     <ref role="1XX52x" to="iuj9:18MzsNNQZvZ" resolve="RequiredResource" />
     <node concept="3EZMnI" id="5NMxi75QqBZ" role="2wV5jI">
       <node concept="l2Vlx" id="5NMxi75Rm0N" role="2iSdaV" />
@@ -414,10 +419,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="6A9boVQPemh">
+    <property role="3GE5qa" value="resources" />
     <ref role="1XX52x" to="iuj9:6A9boVQPeld" resolve="AttributeAdapterForResource" />
     <node concept="3EZMnI" id="6A9boVQPeoe" role="2wV5jI">
       <node concept="3F0A7n" id="6A9boVQRwWl" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:6A9boVQQrjX" resolve="artifact" />
+        <node concept="VPxyj" id="17OfmPzU4Sj" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
       </node>
       <node concept="3F0ifn" id="6A9boVQRwWx" role="3EZMnx">
         <property role="3F0ifm" value="." />
@@ -435,6 +444,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6A9boVQTotK">
+    <property role="3GE5qa" value="resources" />
     <ref role="1XX52x" to="iuj9:6A9boVQTofD" resolve="ReferenceAttribute" />
     <node concept="3EZMnI" id="6A9boVQTovQ" role="2wV5jI">
       <node concept="3F0A7n" id="6A9boVQUZPZ" role="3EZMnx">
@@ -486,6 +496,75 @@
       <node concept="3F0ifn" id="6A9boVR0FVR" role="3EZMnx">
         <property role="3F0ifm" value=")" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="17OfmPzXYHA">
+    <property role="3GE5qa" value="resources" />
+    <ref role="1XX52x" to="iuj9:17OfmPzVQ4z" resolve="ResourceRangeContainer" />
+    <node concept="3EZMnI" id="17OfmPzXYHL" role="2wV5jI">
+      <node concept="3F0ifn" id="17OfmPzXYHV" role="3EZMnx">
+        <property role="3F0ifm" value="Resources:" />
+      </node>
+      <node concept="3EZMnI" id="17OfmP$3Rf0" role="3EZMnx">
+        <node concept="2iRkQZ" id="17OfmP$3Rf1" role="2iSdaV" />
+        <node concept="3F2HdR" id="17OfmPzXYI4" role="3EZMnx">
+          <ref role="1NtTu8" to="iuj9:17OfmPzVQ56" />
+          <node concept="lj46D" id="17OfmPzXYLC" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="2iRkQZ" id="17OfmPzXYI6" role="2czzBx" />
+          <node concept="pj6Ft" id="17OfmPzXYJP" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="17OfmP$3R50" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="VPxyj" id="17OfmPzXYSM" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="lj46D" id="17OfmP$3Rhc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="17OfmP$3R6a" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="17OfmPzZzjP">
+    <property role="3GE5qa" value="resources" />
+    <ref role="1XX52x" to="iuj9:17OfmPzVOdS" resolve="ResourceRange" />
+    <node concept="3EZMnI" id="17OfmPzZzk0" role="2wV5jI">
+      <node concept="3F0A7n" id="17OfmP$0C_i" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="17OfmP$0C_B" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F0ifn" id="17OfmP$0CA0" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F2HdR" id="17OfmPzZzke" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iuj9:17OfmPzZzjH" />
+        <node concept="2iRfu4" id="17OfmP$2Wdk" role="2czzBx" />
+        <node concept="pj6Ft" id="17OfmPzZzm1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="17OfmPzZzk3" role="2iSdaV" />
+      <node concept="3F0ifn" id="17OfmP$0CAt" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="17OfmP$0YMG">
+    <property role="3GE5qa" value="resources" />
+    <ref role="1XX52x" to="iuj9:17OfmPzVOE4" resolve="ResourceVersion" />
+    <node concept="3EZMnI" id="17OfmP$0YMR" role="2wV5jI">
+      <node concept="3F0A7n" id="17OfmP$0YN5" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="17OfmP$0YMU" role="2iSdaV" />
     </node>
   </node>
 </model>

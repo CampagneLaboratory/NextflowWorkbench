@@ -80,6 +80,13 @@
         <child id="7604659537835732827" name="attributeValues" index="2vXgbl" />
         <child id="7355343239195321265" name="dependencies" index="3bnoS5" />
       </concept>
+      <concept id="1293726532999536931" name="org.campagnelab.bash.nyosh.structure.ResourceRangeContainer" flags="ng" index="1M6PLe">
+        <child id="1293726532999536966" name="ranges" index="1M6PKF" />
+      </concept>
+      <concept id="1293726532999531140" name="org.campagnelab.bash.nyosh.structure.ResourceVersion" flags="ng" index="1M6RvD" />
+      <concept id="1293726532999529336" name="org.campagnelab.bash.nyosh.structure.ResourceRange" flags="ng" index="1M6RSl">
+        <child id="1293726533000508653" name="versions" index="1M2wA0" />
+      </concept>
     </language>
     <language id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash">
       <concept id="147628039490029687" name="org.campagnelab.docker.bash.structure.DockerBash" flags="ng" index="1QJbas">
@@ -6998,6 +7005,476 @@
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="mas2181" />
       <property role="GbyUj" value="artifact-software" />
+    </node>
+  </node>
+  <node concept="1M6PLe" id="17OfmPzXdqJ">
+    <node concept="1M6RSl" id="17OfmP$2VCa" role="1M6PKF">
+      <property role="TrG5h" value="ANNOTATE_VCF" />
+      <node concept="1M6RvD" id="17OfmP$2VCb" role="1M2wA0">
+        <property role="TrG5h" value="1.2.1" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCc" role="1M6PKF">
+      <property role="TrG5h" value="BASH_LIBRARY" />
+      <node concept="1M6RvD" id="17OfmP$2VCd" role="1M2wA0">
+        <property role="TrG5h" value="1.0" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCe" role="1M6PKF">
+      <property role="TrG5h" value="BEDTOOLS" />
+      <node concept="1M6RvD" id="17OfmP$2VCf" role="1M2wA0">
+        <property role="TrG5h" value="2.17.0" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCg" role="1M6PKF">
+      <property role="TrG5h" value="BISMARK_ARTIFACT" />
+      <node concept="1M6RvD" id="17OfmP$2VCh" role="1M2wA0">
+        <property role="TrG5h" value="0.7.12.2" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCi" role="1M6PKF">
+      <property role="TrG5h" value="BISMARK" />
+      <node concept="1M6RvD" id="17OfmP$2VCj" role="1M2wA0">
+        <property role="TrG5h" value="0.7.4" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCk" role="1M6PKF">
+      <property role="TrG5h" value="BOWTIE2_ARTIFACT" />
+      <node concept="1M6RvD" id="17OfmP$2VCl" role="1M2wA0">
+        <property role="TrG5h" value="2.1.0" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCm" role="1M6PKF">
+      <property role="TrG5h" value="BOWTIE2" />
+      <node concept="1M6RvD" id="17OfmP$2VCn" role="1M2wA0">
+        <property role="TrG5h" value="2.0.0.5" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCo" role="1M6PKF">
+      <property role="TrG5h" value="BWA_WITH_GOBY" />
+      <node concept="1M6RvD" id="17OfmP$2VCp" role="1M2wA0">
+        <property role="TrG5h" value="0.5.9.16" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VCq" role="1M2wA0">
+        <property role="TrG5h" value="0.5.9.16.1" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VCr" role="1M2wA0">
+        <property role="TrG5h" value="0.5.9.16.2" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCs" role="1M6PKF">
+      <property role="TrG5h" value="BWA_WITH_GOBY_ARTIFACT" />
+      <node concept="1M6RvD" id="17OfmP$2VCt" role="1M2wA0">
+        <property role="TrG5h" value="0.5.9.16.7" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCu" role="1M6PKF">
+      <property role="TrG5h" value="DESEQ" />
+      <node concept="1M6RvD" id="17OfmP$2VCv" role="1M2wA0">
+        <property role="TrG5h" value="1.8.3.2" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCw" role="1M6PKF">
+      <property role="TrG5h" value="DESEQ_SCRIPT" />
+      <node concept="1M6RvD" id="17OfmP$2VCx" role="1M2wA0">
+        <property role="TrG5h" value="2012.07.25" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCy" role="1M6PKF">
+      <property role="TrG5h" value="EDGER" />
+      <node concept="1M6RvD" id="17OfmP$2VCz" role="1M2wA0">
+        <property role="TrG5h" value="2.6.12.2" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VC$" role="1M2wA0">
+        <property role="TrG5h" value="3.6.8" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VC_" role="1M2wA0">
+        <property role="TrG5h" value="3.6.8.1" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VCA" role="1M2wA0">
+        <property role="TrG5h" value="3.8.4.1" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCB" role="1M6PKF">
+      <property role="TrG5h" value="EDGE_R_SCRIPT" />
+      <node concept="1M6RvD" id="17OfmP$2VCC" role="1M2wA0">
+        <property role="TrG5h" value="2013.05.17" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VCD" role="1M2wA0">
+        <property role="TrG5h" value="2014.08.27" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VCE" role="1M2wA0">
+        <property role="TrG5h" value="2014.08.27" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCF" role="1M6PKF">
+      <property role="TrG5h" value="ENSEMBL_ANNOTATIONS" />
+      <node concept="1M6RvD" id="17OfmP$2VCG" role="1M2wA0">
+        <property role="TrG5h" value="1.1.2" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VCH" role="1M2wA0">
+        <property role="TrG5h" value="2.1.4" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCI" role="1M6PKF">
+      <property role="TrG5h" value="ENSEMBL_API" />
+      <node concept="1M6RvD" id="17OfmP$2VCJ" role="1M2wA0">
+        <property role="TrG5h" value="73" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VCK" role="1M2wA0">
+        <property role="TrG5h" value="75.2" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VCL" role="1M2wA0">
+        <property role="TrG5h" value="75.7.7" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCM" role="1M6PKF">
+      <property role="TrG5h" value="ENSEMBL_GENOMES" />
+      <node concept="1M6RvD" id="17OfmP$2VCN" role="1M2wA0">
+        <property role="TrG5h" value="1.3" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCO" role="1M6PKF">
+      <property role="TrG5h" value="ENSEMBL_GTF" />
+      <node concept="1M6RvD" id="17OfmP$2VCP" role="1M2wA0">
+        <property role="TrG5h" value="1.0" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCQ" role="1M6PKF">
+      <property role="TrG5h" value="EXTRACT_NONMATCHED" />
+      <node concept="1M6RvD" id="17OfmP$2VCR" role="1M2wA0">
+        <property role="TrG5h" value="2012.06.25" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCS" role="1M6PKF">
+      <property role="TrG5h" value="FAI_INDEXED_GENOMES" />
+      <node concept="1M6RvD" id="17OfmP$2VCT" role="1M2wA0">
+        <property role="TrG5h" value="1.1.1" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCU" role="1M6PKF">
+      <property role="TrG5h" value="FETCH_URL" />
+      <node concept="1M6RvD" id="17OfmP$2VCV" role="1M2wA0">
+        <property role="TrG5h" value="1.1" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VCW" role="1M2wA0">
+        <property role="TrG5h" value="1.1" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VCX" role="1M2wA0">
+        <property role="TrG5h" value="1.2" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VCY" role="1M6PKF">
+      <property role="TrG5h" value="GENOME_ANNOTATIONS" />
+      <node concept="1M6RvD" id="17OfmP$2VCZ" role="1M2wA0">
+        <property role="TrG5h" value="1.0" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VD0" role="1M6PKF">
+      <property role="TrG5h" value="GNU_PARALLEL" />
+      <node concept="1M6RvD" id="17OfmP$2VD1" role="1M2wA0">
+        <property role="TrG5h" value="20150522" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VD2" role="1M6PKF">
+      <property role="TrG5h" value="GOBY" />
+      <node concept="1M6RvD" id="17OfmP$2VD3" role="1M2wA0">
+        <property role="TrG5h" value="20120216154520" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VD4" role="1M2wA0">
+        <property role="TrG5h" value="20130702142133" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VD5" role="1M2wA0">
+        <property role="TrG5h" value="20130717113540" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VD6" role="1M2wA0">
+        <property role="TrG5h" value="20131220161707.1" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VD7" role="1M2wA0">
+        <property role="TrG5h" value="20131006122450" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VD8" role="1M2wA0">
+        <property role="TrG5h" value="20131006122446" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VD9" role="1M2wA0">
+        <property role="TrG5h" value="20140828152218" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VDa" role="1M2wA0">
+        <property role="TrG5h" value="20150822175223" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VDb" role="1M2wA0">
+        <property role="TrG5h" value="20130413162635" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDc" role="1M6PKF">
+      <property role="TrG5h" value="GOBY_CPP_API" />
+      <node concept="1M6RvD" id="17OfmP$2VDd" role="1M2wA0">
+        <property role="TrG5h" value="2.1.2.2" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDe" role="1M6PKF">
+      <property role="TrG5h" value="GOBY_INDEXED_GENOMES" />
+      <node concept="1M6RvD" id="17OfmP$2VDf" role="1M2wA0">
+        <property role="TrG5h" value="1.0" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDg" role="1M6PKF">
+      <property role="TrG5h" value="GOBYWEB_SERVER_SIDE" />
+      <node concept="1M6RvD" id="17OfmP$2VDh" role="1M2wA0">
+        <property role="TrG5h" value="2.5.2" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VDi" role="1M2wA0">
+        <property role="TrG5h" value="2.6" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDj" role="1M6PKF">
+      <property role="TrG5h" value="GROOVY" />
+      <node concept="1M6RvD" id="17OfmP$2VDk" role="1M2wA0">
+        <property role="TrG5h" value="2.0.6" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDl" role="1M6PKF">
+      <property role="TrG5h" value="GSNAP_WITH_GOBY" />
+      <node concept="1M6RvD" id="17OfmP$2VDm" role="1M2wA0">
+        <property role="TrG5h" value="2011.07.07" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VDn" role="1M2wA0">
+        <property role="TrG5h" value="2011.10.16" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VDo" role="1M2wA0">
+        <property role="TrG5h" value="2011.11.17" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VDp" role="1M2wA0">
+        <property role="TrG5h" value="2012.05.23" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDq" role="1M6PKF">
+      <property role="TrG5h" value="GSNAP_WITH_GOBY_ARTIFACT" />
+      <node concept="1M6RvD" id="17OfmP$2VDr" role="1M2wA0">
+        <property role="TrG5h" value="2013.06.26" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDs" role="1M6PKF">
+      <property role="TrG5h" value="IGVTOOLS" />
+      <node concept="1M6RvD" id="17OfmP$2VDt" role="1M2wA0">
+        <property role="TrG5h" value="1.5.16" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDu" role="1M6PKF">
+      <property role="TrG5h" value="ILLUMINA_ADAPTERS" />
+      <node concept="1M6RvD" id="17OfmP$2VDv" role="1M2wA0">
+        <property role="TrG5h" value="1.0" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDw" role="1M6PKF">
+      <property role="TrG5h" value="LAST" />
+      <node concept="1M6RvD" id="17OfmP$2VDx" role="1M2wA0">
+        <property role="TrG5h" value="189" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VDy" role="1M2wA0">
+        <property role="TrG5h" value="230" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDz" role="1M6PKF">
+      <property role="TrG5h" value="LAST_ARTIFACT" />
+      <node concept="1M6RvD" id="17OfmP$2VD$" role="1M2wA0">
+        <property role="TrG5h" value="287" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VD_" role="1M2wA0">
+        <property role="TrG5h" value="456" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VDA" role="1M2wA0">
+        <property role="TrG5h" value="581.4" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDB" role="1M6PKF">
+      <property role="TrG5h" value="LAST_BISULFITE_INDEX" />
+      <node concept="1M6RvD" id="17OfmP$2VDC" role="1M2wA0">
+        <property role="TrG5h" value="287" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDD" role="1M6PKF">
+      <property role="TrG5h" value="LAST_INDEX" />
+      <node concept="1M6RvD" id="17OfmP$2VDE" role="1M2wA0">
+        <property role="TrG5h" value="287" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VDF" role="1M2wA0">
+        <property role="TrG5h" value="456.1" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VDG" role="1M2wA0">
+        <property role="TrG5h" value="581.1" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDH" role="1M6PKF">
+      <property role="TrG5h" value="MAVEN" />
+      <node concept="1M6RvD" id="17OfmP$2VDI" role="1M2wA0">
+        <property role="TrG5h" value="3.0.5" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDJ" role="1M6PKF">
+      <property role="TrG5h" value="MAVEN_ARTIFACTS_DOWNLOADER" />
+      <node concept="1M6RvD" id="17OfmP$2VDK" role="1M2wA0">
+        <property role="TrG5h" value="1.0" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDL" role="1M6PKF">
+      <property role="TrG5h" value="MERCURY" />
+      <node concept="1M6RvD" id="17OfmP$2VDM" role="1M2wA0">
+        <property role="TrG5h" value="1.0" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDN" role="1M6PKF">
+      <property role="TrG5h" value="MINIA" />
+      <node concept="1M6RvD" id="17OfmP$2VDO" role="1M2wA0">
+        <property role="TrG5h" value="1.4961" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDP" role="1M6PKF">
+      <property role="TrG5h" value="MPS" />
+      <node concept="1M6RvD" id="17OfmP$2VDQ" role="1M2wA0">
+        <property role="TrG5h" value="129.380" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VDR" role="1M2wA0">
+        <property role="TrG5h" value="135.527" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDS" role="1M6PKF">
+      <property role="TrG5h" value="MUTECT" />
+      <node concept="1M6RvD" id="17OfmP$2VDT" role="1M2wA0">
+        <property role="TrG5h" value="1.1.4" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDU" role="1M6PKF">
+      <property role="TrG5h" value="MUTECT_HOMO_SAPIENS_DATA" />
+      <node concept="1M6RvD" id="17OfmP$2VDV" role="1M2wA0">
+        <property role="TrG5h" value="1.2" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDW" role="1M6PKF">
+      <property role="TrG5h" value="PLAST" />
+      <node concept="1M6RvD" id="17OfmP$2VDX" role="1M2wA0">
+        <property role="TrG5h" value="1.3" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VDY" role="1M6PKF">
+      <property role="TrG5h" value="PATHOGEN_DATA" />
+      <node concept="1M6RvD" id="17OfmP$2VDZ" role="1M2wA0">
+        <property role="TrG5h" value="1.1" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VE0" role="1M6PKF">
+      <property role="TrG5h" value="PROCESS_PAIRED_READS" />
+      <node concept="1M6RvD" id="17OfmP$2VE1" role="1M2wA0">
+        <property role="TrG5h" value="1.0" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VE2" role="1M6PKF">
+      <property role="TrG5h" value="PROCESS_READS" />
+      <node concept="1M6RvD" id="17OfmP$2VE3" role="1M2wA0">
+        <property role="TrG5h" value="1.1" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VE4" role="1M6PKF">
+      <property role="TrG5h" value="PROTOBUF_CPP" />
+      <node concept="1M6RvD" id="17OfmP$2VE5" role="1M2wA0">
+        <property role="TrG5h" value="2.4.1" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VE6" role="1M6PKF">
+      <property role="TrG5h" value="R" />
+      <node concept="1M6RvD" id="17OfmP$2VE7" role="1M2wA0">
+        <property role="TrG5h" value="2.14.1" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VE8" role="1M2wA0">
+        <property role="TrG5h" value="2.15.3.5" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VE9" role="1M2wA0">
+        <property role="TrG5h" value="3.1.0" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VEa" role="1M6PKF">
+      <property role="TrG5h" value="RJAVA" />
+      <node concept="1M6RvD" id="17OfmP$2VEb" role="1M2wA0">
+        <property role="TrG5h" value="0.9.6.4" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VEc" role="1M6PKF">
+      <property role="TrG5h" value="SAM_JDK" />
+      <node concept="1M6RvD" id="17OfmP$2VEd" role="1M2wA0">
+        <property role="TrG5h" value="1.84" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VEe" role="1M6PKF">
+      <property role="TrG5h" value="SAMPLE_RESOURCE_WITH_MPS" />
+      <node concept="1M6RvD" id="17OfmP$2VEf" role="1M2wA0">
+        <property role="TrG5h" value="1.0" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VEg" role="1M6PKF">
+      <property role="TrG5h" value="SAMTOOLS" />
+      <node concept="1M6RvD" id="17OfmP$2VEh" role="1M2wA0">
+        <property role="TrG5h" value="0.1.14" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VEi" role="1M2wA0">
+        <property role="TrG5h" value="0.1.18" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VEj" role="1M2wA0">
+        <property role="TrG5h" value="0.1.18.1" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VEk" role="1M6PKF">
+      <property role="TrG5h" value="SCALA" />
+      <node concept="1M6RvD" id="17OfmP$2VEl" role="1M2wA0">
+        <property role="TrG5h" value="2.9.2" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VEm" role="1M6PKF">
+      <property role="TrG5h" value="STAR" />
+      <node concept="1M6RvD" id="17OfmP$2VEn" role="1M2wA0">
+        <property role="TrG5h" value="2.1.1" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VEo" role="1M2wA0">
+        <property role="TrG5h" value="2.1.2" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VEp" role="1M2wA0">
+        <property role="TrG5h" value="2.1.4" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VEq" role="1M2wA0">
+        <property role="TrG5h" value="2.3.0.6" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VEr" role="1M6PKF">
+      <property role="TrG5h" value="TABIX" />
+      <node concept="1M6RvD" id="17OfmP$2VEs" role="1M2wA0">
+        <property role="TrG5h" value="0.2.6" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VEt" role="1M6PKF">
+      <property role="TrG5h" value="TRIMMOMATIC" />
+      <node concept="1M6RvD" id="17OfmP$2VEu" role="1M2wA0">
+        <property role="TrG5h" value="0.32" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VEv" role="1M6PKF">
+      <property role="TrG5h" value="TRINITY" />
+      <node concept="1M6RvD" id="17OfmP$2VEw" role="1M2wA0">
+        <property role="TrG5h" value="20120518" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VEx" role="1M6PKF">
+      <property role="TrG5h" value="VARIANT_EFFECT_PREDICTOR" />
+      <node concept="1M6RvD" id="17OfmP$2VEy" role="1M2wA0">
+        <property role="TrG5h" value="73" />
+      </node>
+      <node concept="1M6RvD" id="17OfmP$2VEz" role="1M2wA0">
+        <property role="TrG5h" value="75.7.2" />
+      </node>
+    </node>
+    <node concept="1M6RSl" id="17OfmP$2VE$" role="1M6PKF">
+      <property role="TrG5h" value="VCF_TOOLS" />
+      <node concept="1M6RvD" id="17OfmP$2VE_" role="1M2wA0">
+        <property role="TrG5h" value="0.1.10" />
+      </node>
     </node>
   </node>
 </model>

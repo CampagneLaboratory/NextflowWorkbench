@@ -147,6 +147,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -292,6 +295,7 @@
   </node>
   <node concept="18kY7G" id="6A9boVQYV8K">
     <property role="TrG5h" value="CheckBrokenReferenceAttribute" />
+    <property role="3GE5qa" value="resources" />
     <node concept="3clFbS" id="6A9boVQYV8L" role="18ibNy">
       <node concept="34ab3g" id="6A9boVR56dv" role="3cqZAp">
         <property role="35gtTG" value="info" />
@@ -443,6 +447,7 @@
   </node>
   <node concept="18kY7G" id="4DwTgsTMuy8">
     <property role="TrG5h" value="check_AttributeAdapterForResource" />
+    <property role="3GE5qa" value="resources" />
     <node concept="3clFbS" id="4DwTgsTMuy9" role="18ibNy">
       <node concept="3clFbJ" id="4DwTgsTMuH1" role="3cqZAp">
         <node concept="3clFbS" id="4DwTgsTMuH2" role="3clFbx">

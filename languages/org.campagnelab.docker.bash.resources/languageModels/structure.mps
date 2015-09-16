@@ -30,6 +30,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -45,6 +46,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -54,6 +56,7 @@
   </registry>
   <node concept="1TIwiD" id="18MzsNNQZvZ">
     <property role="TrG5h" value="RequiredResource" />
+    <property role="3GE5qa" value="resources" />
     <ref role="1TJDcQ" to="dzk5:1ORG9zeKa86" resolve="ResourceRef" />
     <node concept="1TJgyj" id="6A9boVQv2Xr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -75,7 +78,7 @@
   <node concept="1TIwiD" id="5yyd2HFS3xA">
     <property role="TrG5h" value="NYoShAwareScript" />
     <property role="34LRSv" value="nyosh script" />
-    <property role="R4oN_" value="a bash script that can install/use NYoSh/GobyWeb resources" />
+    <property role="R4oN_" value="Bash script that can install/use NYoSh/GobyWeb resources" />
     <ref role="1TJDcQ" to="iowz:70dPcAeBye8" resolve="RichScript" />
     <node concept="1TJgyj" id="5yyd2HFS3y2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -141,6 +144,7 @@
   </node>
   <node concept="1TIwiD" id="6A9boVQPeld">
     <property role="TrG5h" value="AttributeAdapterForResource" />
+    <property role="3GE5qa" value="resources" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6A9boVQQrjW" role="1TKVEl">
       <property role="TrG5h" value="resource" />
@@ -167,11 +171,48 @@
   <node concept="1TIwiD" id="6A9boVQTofD">
     <property role="TrG5h" value="ReferenceAttribute" />
     <property role="R4oN_" value="An attribute that references a value in another attribute" />
+    <property role="3GE5qa" value="resources" />
     <ref role="1TJDcQ" to="bs99:7arfhhdt3J1" resolve="Attribute" />
     <node concept="1TJgyj" id="6A9boVQTogb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="ref" />
       <ref role="20lvS9" to="bs99:7arfhhdt3J1" resolve="Attribute" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="17OfmPzVOdS">
+    <property role="TrG5h" value="ResourceRange" />
+    <property role="R4oN_" value="a resource with the range of versions available in the plugin repo" />
+    <property role="3GE5qa" value="resources" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="17OfmPzZzjH" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="versions" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="17OfmPzVOE4" resolve="ResourceVersion" />
+    </node>
+    <node concept="PrWs8" id="17OfmPzVOdT" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="17OfmPzVOE4">
+    <property role="TrG5h" value="ResourceVersion" />
+    <property role="3GE5qa" value="resources" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="17OfmPzVOE5" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="17OfmPzVQ4z">
+    <property role="3GE5qa" value="resources" />
+    <property role="TrG5h" value="ResourceRangeContainer" />
+    <property role="R4oN_" value="container for resource ranges" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="17OfmPzVQ56" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ranges" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="17OfmPzVOdS" resolve="ResourceRange" />
     </node>
   </node>
 </model>
