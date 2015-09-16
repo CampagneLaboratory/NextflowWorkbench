@@ -118,6 +118,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -157,6 +160,15 @@
           </node>
           <node concept="l8MVK" id="6A9boVQd2tz" role="lcghm" />
         </node>
+        <node concept="lc7rE" id="17OfmPzWcSz" role="3cqZAp">
+          <node concept="la8eA" id="17OfmPzWcS$" role="lcghm">
+            <property role="lacIc" value="ATTRIBUTES=" />
+          </node>
+          <node concept="la8eA" id="17OfmPzWcZD" role="lcghm">
+            <property role="lacIc" value=" " />
+          </node>
+          <node concept="l8MVK" id="17OfmPzWcSD" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="6A9boVQ69gS" role="3cqZAp">
           <node concept="l9S2W" id="6A9boVQ69jd" role="lcghm">
             <node concept="2OqwBi" id="6A9boVQ69nT" role="lbANJ">
@@ -181,6 +193,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="6A9boVQ68V9">
+    <property role="3GE5qa" value="resources" />
     <ref role="WuzLi" to="iuj9:18MzsNNQZvZ" resolve="RequiredResource" />
     <node concept="11bSqf" id="6A9boVQ68Va" role="11c4hB">
       <node concept="3clFbS" id="6A9boVQ68Vb" role="2VODD2">
@@ -295,6 +308,22 @@
             </node>
           </node>
         </node>
+        <node concept="lc7rE" id="17OfmPzWdxi" role="3cqZAp">
+          <node concept="la8eA" id="17OfmPzWdCj" role="lcghm">
+            <property role="lacIc" value="ATTRIBUTES+=" />
+          </node>
+          <node concept="l9S2W" id="17OfmPzWdXc" role="lcghm">
+            <node concept="2OqwBi" id="17OfmPzWe3U" role="lbANJ">
+              <node concept="37vLTw" id="17OfmPzWe2r" role="2Oq$k0">
+                <ref role="3cqZAo" node="6ojrriHoEjS" resolve="resource" />
+              </node>
+              <node concept="3Tsc0h" id="17OfmPzWeCI" role="2OqNvi">
+                <ref role="3TtcxE" to="iuj9:6A9boVQv2Xr" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="17OfmPzWeID" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="6ojrriHoEoa" role="3cqZAp">
           <node concept="la8eA" id="6ojrriHoEob" role="lcghm">
             <property role="lacIc" value="plugins-submit-job --plugins-dir $PLUGINS_ROOT_LOCATION " />
@@ -323,16 +352,9 @@
             <property role="lacIc" value="--owner $RESOURCE_OWNER --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh " />
           </node>
         </node>
-        <node concept="lc7rE" id="6ojrriHoEol" role="3cqZAp">
-          <node concept="l9S2W" id="6ojrriHoEom" role="lcghm">
-            <node concept="2OqwBi" id="6ojrriHoEon" role="lbANJ">
-              <node concept="37vLTw" id="6ojrriHoG7Z" role="2Oq$k0">
-                <ref role="3cqZAo" node="6ojrriHoEjS" resolve="resource" />
-              </node>
-              <node concept="3Tsc0h" id="6ojrriHoEop" role="2OqNvi">
-                <ref role="3TtcxE" to="iuj9:6A9boVQv2Xr" />
-              </node>
-            </node>
+        <node concept="lc7rE" id="17OfmPzWf0W" role="3cqZAp">
+          <node concept="la8eA" id="17OfmPzWf81" role="lcghm">
+            <property role="lacIc" value="$ATTRIBUTES " />
           </node>
         </node>
         <node concept="lc7rE" id="6ojrriHoEoq" role="3cqZAp">
@@ -419,6 +441,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="4DwTgsTIiP7">
+    <property role="3GE5qa" value="resources" />
     <ref role="WuzLi" to="iuj9:6A9boVQPeld" resolve="AttributeAdapterForResource" />
     <node concept="11bSqf" id="4DwTgsTIiP8" role="11c4hB">
       <node concept="3clFbS" id="4DwTgsTIiP9" role="2VODD2">
