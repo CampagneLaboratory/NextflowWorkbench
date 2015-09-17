@@ -65,6 +65,7 @@
         <child id="6386724582662879362" name="requires" index="NgwMD" />
       </concept>
       <concept id="1311266352922359807" name="org.campagnelab.bash.nyosh.structure.RequestedResource" flags="ng" index="3xUnCN">
+        <reference id="1293726533003474604" name="resourceVersion" index="1PROJ1" />
         <reference id="1293726533003473840" name="resourceRange" index="1PROVt" />
       </concept>
       <concept id="1293726532999536931" name="org.campagnelab.bash.nyosh.structure.ResourceRangeContainer" flags="ng" index="1M6PLe">
@@ -6855,7 +6856,8 @@
     <property role="TrG5h" value="FirstBashNYoSh" />
     <node concept="NgwLd" id="6ojrriHiYFQ" role="1QJbqZ">
       <node concept="3xUnCN" id="17OfmP$niRk" role="NgwMD">
-        <ref role="1PROVt" node="17OfmP$a_6v" resolve="GOBY" />
+        <ref role="1PROVt" node="17OfmP$a_5T" resolve="BWA_WITH_GOBY_ARTIFACT" />
+        <ref role="1PROJ1" node="17OfmP$a_5U" resolve="0.5.9.16.7" />
       </node>
       <node concept="1XFuE8" id="6ojrriHiYFR" role="23NxHr" />
       <node concept="19SGf9" id="6ojrriHiYFT" role="3Y$PkS">
