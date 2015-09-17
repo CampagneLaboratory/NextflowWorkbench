@@ -61,6 +61,10 @@
       <property role="TrG5h" value="message" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="1xsIq4ftsG" role="1TKVEl">
+      <property role="TrG5h" value="select" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="17OfmP$aReK" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="resourceRange" />
@@ -77,6 +81,11 @@
       <property role="20kJfa" value="dependencies" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4DwTgsTSy1y" resolve="DependencyResource" />
+    </node>
+    <node concept="1TJgyj" id="RXABvRTrS6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="resourceVersionRange" />
+      <ref role="20lvS9" node="RXABvRSfQl" resolve="ResourceVersionRange" />
     </node>
     <node concept="PrWs8" id="17OfmP$iUXB" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -227,6 +236,21 @@
     <property role="TrG5h" value="DependencyResource" />
     <property role="R4oN_" value="A resource that another resource depends on" />
     <ref role="1TJDcQ" node="4DwTgsTNnk_" resolve="ScriptResource" />
+  </node>
+  <node concept="1TIwiD" id="RXABvRSfQl">
+    <property role="3GE5qa" value="resources" />
+    <property role="TrG5h" value="ResourceVersionRange" />
+    <property role="34LRSv" value="range" />
+    <property role="R4oN_" value="[custom range]" />
+    <ref role="1TJDcQ" node="17OfmPzVOE4" resolve="ResourceVersion" />
+    <node concept="1TJgyi" id="RXABvRSfVB" role="1TKVEl">
+      <property role="TrG5h" value="atMost" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="RXABvRSfVF" role="1TKVEl">
+      <property role="TrG5h" value="atLeast" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

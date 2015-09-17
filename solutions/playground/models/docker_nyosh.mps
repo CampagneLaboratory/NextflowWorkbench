@@ -28,9 +28,6 @@
   <registry>
     <language id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive">
       <concept id="5865189911929158310" name="org.campagnelab.gobyweb.interactive.structure.NYoShUser" flags="ng" index="9QaQ0" />
-      <concept id="1405392831553684079" name="org.campagnelab.gobyweb.interactive.structure.StringAttribute" flags="ng" index="2t8VsU">
-        <property id="1405392831553684183" name="value" index="2t8Vu2" />
-      </concept>
       <concept id="1997533223701191426" name="org.campagnelab.gobyweb.interactive.structure.PluginRepository" flags="ng" index="Eubbw">
         <property id="5752449153162294620" name="viewPlugins" index="2_qfHq" />
         <property id="1997533223701200855" name="directory" index="Eu9oP" />
@@ -62,11 +59,6 @@
       </concept>
     </language>
     <language id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh">
-      <concept id="7604659537841546573" name="org.campagnelab.bash.nyosh.structure.AttributeAdapterForResource" flags="ng" index="2vnsz3">
-        <property id="7604659537841861884" name="resource" index="2vk9_M" />
-        <property id="7604659537841861885" name="artifact" index="2vk9_N" />
-        <child id="7604659537841546632" name="attribute" index="2vnsw6" />
-      </concept>
       <concept id="6386724582662879334" name="org.campagnelab.bash.nyosh.structure.NYoShAwareScript" flags="ng" index="NgwLd">
         <child id="331977639694004412" name="pluginSystemRootDirectory" index="23NxHr" />
         <child id="331977639693048103" name="availableVariables" index="23Rrb0" />
@@ -74,9 +66,8 @@
       </concept>
       <concept id="1311266352922359807" name="org.campagnelab.bash.nyosh.structure.RequestedResource" flags="ng" index="3xUnCN">
         <property id="1008131731648663094" name="message" index="3Ui_h1" />
-        <reference id="1293726533003474604" name="resourceVersion" index="1PROJ1" />
         <reference id="1293726533003473840" name="resourceRange" index="1PROVt" />
-        <child id="7355343239195321265" name="dependencies" index="3bnoS5" />
+        <child id="1008131731651673606" name="resourceVersionRange" index="3U62hL" />
       </concept>
       <concept id="1293726532999536931" name="org.campagnelab.bash.nyosh.structure.ResourceRangeContainer" flags="ng" index="1M6PLe">
         <child id="1293726532999536966" name="ranges" index="1M6PKF" />
@@ -85,11 +76,9 @@
       <concept id="1293726532999529336" name="org.campagnelab.bash.nyosh.structure.ResourceRange" flags="ng" index="1M6RSl">
         <child id="1293726533000508653" name="versions" index="1M2wA0" />
       </concept>
-      <concept id="5359535375769542754" name="org.campagnelab.bash.nyosh.structure.DependencyResource" flags="ng" index="1NwGl_" />
-      <concept id="5359535375768188197" name="org.campagnelab.bash.nyosh.structure.ScriptResource" flags="ng" index="1NFp0y">
-        <property id="1311266352922369212" name="id" index="3xVD5K" />
-        <reference id="5359535375768188201" name="config" index="1NFp0I" />
-        <child id="5359535375768188281" name="attributeValues" index="1NFp1Y" />
+      <concept id="1008131731651362197" name="org.campagnelab.bash.nyosh.structure.ResourceVersionRange" flags="ng" index="3U7mvy">
+        <property id="1008131731651362535" name="atMost" index="3U7mig" />
+        <property id="1008131731651362539" name="atLeast" index="3U7mis" />
       </concept>
     </language>
     <language id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash">
@@ -6877,45 +6866,12 @@
           <property role="19SUeA" value="echo &quot;Hello from the script&quot;" />
         </node>
       </node>
-      <node concept="3xUnCN" id="12v2Kg_Bj1w" role="NgwMD">
-        <property role="3Ui_h1" value="" />
-        <ref role="1PROVt" node="12v2Kg_BiR_" resolve="ENSEMBL_GENOMES" />
-        <ref role="1PROJ1" node="12v2Kg_BiRA" resolve="1.3" />
-        <ref role="1NFp0I" node="RXABvRHU8s" resolve="ENSEMBL_GENOMES" />
-        <node concept="1NwGl_" id="RXABvRNCym" role="3bnoS5">
-          <property role="3xVD5K" value="BASH_LIBRARY" />
-          <ref role="1NFp0I" node="RXABvRHU72" resolve="BASH_LIBRARY" />
-        </node>
-        <node concept="2vnsz3" id="RXABvRNCyf" role="1NFp1Y">
-          <property role="2vk9_M" value="ENSEMBL_GENOMES" />
-          <property role="2vk9_N" value="TOPLEVEL" />
-          <property role="TrG5h" value="organism" />
-          <node concept="2t8VsU" id="RXABvRNCyg" role="2vnsw6">
-            <property role="2t8Vu2" value="" />
-            <property role="TrG5h" value="organism" />
-          </node>
-        </node>
-        <node concept="2vnsz3" id="RXABvRNCyh" role="1NFp1Y">
-          <property role="2vk9_M" value="ENSEMBL_GENOMES" />
-          <property role="2vk9_N" value="TOPLEVEL" />
-          <property role="TrG5h" value="reference-build" />
-          <node concept="2t8VsU" id="RXABvRNCyi" role="2vnsw6">
-            <property role="2t8Vu2" value="" />
-            <property role="TrG5h" value="reference-build" />
-          </node>
-        </node>
-        <node concept="2vnsz3" id="RXABvRNCyj" role="1NFp1Y">
-          <property role="2vk9_M" value="ENSEMBL_GENOMES" />
-          <property role="2vk9_N" value="TOPLEVEL" />
-          <property role="TrG5h" value="ensembl-version-number" />
-          <node concept="2t8VsU" id="RXABvRNCyk" role="2vnsw6">
-            <property role="2t8Vu2" value="" />
-            <property role="TrG5h" value="ensembl-version-number" />
-          </node>
-        </node>
-        <node concept="1NwGl_" id="RXABvRNCyl" role="3bnoS5">
-          <property role="3xVD5K" value="FETCH_URL" />
-          <ref role="1NFp0I" node="RXABvRHU8N" resolve="FETCH_URL" />
+      <node concept="3xUnCN" id="RXABvRVETP" role="NgwMD">
+        <property role="3Ui_h1" value="not resolved" />
+        <ref role="1PROVt" node="12v2Kg_BiQX" resolve="ANNOTATE_VCF" />
+        <node concept="3U7mvy" id="RXABvRVETT" role="3U62hL">
+          <property role="3U7mis" value="12" />
+          <property role="3U7mig" value="444" />
         </node>
       </node>
     </node>
