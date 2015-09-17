@@ -57,6 +57,10 @@
     <property role="3GE5qa" value="resources" />
     <property role="R4oN_" value="A resource requested by the user" />
     <ref role="1TJDcQ" node="4DwTgsTNnk_" resolve="ScriptResource" />
+    <node concept="1TJgyi" id="RXABvRHWSQ" role="1TKVEl">
+      <property role="TrG5h" value="message" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="17OfmP$aReK" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="resourceRange" />
