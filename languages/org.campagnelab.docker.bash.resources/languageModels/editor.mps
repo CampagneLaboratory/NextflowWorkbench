@@ -282,6 +282,7 @@
           </node>
           <node concept="1iCGBv" id="5DSEw1Qrog3" role="3EZMnx">
             <ref role="1NtTu8" to="iuj9:4DwTgsTNnkD" />
+            <ref role="1ERwB7" node="4DwTgsU3yvh" resolve="NoAutocompletion" />
             <node concept="1sVBvm" id="5DSEw1Qrog4" role="1sWHZn">
               <node concept="3F0A7n" id="5DSEw1Qroga" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -290,10 +291,11 @@
             </node>
           </node>
           <node concept="3F0ifn" id="17OfmP$cGFx" role="3EZMnx">
-            <property role="3F0ifm" value=":" />
+            <property role="3F0ifm" value="-&gt;" />
           </node>
           <node concept="1iCGBv" id="5DSEw1Qrogw" role="3EZMnx">
             <ref role="1NtTu8" to="iuj9:4DwTgsTNnkD" />
+            <ref role="1ERwB7" node="4DwTgsU3yvh" resolve="NoAutocompletion" />
             <node concept="1sVBvm" id="5DSEw1Qrogx" role="1sWHZn">
               <node concept="3F0A7n" id="5DSEw1QrogF" role="2wV5jI">
                 <property role="1Intyy" value="true" />
