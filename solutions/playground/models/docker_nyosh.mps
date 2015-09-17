@@ -28,9 +28,6 @@
   <registry>
     <language id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive">
       <concept id="5865189911929158310" name="org.campagnelab.gobyweb.interactive.structure.NYoShUser" flags="ng" index="9QaQ0" />
-      <concept id="1405392831553684079" name="org.campagnelab.gobyweb.interactive.structure.StringAttribute" flags="ng" index="2t8VsU">
-        <property id="1405392831553684183" name="value" index="2t8Vu2" />
-      </concept>
       <concept id="1997533223701191426" name="org.campagnelab.gobyweb.interactive.structure.PluginRepository" flags="ng" index="Eubbw">
         <property id="5752449153162294620" name="viewPlugins" index="2_qfHq" />
         <property id="1997533223701200855" name="directory" index="Eu9oP" />
@@ -62,23 +59,13 @@
       </concept>
     </language>
     <language id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh">
-      <concept id="7604659537841546573" name="org.campagnelab.bash.nyosh.structure.AttributeAdapterForResource" flags="ng" index="2vnsz3">
-        <property id="7604659537841861884" name="resource" index="2vk9_M" />
-        <property id="7604659537841861885" name="artifact" index="2vk9_N" />
-        <child id="7604659537841546632" name="attribute" index="2vnsw6" />
-      </concept>
-      <concept id="7604659537842635753" name="org.campagnelab.bash.nyosh.structure.ReferenceAttribute" flags="ng" index="2vraTB">
-        <reference id="7604659537842635787" name="ref" index="2vraA5" />
-      </concept>
       <concept id="6386724582662879334" name="org.campagnelab.bash.nyosh.structure.NYoShAwareScript" flags="ng" index="NgwLd">
         <child id="331977639694004412" name="pluginSystemRootDirectory" index="23NxHr" />
         <child id="331977639693048103" name="availableVariables" index="23Rrb0" />
         <child id="6386724582662879362" name="requires" index="NgwMD" />
       </concept>
-      <concept id="1311266352922359807" name="org.campagnelab.bash.nyosh.structure.RequiredResource" flags="ng" index="3xUnCN">
-        <property id="1311266352922369212" name="id" index="3xVD5K" />
-        <child id="7604659537835732827" name="attributeValues" index="2vXgbl" />
-        <child id="7355343239195321265" name="dependencies" index="3bnoS5" />
+      <concept id="1311266352922359807" name="org.campagnelab.bash.nyosh.structure.RequestedResource" flags="ng" index="3xUnCN">
+        <reference id="1293726533003473840" name="resourceRange" index="1PROVt" />
       </concept>
       <concept id="1293726532999536931" name="org.campagnelab.bash.nyosh.structure.ResourceRangeContainer" flags="ng" index="1M6PLe">
         <child id="1293726532999536966" name="ranges" index="1M6PKF" />
@@ -295,1446 +282,1446 @@
       <property role="Eu9oP" value="${org.campagnelab.gobyweb.pluginRepo}" />
       <property role="3NDmBG" value="true" />
       <property role="2_qfHq" value="true" />
-      <node concept="3jXL5H" id="6ojrriHiYG7" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$azZv" role="1f5Fuw">
         <property role="1f4ISL" value="1.2.1" />
         <property role="TrG5h" value="ANNOTATE_VCF" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/ANNOTATE_VCF" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYG8" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$azZw" role="3jXL5I">
           <property role="G5nAd" value="71" />
-          <ref role="3jXLav" node="6ojrriHiYKX" resolve="VARIANT_EFFECT_PREDICTOR" />
+          <ref role="3jXLav" node="17OfmP$a$4l" resolve="VARIANT_EFFECT_PREDICTOR" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYG9" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$azZx" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYH9" resolve="ENSEMBL_ANNOTATIONS" />
+          <ref role="3jXLav" node="17OfmP$a$0x" resolve="ENSEMBL_ANNOTATIONS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYGa" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$azZy" role="3jXL5I">
           <property role="G5nAd" value="0.2.6" />
-          <ref role="3jXLav" node="6ojrriHiYKM" resolve="TABIX" />
+          <ref role="3jXLav" node="17OfmP$a$4a" resolve="TABIX" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYGb" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$azZz" role="3jXL5I">
           <property role="G5nAd" value="0.1.10" />
-          <ref role="3jXLav" node="6ojrriHiYL0" resolve="VCF_TOOLS" />
+          <ref role="3jXLav" node="17OfmP$a$4o" resolve="VCF_TOOLS" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGc" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$azZ$" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="BASH_LIBRARY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BASH_LIBRARY_1.0" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGd" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$azZ_" role="1f5Fuw">
         <property role="1f4ISL" value="2.17.0" />
         <property role="TrG5h" value="BEDTOOLS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BEDTOOLS_2.17.0" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYGe" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$azZA" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGf" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$azZB" role="1f5Fuw">
         <property role="1f4ISL" value="0.7.12.2" />
         <property role="TrG5h" value="BISMARK_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BISMARK_0.7.12_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYGg" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$azZC" role="2vN2hK">
           <property role="TrG5h" value="SCRIPTS" />
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYGh" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$azZD" role="2vN2hK">
           <property role="TrG5h" value="INDEX" />
-          <node concept="2vNqWl" id="6ojrriHiYGi" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$azZE" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYGj" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$azZF" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYGk" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$azZG" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYGl" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$azZH" role="3jXL5I">
           <property role="G5nAd" value="2.1.0" />
-          <ref role="3jXLav" node="6ojrriHiYGp" resolve="BOWTIE2_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$azZL" resolve="BOWTIE2_ARTIFACT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYGm" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$azZI" role="3jXL5I">
           <property role="G5nAd" value="1.1" />
-          <ref role="3jXLav" node="6ojrriHiYHO" resolve="FAI_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1c" resolve="FAI_INDEXED_GENOMES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGn" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$azZJ" role="1f5Fuw">
         <property role="1f4ISL" value="0.7.4" />
         <property role="TrG5h" value="BISMARK" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BISMARK_0.7.4" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYGo" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$azZK" role="3jXL5I">
           <property role="G5nAd" value="2.0.0.5" />
-          <ref role="3jXLav" node="6ojrriHiYGr" resolve="BOWTIE2" />
+          <ref role="3jXLav" node="17OfmP$azZN" resolve="BOWTIE2" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGp" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$azZL" role="1f5Fuw">
         <property role="1f4ISL" value="2.1.0" />
         <property role="TrG5h" value="BOWTIE2_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BOWTIE_2.1.0_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYGq" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$azZM" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGr" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$azZN" role="1f5Fuw">
         <property role="1f4ISL" value="2.0.0.5" />
         <property role="TrG5h" value="BOWTIE2" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BOWTIE_2_2.0.0.5" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGs" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$azZO" role="1f5Fuw">
         <property role="1f4ISL" value="0.5.9.16" />
         <property role="TrG5h" value="BWA_WITH_GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BWA_GOBY_0.5.9.16" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGt" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$azZP" role="1f5Fuw">
         <property role="1f4ISL" value="0.5.9.16.1" />
         <property role="TrG5h" value="BWA_WITH_GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BWA_GOBY_0.5.9.16.1" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGu" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$azZQ" role="1f5Fuw">
         <property role="1f4ISL" value="0.5.9.16.2" />
         <property role="TrG5h" value="BWA_WITH_GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BWA_GOBY_0.5.9.16.2" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGv" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$azZR" role="1f5Fuw">
         <property role="1f4ISL" value="0.5.9.16.7" />
         <property role="TrG5h" value="BWA_WITH_GOBY_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BWA_WITH_GOBY_ARTIFACT_0.5.9.16.5" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYGw" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$azZS" role="2vN2hK">
           <property role="TrG5h" value="EXECUTABLE" />
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYGx" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$azZT" role="2vN2hK">
           <property role="TrG5h" value="INDEX" />
-          <node concept="2vNqWl" id="6ojrriHiYGy" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$azZU" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYGz" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$azZV" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYG$" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$azZW" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYG_" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$azZX" role="3jXL5I">
           <property role="G5nAd" value="2.1.2" />
-          <ref role="3jXLav" node="6ojrriHiYIg" resolve="GOBY_CPP_API" />
+          <ref role="3jXLav" node="17OfmP$a$1C" resolve="GOBY_CPP_API" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYGA" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$azZY" role="3jXL5I">
           <property role="G5nAd" value="1.1" />
-          <ref role="3jXLav" node="6ojrriHiYHO" resolve="FAI_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1c" resolve="FAI_INDEXED_GENOMES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGB" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$azZZ" role="1f5Fuw">
         <property role="1f4ISL" value="1.8.3.2" />
         <property role="TrG5h" value="DESEQ" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/DESEQ_1.8.3" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYGC" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$00" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYGD" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$01" role="3jXL5I">
           <property role="G5nAd" value="2.15.3" />
-          <ref role="3jXLav" node="6ojrriHiYKk" resolve="R" />
+          <ref role="3jXLav" node="17OfmP$a$3G" resolve="R" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGE" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$02" role="1f5Fuw">
         <property role="1f4ISL" value="2012.07.25" />
         <property role="TrG5h" value="DESEQ_SCRIPT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/DESEQ_SCRIPT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYGF" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$03" role="3jXL5I">
           <property role="G5nAd" value="1.8.3.2" />
-          <ref role="3jXLav" node="6ojrriHiYGB" resolve="DESEQ" />
+          <ref role="3jXLav" node="17OfmP$azZZ" resolve="DESEQ" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGG" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$04" role="1f5Fuw">
         <property role="1f4ISL" value="2.6.12.2" />
         <property role="TrG5h" value="EDGER" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/EDGE_R_2.6.12" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYGH" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$05" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYGI" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$06" role="3jXL5I">
           <property role="G5nAd" value="2.15.3" />
-          <ref role="3jXLav" node="6ojrriHiYKk" resolve="R" />
+          <ref role="3jXLav" node="17OfmP$a$3G" resolve="R" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGJ" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$07" role="1f5Fuw">
         <property role="1f4ISL" value="3.6.8" />
         <property role="TrG5h" value="EDGER" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/EDGE_R_3.6.4" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYGK" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$08" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYGL" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$09" role="3jXL5I">
           <property role="G5nAd" value="3.1.0" />
-          <ref role="3jXLav" node="6ojrriHiYKk" resolve="R" />
+          <ref role="3jXLav" node="17OfmP$a$3G" resolve="R" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGM" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$0a" role="1f5Fuw">
         <property role="1f4ISL" value="3.6.8.1" />
         <property role="TrG5h" value="EDGER" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/EDGE_R_3.6.8" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYGN" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$0b" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYGO" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0c" role="3jXL5I">
           <property role="G5nAd" value="3.1.0" />
-          <ref role="3jXLav" node="6ojrriHiYKk" resolve="R" />
+          <ref role="3jXLav" node="17OfmP$a$3G" resolve="R" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGP" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$0d" role="1f5Fuw">
         <property role="1f4ISL" value="3.8.4.1" />
         <property role="TrG5h" value="EDGER" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/EDGE_R_3.8.4" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYGQ" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$0e" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYGR" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0f" role="3jXL5I">
           <property role="G5nAd" value="3.1.0" />
-          <ref role="3jXLav" node="6ojrriHiYKk" resolve="R" />
+          <ref role="3jXLav" node="17OfmP$a$3G" resolve="R" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGS" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$0g" role="1f5Fuw">
         <property role="1f4ISL" value="2013.05.17" />
         <property role="TrG5h" value="EDGE_R_SCRIPT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/EDGE_R_SCRIPT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYGT" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0h" role="3jXL5I">
           <property role="G5nAd" value="2.6.12.1" />
-          <ref role="3jXLav" node="6ojrriHiYGP" resolve="EDGER" />
+          <ref role="3jXLav" node="17OfmP$a$0d" resolve="EDGER" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGU" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$0i" role="1f5Fuw">
         <property role="1f4ISL" value="2014.08.27" />
         <property role="TrG5h" value="EDGE_R_SCRIPT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/EDGE_R_SCRIPT_3.6.4" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYGV" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0j" role="3jXL5I">
           <property role="G5nAd" value="3.6.8" />
-          <ref role="3jXLav" node="6ojrriHiYGP" resolve="EDGER" />
+          <ref role="3jXLav" node="17OfmP$a$0d" resolve="EDGER" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGW" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$0k" role="1f5Fuw">
         <property role="1f4ISL" value="2014.08.27" />
         <property role="TrG5h" value="EDGE_R_SCRIPT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/EDGE_R_SCRIPT_3.6.8" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYGX" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0l" role="3jXL5I">
           <property role="G5nAd" value="3.6.8" />
-          <ref role="3jXLav" node="6ojrriHiYGP" resolve="EDGER" />
+          <ref role="3jXLav" node="17OfmP$a$0d" resolve="EDGER" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYGY" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$0m" role="1f5Fuw">
         <property role="1f4ISL" value="1.1.2" />
         <property role="TrG5h" value="ENSEMBL_ANNOTATIONS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/ENSEMBL_ANNOTATIONS_1.0" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYGZ" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$0n" role="2vN2hK">
           <property role="TrG5h" value="ANNOTATIONS" />
-          <node concept="2vNqWl" id="6ojrriHiYH0" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$0o" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYH1" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$0p" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYH2" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$0q" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYH3" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0r" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYHA" resolve="ENSEMBL_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$0Y" resolve="ENSEMBL_GENOMES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYH4" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0s" role="3jXL5I">
           <property role="G5nAd" value="2.0.6" />
-          <ref role="3jXLav" node="6ojrriHiYIz" resolve="GROOVY" />
+          <ref role="3jXLav" node="17OfmP$a$1V" resolve="GROOVY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYH5" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0t" role="3jXL5I">
           <property role="G5nAd" value="0.2.6" />
-          <ref role="3jXLav" node="6ojrriHiYKM" resolve="TABIX" />
+          <ref role="3jXLav" node="17OfmP$a$4a" resolve="TABIX" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYH6" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0u" role="3jXL5I">
           <property role="G5nAd" value="1.84" />
-          <ref role="3jXLav" node="6ojrriHiYKp" resolve="SAM_JDK" />
+          <ref role="3jXLav" node="17OfmP$a$3L" resolve="SAM_JDK" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYH7" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0v" role="3jXL5I">
           <property role="G5nAd" value="2.0" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYH8" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0w" role="3jXL5I">
           <property role="G5nAd" value="2.8" />
-          <ref role="3jXLav" node="6ojrriHiYKX" resolve="VARIANT_EFFECT_PREDICTOR" />
+          <ref role="3jXLav" node="17OfmP$a$4l" resolve="VARIANT_EFFECT_PREDICTOR" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYH9" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$0x" role="1f5Fuw">
         <property role="1f4ISL" value="2.1.4" />
         <property role="TrG5h" value="ENSEMBL_ANNOTATIONS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/ENSEMBL_ANNOTATIONS_2.0" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYHa" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$0y" role="2vN2hK">
           <property role="TrG5h" value="ANNOTATIONS" />
-          <node concept="2vNqWl" id="6ojrriHiYHb" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$0z" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYHc" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$0$" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYHd" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$0_" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYHe" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0A" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYHA" resolve="ENSEMBL_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$0Y" resolve="ENSEMBL_GENOMES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYHf" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0B" role="3jXL5I">
           <property role="G5nAd" value="2.0.6" />
-          <ref role="3jXLav" node="6ojrriHiYIz" resolve="GROOVY" />
+          <ref role="3jXLav" node="17OfmP$a$1V" resolve="GROOVY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYHg" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0C" role="3jXL5I">
           <property role="G5nAd" value="0.2.6" />
-          <ref role="3jXLav" node="6ojrriHiYKM" resolve="TABIX" />
+          <ref role="3jXLav" node="17OfmP$a$4a" resolve="TABIX" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYHh" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0D" role="3jXL5I">
           <property role="G5nAd" value="1.84" />
-          <ref role="3jXLav" node="6ojrriHiYKp" resolve="SAM_JDK" />
+          <ref role="3jXLav" node="17OfmP$a$3L" resolve="SAM_JDK" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYHi" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0E" role="3jXL5I">
           <property role="G5nAd" value="2.0" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYHj" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0F" role="3jXL5I">
           <property role="G5nAd" value="2.8" />
-          <ref role="3jXLav" node="6ojrriHiYKX" resolve="VARIANT_EFFECT_PREDICTOR" />
+          <ref role="3jXLav" node="17OfmP$a$4l" resolve="VARIANT_EFFECT_PREDICTOR" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYHk" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$0G" role="1f5Fuw">
         <property role="1f4ISL" value="73" />
         <property role="TrG5h" value="ENSEMBL_API" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/ENSEMBL_API_70" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYHl" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$0H" role="2vN2hK">
           <property role="TrG5h" value="INSTALL_DIR" />
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYHm" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$0I" role="2vN2hK">
           <property role="TrG5h" value="VEP_CACHE" />
-          <node concept="2vNqWl" id="6ojrriHiYHn" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$0J" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYHo" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$0K" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYHp" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0L" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYHq" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$0M" role="1f5Fuw">
         <property role="1f4ISL" value="75.2" />
         <property role="TrG5h" value="ENSEMBL_API" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/ENSEMBL_API_75" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYHr" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$0N" role="2vN2hK">
           <property role="TrG5h" value="INSTALL_DIR" />
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYHs" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$0O" role="2vN2hK">
           <property role="TrG5h" value="VEP_CACHE" />
-          <node concept="2vNqWl" id="6ojrriHiYHt" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$0P" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYHu" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$0Q" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYHv" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0R" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYHw" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$0S" role="1f5Fuw">
         <property role="1f4ISL" value="75.7.7" />
         <property role="TrG5h" value="ENSEMBL_API" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/ENSEMBL_API_75.3" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYHx" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$0T" role="2vN2hK">
           <property role="TrG5h" value="INSTALL_DIR" />
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYHy" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$0U" role="2vN2hK">
           <property role="TrG5h" value="VEP_CACHE" />
-          <node concept="2vNqWl" id="6ojrriHiYHz" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$0V" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYH$" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$0W" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYH_" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$0X" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYHA" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$0Y" role="1f5Fuw">
         <property role="1f4ISL" value="1.3" />
         <property role="TrG5h" value="ENSEMBL_GENOMES" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/ENSEMBL_GENOMES_1.0" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYHB" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$0Z" role="2vN2hK">
           <property role="TrG5h" value="TOPLEVEL" />
-          <node concept="2vNqWl" id="6ojrriHiYHC" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$10" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYHD" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$11" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYHE" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$12" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYHF" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$13" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYHG" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$14" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="ENSEMBL_GTF" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/ENSEMBL_GTF_1.0" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYHH" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$15" role="2vN2hK">
           <property role="TrG5h" value="ANNOTATIONS" />
-          <node concept="2vNqWl" id="6ojrriHiYHI" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$16" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYHJ" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$17" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYHK" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$18" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYHL" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$19" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYHM" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1a" role="1f5Fuw">
         <property role="1f4ISL" value="2012.06.25" />
         <property role="TrG5h" value="EXTRACT_NONMATCHED" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/EXTRACT_NONMATCHED_2012.06.04" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYHN" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1b" role="3jXL5I">
           <property role="G5nAd" value="20120605173944" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYHO" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1c" role="1f5Fuw">
         <property role="1f4ISL" value="1.1.1" />
         <property role="TrG5h" value="FAI_INDEXED_GENOMES" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/FAI_INDEXED_GENOMES_1.0" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYHP" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$1d" role="2vN2hK">
           <property role="TrG5h" value="SAMTOOLS_FAI_INDEX" />
-          <node concept="2vNqWl" id="6ojrriHiYHQ" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$1e" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYHR" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$1f" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYHS" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$1g" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYHT" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1h" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYHA" resolve="ENSEMBL_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$0Y" resolve="ENSEMBL_GENOMES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYHU" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1i" role="3jXL5I">
           <property role="G5nAd" value="0.1.18.1" />
-          <ref role="3jXLav" node="6ojrriHiYKy" resolve="SAMTOOLS" />
+          <ref role="3jXLav" node="17OfmP$a$3U" resolve="SAMTOOLS" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYHV" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1j" role="1f5Fuw">
         <property role="1f4ISL" value="1.1" />
         <property role="TrG5h" value="FETCH_URL" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/FETCH_URL_1.0" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYHW" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1k" role="1f5Fuw">
         <property role="1f4ISL" value="1.1" />
         <property role="TrG5h" value="FETCH_URL" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/FETCH_URL_1.1" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYHX" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1l" role="1f5Fuw">
         <property role="1f4ISL" value="1.2" />
         <property role="TrG5h" value="FETCH_URL" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/FETCH_URL_1.2" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYHY" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1m" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYGc" resolve="BASH_LIBRARY" />
+          <ref role="3jXLav" node="17OfmP$azZ$" resolve="BASH_LIBRARY" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYHZ" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1n" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="GENOME_ANNOTATIONS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GENOME_ANNOTATIONS_1.0" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYI0" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$1o" role="2vN2hK">
           <property role="TrG5h" value="ANNOTATIONS" />
-          <node concept="2vNqWl" id="6ojrriHiYI1" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$1p" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYI2" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$1q" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYI3" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$1r" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYI4" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1s" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYH9" resolve="ENSEMBL_ANNOTATIONS" />
+          <ref role="3jXLav" node="17OfmP$a$0x" resolve="ENSEMBL_ANNOTATIONS" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYI5" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1t" role="1f5Fuw">
         <property role="1f4ISL" value="20150522" />
         <property role="TrG5h" value="GNU_PARALLEL" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GNU_PARALLEL_20150522" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYI6" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$1u" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYI7" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1v" role="1f5Fuw">
         <property role="1f4ISL" value="20120216154520" />
         <property role="TrG5h" value="GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBY_1.9.8.3" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYI8" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1w" role="1f5Fuw">
         <property role="1f4ISL" value="20130702142133" />
         <property role="TrG5h" value="GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBY_2.3.1" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYI9" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1x" role="1f5Fuw">
         <property role="1f4ISL" value="20130717113540" />
         <property role="TrG5h" value="GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBY_2.3.2" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIa" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1y" role="1f5Fuw">
         <property role="1f4ISL" value="20131220161707.1" />
         <property role="TrG5h" value="GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBY_2.3.3" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIb" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1z" role="1f5Fuw">
         <property role="1f4ISL" value="20131006122450" />
         <property role="TrG5h" value="GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBY_2.3.3_contig" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIc" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1$" role="1f5Fuw">
         <property role="1f4ISL" value="20131006122446" />
         <property role="TrG5h" value="GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBY_2.3.3_preview" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYId" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1_" role="1f5Fuw">
         <property role="1f4ISL" value="20140828152218" />
         <property role="TrG5h" value="GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBY_2.3.4.1-preview" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIe" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1A" role="1f5Fuw">
         <property role="1f4ISL" value="20150822175223" />
         <property role="TrG5h" value="GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBY_2.3.4.2-preview" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIf" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1B" role="1f5Fuw">
         <property role="1f4ISL" value="20130413162635" />
         <property role="TrG5h" value="GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBY_2_DEV" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIg" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1C" role="1f5Fuw">
         <property role="1f4ISL" value="2.1.2.2" />
         <property role="TrG5h" value="GOBY_CPP_API" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBY_CPP_API" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYIh" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$1D" role="2vN2hK">
           <property role="TrG5h" value="LIBRARIES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYIi" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1E" role="3jXL5I">
           <property role="G5nAd" value="2.4.1" />
-          <ref role="3jXLav" node="6ojrriHiYKf" resolve="PROTOBUF_CPP" />
+          <ref role="3jXLav" node="17OfmP$a$3B" resolve="PROTOBUF_CPP" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIj" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1F" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="GOBY_INDEXED_GENOMES" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBY_INDEXED_GENOMES_1.0" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYIk" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$1G" role="2vN2hK">
           <property role="TrG5h" value="SEQUENCE_CACHE" />
-          <node concept="2vNqWl" id="6ojrriHiYIl" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$1H" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYIm" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$1I" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYIn" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$1J" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYIo" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1K" role="3jXL5I">
           <property role="G5nAd" value="2.1.2.1" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYIp" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1L" role="3jXL5I">
           <property role="G5nAd" value="1.1" />
-          <ref role="3jXLav" node="6ojrriHiYHA" resolve="ENSEMBL_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$0Y" resolve="ENSEMBL_GENOMES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIq" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1M" role="1f5Fuw">
         <property role="1f4ISL" value="2.5.2" />
         <property role="TrG5h" value="GOBYWEB_SERVER_SIDE" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBYWEB_SERVER_SIDE_2.5.2" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYIr" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1N" role="3jXL5I">
           <property role="G5nAd" value="2.0.6" />
-          <ref role="3jXLav" node="6ojrriHiYIz" resolve="GROOVY" />
+          <ref role="3jXLav" node="17OfmP$a$1V" resolve="GROOVY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYIs" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1O" role="3jXL5I">
           <property role="G5nAd" value="1.2" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYIt" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1P" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYGc" resolve="BASH_LIBRARY" />
+          <ref role="3jXLav" node="17OfmP$azZ$" resolve="BASH_LIBRARY" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIu" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1Q" role="1f5Fuw">
         <property role="1f4ISL" value="2.6" />
         <property role="TrG5h" value="GOBYWEB_SERVER_SIDE" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GOBYWEB_SERVER_SIDE_2.6" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYIv" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1R" role="3jXL5I">
           <property role="G5nAd" value="2.0.6" />
-          <ref role="3jXLav" node="6ojrriHiYIz" resolve="GROOVY" />
+          <ref role="3jXLav" node="17OfmP$a$1V" resolve="GROOVY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYIw" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1S" role="3jXL5I">
           <property role="G5nAd" value="1.2" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYIx" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1T" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYGc" resolve="BASH_LIBRARY" />
+          <ref role="3jXLav" node="17OfmP$azZ$" resolve="BASH_LIBRARY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYIy" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$1U" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIz" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1V" role="1f5Fuw">
         <property role="1f4ISL" value="2.0.6" />
         <property role="TrG5h" value="GROOVY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GROOVY_2.0.6" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYI$" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$1W" role="2vN2hK">
           <property role="TrG5h" value="DISTRIBUTION" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYI_" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1X" role="1f5Fuw">
         <property role="1f4ISL" value="2011.07.07" />
         <property role="TrG5h" value="GSNAP_WITH_GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GSNAP_GOBY_2011.07.07" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIA" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1Y" role="1f5Fuw">
         <property role="1f4ISL" value="2011.10.16" />
         <property role="TrG5h" value="GSNAP_WITH_GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GSNAP_GOBY_2011.10.16" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIB" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$1Z" role="1f5Fuw">
         <property role="1f4ISL" value="2011.11.17" />
         <property role="TrG5h" value="GSNAP_WITH_GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GSNAP_GOBY_2011.11.17" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIC" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$20" role="1f5Fuw">
         <property role="1f4ISL" value="2012.05.23" />
         <property role="TrG5h" value="GSNAP_WITH_GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GSNAP_GOBY_2012.05.23" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYID" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$21" role="1f5Fuw">
         <property role="1f4ISL" value="2013.06.26" />
         <property role="TrG5h" value="GSNAP_WITH_GOBY_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/GSNAP_WITH_GOBY_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYIE" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$22" role="2vN2hK">
           <property role="TrG5h" value="EXECUTABLE" />
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYIF" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$23" role="2vN2hK">
           <property role="TrG5h" value="INDEX" />
-          <node concept="2vNqWl" id="6ojrriHiYIG" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$24" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYIH" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$25" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYII" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$26" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYIJ" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$27" role="3jXL5I">
           <property role="G5nAd" value="2.1.2" />
-          <ref role="3jXLav" node="6ojrriHiYIg" resolve="GOBY_CPP_API" />
+          <ref role="3jXLav" node="17OfmP$a$1C" resolve="GOBY_CPP_API" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYIK" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$28" role="3jXL5I">
           <property role="G5nAd" value="1.1" />
-          <ref role="3jXLav" node="6ojrriHiYHO" resolve="FAI_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1c" resolve="FAI_INDEXED_GENOMES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIL" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$29" role="1f5Fuw">
         <property role="1f4ISL" value="1.5.16" />
         <property role="TrG5h" value="IGVTOOLS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/IGVTOOLS_1_5_16" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIM" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$2a" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="ILLUMINA_ADAPTERS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/ILLUMINA_ADAPTERS" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIN" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$2b" role="1f5Fuw">
         <property role="1f4ISL" value="189" />
         <property role="TrG5h" value="LAST" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/LAST_189" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIO" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$2c" role="1f5Fuw">
         <property role="1f4ISL" value="230" />
         <property role="TrG5h" value="LAST" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/LAST_230" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIP" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$2d" role="1f5Fuw">
         <property role="1f4ISL" value="287" />
         <property role="TrG5h" value="LAST_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/LAST_287" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYIQ" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$2e" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIR" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$2f" role="1f5Fuw">
         <property role="1f4ISL" value="456" />
         <property role="TrG5h" value="LAST_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/LAST_456" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYIS" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$2g" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIT" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$2h" role="1f5Fuw">
         <property role="1f4ISL" value="581.4" />
         <property role="TrG5h" value="LAST_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/LAST_581" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYIU" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$2i" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYIV" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$2j" role="1f5Fuw">
         <property role="1f4ISL" value="287" />
         <property role="TrG5h" value="LAST_BISULFITE_INDEX" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/LAST_BISULFITE_INDEX" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYIW" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$2k" role="2vN2hK">
           <property role="TrG5h" value="INDEX" />
-          <node concept="2vNqWl" id="6ojrriHiYIX" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2l" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYIY" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2m" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYIZ" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2n" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYJ0" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$2o" role="2vN2hK">
           <property role="TrG5h" value="TOPLEVEL_IDS" />
-          <node concept="2vNqWl" id="6ojrriHiYJ1" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2p" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJ2" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2q" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJ3" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2r" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJ4" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$2s" role="3jXL5I">
           <property role="G5nAd" value="287" />
-          <ref role="3jXLav" node="6ojrriHiYIT" resolve="LAST_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$a$2h" resolve="LAST_ARTIFACT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJ5" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$2t" role="3jXL5I">
           <property role="G5nAd" value="1.1.1" />
-          <ref role="3jXLav" node="6ojrriHiYHO" resolve="FAI_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1c" resolve="FAI_INDEXED_GENOMES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJ6" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$2u" role="3jXL5I">
           <property role="G5nAd" value="20130413162635" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYJ7" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$2v" role="1f5Fuw">
         <property role="1f4ISL" value="287" />
         <property role="TrG5h" value="LAST_INDEX" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/LAST_INDEX" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYJ8" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$2w" role="2vN2hK">
           <property role="TrG5h" value="INDEX" />
-          <node concept="2vNqWl" id="6ojrriHiYJ9" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2x" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJa" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2y" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJb" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2z" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYJc" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$2$" role="2vN2hK">
           <property role="TrG5h" value="TOPLEVEL_IDS" />
-          <node concept="2vNqWl" id="6ojrriHiYJd" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2_" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJe" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2A" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJf" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2B" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJg" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$2C" role="3jXL5I">
           <property role="G5nAd" value="287" />
-          <ref role="3jXLav" node="6ojrriHiYIT" resolve="LAST_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$a$2h" resolve="LAST_ARTIFACT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJh" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$2D" role="3jXL5I">
           <property role="G5nAd" value="1.1.1" />
-          <ref role="3jXLav" node="6ojrriHiYHO" resolve="FAI_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1c" resolve="FAI_INDEXED_GENOMES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJi" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$2E" role="3jXL5I">
           <property role="G5nAd" value="20130413162635" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYJj" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$2F" role="1f5Fuw">
         <property role="1f4ISL" value="456.1" />
         <property role="TrG5h" value="LAST_INDEX" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/LAST_INDEX_456" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYJk" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$2G" role="2vN2hK">
           <property role="TrG5h" value="INDEX" />
-          <node concept="2vNqWl" id="6ojrriHiYJl" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2H" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJm" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2I" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJn" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2J" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYJo" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$2K" role="2vN2hK">
           <property role="TrG5h" value="TOPLEVEL_IDS" />
-          <node concept="2vNqWl" id="6ojrriHiYJp" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2L" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJq" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2M" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJr" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2N" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJs" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$2O" role="3jXL5I">
           <property role="G5nAd" value="456" />
-          <ref role="3jXLav" node="6ojrriHiYIT" resolve="LAST_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$a$2h" resolve="LAST_ARTIFACT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJt" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$2P" role="3jXL5I">
           <property role="G5nAd" value="1.1.1" />
-          <ref role="3jXLav" node="6ojrriHiYHO" resolve="FAI_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1c" resolve="FAI_INDEXED_GENOMES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJu" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$2Q" role="3jXL5I">
           <property role="G5nAd" value="20130413162635" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYJv" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$2R" role="1f5Fuw">
         <property role="1f4ISL" value="581.1" />
         <property role="TrG5h" value="LAST_INDEX" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/LAST_INDEX_581" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYJw" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$2S" role="2vN2hK">
           <property role="TrG5h" value="INDEX" />
-          <node concept="2vNqWl" id="6ojrriHiYJx" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2T" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJy" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2U" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJz" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2V" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYJ$" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$2W" role="2vN2hK">
           <property role="TrG5h" value="TOPLEVEL_IDS" />
-          <node concept="2vNqWl" id="6ojrriHiYJ_" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2X" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJA" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2Y" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYJB" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$2Z" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJC" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$30" role="3jXL5I">
           <property role="G5nAd" value="581" />
-          <ref role="3jXLav" node="6ojrriHiYIT" resolve="LAST_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$a$2h" resolve="LAST_ARTIFACT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJD" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$31" role="3jXL5I">
           <property role="G5nAd" value="1.1.1" />
-          <ref role="3jXLav" node="6ojrriHiYHO" resolve="FAI_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1c" resolve="FAI_INDEXED_GENOMES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJE" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$32" role="3jXL5I">
           <property role="G5nAd" value="20130413162635" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYJF" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$33" role="1f5Fuw">
         <property role="1f4ISL" value="3.0.5" />
         <property role="TrG5h" value="MAVEN" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/MAVEN_3.0.5" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYJG" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$34" role="2vN2hK">
           <property role="TrG5h" value="DISTRIBUTION" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJH" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$35" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYJI" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$36" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="MAVEN_ARTIFACTS_DOWNLOADER" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/MAVEN_ARTIFACTS_DOWNLOADER_1.0" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYJJ" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$37" role="3jXL5I">
           <property role="G5nAd" value="2.4" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYJK" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$38" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="MERCURY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/MERCURY_1.0" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYJL" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$39" role="1f5Fuw">
         <property role="1f4ISL" value="1.4961" />
         <property role="TrG5h" value="MINIA" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/MINIA_2013_1.4961" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYJM" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3a" role="2vN2hK">
           <property role="TrG5h" value="EXECUTABLE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJN" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3b" role="3jXL5I">
           <property role="G5nAd" value="20120605173944" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYJO" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3c" role="1f5Fuw">
         <property role="1f4ISL" value="129.380" />
         <property role="TrG5h" value="MPS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/MPS_129.380" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYJP" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3d" role="2vN2hK">
           <property role="TrG5h" value="DISTRIBUTION" />
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYJQ" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3e" role="2vN2hK">
           <property role="TrG5h" value="SUPPORT_LIBS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJR" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3f" role="3jXL5I">
           <property role="G5nAd" value="1.2" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJS" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3g" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJI" resolve="MAVEN_ARTIFACTS_DOWNLOADER" />
+          <ref role="3jXLav" node="17OfmP$a$36" resolve="MAVEN_ARTIFACTS_DOWNLOADER" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYJT" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3h" role="1f5Fuw">
         <property role="1f4ISL" value="135.527" />
         <property role="TrG5h" value="MPS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/MPS_135.527" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYJU" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3i" role="2vN2hK">
           <property role="TrG5h" value="DISTRIBUTION" />
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYJV" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3j" role="2vN2hK">
           <property role="TrG5h" value="SUPPORT_LIBS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJW" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3k" role="3jXL5I">
           <property role="G5nAd" value="1.2" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYJX" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3l" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJI" resolve="MAVEN_ARTIFACTS_DOWNLOADER" />
+          <ref role="3jXLav" node="17OfmP$a$36" resolve="MAVEN_ARTIFACTS_DOWNLOADER" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYJY" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3m" role="1f5Fuw">
         <property role="1f4ISL" value="1.1.4" />
         <property role="TrG5h" value="MUTECT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/MUTECT_1.1.4" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYJZ" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3n" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYK0" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3o" role="1f5Fuw">
         <property role="1f4ISL" value="1.2" />
         <property role="TrG5h" value="MUTECT_HOMO_SAPIENS_DATA" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/MUTECT_HOMO_SAPIENS_DATA" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYK1" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3p" role="2vN2hK">
           <property role="TrG5h" value="FILES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYK2" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3q" role="1f5Fuw">
         <property role="1f4ISL" value="1.3" />
         <property role="TrG5h" value="PLAST" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/PARALLEL_LAST" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYK3" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3r" role="1f5Fuw">
         <property role="1f4ISL" value="1.1" />
         <property role="TrG5h" value="PATHOGEN_DATA" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/PATHOGEN_DATA" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYK4" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3s" role="2vN2hK">
           <property role="TrG5h" value="FUNGI" />
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYK5" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3t" role="2vN2hK">
           <property role="TrG5h" value="MICROBIAL" />
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYK6" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3u" role="2vN2hK">
           <property role="TrG5h" value="VIRAL" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYK7" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3v" role="3jXL5I">
           <property role="G5nAd" value="1.2" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYK8" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3w" role="3jXL5I">
           <property role="G5nAd" value="581" />
-          <ref role="3jXLav" node="6ojrriHiYIT" resolve="LAST_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$a$2h" resolve="LAST_ARTIFACT" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYK9" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3x" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="PROCESS_PAIRED_READS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/PROCESS_PAIRED_READS" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYKa" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3y" role="3jXL5I">
           <property role="G5nAd" value="2.0.6" />
-          <ref role="3jXLav" node="6ojrriHiYIz" resolve="GROOVY" />
+          <ref role="3jXLav" node="17OfmP$a$1V" resolve="GROOVY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYKb" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3z" role="3jXL5I">
           <property role="G5nAd" value="1.2" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKc" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3$" role="1f5Fuw">
         <property role="1f4ISL" value="1.1" />
         <property role="TrG5h" value="PROCESS_READS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/PROCESS_READS" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYKd" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3_" role="3jXL5I">
           <property role="G5nAd" value="2.0.6" />
-          <ref role="3jXLav" node="6ojrriHiYIz" resolve="GROOVY" />
+          <ref role="3jXLav" node="17OfmP$a$1V" resolve="GROOVY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYKe" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3A" role="3jXL5I">
           <property role="G5nAd" value="1.2" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKf" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3B" role="1f5Fuw">
         <property role="1f4ISL" value="2.4.1" />
         <property role="TrG5h" value="PROTOBUF_CPP" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/PROTOBUF_CPP" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKg" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3C" role="2vN2hK">
           <property role="TrG5h" value="LIBRARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKh" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3D" role="1f5Fuw">
         <property role="1f4ISL" value="2.14.1" />
         <property role="TrG5h" value="R" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/R_2.14.1" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKi" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3E" role="1f5Fuw">
         <property role="1f4ISL" value="2.15.3.5" />
         <property role="TrG5h" value="R" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/R_2.15.3" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKj" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3F" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKk" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3G" role="1f5Fuw">
         <property role="1f4ISL" value="3.1.0" />
         <property role="TrG5h" value="R" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/R_3.1.0" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKl" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3H" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKm" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3I" role="1f5Fuw">
         <property role="1f4ISL" value="0.9.6.4" />
         <property role="TrG5h" value="RJAVA" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/RJAVA" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKn" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3J" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYKo" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3K" role="3jXL5I">
           <property role="G5nAd" value="2.15.3.2" />
-          <ref role="3jXLav" node="6ojrriHiYKk" resolve="R" />
+          <ref role="3jXLav" node="17OfmP$a$3G" resolve="R" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKp" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3L" role="1f5Fuw">
         <property role="1f4ISL" value="1.84" />
         <property role="TrG5h" value="SAM_JDK" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/SAM_JDK_1.84" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKq" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3M" role="2vN2hK">
           <property role="TrG5h" value="JAR" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKr" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3N" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="SAMPLE_RESOURCE_WITH_MPS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/SAMPLE_RESOURCE_WITH_MPS" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKs" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3O" role="2vN2hK">
           <property role="TrG5h" value="FIRST_ARTIFACT" />
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYKt" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3P" role="2vN2hK">
           <property role="TrG5h" value="SECOND_ARTIFACT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYKu" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3Q" role="3jXL5I">
           <property role="G5nAd" value="1.1" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYKv" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3R" role="3jXL5I">
           <property role="G5nAd" value="129.350" />
-          <ref role="3jXLav" node="6ojrriHiYJT" resolve="MPS" />
+          <ref role="3jXLav" node="17OfmP$a$3h" resolve="MPS" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKw" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3S" role="1f5Fuw">
         <property role="1f4ISL" value="0.1.14" />
         <property role="TrG5h" value="SAMTOOLS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/SAMTOOLS_0.1.14" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKx" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3T" role="1f5Fuw">
         <property role="1f4ISL" value="0.1.18" />
         <property role="TrG5h" value="SAMTOOLS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/SAMTOOLS_0.1.18" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKy" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3U" role="1f5Fuw">
         <property role="1f4ISL" value="0.1.18.1" />
         <property role="TrG5h" value="SAMTOOLS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/SAMTOOLS_0.1.18.1" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKz" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3V" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYK$" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3W" role="1f5Fuw">
         <property role="1f4ISL" value="2.9.2" />
         <property role="TrG5h" value="SCALA" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/SCALA" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYK_" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$3X" role="2vN2hK">
           <property role="TrG5h" value="SCALA_RUNTIME_2_9_2" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYKA" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$3Y" role="3jXL5I">
           <property role="G5nAd" value="1.2" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKB" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$3Z" role="1f5Fuw">
         <property role="1f4ISL" value="2.1.1" />
         <property role="TrG5h" value="STAR" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/STAR_2.1.1" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKC" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$40" role="1f5Fuw">
         <property role="1f4ISL" value="2.1.2" />
         <property role="TrG5h" value="STAR" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/STAR_2.1.2" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKD" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$41" role="1f5Fuw">
         <property role="1f4ISL" value="2.1.4" />
         <property role="TrG5h" value="STAR" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/STAR_2.1.4" />
         <property role="TNbOb" value="false" />
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKE" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$42" role="1f5Fuw">
         <property role="1f4ISL" value="2.3.0.6" />
         <property role="TrG5h" value="STAR" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/STAR_2.3.0" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKF" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$43" role="2vN2hK">
           <property role="TrG5h" value="EXECUTABLE" />
         </node>
-        <node concept="2vNlDe" id="6ojrriHiYKG" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$44" role="2vN2hK">
           <property role="TrG5h" value="INDEX" />
-          <node concept="2vNqWl" id="6ojrriHiYKH" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$45" role="2vNrQz">
             <property role="TrG5h" value="organism" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYKI" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$46" role="2vNrQz">
             <property role="TrG5h" value="reference-build" />
           </node>
-          <node concept="2vNqWl" id="6ojrriHiYKJ" role="2vNrQz">
+          <node concept="2vNqWl" id="17OfmP$a$47" role="2vNrQz">
             <property role="TrG5h" value="ensembl-version-number" />
           </node>
         </node>
-        <node concept="3jXLau" id="6ojrriHiYKK" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$48" role="3jXL5I">
           <property role="G5nAd" value="1.1" />
-          <ref role="3jXLav" node="6ojrriHiYHO" resolve="FAI_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1c" resolve="FAI_INDEXED_GENOMES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYKL" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$49" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYHG" resolve="ENSEMBL_GTF" />
+          <ref role="3jXLav" node="17OfmP$a$14" resolve="ENSEMBL_GTF" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKM" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$4a" role="1f5Fuw">
         <property role="1f4ISL" value="0.2.6" />
         <property role="TrG5h" value="TABIX" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/TABIX_0.2.6" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKN" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$4b" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKO" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$4c" role="1f5Fuw">
         <property role="1f4ISL" value="0.32" />
         <property role="TrG5h" value="TRIMMOMATIC" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/TRIMMOMATIC_0_32" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKP" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$4d" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKQ" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$4e" role="1f5Fuw">
         <property role="1f4ISL" value="20120518" />
         <property role="TrG5h" value="TRINITY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/TRINITY_2012.05.18" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKR" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$4f" role="2vN2hK">
           <property role="TrG5h" value="TRINITY_2012_05_18" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYKS" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4g" role="3jXL5I">
           <property role="G5nAd" value="1.2" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
+          <ref role="3jXLav" node="17OfmP$a$1l" resolve="FETCH_URL" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYKT" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4h" role="3jXL5I">
           <property role="G5nAd" value="20120605173944" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKU" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$4i" role="1f5Fuw">
         <property role="1f4ISL" value="73" />
         <property role="TrG5h" value="VARIANT_EFFECT_PREDICTOR" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/VARIANT_EFFECT_PREDICTOR_2.8" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKV" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$4j" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYKW" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4k" role="3jXL5I">
           <property role="G5nAd" value="73" />
-          <ref role="3jXLav" node="6ojrriHiYHw" resolve="ENSEMBL_API" />
+          <ref role="3jXLav" node="17OfmP$a$0S" resolve="ENSEMBL_API" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYKX" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$4l" role="1f5Fuw">
         <property role="1f4ISL" value="75.7.2" />
         <property role="TrG5h" value="VARIANT_EFFECT_PREDICTOR" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/VARIANT_EFFECT_PREDICTOR_75" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYKY" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$4m" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYKZ" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4n" role="3jXL5I">
           <property role="G5nAd" value="75.4" />
-          <ref role="3jXLav" node="6ojrriHiYHw" resolve="ENSEMBL_API" />
+          <ref role="3jXLav" node="17OfmP$a$0S" resolve="ENSEMBL_API" />
         </node>
       </node>
-      <node concept="3jXL5H" id="6ojrriHiYL0" role="1f5Fuw">
+      <node concept="3jXL5H" id="17OfmP$a$4o" role="1f5Fuw">
         <property role="1f4ISL" value="0.1.10" />
         <property role="TrG5h" value="VCF_TOOLS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/VCF_TOOLS_0.1.10" />
         <property role="TNbOb" value="false" />
-        <node concept="2vNlDe" id="6ojrriHiYL1" role="2vN2hK">
+        <node concept="2vNlDe" id="17OfmP$a$4p" role="2vN2hK">
           <property role="TrG5h" value="BINARIES" />
         </node>
       </node>
-      <node concept="3jyS3w" id="6ojrriHiYL2" role="1f5Fuw">
+      <node concept="3jyS3w" id="17OfmP$a$4q" role="1f5Fuw">
         <property role="1f4ISL" value="1.2" />
         <property role="TrG5h" value="BISMARK_BISULFITE_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/aligners/BISMARK_BISULFITE_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYL3" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4r" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYL4" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4s" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYL5" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4t" role="3jXL5I">
           <property role="G5nAd" value="20120620120930" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYL6" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4u" role="3jXL5I">
           <property role="G5nAd" value="0.7.12.2" />
-          <ref role="3jXLav" node="6ojrriHiYGf" resolve="BISMARK_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$azZB" resolve="BISMARK_ARTIFACT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYL7" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4v" role="3jXL5I">
           <property role="G5nAd" value="0.1.18" />
-          <ref role="3jXLav" node="6ojrriHiYKy" resolve="SAMTOOLS" />
+          <ref role="3jXLav" node="17OfmP$a$3U" resolve="SAMTOOLS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYL8" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4w" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYIM" resolve="ILLUMINA_ADAPTERS" />
+          <ref role="3jXLav" node="17OfmP$a$2a" resolve="ILLUMINA_ADAPTERS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYL9" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYLa" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$4x" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$4y" role="1fdMWl">
             <property role="TrG5h" value="INPUT_READS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiYLb" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$4z" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLc" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$4$" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYLd" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$4_" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLe" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$4A" role="1fdMWn">
             <property role="TrG5h" value="GOBY_ALIGNMENT" />
-            <node concept="JDp7Y" id="6ojrriHiYLf" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$4B" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLg" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$4C" role="1fdMWn">
             <property role="TrG5h" value="COUNTS" />
-            <node concept="JDp7Y" id="6ojrriHiYLh" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$4D" role="1fdBNg">
               <property role="JDp7Z" value="COUNTS" />
               <property role="JDpo1" value="Counts converted from a compact alignment." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLi" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$4E" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_ALL_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiYLj" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$4F" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_ALL_FILES" />
               <property role="JDpo1" value="Zip archive with all the files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLk" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$4G" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_BED" />
-            <node concept="JDp7Y" id="6ojrriHiYLl" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$4H" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_BED" />
               <property role="JDpo1" value="Zip archive with bed files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLm" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$4I" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_WIG" />
-            <node concept="JDp7Y" id="6ojrriHiYLn" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$4J" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_WIG" />
               <property role="JDpo1" value="Zip archive with wig files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLo" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$4K" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYLp" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$4L" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_STATS" />
               <property role="JDpo1" value="Alignment textual statistics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLq" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$4M" role="1fdMWn">
             <property role="TrG5h" value="STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYLr" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$4N" role="1fdBNg">
               <property role="JDp7Z" value="STATS" />
               <property role="JDpo1" value="Statistics about files in one of the compact Goby formats" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLs" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$4O" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYLt" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$4P" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
               <property role="JDpo1" value="Sequence Variation Statistics" />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYLu" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$4Q" role="TSDHD">
           <property role="TrG5h" value="Other aligner options" />
           <property role="TPGZf" value="ALIGNER_OPTIONS" />
           <property role="TPKv7" value="Provide any additional Bismark option here following the syntax expected by the Goby align mode with last&#10;                aligner.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYLv" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$4R" role="TSDHD">
           <property role="TrG5h" value="GENOME_REFERENCE_ID" />
           <property role="TPGZf" value="GENOME_REFERENCE_ID" />
           <property role="TPKv7" value="The reference genome." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYLw" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$4S" role="TSDHD">
           <property role="TrG5h" value="CHUNK_SIZE" />
           <property role="TPGZf" value="CHUNK_SIZE" />
           <property role="TPKv7" value="The number of bytes of compressed reads file to give to a single align part." />
@@ -1742,115 +1729,115 @@
           <property role="T_gTM" value="50000000" />
         </node>
       </node>
-      <node concept="3jyS3w" id="6ojrriHiYLx" role="1f5Fuw">
+      <node concept="3jyS3w" id="17OfmP$a$4T" role="1f5Fuw">
         <property role="1f4ISL" value="1.1" />
         <property role="TrG5h" value="BWA_BAM_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/aligners/BWA_BAM_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYLy" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4U" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYLz" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4V" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYL$" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4W" role="3jXL5I">
           <property role="G5nAd" value="0.5.9.16.6" />
-          <ref role="3jXLav" node="6ojrriHiYGv" resolve="BWA_WITH_GOBY_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$azZR" resolve="BWA_WITH_GOBY_ARTIFACT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYL_" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$4X" role="3jXL5I">
           <property role="G5nAd" value="0.1.18.1" />
-          <ref role="3jXLav" node="6ojrriHiYKy" resolve="SAMTOOLS" />
+          <ref role="3jXLav" node="17OfmP$a$3U" resolve="SAMTOOLS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYLA" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYLB" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$4Y" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$4Z" role="1fdMWl">
             <property role="TrG5h" value="INPUT_READS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiYLC" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$50" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLD" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$51" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYLE" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$52" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLF" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$53" role="1fdMWn">
             <property role="TrG5h" value="BAM_ALIGNMENT" />
-            <node concept="JDp7Y" id="6ojrriHiYLG" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$54" role="1fdBNg">
               <property role="JDp7Z" value="BAM_ALIGNMENT" />
               <property role="JDpo1" value="BAM alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLH" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$55" role="1fdMWn">
             <property role="TrG5h" value="COUNTS" />
-            <node concept="JDp7Y" id="6ojrriHiYLI" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$56" role="1fdBNg">
               <property role="JDp7Z" value="COUNTS" />
               <property role="JDpo1" value="Counts converted from a compact alignment." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLJ" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$57" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_ALL_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiYLK" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$58" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_ALL_FILES" />
               <property role="JDpo1" value="Zip archive with all the files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLL" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$59" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_BED" />
-            <node concept="JDp7Y" id="6ojrriHiYLM" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5a" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_BED" />
               <property role="JDpo1" value="Zip archive with bed files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLN" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5b" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_WIG" />
-            <node concept="JDp7Y" id="6ojrriHiYLO" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5c" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_WIG" />
               <property role="JDpo1" value="Zip archive with wig files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLP" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5d" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYLQ" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5e" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_STATS" />
               <property role="JDpo1" value="Alignment textual statistics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLR" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5f" role="1fdMWn">
             <property role="TrG5h" value="STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYLS" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5g" role="1fdBNg">
               <property role="JDp7Z" value="STATS" />
               <property role="JDpo1" value="Statistics about files in one of the compact Goby formats" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYLT" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5h" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYLU" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5i" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
               <property role="JDpo1" value="Sequence Variation Statistics" />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYLV" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$5j" role="TSDHD">
           <property role="TrG5h" value="Other aligner options (aln phase)" />
           <property role="TPGZf" value="ALIGNER_OPTIONS" />
           <property role="TPKv7" value="Provide any additional BWA option here following the syntax expected by bwa aln." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYLW" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$5k" role="TSDHD">
           <property role="TrG5h" value="GENOME_REFERENCE_ID" />
           <property role="TPGZf" value="GENOME_REFERENCE_ID" />
           <property role="TPKv7" value="The reference genome." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYLX" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$5l" role="TSDHD">
           <property role="TrG5h" value="CHUNK_SIZE" />
           <property role="TPGZf" value="CHUNK_SIZE" />
           <property role="TPKv7" value="The number of bytes of compressed reads file to give to a single align part." />
@@ -1858,139 +1845,139 @@
           <property role="T_gTM" value="50000000" />
         </node>
       </node>
-      <node concept="3jyS3w" id="6ojrriHiYLY" role="1f5Fuw">
+      <node concept="3jyS3w" id="17OfmP$a$5m" role="1f5Fuw">
         <property role="1f4ISL" value="1.3" />
         <property role="TrG5h" value="BWA_GOBY_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/aligners/BWA_GOBY_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYLZ" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$5n" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYM0" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$5o" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYM1" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$5p" role="3jXL5I">
           <property role="G5nAd" value="0.5.9.16.6" />
-          <ref role="3jXLav" node="6ojrriHiYGv" resolve="BWA_WITH_GOBY_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$azZR" resolve="BWA_WITH_GOBY_ARTIFACT" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYM2" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYM3" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$5q" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$5r" role="1fdMWl">
             <property role="TrG5h" value="INPUT_READS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiYM4" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5s" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYM5" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5t" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYM6" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5u" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYM7" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5v" role="1fdMWn">
             <property role="TrG5h" value="GOBY_ALIGNMENT" />
-            <node concept="JDp7Y" id="6ojrriHiYM8" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5w" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYM9" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5x" role="1fdMWn">
             <property role="TrG5h" value="COUNTS" />
-            <node concept="JDp7Y" id="6ojrriHiYMa" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5y" role="1fdBNg">
               <property role="JDp7Z" value="COUNTS" />
               <property role="JDpo1" value="Counts converted from a compact alignment." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMb" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5z" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_ALL_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiYMc" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5$" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_ALL_FILES" />
               <property role="JDpo1" value="Zip archive with all the files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMd" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5_" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_BED" />
-            <node concept="JDp7Y" id="6ojrriHiYMe" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5A" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_BED" />
               <property role="JDpo1" value="Zip archive with bed files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMf" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5B" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_WIG" />
-            <node concept="JDp7Y" id="6ojrriHiYMg" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5C" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_WIG" />
               <property role="JDpo1" value="Zip archive with wig files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMh" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5D" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYMi" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5E" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_STATS" />
               <property role="JDpo1" value="Alignment textual statistics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMj" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5F" role="1fdMWn">
             <property role="TrG5h" value="STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYMk" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5G" role="1fdBNg">
               <property role="JDp7Z" value="STATS" />
               <property role="JDpo1" value="Statistics about files in one of the compact Goby formats" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMl" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5H" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYMm" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5I" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
               <property role="JDpo1" value="Sequence Variation Statistics" />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYMn" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$5J" role="TSDHD">
           <property role="TrG5h" value="Options for aln phase" />
           <property role="TPGZf" value="ALN_OPTIONS" />
           <property role="TPKv7" value="Provide any additional BWA option here following the syntax expected by bwa aln." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYMo" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$5K" role="TSDHD">
           <property role="TrG5h" value="Options for samse/sampe phase" />
           <property role="TPGZf" value="SAMPE_SAMSE_OPTIONS" />
           <property role="TPKv7" value="Provide any additional BWA option here following the syntax expected by bwa samse/sampe." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYMp" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$5L" role="TSDHD">
           <property role="TrG5h" value="Ambiguity threshold" />
           <property role="TPGZf" value="AMBIGUITY_THRESHOLD" />
           <property role="TPKv7" value="The maximum number of reference sequence locations that can be matched for a read to be considered&#10;                non-ambiguous.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYMq" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$5M" role="TSDHD">
           <property role="TrG5h" value="Max Number Gap Opens" />
           <property role="TPGZf" value="MAXIMUM_NUMBER_GAP_OPENS" />
           <property role="TPKv7" value="Maximum number of gap opens" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYMr" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$5N" role="TSDHD">
           <property role="TrG5h" value="Max Number Gap Extensions" />
           <property role="TPGZf" value="MAXIMUM_NUMBER_GAP_EXTENSIONS" />
           <property role="TPKv7" value="Maximum number of gap extensions, -1 for k-difference mode (disallowing long gaps)" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="-1" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYMs" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$5O" role="TSDHD">
           <property role="TrG5h" value="GENOME_REFERENCE_ID" />
           <property role="TPGZf" value="GENOME_REFERENCE_ID" />
           <property role="TPKv7" value="The reference genome." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYMt" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$5P" role="TSDHD">
           <property role="TrG5h" value="CHUNK_SIZE" />
           <property role="TPGZf" value="CHUNK_SIZE" />
           <property role="TPKv7" value="The number of bytes of compressed reads file to give to a single align part." />
@@ -1998,152 +1985,152 @@
           <property role="T_gTM" value="50000000" />
         </node>
       </node>
-      <node concept="3jyS3w" id="6ojrriHiYMu" role="1f5Fuw">
+      <node concept="3jyS3w" id="17OfmP$a$5Q" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="GSNAP_BAM" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/aligners/GSNAP_BAM" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYMv" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$5R" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYMw" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$5S" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYMx" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$5T" role="3jXL5I">
           <property role="G5nAd" value="2011.10.16" />
-          <ref role="3jXLav" node="6ojrriHiYIC" resolve="GSNAP_WITH_GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$20" resolve="GSNAP_WITH_GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYMy" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$5U" role="3jXL5I">
           <property role="G5nAd" value="0.1.14" />
-          <ref role="3jXLav" node="6ojrriHiYKy" resolve="SAMTOOLS" />
+          <ref role="3jXLav" node="17OfmP$a$3U" resolve="SAMTOOLS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYMz" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYM$" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$5V" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$5W" role="1fdMWl">
             <property role="TrG5h" value="INPUT_READS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiYM_" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5X" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMA" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$5Y" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYMB" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$5Z" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMC" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$60" role="1fdMWn">
             <property role="TrG5h" value="BAM_ALIGNMENT" />
-            <node concept="JDp7Y" id="6ojrriHiYMD" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$61" role="1fdBNg">
               <property role="JDp7Z" value="BAM_ALIGNMENT" />
               <property role="JDpo1" value="BAM alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYME" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$62" role="1fdMWn">
             <property role="TrG5h" value="COUNTS" />
-            <node concept="JDp7Y" id="6ojrriHiYMF" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$63" role="1fdBNg">
               <property role="JDp7Z" value="COUNTS" />
               <property role="JDpo1" value="Counts converted from a compact alignment." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMG" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$64" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_ALL_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiYMH" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$65" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_ALL_FILES" />
               <property role="JDpo1" value="Zip archive with all the files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMI" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$66" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_BED" />
-            <node concept="JDp7Y" id="6ojrriHiYMJ" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$67" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_BED" />
               <property role="JDpo1" value="Zip archive with bed files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMK" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$68" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_WIG" />
-            <node concept="JDp7Y" id="6ojrriHiYML" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$69" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_WIG" />
               <property role="JDpo1" value="Zip archive with wig files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMM" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$6a" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYMN" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6b" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_STATS" />
               <property role="JDpo1" value="Alignment textual statistics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMO" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$6c" role="1fdMWn">
             <property role="TrG5h" value="STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYMP" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6d" role="1fdBNg">
               <property role="JDp7Z" value="STATS" />
               <property role="JDpo1" value="Statistics about files in one of the compact Goby formats" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYMQ" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$6e" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYMR" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6f" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
               <property role="JDpo1" value="Sequence Variation Statistics" />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYMS" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$6g" role="TSDHD">
           <property role="TrG5h" value="Other aligner options" />
           <property role="TPGZf" value="ALIGNER_OPTIONS" />
           <property role="TPKv7" value="Provide any additional GSNAP option here following the syntax expected by GSNAP." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYMT" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$6h" role="TSDHD">
           <property role="TrG5h" value="Ambiguity threshold" />
           <property role="TPGZf" value="AMBIGUITY_THRESHOLD" />
           <property role="TPKv7" value="The maximum number of locations a read can match in the reference to not be considered ambiguous. Read&#10;                is ambiguous if #hits&gt;threshold.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYMU" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$6i" role="TSDHD">
           <property role="TrG5h" value="Standness option." />
           <property role="TPGZf" value="STRANDNESS" />
           <property role="TPKv7" value="Determines whether --cmet-stranded of --cmet-nonstranded or --atoi-stranded or --atoi-nonstranded are&#10;                used.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="STRANDED" />
-          <node concept="TPwC6" id="6ojrriHiYMV" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$6j" role="TPwC2">
             <property role="TrG5h" value="stranded" />
             <property role="TPwC7" value="STRANDED" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYMW" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$6k" role="TPwC2">
             <property role="TrG5h" value="non-stranded" />
             <property role="TPwC7" value="NON_STRANDED" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYMX" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$6l" role="TSDHD">
           <property role="TrG5h" value="Spliced alignment" />
           <property role="TPGZf" value="SPLICED_ALIGNMENT" />
           <property role="TPKv7" value="Search for splices during alignment" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="NON_SPLICED" />
-          <node concept="TPwC6" id="6ojrriHiYMY" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$6m" role="TPwC2">
             <property role="TrG5h" value="Non-spliced" />
             <property role="TPwC7" value="NON_SPLICED" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYMZ" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$6n" role="TPwC2">
             <property role="TrG5h" value="Spliced" />
             <property role="TPwC7" value="SPLICED" />
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYN0" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$6o" role="TSDHD">
           <property role="TrG5h" value="GENOME_REFERENCE_ID" />
           <property role="TPGZf" value="GENOME_REFERENCE_ID" />
           <property role="TPKv7" value="The reference genome." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYN1" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$6p" role="TSDHD">
           <property role="TrG5h" value="CHUNK_SIZE" />
           <property role="TPGZf" value="CHUNK_SIZE" />
           <property role="TPKv7" value="The number of bytes of compressed reads file to give to a single align part." />
@@ -2151,163 +2138,163 @@
           <property role="T_gTM" value="50000000" />
         </node>
       </node>
-      <node concept="3jyS3w" id="6ojrriHiYN2" role="1f5Fuw">
+      <node concept="3jyS3w" id="17OfmP$a$6q" role="1f5Fuw">
         <property role="1f4ISL" value="1.1" />
         <property role="TrG5h" value="GSNAP_GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/aligners/GSNAP_GOBY" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYN3" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$6r" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYN4" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$6s" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYN5" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$6t" role="3jXL5I">
           <property role="G5nAd" value="2011.11.17" />
-          <ref role="3jXLav" node="6ojrriHiYIC" resolve="GSNAP_WITH_GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$20" resolve="GSNAP_WITH_GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYN6" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$6u" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYIM" resolve="ILLUMINA_ADAPTERS" />
+          <ref role="3jXLav" node="17OfmP$a$2a" resolve="ILLUMINA_ADAPTERS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYN7" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$6v" role="3jXL5I">
           <property role="G5nAd" value="2012.06.05" />
-          <ref role="3jXLav" node="6ojrriHiYHM" resolve="EXTRACT_NONMATCHED" />
+          <ref role="3jXLav" node="17OfmP$a$1a" resolve="EXTRACT_NONMATCHED" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYN8" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYN9" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$6w" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$6x" role="1fdMWl">
             <property role="TrG5h" value="INPUT_READS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiYNa" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6y" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNb" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$6z" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYNc" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6$" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNd" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$6_" role="1fdMWn">
             <property role="TrG5h" value="GOBY_ALIGNMENT" />
-            <node concept="JDp7Y" id="6ojrriHiYNe" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6A" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNf" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$6B" role="1fdMWn">
             <property role="TrG5h" value="COUNTS" />
-            <node concept="JDp7Y" id="6ojrriHiYNg" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6C" role="1fdBNg">
               <property role="JDp7Z" value="COUNTS" />
               <property role="JDpo1" value="Counts converted from a compact alignment." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNh" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$6D" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_ALL_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiYNi" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6E" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_ALL_FILES" />
               <property role="JDpo1" value="Zip archive with all the files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNj" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$6F" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_BED" />
-            <node concept="JDp7Y" id="6ojrriHiYNk" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6G" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_BED" />
               <property role="JDpo1" value="Zip archive with bed files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNl" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$6H" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_WIG" />
-            <node concept="JDp7Y" id="6ojrriHiYNm" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6I" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_WIG" />
               <property role="JDpo1" value="Zip archive with wig files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNn" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$6J" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYNo" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6K" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_STATS" />
               <property role="JDpo1" value="Alignment textual statistics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNp" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$6L" role="1fdMWn">
             <property role="TrG5h" value="STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYNq" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6M" role="1fdBNg">
               <property role="JDp7Z" value="STATS" />
               <property role="JDpo1" value="Statistics about files in one of the compact Goby formats" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNr" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$6N" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYNs" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$6O" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
               <property role="JDpo1" value="Sequence Variation Statistics" />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYNt" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$6P" role="TSDHD">
           <property role="TrG5h" value="Other aligner options" />
           <property role="TPGZf" value="ALIGNER_OPTIONS" />
           <property role="TPKv7" value="Provide any additional GSNAP option here following the syntax expected by GSNAP." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYNu" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$6Q" role="TSDHD">
           <property role="TrG5h" value="Ambiguity threshold" />
           <property role="TPGZf" value="AMBIGUITY_THRESHOLD" />
           <property role="TPKv7" value="The maximum number of locations a read can match in the reference to not be considered ambiguous. Read&#10;                is ambiguous if #hits&gt;threshold.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYNv" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$6R" role="TSDHD">
           <property role="TrG5h" value="Standness option" />
           <property role="TPGZf" value="STRANDNESS" />
           <property role="TPKv7" value="Determines whether --cmet-stranded of --cmet-nonstranded or --atoi-stranded or --atoi-nonstranded are&#10;                used.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="STRANDED" />
-          <node concept="TPwC6" id="6ojrriHiYNw" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$6S" role="TPwC2">
             <property role="TrG5h" value="stranded" />
             <property role="TPwC7" value="STRANDED" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYNx" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$6T" role="TPwC2">
             <property role="TrG5h" value="non-stranded" />
             <property role="TPwC7" value="NON_STRANDED" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYNy" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$6U" role="TSDHD">
           <property role="TrG5h" value="Spliced alignment" />
           <property role="TPGZf" value="SPLICED_ALIGNMENT" />
           <property role="TPKv7" value="Search for splices during alignment" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="NON_SPLICED" />
-          <node concept="TPwC6" id="6ojrriHiYNz" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$6V" role="TPwC2">
             <property role="TrG5h" value="Non-spliced" />
             <property role="TPwC7" value="NON_SPLICED" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYN$" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$6W" role="TPwC2">
             <property role="TrG5h" value="Spliced" />
             <property role="TPwC7" value="SPLICED" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYN_" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$6X" role="TSDHD">
           <property role="TrG5h" value="Export non-matching reads" />
           <property role="TPGZf" value="NON_MATCHING" />
           <property role="TPKv7" value="Output unmatched reads after alignment is complete" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYNA" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$6Y" role="TSDHD">
           <property role="TrG5h" value="GENOME_REFERENCE_ID" />
           <property role="TPGZf" value="GENOME_REFERENCE_ID" />
           <property role="TPKv7" value="The reference genome." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYNB" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$6Z" role="TSDHD">
           <property role="TrG5h" value="CHUNK_SIZE" />
           <property role="TPGZf" value="CHUNK_SIZE" />
           <property role="TPKv7" value="The number of bytes of compressed reads file to give to a single align part." />
@@ -2315,163 +2302,163 @@
           <property role="T_gTM" value="50000000" />
         </node>
       </node>
-      <node concept="3jyS3w" id="6ojrriHiYNC" role="1f5Fuw">
+      <node concept="3jyS3w" id="17OfmP$a$70" role="1f5Fuw">
         <property role="1f4ISL" value="1.1" />
         <property role="TrG5h" value="GSNAP_GOBY_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/aligners/GSNAP_GOBY_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYND" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$71" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYNE" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$72" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYNF" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$73" role="3jXL5I">
           <property role="G5nAd" value="2013.06.26" />
-          <ref role="3jXLav" node="6ojrriHiYID" resolve="GSNAP_WITH_GOBY_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$a$21" resolve="GSNAP_WITH_GOBY_ARTIFACT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYNG" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$74" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYIM" resolve="ILLUMINA_ADAPTERS" />
+          <ref role="3jXLav" node="17OfmP$a$2a" resolve="ILLUMINA_ADAPTERS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYNH" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$75" role="3jXL5I">
           <property role="G5nAd" value="2012.06.05" />
-          <ref role="3jXLav" node="6ojrriHiYHM" resolve="EXTRACT_NONMATCHED" />
+          <ref role="3jXLav" node="17OfmP$a$1a" resolve="EXTRACT_NONMATCHED" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYNI" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYNJ" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$76" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$77" role="1fdMWl">
             <property role="TrG5h" value="INPUT_READS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiYNK" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$78" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNL" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$79" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYNM" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7a" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNN" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7b" role="1fdMWn">
             <property role="TrG5h" value="GOBY_ALIGNMENT" />
-            <node concept="JDp7Y" id="6ojrriHiYNO" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7c" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNP" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7d" role="1fdMWn">
             <property role="TrG5h" value="COUNTS" />
-            <node concept="JDp7Y" id="6ojrriHiYNQ" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7e" role="1fdBNg">
               <property role="JDp7Z" value="COUNTS" />
               <property role="JDpo1" value="Counts converted from a compact alignment." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNR" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7f" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_ALL_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiYNS" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7g" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_ALL_FILES" />
               <property role="JDpo1" value="Zip archive with all the files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNT" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7h" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_BED" />
-            <node concept="JDp7Y" id="6ojrriHiYNU" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7i" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_BED" />
               <property role="JDpo1" value="Zip archive with bed files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNV" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7j" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_WIG" />
-            <node concept="JDp7Y" id="6ojrriHiYNW" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7k" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_WIG" />
               <property role="JDpo1" value="Zip archive with wig files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNX" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7l" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYNY" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7m" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_STATS" />
               <property role="JDpo1" value="Alignment textual statistics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYNZ" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7n" role="1fdMWn">
             <property role="TrG5h" value="STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYO0" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7o" role="1fdBNg">
               <property role="JDp7Z" value="STATS" />
               <property role="JDpo1" value="Statistics about files in one of the compact Goby formats" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYO1" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7p" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYO2" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7q" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
               <property role="JDpo1" value="Sequence Variation Statistics" />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYO3" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$7r" role="TSDHD">
           <property role="TrG5h" value="Other aligner options" />
           <property role="TPGZf" value="ALIGNER_OPTIONS" />
           <property role="TPKv7" value="Provide any additional GSNAP option here following the syntax expected by GSNAP." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYO4" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$7s" role="TSDHD">
           <property role="TrG5h" value="Ambiguity threshold" />
           <property role="TPGZf" value="AMBIGUITY_THRESHOLD" />
           <property role="TPKv7" value="The maximum number of locations a read can match in the reference to not be considered ambiguous. Read&#10;                is ambiguous if #hits&gt;threshold.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYO5" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$7t" role="TSDHD">
           <property role="TrG5h" value="Standness option" />
           <property role="TPGZf" value="STRANDNESS" />
           <property role="TPKv7" value="Determines whether --cmet-stranded of --cmet-nonstranded or --atoi-stranded or --atoi-nonstranded are&#10;                used.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="STRANDED" />
-          <node concept="TPwC6" id="6ojrriHiYO6" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$7u" role="TPwC2">
             <property role="TrG5h" value="stranded" />
             <property role="TPwC7" value="STRANDED" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYO7" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$7v" role="TPwC2">
             <property role="TrG5h" value="non-stranded" />
             <property role="TPwC7" value="NON_STRANDED" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYO8" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$7w" role="TSDHD">
           <property role="TrG5h" value="Spliced alignment" />
           <property role="TPGZf" value="SPLICED_ALIGNMENT" />
           <property role="TPKv7" value="Search for splices during alignment" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="NON_SPLICED" />
-          <node concept="TPwC6" id="6ojrriHiYO9" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$7x" role="TPwC2">
             <property role="TrG5h" value="Non-spliced" />
             <property role="TPwC7" value="NON_SPLICED" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYOa" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$7y" role="TPwC2">
             <property role="TrG5h" value="Spliced" />
             <property role="TPwC7" value="SPLICED" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYOb" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$7z" role="TSDHD">
           <property role="TrG5h" value="Export non-matching reads" />
           <property role="TPGZf" value="NON_MATCHING" />
           <property role="TPKv7" value="Output unmatched reads after alignment is complete" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYOc" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$7$" role="TSDHD">
           <property role="TrG5h" value="GENOME_REFERENCE_ID" />
           <property role="TPGZf" value="GENOME_REFERENCE_ID" />
           <property role="TPKv7" value="The reference genome." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYOd" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$7_" role="TSDHD">
           <property role="TrG5h" value="CHUNK_SIZE" />
           <property role="TPGZf" value="CHUNK_SIZE" />
           <property role="TPKv7" value="The number of bytes of compressed reads file to give to a single align part." />
@@ -2479,144 +2466,144 @@
           <property role="T_gTM" value="50000000" />
         </node>
       </node>
-      <node concept="3jyS3w" id="6ojrriHiYOe" role="1f5Fuw">
+      <node concept="3jyS3w" id="17OfmP$a$7A" role="1f5Fuw">
         <property role="1f4ISL" value="2.0" />
         <property role="TrG5h" value="LAST_BISULFITE_V2_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/aligners/LAST_BISULFITE_V2_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYOf" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$7B" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYOg" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$7C" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYOh" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$7D" role="3jXL5I">
           <property role="G5nAd" value="20130413162635" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYOi" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$7E" role="3jXL5I">
           <property role="G5nAR" value="287" />
-          <ref role="3jXLav" node="6ojrriHiYIP" resolve="LAST_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$a$2d" resolve="LAST_ARTIFACT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYOj" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$7F" role="3jXL5I">
           <property role="G5nAR" value="287" />
-          <ref role="3jXLav" node="6ojrriHiYIV" resolve="LAST_BISULFITE_INDEX" />
+          <ref role="3jXLav" node="17OfmP$a$2j" resolve="LAST_BISULFITE_INDEX" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYOk" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$7G" role="3jXL5I">
           <property role="G5nAd" value="1.1" />
-          <ref role="3jXLav" node="6ojrriHiYK2" resolve="PLAST" />
+          <ref role="3jXLav" node="17OfmP$a$3q" resolve="PLAST" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYOl" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYOm" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$7H" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$7I" role="1fdMWl">
             <property role="TrG5h" value="INPUT_READS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiYOn" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7J" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYOo" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7K" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYOp" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7L" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYOq" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7M" role="1fdMWn">
             <property role="TrG5h" value="GOBY_ALIGNMENT" />
-            <node concept="JDp7Y" id="6ojrriHiYOr" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7N" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYOs" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7O" role="1fdMWn">
             <property role="TrG5h" value="COUNTS" />
-            <node concept="JDp7Y" id="6ojrriHiYOt" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7P" role="1fdBNg">
               <property role="JDp7Z" value="COUNTS" />
               <property role="JDpo1" value="Counts converted from a compact alignment." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYOu" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7Q" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_ALL_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiYOv" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7R" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_ALL_FILES" />
               <property role="JDpo1" value="Zip archive with all the files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYOw" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7S" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_BED" />
-            <node concept="JDp7Y" id="6ojrriHiYOx" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7T" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_BED" />
               <property role="JDpo1" value="Zip archive with bed files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYOy" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7U" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_WIG" />
-            <node concept="JDp7Y" id="6ojrriHiYOz" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7V" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_WIG" />
               <property role="JDpo1" value="Zip archive with wig files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYO$" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7W" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYO_" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7X" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_STATS" />
               <property role="JDpo1" value="Alignment textual statistics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYOA" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$7Y" role="1fdMWn">
             <property role="TrG5h" value="STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYOB" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$7Z" role="1fdBNg">
               <property role="JDp7Z" value="STATS" />
               <property role="JDpo1" value="Statistics about files in one of the compact Goby formats" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYOC" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$80" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYOD" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$81" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
               <property role="JDpo1" value="Sequence Variation Statistics" />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYOE" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$82" role="TSDHD">
           <property role="TrG5h" value="Other aligner options" />
           <property role="TPGZf" value="ALIGNER_OPTIONS" />
           <property role="TPKv7" value="Provide any additional Last option here following the syntax expected by the Goby align mode with last&#10;                aligner.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYOF" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$83" role="TSDHD">
           <property role="TrG5h" value="d" />
           <property role="TPGZf" value="D" />
           <property role="TPKv7" value="Minimum score for gapless alignments." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="108" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYOG" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$84" role="TSDHD">
           <property role="TrG5h" value="e" />
           <property role="TPGZf" value="E" />
           <property role="TPKv7" value="Minimum score for gapped alignments." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="120" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYOH" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$85" role="TSDHD">
           <property role="TrG5h" value="s" />
           <property role="TPGZf" value="S" />
           <property role="TPKv7" value="Score threshold for last-map-probs.py. Should be high enough to&#10;                avoid random, spurious alignments: otherwise, the mismap probabilities&#10;                will not be reliable. A threshold of 150 is often reasonable. For&#10;                instance, if we compare 50 bp reads to the human genome, we expect a&#10;                random alignment with score &gt;= 150 once every few thousand reads.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="150" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYOI" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$86" role="TSDHD">
           <property role="TrG5h" value="GENOME_REFERENCE_ID" />
           <property role="TPGZf" value="GENOME_REFERENCE_ID" />
           <property role="TPKv7" value="The reference genome." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYOJ" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$87" role="TSDHD">
           <property role="TrG5h" value="CHUNK_SIZE" />
           <property role="TPGZf" value="CHUNK_SIZE" />
           <property role="TPKv7" value="The number of bytes of compressed reads file to give to a single align part." />
@@ -2624,144 +2611,144 @@
           <property role="T_gTM" value="50000000" />
         </node>
       </node>
-      <node concept="3jyS3w" id="6ojrriHiYOK" role="1f5Fuw">
+      <node concept="3jyS3w" id="17OfmP$a$88" role="1f5Fuw">
         <property role="1f4ISL" value="1.6" />
         <property role="TrG5h" value="PLAST_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/aligners/PLAST_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYOL" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$89" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYOM" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$8a" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYON" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$8b" role="3jXL5I">
           <property role="G5nAd" value="20140222104439" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYOO" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$8c" role="3jXL5I">
           <property role="G5nAd" value="581.2" />
-          <ref role="3jXLav" node="6ojrriHiYIT" resolve="LAST_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$a$2h" resolve="LAST_ARTIFACT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYOP" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$8d" role="3jXL5I">
           <property role="G5nAd" value="581.1" />
-          <ref role="3jXLav" node="6ojrriHiYJv" resolve="LAST_INDEX" />
+          <ref role="3jXLav" node="17OfmP$a$2R" resolve="LAST_INDEX" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYOQ" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$8e" role="3jXL5I">
           <property role="G5nAd" value="1.3" />
-          <ref role="3jXLav" node="6ojrriHiYK2" resolve="PLAST" />
+          <ref role="3jXLav" node="17OfmP$a$3q" resolve="PLAST" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYOR" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYOS" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$8f" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$8g" role="1fdMWl">
             <property role="TrG5h" value="INPUT_READS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiYOT" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8h" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYOU" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8i" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYOV" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8j" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYOW" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8k" role="1fdMWn">
             <property role="TrG5h" value="GOBY_ALIGNMENT" />
-            <node concept="JDp7Y" id="6ojrriHiYOX" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8l" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYOY" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8m" role="1fdMWn">
             <property role="TrG5h" value="COUNTS" />
-            <node concept="JDp7Y" id="6ojrriHiYOZ" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8n" role="1fdBNg">
               <property role="JDp7Z" value="COUNTS" />
               <property role="JDpo1" value="Counts converted from a compact alignment." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYP0" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8o" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_ALL_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiYP1" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8p" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_ALL_FILES" />
               <property role="JDpo1" value="Zip archive with all the files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYP2" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8q" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_BED" />
-            <node concept="JDp7Y" id="6ojrriHiYP3" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8r" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_BED" />
               <property role="JDpo1" value="Zip archive with bed files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYP4" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8s" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_WIG" />
-            <node concept="JDp7Y" id="6ojrriHiYP5" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8t" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_WIG" />
               <property role="JDpo1" value="Zip archive with wig files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYP6" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8u" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYP7" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8v" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_STATS" />
               <property role="JDpo1" value="Alignment textual statistics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYP8" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8w" role="1fdMWn">
             <property role="TrG5h" value="STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYP9" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8x" role="1fdBNg">
               <property role="JDp7Z" value="STATS" />
               <property role="JDpo1" value="Statistics about files in one of the compact Goby formats" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYPa" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8y" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYPb" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8z" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
               <property role="JDpo1" value="Sequence Variation Statistics" />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYPc" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$8$" role="TSDHD">
           <property role="TrG5h" value="Other aligner options" />
           <property role="TPGZf" value="ALIGNER_OPTIONS" />
           <property role="TPKv7" value="Provide any additional Last option here following the syntax expected by the Goby align mode with last&#10;                aligner.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYPd" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$8_" role="TSDHD">
           <property role="TrG5h" value="d" />
           <property role="TPGZf" value="D" />
           <property role="TPKv7" value="Minimum score for gapless alignments." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="108" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYPe" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$8A" role="TSDHD">
           <property role="TrG5h" value="e" />
           <property role="TPGZf" value="E" />
           <property role="TPKv7" value="Minimum score for gapped alignments." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="120" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYPf" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$8B" role="TSDHD">
           <property role="TrG5h" value="s" />
           <property role="TPGZf" value="S" />
           <property role="TPKv7" value="Score threshold for last-map-probs.py. Should be high enough to&#10;                avoid random, spurious alignments: otherwise, the mismap probabilities&#10;                will not be reliable. A threshold of 150 is often reasonable. For&#10;                instance, if we compare 50 bp reads to the human genome, we expect a&#10;                random alignment with score &gt;= 150 once every few thousand reads.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="150" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYPg" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$8C" role="TSDHD">
           <property role="TrG5h" value="GENOME_REFERENCE_ID" />
           <property role="TPGZf" value="GENOME_REFERENCE_ID" />
           <property role="TPKv7" value="The reference genome." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYPh" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$8D" role="TSDHD">
           <property role="TrG5h" value="CHUNK_SIZE" />
           <property role="TPGZf" value="CHUNK_SIZE" />
           <property role="TPKv7" value="The number of bytes of compressed reads file to give to a single align part." />
@@ -2769,126 +2756,126 @@
           <property role="T_gTM" value="50000000" />
         </node>
       </node>
-      <node concept="3jyS3w" id="6ojrriHiYPi" role="1f5Fuw">
+      <node concept="3jyS3w" id="17OfmP$a$8E" role="1f5Fuw">
         <property role="1f4ISL" value="1.2" />
         <property role="TrG5h" value="STAR22_GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/aligners/STAR22_GOBY" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYPj" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$8F" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPk" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$8G" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPl" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$8H" role="3jXL5I">
           <property role="G5nAR" value="2.3.0.6" />
-          <ref role="3jXLav" node="6ojrriHiYKE" resolve="STAR" />
+          <ref role="3jXLav" node="17OfmP$a$42" resolve="STAR" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPm" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$8I" role="3jXL5I">
           <property role="G5nAd" value="20120620120930" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPn" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$8J" role="3jXL5I">
           <property role="G5nAd" value="0.1.18.1" />
-          <ref role="3jXLav" node="6ojrriHiYKy" resolve="SAMTOOLS" />
+          <ref role="3jXLav" node="17OfmP$a$3U" resolve="SAMTOOLS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYPo" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYPp" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$8K" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$8L" role="1fdMWl">
             <property role="TrG5h" value="INPUT_READS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiYPq" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8M" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYPr" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8N" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYPs" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8O" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYPt" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8P" role="1fdMWn">
             <property role="TrG5h" value="GOBY_ALIGNMENT" />
-            <node concept="JDp7Y" id="6ojrriHiYPu" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8Q" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYPv" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8R" role="1fdMWn">
             <property role="TrG5h" value="COUNTS" />
-            <node concept="JDp7Y" id="6ojrriHiYPw" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8S" role="1fdBNg">
               <property role="JDp7Z" value="COUNTS" />
               <property role="JDpo1" value="Counts converted from a compact alignment." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYPx" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8T" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_ALL_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiYPy" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8U" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_ALL_FILES" />
               <property role="JDpo1" value="Zip archive with all the files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYPz" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8V" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_BED" />
-            <node concept="JDp7Y" id="6ojrriHiYP$" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8W" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_BED" />
               <property role="JDpo1" value="Zip archive with bed files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYP_" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8X" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_WIG" />
-            <node concept="JDp7Y" id="6ojrriHiYPA" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$8Y" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_WIG" />
               <property role="JDpo1" value="Zip archive with wig files produced by an aligner" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYPB" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$8Z" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYPC" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$90" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_STATS" />
               <property role="JDpo1" value="Alignment textual statistics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYPD" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$91" role="1fdMWn">
             <property role="TrG5h" value="STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYPE" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$92" role="1fdBNg">
               <property role="JDp7Z" value="STATS" />
               <property role="JDpo1" value="Statistics about files in one of the compact Goby formats" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYPF" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$93" role="1fdMWn">
             <property role="TrG5h" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiYPG" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$94" role="1fdBNg">
               <property role="JDp7Z" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
               <property role="JDpo1" value="Sequence Variation Statistics" />
             </node>
           </node>
         </node>
-        <node concept="TVpTU" id="6ojrriHiYPH" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$95" role="TSDHD">
           <property role="TrG5h" value="Ambiguity threshold" />
           <property role="TPGZf" value="AMBIGUITY_THRESHOLD" />
           <property role="TPKv7" value="The maximum number of reference sequence locations that can be matched for a read to be considered&#10;                non-ambiguous. Please note that STAR currently discards/does not output alignments found to strictly&#10;                match more than the specified ambiguity threshold.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="10" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYPI" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$96" role="TSDHD">
           <property role="TrG5h" value="Other aligner options" />
           <property role="TPGZf" value="ALIGNER_OPTIONS" />
           <property role="TPKv7" value="Provide any additional STAR option here following the syntax expected by STAR." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYPJ" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$97" role="TSDHD">
           <property role="TrG5h" value="GENOME_REFERENCE_ID" />
           <property role="TPGZf" value="GENOME_REFERENCE_ID" />
           <property role="TPKv7" value="The reference genome." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYPK" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$98" role="TSDHD">
           <property role="TrG5h" value="CHUNK_SIZE" />
           <property role="TPGZf" value="CHUNK_SIZE" />
           <property role="TPKv7" value="The number of bytes of compressed reads file to give to a single align part." />
@@ -2896,3074 +2883,3074 @@
           <property role="T_gTM" value="50000000" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYPL" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$99" role="1f5Fuw">
         <property role="1f4ISL" value="1.8.1" />
         <property role="TrG5h" value="CONTAMINANT_EXTRACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/CONTAMINANT_EXTRACT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYPM" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$9a" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPN" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$9b" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPO" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$9c" role="3jXL5I">
           <property role="G5nAd" value="20120723142616" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPP" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$9d" role="3jXL5I">
           <property role="G5nAd" value="1.4961" />
-          <ref role="3jXLav" node="6ojrriHiYJL" resolve="MINIA" />
+          <ref role="3jXLav" node="17OfmP$a$39" resolve="MINIA" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPQ" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$9e" role="3jXL5I">
           <property role="G5nAd" value="20120518" />
-          <ref role="3jXLav" node="6ojrriHiYKQ" resolve="TRINITY" />
+          <ref role="3jXLav" node="17OfmP$a$4e" resolve="TRINITY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPR" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$9f" role="3jXL5I">
           <property role="G5nAd" value="581" />
-          <ref role="3jXLav" node="6ojrriHiYIT" resolve="LAST_ARTIFACT" />
+          <ref role="3jXLav" node="17OfmP$a$2h" resolve="LAST_ARTIFACT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPS" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$9g" role="3jXL5I">
           <property role="G5nAd" value="2012.06.04" />
-          <ref role="3jXLav" node="6ojrriHiYHM" resolve="EXTRACT_NONMATCHED" />
+          <ref role="3jXLav" node="17OfmP$a$1a" resolve="EXTRACT_NONMATCHED" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPT" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$9h" role="3jXL5I">
           <property role="G5nAd" value="0.5.9.16" />
-          <ref role="3jXLav" node="6ojrriHiYGu" resolve="BWA_WITH_GOBY" />
+          <ref role="3jXLav" node="17OfmP$azZQ" resolve="BWA_WITH_GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPU" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$9i" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYIM" resolve="ILLUMINA_ADAPTERS" />
+          <ref role="3jXLav" node="17OfmP$a$2a" resolve="ILLUMINA_ADAPTERS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPV" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$9j" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYK3" resolve="PATHOGEN_DATA" />
+          <ref role="3jXLav" node="17OfmP$a$3r" resolve="PATHOGEN_DATA" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYPW" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$9k" role="3jXL5I">
           <property role="G5nAd" value="20150522" />
-          <ref role="3jXLav" node="6ojrriHiYI5" resolve="GNU_PARALLEL" />
+          <ref role="3jXLav" node="17OfmP$a$1t" resolve="GNU_PARALLEL" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYPX" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYPY" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$9l" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$9m" role="1fdMWl">
             <property role="TrG5h" value="ALIGNMENT_SOURCE_READS" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYPZ" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9n" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiYQ0" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$9o" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYQ1" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9p" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQ2" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$9q" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYQ3" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9r" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQ4" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$9s" role="1fdMWn">
             <property role="TrG5h" value="CONTAMINANT_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYQ5" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9t" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQ6" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$9u" role="1fdMWn">
             <property role="TrG5h" value="CONTAMINANT_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYQ7" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9v" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQ8" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$9w" role="1fdMWn">
             <property role="TrG5h" value="CONTAMINANT_RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYQ9" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9x" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQa" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$9y" role="1fdMWn">
             <property role="TrG5h" value="CONTAMINANT_SUMMARY_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYQb" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9z" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQc" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$9$" role="1fdMWn">
             <property role="TrG5h" value="CONTAMINANT_SUMMARY_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYQd" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9_" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQe" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$9A" role="1fdMWn">
             <property role="TrG5h" value="CONTAMINANT_SUMMARY" />
-            <node concept="JDp7Y" id="6ojrriHiYQf" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9B" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQg" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$9C" role="1fdMWn">
             <property role="TrG5h" value="REALIGNED_UNMAPPED_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYQh" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9D" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQi" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$9E" role="1fdMWn">
             <property role="TrG5h" value="REALIGNED_UNMAPPED_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYQj" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9F" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQk" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$9G" role="1fdMWn">
             <property role="TrG5h" value="REALIGNED_UNMAPPED" />
-            <node concept="JDp7Y" id="6ojrriHiYQl" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9H" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQm" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$9I" role="1fdMWn">
             <property role="TrG5h" value="ASSEMBLED_READS" />
-            <node concept="JDp7Y" id="6ojrriHiYQn" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$9J" role="1fdBNg">
               <property role="JDp7Z" value="TAR_GZ" />
               <property role="JDpo1" value="TAR GZ Compressed Archive" />
             </node>
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYQo" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$9K" role="TSDHD">
           <property role="TrG5h" value="Assembler" />
           <property role="TPGZf" value="ASSEMBLER" />
           <property role="TPKv7" value="The assembler to use when combining reads into contigs" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="MINIA" />
-          <node concept="TPwC6" id="6ojrriHiYQp" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$9L" role="TPwC2">
             <property role="TrG5h" value="Minia" />
             <property role="TPwC7" value="MINIA" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYQq" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$9M" role="TPwC2">
             <property role="TrG5h" value="Trinity" />
             <property role="TPwC7" value="TRINITY" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYQr" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$9N" role="TSDHD">
           <property role="TrG5h" value="Aligner" />
           <property role="TPGZf" value="ALIGNER" />
           <property role="TPKv7" value="The aligner to use for realigning reads to contigs" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="LAST" />
-          <node concept="TPwC6" id="6ojrriHiYQs" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$9O" role="TPwC2">
             <property role="TrG5h" value="Last" />
             <property role="TPwC7" value="LAST" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYQt" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$9P" role="TPwC2">
             <property role="TrG5h" value="BWA" />
             <property role="TPwC7" value="BWA" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYQu" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$9Q" role="TSDHD">
           <property role="TrG5h" value="Search Reference" />
           <property role="TPGZf" value="SEARCH_REFERENCE" />
           <property role="TPKv7" value="The reference of contaminants to search for" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="VIRAL" />
-          <node concept="TPwC6" id="6ojrriHiYQv" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$9R" role="TPwC2">
             <property role="TrG5h" value="Viral" />
             <property role="TPwC7" value="VIRAL" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYQw" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$9S" role="TPwC2">
             <property role="TrG5h" value="Microbial" />
             <property role="TPwC7" value="MICROBIAL" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYQx" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$9T" role="TPwC2">
             <property role="TrG5h" value="Fungal" />
             <property role="TPwC7" value="FUNGAL" />
           </node>
         </node>
-        <node concept="TVQb7" id="6ojrriHiYQy" role="TSDHD">
+        <node concept="TVQb7" id="17OfmP$a$9U" role="TSDHD">
           <property role="TrG5h" value="E-value Threshold" />
           <property role="TPGZf" value="EVALUE_THRESHOLD" />
           <property role="TPKv7" value="Matches with an E-value above the threshold will not be considered significant" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1e-6" />
         </node>
-        <node concept="TVQb7" id="6ojrriHiYQz" role="TSDHD">
+        <node concept="TVQb7" id="17OfmP$a$9V" role="TSDHD">
           <property role="TrG5h" value="kmer length" />
           <property role="TPGZf" value="KMER_LENGTH" />
           <property role="TPKv7" value="kmer length to use for assembly (not supported with trinity)" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="25" />
         </node>
-        <node concept="TVQb7" id="6ojrriHiYQ$" role="TSDHD">
+        <node concept="TVQb7" id="17OfmP$a$9W" role="TSDHD">
           <property role="TrG5h" value="Percent Identity Threshold" />
           <property role="TPGZf" value="IDENTITY_THRESHOLD" />
           <property role="TPKv7" value="Matches with a percent identity below the threshold will not be considered significant" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="90" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYQ_" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$9X" role="TSDHD">
           <property role="TrG5h" value="Trim Illumina Adapters" />
           <property role="TPGZf" value="TRIM_ADAPTERS" />
           <property role="TPKv7" value="Illumina Adapters will be trimmed from unmatched reads before assembly" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="true" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYQA" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$9Y" role="TSDHD">
           <property role="TrG5h" value="Merge Groups" />
           <property role="TPGZf" value="MERGE_GROUPS" />
           <property role="TPKv7" value="Combine unmapped reads within each group before assembly" />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYQB" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$9Z" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYQC" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$a0" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYQD" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$a1" role="1f5Fuw">
         <property role="1f4ISL" value="1.1" />
         <property role="TrG5h" value="DIFF_EXP_DESEQ_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/DIFF_EXP_DESEQ_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYQE" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$a2" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYQF" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$a3" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYQG" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$a4" role="3jXL5I">
           <property role="G5nAd" value="20111021144833" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYQH" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$a5" role="3jXL5I">
           <property role="G5nAd" value="2012.07.25" />
-          <ref role="3jXLav" node="6ojrriHiYGE" resolve="DESEQ_SCRIPT" />
+          <ref role="3jXLav" node="17OfmP$a$02" resolve="DESEQ_SCRIPT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYQI" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$a6" role="3jXL5I">
           <property role="G5nAd" value="1.8.3.2" />
-          <ref role="3jXLav" node="6ojrriHiYGB" resolve="DESEQ" />
+          <ref role="3jXLav" node="17OfmP$azZZ" resolve="DESEQ" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYQJ" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$a7" role="3jXL5I">
           <property role="G5nAd" value="1.1" />
-          <ref role="3jXLav" node="6ojrriHiYH9" resolve="ENSEMBL_ANNOTATIONS" />
+          <ref role="3jXLav" node="17OfmP$a$0x" resolve="ENSEMBL_ANNOTATIONS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYQK" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYQL" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$a8" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$a9" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYQM" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$aa" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQN" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$ab" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYQO" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ac" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQP" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$ad" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYQQ" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ae" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQR" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$af" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYQS" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ag" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQT" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$ah" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYQU" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ai" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQV" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$aj" role="1fdMWn">
             <property role="TrG5h" value="GENE_SCATTER_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYQW" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ak" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQX" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$al" role="1fdMWn">
             <property role="TrG5h" value="EXON_SCATTER_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYQY" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$am" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYQZ" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$an" role="1fdMWn">
             <property role="TrG5h" value="OTHER_SCATTER_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYR0" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ao" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
         </node>
-        <node concept="TVpTU" id="6ojrriHiYR1" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$ap" role="TSDHD">
           <property role="TrG5h" value="Number of top hits" />
           <property role="TPGZf" value="NUM_TOP_HITS" />
           <property role="TPKv7" value="Number of hits to report if no candidates has an adjusted p-value above the q-value threshold." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="10000" />
         </node>
-        <node concept="TVQb7" id="6ojrriHiYR2" role="TSDHD">
+        <node concept="TVQb7" id="17OfmP$a$aq" role="TSDHD">
           <property role="TrG5h" value="q-value threshold" />
           <property role="TPGZf" value="Q_VALUE_THRESHOLD" />
           <property role="TPKv7" value="Threshold on q-values to determine if the candidate result should be kept. A candidate is kept if any&#10;                q-value is lower than the threshold.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1.0" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYR3" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$ar" role="TSDHD">
           <property role="TrG5h" value="weight adjustment" />
           <property role="TPGZf" value="WEIGHT_ADJUSTMENT" />
           <property role="TPKv7" value="Type of count adjustment." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="NONE" />
-          <node concept="TPwC6" id="6ojrriHiYR4" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$as" role="TPwC2">
             <property role="TrG5h" value="None" />
             <property role="TPwC7" value="NONE" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYR5" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$at" role="TPwC2">
             <property role="TrG5h" value="GC content" />
             <property role="TPwC7" value="GC_CONTENT" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYR6" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$au" role="TPwC2">
             <property role="TrG5h" value="Heptamers" />
             <property role="TPwC7" value="HEPTAMERS" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYR7" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$av" role="TSDHD">
           <property role="TrG5h" value="GC adjustment formula" />
           <property role="TPGZf" value="BIAS_ADJUSTMENT_FORMULA" />
           <property role="TPKv7" value="When GC weight adjustment is selected, you can configure the type of formula used to adjust counts for&#10;                GC content.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="FORMULA3" />
-          <node concept="TPwC6" id="6ojrriHiYR8" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$aw" role="TPwC2">
             <property role="TrG5h" value="None" />
             <property role="TPwC7" value="NONE" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYR9" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$ax" role="TPwC2">
             <property role="TrG5h" value="FORMULA1" />
             <property role="TPwC7" value="FORMULA1" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYRa" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$ay" role="TPwC2">
             <property role="TrG5h" value="FORMULA2" />
             <property role="TPwC7" value="FORMULA2" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYRb" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$az" role="TPwC2">
             <property role="TrG5h" value="FORMULA3" />
             <property role="TPwC7" value="FORMULA3" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYRc" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$a$" role="TPwC2">
             <property role="TrG5h" value="FORMULA4" />
             <property role="TPwC7" value="FORMULA4" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYRd" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$a_" role="TSDHD">
           <property role="TrG5h" value="Source of annotations" />
           <property role="TPGZf" value="ANNOTATION_SOURCE" />
           <property role="TPKv7" value="Select the source of annotations and type of analysis to perform.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="GENE_EXON_OTHER" />
-          <node concept="TPwC6" id="6ojrriHiYRe" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$aA" role="TPwC2">
             <property role="TrG5h" value="Gene/Exon/Other" />
             <property role="TPwC7" value="GENE_EXON_OTHER" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYRf" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$aB" role="TPwC2">
             <property role="TrG5h" value="Copy Number Variants" />
             <property role="TPwC7" value="CNV" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYRg" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$aC" role="TSDHD">
           <property role="TrG5h" value="Gene counts" />
           <property role="TPGZf" value="ESTIMATE_COUNTS_GENE" />
           <property role="TPKv7" value="Estimate gene counts." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="true" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYRh" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$aD" role="TSDHD">
           <property role="TrG5h" value="Exon counts" />
           <property role="TPGZf" value="ESTIMATE_COUNTS_EXON" />
           <property role="TPKv7" value="Estimate exon counts." />
           <property role="TQfiT" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYRi" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$aE" role="TSDHD">
           <property role="TrG5h" value="Other counts" />
           <property role="TPGZf" value="ESTIMATE_COUNTS_OTHER" />
           <property role="TPKv7" value="Estimate other counts. The other category represents intergenic regions." />
           <property role="TQfiT" value="false" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYRj" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$aF" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYRk" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$aG" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYRl" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$aH" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="DIFF_EXP_EDGE_R_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/DIFF_EXP_EDGE_R_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYRm" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$aI" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYRn" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$aJ" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYRo" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$aK" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYH9" resolve="ENSEMBL_ANNOTATIONS" />
+          <ref role="3jXLav" node="17OfmP$a$0x" resolve="ENSEMBL_ANNOTATIONS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYRp" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$aL" role="3jXL5I">
           <property role="G5nAd" value="20111021144833" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYRq" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$aM" role="3jXL5I">
           <property role="G5nAd" value="2.15.3" />
-          <ref role="3jXLav" node="6ojrriHiYKk" resolve="R" />
+          <ref role="3jXLav" node="17OfmP$a$3G" resolve="R" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYRr" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$aN" role="3jXL5I">
           <property role="G5nAd" value="2013.05.17" />
-          <ref role="3jXLav" node="6ojrriHiYGU" resolve="EDGE_R_SCRIPT" />
+          <ref role="3jXLav" node="17OfmP$a$0i" resolve="EDGE_R_SCRIPT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYRs" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$aO" role="3jXL5I">
           <property role="G5nAd" value="1.1" />
-          <ref role="3jXLav" node="6ojrriHiYH9" resolve="ENSEMBL_ANNOTATIONS" />
+          <ref role="3jXLav" node="17OfmP$a$0x" resolve="ENSEMBL_ANNOTATIONS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYRt" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYRu" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$aP" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$aQ" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYRv" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$aR" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYRw" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$aS" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYRx" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$aT" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYRy" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$aU" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYRz" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$aV" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYR$" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$aW" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYR_" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$aX" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYRA" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$aY" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYRB" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$aZ" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYRC" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$b0" role="1fdMWn">
             <property role="TrG5h" value="SAMPLE_MDS_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYRD" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$b1" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYRE" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$b2" role="1fdMWn">
             <property role="TrG5h" value="ANALYSIS_SMEAR_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYRF" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$b3" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYRG" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$b4" role="1fdMWn">
             <property role="TrG5h" value="COUNTS_TABLE" />
-            <node concept="JDp7Y" id="6ojrriHiYRH" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$b5" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYRI" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$b6" role="1fdMWn">
             <property role="TrG5h" value="EDGE_R_SCRIPT" />
-            <node concept="JDp7Y" id="6ojrriHiYRJ" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$b7" role="1fdBNg">
               <property role="JDp7Z" value="TXT" />
               <property role="JDpo1" value="Plain text files." />
             </node>
           </node>
         </node>
-        <node concept="TVpTU" id="6ojrriHiYRK" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$b8" role="TSDHD">
           <property role="TrG5h" value="Number of top hits" />
           <property role="TPGZf" value="NUM_TOP_HITS" />
           <property role="TPKv7" value="Number of hits to report if no candidates has an adjusted p-value above the q-value threshold." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="10000" />
         </node>
-        <node concept="TVQb7" id="6ojrriHiYRL" role="TSDHD">
+        <node concept="TVQb7" id="17OfmP$a$b9" role="TSDHD">
           <property role="TrG5h" value="q-value threshold" />
           <property role="TPGZf" value="Q_VALUE_THRESHOLD" />
           <property role="TPKv7" value="Threshold on q-values to determine if the candidate result should be kept. A candidate is kept if any&#10;                q-value is lower than the threshold.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1.0" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYRM" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$ba" role="TSDHD">
           <property role="TrG5h" value="weight adjustment" />
           <property role="TPGZf" value="WEIGHT_ADJUSTMENT" />
           <property role="TPKv7" value="Type of count adjustment." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="NONE" />
-          <node concept="TPwC6" id="6ojrriHiYRN" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bb" role="TPwC2">
             <property role="TrG5h" value="None" />
             <property role="TPwC7" value="NONE" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYRO" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bc" role="TPwC2">
             <property role="TrG5h" value="GC content" />
             <property role="TPwC7" value="GC_CONTENT" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYRP" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bd" role="TPwC2">
             <property role="TrG5h" value="Heptamers" />
             <property role="TPwC7" value="HEPTAMERS" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYRQ" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$be" role="TSDHD">
           <property role="TrG5h" value="GC adjustment formula" />
           <property role="TPGZf" value="BIAS_ADJUSTMENT_FORMULA" />
           <property role="TPKv7" value="When GC weight adjustment is selected, you can configure the type of formula used to adjust counts for&#10;                GC content.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="FORMULA3" />
-          <node concept="TPwC6" id="6ojrriHiYRR" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bf" role="TPwC2">
             <property role="TrG5h" value="None" />
             <property role="TPwC7" value="NONE" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYRS" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bg" role="TPwC2">
             <property role="TrG5h" value="FORMULA1" />
             <property role="TPwC7" value="FORMULA1" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYRT" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bh" role="TPwC2">
             <property role="TrG5h" value="FORMULA2" />
             <property role="TPwC7" value="FORMULA2" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYRU" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bi" role="TPwC2">
             <property role="TrG5h" value="FORMULA3" />
             <property role="TPwC7" value="FORMULA3" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYRV" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bj" role="TPwC2">
             <property role="TrG5h" value="FORMULA4" />
             <property role="TPwC7" value="FORMULA4" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYRW" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$bk" role="TSDHD">
           <property role="TrG5h" value="normalization factors method" />
           <property role="TPGZf" value="NORMALIZATION_FACTORS_METHOD" />
           <property role="TPKv7" value="Method used to calculate normalization factors to scale the raw library sizes.&#10;                TMM - The weighted trimmed mean of M-values (to the reference) proposed by Robinson and Oshlack (2010),&#10;                where the weights are from the delta method on Binomial data.&#10;                RLE - The scaling factor method proposed by Anders and Huber (2010) -the median library is calculated&#10;                from the geometric mean of all columns and the median ratio of each sample to the median library is&#10;                taken as the scale factor.&#10;                BUQ - The upper-quartile normalization method of Bullard et al (2010), in which the scale factors are&#10;                calculated from the 75% quantile of the counts for each library, after removing transcripts which&#10;                are zero in all libraries.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="TMM" />
-          <node concept="TPwC6" id="6ojrriHiYRX" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bl" role="TPwC2">
             <property role="TrG5h" value="TMM" />
             <property role="TPwC7" value="TMM" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYRY" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bm" role="TPwC2">
             <property role="TrG5h" value="RLE" />
             <property role="TPwC7" value="RLE" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYRZ" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bn" role="TPwC2">
             <property role="TrG5h" value="upperquartile" />
             <property role="TPwC7" value="upperquartile" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYS0" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$bo" role="TSDHD">
           <property role="TrG5h" value="dispersion method" />
           <property role="TPGZf" value="DISPERSION_METHOD" />
           <property role="TPKv7" value="Method to estimate the dispersion parameter for the negative binomial model. Options are &quot;common&quot;&#10;                and &quot;tagwise&quot;. See EdgeR documentation.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="tagwise" />
-          <node concept="TPwC6" id="6ojrriHiYS1" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bp" role="TPwC2">
             <property role="TrG5h" value="common" />
             <property role="TPwC7" value="common" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYS2" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bq" role="TPwC2">
             <property role="TrG5h" value="tagwise" />
             <property role="TPwC7" value="tagwise" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYS3" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$br" role="TSDHD">
           <property role="TrG5h" value="apply filtering" />
           <property role="TPGZf" value="FILTERING" />
           <property role="TPKv7" value="Indicate whether low count tags should be filtered. This prevents reporting spurious DE tags in the&#10;                final result. See edgeR documentation for more details.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="TRUE" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYS4" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$bs" role="TSDHD">
           <property role="TrG5h" value="Source of annotations" />
           <property role="TPGZf" value="ANNOTATION_SOURCE" />
           <property role="TPKv7" value="Select the source of annotations and type of analysis to perform.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="GENE_EXON_OTHER" />
-          <node concept="TPwC6" id="6ojrriHiYS5" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bt" role="TPwC2">
             <property role="TrG5h" value="Gene/Exon/Other" />
             <property role="TPwC7" value="GENE_EXON_OTHER" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYS6" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bu" role="TPwC2">
             <property role="TrG5h" value="Copy Number Variants" />
             <property role="TPwC7" value="CNV" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYS7" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$bv" role="TSDHD">
           <property role="TrG5h" value="Gene counts" />
           <property role="TPGZf" value="ESTIMATE_COUNTS_GENE" />
           <property role="TPKv7" value="Estimate gene counts." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="true" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYS8" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$bw" role="TSDHD">
           <property role="TrG5h" value="Exon counts" />
           <property role="TPGZf" value="ESTIMATE_COUNTS_EXON" />
           <property role="TPKv7" value="Estimate exon counts." />
           <property role="TQfiT" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYS9" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$bx" role="TSDHD">
           <property role="TrG5h" value="Other counts" />
           <property role="TPGZf" value="ESTIMATE_COUNTS_OTHER" />
           <property role="TPKv7" value="Estimate other counts. The other category represents intergenic regions." />
           <property role="TQfiT" value="false" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYSa" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$by" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYSb" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$bz" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYSc" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$b$" role="1f5Fuw">
         <property role="1f4ISL" value="1.1" />
         <property role="TrG5h" value="DIFF_EXP_GOBY_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/DIFF_EXP_GOBY_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYSd" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$b_" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYSe" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$bA" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYSf" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$bB" role="3jXL5I">
           <property role="G5nAd" value="20150822175223" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYSg" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$bC" role="3jXL5I">
           <property role="G5nAd" value="1.1.2" />
-          <ref role="3jXLav" node="6ojrriHiYH9" resolve="ENSEMBL_ANNOTATIONS" />
+          <ref role="3jXLav" node="17OfmP$a$0x" resolve="ENSEMBL_ANNOTATIONS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYSh" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYSi" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$bD" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$bE" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYSj" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$bF" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYSk" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$bG" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYSl" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$bH" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYSm" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$bI" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYSn" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$bJ" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYSo" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$bK" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYSp" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$bL" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYSq" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$bM" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYSr" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$bN" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYSs" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$bO" role="1fdMWn">
             <property role="TrG5h" value="GENE_SCATTER_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYSt" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$bP" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYSu" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$bQ" role="1fdMWn">
             <property role="TrG5h" value="EXON_SCATTER_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYSv" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$bR" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYSw" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$bS" role="1fdMWn">
             <property role="TrG5h" value="OTHER_SCATTER_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYSx" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$bT" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYSy" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$bU" role="1fdMWn">
             <property role="TrG5h" value="TRANSCRIPT_SCATTER_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYSz" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$bV" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYS$" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$bW" role="TSDHD">
           <property role="TrG5h" value="Normalization" />
           <property role="TPGZf" value="NORMALIZATION_METHOD" />
           <property role="TPKv7" value="Normalization method(s)." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="ALIGNED_COUNT" />
-          <node concept="TPwC6" id="6ojrriHiYS_" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bX" role="TPwC2">
             <property role="TrG5h" value="aligned-count" />
             <property role="TPwC7" value="ALIGNED_COUNT" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYSA" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$bY" role="TPwC2">
             <property role="TrG5h" value="bullard-upper-quartile" />
             <property role="TPwC7" value="BULLARD_UPPER_QUARTILE" />
           </node>
         </node>
-        <node concept="TVpTU" id="6ojrriHiYSB" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$bZ" role="TSDHD">
           <property role="TrG5h" value="Number of top hits" />
           <property role="TPGZf" value="NUM_TOP_HITS" />
           <property role="TPKv7" value="Number of hits to report if no candidates has an adjusted p-value above the q-value threshold." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="10000" />
         </node>
-        <node concept="TVQb7" id="6ojrriHiYSC" role="TSDHD">
+        <node concept="TVQb7" id="17OfmP$a$c0" role="TSDHD">
           <property role="TrG5h" value="q-value threshold" />
           <property role="TPGZf" value="Q_VALUE_THRESHOLD" />
           <property role="TPKv7" value="Threshold on q-values to determine if the candidate result should be kept. A candidate is kept if any&#10;                q-value is lower than the threshold.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1.0" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYSD" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$c1" role="TSDHD">
           <property role="TrG5h" value="weight adjustment" />
           <property role="TPGZf" value="WEIGHT_ADJUSTMENT" />
           <property role="TPKv7" value="Type of count adjustment." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="NONE" />
-          <node concept="TPwC6" id="6ojrriHiYSE" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$c2" role="TPwC2">
             <property role="TrG5h" value="None" />
             <property role="TPwC7" value="NONE" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYSF" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$c3" role="TPwC2">
             <property role="TrG5h" value="GC content" />
             <property role="TPwC7" value="GC_CONTENT" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYSG" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$c4" role="TPwC2">
             <property role="TrG5h" value="Heptamers" />
             <property role="TPwC7" value="HEPTAMERS" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYSH" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$c5" role="TSDHD">
           <property role="TrG5h" value="GC adjustment formula" />
           <property role="TPGZf" value="BIAS_ADJUSTMENT_FORMULA" />
           <property role="TPKv7" value="When GC weight adjustment is selected, you can configure the type of formula used to adjust counts for&#10;                GC content.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="NONE" />
-          <node concept="TPwC6" id="6ojrriHiYSI" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$c6" role="TPwC2">
             <property role="TrG5h" value="None" />
             <property role="TPwC7" value="NONE" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYSJ" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$c7" role="TPwC2">
             <property role="TrG5h" value="FORMULA1" />
             <property role="TPwC7" value="FORMULA1" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYSK" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$c8" role="TPwC2">
             <property role="TrG5h" value="FORMULA2" />
             <property role="TPwC7" value="FORMULA2" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYSL" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$c9" role="TPwC2">
             <property role="TrG5h" value="FORMULA3" />
             <property role="TPwC7" value="FORMULA3" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYSM" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$ca" role="TPwC2">
             <property role="TrG5h" value="FORMULA4" />
             <property role="TPwC7" value="FORMULA4" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYSN" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$cb" role="TSDHD">
           <property role="TrG5h" value="Source of annotations" />
           <property role="TPGZf" value="ANNOTATION_SOURCE" />
           <property role="TPKv7" value="Select the source of annotations and type of analysis to perform.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="GENE_EXON_OTHER" />
-          <node concept="TPwC6" id="6ojrriHiYSO" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$cc" role="TPwC2">
             <property role="TrG5h" value="Gene/Exon/Other" />
             <property role="TPwC7" value="GENE_EXON_OTHER" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYSP" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$cd" role="TPwC2">
             <property role="TrG5h" value="Copy Number Variants" />
             <property role="TPwC7" value="CNV" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYSQ" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$ce" role="TSDHD">
           <property role="TrG5h" value="Gene counts" />
           <property role="TPGZf" value="ESTIMATE_COUNTS_GENE" />
           <property role="TPKv7" value="Estimate gene counts." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="true" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYSR" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$cf" role="TSDHD">
           <property role="TrG5h" value="Exon counts" />
           <property role="TPGZf" value="ESTIMATE_COUNTS_EXON" />
           <property role="TPKv7" value="Estimate exon counts." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYSS" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$cg" role="TSDHD">
           <property role="TrG5h" value="Other counts" />
           <property role="TPGZf" value="ESTIMATE_COUNTS_OTHER" />
           <property role="TPKv7" value="Estimate other counts. The other category represents intergenic regions." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYST" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$ch" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYSU" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$ci" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYSV" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$cj" role="1f5Fuw">
         <property role="1f4ISL" value="1.2" />
         <property role="TrG5h" value="INDEL_COUNTS_GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/INDEL_COUNTS_GOBY" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYSW" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$ck" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYSX" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$cl" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYSY" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$cm" role="3jXL5I">
           <property role="G5nAd" value="20120126122456" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYSZ" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYT0" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$cn" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$co" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYT1" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$cp" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYT2" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$cq" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYT3" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$cr" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYT4" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$cs" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYT5" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ct" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYT6" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$cu" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYT7" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$cv" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYT8" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$cw" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYT9" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$cx" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYTa" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$cy" role="TSDHD">
           <property role="TrG5h" value="Type of analysis and output format" />
           <property role="TPGZf" value="OUTPUT_FORMAT" />
           <property role="TPKv7" value="Determines the type of sequence variation analysis to perform and the output format." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="INDEL_COUNTS" />
-          <node concept="TPwC6" id="6ojrriHiYTb" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$cz" role="TPwC2">
             <property role="TrG5h" value="indel-counts" />
             <property role="TPwC7" value="INDEL_COUNTS" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYTc" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$c$" role="TSDHD">
           <property role="TrG5h" value="Realign reads near indels" />
           <property role="TPGZf" value="REALIGN_AROUND_INDELS" />
           <property role="TPKv7" value="When this option is active, reads are realigned around indels and this can help prevent alignment&#10;                artifacts.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYTd" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$c_" role="TSDHD">
           <property role="TrG5h" value="Minimum variation support" />
           <property role="TPGZf" value="MINIMUM_VARIATION_SUPPORT" />
           <property role="TPKv7" value="Minimum number of reads that must have the variation for the variation to be reported in the output&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="35" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYTe" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$cA" role="TSDHD">
           <property role="TrG5h" value="Minimum number of distinct read indices" />
           <property role="TPGZf" value="THRESHOLD_DISTINCT_READ_INDICES" />
           <property role="TPKv7" value="Number of distinct read indices a position has to have to be reported in the output." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYTf" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$cB" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYTg" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$cC" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYTh" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$cD" role="1f5Fuw">
         <property role="1f4ISL" value="1.0.0" />
         <property role="TrG5h" value="INFER_SEX" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/INFER_SEX" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYTi" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$cE" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTj" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$cF" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTk" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$cG" role="3jXL5I">
           <property role="G5nAd" value="20150227145140" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYTl" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYTm" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$cH" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$cI" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYTn" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$cJ" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYTo" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$cK" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYTp" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$cL" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYTq" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$cM" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYTr" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$cN" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYTs" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$cO" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYTt" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$cP" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYTu" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$cQ" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYTv" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$cR" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYTw" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$cS" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYTx" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$cT" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYTy" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$cU" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="MUTECT_SOMATIC_MUTATIONS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/MUTECT_SOMATIC_MUTATIONS" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYTz" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$cV" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYT$" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$cW" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYT_" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$cX" role="3jXL5I">
           <property role="G5nAd" value="1.1.4" />
-          <ref role="3jXLav" node="6ojrriHiYJY" resolve="MUTECT" />
+          <ref role="3jXLav" node="17OfmP$a$3m" resolve="MUTECT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTA" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$cY" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYK0" resolve="MUTECT_HOMO_SAPIENS_DATA" />
+          <ref role="3jXLav" node="17OfmP$a$3o" resolve="MUTECT_HOMO_SAPIENS_DATA" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTB" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$cZ" role="3jXL5I">
           <property role="G5nAd" value="20130411170529" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTC" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$d0" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYIj" resolve="GOBY_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1F" resolve="GOBY_INDEXED_GENOMES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTD" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$d1" role="3jXL5I">
           <property role="G5nAd" value="1.1" />
-          <ref role="3jXLav" node="6ojrriHiYHO" resolve="FAI_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1c" resolve="FAI_INDEXED_GENOMES" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTE" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$d2" role="3jXL5I">
           <property role="G5nAd" value="0.1.18.1" />
-          <ref role="3jXLav" node="6ojrriHiYKy" resolve="SAMTOOLS" />
+          <ref role="3jXLav" node="17OfmP$a$3U" resolve="SAMTOOLS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYTF" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYTG" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$d3" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$d4" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYTH" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$d5" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYTI" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$d6" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYTJ" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$d7" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYTK" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$d8" role="1fdMWn">
             <property role="TrG5h" value="RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYTL" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$d9" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYTM" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$da" role="1fdMWn">
             <property role="TrG5h" value="RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYTN" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$db" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYTO" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$dc" role="TSDHD">
           <property role="TrG5h" value="Covariate info URL" />
           <property role="TPGZf" value="COVARIATE_INFO_URL" />
           <property role="TPKv7" value="URL of a covariate information file. The URL should be publicly available and serve a TSV file. See&#10;                http://campagnelab.org/software/goby/tutorials/detecting-tumor-normal-pair-for-mutect-1-1-4/ for the&#10;                format expected in the TSV file.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="NONE" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYTP" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$dd" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYTQ" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$de" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYTR" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$df" role="1f5Fuw">
         <property role="1f4ISL" value="1.2.1" />
         <property role="TrG5h" value="SEQ_VAR_GOBY" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/SEQ_VAR_GOBY" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYTS" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$dg" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTT" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$dh" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTU" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$di" role="3jXL5I">
           <property role="G5nAd" value="20130404182251" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTV" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$dj" role="3jXL5I">
           <property role="G5nAd" value="0.1.10" />
-          <ref role="3jXLav" node="6ojrriHiYL0" resolve="VCF_TOOLS" />
+          <ref role="3jXLav" node="17OfmP$a$4o" resolve="VCF_TOOLS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTW" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$dk" role="3jXL5I">
           <property role="G5nAd" value="2.8" />
-          <ref role="3jXLav" node="6ojrriHiYKX" resolve="VARIANT_EFFECT_PREDICTOR" />
+          <ref role="3jXLav" node="17OfmP$a$4l" resolve="VARIANT_EFFECT_PREDICTOR" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTX" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$dl" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYG7" resolve="ANNOTATE_VCF" />
+          <ref role="3jXLav" node="17OfmP$azZv" resolve="ANNOTATE_VCF" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTY" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$dm" role="3jXL5I">
           <property role="G5nAd" value="0.9.6" />
-          <ref role="3jXLav" node="6ojrriHiYKm" resolve="RJAVA" />
+          <ref role="3jXLav" node="17OfmP$a$3I" resolve="RJAVA" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYTZ" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$dn" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYIj" resolve="GOBY_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1F" resolve="GOBY_INDEXED_GENOMES" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYU0" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYU1" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$do" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$dp" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYU2" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$dq" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYU3" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$dr" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYU4" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ds" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYU5" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$dt" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYU6" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$du" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYU7" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$dv" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYU8" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$dw" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYU9" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$dx" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYUa" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$dy" role="1fdBNg">
               <property role="JDp7Z" value="VCF" />
               <property role="JDpo1" value="Variant Calling Format." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUb" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$dz" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYUc" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$d$" role="1fdBNg">
               <property role="JDp7Z" value="VCF_INDEX" />
               <property role="JDpo1" value="Variant Calling Format Index (produced with tabix)." />
             </node>
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYUd" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$d_" role="TSDHD">
           <property role="TrG5h" value="Type of analysis and output format" />
           <property role="TPGZf" value="OUTPUT_FORMAT" />
           <property role="TPKv7" value="Determines the type of sequence variation analysis to perform and the output format." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="GENOTYPES" />
-          <node concept="TPwC6" id="6ojrriHiYUe" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$dA" role="TPwC2">
             <property role="TrG5h" value="genotypes" />
             <property role="TPwC7" value="GENOTYPES" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYUf" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$dB" role="TPwC2">
             <property role="TrG5h" value="allele_frequencies" />
             <property role="TPwC7" value="ALLELE_FREQUENCIES" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYUg" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$dC" role="TPwC2">
             <property role="TrG5h" value="group_comparisons" />
             <property role="TPwC7" value="GROUP_COMPARISONS" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYUh" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$dD" role="TPwC2">
             <property role="TrG5h" value="somatic variations" />
             <property role="TPwC7" value="SOMATIC_VARIATIONS" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYUi" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$dE" role="TSDHD">
           <property role="TrG5h" value="Realign reads near indels" />
           <property role="TPGZf" value="REALIGN_AROUND_INDELS" />
           <property role="TPKv7" value="When this option is active, reads are realigned around indels and this can help prevent alignment&#10;                artifacts.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYUj" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$dF" role="TSDHD">
           <property role="TrG5h" value="Call indels" />
           <property role="TPGZf" value="CALL_INDELS" />
           <property role="TPKv7" value="When this option is active, indels are called and reported in the VCF output file. Please be advised&#10;                that the VCF output may become incompatible with various tools, as rules for reporting indels in VCF are&#10;                far from clearly described and various tools are known to interpret the VCF specification differently.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYUk" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$dG" role="TSDHD">
           <property role="TrG5h" value="Diploid genome" />
           <property role="TPGZf" value="FORCE_DIPLOID" />
           <property role="TPKv7" value="When this option is active, genotype calls are forced to be diploid. Use when you know that the&#10;                genome the reads were generated from was diploid.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYUl" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$dH" role="TSDHD">
           <property role="TrG5h" value="Annotate variations" />
           <property role="TPGZf" value="ANNOTATE_VARIATIONS" />
           <property role="TPKv7" value="When this option is active, annotate variations with the Variant Effect Predictor. Not that positions&#10;                that cannot be annotated may be removed from the output.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="true" />
         </node>
-        <node concept="TVQb7" id="6ojrriHiYUm" role="TSDHD">
+        <node concept="TVQb7" id="17OfmP$a$dI" role="TSDHD">
           <property role="TrG5h" value="q-value threshold" />
           <property role="TPGZf" value="Q_VALUE_THRESHOLD" />
           <property role="TPKv7" value="Threshold on q-values to determine if the candidate result should be kept. A candidate is kept if any&#10;                q-value is lower than the threshold.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1.0" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYUn" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$dJ" role="TSDHD">
           <property role="TrG5h" value="Number of top hits" />
           <property role="TPGZf" value="NUM_TOP_HITS" />
           <property role="TPKv7" value="Number of hits to report if no candidates has an adjusted p-value above the q-value threshold." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="10000" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYUo" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$dK" role="TSDHD">
           <property role="TrG5h" value="Minimum variation support" />
           <property role="TPGZf" value="MINIMUM_VARIATION_SUPPORT" />
           <property role="TPKv7" value="Minimum number of reads that must have the variation for the variation to be reported in the output&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYUp" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$dL" role="TSDHD">
           <property role="TrG5h" value="Minimum number of distinct read indices" />
           <property role="TPGZf" value="THRESHOLD_DISTINCT_READ_INDICES" />
           <property role="TPKv7" value="Number of distinct read indices a position has to have to be reported in the output." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYUq" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$dM" role="TSDHD">
           <property role="TrG5h" value="Annotations" />
           <property role="TPGZf" value="ANNOTATIONS" />
           <property role="TPKv7" value="The annotation file to use to define regions.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="NONE" />
-          <node concept="TPwC6" id="6ojrriHiYUr" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$dN" role="TPwC2">
             <property role="TrG5h" value="NONE" />
             <property role="TPwC7" value="NONE" />
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYUs" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$dO" role="TSDHD">
           <property role="TrG5h" value="Covariate info URL" />
           <property role="TPGZf" value="COVARIATE_INFO_URL" />
           <property role="TPKv7" value="URL of a covariate information file. The URL should be publicly available and serve a TSV file. See&#10;                http://campagnelab.org/software/goby/tutorials/detecting-somatic-variations-with-goby-2-1-3/ for the&#10;                format expected in the TSV file.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="NONE" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYUt" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$dP" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYUu" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$dQ" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYUv" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$dR" role="1f5Fuw">
         <property role="1f4ISL" value="1.3.2" />
         <property role="TrG5h" value="SEQ_VAR_GOBY_METHYLATION" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/SEQ_VAR_GOBY_METHYLATION" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYUw" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$dS" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYUx" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$dT" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYUy" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$dU" role="3jXL5I">
           <property role="G5nAd" value="20120703160732" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYUz" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$dV" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYH9" resolve="ENSEMBL_ANNOTATIONS" />
+          <ref role="3jXLav" node="17OfmP$a$0x" resolve="ENSEMBL_ANNOTATIONS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYU$" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$dW" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYG7" resolve="ANNOTATE_VCF" />
+          <ref role="3jXLav" node="17OfmP$azZv" resolve="ANNOTATE_VCF" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYU_" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYUA" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$dX" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$dY" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYUB" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$dZ" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUC" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$e0" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYUD" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$e1" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUE" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$e2" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYUF" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$e3" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUG" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$e4" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYUH" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$e5" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUI" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$e6" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYUJ" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$e7" role="1fdBNg">
               <property role="JDp7Z" value="VCF" />
               <property role="JDpo1" value="Variant Calling Format." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUK" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$e8" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYUL" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$e9" role="1fdBNg">
               <property role="JDp7Z" value="VCF_INDEX" />
               <property role="JDpo1" value="Variant Calling Format Index (produced with tabix)." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUM" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$ea" role="1fdMWn">
             <property role="TrG5h" value="DEPTH_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYUN" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$eb" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUO" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$ec" role="1fdMWn">
             <property role="TrG5h" value="DEPTH_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYUP" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ed" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUQ" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$ee" role="1fdMWn">
             <property role="TrG5h" value="CONVERSION_RATES_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYUR" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ef" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUS" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$eg" role="1fdMWn">
             <property role="TrG5h" value="CONVERSION_RATES_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYUT" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$eh" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUU" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$ei" role="1fdMWn">
             <property role="TrG5h" value="NON_CONVERSION_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYUV" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ej" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUW" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$ek" role="1fdMWn">
             <property role="TrG5h" value="NON_CONVERSION_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYUX" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$el" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYUY" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$em" role="1fdMWn">
             <property role="TrG5h" value="DEPTH_RESULTS_TSV" />
-            <node concept="JDp7Y" id="6ojrriHiYUZ" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$en" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYV0" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$eo" role="1fdMWn">
             <property role="TrG5h" value="CONVERSION_RATES_RESULTS_TSV" />
-            <node concept="JDp7Y" id="6ojrriHiYV1" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ep" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYV2" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$eq" role="1fdMWn">
             <property role="TrG5h" value="NON_CONVERSION_RESULTS_TSV" />
-            <node concept="JDp7Y" id="6ojrriHiYV3" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$er" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYV4" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$es" role="1fdMWn">
             <property role="TrG5h" value="SAMPLE_COVERAGE_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYV5" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$et" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYV6" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$eu" role="1fdMWn">
             <property role="TrG5h" value="BISULFITE_CONVERSION_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYV7" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ev" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYV8" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$ew" role="TSDHD">
           <property role="TrG5h" value="Type of analysis and output format" />
           <property role="TPGZf" value="OUTPUT_FORMAT" />
           <property role="TPKv7" value="Determines the type of sequence variation analysis to perform and the output format." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="METHYLATION" />
-          <node concept="TPwC6" id="6ojrriHiYV9" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$ex" role="TPwC2">
             <property role="TrG5h" value="methylation" />
             <property role="TPwC7" value="METHYLATION" />
           </node>
         </node>
-        <node concept="TVQb7" id="6ojrriHiYVa" role="TSDHD">
+        <node concept="TVQb7" id="17OfmP$a$ey" role="TSDHD">
           <property role="TrG5h" value="q-value threshold" />
           <property role="TPGZf" value="Q_VALUE_THRESHOLD" />
           <property role="TPKv7" value="Threshold on q-values to determine if the candidate result should be kept. A candidate is kept if any&#10;                q-value is lower than the threshold.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="0.05" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYVb" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$ez" role="TSDHD">
           <property role="TrG5h" value="Number of top hits" />
           <property role="TPGZf" value="NUM_TOP_HITS" />
           <property role="TPKv7" value="Number of hits to report if no candidates has an adjusted p-value above the q-value threshold." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="10000" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYVc" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$e$" role="TSDHD">
           <property role="TrG5h" value="Minimum variation support" />
           <property role="TPGZf" value="MINIMUM_VARIATION_SUPPORT" />
           <property role="TPKv7" value="Minimum number of reads that must have the variation for the variation to be reported in the output&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="35" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYVd" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$e_" role="TSDHD">
           <property role="TrG5h" value="Minimum number of distinct read indices" />
           <property role="TPGZf" value="THRESHOLD_DISTINCT_READ_INDICES" />
           <property role="TPKv7" value="Number of distinct read indices a position has to have to be reported in the output." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYVe" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$eA" role="TSDHD">
           <property role="TrG5h" value="Diploid genome" />
           <property role="TPGZf" value="FORCE_DIPLOID" />
           <property role="TPKv7" value="When this option is active, genotype calls are forced to be diploid. Use when you know that the&#10;                genome the reads were generated from was diploid.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYVf" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$eB" role="TSDHD">
           <property role="TrG5h" value="Call indels" />
           <property role="TPGZf" value="CALL_INDELS" />
           <property role="TPKv7" value="When this option is active, indels are called and reported in the VCF output file. Please be advised&#10;                that the VCF output may become incompatible with various tools, as rules for reporting indels in VCF are&#10;                far from clearly described and various tools are known to interpret the VCF specification differently.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYVg" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$eC" role="TSDHD">
           <property role="TrG5h" value="Annotations" />
           <property role="TPGZf" value="ANNOTATIONS" />
           <property role="TPKv7" value="The annotation file to use to define regions.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="NONE" />
-          <node concept="TPwC6" id="6ojrriHiYVh" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$eD" role="TPwC2">
             <property role="TrG5h" value="NONE" />
             <property role="TPwC7" value="NONE" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYVi" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$eE" role="TSDHD">
           <property role="TrG5h" value="Estimate empirical p-values" />
           <property role="TPGZf" value="ESTIMATE_INTRA_GROUP_DIFFERENCE_DENSITY" />
           <property role="TPKv7" value="When this option is active, estimate an empirical p-value using observed distribution of intra-group&#10;                differences in each group under comparison.&#10;                The empirical p-value requires experimental replicates (i.e., more than one sample in at least one&#10;                group).&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYVj" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$eF" role="TSDHD">
           <property role="TrG5h" value="P-value combination method" />
           <property role="TPGZf" value="PVALUE_COMBINATOR" />
           <property role="TPKv7" value="Method to combine evidence from multiple tests." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="median" />
-          <node concept="TPwC6" id="6ojrriHiYVk" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$eG" role="TPwC2">
             <property role="TrG5h" value="median" />
             <property role="TPwC7" value="MEDIAN" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYVl" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$eH" role="TPwC2">
             <property role="TrG5h" value="Maximum" />
             <property role="TPwC7" value="MAX" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYVm" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$eI" role="TPwC2">
             <property role="TrG5h" value="Sum" />
             <property role="TPwC7" value="SUM" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYVn" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$eJ" role="TPwC2">
             <property role="TrG5h" value="QFAST" />
             <property role="TPwC7" value="QFAST" />
           </node>
         </node>
-        <node concept="TVpTU" id="6ojrriHiYVo" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$eK" role="TSDHD">
           <property role="TrG5h" value="Length of a fixed window." />
           <property role="TPGZf" value="WINDOW_LENGTH" />
           <property role="TPKv7" value="A moving window is used to detect significant sites at the end of a DMR. This parameter indicates the&#10;                length of the moving window.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="1000" />
         </node>
-        <node concept="TVQb7" id="6ojrriHiYVp" role="TSDHD">
+        <node concept="TVQb7" id="17OfmP$a$eL" role="TSDHD">
           <property role="TrG5h" value="Significance threshold to consider a site significant in a window." />
           <property role="TPGZf" value="SIGNIFICANCE_THRESHOLD_FOR_WINDOW" />
           <property role="TPKv7" value="Sites with empirical p-values below this threshold are counted towards a DMR. Other sites are&#10;                ignored.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="0.05" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYVq" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$eM" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYVr" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$eN" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYVs" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$eO" role="1f5Fuw">
         <property role="1f4ISL" value="1.6.3.4" />
         <property role="TrG5h" value="SEQ_VAR_GOBY_METHYLATION_REGIONS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/SEQ_VAR_GOBY_METHYLATION_REGIONS" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYVt" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$eP" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYVu" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$eQ" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYVv" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$eR" role="3jXL5I">
           <property role="G5nAd" value="20120608105135" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYVw" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$eS" role="3jXL5I">
           <property role="G5nAd" value="1.5.16" />
-          <ref role="3jXLav" node="6ojrriHiYIL" resolve="IGVTOOLS" />
+          <ref role="3jXLav" node="17OfmP$a$29" resolve="IGVTOOLS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYVx" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$eT" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYG7" resolve="ANNOTATE_VCF" />
+          <ref role="3jXLav" node="17OfmP$azZv" resolve="ANNOTATE_VCF" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYVy" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYVz" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$eU" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$eV" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYV$" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$eW" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYV_" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$eX" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYVA" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$eY" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYVB" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$eZ" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYVC" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$f0" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYVD" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$f1" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYVE" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$f2" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYVF" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$f3" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYVG" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$f4" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYVH" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$f5" role="1fdMWn">
             <property role="TrG5h" value="IGV_OUTPUT" />
-            <node concept="JDp7Y" id="6ojrriHiYVI" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$f6" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYVJ" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$f7" role="TSDHD">
           <property role="TrG5h" value="Type of analysis and output format" />
           <property role="TPGZf" value="OUTPUT_FORMAT" />
           <property role="TPKv7" value="Determines the type of sequence variation analysis to perform and the output format." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="METHYLATION" />
-          <node concept="TPwC6" id="6ojrriHiYVK" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$f8" role="TPwC2">
             <property role="TrG5h" value="methylation" />
             <property role="TPwC7" value="METHYLATION_REGIONS" />
           </node>
         </node>
-        <node concept="TVQb7" id="6ojrriHiYVL" role="TSDHD">
+        <node concept="TVQb7" id="17OfmP$a$f9" role="TSDHD">
           <property role="TrG5h" value="q-value threshold" />
           <property role="TPGZf" value="Q_VALUE_THRESHOLD" />
           <property role="TPKv7" value="Threshold on q-values to determine if the candidate result should be kept. A candidate is kept if any&#10;                q-value is lower than the threshold.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="0.05" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYVM" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$fa" role="TSDHD">
           <property role="TrG5h" value="Number of top hits" />
           <property role="TPGZf" value="NUM_TOP_HITS" />
           <property role="TPKv7" value="Number of hits to report if no candidates has an adjusted p-value above the q-value threshold." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="10000" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYVN" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$fb" role="TSDHD">
           <property role="TrG5h" value="Minimum variation support" />
           <property role="TPGZf" value="MINIMUM_VARIATION_SUPPORT" />
           <property role="TPKv7" value="Minimum number of reads that must have the variation for the variation to be reported in the output&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="35" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYVO" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$fc" role="TSDHD">
           <property role="TrG5h" value="Minimum number of distinct read indices" />
           <property role="TPGZf" value="THRESHOLD_DISTINCT_READ_INDICES" />
           <property role="TPKv7" value="Number of distinct read indices a position has to have to be reported in the output." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYVP" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$fd" role="TSDHD">
           <property role="TrG5h" value="Call indels" />
           <property role="TPGZf" value="CALL_INDELS" />
           <property role="TPKv7" value="When this option is active, indels are called and reported in the VCF output file. Please be advised&#10;                that the VCF output may become incompatible with various tools, as rules for reporting indels in VCF are&#10;                far from clearly described and various tools are known to interpret the VCF specification differently.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYVQ" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$fe" role="TSDHD">
           <property role="TrG5h" value="Diploid genome" />
           <property role="TPGZf" value="FORCE_DIPLOID" />
           <property role="TPKv7" value="When this option is active, genotype calls are forced to be diploid. Use when you know that the&#10;                genome the reads were generated from was diploid.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYVR" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$ff" role="TSDHD">
           <property role="TrG5h" value="Annotations" />
           <property role="TPGZf" value="ANNOTATIONS" />
           <property role="TPKv7" value="The annotation file to use to define regions." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="NONE" />
-          <node concept="TPwC6" id="6ojrriHiYVS" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fg" role="TPwC2">
             <property role="TrG5h" value="Genes" />
             <property role="TPwC7" value="GENES" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYVT" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fh" role="TPwC2">
             <property role="TrG5h" value="Exons" />
             <property role="TPwC7" value="EXONS" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYVU" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fi" role="TPwC2">
             <property role="TrG5h" value="Cpg Islands" />
             <property role="TPwC7" value="CPG_ISLANDS" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYVV" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fj" role="TPwC2">
             <property role="TrG5h" value="Refseq Promoters" />
             <property role="TPwC7" value="REFSEQ_PROMOTER" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYVW" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fk" role="TPwC2">
             <property role="TrG5h" value="1KB Genome Tiles" />
             <property role="TPwC7" value="1KB_Tile" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYVX" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fl" role="TPwC2">
             <property role="TrG5h" value="5' Untranslated Region" />
             <property role="TPwC7" value="5' UTR" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYVY" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fm" role="TPwC2">
             <property role="TrG5h" value="3' Untranslated Region" />
             <property role="TPwC7" value="3' UTR" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYVZ" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fn" role="TPwC2">
             <property role="TrG5h" value="Ensembl Promoters" />
             <property role="TPwC7" value="ENSEMBL_PROMOTER" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYW0" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fo" role="TPwC2">
             <property role="TrG5h" value="Introns" />
             <property role="TPwC7" value="INTRONS" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYW1" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fp" role="TPwC2">
             <property role="TrG5h" value="intergenic" />
             <property role="TPwC7" value="INTERGENIC" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYW2" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fq" role="TPwC2">
             <property role="TrG5h" value="HELP_assay" />
             <property role="TPwC7" value="HELP" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYW3" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fr" role="TPwC2">
             <property role="TrG5h" value="combined" />
             <property role="TPwC7" value="COMBINED" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYW4" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$fs" role="TSDHD">
           <property role="TrG5h" value="Estimate indel rate" />
           <property role="TPGZf" value="INDEL_RATE" />
           <property role="TPKv7" value="When this option is active, the rate of indels is estimated over each annotation. The percentage of&#10;                sites where an indel is called is written in the MR field(s).&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYW5" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$ft" role="TSDHD">
           <property role="TrG5h" value="Write Cm C columns in output file" />
           <property role="TPGZf" value="WRITE_COUNTS" />
           <property role="TPKv7" value="When this option is active, the output file includes C and Cm columns corresponding to the number of&#10;                non-methylated and methylated cytosines respectively.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYW6" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$fu" role="TSDHD">
           <property role="TrG5h" value="Estimate empirical p-values" />
           <property role="TPGZf" value="ESTIMATE_INTRA_GROUP_DIFFERENCE_DENSITY" />
           <property role="TPKv7" value="When this option is active, estimate an empirical p-value using observed distribution of intra-group&#10;                differences in each group under comparison.&#10;                The empirical p-value requires experimental replicates (i.e., more than one sample in at least one&#10;                group).&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYW7" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$fv" role="TSDHD">
           <property role="TrG5h" value="P-value combination method" />
           <property role="TPGZf" value="PVALUE_COMBINATOR" />
           <property role="TPKv7" value="Method to combine evidence from multiple tests." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="median" />
-          <node concept="TPwC6" id="6ojrriHiYW8" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fw" role="TPwC2">
             <property role="TrG5h" value="median" />
             <property role="TPwC7" value="MEDIAN" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYW9" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fx" role="TPwC2">
             <property role="TrG5h" value="Maximum" />
             <property role="TPwC7" value="MAX" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWa" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fy" role="TPwC2">
             <property role="TrG5h" value="Sum" />
             <property role="TPwC7" value="SUM" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWb" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fz" role="TPwC2">
             <property role="TrG5h" value="QFAST" />
             <property role="TPwC7" value="QFAST" />
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYWc" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$f$" role="TSDHD">
           <property role="TrG5h" value="Cytosine contexts" />
           <property role="TPGZf" value="CONTEXTS" />
           <property role="TPKv7" value="A comma separated list of contexts, among CpG,CpA,CpC,CpT,CpN.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="CpG" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYWd" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$f_" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYWe" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$fA" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYWf" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$fB" role="1f5Fuw">
         <property role="1f4ISL" value="1.6.3.4.3" />
         <property role="TrG5h" value="SEQ_VAR_GOBY_METHYLATION_REGIONS_ARTIFACT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/SEQ_VAR_GOBY_METHYLATION_REGIONS_ARTIFACT" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYWg" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$fC" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYWh" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$fD" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYWi" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$fE" role="3jXL5I">
           <property role="G5nAd" value="20120608105135" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYWj" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$fF" role="3jXL5I">
           <property role="G5nAd" value="1.5.16" />
-          <ref role="3jXLav" node="6ojrriHiYIL" resolve="IGVTOOLS" />
+          <ref role="3jXLav" node="17OfmP$a$29" resolve="IGVTOOLS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYWk" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$fG" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYG7" resolve="ANNOTATE_VCF" />
+          <ref role="3jXLav" node="17OfmP$azZv" resolve="ANNOTATE_VCF" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYWl" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$fH" role="3jXL5I">
           <property role="G5nAd" value="2.0" />
-          <ref role="3jXLav" node="6ojrriHiYH9" resolve="ENSEMBL_ANNOTATIONS" />
+          <ref role="3jXLav" node="17OfmP$a$0x" resolve="ENSEMBL_ANNOTATIONS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYWm" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$fI" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYIj" resolve="GOBY_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1F" resolve="GOBY_INDEXED_GENOMES" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYWn" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYWo" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$fJ" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$fK" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYWp" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$fL" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYWq" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$fM" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYWr" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$fN" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYWs" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$fO" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYWt" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$fP" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYWu" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$fQ" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYWv" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$fR" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYWw" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$fS" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYWx" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$fT" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYWy" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$fU" role="1fdMWn">
             <property role="TrG5h" value="IGV_OUTPUT" />
-            <node concept="JDp7Y" id="6ojrriHiYWz" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$fV" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYW$" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$fW" role="TSDHD">
           <property role="TrG5h" value="Type of analysis and output format" />
           <property role="TPGZf" value="OUTPUT_FORMAT" />
           <property role="TPKv7" value="Determines the type of sequence variation analysis to perform and the output format." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="METHYLATION" />
-          <node concept="TPwC6" id="6ojrriHiYW_" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$fX" role="TPwC2">
             <property role="TrG5h" value="methylation" />
             <property role="TPwC7" value="METHYLATION_REGIONS" />
           </node>
         </node>
-        <node concept="TVQb7" id="6ojrriHiYWA" role="TSDHD">
+        <node concept="TVQb7" id="17OfmP$a$fY" role="TSDHD">
           <property role="TrG5h" value="q-value threshold" />
           <property role="TPGZf" value="Q_VALUE_THRESHOLD" />
           <property role="TPKv7" value="Threshold on q-values to determine if the candidate result should be kept. A candidate is kept if any&#10;                q-value is lower than the threshold.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="0.05" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYWB" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$fZ" role="TSDHD">
           <property role="TrG5h" value="Number of top hits" />
           <property role="TPGZf" value="NUM_TOP_HITS" />
           <property role="TPKv7" value="Number of hits to report if no candidates has an adjusted p-value above the q-value threshold." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="10000" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYWC" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$g0" role="TSDHD">
           <property role="TrG5h" value="Minimum variation support" />
           <property role="TPGZf" value="MINIMUM_VARIATION_SUPPORT" />
           <property role="TPKv7" value="Minimum number of reads that must have the variation for the variation to be reported in the output&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="35" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYWD" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$g1" role="TSDHD">
           <property role="TrG5h" value="Minimum number of distinct read indices" />
           <property role="TPGZf" value="THRESHOLD_DISTINCT_READ_INDICES" />
           <property role="TPKv7" value="Number of distinct read indices a position has to have to be reported in the output." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYWE" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$g2" role="TSDHD">
           <property role="TrG5h" value="Call indels" />
           <property role="TPGZf" value="CALL_INDELS" />
           <property role="TPKv7" value="When this option is active, indels are called and reported in the VCF output file. Please be advised&#10;                that the VCF output may become incompatible with various tools, as rules for reporting indels in VCF are&#10;                far from clearly described and various tools are known to interpret the VCF specification differently.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYWF" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$g3" role="TSDHD">
           <property role="TrG5h" value="Diploid genome" />
           <property role="TPGZf" value="FORCE_DIPLOID" />
           <property role="TPKv7" value="When this option is active, genotype calls are forced to be diploid. Use when you know that the&#10;                genome the reads were generated from was diploid.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYWG" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$g4" role="TSDHD">
           <property role="TrG5h" value="Source of annotations" />
           <property role="TPGZf" value="ANNOTATION_TYPE" />
           <property role="TPKv7" value="Select the source of annotations and type of analysis to perform." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="NONE" />
-          <node concept="TPwC6" id="6ojrriHiYWH" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$g5" role="TPwC2">
             <property role="TrG5h" value="Ensembl Promoters" />
             <property role="TPwC7" value="ENSEMBL_PROMOTER" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWI" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$g6" role="TPwC2">
             <property role="TrG5h" value="Genes" />
             <property role="TPwC7" value="GENES" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWJ" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$g7" role="TPwC2">
             <property role="TrG5h" value="5' Untranslated Region" />
             <property role="TPwC7" value="5_UTR" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWK" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$g8" role="TPwC2">
             <property role="TrG5h" value="Exons" />
             <property role="TPwC7" value="EXONS" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWL" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$g9" role="TPwC2">
             <property role="TrG5h" value="Introns" />
             <property role="TPwC7" value="INTRONS" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWM" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$ga" role="TPwC2">
             <property role="TrG5h" value="3' Untranslated Region" />
             <property role="TPwC7" value="3_UTR" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWN" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$gb" role="TPwC2">
             <property role="TrG5h" value="intergenic" />
             <property role="TPwC7" value="INTERGENIC" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWO" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$gc" role="TPwC2">
             <property role="TrG5h" value="Cpg Islands" />
             <property role="TPwC7" value="CPG_ISLANDS" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWP" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$gd" role="TPwC2">
             <property role="TrG5h" value="1KB Genome Tiles" />
             <property role="TPwC7" value="1KB_Tile" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYWQ" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$ge" role="TSDHD">
           <property role="TrG5h" value="Estimate indel rate" />
           <property role="TPGZf" value="INDEL_RATE" />
           <property role="TPKv7" value="When this option is active, the rate of indels is estimated over each annotation. The percentage of&#10;                sites where an indel is called is written in the MR field(s).&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYWR" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$gf" role="TSDHD">
           <property role="TrG5h" value="Write Cm C columns in output file" />
           <property role="TPGZf" value="WRITE_COUNTS" />
           <property role="TPKv7" value="When this option is active, the output file includes C and Cm columns corresponding to the number of&#10;                non-methylated and methylated cytosines respectively.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYWS" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$gg" role="TSDHD">
           <property role="TrG5h" value="Estimate empirical p-values" />
           <property role="TPGZf" value="ESTIMATE_INTRA_GROUP_DIFFERENCE_DENSITY" />
           <property role="TPKv7" value="When this option is active, estimate an empirical p-value using observed distribution of intra-group&#10;                differences in each group under comparison.&#10;                The empirical p-value requires experimental replicates (i.e., more than one sample in at least one&#10;                group).&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYWT" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$gh" role="TSDHD">
           <property role="TrG5h" value="P-value combination method" />
           <property role="TPGZf" value="PVALUE_COMBINATOR" />
           <property role="TPKv7" value="Method to combine evidence from multiple tests." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="median" />
-          <node concept="TPwC6" id="6ojrriHiYWU" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$gi" role="TPwC2">
             <property role="TrG5h" value="median" />
             <property role="TPwC7" value="MEDIAN" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWV" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$gj" role="TPwC2">
             <property role="TrG5h" value="Maximum" />
             <property role="TPwC7" value="MAX" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWW" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$gk" role="TPwC2">
             <property role="TrG5h" value="Sum" />
             <property role="TPwC7" value="SUM" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYWX" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$gl" role="TPwC2">
             <property role="TrG5h" value="QFAST" />
             <property role="TPwC7" value="QFAST" />
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYWY" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$gm" role="TSDHD">
           <property role="TrG5h" value="Cytosine contexts" />
           <property role="TPGZf" value="CONTEXTS" />
           <property role="TPKv7" value="A comma separated list of contexts, among CpG,CpA,CpC,CpT,CpN.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="CpG" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYWZ" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$gn" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYX0" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$go" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYX1" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$gp" role="1f5Fuw">
         <property role="1f4ISL" value="1.2" />
         <property role="TrG5h" value="SEQ_VAR_GOBY_NYOSH" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/SEQ_VAR_GOBY_NYOSH" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYX2" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$gq" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYX3" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$gr" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYX4" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$gs" role="3jXL5I">
           <property role="G5nAd" value="20130404182251" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYX5" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$gt" role="3jXL5I">
           <property role="G5nAd" value="0.1.10" />
-          <ref role="3jXLav" node="6ojrriHiYL0" resolve="VCF_TOOLS" />
+          <ref role="3jXLav" node="17OfmP$a$4o" resolve="VCF_TOOLS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYX6" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$gu" role="3jXL5I">
           <property role="G5nAd" value="2.8" />
-          <ref role="3jXLav" node="6ojrriHiYKX" resolve="VARIANT_EFFECT_PREDICTOR" />
+          <ref role="3jXLav" node="17OfmP$a$4l" resolve="VARIANT_EFFECT_PREDICTOR" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYX7" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$gv" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYG7" resolve="ANNOTATE_VCF" />
+          <ref role="3jXLav" node="17OfmP$azZv" resolve="ANNOTATE_VCF" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYX8" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$gw" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYIj" resolve="GOBY_INDEXED_GENOMES" />
+          <ref role="3jXLav" node="17OfmP$a$1F" resolve="GOBY_INDEXED_GENOMES" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYX9" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYXa" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$gx" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$gy" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYXb" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$gz" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYXc" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$g$" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYXd" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$g_" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYXe" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$gA" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYXf" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$gB" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYXg" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$gC" role="1fdMWn">
             <property role="TrG5h" value="VARIANT_ANNOTATION_PREDICTOR_OUTPUT" />
-            <node concept="JDp7Y" id="6ojrriHiYXh" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$gD" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYXi" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$gE" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYXj" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$gF" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYXk" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$gG" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYXl" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$gH" role="1fdBNg">
               <property role="JDp7Z" value="VCF" />
               <property role="JDpo1" value="Variant Calling Format." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYXm" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$gI" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYXn" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$gJ" role="1fdBNg">
               <property role="JDp7Z" value="VCF_INDEX" />
               <property role="JDpo1" value="Variant Calling Format Index (produced with tabix)." />
             </node>
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYXo" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$gK" role="TSDHD">
           <property role="TrG5h" value="Type of analysis and output format" />
           <property role="TPGZf" value="OUTPUT_FORMAT" />
           <property role="TPKv7" value="Determines the type of sequence variation analysis to perform and the output format." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="GENOTYPES" />
-          <node concept="TPwC6" id="6ojrriHiYXp" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$gL" role="TPwC2">
             <property role="TrG5h" value="genotypes" />
             <property role="TPwC7" value="GENOTYPES" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYXq" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$gM" role="TPwC2">
             <property role="TrG5h" value="allele_frequencies" />
             <property role="TPwC7" value="ALLELE_FREQUENCIES" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYXr" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$gN" role="TPwC2">
             <property role="TrG5h" value="group_comparisons" />
             <property role="TPwC7" value="GROUP_COMPARISONS" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYXs" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$gO" role="TPwC2">
             <property role="TrG5h" value="somatic variations" />
             <property role="TPwC7" value="SOMATIC_VARIATIONS" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYXt" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$gP" role="TSDHD">
           <property role="TrG5h" value="Realign reads near indels" />
           <property role="TPGZf" value="REALIGN_AROUND_INDELS" />
           <property role="TPKv7" value="When this option is active, reads are realigned around indels and this can help prevent alignment&#10;                artifacts.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYXu" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$gQ" role="TSDHD">
           <property role="TrG5h" value="Call indels" />
           <property role="TPGZf" value="CALL_INDELS" />
           <property role="TPKv7" value="When this option is active, indels are called and reported in the VCF output file. Please be advised&#10;                that the VCF output may become incompatible with various tools, as rules for reporting indels in VCF are&#10;                far from clearly described and various tools are known to interpret the VCF specification differently.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYXv" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$gR" role="TSDHD">
           <property role="TrG5h" value="Diploid genome" />
           <property role="TPGZf" value="FORCE_DIPLOID" />
           <property role="TPKv7" value="When this option is active, genotype calls are forced to be diploid. Use when you know that the&#10;                genome the reads were generated from was diploid.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiYXw" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$gS" role="TSDHD">
           <property role="TrG5h" value="Annotate variations" />
           <property role="TPGZf" value="ANNOTATE_VARIATIONS" />
           <property role="TPKv7" value="When this option is active, annotate variations with the Variant Effect Predictor. Not that positions&#10;                that cannot be annotated may be removed from the output.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="true" />
         </node>
-        <node concept="TVQb7" id="6ojrriHiYXx" role="TSDHD">
+        <node concept="TVQb7" id="17OfmP$a$gT" role="TSDHD">
           <property role="TrG5h" value="q-value threshold" />
           <property role="TPGZf" value="Q_VALUE_THRESHOLD" />
           <property role="TPKv7" value="Threshold on q-values to determine if the candidate result should be kept. A candidate is kept if any&#10;                q-value is lower than the threshold.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1.0" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYXy" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$gU" role="TSDHD">
           <property role="TrG5h" value="Number of top hits" />
           <property role="TPGZf" value="NUM_TOP_HITS" />
           <property role="TPKv7" value="Number of hits to report if no candidates has an adjusted p-value above the q-value threshold." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="10000" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYXz" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$gV" role="TSDHD">
           <property role="TrG5h" value="Minimum variation support" />
           <property role="TPGZf" value="MINIMUM_VARIATION_SUPPORT" />
           <property role="TPKv7" value="Minimum number of reads that must have the variation for the variation to be reported in the output&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYX$" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$gW" role="TSDHD">
           <property role="TrG5h" value="Minimum number of distinct read indices" />
           <property role="TPGZf" value="THRESHOLD_DISTINCT_READ_INDICES" />
           <property role="TPKv7" value="Number of distinct read indices a position has to have to be reported in the output." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="1" />
         </node>
-        <node concept="TVLar" id="6ojrriHiYX_" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$gX" role="TSDHD">
           <property role="TrG5h" value="Annotations" />
           <property role="TPGZf" value="ANNOTATIONS" />
           <property role="TPKv7" value="The annotation file to use to define regions.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="NONE" />
-          <node concept="TPwC6" id="6ojrriHiYXA" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$gY" role="TPwC2">
             <property role="TrG5h" value="NONE" />
             <property role="TPwC7" value="NONE" />
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiYXB" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$gZ" role="TSDHD">
           <property role="TrG5h" value="Covariate info URL" />
           <property role="TPGZf" value="COVARIATE_INFO_URL" />
           <property role="TPKv7" value="URL of a covariate information file. The URL should be publicly available and serve a TSV file. See&#10;                http://campagnelab.org/software/goby/tutorials/detecting-somatic-variations-with-goby-2-1-3/ for the&#10;                format expected in the TSV file.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="NONE" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYXC" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$h0" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYXD" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$h1" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYXE" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$h2" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="SEQ_VAR_SAMTOOLS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/SEQ_VAR_SAMTOOLS" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYXF" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$h3" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYXG" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$h4" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYXH" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$h5" role="3jXL5I">
           <property role="G5nAd" value="0.1.14" />
-          <ref role="3jXLav" node="6ojrriHiYKy" resolve="SAMTOOLS" />
+          <ref role="3jXLav" node="17OfmP$a$3U" resolve="SAMTOOLS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYXI" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$h6" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYG7" resolve="ANNOTATE_VCF" />
+          <ref role="3jXLav" node="17OfmP$azZv" resolve="ANNOTATE_VCF" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYXJ" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYXK" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$h7" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$h8" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYXL" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$h9" role="1fdBNg">
               <property role="JDp7Z" value="BAM_ALIGNMENT" />
               <property role="JDpo1" value="BAM alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYXM" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$ha" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYXN" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$hb" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYXO" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$hc" role="TSDHD">
           <property role="TrG5h" value="Type of analysis and output format" />
           <property role="TPGZf" value="OUTPUT_FORMAT" />
           <property role="TPKv7" value="Determines the type of sequence variation analysis to perform and the output format." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="GENOTYPES" />
-          <node concept="TPwC6" id="6ojrriHiYXP" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$hd" role="TPwC2">
             <property role="TrG5h" value="genotypes" />
             <property role="TPwC7" value="GENOTYPES" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYXQ" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$he" role="TPwC2">
             <property role="TrG5h" value="group_comparisons" />
             <property role="TPwC7" value="GROUP_COMPARISONS" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYXR" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$hf" role="TSDHD">
           <property role="TrG5h" value="Annotate variations" />
           <property role="TPGZf" value="ANNOTATE_VARIATIONS" />
           <property role="TPKv7" value="When this option is active, annotate variations with the Variant Effect Predictor. Not that positions&#10;                that cannot be annotated may be removed from the output.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="true" />
         </node>
-        <node concept="TVpTU" id="6ojrriHiYXS" role="TSDHD">
+        <node concept="TVpTU" id="17OfmP$a$hg" role="TSDHD">
           <property role="TrG5h" value="Number of top hits" />
           <property role="TPGZf" value="NUM_TOP_HITS" />
           <property role="TPKv7" value="Number of hits to report if no candidates has an adjusted p-value above the q-value threshold." />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="10000" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYXT" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$hh" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYXU" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$hi" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="3jXZUR" id="6ojrriHiYXV" role="1f5Fuw">
+      <node concept="3jXZUR" id="17OfmP$a$hj" role="1f5Fuw">
         <property role="1f4ISL" value="1.2.1" />
         <property role="TrG5h" value="SPLICING_DIFF_EXP" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/analyses/SPLICING_DIFF_EXP" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYXW" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$hk" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYXX" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$hl" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYXY" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$hm" role="3jXL5I">
           <property role="G5nAd" value="20121012122417" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYXZ" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$hn" role="3jXL5I">
           <property role="G5nAd" value="2.9.2" />
-          <ref role="3jXLav" node="6ojrriHiYK$" resolve="SCALA" />
+          <ref role="3jXLav" node="17OfmP$a$3W" resolve="SCALA" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYY0" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$ho" role="3jXL5I">
           <property role="G5nAR" value="2.14.1" />
-          <ref role="3jXLav" node="6ojrriHiYKh" resolve="R" />
+          <ref role="3jXLav" node="17OfmP$a$3D" resolve="R" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYY1" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$hp" role="3jXL5I">
           <property role="G5nAd" value="2012.07.25" />
-          <ref role="3jXLav" node="6ojrriHiYGE" resolve="DESEQ_SCRIPT" />
+          <ref role="3jXLav" node="17OfmP$a$02" resolve="DESEQ_SCRIPT" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYY2" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$hq" role="3jXL5I">
           <property role="G5nAd" value="2013.05.17" />
-          <ref role="3jXLav" node="6ojrriHiYGU" resolve="EDGE_R_SCRIPT" />
+          <ref role="3jXLav" node="17OfmP$a$0i" resolve="EDGE_R_SCRIPT" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiYY3" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiYY4" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$hr" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$hs" role="1fdMWl">
             <property role="TrG5h" value="INPUT_ALIGNMENTS" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiYY5" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ht" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYY6" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$hu" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiYY7" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$hv" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYY8" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$hw" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_DB" />
-            <node concept="JDp7Y" id="6ojrriHiYY9" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$hx" role="1fdBNg">
               <property role="JDp7Z" value="X_SQLITE3" />
               <property role="JDpo1" value="X_SQLITE3 table." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYYa" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$hy" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS_LUCENE_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiYYb" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$hz" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYYc" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$h$" role="1fdMWn">
             <property role="TrG5h" value="STATS_RESULTS" />
-            <node concept="JDp7Y" id="6ojrriHiYYd" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$h_" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYYe" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$hA" role="1fdMWn">
             <property role="TrG5h" value="SAMPLE_MDS_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYYf" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$hB" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiYYg" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$hC" role="1fdMWn">
             <property role="TrG5h" value="ANALYSIS_SMEAR_PLOT" />
-            <node concept="JDp7Y" id="6ojrriHiYYh" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$hD" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiYYi" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$hE" role="TSDHD">
           <property role="TrG5h" value="Estimation method" />
           <property role="TPGZf" value="STAT_ENGINE" />
           <property role="TPKv7" value="The method used to estimate statistical significance of differences.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="NONE" />
-          <node concept="TPwC6" id="6ojrriHiYYj" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$hF" role="TPwC2">
             <property role="TrG5h" value="DESEQ" />
             <property role="TPwC7" value="DESEQ" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiYYk" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$hG" role="TPwC2">
             <property role="TrG5h" value="EDGE_R" />
             <property role="TPwC7" value="EDGE_R" />
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiYYl" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$hH" role="TSDHD">
           <property role="TrG5h" value="Force recalculation of splice junction usage from Goby alignment splice link info." />
           <property role="TPGZf" value="FORCE_GOBY_SPLICE_USE" />
           <property role="TPKv7" value="When this option is active, splice junction counts are recalculated from the alignment, even in the&#10;                presence of a STAR splice junction TSV file.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="false" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYYm" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$hI" role="TSDHD">
           <property role="TrG5h" value="GROUP_DEFINITION" />
           <property role="TPGZf" value="GROUP_DEFINITION" />
           <property role="TPKv7" value="The group definition list. Each definition must be in the form: Group_N=TAG,TAG342,TAG231,etc. TAGs must match the ones declared in the SLOTS." />
           <property role="TQfiT" value="true" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiYYn" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$hJ" role="TSDHD">
           <property role="TrG5h" value="COMPARISON_PAIR" />
           <property role="TPGZf" value="COMPARISON_PAIR" />
           <property role="TPKv7" value="The comparison pair list. Each pair must be in the form Group_Name1/Group_Name2. Group names must match the ones declared in the GROUP_DEFINITION." />
           <property role="TQfiT" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYo" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$hK" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="ALIGNMENT_ALL_FILES" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/ALIGNMENT_ALL_FILES" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYp" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$hL" role="1fNuhw">
           <property role="1fNuh_" value="*-all-files.zip" />
           <property role="TrG5h" value="ARCHIVE" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYq" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$hM" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="ALIGNMENT_BED" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/ALIGNMENT_BED" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYr" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$hN" role="1fNuhw">
           <property role="1fNuh_" value="*-all.bed.gz" />
           <property role="TrG5h" value="BED" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYs" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$hO" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="ALIGNMENT_SEQUENCE_VARIATION_STATS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/ALIGNMENT_SEQUENCE_VARIATION_STATS" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYt" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$hP" role="1fNuhw">
           <property role="1fNuh_" value="*.sequence-variation-stats.tsv" />
           <property role="TrG5h" value="STATS" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYu" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$hQ" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="ALIGNMENT_STATS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/ALIGNMENT_STATS" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYv" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$hR" role="1fNuhw">
           <property role="1fNuh_" value="*.alignment-stats.txt" />
           <property role="TrG5h" value="STATS" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYw" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$hS" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="ALIGNMENT_WIG" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/ALIGNMENT_WIG" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYx" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$hT" role="1fNuhw">
           <property role="1fNuh_" value="*-all.wig.gz" />
           <property role="TrG5h" value="BED" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYy" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$hU" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="ALLOGENOMICS_PHENOTYPE" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/ALLOGENOMICS_PHENOTYPE" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYz" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$hV" role="1fNuhw">
           <property role="1fNuh_" value="*.pairs" />
           <property role="TrG5h" value="PHENOTYPE" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYY$" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$hW" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="BAM_ALIGNMENT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/BAM_ALIGNMENT" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYY_" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$hX" role="1fNuhw">
           <property role="1fNuh_" value="*.bam" />
           <property role="TrG5h" value="BAM" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYYA" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$hY" role="1fNuhw">
           <property role="1fNuh_" value="*.bam.bai" />
           <property role="TrG5h" value="INDEX" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYB" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$hZ" role="1f5Fuw">
         <property role="1f4ISL" value="0.5" />
         <property role="TrG5h" value="BWA_INDEX" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/BWA_INDEX" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYC" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$i0" role="1fNuhw">
           <property role="1fNuh_" value="*.bwt" />
           <property role="TrG5h" value="BWT" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYYD" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$i1" role="1fNuhw">
           <property role="1fNuh_" value="*.pac" />
           <property role="TrG5h" value="PAC" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYYE" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$i2" role="1fNuhw">
           <property role="1fNuh_" value="*.ann" />
           <property role="TrG5h" value="ANN" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYYF" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$i3" role="1fNuhw">
           <property role="1fNuh_" value="*.amb" />
           <property role="TrG5h" value="AMB" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYYG" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$i4" role="1fNuhw">
           <property role="1fNuh_" value="*.sa" />
           <property role="TrG5h" value="SA" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYYH" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$i5" role="1fNuhw">
           <property role="1fNuh_" value="*.rpac" />
           <property role="TrG5h" value="RPAC" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYYI" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$i6" role="1fNuhw">
           <property role="1fNuh_" value="*.rbwt" />
           <property role="TrG5h" value="RBWT" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYYJ" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$i7" role="1fNuhw">
           <property role="1fNuh_" value="*.rsa" />
           <property role="TrG5h" value="RSA" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYK" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$i8" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="COMPACT_READS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/COMPACT_READS" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYL" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$i9" role="1fNuhw">
           <property role="1fNuh_" value="*.compact-reads" />
           <property role="TrG5h" value="READS_FILE" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYM" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$ia" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="COUNTS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/COUNTS" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYN" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$ib" role="1fNuhw">
           <property role="1fNuh_" value="*.counts" />
           <property role="TrG5h" value="COUNTS" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYO" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$ic" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="FASTA" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/FASTA" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYP" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$id" role="1fNuhw">
           <property role="1fNuh_" value="*.fa" />
           <property role="TrG5h" value="READS_FILE" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYQ" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$ie" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="FASTA_GZ" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/FASTA_GZ" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYR" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$if" role="1fNuhw">
           <property role="1fNuh_" value="*.fa.gz" />
           <property role="TrG5h" value="SEQUENCES" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYS" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$ig" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="FASTQ" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/FASTQ" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYT" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$ih" role="1fNuhw">
           <property role="1fNuh_" value="*.fastq" />
           <property role="TrG5h" value="FASTQ" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYYU" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$ii" role="1fNuhw">
           <property role="1fNuh_" value="*.fq" />
           <property role="TrG5h" value="FQ" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYV" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$ij" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="FASTQ_GZ" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/FASTQ_GZ" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYW" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$ik" role="1fNuhw">
           <property role="1fNuh_" value="*.fastq.gz" />
           <property role="TrG5h" value="FASTQ_GZ" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYYX" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$il" role="1fNuhw">
           <property role="1fNuh_" value="*.fq.gz" />
           <property role="TrG5h" value="FQ_GZ" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYYY" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$im" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="GOBY_ALIGNMENT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/GOBY_ALIGNMENT" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYYZ" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$in" role="1fNuhw">
           <property role="1fNuh_" value="*.index" />
           <property role="TrG5h" value="INDEX" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZ0" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$io" role="1fNuhw">
           <property role="1fNuh_" value="*.header" />
           <property role="TrG5h" value="HEADER" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZ1" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$ip" role="1fNuhw">
           <property role="1fNuh_" value="*.entries" />
           <property role="TrG5h" value="ENTRIES" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZ2" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iq" role="1fNuhw">
           <property role="1fNuh_" value="*.tmh" />
           <property role="TrG5h" value="TMH" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZ3" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$ir" role="1fNuhw">
           <property role="1fNuh_" value="*.perm" />
           <property role="TrG5h" value="PERM" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZ4" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$is" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="GOBY_INDEX" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/GOBY_INDEX" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZ5" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$it" role="1fNuhw">
           <property role="1fNuh_" value="*.names" />
           <property role="TrG5h" value="NAMES" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZ6" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iu" role="1fNuhw">
           <property role="1fNuh_" value="*.sizes" />
           <property role="TrG5h" value="SIZES" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZ7" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iv" role="1fNuhw">
           <property role="1fNuh_" value="*.bases" />
           <property role="TrG5h" value="BASES" />
           <property role="1fYBfZ" value="true" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZ8" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iw" role="1fNuhw">
           <property role="1fNuh_" value="*.ignore" />
           <property role="TrG5h" value="IGNORE" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZ9" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$ix" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="GOBYWEB_MERGE_PLAN_FILE" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/GOBYWEB_MERGE_PLAN_FILE" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZa" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iy" role="1fNuhw">
           <property role="1fNuh_" value="*details.tsv" />
           <property role="TrG5h" value="MERGE_PLAN" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZb" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$iz" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="GZ" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/GZ" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZc" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$i$" role="1fNuhw">
           <property role="1fNuh_" value="*.gz" />
           <property role="TrG5h" value="GZ" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZd" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$i_" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="IGV" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/IGV" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZe" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iA" role="1fNuhw">
           <property role="1fNuh_" value="*.igv" />
           <property role="TrG5h" value="IGV" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZf" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$iB" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="JAR" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/JAR" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZg" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iC" role="1fNuhw">
           <property role="1fNuh_" value="*.jar" />
           <property role="TrG5h" value="JAVA_ARCHIVE" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZh" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$iD" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="JOB_METADATA" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/JOB_METADATA" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZi" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iE" role="1fNuhw">
           <property role="1fNuh_" value="*.log" />
           <property role="TrG5h" value="LOG_HISTORY" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZj" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iF" role="1fNuhw">
           <property role="1fNuh_" value="*.properties" />
           <property role="TrG5h" value="JOB_STATISTICS" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZk" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$iG" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="LUCENE_INDEX" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/LUCENE_INDEX" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZl" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iH" role="1fNuhw">
           <property role="1fNuh_" value="*.lucene.index" />
           <property role="TrG5h" value="INDEX_DIR" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZm" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$iI" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="PLAIN_TEXT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/PLAIN_TEXT" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZn" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iJ" role="1fNuhw">
           <property role="1fNuh_" value="*.txt" />
           <property role="TrG5h" value="TXT" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZo" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$iK" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="PNG" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/PNG" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZp" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iL" role="1fNuhw">
           <property role="1fNuh_" value="*.png" />
           <property role="TrG5h" value="PNG" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZq" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$iM" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="R_SCRIPT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/R_SCRIPT" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZr" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iN" role="1fNuhw">
           <property role="1fNuh_" value="*.R" />
           <property role="TrG5h" value="SCRIPT" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZs" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$iO" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="READ_QUALITY_STATS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/READ_QUALITY_STATS" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZt" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iP" role="1fNuhw">
           <property role="1fNuh_" value="*.tsv" />
           <property role="TrG5h" value="READ_QUALITY_STATS" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZu" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$iQ" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="READS_STATS_PROPERTIES_FILE" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/READS_STATS_PROPERTIES_FILE" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZv" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iR" role="1fNuhw">
           <property role="1fNuh_" value="*.properties" />
           <property role="TrG5h" value="STATS" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZw" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$iS" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="STATS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/STATS" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZx" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iT" role="1fNuhw">
           <property role="1fNuh_" value="*.stats" />
           <property role="TrG5h" value="STATS" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZy" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$iU" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="SUPPORTED_INPUT_READS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/SUPPORTED_INPUT_READS" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZz" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iV" role="1fNuhw">
           <property role="1fNuh_" value="*.compact-reads" />
           <property role="TrG5h" value="COMPACT_READ_FILES" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZ$" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iW" role="1fNuhw">
           <property role="1fNuh_" value="*.fq.gz" />
           <property role="TrG5h" value="FQ_GZ_FILES" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZ_" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iX" role="1fNuhw">
           <property role="1fNuh_" value="*.fastq" />
           <property role="TrG5h" value="FASTQ_FILES" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZA" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iY" role="1fNuhw">
           <property role="1fNuh_" value="*.fastq.gz" />
           <property role="TrG5h" value="FASTQ_GZ_FILES" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZB" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$iZ" role="1fNuhw">
           <property role="1fNuh_" value="*.fq" />
           <property role="TrG5h" value="FQ_FILES" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZC" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$j0" role="1fNuhw">
           <property role="1fNuh_" value="*.fa" />
           <property role="TrG5h" value="FA_FILES" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZD" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$j1" role="1fNuhw">
           <property role="1fNuh_" value="*.fasta.gz" />
           <property role="TrG5h" value="FASTA_GZ_FILES" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZE" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$j2" role="1fNuhw">
           <property role="1fNuh_" value="*.fasta" />
           <property role="TrG5h" value="FASTA_FILES" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZF" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$j3" role="1fNuhw">
           <property role="1fNuh_" value="*.fa.gz" />
           <property role="TrG5h" value="FA_GZ_FILES" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZG" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$j4" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="TAR_GZ" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/TAR_GZ" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZH" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$j5" role="1fNuhw">
           <property role="1fNuh_" value="*.tar.gz" />
           <property role="TrG5h" value="TAR GZ" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZI" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$j6" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="TSV" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/TSV" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZJ" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$j7" role="1fNuhw">
           <property role="1fNuh_" value="*.tsv" />
           <property role="TrG5h" value="TSV" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZK" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$j8" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="TXT" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/TXT" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZL" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$j9" role="1fNuhw">
           <property role="1fNuh_" value="*.txt" />
           <property role="TrG5h" value="TXT" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZM" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$ja" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="VCF" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/VCF" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZN" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$jb" role="1fNuhw">
           <property role="1fNuh_" value="*.vcf" />
           <property role="TrG5h" value="VCF" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZO" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$jc" role="1fNuhw">
           <property role="1fNuh_" value="*.vcf.gz" />
           <property role="TrG5h" value="VCF_GZ" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZP" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$jd" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="VCF_INDEX" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/VCF_INDEX" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZQ" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$je" role="1fNuhw">
           <property role="1fNuh_" value="*.vcf.tbi" />
           <property role="TrG5h" value="VCF_INDEX" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZR" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$jf" role="1fNuhw">
           <property role="1fNuh_" value="*.vcf.gz.tbi" />
           <property role="TrG5h" value="VCF_INDEX_GZ" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZS" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$jg" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="WEIGHT_FILES" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/WEIGHT_FILES" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZT" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$jh" role="1fNuhw">
           <property role="1fNuh_" value="*.gc-weights" />
           <property role="TrG5h" value="GC_WEIGHTS" />
         </node>
-        <node concept="1fNuhq" id="6ojrriHiYZU" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$ji" role="1fNuhw">
           <property role="1fNuh_" value="*.heptamers-weights" />
           <property role="TrG5h" value="HEPTAMER_WEIGHTS" />
         </node>
       </node>
-      <node concept="1fNG_d" id="6ojrriHiYZV" role="1f5Fuw">
+      <node concept="1fNG_d" id="17OfmP$a$jj" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="X_SQLITE3" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/filesets/X_SQLITE3" />
         <property role="TNbOb" value="false" />
-        <node concept="1fNuhq" id="6ojrriHiYZW" role="1fNuhw">
+        <node concept="1fNuhq" id="17OfmP$a$jk" role="1fNuhw">
           <property role="1fNuh_" value="*.db" />
           <property role="TrG5h" value="TABLE" />
           <property role="1fYBfZ" value="true" />
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiYZX" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$jl" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="ANNOTATE_WITH_VEP" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/ANNOTATE_WITH_VEP" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiYZY" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$jm" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiYZZ" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$jn" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ00" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$jo" role="3jXL5I">
           <property role="G5nAd" value="1.2" />
-          <ref role="3jXLav" node="6ojrriHiYG7" resolve="ANNOTATE_VCF" />
+          <ref role="3jXLav" node="17OfmP$azZv" resolve="ANNOTATE_VCF" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ01" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ02" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$jp" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$jq" role="1fdMWl">
             <property role="TrG5h" value="INPUT_VCF" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiZ03" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$jr" role="1fdBNg">
               <property role="JDp7Z" value="VCF" />
               <property role="JDpo1" value="Variant Calling Format." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ04" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$js" role="1fdMWn">
             <property role="TrG5h" value="EXECUTION_LOG" />
-            <node concept="JDp7Y" id="6ojrriHiZ05" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$jt" role="1fdBNg">
               <property role="JDp7Z" value="TXT" />
               <property role="JDpo1" value="Plain text files." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ06" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$ju" role="1fdMWn">
             <property role="TrG5h" value="ANNOTATED_VCF" />
-            <node concept="JDp7Y" id="6ojrriHiZ07" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$jv" role="1fdBNg">
               <property role="JDp7Z" value="VCF" />
               <property role="JDpo1" value="Variant Calling Format." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ08" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$jw" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ09" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$jx" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
-        <node concept="TVWd5" id="6ojrriHiZ0a" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$jy" role="TSDHD">
           <property role="TrG5h" value="Only non synonymous" />
           <property role="TPGZf" value="ONLY_NON_SYNONYMOUS" />
           <property role="TPKv7" value="Report only non synonymous variations. When this option is checked, variations that do not&#10;                change the protein sequence are not reported.&#10;            " />
@@ -5971,881 +5958,881 @@
           <property role="T_gTM" value="false" />
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiZ0b" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$jz" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="BWA_ALIGN_TASK_NYOSH" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/BWA_ALIGN_TASK_NYOSH" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiZ0c" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$j$" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ0d" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$j_" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ0e" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$jA" role="3jXL5I">
           <property role="G5nAd" value="0.5.9.16.2" />
-          <ref role="3jXLav" node="6ojrriHiYGu" resolve="BWA_WITH_GOBY" />
+          <ref role="3jXLav" node="17OfmP$azZQ" resolve="BWA_WITH_GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ0f" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$jB" role="3jXL5I">
           <property role="G5nAd" value="20131006122446" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ0g" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$jC" role="3jXL5I">
           <property role="G5nAd" value="129.380" />
-          <ref role="3jXLav" node="6ojrriHiYJT" resolve="MPS" />
+          <ref role="3jXLav" node="17OfmP$a$3h" resolve="MPS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ0h" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ0i" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$jD" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$jE" role="1fdMWl">
             <property role="TrG5h" value="BWA_INDEX" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="100" />
-            <node concept="JDp7Y" id="6ojrriHiZ0j" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$jF" role="1fdBNg">
               <property role="JDp7Z" value="BWA_INDEX" />
               <property role="JDpo1" value="BWA index format" />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ0k" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$jG" role="1fdMWl">
             <property role="TrG5h" value="INPUT_READS" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="100" />
-            <node concept="JDp7Y" id="6ojrriHiZ0l" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$jH" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ0m" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$jI" role="1fdMWn">
             <property role="TrG5h" value="GOBY_ALIGNMENT" />
-            <node concept="JDp7Y" id="6ojrriHiZ0n" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$jJ" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ0o" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$jK" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ0p" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$jL" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiZ0q" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$jM" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="BWA_INDEX_TASK_NYOSH" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/BWA_INDEX_TASK_NYOSH" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiZ0r" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$jN" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ0s" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$jO" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ0t" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$jP" role="3jXL5I">
           <property role="G5nAd" value="0.5.9.16.2" />
-          <ref role="3jXLav" node="6ojrriHiYGu" resolve="BWA_WITH_GOBY" />
+          <ref role="3jXLav" node="17OfmP$azZQ" resolve="BWA_WITH_GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ0u" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$jQ" role="3jXL5I">
           <property role="G5nAd" value="129.380" />
-          <ref role="3jXLav" node="6ojrriHiYJT" resolve="MPS" />
+          <ref role="3jXLav" node="17OfmP$a$3h" resolve="MPS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ0v" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ0w" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$jR" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$jS" role="1fdMWl">
             <property role="TrG5h" value="FASTA" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="100" />
-            <node concept="JDp7Y" id="6ojrriHiZ0x" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$jT" role="1fdBNg">
               <property role="JDp7Z" value="FASTA" />
               <property role="JDpo1" value="fasta reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ0y" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$jU" role="1fdMWn">
             <property role="TrG5h" value="BWA_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiZ0z" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$jV" role="1fdBNg">
               <property role="JDp7Z" value="BWA_INDEX" />
               <property role="JDpo1" value="BWA index format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ0$" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$jW" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ0_" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$jX" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiZ0A" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$jY" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="CONVERT_TABLE" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/CONVERT_TABLE" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiZ0B" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$jZ" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ0C" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$k0" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ0D" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ0E" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$k1" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$k2" role="1fdMWl">
             <property role="TrG5h" value="INPUT_VCF" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiZ0F" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$k3" role="1fdBNg">
               <property role="JDp7Z" value="VCF" />
               <property role="JDpo1" value="Variant Calling Format." />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ0G" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$k4" role="1fdMWl">
             <property role="TrG5h" value="INPUT_TSV" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiZ0H" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$k5" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ0I" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$k6" role="1fdMWn">
             <property role="TrG5h" value="LUCENE_TABLE" />
-            <node concept="JDp7Y" id="6ojrriHiZ0J" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$k7" role="1fdBNg">
               <property role="JDp7Z" value="LUCENE_INDEX" />
               <property role="JDpo1" value="A directory containing a Lucene Index." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ0K" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$k8" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ0L" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$k9" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiZ0M" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$ka" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="GOBY_INDEX_TASK_NYOSH" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/GOBY_INDEX_TASK_NYOSH" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiZ0N" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kb" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ0O" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kc" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ0P" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kd" role="3jXL5I">
           <property role="G5nAd" value="20131006122446" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ0Q" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$ke" role="3jXL5I">
           <property role="G5nAd" value="129.380" />
-          <ref role="3jXLav" node="6ojrriHiYJT" resolve="MPS" />
+          <ref role="3jXLav" node="17OfmP$a$3h" resolve="MPS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ0R" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ0S" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$kf" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$kg" role="1fdMWl">
             <property role="TrG5h" value="FASTA" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="100" />
-            <node concept="JDp7Y" id="6ojrriHiZ0T" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kh" role="1fdBNg">
               <property role="JDp7Z" value="FASTA" />
               <property role="JDpo1" value="fasta reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ0U" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$ki" role="1fdMWn">
             <property role="TrG5h" value="GOBY_INDEX" />
-            <node concept="JDp7Y" id="6ojrriHiZ0V" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kj" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_INDEX" />
               <property role="JDpo1" value="Goby index format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ0W" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$kk" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ0X" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kl" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiZ0Y" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$km" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="GOBY_VARIANT_CALL_TASK_NYOSH" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/GOBY_VARIANT_CALL_TASK_NYOSH" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiZ0Z" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kn" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ10" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$ko" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ11" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kp" role="3jXL5I">
           <property role="G5nAd" value="20131006122450" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ12" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kq" role="3jXL5I">
           <property role="G5nAd" value="129.380" />
-          <ref role="3jXLav" node="6ojrriHiYJT" resolve="MPS" />
+          <ref role="3jXLav" node="17OfmP$a$3h" resolve="MPS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ13" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ14" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$kr" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$ks" role="1fdMWl">
             <property role="TrG5h" value="REFERENCE_INDEX" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="100" />
-            <node concept="JDp7Y" id="6ojrriHiZ15" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kt" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_INDEX" />
               <property role="JDpo1" value="Goby index format" />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ16" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$ku" role="1fdMWl">
             <property role="TrG5h" value="FATHER_ALIGNMENT" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="100" />
-            <node concept="JDp7Y" id="6ojrriHiZ17" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kv" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ18" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$kw" role="1fdMWl">
             <property role="TrG5h" value="MOTHER_ALIGNMENT" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="100" />
-            <node concept="JDp7Y" id="6ojrriHiZ19" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kx" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ1a" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$ky" role="1fdMWl">
             <property role="TrG5h" value="PATIENT_BLOOD_ALIGNMENT" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="100" />
-            <node concept="JDp7Y" id="6ojrriHiZ1b" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kz" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ1c" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$k$" role="1fdMWl">
             <property role="TrG5h" value="PATIENT_SKIN_ALIGNMENT" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="100" />
-            <node concept="JDp7Y" id="6ojrriHiZ1d" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$k_" role="1fdBNg">
               <property role="JDp7Z" value="GOBY_ALIGNMENT" />
               <property role="JDpo1" value="Goby alignment format" />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ1e" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$kA" role="1fdMWl">
             <property role="TrG5h" value="ALN_TABLE" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="100" />
-            <node concept="JDp7Y" id="6ojrriHiZ1f" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kB" role="1fdBNg">
               <property role="JDp7Z" value="PLAIN_TEXT" />
               <property role="JDpo1" value="File in plain text format." />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ1g" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$kC" role="1fdMWl">
             <property role="TrG5h" value="COVARIATE_TABLE" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="100" />
-            <node concept="JDp7Y" id="6ojrriHiZ1h" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kD" role="1fdBNg">
               <property role="JDp7Z" value="PLAIN_TEXT" />
               <property role="JDpo1" value="File in plain text format." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ1i" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$kE" role="1fdMWn">
             <property role="TrG5h" value="VCF_TABLE" />
-            <node concept="JDp7Y" id="6ojrriHiZ1j" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kF" role="1fdBNg">
               <property role="JDp7Z" value="VCF" />
               <property role="JDpo1" value="Variant Calling Format." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ1k" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$kG" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ1l" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kH" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiZ1m" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$kI" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="GOBYWEB_PLUGIN_TEST_RUNNER" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/GOBYWEB_PLUGIN_TEST_RUNNER" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiZ1n" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kJ" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ1o" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kK" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ1p" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kL" role="3jXL5I">
           <property role="G5nAd" value="3.0.5" />
-          <ref role="3jXLav" node="6ojrriHiYJF" resolve="MAVEN" />
+          <ref role="3jXLav" node="17OfmP$a$33" resolve="MAVEN" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ1q" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ1r" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$kM" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$kN" role="1fdMWl">
             <property role="TrG5h" value="TEST_CLASSES" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiZ1s" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kO" role="1fdBNg">
               <property role="JDp7Z" value="JAR" />
               <property role="JDpo1" value="A Java Archive." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ1t" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$kP" role="1fdMWn">
             <property role="TrG5h" value="REPORT" />
-            <node concept="JDp7Y" id="6ojrriHiZ1u" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kQ" role="1fdBNg">
               <property role="JDp7Z" value="TXT" />
               <property role="JDpo1" value="Plain text files." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ1v" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$kR" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ1w" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$kS" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiZ1x" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$kT" role="TSDHD">
           <property role="TrG5h" value="Test Names" />
           <property role="TPGZf" value="TEST_NAMES" />
           <property role="TPKv7" value="A comma separated list of the tests to execute. These tests must be in the TEST_CLASSES Jar.&#10;                   See http://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html#" />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="*" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiZ1y" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$kU" role="TSDHD">
           <property role="TrG5h" value="Copy back location" />
           <property role="TPGZf" value="COPY_BACK_LOCATION" />
           <property role="TPKv7" value="The location where the test results will be copied." />
           <property role="TQfiT" value="false" />
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiZ1z" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$kV" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="PROCESS_PAIRED_READS_TASK" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/PROCESS_PAIRED_READS_TASK" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiZ1$" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kW" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ1_" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kX" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ1A" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kY" role="3jXL5I">
           <property role="G5nAd" value="20140317155722" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ1B" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$kZ" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYK9" resolve="PROCESS_PAIRED_READS" />
+          <ref role="3jXLav" node="17OfmP$a$3x" resolve="PROCESS_PAIRED_READS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ1C" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$l0" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYGc" resolve="BASH_LIBRARY" />
+          <ref role="3jXLav" node="17OfmP$azZ$" resolve="BASH_LIBRARY" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ1D" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ1E" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$l1" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$l2" role="1fdMWl">
             <property role="TrG5h" value="UPLOADS_FILES" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiZ1F" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$l3" role="1fdBNg">
               <property role="JDp7Z" value="SUPPORTED_INPUT_READS" />
               <property role="JDpo1" value="All supported input read file formats." />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ1G" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$l4" role="1fdMWl">
             <property role="TrG5h" value="UPLOAD_MERGE_PLAN" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiZ1H" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$l5" role="1fdBNg">
               <property role="JDp7Z" value="GOBYWEB_MERGE_PLAN_FILE" />
               <property role="JDpo1" value="The read merge plan file. Used to be called the details.tsv file." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ1I" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$l6" role="1fdMWn">
             <property role="TrG5h" value="COMPACT_READ_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiZ1J" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$l7" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ1K" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$l8" role="1fdMWn">
             <property role="TrG5h" value="READ_QUALITY_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiZ1L" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$l9" role="1fdBNg">
               <property role="JDp7Z" value="READ_QUALITY_STATS" />
               <property role="JDpo1" value="TSV file with read quality score statistics. Generated with the Goby reads-stats mode." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ1M" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$la" role="1fdMWn">
             <property role="TrG5h" value="WEIGHT_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiZ1N" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$lb" role="1fdBNg">
               <property role="JDp7Z" value="WEIGHT_FILES" />
               <property role="JDpo1" value="Goby Weight file format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ1O" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$lc" role="1fdMWn">
             <property role="TrG5h" value="OUTPUT_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiZ1P" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ld" role="1fdBNg">
               <property role="JDp7Z" value="READS_STATS_PROPERTIES_FILE" />
               <property role="JDpo1" value="Statistics about a reads file, in Java properties format. Contains file size information and other meta-data. " />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ1Q" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$le" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ1R" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$lf" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiZ1S" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$lg" role="TSDHD">
           <property role="TrG5h" value="Sample Name." />
           <property role="TPGZf" value="SAMPLE_NAME" />
           <property role="TPKv7" value="The name of the sample that should be generated from this upload, or a sample name prefix that will be&#10;                used to generate multiple sample names.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="MySamples" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiZ1T" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$lh" role="TSDHD">
           <property role="TrG5h" value="Tag for the new sample." />
           <property role="TPGZf" value="TAG" />
           <property role="TPKv7" value="The tag will be associated with the sample.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiZ1U" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$li" role="TSDHD">
           <property role="TrG5h" value="Color-space." />
           <property role="TPGZf" value="READS_COLOR_SPACE" />
           <property role="TPKv7" value="Indicates if the reads are color-space (TRUE) or not (FALSE).&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="FALSE" />
         </node>
-        <node concept="TVLar" id="6ojrriHiZ1V" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$lj" role="TSDHD">
           <property role="TrG5h" value="Sequencing Platform." />
           <property role="TPGZf" value="READS_PLATFORM" />
           <property role="TPKv7" value="The sequencing platform that was used to sequence these reads..&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="Illumina" />
-          <node concept="TPwC6" id="6ojrriHiZ1W" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$lk" role="TPwC2">
             <property role="TrG5h" value="Gene/Exon/Other" />
             <property role="TPwC7" value="Illumina" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiZ1X" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$ll" role="TPwC2">
             <property role="TrG5h" value="Helicos" />
             <property role="TPwC7" value="Helicos" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiZ1Y" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$lm" role="TPwC2">
             <property role="TrG5h" value="Roche 454" />
             <property role="TPwC7" value="Roche454" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiZ1Z" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$ln" role="TPwC2">
             <property role="TrG5h" value="Solid" />
             <property role="TPwC7" value="SOLID" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiZ20" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$lo" role="TSDHD">
           <property role="TrG5h" value="Quality Encoding." />
           <property role="TPGZf" value="QUALITY_ENCODING" />
           <property role="TPKv7" value="The quality encoding for the uploaded reads." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="Sanger" />
-          <node concept="TPwC6" id="6ojrriHiZ21" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$lp" role="TPwC2">
             <property role="TrG5h" value="Phred/Sanger." />
             <property role="TPwC7" value="Sanger" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiZ22" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$lq" role="TPwC2">
             <property role="TrG5h" value="Illumina pipeline 1.3+" />
             <property role="TPwC7" value="Illumina" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiZ23" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$lr" role="TPwC2">
             <property role="TrG5h" value="Solexa" />
             <property role="TPwC7" value="Solexa" />
           </node>
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiZ24" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$ls" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="PROCESS_READS_TASK" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/PROCESS_READS_TASK" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiZ25" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$lt" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ26" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$lu" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ27" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$lv" role="3jXL5I">
           <property role="G5nAd" value="20140317155722" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ28" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$lw" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYKc" resolve="PROCESS_READS" />
+          <ref role="3jXLav" node="17OfmP$a$3$" resolve="PROCESS_READS" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ29" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$lx" role="3jXL5I">
           <property role="G5nAd" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYGc" resolve="BASH_LIBRARY" />
+          <ref role="3jXLav" node="17OfmP$azZ$" resolve="BASH_LIBRARY" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ2a" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ2b" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$ly" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$lz" role="1fdMWl">
             <property role="TrG5h" value="UPLOADS_FILES" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiZ2c" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$l$" role="1fdBNg">
               <property role="JDp7Z" value="SUPPORTED_INPUT_READS" />
               <property role="JDpo1" value="All supported input read file formats." />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ2d" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$l_" role="1fdMWl">
             <property role="TrG5h" value="UPLOAD_MERGE_PLAN" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiZ2e" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$lA" role="1fdBNg">
               <property role="JDp7Z" value="GOBYWEB_MERGE_PLAN_FILE" />
               <property role="JDpo1" value="The read merge plan file. Used to be called the details.tsv file." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ2f" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$lB" role="1fdMWn">
             <property role="TrG5h" value="COMPACT_READ_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiZ2g" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$lC" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ2h" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$lD" role="1fdMWn">
             <property role="TrG5h" value="READ_QUALITY_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiZ2i" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$lE" role="1fdBNg">
               <property role="JDp7Z" value="READ_QUALITY_STATS" />
               <property role="JDpo1" value="TSV file with read quality score statistics. Generated with the Goby reads-stats mode." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ2j" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$lF" role="1fdMWn">
             <property role="TrG5h" value="WEIGHT_FILES" />
-            <node concept="JDp7Y" id="6ojrriHiZ2k" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$lG" role="1fdBNg">
               <property role="JDp7Z" value="WEIGHT_FILES" />
               <property role="JDpo1" value="Goby Weight file format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ2l" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$lH" role="1fdMWn">
             <property role="TrG5h" value="OUTPUT_STATS" />
-            <node concept="JDp7Y" id="6ojrriHiZ2m" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$lI" role="1fdBNg">
               <property role="JDp7Z" value="READS_STATS_PROPERTIES_FILE" />
               <property role="JDpo1" value="Statistics about a reads file, in Java properties format. Contains file size information and other meta-data. " />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ2n" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$lJ" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ2o" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$lK" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiZ2p" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$lL" role="TSDHD">
           <property role="TrG5h" value="Sample Name." />
           <property role="TPGZf" value="SAMPLE_NAME" />
           <property role="TPKv7" value="The name of the sample that should be generated from this upload, or a sample name prefix that will be&#10;                used to generate multiple sample names.&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="MySamples" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiZ2q" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$lM" role="TSDHD">
           <property role="TrG5h" value="Tag for the new sample." />
           <property role="TPGZf" value="TAG" />
           <property role="TPKv7" value="The tag will be associated with the sample.&#10;            " />
           <property role="TQfiT" value="true" />
           <property role="T_gTM" value="FAKETAG" />
         </node>
-        <node concept="TVWd5" id="6ojrriHiZ2r" role="TSDHD">
+        <node concept="TVWd5" id="17OfmP$a$lN" role="TSDHD">
           <property role="TrG5h" value="Color-space." />
           <property role="TPGZf" value="READS_COLOR_SPACE" />
           <property role="TPKv7" value="Indicates if the reads are color-space (TRUE) or not (FALSE).&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="FALSE" />
         </node>
-        <node concept="TVLar" id="6ojrriHiZ2s" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$lO" role="TSDHD">
           <property role="TrG5h" value="Sequencing Platform." />
           <property role="TPGZf" value="READS_PLATFORM" />
           <property role="TPKv7" value="The sequencing platform that was used to sequence these reads..&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="Illumina" />
-          <node concept="TPwC6" id="6ojrriHiZ2t" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$lP" role="TPwC2">
             <property role="TrG5h" value="Gene/Exon/Other" />
             <property role="TPwC7" value="Illumina" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiZ2u" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$lQ" role="TPwC2">
             <property role="TrG5h" value="Helicos" />
             <property role="TPwC7" value="Helicos" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiZ2v" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$lR" role="TPwC2">
             <property role="TrG5h" value="Roche 454" />
             <property role="TPwC7" value="Roche454" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiZ2w" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$lS" role="TPwC2">
             <property role="TrG5h" value="Solid" />
             <property role="TPwC7" value="SOLID" />
           </node>
         </node>
-        <node concept="TVLar" id="6ojrriHiZ2x" role="TSDHD">
+        <node concept="TVLar" id="17OfmP$a$lT" role="TSDHD">
           <property role="TrG5h" value="Quality Encoding." />
           <property role="TPGZf" value="QUALITY_ENCODING" />
           <property role="TPKv7" value="The quality encoding for the uploaded reads." />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="Sanger" />
-          <node concept="TPwC6" id="6ojrriHiZ2y" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$lU" role="TPwC2">
             <property role="TrG5h" value="Phred/Sanger." />
             <property role="TPwC7" value="Sanger" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiZ2z" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$lV" role="TPwC2">
             <property role="TrG5h" value="Illumina pipeline 1.3+" />
             <property role="TPwC7" value="Illumina" />
           </node>
-          <node concept="TPwC6" id="6ojrriHiZ2$" role="TPwC2">
+          <node concept="TPwC6" id="17OfmP$a$lW" role="TPwC2">
             <property role="TrG5h" value="Solexa" />
             <property role="TPwC7" value="Solexa" />
           </node>
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiZ2_" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$lX" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="SAMPLE_TASK_NYOSH" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/SAMPLE_TASK_NYOSH" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiZ2A" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$lY" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ2B" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$lZ" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ2C" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$m0" role="3jXL5I">
           <property role="G5nAd" value="1.1" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ2D" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$m1" role="3jXL5I">
           <property role="G5nAd" value="129.350" />
-          <ref role="3jXLav" node="6ojrriHiYJT" resolve="MPS" />
+          <ref role="3jXLav" node="17OfmP$a$3h" resolve="MPS" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ2E" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ2F" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$m2" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$m3" role="1fdMWl">
             <property role="TrG5h" value="INPUT_READS" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="10" />
-            <node concept="JDp7Y" id="6ojrriHiZ2G" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$m4" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ2H" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$m5" role="1fdMWl">
             <property role="TrG5h" value="TEXT" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="10" />
-            <node concept="JDp7Y" id="6ojrriHiZ2I" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$m6" role="1fdBNg">
               <property role="JDp7Z" value="PLAIN_TEXT" />
               <property role="JDpo1" value="File in plain text format." />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ2J" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$m7" role="1fdMWl">
             <property role="TrG5h" value="IMAGE" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiZ2K" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$m8" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ2L" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$m9" role="1fdMWn">
             <property role="TrG5h" value="STATS" />
-            <node concept="JDp7Y" id="6ojrriHiZ2M" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ma" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ2N" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$mb" role="1fdMWn">
             <property role="TrG5h" value="FOO" />
-            <node concept="JDp7Y" id="6ojrriHiZ2O" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$mc" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ2P" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$md" role="1fdMWn">
             <property role="TrG5h" value="VCF" />
-            <node concept="JDp7Y" id="6ojrriHiZ2Q" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$me" role="1fdBNg">
               <property role="JDp7Z" value="VCF" />
               <property role="JDpo1" value="Variant Calling Format." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ2R" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$mf" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ2S" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$mg" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiZ2T" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$mh" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="TARBALLER" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/TARBALLER" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiZ2U" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$mi" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ2V" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$mj" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ2W" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ2X" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$mk" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$ml" role="1fdMWl">
             <property role="TrG5h" value="TEXT" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiZ2Y" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$mm" role="1fdBNg">
               <property role="JDp7Z" value="TSV" />
               <property role="JDpo1" value="A tab-separated values file is a simple text format for a database table.&#10;        Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character." />
             </node>
           </node>
-          <node concept="1fdBNn" id="6ojrriHiZ2Z" role="1fdMWl">
+          <node concept="1fdBNn" id="17OfmP$a$mn" role="1fdMWl">
             <property role="TrG5h" value="IMAGE" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="1" />
-            <node concept="JDp7Y" id="6ojrriHiZ30" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$mo" role="1fdBNg">
               <property role="JDp7Z" value="PNG" />
               <property role="JDpo1" value="Portable Network Graphics" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ31" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$mp" role="1fdMWn">
             <property role="TrG5h" value="STATS" />
-            <node concept="JDp7Y" id="6ojrriHiZ32" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$mq" role="1fdBNg">
               <property role="JDp7Z" value="TAR_GZ" />
               <property role="JDpo1" value="TAR GZ Compressed Archive" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ33" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$mr" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ34" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$ms" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiZ35" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$mt" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="TEST_GOBY_JAVA_R_INTERFACE" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/TEST_GOBY_JAVA_R_INTERFACE" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiZ36" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$mu" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ37" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$mv" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ38" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$mw" role="3jXL5I">
           <property role="G5nAd" value="20140317155722" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ39" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$mx" role="3jXL5I">
           <property role="G5nAd" value="0.9.6.1" />
-          <ref role="3jXLav" node="6ojrriHiYKm" resolve="RJAVA" />
+          <ref role="3jXLav" node="17OfmP$a$3I" resolve="RJAVA" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ3a" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ3b" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$my" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$mz" role="1fdMWl">
             <property role="TrG5h" value="DUMMY" />
             <property role="jfZBm" value="0" />
             <property role="jfZAk" value="0" />
-            <node concept="JDp7Y" id="6ojrriHiZ3c" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$m$" role="1fdBNg">
               <property role="JDp7Z" value="SUPPORTED_INPUT_READS" />
               <property role="JDpo1" value="All supported input read file formats." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ3d" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$m_" role="1fdMWn">
             <property role="TrG5h" value="EXECUTION_LOG" />
-            <node concept="JDp7Y" id="6ojrriHiZ3e" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$mA" role="1fdBNg">
               <property role="JDp7Z" value="TXT" />
               <property role="JDpo1" value="Plain text files." />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ3f" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$mB" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ3g" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$mC" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
       </node>
-      <node concept="1f4ISU" id="6ojrriHiZ3h" role="1f5Fuw">
+      <node concept="1f4ISU" id="17OfmP$a$mD" role="1f5Fuw">
         <property role="1f4ISL" value="1.0" />
         <property role="TrG5h" value="TRIM_HALOPLEX_READS" />
         <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/tasks/TRIM_HALOPLEX_READS" />
         <property role="TNbOb" value="false" />
-        <node concept="3jXLau" id="6ojrriHiZ3i" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$mE" role="3jXL5I">
           <property role="G5nAR" value="1.0" />
-          <ref role="3jXLav" node="6ojrriHiYJK" resolve="MERCURY" />
+          <ref role="3jXLav" node="17OfmP$a$38" resolve="MERCURY" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ3j" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$mF" role="3jXL5I">
           <property role="G5nAR" value="2.6" />
-          <ref role="3jXLav" node="6ojrriHiYIu" resolve="GOBYWEB_SERVER_SIDE" />
+          <ref role="3jXLav" node="17OfmP$a$1Q" resolve="GOBYWEB_SERVER_SIDE" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ3k" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$mG" role="3jXL5I">
           <property role="G5nAd" value="0.32" />
-          <ref role="3jXLav" node="6ojrriHiYKO" resolve="TRIMMOMATIC" />
+          <ref role="3jXLav" node="17OfmP$a$4c" resolve="TRIMMOMATIC" />
         </node>
-        <node concept="3jXLau" id="6ojrriHiZ3l" role="3jXL5I">
+        <node concept="3jXLau" id="17OfmP$a$mH" role="3jXL5I">
           <property role="G5nAd" value="20131006122446" />
-          <ref role="3jXLav" node="6ojrriHiYIe" resolve="GOBY" />
+          <ref role="3jXLav" node="17OfmP$a$1A" resolve="GOBY" />
         </node>
-        <node concept="1fdMZp" id="6ojrriHiZ3m" role="1fdUlw">
-          <node concept="1fdBNn" id="6ojrriHiZ3n" role="1fdMWl">
+        <node concept="1fdMZp" id="17OfmP$a$mI" role="1fdUlw">
+          <node concept="1fdBNn" id="17OfmP$a$mJ" role="1fdMWl">
             <property role="TrG5h" value="Input Reads" />
             <property role="jfZBm" value="1" />
             <property role="jfZAk" value="2147483647" />
-            <node concept="JDp7Y" id="6ojrriHiZ3o" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$mK" role="1fdBNg">
               <property role="JDp7Z" value="FASTQ_GZ" />
               <property role="JDpo1" value="Fastq format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ3p" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$mL" role="1fdMWn">
             <property role="TrG5h" value="COMPACT_READS" />
-            <node concept="JDp7Y" id="6ojrriHiZ3q" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$mM" role="1fdBNg">
               <property role="JDp7Z" value="COMPACT_READS" />
               <property role="JDpo1" value="compact reads format" />
             </node>
           </node>
-          <node concept="1fdBNm" id="6ojrriHiZ3r" role="1fdMWn">
+          <node concept="1fdBNm" id="17OfmP$a$mN" role="1fdMWn">
             <property role="TrG5h" value="JOB_METADATA" />
-            <node concept="JDp7Y" id="6ojrriHiZ3s" role="1fdBNg">
+            <node concept="JDp7Y" id="17OfmP$a$mO" role="1fdBNg">
               <property role="JDp7Z" value="JOB_METADATA" />
               <property role="JDpo1" value="Metadata associated to a job executed on the cluster." />
             </node>
           </node>
         </node>
-        <node concept="TPSWD" id="6ojrriHiZ3t" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$mP" role="TSDHD">
           <property role="TrG5h" value="Indicator for first read in pair" />
           <property role="TPGZf" value="PAIR_INDICATOR_1" />
           <property role="TPKv7" value="The part of the filename that indicates that the file contains first reads in pair (default: _R1).&#10;            " />
           <property role="TQfiT" value="false" />
           <property role="T_gTM" value="_R1" />
         </node>
-        <node concept="TPSWD" id="6ojrriHiZ3u" role="TSDHD">
+        <node concept="TPSWD" id="17OfmP$a$mQ" role="TSDHD">
           <property role="TrG5h" value="Indicator for second read in pair" />
           <property role="TPGZf" value="PAIR_INDICATOR_2" />
           <property role="TPKv7" value="The part of the filename that indicates that the file contains first reads in pair (default: _R2).&#10;            " />
@@ -6867,122 +6854,13 @@
   <node concept="1QJbas" id="6ojrriHiYFb">
     <property role="TrG5h" value="FirstBashNYoSh" />
     <node concept="NgwLd" id="6ojrriHiYFQ" role="1QJbqZ">
+      <node concept="3xUnCN" id="17OfmP$niRk" role="NgwMD">
+        <ref role="1PROVt" node="17OfmP$a_6v" resolve="GOBY" />
+      </node>
       <node concept="1XFuE8" id="6ojrriHiYFR" role="23NxHr" />
       <node concept="19SGf9" id="6ojrriHiYFT" role="3Y$PkS">
         <node concept="19SUe$" id="6ojrriHiYFU" role="19SJt6">
           <property role="19SUeA" value="echo &quot;Hello from the script&quot;" />
-        </node>
-      </node>
-      <node concept="3xUnCN" id="6ojrriHqpq_" role="NgwMD">
-        <ref role="3jXLav" node="6ojrriHiYGv" resolve="BWA_WITH_GOBY_ARTIFACT" />
-        <node concept="3xUnCN" id="17OfmPzTUFk" role="3bnoS5">
-          <property role="3xVD5K" value="SAMTOOLS" />
-          <ref role="3jXLav" node="6ojrriHiYKy" resolve="SAMTOOLS" />
-        </node>
-        <node concept="3xUnCN" id="17OfmPzTUFj" role="3bnoS5">
-          <property role="3xVD5K" value="BASH_LIBRARY" />
-          <ref role="3jXLav" node="6ojrriHiYGc" resolve="BASH_LIBRARY" />
-        </node>
-        <node concept="3xUnCN" id="17OfmPzTUFi" role="3bnoS5">
-          <property role="3xVD5K" value="FETCH_URL" />
-          <ref role="3jXLav" node="6ojrriHiYHX" resolve="FETCH_URL" />
-        </node>
-        <node concept="3xUnCN" id="17OfmPzTUFb" role="3bnoS5">
-          <property role="3xVD5K" value="ENSEMBL_GENOMES" />
-          <ref role="3jXLav" node="6ojrriHiYHA" resolve="ENSEMBL_GENOMES" />
-          <node concept="2vnsz3" id="17OfmPzTUFc" role="2vXgbl">
-            <property role="2vk9_M" value="ENSEMBL_GENOMES" />
-            <property role="2vk9_N" value="TOPLEVEL" />
-            <property role="TrG5h" value="organism" />
-            <node concept="2vraTB" id="17OfmPzTUFd" role="2vnsw6">
-              <property role="TrG5h" value="organism" />
-              <ref role="2vraA5" node="17OfmPzTUEX" resolve="organism" />
-            </node>
-          </node>
-          <node concept="2vnsz3" id="17OfmPzTUFe" role="2vXgbl">
-            <property role="2vk9_M" value="ENSEMBL_GENOMES" />
-            <property role="2vk9_N" value="TOPLEVEL" />
-            <property role="TrG5h" value="reference-build" />
-            <node concept="2vraTB" id="17OfmPzTUFf" role="2vnsw6">
-              <property role="TrG5h" value="reference-build" />
-              <ref role="2vraA5" node="17OfmPzTUEZ" resolve="reference-build" />
-            </node>
-          </node>
-          <node concept="2vnsz3" id="17OfmPzTUFg" role="2vXgbl">
-            <property role="2vk9_M" value="ENSEMBL_GENOMES" />
-            <property role="2vk9_N" value="TOPLEVEL" />
-            <property role="TrG5h" value="ensembl-version-number" />
-            <node concept="2vraTB" id="17OfmPzTUFh" role="2vnsw6">
-              <property role="TrG5h" value="ensembl-version-number" />
-              <ref role="2vraA5" node="17OfmPzTUF1" resolve="ensembl-version-number" />
-            </node>
-          </node>
-        </node>
-        <node concept="3xUnCN" id="17OfmPzTUF3" role="3bnoS5">
-          <property role="3xVD5K" value="PROTOBUF_CPP" />
-          <ref role="3jXLav" node="6ojrriHiYKf" resolve="PROTOBUF_CPP" />
-        </node>
-        <node concept="2vnsz3" id="17OfmPzTUEW" role="2vXgbl">
-          <property role="2vk9_M" value="BWA_WITH_GOBY_ARTIFACT" />
-          <property role="2vk9_N" value="INDEX" />
-          <property role="TrG5h" value="organism" />
-          <node concept="2t8VsU" id="17OfmPzTUEX" role="2vnsw6">
-            <property role="2t8Vu2" value="HOMO_SAPIENS" />
-            <property role="TrG5h" value="organism" />
-          </node>
-        </node>
-        <node concept="2vnsz3" id="17OfmPzTUEY" role="2vXgbl">
-          <property role="2vk9_M" value="BWA_WITH_GOBY_ARTIFACT" />
-          <property role="2vk9_N" value="INDEX" />
-          <property role="TrG5h" value="reference-build" />
-          <node concept="2t8VsU" id="17OfmPzTUEZ" role="2vnsw6">
-            <property role="2t8Vu2" value="1000GENOMES" />
-            <property role="TrG5h" value="reference-build" />
-          </node>
-        </node>
-        <node concept="2vnsz3" id="17OfmPzTUF0" role="2vXgbl">
-          <property role="2vk9_M" value="BWA_WITH_GOBY_ARTIFACT" />
-          <property role="2vk9_N" value="INDEX" />
-          <property role="TrG5h" value="ensembl-version-number" />
-          <node concept="2t8VsU" id="17OfmPzTUF1" role="2vnsw6">
-            <property role="2t8Vu2" value="37" />
-            <property role="TrG5h" value="ensembl-version-number" />
-          </node>
-        </node>
-        <node concept="3xUnCN" id="17OfmPzTUF2" role="3bnoS5">
-          <property role="3xVD5K" value="GOBY_CPP_API" />
-          <ref role="3jXLav" node="6ojrriHiYIg" resolve="GOBY_CPP_API" />
-        </node>
-        <node concept="3xUnCN" id="17OfmPzTUF4" role="3bnoS5">
-          <property role="3xVD5K" value="FAI_INDEXED_GENOMES" />
-          <ref role="3jXLav" node="6ojrriHiYHO" resolve="FAI_INDEXED_GENOMES" />
-          <node concept="2vnsz3" id="17OfmPzTUF5" role="2vXgbl">
-            <property role="2vk9_M" value="FAI_INDEXED_GENOMES" />
-            <property role="2vk9_N" value="SAMTOOLS_FAI_INDEX" />
-            <property role="TrG5h" value="organism" />
-            <node concept="2vraTB" id="17OfmPzTUF6" role="2vnsw6">
-              <property role="TrG5h" value="organism" />
-              <ref role="2vraA5" node="17OfmPzTUEX" resolve="organism" />
-            </node>
-          </node>
-          <node concept="2vnsz3" id="17OfmPzTUF7" role="2vXgbl">
-            <property role="2vk9_M" value="FAI_INDEXED_GENOMES" />
-            <property role="2vk9_N" value="SAMTOOLS_FAI_INDEX" />
-            <property role="TrG5h" value="reference-build" />
-            <node concept="2vraTB" id="17OfmPzTUF8" role="2vnsw6">
-              <property role="TrG5h" value="reference-build" />
-              <ref role="2vraA5" node="17OfmPzTUEZ" resolve="reference-build" />
-            </node>
-          </node>
-          <node concept="2vnsz3" id="17OfmPzTUF9" role="2vXgbl">
-            <property role="2vk9_M" value="FAI_INDEXED_GENOMES" />
-            <property role="2vk9_N" value="SAMTOOLS_FAI_INDEX" />
-            <property role="TrG5h" value="ensembl-version-number" />
-            <node concept="2vraTB" id="17OfmPzTUFa" role="2vnsw6">
-              <property role="TrG5h" value="ensembl-version-number" />
-              <ref role="2vraA5" node="17OfmPzTUF1" resolve="ensembl-version-number" />
-            </node>
-          </node>
         </node>
       </node>
     </node>
@@ -7008,471 +6886,471 @@
     </node>
   </node>
   <node concept="1M6PLe" id="17OfmPzXdqJ">
-    <node concept="1M6RSl" id="17OfmP$2VCa" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_5B" role="1M6PKF">
       <property role="TrG5h" value="ANNOTATE_VCF" />
-      <node concept="1M6RvD" id="17OfmP$2VCb" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5C" role="1M2wA0">
         <property role="TrG5h" value="1.2.1" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCc" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_5D" role="1M6PKF">
       <property role="TrG5h" value="BASH_LIBRARY" />
-      <node concept="1M6RvD" id="17OfmP$2VCd" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5E" role="1M2wA0">
         <property role="TrG5h" value="1.0" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCe" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_5F" role="1M6PKF">
       <property role="TrG5h" value="BEDTOOLS" />
-      <node concept="1M6RvD" id="17OfmP$2VCf" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5G" role="1M2wA0">
         <property role="TrG5h" value="2.17.0" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCg" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_5H" role="1M6PKF">
       <property role="TrG5h" value="BISMARK_ARTIFACT" />
-      <node concept="1M6RvD" id="17OfmP$2VCh" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5I" role="1M2wA0">
         <property role="TrG5h" value="0.7.12.2" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCi" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_5J" role="1M6PKF">
       <property role="TrG5h" value="BISMARK" />
-      <node concept="1M6RvD" id="17OfmP$2VCj" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5K" role="1M2wA0">
         <property role="TrG5h" value="0.7.4" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCk" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_5L" role="1M6PKF">
       <property role="TrG5h" value="BOWTIE2_ARTIFACT" />
-      <node concept="1M6RvD" id="17OfmP$2VCl" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5M" role="1M2wA0">
         <property role="TrG5h" value="2.1.0" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCm" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_5N" role="1M6PKF">
       <property role="TrG5h" value="BOWTIE2" />
-      <node concept="1M6RvD" id="17OfmP$2VCn" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5O" role="1M2wA0">
         <property role="TrG5h" value="2.0.0.5" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCo" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_5P" role="1M6PKF">
       <property role="TrG5h" value="BWA_WITH_GOBY" />
-      <node concept="1M6RvD" id="17OfmP$2VCp" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5Q" role="1M2wA0">
         <property role="TrG5h" value="0.5.9.16" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VCq" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5R" role="1M2wA0">
         <property role="TrG5h" value="0.5.9.16.1" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VCr" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5S" role="1M2wA0">
         <property role="TrG5h" value="0.5.9.16.2" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCs" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_5T" role="1M6PKF">
       <property role="TrG5h" value="BWA_WITH_GOBY_ARTIFACT" />
-      <node concept="1M6RvD" id="17OfmP$2VCt" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5U" role="1M2wA0">
         <property role="TrG5h" value="0.5.9.16.7" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCu" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_5V" role="1M6PKF">
       <property role="TrG5h" value="DESEQ" />
-      <node concept="1M6RvD" id="17OfmP$2VCv" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5W" role="1M2wA0">
         <property role="TrG5h" value="1.8.3.2" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCw" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_5X" role="1M6PKF">
       <property role="TrG5h" value="DESEQ_SCRIPT" />
-      <node concept="1M6RvD" id="17OfmP$2VCx" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_5Y" role="1M2wA0">
         <property role="TrG5h" value="2012.07.25" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCy" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_5Z" role="1M6PKF">
       <property role="TrG5h" value="EDGER" />
-      <node concept="1M6RvD" id="17OfmP$2VCz" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_60" role="1M2wA0">
         <property role="TrG5h" value="2.6.12.2" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VC$" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_61" role="1M2wA0">
         <property role="TrG5h" value="3.6.8" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VC_" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_62" role="1M2wA0">
         <property role="TrG5h" value="3.6.8.1" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VCA" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_63" role="1M2wA0">
         <property role="TrG5h" value="3.8.4.1" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCB" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_64" role="1M6PKF">
       <property role="TrG5h" value="EDGE_R_SCRIPT" />
-      <node concept="1M6RvD" id="17OfmP$2VCC" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_65" role="1M2wA0">
         <property role="TrG5h" value="2013.05.17" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VCD" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_66" role="1M2wA0">
         <property role="TrG5h" value="2014.08.27" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VCE" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_67" role="1M2wA0">
         <property role="TrG5h" value="2014.08.27" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCF" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_68" role="1M6PKF">
       <property role="TrG5h" value="ENSEMBL_ANNOTATIONS" />
-      <node concept="1M6RvD" id="17OfmP$2VCG" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_69" role="1M2wA0">
         <property role="TrG5h" value="1.1.2" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VCH" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6a" role="1M2wA0">
         <property role="TrG5h" value="2.1.4" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCI" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6b" role="1M6PKF">
       <property role="TrG5h" value="ENSEMBL_API" />
-      <node concept="1M6RvD" id="17OfmP$2VCJ" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6c" role="1M2wA0">
         <property role="TrG5h" value="73" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VCK" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6d" role="1M2wA0">
         <property role="TrG5h" value="75.2" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VCL" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6e" role="1M2wA0">
         <property role="TrG5h" value="75.7.7" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCM" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6f" role="1M6PKF">
       <property role="TrG5h" value="ENSEMBL_GENOMES" />
-      <node concept="1M6RvD" id="17OfmP$2VCN" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6g" role="1M2wA0">
         <property role="TrG5h" value="1.3" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCO" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6h" role="1M6PKF">
       <property role="TrG5h" value="ENSEMBL_GTF" />
-      <node concept="1M6RvD" id="17OfmP$2VCP" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6i" role="1M2wA0">
         <property role="TrG5h" value="1.0" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCQ" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6j" role="1M6PKF">
       <property role="TrG5h" value="EXTRACT_NONMATCHED" />
-      <node concept="1M6RvD" id="17OfmP$2VCR" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6k" role="1M2wA0">
         <property role="TrG5h" value="2012.06.25" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCS" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6l" role="1M6PKF">
       <property role="TrG5h" value="FAI_INDEXED_GENOMES" />
-      <node concept="1M6RvD" id="17OfmP$2VCT" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6m" role="1M2wA0">
         <property role="TrG5h" value="1.1.1" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCU" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6n" role="1M6PKF">
       <property role="TrG5h" value="FETCH_URL" />
-      <node concept="1M6RvD" id="17OfmP$2VCV" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6o" role="1M2wA0">
         <property role="TrG5h" value="1.1" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VCW" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6p" role="1M2wA0">
         <property role="TrG5h" value="1.1" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VCX" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6q" role="1M2wA0">
         <property role="TrG5h" value="1.2" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VCY" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6r" role="1M6PKF">
       <property role="TrG5h" value="GENOME_ANNOTATIONS" />
-      <node concept="1M6RvD" id="17OfmP$2VCZ" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6s" role="1M2wA0">
         <property role="TrG5h" value="1.0" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VD0" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6t" role="1M6PKF">
       <property role="TrG5h" value="GNU_PARALLEL" />
-      <node concept="1M6RvD" id="17OfmP$2VD1" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6u" role="1M2wA0">
         <property role="TrG5h" value="20150522" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VD2" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6v" role="1M6PKF">
       <property role="TrG5h" value="GOBY" />
-      <node concept="1M6RvD" id="17OfmP$2VD3" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6w" role="1M2wA0">
         <property role="TrG5h" value="20120216154520" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VD4" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6x" role="1M2wA0">
         <property role="TrG5h" value="20130702142133" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VD5" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6y" role="1M2wA0">
         <property role="TrG5h" value="20130717113540" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VD6" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6z" role="1M2wA0">
         <property role="TrG5h" value="20131220161707.1" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VD7" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6$" role="1M2wA0">
         <property role="TrG5h" value="20131006122450" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VD8" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6_" role="1M2wA0">
         <property role="TrG5h" value="20131006122446" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VD9" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6A" role="1M2wA0">
         <property role="TrG5h" value="20140828152218" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VDa" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6B" role="1M2wA0">
         <property role="TrG5h" value="20150822175223" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VDb" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6C" role="1M2wA0">
         <property role="TrG5h" value="20130413162635" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDc" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6D" role="1M6PKF">
       <property role="TrG5h" value="GOBY_CPP_API" />
-      <node concept="1M6RvD" id="17OfmP$2VDd" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6E" role="1M2wA0">
         <property role="TrG5h" value="2.1.2.2" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDe" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6F" role="1M6PKF">
       <property role="TrG5h" value="GOBY_INDEXED_GENOMES" />
-      <node concept="1M6RvD" id="17OfmP$2VDf" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6G" role="1M2wA0">
         <property role="TrG5h" value="1.0" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDg" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6H" role="1M6PKF">
       <property role="TrG5h" value="GOBYWEB_SERVER_SIDE" />
-      <node concept="1M6RvD" id="17OfmP$2VDh" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6I" role="1M2wA0">
         <property role="TrG5h" value="2.5.2" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VDi" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6J" role="1M2wA0">
         <property role="TrG5h" value="2.6" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDj" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6K" role="1M6PKF">
       <property role="TrG5h" value="GROOVY" />
-      <node concept="1M6RvD" id="17OfmP$2VDk" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6L" role="1M2wA0">
         <property role="TrG5h" value="2.0.6" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDl" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6M" role="1M6PKF">
       <property role="TrG5h" value="GSNAP_WITH_GOBY" />
-      <node concept="1M6RvD" id="17OfmP$2VDm" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6N" role="1M2wA0">
         <property role="TrG5h" value="2011.07.07" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VDn" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6O" role="1M2wA0">
         <property role="TrG5h" value="2011.10.16" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VDo" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6P" role="1M2wA0">
         <property role="TrG5h" value="2011.11.17" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VDp" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6Q" role="1M2wA0">
         <property role="TrG5h" value="2012.05.23" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDq" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6R" role="1M6PKF">
       <property role="TrG5h" value="GSNAP_WITH_GOBY_ARTIFACT" />
-      <node concept="1M6RvD" id="17OfmP$2VDr" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6S" role="1M2wA0">
         <property role="TrG5h" value="2013.06.26" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDs" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6T" role="1M6PKF">
       <property role="TrG5h" value="IGVTOOLS" />
-      <node concept="1M6RvD" id="17OfmP$2VDt" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6U" role="1M2wA0">
         <property role="TrG5h" value="1.5.16" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDu" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6V" role="1M6PKF">
       <property role="TrG5h" value="ILLUMINA_ADAPTERS" />
-      <node concept="1M6RvD" id="17OfmP$2VDv" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6W" role="1M2wA0">
         <property role="TrG5h" value="1.0" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDw" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_6X" role="1M6PKF">
       <property role="TrG5h" value="LAST" />
-      <node concept="1M6RvD" id="17OfmP$2VDx" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6Y" role="1M2wA0">
         <property role="TrG5h" value="189" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VDy" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_6Z" role="1M2wA0">
         <property role="TrG5h" value="230" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDz" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_70" role="1M6PKF">
       <property role="TrG5h" value="LAST_ARTIFACT" />
-      <node concept="1M6RvD" id="17OfmP$2VD$" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_71" role="1M2wA0">
         <property role="TrG5h" value="287" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VD_" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_72" role="1M2wA0">
         <property role="TrG5h" value="456" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VDA" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_73" role="1M2wA0">
         <property role="TrG5h" value="581.4" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDB" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_74" role="1M6PKF">
       <property role="TrG5h" value="LAST_BISULFITE_INDEX" />
-      <node concept="1M6RvD" id="17OfmP$2VDC" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_75" role="1M2wA0">
         <property role="TrG5h" value="287" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDD" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_76" role="1M6PKF">
       <property role="TrG5h" value="LAST_INDEX" />
-      <node concept="1M6RvD" id="17OfmP$2VDE" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_77" role="1M2wA0">
         <property role="TrG5h" value="287" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VDF" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_78" role="1M2wA0">
         <property role="TrG5h" value="456.1" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VDG" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_79" role="1M2wA0">
         <property role="TrG5h" value="581.1" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDH" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7a" role="1M6PKF">
       <property role="TrG5h" value="MAVEN" />
-      <node concept="1M6RvD" id="17OfmP$2VDI" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7b" role="1M2wA0">
         <property role="TrG5h" value="3.0.5" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDJ" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7c" role="1M6PKF">
       <property role="TrG5h" value="MAVEN_ARTIFACTS_DOWNLOADER" />
-      <node concept="1M6RvD" id="17OfmP$2VDK" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7d" role="1M2wA0">
         <property role="TrG5h" value="1.0" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDL" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7e" role="1M6PKF">
       <property role="TrG5h" value="MERCURY" />
-      <node concept="1M6RvD" id="17OfmP$2VDM" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7f" role="1M2wA0">
         <property role="TrG5h" value="1.0" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDN" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7g" role="1M6PKF">
       <property role="TrG5h" value="MINIA" />
-      <node concept="1M6RvD" id="17OfmP$2VDO" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7h" role="1M2wA0">
         <property role="TrG5h" value="1.4961" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDP" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7i" role="1M6PKF">
       <property role="TrG5h" value="MPS" />
-      <node concept="1M6RvD" id="17OfmP$2VDQ" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7j" role="1M2wA0">
         <property role="TrG5h" value="129.380" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VDR" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7k" role="1M2wA0">
         <property role="TrG5h" value="135.527" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDS" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7l" role="1M6PKF">
       <property role="TrG5h" value="MUTECT" />
-      <node concept="1M6RvD" id="17OfmP$2VDT" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7m" role="1M2wA0">
         <property role="TrG5h" value="1.1.4" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDU" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7n" role="1M6PKF">
       <property role="TrG5h" value="MUTECT_HOMO_SAPIENS_DATA" />
-      <node concept="1M6RvD" id="17OfmP$2VDV" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7o" role="1M2wA0">
         <property role="TrG5h" value="1.2" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDW" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7p" role="1M6PKF">
       <property role="TrG5h" value="PLAST" />
-      <node concept="1M6RvD" id="17OfmP$2VDX" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7q" role="1M2wA0">
         <property role="TrG5h" value="1.3" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VDY" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7r" role="1M6PKF">
       <property role="TrG5h" value="PATHOGEN_DATA" />
-      <node concept="1M6RvD" id="17OfmP$2VDZ" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7s" role="1M2wA0">
         <property role="TrG5h" value="1.1" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VE0" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7t" role="1M6PKF">
       <property role="TrG5h" value="PROCESS_PAIRED_READS" />
-      <node concept="1M6RvD" id="17OfmP$2VE1" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7u" role="1M2wA0">
         <property role="TrG5h" value="1.0" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VE2" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7v" role="1M6PKF">
       <property role="TrG5h" value="PROCESS_READS" />
-      <node concept="1M6RvD" id="17OfmP$2VE3" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7w" role="1M2wA0">
         <property role="TrG5h" value="1.1" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VE4" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7x" role="1M6PKF">
       <property role="TrG5h" value="PROTOBUF_CPP" />
-      <node concept="1M6RvD" id="17OfmP$2VE5" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7y" role="1M2wA0">
         <property role="TrG5h" value="2.4.1" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VE6" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7z" role="1M6PKF">
       <property role="TrG5h" value="R" />
-      <node concept="1M6RvD" id="17OfmP$2VE7" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7$" role="1M2wA0">
         <property role="TrG5h" value="2.14.1" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VE8" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7_" role="1M2wA0">
         <property role="TrG5h" value="2.15.3.5" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VE9" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7A" role="1M2wA0">
         <property role="TrG5h" value="3.1.0" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VEa" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7B" role="1M6PKF">
       <property role="TrG5h" value="RJAVA" />
-      <node concept="1M6RvD" id="17OfmP$2VEb" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7C" role="1M2wA0">
         <property role="TrG5h" value="0.9.6.4" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VEc" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7D" role="1M6PKF">
       <property role="TrG5h" value="SAM_JDK" />
-      <node concept="1M6RvD" id="17OfmP$2VEd" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7E" role="1M2wA0">
         <property role="TrG5h" value="1.84" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VEe" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7F" role="1M6PKF">
       <property role="TrG5h" value="SAMPLE_RESOURCE_WITH_MPS" />
-      <node concept="1M6RvD" id="17OfmP$2VEf" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7G" role="1M2wA0">
         <property role="TrG5h" value="1.0" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VEg" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7H" role="1M6PKF">
       <property role="TrG5h" value="SAMTOOLS" />
-      <node concept="1M6RvD" id="17OfmP$2VEh" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7I" role="1M2wA0">
         <property role="TrG5h" value="0.1.14" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VEi" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7J" role="1M2wA0">
         <property role="TrG5h" value="0.1.18" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VEj" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7K" role="1M2wA0">
         <property role="TrG5h" value="0.1.18.1" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VEk" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7L" role="1M6PKF">
       <property role="TrG5h" value="SCALA" />
-      <node concept="1M6RvD" id="17OfmP$2VEl" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7M" role="1M2wA0">
         <property role="TrG5h" value="2.9.2" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VEm" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7N" role="1M6PKF">
       <property role="TrG5h" value="STAR" />
-      <node concept="1M6RvD" id="17OfmP$2VEn" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7O" role="1M2wA0">
         <property role="TrG5h" value="2.1.1" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VEo" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7P" role="1M2wA0">
         <property role="TrG5h" value="2.1.2" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VEp" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7Q" role="1M2wA0">
         <property role="TrG5h" value="2.1.4" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VEq" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7R" role="1M2wA0">
         <property role="TrG5h" value="2.3.0.6" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VEr" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7S" role="1M6PKF">
       <property role="TrG5h" value="TABIX" />
-      <node concept="1M6RvD" id="17OfmP$2VEs" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7T" role="1M2wA0">
         <property role="TrG5h" value="0.2.6" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VEt" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7U" role="1M6PKF">
       <property role="TrG5h" value="TRIMMOMATIC" />
-      <node concept="1M6RvD" id="17OfmP$2VEu" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7V" role="1M2wA0">
         <property role="TrG5h" value="0.32" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VEv" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7W" role="1M6PKF">
       <property role="TrG5h" value="TRINITY" />
-      <node concept="1M6RvD" id="17OfmP$2VEw" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7X" role="1M2wA0">
         <property role="TrG5h" value="20120518" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VEx" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_7Y" role="1M6PKF">
       <property role="TrG5h" value="VARIANT_EFFECT_PREDICTOR" />
-      <node concept="1M6RvD" id="17OfmP$2VEy" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_7Z" role="1M2wA0">
         <property role="TrG5h" value="73" />
       </node>
-      <node concept="1M6RvD" id="17OfmP$2VEz" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_80" role="1M2wA0">
         <property role="TrG5h" value="75.7.2" />
       </node>
     </node>
-    <node concept="1M6RSl" id="17OfmP$2VE$" role="1M6PKF">
+    <node concept="1M6RSl" id="17OfmP$a_81" role="1M6PKF">
       <property role="TrG5h" value="VCF_TOOLS" />
-      <node concept="1M6RvD" id="17OfmP$2VE_" role="1M2wA0">
+      <node concept="1M6RvD" id="17OfmP$a_82" role="1M2wA0">
         <property role="TrG5h" value="0.1.10" />
       </node>
     </node>

@@ -98,6 +98,12 @@
   <node concept="1M2fIO" id="6A9boVQv91m">
     <property role="3GE5qa" value="resources" />
     <ref role="1M2myG" to="iuj9:18MzsNNQZvZ" resolve="RequestedResource" />
+    <node concept="1N5Pfh" id="17OfmP$eBBj" role="1Mr941">
+      <ref role="1N5Vy1" to="iuj9:17OfmP$aRqG" />
+      <node concept="1dDu$B" id="17OfmP$eBCs" role="1N6uqs">
+        <ref role="1dDu$A" to="iuj9:17OfmPzVOE4" resolve="ResourceVersion" />
+      </node>
+    </node>
     <node concept="nKS2y" id="6A9boVQyWGg" role="1MLUbF">
       <node concept="3clFbS" id="6A9boVQyWGh" role="2VODD2">
         <node concept="3clFbF" id="6A9boVQyWNC" role="3cqZAp">

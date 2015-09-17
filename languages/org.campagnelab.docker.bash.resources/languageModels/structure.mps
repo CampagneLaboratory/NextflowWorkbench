@@ -57,11 +57,25 @@
     <property role="3GE5qa" value="resources" />
     <property role="R4oN_" value="A resource requested by the user" />
     <ref role="1TJDcQ" node="4DwTgsTNnk_" resolve="ScriptResource" />
+    <node concept="1TJgyj" id="17OfmP$aReK" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="resourceRange" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="17OfmPzVOdS" resolve="ResourceRange" />
+    </node>
+    <node concept="1TJgyj" id="17OfmP$aRqG" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="resourceVersion" />
+      <ref role="20lvS9" node="17OfmPzVOE4" resolve="ResourceVersion" />
+    </node>
     <node concept="1TJgyj" id="6ojrriHjIeL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="dependencies" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4DwTgsTSy1y" resolve="DependencyResource" />
+    </node>
+    <node concept="PrWs8" id="17OfmP$iUXB" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="5yyd2HFS3xA">
@@ -148,7 +162,7 @@
   </node>
   <node concept="1TIwiD" id="17OfmPzVOdS">
     <property role="TrG5h" value="ResourceRange" />
-    <property role="R4oN_" value="a resource with the range of versions available in the plugin repo" />
+    <property role="R4oN_" value="A resource with the range of versions available in the plugin repo" />
     <property role="3GE5qa" value="resources" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="17OfmPzZzjH" role="1TKVEi">
