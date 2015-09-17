@@ -17,11 +17,10 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
-        <property id="1225118933224" name="comment" index="YLQ7P" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -47,7 +46,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -55,24 +53,15 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="18MzsNNQZvZ">
-    <property role="TrG5h" value="RequiredResource" />
+    <property role="TrG5h" value="RequestedResource" />
     <property role="3GE5qa" value="resources" />
-    <ref role="1TJDcQ" to="dzk5:1ORG9zeKa86" resolve="ResourceRef" />
-    <node concept="1TJgyj" id="6A9boVQv2Xr" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="attributeValues" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6A9boVQPeld" resolve="AttributeAdapterForResource" />
-    </node>
+    <property role="R4oN_" value="A resource requested by the user" />
+    <ref role="1TJDcQ" node="4DwTgsTNnk_" resolve="ScriptResource" />
     <node concept="1TJgyj" id="6ojrriHjIeL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="dependencies" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="18MzsNNQZvZ" resolve="RequiredResource" />
-    </node>
-    <node concept="1TJgyi" id="18MzsNNR1MW" role="1TKVEl">
-      <property role="TrG5h" value="id" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="20lvS9" node="4DwTgsTSy1y" resolve="DependencyResource" />
     </node>
   </node>
   <node concept="1TIwiD" id="5yyd2HFS3xA">
@@ -84,7 +73,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="requires" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="18MzsNNQZvZ" resolve="RequiredResource" />
+      <ref role="20lvS9" node="18MzsNNQZvZ" resolve="RequestedResource" />
     </node>
     <node concept="1TJgyj" id="irqYu7hH$B" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -118,28 +107,6 @@
     </node>
     <node concept="PrWs8" id="6A9boVQ8yHo" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6A9boVQv2O5">
-    <property role="TrG5h" value="Attribute" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6A9boVQJrhu" role="1TKVEl">
-      <property role="TrG5h" value="resource" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="5NMxi75RA94" role="1TKVEl">
-      <property role="TrG5h" value="artifact" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="6A9boVQv2Oo" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="6A9boVQv2Ok" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="asaX9" id="4DwTgsTIiAH" role="lGtFl">
-      <property role="YLQ7P" value="Use AttributeAdapterForResource instead" />
     </node>
   </node>
   <node concept="1TIwiD" id="6A9boVQPeld">
@@ -214,6 +181,34 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="17OfmPzVOdS" resolve="ResourceRange" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4DwTgsTNnk_">
+    <property role="3GE5qa" value="resources" />
+    <property role="TrG5h" value="ScriptResource" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="18MzsNNR1MW" role="1TKVEl">
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="4DwTgsTNnlT" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="attributeValues" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6A9boVQPeld" resolve="AttributeAdapterForResource" />
+    </node>
+    <node concept="1TJgyj" id="4DwTgsTNnkD" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="config" />
+      <ref role="20lvS9" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4DwTgsTSy1y">
+    <property role="3GE5qa" value="resources" />
+    <property role="TrG5h" value="DependencyResource" />
+    <property role="R4oN_" value="A resource that another resource depends on" />
+    <ref role="1TJDcQ" node="4DwTgsTNnk_" resolve="ScriptResource" />
   </node>
 </model>
 

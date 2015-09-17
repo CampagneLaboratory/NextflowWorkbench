@@ -261,38 +261,6 @@
       <ref role="1YaFvo" to="iuj9:5yyd2HFS3xA" resolve="NYoShAwareScript" />
     </node>
   </node>
-  <node concept="18kY7G" id="6A9boVQxxFl">
-    <property role="TrG5h" value="check_AttributeValue" />
-    <node concept="3clFbS" id="6A9boVQxxFm" role="18ibNy">
-      <node concept="3clFbJ" id="6A9boVQxxOp" role="3cqZAp">
-        <node concept="3clFbS" id="6A9boVQxxOr" role="3clFbx">
-          <node concept="2MkqsV" id="6A9boVQxyDx" role="3cqZAp">
-            <node concept="Xl_RD" id="6A9boVQxyDQ" role="2MkJ7o">
-              <property role="Xl_RC" value="Value is missing." />
-            </node>
-            <node concept="1YBJjd" id="6A9boVQxyE3" role="2OEOjV">
-              <ref role="1YBMHb" node="6A9boVQxxFo" resolve="attributeValue" />
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="6A9boVQxyhS" role="3clFbw">
-          <node concept="2OqwBi" id="6A9boVQxxQA" role="2Oq$k0">
-            <node concept="1YBJjd" id="6A9boVQxxOK" role="2Oq$k0">
-              <ref role="1YBMHb" node="6A9boVQxxFo" resolve="attributeValue" />
-            </node>
-            <node concept="3TrcHB" id="6A9boVQxy06" role="2OqNvi">
-              <ref role="3TsBF5" to="iuj9:6A9boVQv2Oo" resolve="value" />
-            </node>
-          </node>
-          <node concept="17RlXB" id="6A9boVQxyDh" role="2OqNvi" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="6A9boVQxxFo" role="1YuTPh">
-      <property role="TrG5h" value="attributeValue" />
-      <ref role="1YaFvo" to="iuj9:6A9boVQv2O5" resolve="Attribute" />
-    </node>
-  </node>
   <node concept="18kY7G" id="6A9boVQYV8K">
     <property role="TrG5h" value="CheckBrokenReferenceAttribute" />
     <property role="3GE5qa" value="resources" />
@@ -377,14 +345,14 @@
                 <node concept="Q6c8r" id="6A9boVQZeez" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="6A9boVQZetQ" role="2OqNvi">
                   <node concept="1xMEDy" id="6A9boVQZetS" role="1xVPHs">
-                    <node concept="chp4Y" id="6A9boVQZevG" role="ri$Ld">
-                      <ref role="cht4Q" to="iuj9:18MzsNNQZvZ" resolve="RequiredResource" />
+                    <node concept="chp4Y" id="4DwTgsTYqjE" role="ri$Ld">
+                      <ref role="cht4Q" to="iuj9:4DwTgsTSy1y" resolve="DependencyResource" />
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="2qgKlT" id="6A9boVQTT9Y" role="2OqNvi">
-                <ref role="37wK5l" to="6na6:6A9boVQTJQ6" resolve="findAttributeToRef" />
+                <ref role="37wK5l" to="6na6:4DwTgsTOMy2" resolve="findAttributeToRef" />
                 <node concept="2OqwBi" id="6A9boVQTTsh" role="37wK5m">
                   <node concept="QwW4i" id="6A9boVQZfDb" role="2Oq$k0">
                     <ref role="QwW4h" node="6A9boVQYWFF" resolve="reference" />
