@@ -76,10 +76,7 @@
       <concept id="1293726532999529336" name="org.campagnelab.bash.nyosh.structure.ResourceRange" flags="ng" index="1M6RSl">
         <child id="1293726533000508653" name="versions" index="1M2wA0" />
       </concept>
-      <concept id="1008131731651362197" name="org.campagnelab.bash.nyosh.structure.ResourceVersionRange" flags="ng" index="3U7mvy">
-        <property id="1008131731651362535" name="atMost" index="3U7mig" />
-        <property id="1008131731651362539" name="atLeast" index="3U7mis" />
-      </concept>
+      <concept id="1008131731651362197" name="org.campagnelab.bash.nyosh.structure.ResourceVersionRange" flags="ng" index="3U7mvy" />
     </language>
     <language id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash">
       <concept id="147628039490029687" name="org.campagnelab.docker.bash.structure.DockerBash" flags="ng" index="1QJbas">
@@ -6860,18 +6857,15 @@
   <node concept="1QJbas" id="6ojrriHiYFb">
     <property role="TrG5h" value="FirstBashNYoSh" />
     <node concept="NgwLd" id="6ojrriHiYFQ" role="1QJbqZ">
+      <node concept="3xUnCN" id="4DwTgsUhVwV" role="NgwMD">
+        <property role="3Ui_h1" value="not resolved" />
+        <ref role="1PROVt" node="12v2Kg_BiRP" resolve="GOBY" />
+        <node concept="3U7mvy" id="4DwTgsUhWFr" role="3U62hL" />
+      </node>
       <node concept="1XFuE8" id="6ojrriHiYFR" role="23NxHr" />
       <node concept="19SGf9" id="6ojrriHiYFT" role="3Y$PkS">
         <node concept="19SUe$" id="6ojrriHiYFU" role="19SJt6">
           <property role="19SUeA" value="echo &quot;Hello from the script&quot;" />
-        </node>
-      </node>
-      <node concept="3xUnCN" id="RXABvRVETP" role="NgwMD">
-        <property role="3Ui_h1" value="not resolved" />
-        <ref role="1PROVt" node="12v2Kg_BiQX" resolve="ANNOTATE_VCF" />
-        <node concept="3U7mvy" id="RXABvRVETT" role="3U62hL">
-          <property role="3U7mis" value="12" />
-          <property role="3U7mig" value="444" />
         </node>
       </node>
     </node>
