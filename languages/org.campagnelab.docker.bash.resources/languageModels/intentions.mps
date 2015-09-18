@@ -299,7 +299,6 @@
   </node>
   <node concept="2S6QgY" id="RXABvRWRFh">
     <property role="3GE5qa" value="resources" />
-    <property role="2ZfUl0" value="true" />
     <property role="TrG5h" value="ResolveResource" />
     <ref role="2ZfgGC" to="iuj9:18MzsNNQZvZ" resolve="RequestedResource" />
     <node concept="2S6ZIM" id="RXABvRWRFi" role="2ZfVej">
