@@ -68,7 +68,6 @@
         <property id="1008131731648663094" name="message" index="3Ui_h1" />
         <reference id="1293726533003474604" name="resourceVersion" index="1PROJ1" />
         <reference id="1293726533003473840" name="resourceRange" index="1PROVt" />
-        <child id="7355343239195321265" name="dependencies" index="3bnoS5" />
       </concept>
       <concept id="1293726532999536931" name="org.campagnelab.bash.nyosh.structure.ResourceRangeContainer" flags="ng" index="1M6PLe">
         <child id="1293726532999536966" name="ranges" index="1M6PKF" />
@@ -77,9 +76,7 @@
       <concept id="1293726532999529336" name="org.campagnelab.bash.nyosh.structure.ResourceRange" flags="ng" index="1M6RSl">
         <child id="1293726533000508653" name="versions" index="1M2wA0" />
       </concept>
-      <concept id="5359535375769542754" name="org.campagnelab.bash.nyosh.structure.DependencyResource" flags="ng" index="1NwGl_" />
       <concept id="5359535375768188197" name="org.campagnelab.bash.nyosh.structure.ScriptResource" flags="ng" index="1NFp0y">
-        <property id="1311266352922369212" name="id" index="3xVD5K" />
         <reference id="5359535375768188201" name="config" index="1NFp0I" />
       </concept>
     </language>
@@ -6864,13 +6861,9 @@
     <node concept="NgwLd" id="6ojrriHiYFQ" role="1QJbqZ">
       <node concept="3xUnCN" id="3A$s7PqeHxJ" role="NgwMD">
         <property role="3Ui_h1" value="" />
-        <ref role="1PROVt" node="3A$s7PqbV8W" resolve="EDGER" />
-        <ref role="1PROJ1" node="3A$s7PqbV90" resolve="3.8.4.1" />
-        <ref role="1NFp0I" node="3A$s7PqbU3a" resolve="EDGER" />
-        <node concept="1NwGl_" id="3A$s7PqgC1L" role="3bnoS5">
-          <property role="3xVD5K" value="R" />
-          <ref role="1NFp0I" node="3A$s7PqbU6D" resolve="R" />
-        </node>
+        <ref role="1PROVt" node="3A$s7PqbVaw" resolve="R" />
+        <ref role="1PROJ1" node="3A$s7PqbVaz" resolve="3.1.0" />
+        <ref role="1NFp0I" node="3A$s7PqbU6D" resolve="R" />
       </node>
       <node concept="1XFuE8" id="6ojrriHiYFR" role="23NxHr" />
       <node concept="19SGf9" id="6ojrriHiYFT" role="3Y$PkS">

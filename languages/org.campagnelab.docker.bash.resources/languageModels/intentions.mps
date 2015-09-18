@@ -180,14 +180,14 @@
     </node>
   </node>
   <node concept="2S6QgY" id="6A9boVQX2hJ">
-    <property role="TrG5h" value="UnlinkResource" />
+    <property role="TrG5h" value="MakeEditable" />
     <property role="3GE5qa" value="resources" />
     <ref role="2ZfgGC" to="iuj9:4DwTgsTSy1y" resolve="DependencyResource" />
     <node concept="2S6ZIM" id="6A9boVQX2hK" role="2ZfVej">
       <node concept="3clFbS" id="6A9boVQX2hL" role="2VODD2">
         <node concept="3clFbF" id="6A9boVQX2_Z" role="3cqZAp">
           <node concept="Xl_RD" id="6A9boVQX2_Y" role="3clFbG">
-            <property role="Xl_RC" value="Unlink Attributes" />
+            <property role="Xl_RC" value="Make Editable" />
           </node>
         </node>
       </node>
