@@ -234,7 +234,7 @@
     <node concept="3EZMnI" id="6A9boVQ8yHt" role="2wV5jI">
       <node concept="3F0ifn" id="6A9boVQ8yHu" role="3EZMnx">
         <property role="3F0ifm" value="$" />
-        <ref role="1k5W1q" to="gfij:irqYu7oFw0" resolve="GobyWebVarRef" />
+        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
         <node concept="11LMrY" id="6A9boVQ8yHv" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -245,7 +245,7 @@
           <node concept="3F0A7n" id="6A9boVQ8yHy" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <ref role="1k5W1q" to="gfij:irqYu7oFw0" resolve="GobyWebVarRef" />
+            <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
           </node>
         </node>
       </node>
