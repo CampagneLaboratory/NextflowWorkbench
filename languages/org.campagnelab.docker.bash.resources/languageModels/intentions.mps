@@ -297,5 +297,32 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="RXABvRWRFh">
+    <property role="3GE5qa" value="resources" />
+    <property role="2ZfUl0" value="true" />
+    <property role="TrG5h" value="ResolveResource" />
+    <ref role="2ZfgGC" to="iuj9:18MzsNNQZvZ" resolve="RequestedResource" />
+    <node concept="2S6ZIM" id="RXABvRWRFi" role="2ZfVej">
+      <node concept="3clFbS" id="RXABvRWRFj" role="2VODD2">
+        <node concept="3clFbF" id="RXABvRWRMR" role="3cqZAp">
+          <node concept="Xl_RD" id="RXABvRWRMQ" role="3clFbG">
+            <property role="Xl_RC" value="Resolve" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="RXABvRWRFk" role="2ZfgGD">
+      <node concept="3clFbS" id="RXABvRWRFl" role="2VODD2">
+        <node concept="3clFbF" id="RXABvRWSjT" role="3cqZAp">
+          <node concept="2OqwBi" id="RXABvRWSlK" role="3clFbG">
+            <node concept="2Sf5sV" id="RXABvRWSjS" role="2Oq$k0" />
+            <node concept="2qgKlT" id="RXABvRWSx8" role="2OqNvi">
+              <ref role="37wK5l" to="6na6:17OfmP$$uVJ" resolve="resolveRange" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
