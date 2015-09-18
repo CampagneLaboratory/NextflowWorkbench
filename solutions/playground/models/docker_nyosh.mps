@@ -66,8 +66,8 @@
       </concept>
       <concept id="1311266352922359807" name="org.campagnelab.bash.nyosh.structure.RequestedResource" flags="ng" index="3xUnCN">
         <property id="1008131731648663094" name="message" index="3Ui_h1" />
-        <reference id="1293726533003474604" name="resourceVersion" index="1PROJ1" />
         <reference id="1293726533003473840" name="resourceRange" index="1PROVt" />
+        <child id="1008131731651673606" name="resourceVersionRange" index="3U62hL" />
       </concept>
       <concept id="1293726532999536931" name="org.campagnelab.bash.nyosh.structure.ResourceRangeContainer" flags="ng" index="1M6PLe">
         <child id="1293726532999536966" name="ranges" index="1M6PKF" />
@@ -75,6 +75,10 @@
       <concept id="1293726532999531140" name="org.campagnelab.bash.nyosh.structure.ResourceVersion" flags="ng" index="1M6RvD" />
       <concept id="1293726532999529336" name="org.campagnelab.bash.nyosh.structure.ResourceRange" flags="ng" index="1M6RSl">
         <child id="1293726533000508653" name="versions" index="1M2wA0" />
+      </concept>
+      <concept id="1008131731651362197" name="org.campagnelab.bash.nyosh.structure.ResourceVersionRange" flags="ng" index="3U7mvy">
+        <property id="1008131731651362535" name="atMost" index="3U7mig" />
+        <property id="1008131731651362539" name="atLeast" index="3U7mis" />
       </concept>
     </language>
     <language id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash">
@@ -232,9 +236,12 @@
     <property role="TrG5h" value="FirstBashNYoSh" />
     <node concept="NgwLd" id="6ojrriHiYFQ" role="1QJbqZ">
       <node concept="3xUnCN" id="4DwTgsUniLt" role="NgwMD">
-        <property role="3Ui_h1" value="failed to resolve" />
-        <ref role="1PROVt" node="12v2Kg_BiQX" resolve="ANNOTATE_VCF" />
-        <ref role="1PROJ1" node="12v2Kg_BiQY" resolve="1.2.1" />
+        <property role="3Ui_h1" value="not resolved" />
+        <ref role="1PROVt" node="12v2Kg_BiRu" resolve="ENSEMBL_ANNOTATIONS" />
+        <node concept="3U7mvy" id="4DwTgsUniR_" role="3U62hL">
+          <property role="3U7mis" value="0" />
+          <property role="3U7mig" value="1" />
+        </node>
       </node>
       <node concept="1XFuE8" id="6ojrriHiYFR" role="23NxHr" />
       <node concept="19SGf9" id="6ojrriHiYFT" role="3Y$PkS">
