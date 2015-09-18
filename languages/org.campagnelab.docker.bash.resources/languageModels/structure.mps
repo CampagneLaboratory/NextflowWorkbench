@@ -68,7 +68,7 @@
     <node concept="1TJgyj" id="17OfmP$aReK" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="resourceRange" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="17OfmPzVOdS" resolve="ResourceRange" />
     </node>
     <node concept="1TJgyj" id="17OfmP$aRqG" role="1TKVEi">
