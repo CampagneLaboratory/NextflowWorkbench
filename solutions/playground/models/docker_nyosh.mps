@@ -67,9 +67,6 @@
         <property id="7604659537841861885" name="artifact" index="2vk9_N" />
         <child id="7604659537841546632" name="attribute" index="2vnsw6" />
       </concept>
-      <concept id="7604659537842635753" name="org.campagnelab.bash.nyosh.structure.ReferenceAttribute" flags="ng" index="2vraTB">
-        <reference id="7604659537842635787" name="ref" index="2vraA5" />
-      </concept>
       <concept id="6386724582662879334" name="org.campagnelab.bash.nyosh.structure.NYoShAwareScript" flags="ng" index="NgwLd">
         <child id="331977639694004412" name="pluginSystemRootDirectory" index="23NxHr" />
         <child id="331977639693048103" name="availableVariables" index="23Rrb0" />
@@ -6876,113 +6873,190 @@
     <node concept="NgwLd" id="6ojrriHiYFQ" role="1QJbqZ">
       <node concept="3xUnCN" id="RXABvRWOiP" role="NgwMD">
         <property role="3Ui_h1" value="" />
-        <ref role="1PROVt" node="12v2Kg_BiR3" resolve="BISMARK_ARTIFACT" />
-        <ref role="1PROJ1" node="12v2Kg_BiR4" resolve="0.7.12.2" />
-        <ref role="1NFp0I" node="RXABvRWPK_" resolve="BISMARK_ARTIFACT" />
-        <node concept="1NwGl_" id="RXABvRXWPG" role="3bnoS5">
-          <property role="3xVD5K" value="SAMTOOLS" />
-          <ref role="1NFp0I" node="RXABvRWPOS" resolve="SAMTOOLS" />
-        </node>
-        <node concept="1NwGl_" id="RXABvRXWPF" role="3bnoS5">
+        <ref role="1PROVt" node="12v2Kg_BiQX" resolve="ANNOTATE_VCF" />
+        <ref role="1PROJ1" node="12v2Kg_BiQY" resolve="1.2.1" />
+        <ref role="1NFp0I" node="RXABvRWPKt" resolve="ANNOTATE_VCF" />
+        <node concept="1NwGl_" id="RXABvRZ4nU" role="3bnoS5">
           <property role="3xVD5K" value="BASH_LIBRARY" />
           <ref role="1NFp0I" node="RXABvRWPKy" resolve="BASH_LIBRARY" />
         </node>
-        <node concept="1NwGl_" id="RXABvRXWPE" role="3bnoS5">
+        <node concept="1NwGl_" id="RXABvRZ4nT" role="3bnoS5">
           <property role="3xVD5K" value="FETCH_URL" />
           <ref role="1NFp0I" node="RXABvRWPMj" resolve="FETCH_URL" />
         </node>
-        <node concept="1NwGl_" id="RXABvRXWPz" role="3bnoS5">
+        <node concept="1NwGl_" id="RXABvRZ4nO" role="3bnoS5">
+          <property role="3xVD5K" value="ENSEMBL_API" />
+          <ref role="1NFp0I" node="RXABvRWPLQ" resolve="ENSEMBL_API" />
+          <node concept="2vnsz3" id="RXABvRZ4nP" role="1NFp1Y">
+            <property role="2vk9_M" value="ENSEMBL_API" />
+            <property role="2vk9_N" value="VEP_CACHE" />
+            <property role="TrG5h" value="organism" />
+            <node concept="2t8VsU" id="RXABvRZ4nQ" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
+              <property role="TrG5h" value="organism" />
+            </node>
+          </node>
+          <node concept="2vnsz3" id="RXABvRZ4nR" role="1NFp1Y">
+            <property role="2vk9_M" value="ENSEMBL_API" />
+            <property role="2vk9_N" value="VEP_CACHE" />
+            <property role="TrG5h" value="ensembl-version-number" />
+            <node concept="2t8VsU" id="RXABvRZ4nS" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
+              <property role="TrG5h" value="ensembl-version-number" />
+            </node>
+          </node>
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nN" role="3bnoS5">
+          <property role="3xVD5K" value="VARIANT_EFFECT_PREDICTOR" />
+          <ref role="1NFp0I" node="RXABvRWPPj" resolve="VARIANT_EFFECT_PREDICTOR" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nM" role="3bnoS5">
+          <property role="3xVD5K" value="MERCURY" />
+          <ref role="1NFp0I" node="RXABvRWPO6" resolve="MERCURY" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nL" role="3bnoS5">
+          <property role="3xVD5K" value="BASH_LIBRARY" />
+          <ref role="1NFp0I" node="RXABvRWPKy" resolve="BASH_LIBRARY" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nK" role="3bnoS5">
+          <property role="3xVD5K" value="BASH_LIBRARY" />
+          <ref role="1NFp0I" node="RXABvRWPKy" resolve="BASH_LIBRARY" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nJ" role="3bnoS5">
+          <property role="3xVD5K" value="FETCH_URL" />
+          <ref role="1NFp0I" node="RXABvRWPMj" resolve="FETCH_URL" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nI" role="3bnoS5">
+          <property role="3xVD5K" value="GROOVY" />
+          <ref role="1NFp0I" node="RXABvRWPMT" resolve="GROOVY" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nH" role="3bnoS5">
+          <property role="3xVD5K" value="GOBYWEB_SERVER_SIDE" />
+          <ref role="1NFp0I" node="RXABvRWPMO" resolve="GOBYWEB_SERVER_SIDE" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nG" role="3bnoS5">
+          <property role="3xVD5K" value="SAM_JDK" />
+          <ref role="1NFp0I" node="RXABvRWPOJ" resolve="SAM_JDK" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nF" role="3bnoS5">
+          <property role="3xVD5K" value="TABIX" />
+          <ref role="1NFp0I" node="RXABvRWPP8" resolve="TABIX" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nE" role="3bnoS5">
+          <property role="3xVD5K" value="GROOVY" />
+          <ref role="1NFp0I" node="RXABvRWPMT" resolve="GROOVY" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nD" role="3bnoS5">
+          <property role="3xVD5K" value="BASH_LIBRARY" />
+          <ref role="1NFp0I" node="RXABvRWPKy" resolve="BASH_LIBRARY" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nC" role="3bnoS5">
+          <property role="3xVD5K" value="FETCH_URL" />
+          <ref role="1NFp0I" node="RXABvRWPMj" resolve="FETCH_URL" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nx" role="3bnoS5">
           <property role="3xVD5K" value="ENSEMBL_GENOMES" />
           <ref role="1NFp0I" node="RXABvRWPLW" resolve="ENSEMBL_GENOMES" />
-          <node concept="2vnsz3" id="RXABvRXWP$" role="1NFp1Y">
+          <node concept="2vnsz3" id="RXABvRZ4ny" role="1NFp1Y">
             <property role="2vk9_M" value="ENSEMBL_GENOMES" />
             <property role="2vk9_N" value="TOPLEVEL" />
             <property role="TrG5h" value="organism" />
-            <node concept="2vraTB" id="RXABvRXWP_" role="2vnsw6">
+            <node concept="2t8VsU" id="RXABvRZ4nz" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
               <property role="TrG5h" value="organism" />
-              <ref role="2vraA5" node="RXABvRXWPm" resolve="organism" />
             </node>
           </node>
-          <node concept="2vnsz3" id="RXABvRXWPA" role="1NFp1Y">
+          <node concept="2vnsz3" id="RXABvRZ4n$" role="1NFp1Y">
             <property role="2vk9_M" value="ENSEMBL_GENOMES" />
             <property role="2vk9_N" value="TOPLEVEL" />
             <property role="TrG5h" value="reference-build" />
-            <node concept="2vraTB" id="RXABvRXWPB" role="2vnsw6">
+            <node concept="2t8VsU" id="RXABvRZ4n_" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
               <property role="TrG5h" value="reference-build" />
-              <ref role="2vraA5" node="RXABvRXWPo" resolve="reference-build" />
             </node>
           </node>
-          <node concept="2vnsz3" id="RXABvRXWPC" role="1NFp1Y">
+          <node concept="2vnsz3" id="RXABvRZ4nA" role="1NFp1Y">
             <property role="2vk9_M" value="ENSEMBL_GENOMES" />
             <property role="2vk9_N" value="TOPLEVEL" />
             <property role="TrG5h" value="ensembl-version-number" />
-            <node concept="2vraTB" id="RXABvRXWPD" role="2vnsw6">
+            <node concept="2t8VsU" id="RXABvRZ4nB" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
               <property role="TrG5h" value="ensembl-version-number" />
-              <ref role="2vraA5" node="RXABvRXWPq" resolve="ensembl-version-number" />
             </node>
           </node>
         </node>
-        <node concept="2vnsz3" id="RXABvRXWPl" role="1NFp1Y">
-          <property role="2vk9_M" value="BISMARK_ARTIFACT" />
-          <property role="2vk9_N" value="INDEX" />
-          <property role="TrG5h" value="organism" />
-          <node concept="2t8VsU" id="RXABvRXWPm" role="2vnsw6">
-            <property role="2t8Vu2" value="" />
+        <node concept="1NwGl_" id="RXABvRZ4np" role="3bnoS5">
+          <property role="3xVD5K" value="BASH_LIBRARY" />
+          <ref role="1NFp0I" node="RXABvRWPKy" resolve="BASH_LIBRARY" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4no" role="3bnoS5">
+          <property role="3xVD5K" value="FETCH_URL" />
+          <ref role="1NFp0I" node="RXABvRWPMj" resolve="FETCH_URL" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nj" role="3bnoS5">
+          <property role="3xVD5K" value="ENSEMBL_API" />
+          <ref role="1NFp0I" node="RXABvRWPLQ" resolve="ENSEMBL_API" />
+          <node concept="2vnsz3" id="RXABvRZ4nk" role="1NFp1Y">
+            <property role="2vk9_M" value="ENSEMBL_API" />
+            <property role="2vk9_N" value="VEP_CACHE" />
             <property role="TrG5h" value="organism" />
-          </node>
-        </node>
-        <node concept="2vnsz3" id="RXABvRXWPn" role="1NFp1Y">
-          <property role="2vk9_M" value="BISMARK_ARTIFACT" />
-          <property role="2vk9_N" value="INDEX" />
-          <property role="TrG5h" value="reference-build" />
-          <node concept="2t8VsU" id="RXABvRXWPo" role="2vnsw6">
-            <property role="2t8Vu2" value="" />
-            <property role="TrG5h" value="reference-build" />
-          </node>
-        </node>
-        <node concept="2vnsz3" id="RXABvRXWPp" role="1NFp1Y">
-          <property role="2vk9_M" value="BISMARK_ARTIFACT" />
-          <property role="2vk9_N" value="INDEX" />
-          <property role="TrG5h" value="ensembl-version-number" />
-          <node concept="2t8VsU" id="RXABvRXWPq" role="2vnsw6">
-            <property role="2t8Vu2" value="" />
-            <property role="TrG5h" value="ensembl-version-number" />
-          </node>
-        </node>
-        <node concept="1NwGl_" id="RXABvRXWPr" role="3bnoS5">
-          <property role="3xVD5K" value="BOWTIE2_ARTIFACT" />
-          <ref role="1NFp0I" node="RXABvRWPKJ" resolve="BOWTIE2_ARTIFACT" />
-        </node>
-        <node concept="1NwGl_" id="RXABvRXWPs" role="3bnoS5">
-          <property role="3xVD5K" value="FAI_INDEXED_GENOMES" />
-          <ref role="1NFp0I" node="RXABvRWPMa" resolve="FAI_INDEXED_GENOMES" />
-          <node concept="2vnsz3" id="RXABvRXWPt" role="1NFp1Y">
-            <property role="2vk9_M" value="FAI_INDEXED_GENOMES" />
-            <property role="2vk9_N" value="SAMTOOLS_FAI_INDEX" />
-            <property role="TrG5h" value="organism" />
-            <node concept="2vraTB" id="RXABvRXWPu" role="2vnsw6">
+            <node concept="2t8VsU" id="RXABvRZ4nl" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
               <property role="TrG5h" value="organism" />
-              <ref role="2vraA5" node="RXABvRXWPm" resolve="organism" />
             </node>
           </node>
-          <node concept="2vnsz3" id="RXABvRXWPv" role="1NFp1Y">
-            <property role="2vk9_M" value="FAI_INDEXED_GENOMES" />
-            <property role="2vk9_N" value="SAMTOOLS_FAI_INDEX" />
-            <property role="TrG5h" value="reference-build" />
-            <node concept="2vraTB" id="RXABvRXWPw" role="2vnsw6">
-              <property role="TrG5h" value="reference-build" />
-              <ref role="2vraA5" node="RXABvRXWPo" resolve="reference-build" />
-            </node>
-          </node>
-          <node concept="2vnsz3" id="RXABvRXWPx" role="1NFp1Y">
-            <property role="2vk9_M" value="FAI_INDEXED_GENOMES" />
-            <property role="2vk9_N" value="SAMTOOLS_FAI_INDEX" />
+          <node concept="2vnsz3" id="RXABvRZ4nm" role="1NFp1Y">
+            <property role="2vk9_M" value="ENSEMBL_API" />
+            <property role="2vk9_N" value="VEP_CACHE" />
             <property role="TrG5h" value="ensembl-version-number" />
-            <node concept="2vraTB" id="RXABvRXWPy" role="2vnsw6">
+            <node concept="2t8VsU" id="RXABvRZ4nn" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
               <property role="TrG5h" value="ensembl-version-number" />
-              <ref role="2vraA5" node="RXABvRXWPq" resolve="ensembl-version-number" />
             </node>
           </node>
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4ni" role="3bnoS5">
+          <property role="3xVD5K" value="VARIANT_EFFECT_PREDICTOR" />
+          <ref role="1NFp0I" node="RXABvRWPPj" resolve="VARIANT_EFFECT_PREDICTOR" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nq" role="3bnoS5">
+          <property role="3xVD5K" value="ENSEMBL_ANNOTATIONS" />
+          <ref role="1NFp0I" node="RXABvRWPLv" resolve="ENSEMBL_ANNOTATIONS" />
+          <node concept="2vnsz3" id="RXABvRZ4nr" role="1NFp1Y">
+            <property role="2vk9_M" value="ENSEMBL_ANNOTATIONS" />
+            <property role="2vk9_N" value="ANNOTATIONS" />
+            <property role="TrG5h" value="organism" />
+            <node concept="2t8VsU" id="RXABvRZ4ns" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
+              <property role="TrG5h" value="organism" />
+            </node>
+          </node>
+          <node concept="2vnsz3" id="RXABvRZ4nt" role="1NFp1Y">
+            <property role="2vk9_M" value="ENSEMBL_ANNOTATIONS" />
+            <property role="2vk9_N" value="ANNOTATIONS" />
+            <property role="TrG5h" value="reference-build" />
+            <node concept="2t8VsU" id="RXABvRZ4nu" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
+              <property role="TrG5h" value="reference-build" />
+            </node>
+          </node>
+          <node concept="2vnsz3" id="RXABvRZ4nv" role="1NFp1Y">
+            <property role="2vk9_M" value="ENSEMBL_ANNOTATIONS" />
+            <property role="2vk9_N" value="ANNOTATIONS" />
+            <property role="TrG5h" value="ensembl-version-number" />
+            <node concept="2t8VsU" id="RXABvRZ4nw" role="2vnsw6">
+              <property role="2t8Vu2" value="" />
+              <property role="TrG5h" value="ensembl-version-number" />
+            </node>
+          </node>
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nV" role="3bnoS5">
+          <property role="3xVD5K" value="TABIX" />
+          <ref role="1NFp0I" node="RXABvRWPP8" resolve="TABIX" />
+        </node>
+        <node concept="1NwGl_" id="RXABvRZ4nW" role="3bnoS5">
+          <property role="3xVD5K" value="VCF_TOOLS" />
+          <ref role="1NFp0I" node="RXABvRWPPm" resolve="VCF_TOOLS" />
         </node>
       </node>
       <node concept="1XFuE8" id="6ojrriHiYFR" role="23NxHr" />
