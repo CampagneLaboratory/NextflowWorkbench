@@ -66,6 +66,7 @@
       </concept>
       <concept id="1311266352922359807" name="org.campagnelab.bash.nyosh.structure.RequestedResource" flags="ng" index="3xUnCN">
         <property id="1008131731648663094" name="message" index="3Ui_h1" />
+        <reference id="1293726533003474604" name="resourceVersion" index="1PROJ1" />
         <reference id="1293726533003473840" name="resourceRange" index="1PROVt" />
       </concept>
       <concept id="1293726532999536931" name="org.campagnelab.bash.nyosh.structure.ResourceRangeContainer" flags="ng" index="1M6PLe">
@@ -230,9 +231,10 @@
   <node concept="1QJbas" id="6ojrriHiYFb">
     <property role="TrG5h" value="FirstBashNYoSh" />
     <node concept="NgwLd" id="6ojrriHiYFQ" role="1QJbqZ">
-      <node concept="3xUnCN" id="4DwTgsUkb0G" role="NgwMD">
-        <property role="3Ui_h1" value="not resolved" />
-        <ref role="1PROVt" node="12v2Kg_BiR1" resolve="BEDTOOLS" />
+      <node concept="3xUnCN" id="4DwTgsUniLt" role="NgwMD">
+        <property role="3Ui_h1" value="failed to resolve" />
+        <ref role="1PROVt" node="12v2Kg_BiQX" resolve="ANNOTATE_VCF" />
+        <ref role="1PROJ1" node="12v2Kg_BiQY" resolve="1.2.1" />
       </node>
       <node concept="1XFuE8" id="6ojrriHiYFR" role="23NxHr" />
       <node concept="19SGf9" id="6ojrriHiYFT" role="3Y$PkS">
