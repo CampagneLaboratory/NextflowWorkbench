@@ -129,6 +129,9 @@
     <node concept="PrWs8" id="6A9boVQ8yHo" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
+    <node concept="PrWs8" id="4tpnhtPrXh3" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6A9boVQPeld">
     <property role="TrG5h" value="AttributeAdapterForResource" />

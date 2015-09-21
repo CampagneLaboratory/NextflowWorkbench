@@ -8,6 +8,7 @@
   <imports>
     <import index="6pk0" ref="r:48f4e449-1a18-435e-ae88-4830aa794dc7(org.campagnelab.nyosh.environment.structure)" />
     <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -98,6 +99,26 @@
       <ref role="1N5Vy1" to="iuj9:6A9boVQ8yHn" />
       <node concept="1dDu$B" id="6A9boVQ8yHr" role="1N6uqs">
         <ref role="1dDu$A" to="6pk0:5a_m_wWNCiv" resolve="EnvVariableDeclaration" />
+      </node>
+      <node concept="3k9gUc" id="4tpnhtPrXe_" role="3kmjI7">
+        <node concept="3clFbS" id="4tpnhtPrXeA" role="2VODD2">
+          <node concept="3clFbF" id="4tpnhtPrXhc" role="3cqZAp">
+            <node concept="37vLTI" id="4tpnhtPrXGf" role="3clFbG">
+              <node concept="2OqwBi" id="4tpnhtPrXMw" role="37vLTx">
+                <node concept="3khVwk" id="4tpnhtPrXJR" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4tpnhtPrY5r" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4tpnhtPrXj3" role="37vLTJ">
+                <node concept="3kakTB" id="4tpnhtPrXhb" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4tpnhtPrXu5" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

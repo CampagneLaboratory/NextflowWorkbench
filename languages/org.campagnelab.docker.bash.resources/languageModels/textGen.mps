@@ -464,12 +464,7 @@
           </node>
           <node concept="l9hG8" id="4tpnhtPq_47" role="lcghm">
             <node concept="2OqwBi" id="4tpnhtPq_s1" role="lb14g">
-              <node concept="2OqwBi" id="4tpnhtPq_6W" role="2Oq$k0">
-                <node concept="117lpO" id="4tpnhtPq_4Y" role="2Oq$k0" />
-                <node concept="3TrEf2" id="4tpnhtPq_gX" role="2OqNvi">
-                  <ref role="3Tt5mk" to="iuj9:6A9boVQ8yHn" />
-                </node>
-              </node>
+              <node concept="117lpO" id="4tpnhtPq_4Y" role="2Oq$k0" />
               <node concept="3TrcHB" id="4tpnhtPq_Jv" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
