@@ -6996,70 +6996,67 @@
           </node>
         </node>
       </node>
-      <node concept="1XFuE8" id="6ojrriHiYFR" role="23NxHr">
-        <property role="1XFuEG" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins" />
-      </node>
       <node concept="19SGf9" id="6ojrriHiYFT" role="3Y$PkS">
         <node concept="19SUe$" id="6ojrriHiYFU" role="19SJt6">
           <property role="19SUeA" value="echo &quot;Hello from the script&quot;" />
         </node>
       </node>
-      <node concept="1IqXV7" id="3A$s7PqqKrp" role="23Rrb0">
+      <node concept="1IqXV7" id="2yWEBmLG3sd" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.AMF249DSc1/Render" />
         <property role="TrG5h" value="Apple_PubSub_Socket_Render" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="3A$s7PqqKrq" role="23Rrb0">
+      <node concept="1IqXV7" id="2yWEBmLG3se" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.U3Y3gHYRlL/org.macosforge.xquartz:0" />
         <property role="TrG5h" value="DISPLAY" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="3A$s7PqqKrr" role="23Rrb0">
+      <node concept="1IqXV7" id="2yWEBmLG3sf" role="23Rrb0">
         <property role="2rInPY" value="/Users/mas2182" />
         <property role="TrG5h" value="HOME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="3A$s7PqqKrs" role="23Rrb0">
+      <node concept="1IqXV7" id="2yWEBmLG3sg" role="23Rrb0">
         <property role="2rInPY" value="mas2182" />
         <property role="TrG5h" value="LOGNAME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="3A$s7PqqKrt" role="23Rrb0">
+      <node concept="1IqXV7" id="2yWEBmLG3sh" role="23Rrb0">
         <property role="2rInPY" value="/usr/bin:/bin:/usr/sbin:/sbin" />
         <property role="TrG5h" value="PATH" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="3A$s7PqqKru" role="23Rrb0">
+      <node concept="1IqXV7" id="2yWEBmLG3si" role="23Rrb0">
         <property role="2rInPY" value="/bin/bash" />
         <property role="TrG5h" value="SHELL" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="3A$s7PqqKrv" role="23Rrb0">
+      <node concept="1IqXV7" id="2yWEBmLG3sj" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.Wt3Z6E8v86/Listeners" />
         <property role="TrG5h" value="SSH_AUTH_SOCK" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="3A$s7PqqKrw" role="23Rrb0">
+      <node concept="1IqXV7" id="2yWEBmLG3sk" role="23Rrb0">
         <property role="2rInPY" value="/var/folders/_b/yxqf80914033gdcjr2jz91_h0000gq/T/" />
         <property role="TrG5h" value="TMPDIR" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="3A$s7PqqKrx" role="23Rrb0">
+      <node concept="1IqXV7" id="2yWEBmLG3sl" role="23Rrb0">
         <property role="2rInPY" value="mas2182" />
         <property role="TrG5h" value="USER" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="3A$s7PqqKry" role="23Rrb0">
+      <node concept="1IqXV7" id="2yWEBmLG3sm" role="23Rrb0">
         <property role="2rInPY" value="0x0" />
         <property role="TrG5h" value="XPC_FLAGS" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="3A$s7PqqKrz" role="23Rrb0">
+      <node concept="1IqXV7" id="2yWEBmLG3sn" role="23Rrb0">
         <property role="2rInPY" value="com.jetbrains.intellij.53424" />
         <property role="TrG5h" value="XPC_SERVICE_NAME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="3A$s7PqqKr$" role="23Rrb0">
+      <node concept="1IqXV7" id="2yWEBmLG3so" role="23Rrb0">
         <property role="2rInPY" value="0x1F7:0x0:0x0" />
         <property role="TrG5h" value="__CF_USER_TEXT_ENCODING" />
         <property role="3vthGj" value="STRING" />
@@ -7554,21 +7551,6 @@
       <node concept="1M6RvD" id="3A$s7PqbVaZ" role="1M2wA0">
         <property role="TrG5h" value="0.1.10" />
       </node>
-    </node>
-  </node>
-  <node concept="1QJbas" id="3A$s7PqqDlX">
-    <node concept="NgwLd" id="3A$s7PqqDmU" role="1QJbqZ">
-      <node concept="3xUnCN" id="3A$s7PqqDnc" role="NgwMD">
-        <property role="3Ui_h1" value="not resolved" />
-        <ref role="1PROVt" node="3A$s7PqbV8$" resolve="ANNOTATE_VCF" />
-      </node>
-      <node concept="1XFuE8" id="3A$s7PqqDmV" role="23NxHr" />
-      <node concept="19SGf9" id="3A$s7PqqDmX" role="3Y$PkS">
-        <node concept="19SUe$" id="3A$s7PqqDmY" role="19SJt6" />
-      </node>
-    </node>
-    <node concept="VtuK3" id="3A$s7PqqDlZ" role="234boB">
-      <property role="VuL0s" value="latest" />
     </node>
   </node>
 </model>

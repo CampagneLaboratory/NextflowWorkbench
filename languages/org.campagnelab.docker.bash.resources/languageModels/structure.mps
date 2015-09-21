@@ -108,12 +108,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="6pk0:5a_m_wWNCiv" resolve="EnvVariableDeclaration" />
     </node>
-    <node concept="1TJgyj" id="irqYu7ln2W" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="pluginSystemRootDirectory" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="935h:5XBY1KyMxak" resolve="PluginSystemRootDirectory" />
-    </node>
     <node concept="PrWs8" id="irqYu7mnNv" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
