@@ -343,6 +343,73 @@
           </node>
           <node concept="l8MVK" id="6ojrriHoEoD" role="lcghm" />
         </node>
+        <node concept="lc7rE" id="4tpnhtPxfSp" role="3cqZAp">
+          <node concept="la8eA" id="4tpnhtPxg1L" role="lcghm">
+            <property role="lacIc" value="export JOB_DIR=$JOB_AREA/$RESOURCE_OWNER/" />
+          </node>
+          <node concept="l9hG8" id="4tpnhtPxgea" role="lcghm">
+            <node concept="3cpWs3" id="4tpnhtPxgeb" role="lb14g">
+              <node concept="37vLTw" id="4tpnhtPxgec" role="3uHU7w">
+                <ref role="3cqZAo" node="6ojrriHoEo5" resolve="tag" />
+              </node>
+              <node concept="3cpWs3" id="4tpnhtPxged" role="3uHU7B">
+                <node concept="2OqwBi" id="4tpnhtPxgee" role="3uHU7B">
+                  <node concept="37vLTw" id="4tpnhtPxgef" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6ojrriHoEo5" resolve="tag" />
+                  </node>
+                  <node concept="liA8E" id="4tpnhtPxgeg" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <node concept="3cmrfG" id="4tpnhtPxgeh" role="37wK5m">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                    <node concept="3cmrfG" id="4tpnhtPxgei" role="37wK5m">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="4tpnhtPxgej" role="3uHU7w">
+                  <property role="Xl_RC" value="/" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="4tpnhtPxgsI" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="4tpnhtPxfnn" role="3cqZAp">
+          <node concept="la8eA" id="4tpnhtPxfno" role="lcghm">
+            <property role="lacIc" value="source $JOB_AREA/$RESOURCE_OWNER/" />
+          </node>
+          <node concept="l9hG8" id="4tpnhtPxfnp" role="lcghm">
+            <node concept="3cpWs3" id="4tpnhtPxfnq" role="lb14g">
+              <node concept="37vLTw" id="4tpnhtPxfnr" role="3uHU7w">
+                <ref role="3cqZAo" node="6ojrriHoEo5" resolve="tag" />
+              </node>
+              <node concept="3cpWs3" id="4tpnhtPxfns" role="3uHU7B">
+                <node concept="2OqwBi" id="4tpnhtPxfnt" role="3uHU7B">
+                  <node concept="37vLTw" id="4tpnhtPxfnu" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6ojrriHoEo5" resolve="tag" />
+                  </node>
+                  <node concept="liA8E" id="4tpnhtPxfnv" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <node concept="3cmrfG" id="4tpnhtPxfnw" role="37wK5m">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                    <node concept="3cmrfG" id="4tpnhtPxfnx" role="37wK5m">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="4tpnhtPxfny" role="3uHU7w">
+                  <property role="Xl_RC" value="/" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="4tpnhtPxfnz" role="lcghm">
+            <property role="lacIc" value="/auto-options.sh" />
+          </node>
+          <node concept="l8MVK" id="4tpnhtPxfn$" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="6ojrriHoEoE" role="3cqZAp">
           <node concept="la8eA" id="6ojrriHoEoF" role="lcghm">
             <property role="lacIc" value="source $JOB_AREA/$RESOURCE_OWNER/" />
