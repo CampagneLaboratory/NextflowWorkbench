@@ -117,7 +117,7 @@
   </node>
   <node concept="1TIwiD" id="6A9boVQ8yHm">
     <property role="TrG5h" value="NYoShEnvVariableRef" />
-    <property role="34LRSv" value="$" />
+    <property role="34LRSv" value="${" />
     <property role="R4oN_" value="reference a GobyWeb resource variable declaration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6A9boVQ8yHn" role="1TKVEi">

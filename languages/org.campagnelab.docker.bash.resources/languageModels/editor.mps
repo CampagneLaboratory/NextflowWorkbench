@@ -233,10 +233,13 @@
     <ref role="1XX52x" to="iuj9:6A9boVQ8yHm" resolve="NYoShEnvVariableRef" />
     <node concept="3EZMnI" id="6A9boVQ8yHt" role="2wV5jI">
       <node concept="3F0ifn" id="6A9boVQ8yHu" role="3EZMnx">
-        <property role="3F0ifm" value="$" />
+        <property role="3F0ifm" value="${" />
         <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
         <node concept="11LMrY" id="6A9boVQ8yHv" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="4tpnhtPoPrQ" role="3F10Kt">
+          <property role="Vb096" value="DARK_GREEN" />
         </node>
       </node>
       <node concept="1iCGBv" id="6A9boVQ8yHw" role="3EZMnx">
@@ -250,6 +253,15 @@
         </node>
       </node>
       <node concept="l2Vlx" id="6A9boVQ8yHz" role="2iSdaV" />
+      <node concept="3F0ifn" id="4tpnhtPnJOm" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="11L4FC" id="4tpnhtPnJQr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="4tpnhtPoPpZ" role="3F10Kt">
+          <property role="Vb096" value="DARK_GREEN" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="V5hpn" id="irqYu7oFvW">
