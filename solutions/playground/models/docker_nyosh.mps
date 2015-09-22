@@ -28,6 +28,9 @@
   <registry>
     <language id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive">
       <concept id="5865189911929158310" name="org.campagnelab.gobyweb.interactive.structure.NYoShUser" flags="ng" index="9QaQ0" />
+      <concept id="1405392831553684079" name="org.campagnelab.gobyweb.interactive.structure.StringAttribute" flags="ng" index="2t8VsU">
+        <property id="1405392831553684183" name="value" index="2t8Vu2" />
+      </concept>
       <concept id="1997533223701191426" name="org.campagnelab.gobyweb.interactive.structure.PluginRepository" flags="ng" index="Eubbw">
         <property id="5752449153162294620" name="viewPlugins" index="2_qfHq" />
         <property id="1997533223701200855" name="directory" index="Eu9oP" />
@@ -59,6 +62,14 @@
       </concept>
     </language>
     <language id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh">
+      <concept id="7604659537841546573" name="org.campagnelab.bash.nyosh.structure.AttributeAdapterForResource" flags="ng" index="2vnsz3">
+        <property id="7604659537841861884" name="resource" index="2vk9_M" />
+        <property id="7604659537841861885" name="artifact" index="2vk9_N" />
+        <child id="7604659537841546632" name="attribute" index="2vnsw6" />
+      </concept>
+      <concept id="7604659537842635753" name="org.campagnelab.bash.nyosh.structure.ReferenceAttribute" flags="ng" index="2vraTB">
+        <reference id="7604659537842635787" name="ref" index="2vraA5" />
+      </concept>
       <concept id="7604659537829833558" name="org.campagnelab.bash.nyosh.structure.NYoShEnvVariableRef" flags="ng" index="2vEKro">
         <reference id="7604659537829833559" name="variable" index="2vEKrp" />
       </concept>
@@ -85,6 +96,7 @@
         <property id="1311266352922369212" name="id" index="3xVD5K" />
         <reference id="5359535375768188201" name="config" index="1NFp0I" />
         <child id="9092927410768546855" name="availableVariables" index="31thPE" />
+        <child id="5359535375768188281" name="attributeValues" index="1NFp1Y" />
       </concept>
     </language>
     <language id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash">
@@ -6867,141 +6879,619 @@
   <node concept="1QJbas" id="6ojrriHiYFb">
     <property role="TrG5h" value="FirstBashNYoSh" />
     <node concept="NgwLd" id="6ojrriHiYFQ" role="1QJbqZ">
-      <node concept="3xUnCN" id="4tpnhtP_eVf" role="NgwMD">
+      <node concept="3xUnCN" id="4tpnhtPIBO0" role="NgwMD">
         <property role="3Ui_h1" value="" />
-        <ref role="1PROVt" node="3A$s7PqbV9k" resolve="FETCH_URL" />
-        <ref role="1PROJ1" node="3A$s7PqbV9n" resolve="1.2" />
-        <ref role="1NFp0I" node="4tpnhtP_gqD" resolve="FETCH_URL" />
-        <node concept="1NwGl_" id="4tpnhtP_hQj" role="3bnoS5">
-          <property role="3xVD5K" value="BASH_LIBRARY" />
-          <ref role="1NFp0I" node="4tpnhtP_goS" resolve="BASH_LIBRARY" />
-          <node concept="1IqXV7" id="4tpnhtP_hR2" role="31thPE">
+        <ref role="1PROJ1" node="3A$s7PqbV8R" resolve="0.5.9.16.7" />
+        <ref role="1NFp0I" node="4tpnhtP_gpb" resolve="BWA_WITH_GOBY_ARTIFACT" />
+        <ref role="1PROVt" node="3A$s7PqbV8Q" resolve="BWA_WITH_GOBY_ARTIFACT" />
+        <node concept="1NwGl_" id="4tpnhtPJefx" role="3bnoS5">
+          <property role="3xVD5K" value="SAMTOOLS" />
+          <ref role="1NFp0I" node="4tpnhtP_gte" resolve="SAMTOOLS" />
+          <node concept="1IqXV7" id="4tpnhtPJxJb" role="31thPE">
             <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
             <property role="TrG5h" value="JOB_DIR" />
             <property role="3vthGj" value="DIRECTORY" />
           </node>
-          <node concept="1IqXV7" id="4tpnhtP_hR3" role="31thPE">
-            <property role="2rInPY" value="${JOB_DIR}/calculateMD5.sh" />
-            <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_CALCULATE_MD5" />
+          <node concept="1IqXV7" id="4tpnhtPJxJc" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJd" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/samtools" />
+            <property role="TrG5h" value="RESOURCES_SAMTOOLS_EXEC_PATH" />
             <property role="3vthGj" value="FILE" />
           </node>
-          <node concept="1IqXV7" id="4tpnhtP_hR4" role="31thPE">
-            <property role="2rInPY" value="${JOB_DIR}/maps_in_bash3.sh" />
-            <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_MAPS_IN_BASH3" />
+          <node concept="1IqXV7" id="4tpnhtPJxJe" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+            <property role="TrG5h" value="RESOURCES_SAMTOOLS_INSTALL" />
             <property role="3vthGj" value="FILE" />
           </node>
-          <node concept="1IqXV7" id="4tpnhtP_hR5" role="31thPE">
+          <node concept="1IqXV7" id="4tpnhtPJxJf" role="31thPE">
             <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
             <property role="TrG5h" value="SGE_O_WORKDIR" />
             <property role="3vthGj" value="DIRECTORY" />
           </node>
-          <node concept="1IqXV7" id="4tpnhtP_hR6" role="31thPE">
+          <node concept="1IqXV7" id="4tpnhtPJxJg" role="31thPE">
             <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
             <property role="TrG5h" value="TMPDIR" />
             <property role="3vthGj" value="DIRECTORY" />
           </node>
         </node>
-        <node concept="1IqXV7" id="4tpnhtP_hQV" role="31thPE">
+        <node concept="1NwGl_" id="4tpnhtPJefw" role="3bnoS5">
+          <property role="3xVD5K" value="BASH_LIBRARY" />
+          <ref role="1NFp0I" node="4tpnhtP_goS" resolve="BASH_LIBRARY" />
+          <node concept="1IqXV7" id="4tpnhtPJxJh" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="JOB_DIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJi" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/calculateMD5.sh" />
+            <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_CALCULATE_MD5" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJj" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/maps_in_bash3.sh" />
+            <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_MAPS_IN_BASH3" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJk" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="SGE_O_WORKDIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJl" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="TMPDIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+        </node>
+        <node concept="1NwGl_" id="4tpnhtPJefv" role="3bnoS5">
+          <property role="3xVD5K" value="FETCH_URL" />
+          <ref role="1NFp0I" node="4tpnhtP_gqD" resolve="FETCH_URL" />
+          <node concept="1IqXV7" id="4tpnhtPJxJm" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="JOB_DIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJn" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/calculateMD5.sh" />
+            <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_CALCULATE_MD5" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJo" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/maps_in_bash3.sh" />
+            <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_MAPS_IN_BASH3" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJp" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/fetch_url" />
+            <property role="TrG5h" value="RESOURCES_FETCH_URL_SCRIPT" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJq" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/fetch_url_pattern" />
+            <property role="TrG5h" value="RESOURCES_FETCH_URL_SCRIPT_PATTERN" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJr" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="SGE_O_WORKDIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJs" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="TMPDIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+        </node>
+        <node concept="1NwGl_" id="4tpnhtPJefo" role="3bnoS5">
+          <property role="3xVD5K" value="ENSEMBL_GENOMES" />
+          <ref role="1NFp0I" node="4tpnhtP_gqi" resolve="ENSEMBL_GENOMES" />
+          <node concept="2vnsz3" id="4tpnhtPJefp" role="1NFp1Y">
+            <property role="2vk9_M" value="ENSEMBL_GENOMES" />
+            <property role="2vk9_N" value="TOPLEVEL" />
+            <property role="TrG5h" value="organism" />
+            <node concept="2vraTB" id="4tpnhtPJefq" role="2vnsw6">
+              <property role="TrG5h" value="organism" />
+              <ref role="2vraA5" node="4tpnhtPJefa" resolve="organism" />
+            </node>
+          </node>
+          <node concept="2vnsz3" id="4tpnhtPJefr" role="1NFp1Y">
+            <property role="2vk9_M" value="ENSEMBL_GENOMES" />
+            <property role="2vk9_N" value="TOPLEVEL" />
+            <property role="TrG5h" value="reference-build" />
+            <node concept="2vraTB" id="4tpnhtPJefs" role="2vnsw6">
+              <property role="TrG5h" value="reference-build" />
+              <ref role="2vraA5" node="4tpnhtPJefc" resolve="reference-build" />
+            </node>
+          </node>
+          <node concept="2vnsz3" id="4tpnhtPJeft" role="1NFp1Y">
+            <property role="2vk9_M" value="ENSEMBL_GENOMES" />
+            <property role="2vk9_N" value="TOPLEVEL" />
+            <property role="TrG5h" value="ensembl-version-number" />
+            <node concept="2vraTB" id="4tpnhtPJefu" role="2vnsw6">
+              <property role="TrG5h" value="ensembl-version-number" />
+              <ref role="2vraA5" node="4tpnhtPJefe" resolve="ensembl-version-number" />
+            </node>
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJt" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="JOB_DIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJu" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJv" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_ENSEMBL_VERSION_NUMBER" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJw" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_ORGANISM" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJx" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_REFERENCE_BUILD" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJy" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/calculateMD5.sh" />
+            <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_CALCULATE_MD5" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJz" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/maps_in_bash3.sh" />
+            <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_MAPS_IN_BASH3" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJ$" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+            <property role="TrG5h" value="RESOURCES_ENSEMBL_GENOMES_INSTALL" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJ_" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/fetch_url" />
+            <property role="TrG5h" value="RESOURCES_FETCH_URL_SCRIPT" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJA" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/fetch_url_pattern" />
+            <property role="TrG5h" value="RESOURCES_FETCH_URL_SCRIPT_PATTERN" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJB" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="SGE_O_WORKDIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJC" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="TMPDIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+        </node>
+        <node concept="1NwGl_" id="4tpnhtPJefg" role="3bnoS5">
+          <property role="3xVD5K" value="PROTOBUF_CPP" />
+          <ref role="1NFp0I" node="4tpnhtP_gsV" resolve="PROTOBUF_CPP" />
+          <node concept="1IqXV7" id="4tpnhtPJxJD" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="JOB_DIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJE" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_PROTOBUF_CPP_LIBRARIES" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJF" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+            <property role="TrG5h" value="RESOURCES_PROTOBUF_CPP_INSTALL" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJG" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="SGE_O_WORKDIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJH" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="TMPDIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPIBU1" role="31thPE">
           <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
           <property role="TrG5h" value="JOB_DIR" />
           <property role="3vthGj" value="DIRECTORY" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtP_hQW" role="31thPE">
-          <property role="2rInPY" value="${JOB_DIR}/calculateMD5.sh" />
-          <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_CALCULATE_MD5" />
-          <property role="3vthGj" value="FILE" />
+        <node concept="1IqXV7" id="4tpnhtPIBU2" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BISMARK_ARTIFACT_INDEX" />
+          <property role="3vthGj" value="STRING" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtP_hQX" role="31thPE">
-          <property role="2rInPY" value="${JOB_DIR}/maps_in_bash3.sh" />
-          <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_MAPS_IN_BASH3" />
-          <property role="3vthGj" value="FILE" />
+        <node concept="1IqXV7" id="4tpnhtPIBU3" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BISMARK_ARTIFACT_INDEX_ENSEMBL_VERSION_NUMBER" />
+          <property role="3vthGj" value="STRING" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtP_hQY" role="31thPE">
-          <property role="2rInPY" value="${JOB_DIR}/fetch_url" />
-          <property role="TrG5h" value="RESOURCES_FETCH_URL_SCRIPT" />
-          <property role="3vthGj" value="FILE" />
+        <node concept="1IqXV7" id="4tpnhtPIBU4" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BISMARK_ARTIFACT_INDEX_ORGANISM" />
+          <property role="3vthGj" value="STRING" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtP_hQZ" role="31thPE">
-          <property role="2rInPY" value="${JOB_DIR}/fetch_url_pattern" />
-          <property role="TrG5h" value="RESOURCES_FETCH_URL_SCRIPT_PATTERN" />
-          <property role="3vthGj" value="FILE" />
+        <node concept="1IqXV7" id="4tpnhtPIBU5" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BISMARK_ARTIFACT_INDEX_REFERENCE_BUILD" />
+          <property role="3vthGj" value="STRING" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtP_hR0" role="31thPE">
-          <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
-          <property role="TrG5h" value="SGE_O_WORKDIR" />
-          <property role="3vthGj" value="DIRECTORY" />
+        <node concept="1IqXV7" id="4tpnhtPIBU6" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BISMARK_ARTIFACT_SCRIPTS" />
+          <property role="3vthGj" value="STRING" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtP_hR1" role="31thPE">
-          <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
-          <property role="TrG5h" value="TMPDIR" />
-          <property role="3vthGj" value="DIRECTORY" />
+        <node concept="1IqXV7" id="4tpnhtPIBU7" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BOWTIE2_ARTIFACT_BINARIES" />
+          <property role="3vthGj" value="STRING" />
         </node>
-      </node>
-      <node concept="3xUnCN" id="4tpnhtP_hQn" role="NgwMD">
-        <property role="3Ui_h1" value="" />
-        <ref role="1PROVt" node="3A$s7PqbV9s" resolve="GOBY" />
-        <ref role="1PROJ1" node="3A$s7PqbV9$" resolve="20150822175223" />
-        <ref role="1NFp0I" node="4tpnhtP_gqU" resolve="GOBY" />
-        <node concept="1IqXV7" id="4tpnhtP_hR7" role="31thPE">
-          <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
-          <property role="TrG5h" value="JOB_DIR" />
-          <property role="3vthGj" value="DIRECTORY" />
+        <node concept="1IqXV7" id="4tpnhtPIBU8" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL" />
+          <property role="3vthGj" value="STRING" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtP_hR8" role="31thPE">
-          <property role="2rInPY" value="${JOB_DIR}/goby.jar" />
-          <property role="TrG5h" value="RESOURCES_GOBY_GOBY_JAR" />
-          <property role="3vthGj" value="FILE" />
+        <node concept="1IqXV7" id="4tpnhtPIBU9" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_ENSEMBL_VERSION_NUMBER" />
+          <property role="3vthGj" value="STRING" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtP_hR9" role="31thPE">
-          <property role="2rInPY" value="${JOB_DIR}/goby-script.sh" />
-          <property role="TrG5h" value="RESOURCES_GOBY_SHELL_SCRIPT" />
-          <property role="3vthGj" value="FILE" />
+        <node concept="1IqXV7" id="4tpnhtPIBUa" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_ORGANISM" />
+          <property role="3vthGj" value="STRING" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtP_hRa" role="31thPE">
-          <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
-          <property role="TrG5h" value="SGE_O_WORKDIR" />
-          <property role="3vthGj" value="DIRECTORY" />
+        <node concept="1IqXV7" id="4tpnhtPIBUb" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_REFERENCE_BUILD" />
+          <property role="3vthGj" value="STRING" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtP_hRb" role="31thPE">
-          <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
-          <property role="TrG5h" value="TMPDIR" />
-          <property role="3vthGj" value="DIRECTORY" />
+        <node concept="1IqXV7" id="4tpnhtPIBUc" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_FAI_INDEXED_GENOMES_SAMTOOLS_FAI_INDEX" />
+          <property role="3vthGj" value="STRING" />
         </node>
-      </node>
-      <node concept="3xUnCN" id="4tpnhtPFtWS" role="NgwMD">
-        <property role="3Ui_h1" value="" />
-        <ref role="1PROVt" node="3A$s7PqbVaE" resolve="SAMTOOLS" />
-        <ref role="1PROJ1" node="3A$s7PqbVaH" resolve="0.1.18.1" />
-        <ref role="1NFp0I" node="4tpnhtP_gte" resolve="SAMTOOLS" />
-        <node concept="1IqXV7" id="4tpnhtPFuoZ" role="31thPE">
-          <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
-          <property role="TrG5h" value="JOB_DIR" />
-          <property role="3vthGj" value="DIRECTORY" />
+        <node concept="1IqXV7" id="4tpnhtPIBUd" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_FAI_INDEXED_GENOMES_SAMTOOLS_FAI_INDEX_ENSEMBL_VERSION_NUMBER" />
+          <property role="3vthGj" value="STRING" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtPFup0" role="31thPE">
+        <node concept="1IqXV7" id="4tpnhtPIBUe" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_FAI_INDEXED_GENOMES_SAMTOOLS_FAI_INDEX_ORGANISM" />
+          <property role="3vthGj" value="STRING" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPIBUf" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_FAI_INDEXED_GENOMES_SAMTOOLS_FAI_INDEX_REFERENCE_BUILD" />
+          <property role="3vthGj" value="STRING" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPIBUg" role="31thPE">
           <property role="2rInPY" value="" />
           <property role="TrG5h" value="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
           <property role="3vthGj" value="STRING" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtPFup1" role="31thPE">
+        <node concept="1IqXV7" id="4tpnhtPIBUh" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/calculateMD5.sh" />
+          <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_CALCULATE_MD5" />
+          <property role="3vthGj" value="FILE" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPIBUi" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/maps_in_bash3.sh" />
+          <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_MAPS_IN_BASH3" />
+          <property role="3vthGj" value="FILE" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPIBUj" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+          <property role="TrG5h" value="RESOURCES_BISMARK_ARTIFACT_INSTALL" />
+          <property role="3vthGj" value="FILE" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPIBUk" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+          <property role="TrG5h" value="RESOURCES_BOWTIE2_ARTIFACT_INSTALL" />
+          <property role="3vthGj" value="FILE" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPIBUl" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+          <property role="TrG5h" value="RESOURCES_ENSEMBL_GENOMES_INSTALL" />
+          <property role="3vthGj" value="FILE" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPIBUm" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+          <property role="TrG5h" value="RESOURCES_FAI_INDEXED_GENOMES_INSTALL" />
+          <property role="3vthGj" value="FILE" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPIBUn" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/fetch_url" />
+          <property role="TrG5h" value="RESOURCES_FETCH_URL_SCRIPT" />
+          <property role="3vthGj" value="FILE" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPIBUo" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/fetch_url_pattern" />
+          <property role="TrG5h" value="RESOURCES_FETCH_URL_SCRIPT_PATTERN" />
+          <property role="3vthGj" value="FILE" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPIBUp" role="31thPE">
           <property role="2rInPY" value="${JOB_DIR}/samtools" />
           <property role="TrG5h" value="RESOURCES_SAMTOOLS_EXEC_PATH" />
           <property role="3vthGj" value="FILE" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtPFup2" role="31thPE">
+        <node concept="1IqXV7" id="4tpnhtPIBUq" role="31thPE">
           <property role="2rInPY" value="${JOB_DIR}/install.sh" />
           <property role="TrG5h" value="RESOURCES_SAMTOOLS_INSTALL" />
           <property role="3vthGj" value="FILE" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtPFup3" role="31thPE">
+        <node concept="1IqXV7" id="4tpnhtPIBUr" role="31thPE">
           <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
           <property role="TrG5h" value="SGE_O_WORKDIR" />
           <property role="3vthGj" value="DIRECTORY" />
         </node>
-        <node concept="1IqXV7" id="4tpnhtPFup4" role="31thPE">
+        <node concept="1IqXV7" id="4tpnhtPIBUs" role="31thPE">
           <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
           <property role="TrG5h" value="TMPDIR" />
           <property role="3vthGj" value="DIRECTORY" />
+        </node>
+        <node concept="2vnsz3" id="4tpnhtPJef9" role="1NFp1Y">
+          <property role="2vk9_M" value="BWA_WITH_GOBY_ARTIFACT" />
+          <property role="2vk9_N" value="INDEX" />
+          <property role="TrG5h" value="organism" />
+          <node concept="2t8VsU" id="4tpnhtPJefa" role="2vnsw6">
+            <property role="2t8Vu2" value="caenorhabditis_elegans" />
+            <property role="TrG5h" value="organism" />
+          </node>
+        </node>
+        <node concept="2vnsz3" id="4tpnhtPJefb" role="1NFp1Y">
+          <property role="2vk9_M" value="BWA_WITH_GOBY_ARTIFACT" />
+          <property role="2vk9_N" value="INDEX" />
+          <property role="TrG5h" value="reference-build" />
+          <node concept="2t8VsU" id="4tpnhtPJefc" role="2vnsw6">
+            <property role="2t8Vu2" value="WBcel215" />
+            <property role="TrG5h" value="reference-build" />
+          </node>
+        </node>
+        <node concept="2vnsz3" id="4tpnhtPJefd" role="1NFp1Y">
+          <property role="2vk9_M" value="BWA_WITH_GOBY_ARTIFACT" />
+          <property role="2vk9_N" value="INDEX" />
+          <property role="TrG5h" value="ensembl-version-number" />
+          <node concept="2t8VsU" id="4tpnhtPJefe" role="2vnsw6">
+            <property role="2t8Vu2" value="69" />
+            <property role="TrG5h" value="ensembl-version-number" />
+          </node>
+        </node>
+        <node concept="1NwGl_" id="4tpnhtPJeff" role="3bnoS5">
+          <property role="3xVD5K" value="GOBY_CPP_API" />
+          <ref role="1NFp0I" node="4tpnhtP_gqW" resolve="GOBY_CPP_API" />
+          <node concept="1IqXV7" id="4tpnhtPJxJI" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="JOB_DIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJJ" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_GOBY_CPP_API_LIBRARIES" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJK" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_PROTOBUF_CPP_LIBRARIES" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJL" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+            <property role="TrG5h" value="RESOURCES_GOBY_CPP_API_INSTALL" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJM" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+            <property role="TrG5h" value="RESOURCES_PROTOBUF_CPP_INSTALL" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJN" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="SGE_O_WORKDIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJO" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="TMPDIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+        </node>
+        <node concept="1NwGl_" id="4tpnhtPJefh" role="3bnoS5">
+          <property role="3xVD5K" value="FAI_INDEXED_GENOMES" />
+          <ref role="1NFp0I" node="4tpnhtP_gqw" resolve="FAI_INDEXED_GENOMES" />
+          <node concept="2vnsz3" id="4tpnhtPJefi" role="1NFp1Y">
+            <property role="2vk9_M" value="FAI_INDEXED_GENOMES" />
+            <property role="2vk9_N" value="SAMTOOLS_FAI_INDEX" />
+            <property role="TrG5h" value="organism" />
+            <node concept="2vraTB" id="4tpnhtPJefj" role="2vnsw6">
+              <property role="TrG5h" value="organism" />
+              <ref role="2vraA5" node="4tpnhtPJefa" resolve="organism" />
+            </node>
+          </node>
+          <node concept="2vnsz3" id="4tpnhtPJefk" role="1NFp1Y">
+            <property role="2vk9_M" value="FAI_INDEXED_GENOMES" />
+            <property role="2vk9_N" value="SAMTOOLS_FAI_INDEX" />
+            <property role="TrG5h" value="reference-build" />
+            <node concept="2vraTB" id="4tpnhtPJefl" role="2vnsw6">
+              <property role="TrG5h" value="reference-build" />
+              <ref role="2vraA5" node="4tpnhtPJefc" resolve="reference-build" />
+            </node>
+          </node>
+          <node concept="2vnsz3" id="4tpnhtPJefm" role="1NFp1Y">
+            <property role="2vk9_M" value="FAI_INDEXED_GENOMES" />
+            <property role="2vk9_N" value="SAMTOOLS_FAI_INDEX" />
+            <property role="TrG5h" value="ensembl-version-number" />
+            <node concept="2vraTB" id="4tpnhtPJefn" role="2vnsw6">
+              <property role="TrG5h" value="ensembl-version-number" />
+              <ref role="2vraA5" node="4tpnhtPJefe" resolve="ensembl-version-number" />
+            </node>
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJP" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="JOB_DIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJQ" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJR" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_ENSEMBL_VERSION_NUMBER" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJS" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_ORGANISM" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJT" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_REFERENCE_BUILD" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJU" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_FAI_INDEXED_GENOMES_SAMTOOLS_FAI_INDEX" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJV" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_FAI_INDEXED_GENOMES_SAMTOOLS_FAI_INDEX_ENSEMBL_VERSION_NUMBER" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJW" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_FAI_INDEXED_GENOMES_SAMTOOLS_FAI_INDEX_ORGANISM" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJX" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_FAI_INDEXED_GENOMES_SAMTOOLS_FAI_INDEX_REFERENCE_BUILD" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJY" role="31thPE">
+            <property role="2rInPY" value="" />
+            <property role="TrG5h" value="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
+            <property role="3vthGj" value="STRING" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxJZ" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/calculateMD5.sh" />
+            <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_CALCULATE_MD5" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxK0" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/maps_in_bash3.sh" />
+            <property role="TrG5h" value="RESOURCES_BASH_LIBRARY_MAPS_IN_BASH3" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxK1" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+            <property role="TrG5h" value="RESOURCES_ENSEMBL_GENOMES_INSTALL" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxK2" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+            <property role="TrG5h" value="RESOURCES_FAI_INDEXED_GENOMES_INSTALL" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxK3" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/fetch_url" />
+            <property role="TrG5h" value="RESOURCES_FETCH_URL_SCRIPT" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxK4" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/fetch_url_pattern" />
+            <property role="TrG5h" value="RESOURCES_FETCH_URL_SCRIPT_PATTERN" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxK5" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/samtools" />
+            <property role="TrG5h" value="RESOURCES_SAMTOOLS_EXEC_PATH" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxK6" role="31thPE">
+            <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+            <property role="TrG5h" value="RESOURCES_SAMTOOLS_INSTALL" />
+            <property role="3vthGj" value="FILE" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxK7" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="SGE_O_WORKDIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+          <node concept="1IqXV7" id="4tpnhtPJxK8" role="31thPE">
+            <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+            <property role="TrG5h" value="TMPDIR" />
+            <property role="3vthGj" value="DIRECTORY" />
+          </node>
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPJxJ1" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BWA_WITH_GOBY_ARTIFACT_EXECUTABLE" />
+          <property role="3vthGj" value="STRING" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPJxJ2" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BWA_WITH_GOBY_ARTIFACT_INDEX" />
+          <property role="3vthGj" value="STRING" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPJxJ3" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BWA_WITH_GOBY_ARTIFACT_INDEX_ENSEMBL_VERSION_NUMBER" />
+          <property role="3vthGj" value="STRING" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPJxJ4" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BWA_WITH_GOBY_ARTIFACT_INDEX_ORGANISM" />
+          <property role="3vthGj" value="STRING" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPJxJ5" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BWA_WITH_GOBY_ARTIFACT_INDEX_REFERENCE_BUILD" />
+          <property role="3vthGj" value="STRING" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPJxJ6" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_GOBY_CPP_API_LIBRARIES" />
+          <property role="3vthGj" value="STRING" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPJxJ7" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_PROTOBUF_CPP_LIBRARIES" />
+          <property role="3vthGj" value="STRING" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPJxJ8" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+          <property role="TrG5h" value="RESOURCES_BWA_WITH_GOBY_ARTIFACT_INSTALL" />
+          <property role="3vthGj" value="FILE" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPJxJ9" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+          <property role="TrG5h" value="RESOURCES_GOBY_CPP_API_INSTALL" />
+          <property role="3vthGj" value="FILE" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPJxJa" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+          <property role="TrG5h" value="RESOURCES_PROTOBUF_CPP_INSTALL" />
+          <property role="3vthGj" value="FILE" />
         </node>
       </node>
       <node concept="19SGf9" id="6ojrriHiYFT" role="3Y$PkS">
@@ -7009,83 +7499,76 @@
           <property role="19SUeA" value="echo &quot;path: " />
         </node>
         <node concept="2vEKro" id="4tpnhtPDgne" role="19SJt6">
-          <property role="TrG5h" value="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
-          <ref role="2vEKrp" node="4tpnhtPFup0" resolve="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BWA_WITH_GOBY_ARTIFACT_EXECUTABLE" />
+          <ref role="2vEKrp" node="4tpnhtPJxJ1" resolve="RESOURCES_ARTIFACTS_BWA_WITH_GOBY_ARTIFACT_EXECUTABLE" />
         </node>
         <node concept="19SUe$" id="4tpnhtPDgnd" role="19SJt6">
           <property role="19SUeA" value="&quot;&#10;ls -lrt " />
         </node>
-        <node concept="2vEKro" id="4tpnhtPG3SQ" role="19SJt6">
-          <property role="TrG5h" value="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
-          <ref role="2vEKrp" node="4tpnhtPFup0" resolve="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
+        <node concept="2vEKro" id="4tpnhtPIBZV" role="19SJt6">
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_BWA_WITH_GOBY_ARTIFACT_INDEX_ENSEMBL_VERSION_NUMBER" />
+          <ref role="2vEKrp" node="4tpnhtPJxJ3" resolve="RESOURCES_ARTIFACTS_BWA_WITH_GOBY_ARTIFACT_INDEX_ENSEMBL_VERSION_NUMBER" />
         </node>
-        <node concept="19SUe$" id="4tpnhtPG3SP" role="19SJt6">
-          <property role="19SUeA" value="&#10;sleep 4&#10;" />
-        </node>
-        <node concept="2vEKro" id="4tpnhtPGm8p" role="19SJt6">
-          <property role="TrG5h" value="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
-          <ref role="2vEKrp" node="4tpnhtPFup0" resolve="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
-        </node>
-        <node concept="19SUe$" id="4tpnhtPGm8o" role="19SJt6">
-          <property role="19SUeA" value="/samtools view -? || true&#10;" />
+        <node concept="19SUe$" id="4tpnhtPIBZU" role="19SJt6">
+          <property role="19SUeA" value="&#10;" />
         </node>
       </node>
-      <node concept="1IqXV7" id="4tpnhtPGCnW" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPJxIP" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.AMF249DSc1/Render" />
         <property role="TrG5h" value="Apple_PubSub_Socket_Render" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtPGCnX" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPJxIQ" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.U3Y3gHYRlL/org.macosforge.xquartz:0" />
         <property role="TrG5h" value="DISPLAY" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtPGCnY" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPJxIR" role="23Rrb0">
         <property role="2rInPY" value="/Users/mas2182" />
         <property role="TrG5h" value="HOME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtPGCnZ" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPJxIS" role="23Rrb0">
         <property role="2rInPY" value="mas2182" />
         <property role="TrG5h" value="LOGNAME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtPGCo0" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPJxIT" role="23Rrb0">
         <property role="2rInPY" value="/usr/bin:/bin:/usr/sbin:/sbin" />
         <property role="TrG5h" value="PATH" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtPGCo1" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPJxIU" role="23Rrb0">
         <property role="2rInPY" value="/bin/bash" />
         <property role="TrG5h" value="SHELL" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtPGCo2" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPJxIV" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.Wt3Z6E8v86/Listeners" />
         <property role="TrG5h" value="SSH_AUTH_SOCK" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtPGCo3" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPJxIW" role="23Rrb0">
         <property role="2rInPY" value="/var/folders/_b/yxqf80914033gdcjr2jz91_h0000gq/T/" />
         <property role="TrG5h" value="TMPDIR" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtPGCo4" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPJxIX" role="23Rrb0">
         <property role="2rInPY" value="mas2182" />
         <property role="TrG5h" value="USER" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtPGCo5" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPJxIY" role="23Rrb0">
         <property role="2rInPY" value="0x0" />
         <property role="TrG5h" value="XPC_FLAGS" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtPGCo6" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPJxIZ" role="23Rrb0">
         <property role="2rInPY" value="com.jetbrains.intellij.53424" />
         <property role="TrG5h" value="XPC_SERVICE_NAME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtPGCo7" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPJxJ0" role="23Rrb0">
         <property role="2rInPY" value="0x1F7:0x0:0x0" />
         <property role="TrG5h" value="__CF_USER_TEXT_ENCODING" />
         <property role="3vthGj" value="STRING" />
