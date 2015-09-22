@@ -104,7 +104,7 @@
     </node>
     <node concept="1TJgyj" id="irqYu7hH$B" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="availableVariables" />
+      <property role="20kJfa" value="jvmVariables" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="6pk0:5a_m_wWNCiv" resolve="EnvVariableDeclaration" />
     </node>
@@ -221,6 +221,12 @@
       <property role="20kJfa" value="attributeValues" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6A9boVQPeld" resolve="AttributeAdapterForResource" />
+    </node>
+    <node concept="1TJgyj" id="7SK$kQZhoKB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="availableVariables" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="6pk0:5a_m_wWNCiv" resolve="EnvVariableDeclaration" />
     </node>
     <node concept="1TJgyj" id="4DwTgsTNnkD" role="1TKVEi">
       <property role="20lmBu" value="reference" />
