@@ -6968,74 +6968,124 @@
           <property role="3vthGj" value="DIRECTORY" />
         </node>
       </node>
-      <node concept="19SGf9" id="6ojrriHiYFT" role="3Y$PkS">
-        <node concept="19SUe$" id="4tpnhtPw7h9" role="19SJt6">
-          <property role="19SUeA" value="echo &quot;Hello&quot;&#10;echo &quot;path: " />
+      <node concept="3xUnCN" id="4tpnhtPFtWS" role="NgwMD">
+        <property role="3Ui_h1" value="" />
+        <ref role="1PROVt" node="3A$s7PqbVaE" resolve="SAMTOOLS" />
+        <ref role="1PROJ1" node="3A$s7PqbVaH" resolve="0.1.18.1" />
+        <ref role="1NFp0I" node="4tpnhtP_gte" resolve="SAMTOOLS" />
+        <node concept="1IqXV7" id="4tpnhtPFuoZ" role="31thPE">
+          <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+          <property role="TrG5h" value="JOB_DIR" />
+          <property role="3vthGj" value="DIRECTORY" />
         </node>
-        <node concept="2vEKro" id="4tpnhtPDgne" role="19SJt6">
-          <property role="TrG5h" value="RESOURCES_FETCH_URL_SCRIPT" />
-          <ref role="2vEKrp" node="4tpnhtP_hQY" resolve="RESOURCES_FETCH_URL_SCRIPT" />
+        <node concept="1IqXV7" id="4tpnhtPFup0" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
+          <property role="3vthGj" value="STRING" />
         </node>
-        <node concept="19SUe$" id="4tpnhtPDgnd" role="19SJt6">
-          <property role="19SUeA" value="&quot;&#10;" />
+        <node concept="1IqXV7" id="4tpnhtPFup1" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/samtools" />
+          <property role="TrG5h" value="RESOURCES_SAMTOOLS_EXEC_PATH" />
+          <property role="3vthGj" value="FILE" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPFup2" role="31thPE">
+          <property role="2rInPY" value="${JOB_DIR}/install.sh" />
+          <property role="TrG5h" value="RESOURCES_SAMTOOLS_INSTALL" />
+          <property role="3vthGj" value="FILE" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPFup3" role="31thPE">
+          <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+          <property role="TrG5h" value="SGE_O_WORKDIR" />
+          <property role="3vthGj" value="DIRECTORY" />
+        </node>
+        <node concept="1IqXV7" id="4tpnhtPFup4" role="31thPE">
+          <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
+          <property role="TrG5h" value="TMPDIR" />
+          <property role="3vthGj" value="DIRECTORY" />
         </node>
       </node>
-      <node concept="1IqXV7" id="4tpnhtP_hQJ" role="23Rrb0">
+      <node concept="19SGf9" id="6ojrriHiYFT" role="3Y$PkS">
+        <node concept="19SUe$" id="4tpnhtPw7h9" role="19SJt6">
+          <property role="19SUeA" value="echo &quot;path: " />
+        </node>
+        <node concept="2vEKro" id="4tpnhtPDgne" role="19SJt6">
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
+          <ref role="2vEKrp" node="4tpnhtPFup0" resolve="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
+        </node>
+        <node concept="19SUe$" id="4tpnhtPDgnd" role="19SJt6">
+          <property role="19SUeA" value="&quot;&#10;ls -lrt " />
+        </node>
+        <node concept="2vEKro" id="4tpnhtPG3SQ" role="19SJt6">
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
+          <ref role="2vEKrp" node="4tpnhtPFup0" resolve="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
+        </node>
+        <node concept="19SUe$" id="4tpnhtPG3SP" role="19SJt6">
+          <property role="19SUeA" value="&#10;sleep 4&#10;" />
+        </node>
+        <node concept="2vEKro" id="4tpnhtPGm8p" role="19SJt6">
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
+          <ref role="2vEKrp" node="4tpnhtPFup0" resolve="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
+        </node>
+        <node concept="19SUe$" id="4tpnhtPGm8o" role="19SJt6">
+          <property role="19SUeA" value="/samtools view -? || true&#10;" />
+        </node>
+      </node>
+      <node concept="1IqXV7" id="4tpnhtPGCnW" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.AMF249DSc1/Render" />
         <property role="TrG5h" value="Apple_PubSub_Socket_Render" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtP_hQK" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPGCnX" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.U3Y3gHYRlL/org.macosforge.xquartz:0" />
         <property role="TrG5h" value="DISPLAY" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtP_hQL" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPGCnY" role="23Rrb0">
         <property role="2rInPY" value="/Users/mas2182" />
         <property role="TrG5h" value="HOME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtP_hQM" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPGCnZ" role="23Rrb0">
         <property role="2rInPY" value="mas2182" />
         <property role="TrG5h" value="LOGNAME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtP_hQN" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPGCo0" role="23Rrb0">
         <property role="2rInPY" value="/usr/bin:/bin:/usr/sbin:/sbin" />
         <property role="TrG5h" value="PATH" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtP_hQO" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPGCo1" role="23Rrb0">
         <property role="2rInPY" value="/bin/bash" />
         <property role="TrG5h" value="SHELL" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtP_hQP" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPGCo2" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.Wt3Z6E8v86/Listeners" />
         <property role="TrG5h" value="SSH_AUTH_SOCK" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtP_hQQ" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPGCo3" role="23Rrb0">
         <property role="2rInPY" value="/var/folders/_b/yxqf80914033gdcjr2jz91_h0000gq/T/" />
         <property role="TrG5h" value="TMPDIR" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtP_hQR" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPGCo4" role="23Rrb0">
         <property role="2rInPY" value="mas2182" />
         <property role="TrG5h" value="USER" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtP_hQS" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPGCo5" role="23Rrb0">
         <property role="2rInPY" value="0x0" />
         <property role="TrG5h" value="XPC_FLAGS" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtP_hQT" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPGCo6" role="23Rrb0">
         <property role="2rInPY" value="com.jetbrains.intellij.53424" />
         <property role="TrG5h" value="XPC_SERVICE_NAME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="4tpnhtP_hQU" role="23Rrb0">
+      <node concept="1IqXV7" id="4tpnhtPGCo7" role="23Rrb0">
         <property role="2rInPY" value="0x1F7:0x0:0x0" />
         <property role="TrG5h" value="__CF_USER_TEXT_ENCODING" />
         <property role="3vthGj" value="STRING" />
