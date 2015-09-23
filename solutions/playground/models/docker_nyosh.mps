@@ -6884,21 +6884,21 @@
     <node concept="NgwLd" id="6ojrriHiYFQ" role="1QJbqZ">
       <node concept="19SGf9" id="6ojrriHiYFT" role="3Y$PkS">
         <node concept="19SUe$" id="4tpnhtPLv8T" role="19SJt6">
-          <property role="19SUeA" value="ls -lrt " />
+          <property role="19SUeA" value="set +x&#10;echo Hello&#10;echo " />
         </node>
-        <node concept="2vEKro" id="69f73Ud3c__" role="19SJt6">
+        <node concept="2vEKro" id="69f73Ud3PBO" role="19SJt6">
           <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_CAENORHABDITIS_ELEGANS_WBCEL215_69" />
           <ref role="2vEKrp" node="69f73Ud3cs_" resolve="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_CAENORHABDITIS_ELEGANS_WBCEL215_69" />
         </node>
-        <node concept="19SUe$" id="69f73Ud3c_$" role="19SJt6">
+        <node concept="19SUe$" id="69f73Ud3PBN" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
-        <node concept="2vEKro" id="69f73Ud3c_K" role="19SJt6">
+        <node concept="2vEKro" id="69f73Ud49k4" role="19SJt6">
           <property role="TrG5h" value="RESOURCES_ARTIFACTS_STAR_EXECUTABLE" />
           <ref role="2vEKrp" node="69f73Ud3crQ" resolve="RESOURCES_ARTIFACTS_STAR_EXECUTABLE" />
         </node>
-        <node concept="19SUe$" id="69f73Ud3c_J" role="19SJt6">
-          <property role="19SUeA" value=" || true&#10;" />
+        <node concept="19SUe$" id="69f73Ud49k5" role="19SJt6">
+          <property role="19SUeA" value="/STAR || true" />
         </node>
       </node>
       <node concept="3xUnCN" id="4tpnhtPSjtc" role="NgwMD">
