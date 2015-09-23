@@ -74,7 +74,7 @@
       </concept>
       <concept id="6386724582662879334" name="org.campagnelab.bash.nyosh.structure.NYoShAwareScript" flags="ng" index="NgwLd">
         <child id="331977639694004412" name="pluginSystemRootDirectory" index="23NxHr" />
-        <child id="331977639693048103" name="jvmVariables" index="23Rrb0" />
+        <child id="331977639693048103" name="envVariables" index="23Rrb0" />
         <child id="6386724582662879362" name="requires" index="NgwMD" />
       </concept>
       <concept id="1311266352922359807" name="org.campagnelab.bash.nyosh.structure.RequestedResource" flags="ng" index="3xUnCN">
@@ -95,7 +95,7 @@
       <concept id="5359535375768188197" name="org.campagnelab.bash.nyosh.structure.ScriptResource" flags="ng" index="1NFp0y">
         <property id="1311266352922369212" name="id" index="3xVD5K" />
         <reference id="5359535375768188201" name="config" index="1NFp0I" />
-        <child id="9092927410768546855" name="availableVariables" index="31thPE" />
+        <child id="9092927410768546855" name="envVariables" index="31thPE" />
         <child id="5359535375768188281" name="attributeValues" index="1NFp1Y" />
       </concept>
       <concept id="1008131731651362197" name="org.campagnelab.bash.nyosh.structure.ResourceVersionRange" flags="ng" index="3U7mvy">
@@ -8133,11 +8133,18 @@
           <property role="19SUeA" value="echo " />
         </node>
         <node concept="2vEKro" id="69f73Ud4R0v" role="19SJt6">
-          <property role="TrG5h" value="RESOURCES_LAST_ARTIFACT_INSTALL" />
-          <ref role="2vEKrp" node="69f73Ud4QZr" resolve="RESOURCES_LAST_ARTIFACT_INSTALL" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_LAST_ARTIFACT_BINARIES" />
+          <ref role="2vEKrp" node="5quK2aeFYqG" resolve="RESOURCES_ARTIFACTS_LAST_ARTIFACT_BINARIES" />
         </node>
         <node concept="19SUe$" id="69f73Ud4R0x" role="19SJt6">
-          <property role="19SUeA" value="" />
+          <property role="19SUeA" value="&#10;" />
+        </node>
+        <node concept="2vEKro" id="5quK2aeFZeE" role="19SJt6">
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_LAST_ARTIFACT_BINARIES" />
+          <ref role="2vEKrp" node="5quK2aeFYqG" resolve="RESOURCES_ARTIFACTS_LAST_ARTIFACT_BINARIES" />
+        </node>
+        <node concept="19SUe$" id="5quK2aeFZeF" role="19SJt6">
+          <property role="19SUeA" value="/bin/lastal" />
         </node>
       </node>
       <node concept="3xUnCN" id="69f73Ud4M_3" role="NgwMD">
@@ -8145,83 +8152,88 @@
         <ref role="1PROVt" node="3A$s7PqbV9X" resolve="LAST_ARTIFACT" />
         <ref role="1PROJ1" node="3A$s7PqbVa0" resolve="581.4" />
         <ref role="1NFp0I" node="69f73Ud4O5t" resolve="LAST_ARTIFACT" />
-        <node concept="1IqXV7" id="69f73Ud4QZq" role="31thPE">
+        <node concept="1IqXV7" id="5quK2aeFYqF" role="31thPE">
           <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
           <property role="TrG5h" value="JOB_DIR" />
           <property role="3vthGj" value="DIRECTORY" />
         </node>
-        <node concept="1IqXV7" id="69f73Ud4QZr" role="31thPE">
+        <node concept="1IqXV7" id="5quK2aeFYqG" role="31thPE">
+          <property role="2rInPY" value="" />
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_LAST_ARTIFACT_BINARIES" />
+          <property role="3vthGj" value="STRING" />
+        </node>
+        <node concept="1IqXV7" id="5quK2aeFYqH" role="31thPE">
           <property role="2rInPY" value="${JOB_DIR}/install.sh" />
           <property role="TrG5h" value="RESOURCES_LAST_ARTIFACT_INSTALL" />
           <property role="3vthGj" value="FILE" />
         </node>
-        <node concept="1IqXV7" id="69f73Ud4QZs" role="31thPE">
+        <node concept="1IqXV7" id="5quK2aeFYqI" role="31thPE">
           <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
           <property role="TrG5h" value="SGE_O_WORKDIR" />
           <property role="3vthGj" value="DIRECTORY" />
         </node>
-        <node concept="1IqXV7" id="69f73Ud4QZt" role="31thPE">
+        <node concept="1IqXV7" id="5quK2aeFYqJ" role="31thPE">
           <property role="2rInPY" value="/Users/mas2182/plugins-SDK-cache" />
           <property role="TrG5h" value="TMPDIR" />
           <property role="3vthGj" value="DIRECTORY" />
         </node>
       </node>
-      <node concept="1IqXV7" id="69f73Ud4QZe" role="23Rrb0">
+      <node concept="1IqXV7" id="5quK2aeFYqv" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.AMF249DSc1/Render" />
         <property role="TrG5h" value="Apple_PubSub_Socket_Render" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="69f73Ud4QZf" role="23Rrb0">
+      <node concept="1IqXV7" id="5quK2aeFYqw" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.U3Y3gHYRlL/org.macosforge.xquartz:0" />
         <property role="TrG5h" value="DISPLAY" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="69f73Ud4QZg" role="23Rrb0">
+      <node concept="1IqXV7" id="5quK2aeFYqx" role="23Rrb0">
         <property role="2rInPY" value="/Users/mas2182" />
         <property role="TrG5h" value="HOME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="69f73Ud4QZh" role="23Rrb0">
+      <node concept="1IqXV7" id="5quK2aeFYqy" role="23Rrb0">
         <property role="2rInPY" value="mas2182" />
         <property role="TrG5h" value="LOGNAME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="69f73Ud4QZi" role="23Rrb0">
+      <node concept="1IqXV7" id="5quK2aeFYqz" role="23Rrb0">
         <property role="2rInPY" value="/usr/bin:/bin:/usr/sbin:/sbin" />
         <property role="TrG5h" value="PATH" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="69f73Ud4QZj" role="23Rrb0">
+      <node concept="1IqXV7" id="5quK2aeFYq$" role="23Rrb0">
         <property role="2rInPY" value="/bin/bash" />
         <property role="TrG5h" value="SHELL" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="69f73Ud4QZk" role="23Rrb0">
+      <node concept="1IqXV7" id="5quK2aeFYq_" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.Wt3Z6E8v86/Listeners" />
         <property role="TrG5h" value="SSH_AUTH_SOCK" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="69f73Ud4QZl" role="23Rrb0">
+      <node concept="1IqXV7" id="5quK2aeFYqA" role="23Rrb0">
         <property role="2rInPY" value="/var/folders/_b/yxqf80914033gdcjr2jz91_h0000gq/T/" />
         <property role="TrG5h" value="TMPDIR" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="69f73Ud4QZm" role="23Rrb0">
+      <node concept="1IqXV7" id="5quK2aeFYqB" role="23Rrb0">
         <property role="2rInPY" value="mas2182" />
         <property role="TrG5h" value="USER" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="69f73Ud4QZn" role="23Rrb0">
+      <node concept="1IqXV7" id="5quK2aeFYqC" role="23Rrb0">
         <property role="2rInPY" value="0x0" />
         <property role="TrG5h" value="XPC_FLAGS" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="69f73Ud4QZo" role="23Rrb0">
+      <node concept="1IqXV7" id="5quK2aeFYqD" role="23Rrb0">
         <property role="2rInPY" value="com.jetbrains.intellij.53424" />
         <property role="TrG5h" value="XPC_SERVICE_NAME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="69f73Ud4QZp" role="23Rrb0">
+      <node concept="1IqXV7" id="5quK2aeFYqE" role="23Rrb0">
         <property role="2rInPY" value="0x1F7:0x0:0x0" />
         <property role="TrG5h" value="__CF_USER_TEXT_ENCODING" />
         <property role="3vthGj" value="STRING" />
