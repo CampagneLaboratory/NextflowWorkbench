@@ -441,7 +441,7 @@
             </node>
           </node>
           <node concept="la8eA" id="6ojrriHoEoQ" role="lcghm">
-            <property role="lacIc" value="/exports.sh" />
+            <property role="lacIc" value="/exports-all.sh" />
           </node>
           <node concept="l8MVK" id="6ojrriHoEoR" role="lcghm" />
         </node>

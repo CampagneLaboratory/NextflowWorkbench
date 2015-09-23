@@ -6900,8 +6900,13 @@
           <ref role="2vEKrp" node="5quK2aeI9yv" resolve="RESOURCES_ARTIFACTS_STAR_EXECUTABLE" />
         </node>
         <node concept="19SUe$" id="69f73Ud49k5" role="19SJt6">
-          <property role="19SUeA" value="/STAR || true" />
+          <property role="19SUeA" value="/STAR || true&#10;" />
         </node>
+        <node concept="2vEKro" id="5quK2aeJZ9M" role="19SJt6">
+          <property role="TrG5h" value="RESOURCES_ARTIFACTS_ENSEMBL_GTF_ANNOTATIONS_CAENORHABDITIS_ELEGANS_WBCEL215_69" />
+          <ref role="2vEKrp" node="5quK2aeI9zN" resolve="RESOURCES_ARTIFACTS_ENSEMBL_GTF_ANNOTATIONS_CAENORHABDITIS_ELEGANS_WBCEL215_69" />
+        </node>
+        <node concept="19SUe$" id="5quK2aeJZ9N" role="19SJt6" />
       </node>
       <node concept="3xUnCN" id="4tpnhtPSjtc" role="NgwMD">
         <property role="3Ui_h1" value="" />
