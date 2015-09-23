@@ -530,6 +530,7 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
           <module ref="d0df1055-918a-4cf9-96f9-effded676ae2(org.campagnelab.bio.species.morgs)" />
@@ -671,24 +672,24 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.TextOutput/org.campagnelab.TextOutput-_dl__lbrace_textoutput_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.TextOutput}/org.campagnelab.TextOutput-${org.campagnelab.TextOutput.textoutput_version}.zip" dest="${build.tmp}/deps/org.campagnelab.TextOutput/org.campagnelab.TextOutput-_dl__lbrace_textoutput_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.NYoSh}/org.campagnelab.NYoSh-${org.campagnelab.NYoSh.nyosh_version}.zip" dest="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-${org.campagnelab.mps.UI.ui_version}.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.ClusterConfig/org.campagnelab.ClusterConfig-_dl__lbrace_clusterConfig_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.ClusterConfig}/org.campagnelab.ClusterConfig-${org.campagnelab.ClusterConfig.clusterConfig_version}.zip" dest="${build.tmp}/deps/org.campagnelab.ClusterConfig/org.campagnelab.ClusterConfig-_dl__lbrace_clusterConfig_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.Background/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.Background}/org.campagnelab.background-${org.campagnelab.Background.background_version}.zip" dest="${build.tmp}/deps/org.campagnelab.Background/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/XChart/XChart__dl__lbrace_XChart_version_rbrace_.zip" />
     <unzip src="${artifacts.XChart}/XChart_${XChart.XChart_version}.zip" dest="${build.tmp}/deps/XChart/XChart__dl__lbrace_XChart_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.TextOutput/org.campagnelab.TextOutput-_dl__lbrace_textoutput_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.TextOutput}/org.campagnelab.TextOutput-${org.campagnelab.TextOutput.textoutput_version}.zip" dest="${build.tmp}/deps/org.campagnelab.TextOutput/org.campagnelab.TextOutput-_dl__lbrace_textoutput_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.Interactive/org.campagnelab.Interactive-_dl__lbrace_interactive_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.Interactive}/org.campagnelab.Interactive-${org.campagnelab.Interactive.interactive_version}.zip" dest="${build.tmp}/deps/org.campagnelab.Interactive/org.campagnelab.Interactive-_dl__lbrace_interactive_version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/org.campagnelab.Logger/org.campagnelab.logger-_dl__lbrace_logger.version_rbrace_.zip" />
     <unzip src="${artifacts.org.campagnelab.Logger}/org.campagnelab.logger-${org.campagnelab.Logger.logger.version}.zip" dest="${build.tmp}/deps/org.campagnelab.Logger/org.campagnelab.logger-_dl__lbrace_logger.version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/org.campagnelab.GobyWeb/org.campagnelab.GobyWeb-_dl__lbrace_gobyweb_version_rbrace_.zip" />
     <unzip src="${artifacts.org.campagnelab.GobyWeb}/org.campagnelab.GobyWeb-${org.campagnelab.GobyWeb.gobyweb_version}.zip" dest="${build.tmp}/deps/org.campagnelab.GobyWeb/org.campagnelab.GobyWeb-_dl__lbrace_gobyweb_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.ClusterConfig/org.campagnelab.ClusterConfig-_dl__lbrace_clusterConfig_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.ClusterConfig}/org.campagnelab.ClusterConfig-${org.campagnelab.ClusterConfig.clusterConfig_version}.zip" dest="${build.tmp}/deps/org.campagnelab.ClusterConfig/org.campagnelab.ClusterConfig-_dl__lbrace_clusterConfig_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-${org.campagnelab.mps.UI.ui_version}.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.Interactive/org.campagnelab.Interactive-_dl__lbrace_interactive_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.Interactive}/org.campagnelab.Interactive-${org.campagnelab.Interactive.interactive_version}.zip" dest="${build.tmp}/deps/org.campagnelab.Interactive/org.campagnelab.Interactive-_dl__lbrace_interactive_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.NYoSh}/org.campagnelab.NYoSh-${org.campagnelab.NYoSh.nyosh_version}.zip" dest="${build.tmp}/deps/org.campagnelab.NYoSh/org.campagnelab.NYoSh-_dl__lbrace_nyosh_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.Background/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.Background}/org.campagnelab.background-${org.campagnelab.Background.background_version}.zip" dest="${build.tmp}/deps/org.campagnelab.Background/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
   </target>
