@@ -1630,6 +1630,52 @@
   <node concept="13h7C7" id="6A9boVQTcSS">
     <property role="3GE5qa" value="resources" />
     <ref role="13h7C2" to="iuj9:6A9boVQPeld" resolve="AttributeAdapterForResource" />
+    <node concept="13i0hz" id="7SK$kQZtxkd" role="13h7CS">
+      <property role="TrG5h" value="getQualifiedName" />
+      <node concept="3Tm1VV" id="7SK$kQZtxke" role="1B3o_S" />
+      <node concept="3clFbS" id="7SK$kQZtxkf" role="3clF47">
+        <node concept="3clFbF" id="7SK$kQZtxkz" role="3cqZAp">
+          <node concept="3cpWs3" id="7SK$kQZt$35" role="3clFbG">
+            <node concept="2OqwBi" id="7SK$kQZt_gy" role="3uHU7w">
+              <node concept="2OqwBi" id="7SK$kQZt$c$" role="2Oq$k0">
+                <node concept="13iPFW" id="7SK$kQZt$7Y" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7SK$kQZt_25" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iuj9:6A9boVQPem8" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="7SK$kQZt_Wu" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="3cpWs3" id="7SK$kQZtzGS" role="3uHU7B">
+              <node concept="3cpWs3" id="7SK$kQZtys2" role="3uHU7B">
+                <node concept="3cpWs3" id="7SK$kQZtyce" role="3uHU7B">
+                  <node concept="2OqwBi" id="7SK$kQZtxms" role="3uHU7B">
+                    <node concept="13iPFW" id="7SK$kQZtxky" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="7SK$kQZtxEt" role="2OqNvi">
+                      <ref role="3TsBF5" to="iuj9:6A9boVQQrjW" resolve="resource" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="7SK$kQZtydo" role="3uHU7w">
+                    <property role="Xl_RC" value="." />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="7SK$kQZty$J" role="3uHU7w">
+                  <node concept="13iPFW" id="7SK$kQZtyvW" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="7SK$kQZtzdR" role="2OqNvi">
+                    <ref role="3TsBF5" to="iuj9:6A9boVQQrjX" resolve="artifact" />
+                  </node>
+                </node>
+              </node>
+              <node concept="Xl_RD" id="7SK$kQZtzLx" role="3uHU7w">
+                <property role="Xl_RC" value="." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7SK$kQZtxkt" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="6A9boVQTcST" role="13h7CW">
       <node concept="3clFbS" id="6A9boVQTcSU" role="2VODD2" />
     </node>
@@ -2441,17 +2487,12 @@
                         <node concept="2ShNRf" id="4tpnhtPM_Hq" role="3clFbG">
                           <node concept="1pGfFk" id="4tpnhtPM_Hr" role="2ShVmc">
                             <ref role="37wK5l" to="be3w:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
-                            <node concept="2OqwBi" id="4tpnhtPM_Hs" role="37wK5m">
-                              <node concept="2OqwBi" id="4tpnhtPM_Ht" role="2Oq$k0">
-                                <node concept="37vLTw" id="4tpnhtPM_Hu" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="4tpnhtPM_HA" resolve="it" />
-                                </node>
-                                <node concept="3TrEf2" id="4tpnhtPM_Hv" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="iuj9:6A9boVQPem8" />
-                                </node>
+                            <node concept="2OqwBi" id="7SK$kQZtEDZ" role="37wK5m">
+                              <node concept="37vLTw" id="7SK$kQZtEvX" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4tpnhtPM_HA" resolve="it" />
                               </node>
-                              <node concept="3TrcHB" id="4tpnhtPM_Hw" role="2OqNvi">
-                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              <node concept="2qgKlT" id="7SK$kQZtGmi" role="2OqNvi">
+                                <ref role="37wK5l" node="7SK$kQZtxkd" resolve="getQualifiedName" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="4tpnhtPM_Hx" role="37wK5m">
