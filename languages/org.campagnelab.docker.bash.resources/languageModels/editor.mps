@@ -883,20 +883,29 @@
     <ref role="1XX52x" to="iuj9:7SK$kQZvhpX" resolve="ArtifactPathValue" />
     <node concept="3EZMnI" id="7SK$kQZvjmR" role="2wV5jI">
       <node concept="3F0ifn" id="7SK$kQZvjmT" role="3EZMnx">
-        <property role="3F0ifm" value="installation folder" />
+        <property role="3F0ifm" value="artifact path" />
         <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
       </node>
-      <node concept="1iCGBv" id="7SK$kQZwBV7" role="3EZMnx">
-        <ref role="1NtTu8" to="iuj9:7SK$kQZwBUQ" />
-        <node concept="1sVBvm" id="7SK$kQZwBV9" role="1sWHZn">
-          <node concept="3F0A7n" id="7SK$kQZwBVp" role="2wV5jI">
+      <node concept="1iCGBv" id="5quK2aePnN9" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:5quK2aeP41X" />
+        <node concept="1sVBvm" id="5quK2aePnNb" role="1sWHZn">
+          <node concept="3F0A7n" id="5quK2aePnNK" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
-        <node concept="VPxyj" id="7SK$kQZwBXB" role="3F10Kt">
-          <property role="VOm3f" value="false" />
+      </node>
+      <node concept="3F0ifn" id="5quK2aeP9WX" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="11L4FC" id="5quK2aePgUp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
+        <node concept="11LMrY" id="5quK2aePgVo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="5quK2aePrT1" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:5quK2aePrS5" resolve="artifactName" />
       </node>
       <node concept="2iRfu4" id="7SK$kQZvjmU" role="2iSdaV" />
     </node>
@@ -975,6 +984,10 @@
     <node concept="3EZMnI" id="7SK$kQZxVN2" role="2wV5jI">
       <node concept="3F0ifn" id="7SK$kQZxVNf" role="3EZMnx">
         <property role="3F0ifm" value="${" />
+        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
+        <node concept="11LMrY" id="61tPieTga$A" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="1iCGBv" id="7SK$kQZxXoL" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:7SK$kQZxVHK" />
@@ -985,6 +998,13 @@
         </node>
       </node>
       <node concept="2iRfu4" id="7SK$kQZxVN5" role="2iSdaV" />
+      <node concept="3F0ifn" id="61tPieTg2D9" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
+        <node concept="11L4FC" id="61tPieTgaAi" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7SK$kQZxXhx">

@@ -17,6 +17,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -49,6 +52,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -120,7 +124,7 @@
   </node>
   <node concept="1TIwiD" id="6A9boVQ8yHm">
     <property role="TrG5h" value="NYoShEnvVariableRef" />
-    <property role="34LRSv" value="${" />
+    <property role="34LRSv" value="${env deprecated" />
     <property role="R4oN_" value="reference a GobyWeb resource variable declaration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6A9boVQ8yHn" role="1TKVEi">
@@ -135,6 +139,7 @@
     <node concept="PrWs8" id="4tpnhtPrXh3" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="asaX9" id="61tPieThDUs" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="6A9boVQPeld">
     <property role="TrG5h" value="AttributeAdapterForResource" />
@@ -230,6 +235,9 @@
       <property role="20kJfa" value="envVariables" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="6pk0:5a_m_wWNCiv" resolve="EnvVariableDeclaration" />
+      <node concept="asaX9" id="5quK2aeV5qJ" role="lGtFl">
+        <property role="YLQ7P" value="use environment values" />
+      </node>
     </node>
     <node concept="1TJgyj" id="7SK$kQZvjaR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -298,14 +306,14 @@
   <node concept="1TIwiD" id="7SK$kQZvhpX">
     <property role="TrG5h" value="ArtifactPathValue" />
     <property role="3GE5qa" value="environment" />
-    <property role="34LRSv" value="installation folder" />
-    <property role="R4oN_" value="Installation folder of an artifact." />
+    <property role="34LRSv" value="artifact path" />
+    <property role="R4oN_" value="Install folder of an artifact." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7SK$kQZwBUQ" role="1TKVEi">
+    <node concept="1TJgyj" id="5quK2aeP41X" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="artifact" />
+      <property role="20kJfa" value="resource" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dzk5:6A9boVQh7v0" resolve="Artifact" />
+      <ref role="20lvS9" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
     </node>
     <node concept="1TJgyj" id="7SK$kQZvjuD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -315,6 +323,10 @@
     </node>
     <node concept="1TJgyi" id="7SK$kQZvjnB" role="1TKVEl">
       <property role="TrG5h" value="prefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5quK2aePrS5" role="1TKVEl">
+      <property role="TrG5h" value="artifactName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="7SK$kQZvhq4" role="PzmwI">
@@ -375,6 +387,10 @@
     <property role="3GE5qa" value="environment" />
     <property role="TrG5h" value="EnvironmentValue" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5quK2aePwou" role="1TKVEl">
+      <property role="TrG5h" value="sourceVariable" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="7SK$kQZxXho" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
