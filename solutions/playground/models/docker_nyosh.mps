@@ -9126,8 +9126,12 @@
           <ref role="31HMCX" node="61tPieTj8Fk" resolve="artifact path FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX" />
         </node>
         <node concept="19SUe$" id="61tPieTj8Hw" role="19SJt6">
-          <property role="19SUeA" value="&quot;" />
+          <property role="19SUeA" value="&quot;&#10;ls -lrt " />
         </node>
+        <node concept="31HMC_" id="61tPieTt7EJ" role="19SJt6">
+          <ref role="31HMCX" node="61tPieTj8Fk" resolve="artifact path FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX" />
+        </node>
+        <node concept="19SUe$" id="61tPieTt7EK" role="19SJt6" />
       </node>
       <node concept="1IqXV7" id="61tPieTj8EP" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.AMF249DSc1/Render" />
