@@ -86,7 +86,9 @@
       <concept id="9092927410772194840" name="org.campagnelab.bash.nyosh.structure.EvalArtifactAttribute" flags="ng" index="31jqtl">
         <reference id="9092927410772195893" name="attribute" index="31jqHS" />
       </concept>
-      <concept id="9092927410772884328" name="org.campagnelab.bash.nyosh.structure.EnvironmentValueRef" flags="ng" index="31HMC_" />
+      <concept id="9092927410772884328" name="org.campagnelab.bash.nyosh.structure.EnvironmentValueRef" flags="ng" index="31HMC_">
+        <reference id="9092927410772884336" name="value" index="31HMCX" />
+      </concept>
       <concept id="9092927410772890708" name="org.campagnelab.bash.nyosh.structure.EnvironmentValue" flags="ng" index="31HOkp">
         <property id="6241637388239898142" name="sourceVariable" index="3oicoW" />
         <child id="9092927410772890712" name="value" index="31HOkl" />
@@ -9117,9 +9119,15 @@
         </node>
       </node>
       <node concept="19SGf9" id="5quK2aeSTDm" role="3Y$PkS">
-        <node concept="19SUe$" id="61tPieTj8Hv" role="19SJt6" />
-        <node concept="31HMC_" id="61tPieTj8Hu" role="19SJt6" />
-        <node concept="19SUe$" id="61tPieTj8Hw" role="19SJt6" />
+        <node concept="19SUe$" id="61tPieTj8Hv" role="19SJt6">
+          <property role="19SUeA" value="echo &quot;Path " />
+        </node>
+        <node concept="31HMC_" id="61tPieTj8Hu" role="19SJt6">
+          <ref role="31HMCX" node="61tPieTj8Fk" resolve="artifact path FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX" />
+        </node>
+        <node concept="19SUe$" id="61tPieTj8Hw" role="19SJt6">
+          <property role="19SUeA" value="&quot;" />
+        </node>
       </node>
       <node concept="1IqXV7" id="61tPieTj8EP" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.AMF249DSc1/Render" />
