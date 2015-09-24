@@ -12,8 +12,11 @@
     <use id="0b7d8bbd-896e-495e-be60-01a0d738a649" name="org.campagnelab.gobyweb.plugins" version="0" />
     <use id="27f97fd8-caeb-43a0-a73f-f8ac957f3a17" name="org.campagnelab.gobyweb.environment" version="-1" />
     <use id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" name="org.campagnelab.nyosh.environment" version="-1" />
+    <use id="0202ed86-955d-4227-9c20-377dd6b1f9ff" name="org.campagnelab.nyosh.lib" version="-1" />
   </languages>
-  <imports />
+  <imports>
+    <import index="be3w" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/f:java_stub#0202ed86-955d-4227-9c20-377dd6b1f9ff#org.javatuples(org.campagnelab.nyosh.lib/org.javatuples@java_stub)" />
+  </imports>
   <registry>
     <language id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive">
       <concept id="5865189911929158310" name="org.campagnelab.gobyweb.interactive.structure.NYoShUser" flags="ng" index="9QaQ0" />
@@ -742,62 +745,62 @@
           </node>
         </node>
       </node>
-      <node concept="1IqXV7" id="7SK$kQZuPc_" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kQZv9Lv" role="23Rrb0">
         <property role="2rInPY" value="/tmp/launch-2S9EUv/Render" />
         <property role="TrG5h" value="Apple_PubSub_Socket_Render" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kQZuPcA" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kQZv9Lw" role="23Rrb0">
         <property role="2rInPY" value="/tmp/launch-2E5gA0/Apple_Ubiquity_Message" />
         <property role="TrG5h" value="Apple_Ubiquity_Message" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kQZuPcB" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kQZv9Lx" role="23Rrb0">
         <property role="2rInPY" value="unix2003" />
         <property role="TrG5h" value="COMMAND_MODE" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kQZuPcC" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kQZv9Ly" role="23Rrb0">
         <property role="2rInPY" value="/tmp/launch-fHShIN/org.macosforge.xquartz:0" />
         <property role="TrG5h" value="DISPLAY" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kQZuPcD" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kQZv9Lz" role="23Rrb0">
         <property role="2rInPY" value="/Users/manuelesimi" />
         <property role="TrG5h" value="HOME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kQZuPcE" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kQZv9L$" role="23Rrb0">
         <property role="2rInPY" value="manuelesimi" />
         <property role="TrG5h" value="LOGNAME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kQZuPcF" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kQZv9L_" role="23Rrb0">
         <property role="2rInPY" value="/usr/bin:/bin:/usr/sbin:/sbin" />
         <property role="TrG5h" value="PATH" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kQZuPcG" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kQZv9LA" role="23Rrb0">
         <property role="2rInPY" value="/bin/bash" />
         <property role="TrG5h" value="SHELL" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kQZuPcH" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kQZv9LB" role="23Rrb0">
         <property role="2rInPY" value="/tmp/launch-471adV/Listeners" />
         <property role="TrG5h" value="SSH_AUTH_SOCK" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kQZuPcI" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kQZv9LC" role="23Rrb0">
         <property role="2rInPY" value="/var/folders/tk/sysfsd7j1dl0nz95xby8vdt80000gn/T/" />
         <property role="TrG5h" value="TMPDIR" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kQZuPcJ" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kQZv9LD" role="23Rrb0">
         <property role="2rInPY" value="manuelesimi" />
         <property role="TrG5h" value="USER" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kQZuPcK" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kQZv9LE" role="23Rrb0">
         <property role="2rInPY" value="0x1F5:0:0" />
         <property role="TrG5h" value="__CF_USER_TEXT_ENCODING" />
         <property role="3vthGj" value="STRING" />

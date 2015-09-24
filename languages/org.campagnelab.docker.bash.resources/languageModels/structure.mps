@@ -25,6 +25,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -228,6 +231,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="6pk0:5a_m_wWNCiv" resolve="EnvVariableDeclaration" />
     </node>
+    <node concept="1TJgyj" id="7SK$kQZvjaR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="environment" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7SK$kQZvhmu" resolve="EnvironmentConcept" />
+    </node>
     <node concept="1TJgyj" id="4DwTgsTNnkD" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="config" />
@@ -253,6 +262,100 @@
     <node concept="1TJgyi" id="RXABvRSfVF" role="1TKVEl">
       <property role="TrG5h" value="atLeast" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7SK$kQZvhmu">
+    <property role="TrG5h" value="EnvironmentConcept" />
+    <property role="3GE5qa" value="environment" />
+    <node concept="PrWs8" id="7SK$kQZvhrJ" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="7SK$kQZvjmw" role="PrDN$">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7SK$kQZvhoq">
+    <property role="TrG5h" value="ResourceFile" />
+    <property role="R4oN_" value="A file distributed with the resource." />
+    <property role="3GE5qa" value="environment" />
+    <property role="34LRSv" value="path to" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7SK$kQZwBQr" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="resource" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
+    </node>
+    <node concept="1TJgyi" id="7SK$kQZvl_z" role="1TKVEl">
+      <property role="TrG5h" value="prefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7SK$kQZvl_B" role="1TKVEl">
+      <property role="TrG5h" value="filename" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="7SK$kQZvhox" role="PzmwI">
+      <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7SK$kQZvhpX">
+    <property role="TrG5h" value="ArtifactPath" />
+    <property role="3GE5qa" value="environment" />
+    <property role="34LRSv" value="${installation folder}" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7SK$kQZwBUQ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="artifact" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dzk5:6A9boVQh7v0" resolve="Artifact" />
+    </node>
+    <node concept="1TJgyj" id="7SK$kQZvjuD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="toEval" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7SK$kQZvjoo" resolve="EvalArtifactAttribute" />
+    </node>
+    <node concept="1TJgyi" id="7SK$kQZvjnB" role="1TKVEl">
+      <property role="TrG5h" value="prefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="7SK$kQZvhq4" role="PzmwI">
+      <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7SK$kQZvhr$">
+    <property role="3GE5qa" value="environment" />
+    <property role="TrG5h" value="ArtifactAttributeValue" />
+    <property role="34LRSv" value="${value of attribute}" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7SK$kQZvjt8" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="toEval" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7SK$kQZvjoo" resolve="EvalArtifactAttribute" />
+    </node>
+    <node concept="1TJgyi" id="7SK$kQZvjge" role="1TKVEl">
+      <property role="TrG5h" value="prefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="7SK$kQZvhrF" role="PzmwI">
+      <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7SK$kQZvjoo">
+    <property role="3GE5qa" value="environment" />
+    <property role="TrG5h" value="EvalArtifactAttribute" />
+    <property role="R4oN_" value="Evaluate the attribute." />
+    <property role="34LRSv" value="${eval attribute}" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7SK$kQZvjCP" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="attribute" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="bs99:7arfhhdt3J1" resolve="Attribute" />
+    </node>
+    <node concept="PrWs8" id="7SK$kQZvjos" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

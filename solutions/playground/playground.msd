@@ -9,6 +9,7 @@
   <dependencies>
     <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">0202ed86-955d-4227-9c20-377dd6b1f9ff(org.campagnelab.nyosh.lib)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)</usedLanguage>
@@ -44,6 +45,7 @@
     <usedLanguage>1f5314a5-15b8-491d-89ca-13256a5ead51(org.campagnelab.gobyweb.tags)</usedLanguage>
     <usedLanguage>f55d6853-b373-41dd-bc8e-331fd6e2c764(org.campagnelab.bash.nyosh)</usedLanguage>
     <usedLanguage>57af9408-ffae-472e-9367-5cb44434e8b3(org.campagnelab.gobyweb.interactive.users)</usedLanguage>
+    <usedLanguage>0202ed86-955d-4227-9c20-377dd6b1f9ff(org.campagnelab.nyosh.lib)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)</usedDevKit>
@@ -85,6 +87,7 @@
     <language id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" fqName="org.campagnelab.nyosh.environment" version="0" />
     <language id="c6567f13-87ab-4686-8f6f-42e8228c0e27" fqName="org.campagnelab.nyosh.gstring" version="0" />
     <language id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" fqName="org.campagnelab.nyosh.interactive" version="0" />
+    <language id="0202ed86-955d-4227-9c20-377dd6b1f9ff" fqName="org.campagnelab.nyosh.lib" version="0" />
     <language id="901f5cf3-dc77-4c1e-bc5a-6382baee28b4" fqName="org.campagnelab.textoutput" version="0" />
     <language id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" fqName="org.campagnelab.ui" version="0" />
     <language id="d4767029-894b-41e1-b76e-850baa598e5b" fqName="org.campagnelab.util.files" version="0" />

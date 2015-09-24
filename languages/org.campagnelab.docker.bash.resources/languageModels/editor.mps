@@ -238,9 +238,6 @@
         <node concept="11LMrY" id="6A9boVQ8yHv" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="VechU" id="4tpnhtPoPrQ" role="3F10Kt">
-          <property role="Vb096" value="DARK_GREEN" />
-        </node>
       </node>
       <node concept="1iCGBv" id="6A9boVQ8yHw" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:6A9boVQ8yHn" />
@@ -255,11 +252,9 @@
       <node concept="l2Vlx" id="6A9boVQ8yHz" role="2iSdaV" />
       <node concept="3F0ifn" id="4tpnhtPnJOm" role="3EZMnx">
         <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
         <node concept="11L4FC" id="4tpnhtPnJQr" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="4tpnhtPoPpZ" role="3F10Kt">
-          <property role="Vb096" value="DARK_GREEN" />
         </node>
       </node>
     </node>
@@ -871,6 +866,134 @@
         <property role="3F0ifm" value="]" />
       </node>
       <node concept="2iRfu4" id="RXABvRSfRf" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7SK$kQZvjb9">
+    <property role="3GE5qa" value="environment" />
+    <ref role="1XX52x" to="iuj9:7SK$kQZvhr$" resolve="ArtifactAttributeValue" />
+    <node concept="3EZMnI" id="7SK$kQZvjfL" role="2wV5jI">
+      <node concept="3F0ifn" id="7SK$kQZvjfY" role="3EZMnx">
+        <property role="3F0ifm" value="${value of" />
+        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
+      </node>
+      <node concept="1iCGBv" id="7SK$kQZvl$E" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:7SK$kQZvjt8" />
+        <node concept="1sVBvm" id="7SK$kQZvl$G" role="1sWHZn">
+          <node concept="1iCGBv" id="7SK$kQZvl_b" role="2wV5jI">
+            <ref role="1NtTu8" to="iuj9:7SK$kQZvjCP" />
+            <node concept="1sVBvm" id="7SK$kQZvl_d" role="1sWHZn">
+              <node concept="3F0A7n" id="7SK$kQZvl_q" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7SK$kQZvjgB" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
+      </node>
+      <node concept="2iRfu4" id="7SK$kQZvjfO" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7SK$kQZvjmH">
+    <property role="3GE5qa" value="environment" />
+    <ref role="1XX52x" to="iuj9:7SK$kQZvhpX" resolve="ArtifactPath" />
+    <node concept="3EZMnI" id="7SK$kQZvjmR" role="2wV5jI">
+      <node concept="3F0ifn" id="7SK$kQZvjmT" role="3EZMnx">
+        <property role="3F0ifm" value="${installation folder" />
+        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
+      </node>
+      <node concept="1iCGBv" id="7SK$kQZwBV7" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:7SK$kQZwBUQ" />
+        <node concept="1sVBvm" id="7SK$kQZwBV9" role="1sWHZn">
+          <node concept="3F0A7n" id="7SK$kQZwBVp" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+        <node concept="VPxyj" id="7SK$kQZwBXB" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7SK$kQZwBVI" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
+        <node concept="11L4FC" id="7SK$kQZwBZj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7SK$kQZvjmU" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7SK$kQZvjo_">
+    <property role="3GE5qa" value="environment" />
+    <ref role="1XX52x" to="iuj9:7SK$kQZvjoo" resolve="EvalArtifactAttribute" />
+    <node concept="3EZMnI" id="7SK$kQZvjoU" role="2wV5jI">
+      <node concept="3F0ifn" id="7SK$kQZvjp7" role="3EZMnx">
+        <property role="3F0ifm" value="${eval(" />
+        <node concept="11LMrY" id="7SK$kQZvjro" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="7SK$kQZvlMu" role="3F10Kt">
+          <property role="Vb096" value="DARK_GREEN" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="7SK$kQZvlx7" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:7SK$kQZvjCP" />
+        <ref role="1ERwB7" node="4DwTgsU3yvh" resolve="NoAutocompletion" />
+        <node concept="1sVBvm" id="7SK$kQZvlx9" role="1sWHZn">
+          <node concept="3F0A7n" id="7SK$kQZvlxy" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+        <node concept="VPxyj" id="7SK$kQZvlzf" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7SK$kQZvjp_" role="3EZMnx">
+        <property role="3F0ifm" value=")}" />
+        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
+        <node concept="11L4FC" id="7SK$kQZvjt4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7SK$kQZvjoX" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7SK$kQZvl_N">
+    <property role="3GE5qa" value="environment" />
+    <ref role="1XX52x" to="iuj9:7SK$kQZvhoq" resolve="ResourceFile" />
+    <node concept="3EZMnI" id="7SK$kQZvl_X" role="2wV5jI">
+      <node concept="3F0ifn" id="7SK$kQZvl_Z" role="3EZMnx">
+        <property role="3F0ifm" value="path to " />
+        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
+      </node>
+      <node concept="3F0A7n" id="7SK$kQZvlAh" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:7SK$kQZvl_B" resolve="filename" />
+        <node concept="VPxyj" id="7SK$kQZwBSY" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7SK$kQZvlA0" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="7SK$kQZwBQA" role="6VMZX">
+      <node concept="3F0ifn" id="7SK$kQZwBQN" role="3EZMnx">
+        <property role="3F0ifm" value="source resource:" />
+      </node>
+      <node concept="1iCGBv" id="7SK$kQZwBQZ" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:7SK$kQZwBQr" />
+        <ref role="1ERwB7" node="4DwTgsU3yvh" resolve="NoAutocompletion" />
+        <node concept="1sVBvm" id="7SK$kQZwBR1" role="1sWHZn">
+          <node concept="3F0A7n" id="7SK$kQZwBRh" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7SK$kQZwBQD" role="2iSdaV" />
     </node>
   </node>
 </model>
