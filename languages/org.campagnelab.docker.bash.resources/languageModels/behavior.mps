@@ -3365,5 +3365,93 @@
       <node concept="3clFbS" id="7SK$kQZAiSK" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="7SK$kQZBRin">
+    <property role="3GE5qa" value="environment" />
+    <ref role="13h7C2" to="iuj9:7SK$kQZvhr$" resolve="ArtifactAttributeValue" />
+    <node concept="13hLZK" id="7SK$kQZBRio" role="13h7CW">
+      <node concept="3clFbS" id="7SK$kQZBRip" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7SK$kQZBRBg" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="nameToShow" />
+      <ref role="13i0hy" node="7SK$kQZAiSO" resolve="nameToShow" />
+      <node concept="3Tm1VV" id="7SK$kQZBRBh" role="1B3o_S" />
+      <node concept="3clFbS" id="7SK$kQZBRBk" role="3clF47">
+        <node concept="3clFbF" id="7SK$kQZBRBz" role="3cqZAp">
+          <node concept="Xl_RD" id="7SK$kQZBRBy" role="3clFbG">
+            <property role="Xl_RC" value="" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7SK$kQZBRBl" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7SK$kQZBRDY">
+    <property role="3GE5qa" value="environment" />
+    <ref role="13h7C2" to="iuj9:7SK$kQZvhpX" resolve="ArtifactPathValue" />
+    <node concept="13i0hz" id="7SK$kQZBREm" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="nameToShow" />
+      <ref role="13i0hy" node="7SK$kQZAiSO" resolve="nameToShow" />
+      <node concept="3Tm1VV" id="7SK$kQZBREn" role="1B3o_S" />
+      <node concept="3clFbS" id="7SK$kQZBREo" role="3clF47">
+        <node concept="3clFbF" id="7SK$kQZBREp" role="3cqZAp">
+          <node concept="Xl_RD" id="7SK$kQZBREq" role="3clFbG">
+            <property role="Xl_RC" value="" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7SK$kQZBREr" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="7SK$kQZBRDZ" role="13h7CW">
+      <node concept="3clFbS" id="7SK$kQZBRE0" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7SK$kQZBREN">
+    <property role="3GE5qa" value="environment" />
+    <ref role="13h7C2" to="iuj9:7SK$kQZ_WyS" resolve="EnvVariableValue" />
+    <node concept="13i0hz" id="7SK$kQZBRFb" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="nameToShow" />
+      <ref role="13i0hy" node="7SK$kQZAiSO" resolve="nameToShow" />
+      <node concept="3Tm1VV" id="7SK$kQZBRFc" role="1B3o_S" />
+      <node concept="3clFbS" id="7SK$kQZBRFd" role="3clF47">
+        <node concept="3clFbF" id="7SK$kQZBRFe" role="3cqZAp">
+          <node concept="Xl_RD" id="7SK$kQZBRFf" role="3clFbG">
+            <property role="Xl_RC" value="" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7SK$kQZBRFg" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="7SK$kQZBREO" role="13h7CW">
+      <node concept="3clFbS" id="7SK$kQZBREP" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7SK$kQZBRFC">
+    <property role="3GE5qa" value="environment" />
+    <ref role="13h7C2" to="iuj9:7SK$kQZvhoq" resolve="ResourceFileValue" />
+    <node concept="13i0hz" id="7SK$kQZBRG0" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="nameToShow" />
+      <ref role="13i0hy" node="7SK$kQZAiSO" resolve="nameToShow" />
+      <node concept="3Tm1VV" id="7SK$kQZBRG1" role="1B3o_S" />
+      <node concept="3clFbS" id="7SK$kQZBRG2" role="3clF47">
+        <node concept="3clFbF" id="7SK$kQZBRG3" role="3cqZAp">
+          <node concept="Xl_RD" id="7SK$kQZBRG4" role="3clFbG">
+            <property role="Xl_RC" value="" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7SK$kQZBRG5" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="7SK$kQZBRFD" role="13h7CW">
+      <node concept="3clFbS" id="7SK$kQZBRFE" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
