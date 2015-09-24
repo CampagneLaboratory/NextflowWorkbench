@@ -235,7 +235,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="environment" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7SK$kQZvhmu" resolve="EnvironmentConcept" />
+      <ref role="20lvS9" node="7SK$kQZvhmu" resolve="EnvironmentValueValue" />
     </node>
     <node concept="1TJgyj" id="4DwTgsTNnkD" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -265,13 +265,10 @@
     </node>
   </node>
   <node concept="PlHQZ" id="7SK$kQZvhmu">
-    <property role="TrG5h" value="EnvironmentConcept" />
+    <property role="TrG5h" value="EnvironmentValueValue" />
     <property role="3GE5qa" value="environment" />
     <node concept="PrWs8" id="7SK$kQZvhrJ" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="7SK$kQZvjmw" role="PrDN$">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
   <node concept="1TIwiD" id="7SK$kQZvhoq">
@@ -295,13 +292,13 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="7SK$kQZvhox" role="PzmwI">
-      <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentConcept" />
+      <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentValueValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="7SK$kQZvhpX">
     <property role="TrG5h" value="ArtifactPath" />
     <property role="3GE5qa" value="environment" />
-    <property role="34LRSv" value="${installation folder}" />
+    <property role="34LRSv" value="installation folder" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7SK$kQZwBUQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -320,7 +317,7 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="7SK$kQZvhq4" role="PzmwI">
-      <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentConcept" />
+      <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentValueValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="7SK$kQZvhr$">
@@ -339,14 +336,14 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="7SK$kQZvhrF" role="PzmwI">
-      <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentConcept" />
+      <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentValueValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="7SK$kQZvjoo">
     <property role="3GE5qa" value="environment" />
     <property role="TrG5h" value="EvalArtifactAttribute" />
     <property role="R4oN_" value="Evaluate the attribute." />
-    <property role="34LRSv" value="${eval attribute}" />
+    <property role="34LRSv" value="eval(attribute)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7SK$kQZvjCP" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -356,6 +353,31 @@
     </node>
     <node concept="PrWs8" id="7SK$kQZvjos" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7SK$kQZxVHC">
+    <property role="TrG5h" value="EnvironmentValueRef" />
+    <property role="34LRSv" value="${" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7SK$kQZxVHG" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="7SK$kQZxVHK" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="value" />
+      <ref role="20lvS9" node="7SK$kQZxXhk" resolve="EnvironmentValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7SK$kQZxXhk">
+    <property role="3GE5qa" value="environment" />
+    <property role="TrG5h" value="EnvironmentValue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7SK$kQZxXho" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7SK$kQZvhmu" resolve="EnvironmentValueValue" />
     </node>
   </node>
 </model>
