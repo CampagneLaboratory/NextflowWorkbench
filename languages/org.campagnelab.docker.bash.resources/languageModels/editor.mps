@@ -880,7 +880,7 @@
   </node>
   <node concept="24kQdi" id="7SK$kQZvjmH">
     <property role="3GE5qa" value="environment" />
-    <ref role="1XX52x" to="iuj9:7SK$kQZvhpX" resolve="ArtifactPath" />
+    <ref role="1XX52x" to="iuj9:7SK$kQZvhpX" resolve="ArtifactPathValue" />
     <node concept="3EZMnI" id="7SK$kQZvjmR" role="2wV5jI">
       <node concept="3F0ifn" id="7SK$kQZvjmT" role="3EZMnx">
         <property role="3F0ifm" value="installation folder" />
@@ -939,7 +939,7 @@
   </node>
   <node concept="24kQdi" id="7SK$kQZvl_N">
     <property role="3GE5qa" value="environment" />
-    <ref role="1XX52x" to="iuj9:7SK$kQZvhoq" resolve="ResourceFile" />
+    <ref role="1XX52x" to="iuj9:7SK$kQZvhoq" resolve="ResourceFileValue" />
     <node concept="3EZMnI" id="7SK$kQZvl_X" role="2wV5jI">
       <node concept="3F0ifn" id="7SK$kQZvl_Z" role="3EZMnx">
         <property role="3F0ifm" value="path to " />
@@ -995,6 +995,25 @@
         <ref role="1NtTu8" to="iuj9:7SK$kQZxXho" />
       </node>
       <node concept="2iRfu4" id="7SK$kQZxXhD" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7SK$kQZ_WBO">
+    <property role="3GE5qa" value="environment" />
+    <ref role="1XX52x" to="iuj9:7SK$kQZ_WyS" resolve="EnvVariableValue" />
+    <node concept="3EZMnI" id="7SK$kQZ_WH0" role="2wV5jI">
+      <node concept="1iCGBv" id="7SK$kQZ_WHd" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:7SK$kQZ_WBF" />
+        <node concept="1sVBvm" id="7SK$kQZ_WHf" role="1sWHZn">
+          <node concept="3F0A7n" id="7SK$kQZ_WHs" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="VPxyj" id="7SK$kQZ_WJ9" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7SK$kQZ_WH3" role="2iSdaV" />
     </node>
   </node>
 </model>
