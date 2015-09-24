@@ -272,7 +272,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7SK$kQZvhoq">
-    <property role="TrG5h" value="ResourceFile" />
+    <property role="TrG5h" value="ResourceFileValue" />
     <property role="R4oN_" value="A file distributed with the resource." />
     <property role="3GE5qa" value="environment" />
     <property role="34LRSv" value="path to" />
@@ -296,9 +296,10 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7SK$kQZvhpX">
-    <property role="TrG5h" value="ArtifactPath" />
+    <property role="TrG5h" value="ArtifactPathValue" />
     <property role="3GE5qa" value="environment" />
     <property role="34LRSv" value="installation folder" />
+    <property role="R4oN_" value="Installation folder of an artifact." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7SK$kQZwBUQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -324,6 +325,7 @@
     <property role="3GE5qa" value="environment" />
     <property role="TrG5h" value="ArtifactAttributeValue" />
     <property role="34LRSv" value="eval(attribute)" />
+    <property role="R4oN_" value="Value of a resource attribute." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7SK$kQZvjt8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
