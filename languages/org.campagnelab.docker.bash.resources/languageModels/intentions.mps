@@ -130,14 +130,14 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="irqYu7mLhU">
-    <property role="TrG5h" value="ReloadResourceVariables" />
+    <property role="TrG5h" value="ReloadEnvironment" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="iuj9:5yyd2HFS3xA" resolve="NYoShAwareScript" />
     <node concept="2S6ZIM" id="irqYu7mLhV" role="2ZfVej">
       <node concept="3clFbS" id="irqYu7mLhW" role="2VODD2">
         <node concept="3clFbF" id="irqYu7mLw4" role="3cqZAp">
           <node concept="Xl_RD" id="irqYu7mLw3" role="3clFbG">
-            <property role="Xl_RC" value="Load/Reload Resource Variables" />
+            <property role="Xl_RC" value="Load/Reload Environment" />
           </node>
         </node>
       </node>
@@ -148,7 +148,7 @@
           <node concept="2OqwBi" id="irqYu7mLW_" role="3clFbG">
             <node concept="2Sf5sV" id="irqYu7mLU1" role="2Oq$k0" />
             <node concept="2qgKlT" id="irqYu7mMpe" role="2OqNvi">
-              <ref role="37wK5l" to="6na6:irqYu7hHBc" resolve="reloadVariables" />
+              <ref role="37wK5l" to="6na6:irqYu7hHBc" resolve="reloadEnvironment" />
             </node>
           </node>
         </node>

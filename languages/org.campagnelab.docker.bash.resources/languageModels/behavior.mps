@@ -1054,7 +1054,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="irqYu7hHBc" role="13h7CS">
-      <property role="TrG5h" value="reloadVariables" />
+      <property role="TrG5h" value="reloadEnvironment" />
       <node concept="3Tm1VV" id="irqYu7hHBd" role="1B3o_S" />
       <node concept="3clFbS" id="irqYu7hHBe" role="3clF47">
         <node concept="3clFbF" id="CB0i$9AIWD" role="3cqZAp">
@@ -1242,7 +1242,7 @@
                   <ref role="2Gs0qQ" node="irqYu7hUGv" resolve="resource" />
                 </node>
                 <node concept="2qgKlT" id="4tpnhtPm39a" role="2OqNvi">
-                  <ref role="37wK5l" node="7SK$kQZhwIG" resolve="loadResourceVars" />
+                  <ref role="37wK5l" node="7SK$kQZhwIG" resolve="loadResourceEnv" />
                   <node concept="2OqwBi" id="4tpnhtPm6vx" role="37wK5m">
                     <node concept="2OqwBi" id="4tpnhtPm6vy" role="2Oq$k0">
                       <node concept="2GrUjf" id="4tpnhtPm6vz" role="2Oq$k0">
@@ -1286,7 +1286,7 @@
                       <ref role="2Gs0qQ" node="4tpnhtPcd2w" resolve="dep" />
                     </node>
                     <node concept="2qgKlT" id="4tpnhtPmg00" role="2OqNvi">
-                      <ref role="37wK5l" node="7SK$kQZhwIG" resolve="loadResourceVars" />
+                      <ref role="37wK5l" node="7SK$kQZhwIG" resolve="loadResourceEnv" />
                       <node concept="2OqwBi" id="4tpnhtPmmGY" role="37wK5m">
                         <node concept="2OqwBi" id="4tpnhtPmg4K" role="2Oq$k0">
                           <node concept="2GrUjf" id="4tpnhtPmg2D" role="2Oq$k0">
@@ -2454,7 +2454,7 @@
       <node concept="3cqZAl" id="4DwTgsTN$1W" role="3clF45" />
     </node>
     <node concept="13i0hz" id="7SK$kQZhwIG" role="13h7CS">
-      <property role="TrG5h" value="loadResourceVars" />
+      <property role="TrG5h" value="loadResourceEnv" />
       <node concept="37vLTG" id="7SK$kQZhwIH" role="3clF46">
         <property role="TrG5h" value="name" />
         <node concept="17QB3L" id="7SK$kQZhwII" role="1tU5fm" />
