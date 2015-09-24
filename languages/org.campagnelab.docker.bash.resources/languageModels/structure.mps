@@ -235,7 +235,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="environment" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7SK$kQZvhmu" resolve="EnvironmentValueValue" />
+      <ref role="20lvS9" node="7SK$kQZxXhk" resolve="EnvironmentValue" />
     </node>
     <node concept="1TJgyj" id="4DwTgsTNnkD" role="1TKVEi">
       <property role="20lmBu" value="reference" />
