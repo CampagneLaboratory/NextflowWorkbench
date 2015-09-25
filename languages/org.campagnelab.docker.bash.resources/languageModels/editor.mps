@@ -906,6 +906,7 @@
       </node>
       <node concept="1iCGBv" id="5quK2aePnN9" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:5quK2aeP41X" />
+        <ref role="1ERwB7" node="4DwTgsU3yvh" resolve="NoAutocompletion" />
         <node concept="1sVBvm" id="5quK2aePnNb" role="1sWHZn">
           <node concept="3F0A7n" id="5quK2aePnNK" role="2wV5jI">
             <property role="1Intyy" value="true" />
