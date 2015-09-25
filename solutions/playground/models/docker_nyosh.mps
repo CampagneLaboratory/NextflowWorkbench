@@ -9177,23 +9177,27 @@
         </node>
       </node>
       <node concept="19SGf9" id="5quK2aeSTDm" role="3Y$PkS">
-        <node concept="19SUe$" id="61tPieT_YRU" role="19SJt6" />
+        <node concept="19SUe$" id="61tPieT_YRU" role="19SJt6">
+          <property role="19SUeA" value="echo &quot;value of LAST_INDEX.INDEX.organism: " />
+        </node>
         <node concept="31HMC_" id="61tPieT_YRT" role="19SJt6">
           <ref role="31HMCX" node="61tPieTIQQh" resolve="value of LAST_INDEX.INDEX.organism" />
         </node>
         <node concept="19SUe$" id="61tPieT_YRS" role="19SJt6">
-          <property role="19SUeA" value="&#10;" />
+          <property role="19SUeA" value="&quot;&#10;ls -lrt " />
         </node>
-        <node concept="31HMC_" id="61tPieTD86Z" role="19SJt6">
-          <ref role="31HMCX" node="61tPieTIQQu" resolve="artifact path ENSEMBL_GENOMES.TOPLEVEL" />
+        <node concept="31HMC_" id="61tPieTLzkH" role="19SJt6">
+          <ref role="31HMCX" node="61tPieTIQQA" resolve="artifact path FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX" />
         </node>
-        <node concept="19SUe$" id="61tPieTD86Y" role="19SJt6">
-          <property role="19SUeA" value="&#10;" />
+        <node concept="19SUe$" id="61tPieTLzkG" role="19SJt6">
+          <property role="19SUeA" value="&#10;echo &quot;value of FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX.organism: " />
         </node>
         <node concept="31HMC_" id="61tPieTD866" role="19SJt6">
           <ref role="31HMCX" node="61tPieTIQQD" resolve="value of FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX.organism" />
         </node>
-        <node concept="19SUe$" id="61tPieTD867" role="19SJt6" />
+        <node concept="19SUe$" id="61tPieTD867" role="19SJt6">
+          <property role="19SUeA" value="&quot;&#10;" />
+        </node>
       </node>
       <node concept="1IqXV7" id="61tPieTIQPY" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.AMF249DSc1/Render" />
