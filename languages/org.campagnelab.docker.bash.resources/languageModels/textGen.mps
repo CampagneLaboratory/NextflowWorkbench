@@ -631,20 +631,31 @@
             </node>
           </node>
           <node concept="l9hG8" id="61tPieT$spa" role="lcghm">
-            <node concept="2OqwBi" id="61tPieTJD4B" role="lb14g">
-              <node concept="2OqwBi" id="61tPieTJCtS" role="2Oq$k0">
-                <node concept="2OqwBi" id="61tPieT$ssm" role="2Oq$k0">
-                  <node concept="117lpO" id="61tPieT$spY" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="61tPieT$sC6" role="2OqNvi">
-                    <ref role="3Tt5mk" to="iuj9:7SK$kQZvjt8" />
+            <node concept="2OqwBi" id="61tPieTQOWH" role="lb14g">
+              <node concept="2OqwBi" id="61tPieTJD4B" role="2Oq$k0">
+                <node concept="2OqwBi" id="61tPieTJCtS" role="2Oq$k0">
+                  <node concept="2OqwBi" id="61tPieT$ssm" role="2Oq$k0">
+                    <node concept="117lpO" id="61tPieT$spY" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="61tPieT$sC6" role="2OqNvi">
+                      <ref role="3Tt5mk" to="iuj9:7SK$kQZvjt8" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="61tPieTJCOM" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
-                <node concept="3TrcHB" id="61tPieTJCOM" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                <node concept="liA8E" id="61tPieTJEx6" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
                 </node>
               </node>
-              <node concept="liA8E" id="61tPieTJEx6" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+              <node concept="liA8E" id="61tPieTQPKh" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="61tPieTQPNt" role="37wK5m">
+                  <property role="Xl_RC" value="-" />
+                </node>
+                <node concept="Xl_RD" id="61tPieTQPU7" role="37wK5m">
+                  <property role="Xl_RC" value="_" />
+                </node>
               </node>
             </node>
           </node>

@@ -4218,17 +4218,28 @@
                     <node concept="liA8E" id="7SK$kQZE_P_" role="2OqNvi">
                       <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
                       <node concept="3cpWs3" id="7SK$kQZEDLh" role="37wK5m">
-                        <node concept="2OqwBi" id="7SK$kQZEE0Q" role="3uHU7w">
-                          <node concept="2OqwBi" id="7SK$kQZFt9S" role="2Oq$k0">
-                            <node concept="2GrUjf" id="7SK$kQZEDQY" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="7SK$kQZE0_H" resolve="attribute" />
+                        <node concept="2OqwBi" id="61tPieTOg5N" role="3uHU7w">
+                          <node concept="2OqwBi" id="7SK$kQZEE0Q" role="2Oq$k0">
+                            <node concept="2OqwBi" id="7SK$kQZFt9S" role="2Oq$k0">
+                              <node concept="2GrUjf" id="7SK$kQZEDQY" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="7SK$kQZE0_H" resolve="attribute" />
+                              </node>
+                              <node concept="3TrcHB" id="7SK$kQZFtGn" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              </node>
                             </node>
-                            <node concept="3TrcHB" id="7SK$kQZFtGn" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            <node concept="liA8E" id="7SK$kQZFjr4" role="2OqNvi">
+                              <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
                             </node>
                           </node>
-                          <node concept="liA8E" id="7SK$kQZFjr4" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                          <node concept="liA8E" id="61tPieTOxV3" role="2OqNvi">
+                            <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                            <node concept="Xl_RD" id="61tPieTOy0$" role="37wK5m">
+                              <property role="Xl_RC" value="-" />
+                            </node>
+                            <node concept="Xl_RD" id="61tPieTOyae" role="37wK5m">
+                              <property role="Xl_RC" value="_" />
+                            </node>
                           </node>
                         </node>
                         <node concept="37vLTw" id="7SK$kQZE_S6" role="3uHU7B">
