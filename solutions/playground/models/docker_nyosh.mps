@@ -83,12 +83,16 @@
         <reference id="6241637388239782013" name="resource" index="3oiC1v" />
         <child id="9092927410772195241" name="toEval" index="31jqr$" />
       </concept>
+      <concept id="9092927410772186852" name="org.campagnelab.bash.nyosh.structure.ArtifactAttributeValue" flags="ng" index="31jouD">
+        <property id="9092927410772194318" name="prefix" index="31jql3" />
+        <property id="6943940549888639150" name="artifactName" index="3pPHmd" />
+        <reference id="9092927410775356031" name="resource" index="31BucM" />
+        <child id="9092927410772195144" name="toEval" index="31jqo5" />
+      </concept>
       <concept id="9092927410772194840" name="org.campagnelab.bash.nyosh.structure.EvalArtifactAttribute" flags="ng" index="31jqtl">
         <reference id="9092927410772195893" name="attribute" index="31jqHS" />
       </concept>
-      <concept id="9092927410772884328" name="org.campagnelab.bash.nyosh.structure.EnvironmentValueRef" flags="ng" index="31HMC_">
-        <reference id="9092927410772884336" name="value" index="31HMCX" />
-      </concept>
+      <concept id="9092927410772884328" name="org.campagnelab.bash.nyosh.structure.EnvironmentValueRef" flags="ng" index="31HMC_" />
       <concept id="9092927410772890708" name="org.campagnelab.bash.nyosh.structure.EnvironmentValue" flags="ng" index="31HOkp">
         <property id="6241637388239898142" name="sourceVariable" index="3oicoW" />
         <child id="9092927410772890712" name="value" index="31HOkl" />
@@ -8939,24 +8943,37 @@
               <ref role="2vraA5" node="5quK2aeSTDF" resolve="ensembl-version-number" />
             </node>
           </node>
-          <node concept="31HOkp" id="61tPieTj8Ff" role="31jqfU">
+          <node concept="31HOkp" id="61tPieT$kzN" role="31jqfU">
             <property role="TrG5h" value="artifact path ENSEMBL_GENOMES.TOPLEVEL" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_CAENORHABDITIS_ELEGANS_WBCEL215_69" />
-            <node concept="31josK" id="61tPieTj8Fb" role="31HOkl">
+            <node concept="31josK" id="61tPieT$kzJ" role="31HOkl">
               <property role="31jqiE" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_" />
               <property role="3oiRSB" value="TOPLEVEL" />
               <ref role="3oiC1v" node="5quK2aeHSIm" resolve="ENSEMBL_GENOMES" />
-              <node concept="31jqtl" id="61tPieTj8Fc" role="31jqr$">
+              <node concept="31jqtl" id="61tPieT$kzK" role="31jqr$">
                 <property role="TrG5h" value="organism" />
                 <ref role="31jqHS" node="5quK2aeSTDW" resolve="organism" />
               </node>
-              <node concept="31jqtl" id="61tPieTj8Fd" role="31jqr$">
+              <node concept="31jqtl" id="61tPieT$kzL" role="31jqr$">
                 <property role="TrG5h" value="reference-build" />
                 <ref role="31jqHS" node="5quK2aeSTDY" resolve="reference-build" />
               </node>
-              <node concept="31jqtl" id="61tPieTj8Fe" role="31jqr$">
+              <node concept="31jqtl" id="61tPieT$kzM" role="31jqr$">
                 <property role="TrG5h" value="ensembl-version-number" />
                 <ref role="31jqHS" node="5quK2aeSTE0" resolve="ensembl-version-number" />
+              </node>
+            </node>
+          </node>
+          <node concept="31HOkp" id="61tPieT$kzQ" role="31jqfU">
+            <property role="TrG5h" value="value of ENSEMBL_GENOMES.TOPLEVEL.organism" />
+            <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL_ORGANISM" />
+            <node concept="31jouD" id="61tPieT$kzO" role="31HOkl">
+              <property role="31jql3" value="RESOURCES_ARTIFACTS_ENSEMBL_GENOMES_TOPLEVEL" />
+              <property role="3pPHmd" value="TOPLEVEL" />
+              <ref role="31BucM" node="5quK2aeHSIm" resolve="ENSEMBL_GENOMES" />
+              <node concept="31jqtl" id="61tPieT$kzP" role="31jqo5">
+                <property role="TrG5h" value="organism" />
+                <ref role="31jqHS" node="5quK2aeSTDW" resolve="organism" />
               </node>
             </node>
           </node>
@@ -9049,24 +9066,37 @@
               <ref role="2vraA5" node="5quK2aeSTDF" resolve="ensembl-version-number" />
             </node>
           </node>
-          <node concept="31HOkp" id="61tPieTj8Fk" role="31jqfU">
+          <node concept="31HOkp" id="61tPieT$kzV" role="31jqfU">
             <property role="TrG5h" value="artifact path FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_FAI_INDEXED_GENOMES_SAMTOOLS_FAI_INDEX_CAENORHABDITIS_ELEGANS_WBCEL215_69" />
-            <node concept="31josK" id="61tPieTj8Fg" role="31HOkl">
+            <node concept="31josK" id="61tPieT$kzR" role="31HOkl">
               <property role="31jqiE" value="RESOURCES_ARTIFACTS_FAI_INDEXED_GENOMES_SAMTOOLS_FAI_INDEX_" />
               <property role="3oiRSB" value="SAMTOOLS_FAI_INDEX" />
               <ref role="3oiC1v" node="5quK2aeHSI$" resolve="FAI_INDEXED_GENOMES" />
-              <node concept="31jqtl" id="61tPieTj8Fh" role="31jqr$">
+              <node concept="31jqtl" id="61tPieT$kzS" role="31jqr$">
                 <property role="TrG5h" value="organism" />
                 <ref role="31jqHS" node="5quK2aeSTDP" resolve="organism" />
               </node>
-              <node concept="31jqtl" id="61tPieTj8Fi" role="31jqr$">
+              <node concept="31jqtl" id="61tPieT$kzT" role="31jqr$">
                 <property role="TrG5h" value="reference-build" />
                 <ref role="31jqHS" node="5quK2aeSTDR" resolve="reference-build" />
               </node>
-              <node concept="31jqtl" id="61tPieTj8Fj" role="31jqr$">
+              <node concept="31jqtl" id="61tPieT$kzU" role="31jqr$">
                 <property role="TrG5h" value="ensembl-version-number" />
                 <ref role="31jqHS" node="5quK2aeSTDT" resolve="ensembl-version-number" />
+              </node>
+            </node>
+          </node>
+          <node concept="31HOkp" id="61tPieT$kzY" role="31jqfU">
+            <property role="TrG5h" value="value of FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX.organism" />
+            <property role="3oicoW" value="RESOURCES_ARTIFACTS_FAI_INDEXED_GENOMES_SAMTOOLS_FAI_INDEX_ORGANISM" />
+            <node concept="31jouD" id="61tPieT$kzW" role="31HOkl">
+              <property role="31jql3" value="RESOURCES_ARTIFACTS_FAI_INDEXED_GENOMES_SAMTOOLS_FAI_INDEX" />
+              <property role="3pPHmd" value="SAMTOOLS_FAI_INDEX" />
+              <ref role="31BucM" node="5quK2aeHSI$" resolve="FAI_INDEXED_GENOMES" />
+              <node concept="31jqtl" id="61tPieT$kzX" role="31jqo5">
+                <property role="TrG5h" value="organism" />
+                <ref role="31jqHS" node="5quK2aeSTDP" resolve="organism" />
               </node>
             </node>
           </node>
@@ -9075,120 +9105,136 @@
           <property role="3xVD5K" value="GOBY" />
           <ref role="1NFp0I" node="5quK2aeHSIY" resolve="GOBY" />
         </node>
-        <node concept="31HOkp" id="61tPieTj8F5" role="31jqfU">
+        <node concept="31HOkp" id="61tPieT$kzz" role="31jqfU">
           <property role="TrG5h" value="artifact path LAST_INDEX.INDEX" />
           <property role="3oicoW" value="RESOURCES_ARTIFACTS_LAST_INDEX_INDEX_CAENORHABDITIS_ELEGANS_WBCEL215_69" />
-          <node concept="31josK" id="61tPieTj8F1" role="31HOkl">
+          <node concept="31josK" id="61tPieT$kzv" role="31HOkl">
             <property role="31jqiE" value="RESOURCES_ARTIFACTS_LAST_INDEX_INDEX_" />
             <property role="3oiRSB" value="INDEX" />
             <ref role="3oiC1v" node="5quK2aeHSKf" resolve="LAST_INDEX" />
-            <node concept="31jqtl" id="61tPieTj8F2" role="31jqr$">
+            <node concept="31jqtl" id="61tPieT$kzw" role="31jqr$">
               <property role="TrG5h" value="organism" />
               <ref role="31jqHS" node="5quK2aeSTDB" resolve="organism" />
             </node>
-            <node concept="31jqtl" id="61tPieTj8F3" role="31jqr$">
+            <node concept="31jqtl" id="61tPieT$kzx" role="31jqr$">
               <property role="TrG5h" value="reference-build" />
               <ref role="31jqHS" node="5quK2aeSTDD" resolve="reference-build" />
             </node>
-            <node concept="31jqtl" id="61tPieTj8F4" role="31jqr$">
+            <node concept="31jqtl" id="61tPieT$kzy" role="31jqr$">
               <property role="TrG5h" value="ensembl-version-number" />
               <ref role="31jqHS" node="5quK2aeSTDF" resolve="ensembl-version-number" />
             </node>
           </node>
         </node>
-        <node concept="31HOkp" id="61tPieTj8Fa" role="31jqfU">
+        <node concept="31HOkp" id="61tPieT$kzA" role="31jqfU">
+          <property role="TrG5h" value="value of LAST_INDEX.INDEX.organism" />
+          <property role="3oicoW" value="RESOURCES_ARTIFACTS_LAST_INDEX_INDEX_ORGANISM" />
+          <node concept="31jouD" id="61tPieT$kz$" role="31HOkl">
+            <property role="31jql3" value="RESOURCES_ARTIFACTS_LAST_INDEX_INDEX" />
+            <property role="3pPHmd" value="INDEX" />
+            <ref role="31BucM" node="5quK2aeHSKf" resolve="LAST_INDEX" />
+            <node concept="31jqtl" id="61tPieT$kz_" role="31jqo5">
+              <property role="TrG5h" value="organism" />
+              <ref role="31jqHS" node="5quK2aeSTDB" resolve="organism" />
+            </node>
+          </node>
+        </node>
+        <node concept="31HOkp" id="61tPieT$kzF" role="31jqfU">
           <property role="TrG5h" value="artifact path LAST_INDEX.TOPLEVEL_IDS" />
           <property role="3oicoW" value="RESOURCES_ARTIFACTS_LAST_INDEX_TOPLEVEL_IDS_CAENORHABDITIS_ELEGANS_WBCEL215_69" />
-          <node concept="31josK" id="61tPieTj8F6" role="31HOkl">
+          <node concept="31josK" id="61tPieT$kzB" role="31HOkl">
             <property role="31jqiE" value="RESOURCES_ARTIFACTS_LAST_INDEX_TOPLEVEL_IDS_" />
             <property role="3oiRSB" value="TOPLEVEL_IDS" />
             <ref role="3oiC1v" node="5quK2aeHSKf" resolve="LAST_INDEX" />
-            <node concept="31jqtl" id="61tPieTj8F7" role="31jqr$">
+            <node concept="31jqtl" id="61tPieT$kzC" role="31jqr$">
               <property role="TrG5h" value="organism" />
               <ref role="31jqHS" node="5quK2aeSTDH" resolve="organism" />
             </node>
-            <node concept="31jqtl" id="61tPieTj8F8" role="31jqr$">
+            <node concept="31jqtl" id="61tPieT$kzD" role="31jqr$">
               <property role="TrG5h" value="reference-build" />
               <ref role="31jqHS" node="5quK2aeSTDJ" resolve="reference-build" />
             </node>
-            <node concept="31jqtl" id="61tPieTj8F9" role="31jqr$">
+            <node concept="31jqtl" id="61tPieT$kzE" role="31jqr$">
               <property role="TrG5h" value="ensembl-version-number" />
               <ref role="31jqHS" node="5quK2aeSTDL" resolve="ensembl-version-number" />
             </node>
           </node>
         </node>
+        <node concept="31HOkp" id="61tPieT$kzI" role="31jqfU">
+          <property role="TrG5h" value="value of LAST_INDEX.TOPLEVEL_IDS.organism" />
+          <property role="3oicoW" value="RESOURCES_ARTIFACTS_LAST_INDEX_TOPLEVEL_IDS_ORGANISM" />
+          <node concept="31jouD" id="61tPieT$kzG" role="31HOkl">
+            <property role="31jql3" value="RESOURCES_ARTIFACTS_LAST_INDEX_TOPLEVEL_IDS" />
+            <property role="3pPHmd" value="TOPLEVEL_IDS" />
+            <ref role="31BucM" node="5quK2aeHSKf" resolve="LAST_INDEX" />
+            <node concept="31jqtl" id="61tPieT$kzH" role="31jqo5">
+              <property role="TrG5h" value="organism" />
+              <ref role="31jqHS" node="5quK2aeSTDH" resolve="organism" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="19SGf9" id="5quK2aeSTDm" role="3Y$PkS">
-        <node concept="19SUe$" id="61tPieTj8Hv" role="19SJt6">
-          <property role="19SUeA" value="echo &quot;Path " />
-        </node>
-        <node concept="31HMC_" id="61tPieTj8Hu" role="19SJt6">
-          <ref role="31HMCX" node="61tPieTj8Fk" resolve="artifact path FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX" />
-        </node>
-        <node concept="19SUe$" id="61tPieTj8Hw" role="19SJt6">
-          <property role="19SUeA" value="&quot;&#10;ls -lrt " />
-        </node>
-        <node concept="31HMC_" id="61tPieTt7EJ" role="19SJt6">
-          <ref role="31HMCX" node="61tPieTj8Fk" resolve="artifact path FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX" />
-        </node>
-        <node concept="19SUe$" id="61tPieTt7EK" role="19SJt6" />
+        <node concept="19SUe$" id="61tPieT$kz8" role="19SJt6" />
+        <node concept="31HMC_" id="61tPieT$kz7" role="19SJt6" />
+        <node concept="19SUe$" id="61tPieT$kz9" role="19SJt6" />
       </node>
-      <node concept="1IqXV7" id="61tPieTj8EP" role="23Rrb0">
+      <node concept="1IqXV7" id="61tPieT$kzj" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.AMF249DSc1/Render" />
         <property role="TrG5h" value="Apple_PubSub_Socket_Render" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="61tPieTj8EQ" role="23Rrb0">
+      <node concept="1IqXV7" id="61tPieT$kzk" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.U3Y3gHYRlL/org.macosforge.xquartz:0" />
         <property role="TrG5h" value="DISPLAY" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="61tPieTj8ER" role="23Rrb0">
+      <node concept="1IqXV7" id="61tPieT$kzl" role="23Rrb0">
         <property role="2rInPY" value="/Users/mas2182" />
         <property role="TrG5h" value="HOME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="61tPieTj8ES" role="23Rrb0">
+      <node concept="1IqXV7" id="61tPieT$kzm" role="23Rrb0">
         <property role="2rInPY" value="mas2182" />
         <property role="TrG5h" value="LOGNAME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="61tPieTj8ET" role="23Rrb0">
+      <node concept="1IqXV7" id="61tPieT$kzn" role="23Rrb0">
         <property role="2rInPY" value="/usr/bin:/bin:/usr/sbin:/sbin" />
         <property role="TrG5h" value="PATH" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="61tPieTj8EU" role="23Rrb0">
+      <node concept="1IqXV7" id="61tPieT$kzo" role="23Rrb0">
         <property role="2rInPY" value="/bin/bash" />
         <property role="TrG5h" value="SHELL" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="61tPieTj8EV" role="23Rrb0">
+      <node concept="1IqXV7" id="61tPieT$kzp" role="23Rrb0">
         <property role="2rInPY" value="/private/tmp/com.apple.launchd.Wt3Z6E8v86/Listeners" />
         <property role="TrG5h" value="SSH_AUTH_SOCK" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="61tPieTj8EW" role="23Rrb0">
+      <node concept="1IqXV7" id="61tPieT$kzq" role="23Rrb0">
         <property role="2rInPY" value="/var/folders/_b/yxqf80914033gdcjr2jz91_h0000gq/T/" />
         <property role="TrG5h" value="TMPDIR" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="61tPieTj8EX" role="23Rrb0">
+      <node concept="1IqXV7" id="61tPieT$kzr" role="23Rrb0">
         <property role="2rInPY" value="mas2182" />
         <property role="TrG5h" value="USER" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="61tPieTj8EY" role="23Rrb0">
+      <node concept="1IqXV7" id="61tPieT$kzs" role="23Rrb0">
         <property role="2rInPY" value="0x0" />
         <property role="TrG5h" value="XPC_FLAGS" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="61tPieTj8EZ" role="23Rrb0">
+      <node concept="1IqXV7" id="61tPieT$kzt" role="23Rrb0">
         <property role="2rInPY" value="com.jetbrains.intellij.53424" />
         <property role="TrG5h" value="XPC_SERVICE_NAME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="61tPieTj8F0" role="23Rrb0">
+      <node concept="1IqXV7" id="61tPieT$kzu" role="23Rrb0">
         <property role="2rInPY" value="0x1F7:0x0:0x0" />
         <property role="TrG5h" value="__CF_USER_TEXT_ENCODING" />
         <property role="3vthGj" value="STRING" />

@@ -355,6 +355,10 @@
       <property role="TrG5h" value="prefix" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="61tPieTyK2I" role="1TKVEl">
+      <property role="TrG5h" value="artifactName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="7SK$kQZvhrF" role="PzmwI">
       <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentValueValue" />
     </node>
