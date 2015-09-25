@@ -339,6 +339,12 @@
     <property role="34LRSv" value="eval(attribute)" />
     <property role="R4oN_" value="Value of a resource attribute." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7SK$kQZFn9Z" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="resource" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
+    </node>
     <node concept="1TJgyj" id="7SK$kQZvjt8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="toEval" />
