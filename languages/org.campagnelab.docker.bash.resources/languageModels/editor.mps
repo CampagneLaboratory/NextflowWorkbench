@@ -20,6 +20,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dzk5" ref="r:2bfcc546-5c51-4762-9df2-c43920be4458(org.campagnelab.gobyweb.plugins.structure)" implicit="true" />
     <import index="lcm8" ref="r:19e666fd-ce33-4549-bbc2-aa106ce25584(org.campagnelab.gobyweb.interactive.behavior)" implicit="true" />
+    <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -872,8 +873,25 @@
     <property role="3GE5qa" value="environment" />
     <ref role="1XX52x" to="iuj9:7SK$kQZvhr$" resolve="ArtifactAttributeValue" />
     <node concept="3EZMnI" id="7SK$kQZvjfL" role="2wV5jI">
-      <node concept="3F1sOY" id="7SK$kQZxX9H" role="3EZMnx">
-        <ref role="1NtTu8" to="iuj9:7SK$kQZvjt8" />
+      <node concept="3F0ifn" id="61tPieT$sQl" role="3EZMnx">
+        <property role="3F0ifm" value="value of" />
+        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
+      </node>
+      <node concept="1HlG4h" id="61tPieTB_3H" role="3EZMnx">
+        <node concept="1HfYo3" id="61tPieTB_3L" role="1HlULh">
+          <node concept="3TQlhw" id="61tPieTB_3P" role="1Hhtcw">
+            <node concept="3clFbS" id="61tPieTB_3T" role="2VODD2">
+              <node concept="3clFbF" id="61tPieTB_9b" role="3cqZAp">
+                <node concept="2OqwBi" id="61tPieTB_e1" role="3clFbG">
+                  <node concept="pncrf" id="61tPieTB_9a" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="61tPieTB_EX" role="2OqNvi">
+                    <ref role="37wK5l" to="6na6:61tPieTByXj" resolve="getQualifiedName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2iRfu4" id="7SK$kQZvjfO" role="2iSdaV" />
     </node>
@@ -914,15 +932,6 @@
     <property role="3GE5qa" value="environment" />
     <ref role="1XX52x" to="iuj9:7SK$kQZvjoo" resolve="EvalArtifactAttribute" />
     <node concept="3EZMnI" id="7SK$kQZvjoU" role="2wV5jI">
-      <node concept="3F0ifn" id="7SK$kQZvjp7" role="3EZMnx">
-        <property role="3F0ifm" value="eval(" />
-        <node concept="11LMrY" id="7SK$kQZvjro" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="7SK$kQZvlMu" role="3F10Kt">
-          <property role="Vb096" value="DARK_GREEN" />
-        </node>
-      </node>
       <node concept="1iCGBv" id="7SK$kQZvlx7" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:7SK$kQZvjCP" />
         <ref role="1ERwB7" node="4DwTgsU3yvh" resolve="NoAutocompletion" />
@@ -934,13 +943,6 @@
         </node>
         <node concept="VPxyj" id="7SK$kQZvlzf" role="3F10Kt">
           <property role="VOm3f" value="false" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7SK$kQZvjp_" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
-        <node concept="11L4FC" id="7SK$kQZvjt4" role="3F10Kt">
-          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="2iRfu4" id="7SK$kQZvjoX" role="2iSdaV" />
