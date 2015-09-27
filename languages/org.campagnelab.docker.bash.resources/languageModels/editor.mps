@@ -3,23 +3,16 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash" version="0" />
-    <use id="0b7d8bbd-896e-495e-be60-01a0d738a649" name="org.campagnelab.gobyweb.plugins" version="0" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh" version="0" />
-    <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="6" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="gfij" ref="r:4f6e5725-b07e-4a66-a867-637c5505b4b4(org.campagnelab.workflow.nyosh.editor)" />
     <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dzk5" ref="r:2bfcc546-5c51-4762-9df2-c43920be4458(org.campagnelab.gobyweb.plugins.structure)" implicit="true" />
     <import index="lcm8" ref="r:19e666fd-ce33-4549-bbc2-aa106ce25584(org.campagnelab.gobyweb.interactive.behavior)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -48,6 +41,9 @@
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styleClass" index="V601i" />
@@ -869,92 +865,6 @@
       <node concept="2iRfu4" id="RXABvRSfRf" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="7SK$kQZvjb9">
-    <property role="3GE5qa" value="environment" />
-    <ref role="1XX52x" to="iuj9:7SK$kQZvhr$" resolve="ArtifactAttributeValue" />
-    <node concept="3EZMnI" id="7SK$kQZvjfL" role="2wV5jI">
-      <node concept="3F0ifn" id="61tPieT$sQl" role="3EZMnx">
-        <property role="3F0ifm" value="value of" />
-        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
-      </node>
-      <node concept="1HlG4h" id="61tPieTB_3H" role="3EZMnx">
-        <node concept="1HfYo3" id="61tPieTB_3L" role="1HlULh">
-          <node concept="3TQlhw" id="61tPieTB_3P" role="1Hhtcw">
-            <node concept="3clFbS" id="61tPieTB_3T" role="2VODD2">
-              <node concept="3clFbF" id="61tPieTB_9b" role="3cqZAp">
-                <node concept="2OqwBi" id="61tPieTB_e1" role="3clFbG">
-                  <node concept="pncrf" id="61tPieTB_9a" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="61tPieTB_EX" role="2OqNvi">
-                    <ref role="37wK5l" to="6na6:61tPieTByXj" resolve="getQualifiedName" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2iRfu4" id="7SK$kQZvjfO" role="2iSdaV" />
-    </node>
-    <node concept="3EZMnI" id="7SK$kR0y1pZ" role="6VMZX">
-      <node concept="3F0ifn" id="7SK$kR0y1q0" role="3EZMnx">
-        <property role="3F0ifm" value="source resource:" />
-      </node>
-      <node concept="1iCGBv" id="7SK$kR0y1q1" role="3EZMnx">
-        <ref role="1ERwB7" node="4DwTgsU3yvh" resolve="NoAutocompletion" />
-        <ref role="1NtTu8" to="iuj9:7SK$kQZFn9Z" />
-        <node concept="1sVBvm" id="7SK$kR0y1q2" role="1sWHZn">
-          <node concept="3F0A7n" id="7SK$kR0y1q3" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="2iRfu4" id="7SK$kR0y1q4" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7SK$kQZvjmH">
-    <property role="3GE5qa" value="environment" />
-    <ref role="1XX52x" to="iuj9:7SK$kQZvhpX" resolve="ArtifactPathValue" />
-    <node concept="3EZMnI" id="7SK$kQZvjmR" role="2wV5jI">
-      <node concept="3F0ifn" id="7SK$kQZvjmT" role="3EZMnx">
-        <property role="3F0ifm" value="artifact path" />
-        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
-      </node>
-      <node concept="1HlG4h" id="7SK$kR0y4hf" role="3EZMnx">
-        <node concept="1HfYo3" id="7SK$kR0y4hj" role="1HlULh">
-          <node concept="3TQlhw" id="7SK$kR0y4hn" role="1Hhtcw">
-            <node concept="3clFbS" id="7SK$kR0y4hr" role="2VODD2">
-              <node concept="3clFbF" id="7SK$kR0y4mH" role="3cqZAp">
-                <node concept="2OqwBi" id="7SK$kR0y4rz" role="3clFbG">
-                  <node concept="pncrf" id="7SK$kR0y4mG" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="7SK$kR0y4Sv" role="2OqNvi">
-                    <ref role="37wK5l" to="6na6:7SK$kR0y1L8" resolve="getQualifiedName" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2iRfu4" id="7SK$kQZvjmU" role="2iSdaV" />
-    </node>
-    <node concept="3EZMnI" id="7SK$kR0y18V" role="6VMZX">
-      <node concept="3F0ifn" id="7SK$kR0y18W" role="3EZMnx">
-        <property role="3F0ifm" value="source resource:" />
-      </node>
-      <node concept="1iCGBv" id="7SK$kR0y18X" role="3EZMnx">
-        <ref role="1ERwB7" node="4DwTgsU3yvh" resolve="NoAutocompletion" />
-        <ref role="1NtTu8" to="iuj9:5quK2aeP41X" />
-        <node concept="1sVBvm" id="7SK$kR0y18Y" role="1sWHZn">
-          <node concept="3F0A7n" id="7SK$kR0y18Z" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="2iRfu4" id="7SK$kR0y190" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="7SK$kQZvjo_">
     <property role="3GE5qa" value="environment" />
     <ref role="1XX52x" to="iuj9:7SK$kQZvjoo" resolve="EvalArtifactAttribute" />
@@ -973,49 +883,6 @@
         </node>
       </node>
       <node concept="2iRfu4" id="7SK$kQZvjoX" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7SK$kQZvl_N">
-    <property role="3GE5qa" value="environment" />
-    <ref role="1XX52x" to="iuj9:7SK$kQZvhoq" resolve="ResourceFileValue" />
-    <node concept="3EZMnI" id="7SK$kQZvl_X" role="2wV5jI">
-      <node concept="3F0ifn" id="7SK$kQZvl_Z" role="3EZMnx">
-        <property role="3F0ifm" value="path to" />
-        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
-      </node>
-      <node concept="1HlG4h" id="7SK$kR0y0a1" role="3EZMnx">
-        <node concept="1HfYo3" id="7SK$kR0y0a3" role="1HlULh">
-          <node concept="3TQlhw" id="7SK$kR0y0a5" role="1Hhtcw">
-            <node concept="3clFbS" id="7SK$kR0y0a7" role="2VODD2">
-              <node concept="3clFbF" id="7SK$kR0y0fn" role="3cqZAp">
-                <node concept="2OqwBi" id="7SK$kR0y0kd" role="3clFbG">
-                  <node concept="pncrf" id="7SK$kR0y0fm" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="7SK$kR0y0La" role="2OqNvi">
-                    <ref role="37wK5l" to="6na6:7SK$kR0xTFv" resolve="getQualifiedName" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2iRfu4" id="7SK$kQZvlA0" role="2iSdaV" />
-    </node>
-    <node concept="3EZMnI" id="7SK$kQZwBQA" role="6VMZX">
-      <node concept="3F0ifn" id="7SK$kQZwBQN" role="3EZMnx">
-        <property role="3F0ifm" value="source resource:" />
-      </node>
-      <node concept="1iCGBv" id="7SK$kQZwBQZ" role="3EZMnx">
-        <ref role="1NtTu8" to="iuj9:7SK$kQZwBQr" />
-        <ref role="1ERwB7" node="4DwTgsU3yvh" resolve="NoAutocompletion" />
-        <node concept="1sVBvm" id="7SK$kQZwBR1" role="1sWHZn">
-          <node concept="3F0A7n" id="7SK$kQZwBRh" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="2iRfu4" id="7SK$kQZwBQD" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="7SK$kQZxVHT">
@@ -1056,23 +923,46 @@
       <node concept="2iRfu4" id="7SK$kQZxXhD" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="7SK$kQZ_WBO">
+  <node concept="24kQdi" id="7SK$kR0zFgE">
     <property role="3GE5qa" value="environment" />
-    <ref role="1XX52x" to="iuj9:7SK$kQZ_WyS" resolve="EnvVariableValue" />
-    <node concept="3EZMnI" id="7SK$kQZ_WH0" role="2wV5jI">
-      <node concept="1iCGBv" id="7SK$kQZ_WHd" role="3EZMnx">
-        <ref role="1NtTu8" to="iuj9:7SK$kQZ_WBF" />
-        <node concept="1sVBvm" id="7SK$kQZ_WHf" role="1sWHZn">
-          <node concept="3F0A7n" id="7SK$kQZ_WHs" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <node concept="VPxyj" id="7SK$kQZ_WJ9" role="3F10Kt">
-              <property role="VOm3f" value="false" />
+    <ref role="1XX52x" to="iuj9:7SK$kQZvhmu" resolve="EnvironmentValueValue" />
+    <node concept="3EZMnI" id="7SK$kR0zFqJ" role="2wV5jI">
+      <node concept="PMmxH" id="7SK$kR0zFWa" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="1HlG4h" id="7SK$kR0zFqL" role="3EZMnx">
+        <node concept="1HfYo3" id="7SK$kR0zFqM" role="1HlULh">
+          <node concept="3TQlhw" id="7SK$kR0zFqN" role="1Hhtcw">
+            <node concept="3clFbS" id="7SK$kR0zFqO" role="2VODD2">
+              <node concept="3clFbF" id="7SK$kR0zFqP" role="3cqZAp">
+                <node concept="2OqwBi" id="7SK$kR0zFqQ" role="3clFbG">
+                  <node concept="pncrf" id="7SK$kR0zFqR" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="7SK$kR0zFqS" role="2OqNvi">
+                    <ref role="37wK5l" to="6na6:7SK$kR0zEMu" resolve="getQualifiedName" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2iRfu4" id="7SK$kQZ_WH3" role="2iSdaV" />
+      <node concept="2iRfu4" id="7SK$kR0zFqT" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="7SK$kR0zFCY" role="6VMZX">
+      <node concept="3F0ifn" id="7SK$kR0zFCZ" role="3EZMnx">
+        <property role="3F0ifm" value="source resource:" />
+      </node>
+      <node concept="1iCGBv" id="7SK$kR0CQCt" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:7SK$kR0zFxf" />
+        <ref role="1ERwB7" node="4DwTgsU3yvh" resolve="NoAutocompletion" />
+        <node concept="1sVBvm" id="7SK$kR0CQCv" role="1sWHZn">
+          <node concept="3F0A7n" id="7SK$kR0CQCO" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7SK$kR0zFD3" role="2iSdaV" />
     </node>
   </node>
 </model>

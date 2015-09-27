@@ -6,7 +6,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="935h" ref="r:c68a8ced-fbf7-48e1-b1e0-40266e57501f(org.campagnelab.gobyweb.structure)" />
     <import index="dzk5" ref="r:2bfcc546-5c51-4762-9df2-c43920be4458(org.campagnelab.gobyweb.plugins.structure)" />
     <import index="6pk0" ref="r:48f4e449-1a18-435e-ae88-4830aa794dc7(org.campagnelab.nyosh.environment.structure)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
@@ -275,6 +274,11 @@
   <node concept="PlHQZ" id="7SK$kQZvhmu">
     <property role="TrG5h" value="EnvironmentValueValue" />
     <property role="3GE5qa" value="environment" />
+    <node concept="1TJgyj" id="7SK$kR0zFxf" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="resource" />
+      <ref role="20lvS9" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
+    </node>
     <node concept="PrWs8" id="7SK$kQZvhrJ" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -285,12 +289,6 @@
     <property role="3GE5qa" value="environment" />
     <property role="34LRSv" value="path to" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7SK$kQZwBQr" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="resource" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
-    </node>
     <node concept="1TJgyi" id="7SK$kQZvl_z" role="1TKVEl">
       <property role="TrG5h" value="prefix" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -309,12 +307,6 @@
     <property role="34LRSv" value="artifact path" />
     <property role="R4oN_" value="Install folder of an artifact." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5quK2aeP41X" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="resource" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
-    </node>
     <node concept="1TJgyj" id="7SK$kQZvjuD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="toEval" />
@@ -339,12 +331,6 @@
     <property role="34LRSv" value="eval(attribute)" />
     <property role="R4oN_" value="Value of a resource attribute." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7SK$kQZFn9Z" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="resource" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
-    </node>
     <node concept="1TJgyj" id="7SK$kQZvjt8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="toEval" />
