@@ -226,36 +226,6 @@
       <node concept="l2Vlx" id="5yyd2HFS3D4" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="6A9boVQ8yHs">
-    <ref role="1XX52x" to="iuj9:6A9boVQ8yHm" resolve="NYoShEnvVariableRef" />
-    <node concept="3EZMnI" id="6A9boVQ8yHt" role="2wV5jI">
-      <node concept="3F0ifn" id="6A9boVQ8yHu" role="3EZMnx">
-        <property role="3F0ifm" value="${" />
-        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
-        <node concept="11LMrY" id="6A9boVQ8yHv" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="1iCGBv" id="6A9boVQ8yHw" role="3EZMnx">
-        <ref role="1NtTu8" to="iuj9:6A9boVQ8yHn" />
-        <node concept="1sVBvm" id="6A9boVQ8yHx" role="1sWHZn">
-          <node concept="3F0A7n" id="6A9boVQ8yHy" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
-          </node>
-        </node>
-      </node>
-      <node concept="l2Vlx" id="6A9boVQ8yHz" role="2iSdaV" />
-      <node concept="3F0ifn" id="4tpnhtPnJOm" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
-        <ref role="1k5W1q" node="irqYu7oFw0" resolve="GobyWebVarRef" />
-        <node concept="11L4FC" id="4tpnhtPnJQr" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="V5hpn" id="irqYu7oFvW">
     <property role="TrG5h" value="WorkflowNYoShStylesheet" />
     <node concept="14StLt" id="irqYu7oFw0" role="V601i">

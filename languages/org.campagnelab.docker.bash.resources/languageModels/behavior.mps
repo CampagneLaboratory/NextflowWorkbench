@@ -225,10 +225,8 @@
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
         <property id="1167245565795" name="severity" index="35gtTG" />
         <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -271,9 +269,6 @@
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
-      </concept>
-      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
-        <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
@@ -1045,156 +1040,6 @@
       <property role="TrG5h" value="reloadEnvironment" />
       <node concept="3Tm1VV" id="irqYu7hHBd" role="1B3o_S" />
       <node concept="3clFbS" id="irqYu7hHBe" role="3clF47">
-        <node concept="3clFbF" id="CB0i$9AIWD" role="3cqZAp">
-          <node concept="2OqwBi" id="CB0i$9AIWE" role="3clFbG">
-            <node concept="2OqwBi" id="CB0i$9AIWF" role="2Oq$k0">
-              <node concept="13iPFW" id="CB0i$9AIWG" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="7SK$kQZj7vB" role="2OqNvi">
-                <ref role="3TtcxE" to="iuj9:irqYu7hH$B" />
-              </node>
-            </node>
-            <node concept="2Kehj3" id="CB0i$9AIWI" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="34ab3g" id="irqYu7nbA6" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <property role="34fQS0" value="true" />
-          <node concept="Xl_RD" id="irqYu7nbA8" role="34bqiv">
-            <property role="Xl_RC" value="About to reload variables." />
-          </node>
-          <node concept="2ShNRf" id="3A$s7Pqsvnp" role="34bMjA">
-            <node concept="1pGfFk" id="3A$s7Pqsxyw" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;()" resolve="RuntimeException" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="7NR7sJvv_dp" role="3cqZAp">
-          <node concept="3cpWsn" id="7NR7sJvv_dq" role="3cpWs9">
-            <property role="TrG5h" value="parser" />
-            <node concept="3uibUv" id="7NR7sJvv_dr" role="1tU5fm">
-              <ref role="3uigEE" to="evra:~JVMEnvParser" resolve="JVMEnvParser" />
-            </node>
-            <node concept="2ShNRf" id="7NR7sJvv_kc" role="33vP2m">
-              <node concept="1pGfFk" id="7NR7sJvv_qi" role="2ShVmc">
-                <ref role="37wK5l" to="evra:~JVMEnvParser.&lt;init&gt;()" resolve="JVMEnvParser" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1DcWWT" id="4Jg$YMkD4Qg" role="3cqZAp">
-          <node concept="3clFbS" id="4Jg$YMkD4Qh" role="2LFqv$">
-            <node concept="3cpWs8" id="4Jg$YMkD8wg" role="3cqZAp">
-              <node concept="3cpWsn" id="4Jg$YMkD8wh" role="3cpWs9">
-                <property role="TrG5h" value="variableDeclaration" />
-                <node concept="3Tqbb2" id="4Jg$YMkD8wi" role="1tU5fm">
-                  <ref role="ehGHo" to="6pk0:5a_m_wWNCiv" resolve="EnvVariableDeclaration" />
-                </node>
-                <node concept="2ShNRf" id="4Jg$YMkD8wj" role="33vP2m">
-                  <node concept="3zrR0B" id="4Jg$YMkD8wk" role="2ShVmc">
-                    <node concept="3Tqbb2" id="4Jg$YMkD8wl" role="3zrR0E">
-                      <ref role="ehGHo" to="6pk0:5a_m_wWNCiv" resolve="EnvVariableDeclaration" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="4Jg$YMkD8P5" role="3cqZAp">
-              <node concept="37vLTI" id="4Jg$YMkDaX$" role="3clFbG">
-                <node concept="2OqwBi" id="4Jg$YMkDbPX" role="37vLTx">
-                  <node concept="37vLTw" id="4Jg$YMkDbg6" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4Jg$YMkD4Qk" resolve="scriptVariable" />
-                  </node>
-                  <node concept="2OwXpG" id="4Jg$YMkDeNH" role="2OqNvi">
-                    <ref role="2Oxat5" to="evra:~ScriptVariable.value" resolve="value" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="4Jg$YMkD97v" role="37vLTJ">
-                  <node concept="37vLTw" id="4Jg$YMkD8P4" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4Jg$YMkD8wh" resolve="variableDeclaration" />
-                  </node>
-                  <node concept="3TrcHB" id="4Jg$YMkDaCN" role="2OqNvi">
-                    <ref role="3TsBF5" to="6pk0:4JBeXBgn$qB" resolve="value" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="4Jg$YMkDfq7" role="3cqZAp">
-              <node concept="37vLTI" id="4Jg$YMkDgZi" role="3clFbG">
-                <node concept="2OqwBi" id="4Jg$YMkDhKn" role="37vLTx">
-                  <node concept="37vLTw" id="4Jg$YMkDhaw" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4Jg$YMkD4Qk" resolve="scriptVariable" />
-                  </node>
-                  <node concept="2OwXpG" id="4Jg$YMkDkGz" role="2OqNvi">
-                    <ref role="2Oxat5" to="evra:~ScriptVariable.name" resolve="name" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="4Jg$YMkDfR_" role="37vLTJ">
-                  <node concept="37vLTw" id="4Jg$YMkDfq6" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4Jg$YMkD8wh" resolve="variableDeclaration" />
-                  </node>
-                  <node concept="3TrcHB" id="4Jg$YMkDgCq" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="4Jg$YMkDlmC" role="3cqZAp">
-              <node concept="37vLTI" id="4Jg$YMkDsdy" role="3clFbG">
-                <node concept="2OqwBi" id="4Jg$YMkDxXN" role="37vLTx">
-                  <node concept="2OqwBi" id="4Jg$YMkDsYB" role="2Oq$k0">
-                    <node concept="37vLTw" id="4Jg$YMkDsoK" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4Jg$YMkD4Qk" resolve="scriptVariable" />
-                    </node>
-                    <node concept="2OwXpG" id="4Jg$YMkDvUE" role="2OqNvi">
-                      <ref role="2Oxat5" to="evra:~ScriptVariable.kind" resolve="kind" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="4Jg$YMkDAQH" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Enum.name():java.lang.String" resolve="name" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="4Jg$YMkDlGu" role="37vLTJ">
-                  <node concept="37vLTw" id="4Jg$YMkDlmB" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4Jg$YMkD8wh" resolve="variableDeclaration" />
-                  </node>
-                  <node concept="3TrcHB" id="4Jg$YMkDrQD" role="2OqNvi">
-                    <ref role="3TsBF5" to="6pk0:4Jg$YMkDozZ" resolve="kind" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="4Jg$YMkDBSm" role="3cqZAp">
-              <node concept="2OqwBi" id="4Jg$YMkDBSn" role="3clFbG">
-                <node concept="2OqwBi" id="4Jg$YMkDBSo" role="2Oq$k0">
-                  <node concept="13iPFW" id="4Jg$YMkDBSp" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="7SK$kQZj9eW" role="2OqNvi">
-                    <ref role="3TtcxE" to="iuj9:irqYu7hH$B" />
-                  </node>
-                </node>
-                <node concept="TSZUe" id="4Jg$YMkDBSr" role="2OqNvi">
-                  <node concept="37vLTw" id="4Jg$YMkDBSs" role="25WWJ7">
-                    <ref role="3cqZAo" node="4Jg$YMkD8wh" resolve="variableDeclaration" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWsn" id="4Jg$YMkD4Qk" role="1Duv9x">
-            <property role="TrG5h" value="scriptVariable" />
-            <node concept="3uibUv" id="4Jg$YMkD4Qo" role="1tU5fm">
-              <ref role="3uigEE" to="evra:~ScriptVariable" resolve="ScriptVariable" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="4Jg$YMkD4Qp" role="1DdaDG">
-            <node concept="37vLTw" id="4Jg$YMkD4Qq" role="2Oq$k0">
-              <ref role="3cqZAo" node="7NR7sJvv_dq" resolve="parser" />
-            </node>
-            <node concept="liA8E" id="4Jg$YMkD4Qr" role="2OqNvi">
-              <ref role="37wK5l" to="evra:~JVMEnvParser.parseAtDesignTime(java.lang.String...):java.util.SortedSet" resolve="parseAtDesignTime" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="irqYu7nBgu" role="3cqZAp" />
         <node concept="2Gpval" id="irqYu7hUGt" role="3cqZAp">
           <node concept="2GrKxI" id="irqYu7hUGv" role="2Gsz3X">
             <property role="TrG5h" value="resource" />
