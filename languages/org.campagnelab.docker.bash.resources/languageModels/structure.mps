@@ -328,7 +328,7 @@
   <node concept="1TIwiD" id="7SK$kQZvhr$">
     <property role="3GE5qa" value="environment" />
     <property role="TrG5h" value="ArtifactAttributeValue" />
-    <property role="34LRSv" value="eval(attribute)" />
+    <property role="34LRSv" value="value of" />
     <property role="R4oN_" value="Value of a resource attribute." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7SK$kQZvjt8" role="1TKVEi">
