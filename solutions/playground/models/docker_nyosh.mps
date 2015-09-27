@@ -7673,19 +7673,19 @@
         <node concept="1NwGl_" id="7SK$kQZWlaA" role="3bnoS5">
           <property role="3xVD5K" value="BASH_LIBRARY" />
           <ref role="1NFp0I" node="7SK$kQZWjwd" resolve="BASH_LIBRARY" />
-          <node concept="31HOkp" id="7SK$kR0xSO_" role="31jqfU">
-            <property role="TrG5h" value="" />
+          <node concept="31HOkp" id="7SK$kR0zDiI" role="31jqfU">
+            <property role="TrG5h" value="path to BASH_LIBRARY/calculateMD5.sh" />
             <property role="3oicoW" value="RESOURCES_BASH_LIBRARY_CALCULATE_MD5" />
-            <node concept="31jotn" id="7SK$kR0xSO$" role="31HOkl">
+            <node concept="31jotn" id="7SK$kR0zDiH" role="31HOkl">
               <property role="31jswE" value="calculateMD5.sh" />
               <property role="31jswI" value="RESOURCES_BASH_LIBRARY" />
               <ref role="31GINm" node="7SK$kQZWjwd" resolve="BASH_LIBRARY" />
             </node>
           </node>
-          <node concept="31HOkp" id="7SK$kR0xSOB" role="31jqfU">
-            <property role="TrG5h" value="" />
+          <node concept="31HOkp" id="7SK$kR0zDiK" role="31jqfU">
+            <property role="TrG5h" value="path to BASH_LIBRARY/maps_in_bash3.sh" />
             <property role="3oicoW" value="RESOURCES_BASH_LIBRARY_MAPS_IN_BASH3" />
-            <node concept="31jotn" id="7SK$kR0xSOA" role="31HOkl">
+            <node concept="31jotn" id="7SK$kR0zDiJ" role="31HOkl">
               <property role="31jswE" value="maps_in_bash3.sh" />
               <property role="31jswI" value="RESOURCES_BASH_LIBRARY" />
               <ref role="31GINm" node="7SK$kQZWjwd" resolve="BASH_LIBRARY" />
@@ -7695,19 +7695,19 @@
         <node concept="1NwGl_" id="7SK$kQZWla_" role="3bnoS5">
           <property role="3xVD5K" value="FETCH_URL" />
           <ref role="1NFp0I" node="7SK$kQZWjyG" resolve="FETCH_URL" />
-          <node concept="31HOkp" id="7SK$kR0xSOD" role="31jqfU">
-            <property role="TrG5h" value="" />
+          <node concept="31HOkp" id="7SK$kR0zDiM" role="31jqfU">
+            <property role="TrG5h" value="path to FETCH_URL/fetch_url" />
             <property role="3oicoW" value="RESOURCES_FETCH_URL_SCRIPT" />
-            <node concept="31jotn" id="7SK$kR0xSOC" role="31HOkl">
+            <node concept="31jotn" id="7SK$kR0zDiL" role="31HOkl">
               <property role="31jswE" value="fetch_url" />
               <property role="31jswI" value="RESOURCES_FETCH_URL" />
               <ref role="31GINm" node="7SK$kQZWjyG" resolve="FETCH_URL" />
             </node>
           </node>
-          <node concept="31HOkp" id="7SK$kR0xSOF" role="31jqfU">
-            <property role="TrG5h" value="" />
+          <node concept="31HOkp" id="7SK$kR0zDiO" role="31jqfU">
+            <property role="TrG5h" value="path to FETCH_URL/fetch_url_pattern" />
             <property role="3oicoW" value="RESOURCES_FETCH_URL_SCRIPT_PATTERN" />
-            <node concept="31jotn" id="7SK$kR0xSOE" role="31HOkl">
+            <node concept="31jotn" id="7SK$kR0zDiN" role="31HOkl">
               <property role="31jswE" value="fetch_url_pattern" />
               <property role="31jswI" value="RESOURCES_FETCH_URL" />
               <ref role="31GINm" node="7SK$kQZWjyG" resolve="FETCH_URL" />
@@ -7717,28 +7717,28 @@
         <node concept="1NwGl_" id="7SK$kQZWlat" role="3bnoS5">
           <property role="3xVD5K" value="SAMTOOLS" />
           <ref role="1NFp0I" node="7SK$kQZWjBa" resolve="SAMTOOLS" />
-          <node concept="31HOkp" id="7SK$kR0xSOH" role="31jqfU">
+          <node concept="31HOkp" id="7SK$kR0zDiQ" role="31jqfU">
             <property role="TrG5h" value="artifact path SAMTOOLS.BINARIES" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
-            <node concept="31josK" id="7SK$kR0xSOG" role="31HOkl">
+            <node concept="31josK" id="7SK$kR0zDiP" role="31HOkl">
               <property role="31jqiE" value="RESOURCES_ARTIFACTS_SAMTOOLS_BINARIES" />
               <property role="3oiRSB" value="BINARIES" />
               <ref role="3oiC1v" node="7SK$kQZWjBa" resolve="SAMTOOLS" />
             </node>
           </node>
-          <node concept="31HOkp" id="7SK$kR0xSOJ" role="31jqfU">
-            <property role="TrG5h" value="" />
+          <node concept="31HOkp" id="7SK$kR0zDiS" role="31jqfU">
+            <property role="TrG5h" value="path to SAMTOOLS/samtools" />
             <property role="3oicoW" value="RESOURCES_SAMTOOLS_EXEC_PATH" />
-            <node concept="31jotn" id="7SK$kR0xSOI" role="31HOkl">
+            <node concept="31jotn" id="7SK$kR0zDiR" role="31HOkl">
               <property role="31jswE" value="samtools" />
               <property role="31jswI" value="RESOURCES_SAMTOOLS" />
               <ref role="31GINm" node="7SK$kQZWjBa" resolve="SAMTOOLS" />
             </node>
           </node>
-          <node concept="31HOkp" id="7SK$kR0xSOL" role="31jqfU">
-            <property role="TrG5h" value="" />
+          <node concept="31HOkp" id="7SK$kR0zDiU" role="31jqfU">
+            <property role="TrG5h" value="path to SAMTOOLS/install.sh" />
             <property role="3oicoW" value="RESOURCES_SAMTOOLS_INSTALL" />
-            <node concept="31jotn" id="7SK$kR0xSOK" role="31HOkl">
+            <node concept="31jotn" id="7SK$kR0zDiT" role="31HOkl">
               <property role="31jswE" value="install.sh" />
               <property role="31jswI" value="RESOURCES_SAMTOOLS" />
               <ref role="31GINm" node="7SK$kQZWjBa" resolve="SAMTOOLS" />
@@ -7748,19 +7748,19 @@
         <node concept="1NwGl_" id="7SK$kQZWlas" role="3bnoS5">
           <property role="3xVD5K" value="BASH_LIBRARY" />
           <ref role="1NFp0I" node="7SK$kQZWjwd" resolve="BASH_LIBRARY" />
-          <node concept="31HOkp" id="7SK$kR0xSON" role="31jqfU">
-            <property role="TrG5h" value="" />
+          <node concept="31HOkp" id="7SK$kR0zDiW" role="31jqfU">
+            <property role="TrG5h" value="path to BASH_LIBRARY/calculateMD5.sh" />
             <property role="3oicoW" value="RESOURCES_BASH_LIBRARY_CALCULATE_MD5" />
-            <node concept="31jotn" id="7SK$kR0xSOM" role="31HOkl">
+            <node concept="31jotn" id="7SK$kR0zDiV" role="31HOkl">
               <property role="31jswE" value="calculateMD5.sh" />
               <property role="31jswI" value="RESOURCES_BASH_LIBRARY" />
               <ref role="31GINm" node="7SK$kQZWjwd" resolve="BASH_LIBRARY" />
             </node>
           </node>
-          <node concept="31HOkp" id="7SK$kR0xSOP" role="31jqfU">
-            <property role="TrG5h" value="" />
+          <node concept="31HOkp" id="7SK$kR0zDiY" role="31jqfU">
+            <property role="TrG5h" value="path to BASH_LIBRARY/maps_in_bash3.sh" />
             <property role="3oicoW" value="RESOURCES_BASH_LIBRARY_MAPS_IN_BASH3" />
-            <node concept="31jotn" id="7SK$kR0xSOO" role="31HOkl">
+            <node concept="31jotn" id="7SK$kR0zDiX" role="31HOkl">
               <property role="31jswE" value="maps_in_bash3.sh" />
               <property role="31jswI" value="RESOURCES_BASH_LIBRARY" />
               <ref role="31GINm" node="7SK$kQZWjwd" resolve="BASH_LIBRARY" />
@@ -7770,19 +7770,19 @@
         <node concept="1NwGl_" id="7SK$kQZWlar" role="3bnoS5">
           <property role="3xVD5K" value="FETCH_URL" />
           <ref role="1NFp0I" node="7SK$kQZWjyG" resolve="FETCH_URL" />
-          <node concept="31HOkp" id="7SK$kR0xSOR" role="31jqfU">
-            <property role="TrG5h" value="" />
+          <node concept="31HOkp" id="7SK$kR0zDj0" role="31jqfU">
+            <property role="TrG5h" value="path to FETCH_URL/fetch_url" />
             <property role="3oicoW" value="RESOURCES_FETCH_URL_SCRIPT" />
-            <node concept="31jotn" id="7SK$kR0xSOQ" role="31HOkl">
+            <node concept="31jotn" id="7SK$kR0zDiZ" role="31HOkl">
               <property role="31jswE" value="fetch_url" />
               <property role="31jswI" value="RESOURCES_FETCH_URL" />
               <ref role="31GINm" node="7SK$kQZWjyG" resolve="FETCH_URL" />
             </node>
           </node>
-          <node concept="31HOkp" id="7SK$kR0xSOT" role="31jqfU">
-            <property role="TrG5h" value="" />
+          <node concept="31HOkp" id="7SK$kR0zDj2" role="31jqfU">
+            <property role="TrG5h" value="path to FETCH_URL/fetch_url_pattern" />
             <property role="3oicoW" value="RESOURCES_FETCH_URL_SCRIPT_PATTERN" />
-            <node concept="31jotn" id="7SK$kR0xSOS" role="31HOkl">
+            <node concept="31jotn" id="7SK$kR0zDj1" role="31HOkl">
               <property role="31jswE" value="fetch_url_pattern" />
               <property role="31jswI" value="RESOURCES_FETCH_URL" />
               <ref role="31GINm" node="7SK$kQZWjyG" resolve="FETCH_URL" />
@@ -7914,62 +7914,62 @@
           </node>
         </node>
       </node>
-      <node concept="1IqXV7" id="7SK$kR0xSOo" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kR0zDix" role="23Rrb0">
         <property role="2rInPY" value="/tmp/launch-2S9EUv/Render" />
         <property role="TrG5h" value="Apple_PubSub_Socket_Render" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kR0xSOp" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kR0zDiy" role="23Rrb0">
         <property role="2rInPY" value="/tmp/launch-2E5gA0/Apple_Ubiquity_Message" />
         <property role="TrG5h" value="Apple_Ubiquity_Message" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kR0xSOq" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kR0zDiz" role="23Rrb0">
         <property role="2rInPY" value="unix2003" />
         <property role="TrG5h" value="COMMAND_MODE" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kR0xSOr" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kR0zDi$" role="23Rrb0">
         <property role="2rInPY" value="/tmp/launch-fHShIN/org.macosforge.xquartz:0" />
         <property role="TrG5h" value="DISPLAY" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kR0xSOs" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kR0zDi_" role="23Rrb0">
         <property role="2rInPY" value="/Users/manuelesimi" />
         <property role="TrG5h" value="HOME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kR0xSOt" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kR0zDiA" role="23Rrb0">
         <property role="2rInPY" value="manuelesimi" />
         <property role="TrG5h" value="LOGNAME" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kR0xSOu" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kR0zDiB" role="23Rrb0">
         <property role="2rInPY" value="/usr/bin:/bin:/usr/sbin:/sbin" />
         <property role="TrG5h" value="PATH" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kR0xSOv" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kR0zDiC" role="23Rrb0">
         <property role="2rInPY" value="/bin/bash" />
         <property role="TrG5h" value="SHELL" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kR0xSOw" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kR0zDiD" role="23Rrb0">
         <property role="2rInPY" value="/tmp/launch-471adV/Listeners" />
         <property role="TrG5h" value="SSH_AUTH_SOCK" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kR0xSOx" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kR0zDiE" role="23Rrb0">
         <property role="2rInPY" value="/var/folders/tk/sysfsd7j1dl0nz95xby8vdt80000gn/T/" />
         <property role="TrG5h" value="TMPDIR" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kR0xSOy" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kR0zDiF" role="23Rrb0">
         <property role="2rInPY" value="manuelesimi" />
         <property role="TrG5h" value="USER" />
         <property role="3vthGj" value="STRING" />
       </node>
-      <node concept="1IqXV7" id="7SK$kR0xSOz" role="23Rrb0">
+      <node concept="1IqXV7" id="7SK$kR0zDiG" role="23Rrb0">
         <property role="2rInPY" value="0x1F5:0:0" />
         <property role="TrG5h" value="__CF_USER_TEXT_ENCODING" />
         <property role="3vthGj" value="STRING" />
