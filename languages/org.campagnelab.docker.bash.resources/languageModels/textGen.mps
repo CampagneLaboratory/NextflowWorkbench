@@ -46,6 +46,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -613,7 +614,7 @@
       <node concept="3clFbS" id="61tPieTjAH6" role="2VODD2">
         <node concept="lc7rE" id="61tPieTjAHr" role="3cqZAp">
           <node concept="la8eA" id="6vbp88c7q1J" role="lcghm">
-            <property role="lacIc" value="$(eval echo \${" />
+            <property role="lacIc" value="$(eval echo \\${" />
           </node>
           <node concept="l9hG8" id="61tPieTjAHH" role="lcghm">
             <node concept="2OqwBi" id="61tPieTjAKM" role="lb14g">
@@ -652,11 +653,12 @@
             <node concept="3GX2aA" id="61tPieU83hg" role="2OqNvi" />
           </node>
         </node>
-        <node concept="lc7rE" id="6vbp88c7qrE" role="3cqZAp">
-          <node concept="la8eA" id="6vbp88c7qu4" role="lcghm">
+        <node concept="lc7rE" id="4eg84TIaIPH" role="3cqZAp">
+          <node concept="la8eA" id="4eg84TIaIPI" role="lcghm">
             <property role="lacIc" value="})" />
           </node>
         </node>
+        <node concept="3clFbH" id="4eg84TIaIKp" role="3cqZAp" />
       </node>
     </node>
   </node>

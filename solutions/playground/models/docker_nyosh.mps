@@ -7675,6 +7675,12 @@
         <node concept="19SUe$" id="5cQ1xBW8kxv" role="19SJt6">
           <property role="19SUeA" value="&#10;echo " />
         </node>
+        <node concept="31HMC_" id="4eg84TI6ITU" role="19SJt6">
+          <ref role="31HMCX" node="4eg84TI5Lsy" resolve="value of FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX.organism" />
+        </node>
+        <node concept="19SUe$" id="4eg84TI6ITT" role="19SJt6">
+          <property role="19SUeA" value="&#10;echo " />
+        </node>
         <node concept="31HMC_" id="5cQ1xBW98rt" role="19SJt6">
           <ref role="31HMCX" node="4eg84TI5Lrx" resolve="artifact path STAR.EXECUTABLE" />
         </node>

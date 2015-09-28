@@ -924,25 +924,6 @@
       </node>
       <node concept="2iRfu4" id="7SK$kR0zFqT" role="2iSdaV" />
     </node>
-    <node concept="3EZMnI" id="7SK$kR0zFCY" role="6VMZX">
-      <node concept="3F0ifn" id="7SK$kR0zFCZ" role="3EZMnx">
-        <property role="3F0ifm" value="source resource:" />
-      </node>
-      <node concept="1iCGBv" id="7SK$kR0CQCt" role="3EZMnx">
-        <ref role="1NtTu8" to="iuj9:7SK$kR0zFxf" />
-        <ref role="1ERwB7" node="4DwTgsU3yvh" resolve="NoAutocompletion" />
-        <node concept="1sVBvm" id="7SK$kR0CQCv" role="1sWHZn">
-          <node concept="3F0A7n" id="7SK$kR0CQCO" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-        <node concept="VPxyj" id="3PPXVtcUpW2" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="7SK$kR0zFD3" role="2iSdaV" />
-    </node>
   </node>
 </model>
 
