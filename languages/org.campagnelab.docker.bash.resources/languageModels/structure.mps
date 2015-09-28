@@ -249,7 +249,7 @@
     <property role="TrG5h" value="ResourceFileValue" />
     <property role="R4oN_" value="A file distributed with the resource." />
     <property role="3GE5qa" value="environment" />
-    <property role="34LRSv" value="path to" />
+    <property role="34LRSv" value="file" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7SK$kQZvl_z" role="1TKVEl">
       <property role="TrG5h" value="prefix" />
