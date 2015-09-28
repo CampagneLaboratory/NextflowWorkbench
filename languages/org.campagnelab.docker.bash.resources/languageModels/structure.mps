@@ -236,11 +236,6 @@
   <node concept="PlHQZ" id="7SK$kQZvhmu">
     <property role="TrG5h" value="EnvironmentValueValue" />
     <property role="3GE5qa" value="environment" />
-    <node concept="1TJgyj" id="7SK$kR0zFxf" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="resource" />
-      <ref role="20lvS9" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
-    </node>
     <node concept="PrWs8" id="7SK$kQZvhrJ" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -257,6 +252,10 @@
     </node>
     <node concept="1TJgyi" id="7SK$kQZvl_B" role="1TKVEl">
       <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1Ql1a4HuJmm" role="1TKVEl">
+      <property role="TrG5h" value="resourceName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="7SK$kQZvhox" role="PzmwI">
@@ -283,6 +282,10 @@
       <property role="TrG5h" value="artifactName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="1Ql1a4Hs6Oa" role="1TKVEl">
+      <property role="TrG5h" value="resourceName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="7SK$kQZvhq4" role="PzmwI">
       <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentValueValue" />
     </node>
@@ -305,6 +308,10 @@
     </node>
     <node concept="1TJgyi" id="61tPieTyK2I" role="1TKVEl">
       <property role="TrG5h" value="artifactName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1Ql1a4HrPZR" role="1TKVEl">
+      <property role="TrG5h" value="resourceName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="7SK$kQZvhrF" role="PzmwI">
