@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" implicit="true" />
     <import index="lcm8" ref="r:19e666fd-ce33-4549-bbc2-aa106ce25584(org.campagnelab.gobyweb.interactive.behavior)" implicit="true" />
     <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" implicit="true" />
     <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" implicit="true" />
@@ -70,6 +71,9 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -454,6 +458,28 @@
     <node concept="1YaCAy" id="4DwTgsTMuyb" role="1YuTPh">
       <property role="TrG5h" value="adapter" />
       <ref role="1YaFvo" to="iuj9:6A9boVQPeld" resolve="AttributeAdapterForResource" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6B$xkWtXq2A">
+    <property role="TrG5h" value="check_DockerArtifactPath" />
+    <node concept="3clFbS" id="6B$xkWtXq2B" role="18ibNy">
+      <node concept="a7r0C" id="6B$xkWtXq_L" role="3cqZAp">
+        <node concept="1YBJjd" id="6B$xkWtXqRi" role="2OEOjV">
+          <ref role="1YBMHb" node="6B$xkWtXq2D" resolve="dockerArtifactPath" />
+        </node>
+        <node concept="2OqwBi" id="6B$xkWtXqCN" role="a7wSD">
+          <node concept="1YBJjd" id="6B$xkWtXqA3" role="2Oq$k0">
+            <ref role="1YBMHb" node="6B$xkWtXq2D" resolve="dockerArtifactPath" />
+          </node>
+          <node concept="2qgKlT" id="6B$xkWtXqPH" role="2OqNvi">
+            <ref role="37wK5l" to="cb06:2h_fDmyfOGw" resolve="getRawPath" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6B$xkWtXq2D" role="1YuTPh">
+      <property role="TrG5h" value="dockerArtifactPath" />
+      <ref role="1YaFvo" to="iuj9:6B$xkWtHlSb" resolve="DockerArtifactPath" />
     </node>
   </node>
 </model>

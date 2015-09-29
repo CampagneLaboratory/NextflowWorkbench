@@ -4,14 +4,17 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
+    <import index="axnf" ref="r:fcce6a5c-ee8c-4323-bf77-2655c9be3bf1(org.campagnelab.docker.bash.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dzk5" ref="r:2bfcc546-5c51-4762-9df2-c43920be4458(org.campagnelab.gobyweb.plugins.structure)" implicit="true" />
     <import index="lcm8" ref="r:19e666fd-ce33-4549-bbc2-aa106ce25584(org.campagnelab.gobyweb.interactive.behavior)" implicit="true" />
+    <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" implicit="true" />
   </imports>
@@ -96,11 +99,13 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <reference id="1081339532145" name="keyMap" index="34QXea" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1139416841293" name="usesBraces" index="1ayjP4" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -125,6 +130,9 @@
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
+      </concept>
+      <concept id="1166059625718" name="jetbrains.mps.lang.editor.structure.CellMenuPart_CellMenuComponent" flags="ng" index="1Y$tRT">
+        <reference id="1166059677893" name="cellMenuComponent" index="1Y$EBa" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -930,8 +938,35 @@
     <node concept="3EZMnI" id="1Fq$Xhj2hE$" role="2wV5jI">
       <node concept="3F1sOY" id="1Fq$Xhj2hEF" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:1Fq$Xhj27Vu" />
+        <ref role="34QXea" to="axnf:2h_fDmyfOL7" resolve="PathKeyMap" />
+        <ref role="1ERwB7" to="axnf:2h_fDmyfOMW" resolve="ActionMapPathPart" />
+        <node concept="OXEIz" id="6B$xkWtPbw5" role="P5bDN">
+          <node concept="1Y$tRT" id="6B$xkWtPbw7" role="OY2wv">
+            <ref role="1Y$EBa" to="axnf:2h_fDmyfOPC" resolve="AutoCompletionForPath" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6B$xkWtNs8H" role="3EZMnx">
+        <property role="3F0ifm" value="/" />
       </node>
       <node concept="l2Vlx" id="1Fq$Xhj2hEB" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6B$xkWtRgug">
+    <ref role="1XX52x" to="iuj9:6B$xkWtHlSb" resolve="DockerArtifactPath" />
+    <node concept="3EZMnI" id="6B$xkWtRgul" role="2wV5jI">
+      <property role="1ayjP4" value="true" />
+      <node concept="3F0ifn" id="6B$xkWtRSVK" role="3EZMnx">
+        <property role="3F0ifm" value="|" />
+      </node>
+      <node concept="3F2HdR" id="6B$xkWtRgus" role="3EZMnx">
+        <ref role="1NtTu8" to="r9td:2h_fDmyfOuX" />
+        <node concept="l2Vlx" id="6B$xkWtRguu" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="6B$xkWtRSVU" role="3EZMnx">
+        <property role="3F0ifm" value="|" />
+      </node>
+      <node concept="2iRfu4" id="6B$xkWtRSVD" role="2iSdaV" />
     </node>
   </node>
 </model>
