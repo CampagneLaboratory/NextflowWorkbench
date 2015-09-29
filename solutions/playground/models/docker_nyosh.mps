@@ -8719,13 +8719,43 @@
       <property role="TrG5h" value="ScriptWithLAST" />
       <node concept="19SGf9" id="69f73Ud4M$R" role="3Y$PkS">
         <node concept="19SUe$" id="61tPieU5R$W" role="19SJt6">
-          <property role="19SUeA" value="set +x&#10;ls -lrt " />
+          <property role="19SUeA" value="set +x&#10;echo &quot;artifact path for FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX: " />
+        </node>
+        <node concept="31HMC_" id="4eg84TIs$uf" role="19SJt6">
+          <ref role="31HMCX" node="4eg84TI5N6U" resolve="artifact path FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX" />
+        </node>
+        <node concept="19SUe$" id="4eg84TIs$ue" role="19SJt6">
+          <property role="19SUeA" value="&#10;echo &quot;artifact path for LAST_INDEX.INDEX: " />
+        </node>
+        <node concept="31HMC_" id="4eg84TIs$vS" role="19SJt6">
+          <ref role="31HMCX" node="4eg84TI5N5U" resolve="artifact path LAST_INDEX.INDEX" />
+        </node>
+        <node concept="19SUe$" id="4eg84TIs$vR" role="19SJt6">
+          <property role="19SUeA" value="&#10;&#10;ls -lrt " />
         </node>
         <node concept="31HMC_" id="1Ql1a4Hwpb5" role="19SJt6">
           <ref role="31HMCX" node="4eg84TI5N6l" resolve="artifact path SAMTOOLS.BINARIES" />
         </node>
         <node concept="19SUe$" id="1Ql1a4Hwpb4" role="19SJt6">
+          <property role="19SUeA" value="&#10;ls -lrt " />
+        </node>
+        <node concept="31HMC_" id="4eg84TImvQz" role="19SJt6">
+          <ref role="31HMCX" node="4eg84TI5N6U" resolve="artifact path FAI_INDEXED_GENOMES.SAMTOOLS_FAI_INDEX" />
+        </node>
+        <node concept="19SUe$" id="4eg84TImvQy" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
+        </node>
+        <node concept="31HMC_" id="4eg84TIs$wl" role="19SJt6">
+          <ref role="31HMCX" node="4eg84TI5N6n" resolve="file SAMTOOLS/EXEC_PATH" />
+        </node>
+        <node concept="19SUe$" id="4eg84TIs$wk" role="19SJt6">
+          <property role="19SUeA" value=" || true&#10;" />
+        </node>
+        <node concept="31HMC_" id="4eg84TIs$wR" role="19SJt6">
+          <ref role="31HMCX" node="4eg84TI5N6l" resolve="artifact path SAMTOOLS.BINARIES" />
+        </node>
+        <node concept="19SUe$" id="4eg84TIs$wS" role="19SJt6">
+          <property role="19SUeA" value="/samtools || true" />
         </node>
       </node>
       <node concept="3xUnCN" id="2U9fM8$FdqQ" role="NgwMD">

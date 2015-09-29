@@ -1540,6 +1540,63 @@
       </node>
       <node concept="17QB3L" id="7SK$kQZtxkt" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4eg84TIiJNO" role="13h7CS">
+      <property role="TrG5h" value="getVarName" />
+      <node concept="3Tm1VV" id="4eg84TIiJNP" role="1B3o_S" />
+      <node concept="3clFbS" id="4eg84TIiJNQ" role="3clF47">
+        <node concept="3clFbF" id="4eg84TIiVZD" role="3cqZAp">
+          <node concept="3cpWs3" id="4eg84TIj0nW" role="3clFbG">
+            <node concept="Xl_RD" id="4eg84TIj0qF" role="3uHU7w">
+              <property role="Xl_RC" value="_VALUE" />
+            </node>
+            <node concept="2OqwBi" id="4eg84TIiXyC" role="3uHU7B">
+              <node concept="2OqwBi" id="4eg84TIkZo9" role="2Oq$k0">
+                <node concept="2OqwBi" id="4eg84TIiWIE" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4eg84TIiWlU" role="2Oq$k0">
+                    <node concept="13iPFW" id="4eg84TIiVZC" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="4eg84TIiWC3" role="2OqNvi">
+                      <ref role="37wK5l" node="7SK$kQZtxkd" resolve="getQualifiedName" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4eg84TIiXsQ" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4eg84TIl0ST" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                  <node concept="Xl_RD" id="4eg84TIl13s" role="37wK5m">
+                    <property role="Xl_RC" value="\\." />
+                  </node>
+                  <node concept="Xl_RD" id="4eg84TIl1e4" role="37wK5m">
+                    <property role="Xl_RC" value="_" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4eg84TIiZrx" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="4eg84TIiZtY" role="37wK5m">
+                  <property role="Xl_RC" value="-" />
+                </node>
+                <node concept="Xl_RD" id="4eg84TIiZz8" role="37wK5m">
+                  <property role="Xl_RC" value="_" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4eg84TIiKRL" role="3clF45" />
+      <node concept="P$JXv" id="4eg84TIiLZY" role="lGtFl">
+        <node concept="TZ5HA" id="4eg84TIiLZZ" role="TZ5H$">
+          <node concept="1dT_AC" id="4eg84TIiM00" role="1dT_Ay">
+            <property role="1dT_AB" value="Name of the variable associated to the value in the output script" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4eg84TIiM01" role="x79VK">
+          <property role="x79VB" value="the var name" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="6A9boVQTcST" role="13h7CW">
       <node concept="3clFbS" id="6A9boVQTcSU" role="2VODD2" />
     </node>
