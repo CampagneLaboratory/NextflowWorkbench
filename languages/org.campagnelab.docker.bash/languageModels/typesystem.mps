@@ -89,9 +89,6 @@
       </concept>
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
-      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -128,8 +125,8 @@
                       <node concept="1YBJjd" id="2h_fDmyfOIt" role="2Oq$k0">
                         <ref role="1YBMHb" node="2h_fDmyfOIE" resolve="pathPart" />
                       </node>
-                      <node concept="3TrcHB" id="2h_fDmyfOIu" role="2OqNvi">
-                        <ref role="3TsBF5" to="r9td:2h_fDmyfOuZ" resolve="part" />
+                      <node concept="2qgKlT" id="1Fq$Xhj65_8" role="2OqNvi">
+                        <ref role="37wK5l" to="cb06:1Fq$Xhj5PVN" resolve="part" />
                       </node>
                     </node>
                   </node>
@@ -158,8 +155,8 @@
             <node concept="1YBJjd" id="2h_fDmyfOIC" role="2Oq$k0">
               <ref role="1YBMHb" node="2h_fDmyfOIE" resolve="pathPart" />
             </node>
-            <node concept="3TrcHB" id="2h_fDmyfOID" role="2OqNvi">
-              <ref role="3TsBF5" to="r9td:2h_fDmyfOv0" resolve="isDirectory" />
+            <node concept="2qgKlT" id="1Fq$Xhj65LE" role="2OqNvi">
+              <ref role="37wK5l" to="cb06:1Fq$Xhj5Uqy" resolve="isDirectory" />
             </node>
           </node>
         </node>
