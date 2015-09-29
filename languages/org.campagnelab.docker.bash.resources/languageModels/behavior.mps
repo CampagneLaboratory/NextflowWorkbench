@@ -24,9 +24,15 @@
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" />
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
     <import index="be3w" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/f:java_stub#0202ed86-955d-4227-9c20-377dd6b1f9ff#org.javatuples(org.campagnelab.nyosh.lib/org.javatuples@java_stub)" />
+    <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
   </imports>
   <registry>
+    <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
+      <concept id="1238852151516" name="jetbrains.mps.baseLanguage.tuples.structure.IndexedTupleType" flags="in" index="1LlUBW">
+        <child id="1238852204892" name="componentType" index="1Lm7xW" />
+      </concept>
+    </language>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
       <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
@@ -255,6 +261,9 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
+        <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -274,6 +283,9 @@
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
@@ -900,6 +912,38 @@
       <ref role="13i0hy" to="tpcu:3fifI_xCJOQ" resolve="getScope" />
       <node concept="3Tm1VV" id="17OfmP$eBPC" role="1B3o_S" />
       <node concept="3clFbS" id="17OfmP$eBPL" role="3clF47">
+        <node concept="3clFbJ" id="4Xn05$EcHRH" role="3cqZAp">
+          <node concept="3clFbS" id="4Xn05$EcHRJ" role="3clFbx">
+            <node concept="3cpWs6" id="4Xn05$EcIO_" role="3cqZAp">
+              <node concept="2YIFZM" id="4Xn05$EcIXR" role="3cqZAk">
+                <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+                <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                <node concept="2OqwBi" id="4Xn05$EfxpJ" role="37wK5m">
+                  <node concept="2OqwBi" id="4Xn05$EcJb3" role="2Oq$k0">
+                    <node concept="13iPFW" id="4Xn05$EcJ4x" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="4Xn05$EcJsz" role="2OqNvi">
+                      <ref role="3TtcxE" to="iuj9:4DwTgsTNnlT" />
+                    </node>
+                  </node>
+                  <node concept="13MTOL" id="4Xn05$EfBTt" role="2OqNvi">
+                    <ref role="13MTZf" to="iuj9:6A9boVQPem8" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="4Xn05$EcIoQ" role="3clFbw">
+            <node concept="2OqwBi" id="4Xn05$EcItS" role="3uHU7w">
+              <node concept="35c_gC" id="4Xn05$EcIq8" role="2Oq$k0">
+                <ref role="35c_gD" to="bs99:7arfhhdt3J1" resolve="Attribute" />
+              </node>
+              <node concept="FGMqu" id="4Xn05$EcIMo" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="4Xn05$EcHXm" role="3uHU7B">
+              <ref role="3cqZAo" node="17OfmP$eBPM" resolve="kind" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="17OfmP$gZQk" role="3cqZAp">
           <node concept="3clFbS" id="17OfmP$gZQl" role="3clFbx">
             <node concept="3cpWs6" id="17OfmP$gZQm" role="3cqZAp">
@@ -4755,6 +4799,33 @@
       </node>
       <node concept="17QB3L" id="7SK$kR0zHhe" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="1Fq$Xhj4j4H" role="13h7CS">
+      <property role="TrG5h" value="getLocalPath" />
+      <node concept="3Tm1VV" id="1Fq$Xhj4j4I" role="1B3o_S" />
+      <node concept="3clFbS" id="1Fq$Xhj4j4J" role="3clF47">
+        <node concept="3SKdUt" id="4Xn05$Ej7RW" role="3cqZAp">
+          <node concept="3SKdUq" id="4Xn05$Ej7S3" role="3SKWNk">
+            <property role="3SKdUp" value="TODO calculate this path according to (1) artifact repo root, resource id, artifact id and value of attributes" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="1Fq$Xhj4j9t" role="3cqZAp">
+          <node concept="Xl_RD" id="1Fq$Xhj4j9s" role="3clFbG">
+            <property role="Xl_RC" value="path to be calculated" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1Fq$Xhj4j8F" role="3clF45" />
+      <node concept="P$JXv" id="4Xn05$EisZ1" role="lGtFl">
+        <node concept="TZ5HA" id="4Xn05$EisZ2" role="TZ5H$">
+          <node concept="1dT_AC" id="4Xn05$EisZ3" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns path inside/outside the container where this artifact will be installed" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4Xn05$EisZ4" role="x79VK">
+          <property role="x79VB" value="path of artifact installation directory" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="7SK$kQZBREN">
     <property role="3GE5qa" value="environment" />
@@ -4845,6 +4916,79 @@
         </node>
       </node>
       <node concept="17QB3L" id="7SK$kR0zIJl" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1Fq$Xhj2f3b">
+    <property role="3GE5qa" value="paths" />
+    <ref role="13h7C2" to="iuj9:1Fq$Xhj22Kd" resolve="NyoshPathPart" />
+    <node concept="13hLZK" id="1Fq$Xhj2f3c" role="13h7CW">
+      <node concept="3clFbS" id="1Fq$Xhj2f3d" role="2VODD2">
+        <node concept="3clFbF" id="1Fq$Xhj2gwG" role="3cqZAp">
+          <node concept="37vLTI" id="1Fq$Xhj2haV" role="3clFbG">
+            <node concept="2ShNRf" id="1Fq$Xhj2hco" role="37vLTx">
+              <node concept="3zrR0B" id="1Fq$Xhj2hbo" role="2ShVmc">
+                <node concept="3Tqbb2" id="1Fq$Xhj2hbp" role="3zrR0E">
+                  <ref role="ehGHo" to="iuj9:7SK$kQZvhpX" resolve="ArtifactPathValue" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1Fq$Xhj2gQx" role="37vLTJ">
+              <node concept="13iPFW" id="1Fq$Xhj2gwF" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1Fq$Xhj2gZE" role="2OqNvi">
+                <ref role="3Tt5mk" to="iuj9:1Fq$Xhj27Vu" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1Fq$Xhj3xWs" role="13h7CS">
+      <property role="TrG5h" value="autoComplete" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="cb06:2h_fDmyfOHY" resolve="autoComplete" />
+      <node concept="3Tm1VV" id="1Fq$Xhj3xWv" role="1B3o_S" />
+      <node concept="3clFbS" id="1Fq$Xhj3xWJ" role="3clF47">
+        <node concept="3clFbF" id="2h_fDmyfOI4" role="3cqZAp">
+          <node concept="2OqwBi" id="2h_fDmyfOI5" role="3clFbG">
+            <node concept="2OqwBi" id="2h_fDmyfOI6" role="2Oq$k0">
+              <node concept="13iPFW" id="2h_fDmyfOI7" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="2h_fDmyfOI8" role="2OqNvi">
+                <node concept="1xMEDy" id="2h_fDmyfOI9" role="1xVPHs">
+                  <node concept="chp4Y" id="2h_fDmyfOIa" role="ri$Ld">
+                    <ref role="cht4Q" to="r9td:2h_fDmyfOuW" resolve="InteractivePath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="2h_fDmyfOIb" role="2OqNvi">
+              <ref role="37wK5l" to="cb06:2h_fDmyfOB_" resolve="autoComplete" />
+              <node concept="2OqwBi" id="1Fq$Xhj3yw3" role="37wK5m">
+                <node concept="2OqwBi" id="1Fq$Xhj3y2_" role="2Oq$k0">
+                  <node concept="13iPFW" id="1Fq$Xhj3y0y" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="1Fq$Xhj3yk$" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iuj9:1Fq$Xhj27Vu" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="4Xn05$EisQv" role="2OqNvi">
+                  <ref role="37wK5l" node="1Fq$Xhj4j4H" resolve="getLocalPath" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1Fq$Xhj3yKo" role="3cqZAp" />
+      </node>
+      <node concept="37vLTG" id="1Fq$Xhj3xWK" role="3clF46">
+        <property role="TrG5h" value="currentPath" />
+        <node concept="17QB3L" id="1Fq$Xhj3xWL" role="1tU5fm" />
+      </node>
+      <node concept="_YKpA" id="1Fq$Xhj3xWM" role="3clF45">
+        <node concept="1LlUBW" id="1Fq$Xhj3xWN" role="_ZDj9">
+          <node concept="17QB3L" id="1Fq$Xhj3xWO" role="1Lm7xW" />
+          <node concept="10P_77" id="1Fq$Xhj3xWP" role="1Lm7xW" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

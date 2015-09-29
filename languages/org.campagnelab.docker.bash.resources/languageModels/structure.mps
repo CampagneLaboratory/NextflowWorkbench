@@ -382,5 +382,15 @@
       <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentValueValue" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1Fq$Xhj22Kd">
+    <property role="TrG5h" value="NyoshPathPart" />
+    <ref role="1TJDcQ" to="r9td:2h_fDmyfOuY" resolve="PathPart" />
+    <node concept="1TJgyj" id="1Fq$Xhj27Vu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="env" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7SK$kQZvhpX" resolve="ArtifactPathValue" />
+    </node>
+  </node>
 </model>
 

@@ -10,6 +10,7 @@
     <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" implicit="true" />
+    <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -206,6 +207,12 @@
   <node concept="1M2fIO" id="6A9boVQYWZa">
     <property role="3GE5qa" value="resources" />
     <ref role="1M2myG" to="iuj9:6A9boVQTofD" resolve="ReferenceAttribute" />
+    <node concept="1N5Pfh" id="4Xn05$EcdGj" role="1Mr941">
+      <ref role="1N5Vy1" to="iuj9:6A9boVQTogb" />
+      <node concept="1dDu$B" id="4Xn05$Ecjrr" role="1N6uqs">
+        <ref role="1dDu$A" to="bs99:7arfhhdt3J1" resolve="Attribute" />
+      </node>
+    </node>
     <node concept="nKS2y" id="6A9boVQYX0y" role="1MLUbF">
       <node concept="3clFbS" id="6A9boVQYX0z" role="2VODD2">
         <node concept="3clFbF" id="6A9boVQYX5y" role="3cqZAp">
