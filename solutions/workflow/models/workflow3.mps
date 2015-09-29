@@ -52,11 +52,11 @@
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
       </concept>
-      <concept id="3855674281012038742" name="org.campagnelab.workflow.structure.IntegerInitializer" flags="ng" index="2$PLs2">
-        <child id="3855674281012526304" name="integer" index="2$RAuO" />
+      <concept id="3653684473245054612" name="org.campagnelab.workflow.structure.NewIntegerLiteral" flags="ng" index="2J_swZ">
+        <property id="3653684473245054659" name="value" index="2J_sxC" />
       </concept>
-      <concept id="3855674281012527421" name="org.campagnelab.workflow.structure.IntegerLiteral" flags="ng" index="2$RDDD">
-        <property id="3855674281012527422" name="value" index="2$RDDE" />
+      <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
+        <child id="3653684473245054701" name="elementType" index="2J_sx6" />
       </concept>
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464373434" name="org.campagnelab.workflow.structure.OutputChannel" flags="ng" index="1uLkD0" />
@@ -106,9 +106,9 @@
     <property role="TrG5h" value=" WorkflowmMixingLanguage" />
     <node concept="1CVceo" id="367MW52UdgK" role="2$L6iY">
       <property role="TrG5h" value="val" />
-      <node concept="2$PLs2" id="367MW52Udhq" role="2$L62I">
-        <node concept="2$RDDD" id="367MW52UdhS" role="2$RAuO">
-          <property role="2$RDDE" value="100" />
+      <node concept="2J_sx7" id="6ZiO7Efq7F_" role="2$L62I">
+        <node concept="2J_swZ" id="6ZiO7Efq7FW" role="2J_sx6">
+          <property role="2J_sxC" value="100" />
         </node>
       </node>
     </node>

@@ -3,27 +3,16 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
-    <use id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.files" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
+    <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
     <import index="tpfo" ref="r:00000000-0000-4000-0000-011c89590518(jetbrains.mps.baseLanguage.regexp.structure)" implicit="true" />
+    <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -99,6 +88,11 @@
       <property role="20kJfa" value="script" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6tX5nBTaD$x" resolve="Script" />
+    </node>
+    <node concept="1TJgyj" id="irqYu7yXR0" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="container" />
+      <ref role="20lvS9" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
     </node>
     <node concept="PrWs8" id="6tX5nBTayDp" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -947,6 +941,13 @@
     <property role="34LRSv" value="splitText" />
     <property role="R4oN_" value=" Create records from elements in plain text format" />
     <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
+  </node>
+  <node concept="1TIwiD" id="XaRILjgXaG">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="TrG5h" value="Buffer" />
+    <property role="34LRSv" value="buffer" />
+    <property role="R4oN_" value="Gather elements into subsets, emit the subsets separately" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILilGma">
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
@@ -1831,32 +1832,6 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="XaRILjgXaG">
-    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
-    <property role="TrG5h" value="Buffer" />
-    <property role="34LRSv" value="buffer" />
-    <property role="R4oN_" value="Gather elements into subsets, emit the subsets separately" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
-  </node>
-  <node concept="1TIwiD" id="4VptOfxQzIk">
-    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
-    <property role="TrG5h" value="BufferRange" />
-    <property role="34LRSv" value="bufferRange" />
-    <property role="R4oN_" value="Gather elements into subsets, emit the subsets separately" />
-    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
-    <node concept="1TJgyj" id="4VptOfxQzN8" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="start" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-    </node>
-    <node concept="1TJgyj" id="4VptOfxQzNa" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="end" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4VptOfyOwZ4">
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="TrG5h" value="RegexpValue" />
@@ -1900,6 +1875,25 @@
     <node concept="1TJgyi" id="53yaZUO7aBN" role="1TKVEl">
       <property role="TrG5h" value="default" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4VptOfxQzIk">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="TrG5h" value="BufferRange" />
+    <property role="34LRSv" value="bufferRange" />
+    <property role="R4oN_" value="Gather elements into subsets, emit the subsets separately" />
+    <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
+    <node concept="1TJgyj" id="4VptOfxQzN8" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="start" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
+    </node>
+    <node concept="1TJgyj" id="4VptOfxQzNa" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="end" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     </node>
   </node>
 </model>

@@ -9,25 +9,20 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="2" />
     <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
-    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
     <import index="msyo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" />
+    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(java.lang@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -4595,6 +4590,9 @@
         <node concept="3clFbF" id="5h9rZfgRW4N" role="3cqZAp">
           <node concept="2OqwBi" id="5h9rZfgRYF9" role="3clFbG">
             <node concept="2OqwBi" id="5h9rZfgRYcU" role="2Oq$k0">
+              <node concept="2qgKlT" id="53yaZUNvqWQ" role="2OqNvi">
+                <ref role="37wK5l" node="1z1zDaaJpCE" resolve="connectedTo" />
+              </node>
               <node concept="2OqwBi" id="5h9rZfgRXsM" role="2Oq$k0">
                 <node concept="13iPFW" id="5h9rZfgRW4L" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="5h9rZfgRYax" role="2OqNvi">
@@ -4604,9 +4602,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-              <node concept="2qgKlT" id="53yaZUNvqWQ" role="2OqNvi">
-                <ref role="37wK5l" node="1z1zDaaJpCE" resolve="connectedTo" />
               </node>
             </node>
             <node concept="3JvlWi" id="5h9rZfgRYY7" role="2OqNvi" />
@@ -6067,6 +6062,22 @@
       <node concept="3clFbS" id="4VptOfydfEJ" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="53yaZUNZ79z">
+    <property role="3GE5qa" value="newChannelInitializer" />
+    <ref role="13h7C2" to="iowz:53yaZUNZ6PJ" resolve="ValueOfCommandLineParam" />
+    <node concept="13hLZK" id="53yaZUNZ79$" role="13h7CW">
+      <node concept="3clFbS" id="53yaZUNZ79_" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="53yaZUNZ7L5" role="13h7CS">
+      <property role="TrG5h" value="removeProperty" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="2aFge8hFtpX" resolve="removeProperty" />
+      <node concept="3Tm1VV" id="53yaZUNZ7L6" role="1B3o_S" />
+      <node concept="3clFbS" id="53yaZUNZ7L9" role="3clF47" />
+      <node concept="3cqZAl" id="53yaZUNZ7La" role="3clF45" />
+    </node>
+  </node>
   <node concept="13h7C7" id="4VptOfyOwZ7">
     <property role="3GE5qa" value="newChannelInitializer" />
     <ref role="13h7C2" to="iowz:4VptOfyOwZ4" resolve="RegexpValue" />
@@ -6103,22 +6114,6 @@
         </node>
       </node>
       <node concept="3cqZAl" id="7pq1c5M4up7" role="3clF45" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="53yaZUNZ79z">
-    <property role="3GE5qa" value="newChannelInitializer" />
-    <ref role="13h7C2" to="iowz:53yaZUNZ6PJ" resolve="ValueOfCommandLineParam" />
-    <node concept="13hLZK" id="53yaZUNZ79$" role="13h7CW">
-      <node concept="3clFbS" id="53yaZUNZ79_" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="53yaZUNZ7L5" role="13h7CS">
-      <property role="TrG5h" value="removeProperty" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="2aFge8hFtpX" resolve="removeProperty" />
-      <node concept="3Tm1VV" id="53yaZUNZ7L6" role="1B3o_S" />
-      <node concept="3clFbS" id="53yaZUNZ7L9" role="3clF47" />
-      <node concept="3cqZAl" id="53yaZUNZ7La" role="3clF45" />
     </node>
   </node>
 </model>

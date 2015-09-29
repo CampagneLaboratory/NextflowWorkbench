@@ -46,11 +46,11 @@
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
       </concept>
-      <concept id="3855674281012038799" name="org.campagnelab.workflow.structure.StringInitializer" flags="ng" index="2$PLvr">
-        <child id="3855674281012526308" name="string" index="2$RAuK" />
+      <concept id="3653684473245040478" name="org.campagnelab.workflow.structure.NewStringLiteral" flags="ng" index="2J_g7P">
+        <property id="3653684473245041443" name="value" index="2J_vQ8" />
       </concept>
-      <concept id="3855674281012527194" name="org.campagnelab.workflow.structure.StringLiteral" flags="ng" index="2$RDGe">
-        <property id="3855674281012527195" name="value" index="2$RDGf" />
+      <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
+        <child id="3653684473245054701" name="elementType" index="2J_sx6" />
       </concept>
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
@@ -77,15 +77,15 @@
     </node>
     <node concept="1CVceo" id="49g6NCYeltL" role="2$L6iY">
       <property role="TrG5h" value="test" />
-      <node concept="2$PLvr" id="49g6NCYeltP" role="2$L62I">
-        <node concept="2$RDGe" id="49g6NCYeltV" role="2$RAuK">
-          <property role="2$RDGf" value="test" />
+      <node concept="2J_sx7" id="6ZiO7Efq7I1" role="2$L62I">
+        <node concept="2J_g7P" id="6ZiO7Efq7Ig" role="2J_sx6">
+          <property role="2J_vQ8" value="test" />
         </node>
-        <node concept="2$RDGe" id="49g6NCYelu5" role="2$RAuK">
-          <property role="2$RDGf" value="test1" />
+        <node concept="2J_g7P" id="6ZiO7Efq7Jf" role="2J_sx6">
+          <property role="2J_vQ8" value="test1" />
         </node>
-        <node concept="2$RDGe" id="49g6NCYeluf" role="2$RAuK">
-          <property role="2$RDGf" value="test3" />
+        <node concept="2J_g7P" id="6ZiO7Efq7KT" role="2J_sx6">
+          <property role="2J_vQ8" value="test3" />
         </node>
       </node>
     </node>

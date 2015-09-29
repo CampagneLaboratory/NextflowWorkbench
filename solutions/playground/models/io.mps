@@ -54,7 +54,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -62,10 +61,6 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
-      </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -88,23 +83,11 @@
       <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="5954930966410664724" name="org.campagnelab.workflow.structure.HasExpression" flags="ng" index="20hr4X">
-        <child id="5954930966410666282" name="expression" index="20hoG3" />
-      </concept>
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
         <reference id="6509497193195685433" name="variable" index="0wEsc" />
       </concept>
       <concept id="4018964125401495568" name="org.campagnelab.workflow.structure.Tuple" flags="ng" index="knwa4">
         <child id="7391172440899058539" name="elements" index="2zSOd7" />
-      </concept>
-      <concept id="2590112629729462733" name="org.campagnelab.workflow.structure.InputFromBaseLanguageScript" flags="ng" index="2kHIhV">
-        <reference id="2590112629729462734" name="var" index="2kHIhS" />
-      </concept>
-      <concept id="2590112629724566341" name="org.campagnelab.workflow.structure.InputValue" flags="ng" index="2l3rVN">
-        <reference id="2590112629724567366" name="input" index="2l3rFK" />
-      </concept>
-      <concept id="2590112629719316315" name="org.campagnelab.workflow.structure.OutputExpression" flags="ng" index="2lntFH">
-        <child id="2590112629719316376" name="expression" index="2lntCI" />
       </concept>
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya">
         <property id="2590112629708729231" name="fromStandardOutput" index="2lYOoT" />
@@ -181,21 +164,6 @@
     <node concept="2lYRya" id="2fLVrqRcOqM" role="2ulM79">
       <property role="TrG5h" value="a" />
       <node concept="1utKN4" id="2fLVrqRxQLT" role="2ybFLk" />
-      <node concept="2lntFH" id="2fLVrqRti6E" role="20hoG3">
-        <node concept="3cpWs3" id="7sz_HDkxz$j" role="2lntCI">
-          <node concept="3cpWs3" id="2fLVrqRxQNh" role="3uHU7B">
-            <node concept="2kHIhV" id="2fLVrqRxx_z" role="3uHU7B">
-              <ref role="2kHIhS" node="4g1gOgyyadU" resolve="andThis" />
-            </node>
-            <node concept="2kHIhV" id="4g1gOgyya0t" role="3uHU7w">
-              <ref role="2kHIhS" node="4g1gOgyy9QZ" resolve="findThis" />
-            </node>
-          </node>
-          <node concept="2l3rVN" id="7sz_HDkx$bf" role="3uHU7w">
-            <ref role="2l3rFK" node="7sz_HDkxzPa" resolve="d" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2mjA9o" id="2fLVrqRcOkv" role="2ulM7n">
       <property role="TrG5h" value="a" />

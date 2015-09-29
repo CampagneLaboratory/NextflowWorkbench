@@ -54,11 +54,11 @@
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
       </concept>
-      <concept id="3855674281012038742" name="org.campagnelab.workflow.structure.IntegerInitializer" flags="ng" index="2$PLs2">
-        <child id="3855674281012526304" name="integer" index="2$RAuO" />
+      <concept id="3653684473245054612" name="org.campagnelab.workflow.structure.NewIntegerLiteral" flags="ng" index="2J_swZ">
+        <property id="3653684473245054659" name="value" index="2J_sxC" />
       </concept>
-      <concept id="3855674281012527421" name="org.campagnelab.workflow.structure.IntegerLiteral" flags="ng" index="2$RDDD">
-        <property id="3855674281012527422" name="value" index="2$RDDE" />
+      <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
+        <child id="3653684473245054701" name="elementType" index="2J_sx6" />
       </concept>
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
@@ -119,47 +119,41 @@
     </node>
     <node concept="1CVceo" id="367MW53_Nm3" role="2$L6iY">
       <property role="TrG5h" value="valueOfA" />
-      <node concept="2$PLs2" id="367MW53_Nmj" role="2$L62I">
-        <node concept="2$RDDD" id="367MW53_NmL" role="2$RAuO">
-          <property role="2$RDDE" value="2" />
+      <node concept="2J_sx7" id="6ZiO7Efqi8k" role="2$L62I">
+        <node concept="2J_swZ" id="6ZiO7Efqiag" role="2J_sx6">
+          <property role="2J_sxC" value="1" />
         </node>
-        <node concept="2$RDDD" id="367MW53_No9" role="2$RAuO">
-          <property role="2$RDDE" value="5" />
+        <node concept="2J_swZ" id="6ZiO7Efqic$" role="2J_sx6">
+          <property role="2J_sxC" value="2" />
         </node>
-        <node concept="2$RDDD" id="367MW53_NoG" role="2$RAuO">
-          <property role="2$RDDE" value="10" />
+        <node concept="2J_swZ" id="6ZiO7EfqigK" role="2J_sx6">
+          <property role="2J_sxC" value="3" />
         </node>
-        <node concept="2$RDDD" id="367MW53_NpJ" role="2$RAuO">
-          <property role="2$RDDE" value="100" />
+        <node concept="2J_swZ" id="6ZiO7Efqijn" role="2J_sx6">
+          <property role="2J_sxC" value="100" />
         </node>
-        <node concept="2$RDDD" id="3YQd1FoMLSD" role="2$RAuO">
-          <property role="2$RDDE" value="1000" />
-        </node>
-        <node concept="2$RDDD" id="3YQd1FoMLTX" role="2$RAuO">
-          <property role="2$RDDE" value="25" />
+        <node concept="2J_swZ" id="6ZiO7Efqim6" role="2J_sx6">
+          <property role="2J_sxC" value="25" />
         </node>
       </node>
     </node>
     <node concept="1CVceo" id="3YQd1FoMr04" role="2$L6iY">
       <property role="TrG5h" value="InsideRscript" />
-      <node concept="2$PLs2" id="3YQd1FoMr12" role="2$L62I">
-        <node concept="2$RDDD" id="3YQd1FoMr1w" role="2$RAuO">
-          <property role="2$RDDE" value="5" />
+      <node concept="2J_sx7" id="6ZiO7EfqixM" role="2$L62I">
+        <node concept="2J_swZ" id="6ZiO7Efqize" role="2J_sx6">
+          <property role="2J_sxC" value="5" />
         </node>
-        <node concept="2$RDDD" id="3YQd1FoMr2s" role="2$RAuO">
-          <property role="2$RDDE" value="10" />
+        <node concept="2J_swZ" id="6ZiO7Efqi_3" role="2J_sx6">
+          <property role="2J_sxC" value="10" />
         </node>
-        <node concept="2$RDDD" id="3YQd1FoMr3t" role="2$RAuO">
-          <property role="2$RDDE" value="20" />
+        <node concept="2J_swZ" id="6ZiO7EfqiDA" role="2J_sx6">
+          <property role="2J_sxC" value="20" />
         </node>
-        <node concept="2$RDDD" id="3YQd1FoMr4w" role="2$RAuO">
-          <property role="2$RDDE" value="30" />
+        <node concept="2J_swZ" id="6ZiO7EfqiIm" role="2J_sx6">
+          <property role="2J_sxC" value="30" />
         </node>
-        <node concept="2$RDDD" id="3YQd1FoMr5y" role="2$RAuO">
-          <property role="2$RDDE" value="40" />
-        </node>
-        <node concept="2$RDDD" id="3YQd1FoMr6D" role="2$RAuO">
-          <property role="2$RDDE" value="50" />
+        <node concept="2J_swZ" id="6ZiO7EfqiNl" role="2J_sx6">
+          <property role="2J_sxC" value="40" />
         </node>
       </node>
     </node>
