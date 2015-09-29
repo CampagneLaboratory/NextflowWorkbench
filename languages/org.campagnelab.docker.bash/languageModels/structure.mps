@@ -25,6 +25,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -106,6 +107,7 @@
     <property role="TrG5h" value="DockerBash" />
     <property role="34LRSv" value="BashInDocker" />
     <property role="19KtqR" value="true" />
+    <property role="MwhBj" value="${module}/icons/BashScript-1.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="8cuIHOGcLk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
