@@ -68,6 +68,12 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -463,16 +469,20 @@
   <node concept="18kY7G" id="6B$xkWtXq2A">
     <property role="TrG5h" value="check_DockerArtifactPath" />
     <node concept="3clFbS" id="6B$xkWtXq2B" role="18ibNy">
-      <node concept="a7r0C" id="6B$xkWtXq_L" role="3cqZAp">
-        <node concept="1YBJjd" id="6B$xkWtXqRi" role="2OEOjV">
-          <ref role="1YBMHb" node="6B$xkWtXq2D" resolve="dockerArtifactPath" />
-        </node>
-        <node concept="2OqwBi" id="6B$xkWtXqCN" role="a7wSD">
-          <node concept="1YBJjd" id="6B$xkWtXqA3" role="2Oq$k0">
-            <ref role="1YBMHb" node="6B$xkWtXq2D" resolve="dockerArtifactPath" />
-          </node>
-          <node concept="2qgKlT" id="6B$xkWtXqPH" role="2OqNvi">
-            <ref role="37wK5l" to="cb06:2h_fDmyfOGw" resolve="getRawPath" />
+      <node concept="3SKdUt" id="6QVw52gAbXP" role="3cqZAp">
+        <node concept="3SKWN0" id="6QVw52gAbXV" role="3SKWNk">
+          <node concept="a7r0C" id="6B$xkWtXq_L" role="3SKWNf">
+            <node concept="1YBJjd" id="6B$xkWtXqRi" role="2OEOjV">
+              <ref role="1YBMHb" node="6B$xkWtXq2D" resolve="dockerArtifactPath" />
+            </node>
+            <node concept="2OqwBi" id="6B$xkWtXqCN" role="a7wSD">
+              <node concept="1YBJjd" id="6B$xkWtXqA3" role="2Oq$k0">
+                <ref role="1YBMHb" node="6B$xkWtXq2D" resolve="dockerArtifactPath" />
+              </node>
+              <node concept="2qgKlT" id="6B$xkWtXqPH" role="2OqNvi">
+                <ref role="37wK5l" to="cb06:2h_fDmyfOGw" resolve="getRawPath" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

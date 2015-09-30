@@ -14,8 +14,8 @@
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -722,6 +722,35 @@
           <node concept="10P_77" id="2h_fDmyfOzI" role="1Lm7xW" />
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="6QVw52gynuH" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="updateContainer" />
+      <ref role="13i0hy" to="rzxe:6QVw52gwlpw" resolve="updateContainer" />
+      <node concept="3Tm1VV" id="6QVw52gynuK" role="1B3o_S" />
+      <node concept="3clFbS" id="6QVw52gynuN" role="3clF47">
+        <node concept="3clFbF" id="6QVw52gypB_" role="3cqZAp">
+          <node concept="37vLTI" id="6QVw52gyq5g" role="3clFbG">
+            <node concept="37vLTw" id="6QVw52gyq72" role="37vLTx">
+              <ref role="3cqZAo" node="6QVw52gynuO" resolve="newContainer" />
+            </node>
+            <node concept="2OqwBi" id="6QVw52gypDI" role="37vLTJ">
+              <node concept="13iPFW" id="6QVw52gypB$" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6QVw52gypQl" role="2OqNvi">
+                <ref role="3Tt5mk" to="r9td:2h_fDmyfOv2" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6QVw52gynuO" role="3clF46">
+        <property role="TrG5h" value="newContainer" />
+        <node concept="3Tqbb2" id="6QVw52gynuP" role="1tU5fm">
+          <ref role="ehGHo" to="6jv6:1D6dZ$xfhyW" resolve="DockerContainer" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6QVw52gynuQ" role="3clF45" />
     </node>
     <node concept="13i0hz" id="2h_fDmyfOzJ" role="13h7CS">
       <property role="TrG5h" value="stripFilename" />
