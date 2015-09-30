@@ -853,20 +853,13 @@
     <property role="3GE5qa" value="environment" />
     <ref role="1XX52x" to="iuj9:7SK$kQZvjoo" resolve="EvalArtifactAttribute" />
     <node concept="3EZMnI" id="7SK$kQZvjoU" role="2wV5jI">
-      <node concept="1iCGBv" id="7SK$kQZvlx7" role="3EZMnx">
-        <ref role="1NtTu8" to="iuj9:7SK$kQZvjCP" />
-        <ref role="1ERwB7" node="4DwTgsU3yvh" resolve="NoAutocompletion" />
-        <node concept="1sVBvm" id="7SK$kQZvlx9" role="1sWHZn">
-          <node concept="3F0A7n" id="7SK$kQZvlxy" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-        <node concept="VPxyj" id="7SK$kQZvlzf" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-      </node>
       <node concept="2iRfu4" id="7SK$kQZvjoX" role="2iSdaV" />
+      <node concept="3F0ifn" id="4rsVl6EkoqR" role="3EZMnx">
+        <property role="3F0ifm" value="eval" />
+      </node>
+      <node concept="3F0A7n" id="4rsVl6EkoqW" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:4rsVl6EkONg" resolve="attributeName" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7SK$kQZxVHT">

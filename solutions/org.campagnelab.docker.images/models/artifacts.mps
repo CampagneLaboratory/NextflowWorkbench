@@ -159,6 +159,9 @@
     <node concept="3blhQM" id="4rsVl6Eeic$" role="3blhQR">
       <ref role="3blhQY" node="4rsVl6Eeicz" resolve="centos-java8_Image" />
     </node>
+    <node concept="3blhQM" id="4rsVl6EjPZ5" role="3blhQR">
+      <ref role="3blhQY" node="4rsVl6EjPZ4" resolve="centos-java8_Image" />
+    </node>
   </node>
   <node concept="VuPG2" id="3d0Dghcgitr">
     <property role="3GE5qa" value="dockerfiles" />
@@ -275,6 +278,11 @@
       <property role="TrG5h" value="artifact-software" />
       <property role="Gyxd1" value="1.0" />
     </node>
+  </node>
+  <node concept="2E_JVc" id="4rsVl6EjPZ4">
+    <property role="2E_JEh" value="a1f230440c17" />
+    <property role="TrG5h" value="centos-java8_Image" />
+    <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
   </node>
 </model>
 

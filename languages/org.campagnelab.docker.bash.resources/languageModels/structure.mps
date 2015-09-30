@@ -296,12 +296,6 @@
     <property role="34LRSv" value="value of" />
     <property role="R4oN_" value="Value of a resource attribute." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7SK$kQZvjt8" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="toEval" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7SK$kQZvjoo" resolve="EvalArtifactAttribute" />
-    </node>
     <node concept="1TJgyi" id="7SK$kQZvjge" role="1TKVEl">
       <property role="TrG5h" value="prefix" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -314,6 +308,10 @@
       <property role="TrG5h" value="resourceName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="4rsVl6EfrEz" role="1TKVEl">
+      <property role="TrG5h" value="attributeName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="7SK$kQZvhrF" role="PzmwI">
       <ref role="PrY4T" node="7SK$kQZvhmu" resolve="EnvironmentValueValue" />
     </node>
@@ -324,14 +322,17 @@
     <property role="R4oN_" value="Evaluate the attribute." />
     <property role="34LRSv" value="eval(attribute)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7SK$kQZvjCP" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="attribute" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="bs99:7arfhhdt3J1" resolve="Attribute" />
+    <node concept="1TJgyi" id="4rsVl6EkONb" role="1TKVEl">
+      <property role="TrG5h" value="resourceName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="PrWs8" id="7SK$kQZvjos" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="1TJgyi" id="4rsVl6EkONd" role="1TKVEl">
+      <property role="TrG5h" value="artifactName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4rsVl6EkONg" role="1TKVEl">
+      <property role="TrG5h" value="attributeName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="7SK$kQZxVHC">
