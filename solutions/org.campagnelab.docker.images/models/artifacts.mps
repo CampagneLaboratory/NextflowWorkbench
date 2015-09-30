@@ -75,7 +75,7 @@
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
     <property role="TrG5h" value="centos-java8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile322928599842624010.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile5800884840588293020.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="39YFbxZh5KQ" role="VuOVn">
       <node concept="VtuK3" id="39YFbxZh5KR" role="VuO5T">
@@ -95,7 +95,17 @@
     <node concept="VugRC" id="39YFbxZh5KU" role="VuOVn">
       <node concept="19SGf9" id="39YFbxZh5KV" role="Vugyn">
         <node concept="19SUe$" id="39YFbxZh5KW" role="19SJt6">
-          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget \&#10;&amp;&amp; yum install -y tar \&#10;&amp;&amp; yum install -y which \&#10;&amp;&amp; yum install -y unzip \&#10;&amp;&amp; yum install -y zlib-devel.x86_64 \&#10;&amp;&amp; yum install -y ncurses-devel.x86_64 \&#10;&amp;&amp; yum install -y readline-devel \&#10;&amp;&amp; yum install -y mlocate \&#10;&amp;&amp; yum install -y cmake \&#10;&amp;&amp; yum install -y hdf5-devel " />
+          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget \&#10;&amp;&amp; yum install -y tar \&#10;&amp;&amp; yum install -y which \&#10;&amp;&amp; yum install -y unzip \&#10;&amp;&amp; yum groupinstall -y &quot;Development Tools&quot; \&#10;&amp;&amp; yum install -y zlib-devel.x86_64 \&#10;&amp;&amp; yum install -y ncurses-devel.x86_64 \&#10;&amp;&amp; yum install -y readline-devel \&#10;&amp;&amp; yum install -y mlocate \&#10;&amp;&amp; yum install -y cmake " />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="4rsVl6Ee3Kt" role="VuOVn">
+      <property role="1MaElf" value="cmake 3.3.2" />
+    </node>
+    <node concept="VugRC" id="4rsVl6Ee3Ln" role="VuOVn">
+      <node concept="19SGf9" id="4rsVl6Ee3LP" role="Vugyn">
+        <node concept="19SUe$" id="4rsVl6Ee3LQ" role="19SJt6">
+          <property role="19SUeA" value="wget https://cmake.org/files/v3.3/cmake-3.3.2.tar.gz \&#10;&amp;&amp; tar xf cmake-3.3.2.tar.gz &amp;&amp; cd cmake-3.3.2 \&#10;&amp;&amp; export CC=gcc &amp;&amp; export CXX=g++ \&#10;&amp;&amp; ./bootstrap &amp;&amp; make &amp;&amp; make install \&#10;&amp;&amp; cd .. &amp;&amp; rm -rf cmake*" />
         </node>
       </node>
     </node>
@@ -148,6 +158,12 @@
     </node>
     <node concept="3blhQM" id="4rsVl6EdVuc" role="3blhQR">
       <ref role="3blhQY" node="4rsVl6EdVub" resolve="centos-java8_Image" />
+    </node>
+    <node concept="3blhQM" id="4rsVl6Eeakv" role="3blhQR">
+      <ref role="3blhQY" node="4rsVl6Eeaku" resolve="centos-java8_Image" />
+    </node>
+    <node concept="3blhQM" id="4rsVl6EehT8" role="3blhQR">
+      <ref role="3blhQY" node="4rsVl6EehT7" resolve="centos-java8_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="3d0Dghcgitr">
@@ -251,6 +267,16 @@
       <property role="Gyxfx" value="mas2181" />
       <property role="Gyxd1" value="1.0" />
     </node>
+  </node>
+  <node concept="2E_JVc" id="4rsVl6Eeaku">
+    <property role="2E_JEh" value="0daf9c258a14" />
+    <property role="TrG5h" value="centos-java8_Image" />
+    <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
+  </node>
+  <node concept="2E_JVc" id="4rsVl6EehT7">
+    <property role="2E_JEh" value="7be2c2773f3f" />
+    <property role="TrG5h" value="centos-java8_Image" />
+    <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
   </node>
 </model>
 
