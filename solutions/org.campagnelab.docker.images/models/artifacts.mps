@@ -75,7 +75,7 @@
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
     <property role="TrG5h" value="centos-java8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile6724196399724658413.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile322928599842624010.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="39YFbxZh5KQ" role="VuOVn">
       <node concept="VtuK3" id="39YFbxZh5KR" role="VuO5T">
@@ -95,14 +95,17 @@
     <node concept="VugRC" id="39YFbxZh5KU" role="VuOVn">
       <node concept="19SGf9" id="39YFbxZh5KV" role="Vugyn">
         <node concept="19SUe$" id="39YFbxZh5KW" role="19SJt6">
-          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget \&#10;&amp;&amp; yum install -y tar \&#10;&amp;&amp; yum install -y which \&#10;&amp;&amp; yum install -y unzip \&#10;&amp;&amp; yum install -y zlib-devel.x86_64 \&#10;&amp;&amp; yum install -y ncurses-devel.x86_64 \&#10;&amp;&amp; yum install -y readline-devel \&#10;&amp;&amp; yum install -y mlocate \&#10;&amp;&amp; yum install -y cmake \&#10;&amp;&amp; yum install -y hdf5-devel \&#10;&amp;&amp; yum clean all" />
+          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget \&#10;&amp;&amp; yum install -y tar \&#10;&amp;&amp; yum install -y which \&#10;&amp;&amp; yum install -y unzip \&#10;&amp;&amp; yum install -y zlib-devel.x86_64 \&#10;&amp;&amp; yum install -y ncurses-devel.x86_64 \&#10;&amp;&amp; yum install -y readline-devel \&#10;&amp;&amp; yum install -y mlocate \&#10;&amp;&amp; yum install -y cmake \&#10;&amp;&amp; yum install -y hdf5-devel " />
         </node>
       </node>
+    </node>
+    <node concept="2Cort2" id="4rsVl6EdVnt" role="VuOVn">
+      <property role="1MaElf" value="gcc 4.8 and related tools" />
     </node>
     <node concept="VugRC" id="61WH0h8_nGh" role="VuOVn">
       <node concept="19SGf9" id="61WH0h8_nHu" role="Vugyn">
         <node concept="19SUe$" id="61WH0h8_nHv" role="19SJt6">
-          <property role="19SUeA" value="yum install -y devtoolset-2-gcc-4.8.2 devtoolset-2-gcc-c++-4.8.2 \&#10;&amp;&amp; ln -s /opt/rh/devtoolset-2/root/usr/bin/* /usr/local/bin/" />
+          <property role="19SUeA" value="wget http://people.centos.org/tru/devtools-2/devtools-2.repo -O /etc/yum.repos.d/devtools-2.repo \&#10;&amp;&amp; yum install -y devtoolset-2-gcc-4.8.2 devtoolset-2-gcc-c++-4.8.2 \&#10;&amp;&amp; ln -s /opt/rh/devtoolset-2/root/usr/bin/* /usr/local/bin/" />
         </node>
       </node>
     </node>
@@ -126,6 +129,13 @@
         </node>
       </node>
     </node>
+    <node concept="VugRC" id="4rsVl6EdVrR" role="VuOVn">
+      <node concept="19SGf9" id="4rsVl6EdVsh" role="Vugyn">
+        <node concept="19SUe$" id="4rsVl6EdVsi" role="19SJt6">
+          <property role="19SUeA" value="yum clean all" />
+        </node>
+      </node>
+    </node>
     <node concept="2Cort2" id="R1cm0Iv5yC" role="VuOVn">
       <property role="1MaElf" value="update the search databases for mlocate" />
     </node>
@@ -136,22 +146,8 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="2HFKNH0w3Kc" role="3blhQR">
-      <ref role="3blhQY" node="2HFKNH0w3Kb" resolve="centos-java8_Image" />
-    </node>
-    <node concept="3blhQM" id="61WH0h8_nMC" role="3blhQR">
-      <ref role="3blhQY" node="61WH0h8_nMB" resolve="centos-java8_Image" />
-    </node>
-  </node>
-  <node concept="2E_JVc" id="2HFKNH0w3Kb">
-    <property role="2E_JEh" value="462473b9d5c8" />
-    <property role="TrG5h" value="centos-java8_Image" />
-    <property role="GSh9r" value="mas2181/centos-java8:1.0" />
-    <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
-    <node concept="Gyxd7" id="61WH0h8_nJM" role="Gyxcj">
-      <property role="Gyxfx" value="mas2181" />
-      <property role="TrG5h" value="centos-java8" />
-      <property role="Gyxd1" value="1.0" />
+    <node concept="3blhQM" id="4rsVl6EdVuc" role="3blhQR">
+      <ref role="3blhQY" node="4rsVl6EdVub" resolve="centos-java8_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="3d0Dghcgitr">
@@ -245,14 +241,14 @@
       <property role="Gyxd1" value="1.0" />
     </node>
   </node>
-  <node concept="2E_JVc" id="61WH0h8_nMB">
-    <property role="2E_JEh" value="dac76e080ddc" />
+  <node concept="2E_JVc" id="4rsVl6EdVub">
+    <property role="2E_JEh" value="1547509d0c75" />
     <property role="TrG5h" value="centos-java8_Image" />
     <property role="GSh9r" value="mas2181/centos-java8:1.0" />
     <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
-    <node concept="Gyxd7" id="61WH0h8_nNS" role="Gyxcj">
-      <property role="Gyxfx" value="mas2181" />
+    <node concept="Gyxd7" id="4rsVl6EdVuz" role="Gyxcj">
       <property role="TrG5h" value="centos-java8" />
+      <property role="Gyxfx" value="mas2181" />
       <property role="Gyxd1" value="1.0" />
     </node>
   </node>
