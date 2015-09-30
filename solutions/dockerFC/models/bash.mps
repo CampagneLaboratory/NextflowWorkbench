@@ -78,9 +78,15 @@
         <property id="9092927410772203879" name="id" index="31jswE" />
         <property id="9092927410772203875" name="prefix" index="31jswI" />
       </concept>
+      <concept id="9092927410772884328" name="org.campagnelab.bash.nyosh.structure.EnvironmentValueRef" flags="ng" index="31HMC_">
+        <reference id="9092927410772884336" name="value" index="31HMCX" />
+      </concept>
       <concept id="9092927410772890708" name="org.campagnelab.bash.nyosh.structure.EnvironmentValue" flags="ng" index="31HOkp">
         <property id="6241637388239898142" name="sourceVariable" index="3oicoW" />
         <child id="9092927410772890712" name="value" index="31HOkl" />
+      </concept>
+      <concept id="1935021530044443661" name="org.campagnelab.bash.nyosh.structure.NyoshPathPart" flags="ng" index="19OFZp">
+        <child id="1935021530044464862" name="env" index="19OIOa" />
       </concept>
       <concept id="1311266352922359807" name="org.campagnelab.bash.nyosh.structure.RequestedResource" flags="ng" index="3xUnCN">
         <property id="1008131731648663094" name="message" index="3Ui_h1" />
@@ -98,8 +104,18 @@
         <reference id="5359535375768188201" name="config" index="1NFp0I" />
         <child id="9092927410772193975" name="environment" index="31jqfU" />
       </concept>
+      <concept id="7630370243519798795" name="org.campagnelab.bash.nyosh.structure.DockerArtifactPath" flags="ng" index="1OktH4" />
     </language>
     <language id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash">
+      <concept id="2622571170406287292" name="org.campagnelab.docker.bash.structure.InteractivePath" flags="ng" index="26mB$D">
+        <child id="2622571170406287293" name="path" index="26mB$C" />
+      </concept>
+      <concept id="2622571170406287294" name="org.campagnelab.docker.bash.structure.PathPart" flags="ng" index="26mB$F">
+        <property id="2622571170406287295" name="part" index="26mB$E" />
+      </concept>
+      <concept id="2622571170406287297" name="org.campagnelab.docker.bash.structure.DockerPath" flags="ng" index="26mB_k">
+        <reference id="2622571170406287298" name="dockerContainer" index="26mB_n" />
+      </concept>
       <concept id="147628039490029687" name="org.campagnelab.docker.bash.structure.DockerBash" flags="ng" index="1QJbas">
         <child id="331977639697571264" name="container" index="234boB" />
         <child id="147628039490030676" name="script" index="1QJbqZ" />
@@ -7674,19 +7690,33 @@
       </node>
       <node concept="19SGf9" id="3um3mMM6Iv$" role="3Y$PkS">
         <node concept="19SUe$" id="3um3mMM6Iv_" role="19SJt6">
-          <property role="19SUeA" value="&#10;&#10;" />
+          <property role="19SUeA" value="&#10;ls " />
+        </node>
+        <node concept="1OktH4" id="6QVw52gyZH2" role="19SJt6">
+          <ref role="26mB_n" node="6QVw52gAbVc" resolve="interactive" />
+          <node concept="19OFZp" id="6QVw52gyZH5" role="26mB$C">
+            <property role="26mB$E" value="" />
+            <node concept="31HMC_" id="6QVw52gyZH6" role="19OIOa">
+              <ref role="31HMCX" node="6QVw52guvpU" resolve="artifact path SALMON.BINARIES" />
+            </node>
+          </node>
+          <node concept="26mB$F" id="6QVw52gyZH7" role="26mB$C">
+            <property role="26mB$E" value="" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="6QVw52gyZH1" role="19SJt6">
+          <property role="19SUeA" value="&#10;" />
         </node>
       </node>
     </node>
-    <node concept="GbKB8" id="6QVw52gvnCT" role="234boB">
+    <node concept="GbKB8" id="6QVw52gAbVc" role="234boB">
       <property role="VuL0s" value="1.0" />
       <property role="3yMj3R" value="sleep 1000" />
       <property role="GbyUj" value="artifact-software" />
       <property role="3zaeVo" value="true" />
       <property role="VuL0v" value="mas2181" />
       <property role="TrG5h" value="interactive" />
-      <property role="1vm7qE" value="true" />
-      <ref role="3zcJb$" node="6QVw52gvnCU" resolve="image" />
+      <ref role="3zcJb$" node="6QVw52gAbVd" resolve="image" />
     </node>
   </node>
   <node concept="1M6PLe" id="6QVw52ghVx1">
@@ -8246,6 +8276,78 @@
     <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="sleep 1000" />
     <ref role="3zcJb$" node="6QVw52gvnCU" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="6QVw52gyZGJ">
+    <property role="GSh9r" value="mas2181/artifact-software:1.0" />
+    <property role="2E_JEh" value="artifact-software" />
+    <property role="TrG5h" value="image" />
+  </node>
+  <node concept="GbKB8" id="6QVw52gyZGK">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="artifact-software" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="6QVw52gyZGJ" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="6QVw52gyZHh">
+    <property role="GSh9r" value="mas2181/artifact-software:1.0" />
+    <property role="2E_JEh" value="artifact-software" />
+    <property role="TrG5h" value="image" />
+    <node concept="WEvhf" id="6QVw52gyZHz" role="WF_SX">
+      <ref role="WEvjA" node="6QVw52gyZHi" resolve="interactive" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="6QVw52gyZHi">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="artifact-software" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="6QVw52gyZHh" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="6QVw52gz1QF">
+    <property role="GSh9r" value="mas2181/artifact-software:1.0" />
+    <property role="2E_JEh" value="artifact-software" />
+    <property role="TrG5h" value="image" />
+    <node concept="WEvhf" id="6QVw52gz1QX" role="WF_SX">
+      <ref role="WEvjA" node="6QVw52gz1QG" resolve="interactive" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="6QVw52gz1QG">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="artifact-software" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="6QVw52gz1QF" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="6QVw52gzC11">
+    <property role="GSh9r" value="mas2181/artifact-software:1.0" />
+    <property role="2E_JEh" value="artifact-software" />
+    <property role="TrG5h" value="image" />
+    <node concept="WEvhf" id="6QVw52gzC1j" role="WF_SX">
+      <ref role="WEvjA" node="6QVw52gzC12" resolve="interactive" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="6QVw52gzC12">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="artifact-software" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="6QVw52gzC11" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="6QVw52gAbVd">
+    <property role="GSh9r" value="mas2181/artifact-software:1.0" />
+    <property role="2E_JEh" value="artifact-software" />
+    <property role="TrG5h" value="image" />
+    <node concept="WEvhf" id="6QVw52gAbVv" role="WF_SX">
+      <ref role="WEvjA" node="6QVw52gAbVe" resolve="interactive" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="6QVw52gAbVe">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="artifact-software" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="6QVw52gAbVd" resolve="image" />
   </node>
 </model>
 

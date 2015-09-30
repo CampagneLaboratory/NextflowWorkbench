@@ -12,6 +12,7 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" implicit="true" />
     <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" implicit="true" />
   </imports>
   <registry>
@@ -398,6 +399,9 @@
     <property role="34LRSv" value="artifact path" />
     <property role="R4oN_" value="Interactive path for artifact paths" />
     <ref role="1TJDcQ" to="r9td:2h_fDmyfOv1" resolve="DockerPath" />
+    <node concept="PrWs8" id="6QVw52gz1Zw" role="PzmwI">
+      <ref role="PrY4T" to="6jv6:6QVw52gwj52" resolve="IHaveRefToDockerContainer" />
+    </node>
   </node>
 </model>
 

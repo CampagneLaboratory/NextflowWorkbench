@@ -9041,5 +9041,62 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="6QVw52gwkw9">
+    <property role="3GE5qa" value="containers" />
+    <ref role="13h7C2" to="6jv6:6QVw52gwj52" resolve="IHaveRefToDockerContainer" />
+    <node concept="13hLZK" id="6QVw52gwkwa" role="13h7CW">
+      <node concept="3clFbS" id="6QVw52gwkwb" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6QVw52gwlpw" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="updateContainer" />
+      <node concept="37vLTG" id="6QVw52gwyjH" role="3clF46">
+        <property role="TrG5h" value="newContainer" />
+        <node concept="3Tqbb2" id="6QVw52gwyjN" role="1tU5fm">
+          <ref role="ehGHo" to="6jv6:1D6dZ$xfhyW" resolve="DockerContainer" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6QVw52gwlpx" role="1B3o_S" />
+      <node concept="3clFbS" id="6QVw52gwlpy" role="3clF47" />
+      <node concept="3cqZAl" id="6QVw52gwyjE" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6QVw52gwyjW">
+    <property role="3GE5qa" value="containers" />
+    <ref role="13h7C2" to="6jv6:nU1NoTkZdT" resolve="ContainerRef" />
+    <node concept="13hLZK" id="6QVw52gwyjX" role="13h7CW">
+      <node concept="3clFbS" id="6QVw52gwyjY" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6QVw52gwyke" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="updateContainer" />
+      <ref role="13i0hy" node="6QVw52gwlpw" resolve="updateContainer" />
+      <node concept="3Tm1VV" id="6QVw52gwykh" role="1B3o_S" />
+      <node concept="3clFbS" id="6QVw52gwykk" role="3clF47">
+        <node concept="3clFbF" id="6QVw52gwykx" role="3cqZAp">
+          <node concept="37vLTI" id="6QVw52gwyGI" role="3clFbG">
+            <node concept="37vLTw" id="6QVw52gwyIe" role="37vLTx">
+              <ref role="3cqZAo" node="6QVw52gwykl" resolve="newContainer" />
+            </node>
+            <node concept="2OqwBi" id="6QVw52gwynI" role="37vLTJ">
+              <node concept="13iPFW" id="6QVw52gwykw" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6QVw52gwyxd" role="2OqNvi">
+                <ref role="3Tt5mk" to="6jv6:nU1NoTkZfg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6QVw52gwykl" role="3clF46">
+        <property role="TrG5h" value="newContainer" />
+        <node concept="3Tqbb2" id="6QVw52gwykm" role="1tU5fm">
+          <ref role="ehGHo" to="6jv6:1D6dZ$xfhyW" resolve="DockerContainer" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6QVw52gwykn" role="3clF45" />
+    </node>
+  </node>
 </model>
 

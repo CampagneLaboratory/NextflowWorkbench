@@ -102,6 +102,9 @@
     <node concept="PrWs8" id="2h_fDmyfOv3" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
+    <node concept="PrWs8" id="6QVw52gylJX" role="PzmwI">
+      <ref role="PrY4T" to="6jv6:6QVw52gwj52" resolve="IHaveRefToDockerContainer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="8cuIHOGcxR">
     <property role="TrG5h" value="DockerBash" />

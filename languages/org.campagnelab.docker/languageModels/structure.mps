@@ -23,6 +23,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -501,6 +502,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1D6dZ$xfhyW" resolve="DockerContainer" />
     </node>
+    <node concept="PrWs8" id="6QVw52gwj80" role="PzmwI">
+      <ref role="PrY4T" node="6QVw52gwj52" resolve="IHaveRefToDockerContainer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="xP2fmw5bYR">
     <property role="3GE5qa" value="instructions" />
@@ -512,6 +516,10 @@
       <property role="TrG5h" value="description" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="6QVw52gwj52">
+    <property role="3GE5qa" value="containers" />
+    <property role="TrG5h" value="IHaveRefToDockerContainer" />
   </node>
 </model>
 
