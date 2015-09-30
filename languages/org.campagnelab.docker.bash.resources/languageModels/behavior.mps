@@ -1548,6 +1548,48 @@
             <node concept="3x8VRR" id="10rnQzwYrQA" role="2OqNvi" />
           </node>
         </node>
+        <node concept="3clFbJ" id="6QVw52gsVDx" role="3cqZAp">
+          <node concept="3clFbS" id="6QVw52gsVDy" role="3clFbx">
+            <node concept="3clFbF" id="6QVw52gsVDz" role="3cqZAp">
+              <node concept="2OqwBi" id="6QVw52gsVD$" role="3clFbG">
+                <node concept="37vLTw" id="6QVw52gsVD_" role="2Oq$k0">
+                  <ref role="3cqZAo" node="10rnQzwYt7o" resolve="options" />
+                </node>
+                <node concept="TSZUe" id="6QVw52gsVDA" role="2OqNvi">
+                  <node concept="3cpWs3" id="6QVw52gsVDB" role="25WWJ7">
+                    <node concept="Xl_RD" id="6QVw52gsVDC" role="3uHU7w">
+                      <property role="Xl_RC" value=":/home/gobyweb/software/gobyweb2-plugins" />
+                    </node>
+                    <node concept="3cpWs3" id="6QVw52gsVDD" role="3uHU7B">
+                      <node concept="Xl_RD" id="6QVw52gsVDE" role="3uHU7B">
+                        <property role="Xl_RC" value="-v " />
+                      </node>
+                      <node concept="2OqwBi" id="6QVw52gsXt0" role="3uHU7w">
+                        <node concept="2OqwBi" id="6QVw52gsVDG" role="2Oq$k0">
+                          <node concept="37vLTw" id="6QVw52gsVDH" role="2Oq$k0">
+                            <ref role="3cqZAo" node="10rnQzwW02P" resolve="env" />
+                          </node>
+                          <node concept="3TrEf2" id="6QVw52gsXbD" role="2OqNvi">
+                            <ref role="3Tt5mk" to="bs99:1ISEu8LMo3d" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="6QVw52gsYHy" role="2OqNvi">
+                          <ref role="37wK5l" to="lcm8:2tqsND0ge2_" resolve="getRepositoryPath" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6QVw52gsVDK" role="3clFbw">
+            <node concept="37vLTw" id="6QVw52gsVDL" role="2Oq$k0">
+              <ref role="3cqZAo" node="10rnQzwW02P" resolve="env" />
+            </node>
+            <node concept="3x8VRR" id="6QVw52gsVDM" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3clFbF" id="10rnQzwYxI9" role="3cqZAp">
           <node concept="37vLTw" id="10rnQzwYxI7" role="3clFbG">
             <ref role="3cqZAo" node="10rnQzwYt7o" resolve="options" />
