@@ -384,13 +384,20 @@
   </node>
   <node concept="1TIwiD" id="1Fq$Xhj22Kd">
     <property role="TrG5h" value="NyoshPathPart" />
+    <property role="34LRSv" value="$" />
     <ref role="1TJDcQ" to="r9td:2h_fDmyfOuY" resolve="PathPart" />
     <node concept="1TJgyj" id="1Fq$Xhj27Vu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="env" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7SK$kQZvhpX" resolve="ArtifactPathValue" />
+      <ref role="20lvS9" node="7SK$kQZxVHC" resolve="EnvironmentValueRef" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6B$xkWtHlSb">
+    <property role="TrG5h" value="DockerArtifactPath" />
+    <property role="34LRSv" value="artifact path" />
+    <property role="R4oN_" value="Interactive path for artifact paths" />
+    <ref role="1TJDcQ" to="r9td:2h_fDmyfOv1" resolve="DockerPath" />
   </node>
 </model>
 

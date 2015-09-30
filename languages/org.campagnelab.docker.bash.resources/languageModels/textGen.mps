@@ -9,9 +9,12 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dzk5" ref="r:2bfcc546-5c51-4762-9df2-c43920be4458(org.campagnelab.gobyweb.plugins.structure)" implicit="true" />
     <import index="lcm8" ref="r:19e666fd-ce33-4549-bbc2-aa106ce25584(org.campagnelab.gobyweb.interactive.behavior)" implicit="true" />
+    <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" implicit="true" />
+    <import index="czzw" ref="r:2151664b-13bc-4072-a76b-815bb37c415e(org.campagnelab.gobyweb.interactive.users.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" implicit="true" />
     <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" implicit="true" />
+    <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
@@ -782,6 +785,79 @@
           </node>
           <node concept="la8eA" id="6vbp88c7rdP" role="lcghm">
             <property role="lacIc" value="}" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1PgIynsx_TL">
+    <ref role="WuzLi" to="iuj9:6B$xkWtHlSb" resolve="DockerArtifactPath" />
+    <node concept="11bSqf" id="1PgIynsx_TM" role="11c4hB">
+      <node concept="3clFbS" id="1PgIynsx_TN" role="2VODD2">
+        <node concept="lc7rE" id="1PgIynsxLQI" role="3cqZAp">
+          <node concept="l9S2W" id="1PgIynsxLRN" role="lcghm">
+            <node concept="2OqwBi" id="1PgIynsxMeD" role="lbANJ">
+              <node concept="117lpO" id="1PgIynsxLS1" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1PgIynsxWoh" role="2OqNvi">
+                <ref role="3TtcxE" to="r9td:2h_fDmyfOuX" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1PgIynsxWwQ">
+    <ref role="WuzLi" to="iuj9:1Fq$Xhj22Kd" resolve="NyoshPathPart" />
+    <node concept="11bSqf" id="1PgIynsxWwR" role="11c4hB">
+      <node concept="3clFbS" id="1PgIynsxWwS" role="2VODD2">
+        <node concept="lc7rE" id="1PgIynsxWxg" role="3cqZAp">
+          <node concept="l9hG8" id="1PgIynsxWyo" role="lcghm">
+            <node concept="2OqwBi" id="1PgIynsyQx0" role="lb14g">
+              <node concept="117lpO" id="1PgIynsyKvM" role="2Oq$k0" />
+              <node concept="2qgKlT" id="1PgIynsyQNH" role="2OqNvi">
+                <ref role="37wK5l" to="6na6:6B$xkWtXy$H" resolve="getArtifactPathValue" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1PgIynsyRa9" role="lcghm">
+            <property role="lacIc" value="/" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1PgIynsyG7Z">
+    <ref role="WuzLi" to="bs99:1LS_mj9079W" resolve="ExecutionEnvironment" />
+    <node concept="11bSqf" id="1PgIynsyG80" role="11c4hB">
+      <node concept="3clFbS" id="1PgIynsyG81" role="2VODD2">
+        <node concept="3SKdUt" id="1PgIynsyG8k" role="3cqZAp">
+          <node concept="3SKdUq" id="1PgIynsyG8p" role="3SKWNk">
+            <property role="3SKdUp" value="ignore" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1PgIynsyG8H">
+    <ref role="WuzLi" to="iuj9:17OfmPzVQ4z" resolve="ResourceRangeContainer" />
+    <node concept="11bSqf" id="1PgIynsyG8I" role="11c4hB">
+      <node concept="3clFbS" id="1PgIynsyG8J" role="2VODD2">
+        <node concept="3SKdUt" id="1PgIynsyG92" role="3cqZAp">
+          <node concept="3SKdUq" id="1PgIynsyG97" role="3SKWNk">
+            <property role="3SKdUp" value="ignore" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1PgIynsyG9r">
+    <ref role="WuzLi" to="czzw:55_lMpoGdET" resolve="NYoShUsers" />
+    <node concept="11bSqf" id="1PgIynsyG9s" role="11c4hB">
+      <node concept="3clFbS" id="1PgIynsyG9t" role="2VODD2">
+        <node concept="3SKdUt" id="1PgIynsyG9K" role="3cqZAp">
+          <node concept="3SKdUq" id="1PgIynsyG9P" role="3SKWNk">
+            <property role="3SKdUp" value="ignore" />
           </node>
         </node>
       </node>

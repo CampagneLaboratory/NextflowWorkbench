@@ -39,6 +39,7 @@
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
     <import index="p3sh" ref="r:88895bb3-ffc1-49c0-97ec-2c49d3499b4b(org.campagnelab.gobyweb.tags.behavior)" />
     <import index="mak5" ref="r:977bf260-4884-422e-9656-9f0bb268fcb0(org.campagnelab.logger.behavior)" />
+    <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2050,8 +2051,13 @@
                   </node>
                   <node concept="I4A8Y" id="5U_2ytMmDw0" role="2OqNvi" />
                 </node>
-                <node concept="Xl_RD" id="5U_2ytMmDw1" role="37wK5m">
-                  <property role="Xl_RC" value="Starting docker run " />
+                <node concept="3cpWs3" id="6B$xkWu7Hiz" role="37wK5m">
+                  <node concept="37vLTw" id="6B$xkWu7HtY" role="3uHU7w">
+                    <ref role="3cqZAo" node="6B$xkWu38cf" resolve="mountOptions" />
+                  </node>
+                  <node concept="Xl_RD" id="5U_2ytMmDw1" role="3uHU7B">
+                    <property role="Xl_RC" value="Starting docker run with mount option=" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2461,6 +2467,12 @@
                       <node concept="2hgXn$" id="5U_2ytMyx33" role="2hgXj9">
                         <property role="2hgXn_" value=" " />
                       </node>
+                      <node concept="2hgXnF" id="6B$xkWubEfO" role="2hgXj9">
+                        <ref role="ukfOi" node="6B$xkWu38cf" resolve="mountOptions" />
+                      </node>
+                      <node concept="2hgXn$" id="6B$xkWubETI" role="2hgXj9">
+                        <property role="2hgXn_" value=" " />
+                      </node>
                       <node concept="2hgXnF" id="5U_2ytMmDwM" role="2hgXj9">
                         <ref role="ukfOi" node="5U_2ytMmDwq" resolve="deployAddress" />
                       </node>
@@ -2691,6 +2703,11 @@
         <node concept="3Tqbb2" id="5U_2ytMmDxZ" role="1tU5fm">
           <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
         </node>
+      </node>
+      <node concept="37vLTG" id="6B$xkWu38cf" role="3clF46">
+        <property role="TrG5h" value="mountOptions" />
+        <property role="3TUv4t" value="true" />
+        <node concept="17QB3L" id="6B$xkWu38Nn" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="5U_2ytMmDy0" role="3clF46">
         <property role="TrG5h" value="image" />
@@ -6207,6 +6224,10 @@
         <property role="TrG5h" value="command" />
         <node concept="17QB3L" id="5U_2ytMvlXf" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="6B$xkWu5grr" role="3clF46">
+        <property role="TrG5h" value="mountOptions" />
+        <node concept="17QB3L" id="6B$xkWu5gvd" role="1tU5fm" />
+      </node>
       <node concept="3Tm1VV" id="5U_2ytMmB$v" role="1B3o_S" />
       <node concept="3clFbS" id="5U_2ytMmB$w" role="3clF47">
         <node concept="3clFbF" id="5U_2ytMmBZJ" role="3cqZAp">
@@ -6215,6 +6236,9 @@
             <ref role="1Pybhc" node="7MTH03m4_Rr" resolve="ExecuteDockerCommands" />
             <node concept="BsUDl" id="VMSWAF9e6P" role="37wK5m">
               <ref role="37wK5l" node="VMSWAF9cfy" resolve="getConfig" />
+            </node>
+            <node concept="37vLTw" id="6B$xkWu5gwF" role="37wK5m">
+              <ref role="3cqZAo" node="6B$xkWu5grr" resolve="mountOptions" />
             </node>
             <node concept="13iPFW" id="5U_2ytMvlP6" role="37wK5m" />
             <node concept="37vLTw" id="5U_2ytMvlXs" role="37wK5m">
@@ -6668,12 +6692,49 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="6B$xkWu367S" role="3cqZAp">
+          <node concept="3cpWsn" id="6B$xkWu367V" role="3cpWs9">
+            <property role="TrG5h" value="mountOptions" />
+            <node concept="17QB3L" id="6B$xkWu367Q" role="1tU5fm" />
+            <node concept="2OqwBi" id="6B$xkWu39Js" role="33vP2m">
+              <node concept="2OqwBi" id="6B$xkWu35q5" role="2Oq$k0">
+                <node concept="2OqwBi" id="6B$xkWudmyU" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6B$xkWu3578" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6B$xkWudkLF" role="2Oq$k0">
+                      <node concept="13iPFW" id="6B$xkWu353k" role="2Oq$k0" />
+                      <node concept="2Rxl7S" id="6B$xkWudlfL" role="2OqNvi" />
+                    </node>
+                    <node concept="2Rf3mk" id="6B$xkWudlxY" role="2OqNvi">
+                      <node concept="1xMEDy" id="6B$xkWudly0" role="1xVPHs">
+                        <node concept="chp4Y" id="6B$xkWudlL9" role="ri$Ld">
+                          <ref role="cht4Q" to="r9td:6A9boVQ01ys" resolve="GenerateBashFragment" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1uHKPH" id="6B$xkWudpYd" role="2OqNvi" />
+                </node>
+                <node concept="2qgKlT" id="6B$xkWudqdt" role="2OqNvi">
+                  <ref role="37wK5l" to="cb06:10rnQzwVu2Y" resolve="dockerOptions" />
+                </node>
+              </node>
+              <node concept="3uJxvA" id="6B$xkWu3aBg" role="2OqNvi">
+                <node concept="Xl_RD" id="6B$xkWu3bB0" role="3uJOhx">
+                  <property role="Xl_RC" value=" " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="VMSWAFaVOw" role="3cqZAp">
           <node concept="2YIFZM" id="VMSWAFaW1$" role="3clFbG">
             <ref role="37wK5l" node="5U_2ytMmDvM" resolve="run" />
             <ref role="1Pybhc" node="7MTH03m4_Rr" resolve="ExecuteDockerCommands" />
             <node concept="BsUDl" id="VMSWAFgqSm" role="37wK5m">
               <ref role="37wK5l" node="VMSWAFgqSj" resolve="getConfig" />
+            </node>
+            <node concept="37vLTw" id="6B$xkWu36$j" role="37wK5m">
+              <ref role="3cqZAo" node="6B$xkWu367V" resolve="mountOptions" />
             </node>
             <node concept="2OqwBi" id="VMSWAFaW7p" role="37wK5m">
               <node concept="13iPFW" id="VMSWAFaW1G" role="2Oq$k0" />
