@@ -75,7 +75,7 @@
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
     <property role="TrG5h" value="centos-java8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1280369713739621602.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile9001344046759077517.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="39YFbxZh5KQ" role="VuOVn">
       <node concept="VtuK3" id="39YFbxZh5KR" role="VuO5T">
@@ -95,7 +95,7 @@
     <node concept="VugRC" id="39YFbxZh5KU" role="VuOVn">
       <node concept="19SGf9" id="39YFbxZh5KV" role="Vugyn">
         <node concept="19SUe$" id="39YFbxZh5KW" role="19SJt6">
-          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget \&#10;&amp;&amp; yum install -y tar \&#10;&amp;&amp; yum install -y which \&#10;&amp;&amp; yum install -y unzip \&#10;&amp;&amp; yum install -y zlib-devel.x86_64 \&#10;&amp;&amp; yum install -y ncurses-devel.x86_64 \&#10;&amp;&amp; yum install -y readline-devel \&#10;&amp;&amp; yum install -y mlocate \&#10;&amp;&amp; yum install -y cmake \&#10;&amp;&amp; yum install -y hdf5-devel" />
+          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget \&#10;&amp;&amp; yum install -y tar \&#10;&amp;&amp; yum install -y which \&#10;&amp;&amp; yum install -y unzip \&#10;&amp;&amp; yum install -y zlib-devel.x86_64 \&#10;&amp;&amp; yum install -y ncurses-devel.x86_64 \&#10;&amp;&amp; yum install -y readline-devel \&#10;&amp;&amp; yum install -y mlocate \&#10;&amp;&amp; yum install -y cmake \&#10;&amp;&amp; yum install -y hdf5-devel \&#10;&amp;&amp; yum install -y autoconf268.noarch" />
         </node>
       </node>
     </node>
@@ -163,7 +163,7 @@
   <node concept="VuPG2" id="3d0Dghcgitr">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="artifact-software-base" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile8679881992177393964.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2773362076372498300.txt" />
     <node concept="VuO64" id="3d0Dghcgqgb" role="VuOVn">
       <node concept="VtuK3" id="3d0Dghcgqgc" role="VuO5T">
         <property role="VuL0s" value="1.0" />
@@ -239,6 +239,9 @@
     <node concept="3blhQM" id="5quK2aeIw0q" role="3blhQR">
       <ref role="3blhQY" node="5quK2aeIw0p" resolve="artifact-software-base_Image" />
     </node>
+    <node concept="3blhQM" id="4rsVl6EekqO" role="3blhQR">
+      <ref role="3blhQY" node="4rsVl6EekqN" resolve="artifact-software-base_Image" />
+    </node>
   </node>
   <node concept="2E_JVc" id="5quK2aeIw0p">
     <property role="2E_JEh" value="8deac5d45b16" />
@@ -254,11 +257,22 @@
   <node concept="2E_JVc" id="4rsVl6Eeicz">
     <property role="2E_JEh" value="f8d522ac1426" />
     <property role="TrG5h" value="centos-java8_Image" />
-    <property role="GSh9r" value="mas2181/centos-java8:1.0" />
+    <property role="GSh9r" value="mas2181/centos-java8:latest" />
     <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
     <node concept="Gyxd7" id="4rsVl6EeidW" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="centos-java8" />
+      <property role="Gyxd1" value="latest" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="4rsVl6EekqN">
+    <property role="2E_JEh" value="59e2421728a2" />
+    <property role="TrG5h" value="artifact-software-base_Image" />
+    <property role="GSh9r" value="mas2181/artifact-software:1.0" />
+    <ref role="2E_BxF" node="3d0Dghcgitr" resolve="artifact-software-base" />
+    <node concept="Gyxd7" id="4rsVl6Eekrc" role="Gyxcj">
+      <property role="Gyxfx" value="mas2181" />
+      <property role="TrG5h" value="artifact-software" />
       <property role="Gyxd1" value="1.0" />
     </node>
   </node>
