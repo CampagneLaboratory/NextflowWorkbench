@@ -9,7 +9,6 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="qloq" ref="r:2b0dc801-d5a8-45ae-bd03-2bdeec084b3b(org.campagnelab.workflow.nyosh.behavior)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="6pk0" ref="r:48f4e449-1a18-435e-ae88-4830aa794dc7(org.campagnelab.nyosh.environment.structure)" implicit="true" />
     <import index="440p" ref="r:a6c7903c-0b83-4bcf-8e49-8f150f2412bf(org.campagnelab.nyosh.interactive.structure)" implicit="true" />
     <import index="3jiv" ref="r:36d353e8-689e-4297-b8ea-7712719668fa(org.campagnelab.workflow.nyosh.structure)" implicit="true" />
   </imports>
@@ -37,7 +36,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -66,9 +65,6 @@
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="5676632058862809931" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="in" index="13QW63" />
-      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
-        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
-      </concept>
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
@@ -197,54 +193,6 @@
                   <ref role="2RRcyH" to="440p:4PxeyvB$uiJ" resolve="ExplicitFileBag" />
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="irqYu7mFP3">
-    <ref role="1M2myG" to="3jiv:5yyd2HFS3xA" resolve="NyoShAwareScript" />
-  </node>
-  <node concept="1M2fIO" id="irqYu7ml9B">
-    <ref role="1M2myG" to="3jiv:irqYu7hsBO" resolve="NyoShEnvVariableRef" />
-    <node concept="1N5Pfh" id="irqYu7mlbc" role="1Mr941">
-      <ref role="1N5Vy1" to="3jiv:irqYu7hsBP" />
-      <node concept="1dDu$B" id="irqYu7mlbi" role="1N6uqs">
-        <ref role="1dDu$A" to="6pk0:5a_m_wWNCiv" resolve="EnvVariableDeclaration" />
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="6z79YplEG5U">
-    <ref role="1M2myG" to="3jiv:6z79YplEcXu" resolve="CreateSpace" />
-    <node concept="EnEH3" id="6z79YplEXo_" role="1MhHOB">
-      <ref role="EomxK" to="3jiv:6z79YplEdcC" resolve="inputVal" />
-      <node concept="1LLf8_" id="6z79YplEXVM" role="1LXaQT">
-        <node concept="3clFbS" id="6z79YplEXVN" role="2VODD2">
-          <node concept="3clFbF" id="6z79YplEXtB" role="3cqZAp">
-            <node concept="2OqwBi" id="6z79YplEXy2" role="3clFbG">
-              <node concept="EsrRn" id="6z79YplEXtA" role="2Oq$k0" />
-              <node concept="2qgKlT" id="6z79YplEXKd" role="2OqNvi">
-                <ref role="37wK5l" to="qloq:6z79YplEqia" resolve="createCommanf" />
-                <node concept="2OqwBi" id="6z79YplEY7l" role="37wK5m">
-                  <node concept="1Wqviy" id="6z79YplEXXN" role="2Oq$k0" />
-                  <node concept="liA8E" id="6z79YplEYOd" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
-                    <node concept="Xl_RD" id="6z79YplEYRd" role="37wK5m">
-                      <property role="Xl_RC" value="\\\\n" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="QB0g5" id="6z79YplEZ5g" role="QCWH9">
-        <node concept="3clFbS" id="6z79YplEZ5h" role="2VODD2">
-          <node concept="3clFbF" id="6z79YplEZcY" role="3cqZAp">
-            <node concept="3clFbT" id="6z79YplEZcX" role="3clFbG">
-              <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>

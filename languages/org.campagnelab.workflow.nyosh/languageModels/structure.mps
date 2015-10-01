@@ -7,17 +7,13 @@
   </languages>
   <imports>
     <import index="dzk5" ref="r:2bfcc546-5c51-4762-9df2-c43920be4458(org.campagnelab.gobyweb.plugins.structure)" />
-    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="935h" ref="r:c68a8ced-fbf7-48e1-b1e0-40266e57501f(org.campagnelab.gobyweb.structure)" implicit="true" />
-    <import index="6pk0" ref="r:48f4e449-1a18-435e-ae88-4830aa794dc7(org.campagnelab.nyosh.environment.structure)" implicit="true" />
     <import index="440p" ref="r:a6c7903c-0b83-4bcf-8e49-8f150f2412bf(org.campagnelab.nyosh.interactive.structure)" implicit="true" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -73,65 +69,6 @@
       <property role="20kJfa" value="ExplicitFileBag" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="440p:4PxeyvB$uiJ" resolve="ExplicitFileBag" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="irqYu7hsBO">
-    <property role="TrG5h" value="NyoShEnvVariableRef" />
-    <property role="34LRSv" value="$" />
-    <property role="R4oN_" value="reference a GobyWeb resource variable declaration" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="irqYu7hsBP" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="variable" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="6pk0:5a_m_wWNCiv" resolve="EnvVariableDeclaration" />
-    </node>
-    <node concept="PrWs8" id="irqYu7m55d" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5yyd2HFS3xA">
-    <property role="TrG5h" value="NyoShAwareScript" />
-    <property role="34LRSv" value="nyosh script" />
-    <property role="R4oN_" value="A script that can request installation of NYoSh/GobyWeb resources and their artifacts" />
-    <ref role="1TJDcQ" to="iowz:70dPcAeBye8" resolve="RichScript" />
-    <node concept="1TJgyj" id="5yyd2HFS3y2" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="requires" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="dzk5:1ORG9zeKa86" resolve="ResourceRef" />
-    </node>
-    <node concept="1TJgyj" id="irqYu7hH$B" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="availableVariables" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="6pk0:5a_m_wWNCiv" resolve="EnvVariableDeclaration" />
-    </node>
-    <node concept="1TJgyj" id="irqYu7ln2W" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="pluginSystemRootDirectory" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="935h:5XBY1KyMxak" resolve="PluginSystemRootDirectory" />
-    </node>
-    <node concept="PrWs8" id="irqYu7mnNv" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6z79YplEcXu">
-    <property role="TrG5h" value="CreateSpace" />
-    <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="createSpace" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6z79YplEcXy" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="6z79YplEdcG" role="1TKVEl">
-      <property role="TrG5h" value="outputValue" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="6z79YplEdcC" role="1TKVEl">
-      <property role="TrG5h" value="inputVal" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
