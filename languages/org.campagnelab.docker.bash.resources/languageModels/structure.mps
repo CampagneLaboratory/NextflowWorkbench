@@ -11,9 +11,9 @@
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
+    <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
+    <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" implicit="true" />
-    <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -32,7 +32,6 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
-        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -72,12 +71,12 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="resourceRange" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="17OfmPzVOdS" resolve="ResourceRange" />
+      <ref role="20lvS9" to="bs99:1msVhua4SB8" resolve="ResourceRange" />
     </node>
     <node concept="1TJgyj" id="17OfmP$aRqG" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="resourceVersion" />
-      <ref role="20lvS9" node="17OfmPzVOE4" resolve="ResourceVersion" />
+      <ref role="20lvS9" to="bs99:1msVhua4SBd" resolve="ResourceVersion" />
     </node>
     <node concept="1TJgyj" id="6ojrriHjIeL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -88,7 +87,7 @@
     <node concept="1TJgyj" id="RXABvRTrS6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="resourceVersionRange" />
-      <ref role="20lvS9" node="RXABvRSfQl" resolve="ResourceVersionRange" />
+      <ref role="20lvS9" to="bs99:1msVhuay9kk" resolve="ResourceVersionRange" />
     </node>
     <node concept="PrWs8" id="17OfmP$iUXB" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -149,42 +148,6 @@
       <ref role="20lvS9" to="bs99:7arfhhdt3J1" resolve="Attribute" />
     </node>
   </node>
-  <node concept="1TIwiD" id="17OfmPzVOdS">
-    <property role="TrG5h" value="ResourceRange" />
-    <property role="R4oN_" value="A resource with the range of versions available in the plugin repo" />
-    <property role="3GE5qa" value="resources" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="17OfmPzZzjH" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="versions" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="17OfmPzVOE4" resolve="ResourceVersion" />
-    </node>
-    <node concept="PrWs8" id="17OfmPzVOdT" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="17OfmPzVOE4">
-    <property role="TrG5h" value="ResourceVersion" />
-    <property role="3GE5qa" value="resources" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="17OfmPzVOE5" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="17OfmPzVQ4z">
-    <property role="3GE5qa" value="resources" />
-    <property role="TrG5h" value="ResourceRangeContainer" />
-    <property role="R4oN_" value="container for resource ranges" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="17OfmPzVQ56" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="ranges" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="17OfmPzVOdS" resolve="ResourceRange" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4DwTgsTNnk_">
     <property role="3GE5qa" value="resources" />
     <property role="TrG5h" value="ScriptResource" />
@@ -218,21 +181,6 @@
     <property role="TrG5h" value="DependencyResource" />
     <property role="R4oN_" value="A resource that another resource depends on" />
     <ref role="1TJDcQ" node="4DwTgsTNnk_" resolve="ScriptResource" />
-  </node>
-  <node concept="1TIwiD" id="RXABvRSfQl">
-    <property role="3GE5qa" value="resources" />
-    <property role="TrG5h" value="ResourceVersionRange" />
-    <property role="34LRSv" value="range" />
-    <property role="R4oN_" value="[custom range]" />
-    <ref role="1TJDcQ" node="17OfmPzVOE4" resolve="ResourceVersion" />
-    <node concept="1TJgyi" id="RXABvRSfVB" role="1TKVEl">
-      <property role="TrG5h" value="atMost" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="RXABvRSfVF" role="1TKVEl">
-      <property role="TrG5h" value="atLeast" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="PlHQZ" id="7SK$kQZvhmu">
     <property role="TrG5h" value="EnvironmentValueValue" />

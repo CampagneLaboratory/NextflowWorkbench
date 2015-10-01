@@ -8,8 +8,9 @@
   <imports>
     <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" />
     <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" />
+    <import index="lcm8" ref="r:19e666fd-ce33-4549-bbc2-aa106ce25584(org.campagnelab.gobyweb.interactive.behavior)" />
+    <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -57,7 +58,6 @@
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -330,36 +330,6 @@
                 </node>
               </node>
               <node concept="34oBXx" id="3A$s7Pqn0qj" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="17OfmPzYKYb">
-    <property role="3GE5qa" value="resources" />
-    <property role="TrG5h" value="RefreshRanges" />
-    <ref role="2ZfgGC" to="iuj9:17OfmPzVQ4z" resolve="ResourceRangeContainer" />
-    <node concept="2S6ZIM" id="17OfmPzYKYc" role="2ZfVej">
-      <node concept="3clFbS" id="17OfmPzYKYd" role="2VODD2">
-        <node concept="3clFbF" id="17OfmPzYLcR" role="3cqZAp">
-          <node concept="Xl_RD" id="17OfmPzYLcQ" role="3clFbG">
-            <property role="Xl_RC" value="Refresh" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="17OfmPzYKYe" role="2ZfgGD">
-      <node concept="3clFbS" id="17OfmPzYKYf" role="2VODD2">
-        <node concept="3clFbF" id="17OfmPzYLv9" role="3cqZAp">
-          <node concept="2OqwBi" id="17OfmPzYLwk" role="3clFbG">
-            <node concept="2Sf5sV" id="17OfmPzYLv8" role="2Oq$k0" />
-            <node concept="2qgKlT" id="17OfmPzYLJb" role="2OqNvi">
-              <ref role="37wK5l" to="6na6:17OfmPzW0au" resolve="refresh" />
-              <node concept="2OqwBi" id="17OfmPzYLM5" role="37wK5m">
-                <node concept="2Sf5sV" id="17OfmPzYLKu" role="2Oq$k0" />
-                <node concept="I4A8Y" id="17OfmPzYM1M" role="2OqNvi" />
-              </node>
             </node>
           </node>
         </node>

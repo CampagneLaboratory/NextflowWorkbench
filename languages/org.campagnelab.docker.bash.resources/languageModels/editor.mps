@@ -11,12 +11,13 @@
     <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="axnf" ref="r:fcce6a5c-ee8c-4323-bf77-2655c9be3bf1(org.campagnelab.docker.bash.editor)" />
+    <import index="dzk5" ref="r:2bfcc546-5c51-4762-9df2-c43920be4458(org.campagnelab.gobyweb.plugins.structure)" />
+    <import index="lcm8" ref="r:19e666fd-ce33-4549-bbc2-aa106ce25584(org.campagnelab.gobyweb.interactive.behavior)" />
+    <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
+    <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" />
+    <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="dzk5" ref="r:2bfcc546-5c51-4762-9df2-c43920be4458(org.campagnelab.gobyweb.plugins.structure)" implicit="true" />
-    <import index="lcm8" ref="r:19e666fd-ce33-4549-bbc2-aa106ce25584(org.campagnelab.gobyweb.interactive.behavior)" implicit="true" />
-    <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -24,7 +25,6 @@
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
-        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="928328222691832421" name="separatorTextQuery" index="2gpyvW" />
@@ -297,7 +297,7 @@
                         </node>
                       </node>
                       <node concept="2DeJnY" id="RXABvRTrDi" role="2OqNvi">
-                        <ref role="1A9B2P" to="iuj9:RXABvRSfQl" resolve="ResourceVersionRange" />
+                        <ref role="1A9B2P" to="bs99:1msVhuay9kk" resolve="ResourceVersionRange" />
                       </node>
                     </node>
                   </node>
@@ -333,14 +333,14 @@
                         </node>
                       </node>
                       <node concept="3Tsc0h" id="4DwTgsUgT_N" role="2OqNvi">
-                        <ref role="3TtcxE" to="iuj9:17OfmPzZzjH" />
+                        <ref role="3TtcxE" to="bs99:1msVhua4SB9" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="3Tqbb2" id="RXABvRTtkg" role="1eyP2E">
-                <ref role="ehGHo" to="iuj9:17OfmPzVOE4" resolve="ResourceVersion" />
+                <ref role="ehGHo" to="bs99:1msVhua4SBd" resolve="ResourceVersion" />
               </node>
             </node>
           </node>
@@ -653,75 +653,6 @@
       <node concept="2iRfu4" id="6A9boVQTovT" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="17OfmPzXYHA">
-    <property role="3GE5qa" value="resources" />
-    <ref role="1XX52x" to="iuj9:17OfmPzVQ4z" resolve="ResourceRangeContainer" />
-    <node concept="3EZMnI" id="17OfmPzXYHL" role="2wV5jI">
-      <node concept="3F0ifn" id="17OfmPzXYHV" role="3EZMnx">
-        <property role="3F0ifm" value="Resources:" />
-      </node>
-      <node concept="3EZMnI" id="17OfmP$3Rf0" role="3EZMnx">
-        <node concept="2iRkQZ" id="17OfmP$3Rf1" role="2iSdaV" />
-        <node concept="3F2HdR" id="17OfmPzXYI4" role="3EZMnx">
-          <ref role="1NtTu8" to="iuj9:17OfmPzVQ56" />
-          <node concept="lj46D" id="17OfmPzXYLC" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="2iRkQZ" id="17OfmPzXYI6" role="2czzBx" />
-          <node concept="pj6Ft" id="17OfmPzXYJP" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="17OfmP$3R50" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="VPxyj" id="17OfmPzXYSM" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-        </node>
-        <node concept="lj46D" id="17OfmP$3Rhc" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="2iRkQZ" id="17OfmP$3R6a" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="17OfmPzZzjP">
-    <property role="3GE5qa" value="resources" />
-    <ref role="1XX52x" to="iuj9:17OfmPzVOdS" resolve="ResourceRange" />
-    <node concept="3EZMnI" id="17OfmPzZzk0" role="2wV5jI">
-      <node concept="3F0A7n" id="17OfmP$0C_i" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3F0ifn" id="17OfmP$0C_B" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
-      </node>
-      <node concept="3F0ifn" id="17OfmP$0CA0" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
-      </node>
-      <node concept="3F2HdR" id="17OfmPzZzke" role="3EZMnx">
-        <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="iuj9:17OfmPzZzjH" />
-        <node concept="2iRfu4" id="17OfmP$2Wdk" role="2czzBx" />
-        <node concept="pj6Ft" id="17OfmPzZzm1" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="17OfmPzZzk3" role="2iSdaV" />
-      <node concept="3F0ifn" id="17OfmP$0CAt" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="17OfmP$0YMG">
-    <property role="3GE5qa" value="resources" />
-    <ref role="1XX52x" to="iuj9:17OfmPzVOE4" resolve="ResourceVersion" />
-    <node concept="3EZMnI" id="17OfmP$0YMR" role="2wV5jI">
-      <node concept="3F0A7n" id="17OfmP$0YN5" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="2iRfu4" id="17OfmP$0YMU" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="4DwTgsTVmVP">
     <property role="3GE5qa" value="resources" />
     <ref role="1XX52x" to="iuj9:4DwTgsTSy1y" resolve="DependencyResource" />
@@ -820,33 +751,6 @@
       <node concept="1hAIg9" id="4DwTgsU3yy6" role="1hA7z_">
         <node concept="3clFbS" id="4DwTgsU3yy7" role="2VODD2" />
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="RXABvRSfR4">
-    <property role="3GE5qa" value="resources" />
-    <ref role="1XX52x" to="iuj9:RXABvRSfQl" resolve="ResourceVersionRange" />
-    <node concept="3EZMnI" id="RXABvRSfRc" role="2wV5jI">
-      <node concept="3F0ifn" id="RXABvRSfVM" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
-      </node>
-      <node concept="3F0ifn" id="RXABvRSfXE" role="3EZMnx">
-        <property role="3F0ifm" value="from" />
-      </node>
-      <node concept="3F0A7n" id="RXABvRSfVY" role="3EZMnx">
-        <property role="1$x2rV" value="version" />
-        <ref role="1NtTu8" to="iuj9:RXABvRSfVF" resolve="atLeast" />
-      </node>
-      <node concept="3F0ifn" id="RXABvRSfWg" role="3EZMnx">
-        <property role="3F0ifm" value="to" />
-      </node>
-      <node concept="3F0A7n" id="RXABvRSfWC" role="3EZMnx">
-        <property role="1$x2rV" value="version" />
-        <ref role="1NtTu8" to="iuj9:RXABvRSfVB" resolve="atMost" />
-      </node>
-      <node concept="3F0ifn" id="RXABvRSfX6" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
-      </node>
-      <node concept="2iRfu4" id="RXABvRSfRf" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="7SK$kQZvjo_">

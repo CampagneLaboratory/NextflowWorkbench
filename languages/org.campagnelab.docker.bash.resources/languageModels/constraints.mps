@@ -8,9 +8,9 @@
   <imports>
     <import index="6pk0" ref="r:48f4e449-1a18-435e-ae88-4830aa794dc7(org.campagnelab.nyosh.environment.structure)" />
     <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" />
+    <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" />
+    <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="6na6" ref="r:275bd400-acdb-421f-85dc-681aa38f985b(org.campagnelab.bash.nyosh.behavior)" implicit="true" />
-    <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -134,7 +134,7 @@
     <node concept="1N5Pfh" id="17OfmP$eBBj" role="1Mr941">
       <ref role="1N5Vy1" to="iuj9:17OfmP$aRqG" />
       <node concept="1dDu$B" id="17OfmP$eBCs" role="1N6uqs">
-        <ref role="1dDu$A" to="iuj9:17OfmPzVOE4" resolve="ResourceVersion" />
+        <ref role="1dDu$A" to="bs99:1msVhua4SBd" resolve="ResourceVersion" />
       </node>
       <node concept="3k9gUc" id="17OfmP$nKsB" role="3kmjI7">
         <node concept="3clFbS" id="17OfmP$nKsC" role="2VODD2">
@@ -339,24 +339,6 @@
             <node concept="1mIQ4w" id="4DwTgsTTiP$" role="2OqNvi">
               <node concept="chp4Y" id="4DwTgsTTiVa" role="cj9EA">
                 <ref role="cht4Q" to="iuj9:18MzsNNQZvZ" resolve="RequestedResource" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="17OfmP$B21h">
-    <property role="3GE5qa" value="resources" />
-    <ref role="1M2myG" to="iuj9:17OfmPzVOdS" resolve="ResourceRange" />
-    <node concept="nKS2y" id="17OfmP$B21l" role="1MLUbF">
-      <node concept="3clFbS" id="17OfmP$B21m" role="2VODD2">
-        <node concept="3clFbF" id="17OfmP$B26j" role="3cqZAp">
-          <node concept="2OqwBi" id="17OfmP$B2cm" role="3clFbG">
-            <node concept="nLn13" id="17OfmP$B26i" role="2Oq$k0" />
-            <node concept="1mIQ4w" id="17OfmP$B2sn" role="2OqNvi">
-              <node concept="chp4Y" id="17OfmP$B2xV" role="cj9EA">
-                <ref role="cht4Q" to="iuj9:17OfmPzVQ4z" resolve="ResourceRangeContainer" />
               </node>
             </node>
           </node>
