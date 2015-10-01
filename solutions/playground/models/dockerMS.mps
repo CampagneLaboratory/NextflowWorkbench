@@ -271,7 +271,7 @@
   </registry>
   <node concept="2EEQw1" id="xP2fmw4TV1">
     <property role="2EEQw2" value="/usr/local/bin//docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=/Users/mas2182/.docker/machine/machines/dev/ca.pem --tlscert=/Users/mas2182/.docker/machine/machines/dev/cert.pem --tlskey=/Users/mas2182/.docker/machine/machines/dev/key.pem -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
   <node concept="3lueso" id="10rnQzwTSvV">
     <property role="TrG5h" value="NYoShScriptEnv" />
@@ -9395,6 +9395,7 @@
           <property role="19SUeA" value="&#10;ls -lrt " />
         </node>
         <node concept="1OktH4" id="1msVhub6gzC" role="19SJt6">
+          <ref role="26mB_n" node="4rsVl6EB_0F" resolve="interactive" />
           <node concept="19OFZp" id="1msVhub6gzF" role="26mB$C">
             <property role="26mB$E" value="" />
             <node concept="31HMC_" id="1msVhub6gzG" role="19OIOa">
@@ -9408,26 +9409,57 @@
         <node concept="19SUe$" id="1msVhub6gzI" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
-        <node concept="1OktH4" id="1msVhub7aCY" role="19SJt6">
+        <node concept="1OktH4" id="18$uMcMURw9" role="19SJt6">
           <ref role="26mB_n" node="4rsVl6EB_0F" resolve="interactive" />
-          <node concept="19OFZp" id="1msVhub7aD1" role="26mB$C">
+          <node concept="19OFZp" id="18$uMcMURwc" role="26mB$C">
             <property role="26mB$E" value="" />
-            <node concept="31HMC_" id="1msVhub7aD2" role="19OIOa">
-              <ref role="31HMCX" node="1msVhub6g$r" resolve="artifact path KALLISTO_INDEX.INDEX" />
+            <node concept="31HMC_" id="18$uMcMURwd" role="19OIOa">
+              <ref role="31HMCX" node="1msVhub6g$c" resolve="artifact path KALLISTO.BINARIES" />
             </node>
           </node>
+          <node concept="26mB$F" id="18$uMcMURwO" role="26mB$C">
+            <property role="26mB$E" value="bin" />
+            <property role="26mB_l" value="true" />
+          </node>
         </node>
-        <node concept="19SUe$" id="1msVhub7aCX" role="19SJt6">
-          <property role="19SUeA" value="/ &#10;" />
-        </node>
-        <node concept="1OktH4" id="1msVhub7a2Z" role="19SJt6">
-          <ref role="26mB_n" node="4rsVl6EB_0F" resolve="interactive" />
-          <node concept="26mB$F" id="1msVhub7aCU" role="26mB$C">
+        <node concept="19SUe$" id="18$uMcMURwV" role="19SJt6" />
+        <node concept="26mB_k" id="18$uMcMURwS" role="19SJt6">
+          <node concept="26mB$F" id="18$uMcMURwU" role="26mB$C">
             <property role="26mB$E" value="" />
             <property role="26mB_l" value="true" />
           </node>
         </node>
-        <node concept="19SUe$" id="1msVhub7a35" role="19SJt6" />
+        <node concept="19SUe$" id="18$uMcMURwW" role="19SJt6">
+          <property role="19SUeA" value="&#10;" />
+        </node>
+        <node concept="26mB_k" id="18$uMcMYCHx" role="19SJt6">
+          <ref role="26mB_n" node="4rsVl6EB_0F" resolve="interactive" />
+          <node concept="26mB$F" id="18$uMcMYCHz" role="26mB$C">
+            <property role="26mB_l" value="true" />
+            <property role="26mB$E" value="" />
+          </node>
+          <node concept="26mB$F" id="18$uMcMYCIb" role="26mB$C">
+            <property role="26mB$E" value="scratchLocal" />
+            <property role="26mB_l" value="true" />
+          </node>
+          <node concept="26mB$F" id="18$uMcMYCIi" role="26mB$C">
+            <property role="26mB$E" value="gobyweb" />
+            <property role="26mB_l" value="true" />
+          </node>
+          <node concept="26mB$F" id="18$uMcMYCIO" role="26mB$C">
+            <property role="26mB$E" value="ARTIFACT_REPOSITORY" />
+            <property role="26mB_l" value="true" />
+          </node>
+          <node concept="26mB$F" id="18$uMcMYCIZ" role="26mB$C">
+            <property role="26mB$E" value="artifacts" />
+            <property role="26mB_l" value="true" />
+          </node>
+          <node concept="26mB$F" id="18$uMcMYCJc" role="26mB$C">
+            <property role="26mB$E" value="KALLISTO_INDEX" />
+            <property role="26mB_l" value="true" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="18$uMcMYCH$" role="19SJt6" />
       </node>
       <node concept="3xUnCN" id="4rsVl6EAH0c" role="NgwMD">
         <property role="3Ui_h1" value="" />
@@ -9830,6 +9862,12 @@
     <node concept="WEvhf" id="1msVhubaqQI" role="WF_SX">
       <ref role="WEvjA" node="1msVhub7BRF" resolve="interactive" />
     </node>
+    <node concept="WEvhf" id="18$uMcMWgLh" role="WF_SX">
+      <ref role="WEvjA" node="18$uMcMUKdf" resolve="interactive" />
+    </node>
+    <node concept="WEvhf" id="18$uMcMYCHp" role="WF_SX">
+      <ref role="WEvjA" node="18$uMcMYCHo" resolve="interactive" />
+    </node>
   </node>
   <node concept="GbKB8" id="4rsVl6EB_0H">
     <property role="TrG5h" value="interactive" />
@@ -9867,6 +9905,20 @@
     <ref role="3zcJb$" node="4rsVl6EB_0G" resolve="image" />
   </node>
   <node concept="GbKB8" id="1msVhub7BRF">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="artifact-software" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="4rsVl6EB_0G" resolve="image" />
+  </node>
+  <node concept="GbKB8" id="18$uMcMUKdf">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="artifact-software" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="4rsVl6EB_0G" resolve="image" />
+  </node>
+  <node concept="GbKB8" id="18$uMcMYCHo">
     <property role="TrG5h" value="interactive" />
     <property role="GbyUj" value="artifact-software" />
     <property role="1vm7qE" value="true" />
