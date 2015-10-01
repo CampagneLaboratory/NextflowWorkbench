@@ -35,6 +35,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
@@ -76,6 +77,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -310,12 +312,18 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="4yLR7SAus7_" role="3uHU7B">
-                <node concept="1Wqviy" id="4yLR7SAurZz" role="2Oq$k0" />
-                <node concept="liA8E" id="4yLR7SAut1Q" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                  <node concept="Xl_RD" id="4yLR7SAut2v" role="37wK5m">
-                    <property role="Xl_RC" value=":" />
+              <node concept="1Wc70l" id="4yLR7SAvUnl" role="3uHU7B">
+                <node concept="3y3z36" id="4yLR7SAvUCY" role="3uHU7B">
+                  <node concept="10Nm6u" id="4yLR7SAvUEP" role="3uHU7w" />
+                  <node concept="1Wqviy" id="4yLR7SAvUpx" role="3uHU7B" />
+                </node>
+                <node concept="2OqwBi" id="4yLR7SAus7_" role="3uHU7w">
+                  <node concept="1Wqviy" id="4yLR7SAurZz" role="2Oq$k0" />
+                  <node concept="liA8E" id="4yLR7SAut1Q" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <node concept="Xl_RD" id="4yLR7SAut2v" role="37wK5m">
+                      <property role="Xl_RC" value=":" />
+                    </node>
                   </node>
                 </node>
               </node>
