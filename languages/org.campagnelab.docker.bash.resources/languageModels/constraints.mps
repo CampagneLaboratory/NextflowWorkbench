@@ -293,40 +293,6 @@
   <node concept="1M2fIO" id="4DwTgsTNtc2">
     <property role="3GE5qa" value="resources" />
     <ref role="1M2myG" to="iuj9:4DwTgsTNnk_" resolve="ScriptResource" />
-    <node concept="1N5Pfh" id="4DwTgsTNtdK" role="1Mr941">
-      <ref role="1N5Vy1" to="iuj9:4DwTgsTNnkD" />
-      <node concept="3k9gUc" id="4DwTgsTNtil" role="3kmjI7">
-        <node concept="3clFbS" id="4DwTgsTNtim" role="2VODD2">
-          <node concept="3clFbF" id="4DwTgsTNtja" role="3cqZAp">
-            <node concept="37vLTI" id="4DwTgsTNtjb" role="3clFbG">
-              <node concept="3khVwk" id="4DwTgsTNtjc" role="37vLTx" />
-              <node concept="2OqwBi" id="4DwTgsTNtjd" role="37vLTJ">
-                <node concept="3kakTB" id="4DwTgsTNtje" role="2Oq$k0" />
-                <node concept="3TrEf2" id="4DwTgsTNui6" role="2OqNvi">
-                  <ref role="3Tt5mk" to="iuj9:4DwTgsTNnkD" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4DwTgsTNtjh" role="3cqZAp">
-            <node concept="2OqwBi" id="4DwTgsTNtji" role="3clFbG">
-              <node concept="3kakTB" id="4DwTgsTNtjj" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4DwTgsTNtjk" role="2OqNvi">
-                <ref role="37wK5l" to="6na6:4DwTgsTNzLW" resolve="reloadArtifacts" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4DwTgsTNtjl" role="3cqZAp">
-            <node concept="2OqwBi" id="4DwTgsTNtjm" role="3clFbG">
-              <node concept="3kakTB" id="4DwTgsTNtjn" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4DwTgsTNz$P" role="2OqNvi">
-                <ref role="37wK5l" to="6na6:4DwTgsTNnz4" resolve="resolveDependencies" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="4DwTgsTTiqk">
     <property role="3GE5qa" value="resources" />

@@ -170,9 +170,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7SK$kQZxXhk" resolve="EnvironmentValue" />
     </node>
-    <node concept="1TJgyj" id="4DwTgsTNnkD" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="config" />
+    <node concept="1TJgyj" id="18$uMcMYVjc" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sourceConfig" />
       <ref role="20lvS9" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
     </node>
   </node>
