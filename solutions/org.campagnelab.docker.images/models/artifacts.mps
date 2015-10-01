@@ -75,7 +75,7 @@
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
     <property role="TrG5h" value="centos-java8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile9001344046759077517.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile7923450247562266359.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="39YFbxZh5KQ" role="VuOVn">
       <node concept="VtuK3" id="39YFbxZh5KR" role="VuO5T">
@@ -156,17 +156,14 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="4rsVl6Eeic$" role="3blhQR">
-      <ref role="3blhQY" node="4rsVl6Eeicz" resolve="centos-java8_Image" />
-    </node>
-    <node concept="3blhQM" id="4rsVl6EjPZ5" role="3blhQR">
-      <ref role="3blhQY" node="4rsVl6EjPZ4" resolve="centos-java8_Image" />
+    <node concept="3blhQM" id="4rsVl6EAFzC" role="3blhQR">
+      <ref role="3blhQY" node="4rsVl6EAFzB" resolve="centos-java8_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="3d0Dghcgitr">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="artifact-software-base" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2773362076372498300.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile3458144849798605231.txt" />
     <node concept="VuO64" id="3d0Dghcgqgb" role="VuOVn">
       <node concept="VtuK3" id="3d0Dghcgqgc" role="VuO5T">
         <property role="VuL0s" value="1.0" />
@@ -239,50 +236,31 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="5quK2aeIw0q" role="3blhQR">
-      <ref role="3blhQY" node="5quK2aeIw0p" resolve="artifact-software-base_Image" />
-    </node>
-    <node concept="3blhQM" id="4rsVl6EekqO" role="3blhQR">
-      <ref role="3blhQY" node="4rsVl6EekqN" resolve="artifact-software-base_Image" />
+    <node concept="3blhQM" id="4rsVl6EAFBC" role="3blhQR">
+      <ref role="3blhQY" node="4rsVl6EAFBB" resolve="artifact-software-base_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="5quK2aeIw0p">
-    <property role="2E_JEh" value="8deac5d45b16" />
-    <property role="TrG5h" value="artifact-software-base_Image" />
-    <property role="GSh9r" value="mas2181/artifact-software:1.0" />
-    <ref role="2E_BxF" node="3d0Dghcgitr" resolve="artifact-software-base" />
-    <node concept="Gyxd7" id="5quK2aeIw1j" role="Gyxcj">
-      <property role="Gyxfx" value="mas2181" />
-      <property role="TrG5h" value="artifact-software" />
-      <property role="Gyxd1" value="1.0" />
-    </node>
-  </node>
-  <node concept="2E_JVc" id="4rsVl6Eeicz">
-    <property role="2E_JEh" value="f8d522ac1426" />
+  <node concept="2E_JVc" id="4rsVl6EAFzB">
+    <property role="2E_JEh" value="a1f230440c17" />
     <property role="TrG5h" value="centos-java8_Image" />
     <property role="GSh9r" value="mas2181/centos-java8:latest" />
     <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
-    <node concept="Gyxd7" id="4rsVl6EeidW" role="Gyxcj">
+    <node concept="Gyxd7" id="4rsVl6EAF$C" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="centos-java8" />
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="4rsVl6EekqN">
-    <property role="2E_JEh" value="59e2421728a2" />
+  <node concept="2E_JVc" id="4rsVl6EAFBB">
+    <property role="2E_JEh" value="64d91aa45e98" />
     <property role="TrG5h" value="artifact-software-base_Image" />
-    <property role="GSh9r" value="mas2181/artifact-software:1.0" />
+    <property role="GSh9r" value="mas2181/artifact-software:latest" />
     <ref role="2E_BxF" node="3d0Dghcgitr" resolve="artifact-software-base" />
-    <node concept="Gyxd7" id="4rsVl6Eekrc" role="Gyxcj">
+    <node concept="Gyxd7" id="4rsVl6EAFBE" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="artifact-software" />
-      <property role="Gyxd1" value="1.0" />
+      <property role="Gyxd1" value="latest" />
     </node>
-  </node>
-  <node concept="2E_JVc" id="4rsVl6EjPZ4">
-    <property role="2E_JEh" value="a1f230440c17" />
-    <property role="TrG5h" value="centos-java8_Image" />
-    <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
   </node>
 </model>
 
