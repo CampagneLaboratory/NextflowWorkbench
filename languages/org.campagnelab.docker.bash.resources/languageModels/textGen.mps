@@ -156,7 +156,18 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -195,6 +206,29 @@
     <ref role="WuzLi" to="iuj9:5yyd2HFS3xA" resolve="NYoShAwareScript" />
     <node concept="11bSqf" id="6A9boVQ65Pf" role="11c4hB">
       <node concept="3clFbS" id="6A9boVQ65Pg" role="2VODD2">
+        <node concept="3clFbJ" id="4yLR7SAEv1v" role="3cqZAp">
+          <node concept="3clFbS" id="4yLR7SAEv1x" role="3clFbx">
+            <node concept="lc7rE" id="4yLR7SAEvYk" role="3cqZAp">
+              <node concept="la8eA" id="4yLR7SAEvY$" role="lcghm">
+                <property role="lacIc" value="'''" />
+              </node>
+              <node concept="l8MVK" id="29U0K5dcklI" role="lcghm" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4yLR7SAEw0E" role="3clFbw">
+            <node concept="2OqwBi" id="4yLR7SAEvbg" role="2Oq$k0">
+              <node concept="117lpO" id="4yLR7SAEv5$" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4yLR7SAEvVR" role="2OqNvi">
+                <node concept="1xMEDy" id="4yLR7SAEvVT" role="1xVPHs">
+                  <node concept="chp4Y" id="4yLR7SAEvWV" role="ri$Ld">
+                    <ref role="cht4Q" to="iowz:6tX5nBTatyL" resolve="Process" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="29U0K5djU2V" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="lc7rE" id="6A9boVQ50cu" role="3cqZAp">
           <node concept="la8eA" id="6A9boVQ50e9" role="lcghm">
             <property role="lacIc" value="source $HOME/.bashrc" />
@@ -236,6 +270,33 @@
             </node>
           </node>
         </node>
+        <node concept="lc7rE" id="4yLR7SAHZZN" role="3cqZAp">
+          <node concept="l8MVK" id="4yLR7SAI08O" role="lcghm" />
+        </node>
+        <node concept="3clFbJ" id="4yLR7SAEwtZ" role="3cqZAp">
+          <node concept="3clFbS" id="4yLR7SAEwu0" role="3clFbx">
+            <node concept="lc7rE" id="4yLR7SAEwu1" role="3cqZAp">
+              <node concept="la8eA" id="4yLR7SAEwu2" role="lcghm">
+                <property role="lacIc" value="'''" />
+              </node>
+              <node concept="l8MVK" id="29U0K5dckm9" role="lcghm" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4yLR7SAEwu3" role="3clFbw">
+            <node concept="2OqwBi" id="4yLR7SAEwu4" role="2Oq$k0">
+              <node concept="117lpO" id="4yLR7SAEwu5" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4yLR7SAEwu6" role="2OqNvi">
+                <node concept="1xMEDy" id="4yLR7SAEwu7" role="1xVPHs">
+                  <node concept="chp4Y" id="4yLR7SAEwu8" role="ri$Ld">
+                    <ref role="cht4Q" to="iowz:6tX5nBTatyL" resolve="Process" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="29U0K5djUeJ" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4yLR7SAEwrC" role="3cqZAp" />
       </node>
     </node>
   </node>

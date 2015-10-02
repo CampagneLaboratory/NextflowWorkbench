@@ -45,6 +45,7 @@
     <usedLanguage>d8f591ec-4d86-4af2-9f92-a9e93c803ffa(jetbrains.mps.lang.scopes)</usedLanguage>
     <usedLanguage>a21a7294-c126-4f63-8335-8fecd8c28c7e(org.campagnelab.NYoSh)</usedLanguage>
     <usedLanguage>25281c03-4a7c-4b57-9221-24a10fc36ef5(org.campagnelab.docker)</usedLanguage>
+    <usedLanguage>f9b7dda6-7ab5-4936-ad1b-2d45c57833dc(org.campagnelab.workflow.configuration)</usedLanguage>
   </usedLanguages>
   <languageVersions>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
@@ -79,6 +80,7 @@
     <language id="901f5cf3-dc77-4c1e-bc5a-6382baee28b4" fqName="org.campagnelab.textoutput" version="0" />
     <language id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" fqName="org.campagnelab.ui" version="0" />
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="6" />
+    <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" fqName="org.campagnelab.workflow.configuration" version="0" />
     <language id="5cf93bc1-d0da-4893-b739-63b17fe296b1" fqName="org.campagnelab.workflow.nyosh" version="0" />
   </languageVersions>
 </solution>
