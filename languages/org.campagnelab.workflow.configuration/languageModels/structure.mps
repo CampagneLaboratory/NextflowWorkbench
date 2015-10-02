@@ -397,6 +397,8 @@
   </node>
   <node concept="1TIwiD" id="1nj$XVfY5RF">
     <property role="TrG5h" value="ContainerOption" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1nj$XVfY62i">

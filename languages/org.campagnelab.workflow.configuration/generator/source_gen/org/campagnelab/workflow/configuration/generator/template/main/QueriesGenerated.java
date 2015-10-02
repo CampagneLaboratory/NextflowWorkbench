@@ -7,11 +7,13 @@ import jetbrains.mps.generator.template.BaseMappingRuleContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.generator.template.PropertyMacroContext;
+import org.apache.commons.io.FilenameUtils;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.generator.template.IfMacroContext;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 
@@ -27,6 +29,9 @@ public class QueriesGenerated {
   public static boolean baseMappingRule_Condition_6352769549772121423(final BaseMappingRuleContext _context) {
     return (SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")) != null);
   }
+  public static Object propertyMacro_GetPropertyValue_6944046859725147657(final PropertyMacroContext _context) {
+    return String.format("${env.PATH}:/%s", FilenameUtils.getPath(SPropertyOperations.getString(ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getNode()), MetaAdapterFactory.getConcept(0x25281c034a7c4b57L, 0x922124a10fc36ef5L, 0x7cb9b400d612dc01L, "org.campagnelab.docker.structure.Config"))).first(), MetaAdapterFactory.getProperty(0x25281c034a7c4b57L, 0x922124a10fc36ef5L, 0x7cb9b400d612dc01L, 0x7cb9b400d612dc02L, "pathToDocker"))));
+  }
   public static Object propertyMacro_GetPropertyValue_1387986661790793473(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e33L, 0x5c331306bed94e37L, "jobArea")), MetaAdapterFactory.getProperty(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e3aL, 0x5c331306bed94e3bL, "value")) + "/" + System.currentTimeMillis();
   }
@@ -38,6 +43,9 @@ public class QueriesGenerated {
   }
   public static Object propertyMacro_GetPropertyValue_4347565441058826089(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e33L, 0x5c331306bed94e38L, "keyfile")), MetaAdapterFactory.getProperty(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e3aL, 0x5c331306bed94e3bL, "value"));
+  }
+  public static boolean ifMacro_Condition_6944046859725146849(final IfMacroContext _context) {
+    return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x15d393decff85ddcL, "containerOptions")), MetaAdapterFactory.getConcept(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x15d393decff86092L, "org.campagnelab.workflow.configuration.structure.WithDocker"))).isNotEmpty();
   }
   public static boolean ifMacro_Condition_1572763280063425857(final IfMacroContext _context) {
     return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x15d393decff85ddcL, "containerOptions")), MetaAdapterFactory.getConcept(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x15d393decff86092L, "org.campagnelab.workflow.configuration.structure.WithDocker"))).isNotEmpty();

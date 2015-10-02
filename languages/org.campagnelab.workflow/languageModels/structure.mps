@@ -366,6 +366,8 @@
     <property role="TrG5h" value="RichScript" />
     <property role="R4oN_" value="a script using the richtext plugin" />
     <property role="34LRSv" value="script" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
     <node concept="1TJgyj" id="70dPcAeBC7L" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

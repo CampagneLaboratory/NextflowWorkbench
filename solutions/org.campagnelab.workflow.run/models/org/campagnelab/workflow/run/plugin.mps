@@ -55,7 +55,8 @@
     <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
     <import index="nhkf" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project.facets(MPS.Core/jetbrains.mps.project.facets@java_stub)" />
     <import index="5wms" ref="r:1862093e-489f-4e75-a318-b6a3a267d39c(command)" />
-    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" implicit="true" />
+    <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
+    <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="oj8w" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing.text(JDK/javax.swing.text@java_stub)" implicit="true" />
     <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" implicit="true" />
   </imports>
@@ -459,6 +460,12 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -496,6 +503,7 @@
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
+      <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
@@ -2298,6 +2306,62 @@
                           <node concept="2XshWL" id="1KUoCipvy92" role="2OqNvi">
                             <ref role="2WH_rO" to="awpe:7byHRlLC1PV" resolve="getNode" />
                           </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="29U0K5drzrc" role="3cqZAp">
+                    <node concept="3SKdUq" id="29U0K5drzGe" role="3SKWNk">
+                      <property role="3SKdUp" value="docker options should be the same across the processes, so we get the first set of options:" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs8" id="29U0K5du91j" role="3cqZAp">
+                    <node concept="3cpWsn" id="29U0K5du91k" role="3cpWs9">
+                      <property role="TrG5h" value="processWithContainer" />
+                      <node concept="3Tqbb2" id="29U0K5du91c" role="1tU5fm">
+                        <ref role="ehGHo" to="iowz:6tX5nBTatyL" resolve="Process" />
+                      </node>
+                      <node concept="2OqwBi" id="29U0K5dvw0Z" role="33vP2m">
+                        <node concept="2OqwBi" id="29U0K5du91l" role="2Oq$k0">
+                          <node concept="2OqwBi" id="29U0K5du91m" role="2Oq$k0">
+                            <node concept="37vLTw" id="29U0K5duaik" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1KUoCipvy8V" resolve="node" />
+                            </node>
+                            <node concept="3Tsc0h" id="29U0K5du91o" role="2OqNvi">
+                              <ref role="3TtcxE" to="iowz:5D7AjvYaj9H" />
+                            </node>
+                          </node>
+                          <node concept="1z4cxt" id="29U0K5du91p" role="2OqNvi">
+                            <node concept="1bVj0M" id="29U0K5du91q" role="23t8la">
+                              <node concept="3clFbS" id="29U0K5du91r" role="1bW5cS">
+                                <node concept="3clFbF" id="29U0K5du91s" role="3cqZAp">
+                                  <node concept="3y3z36" id="29U0K5du91t" role="3clFbG">
+                                    <node concept="10Nm6u" id="29U0K5du91u" role="3uHU7w" />
+                                    <node concept="2OqwBi" id="29U0K5du91v" role="3uHU7B">
+                                      <node concept="2OqwBi" id="29U0K5du91w" role="2Oq$k0">
+                                        <node concept="37vLTw" id="29U0K5du91x" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="29U0K5du91$" resolve="it" />
+                                        </node>
+                                        <node concept="3TrEf2" id="29U0K5du91y" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
+                                        </node>
+                                      </node>
+                                      <node concept="3TrEf2" id="29U0K5du91z" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="iowz:irqYu7yXR0" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="Rh6nW" id="29U0K5du91$" role="1bW2Oz">
+                                <property role="TrG5h" value="it" />
+                                <node concept="2jxLKc" id="29U0K5du91_" role="1tU5fm" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="29U0K5dvB9b" role="2OqNvi">
+                          <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
                         </node>
                       </node>
                     </node>

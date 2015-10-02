@@ -17,6 +17,7 @@
       <dependencies>
         <dependency reexport="false">f9b7dda6-7ab5-4936-ad1b-2d45c57833dc(org.campagnelab.workflow.configuration)</dependency>
         <dependency reexport="false">d4767029-894b-41e1-b76e-850baa598e5b(org.campagnelab.util.files)</dependency>
+        <dependency reexport="false">25281c03-4a7c-4b57-9221-24a10fc36ef5(org.campagnelab.docker)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
@@ -52,6 +53,9 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="true">d4767029-894b-41e1-b76e-850baa598e5b(org.campagnelab.util.files)</dependency>
+    <dependency reexport="false">c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)</dependency>
+    <dependency reexport="false">25281c03-4a7c-4b57-9221-24a10fc36ef5(org.campagnelab.docker)</dependency>
+    <dependency reexport="false">f55d6853-b373-41dd-bc8e-331fd6e2c764(org.campagnelab.bash.nyosh)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)</usedLanguage>
