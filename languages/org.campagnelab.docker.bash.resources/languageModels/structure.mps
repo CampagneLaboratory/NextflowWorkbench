@@ -104,6 +104,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="18MzsNNQZvZ" resolve="RequestedResource" />
     </node>
+    <node concept="1TJgyj" id="18$uMcN8inS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="resourceContainer" />
+      <ref role="20lvS9" node="18$uMcN8ioU" resolve="ResourceConfigContainer" />
+    </node>
     <node concept="PrWs8" id="irqYu7mnNv" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
@@ -170,8 +175,8 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7SK$kQZxXhk" resolve="EnvironmentValue" />
     </node>
-    <node concept="1TJgyj" id="18$uMcMYVjc" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+    <node concept="1TJgyj" id="18$uMcN8jbR" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="sourceConfig" />
       <ref role="20lvS9" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
     </node>
@@ -350,6 +355,17 @@
     <ref role="1TJDcQ" to="r9td:2h_fDmyfOv1" resolve="DockerPath" />
     <node concept="PrWs8" id="6QVw52gz1Zw" role="PzmwI">
       <ref role="PrY4T" to="6jv6:6QVw52gwj52" resolve="IHaveRefToDockerContainer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="18$uMcN8ioU">
+    <property role="TrG5h" value="ResourceConfigContainer" />
+    <property role="R4oN_" value="hold the resource configs used in a script." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="18$uMcN8ioV" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="configs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
     </node>
   </node>
 </model>
