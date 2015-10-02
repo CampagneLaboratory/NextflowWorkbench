@@ -468,6 +468,7 @@
   </node>
   <node concept="18kY7G" id="6B$xkWtXq2A">
     <property role="TrG5h" value="check_DockerArtifactPath" />
+    <property role="3GE5qa" value="docker" />
     <node concept="3clFbS" id="6B$xkWtXq2B" role="18ibNy">
       <node concept="3SKdUt" id="6QVw52gAbXP" role="3cqZAp">
         <node concept="3SKWN0" id="6QVw52gAbXV" role="3SKWNk">

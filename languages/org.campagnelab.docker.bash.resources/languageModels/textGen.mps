@@ -890,6 +890,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="1PgIynsx_TL">
+    <property role="3GE5qa" value="docker" />
     <ref role="WuzLi" to="iuj9:6B$xkWtHlSb" resolve="DockerArtifactPath" />
     <node concept="11bSqf" id="1PgIynsx_TM" role="11c4hB">
       <node concept="3clFbS" id="1PgIynsx_TN" role="2VODD2">
@@ -907,6 +908,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="1PgIynsxWwQ">
+    <property role="3GE5qa" value="docker" />
     <ref role="WuzLi" to="iuj9:1Fq$Xhj22Kd" resolve="NyoshPathPart" />
     <node concept="11bSqf" id="1PgIynsxWwR" role="11c4hB">
       <node concept="3clFbS" id="1PgIynsxWwS" role="2VODD2">

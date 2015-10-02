@@ -15,6 +15,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -279,11 +280,21 @@
     <node concept="nKS2y" id="6A9boVQyWGg" role="1MLUbF">
       <node concept="3clFbS" id="6A9boVQyWGh" role="2VODD2">
         <node concept="3clFbF" id="6A9boVQyWNC" role="3cqZAp">
-          <node concept="2OqwBi" id="6A9boVQyWTI" role="3clFbG">
-            <node concept="nLn13" id="6A9boVQyWNB" role="2Oq$k0" />
-            <node concept="1mIQ4w" id="6A9boVQyXmJ" role="2OqNvi">
-              <node concept="chp4Y" id="6A9boVQyXsl" role="cj9EA">
-                <ref role="cht4Q" to="iuj9:5yyd2HFS3xA" resolve="NYoShAwareScript" />
+          <node concept="22lmx$" id="1ihAOqnPBKm" role="3clFbG">
+            <node concept="2OqwBi" id="1ihAOqnPBVN" role="3uHU7w">
+              <node concept="nLn13" id="1ihAOqnPBR2" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="1ihAOqnPCro" role="2OqNvi">
+                <node concept="chp4Y" id="1ihAOqnPCya" role="cj9EA">
+                  <ref role="cht4Q" to="iuj9:1ihAOqnKa_C" resolve="InstallGobyWebArtifacts" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6A9boVQyWTI" role="3uHU7B">
+              <node concept="nLn13" id="6A9boVQyWNB" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="6A9boVQyXmJ" role="2OqNvi">
+                <node concept="chp4Y" id="6A9boVQyXsl" role="cj9EA">
+                  <ref role="cht4Q" to="iuj9:5yyd2HFS3xA" resolve="NYoShAwareScript" />
+                </node>
               </node>
             </node>
           </node>
@@ -469,6 +480,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="6B$xkWtMuEq">
+    <property role="3GE5qa" value="docker" />
     <ref role="1M2myG" to="iuj9:1Fq$Xhj22Kd" resolve="NyoshPathPart" />
     <node concept="Um2eU" id="6B$xkWtMuGE" role="1kkKnR">
       <node concept="3clFbS" id="6B$xkWtMuGF" role="2VODD2">

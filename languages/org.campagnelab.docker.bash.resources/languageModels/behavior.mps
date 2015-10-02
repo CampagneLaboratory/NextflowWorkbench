@@ -5084,7 +5084,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1Fq$Xhj2f3b">
-    <property role="3GE5qa" value="paths" />
+    <property role="3GE5qa" value="docker" />
     <ref role="13h7C2" to="iuj9:1Fq$Xhj22Kd" resolve="NyoshPathPart" />
     <node concept="13hLZK" id="1Fq$Xhj2f3c" role="13h7CW">
       <node concept="3clFbS" id="1Fq$Xhj2f3d" role="2VODD2">
@@ -5275,6 +5275,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6B$xkWtHlSc">
+    <property role="3GE5qa" value="docker" />
     <ref role="13h7C2" to="iuj9:6B$xkWtHlSb" resolve="DockerArtifactPath" />
     <node concept="13hLZK" id="6B$xkWtHlSd" role="13h7CW">
       <node concept="3clFbS" id="6B$xkWtHlSe" role="2VODD2">
@@ -5532,6 +5533,13 @@
     </node>
     <node concept="13hLZK" id="4rsVl6EkmnH" role="13h7CW">
       <node concept="3clFbS" id="4rsVl6EkmnI" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1ihAOqnNq4i">
+    <property role="3GE5qa" value="docker" />
+    <ref role="13h7C2" to="iuj9:1ihAOqnKa_C" resolve="InstallGobyWebArtifacts" />
+    <node concept="13hLZK" id="1ihAOqnNq4j" role="13h7CW">
+      <node concept="3clFbS" id="1ihAOqnNq4k" role="2VODD2" />
     </node>
   </node>
 </model>
