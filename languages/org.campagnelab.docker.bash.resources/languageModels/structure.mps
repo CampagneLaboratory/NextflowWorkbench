@@ -78,6 +78,11 @@
       <property role="20kJfa" value="resourceVersion" />
       <ref role="20lvS9" to="bs99:1msVhua4SBd" resolve="ResourceVersion" />
     </node>
+    <node concept="1TJgyj" id="18$uMcNi2XR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rangeCopy" />
+      <ref role="20lvS9" to="bs99:1msVhua4SB8" resolve="ResourceRange" />
+    </node>
     <node concept="1TJgyj" id="6ojrriHjIeL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="dependencies" />
