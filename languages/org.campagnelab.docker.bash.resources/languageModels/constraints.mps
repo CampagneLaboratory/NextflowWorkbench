@@ -272,6 +272,9 @@
           </node>
         </node>
       </node>
+      <node concept="1dDu$B" id="NHi1GaJnmA" role="1N6uqs">
+        <ref role="1dDu$A" to="bs99:1msVhua4SB8" resolve="ResourceRange" />
+      </node>
     </node>
     <node concept="nKS2y" id="6A9boVQyWGg" role="1MLUbF">
       <node concept="3clFbS" id="6A9boVQyWGh" role="2VODD2">
