@@ -209,6 +209,9 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
+      <concept id="1154546920561" name="jetbrains.mps.lang.smodel.structure.OperationParm_ConceptList" flags="ng" index="3gmYPX">
+        <child id="1154546920563" name="concept" index="3gmYPZ" />
+      </concept>
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
       </concept>
@@ -368,9 +371,22 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6xlRqabNfpG" role="3cqZAp">
-          <node concept="3clFbT" id="6xlRqabNfpF" role="3clFbG">
-            <property role="3clFbU" value="true" />
+        <node concept="3cpWs6" id="Pnf3Vu0Q_r" role="3cqZAp">
+          <node concept="2OqwBi" id="Pnf3Vu0QXZ" role="3cqZAk">
+            <node concept="2OqwBi" id="Pnf3Vu0QY0" role="2Oq$k0">
+              <node concept="nLn13" id="Pnf3Vu0QY1" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="Pnf3Vu0QY2" role="2OqNvi">
+                <node concept="3gmYPX" id="Pnf3Vu0QY3" role="1xVPHs">
+                  <node concept="3gn64h" id="Pnf3Vu0QY4" role="3gmYPZ">
+                    <ref role="3gnhBz" to="iowz:6tX5nBTatyL" resolve="Process" />
+                  </node>
+                  <node concept="3gn64h" id="Pnf3Vu0QY5" role="3gmYPZ">
+                    <ref role="3gnhBz" to="iowz:5D7AjvYabas" resolve="Workflow" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="Pnf3Vu0QY6" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -968,6 +984,31 @@
     </node>
     <node concept="nKS2y" id="QcMhj47SCl" role="1MLUbF">
       <node concept="3clFbS" id="QcMhj47SCm" role="2VODD2">
+        <node concept="3clFbJ" id="Pnf3Vu10me" role="3cqZAp">
+          <node concept="3clFbS" id="Pnf3Vu10mg" role="3clFbx">
+            <node concept="3cpWs6" id="Pnf3Vu11LW" role="3cqZAp">
+              <node concept="3clFbT" id="Pnf3Vu11V2" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="Pnf3Vu1048" role="3clFbw">
+            <node concept="2OqwBi" id="Pnf3Vu1049" role="2Oq$k0">
+              <node concept="nLn13" id="Pnf3Vu104a" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="Pnf3Vu104b" role="2OqNvi">
+                <node concept="3gmYPX" id="Pnf3Vu104c" role="1xVPHs">
+                  <node concept="3gn64h" id="Pnf3Vu104d" role="3gmYPZ">
+                    <ref role="3gnhBz" to="iowz:6tX5nBTatyL" resolve="Process" />
+                  </node>
+                  <node concept="3gn64h" id="Pnf3Vu104e" role="3gmYPZ">
+                    <ref role="3gnhBz" to="iowz:5D7AjvYabas" resolve="Workflow" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="Pnf3Vu11_4" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="34ab3g" id="6xlRqabMLk4" role="3cqZAp">
           <property role="35gtTG" value="info" />
           <node concept="3cpWs3" id="6xlRqabMMBX" role="34bqiv">
