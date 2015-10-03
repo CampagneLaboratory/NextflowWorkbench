@@ -6165,6 +6165,58 @@
       </node>
       <node concept="17QB3L" id="1m401fzSXY$" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="6zGYz0lS9Hf" role="13h7CS">
+      <property role="TrG5h" value="pathToDockerExecs" />
+      <node concept="3Tm1VV" id="6zGYz0lS9Hg" role="1B3o_S" />
+      <node concept="3clFbS" id="6zGYz0lS9Hh" role="3clF47">
+        <node concept="3clFbF" id="6zGYz0lSeEi" role="3cqZAp">
+          <node concept="3cpWs3" id="6zGYz0lSfpE" role="3clFbG">
+            <node concept="2YIFZM" id="6zGYz0lSful" role="3uHU7w">
+              <ref role="37wK5l" to="ak0d:~FilenameUtils.getPath(java.lang.String):java.lang.String" resolve="getPath" />
+              <ref role="1Pybhc" to="ak0d:~FilenameUtils" resolve="FilenameUtils" />
+              <node concept="2OqwBi" id="6zGYz0lSfAI" role="37wK5m">
+                <node concept="13iPFW" id="6zGYz0lSfy3" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6zGYz0lSfTt" role="2OqNvi">
+                  <ref role="3TsBF5" to="6jv6:7MTH03m4HK2" resolve="pathToDocker" />
+                </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="6zGYz0lSeEu" role="3uHU7B">
+              <ref role="37wK5l" to="ak0d:~FilenameUtils.getPrefix(java.lang.String):java.lang.String" resolve="getPrefix" />
+              <ref role="1Pybhc" to="ak0d:~FilenameUtils" resolve="FilenameUtils" />
+              <node concept="2OqwBi" id="6zGYz0lSeIO" role="37wK5m">
+                <node concept="13iPFW" id="6zGYz0lSeF5" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6zGYz0lSeR4" role="2OqNvi">
+                  <ref role="3TsBF5" to="6jv6:7MTH03m4HK2" resolve="pathToDocker" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="Pnf3VtWYM2" role="3cqZAp">
+          <node concept="3SKWN0" id="Pnf3VtWYM3" role="3SKWNk">
+            <node concept="3clFbF" id="Pnf3VtVeya" role="3SKWNf">
+              <node concept="3cpWs3" id="Pnf3VtVeyb" role="3clFbG">
+                <node concept="2YIFZM" id="Pnf3VtVeyc" role="3uHU7w">
+                  <ref role="37wK5l" to="ak0d:~FilenameUtils.getPath(java.lang.String):java.lang.String" resolve="getPath" />
+                  <ref role="1Pybhc" to="ak0d:~FilenameUtils" resolve="FilenameUtils" />
+                  <node concept="2OqwBi" id="Pnf3VtVeyd" role="37wK5m">
+                    <node concept="13iPFW" id="Pnf3VtVeye" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="Pnf3VtVeyf" role="2OqNvi">
+                      <ref role="3TsBF5" to="6jv6:7MTH03m4HK2" resolve="pathToDocker" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="Pnf3VtVeIO" role="3uHU7B">
+                  <property role="Xl_RC" value="/" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6zGYz0lSeBR" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="7MTH03m5uNM" role="13h7CW">
       <node concept="3clFbS" id="7MTH03m5uNN" role="2VODD2" />
     </node>

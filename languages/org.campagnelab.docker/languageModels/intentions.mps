@@ -9,6 +9,9 @@
     <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" />
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -18,12 +21,35 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
+        <child id="1076505808688" name="condition" index="2$JKZa" />
+      </concept>
+      <concept id="1188220165133" name="jetbrains.mps.baseLanguage.structure.ArrayLiteral" flags="nn" index="2BsdOp">
+        <child id="1188220173759" name="item" index="2BsfMF" />
+      </concept>
+      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
+        <child id="1153952416686" name="body" index="2GV8ay" />
+        <child id="1153952429843" name="finallyBody" index="2GVbov" />
+        <child id="1164903700860" name="catchClause" index="TEXxN" />
+      </concept>
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -31,35 +57,68 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -79,6 +138,12 @@
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
         <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -441,6 +506,348 @@
               <node concept="37vLTw" id="6QVw52gvcYx" role="1P9ThW">
                 <ref role="3cqZAo" node="6QVw52gv9vq" resolve="container" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6zGYz0lS38R">
+    <property role="TrG5h" value="ResetConfigurationOptions" />
+    <ref role="2ZfgGC" to="6jv6:7MTH03m4HK1" resolve="Config" />
+    <node concept="2S6ZIM" id="6zGYz0lS38S" role="2ZfVej">
+      <node concept="3clFbS" id="6zGYz0lS38T" role="2VODD2">
+        <node concept="3clFbF" id="6zGYz0lS49I" role="3cqZAp">
+          <node concept="Xl_RD" id="6zGYz0lS49H" role="3clFbG">
+            <property role="Xl_RC" value="Reset Configuration" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6zGYz0lS38U" role="2ZfgGD">
+      <node concept="3clFbS" id="6zGYz0lS38V" role="2VODD2">
+        <node concept="3cpWs8" id="6zGYz0lSjN7" role="3cqZAp">
+          <node concept="3cpWsn" id="6zGYz0lSjN8" role="3cpWs9">
+            <property role="TrG5h" value="b" />
+            <node concept="3uibUv" id="6zGYz0lSjN9" role="1tU5fm">
+              <ref role="3uigEE" to="fxg7:~BufferedReader" resolve="BufferedReader" />
+            </node>
+            <node concept="10Nm6u" id="6zGYz0lSjTM" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="2GUZhq" id="6zGYz0lSj6q" role="3cqZAp">
+          <node concept="TDmWw" id="6zGYz0lTPuy" role="TEXxN">
+            <node concept="3cpWsn" id="6zGYz0lTPuz" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="6zGYz0lTSap" role="1tU5fm">
+                <ref role="3uigEE" to="fxg7:~IOException" resolve="IOException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="6zGYz0lTPu_" role="TDEfX">
+              <node concept="YS8fn" id="6zGYz0lVWM4" role="3cqZAp">
+                <node concept="2ShNRf" id="6zGYz0lVWTM" role="YScLw">
+                  <node concept="1pGfFk" id="6zGYz0lVX9D" role="2ShVmc">
+                    <ref role="37wK5l" to="e2lb:~InternalError.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="InternalError" />
+                    <node concept="Xl_RD" id="6zGYz0lVXs_" role="37wK5m">
+                      <property role="Xl_RC" value="Unable to run docker-machine config" />
+                    </node>
+                    <node concept="37vLTw" id="6zGYz0lVXfU" role="37wK5m">
+                      <ref role="3cqZAo" node="6zGYz0lTPuz" resolve="e" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="6zGYz0lUngJ" role="TEXxN">
+            <node concept="3cpWsn" id="6zGYz0lUngK" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="6zGYz0lUn_2" role="1tU5fm">
+                <ref role="3uigEE" to="e2lb:~InterruptedException" resolve="InterruptedException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="6zGYz0lUngM" role="TDEfX">
+              <node concept="YS8fn" id="6zGYz0lVXwW" role="3cqZAp">
+                <node concept="2ShNRf" id="6zGYz0lVXwX" role="YScLw">
+                  <node concept="1pGfFk" id="6zGYz0lVXwY" role="2ShVmc">
+                    <ref role="37wK5l" to="e2lb:~InternalError.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="InternalError" />
+                    <node concept="Xl_RD" id="6zGYz0lVXwZ" role="37wK5m">
+                      <property role="Xl_RC" value="Unable to run docker-machine config" />
+                    </node>
+                    <node concept="37vLTw" id="6zGYz0lVXx0" role="37wK5m">
+                      <ref role="3cqZAo" node="6zGYz0lUngK" resolve="e" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="6zGYz0lSj6s" role="2GV8ay">
+            <node concept="3SKdUt" id="6zGYz0lVWyV" role="3cqZAp">
+              <node concept="3SKWN0" id="6zGYz0lVWyW" role="3SKWNk">
+                <node concept="34ab3g" id="6zGYz0lUKYH" role="3SKWNf">
+                  <property role="35gtTG" value="info" />
+                  <node concept="3cpWs3" id="6zGYz0lV4Jb" role="34bqiv">
+                    <node concept="Xl_RD" id="6zGYz0lUKYJ" role="3uHU7B">
+                      <property role="Xl_RC" value="Trying docker-machine+" />
+                    </node>
+                    <node concept="2OqwBi" id="6zGYz0lV4NA" role="3uHU7w">
+                      <node concept="2Sf5sV" id="6zGYz0lV4NB" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="6zGYz0lV4NC" role="2OqNvi">
+                        <ref role="37wK5l" to="rzxe:6zGYz0lS9Hf" resolve="pathToDockerExecs" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6zGYz0lVSAp" role="3cqZAp">
+              <node concept="3cpWsn" id="6zGYz0lVSAs" role="3cpWs9">
+                <property role="TrG5h" value="cmds" />
+                <node concept="10Q1$e" id="6zGYz0lVSQp" role="1tU5fm">
+                  <node concept="17QB3L" id="6zGYz0lVSAn" role="10Q1$1" />
+                </node>
+                <node concept="2BsdOp" id="6zGYz0lVSXi" role="33vP2m">
+                  <node concept="Xl_RD" id="6zGYz0lVT0S" role="2BsfMF">
+                    <property role="Xl_RC" value="/bin/bash" />
+                  </node>
+                  <node concept="Xl_RD" id="6zGYz0lVT8c" role="2BsfMF">
+                    <property role="Xl_RC" value="-c" />
+                  </node>
+                  <node concept="2YIFZM" id="6zGYz0lVI56" role="2BsfMF">
+                    <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                    <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                    <node concept="Xl_RD" id="6zGYz0lVQSE" role="37wK5m">
+                      <property role="Xl_RC" value="export PATH=%s:%s; echo `%s/docker-machine config`" />
+                    </node>
+                    <node concept="2YIFZM" id="Pnf3VtWJJH" role="37wK5m">
+                      <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                      <ref role="37wK5l" to="e2lb:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+                      <node concept="Xl_RD" id="Pnf3VtWJRa" role="37wK5m">
+                        <property role="Xl_RC" value="PATH" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="Pnf3VtWKgj" role="37wK5m">
+                      <node concept="2Sf5sV" id="Pnf3VtWKgk" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="Pnf3VtWKgl" role="2OqNvi">
+                        <ref role="37wK5l" to="rzxe:6zGYz0lS9Hf" resolve="pathToDockerExecs" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="6zGYz0lTV_q" role="37wK5m">
+                      <node concept="2Sf5sV" id="6zGYz0lTV_r" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="6zGYz0lTV_s" role="2OqNvi">
+                        <ref role="37wK5l" to="rzxe:6zGYz0lS9Hf" resolve="pathToDockerExecs" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6zGYz0lU1HO" role="3cqZAp">
+              <node concept="3cpWsn" id="6zGYz0lU1HP" role="3cpWs9">
+                <property role="TrG5h" value="p" />
+                <node concept="3uibUv" id="6zGYz0lU1HQ" role="1tU5fm">
+                  <ref role="3uigEE" to="e2lb:~Process" resolve="Process" />
+                </node>
+                <node concept="2OqwBi" id="6zGYz0lVHxF" role="33vP2m">
+                  <node concept="2YIFZM" id="6zGYz0lVHx7" role="2Oq$k0">
+                    <ref role="1Pybhc" to="e2lb:~Runtime" resolve="Runtime" />
+                    <ref role="37wK5l" to="e2lb:~Runtime.getRuntime():java.lang.Runtime" resolve="getRuntime" />
+                  </node>
+                  <node concept="liA8E" id="6zGYz0lVTNu" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~Runtime.exec(java.lang.String[]):java.lang.Process" resolve="exec" />
+                    <node concept="37vLTw" id="Pnf3VtW3qM" role="37wK5m">
+                      <ref role="3cqZAo" node="6zGYz0lVSAs" resolve="cmds" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="Pnf3VtW0j8" role="3cqZAp">
+              <node concept="3SKWN0" id="Pnf3VtW0j9" role="3SKWNk">
+                <node concept="YS8fn" id="Pnf3VtVJlD" role="3SKWNf">
+                  <node concept="2ShNRf" id="Pnf3VtVJvZ" role="YScLw">
+                    <node concept="1pGfFk" id="Pnf3VtVMuM" role="2ShVmc">
+                      <ref role="37wK5l" to="e2lb:~InternalError.&lt;init&gt;(java.lang.String)" resolve="InternalError" />
+                      <node concept="3cpWs3" id="Pnf3VtVMvC" role="37wK5m">
+                        <node concept="2OqwBi" id="Pnf3VtVMvD" role="3uHU7B">
+                          <node concept="2Sf5sV" id="Pnf3VtVMvE" role="2Oq$k0" />
+                          <node concept="2qgKlT" id="Pnf3VtVMvF" role="2OqNvi">
+                            <ref role="37wK5l" to="rzxe:6zGYz0lS9Hf" resolve="pathToDockerExecs" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="Pnf3VtVMvG" role="3uHU7w">
+                          <property role="Xl_RC" value="/docker-machine config" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6zGYz0lU9Zp" role="3cqZAp">
+              <node concept="2OqwBi" id="6zGYz0lUaad" role="3clFbG">
+                <node concept="37vLTw" id="6zGYz0lU9Zn" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6zGYz0lU1HP" resolve="p" />
+                </node>
+                <node concept="liA8E" id="6zGYz0lUl0U" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~Process.waitFor():int" resolve="waitFor" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="Pnf3VtVQEV" role="3cqZAp" />
+            <node concept="3clFbF" id="6zGYz0lTGhZ" role="3cqZAp">
+              <node concept="37vLTI" id="6zGYz0lTGxk" role="3clFbG">
+                <node concept="37vLTw" id="6zGYz0lTGhX" role="37vLTJ">
+                  <ref role="3cqZAo" node="6zGYz0lSjN8" resolve="b" />
+                </node>
+                <node concept="2ShNRf" id="6zGYz0lSi3H" role="37vLTx">
+                  <node concept="1pGfFk" id="6zGYz0lSi3I" role="2ShVmc">
+                    <ref role="37wK5l" to="fxg7:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
+                    <node concept="2ShNRf" id="6zGYz0lSi3J" role="37wK5m">
+                      <node concept="1pGfFk" id="6zGYz0lSi3K" role="2ShVmc">
+                        <ref role="37wK5l" to="fxg7:~InputStreamReader.&lt;init&gt;(java.io.InputStream)" resolve="InputStreamReader" />
+                        <node concept="2OqwBi" id="6zGYz0lSi3M" role="37wK5m">
+                          <node concept="37vLTw" id="6zGYz0lSi3L" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6zGYz0lU1HP" resolve="p" />
+                          </node>
+                          <node concept="liA8E" id="6zGYz0lSi3N" role="2OqNvi">
+                            <ref role="37wK5l" to="e2lb:~Process.getInputStream():java.io.InputStream" resolve="getInputStream" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6zGYz0lSi3l" role="3cqZAp">
+              <node concept="3cpWsn" id="6zGYz0lSi3k" role="3cpWs9">
+                <property role="3TUv4t" value="false" />
+                <property role="TrG5h" value="line" />
+                <node concept="3uibUv" id="6zGYz0lSi3m" role="1tU5fm">
+                  <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+                </node>
+                <node concept="Xl_RD" id="6zGYz0lSi3n" role="33vP2m">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+            <node concept="2$JKZl" id="6zGYz0lSi3z" role="3cqZAp">
+              <node concept="3y3z36" id="6zGYz0lSi3o" role="2$JKZa">
+                <node concept="1eOMI4" id="6zGYz0lSi3s" role="3uHU7B">
+                  <node concept="37vLTI" id="6zGYz0lSi3p" role="1eOMHV">
+                    <node concept="37vLTw" id="6zGYz0lSi3q" role="37vLTJ">
+                      <ref role="3cqZAo" node="6zGYz0lSi3k" resolve="line" />
+                    </node>
+                    <node concept="2OqwBi" id="6zGYz0lSi3P" role="37vLTx">
+                      <node concept="37vLTw" id="6zGYz0lSi3O" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6zGYz0lSjN8" resolve="b" />
+                      </node>
+                      <node concept="liA8E" id="6zGYz0lSi3Q" role="2OqNvi">
+                        <ref role="37wK5l" to="fxg7:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="10Nm6u" id="6zGYz0lSi3t" role="3uHU7w" />
+              </node>
+              <node concept="3clFbS" id="6zGYz0lSi3v" role="2LFqv$">
+                <node concept="3clFbF" id="6zGYz0lSl81" role="3cqZAp">
+                  <node concept="37vLTI" id="6zGYz0lSl_A" role="3clFbG">
+                    <node concept="37vLTw" id="6zGYz0lSlAk" role="37vLTx">
+                      <ref role="3cqZAo" node="6zGYz0lSi3k" resolve="line" />
+                    </node>
+                    <node concept="2OqwBi" id="6zGYz0lSl9y" role="37vLTJ">
+                      <node concept="2Sf5sV" id="6zGYz0lSl7Z" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="6zGYz0lSlhp" role="2OqNvi">
+                        <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="6zGYz0lSj6t" role="2GVbov">
+            <node concept="SfApY" id="6zGYz0lTMZV" role="3cqZAp">
+              <node concept="3clFbS" id="6zGYz0lTMZX" role="SfCbr">
+                <node concept="3clFbJ" id="6zGYz0lSjTZ" role="3cqZAp">
+                  <node concept="3clFbS" id="6zGYz0lSjU0" role="3clFbx">
+                    <node concept="3clFbF" id="6zGYz0lSk65" role="3cqZAp">
+                      <node concept="2OqwBi" id="6zGYz0lSkab" role="3clFbG">
+                        <node concept="37vLTw" id="6zGYz0lSk64" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6zGYz0lSjN8" resolve="b" />
+                        </node>
+                        <node concept="liA8E" id="6zGYz0lSkHS" role="2OqNvi">
+                          <ref role="37wK5l" to="fxg7:~BufferedReader.close():void" resolve="close" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3y3z36" id="6zGYz0lSk5t" role="3clFbw">
+                    <node concept="10Nm6u" id="6zGYz0lSk5L" role="3uHU7w" />
+                    <node concept="37vLTw" id="6zGYz0lSjUe" role="3uHU7B">
+                      <ref role="3cqZAo" node="6zGYz0lSjN8" resolve="b" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="6zGYz0lTMZY" role="TEbGg">
+                <node concept="3cpWsn" id="6zGYz0lTN00" role="TDEfY">
+                  <property role="TrG5h" value="e" />
+                  <node concept="3uibUv" id="6zGYz0lTN50" role="1tU5fm">
+                    <ref role="3uigEE" to="fxg7:~IOException" resolve="IOException" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="6zGYz0lTN04" role="TDEfX" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="6zGYz0lS4ur" role="2ZfVeh">
+      <node concept="3clFbS" id="6zGYz0lS4us" role="2VODD2">
+        <node concept="34ab3g" id="6zGYz0lTaZK" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="6zGYz0lTc9n" role="34bqiv">
+            <node concept="3cpWs3" id="6zGYz0lTc35" role="3uHU7B">
+              <node concept="Xl_RD" id="6zGYz0lTaZM" role="3uHU7B">
+                <property role="Xl_RC" value="path to docker-machine: " />
+              </node>
+              <node concept="2OqwBi" id="6zGYz0lTc9o" role="3uHU7w">
+                <node concept="2Sf5sV" id="6zGYz0lTc9p" role="2Oq$k0" />
+                <node concept="2qgKlT" id="6zGYz0lTc9q" role="2OqNvi">
+                  <ref role="37wK5l" to="rzxe:6zGYz0lS9Hf" resolve="pathToDockerExecs" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="6zGYz0lTc9r" role="3uHU7w">
+              <property role="Xl_RC" value="/docker-machine" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6zGYz0lS5Hk" role="3cqZAp">
+          <node concept="2OqwBi" id="6zGYz0lS8Pl" role="3clFbG">
+            <node concept="2ShNRf" id="6zGYz0lS5Hi" role="2Oq$k0">
+              <node concept="1pGfFk" id="6zGYz0lS84a" role="2ShVmc">
+                <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="3cpWs3" id="6zGYz0lTavH" role="37wK5m">
+                  <node concept="2OqwBi" id="6zGYz0lTavI" role="3uHU7B">
+                    <node concept="2Sf5sV" id="6zGYz0lTavJ" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="6zGYz0lTavK" role="2OqNvi">
+                      <ref role="37wK5l" to="rzxe:6zGYz0lS9Hf" resolve="pathToDockerExecs" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="6zGYz0lTavL" role="3uHU7w">
+                    <property role="Xl_RC" value="/docker-machine" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="6zGYz0lS9iP" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~File.canExecute():boolean" resolve="canExecute" />
             </node>
           </node>
         </node>
