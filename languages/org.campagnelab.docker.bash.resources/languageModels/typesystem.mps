@@ -152,9 +152,6 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -166,7 +163,6 @@
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
-      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
     </language>
   </registry>
   <node concept="18kY7G" id="10rnQzwWWmi">
@@ -196,16 +192,13 @@
                 <node concept="Xl_RD" id="10rnQzwX547" role="2MkJ7o">
                   <property role="Xl_RC" value="An artifact repository path must be defined in the job area of the execution environment." />
                 </node>
-                <node concept="2OqwBi" id="10rnQzwX6EV" role="2OEOjV">
-                  <node concept="2OqwBi" id="10rnQzwX5bR" role="2Oq$k0">
-                    <node concept="1YBJjd" id="10rnQzwX57n" role="2Oq$k0">
-                      <ref role="1YBMHb" node="10rnQzwWWml" resolve="script" />
-                    </node>
-                    <node concept="3Tsc0h" id="10rnQzwX5Bl" role="2OqNvi">
-                      <ref role="3TtcxE" to="iuj9:5yyd2HFS3y2" />
-                    </node>
+                <node concept="2OqwBi" id="10rnQzwX5bR" role="2OEOjV">
+                  <node concept="1YBJjd" id="10rnQzwX57n" role="2Oq$k0">
+                    <ref role="1YBMHb" node="10rnQzwWWml" resolve="script" />
                   </node>
-                  <node concept="1uHKPH" id="10rnQzwX81O" role="2OqNvi" />
+                  <node concept="3TrEf2" id="5VB4_zEGfi9" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iuj9:5VB4_zEuxaq" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -246,12 +239,17 @@
               <property role="3cmrfH" value="0" />
             </node>
             <node concept="2OqwBi" id="10rnQzwXakc" role="3uHU7B">
-              <node concept="2OqwBi" id="10rnQzwX8tq" role="2Oq$k0">
-                <node concept="1YBJjd" id="10rnQzwX8o2" role="2Oq$k0">
-                  <ref role="1YBMHb" node="10rnQzwWWml" resolve="script" />
+              <node concept="2OqwBi" id="5VB4_zEuKYl" role="2Oq$k0">
+                <node concept="2OqwBi" id="10rnQzwX8tq" role="2Oq$k0">
+                  <node concept="1YBJjd" id="10rnQzwX8o2" role="2Oq$k0">
+                    <ref role="1YBMHb" node="10rnQzwWWml" resolve="script" />
+                  </node>
+                  <node concept="3TrEf2" id="5VB4_zEuKwB" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iuj9:5VB4_zEuxaq" />
+                  </node>
                 </node>
-                <node concept="3Tsc0h" id="10rnQzwX9gk" role="2OqNvi">
-                  <ref role="3TtcxE" to="iuj9:5yyd2HFS3y2" />
+                <node concept="2qgKlT" id="5VB4_zEuLcg" role="2OqNvi">
+                  <ref role="37wK5l" to="6na6:5VB4_zEuzNF" resolve="requestedResources" />
                 </node>
               </node>
               <node concept="34oBXx" id="10rnQzwXexU" role="2OqNvi" />

@@ -15,7 +15,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -280,21 +279,11 @@
     <node concept="nKS2y" id="6A9boVQyWGg" role="1MLUbF">
       <node concept="3clFbS" id="6A9boVQyWGh" role="2VODD2">
         <node concept="3clFbF" id="6A9boVQyWNC" role="3cqZAp">
-          <node concept="22lmx$" id="1ihAOqnPBKm" role="3clFbG">
-            <node concept="2OqwBi" id="1ihAOqnPBVN" role="3uHU7w">
-              <node concept="nLn13" id="1ihAOqnPBR2" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="1ihAOqnPCro" role="2OqNvi">
-                <node concept="chp4Y" id="1ihAOqnPCya" role="cj9EA">
-                  <ref role="cht4Q" to="iuj9:1ihAOqnKa_C" resolve="InstallGobyWebArtifacts" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="6A9boVQyWTI" role="3uHU7B">
-              <node concept="nLn13" id="6A9boVQyWNB" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="6A9boVQyXmJ" role="2OqNvi">
-                <node concept="chp4Y" id="6A9boVQyXsl" role="cj9EA">
-                  <ref role="cht4Q" to="iuj9:5yyd2HFS3xA" resolve="NYoShAwareScript" />
-                </node>
+          <node concept="2OqwBi" id="1ihAOqnPBVN" role="3clFbG">
+            <node concept="nLn13" id="1ihAOqnPBR2" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="1ihAOqnPCro" role="2OqNvi">
+              <node concept="chp4Y" id="5VB4_zEJ_Qa" role="cj9EA">
+                <ref role="cht4Q" to="iuj9:5VB4_zEupZX" resolve="ResourceSpecification" />
               </node>
             </node>
           </node>
@@ -360,26 +349,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="18$uMcN8pRJ" role="3cqZAp">
-            <node concept="2OqwBi" id="18$uMcN8qAz" role="3clFbG">
-              <node concept="2OqwBi" id="18$uMcN8pTI" role="2Oq$k0">
-                <node concept="3kakTB" id="18$uMcN8UO9" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="18$uMcN8q9k" role="2OqNvi">
-                  <node concept="1xMEDy" id="18$uMcN8q9m" role="1xVPHs">
-                    <node concept="chp4Y" id="18$uMcN8q9Y" role="ri$Ld">
-                      <ref role="cht4Q" to="iuj9:5yyd2HFS3xA" resolve="NYoShAwareScript" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2qgKlT" id="18$uMcNcMtt" role="2OqNvi">
-                <ref role="37wK5l" to="6na6:18$uMcN9Y2k" resolve="addToContainer" />
-                <node concept="37vLTw" id="18$uMcNcMwr" role="37wK5m">
-                  <ref role="3cqZAo" node="18$uMcN8oWl" resolve="copy" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbF" id="4DwTgsTNtja" role="3cqZAp">
             <node concept="37vLTI" id="4DwTgsTNtjb" role="3clFbG">
               <node concept="37vLTw" id="18$uMcN8UXD" role="37vLTx">
@@ -390,6 +359,15 @@
                 <node concept="3TrEf2" id="18$uMcN8D1D" role="2OqNvi">
                   <ref role="3Tt5mk" to="iuj9:18$uMcN8jbR" />
                 </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="5VB4_zE$6KU" role="3cqZAp">
+            <node concept="2OqwBi" id="5VB4_zE$6OP" role="3clFbG">
+              <node concept="3kakTB" id="5VB4_zE$6KS" role="2Oq$k0" />
+              <node concept="2qgKlT" id="5VB4_zE$700" role="2OqNvi">
+                <ref role="37wK5l" to="6na6:5VB4_zEzZG8" resolve="throwResourceAddedEvent" />
+                <node concept="3kakTB" id="5VB4_zE$71b" role="37wK5m" />
               </node>
             </node>
           </node>
