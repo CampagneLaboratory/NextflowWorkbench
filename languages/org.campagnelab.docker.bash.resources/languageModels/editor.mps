@@ -206,21 +206,8 @@
   <node concept="24kQdi" id="5yyd2HFS3Cv">
     <ref role="1XX52x" to="iuj9:5yyd2HFS3xA" resolve="NYoShAwareScript" />
     <node concept="3EZMnI" id="5yyd2HFS3D1" role="2wV5jI">
-      <node concept="3F0ifn" id="5yyd2HFS3Lt" role="3EZMnx">
-        <property role="3F0ifm" value="requires " />
-      </node>
-      <node concept="3F2HdR" id="5yyd2HFS3KU" role="3EZMnx">
-        <ref role="1NtTu8" to="iuj9:5yyd2HFS3y2" />
-        <node concept="lj46D" id="2tqsND0ifP4" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="2tqsND0ifP5" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pj6Ft" id="2tqsND0ifP6" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="2EHx9g" id="6A9boVQbQjz" role="2czzBx" />
+      <node concept="3F1sOY" id="5VB4_zEuxK0" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:5VB4_zEuxaq" />
       </node>
       <node concept="3F0ifn" id="5yyd2HFS3D8" role="3EZMnx">
         <property role="3F0ifm" value="#!/bin/bash (with automatic GobyWeb artifact installation)" />
@@ -888,23 +875,36 @@
       <node concept="3F0ifn" id="1ihAOqnKcwa" role="3EZMnx">
         <property role="3F0ifm" value="install gobyweb artifacts " />
       </node>
-      <node concept="3F2HdR" id="1ihAOqnKcwb" role="3EZMnx">
-        <ref role="1NtTu8" to="iuj9:1ihAOqnKcva" />
-        <node concept="lj46D" id="1ihAOqnKcwc" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="1ihAOqnKcwd" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pj6Ft" id="1ihAOqnKcwe" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="2EHx9g" id="1ihAOqnKcwf" role="2czzBx" />
+      <node concept="3F1sOY" id="6LCvS2pPr60" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:6LCvS2pPqdF" />
       </node>
       <node concept="3F0ifn" id="1ihAOqnO_Iu" role="3EZMnx">
         <property role="3F0ifm" value=";" />
       </node>
       <node concept="l2Vlx" id="1ihAOqnKcwl" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5VB4_zEuuGX">
+    <property role="3GE5qa" value="resources" />
+    <ref role="1XX52x" to="iuj9:5VB4_zEupZX" resolve="ResourceSpecification" />
+    <node concept="3EZMnI" id="5VB4_zEuvan" role="2wV5jI">
+      <node concept="3F0ifn" id="5VB4_zEuvaQ" role="3EZMnx">
+        <property role="3F0ifm" value="requires " />
+      </node>
+      <node concept="3F2HdR" id="5VB4_zEuvaR" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:5VB4_zEuuFB" />
+        <node concept="lj46D" id="5VB4_zEuvaS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="5VB4_zEuvaT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="5VB4_zEuvaU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2EHx9g" id="5VB4_zEuvaV" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="5VB4_zEuvaq" role="2iSdaV" />
     </node>
   </node>
 </model>

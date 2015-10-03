@@ -252,10 +252,15 @@
         </node>
         <node concept="lc7rE" id="6A9boVQ69gS" role="3cqZAp">
           <node concept="l9S2W" id="6A9boVQ69jd" role="lcghm">
-            <node concept="2OqwBi" id="6A9boVQ69nT" role="lbANJ">
-              <node concept="117lpO" id="6A9boVQ69jv" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="6A9boVQ69J9" role="2OqNvi">
-                <ref role="3TtcxE" to="iuj9:5yyd2HFS3y2" />
+            <node concept="2OqwBi" id="5VB4_zEuP7$" role="lbANJ">
+              <node concept="2OqwBi" id="6A9boVQ69nT" role="2Oq$k0">
+                <node concept="117lpO" id="6A9boVQ69jv" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5VB4_zEuOE7" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iuj9:5VB4_zEuxaq" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="5VB4_zEuPg$" role="2OqNvi">
+                <ref role="37wK5l" to="6na6:5VB4_zEuzNF" resolve="requestedResources" />
               </node>
             </node>
           </node>
