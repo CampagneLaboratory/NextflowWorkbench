@@ -12,6 +12,7 @@
     <import index="2hwc" ref="r:e9410272-2b63-4194-bbf1-939c80e0d366(docker)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="xtuj" ref="r:b3d6bed8-7d36-47a6-b17a-037b1c81e85e(CorrectWorkflows)" />
+    <import index="hg90" ref="r:fabfd97d-2a4e-4254-8652-f9c389bfe16e(processes)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -424,7 +425,7 @@
   </node>
   <node concept="KZc4b" id="3WNK9KXJFMx">
     <property role="TrG5h" value="JasonFIGURES" />
-    <property role="KZc57" value="/Users/jasonkurs/Workflow_Doc/figures" />
+    <property role="KZc57" value="/Users/fac2003/Documents/Workflow_Doc/figures" />
   </node>
   <node concept="2ulcR8" id="3WNK9KXJFgM">
     <node concept="2ulSLo" id="3WNK9KXJFgN" role="2ulM7a" />
@@ -533,6 +534,97 @@
     <node concept="3ZW7eb" id="6BD$$Fyp5A$" role="lGtFl">
       <property role="2ripvU" value="1" />
       <property role="TrG5h" value="SelectSequencesByPattern" />
+      <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
+    </node>
+  </node>
+  <node concept="2ulcR8" id="6zGYz0lPeOz">
+    <node concept="2ulSLo" id="6zGYz0lPeO$" role="2ulM7a" />
+    <node concept="3ZW7eb" id="6zGYz0lPeO_" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="NewProcess" />
+      <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
+    </node>
+  </node>
+  <node concept="2$rMIF" id="2lC2okgHrrN">
+    <property role="TrG5h" value="StringsToFasta" />
+    <node concept="2UNLhE" id="2qcvB08SRD0" role="2UW718">
+      <ref role="2UNLhW" node="2qcvB08SRqJ" resolve="oneFile" />
+      <node concept="2UPiyC" id="2qcvB08SRD1" role="2UNLhY">
+        <node concept="3clFbS" id="2qcvB08SRD2" role="2VODD2">
+          <node concept="3clFbF" id="2qcvB08SRFd" role="3cqZAp">
+            <node concept="2OqwBi" id="2qcvB08SRFa" role="3clFbG">
+              <node concept="10M0yZ" id="2qcvB08SRFb" role="2Oq$k0">
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              </node>
+              <node concept="liA8E" id="2qcvB08SRFc" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="2OqwBi" id="2qcvB08T9wY" role="37wK5m">
+                  <node concept="2UPiyF" id="71ITBVyKHVp" role="2Oq$k0" />
+                  <node concept="liA8E" id="2qcvB08T9Mv" role="2OqNvi">
+                    <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2$rEH5" id="2qcvB08TdOv" role="2$rEHq">
+      <ref role="2$rEH4" to="hg90:2qcvB08TdBW" resolve="AddRandom" />
+      <node concept="1uYdA0" id="2qcvB08TdPA" role="1uLvPH">
+        <ref role="1uK_4X" node="2lC2okgHwJs" resolve="strings" />
+      </node>
+      <node concept="1uLkD0" id="2qcvB08TdPB" role="1uLvPA">
+        <property role="TrG5h" value="sequence" />
+      </node>
+      <node concept="1uLkD0" id="2qcvB08TdPC" role="1uLvPA">
+        <property role="TrG5h" value="random" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="2lC2okgH_64" role="2$rEHq">
+      <ref role="2$rEH4" to="hg90:3OzmMkAr5Oo" resolve="ToFastaFile" />
+      <node concept="1uYdA0" id="2lC2okgII9h" role="1uLvPH">
+        <ref role="1uK_4X" node="2qcvB08TdPC" resolve="random" />
+      </node>
+      <node concept="1uYdA0" id="2qcvB08TeIF" role="1uLvPH">
+        <ref role="1uK_4X" node="2qcvB08TdPB" resolve="sequence" />
+      </node>
+      <node concept="1uLkD0" id="2lC2okgII9i" role="1uLvPA">
+        <property role="TrG5h" value="out" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="2qcvB08SRn4" role="2$rEHq">
+      <ref role="2$rEH4" to="hg90:2qcvB08SRn_" resolve="Concatenate" />
+      <node concept="1uYdA0" id="2qcvB08SRqI" role="1uLvPH">
+        <ref role="1uK_4X" node="2lC2okgII9i" resolve="out" />
+        <node concept="1yaYav" id="2qcvB08SRut" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="2qcvB08SRqJ" role="1uLvPA">
+        <property role="TrG5h" value="oneFile" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="2lC2okgHwJs" role="2$L6iY">
+      <property role="TrG5h" value="strings" />
+      <node concept="2J_sx7" id="2lC2okgHwJt" role="2$L62I">
+        <node concept="2J_g7P" id="2lC2okgIIjB" role="2J_sx6">
+          <property role="2J_vQ8" value="AAAAAA" />
+        </node>
+        <node concept="2J_g7P" id="2lC2okgIIl6" role="2J_sx6">
+          <property role="2J_vQ8" value="CCCCCC" />
+        </node>
+        <node concept="2J_g7P" id="2lC2okgIImL" role="2J_sx6">
+          <property role="2J_vQ8" value="TTTTTT" />
+        </node>
+        <node concept="2J_g7P" id="2lC2okgIIox" role="2J_sx6">
+          <property role="2J_vQ8" value="GGGGG" />
+        </node>
+      </node>
+    </node>
+    <node concept="3ZW7eb" id="6zGYz0lPrCA" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="WorkedExample2_CompleteWorkflow" />
       <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
     </node>
   </node>

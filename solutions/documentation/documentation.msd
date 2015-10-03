@@ -10,6 +10,7 @@
     <dependency reexport="false">36018c14-41aa-420b-859e-85b61ed57eed(playground)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)</dependency>
+    <dependency reexport="false">8f30b27b-57ec-411a-9ffa-0c6f223dcf72(org.campagnelab.workflow.Samples)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>93bc01ac-08ca-4f11-9c7d-614d04055dfb(org.campagnelab.mps.editor2pdf)</usedLanguage>
