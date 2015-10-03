@@ -6,6 +6,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="5" />
+    <use id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker" version="-1" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports>
@@ -13,6 +14,7 @@
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="xtuj" ref="r:b3d6bed8-7d36-47a6-b17a-037b1c81e85e(CorrectWorkflows)" />
     <import index="hg90" ref="r:fabfd97d-2a4e-4254-8652-f9c389bfe16e(processes)" />
+    <import index="q1qp" ref="f:diff_old#r:d77d6fe3-a37c-4c8b-a584-a584d1c37587(documentation.model@old)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -33,6 +35,9 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
@@ -61,10 +66,38 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
+      <concept id="8987412447080958668" name="org.campagnelab.docker.structure.DockerImage" flags="ng" index="2E_JVc">
+        <property id="8987412447080959633" name="id" index="2E_JEh" />
+        <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
+        <child id="430664643838761227" name="containers" index="WF_SX" />
+      </concept>
+      <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
+        <property id="8987412447080623507" name="options" index="2E$TAj" />
+        <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
+      </concept>
+      <concept id="6819868375264134127" name="org.campagnelab.docker.structure.RunningContainer" flags="ng" index="GbKB8">
+        <property id="1464761952898881430" name="running" index="1vm7qE" />
+        <property id="1859325667733444128" name="command" index="3yMj3R" />
+        <reference id="1859325667733099571" name="image" index="3zcJb$" />
+      </concept>
+      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
+        <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
+      </concept>
+      <concept id="1893262236499908796" name="org.campagnelab.docker.structure.DockerContainer" flags="ng" index="VuMX5">
+        <property id="6819868375264208052" name="id" index="GbyUj" />
+        <property id="1893262236499912677" name="tag" index="VuL0s" />
+        <property id="1893262236499912678" name="userName" index="VuL0v" />
+      </concept>
+      <concept id="430664643838735225" name="org.campagnelab.docker.structure.ContainerRef" flags="ng" index="WEvhf">
+        <reference id="430664643838735312" name="container" index="WEvjA" />
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
@@ -84,6 +117,7 @@
         <property id="2590112629703814581" name="toStandardInput" index="2mj$03" />
       </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
+        <child id="331977639697571264" name="container" index="234boB" />
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
@@ -625,6 +659,188 @@
     <node concept="3ZW7eb" id="6zGYz0lPrCA" role="lGtFl">
       <property role="2ripvU" value="1" />
       <property role="TrG5h" value="WorkedExample2_CompleteWorkflow" />
+      <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
+    </node>
+  </node>
+  <node concept="2EEQw1" id="6zGYz0lS31d">
+    <property role="3GE5qa" value="docker" />
+    <property role="2EEQw2" value="/usr/local/bin/docker" />
+    <property role="2E$TAj" value="--tls --tlscacert=/Users/fac2003/.docker/machine/machines/dev/ca.pem --tlscert=/Users/fac2003/.docker/machine/machines/dev/cert.pem --tlskey=/Users/fac2003/.docker/machine/machines/dev/key.pem -H=tcp://192.168.99.100:2376" />
+    <node concept="3ZW7eb" id="6zGYz0lS354" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="DockerConfigRootNode" />
+      <ref role="KZaLW" to="q1qp:3WNK9KXJFMx" resolve="JasonFIGURES" />
+    </node>
+  </node>
+  <node concept="2ulcR8" id="6zGYz0lQHFt">
+    <property role="TrG5h" value="ConfiguredDockerContainer" />
+    <property role="3GE5qa" value="docker" />
+    <node concept="2ulSLo" id="6zGYz0lQHFu" role="2ulM7a" />
+    <node concept="VtuK3" id="6zGYz0lRch4" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="GbyUj" value="artifact-software" />
+      <property role="VuL0v" value="mas2181" />
+    </node>
+  </node>
+  <node concept="2ulcR8" id="6zGYz0lQHxu">
+    <property role="TrG5h" value="NewDockerContainer" />
+    <property role="3GE5qa" value="docker" />
+    <node concept="2ulSLo" id="6zGYz0lQHxv" role="2ulM7a" />
+    <node concept="VtuK3" id="6zGYz0lQHxw" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <node concept="3ZW7eb" id="6zGYz0lQHxy" role="lGtFl">
+        <property role="2ripvU" value="1" />
+        <property role="TrG5h" value="NewDockerContainer" />
+        <ref role="KZaLW" to="q1qp:3WNK9KXJFMx" resolve="JasonFIGURES" />
+      </node>
+    </node>
+  </node>
+  <node concept="2ulcR8" id="6zGYz0lRcOW">
+    <property role="TrG5h" value="PulledDockerImag2e" />
+    <property role="3GE5qa" value="docker" />
+    <node concept="2ulSLo" id="6zGYz0lRcOX" role="2ulM7a" />
+    <node concept="GbKB8" id="6zGYz0lS2zr" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="3yMj3R" value="sleep 1000" />
+      <property role="GbyUj" value="artifact-software" />
+      <property role="3zaeVo" value="true" />
+      <property role="VuL0v" value="mas2181" />
+      <property role="TrG5h" value="interactive" />
+      <ref role="3zcJb$" to="q1qp:6zGYz0lS2zs" resolve="image" />
+    </node>
+  </node>
+  <node concept="2ulcR8" id="6zGYz0lRchi">
+    <property role="TrG5h" value="PulledDockerImage" />
+    <property role="3GE5qa" value="docker" />
+    <node concept="2ulSLo" id="6zGYz0lRchj" role="2ulM7a" />
+    <node concept="VtuK3" id="6zGYz0lRchk" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="GbyUj" value="artifact-software" />
+      <property role="VuL0v" value="mas2181" />
+      <property role="3zaeVo" value="true" />
+      <node concept="3ZW7eb" id="6zGYz0lRckZ" role="lGtFl">
+        <property role="2ripvU" value="1" />
+        <property role="TrG5h" value="PulledDockerImage" />
+        <ref role="KZaLW" to="q1qp:3WNK9KXJFMx" resolve="JasonFIGURES" />
+      </node>
+    </node>
+  </node>
+  <node concept="2E_JVc" id="6zGYz0lS2zs">
+    <property role="GSh9r" value="mas2181/artifact-software:latest" />
+    <property role="2E_JEh" value="artifact-software" />
+    <property role="TrG5h" value="image" />
+    <property role="3GE5qa" value="docker" />
+    <node concept="WEvhf" id="6zGYz0lS2_g" role="WF_SX">
+      <ref role="WEvjA" to="q1qp:6zGYz0lS2zw" resolve="interactive" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="6zGYz0lRcfn">
+    <property role="GSh9r" value="mas2181/artifact-software:latest" />
+    <property role="2E_JEh" value="artifact-software" />
+    <property role="TrG5h" value="image" />
+    <property role="3GE5qa" value="docker" />
+    <node concept="WEvhf" id="6zGYz0lRch2" role="WF_SX">
+      <ref role="WEvjA" to="q1qp:6zGYz0lRcfr" resolve="interactive" />
+    </node>
+    <node concept="3ZW7eb" id="6zGYz0lRcKP" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="DockerImageRootNode" />
+      <ref role="KZaLW" to="q1qp:3WNK9KXJFMx" resolve="JasonFIGURES" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="6zGYz0lS2zw">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="artifact-software" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <property role="3GE5qa" value="docker" />
+    <ref role="3zcJb$" to="q1qp:6zGYz0lS2zs" resolve="image" />
+  </node>
+  <node concept="2$rMIF" id="6kZ7DevQGNz">
+    <property role="TrG5h" value="Workflow1" />
+    <node concept="1CVceo" id="6kZ7DevSyOQ" role="2$L6iY">
+      <property role="TrG5h" value="inputSequences" />
+      <node concept="2J_sx7" id="6kZ7DevSyOR" role="2$L62I">
+        <node concept="2J_g7P" id="6kZ7DevS$8P" role="2J_sx6">
+          <property role="2J_vQ8" value="CGAATCG AGAAA CGTGTTG CGTGTTG GAGGTGTGTGTA CAAACCT TCGGAT AACGCCA TTTGGACC GACGAAA CTCCAGGA GGCATCCT GACGAAA CTAGGAACTAC AGGTCTTTGT A CCTT ATA A " />
+        </node>
+      </node>
+    </node>
+    <node concept="2UNLhE" id="6kZ7DevQVMD" role="2UW718">
+      <ref role="2UNLhW" node="6kZ7DevS$$k" resolve="sortedSequences" />
+      <node concept="2UPiyC" id="6kZ7DevQVME" role="2UNLhY">
+        <node concept="3clFbS" id="6kZ7DevQVMF" role="2VODD2">
+          <node concept="3clFbF" id="6kZ7DevQX_Y" role="3cqZAp">
+            <node concept="2OqwBi" id="6kZ7DevQXFH" role="3clFbG">
+              <node concept="10M0yZ" id="6kZ7DevQX_X" role="2Oq$k0">
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="6kZ7DevQXVo" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="Xl_RD" id="6kZ7DevQYbW" role="37wK5m">
+                  <property role="Xl_RC" value="Matches found: " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6kZ7DevSD$F" role="3cqZAp">
+            <node concept="2OqwBi" id="6kZ7DevSDKK" role="3clFbG">
+              <node concept="10M0yZ" id="6kZ7DevSD$E" role="2Oq$k0">
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              </node>
+              <node concept="liA8E" id="6kZ7DevSE49" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="2UPiyF" id="6kZ7DevSEaA" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="6kZ7DevQRRC" role="2$L6iY">
+      <property role="TrG5h" value="searchFor" />
+      <node concept="2J_sx7" id="6kZ7DevQRRD" role="2$L62I">
+        <node concept="2J_g7P" id="6kZ7DevQSbS" role="2J_sx6">
+          <property role="2J_vQ8" value="GAA" />
+        </node>
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6kZ7DevQGN$" role="2$rEHq">
+      <ref role="2$rEH4" to="hg90:1WG1fjcFXUQ" resolve="SelectSequencesByPattern" />
+      <node concept="1uYdA0" id="6kZ7DevQSja" role="1uLvPH">
+        <ref role="1uK_4X" node="6kZ7DevSyOQ" resolve="inputSequences" />
+      </node>
+      <node concept="1uYdA0" id="6kZ7DevQSjb" role="1uLvPH">
+        <ref role="1uK_4X" node="6kZ7DevQRRC" resolve="searchFor" />
+      </node>
+      <node concept="1uLkD0" id="6kZ7DevQSo6" role="1uLvPA">
+        <property role="TrG5h" value="matchingSequences" />
+      </node>
+      <node concept="3ZW7eb" id="6zGYz0lPPya" role="lGtFl">
+        <property role="2ripvU" value="1" />
+        <property role="TrG5h" value="SelectSequencesByPattern-2" />
+        <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="6kZ7DevS$x9" role="2$rEHq">
+      <ref role="2$rEH4" to="hg90:1WG1fjcGqMw" resolve="Sort" />
+      <node concept="1uYdA0" id="6kZ7DevS$$j" role="1uLvPH">
+        <ref role="1uK_4X" node="6kZ7DevQSo6" resolve="matchingSequences" />
+      </node>
+      <node concept="1uLkD0" id="6kZ7DevS$$k" role="1uLvPA">
+        <property role="TrG5h" value="sortedSequences" />
+      </node>
+    </node>
+    <node concept="19SGf9" id="6kZ7DevSNs6" role="GZ$AB">
+      <node concept="19SUe$" id="6kZ7DevSNs7" role="19SJt6">
+        <property role="19SUeA" value="This workflow searches for a specific pattern in a set of input sequences, sorts the matching sequences and prints them." />
+      </node>
+    </node>
+    <node concept="3ZW7eb" id="6zGYz0lPPmK" role="lGtFl">
+      <property role="2ripvU" value="1" />
+      <property role="TrG5h" value="Workflow1_Execution3" />
       <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
     </node>
   </node>
