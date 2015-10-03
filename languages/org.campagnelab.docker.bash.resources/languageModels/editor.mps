@@ -875,18 +875,8 @@
       <node concept="3F0ifn" id="1ihAOqnKcwa" role="3EZMnx">
         <property role="3F0ifm" value="install gobyweb artifacts " />
       </node>
-      <node concept="3F2HdR" id="1ihAOqnKcwb" role="3EZMnx">
-        <ref role="1NtTu8" to="iuj9:1ihAOqnKcva" />
-        <node concept="lj46D" id="1ihAOqnKcwc" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="1ihAOqnKcwd" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pj6Ft" id="1ihAOqnKcwe" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="2EHx9g" id="1ihAOqnKcwf" role="2czzBx" />
+      <node concept="3F1sOY" id="6LCvS2pPr60" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:6LCvS2pPqdF" />
       </node>
       <node concept="3F0ifn" id="1ihAOqnO_Iu" role="3EZMnx">
         <property role="3F0ifm" value=";" />

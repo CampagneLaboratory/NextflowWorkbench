@@ -377,16 +377,10 @@
     <property role="34LRSv" value="install gobyweb artifacts" />
     <property role="R4oN_" value="Install GobyWeb Artifacts in an image" />
     <ref role="1TJDcQ" to="6jv6:3DjWPY726Wm" resolve="CmdInstruction" />
-    <node concept="1TJgyj" id="1ihAOqnKcva" role="1TKVEi">
+    <node concept="1TJgyj" id="6LCvS2pPqdF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="requires" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="18MzsNNQZvZ" resolve="RequestedResource" />
-    </node>
-    <node concept="1TJgyj" id="1ihAOqnKcvb" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="resourceContainer" />
-      <ref role="20lvS9" node="18$uMcN8ioU" resolve="ResourceConfigContainer" />
+      <property role="20kJfa" value="resourceSpecs" />
+      <ref role="20lvS9" node="5VB4_zEupZX" resolve="ResourceSpecification" />
     </node>
   </node>
   <node concept="1TIwiD" id="5VB4_zEupZX">
