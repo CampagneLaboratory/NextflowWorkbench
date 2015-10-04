@@ -1021,5 +1021,18 @@
     </node>
     <node concept="3Tm1VV" id="4mP6EMpjdNt" role="1B3o_S" />
   </node>
+  <node concept="WtQ9Q" id="Pnf3Vu0x6J">
+    <property role="3GE5qa" value="docker" />
+    <ref role="WuzLi" to="iuj9:1ihAOqnKa_C" resolve="InstallGobyWebArtifacts" />
+    <node concept="11bSqf" id="Pnf3Vu0x6K" role="11c4hB">
+      <node concept="3clFbS" id="Pnf3Vu0x6L" role="2VODD2">
+        <node concept="lc7rE" id="Pnf3Vu0xxr" role="3cqZAp">
+          <node concept="la8eA" id="Pnf3Vu0xxD" role="lcghm">
+            <property role="lacIc" value="#TODO: add code to install artifacts inside the image" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
