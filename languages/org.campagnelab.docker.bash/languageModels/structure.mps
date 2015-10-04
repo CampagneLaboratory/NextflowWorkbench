@@ -66,7 +66,6 @@
   <node concept="1TIwiD" id="2h_fDmyfOuW">
     <property role="TrG5h" value="InteractivePath" />
     <property role="3GE5qa" value="paths" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2h_fDmyfOuX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
