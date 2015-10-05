@@ -261,9 +261,6 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
-      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
-      </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -2930,38 +2927,22 @@
       <property role="TrG5h" value="throwResourceRemovedEvent" />
       <node concept="3Tm1VV" id="5VB4_zEyDaC" role="1B3o_S" />
       <node concept="3clFbS" id="5VB4_zEyDaD" role="3clF47">
-        <node concept="3clFbF" id="5VB4_zEyIMb" role="3cqZAp">
-          <node concept="2OqwBi" id="5VB4_zEyMus" role="3clFbG">
-            <node concept="2OqwBi" id="5VB4_zEyJkK" role="2Oq$k0">
-              <node concept="2OqwBi" id="5VB4_zEyIO2" role="2Oq$k0">
-                <node concept="13iPFW" id="5VB4_zEyIMa" role="2Oq$k0" />
-                <node concept="I4A8Y" id="5VB4_zEyJ9D" role="2OqNvi" />
-              </node>
-              <node concept="2SmgA7" id="5VB4_zEyJpI" role="2OqNvi">
-                <ref role="2SmgA8" to="iuj9:5VB4_zEuSqh" resolve="ResourceSpecificationListener" />
-              </node>
-            </node>
-            <node concept="2es0OD" id="5VB4_zEySk5" role="2OqNvi">
-              <node concept="1bVj0M" id="5VB4_zEySk7" role="23t8la">
-                <node concept="3clFbS" id="5VB4_zEySk8" role="1bW5cS">
-                  <node concept="3clFbF" id="5VB4_zEySmN" role="3cqZAp">
-                    <node concept="2OqwBi" id="5VB4_zEySpF" role="3clFbG">
-                      <node concept="37vLTw" id="5VB4_zEySmM" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5VB4_zEySk9" resolve="it" />
-                      </node>
-                      <node concept="2qgKlT" id="5VB4_zEySKJ" role="2OqNvi">
-                        <ref role="37wK5l" node="5VB4_zEuSsl" resolve="resourceRemoved" />
-                        <node concept="37vLTw" id="5VB4_zEySOp" role="37wK5m">
-                          <ref role="3cqZAo" node="5VB4_zEyILQ" resolve="resource" />
-                        </node>
-                      </node>
-                    </node>
+        <node concept="3clFbF" id="7DnqeRYFtxa" role="3cqZAp">
+          <node concept="2OqwBi" id="7DnqeRYFtxb" role="3clFbG">
+            <node concept="2OqwBi" id="7DnqeRYFtxc" role="2Oq$k0">
+              <node concept="13iPFW" id="7DnqeRYFtxd" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7DnqeRYFtxe" role="2OqNvi">
+                <node concept="1xMEDy" id="7DnqeRYFtxf" role="1xVPHs">
+                  <node concept="chp4Y" id="7DnqeRYFtxg" role="ri$Ld">
+                    <ref role="cht4Q" to="iuj9:5VB4_zEupZX" resolve="ResourceSpecification" />
                   </node>
                 </node>
-                <node concept="Rh6nW" id="5VB4_zEySk9" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="5VB4_zEySka" role="1tU5fm" />
-                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="7DnqeRYFtTi" role="2OqNvi">
+              <ref role="37wK5l" node="5VB4_zEuSxn" resolve="resourceRemoved" />
+              <node concept="37vLTw" id="7DnqeRYFtUJ" role="37wK5m">
+                <ref role="3cqZAo" node="5VB4_zEyILQ" resolve="resource" />
               </node>
             </node>
           </node>
@@ -2979,38 +2960,22 @@
       <property role="TrG5h" value="throwResourceAddedEvent" />
       <node concept="3Tm1VV" id="5VB4_zEzZG9" role="1B3o_S" />
       <node concept="3clFbS" id="5VB4_zEzZGa" role="3clF47">
-        <node concept="3clFbF" id="5VB4_zEzZGb" role="3cqZAp">
-          <node concept="2OqwBi" id="5VB4_zEzZGc" role="3clFbG">
-            <node concept="2OqwBi" id="5VB4_zEzZGd" role="2Oq$k0">
-              <node concept="2OqwBi" id="5VB4_zEzZGe" role="2Oq$k0">
-                <node concept="13iPFW" id="5VB4_zEzZGf" role="2Oq$k0" />
-                <node concept="I4A8Y" id="5VB4_zEzZGg" role="2OqNvi" />
-              </node>
-              <node concept="2SmgA7" id="5VB4_zEzZGh" role="2OqNvi">
-                <ref role="2SmgA8" to="iuj9:5VB4_zEuSqh" resolve="ResourceSpecificationListener" />
-              </node>
-            </node>
-            <node concept="2es0OD" id="5VB4_zEzZGi" role="2OqNvi">
-              <node concept="1bVj0M" id="5VB4_zEzZGj" role="23t8la">
-                <node concept="3clFbS" id="5VB4_zEzZGk" role="1bW5cS">
-                  <node concept="3clFbF" id="5VB4_zEzZGl" role="3cqZAp">
-                    <node concept="2OqwBi" id="5VB4_zEzZGm" role="3clFbG">
-                      <node concept="37vLTw" id="5VB4_zEzZGn" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5VB4_zEzZGq" resolve="it" />
-                      </node>
-                      <node concept="2qgKlT" id="5VB4_zEzZGo" role="2OqNvi">
-                        <ref role="37wK5l" node="5VB4_zEuSqN" resolve="resourceAdded" />
-                        <node concept="37vLTw" id="5VB4_zEzZGp" role="37wK5m">
-                          <ref role="3cqZAo" node="5VB4_zEzZGt" resolve="resource" />
-                        </node>
-                      </node>
-                    </node>
+        <node concept="3clFbF" id="7DnqeRYFstd" role="3cqZAp">
+          <node concept="2OqwBi" id="7DnqeRYFsUw" role="3clFbG">
+            <node concept="2OqwBi" id="7DnqeRYFswk" role="2Oq$k0">
+              <node concept="13iPFW" id="7DnqeRYFstb" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7DnqeRYFsS0" role="2OqNvi">
+                <node concept="1xMEDy" id="7DnqeRYFsS2" role="1xVPHs">
+                  <node concept="chp4Y" id="7DnqeRYFsSE" role="ri$Ld">
+                    <ref role="cht4Q" to="iuj9:5VB4_zEupZX" resolve="ResourceSpecification" />
                   </node>
                 </node>
-                <node concept="Rh6nW" id="5VB4_zEzZGq" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="5VB4_zEzZGr" role="1tU5fm" />
-                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="7DnqeRYFtoq" role="2OqNvi">
+              <ref role="37wK5l" node="5VB4_zEuSxd" resolve="resourceAdded" />
+              <node concept="37vLTw" id="7DnqeRYFtpR" role="37wK5m">
+                <ref role="3cqZAo" node="5VB4_zEzZGt" resolve="resource" />
               </node>
             </node>
           </node>
@@ -5522,7 +5487,6 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="resourceAdded" />
-      <ref role="13i0hy" node="5VB4_zEuSqN" resolve="resourceAdded" />
       <node concept="3Tm1VV" id="5VB4_zEuSxe" role="1B3o_S" />
       <node concept="3clFbS" id="5VB4_zEuSxj" role="3clF47">
         <node concept="3cpWs8" id="7DnqeRXZbfy" role="3cqZAp">
@@ -5596,7 +5560,6 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="resourceRemoved" />
-      <ref role="13i0hy" node="5VB4_zEuSsl" resolve="resourceRemoved" />
       <node concept="3Tm1VV" id="5VB4_zEuSxo" role="1B3o_S" />
       <node concept="3clFbS" id="5VB4_zEuSxt" role="3clF47">
         <node concept="3clFbJ" id="7DnqeRYaXwf" role="3cqZAp">
@@ -5752,41 +5715,6 @@
           <property role="x79VB" value="true if at least another resource uses the same source config, false otherwise" />
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="13h7C7" id="5VB4_zEuSqx">
-    <property role="3GE5qa" value="resources" />
-    <ref role="13h7C2" to="iuj9:5VB4_zEuSqh" resolve="ResourceSpecificationListener" />
-    <node concept="13i0hz" id="5VB4_zEuSqN" role="13h7CS">
-      <property role="13i0iv" value="true" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="resourceAdded" />
-      <node concept="3Tm1VV" id="5VB4_zEuSqO" role="1B3o_S" />
-      <node concept="3clFbS" id="5VB4_zEuSqP" role="3clF47" />
-      <node concept="3cqZAl" id="5VB4_zEuSr3" role="3clF45" />
-      <node concept="37vLTG" id="5VB4_zEuSr9" role="3clF46">
-        <property role="TrG5h" value="resource" />
-        <node concept="3Tqbb2" id="5VB4_zEuSr8" role="1tU5fm">
-          <ref role="ehGHo" to="iuj9:4DwTgsTNnk_" resolve="ScriptResource" />
-        </node>
-      </node>
-    </node>
-    <node concept="13i0hz" id="5VB4_zEuSsl" role="13h7CS">
-      <property role="13i0iv" value="true" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="resourceRemoved" />
-      <node concept="3Tm1VV" id="5VB4_zEuSsm" role="1B3o_S" />
-      <node concept="3clFbS" id="5VB4_zEuSsn" role="3clF47" />
-      <node concept="3cqZAl" id="5VB4_zEuSso" role="3clF45" />
-      <node concept="37vLTG" id="5VB4_zEuSsp" role="3clF46">
-        <property role="TrG5h" value="resource" />
-        <node concept="3Tqbb2" id="5VB4_zEuSsq" role="1tU5fm">
-          <ref role="ehGHo" to="iuj9:4DwTgsTNnk_" resolve="ScriptResource" />
-        </node>
-      </node>
-    </node>
-    <node concept="13hLZK" id="5VB4_zEuSqy" role="13h7CW">
-      <node concept="3clFbS" id="5VB4_zEuSqz" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="7DnqeRXZ0of">
