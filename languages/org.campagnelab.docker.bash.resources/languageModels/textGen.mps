@@ -64,7 +64,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -149,7 +149,7 @@
       <concept id="1233921373471" name="jetbrains.mps.lang.textGen.structure.LanguageTextGenDeclaration" flags="ig" index="1bsvg0">
         <child id="1233922432965" name="operation" index="1bwxVq" />
       </concept>
-      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" stub="3147100357551177019" index="1bwezc" />
+      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" index="1bwezc" />
       <concept id="1233924848298" name="jetbrains.mps.lang.textGen.structure.OperationCall" flags="ng" index="1bDJIP">
         <reference id="1234190664409" name="function" index="1rvKf6" />
         <child id="1234191323697" name="parameter" index="1ryhcI" />
@@ -558,6 +558,17 @@
           </node>
           <node concept="l8MVK" id="6ojrriHoEoD" role="lcghm" />
         </node>
+        <node concept="3SKdUt" id="6Vq15MFDSrj" role="3cqZAp">
+          <node concept="3SKdUq" id="6Vq15MFDS$D" role="3SKWNk">
+            <property role="3SKdUp" value="do not debug long lists of variables:" />
+          </node>
+        </node>
+        <node concept="lc7rE" id="6Vq15MFDQHK" role="3cqZAp">
+          <node concept="la8eA" id="6Vq15MFDQTp" role="lcghm">
+            <property role="lacIc" value="set +x" />
+          </node>
+          <node concept="l8MVK" id="6Vq15MFEENu" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="4tpnhtPxfSp" role="3cqZAp">
           <node concept="la8eA" id="4tpnhtPxg1L" role="lcghm">
             <property role="lacIc" value="export JOB_DIR=$JOB_AREA/$RESOURCE_OWNER/" />
@@ -668,6 +679,17 @@
             <property role="lacIc" value=" &gt; /dev/null 2&gt;&amp;1" />
           </node>
           <node concept="l8MVK" id="6ojrriHoEoR" role="lcghm" />
+        </node>
+        <node concept="3SKdUt" id="6Vq15MFDSRl" role="3cqZAp">
+          <node concept="3SKdUq" id="6Vq15MFDSTa" role="3SKWNk">
+            <property role="3SKdUp" value="resume debugging:" />
+          </node>
+        </node>
+        <node concept="lc7rE" id="6Vq15MFDRlh" role="3cqZAp">
+          <node concept="la8eA" id="6Vq15MFDRwW" role="lcghm">
+            <property role="lacIc" value="set -x" />
+          </node>
+          <node concept="l8MVK" id="6Vq15MFEF6h" role="lcghm" />
         </node>
         <node concept="2Gpval" id="6vbp88c8RVx" role="3cqZAp">
           <node concept="2GrKxI" id="6vbp88c8RVz" role="2Gsz3X">
