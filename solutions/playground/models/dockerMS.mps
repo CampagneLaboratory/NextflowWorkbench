@@ -8956,7 +8956,7 @@
           <ref role="31HMCX" node="7DnqeRYqpa3" resolve="value of KALLISTO_INDEX.INDEX.organism" />
         </node>
         <node concept="19SUe$" id="6LCvS2pL5vV" role="19SJt6">
-          <property role="19SUeA" value="&#10;" />
+          <property role="19SUeA" value="&quot;&#10;" />
         </node>
       </node>
       <node concept="2OBCQ_" id="6LCvS2pIH$w" role="2OBg32">
