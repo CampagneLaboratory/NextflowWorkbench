@@ -388,7 +388,7 @@
     <property role="TrG5h" value="ResourceSpecification" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5VB4_zEuSw9" role="PzmwI">
-      <ref role="PrY4T" node="5VB4_zEuSqh" resolve="SpecificationListener" />
+      <ref role="PrY4T" node="5VB4_zEuSqh" resolve="ResourceSpecificationListener" />
     </node>
     <node concept="PrWs8" id="5VB4_zEJAKX" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -408,7 +408,7 @@
   </node>
   <node concept="PlHQZ" id="5VB4_zEuSqh">
     <property role="3GE5qa" value="resources" />
-    <property role="TrG5h" value="SpecificationListener" />
+    <property role="TrG5h" value="ResourceSpecificationListener" />
   </node>
 </model>
 
