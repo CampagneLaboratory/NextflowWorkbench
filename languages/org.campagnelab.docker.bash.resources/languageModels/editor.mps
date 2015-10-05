@@ -889,7 +889,7 @@
     <ref role="1XX52x" to="iuj9:5VB4_zEupZX" resolve="ResourceSpecification" />
     <node concept="3EZMnI" id="5VB4_zEuvan" role="2wV5jI">
       <node concept="3F0ifn" id="5VB4_zEuvaQ" role="3EZMnx">
-        <property role="3F0ifm" value="requires " />
+        <property role="3F0ifm" value="requires" />
       </node>
       <node concept="3F2HdR" id="5VB4_zEuvaR" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:5VB4_zEuuFB" />
