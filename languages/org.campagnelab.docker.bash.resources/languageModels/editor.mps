@@ -263,9 +263,6 @@
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
-          <node concept="VPxyj" id="RXABvRXYvC" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
         </node>
         <node concept="3F0A7n" id="RXABvRTqch" role="3EZMnx">
           <property role="1$x2rV" value="select version" />
