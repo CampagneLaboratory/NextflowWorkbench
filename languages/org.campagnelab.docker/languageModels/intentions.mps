@@ -924,7 +924,7 @@
                 </node>
                 <node concept="3uJxvA" id="itossVbmLt" role="2OqNvi">
                   <node concept="Xl_RD" id="itossVbmLu" role="3uJOhx">
-                    <property role="Xl_RC" value="; " />
+                    <property role="Xl_RC" value="\\\n&amp;&amp; " />
                   </node>
                 </node>
               </node>
@@ -1012,7 +1012,7 @@
                 </node>
                 <node concept="3uJxvA" id="itossVbers" role="2OqNvi">
                   <node concept="Xl_RD" id="itossVbeTt" role="3uJOhx">
-                    <property role="Xl_RC" value="; " />
+                    <property role="Xl_RC" value="\\\n&amp;&amp; " />
                   </node>
                 </node>
               </node>

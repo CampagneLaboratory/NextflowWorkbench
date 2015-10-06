@@ -39,7 +39,6 @@
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
     <import index="p3sh" ref="r:88895bb3-ffc1-49c0-97ec-2c49d3499b4b(org.campagnelab.gobyweb.tags.behavior)" />
     <import index="mak5" ref="r:977bf260-4884-422e-9656-9f0bb268fcb0(org.campagnelab.logger.behavior)" />
-    <import index="nzlw" ref="f:diff_old#r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior@old)" implicit="true" />
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -7652,17 +7651,17 @@
         </node>
         <node concept="3clFbF" id="itossV9aPj" role="3cqZAp">
           <node concept="2OqwBi" id="itossV9aSV" role="3clFbG">
-            <node concept="37vLTw" id="itossV9aPh" role="2Oq$k0">
-              <ref role="3cqZAo" to="nzlw:itossV9aO8" resolve="newOne" />
+            <node concept="37vLTw" id="6nPnrrhqF6X" role="2Oq$k0">
+              <ref role="3cqZAo" node="itossV9aO8" resolve="newOne" />
             </node>
             <node concept="2qgKlT" id="itossV9baX" role="2OqNvi">
               <ref role="37wK5l" to="tbr6:1JwC6U7zkKz" resolve="setText" />
               <node concept="3cpWs3" id="itossV9gr5" role="37wK5m">
-                <node concept="37vLTw" id="itossV9grq" role="3uHU7w">
-                  <ref role="3cqZAo" to="nzlw:itossV9aLs" resolve="txt" />
+                <node concept="37vLTw" id="6nPnrrhqF6T" role="3uHU7w">
+                  <ref role="3cqZAo" node="itossV9aLs" resolve="txt" />
                 </node>
                 <node concept="Xl_RD" id="itossV9gd1" role="3uHU7B">
-                  <property role="Xl_RC" value="; " />
+                  <property role="Xl_RC" value="&amp;&amp; " />
                 </node>
               </node>
             </node>
@@ -7682,8 +7681,8 @@
               </node>
             </node>
             <node concept="TSZUe" id="itossV9g3J" role="2OqNvi">
-              <node concept="37vLTw" id="itossV9g8a" role="25WWJ7">
-                <ref role="3cqZAo" to="nzlw:itossV9aO8" resolve="newOne" />
+              <node concept="37vLTw" id="6nPnrrhqF6V" role="25WWJ7">
+                <ref role="3cqZAo" node="itossV9aO8" resolve="newOne" />
               </node>
             </node>
           </node>
