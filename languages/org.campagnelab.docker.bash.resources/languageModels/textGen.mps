@@ -97,6 +97,11 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -1051,9 +1056,44 @@
     <ref role="WuzLi" to="iuj9:7SK$kQZvhpX" resolve="ArtifactPathValue" />
     <node concept="11bSqf" id="61tPieTjAH5" role="11c4hB">
       <node concept="3clFbS" id="61tPieTjAH6" role="2VODD2">
+        <node concept="3cpWs8" id="1WJ6UqoqU9w" role="3cqZAp">
+          <node concept="3cpWsn" id="1WJ6UqoqU9z" role="3cpWs9">
+            <property role="TrG5h" value="backSlash" />
+            <node concept="17QB3L" id="1WJ6UqoqU9u" role="1tU5fm" />
+            <node concept="3K4zz7" id="1WJ6UqoqWdy" role="33vP2m">
+              <node concept="Xl_RD" id="1WJ6UqoqWeB" role="3K4E3e">
+                <property role="Xl_RC" value="\\\\" />
+              </node>
+              <node concept="Xl_RD" id="1WJ6UqoqWf9" role="3K4GZi">
+                <property role="Xl_RC" value="\\" />
+              </node>
+              <node concept="2OqwBi" id="1WJ6UqoqUUO" role="3K4Cdx">
+                <node concept="2OqwBi" id="1WJ6UqoqUxN" role="2Oq$k0">
+                  <node concept="117lpO" id="1WJ6UqoqUb5" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="1WJ6UqoqURo" role="2OqNvi">
+                    <node concept="1xMEDy" id="1WJ6UqoqURq" role="1xVPHs">
+                      <node concept="chp4Y" id="1WJ6UqoqUS4" role="ri$Ld">
+                        <ref role="cht4Q" to="iowz:6tX5nBTatyL" resolve="Process" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="1WJ6UqoqVT8" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="lc7rE" id="61tPieTjAHr" role="3cqZAp">
           <node concept="la8eA" id="6vbp88c7q1J" role="lcghm">
-            <property role="lacIc" value="$(eval echo \\${" />
+            <property role="lacIc" value="$(eval echo " />
+          </node>
+          <node concept="l9hG8" id="1WJ6UqoqWj0" role="lcghm">
+            <node concept="37vLTw" id="1WJ6UqoqWk6" role="lb14g">
+              <ref role="3cqZAo" node="1WJ6UqoqU9z" resolve="backSlash" />
+            </node>
+          </node>
+          <node concept="la8eA" id="1WJ6UqoqWms" role="lcghm">
+            <property role="lacIc" value="${" />
           </node>
           <node concept="l9hG8" id="61tPieTjAHH" role="lcghm">
             <node concept="2OqwBi" id="61tPieTjAKM" role="lb14g">
