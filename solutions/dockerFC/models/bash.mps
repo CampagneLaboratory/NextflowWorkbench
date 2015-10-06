@@ -8503,7 +8503,7 @@
       <node concept="16pRw0" id="5rs0_U9gjir" role="2ybFLk" />
     </node>
     <node concept="2mjA9o" id="5rs0_U9gjhw" role="2ulM7n">
-      <property role="TrG5h" value="'*.fq.gz'" />
+      <property role="TrG5h" value="'reads.fq.gz'" />
       <node concept="16pRw0" id="5rs0_U9gjhC" role="2ybFLk" />
     </node>
     <node concept="NgwLd" id="5rs0_U9gjbM" role="2ulM7a">
@@ -8512,13 +8512,13 @@
           <property role="19SUeA" value="echo &quot;Processing &quot;" />
         </node>
         <node concept="2b_LqF" id="1WJ6UqomY5f" role="19SJt6">
-          <ref role="2b_LqC" node="5rs0_U9gjhw" resolve="'*.fq.gz'" />
+          <ref role="2b_LqC" node="5rs0_U9gjhw" resolve="'reads.fq.gz'" />
         </node>
         <node concept="19SUe$" id="1WJ6UqomY5e" role="19SJt6">
           <property role="19SUeA" value="&#10;SAMPLE_NAME=`basename " />
         </node>
         <node concept="2b_LqF" id="1CWHgioSOSN" role="19SJt6">
-          <ref role="2b_LqC" node="5rs0_U9gjhw" resolve="'*.fq.gz'" />
+          <ref role="2b_LqC" node="5rs0_U9gjhw" resolve="'reads.fq.gz'" />
         </node>
         <node concept="19SUe$" id="1CWHgioSOSM" role="19SJt6">
           <property role="19SUeA" value="`&#10;TRANSCRIPT_INDEX=" />
@@ -8559,11 +8559,11 @@
         <node concept="19SUe$" id="5rs0_U9gjf9" role="19SJt6">
           <property role="19SUeA" value="quant --index=${TRANSCRIPT_INDEX} " />
         </node>
-        <node concept="2b_LqF" id="5rs0_U9gjff" role="19SJt6">
-          <ref role="2b_LqC" node="5rs0_U9gjhw" resolve="'*.fq.gz'" />
+        <node concept="2b_LqF" id="1WJ6Uqos9$2" role="19SJt6">
+          <ref role="2b_LqC" node="5rs0_U9gjhw" resolve="'reads.fq.gz'" />
         </node>
-        <node concept="19SUe$" id="5rs0_U9gjfg" role="19SJt6">
-          <property role="19SUeA" value=" -output-dir=./${SAMPLE_NAME} --single -l 200 -s 40&#10;cp ${SAMPLE_NAME}/abundance.tsv counts-${SAMPLE_NAME}.tsv&#10;exit 0" />
+        <node concept="19SUe$" id="1WJ6Uqos9$1" role="19SJt6">
+          <property role="19SUeA" value=" --output-dir=./${SAMPLE_NAME} --single -l 200 -s 40&#10;cp ${SAMPLE_NAME}/abundance.tsv counts-${SAMPLE_NAME}.tsv&#10;exit 0" />
         </node>
       </node>
       <node concept="2OBCQ_" id="5rs0_U9gjbR" role="2OBg32">

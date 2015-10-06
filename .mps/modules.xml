@@ -2,6 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${org.campagnelab.workflow.work_dir}/MPSProjects/NYoSh/solutions/NYoSh.build-plugins/NYoSh.build-plugins.msd" folder="" />
+      <modulePath path="${org.campagnelab.workflow.work_dir}/MPSProjects/XChart/solutions/XChart.build0/XChart.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/devkit2/org.campagnelab.NextflowWorkbench.dependencies.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/org.campagnelab.NextflowWorkbench.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.docker.bash.resources/org.campagnelab.docker.bash.resources.mpl" folder="" />
@@ -30,8 +32,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/testWorkflow/testWorkflow.msd" folder="models" />
       <modulePath path="$PROJECT_DIR$/solutions/tuples/tuples.msd" folder="models" />
       <modulePath path="$PROJECT_DIR$/solutions/workflow/workflow.msd" folder="models" />
-      <modulePath path="$PROJECT_DIR$/../../XChart/solutions/XChart.build0/XChart.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/../../nyosh/solutions/NYoSh.build-plugins/NYoSh.build-plugins.msd" folder="" />
     </projectModules>
   </component>
 </project>
