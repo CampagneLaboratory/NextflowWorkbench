@@ -281,7 +281,7 @@
                         </node>
                       </node>
                       <node concept="2DeJnY" id="RXABvRTrDi" role="2OqNvi">
-                        <ref role="1A9B2P" to="bs99:1msVhuay9kk" resolve="ResourceVersionRange" />
+                        <ref role="1A9B2P" to="iuj9:5cVzYEjM8vj" resolve="ResourceVersionRange" />
                       </node>
                     </node>
                   </node>
@@ -932,6 +932,33 @@
       <node concept="Vb9p2" id="1J$kG5UHmJe" role="3F10Kt">
         <property role="Vbekb" value="ITALIC" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5cVzYEjM8vm">
+    <property role="3GE5qa" value="resources" />
+    <ref role="1XX52x" to="iuj9:5cVzYEjM8vj" resolve="ResourceVersionRange" />
+    <node concept="3EZMnI" id="5cVzYEjM8vn" role="2wV5jI">
+      <node concept="3F0ifn" id="5cVzYEjM8vo" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F0ifn" id="5cVzYEjM8vp" role="3EZMnx">
+        <property role="3F0ifm" value="from" />
+      </node>
+      <node concept="3F0A7n" id="5cVzYEjM8vq" role="3EZMnx">
+        <property role="1$x2rV" value="version" />
+        <ref role="1NtTu8" to="iuj9:5cVzYEjM8vl" resolve="atLeast" />
+      </node>
+      <node concept="3F0ifn" id="5cVzYEjM8vr" role="3EZMnx">
+        <property role="3F0ifm" value="to" />
+      </node>
+      <node concept="3F0A7n" id="5cVzYEjM8vs" role="3EZMnx">
+        <property role="1$x2rV" value="version" />
+        <ref role="1NtTu8" to="iuj9:5cVzYEjM8vk" resolve="atMost" />
+      </node>
+      <node concept="3F0ifn" id="5cVzYEjM8vt" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="2iRfu4" id="5cVzYEjM8vu" role="2iSdaV" />
     </node>
   </node>
 </model>
