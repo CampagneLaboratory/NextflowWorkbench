@@ -39,6 +39,7 @@
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
     <import index="p3sh" ref="r:88895bb3-ffc1-49c0-97ec-2c49d3499b4b(org.campagnelab.gobyweb.tags.behavior)" />
     <import index="mak5" ref="r:977bf260-4884-422e-9656-9f0bb268fcb0(org.campagnelab.logger.behavior)" />
+    <import index="nzlw" ref="f:diff_old#r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior@old)" implicit="true" />
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -7625,6 +7626,70 @@
         </node>
       </node>
       <node concept="3cqZAl" id="3PCtB6rLUX8" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="itossV99_x" role="13h7CS">
+      <property role="TrG5h" value="appendText" />
+      <node concept="37vLTG" id="itossV9aLs" role="3clF46">
+        <property role="TrG5h" value="txt" />
+        <node concept="17QB3L" id="itossV9aLy" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="itossV99_y" role="1B3o_S" />
+      <node concept="3clFbS" id="itossV99_z" role="3clF47">
+        <node concept="3cpWs8" id="itossV9aO5" role="3cqZAp">
+          <node concept="3cpWsn" id="itossV9aO8" role="3cpWs9">
+            <property role="TrG5h" value="newOne" />
+            <node concept="3Tqbb2" id="itossV9aO4" role="1tU5fm">
+              <ref role="ehGHo" to="87nw:2dWzqxEBMSc" resolve="Word" />
+            </node>
+            <node concept="2ShNRf" id="itossV9aOW" role="33vP2m">
+              <node concept="3zrR0B" id="itossV9aOU" role="2ShVmc">
+                <node concept="3Tqbb2" id="itossV9aOV" role="3zrR0E">
+                  <ref role="ehGHo" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="itossV9aPj" role="3cqZAp">
+          <node concept="2OqwBi" id="itossV9aSV" role="3clFbG">
+            <node concept="37vLTw" id="itossV9aPh" role="2Oq$k0">
+              <ref role="3cqZAo" to="nzlw:itossV9aO8" resolve="newOne" />
+            </node>
+            <node concept="2qgKlT" id="itossV9baX" role="2OqNvi">
+              <ref role="37wK5l" to="tbr6:1JwC6U7zkKz" resolve="setText" />
+              <node concept="3cpWs3" id="itossV9gr5" role="37wK5m">
+                <node concept="37vLTw" id="itossV9grq" role="3uHU7w">
+                  <ref role="3cqZAo" to="nzlw:itossV9aLs" resolve="txt" />
+                </node>
+                <node concept="Xl_RD" id="itossV9gd1" role="3uHU7B">
+                  <property role="Xl_RC" value="; " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="itossV9bes" role="3cqZAp">
+          <node concept="2OqwBi" id="itossV9cvE" role="3clFbG">
+            <node concept="2OqwBi" id="itossV9bKs" role="2Oq$k0">
+              <node concept="2OqwBi" id="itossV9bhT" role="2Oq$k0">
+                <node concept="13iPFW" id="itossV9beq" role="2Oq$k0" />
+                <node concept="3TrEf2" id="itossV9b$J" role="2OqNvi">
+                  <ref role="3Tt5mk" to="6jv6:1D6dZ$xfNXI" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="itossV9c0P" role="2OqNvi">
+                <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="itossV9g3J" role="2OqNvi">
+              <node concept="37vLTw" id="itossV9g8a" role="25WWJ7">
+                <ref role="3cqZAo" to="nzlw:itossV9aO8" resolve="newOne" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="itossV9aLp" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6hgQMA_Neit">
