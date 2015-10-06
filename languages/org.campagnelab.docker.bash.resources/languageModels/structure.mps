@@ -92,7 +92,7 @@
     <node concept="1TJgyj" id="RXABvRTrS6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="resourceVersionRange" />
-      <ref role="20lvS9" to="bs99:1msVhuay9kk" resolve="ResourceVersionRange" />
+      <ref role="20lvS9" node="5cVzYEjM8vj" resolve="ResourceVersionRange" />
     </node>
     <node concept="PrWs8" id="17OfmP$iUXB" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -408,7 +408,22 @@
     <property role="TrG5h" value="LatestVersion" />
     <property role="34LRSv" value="latest" />
     <property role="R4oN_" value="Most recent available version" />
-    <ref role="1TJDcQ" to="bs99:1msVhuay9kk" resolve="ResourceVersionRange" />
+    <ref role="1TJDcQ" node="5cVzYEjM8vj" resolve="ResourceVersionRange" />
+  </node>
+  <node concept="1TIwiD" id="5cVzYEjM8vj">
+    <property role="3GE5qa" value="resources" />
+    <property role="TrG5h" value="ResourceVersionRange" />
+    <property role="34LRSv" value="range" />
+    <property role="R4oN_" value="[custom range]" />
+    <ref role="1TJDcQ" to="bs99:1msVhua4SBd" resolve="ResourceVersion" />
+    <node concept="1TJgyi" id="5cVzYEjM8vk" role="1TKVEl">
+      <property role="TrG5h" value="atMost" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5cVzYEjM8vl" role="1TKVEl">
+      <property role="TrG5h" value="atLeast" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 
