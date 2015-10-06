@@ -1293,7 +1293,7 @@
           <node concept="3clFbS" id="1vrbdFdH7y0" role="3clFbx">
             <node concept="yHkDM" id="5FbWHdWeLej" role="3cqZAp">
               <node concept="Xl_RD" id="1vrbdFdHazW" role="yHkDO">
-                <property role="Xl_RC" value="NEXTFLOW_HOME must be defined to a directory where the nextflow executable script exists." />
+                <property role="Xl_RC" value="NEXTFLOW_PATH must be defined to a directory where the nextflow executable script exists." />
               </node>
             </node>
           </node>
