@@ -8,9 +8,13 @@
   <exported-language name="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <exported-language name="a247e09e-2435-45ba-b8d2-07e93feba96a(jetbrains.mps.baseLanguage.tuples)" />
   <exported-language name="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" />
+  <exported-language name="3b74e3b7-7336-414d-8899-64a293a44a07(org.campagnelab.docker.bash)" />
+  <exported-language name="f55d6853-b373-41dd-bc8e-331fd6e2c764(org.campagnelab.bash.nyosh)" />
+  <exported-language name="25281c03-4a7c-4b57-9221-24a10fc36ef5(org.campagnelab.docker)" />
   <exported-solutions>
     <exported-solution>c039a1a6-4680-46fa-b571-a6a5f1e49ab6(org.campagnelab.workflow.run)</exported-solution>
     <exported-solution>4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)</exported-solution>
+    <exported-solution>63ed0b3a-e2ca-4245-8600-dfbe1ddba42b(org.campagnelab.docker.bash.run)</exported-solution>
   </exported-solutions>
 </dev-kit>
 
