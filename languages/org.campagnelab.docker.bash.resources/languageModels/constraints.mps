@@ -50,6 +50,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -550,6 +553,19 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="53gwNkgeeW3">
+    <property role="3GE5qa" value="docker" />
+    <ref role="1M2myG" to="iuj9:1ihAOqnKa_C" resolve="InstallGobyWebArtifacts" />
+    <node concept="nKS2y" id="53gwNkgeeZg" role="1MLUbF">
+      <node concept="3clFbS" id="53gwNkgeeZh" role="2VODD2">
+        <node concept="3clFbF" id="53gwNkgef7U" role="3cqZAp">
+          <node concept="3clFbT" id="53gwNkgef7T" role="3clFbG">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
