@@ -403,5 +403,12 @@
       <ref role="20lvS9" node="18$uMcN8ioU" resolve="ResourceConfigContainer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1J$kG5UB16N">
+    <property role="3GE5qa" value="resources" />
+    <property role="TrG5h" value="LatestVersion" />
+    <property role="34LRSv" value="latest" />
+    <property role="R4oN_" value="Most recent available version" />
+    <ref role="1TJDcQ" to="bs99:1msVhuay9kk" resolve="ResourceVersionRange" />
+  </node>
 </model>
 

@@ -288,6 +288,26 @@
                 </node>
               </node>
             </node>
+            <node concept="1oHujT" id="1J$kG5UG5Aa" role="OY2wv">
+              <property role="1oHujS" value="latest" />
+              <node concept="1oIgkG" id="1J$kG5UG5Ab" role="1oHujR">
+                <node concept="3clFbS" id="1J$kG5UG5Ac" role="2VODD2">
+                  <node concept="3clFbF" id="1J$kG5UG5Ad" role="3cqZAp">
+                    <node concept="2OqwBi" id="1J$kG5UG5Ae" role="3clFbG">
+                      <node concept="2OqwBi" id="1J$kG5UG5Af" role="2Oq$k0">
+                        <node concept="3GMtW1" id="1J$kG5UG5Ag" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="1J$kG5UG5Ah" role="2OqNvi">
+                          <ref role="3Tt5mk" to="iuj9:RXABvRTrS6" />
+                        </node>
+                      </node>
+                      <node concept="2DeJnY" id="1J$kG5UG5Ai" role="2OqNvi">
+                        <ref role="1A9B2P" to="iuj9:1J$kG5UB16N" resolve="LatestVersion" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="1ou48o" id="RXABvRTt96" role="OY2wv">
               <node concept="1ouSdP" id="RXABvRTt98" role="1ou48m">
                 <node concept="3clFbS" id="RXABvRTt9a" role="2VODD2">
@@ -902,6 +922,16 @@
         <node concept="2EHx9g" id="5VB4_zEuvaV" role="2czzBx" />
       </node>
       <node concept="l2Vlx" id="5VB4_zEuvaq" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1J$kG5UHmHo">
+    <property role="3GE5qa" value="resources" />
+    <ref role="1XX52x" to="iuj9:1J$kG5UB16N" resolve="LatestVersion" />
+    <node concept="3F0ifn" id="1J$kG5UHmHq" role="2wV5jI">
+      <property role="3F0ifm" value="latest" />
+      <node concept="Vb9p2" id="1J$kG5UHmJe" role="3F10Kt">
+        <property role="Vbekb" value="ITALIC" />
+      </node>
     </node>
   </node>
 </model>
