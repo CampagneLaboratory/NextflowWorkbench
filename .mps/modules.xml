@@ -3,7 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${org.campagnelab.goby.workbench.home2}/solutions/NYoSh.build-plugins/NYoSh.build-plugins.msd" folder="" />
-      <modulePath path="${org.campagnelab.xchart.home}/solutions/XChart.build0/XChart.build.msd" folder="" />
+      <modulePath path="${org.campagnelab.workflow.work_dir}/MPSProjects/git/XChart/solutions/XChart.build0/XChart.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/org.campagnelab.NextflowWorkbench.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.docker.bash.resources/org.campagnelab.docker.bash.resources.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.docker.bash/org.campagnelab.docker.bash.mpl" folder="" />
