@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.campagnelab.docker.gobyweb" uuid="f818ef32-d5bf-46fa-b215-1c17570a2e46">
+  <exported-language name="3b74e3b7-7336-414d-8899-64a293a44a07(org.campagnelab.docker.bash)" />
+  <exported-language name="f55d6853-b373-41dd-bc8e-331fd6e2c764(org.campagnelab.bash.nyosh)" />
+  <exported-language name="25281c03-4a7c-4b57-9221-24a10fc36ef5(org.campagnelab.docker)" />
+  <exported-language name="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
+  <exported-language name="a8fb88b0-7e9f-478c-aab4-a1b076131192(org.campagnelab.gobyweb.interactive)" />
+  <exported-language name="0202ed86-955d-4227-9c20-377dd6b1f9ff(org.campagnelab.nyosh.lib)" />
+  <exported-language name="c1ba4037-e4db-47d8-8b61-b3c805b648f2(org.campagnelab.ui)" />
+  <exported-language name="c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)" />
+  <exported-language name="adfd00cb-58d7-4094-bca8-f941a491e04f(org.campagnelab.gobyweb)" />
+  <exported-language name="0b7d8bbd-896e-495e-be60-01a0d738a649(org.campagnelab.gobyweb.plugins)" />
+  <exported-language name="82ffebe3-3685-4fd9-b560-0c1d348d295c(org.campagnelab.logger)" />
+  <exported-language name="20d83b64-d10f-48d1-990d-513b574c4956(org.campagnelab.background)" />
+  <exported-language name="27f97fd8-caeb-43a0-a73f-f8ac957f3a17(org.campagnelab.gobyweb.environment)" />
+  <exported-language name="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5(org.campagnelab.nyosh.environment)" />
+  <exported-language name="57af9408-ffae-472e-9367-5cb44434e8b3(org.campagnelab.gobyweb.interactive.users)" />
+  <exported-language name="901f5cf3-dc77-4c1e-bc5a-6382baee28b4(org.campagnelab.textoutput)" />
+  <exported-solutions>
+    <exported-solution>63ed0b3a-e2ca-4245-8600-dfbe1ddba42b(org.campagnelab.docker.bash.run)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+
