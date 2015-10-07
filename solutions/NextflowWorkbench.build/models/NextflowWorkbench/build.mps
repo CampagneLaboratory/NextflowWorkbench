@@ -3070,6 +3070,119 @@
           <ref role="3LEDTN" node="3A$s7Pqh1IV" resolve="org.campagnelab.docker.bash.run" />
         </node>
       </node>
+      <node concept="3LEwk6" id="1c4JsiUFyIg" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.campagnelab.docker.dev" />
+        <property role="3LESm3" value="d2e60c30-8b22-476c-b514-62205a22222e" />
+        <node concept="55IIr" id="1c4JsiUFyIj" role="3LF7KH">
+          <node concept="2Ry0Ak" id="1c4JsiUFzEj" role="iGT6I">
+            <property role="2Ry0Am" value="allDevkits" />
+            <node concept="2Ry0Ak" id="1c4JsiUFzZC" role="2Ry0An">
+              <property role="2Ry0Am" value="docker" />
+              <node concept="2Ry0Ak" id="1c4JsiUF$kX" role="2Ry0An">
+                <property role="2Ry0Am" value="org.campagnelab.docker.dev.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFKos" role="3LEDUa">
+          <ref role="3LEDTV" node="2yVjOHGmOYJ" resolve="org.campagnelab.docker.bash" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFKot" role="3LEDUa">
+          <ref role="3LEDTV" node="1rhtiO0obS0" resolve="org.campagnelab.docker" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFKou" role="3LEDUa">
+          <ref role="3LEDTV" to="ael0:5KK2jWpWo0e" resolve="org.campagnelab.ui" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFKov" role="3LEDUa">
+          <ref role="3LEDTV" to="h9g5:7ZmC9JYEfXW" resolve="org.campagnelab.logger" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFKow" role="3LEDUa">
+          <ref role="3LEDTV" to="x4gu:7ZmC9JYDkzN" resolve="org.campagnelab.background" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFKox" role="3LEDUa">
+          <ref role="3LEDTV" to="t9i9:2mFg1uCD9q3" resolve="org.campagnelab.nyosh.lib" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFKoy" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFKoz" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:568PkTlOK5Q" resolve="jetbrains.mps.core.xml" />
+        </node>
+        <node concept="3LEDTM" id="1c4JsiUFKo$" role="3LEDUa">
+          <ref role="3LEDTN" node="3A$s7Pqh1IV" resolve="org.campagnelab.docker.bash.run" />
+        </node>
+        <node concept="3LEDTM" id="1c4JsiUFKo_" role="3LEDUa">
+          <ref role="3LEDTN" node="6DdhZ$aRzWF" resolve="org.campagnelab.util.execution.ant" />
+        </node>
+      </node>
+      <node concept="3LEwk6" id="1c4JsiUFLdD" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.campagnelab.docker.gobyweb" />
+        <property role="3LESm3" value="f818ef32-d5bf-46fa-b215-1c17570a2e46" />
+        <node concept="55IIr" id="1c4JsiUFLdG" role="3LF7KH">
+          <node concept="2Ry0Ak" id="1c4JsiUFNp0" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="1c4JsiUFNIl" role="2Ry0An">
+              <property role="2Ry0Am" value="gobyweb" />
+              <node concept="2Ry0Ak" id="1c4JsiUFO3E" role="2Ry0An">
+                <property role="2Ry0Am" value="org.campagnelab.docker.gobyweb.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzn" role="3LEDUa">
+          <ref role="3LEDTV" node="2yVjOHGmOYJ" resolve="org.campagnelab.docker.bash" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzo" role="3LEDUa">
+          <ref role="3LEDTV" node="3A$s7Pqh3$g" resolve="org.campagnelab.bash.nyosh" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzp" role="3LEDUa">
+          <ref role="3LEDTV" node="1rhtiO0obS0" resolve="org.campagnelab.docker" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzq" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzr" role="3LEDUa">
+          <ref role="3LEDTV" to="jve8:2mFg1uCEWeH" resolve="org.campagnelab.gobyweb.interactive" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzs" role="3LEDUa">
+          <ref role="3LEDTV" to="t9i9:2mFg1uCD9q3" resolve="org.campagnelab.nyosh.lib" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzt" role="3LEDUa">
+          <ref role="3LEDTV" to="ael0:5KK2jWpWo0e" resolve="org.campagnelab.ui" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzu" role="3LEDUa">
+          <ref role="3LEDTV" node="4oJiZHqTePI" resolve="org.campagnelab.workflow" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzv" role="3LEDUa">
+          <ref role="3LEDTV" to="5f6q:2mFg1uCEf5K" resolve="org.campagnelab.gobyweb" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzw" role="3LEDUa">
+          <ref role="3LEDTV" to="5f6q:2mFg1uCEf5$" resolve="org.campagnelab.gobyweb.plugins" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzx" role="3LEDUa">
+          <ref role="3LEDTV" to="h9g5:7ZmC9JYEfXW" resolve="org.campagnelab.logger" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzy" role="3LEDUa">
+          <ref role="3LEDTV" to="x4gu:7ZmC9JYDkzN" resolve="org.campagnelab.background" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzz" role="3LEDUa">
+          <ref role="3LEDTV" to="5f6q:2mFg1uCEf5E" resolve="org.campagnelab.gobyweb.environment" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOz$" role="3LEDUa">
+          <ref role="3LEDTV" to="t9i9:2mFg1uCD9pF" resolve="org.campagnelab.nyosh.environment" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOz_" role="3LEDUa">
+          <ref role="3LEDTV" to="jve8:664r$yjrVvw" resolve="org.campagnelab.gobyweb.interactive.users" />
+        </node>
+        <node concept="3LEDTy" id="1c4JsiUFOzA" role="3LEDUa">
+          <ref role="3LEDTV" to="nr1s:2mFg1uCEgGH" resolve="org.campagnelab.textoutput" />
+        </node>
+        <node concept="3LEDTM" id="1c4JsiUFOzB" role="3LEDUa">
+          <ref role="3LEDTN" node="3A$s7Pqh1IV" resolve="org.campagnelab.docker.bash.run" />
+        </node>
+      </node>
       <node concept="1E1JtA" id="1WG1fjcGJ1r" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.campagnelab.workflow.Samples" />

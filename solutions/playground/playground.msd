@@ -50,7 +50,6 @@
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)</usedDevKit>
-    <usedDevKit>86c8f858-6338-4b06-9da6-14bc59de165d(org.campagnelab.NextflowWorkbench.dependencies)</usedDevKit>
   </usedDevKits>
   <languageVersions>
     <language id="31c91def-a131-41a1-9018-102874f49a12" fqName="de.slisson.mps.editor.multiline" version="0" />
