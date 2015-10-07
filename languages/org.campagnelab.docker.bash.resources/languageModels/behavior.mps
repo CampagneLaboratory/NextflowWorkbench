@@ -1105,6 +1105,31 @@
         </node>
         <node concept="3clFbJ" id="NHi1GaJuPo" role="3cqZAp">
           <node concept="3clFbS" id="NHi1GaJuPp" role="3clFbx">
+            <node concept="3cpWs8" id="1c4JsiURLrp" role="3cqZAp">
+              <node concept="3cpWsn" id="1c4JsiURLrq" role="3cpWs9">
+                <property role="TrG5h" value="resourceScope" />
+                <node concept="3uibUv" id="1c4JsiURLrr" role="1tU5fm">
+                  <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+                </node>
+                <node concept="2YIFZM" id="1c4JsiURLMr" role="33vP2m">
+                  <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                  <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+                  <node concept="2ShNRf" id="1c4JsiURLMs" role="37wK5m">
+                    <node concept="2HTt$P" id="1c4JsiURLMt" role="2ShVmc">
+                      <node concept="2OqwBi" id="1c4JsiURLMu" role="2HTEbv">
+                        <node concept="13iPFW" id="1c4JsiURLMv" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="1c4JsiURLMw" role="2OqNvi">
+                          <ref role="3Tt5mk" to="iuj9:18$uMcNi2XR" />
+                        </node>
+                      </node>
+                      <node concept="3Tqbb2" id="1c4JsiURLMx" role="2HTBi0">
+                        <ref role="ehGHo" to="bs99:1msVhua4SB8" resolve="ResourceRange" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="NHi1GaJzh0" role="3cqZAp">
               <node concept="3cpWsn" id="NHi1GaJzh1" role="3cpWs9">
                 <property role="TrG5h" value="environment" />
@@ -1142,22 +1167,8 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2YIFZM" id="NHi1GaPW$g" role="37wK5m">
-                      <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-                      <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
-                      <node concept="2ShNRf" id="NHi1GaPWBT" role="37wK5m">
-                        <node concept="2HTt$P" id="NHi1GaPWWK" role="2ShVmc">
-                          <node concept="2OqwBi" id="NHi1GaPX8Y" role="2HTEbv">
-                            <node concept="13iPFW" id="NHi1GaPX4Z" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="NHi1GaPXwS" role="2OqNvi">
-                              <ref role="3Tt5mk" to="iuj9:18$uMcNi2XR" />
-                            </node>
-                          </node>
-                          <node concept="3Tqbb2" id="NHi1GaPX05" role="2HTBi0">
-                            <ref role="ehGHo" to="bs99:1msVhua4SB8" resolve="ResourceRange" />
-                          </node>
-                        </node>
-                      </node>
+                    <node concept="37vLTw" id="1c4JsiURMrq" role="37wK5m">
+                      <ref role="3cqZAo" node="1c4JsiURLrq" resolve="resourceScope" />
                     </node>
                   </node>
                 </node>
@@ -1179,6 +1190,15 @@
                     </node>
                   </node>
                   <node concept="3x8VRR" id="NHi1GaJ$h1" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="9aQIb" id="1c4JsiURK5z" role="9aQIa">
+                <node concept="3clFbS" id="1c4JsiURK5$" role="9aQI4">
+                  <node concept="3cpWs6" id="1c4JsiURKin" role="3cqZAp">
+                    <node concept="37vLTw" id="1c4JsiURMLz" role="3cqZAk">
+                      <ref role="3cqZAo" node="1c4JsiURLrq" resolve="resourceScope" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
