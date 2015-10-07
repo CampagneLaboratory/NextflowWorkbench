@@ -20,6 +20,8 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="cx9y" ref="r:309aeee7-bee8-445c-b31d-35928d1da75f(jetbrains.mps.baseLanguage.tuples.structure)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="xqmc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#sun.nio.fs(JDK/sun.nio.fs@java_stub)" />
+    <import index="e5on" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.nio.file(JDK/java.nio.file@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
@@ -64,6 +66,10 @@
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -5842,14 +5848,22 @@
                 </node>
                 <node concept="2qgKlT" id="53yaZUNEj6u" role="2OqNvi">
                   <ref role="37wK5l" to="mqvz:53yaZUNvsev" resolve="getClosureReturnType" />
-                  <node concept="1Z2H0r" id="53yaZUNLFFQ" role="37wK5m">
-                    <node concept="2OqwBi" id="53yaZUNLEEK" role="1Z2MuG">
-                      <node concept="1YBJjd" id="53yaZUNLEBz" role="2Oq$k0">
-                        <ref role="1YBMHb" node="2_d934X_Vw$" resolve="mapFunction" />
+                  <node concept="10QFUN" id="4do6Q59NgX" role="37wK5m">
+                    <node concept="2OqwBi" id="4do6Q59Mt4" role="10QFUP">
+                      <node concept="2OqwBi" id="53yaZUNLEEK" role="2Oq$k0">
+                        <node concept="1YBJjd" id="53yaZUNLEBz" role="2Oq$k0">
+                          <ref role="1YBMHb" node="2_d934X_Vw$" resolve="mapFunction" />
+                        </node>
+                        <node concept="3TrEf2" id="53yaZUNLF6_" role="2OqNvi">
+                          <ref role="3Tt5mk" to="iowz:1qs9CHFOsoJ" />
+                        </node>
                       </node>
-                      <node concept="3TrEf2" id="53yaZUNLF6_" role="2OqNvi">
-                        <ref role="3Tt5mk" to="iowz:1qs9CHFOsoJ" />
+                      <node concept="2qgKlT" id="4do6Q59Nel" role="2OqNvi">
+                        <ref role="37wK5l" to="mqvz:5h9rZfgRSfs" resolve="type" />
                       </node>
+                    </node>
+                    <node concept="3Tqbb2" id="4do6Q59NgY" role="10QFUM">
+                      <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
                     </node>
                   </node>
                 </node>
@@ -6161,6 +6175,22 @@
     <node concept="1YaCAy" id="2J6W_b7iMkG" role="1YuTPh">
       <property role="TrG5h" value="tupleType" />
       <ref role="1YaFvo" to="iowz:2Hhp$WE5lSU" resolve="TupleType" />
+    </node>
+  </node>
+  <node concept="2sgARr" id="4do6Q5sTrZ">
+    <property role="TrG5h" value="FileTypeIsObject" />
+    <node concept="3clFbS" id="4do6Q5sTs0" role="2sgrp5">
+      <node concept="3clFbF" id="4do6Q5zhm_" role="3cqZAp">
+        <node concept="2c44tf" id="4do6Q5zhmx" role="3clFbG">
+          <node concept="3uibUv" id="4do6Q5zhKa" role="2c44tc">
+            <ref role="3uigEE" to="e5on:~Path" resolve="Path" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4do6Q5sTs2" role="1YuTPh">
+      <property role="TrG5h" value="fileType" />
+      <ref role="1YaFvo" to="iowz:33IVfFaApTg" resolve="FileType" />
     </node>
   </node>
 </model>
