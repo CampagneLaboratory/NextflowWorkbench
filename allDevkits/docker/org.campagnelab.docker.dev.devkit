@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.campagnelab.docker.dev" uuid="d2e60c30-8b22-476c-b514-62205a22222e">
+  <exported-language name="3b74e3b7-7336-414d-8899-64a293a44a07(org.campagnelab.docker.bash)" />
+  <exported-language name="25281c03-4a7c-4b57-9221-24a10fc36ef5(org.campagnelab.docker)" />
+  <exported-language name="c1ba4037-e4db-47d8-8b61-b3c805b648f2(org.campagnelab.ui)" />
+  <exported-language name="82ffebe3-3685-4fd9-b560-0c1d348d295c(org.campagnelab.logger)" />
+  <exported-language name="20d83b64-d10f-48d1-990d-513b574c4956(org.campagnelab.background)" />
+  <exported-language name="0202ed86-955d-4227-9c20-377dd6b1f9ff(org.campagnelab.nyosh.lib)" />
+  <exported-language name="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
+  <exported-language name="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" />
+  <exported-solutions>
+    <exported-solution>63ed0b3a-e2ca-4245-8600-dfbe1ddba42b(org.campagnelab.docker.bash.run)</exported-solution>
+    <exported-solution>a16c15b3-e423-4aad-81e7-18bb74e1f395(org.campagnelab.util.execution.ant)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+
