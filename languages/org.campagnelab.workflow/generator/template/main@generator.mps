@@ -26,6 +26,7 @@
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="qqyk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.baseLanguage.tuples.runtime(MPS.Core/jetbrains.mps.baseLanguage.tuples.runtime@java_stub)" />
+    <import index="e5on" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.nio.file(JDK/java.nio.file@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -2008,7 +2009,7 @@
     <property role="3GE5qa" value="" />
     <ref role="3gUMe" to="iowz:33IVfFaApTg" resolve="FileType" />
     <node concept="3uibUv" id="10nk9FDYWyA" role="13RCb5">
-      <ref role="3uigEE" to="fxg7:~File" resolve="File" />
+      <ref role="3uigEE" to="e5on:~Path" resolve="Path" />
       <node concept="raruj" id="10nk9FDYWyE" role="lGtFl" />
     </node>
   </node>
