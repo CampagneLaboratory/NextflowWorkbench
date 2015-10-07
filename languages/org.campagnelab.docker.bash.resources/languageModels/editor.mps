@@ -923,6 +923,15 @@
       </node>
       <node concept="l2Vlx" id="5VB4_zEuvaq" role="2iSdaV" />
     </node>
+    <node concept="3EZMnI" id="1c4JsiUUydR" role="6VMZX">
+      <node concept="2iRfu4" id="1c4JsiUUydS" role="2iSdaV" />
+      <node concept="3F0ifn" id="1c4JsiUUyj9" role="3EZMnx">
+        <property role="3F0ifm" value="Show full installation activity? " />
+      </node>
+      <node concept="3F0A7n" id="1c4JsiUUyiV" role="3EZMnx">
+        <ref role="1NtTu8" to="iuj9:1c4JsiUUxOc" resolve="showFullInstallationActivity" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="1J$kG5UHmHo">
     <property role="3GE5qa" value="resources" />

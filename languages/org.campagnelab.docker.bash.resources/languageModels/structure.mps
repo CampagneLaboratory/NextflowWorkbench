@@ -387,6 +387,10 @@
     <property role="3GE5qa" value="resources" />
     <property role="TrG5h" value="ResourceSpecification" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1c4JsiUUxOc" role="1TKVEl">
+      <property role="TrG5h" value="showFullInstallationActivity" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="5VB4_zEJAKX" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
