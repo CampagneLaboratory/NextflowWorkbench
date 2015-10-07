@@ -64,6 +64,10 @@
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -5842,14 +5846,22 @@
                 </node>
                 <node concept="2qgKlT" id="53yaZUNEj6u" role="2OqNvi">
                   <ref role="37wK5l" to="mqvz:53yaZUNvsev" resolve="getClosureReturnType" />
-                  <node concept="1Z2H0r" id="53yaZUNLFFQ" role="37wK5m">
-                    <node concept="2OqwBi" id="53yaZUNLEEK" role="1Z2MuG">
-                      <node concept="1YBJjd" id="53yaZUNLEBz" role="2Oq$k0">
-                        <ref role="1YBMHb" node="2_d934X_Vw$" resolve="mapFunction" />
+                  <node concept="10QFUN" id="4do6Q59NgX" role="37wK5m">
+                    <node concept="2OqwBi" id="4do6Q59Mt4" role="10QFUP">
+                      <node concept="2OqwBi" id="53yaZUNLEEK" role="2Oq$k0">
+                        <node concept="1YBJjd" id="53yaZUNLEBz" role="2Oq$k0">
+                          <ref role="1YBMHb" node="2_d934X_Vw$" resolve="mapFunction" />
+                        </node>
+                        <node concept="3TrEf2" id="53yaZUNLF6_" role="2OqNvi">
+                          <ref role="3Tt5mk" to="iowz:1qs9CHFOsoJ" />
+                        </node>
                       </node>
-                      <node concept="3TrEf2" id="53yaZUNLF6_" role="2OqNvi">
-                        <ref role="3Tt5mk" to="iowz:1qs9CHFOsoJ" />
+                      <node concept="2qgKlT" id="4do6Q59Nel" role="2OqNvi">
+                        <ref role="37wK5l" to="mqvz:5h9rZfgRSfs" resolve="type" />
                       </node>
+                    </node>
+                    <node concept="3Tqbb2" id="4do6Q59NgY" role="10QFUM">
+                      <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
                     </node>
                   </node>
                 </node>
