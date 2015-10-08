@@ -21,6 +21,10 @@
     <language id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" name="org.campagnelab.mps.editor2pdf">
       <concept id="893392931327129896" name="org.campagnelab.mps.editor2pdf.structure.DiagramOutputDirectory" flags="ng" index="KZc4b">
         <property id="893392931327129956" name="path" index="KZc57" />
+        <child id="3114472293001556518" name="font" index="2O7UoE" />
+      </concept>
+      <concept id="3114472293001556514" name="org.campagnelab.mps.editor2pdf.structure.Font" flags="ng" index="2O7UoI">
+        <property id="3114472293001556515" name="filename" index="2O7UoJ" />
       </concept>
       <concept id="8751972264247112684" name="org.campagnelab.mps.editor2pdf.structure.EditorAnnotation" flags="ng" index="3ZW7eb">
         <property id="5378718574870043633" name="outputFormat" index="2ripvU" />
@@ -301,6 +305,9 @@
   <node concept="KZc4b" id="5wcZjhOWEre">
     <property role="TrG5h" value="FIGURES" />
     <property role="KZc57" value="/Users/fac2003/Documents/Workflow_Doc/figures" />
+    <node concept="2O7UoI" id="7TNKM_PCmuk" role="2O7UoE">
+      <property role="2O7UoJ" value="/Users/fac2003/Library/Application Support/MPS32/Editor2PDF/fonts/DejaVuSansMono.ttf" />
+    </node>
   </node>
   <node concept="2$rMIF" id="7wWbCzYoDIy">
     <property role="TrG5h" value="NewWorkflow" />
@@ -460,6 +467,9 @@
   <node concept="KZc4b" id="3WNK9KXJFMx">
     <property role="TrG5h" value="JasonFIGURES" />
     <property role="KZc57" value="/Users/fac2003/Documents/Workflow_Doc/figures" />
+    <node concept="2O7UoI" id="7TNKM_PCmZh" role="2O7UoE">
+      <property role="2O7UoJ" value="/Users/fac2003/Library/Application Support/MPS32/Editor2PDF/fonts/DejaVuSansMono.ttf" />
+    </node>
   </node>
   <node concept="2ulcR8" id="3WNK9KXJFgM">
     <node concept="2ulSLo" id="3WNK9KXJFgN" role="2ulM7a" />
@@ -691,7 +701,7 @@
       <node concept="3ZW7eb" id="6zGYz0lQHxy" role="lGtFl">
         <property role="2ripvU" value="1" />
         <property role="TrG5h" value="NewDockerContainer" />
-        <ref role="KZaLW" to="q1qp:3WNK9KXJFMx" resolve="JasonFIGURES" />
+        <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
       </node>
     </node>
   </node>
@@ -721,7 +731,7 @@
       <node concept="3ZW7eb" id="6zGYz0lRckZ" role="lGtFl">
         <property role="2ripvU" value="1" />
         <property role="TrG5h" value="PulledDockerImage" />
-        <ref role="KZaLW" to="q1qp:3WNK9KXJFMx" resolve="JasonFIGURES" />
+        <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
       </node>
     </node>
   </node>
@@ -838,7 +848,85 @@
         <property role="19SUeA" value="This workflow searches for a specific pattern in a set of input sequences, sorts the matching sequences and prints them." />
       </node>
     </node>
-    <node concept="3ZW7eb" id="6zGYz0lPPmK" role="lGtFl">
+  </node>
+  <node concept="2$rMIF" id="7TNKM_PCz5O">
+    <property role="TrG5h" value="Workflow1" />
+    <node concept="1CVceo" id="7TNKM_PCz5P" role="2$L6iY">
+      <property role="TrG5h" value="inputSequences" />
+      <node concept="2J_sx7" id="7TNKM_PCz5Q" role="2$L62I">
+        <node concept="2J_g7P" id="7TNKM_PCz5R" role="2J_sx6">
+          <property role="2J_vQ8" value="CGAATCG AGAAA CGTGTTG CGTGTTG GAGGTGTGTGTA CAAACCT TCGGAT AACGCCA TTTGGACC GACGAAA CTCCAGGA GGCATCCT GACGAAA CTAGGAACTAC AGGTCTTTGT A CCTT ATA A " />
+        </node>
+      </node>
+    </node>
+    <node concept="2UNLhE" id="7TNKM_PCz5S" role="2UW718">
+      <ref role="2UNLhW" node="7TNKM_PCz6f" resolve="sortedSequences" />
+      <node concept="2UPiyC" id="7TNKM_PCz5T" role="2UNLhY">
+        <node concept="3clFbS" id="7TNKM_PCz5U" role="2VODD2">
+          <node concept="3clFbF" id="7TNKM_PCz5V" role="3cqZAp">
+            <node concept="2OqwBi" id="7TNKM_PCz5W" role="3clFbG">
+              <node concept="10M0yZ" id="7TNKM_PCz5X" role="2Oq$k0">
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="7TNKM_PCz5Y" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="Xl_RD" id="7TNKM_PCz5Z" role="37wK5m">
+                  <property role="Xl_RC" value="Matches found: " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7TNKM_PCz60" role="3cqZAp">
+            <node concept="2OqwBi" id="7TNKM_PCz61" role="3clFbG">
+              <node concept="10M0yZ" id="7TNKM_PCz62" role="2Oq$k0">
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="7TNKM_PCz63" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="2UPiyF" id="7TNKM_PCz64" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="7TNKM_PCz65" role="2$L6iY">
+      <property role="TrG5h" value="searchFor" />
+      <node concept="2J_sx7" id="7TNKM_PCz66" role="2$L62I">
+        <node concept="2J_g7P" id="7TNKM_PCz67" role="2J_sx6">
+          <property role="2J_vQ8" value="GAA" />
+        </node>
+      </node>
+    </node>
+    <node concept="2$rEH5" id="7TNKM_PCz68" role="2$rEHq">
+      <ref role="2$rEH4" to="hg90:1WG1fjcFXUQ" resolve="SelectSequencesByPattern" />
+      <node concept="1uYdA0" id="7TNKM_PCz69" role="1uLvPH">
+        <ref role="1uK_4X" node="7TNKM_PCz5P" resolve="inputSequences" />
+      </node>
+      <node concept="1uYdA0" id="7TNKM_PCz6a" role="1uLvPH">
+        <ref role="1uK_4X" node="7TNKM_PCz65" resolve="searchFor" />
+      </node>
+      <node concept="1uLkD0" id="7TNKM_PCz6b" role="1uLvPA">
+        <property role="TrG5h" value="matchingSequences" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="7TNKM_PCz6d" role="2$rEHq">
+      <ref role="2$rEH4" to="hg90:1WG1fjcGqMw" resolve="Sort" />
+      <node concept="1uYdA0" id="7TNKM_PCz6e" role="1uLvPH">
+        <ref role="1uK_4X" node="7TNKM_PCz6b" resolve="matchingSequences" />
+      </node>
+      <node concept="1uLkD0" id="7TNKM_PCz6f" role="1uLvPA">
+        <property role="TrG5h" value="sortedSequences" />
+      </node>
+    </node>
+    <node concept="19SGf9" id="7TNKM_PCz6g" role="GZ$AB">
+      <node concept="19SUe$" id="7TNKM_PCz6h" role="19SJt6">
+        <property role="19SUeA" value="This workflow searches for a specific pattern in a set of input sequences, sorts the matching sequences and prints them." />
+      </node>
+    </node>
+    <node concept="3ZW7eb" id="7TNKM_PCz6i" role="lGtFl">
       <property role="2ripvU" value="1" />
       <property role="TrG5h" value="Workflow1_Execution3" />
       <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
