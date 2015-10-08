@@ -247,9 +247,7 @@
         <property id="1859325667733444128" name="command" index="3yMj3R" />
         <reference id="1859325667733099571" name="image" index="3zcJb$" />
       </concept>
-      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
-        <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
-      </concept>
+      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3" />
       <concept id="1893262236499908796" name="org.campagnelab.docker.structure.DockerContainer" flags="ng" index="VuMX5">
         <property id="6819868375264208052" name="id" index="GbyUj" />
         <property id="1893262236499912677" name="tag" index="VuL0s" />
@@ -274,10 +272,10 @@
     <node concept="NgwLd" id="5rs0_U9gls0" role="1QJbqZ">
       <node concept="19SGf9" id="5rs0_U9gls2" role="3Y$PkS">
         <node concept="19SUe$" id="5rs0_U9gls3" role="19SJt6">
-          <property role="19SUeA" value="" />
+          <property role="19SUeA" value="&#10;" />
         </node>
         <node concept="1OktH4" id="5rs0_U9glAC" role="19SJt6">
-          <ref role="26mB_n" node="1CWHgioRk5r" resolve="interactive" />
+          <ref role="26mB_n" node="3SdTHXkxQvp" />
           <node concept="19OFZp" id="5rs0_U9glAD" role="26mB$C">
             <property role="26mB$E" value="" />
             <node concept="31HMC_" id="5rs0_U9glAE" role="19OIOa">
@@ -296,7 +294,7 @@
           <property role="19SUeA" value="quant --index=" />
         </node>
         <node concept="1OktH4" id="5rs0_U9glAI" role="19SJt6">
-          <ref role="26mB_n" node="1CWHgioRk5r" resolve="interactive" />
+          <ref role="26mB_n" node="3SdTHXkxQvp" />
           <node concept="19OFZp" id="5rs0_U9glAJ" role="26mB$C">
             <property role="26mB$E" value="" />
             <node concept="31HMC_" id="5rs0_U9glAK" role="19OIOa">
@@ -729,15 +727,10 @@
         </node>
       </node>
     </node>
-    <node concept="GbKB8" id="1CWHgioRk5r" role="234boB">
+    <node concept="VtuK3" id="3SdTHXkxQvp" role="234boB">
       <property role="VuL0s" value="latest" />
-      <property role="3yMj3R" value="sleep 1000" />
-      <property role="GbyUj" value="artifact-software" />
-      <property role="3zaeVo" value="true" />
+      <property role="GbyUj" value="artifact-software-gcc4.8" />
       <property role="VuL0v" value="mas2181" />
-      <property role="TrG5h" value="interactive" />
-      <property role="1vm7qE" value="true" />
-      <ref role="3zcJb$" node="1CWHgioRk5s" resolve="image" />
     </node>
   </node>
   <node concept="3lueso" id="6WmCE$Kpbn8">

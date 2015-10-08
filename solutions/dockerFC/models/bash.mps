@@ -432,7 +432,7 @@
     <ref role="9QaQ6" node="10rnQzwTSBL" resolve="manuele simi" />
     <node concept="Eubbw" id="10rnQzwTSvW" role="Esi$J">
       <property role="3NC_3j" value="176" />
-      <property role="Eu9oP" value="2_${org.campagnelab.gobyweb.pluginRepo}" />
+      <property role="Eu9oP" value="${org.campagnelab.gobyweb.pluginRepo}" />
       <property role="3NDmBG" value="true" />
       <property role="2_qfHq" value="true" />
       <property role="G2cSm" value="KAL" />
@@ -8436,7 +8436,7 @@
       </node>
     </node>
     <node concept="3lubAv" id="10rnQzwXsre" role="3lu1Za">
-      <property role="EkYqe" value="/Users/fac2003_2/ARTIFACT_REPO" />
+      <property role="EkYqe" value="/Users/fac2003/ARTIFACT_REPO" />
     </node>
   </node>
   <node concept="9PoQv" id="10rnQzwTSyK">

@@ -16,6 +16,7 @@
   <exported-language name="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5(org.campagnelab.nyosh.environment)" />
   <exported-language name="57af9408-ffae-472e-9367-5cb44434e8b3(org.campagnelab.gobyweb.interactive.users)" />
   <exported-language name="901f5cf3-dc77-4c1e-bc5a-6382baee28b4(org.campagnelab.textoutput)" />
+  <exported-language name="5cf93bc1-d0da-4893-b739-63b17fe296b1(org.campagnelab.workflow.nyosh)" />
   <exported-solutions>
     <exported-solution>63ed0b3a-e2ca-4245-8600-dfbe1ddba42b(org.campagnelab.docker.bash.run)</exported-solution>
   </exported-solutions>

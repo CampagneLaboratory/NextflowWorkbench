@@ -665,11 +665,11 @@
   <node concept="2EEQw1" id="6zGYz0lS31d">
     <property role="3GE5qa" value="docker" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tls --tlscacert=/Users/fac2003/.docker/machine/machines/dev/ca.pem --tlscert=/Users/fac2003/.docker/machine/machines/dev/cert.pem --tlskey=/Users/fac2003/.docker/machine/machines/dev/key.pem -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlskey ..." />
     <node concept="3ZW7eb" id="6zGYz0lS354" role="lGtFl">
       <property role="2ripvU" value="1" />
       <property role="TrG5h" value="DockerConfigRootNode" />
-      <ref role="KZaLW" to="q1qp:3WNK9KXJFMx" resolve="JasonFIGURES" />
+      <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
     </node>
   </node>
   <node concept="2ulcR8" id="6zGYz0lQHFt">
