@@ -183,7 +183,6 @@
       <concept id="1935021530044443661" name="org.campagnelab.bash.nyosh.structure.NyoshPathPart" flags="ng" index="19OFZp">
         <child id="1935021530044464862" name="env" index="19OIOa" />
       </concept>
-      <concept id="2009822324653298099" name="org.campagnelab.bash.nyosh.structure.LatestVersion" flags="ng" index="1xu4dM" />
       <concept id="1311266352922359807" name="org.campagnelab.bash.nyosh.structure.RequestedResource" flags="ng" index="3xUnCN">
         <property id="27429407127623468" name="select" index="24nana" />
         <property id="1008131731648663094" name="message" index="3Ui_h1" />
@@ -191,7 +190,6 @@
         <reference id="1293726533003473840" name="resourceRange" index="1PROVt" />
         <child id="1307305182958727031" name="rangeCopy" index="xr5hk" />
         <child id="7355343239195321265" name="dependencies" index="3bnoS5" />
-        <child id="1008131731651673606" name="resourceVersionRange" index="3U62hL" />
       </concept>
       <concept id="5359535375769542754" name="org.campagnelab.bash.nyosh.structure.DependencyResource" flags="ng" index="1NwGl_" />
       <concept id="5359535375768188197" name="org.campagnelab.bash.nyosh.structure.ScriptResource" flags="ng" index="1NFp0y">
@@ -9113,7 +9111,7 @@
             <property role="26mB$E" value="" />
             <property role="26mB_l" value="true" />
             <node concept="31HMC_" id="Nz$a9n4a6y" role="19OIOa">
-              <ref role="31HMCX" node="Nz$a9n4aay" resolve="artifact path SALMON_INDEX.INDEX" />
+              <ref role="31HMCX" node="Nz$a9n7RvM" resolve="artifact path SALMON_INDEX.INDEX" />
             </node>
           </node>
           <node concept="26mB$F" id="Nz$a9n4a6z" role="26mB$C">
@@ -9121,14 +9119,14 @@
           </node>
         </node>
         <node concept="19SUe$" id="Nz$a9n4a6t" role="19SJt6">
-          <property role="19SUeA" value="&#10;echo ${TRANSCRIPT_INDEX=}&#10;mkdir ${SAMPLE_NAME}&#10;#" />
+          <property role="19SUeA" value="&#10;echo ${TRANSCRIPT_INDEX=}&#10;mkdir ${SAMPLE_NAME}&#10;# Unable to find ref to BINARIES resource for SALMON. Pretty sure it should be there.&#10;#" />
         </node>
         <node concept="1OktH4" id="Nz$a9n3ZJs" role="19SJt6">
           <ref role="26mB_n" node="Nz$a9n4a8P" resolve="interactive" />
           <node concept="19OFZp" id="Nz$a9n3ZJt" role="26mB$C">
             <property role="26mB$E" value="" />
             <node concept="31HMC_" id="Nz$a9n3ZJu" role="19OIOa">
-              <ref role="31HMCX" node="Nz$a9n4aay" resolve="artifact path SALMON_INDEX.INDEX" />
+              <ref role="31HMCX" node="Nz$a9n7RvM" resolve="artifact path SALMON_INDEX.INDEX" />
             </node>
           </node>
           <node concept="26mB$F" id="Nz$a9n3ZJv" role="26mB$C">
@@ -9155,6 +9153,7 @@
           <property role="3xVD5K" value="SALMON_INDEX" />
           <property role="24nana" value="la" />
           <ref role="1PROVt" node="Nz$a9n49_u" resolve="SALMON_INDEX" />
+          <ref role="1PROJ1" node="Nz$a9n49_v" resolve="0.5.0" />
           <ref role="x1kBk" node="Nz$a9n49_E" resolve="SALMON_INDEX" />
           <node concept="2vzQjv" id="Nz$a9n49_u" role="xr5hk">
             <property role="TrG5h" value="SALMON_INDEX" />
@@ -9162,99 +9161,98 @@
               <property role="TrG5h" value="0.5.0" />
             </node>
           </node>
-          <node concept="1xu4dM" id="Nz$a9n49Bq" role="3U62hL" />
-          <node concept="2vnsz3" id="Nz$a9n4a8T" role="1NFp1Y">
-            <property role="2vk9_M" value="SALMON_INDEX" />
-            <property role="2vk9_N" value="INDEX" />
-            <property role="TrG5h" value="organism" />
-            <node concept="2t8VsU" id="Nz$a9n4a8U" role="2vnsw6">
-              <property role="2t8Vu2" value="Homo_sapiend" />
-              <property role="TrG5h" value="organism" />
-            </node>
-          </node>
-          <node concept="2vnsz3" id="Nz$a9n4a8V" role="1NFp1Y">
-            <property role="2vk9_M" value="SALMON_INDEX" />
-            <property role="2vk9_N" value="INDEX" />
-            <property role="TrG5h" value="reference-build" />
-            <node concept="2t8VsU" id="Nz$a9n4a8W" role="2vnsw6">
-              <property role="2t8Vu2" value="GRCh38" />
-              <property role="TrG5h" value="reference-build" />
-            </node>
-          </node>
-          <node concept="2vnsz3" id="Nz$a9n4a8X" role="1NFp1Y">
-            <property role="2vk9_M" value="SALMON_INDEX" />
-            <property role="2vk9_N" value="INDEX" />
-            <property role="TrG5h" value="ensembl-version-number" />
-            <node concept="2t8VsU" id="Nz$a9n4a8Y" role="2vnsw6">
-              <property role="2t8Vu2" value="82" />
-              <property role="TrG5h" value="ensembl-version-number" />
-            </node>
-          </node>
-          <node concept="1NwGl_" id="Nz$a9n4a8Z" role="3bnoS5" />
-          <node concept="1NwGl_" id="Nz$a9n4a90" role="3bnoS5" />
-          <node concept="31HOkp" id="Nz$a9n4aat" role="31jqfU">
+          <node concept="31HOkp" id="Nz$a9n7RvH" role="31jqfU">
             <property role="TrG5h" value="value of SALMON_INDEX.INDEX.ensembl-version-number" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_ENSEMBL_VERSION_NUMBER" />
-            <node concept="31jouD" id="Nz$a9n4aas" role="31HOkl">
+            <node concept="31jouD" id="Nz$a9n7RvG" role="31HOkl">
               <property role="31jql3" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_" />
               <property role="3pPHmd" value="INDEX" />
               <property role="KY_Hm" value="SALMON_INDEX" />
               <property role="3GSlvM" value="ensembl-version-number" />
             </node>
           </node>
-          <node concept="31HOkp" id="Nz$a9n4aay" role="31jqfU">
+          <node concept="31HOkp" id="Nz$a9n7RvM" role="31jqfU">
             <property role="TrG5h" value="artifact path SALMON_INDEX.INDEX" />
-            <property role="3oicoW" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_HOMO_SAPIEND_GRCH38_82" />
-            <node concept="31josK" id="Nz$a9n4aau" role="31HOkl">
+            <property role="3oicoW" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_HOMO_SAPIENS_GRCH38_82" />
+            <node concept="31josK" id="Nz$a9n7RvI" role="31HOkl">
               <property role="31jqiE" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX" />
               <property role="KTmAF" value="SALMON_INDEX" />
               <property role="3oiRSB" value="INDEX" />
-              <node concept="31jqtl" id="Nz$a9n4aav" role="31jqr$">
+              <node concept="31jqtl" id="Nz$a9n7RvJ" role="31jqr$">
                 <property role="3GzU61" value="organism" />
                 <property role="3GzU6q" value="SALMON_INDEX" />
                 <property role="3GzU6s" value="INDEX" />
               </node>
-              <node concept="31jqtl" id="Nz$a9n4aaw" role="31jqr$">
+              <node concept="31jqtl" id="Nz$a9n7RvK" role="31jqr$">
                 <property role="3GzU61" value="reference-build" />
                 <property role="3GzU6q" value="SALMON_INDEX" />
                 <property role="3GzU6s" value="INDEX" />
               </node>
-              <node concept="31jqtl" id="Nz$a9n4aax" role="31jqr$">
+              <node concept="31jqtl" id="Nz$a9n7RvL" role="31jqr$">
                 <property role="3GzU61" value="ensembl-version-number" />
                 <property role="3GzU6q" value="SALMON_INDEX" />
                 <property role="3GzU6s" value="INDEX" />
               </node>
             </node>
           </node>
-          <node concept="31HOkp" id="Nz$a9n4aa$" role="31jqfU">
+          <node concept="31HOkp" id="Nz$a9n7RvO" role="31jqfU">
             <property role="TrG5h" value="value of SALMON_INDEX.INDEX.organism" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_ORGANISM" />
-            <node concept="31jouD" id="Nz$a9n4aaz" role="31HOkl">
+            <node concept="31jouD" id="Nz$a9n7RvN" role="31HOkl">
               <property role="31jql3" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_" />
               <property role="3pPHmd" value="INDEX" />
               <property role="KY_Hm" value="SALMON_INDEX" />
               <property role="3GSlvM" value="organism" />
             </node>
           </node>
-          <node concept="31HOkp" id="Nz$a9n4aaA" role="31jqfU">
+          <node concept="31HOkp" id="Nz$a9n7RvQ" role="31jqfU">
             <property role="TrG5h" value="value of SALMON_INDEX.INDEX.reference-build" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_REFERENCE_BUILD" />
-            <node concept="31jouD" id="Nz$a9n4aa_" role="31HOkl">
+            <node concept="31jouD" id="Nz$a9n7RvP" role="31HOkl">
               <property role="31jql3" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_" />
               <property role="3pPHmd" value="INDEX" />
               <property role="KY_Hm" value="SALMON_INDEX" />
               <property role="3GSlvM" value="reference-build" />
             </node>
           </node>
-          <node concept="31HOkp" id="Nz$a9n4aaC" role="31jqfU">
+          <node concept="31HOkp" id="Nz$a9n7RvS" role="31jqfU">
             <property role="TrG5h" value="file SALMON_INDEX/INSTALL" />
             <property role="3oicoW" value="RESOURCES_SALMON_INDEX_INSTALL" />
-            <node concept="31jotn" id="Nz$a9n4aaB" role="31HOkl">
+            <node concept="31jotn" id="Nz$a9n7RvR" role="31HOkl">
               <property role="31jswE" value="INSTALL" />
               <property role="31jswI" value="RESOURCES_SALMON_INDEX" />
               <property role="KVZ4R" value="SALMON_INDEX" />
             </node>
           </node>
+          <node concept="2vnsz3" id="Nz$a9n7Rw6" role="1NFp1Y">
+            <property role="2vk9_M" value="SALMON_INDEX" />
+            <property role="2vk9_N" value="INDEX" />
+            <property role="TrG5h" value="organism" />
+            <node concept="2t8VsU" id="Nz$a9n7Rw7" role="2vnsw6">
+              <property role="2t8Vu2" value="Homo_sapiens" />
+              <property role="TrG5h" value="organism" />
+            </node>
+          </node>
+          <node concept="2vnsz3" id="Nz$a9n7Rw8" role="1NFp1Y">
+            <property role="2vk9_M" value="SALMON_INDEX" />
+            <property role="2vk9_N" value="INDEX" />
+            <property role="TrG5h" value="reference-build" />
+            <node concept="2t8VsU" id="Nz$a9n7Rw9" role="2vnsw6">
+              <property role="2t8Vu2" value="GRCh38" />
+              <property role="TrG5h" value="reference-build" />
+            </node>
+          </node>
+          <node concept="2vnsz3" id="Nz$a9n7Rwa" role="1NFp1Y">
+            <property role="2vk9_M" value="SALMON_INDEX" />
+            <property role="2vk9_N" value="INDEX" />
+            <property role="TrG5h" value="ensembl-version-number" />
+            <node concept="2t8VsU" id="Nz$a9n7Rwb" role="2vnsw6">
+              <property role="2t8Vu2" value="82" />
+              <property role="TrG5h" value="ensembl-version-number" />
+            </node>
+          </node>
+          <node concept="1NwGl_" id="Nz$a9n7Rwc" role="3bnoS5" />
+          <node concept="1NwGl_" id="Nz$a9n7Rwd" role="3bnoS5" />
         </node>
         <node concept="x1lOp" id="Nz$a9n3ZKu" role="2OBJyK">
           <node concept="3jXL5H" id="Nz$a9n3ZKv" role="x1lOo">
