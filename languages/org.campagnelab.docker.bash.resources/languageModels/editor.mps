@@ -890,13 +890,10 @@
     <ref role="1XX52x" to="iuj9:1ihAOqnKa_C" resolve="InstallGobyWebArtifacts" />
     <node concept="3EZMnI" id="1ihAOqnKcw9" role="2wV5jI">
       <node concept="3F0ifn" id="1ihAOqnKcwa" role="3EZMnx">
-        <property role="3F0ifm" value="install gobyweb artifacts " />
+        <property role="3F0ifm" value="install gobyweb artifacts" />
       </node>
       <node concept="3F1sOY" id="6LCvS2pPr60" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:6LCvS2pPqdF" />
-      </node>
-      <node concept="3F0ifn" id="1ihAOqnO_Iu" role="3EZMnx">
-        <property role="3F0ifm" value=";" />
       </node>
       <node concept="l2Vlx" id="1ihAOqnKcwl" role="2iSdaV" />
     </node>

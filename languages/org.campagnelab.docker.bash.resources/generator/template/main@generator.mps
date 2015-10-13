@@ -9,9 +9,11 @@
     <use id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive" version="-1" />
+    <use id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="e9l6" ref="r:8e2e0168-4b18-4ff9-974b-a9396db222a2(org.campagnelab.gobyweb.plugins.generator.template.main@generator)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="lcm8" ref="r:19e666fd-ce33-4549-bbc2-aa106ce25584(org.campagnelab.gobyweb.interactive.behavior)" implicit="true" />
     <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" implicit="true" />
@@ -40,7 +42,16 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
     </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
+    </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
+        <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
+      </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
       </concept>
@@ -64,6 +75,7 @@
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
+      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -72,6 +84,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -87,6 +102,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
+      <concept id="1893262236500048401" name="org.campagnelab.docker.structure.RunInstruction" flags="ng" index="VugRC">
+        <child id="1893262236500049774" name="command" index="Vugyn" />
+      </concept>
+      <concept id="5650734312793241900" name="org.campagnelab.docker.structure.DockerCommand" flags="ng" index="1$joB7">
+        <property id="7228518373851438570" name="commandName" index="31B4r3" />
+      </concept>
+    </language>
   </registry>
   <node concept="bUwia" id="18MzsNNQX7G">
     <property role="TrG5h" value="main" />
@@ -94,6 +117,12 @@
       <ref role="30HIoZ" to="iuj9:6A9boVQTofD" resolve="ReferenceAttribute" />
       <node concept="j$656" id="6QVw52glE0N" role="1lVwrX">
         <ref role="v9R2y" node="6QVw52glE0J" resolve="reduce_ReferenceAttribute" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="7kooit9awKE" role="3acgRq">
+      <ref role="30HIoZ" to="iuj9:1ihAOqnKa_C" resolve="InstallGobyWebArtifacts" />
+      <node concept="j$656" id="7kooit9awKF" role="1lVwrX">
+        <ref role="v9R2y" node="7kooit9awKC" resolve="reduce_InstallGobyWebArtifacts" />
       </node>
     </node>
   </node>
@@ -136,6 +165,40 @@
                 </node>
                 <node concept="2qgKlT" id="6QVw52glUWn" role="2OqNvi">
                   <ref role="37wK5l" to="lcm8:1e0XlmeCJpp" resolve="valueAsString" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="7kooit9awKC">
+    <property role="TrG5h" value="reduce_InstallGobyWebArtifacts" />
+    <property role="3GE5qa" value="docker" />
+    <ref role="3gUMe" to="iuj9:1ihAOqnKa_C" resolve="InstallGobyWebArtifacts" />
+    <node concept="VugRC" id="7kooit9ayMq" role="13RCb5">
+      <node concept="19SGf9" id="7kooit9az2W" role="Vugyn">
+        <node concept="19SUe$" id="7kooit9b1zb" role="19SJt6" />
+        <node concept="1$joB7" id="7kooit9b1za" role="19SJt6">
+          <property role="31B4r3" value="plugins-submit-job" />
+        </node>
+        <node concept="19SUe$" id="7kooit9b1zc" role="19SJt6" />
+      </node>
+      <node concept="raruj" id="7kooit9az30" role="lGtFl" />
+      <node concept="2b32R4" id="7kooit9aZz8" role="lGtFl">
+        <node concept="3JmXsc" id="7kooit9aZzb" role="2P8S$">
+          <node concept="3clFbS" id="7kooit9aZzc" role="2VODD2">
+            <node concept="3clFbF" id="7kooit9aZzi" role="3cqZAp">
+              <node concept="2OqwBi" id="7kooit9b0LS" role="3clFbG">
+                <node concept="2OqwBi" id="7kooit9aZzd" role="2Oq$k0">
+                  <node concept="30H73N" id="7kooit9aZzh" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7kooit9b076" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iuj9:6LCvS2pPqdF" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="7kooit9b11V" role="2OqNvi">
+                  <ref role="3TtcxE" to="iuj9:5VB4_zEuuFB" />
                 </node>
               </node>
             </node>
