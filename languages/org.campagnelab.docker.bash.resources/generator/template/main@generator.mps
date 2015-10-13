@@ -177,7 +177,7 @@
       <node concept="raruj" id="7kooit9i2hY" role="lGtFl" />
       <node concept="19SGf9" id="7kooit9i2i0" role="Vugyn">
         <node concept="19SUe$" id="7kooit9i2i1" role="19SJt6">
-          <property role="19SUeA" value="echo" />
+          <property role="19SUeA" value="install  resources" />
           <node concept="29HgVG" id="7kooit9i2i5" role="lGtFl">
             <node concept="3NFfHV" id="7kooit9i2i6" role="3NFExx">
               <node concept="3clFbS" id="7kooit9i2i7" role="2VODD2">
