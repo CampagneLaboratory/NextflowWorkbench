@@ -206,6 +206,9 @@
   <node concept="24kQdi" id="5yyd2HFS3Cv">
     <ref role="1XX52x" to="iuj9:5yyd2HFS3xA" resolve="NYoShAwareScript" />
     <node concept="3EZMnI" id="5yyd2HFS3D1" role="2wV5jI">
+      <node concept="3F0ifn" id="3jQcDYNB1t_" role="3EZMnx">
+        <property role="3F0ifm" value="requires" />
+      </node>
       <node concept="3F1sOY" id="5VB4_zEuxK0" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:5VB4_zEuxaq" />
       </node>
@@ -902,9 +905,6 @@
     <property role="3GE5qa" value="resources" />
     <ref role="1XX52x" to="iuj9:5VB4_zEupZX" resolve="ResourceSpecification" />
     <node concept="3EZMnI" id="5VB4_zEuvan" role="2wV5jI">
-      <node concept="3F0ifn" id="5VB4_zEuvaQ" role="3EZMnx">
-        <property role="3F0ifm" value="requires" />
-      </node>
       <node concept="3F2HdR" id="5VB4_zEuvaR" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:5VB4_zEuuFB" />
         <node concept="lj46D" id="5VB4_zEuvaS" role="3F10Kt">
