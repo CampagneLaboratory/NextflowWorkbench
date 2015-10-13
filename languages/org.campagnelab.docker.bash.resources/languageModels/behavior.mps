@@ -5638,7 +5638,7 @@
             <node concept="2OqwBi" id="1c4JsiUU_k$" role="37vLTJ">
               <node concept="13iPFW" id="1c4JsiUU$Fa" role="2Oq$k0" />
               <node concept="3TrcHB" id="1c4JsiUU_AM" role="2OqNvi">
-                <ref role="3TsBF5" to="iuj9:1c4JsiUUxOc" resolve="showFullInstallationLog" />
+                <ref role="3TsBF5" to="iuj9:1c4JsiUUxOc" resolve="showFullInstallationActivity" />
               </node>
             </node>
           </node>

@@ -160,7 +160,7 @@
   </registry>
   <node concept="2EEQw1" id="xP2fmw4TV1">
     <property role="2EEQw2" value="/usr/local/bin//docker" />
-    <property role="2E$TAj" value="--tls --tlscacert=/Users/manuelesimi/.docker/machine/machines/dev/ca.pem --tlscert=/Users/manuelesimi/.docker/machine/machines/dev/cert.pem --tlskey=/Users/manuelesimi/.docker/machine/machines/dev/key.pem -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
   <node concept="VuPG2" id="3ybzEM9IngG">
     <property role="TrG5h" value="TestGobyWebArtifacts" />

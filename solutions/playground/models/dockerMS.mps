@@ -268,7 +268,7 @@
   </registry>
   <node concept="2EEQw1" id="xP2fmw4TV1">
     <property role="2EEQw2" value="/usr/local/bin//docker" />
-    <property role="2E$TAj" value="--tls --tlscacert=/Users/manuelesimi/.docker/machine/machines/dev/ca.pem --tlscert=/Users/manuelesimi/.docker/machine/machines/dev/cert.pem --tlskey=/Users/manuelesimi/.docker/machine/machines/dev/key.pem -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
   <node concept="3lueso" id="10rnQzwTSvV">
     <property role="TrG5h" value="NYoShScriptEnv" />
@@ -8256,7 +8256,7 @@
       </node>
     </node>
     <node concept="3lubAv" id="10rnQzwXsre" role="3lu1Za">
-      <property role="EkYqe" value="/Users/manuelesimi/temp/artifacts" />
+      <property role="EkYqe" value="/Users/mas2182/temp/ARTIFACT_REPOSITORY" />
     </node>
   </node>
   <node concept="9PoQv" id="10rnQzwTSyK">
@@ -9396,7 +9396,7 @@
   <node concept="1QJbas" id="3jQcDYNauer">
     <property role="TrG5h" value="ScriptWithSAMTOOLS" />
     <node concept="VtuK3" id="3jQcDYNaufK" role="234boB">
-      <property role="VuL0s" value="latest" />
+      <property role="VuL0s" value="1.3.0" />
       <property role="VuL0v" value="mas2181" />
       <property role="GbyUj" value="artifact-software" />
       <property role="3zaeVo" value="true" />
