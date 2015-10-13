@@ -383,6 +383,7 @@
     <node concept="1TJgyj" id="6LCvS2pPqdF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="resourceSpecs" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5VB4_zEupZX" resolve="ResourceSpecification" />
     </node>
     <node concept="PrWs8" id="3jQcDYO0GMc" role="PzmwI">

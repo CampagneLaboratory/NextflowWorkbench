@@ -9,9 +9,9 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.generator.template.IfMacroContext;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
-import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 
 @Generated
 public class QueriesGenerated {
@@ -23,12 +23,9 @@ public class QueriesGenerated {
     return BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0xf55d6853b37341ddL, 0xbc8e331fd6e2c764L, 0x69892d8ef6e583e9L, 0x69892d8ef6e5840bL, "ref")), "virtual_valueAsString_1405392831553664601", new Object[]{});
   }
   public static boolean ifMacro_Condition_3816293395740355990(final IfMacroContext _context) {
-    return (SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf55d6853b37341ddL, 0xbc8e331fd6e2c764L, 0x14919b4697c0a968L, 0x6c687f8099d5a36bL, "resourceSpecs")) != null);
+    return ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf55d6853b37341ddL, 0xbc8e331fd6e2c764L, 0x14919b4697c0a968L, 0x6c687f8099d5a36bL, "resourceSpecs")), MetaAdapterFactory.getContainmentLink(0xf55d6853b37341ddL, 0xbc8e331fd6e2c764L, 0x5ee71258ea799ffdL, 0x5ee71258ea79eae7L, "requires"))).isNotEmpty();
   }
   public static SNode sourceNodeQuery_8437600723239707782(final SourceSubstituteMacroNodeContext _context) {
-    return _context.getNode();
-  }
-  public static Iterable<SNode> sourceNodesQuery_3816293395740368700(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf55d6853b37341ddL, 0xbc8e331fd6e2c764L, 0x14919b4697c0a968L, 0x6c687f8099d5a36bL, "resourceSpecs")), MetaAdapterFactory.getContainmentLink(0xf55d6853b37341ddL, 0xbc8e331fd6e2c764L, 0x5ee71258ea799ffdL, 0x5ee71258ea79eae7L, "requires"));
+    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf55d6853b37341ddL, 0xbc8e331fd6e2c764L, 0x14919b4697c0a968L, 0x6c687f8099d5a36bL, "resourceSpecs"));
   }
 }
