@@ -161,11 +161,6 @@
         <property id="8987412447080623507" name="options" index="2E$TAj" />
         <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
       </concept>
-      <concept id="6819868375264134127" name="org.campagnelab.docker.structure.RunningContainer" flags="ng" index="GbKB8">
-        <property id="1464761952898881430" name="running" index="1vm7qE" />
-        <property id="1859325667733444128" name="command" index="3yMj3R" />
-        <reference id="1859325667733099571" name="image" index="3zcJb$" />
-      </concept>
       <concept id="6819868375258175840" name="org.campagnelab.docker.structure.TagInfo" flags="ng" index="Gyxd7">
         <property id="6819868375258175846" name="tag" index="Gyxd1" />
         <property id="6819868375258175942" name="userName" index="Gyxfx" />
@@ -8519,15 +8514,6 @@
       <property role="9PdgW" value="manuele" />
       <property role="TrG5h" value="manuele simi" />
     </node>
-  </node>
-  <node concept="GbKB8" id="3jQcDYN9uwo">
-    <property role="VuL0s" value="latest" />
-    <property role="TrG5h" value="BCDWPRUTOL" />
-    <property role="VuL0v" value="mas2181" />
-    <property role="GbyUj" value="artifact-software" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="" />
-    <ref role="3zcJb$" node="3jQcDYN97FC" resolve="artifact-software-base_Image" />
   </node>
   <node concept="VuPG2" id="3d0Dghcgitr">
     <property role="3GE5qa" value="dockerfiles" />
