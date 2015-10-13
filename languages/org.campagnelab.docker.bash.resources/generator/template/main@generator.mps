@@ -46,11 +46,13 @@
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
       </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
-      <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
-        <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
+      <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
+        <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
@@ -75,7 +77,7 @@
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
-      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
+      <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -84,9 +86,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -105,9 +104,6 @@
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
       <concept id="1893262236500048401" name="org.campagnelab.docker.structure.RunInstruction" flags="ng" index="VugRC">
         <child id="1893262236500049774" name="command" index="Vugyn" />
-      </concept>
-      <concept id="5650734312793241900" name="org.campagnelab.docker.structure.DockerCommand" flags="ng" index="1$joB7">
-        <property id="7228518373851438570" name="commandName" index="31B4r3" />
       </concept>
     </language>
   </registry>
@@ -177,28 +173,21 @@
     <property role="TrG5h" value="reduce_InstallGobyWebArtifacts" />
     <property role="3GE5qa" value="docker" />
     <ref role="3gUMe" to="iuj9:1ihAOqnKa_C" resolve="InstallGobyWebArtifacts" />
-    <node concept="VugRC" id="7kooit9ayMq" role="13RCb5">
-      <node concept="19SGf9" id="7kooit9az2W" role="Vugyn">
-        <node concept="19SUe$" id="7kooit9b1zb" role="19SJt6" />
-        <node concept="1$joB7" id="7kooit9b1za" role="19SJt6">
-          <property role="31B4r3" value="plugins-submit-job" />
-        </node>
-        <node concept="19SUe$" id="7kooit9b1zc" role="19SJt6" />
-      </node>
-      <node concept="raruj" id="7kooit9az30" role="lGtFl" />
-      <node concept="2b32R4" id="7kooit9aZz8" role="lGtFl">
-        <node concept="3JmXsc" id="7kooit9aZzb" role="2P8S$">
-          <node concept="3clFbS" id="7kooit9aZzc" role="2VODD2">
-            <node concept="3clFbF" id="7kooit9aZzi" role="3cqZAp">
-              <node concept="2OqwBi" id="7kooit9b0LS" role="3clFbG">
-                <node concept="2OqwBi" id="7kooit9aZzd" role="2Oq$k0">
-                  <node concept="30H73N" id="7kooit9aZzh" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="7kooit9b076" role="2OqNvi">
-                    <ref role="3Tt5mk" to="iuj9:6LCvS2pPqdF" />
+    <node concept="VugRC" id="7kooit9i2hV" role="13RCb5">
+      <node concept="raruj" id="7kooit9i2hY" role="lGtFl" />
+      <node concept="19SGf9" id="7kooit9i2i0" role="Vugyn">
+        <node concept="19SUe$" id="7kooit9i2i1" role="19SJt6">
+          <property role="19SUeA" value="echo" />
+          <node concept="29HgVG" id="7kooit9i2i5" role="lGtFl">
+            <node concept="3NFfHV" id="7kooit9i2i6" role="3NFExx">
+              <node concept="3clFbS" id="7kooit9i2i7" role="2VODD2">
+                <node concept="3clFbF" id="7kooit9i2id" role="3cqZAp">
+                  <node concept="2OqwBi" id="7kooit9i2i8" role="3clFbG">
+                    <node concept="3TrEf2" id="7kooit9i2ib" role="2OqNvi">
+                      <ref role="3Tt5mk" to="iuj9:6LCvS2pPqdF" />
+                    </node>
+                    <node concept="30H73N" id="7kooit9i2ic" role="2Oq$k0" />
                   </node>
-                </node>
-                <node concept="3Tsc0h" id="7kooit9b11V" role="2OqNvi">
-                  <ref role="3TtcxE" to="iuj9:5VB4_zEuuFB" />
                 </node>
               </node>
             </node>

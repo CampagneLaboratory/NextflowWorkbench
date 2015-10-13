@@ -261,27 +261,6 @@
             <node concept="3x8VRR" id="29U0K5djU2V" role="2OqNvi" />
           </node>
         </node>
-        <node concept="lc7rE" id="6A9boVQ50cu" role="3cqZAp">
-          <node concept="la8eA" id="6A9boVQ50e9" role="lcghm">
-            <property role="lacIc" value="source $HOME/.bashrc" />
-          </node>
-          <node concept="l8MVK" id="6A9boVQceNu" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="6A9boVQd2md" role="3cqZAp">
-          <node concept="la8eA" id="6A9boVQd2p4" role="lcghm">
-            <property role="lacIc" value="RESOURCE_OWNER=nyosh" />
-          </node>
-          <node concept="l8MVK" id="6A9boVQd2tz" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="17OfmPzWcSz" role="3cqZAp">
-          <node concept="la8eA" id="17OfmPzWcS$" role="lcghm">
-            <property role="lacIc" value="ATTRIBUTES=" />
-          </node>
-          <node concept="la8eA" id="17OfmPzWcZD" role="lcghm">
-            <property role="lacIc" value=" " />
-          </node>
-          <node concept="l8MVK" id="17OfmPzWcSD" role="lcghm" />
-        </node>
         <node concept="lc7rE" id="5cVzYEjCOxo" role="3cqZAp">
           <node concept="1bDJIP" id="5cVzYEjCP1l" role="lcghm">
             <ref role="1rvKf6" node="5cVzYEjCO9V" resolve="installRequestedResources" />
@@ -390,6 +369,27 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="lc7rE" id="6A9boVQ50cu" role="3cqZAp">
+          <node concept="la8eA" id="6A9boVQ50e9" role="lcghm">
+            <property role="lacIc" value="source $HOME/.bashrc" />
+          </node>
+          <node concept="l8MVK" id="6A9boVQceNu" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="6A9boVQd2md" role="3cqZAp">
+          <node concept="la8eA" id="6A9boVQd2p4" role="lcghm">
+            <property role="lacIc" value="RESOURCE_OWNER=nyosh" />
+          </node>
+          <node concept="l8MVK" id="6A9boVQd2tz" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="17OfmPzWcSz" role="3cqZAp">
+          <node concept="la8eA" id="17OfmPzWcS$" role="lcghm">
+            <property role="lacIc" value="ATTRIBUTES=" />
+          </node>
+          <node concept="la8eA" id="17OfmPzWcZD" role="lcghm">
+            <property role="lacIc" value=" " />
+          </node>
+          <node concept="l8MVK" id="17OfmPzWcSD" role="lcghm" />
         </node>
         <node concept="2Gpval" id="5cVzYEjHGg_" role="3cqZAp">
           <node concept="2GrKxI" id="5cVzYEjHGgB" role="2Gsz3X">
