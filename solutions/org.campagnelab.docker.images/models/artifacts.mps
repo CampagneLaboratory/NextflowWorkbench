@@ -8532,7 +8532,7 @@
   <node concept="VuPG2" id="3d0Dghcgitr">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="artifact-software-base" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile3139724932096888464.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1841260697273077402.txt" />
     <node concept="VuO64" id="3d0Dghcgqgb" role="VuOVn">
       <node concept="VtuK3" id="3d0Dghcgqgc" role="VuO5T">
         <property role="VuL0s" value="1.0" />
@@ -8591,7 +8591,7 @@
     <node concept="VugRC" id="3d0Dghcgqgv" role="VuOVn">
       <node concept="19SGf9" id="3d0Dghcgqgw" role="Vugyn">
         <node concept="19SUe$" id="3d0Dghcgqgx" role="19SJt6">
-          <property role="19SUeA" value="mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export REPOSITORY_DIR=/scratchLocal/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS \&#10;&amp;&amp; echo &quot;export JOB_AREA=/home/gobyweb/GOBYWEB_SGE_JOBS&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/FILESET_AREA \&#10;&amp;&amp; echo &quot;export FILESET_AREA=/home/gobyweb/FILESET_AREA&quot; &gt;&gt; $HOME/.bashrc " />
+          <property role="19SUeA" value="mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export REPOSITORY_DIR=/scratchLocal/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS \&#10;&amp;&amp; echo &quot;export JOB_AREA=/home/gobyweb/GOBYWEB_SGE_JOBS&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/FILESET_AREA \&#10;&amp;&amp; echo &quot;export FILESET_AREA=/home/gobyweb/FILESET_AREA&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/ENVIRONMENT_AREA \&#10;&amp;&amp; echo &quot;export ENVIRONMENT_AREA=/home/gobyweb/ENVIRONMENT_AREA&quot; &gt;&gt; $HOME/.bashrc" />
         </node>
       </node>
     </node>
@@ -8605,17 +8605,17 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3jQcDYNxwyM" role="3blhQR">
-      <ref role="3blhQY" node="3jQcDYNxwyL" resolve="artifact-software-base_Image" />
+    <node concept="3blhQM" id="3jQcDYNDBG9" role="3blhQR">
+      <ref role="3blhQY" node="3jQcDYNDBG8" resolve="artifact-software-base_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="3jQcDYNamKT">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="artifact-software-gcc4.8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile3136768383859285515.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile5729273570745381605.txt" />
     <node concept="VuO64" id="3jQcDYNamKU" role="VuOVn">
       <node concept="VtuK3" id="3jQcDYNamKV" role="VuO5T">
-        <property role="VuL0s" value="1.0" />
+        <property role="VuL0s" value="1.3.0" />
         <property role="VuL0v" value="mas2181" />
         <property role="GbyUj" value="artifact-software" />
         <property role="3zaeVo" value="true" />
@@ -8645,8 +8645,8 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3jQcDYNxz_i" role="3blhQR">
-      <ref role="3blhQY" node="3jQcDYNxz_h" resolve="artifact-software-gcc4.8_Image" />
+    <node concept="3blhQM" id="3jQcDYNDDHY" role="3blhQR">
+      <ref role="3blhQY" node="3jQcDYNDDHX" resolve="artifact-software-gcc4.8_Image" />
     </node>
   </node>
   <node concept="2E_JVc" id="3jQcDYNaqnR">
@@ -8660,26 +8660,26 @@
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3jQcDYNxwyL">
-    <property role="2E_JEh" value="d92743362d0b" />
+  <node concept="2E_JVc" id="3jQcDYNDBG8">
+    <property role="2E_JEh" value="e880994a8828" />
     <property role="TrG5h" value="artifact-software-base_Image" />
-    <property role="GSh9r" value="mas2181/artifact-software:1.0" />
+    <property role="GSh9r" value="mas2181/artifact-software:1.3.0" />
     <ref role="2E_BxF" node="3d0Dghcgitr" resolve="artifact-software-base" />
-    <node concept="Gyxd7" id="3jQcDYNxx3e" role="Gyxcj">
+    <node concept="Gyxd7" id="3jQcDYNDCcG" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="artifact-software" />
-      <property role="Gyxd1" value="1.0" />
+      <property role="Gyxd1" value="1.3.0" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3jQcDYNxz_h">
-    <property role="2E_JEh" value="e241fb0ab772" />
+  <node concept="2E_JVc" id="3jQcDYNDDHX">
+    <property role="2E_JEh" value="1193cf144587" />
     <property role="TrG5h" value="artifact-software-gcc4.8_Image" />
-    <property role="GSh9r" value="mas2181/artifact-software-gcc4.8:latest" />
+    <property role="GSh9r" value="mas2181/artifact-software-gcc4.8:1.3.0" />
     <ref role="2E_BxF" node="3jQcDYNamKT" resolve="artifact-software-gcc4.8" />
-    <node concept="Gyxd7" id="3jQcDYNxz_k" role="Gyxcj">
+    <node concept="Gyxd7" id="3jQcDYNDEeu" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="artifact-software-gcc4.8" />
-      <property role="Gyxd1" value="latest" />
+      <property role="Gyxd1" value="1.3.0" />
     </node>
   </node>
 </model>
