@@ -210,7 +210,7 @@
   </registry>
   <node concept="2EEQw1" id="xP2fmw4TV1">
     <property role="2EEQw2" value="/usr/local/bin//docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
     <property role="TrG5h" value="centos-java8" />
@@ -8518,7 +8518,7 @@
   <node concept="VuPG2" id="3d0Dghcgitr">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="artifact-software-base" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1841260697273077402.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile6413571634382715794.txt" />
     <node concept="VuO64" id="3d0Dghcgqgb" role="VuOVn">
       <node concept="VtuK3" id="3d0Dghcgqgc" role="VuO5T">
         <property role="VuL0s" value="1.0" />
@@ -8591,8 +8591,8 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3jQcDYNDBG9" role="3blhQR">
-      <ref role="3blhQY" node="3jQcDYNDBG8" resolve="artifact-software-base_Image" />
+    <node concept="3blhQM" id="3XYZbe_vWSp" role="3blhQR">
+      <ref role="3blhQY" node="3XYZbe_vWSo" resolve="artifact-software-base_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="3jQcDYNamKT">
@@ -8646,17 +8646,6 @@
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3jQcDYNDBG8">
-    <property role="2E_JEh" value="e880994a8828" />
-    <property role="TrG5h" value="artifact-software-base_Image" />
-    <property role="GSh9r" value="mas2181/artifact-software:1.3.0" />
-    <ref role="2E_BxF" node="3d0Dghcgitr" resolve="artifact-software-base" />
-    <node concept="Gyxd7" id="3jQcDYNDCcG" role="Gyxcj">
-      <property role="Gyxfx" value="mas2181" />
-      <property role="TrG5h" value="artifact-software" />
-      <property role="Gyxd1" value="1.3.0" />
-    </node>
-  </node>
   <node concept="2E_JVc" id="3jQcDYNDDHX">
     <property role="2E_JEh" value="1193cf144587" />
     <property role="TrG5h" value="artifact-software-gcc4.8_Image" />
@@ -8666,6 +8655,17 @@
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="artifact-software-gcc4.8" />
       <property role="Gyxd1" value="1.3.0" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="3XYZbe_vWSo">
+    <property role="2E_JEh" value="a4e4b63d8257" />
+    <property role="TrG5h" value="artifact-software-base_Image" />
+    <property role="GSh9r" value="mas2181/artifact-software:latest" />
+    <ref role="2E_BxF" node="3d0Dghcgitr" resolve="artifact-software-base" />
+    <node concept="Gyxd7" id="3XYZbe_w2MC" role="Gyxcj">
+      <property role="Gyxfx" value="mas2181" />
+      <property role="TrG5h" value="artifact-software" />
+      <property role="Gyxd1" value="latest" />
     </node>
   </node>
 </model>

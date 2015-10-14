@@ -1534,8 +1534,17 @@
       <node concept="3clFbS" id="Pnf3Vu0x6L" role="2VODD2">
         <node concept="lc7rE" id="Pnf3Vu0xxr" role="3cqZAp">
           <node concept="la8eA" id="Pnf3Vu0xxD" role="lcghm">
-            <property role="lacIc" value="#TODO: add code to install artifacts inside the image" />
+            <property role="lacIc" value="RUN " />
           </node>
+          <node concept="l9hG8" id="3XYZbe_A4nU" role="lcghm">
+            <node concept="2OqwBi" id="3XYZbe_A5OZ" role="lb14g">
+              <node concept="117lpO" id="3XYZbe_A5u4" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3XYZbe_AfZq" role="2OqNvi">
+                <ref role="3Tt5mk" to="iuj9:6LCvS2pPqdF" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="3XYZbe_Ag5E" role="lcghm" />
         </node>
       </node>
     </node>
