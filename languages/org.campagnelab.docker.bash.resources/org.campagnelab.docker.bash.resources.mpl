@@ -19,6 +19,7 @@
         <dependency reexport="false">3b74e3b7-7336-414d-8899-64a293a44a07(org.campagnelab.docker.bash)</dependency>
         <dependency reexport="false" scope="design">2fea3dc3-81dc-407b-b607-89f08543a577(org.campagnelab.docker.bash#1644224175107836483)</dependency>
         <dependency reexport="false" scope="design">ae984eb0-b5d6-4751-be51-025e23c91f0a(org.campagnelab.gobyweb#1090105717920801462)</dependency>
+        <dependency reexport="false" scope="design">e227be64-d4e7-46cb-a9cf-67e02c6093dd(org.campagnelab.docker#1893262236498675230)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
@@ -27,6 +28,8 @@
         <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
         <usedLanguage>f55d6853-b373-41dd-bc8e-331fd6e2c764(org.campagnelab.bash.nyosh)</usedLanguage>
         <usedLanguage>a8fb88b0-7e9f-478c-aab4-a1b076131192(org.campagnelab.gobyweb.interactive)</usedLanguage>
+        <usedLanguage>25281c03-4a7c-4b57-9221-24a10fc36ef5(org.campagnelab.docker)</usedLanguage>
+        <usedLanguage>0b7d8bbd-896e-495e-be60-01a0d738a649(org.campagnelab.gobyweb.plugins)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -110,6 +113,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="true">760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</dependency>
     <dependency reexport="false" scope="generate-into">3b74e3b7-7336-414d-8899-64a293a44a07(org.campagnelab.docker.bash)</dependency>
+    <dependency reexport="false" scope="generate-into">0b7d8bbd-896e-495e-be60-01a0d738a649(org.campagnelab.gobyweb.plugins)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
@@ -173,7 +177,6 @@
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" fqName="org.campagnelab.workflow" version="6" />
   </languageVersions>
   <extendedLanguages>
-    <extendedLanguage>0b7d8bbd-896e-495e-be60-01a0d738a649(org.campagnelab.gobyweb.plugins)</extendedLanguage>
     <extendedLanguage>c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)</extendedLanguage>
     <extendedLanguage>3b74e3b7-7336-414d-8899-64a293a44a07(org.campagnelab.docker.bash)</extendedLanguage>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>

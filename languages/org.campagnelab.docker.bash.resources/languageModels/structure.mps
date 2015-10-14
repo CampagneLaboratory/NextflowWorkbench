@@ -115,6 +115,9 @@
     <node concept="PrWs8" id="6A9boVQ2y2t" role="PzmwI">
       <ref role="PrY4T" to="r9td:6A9boVQ01ys" resolve="GenerateBashFragment" />
     </node>
+    <node concept="PrWs8" id="3jQcDYNSxLR" role="PzmwI">
+      <ref role="PrY4T" node="3jQcDYNSxJO" resolve="HasResourceSpecification" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6A9boVQPeld">
     <property role="TrG5h" value="AttributeAdapterForResource" />
@@ -380,7 +383,11 @@
     <node concept="1TJgyj" id="6LCvS2pPqdF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="resourceSpecs" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5VB4_zEupZX" resolve="ResourceSpecification" />
+    </node>
+    <node concept="PrWs8" id="3jQcDYO0GMc" role="PzmwI">
+      <ref role="PrY4T" node="3jQcDYNSxJO" resolve="HasResourceSpecification" />
     </node>
   </node>
   <node concept="1TIwiD" id="5VB4_zEupZX">
@@ -428,6 +435,10 @@
       <property role="TrG5h" value="atLeast" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="3jQcDYNSxJO">
+    <property role="3GE5qa" value="resources" />
+    <property role="TrG5h" value="HasResourceSpecification" />
   </node>
 </model>
 
