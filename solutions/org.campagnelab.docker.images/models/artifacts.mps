@@ -8441,7 +8441,7 @@
   <node concept="VuPG2" id="3d0Dghcgitr">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile5466360272422514995.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1903542673167658946.txt" />
     <node concept="VuO64" id="3d0Dghcgqgb" role="VuOVn">
       <node concept="VtuK3" id="3d0Dghcgqgc" role="VuO5T">
         <property role="VuL0s" value="1.3.0" />
@@ -8490,7 +8490,7 @@
     <node concept="VugRC" id="3d0Dghcgqgr" role="VuOVn">
       <node concept="19SGf9" id="3d0Dghcgqgs" role="Vugyn">
         <node concept="19SUe$" id="3d0Dghcgqgt" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; rm -rf plugins/analyses/ plugins/aligners/ plugins/tasks/ plugins/filesets .git \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; $HOME/.bashrc  \ &#10;&amp;&amp; echo &quot;done&quot;" />
+          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; rm -rf plugins/analyses/ plugins/aligners/ plugins/tasks/ plugins/filesets .git \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; $HOME/.bashrc " />
         </node>
       </node>
     </node>
@@ -8514,14 +8514,14 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3XYZbe_FdGX" role="3blhQR">
-      <ref role="3blhQY" node="3XYZbe_FdGW" resolve="software_Image" />
+    <node concept="3blhQM" id="3dB$2h_ibbj" role="3blhQR">
+      <ref role="3blhQY" node="3dB$2h_ibbi" resolve="software_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="3jQcDYNamKT">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="software-gcc4.8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile6498887712179819210.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile4004785767177252447.txt" />
     <node concept="VuO64" id="3jQcDYNamKU" role="VuOVn">
       <node concept="VtuK3" id="3jQcDYNamKV" role="VuO5T">
         <property role="VuL0s" value="1.3.0" />
@@ -8554,8 +8554,8 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3XYZbe_FijS" role="3blhQR">
-      <ref role="3blhQY" node="3XYZbe_FijR" resolve="software-gcc4.8_Image" />
+    <node concept="3blhQM" id="3dB$2h_iddu" role="3blhQR">
+      <ref role="3blhQY" node="3dB$2h_iddt" resolve="software-gcc4.8_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
@@ -8646,26 +8646,26 @@
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3XYZbe_FdGW">
-    <property role="2E_JEh" value="f382cd04f8d6" />
+  <node concept="2E_JVc" id="3dB$2h_ibbi">
+    <property role="2E_JEh" value="d0b3197a7bc5" />
     <property role="TrG5h" value="software_Image" />
     <property role="GSh9r" value="artifacts/software:latest" />
     <ref role="2E_BxF" node="3d0Dghcgitr" resolve="software" />
-    <node concept="Gyxd7" id="3XYZbe_FdHJ" role="Gyxcj">
+    <node concept="Gyxd7" id="3dB$2h_ibGk" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="software" />
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3XYZbe_FijR">
-    <property role="2E_JEh" value="22a8e6229745" />
+  <node concept="2E_JVc" id="3dB$2h_iddt">
+    <property role="2E_JEh" value="19484456f0d6" />
     <property role="TrG5h" value="software-gcc4.8_Image" />
-    <property role="GSh9r" value="artifacts/software-gcc4.8:latest" />
+    <property role="GSh9r" value="artifacts/software-gcc4.8:1.3.0" />
     <ref role="2E_BxF" node="3jQcDYNamKT" resolve="software-gcc4.8" />
-    <node concept="Gyxd7" id="3XYZbe_FiPf" role="Gyxcj">
+    <node concept="Gyxd7" id="3dB$2h_ide9" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="software-gcc4.8" />
-      <property role="Gyxd1" value="latest" />
+      <property role="Gyxd1" value="1.3.0" />
     </node>
   </node>
 </model>
