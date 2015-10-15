@@ -8599,7 +8599,7 @@
           <ref role="31HMCX" node="5cVzYEjynGP" resolve="value of KALLISTO_INDEX.INDEX.organism" />
         </node>
         <node concept="19SUe$" id="6LCvS2pL5vV" role="19SJt6">
-          <property role="19SUeA" value="&quot;&#10;" />
+          <property role="19SUeA" value="&quot;&#10;&#10;" />
         </node>
       </node>
       <node concept="2OBCQ_" id="6LCvS2pIH$w" role="2OBg32">
@@ -8664,7 +8664,7 @@
             <property role="2vk9_N" value="INDEX" />
             <property role="TrG5h" value="organism" />
             <node concept="2t8VsU" id="5cVzYEjynbI" role="2vnsw6">
-              <property role="2t8Vu2" value="homo_sapiens" />
+              <property role="2t8Vu2" value="Homo_sapiens" />
               <property role="TrG5h" value="organism" />
             </node>
           </node>

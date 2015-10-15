@@ -212,83 +212,6 @@
     <property role="2EEQw2" value="/usr/local/bin//docker" />
     <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
   </node>
-  <node concept="VuPG2" id="39YFbxZh5KP">
-    <property role="TrG5h" value="centos-java8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile6380565372926710035.txt" />
-    <property role="3GE5qa" value="dockerfiles" />
-    <node concept="VuO64" id="39YFbxZh5KQ" role="VuOVn">
-      <node concept="VtuK3" id="39YFbxZh5KR" role="VuO5T">
-        <property role="VuL0s" value="latest" />
-        <property role="GbyUj" value="centos-baseimage" />
-        <property role="3zaeVo" value="true" />
-        <property role="VuL0v" value="poklet" />
-      </node>
-    </node>
-    <node concept="VuOhh" id="39YFbxZh5KS" role="VuOVn">
-      <property role="VuOhg" value="Campagne Lab" />
-      <property role="VuOhi" value="manuele.simi@campagnelab.org" />
-    </node>
-    <node concept="2Cort2" id="39YFbxZh5KT" role="VuOVn">
-      <property role="1MaElf" value="install commads needed for the installation" />
-    </node>
-    <node concept="VugRC" id="39YFbxZh5KU" role="VuOVn">
-      <node concept="19SGf9" id="39YFbxZh5KV" role="Vugyn">
-        <node concept="19SUe$" id="39YFbxZh5KW" role="19SJt6">
-          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget \&#10;&amp;&amp; yum install -y tar \&#10;&amp;&amp; yum install -y which \&#10;&amp;&amp; yum install -y unzip \&#10;&amp;&amp; yum groupinstall -y &quot;Development Tools&quot; \&#10;&amp;&amp; yum install -y zlib-devel.x86_64 \&#10;&amp;&amp; yum install -y ncurses-devel.x86_64 \&#10;&amp;&amp; yum install -y readline-devel \&#10;&amp;&amp; yum install -y mlocate \&#10;&amp;&amp; yum install -y cmake \&#10;&amp;&amp; yum install -y hdf5-devel \&#10;&amp;&amp; yum install -y autoconf268.noarch" />
-        </node>
-      </node>
-    </node>
-    <node concept="2Cort2" id="4rsVl6Ee3Kt" role="VuOVn">
-      <property role="1MaElf" value="cmake 3.3.2" />
-    </node>
-    <node concept="VugRC" id="4rsVl6Ee3Ln" role="VuOVn">
-      <node concept="19SGf9" id="4rsVl6Ee3LP" role="Vugyn">
-        <node concept="19SUe$" id="4rsVl6Ee3LQ" role="19SJt6">
-          <property role="19SUeA" value="wget https://cmake.org/files/v3.3/cmake-3.3.2.tar.gz \&#10;&amp;&amp; tar xf cmake-3.3.2.tar.gz &amp;&amp; cd cmake-3.3.2 \&#10;&amp;&amp; export CC=gcc &amp;&amp; export CXX=g++ \&#10;&amp;&amp; ./bootstrap &amp;&amp; make &amp;&amp; make install \&#10;&amp;&amp; cd .. &amp;&amp; rm -rf cmake*" />
-        </node>
-      </node>
-    </node>
-    <node concept="2Cort2" id="39YFbxZh5KX" role="VuOVn">
-      <property role="1MaElf" value="git client" />
-    </node>
-    <node concept="VugRC" id="39YFbxZh5KY" role="VuOVn">
-      <node concept="19SGf9" id="39YFbxZh5KZ" role="Vugyn">
-        <node concept="19SUe$" id="39YFbxZh5L0" role="19SJt6">
-          <property role="19SUeA" value="yum install -y git-core" />
-        </node>
-      </node>
-    </node>
-    <node concept="2Cort2" id="39YFbxZh5Lb" role="VuOVn">
-      <property role="1MaElf" value="install java 8 and set Java environment variables" />
-    </node>
-    <node concept="VugRC" id="39YFbxZhcK2" role="VuOVn">
-      <node concept="19SGf9" id="39YFbxZhcK$" role="Vugyn">
-        <node concept="19SUe$" id="39YFbxZhcK_" role="19SJt6">
-          <property role="19SUeA" value="cd /opt/ \&#10;&amp;&amp; wget --no-cookies --no-check-certificate --header &quot;Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie&quot; &quot;http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.tar.gz&quot; \&#10;&amp;&amp; tar -zxvf jdk-8u45-linux-x64.tar.gz &amp;&amp; rm -f jdk-8u45-linux-x64.tar.gz \&#10;&amp;&amp; echo &quot;export JAVA_HOME=/opt/jdk1.8.0_45&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin&quot; &gt;&gt; $HOME/.bashrc &#10;&#10;" />
-        </node>
-      </node>
-    </node>
-    <node concept="VugRC" id="4rsVl6EdVrR" role="VuOVn">
-      <node concept="19SGf9" id="4rsVl6EdVsh" role="Vugyn">
-        <node concept="19SUe$" id="4rsVl6EdVsi" role="19SJt6">
-          <property role="19SUeA" value="yum clean all" />
-        </node>
-      </node>
-    </node>
-    <node concept="2Cort2" id="R1cm0Iv5yC" role="VuOVn">
-      <property role="1MaElf" value="update the search databases for mlocate" />
-    </node>
-    <node concept="VugRC" id="R1cm0Iv5wC" role="VuOVn">
-      <node concept="19SGf9" id="R1cm0Iv5xw" role="Vugyn">
-        <node concept="19SUe$" id="R1cm0Iv5xx" role="19SJt6">
-          <property role="19SUeA" value="updatedb" />
-        </node>
-      </node>
-    </node>
-    <node concept="3blhQM" id="3jQcDYNaqnS" role="3blhQR">
-      <ref role="3blhQY" node="3jQcDYNaqnR" resolve="centos-java8_Image" />
-    </node>
-  </node>
   <node concept="VuPG2" id="1ihAOqnMtxP">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="Kallisto-Ensembl-GRCh38-82" />
@@ -8517,13 +8440,13 @@
   </node>
   <node concept="VuPG2" id="3d0Dghcgitr">
     <property role="3GE5qa" value="dockerfiles" />
-    <property role="TrG5h" value="artifact-software-base" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile6413571634382715794.txt" />
+    <property role="TrG5h" value="software" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile5466360272422514995.txt" />
     <node concept="VuO64" id="3d0Dghcgqgb" role="VuOVn">
       <node concept="VtuK3" id="3d0Dghcgqgc" role="VuO5T">
-        <property role="VuL0s" value="1.0" />
-        <property role="VuL0v" value="mas2181" />
-        <property role="GbyUj" value="centos-java8" />
+        <property role="VuL0s" value="1.3.0" />
+        <property role="VuL0v" value="artifacts" />
+        <property role="GbyUj" value="base" />
         <property role="3zaeVo" value="true" />
       </node>
     </node>
@@ -8591,19 +8514,19 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3XYZbe_vWSp" role="3blhQR">
-      <ref role="3blhQY" node="3XYZbe_vWSo" resolve="artifact-software-base_Image" />
+    <node concept="3blhQM" id="3XYZbe_FdGX" role="3blhQR">
+      <ref role="3blhQY" node="3XYZbe_FdGW" resolve="software_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="3jQcDYNamKT">
     <property role="3GE5qa" value="dockerfiles" />
-    <property role="TrG5h" value="artifact-software-gcc4.8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile5729273570745381605.txt" />
+    <property role="TrG5h" value="software-gcc4.8" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile6498887712179819210.txt" />
     <node concept="VuO64" id="3jQcDYNamKU" role="VuOVn">
       <node concept="VtuK3" id="3jQcDYNamKV" role="VuO5T">
         <property role="VuL0s" value="1.3.0" />
-        <property role="VuL0v" value="mas2181" />
-        <property role="GbyUj" value="artifact-software" />
+        <property role="VuL0v" value="artifacts" />
+        <property role="GbyUj" value="software" />
         <property role="3zaeVo" value="true" />
       </node>
     </node>
@@ -8617,7 +8540,7 @@
     <node concept="VugRC" id="3jQcDYNaoOu" role="VuOVn">
       <node concept="19SGf9" id="3jQcDYNaoOv" role="Vugyn">
         <node concept="19SUe$" id="3jQcDYNaoOw" role="19SJt6">
-          <property role="19SUeA" value="wget http://people.centos.org/tru/devtools-2/devtools-2.repo -O /etc/yum.repos.d/devtools-2.repo \&#10;&amp;&amp; yum install -y devtoolset-2-gcc-4.8.2 devtoolset-2-gcc-c++-4.8.2  devtoolset-2-binutils \&#10;&amp;&amp; ln -s /opt/rh/devtoolset-2/root/usr/bin/* /usr/local/bin/" />
+          <property role="19SUeA" value="wget http://people.centos.org/tru/devtools-2/devtools-2.repo -O /etc/yum.repos.d/devtools-2.repo \&#10;&amp;&amp; yum install -y devtoolset-2-gcc-4.8.2 devtoolset-2-gcc-c++-4.8.2 devtoolset-2-binutils \&#10;&amp;&amp; ln -s /opt/rh/devtoolset-2/root/usr/bin/* /usr/local/bin/ \&#10;&amp;&amp; yum clean all" />
         </node>
       </node>
     </node>
@@ -8631,40 +8554,117 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3jQcDYNDDHY" role="3blhQR">
-      <ref role="3blhQY" node="3jQcDYNDDHX" resolve="artifact-software-gcc4.8_Image" />
+    <node concept="3blhQM" id="3XYZbe_FijS" role="3blhQR">
+      <ref role="3blhQY" node="3XYZbe_FijR" resolve="software-gcc4.8_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3jQcDYNaqnR">
-    <property role="2E_JEh" value="091eeaa1b85d" />
-    <property role="TrG5h" value="centos-java8_Image" />
-    <property role="GSh9r" value="mas2181/centos-java8:latest" />
-    <ref role="2E_BxF" node="39YFbxZh5KP" resolve="centos-java8" />
-    <node concept="Gyxd7" id="3jQcDYNaqSj" role="Gyxcj">
-      <property role="Gyxfx" value="mas2181" />
-      <property role="TrG5h" value="centos-java8" />
+  <node concept="VuPG2" id="39YFbxZh5KP">
+    <property role="TrG5h" value="base" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile4411224263181428806.txt" />
+    <property role="3GE5qa" value="dockerfiles" />
+    <node concept="VuO64" id="39YFbxZh5KQ" role="VuOVn">
+      <node concept="VtuK3" id="39YFbxZh5KR" role="VuO5T">
+        <property role="VuL0s" value="latest" />
+        <property role="GbyUj" value="centos-baseimage" />
+        <property role="3zaeVo" value="true" />
+        <property role="VuL0v" value="poklet" />
+      </node>
+    </node>
+    <node concept="VuOhh" id="39YFbxZh5KS" role="VuOVn">
+      <property role="VuOhg" value="Campagne Lab" />
+      <property role="VuOhi" value="manuele.simi@campagnelab.org" />
+    </node>
+    <node concept="2Cort2" id="39YFbxZh5KT" role="VuOVn">
+      <property role="1MaElf" value="install commads needed for the installation" />
+    </node>
+    <node concept="VugRC" id="39YFbxZh5KU" role="VuOVn">
+      <node concept="19SGf9" id="39YFbxZh5KV" role="Vugyn">
+        <node concept="19SUe$" id="39YFbxZh5KW" role="19SJt6">
+          <property role="19SUeA" value="yum install -y curl \&#10;&amp;&amp; yum install -y wget \&#10;&amp;&amp; yum install -y tar \&#10;&amp;&amp; yum install -y which \&#10;&amp;&amp; yum install -y unzip \&#10;&amp;&amp; yum groupinstall -y &quot;Development Tools&quot; \&#10;&amp;&amp; yum install -y zlib-devel.x86_64 \&#10;&amp;&amp; yum install -y ncurses-devel.x86_64 \&#10;&amp;&amp; yum install -y readline-devel \&#10;&amp;&amp; yum install -y mlocate \&#10;&amp;&amp; yum install -y hdf5-devel \&#10;&amp;&amp; yum install -y autoconf268.noarch" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="4rsVl6Ee3Kt" role="VuOVn">
+      <property role="1MaElf" value="cmake 3.3.2" />
+    </node>
+    <node concept="VugRC" id="4rsVl6Ee3Ln" role="VuOVn">
+      <node concept="19SGf9" id="4rsVl6Ee3LP" role="Vugyn">
+        <node concept="19SUe$" id="4rsVl6Ee3LQ" role="19SJt6">
+          <property role="19SUeA" value="wget https://cmake.org/files/v3.3/cmake-3.3.2.tar.gz \&#10;&amp;&amp; tar xf cmake-3.3.2.tar.gz &amp;&amp; cd cmake-3.3.2 \&#10;&amp;&amp; export CC=gcc &amp;&amp; export CXX=g++ \&#10;&amp;&amp; ./bootstrap &amp;&amp; make &amp;&amp; make install \&#10;&amp;&amp; cd .. &amp;&amp; rm -rf cmake*" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="39YFbxZh5KX" role="VuOVn">
+      <property role="1MaElf" value="git client" />
+    </node>
+    <node concept="VugRC" id="39YFbxZh5KY" role="VuOVn">
+      <node concept="19SGf9" id="39YFbxZh5KZ" role="Vugyn">
+        <node concept="19SUe$" id="39YFbxZh5L0" role="19SJt6">
+          <property role="19SUeA" value="yum install -y git-core" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="39YFbxZh5Lb" role="VuOVn">
+      <property role="1MaElf" value="install java 8 and set Java environment variables" />
+    </node>
+    <node concept="VugRC" id="39YFbxZhcK2" role="VuOVn">
+      <node concept="19SGf9" id="39YFbxZhcK$" role="Vugyn">
+        <node concept="19SUe$" id="39YFbxZhcK_" role="19SJt6">
+          <property role="19SUeA" value="cd /opt/ \&#10;&amp;&amp; wget --no-cookies --no-check-certificate --header &quot;Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie&quot; &quot;http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.tar.gz&quot; \&#10;&amp;&amp; tar -zxvf jdk-8u45-linux-x64.tar.gz &amp;&amp; rm -f jdk-8u45-linux-x64.tar.gz \&#10;&amp;&amp; echo &quot;export JAVA_HOME=/opt/jdk1.8.0_45&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin&quot; &gt;&gt; $HOME/.bashrc &#10;&#10;" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="4rsVl6EdVrR" role="VuOVn">
+      <node concept="19SGf9" id="4rsVl6EdVsh" role="Vugyn">
+        <node concept="19SUe$" id="4rsVl6EdVsi" role="19SJt6">
+          <property role="19SUeA" value="yum clean all" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="R1cm0Iv5yC" role="VuOVn">
+      <property role="1MaElf" value="update the search databases for mlocate" />
+    </node>
+    <node concept="VugRC" id="R1cm0Iv5wC" role="VuOVn">
+      <node concept="19SGf9" id="R1cm0Iv5xw" role="Vugyn">
+        <node concept="19SUe$" id="R1cm0Iv5xx" role="19SJt6">
+          <property role="19SUeA" value="updatedb" />
+        </node>
+      </node>
+    </node>
+    <node concept="3blhQM" id="3XYZbe_FbEI" role="3blhQR">
+      <ref role="3blhQY" node="3XYZbe_FbEH" resolve="base_Image" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="3XYZbe_FbEH">
+    <property role="2E_JEh" value="5fc1c30a1ac6" />
+    <property role="TrG5h" value="base_Image" />
+    <property role="GSh9r" value="artifacts/base:latest" />
+    <ref role="2E_BxF" node="39YFbxZh5KP" resolve="base" />
+    <node concept="Gyxd7" id="3XYZbe_FcbP" role="Gyxcj">
+      <property role="Gyxfx" value="artifacts" />
+      <property role="TrG5h" value="base" />
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3jQcDYNDDHX">
-    <property role="2E_JEh" value="1193cf144587" />
-    <property role="TrG5h" value="artifact-software-gcc4.8_Image" />
-    <property role="GSh9r" value="mas2181/artifact-software-gcc4.8:1.3.0" />
-    <ref role="2E_BxF" node="3jQcDYNamKT" resolve="artifact-software-gcc4.8" />
-    <node concept="Gyxd7" id="3jQcDYNDEeu" role="Gyxcj">
-      <property role="Gyxfx" value="mas2181" />
-      <property role="TrG5h" value="artifact-software-gcc4.8" />
-      <property role="Gyxd1" value="1.3.0" />
+  <node concept="2E_JVc" id="3XYZbe_FdGW">
+    <property role="2E_JEh" value="f382cd04f8d6" />
+    <property role="TrG5h" value="software_Image" />
+    <property role="GSh9r" value="artifacts/software:latest" />
+    <ref role="2E_BxF" node="3d0Dghcgitr" resolve="software" />
+    <node concept="Gyxd7" id="3XYZbe_FdHJ" role="Gyxcj">
+      <property role="Gyxfx" value="artifacts" />
+      <property role="TrG5h" value="software" />
+      <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3XYZbe_vWSo">
-    <property role="2E_JEh" value="a4e4b63d8257" />
-    <property role="TrG5h" value="artifact-software-base_Image" />
-    <property role="GSh9r" value="mas2181/artifact-software:latest" />
-    <ref role="2E_BxF" node="3d0Dghcgitr" resolve="artifact-software-base" />
-    <node concept="Gyxd7" id="3XYZbe_w2MC" role="Gyxcj">
-      <property role="Gyxfx" value="mas2181" />
-      <property role="TrG5h" value="artifact-software" />
+  <node concept="2E_JVc" id="3XYZbe_FijR">
+    <property role="2E_JEh" value="22a8e6229745" />
+    <property role="TrG5h" value="software-gcc4.8_Image" />
+    <property role="GSh9r" value="artifacts/software-gcc4.8:latest" />
+    <ref role="2E_BxF" node="3jQcDYNamKT" resolve="software-gcc4.8" />
+    <node concept="Gyxd7" id="3XYZbe_FiPf" role="Gyxcj">
+      <property role="Gyxfx" value="artifacts" />
+      <property role="TrG5h" value="software-gcc4.8" />
       <property role="Gyxd1" value="latest" />
     </node>
   </node>

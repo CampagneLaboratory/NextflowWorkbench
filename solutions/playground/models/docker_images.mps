@@ -191,25 +191,18 @@
   </node>
   <node concept="VuPG2" id="3ybzEM9IngG">
     <property role="TrG5h" value="TestGobyWebArtifacts" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile6539386842056739961.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1328228958818820132.txt" />
     <node concept="VuO64" id="3ybzEM9IngH" role="VuOVn">
       <node concept="VtuK3" id="3ybzEM9Inzt" role="VuO5T">
         <property role="VuL0s" value="1.3.0" />
         <property role="VuL0v" value="mas2181" />
-        <property role="GbyUj" value="artifact-software" />
+        <property role="GbyUj" value="artifact-software-gcc4.8" />
         <property role="3zaeVo" value="false" />
       </node>
     </node>
     <node concept="VuOhh" id="3ybzEM9IngI" role="VuOVn">
       <property role="VuOhg" value="Campagnelab" />
       <property role="VuOhi" value="manuele.simi@campagnelab.org" />
-    </node>
-    <node concept="VugRC" id="3jQcDYOwB6X" role="VuOVn">
-      <node concept="19SGf9" id="3jQcDYOwB80" role="Vugyn">
-        <node concept="19SUe$" id="3jQcDYOwB81" role="19SJt6">
-          <property role="19SUeA" value="ls -lrt $HOME" />
-        </node>
-      </node>
     </node>
     <node concept="23kj8I" id="3jQcDYOiAV6" role="VuOVn">
       <node concept="gkxfm" id="3jQcDYOiAV8" role="gkDh$" />
@@ -613,36 +606,30 @@
               <property role="3pIKb9" value="install.sh" />
             </node>
           </node>
-        </node>
-        <node concept="3xUnCN" id="3XYZbe_ES9N" role="2OBJyZ">
-          <property role="3Ui_h1" value="" />
-          <property role="3xVD5K" value="SAMTOOLS" />
-          <ref role="1PROVt" node="3XYZbe_ESaK" resolve="SAMTOOLS" />
-          <ref role="1PROJ1" node="3XYZbe_ESaN" resolve="0.1.18.1" />
-          <ref role="x1kBk" node="3XYZbe_ESb4" resolve="SAMTOOLS" />
-          <node concept="2vzQjv" id="3XYZbe_ESaK" role="xr5hk">
-            <property role="TrG5h" value="SAMTOOLS" />
-            <node concept="2vzQjq" id="3XYZbe_ESaL" role="2vzQju">
-              <property role="TrG5h" value="0.1.14" />
+          <node concept="3jXL5H" id="3XYZbe_EWJw" role="x1lOo">
+            <property role="1f4ISL" value="1.59.0.2" />
+            <property role="TrG5h" value="BOOST_LIB" />
+            <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BOOST_1.59.0" />
+            <property role="TNbOb" value="false" />
+            <node concept="2vNlDe" id="3XYZbe_EWJx" role="2vN2hK">
+              <property role="TrG5h" value="BINARIES" />
             </node>
-            <node concept="2vzQjq" id="3XYZbe_ESaM" role="2vzQju">
-              <property role="TrG5h" value="0.1.18" />
-            </node>
-            <node concept="2vzQjq" id="3XYZbe_ESaN" role="2vzQju">
-              <property role="TrG5h" value="0.1.18.1" />
+            <node concept="3pIPPt" id="3XYZbe_EWJy" role="3pIPbc">
+              <property role="3pIKb5" value="INSTALL" />
+              <property role="3pIKb9" value="install.sh" />
             </node>
           </node>
         </node>
-        <node concept="3xUnCN" id="3XYZbe_ES8o" role="2OBJyZ">
+        <node concept="3xUnCN" id="3XYZbe_ES9N" role="2OBJyZ">
           <property role="3Ui_h1" value="" />
-          <property role="3xVD5K" value="BEDTOOLS" />
-          <ref role="1PROVt" node="3XYZbe_ES99" resolve="BEDTOOLS" />
-          <ref role="1PROJ1" node="3XYZbe_ES9a" resolve="2.17.0" />
-          <ref role="x1kBk" node="3XYZbe_ES9j" resolve="BEDTOOLS" />
-          <node concept="2vzQjv" id="3XYZbe_ES99" role="xr5hk">
-            <property role="TrG5h" value="BEDTOOLS" />
-            <node concept="2vzQjq" id="3XYZbe_ES9a" role="2vzQju">
-              <property role="TrG5h" value="2.17.0" />
+          <property role="3xVD5K" value="BOOST_LIB" />
+          <ref role="1PROVt" node="3XYZbe_EWJm" resolve="BOOST_LIB" />
+          <ref role="1PROJ1" node="3XYZbe_EWJn" resolve="1.59.0.2" />
+          <ref role="x1kBk" node="3XYZbe_EWJw" resolve="BOOST_LIB" />
+          <node concept="2vzQjv" id="3XYZbe_EWJm" role="xr5hk">
+            <property role="TrG5h" value="BOOST_LIB" />
+            <node concept="2vzQjq" id="3XYZbe_EWJn" role="2vzQju">
+              <property role="TrG5h" value="1.59.0.2" />
             </node>
           </node>
         </node>
@@ -660,6 +647,9 @@
     </node>
     <node concept="3blhQM" id="3XYZbe_EU86" role="3blhQR">
       <ref role="3blhQY" node="3XYZbe_EU85" resolve="TestGobyWebArtifacts_Image" />
+    </node>
+    <node concept="3blhQM" id="3XYZbe_EXVX" role="3blhQR">
+      <ref role="3blhQY" node="3XYZbe_EXVW" resolve="TestGobyWebArtifacts_Image" />
     </node>
   </node>
   <node concept="3lueso" id="7kooit98aNe">
@@ -8653,6 +8643,17 @@
     <node concept="Gyxd7" id="3XYZbe_EUCr" role="Gyxcj">
       <property role="Gyxfx" value="mas2181" />
       <property role="TrG5h" value="gobyweb3" />
+      <property role="Gyxd1" value="1.0" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="3XYZbe_EXVW">
+    <property role="2E_JEh" value="92273aca1515" />
+    <property role="TrG5h" value="TestGobyWebArtifacts_Image" />
+    <property role="GSh9r" value="mas2181/boost:1.0" />
+    <ref role="2E_BxF" node="3ybzEM9IngG" resolve="TestGobyWebArtifacts" />
+    <node concept="Gyxd7" id="3XYZbe_EYsk" role="Gyxcj">
+      <property role="Gyxfx" value="mas2181" />
+      <property role="TrG5h" value="boost" />
       <property role="Gyxd1" value="1.0" />
     </node>
   </node>
