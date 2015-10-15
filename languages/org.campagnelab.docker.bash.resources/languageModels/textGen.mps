@@ -1548,7 +1548,7 @@
         </node>
         <node concept="lc7rE" id="3XYZbe_F5y_" role="3cqZAp">
           <node concept="la8eA" id="3XYZbe_F5_t" role="lcghm">
-            <property role="lacIc" value="RUN rm -rf /root/url-cache/ &amp;&amp; rm -rf /root/.clustergateway/ &amp;&amp; rm -rf /root/.gobyweb/ &amp;&amp; rm -rf /tmp/*" />
+            <property role="lacIc" value="RUN rm -rf /root/.clustergateway/ &amp;&amp; rm -rf /root/.gobyweb/ &amp;&amp; rm -rf /tmp/*" />
           </node>
           <node concept="l8MVK" id="3XYZbe_F622" role="lcghm" />
         </node>
@@ -1584,6 +1584,20 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="3XYZbe_FMjh">
+    <property role="3GE5qa" value="docker" />
+    <ref role="WuzLi" to="iuj9:3XYZbe_FK9y" resolve="ClearArtifactsCache" />
+    <node concept="11bSqf" id="3XYZbe_FMji" role="11c4hB">
+      <node concept="3clFbS" id="3XYZbe_FMjj" role="2VODD2">
+        <node concept="lc7rE" id="3XYZbe_FMuS" role="3cqZAp">
+          <node concept="la8eA" id="3XYZbe_FMuT" role="lcghm">
+            <property role="lacIc" value="RUN rm -rf /root/url-cache/ " />
+          </node>
+          <node concept="l8MVK" id="3XYZbe_FMuU" role="lcghm" />
         </node>
       </node>
     </node>
