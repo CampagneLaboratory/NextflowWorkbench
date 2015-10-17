@@ -443,8 +443,8 @@
   <node concept="1TIwiD" id="3XYZbe_FK9y">
     <property role="3GE5qa" value="docker" />
     <property role="TrG5h" value="ClearArtifactsCache" />
-    <property role="34LRSv" value="clear artifacts cache" />
-    <property role="R4oN_" value="Clear downloaded files from the image" />
+    <property role="34LRSv" value="clear artifact archive cache" />
+    <property role="R4oN_" value="Remove downloaded files from the image" />
     <ref role="1TJDcQ" to="6jv6:3DjWPY726Wm" resolve="CmdInstruction" />
   </node>
 </model>
