@@ -9479,11 +9479,6 @@
   </node>
   <node concept="1QJbas" id="3jQcDYN9$Ep">
     <property role="TrG5h" value="HelloWithGCC" />
-    <node concept="VtuK3" id="3jQcDYN9$Eq" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="VuL0v" value="mas2181" />
-      <property role="GbyUj" value="artifact-software" />
-    </node>
     <node concept="NgwLd" id="3jQcDYN9$Er" role="1QJbqZ">
       <property role="TrG5h" value="HelloWithGCC" />
       <node concept="19SGf9" id="3jQcDYN9$Es" role="3Y$PkS">
@@ -9634,15 +9629,14 @@
         </node>
       </node>
     </node>
+    <node concept="VtuK3" id="7kooit9vpdN" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="software" />
+    </node>
   </node>
   <node concept="1QJbas" id="4A0ZFukX8nb">
     <property role="TrG5h" value="ScriptWithBoost" />
-    <node concept="VtuK3" id="4A0ZFukX8nc" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="GbyUj" value="artifact-software-gcc4.8" />
-      <property role="VuL0v" value="mas2181" />
-      <property role="3zaeVo" value="true" />
-    </node>
     <node concept="NgwLd" id="4A0ZFukX8nd" role="1QJbqZ">
       <property role="TrG5h" value="ScriptWithBoost" />
       <node concept="19SGf9" id="4A0ZFukX8ne" role="3Y$PkS">
@@ -9681,6 +9675,11 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="VtuK3" id="7kooit9xULG" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="software" />
     </node>
   </node>
   <node concept="1QJbas" id="cDzKOXrgcM">

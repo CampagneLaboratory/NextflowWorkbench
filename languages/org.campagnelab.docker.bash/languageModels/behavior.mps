@@ -226,10 +226,16 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
+      </concept>
+      <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
+        <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
@@ -2463,6 +2469,26 @@
       </node>
       <node concept="_YKpA" id="10rnQzwXVm8" role="3clF45">
         <node concept="17QB3L" id="10rnQzwXVma" role="_ZDj9" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="7kooit9sLNX" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="dockerImages" />
+      <node concept="3Tm1VV" id="7kooit9sLNY" role="1B3o_S" />
+      <node concept="3clFbS" id="7kooit9sLNZ" role="3clF47">
+        <node concept="3clFbF" id="7kooit9sLO0" role="3cqZAp">
+          <node concept="2ShNRf" id="7kooit9sLO1" role="3clFbG">
+            <node concept="2T8Vx0" id="7kooit9sMh4" role="2ShVmc">
+              <node concept="2I9FWS" id="7kooit9sMh6" role="2T96Bj">
+                <ref role="2I9WkF" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="7kooit9sM5k" role="3clF45">
+        <ref role="2I9WkF" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
       </node>
     </node>
     <node concept="13hLZK" id="10rnQzwVtMY" role="13h7CW">
