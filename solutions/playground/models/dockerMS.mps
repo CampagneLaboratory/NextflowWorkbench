@@ -9629,7 +9629,7 @@
         </node>
       </node>
     </node>
-    <node concept="VtuK3" id="7kooit9vpdN" role="234boB">
+    <node concept="VtuK3" id="7kooit9zLCX" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="artifacts" />
       <property role="GbyUj" value="software" />
@@ -9676,20 +9676,14 @@
         </node>
       </node>
     </node>
-    <node concept="VtuK3" id="7kooit9xULG" role="234boB">
+    <node concept="VtuK3" id="7kooit9y05k" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="artifacts" />
-      <property role="GbyUj" value="software" />
+      <property role="GbyUj" value="software-gcc4.8" />
     </node>
   </node>
   <node concept="1QJbas" id="cDzKOXrgcM">
     <property role="TrG5h" value="ScriptWithSalmon" />
-    <node concept="VtuK3" id="cDzKOXrgcN" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="GbyUj" value="artifact-software-gcc4.8" />
-      <property role="VuL0v" value="mas2181" />
-      <property role="3zaeVo" value="true" />
-    </node>
     <node concept="NgwLd" id="cDzKOXrgcO" role="1QJbqZ">
       <property role="TrG5h" value="ScriptWithSalmon" />
       <node concept="19SGf9" id="cDzKOXrgcP" role="3Y$PkS">
@@ -10122,6 +10116,11 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="VtuK3" id="7kooit9zQ$k" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="software-gcc4.8" />
     </node>
   </node>
 </model>
