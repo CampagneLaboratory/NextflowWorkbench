@@ -8441,7 +8441,7 @@
   <node concept="VuPG2" id="3d0Dghcgitr">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1903542673167658946.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1118589049892613206.txt" />
     <node concept="VuO64" id="3d0Dghcgqgb" role="VuOVn">
       <node concept="VtuK3" id="3d0Dghcgqgc" role="VuO5T">
         <property role="VuL0s" value="1.3.0" />
@@ -8470,7 +8470,7 @@
     <node concept="VugRC" id="3d0Dghcgqgj" role="VuOVn">
       <node concept="19SGf9" id="3d0Dghcgqgk" role="Vugyn">
         <node concept="19SUe$" id="3d0Dghcgqgl" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software \&#10;&amp;&amp; wget -O /home/gobyweb/software/plugins-2.5.4-sdk.tar.gz  &quot;http://campagnelab.org/?wpdmact=process&amp;did=MTQ3LmhvdGxpbms&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.5.4-sdk.tar.gz \&#10;&amp;&amp; rm -f /home/gobyweb/software/plugins-2.5.4-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin:/home/gobyweb/software/plugins-sdk-2.5.4/bin&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;source /home/gobyweb/software/plugins-sdk-2.5.4/bin/plugins-export-env&quot; &gt;&gt; $HOME/.bashrc " />
+          <property role="19SUeA" value="cd /home/gobyweb/software \&#10;&amp;&amp; wget -O /home/gobyweb/software/plugins-2.6.0-SNAPSHOT-sdk.tar.gz  &quot;https://www.dropbox.com/s/4d9f5tpd2rp6cbg/plugins-2.6.0-SNAPSHOT-sdk.tar.gz?dl=0&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.6.0-SNAPSHOT-sdk.tar.gz \&#10;&amp;&amp; rm -f /home/gobyweb/software/plugins-2.6.0-SNAPSHOT-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin:/home/gobyweb/software/plugins-sdk-2.6.0-SNAPSHOT/bin&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;source /home/gobyweb/software/plugins-sdk-2.6.0-SNAPSHOT/bin/plugins-export-env&quot; &gt;&gt; $HOME/.bashrc " />
         </node>
       </node>
     </node>
@@ -8514,8 +8514,8 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3dB$2h_ibbj" role="3blhQR">
-      <ref role="3blhQY" node="3dB$2h_ibbi" resolve="software_Image" />
+    <node concept="3blhQM" id="3dB$2h_oL_l" role="3blhQR">
+      <ref role="3blhQY" node="3dB$2h_oL_k" resolve="software_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="3jQcDYNamKT">
@@ -8646,17 +8646,6 @@
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3dB$2h_ibbi">
-    <property role="2E_JEh" value="d0b3197a7bc5" />
-    <property role="TrG5h" value="software_Image" />
-    <property role="GSh9r" value="artifacts/software:latest" />
-    <ref role="2E_BxF" node="3d0Dghcgitr" resolve="software" />
-    <node concept="Gyxd7" id="3dB$2h_ibGk" role="Gyxcj">
-      <property role="Gyxfx" value="artifacts" />
-      <property role="TrG5h" value="software" />
-      <property role="Gyxd1" value="latest" />
-    </node>
-  </node>
   <node concept="2E_JVc" id="3dB$2h_iddt">
     <property role="2E_JEh" value="19484456f0d6" />
     <property role="TrG5h" value="software-gcc4.8_Image" />
@@ -8665,6 +8654,17 @@
     <node concept="Gyxd7" id="3dB$2h_ide9" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="software-gcc4.8" />
+      <property role="Gyxd1" value="1.3.0" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="3dB$2h_oL_k">
+    <property role="2E_JEh" value="e3a157ef3001" />
+    <property role="TrG5h" value="software_Image" />
+    <property role="GSh9r" value="artifacts/software:1.3.0" />
+    <ref role="2E_BxF" node="3d0Dghcgitr" resolve="software" />
+    <node concept="Gyxd7" id="3dB$2h_oLA3" role="Gyxcj">
+      <property role="Gyxfx" value="artifacts" />
+      <property role="TrG5h" value="software" />
       <property role="Gyxd1" value="1.3.0" />
     </node>
   </node>
