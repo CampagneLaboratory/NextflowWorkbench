@@ -79,7 +79,7 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
-      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -179,9 +179,9 @@
           <node concept="2OqwBi" id="7kooit9z94b" role="3clFbG">
             <node concept="2OqwBi" id="7kooit9yzm6" role="2Oq$k0">
               <node concept="2OqwBi" id="7kooit9yqxS" role="2Oq$k0">
-                <node concept="2OqwBi" id="7kooit9sUcW" role="2Oq$k0">
+                <node concept="2OqwBi" id="3$z_nd85fWb" role="2Oq$k0">
                   <node concept="2Sf5sV" id="7kooit9sTYZ" role="2Oq$k0" />
-                  <node concept="1mfA1w" id="7kooit9ypOn" role="2OqNvi" />
+                  <node concept="2Rxl7S" id="3$z_nd85qFr" role="2OqNvi" />
                 </node>
                 <node concept="2Rf3mk" id="7kooit9yrxD" role="2OqNvi">
                   <node concept="1xMEDy" id="7kooit9yrxF" role="1xVPHs">
