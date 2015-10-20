@@ -10,6 +10,7 @@
     <use id="c1d262c7-5fba-470b-a7ad-87f5e0ae0a99" name="org.campagnelab.nyosh.functions" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="20d83b64-d10f-48d1-990d-513b574c4956" name="org.campagnelab.background" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -37,6 +38,7 @@
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
     <import index="p3sh" ref="r:88895bb3-ffc1-49c0-97ec-2c49d3499b4b(org.campagnelab.gobyweb.tags.behavior)" />
     <import index="mak5" ref="r:977bf260-4884-422e-9656-9f0bb268fcb0(org.campagnelab.logger.behavior)" />
+    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" implicit="true" />
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -182,7 +184,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -283,6 +285,32 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
+        <child id="5858074156537516440" name="return" index="x79VK" />
+        <child id="8465538089690917625" name="param" index="TUOzN" />
+      </concept>
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="a21a7294-c126-4f63-8335-8fecd8c28c7e" name="org.campagnelab.NYoSh">
@@ -395,6 +423,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -443,6 +472,7 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1184963466173" name="jetbrains.mps.baseLanguage.collections.structure.ToArrayOperation" flags="nn" index="3_kTaI" />
+      <concept id="1240825616499" name="jetbrains.mps.baseLanguage.collections.structure.KeyAccessOperation" flags="nn" index="3AY5_j" />
     </language>
   </registry>
   <node concept="13h7C7" id="1D6dZ$xcXJY">
@@ -5837,6 +5867,398 @@
       </node>
       <node concept="3Tm1VV" id="6hgQMA_Nie2" role="1B3o_S" />
     </node>
+    <node concept="2YIFZL" id="3dB$2h_NEPJ" role="jymVt">
+      <property role="TrG5h" value="hasLabel" />
+      <property role="IEkAT" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="3dB$2h_LyMs" role="3clF47">
+        <node concept="3clFbF" id="3dB$2h_SXpp" role="3cqZAp">
+          <node concept="1rXfSq" id="3dB$2h_SXpq" role="3clFbG">
+            <ref role="37wK5l" node="7MTH03merpm" resolve="log" />
+            <node concept="2OqwBi" id="3dB$2h_SXpr" role="37wK5m">
+              <node concept="37vLTw" id="3dB$2h_SXps" role="2Oq$k0">
+                <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
+              </node>
+              <node concept="I4A8Y" id="3dB$2h_SXpt" role="2OqNvi" />
+            </node>
+            <node concept="3cpWs3" id="3dB$2h_SXpu" role="37wK5m">
+              <node concept="37vLTw" id="3dB$2h_SYWI" role="3uHU7w">
+                <ref role="3cqZAo" node="3dB$2h_M_1r" resolve="label" />
+              </node>
+              <node concept="Xl_RD" id="3dB$2h_SXpy" role="3uHU7B">
+                <property role="Xl_RC" value="checking label: " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3dB$2h_SX32" role="3cqZAp" />
+        <node concept="SfApY" id="3dB$2h_LEX0" role="3cqZAp">
+          <node concept="3clFbS" id="3dB$2h_LEX1" role="SfCbr">
+            <node concept="3cpWs8" id="3dB$2h_LEXi" role="3cqZAp">
+              <node concept="3cpWsn" id="3dB$2h_LEXj" role="3cpWs9">
+                <property role="3TUv4t" value="false" />
+                <property role="TrG5h" value="authConfig" />
+                <node concept="3uibUv" id="3dB$2h_LEXk" role="1tU5fm">
+                  <ref role="3uigEE" to="1t5m:~AuthConfig" resolve="AuthConfig" />
+                </node>
+                <node concept="2OqwBi" id="3dB$2h_LEXl" role="33vP2m">
+                  <node concept="2OqwBi" id="3dB$2h_LEXm" role="2Oq$k0">
+                    <node concept="2YIFZM" id="3dB$2h_LEXn" role="2Oq$k0">
+                      <ref role="37wK5l" to="1t5m:~AuthConfig.builder():com.spotify.docker.client.messages.AuthConfig$Builder" resolve="builder" />
+                      <ref role="1Pybhc" to="1t5m:~AuthConfig" resolve="AuthConfig" />
+                    </node>
+                    <node concept="liA8E" id="3dB$2h_LEXo" role="2OqNvi">
+                      <ref role="37wK5l" to="1t5m:~AuthConfig$Builder.serverAddress(java.lang.String):com.spotify.docker.client.messages.AuthConfig$Builder" resolve="serverAddress" />
+                      <node concept="2OqwBi" id="3dB$2h_LEXp" role="37wK5m">
+                        <node concept="37vLTw" id="3dB$2h_LEXq" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
+                        </node>
+                        <node concept="2qgKlT" id="3dB$2h_LEXr" role="2OqNvi">
+                          <ref role="37wK5l" node="56asy6tgU1A" resolve="server" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3dB$2h_LEXs" role="2OqNvi">
+                    <ref role="37wK5l" to="1t5m:~AuthConfig$Builder.build():com.spotify.docker.client.messages.AuthConfig" resolve="build" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="3dB$2h_LEXt" role="3cqZAp">
+              <node concept="3cpWsn" id="3dB$2h_LEXu" role="3cpWs9">
+                <property role="TrG5h" value="certificatePath" />
+                <node concept="3uibUv" id="3dB$2h_LEXv" role="1tU5fm">
+                  <ref role="3uigEE" to="e5on:~Path" resolve="Path" />
+                </node>
+                <node concept="2OqwBi" id="3dB$2h_LEXw" role="33vP2m">
+                  <node concept="2ShNRf" id="3dB$2h_LEXx" role="2Oq$k0">
+                    <node concept="1pGfFk" id="3dB$2h_LEXy" role="2ShVmc">
+                      <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                      <node concept="2OqwBi" id="3dB$2h_LEXz" role="37wK5m">
+                        <node concept="37vLTw" id="3dB$2h_LEX$" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
+                        </node>
+                        <node concept="2qgKlT" id="3dB$2h_LEX_" role="2OqNvi">
+                          <ref role="37wK5l" node="1m401fzRFHR" resolve="dockerCertificates" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3dB$2h_LEXA" role="2OqNvi">
+                    <ref role="37wK5l" to="fxg7:~File.toPath():java.nio.file.Path" resolve="toPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="3dB$2h_LEXJ" role="3cqZAp">
+              <node concept="3cpWsn" id="3dB$2h_LEXK" role="3cpWs9">
+                <property role="3TUv4t" value="true" />
+                <property role="TrG5h" value="docker" />
+                <node concept="3uibUv" id="3dB$2h_LEXL" role="1tU5fm">
+                  <ref role="3uigEE" to="fpnk:~DockerClient" resolve="DockerClient" />
+                </node>
+                <node concept="2OqwBi" id="3dB$2h_LEXM" role="33vP2m">
+                  <node concept="2OqwBi" id="3dB$2h_LEXN" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3dB$2h_LEXO" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3dB$2h_LEXP" role="2Oq$k0">
+                        <node concept="2YIFZM" id="3dB$2h_LEXQ" role="2Oq$k0">
+                          <ref role="1Pybhc" to="fpnk:~DefaultDockerClient" resolve="DefaultDockerClient" />
+                          <ref role="37wK5l" to="fpnk:~DefaultDockerClient.builder():com.spotify.docker.client.DefaultDockerClient$Builder" resolve="builder" />
+                        </node>
+                        <node concept="liA8E" id="3dB$2h_LEXR" role="2OqNvi">
+                          <ref role="37wK5l" to="fpnk:~DefaultDockerClient$Builder.authConfig(com.spotify.docker.client.messages.AuthConfig):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="authConfig" />
+                          <node concept="37vLTw" id="3dB$2h_LEXS" role="37wK5m">
+                            <ref role="3cqZAo" node="3dB$2h_LEXj" resolve="authConfig" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3dB$2h_LEXT" role="2OqNvi">
+                        <ref role="37wK5l" to="fpnk:~DefaultDockerClient$Builder.dockerCertificates(com.spotify.docker.client.DockerCertificates):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="dockerCertificates" />
+                        <node concept="2ShNRf" id="3dB$2h_LEXU" role="37wK5m">
+                          <node concept="1pGfFk" id="3dB$2h_LEXV" role="2ShVmc">
+                            <ref role="37wK5l" to="fpnk:~DockerCertificates.&lt;init&gt;(java.nio.file.Path)" resolve="DockerCertificates" />
+                            <node concept="37vLTw" id="3dB$2h_LEXW" role="37wK5m">
+                              <ref role="3cqZAo" node="3dB$2h_LEXu" resolve="certificatePath" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3dB$2h_LEXX" role="2OqNvi">
+                      <ref role="37wK5l" to="fpnk:~DefaultDockerClient$Builder.uri(java.lang.String):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="uri" />
+                      <node concept="2OqwBi" id="3dB$2h_LEXY" role="37wK5m">
+                        <node concept="2OqwBi" id="3dB$2h_LEXZ" role="2Oq$k0">
+                          <node concept="37vLTw" id="3dB$2h_LEY0" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
+                          </node>
+                          <node concept="2qgKlT" id="3dB$2h_LEY1" role="2OqNvi">
+                            <ref role="37wK5l" node="56asy6tgU1A" resolve="server" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3dB$2h_LEY2" role="2OqNvi">
+                          <ref role="37wK5l" to="e2lb:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                          <node concept="Xl_RD" id="3dB$2h_LEY3" role="37wK5m">
+                            <property role="Xl_RC" value="tcp:" />
+                          </node>
+                          <node concept="Xl_RD" id="3dB$2h_LEY4" role="37wK5m">
+                            <property role="Xl_RC" value="https:" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3dB$2h_LEY5" role="2OqNvi">
+                    <ref role="37wK5l" to="fpnk:~DefaultDockerClient$Builder.build():com.spotify.docker.client.DefaultDockerClient" resolve="build" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="3dB$2h_LEYB" role="3cqZAp" />
+            <node concept="3cpWs8" id="3dB$2h_LEYC" role="3cqZAp">
+              <node concept="3cpWsn" id="3dB$2h_LEYD" role="3cpWs9">
+                <property role="3TUv4t" value="true" />
+                <property role="TrG5h" value="image" />
+                <node concept="3uibUv" id="3dB$2h_LNv8" role="1tU5fm">
+                  <ref role="3uigEE" to="1t5m:~ImageInfo" resolve="ImageInfo" />
+                </node>
+                <node concept="2OqwBi" id="3dB$2h_LEYF" role="33vP2m">
+                  <node concept="37vLTw" id="3dB$2h_LEYG" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3dB$2h_LEXK" resolve="docker" />
+                  </node>
+                  <node concept="liA8E" id="3dB$2h_LEYH" role="2OqNvi">
+                    <ref role="37wK5l" to="fpnk:~DockerClient.inspectImage(java.lang.String):com.spotify.docker.client.messages.ImageInfo" resolve="inspectImage" />
+                    <node concept="2OqwBi" id="3dB$2h_M1iA" role="37wK5m">
+                      <node concept="37vLTw" id="3dB$2h_LZEa" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3dB$2h_LB8a" resolve="imagePointer" />
+                      </node>
+                      <node concept="2qgKlT" id="3dB$2h_M2xt" role="2OqNvi">
+                        <ref role="37wK5l" node="1D6dZ$xfhKE" resolve="formattedAddress" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3dB$2h_LEYZ" role="3cqZAp">
+              <node concept="1rXfSq" id="3dB$2h_LEZ0" role="3clFbG">
+                <ref role="37wK5l" node="7MTH03merpm" resolve="log" />
+                <node concept="2OqwBi" id="3dB$2h_LEZ1" role="37wK5m">
+                  <node concept="37vLTw" id="3dB$2h_LEZ2" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
+                  </node>
+                  <node concept="I4A8Y" id="3dB$2h_LEZ3" role="2OqNvi" />
+                </node>
+                <node concept="3cpWs3" id="3dB$2h_LEZ4" role="37wK5m">
+                  <node concept="2OqwBi" id="3dB$2h_M6s2" role="3uHU7w">
+                    <node concept="37vLTw" id="3dB$2h_M6lT" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3dB$2h_LEYD" resolve="image" />
+                    </node>
+                    <node concept="liA8E" id="3dB$2h_M7IG" role="2OqNvi">
+                      <ref role="37wK5l" to="1t5m:~ImageInfo.id():java.lang.String" resolve="id" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="3dB$2h_LEZ6" role="3uHU7B">
+                    <property role="Xl_RC" value="docker inspect returned: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2Gpval" id="1xPxt2wMewU" role="3cqZAp">
+              <node concept="2GrKxI" id="1xPxt2wMewW" role="2Gsz3X">
+                <property role="TrG5h" value="label" />
+              </node>
+              <node concept="3clFbS" id="1xPxt2wMewY" role="2LFqv$">
+                <node concept="3clFbF" id="1xPxt2wMgEY" role="3cqZAp">
+                  <node concept="1rXfSq" id="1xPxt2wMgEX" role="3clFbG">
+                    <ref role="37wK5l" node="7MTH03merpm" resolve="log" />
+                    <node concept="2OqwBi" id="1xPxt2wMhjs" role="37wK5m">
+                      <node concept="37vLTw" id="1xPxt2wMhfZ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
+                      </node>
+                      <node concept="I4A8Y" id="1xPxt2wMhsl" role="2OqNvi" />
+                    </node>
+                    <node concept="3cpWs3" id="1xPxt2wMkfE" role="37wK5m">
+                      <node concept="2OqwBi" id="1xPxt2wMk_j" role="3uHU7w">
+                        <node concept="2GrUjf" id="1xPxt2wMkpX" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="1xPxt2wMewW" resolve="label" />
+                        </node>
+                        <node concept="3AY5_j" id="1xPxt2wMly4" role="2OqNvi" />
+                      </node>
+                      <node concept="Xl_RD" id="1xPxt2wMjkw" role="3uHU7B">
+                        <property role="Xl_RC" value="Found label: " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1xPxt2wMfoP" role="2GsD0m">
+                <node concept="2OqwBi" id="1xPxt2wMf9L" role="2Oq$k0">
+                  <node concept="37vLTw" id="1xPxt2wMf7h" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3dB$2h_LEYD" resolve="image" />
+                  </node>
+                  <node concept="liA8E" id="1xPxt2wMfnM" role="2OqNvi">
+                    <ref role="37wK5l" to="1t5m:~ImageInfo.containerConfig():com.spotify.docker.client.messages.ContainerConfig" resolve="containerConfig" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1xPxt2wMgwk" role="2OqNvi">
+                  <ref role="37wK5l" to="1t5m:~ContainerConfig.labels():java.util.Map" resolve="labels" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="3dB$2h_Z0sV" role="3cqZAp">
+              <node concept="3clFbS" id="3dB$2h_Z0sX" role="3clFbx">
+                <node concept="3clFbF" id="3dB$2h_Z17o" role="3cqZAp">
+                  <node concept="1rXfSq" id="3dB$2h_Z17m" role="3clFbG">
+                    <ref role="37wK5l" node="7MTH03merpm" resolve="log" />
+                    <node concept="2OqwBi" id="3dB$2h_Z1f1" role="37wK5m">
+                      <node concept="37vLTw" id="3dB$2h_Z1aW" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
+                      </node>
+                      <node concept="I4A8Y" id="3dB$2h_Z23O" role="2OqNvi" />
+                    </node>
+                    <node concept="Xl_RD" id="3dB$2h_Z2Du" role="37wK5m">
+                      <property role="Xl_RC" value="label found" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3dB$2h_Z0QF" role="3clFbw">
+                <node concept="2OqwBi" id="3dB$2h_Z0QG" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3dB$2h_Z0QH" role="2Oq$k0">
+                    <node concept="37vLTw" id="3dB$2h_Z0QI" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3dB$2h_LEYD" resolve="image" />
+                    </node>
+                    <node concept="liA8E" id="3dB$2h_Z0QJ" role="2OqNvi">
+                      <ref role="37wK5l" to="1t5m:~ImageInfo.containerConfig():com.spotify.docker.client.messages.ContainerConfig" resolve="containerConfig" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3dB$2h_Z0QK" role="2OqNvi">
+                    <ref role="37wK5l" to="1t5m:~ContainerConfig.labels():java.util.Map" resolve="labels" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3dB$2h_Z0QL" role="2OqNvi">
+                  <ref role="37wK5l" to="k7g3:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                  <node concept="37vLTw" id="3dB$2h_Z0QM" role="37wK5m">
+                    <ref role="3cqZAo" node="3dB$2h_M_1r" resolve="label" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="3dB$2h_MZ7Z" role="3cqZAp">
+              <node concept="2OqwBi" id="3dB$2h_Na3Q" role="3cqZAk">
+                <node concept="2OqwBi" id="3dB$2h_N6pm" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3dB$2h_N3di" role="2Oq$k0">
+                    <node concept="37vLTw" id="3dB$2h_N2jk" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3dB$2h_LEYD" resolve="image" />
+                    </node>
+                    <node concept="liA8E" id="3dB$2h_N4S3" role="2OqNvi">
+                      <ref role="37wK5l" to="1t5m:~ImageInfo.containerConfig():com.spotify.docker.client.messages.ContainerConfig" resolve="containerConfig" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3dB$2h_N90m" role="2OqNvi">
+                    <ref role="37wK5l" to="1t5m:~ContainerConfig.labels():java.util.Map" resolve="labels" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3dB$2h_Ne15" role="2OqNvi">
+                  <ref role="37wK5l" to="k7g3:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                  <node concept="37vLTw" id="3dB$2h_NfLn" role="37wK5m">
+                    <ref role="3cqZAo" node="3dB$2h_M_1r" resolve="label" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="3dB$2h_LEZp" role="TEbGg">
+            <node concept="3cpWsn" id="3dB$2h_LEZq" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="3dB$2h_LEZr" role="1tU5fm">
+                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="3dB$2h_LEZs" role="TDEfX">
+              <node concept="3clFbF" id="3dB$2h_LEZt" role="3cqZAp">
+                <node concept="1rXfSq" id="3dB$2h_LEZu" role="3clFbG">
+                  <ref role="37wK5l" node="56asy6sZ2MY" resolve="log" />
+                  <node concept="1rXfSq" id="3dB$2h_LEZv" role="37wK5m">
+                    <ref role="37wK5l" node="6aaEnU993DV" resolve="getMessageViewTool" />
+                    <node concept="2OqwBi" id="3dB$2h_LEZw" role="37wK5m">
+                      <node concept="37vLTw" id="3dB$2h_LEZx" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
+                      </node>
+                      <node concept="I4A8Y" id="3dB$2h_LEZy" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="3dB$2h_LEZz" role="37wK5m">
+                    <node concept="37vLTw" id="3dB$2h_LEZ$" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3dB$2h_LEZq" resolve="e" />
+                    </node>
+                    <node concept="liA8E" id="3dB$2h_LEZ_" role="2OqNvi">
+                      <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="3dB$2h_LEZA" role="3cqZAp">
+                <node concept="3clFbT" id="3dB$2h_M9tQ" role="3cqZAk">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3dB$2h_L_jL" role="3clF46">
+        <property role="TrG5h" value="config" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tqbb2" id="3dB$2h_L_jK" role="1tU5fm">
+          <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3dB$2h_LB8a" role="3clF46">
+        <property role="TrG5h" value="imagePointer" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tqbb2" id="3dB$2h_LB8b" role="1tU5fm">
+          <ref role="ehGHo" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3dB$2h_M_1r" role="3clF46">
+        <property role="TrG5h" value="label" />
+        <node concept="17QB3L" id="3dB$2h_MAzt" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="3dB$2h_LyMb" role="3clF45" />
+      <node concept="P$JXv" id="3dB$2h_Mdpo" role="lGtFl">
+        <node concept="TZ5HA" id="3dB$2h_Mdpp" role="TZ5H$">
+          <node concept="1dT_AC" id="3dB$2h_Mdpq" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks if the image has the label." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="3dB$2h_Mdpr" role="TUOzN">
+          <property role="TUZQ4" value="docker config" />
+          <node concept="zr_55" id="3dB$2h_Mdpt" role="zr_5Q">
+            <ref role="zr_51" node="3dB$2h_L_jL" resolve="config" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="3dB$2h_Mdpu" role="TUOzN">
+          <property role="TUZQ4" value="info to access to the image" />
+          <node concept="zr_55" id="3dB$2h_Mdpw" role="zr_5Q">
+            <ref role="zr_51" node="3dB$2h_LB8a" resolve="imagePointer" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="3dB$2h_N$oh" role="TUOzN">
+          <property role="TUZQ4" value="the label to check" />
+          <node concept="zr_55" id="3dB$2h_N_Qk" role="zr_5Q">
+            <ref role="zr_51" node="3dB$2h_M_1r" resolve="label" />
+          </node>
+        </node>
+        <node concept="x79VA" id="3dB$2h_Mdpx" role="x79VK">
+          <property role="x79VB" value="true if the image is labeled, false otherwise" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3dB$2h_LtJW" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3dB$2h_Lwh7" role="jymVt" />
     <node concept="Wx3nA" id="51H4qOrOcMG" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />

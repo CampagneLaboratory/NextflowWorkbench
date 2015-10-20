@@ -239,7 +239,9 @@
         <property id="8987412447080623507" name="options" index="2E$TAj" />
         <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
       </concept>
-      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3" />
+      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
+        <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
+      </concept>
       <concept id="1893262236499908796" name="org.campagnelab.docker.structure.DockerContainer" flags="ng" index="VuMX5">
         <property id="6819868375264208052" name="id" index="GbyUj" />
         <property id="1893262236499912677" name="tag" index="VuL0s" />
@@ -266,7 +268,7 @@
   </registry>
   <node concept="2EEQw1" id="xP2fmw4TV1">
     <property role="2EEQw2" value="/usr/local/bin//docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.102:2376" />
   </node>
   <node concept="3lueso" id="10rnQzwTSvV">
     <property role="TrG5h" value="NYoShScriptEnv" />
@@ -8600,6 +8602,7 @@
         </node>
       </node>
       <node concept="2OBCQ_" id="6LCvS2pIH$w" role="2OBg32">
+        <property role="2DVE38" value="true" />
         <node concept="3xUnCN" id="7DnqeRYNwQW" role="2OBJyZ">
           <property role="3Ui_h1" value="" />
           <property role="3xVD5K" value="KALLISTO_INDEX" />
@@ -9636,8 +9639,8 @@
     <node concept="NgwLd" id="4A0ZFukX8nd" role="1QJbqZ">
       <property role="TrG5h" value="ScriptWithBoost" />
       <node concept="19SGf9" id="4A0ZFukX8ne" role="3Y$PkS">
-        <node concept="19SUe$" id="4A0ZFukX8nf" role="19SJt6">
-          <property role="19SUeA" value="" />
+        <node concept="19SUe$" id="1xPxt2wGTWw" role="19SJt6">
+          <property role="19SUeA" value="echo done" />
         </node>
       </node>
       <node concept="2OBCQ_" id="4A0ZFukX8nk" role="2OBg32">
@@ -9673,9 +9676,10 @@
       </node>
     </node>
     <node concept="VtuK3" id="7kooit9y05k" role="234boB">
-      <property role="VuL0s" value="latest" />
+      <property role="VuL0s" value="1.59.0.2" />
       <property role="VuL0v" value="artifacts" />
-      <property role="GbyUj" value="software-gcc4.8" />
+      <property role="GbyUj" value="boost" />
+      <property role="3zaeVo" value="true" />
     </node>
   </node>
   <node concept="1QJbas" id="cDzKOXrgcM">

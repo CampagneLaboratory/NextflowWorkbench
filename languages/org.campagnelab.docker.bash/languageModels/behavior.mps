@@ -5,6 +5,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -91,6 +92,7 @@
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -2457,6 +2459,20 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="dockerOptions" />
+      <node concept="37vLTG" id="3dB$2h_L_jL" role="3clF46">
+        <property role="TrG5h" value="config" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tqbb2" id="3dB$2h_L_jK" role="1tU5fm">
+          <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3dB$2h_LB8a" role="3clF46">
+        <property role="TrG5h" value="imagePointer" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tqbb2" id="3dB$2h_LB8b" role="1tU5fm">
+          <ref role="ehGHo" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="10rnQzwVu2Z" role="1B3o_S" />
       <node concept="3clFbS" id="10rnQzwVu30" role="3clF47">
         <node concept="3clFbF" id="10rnQzwVvgE" role="3cqZAp">

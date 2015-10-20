@@ -114,6 +114,7 @@
     <dependency reexport="true">760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</dependency>
     <dependency reexport="false" scope="generate-into">3b74e3b7-7336-414d-8899-64a293a44a07(org.campagnelab.docker.bash)</dependency>
     <dependency reexport="false" scope="generate-into">0b7d8bbd-896e-495e-be60-01a0d738a649(org.campagnelab.gobyweb.plugins)</dependency>
+    <dependency reexport="false">25281c03-4a7c-4b57-9221-24a10fc36ef5(org.campagnelab.docker)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
