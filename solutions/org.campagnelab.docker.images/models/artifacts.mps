@@ -8660,7 +8660,7 @@
   <node concept="2E_JVc" id="3dB$2h_vgCh">
     <property role="2E_JEh" value="83b4826065f6" />
     <property role="TrG5h" value="software-gcc4.8_Image" />
-    <property role="GSh9r" value="artifacts/software-gcc4.8:latest" />
+    <property role="GSh9r" value="artifacts/software-gcc4.8:1.3.0" />
     <ref role="2E_BxF" node="3jQcDYNamKT" resolve="software-gcc4.8" />
     <node concept="Gyxd7" id="3dB$2h_vh9m" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />

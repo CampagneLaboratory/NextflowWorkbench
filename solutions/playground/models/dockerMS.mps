@@ -239,9 +239,7 @@
         <property id="8987412447080623507" name="options" index="2E$TAj" />
         <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
       </concept>
-      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
-        <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
-      </concept>
+      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3" />
       <concept id="1893262236499908796" name="org.campagnelab.docker.structure.DockerContainer" flags="ng" index="VuMX5">
         <property id="6819868375264208052" name="id" index="GbyUj" />
         <property id="1893262236499912677" name="tag" index="VuL0s" />
@@ -9390,11 +9388,10 @@
   </node>
   <node concept="1QJbas" id="3jQcDYNauer">
     <property role="TrG5h" value="ScriptWithSAMTOOLS" />
-    <node concept="VtuK3" id="3jQcDYNaufK" role="234boB">
-      <property role="VuL0s" value="1.3.0" />
-      <property role="VuL0v" value="mas2181" />
-      <property role="GbyUj" value="artifact-software" />
-      <property role="3zaeVo" value="true" />
+    <node concept="VtuK3" id="3dB$2h_HIK2" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="software" />
     </node>
     <node concept="NgwLd" id="3jQcDYNaxf6" role="1QJbqZ">
       <node concept="19SGf9" id="3jQcDYNaxf8" role="3Y$PkS">
