@@ -210,7 +210,7 @@
   </registry>
   <node concept="2EEQw1" id="xP2fmw4TV1">
     <property role="2EEQw2" value="/usr/local/bin//docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.102:2376" />
   </node>
   <node concept="VuPG2" id="1ihAOqnMtxP">
     <property role="3GE5qa" value="dockerfiles" />
@@ -8438,90 +8438,10 @@
       <property role="TrG5h" value="manuele simi" />
     </node>
   </node>
-  <node concept="VuPG2" id="3d0Dghcgitr">
-    <property role="3GE5qa" value="dockerfiles" />
-    <property role="TrG5h" value="software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1118589049892613206.txt" />
-    <node concept="VuO64" id="3d0Dghcgqgb" role="VuOVn">
-      <node concept="VtuK3" id="3d0Dghcgqgc" role="VuO5T">
-        <property role="VuL0s" value="1.3.0" />
-        <property role="VuL0v" value="artifacts" />
-        <property role="GbyUj" value="base" />
-        <property role="3zaeVo" value="true" />
-      </node>
-    </node>
-    <node concept="VuOhh" id="3d0Dghcgqgd" role="VuOVn">
-      <property role="VuOhg" value="Campagne Lab" />
-      <property role="VuOhi" value="manuele.simi@campagnelab.org" />
-    </node>
-    <node concept="2Cort2" id="3d0Dghcgqge" role="VuOVn">
-      <property role="1MaElf" value="add gobyweb user" />
-    </node>
-    <node concept="VugRC" id="3d0Dghcgqgf" role="VuOVn">
-      <node concept="19SGf9" id="3d0Dghcgqgg" role="Vugyn">
-        <node concept="19SUe$" id="3d0Dghcgqgh" role="19SJt6">
-          <property role="19SUeA" value="mkdir -p /home/gobyweb/software " />
-        </node>
-      </node>
-    </node>
-    <node concept="2Cort2" id="3d0Dghcgqgi" role="VuOVn">
-      <property role="1MaElf" value="download and install the plugins SDK" />
-    </node>
-    <node concept="VugRC" id="3d0Dghcgqgj" role="VuOVn">
-      <node concept="19SGf9" id="3d0Dghcgqgk" role="Vugyn">
-        <node concept="19SUe$" id="3d0Dghcgqgl" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software \&#10;&amp;&amp; wget -O /home/gobyweb/software/plugins-2.6.0-SNAPSHOT-sdk.tar.gz  &quot;https://www.dropbox.com/s/4d9f5tpd2rp6cbg/plugins-2.6.0-SNAPSHOT-sdk.tar.gz?dl=0&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.6.0-SNAPSHOT-sdk.tar.gz \&#10;&amp;&amp; rm -f /home/gobyweb/software/plugins-2.6.0-SNAPSHOT-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin:/home/gobyweb/software/plugins-sdk-2.6.0-SNAPSHOT/bin&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;source /home/gobyweb/software/plugins-sdk-2.6.0-SNAPSHOT/bin/plugins-export-env&quot; &gt;&gt; $HOME/.bashrc " />
-        </node>
-      </node>
-    </node>
-    <node concept="2Cort2" id="3d0Dghcgqgm" role="VuOVn">
-      <property role="1MaElf" value="ssh settings needed to clone " />
-    </node>
-    <node concept="VugRC" id="3d0Dghcgqgn" role="VuOVn">
-      <node concept="19SGf9" id="3d0Dghcgqgo" role="Vugyn">
-        <node concept="19SUe$" id="3d0Dghcgqgp" role="19SJt6">
-          <property role="19SUeA" value="mkdir -p $HOME/.ssh &amp;&amp; touch $HOME/.ssh/known_hosts &amp;&amp; ssh-keyscan github.com &gt;&gt; $HOME/.ssh/known_hosts \&#10;&amp;&amp; ssh-keygen -t rsa -f $HOME/.ssh/id_rsa -b 4096 -q -N &quot;&quot;" />
-        </node>
-      </node>
-    </node>
-    <node concept="2Cort2" id="3d0Dghcgqgq" role="VuOVn">
-      <property role="1MaElf" value="clone the plugins repository" />
-    </node>
-    <node concept="VugRC" id="3d0Dghcgqgr" role="VuOVn">
-      <node concept="19SGf9" id="3d0Dghcgqgs" role="Vugyn">
-        <node concept="19SUe$" id="3d0Dghcgqgt" role="19SJt6">
-          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; rm -rf plugins/analyses/ plugins/aligners/ plugins/tasks/ plugins/filesets .git \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; $HOME/.bashrc " />
-        </node>
-      </node>
-    </node>
-    <node concept="2Cort2" id="3d0Dghcgqgu" role="VuOVn">
-      <property role="1MaElf" value="more folders and settings" />
-    </node>
-    <node concept="VugRC" id="3d0Dghcgqgv" role="VuOVn">
-      <node concept="19SGf9" id="3d0Dghcgqgw" role="Vugyn">
-        <node concept="19SUe$" id="3d0Dghcgqgx" role="19SJt6">
-          <property role="19SUeA" value="mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export REPOSITORY_DIR=/scratchLocal/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS \&#10;&amp;&amp; echo &quot;export JOB_AREA=/home/gobyweb/GOBYWEB_SGE_JOBS&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/FILESET_AREA \&#10;&amp;&amp; echo &quot;export FILESET_AREA=/home/gobyweb/FILESET_AREA&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/ENVIRONMENT_AREA \&#10;&amp;&amp; echo &quot;export ENVIRONMENT_AREA=/home/gobyweb/ENVIRONMENT_AREA&quot; &gt;&gt; $HOME/.bashrc" />
-        </node>
-      </node>
-    </node>
-    <node concept="2Cort2" id="3d0Dghcgqgy" role="VuOVn">
-      <property role="1MaElf" value="update the search databases for mlocate" />
-    </node>
-    <node concept="VugRC" id="3d0Dghcgqgz" role="VuOVn">
-      <node concept="19SGf9" id="3d0Dghcgqg$" role="Vugyn">
-        <node concept="19SUe$" id="3d0Dghcgqg_" role="19SJt6">
-          <property role="19SUeA" value="updatedb" />
-        </node>
-      </node>
-    </node>
-    <node concept="3blhQM" id="3dB$2h_oL_l" role="3blhQR">
-      <ref role="3blhQY" node="3dB$2h_oL_k" resolve="software_Image" />
-    </node>
-  </node>
   <node concept="VuPG2" id="3jQcDYNamKT">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="software-gcc4.8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile4004785767177252447.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile3319691964590561561.txt" />
     <node concept="VuO64" id="3jQcDYNamKU" role="VuOVn">
       <node concept="VtuK3" id="3jQcDYNamKV" role="VuO5T">
         <property role="VuL0s" value="1.3.0" />
@@ -8554,8 +8474,8 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3dB$2h_iddu" role="3blhQR">
-      <ref role="3blhQY" node="3dB$2h_iddt" resolve="software-gcc4.8_Image" />
+    <node concept="3blhQM" id="3dB$2h_vgCi" role="3blhQR">
+      <ref role="3blhQY" node="3dB$2h_vgCh" resolve="software-gcc4.8_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
@@ -8646,26 +8566,106 @@
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3dB$2h_iddt">
-    <property role="2E_JEh" value="19484456f0d6" />
-    <property role="TrG5h" value="software-gcc4.8_Image" />
-    <property role="GSh9r" value="artifacts/software-gcc4.8:1.3.0" />
-    <ref role="2E_BxF" node="3jQcDYNamKT" resolve="software-gcc4.8" />
-    <node concept="Gyxd7" id="3dB$2h_ide9" role="Gyxcj">
-      <property role="Gyxfx" value="artifacts" />
-      <property role="TrG5h" value="software-gcc4.8" />
-      <property role="Gyxd1" value="1.3.0" />
+  <node concept="VuPG2" id="3d0Dghcgitr">
+    <property role="3GE5qa" value="dockerfiles" />
+    <property role="TrG5h" value="software" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile7379804402252001916.txt" />
+    <node concept="VuO64" id="3d0Dghcgqgb" role="VuOVn">
+      <node concept="VtuK3" id="3d0Dghcgqgc" role="VuO5T">
+        <property role="VuL0s" value="1.3.0" />
+        <property role="VuL0v" value="artifacts" />
+        <property role="GbyUj" value="base" />
+        <property role="3zaeVo" value="true" />
+      </node>
+    </node>
+    <node concept="VuOhh" id="3d0Dghcgqgd" role="VuOVn">
+      <property role="VuOhg" value="Campagne Lab" />
+      <property role="VuOhi" value="manuele.simi@campagnelab.org" />
+    </node>
+    <node concept="2Cort2" id="3d0Dghcgqge" role="VuOVn">
+      <property role="1MaElf" value="add gobyweb user" />
+    </node>
+    <node concept="VugRC" id="3d0Dghcgqgf" role="VuOVn">
+      <node concept="19SGf9" id="3d0Dghcgqgg" role="Vugyn">
+        <node concept="19SUe$" id="3d0Dghcgqgh" role="19SJt6">
+          <property role="19SUeA" value="mkdir -p /home/gobyweb/software " />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="3d0Dghcgqgi" role="VuOVn">
+      <property role="1MaElf" value="download and install the plugins SDK" />
+    </node>
+    <node concept="VugRC" id="3d0Dghcgqgj" role="VuOVn">
+      <node concept="19SGf9" id="3d0Dghcgqgk" role="Vugyn">
+        <node concept="19SUe$" id="3d0Dghcgqgl" role="19SJt6">
+          <property role="19SUeA" value="cd /home/gobyweb/software \&#10;&amp;&amp; wget -O /home/gobyweb/software/plugins-2.6.0-sdk.tar.gz  &quot;https://www.dropbox.com/s/za4rudgowgxaow5/plugins-2.6.0-sdk.tar.gz?dl=0&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.6.0-sdk.tar.gz \&#10;&amp;&amp; rm -f /home/gobyweb/software/plugins-2.6.0-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin:/home/gobyweb/software/plugins-sdk-2.6.0/bin&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;source /home/gobyweb/software/plugins-sdk-2.6.0/bin/plugins-export-env&quot; &gt;&gt; $HOME/.bashrc " />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="3d0Dghcgqgm" role="VuOVn">
+      <property role="1MaElf" value="ssh settings needed to clone " />
+    </node>
+    <node concept="VugRC" id="3d0Dghcgqgn" role="VuOVn">
+      <node concept="19SGf9" id="3d0Dghcgqgo" role="Vugyn">
+        <node concept="19SUe$" id="3d0Dghcgqgp" role="19SJt6">
+          <property role="19SUeA" value="mkdir -p $HOME/.ssh &amp;&amp; touch $HOME/.ssh/known_hosts &amp;&amp; ssh-keyscan github.com &gt;&gt; $HOME/.ssh/known_hosts \&#10;&amp;&amp; ssh-keygen -t rsa -f $HOME/.ssh/id_rsa -b 4096 -q -N &quot;&quot;" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="3d0Dghcgqgq" role="VuOVn">
+      <property role="1MaElf" value="clone the plugins repository" />
+    </node>
+    <node concept="VugRC" id="3d0Dghcgqgr" role="VuOVn">
+      <node concept="19SGf9" id="3d0Dghcgqgs" role="Vugyn">
+        <node concept="19SUe$" id="3d0Dghcgqgt" role="19SJt6">
+          <property role="19SUeA" value="cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; rm -rf plugins/analyses/ plugins/aligners/ plugins/tasks/ plugins/filesets .git \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; $HOME/.bashrc " />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="3d0Dghcgqgu" role="VuOVn">
+      <property role="1MaElf" value="more folders and settings" />
+    </node>
+    <node concept="VugRC" id="3d0Dghcgqgv" role="VuOVn">
+      <node concept="19SGf9" id="3d0Dghcgqgw" role="Vugyn">
+        <node concept="19SUe$" id="3d0Dghcgqgx" role="19SJt6">
+          <property role="19SUeA" value="mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export REPOSITORY_DIR=/scratchLocal/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS \&#10;&amp;&amp; echo &quot;export JOB_AREA=/home/gobyweb/GOBYWEB_SGE_JOBS&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/FILESET_AREA \&#10;&amp;&amp; echo &quot;export FILESET_AREA=/home/gobyweb/FILESET_AREA&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/ENVIRONMENT_AREA \&#10;&amp;&amp; echo &quot;export ENVIRONMENT_AREA=/home/gobyweb/ENVIRONMENT_AREA&quot; &gt;&gt; $HOME/.bashrc" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="3d0Dghcgqgy" role="VuOVn">
+      <property role="1MaElf" value="update the search databases for mlocate" />
+    </node>
+    <node concept="VugRC" id="3d0Dghcgqgz" role="VuOVn">
+      <node concept="19SGf9" id="3d0Dghcgqg$" role="Vugyn">
+        <node concept="19SUe$" id="3d0Dghcgqg_" role="19SJt6">
+          <property role="19SUeA" value="updatedb" />
+        </node>
+      </node>
+    </node>
+    <node concept="3blhQM" id="3dB$2h_veA5" role="3blhQR">
+      <ref role="3blhQY" node="3dB$2h_veA4" resolve="software_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3dB$2h_oL_k">
-    <property role="2E_JEh" value="e3a157ef3001" />
+  <node concept="2E_JVc" id="3dB$2h_veA4">
+    <property role="2E_JEh" value="956aa925c9c5" />
     <property role="TrG5h" value="software_Image" />
-    <property role="GSh9r" value="artifacts/software:1.3.0" />
+    <property role="GSh9r" value="artifacts/software:latest" />
     <ref role="2E_BxF" node="3d0Dghcgitr" resolve="software" />
-    <node concept="Gyxd7" id="3dB$2h_oLA3" role="Gyxcj">
+    <node concept="Gyxd7" id="3dB$2h_vf77" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="software" />
-      <property role="Gyxd1" value="1.3.0" />
+      <property role="Gyxd1" value="latest" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="3dB$2h_vgCh">
+    <property role="2E_JEh" value="83b4826065f6" />
+    <property role="TrG5h" value="software-gcc4.8_Image" />
+    <property role="GSh9r" value="artifacts/software-gcc4.8:latest" />
+    <ref role="2E_BxF" node="3jQcDYNamKT" resolve="software-gcc4.8" />
+    <node concept="Gyxd7" id="3dB$2h_vh9m" role="Gyxcj">
+      <property role="Gyxfx" value="artifacts" />
+      <property role="TrG5h" value="software-gcc4.8" />
+      <property role="Gyxd1" value="latest" />
     </node>
   </node>
 </model>

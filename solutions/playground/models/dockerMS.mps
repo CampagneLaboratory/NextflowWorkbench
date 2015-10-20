@@ -8263,7 +8263,7 @@
   </node>
   <node concept="2ulcR8" id="6ojrriHjH_a">
     <property role="TrG5h" value="FirstNYoshProcess" />
-    <node concept="VtuK3" id="3$z_nd87H66" role="234boC">
+    <node concept="VtuK3" id="3dB$2h_oHTI" role="234boC">
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="artifacts" />
       <property role="GbyUj" value="software-gcc4.8" />
@@ -8578,11 +8578,10 @@
   </node>
   <node concept="1QJbas" id="4rsVl6EAH01">
     <property role="TrG5h" value="ScriptWithKallisto" />
-    <node concept="VtuK3" id="18$uMcNeRJ_" role="234boB">
+    <node concept="VtuK3" id="3dB$2h_oHTO" role="234boB">
       <property role="VuL0s" value="latest" />
-      <property role="GbyUj" value="artifact-software-gcc4.8" />
-      <property role="VuL0v" value="mas2181" />
-      <property role="3zaeVo" value="true" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="software-gcc4.8" />
     </node>
     <node concept="NgwLd" id="6LCvS2pIH$r" role="1QJbqZ">
       <node concept="19SGf9" id="6LCvS2pIH$t" role="3Y$PkS">
