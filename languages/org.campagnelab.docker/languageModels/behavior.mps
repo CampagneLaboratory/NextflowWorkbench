@@ -472,7 +472,6 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1184963466173" name="jetbrains.mps.baseLanguage.collections.structure.ToArrayOperation" flags="nn" index="3_kTaI" />
-      <concept id="1240825616499" name="jetbrains.mps.baseLanguage.collections.structure.KeyAccessOperation" flags="nn" index="3AY5_j" />
     </language>
   </registry>
   <node concept="13h7C7" id="1D6dZ$xcXJY">
@@ -6062,48 +6061,6 @@
                   <node concept="Xl_RD" id="3dB$2h_LEZ6" role="3uHU7B">
                     <property role="Xl_RC" value="docker inspect returned: " />
                   </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2Gpval" id="1xPxt2wMewU" role="3cqZAp">
-              <node concept="2GrKxI" id="1xPxt2wMewW" role="2Gsz3X">
-                <property role="TrG5h" value="label" />
-              </node>
-              <node concept="3clFbS" id="1xPxt2wMewY" role="2LFqv$">
-                <node concept="3clFbF" id="1xPxt2wMgEY" role="3cqZAp">
-                  <node concept="1rXfSq" id="1xPxt2wMgEX" role="3clFbG">
-                    <ref role="37wK5l" node="7MTH03merpm" resolve="log" />
-                    <node concept="2OqwBi" id="1xPxt2wMhjs" role="37wK5m">
-                      <node concept="37vLTw" id="1xPxt2wMhfZ" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
-                      </node>
-                      <node concept="I4A8Y" id="1xPxt2wMhsl" role="2OqNvi" />
-                    </node>
-                    <node concept="3cpWs3" id="1xPxt2wMkfE" role="37wK5m">
-                      <node concept="2OqwBi" id="1xPxt2wMk_j" role="3uHU7w">
-                        <node concept="2GrUjf" id="1xPxt2wMkpX" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="1xPxt2wMewW" resolve="label" />
-                        </node>
-                        <node concept="3AY5_j" id="1xPxt2wMly4" role="2OqNvi" />
-                      </node>
-                      <node concept="Xl_RD" id="1xPxt2wMjkw" role="3uHU7B">
-                        <property role="Xl_RC" value="Found label: " />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="1xPxt2wMfoP" role="2GsD0m">
-                <node concept="2OqwBi" id="1xPxt2wMf9L" role="2Oq$k0">
-                  <node concept="37vLTw" id="1xPxt2wMf7h" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3dB$2h_LEYD" resolve="image" />
-                  </node>
-                  <node concept="liA8E" id="1xPxt2wMfnM" role="2OqNvi">
-                    <ref role="37wK5l" to="1t5m:~ImageInfo.containerConfig():com.spotify.docker.client.messages.ContainerConfig" resolve="containerConfig" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="1xPxt2wMgwk" role="2OqNvi">
-                  <ref role="37wK5l" to="1t5m:~ContainerConfig.labels():java.util.Map" resolve="labels" />
                 </node>
               </node>
             </node>
