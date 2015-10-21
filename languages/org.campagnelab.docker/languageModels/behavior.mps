@@ -7208,15 +7208,6 @@
                 </node>
                 <node concept="2qgKlT" id="6B$xkWudqdt" role="2OqNvi">
                   <ref role="37wK5l" to="cb06:10rnQzwVu2Y" resolve="dockerOptions" />
-                  <node concept="BsUDl" id="1xPxt2wQvv5" role="37wK5m">
-                    <ref role="37wK5l" node="VMSWAFgqSj" resolve="getConfig" />
-                  </node>
-                  <node concept="2OqwBi" id="2yY4N2xFQIF" role="37wK5m">
-                    <node concept="13iPFW" id="1xPxt2wQvBv" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="2yY4N2xFRdC" role="2OqNvi">
-                      <ref role="37wK5l" node="1D6dZ$xfhKE" resolve="formattedAddress" />
-                    </node>
-                  </node>
                 </node>
               </node>
               <node concept="3uJxvA" id="6B$xkWu3aBg" role="2OqNvi">

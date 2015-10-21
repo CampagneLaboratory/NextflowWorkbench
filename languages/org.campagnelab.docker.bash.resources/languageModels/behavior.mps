@@ -85,10 +85,6 @@
       <concept id="1083245299891" name="jetbrains.mps.baseLanguage.structure.EnumConstantDeclaration" flags="ig" index="QsSxf">
         <child id="492581319488141108" name="method" index="2HKRsH" />
       </concept>
-      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
-        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
-        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
-      </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
         <child id="1164903496223" name="catchClause" index="TEbGg" />
@@ -117,7 +113,6 @@
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
-        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -1789,17 +1784,6 @@
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="dockerOptions" />
       <ref role="13i0hy" to="cb06:10rnQzwVu2Y" resolve="dockerOptions" />
-      <node concept="37vLTG" id="3dB$2h_L_jL" role="3clF46">
-        <property role="TrG5h" value="config" />
-        <property role="3TUv4t" value="true" />
-        <node concept="3Tqbb2" id="3dB$2h_L_jK" role="1tU5fm">
-          <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="2yY4N2xFPhS" role="3clF46">
-        <property role="TrG5h" value="imageAddress" />
-        <node concept="17QB3L" id="2yY4N2xFPvK" role="1tU5fm" />
-      </node>
       <node concept="3Tm1VV" id="10rnQzwVIqY" role="1B3o_S" />
       <node concept="3clFbS" id="10rnQzwVIr3" role="3clF47">
         <node concept="3cpWs8" id="10rnQzwW02M" role="3cqZAp">
@@ -1828,12 +1812,6 @@
               </node>
               <node concept="2qgKlT" id="10rnQzwYtk1" role="2OqNvi">
                 <ref role="37wK5l" to="cb06:10rnQzwVu2Y" resolve="dockerOptions" />
-                <node concept="37vLTw" id="3dB$2h_NQfk" role="37wK5m">
-                  <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
-                </node>
-                <node concept="37vLTw" id="2yY4N2xFQ9U" role="37wK5m">
-                  <ref role="3cqZAo" node="2yY4N2xFPhS" resolve="imageAddress" />
-                </node>
               </node>
             </node>
           </node>
@@ -1874,34 +1852,11 @@
               </node>
             </node>
           </node>
-          <node concept="1Wc70l" id="3dB$2h_RW6S" role="3clFbw">
-            <node concept="3fqX7Q" id="1xPxt2wJ706" role="3uHU7w">
-              <node concept="2YIFZM" id="1xPxt2wJ708" role="3fr31v">
-                <ref role="37wK5l" to="rzxe:3dB$2h_NEPJ" resolve="hasLabel" />
-                <ref role="1Pybhc" to="rzxe:7MTH03m4_Rr" resolve="ExecuteDockerCommands" />
-                <node concept="37vLTw" id="1xPxt2wJ709" role="37wK5m">
-                  <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
-                </node>
-                <node concept="37vLTw" id="2yY4N2xFQna" role="37wK5m">
-                  <ref role="3cqZAo" node="2yY4N2xFPhS" resolve="imageAddress" />
-                </node>
-                <node concept="2OqwBi" id="1xPxt2wJ70b" role="37wK5m">
-                  <node concept="Rm8GO" id="1xPxt2wJ70c" role="2Oq$k0">
-                    <ref role="Rm8GQ" node="3dB$2h_MtdC" resolve="withRepository" />
-                    <ref role="1Px2BO" node="3dB$2h_Mszb" resolve="IMAGE_LABELS" />
-                  </node>
-                  <node concept="liA8E" id="1xPxt2wJ70d" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Enum.toString():java.lang.String" resolve="toString" />
-                  </node>
-                </node>
-              </node>
+          <node concept="2OqwBi" id="10rnQzwYoZz" role="3clFbw">
+            <node concept="37vLTw" id="10rnQzwYnk7" role="2Oq$k0">
+              <ref role="3cqZAo" node="10rnQzwW02P" resolve="env" />
             </node>
-            <node concept="2OqwBi" id="10rnQzwYoZz" role="3uHU7B">
-              <node concept="37vLTw" id="10rnQzwYnk7" role="2Oq$k0">
-                <ref role="3cqZAo" node="10rnQzwW02P" resolve="env" />
-              </node>
-              <node concept="3x8VRR" id="10rnQzwYrQA" role="2OqNvi" />
-            </node>
+            <node concept="3x8VRR" id="10rnQzwYrQA" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbJ" id="6QVw52gsVDx" role="3cqZAp">

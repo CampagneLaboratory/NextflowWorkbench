@@ -436,12 +436,6 @@
                       </node>
                       <node concept="2qgKlT" id="29U0K5dBtm4" role="2OqNvi">
                         <ref role="37wK5l" to="cb06:10rnQzwVu2Y" resolve="dockerOptions" />
-                        <node concept="37vLTw" id="2yY4N2xGq82" role="37wK5m">
-                          <ref role="3cqZAo" node="29U0K5dGrSb" resolve="config" />
-                        </node>
-                        <node concept="Xl_RD" id="2yY4N2xGqJN" role="37wK5m">
-                          <property role="Xl_RC" value="" />
-                        </node>
                       </node>
                     </node>
                   </node>

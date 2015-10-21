@@ -92,7 +92,6 @@
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
-        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -2459,17 +2458,6 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="dockerOptions" />
-      <node concept="37vLTG" id="3dB$2h_L_jL" role="3clF46">
-        <property role="TrG5h" value="config" />
-        <property role="3TUv4t" value="true" />
-        <node concept="3Tqbb2" id="3dB$2h_L_jK" role="1tU5fm">
-          <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="2yY4N2xFiMv" role="3clF46">
-        <property role="TrG5h" value="imageAddress" />
-        <node concept="17QB3L" id="2yY4N2xFiN3" role="1tU5fm" />
-      </node>
       <node concept="3Tm1VV" id="10rnQzwVu2Z" role="1B3o_S" />
       <node concept="3clFbS" id="10rnQzwVu30" role="3clF47">
         <node concept="3clFbF" id="10rnQzwVvgE" role="3cqZAp">

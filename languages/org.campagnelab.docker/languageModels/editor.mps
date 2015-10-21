@@ -819,18 +819,6 @@
                       </node>
                       <node concept="2qgKlT" id="6B$xkWudqdt" role="2OqNvi">
                         <ref role="37wK5l" to="cb06:10rnQzwVu2Y" resolve="dockerOptions" />
-                        <node concept="2OqwBi" id="1xPxt2wQxXz" role="37wK5m">
-                          <node concept="1VaYGm" id="1xPxt2wQxye" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="1xPxt2wQyS_" role="2OqNvi">
-                            <ref role="37wK5l" to="rzxe:VMSWAF9cfy" resolve="getConfig" />
-                          </node>
-                        </node>
-                        <node concept="2OqwBi" id="2yY4N2xFTB4" role="37wK5m">
-                          <node concept="1VaYGm" id="2yY4N2xFTbr" role="2Oq$k0" />
-                          <node concept="3TrcHB" id="2yY4N2xFUuw" role="2OqNvi">
-                            <ref role="3TsBF5" to="6jv6:5U_2ytMh1xW" resolve="taggedAs" />
-                          </node>
-                        </node>
                       </node>
                     </node>
                     <node concept="3uJxvA" id="6B$xkWu3aBg" role="2OqNvi">
