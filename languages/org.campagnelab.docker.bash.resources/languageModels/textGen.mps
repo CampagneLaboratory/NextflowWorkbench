@@ -1597,7 +1597,7 @@
         </node>
         <node concept="lc7rE" id="2yY4N2ycXRp" role="3cqZAp">
           <node concept="la8eA" id="2yY4N2ycXTp" role="lcghm">
-            <property role="lacIc" value="RUN echo &quot;export REPOSITORY_DIR=${IMAGE_REPOSITORY_DIR}&quot; &gt;&gt; $HOME/.bashrc " />
+            <property role="lacIc" value="RUN source $HOME/.bashrc &amp;&amp; echo &quot;export REPOSITORY_DIR=${IMAGE_REPOSITORY_DIR}&quot; &gt;&gt; $HOME/.bashrc " />
           </node>
           <node concept="l8MVK" id="2yY4N2ycXY3" role="lcghm" />
         </node>
@@ -1617,7 +1617,7 @@
         </node>
         <node concept="lc7rE" id="3XYZbe_F5y_" role="3cqZAp">
           <node concept="la8eA" id="3XYZbe_F5_t" role="lcghm">
-            <property role="lacIc" value="RUN rm -rf $JOB_AREA/* &amp;&amp; rm -rf /root/.clustergateway/ &amp;&amp; rm -rf /root/.gobyweb/ &amp;&amp; rm -rf /tmp/* &amp;&amp; updatedb" />
+            <property role="lacIc" value="RUN source $HOME/.bashrc &amp;&amp; rm -rf $JOB_AREA/* &amp;&amp; rm -rf /root/.clustergateway/ &amp;&amp; rm -rf /root/.gobyweb/ &amp;&amp; rm -rf /tmp/* &amp;&amp; updatedb" />
           </node>
           <node concept="l8MVK" id="3XYZbe_F622" role="lcghm" />
         </node>
