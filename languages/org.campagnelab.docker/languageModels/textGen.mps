@@ -130,6 +130,11 @@
               </node>
               <node concept="l8MVK" id="5BbChSjL63G" role="lcghm" />
             </node>
+            <node concept="lc7rE" id="2yY4N2yhO$W" role="3cqZAp">
+              <node concept="la8eA" id="2yY4N2yhO_s" role="lcghm">
+                <property role="lacIc" value="LABEL createdWith=org.campagnelab.docker" />
+              </node>
+            </node>
           </node>
           <node concept="2OqwBi" id="5BbChSjL5LL" role="2GsD0m">
             <node concept="117lpO" id="5BbChSjL5Kf" role="2Oq$k0" />
