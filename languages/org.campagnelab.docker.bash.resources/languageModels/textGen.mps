@@ -986,15 +986,12 @@
         </node>
         <node concept="lc7rE" id="4tpnhtPxfSp" role="3cqZAp">
           <node concept="la8eA" id="4tpnhtPxg1L" role="lcghm">
-            <property role="lacIc" value="echo &quot;export JOB_DIR=" />
+            <property role="lacIc" value="export JOB_DIR=" />
           </node>
           <node concept="l9hG8" id="4tpnhtPxgea" role="lcghm">
             <node concept="37vLTw" id="3jQcDYNDHot" role="lb14g">
               <ref role="3cqZAo" node="3jQcDYNDG_9" resolve="job_dir" />
             </node>
-          </node>
-          <node concept="la8eA" id="3dB$2h_vt17" role="lcghm">
-            <property role="lacIc" value="&quot; &gt;&gt; $HOME/.bashrc" />
           </node>
           <node concept="l9hG8" id="1c4JsiUUBMD" role="lcghm">
             <node concept="37vLTw" id="1c4JsiUUBYz" role="lb14g">
@@ -1007,7 +1004,7 @@
         </node>
         <node concept="lc7rE" id="4tpnhtPxfnn" role="3cqZAp">
           <node concept="la8eA" id="4tpnhtPxfno" role="lcghm">
-            <property role="lacIc" value="echo &quot;source " />
+            <property role="lacIc" value="source " />
           </node>
           <node concept="l9hG8" id="4tpnhtPxfnp" role="lcghm">
             <node concept="37vLTw" id="3jQcDYNDHqd" role="lb14g">
@@ -1016,9 +1013,6 @@
           </node>
           <node concept="la8eA" id="4tpnhtPxfnz" role="lcghm">
             <property role="lacIc" value="/auto-options.sh" />
-          </node>
-          <node concept="la8eA" id="3dB$2h_vuCK" role="lcghm">
-            <property role="lacIc" value="&quot; &gt;&gt; $HOME/.bashrc" />
           </node>
           <node concept="l9hG8" id="1c4JsiUUCQh" role="lcghm">
             <node concept="37vLTw" id="1c4JsiUUCQi" role="lb14g">
@@ -1031,7 +1025,7 @@
         </node>
         <node concept="lc7rE" id="6ojrriHoEoE" role="3cqZAp">
           <node concept="la8eA" id="6ojrriHoEoF" role="lcghm">
-            <property role="lacIc" value="echo &quot;source " />
+            <property role="lacIc" value="source " />
           </node>
           <node concept="l9hG8" id="6ojrriHoEoG" role="lcghm">
             <node concept="37vLTw" id="3jQcDYNDHra" role="lb14g">
@@ -1040,9 +1034,6 @@
           </node>
           <node concept="la8eA" id="6ojrriHoEoQ" role="lcghm">
             <property role="lacIc" value="/exports-all.sh" />
-          </node>
-          <node concept="la8eA" id="3dB$2h_vuL8" role="lcghm">
-            <property role="lacIc" value="&quot; &gt;&gt; $HOME/.bashrc" />
           </node>
           <node concept="l9hG8" id="1c4JsiUUBZ3" role="lcghm">
             <node concept="37vLTw" id="1c4JsiUUBZ4" role="lb14g">
@@ -1076,7 +1067,7 @@
                           <node concept="3clFbS" id="3dB$2h_pzft" role="1bW5cS">
                             <node concept="lc7rE" id="6vbp88c8TUQ" role="3cqZAp">
                               <node concept="la8eA" id="6vbp88c94GC" role="lcghm">
-                                <property role="lacIc" value="echo &quot;export " />
+                                <property role="lacIc" value="export " />
                               </node>
                               <node concept="l9hG8" id="6vbp88c8TV1" role="lcghm">
                                 <node concept="2YIFZM" id="5VB4_zDrkc8" role="lb14g">
@@ -1117,9 +1108,6 @@
                                     <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
                                   </node>
                                 </node>
-                              </node>
-                              <node concept="la8eA" id="3dB$2h_vv0B" role="lcghm">
-                                <property role="lacIc" value="&quot; &gt;&gt; $HOME/.bashrc" />
                               </node>
                               <node concept="1bDJIP" id="3jQcDYO44XX" role="lcghm">
                                 <ref role="1rvKf6" node="3jQcDYO3YPj" resolve="and" />
