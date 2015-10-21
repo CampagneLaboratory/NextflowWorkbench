@@ -210,7 +210,7 @@
   </registry>
   <node concept="2EEQw1" id="xP2fmw4TV1">
     <property role="2EEQw2" value="/usr/local/bin//docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.102:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
   <node concept="VuPG2" id="1ihAOqnMtxP">
     <property role="3GE5qa" value="dockerfiles" />
@@ -8441,7 +8441,7 @@
   <node concept="VuPG2" id="3jQcDYNamKT">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="software-gcc4.8" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile3319691964590561561.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1027546086586762452.txt" />
     <node concept="VuO64" id="3jQcDYNamKU" role="VuOVn">
       <node concept="VtuK3" id="3jQcDYNamKV" role="VuO5T">
         <property role="VuL0s" value="1.3.0" />
@@ -8473,9 +8473,6 @@
           <property role="19SUeA" value="updatedb" />
         </node>
       </node>
-    </node>
-    <node concept="3blhQM" id="3dB$2h_vgCi" role="3blhQR">
-      <ref role="3blhQY" node="3dB$2h_vgCh" resolve="software-gcc4.8_Image" />
     </node>
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
@@ -8569,7 +8566,7 @@
   <node concept="VuPG2" id="3d0Dghcgitr">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile7379804402252001916.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile150542844760441756.txt" />
     <node concept="VuO64" id="3d0Dghcgqgb" role="VuOVn">
       <node concept="VtuK3" id="3d0Dghcgqgc" role="VuO5T">
         <property role="VuL0s" value="1.3.0" />
@@ -8628,7 +8625,7 @@
     <node concept="VugRC" id="3d0Dghcgqgv" role="VuOVn">
       <node concept="19SGf9" id="3d0Dghcgqgw" role="Vugyn">
         <node concept="19SUe$" id="3d0Dghcgqgx" role="19SJt6">
-          <property role="19SUeA" value="mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export REPOSITORY_DIR=/scratchLocal/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS \&#10;&amp;&amp; echo &quot;export JOB_AREA=/home/gobyweb/GOBYWEB_SGE_JOBS&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/FILESET_AREA \&#10;&amp;&amp; echo &quot;export FILESET_AREA=/home/gobyweb/FILESET_AREA&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/ENVIRONMENT_AREA \&#10;&amp;&amp; echo &quot;export ENVIRONMENT_AREA=/home/gobyweb/ENVIRONMENT_AREA&quot; &gt;&gt; $HOME/.bashrc" />
+          <property role="19SUeA" value="mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export REPOSITORY_DIR=/scratchLocal/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS \&#10;&amp;&amp; echo &quot;export JOB_AREA=/home/gobyweb/GOBYWEB_SGE_JOBS&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb//ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export IMAGE_REPOSITORY_DIR=/home/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/FILESET_AREA \&#10;&amp;&amp; echo &quot;export FILESET_AREA=/home/gobyweb/FILESET_AREA&quot; &gt;&gt; $HOME/.bashrc " />
         </node>
       </node>
     </node>
@@ -8642,29 +8639,18 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3dB$2h_veA5" role="3blhQR">
-      <ref role="3blhQY" node="3dB$2h_veA4" resolve="software_Image" />
+    <node concept="3blhQM" id="2yY4N2yfhYA" role="3blhQR">
+      <ref role="3blhQY" node="2yY4N2yfhY_" resolve="software_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3dB$2h_veA4">
-    <property role="2E_JEh" value="956aa925c9c5" />
+  <node concept="2E_JVc" id="2yY4N2yfhY_">
+    <property role="2E_JEh" value="8a670f9a29ec" />
     <property role="TrG5h" value="software_Image" />
     <property role="GSh9r" value="artifacts/software:latest" />
     <ref role="2E_BxF" node="3d0Dghcgitr" resolve="software" />
-    <node concept="Gyxd7" id="3dB$2h_vf77" role="Gyxcj">
+    <node concept="Gyxd7" id="2yY4N2yfiw1" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="software" />
-      <property role="Gyxd1" value="latest" />
-    </node>
-  </node>
-  <node concept="2E_JVc" id="3dB$2h_vgCh">
-    <property role="2E_JEh" value="83b4826065f6" />
-    <property role="TrG5h" value="software-gcc4.8_Image" />
-    <property role="GSh9r" value="artifacts/software-gcc4.8:1.3.0" />
-    <ref role="2E_BxF" node="3jQcDYNamKT" resolve="software-gcc4.8" />
-    <node concept="Gyxd7" id="3dB$2h_vh9m" role="Gyxcj">
-      <property role="Gyxfx" value="artifacts" />
-      <property role="TrG5h" value="software-gcc4.8" />
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
