@@ -52,6 +52,7 @@
     <import index="oj8w" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing.text(JDK/javax.swing.text@java_stub)" />
     <import index="810" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.ui(MPS.IDEA/com.intellij.openapi.ui@java_stub)" />
     <import index="xg1q" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ui.components(MPS.IDEA/com.intellij.ui.components@java_stub)" />
+    <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -1042,12 +1043,17 @@
                               <ref role="37wK5l" to="cb06:4_wVviqFDHQ" resolve="dockerConfig" />
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="1xPxt2wHB3$" role="37wK5m">
-                            <node concept="37vLTw" id="1xPxt2wHA_I" role="2Oq$k0">
-                              <ref role="3cqZAo" node="18MzsNNKE4E" resolve="node" />
+                          <node concept="2OqwBi" id="2yY4N2xGnj0" role="37wK5m">
+                            <node concept="2OqwBi" id="1xPxt2wHB3$" role="2Oq$k0">
+                              <node concept="37vLTw" id="1xPxt2wHA_I" role="2Oq$k0">
+                                <ref role="3cqZAo" node="18MzsNNKE4E" resolve="node" />
+                              </node>
+                              <node concept="3TrEf2" id="1xPxt2wHBUQ" role="2OqNvi">
+                                <ref role="3Tt5mk" to="r9td:irqYu7yXR0" />
+                              </node>
                             </node>
-                            <node concept="3TrEf2" id="1xPxt2wHBUQ" role="2OqNvi">
-                              <ref role="3Tt5mk" to="r9td:irqYu7yXR0" />
+                            <node concept="2qgKlT" id="2yY4N2xGo8q" role="2OqNvi">
+                              <ref role="37wK5l" to="rzxe:1D6dZ$xfhKE" resolve="formattedAddress" />
                             </node>
                           </node>
                         </node>

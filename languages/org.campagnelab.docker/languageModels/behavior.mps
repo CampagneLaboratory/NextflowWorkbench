@@ -472,6 +472,7 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1184963466173" name="jetbrains.mps.baseLanguage.collections.structure.ToArrayOperation" flags="nn" index="3_kTaI" />
+      <concept id="1240825616499" name="jetbrains.mps.baseLanguage.collections.structure.KeyAccessOperation" flags="nn" index="3AY5_j" />
     </language>
   </registry>
   <node concept="13h7C7" id="1D6dZ$xcXJY">
@@ -6028,13 +6029,8 @@
                   </node>
                   <node concept="liA8E" id="3dB$2h_LEYH" role="2OqNvi">
                     <ref role="37wK5l" to="fpnk:~DockerClient.inspectImage(java.lang.String):com.spotify.docker.client.messages.ImageInfo" resolve="inspectImage" />
-                    <node concept="2OqwBi" id="3dB$2h_M1iA" role="37wK5m">
-                      <node concept="37vLTw" id="3dB$2h_LZEa" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3dB$2h_LB8a" resolve="imagePointer" />
-                      </node>
-                      <node concept="2qgKlT" id="3dB$2h_M2xt" role="2OqNvi">
-                        <ref role="37wK5l" node="1D6dZ$xfhKE" resolve="formattedAddress" />
-                      </node>
+                    <node concept="37vLTw" id="2yY4N2xFgw7" role="37wK5m">
+                      <ref role="3cqZAo" node="2yY4N2xFavH" resolve="imageAddress" />
                     </node>
                   </node>
                 </node>
@@ -6061,6 +6057,48 @@
                   <node concept="Xl_RD" id="3dB$2h_LEZ6" role="3uHU7B">
                     <property role="Xl_RC" value="docker inspect returned: " />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2Gpval" id="1xPxt2wQbsS" role="3cqZAp">
+              <node concept="2GrKxI" id="1xPxt2wQbsU" role="2Gsz3X">
+                <property role="TrG5h" value="detectedLabel" />
+              </node>
+              <node concept="3clFbS" id="1xPxt2wQbsW" role="2LFqv$">
+                <node concept="3clFbF" id="1xPxt2wQdDD" role="3cqZAp">
+                  <node concept="1rXfSq" id="1xPxt2wQdDC" role="3clFbG">
+                    <ref role="37wK5l" node="7MTH03merpm" resolve="log" />
+                    <node concept="2OqwBi" id="1xPxt2wQe74" role="37wK5m">
+                      <node concept="37vLTw" id="1xPxt2wQe2X" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
+                      </node>
+                      <node concept="I4A8Y" id="1xPxt2wQeCq" role="2OqNvi" />
+                    </node>
+                    <node concept="3cpWs3" id="1xPxt2wQfKW" role="37wK5m">
+                      <node concept="2OqwBi" id="1xPxt2wQfWf" role="3uHU7w">
+                        <node concept="2GrUjf" id="1xPxt2wQfTj" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="1xPxt2wQbsU" resolve="detectedLabel" />
+                        </node>
+                        <node concept="3AY5_j" id="1xPxt2wQgx1" role="2OqNvi" />
+                      </node>
+                      <node concept="Xl_RD" id="1xPxt2wQff1" role="3uHU7B">
+                        <property role="Xl_RC" value="Detected Label: " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1xPxt2wQcnV" role="2GsD0m">
+                <node concept="2OqwBi" id="1xPxt2wQcbI" role="2Oq$k0">
+                  <node concept="37vLTw" id="1xPxt2wQc95" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3dB$2h_LEYD" resolve="image" />
+                  </node>
+                  <node concept="liA8E" id="1xPxt2wQcky" role="2OqNvi">
+                    <ref role="37wK5l" to="1t5m:~ImageInfo.containerConfig():com.spotify.docker.client.messages.ContainerConfig" resolve="containerConfig" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1xPxt2wQdvu" role="2OqNvi">
+                  <ref role="37wK5l" to="1t5m:~ContainerConfig.labels():java.util.Map" resolve="labels" />
                 </node>
               </node>
             </node>
@@ -6173,12 +6211,9 @@
           <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
         </node>
       </node>
-      <node concept="37vLTG" id="3dB$2h_LB8a" role="3clF46">
-        <property role="TrG5h" value="imagePointer" />
-        <property role="3TUv4t" value="true" />
-        <node concept="3Tqbb2" id="3dB$2h_LB8b" role="1tU5fm">
-          <ref role="ehGHo" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
-        </node>
+      <node concept="37vLTG" id="2yY4N2xFavH" role="3clF46">
+        <property role="TrG5h" value="imageAddress" />
+        <node concept="17QB3L" id="2yY4N2xFf7O" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="3dB$2h_M_1r" role="3clF46">
         <property role="TrG5h" value="label" />
@@ -6199,8 +6234,8 @@
         </node>
         <node concept="TUZQ0" id="3dB$2h_Mdpu" role="TUOzN">
           <property role="TUZQ4" value="info to access to the image" />
-          <node concept="zr_55" id="3dB$2h_Mdpw" role="zr_5Q">
-            <ref role="zr_51" node="3dB$2h_LB8a" resolve="imagePointer" />
+          <node concept="zr_55" id="2yY4N2xFgMD" role="zr_5Q">
+            <ref role="zr_51" node="2yY4N2xFavH" resolve="imageAddress" />
           </node>
         </node>
         <node concept="TUZQ0" id="3dB$2h_N$oh" role="TUOzN">
@@ -6229,7 +6264,7 @@
           <node concept="17QB3L" id="51H4qOrRbfG" role="10Q1$1" />
         </node>
       </node>
-      <node concept="2OqwBi" id="5sHok87wuqx" role="33vP2m">
+      <node concept="2OqwBi" id="1xPxt2wPSo3" role="33vP2m">
         <node concept="2OqwBi" id="51H4qOrUkrK" role="2Oq$k0">
           <node concept="2OqwBi" id="51H4qOs4oaY" role="2Oq$k0">
             <node concept="2YIFZM" id="51H4qOrUkrM" role="2Oq$k0">
@@ -6254,7 +6289,7 @@
             </node>
           </node>
         </node>
-        <node concept="liA8E" id="5sHok87wvWi" role="2OqNvi">
+        <node concept="liA8E" id="1xPxt2wPUmA" role="2OqNvi">
           <ref role="37wK5l" to="fx27:~CacheBuilder.build():com.google.common.cache.Cache" resolve="build" />
         </node>
       </node>
@@ -7173,6 +7208,15 @@
                 </node>
                 <node concept="2qgKlT" id="6B$xkWudqdt" role="2OqNvi">
                   <ref role="37wK5l" to="cb06:10rnQzwVu2Y" resolve="dockerOptions" />
+                  <node concept="BsUDl" id="1xPxt2wQvv5" role="37wK5m">
+                    <ref role="37wK5l" node="VMSWAFgqSj" resolve="getConfig" />
+                  </node>
+                  <node concept="2OqwBi" id="2yY4N2xFQIF" role="37wK5m">
+                    <node concept="13iPFW" id="1xPxt2wQvBv" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="2yY4N2xFRdC" role="2OqNvi">
+                      <ref role="37wK5l" node="1D6dZ$xfhKE" resolve="formattedAddress" />
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="3uJxvA" id="6B$xkWu3aBg" role="2OqNvi">

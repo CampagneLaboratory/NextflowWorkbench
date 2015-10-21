@@ -89,6 +89,12 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -371,6 +377,26 @@
               </node>
               <node concept="l8MVK" id="29U0K5d_O6v" role="lcghm" />
             </node>
+            <node concept="3cpWs8" id="29U0K5dGrSa" role="3cqZAp">
+              <node concept="3cpWsn" id="29U0K5dGrSb" role="3cpWs9">
+                <property role="TrG5h" value="config" />
+                <node concept="3Tqbb2" id="29U0K5dGrS2" role="1tU5fm">
+                  <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
+                </node>
+                <node concept="2OqwBi" id="29U0K5dGrSc" role="33vP2m">
+                  <node concept="2OqwBi" id="29U0K5dGrSd" role="2Oq$k0">
+                    <node concept="2OqwBi" id="29U0K5dGrSe" role="2Oq$k0">
+                      <node concept="117lpO" id="29U0K5dGrSg" role="2Oq$k0" />
+                      <node concept="I4A8Y" id="29U0K5dGrSi" role="2OqNvi" />
+                    </node>
+                    <node concept="2SmgA7" id="29U0K5dHJFl" role="2OqNvi">
+                      <ref role="2SmgA8" to="6jv6:7MTH03m4HK1" resolve="Config" />
+                    </node>
+                  </node>
+                  <node concept="1uHKPH" id="29U0K5dGrSk" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="3ktpdP6bQEb" role="3cqZAp">
               <node concept="3cpWsn" id="3ktpdP6bQEc" role="3cpWs9">
                 <property role="TrG5h" value="nyoshScript" />
@@ -393,6 +419,11 @@
             </node>
             <node concept="3clFbJ" id="3ktpdP6bVSx" role="3cqZAp">
               <node concept="3clFbS" id="3ktpdP6bVSz" role="3clFbx">
+                <node concept="3SKdUt" id="2yY4N2xGqZF" role="3cqZAp">
+                  <node concept="3SKdUq" id="2yY4N2xGr4R" role="3SKWNk">
+                    <property role="3SKdUp" value="TODO: this should change since run options depend on the image to run" />
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="5NMxi75BjR8" role="3cqZAp">
                   <node concept="3cpWsn" id="5NMxi75BjRe" role="3cpWs9">
                     <property role="TrG5h" value="optionsFromScript" />
@@ -405,6 +436,12 @@
                       </node>
                       <node concept="2qgKlT" id="29U0K5dBtm4" role="2OqNvi">
                         <ref role="37wK5l" to="cb06:10rnQzwVu2Y" resolve="dockerOptions" />
+                        <node concept="37vLTw" id="2yY4N2xGq82" role="37wK5m">
+                          <ref role="3cqZAo" node="29U0K5dGrSb" resolve="config" />
+                        </node>
+                        <node concept="Xl_RD" id="2yY4N2xGqJN" role="37wK5m">
+                          <property role="Xl_RC" value="" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -436,26 +473,6 @@
                   <ref role="3cqZAo" node="3ktpdP6bQEc" resolve="nyoshScript" />
                 </node>
                 <node concept="3x8VRR" id="3ktpdP6bZq6" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="3cpWs8" id="29U0K5dGrSa" role="3cqZAp">
-              <node concept="3cpWsn" id="29U0K5dGrSb" role="3cpWs9">
-                <property role="TrG5h" value="config" />
-                <node concept="3Tqbb2" id="29U0K5dGrS2" role="1tU5fm">
-                  <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
-                </node>
-                <node concept="2OqwBi" id="29U0K5dGrSc" role="33vP2m">
-                  <node concept="2OqwBi" id="29U0K5dGrSd" role="2Oq$k0">
-                    <node concept="2OqwBi" id="29U0K5dGrSe" role="2Oq$k0">
-                      <node concept="117lpO" id="29U0K5dGrSg" role="2Oq$k0" />
-                      <node concept="I4A8Y" id="29U0K5dGrSi" role="2OqNvi" />
-                    </node>
-                    <node concept="2SmgA7" id="29U0K5dHJFl" role="2OqNvi">
-                      <ref role="2SmgA8" to="6jv6:7MTH03m4HK1" resolve="Config" />
-                    </node>
-                  </node>
-                  <node concept="1uHKPH" id="29U0K5dGrSk" role="2OqNvi" />
-                </node>
               </node>
             </node>
             <node concept="3cpWs8" id="29U0K5dCkzv" role="3cqZAp">

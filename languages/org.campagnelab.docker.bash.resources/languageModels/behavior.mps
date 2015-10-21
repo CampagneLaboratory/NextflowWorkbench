@@ -1796,12 +1796,9 @@
           <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
         </node>
       </node>
-      <node concept="37vLTG" id="3dB$2h_LB8a" role="3clF46">
-        <property role="TrG5h" value="imagePointer" />
-        <property role="3TUv4t" value="true" />
-        <node concept="3Tqbb2" id="3dB$2h_LB8b" role="1tU5fm">
-          <ref role="ehGHo" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
-        </node>
+      <node concept="37vLTG" id="2yY4N2xFPhS" role="3clF46">
+        <property role="TrG5h" value="imageAddress" />
+        <node concept="17QB3L" id="2yY4N2xFPvK" role="1tU5fm" />
       </node>
       <node concept="3Tm1VV" id="10rnQzwVIqY" role="1B3o_S" />
       <node concept="3clFbS" id="10rnQzwVIr3" role="3clF47">
@@ -1834,8 +1831,8 @@
                 <node concept="37vLTw" id="3dB$2h_NQfk" role="37wK5m">
                   <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
                 </node>
-                <node concept="37vLTw" id="3dB$2h_NQsU" role="37wK5m">
-                  <ref role="3cqZAo" node="3dB$2h_LB8a" resolve="imagePointer" />
+                <node concept="37vLTw" id="2yY4N2xFQ9U" role="37wK5m">
+                  <ref role="3cqZAo" node="2yY4N2xFPhS" resolve="imageAddress" />
                 </node>
               </node>
             </node>
@@ -1885,8 +1882,8 @@
                 <node concept="37vLTw" id="1xPxt2wJ709" role="37wK5m">
                   <ref role="3cqZAo" node="3dB$2h_L_jL" resolve="config" />
                 </node>
-                <node concept="37vLTw" id="1xPxt2wJ70a" role="37wK5m">
-                  <ref role="3cqZAo" node="3dB$2h_LB8a" resolve="imagePointer" />
+                <node concept="37vLTw" id="2yY4N2xFQna" role="37wK5m">
+                  <ref role="3cqZAo" node="2yY4N2xFPhS" resolve="imageAddress" />
                 </node>
                 <node concept="2OqwBi" id="1xPxt2wJ70b" role="37wK5m">
                   <node concept="Rm8GO" id="1xPxt2wJ70c" role="2Oq$k0">

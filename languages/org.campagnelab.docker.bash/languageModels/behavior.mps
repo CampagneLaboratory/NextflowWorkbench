@@ -2466,12 +2466,9 @@
           <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
         </node>
       </node>
-      <node concept="37vLTG" id="3dB$2h_LB8a" role="3clF46">
-        <property role="TrG5h" value="imagePointer" />
-        <property role="3TUv4t" value="true" />
-        <node concept="3Tqbb2" id="3dB$2h_LB8b" role="1tU5fm">
-          <ref role="ehGHo" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
-        </node>
+      <node concept="37vLTG" id="2yY4N2xFiMv" role="3clF46">
+        <property role="TrG5h" value="imageAddress" />
+        <node concept="17QB3L" id="2yY4N2xFiN3" role="1tU5fm" />
       </node>
       <node concept="3Tm1VV" id="10rnQzwVu2Z" role="1B3o_S" />
       <node concept="3clFbS" id="10rnQzwVu30" role="3clF47">
