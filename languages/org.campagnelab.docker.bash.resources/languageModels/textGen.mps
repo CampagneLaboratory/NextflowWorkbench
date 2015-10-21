@@ -1597,7 +1597,7 @@
         </node>
         <node concept="lc7rE" id="2yY4N2ycXRp" role="3cqZAp">
           <node concept="la8eA" id="2yY4N2ycXTp" role="lcghm">
-            <property role="lacIc" value="echo &quot;export REPOSITORY_DIR=${IMAGE_ARTIFACT_REPOSITORY}&quot; &gt;&gt; $HOME/.bashrc &amp;&amp; source $HOME/.bashrc" />
+            <property role="lacIc" value="RUN echo &quot;export REPOSITORY_DIR=${IMAGE_REPOSITORY_DIR}&quot; &gt;&gt; $HOME/.bashrc " />
           </node>
           <node concept="l8MVK" id="2yY4N2ycXY3" role="lcghm" />
         </node>

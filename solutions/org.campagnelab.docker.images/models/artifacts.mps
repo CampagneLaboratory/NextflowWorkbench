@@ -8474,6 +8474,9 @@
         </node>
       </node>
     </node>
+    <node concept="3blhQM" id="2yY4N2yfmbV" role="3blhQR">
+      <ref role="3blhQY" node="2yY4N2yfmbU" resolve="software-gcc4.8_Image" />
+    </node>
   </node>
   <node concept="VuPG2" id="39YFbxZh5KP">
     <property role="TrG5h" value="base" />
@@ -8651,6 +8654,17 @@
     <node concept="Gyxd7" id="2yY4N2yfiw1" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="software" />
+      <property role="Gyxd1" value="latest" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="2yY4N2yfmbU">
+    <property role="2E_JEh" value="97bc59ecb55e" />
+    <property role="TrG5h" value="software-gcc4.8_Image" />
+    <property role="GSh9r" value="artifacts/software-gcc4.8:latest" />
+    <ref role="2E_BxF" node="3jQcDYNamKT" resolve="software-gcc4.8" />
+    <node concept="Gyxd7" id="2yY4N2yfndH" role="Gyxcj">
+      <property role="Gyxfx" value="artifacts" />
+      <property role="TrG5h" value="software-gcc4.8" />
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
