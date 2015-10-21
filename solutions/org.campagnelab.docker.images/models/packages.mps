@@ -164,11 +164,17 @@
       <concept id="3515886879324562347" name="org.campagnelab.docker.structure.CommandElement" flags="ng" index="gkxfm" />
       <concept id="8987412447080958668" name="org.campagnelab.docker.structure.DockerImage" flags="ng" index="2E_JVc">
         <property id="8987412447080959633" name="id" index="2E_JEh" />
+        <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
         <reference id="8987412447080991851" name="buildInstructions" index="2E_BxF" />
+        <child id="6819868375258175796" name="tagAs" index="Gyxcj" />
       </concept>
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
         <property id="8987412447080623507" name="options" index="2E$TAj" />
         <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
+      </concept>
+      <concept id="6819868375258175840" name="org.campagnelab.docker.structure.TagInfo" flags="ng" index="Gyxd7">
+        <property id="6819868375258175846" name="tag" index="Gyxd1" />
+        <property id="6819868375258175942" name="userName" index="Gyxfx" />
       </concept>
       <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
         <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
@@ -8181,7 +8187,7 @@
   </node>
   <node concept="VuPG2" id="3ybzEM9IngG">
     <property role="TrG5h" value="BOOST" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile1317087643845914522.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2985396131233965055.txt" />
     <property role="3GE5qa" value="dockerfiles" />
     <node concept="VuO64" id="3ybzEM9IngH" role="VuOVn">
       <node concept="VtuK3" id="3ybzEM9Inzt" role="VuO5T">
@@ -8231,6 +8237,9 @@
     </node>
     <node concept="2qOvVh" id="3dB$2h_j550" role="VuOVn">
       <node concept="gkxfm" id="3dB$2h_j552" role="gkDh$" />
+    </node>
+    <node concept="3blhQM" id="2yY4N2yOUeL" role="3blhQR">
+      <ref role="3blhQY" node="2yY4N2yOUeK" resolve="BOOST_Image" />
     </node>
   </node>
   <node concept="3lueso" id="10rnQzwTSvV">
@@ -16432,6 +16441,17 @@
     <property role="2E_JEh" value="4ac46d4ae706" />
     <property role="TrG5h" value="Salmon_Image" />
     <ref role="2E_BxF" node="3dB$2h_i0K4" resolve="Salmon" />
+  </node>
+  <node concept="2E_JVc" id="2yY4N2yOUeK">
+    <property role="2E_JEh" value="06d2c29e3f56" />
+    <property role="TrG5h" value="BOOST_Image" />
+    <property role="GSh9r" value="artifacts/boost:1.59.0.2" />
+    <ref role="2E_BxF" node="3ybzEM9IngG" resolve="BOOST" />
+    <node concept="Gyxd7" id="2yY4N2yOX4w" role="Gyxcj">
+      <property role="Gyxfx" value="artifacts" />
+      <property role="TrG5h" value="boost" />
+      <property role="Gyxd1" value="1.59.0.2" />
+    </node>
   </node>
 </model>
 

@@ -79,12 +79,6 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
-      <concept id="1083245097125" name="jetbrains.mps.baseLanguage.structure.EnumClass" flags="ig" index="Qs71p">
-        <child id="1083245396908" name="enumConstant" index="Qtgdg" />
-      </concept>
-      <concept id="1083245299891" name="jetbrains.mps.baseLanguage.structure.EnumConstantDeclaration" flags="ig" index="QsSxf">
-        <child id="492581319488141108" name="method" index="2HKRsH" />
-      </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
         <child id="1164903496223" name="catchClause" index="TEbGg" />
@@ -132,7 +126,6 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -6393,27 +6386,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="Qs71p" id="3dB$2h_Mszb">
-    <property role="3GE5qa" value="docker" />
-    <property role="TrG5h" value="IMAGE_LABELS" />
-    <node concept="QsSxf" id="3dB$2h_MtdC" role="Qtgdg">
-      <property role="TrG5h" value="withRepository" />
-      <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
-      <node concept="3clFb_" id="3dB$2h_MteY" role="2HKRsH">
-        <property role="TrG5h" value="toString" />
-        <node concept="17QB3L" id="3dB$2h_Mtfh" role="3clF45" />
-        <node concept="3clFbS" id="3dB$2h_Mtf0" role="3clF47">
-          <node concept="3clFbF" id="3dB$2h_MtfX" role="3cqZAp">
-            <node concept="Xl_RD" id="3dB$2h_MtfW" role="3clFbG">
-              <property role="Xl_RC" value="org.campagnelab.bash.nyosh.withRepository" />
-            </node>
-          </node>
-        </node>
-        <node concept="3Tm1VV" id="3dB$2h_STnl" role="1B3o_S" />
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="3dB$2h_Mszc" role="1B3o_S" />
   </node>
 </model>
 

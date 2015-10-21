@@ -1591,7 +1591,7 @@
       <node concept="3clFbS" id="Pnf3Vu0x6L" role="2VODD2">
         <node concept="lc7rE" id="3dB$2h_ymnD" role="3cqZAp">
           <node concept="la8eA" id="3dB$2h_ympJ" role="lcghm">
-            <property role="lacIc" value="LABEL org.campagnelab.bash.nyosh.withRepository=&quot;&quot;" />
+            <property role="lacIc" value="LABEL org.campagnelab.bash.nyosh.withRepository=&quot;yes&quot;" />
           </node>
           <node concept="l8MVK" id="3dB$2h_ynxI" role="lcghm" />
         </node>
