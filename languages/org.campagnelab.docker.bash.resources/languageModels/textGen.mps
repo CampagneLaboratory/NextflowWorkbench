@@ -1617,7 +1617,7 @@
         </node>
         <node concept="lc7rE" id="3XYZbe_F5y_" role="3cqZAp">
           <node concept="la8eA" id="3XYZbe_F5_t" role="lcghm">
-            <property role="lacIc" value="RUN rm -rf /root/.clustergateway/ &amp;&amp; rm -rf /root/.gobyweb/ &amp;&amp; rm -rf /tmp/* &amp;&amp; updatedb" />
+            <property role="lacIc" value="RUN rm -rf $JOB_AREA/* &amp;&amp; rm -rf /root/.clustergateway/ &amp;&amp; rm -rf /root/.gobyweb/ &amp;&amp; rm -rf /tmp/* &amp;&amp; updatedb" />
           </node>
           <node concept="l8MVK" id="3XYZbe_F622" role="lcghm" />
         </node>
