@@ -42,6 +42,14 @@
         <child id="2051553890368785070" name="jobArea" index="3lu1Za" />
       </concept>
     </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh">
       <concept id="1482136479877605736" name="org.campagnelab.bash.nyosh.structure.InstallGobyWebArtifacts" flags="ng" index="23kj8I">
         <child id="7811633743987581803" name="resourceSpecs" index="3PJtNF" />
@@ -178,6 +186,9 @@
       </concept>
       <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
         <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
+      </concept>
+      <concept id="1893262236500048401" name="org.campagnelab.docker.structure.RunInstruction" flags="ng" index="VugRC">
+        <child id="1893262236500049774" name="command" index="Vugyn" />
       </concept>
       <concept id="1893262236499908796" name="org.campagnelab.docker.structure.DockerContainer" flags="ng" index="VuMX5">
         <property id="6819868375264208052" name="id" index="GbyUj" />
@@ -16682,6 +16693,44 @@
     <node concept="Gyxd7" id="2yY4N2yYdra" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="kallisto-homo-sapiens" />
+      <property role="Gyxd1" value="1.0.0" />
+    </node>
+  </node>
+  <node concept="VuPG2" id="2yY4N2zp18a">
+    <property role="TrG5h" value="SalmonValgrind" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile2103816966115069958.txt" />
+    <property role="3GE5qa" value="dockerfiles" />
+    <node concept="VuO64" id="2yY4N2zp18b" role="VuOVn">
+      <node concept="VtuK3" id="2yY4N2zp18c" role="VuO5T">
+        <property role="VuL0s" value="1.0.0" />
+        <property role="VuL0v" value="artifacts" />
+        <property role="GbyUj" value="salmon-homo-sapiens" />
+        <property role="3zaeVo" value="true" />
+      </node>
+    </node>
+    <node concept="VuOhh" id="2yY4N2zp18d" role="VuOVn">
+      <property role="VuOhg" value="Campagnelab" />
+      <property role="VuOhi" value="manuele.simi@campagnelab.org" />
+    </node>
+    <node concept="VugRC" id="2yY4N2zpaLw" role="VuOVn">
+      <node concept="19SGf9" id="2yY4N2zpaLI" role="Vugyn">
+        <node concept="19SUe$" id="2yY4N2zpaLJ" role="19SJt6">
+          <property role="19SUeA" value="yum install -y valgrind &amp;&amp; yum clean all" />
+        </node>
+      </node>
+    </node>
+    <node concept="3blhQM" id="2yY4N2zpcGC" role="3blhQR">
+      <ref role="3blhQY" node="2yY4N2zpcGB" resolve="SalmonValgrind_Image" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="2yY4N2zpcGB">
+    <property role="2E_JEh" value="9236b1084981" />
+    <property role="TrG5h" value="SalmonValgrind_Image" />
+    <property role="GSh9r" value="artifacts/salmon-valgrind:1.0.0" />
+    <ref role="2E_BxF" node="2yY4N2zp18a" resolve="SalmonValgrind" />
+    <node concept="Gyxd7" id="2yY4N2zpdEN" role="Gyxcj">
+      <property role="Gyxfx" value="artifacts" />
+      <property role="TrG5h" value="salmon-valgrind" />
       <property role="Gyxd1" value="1.0.0" />
     </node>
   </node>

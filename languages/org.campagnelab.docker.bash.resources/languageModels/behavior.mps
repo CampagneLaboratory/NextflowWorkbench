@@ -5514,7 +5514,7 @@
       <node concept="3clFbS" id="6B$xkWu1POA" role="3clF47">
         <node concept="3cpWs6" id="6B$xkWu1POE" role="3cqZAp">
           <node concept="Xl_RD" id="6B$xkWu1POF" role="3cqZAk">
-            <property role="Xl_RC" value="/scratchLocal/gobyweb/ARTIFACT_REPOSITORY" />
+            <property role="Xl_RC" value="$REPOSITORY_DIR" />
           </node>
         </node>
       </node>
