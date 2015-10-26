@@ -5055,18 +5055,16 @@
                 </node>
                 <node concept="2BsdOp" id="56asy6tiJqD" role="33vP2m">
                   <node concept="Xl_RD" id="56asy6tiJqA" role="2BsfMF">
-                    <property role="Xl_RC" value="source $HOME/.bashrc &amp;&amp; /bin/bash" />
+                    <property role="Xl_RC" value="/bin/bash" />
                   </node>
                   <node concept="Xl_RD" id="56asy6tiJqB" role="2BsfMF">
                     <property role="Xl_RC" value="-c" />
                   </node>
                   <node concept="3cpWs3" id="29FFJBZrO0V" role="2BsfMF">
-                    <node concept="Xl_RD" id="29FFJBZrOQP" role="3uHU7w">
-                      <property role="Xl_RC" value="\&quot;" />
-                    </node>
+                    <node concept="Xl_RD" id="29FFJBZrOQP" role="3uHU7w" />
                     <node concept="3cpWs3" id="7lMr3OmAycK" role="3uHU7B">
                       <node concept="Xl_RD" id="56asy6tiJqC" role="3uHU7B">
-                        <property role="Xl_RC" value="\&quot;ls -1F " />
+                        <property role="Xl_RC" value="source $HOME/.bashrc &amp;&amp; ls -1F " />
                       </node>
                       <node concept="37vLTw" id="7lMr3OmA$Gh" role="3uHU7w">
                         <ref role="3cqZAo" node="56asy6teXsD" resolve="path" />
@@ -5145,6 +5143,10 @@
                     <node concept="Rm8GO" id="56asy6tiJrQ" role="37wK5m">
                       <ref role="1Px2BO" to="fpnk:~DockerClient$ExecParameter" resolve="DockerClient.ExecParameter" />
                       <ref role="Rm8GQ" to="fpnk:~DockerClient$ExecParameter.STDOUT" resolve="STDOUT" />
+                    </node>
+                    <node concept="Rm8GO" id="29FFJBZvEc6" role="37wK5m">
+                      <ref role="Rm8GQ" to="fpnk:~DockerClient$ExecParameter.STDERR" resolve="STDERR" />
+                      <ref role="1Px2BO" to="fpnk:~DockerClient$ExecParameter" resolve="DockerClient.ExecParameter" />
                     </node>
                   </node>
                 </node>
