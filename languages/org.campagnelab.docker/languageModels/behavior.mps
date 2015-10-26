@@ -5282,7 +5282,7 @@
                   <node concept="3g6Rrh" id="29FFJBZM9MW" role="2ShVmc">
                     <node concept="17QB3L" id="29FFJBZM8Vj" role="3g7fb8" />
                     <node concept="Xl_RD" id="29FFJBZMaCl" role="3g7hyw">
-                      <property role="Xl_RC" value="cannot list, docker container is not active" />
+                      <property role="Xl_RC" value="cannot list, interactive docker container is not running" />
                     </node>
                   </node>
                 </node>
