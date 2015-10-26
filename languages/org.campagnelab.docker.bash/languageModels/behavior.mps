@@ -101,6 +101,7 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -239,6 +240,7 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
         <reference id="1176109685394" name="concept" index="3lApI3" />
       </concept>
@@ -247,6 +249,10 @@
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <reference id="1140138128738" name="concept" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -387,6 +393,25 @@
       <ref role="13i0hy" node="2h_fDmyfOB_" resolve="autoComplete" />
       <node concept="3Tm1VV" id="2h_fDmyfOxi" role="1B3o_S" />
       <node concept="3clFbS" id="2h_fDmyfOxj" role="3clF47">
+        <node concept="3cpWs8" id="2h_fDmyfOy9" role="3cqZAp">
+          <node concept="3cpWsn" id="2h_fDmyfOya" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="_YKpA" id="2h_fDmyfOyb" role="1tU5fm">
+              <node concept="1LlUBW" id="2h_fDmyfOyc" role="_ZDj9">
+                <node concept="17QB3L" id="2h_fDmyfOyd" role="1Lm7xW" />
+                <node concept="10P_77" id="2h_fDmyfOye" role="1Lm7xW" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="2h_fDmyfOyf" role="33vP2m">
+              <node concept="Tc6Ow" id="2h_fDmyfOyg" role="2ShVmc">
+                <node concept="1LlUBW" id="2h_fDmyfOyh" role="HW$YZ">
+                  <node concept="17QB3L" id="2h_fDmyfOyi" role="1Lm7xW" />
+                  <node concept="10P_77" id="2h_fDmyfOyj" role="1Lm7xW" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2h_fDmyfOxk" role="3cqZAp">
           <node concept="BsUDl" id="2h_fDmyfOxl" role="3clFbG">
             <ref role="37wK5l" node="2h_fDmyfO$L" resolve="resetContainerLink" />
@@ -394,7 +419,6 @@
         </node>
         <node concept="3clFbJ" id="2h_fDmyfOxm" role="3cqZAp">
           <node concept="3clFbS" id="2h_fDmyfOxn" role="3clFbx">
-            <node concept="3clFbH" id="2h_fDmyfOxo" role="3cqZAp" />
             <node concept="3clFbF" id="2h_fDmyfOxp" role="3cqZAp">
               <node concept="2OqwBi" id="2h_fDmyfOxs" role="3clFbG">
                 <node concept="2OqwBi" id="2h_fDmyfOxt" role="2Oq$k0">
@@ -445,22 +469,73 @@
         </node>
         <node concept="3clFbJ" id="2h_fDmyfOxM" role="3cqZAp">
           <node concept="3clFbS" id="2h_fDmyfOxN" role="3clFbx">
-            <node concept="3SKdUt" id="2h_fDmyfOxO" role="3cqZAp">
-              <node concept="3SKdUq" id="2h_fDmyfOxP" role="3SKWNk">
-                <property role="3SKdUp" value="remove the filename, to get the last directory and list files it contains:" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="2h_fDmyfOxQ" role="3cqZAp">
-              <node concept="37vLTI" id="2h_fDmyfOxR" role="3clFbG">
-                <node concept="2YIFZM" id="2h_fDmyfOxS" role="37vLTx">
-                  <ref role="37wK5l" to="ak0d:~FilenameUtils.getPathNoEndSeparator(java.lang.String):java.lang.String" resolve="getPathNoEndSeparator" />
-                  <ref role="1Pybhc" to="ak0d:~FilenameUtils" resolve="FilenameUtils" />
-                  <node concept="37vLTw" id="2h_fDmyfOxT" role="37wK5m">
-                    <ref role="3cqZAo" node="2h_fDmyfOzD" resolve="somePartialPath" />
+            <node concept="3clFbJ" id="29FFJBZK$3B" role="3cqZAp">
+              <node concept="3clFbS" id="29FFJBZK$3D" role="3clFbx">
+                <node concept="3SKdUt" id="2h_fDmyfOxO" role="3cqZAp">
+                  <node concept="3SKdUq" id="2h_fDmyfOxP" role="3SKWNk">
+                    <property role="3SKdUp" value="remove the filename, to get the last directory and list files it contains:" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="2h_fDmyfOxU" role="37vLTJ">
-                  <ref role="3cqZAo" node="2h_fDmyfOzD" resolve="somePartialPath" />
+                <node concept="3clFbF" id="2h_fDmyfOxQ" role="3cqZAp">
+                  <node concept="37vLTI" id="2h_fDmyfOxR" role="3clFbG">
+                    <node concept="2YIFZM" id="2h_fDmyfOxS" role="37vLTx">
+                      <ref role="1Pybhc" to="ak0d:~FilenameUtils" resolve="FilenameUtils" />
+                      <ref role="37wK5l" to="ak0d:~FilenameUtils.getPathNoEndSeparator(java.lang.String):java.lang.String" resolve="getPathNoEndSeparator" />
+                      <node concept="37vLTw" id="2h_fDmyfOxT" role="37wK5m">
+                        <ref role="3cqZAo" node="2h_fDmyfOzD" resolve="somePartialPath" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="2h_fDmyfOxU" role="37vLTJ">
+                      <ref role="3cqZAo" node="2h_fDmyfOzD" resolve="somePartialPath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="29FFJBZKDCn" role="3clFbw">
+                <node concept="1PxgMI" id="29FFJBZKDvr" role="2Oq$k0">
+                  <ref role="1PxNhF" to="r9td:2h_fDmyfOuY" resolve="PathPart" />
+                  <node concept="2OqwBi" id="29FFJBZKCDO" role="1PxMeX">
+                    <node concept="2OqwBi" id="29FFJBZK_aW" role="2Oq$k0">
+                      <node concept="2OqwBi" id="29FFJBZK$a6" role="2Oq$k0">
+                        <node concept="13iPFW" id="29FFJBZK$65" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="29FFJBZK$of" role="2OqNvi">
+                          <ref role="3TtcxE" to="r9td:2h_fDmyfOuX" />
+                        </node>
+                      </node>
+                      <node concept="1yVyf7" id="29FFJBZKBv5" role="2OqNvi" />
+                    </node>
+                    <node concept="YBYNd" id="29FFJBZKCQm" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="29FFJBZKDX$" role="2OqNvi">
+                  <ref role="37wK5l" node="1Fq$Xhj5Uqy" resolve="isDirectory" />
+                </node>
+              </node>
+              <node concept="9aQIb" id="29FFJBZKEaJ" role="9aQIa">
+                <node concept="3clFbS" id="29FFJBZKEaK" role="9aQI4">
+                  <node concept="3SKdUt" id="29FFJBZKJIm" role="3cqZAp">
+                    <node concept="3SKdUq" id="29FFJBZKK1O" role="3SKWNk">
+                      <property role="3SKdUp" value="Cannot autocomplete, parent is not a directory" />
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="29FFJBZKHvK" role="3cqZAp">
+                    <node concept="2YIFZM" id="29FFJBZKHvL" role="3clFbG">
+                      <ref role="1Pybhc" to="rzxe:7MTH03m4_Rr" resolve="ExecuteDockerCommands" />
+                      <ref role="37wK5l" to="rzxe:7MTH03merpm" resolve="log" />
+                      <node concept="2OqwBi" id="29FFJBZKHvM" role="37wK5m">
+                        <node concept="13iPFW" id="29FFJBZKHvN" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="29FFJBZKHvO" role="2OqNvi" />
+                      </node>
+                      <node concept="Xl_RD" id="29FFJBZKHvR" role="37wK5m">
+                        <property role="Xl_RC" value="Cannot autocomplete, parent is not a directory" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWs6" id="29FFJBZKEeW" role="3cqZAp">
+                    <node concept="37vLTw" id="29FFJBZKG6_" role="3cqZAk">
+                      <ref role="3cqZAo" node="2h_fDmyfOya" resolve="result" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -498,25 +573,6 @@
             <property role="3SKdUp" value="docker exec ls path, then translate" />
           </node>
         </node>
-        <node concept="3cpWs8" id="2h_fDmyfOy9" role="3cqZAp">
-          <node concept="3cpWsn" id="2h_fDmyfOya" role="3cpWs9">
-            <property role="TrG5h" value="result" />
-            <node concept="_YKpA" id="2h_fDmyfOyb" role="1tU5fm">
-              <node concept="1LlUBW" id="2h_fDmyfOyc" role="_ZDj9">
-                <node concept="17QB3L" id="2h_fDmyfOyd" role="1Lm7xW" />
-                <node concept="10P_77" id="2h_fDmyfOye" role="1Lm7xW" />
-              </node>
-            </node>
-            <node concept="2ShNRf" id="2h_fDmyfOyf" role="33vP2m">
-              <node concept="Tc6Ow" id="2h_fDmyfOyg" role="2ShVmc">
-                <node concept="1LlUBW" id="2h_fDmyfOyh" role="HW$YZ">
-                  <node concept="17QB3L" id="2h_fDmyfOyi" role="1Lm7xW" />
-                  <node concept="10P_77" id="2h_fDmyfOyj" role="1Lm7xW" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="2h_fDmyfOyk" role="3cqZAp">
           <node concept="3cpWsn" id="2h_fDmyfOyl" role="3cpWs9">
             <property role="TrG5h" value="resultLs" />
@@ -548,6 +604,9 @@
               </node>
               <node concept="37vLTw" id="2h_fDmyfOyz" role="37wK5m">
                 <ref role="3cqZAo" node="2h_fDmyfOzD" resolve="somePartialPath" />
+              </node>
+              <node concept="Xl_RD" id="29FFJBZDlpy" role="37wK5m">
+                <property role="Xl_RC" value="" />
               </node>
             </node>
             <node concept="10Q1$e" id="2h_fDmyfOy$" role="1tU5fm">
@@ -962,6 +1021,24 @@
       <ref role="13i0hy" node="2h_fDmyfOCy" resolve="doesPathExist" />
       <node concept="3Tm1VV" id="2h_fDmyfO_6" role="1B3o_S" />
       <node concept="3clFbS" id="2h_fDmyfO_7" role="3clF47">
+        <node concept="3clFbF" id="29FFJBZJUqS" role="3cqZAp">
+          <node concept="2YIFZM" id="29FFJBZJUqU" role="3clFbG">
+            <ref role="1Pybhc" to="rzxe:7MTH03m4_Rr" resolve="ExecuteDockerCommands" />
+            <ref role="37wK5l" to="rzxe:7MTH03merpm" resolve="log" />
+            <node concept="2OqwBi" id="29FFJBZJUqV" role="37wK5m">
+              <node concept="13iPFW" id="29FFJBZJUqW" role="2Oq$k0" />
+              <node concept="I4A8Y" id="29FFJBZJUqX" role="2OqNvi" />
+            </node>
+            <node concept="3cpWs3" id="29FFJBZJUqY" role="37wK5m">
+              <node concept="37vLTw" id="29FFJBZJUqZ" role="3uHU7w">
+                <ref role="3cqZAo" node="2h_fDmyfO_E" resolve="path" />
+              </node>
+              <node concept="Xl_RD" id="29FFJBZJUr0" role="3uHU7B">
+                <property role="Xl_RC" value="Checking does path exist " />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2h_fDmyfO_8" role="3cqZAp" />
         <node concept="3cpWs8" id="2h_fDmyfO_9" role="3cqZAp">
           <node concept="3cpWsn" id="2h_fDmyfO_a" role="3cpWs9">
@@ -995,6 +1072,9 @@
               <node concept="37vLTw" id="2h_fDmyfO_o" role="37wK5m">
                 <ref role="3cqZAo" node="2h_fDmyfO_E" resolve="path" />
               </node>
+              <node concept="Xl_RD" id="29FFJBZDlH3" role="37wK5m">
+                <property role="Xl_RC" value="-d" />
+              </node>
             </node>
             <node concept="10Q1$e" id="2h_fDmyfO_p" role="1tU5fm">
               <node concept="17QB3L" id="2h_fDmyfO_q" role="10Q1$1" />
@@ -1022,15 +1102,28 @@
           </node>
         </node>
         <node concept="3cpWs6" id="2h_fDmyfO_$" role="3cqZAp">
-          <node concept="3clFbC" id="2h_fDmyfO__" role="3cqZAk">
-            <node concept="3cmrfG" id="2h_fDmyfO_A" role="3uHU7w">
-              <property role="3cmrfH" value="1" />
-            </node>
-            <node concept="2OqwBi" id="2h_fDmyfO_B" role="3uHU7B">
-              <node concept="37vLTw" id="2h_fDmyfO_C" role="2Oq$k0">
-                <ref role="3cqZAo" node="2h_fDmyfO_a" resolve="resultLs" />
+          <node concept="1Wc70l" id="29FFJBZKd$R" role="3cqZAk">
+            <node concept="2OqwBi" id="29FFJBZKew$" role="3uHU7w">
+              <node concept="AH0OO" id="29FFJBZKe9n" role="2Oq$k0">
+                <node concept="3cmrfG" id="29FFJBZKeil" role="AHEQo">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="37vLTw" id="29FFJBZKdFE" role="AHHXb">
+                  <ref role="3cqZAo" node="2h_fDmyfO_a" resolve="resultLs" />
+                </node>
               </node>
-              <node concept="1Rwk04" id="2h_fDmyfO_D" role="2OqNvi" />
+              <node concept="17RvpY" id="29FFJBZKf$0" role="2OqNvi" />
+            </node>
+            <node concept="3clFbC" id="2h_fDmyfO__" role="3uHU7B">
+              <node concept="2OqwBi" id="2h_fDmyfO_B" role="3uHU7B">
+                <node concept="37vLTw" id="2h_fDmyfO_C" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2h_fDmyfO_a" resolve="resultLs" />
+                </node>
+                <node concept="1Rwk04" id="2h_fDmyfO_D" role="2OqNvi" />
+              </node>
+              <node concept="3cmrfG" id="2h_fDmyfO_A" role="3uHU7w">
+                <property role="3cmrfH" value="1" />
+              </node>
             </node>
           </node>
         </node>
@@ -1195,6 +1288,9 @@
               </node>
               <node concept="37vLTw" id="2h_fDmyfOAM" role="37wK5m">
                 <ref role="3cqZAo" node="2h_fDmyfO_M" resolve="path" />
+              </node>
+              <node concept="Xl_RD" id="29FFJBZDkrG" role="37wK5m">
+                <property role="Xl_RC" value="-d" />
               </node>
             </node>
             <node concept="10Q1$e" id="2h_fDmyfOAN" role="1tU5fm">

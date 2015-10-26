@@ -4899,6 +4899,10 @@
         <property role="TrG5h" value="path" />
         <node concept="17QB3L" id="56asy6teXvO" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="29FFJBZD8uL" role="3clF46">
+        <property role="TrG5h" value="lsOptions" />
+        <node concept="17QB3L" id="29FFJBZD9lt" role="1tU5fm" />
+      </node>
       <node concept="3clFbS" id="56asy6teVIk" role="3clF47">
         <node concept="SfApY" id="56asy6tijvZ" role="3cqZAp">
           <node concept="3clFbS" id="56asy6tijw1" role="SfCbr">
@@ -5060,15 +5064,22 @@
                   <node concept="Xl_RD" id="56asy6tiJqB" role="2BsfMF">
                     <property role="Xl_RC" value="-c" />
                   </node>
-                  <node concept="3cpWs3" id="29FFJBZrO0V" role="2BsfMF">
-                    <node concept="Xl_RD" id="29FFJBZrOQP" role="3uHU7w" />
-                    <node concept="3cpWs3" id="7lMr3OmAycK" role="3uHU7B">
-                      <node concept="Xl_RD" id="56asy6tiJqC" role="3uHU7B">
-                        <property role="Xl_RC" value="source $HOME/.bashrc &amp;&amp; ls -1F " />
+                  <node concept="3cpWs3" id="7lMr3OmAycK" role="2BsfMF">
+                    <node concept="3cpWs3" id="29FFJBZDeER" role="3uHU7B">
+                      <node concept="Xl_RD" id="29FFJBZDfwW" role="3uHU7w">
+                        <property role="Xl_RC" value=" " />
                       </node>
-                      <node concept="37vLTw" id="7lMr3OmA$Gh" role="3uHU7w">
-                        <ref role="3cqZAo" node="56asy6teXsD" resolve="path" />
+                      <node concept="3cpWs3" id="29FFJBZDcZk" role="3uHU7B">
+                        <node concept="37vLTw" id="29FFJBZDdQU" role="3uHU7w">
+                          <ref role="3cqZAo" node="29FFJBZD8uL" resolve="lsOptions" />
+                        </node>
+                        <node concept="Xl_RD" id="56asy6tiJqC" role="3uHU7B">
+                          <property role="Xl_RC" value="source $HOME/.bashrc &amp;&amp; ls -1F " />
+                        </node>
                       </node>
+                    </node>
+                    <node concept="37vLTw" id="7lMr3OmA$Gh" role="3uHU7w">
+                      <ref role="3cqZAo" node="56asy6teXsD" resolve="path" />
                     </node>
                   </node>
                 </node>
@@ -5143,10 +5154,6 @@
                     <node concept="Rm8GO" id="56asy6tiJrQ" role="37wK5m">
                       <ref role="1Px2BO" to="fpnk:~DockerClient$ExecParameter" resolve="DockerClient.ExecParameter" />
                       <ref role="Rm8GQ" to="fpnk:~DockerClient$ExecParameter.STDOUT" resolve="STDOUT" />
-                    </node>
-                    <node concept="Rm8GO" id="29FFJBZvEc6" role="37wK5m">
-                      <ref role="Rm8GQ" to="fpnk:~DockerClient$ExecParameter.STDERR" resolve="STDERR" />
-                      <ref role="1Px2BO" to="fpnk:~DockerClient$ExecParameter" resolve="DockerClient.ExecParameter" />
                     </node>
                   </node>
                 </node>
@@ -5304,6 +5311,11 @@
         <property role="3TUv4t" value="true" />
         <node concept="17QB3L" id="51H4qOrOJVr" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="29FFJBZD7aB" role="3clF46">
+        <property role="TrG5h" value="lsOptions" />
+        <property role="3TUv4t" value="true" />
+        <node concept="17QB3L" id="29FFJBZD8qA" role="1tU5fm" />
+      </node>
       <node concept="3clFbS" id="51H4qOrOJVs" role="3clF47">
         <node concept="SfApY" id="51H4qOrRdN2" role="3cqZAp">
           <node concept="3clFbS" id="51H4qOrRdN4" role="SfCbr">
@@ -5328,7 +5340,7 @@
             </node>
             <node concept="3SKdUt" id="29FFJBZuMs0" role="3cqZAp">
               <node concept="3SKdUq" id="29FFJBZuMJN" role="3SKWNk">
-                <property role="3SKdUp" value="TODO: cache disabled for testing purposes (10/23/15)" />
+                <property role="3SKdUp" value="TODO: cache disabled for testing purposes (10/23/15), consider the ls options used when caching" />
               </node>
             </node>
             <node concept="3SKdUt" id="29FFJBZms5h" role="3cqZAp">
@@ -5412,6 +5424,9 @@
                 </node>
                 <node concept="37vLTw" id="29FFJBZmtgB" role="37wK5m">
                   <ref role="3cqZAo" node="51H4qOrOJVq" resolve="path" />
+                </node>
+                <node concept="37vLTw" id="29FFJBZDb6M" role="37wK5m">
+                  <ref role="3cqZAo" node="29FFJBZD7aB" resolve="lsOptions" />
                 </node>
               </node>
             </node>
