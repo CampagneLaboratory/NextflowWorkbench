@@ -518,19 +518,6 @@
                       <property role="3SKdUp" value="Cannot autocomplete, parent is not a directory" />
                     </node>
                   </node>
-                  <node concept="3clFbF" id="29FFJBZKHvK" role="3cqZAp">
-                    <node concept="2YIFZM" id="29FFJBZKHvL" role="3clFbG">
-                      <ref role="1Pybhc" to="rzxe:7MTH03m4_Rr" resolve="ExecuteDockerCommands" />
-                      <ref role="37wK5l" to="rzxe:7MTH03merpm" resolve="log" />
-                      <node concept="2OqwBi" id="29FFJBZKHvM" role="37wK5m">
-                        <node concept="13iPFW" id="29FFJBZKHvN" role="2Oq$k0" />
-                        <node concept="I4A8Y" id="29FFJBZKHvO" role="2OqNvi" />
-                      </node>
-                      <node concept="Xl_RD" id="29FFJBZKHvR" role="37wK5m">
-                        <property role="Xl_RC" value="Cannot autocomplete, parent is not a directory" />
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3cpWs6" id="29FFJBZKEeW" role="3cqZAp">
                     <node concept="37vLTw" id="29FFJBZKG6_" role="3cqZAk">
                       <ref role="3cqZAo" node="2h_fDmyfOya" resolve="result" />
