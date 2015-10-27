@@ -1149,6 +1149,12 @@
       <node concept="3F0A7n" id="1BdDHvV1Smu" role="3EZMnx">
         <ref role="1NtTu8" to="6jv6:1BdDHvV19ow" resolve="command" />
       </node>
+      <node concept="3F0ifn" id="29FFJC0lJfX" role="3EZMnx">
+        <property role="3F0ifm" value="in" />
+      </node>
+      <node concept="3F0A7n" id="29FFJC0lJMI" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:29FFJC0lIf1" resolve="workingDir" />
+      </node>
       <node concept="3F0ifn" id="1hjSjLb2hyU" role="3EZMnx">
         <property role="3F0ifm" value="}" />
         <node concept="3mYdg7" id="1hjSjLb2hyV" role="3F10Kt">

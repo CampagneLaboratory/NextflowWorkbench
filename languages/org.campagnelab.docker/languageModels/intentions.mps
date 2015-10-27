@@ -273,7 +273,7 @@
         <node concept="3clFbF" id="VMSWAF3ZLw" role="3cqZAp">
           <node concept="37vLTI" id="VMSWAF40jR" role="3clFbG">
             <node concept="Xl_RD" id="VMSWAF40kb" role="37vLTx">
-              <property role="Xl_RC" value="sleep 1000" />
+              <property role="Xl_RC" value="sleep 10000" />
             </node>
             <node concept="2OqwBi" id="VMSWAF3ZO3" role="37vLTJ">
               <node concept="37vLTw" id="VMSWAF3ZLu" role="2Oq$k0">
@@ -281,6 +281,21 @@
               </node>
               <node concept="3TrcHB" id="VMSWAF4010" role="2OqNvi">
                 <ref role="3TsBF5" to="6jv6:1BdDHvV19ow" resolve="command" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="29FFJC0lLXF" role="3cqZAp">
+          <node concept="37vLTI" id="29FFJC0lMMz" role="3clFbG">
+            <node concept="Xl_RD" id="29FFJC0lMRB" role="37vLTx">
+              <property role="Xl_RC" value="/" />
+            </node>
+            <node concept="2OqwBi" id="29FFJC0lM95" role="37vLTJ">
+              <node concept="37vLTw" id="29FFJC0lLXD" role="2Oq$k0">
+                <ref role="3cqZAo" node="VMSWAF3ZJo" resolve="running" />
+              </node>
+              <node concept="3TrcHB" id="29FFJC0lMnR" role="2OqNvi">
+                <ref role="3TsBF5" to="6jv6:29FFJC0lIf1" resolve="workingDir" />
               </node>
             </node>
           </node>
