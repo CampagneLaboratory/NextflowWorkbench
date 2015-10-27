@@ -303,6 +303,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="79Et$HmzUG3" role="3cqZAp">
+          <node concept="37vLTI" id="79Et$HmzVJL" role="3clFbG">
+            <node concept="3clFbT" id="79Et$HmzVOI" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="79Et$HmzUR5" role="37vLTJ">
+              <node concept="37vLTw" id="79Et$HmzUG1" role="2Oq$k0">
+                <ref role="3cqZAo" node="VMSWAF3ZJo" resolve="running" />
+              </node>
+              <node concept="3TrcHB" id="79Et$HmzVib" role="2OqNvi">
+                <ref role="3TsBF5" to="6jv6:79Et$HmzRxk" resolve="mountWorkingDir" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="VMSWAF44WT" role="3cqZAp">
           <node concept="2OqwBi" id="VMSWAF44ZH" role="3clFbG">
             <node concept="37vLTw" id="VMSWAF44WR" role="2Oq$k0">

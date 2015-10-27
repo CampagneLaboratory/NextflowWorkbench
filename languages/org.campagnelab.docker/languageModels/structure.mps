@@ -292,6 +292,10 @@
       <property role="TrG5h" value="workingDir" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="79Et$HmzRxk" role="1TKVEl">
+      <property role="TrG5h" value="mountWorkingDir" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="5U_2ytMywgb" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

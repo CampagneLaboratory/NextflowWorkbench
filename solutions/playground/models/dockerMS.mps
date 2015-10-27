@@ -252,6 +252,7 @@
       </concept>
       <concept id="6819868375264134127" name="org.campagnelab.docker.structure.RunningContainer" flags="ng" index="GbKB8">
         <property id="2480268408568341441" name="workingDir" index="yfkOV" />
+        <property id="8244532133801982036" name="mountWorkingDir" index="$TgSv" />
         <property id="1464761952898881430" name="running" index="1vm7qE" />
         <property id="1859325667733444128" name="command" index="3yMj3R" />
         <reference id="1859325667733099571" name="image" index="3zcJb$" />
@@ -8598,73 +8599,52 @@
   </node>
   <node concept="1QJbas" id="4rsVl6EAH01">
     <property role="TrG5h" value="ScriptWithKallisto" />
-    <node concept="GbKB8" id="79Et$HmrHW4" role="234boB">
+    <node concept="GbKB8" id="A$944B3hKr" role="234boB">
       <property role="VuL0s" value="1.0.0" />
       <property role="3yMj3R" value="sleep 10000" />
       <property role="yfkOV" value="/Users/mas2182/Lab/Projects/MPS/NextflowWorkbench//solutions/playground/classes_gen/dockerMS/" />
+      <property role="$TgSv" value="true" />
       <property role="GbyUj" value="kallisto-homo-sapiens" />
       <property role="3zaeVo" value="true" />
       <property role="VuL0v" value="artifacts" />
       <property role="TrG5h" value="interactive" />
-      <property role="1vm7qE" value="false" />
-      <ref role="3zcJb$" node="79Et$HmrHW5" resolve="image" />
+      <property role="1vm7qE" value="true" />
+      <ref role="3zcJb$" node="A$944B3hKs" resolve="image" />
     </node>
     <node concept="NgwLd" id="6LCvS2pIH$r" role="1QJbqZ">
       <node concept="19SGf9" id="6LCvS2pIH$t" role="3Y$PkS">
-        <node concept="19SUe$" id="79Et$HmtlsB" role="19SJt6">
-          <property role="19SUeA" value="ls -lrt " />
+        <node concept="19SUe$" id="79Et$HmALBb" role="19SJt6">
+          <property role="19SUeA" value="pwd&#10;cd /home/gobyweb&#10;ls -lrt " />
         </node>
-        <node concept="1OktH4" id="79Et$Hmtlsx" role="19SJt6">
-          <ref role="26mB_n" node="79Et$HmrHW4" resolve="interactive" />
-          <node concept="19OFZp" id="79Et$Hmtls$" role="26mB$C">
+        <node concept="1OktH4" id="79Et$HmGEIX" role="19SJt6">
+          <ref role="26mB_n" node="A$944B3hKr" resolve="interactive" />
+          <node concept="19OFZp" id="79Et$HmGEJ0" role="26mB$C">
             <property role="26mB_l" value="true" />
             <property role="26mB$E" value="" />
-            <node concept="31HMC_" id="79Et$Hmtls_" role="19OIOa">
-              <ref role="31HMCX" node="3LK8OyvsjGh" resolve="artifact path KALLISTO_INDEX.INDEX" />
+            <node concept="31HMC_" id="79Et$HmGEJ1" role="19OIOa">
+              <ref role="31HMCX" node="3LK8OyvsjGE" resolve="artifact path ENSEMBL_TRANSCRIPTS.TOPLEVEL" />
             </node>
           </node>
-          <node concept="26mB$F" id="79Et$Hmtltr" role="26mB$C">
+          <node concept="26mB$F" id="79Et$HmGEJu" role="26mB$C">
             <property role="26mB_l" value="false" />
-            <property role="26mB$E" value="transcripts_index" />
+            <property role="26mB$E" value="transcripts-all.fasta.gz" />
             <property role="OYnhT" value="" />
           </node>
         </node>
-        <node concept="19SUe$" id="79Et$Hmtlsw" role="19SJt6">
-          <property role="19SUeA" value="&#10;ls -rt " />
+        <node concept="19SUe$" id="79Et$HmGEIW" role="19SJt6">
+          <property role="19SUeA" value="&#10;ls -lrt " />
         </node>
-        <node concept="26mB_k" id="79Et$Hmtm57" role="19SJt6">
-          <ref role="26mB_n" node="79Et$HmrHW4" resolve="interactive" />
-          <node concept="26mB$F" id="79Et$Hmtm59" role="26mB$C">
-            <property role="26mB_l" value="true" />
-            <property role="26mB$E" value=".." />
-          </node>
-          <node concept="26mB$F" id="79Et$Hmtm5B" role="26mB$C">
-            <property role="26mB_l" value="true" />
-            <property role="26mB$E" value=".." />
-          </node>
-          <node concept="26mB$F" id="79Et$Hmtm5V" role="26mB$C">
-            <property role="26mB_l" value="true" />
-            <property role="26mB$E" value=".." />
-          </node>
-          <node concept="26mB$F" id="79Et$Hmtm65" role="26mB$C">
-            <property role="26mB_l" value="true" />
-            <property role="26mB$E" value=".." />
-          </node>
-          <node concept="26mB$F" id="79Et$Hmtm6y" role="26mB$C">
-            <property role="26mB_l" value="true" />
-            <property role="OYnhT" value="" />
-            <property role="26mB$E" value=".." />
-          </node>
-          <node concept="26mB$F" id="79Et$HmtAOv" role="26mB$C">
-            <property role="26mB_l" value="true" />
-            <property role="26mB$E" value=".." />
-          </node>
-          <node concept="26mB$F" id="79Et$HmtAOM" role="26mB$C">
+        <node concept="26mB_k" id="A$944B3hN9" role="19SJt6">
+          <ref role="26mB_n" node="A$944B3hKr" resolve="interactive" />
+          <node concept="26mB$F" id="A$944B4jM$" role="26mB$C">
             <property role="26mB_l" value="false" />
-            <property role="26mB$E" value="" />
+            <property role="26mB$E" value="ScriptWithKallisto.sh" />
+            <property role="OYnhT" value="" />
           </node>
         </node>
-        <node concept="19SUe$" id="79Et$Hmtm5a" role="19SJt6" />
+        <node concept="19SUe$" id="A$944B4jJl" role="19SJt6">
+          <property role="19SUeA" value="" />
+        </node>
       </node>
       <node concept="2OBCQ_" id="6LCvS2pIH$w" role="2OBg32">
         <node concept="3xUnCN" id="7DnqeRYNwQW" role="2OBJyZ">
@@ -10194,177 +10174,23 @@
       <property role="GbyUj" value="software-gcc4.8" />
     </node>
   </node>
-  <node concept="2E_JVc" id="29FFJC0ttrw">
+  <node concept="2E_JVc" id="A$944B3hKs">
     <property role="GSh9r" value="artifacts/kallisto-homo-sapiens:1.0.0" />
     <property role="2E_JEh" value="kallisto-homo-sapiens" />
     <property role="TrG5h" value="image" />
-    <node concept="WEvhf" id="29FFJC0ttsj" role="WF_SX">
-      <ref role="WEvjA" node="29FFJC0ttrx" resolve="interactive" />
+    <node concept="WEvhf" id="A$944B3hLk" role="WF_SX">
+      <ref role="WEvjA" node="A$944B3hKt" resolve="interactive" />
     </node>
-    <node concept="WEvhf" id="29FFJC0tu2a" role="WF_SX">
-      <ref role="WEvjA" node="29FFJC0tu1s" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="29FFJC0tvde" role="WF_SX">
-      <ref role="WEvjA" node="29FFJC0tuB7" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="29FFJC0$nYC" role="WF_SX">
-      <ref role="WEvjA" node="29FFJC0$nXU" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="29FFJC0$pKo" role="WF_SX">
-      <ref role="WEvjA" node="29FFJC0$pJE" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="29FFJC0$qmc" role="WF_SX">
-      <ref role="WEvjA" node="29FFJC0$p8Y" resolve="interactive" />
+    <node concept="WEvhf" id="A$944B3hMc" role="WF_SX">
+      <ref role="WEvjA" node="A$944B3hLo" resolve="interactive" />
     </node>
   </node>
-  <node concept="GbKB8" id="29FFJC0ttrx">
+  <node concept="GbKB8" id="A$944B3hLo">
     <property role="TrG5h" value="interactive" />
     <property role="GbyUj" value="kallisto-homo-sapiens" />
     <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="29FFJC0ttrw" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="29FFJC0tu1s">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="29FFJC0ttrw" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="29FFJC0tuB7">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="29FFJC0ttrw" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="29FFJC0$nXU">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="29FFJC0ttrw" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="29FFJC0$p8Y">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="29FFJC0ttrw" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="29FFJC0$pJE">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="29FFJC0ttrw" resolve="image" />
-  </node>
-  <node concept="2E_JVc" id="29FFJC0$qVI">
-    <property role="GSh9r" value="artifacts/kallisto-homo-sapiens:1.0.0" />
-    <property role="2E_JEh" value="kallisto-homo-sapiens" />
-    <property role="TrG5h" value="image" />
-    <node concept="WEvhf" id="29FFJC0BiEi" role="WF_SX">
-      <ref role="WEvjA" node="29FFJC0BiD$" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="29FFJC0BjgC" role="WF_SX">
-      <ref role="WEvjA" node="29FFJC0$qVJ" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="79Et$Hm8s62" role="WF_SX">
-      <ref role="WEvjA" node="79Et$Hm8s5q" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="79Et$Hm8sG3" role="WF_SX">
-      <ref role="WEvjA" node="79Et$Hm8sFr" resolve="interactive" />
-    </node>
-  </node>
-  <node concept="GbKB8" id="29FFJC0$qVJ">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="29FFJC0$qVI" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="29FFJC0BiD$">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="29FFJC0$qVI" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="79Et$Hm8s5q">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="29FFJC0$qVI" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="79Et$Hm8sFr">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="29FFJC0$qVI" resolve="image" />
-  </node>
-  <node concept="2E_JVc" id="79Et$HmrHW5">
-    <property role="GSh9r" value="artifacts/kallisto-homo-sapiens:1.0.0" />
-    <property role="2E_JEh" value="kallisto-homo-sapiens" />
-    <property role="TrG5h" value="image" />
-    <node concept="WEvhf" id="79Et$HmrHX3" role="WF_SX">
-      <ref role="WEvjA" node="79Et$HmrHW6" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="79Et$HmrI07" role="WF_SX">
-      <ref role="WEvjA" node="79Et$HmrHZd" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="79Et$HmrOSj" role="WF_SX">
-      <ref role="WEvjA" node="79Et$HmrORp" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="79Et$Hmtirm" role="WF_SX">
-      <ref role="WEvjA" node="79Et$Hmtiqs" resolve="interactive" />
-    </node>
-    <node concept="WEvhf" id="79Et$HmtkdU" role="WF_SX">
-      <ref role="WEvjA" node="79Et$Hmtkd0" resolve="interactive" />
-    </node>
-  </node>
-  <node concept="GbKB8" id="79Et$HmrHW6">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="79Et$HmrHW5" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="79Et$HmrHZd">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="79Et$HmrHW5" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="79Et$HmrORp">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="79Et$HmrHW5" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="79Et$Hmtiqs">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="79Et$HmrHW5" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="79Et$HmtjAO">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="79Et$HmrHW5" resolve="image" />
-  </node>
-  <node concept="GbKB8" id="79Et$Hmtkd0">
-    <property role="TrG5h" value="interactive" />
-    <property role="GbyUj" value="kallisto-homo-sapiens" />
-    <property role="1vm7qE" value="true" />
-    <property role="3yMj3R" value="sleep 10000" />
-    <ref role="3zcJb$" node="79Et$HmrHW5" resolve="image" />
+    <ref role="3zcJb$" node="A$944B3hKs" resolve="image" />
   </node>
 </model>
 

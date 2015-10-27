@@ -1162,6 +1162,18 @@
         </node>
       </node>
     </node>
+    <node concept="3EZMnI" id="79Et$HmzRjV" role="6VMZX">
+      <node concept="3F0ifn" id="79Et$HmzRx8" role="3EZMnx">
+        <property role="3F0ifm" value="Mount working dir? " />
+        <node concept="VPxyj" id="79Et$HmzW6j" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="79Et$HmzW5n" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:79Et$HmzRxk" resolve="mountWorkingDir" />
+      </node>
+      <node concept="2iRfu4" id="79Et$HmzRjY" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="1BdDHvV61Eg">
     <property role="3GE5qa" value="containers" />
