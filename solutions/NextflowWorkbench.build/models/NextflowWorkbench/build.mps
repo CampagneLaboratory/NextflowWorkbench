@@ -2695,6 +2695,12 @@
             <ref role="3bR37D" node="2yVjOHGmOYJ" resolve="org.campagnelab.docker.bash" />
           </node>
         </node>
+        <node concept="1SiIV0" id="A$944B8xiD" role="3bR37C">
+          <node concept="3bR9La" id="A$944B8xiE" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="t9i9:nhsmU5vDUv" resolve="org.campagnelab.util" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2yVjOHGmOYJ" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2964,11 +2970,6 @@
             <ref role="3bR37D" node="3A$s7Pqh3$g" resolve="org.campagnelab.bash.nyosh" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3A$s7PqhXSE" role="3bR37C">
-          <node concept="1Busua" id="3A$s7PqhXSF" role="1SiIV1">
-            <ref role="1Busuk" to="5f6q:2mFg1uCEf5$" resolve="org.campagnelab.gobyweb.plugins" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3A$s7PqhXSG" role="3bR37C">
           <node concept="1Busua" id="3A$s7PqhXSH" role="1SiIV1">
             <ref role="1Busuk" node="4oJiZHqTePI" resolve="org.campagnelab.workflow" />
@@ -3017,10 +3018,10 @@
             <ref role="3bR37D" node="2yVjOHGmOYJ" resolve="org.campagnelab.docker.bash" />
           </node>
         </node>
-        <node concept="1SiIV0" id="csIV3g_bVg" role="3bR37C">
-          <node concept="3bR9La" id="csIV3g_bVh" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" node="csIV3g_aVD" resolve="org.campagnelab.workflow.nyosh" />
+        <node concept="1SiIV0" id="A$944B8xrt" role="3bR37C">
+          <node concept="3bR9La" id="A$944B8xru" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1rhtiO0obS0" resolve="org.campagnelab.docker" />
           </node>
         </node>
       </node>
