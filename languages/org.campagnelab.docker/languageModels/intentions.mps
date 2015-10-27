@@ -10,6 +10,7 @@
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="ujkv" ref="r:c4ccd0c8-ae0a-4ce1-b1b2-29dd8a943a6b(org.campagnelab.util.persistence)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
   </imports>
@@ -287,9 +288,6 @@
         </node>
         <node concept="3clFbF" id="29FFJC0lLXF" role="3cqZAp">
           <node concept="37vLTI" id="29FFJC0lMMz" role="3clFbG">
-            <node concept="Xl_RD" id="29FFJC0lMRB" role="37vLTx">
-              <property role="Xl_RC" value="/" />
-            </node>
             <node concept="2OqwBi" id="29FFJC0lM95" role="37vLTJ">
               <node concept="37vLTw" id="29FFJC0lLXD" role="2Oq$k0">
                 <ref role="3cqZAo" node="VMSWAF3ZJo" resolve="running" />
@@ -297,6 +295,11 @@
               <node concept="3TrcHB" id="29FFJC0lMnR" role="2OqNvi">
                 <ref role="3TsBF5" to="6jv6:29FFJC0lIf1" resolve="workingDir" />
               </node>
+            </node>
+            <node concept="2YIFZM" id="79Et$HmoXmB" role="37vLTx">
+              <ref role="37wK5l" to="ujkv:52oJ3dmOWZh" resolve="getSolutionClassesGenFolder" />
+              <ref role="1Pybhc" to="ujkv:52oJ3dmL414" resolve="ProjectPaths" />
+              <node concept="2Sf5sV" id="79Et$HmoXnU" role="37wK5m" />
             </node>
           </node>
         </node>
