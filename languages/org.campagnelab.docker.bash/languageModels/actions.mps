@@ -9,6 +9,7 @@
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" />
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -391,6 +392,21 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbF" id="29FFJBZQn7q" role="3cqZAp">
+                <node concept="37vLTI" id="29FFJBZQnNa" role="3clFbG">
+                  <node concept="Xl_RD" id="29FFJBZQnQg" role="37vLTx">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                  <node concept="2OqwBi" id="29FFJBZQncb" role="37vLTJ">
+                    <node concept="37vLTw" id="29FFJBZQn7o" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2h_fDmyfOKs" resolve="newPart" />
+                    </node>
+                    <node concept="3TrcHB" id="29FFJBZQnsw" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:gOOYnlO" resolve="shortDescription" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="2h_fDmyfOKL" role="3cqZAp">
                 <node concept="37vLTw" id="2h_fDmyfOKM" role="3clFbG">
                   <ref role="3cqZAo" node="2h_fDmyfOKs" resolve="newPart" />
@@ -429,11 +445,8 @@
           <node concept="uSjag" id="2h_fDmyfOL1" role="uS$Nq">
             <node concept="3clFbS" id="2h_fDmyfOL2" role="2VODD2">
               <node concept="3clFbF" id="2h_fDmyfOL3" role="3cqZAp">
-                <node concept="1LFfDK" id="2h_fDmyfOL4" role="3clFbG">
-                  <node concept="3cmrfG" id="2h_fDmyfOL5" role="1LF_Uc">
-                    <property role="3cmrfH" value="0" />
-                  </node>
-                  <node concept="uNquD" id="2h_fDmyfOL6" role="1LFl5Q" />
+                <node concept="Xl_RD" id="29FFJBZTP9k" role="3clFbG">
+                  <property role="Xl_RC" value="" />
                 </node>
               </node>
             </node>

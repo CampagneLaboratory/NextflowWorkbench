@@ -892,8 +892,11 @@
     <property role="3GE5qa" value="docker" />
     <ref role="1XX52x" to="iuj9:1ihAOqnKa_C" resolve="InstallGobyWebArtifacts" />
     <node concept="3EZMnI" id="1ihAOqnKcw9" role="2wV5jI">
-      <node concept="3F0ifn" id="1ihAOqnKcwa" role="3EZMnx">
-        <property role="3F0ifm" value="install gobyweb artifacts" />
+      <node concept="PMmxH" id="3XYZbe_FL6f" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="Vb9p2" id="3XYZbe_FMhv" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
       </node>
       <node concept="3F1sOY" id="6LCvS2pPr60" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:6LCvS2pPqdF" />
@@ -904,7 +907,10 @@
   <node concept="24kQdi" id="5VB4_zEuuGX">
     <property role="3GE5qa" value="resources" />
     <ref role="1XX52x" to="iuj9:5VB4_zEupZX" resolve="ResourceSpecification" />
-    <node concept="3EZMnI" id="5VB4_zEuvan" role="2wV5jI">
+    <node concept="3EZMnI" id="3XYZbe_xl4g" role="2wV5jI">
+      <node concept="3F0ifn" id="3XYZbe_wYuY" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
       <node concept="3F2HdR" id="5VB4_zEuvaR" role="3EZMnx">
         <ref role="1NtTu8" to="iuj9:5VB4_zEuuFB" />
         <node concept="lj46D" id="5VB4_zEuvaS" role="3F10Kt">
@@ -918,7 +924,10 @@
         </node>
         <node concept="2EHx9g" id="5VB4_zEuvaV" role="2czzBx" />
       </node>
-      <node concept="l2Vlx" id="5VB4_zEuvaq" role="2iSdaV" />
+      <node concept="3F0ifn" id="3XYZbe_wYwE" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="2iRfu4" id="3XYZbe_xl4h" role="2iSdaV" />
     </node>
     <node concept="3EZMnI" id="1c4JsiUUydR" role="6VMZX">
       <node concept="2iRfu4" id="1c4JsiUUydS" role="2iSdaV" />
@@ -965,6 +974,19 @@
         <property role="3F0ifm" value="]" />
       </node>
       <node concept="2iRfu4" id="5cVzYEjM8vu" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3XYZbe_FKgz">
+    <property role="3GE5qa" value="docker" />
+    <ref role="1XX52x" to="iuj9:3XYZbe_FK9y" resolve="ClearArtifactsCache" />
+    <node concept="3EZMnI" id="3XYZbe_FKmr" role="2wV5jI">
+      <node concept="l2Vlx" id="3XYZbe_FKmu" role="2iSdaV" />
+      <node concept="PMmxH" id="3XYZbe_FKmN" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="Vb9p2" id="3XYZbe_FMjc" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

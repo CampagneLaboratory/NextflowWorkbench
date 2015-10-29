@@ -1149,12 +1149,30 @@
       <node concept="3F0A7n" id="1BdDHvV1Smu" role="3EZMnx">
         <ref role="1NtTu8" to="6jv6:1BdDHvV19ow" resolve="command" />
       </node>
+      <node concept="3F0ifn" id="29FFJC0lJfX" role="3EZMnx">
+        <property role="3F0ifm" value="in" />
+      </node>
+      <node concept="3F0A7n" id="29FFJC0lJMI" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:29FFJC0lIf1" resolve="workingDir" />
+      </node>
       <node concept="3F0ifn" id="1hjSjLb2hyU" role="3EZMnx">
         <property role="3F0ifm" value="}" />
         <node concept="3mYdg7" id="1hjSjLb2hyV" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
       </node>
+    </node>
+    <node concept="3EZMnI" id="79Et$HmzRjV" role="6VMZX">
+      <node concept="3F0ifn" id="79Et$HmzRx8" role="3EZMnx">
+        <property role="3F0ifm" value="Mount working dir? " />
+        <node concept="VPxyj" id="79Et$HmzW6j" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="79Et$HmzW5n" role="3EZMnx">
+        <ref role="1NtTu8" to="6jv6:79Et$HmzRxk" resolve="mountWorkingDir" />
+      </node>
+      <node concept="2iRfu4" id="79Et$HmzRjY" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1BdDHvV61Eg">
