@@ -774,7 +774,7 @@
   <node concept="2EEQw1" id="6zGYz0lS31d">
     <property role="3GE5qa" value="docker" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlskey ..." />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
     <node concept="3ZW7eb" id="6zGYz0lS354" role="lGtFl">
       <property role="2ripvU" value="1" />
       <property role="TrG5h" value="DockerConfigRootNode" />
@@ -787,8 +787,14 @@
     <node concept="2ulSLo" id="6zGYz0lQHFu" role="2ulM7a" />
     <node concept="VtuK3" id="6zGYz0lRch4" role="234boB">
       <property role="VuL0s" value="latest" />
-      <property role="GbyUj" value="artifact-software" />
-      <property role="VuL0v" value="mas2181" />
+      <property role="GbyUj" value="software" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="3zaeVo" value="true" />
+      <node concept="3ZW7eb" id="A$944B9tIB" role="lGtFl">
+        <property role="2ripvU" value="1" />
+        <property role="TrG5h" value="ConfiguredDockerContainer" />
+        <ref role="KZaLW" node="A$944B9rzw" resolve="ManueleFIGURES" />
+      </node>
     </node>
   </node>
   <node concept="2ulcR8" id="6zGYz0lQHxu">
@@ -805,7 +811,7 @@
     </node>
   </node>
   <node concept="2ulcR8" id="6zGYz0lRcOW">
-    <property role="TrG5h" value="PulledDockerImag2e" />
+    <property role="TrG5h" value="PulledDockerImage2" />
     <property role="3GE5qa" value="docker" />
     <node concept="2ulSLo" id="6zGYz0lRcOX" role="2ulM7a" />
     <node concept="GbKB8" id="6zGYz0lS2zr" role="234boB">
@@ -815,7 +821,7 @@
       <property role="3zaeVo" value="true" />
       <property role="VuL0v" value="mas2181" />
       <property role="TrG5h" value="interactive" />
-      <ref role="3zcJb$" to="q1qp:6zGYz0lS2zs" resolve="image" />
+      <ref role="3zcJb$" node="6zGYz0lS2zs" resolve="image" />
     </node>
   </node>
   <node concept="2ulcR8" id="6zGYz0lRchi">
@@ -824,13 +830,13 @@
     <node concept="2ulSLo" id="6zGYz0lRchj" role="2ulM7a" />
     <node concept="VtuK3" id="6zGYz0lRchk" role="234boB">
       <property role="VuL0s" value="latest" />
-      <property role="GbyUj" value="artifact-software" />
-      <property role="VuL0v" value="mas2181" />
+      <property role="GbyUj" value="software" />
+      <property role="VuL0v" value="artifacts" />
       <property role="3zaeVo" value="true" />
       <node concept="3ZW7eb" id="6zGYz0lRckZ" role="lGtFl">
         <property role="2ripvU" value="1" />
         <property role="TrG5h" value="PulledDockerImage" />
-        <ref role="KZaLW" node="3WNK9KXJFMx" resolve="JasonFIGURES" />
+        <ref role="KZaLW" node="A$944B9rzw" resolve="ManueleFIGURES" />
       </node>
     </node>
   </node>
@@ -9107,6 +9113,13 @@
       <property role="2ripvU" value="1" />
       <property role="TrG5h" value="PluginsLoadedExecutionEnvShowingKallisto" />
       <ref role="KZaLW" node="5wcZjhOWEre" resolve="FIGURES" />
+    </node>
+  </node>
+  <node concept="KZc4b" id="A$944B9rzw">
+    <property role="TrG5h" value="ManueleFIGURES" />
+    <property role="KZc57" value="/Users/mas2182/Lab/Docs/workflow_doc5/figures" />
+    <node concept="2O7UoI" id="A$944B9rzx" role="2O7UoE">
+      <property role="2O7UoJ" value="/Users/mas2182/Library/Application Support/MPS32/Editor2PDF/fonts/DejaVuSansMono.ttf" />
     </node>
   </node>
 </model>
