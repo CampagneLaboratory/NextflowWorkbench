@@ -826,7 +826,7 @@
   <node concept="2EEQw1" id="6zGYz0lS31d">
     <property role="3GE5qa" value="docker" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/fac2003/.docker/machine/machines/default/ca.pem&quot; --tlscert=&quot;/Users/fac2003/.docker/machine/machines/default/cert.pem&quot; --tlskey=&quot;/Users/fac2003/.docker/machine/machines/default/key.pem&quot; -H=tcp://192.168.99.100:2376" />
     <node concept="3ZW7eb" id="6zGYz0lS354" role="lGtFl">
       <property role="2ripvU" value="1" />
       <property role="TrG5h" value="DockerConfigRootNode" />
@@ -9546,6 +9546,86 @@
     <node concept="2qOvVh" id="A$944Ba2mP" role="VuOVn">
       <node concept="gkxfm" id="A$944Ba2mR" role="gkDh$" />
     </node>
+  </node>
+  <node concept="2ulcR8" id="1WG1fjcFlGX">
+    <property role="TrG5h" value="GenerateRandomSequences" />
+    <node concept="2mjA9o" id="1WG1fjcFt9i" role="2ulM7n">
+      <property role="TrG5h" value="bytes" />
+      <node concept="1utKN4" id="1WG1fjcFt9s" role="2ybFLk" />
+    </node>
+    <node concept="3Y$Zt1" id="1WG1fjcFt91" role="2ulM7a">
+      <node concept="19SGf9" id="1WG1fjcFt93" role="3Y$PkS">
+        <node concept="19SUe$" id="1WG1fjcFt94" role="19SJt6" />
+        <node concept="19SUe$" id="5gAwDHGo3HT" role="19SJt6">
+          <property role="19SUeA" value="&lt; /dev/urandom LC_CTYPE=C tr -dc &quot;ACTG  &quot; |  head -c" />
+        </node>
+        <node concept="3YE7tV" id="1WG1fjcFR$2" role="19SJt6">
+          <ref role="3YE7sm" node="1WG1fjcFt9i" resolve="bytes" />
+        </node>
+        <node concept="19SUe$" id="1WG1fjcFR$1" role="19SJt6">
+          <property role="19SUeA" value="" />
+        </node>
+      </node>
+    </node>
+    <node concept="2lYRya" id="1WG1fjcFpqM" role="2ulM79">
+      <property role="TrG5h" value="sequences" />
+      <property role="2lYOoT" value="true" />
+      <node concept="16pbKc" id="1WG1fjcFt9W" role="2ybFLk" />
+    </node>
+    <node concept="GbKB8" id="18ct5AyM9Bi" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="3yMj3R" value="sleep 1000" />
+      <property role="GbyUj" value="base" />
+      <property role="3zaeVo" value="true" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="TrG5h" value="interactive" />
+      <ref role="3zcJb$" node="18ct5AyM9Bj" resolve="image" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="5_bI8N3hgw">
+    <property role="GSh9r" value="artifacts/base:latest" />
+    <property role="2E_JEh" value="base" />
+    <property role="TrG5h" value="image" />
+    <node concept="WEvhf" id="5_bI8N3hgz" role="WF_SX">
+      <ref role="WEvjA" node="5_bI8N3hgx" resolve="interactive" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="5_bI8N3hgx">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="base" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 10000" />
+    <ref role="3zcJb$" node="5_bI8N3hgw" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="18ct5AyM1T$">
+    <property role="GSh9r" value="artifacts/base:latest" />
+    <property role="2E_JEh" value="base" />
+    <property role="TrG5h" value="image" />
+    <node concept="WEvhf" id="18ct5AyM8uS" role="WF_SX">
+      <ref role="WEvjA" node="18ct5AyM8uQ" resolve="interactive" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="18ct5AyM8uQ">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="base" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="18ct5AyM1T$" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="18ct5AyM9Bj">
+    <property role="GSh9r" value="artifacts/base:latest" />
+    <property role="2E_JEh" value="base" />
+    <property role="TrG5h" value="image" />
+    <node concept="WEvhf" id="18ct5AyM9Bm" role="WF_SX">
+      <ref role="WEvjA" node="18ct5AyM9Bk" resolve="interactive" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="18ct5AyM9Bk">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="base" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 1000" />
+    <ref role="3zcJb$" node="18ct5AyM9Bj" resolve="image" />
   </node>
 </model>
 
