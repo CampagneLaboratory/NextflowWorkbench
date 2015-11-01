@@ -120,6 +120,35 @@
         <child id="6838454732285668072" name="resourceContainer" index="2OBJyK" />
         <child id="6838454732285668071" name="requires" index="2OBJyZ" />
       </concept>
+      <concept id="9092927410772186749" name="org.campagnelab.bash.nyosh.structure.ArtifactPathValue" flags="ng" index="31josK">
+        <property id="2131615088928386314" name="resourceName" index="KTmAF" />
+        <property id="9092927410772194791" name="prefix" index="31jqiE" />
+        <property id="6241637388239879685" name="artifactName" index="3oiRSB" />
+        <child id="9092927410772195241" name="toEval" index="31jqr$" />
+      </concept>
+      <concept id="9092927410772186650" name="org.campagnelab.bash.nyosh.structure.ResourceFileValue" flags="ng" index="31jotn">
+        <property id="2131615088929076630" name="resourceName" index="KVZ4R" />
+        <property id="9092927410772203879" name="id" index="31jswE" />
+        <property id="9092927410772203875" name="prefix" index="31jswI" />
+      </concept>
+      <concept id="9092927410772186852" name="org.campagnelab.bash.nyosh.structure.ArtifactAttributeValue" flags="ng" index="31jouD">
+        <property id="2131615088928317431" name="resourceName" index="KY_Hm" />
+        <property id="9092927410772194318" name="prefix" index="31jql3" />
+        <property id="6943940549888639150" name="artifactName" index="3pPHmd" />
+        <property id="5106217012535605923" name="attributeName" index="3GSlvM" />
+      </concept>
+      <concept id="9092927410772194840" name="org.campagnelab.bash.nyosh.structure.EvalArtifactAttribute" flags="ng" index="31jqtl">
+        <property id="5106217012537019600" name="attributeName" index="3GzU61" />
+        <property id="5106217012537019595" name="resourceName" index="3GzU6q" />
+        <property id="5106217012537019597" name="artifactName" index="3GzU6s" />
+      </concept>
+      <concept id="9092927410772884328" name="org.campagnelab.bash.nyosh.structure.EnvironmentValueRef" flags="ng" index="31HMC_">
+        <reference id="9092927410772884336" name="value" index="31HMCX" />
+      </concept>
+      <concept id="9092927410772890708" name="org.campagnelab.bash.nyosh.structure.EnvironmentValue" flags="ng" index="31HOkp">
+        <property id="6241637388239898142" name="sourceVariable" index="3oicoW" />
+        <child id="9092927410772890712" name="value" index="31HOkl" />
+      </concept>
       <concept id="1311266352922359807" name="org.campagnelab.bash.nyosh.structure.RequestedResource" flags="ng" index="3xUnCN">
         <property id="27429407127623468" name="select" index="24nana" />
         <property id="1008131731648663094" name="message" index="3Ui_h1" />
@@ -132,7 +161,14 @@
       <concept id="5359535375768188197" name="org.campagnelab.bash.nyosh.structure.ScriptResource" flags="ng" index="1NFp0y">
         <property id="1311266352922369212" name="id" index="3xVD5K" />
         <reference id="1307305182956172023" name="sourceConfig" index="x1kBk" />
+        <child id="9092927410772193975" name="environment" index="31jqfU" />
         <child id="5359535375768188281" name="attributeValues" index="1NFp1Y" />
+      </concept>
+    </language>
+    <language id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash">
+      <concept id="147628039490029687" name="org.campagnelab.docker.bash.structure.DockerBash" flags="ng" index="1QJbas">
+        <child id="331977639697571264" name="container" index="234boB" />
+        <child id="147628039490030676" name="script" index="1QJbqZ" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -272,7 +308,7 @@
         <property id="2590112629703814581" name="toStandardInput" index="2mj$03" />
       </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
-        <child id="331977639697571264" name="container" index="234boB" />
+        <child id="331977639697571264" name="container" index="234boC" />
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
@@ -826,7 +862,7 @@
   <node concept="2EEQw1" id="6zGYz0lS31d">
     <property role="3GE5qa" value="docker" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/fac2003/.docker/machine/machines/default/ca.pem&quot; --tlscert=&quot;/Users/fac2003/.docker/machine/machines/default/cert.pem&quot; --tlskey=&quot;/Users/fac2003/.docker/machine/machines/default/key.pem&quot; -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/fac2003/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/fac2003/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/fac2003/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.102:2376" />
     <node concept="3ZW7eb" id="6zGYz0lS354" role="lGtFl">
       <property role="2ripvU" value="1" />
       <property role="TrG5h" value="DockerConfigRootNode" />
@@ -837,7 +873,7 @@
     <property role="TrG5h" value="ConfiguredDockerContainer" />
     <property role="3GE5qa" value="docker" />
     <node concept="2ulSLo" id="6zGYz0lQHFu" role="2ulM7a" />
-    <node concept="VtuK3" id="6zGYz0lRch4" role="234boB">
+    <node concept="VtuK3" id="6zGYz0lRch4" role="234boC">
       <property role="VuL0s" value="latest" />
       <property role="GbyUj" value="software" />
       <property role="VuL0v" value="artifacts" />
@@ -853,7 +889,7 @@
     <property role="TrG5h" value="NewDockerContainer" />
     <property role="3GE5qa" value="docker" />
     <node concept="2ulSLo" id="6zGYz0lQHxv" role="2ulM7a" />
-    <node concept="VtuK3" id="6zGYz0lQHxw" role="234boB">
+    <node concept="VtuK3" id="6zGYz0lQHxw" role="234boC">
       <property role="VuL0s" value="latest" />
       <node concept="3ZW7eb" id="6zGYz0lQHxy" role="lGtFl">
         <property role="2ripvU" value="1" />
@@ -866,7 +902,7 @@
     <property role="TrG5h" value="PulledDockerImage2" />
     <property role="3GE5qa" value="docker" />
     <node concept="2ulSLo" id="6zGYz0lRcOX" role="2ulM7a" />
-    <node concept="GbKB8" id="6zGYz0lS2zr" role="234boB">
+    <node concept="GbKB8" id="6zGYz0lS2zr" role="234boC">
       <property role="VuL0s" value="latest" />
       <property role="3yMj3R" value="sleep 1000" />
       <property role="GbyUj" value="artifact-software" />
@@ -880,7 +916,7 @@
     <property role="TrG5h" value="PulledDockerImage" />
     <property role="3GE5qa" value="docker" />
     <node concept="2ulSLo" id="6zGYz0lRchj" role="2ulM7a" />
-    <node concept="VtuK3" id="6zGYz0lRchk" role="234boB">
+    <node concept="VtuK3" id="6zGYz0lRchk" role="234boC">
       <property role="VuL0s" value="latest" />
       <property role="GbyUj" value="software" />
       <property role="VuL0v" value="artifacts" />
@@ -9572,14 +9608,10 @@
       <property role="2lYOoT" value="true" />
       <node concept="16pbKc" id="1WG1fjcFt9W" role="2ybFLk" />
     </node>
-    <node concept="GbKB8" id="18ct5AyM9Bi" role="234boB">
+    <node concept="VtuK3" id="6PeRSq2BiK" role="234boC">
       <property role="VuL0s" value="latest" />
-      <property role="3yMj3R" value="sleep 1000" />
       <property role="GbyUj" value="base" />
-      <property role="3zaeVo" value="true" />
       <property role="VuL0v" value="artifacts" />
-      <property role="TrG5h" value="interactive" />
-      <ref role="3zcJb$" node="18ct5AyM9Bj" resolve="image" />
     </node>
   </node>
   <node concept="2E_JVc" id="5_bI8N3hgw">
@@ -9626,6 +9658,478 @@
     <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="sleep 1000" />
     <ref role="3zcJb$" node="18ct5AyM9Bj" resolve="image" />
+  </node>
+  <node concept="2E_JVc" id="6PeRSq2Aac">
+    <property role="GSh9r" value="artifacts/base:latest" />
+    <property role="2E_JEh" value="base" />
+    <property role="TrG5h" value="image" />
+    <node concept="WEvhf" id="6PeRSq2Aaf" role="WF_SX">
+      <ref role="WEvjA" node="6PeRSq2Aad" resolve="interactive" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="6PeRSq2Aad">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="base" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 10000" />
+    <ref role="3zcJb$" node="6PeRSq2Aac" resolve="image" />
+  </node>
+  <node concept="1QJbas" id="cDzKOXrgcM">
+    <property role="TrG5h" value="ScriptWithSalmon" />
+    <node concept="NgwLd" id="cDzKOXrgcO" role="1QJbqZ">
+      <property role="TrG5h" value="ScriptWithSalmon" />
+      <node concept="19SGf9" id="cDzKOXrgcP" role="3Y$PkS">
+        <node concept="19SUe$" id="cDzKOXsT1E" role="19SJt6">
+          <property role="19SUeA" value="&#10;ls -lrt " />
+        </node>
+        <node concept="31HMC_" id="cDzKOXsT1I" role="19SJt6">
+          <ref role="31HMCX" node="3jQcDYOsv7c" resolve="artifact path SALMON_INDEX.INDEX" />
+        </node>
+        <node concept="19SUe$" id="cDzKOXsT1J" role="19SJt6">
+          <property role="19SUeA" value="/**&#10;ls -lrt " />
+        </node>
+        <node concept="31HMC_" id="3jQcDYOsv8m" role="19SJt6">
+          <ref role="31HMCX" node="3jQcDYOsv73" resolve="artifact path BOOST_LIB.BINARIES" />
+        </node>
+        <node concept="19SUe$" id="3jQcDYOsv8n" role="19SJt6">
+          <property role="19SUeA" value="/**" />
+        </node>
+      </node>
+      <node concept="2OBCQ_" id="cDzKOXrgcR" role="2OBg32">
+        <property role="2DVE38" value="true" />
+        <node concept="x1lOp" id="cDzKOXrgcS" role="2OBJyK">
+          <node concept="3jXL5H" id="cDzKOXrgKs" role="x1lOo">
+            <property role="1f4ISL" value="0.5.0" />
+            <property role="TrG5h" value="SALMON" />
+            <property role="GYFFI" value="/Users/manuelesimi/CampagneLab/Projects/gobyweb2-plugins-bitbucket/plugins/resources/SALMON_0.5.0" />
+            <property role="TNbOb" value="false" />
+            <node concept="2vNlDe" id="cDzKOXrgKt" role="2vN2hK">
+              <property role="TrG5h" value="BINARIES" />
+            </node>
+            <node concept="3pIPPt" id="cDzKOXrgKu" role="3pIPbc">
+              <property role="3pIKb5" value="INSTALL" />
+              <property role="3pIKb9" value="install.sh" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="cDzKOXrIie" role="x1lOo">
+            <property role="1f4ISL" value="0.5.0" />
+            <property role="TrG5h" value="SALMON_INDEX" />
+            <property role="GYFFI" value="/Users/manuelesimi/CampagneLab/Projects/gobyweb2-plugins-bitbucket/plugins/resources/SALMON_INDEX_0.5.0" />
+            <property role="TNbOb" value="false" />
+            <node concept="2vNlDe" id="cDzKOXrIif" role="2vN2hK">
+              <property role="TrG5h" value="INDEX" />
+              <node concept="2vNqWl" id="cDzKOXrIig" role="2vNrQz">
+                <property role="TrG5h" value="organism" />
+              </node>
+              <node concept="2vNqWl" id="cDzKOXrIih" role="2vNrQz">
+                <property role="TrG5h" value="reference-build" />
+              </node>
+              <node concept="2vNqWl" id="cDzKOXrIii" role="2vNrQz">
+                <property role="TrG5h" value="ensembl-version-number" />
+              </node>
+            </node>
+            <node concept="3pIPPt" id="cDzKOXrIij" role="3pIPbc">
+              <property role="3pIKb5" value="INSTALL" />
+              <property role="3pIKb9" value="install.sh" />
+            </node>
+            <node concept="3jXLau" id="cDzKOXrIik" role="3jXL5I">
+              <property role="G5nAd" value="0.5.0" />
+              <ref role="3jXLav" node="cDzKOXrgKs" resolve="SALMON" />
+            </node>
+            <node concept="3jXLau" id="cDzKOXrIil" role="3jXL5I">
+              <property role="G5nAd" value="1.0" />
+              <ref role="3jXLav" node="cDzKOXrIim" resolve="ENSEMBL_TRANSCRIPTS" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="cDzKOXrIim" role="x1lOo">
+            <property role="1f4ISL" value="1.0" />
+            <property role="TrG5h" value="ENSEMBL_TRANSCRIPTS" />
+            <property role="GYFFI" value="/Users/manuelesimi/CampagneLab/Projects/gobyweb2-plugins-bitbucket/plugins/resources/ENSEMBL_TRANSCRIPTS_1.0" />
+            <property role="TNbOb" value="false" />
+            <node concept="2vNlDe" id="cDzKOXrIin" role="2vN2hK">
+              <property role="TrG5h" value="TOPLEVEL" />
+              <node concept="2vNqWl" id="cDzKOXrIio" role="2vNrQz">
+                <property role="TrG5h" value="organism" />
+              </node>
+              <node concept="2vNqWl" id="cDzKOXrIip" role="2vNrQz">
+                <property role="TrG5h" value="reference-build" />
+              </node>
+              <node concept="2vNqWl" id="cDzKOXrIiq" role="2vNrQz">
+                <property role="TrG5h" value="ensembl-version-number" />
+              </node>
+            </node>
+            <node concept="3pIPPt" id="cDzKOXrIir" role="3pIPbc">
+              <property role="3pIKb5" value="INSTALL" />
+              <property role="3pIKb9" value="install.sh" />
+            </node>
+            <node concept="3jXLau" id="cDzKOXrIis" role="3jXL5I">
+              <property role="G5nAd" value="1.0" />
+              <ref role="3jXLav" node="cDzKOXrIit" resolve="FETCH_URL" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="cDzKOXrIit" role="x1lOo">
+            <property role="1f4ISL" value="1.2" />
+            <property role="TrG5h" value="FETCH_URL" />
+            <property role="GYFFI" value="/Users/manuelesimi/CampagneLab/Projects/gobyweb2-plugins-bitbucket/plugins/resources/FETCH_URL_1.2" />
+            <property role="TNbOb" value="false" />
+            <node concept="3pIPPt" id="cDzKOXrIiu" role="3pIPbc">
+              <property role="3pIKb5" value="SCRIPT" />
+              <property role="3pIKb9" value="fetch_url" />
+            </node>
+            <node concept="3pIPPt" id="cDzKOXrIiv" role="3pIPbc">
+              <property role="3pIKb5" value="SCRIPT_PATTERN" />
+              <property role="3pIKb9" value="fetch_url_pattern" />
+            </node>
+            <node concept="3jXLau" id="cDzKOXrIiw" role="3jXL5I">
+              <property role="G5nAd" value="1.0" />
+              <ref role="3jXLav" node="cDzKOXrIix" resolve="BASH_LIBRARY" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="cDzKOXrIix" role="x1lOo">
+            <property role="1f4ISL" value="1.0" />
+            <property role="TrG5h" value="BASH_LIBRARY" />
+            <property role="GYFFI" value="/Users/manuelesimi/CampagneLab/Projects/gobyweb2-plugins-bitbucket/plugins/resources/BASH_LIBRARY_1.0" />
+            <property role="TNbOb" value="false" />
+            <node concept="3pIPPt" id="cDzKOXrIiy" role="3pIPbc">
+              <property role="3pIKb5" value="CALCULATE_MD5" />
+              <property role="3pIKb9" value="calculateMD5.sh" />
+            </node>
+            <node concept="3pIPPt" id="cDzKOXrIiz" role="3pIPbc">
+              <property role="3pIKb5" value="MAPS_IN_BASH3" />
+              <property role="3pIKb9" value="maps_in_bash3.sh" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="3jQcDYOstXH" role="x1lOo">
+            <property role="1f4ISL" value="1.59.0.2" />
+            <property role="TrG5h" value="BOOST_LIB" />
+            <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BOOST_1.59.0" />
+            <property role="TNbOb" value="false" />
+            <node concept="2vNlDe" id="3jQcDYOstXI" role="2vN2hK">
+              <property role="TrG5h" value="BINARIES" />
+            </node>
+            <node concept="3pIPPt" id="3jQcDYOstXJ" role="3pIPbc">
+              <property role="3pIKb5" value="INSTALL" />
+              <property role="3pIKb9" value="install.sh" />
+            </node>
+          </node>
+        </node>
+        <node concept="3xUnCN" id="3jQcDYOstX7" role="2OBJyZ">
+          <property role="3Ui_h1" value="" />
+          <property role="3xVD5K" value="BOOST_LIB" />
+          <ref role="x1kBk" node="3jQcDYOstXH" resolve="BOOST_LIB" />
+          <ref role="1PROVt" node="3jQcDYOstXD" resolve="BOOST_LIB" />
+          <ref role="1PROJ1" node="3jQcDYOstXE" resolve="1.59.0.2" />
+          <node concept="2vzQjv" id="3jQcDYOstXD" role="xr5hk">
+            <property role="TrG5h" value="BOOST_LIB" />
+            <node concept="2vzQjq" id="3jQcDYOstXE" role="2vzQju">
+              <property role="TrG5h" value="1.59.0.2" />
+            </node>
+          </node>
+          <node concept="31HOkp" id="3jQcDYOsv73" role="31jqfU">
+            <property role="TrG5h" value="artifact path BOOST_LIB.BINARIES" />
+            <property role="3oicoW" value="RESOURCES_ARTIFACTS_BOOST_LIB_BINARIES" />
+            <node concept="31josK" id="3jQcDYOsv72" role="31HOkl">
+              <property role="31jqiE" value="RESOURCES_ARTIFACTS_BOOST_LIB_BINARIES" />
+              <property role="KTmAF" value="BOOST_LIB" />
+              <property role="3oiRSB" value="BINARIES" />
+            </node>
+          </node>
+          <node concept="31HOkp" id="3jQcDYOsv75" role="31jqfU">
+            <property role="TrG5h" value="file BOOST_LIB/INSTALL" />
+            <property role="3oicoW" value="RESOURCES_BOOST_LIB_INSTALL" />
+            <node concept="31jotn" id="3jQcDYOsv74" role="31HOkl">
+              <property role="31jswE" value="INSTALL" />
+              <property role="31jswI" value="RESOURCES_BOOST_LIB" />
+              <property role="KVZ4R" value="BOOST_LIB" />
+            </node>
+          </node>
+        </node>
+        <node concept="3xUnCN" id="cDzKOXrgKm" role="2OBJyZ">
+          <property role="3Ui_h1" value="" />
+          <property role="3xVD5K" value="SALMON_INDEX" />
+          <ref role="1PROVt" node="cDzKOXrIia" resolve="SALMON_INDEX" />
+          <ref role="1PROJ1" node="cDzKOXrIib" resolve="0.5.0" />
+          <ref role="x1kBk" node="cDzKOXrIie" resolve="SALMON_INDEX" />
+          <node concept="1NwGl_" id="3jQcDYOstWK" role="3bnoS5">
+            <property role="3xVD5K" value="BASH_LIBRARY" />
+            <ref role="x1kBk" node="cDzKOXrIix" resolve="BASH_LIBRARY" />
+            <node concept="31HOkp" id="3jQcDYOsv7k" role="31jqfU">
+              <property role="TrG5h" value="file BASH_LIBRARY/CALCULATE_MD5" />
+              <property role="3oicoW" value="RESOURCES_BASH_LIBRARY_CALCULATE_MD5" />
+              <node concept="31jotn" id="3jQcDYOsv7j" role="31HOkl">
+                <property role="31jswE" value="CALCULATE_MD5" />
+                <property role="31jswI" value="RESOURCES_BASH_LIBRARY" />
+                <property role="KVZ4R" value="BASH_LIBRARY" />
+              </node>
+            </node>
+            <node concept="31HOkp" id="3jQcDYOsv7m" role="31jqfU">
+              <property role="TrG5h" value="file BASH_LIBRARY/MAPS_IN_BASH3" />
+              <property role="3oicoW" value="RESOURCES_BASH_LIBRARY_MAPS_IN_BASH3" />
+              <node concept="31jotn" id="3jQcDYOsv7l" role="31HOkl">
+                <property role="31jswE" value="MAPS_IN_BASH3" />
+                <property role="31jswI" value="RESOURCES_BASH_LIBRARY" />
+                <property role="KVZ4R" value="BASH_LIBRARY" />
+              </node>
+            </node>
+          </node>
+          <node concept="1NwGl_" id="3jQcDYOstWJ" role="3bnoS5">
+            <property role="3xVD5K" value="FETCH_URL" />
+            <ref role="x1kBk" node="cDzKOXrIit" resolve="FETCH_URL" />
+            <node concept="31HOkp" id="3jQcDYOsv7o" role="31jqfU">
+              <property role="TrG5h" value="file FETCH_URL/SCRIPT" />
+              <property role="3oicoW" value="RESOURCES_FETCH_URL_SCRIPT" />
+              <node concept="31jotn" id="3jQcDYOsv7n" role="31HOkl">
+                <property role="31jswE" value="SCRIPT" />
+                <property role="31jswI" value="RESOURCES_FETCH_URL" />
+                <property role="KVZ4R" value="FETCH_URL" />
+              </node>
+            </node>
+            <node concept="31HOkp" id="3jQcDYOsv7q" role="31jqfU">
+              <property role="TrG5h" value="file FETCH_URL/SCRIPT_PATTERN" />
+              <property role="3oicoW" value="RESOURCES_FETCH_URL_SCRIPT_PATTERN" />
+              <node concept="31jotn" id="3jQcDYOsv7p" role="31HOkl">
+                <property role="31jswE" value="SCRIPT_PATTERN" />
+                <property role="31jswI" value="RESOURCES_FETCH_URL" />
+                <property role="KVZ4R" value="FETCH_URL" />
+              </node>
+            </node>
+          </node>
+          <node concept="2vzQjv" id="cDzKOXrIia" role="xr5hk">
+            <property role="TrG5h" value="SALMON_INDEX" />
+            <node concept="2vzQjq" id="cDzKOXrIib" role="2vzQju">
+              <property role="TrG5h" value="0.5.0" />
+            </node>
+          </node>
+          <node concept="2vnsz3" id="3jQcDYOstWx" role="1NFp1Y">
+            <property role="2vk9_M" value="SALMON_INDEX" />
+            <property role="2vk9_N" value="INDEX" />
+            <property role="TrG5h" value="organism" />
+            <node concept="2t8VsU" id="3jQcDYOstWy" role="2vnsw6">
+              <property role="2t8Vu2" value="homo_sapiens" />
+              <property role="TrG5h" value="organism" />
+            </node>
+          </node>
+          <node concept="2vnsz3" id="3jQcDYOstWz" role="1NFp1Y">
+            <property role="2vk9_M" value="SALMON_INDEX" />
+            <property role="2vk9_N" value="INDEX" />
+            <property role="TrG5h" value="reference-build" />
+            <node concept="2t8VsU" id="3jQcDYOstW$" role="2vnsw6">
+              <property role="2t8Vu2" value="GRCh38" />
+              <property role="TrG5h" value="reference-build" />
+            </node>
+          </node>
+          <node concept="2vnsz3" id="3jQcDYOstW_" role="1NFp1Y">
+            <property role="2vk9_M" value="SALMON_INDEX" />
+            <property role="2vk9_N" value="INDEX" />
+            <property role="TrG5h" value="ensembl-version-number" />
+            <node concept="2t8VsU" id="3jQcDYOstWA" role="2vnsw6">
+              <property role="2t8Vu2" value="82" />
+              <property role="TrG5h" value="ensembl-version-number" />
+            </node>
+          </node>
+          <node concept="1NwGl_" id="3jQcDYOstWB" role="3bnoS5">
+            <property role="3xVD5K" value="SALMON" />
+            <ref role="x1kBk" node="cDzKOXrgKs" resolve="SALMON" />
+            <node concept="31HOkp" id="3jQcDYOsv7s" role="31jqfU">
+              <property role="TrG5h" value="artifact path SALMON.BINARIES" />
+              <property role="3oicoW" value="RESOURCES_ARTIFACTS_SALMON_BINARIES" />
+              <node concept="31josK" id="3jQcDYOsv7r" role="31HOkl">
+                <property role="31jqiE" value="RESOURCES_ARTIFACTS_SALMON_BINARIES" />
+                <property role="KTmAF" value="SALMON" />
+                <property role="3oiRSB" value="BINARIES" />
+              </node>
+            </node>
+            <node concept="31HOkp" id="3jQcDYOsv7u" role="31jqfU">
+              <property role="TrG5h" value="file SALMON/INSTALL" />
+              <property role="3oicoW" value="RESOURCES_SALMON_INSTALL" />
+              <node concept="31jotn" id="3jQcDYOsv7t" role="31HOkl">
+                <property role="31jswE" value="INSTALL" />
+                <property role="31jswI" value="RESOURCES_SALMON" />
+                <property role="KVZ4R" value="SALMON" />
+              </node>
+            </node>
+          </node>
+          <node concept="1NwGl_" id="3jQcDYOstWC" role="3bnoS5">
+            <property role="3xVD5K" value="ENSEMBL_TRANSCRIPTS" />
+            <ref role="x1kBk" node="cDzKOXrIim" resolve="ENSEMBL_TRANSCRIPTS" />
+            <node concept="2vnsz3" id="3jQcDYOstWD" role="1NFp1Y">
+              <property role="2vk9_M" value="ENSEMBL_TRANSCRIPTS" />
+              <property role="2vk9_N" value="TOPLEVEL" />
+              <property role="TrG5h" value="organism" />
+              <node concept="2vraTB" id="3jQcDYOstWE" role="2vnsw6">
+                <property role="TrG5h" value="organism" />
+                <ref role="2vraA5" node="3jQcDYOstWy" resolve="organism" />
+              </node>
+            </node>
+            <node concept="2vnsz3" id="3jQcDYOstWF" role="1NFp1Y">
+              <property role="2vk9_M" value="ENSEMBL_TRANSCRIPTS" />
+              <property role="2vk9_N" value="TOPLEVEL" />
+              <property role="TrG5h" value="reference-build" />
+              <node concept="2vraTB" id="3jQcDYOstWG" role="2vnsw6">
+                <property role="TrG5h" value="reference-build" />
+                <ref role="2vraA5" node="3jQcDYOstW$" resolve="reference-build" />
+              </node>
+            </node>
+            <node concept="2vnsz3" id="3jQcDYOstWH" role="1NFp1Y">
+              <property role="2vk9_M" value="ENSEMBL_TRANSCRIPTS" />
+              <property role="2vk9_N" value="TOPLEVEL" />
+              <property role="TrG5h" value="ensembl-version-number" />
+              <node concept="2vraTB" id="3jQcDYOstWI" role="2vnsw6">
+                <property role="TrG5h" value="ensembl-version-number" />
+                <ref role="2vraA5" node="3jQcDYOstWA" resolve="ensembl-version-number" />
+              </node>
+            </node>
+            <node concept="31HOkp" id="3jQcDYOsv7w" role="31jqfU">
+              <property role="TrG5h" value="value of ENSEMBL_TRANSCRIPTS.TOPLEVEL.ensembl-version-number" />
+              <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_ENSEMBL_VERSION_NUMBER" />
+              <node concept="31jouD" id="3jQcDYOsv7v" role="31HOkl">
+                <property role="31jql3" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_" />
+                <property role="3pPHmd" value="TOPLEVEL" />
+                <property role="KY_Hm" value="ENSEMBL_TRANSCRIPTS" />
+                <property role="3GSlvM" value="ensembl-version-number" />
+              </node>
+            </node>
+            <node concept="31HOkp" id="3jQcDYOsv7_" role="31jqfU">
+              <property role="TrG5h" value="artifact path ENSEMBL_TRANSCRIPTS.TOPLEVEL" />
+              <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_HOMO_SAPIENS_GRCH38_82" />
+              <node concept="31josK" id="3jQcDYOsv7x" role="31HOkl">
+                <property role="31jqiE" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL" />
+                <property role="KTmAF" value="ENSEMBL_TRANSCRIPTS" />
+                <property role="3oiRSB" value="TOPLEVEL" />
+                <node concept="31jqtl" id="3jQcDYOsv7y" role="31jqr$">
+                  <property role="3GzU61" value="organism" />
+                  <property role="3GzU6q" value="ENSEMBL_TRANSCRIPTS" />
+                  <property role="3GzU6s" value="TOPLEVEL" />
+                </node>
+                <node concept="31jqtl" id="3jQcDYOsv7z" role="31jqr$">
+                  <property role="3GzU61" value="reference-build" />
+                  <property role="3GzU6q" value="ENSEMBL_TRANSCRIPTS" />
+                  <property role="3GzU6s" value="TOPLEVEL" />
+                </node>
+                <node concept="31jqtl" id="3jQcDYOsv7$" role="31jqr$">
+                  <property role="3GzU61" value="ensembl-version-number" />
+                  <property role="3GzU6q" value="ENSEMBL_TRANSCRIPTS" />
+                  <property role="3GzU6s" value="TOPLEVEL" />
+                </node>
+              </node>
+            </node>
+            <node concept="31HOkp" id="3jQcDYOsv7B" role="31jqfU">
+              <property role="TrG5h" value="value of ENSEMBL_TRANSCRIPTS.TOPLEVEL.organism" />
+              <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_ORGANISM" />
+              <node concept="31jouD" id="3jQcDYOsv7A" role="31HOkl">
+                <property role="31jql3" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_" />
+                <property role="3pPHmd" value="TOPLEVEL" />
+                <property role="KY_Hm" value="ENSEMBL_TRANSCRIPTS" />
+                <property role="3GSlvM" value="organism" />
+              </node>
+            </node>
+            <node concept="31HOkp" id="3jQcDYOsv7D" role="31jqfU">
+              <property role="TrG5h" value="value of ENSEMBL_TRANSCRIPTS.TOPLEVEL.reference-build" />
+              <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_REFERENCE_BUILD" />
+              <node concept="31jouD" id="3jQcDYOsv7C" role="31HOkl">
+                <property role="31jql3" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_" />
+                <property role="3pPHmd" value="TOPLEVEL" />
+                <property role="KY_Hm" value="ENSEMBL_TRANSCRIPTS" />
+                <property role="3GSlvM" value="reference-build" />
+              </node>
+            </node>
+            <node concept="31HOkp" id="3jQcDYOsv7F" role="31jqfU">
+              <property role="TrG5h" value="file ENSEMBL_TRANSCRIPTS/INSTALL" />
+              <property role="3oicoW" value="RESOURCES_ENSEMBL_TRANSCRIPTS_INSTALL" />
+              <node concept="31jotn" id="3jQcDYOsv7E" role="31HOkl">
+                <property role="31jswE" value="INSTALL" />
+                <property role="31jswI" value="RESOURCES_ENSEMBL_TRANSCRIPTS" />
+                <property role="KVZ4R" value="ENSEMBL_TRANSCRIPTS" />
+              </node>
+            </node>
+          </node>
+          <node concept="31HOkp" id="3jQcDYOsv77" role="31jqfU">
+            <property role="TrG5h" value="value of SALMON_INDEX.INDEX.ensembl-version-number" />
+            <property role="3oicoW" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_ENSEMBL_VERSION_NUMBER" />
+            <node concept="31jouD" id="3jQcDYOsv76" role="31HOkl">
+              <property role="31jql3" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_" />
+              <property role="3pPHmd" value="INDEX" />
+              <property role="KY_Hm" value="SALMON_INDEX" />
+              <property role="3GSlvM" value="ensembl-version-number" />
+            </node>
+          </node>
+          <node concept="31HOkp" id="3jQcDYOsv7c" role="31jqfU">
+            <property role="TrG5h" value="artifact path SALMON_INDEX.INDEX" />
+            <property role="3oicoW" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_HOMO_SAPIENS_GRCH38_82" />
+            <node concept="31josK" id="3jQcDYOsv78" role="31HOkl">
+              <property role="31jqiE" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX" />
+              <property role="KTmAF" value="SALMON_INDEX" />
+              <property role="3oiRSB" value="INDEX" />
+              <node concept="31jqtl" id="3jQcDYOsv79" role="31jqr$">
+                <property role="3GzU61" value="organism" />
+                <property role="3GzU6q" value="SALMON_INDEX" />
+                <property role="3GzU6s" value="INDEX" />
+              </node>
+              <node concept="31jqtl" id="3jQcDYOsv7a" role="31jqr$">
+                <property role="3GzU61" value="reference-build" />
+                <property role="3GzU6q" value="SALMON_INDEX" />
+                <property role="3GzU6s" value="INDEX" />
+              </node>
+              <node concept="31jqtl" id="3jQcDYOsv7b" role="31jqr$">
+                <property role="3GzU61" value="ensembl-version-number" />
+                <property role="3GzU6q" value="SALMON_INDEX" />
+                <property role="3GzU6s" value="INDEX" />
+              </node>
+            </node>
+          </node>
+          <node concept="31HOkp" id="3jQcDYOsv7e" role="31jqfU">
+            <property role="TrG5h" value="value of SALMON_INDEX.INDEX.organism" />
+            <property role="3oicoW" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_ORGANISM" />
+            <node concept="31jouD" id="3jQcDYOsv7d" role="31HOkl">
+              <property role="31jql3" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_" />
+              <property role="3pPHmd" value="INDEX" />
+              <property role="KY_Hm" value="SALMON_INDEX" />
+              <property role="3GSlvM" value="organism" />
+            </node>
+          </node>
+          <node concept="31HOkp" id="3jQcDYOsv7g" role="31jqfU">
+            <property role="TrG5h" value="value of SALMON_INDEX.INDEX.reference-build" />
+            <property role="3oicoW" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_REFERENCE_BUILD" />
+            <node concept="31jouD" id="3jQcDYOsv7f" role="31HOkl">
+              <property role="31jql3" value="RESOURCES_ARTIFACTS_SALMON_INDEX_INDEX_" />
+              <property role="3pPHmd" value="INDEX" />
+              <property role="KY_Hm" value="SALMON_INDEX" />
+              <property role="3GSlvM" value="reference-build" />
+            </node>
+          </node>
+          <node concept="31HOkp" id="3jQcDYOsv7i" role="31jqfU">
+            <property role="TrG5h" value="file SALMON_INDEX/INSTALL" />
+            <property role="3oicoW" value="RESOURCES_SALMON_INDEX_INSTALL" />
+            <node concept="31jotn" id="3jQcDYOsv7h" role="31HOkl">
+              <property role="31jswE" value="INSTALL" />
+              <property role="31jswI" value="RESOURCES_SALMON_INDEX" />
+              <property role="KVZ4R" value="SALMON_INDEX" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="VtuK3" id="7l$hyn6HqD9" role="234boB">
+      <property role="VuL0s" value="1.0.0" />
+      <property role="GbyUj" value="salmon-homo-sapiens" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="3zaeVo" value="true" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="7l$hyn6HqcB">
+    <property role="GSh9r" value="artifacts/salmon-homo-sapiens:1.0.0" />
+    <property role="2E_JEh" value="salmon-homo-sapiens" />
+    <property role="TrG5h" value="image" />
+    <node concept="WEvhf" id="7l$hyn6Hrf5" role="WF_SX">
+      <ref role="WEvjA" node="7l$hyn6HqD5" resolve="interactive" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="7l$hyn6HqD5">
+    <property role="TrG5h" value="interactive" />
+    <property role="GbyUj" value="salmon-homo-sapiens" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 10000" />
+    <ref role="3zcJb$" node="7l$hyn6HqcB" resolve="image" />
   </node>
 </model>
 
