@@ -13,6 +13,9 @@
     <import index="tp2u" ref="r:00000000-0000-4000-0000-011c8959032a(jetbrains.mps.baseLanguage.collections.editor)" />
     <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
     <import index="msyo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
+    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -215,6 +218,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -286,8 +290,8 @@
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
-      <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
-        <property id="4040588429969021683" name="moduleId" index="3rM5sR" />
+      <concept id="6955116391921790598" name="jetbrains.mps.lang.smodel.structure.CheckedModuleQualifiedName" flags="nn" index="1nuMs4">
+        <property id="6955116391921791525" name="moduleId" index="1nuNIB" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
@@ -349,28 +353,58 @@
       <node concept="1u4HXA" id="4g1gOgyVIbM" role="3EZMnx">
         <node concept="4EIwk" id="1y9U$FzmSq3" role="4GRq3">
           <node concept="3clFbS" id="1y9U$FzmSq4" role="2VODD2">
-            <node concept="3cpWs6" id="1y9U$Fzl4gw" role="3cqZAp">
-              <node concept="2OqwBi" id="7TQwRAdvX1K" role="3cqZAk">
-                <node concept="2YIFZM" id="7TQwRAdvW1K" role="2Oq$k0">
-                  <ref role="37wK5l" to="msyo:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
-                  <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
-                  <node concept="1eOMI4" id="1y9U$Fzm8Ua" role="37wK5m">
-                    <node concept="10QFUN" id="1y9U$Fzm8U7" role="1eOMHV">
-                      <node concept="3uibUv" id="1y9U$Fzm8Um" role="10QFUM">
-                        <ref role="3uigEE" to="vsqj:~AbstractModule" resolve="AbstractModule" />
-                      </node>
-                      <node concept="3rM5sP" id="1y9U$FzltqV" role="10QFUP">
-                        <property role="3rM5sR" value="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" />
-                      </node>
+            <node concept="3SKdUt" id="4XBrC$Ymz8h" role="3cqZAp" />
+            <node concept="3cpWs8" id="625yo8SjD6U" role="3cqZAp">
+              <node concept="3cpWsn" id="625yo8SjD6V" role="3cpWs9">
+                <property role="TrG5h" value="module" />
+                <node concept="3uibUv" id="625yo8SjD6W" role="1tU5fm">
+                  <ref role="3uigEE" to="88zw:~SModule" resolve="SModule" />
+                </node>
+                <node concept="2OqwBi" id="625yo8SjD6X" role="33vP2m">
+                  <node concept="2YIFZM" id="625yo8SjD6Y" role="2Oq$k0">
+                    <ref role="1Pybhc" to="cu2c:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                    <ref role="37wK5l" to="cu2c:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                  </node>
+                  <node concept="liA8E" id="625yo8SjD6Z" role="2OqNvi">
+                    <ref role="37wK5l" to="cu2c:~MPSModuleRepository.getModuleByFqName(java.lang.String):org.jetbrains.mps.openapi.module.SModule" resolve="getModuleByFqName" />
+                    <node concept="1nuMs4" id="4XBrC$Yms5T" role="37wK5m">
+                      <property role="1nuNIB" value="c6c823fb-a9da-46e7-9850-129b0f7a7aa5(org.campagnelab.workflow)" />
                     </node>
                   </node>
                 </node>
-                <node concept="liA8E" id="7TQwRAdvXiB" role="2OqNvi">
-                  <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
-                  <node concept="Xl_RD" id="7TQwRAdvXjb" role="37wK5m">
-                    <property role="Xl_RC" value="${module}/icons/ProcessIcon-5.png" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="4XBrC$YqwN6" role="3cqZAp">
+              <node concept="3cpWsn" id="4XBrC$YqwN9" role="3cpWs9">
+                <property role="TrG5h" value="path" />
+                <node concept="17QB3L" id="4XBrC$YqwN4" role="1tU5fm" />
+                <node concept="2OqwBi" id="7TQwRAdvX1K" role="33vP2m">
+                  <node concept="2YIFZM" id="7TQwRAdvW1K" role="2Oq$k0">
+                    <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+                    <ref role="37wK5l" to="msyo:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
+                    <node concept="1eOMI4" id="1y9U$Fzm8Ua" role="37wK5m">
+                      <node concept="10QFUN" id="1y9U$Fzm8U7" role="1eOMHV">
+                        <node concept="3uibUv" id="1y9U$Fzm8Um" role="10QFUM">
+                          <ref role="3uigEE" to="vsqj:~AbstractModule" resolve="AbstractModule" />
+                        </node>
+                        <node concept="37vLTw" id="4XBrC$Yms64" role="10QFUP">
+                          <ref role="3cqZAo" node="625yo8SjD6V" resolve="module" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7TQwRAdvXiB" role="2OqNvi">
+                    <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                    <node concept="Xl_RD" id="7TQwRAdvXjb" role="37wK5m">
+                      <property role="Xl_RC" value="${module}/icons/ProcessIcon-5.png" />
+                    </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="1y9U$Fzl4gw" role="3cqZAp">
+              <node concept="37vLTw" id="4XBrC$YqIFP" role="3cqZAk">
+                <ref role="3cqZAo" node="4XBrC$YqwN9" resolve="path" />
               </node>
             </node>
           </node>
