@@ -417,12 +417,11 @@
                 <ref role="3cqZAo" node="2h_fDmyfOzD" resolve="somePartialPath" />
               </node>
               <node concept="Xl_RD" id="BlwvJ4Bkqp" role="3uHU7B">
-                <property role="Xl_RC" value="Inside autocomplete " />
+                <property role="Xl_RC" value="Autocomplete for " />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="BlwvJ4BjUv" role="3cqZAp" />
         <node concept="3cpWs8" id="2h_fDmyfOy9" role="3cqZAp">
           <node concept="3cpWsn" id="2h_fDmyfOya" role="3cpWs9">
             <property role="TrG5h" value="result" />
@@ -497,24 +496,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="BlwvJ4ztF1" role="3cqZAp">
-          <node concept="2YIFZM" id="BlwvJ4ztF2" role="3clFbG">
-            <ref role="37wK5l" to="rzxe:7MTH03merpm" resolve="log" />
-            <ref role="1Pybhc" to="rzxe:7MTH03m4_Rr" resolve="ExecuteDockerCommands" />
-            <node concept="2OqwBi" id="BlwvJ4ztF3" role="37wK5m">
-              <node concept="13iPFW" id="BlwvJ4ztF4" role="2Oq$k0" />
-              <node concept="I4A8Y" id="BlwvJ4ztF5" role="2OqNvi" />
-            </node>
-            <node concept="3cpWs3" id="BlwvJ4ztF6" role="37wK5m">
-              <node concept="37vLTw" id="BlwvJ4ztF7" role="3uHU7w">
-                <ref role="3cqZAo" node="2h_fDmyfOzD" resolve="somePartialPath" />
-              </node>
-              <node concept="Xl_RD" id="BlwvJ4ztF8" role="3uHU7B">
-                <property role="Xl_RC" value="Partial path is now 1: " />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="2h_fDmyfOxM" role="3cqZAp">
           <node concept="3clFbS" id="2h_fDmyfOxN" role="3clFbx">
             <node concept="3clFbJ" id="29FFJBZK$3B" role="3cqZAp">
@@ -578,24 +559,6 @@
               </node>
               <node concept="9aQIb" id="29FFJBZKEaJ" role="9aQIa">
                 <node concept="3clFbS" id="29FFJBZKEaK" role="9aQI4">
-                  <node concept="3clFbF" id="BlwvJ4CyZH" role="3cqZAp">
-                    <node concept="2YIFZM" id="BlwvJ4CyZI" role="3clFbG">
-                      <ref role="37wK5l" to="rzxe:7MTH03merpm" resolve="log" />
-                      <ref role="1Pybhc" to="rzxe:7MTH03m4_Rr" resolve="ExecuteDockerCommands" />
-                      <node concept="2OqwBi" id="BlwvJ4CyZJ" role="37wK5m">
-                        <node concept="13iPFW" id="BlwvJ4CyZK" role="2Oq$k0" />
-                        <node concept="I4A8Y" id="BlwvJ4CyZL" role="2OqNvi" />
-                      </node>
-                      <node concept="3cpWs3" id="BlwvJ4CyZM" role="37wK5m">
-                        <node concept="37vLTw" id="BlwvJ4CyZN" role="3uHU7w">
-                          <ref role="3cqZAo" node="2h_fDmyfOya" resolve="result" />
-                        </node>
-                        <node concept="Xl_RD" id="BlwvJ4CyZO" role="3uHU7B">
-                          <property role="Xl_RC" value="Returned by autocomplete 1: " />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3SKdUt" id="29FFJBZKJIm" role="3cqZAp">
                     <node concept="3SKdUq" id="29FFJBZKK1O" role="3SKWNk">
                       <property role="3SKdUp" value="Cannot autocomplete, parent is not a directory" />
@@ -640,7 +603,7 @@
                 <ref role="3cqZAo" node="2h_fDmyfOzD" resolve="somePartialPath" />
               </node>
               <node concept="Xl_RD" id="79Et$Hme6QT" role="3uHU7B">
-                <property role="Xl_RC" value="Partial path is now 2: " />
+                <property role="Xl_RC" value="Partial path is now: " />
               </node>
             </node>
           </node>
@@ -712,24 +675,6 @@
                 <property role="3SKdUp" value="query failed, no results" />
               </node>
             </node>
-            <node concept="3clFbF" id="BlwvJ4BHrf" role="3cqZAp">
-              <node concept="2YIFZM" id="BlwvJ4BHrg" role="3clFbG">
-                <ref role="1Pybhc" to="rzxe:7MTH03m4_Rr" resolve="ExecuteDockerCommands" />
-                <ref role="37wK5l" to="rzxe:7MTH03merpm" resolve="log" />
-                <node concept="2OqwBi" id="BlwvJ4BHrh" role="37wK5m">
-                  <node concept="13iPFW" id="BlwvJ4BHri" role="2Oq$k0" />
-                  <node concept="I4A8Y" id="BlwvJ4BHrj" role="2OqNvi" />
-                </node>
-                <node concept="3cpWs3" id="BlwvJ4BHrk" role="37wK5m">
-                  <node concept="37vLTw" id="BlwvJ4BHrl" role="3uHU7w">
-                    <ref role="3cqZAo" node="2h_fDmyfOya" resolve="result" />
-                  </node>
-                  <node concept="Xl_RD" id="BlwvJ4BHrm" role="3uHU7B">
-                    <property role="Xl_RC" value="Returned by autocomplete 1: " />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs6" id="2h_fDmyfOyE" role="3cqZAp">
               <node concept="37vLTw" id="2h_fDmyfOyF" role="3cqZAk">
                 <ref role="3cqZAo" node="2h_fDmyfOya" resolve="result" />
@@ -792,25 +737,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="BlwvJ4BIQl" role="3cqZAp">
-              <node concept="2YIFZM" id="BlwvJ4BIQm" role="3clFbG">
-                <ref role="1Pybhc" to="rzxe:7MTH03m4_Rr" resolve="ExecuteDockerCommands" />
-                <ref role="37wK5l" to="rzxe:7MTH03merpm" resolve="log" />
-                <node concept="2OqwBi" id="BlwvJ4BIQn" role="37wK5m">
-                  <node concept="13iPFW" id="BlwvJ4BIQo" role="2Oq$k0" />
-                  <node concept="I4A8Y" id="BlwvJ4BIQp" role="2OqNvi" />
-                </node>
-                <node concept="3cpWs3" id="BlwvJ4BIQq" role="37wK5m">
-                  <node concept="37vLTw" id="BlwvJ4BIQr" role="3uHU7w">
-                    <ref role="3cqZAo" node="2h_fDmyfOya" resolve="result" />
-                  </node>
-                  <node concept="Xl_RD" id="BlwvJ4BIQs" role="3uHU7B">
-                    <property role="Xl_RC" value="Returned by autocomplete 2: " />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="BlwvJ4BIqX" role="3cqZAp" />
             <node concept="3cpWs6" id="2h_fDmyfOz3" role="3cqZAp">
               <node concept="37vLTw" id="2h_fDmyfOz4" role="3cqZAk">
                 <ref role="3cqZAo" node="2h_fDmyfOya" resolve="result" />
@@ -900,25 +826,6 @@
             <ref role="3cqZAo" node="2h_fDmyfOyl" resolve="resultLs" />
           </node>
         </node>
-        <node concept="3clFbF" id="BlwvJ4BlSW" role="3cqZAp">
-          <node concept="2YIFZM" id="BlwvJ4BlSX" role="3clFbG">
-            <ref role="37wK5l" to="rzxe:7MTH03merpm" resolve="log" />
-            <ref role="1Pybhc" to="rzxe:7MTH03m4_Rr" resolve="ExecuteDockerCommands" />
-            <node concept="2OqwBi" id="BlwvJ4BlSY" role="37wK5m">
-              <node concept="13iPFW" id="BlwvJ4BlSZ" role="2Oq$k0" />
-              <node concept="I4A8Y" id="BlwvJ4BlT0" role="2OqNvi" />
-            </node>
-            <node concept="3cpWs3" id="BlwvJ4BlT1" role="37wK5m">
-              <node concept="37vLTw" id="BlwvJ4Bmq6" role="3uHU7w">
-                <ref role="3cqZAo" node="2h_fDmyfOya" resolve="result" />
-              </node>
-              <node concept="Xl_RD" id="BlwvJ4BlT3" role="3uHU7B">
-                <property role="Xl_RC" value="Returned by autocomplete: " />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="BlwvJ4BlrD" role="3cqZAp" />
         <node concept="3cpWs6" id="2h_fDmyfOzB" role="3cqZAp">
           <node concept="37vLTw" id="2h_fDmyfOzC" role="3cqZAk">
             <ref role="3cqZAo" node="2h_fDmyfOya" resolve="result" />
