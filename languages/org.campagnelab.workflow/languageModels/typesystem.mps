@@ -6328,5 +6328,37 @@
       <ref role="1YaFvo" to="iowz:XaRILis0lI" resolve="FunctionWithClosure" />
     </node>
   </node>
+  <node concept="1YbPZF" id="6yfCFght7U3">
+    <property role="TrG5h" value="typeof_Filter" />
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="18ip37" value="true" />
+    <node concept="3clFbS" id="6yfCFght7U4" role="18ibNy">
+      <node concept="1Z5TYs" id="6yfCFght$V9" role="3cqZAp">
+        <node concept="mw_s8" id="6yfCFght$Vt" role="1ZfhKB">
+          <node concept="1Z2H0r" id="6yfCFght$Vp" role="mwGJk">
+            <node concept="2OqwBi" id="6yfCFght$Y9" role="1Z2MuG">
+              <node concept="1YBJjd" id="6yfCFght$VI" role="2Oq$k0">
+                <ref role="1YBMHb" node="6yfCFght7U6" resolve="filter" />
+              </node>
+              <node concept="2qgKlT" id="6yfCFghtJ8g" role="2OqNvi">
+                <ref role="37wK5l" to="mqvz:7mWvTummKDC" resolve="getPreviousNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6yfCFght$Vc" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6yfCFghtwz6" role="mwGJk">
+            <node concept="1YBJjd" id="6yfCFghtzzf" role="1Z2MuG">
+              <ref role="1YBMHb" node="6yfCFght7U6" resolve="filter" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6yfCFght7U6" role="1YuTPh">
+      <property role="TrG5h" value="filter" />
+      <ref role="1YaFvo" to="iowz:XaRILhslAr" resolve="Filter" />
+    </node>
+  </node>
 </model>
 
