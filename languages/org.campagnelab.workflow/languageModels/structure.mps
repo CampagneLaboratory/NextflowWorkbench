@@ -985,7 +985,7 @@
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="FlatMap" />
     <property role="34LRSv" value="flatMap" />
-    <property role="R4oN_" value="Transform each items from a source channel with a user define function. It can return a map" />
+    <property role="R4oN_" value="Transform each item from a source channel with a user defined function." />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILilHC4">
@@ -1053,7 +1053,7 @@
     <property role="TrG5h" value="MapFunction" />
     <property role="34LRSv" value="map" />
     <property role="R4oN_" value="Transform each items emitted by a source channel with a user define function and return them" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
+    <ref role="1TJDcQ" node="1EP6SKygw2j" resolve="FunctionWithClosureType" />
   </node>
   <node concept="1TIwiD" id="XaRILjgRRX">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
@@ -1290,7 +1290,7 @@
     <property role="TrG5h" value="IfEmpty" />
     <property role="34LRSv" value="ifEmpty" />
     <property role="R4oN_" value="Emit a value specified as parameter, when the source channel is empty" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
+    <ref role="1TJDcQ" node="1EP6SKygw2j" resolve="FunctionWithClosureType" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgpKP">
     <property role="3GE5qa" value="channelFunctions.literalFunctions" />
@@ -1898,6 +1898,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1EP6SKygw2j">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="FunctionWithClosureType" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
 </model>
 
