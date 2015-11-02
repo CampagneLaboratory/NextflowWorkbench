@@ -1666,12 +1666,6 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6egJc5ZIuWT" role="3bR37C">
-          <node concept="3bR9La" id="6egJc5ZIuWU" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="3voMOJEmfkq" resolve="org.campagnelab.icons" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="1B2iUhm3bS8" role="2G$12L">
         <property role="BnDLt" value="true" />
