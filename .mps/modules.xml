@@ -10,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.docker.bash.resources/org.campagnelab.docker.bash.resources.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.docker.bash/org.campagnelab.docker.bash.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.docker/org.campagnelab.docker.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.icons/org.campagnelab.icons.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.utils.multifiles/org.campagnelab.utils.multifiles.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow.configuration/org.campagnelab.workflow.configuration.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow.languages/org.campagnelab.workflow.languages.mpl" folder="" />
