@@ -10,6 +10,7 @@
   <exported-language name="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" />
   <exported-language name="25281c03-4a7c-4b57-9221-24a10fc36ef5(org.campagnelab.docker)" />
   <exported-language name="3b74e3b7-7336-414d-8899-64a293a44a07(org.campagnelab.docker.bash)" />
+  <exported-language name="43809d33-d5e3-4390-917e-3944cb211ee3(org.campagnelab.icons)" />
   <exported-solutions>
     <exported-solution>c039a1a6-4680-46fa-b571-a6a5f1e49ab6(org.campagnelab.workflow.run)</exported-solution>
     <exported-solution>4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)</exported-solution>
