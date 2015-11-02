@@ -10240,30 +10240,15 @@
             <property role="26mB$E" value="artifacts" />
             <property role="OYnhT" value="" />
           </node>
-          <node concept="26mB$F" id="BlwvJ4GG0e" role="26mB$C">
+          <node concept="26mB$F" id="BlwvJ4LmtP" role="26mB$C">
             <property role="26mB_l" value="false" />
-          </node>
-        </node>
-        <node concept="19SUe$" id="BlwvJ4GG0f" role="19SJt6">
-          <property role="19SUeA" value="&#10;ls -lrt " />
-        </node>
-        <node concept="26mB_k" id="BlwvJ4GFZG" role="19SJt6">
-          <ref role="26mB_n" node="BlwvJ4z4FG" resolve="interactive" />
-          <node concept="26mB$F" id="BlwvJ4GFZI" role="26mB$C">
-            <property role="26mB_l" value="false" />
-          </node>
-        </node>
-        <node concept="19SUe$" id="BlwvJ4GG2S" role="19SJt6" />
-        <node concept="26mB_k" id="BlwvJ4GG2P" role="19SJt6">
-          <ref role="26mB_n" node="BlwvJ4z4FG" resolve="interactive" />
-          <node concept="26mB$F" id="BlwvJ4GG2R" role="26mB$C">
-            <property role="26mB_l" value="true" />
             <property role="26mB$E" value="" />
           </node>
         </node>
-        <node concept="19SUe$" id="BlwvJ4GG2O" role="19SJt6">
-          <property role="19SUeA" value="&#10;&#10;" />
+        <node concept="19SUe$" id="BlwvJ4GG0f" role="19SJt6">
+          <property role="19SUeA" value="&#10;ls -lrt" />
         </node>
+        <node concept="19SUe$" id="BlwvJ4Lmum" role="19SJt6" />
       </node>
     </node>
     <node concept="GbKB8" id="BlwvJ4z4FG" role="234boB">
