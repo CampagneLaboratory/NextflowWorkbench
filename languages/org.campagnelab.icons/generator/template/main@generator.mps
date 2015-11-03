@@ -139,6 +139,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -153,6 +154,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG" />
@@ -437,22 +439,88 @@
                           <node concept="37vLTw" id="4xbBvnqgPSj" role="37vLTJ">
                             <ref role="3cqZAo" node="2r1JDNYP$uV" resolve="image" />
                           </node>
-                          <node concept="2YIFZM" id="4xbBvnqhdOT" role="37vLTx">
-                            <ref role="37wK5l" to="idt7:~IconLoader.loadFromResource(java.lang.String):java.awt.Image" resolve="loadFromResource" />
+                          <node concept="2YIFZM" id="7tXLmgy2L_F" role="37vLTx">
+                            <ref role="37wK5l" to="idt7:~IconLoader.loadFromStream(java.io.InputStream):java.awt.Image" resolve="loadFromStream" />
                             <ref role="1Pybhc" to="idt7:~IconLoader" resolve="IconLoader" />
-                            <node concept="37vLTw" id="4xbBvnqhdOU" role="37wK5m">
-                              <ref role="3cqZAo" node="2r1JDNYPAR6" resolve="iconPath" />
+                            <node concept="2OqwBi" id="7tXLmgy33JL" role="37wK5m">
+                              <node concept="2OqwBi" id="7tXLmgy31KK" role="2Oq$k0">
+                                <node concept="2OqwBi" id="7tXLmgy2Z8z" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="7tXLmgy2X97" role="2Oq$k0">
+                                    <node concept="liA8E" id="7tXLmgy2X98" role="2OqNvi">
+                                      <ref role="37wK5l" to="t3eg:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
+                                    </node>
+                                    <node concept="2OqwBi" id="7tXLmgy2X99" role="2Oq$k0">
+                                      <node concept="liA8E" id="7tXLmgy2X9a" role="2OqNvi">
+                                        <ref role="37wK5l" to="ec5l:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                                      </node>
+                                      <node concept="2JrnkZ" id="7tXLmgy2X9b" role="2Oq$k0">
+                                        <node concept="37vLTw" id="7tXLmgy2X9c" role="2JrQYb">
+                                          <ref role="3cqZAo" node="g_ulJg$" resolve="node" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="7tXLmgy31Ed" role="2OqNvi">
+                                    <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="7tXLmgy33_Z" role="2OqNvi">
+                                  <ref role="37wK5l" to="e2lb:~Class.getClassLoader():java.lang.ClassLoader" resolve="getClassLoader" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="7tXLmgy3aXh" role="2OqNvi">
+                                <ref role="37wK5l" to="e2lb:~ClassLoader.getResourceAsStream(java.lang.String):java.io.InputStream" resolve="getResourceAsStream" />
+                                <node concept="37vLTw" id="7tXLmgy3bP7" role="37wK5m">
+                                  <ref role="3cqZAo" node="2r1JDNYPAR6" resolve="iconPath" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbJ" id="658HJWio4Uk" role="3cqZAp">
+                        <node concept="3clFbS" id="658HJWio4Um" role="3clFbx">
+                          <node concept="34ab3g" id="658HJWio3zm" role="3cqZAp">
+                            <property role="35gtTG" value="info" />
+                            <node concept="3cpWs3" id="658HJWio4ET" role="34bqiv">
+                              <node concept="37vLTw" id="658HJWio4HK" role="3uHU7w">
+                                <ref role="3cqZAo" node="2r1JDNYPAR6" resolve="iconPath" />
+                              </node>
+                              <node concept="Xl_RD" id="658HJWio3zo" role="3uHU7B">
+                                <property role="Xl_RC" value="Found image in plugin for " />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3y3z36" id="658HJWio53m" role="3clFbw">
+                          <node concept="10Nm6u" id="658HJWio56z" role="3uHU7w" />
+                          <node concept="37vLTw" id="658HJWio50k" role="3uHU7B">
+                            <ref role="3cqZAo" node="2r1JDNYP$uV" resolve="image" />
+                          </node>
+                        </node>
+                        <node concept="9aQIb" id="658HJWio7mP" role="9aQIa">
+                          <node concept="3clFbS" id="658HJWio7mQ" role="9aQI4">
+                            <node concept="34ab3g" id="658HJWio7pv" role="3cqZAp">
+                              <property role="35gtTG" value="info" />
+                              <node concept="Xl_RD" id="658HJWio7px" role="34bqiv">
+                                <property role="Xl_RC" value="Image not found in plugin" />
+                              </node>
                             </node>
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="2OqwBi" id="7d7$fAsHz5F" role="3clFbw">
-                      <node concept="37vLTw" id="7d7$fAsHyRZ" role="2Oq$k0">
-                        <ref role="3cqZAo" node="g_vwM8g" resolve="language" />
+                    <node concept="1Wc70l" id="7tXLmgy3bUw" role="3clFbw">
+                      <node concept="3clFbT" id="7tXLmgy3c22" role="3uHU7B">
+                        <property role="3clFbU" value="true" />
                       </node>
-                      <node concept="liA8E" id="7d7$fAsHAe7" role="2OqNvi">
-                        <ref role="37wK5l" to="vsqj:~AbstractModule.isReadOnly():boolean" resolve="isReadOnly" />
+                      <node concept="2OqwBi" id="7d7$fAsHz5F" role="3uHU7w">
+                        <node concept="37vLTw" id="7d7$fAsHyRZ" role="2Oq$k0">
+                          <ref role="3cqZAo" node="g_vwM8g" resolve="language" />
+                        </node>
+                        <node concept="liA8E" id="7d7$fAsHAe7" role="2OqNvi">
+                          <ref role="37wK5l" to="vsqj:~AbstractModule.isReadOnly():boolean" resolve="isReadOnly" />
+                        </node>
                       </node>
                     </node>
                     <node concept="9aQIb" id="7d7$fAsHF2u" role="9aQIa">
