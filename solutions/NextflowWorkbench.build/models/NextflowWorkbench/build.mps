@@ -431,6 +431,19 @@
               </node>
             </node>
           </node>
+          <node concept="28jJK3" id="6Ew8pdT68Lg" role="39821P">
+            <node concept="55IIr" id="6Ew8pdT68Li" role="28jJRO">
+              <node concept="2Ry0Ak" id="6Ew8pdT69ki" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6Ew8pdT69kn" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.icons" />
+                  <node concept="2Ry0Ak" id="6Ew8pdT69ks" role="2Ry0An">
+                    <property role="2Ry0Am" value="iconloader.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="28jJK3" id="1rhtiO0pcqV" role="39821P">
             <node concept="55IIr" id="1rhtiO0pcqW" role="28jJRO">
               <node concept="2Ry0Ak" id="1rhtiO0pcqX" role="iGT6I">
@@ -1668,7 +1681,7 @@
         </node>
         <node concept="1SiIV0" id="6egJc5ZIuWT" role="3bR37C">
           <node concept="3bR9La" id="6egJc5ZIuWU" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="3voMOJEmfkq" resolve="org.campagnelab.icons" />
           </node>
         </node>
@@ -3183,28 +3196,31 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
             </node>
           </node>
-          <node concept="1SiIV0" id="3voMOJEmgcJ" role="3bR37C">
-            <node concept="3bR9La" id="3voMOJEmgcK" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="4oJiZHqTePI" resolve="org.campagnelab.workflow" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="3voMOJEmgcL" role="3bR37C">
             <node concept="3bR9La" id="3voMOJEmgcM" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
             </node>
           </node>
-          <node concept="1SiIV0" id="3voMOJEmgcN" role="3bR37C">
-            <node concept="3bR9La" id="3voMOJEmgcO" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="3voMOJEmgcP" role="3bR37C">
             <node concept="3bR9La" id="3voMOJEmgcQ" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6Ew8pdT69wi" role="3bR37C">
+          <node concept="1BurEX" id="6Ew8pdT69wj" role="1SiIV1">
+            <node concept="55IIr" id="6Ew8pdT69w9" role="1BurEY">
+              <node concept="2Ry0Ak" id="6Ew8pdT69wa" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6Ew8pdT69wb" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.icons" />
+                  <node concept="2Ry0Ak" id="6Ew8pdT69wc" role="2Ry0An">
+                    <property role="2Ry0Am" value="iconloader.jar" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
