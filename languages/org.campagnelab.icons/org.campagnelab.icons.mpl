@@ -4,6 +4,9 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
     </modelRoot>
+    <modelRoot contentPath="${module}" type="java_classes">
+      <sourceRoot location="iconloader.jar" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
@@ -73,6 +76,9 @@
       </mapping-priorities>
     </generator>
   </generators>
+  <stubModelEntries>
+    <stubModelEntry path="${module}/iconloader.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
