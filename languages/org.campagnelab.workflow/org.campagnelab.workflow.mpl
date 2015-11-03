@@ -92,6 +92,9 @@
       </mapping-priorities>
     </generator>
   </generators>
+  <stubModelEntries>
+    <stubModelEntry path="${module}/icons.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>

@@ -67,10 +67,12 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
+      <concept id="7389400916848050074" name="jetbrains.mps.build.structure.BuildLayout_Jar" flags="ng" index="3981dx" />
       <concept id="7389400916848050071" name="jetbrains.mps.build.structure.BuildLayout_Zip" flags="ng" index="3981dG" />
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
+      <concept id="7389400916848036984" name="jetbrains.mps.build.structure.BuildLayout_Folder" flags="ng" index="398223" />
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -405,6 +407,46 @@
         </node>
         <node concept="m$_wl" id="4oJiZHqTePX" role="39821P">
           <ref role="m_rDy" node="4oJiZHqTePK" resolve="org.campagnelab.NextflowWorkbench" />
+          <node concept="398223" id="18iERioPUuf" role="39821P">
+            <node concept="3_J27D" id="18iERioPUuh" role="Nbhlr">
+              <node concept="3Mxwew" id="18iERioPUNF" role="3MwsjC">
+                <property role="3MwjfP" value="languages/org.campagnelab.workflow" />
+              </node>
+            </node>
+            <node concept="3981dx" id="18iERioPUNI" role="39821P">
+              <node concept="3_J27D" id="18iERioPUNJ" role="Nbhlr">
+                <node concept="3Mxwew" id="18iERioPUZk" role="3MwsjC">
+                  <property role="3MwjfP" value="icons.jar" />
+                </node>
+              </node>
+              <node concept="2HvfSZ" id="18iERioPUZn" role="39821P">
+                <node concept="55IIr" id="18iERioPUZo" role="2HvfZ0">
+                  <node concept="2Ry0Ak" id="18iERioPVb1" role="iGT6I">
+                    <property role="2Ry0Am" value="languages" />
+                    <node concept="2Ry0Ak" id="18iERioPVb8" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.campagnelab.workflow" />
+                      <node concept="2Ry0Ak" id="18iERioPVbf" role="2Ry0An">
+                        <property role="2Ry0Am" value="icons" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="18iERioR3On" role="39821P">
+            <node concept="55IIr" id="18iERioR3Op" role="28jJRO">
+              <node concept="2Ry0Ak" id="18iERioR4a1" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="18iERioR4a8" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.workflow" />
+                  <node concept="2Ry0Ak" id="18iERioR4af" role="2Ry0An">
+                    <property role="2Ry0Am" value="icons.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="28jJK3" id="5wD$zX1xK1f" role="39821P">
             <node concept="55IIr" id="5wD$zX1xK1h" role="28jJRO">
               <node concept="2Ry0Ak" id="5wD$zX1xKlr" role="iGT6I">
@@ -1683,6 +1725,21 @@
           <node concept="3bR9La" id="6egJc5ZIuWU" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="3voMOJEmfkq" resolve="org.campagnelab.icons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="18iERioPRaR" role="3bR37C">
+          <node concept="1BurEX" id="18iERioPRaS" role="1SiIV1">
+            <node concept="55IIr" id="18iERioPRaI" role="1BurEY">
+              <node concept="2Ry0Ak" id="18iERioPRaJ" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="18iERioPRaK" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.workflow" />
+                  <node concept="2Ry0Ak" id="18iERioPRaL" role="2Ry0An">
+                    <property role="2Ry0Am" value="icons.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

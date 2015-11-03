@@ -10,7 +10,6 @@
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
     <dependency reexport="false">f1fb7b1c-ce0d-423c-9369-4a661d600029(de.slisson.mps.all.build)</dependency>
     <dependency reexport="false">db7b3503-2b94-491e-9afb-40ef2d987a04(NYoSh.build-plugins)</dependency>
-    <dependency reexport="false">5e1a516a-83e0-454d-87d5-b29abfd5aa4c(Playground)</dependency>
     <dependency reexport="false">f4badde6-d2fb-4344-91d3-caedb26a938e(XChart.build)</dependency>
   </dependencies>
   <usedLanguages>
