@@ -6,6 +6,12 @@
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="43809d33-d5e3-4390-917e-3944cb211ee3" name="org.campagnelab.icons" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -18,6 +24,7 @@
     <import index="vuby" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.util.ui(MPS.IDEA/com.intellij.util.ui@java_stub)" />
     <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
     <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
+    <import index="idt7" ref="43809d33-d5e3-4390-917e-3944cb211ee3/f:java_stub#43809d33-d5e3-4390-917e-3944cb211ee3#com.bulenkov.iconloader(org.campagnelab.icons/com.bulenkov.iconloader@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -217,6 +224,11 @@
       </concept>
       <concept id="1135156181802355102" name="org.campagnelab.ui.structure.ButtonNodeParameter" flags="ng" index="1VaYGm" />
     </language>
+    <language id="43809d33-d5e3-4390-917e-3944cb211ee3" name="org.campagnelab.icons">
+      <concept id="2792722825445484721" name="org.campagnelab.icons.structure.EditorCell_Icon" flags="ng" index="3o31oH">
+        <property id="2792722825445855536" name="iconPath" index="3o4IYG" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -272,8 +284,8 @@
     <property role="3GE5qa" value="containers" />
     <ref role="1XX52x" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
     <node concept="3EZMnI" id="1D6dZ$xcXKs" role="2wV5jI">
-      <node concept="1u4HXA" id="1D6dZ$xcXKt" role="3EZMnx">
-        <property role="1ubRXE" value="${module}/icons/docker-logo-loggedout.png" />
+      <node concept="3o31oH" id="658HJWiqz86" role="3EZMnx">
+        <property role="3o4IYG" value="${module}/icons/docker-logo-loggedout.png" />
       </node>
       <node concept="3F0ifn" id="1D6dZ$xcXKu" role="3EZMnx">
         <property role="3F0ifm" value=" " />

@@ -121,6 +121,7 @@
     <dependency reexport="true">c1ba4037-e4db-47d8-8b61-b3c805b648f2(org.campagnelab.ui)</dependency>
     <dependency reexport="false">3b74e3b7-7336-414d-8899-64a293a44a07(org.campagnelab.docker.bash)</dependency>
     <dependency reexport="false">3b3d39a8-ff6e-47f3-9c9e-1888a27699ed(org.campagnelab.util)</dependency>
+    <dependency reexport="false">43809d33-d5e3-4390-917e-3944cb211ee3(org.campagnelab.icons)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>c1ba4037-e4db-47d8-8b61-b3c805b648f2(org.campagnelab.ui)</usedLanguage>
@@ -132,6 +133,10 @@
     <usedLanguage>c1d262c7-5fba-470b-a7ad-87f5e0ae0a99(org.campagnelab.nyosh.functions)</usedLanguage>
     <usedLanguage>af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)</usedLanguage>
     <usedLanguage>f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)</usedLanguage>
+    <usedLanguage>443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)</usedLanguage>
+    <usedLanguage>43809d33-d5e3-4390-917e-3944cb211ee3(org.campagnelab.icons)</usedLanguage>
+    <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
+    <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -173,6 +178,7 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
     <language id="a21a7294-c126-4f63-8335-8fecd8c28c7e" fqName="org.campagnelab.NYoSh" version="0" />
     <language id="20d83b64-d10f-48d1-990d-513b574c4956" fqName="org.campagnelab.background" version="0" />
+    <language id="43809d33-d5e3-4390-917e-3944cb211ee3" fqName="org.campagnelab.icons" version="0" />
     <language id="c1d262c7-5fba-470b-a7ad-87f5e0ae0a99" fqName="org.campagnelab.nyosh.functions" version="0" />
     <language id="c6567f13-87ab-4686-8f6f-42e8228c0e27" fqName="org.campagnelab.nyosh.gstring" version="0" />
     <language id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" fqName="org.campagnelab.ui" version="0" />

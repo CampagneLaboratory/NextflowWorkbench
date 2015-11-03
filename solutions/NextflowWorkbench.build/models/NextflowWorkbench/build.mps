@@ -2783,6 +2783,12 @@
             <ref role="3bR37D" to="t9i9:nhsmU5vDUv" resolve="org.campagnelab.util" />
           </node>
         </node>
+        <node concept="1SiIV0" id="10vX8P_6xuE" role="3bR37C">
+          <node concept="3bR9La" id="10vX8P_6xuF" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="3voMOJEmfkq" resolve="org.campagnelab.icons" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2yVjOHGmOYJ" role="2G$12L">
         <property role="BnDLt" value="true" />
