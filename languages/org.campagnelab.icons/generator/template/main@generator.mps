@@ -765,13 +765,13 @@
                         <ref role="37wK5l" to="nu8v:~EditorCell.setSubstituteInfo(jetbrains.mps.openapi.editor.cells.SubstituteInfo):void" resolve="setSubstituteInfo" />
                         <node concept="10Nm6u" id="13c7lpEz_AL" role="37wK5m" />
                       </node>
-                      <node concept="37vLTw" id="2r1JDNZ4obM" role="2Oq$k0">
+                      <node concept="37vLTw" id="2SlbsWQv8d0" role="2Oq$k0">
                         <ref role="3cqZAo" node="g_ulJfm" resolve="editorCell" />
                       </node>
                     </node>
                   </node>
                   <node concept="3cpWs6" id="g_ulJgv" role="3cqZAp">
-                    <node concept="37vLTw" id="3GM_nagTAHl" role="3cqZAk">
+                    <node concept="37vLTw" id="2SlbsWQv8nc" role="3cqZAk">
                       <ref role="3cqZAo" node="g_ulJfm" resolve="editorCell" />
                     </node>
                   </node>
@@ -841,7 +841,7 @@
                           <ref role="37wK5l" to="nu8v:~EditorCell.setSubstituteInfo(jetbrains.mps.openapi.editor.cells.SubstituteInfo):void" resolve="setSubstituteInfo" />
                           <node concept="10Nm6u" id="7d7$fAszvRM" role="37wK5m" />
                         </node>
-                        <node concept="37vLTw" id="7d7$fAszvRN" role="2Oq$k0">
+                        <node concept="37vLTw" id="2SlbsWQv8OH" role="2Oq$k0">
                           <ref role="3cqZAo" node="g_ulJfm" resolve="editorCell" />
                         </node>
                       </node>

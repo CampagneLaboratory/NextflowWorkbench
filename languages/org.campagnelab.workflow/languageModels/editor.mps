@@ -338,7 +338,7 @@
       <node concept="3F0ifn" id="6tX5nBTaKMR" role="3EZMnx">
         <property role="3F0ifm" value="Process " />
       </node>
-      <node concept="3o31oH" id="2r1JDNYQla1" role="3EZMnx">
+      <node concept="3o31oH" id="2SlbsWQtOVV" role="3EZMnx">
         <property role="3o4IYG" value="${module}/icons/ProcessIcon-5.png" />
       </node>
       <node concept="3F0A7n" id="6tX5nBTaKMX" role="3EZMnx">
