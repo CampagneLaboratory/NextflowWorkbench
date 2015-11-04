@@ -3190,12 +3190,6 @@
               <ref role="3bR37D" node="3voMOJEmfkq" resolve="org.campagnelab.icons" />
             </node>
           </node>
-          <node concept="1SiIV0" id="3voMOJEmgcF" role="3bR37C">
-            <node concept="3bR9La" id="3voMOJEmgcG" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="ffeo:7YI57w6K0iE" resolve="jetbrains.mps.lang.editor#1129914002149" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="3voMOJEmgcH" role="3bR37C">
             <node concept="3bR9La" id="3voMOJEmgcI" role="1SiIV1">
               <property role="3bR36h" value="false" />
