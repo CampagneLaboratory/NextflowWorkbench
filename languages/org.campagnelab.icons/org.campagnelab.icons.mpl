@@ -32,6 +32,7 @@
         <usedLanguage>774bf8a0-62e5-41e1-af63-f4812e60e48b(jetbrains.mps.baseLanguage.checkedDots)</usedLanguage>
         <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
         <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
+        <usedLanguage>18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -59,7 +60,7 @@
         <language id="43809d33-d5e3-4390-917e-3944cb211ee3" fqName="org.campagnelab.icons" version="-1" />
       </languageVersions>
       <mapping-priorities>
-        <mapping-priority-rule kind="strictly_together">
+        <mapping-priority-rule kind="before_or_together">
           <greater-priority-mapping>
             <generator generatorUID="659f8f73-921e-4928-a676-8455423b8a6e(org.campagnelab.icons#2792722825445473265)" />
             <external-mapping>

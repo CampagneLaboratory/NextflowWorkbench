@@ -388,6 +388,7 @@
         <child id="8369613327464344471" name="inChannel" index="1uLvPH" />
       </concept>
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
+        <property id="959054848701206656" name="description" index="2PJaZd" />
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
@@ -8437,6 +8438,7 @@
   </node>
   <node concept="2$rMIF" id="4yLR7SApRY_">
     <property role="TrG5h" value="PseudoCounts" />
+    <property role="2PJaZd" value="232" />
     <node concept="2UNLhE" id="1CWHgioSOWJ" role="2UW718">
       <ref role="2UNLhW" node="4yLR7SAvYnr" resolve="tsv" />
       <node concept="2UPiyC" id="1CWHgioSOWK" role="2UNLhY">

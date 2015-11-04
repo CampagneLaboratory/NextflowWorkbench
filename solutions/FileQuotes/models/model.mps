@@ -71,6 +71,7 @@
         <child id="8369613327464344476" name="outChannel" index="1uLvPA" />
       </concept>
       <concept id="6505336652526301852" name="org.campagnelab.workflow.structure.Workflow" flags="ng" index="2$rMIF">
+        <property id="959054848701206656" name="description" index="2PJaZd" />
         <child id="6505336652526334573" name="processes" index="2$rEHq" />
       </concept>
       <concept id="1131453450772026527" name="org.campagnelab.workflow.structure.BaseLanguageScriptAdapter" flags="ng" index="UAUTO">
@@ -134,6 +135,7 @@
   </node>
   <node concept="2$rMIF" id="3OzmMkAsAdz">
     <property role="TrG5h" value="Testing" />
+    <property role="2PJaZd" value="sdsd" />
     <node concept="2$rEH5" id="3OzmMkAsAdA" role="2$rEHq">
       <ref role="2$rEH4" node="3OzmMkAsAcg" resolve="FileExample" />
       <node concept="1uLkD0" id="3OzmMkAsAdC" role="1uLvPA">

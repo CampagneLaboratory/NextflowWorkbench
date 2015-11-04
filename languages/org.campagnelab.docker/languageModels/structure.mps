@@ -71,6 +71,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="containers" />
     <property role="34LRSv" value="DockerContainer" />
+    <property role="MwhBj" value="${module}/icons/docker-logo-loggedout.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1D6dZ$xfiv_" role="1TKVEl">
       <property role="TrG5h" value="tag" />
