@@ -195,9 +195,11 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
+      <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -354,7 +356,7 @@
                                   <ref role="37wK5l" to="e2lb:~String.substring(int):java.lang.String" resolve="substring" />
                                   <node concept="2OqwBi" id="10vX8P$ZBSC" role="37wK5m">
                                     <node concept="Xl_RD" id="10vX8P$ZBuN" role="2Oq$k0">
-                                      <property role="Xl_RC" value="${module}" />
+                                      <property role="Xl_RC" value="${module}/icons" />
                                     </node>
                                     <node concept="liA8E" id="10vX8P$ZCIW" role="2OqNvi">
                                       <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
@@ -375,7 +377,7 @@
                           <node concept="liA8E" id="10vX8P$ZvLY" role="2OqNvi">
                             <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                             <node concept="Xl_RD" id="10vX8P$ZvMQ" role="37wK5m">
-                              <property role="Xl_RC" value="${module}" />
+                              <property role="Xl_RC" value="${module}/icons" />
                             </node>
                           </node>
                         </node>
@@ -391,11 +393,17 @@
                             <node concept="37vLTw" id="10vX8P_42sh" role="37wK5m">
                               <ref role="3cqZAo" node="2r1JDNYPAR6" resolve="iconPath" />
                             </node>
-                            <node concept="2OqwBi" id="55$4TKyxMlI" role="37wK5m">
-                              <node concept="37vLTw" id="55$4TKyzxN9" role="2Oq$k0">
-                                <ref role="3cqZAo" node="g_vwM8g" resolve="language" />
+                            <node concept="2OqwBi" id="7lnBTNvjgMl" role="37wK5m">
+                              <node concept="2OqwBi" id="7lnBTNvjgqr" role="2Oq$k0">
+                                <node concept="2OqwBi" id="7lnBTNvjg2J" role="2Oq$k0">
+                                  <node concept="37vLTw" id="7lnBTNvjg0F" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="g_ulJg$" resolve="node" />
+                                  </node>
+                                  <node concept="2yIwOk" id="7lnBTNvjgit" role="2OqNvi" />
+                                </node>
+                                <node concept="1rGIog" id="7lnBTNvjgAh" role="2OqNvi" />
                               </node>
-                              <node concept="liA8E" id="55$4TKyxNAe" role="2OqNvi">
+                              <node concept="liA8E" id="7lnBTNvjh8P" role="2OqNvi">
                                 <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
                               </node>
                             </node>
