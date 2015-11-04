@@ -33,6 +33,7 @@
     <import index="idt7" ref="43809d33-d5e3-4390-917e-3944cb211ee3/f:java_stub#43809d33-d5e3-4390-917e-3944cb211ee3#com.bulenkov.iconloader(org.campagnelab.icons/com.bulenkov.iconloader@java_stub)" />
     <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="d11s" ref="r:d74f2f7e-2816-4fd7-af86-7bd21e33c1eb(org.campagnelab.icons.swing)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -948,25 +949,14 @@
               </node>
             </node>
           </node>
-          <node concept="3cpWs8" id="36p77PJbvSP" role="3cqZAp">
-            <node concept="3cpWsn" id="36p77PJbvSQ" role="3cpWs9">
-              <property role="TrG5h" value="component" />
-              <node concept="3uibUv" id="36p77PJbvSR" role="1tU5fm">
-                <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
-              </node>
-              <node concept="2ShNRf" id="36p77PJbw2a" role="33vP2m">
-                <node concept="1pGfFk" id="36p77PJbQG5" role="2ShVmc">
-                  <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(javax.swing.Icon)" resolve="JLabel" />
-                  <node concept="37vLTw" id="1X0yGobic2U" role="37wK5m">
-                    <ref role="3cqZAo" node="1X0yGobi708" resolve="icon" />
-                  </node>
+          <node concept="3clFbF" id="1X0yGobKvrv" role="3cqZAp">
+            <node concept="2ShNRf" id="1X0yGobKvrr" role="3clFbG">
+              <node concept="1pGfFk" id="1X0yGobKwA6" role="2ShVmc">
+                <ref role="37wK5l" to="d11s:1X0yGobKpB0" resolve="IconAdapter" />
+                <node concept="37vLTw" id="1X0yGobKwV8" role="37wK5m">
+                  <ref role="3cqZAo" node="1X0yGobi708" resolve="icon" />
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="36p77PJbXrB" role="3cqZAp">
-            <node concept="37vLTw" id="36p77PJbXr_" role="3clFbG">
-              <ref role="3cqZAo" node="36p77PJbvSQ" resolve="component" />
             </node>
           </node>
         </node>

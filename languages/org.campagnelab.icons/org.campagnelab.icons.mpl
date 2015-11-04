@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="org.campagnelab.icons" uuid="43809d33-d5e3-4390-917e-3944cb211ee3" version="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="languageModels" />
-    </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="iconloader.jar" />
     </modelRoot>
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+      <sourceRoot location="languageAccessories" />
+    </modelRoot>
   </models>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="r:d74f2f7e-2816-4fd7-af86-7bd21e33c1eb(org.campagnelab.icons.swing)" />
+  </accessoryModels>
   <generators>
     <generator name="" generatorUID="org.campagnelab.icons#2792722825445473265" uuid="659f8f73-921e-4928-a676-8455423b8a6e">
       <models>
@@ -84,6 +87,7 @@
   <dependencies>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false" scope="generate-into">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
+    <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)</usedLanguage>
@@ -92,6 +96,7 @@
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
+    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
   </usedDevKits>
   <languageVersions>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
