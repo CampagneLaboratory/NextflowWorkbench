@@ -32,7 +32,6 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
-      <concept id="1176899348742" name="jetbrains.mps.lang.editor.structure.QueryFunction_ImagePath" flags="in" index="4EIwk" />
       <concept id="1164052439493" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_MatchingText" flags="in" index="6VE3a" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
@@ -89,10 +88,6 @@
       </concept>
       <concept id="1165420626554" name="jetbrains.mps.lang.editor.structure.CellMenuPart_Generic_Group_Handler" flags="in" index="1ouSdP" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
-      <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
-        <property id="1139746504291" name="imageFile" index="1ubRXE" />
-        <child id="1176899909521" name="imagePathProvider" index="4GRq3" />
-      </concept>
       <concept id="1227861515039" name="jetbrains.mps.lang.editor.structure.NavigatableReferenceStyleClassItem" flags="ln" index="3yfXC2">
         <reference id="1227861587090" name="link" index="3ygfmf" />
       </concept>
@@ -144,7 +139,6 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -154,13 +148,6 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -181,25 +168,16 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
-        <child id="1068581517676" name="expression" index="3cqZAk" />
-      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
-      </concept>
-      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
-        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -240,9 +218,6 @@
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
-      <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
-        <property id="4040588429969021683" name="moduleId" index="3rM5sR" />
-      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -657,11 +632,8 @@
       <node concept="3F0ifn" id="7MTH03mbOUz" role="3EZMnx">
         <property role="3F0ifm" value="docker image" />
       </node>
-      <node concept="1u4HXA" id="3DjWPY70EAe" role="3EZMnx">
-        <property role="1ubRXE" value="${module}/icons/DockerImage-1.png" />
-      </node>
-      <node concept="3F0ifn" id="3DjWPY71oij" role="3EZMnx">
-        <property role="3F0ifm" value=" " />
+      <node concept="3o31oH" id="1X0yGob$pgD" role="3EZMnx">
+        <property role="3o4IYG" value="${module}/icons/DockerImage-1.png" />
       </node>
       <node concept="3F0A7n" id="7MTH03mbOUQ" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1019,35 +991,8 @@
     <ref role="1XX52x" to="6jv6:5U_2ytMywfJ" resolve="RunningContainer" />
     <node concept="3EZMnI" id="1hjSjLb2hyx" role="2wV5jI">
       <node concept="l2Vlx" id="1hjSjLb2hyy" role="2iSdaV" />
-      <node concept="1u4HXA" id="VMSWAFpUbI" role="3EZMnx">
-        <node concept="4EIwk" id="7TQwRAdtPJn" role="4GRq3">
-          <node concept="3clFbS" id="7TQwRAdtPJo" role="2VODD2">
-            <node concept="3cpWs6" id="1y9U$Fzl4gw" role="3cqZAp">
-              <node concept="2OqwBi" id="7TQwRAdvX1K" role="3cqZAk">
-                <node concept="2YIFZM" id="7TQwRAdvW1K" role="2Oq$k0">
-                  <ref role="37wK5l" to="msyo:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
-                  <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
-                  <node concept="1eOMI4" id="1y9U$Fzm8Ua" role="37wK5m">
-                    <node concept="10QFUN" id="1y9U$Fzm8U7" role="1eOMHV">
-                      <node concept="3uibUv" id="1y9U$Fzm8Um" role="10QFUM">
-                        <ref role="3uigEE" to="vsqj:~AbstractModule" resolve="AbstractModule" />
-                      </node>
-                      <node concept="3rM5sP" id="1y9U$FzltqV" role="10QFUP">
-                        <property role="3rM5sR" value="25281c03-4a7c-4b57-9221-24a10fc36ef5" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="7TQwRAdvXiB" role="2OqNvi">
-                  <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
-                  <node concept="Xl_RD" id="7TQwRAdvXjb" role="37wK5m">
-                    <property role="Xl_RC" value="${module}/icons/docker-logo-loggedout.png" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="3o31oH" id="1X0yGob$oks" role="3EZMnx">
+        <property role="3o4IYG" value="${module}/icons/docker-logo-loggedout.png" />
       </node>
       <node concept="1QoScp" id="VMSWAF516I" role="3EZMnx">
         <property role="1QpmdY" value="true" />
