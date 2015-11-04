@@ -31,7 +31,6 @@
     <import index="8d8y" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.util(MPS.IDEA/com.intellij.openapi.util@java_stub)" />
     <import index="idt7" ref="43809d33-d5e3-4390-917e-3944cb211ee3/f:java_stub#43809d33-d5e3-4390-917e-3944cb211ee3#com.bulenkov.iconloader(org.campagnelab.icons/com.bulenkov.iconloader@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="x8n1" ref="f:diff_old#r:1a305e9f-d8d0-4f6d-b96b-64bea0b4b899(org.campagnelab.icons.generator.template.main@generator@old)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -386,7 +385,7 @@
                   <node concept="3clFbJ" id="7d7$fAsHyxx" role="3cqZAp">
                     <node concept="2OqwBi" id="7d7$fAsHz5F" role="3clFbw">
                       <node concept="37vLTw" id="7d7$fAsHyRZ" role="2Oq$k0">
-                        <ref role="3cqZAo" to="x8n1:g_vwM8g" resolve="language" />
+                        <ref role="3cqZAo" node="g_vwM8g" resolve="language" />
                       </node>
                       <node concept="liA8E" id="7d7$fAsHAe7" role="2OqNvi">
                         <ref role="37wK5l" to="vsqj:~AbstractModule.isReadOnly():boolean" resolve="isReadOnly" />
