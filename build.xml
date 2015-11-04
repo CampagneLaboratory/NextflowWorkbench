@@ -651,6 +651,9 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.icons-generator-template">
       <fileset dir="${basedir}/languages/org.campagnelab.icons/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.icons-languageAccessories">
+      <fileset dir="${basedir}/languages/org.campagnelab.icons/languageAccessories" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.icons-languageModels">
       <fileset dir="${basedir}/languages/org.campagnelab.icons/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
@@ -665,6 +668,7 @@
       </fileset>
       <zipfileset file="${basedir}/languages/org.campagnelab.icons/org.campagnelab.icons.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.icons-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.icons-languageAccessories" prefix="module/languageAccessories" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.icons-languageModels" prefix="module/languageModels" />
     </jar>
     <mkdir dir="${build.tmp}/default/org.campagnelab.workflow.Samples.jar" />
