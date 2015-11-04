@@ -55,7 +55,7 @@
   </registry>
   <node concept="1TIwiD" id="1D6dZ$xcXJU">
     <property role="TrG5h" value="ImageInfoForDockerContainer" />
-    <property role="MwhBj" value="${module}/icons/RunningDockerContainer-1.png" />
+    <property role="MwhBj" value="${module}/icons/RunningContainer-2.png" />
     <property role="3GE5qa" value="containers" />
     <property role="34LRSv" value="image info" />
     <property role="R4oN_" value="Information about a Docker image, sufficient to pull and run with the image" />
@@ -93,7 +93,7 @@
     <property role="TrG5h" value="Dockerfile" />
     <property role="R4oN_" value="A recipe to construct a docker container" />
     <property role="19KtqR" value="true" />
-    <property role="MwhBj" value="${module}/icons/paintbrush-3.png" />
+    <property role="MwhBj" value="${module}/icons/paintbrush-3@2x.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="36oLgaWGnQ0" role="1TKVEl">
       <property role="TrG5h" value="username" />

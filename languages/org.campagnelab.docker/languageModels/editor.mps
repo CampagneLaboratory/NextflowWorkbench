@@ -260,7 +260,7 @@
     <ref role="1XX52x" to="6jv6:1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
     <node concept="3EZMnI" id="1D6dZ$xcXKs" role="2wV5jI">
       <node concept="3o31oH" id="658HJWiqz86" role="3EZMnx">
-        <property role="3o4IYG" value="${module}/icons/docker-logo-loggedout.png" />
+        <property role="3o4IYG" value="${module}/icons/Docker-Horizontal-transparent-2.png" />
       </node>
       <node concept="3F0ifn" id="1D6dZ$xcXKu" role="3EZMnx">
         <property role="3F0ifm" value=" " />
@@ -992,7 +992,7 @@
     <node concept="3EZMnI" id="1hjSjLb2hyx" role="2wV5jI">
       <node concept="l2Vlx" id="1hjSjLb2hyy" role="2iSdaV" />
       <node concept="3o31oH" id="1X0yGob$oks" role="3EZMnx">
-        <property role="3o4IYG" value="${module}/icons/docker-logo-loggedout.png" />
+        <property role="3o4IYG" value="${module}/icons/Docker-Horizontal-transparent-2.png" />
       </node>
       <node concept="1QoScp" id="VMSWAF516I" role="3EZMnx">
         <property role="1QpmdY" value="true" />
