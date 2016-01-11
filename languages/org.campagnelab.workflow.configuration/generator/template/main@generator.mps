@@ -466,6 +466,15 @@
                 </node>
               </node>
             </node>
+            <node concept="2pNNFK" id="7ejpSqH5ErR" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <node concept="2pNUuL" id="7ejpSqH5EG2" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="7ejpSqH5EG5" role="2pMdts">
+                  <property role="2pMdty" value="${workflow.commandline}" />
+                </node>
+              </node>
+            </node>
             <node concept="2pNNFK" id="6qWs7gtKyb9" role="3o6s8t">
               <property role="2pNNFO" value="arg" />
               <property role="qg3DV" value="true" />
