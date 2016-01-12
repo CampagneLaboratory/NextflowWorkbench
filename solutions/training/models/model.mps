@@ -325,7 +325,7 @@
   <node concept="3zupj_" id="4xTPTl95Xbe">
     <property role="TrG5h" value="workflow.config" />
     <node concept="3zuAPI" id="4xTPTl95Xbf" role="3zupjy" />
-    <node concept="3qaZdc" id="7ejpSqHcR38" role="3qaWS2" />
+    <node concept="3qaZdc" id="7ejpSqHGW_s" role="3qaWS2" />
   </node>
   <node concept="2$rMIF" id="4xTPTl95X83">
     <property role="TrG5h" value="Take_1M_sequences" />
@@ -1096,7 +1096,7 @@
     <node concept="3Y$Zt1" id="7ejpSqH0fkw" role="2ulM7a">
       <node concept="19SGf9" id="7ejpSqH0fky" role="3Y$PkS">
         <node concept="19SUe$" id="7ejpSqH0fkz" role="19SJt6">
-          <property role="19SUeA" value=" /sw/bin/wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP044%2FSRP044286/" />
+          <property role="19SUeA" value=" wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP044%2FSRP044286/" />
         </node>
         <node concept="3YE7tV" id="7ejpSqH0fon" role="19SJt6">
           <ref role="3YE7sm" node="7ejpSqH0fk8" resolve="id" />
@@ -1111,6 +1111,12 @@
           <property role="19SUeA" value=".sra" />
         </node>
       </node>
+    </node>
+    <node concept="VtuK3" id="7ejpSqHIpjN" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="unbrokendome" />
+      <property role="GbyUj" value="centos-wget" />
+      <property role="3zaeVo" value="true" />
     </node>
   </node>
   <node concept="2$rMIF" id="7ejpSqH0ifb">
@@ -1220,13 +1226,19 @@
           <ref role="3YE7sm" node="7ejpSqH3eoN" resolve="sra" />
         </node>
         <node concept="19SUe$" id="7ejpSqH7Moj" role="19SJt6">
-          <property role="19SUeA" value=" .sra` &#10;/Applications/sratoolkit.2.5.7-mac64/bin/fastq-dump --split-files   " />
+          <property role="19SUeA" value=" .sra` &#10;fastq-dump --split-files  -X 1000000 " />
+        </node>
+        <node concept="3YE7tV" id="7ejpSqHGWAd" role="19SJt6">
+          <ref role="3YE7sm" node="7ejpSqH3eoN" resolve="sra" />
+        </node>
+        <node concept="19SUe$" id="7ejpSqHGWAe" role="19SJt6">
+          <property role="19SUeA" value="&#10;#/Applications/sratoolkit.2.5.7-mac64/bin/fastq-dump --split-files   " />
         </node>
         <node concept="3YE7tV" id="7ejpSqH3eKy" role="19SJt6">
           <ref role="3YE7sm" node="7ejpSqH3eoN" resolve="sra" />
         </node>
         <node concept="19SUe$" id="7ejpSqH3eKx" role="19SJt6">
-          <property role="19SUeA" value=" &#10; head -n 4000000  ${id}_1.fastq |gzip -c &gt; ${id}-1M_1.fastq.gz  &#10; head -n 4000000 ${id}_2.fastq |gzip -c &gt; ${id}-1M_2.fastq.gz&#10; rm *.fastq &#10; cp ${id}-1M_?.fastq.gz " />
+          <property role="19SUeA" value=" &#10; head -n 4000000  ${id}_1.fastq |gzip -c &gt; ${id}-1M_1.fastq.gz  &#10; head -n 4000000 ${id}_2.fastq |gzip -c &gt; ${id}-1M_2.fastq.gz&#10; cp ${id}-1M_?.fastq.gz " />
         </node>
         <node concept="3YE7tV" id="7ejpSqH3eoc" role="19SJt6">
           <ref role="3YE7sm" node="7ejpSqH3enN" resolve="inputDirectory" />
@@ -1235,6 +1247,12 @@
           <property role="19SUeA" value="/&#10; &#10;" />
         </node>
       </node>
+    </node>
+    <node concept="VtuK3" id="7ejpSqHGW_P" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="inutano" />
+      <property role="GbyUj" value="sra-toolkit" />
+      <property role="3zaeVo" value="true" />
     </node>
   </node>
   <node concept="2ulcR8" id="7ejpSqH8Lzx">
