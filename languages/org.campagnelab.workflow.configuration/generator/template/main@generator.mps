@@ -459,29 +459,11 @@
             </node>
             <node concept="2pNNFK" id="4Orz$oyvKgo" role="3o6s8t">
               <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
               <node concept="2pNUuL" id="4Orz$oyvKgB" role="2pNNFR">
                 <property role="2pNUuO" value="value" />
                 <node concept="2pMdtt" id="4Orz$oyvKgD" role="2pMdts">
                   <property role="2pMdty" value="run" />
-                </node>
-              </node>
-            </node>
-            <node concept="2pNNFK" id="7ejpSqH5ErR" role="3o6s8t">
-              <property role="2pNNFO" value="arg" />
-              <node concept="2pNUuL" id="7ejpSqH5EG2" role="2pNNFR">
-                <property role="2pNUuO" value="value" />
-                <node concept="2pMdtt" id="7ejpSqH5EG5" role="2pMdts">
-                  <property role="2pMdty" value="${workflow.commandline}" />
-                </node>
-              </node>
-            </node>
-            <node concept="2pNNFK" id="6qWs7gtKyb9" role="3o6s8t">
-              <property role="2pNNFO" value="arg" />
-              <property role="qg3DV" value="true" />
-              <node concept="2pNUuL" id="6qWs7gtKygC" role="2pNNFR">
-                <property role="2pNUuO" value="value" />
-                <node concept="2pMdtt" id="6qWs7gtKygF" role="2pMdts">
-                  <property role="2pMdty" value="${workflow.script}" />
                 </node>
               </node>
             </node>
@@ -516,6 +498,56 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7ejpSqHoYDp" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="7ejpSqHoYTA" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="7ejpSqHoYTC" role="2pMdts">
+                  <property role="2pMdty" value="-lib" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7ejpSqHoZ9S" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="7ejpSqHoZq8" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="7ejpSqHoZqa" role="2pMdts">
+                  <property role="2pMdty" value="${nxf.classpath}" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7ejpSqHyP4i" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="7ejpSqHyPkC" role="2pNNFR">
+                <property role="2pNUuO" value="line" />
+                <node concept="2pMdtt" id="7ejpSqHyPkF" role="2pMdts">
+                  <property role="2pMdty" value="${nextflowOptions}" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="6qWs7gtKyb9" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="6qWs7gtKygC" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="6qWs7gtKygF" role="2pMdts">
+                  <property role="2pMdty" value="${workflow.script}" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7ejpSqH5ErR" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="7ejpSqH5EG2" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="7ejpSqH5EG5" role="2pMdts">
+                  <property role="2pMdty" value="${workflow.commandline}" />
                 </node>
               </node>
             </node>
