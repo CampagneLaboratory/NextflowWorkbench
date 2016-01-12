@@ -14,12 +14,19 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
@@ -103,6 +110,48 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7ejpSqH8LIN">
+    <property role="TrG5h" value="RScript" />
+    <property role="R4oN_" value="An RScript (text)" />
+    <property role="34LRSv" value="RScript" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="iowz:70dPcAeBye8" resolve="RichScript" />
+    <node concept="1TJgyj" id="7ejpSqH9TbI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7ejpSqHhgKq" resolve="RScriptArgument" />
+    </node>
+    <node concept="PrWs8" id="7ejpSqHai_Z" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ejpSqH9SWf">
+    <property role="TrG5h" value="RScriptArgumentInput" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7ejpSqH9Tbk" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="input" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="iowz:2fLVrqPJSZI" resolve="ProcessInput" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ejpSqHgRwA">
+    <property role="TrG5h" value="RScriptArgumentTuple" />
+    <ref role="1TJDcQ" node="7ejpSqHhgKq" resolve="RScriptArgument" />
+    <node concept="1TJgyj" id="7ejpSqHgRwB" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="input" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="iowz:6qiI2N5sbyo" resolve="TupleElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ejpSqHhgKq">
+    <property role="TrG5h" value="RScriptArgument" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
