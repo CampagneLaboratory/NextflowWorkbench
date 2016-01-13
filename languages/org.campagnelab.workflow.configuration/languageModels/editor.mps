@@ -388,6 +388,12 @@
         <node concept="pVoyu" id="1nj$XVg1IeO" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="lj46D" id="5G7wwTNF2f4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="5G7wwTNF2f9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="5KN4KqZiCvW" role="2iSdaV" />
     </node>
@@ -469,21 +475,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="1nj$XVfYNtg">
-    <ref role="1XX52x" to="dlwq:1nj$XVfY5RF" resolve="ContainerOption" />
-    <node concept="3EZMnI" id="1nj$XVg27uk" role="2wV5jI">
-      <node concept="l2Vlx" id="1nj$XVg27ul" role="2iSdaV" />
-      <node concept="3F0ifn" id="1nj$XVg27uS" role="3EZMnx">
-        <property role="3F0ifm" value="    " />
-      </node>
-      <node concept="PMmxH" id="1nj$XVfYNRR" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <node concept="lj46D" id="1nj$XVg27uy" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="2Hxg8Ag1XNZ">
     <property role="3GE5qa" value="processOptions" />
     <ref role="1XX52x" to="dlwq:5KN4KqYYwDS" resolve="Memory" />
@@ -506,6 +497,24 @@
         <ref role="1NtTu8" to="dlwq:2Hxg8Ag1XNQ" resolve="unit" />
         <ref role="1k5W1q" node="3ftTtbydPOt" resolve="Keyword" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5G7wwTNBO3g">
+    <ref role="1XX52x" to="dlwq:5G7wwTNBNZh" resolve="DockerMountDirectiveOption" />
+    <node concept="3EZMnI" id="5G7wwTNBOxQ" role="2wV5jI">
+      <node concept="3F0ifn" id="5G7wwTNBOxX" role="3EZMnx">
+        <property role="3F0ifm" value="mount local path:" />
+      </node>
+      <node concept="3F0A7n" id="5G7wwTNBOy3" role="3EZMnx">
+        <ref role="1NtTu8" to="dlwq:5G7wwTNBO36" resolve="localPath" />
+      </node>
+      <node concept="3F0ifn" id="5G7wwTNBOyb" role="3EZMnx">
+        <property role="3F0ifm" value="container path:" />
+      </node>
+      <node concept="3F0A7n" id="5G7wwTNBOyl" role="3EZMnx">
+        <ref role="1NtTu8" to="dlwq:5G7wwTNBO38" resolve="containerPath" />
+      </node>
+      <node concept="l2Vlx" id="5G7wwTNBOxT" role="2iSdaV" />
     </node>
   </node>
 </model>

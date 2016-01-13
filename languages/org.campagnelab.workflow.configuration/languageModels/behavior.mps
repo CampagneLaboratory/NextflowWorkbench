@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,7 +18,11 @@
         <child id="1225194240801" name="constructor" index="13h7CW" />
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
-      <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz" />
+      <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="1225194472832" name="isVirtual" index="13i0it" />
+        <property id="1225194472834" name="isAbstract" index="13i0iv" />
+        <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
+      </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -40,6 +45,7 @@
       </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -50,8 +56,13 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -63,6 +74,23 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
+        <child id="5858074156537516440" name="return" index="x79VK" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -92,6 +120,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -288,6 +317,93 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5G7wwTND6_m">
+    <ref role="13h7C2" to="dlwq:1nj$XVfY5RF" resolve="ContainerOption" />
+    <node concept="13i0hz" id="5G7wwTND6AI" role="13h7CS">
+      <property role="TrG5h" value="toEngineOption" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="5G7wwTND6AJ" role="1B3o_S" />
+      <node concept="3clFbS" id="5G7wwTND6AK" role="3clF47" />
+      <node concept="17QB3L" id="5G7wwTND6AQ" role="3clF45" />
+      <node concept="P$JXv" id="5G7wwTND6AT" role="lGtFl">
+        <node concept="TZ5HA" id="5G7wwTND6AU" role="TZ5H$">
+          <node concept="1dT_AC" id="5G7wwTND6AV" role="1dT_Ay">
+            <property role="1dT_AB" value="Return a text formatted option, to insert as an engine option (e.g., -v mount:path for mount docker engine option)." />
+          </node>
+        </node>
+        <node concept="x79VA" id="5G7wwTND6AW" role="x79VK">
+          <property role="x79VB" value="formatted engine option." />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="5G7wwTND6_n" role="13h7CW">
+      <node concept="3clFbS" id="5G7wwTND6_o" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5G7wwTND6CI">
+    <ref role="13h7C2" to="dlwq:1nj$XVfY62i" resolve="WithDocker" />
+    <node concept="13hLZK" id="5G7wwTND6CJ" role="13h7CW">
+      <node concept="3clFbS" id="5G7wwTND6CK" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5G7wwTND6CL" role="13h7CS">
+      <property role="TrG5h" value="toEngineOption" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="5G7wwTND6AI" resolve="toEngineOption" />
+      <node concept="3Tm1VV" id="5G7wwTND6CM" role="1B3o_S" />
+      <node concept="3clFbS" id="5G7wwTND6CT" role="3clF47">
+        <node concept="3clFbF" id="5G7wwTND6Fn" role="3cqZAp">
+          <node concept="Xl_RD" id="5G7wwTND6Fm" role="3clFbG">
+            <property role="Xl_RC" value="" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5G7wwTND6CU" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5G7wwTND6Fw">
+    <ref role="13h7C2" to="dlwq:5G7wwTNBNZh" resolve="DockerMountDirectiveOption" />
+    <node concept="13hLZK" id="5G7wwTND6Fx" role="13h7CW">
+      <node concept="3clFbS" id="5G7wwTND6Fy" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5G7wwTND6Fz" role="13h7CS">
+      <property role="TrG5h" value="toEngineOption" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="5G7wwTND6AI" resolve="toEngineOption" />
+      <node concept="3Tm1VV" id="5G7wwTND6F$" role="1B3o_S" />
+      <node concept="3clFbS" id="5G7wwTND6FF" role="3clF47">
+        <node concept="3clFbF" id="5G7wwTND6FM" role="3cqZAp">
+          <node concept="3cpWs3" id="5G7wwTND7ZQ" role="3clFbG">
+            <node concept="2OqwBi" id="5G7wwTND84E" role="3uHU7w">
+              <node concept="13iPFW" id="5G7wwTND80a" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5G7wwTND8pY" role="2OqNvi">
+                <ref role="3TsBF5" to="dlwq:5G7wwTNBO38" resolve="containerPath" />
+              </node>
+            </node>
+            <node concept="3cpWs3" id="5G7wwTND7MO" role="3uHU7B">
+              <node concept="3cpWs3" id="5G7wwTND6Rv" role="3uHU7B">
+                <node concept="Xl_RD" id="5G7wwTND6FL" role="3uHU7B">
+                  <property role="Xl_RC" value="--volume=" />
+                </node>
+                <node concept="2OqwBi" id="5G7wwTND6VG" role="3uHU7w">
+                  <node concept="13iPFW" id="5G7wwTND6RH" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5G7wwTND74U" role="2OqNvi">
+                    <ref role="3TsBF5" to="dlwq:5G7wwTNBO36" resolve="localPath" />
+                  </node>
+                </node>
+              </node>
+              <node concept="Xl_RD" id="5G7wwTND7MR" role="3uHU7w">
+                <property role="Xl_RC" value=":" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5G7wwTND6FG" role="3clF45" />
     </node>
   </node>
 </model>

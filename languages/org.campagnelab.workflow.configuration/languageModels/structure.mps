@@ -424,5 +424,17 @@
       <property role="1uS6qv" value="PB" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5G7wwTNBNZh">
+    <property role="TrG5h" value="DockerMountDirectiveOption" />
+    <ref role="1TJDcQ" node="1nj$XVfY5RF" resolve="ContainerOption" />
+    <node concept="1TJgyi" id="5G7wwTNBO36" role="1TKVEl">
+      <property role="TrG5h" value="localPath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5G7wwTNBO38" role="1TKVEl">
+      <property role="TrG5h" value="containerPath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
