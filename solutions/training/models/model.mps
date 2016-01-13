@@ -154,8 +154,8 @@
       <concept id="8328113964066216883" name="org.campagnelab.workflow.languages.structure.RScript" flags="ng" index="3uG7KP">
         <child id="8328113964066509550" name="arguments" index="3uHflC" />
       </concept>
-      <concept id="8328113964068337702" name="org.campagnelab.workflow.languages.structure.RScriptArgumentTuple" flags="ng" index="3uO1Yw">
-        <reference id="8328113964068337703" name="input" index="3uO1Yx" />
+      <concept id="8328113964066508559" name="org.campagnelab.workflow.languages.structure.RScriptArgumentInput" flags="ng" index="3uHey9">
+        <reference id="8328113964066509524" name="input" index="3uHfli" />
       </concept>
     </language>
     <language id="5cf93bc1-d0da-4893-b739-63b17fe296b1" name="org.campagnelab.workflow.nyosh">
@@ -219,6 +219,10 @@
       </concept>
     </language>
     <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
+      <concept id="6559354380869386193" name="org.campagnelab.workflow.configuration.structure.DockerMountDirectiveOption" flags="ng" index="CAbRv">
+        <property id="6559354380869386440" name="containerPath" index="CAcb6" />
+        <property id="6559354380869386438" name="localPath" index="CAcb8" />
+      </concept>
       <concept id="1572763280063619218" name="org.campagnelab.workflow.configuration.structure.WithDocker" flags="ng" index="3qaZdc" />
       <concept id="6643674795001677795" name="org.campagnelab.workflow.configuration.structure.WorkflowConfig" flags="ng" index="3zupj_">
         <child id="1572763280063618524" name="containerOptions" index="3qaWS2" />
@@ -247,23 +251,11 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="5954930966410664724" name="org.campagnelab.workflow.structure.HasExpression" flags="ng" index="20hr4X">
-        <child id="5954930966410666282" name="expression" index="20hoG3" />
-      </concept>
       <concept id="8528134073268331577" name="org.campagnelab.workflow.structure.ConstantExpression" flags="ng" index="4iA3S">
         <child id="8528134073268547180" name="expression" index="4iqEH" />
       </concept>
       <concept id="4018964125401476997" name="org.campagnelab.workflow.structure.List" flags="ng" index="kktkh">
         <child id="7391172440886351025" name="elementType" index="2y8EMt" />
-      </concept>
-      <concept id="4018964125401495568" name="org.campagnelab.workflow.structure.Tuple" flags="ng" index="knwa4">
-        <child id="7391172440899058539" name="elements" index="2zSOd7" />
-      </concept>
-      <concept id="2590112629724566341" name="org.campagnelab.workflow.structure.InputValue" flags="ng" index="2l3rVN">
-        <reference id="2590112629724567366" name="input" index="2l3rFK" />
-      </concept>
-      <concept id="2590112629719316315" name="org.campagnelab.workflow.structure.OutputExpression" flags="ng" index="2lntFH">
-        <child id="2590112629719316376" name="expression" index="2lntCI" />
       </concept>
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
@@ -273,7 +265,6 @@
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
       </concept>
-      <concept id="7391172440898975896" name="org.campagnelab.workflow.structure.TupleElement" flags="ng" index="2zSw2O" />
       <concept id="6505336652526334578" name="org.campagnelab.workflow.structure.ProcessRef" flags="ng" index="2$rEH5">
         <reference id="6505336652526334579" name="process" index="2$rEH4" />
         <child id="8369613327464344476" name="outChannel" index="1uLvPA" />
@@ -326,6 +317,10 @@
     <property role="TrG5h" value="workflow.config" />
     <node concept="3zuAPI" id="4xTPTl95Xbf" role="3zupjy" />
     <node concept="3qaZdc" id="7ejpSqHGW_s" role="3qaWS2" />
+    <node concept="CAbRv" id="5G7wwTNF29P" role="3qaWS2">
+      <property role="CAcb8" value="/Users/fac2003/courses/" />
+      <property role="CAcb6" value="/Users/fac2003/courses/" />
+    </node>
   </node>
   <node concept="2$rMIF" id="4xTPTl95X83">
     <property role="TrG5h" value="Take_1M_sequences" />
@@ -491,22 +486,9 @@
   </node>
   <node concept="2ulcR8" id="39rfs1g6psq">
     <property role="TrG5h" value="EstimateCounts" />
-    <node concept="2lYRya" id="7ejpSqHgQPQ" role="2ulM79">
-      <node concept="knwa4" id="7ejpSqHgQQK" role="2ybFLk">
-        <node concept="2zSw2O" id="7ejpSqHgQQM" role="2zSOd7">
-          <property role="TrG5h" value="'counts-*.tsv'" />
-          <node concept="16pRw0" id="7ejpSqHgQRM" role="2ybFLk" />
-        </node>
-        <node concept="2zSw2O" id="7ejpSqHgQYD" role="2zSOd7">
-          <property role="TrG5h" value="id" />
-          <node concept="16pbKc" id="7ejpSqHgQZt" role="2ybFLk" />
-          <node concept="2lntFH" id="7ejpSqHgR4j" role="20hoG3">
-            <node concept="2l3rVN" id="7ejpSqHgR58" role="2lntCI">
-              <ref role="2l3rFK" node="4xTPTl9e4Na" resolve="sampleId" />
-            </node>
-          </node>
-        </node>
-      </node>
+    <node concept="2lYRya" id="5G7wwTNPsM7" role="2ulM79">
+      <property role="TrG5h" value="'counts-*.tsv'" />
+      <node concept="16pRw0" id="5G7wwTNPsMG" role="2ybFLk" />
     </node>
     <node concept="2mjA9o" id="4xTPTl9e4Na" role="2ulM7n">
       <property role="TrG5h" value="sampleId" />
@@ -514,18 +496,24 @@
     </node>
     <node concept="2mjA9o" id="4xTPTl9e9h6" role="2ulM7n">
       <property role="TrG5h" value="inputDirectory" />
-      <node concept="16pRw0" id="7ejpSqHfkRM" role="2ybFLk" />
+      <node concept="16pbKc" id="5G7wwTNK8JQ" role="2ybFLk" />
     </node>
     <node concept="NgwLd" id="39rfs1g6p_x" role="2ulM7a">
       <node concept="19SGf9" id="39rfs1g6p_B" role="3Y$PkS">
         <node concept="19SUe$" id="39rfs1g6u0O" role="19SJt6">
-          <property role="19SUeA" value="&#10;SAMPLE_NAME=" />
+          <property role="19SUeA" value="ls -ltrh /Users/fac2003/courses/fastq&#10;SAMPLE_NAME=" />
         </node>
         <node concept="3YE7tV" id="6uZiVd6KPiS" role="19SJt6">
           <ref role="3YE7sm" node="4xTPTl9e4Na" resolve="sampleId" />
         </node>
         <node concept="19SUe$" id="6uZiVd6KPiT" role="19SJt6">
-          <property role="19SUeA" value="&#10;echo &quot;Processing: &quot;${SAMPLE_NAME}&#10;basename=`basename ${SAMPLE_NAME} .fastq.gz`&#10;echo &quot;Basename= ${basename}&quot;&#10;TRANSCRIPT_INDEX=" />
+          <property role="19SUeA" value="&#10;echo &quot;Processing: &quot;${SAMPLE_NAME}&#10;basename=`basename " />
+        </node>
+        <node concept="3YE7tV" id="5G7wwTNICmq" role="19SJt6">
+          <ref role="3YE7sm" node="4xTPTl9e9h6" resolve="inputDirectory" />
+        </node>
+        <node concept="19SUe$" id="5G7wwTNICmv" role="19SJt6">
+          <property role="19SUeA" value="/${SAMPLE_NAME} .fastq.gz`&#10;echo &quot;Basename= ${basename}&quot;&#10;TRANSCRIPT_INDEX=" />
         </node>
         <node concept="1OktH4" id="6uZiVd6KV52" role="19SJt6">
           <ref role="26mB_n" node="6uZiVd6MmXk" resolve="interactive" />
@@ -981,40 +969,9 @@
   </node>
   <node concept="2$rMIF" id="6uZiVd6M0Br">
     <property role="TrG5h" value="EstimateWithKallisto" />
-    <node concept="2UNLhE" id="6uZiVd6M0Bs" role="2UW718">
-      <ref role="2UNLhW" node="6uZiVd6M0BE" resolve="result" />
-      <node concept="2UPiyC" id="6uZiVd6M0Bt" role="2UNLhY">
-        <node concept="3clFbS" id="6uZiVd6M0Bu" role="2VODD2">
-          <node concept="3clFbF" id="6uZiVd6M0Bv" role="3cqZAp">
-            <node concept="2OqwBi" id="6uZiVd6M0Bw" role="3clFbG">
-              <node concept="10M0yZ" id="6uZiVd6M0Bx" role="2Oq$k0">
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              </node>
-              <node concept="liA8E" id="6uZiVd6M0By" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.Object):void" resolve="println" />
-                <node concept="2UPiyF" id="6uZiVd6M0Bz" role="37wK5m" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1CVceo" id="4xTPTl9bhsx" role="2$L6iY">
       <property role="TrG5h" value="sampleIds" />
       <node concept="2J_sx7" id="4xTPTl9bhsy" role="2$L62I">
-        <node concept="2J_g7P" id="4xTPTl9e4ea" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514145" />
-        </node>
-        <node concept="2J_g7P" id="4xTPTl9e4e9" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514144" />
-        </node>
-        <node concept="2J_g7P" id="4xTPTl9e4e8" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514143" />
-        </node>
-        <node concept="2J_g7P" id="4xTPTl9e4e7" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514142" />
-        </node>
         <node concept="2J_g7P" id="4xTPTl9dv3R" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514141" />
         </node>
@@ -1047,11 +1004,22 @@
         </node>
       </node>
     </node>
+    <node concept="1CVceo" id="5G7wwTNLDt5" role="2$L6iY">
+      <property role="TrG5h" value="sampleIdsShort" />
+      <node concept="2J_sx7" id="5G7wwTNLDt6" role="2$L62I">
+        <node concept="2J_g7P" id="5G7wwTNLDt7" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514141" />
+        </node>
+        <node concept="2J_g7P" id="5G7wwTNLDt8" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514140" />
+        </node>
+      </node>
+    </node>
     <node concept="1CVceo" id="7ejpSqHfk9r" role="2$L6iY">
       <property role="TrG5h" value="id" />
-      <node concept="4iA3S" id="7ejpSqHfkx4" role="2$L62I">
-        <node concept="2J_rk5" id="7ejpSqHfk_W" role="4iqEH">
-          <property role="2J_rkp" value="/Users/fac2003/courses/fastq" />
+      <node concept="4iA3S" id="5G7wwTNK99c" role="2$L62I">
+        <node concept="2J_g7P" id="5G7wwTNK9gZ" role="4iqEH">
+          <property role="2J_vQ8" value="/Users/fac2003/courses/fastq3/" />
         </node>
       </node>
     </node>
@@ -1066,7 +1034,7 @@
         <property role="TrG5h" value="result" />
       </node>
       <node concept="1uYdA0" id="6uZiVd6M0BF" role="1uLvPH">
-        <ref role="1uK_4X" node="4xTPTl9bhsx" resolve="sampleIds" />
+        <ref role="1uK_4X" node="5G7wwTNLDt5" resolve="sampleIdsShort" />
       </node>
       <node concept="1uYdA0" id="4xTPTl9e9v5" role="1uLvPH">
         <ref role="1uK_4X" node="7ejpSqHfk9r" resolve="id" />
@@ -1076,7 +1044,11 @@
       <ref role="2$rEH4" node="7ejpSqH8Lzx" resolve="CombineCounts" />
       <node concept="1uYdA0" id="7ejpSqHbd$u" role="1uLvPH">
         <ref role="1uK_4X" node="6uZiVd6M0BE" resolve="result" />
-        <node concept="1yaYav" id="7ejpSqHbdCm" role="1ylr64" />
+        <node concept="1yaYav" id="5G7wwTNPs$E" role="1ylr64" />
+      </node>
+      <node concept="1uYdA0" id="5G7wwTNPrUj" role="1uLvPH">
+        <ref role="1uK_4X" node="4xTPTl9bhsx" resolve="sampleIds" />
+        <node concept="1yaYav" id="5G7wwTNPsSy" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="7ejpSqHbd$v" role="1uLvPA">
         <property role="TrG5h" value="combined" />
@@ -1096,7 +1068,7 @@
     <node concept="3Y$Zt1" id="7ejpSqH0fkw" role="2ulM7a">
       <node concept="19SGf9" id="7ejpSqH0fky" role="3Y$PkS">
         <node concept="19SUe$" id="7ejpSqH0fkz" role="19SJt6">
-          <property role="19SUeA" value=" wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP044%2FSRP044286/" />
+          <property role="19SUeA" value=" # assert that the output directory is mounted:&#10; touch /Users/fac2003/courses/SRA/files2/willWriteHere&#10; wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP044%2FSRP044286/" />
         </node>
         <node concept="3YE7tV" id="7ejpSqH0fon" role="19SJt6">
           <ref role="3YE7sm" node="7ejpSqH0fk8" resolve="id" />
@@ -1108,7 +1080,13 @@
           <ref role="3YE7sm" node="7ejpSqH0fk8" resolve="id" />
         </node>
         <node concept="19SUe$" id="7ejpSqH0fou" role="19SJt6">
-          <property role="19SUeA" value=".sra" />
+          <property role="19SUeA" value=".sra&#10; cp " />
+        </node>
+        <node concept="3YE7tV" id="5G7wwTNHhf9" role="19SJt6">
+          <ref role="3YE7sm" node="7ejpSqH0fk8" resolve="id" />
+        </node>
+        <node concept="19SUe$" id="5G7wwTNHhf8" role="19SJt6">
+          <property role="19SUeA" value=".sra  /Users/fac2003/courses/SRA/files2/" />
         </node>
       </node>
     </node>
@@ -1192,8 +1170,8 @@
     <node concept="1CVceo" id="7ejpSqH0ifN" role="2$L6iY">
       <property role="TrG5h" value="inputDirectory" />
       <node concept="4iA3S" id="7ejpSqH0ifO" role="2$L62I">
-        <node concept="2J_g7P" id="7ejpSqH0ifP" role="4iqEH">
-          <property role="2J_vQ8" value="/Users/fac2003/courses/fastq" />
+        <node concept="2J_rk5" id="5G7wwTNAK1e" role="4iqEH">
+          <property role="2J_rkp" value="/Users/fac2003/courses/fastq" />
         </node>
       </node>
     </node>
@@ -1206,7 +1184,7 @@
   <node concept="2ulcR8" id="7ejpSqH3enH">
     <property role="TrG5h" value="Keep1M" />
     <node concept="2lYRya" id="7ejpSqH3epk" role="2ulM79">
-      <property role="TrG5h" value="*.fastq.gz" />
+      <property role="TrG5h" value="'*.fastq.gz'" />
       <node concept="16pRw0" id="7ejpSqH3epu" role="2ybFLk" />
     </node>
     <node concept="2mjA9o" id="7ejpSqH3eoN" role="2ulM7n">
@@ -1215,12 +1193,12 @@
     </node>
     <node concept="2mjA9o" id="7ejpSqH3enN" role="2ulM7n">
       <property role="TrG5h" value="inputDirectory" />
-      <node concept="16pbKc" id="7ejpSqH3enO" role="2ybFLk" />
+      <node concept="16pRw0" id="5G7wwTNAK6z" role="2ybFLk" />
     </node>
     <node concept="3Y$Zt1" id="7ejpSqH3enP" role="2ulM7a">
       <node concept="19SGf9" id="7ejpSqH3enQ" role="3Y$PkS">
         <node concept="19SUe$" id="7ejpSqH3enR" role="19SJt6">
-          <property role="19SUeA" value="id=`basename " />
+          <property role="19SUeA" value="ls -ltr&#10;set -x&#10;id=`basename " />
         </node>
         <node concept="3YE7tV" id="7ejpSqH7Mok" role="19SJt6">
           <ref role="3YE7sm" node="7ejpSqH3eoN" resolve="sra" />
@@ -1232,19 +1210,13 @@
           <ref role="3YE7sm" node="7ejpSqH3eoN" resolve="sra" />
         </node>
         <node concept="19SUe$" id="7ejpSqHGWAe" role="19SJt6">
-          <property role="19SUeA" value="&#10;#/Applications/sratoolkit.2.5.7-mac64/bin/fastq-dump --split-files   " />
-        </node>
-        <node concept="3YE7tV" id="7ejpSqH3eKy" role="19SJt6">
-          <ref role="3YE7sm" node="7ejpSqH3eoN" resolve="sra" />
-        </node>
-        <node concept="19SUe$" id="7ejpSqH3eKx" role="19SJt6">
-          <property role="19SUeA" value=" &#10; head -n 4000000  ${id}_1.fastq |gzip -c &gt; ${id}-1M_1.fastq.gz  &#10; head -n 4000000 ${id}_2.fastq |gzip -c &gt; ${id}-1M_2.fastq.gz&#10; cp ${id}-1M_?.fastq.gz " />
+          <property role="19SUeA" value="&#10;head -n 4000000  ${id}_1.fastq |gzip -c --fast &gt; ${id}-1M_1.fastq.gz  &#10;head -n 4000000 ${id}_2.fastq |gzip -c --fast &gt; ${id}-1M_2.fastq.gz&#10;cp ${id}-1M_?.fastq.gz " />
         </node>
         <node concept="3YE7tV" id="7ejpSqH3eoc" role="19SJt6">
           <ref role="3YE7sm" node="7ejpSqH3enN" resolve="inputDirectory" />
         </node>
         <node concept="19SUe$" id="7ejpSqH3eod" role="19SJt6">
-          <property role="19SUeA" value="/&#10; &#10;" />
+          <property role="19SUeA" value="/&#10;ls -ltr &#10;" />
         </node>
       </node>
     </node>
@@ -1258,41 +1230,122 @@
   <node concept="2ulcR8" id="7ejpSqH8Lzx">
     <property role="TrG5h" value="CombineCounts" />
     <node concept="2lYRya" id="7ejpSqH8LEd" role="2ulM79">
-      <property role="TrG5h" value="matrixTsv" />
+      <property role="TrG5h" value="counts.tsv" />
       <node concept="16pRw0" id="7ejpSqH8LEn" role="2ybFLk" />
     </node>
-    <node concept="2mjA9o" id="7ejpSqH8LCc" role="2ulM7n">
-      <property role="TrG5h" value="tsvFiles" />
-      <node concept="kktkh" id="7ejpSqH8LDc" role="2ybFLk">
-        <node concept="knwa4" id="7ejpSqHgRsc" role="2y8EMt">
-          <node concept="2zSw2O" id="7ejpSqHgRse" role="2zSOd7">
-            <property role="TrG5h" value="tsv" />
-            <node concept="16pRw0" id="7ejpSqHgRsJ" role="2ybFLk" />
-          </node>
-          <node concept="2zSw2O" id="7ejpSqHgRuc" role="2zSOd7">
-            <property role="TrG5h" value="id" />
-            <node concept="16pbKc" id="7ejpSqHgRuW" role="2ybFLk" />
-          </node>
-        </node>
+    <node concept="2mjA9o" id="5G7wwTNPrBy" role="2ulM7n">
+      <property role="TrG5h" value="tsvs" />
+      <node concept="kktkh" id="5G7wwTNPrC9" role="2ybFLk">
+        <node concept="16pRw0" id="5G7wwTNPrCq" role="2y8EMt" />
+      </node>
+    </node>
+    <node concept="2mjA9o" id="5G7wwTNPrAb" role="2ulM7n">
+      <property role="TrG5h" value="ids" />
+      <node concept="kktkh" id="5G7wwTNPrAJ" role="2ybFLk">
+        <node concept="16pbKc" id="5G7wwTNPrB0" role="2y8EMt" />
       </node>
     </node>
     <node concept="3uG7KP" id="7ejpSqH9i7A" role="2ulM7a">
       <node concept="19SGf9" id="7ejpSqH9i7C" role="3Y$PkS">
         <node concept="19SUe$" id="7ejpSqH9i7D" role="19SJt6">
-          <property role="19SUeA" value="# SCRIPT adapted from http://andrewtmckenzie.com/2015/05/12/how-to-run-kallisto-on-ncbi-sra-rna-seq-data-for-differential-expression-using-the-mac-terminal/ &#10;library(limma)&#10;# arguments contain first the path to tsv files, followed by identifiers for the samples, in the same order. &#10;args =  commandArgs(trailingOnly = TRUE)&#10;sample_filenames&lt;-args[1: (length(args)/2)]&#10;sample_list_n &lt;- args[(length(args)/2+1) : length(args)];&#10;&#10;for(i in 1:length(sample_list_n)){&#10;    tmp = read.table(file = sample_filenames[i], header = TRUE) &#10;    assign(sample_list_n[i], tmp)&#10;}&#10; &#10;sample_list = mget(sample_list_n)&#10; &#10;#give the list unique names &#10;sample_list_uni = Map(function(x, i) setNames(x, ifelse(names(x) %in% &quot;target_id&quot;,&#10;      names(x), sprintf('%s.%d', names(x), i))), sample_list, seq_along(sample_list))&#10; &#10;full_kalli = Reduce(function(...) merge(..., by = &quot;target_id&quot;, all=T), sample_list_uni)&#10; &#10;tpm_vals = full_kalli[, grep(&quot;tpm&quot;, names(full_kalli))]&#10;rownames(tpm_vals) = full_kalli$target_id&#10;&#10;" />
+          <property role="19SUeA" value="# SCRIPT adapted from http://andrewtmckenzie.com/2015/05/12/how-to-run-kallisto-on-ncbi-sra-rna-seq-data-for-differential-expression-using-the-mac-terminal/ &#10;if (!require(&quot;BiocInstaller&quot;)) {&#10;  # Install bioconductor packages:&#10;  source(&quot;http://bioconductor.org/biocLite.R&quot;, local=TRUE)&#10;  biocLite(ask=FALSE, c(&quot;limma&quot;)) &#10;}&#10;if (!require(&quot;limma&quot;)) {install.packages(&quot;limma&quot;,repos='http://cran.us.r-project.org'); library(&quot;limma&quot;)}&#10;&#10;# arguments contain the paths to tsv files &#10;args =  commandArgs(trailingOnly = TRUE)&#10;sample_filenames&lt;-args&#10;sample_list_ids &lt;- args&#10;for(i in 1:length(sample_filenames)){&#10;# extract identifiers from the filenames:&#10;  sample_list_ids[i]&lt;-gsub(sample_list_ids[i], pattern=&quot;counts-&quot;, replacement=&quot;&quot;);&#10;  sample_list_ids[i]&lt;-gsub(sample_list_ids[i], pattern=&quot;.tsv&quot;, replacement=&quot;&quot;);&#10;}&#10;&#10;for(i in 1:length(sample_list_ids)){&#10;    cat(&quot;loading: &quot;); cat(sample_filenames[i])&#10;    tmp = read.table(file = sample_filenames[i], header = TRUE) &#10;    assign(sample_list_ids[i], tmp)&#10;}&#10; &#10;sample_list = mget(sample_list_ids)&#10; &#10;#give the list unique names &#10;sample_list_uni = Map(function(x, i) setNames(x, ifelse(names(x) %in% &quot;target_id&quot;,&#10;      names(x), sprintf('%s.%d', names(x), i))), sample_list, seq_along(sample_list))&#10; &#10;full_kalli = Reduce(function(...) merge(..., by = &quot;target_id&quot;, all=T), sample_list_uni)&#10; &#10;counts = full_kalli[, grep(&quot;est_counts&quot;, names(full_kalli))]&#10;# set identifiers as column names on the combined table:&#10;names(counts) &lt;- sample_list_ids;&#10;# transfer gene ids. Note the quotes around target_id are needed to prevent nextflow replacement.&#10;row.names(counts) &lt;- full_kalli\$&quot;target_id&quot;;&#10;# write the table&#10;write.table(x=counts, file=&quot;counts.tsv&quot;, quote=FALSE, sep='\t', col.names = NA)&#10;&#10;" />
         </node>
       </node>
-      <node concept="3uO1Yw" id="7ejpSqHlwZp" role="3uHflC">
-        <ref role="3uO1Yx" node="7ejpSqHgRse" resolve="tsv" />
+      <node concept="3uHey9" id="5G7wwTNPK_5" role="3uHflC">
+        <ref role="3uHfli" node="5G7wwTNPrBy" resolve="tsvs" />
       </node>
-      <node concept="3uO1Yw" id="7ejpSqHml8f" role="3uHflC">
-        <ref role="3uO1Yx" node="7ejpSqHgRuc" resolve="id" />
-      </node>
+    </node>
+    <node concept="VtuK3" id="5G7wwTNQfdV" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="fac2003" />
+      <property role="GbyUj" value="rocker-metar" />
+      <property role="3zaeVo" value="true" />
     </node>
   </node>
   <node concept="2EEQw1" id="7ejpSqHd7NO">
     <property role="2EEQw2" value="/usr/local/bin/docker" />
     <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/fac2003/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/fac2003/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/fac2003/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
+  </node>
+  <node concept="2$rMIF" id="5G7wwTNAYTs">
+    <property role="TrG5h" value="PreprocessReads" />
+    <node concept="2$rEH5" id="5G7wwTNAYTw" role="2$rEHq">
+      <ref role="2$rEH4" node="7ejpSqH3enH" resolve="Keep1M" />
+      <node concept="1uYdA0" id="5G7wwTNAYTx" role="1uLvPH">
+        <ref role="1uK_4X" node="5G7wwTNAZ6_" resolve="sraFilesCached" />
+      </node>
+      <node concept="1uYdA0" id="5G7wwTNAYTy" role="1uLvPH">
+        <ref role="1uK_4X" node="5G7wwTNAYTO" resolve="inputDirectory" />
+      </node>
+      <node concept="1uLkD0" id="5G7wwTNAYTz" role="1uLvPA">
+        <property role="TrG5h" value="out" />
+      </node>
+    </node>
+    <node concept="1CVceo" id="5G7wwTNAZ6_" role="2$L6iY">
+      <property role="TrG5h" value="sraFilesCached" />
+      <node concept="2J_sx7" id="5G7wwTNBqgw" role="2$L62I">
+        <node concept="pA3Yv" id="5G7wwTNAZoh" role="2J_sx6">
+          <ref role="pA3H2" node="5G7wwTNB0_i" resolve="SRAFilesCached" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="5G7wwTNAYTO" role="2$L6iY">
+      <property role="TrG5h" value="inputDirectory" />
+      <node concept="4iA3S" id="5G7wwTNAYTP" role="2$L62I">
+        <node concept="2J_rk5" id="5G7wwTNAYTQ" role="4iqEH">
+          <property role="2J_rkp" value="/Users/fac2003/courses/fastq" />
+        </node>
+      </node>
+    </node>
+    <node concept="19SGf9" id="5G7wwTNAYTR" role="GZ$AB">
+      <node concept="19SUe$" id="5G7wwTNAYTS" role="19SJt6">
+        <property role="19SUeA" value="My first workflow" />
+      </node>
+    </node>
+  </node>
+  <node concept="2EWdU8" id="5G7wwTNB0_i">
+    <property role="TrG5h" value="SRAFilesCached" />
+    <node concept="2EWdhe" id="5G7wwTNITEl" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514132.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEm" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514133.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEn" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514134.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEo" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514135.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEp" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514136.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEq" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514137.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEr" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514138.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEs" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514139.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEt" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514140.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEu" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514141.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEv" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514142.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEw" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514143.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEx" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514144.sra" />
+    </node>
+    <node concept="2EWdhe" id="5G7wwTNITEy" role="2EWcS1">
+      <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514145.sra" />
+    </node>
   </node>
 </model>
 

@@ -129,7 +129,7 @@
   </node>
   <node concept="1TIwiD" id="7ejpSqH9SWf">
     <property role="TrG5h" value="RScriptArgumentInput" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="7ejpSqHhgKq" resolve="RScriptArgument" />
     <node concept="1TJgyj" id="7ejpSqH9Tbk" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="input" />
