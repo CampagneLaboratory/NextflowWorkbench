@@ -54,6 +54,7 @@
       <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
         <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
         <property id="6998860900671147996" name="javaLevel" index="TZNOO" />
+        <property id="4416461515995611908" name="fork" index="1ck6Xt" />
       </concept>
       <concept id="2750015747481074431" name="jetbrains.mps.build.structure.BuildLayout_Files" flags="ng" index="2HvfSZ">
         <child id="2750015747481074432" name="path" index="2HvfZ0" />
@@ -223,7 +224,7 @@
       <node concept="aVJcg" id="3gMg70bX6HN" role="aVJcv">
         <node concept="NbPM2" id="3gMg70bX6HM" role="aVJcq">
           <node concept="3Mxwew" id="3gMg70bX6HL" role="3MwsjC">
-            <property role="3MwjfP" value="1.3.1" />
+            <property role="3MwjfP" value="1.4.0" />
           </node>
         </node>
       </node>
@@ -1198,7 +1199,7 @@
             </node>
           </node>
           <node concept="3ygNvl" id="1PXjV8YM$t2" role="39821P">
-            <ref role="3ygNvj" to="90a9:6Y0V2RJk5G9" resolve="de.itemis.mps.selection" />
+            <ref role="3ygNvj" to="90a9:6Y0V2RJk5G9" resolve="de-itemis-mps-selection" />
             <node concept="3qWCbU" id="1PXjV8YM$t3" role="1juEy9">
               <property role="3qWCbO" value="**/*.jar" />
             </node>
@@ -1219,13 +1220,13 @@
         <node concept="2pNUuL" id="7ZmC9JYEfXR" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
           <node concept="2pMdtt" id="7ZmC9JYEfXS" role="2pMdts">
-            <property role="2pMdty" value="140.1" />
+            <property role="2pMdty" value="144.1" />
           </node>
         </node>
         <node concept="2pNUuL" id="7ZmC9JYEfXT" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
           <node concept="2pMdtt" id="7ZmC9JYEfXU" role="2pMdts">
-            <property role="2pMdty" value="139.1" />
+            <property role="2pMdty" value="143.1" />
           </node>
         </node>
       </node>
@@ -1308,6 +1309,7 @@
     <node concept="2_Ic$z" id="7XryNclAk9N" role="3989C9">
       <property role="2_Ic$$" value="true" />
       <property role="TZNOO" value="1.7" />
+      <property role="1ck6Xt" value="true" />
     </node>
     <node concept="2G$12M" id="4oJiZHqTePJ" role="3989C9">
       <property role="TrG5h" value="NextflowWorkbench" />

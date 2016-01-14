@@ -1880,7 +1880,7 @@
             </node>
             <node concept="3cpWs8" id="6hgQMAA4sWd" role="3cqZAp">
               <node concept="3cpWsn" id="6hgQMAA4sWe" role="3cpWs9">
-                <property role="TrG5h" value="thisNode" />
+                <property role="TrG5h" value="__thisNode__" />
                 <property role="3TUv4t" value="true" />
                 <node concept="37vLTw" id="6hgQMAA4sWf" role="33vP2m">
                   <ref role="3cqZAo" node="5U_2ytMia5z" resolve="image" />
@@ -2290,7 +2290,7 @@
             <node concept="3clFbH" id="5U_2ytM$3qt" role="3cqZAp" />
             <node concept="3cpWs8" id="1hjSjLaYAFc" role="3cqZAp">
               <node concept="3cpWsn" id="1hjSjLaYAFi" role="3cpWs9">
-                <property role="TrG5h" value="thisNode" />
+                <property role="TrG5h" value="__thisNode__" />
                 <node concept="37vLTw" id="1hjSjLaYBzz" role="33vP2m">
                   <ref role="3cqZAo" node="5U_2ytMmDy0" resolve="image" />
                 </node>
@@ -2901,7 +2901,7 @@
             </node>
             <node concept="3cpWs8" id="1hjSjLb2M2L" role="3cqZAp">
               <node concept="3cpWsn" id="1hjSjLb2M2M" role="3cpWs9">
-                <property role="TrG5h" value="thisNode" />
+                <property role="TrG5h" value="__thisNode__" />
                 <node concept="37vLTw" id="1hjSjLb2M2O" role="33vP2m">
                   <ref role="3cqZAo" node="1hjSjLb2M5_" resolve="container" />
                 </node>
@@ -3252,7 +3252,7 @@
             </node>
             <node concept="3cpWs8" id="1hjSjLb2ZHY" role="3cqZAp">
               <node concept="3cpWsn" id="1hjSjLb2ZHZ" role="3cpWs9">
-                <property role="TrG5h" value="thisNode" />
+                <property role="TrG5h" value="__thisNode__" />
                 <node concept="37vLTw" id="1hjSjLb2ZI1" role="33vP2m">
                   <ref role="3cqZAo" node="1hjSjLb2ZJA" resolve="container" />
                 </node>
@@ -3672,7 +3672,7 @@
             </node>
             <node concept="3cpWs8" id="6aaEnU95wvk" role="3cqZAp">
               <node concept="3cpWsn" id="6aaEnU95wvq" role="3cpWs9">
-                <property role="TrG5h" value="thisNode" />
+                <property role="TrG5h" value="__thisNode__" />
                 <node concept="37vLTw" id="1iGJyHg4rWY" role="33vP2m">
                   <ref role="3cqZAo" node="7MTH03m5AMc" resolve="config" />
                 </node>
@@ -4195,7 +4195,7 @@
             </node>
             <node concept="3cpWs8" id="1BdDHvUUx49" role="3cqZAp">
               <node concept="3cpWsn" id="1BdDHvUUx4a" role="3cpWs9">
-                <property role="TrG5h" value="thisNode" />
+                <property role="TrG5h" value="__thisNode__" />
                 <node concept="37vLTw" id="1BdDHvUUx4c" role="33vP2m">
                   <ref role="3cqZAo" node="1BdDHvUUx72" resolve="imagePointer" />
                 </node>

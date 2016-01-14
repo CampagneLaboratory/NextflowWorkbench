@@ -51,13 +51,13 @@
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang()" />
-    <import index="d4yz" ref="r:9aacb4c5-da89-46f5-8c41-93d864945583(jetbrains.mps.tool.common.util)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project()" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="b0pz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.facets(MPS.Core/)" />
     <import index="5wms" ref="r:1862093e-489f-4e75-a318-b6a3a267d39c(command)" />
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" implicit="true" />
     <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" implicit="true" />
   </imports>
@@ -438,8 +438,8 @@
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="8339862546319741524" name="jetbrains.mps.lang.smodel.structure.ConceptFqNameRefExpression" flags="nn" index="3nh3qo">
-        <reference id="8339862546319741525" name="conceptDeclaration" index="3nh3qp" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
         <property id="4040588429969021683" name="moduleId" index="3rM5sR" />
@@ -795,17 +795,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="43Jx5$Dbo1S" role="3cqZAp">
-          <node concept="3cpWsn" id="43Jx5$Dbo1T" role="3cpWs9">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="isMac" />
-            <node concept="10P_77" id="43Jx5$Dbo1U" role="1tU5fm" />
-            <node concept="10M0yZ" id="43Jx5$Dbo1V" role="33vP2m">
-              <ref role="1PxDUh" to="d4yz:7vzkp06ON77" resolve="SystemInfo" />
-              <ref role="3cqZAo" to="d4yz:7vzkp06ON8T" resolve="isMac" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="43Jx5$Dbo1W" role="3cqZAp">
           <node concept="3cpWsn" id="43Jx5$Dbo1X" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -886,8 +875,8 @@
             </node>
           </node>
           <node concept="10M0yZ" id="7Bp6TkDgbAf" role="3clFbw">
-            <ref role="3cqZAo" to="d4yz:7vzkp06ON8T" resolve="isMac" />
-            <ref role="1PxDUh" to="d4yz:7vzkp06ON77" resolve="SystemInfo" />
+            <ref role="1PxDUh" to="zn9m:~SystemInfo" resolve="SystemInfo" />
+            <ref role="3cqZAo" to="zn9m:~SystemInfo.isMac" resolve="isMac" />
           </node>
           <node concept="9aQIb" id="7Bp6TkDgcWA" role="9aQIa">
             <node concept="3clFbS" id="7Bp6TkDgcWB" role="9aQI4">
@@ -3284,8 +3273,8 @@
       <node concept="2ShNRf" id="4$GDkRnU$jn" role="33vP2m">
         <node concept="yHkDB" id="5gyVhZ17JkO" role="2ShVmc">
           <ref role="yHkDA" to="awpe:7byHRlLC1PU" resolve="NodeByConcept" />
-          <node concept="3nh3qo" id="1iB3Owqpwlg" role="yHkDD">
-            <ref role="3nh3qp" to="iowz:5D7AjvYabas" resolve="Workflow" />
+          <node concept="35c_gC" id="2xiyUn39Jm4" role="yHkDD">
+            <ref role="35c_gD" to="iowz:5D7AjvYabas" resolve="Workflow" />
           </node>
           <node concept="1bVj0M" id="1iB3OwqpHDO" role="yHkDD">
             <node concept="3clFbS" id="1iB3OwqpHDQ" role="1bW5cS">
