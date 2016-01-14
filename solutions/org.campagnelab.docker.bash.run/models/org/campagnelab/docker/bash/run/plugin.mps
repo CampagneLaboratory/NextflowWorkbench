@@ -341,8 +341,8 @@
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="8339862546319741524" name="jetbrains.mps.lang.smodel.structure.ConceptFqNameRefExpression" flags="nn" index="3nh3qo">
-        <reference id="8339862546319741525" name="conceptDeclaration" index="3nh3qp" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -393,8 +393,8 @@
       <node concept="2ShNRf" id="4$GDkRnU$jn" role="33vP2m">
         <node concept="yHkDB" id="5gyVhZ17JkO" role="2ShVmc">
           <ref role="yHkDA" to="awpe:7byHRlLC1PU" resolve="NodeByConcept" />
-          <node concept="3nh3qo" id="1iB3Owqpwlg" role="yHkDD">
-            <ref role="3nh3qp" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
+          <node concept="35c_gC" id="5y6d7Rmol_O" role="yHkDD">
+            <ref role="35c_gD" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
           </node>
           <node concept="1bVj0M" id="1iB3OwqpHDO" role="yHkDD">
             <node concept="3clFbS" id="1iB3OwqpHDQ" role="1bW5cS">
