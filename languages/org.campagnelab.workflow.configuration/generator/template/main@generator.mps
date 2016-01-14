@@ -13,8 +13,8 @@
     <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" />
     <import index="q2ta" ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.files.structure)" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
-    <import index="ak0d" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/f:java_stub#0202ed86-955d-4227-9c20-377dd6b1f9ff#org.apache.commons.io(org.campagnelab.nyosh.lib/org.apache.commons.io@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="8oaq" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:org.apache.commons.io(org.campagnelab.nyosh.lib/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -117,7 +117,7 @@
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -399,14 +399,14 @@
                       <node concept="3clFbS" id="61udtfD_oSa" role="2VODD2">
                         <node concept="3clFbF" id="61udtfD_pSD" role="3cqZAp">
                           <node concept="2YIFZM" id="61udtfD_qcq" role="3clFbG">
-                            <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                            <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                             <node concept="Xl_RD" id="61udtfD_qhL" role="37wK5m">
                               <property role="Xl_RC" value="${env.PATH}:/%s" />
                             </node>
                             <node concept="2YIFZM" id="61udtfDAFxZ" role="37wK5m">
-                              <ref role="37wK5l" to="ak0d:~FilenameUtils.getPath(java.lang.String):java.lang.String" resolve="getPath" />
-                              <ref role="1Pybhc" to="ak0d:~FilenameUtils" resolve="FilenameUtils" />
+                              <ref role="37wK5l" to="8oaq:~FilenameUtils.getPath(java.lang.String):java.lang.String" resolve="getPath" />
+                              <ref role="1Pybhc" to="8oaq:~FilenameUtils" resolve="FilenameUtils" />
                               <node concept="2OqwBi" id="61udtfD_z7a" role="37wK5m">
                                 <node concept="2OqwBi" id="61udtfD_rva" role="2Oq$k0">
                                   <node concept="2OqwBi" id="61udtfD_s$Q" role="2Oq$k0">
@@ -415,7 +415,9 @@
                                       <node concept="I4A8Y" id="61udtfD_sl_" role="2OqNvi" />
                                     </node>
                                     <node concept="2SmgA7" id="61udtfD_sPn" role="2OqNvi">
-                                      <ref role="2SmgA8" to="6jv6:7MTH03m4HK1" resolve="Config" />
+                                      <node concept="chp4Y" id="2xiyUn2T9u4" role="1dBWTz">
+                                        <ref role="cht4Q" to="6jv6:7MTH03m4HK1" resolve="Config" />
+                                      </node>
                                     </node>
                                   </node>
                                   <node concept="1uHKPH" id="61udtfD_xuF" role="2OqNvi" />
@@ -684,8 +686,8 @@
                     <node concept="3clFbF" id="1d37Cfp1k9F" role="3cqZAp">
                       <node concept="3cpWs3" id="1d37CfpkPYe" role="3clFbG">
                         <node concept="2YIFZM" id="1d37CfpkQjf" role="3uHU7w">
-                          <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
-                          <ref role="37wK5l" to="e2lb:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                          <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                          <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
                         </node>
                         <node concept="3cpWs3" id="1d37Cfp1m3k" role="3uHU7B">
                           <node concept="2OqwBi" id="1d37Cfp1kGp" role="3uHU7B">

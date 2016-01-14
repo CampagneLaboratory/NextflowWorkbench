@@ -2,7 +2,7 @@
 <model ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,6 +20,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -59,6 +60,7 @@
     <property role="3GE5qa" value="containers" />
     <property role="34LRSv" value="image info" />
     <property role="R4oN_" value="Information about a Docker image, sufficient to pull and run with the image" />
+    <property role="1pbfSe" value="997856243" />
     <ref role="1TJDcQ" node="1D6dZ$xfhyW" resolve="DockerContainer" />
     <node concept="1TJgyi" id="1BdDHvUTkwf" role="1TKVEl">
       <property role="TrG5h" value="isLocal" />
@@ -72,6 +74,7 @@
     <property role="3GE5qa" value="containers" />
     <property role="34LRSv" value="DockerContainer" />
     <property role="MwhBj" value="${module}/icons/docker-logo-loggedout.png" />
+    <property role="1pbfSe" value="998461621" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1D6dZ$xfiv_" role="1TKVEl">
       <property role="TrG5h" value="tag" />
@@ -94,6 +97,7 @@
     <property role="R4oN_" value="A recipe to construct a docker container" />
     <property role="19KtqR" value="true" />
     <property role="MwhBj" value="${module}/icons/paintbrush-3@2x.png" />
+    <property role="1pbfSe" value="998483188" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="36oLgaWGnQ0" role="1TKVEl">
       <property role="TrG5h" value="username" />
@@ -128,6 +132,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="instructions" />
+    <property role="1pbfSe" value="998484185" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1D6dZ$xfneC">
@@ -136,6 +141,7 @@
     <property role="34LRSv" value="MAINTAINER" />
     <property role="3GE5qa" value="instructions" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#maintainer" />
+    <property role="1pbfSe" value="998484897" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyi" id="1D6dZ$xfneD" role="1TKVEl">
       <property role="TrG5h" value="fullName" />
@@ -152,6 +158,7 @@
     <property role="R4oN_" value="The container to build from" />
     <property role="3GE5qa" value="instructions" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#from" />
+    <property role="1pbfSe" value="998485622" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyj" id="1D6dZ$xfnq0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -166,6 +173,7 @@
     <property role="R4oN_" value="Run a command in the container" />
     <property role="3GE5qa" value="instructions" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#run" />
+    <property role="1pbfSe" value="998601226" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyj" id="1D6dZ$xfNXI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -179,6 +187,7 @@
     <property role="R4oN_" value="Add a file to the container" />
     <property role="3GE5qa" value="instructions" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#add" />
+    <property role="1pbfSe" value="998862106" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyj" id="BMuHr2RziJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -202,6 +211,7 @@
     <property role="TrG5h" value="Config" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="Docker Configuration" />
+    <property role="1pbfSe" value="1389137921" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7MTH03mayQj" role="1TKVEl">
       <property role="TrG5h" value="options" />
@@ -217,6 +227,7 @@
     <property role="R4oN_" value="An image built with docker build" />
     <property role="19KtqR" value="true" />
     <property role="MwhBj" value="${module}/icons/DockerImage-1.png" />
+    <property role="1pbfSe" value="1391001292" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5U_2ytMbL$O" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -253,6 +264,7 @@
   <node concept="1TIwiD" id="5U_2ytMbL_w">
     <property role="TrG5h" value="TagInfo" />
     <property role="3GE5qa" value="containers" />
+    <property role="1pbfSe" value="791403641" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5U_2ytMbL_x" role="1TKVEl">
       <property role="TrG5h" value="repositoryHost" />
@@ -275,6 +287,7 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="containers" />
     <property role="34LRSv" value="running" />
+    <property role="1pbfSe" value="785445354" />
     <ref role="1TJDcQ" node="1D6dZ$xcXJU" resolve="ImageInfoForDockerContainer" />
     <node concept="1TJgyj" id="1BdDHvUZPgN" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -305,6 +318,7 @@
     <property role="TrG5h" value="DockerCommand" />
     <property role="34LRSv" value="command" />
     <property role="R4oN_" value="command available a docker container" />
+    <property role="1pbfSe" value="2022861335" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6hgQMA_NQAW" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -325,6 +339,7 @@
     <property role="3GE5qa" value="instructions" />
     <property role="R4oN_" value="Define an environment variable" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#env" />
+    <property role="1pbfSe" value="1046545392" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyj" id="3DjWPY6Pi20" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -336,6 +351,7 @@
   <node concept="1TIwiD" id="3DjWPY6PrI8">
     <property role="3GE5qa" value="instructions" />
     <property role="TrG5h" value="EnvVariableAssignment" />
+    <property role="1pbfSe" value="1054232857" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3ymWtI920CQ" role="1TKVEl">
       <property role="TrG5h" value="name" />
@@ -352,6 +368,7 @@
     <property role="R4oN_" value="Specifies the default command arguments for the container" />
     <property role="3GE5qa" value="instructions" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#cmd" />
+    <property role="1pbfSe" value="1050910091" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyj" id="33aW7OwA6gp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -363,6 +380,7 @@
   <node concept="1TIwiD" id="33aW7OwAeeF">
     <property role="3GE5qa" value="instructions" />
     <property role="TrG5h" value="CommandElement" />
+    <property role="1pbfSe" value="1365496872" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="33aW7OwAeeG" role="1TKVEl">
       <property role="TrG5h" value="command" />
@@ -375,6 +393,7 @@
     <property role="34LRSv" value="LABEL" />
     <property role="R4oN_" value="Use to define meta-data for an image" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#label" />
+    <property role="1pbfSe" value="1372615687" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyj" id="33aW7Ox1ofp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -389,6 +408,7 @@
     <property role="34LRSv" value="EXPOSE" />
     <property role="R4oN_" value="Expose ports, declaring that the container will listen to them" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#expose" />
+    <property role="1pbfSe" value="1375121849" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyj" id="33aW7OxaWlY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -400,6 +420,7 @@
   <node concept="1TIwiD" id="33aW7OxaW6z">
     <property role="3GE5qa" value="instructions" />
     <property role="TrG5h" value="ExposedPort" />
+    <property role="1pbfSe" value="1375121952" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="33aW7OxaW6Q" role="1TKVEl">
       <property role="TrG5h" value="number" />
@@ -412,6 +433,7 @@
     <property role="34LRSv" value="ONBUILD" />
     <property role="R4oN_" value="Execute this intruction on the next build that uses this image (FROM)" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#onbuild" />
+    <property role="1pbfSe" value="1376612041" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyj" id="33aW7OxgBUl" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -426,6 +448,7 @@
     <property role="34LRSv" value="WORKDIR" />
     <property role="R4oN_" value="Set the work directory to use when running the container" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#workdir" />
+    <property role="1pbfSe" value="864266108" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyi" id="BMuHr2ytTW" role="1TKVEl">
       <property role="TrG5h" value="path" />
@@ -438,6 +461,7 @@
     <property role="34LRSv" value="USER" />
     <property role="R4oN_" value="Set the user to run as" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#user" />
+    <property role="1pbfSe" value="863169220" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyi" id="BMuHr2ADDB" role="1TKVEl">
       <property role="TrG5h" value="username" />
@@ -446,6 +470,7 @@
   </node>
   <node concept="1TIwiD" id="BMuHr2DQt$">
     <property role="TrG5h" value="ImageRef" />
+    <property role="1pbfSe" value="862330310" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="BMuHr2DQtC" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -460,11 +485,13 @@
     <property role="34LRSv" value="COPY" />
     <property role="R4oN_" value="Copy file(s) to the container" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#copy" />
+    <property role="1pbfSe" value="859082203" />
     <ref role="1TJDcQ" node="1D6dZ$xgNkx" resolve="AddInstruction" />
   </node>
   <node concept="1TIwiD" id="BMuHr2Rz41">
     <property role="3GE5qa" value="instructions" />
     <property role="TrG5h" value="SourceFile" />
+    <property role="1pbfSe" value="858739753" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="BMuHr2Rz5i" role="1TKVEl">
       <property role="TrG5h" value="path" />
@@ -477,6 +504,7 @@
     <property role="R4oN_" value="Specifies the default command/entry point" />
     <property role="3GE5qa" value="instructions" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#entrypoint" />
+    <property role="1pbfSe" value="855931972" />
     <ref role="1TJDcQ" node="3DjWPY726Wm" resolve="CmdInstruction" />
   </node>
   <node concept="1TIwiD" id="BMuHr35ork">
@@ -485,6 +513,7 @@
     <property role="34LRSv" value="VOLUME" />
     <property role="R4oN_" value="Define one or more mount volumes" />
     <property role="2Bxbrw" value="https://docs.docker.com/reference/builder/#volume" />
+    <property role="1pbfSe" value="855113302" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyj" id="BMuHr35oBj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -496,6 +525,7 @@
   <node concept="1TIwiD" id="BMuHr35oBd">
     <property role="3GE5qa" value="instructions" />
     <property role="TrG5h" value="VolumeName" />
+    <property role="1pbfSe" value="855112541" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="BMuHr35oBh" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -504,6 +534,7 @@
   <node concept="1TIwiD" id="nU1NoTkZdT">
     <property role="3GE5qa" value="containers" />
     <property role="TrG5h" value="ContainerRef" />
+    <property role="1pbfSe" value="1062075055" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="nU1NoTkZfg" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -520,6 +551,7 @@
     <property role="TrG5h" value="Comment" />
     <property role="34LRSv" value="#" />
     <property role="R4oN_" value="Comment" />
+    <property role="1pbfSe" value="1467365204" />
     <ref role="1TJDcQ" node="1D6dZ$xfn3w" resolve="DockerBuildInstruction" />
     <node concept="1TJgyi" id="1q4iT9$FIVt" role="1TKVEl">
       <property role="TrG5h" value="description" />
@@ -529,6 +561,7 @@
   <node concept="PlHQZ" id="6QVw52gwj52">
     <property role="3GE5qa" value="containers" />
     <property role="TrG5h" value="IHaveRefToDockerContainer" />
+    <property role="1pbfSe" value="29576814" />
   </node>
 </model>
 

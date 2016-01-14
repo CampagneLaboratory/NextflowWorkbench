@@ -2,7 +2,7 @@
 <model ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -22,6 +22,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -58,6 +59,7 @@
     <property role="TrG5h" value="RequestedResource" />
     <property role="3GE5qa" value="resources" />
     <property role="R4oN_" value="A resource requested by the user" />
+    <property role="1pbfSe" value="101615051" />
     <ref role="1TJDcQ" node="4DwTgsTNnk_" resolve="ScriptResource" />
     <node concept="1TJgyi" id="RXABvRHWSQ" role="1TKVEl">
       <property role="TrG5h" value="message" />
@@ -102,6 +104,7 @@
     <property role="TrG5h" value="NYoShAwareScript" />
     <property role="34LRSv" value="nyosh script" />
     <property role="R4oN_" value="Bash script that can install/use NYoSh/GobyWeb resources" />
+    <property role="1pbfSe" value="998085487" />
     <ref role="1TJDcQ" to="iowz:70dPcAeBye8" resolve="RichScript" />
     <node concept="1TJgyj" id="5VB4_zEuxaq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -122,6 +125,7 @@
   <node concept="1TIwiD" id="6A9boVQPeld">
     <property role="TrG5h" value="AttributeAdapterForResource" />
     <property role="3GE5qa" value="resources" />
+    <property role="1pbfSe" value="1616777947" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6A9boVQQrjW" role="1TKVEl">
       <property role="TrG5h" value="resource" />
@@ -149,6 +153,7 @@
     <property role="TrG5h" value="ReferenceAttribute" />
     <property role="R4oN_" value="An attribute that references a value in another attribute" />
     <property role="3GE5qa" value="resources" />
+    <property role="1pbfSe" value="1617867127" />
     <ref role="1TJDcQ" to="bs99:7arfhhdt3J1" resolve="Attribute" />
     <node concept="1TJgyj" id="6A9boVQTogb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -161,6 +166,7 @@
     <property role="TrG5h" value="ScriptResource" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="2077337044" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="18MzsNNR1MW" role="1TKVEl">
       <property role="TrG5h" value="id" />
@@ -188,11 +194,13 @@
     <property role="3GE5qa" value="resources" />
     <property role="TrG5h" value="DependencyResource" />
     <property role="R4oN_" value="A resource that another resource depends on" />
+    <property role="1pbfSe" value="2075982487" />
     <ref role="1TJDcQ" node="4DwTgsTNnk_" resolve="ScriptResource" />
   </node>
   <node concept="PlHQZ" id="7SK$kQZvhmu">
     <property role="TrG5h" value="EnvironmentValueValue" />
     <property role="3GE5qa" value="environment" />
+    <property role="1pbfSe" value="1034790635" />
     <node concept="PrWs8" id="7SK$kQZvhrJ" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -202,6 +210,7 @@
     <property role="R4oN_" value="A file distributed with the resource." />
     <property role="3GE5qa" value="environment" />
     <property role="34LRSv" value="file" />
+    <property role="1pbfSe" value="1034790759" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7SK$kQZvl_z" role="1TKVEl">
       <property role="TrG5h" value="prefix" />
@@ -224,6 +233,7 @@
     <property role="3GE5qa" value="environment" />
     <property role="34LRSv" value="artifact path" />
     <property role="R4oN_" value="Install folder of an artifact." />
+    <property role="1pbfSe" value="1034790858" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7SK$kQZvjuD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -252,6 +262,7 @@
     <property role="TrG5h" value="ArtifactAttributeValue" />
     <property role="34LRSv" value="value of" />
     <property role="R4oN_" value="Value of a resource attribute." />
+    <property role="1pbfSe" value="1034790961" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7SK$kQZvjge" role="1TKVEl">
       <property role="TrG5h" value="prefix" />
@@ -278,6 +289,7 @@
     <property role="TrG5h" value="EvalArtifactAttribute" />
     <property role="R4oN_" value="Evaluate the attribute." />
     <property role="34LRSv" value="eval(attribute)" />
+    <property role="1pbfSe" value="1034798949" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4rsVl6EkONb" role="1TKVEl">
       <property role="TrG5h" value="resourceName" />
@@ -295,6 +307,7 @@
   <node concept="1TIwiD" id="7SK$kQZxVHC">
     <property role="TrG5h" value="EnvironmentValueRef" />
     <property role="34LRSv" value="${" />
+    <property role="1pbfSe" value="1035488437" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7SK$kQZxVHG" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
@@ -309,6 +322,7 @@
   <node concept="1TIwiD" id="7SK$kQZxXhk">
     <property role="3GE5qa" value="environment" />
     <property role="TrG5h" value="EnvironmentValue" />
+    <property role="1pbfSe" value="1035494817" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5quK2aePwou" role="1TKVEl">
       <property role="TrG5h" value="sourceVariable" />
@@ -329,6 +343,7 @@
     <property role="TrG5h" value="EnvVariableValue" />
     <property role="34LRSv" value="env var" />
     <property role="R4oN_" value="variable available" />
+    <property role="1pbfSe" value="1036540421" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7SK$kQZ_WBF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -344,6 +359,7 @@
     <property role="TrG5h" value="NyoshPathPart" />
     <property role="34LRSv" value="$" />
     <property role="3GE5qa" value="docker" />
+    <property role="1pbfSe" value="1843576801" />
     <ref role="1TJDcQ" to="r9td:2h_fDmyfOuY" resolve="PathPart" />
     <node concept="1TJgyj" id="1Fq$Xhj27Vu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -357,6 +373,7 @@
     <property role="34LRSv" value="artifact path" />
     <property role="R4oN_" value="Interactive path for artifact paths" />
     <property role="3GE5qa" value="docker" />
+    <property role="1pbfSe" value="2019957926" />
     <ref role="1TJDcQ" to="r9td:2h_fDmyfOv1" resolve="DockerPath" />
     <node concept="PrWs8" id="6QVw52gz1Zw" role="PzmwI">
       <ref role="PrY4T" to="6jv6:6QVw52gwj52" resolve="IHaveRefToDockerContainer" />
@@ -366,6 +383,7 @@
     <property role="TrG5h" value="ResourceConfigContainer" />
     <property role="R4oN_" value="hold the resource configs used in a script." />
     <property role="3GE5qa" value="resources" />
+    <property role="1pbfSe" value="1162191197" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="18$uMcN8ioV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -379,6 +397,7 @@
     <property role="TrG5h" value="InstallGobyWebArtifacts" />
     <property role="34LRSv" value="install gobyweb artifacts" />
     <property role="R4oN_" value="Install GobyWeb Artifacts in an image" />
+    <property role="1pbfSe" value="1403894610" />
     <ref role="1TJDcQ" to="6jv6:3DjWPY726Wm" resolve="CmdInstruction" />
     <node concept="1TJgyj" id="6LCvS2pPqdF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -393,6 +412,7 @@
   <node concept="1TIwiD" id="5VB4_zEupZX">
     <property role="3GE5qa" value="resources" />
     <property role="TrG5h" value="ResourceSpecification" />
+    <property role="1pbfSe" value="1231073877" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1c4JsiUUxOc" role="1TKVEl">
       <property role="TrG5h" value="showFullInstallationActivity" />
@@ -419,6 +439,7 @@
     <property role="TrG5h" value="LatestVersion" />
     <property role="34LRSv" value="latest" />
     <property role="R4oN_" value="Most recent available version" />
+    <property role="1pbfSe" value="1769970572" />
     <ref role="1TJDcQ" node="5cVzYEjM8vj" resolve="ResourceVersionRange" />
   </node>
   <node concept="1TIwiD" id="5cVzYEjM8vj">
@@ -426,6 +447,7 @@
     <property role="TrG5h" value="ResourceVersionRange" />
     <property role="34LRSv" value="range" />
     <property role="R4oN_" value="[custom range]" />
+    <property role="1pbfSe" value="419162179" />
     <ref role="1TJDcQ" to="bs99:1msVhua4SBd" resolve="ResourceVersion" />
     <node concept="1TJgyi" id="5cVzYEjM8vk" role="1TKVEl">
       <property role="TrG5h" value="atMost" />
@@ -439,12 +461,14 @@
   <node concept="PlHQZ" id="3jQcDYNSxJO">
     <property role="3GE5qa" value="resources" />
     <property role="TrG5h" value="HasResourceSpecification" />
+    <property role="1pbfSe" value="388477293" />
   </node>
   <node concept="1TIwiD" id="3XYZbe_FK9y">
     <property role="3GE5qa" value="docker" />
     <property role="TrG5h" value="ClearArtifactsCache" />
     <property role="34LRSv" value="clear artifact archive cache" />
     <property role="R4oN_" value="Remove downloaded files from the image" />
+    <property role="1pbfSe" value="449970411" />
     <ref role="1TJDcQ" to="6jv6:3DjWPY726Wm" resolve="CmdInstruction" />
   </node>
 </model>

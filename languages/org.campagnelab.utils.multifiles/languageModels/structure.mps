@@ -2,7 +2,7 @@
 <model ref="r:cbd6943f-6de3-44a2-ba40-40c257b794e1(org.campagnelab.util.files.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -11,6 +11,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -40,6 +41,7 @@
   </registry>
   <node concept="1TIwiD" id="3LlDVJSEHBN">
     <property role="TrG5h" value="MultiFile" />
+    <property role="1pbfSe" value="889225646" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3LlDVJSEHDz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -53,6 +55,7 @@
   </node>
   <node concept="1TIwiD" id="3LlDVJSEHCq">
     <property role="TrG5h" value="Line" />
+    <property role="1pbfSe" value="889225685" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3LlDVJSEHCK" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -62,6 +65,7 @@
   <node concept="1TIwiD" id="3LlDVJSEHD1">
     <property role="TrG5h" value="PlainTextFile" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="889225724" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3LlDVJSEHDn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

@@ -2,7 +2,7 @@
 <model ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,6 +15,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -53,6 +54,7 @@
     <property role="TrG5h" value="DockerBashScript" />
     <property role="R4oN_" value="a plain bash script" />
     <property role="34LRSv" value="bash script" />
+    <property role="1pbfSe" value="389742934" />
     <node concept="1TJgyj" id="1rhtiO0qoN4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="script" />
@@ -66,6 +68,7 @@
   <node concept="1TIwiD" id="2h_fDmyfOuW">
     <property role="TrG5h" value="InteractivePath" />
     <property role="3GE5qa" value="paths" />
+    <property role="1pbfSe" value="962296239" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2h_fDmyfOuX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -77,6 +80,7 @@
   <node concept="1TIwiD" id="2h_fDmyfOuY">
     <property role="TrG5h" value="PathPart" />
     <property role="3GE5qa" value="paths" />
+    <property role="1pbfSe" value="962296237" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2h_fDmyfOuZ" role="1TKVEl">
       <property role="TrG5h" value="part" />
@@ -92,6 +96,7 @@
     <property role="34LRSv" value="path" />
     <property role="R4oN_" value="path inside a docker container" />
     <property role="3GE5qa" value="paths" />
+    <property role="1pbfSe" value="962296234" />
     <ref role="1TJDcQ" node="2h_fDmyfOuW" resolve="InteractivePath" />
     <node concept="1TJgyj" id="2h_fDmyfOv2" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -110,6 +115,7 @@
     <property role="34LRSv" value="BashInDocker" />
     <property role="19KtqR" value="true" />
     <property role="MwhBj" value="${module}/icons/BashScript-1.png" />
+    <property role="1pbfSe" value="1992115042" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="8cuIHOGcLk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -135,6 +141,7 @@
   <node concept="PlHQZ" id="6A9boVQ01ys">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="GenerateBashFragment" />
+    <property role="1pbfSe" value="1602831914" />
     <node concept="PrWs8" id="6A9boVQ06Vh" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

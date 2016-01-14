@@ -2,7 +2,7 @@
 <model ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26,6 +26,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -62,6 +63,7 @@
     <property role="TrG5h" value="Hostname" />
     <property role="34LRSv" value="hostname" />
     <property role="R4oN_" value="Hostname or IP address of the submission host" />
+    <property role="1pbfSe" value="453796148" />
     <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqYQkSJ">
@@ -69,6 +71,7 @@
     <property role="TrG5h" value="JobArea" />
     <property role="34LRSv" value="jobarea" />
     <property role="R4oN_" value="Folder where scripts are copied and submitted" />
+    <property role="1pbfSe" value="453796149" />
     <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqYQkSK">
@@ -76,12 +79,14 @@
     <property role="TrG5h" value="KeyFile" />
     <property role="34LRSv" value="key file" />
     <property role="R4oN_" value="Location of the file holding the private key to connect to the submission host" />
+    <property role="1pbfSe" value="453796150" />
     <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqYQkSL">
     <property role="3GE5qa" value="remoteSubmission" />
     <property role="TrG5h" value="RemoteSetEnv" />
     <property role="R4oN_" value="Custom settings to add to the remote environment" />
+    <property role="1pbfSe" value="453796151" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5KN4KqYQkSM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -95,6 +100,7 @@
     <property role="TrG5h" value="RemoteSubmissionConfig" />
     <property role="34LRSv" value="remote.config" />
     <property role="R4oN_" value="Configuration for remote execution" />
+    <property role="1pbfSe" value="453796153" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5KN4KqYQkSO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -134,6 +140,7 @@
     <property role="TrG5h" value="SubmissionOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="453796160" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5KN4KqYQkSV" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -148,6 +155,7 @@
     <property role="TrG5h" value="Username" />
     <property role="34LRSv" value="username" />
     <property role="R4oN_" value="Username to connect to the submission host" />
+    <property role="1pbfSe" value="453796163" />
     <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqYYwDS">
@@ -155,6 +163,7 @@
     <property role="TrG5h" value="Memory" />
     <property role="34LRSv" value="memory" />
     <property role="R4oN_" value="Memory allocated for the process' execution" />
+    <property role="1pbfSe" value="455941502" />
     <ref role="1TJDcQ" node="dhtvqFdzNV" resolve="StringOption" />
     <node concept="1TJgyi" id="2Hxg8Ag1XNQ" role="1TKVEl">
       <property role="TrG5h" value="unit" />
@@ -166,6 +175,7 @@
     <property role="TrG5h" value="TimeAllowed" />
     <property role="34LRSv" value="time" />
     <property role="R4oN_" value="How long a process is allowed to run" />
+    <property role="1pbfSe" value="457669507" />
     <ref role="1TJDcQ" node="dhtvqFdzNV" resolve="StringOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZ57HB">
@@ -173,6 +183,7 @@
     <property role="34LRSv" value="clusterOptions" />
     <property role="R4oN_" value="Native configuration options to be accepted by the cluster submit command" />
     <property role="3GE5qa" value="processOptions" />
+    <property role="1pbfSe" value="457674349" />
     <ref role="1TJDcQ" node="dhtvqFdzNV" resolve="StringOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZbGMw">
@@ -180,6 +191,7 @@
     <property role="34LRSv" value="cpus" />
     <property role="R4oN_" value="Number of CPUs required by the process' task" />
     <property role="3GE5qa" value="processOptions" />
+    <property role="1pbfSe" value="459399078" />
     <ref role="1TJDcQ" node="dhtvqFnQpl" resolve="IntegerOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZbJnZ">
@@ -187,6 +199,7 @@
     <property role="TrG5h" value="ProcessOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="459409669" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZbL4l">
@@ -194,6 +207,7 @@
     <property role="TrG5h" value="Queue" />
     <property role="34LRSv" value="queue" />
     <property role="R4oN_" value="Queue where jobs are scheduled when using a grid based executor" />
+    <property role="1pbfSe" value="459416603" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOption" />
     <node concept="1TJgyj" id="5KN4KqZbL4m" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -207,6 +221,7 @@
     <property role="TrG5h" value="Penv" />
     <property role="34LRSv" value="penv" />
     <property role="R4oN_" value="Parallel environment to be used when submitting to the SGE executor" />
+    <property role="1pbfSe" value="459421738" />
     <ref role="1TJDcQ" node="dhtvqFdzNV" resolve="StringOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZbNxe">
@@ -214,6 +229,7 @@
     <property role="TrG5h" value="Retry" />
     <property role="34LRSv" value="error strategy: retry" />
     <property role="R4oN_" value="The process is resubmitted after returning an error condition" />
+    <property role="1pbfSe" value="459426644" />
     <ref role="1TJDcQ" node="5KN4KqZbPTd" resolve="ErrorStrategies" />
     <node concept="1TJgyj" id="dhtvqEN_js" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -233,6 +249,7 @@
     <property role="TrG5h" value="Ignore" />
     <property role="34LRSv" value="error strategy: ignore" />
     <property role="R4oN_" value="The process does not stop on an error condition" />
+    <property role="1pbfSe" value="459431540" />
     <ref role="1TJDcQ" node="5KN4KqZbPTd" resolve="ErrorStrategies" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZbPTd">
@@ -240,6 +257,7 @@
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="ErrorStrategies" />
     <property role="3GE5qa" value="processOptions.errorStrategies" />
+    <property role="1pbfSe" value="459436371" />
     <ref role="1TJDcQ" node="dhtvqFdzNV" resolve="StringOption" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZinTy">
@@ -248,6 +266,7 @@
     <property role="R4oN_" value="Execute Workflows with Cirrus" />
     <property role="34LRSv" value="cirrus" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#clusterk-cirrus" />
+    <property role="1pbfSe" value="461148520" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZinTz">
@@ -256,6 +275,7 @@
     <property role="R4oN_" value="Execute Workflows with DNANexus" />
     <property role="34LRSv" value="dnanexus" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#dnanexus" />
+    <property role="1pbfSe" value="461148521" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
     <node concept="1TJgyi" id="5KN4KqZinT$" role="1TKVEl">
       <property role="TrG5h" value="instanceType" />
@@ -268,6 +288,7 @@
     <property role="R4oN_" value="Execute Workflows with DRMAA" />
     <property role="34LRSv" value="drmaa" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#drmaa-executor" />
+    <property role="1pbfSe" value="461148523" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZinTA">
@@ -275,6 +296,7 @@
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="Executor" />
     <property role="3GE5qa" value="executors" />
+    <property role="1pbfSe" value="461148524" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZinTB">
@@ -283,6 +305,7 @@
     <property role="R4oN_" value="Execute Workflows with LSF" />
     <property role="34LRSv" value="lsf" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#lsf-executor" />
+    <property role="1pbfSe" value="461148525" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZinTC">
@@ -291,6 +314,7 @@
     <property role="34LRSv" value="local" />
     <property role="R4oN_" value="Execute Workflows on the local, single machine" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#local-executor" />
+    <property role="1pbfSe" value="461148526" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZinTD">
@@ -299,6 +323,7 @@
     <property role="R4oN_" value="Execute Workflows with PBS" />
     <property role="34LRSv" value="pbs" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#pbs-torque-executor" />
+    <property role="1pbfSe" value="461148527" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZinTE">
@@ -307,6 +332,7 @@
     <property role="R4oN_" value="Execute Workflows with SGE" />
     <property role="34LRSv" value="sge" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#sge-executor" />
+    <property role="1pbfSe" value="461148528" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZinTF">
@@ -315,6 +341,7 @@
     <property role="R4oN_" value="Execute Workflows with Slurm" />
     <property role="34LRSv" value="slurm" />
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#slurm-executor" />
+    <property role="1pbfSe" value="461148529" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
   </node>
   <node concept="1TIwiD" id="5KN4KqZiCvz">
@@ -323,6 +350,7 @@
     <property role="34LRSv" value="workflow.config" />
     <property role="R4oN_" value="Configuration for workflow submissions" />
     <property role="MwhBj" value="${module}/icons/ConfigIcon-1.png" />
+    <property role="1pbfSe" value="461216489" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5KN4KqZiCv$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -355,6 +383,7 @@
     <property role="3GE5qa" value="processOptions" />
     <property role="TrG5h" value="QueueElement" />
     <property role="34LRSv" value="name" />
+    <property role="1pbfSe" value="466006546" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5KN4KqZ$U2f" role="1TKVEl">
       <property role="TrG5h" value="queue" />
@@ -365,12 +394,14 @@
     <property role="3GE5qa" value="processOptions.errorStrategies" />
     <property role="TrG5h" value="MaxRetries" />
     <property role="34LRSv" value="maxRetries" />
+    <property role="1pbfSe" value="1373654185" />
     <ref role="1TJDcQ" node="dhtvqFnQpl" resolve="IntegerOption" />
   </node>
   <node concept="1TIwiD" id="dhtvqENzQn">
     <property role="3GE5qa" value="processOptions.errorStrategies" />
     <property role="TrG5h" value="MaxErrors" />
     <property role="34LRSv" value="maxErrors" />
+    <property role="1pbfSe" value="1373654131" />
     <ref role="1TJDcQ" node="dhtvqFnQpl" resolve="IntegerOption" />
   </node>
   <node concept="1TIwiD" id="dhtvqFdzNV">
@@ -378,6 +409,7 @@
     <property role="TrG5h" value="StringOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1366838543" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOption" />
     <node concept="1TJgyi" id="dhtvqFkG5z" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -389,6 +421,7 @@
     <property role="TrG5h" value="IntegerOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1364140981" />
     <ref role="1TJDcQ" node="5KN4KqZbJnZ" resolve="ProcessOption" />
     <node concept="1TJgyi" id="dhtvqFnQq1" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -399,11 +432,13 @@
     <property role="TrG5h" value="ContainerOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="439619127" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1nj$XVfY62i">
     <property role="TrG5h" value="WithDocker" />
     <property role="34LRSv" value="with-docker" />
+    <property role="1pbfSe" value="439618448" />
     <ref role="1TJDcQ" node="1nj$XVfY5RF" resolve="ContainerOption" />
   </node>
   <node concept="AxPO7" id="2Hxg8Ag1XIC">
@@ -426,6 +461,7 @@
   </node>
   <node concept="1TIwiD" id="5G7wwTNBNZh">
     <property role="TrG5h" value="DockerMountDirectiveOption" />
+    <property role="1pbfSe" value="827932193" />
     <ref role="1TJDcQ" node="1nj$XVfY5RF" resolve="ContainerOption" />
     <node concept="1TJgyi" id="5G7wwTNBO36" role="1TKVEl">
       <property role="TrG5h" value="localPath" />

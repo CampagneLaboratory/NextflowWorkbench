@@ -5,13 +5,13 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="-1" />
     <use id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.files" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports>
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(java.io@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io()" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -221,14 +221,14 @@
                 <node concept="3cpWsn" id="7TupKkjiPeI" role="3cpWs9">
                   <property role="TrG5h" value="breader" />
                   <node concept="3uibUv" id="7TupKkjiPeJ" role="1tU5fm">
-                    <ref role="3uigEE" to="fxg7:~BufferedReader" resolve="BufferedReader" />
+                    <ref role="3uigEE" to="guwi:~BufferedReader" resolve="BufferedReader" />
                   </node>
                   <node concept="2ShNRf" id="7TupKkjiPkH" role="33vP2m">
                     <node concept="1pGfFk" id="7TupKkjiQ6N" role="2ShVmc">
-                      <ref role="37wK5l" to="fxg7:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
+                      <ref role="37wK5l" to="guwi:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
                       <node concept="2ShNRf" id="6xlRqabyMwy" role="37wK5m">
                         <node concept="1pGfFk" id="6xlRqabyP0R" role="2ShVmc">
-                          <ref role="37wK5l" to="fxg7:~FileReader.&lt;init&gt;(java.io.File)" resolve="FileReader" />
+                          <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.io.File)" resolve="FileReader" />
                           <node concept="2UPiyF" id="6xlRqabyP5f" role="37wK5m" />
                         </node>
                       </node>
@@ -239,11 +239,11 @@
               <node concept="3clFbF" id="7TupKkjiLs3" role="3cqZAp">
                 <node concept="2OqwBi" id="7TupKkjiLs4" role="3clFbG">
                   <node concept="10M0yZ" id="7TupKkjiLs5" role="2Oq$k0">
-                    <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-                    <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                   </node>
                   <node concept="liA8E" id="7TupKkjiLs6" role="2OqNvi">
-                    <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                     <node concept="3cpWs3" id="7TupKkjiLs7" role="37wK5m">
                       <node concept="Xl_RD" id="7TupKkjiLsb" role="3uHU7B">
                         <property role="Xl_RC" value="Here's the echo: " />
@@ -253,7 +253,7 @@
                           <ref role="3cqZAo" node="7TupKkjiPeI" resolve="breader" />
                         </node>
                         <node concept="liA8E" id="7TupKkjiQPN" role="2OqNvi">
-                          <ref role="37wK5l" to="fxg7:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
+                          <ref role="37wK5l" to="guwi:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
                         </node>
                       </node>
                     </node>
@@ -266,11 +266,11 @@
                 <node concept="3clFbF" id="7TupKkjiRYl" role="3cqZAp">
                   <node concept="2OqwBi" id="7TupKkjiS3c" role="3clFbG">
                     <node concept="10M0yZ" id="7TupKkjiRYk" role="2Oq$k0">
-                      <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                      <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                     </node>
                     <node concept="liA8E" id="7TupKkjiSH3" role="2OqNvi">
-                      <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                       <node concept="Xl_RD" id="7TupKkjiSIy" role="37wK5m">
                         <property role="Xl_RC" value="Wooops" />
                       </node>
@@ -281,7 +281,7 @@
               <node concept="3cpWsn" id="7TupKkjiR$F" role="TDEfY">
                 <property role="TrG5h" value="ioe" />
                 <node concept="3uibUv" id="7TupKkjiRDU" role="1tU5fm">
-                  <ref role="3uigEE" to="fxg7:~IOException" resolve="IOException" />
+                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
                 </node>
               </node>
             </node>
@@ -382,11 +382,11 @@
           <node concept="3clFbF" id="6xlRqabyJwC" role="3cqZAp">
             <node concept="2OqwBi" id="6xlRqabyL1B" role="3clFbG">
               <node concept="10M0yZ" id="6xlRqabyJwB" role="2Oq$k0">
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="6xlRqabyMhP" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="3cpWs3" id="6xlRqabyPP4" role="37wK5m">
                   <node concept="2UPiyF" id="6xlRqabyPRd" role="3uHU7w" />
                   <node concept="Xl_RD" id="6xlRqabyPnH" role="3uHU7B">
@@ -448,14 +448,14 @@
                 <node concept="3cpWsn" id="6xlRqabyTkT" role="3cpWs9">
                   <property role="TrG5h" value="breader" />
                   <node concept="3uibUv" id="6xlRqabyTkU" role="1tU5fm">
-                    <ref role="3uigEE" to="fxg7:~BufferedReader" resolve="BufferedReader" />
+                    <ref role="3uigEE" to="guwi:~BufferedReader" resolve="BufferedReader" />
                   </node>
                   <node concept="2ShNRf" id="6xlRqabyTkV" role="33vP2m">
                     <node concept="1pGfFk" id="6xlRqabyTkW" role="2ShVmc">
-                      <ref role="37wK5l" to="fxg7:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
+                      <ref role="37wK5l" to="guwi:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
                       <node concept="2ShNRf" id="6xlRqabyTkX" role="37wK5m">
                         <node concept="1pGfFk" id="6xlRqabyTkY" role="2ShVmc">
-                          <ref role="37wK5l" to="fxg7:~FileReader.&lt;init&gt;(java.io.File)" resolve="FileReader" />
+                          <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.io.File)" resolve="FileReader" />
                           <node concept="2UPiyF" id="6xlRqabyTkZ" role="37wK5m" />
                         </node>
                       </node>
@@ -466,11 +466,11 @@
               <node concept="3clFbF" id="6xlRqabyTl0" role="3cqZAp">
                 <node concept="2OqwBi" id="6xlRqabyTl1" role="3clFbG">
                   <node concept="10M0yZ" id="6xlRqabyTl2" role="2Oq$k0">
-                    <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                    <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                   </node>
                   <node concept="liA8E" id="6xlRqabyTl3" role="2OqNvi">
-                    <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                     <node concept="3cpWs3" id="6xlRqabyTl4" role="37wK5m">
                       <node concept="Xl_RD" id="6xlRqabyTl5" role="3uHU7B">
                         <property role="Xl_RC" value="Here's the echo: " />
@@ -480,7 +480,7 @@
                           <ref role="3cqZAo" node="6xlRqabyTkT" resolve="breader" />
                         </node>
                         <node concept="liA8E" id="6xlRqabyTl8" role="2OqNvi">
-                          <ref role="37wK5l" to="fxg7:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
+                          <ref role="37wK5l" to="guwi:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
                         </node>
                       </node>
                     </node>
@@ -493,11 +493,11 @@
                 <node concept="3clFbF" id="6xlRqabyTlb" role="3cqZAp">
                   <node concept="2OqwBi" id="6xlRqabyTlc" role="3clFbG">
                     <node concept="10M0yZ" id="6xlRqabyTld" role="2Oq$k0">
-                      <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                      <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                     </node>
                     <node concept="liA8E" id="6xlRqabyTle" role="2OqNvi">
-                      <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                       <node concept="Xl_RD" id="6xlRqabyTlf" role="37wK5m">
                         <property role="Xl_RC" value="Wooops" />
                       </node>
@@ -508,7 +508,7 @@
               <node concept="3cpWsn" id="6xlRqabyTlg" role="TDEfY">
                 <property role="TrG5h" value="ioe" />
                 <node concept="3uibUv" id="6xlRqabyTlh" role="1tU5fm">
-                  <ref role="3uigEE" to="fxg7:~IOException" resolve="IOException" />
+                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
                 </node>
               </node>
             </node>

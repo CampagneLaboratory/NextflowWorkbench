@@ -3,23 +3,23 @@
   <persistence version="9" />
   <languages>
     <use id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" name="org.campagnelab.mps.editor2pdf" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="5" />
     <use id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker" version="-1" />
     <use id="0b7d8bbd-896e-495e-be60-01a0d738a649" name="org.campagnelab.gobyweb.plugins" version="-1" />
     <use id="adfd00cb-58d7-4094-bca8-f941a491e04f" name="org.campagnelab.gobyweb" version="-1" />
     <use id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
     <devkit ref="f818ef32-d5bf-46fa-b215-1c17570a2e46(org.campagnelab.docker.gobyweb)" />
   </languages>
   <imports>
     <import index="2hwc" ref="r:e9410272-2b63-4194-bbf1-939c80e0d366(docker)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="xtuj" ref="r:b3d6bed8-7d36-47a6-b17a-037b1c81e85e(CorrectWorkflows)" />
     <import index="hg90" ref="r:fabfd97d-2a4e-4254-8652-f9c389bfe16e(processes)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="q1qp" ref="f:diff_old#r:d77d6fe3-a37c-4c8b-a584-a584d1c37587(documentation.model@old)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" name="org.campagnelab.mps.editor2pdf">
@@ -384,15 +384,15 @@
           <node concept="3clFbF" id="5FDPSDjP0my" role="3cqZAp">
             <node concept="2OqwBi" id="5FDPSDjP0mv" role="3clFbG">
               <node concept="10M0yZ" id="5FDPSDjP0mw" role="2Oq$k0">
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="5FDPSDjP0mx" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.print(java.lang.String):void" resolve="print" />
+                <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String):void" resolve="print" />
                 <node concept="2OqwBi" id="5FDPSDjP0nK" role="37wK5m">
                   <node concept="2UPiyF" id="5FDPSDjP0nh" role="2Oq$k0" />
                   <node concept="liA8E" id="5FDPSDjQtRo" role="2OqNvi">
-                    <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
                   </node>
                 </node>
               </node>
@@ -785,15 +785,15 @@
           <node concept="3clFbF" id="2qcvB08SRFd" role="3cqZAp">
             <node concept="2OqwBi" id="2qcvB08SRFa" role="3clFbG">
               <node concept="10M0yZ" id="2qcvB08SRFb" role="2Oq$k0">
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
               </node>
               <node concept="liA8E" id="2qcvB08SRFc" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="2OqwBi" id="2qcvB08T9wY" role="37wK5m">
                   <node concept="2UPiyF" id="71ITBVyKHVp" role="2Oq$k0" />
                   <node concept="liA8E" id="2qcvB08T9Mv" role="2OqNvi">
-                    <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
                   </node>
                 </node>
               </node>
@@ -976,11 +976,11 @@
           <node concept="3clFbF" id="6kZ7DevQX_Y" role="3cqZAp">
             <node concept="2OqwBi" id="6kZ7DevQXFH" role="3clFbG">
               <node concept="10M0yZ" id="6kZ7DevQX_X" role="2Oq$k0">
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="6kZ7DevQXVo" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="Xl_RD" id="6kZ7DevQYbW" role="37wK5m">
                   <property role="Xl_RC" value="Matches found: " />
                 </node>
@@ -990,11 +990,11 @@
           <node concept="3clFbF" id="6kZ7DevSD$F" role="3cqZAp">
             <node concept="2OqwBi" id="6kZ7DevSDKK" role="3clFbG">
               <node concept="10M0yZ" id="6kZ7DevSD$E" role="2Oq$k0">
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
               </node>
               <node concept="liA8E" id="6kZ7DevSE49" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="2UPiyF" id="6kZ7DevSEaA" role="37wK5m" />
               </node>
             </node>
@@ -1059,11 +1059,11 @@
           <node concept="3clFbF" id="7TNKM_PCz5V" role="3cqZAp">
             <node concept="2OqwBi" id="7TNKM_PCz5W" role="3clFbG">
               <node concept="10M0yZ" id="7TNKM_PCz5X" role="2Oq$k0">
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="7TNKM_PCz5Y" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="Xl_RD" id="7TNKM_PCz5Z" role="37wK5m">
                   <property role="Xl_RC" value="Matches found: " />
                 </node>
@@ -1073,11 +1073,11 @@
           <node concept="3clFbF" id="7TNKM_PCz60" role="3cqZAp">
             <node concept="2OqwBi" id="7TNKM_PCz61" role="3clFbG">
               <node concept="10M0yZ" id="7TNKM_PCz62" role="2Oq$k0">
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="7TNKM_PCz63" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="2UPiyF" id="7TNKM_PCz64" role="37wK5m" />
               </node>
             </node>
@@ -1143,11 +1143,11 @@
           <node concept="3clFbF" id="7TNKM_PDM$N" role="3cqZAp">
             <node concept="2OqwBi" id="7TNKM_PDM$O" role="3clFbG">
               <node concept="10M0yZ" id="7TNKM_PDM$P" role="2Oq$k0">
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="7TNKM_PDM$Q" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="Xl_RD" id="7TNKM_PDM$R" role="37wK5m">
                   <property role="Xl_RC" value="Matches found: " />
                 </node>
@@ -1157,11 +1157,11 @@
           <node concept="3clFbF" id="7TNKM_PDM$S" role="3cqZAp">
             <node concept="2OqwBi" id="7TNKM_PDM$T" role="3clFbG">
               <node concept="10M0yZ" id="7TNKM_PDM$U" role="2Oq$k0">
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="7TNKM_PDM$V" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="2UPiyF" id="7TNKM_PDM$W" role="37wK5m" />
               </node>
             </node>

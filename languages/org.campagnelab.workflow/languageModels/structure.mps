@@ -2,7 +2,7 @@
 <model ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -10,9 +10,9 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" implicit="true" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
     <import index="tpfo" ref="r:00000000-0000-4000-0000-011c89590518(jetbrains.mps.baseLanguage.regexp.structure)" implicit="true" />
-    <import index="dlwq" ref="r:c01755fa-81b5-42b4-9022-2ba8b33ff6cc(org.campagnelab.workflow.configuration.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -24,6 +24,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -64,6 +65,7 @@
     <property role="19KtqR" value="true" />
     <property role="R5$K7" value="false" />
     <property role="MwhBj" value="${module}/icons/ProcessIcon-5.png" />
+    <property role="1pbfSe" value="1621552682" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="59canFNwpDb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -106,6 +108,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="scripts" />
+    <property role="1pbfSe" value="1621601946" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
   </node>
   <node concept="1TIwiD" id="5D7AjvYabas">
@@ -114,6 +117,7 @@
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="A Nextflow-like workflow" />
     <property role="MwhBj" value="${module}/icons/WorkflowIcon-2.png" />
+    <property role="1pbfSe" value="1483754451" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="PffOQSWT20" role="1TKVEl">
       <property role="TrG5h" value="description" />
@@ -151,6 +155,7 @@
   </node>
   <node concept="1TIwiD" id="5D7AjvYaj9M">
     <property role="TrG5h" value="ProcessRef" />
+    <property role="1pbfSe" value="1483787177" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5D7AjvYaj9N" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -185,6 +190,7 @@
     <property role="34LRSv" value="string" />
     <property role="R4oN_" value="string as input or output" />
     <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="1pbfSe" value="2023144848" />
     <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
   </node>
   <node concept="1TIwiD" id="1HX2cDt6B3a">
@@ -192,6 +198,7 @@
     <property role="34LRSv" value="file" />
     <property role="R4oN_" value="file as input or output" />
     <property role="3GE5qa" value="processTypeDeclarations" />
+    <property role="1pbfSe" value="2023192980" />
     <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
   </node>
   <node concept="1TIwiD" id="4exDSOtPEH9">
@@ -199,6 +206,7 @@
     <property role="TrG5h" value="Integer" />
     <property role="34LRSv" value="int" />
     <property role="R4oN_" value="integer as input or output" />
+    <property role="1pbfSe" value="1635275478" />
     <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
   </node>
   <node concept="1TIwiD" id="4exDSOtPEXM">
@@ -206,6 +214,7 @@
     <property role="TrG5h" value="Boolean" />
     <property role="34LRSv" value="boolean" />
     <property role="R4oN_" value="boolean as input or output" />
+    <property role="1pbfSe" value="1635276543" />
     <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
   </node>
   <node concept="1TIwiD" id="7gAPJCERwXU">
@@ -214,6 +223,7 @@
     <property role="34LRSv" value="input channel" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1627068812" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7gAPJCET8v7" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -239,6 +249,7 @@
     <property role="TrG5h" value="StringChannel" />
     <property role="34LRSv" value="string channel" />
     <property role="R4oN_" value="this channel will contain strings" />
+    <property role="1pbfSe" value="1627024817" />
     <ref role="1TJDcQ" node="5ok1XDk_tCa" resolve="NonListNonFileChannel" />
     <node concept="1TJgyj" id="7gAPJCESTOD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -255,6 +266,7 @@
     <property role="TrG5h" value="IntegerChannel" />
     <property role="34LRSv" value="integer channel" />
     <property role="R4oN_" value="this channel will contain integers" />
+    <property role="1pbfSe" value="1627020904" />
     <ref role="1TJDcQ" node="5ok1XDk_tCa" resolve="NonListNonFileChannel" />
     <node concept="1TJgyj" id="7gAPJCERGEx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -271,6 +283,7 @@
     <property role="TrG5h" value="BooleanChannel" />
     <property role="34LRSv" value="boolean channel" />
     <property role="R4oN_" value="this channel will contain booleans" />
+    <property role="1pbfSe" value="1627020899" />
     <ref role="1TJDcQ" node="5ok1XDk_tCa" resolve="NonListNonFileChannel" />
     <node concept="1TJgyj" id="7gAPJCERGE$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -287,6 +300,7 @@
     <property role="TrG5h" value="FileChannel" />
     <property role="34LRSv" value="file channel" />
     <property role="R4oN_" value="this channel will contain files" />
+    <property role="1pbfSe" value="1627020896" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     <node concept="1TJgyj" id="7gAPJCERGEB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -303,6 +317,7 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="ProcessInputOutput" />
+    <property role="1pbfSe" value="1626734132" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6qiI2N4J0hS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -319,12 +334,14 @@
     <property role="TrG5h" value="OutputChannel" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1626704972" />
     <ref role="1TJDcQ" node="3m26PihhBwN" resolve="OutChannelContainer" />
   </node>
   <node concept="1TIwiD" id="dxSprUGgfG">
     <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ScriptStringArgs" />
     <property role="R4oN_" value="string arguments to be referenced in script" />
+    <property role="1pbfSe" value="32316030" />
     <ref role="1TJDcQ" node="5c2H0VLJOBl" resolve="ScriptArgs" />
     <node concept="1TJgyi" id="dxSprUGgfJ" role="1TKVEl">
       <property role="TrG5h" value="stringArg" />
@@ -336,6 +353,7 @@
     <property role="TrG5h" value="ScriptArgs" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1153564131" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5c2H0VLJOBm" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -345,6 +363,7 @@
     <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ScriptIntegerArgs" />
     <property role="R4oN_" value="integer arguments to be referenced in script" />
+    <property role="1pbfSe" value="1153564134" />
     <ref role="1TJDcQ" node="5c2H0VLJOBl" resolve="ScriptArgs" />
     <node concept="1TJgyi" id="5c2H0VLJOBp" role="1TKVEl">
       <property role="TrG5h" value="intArg" />
@@ -355,6 +374,7 @@
     <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ScriptBooleanArgs" />
     <property role="R4oN_" value="boolean arguments to be referenced in script" />
+    <property role="1pbfSe" value="1153564326" />
     <ref role="1TJDcQ" node="5c2H0VLJOBl" resolve="ScriptArgs" />
     <node concept="1TJgyi" id="5c2H0VLJOEp" role="1TKVEl">
       <property role="TrG5h" value="boolArg" />
@@ -368,6 +388,7 @@
     <property role="34LRSv" value="script" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="22284207" />
     <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
     <node concept="1TJgyj" id="70dPcAeBC7L" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -381,6 +402,7 @@
     <property role="TrG5h" value="ProcessValueTypeDeclaration" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="21863590" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6qiI2N4Hxhu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -396,6 +418,7 @@
     <property role="TrG5h" value="ValueInAChannelRef" />
     <property role="34LRSv" value="$" />
     <property role="R4oN_" value="Value of an input variable" />
+    <property role="1pbfSe" value="21792645" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="70dPcAeDqfv" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -412,6 +435,7 @@
     <property role="TrG5h" value="List" />
     <property role="34LRSv" value="list" />
     <property role="R4oN_" value="list as input or output" />
+    <property role="1pbfSe" value="1532897817" />
     <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
     <node concept="1TJgyj" id="6qiI2N4G1iL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -425,6 +449,7 @@
     <property role="TrG5h" value="ListChannel" />
     <property role="34LRSv" value="list channel" />
     <property role="R4oN_" value="this channel contains lists" />
+    <property role="1pbfSe" value="1532897821" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     <node concept="1TJgyj" id="3v6eDgz_YZh" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -441,6 +466,7 @@
     <property role="TrG5h" value="TupleChannel" />
     <property role="34LRSv" value="tuple channel" />
     <property role="R4oN_" value="this channel will contain tuples" />
+    <property role="1pbfSe" value="1532916578" />
     <ref role="1TJDcQ" node="5ok1XDk_tCa" resolve="NonListNonFileChannel" />
     <node concept="1TJgyj" id="3v6eDgzA3zf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -456,6 +482,7 @@
     <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ScriptListArgs" />
     <property role="R4oN_" value="list arguments to be referenced in script" />
+    <property role="1pbfSe" value="1930648890" />
     <ref role="1TJDcQ" node="5c2H0VLJOBl" resolve="ScriptArgs" />
     <node concept="1TJgyj" id="3m9W35noHpP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -469,6 +496,7 @@
     <property role="TrG5h" value="NotATupleType" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1929629961" />
     <ref role="1TJDcQ" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
   </node>
   <node concept="1TIwiD" id="3m9W35nx3Yj">
@@ -476,12 +504,14 @@
     <property role="TrG5h" value="ListElements" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1928450108" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3m9W35nx3Yk">
     <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="IntegerElement" />
     <property role="R4oN_" value="integer element for a list" />
+    <property role="1pbfSe" value="1928450107" />
     <ref role="1TJDcQ" node="3m9W35nx3Yj" resolve="ListElements" />
     <node concept="1TJgyi" id="3m9W35nx3Yl" role="1TKVEl">
       <property role="TrG5h" value="int" />
@@ -492,6 +522,7 @@
     <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="StringElement" />
     <property role="R4oN_" value="string element for a list" />
+    <property role="1pbfSe" value="1928450104" />
     <ref role="1TJDcQ" node="3m9W35nx3Yj" resolve="ListElements" />
     <node concept="1TJgyi" id="3m9W35nx3Yo" role="1TKVEl">
       <property role="TrG5h" value="str" />
@@ -502,6 +533,7 @@
     <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="BooleanElement" />
     <property role="R4oN_" value="boolean element of a list" />
+    <property role="1pbfSe" value="1928450101" />
     <ref role="1TJDcQ" node="3m9W35nx3Yj" resolve="ListElements" />
     <node concept="1TJgyi" id="3m9W35nx3Yr" role="1TKVEl">
       <property role="TrG5h" value="bool" />
@@ -513,6 +545,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="channelFunctions" />
+    <property role="1pbfSe" value="1926496607" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCwTL">
@@ -520,6 +553,7 @@
     <property role="TrG5h" value="Collate" />
     <property role="34LRSv" value="collate" />
     <property role="R4oN_" value="Group elements into lists of n elements" />
+    <property role="1pbfSe" value="1926496606" />
     <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
     <node concept="1TJgyj" id="2W8f1273GsD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -541,6 +575,7 @@
     <property role="TrG5h" value="Flatten" />
     <property role="34LRSv" value="flatten" />
     <property role="R4oN_" value="Flatten lists of elements into single elements" />
+    <property role="1pbfSe" value="1926496359" />
     <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCxaI">
@@ -548,6 +583,7 @@
     <property role="TrG5h" value="ToList" />
     <property role="34LRSv" value="toList" />
     <property role="R4oN_" value="Convert elements to a list element" />
+    <property role="1pbfSe" value="1926495521" />
     <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
   </node>
   <node concept="1TIwiD" id="3m9W35nCxgw">
@@ -555,11 +591,13 @@
     <property role="TrG5h" value="ToSortedList" />
     <property role="34LRSv" value="toSortedList" />
     <property role="R4oN_" value="Convert elements to a sorted list element" />
+    <property role="1pbfSe" value="1926495151" />
     <ref role="1TJDcQ" node="3JbPZMXXswk" resolve="ToListFunction" />
   </node>
   <node concept="1TIwiD" id="5AoFZCLt6Ly">
     <property role="TrG5h" value="GlobalChannel" />
     <property role="34LRSv" value="global channel" />
+    <property role="1pbfSe" value="1962075044" />
     <ref role="1TJDcQ" node="3m26PihhBwN" resolve="OutChannelContainer" />
     <node concept="1TJgyj" id="3m26PihhBJU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -573,11 +611,13 @@
     <property role="TrG5h" value="ListTypes" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1960354845" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5AoFZCLzEMK">
     <property role="3GE5qa" value="scripts" />
     <property role="TrG5h" value="ListElement" />
+    <property role="1pbfSe" value="1960354646" />
     <ref role="1TJDcQ" node="3m9W35nx3Yj" resolve="ListElements" />
     <node concept="1TJgyj" id="5AoFZCLzEML" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -590,6 +630,7 @@
     <property role="TrG5h" value="OutChannelContainer" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="959933561" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3m26PihhBwO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -600,6 +641,7 @@
     <property role="TrG5h" value="BaseLanguageScriptAdapter" />
     <property role="34LRSv" value="base language script" />
     <property role="R4oN_" value="Script with conditional statements and BASH" />
+    <property role="1pbfSe" value="1155256202" />
     <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
     <node concept="1TJgyj" id="59canFOdI$K" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -612,6 +654,7 @@
     <property role="3GE5qa" value="scripts.conditionalScript" />
     <property role="TrG5h" value="ConditionalExpressionText" />
     <property role="34LRSv" value="expression script" />
+    <property role="1pbfSe" value="1190112736" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="59canFOCShB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -624,6 +667,7 @@
     <property role="3GE5qa" value="scripts.conditionalScript" />
     <property role="TrG5h" value="ConditionalVariableRef" />
     <property role="34LRSv" value="variable" />
+    <property role="1pbfSe" value="1255464189" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5DmojlqPc9M" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
@@ -638,10 +682,12 @@
   <node concept="1TIwiD" id="33IVfFaApTg">
     <property role="TrG5h" value="FileType" />
     <property role="34LRSv" value="file" />
+    <property role="1pbfSe" value="74937526" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="7b7Ia6NI2vy">
     <property role="TrG5h" value="ChannelType" />
+    <property role="1pbfSe" value="645914755" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyj" id="7b7Ia6Oh0Mf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -655,6 +701,7 @@
     <property role="TrG5h" value="Tuple" />
     <property role="34LRSv" value="tuple" />
     <property role="R4oN_" value="tuple as input or output" />
+    <property role="1pbfSe" value="1532916388" />
     <ref role="1TJDcQ" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
     <node concept="1TJgyj" id="2Hhp$WDzSdA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -675,6 +722,7 @@
   <node concept="1TIwiD" id="2Hhp$WE5lSU">
     <property role="TrG5h" value="TupleType" />
     <property role="34LRSv" value="tuple" />
+    <property role="1pbfSe" value="1432798345" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyj" id="6$PrPkYFQk7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -688,6 +736,7 @@
     <property role="TrG5h" value="ToListFunction" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="104751088" />
     <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
   </node>
   <node concept="1TIwiD" id="5ok1XDk_tCa">
@@ -695,11 +744,13 @@
     <property role="TrG5h" value="NonListNonFileChannel" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1431707164" />
     <ref role="1TJDcQ" node="6qiI2N4Hx1D" resolve="ProcessTypeDeclaration" />
   </node>
   <node concept="1TIwiD" id="5ok1XDm1KPg">
     <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="FileListChannel" />
+    <property role="1pbfSe" value="1407511254" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     <node concept="1TJgyj" id="5ok1XDm1QXV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -716,6 +767,7 @@
     <property role="TrG5h" value="FileList" />
     <property role="R4oN_" value="list of files as input or output" />
     <property role="34LRSv" value="list&lt;file&gt;" />
+    <property role="1pbfSe" value="1407503566" />
     <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
     <node concept="asaX9" id="6qiI2N5bpUl" role="lGtFl" />
   </node>
@@ -724,6 +776,7 @@
     <property role="TrG5h" value="CollateStepSize" />
     <property role="34LRSv" value="step size" />
     <property role="R4oN_" value="specifies the step by which elements are collected in tuples" />
+    <property role="1pbfSe" value="1240005793" />
     <ref role="1TJDcQ" node="2W8f1273G7R" resolve="CollateOption" />
     <node concept="1TJgyi" id="2W8f1273GLw" role="1TKVEl">
       <property role="TrG5h" value="stepSize" />
@@ -735,6 +788,7 @@
     <property role="TrG5h" value="CollateAllowIncompleteTuples" />
     <property role="34LRSv" value="allow incomplete tuples" />
     <property role="R4oN_" value="specify false if you want to avoid the last tuple being incomplete" />
+    <property role="1pbfSe" value="1240006969" />
     <ref role="1TJDcQ" node="2W8f1273G7R" resolve="CollateOption" />
     <node concept="1TJgyi" id="2W8f1273GjT" role="1TKVEl">
       <property role="TrG5h" value="allowIncomplete" />
@@ -746,11 +800,13 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="CollateOption" />
+    <property role="1pbfSe" value="1240007161" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="D$tkU1WQf_">
     <property role="TrG5h" value="NameInAChannelRef" />
     <property role="34LRSv" value="'" />
+    <property role="1pbfSe" value="1940399821" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6TmjYLGgm0h" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
@@ -765,6 +821,7 @@
   <node concept="1TIwiD" id="5HJ0QzxC1s2">
     <property role="TrG5h" value="Report" />
     <property role="3GE5qa" value="reports" />
+    <property role="1pbfSe" value="1024399978" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5HJ0QzxC1sm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -793,11 +850,13 @@
     <property role="TrG5h" value="ReportParameter" />
     <property role="34LRSv" value="c" />
     <property role="R4oN_" value="The output channel that will hold values to report about" />
+    <property role="1pbfSe" value="1026109227" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="5HJ0QzxIyJ0">
     <property role="3GE5qa" value="reports" />
     <property role="TrG5h" value="ReportFunction" />
+    <property role="1pbfSe" value="1026109224" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="6qiI2N4Hx1D">
@@ -805,6 +864,7 @@
     <property role="TrG5h" value="ProcessTypeDeclaration" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="726190229" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6qiI2N5buWm" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -813,6 +873,7 @@
   <node concept="1TIwiD" id="6qiI2N5sbyo">
     <property role="3GE5qa" value="processTypeDeclarations" />
     <property role="TrG5h" value="TupleElement" />
+    <property role="1pbfSe" value="738422980" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     <node concept="1TJgyj" id="6qiI2N5sbyp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -833,6 +894,7 @@
     <property role="TrG5h" value="ToTuple" />
     <property role="34LRSv" value="toTuple" />
     <property role="R4oN_" value="Convert elements into tuples" />
+    <property role="1pbfSe" value="1478554793" />
     <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
   </node>
   <node concept="1TIwiD" id="3aOvEIt8nSZ">
@@ -840,6 +902,7 @@
     <property role="TrG5h" value="PrimitiveTypeValue" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="808059670" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
   </node>
   <node concept="1TIwiD" id="3aOvEIt8t9F">
@@ -847,6 +910,7 @@
     <property role="TrG5h" value="Range" />
     <property role="34LRSv" value="range" />
     <property role="R4oN_" value="Range literal" />
+    <property role="1pbfSe" value="808038122" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyj" id="3aOvEIt8t9J" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -866,6 +930,7 @@
     <property role="TrG5h" value="NewStringLiteral" />
     <property role="34LRSv" value="&quot;" />
     <property role="R4oN_" value="String literal" />
+    <property role="1pbfSe" value="808059383" />
     <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveTypeValue" />
     <node concept="1TJgyi" id="3aOvEIt8ocz" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -877,6 +942,7 @@
     <property role="3GE5qa" value="newChannelInitializer" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="808059384" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3aOvEIt8rQW">
@@ -884,6 +950,7 @@
     <property role="TrG5h" value="NewTupleLiteral" />
     <property role="34LRSv" value="[" />
     <property role="R4oN_" value="Tuple literal" />
+    <property role="1pbfSe" value="808043417" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyj" id="3aOvEIt8rRi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -897,6 +964,7 @@
     <property role="TrG5h" value="NewFileLiteral" />
     <property role="34LRSv" value="file" />
     <property role="R4oN_" value="File path literal" />
+    <property role="1pbfSe" value="808039847" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyi" id="3aOvEIt8sIM" role="1TKVEl">
       <property role="TrG5h" value="path" />
@@ -908,6 +976,7 @@
     <property role="TrG5h" value="NewIntegerLiteral" />
     <property role="34LRSv" value="integer" />
     <property role="R4oN_" value="Integer literal" />
+    <property role="1pbfSe" value="808045249" />
     <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveTypeValue" />
     <node concept="1TJgyi" id="3aOvEIt8rr3" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -919,6 +988,7 @@
     <property role="TrG5h" value="NewListLiteral" />
     <property role="34LRSv" value="[" />
     <property role="R4oN_" value="List literal" />
+    <property role="1pbfSe" value="808045161" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyj" id="3aOvEIt8rrH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -932,6 +1002,7 @@
     <property role="TrG5h" value="NewBooleanLiteral" />
     <property role="34LRSv" value="boolean" />
     <property role="R4oN_" value="Boolean literal" />
+    <property role="1pbfSe" value="808045182" />
     <ref role="1TJDcQ" node="3aOvEIt8nSZ" resolve="PrimitiveTypeValue" />
     <node concept="1TJgyi" id="3aOvEIt8rro" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -943,6 +1014,7 @@
     <property role="TrG5h" value="SplitText" />
     <property role="34LRSv" value="splitText" />
     <property role="R4oN_" value=" Create records from elements in plain text format" />
+    <property role="1pbfSe" value="1639830941" />
     <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILjgXaG">
@@ -950,6 +1022,7 @@
     <property role="TrG5h" value="Buffer" />
     <property role="34LRSv" value="buffer" />
     <property role="R4oN_" value="Gather elements into subsets, emit the subsets separately" />
+    <property role="1pbfSe" value="1653518744" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILilGma">
@@ -957,6 +1030,7 @@
     <property role="TrG5h" value="First" />
     <property role="34LRSv" value="first" />
     <property role="R4oN_" value="Pick the first element or the first matching the condition" />
+    <property role="1pbfSe" value="1637983350" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILis0lI">
@@ -964,6 +1038,7 @@
     <property role="TrG5h" value="FunctionWithClosure" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1639638106" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
     <node concept="1TJgyj" id="1qs9CHFOsoJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -979,6 +1054,7 @@
     <property role="TrG5h" value="SplitCSV" />
     <property role="34LRSv" value="splitCsv" />
     <property role="R4oN_" value="Create records from elements in CSV format" />
+    <property role="1pbfSe" value="1639638107" />
     <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILisRbb">
@@ -986,6 +1062,7 @@
     <property role="TrG5h" value="FlatMap" />
     <property role="34LRSv" value="flatMap" />
     <property role="R4oN_" value="Transform each item from a source channel with a user defined function." />
+    <property role="1pbfSe" value="1639862711" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILilHC4">
@@ -993,6 +1070,7 @@
     <property role="TrG5h" value="Take" />
     <property role="34LRSv" value="take" />
     <property role="R4oN_" value="Pick the first n elements" />
+    <property role="1pbfSe" value="1637988592" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
     <node concept="1TJgyj" id="4O3IO9sBqd3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1006,6 +1084,7 @@
     <property role="TrG5h" value="SplitFastq" />
     <property role="34LRSv" value="splitFastq" />
     <property role="R4oN_" value="Create records from elements in FASTQ format" />
+    <property role="1pbfSe" value="1639829660" />
     <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILilDAq">
@@ -1013,6 +1092,7 @@
     <property role="TrG5h" value="Distinct" />
     <property role="34LRSv" value="distinct" />
     <property role="R4oN_" value="Remove consecutive duplicated items from a channel" />
+    <property role="1pbfSe" value="1637972102" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILhrTOx">
@@ -1020,6 +1100,7 @@
     <property role="TrG5h" value="NoArgFunction" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1622834189" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILjgU7G">
@@ -1027,6 +1108,7 @@
     <property role="TrG5h" value="GroupTuple" />
     <property role="34LRSv" value="groupTuple" />
     <property role="R4oN_" value="Collect tuples of elements that share the same key" />
+    <property role="1pbfSe" value="1653506264" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
     <node concept="1TJgyj" id="6LbMDSKNY_2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1039,6 +1121,7 @@
     <property role="TrG5h" value="Unique" />
     <property role="34LRSv" value="unique" />
     <property role="R4oN_" value="Remove duplicated elements from a channel" />
+    <property role="1pbfSe" value="1627833327" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILisNjl">
@@ -1046,6 +1129,7 @@
     <property role="TrG5h" value="ArgRegexLiteralQualifierPredicate" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1639846849" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILisPoE">
@@ -1053,6 +1137,7 @@
     <property role="TrG5h" value="MapFunction" />
     <property role="34LRSv" value="map" />
     <property role="R4oN_" value="Transform each items emitted by a source channel with a user define function and return them" />
+    <property role="1pbfSe" value="1639855382" />
     <ref role="1TJDcQ" node="1EP6SKygw2j" resolve="FunctionWithClosureType" />
   </node>
   <node concept="1TIwiD" id="XaRILjgRRX">
@@ -1060,6 +1145,7 @@
     <property role="TrG5h" value="GroupBy" />
     <property role="34LRSv" value="groupBy" />
     <property role="R4oN_" value="From items emitted by a source channel return a map according to a define mapping function" />
+    <property role="1pbfSe" value="1653497065" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="XaRILirYxk">
@@ -1067,6 +1153,7 @@
     <property role="TrG5h" value="Last" />
     <property role="34LRSv" value="last" />
     <property role="R4oN_" value="Pick the last element" />
+    <property role="1pbfSe" value="1639630656" />
     <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILisH5y">
@@ -1074,6 +1161,7 @@
     <property role="TrG5h" value="SplitFasta" />
     <property role="34LRSv" value="splitFasta" />
     <property role="R4oN_" value="Create records from elements in FASTA format" />
+    <property role="1pbfSe" value="1639821390" />
     <ref role="1TJDcQ" node="1qs9CHFOrh8" resolve="SplitFunction" />
   </node>
   <node concept="1TIwiD" id="XaRILjgRyP">
@@ -1081,6 +1169,7 @@
     <property role="TrG5h" value="Reduce" />
     <property role="34LRSv" value="reduce" />
     <property role="R4oN_" value="Apply a function to every input value" />
+    <property role="1pbfSe" value="1653495713" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
     <node concept="PrWs8" id="5kDh3zAyJ3D" role="PzmwI">
       <ref role="PrY4T" node="1tMFr$HNUs9" resolve="HasClosure" />
@@ -1096,11 +1185,13 @@
     <property role="TrG5h" value="Filter" />
     <property role="R4oN_" value="Filter elements matching the condition" />
     <property role="34LRSv" value="filter" />
+    <property role="1pbfSe" value="1622947975" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="2fLVrqPJSZI">
     <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="ProcessInput" />
+    <property role="1pbfSe" value="642679388" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     <node concept="1TJgyi" id="2fLVrqPJUQP" role="1TKVEl">
       <property role="TrG5h" value="toStandardInput" />
@@ -1111,6 +1202,7 @@
     <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="ProcessOutput" />
     <property role="R4oN_" value="Output of a Process" />
+    <property role="1pbfSe" value="637762830" />
     <ref role="1TJDcQ" node="7gAPJCESMFi" resolve="ProcessInputOutput" />
     <node concept="PrWs8" id="5a$ayBiSq3R" role="PzmwI">
       <ref role="PrY4T" node="5a$ayBiSpGk" resolve="HasExpression" />
@@ -1134,6 +1226,7 @@
     <property role="TrG5h" value="SplitFunction" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="2106729773" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
     <node concept="1TJgyj" id="5SFkxYfRDBf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1147,6 +1240,7 @@
     <property role="TrG5h" value="ArgRegexQualifierPredicate" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="2106748665" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
   </node>
   <node concept="1TIwiD" id="4g1gOgy0q_n">
@@ -1154,11 +1248,13 @@
     <property role="TrG5h" value="HiddenTypeVarDeclaration" />
     <property role="34LRSv" value="var" />
     <property role="R4oN_" value="Declare a variable visible in Process output expressions " />
+    <property role="1pbfSe" value="1711467675" />
     <ref role="1TJDcQ" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
   </node>
   <node concept="1TIwiD" id="2fLVrqQF3tr">
     <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="OutputExpression" />
+    <property role="1pbfSe" value="627170031" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2fLVrqQF3uo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1170,6 +1266,7 @@
   <node concept="1TIwiD" id="2fLVrqRhKBd">
     <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="InputFromBaseLanguageScript" />
+    <property role="1pbfSe" value="617023613" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="2fLVrqRhKBe" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1181,6 +1278,7 @@
   <node concept="1TIwiD" id="2fLVrqQZ5d5">
     <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="InputValue" />
+    <property role="1pbfSe" value="621920005" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="2fLVrqQZ5t6" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1194,6 +1292,7 @@
     <property role="34LRSv" value="print" />
     <property role="TrG5h" value="Print" />
     <property role="R4oN_" value="Print items emitted by a source channel and consume it" />
+    <property role="1pbfSe" value="628519558" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgovJ">
@@ -1201,6 +1300,7 @@
     <property role="34LRSv" value="mix" />
     <property role="TrG5h" value="Mix" />
     <property role="R4oN_" value="Combine elements from different channels" />
+    <property role="1pbfSe" value="627583013" />
     <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeIaW">
@@ -1208,6 +1308,7 @@
     <property role="TrG5h" value="Separate" />
     <property role="34LRSv" value="separate" />
     <property role="R4oN_" value="Copy items emitted by the source channel into multiple channels" />
+    <property role="1pbfSe" value="628018520" />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcNYR">
@@ -1215,6 +1316,7 @@
     <property role="TrG5h" value="Println" />
     <property role="34LRSv" value="println" />
     <property role="R4oN_" value="Print items emitted by a source channel with a new line and consume it" />
+    <property role="1pbfSe" value="628519005" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgoqS">
@@ -1222,6 +1324,7 @@
     <property role="TrG5h" value="Tap" />
     <property role="34LRSv" value="tap" />
     <property role="R4oN_" value="Copy the elements into a new channel " />
+    <property role="1pbfSe" value="627583324" />
     <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcO3d">
@@ -1229,6 +1332,7 @@
     <property role="TrG5h" value="View" />
     <property role="34LRSv" value="view" />
     <property role="R4oN_" value="Print items emitted by a source channel without consuming it" />
+    <property role="1pbfSe" value="628518727" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgnIR">
@@ -1236,6 +1340,7 @@
     <property role="TrG5h" value="ChannelFunctionWithChannelRef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="627586141" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
     <node concept="1TJgyi" id="3uBbkEdUoTn" role="1TKVEl">
       <property role="TrG5h" value="role" />
@@ -1253,6 +1358,7 @@
     <property role="TrG5h" value="Cross" />
     <property role="34LRSv" value="cross" />
     <property role="R4oN_" value="Combine items of two channels where items of the source and the target have a matching key" />
+    <property role="1pbfSe" value="628019975" />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOkA">
@@ -1260,6 +1366,7 @@
     <property role="TrG5h" value="CountBy" />
     <property role="34LRSv" value="countBy" />
     <property role="R4oN_" value="Create a channel which emits a Map from items in the source channel having the same key" />
+    <property role="1pbfSe" value="628517614" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOoY">
@@ -1267,6 +1374,7 @@
     <property role="TrG5h" value="Min" />
     <property role="34LRSv" value="min" />
     <property role="R4oN_" value="Emit the item that has the lowest value from a complete source channel" />
+    <property role="1pbfSe" value="628517334" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcWld">
@@ -1274,6 +1382,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="FunctionWithClosureAndChannelRefs" />
+    <property role="1pbfSe" value="628484807" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
     <node concept="1TJgyj" id="6TmjYLGeFMw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1290,6 +1399,7 @@
     <property role="TrG5h" value="IfEmpty" />
     <property role="34LRSv" value="ifEmpty" />
     <property role="R4oN_" value="Emit a value specified as parameter, when the source channel is empty" />
+    <property role="1pbfSe" value="628520657" />
     <ref role="1TJDcQ" node="1EP6SKygw2j" resolve="FunctionWithClosureType" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgpKP">
@@ -1297,6 +1407,7 @@
     <property role="TrG5h" value="Spread" />
     <property role="34LRSv" value="spread" />
     <property role="R4oN_" value="Combine each element with the argument into a tuple" />
+    <property role="1pbfSe" value="627577823" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
     <node concept="1TJgyj" id="4O3IO9swAdJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1310,6 +1421,7 @@
     <property role="TrG5h" value="Phase" />
     <property role="34LRSv" value="phase" />
     <property role="R4oN_" value="Synchronize values emitted by two channels and emits pairs of items which have a matching key" />
+    <property role="1pbfSe" value="628021956" />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
     <node concept="1TJgyi" id="5SDnWB_47yw" role="1TKVEl">
       <property role="TrG5h" value="remainder" />
@@ -1321,6 +1433,7 @@
     <property role="TrG5h" value="Sum" />
     <property role="34LRSv" value="sum" />
     <property role="R4oN_" value="Emit the sum of all the items emitted by the source channel itself" />
+    <property role="1pbfSe" value="628517052" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeHXi">
@@ -1328,6 +1441,7 @@
     <property role="TrG5h" value="Choice" />
     <property role="34LRSv" value="choice" />
     <property role="R4oN_" value=" Forward items emitted by a source channel to two (or more) output channels" />
+    <property role="1pbfSe" value="628019394" />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGgpKC">
@@ -1335,6 +1449,7 @@
     <property role="TrG5h" value="Concat" />
     <property role="34LRSv" value="concat" />
     <property role="R4oN_" value="Concatenate elements by keeping the same order" />
+    <property role="1pbfSe" value="627577836" />
     <ref role="1TJDcQ" node="6TmjYLGgnIR" resolve="ChannelFunctionWithChannelRef" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeGXs">
@@ -1342,6 +1457,7 @@
     <property role="TrG5h" value="Merge" />
     <property role="34LRSv" value="merge" />
     <property role="R4oN_" value="Merge items emitted by two (or more) channels into a new one" />
+    <property role="1pbfSe" value="628023480" />
     <ref role="1TJDcQ" node="6TmjYLGcWld" resolve="FunctionWithClosureAndChannelRefs" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGcOtn">
@@ -1349,10 +1465,12 @@
     <property role="TrG5h" value="Max" />
     <property role="34LRSv" value="max" />
     <property role="R4oN_" value="Emit the item that has the greatest value from a complete source channel" />
+    <property role="1pbfSe" value="628517053" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="6TmjYLGeFpH">
     <property role="TrG5h" value="OutChannelContainerRef" />
+    <property role="1pbfSe" value="628029863" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3uBbkEdUmQN" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -1369,6 +1487,7 @@
     <property role="TrG5h" value="Header" />
     <property role="34LRSv" value="header" />
     <property role="R4oN_" value="when true, the first line is used as column names. Can also provide the list of column names" />
+    <property role="1pbfSe" value="418916502" />
     <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
   </node>
   <node concept="1TIwiD" id="3EHTfOIRUwz">
@@ -1376,6 +1495,7 @@
     <property role="TrG5h" value="Limit" />
     <property role="34LRSv" value="limit" />
     <property role="R4oN_" value="limits the number of expected elements to the specified value" />
+    <property role="1pbfSe" value="1770884384" />
     <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
     <node concept="1TJgyi" id="3EHTfOIRUw$" role="1TKVEl">
       <property role="TrG5h" value="n" />
@@ -1387,6 +1507,7 @@
     <property role="TrG5h" value="FileSplitOption" />
     <property role="34LRSv" value="file" />
     <property role="R4oN_" value="when true saves each split to a file. strings may also be used to create files with a specific name" />
+    <property role="1pbfSe" value="431853107" />
     <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
     <node concept="1TJgyj" id="dOBxzyNtOp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1400,6 +1521,7 @@
     <property role="TrG5h" value="Decompress" />
     <property role="34LRSv" value="decompress" />
     <property role="R4oN_" value="when true, decompress the content using the GZIP format before processing" />
+    <property role="1pbfSe" value="431857470" />
     <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
     <node concept="1TJgyi" id="dOBxzyNteh" role="1TKVEl">
       <property role="TrG5h" value="flag" />
@@ -1411,6 +1533,7 @@
     <property role="TrG5h" value="Strip" />
     <property role="34LRSv" value="strip" />
     <property role="R4oN_" value="remove leading and trailing blanks from values" />
+    <property role="1pbfSe" value="411452327" />
     <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
     <node concept="1TJgyi" id="dOBxz$1hT4" role="1TKVEl">
       <property role="TrG5h" value="trim" />
@@ -1422,6 +1545,7 @@
     <property role="TrG5h" value="RecordOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="383986947" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="dOBxz$1hTY">
@@ -1429,6 +1553,7 @@
     <property role="TrG5h" value="Skip" />
     <property role="34LRSv" value="skip" />
     <property role="R4oN_" value="ignore n lines since the file beginning when parsing content" />
+    <property role="1pbfSe" value="411452266" />
     <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
     <node concept="1TJgyi" id="dOBxz$1hTZ" role="1TKVEl">
       <property role="TrG5h" value="n" />
@@ -1440,6 +1565,7 @@
     <property role="TrG5h" value="SplitOption" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1770823839" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3EHTfOIRURG">
@@ -1447,6 +1573,7 @@
     <property role="TrG5h" value="Record" />
     <property role="34LRSv" value="record" />
     <property role="R4oN_" value="parse each entry in the file as record objects" />
+    <property role="1pbfSe" value="1770885865" />
     <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
     <node concept="1TJgyj" id="dOBxz_E3uU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1460,6 +1587,7 @@
     <property role="TrG5h" value="Sep" />
     <property role="34LRSv" value="sep" />
     <property role="R4oN_" value="the character used to seperate the values" />
+    <property role="1pbfSe" value="1770885827" />
     <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
     <node concept="1TJgyi" id="3EHTfOIRUR7" role="1TKVEl">
       <property role="TrG5h" value="seperator" />
@@ -1471,6 +1599,7 @@
     <property role="TrG5h" value="Charset" />
     <property role="34LRSv" value="charset" />
     <property role="R4oN_" value="parse the content by using the specified charset" />
+    <property role="1pbfSe" value="1770905877" />
     <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
     <node concept="1TJgyi" id="dOBxzyu2Dy" role="1TKVEl">
       <property role="TrG5h" value="charset" />
@@ -1482,6 +1611,7 @@
     <property role="TrG5h" value="Elem" />
     <property role="34LRSv" value="elem" />
     <property role="R4oN_" value="splits the list/tuple at the specified index of the element" />
+    <property role="1pbfSe" value="418921860" />
     <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
     <node concept="1TJgyi" id="dOBxzz$MrR" role="1TKVEl">
       <property role="TrG5h" value="index" />
@@ -1493,6 +1623,7 @@
     <property role="TrG5h" value="By" />
     <property role="34LRSv" value="by" />
     <property role="R4oN_" value="the number of expected pieces in each chunk" />
+    <property role="1pbfSe" value="1770840592" />
     <ref role="1TJDcQ" node="3EHTfOIRFIy" resolve="SplitOption" />
     <node concept="1TJgyi" id="3EHTfOIRPOP" role="1TKVEl">
       <property role="TrG5h" value="n" />
@@ -1504,6 +1635,7 @@
     <property role="TrG5h" value="SeqString" />
     <property role="34LRSv" value="seqString" />
     <property role="R4oN_" value="the sequence data as a single line string" />
+    <property role="1pbfSe" value="745024563" />
     <ref role="1TJDcQ" node="1jEBYCnvqGY" resolve="SplitFastaRecordFields" />
   </node>
   <node concept="1TIwiD" id="1jEBYCnvnse">
@@ -1511,11 +1643,13 @@
     <property role="TrG5h" value="Desc" />
     <property role="34LRSv" value="desc" />
     <property role="R4oN_" value="the text in the FASTA header following the ID value" />
+    <property role="1pbfSe" value="745019128" />
     <ref role="1TJDcQ" node="1jEBYCnvqGY" resolve="SplitFastaRecordFields" />
   </node>
   <node concept="1TIwiD" id="1jEBYCnbe45">
     <property role="3GE5qa" value="channelFunctions.splitFunctions.splitOptions.recordOptions" />
     <property role="TrG5h" value="BooleanRecordOption" />
+    <property role="1pbfSe" value="739737839" />
     <ref role="1TJDcQ" node="dOBxz_E3j_" resolve="RecordOption" />
     <node concept="1TJgyi" id="1jEBYCnbSzi" role="1TKVEl">
       <property role="TrG5h" value="flag" />
@@ -1527,6 +1661,7 @@
     <property role="TrG5h" value="Id" />
     <property role="34LRSv" value="id" />
     <property role="R4oN_" value="the FASTA sequence identifier" />
+    <property role="1pbfSe" value="745015985" />
     <ref role="1TJDcQ" node="1jEBYCnvqGY" resolve="SplitFastaRecordFields" />
   </node>
   <node concept="1TIwiD" id="1jEBYCnvoLA">
@@ -1534,6 +1669,7 @@
     <property role="TrG5h" value="Sequence" />
     <property role="34LRSv" value="sequence" />
     <property role="R4oN_" value="the sequence data as a multi-line string" />
+    <property role="1pbfSe" value="745024592" />
     <ref role="1TJDcQ" node="1jEBYCnvqGY" resolve="SplitFastaRecordFields" />
   </node>
   <node concept="1TIwiD" id="1jEBYCnvntg">
@@ -1541,6 +1677,7 @@
     <property role="TrG5h" value="Text" />
     <property role="34LRSv" value="text" />
     <property role="R4oN_" value="the complete FASTA sequence including the header" />
+    <property role="1pbfSe" value="745019194" />
     <ref role="1TJDcQ" node="1jEBYCnvqGY" resolve="SplitFastaRecordFields" />
   </node>
   <node concept="1TIwiD" id="1jEBYCnvoSN">
@@ -1548,6 +1685,7 @@
     <property role="TrG5h" value="QualityString" />
     <property role="34LRSv" value="qualityString" />
     <property role="R4oN_" value="quality values for the sequence" />
+    <property role="1pbfSe" value="745025053" />
     <ref role="1TJDcQ" node="1jEBYCnvoYF" resolve="SplitFastqRecordFields" />
   </node>
   <node concept="1TIwiD" id="1jEBYCnvqGY">
@@ -1555,6 +1693,7 @@
     <property role="TrG5h" value="SplitFastaRecordFields" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="745032488" />
     <ref role="1TJDcQ" node="1jEBYCnvm_j" resolve="RecordField" />
   </node>
   <node concept="1TIwiD" id="1jEBYCnvoSk">
@@ -1562,6 +1701,7 @@
     <property role="TrG5h" value="QualityHeader" />
     <property role="34LRSv" value="qualityHeader" />
     <property role="R4oN_" value="base quality header" />
+    <property role="1pbfSe" value="745025022" />
     <ref role="1TJDcQ" node="1jEBYCnvoYF" resolve="SplitFastqRecordFields" />
   </node>
   <node concept="1TIwiD" id="1jEBYCnvn3C">
@@ -1569,6 +1709,7 @@
     <property role="TrG5h" value="RecordHeader" />
     <property role="34LRSv" value="header" />
     <property role="R4oN_" value="the first line in a FASTA sequence" />
+    <property role="1pbfSe" value="745017554" />
     <ref role="1TJDcQ" node="1jEBYCnvqGY" resolve="SplitFastaRecordFields" />
   </node>
   <node concept="1TIwiD" id="1jEBYCnvoRq">
@@ -1576,6 +1717,7 @@
     <property role="TrG5h" value="ReadHeader" />
     <property role="34LRSv" value="readHeader" />
     <property role="R4oN_" value="sequence header" />
+    <property role="1pbfSe" value="745024964" />
     <ref role="1TJDcQ" node="1jEBYCnvoYF" resolve="SplitFastqRecordFields" />
   </node>
   <node concept="1TIwiD" id="1jEBYCnvm_j">
@@ -1583,6 +1725,7 @@
     <property role="TrG5h" value="RecordField" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="745015613" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1jEBYCnvnP7" role="1TKVEl">
       <property role="TrG5h" value="flag" />
@@ -1594,6 +1737,7 @@
     <property role="TrG5h" value="ReadString" />
     <property role="34LRSv" value="readString" />
     <property role="R4oN_" value="the raw sequence data" />
+    <property role="1pbfSe" value="745024993" />
     <ref role="1TJDcQ" node="1jEBYCnvoYF" resolve="SplitFastqRecordFields" />
   </node>
   <node concept="1TIwiD" id="1jEBYCnvoYF">
@@ -1601,6 +1745,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="SplitFastqRecordFields" />
+    <property role="1pbfSe" value="745025429" />
     <ref role="1TJDcQ" node="1jEBYCnvm_j" resolve="RecordField" />
   </node>
   <node concept="1TIwiD" id="1jEBYCnvdDo">
@@ -1609,6 +1754,7 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="[" />
+    <property role="1pbfSe" value="744979010" />
     <ref role="1TJDcQ" node="dOBxz_E3j_" resolve="RecordOption" />
     <node concept="1TJgyj" id="1jEBYCnvm8e" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1622,6 +1768,7 @@
     <property role="TrG5h" value="ParamatersWithName" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1515416811" />
     <ref role="1TJDcQ" node="7VH0NfrpztH" resolve="Parameters" />
     <node concept="PrWs8" id="7VH0NfrpAAT" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -1632,6 +1779,7 @@
     <property role="TrG5h" value="FileName" />
     <property role="34LRSv" value="name" />
     <property role="R4oN_" value="Name of the output file where all received values are stored" />
+    <property role="1pbfSe" value="1515412707" />
     <ref role="1TJDcQ" node="7VH0NfrpAAS" resolve="ParamatersWithName" />
   </node>
   <node concept="1TIwiD" id="6ZbOXH8aImN">
@@ -1639,6 +1787,7 @@
     <property role="TrG5h" value="SortParameter" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1208567410" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6ZbOXH8aIMI">
@@ -1646,6 +1795,7 @@
     <property role="R4oN_" value="Order by the hash number created on actual entries" />
     <property role="34LRSv" value="&quot;deep&quot;" />
     <property role="TrG5h" value="SortDeep" />
+    <property role="1pbfSe" value="1208565623" />
     <ref role="1TJDcQ" node="6ZbOXH8aImN" resolve="SortParameter" />
   </node>
   <node concept="1TIwiD" id="6ZbOXH8aIMG">
@@ -1653,6 +1803,7 @@
     <property role="TrG5h" value="SortHash" />
     <property role="34LRSv" value="&quot;hash&quot;" />
     <property role="R4oN_" value="Order by the hash number associated to each entry" />
+    <property role="1pbfSe" value="1208565625" />
     <ref role="1TJDcQ" node="6ZbOXH8aImN" resolve="SortParameter" />
   </node>
   <node concept="1TIwiD" id="5Qox3WDpKnz">
@@ -1660,6 +1811,7 @@
     <property role="TrG5h" value="Newline" />
     <property role="34LRSv" value="newLine" />
     <property role="R4oN_" value="Appends a newline automatically after each entry" />
+    <property role="1pbfSe" value="2030073310" />
     <ref role="1TJDcQ" node="7VH0NfrpztH" resolve="Parameters" />
     <node concept="1TJgyi" id="5Qox3WDpKti" role="1TKVEl">
       <property role="TrG5h" value="boolValue" />
@@ -1671,6 +1823,7 @@
     <property role="TrG5h" value="CollectFile" />
     <property role="34LRSv" value="collectFile" />
     <property role="R4oN_" value="Items emits by a source channel can be saved to one ore more files" />
+    <property role="1pbfSe" value="1515112765" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
     <node concept="1TJgyj" id="7VH0Nfrp_So" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1684,6 +1837,7 @@
     <property role="TrG5h" value="TemporaryDirectory" />
     <property role="34LRSv" value="tempDir" />
     <property role="R4oN_" value="Folder where temporary files used by the collecting process, are stored" />
+    <property role="1pbfSe" value="2027277121" />
     <ref role="1TJDcQ" node="7VH0NfrpAAS" resolve="ParamatersWithName" />
   </node>
   <node concept="1TIwiD" id="6ZbOXH84ib3">
@@ -1691,6 +1845,7 @@
     <property role="TrG5h" value="Sort" />
     <property role="34LRSv" value="sort" />
     <property role="R4oN_" value="Defines sorting criteria of content in output file(s)." />
+    <property role="1pbfSe" value="1210255714" />
     <ref role="1TJDcQ" node="7VH0NfrpztH" resolve="Parameters" />
     <node concept="1TJgyj" id="6ZbOXH8cYmR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1701,6 +1856,7 @@
   <node concept="1TIwiD" id="5DC$1WkmvHE">
     <property role="TrG5h" value="ClosureLiteralWorkFlow" />
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="1pbfSe" value="1858243465" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6rO6MaAYBoU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1720,6 +1876,7 @@
     <property role="TrG5h" value="Seed" />
     <property role="34LRSv" value="seed" />
     <property role="R4oN_" value="Header of your output file" />
+    <property role="1pbfSe" value="1515416868" />
     <ref role="1TJDcQ" node="7VH0NfrpAAS" resolve="ParamatersWithName" />
   </node>
   <node concept="1TIwiD" id="5Qox3WD$3rY">
@@ -1727,6 +1884,7 @@
     <property role="TrG5h" value="OutputDirectory" />
     <property role="34LRSv" value="storeDir" />
     <property role="R4oN_" value="Folder where the resulting file(s) are stored" />
+    <property role="1pbfSe" value="2027373763" />
     <ref role="1TJDcQ" node="7VH0NfrpAAS" resolve="ParamatersWithName" />
   </node>
   <node concept="1TIwiD" id="7VH0NfrpztH">
@@ -1735,6 +1893,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="parameter?" />
+    <property role="1pbfSe" value="1515403936" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6ZbOXH8aIng">
@@ -1742,6 +1901,7 @@
     <property role="TrG5h" value="SortIndex" />
     <property role="34LRSv" value="&quot;index&quot;" />
     <property role="R4oN_" value="Order by the incremental index number assigned to each entry" />
+    <property role="1pbfSe" value="1208567381" />
     <ref role="1TJDcQ" node="6ZbOXH8aImN" resolve="SortParameter" />
   </node>
   <node concept="1TIwiD" id="6ZbOXH8aInf">
@@ -1749,6 +1909,7 @@
     <property role="TrG5h" value="Sorttrue" />
     <property role="34LRSv" value="true" />
     <property role="R4oN_" value="Order by the entries natural ordering i.e. numerical,lexicographic" />
+    <property role="1pbfSe" value="1208567382" />
     <ref role="1TJDcQ" node="6ZbOXH8aImN" resolve="SortParameter" />
   </node>
   <node concept="1TIwiD" id="1pJCaaoz_yY">
@@ -1756,6 +1917,7 @@
     <property role="TrG5h" value="Count" />
     <property role="34LRSv" value="count" />
     <property role="R4oN_" value="Creates a channel that emits the number of items in the source channel" />
+    <property role="1pbfSe" value="1359087264" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
   <node concept="1TIwiD" id="1shE7Zwr$_B">
@@ -1763,6 +1925,7 @@
     <property role="TrG5h" value="Map" />
     <property role="34LRSv" value="map" />
     <property role="R4oN_" value="map as input or output" />
+    <property role="1pbfSe" value="142609946" />
     <ref role="1TJDcQ" node="3m9W35nszV6" resolve="NotATupleType" />
     <node concept="1TJgyj" id="1shE7ZwrEjU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1780,6 +1943,7 @@
   <node concept="PlHQZ" id="5a$ayBiSpGk">
     <property role="3GE5qa" value="processIO" />
     <property role="TrG5h" value="HasExpression" />
+    <property role="1pbfSe" value="629523773" />
     <node concept="1TJgyj" id="5a$ayBiSq4E" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
@@ -1789,15 +1953,18 @@
   </node>
   <node concept="PlHQZ" id="1z1zDaaJoJq">
     <property role="TrG5h" value="HasConnectedChannel" />
+    <property role="1pbfSe" value="1551951252" />
   </node>
   <node concept="PlHQZ" id="1tMFr$HNUs9">
     <property role="3GE5qa" value="channelFunctions" />
     <property role="TrG5h" value="HasClosure" />
+    <property role="1pbfSe" value="1161974978" />
   </node>
   <node concept="1TIwiD" id="10nk9FBT4zy">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="ParameterContainer" />
     <property role="R4oN_" value="contains the parameter of a closure" />
+    <property role="1pbfSe" value="134506116" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1$nyghyib1Y" role="1TKVEl">
       <property role="TrG5h" value="isTuple" />
@@ -1817,6 +1984,7 @@
     <property role="TrG5h" value="ChooseKeyIndex" />
     <property role="34LRSv" value="by" />
     <property role="R4oN_" value="index of entry used as key" />
+    <property role="1pbfSe" value="1659104451" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6LbMDSKO4yw" role="1TKVEl">
       <property role="TrG5h" value="n" />
@@ -1827,6 +1995,7 @@
     <property role="TrG5h" value="TupleLiteralExpression" />
     <property role="34LRSv" value="[" />
     <property role="R4oN_" value="tuple expression" />
+    <property role="1pbfSe" value="1612466744" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="3dQaW8GDyl9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1840,6 +2009,7 @@
     <property role="TrG5h" value="RegexpValue" />
     <property role="34LRSv" value="regexp" />
     <property role="R4oN_" value="Regular expression" />
+    <property role="1pbfSe" value="833324807" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyj" id="4VptOfyOwZ5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1853,6 +2023,7 @@
     <property role="TrG5h" value="ConstantExpression" />
     <property role="34LRSv" value="constant" />
     <property role="R4oN_" value="Constant value" />
+    <property role="1pbfSe" value="395679494" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyj" id="7pq1c5M4UTG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1866,6 +2037,7 @@
     <property role="TrG5h" value="ValueOfCommandLineParam" />
     <property role="34LRSv" value="parameter" />
     <property role="R4oN_" value="Parameter value from command line" />
+    <property role="1pbfSe" value="81697133" />
     <ref role="1TJDcQ" node="3aOvEIt8nXt" resolve="NewChannelInitializerExpression" />
     <node concept="1TJgyi" id="53yaZUNZ74y" role="1TKVEl">
       <property role="TrG5h" value="longFlag" />
@@ -1885,6 +2057,7 @@
     <property role="TrG5h" value="BufferRange" />
     <property role="34LRSv" value="bufferRange" />
     <property role="R4oN_" value="Gather elements into subsets, emit the subsets separately" />
+    <property role="1pbfSe" value="817083095" />
     <ref role="1TJDcQ" node="3m9W35nCwTK" resolve="ChannelFunction" />
     <node concept="1TJgyj" id="4VptOfxQzN8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1902,6 +2075,7 @@
   <node concept="1TIwiD" id="1EP6SKygw2j">
     <property role="3GE5qa" value="channelFunctions.closureFunctions" />
     <property role="TrG5h" value="FunctionWithClosureType" />
+    <property role="1pbfSe" value="1022827551" />
     <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
   </node>
 </model>

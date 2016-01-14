@@ -2,7 +2,6 @@
 <model ref="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
@@ -14,22 +13,23 @@
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="6" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <generationPart ref="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc(org.campagnelab.workflow.configuration)" />
     <generationPart ref="774bf8a0-62e5-41e1-af63-f4812e60e48b(jetbrains.mps.baseLanguage.checkedDots)" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="qqyk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.baseLanguage.tuples.runtime(MPS.Core/jetbrains.mps.baseLanguage.tuples.runtime@java_stub)" />
-    <import index="e5on" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.nio.file(JDK/java.nio.file@java_stub)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="j8ec" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.baseLanguage.tuples.runtime(MPS.Core/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -297,7 +297,7 @@
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
@@ -503,7 +503,7 @@
       <property role="TrG5h" value="DoNotDelete" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3sGzFmkz29b" role="1tU5fm">
-        <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
       </node>
     </node>
     <node concept="2YIFZL" id="5HJ0Qzyo4dL" role="jymVt">
@@ -514,7 +514,7 @@
       <node concept="37vLTG" id="5HJ0Qzyv1ye" role="3clF46">
         <property role="TrG5h" value="c" />
         <node concept="3uibUv" id="5HJ0Qzyv1yi" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           <node concept="1ZhdrF" id="5HJ0Qzyv1MQ" role="lGtFl">
             <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
             <property role="2qtEX8" value="classifier" />
@@ -573,8 +573,8 @@
                     <property role="TrG5h" value="channelElementType" />
                     <node concept="17QB3L" id="5HJ0QzyQmuy" role="1tU5fm" />
                     <node concept="2YIFZM" id="5HJ0Qzy_Qd_" role="33vP2m">
-                      <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                      <ref role="37wK5l" to="e2lb:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                      <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
                       <node concept="37vLTw" id="79AYUVot8zp" role="37wK5m">
                         <ref role="3cqZAo" node="79AYUVosHIa" resolve="functionType" />
                       </node>
@@ -595,11 +595,11 @@
         <node concept="3clFbF" id="5HJ0QzyuXT0" role="3cqZAp">
           <node concept="2OqwBi" id="5HJ0QzyuXSX" role="3clFbG">
             <node concept="10M0yZ" id="5HJ0QzyuXSY" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="5HJ0QzyuXSZ" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println():void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println():void" resolve="println" />
             </node>
           </node>
           <node concept="2b32R4" id="50sbNJ_Z2F1" role="lGtFl">
@@ -697,7 +697,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="7sz_HDkJ9kP" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         <node concept="29HgVG" id="7sz_HDkJ9PK" role="lGtFl">
           <node concept="3NFfHV" id="7sz_HDkJ9PL" role="3NFExx">
             <node concept="3clFbS" id="7sz_HDkJ9PM" role="2VODD2">
@@ -779,7 +779,7 @@
       <node concept="37vLTG" id="7sz_HDkrzlG" role="3clF46">
         <property role="TrG5h" value="a" />
         <node concept="3uibUv" id="7sz_HDkr$b7" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           <node concept="29HgVG" id="7sz_HDkz0d8" role="lGtFl">
             <node concept="3NFfHV" id="7sz_HDkz0d9" role="3NFExx">
               <node concept="3clFbS" id="7sz_HDkz0da" role="2VODD2">
@@ -950,7 +950,7 @@
       <node concept="37vLTG" id="7sz_HDkxBKB" role="3clF46">
         <property role="TrG5h" value="c" />
         <node concept="3uibUv" id="7sz_HDkxBKC" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           <node concept="29HgVG" id="7sz_HDkzkot" role="lGtFl">
             <node concept="3NFfHV" id="7sz_HDkzkou" role="3NFExx">
               <node concept="3clFbS" id="7sz_HDkzkov" role="2VODD2">
@@ -1220,7 +1220,7 @@
       <node concept="37vLTG" id="2Q5Qdqj3kHK" role="3clF46">
         <property role="TrG5h" value="name" />
         <node concept="3uibUv" id="2OrG0Jly86X" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           <node concept="29HgVG" id="4pO5mSiZMF4" role="lGtFl">
             <node concept="3NFfHV" id="4pO5mSiZMF5" role="3NFExx">
               <node concept="3clFbS" id="4pO5mSiZMF6" role="2VODD2">
@@ -1385,7 +1385,7 @@
               </node>
             </node>
             <node concept="3uibUv" id="6rO6MaBxquZ" role="1tU5fm">
-              <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
             </node>
           </node>
         </node>
@@ -1550,8 +1550,8 @@
                   </node>
                 </node>
                 <node concept="2YIFZM" id="2_d934XfJEj" role="3uHU7w">
-                  <ref role="37wK5l" to="e2lb:~Integer.toString(int):java.lang.String" resolve="toString" />
-                  <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+                  <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                   <node concept="2OqwBi" id="2_d934XfJZe" role="37wK5m">
                     <node concept="30H73N" id="2_d934XfJPi" role="2Oq$k0" />
                     <node concept="2bSWHS" id="2_d934XfUF3" role="2OqNvi" />
@@ -1563,7 +1563,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="4PfLmWnjUW8" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
       <node concept="2jeGV$" id="1Zy6PKDs_HD" role="lGtFl">
         <property role="TrG5h" value="originalClosure" />
@@ -1749,7 +1749,7 @@
         <node concept="37vLTG" id="7sz_HDkeKDW" role="3clF46">
           <property role="TrG5h" value="a" />
           <node concept="3uibUv" id="7sz_HDkfizK" role="1tU5fm">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
             <node concept="1ZhdrF" id="7sz_HDkfizU" role="lGtFl">
               <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
               <property role="2qtEX8" value="classifier" />
@@ -1997,7 +1997,9 @@
           <node concept="2OqwBi" id="10nk9FBTb7$" role="2GsD0m">
             <node concept="1Q6Npb" id="10nk9FBTb6O" role="2Oq$k0" />
             <node concept="2SmgA7" id="10nk9FBTbbr" role="2OqNvi">
-              <ref role="2SmgA8" to="iowz:5DC$1WkmvHE" resolve="ClosureLiteralWorkFlow" />
+              <node concept="chp4Y" id="2xiyUn2TgiQ" role="1dBWTz">
+                <ref role="cht4Q" to="iowz:5DC$1WkmvHE" resolve="ClosureLiteralWorkFlow" />
+              </node>
             </node>
           </node>
         </node>
@@ -2009,7 +2011,7 @@
     <property role="3GE5qa" value="" />
     <ref role="3gUMe" to="iowz:33IVfFaApTg" resolve="FileType" />
     <node concept="3uibUv" id="10nk9FDYWyA" role="13RCb5">
-      <ref role="3uigEE" to="e5on:~Path" resolve="Path" />
+      <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
       <node concept="raruj" id="10nk9FDYWyE" role="lGtFl" />
     </node>
   </node>
@@ -2021,7 +2023,7 @@
         <node concept="3cpWsn" id="3dQaW8H8P0d" role="3cpWs9">
           <property role="TrG5h" value="a" />
           <node concept="3uibUv" id="3dQaW8H8P0e" role="1tU5fm">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
           <node concept="1bVj0M" id="10nk9FDZjZo" role="33vP2m">
             <node concept="3clFbS" id="10nk9FDZjZp" role="1bW5cS">
@@ -2076,22 +2078,22 @@
       <node concept="37vLTG" id="1$nyghyrIqO" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyx9gI" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~ArrayList" resolve="ArrayList" />
+          <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
           <node concept="3uibUv" id="1$nyghyxfCJ" role="11_B2D">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyrq0w" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyrq4M" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyrq8M" role="3cqZAk">
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from():jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_0" resolve="from" />
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from():jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_0" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
           </node>
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyrIox" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_0" resolve="Tuples._0" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_0" resolve="Tuples._0" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyrq0v" role="1B3o_S" />
     </node>
@@ -2103,23 +2105,23 @@
       <node concept="37vLTG" id="1$nyghyrIrN" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyxjQQ" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~ArrayList" resolve="ArrayList" />
+          <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
           <node concept="3uibUv" id="1$nyghyxjQR" role="11_B2D">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyrIrP" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyrIrQ" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyrIrR" role="3cqZAk">
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_1" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from(java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_1" resolve="from" />
             <node concept="2OqwBi" id="1$nyghyrIMy" role="37wK5m">
               <node concept="37vLTw" id="1$nyghyrI$z" role="2Oq$k0">
                 <ref role="3cqZAo" node="1$nyghyrIrN" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyrJyc" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyrJEj" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -2129,7 +2131,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyrIti" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_1" resolve="Tuples._1" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_1" resolve="Tuples._1" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyrIrT" role="1B3o_S" />
     </node>
@@ -2141,23 +2143,23 @@
       <node concept="37vLTG" id="1$nyghyrLPB" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyxjVa" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~ArrayList" resolve="ArrayList" />
+          <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
           <node concept="3uibUv" id="1$nyghyxjVb" role="11_B2D">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyrLPD" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyrLPE" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyrLPF" role="3cqZAk">
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_2" resolve="from" />
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from(java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_2" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
             <node concept="2OqwBi" id="1$nyghyrLPG" role="37wK5m">
               <node concept="37vLTw" id="1$nyghyrLPH" role="2Oq$k0">
                 <ref role="3cqZAo" node="1$nyghyrLPB" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyrLPI" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyrLPJ" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -2168,7 +2170,7 @@
                 <ref role="3cqZAo" node="1$nyghyrLPB" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyrLPM" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyrLPN" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -2178,7 +2180,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyrLWZ" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_2" resolve="Tuples._2" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_2" resolve="Tuples._2" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyrLPP" role="1B3o_S" />
     </node>
@@ -2190,23 +2192,23 @@
       <node concept="37vLTG" id="1$nyghyV8Qc" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyV8Qd" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~ArrayList" resolve="ArrayList" />
+          <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
           <node concept="3uibUv" id="1$nyghyV8Qe" role="11_B2D">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyV8Qf" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyV8Qg" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyV8Qh" role="3cqZAk">
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_3" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_3" resolve="from" />
             <node concept="2OqwBi" id="1$nyghyV8Qi" role="37wK5m">
               <node concept="37vLTw" id="1$nyghyV8Qj" role="2Oq$k0">
                 <ref role="3cqZAo" node="1$nyghyV8Qc" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyV8Qk" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyV8Ql" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -2217,7 +2219,7 @@
                 <ref role="3cqZAo" node="1$nyghyV8Qc" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyV8Qo" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyV8Qp" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -2228,7 +2230,7 @@
                 <ref role="3cqZAo" node="1$nyghyV8Qc" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyViSl" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVjmt" role="37wK5m">
                   <property role="3cmrfH" value="2" />
                 </node>
@@ -2238,7 +2240,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyVczz" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_3" resolve="Tuples._3" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_3" resolve="Tuples._3" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyV8Qr" role="1B3o_S" />
     </node>
@@ -2250,23 +2252,23 @@
       <node concept="37vLTG" id="1$nyghyV9mC" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyV9mD" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~ArrayList" resolve="ArrayList" />
+          <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
           <node concept="3uibUv" id="1$nyghyV9mE" role="11_B2D">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyV9mF" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyV9mG" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyV9mH" role="3cqZAk">
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_4" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_4" resolve="from" />
             <node concept="2OqwBi" id="1$nyghyV9mI" role="37wK5m">
               <node concept="37vLTw" id="1$nyghyV9mJ" role="2Oq$k0">
                 <ref role="3cqZAo" node="1$nyghyV9mC" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyV9mK" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyV9mL" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -2277,7 +2279,7 @@
                 <ref role="3cqZAo" node="1$nyghyV9mC" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyV9mO" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyV9mP" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -2288,7 +2290,7 @@
                 <ref role="3cqZAo" node="1$nyghyV9mC" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVjMv" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVjMw" role="37wK5m">
                   <property role="3cmrfH" value="2" />
                 </node>
@@ -2299,7 +2301,7 @@
                 <ref role="3cqZAo" node="1$nyghyV9mC" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVkWf" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVnln" role="37wK5m">
                   <property role="3cmrfH" value="3" />
                 </node>
@@ -2309,7 +2311,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyVcWA" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_4" resolve="Tuples._4" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_4" resolve="Tuples._4" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyV9mR" role="1B3o_S" />
     </node>
@@ -2321,23 +2323,23 @@
       <node concept="37vLTG" id="1$nyghyV9mT" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyV9mU" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~ArrayList" resolve="ArrayList" />
+          <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
           <node concept="3uibUv" id="1$nyghyV9mV" role="11_B2D">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyV9mW" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyV9mX" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyV9mY" role="3cqZAk">
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_5" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_5" resolve="from" />
             <node concept="2OqwBi" id="1$nyghyV9mZ" role="37wK5m">
               <node concept="37vLTw" id="1$nyghyV9n0" role="2Oq$k0">
                 <ref role="3cqZAo" node="1$nyghyV9mT" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyV9n1" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyV9n2" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -2348,7 +2350,7 @@
                 <ref role="3cqZAo" node="1$nyghyV9mT" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyV9n5" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyV9n6" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -2359,7 +2361,7 @@
                 <ref role="3cqZAo" node="1$nyghyV9mT" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVlF_" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVlFA" role="37wK5m">
                   <property role="3cmrfH" value="2" />
                 </node>
@@ -2370,7 +2372,7 @@
                 <ref role="3cqZAo" node="1$nyghyV9mT" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVm6x" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVnJL" role="37wK5m">
                   <property role="3cmrfH" value="3" />
                 </node>
@@ -2381,7 +2383,7 @@
                 <ref role="3cqZAo" node="1$nyghyV9mT" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVmPp" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVnxT" role="37wK5m">
                   <property role="3cmrfH" value="4" />
                 </node>
@@ -2391,7 +2393,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyVd91" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_5" resolve="Tuples._5" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_5" resolve="Tuples._5" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyV9n8" role="1B3o_S" />
     </node>
@@ -2403,23 +2405,23 @@
       <node concept="37vLTG" id="1$nyghyVad8" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyVad9" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~ArrayList" resolve="ArrayList" />
+          <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
           <node concept="3uibUv" id="1$nyghyVada" role="11_B2D">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyVadb" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyVadc" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyVadd" role="3cqZAk">
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_6" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_6" resolve="from" />
             <node concept="2OqwBi" id="1$nyghyVade" role="37wK5m">
               <node concept="37vLTw" id="1$nyghyVadf" role="2Oq$k0">
                 <ref role="3cqZAo" node="1$nyghyVad8" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVadg" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVadh" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -2430,7 +2432,7 @@
                 <ref role="3cqZAo" node="1$nyghyVad8" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVadk" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVadl" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -2441,7 +2443,7 @@
                 <ref role="3cqZAo" node="1$nyghyVad8" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVold" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVole" role="37wK5m">
                   <property role="3cmrfH" value="2" />
                 </node>
@@ -2452,7 +2454,7 @@
                 <ref role="3cqZAo" node="1$nyghyVad8" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVoVa" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVqUU" role="37wK5m">
                   <property role="3cmrfH" value="3" />
                 </node>
@@ -2463,7 +2465,7 @@
                 <ref role="3cqZAo" node="1$nyghyVad8" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVpl5" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVrd$" role="37wK5m">
                   <property role="3cmrfH" value="4" />
                 </node>
@@ -2474,7 +2476,7 @@
                 <ref role="3cqZAo" node="1$nyghyVad8" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVqiH" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVrCO" role="37wK5m">
                   <property role="3cmrfH" value="5" />
                 </node>
@@ -2484,7 +2486,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyVdlx" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_6" resolve="Tuples._6" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_6" resolve="Tuples._6" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyVadn" role="1B3o_S" />
     </node>
@@ -2496,23 +2498,23 @@
       <node concept="37vLTG" id="1$nyghyVadp" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyVadq" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~ArrayList" resolve="ArrayList" />
+          <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
           <node concept="3uibUv" id="1$nyghyVadr" role="11_B2D">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyVads" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyVadt" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyVadu" role="3cqZAk">
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_7" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_7" resolve="from" />
             <node concept="2OqwBi" id="1$nyghyVadv" role="37wK5m">
               <node concept="37vLTw" id="1$nyghyVadw" role="2Oq$k0">
                 <ref role="3cqZAo" node="1$nyghyVadp" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVadx" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVady" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -2523,7 +2525,7 @@
                 <ref role="3cqZAo" node="1$nyghyVadp" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVad_" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVadA" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -2534,7 +2536,7 @@
                 <ref role="3cqZAo" node="1$nyghyVadp" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVsAk" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVsAl" role="37wK5m">
                   <property role="3cmrfH" value="2" />
                 </node>
@@ -2545,7 +2547,7 @@
                 <ref role="3cqZAo" node="1$nyghyVadp" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVtvb" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVtSJ" role="37wK5m">
                   <property role="3cmrfH" value="3" />
                 </node>
@@ -2556,7 +2558,7 @@
                 <ref role="3cqZAo" node="1$nyghyVadp" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVuua" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVvc$" role="37wK5m">
                   <property role="3cmrfH" value="4" />
                 </node>
@@ -2567,7 +2569,7 @@
                 <ref role="3cqZAo" node="1$nyghyVadp" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVvS6" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVwHB" role="37wK5m">
                   <property role="3cmrfH" value="5" />
                 </node>
@@ -2578,7 +2580,7 @@
                 <ref role="3cqZAo" node="1$nyghyVadp" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVxwe" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVyjX" role="37wK5m">
                   <property role="3cmrfH" value="6" />
                 </node>
@@ -2588,7 +2590,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyVdy0" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_7" resolve="Tuples._7" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_7" resolve="Tuples._7" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyVadC" role="1B3o_S" />
     </node>
@@ -2600,23 +2602,23 @@
       <node concept="37vLTG" id="1$nyghyVbhJ" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyVbhK" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~ArrayList" resolve="ArrayList" />
+          <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
           <node concept="3uibUv" id="1$nyghyVbhL" role="11_B2D">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyVbhM" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyVbhN" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyVbhO" role="3cqZAk">
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_8" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_8" resolve="from" />
             <node concept="2OqwBi" id="1$nyghyVbhP" role="37wK5m">
               <node concept="37vLTw" id="1$nyghyVbhQ" role="2Oq$k0">
                 <ref role="3cqZAo" node="1$nyghyVbhJ" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVbhR" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVbhS" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -2627,7 +2629,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbhJ" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVbhV" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVbhW" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -2638,7 +2640,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbhJ" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVyZB" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVyZC" role="37wK5m">
                   <property role="3cmrfH" value="2" />
                 </node>
@@ -2649,7 +2651,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbhJ" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVzP5" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyV$pF" role="37wK5m">
                   <property role="3cmrfH" value="3" />
                 </node>
@@ -2660,7 +2662,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbhJ" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyV$Z6" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyV_Ex" role="37wK5m">
                   <property role="3cmrfH" value="4" />
                 </node>
@@ -2671,7 +2673,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbhJ" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVAmJ" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVAUI" role="37wK5m">
                   <property role="3cmrfH" value="5" />
                 </node>
@@ -2682,7 +2684,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbhJ" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVBI5" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVCF1" role="37wK5m">
                   <property role="3cmrfH" value="6" />
                 </node>
@@ -2693,7 +2695,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbhJ" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVD_1" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVEya" role="37wK5m">
                   <property role="3cmrfH" value="7" />
                 </node>
@@ -2703,7 +2705,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyVdIu" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_8" resolve="Tuples._8" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_8" resolve="Tuples._8" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyVbhY" role="1B3o_S" />
     </node>
@@ -2715,23 +2717,23 @@
       <node concept="37vLTG" id="1$nyghyVbi0" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyVbi1" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~ArrayList" resolve="ArrayList" />
+          <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
           <node concept="3uibUv" id="1$nyghyVbi2" role="11_B2D">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyVbi3" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyVEUf" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyVEUg" role="3cqZAk">
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_9" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_9" resolve="from" />
             <node concept="2OqwBi" id="1$nyghyVEUh" role="37wK5m">
               <node concept="37vLTw" id="1$nyghyVEUi" role="2Oq$k0">
                 <ref role="3cqZAo" node="1$nyghyVbi0" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVEUj" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVEUk" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -2742,7 +2744,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbi0" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVEUn" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVEUo" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -2753,7 +2755,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbi0" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVEUr" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVEUs" role="37wK5m">
                   <property role="3cmrfH" value="2" />
                 </node>
@@ -2764,7 +2766,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbi0" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVEUv" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVEUw" role="37wK5m">
                   <property role="3cmrfH" value="3" />
                 </node>
@@ -2775,7 +2777,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbi0" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVEUz" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVEU$" role="37wK5m">
                   <property role="3cmrfH" value="4" />
                 </node>
@@ -2786,7 +2788,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbi0" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVEUB" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVEUC" role="37wK5m">
                   <property role="3cmrfH" value="5" />
                 </node>
@@ -2797,7 +2799,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbi0" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVEUF" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVEUG" role="37wK5m">
                   <property role="3cmrfH" value="6" />
                 </node>
@@ -2808,7 +2810,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbi0" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVEUJ" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVEUK" role="37wK5m">
                   <property role="3cmrfH" value="7" />
                 </node>
@@ -2819,7 +2821,7 @@
                 <ref role="3cqZAo" node="1$nyghyVbi0" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyVKl3" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyVKDq" role="37wK5m">
                   <property role="3cmrfH" value="8" />
                 </node>
@@ -2829,7 +2831,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyVdUV" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_9" resolve="Tuples._9" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_9" resolve="Tuples._9" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyVbif" role="1B3o_S" />
     </node>
@@ -2847,13 +2849,13 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyV8$N" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_0" resolve="Tuples._0" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_0" resolve="Tuples._0" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyUJC2" role="1B3o_S" />
       <node concept="37vLTG" id="1$nyghyUKjZ" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="1$nyghyV8np" role="1tU5fm">
-          <ref role="3uigEE" to="qqyk:~Tuples$_0" resolve="Tuples._0" />
+          <ref role="3uigEE" to="j8ec:~Tuples$_0" resolve="Tuples._0" />
         </node>
       </node>
     </node>
@@ -2870,13 +2872,13 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyV8_h" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_1" resolve="Tuples._1" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_1" resolve="Tuples._1" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyV6G0" role="1B3o_S" />
       <node concept="37vLTG" id="1$nyghyV6G1" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="1$nyghyV8pl" role="1tU5fm">
-          <ref role="3uigEE" to="qqyk:~Tuples$_1" resolve="Tuples._1" />
+          <ref role="3uigEE" to="j8ec:~Tuples$_1" resolve="Tuples._1" />
         </node>
       </node>
     </node>
@@ -2893,13 +2895,13 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyV6SC" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_2" resolve="Tuples._2" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_2" resolve="Tuples._2" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyV6SD" role="1B3o_S" />
       <node concept="37vLTG" id="1$nyghyV6SE" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="1$nyghyV6SF" role="1tU5fm">
-          <ref role="3uigEE" to="qqyk:~Tuples$_2" resolve="Tuples._2" />
+          <ref role="3uigEE" to="j8ec:~Tuples$_2" resolve="Tuples._2" />
         </node>
       </node>
     </node>
@@ -2916,13 +2918,13 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyV8_F" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_3" resolve="Tuples._3" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_3" resolve="Tuples._3" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyV75s" role="1B3o_S" />
       <node concept="37vLTG" id="1$nyghyV75t" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="1$nyghyV8rg" role="1tU5fm">
-          <ref role="3uigEE" to="qqyk:~Tuples$_3" resolve="Tuples._3" />
+          <ref role="3uigEE" to="j8ec:~Tuples$_3" resolve="Tuples._3" />
         </node>
       </node>
     </node>
@@ -2939,13 +2941,13 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyV8A3" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_4" resolve="Tuples._4" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_4" resolve="Tuples._4" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyV7id" role="1B3o_S" />
       <node concept="37vLTG" id="1$nyghyV7ie" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="1$nyghyV8rT" role="1tU5fm">
-          <ref role="3uigEE" to="qqyk:~Tuples$_4" resolve="Tuples._4" />
+          <ref role="3uigEE" to="j8ec:~Tuples$_4" resolve="Tuples._4" />
         </node>
       </node>
     </node>
@@ -2962,13 +2964,13 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyV8Aq" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_5" resolve="Tuples._5" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_5" resolve="Tuples._5" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyV7v6" role="1B3o_S" />
       <node concept="37vLTG" id="1$nyghyV7v7" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="1$nyghyV8sE" role="1tU5fm">
-          <ref role="3uigEE" to="qqyk:~Tuples$_5" resolve="Tuples._5" />
+          <ref role="3uigEE" to="j8ec:~Tuples$_5" resolve="Tuples._5" />
         </node>
       </node>
     </node>
@@ -2985,13 +2987,13 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyV8AK" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_6" resolve="Tuples._6" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_6" resolve="Tuples._6" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyV7G7" role="1B3o_S" />
       <node concept="37vLTG" id="1$nyghyV7G8" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="1$nyghyV8t_" role="1tU5fm">
-          <ref role="3uigEE" to="qqyk:~Tuples$_6" resolve="Tuples._6" />
+          <ref role="3uigEE" to="j8ec:~Tuples$_6" resolve="Tuples._6" />
         </node>
       </node>
     </node>
@@ -3008,13 +3010,13 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyV8B5" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_7" resolve="Tuples._7" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_7" resolve="Tuples._7" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyV7US" role="1B3o_S" />
       <node concept="37vLTG" id="1$nyghyV7UT" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="1$nyghyV8uG" role="1tU5fm">
-          <ref role="3uigEE" to="qqyk:~Tuples$_7" resolve="Tuples._7" />
+          <ref role="3uigEE" to="j8ec:~Tuples$_7" resolve="Tuples._7" />
         </node>
       </node>
     </node>
@@ -3031,13 +3033,13 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyV8Bp" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_8" resolve="Tuples._8" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_8" resolve="Tuples._8" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyV89f" role="1B3o_S" />
       <node concept="37vLTG" id="1$nyghyV89g" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="1$nyghyV8w1" role="1tU5fm">
-          <ref role="3uigEE" to="qqyk:~Tuples$_8" resolve="Tuples._8" />
+          <ref role="3uigEE" to="j8ec:~Tuples$_8" resolve="Tuples._8" />
         </node>
       </node>
     </node>
@@ -3054,13 +3056,13 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyV8BG" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_9" resolve="Tuples._9" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_9" resolve="Tuples._9" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyV89n" role="1B3o_S" />
       <node concept="37vLTG" id="1$nyghyV89o" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="1$nyghyV8yV" role="1tU5fm">
-          <ref role="3uigEE" to="qqyk:~Tuples$_9" resolve="Tuples._9" />
+          <ref role="3uigEE" to="j8ec:~Tuples$_9" resolve="Tuples._9" />
         </node>
       </node>
     </node>

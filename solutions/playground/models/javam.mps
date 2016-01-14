@@ -2,20 +2,21 @@
 <model ref="r:6beda8d8-3c96-48a6-b1c9-68466ee67610(javam)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="6" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="qqyk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.baseLanguage.tuples.runtime(MPS.Core/jetbrains.mps.baseLanguage.tuples.runtime@java_stub)" />
-    <import index="8dm4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.internal.collections.runtime(MPS.Core/jetbrains.mps.internal.collections.runtime@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="j8ec" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.baseLanguage.tuples.runtime(MPS.Core/)" />
+    <import index="k9t0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.internal.collections.runtime(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -100,12 +101,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -117,8 +112,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
@@ -162,25 +167,25 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="Y3wJOvgxBG" role="3cqZAp">
-          <node concept="3SKWN0" id="Y3wJOvgxBP" role="3SKWNk">
-            <node concept="3clFbJ" id="6YYJWE33f4G" role="3SKWNf">
-              <node concept="3clFbS" id="6YYJWE33f4H" role="3clFbx">
-                <node concept="3Y$Zt1" id="6YYJWE3aICq" role="3cqZAp">
-                  <node concept="19SGf9" id="6YYJWE3aICr" role="3Y$PkS">
-                    <node concept="19SUe$" id="6YYJWE3aICs" role="19SJt6">
-                      <property role="19SUeA" value="java -jar /Users/jasonkurs/Downloads/2.3.5/goby.jar -m suggest-position-slices  -n 200 -o slicingPlan.tsv \n  &gt; /dev/null\t\nsplit -l slicingPlan.tsv index_\n\n" />
-                    </node>
+        <node concept="1X3_iC" id="2xiyUn2T9$C" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbJ" id="6YYJWE33f4G" role="8Wnug">
+            <node concept="3clFbS" id="6YYJWE33f4H" role="3clFbx">
+              <node concept="3Y$Zt1" id="6YYJWE3aICq" role="3cqZAp">
+                <node concept="19SGf9" id="6YYJWE3aICr" role="3Y$PkS">
+                  <node concept="19SUe$" id="6YYJWE3aICs" role="19SJt6">
+                    <property role="19SUeA" value="java -jar /Users/jasonkurs/Downloads/2.3.5/goby.jar -m suggest-position-slices  -n 200 -o slicingPlan.tsv \n  &gt; /dev/null\t\nsplit -l slicingPlan.tsv index_\n\n" />
                   </node>
                 </node>
               </node>
-              <node concept="3clFbC" id="6YYJWE33g7E" role="3clFbw">
-                <node concept="37vLTw" id="6YYJWE33fML" role="3uHU7B">
-                  <ref role="3cqZAo" node="6YYJWE33f6i" resolve="mode" />
-                </node>
-                <node concept="Xl_RD" id="6YYJWE33g1K" role="3uHU7w">
-                  <property role="Xl_RC" value="tcoffee" />
-                </node>
+            </node>
+            <node concept="3clFbC" id="6YYJWE33g7E" role="3clFbw">
+              <node concept="37vLTw" id="6YYJWE33fML" role="3uHU7B">
+                <ref role="3cqZAo" node="6YYJWE33f6i" resolve="mode" />
+              </node>
+              <node concept="Xl_RD" id="6YYJWE33g1K" role="3uHU7w">
+                <property role="Xl_RC" value="tcoffee" />
               </node>
             </node>
           </node>
@@ -189,13 +194,13 @@
           <node concept="3cpWsn" id="3AGDzXAKudb" role="3cpWs9">
             <property role="TrG5h" value="mJava" />
             <node concept="3uibUv" id="3AGDzXAKudc" role="1tU5fm">
-              <ref role="3uigEE" to="k7g3:~LinkedHashMap" resolve="LinkedHashMap" />
+              <ref role="3uigEE" to="33ny:~LinkedHashMap" resolve="LinkedHashMap" />
               <node concept="17QB3L" id="3AGDzXAKwam" role="11_B2D" />
               <node concept="17QB3L" id="3AGDzXAKwrB" role="11_B2D" />
             </node>
             <node concept="2ShNRf" id="3AGDzXAKup8" role="33vP2m">
               <node concept="1pGfFk" id="3AGDzXAKup3" role="2ShVmc">
-                <ref role="37wK5l" to="k7g3:~LinkedHashMap.&lt;init&gt;()" resolve="LinkedHashMap" />
+                <ref role="37wK5l" to="33ny:~LinkedHashMap.&lt;init&gt;()" resolve="LinkedHashMap" />
               </node>
             </node>
           </node>
@@ -257,19 +262,19 @@
       <node concept="37vLTG" id="1$nyghyx31B" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyxb8P" role="1tU5fm">
-          <ref role="3uigEE" to="8dm4:~IListSequence" resolve="IListSequence" />
+          <ref role="3uigEE" to="k9t0:~IListSequence" resolve="IListSequence" />
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyx31D" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyx31E" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyx31F" role="3cqZAk">
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from():jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_0" resolve="from" />
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from():jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_0" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
           </node>
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyx31G" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_0" resolve="Tuples._0" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_0" resolve="Tuples._0" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyx31H" role="1B3o_S" />
     </node>
@@ -281,20 +286,20 @@
       <node concept="37vLTG" id="1$nyghyx31J" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyxb6I" role="1tU5fm">
-          <ref role="3uigEE" to="8dm4:~IListSequence" resolve="IListSequence" />
+          <ref role="3uigEE" to="k9t0:~IListSequence" resolve="IListSequence" />
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyx31L" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyx31M" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyx31N" role="3cqZAk">
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_1" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from(java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_1" resolve="from" />
             <node concept="2OqwBi" id="1$nyghyx31O" role="37wK5m">
               <node concept="37vLTw" id="1$nyghyx31P" role="2Oq$k0">
                 <ref role="3cqZAo" node="1$nyghyx31J" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyx31Q" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyx31R" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -304,7 +309,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyx31S" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_1" resolve="Tuples._1" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_1" resolve="Tuples._1" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyx31T" role="1B3o_S" />
     </node>
@@ -316,20 +321,20 @@
       <node concept="37vLTG" id="1$nyghyx31V" role="3clF46">
         <property role="TrG5h" value="elements" />
         <node concept="3uibUv" id="1$nyghyx9RR" role="1tU5fm">
-          <ref role="3uigEE" to="8dm4:~IListSequence" resolve="IListSequence" />
+          <ref role="3uigEE" to="k9t0:~IListSequence" resolve="IListSequence" />
         </node>
       </node>
       <node concept="3clFbS" id="1$nyghyx31X" role="3clF47">
         <node concept="3cpWs6" id="1$nyghyx31Y" role="3cqZAp">
           <node concept="2YIFZM" id="1$nyghyx31Z" role="3cqZAk">
-            <ref role="37wK5l" to="qqyk:~MultiTuple.from(java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_2" resolve="from" />
-            <ref role="1Pybhc" to="qqyk:~MultiTuple" resolve="MultiTuple" />
+            <ref role="37wK5l" to="j8ec:~MultiTuple.from(java.lang.Object,java.lang.Object):jetbrains.mps.baseLanguage.tuples.runtime.Tuples$_2" resolve="from" />
+            <ref role="1Pybhc" to="j8ec:~MultiTuple" resolve="MultiTuple" />
             <node concept="2OqwBi" id="1$nyghyx320" role="37wK5m">
               <node concept="37vLTw" id="1$nyghyx321" role="2Oq$k0">
                 <ref role="3cqZAo" node="1$nyghyx31V" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyx322" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyx323" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
@@ -340,7 +345,7 @@
                 <ref role="3cqZAo" node="1$nyghyx31V" resolve="elements" />
               </node>
               <node concept="liA8E" id="1$nyghyx326" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="1$nyghyx327" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -350,7 +355,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1$nyghyx328" role="3clF45">
-        <ref role="3uigEE" to="qqyk:~Tuples$_2" resolve="Tuples._2" />
+        <ref role="3uigEE" to="j8ec:~Tuples$_2" resolve="Tuples._2" />
       </node>
       <node concept="3Tm1VV" id="1$nyghyx329" role="1B3o_S" />
     </node>

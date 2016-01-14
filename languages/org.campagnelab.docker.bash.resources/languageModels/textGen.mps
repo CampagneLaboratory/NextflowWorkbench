@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,9 +15,9 @@
     <import index="iuj9" ref="r:b8fcf1e4-ccc5-4a08-9b19-9b2e4e857cd7(org.campagnelab.bash.nyosh.structure)" />
     <import index="bs99" ref="r:29480130-ace9-4987-af0f-a6efca1c6495(org.campagnelab.gobyweb.interactive.structure)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -127,11 +127,9 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -786,7 +784,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="5cVzYEj75KD" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                        <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
                       </node>
                     </node>
                   </node>
@@ -962,7 +960,7 @@
                       <ref role="3cqZAo" node="6ojrriHoEo5" resolve="tag" />
                     </node>
                     <node concept="liA8E" id="3jQcDYNDHbn" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.substring(int,int):java.lang.String" resolve="substring" />
+                      <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
                       <node concept="3cmrfG" id="3jQcDYNDHbo" role="37wK5m">
                         <property role="3cmrfH" value="0" />
                       </node>
@@ -1105,7 +1103,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="4eg84TIqIvo" role="2OqNvi">
-                                    <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                                    <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
                                   </node>
                                 </node>
                               </node>
@@ -1533,14 +1531,14 @@
             <node concept="2OqwBi" id="5VB4_zDqQL4" role="2Oq$k0">
               <node concept="2OqwBi" id="5VB4_zDqQL5" role="2Oq$k0">
                 <node concept="liA8E" id="5VB4_zDqQL9" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                  <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
                 </node>
                 <node concept="37vLTw" id="5VB4_zDr3bL" role="2Oq$k0">
                   <ref role="3cqZAo" node="5VB4_zDqt35" resolve="toConvert" />
                 </node>
               </node>
               <node concept="liA8E" id="5VB4_zDqQLa" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
                 <node concept="Xl_RD" id="5VB4_zDqQLb" role="37wK5m">
                   <property role="Xl_RC" value="\\." />
                 </node>
@@ -1550,7 +1548,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5VB4_zDqQLd" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
               <node concept="Xl_RD" id="5VB4_zDqQLe" role="37wK5m">
                 <property role="Xl_RC" value="-" />
               </node>
@@ -1571,13 +1569,13 @@
             <property role="1dT_AB" value="Converts a string to a valid token to be used in a env variable" />
           </node>
         </node>
-        <node concept="TUZQ0" id="5VB4_zDr3jl" role="TUOzN">
+        <node concept="TUZQ0" id="5VB4_zDr3jl" role="3nqlJM">
           <property role="TUZQ4" value="the string to convert" />
           <node concept="zr_55" id="5VB4_zDr3jn" role="zr_5Q">
             <ref role="zr_51" node="5VB4_zDqt35" resolve="toConvert" />
           </node>
         </node>
-        <node concept="x79VA" id="5VB4_zDr3jo" role="x79VK">
+        <node concept="x79VA" id="5VB4_zDr3jo" role="3nqlJM">
           <property role="x79VB" value="coverted" />
         </node>
       </node>

@@ -3,15 +3,15 @@
   <persistence version="9" />
   <languages>
     <use id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" name="org.campagnelab.ui" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="43809d33-d5e3-4390-917e-3944cb211ee3" name="org.campagnelab.icons" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,11 +20,11 @@
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" />
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
-    <import index="msyo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
-    <import index="vuby" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.util.ui(MPS.IDEA/com.intellij.util.ui@java_stub)" />
-    <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
-    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
-    <import index="idt7" ref="43809d33-d5e3-4390-917e-3944cb211ee3/f:java_stub#43809d33-d5e3-4390-917e-3944cb211ee3#com.bulenkov.iconloader(org.campagnelab.icons/com.bulenkov.iconloader@java_stub)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="q6u5" ref="43809d33-d5e3-4390-917e-3944cb211ee3/java:com.bulenkov.iconloader(org.campagnelab.icons/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -208,6 +208,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1204851882688" name="jetbrains.mps.lang.smodel.structure.LinkRefQualifier" flags="ng" index="26LbJo">
+        <reference id="1204851882689" name="link" index="26LbJp" />
+      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -215,8 +218,12 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
+      <concept id="5168775467716640652" name="jetbrains.mps.lang.smodel.structure.OperationParm_LinkQualifier" flags="ng" index="1aIX9F">
+        <child id="5168775467716640653" name="linkQualifier" index="1aIX9E" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -231,9 +238,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -484,14 +488,18 @@
               <node concept="pkWqt" id="BMuHr2DQv3" role="pqm2j">
                 <node concept="3clFbS" id="BMuHr2DQv4" role="2VODD2">
                   <node concept="3clFbF" id="BMuHr2DQvb" role="3cqZAp">
-                    <node concept="2OqwBi" id="BMuHr2DRy4" role="3clFbG">
+                    <node concept="2OqwBi" id="2xiyUn2TcG$" role="3clFbG">
                       <node concept="2OqwBi" id="BMuHr2DQ$b" role="2Oq$k0">
                         <node concept="pncrf" id="BMuHr2DQva" role="2Oq$k0" />
-                        <node concept="3Tsc0h" id="BMuHr2DQKM" role="2OqNvi">
-                          <ref role="3TtcxE" to="6jv6:BMuHr2DQtx" />
+                        <node concept="Bykcj" id="2xiyUn2TcGx" role="2OqNvi">
+                          <node concept="1aIX9F" id="2xiyUn2TcGy" role="1xVPHs">
+                            <node concept="26LbJo" id="2xiyUn2TcGz" role="1aIX9E">
+                              <ref role="26LbJp" to="6jv6:BMuHr2DQtx" />
+                            </node>
+                          </node>
                         </node>
                       </node>
-                      <node concept="3GX2aA" id="BMuHr2DUoY" role="2OqNvi" />
+                      <node concept="3GX2aA" id="2xiyUn2TcG_" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
@@ -879,14 +887,18 @@
         <node concept="pkWqt" id="nU1NoTl5Y2" role="pqm2j">
           <node concept="3clFbS" id="nU1NoTl5Y3" role="2VODD2">
             <node concept="3clFbF" id="nU1NoTlaz7" role="3cqZAp">
-              <node concept="2OqwBi" id="nU1NoTllTk" role="3clFbG">
+              <node concept="2OqwBi" id="2xiyUn2TcGv" role="3clFbG">
                 <node concept="2OqwBi" id="nU1NoTlaYq" role="2Oq$k0">
                   <node concept="pncrf" id="nU1NoTlaz6" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="nU1NoTll82" role="2OqNvi">
-                    <ref role="3TtcxE" to="6jv6:nU1NoTl5$b" />
+                  <node concept="Bykcj" id="2xiyUn2TcGs" role="2OqNvi">
+                    <node concept="1aIX9F" id="2xiyUn2TcGt" role="1xVPHs">
+                      <node concept="26LbJo" id="2xiyUn2TcGu" role="1aIX9E">
+                        <ref role="26LbJp" to="6jv6:nU1NoTl5$b" />
+                      </node>
+                    </node>
                   </node>
                 </node>
-                <node concept="3GX2aA" id="nU1NoTloVP" role="2OqNvi" />
+                <node concept="3GX2aA" id="2xiyUn2TcGw" role="2OqNvi" />
               </node>
             </node>
           </node>
