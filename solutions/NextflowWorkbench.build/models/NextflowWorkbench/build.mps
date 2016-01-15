@@ -1276,6 +1276,15 @@
       <node concept="m$_yC" id="3A$s7PqiSaz" role="m$_yJ">
         <ref role="m$_y1" to="9b59:7XxitGzkyrN" resolve="XChart" />
       </node>
+      <node concept="m$_yC" id="5p7XGHaCCSg" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
+      </node>
+      <node concept="m$_yC" id="5p7XGHaCDhg" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6Y0V2RJk3uw" resolve="de.itemis.mps.selection" />
+      </node>
+      <node concept="m$_yC" id="5p7XGHaCDEq" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
+      </node>
       <node concept="3_J27D" id="4oJiZHqTePR" role="m_cZH">
         <node concept="3Mxwew" id="4oJiZHqTePS" role="3MwsjC">
           <property role="3MwjfP" value="NextflowWorkbench" />
