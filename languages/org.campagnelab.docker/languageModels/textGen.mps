@@ -8,8 +8,8 @@
   <imports>
     <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -44,12 +44,6 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
-      </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
@@ -349,7 +343,7 @@
               </node>
             </node>
             <node concept="liA8E" id="33aW7OxajAb" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
               <node concept="Xl_RD" id="33aW7OxajAh" role="37wK5m">
                 <property role="Xl_RC" value=" " />
               </node>
@@ -494,8 +488,8 @@
         <node concept="lc7rE" id="33aW7OxaWGm" role="3cqZAp">
           <node concept="l9hG8" id="33aW7OxaWGt" role="lcghm">
             <node concept="2YIFZM" id="33aW7OxeTXl" role="lb14g">
-              <ref role="37wK5l" to="e2lb:~Integer.toString(int):java.lang.String" resolve="toString" />
-              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
               <node concept="2OqwBi" id="33aW7OxaWIf" role="37wK5m">
                 <node concept="117lpO" id="33aW7OxaWGA" role="2Oq$k0" />
                 <node concept="3TrcHB" id="33aW7OxaWQj" role="2OqNvi">
@@ -742,18 +736,6 @@
                 <ref role="3TsBF5" to="6jv6:1q4iT9$FIVt" resolve="description" />
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="WtQ9Q" id="29U0K5dIXXM">
-    <ref role="WuzLi" to="6jv6:7MTH03m4HK1" resolve="Config" />
-    <node concept="11bSqf" id="29U0K5dIXXN" role="11c4hB">
-      <node concept="3clFbS" id="29U0K5dIXXO" role="2VODD2">
-        <node concept="3SKdUt" id="29U0K5dIY2k" role="3cqZAp">
-          <node concept="3SKdUq" id="29U0K5dIY2t" role="3SKWNk">
-            <property role="3SKdUp" value="ignore this node." />
           </node>
         </node>
       </node>
