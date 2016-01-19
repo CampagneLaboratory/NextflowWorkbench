@@ -23,6 +23,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="b460c747-8fe8-48f0-9831-b1174d708742(NextflowWorkbench.build)" version="0" />
+    <module reference="f4badde6-d2fb-4344-91d3-caedb26a938e(XChart.build)" version="0" />
     <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.slisson.mps.all.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
   </dependencyVersions>
