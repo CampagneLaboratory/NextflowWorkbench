@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:550cd1fc-1cbe-4221-83da-d64a543b5955(model)">
+<model ref="r:41663e9a-b716-465f-9ce0-0c158a40f03d(training)">
   <persistence version="9" />
   <languages>
     <use id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh" version="0" />
@@ -32,8 +32,8 @@
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports>
-    <import index="cjb6" ref="r:550cd1fc-1cbe-4221-83da-d64a543b5955(model)" />
     <import index="hcg3" ref="r:83fb69f9-cfbd-4fdb-bc10-25f902f41098(kallisto)" />
+    <import index="hw4t" ref="r:41663e9a-b716-465f-9ce0-0c158a40f03d(training)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="cg3q" ref="r:545c77cd-e28f-475b-a086-dd21dc13ce31(model)" implicit="true" />
