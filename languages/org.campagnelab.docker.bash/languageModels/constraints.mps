@@ -2,13 +2,13 @@
 <model ref="r:a67be04c-97c1-4fb5-995f-8c68d3fa2967(org.campagnelab.docker.bash.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -162,7 +162,7 @@
               <node concept="2OqwBi" id="2h_fDmyfOQc" role="33vP2m">
                 <node concept="1Wqviy" id="2h_fDmyfOQd" role="2Oq$k0" />
                 <node concept="liA8E" id="2h_fDmyfOQe" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
                   <node concept="Xl_RD" id="2h_fDmyfOQf" role="37wK5m">
                     <property role="Xl_RC" value="/" />
                   </node>
@@ -204,7 +204,7 @@
                   <node concept="2OqwBi" id="2h_fDmyfOQy" role="3uHU7w">
                     <node concept="1Wqviy" id="2h_fDmyfOQz" role="2Oq$k0" />
                     <node concept="liA8E" id="2h_fDmyfOQ$" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                       <node concept="Xl_RD" id="2h_fDmyfOQ_" role="37wK5m">
                         <property role="Xl_RC" value="/" />
                       </node>
