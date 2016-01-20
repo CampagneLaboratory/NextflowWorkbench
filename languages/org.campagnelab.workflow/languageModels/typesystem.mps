@@ -6412,7 +6412,7 @@
         <node concept="3clFbS" id="1_dgSdLvA_G" role="3clFbx">
           <node concept="2MkqsV" id="1_dgSdLvKSS" role="3cqZAp">
             <node concept="Xl_RD" id="1_dgSdLvKTj" role="2MkJ7o">
-              <property role="Xl_RC" value="A docker image must be specified." />
+              <property role="Xl_RC" value="A docker image must be specified because the configuration contains with-docker." />
             </node>
             <node concept="1YBJjd" id="2Auf_2AVhOE" role="2OEOjV">
               <ref role="1YBMHb" node="2Auf_2AVh$o" resolve="process" />
