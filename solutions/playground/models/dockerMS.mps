@@ -152,6 +152,7 @@
       <concept id="2622571170406287297" name="org.campagnelab.docker.bash.structure.DockerPath" flags="ng" index="26mB_k">
         <reference id="2622571170406287298" name="dockerContainer" index="26mB_n" />
       </concept>
+      <concept id="7604659537827600540" name="org.campagnelab.docker.bash.structure.GenerateBashFragment" flags="ng" index="2vyjki" />
       <concept id="147628039490029687" name="org.campagnelab.docker.bash.structure.DockerBash" flags="ng" index="1QJbas">
         <child id="331977639697571264" name="container" index="234boB" />
         <child id="147628039490030676" name="script" index="1QJbqZ" />
@@ -10191,6 +10192,12 @@
     <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="sleep 10000" />
     <ref role="3zcJb$" node="A$944B3hKs" resolve="image" />
+  </node>
+  <node concept="1QJbas" id="1_dgSdLvuo6">
+    <node concept="2vyjki" id="1_dgSdLvuo7" role="1QJbqZ" />
+    <node concept="VtuK3" id="1_dgSdLvuo8" role="234boB">
+      <property role="VuL0s" value="latest" />
+    </node>
   </node>
 </model>
 

@@ -3356,6 +3356,9 @@
         <node concept="3LEDTy" id="2jODbBUUyHC" role="3LEDUa">
           <ref role="3LEDTV" node="3voMOJEmfkq" resolve="org.campagnelab.icons" />
         </node>
+        <node concept="3LEDTy" id="1_dgSdLvuzX" role="3LEDUa">
+          <ref role="3LEDTV" node="10fZnn77aTx" resolve="org.campagnelab.workflow.languages" />
+        </node>
       </node>
       <node concept="3LEwk6" id="1c4JsiUFyIg" role="2G$12L">
         <property role="BnDLt" value="true" />
