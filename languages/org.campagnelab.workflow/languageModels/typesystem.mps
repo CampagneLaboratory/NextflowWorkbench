@@ -295,7 +295,6 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
-      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
@@ -315,7 +314,6 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
-      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -6403,82 +6401,6 @@
     <node concept="1YaCAy" id="1EP6SKygw9d" role="1YuTPh">
       <property role="TrG5h" value="functionWithClosureType" />
       <ref role="1YaFvo" to="iowz:1EP6SKygw2j" resolve="FunctionWithClosureType" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="1_dgSdLvAbK">
-    <property role="TrG5h" value="check_Process" />
-    <node concept="3clFbS" id="1_dgSdLvAbL" role="18ibNy">
-      <node concept="3clFbJ" id="1_dgSdLvA_E" role="3cqZAp">
-        <node concept="3clFbS" id="1_dgSdLvA_G" role="3clFbx">
-          <node concept="2MkqsV" id="1_dgSdLvKSS" role="3cqZAp">
-            <node concept="Xl_RD" id="1_dgSdLvKTj" role="2MkJ7o">
-              <property role="Xl_RC" value="A docker image must be specified." />
-            </node>
-            <node concept="1YBJjd" id="1_dgSdLvKUX" role="2OEOjV">
-              <ref role="1YBMHb" node="1_dgSdLvAbN" resolve="process" />
-            </node>
-          </node>
-        </node>
-        <node concept="1Wc70l" id="1_dgSdLvKcL" role="3clFbw">
-          <node concept="2OqwBi" id="1_dgSdLvKFq" role="3uHU7w">
-            <node concept="2OqwBi" id="1_dgSdLvKoE" role="2Oq$k0">
-              <node concept="1YBJjd" id="1_dgSdLvKlu" role="2Oq$k0">
-                <ref role="1YBMHb" node="1_dgSdLvAbN" resolve="process" />
-              </node>
-              <node concept="3TrEf2" id="1_dgSdLvKx5" role="2OqNvi">
-                <ref role="3Tt5mk" to="iowz:irqYu7yXR0" />
-              </node>
-            </node>
-            <node concept="3w_OXm" id="1_dgSdLvKOu" role="2OqNvi" />
-          </node>
-          <node concept="1Wc70l" id="1_dgSdLvDcq" role="3uHU7B">
-            <node concept="2OqwBi" id="1_dgSdLvBm5" role="3uHU7B">
-              <node concept="2OqwBi" id="1_dgSdLvAMH" role="2Oq$k0">
-                <node concept="2OqwBi" id="1_dgSdLvACA" role="2Oq$k0">
-                  <node concept="1YBJjd" id="1_dgSdLvAA9" role="2Oq$k0">
-                    <ref role="1YBMHb" node="1_dgSdLvAbN" resolve="process" />
-                  </node>
-                  <node concept="I4A8Y" id="1_dgSdLvAHC" role="2OqNvi" />
-                </node>
-                <node concept="2RRcyG" id="1_dgSdLvAOX" role="2OqNvi">
-                  <ref role="2RRcyH" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
-                </node>
-              </node>
-              <node concept="3GX2aA" id="1_dgSdLvD9R" role="2OqNvi" />
-            </node>
-            <node concept="2OqwBi" id="1_dgSdLvIi7" role="3uHU7w">
-              <node concept="2OqwBi" id="1_dgSdLvHzW" role="2Oq$k0">
-                <node concept="2OqwBi" id="1_dgSdLvDJE" role="2Oq$k0">
-                  <node concept="2OqwBi" id="1_dgSdLvDfw" role="2Oq$k0">
-                    <node concept="2OqwBi" id="1_dgSdLvDfx" role="2Oq$k0">
-                      <node concept="1YBJjd" id="1_dgSdLvDfy" role="2Oq$k0">
-                        <ref role="1YBMHb" node="1_dgSdLvAbN" resolve="process" />
-                      </node>
-                      <node concept="I4A8Y" id="1_dgSdLvDfz" role="2OqNvi" />
-                    </node>
-                    <node concept="2RRcyG" id="1_dgSdLvDf$" role="2OqNvi">
-                      <ref role="2RRcyH" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
-                    </node>
-                  </node>
-                  <node concept="1uHKPH" id="1_dgSdLvGBC" role="2OqNvi" />
-                </node>
-                <node concept="2Rf3mk" id="1_dgSdLvHFF" role="2OqNvi">
-                  <node concept="1xMEDy" id="1_dgSdLvHFH" role="1xVPHs">
-                    <node concept="chp4Y" id="1_dgSdLvHLH" role="ri$Ld">
-                      <ref role="cht4Q" to="dlwq:1nj$XVfY62i" resolve="WithDocker" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3GX2aA" id="1_dgSdLvJgd" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="1_dgSdLvAbN" role="1YuTPh">
-      <property role="TrG5h" value="process" />
-      <ref role="1YaFvo" to="iowz:6tX5nBTatyL" resolve="Process" />
     </node>
   </node>
 </model>
