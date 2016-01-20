@@ -487,6 +487,29 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbF" id="2Auf_2AWIWi" role="3cqZAp">
+                <node concept="2OqwBi" id="2Auf_2AWIWj" role="3clFbG">
+                  <node concept="10M0yZ" id="2Auf_2AWIWk" role="2Oq$k0">
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  </node>
+                  <node concept="liA8E" id="2Auf_2AWIWl" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="3cpWs3" id="2Auf_2AWIWm" role="37wK5m">
+                      <node concept="Xl_RD" id="2Auf_2AWIWn" role="3uHU7B">
+                        <property role="Xl_RC" value="from: " />
+                      </node>
+                      <node concept="2OqwBi" id="2Auf_2AWJa8" role="3uHU7w">
+                        <node concept="2UPiyF" id="2Auf_2AWJ67" role="2Oq$k0" />
+                        <node concept="liA8E" id="2Auf_2AWJj$" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="2Auf_2AWISm" role="3cqZAp" />
             </node>
             <node concept="TDmWw" id="6xlRqabyTl9" role="TEbGg">
               <node concept="3clFbS" id="6xlRqabyTla" role="TDEfX">
