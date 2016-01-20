@@ -149,7 +149,6 @@
       </concept>
     </language>
     <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
-      <concept id="1572763280063618539" name="org.campagnelab.workflow.configuration.structure.ContainerOption" flags="ng" index="3qaWSP" />
       <concept id="1572763280063619218" name="org.campagnelab.workflow.configuration.structure.WithDocker" flags="ng" index="3qaZdc" />
       <concept id="6643674795001677795" name="org.campagnelab.workflow.configuration.structure.WorkflowConfig" flags="ng" index="3zupj_">
         <child id="1572763280063618524" name="containerOptions" index="3qaWS2" />
@@ -485,16 +484,6 @@
         <property role="TrG5h" value="__CF_USER_TEXT_ENCODING" />
         <property role="3vthGj" value="STRING" />
       </node>
-    </node>
-    <node concept="GbKB8" id="VMSWAFnwPI" role="234boB">
-      <property role="VuL0s" value="1.4.0" />
-      <property role="3yMj3R" value="sleep 1000" />
-      <property role="GbyUj" value="rocker-metar" />
-      <property role="3zaeVo" value="true" />
-      <property role="VuL0v" value="fac2003" />
-      <property role="TrG5h" value="interactive" />
-      <property role="1vm7qE" value="false" />
-      <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
     </node>
   </node>
   <node concept="VuPG2" id="BMuHr2HU09">
@@ -6696,7 +6685,6 @@
     <property role="TrG5h" value="workflow.config" />
     <node concept="3zuAPI" id="6eMkF2c4LmG" role="3zupjy" />
     <node concept="3qaZdc" id="1nj$XVg1Idv" role="3qaWS2" />
-    <node concept="3qaWSP" id="1nj$XVg2tMG" role="3qaWS2" />
   </node>
 </model>
 
