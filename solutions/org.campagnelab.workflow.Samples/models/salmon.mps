@@ -2,16 +2,16 @@
 <model ref="r:86e85ea8-21a0-4034-afd4-7f78a39f7d74(salmon)">
   <persistence version="9" />
   <languages>
-    <use id="5cf93bc1-d0da-4893-b739-63b17fe296b1" name="org.campagnelab.workflow.nyosh" version="0" />
-    <use id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" name="org.campagnelab.nyosh.interactive" version="0" />
+    <use id="5cf93bc1-d0da-4893-b739-63b17fe296b1" name="org.campagnelab.workflow.nyosh" version="-1" />
+    <use id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" name="org.campagnelab.nyosh.interactive" version="-1" />
     <devkit ref="f818ef32-d5bf-46fa-b215-1c17570a2e46(org.campagnelab.docker.gobyweb)" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports>
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="8oaq" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:org.apache.commons.io(org.campagnelab.nyosh.lib/)" />
-    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="ak0d" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/f:java_stub#0202ed86-955d-4227-9c20-377dd6b1f9ff#org.apache.commons.io(org.campagnelab.nyosh.lib/org.apache.commons.io@java_stub)" />
+    <import index="e5on" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.nio.file(JDK/java.nio.file@java_stub)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive">
@@ -845,11 +845,11 @@
           <node concept="3clFbF" id="2yY4N2z3T4S" role="3cqZAp">
             <node concept="2OqwBi" id="2yY4N2z3T4T" role="3clFbG">
               <node concept="10M0yZ" id="2yY4N2z3T4U" role="2Oq$k0">
-                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
               </node>
               <node concept="liA8E" id="2yY4N2z3T4V" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="3cpWs3" id="2yY4N2z3T4W" role="37wK5m">
                   <node concept="Xl_RD" id="2yY4N2z3T4X" role="3uHU7B">
                     <property role="Xl_RC" value="tsv:" />
@@ -876,18 +876,18 @@
                       <ref role="3cqZAo" node="2yY4N2z3T5k" resolve="f" />
                     </node>
                     <node concept="2YIFZM" id="2yY4N2z3T58" role="vO0Ub">
-                      <ref role="37wK5l" to="8oaq:~FilenameUtils.removeExtension(java.lang.String):java.lang.String" resolve="removeExtension" />
-                      <ref role="1Pybhc" to="8oaq:~FilenameUtils" resolve="FilenameUtils" />
+                      <ref role="37wK5l" to="ak0d:~FilenameUtils.removeExtension(java.lang.String):java.lang.String" resolve="removeExtension" />
+                      <ref role="1Pybhc" to="ak0d:~FilenameUtils" resolve="FilenameUtils" />
                       <node concept="2YIFZM" id="2yY4N2z3T59" role="37wK5m">
-                        <ref role="37wK5l" to="8oaq:~FilenameUtils.getBaseName(java.lang.String):java.lang.String" resolve="getBaseName" />
-                        <ref role="1Pybhc" to="8oaq:~FilenameUtils" resolve="FilenameUtils" />
+                        <ref role="37wK5l" to="ak0d:~FilenameUtils.getBaseName(java.lang.String):java.lang.String" resolve="getBaseName" />
+                        <ref role="1Pybhc" to="ak0d:~FilenameUtils" resolve="FilenameUtils" />
                         <node concept="2OqwBi" id="2yY4N2z3T5a" role="37wK5m">
                           <node concept="2OqwBi" id="2yY4N2z3T5b" role="2Oq$k0">
                             <node concept="37vLTw" id="2yY4N2z3T5c" role="2Oq$k0">
                               <ref role="3cqZAo" node="2yY4N2z3T5k" resolve="f" />
                             </node>
                             <node concept="liA8E" id="2yY4N2z3T5d" role="2OqNvi">
-                              <ref role="37wK5l" to="eoo2:~Path.getName(int):java.nio.file.Path" resolve="getName" />
+                              <ref role="37wK5l" to="e5on:~Path.getName(int):java.nio.file.Path" resolve="getName" />
                               <node concept="3cpWsd" id="2yY4N2z3T5e" role="37wK5m">
                                 <node concept="3cmrfG" id="2yY4N2z3T5f" role="3uHU7w">
                                   <property role="3cmrfH" value="1" />
@@ -897,14 +897,14 @@
                                     <ref role="3cqZAo" node="2yY4N2z3T5k" resolve="f" />
                                   </node>
                                   <node concept="liA8E" id="2yY4N2z3T5i" role="2OqNvi">
-                                    <ref role="37wK5l" to="eoo2:~Path.getNameCount():int" resolve="getNameCount" />
+                                    <ref role="37wK5l" to="e5on:~Path.getNameCount():int" resolve="getNameCount" />
                                   </node>
                                 </node>
                               </node>
                             </node>
                           </node>
                           <node concept="liA8E" id="2yY4N2z3T5j" role="2OqNvi">
-                            <ref role="37wK5l" to="eoo2:~Path.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="e5on:~Path.toString():java.lang.String" resolve="toString" />
                           </node>
                         </node>
                       </node>
