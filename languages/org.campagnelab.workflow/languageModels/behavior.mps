@@ -2223,6 +2223,7 @@
     </node>
     <node concept="13i0hz" id="6qiI2N4uAUN" role="13h7CS">
       <property role="TrG5h" value="getProcessOutput" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="6qiI2N4uAUO" role="1B3o_S" />
       <node concept="3clFbS" id="6qiI2N4uAUP" role="3clF47">
         <node concept="3cpWs8" id="5wcZjhPMggR" role="3cqZAp">
@@ -6222,6 +6223,28 @@
         </node>
       </node>
       <node concept="3cqZAl" id="7pq1c5M4up7" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="59BvSKQpDB$">
+    <property role="3GE5qa" value="" />
+    <ref role="13h7C2" to="iowz:59BvSKQpDd8" resolve="FunctionOutputChannel" />
+    <node concept="13hLZK" id="59BvSKQpDB_" role="13h7CW">
+      <node concept="3clFbS" id="59BvSKQpDBA" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="59BvSKQpDBB" role="13h7CS">
+      <property role="TrG5h" value="getProcessOutput" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="6qiI2N4uAUN" resolve="getProcessOutput" />
+      <node concept="3Tm1VV" id="59BvSKQpDBC" role="1B3o_S" />
+      <node concept="3clFbS" id="59BvSKQpDCa" role="3clF47">
+        <node concept="3clFbF" id="59BvSKQpNBq" role="3cqZAp">
+          <node concept="10Nm6u" id="59BvSKQpNBp" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="59BvSKQpDCb" role="3clF45">
+        <ref role="ehGHo" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
+      </node>
     </node>
   </node>
 </model>
