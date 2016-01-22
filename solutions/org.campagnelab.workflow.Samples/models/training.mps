@@ -2,39 +2,38 @@
 <model ref="r:41663e9a-b716-465f-9ce0-0c158a40f03d(training)">
   <persistence version="9" />
   <languages>
-    <use id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh" version="0" />
-    <use id="adfd00cb-58d7-4094-bca8-f941a491e04f" name="org.campagnelab.gobyweb" version="0" />
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="c6567f13-87ab-4686-8f6f-42e8228c0e27" name="org.campagnelab.nyosh.gstring" version="0" />
-    <use id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" name="org.campagnelab.nyosh.environment" version="0" />
-    <use id="901f5cf3-dc77-4c1e-bc5a-6382baee28b4" name="org.campagnelab.textoutput" version="0" />
-    <use id="5cf93bc1-d0da-4893-b739-63b17fe296b1" name="org.campagnelab.workflow.nyosh" version="0" />
-    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
-    <use id="a21a7294-c126-4f63-8335-8fecd8c28c7e" name="org.campagnelab.NYoSh" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
-    <use id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" name="org.campagnelab.nyosh.interactive" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" name="org.campagnelab.ui" version="0" />
-    <use id="57af9408-ffae-472e-9367-5cb44434e8b3" name="org.campagnelab.gobyweb.interactive.users" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="f05c05d7-dafb-4c87-b842-b836f305120f" name="org.campagnelab.gobyweb.monitoring" version="0" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
-    <use id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive" version="0" />
-    <use id="0b7d8bbd-896e-495e-be60-01a0d738a649" name="org.campagnelab.gobyweb.plugins" version="0" />
-    <use id="316e8289-cb69-4927-8bfe-edde5cd32037" name="org.campagnelab.workflow.languages" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh" version="-1" />
+    <use id="adfd00cb-58d7-4094-bca8-f941a491e04f" name="org.campagnelab.gobyweb" version="-1" />
+    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="-1" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
+    <use id="c6567f13-87ab-4686-8f6f-42e8228c0e27" name="org.campagnelab.nyosh.gstring" version="-1" />
+    <use id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" name="org.campagnelab.nyosh.environment" version="-1" />
+    <use id="901f5cf3-dc77-4c1e-bc5a-6382baee28b4" name="org.campagnelab.textoutput" version="-1" />
+    <use id="5cf93bc1-d0da-4893-b739-63b17fe296b1" name="org.campagnelab.workflow.nyosh" version="-1" />
+    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="-1" />
+    <use id="a21a7294-c126-4f63-8335-8fecd8c28c7e" name="org.campagnelab.NYoSh" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="-1" />
+    <use id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" name="org.campagnelab.nyosh.interactive" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" name="org.campagnelab.ui" version="-1" />
+    <use id="57af9408-ffae-472e-9367-5cb44434e8b3" name="org.campagnelab.gobyweb.interactive.users" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="f05c05d7-dafb-4c87-b842-b836f305120f" name="org.campagnelab.gobyweb.monitoring" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive" version="-1" />
+    <use id="0b7d8bbd-896e-495e-be60-01a0d738a649" name="org.campagnelab.gobyweb.plugins" version="-1" />
+    <use id="316e8289-cb69-4927-8bfe-edde5cd32037" name="org.campagnelab.workflow.languages" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="cg3q" ref="r:545c77cd-e28f-475b-a086-dd21dc13ce31(model)" implicit="true" />
   </imports>
   <registry>
     <language id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive">
@@ -68,7 +67,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -238,12 +237,6 @@
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
         <property id="8987412447080623507" name="options" index="2E$TAj" />
         <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
-      </concept>
-      <concept id="6819868375264134127" name="org.campagnelab.docker.structure.RunningContainer" flags="ng" index="GbKB8">
-        <property id="2480268408568341441" name="workingDir" index="yfkOV" />
-        <property id="8244532133801982036" name="mountWorkingDir" index="$TgSv" />
-        <property id="1859325667733444128" name="command" index="3yMj3R" />
-        <reference id="1859325667733099571" name="image" index="3zcJb$" />
       </concept>
       <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
         <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
@@ -507,6 +500,12 @@
   </node>
   <node concept="2ulcR8" id="39rfs1g6psq">
     <property role="TrG5h" value="KallistoCounts" />
+    <node concept="VtuK3" id="6qY8oemkG3H" role="234boB">
+      <property role="VuL0s" value="1.0.0" />
+      <property role="GbyUj" value="kallisto-homo-sapiens" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="3zaeVo" value="true" />
+    </node>
     <node concept="2lYRya" id="5G7wwTNPsM7" role="2ulM79">
       <property role="TrG5h" value="'counts-*.tsv'" />
       <node concept="16pRw0" id="5G7wwTNPsMG" role="2ybFLk" />
@@ -537,7 +536,7 @@
           <property role="19SUeA" value="/${SAMPLE_NAME} .fastq.gz`&#10;echo &quot;Basename= ${basename}&quot;&#10;TRANSCRIPT_INDEX=" />
         </node>
         <node concept="1OktH4" id="6uZiVd6KV52" role="19SJt6">
-          <ref role="26mB_n" node="6uZiVd6MmXk" resolve="interactive" />
+          <ref role="26mB_n" node="6qY8oemkG3H" />
           <node concept="19OFZp" id="6uZiVd6KV55" role="26mB$C">
             <property role="26mB_l" value="true" />
             <property role="26mB$E" value="" />
@@ -555,7 +554,7 @@
           <property role="19SUeA" value="&#10;echo ${TRANSCRIPT_INDEX}&#10;mkdir output&#10;" />
         </node>
         <node concept="1OktH4" id="6uZiVd6KV5V" role="19SJt6">
-          <ref role="26mB_n" node="6uZiVd6MmXk" resolve="interactive" />
+          <ref role="26mB_n" node="6qY8oemkG3H" />
           <node concept="19OFZp" id="6uZiVd6KV5Y" role="26mB$C">
             <property role="26mB_l" value="true" />
             <property role="26mB$E" value="" />
@@ -976,17 +975,6 @@
         </node>
       </node>
     </node>
-    <node concept="GbKB8" id="6uZiVd6MmXk" role="234boB">
-      <property role="VuL0s" value="1.0.0" />
-      <property role="3yMj3R" value="sleep 10000" />
-      <property role="yfkOV" value="/Users/fac2003/MPSProjects/Tutorial3_1//solutions/NewSolution/classes_gen/model/" />
-      <property role="$TgSv" value="true" />
-      <property role="GbyUj" value="kallisto-homo-sapiens" />
-      <property role="3zaeVo" value="true" />
-      <property role="VuL0v" value="artifacts" />
-      <property role="TrG5h" value="interactive" />
-      <ref role="3zcJb$" to="cg3q:6uZiVd6MmXl" resolve="image" />
-    </node>
   </node>
   <node concept="2$rMIF" id="6uZiVd6M0Br">
     <property role="TrG5h" value="IDKallistoCounts" />
@@ -1046,7 +1034,7 @@
     </node>
     <node concept="19SGf9" id="6uZiVd6M0BB" role="GZ$AB">
       <node concept="19SUe$" id="6uZiVd6M0BC" role="19SJt6">
-        <property role="19SUeA" value="My first workflow" />
+        <property role="19SUeA" value="Obtain Reads from SRQ and estimate counts with Kallisto" />
       </node>
     </node>
     <node concept="2$rEH5" id="6uZiVd6M0BD" role="2$rEHq">
@@ -1242,6 +1230,94 @@
       <property role="2EWcDP" value="/Users/fac2003/courses/SRA/files2/SRR1514145.sra" />
     </node>
   </node>
+  <node concept="2ulcR8" id="iewVIi_On7">
+    <property role="TrG5h" value="AlignWithKallisto" />
+    <node concept="2lYRya" id="iewVIi_OnM" role="2ulM79">
+      <property role="TrG5h" value="'counts.tsv'" />
+      <node concept="16pRw0" id="iewVIi_OnU" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="iewVIi_S$m" role="2ulM7n">
+      <node concept="knwa4" id="iewVIi_S$n" role="2ybFLk">
+        <node concept="2zSw2O" id="iewVIi_S$o" role="2zSOd7">
+          <property role="TrG5h" value="read1" />
+          <node concept="16pRw0" id="iewVIi_S$p" role="2ybFLk" />
+        </node>
+        <node concept="2zSw2O" id="iewVIi_S$q" role="2zSOd7">
+          <property role="TrG5h" value="read2" />
+          <node concept="16pRw0" id="iewVIi_S$r" role="2ybFLk" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Y$Zt1" id="iewVIi_Oow" role="2ulM7a">
+      <node concept="19SGf9" id="iewVIi_Ooy" role="3Y$PkS">
+        <node concept="19SUe$" id="iewVIi_Ooz" role="19SJt6">
+          <property role="19SUeA" value="&#10;# align with Kallisto&#10;echo Now aligning with Kallisto " />
+        </node>
+        <node concept="3YE7tV" id="iewVIi_OoD" role="19SJt6">
+          <ref role="3YE7sm" node="iewVIi_S$o" resolve="read1" />
+        </node>
+        <node concept="19SUe$" id="iewVIi_RhX" role="19SJt6">
+          <property role="19SUeA" value=" " />
+        </node>
+        <node concept="3YE7tV" id="iewVIi_Ri8" role="19SJt6">
+          <ref role="3YE7sm" node="iewVIi_S$q" resolve="read2" />
+        </node>
+        <node concept="19SUe$" id="iewVIi_OoC" role="19SJt6">
+          <property role="19SUeA" value="&#10;&#10;touch counts.tsv&#10;" />
+        </node>
+      </node>
+    </node>
+    <node concept="VtuK3" id="iewVIi_OHM" role="234boB">
+      <property role="VuL0s" value="1.0.0" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="kallisto-homo-sapiens" />
+      <property role="3zaeVo" value="true" />
+    </node>
+  </node>
+  <node concept="2ulcR8" id="3a_Ie33Oni_">
+    <property role="TrG5h" value="Download_1M_Reads" />
+    <node concept="2lYRya" id="iewVIi_Sdy" role="2ulM79">
+      <node concept="knwa4" id="iewVIi_Sei" role="2ybFLk">
+        <node concept="2zSw2O" id="iewVIi_Sek" role="2zSOd7">
+          <property role="TrG5h" value="'*_1.fastq.gz'" />
+          <node concept="16pRw0" id="iewVIi_Sf9" role="2ybFLk" />
+        </node>
+        <node concept="2zSw2O" id="iewVIi_Sgb" role="2zSOd7">
+          <property role="TrG5h" value="'*_2.fastq.gz'" />
+          <node concept="16pRw0" id="iewVIi_SgW" role="2ybFLk" />
+        </node>
+      </node>
+    </node>
+    <node concept="2mjA9o" id="3a_Ie33OniZ" role="2ulM7n">
+      <property role="TrG5h" value="id" />
+      <node concept="16pbKc" id="3a_Ie33Onj7" role="2ybFLk" />
+    </node>
+    <node concept="3Y$Zt1" id="3a_Ie33Onk7" role="2ulM7a">
+      <node concept="19SGf9" id="3a_Ie33Onk9" role="3Y$PkS">
+        <node concept="19SUe$" id="3a_Ie33Onka" role="19SJt6">
+          <property role="19SUeA" value="&#10;fastq-dump -X 5 --split-files " />
+        </node>
+        <node concept="3YE7tV" id="3a_Ie33Onkg" role="19SJt6">
+          <ref role="3YE7sm" node="3a_Ie33OniZ" resolve="id" />
+        </node>
+        <node concept="19SUe$" id="3a_Ie33Onkf" role="19SJt6">
+          <property role="19SUeA" value="&#10;gzip " />
+        </node>
+        <node concept="3YE7tV" id="iewVIi_M0P" role="19SJt6">
+          <ref role="3YE7sm" node="3a_Ie33OniZ" resolve="id" />
+        </node>
+        <node concept="19SUe$" id="iewVIi_M0O" role="19SJt6">
+          <property role="19SUeA" value="_*.fastq&#10;" />
+        </node>
+      </node>
+    </node>
+    <node concept="VtuK3" id="3a_Ie33Onkk" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="GbyUj" value="sra-toolkit" />
+      <property role="VuL0v" value="inutano" />
+      <property role="3zaeVo" value="true" />
+    </node>
+  </node>
   <node concept="2$rMIF" id="3a_Ie33Oncy">
     <property role="TrG5h" value="FastqKallistoCounts" />
     <node concept="2$rEH5" id="3a_Ie33Onib" role="2$rEHq">
@@ -1336,48 +1412,26 @@
       </node>
     </node>
   </node>
-  <node concept="2ulcR8" id="3a_Ie33Oni_">
-    <property role="TrG5h" value="Download_1M_Reads" />
-    <node concept="2lYRya" id="iewVIi_Sdy" role="2ulM79">
-      <node concept="knwa4" id="iewVIi_Sei" role="2ybFLk">
-        <node concept="2zSw2O" id="iewVIi_Sek" role="2zSOd7">
-          <property role="TrG5h" value="'*_1.fastq.gz'" />
-          <node concept="16pRw0" id="iewVIi_Sf9" role="2ybFLk" />
+  <node concept="2ulcR8" id="59BvSKQmMaD">
+    <property role="TrG5h" value="Split" />
+    <node concept="2mjA9o" id="59BvSKQotRj" role="2ulM7n">
+      <node concept="knwa4" id="59BvSKQotRk" role="2ybFLk">
+        <node concept="2zSw2O" id="59BvSKQotRl" role="2zSOd7">
+          <property role="TrG5h" value="read1" />
+          <node concept="16pRw0" id="59BvSKQotRm" role="2ybFLk" />
         </node>
-        <node concept="2zSw2O" id="iewVIi_Sgb" role="2zSOd7">
-          <property role="TrG5h" value="'*_2.fastq.gz'" />
-          <node concept="16pRw0" id="iewVIi_SgW" role="2ybFLk" />
-        </node>
-      </node>
-    </node>
-    <node concept="2mjA9o" id="3a_Ie33OniZ" role="2ulM7n">
-      <property role="TrG5h" value="id" />
-      <node concept="16pbKc" id="3a_Ie33Onj7" role="2ybFLk" />
-    </node>
-    <node concept="3Y$Zt1" id="3a_Ie33Onk7" role="2ulM7a">
-      <node concept="19SGf9" id="3a_Ie33Onk9" role="3Y$PkS">
-        <node concept="19SUe$" id="3a_Ie33Onka" role="19SJt6">
-          <property role="19SUeA" value="&#10;fastq-dump -X 5 --split-files " />
-        </node>
-        <node concept="3YE7tV" id="3a_Ie33Onkg" role="19SJt6">
-          <ref role="3YE7sm" node="3a_Ie33OniZ" resolve="id" />
-        </node>
-        <node concept="19SUe$" id="3a_Ie33Onkf" role="19SJt6">
-          <property role="19SUeA" value="&#10;gzip " />
-        </node>
-        <node concept="3YE7tV" id="iewVIi_M0P" role="19SJt6">
-          <ref role="3YE7sm" node="3a_Ie33OniZ" resolve="id" />
-        </node>
-        <node concept="19SUe$" id="iewVIi_M0O" role="19SJt6">
-          <property role="19SUeA" value="_*.fastq&#10;" />
+        <node concept="2zSw2O" id="59BvSKQotRn" role="2zSOd7">
+          <property role="TrG5h" value="read2" />
+          <node concept="16pRw0" id="59BvSKQotRo" role="2ybFLk" />
         </node>
       </node>
     </node>
-    <node concept="VtuK3" id="3a_Ie33Onkk" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="GbyUj" value="sra-toolkit" />
-      <property role="VuL0v" value="inutano" />
-      <property role="3zaeVo" value="true" />
+    <node concept="3Y$Zt1" id="59BvSKQt3Df" role="2ulM7a">
+      <node concept="19SGf9" id="59BvSKQt3Dh" role="3Y$PkS">
+        <node concept="19SUe$" id="59BvSKQt3Di" role="19SJt6">
+          <property role="19SUeA" value=" echo done splittig" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2ulcR8" id="iewVIi_T9Y">
@@ -1422,72 +1476,6 @@
       <property role="VuL0v" value="genomicpariscentre" />
       <property role="GbyUj" value="fastqc" />
       <property role="3zaeVo" value="true" />
-    </node>
-  </node>
-  <node concept="2ulcR8" id="iewVIi_On7">
-    <property role="TrG5h" value="AlignWithKallisto" />
-    <node concept="2lYRya" id="iewVIi_OnM" role="2ulM79">
-      <property role="TrG5h" value="'counts.tsv'" />
-      <node concept="16pRw0" id="iewVIi_OnU" role="2ybFLk" />
-    </node>
-    <node concept="2mjA9o" id="iewVIi_S$m" role="2ulM7n">
-      <node concept="knwa4" id="iewVIi_S$n" role="2ybFLk">
-        <node concept="2zSw2O" id="iewVIi_S$o" role="2zSOd7">
-          <property role="TrG5h" value="read1" />
-          <node concept="16pRw0" id="iewVIi_S$p" role="2ybFLk" />
-        </node>
-        <node concept="2zSw2O" id="iewVIi_S$q" role="2zSOd7">
-          <property role="TrG5h" value="read2" />
-          <node concept="16pRw0" id="iewVIi_S$r" role="2ybFLk" />
-        </node>
-      </node>
-    </node>
-    <node concept="3Y$Zt1" id="iewVIi_Oow" role="2ulM7a">
-      <node concept="19SGf9" id="iewVIi_Ooy" role="3Y$PkS">
-        <node concept="19SUe$" id="iewVIi_Ooz" role="19SJt6">
-          <property role="19SUeA" value="&#10;# align with Kallisto&#10;echo Now aligning with Kallisto " />
-        </node>
-        <node concept="3YE7tV" id="iewVIi_OoD" role="19SJt6">
-          <ref role="3YE7sm" node="iewVIi_S$o" resolve="read1" />
-        </node>
-        <node concept="19SUe$" id="iewVIi_RhX" role="19SJt6">
-          <property role="19SUeA" value=" " />
-        </node>
-        <node concept="3YE7tV" id="iewVIi_Ri8" role="19SJt6">
-          <ref role="3YE7sm" node="iewVIi_S$q" resolve="read2" />
-        </node>
-        <node concept="19SUe$" id="iewVIi_OoC" role="19SJt6">
-          <property role="19SUeA" value="&#10;&#10;touch counts.tsv&#10;" />
-        </node>
-      </node>
-    </node>
-    <node concept="VtuK3" id="iewVIi_OHM" role="234boB">
-      <property role="VuL0s" value="1.0.0" />
-      <property role="VuL0v" value="artifacts" />
-      <property role="GbyUj" value="kallisto-homo-sapiens" />
-      <property role="3zaeVo" value="true" />
-    </node>
-  </node>
-  <node concept="2ulcR8" id="59BvSKQmMaD">
-    <property role="TrG5h" value="Split" />
-    <node concept="2mjA9o" id="59BvSKQotRj" role="2ulM7n">
-      <node concept="knwa4" id="59BvSKQotRk" role="2ybFLk">
-        <node concept="2zSw2O" id="59BvSKQotRl" role="2zSOd7">
-          <property role="TrG5h" value="read1" />
-          <node concept="16pRw0" id="59BvSKQotRm" role="2ybFLk" />
-        </node>
-        <node concept="2zSw2O" id="59BvSKQotRn" role="2zSOd7">
-          <property role="TrG5h" value="read2" />
-          <node concept="16pRw0" id="59BvSKQotRo" role="2ybFLk" />
-        </node>
-      </node>
-    </node>
-    <node concept="3Y$Zt1" id="59BvSKQt3Df" role="2ulM7a">
-      <node concept="19SGf9" id="59BvSKQt3Dh" role="3Y$PkS">
-        <node concept="19SUe$" id="59BvSKQt3Di" role="19SJt6">
-          <property role="19SUeA" value=" echo done splittig" />
-        </node>
-      </node>
     </node>
   </node>
 </model>
