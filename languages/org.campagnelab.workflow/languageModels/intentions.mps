@@ -91,6 +91,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
@@ -102,11 +108,16 @@
       <concept id="1143235216708" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewNodeOperation" flags="nn" index="I8ghe">
         <reference id="1143235391024" name="concept" index="I8UWU" />
       </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -1472,6 +1483,26 @@
                 <ref role="3cqZAo" node="59BvSKQxUYr" resolve="list" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="59BvSKQHv$f" role="2ZfVeh">
+      <node concept="3clFbS" id="59BvSKQHv$g" role="2VODD2">
+        <node concept="3clFbF" id="59BvSKQHw8E" role="3cqZAp">
+          <node concept="2OqwBi" id="59BvSKQHw$u" role="3clFbG">
+            <node concept="2OqwBi" id="59BvSKQHwd4" role="2Oq$k0">
+              <node concept="2Sf5sV" id="59BvSKQHw8C" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="59BvSKQHwqh" role="2OqNvi">
+                <node concept="1xMEDy" id="59BvSKQHwqj" role="1xVPHs">
+                  <node concept="chp4Y" id="59BvSKQHwur" role="ri$Ld">
+                    <ref role="cht4Q" to="iowz:5frYURevrjw" resolve="FunctionOutputChannelList" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="59BvSKQHzrX" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="59BvSKQHwNS" role="2OqNvi" />
           </node>
         </node>
       </node>
