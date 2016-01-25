@@ -6736,12 +6736,62 @@
     </node>
     <node concept="1YaCAy" id="59BvSKQrgUd" role="1YuTPh">
       <property role="TrG5h" value="functionOutputChannel" />
-      <ref role="1YaFvo" to="iowz:59BvSKQpDd8" resolve="FunctionOutputChannel" />
+      <ref role="1YaFvo" to="iowz:59BvSKQpDd8" resolve="DuplicateOutputChannel" />
     </node>
     <node concept="bXqS6" id="59BvSKQsIXC" role="bX4a1">
       <node concept="3clFbS" id="59BvSKQsIXD" role="2VODD2">
         <node concept="3clFbF" id="59BvSKQsJ7U" role="3cqZAp">
           <node concept="3clFbT" id="59BvSKQsJ7T" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1YbPZF" id="59BvSKQOBNN">
+    <property role="TrG5h" value="typeof_DuplicateGlobalChannel" />
+    <property role="3GE5qa" value="" />
+    <node concept="3clFbS" id="59BvSKQOBNO" role="18ibNy">
+      <node concept="AoYWV" id="59BvSKQOBUX" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="59BvSKQOBUY" role="1ZfhK$">
+          <node concept="1Z2H0r" id="59BvSKQOBUZ" role="mwGJk">
+            <node concept="1YBJjd" id="59BvSKQOBXT" role="1Z2MuG">
+              <ref role="1YBMHb" node="59BvSKQOBNQ" resolve="channel" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="59BvSKQOBV1" role="1ZfhKB">
+          <node concept="1Z2H0r" id="59BvSKQOBV2" role="mwGJk">
+            <node concept="2OqwBi" id="59BvSKQOCt8" role="1Z2MuG">
+              <node concept="2OqwBi" id="59BvSKQOC13" role="2Oq$k0">
+                <node concept="1YBJjd" id="59BvSKQOBYw" role="2Oq$k0">
+                  <ref role="1YBMHb" node="59BvSKQOBNQ" resolve="channel" />
+                </node>
+                <node concept="2Xjw5R" id="59BvSKQOCoW" role="2OqNvi">
+                  <node concept="1xMEDy" id="59BvSKQOCoY" role="1xVPHs">
+                    <node concept="chp4Y" id="59BvSKQOCpV" role="ri$Ld">
+                      <ref role="cht4Q" to="iowz:59BvSKQHLu8" resolve="DuplicateGlobalChannelList" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrEf2" id="59BvSKQODfA" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:3m26PihhBJU" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="59BvSKQOBNQ" role="1YuTPh">
+      <property role="TrG5h" value="channel" />
+      <ref role="1YaFvo" to="iowz:59BvSKQMDF0" resolve="DuplicateGlobalChannel" />
+    </node>
+    <node concept="bXqS6" id="59BvSKQOBNU" role="bX4a1">
+      <node concept="3clFbS" id="59BvSKQOBNV" role="2VODD2">
+        <node concept="3clFbF" id="59BvSKQOBP3" role="3cqZAp">
+          <node concept="3clFbT" id="59BvSKQOBP2" role="3clFbG">
             <property role="3clFbU" value="true" />
           </node>
         </node>

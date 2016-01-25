@@ -296,7 +296,8 @@
         <child id="3857878650537656757" name="functions" index="1ylr64" />
       </concept>
       <concept id="3857878650533843630" name="org.campagnelab.workflow.structure.ToList" flags="ng" index="1yaYav" />
-      <concept id="5937854873896129352" name="org.campagnelab.workflow.structure.FunctionOutputChannel" flags="ng" index="1$0uN4" />
+      <concept id="5937854873896129352" name="org.campagnelab.workflow.structure.DuplicateOutputChannel" flags="ng" index="1$0uN4" />
+      <concept id="5937854873902684864" name="org.campagnelab.workflow.structure.DuplicateGlobalChannel" flags="ng" index="1$Fulc" />
       <concept id="5937854873901406088" name="org.campagnelab.workflow.structure.DuplicateGlobalChannelList" flags="ng" index="1$O6w4">
         <child id="5937854873901406089" name="channels" index="1$O6w5" />
       </concept>
@@ -1312,7 +1313,7 @@
         </node>
       </node>
       <node concept="1uYdA0" id="3a_Ie33OnkF" role="1uLvPH">
-        <ref role="1uK_4X" node="59BvSKQKWBY" resolve="ids1" />
+        <ref role="1uK_4X" node="59BvSKQO37s" resolve="ids1" />
       </node>
     </node>
     <node concept="2$rEH5" id="iewVIi_TdJ" role="2$rEHq">
@@ -1340,50 +1341,52 @@
         <node concept="1yaYav" id="59BvSKQHFDp" role="1ylr64" />
       </node>
       <node concept="1uYdA0" id="59BvSKQHDKa" role="1uLvPH">
-        <ref role="1uK_4X" node="59BvSKQKX9G" resolve="ids2" />
+        <ref role="1uK_4X" node="59BvSKQOg5v" resolve="ids2" />
         <node concept="1yaYav" id="59BvSKQHFIw" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="59BvSKQHDKb" role="1uLvPA">
         <property role="TrG5h" value="combined" />
       </node>
     </node>
-    <node concept="1$O6w4" id="59BvSKQKWri" role="2$L6iY">
-      <property role="TrG5h" value="identifiers" />
-      <node concept="1$0uN4" id="59BvSKQKWBY" role="1$O6w5">
+    <node concept="1$O6w4" id="59BvSKQO2pB" role="2$L6iY">
+      <property role="TrG5h" value="sampleIds" />
+      <node concept="1$Fulc" id="59BvSKQO37s" role="1$O6w5">
         <property role="TrG5h" value="ids1" />
+        <node concept="2J_sx7" id="59BvSKQO37t" role="2$L62I" />
       </node>
-      <node concept="1$0uN4" id="59BvSKQKX9G" role="1$O6w5">
+      <node concept="1$Fulc" id="59BvSKQOg5v" role="1$O6w5">
         <property role="TrG5h" value="ids2" />
+        <node concept="2J_sx7" id="59BvSKQOg5w" role="2$L62I" />
       </node>
-      <node concept="2J_sx7" id="3a_Ie33OncA" role="2$L62I">
-        <node concept="2J_g7P" id="3a_Ie33OngN" role="2J_sx6">
+      <node concept="2J_sx7" id="59BvSKQOR7k" role="2$L62I">
+        <node concept="2J_g7P" id="59BvSKQOR7l" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514132" />
         </node>
-        <node concept="2J_g7P" id="3a_Ie33OngM" role="2J_sx6">
+        <node concept="2J_g7P" id="59BvSKQOR7m" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514133" />
         </node>
-        <node concept="2J_g7P" id="3a_Ie33OngL" role="2J_sx6">
+        <node concept="2J_g7P" id="59BvSKQOR7n" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514134" />
         </node>
-        <node concept="2J_g7P" id="3a_Ie33OngK" role="2J_sx6">
+        <node concept="2J_g7P" id="59BvSKQOR7o" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514135" />
         </node>
-        <node concept="2J_g7P" id="3a_Ie33OngJ" role="2J_sx6">
+        <node concept="2J_g7P" id="59BvSKQOR7p" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514136" />
         </node>
-        <node concept="2J_g7P" id="3a_Ie33OngI" role="2J_sx6">
+        <node concept="2J_g7P" id="59BvSKQOR7q" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514137" />
         </node>
-        <node concept="2J_g7P" id="3a_Ie33OngH" role="2J_sx6">
+        <node concept="2J_g7P" id="59BvSKQOR7r" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514138" />
         </node>
-        <node concept="2J_g7P" id="3a_Ie33OngG" role="2J_sx6">
+        <node concept="2J_g7P" id="59BvSKQOR7s" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514139" />
         </node>
-        <node concept="2J_g7P" id="3a_Ie33OngF" role="2J_sx6">
+        <node concept="2J_g7P" id="59BvSKQOR7t" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514140" />
         </node>
-        <node concept="2J_g7P" id="3a_Ie33OngE" role="2J_sx6">
+        <node concept="2J_g7P" id="59BvSKQOR7u" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514141" />
         </node>
       </node>

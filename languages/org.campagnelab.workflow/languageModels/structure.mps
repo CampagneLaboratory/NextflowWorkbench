@@ -1314,7 +1314,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1..n" />
       <property role="20kJfa" value="outputs" />
-      <ref role="20lvS9" node="59BvSKQpDd8" resolve="FunctionOutputChannel" />
+      <ref role="20lvS9" node="59BvSKQpDd8" resolve="DuplicateOutputChannel" />
     </node>
   </node>
   <node concept="1TIwiD" id="6TmjYLGcNYR">
@@ -2086,7 +2086,7 @@
   </node>
   <node concept="1TIwiD" id="59BvSKQpDd8">
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="FunctionOutputChannel" />
+    <property role="TrG5h" value="DuplicateOutputChannel" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="1999760684" />
@@ -2101,7 +2101,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="channels" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="59BvSKQpDd8" resolve="FunctionOutputChannel" />
+      <ref role="20lvS9" node="59BvSKQpDd8" resolve="DuplicateOutputChannel" />
     </node>
   </node>
   <node concept="1TIwiD" id="59BvSKQHLu8">
@@ -2112,8 +2112,17 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="channels" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="59BvSKQpDd8" resolve="FunctionOutputChannel" />
+      <ref role="20lvS9" node="59BvSKQMDF0" resolve="DuplicateGlobalChannel" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="59BvSKQMDF0">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="DuplicateGlobalChannel" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1993205172" />
+    <property role="R4oN_" value="a channel created by a function" />
+    <ref role="1TJDcQ" node="5AoFZCLt6Ly" resolve="GlobalChannel" />
   </node>
 </model>
 

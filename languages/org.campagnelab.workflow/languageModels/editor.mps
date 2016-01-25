@@ -3718,7 +3718,7 @@
   </node>
   <node concept="24kQdi" id="59BvSKQpDjJ">
     <property role="3GE5qa" value="" />
-    <ref role="1XX52x" to="iowz:59BvSKQpDd8" resolve="FunctionOutputChannel" />
+    <ref role="1XX52x" to="iowz:59BvSKQpDd8" resolve="DuplicateOutputChannel" />
     <node concept="3EZMnI" id="59BvSKQpDjL" role="2wV5jI">
       <node concept="l2Vlx" id="59BvSKQpDjM" role="2iSdaV" />
       <node concept="3F0A7n" id="59BvSKQpDjN" role="3EZMnx">
@@ -3866,6 +3866,17 @@
       <node concept="3F0ifn" id="59BvSKQKIkW" role="3EZMnx">
         <property role="3F0ifm" value="]" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="59BvSKQO3Lv">
+    <property role="3GE5qa" value="" />
+    <ref role="1XX52x" to="iowz:59BvSKQMDF0" resolve="DuplicateGlobalChannel" />
+    <node concept="3EZMnI" id="59BvSKQO3Lx" role="2wV5jI">
+      <node concept="3F0A7n" id="59BvSKQO3LL" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" node="5yyd2HFrskG" resolve="ChannelName" />
+      </node>
+      <node concept="l2Vlx" id="59BvSKQO3L$" role="2iSdaV" />
     </node>
   </node>
 </model>
