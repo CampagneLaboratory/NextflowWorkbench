@@ -249,7 +249,7 @@
       </concept>
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
-      <concept id="6042700048959911136" name="org.campagnelab.workflow.structure.FunctionOutputChannelList" flags="ng" index="2tD$Xd">
+      <concept id="6042700048959911136" name="org.campagnelab.workflow.structure.DuplicateOutputChannelList" flags="ng" index="2tD$Xd">
         <child id="6042700048959911137" name="channels" index="2tD$Xc" />
       </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
@@ -297,6 +297,9 @@
       </concept>
       <concept id="3857878650533843630" name="org.campagnelab.workflow.structure.ToList" flags="ng" index="1yaYav" />
       <concept id="5937854873896129352" name="org.campagnelab.workflow.structure.FunctionOutputChannel" flags="ng" index="1$0uN4" />
+      <concept id="5937854873901406088" name="org.campagnelab.workflow.structure.DuplicateGlobalChannelList" flags="ng" index="1$O6w4">
+        <child id="5937854873901406089" name="channels" index="1$O6w5" />
+      </concept>
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
       </concept>
@@ -1309,7 +1312,7 @@
         </node>
       </node>
       <node concept="1uYdA0" id="3a_Ie33OnkF" role="1uLvPH">
-        <ref role="1uK_4X" node="3a_Ie33Onc_" resolve="identifiers" />
+        <ref role="1uK_4X" node="59BvSKQKWBY" resolve="ids1" />
       </node>
     </node>
     <node concept="2$rEH5" id="iewVIi_TdJ" role="2$rEHq">
@@ -1337,15 +1340,21 @@
         <node concept="1yaYav" id="59BvSKQHFDp" role="1ylr64" />
       </node>
       <node concept="1uYdA0" id="59BvSKQHDKa" role="1uLvPH">
-        <ref role="1uK_4X" node="59BvSKQHEME" resolve="identifiers2" />
+        <ref role="1uK_4X" node="59BvSKQKX9G" resolve="ids2" />
         <node concept="1yaYav" id="59BvSKQHFIw" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="59BvSKQHDKb" role="1uLvPA">
         <property role="TrG5h" value="combined" />
       </node>
     </node>
-    <node concept="1CVceo" id="3a_Ie33Onc_" role="2$L6iY">
+    <node concept="1$O6w4" id="59BvSKQKWri" role="2$L6iY">
       <property role="TrG5h" value="identifiers" />
+      <node concept="1$0uN4" id="59BvSKQKWBY" role="1$O6w5">
+        <property role="TrG5h" value="ids1" />
+      </node>
+      <node concept="1$0uN4" id="59BvSKQKX9G" role="1$O6w5">
+        <property role="TrG5h" value="ids2" />
+      </node>
       <node concept="2J_sx7" id="3a_Ie33OncA" role="2$L62I">
         <node concept="2J_g7P" id="3a_Ie33OngN" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514132" />
@@ -1375,41 +1384,6 @@
           <property role="2J_vQ8" value="SRR1514140" />
         </node>
         <node concept="2J_g7P" id="3a_Ie33OngE" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514141" />
-        </node>
-      </node>
-    </node>
-    <node concept="1CVceo" id="59BvSKQHEME" role="2$L6iY">
-      <property role="TrG5h" value="identifiers2" />
-      <node concept="2J_sx7" id="59BvSKQHEMF" role="2$L62I">
-        <node concept="2J_g7P" id="59BvSKQHEMG" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514132" />
-        </node>
-        <node concept="2J_g7P" id="59BvSKQHEMH" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514133" />
-        </node>
-        <node concept="2J_g7P" id="59BvSKQHEMI" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514134" />
-        </node>
-        <node concept="2J_g7P" id="59BvSKQHEMJ" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514135" />
-        </node>
-        <node concept="2J_g7P" id="59BvSKQHEMK" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514136" />
-        </node>
-        <node concept="2J_g7P" id="59BvSKQHEML" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514137" />
-        </node>
-        <node concept="2J_g7P" id="59BvSKQHEMM" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514138" />
-        </node>
-        <node concept="2J_g7P" id="59BvSKQHEMN" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514139" />
-        </node>
-        <node concept="2J_g7P" id="59BvSKQHEMO" role="2J_sx6">
-          <property role="2J_vQ8" value="SRR1514140" />
-        </node>
-        <node concept="2J_g7P" id="59BvSKQHEMP" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514141" />
         </node>
       </node>

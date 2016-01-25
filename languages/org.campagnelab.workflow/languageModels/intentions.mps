@@ -1444,7 +1444,7 @@
           <node concept="3cpWsn" id="59BvSKQxUYr" role="3cpWs9">
             <property role="TrG5h" value="list" />
             <node concept="3Tqbb2" id="59BvSKQxUYm" role="1tU5fm">
-              <ref role="ehGHo" to="iowz:5frYURevrjw" resolve="FunctionOutputChannelList" />
+              <ref role="ehGHo" to="iowz:5frYURevrjw" resolve="DuplicateOutputChannelList" />
             </node>
             <node concept="2OqwBi" id="59BvSKQxVh9" role="33vP2m">
               <node concept="2OqwBi" id="59BvSKQxV2x" role="2Oq$k0">
@@ -1452,7 +1452,7 @@
                 <node concept="I4A8Y" id="59BvSKQxVbV" role="2OqNvi" />
               </node>
               <node concept="I8ghe" id="59BvSKQxVjB" role="2OqNvi">
-                <ref role="I8UWU" to="iowz:5frYURevrjw" resolve="FunctionOutputChannelList" />
+                <ref role="I8UWU" to="iowz:5frYURevrjw" resolve="DuplicateOutputChannelList" />
               </node>
             </node>
           </node>
@@ -1496,13 +1496,113 @@
               <node concept="2Xjw5R" id="59BvSKQHwqh" role="2OqNvi">
                 <node concept="1xMEDy" id="59BvSKQHwqj" role="1xVPHs">
                   <node concept="chp4Y" id="59BvSKQHwur" role="ri$Ld">
-                    <ref role="cht4Q" to="iowz:5frYURevrjw" resolve="FunctionOutputChannelList" />
+                    <ref role="cht4Q" to="iowz:5frYURevrjw" resolve="DuplicateOutputChannelList" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="59BvSKQHzrX" role="1xVPHs" />
               </node>
             </node>
             <node concept="3w_OXm" id="59BvSKQHwNS" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="59BvSKQJfrw">
+    <property role="TrG5h" value="DuplicateGlobalChannel" />
+    <ref role="2ZfgGC" to="iowz:5AoFZCLt6Ly" resolve="GlobalChannel" />
+    <node concept="2S6ZIM" id="59BvSKQJfrx" role="2ZfVej">
+      <node concept="3clFbS" id="59BvSKQJfry" role="2VODD2">
+        <node concept="3clFbF" id="59BvSKQJfsV" role="3cqZAp">
+          <node concept="Xl_RD" id="59BvSKQJfsU" role="3clFbG">
+            <property role="Xl_RC" value="Duplicate" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="59BvSKQJfrz" role="2ZfgGD">
+      <node concept="3clFbS" id="59BvSKQJfr$" role="2VODD2">
+        <node concept="3cpWs8" id="59BvSKQJfFS" role="3cqZAp">
+          <node concept="3cpWsn" id="59BvSKQJfFT" role="3cpWs9">
+            <property role="TrG5h" value="list" />
+            <node concept="3Tqbb2" id="59BvSKQJfFU" role="1tU5fm">
+              <ref role="ehGHo" to="iowz:59BvSKQHLu8" resolve="DuplicateGlobalChannelList" />
+            </node>
+            <node concept="2OqwBi" id="59BvSKQJfFV" role="33vP2m">
+              <node concept="2OqwBi" id="59BvSKQJfFW" role="2Oq$k0">
+                <node concept="2Sf5sV" id="59BvSKQJfFX" role="2Oq$k0" />
+                <node concept="I4A8Y" id="59BvSKQJfFY" role="2OqNvi" />
+              </node>
+              <node concept="I8ghe" id="59BvSKQJfFZ" role="2OqNvi">
+                <ref role="I8UWU" to="iowz:59BvSKQHLu8" resolve="DuplicateGlobalChannelList" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="59BvSKQJfG0" role="3cqZAp">
+          <node concept="37vLTI" id="59BvSKQJfG1" role="3clFbG">
+            <node concept="2OqwBi" id="59BvSKQJfG2" role="37vLTx">
+              <node concept="2Sf5sV" id="59BvSKQJfG3" role="2Oq$k0" />
+              <node concept="3TrcHB" id="59BvSKQJfG4" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="59BvSKQJfG5" role="37vLTJ">
+              <node concept="37vLTw" id="59BvSKQJfG6" role="2Oq$k0">
+                <ref role="3cqZAo" node="59BvSKQJfFT" resolve="list" />
+              </node>
+              <node concept="3TrcHB" id="59BvSKQJfG7" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="59BvSKQJfXs" role="3cqZAp">
+          <node concept="37vLTI" id="59BvSKQJgqI" role="3clFbG">
+            <node concept="2OqwBi" id="59BvSKQJgv9" role="37vLTx">
+              <node concept="2Sf5sV" id="59BvSKQJgsy" role="2Oq$k0" />
+              <node concept="3TrEf2" id="59BvSKQJgCx" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:3m26PihhBJU" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="59BvSKQJg3f" role="37vLTJ">
+              <node concept="37vLTw" id="59BvSKQJfXq" role="2Oq$k0">
+                <ref role="3cqZAo" node="59BvSKQJfFT" resolve="list" />
+              </node>
+              <node concept="3TrEf2" id="59BvSKQJgoc" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:3m26PihhBJU" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="59BvSKQJfG8" role="3cqZAp">
+          <node concept="2OqwBi" id="59BvSKQJfG9" role="3clFbG">
+            <node concept="2Sf5sV" id="59BvSKQJfGa" role="2Oq$k0" />
+            <node concept="1P9Npp" id="59BvSKQJfGb" role="2OqNvi">
+              <node concept="37vLTw" id="59BvSKQJfGc" role="1P9ThW">
+                <ref role="3cqZAo" node="59BvSKQJfFT" resolve="list" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="59BvSKQJf_O" role="2ZfVeh">
+      <node concept="3clFbS" id="59BvSKQJf_P" role="2VODD2">
+        <node concept="3clFbF" id="59BvSKQJfAx" role="3cqZAp">
+          <node concept="2OqwBi" id="59BvSKQJfAy" role="3clFbG">
+            <node concept="2OqwBi" id="59BvSKQJfAz" role="2Oq$k0">
+              <node concept="2Sf5sV" id="59BvSKQJfA$" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="59BvSKQJfA_" role="2OqNvi">
+                <node concept="1xMEDy" id="59BvSKQJfAA" role="1xVPHs">
+                  <node concept="chp4Y" id="59BvSKQJfD8" role="ri$Ld">
+                    <ref role="cht4Q" to="iowz:59BvSKQHLu8" resolve="DuplicateGlobalChannelList" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="59BvSKQJfAC" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="59BvSKQJfAD" role="2OqNvi" />
           </node>
         </node>
       </node>

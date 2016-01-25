@@ -2095,9 +2095,20 @@
   </node>
   <node concept="1TIwiD" id="5frYURevrjw">
     <property role="1pbfSe" value="576303245" />
-    <property role="TrG5h" value="FunctionOutputChannelList" />
+    <property role="TrG5h" value="DuplicateOutputChannelList" />
     <ref role="1TJDcQ" node="7gAPJCESTMU" resolve="OutputChannel" />
     <node concept="1TJgyj" id="5frYURevrjx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="channels" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="59BvSKQpDd8" resolve="FunctionOutputChannel" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="59BvSKQHLu8">
+    <property role="1pbfSe" value="1994483948" />
+    <property role="TrG5h" value="DuplicateGlobalChannelList" />
+    <ref role="1TJDcQ" node="5AoFZCLt6Ly" resolve="GlobalChannel" />
+    <node concept="1TJgyj" id="59BvSKQHLu9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="channels" />
       <property role="20lbJX" value="0..n" />

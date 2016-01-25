@@ -3728,7 +3728,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5frYURevrjC">
-    <ref role="1XX52x" to="iowz:5frYURevrjw" resolve="FunctionOutputChannelList" />
+    <ref role="1XX52x" to="iowz:5frYURevrjw" resolve="DuplicateOutputChannelList" />
     <node concept="3EZMnI" id="5frYURevrjH" role="2wV5jI">
       <node concept="1HlG4h" id="5frYURevrCG" role="3EZMnx">
         <node concept="3k4GqR" id="5frYURevrCH" role="3F10Kt">
@@ -3843,6 +3843,29 @@
         <property role="3F0ifm" value="]" />
       </node>
       <node concept="l2Vlx" id="5frYURevrjK" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="59BvSKQJgEQ">
+    <ref role="1XX52x" to="iowz:59BvSKQHLu8" resolve="DuplicateGlobalChannelList" />
+    <node concept="3EZMnI" id="59BvSKQJgES" role="2wV5jI">
+      <node concept="l2Vlx" id="59BvSKQJgET" role="2iSdaV" />
+      <node concept="3F1sOY" id="59BvSKQJgEW" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:3m26PihhBJU" />
+      </node>
+      <node concept="3F0ifn" id="59BvSKQJgRO" role="3EZMnx">
+        <property role="3F0ifm" value="⇢" />
+      </node>
+      <node concept="3F0ifn" id="59BvSKQKIkd" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F2HdR" id="59BvSKQJgSR" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="iowz:59BvSKQHLu9" />
+        <node concept="l2Vlx" id="59BvSKQJgST" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="59BvSKQKIkW" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
     </node>
   </node>
 </model>
