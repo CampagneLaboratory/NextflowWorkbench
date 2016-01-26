@@ -1509,7 +1509,13 @@
           </node>
         </node>
         <node concept="19SUe$" id="59BvSKQHAFJ" role="19SJt6">
-          <property role="19SUeA" value="&#10;echo ${TRANSCRIPT_INDEX}&#10;mkdir output&#10;" />
+          <property role="19SUeA" value="&#10;echo ${TRANSCRIPT_INDEX}&#10;basename=`basename " />
+        </node>
+        <node concept="3YE7tV" id="59BvSKR0J50" role="19SJt6">
+          <ref role="3YE7sm" node="59BvSKQHAH$" resolve="read1" />
+        </node>
+        <node concept="19SUe$" id="59BvSKR0J4Z" role="19SJt6">
+          <property role="19SUeA" value="`&#10;echo &quot;Basename= ${basename}&quot;&#10;&#10;mkdir output&#10;" />
         </node>
         <node concept="1OktH4" id="59BvSKQHAFK" role="19SJt6">
           <ref role="26mB_n" node="59BvSKQHAFt" />
