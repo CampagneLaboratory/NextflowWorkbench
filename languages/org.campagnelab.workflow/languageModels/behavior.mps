@@ -1744,6 +1744,89 @@
             <ref role="3cqZAo" node="5CFNYIH_BEj" resolve="alreadyUsed" />
           </node>
         </node>
+        <node concept="3SKdUt" id="59BvSKQQFPh" role="3cqZAp">
+          <node concept="3SKdUq" id="59BvSKQQFPj" role="3SKWNk">
+            <property role="3SKdUp" value="remove channel list containers" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="59BvSKQQGLj" role="3cqZAp">
+          <node concept="3cpWsn" id="59BvSKQQGLk" role="3cpWs9">
+            <property role="TrG5h" value="channelList" />
+            <property role="3TUv4t" value="true" />
+            <node concept="2OqwBi" id="59BvSKQSZlR" role="33vP2m">
+              <node concept="2OqwBi" id="59BvSKQQGLm" role="2Oq$k0">
+                <node concept="2OqwBi" id="59BvSKQQGLn" role="2Oq$k0">
+                  <node concept="13iPFW" id="59BvSKQQGLo" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="59BvSKQQGLp" role="2OqNvi">
+                    <node concept="1xMEDy" id="59BvSKQQGLq" role="1xVPHs">
+                      <node concept="chp4Y" id="59BvSKQQGLr" role="ri$Ld">
+                        <ref role="cht4Q" to="iowz:5D7AjvYabas" resolve="Workflow" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="59BvSKQQGLs" role="2OqNvi">
+                  <node concept="1xMEDy" id="59BvSKQQGLt" role="1xVPHs">
+                    <node concept="chp4Y" id="59BvSKQSYLE" role="ri$Ld">
+                      <ref role="cht4Q" to="iowz:3m26PihhBwN" resolve="OutChannelContainer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3zZkjj" id="59BvSKQT3jD" role="2OqNvi">
+                <node concept="1bVj0M" id="59BvSKQT3jF" role="23t8la">
+                  <node concept="3clFbS" id="59BvSKQT3jG" role="1bW5cS">
+                    <node concept="3clFbF" id="59BvSKQT4zb" role="3cqZAp">
+                      <node concept="2OqwBi" id="59BvSKQT548" role="3clFbG">
+                        <node concept="37vLTw" id="59BvSKQT4za" role="2Oq$k0">
+                          <ref role="3cqZAo" node="59BvSKQT3jH" resolve="it" />
+                        </node>
+                        <node concept="1mIQ4w" id="59BvSKQT5yQ" role="2OqNvi">
+                          <node concept="chp4Y" id="59BvSKQT68O" role="cj9EA">
+                            <ref role="cht4Q" to="iowz:59BvSKQQFcP" resolve="OutChannelListContainer" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="59BvSKQT3jH" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="59BvSKQT3jI" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="A3Dl8" id="59BvSKQQGLK" role="1tU5fm">
+              <node concept="3Tqbb2" id="59BvSKQQGLL" role="A3Ik2">
+                <ref role="ehGHo" to="iowz:3m26PihhBwN" resolve="OutChannelContainer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="59BvSKQQGLM" role="3cqZAp">
+          <node concept="2GrKxI" id="59BvSKQQGLN" role="2Gsz3X">
+            <property role="TrG5h" value="ch" />
+          </node>
+          <node concept="3clFbS" id="59BvSKQQGLO" role="2LFqv$">
+            <node concept="3clFbF" id="59BvSKQQGLP" role="3cqZAp">
+              <node concept="2OqwBi" id="59BvSKQQGLQ" role="3clFbG">
+                <node concept="37vLTw" id="59BvSKQQGLR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5CFNYIIYVXl" resolve="currentScope" />
+                </node>
+                <node concept="3dhRuq" id="59BvSKQQGLS" role="2OqNvi">
+                  <node concept="2GrUjf" id="59BvSKQQGLU" role="25WWJ7">
+                    <ref role="2Gs0qQ" node="59BvSKQQGLN" resolve="ch" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="59BvSKQQGLW" role="2GsD0m">
+            <ref role="3cqZAo" node="59BvSKQQGLk" resolve="channelList" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="59BvSKQQGdK" role="3cqZAp" />
+        <node concept="3clFbH" id="59BvSKQQGgP" role="3cqZAp" />
         <node concept="3SKdUt" id="6LbMDSKEuf4" role="3cqZAp">
           <node concept="3SKdUq" id="6LbMDSKEvX3" role="3SKWNk">
             <property role="3SKdUp" value="Below were tentative changes to alter the scope for channel functions with references to channels" />
@@ -6227,7 +6310,7 @@
   </node>
   <node concept="13h7C7" id="59BvSKQpDB$">
     <property role="3GE5qa" value="" />
-    <ref role="13h7C2" to="iowz:59BvSKQpDd8" resolve="FunctionOutputChannel" />
+    <ref role="13h7C2" to="iowz:59BvSKQpDd8" resolve="DuplicateOutputChannel" />
     <node concept="13hLZK" id="59BvSKQpDB_" role="13h7CW">
       <node concept="3clFbS" id="59BvSKQpDBA" role="2VODD2" />
     </node>

@@ -2103,6 +2103,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="59BvSKQpDd8" resolve="DuplicateOutputChannel" />
     </node>
+    <node concept="PrWs8" id="59BvSKQQFcQ" role="PzmwI">
+      <ref role="PrY4T" node="59BvSKQQFcP" resolve="OutChannelListContainer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="59BvSKQHLu8">
     <property role="1pbfSe" value="1994483948" />
@@ -2114,6 +2117,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="59BvSKQMDF0" resolve="DuplicateGlobalChannel" />
     </node>
+    <node concept="PrWs8" id="59BvSKQQFcV" role="PzmwI">
+      <ref role="PrY4T" node="59BvSKQQFcP" resolve="OutChannelListContainer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="59BvSKQMDF0">
     <property role="3GE5qa" value="" />
@@ -2123,6 +2129,10 @@
     <property role="1pbfSe" value="1993205172" />
     <property role="R4oN_" value="a channel created by a function" />
     <ref role="1TJDcQ" node="5AoFZCLt6Ly" resolve="GlobalChannel" />
+  </node>
+  <node concept="PlHQZ" id="59BvSKQQFcP">
+    <property role="1pbfSe" value="1992150335" />
+    <property role="TrG5h" value="OutChannelListContainer" />
   </node>
 </model>
 

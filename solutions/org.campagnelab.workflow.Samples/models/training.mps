@@ -1313,7 +1313,7 @@
         </node>
       </node>
       <node concept="1uYdA0" id="3a_Ie33OnkF" role="1uLvPH">
-        <ref role="1uK_4X" node="59BvSKQO37s" resolve="ids1" />
+        <ref role="1uK_4X" node="59BvSKQO37s" resolve="IDsToDownload" />
       </node>
     </node>
     <node concept="2$rEH5" id="iewVIi_TdJ" role="2$rEHq">
@@ -1341,7 +1341,7 @@
         <node concept="1yaYav" id="59BvSKQHFDp" role="1ylr64" />
       </node>
       <node concept="1uYdA0" id="59BvSKQHDKa" role="1uLvPH">
-        <ref role="1uK_4X" node="59BvSKQOg5v" resolve="ids2" />
+        <ref role="1uK_4X" node="59BvSKQOg5v" resolve="IDsToCombine" />
         <node concept="1yaYav" id="59BvSKQHFIw" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="59BvSKQHDKb" role="1uLvPA">
@@ -1351,11 +1351,11 @@
     <node concept="1$O6w4" id="59BvSKQO2pB" role="2$L6iY">
       <property role="TrG5h" value="sampleIds" />
       <node concept="1$Fulc" id="59BvSKQO37s" role="1$O6w5">
-        <property role="TrG5h" value="ids1" />
+        <property role="TrG5h" value="IDsToDownload" />
         <node concept="2J_sx7" id="59BvSKQO37t" role="2$L62I" />
       </node>
       <node concept="1$Fulc" id="59BvSKQOg5v" role="1$O6w5">
-        <property role="TrG5h" value="ids2" />
+        <property role="TrG5h" value="IDsToCombine" />
         <node concept="2J_sx7" id="59BvSKQOg5w" role="2$L62I" />
       </node>
       <node concept="2J_sx7" id="59BvSKQOR7k" role="2$L62I">
