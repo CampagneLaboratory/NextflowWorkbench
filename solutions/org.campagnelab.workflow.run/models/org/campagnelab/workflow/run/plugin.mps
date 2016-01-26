@@ -1279,33 +1279,52 @@
             </node>
             <node concept="9aQIb" id="53yaZUOqaVA" role="9aQIa">
               <node concept="3clFbS" id="53yaZUOqaVB" role="9aQI4">
-                <node concept="3clFbF" id="53yaZUOqaWG" role="3cqZAp">
-                  <node concept="37vLTI" id="53yaZUOqaWH" role="3clFbG">
-                    <node concept="2OqwBi" id="53yaZUOqaWI" role="37vLTJ">
-                      <node concept="yHkzx" id="53yaZUOqaWJ" role="2Oq$k0" />
-                      <node concept="yHkDZ" id="53yaZUOqaWK" role="2OqNvi">
-                        <ref role="yHkDY" node="53yaZUOl7yf" resolve="nextflowOptions" />
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="7ejpSqHB1iT" role="37vLTx">
-                      <node concept="2OqwBi" id="7ejpSqHB0Md" role="2Oq$k0">
-                        <node concept="yHkzx" id="7ejpSqHB0Lc" role="2Oq$k0" />
-                        <node concept="yHkDZ" id="7ejpSqHB10V" role="2OqNvi">
-                          <ref role="yHkDY" node="53yaZUOl7yf" resolve="nextflowOptions" />
+                <node concept="3clFbJ" id="59BvSKR0XLl" role="3cqZAp">
+                  <node concept="3clFbS" id="59BvSKR0XLm" role="3clFbx">
+                    <node concept="3clFbF" id="53yaZUOqaWG" role="3cqZAp">
+                      <node concept="37vLTI" id="53yaZUOqaWH" role="3clFbG">
+                        <node concept="2OqwBi" id="53yaZUOqaWI" role="37vLTJ">
+                          <node concept="yHkzx" id="53yaZUOqaWJ" role="2Oq$k0" />
+                          <node concept="yHkDZ" id="53yaZUOqaWK" role="2OqNvi">
+                            <ref role="yHkDY" node="53yaZUOl7yf" resolve="nextflowOptions" />
+                          </node>
                         </node>
-                      </node>
-                      <node concept="liA8E" id="7ejpSqHB3Vm" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
-                        <node concept="Xl_RD" id="7ejpSqHB3WE" role="37wK5m">
-                          <property role="Xl_RC" value="-resume" />
-                        </node>
-                        <node concept="Xl_RD" id="7ejpSqHB41O" role="37wK5m">
-                          <property role="Xl_RC" value="" />
+                        <node concept="2OqwBi" id="7ejpSqHB1iT" role="37vLTx">
+                          <node concept="2OqwBi" id="7ejpSqHB0Md" role="2Oq$k0">
+                            <node concept="yHkzx" id="7ejpSqHB0Lc" role="2Oq$k0" />
+                            <node concept="yHkDZ" id="7ejpSqHB10V" role="2OqNvi">
+                              <ref role="yHkDY" node="53yaZUOl7yf" resolve="nextflowOptions" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="7ejpSqHB3Vm" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                            <node concept="Xl_RD" id="7ejpSqHB3WE" role="37wK5m">
+                              <property role="Xl_RC" value="-resume" />
+                            </node>
+                            <node concept="Xl_RD" id="7ejpSqHB41O" role="37wK5m">
+                              <property role="Xl_RC" value="" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
                   </node>
+                  <node concept="2OqwBi" id="59BvSKR0XLy" role="3clFbw">
+                    <node concept="2OqwBi" id="59BvSKR0XLz" role="2Oq$k0">
+                      <node concept="yHkzx" id="59BvSKR0XL$" role="2Oq$k0" />
+                      <node concept="yHkDZ" id="59BvSKR0XL_" role="2OqNvi">
+                        <ref role="yHkDY" node="53yaZUOl7yf" resolve="nextflowOptions" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="59BvSKR0XLA" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                      <node concept="Xl_RD" id="59BvSKR0XLB" role="37wK5m">
+                        <property role="Xl_RC" value="-resume" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
+                <node concept="3clFbH" id="59BvSKR0XJ$" role="3cqZAp" />
               </node>
             </node>
           </node>
