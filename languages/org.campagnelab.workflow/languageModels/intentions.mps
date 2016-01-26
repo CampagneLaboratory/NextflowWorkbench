@@ -1692,6 +1692,7 @@
   <node concept="2S6QgY" id="59BvSKQUFSO">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="RevertDuplicateOutputChannel" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="iowz:5frYURevrjw" resolve="DuplicateOutputChannelList" />
     <node concept="2S6ZIM" id="59BvSKQUFSP" role="2ZfVej">
       <node concept="3clFbS" id="59BvSKQUFSQ" role="2VODD2">

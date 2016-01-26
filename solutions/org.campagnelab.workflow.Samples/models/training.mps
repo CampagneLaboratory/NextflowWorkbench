@@ -1303,12 +1303,12 @@
     <property role="TrG5h" value="FastqKallistoCounts" />
     <node concept="2$rEH5" id="3a_Ie33Onib" role="2$rEHq">
       <ref role="2$rEH4" node="3a_Ie33Oni_" resolve="Download_1M_Reads" />
-      <node concept="2tD$Xd" id="5frYURexk5S" role="1uLvPA">
+      <node concept="2tD$Xd" id="59BvSKQZ7BC" role="1uLvPA">
         <property role="TrG5h" value="reads" />
-        <node concept="1$0uN4" id="5frYURexkal" role="2tD$Xc">
+        <node concept="1$0uN4" id="59BvSKQZ7KI" role="2tD$Xc">
           <property role="TrG5h" value="A" />
         </node>
-        <node concept="1$0uN4" id="5frYURexkj4" role="2tD$Xc">
+        <node concept="1$0uN4" id="59BvSKQZ85H" role="2tD$Xc">
           <property role="TrG5h" value="B" />
         </node>
       </node>
@@ -1322,13 +1322,13 @@
         <property role="TrG5h" value="zip" />
       </node>
       <node concept="1uYdA0" id="iewVIi_Tfi" role="1uLvPH">
-        <ref role="1uK_4X" node="5frYURexkal" resolve="A" />
+        <ref role="1uK_4X" node="59BvSKQZ7KI" resolve="A" />
       </node>
     </node>
     <node concept="2$rEH5" id="5frYURexkMf" role="2$rEHq">
       <ref role="2$rEH4" node="59BvSKQHAFs" resolve="KallistoCountsWithTuples" />
       <node concept="1uYdA0" id="5frYURexkRa" role="1uLvPH">
-        <ref role="1uK_4X" node="5frYURexkj4" resolve="B" />
+        <ref role="1uK_4X" node="59BvSKQZ85H" resolve="B" />
       </node>
       <node concept="1uLkD0" id="5frYURexkRb" role="1uLvPA">
         <property role="TrG5h" value="result" />
