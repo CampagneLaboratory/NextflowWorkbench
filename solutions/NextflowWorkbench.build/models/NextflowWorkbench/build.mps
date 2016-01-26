@@ -3511,6 +3511,23 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="6nLXN__2exd" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.campagnelab.workflow.rna-seq" />
+        <property role="3LESm3" value="7c739b34-3e5e-410f-b0a5-b9614d9685f7" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="6nLXN__2exe" role="3LF7KH">
+          <node concept="2Ry0Ak" id="6nLXN__2exf" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="6nLXN__2fDE" role="2Ry0An">
+              <property role="2Ry0Am" value="org.campagnelab.workflow.rna-seq" />
+              <node concept="2Ry0Ak" id="6nLXN__2g1r" role="2Ry0An">
+                <property role="2Ry0Am" value="org.campagnelab.workflow.rna-seq.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2igEWh" id="4oJiZHqUFog" role="1hWBAP">
       <property role="2igJW4" value="true" />
