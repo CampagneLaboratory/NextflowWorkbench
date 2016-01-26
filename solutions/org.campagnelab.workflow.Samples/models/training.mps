@@ -1276,7 +1276,7 @@
     <node concept="3Y$Zt1" id="3a_Ie33Onk7" role="2ulM7a">
       <node concept="19SGf9" id="3a_Ie33Onk9" role="3Y$PkS">
         <node concept="19SUe$" id="3a_Ie33Onka" role="19SJt6">
-          <property role="19SUeA" value="&#10;fastq-dump -X 5 --split-files " />
+          <property role="19SUeA" value="&#10;fastq-dump -X 1000000 --split-files " />
         </node>
         <node concept="3YE7tV" id="3a_Ie33Onkg" role="19SJt6">
           <ref role="3YE7sm" node="3a_Ie33OniZ" resolve="id" />
@@ -1485,7 +1485,7 @@
     <node concept="NgwLd" id="59BvSKQHAF$" role="2ulM7a">
       <node concept="19SGf9" id="59BvSKQHAF_" role="3Y$PkS">
         <node concept="19SUe$" id="59BvSKQHAFA" role="19SJt6">
-          <property role="19SUeA" value="#ls -ltrh /Users/fac2003/courses/fastq&#10;echo &quot;Processing: &quot; " />
+          <property role="19SUeA" value="echo &quot;Processing: &quot; " />
         </node>
         <node concept="3YE7tV" id="59BvSKQHCku" role="19SJt6">
           <ref role="3YE7sm" node="59BvSKQHAH$" resolve="read1" />
