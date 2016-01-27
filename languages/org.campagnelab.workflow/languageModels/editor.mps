@@ -1339,6 +1339,7 @@
       <node concept="l2Vlx" id="4Toykm3BqJ5" role="2iSdaV" />
       <node concept="3F0A7n" id="4Toykm43Opj" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" node="5yyd2HFrskG" resolve="ChannelName" />
       </node>
       <node concept="3F0ifn" id="4Toykm43Opr" role="3EZMnx">
         <property role="3F0ifm" value="=" />
@@ -1400,7 +1401,10 @@
     <node concept="14StLt" id="6aaE4aM9P_2" role="V601i">
       <property role="TrG5h" value="Label" />
       <node concept="VechU" id="6aaE4aM9P_3" role="3F10Kt">
-        <property role="Vb096" value="DARK_GREEN" />
+        <property role="Vb096" value="DARK_BLUE" />
+      </node>
+      <node concept="Vb9p2" id="6nLXN__bXnj" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
       </node>
     </node>
     <node concept="14StLt" id="5yyd2HFN6xi" role="V601i">
