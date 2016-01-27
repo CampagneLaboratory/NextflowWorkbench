@@ -60,13 +60,6 @@
       <ref role="20lvS9" node="1wgQ7fIjgMx" resolve="AdditionalPaths" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2h4swG_Gyk1">
-    <property role="TrG5h" value="ProcessDeclaration" />
-    <property role="R4oN_" value="a temporary ext to Process to test script generation" />
-    <property role="19KtqR" value="true" />
-    <property role="1pbfSe" value="1240897292" />
-    <ref role="1TJDcQ" to="iowz:6tX5nBTatyL" resolve="Process" />
-  </node>
   <node concept="1TIwiD" id="1wgQ7fIj9wJ">
     <property role="TrG5h" value="PythonScript" />
     <property role="R4oN_" value="a Python script" />

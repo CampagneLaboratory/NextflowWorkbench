@@ -235,23 +235,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="2h4swG_Gzwu">
-    <ref role="WuzLi" to="x2t3:2h4swG_Gyk1" resolve="ProcessDeclaration" />
-    <node concept="11bSqf" id="2h4swG_Gzwv" role="11c4hB">
-      <node concept="3clFbS" id="2h4swG_Gzww" role="2VODD2">
-        <node concept="lc7rE" id="2h4swG_Gzxv" role="3cqZAp">
-          <node concept="l9hG8" id="2h4swG_G$yH" role="lcghm">
-            <node concept="2OqwBi" id="2h4swG_G$_Q" role="lb14g">
-              <node concept="117lpO" id="2h4swG_G$zr" role="2Oq$k0" />
-              <node concept="3TrEf2" id="6qiI2N576Jn" role="2OqNvi">
-                <ref role="3Tt5mk" to="iowz:6tX5nBTaziN" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="1wgQ7fIjcm0">
     <property role="3GE5qa" value="" />
     <ref role="WuzLi" to="x2t3:1wgQ7fIj9wJ" resolve="PythonScript" />
