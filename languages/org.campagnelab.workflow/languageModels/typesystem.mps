@@ -24,6 +24,7 @@
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" implicit="true" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
     <import index="tp2n" ref="r:00000000-0000-4000-0000-011c89590333(jetbrains.mps.baseLanguage.closures.behavior)" implicit="true" />
   </imports>
@@ -314,6 +315,9 @@
       </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
+        <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -1994,7 +1998,63 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="5FDPSDjExhC" role="3cqZAp" />
+      <node concept="3clFbJ" id="6nLXN__8WOK" role="3cqZAp">
+        <node concept="3clFbS" id="6nLXN__8WOM" role="3clFbx">
+          <node concept="2MkqsV" id="6nLXN__92Nx" role="3cqZAp">
+            <node concept="1YBJjd" id="6nLXN__92NQ" role="2OEOjV">
+              <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+            </node>
+            <node concept="Xl_RD" id="6nLXN__7Nks" role="2MkJ7o">
+              <property role="Xl_RC" value="You must define a docker Config root node in order to use this process." />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="6nLXN__8ZBr" role="3clFbw">
+          <node concept="2OqwBi" id="6nLXN__913j" role="3uHU7w">
+            <node concept="2OqwBi" id="6nLXN__90eK" role="2Oq$k0">
+              <node concept="2OqwBi" id="6nLXN__8ZTC" role="2Oq$k0">
+                <node concept="1YBJjd" id="6nLXN__8ZKx" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+                </node>
+                <node concept="I4A8Y" id="6nLXN__907Y" role="2OqNvi" />
+              </node>
+              <node concept="1j9C0f" id="6nLXN__90n9" role="2OqNvi">
+                <ref role="1j9C0d" to="6jv6:7MTH03m4HK1" resolve="Config" />
+              </node>
+            </node>
+            <node concept="1v1jN8" id="6nLXN__92FA" role="2OqNvi" />
+          </node>
+          <node concept="1Wc70l" id="6nLXN__8X_W" role="3uHU7B">
+            <node concept="2OqwBi" id="6nLXN__8Xc5" role="3uHU7B">
+              <node concept="2OqwBi" id="6nLXN__8WSM" role="2Oq$k0">
+                <node concept="1YBJjd" id="6nLXN__8WQN" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+                </node>
+                <node concept="3TrEf2" id="6nLXN__8X5O" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="6nLXN__8XtG" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="6nLXN__8Y$d" role="3uHU7w">
+              <node concept="2OqwBi" id="6nLXN__8Y9A" role="2Oq$k0">
+                <node concept="2OqwBi" id="6nLXN__8XJP" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6nLXN__8XGQ" role="2Oq$k0">
+                    <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+                  </node>
+                  <node concept="3TrEf2" id="6nLXN__8XXa" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="6nLXN__8Ym2" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iowz:irqYu7yXR0" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="6nLXN__8YOw" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="7b1yRZVKXFF" role="1YuTPh">
       <property role="TrG5h" value="processRef" />

@@ -9882,6 +9882,20 @@
       <node concept="3clFbS" id="6QVw52gwlpy" role="3clF47" />
       <node concept="3cqZAl" id="6QVw52gwyjE" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="6nLXN__2ocP" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="requireDockerConfig" />
+      <node concept="3Tm1VV" id="6nLXN__2ocQ" role="1B3o_S" />
+      <node concept="3clFbS" id="6nLXN__2ocR" role="3clF47">
+        <node concept="3clFbF" id="6nLXN__2zNJ" role="3cqZAp">
+          <node concept="3clFbT" id="6nLXN__2zNI" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="6nLXN__2zND" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="6QVw52gwyjW">
     <property role="3GE5qa" value="containers" />

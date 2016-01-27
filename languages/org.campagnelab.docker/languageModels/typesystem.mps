@@ -10,6 +10,7 @@
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" />
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
+    <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -53,10 +54,18 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
@@ -101,10 +110,22 @@
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
         <reference id="1176109685394" name="concept" index="3lApI3" />
+      </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -153,19 +174,88 @@
             </node>
           </node>
         </node>
-        <node concept="2OqwBi" id="VMSWAF3cO_" role="3clFbw">
-          <node concept="2OqwBi" id="VMSWAF3c1s" role="2Oq$k0">
-            <node concept="2OqwBi" id="VMSWAF3bIz" role="2Oq$k0">
-              <node concept="1YBJjd" id="VMSWAF3bGJ" role="2Oq$k0">
+        <node concept="1Wc70l" id="6nLXN__8bPd" role="3clFbw">
+          <node concept="2OqwBi" id="VMSWAF3cO_" role="3uHU7B">
+            <node concept="2OqwBi" id="VMSWAF3c1s" role="2Oq$k0">
+              <node concept="2OqwBi" id="VMSWAF3bIz" role="2Oq$k0">
+                <node concept="1YBJjd" id="VMSWAF3bGJ" role="2Oq$k0">
+                  <ref role="1YBMHb" node="VMSWAF3bg_" resolve="dockerContainer" />
+                </node>
+                <node concept="I4A8Y" id="VMSWAF3bRT" role="2OqNvi" />
+              </node>
+              <node concept="3lApI0" id="VMSWAF3c9N" role="2OqNvi">
+                <ref role="3lApI3" to="6jv6:7MTH03m4HK1" resolve="Config" />
+              </node>
+            </node>
+            <node concept="1v1jN8" id="VMSWAF3fVs" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="6nLXN__8bTh" role="3uHU7w">
+            <node concept="2OqwBi" id="6nLXN__8bTi" role="2Oq$k0">
+              <node concept="1YBJjd" id="6nLXN__8bTj" role="2Oq$k0">
                 <ref role="1YBMHb" node="VMSWAF3bg_" resolve="dockerContainer" />
               </node>
-              <node concept="I4A8Y" id="VMSWAF3bRT" role="2OqNvi" />
+              <node concept="2Xjw5R" id="6nLXN__8bTk" role="2OqNvi">
+                <node concept="1xMEDy" id="6nLXN__8bTl" role="1xVPHs">
+                  <node concept="chp4Y" id="6nLXN__8bTm" role="ri$Ld">
+                    <ref role="cht4Q" to="6jv6:6QVw52gwj52" resolve="IHaveRefToDockerContainer" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="3lApI0" id="VMSWAF3c9N" role="2OqNvi">
-              <ref role="3lApI3" to="6jv6:7MTH03m4HK1" resolve="Config" />
+            <node concept="3w_OXm" id="6nLXN__8bXu" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="6nLXN__7N8i" role="3cqZAp">
+        <node concept="3clFbS" id="6nLXN__7N8k" role="3clFbx">
+          <node concept="2MkqsV" id="6nLXN__7Nkr" role="3cqZAp">
+            <node concept="Xl_RD" id="6nLXN__7Nks" role="2MkJ7o">
+              <property role="Xl_RC" value="You must define a docker Config root node in order to use docker containers." />
+            </node>
+            <node concept="1YBJjd" id="6nLXN__7Nkt" role="2OEOjV">
+              <ref role="1YBMHb" node="VMSWAF3bg_" resolve="dockerContainer" />
+            </node>
+            <node concept="3Cnw8n" id="6nLXN__7Nku" role="2OEOjU">
+              <ref role="QpYPw" node="VMSWAF3fZz" resolve="DefineDockerConfig" />
             </node>
           </node>
-          <node concept="1v1jN8" id="VMSWAF3fVs" role="2OqNvi" />
+          <node concept="3clFbH" id="6nLXN__7N8j" role="3cqZAp" />
+        </node>
+        <node concept="1eOMI4" id="6nLXN__7hPE" role="3clFbw">
+          <node concept="1Wc70l" id="6nLXN__2_de" role="1eOMHV">
+            <node concept="2OqwBi" id="6nLXN__2_me" role="3uHU7w">
+              <node concept="2OqwBi" id="6nLXN__2_hU" role="2Oq$k0">
+                <node concept="1YBJjd" id="6nLXN__2_hV" role="2Oq$k0">
+                  <ref role="1YBMHb" node="VMSWAF3bg_" resolve="dockerContainer" />
+                </node>
+                <node concept="2Xjw5R" id="6nLXN__2_hW" role="2OqNvi">
+                  <node concept="1xMEDy" id="6nLXN__2_hX" role="1xVPHs">
+                    <node concept="chp4Y" id="6nLXN__2_hY" role="ri$Ld">
+                      <ref role="cht4Q" to="6jv6:6QVw52gwj52" resolve="IHaveRefToDockerContainer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6nLXN__2_ua" role="2OqNvi">
+                <ref role="37wK5l" to="rzxe:6nLXN__2ocP" resolve="requireDockerConfig" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6nLXN__2$Z_" role="3uHU7B">
+              <node concept="2OqwBi" id="6nLXN__2$KE" role="2Oq$k0">
+                <node concept="1YBJjd" id="6nLXN__2$I0" role="2Oq$k0">
+                  <ref role="1YBMHb" node="VMSWAF3bg_" resolve="dockerContainer" />
+                </node>
+                <node concept="2Xjw5R" id="6nLXN__2$TD" role="2OqNvi">
+                  <node concept="1xMEDy" id="6nLXN__2$TF" role="1xVPHs">
+                    <node concept="chp4Y" id="6nLXN__2$W8" role="ri$Ld">
+                      <ref role="cht4Q" to="6jv6:6QVw52gwj52" resolve="IHaveRefToDockerContainer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3x8VRR" id="6nLXN__2_6T" role="2OqNvi" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
