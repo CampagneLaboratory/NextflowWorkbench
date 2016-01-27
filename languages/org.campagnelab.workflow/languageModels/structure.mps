@@ -102,8 +102,8 @@
     <node concept="PrWs8" id="6d3N3AFQqri" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
-    <node concept="PrWs8" id="6nLXN__2_xk" role="PzmwI">
-      <ref role="PrY4T" to="6jv6:6QVw52gwj52" resolve="IHaveRefToDockerContainer" />
+    <node concept="PrWs8" id="6nLXN__ekVA" role="PzmwI">
+      <ref role="PrY4T" to="6jv6:6nLXN__ekUM" resolve="IUseADockerContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="6tX5nBTaD$x">
