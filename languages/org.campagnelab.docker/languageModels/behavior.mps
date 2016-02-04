@@ -40,6 +40,7 @@
     <import index="p3sh" ref="r:88895bb3-ffc1-49c0-97ec-2c49d3499b4b(org.campagnelab.gobyweb.tags.behavior)" />
     <import index="mak5" ref="r:977bf260-4884-422e-9656-9f0bb268fcb0(org.campagnelab.logger.behavior)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" implicit="true" />
   </imports>
@@ -6766,7 +6767,46 @@
       <node concept="17QB3L" id="6zGYz0lSeBR" role="3clF45" />
     </node>
     <node concept="13hLZK" id="7MTH03m5uNM" role="13h7CW">
-      <node concept="3clFbS" id="7MTH03m5uNN" role="2VODD2" />
+      <node concept="3clFbS" id="7MTH03m5uNN" role="2VODD2">
+        <node concept="3clFbJ" id="73rH4JIfpEZ" role="3cqZAp">
+          <node concept="3clFbS" id="73rH4JIfpF0" role="3clFbx">
+            <node concept="3clFbF" id="73rH4JIfqbI" role="3cqZAp">
+              <node concept="37vLTI" id="73rH4JIfqq1" role="3clFbG">
+                <node concept="2OqwBi" id="73rH4JIfqd5" role="37vLTJ">
+                  <node concept="13iPFW" id="73rH4JIfqbH" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="73rH4JIfqj0" role="2OqNvi">
+                    <ref role="3TsBF5" to="6jv6:7MTH03m4HK2" resolve="pathToDocker" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2KDWUtYHPQz" role="37vLTx">
+                  <property role="Xl_RC" value="C:\\Program Files\\Docker Toolbox\\docker.exe" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="10M0yZ" id="73rH4JIfqaG" role="3clFbw">
+            <ref role="1PxDUh" to="zn9m:~SystemInfo" resolve="SystemInfo" />
+            <ref role="3cqZAo" to="zn9m:~SystemInfo.isWindows" resolve="isWindows" />
+          </node>
+          <node concept="9aQIb" id="73rH4JIfqrP" role="9aQIa">
+            <node concept="3clFbS" id="73rH4JIfqrQ" role="9aQI4">
+              <node concept="3clFbF" id="73rH4JIfqsH" role="3cqZAp">
+                <node concept="37vLTI" id="73rH4JIfqId" role="3clFbG">
+                  <node concept="2OqwBi" id="73rH4JIfqu4" role="37vLTJ">
+                    <node concept="13iPFW" id="73rH4JIfqsG" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="73rH4JIfqzZ" role="2OqNvi">
+                      <ref role="3TsBF5" to="6jv6:7MTH03m4HK2" resolve="pathToDocker" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="7jqSt7$YxLt" role="37vLTx">
+                    <property role="Xl_RC" value="/usr/local/bin/docker" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="5U_2ytMcvS$">
