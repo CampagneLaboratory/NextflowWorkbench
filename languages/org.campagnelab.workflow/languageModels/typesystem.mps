@@ -22,6 +22,7 @@
     <import index="cx9y" ref="r:309aeee7-bee8-445c-b31d-35928d1da75f(jetbrains.mps.baseLanguage.tuples.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" implicit="true" />
@@ -228,6 +229,7 @@
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
+        <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
         <child id="1210784493590" name="actualArgument" index="3Coj4f" />
       </concept>
@@ -292,9 +294,14 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="1166648550386" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewRootNodeOperation" flags="nn" index="2xF2bX" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1143235216708" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewNodeOperation" flags="nn" index="I8ghe">
+        <reference id="1143235391024" name="concept" index="I8UWU" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -2005,12 +2012,30 @@
       </node>
       <node concept="3clFbJ" id="6nLXN__8WOK" role="3cqZAp">
         <node concept="3clFbS" id="6nLXN__8WOM" role="3clFbx">
-          <node concept="2MkqsV" id="6nLXN__92Nx" role="3cqZAp">
-            <node concept="1YBJjd" id="6nLXN__92NQ" role="2OEOjV">
-              <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+          <node concept="2MkqsV" id="73rH4JIhPXm" role="3cqZAp">
+            <node concept="Xl_RD" id="73rH4JIhPYo" role="2MkJ7o">
+              <property role="Xl_RC" value="Missing Docker config" />
             </node>
-            <node concept="Xl_RD" id="6nLXN__7Nks" role="2MkJ7o">
-              <property role="Xl_RC" value="You must define a docker Config root node in order to use this process." />
+            <node concept="2OqwBi" id="73rH4JIhQ1a" role="2OEOjV">
+              <node concept="1YBJjd" id="73rH4JIhPZi" role="2Oq$k0">
+                <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+              </node>
+              <node concept="3TrEf2" id="73rH4JIhQcE" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
+              </node>
+            </node>
+            <node concept="3Cnw8n" id="73rH4JIhQd_" role="2OEOjU">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="73rH4JIhQdy" resolve="fix_CreateDockerConfig" />
+              <node concept="3CnSsL" id="73rH4JIhQx_" role="3Coj4f">
+                <ref role="QkamJ" node="73rH4JIhQl$" resolve="model" />
+                <node concept="2OqwBi" id="73rH4JIhQ$4" role="3CoRuB">
+                  <node concept="1YBJjd" id="73rH4JIhQxZ" role="2Oq$k0">
+                    <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+                  </node>
+                  <node concept="I4A8Y" id="73rH4JIhQN6" role="2OqNvi" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -6985,6 +7010,27 @@
         <node concept="3clFbF" id="59BvSKQOBP3" role="3cqZAp">
           <node concept="3clFbT" id="59BvSKQOBP2" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="73rH4JIhQdy">
+    <property role="TrG5h" value="fix_CreateDockerConfig" />
+    <node concept="Q6JDH" id="73rH4JIhQl$" role="Q6Id_">
+      <property role="TrG5h" value="model" />
+      <node concept="H_c77" id="73rH4JIhQlO" role="Q6QK4" />
+    </node>
+    <node concept="Q5ZZ6" id="73rH4JIhQdz" role="Q6x$H">
+      <node concept="3clFbS" id="73rH4JIhQd$" role="2VODD2">
+        <node concept="3clFbF" id="73rH4JIhQm3" role="3cqZAp">
+          <node concept="2OqwBi" id="73rH4JIhQmO" role="3clFbG">
+            <node concept="QwW4i" id="73rH4JIhQm2" role="2Oq$k0">
+              <ref role="QwW4h" node="73rH4JIhQl$" resolve="model" />
+            </node>
+            <node concept="2xF2bX" id="73rH4JIhQo5" role="2OqNvi">
+              <ref role="I8UWU" to="6jv6:7MTH03m4HK1" resolve="Config" />
+            </node>
           </node>
         </node>
       </node>
