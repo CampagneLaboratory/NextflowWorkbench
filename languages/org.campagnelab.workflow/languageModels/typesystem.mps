@@ -91,6 +91,7 @@
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -110,6 +111,10 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
@@ -4201,6 +4206,133 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="73rH4JIdGx8" role="3cqZAp">
+        <node concept="3cpWsn" id="73rH4JIdGxe" role="3cpWs9">
+          <property role="TrG5h" value="tuple" />
+          <node concept="3Tqbb2" id="73rH4JIdGH5" role="1tU5fm">
+            <ref role="ehGHo" to="iowz:6qiI2N5sbyo" resolve="TupleElement" />
+          </node>
+          <node concept="2OqwBi" id="73rH4JIdGK_" role="33vP2m">
+            <node concept="1YBJjd" id="73rH4JIdGHC" role="2Oq$k0">
+              <ref role="1YBMHb" node="1NhN7oY8VP9" resolve="file" />
+            </node>
+            <node concept="2Xjw5R" id="73rH4JIdH2h" role="2OqNvi">
+              <node concept="1xMEDy" id="73rH4JIdH2j" role="1xVPHs">
+                <node concept="chp4Y" id="73rH4JIdH2T" role="ri$Ld">
+                  <ref role="cht4Q" to="iowz:6qiI2N5sbyo" resolve="TupleElement" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="73rH4JIdHen" role="3cqZAp">
+        <node concept="3clFbS" id="73rH4JIdHep" role="3clFbx">
+          <node concept="3clFbJ" id="73rH4JIbLnV" role="3cqZAp">
+            <node concept="3clFbS" id="73rH4JIbLnX" role="3clFbx">
+              <node concept="2MkqsV" id="73rH4JIbPiX" role="3cqZAp">
+                <node concept="Xl_RD" id="73rH4JIbPiY" role="2MkJ7o">
+                  <property role="Xl_RC" value="Missing end quote" />
+                </node>
+                <node concept="1YBJjd" id="73rH4JIbPiZ" role="2OEOjV">
+                  <ref role="1YBMHb" node="1NhN7oY8VP9" resolve="file" />
+                </node>
+              </node>
+            </node>
+            <node concept="1Wc70l" id="73rH4JIbN$R" role="3clFbw">
+              <node concept="3fqX7Q" id="73rH4JIbOBb" role="3uHU7w">
+                <node concept="2OqwBi" id="73rH4JIbOBd" role="3fr31v">
+                  <node concept="2OqwBi" id="73rH4JIbOBe" role="2Oq$k0">
+                    <node concept="37vLTw" id="73rH4JIdI10" role="2Oq$k0">
+                      <ref role="3cqZAo" node="73rH4JIdGxe" resolve="tuple" />
+                    </node>
+                    <node concept="3TrcHB" id="73rH4JIbOBg" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="73rH4JIbOBh" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                    <node concept="Xl_RD" id="73rH4JIbOBi" role="37wK5m">
+                      <property role="Xl_RC" value="'" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="73rH4JIbN5S" role="3uHU7B">
+                <node concept="2OqwBi" id="73rH4JIbMON" role="2Oq$k0">
+                  <node concept="37vLTw" id="73rH4JIdHT_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="73rH4JIdGxe" resolve="tuple" />
+                  </node>
+                  <node concept="3TrcHB" id="73rH4JIbMY3" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="73rH4JIbNya" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                  <node concept="Xl_RD" id="73rH4JIbNyB" role="37wK5m">
+                    <property role="Xl_RC" value="'" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3eNFk2" id="73rH4JIbOH0" role="3eNLev">
+              <node concept="1Wc70l" id="73rH4JIbOMz" role="3eO9$A">
+                <node concept="2OqwBi" id="73rH4JIbOM_" role="3uHU7w">
+                  <node concept="2OqwBi" id="73rH4JIbOMA" role="2Oq$k0">
+                    <node concept="37vLTw" id="73rH4JIdI8r" role="2Oq$k0">
+                      <ref role="3cqZAo" node="73rH4JIdGxe" resolve="tuple" />
+                    </node>
+                    <node concept="3TrcHB" id="73rH4JIbOMC" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="73rH4JIbOMD" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                    <node concept="Xl_RD" id="73rH4JIbOME" role="37wK5m">
+                      <property role="Xl_RC" value="'" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="73rH4JIbPav" role="3uHU7B">
+                  <node concept="2OqwBi" id="73rH4JIbPax" role="3fr31v">
+                    <node concept="2OqwBi" id="73rH4JIbPay" role="2Oq$k0">
+                      <node concept="37vLTw" id="73rH4JIdIfQ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="73rH4JIdGxe" resolve="tuple" />
+                      </node>
+                      <node concept="3TrcHB" id="73rH4JIbPa$" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="73rH4JIbPa_" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                      <node concept="Xl_RD" id="73rH4JIbPaA" role="37wK5m">
+                        <property role="Xl_RC" value="'" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="73rH4JIbOH2" role="3eOfB_">
+                <node concept="2MkqsV" id="73rH4JIbPhl" role="3cqZAp">
+                  <node concept="Xl_RD" id="73rH4JIbPhH" role="2MkJ7o">
+                    <property role="Xl_RC" value="Missing start quote" />
+                  </node>
+                  <node concept="1YBJjd" id="73rH4JIbPiA" role="2OEOjV">
+                    <ref role="1YBMHb" node="1NhN7oY8VP9" resolve="file" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="73rH4JIdHeo" role="3cqZAp" />
+        </node>
+        <node concept="2OqwBi" id="73rH4JIdHtR" role="3clFbw">
+          <node concept="37vLTw" id="73rH4JIdHqS" role="2Oq$k0">
+            <ref role="3cqZAo" node="73rH4JIdGxe" resolve="tuple" />
+          </node>
+          <node concept="3x8VRR" id="73rH4JIdHD_" role="2OqNvi" />
         </node>
       </node>
     </node>
