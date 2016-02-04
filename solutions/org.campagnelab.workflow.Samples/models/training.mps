@@ -347,7 +347,7 @@
       </node>
     </node>
     <node concept="2$rEH5" id="7ejpSqGJUXQ" role="2$rEHq">
-      <ref role="2$rEH4" node="7ejpSqGJDQd" resolve="FirstOneMillionSequences" />
+      <ref role="2$rEH4" node="7ejpSqGJDQd" resolve="Sample_irstOneMillionSequences" />
       <node concept="1uYdA0" id="7ejpSqGJUXR" role="1uLvPH">
         <ref role="1uK_4X" node="4xTPTl95XMn" resolve="fastq Files" />
       </node>
@@ -396,7 +396,7 @@
     </node>
   </node>
   <node concept="2ulcR8" id="7ejpSqGJDQd">
-    <property role="TrG5h" value="FirstOneMillionSequences" />
+    <property role="TrG5h" value="Sample_irstOneMillionSequences" />
     <node concept="2lYRya" id="7ejpSqGJQpY" role="2ulM79">
       <property role="TrG5h" value="*-1M.fastq.gz" />
       <node concept="16pRw0" id="7ejpSqGJQq6" role="2ybFLk" />
@@ -423,6 +423,11 @@
           <property role="19SUeA" value=" | gzip -c &gt; ${basename}-1M.fastq.gz&#10;" />
         </node>
       </node>
+    </node>
+    <node concept="VtuK3" id="1NoT4UpxiI4" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="software" />
     </node>
   </node>
   <node concept="2$rMIF" id="7ejpSqGKVCD">
@@ -480,7 +485,7 @@
     </node>
   </node>
   <node concept="2ulcR8" id="39rfs1g6psq">
-    <property role="TrG5h" value="KallistoCounts" />
+    <property role="TrG5h" value="Sample_KallistoCounts" />
     <node concept="VtuK3" id="6qY8oemkG3H" role="234boB">
       <property role="VuL0s" value="1.0.0" />
       <property role="GbyUj" value="kallisto-homo-sapiens" />
@@ -1019,7 +1024,7 @@
       </node>
     </node>
     <node concept="2$rEH5" id="6uZiVd6M0BD" role="2$rEHq">
-      <ref role="2$rEH4" node="39rfs1g6psq" resolve="KallistoCounts" />
+      <ref role="2$rEH4" node="39rfs1g6psq" resolve="Sample_KallistoCounts" />
       <node concept="1uLkD0" id="6uZiVd6M0BE" role="1uLvPA">
         <property role="TrG5h" value="result" />
       </node>
@@ -1031,7 +1036,7 @@
       </node>
     </node>
     <node concept="2$rEH5" id="7ejpSqHbdxl" role="2$rEHq">
-      <ref role="2$rEH4" node="7ejpSqH8Lzx" resolve="CombineCounts" />
+      <ref role="2$rEH4" node="7ejpSqH8Lzx" resolve="Sample_CombineCounts" />
       <node concept="1uYdA0" id="7ejpSqHbd$u" role="1uLvPH">
         <ref role="1uK_4X" node="6uZiVd6M0BE" resolve="result" />
         <node concept="1yaYav" id="5G7wwTNPs$E" role="1ylr64" />
@@ -1046,7 +1051,7 @@
     </node>
   </node>
   <node concept="2ulcR8" id="7ejpSqH3enH">
-    <property role="TrG5h" value="Keep1M" />
+    <property role="TrG5h" value="Sample_Keep1M" />
     <node concept="2lYRya" id="7ejpSqH3epk" role="2ulM79">
       <property role="TrG5h" value="'*.fastq.gz'" />
       <node concept="16pRw0" id="7ejpSqH3epu" role="2ybFLk" />
@@ -1092,7 +1097,7 @@
     </node>
   </node>
   <node concept="2ulcR8" id="7ejpSqH8Lzx">
-    <property role="TrG5h" value="CombineCounts" />
+    <property role="TrG5h" value="Sample_CombineCounts" />
     <node concept="2lYRya" id="7ejpSqH8LEd" role="2ulM79">
       <property role="TrG5h" value="counts.tsv" />
       <node concept="16pRw0" id="7ejpSqH8LEn" role="2ybFLk" />
@@ -1128,12 +1133,12 @@
   </node>
   <node concept="2EEQw1" id="7ejpSqHd7NO">
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
   </node>
   <node concept="2$rMIF" id="5G7wwTNAYTs">
     <property role="TrG5h" value="PreprocessReads" />
     <node concept="2$rEH5" id="5G7wwTNAYTw" role="2$rEHq">
-      <ref role="2$rEH4" node="7ejpSqH3enH" resolve="Keep1M" />
+      <ref role="2$rEH4" node="7ejpSqH3enH" resolve="Sample_Keep1M" />
       <node concept="1uYdA0" id="5G7wwTNAYTx" role="1uLvPH">
         <ref role="1uK_4X" node="5G7wwTNAZ6_" resolve="sraFilesCached" />
       </node>
@@ -1212,7 +1217,7 @@
     </node>
   </node>
   <node concept="2ulcR8" id="iewVIi_On7">
-    <property role="TrG5h" value="AlignWithKallisto" />
+    <property role="TrG5h" value="Sample_AlignWithKallisto" />
     <node concept="2lYRya" id="iewVIi_OnM" role="2ulM79">
       <property role="TrG5h" value="'counts.tsv'" />
       <node concept="16pRw0" id="iewVIi_OnU" role="2ybFLk" />
@@ -1256,7 +1261,7 @@
     </node>
   </node>
   <node concept="2ulcR8" id="3a_Ie33Oni_">
-    <property role="TrG5h" value="Download_1M_Reads" />
+    <property role="TrG5h" value="Sample_Download_1M_Reads" />
     <node concept="2lYRya" id="iewVIi_Sdy" role="2ulM79">
       <node concept="knwa4" id="iewVIi_Sei" role="2ybFLk">
         <node concept="2zSw2O" id="iewVIi_Sek" role="2zSOd7">
@@ -1302,7 +1307,7 @@
   <node concept="2$rMIF" id="3a_Ie33Oncy">
     <property role="TrG5h" value="FastqKallistoCounts" />
     <node concept="2$rEH5" id="3a_Ie33Onib" role="2$rEHq">
-      <ref role="2$rEH4" node="3a_Ie33Oni_" resolve="Download_1M_Reads" />
+      <ref role="2$rEH4" node="3a_Ie33Oni_" resolve="Sample_Download_1M_Reads" />
       <node concept="2tD$Xd" id="59BvSKQZ7BC" role="1uLvPA">
         <property role="TrG5h" value="reads" />
         <node concept="1$0uN4" id="59BvSKQZ7KI" role="2tD$Xc">
@@ -1317,7 +1322,7 @@
       </node>
     </node>
     <node concept="2$rEH5" id="iewVIi_TdJ" role="2$rEHq">
-      <ref role="2$rEH4" node="iewVIi_T9Y" resolve="QC" />
+      <ref role="2$rEH4" node="iewVIi_T9Y" resolve="Sample_QC" />
       <node concept="1uLkD0" id="iewVIi_Tuz" role="1uLvPA">
         <property role="TrG5h" value="zip" />
       </node>
@@ -1326,7 +1331,7 @@
       </node>
     </node>
     <node concept="2$rEH5" id="5frYURexkMf" role="2$rEHq">
-      <ref role="2$rEH4" node="59BvSKQHAFs" resolve="KallistoCountsWithTuples" />
+      <ref role="2$rEH4" node="59BvSKQHAFs" resolve="Sample_KallistoCountsWithTuples" />
       <node concept="1uYdA0" id="5frYURexkRa" role="1uLvPH">
         <ref role="1uK_4X" node="59BvSKQZ85H" resolve="B" />
       </node>
@@ -1335,7 +1340,7 @@
       </node>
     </node>
     <node concept="2$rEH5" id="59BvSKQHDFb" role="2$rEHq">
-      <ref role="2$rEH4" node="7ejpSqH8Lzx" resolve="CombineCounts" />
+      <ref role="2$rEH4" node="7ejpSqH8Lzx" resolve="Sample_CombineCounts" />
       <node concept="1uYdA0" id="59BvSKQHDK9" role="1uLvPH">
         <ref role="1uK_4X" node="5frYURexkRb" resolve="result" />
         <node concept="1yaYav" id="59BvSKQHFDp" role="1ylr64" />
@@ -1415,7 +1420,7 @@
     </node>
   </node>
   <node concept="2ulcR8" id="iewVIi_T9Y">
-    <property role="TrG5h" value="QC" />
+    <property role="TrG5h" value="Sample_QC" />
     <node concept="2lYRya" id="iewVIi_Tr_" role="2ulM79">
       <property role="TrG5h" value="'*.zip'" />
       <node concept="16pRw0" id="iewVIi_TrJ" role="2ybFLk" />
@@ -1459,7 +1464,7 @@
     </node>
   </node>
   <node concept="2ulcR8" id="59BvSKQHAFs">
-    <property role="TrG5h" value="KallistoCountsWithTuples" />
+    <property role="TrG5h" value="Sample_KallistoCountsWithTuples" />
     <node concept="VtuK3" id="59BvSKQHAFt" role="234boB">
       <property role="VuL0s" value="1.0.0" />
       <property role="GbyUj" value="kallisto-homo-sapiens" />
