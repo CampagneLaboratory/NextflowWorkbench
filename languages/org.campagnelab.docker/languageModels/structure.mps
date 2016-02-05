@@ -221,6 +221,9 @@
       <property role="TrG5h" value="pathToDocker" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="PrWs8" id="73rH4JIkH4e" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7MTH03mbOFc">
     <property role="TrG5h" value="DockerImage" />
