@@ -7449,7 +7449,7 @@
                 <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
               </node>
             </node>
-            <node concept="17RlXB" id="73rH4JIjTWp" role="2OqNvi" />
+            <node concept="17RvpY" id="7zioF5uUTOV" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -7492,6 +7492,33 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="7zioF5uUTk1" role="3cqZAp">
+          <node concept="2GrKxI" id="7zioF5uUTk3" role="2Gsz3X">
+            <property role="TrG5h" value="machine" />
+          </node>
+          <node concept="3clFbS" id="7zioF5uUTk5" role="2LFqv$">
+            <node concept="3clFbJ" id="7zioF5uUTxR" role="3cqZAp">
+              <node concept="3clFbS" id="7zioF5uUTxS" role="3clFbx">
+                <node concept="3zACq4" id="7zioF5uUTIl" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="7zioF5uUTzN" role="3clFbw">
+                <node concept="13iPFW" id="7zioF5uUTyg" role="2Oq$k0" />
+                <node concept="2qgKlT" id="7zioF5uUTDz" role="2OqNvi">
+                  <ref role="37wK5l" node="73rH4JIjsbi" resolve="resetConfiguration" />
+                  <node concept="2GrUjf" id="7zioF5uUTI1" role="37wK5m">
+                    <ref role="2Gs0qQ" node="7zioF5uUTk3" resolve="machine" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7zioF5uUTo7" role="2GsD0m">
+            <node concept="13iPFW" id="7zioF5uUTmo" role="2Oq$k0" />
+            <node concept="2qgKlT" id="7zioF5uUTrd" role="2OqNvi">
+              <ref role="37wK5l" node="73rH4JIjmHo" resolve="getConfigMachines" />
             </node>
           </node>
         </node>
