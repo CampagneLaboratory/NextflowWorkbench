@@ -200,9 +200,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
+        <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
+      </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
+        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
       </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
@@ -6806,6 +6810,50 @@
               </node>
               <node concept="3GX2aA" id="1_dgSdLvJgd" role="2OqNvi" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="73rH4JInAZc" role="3cqZAp">
+        <node concept="3clFbS" id="73rH4JInAZe" role="3clFbx">
+          <node concept="2MkqsV" id="73rH4JInDbC" role="3cqZAp">
+            <node concept="Xl_RD" id="73rH4JInDc6" role="2MkJ7o">
+              <property role="Xl_RC" value="The process name cannot have spaces." />
+            </node>
+            <node concept="1YBJjd" id="73rH4JInDcm" role="2OEOjV">
+              <ref role="1YBMHb" node="2Auf_2AVh$o" resolve="process" />
+            </node>
+            <node concept="2ODE4t" id="73rH4JInDcL" role="2OEWyd">
+              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="73rH4JInBE7" role="3clFbw">
+          <node concept="2OqwBi" id="73rH4JInCD0" role="3uHU7w">
+            <node concept="2OqwBi" id="73rH4JInBT7" role="2Oq$k0">
+              <node concept="1YBJjd" id="73rH4JInBK1" role="2Oq$k0">
+                <ref role="1YBMHb" node="2Auf_2AVh$o" resolve="process" />
+              </node>
+              <node concept="3TrcHB" id="73rH4JInC92" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="liA8E" id="73rH4JInCT0" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <node concept="Xl_RD" id="73rH4JInCYf" role="37wK5m">
+                <property role="Xl_RC" value=" " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="73rH4JInBop" role="3uHU7B">
+            <node concept="2OqwBi" id="73rH4JInB5D" role="2Oq$k0">
+              <node concept="1YBJjd" id="73rH4JInB2J" role="2Oq$k0">
+                <ref role="1YBMHb" node="2Auf_2AVh$o" resolve="process" />
+              </node>
+              <node concept="3TrcHB" id="73rH4JInBfU" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="73rH4JInBC2" role="2OqNvi" />
           </node>
         </node>
       </node>
