@@ -2085,6 +2085,118 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbJ" id="73rH4JIlzgO" role="3cqZAp">
+        <node concept="3clFbS" id="73rH4JIlzgP" role="3clFbx">
+          <node concept="2MkqsV" id="73rH4JIlzgQ" role="3cqZAp">
+            <node concept="3Cnw8n" id="73rH4JIlI__" role="2OEOjU">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="1nj$XVfZUBX" resolve="AddWithDockerToConfig" />
+              <node concept="3CnSsL" id="73rH4JIlIAt" role="3Coj4f">
+                <ref role="QkamJ" node="1nj$XVfZUTX" resolve="workflowConfig" />
+                <node concept="2OqwBi" id="73rH4JIlKgg" role="3CoRuB">
+                  <node concept="2OqwBi" id="73rH4JIlJb5" role="2Oq$k0">
+                    <node concept="2OqwBi" id="73rH4JIlICW" role="2Oq$k0">
+                      <node concept="1YBJjd" id="73rH4JIlIAR" role="2Oq$k0">
+                        <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+                      </node>
+                      <node concept="I4A8Y" id="73rH4JIlIVD" role="2OqNvi" />
+                    </node>
+                    <node concept="2RRcyG" id="73rH4JIlJor" role="2OqNvi">
+                      <ref role="2RRcyH" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
+                    </node>
+                  </node>
+                  <node concept="1uHKPH" id="73rH4JIlMes" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="73rH4JIlzgR" role="2MkJ7o">
+              <property role="Xl_RC" value="Missing with-docker option" />
+            </node>
+            <node concept="2OqwBi" id="73rH4JIlzgS" role="2OEOjV">
+              <node concept="1YBJjd" id="73rH4JIlzgT" role="2Oq$k0">
+                <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+              </node>
+              <node concept="3TrEf2" id="73rH4JIlzgU" role="2OqNvi">
+                <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="73rH4JIlBKg" role="3clFbw">
+          <node concept="1Wc70l" id="73rH4JIlzh0" role="3uHU7B">
+            <node concept="1Wc70l" id="73rH4JIlzh8" role="3uHU7B">
+              <node concept="2OqwBi" id="73rH4JIlzh9" role="3uHU7B">
+                <node concept="2OqwBi" id="73rH4JIlzha" role="2Oq$k0">
+                  <node concept="1YBJjd" id="73rH4JIlzhb" role="2Oq$k0">
+                    <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+                  </node>
+                  <node concept="3TrEf2" id="73rH4JIlzhc" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="73rH4JIlzhd" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="73rH4JIlzhe" role="3uHU7w">
+                <node concept="2OqwBi" id="73rH4JIlzhf" role="2Oq$k0">
+                  <node concept="2OqwBi" id="73rH4JIlzhg" role="2Oq$k0">
+                    <node concept="1YBJjd" id="73rH4JIlzhh" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+                    </node>
+                    <node concept="3TrEf2" id="73rH4JIlzhi" role="2OqNvi">
+                      <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="73rH4JIlzhj" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iowz:irqYu7yXR0" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="73rH4JIlzhk" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="73rH4JIl$Hh" role="3uHU7w">
+              <node concept="2OqwBi" id="73rH4JIlzh2" role="2Oq$k0">
+                <node concept="2OqwBi" id="73rH4JIlzh3" role="2Oq$k0">
+                  <node concept="1YBJjd" id="73rH4JIlzh4" role="2Oq$k0">
+                    <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+                  </node>
+                  <node concept="I4A8Y" id="73rH4JIlzh5" role="2OqNvi" />
+                </node>
+                <node concept="2RRcyG" id="73rH4JIl$98" role="2OqNvi">
+                  <ref role="2RRcyH" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
+                </node>
+              </node>
+              <node concept="3GX2aA" id="73rH4JIlBG8" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="73rH4JIlGkF" role="3uHU7w">
+            <node concept="2OqwBi" id="73rH4JIlFr8" role="2Oq$k0">
+              <node concept="2OqwBi" id="73rH4JIlCwL" role="2Oq$k0">
+                <node concept="2OqwBi" id="73rH4JIlBZe" role="2Oq$k0">
+                  <node concept="2OqwBi" id="73rH4JIlBZf" role="2Oq$k0">
+                    <node concept="1YBJjd" id="73rH4JIlBZg" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7b1yRZVKXFF" resolve="processRef" />
+                    </node>
+                    <node concept="I4A8Y" id="73rH4JIlBZh" role="2OqNvi" />
+                  </node>
+                  <node concept="2RRcyG" id="73rH4JIlBZi" role="2OqNvi">
+                    <ref role="2RRcyH" to="dlwq:5KN4KqZiCvz" resolve="WorkflowConfig" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="73rH4JIlEtr" role="2OqNvi" />
+              </node>
+              <node concept="2Rf3mk" id="73rH4JIlFFf" role="2OqNvi">
+                <node concept="1xMEDy" id="73rH4JIlFFh" role="1xVPHs">
+                  <node concept="chp4Y" id="73rH4JIlFML" role="ri$Ld">
+                    <ref role="cht4Q" to="dlwq:1nj$XVfY62i" resolve="WithDocker" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1v1jN8" id="73rH4JIlIj6" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="73rH4JIlza9" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="7b1yRZVKXFF" role="1YuTPh">
       <property role="TrG5h" value="processRef" />

@@ -77,10 +77,24 @@
       </concept>
     </language>
     <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
+      <concept id="1572763280063619218" name="org.campagnelab.workflow.configuration.structure.WithDocker" flags="ng" index="3qaZdc" />
       <concept id="6643674795001677795" name="org.campagnelab.workflow.configuration.structure.WorkflowConfig" flags="ng" index="3zupj_">
+        <child id="1572763280063618524" name="containerOptions" index="3qaWS2" />
         <child id="6643674795001677796" name="executor" index="3zupjy" />
       </concept>
       <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
+    </language>
+    <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
+      <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
+        <property id="8987412447080623507" name="options" index="2E$TAj" />
+        <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
+      </concept>
+      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3" />
+      <concept id="1893262236499908796" name="org.campagnelab.docker.structure.DockerContainer" flags="ng" index="VuMX5">
+        <property id="6819868375264208052" name="id" index="GbyUj" />
+        <property id="1893262236499912677" name="tag" index="VuL0s" />
+        <property id="1893262236499912678" name="userName" index="VuL0v" />
+      </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
       <concept id="6509497193195684302" name="org.campagnelab.workflow.structure.ConditionalVariableRef" flags="ng" index="0wE3V">
@@ -96,6 +110,7 @@
         <property id="2590112629703814581" name="toStandardInput" index="2mj$03" />
       </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
+        <child id="331977639697571264" name="container" index="234boB" />
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
@@ -365,6 +380,13 @@
         <ref role="1uK_4X" node="3VDmkwCJ6Cv" resolve="t" />
       </node>
     </node>
+    <node concept="2$rEH5" id="73rH4JIlxZt" role="2$rEHq">
+      <ref role="2$rEH4" node="19OTkzxIiaf" resolve="IOProcess" />
+      <node concept="1uYdA0" id="73rH4JIly41" role="1uLvPH" />
+      <node concept="1uLkD0" id="73rH4JIly42" role="1uLvPA">
+        <property role="TrG5h" value="" />
+      </node>
+    </node>
     <node concept="19SGf9" id="3VDmkwCJ60g" role="GZ$AB">
       <node concept="19SUe$" id="3VDmkwCJ60h" role="19SJt6">
         <property role="19SUeA" value="Testing expressions to set value of output for Process" />
@@ -390,10 +412,21 @@
         </node>
       </node>
     </node>
+    <node concept="VtuK3" id="73rH4JIhfM$" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="software" />
+    </node>
   </node>
   <node concept="3zupj_" id="3jhHkc_I8jx">
     <property role="TrG5h" value="workflow.config" />
     <node concept="3zuAPI" id="3jhHkc_I8Rg" role="3zupjy" />
+    <node concept="3qaZdc" id="73rH4JInf3t" role="3qaWS2" />
+  </node>
+  <node concept="2EEQw1" id="73rH4JIly8x">
+    <property role="TrG5h" value="docker.config" />
+    <property role="2EEQw2" value="/usr/local/bin/docker" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
   </node>
 </model>
 
