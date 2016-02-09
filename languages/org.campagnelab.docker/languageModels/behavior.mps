@@ -4236,6 +4236,45 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="73rH4JIIBeE" role="3cqZAp">
+              <node concept="1rXfSq" id="73rH4JIIBeC" role="3clFbG">
+                <ref role="37wK5l" node="7MTH03merpm" resolve="log" />
+                <node concept="2OqwBi" id="73rH4JIIChw" role="37wK5m">
+                  <node concept="37vLTw" id="73rH4JIICdf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1BdDHvUUx70" resolve="config" />
+                  </node>
+                  <node concept="I4A8Y" id="73rH4JIICvy" role="2OqNvi" />
+                </node>
+                <node concept="3cpWs3" id="73rH4JIIaLt" role="37wK5m">
+                  <node concept="37vLTw" id="73rH4JIIaX9" role="3uHU7w">
+                    <ref role="3cqZAo" node="1BdDHvUUx3z" resolve="deployAddress" />
+                  </node>
+                  <node concept="3cpWs3" id="73rH4JIIabK" role="3uHU7B">
+                    <node concept="3cpWs3" id="73rH4JIIblz" role="3uHU7B">
+                      <node concept="37vLTw" id="73rH4JII9TG" role="3uHU7w">
+                        <ref role="3cqZAo" node="1BdDHvUUx3i" resolve="options" />
+                      </node>
+                      <node concept="3cpWs3" id="73rH4JII9J1" role="3uHU7B">
+                        <node concept="3cpWs3" id="73rH4JII9rX" role="3uHU7B">
+                          <node concept="Xl_RD" id="73rH4JII8Jq" role="3uHU7B">
+                            <property role="Xl_RC" value="Pulling docker image with command: " />
+                          </node>
+                          <node concept="37vLTw" id="73rH4JII9_$" role="3uHU7w">
+                            <ref role="3cqZAo" node="1BdDHvUUx3c" resolve="docker" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="73rH4JIIbuS" role="3uHU7w">
+                          <property role="Xl_RC" value=" " />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="73rH4JIIakQ" role="3uHU7w">
+                      <property role="Xl_RC" value=" pull " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="36TCZ$" id="1BdDHvUUx4Z" role="3cqZAp">
               <property role="36ZhHO" value="Submit docker pull image" />
               <node concept="36Z5DI" id="1BdDHvUUx50" role="36Z5DK" />
