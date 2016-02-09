@@ -15,10 +15,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
-        <child id="1068498886297" name="rValue" index="37vLTx" />
-        <child id="1068498886295" name="lValue" index="37vLTJ" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -38,7 +34,6 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -101,13 +96,7 @@
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
-        <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
-        <child id="1210784493590" name="actualArgument" index="3Coj4f" />
-      </concept>
-      <concept id="1210784384552" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntentionArgument" flags="ng" index="3CnSsL">
-        <reference id="1216386999476" name="quickFixArgument" index="QkamJ" />
-        <child id="1210784642750" name="value" index="3CoRuB" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -404,16 +393,6 @@
             <node concept="1YBJjd" id="73rH4JIl8jh" role="2OEOjV">
               <ref role="1YBMHb" node="73rH4JIl7ON" resolve="config" />
             </node>
-            <node concept="3Cnw8n" id="73rH4JIl8jH" role="2OEOjU">
-              <property role="ARO6o" value="true" />
-              <ref role="QpYPw" node="73rH4JIl8jE" resolve="fix_ConfigName" />
-              <node concept="3CnSsL" id="73rH4JIl8Ci" role="3Coj4f">
-                <ref role="QkamJ" node="73rH4JIl8kY" resolve="config" />
-                <node concept="1YBJjd" id="73rH4JIl8CG" role="3CoRuB">
-                  <ref role="1YBMHb" node="73rH4JIl7ON" resolve="config" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="2OqwBi" id="73rH4JIl85b" role="3clFbw">
@@ -432,34 +411,6 @@
     <node concept="1YaCAy" id="73rH4JIl7ON" role="1YuTPh">
       <property role="TrG5h" value="config" />
       <ref role="1YaFvo" to="6jv6:7MTH03m4HK1" resolve="Config" />
-    </node>
-  </node>
-  <node concept="Q5z_Y" id="73rH4JIl8jE">
-    <property role="TrG5h" value="fix_ConfigName" />
-    <node concept="Q6JDH" id="73rH4JIl8kY" role="Q6Id_">
-      <property role="TrG5h" value="config" />
-      <node concept="3Tqbb2" id="73rH4JIl8le" role="Q6QK4">
-        <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
-      </node>
-    </node>
-    <node concept="Q5ZZ6" id="73rH4JIl8jF" role="Q6x$H">
-      <node concept="3clFbS" id="73rH4JIl8jG" role="2VODD2">
-        <node concept="3clFbF" id="73rH4JIl8lv" role="3cqZAp">
-          <node concept="37vLTI" id="73rH4JIl8yY" role="3clFbG">
-            <node concept="Xl_RD" id="73rH4JIl8_4" role="37vLTx">
-              <property role="Xl_RC" value="docker.config" />
-            </node>
-            <node concept="2OqwBi" id="73rH4JIl8nk" role="37vLTJ">
-              <node concept="QwW4i" id="73rH4JIl8lu" role="2Oq$k0">
-                <ref role="QwW4h" node="73rH4JIl8kY" resolve="config" />
-              </node>
-              <node concept="3TrcHB" id="73rH4JIl8ry" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
 </model>
