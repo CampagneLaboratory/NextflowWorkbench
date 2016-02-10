@@ -8672,7 +8672,7 @@
   <node concept="VuPG2" id="73rH4JIJqgP">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="ElasticCluster" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile5740147524129373742.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile7955339250442469973.txt" />
     <node concept="VuO64" id="73rH4JIJqgQ" role="VuOVn">
       <node concept="VtuK3" id="73rH4JIJqgS" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -8695,7 +8695,7 @@
     <node concept="VugRC" id="73rH4JIJqjM" role="VuOVn">
       <node concept="19SGf9" id="73rH4JIJqkn" role="Vugyn">
         <node concept="19SUe$" id="73rH4JIJqko" role="19SJt6">
-          <property role="19SUeA" value="curl -O http://peak.telecommunity.com/dist/ez_setup.py \ &#10;&amp;&amp; python ez_setup.py \ &#10;&amp;&amp; easy_install pip \ &#10;&amp;&amp; pip install virtualenv " />
+          <property role="19SUeA" value="curl -O http://peak.telecommunity.com/dist/ez_setup.py \ &#10;&amp;&amp; python ez_setup.py \&#10;&amp;&amp; rm ez_setup.py \  &#10;&amp;&amp; easy_install pip \ &#10;&amp;&amp; pip install virtualenv " />
         </node>
       </node>
     </node>
@@ -8706,25 +8706,25 @@
         </node>
       </node>
     </node>
-    <node concept="VugRC" id="73rH4JIJqi_" role="VuOVn">
-      <node concept="19SGf9" id="73rH4JIJqiV" role="Vugyn">
-        <node concept="19SUe$" id="73rH4JIJqiW" role="19SJt6">
-          <property role="19SUeA" value="pip install elasticluster" />
+    <node concept="VugRC" id="73rH4JIJqq5" role="VuOVn">
+      <node concept="19SGf9" id="73rH4JIJqrn" role="Vugyn">
+        <node concept="19SUe$" id="73rH4JIJqro" role="19SJt6">
+          <property role="19SUeA" value="pip install elasticluster \&#10;&amp;&amp; cd /usr/local/ &amp;&amp; virtualenv elasticluster \&#10;&amp;&amp; echo &quot;source /usr/local/elasticluster/bin/activate&quot; &gt;&gt; $HOME/activateEC.sh \&#10;&amp;&amp; chmod 777 $HOME/activateEC.sh" />
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="73rH4JIJqoC" role="3blhQR">
-      <ref role="3blhQY" node="73rH4JIJqoB" resolve="ElasticCluster_Image" />
+    <node concept="3blhQM" id="73rH4JIJqzQ" role="3blhQR">
+      <ref role="3blhQY" node="73rH4JIJqzP" resolve="ElasticCluster_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="73rH4JIJqoB">
-    <property role="2E_JEh" value="4c1a8ba35021" />
+  <node concept="2E_JVc" id="73rH4JIJqzP">
+    <property role="2E_JEh" value="b52fbf72301c" />
     <property role="TrG5h" value="ElasticCluster_Image" />
-    <property role="GSh9r" value="artifacts/elastic-cluster:1.0" />
+    <property role="GSh9r" value="artifacts/elasticluster:1.0" />
     <ref role="2E_BxF" node="73rH4JIJqgP" resolve="ElasticCluster" />
-    <node concept="Gyxd7" id="73rH4JIJqoI" role="Gyxcj">
+    <node concept="Gyxd7" id="73rH4JIJqzW" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
-      <property role="TrG5h" value="elastic-cluster" />
+      <property role="TrG5h" value="elasticluster" />
       <property role="Gyxd1" value="1.0" />
     </node>
   </node>
