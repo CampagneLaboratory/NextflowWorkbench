@@ -208,10 +208,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2EEQw1" id="xP2fmw4TV1">
-    <property role="2EEQw2" value="/usr/local/bin//docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
-  </node>
   <node concept="VuPG2" id="1ihAOqnMtxP">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="Kallisto-Ensembl-GRCh38-82" />
@@ -8667,6 +8663,11 @@
       <property role="TrG5h" value="software-gcc4.8" />
       <property role="Gyxd1" value="latest" />
     </node>
+  </node>
+  <node concept="2EEQw1" id="73rH4JIJqgO">
+    <property role="TrG5h" value="docker.config" />
+    <property role="2EEQw2" value="/usr/local/bin/docker" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
   </node>
 </model>
 
