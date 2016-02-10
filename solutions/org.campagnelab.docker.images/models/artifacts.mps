@@ -8672,7 +8672,7 @@
   <node concept="VuPG2" id="73rH4JIJqgP">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="ElasticCluster" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile7955339250442469973.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile975627895231566256.txt" />
     <node concept="VuO64" id="73rH4JIJqgQ" role="VuOVn">
       <node concept="VtuK3" id="73rH4JIJqgS" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -8692,17 +8692,17 @@
         </node>
       </node>
     </node>
+    <node concept="VugRC" id="73rH4JIJqno" role="VuOVn">
+      <node concept="19SGf9" id="73rH4JIJqor" role="Vugyn">
+        <node concept="19SUe$" id="73rH4JIJqos" role="19SJt6">
+          <property role="19SUeA" value="yum install python-setuptools &amp;&amp; yum install -y python-devel" />
+        </node>
+      </node>
+    </node>
     <node concept="VugRC" id="73rH4JIJqjM" role="VuOVn">
       <node concept="19SGf9" id="73rH4JIJqkn" role="Vugyn">
         <node concept="19SUe$" id="73rH4JIJqko" role="19SJt6">
           <property role="19SUeA" value="curl -O http://peak.telecommunity.com/dist/ez_setup.py \ &#10;&amp;&amp; python ez_setup.py \&#10;&amp;&amp; rm ez_setup.py \  &#10;&amp;&amp; easy_install pip \ &#10;&amp;&amp; pip install virtualenv " />
-        </node>
-      </node>
-    </node>
-    <node concept="VugRC" id="73rH4JIJqno" role="VuOVn">
-      <node concept="19SGf9" id="73rH4JIJqor" role="Vugyn">
-        <node concept="19SUe$" id="73rH4JIJqos" role="19SJt6">
-          <property role="19SUeA" value="yum install -y python-devel" />
         </node>
       </node>
     </node>
@@ -8716,6 +8716,9 @@
     <node concept="3blhQM" id="73rH4JIJqzQ" role="3blhQR">
       <ref role="3blhQY" node="73rH4JIJqzP" resolve="ElasticCluster_Image" />
     </node>
+    <node concept="3blhQM" id="73rH4JIJqDl" role="3blhQR">
+      <ref role="3blhQY" node="73rH4JIJqDk" resolve="ElasticCluster_Image" />
+    </node>
   </node>
   <node concept="2E_JVc" id="73rH4JIJqzP">
     <property role="2E_JEh" value="b52fbf72301c" />
@@ -8727,6 +8730,11 @@
       <property role="TrG5h" value="elasticluster" />
       <property role="Gyxd1" value="1.0" />
     </node>
+  </node>
+  <node concept="2E_JVc" id="73rH4JIJqDk">
+    <property role="2E_JEh" value="e12394197b4f" />
+    <property role="TrG5h" value="ElasticCluster_Image" />
+    <ref role="2E_BxF" node="73rH4JIJqgP" resolve="ElasticCluster" />
   </node>
 </model>
 
