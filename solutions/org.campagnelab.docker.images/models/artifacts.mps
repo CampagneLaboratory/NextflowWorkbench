@@ -8672,7 +8672,7 @@
   <node concept="VuPG2" id="73rH4JIJqgP">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="ElasticClusterUbuntu" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile1239435458886762893.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile530245060463807169.txt" />
     <node concept="VuO64" id="3kWAjw$57wL" role="VuOVn">
       <node concept="VtuK3" id="3kWAjw$57yF" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -8701,10 +8701,13 @@
         </node>
       </node>
     </node>
+    <node concept="2Cort2" id="3kWAjw$589u" role="VuOVn">
+      <property role="1MaElf" value="upgrade/install some python stuff" />
+    </node>
     <node concept="VugRC" id="73rH4JIJqHG" role="VuOVn">
       <node concept="19SGf9" id="73rH4JIJqJ3" role="Vugyn">
         <node concept="19SUe$" id="73rH4JIJqJ4" role="19SJt6">
-          <property role="19SUeA" value="apt-get -y install python-setuptools &amp;&amp; apt-get -y install python-dev \&#10;&amp;&amp; apt-get -y install software-properties-common \&#10;&amp;&amp; apt-add-repository ppa:ansible/ansible \&#10;&amp;&amp; apt-get update &amp;&amp; apt-get -y install ansible" />
+          <property role="19SUeA" value="ln -s /usr/bin/python3.4 /usr/bin/python \&#10;&amp;&amp; apt-get -y install python-setuptools &amp;&amp; apt-get -y install python-dev \&#10;&amp;&amp; apt-get -y upgrade python-httplib2 \&#10;&amp;&amp; apt-get -y install software-properties-common \&#10;&amp;&amp; apt-add-repository ppa:ansible/ansible \&#10;&amp;&amp; apt-get update &amp;&amp; apt-get -y install ansible" />
         </node>
       </node>
     </node>
@@ -8738,20 +8741,14 @@
     <node concept="2Cort2" id="73rH4JIJqOZ" role="VuOVn">
       <property role="1MaElf" value="clean up" />
     </node>
-    <node concept="3blhQM" id="3kWAjw$587f" role="3blhQR">
-      <ref role="3blhQY" node="3kWAjw$587e" resolve="ElasticClusterUbuntu_Image" />
+    <node concept="3blhQM" id="3kWAjw$58bU" role="3blhQR">
+      <ref role="3blhQY" node="3kWAjw$58bT" resolve="ElasticClusterUbuntu_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3kWAjw$587e">
-    <property role="2E_JEh" value="a217cd01d2eb" />
+  <node concept="2E_JVc" id="3kWAjw$58bT">
+    <property role="2E_JEh" value="f4b6d4851588" />
     <property role="TrG5h" value="ElasticClusterUbuntu_Image" />
-    <property role="GSh9r" value="artifacts/elasticluster:1.0" />
     <ref role="2E_BxF" node="73rH4JIJqgP" resolve="ElasticClusterUbuntu" />
-    <node concept="Gyxd7" id="3kWAjw$587l" role="Gyxcj">
-      <property role="Gyxfx" value="artifacts" />
-      <property role="TrG5h" value="elasticluster" />
-      <property role="Gyxd1" value="1.0" />
-    </node>
   </node>
 </model>
 
