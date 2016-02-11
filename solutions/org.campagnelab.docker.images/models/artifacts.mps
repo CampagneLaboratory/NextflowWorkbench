@@ -8671,13 +8671,12 @@
   </node>
   <node concept="VuPG2" id="73rH4JIJqgP">
     <property role="3GE5qa" value="dockerfiles" />
-    <property role="TrG5h" value="ElasticCluster" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile975627895231566256.txt" />
-    <node concept="VuO64" id="73rH4JIJqgQ" role="VuOVn">
-      <node concept="VtuK3" id="73rH4JIJqgS" role="VuO5T">
+    <property role="TrG5h" value="ElasticClusterUbuntu" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile1239435458886762893.txt" />
+    <node concept="VuO64" id="3kWAjw$57wL" role="VuOVn">
+      <node concept="VtuK3" id="3kWAjw$57yF" role="VuO5T">
         <property role="VuL0s" value="latest" />
-        <property role="VuL0v" value="artifacts" />
-        <property role="GbyUj" value="base" />
+        <property role="GbyUj" value="ubuntu" />
         <property role="3zaeVo" value="true" />
       </node>
     </node>
@@ -8685,56 +8684,74 @@
       <property role="VuOhg" value="Campagne Lab" />
       <property role="VuOhi" value="manuele.simi@campagnelab.org" />
     </node>
-    <node concept="VugRC" id="73rH4JIJqln" role="VuOVn">
-      <node concept="19SGf9" id="73rH4JIJqlo" role="Vugyn">
-        <node concept="19SUe$" id="73rH4JIJqlp" role="19SJt6">
-          <property role="19SUeA" value="wget http://people.centos.org/tru/devtools-2/devtools-2.repo -O /etc/yum.repos.d/devtools-2.repo \&#10;&amp;&amp; yum install -y devtoolset-2-gcc-4.8.2 devtoolset-2-gcc-c++-4.8.2 devtoolset-2-binutils \&#10;&amp;&amp; ln -s /opt/rh/devtoolset-2/root/usr/bin/* /usr/local/bin/ \&#10;&amp;&amp; yum clean all" />
+    <node concept="VugRC" id="3kWAjw$57XE" role="VuOVn">
+      <node concept="19SGf9" id="3kWAjw$57ZD" role="Vugyn">
+        <node concept="19SUe$" id="3kWAjw$57ZE" role="19SJt6">
+          <property role="19SUeA" value="bash" />
         </node>
       </node>
     </node>
-    <node concept="VugRC" id="73rH4JIJqno" role="VuOVn">
-      <node concept="19SGf9" id="73rH4JIJqor" role="Vugyn">
-        <node concept="19SUe$" id="73rH4JIJqos" role="19SJt6">
-          <property role="19SUeA" value="yum install python-setuptools &amp;&amp; yum install -y python-devel" />
+    <node concept="2Cort2" id="73rH4JIJqVD" role="VuOVn">
+      <property role="1MaElf" value="build tools (gcc, etc.)" />
+    </node>
+    <node concept="VugRC" id="3kWAjw$57Fy" role="VuOVn">
+      <node concept="19SGf9" id="3kWAjw$57Hs" role="Vugyn">
+        <node concept="19SUe$" id="3kWAjw$57Ht" role="19SJt6">
+          <property role="19SUeA" value="apt-get update &amp;&amp; apt-get -y install build-essential" />
         </node>
       </node>
+    </node>
+    <node concept="VugRC" id="73rH4JIJqHG" role="VuOVn">
+      <node concept="19SGf9" id="73rH4JIJqJ3" role="Vugyn">
+        <node concept="19SUe$" id="73rH4JIJqJ4" role="19SJt6">
+          <property role="19SUeA" value="apt-get -y install python-setuptools &amp;&amp; apt-get -y install python-dev \&#10;&amp;&amp; apt-get -y install software-properties-common \&#10;&amp;&amp; apt-add-repository ppa:ansible/ansible \&#10;&amp;&amp; apt-get update &amp;&amp; apt-get -y install ansible" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="3kWAjw$57BN" role="VuOVn">
+      <node concept="19SGf9" id="3kWAjw$57BO" role="Vugyn">
+        <node concept="19SUe$" id="3kWAjw$57BP" role="19SJt6">
+          <property role="19SUeA" value="apt-get -y install curl" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="73rH4JIJqSf" role="VuOVn">
+      <property role="1MaElf" value="install virtualenv for python" />
     </node>
     <node concept="VugRC" id="73rH4JIJqjM" role="VuOVn">
       <node concept="19SGf9" id="73rH4JIJqkn" role="Vugyn">
         <node concept="19SUe$" id="73rH4JIJqko" role="19SJt6">
-          <property role="19SUeA" value="curl -O http://peak.telecommunity.com/dist/ez_setup.py \ &#10;&amp;&amp; python ez_setup.py \&#10;&amp;&amp; rm ez_setup.py \  &#10;&amp;&amp; easy_install pip \ &#10;&amp;&amp; pip install virtualenv " />
+          <property role="19SUeA" value="curl -O http://peak.telecommunity.com/dist/ez_setup.py \ &#10;&amp;&amp; python ez_setup.py \&#10;&amp;&amp; rm ez_setup.py \  &#10;&amp;&amp; easy_install pip \ &#10;&amp;&amp; pip install google-api-python-client \&#10;&amp;&amp; pip install virtualenv" />
         </node>
       </node>
+    </node>
+    <node concept="2Cort2" id="73rH4JIJqZd" role="VuOVn">
+      <property role="1MaElf" value="install elastic cluster and create the virtual env for the execution" />
     </node>
     <node concept="VugRC" id="73rH4JIJqq5" role="VuOVn">
       <node concept="19SGf9" id="73rH4JIJqrn" role="Vugyn">
         <node concept="19SUe$" id="73rH4JIJqro" role="19SJt6">
-          <property role="19SUeA" value="pip install elasticluster \&#10;&amp;&amp; cd /usr/local/ &amp;&amp; virtualenv elasticluster \&#10;&amp;&amp; echo &quot;source /usr/local/elasticluster/bin/activate&quot; &gt;&gt; $HOME/activateEC.sh \&#10;&amp;&amp; chmod 777 $HOME/activateEC.sh" />
+          <property role="19SUeA" value="pip install elasticluster \&#10;&amp;&amp; cd /usr/local/ &amp;&amp; virtualenv elasticluster \&#10;&amp;&amp; echo &quot;bash&quot; &gt;&gt; $HOME/activateEC.sh \&#10;&amp;&amp; echo &quot;source /usr/local/elasticluster/bin/activate&quot; &gt;&gt; $HOME/activateEC.sh \&#10;&amp;&amp; chmod 777 $HOME/activateEC.sh" />
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="73rH4JIJqzQ" role="3blhQR">
-      <ref role="3blhQY" node="73rH4JIJqzP" resolve="ElasticCluster_Image" />
+    <node concept="2Cort2" id="73rH4JIJqOZ" role="VuOVn">
+      <property role="1MaElf" value="clean up" />
     </node>
-    <node concept="3blhQM" id="73rH4JIJqDl" role="3blhQR">
-      <ref role="3blhQY" node="73rH4JIJqDk" resolve="ElasticCluster_Image" />
+    <node concept="3blhQM" id="3kWAjw$587f" role="3blhQR">
+      <ref role="3blhQY" node="3kWAjw$587e" resolve="ElasticClusterUbuntu_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="73rH4JIJqzP">
-    <property role="2E_JEh" value="b52fbf72301c" />
-    <property role="TrG5h" value="ElasticCluster_Image" />
+  <node concept="2E_JVc" id="3kWAjw$587e">
+    <property role="2E_JEh" value="a217cd01d2eb" />
+    <property role="TrG5h" value="ElasticClusterUbuntu_Image" />
     <property role="GSh9r" value="artifacts/elasticluster:1.0" />
-    <ref role="2E_BxF" node="73rH4JIJqgP" resolve="ElasticCluster" />
-    <node concept="Gyxd7" id="73rH4JIJqzW" role="Gyxcj">
+    <ref role="2E_BxF" node="73rH4JIJqgP" resolve="ElasticClusterUbuntu" />
+    <node concept="Gyxd7" id="3kWAjw$587l" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="elasticluster" />
       <property role="Gyxd1" value="1.0" />
     </node>
-  </node>
-  <node concept="2E_JVc" id="73rH4JIJqDk">
-    <property role="2E_JEh" value="e12394197b4f" />
-    <property role="TrG5h" value="ElasticCluster_Image" />
-    <ref role="2E_BxF" node="73rH4JIJqgP" resolve="ElasticCluster" />
   </node>
 </model>
 
