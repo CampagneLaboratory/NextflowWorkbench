@@ -8737,7 +8737,7 @@
     <node concept="VugRC" id="3kWAjw$5aJ7" role="VuOVn">
       <node concept="19SGf9" id="3kWAjw$5aLg" role="Vugyn">
         <node concept="19SUe$" id="3kWAjw$5aLh" role="19SJt6">
-          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone git://github.com/gc3-uzh-ch/elasticluster.git src \&#10;&amp;&amp; cd src &amp;&amp; python setup.py install" />
+          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone git://github.com/gc3-uzh-ch/elasticluster.git src \&#10;&amp;&amp; cd src &amp;&amp; python setup.py install \&#10;&amp;&amp; ssh-keygen -N &quot;&quot;" />
         </node>
       </node>
     </node>
