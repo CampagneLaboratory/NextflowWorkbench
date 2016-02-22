@@ -8672,7 +8672,7 @@
   <node concept="VuPG2" id="3kWAjw$5azY">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="ElasticClusterUbuntu" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile9054629399318834820.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile8424222812008373900.txt" />
     <node concept="VuO64" id="3kWAjw$5azZ" role="VuOVn">
       <node concept="VtuK3" id="3kWAjw$5a$0" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -8751,16 +8751,23 @@
     <node concept="2Cort2" id="3kWAjw$5a$o" role="VuOVn">
       <property role="1MaElf" value="clean up" />
     </node>
-    <node concept="3blhQM" id="3kWAjw$5aYd" role="3blhQR">
-      <ref role="3blhQY" node="3kWAjw$5aYc" resolve="ElasticClusterUbuntu_Image" />
+    <node concept="VugRC" id="3kWAjw$5bGB" role="VuOVn">
+      <node concept="19SGf9" id="3kWAjw$5bJ4" role="Vugyn">
+        <node concept="19SUe$" id="3kWAjw$5bJ5" role="19SJt6">
+          <property role="19SUeA" value="apt-get clean" />
+        </node>
+      </node>
+    </node>
+    <node concept="3blhQM" id="3kWAjw$5bJm" role="3blhQR">
+      <ref role="3blhQY" node="3kWAjw$5bJl" resolve="ElasticClusterUbuntu_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3kWAjw$5aYc">
-    <property role="2E_JEh" value="9883371c7da8" />
+  <node concept="2E_JVc" id="3kWAjw$5bJl">
+    <property role="2E_JEh" value="c0855dd9ac92" />
     <property role="TrG5h" value="ElasticClusterUbuntu_Image" />
     <property role="GSh9r" value="artifacts/elasticluster:1.0" />
     <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticClusterUbuntu" />
-    <node concept="Gyxd7" id="3kWAjw$5aYj" role="Gyxcj">
+    <node concept="Gyxd7" id="3kWAjw$5bJs" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="elasticluster" />
       <property role="Gyxd1" value="1.0" />
