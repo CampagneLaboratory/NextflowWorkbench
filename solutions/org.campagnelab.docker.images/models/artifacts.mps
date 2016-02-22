@@ -8672,7 +8672,7 @@
   <node concept="VuPG2" id="3kWAjw$5azY">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="ElasticClusterUbuntu" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile8099817951505439244.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile9054629399318834820.txt" />
     <node concept="VuO64" id="3kWAjw$5azZ" role="VuOVn">
       <node concept="VtuK3" id="3kWAjw$5a$0" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -8737,23 +8737,30 @@
     <node concept="VugRC" id="3kWAjw$5aJ7" role="VuOVn">
       <node concept="19SGf9" id="3kWAjw$5aLg" role="Vugyn">
         <node concept="19SUe$" id="3kWAjw$5aLh" role="19SJt6">
-          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone git://github.com/gc3-uzh-ch/elasticluster.git src \&#10;&amp;&amp; cd src &amp;&amp; python setup.py install \&#10;&amp;&amp; ssh-keygen -N &quot;&quot;" />
+          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone git://github.com/gc3-uzh-ch/elasticluster.git src \&#10;&amp;&amp; cd src &amp;&amp; python setup.py install \&#10;&amp;&amp; mkdir -p  $HOME/.elasticluster" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="3kWAjw$5aVH" role="VuOVn">
+      <node concept="19SGf9" id="3kWAjw$5aXV" role="Vugyn">
+        <node concept="19SUe$" id="3kWAjw$5aXW" role="19SJt6">
+          <property role="19SUeA" value="cat /dev/zero | ssh-keygen -q -N &quot;&quot;" />
         </node>
       </node>
     </node>
     <node concept="2Cort2" id="3kWAjw$5a$o" role="VuOVn">
       <property role="1MaElf" value="clean up" />
     </node>
-    <node concept="3blhQM" id="3kWAjw$5aMg" role="3blhQR">
-      <ref role="3blhQY" node="3kWAjw$5aMf" resolve="ElasticClusterUbuntu_Image" />
+    <node concept="3blhQM" id="3kWAjw$5aYd" role="3blhQR">
+      <ref role="3blhQY" node="3kWAjw$5aYc" resolve="ElasticClusterUbuntu_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3kWAjw$5aMf">
-    <property role="2E_JEh" value="fa5a0a8c406c" />
+  <node concept="2E_JVc" id="3kWAjw$5aYc">
+    <property role="2E_JEh" value="9883371c7da8" />
     <property role="TrG5h" value="ElasticClusterUbuntu_Image" />
     <property role="GSh9r" value="artifacts/elasticluster:1.0" />
     <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticClusterUbuntu" />
-    <node concept="Gyxd7" id="3kWAjw$5aMm" role="Gyxcj">
+    <node concept="Gyxd7" id="3kWAjw$5aYj" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="elasticluster" />
       <property role="Gyxd1" value="1.0" />
