@@ -16,6 +16,14 @@
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
+    <language id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.files">
+      <concept id="4347565441068751386" name="org.campagnelab.util.files.structure.Line" flags="ng" index="34ZRQx">
+        <property id="4347565441068751408" name="text" index="34ZRQb" />
+      </concept>
+      <concept id="4347565441068751425" name="org.campagnelab.util.files.structure.PlainTextFile" flags="ng" index="34ZRRU">
+        <child id="4347565441068751450" name="lines" index="34ZRRx" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -29,7 +37,7 @@
         <child id="6643674795001677796" name="executor" index="3zupjy" />
         <child id="6643674795001677797" name="processOptions" index="3zupjz" />
       </concept>
-      <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG" />
+      <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
       <concept id="6643674795006467852" name="org.campagnelab.workflow.configuration.structure.QueueElement" flags="ng" index="3zC8Ka">
         <property id="6643674795006468239" name="queue" index="3zCbe9" />
       </concept>
@@ -85,7 +93,7 @@
         <property role="3zCbe9" value="all.q" />
       </node>
     </node>
-    <node concept="3zuAPG" id="3kWAjw$5ciY" role="3zupjy" />
+    <node concept="3zuAPI" id="5EXCMiTrES9" role="3zupjy" />
   </node>
   <node concept="2ulcR8" id="6xlRqabyCgU">
     <property role="TrG5h" value="EchoStringToStandardOut" />
@@ -130,6 +138,33 @@
       <node concept="1uLkD0" id="6xlRqabyDSQ" role="1uLvPA">
         <property role="TrG5h" value="echo" />
       </node>
+    </node>
+  </node>
+  <node concept="34ZRRU" id="5EXCMiTrEUI">
+    <property role="TrG5h" value="wrapper" />
+    <node concept="34ZRQx" id="5EXCMiTrEUJ" role="34ZRRx">
+      <property role="34ZRQb" value="#!/bin/bash" />
+    </node>
+    <node concept="34ZRQx" id="5EXCMiTrEV0" role="34ZRRx">
+      <property role="34ZRQb" value="#$ -j y" />
+    </node>
+    <node concept="34ZRQx" id="5EXCMiTrFf2" role="34ZRRx">
+      <property role="34ZRQb" value="source $HOME/scripts2/install_packages.sh" />
+    </node>
+    <node concept="34ZRQx" id="5EXCMiTrEVb" role="34ZRRx">
+      <property role="34ZRQb" value="echo &quot;\nHello World!\n&quot;" />
+    </node>
+    <node concept="34ZRQx" id="5EXCMiTrEVZ" role="34ZRRx">
+      <property role="34ZRQb" value="echo 'my working directory is: '" />
+    </node>
+    <node concept="34ZRQx" id="5EXCMiTrEXd" role="34ZRRx">
+      <property role="34ZRQb" value="pwd" />
+    </node>
+    <node concept="34ZRQx" id="5EXCMiTrEWk" role="34ZRRx">
+      <property role="34ZRQb" value="echo 'on the host: '" />
+    </node>
+    <node concept="34ZRQx" id="5EXCMiTrEWI" role="34ZRRx">
+      <property role="34ZRQb" value="hostname" />
     </node>
   </node>
 </model>

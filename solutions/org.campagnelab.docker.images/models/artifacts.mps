@@ -8672,7 +8672,7 @@
   <node concept="VuPG2" id="3kWAjw$5azY">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="ElasticClusterUbuntu" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile8424222812008373900.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile4191451350167932693.txt" />
     <node concept="VuO64" id="3kWAjw$5azZ" role="VuOVn">
       <node concept="VtuK3" id="3kWAjw$5a$0" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -8697,7 +8697,7 @@
     <node concept="VugRC" id="3kWAjw$5a$6" role="VuOVn">
       <node concept="19SGf9" id="3kWAjw$5a$7" role="Vugyn">
         <node concept="19SUe$" id="3kWAjw$5a$8" role="19SJt6">
-          <property role="19SUeA" value="apt-get update &amp;&amp; apt-get -y install build-essential &amp;&amp; apt-get install -y git-core \ &#10;&amp;&amp; apt-get -y install curl" />
+          <property role="19SUeA" value="apt-get update &amp;&amp; apt-get -y install build-essential &amp;&amp; apt-get install -y git-core \ &#10;&amp;&amp; apt-get -y install curl " />
         </node>
       </node>
     </node>
@@ -8727,7 +8727,7 @@
     <node concept="VugRC" id="3kWAjw$5a$l" role="VuOVn">
       <node concept="19SGf9" id="3kWAjw$5a$m" role="Vugyn">
         <node concept="19SUe$" id="3kWAjw$5a$n" role="19SJt6">
-          <property role="19SUeA" value="pip install virtualenv \&#10;&amp;&amp; cd /usr/local/ &amp;&amp; virtualenv elasticluster \&#10;&amp;&amp; . elasticluster/bin/activate  &amp;&amp; pip install ansible \&#10;&amp;&amp; echo &quot;. /usr/local/elasticluster/bin/activate&quot; &gt;&gt; $HOME/activateEC.sh \&#10;&amp;&amp; chmod 777 $HOME/activateEC.sh" />
+          <property role="19SUeA" value="pip install virtualenv \&#10;&amp;&amp; cd /usr/local/ &amp;&amp; virtualenv elasticluster \&#10;&amp;&amp; . elasticluster/bin/activate  &amp;&amp; pip install ansible " />
         </node>
       </node>
     </node>
@@ -8737,7 +8737,7 @@
     <node concept="VugRC" id="3kWAjw$5aJ7" role="VuOVn">
       <node concept="19SGf9" id="3kWAjw$5aLg" role="Vugyn">
         <node concept="19SUe$" id="3kWAjw$5aLh" role="19SJt6">
-          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone git://github.com/gc3-uzh-ch/elasticluster.git src \&#10;&amp;&amp; cd src &amp;&amp; python setup.py install \&#10;&amp;&amp; mkdir -p  $HOME/.elasticluster" />
+          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone git://github.com/gc3-uzh-ch/elasticluster.git src \&#10;&amp;&amp; cd src &amp;&amp; python setup.py install \&#10;&amp;&amp; mkdir -p  $HOME/.elasticluster &amp;&amp; touch $HOME/.elasticluster/config" />
         </node>
       </node>
     </node>
@@ -8745,6 +8745,16 @@
       <node concept="19SGf9" id="3kWAjw$5aXV" role="Vugyn">
         <node concept="19SUe$" id="3kWAjw$5aXW" role="19SJt6">
           <property role="19SUeA" value="cat /dev/zero | ssh-keygen -q -N &quot;&quot;" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="5EXCMiTrF5S" role="VuOVn">
+      <property role="1MaElf" value="install config tools" />
+    </node>
+    <node concept="VugRC" id="5EXCMiTrFiF" role="VuOVn">
+      <node concept="19SGf9" id="5EXCMiTrFlF" role="Vugyn">
+        <node concept="19SUe$" id="5EXCMiTrFlG" role="19SJt6">
+          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; chmod 777 config-tools/*.sh &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools:$PATH&quot; &gt;&gt; $HOME/.bashrc" />
         </node>
       </node>
     </node>
@@ -8758,19 +8768,19 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="3kWAjw$5bJm" role="3blhQR">
-      <ref role="3blhQY" node="3kWAjw$5bJl" resolve="ElasticClusterUbuntu_Image" />
+    <node concept="3blhQM" id="5EXCMiTrFpY" role="3blhQR">
+      <ref role="3blhQY" node="5EXCMiTrFpX" resolve="ElasticClusterUbuntu_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="3kWAjw$5bJl">
-    <property role="2E_JEh" value="c0855dd9ac92" />
+  <node concept="2E_JVc" id="5EXCMiTrFpX">
+    <property role="2E_JEh" value="0adbef9fe285" />
     <property role="TrG5h" value="ElasticClusterUbuntu_Image" />
-    <property role="GSh9r" value="artifacts/elasticluster:1.0" />
+    <property role="GSh9r" value="artifacts/elasticluster:latest" />
     <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticClusterUbuntu" />
-    <node concept="Gyxd7" id="3kWAjw$5bJs" role="Gyxcj">
+    <node concept="Gyxd7" id="5EXCMiTrFq4" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="elasticluster" />
-      <property role="Gyxd1" value="1.0" />
+      <property role="Gyxd1" value="latest" />
     </node>
   </node>
 </model>
