@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io()" />
+    <import index="hw4t" ref="r:41663e9a-b716-465f-9ce0-0c158a40f03d(training)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -30,16 +31,30 @@
       </concept>
     </language>
     <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
+      <concept id="1572763280063619218" name="org.campagnelab.workflow.configuration.structure.WithDocker" flags="ng" index="3qaZdc" />
       <concept id="6643674794999877909" name="org.campagnelab.workflow.configuration.structure.Queue" flags="ng" index="3z708j">
         <child id="6643674794999877910" name="queueElements" index="3z708g" />
       </concept>
       <concept id="6643674795001677795" name="org.campagnelab.workflow.configuration.structure.WorkflowConfig" flags="ng" index="3zupj_">
+        <child id="1572763280063618524" name="containerOptions" index="3qaWS2" />
         <child id="6643674795001677796" name="executor" index="3zupjy" />
         <child id="6643674795001677797" name="processOptions" index="3zupjz" />
       </concept>
-      <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
+      <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG" />
       <concept id="6643674795006467852" name="org.campagnelab.workflow.configuration.structure.QueueElement" flags="ng" index="3zC8Ka">
         <property id="6643674795006468239" name="queue" index="3zCbe9" />
+      </concept>
+    </language>
+    <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
+      <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
+        <property id="8987412447080623507" name="options" index="2E$TAj" />
+        <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
+      </concept>
+      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3" />
+      <concept id="1893262236499908796" name="org.campagnelab.docker.structure.DockerContainer" flags="ng" index="VuMX5">
+        <property id="6819868375264208052" name="id" index="GbyUj" />
+        <property id="1893262236499912677" name="tag" index="VuL0s" />
+        <property id="1893262236499912678" name="userName" index="VuL0v" />
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
@@ -47,7 +62,11 @@
         <property id="2590112629708729231" name="fromStandardOutput" index="2lYOoT" />
       </concept>
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
+      <concept id="6042700048959911136" name="org.campagnelab.workflow.structure.DuplicateOutputChannelList" flags="ng" index="2tD$Xd">
+        <child id="6042700048959911137" name="channels" index="2tD$Xc" />
+      </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
+        <child id="331977639697571264" name="container" index="234boB" />
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
@@ -74,6 +93,13 @@
       </concept>
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
+        <child id="3857878650537656757" name="functions" index="1ylr64" />
+      </concept>
+      <concept id="3857878650533843630" name="org.campagnelab.workflow.structure.ToList" flags="ng" index="1yaYav" />
+      <concept id="5937854873896129352" name="org.campagnelab.workflow.structure.DuplicateOutputChannel" flags="ng" index="1$0uN4" />
+      <concept id="5937854873902684864" name="org.campagnelab.workflow.structure.DuplicateGlobalChannel" flags="ng" index="1$Fulc" />
+      <concept id="5937854873901406088" name="org.campagnelab.workflow.structure.DuplicateGlobalChannelList" flags="ng" index="1$O6w4">
+        <child id="5937854873901406089" name="channels" index="1$O6w5" />
       </concept>
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
@@ -93,7 +119,8 @@
         <property role="3zCbe9" value="all.q" />
       </node>
     </node>
-    <node concept="3zuAPI" id="5EXCMiTrES9" role="3zupjy" />
+    <node concept="3zuAPG" id="5EXCMiTrF$B" role="3zupjy" />
+    <node concept="3qaZdc" id="5EXCMiTrFD3" role="3qaWS2" />
   </node>
   <node concept="2ulcR8" id="6xlRqabyCgU">
     <property role="TrG5h" value="EchoStringToStandardOut" />
@@ -118,6 +145,11 @@
     <node concept="2mjA9o" id="6xlRqabyCh2" role="2ulM7n">
       <property role="TrG5h" value="stringToEcho" />
       <node concept="16pbKc" id="6xlRqabyCh3" role="2ybFLk" />
+    </node>
+    <node concept="VtuK3" id="5EXCMiTrFBW" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="software" />
     </node>
   </node>
   <node concept="2$rMIF" id="6xlRqabyDAB">
@@ -165,6 +197,104 @@
     </node>
     <node concept="34ZRQx" id="5EXCMiTrEWI" role="34ZRRx">
       <property role="34ZRQb" value="hostname" />
+    </node>
+  </node>
+  <node concept="2EEQw1" id="5EXCMiTrFD2">
+    <property role="TrG5h" value="docker.config" />
+    <property role="2EEQw2" value="/usr/local/bin/docker" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
+  </node>
+  <node concept="2$rMIF" id="3a_Ie33Oncy">
+    <property role="TrG5h" value="FastqKallistoCounts" />
+    <node concept="2$rEH5" id="3a_Ie33Onib" role="2$rEHq">
+      <ref role="2$rEH4" to="hw4t:3a_Ie33Oni_" resolve="Sample_Download_1M_Reads" />
+      <node concept="2tD$Xd" id="59BvSKQZ7BC" role="1uLvPA">
+        <property role="TrG5h" value="reads" />
+        <node concept="1$0uN4" id="59BvSKQZ7KI" role="2tD$Xc">
+          <property role="TrG5h" value="A" />
+        </node>
+        <node concept="1$0uN4" id="59BvSKQZ85H" role="2tD$Xc">
+          <property role="TrG5h" value="B" />
+        </node>
+      </node>
+      <node concept="1uYdA0" id="3a_Ie33OnkF" role="1uLvPH">
+        <ref role="1uK_4X" node="59BvSKQO37s" resolve="IDsToDownload" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="iewVIi_TdJ" role="2$rEHq">
+      <ref role="2$rEH4" to="hw4t:iewVIi_T9Y" resolve="Sample_QC" />
+      <node concept="1uLkD0" id="iewVIi_Tuz" role="1uLvPA">
+        <property role="TrG5h" value="zip" />
+      </node>
+      <node concept="1uYdA0" id="iewVIi_Tfi" role="1uLvPH">
+        <ref role="1uK_4X" node="59BvSKQZ7KI" resolve="A" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="5frYURexkMf" role="2$rEHq">
+      <ref role="2$rEH4" to="hw4t:59BvSKQHAFs" resolve="Sample_KallistoCountsWithTuples" />
+      <node concept="1uYdA0" id="5frYURexkRa" role="1uLvPH">
+        <ref role="1uK_4X" node="59BvSKQZ85H" resolve="B" />
+      </node>
+      <node concept="1uLkD0" id="5frYURexkRb" role="1uLvPA">
+        <property role="TrG5h" value="result" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="59BvSKQHDFb" role="2$rEHq">
+      <ref role="2$rEH4" to="hw4t:7ejpSqH8Lzx" resolve="Sample_CombineCounts" />
+      <node concept="1uYdA0" id="59BvSKQHDK9" role="1uLvPH">
+        <ref role="1uK_4X" node="5frYURexkRb" resolve="result" />
+        <node concept="1yaYav" id="59BvSKQHFDp" role="1ylr64" />
+      </node>
+      <node concept="1uYdA0" id="59BvSKQHDKa" role="1uLvPH">
+        <ref role="1uK_4X" node="59BvSKQOg5v" resolve="IDsToCombine" />
+        <node concept="1yaYav" id="59BvSKQHFIw" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="59BvSKQHDKb" role="1uLvPA">
+        <property role="TrG5h" value="combined" />
+      </node>
+    </node>
+    <node concept="1$O6w4" id="59BvSKQO2pB" role="2$L6iY">
+      <property role="TrG5h" value="sampleIds" />
+      <node concept="1$Fulc" id="59BvSKQO37s" role="1$O6w5">
+        <property role="TrG5h" value="IDsToDownload" />
+        <node concept="2J_sx7" id="59BvSKQO37t" role="2$L62I" />
+      </node>
+      <node concept="1$Fulc" id="59BvSKQOg5v" role="1$O6w5">
+        <property role="TrG5h" value="IDsToCombine" />
+        <node concept="2J_sx7" id="59BvSKQOg5w" role="2$L62I" />
+      </node>
+      <node concept="2J_sx7" id="59BvSKQOR7k" role="2$L62I">
+        <node concept="2J_g7P" id="59BvSKQOR7l" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514132" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7m" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514133" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7n" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514134" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7o" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514135" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7p" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514136" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7q" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514137" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7r" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514138" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7s" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514139" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7t" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514140" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7u" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514141" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
