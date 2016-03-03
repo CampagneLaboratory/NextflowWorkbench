@@ -21,6 +21,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -41,7 +42,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="5EXCMiTrK$k">
-    <ref role="1XX52x" to="5lbf:5EXCMiTrJMh" resolve="LaunchContainerWithEC" />
+    <ref role="1XX52x" to="5lbf:5EXCMiTrJMh" resolve="ContainerWithEC" />
     <node concept="3EZMnI" id="6A9boVQ2ENa" role="2wV5jI">
       <node concept="l2Vlx" id="6A9boVQ2ENb" role="2iSdaV" />
       <node concept="3F0ifn" id="1rhtiO0qtHg" role="3EZMnx">
@@ -51,6 +52,9 @@
         <ref role="1NtTu8" to="r9td:irqYu7yXR0" />
         <node concept="ljvvj" id="1rhtiO0quoy" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VPxyj" id="5wsmBEGR5Fl" role="3F10Kt">
+          <property role="VOm3f" value="false" />
         </node>
       </node>
       <node concept="3F0ifn" id="6A9boVQ2FyN" role="3EZMnx">

@@ -97,7 +97,7 @@
           <node concept="3clFbF" id="5EXCMiTrL0H" role="3cqZAp">
             <node concept="37vLTI" id="5EXCMiTrLio" role="3clFbG">
               <node concept="Xl_RD" id="5EXCMiTrLjO" role="37vLTx">
-                <property role="Xl_RC" value="Launch_container_with_elasticluster" />
+                <property role="Xl_RC" value="ManageCloudCluster" />
               </node>
               <node concept="2OqwBi" id="5EXCMiTrL2E" role="37vLTJ">
                 <node concept="1r4Lsj" id="5EXCMiTrL0G" role="2Oq$k0" />
