@@ -4,8 +4,11 @@
   <languages>
     <use id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud" version="0" />
     <use id="c513c71c-d9f3-4625-83dc-6180e1012e68" name="org.campagnelab.cloud.configuration" version="0" />
+    <use id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="ili1" ref="r:0e890efb-eb84-45d5-b014-563cdc1d654b(org.campagnelab.docker.bash.run.plugin)" />
+  </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -45,8 +48,6 @@
         <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
       </concept>
       <concept id="6819868375264134127" name="org.campagnelab.docker.structure.RunningContainer" flags="ng" index="GbKB8">
-        <property id="2480268408568341441" name="workingDir" index="yfkOV" />
-        <property id="8244532133801982036" name="mountWorkingDir" index="$TgSv" />
         <property id="1464761952898881430" name="running" index="1vm7qE" />
         <property id="1859325667733444128" name="command" index="3yMj3R" />
         <reference id="1859325667733099571" name="image" index="3zcJb$" />
@@ -109,16 +110,11 @@
   <node concept="3zOPYP" id="6_LFt8Zwpgy">
     <property role="TrG5h" value="Launch_container_with_elasticluster" />
     <ref role="3zOwU$" node="6_LFt8Zwpg$" resolve="cluster.config" />
-    <node concept="GbKB8" id="6_LFt8ZwpgR" role="234boB">
+    <node concept="VtuK3" id="6_LFt8Z$xEm" role="234boB">
       <property role="VuL0s" value="latest" />
-      <property role="3yMj3R" value="sleep 10000" />
-      <property role="yfkOV" value="/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench//solutions/playground/classes_gen/cloud/" />
-      <property role="$TgSv" value="true" />
       <property role="GbyUj" value="elasticluster" />
-      <property role="3zaeVo" value="true" />
       <property role="VuL0v" value="artifacts" />
-      <property role="TrG5h" value="interactive" />
-      <ref role="3zcJb$" node="6_LFt8ZwpgS" resolve="image" />
+      <property role="3zaeVo" value="true" />
     </node>
     <node concept="mIf$4" id="6_LFt8ZwpgG" role="1QJbqZ">
       <node concept="19SGf9" id="6_LFt8ZwpgI" role="mIfBD">
@@ -142,6 +138,21 @@
     <property role="1vm7qE" value="true" />
     <property role="3yMj3R" value="sleep 10000" />
     <ref role="3zcJb$" node="6_LFt8ZwpgS" resolve="image" />
+  </node>
+  <node concept="1QJbas" id="5wsmBEGQxqm">
+    <property role="TrG5h" value="test" />
+    <node concept="mIf$4" id="5wsmBEGQxqp" role="1QJbqZ">
+      <node concept="19SGf9" id="5wsmBEGQxqr" role="mIfBD">
+        <node concept="19SUe$" id="5wsmBEGQxqs" role="19SJt6">
+          <property role="19SUeA" value="echo hello" />
+        </node>
+      </node>
+    </node>
+    <node concept="VtuK3" id="5wsmBEGQxqo" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="GbyUj" value="ubuntu" />
+      <property role="3zaeVo" value="true" />
+    </node>
   </node>
 </model>
 

@@ -8671,8 +8671,8 @@
   </node>
   <node concept="VuPG2" id="3kWAjw$5azY">
     <property role="3GE5qa" value="dockerfiles" />
-    <property role="TrG5h" value="ElasticClusterUbuntu" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile9026115908120073266.txt" />
+    <property role="TrG5h" value="ElasticlusterUbuntu" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile2846431145474309392.txt" />
     <node concept="VuO64" id="3kWAjw$5azZ" role="VuOVn">
       <node concept="VtuK3" id="3kWAjw$5a$0" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -8683,13 +8683,6 @@
     <node concept="VuOhh" id="3kWAjw$5a$1" role="VuOVn">
       <property role="VuOhg" value="Campagne Lab" />
       <property role="VuOhi" value="manuele.simi@campagnelab.org" />
-    </node>
-    <node concept="VugRC" id="3kWAjw$5a$2" role="VuOVn">
-      <node concept="19SGf9" id="3kWAjw$5a$3" role="Vugyn">
-        <node concept="19SUe$" id="3kWAjw$5a$4" role="19SJt6">
-          <property role="19SUeA" value="bash" />
-        </node>
-      </node>
     </node>
     <node concept="2Cort2" id="3kWAjw$5a$5" role="VuOVn">
       <property role="1MaElf" value="build tools (gcc, git, etc.)" />
@@ -8754,7 +8747,7 @@
     <node concept="VugRC" id="5EXCMiTrFiF" role="VuOVn">
       <node concept="19SGf9" id="5EXCMiTrFlF" role="Vugyn">
         <node concept="19SUe$" id="5EXCMiTrFlG" role="19SJt6">
-          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt;&gt; $HOME/.bashrc &amp;&amp; echo &quot;new7&quot;" />
+          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new10&quot;" />
         </node>
       </node>
     </node>
@@ -8768,16 +8761,26 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="5EXCMiTrHz_" role="3blhQR">
-      <ref role="3blhQY" node="5EXCMiTrHz$" resolve="ElasticClusterUbuntu_Image" />
+    <node concept="2Cort2" id="6_LFt8Z$wZ8" role="VuOVn">
+      <property role="1MaElf" value="set bash as default shell (see https://github.com/docker/docker/issues/7281)" />
+    </node>
+    <node concept="VugRC" id="6_LFt8Z$wTc" role="VuOVn">
+      <node concept="19SGf9" id="6_LFt8Z$wVX" role="Vugyn">
+        <node concept="19SUe$" id="6_LFt8Z$wVY" role="19SJt6">
+          <property role="19SUeA" value="rm /bin/sh &amp;&amp; sudo ln -sf /bin/bash /bin/sh" />
+        </node>
+      </node>
+    </node>
+    <node concept="3blhQM" id="5wsmBEGQY9l" role="3blhQR">
+      <ref role="3blhQY" node="5wsmBEGQY9k" resolve="ElasticlusterUbuntu_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="5EXCMiTrHz$">
-    <property role="2E_JEh" value="fcb5e2aa9167" />
-    <property role="TrG5h" value="ElasticClusterUbuntu_Image" />
+  <node concept="2E_JVc" id="5wsmBEGQY9k">
+    <property role="2E_JEh" value="c73a77a435d7" />
+    <property role="TrG5h" value="ElasticlusterUbuntu_Image" />
     <property role="GSh9r" value="artifacts/elasticluster:latest" />
-    <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticClusterUbuntu" />
-    <node concept="Gyxd7" id="5EXCMiTrHzF" role="Gyxcj">
+    <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticlusterUbuntu" />
+    <node concept="Gyxd7" id="5wsmBEGQY9r" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="elasticluster" />
       <property role="Gyxd1" value="latest" />
