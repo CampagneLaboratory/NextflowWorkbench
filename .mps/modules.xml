@@ -7,6 +7,8 @@
       <modulePath path="$PROJECT_DIR$/allDevkits/docker/org.campagnelab.docker.dev.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/gobyweb/org.campagnelab.docker.gobyweb.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/org.campagnelab.NextflowWorkbench.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.cloud.configuration/org.campagnelab.cloud.configuration.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.cloud/org.campagnelab.cloud.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.docker.bash.resources/org.campagnelab.docker.bash.resources.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.docker.bash/org.campagnelab.docker.bash.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.docker/org.campagnelab.docker.mpl" folder="" />

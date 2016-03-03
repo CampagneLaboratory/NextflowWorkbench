@@ -16,9 +16,9 @@
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" />
-    <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" implicit="true" />
     <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="rzxe" ref="r:c8f01c5c-0641-4bdc-875e-539c2c78a0be(org.campagnelab.docker.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -89,6 +89,7 @@
       </concept>
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
+        <property id="1167272244852" name="applyToConceptInheritors" index="36QftV" />
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
       </concept>
       <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
@@ -135,11 +136,13 @@
     <property role="TrG5h" value="main" />
     <node concept="3lhOvk" id="2aKFOmifa3F" role="3lj3bC">
       <property role="13Pg2o" value="true" />
+      <property role="36QftV" value="true" />
       <ref role="3lhOvi" node="2aKFOmifaPi" resolve="build.xml" />
       <ref role="30HIoZ" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
     </node>
     <node concept="3lhOvk" id="2yVjOHGqM05" role="3lj3bC">
       <property role="13Pg2o" value="true" />
+      <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="r9td:8cuIHOGcxR" resolve="DockerBash" />
       <ref role="3lhOvi" node="2yVjOHGqM0a" resolve="script.sh" />
     </node>
@@ -225,7 +228,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="4_wVviqKCL_" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                          <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
                           <node concept="Xl_RD" id="4_wVviqKCLA" role="37wK5m">
                             <property role="Xl_RC" value="\&quot;" />
                           </node>
