@@ -10,17 +10,11 @@
     <import index="ili1" ref="r:0e890efb-eb84-45d5-b014-563cdc1d654b(org.campagnelab.docker.bash.run.plugin)" />
   </imports>
   <registry>
-    <language id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash">
-      <concept id="7604659537827600540" name="org.campagnelab.docker.bash.structure.GenerateBashFragment" flags="ng" index="2vyjki" />
-      <concept id="147628039490029687" name="org.campagnelab.docker.bash.structure.DockerBash" flags="ng" index="1QJbas">
-        <reference id="147628039490030680" name="config" index="1QJbqN" />
-        <child id="331977639697571264" name="container" index="234boB" />
-        <child id="147628039490030676" name="script" index="1QJbqZ" />
-      </concept>
-    </language>
     <language id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud">
       <concept id="6538561612137036945" name="org.campagnelab.cloud.structure.ContainerWithEC" flags="ng" index="3zOPYP">
         <reference id="6538561612137082240" name="clusterConf" index="3zOwU$" />
+        <reference id="147628039490030680" name="config" index="1QJbqN" />
+        <child id="331977639697571264" name="container" index="234boB" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -56,36 +50,35 @@
       <concept id="6538561612137102283" name="org.campagnelab.cloud.configuration.structure.ComputeClass" flags="ng" index="3zO_zJ" />
     </language>
   </registry>
-  <node concept="3zOwDe" id="5wsmBEGRif4">
+  <node concept="3zOwDe" id="5wsmBEGRinW">
     <property role="TrG5h" value="cluster.config" />
-    <node concept="3zO_zI" id="5wsmBEGRif5" role="3zNrtZ">
+    <node concept="3zO_zI" id="5wsmBEGRinX" role="3zNrtZ">
       <property role="TrG5h" value="Number of frontend nodes" />
       <property role="3zO_zz" value="1" />
     </node>
-    <node concept="3zO_zJ" id="5wsmBEGRif6" role="3zNrtf">
+    <node concept="3zO_zJ" id="5wsmBEGRinY" role="3zNrtf">
       <property role="TrG5h" value="Number of worker nodes" />
       <property role="3zO_zz" value="2" />
     </node>
-    <node concept="1mWehH" id="5wsmBEGRif7" role="1mWdQ_">
+    <node concept="1mWehH" id="5wsmBEGRinZ" role="1mWdQ_">
       <property role="TrG5h" value="Disk size for worker nodes" />
       <property role="1mWegi" value="20" />
     </node>
   </node>
-  <node concept="2EEQw1" id="5wsmBEGRif8">
+  <node concept="2EEQw1" id="5wsmBEGRio0">
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
     <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
   </node>
-  <node concept="3zOPYP" id="5wsmBEGRif2">
+  <node concept="3zOPYP" id="5wsmBEGRtzk">
     <property role="TrG5h" value="ManageCloudCluster" />
-    <ref role="3zOwU$" node="5wsmBEGRif4" resolve="cluster.config" />
-    <ref role="1QJbqN" node="5wsmBEGRif8" resolve="docker.config" />
-    <node concept="VtuK3" id="5wsmBEGRif3" role="234boB">
+    <ref role="3zOwU$" node="5wsmBEGRinW" resolve="cluster.config" />
+    <ref role="1QJbqN" node="5wsmBEGRio0" resolve="docker.config" />
+    <node concept="VtuK3" id="5wsmBEGRtzl" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="artifacts" />
       <property role="GbyUj" value="elasticluster" />
     </node>
-    <node concept="2vyjki" id="5wsmBEGRif9" role="1QJbqZ" />
   </node>
 </model>
 
