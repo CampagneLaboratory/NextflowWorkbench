@@ -3,15 +3,15 @@
   <persistence version="9" />
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker" version="-1" />
-    <use id="c6567f13-87ab-4686-8f6f-42e8228c0e27" name="org.campagnelab.nyosh.gstring" version="-1" />
-    <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
-    <use id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" name="org.campagnelab.nyosh.interactive" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="5cf93bc1-d0da-4893-b739-63b17fe296b1" name="org.campagnelab.workflow.nyosh" version="-1" />
-    <use id="0b7d8bbd-896e-495e-be60-01a0d738a649" name="org.campagnelab.gobyweb.plugins" version="-1" />
-    <use id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration" version="-1" />
+    <use id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker" version="0" />
+    <use id="c6567f13-87ab-4686-8f6f-42e8228c0e27" name="org.campagnelab.nyosh.gstring" version="0" />
+    <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" name="org.campagnelab.nyosh.interactive" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="5cf93bc1-d0da-4893-b739-63b17fe296b1" name="org.campagnelab.workflow.nyosh" version="0" />
+    <use id="0b7d8bbd-896e-495e-be60-01a0d738a649" name="org.campagnelab.gobyweb.plugins" version="0" />
+    <use id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration" version="0" />
     <use id="27f97fd8-caeb-43a0-a73f-f8ac957f3a17" name="org.campagnelab.gobyweb.environment" version="0" />
     <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
     <use id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" name="org.campagnelab.nyosh.environment" version="0" />
@@ -22,8 +22,8 @@
     <use id="901f5cf3-dc77-4c1e-bc5a-6382baee28b4" name="org.campagnelab.textoutput" version="0" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <use id="a21a7294-c126-4f63-8335-8fecd8c28c7e" name="org.campagnelab.NYoSh" version="0" />
-    <use id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive" version="-1" />
-    <use id="82ffebe3-3685-4fd9-b560-0c1d348d295c" name="org.campagnelab.logger" version="-1" />
+    <use id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive" version="0" />
+    <use id="82ffebe3-3685-4fd9-b560-0c1d348d295c" name="org.campagnelab.logger" version="0" />
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="6" />
     <use id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh" version="0" />
     <use id="57af9408-ffae-472e-9367-5cb44434e8b3" name="org.campagnelab.gobyweb.interactive.users" version="0" />
@@ -45,12 +45,6 @@
       <concept id="2051553890368778876" name="org.campagnelab.gobyweb.interactive.structure.ExecutionEnvironment" flags="ng" index="3lueso">
         <reference id="5865189911929158304" name="owner" index="9QaQ6" />
         <child id="1997533223701807309" name="pluginRepository" index="Esi$J" />
-      </concept>
-    </language>
-    <language id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" name="org.campagnelab.nyosh.environment">
-      <concept id="5955265417291138207" name="org.campagnelab.nyosh.environment.structure.EnvVariableDeclaration" flags="nr" index="1IqXV7">
-        <property id="5469406079154538151" name="value" index="2rInPY" />
-        <property id="5463028992315853055" name="kind" index="3vthGj" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -78,13 +72,6 @@
       </concept>
       <concept id="1925991773566712428" name="org.campagnelab.logger.structure.Logger" flags="ng" index="1lvGkW">
         <child id="1925991773566712429" name="messages" index="1lvGkX" />
-      </concept>
-    </language>
-    <language id="5cf93bc1-d0da-4893-b739-63b17fe296b1" name="org.campagnelab.workflow.nyosh">
-      <concept id="6386724582662879334" name="org.campagnelab.workflow.nyosh.structure.NyoShAwareScript" flags="ng" index="NgwLe">
-        <child id="331977639694004412" name="pluginSystemRootDirectory" index="23NxHr" />
-        <child id="331977639693048103" name="availableVariables" index="23Rrb0" />
-        <child id="6386724582662879362" name="requires" index="NgwMD" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -161,9 +148,6 @@
         <property id="6519147379572947967" name="pluginID" index="JDp7Z" />
         <property id="6519147379572947969" name="pluginDescription" index="JDpo1" />
       </concept>
-      <concept id="6874736155930792596" name="org.campagnelab.gobyweb.structure.PluginSystemRootDirectory" flags="ng" index="1XFuE8">
-        <property id="6874736155930792624" name="path" index="1XFuEG" />
-      </concept>
     </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
       <concept id="3515886879324562347" name="org.campagnelab.docker.structure.CommandElement" flags="ng" index="gkxfm">
@@ -203,9 +187,7 @@
         <property id="1893262236500309977" name="destination" index="V1g0w" />
         <child id="716770353516262575" name="sources" index="3bb4TT" />
       </concept>
-      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
-        <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
-      </concept>
+      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3" />
       <concept id="1893262236500048401" name="org.campagnelab.docker.structure.RunInstruction" flags="ng" index="VugRC">
         <child id="1893262236500049774" name="command" index="Vugyn" />
       </concept>
@@ -256,15 +238,11 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
-        <child id="331977639697571264" name="container" index="234boB" />
-        <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
       </concept>
-      <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="4873360496324423538" name="org.campagnelab.workflow.structure.Boolean" flags="ng" index="1utKzZ" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
         <child id="7391172440887133304" name="type" index="2ybFLk" />
@@ -282,100 +260,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2ulcR8" id="3YXYb8iAEl2">
-    <property role="TrG5h" value="submit" />
-    <node concept="GbKB8" id="4uxaUi8HzZz" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="3yMj3R" value="sleep 1000" />
-      <property role="GbyUj" value="rocker-metar" />
-      <property role="3zaeVo" value="true" />
-      <property role="VuL0v" value="fac2003" />
-      <property role="TrG5h" value="interactive" />
-      <property role="1vm7qE" value="true" />
-      <ref role="3zcJb$" node="6hgQMAA5rLh" resolve="image" />
-    </node>
-    <node concept="2lYRya" id="wcFktQkkas" role="2ulM79">
-      <property role="TrG5h" value="'index_*'" />
-      <node concept="16pRw0" id="wcFktQkkxS" role="2ybFLk" />
-    </node>
-    <node concept="2mjA9o" id="wcFktQkkyp" role="2ulM7n">
-      <property role="TrG5h" value="fileCh" />
-      <node concept="16pRw0" id="wcFktQkkyz" role="2ybFLk" />
-    </node>
-    <node concept="NgwLe" id="4uxaUi8HzI9" role="2ulM7a">
-      <node concept="1XFuE8" id="4uxaUi8HzIa" role="23NxHr">
-        <property role="1XFuEG" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins" />
-      </node>
-      <node concept="19SGf9" id="4uxaUi8HzIc" role="3Y$PkS">
-        <node concept="19SUe$" id="4uxaUi8HzId" role="19SJt6">
-          <property role="19SUeA" value="&#10;&#10;" />
-        </node>
-      </node>
-      <node concept="3jXLau" id="4uxaUi8HzI_" role="NgwMD">
-        <ref role="3jXLav" node="1D6dZ$x23eL" resolve="GOBY" />
-      </node>
-      <node concept="1IqXV7" id="4uxaUi8H_os" role="23Rrb0">
-        <property role="2rInPY" value="/private/tmp/com.apple.launchd.7nGPBrfBp9/Render" />
-        <property role="TrG5h" value="Apple_PubSub_Socket_Render" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="4uxaUi8H_ou" role="23Rrb0">
-        <property role="2rInPY" value="/private/tmp/com.apple.launchd.IQjRWGky2j/org.macosforge.xquartz:0" />
-        <property role="TrG5h" value="DISPLAY" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="4uxaUi8H_ow" role="23Rrb0">
-        <property role="2rInPY" value="/Users/fac2003" />
-        <property role="TrG5h" value="HOME" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="4uxaUi8H_oy" role="23Rrb0">
-        <property role="2rInPY" value="fac2003" />
-        <property role="TrG5h" value="LOGNAME" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="4uxaUi8H_o$" role="23Rrb0">
-        <property role="2rInPY" value="/usr/bin:/bin:/usr/sbin:/sbin" />
-        <property role="TrG5h" value="PATH" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="4uxaUi8H_oA" role="23Rrb0">
-        <property role="2rInPY" value="/bin/bash" />
-        <property role="TrG5h" value="SHELL" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="4uxaUi8H_oC" role="23Rrb0">
-        <property role="2rInPY" value="/private/tmp/com.apple.launchd.mWXtfXC70y/Listeners" />
-        <property role="TrG5h" value="SSH_AUTH_SOCK" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="4uxaUi8H_oE" role="23Rrb0">
-        <property role="2rInPY" value="/var/folders/fc/7z2dj0594zxbw1qsgvtydyvw0000gp/T/" />
-        <property role="TrG5h" value="TMPDIR" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="4uxaUi8H_oG" role="23Rrb0">
-        <property role="2rInPY" value="fac2003" />
-        <property role="TrG5h" value="USER" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="4uxaUi8H_oI" role="23Rrb0">
-        <property role="2rInPY" value="0x0" />
-        <property role="TrG5h" value="XPC_FLAGS" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="4uxaUi8H_oK" role="23Rrb0">
-        <property role="2rInPY" value="com.jetbrains.intellij.42632" />
-        <property role="TrG5h" value="XPC_SERVICE_NAME" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-      <node concept="1IqXV7" id="4uxaUi8H_oM" role="23Rrb0">
-        <property role="2rInPY" value="0x1F6:0x0:0x0" />
-        <property role="TrG5h" value="__CF_USER_TEXT_ENCODING" />
-        <property role="3vthGj" value="STRING" />
-      </node>
-    </node>
-  </node>
   <node concept="2ulcR8" id="irqYu7fHS0">
     <property role="TrG5h" value="TestingIntegrationWithDocker" />
     <node concept="2mjA9o" id="wcFktQkD3u" role="2ulM7n">
