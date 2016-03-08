@@ -94,10 +94,6 @@
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
-      <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
-        <reference id="5610619299013057365" name="target" index="3ygNvj" />
-        <child id="6789562173791401562" name="selectors" index="1juEy9" />
-      </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
       <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
         <property id="4903714810883755350" name="text" index="3MwjfP" />
@@ -1199,30 +1195,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3ygNvl" id="1PXjV8YMesz" role="39821P">
-            <ref role="3ygNvj" to="90a9:1sO539bGQvs" resolve="mps-richtext" />
-            <node concept="3qWCbU" id="1PXjV8YMeuk" role="1juEy9">
-              <property role="3qWCbO" value="**/*.jar" />
-            </node>
-          </node>
-          <node concept="3ygNvl" id="1PXjV8YM$rH" role="39821P">
-            <ref role="3ygNvj" to="90a9:4p3FRivDLPx" resolve="mps-multiline" />
-            <node concept="3qWCbU" id="1PXjV8YM$rI" role="1juEy9">
-              <property role="3qWCbO" value="**/*.jar" />
-            </node>
-          </node>
-          <node concept="3ygNvl" id="1PXjV8YM$t2" role="39821P">
-            <ref role="3ygNvj" to="90a9:6Y0V2RJk5G9" resolve="de-itemis-mps-selection" />
-            <node concept="3qWCbU" id="1PXjV8YM$t3" role="1juEy9">
-              <property role="3qWCbO" value="**/*.jar" />
-            </node>
-          </node>
-          <node concept="3ygNvl" id="6r9ecMqJtA2" role="39821P">
-            <ref role="3ygNvj" to="90a9:2Xjt3l57guk" resolve="de.slisson.mps.hacks" />
-            <node concept="3qWCbU" id="6r9ecMqJtA3" role="1juEy9">
-              <property role="3qWCbO" value="**/*.jar" />
             </node>
           </node>
         </node>
