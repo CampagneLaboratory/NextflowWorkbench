@@ -43,6 +43,8 @@
     <language id="a21a7294-c126-4f63-8335-8fecd8c28c7e" fqName="org.campagnelab.NYoSh" version="0" />
     <language id="20d83b64-d10f-48d1-990d-513b574c4956" fqName="org.campagnelab.background" version="0" />
     <language id="f55d6853-b373-41dd-bc8e-331fd6e2c764" fqName="org.campagnelab.bash.nyosh" version="0" />
+    <language id="f7196c5e-3839-47b2-a69a-cc57b10442a1" fqName="org.campagnelab.cloud" version="0" />
+    <language id="c513c71c-d9f3-4625-83dc-6180e1012e68" fqName="org.campagnelab.cloud.configuration" version="0" />
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" fqName="org.campagnelab.docker" version="0" />
     <language id="3b74e3b7-7336-414d-8899-64a293a44a07" fqName="org.campagnelab.docker.bash" version="0" />
     <language id="adfd00cb-58d7-4094-bca8-f941a491e04f" fqName="org.campagnelab.gobyweb" version="0" />

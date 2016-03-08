@@ -2,28 +2,28 @@
 <model ref="r:eca7b5e4-546f-47a0-8150-d43655cf1011(artifacts)">
   <persistence version="9" />
   <languages>
-    <use id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker" version="0" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh" version="0" />
-    <use id="0b7d8bbd-896e-495e-be60-01a0d738a649" name="org.campagnelab.gobyweb.plugins" version="0" />
-    <use id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive" version="0" />
-    <use id="57af9408-ffae-472e-9367-5cb44434e8b3" name="org.campagnelab.gobyweb.interactive.users" version="0" />
-    <use id="adfd00cb-58d7-4094-bca8-f941a491e04f" name="org.campagnelab.gobyweb" version="0" />
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="c6567f13-87ab-4686-8f6f-42e8228c0e27" name="org.campagnelab.nyosh.gstring" version="0" />
-    <use id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" name="org.campagnelab.nyosh.environment" version="0" />
-    <use id="901f5cf3-dc77-4c1e-bc5a-6382baee28b4" name="org.campagnelab.textoutput" version="0" />
-    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
-    <use id="a21a7294-c126-4f63-8335-8fecd8c28c7e" name="org.campagnelab.NYoSh" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh" version="-1" />
+    <use id="0b7d8bbd-896e-495e-be60-01a0d738a649" name="org.campagnelab.gobyweb.plugins" version="-1" />
+    <use id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive" version="-1" />
+    <use id="57af9408-ffae-472e-9367-5cb44434e8b3" name="org.campagnelab.gobyweb.interactive.users" version="-1" />
+    <use id="adfd00cb-58d7-4094-bca8-f941a491e04f" name="org.campagnelab.gobyweb" version="-1" />
+    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="-1" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
+    <use id="c6567f13-87ab-4686-8f6f-42e8228c0e27" name="org.campagnelab.nyosh.gstring" version="-1" />
+    <use id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" name="org.campagnelab.nyosh.environment" version="-1" />
+    <use id="901f5cf3-dc77-4c1e-bc5a-6382baee28b4" name="org.campagnelab.textoutput" version="-1" />
+    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="-1" />
+    <use id="a21a7294-c126-4f63-8335-8fecd8c28c7e" name="org.campagnelab.NYoSh" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="u3er" ref="r:c4ca67f8-1d9d-4975-b86e-959b486d33d5(dockerMS)" />
@@ -8671,8 +8671,11 @@
   </node>
   <node concept="VuPG2" id="3kWAjw$5azY">
     <property role="3GE5qa" value="dockerfiles" />
-    <property role="TrG5h" value="ElasticClusterUbuntu" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile8099817951505439244.txt" />
+    <property role="TrG5h" value="ElasticlusterUbuntu" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile2846431145474309392.txt" />
+    <node concept="3blhQM" id="5wsmBEGQY9l" role="3blhQR">
+      <ref role="3blhQY" node="5wsmBEGQY9k" resolve="ElasticlusterUbuntu_Image" />
+    </node>
     <node concept="VuO64" id="3kWAjw$5azZ" role="VuOVn">
       <node concept="VtuK3" id="3kWAjw$5a$0" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -8684,20 +8687,13 @@
       <property role="VuOhg" value="Campagne Lab" />
       <property role="VuOhi" value="manuele.simi@campagnelab.org" />
     </node>
-    <node concept="VugRC" id="3kWAjw$5a$2" role="VuOVn">
-      <node concept="19SGf9" id="3kWAjw$5a$3" role="Vugyn">
-        <node concept="19SUe$" id="3kWAjw$5a$4" role="19SJt6">
-          <property role="19SUeA" value="bash" />
-        </node>
-      </node>
-    </node>
     <node concept="2Cort2" id="3kWAjw$5a$5" role="VuOVn">
       <property role="1MaElf" value="build tools (gcc, git, etc.)" />
     </node>
     <node concept="VugRC" id="3kWAjw$5a$6" role="VuOVn">
       <node concept="19SGf9" id="3kWAjw$5a$7" role="Vugyn">
         <node concept="19SUe$" id="3kWAjw$5a$8" role="19SJt6">
-          <property role="19SUeA" value="apt-get update &amp;&amp; apt-get -y install build-essential &amp;&amp; apt-get install -y git-core \ &#10;&amp;&amp; apt-get -y install curl" />
+          <property role="19SUeA" value="apt-get update &amp;&amp; apt-get -y install build-essential &amp;&amp; apt-get install -y git-core \ &#10;&amp;&amp; apt-get -y install curl " />
         </node>
       </node>
     </node>
@@ -8727,7 +8723,7 @@
     <node concept="VugRC" id="3kWAjw$5a$l" role="VuOVn">
       <node concept="19SGf9" id="3kWAjw$5a$m" role="Vugyn">
         <node concept="19SUe$" id="3kWAjw$5a$n" role="19SJt6">
-          <property role="19SUeA" value="pip install virtualenv \&#10;&amp;&amp; cd /usr/local/ &amp;&amp; virtualenv elasticluster \&#10;&amp;&amp; . elasticluster/bin/activate  &amp;&amp; pip install ansible \&#10;&amp;&amp; echo &quot;. /usr/local/elasticluster/bin/activate&quot; &gt;&gt; $HOME/activateEC.sh \&#10;&amp;&amp; chmod 777 $HOME/activateEC.sh" />
+          <property role="19SUeA" value="pip install virtualenv \&#10;&amp;&amp; cd /usr/local/ &amp;&amp; virtualenv elasticluster \&#10;&amp;&amp; . elasticluster/bin/activate  &amp;&amp; pip install ansible " />
         </node>
       </node>
     </node>
@@ -8737,26 +8733,57 @@
     <node concept="VugRC" id="3kWAjw$5aJ7" role="VuOVn">
       <node concept="19SGf9" id="3kWAjw$5aLg" role="Vugyn">
         <node concept="19SUe$" id="3kWAjw$5aLh" role="19SJt6">
-          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone git://github.com/gc3-uzh-ch/elasticluster.git src \&#10;&amp;&amp; cd src &amp;&amp; python setup.py install \&#10;&amp;&amp; ssh-keygen -N &quot;&quot;" />
+          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone git://github.com/gc3-uzh-ch/elasticluster.git src \&#10;&amp;&amp; cd src &amp;&amp; python setup.py install \&#10;&amp;&amp; mkdir -p  $HOME/.elasticluster &amp;&amp; touch $HOME/.elasticluster/config" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="3kWAjw$5aVH" role="VuOVn">
+      <node concept="19SGf9" id="3kWAjw$5aXV" role="Vugyn">
+        <node concept="19SUe$" id="3kWAjw$5aXW" role="19SJt6">
+          <property role="19SUeA" value="cat /dev/zero | ssh-keygen -q -N &quot;&quot;" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="5EXCMiTrF5S" role="VuOVn">
+      <property role="1MaElf" value="install config tools" />
+    </node>
+    <node concept="VugRC" id="5EXCMiTrFiF" role="VuOVn">
+      <node concept="19SGf9" id="5EXCMiTrFlF" role="Vugyn">
+        <node concept="19SUe$" id="5EXCMiTrFlG" role="19SJt6">
+          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new10&quot;" />
         </node>
       </node>
     </node>
     <node concept="2Cort2" id="3kWAjw$5a$o" role="VuOVn">
       <property role="1MaElf" value="clean up" />
     </node>
-    <node concept="3blhQM" id="3kWAjw$5aMg" role="3blhQR">
-      <ref role="3blhQY" node="3kWAjw$5aMf" resolve="ElasticClusterUbuntu_Image" />
+    <node concept="VugRC" id="3kWAjw$5bGB" role="VuOVn">
+      <node concept="19SGf9" id="3kWAjw$5bJ4" role="Vugyn">
+        <node concept="19SUe$" id="3kWAjw$5bJ5" role="19SJt6">
+          <property role="19SUeA" value="apt-get clean" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="6_LFt8Z$wZ8" role="VuOVn">
+      <property role="1MaElf" value="set bash as default shell (see https://github.com/docker/docker/issues/7281)" />
+    </node>
+    <node concept="VugRC" id="6_LFt8Z$wTc" role="VuOVn">
+      <node concept="19SGf9" id="6_LFt8Z$wVX" role="Vugyn">
+        <node concept="19SUe$" id="6_LFt8Z$wVY" role="19SJt6">
+          <property role="19SUeA" value="rm /bin/sh &amp;&amp; sudo ln -sf /bin/bash /bin/sh" />
+        </node>
+      </node>
     </node>
   </node>
-  <node concept="2E_JVc" id="3kWAjw$5aMf">
-    <property role="2E_JEh" value="fa5a0a8c406c" />
-    <property role="TrG5h" value="ElasticClusterUbuntu_Image" />
-    <property role="GSh9r" value="artifacts/elasticluster:1.0" />
-    <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticClusterUbuntu" />
-    <node concept="Gyxd7" id="3kWAjw$5aMm" role="Gyxcj">
+  <node concept="2E_JVc" id="5wsmBEGQY9k">
+    <property role="2E_JEh" value="c73a77a435d7" />
+    <property role="TrG5h" value="ElasticlusterUbuntu_Image" />
+    <property role="GSh9r" value="artifacts/elasticluster:latest" />
+    <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticlusterUbuntu" />
+    <node concept="Gyxd7" id="5wsmBEGQY9r" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="elasticluster" />
-      <property role="Gyxd1" value="1.0" />
+      <property role="Gyxd1" value="latest" />
     </node>
   </node>
 </model>
