@@ -2,9 +2,9 @@
 <model ref="r:e067ad8d-0fb6-4da1-b3c6-24e177194191(org.campagnelab.bash.nyosh.editor)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
-    <use id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -66,6 +66,7 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
@@ -119,7 +120,10 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY">
+        <property id="16410578721444372" name="customizeEmptyCell" index="2ru_X1" />
+        <child id="16410578721629643" name="emptyCellModel" index="2ruayu" />
+      </concept>
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1163613035599" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_Query" flags="in" index="3GJtP1" />
       <concept id="1163613549566" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_parameterObject" flags="nn" index="3GLrbK" />
@@ -400,28 +404,16 @@
           </node>
         </node>
         <node concept="3F1sOY" id="RXABvRU_62" role="3EZMnx">
+          <property role="2ru_X1" value="true" />
           <ref role="1NtTu8" to="iuj9:RXABvRTrS6" />
-          <node concept="pkWqt" id="RXABvRUAfg" role="pqm2j">
-            <node concept="3clFbS" id="RXABvRUAfh" role="2VODD2">
-              <node concept="3clFbF" id="RXABvRUAkg" role="3cqZAp">
-                <node concept="2OqwBi" id="2xiyUn2T9uk" role="3clFbG">
-                  <node concept="2OqwBi" id="RXABvRUAp4" role="2Oq$k0">
-                    <node concept="pncrf" id="RXABvRUAkf" role="2Oq$k0" />
-                    <node concept="Bykcj" id="2xiyUn2T9uh" role="2OqNvi">
-                      <node concept="1aIX9F" id="2xiyUn2T9ui" role="1xVPHs">
-                        <node concept="26LbJo" id="2xiyUn2T9uj" role="1aIX9E">
-                          <ref role="26LbJp" to="iuj9:RXABvRTrS6" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3GX2aA" id="2xiyUn2T9ul" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="VPxyj" id="4DwTgsUmgTW" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3EZMnI" id="1SnLiYT03hD" role="2ruayu">
+            <node concept="VPM3Z" id="1SnLiYT03hE" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="l2Vlx" id="1SnLiYT03hF" role="2iSdaV" />
           </node>
         </node>
         <node concept="1iCGBv" id="17OfmP$aRA$" role="3EZMnx">
