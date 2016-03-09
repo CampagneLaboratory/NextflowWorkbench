@@ -35,14 +35,13 @@
       </concept>
     </language>
     <language id="c513c71c-d9f3-4625-83dc-6180e1012e68" name="org.campagnelab.cloud.configuration">
+      <concept id="3914476085377531388" name="org.campagnelab.cloud.configuration.structure.ClusterConfig" flags="ng" index="2KSRUY">
+        <child id="3914476085377531437" name="options" index="2KSRPJ" />
+      </concept>
       <concept id="7598045164870912447" name="org.campagnelab.cloud.configuration.structure.DiskSize" flags="ng" index="1mWehH">
         <property id="7598045164870912448" name="size" index="1mWegi" />
       </concept>
-      <concept id="6538561612137081194" name="org.campagnelab.cloud.configuration.structure.ClusterConfig" flags="ng" index="3zOwDe">
-        <child id="7598045164870922359" name="diskSize" index="1mWdQ_" />
-        <child id="6538561612137108587" name="computeNodes" index="3zNrtf" />
-        <child id="6538561612137108571" name="frontendNodes" index="3zNrtZ" />
-      </concept>
+      <concept id="6538561612137081194" name="org.campagnelab.cloud.configuration.structure.GridEngineClusterConfig" flags="ng" index="3zOwDe" />
       <concept id="6538561612137102278" name="org.campagnelab.cloud.configuration.structure.NodeClass" flags="ng" index="3zO_zy">
         <property id="6538561612137102279" name="numOfNodes" index="3zO_zz" />
       </concept>
@@ -50,21 +49,6 @@
       <concept id="6538561612137102283" name="org.campagnelab.cloud.configuration.structure.ComputeClass" flags="ng" index="3zO_zJ" />
     </language>
   </registry>
-  <node concept="3zOwDe" id="5wsmBEGRinW">
-    <property role="TrG5h" value="cluster.config" />
-    <node concept="3zO_zI" id="5wsmBEGRinX" role="3zNrtZ">
-      <property role="TrG5h" value="Number of frontend nodes" />
-      <property role="3zO_zz" value="1" />
-    </node>
-    <node concept="3zO_zJ" id="5wsmBEGRinY" role="3zNrtf">
-      <property role="TrG5h" value="Number of worker nodes" />
-      <property role="3zO_zz" value="2" />
-    </node>
-    <node concept="1mWehH" id="5wsmBEGRinZ" role="1mWdQ_">
-      <property role="TrG5h" value="Disk size for worker nodes" />
-      <property role="1mWegi" value="20" />
-    </node>
-  </node>
   <node concept="2EEQw1" id="5wsmBEGRio0">
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
@@ -72,12 +56,27 @@
   </node>
   <node concept="3zOPYP" id="5wsmBEGRtzk">
     <property role="TrG5h" value="ManageCloudCluster" />
-    <ref role="3zOwU$" node="5wsmBEGRinW" resolve="cluster.config" />
     <ref role="1QJbqN" node="5wsmBEGRio0" resolve="docker.config" />
+    <ref role="3zOwU$" node="3pj0Oa6GD4k" resolve="cluster.config" />
     <node concept="VtuK3" id="5wsmBEGRtzl" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="artifacts" />
       <property role="GbyUj" value="elasticluster" />
+    </node>
+  </node>
+  <node concept="3zOwDe" id="3pj0Oa6GD4k">
+    <property role="TrG5h" value="cluster.config" />
+    <node concept="3zO_zI" id="3pj0Oa6GD4l" role="2KSRPJ">
+      <property role="TrG5h" value="Number of frontend nodes" />
+      <property role="3zO_zz" value="1" />
+    </node>
+    <node concept="3zO_zJ" id="3pj0Oa6GD4m" role="2KSRPJ">
+      <property role="TrG5h" value="Number of worker nodes" />
+      <property role="3zO_zz" value="2" />
+    </node>
+    <node concept="1mWehH" id="3pj0Oa6GD4n" role="2KSRPJ">
+      <property role="TrG5h" value="Disk size for worker nodes" />
+      <property role="1mWegi" value="20" />
     </node>
   </node>
 </model>
