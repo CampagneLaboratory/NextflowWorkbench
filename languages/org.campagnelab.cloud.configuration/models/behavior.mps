@@ -328,10 +328,10 @@
       <node concept="17QB3L" id="6UP81EX8ci0" role="3clF45" />
     </node>
     <node concept="13i0hz" id="rQ5OKPjkQC" role="13h7CS">
-      <property role="TrG5h" value="createScript" />
+      <property role="TrG5h" value="createCommand" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="rQ5OKPjkGe" resolve="createScript" />
+      <ref role="13i0hy" node="6Iinc5yJywd" resolve="createCommand" />
       <node concept="3Tm1VV" id="rQ5OKPjkQD" role="1B3o_S" />
       <node concept="3clFbS" id="rQ5OKPjkQG" role="3clF47">
         <node concept="3clFbF" id="rQ5OKPjlbg" role="3cqZAp">
@@ -340,7 +340,22 @@
           </node>
         </node>
       </node>
-      <node concept="17QB3L" id="rQ5OKPjkQH" role="3clF45" />
+      <node concept="17QB3L" id="6Iinc5yJyPp" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6Iinc5yJz8m" role="13h7CS">
+      <property role="TrG5h" value="destroyCommand" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="6Iinc5yJyEe" resolve="destroyCommand" />
+      <node concept="3Tm1VV" id="6Iinc5yJz8n" role="1B3o_S" />
+      <node concept="3clFbS" id="6Iinc5yJz8q" role="3clF47">
+        <node concept="3clFbF" id="6Iinc5yJztn" role="3cqZAp">
+          <node concept="Xl_RD" id="6Iinc5yJzto" role="3clFbG">
+            <property role="Xl_RC" value="/usr/local/elasticluster/config-tools/cluster/cluster-destroy" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6Iinc5yJz8r" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="5EXCMiTs1hQ">
@@ -706,13 +721,21 @@
       <node concept="3clFbS" id="6UP81EX8c42" role="3clF47" />
       <node concept="17QB3L" id="6UP81EX8cfq" role="3clF45" />
     </node>
-    <node concept="13i0hz" id="rQ5OKPjkGe" role="13h7CS">
-      <property role="TrG5h" value="createScript" />
+    <node concept="13i0hz" id="6Iinc5yJywd" role="13h7CS">
+      <property role="TrG5h" value="createCommand" />
       <property role="13i0it" value="true" />
       <property role="13i0iv" value="true" />
-      <node concept="3Tm1VV" id="rQ5OKPjkGf" role="1B3o_S" />
-      <node concept="3clFbS" id="rQ5OKPjkGg" role="3clF47" />
-      <node concept="17QB3L" id="rQ5OKPjkGh" role="3clF45" />
+      <node concept="3Tm1VV" id="6Iinc5yJywe" role="1B3o_S" />
+      <node concept="3clFbS" id="6Iinc5yJywf" role="3clF47" />
+      <node concept="17QB3L" id="6Iinc5yJywg" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6Iinc5yJyEe" role="13h7CS">
+      <property role="TrG5h" value="destroyCommand" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="6Iinc5yJyEf" role="1B3o_S" />
+      <node concept="3clFbS" id="6Iinc5yJyEg" role="3clF47" />
+      <node concept="17QB3L" id="6Iinc5yJyOr" role="3clF45" />
     </node>
     <node concept="13i0hz" id="3pj0Oa6GMmD" role="13h7CS">
       <property role="TrG5h" value="getLocalConfigurationFolder" />
