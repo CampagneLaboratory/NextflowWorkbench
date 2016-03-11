@@ -253,7 +253,7 @@
       <node concept="3clFbS" id="3pj0Oa6Grif" role="3clF47">
         <node concept="3clFbF" id="3pj0Oa6Gr_h" role="3cqZAp">
           <node concept="Xl_RD" id="3pj0Oa6Gr_g" role="3clFbG">
-            <property role="Xl_RC" value="conf" />
+            <property role="Xl_RC" value="config" />
           </node>
         </node>
       </node>
