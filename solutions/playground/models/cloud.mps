@@ -54,29 +54,29 @@
     <property role="2EEQw2" value="/usr/local/bin/docker" />
     <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/manuelesimi/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/manuelesimi/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/manuelesimi/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
-  <node concept="3zOPYP" id="5wsmBEGRtzk">
-    <property role="TrG5h" value="ManageCloudCluster" />
-    <ref role="1QJbqN" node="5wsmBEGRio0" resolve="docker.config" />
-    <ref role="3zOwU$" node="3pj0Oa6GD4k" resolve="cluster.config" />
-    <node concept="VtuK3" id="5wsmBEGRtzl" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="VuL0v" value="artifacts" />
-      <property role="GbyUj" value="elasticluster" />
-    </node>
-  </node>
-  <node concept="3zOwDe" id="3pj0Oa6GD4k">
+  <node concept="3zOwDe" id="2rIRh_WQSHa">
     <property role="TrG5h" value="cluster.config" />
-    <node concept="3zO_zI" id="3pj0Oa6GD4l" role="2KSRPJ">
+    <node concept="3zO_zI" id="2rIRh_WQSHb" role="2KSRPJ">
       <property role="TrG5h" value="Number of frontend nodes" />
       <property role="3zO_zz" value="1" />
     </node>
-    <node concept="3zO_zJ" id="3pj0Oa6GD4m" role="2KSRPJ">
+    <node concept="3zO_zJ" id="2rIRh_WQSHc" role="2KSRPJ">
       <property role="TrG5h" value="Number of worker nodes" />
-      <property role="3zO_zz" value="2" />
+      <property role="3zO_zz" value="30" />
     </node>
-    <node concept="1mWehH" id="3pj0Oa6GD4n" role="2KSRPJ">
+    <node concept="1mWehH" id="2rIRh_WQSHd" role="2KSRPJ">
       <property role="TrG5h" value="Disk size for worker nodes" />
       <property role="1mWegi" value="20" />
+    </node>
+  </node>
+  <node concept="3zOPYP" id="2rIRh_WQSIy">
+    <property role="TrG5h" value="ManageCloudCluster" />
+    <ref role="3zOwU$" node="2rIRh_WQSHa" resolve="cluster.config" />
+    <ref role="1QJbqN" node="5wsmBEGRio0" resolve="docker.config" />
+    <node concept="VtuK3" id="2rIRh_WQSIz" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="elasticluster" />
     </node>
   </node>
 </model>
