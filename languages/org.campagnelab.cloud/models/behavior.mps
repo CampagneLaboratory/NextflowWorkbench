@@ -1165,6 +1165,25 @@
       <property role="TrG5h" value="terminal" />
       <node concept="3Tm1VV" id="5wsmBEGRntS" role="1B3o_S" />
       <node concept="3clFbS" id="5wsmBEGRntT" role="3clF47">
+        <node concept="3SKdUt" id="2rIRh_WVDHe" role="3cqZAp">
+          <node concept="3SKdUq" id="2rIRh_WVDHf" role="3SKWNk">
+            <property role="3SKdUp" value="generate the configuration for the cluster" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2rIRh_WVDHg" role="3cqZAp">
+          <node concept="2OqwBi" id="2rIRh_WVDHh" role="3clFbG">
+            <node concept="2OqwBi" id="2rIRh_WVDHi" role="2Oq$k0">
+              <node concept="13iPFW" id="2rIRh_WVDHj" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2rIRh_WVDHk" role="2OqNvi">
+                <ref role="3Tt5mk" to="5lbf:5EXCMiTrUQ0" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="2rIRh_WVDHl" role="2OqNvi">
+              <ref role="37wK5l" to="3229:3pj0Oa6GqPl" resolve="generate" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2rIRh_WVEOv" role="3cqZAp" />
         <node concept="3cpWs8" id="5U_2ytMia38" role="3cqZAp">
           <node concept="3cpWsn" id="5U_2ytMia39" role="3cpWs9">
             <property role="TrG5h" value="docker" />
