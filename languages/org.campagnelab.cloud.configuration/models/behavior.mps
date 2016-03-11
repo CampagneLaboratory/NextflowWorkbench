@@ -260,7 +260,7 @@
       <node concept="17QB3L" id="3pj0Oa6Grig" role="3clF45" />
     </node>
     <node concept="13i0hz" id="3pj0Oa6Gsq5" role="13h7CS">
-      <property role="TrG5h" value="getConfigurationFolder" />
+      <property role="TrG5h" value="getTargetConfigurationFolder" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="3pj0Oa6GrDY" resolve="getTargetConfigurationFolder" />
@@ -268,11 +268,64 @@
       <node concept="3clFbS" id="3pj0Oa6Gsq9" role="3clF47">
         <node concept="3clFbF" id="3pj0Oa6GsH_" role="3cqZAp">
           <node concept="Xl_RD" id="3pj0Oa6GsH$" role="3clFbG">
-            <property role="Xl_RC" value="/home/ubuntu/.elasticluster" />
+            <property role="Xl_RC" value="/root/.elasticluster" />
           </node>
         </node>
       </node>
       <node concept="17QB3L" id="3pj0Oa6Gsqa" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6UP81EX8aXl" role="13h7CS">
+      <property role="TrG5h" value="getLocalConfigurationFolder" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3pj0Oa6GMmD" resolve="getLocalConfigurationFolder" />
+      <node concept="3Tm1VV" id="6UP81EX8aXm" role="1B3o_S" />
+      <node concept="3clFbS" id="6UP81EX8aXs" role="3clF47">
+        <node concept="3clFbF" id="6UP81EX8bfO" role="3cqZAp">
+          <node concept="2YIFZM" id="6UP81EX8bfP" role="3clFbG">
+            <ref role="37wK5l" to="ujkv:52oJ3dmOWZh" resolve="getSolutionClassesGenFolder" />
+            <ref role="1Pybhc" to="ujkv:52oJ3dmL414" resolve="ProjectPaths" />
+            <node concept="13iPFW" id="6UP81EX8bfQ" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6UP81EX8aXt" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6UP81EX8chV" role="13h7CS">
+      <property role="TrG5h" value="dockerOptions" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="6UP81EX8c40" resolve="dockerOptions" />
+      <node concept="3Tm1VV" id="6UP81EX8chW" role="1B3o_S" />
+      <node concept="3clFbS" id="6UP81EX8chZ" role="3clF47">
+        <node concept="3clFbF" id="6UP81EX8c_8" role="3cqZAp">
+          <node concept="3cpWs3" id="6UP81EX8d4f" role="3clFbG">
+            <node concept="2OqwBi" id="6UP81EX8d9o" role="3uHU7w">
+              <node concept="13iPFW" id="6UP81EX8d6k" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6UP81EX8djV" role="2OqNvi">
+                <ref role="37wK5l" node="3pj0Oa6GrDY" resolve="getTargetConfigurationFolder" />
+              </node>
+            </node>
+            <node concept="3cpWs3" id="6UP81EX8cXf" role="3uHU7B">
+              <node concept="3cpWs3" id="6UP81EX8cFM" role="3uHU7B">
+                <node concept="Xl_RD" id="6UP81EX8c_7" role="3uHU7B">
+                  <property role="Xl_RC" value=" -v " />
+                </node>
+                <node concept="2OqwBi" id="6UP81EX8cIS" role="3uHU7w">
+                  <node concept="13iPFW" id="6UP81EX8cGc" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6UP81EX8cSB" role="2OqNvi">
+                    <ref role="37wK5l" node="3pj0Oa6GMmD" resolve="getLocalConfigurationFolder" />
+                  </node>
+                </node>
+              </node>
+              <node concept="Xl_RD" id="6UP81EX8cZ2" role="3uHU7w">
+                <property role="Xl_RC" value=":" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6UP81EX8ci0" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="5EXCMiTs1hQ">
@@ -630,8 +683,18 @@
       </node>
       <node concept="3cqZAl" id="3pj0Oa6GJN5" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="6UP81EX8c40" role="13h7CS">
+      <property role="TrG5h" value="dockerOptions" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="6UP81EX8c41" role="1B3o_S" />
+      <node concept="3clFbS" id="6UP81EX8c42" role="3clF47" />
+      <node concept="17QB3L" id="6UP81EX8cfq" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="3pj0Oa6GMmD" role="13h7CS">
       <property role="TrG5h" value="getLocalConfigurationFolder" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
       <node concept="3Tm1VV" id="3pj0Oa6GMmE" role="1B3o_S" />
       <node concept="3clFbS" id="3pj0Oa6GMmF" role="3clF47">
         <node concept="3clFbF" id="3pj0Oa6GMAp" role="3cqZAp">
