@@ -25,6 +25,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/dockerFC/dockerFC.msd" folder="models" />
       <modulePath path="$PROJECT_DIR$/solutions/documentation/documentation.msd" folder="models" />
       <modulePath path="$PROJECT_DIR$/solutions/groupTupleWorkflows/groupTupleWorkflows.msd" folder="models" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.cloud.preferences/org.campagnelab.cloud.preferences.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.docker.actions/org.campagnelab.docker.actions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.docker.bash.run/org.campagnelab.docker.bash.run.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.docker.images/org.campagnelab.docker.images.msd" folder="" />
