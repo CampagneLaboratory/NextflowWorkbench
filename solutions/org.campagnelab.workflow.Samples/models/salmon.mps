@@ -953,10 +953,6 @@
     <node concept="3zuAPI" id="2yY4N2z3T5x" role="3zupjy" />
     <node concept="3qaZdc" id="2yY4N2z3T5y" role="3qaWS2" />
   </node>
-  <node concept="2EEQw1" id="2yY4N2z3T5z">
-    <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
-  </node>
   <node concept="3lueso" id="2yY4N2z3T5$">
     <property role="TrG5h" value="Environment" />
     <node concept="Eubbw" id="2yY4N2z3T5_" role="Esi$J">
@@ -8937,6 +8933,11 @@
     <node concept="3lubAv" id="2yY4N2z3Tzg" role="3lu1Za">
       <property role="EkYqe" value="/Users/mas2182/temp/ARTIFACT_REPOSITORY3" />
     </node>
+  </node>
+  <node concept="2EEQw1" id="2rIRh_WW2qk">
+    <property role="TrG5h" value="docker.config" />
+    <property role="2EEQw2" value="/usr/local/bin/docker" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/manuelesimi/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/manuelesimi/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/manuelesimi/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
 </model>
 
