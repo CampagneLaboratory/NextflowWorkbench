@@ -3,10 +3,19 @@
   <persistence version="9" />
   <languages>
     <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
+    <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="ivm0" ref="r:f7c3f04b-0d46-4016-bf5e-37ab9a5f8c7e(org.campagnelab.cloud.preferences.plugin)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="5lbf" ref="r:65d366f2-ae3b-4b81-85e6-342aa070f572(org.campagnelab.cloud.structure)" />
     <import index="45iu" ref="r:e59beccc-d8f0-42c7-8989-c96c06e46e91(org.campagnelab.cloud.configuration.structure)" implicit="true" />
+    <import index="5lwc" ref="r:1da0d023-6dc0-485a-9478-dfc86aa855ad(org.campagnelab.cloud.behavior)" implicit="true" />
     <import index="3229" ref="r:a82c5084-a1df-4f27-8e96-c1c3c407b051(org.campagnelab.cloud.configuration.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -71,6 +80,10 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
+        <reference id="1176109685394" name="concept" index="3lApI3" />
+      </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
@@ -128,6 +141,25 @@
         <node concept="lc7rE" id="5EXCMiTrXM2" role="3cqZAp">
           <node concept="la8eA" id="5EXCMiTrXMG" role="lcghm">
             <property role="lacIc" value="gce_client_secret=" />
+          </node>
+          <node concept="l9hG8" id="65yh485jmX3" role="lcghm">
+            <node concept="2OqwBi" id="65yh485pbs8" role="lb14g">
+              <node concept="2OqwBi" id="65yh485p9AX" role="2Oq$k0">
+                <node concept="2OqwBi" id="65yh485p8US" role="2Oq$k0">
+                  <node concept="2OqwBi" id="65yh485oOWf" role="2Oq$k0">
+                    <node concept="117lpO" id="65yh485p3ur" role="2Oq$k0" />
+                    <node concept="I4A8Y" id="65yh485p8Pc" role="2OqNvi" />
+                  </node>
+                  <node concept="3lApI0" id="65yh485p8WQ" role="2OqNvi">
+                    <ref role="3lApI3" to="5lbf:5EXCMiTrJMh" resolve="ContainerWithEC" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="65yh485pax0" role="2OqNvi" />
+              </node>
+              <node concept="2qgKlT" id="65yh485pb$$" role="2OqNvi">
+                <ref role="37wK5l" to="5lwc:65yh485oPzU" resolve="getSecret" />
+              </node>
+            </node>
           </node>
           <node concept="l8MVK" id="5EXCMiTrXNg" role="lcghm" />
         </node>

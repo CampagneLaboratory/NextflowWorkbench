@@ -12,6 +12,7 @@
   <registry>
     <language id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud">
       <concept id="6538561612137036945" name="org.campagnelab.cloud.structure.ContainerWithEC" flags="ng" index="3zOPYP">
+        <property id="7017246219745809549" name="notes" index="1$193f" />
         <reference id="6538561612137082240" name="clusterConf" index="3zOwU$" />
         <reference id="147628039490030680" name="config" index="1QJbqN" />
         <child id="331977639697571264" name="container" index="234boB" />
@@ -71,6 +72,7 @@
   </node>
   <node concept="3zOPYP" id="2rIRh_WQSIy">
     <property role="TrG5h" value="ManageCloudCluster" />
+    <property role="1$193f" value=" MPS project: null IDEA project: null PrefComponent: null secret: null" />
     <ref role="3zOwU$" node="2rIRh_WQSHa" resolve="cluster.config" />
     <ref role="1QJbqN" node="5wsmBEGRio0" resolve="docker.config" />
     <node concept="VtuK3" id="2rIRh_WQSIz" role="234boB">
