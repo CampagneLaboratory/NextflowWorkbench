@@ -70,12 +70,12 @@
       <property role="1mWegi" value="20" />
     </node>
   </node>
-  <node concept="3zOPYP" id="7vFwTqSSj97">
+  <node concept="3zOPYP" id="3traV2BpDwR">
     <property role="TrG5h" value="ManageCloudCluster" />
-    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:35 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@268f12cb secret: secret2" />
+    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:35 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@51bf8a21 secret: secret2 project GE myID client myclient" />
     <ref role="3zOwU$" node="2rIRh_WQSHa" resolve="cluster.config" />
     <ref role="1QJbqN" node="5wsmBEGRio0" resolve="docker.config" />
-    <node concept="VtuK3" id="7vFwTqSSj98" role="234boB">
+    <node concept="VtuK3" id="3traV2BpDwS" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="artifacts" />
       <property role="GbyUj" value="elasticluster" />
