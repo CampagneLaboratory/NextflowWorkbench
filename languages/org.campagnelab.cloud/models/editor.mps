@@ -40,9 +40,6 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
-      <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
-        <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
-      </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
@@ -50,7 +47,6 @@
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -153,9 +149,6 @@
       <node concept="l2Vlx" id="6A9boVQ2ENb" role="2iSdaV" />
       <node concept="3F0ifn" id="1rhtiO0qtHg" role="3EZMnx">
         <property role="3F0ifm" value="Manage your Cloud Cluster." />
-      </node>
-      <node concept="3F0A7n" id="65yh485pID8" role="3EZMnx">
-        <ref role="1NtTu8" to="5lbf:65yh485pHid" resolve="notes" />
       </node>
       <node concept="3F0ifn" id="65yh485pIEi" role="3EZMnx">
         <property role="3F0ifm" value="" />
