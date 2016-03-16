@@ -305,7 +305,7 @@
         </node>
         <node concept="lc7rE" id="5EXCMiTrYjn" role="3cqZAp">
           <node concept="la8eA" id="5EXCMiTrYjo" role="lcghm">
-            <property role="lacIc" value="[cluster/gridengine" />
+            <property role="lacIc" value="[cluster/gridengine]" />
           </node>
           <node concept="l8MVK" id="5EXCMiTrYjp" role="lcghm" />
         </node>
