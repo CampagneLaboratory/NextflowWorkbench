@@ -51,6 +51,12 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Manage Cloud Cluster" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7QDG7s96n86" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="clusterConfig" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="45iu:5EXCMiTrU_E" resolve="GridEngineClusterConfig" />
+    </node>
     <node concept="1TJgyi" id="65yh485pHid" role="1TKVEl">
       <property role="TrG5h" value="notes" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -63,13 +69,8 @@
     </node>
     <node concept="1TJgyj" id="8cuIHOGcLo" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="config" />
+      <property role="20kJfa" value="dockerConfig" />
       <ref role="20lvS9" to="6jv6:7MTH03m4HK1" resolve="Config" />
-    </node>
-    <node concept="1TJgyj" id="5EXCMiTrUQ0" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="clusterConf" />
-      <ref role="20lvS9" to="45iu:5EXCMiTrU_E" resolve="GridEngineClusterConfig" />
     </node>
     <node concept="PrWs8" id="5wsmBEGRpUQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

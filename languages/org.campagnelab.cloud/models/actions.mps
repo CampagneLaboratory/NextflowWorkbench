@@ -9,7 +9,6 @@
     <import index="5lbf" ref="r:65d366f2-ae3b-4b81-85e6-342aa070f572(org.campagnelab.cloud.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="6jv6" ref="r:ca9c89c0-011f-4597-8d3e-576d9add5d28(org.campagnelab.docker.structure)" implicit="true" />
-    <import index="45iu" ref="r:e59beccc-d8f0-42c7-8989-c96c06e46e91(org.campagnelab.cloud.configuration.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -173,51 +172,6 @@
                 <node concept="3TrcHB" id="5EXCMiTrNvU" role="2OqNvi">
                   <ref role="3TsBF5" to="6jv6:1D6dZ$xfiv_" resolve="tag" />
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbJ" id="6_LFt8Zw5sK" role="3cqZAp">
-            <node concept="3clFbS" id="6_LFt8Zw5sM" role="3clFbx">
-              <node concept="3clFbF" id="6_LFt8Zw90i" role="3cqZAp">
-                <node concept="2OqwBi" id="6_LFt8ZwgDo" role="3clFbG">
-                  <node concept="1Q6Npb" id="6_LFt8Zw90g" role="2Oq$k0" />
-                  <node concept="2xF2bX" id="6_LFt8ZwgEN" role="2OqNvi">
-                    <ref role="I8UWU" to="45iu:5EXCMiTrU_E" resolve="ClusterConfig" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbC" id="6_LFt8Zw8X6" role="3clFbw">
-              <node concept="3cmrfG" id="6_LFt8Zw8Z9" role="3uHU7w">
-                <property role="3cmrfH" value="0" />
-              </node>
-              <node concept="2OqwBi" id="6_LFt8Zw6aD" role="3uHU7B">
-                <node concept="2OqwBi" id="6_LFt8Zw5zI" role="2Oq$k0">
-                  <node concept="1Q6Npb" id="6_LFt8Zw5_d" role="2Oq$k0" />
-                  <node concept="2RRcyG" id="6_LFt8Zw5Dx" role="2OqNvi">
-                    <ref role="2RRcyH" to="45iu:5EXCMiTrU_E" resolve="ClusterConfig" />
-                  </node>
-                </node>
-                <node concept="34oBXx" id="6_LFt8Zw7Xa" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="6_LFt8ZwgMg" role="3cqZAp">
-            <node concept="37vLTI" id="6_LFt8ZwhbG" role="3clFbG">
-              <node concept="2OqwBi" id="6_LFt8ZwgVy" role="37vLTJ">
-                <node concept="1r4Lsj" id="6_LFt8ZwgMe" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6_LFt8Zwh0u" role="2OqNvi">
-                  <ref role="3Tt5mk" to="5lbf:5EXCMiTrUQ0" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="6_LFt8ZwhH8" role="37vLTx">
-                <node concept="2OqwBi" id="6_LFt8Zwhd$" role="2Oq$k0">
-                  <node concept="1Q6Npb" id="6_LFt8Zwhd_" role="2Oq$k0" />
-                  <node concept="2RRcyG" id="6_LFt8ZwhdA" role="2OqNvi">
-                    <ref role="2RRcyH" to="45iu:5EXCMiTrU_E" resolve="ClusterConfig" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="6_LFt8Zwk$E" role="2OqNvi" />
               </node>
             </node>
           </node>

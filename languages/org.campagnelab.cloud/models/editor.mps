@@ -31,11 +31,15 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
+      <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -47,6 +51,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -112,12 +117,31 @@
     <ref role="1XX52x" to="5lbf:5EXCMiTrJMh" resolve="ContainerWithEC" />
     <node concept="3EZMnI" id="6A9boVQ2ENa" role="2wV5jI">
       <node concept="l2Vlx" id="6A9boVQ2ENb" role="2iSdaV" />
+      <node concept="3F1sOY" id="7QDG7s96oue" role="3EZMnx">
+        <ref role="1NtTu8" to="5lbf:7QDG7s96n86" />
+        <node concept="pVoyu" id="7QDG7s96oy5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="7QDG7s96oyb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7QDG7s96oAr" role="3EZMnx">
+        <node concept="ljvvj" id="7QDG7s96oEx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="1rhtiO0qtHg" role="3EZMnx">
-        <property role="3F0ifm" value="Manage your Cloud Cluster." />
+        <property role="3F0ifm" value="Manage your Cloud Cluster:" />
       </node>
       <node concept="3F0ifn" id="65yh485pIEi" role="3EZMnx">
         <property role="3F0ifm" value="" />
         <node concept="ljvvj" id="65yh485pIEQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7QDG7s96YMD" role="3EZMnx">
+        <node concept="ljvvj" id="7QDG7s96YME" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>

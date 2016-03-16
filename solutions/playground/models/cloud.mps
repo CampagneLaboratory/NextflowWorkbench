@@ -12,10 +12,9 @@
   <registry>
     <language id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud">
       <concept id="6538561612137036945" name="org.campagnelab.cloud.structure.ContainerWithEC" flags="ng" index="3zOPYP">
-        <property id="7017246219745809549" name="notes" index="1$193f" />
-        <reference id="6538561612137082240" name="clusterConf" index="3zOwU$" />
-        <reference id="147628039490030680" name="config" index="1QJbqN" />
+        <reference id="147628039490030680" name="dockerConfig" index="1QJbqN" />
         <child id="331977639697571264" name="container" index="234boB" />
+        <child id="9054962551105352198" name="clusterConfig" index="1OGc9L" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -55,30 +54,28 @@
     <property role="2EEQw2" value="/usr/local/bin/docker" />
     <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/manuelesimi/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/manuelesimi/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/manuelesimi/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
-  <node concept="3zOwDe" id="2rIRh_WQSHa">
-    <property role="TrG5h" value="cluster.config" />
-    <node concept="3zO_zI" id="2rIRh_WQSHb" role="2KSRPJ">
-      <property role="TrG5h" value="Number of frontend nodes" />
-      <property role="3zO_zz" value="1" />
-    </node>
-    <node concept="3zO_zJ" id="2rIRh_WQSHc" role="2KSRPJ">
-      <property role="TrG5h" value="Number of worker nodes" />
-      <property role="3zO_zz" value="30" />
-    </node>
-    <node concept="1mWehH" id="2rIRh_WQSHd" role="2KSRPJ">
-      <property role="TrG5h" value="Disk size for worker nodes" />
-      <property role="1mWegi" value="20" />
-    </node>
-  </node>
-  <node concept="3zOPYP" id="3traV2BpDwR">
+  <node concept="3zOPYP" id="7QDG7s96Y0j">
     <property role="TrG5h" value="ManageCloudCluster" />
-    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:35 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@760cd627 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
-    <ref role="3zOwU$" node="2rIRh_WQSHa" resolve="cluster.config" />
     <ref role="1QJbqN" node="5wsmBEGRio0" resolve="docker.config" />
-    <node concept="VtuK3" id="3traV2BpDwS" role="234boB">
+    <node concept="VtuK3" id="7QDG7s96Y0k" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="artifacts" />
       <property role="GbyUj" value="elasticluster" />
+    </node>
+    <node concept="3zOwDe" id="7QDG7s96Y0l" role="1OGc9L">
+      <property role="TrG5h" value="cluster.config" />
+      <node concept="3zO_zI" id="7QDG7s96Y0m" role="2KSRPJ">
+        <property role="TrG5h" value="Number of frontend nodes" />
+        <property role="3zO_zz" value="1" />
+      </node>
+      <node concept="3zO_zJ" id="7QDG7s96Y0n" role="2KSRPJ">
+        <property role="TrG5h" value="Number of worker nodes" />
+        <property role="3zO_zz" value="2" />
+      </node>
+      <node concept="1mWehH" id="7QDG7s96Y0o" role="2KSRPJ">
+        <property role="TrG5h" value="Disk size for worker nodes" />
+        <property role="1mWegi" value="20" />
+      </node>
     </node>
   </node>
 </model>
