@@ -61,6 +61,10 @@
       <property role="TrG5h" value="notes" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="7QDG7s977DJ" role="1TKVEl">
+      <property role="TrG5h" value="credentials" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="irqYu7yXR0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="container" />

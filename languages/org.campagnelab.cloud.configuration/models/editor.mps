@@ -95,7 +95,7 @@
     <ref role="1XX52x" to="45iu:3pj0Oa6G7RW" resolve="ClusterConfig" />
     <node concept="3EZMnI" id="3pj0Oa6GbxG" role="2wV5jI">
       <node concept="3F0ifn" id="3pj0Oa6GbxH" role="3EZMnx">
-        <property role="3F0ifm" value="Cluster configuration" />
+        <property role="3F0ifm" value="Cluster configuration:" />
         <node concept="ljvvj" id="3pj0Oa6GbxI" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
