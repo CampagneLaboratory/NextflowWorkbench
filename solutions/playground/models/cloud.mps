@@ -13,6 +13,7 @@
     <language id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud">
       <concept id="6538561612137036945" name="org.campagnelab.cloud.structure.ContainerWithEC" flags="ng" index="3zOPYP">
         <property id="7017246219745809549" name="notes" index="1$193f" />
+        <property id="9054962551105550959" name="credentials" index="1OHsCo" />
         <reference id="147628039490030680" name="dockerConfig" index="1QJbqN" />
         <child id="331977639697571264" name="container" index="234boB" />
         <child id="9054962551105352198" name="clusterConfig" index="1OGc9L" />
@@ -36,6 +37,9 @@
       </concept>
     </language>
     <language id="c513c71c-d9f3-4625-83dc-6180e1012e68" name="org.campagnelab.cloud.configuration">
+      <concept id="6723914267405064973" name="org.campagnelab.cloud.configuration.structure.SSHFolder" flags="ng" index="2tz3XF">
+        <property id="6723914267405064974" name="path" index="2tz3XC" />
+      </concept>
       <concept id="3914476085377531388" name="org.campagnelab.cloud.configuration.structure.ClusterConfig" flags="ng" index="2KSRUY">
         <child id="3914476085377531437" name="options" index="2KSRPJ" />
       </concept>
@@ -55,28 +59,33 @@
     <property role="2EEQw2" value="/usr/local/bin/docker" />
     <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
   </node>
-  <node concept="3zOPYP" id="5Pg96r0QEVw">
+  <node concept="3zOPYP" id="5Pg96r0RrW2">
     <property role="TrG5h" value="ManageCloudCluster" />
+    <property role="1OHsCo" value="" />
     <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:35 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@2f7f43f6 secret: null project null client null" />
     <ref role="1QJbqN" node="5wsmBEGRio0" resolve="docker.config" />
-    <node concept="VtuK3" id="5Pg96r0QEVx" role="234boB">
+    <node concept="VtuK3" id="5Pg96r0RrW3" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="artifacts" />
       <property role="GbyUj" value="elasticluster" />
     </node>
-    <node concept="3zOwDe" id="5Pg96r0QEVy" role="1OGc9L">
+    <node concept="3zOwDe" id="5Pg96r0RrW4" role="1OGc9L">
       <property role="TrG5h" value="cluster.config" />
-      <node concept="3zO_zI" id="5Pg96r0QEVz" role="2KSRPJ">
+      <node concept="3zO_zI" id="5Pg96r0RrW5" role="2KSRPJ">
         <property role="TrG5h" value="Number of frontend nodes" />
         <property role="3zO_zz" value="1" />
       </node>
-      <node concept="3zO_zJ" id="5Pg96r0QEV$" role="2KSRPJ">
+      <node concept="3zO_zJ" id="5Pg96r0RrW6" role="2KSRPJ">
         <property role="TrG5h" value="Number of worker nodes" />
         <property role="3zO_zz" value="2" />
       </node>
-      <node concept="1mWehH" id="5Pg96r0QEV_" role="2KSRPJ">
+      <node concept="1mWehH" id="5Pg96r0RrW7" role="2KSRPJ">
         <property role="TrG5h" value="Disk size for worker nodes" />
         <property role="1mWegi" value="20" />
+      </node>
+      <node concept="2tz3XF" id="5Pg96r0RrW8" role="2KSRPJ">
+        <property role="TrG5h" value="Folder with manager credentials" />
+        <property role="2tz3XC" value="/Users/mas2182/.ssh" />
       </node>
     </node>
   </node>

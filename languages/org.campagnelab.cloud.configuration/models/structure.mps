@@ -130,5 +130,16 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5Pg96r0R1Gd">
+    <property role="1pbfSe" value="506216307" />
+    <property role="3GE5qa" value="gridengine" />
+    <property role="TrG5h" value="SSHFolder" />
+    <property role="34LRSv" value="user_key" />
+    <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
+    <node concept="1TJgyi" id="5Pg96r0R1Ge" role="1TKVEl">
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

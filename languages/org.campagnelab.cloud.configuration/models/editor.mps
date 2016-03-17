@@ -21,10 +21,21 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styleClass" index="V601i" />
+      </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -48,6 +59,9 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
     </language>
   </registry>
   <node concept="24kQdi" id="5EXCMiTrZOc">
@@ -65,6 +79,7 @@
       </node>
       <node concept="3F0A7n" id="5EXCMiTrZOH" role="3EZMnx">
         <ref role="1NtTu8" to="45iu:5EXCMiTrZJ7" resolve="numOfNodes" />
+        <ref role="1k5W1q" node="5Pg96r0RjZh" resolve="OptionValue" />
       </node>
       <node concept="2iRfu4" id="5EXCMiTrZOh" role="2iSdaV" />
     </node>
@@ -84,6 +99,7 @@
       </node>
       <node concept="3F0A7n" id="6_LFt8ZwkCh" role="3EZMnx">
         <ref role="1NtTu8" to="45iu:6_LFt8ZwkB0" resolve="size" />
+        <ref role="1k5W1q" node="5Pg96r0RjZh" resolve="OptionValue" />
       </node>
       <node concept="3F0ifn" id="6_LFt8ZwkCR" role="3EZMnx">
         <property role="3F0ifm" value="GB" />
@@ -109,6 +125,35 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="3pj0Oa6GbxN" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5Pg96r0Rc8n">
+    <property role="3GE5qa" value="gridengine" />
+    <ref role="1XX52x" to="45iu:5Pg96r0R1Gd" resolve="SSHFolder" />
+    <node concept="3EZMnI" id="5Pg96r0Rc8r" role="2wV5jI">
+      <node concept="3F0A7n" id="5Pg96r0Rc8s" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VPxyj" id="5Pg96r0Rc8t" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5Pg96r0Rc8u" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F0A7n" id="5Pg96r0Rc8v" role="3EZMnx">
+        <ref role="1NtTu8" to="45iu:5Pg96r0R1Ge" resolve="path" />
+        <ref role="1k5W1q" node="5Pg96r0RjZh" resolve="OptionValue" />
+      </node>
+      <node concept="2iRfu4" id="5Pg96r0Rc8w" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="V5hpn" id="5Pg96r0RjZa">
+    <property role="TrG5h" value="ClusterOption" />
+    <node concept="14StLt" id="5Pg96r0RjZh" role="V601i">
+      <property role="TrG5h" value="OptionValue" />
+      <node concept="VechU" id="5Pg96r0RjZo" role="3F10Kt">
+        <property role="Vb096" value="blue" />
+      </node>
     </node>
   </node>
 </model>

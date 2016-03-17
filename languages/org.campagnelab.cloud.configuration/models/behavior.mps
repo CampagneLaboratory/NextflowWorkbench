@@ -275,6 +275,45 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="5Pg96r0R2fw" role="3cqZAp">
+          <node concept="3cpWsn" id="5Pg96r0R2fx" role="3cpWs9">
+            <property role="TrG5h" value="ssh" />
+            <node concept="3Tqbb2" id="5Pg96r0R2fy" role="1tU5fm">
+              <ref role="ehGHo" to="45iu:5Pg96r0R1Gd" resolve="SSHFolder" />
+            </node>
+            <node concept="2ShNRf" id="5Pg96r0R2fz" role="33vP2m">
+              <node concept="3zrR0B" id="5Pg96r0R2f$" role="2ShVmc">
+                <node concept="3Tqbb2" id="5Pg96r0R2f_" role="3zrR0E">
+                  <ref role="ehGHo" to="45iu:5Pg96r0R1Gd" resolve="SSHFolder" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5Pg96r0R2fA" role="3cqZAp">
+          <node concept="37vLTI" id="5Pg96r0R2Zf" role="3clFbG">
+            <node concept="3cpWs3" id="5Pg96r0R3LF" role="37vLTx">
+              <node concept="Xl_RD" id="5Pg96r0R30$" role="3uHU7w">
+                <property role="Xl_RC" value="/.ssh" />
+              </node>
+              <node concept="2YIFZM" id="5Pg96r0R3Ry" role="3uHU7B">
+                <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                <node concept="Xl_RD" id="5Pg96r0R3SE" role="37wK5m">
+                  <property role="Xl_RC" value="user.home" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5Pg96r0R2Hr" role="37vLTJ">
+              <node concept="37vLTw" id="5Pg96r0R2Fs" role="2Oq$k0">
+                <ref role="3cqZAo" node="5Pg96r0R2fx" resolve="ssh" />
+              </node>
+              <node concept="3TrcHB" id="5Pg96r0R2Mm" role="2OqNvi">
+                <ref role="3TsBF5" to="45iu:5Pg96r0R1Ge" resolve="path" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2rIRh_WQF0v" role="3cqZAp">
           <node concept="2OqwBi" id="2rIRh_WQFFx" role="3clFbG">
             <node concept="2OqwBi" id="2rIRh_WQF4O" role="2Oq$k0">
@@ -316,6 +355,21 @@
             <node concept="TSZUe" id="2rIRh_WQPw$" role="2OqNvi">
               <node concept="37vLTw" id="2rIRh_WQPAq" role="25WWJ7">
                 <ref role="3cqZAo" node="2rIRh_WQ_OD" resolve="disk" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5Pg96r0R4tS" role="3cqZAp">
+          <node concept="2OqwBi" id="5Pg96r0R5zD" role="3clFbG">
+            <node concept="2OqwBi" id="5Pg96r0R4SH" role="2Oq$k0">
+              <node concept="13iPFW" id="5Pg96r0R4tQ" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5Pg96r0R53z" role="2OqNvi">
+                <ref role="3TtcxE" to="45iu:3pj0Oa6G7SH" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="5Pg96r0R7f8" role="2OqNvi">
+              <node concept="37vLTw" id="5Pg96r0R7l0" role="25WWJ7">
+                <ref role="3cqZAo" node="5Pg96r0R2fx" resolve="ssh" />
               </node>
             </node>
           </node>
@@ -833,6 +887,45 @@
     </node>
     <node concept="13hLZK" id="3pj0Oa6GqPj" role="13h7CW">
       <node concept="3clFbS" id="3pj0Oa6GqPk" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5Pg96r0R1Gk">
+    <property role="3GE5qa" value="gridengine" />
+    <ref role="13h7C2" to="45iu:5Pg96r0R1Gd" resolve="SSHFolder" />
+    <node concept="13hLZK" id="5Pg96r0R1Gl" role="13h7CW">
+      <node concept="3clFbS" id="5Pg96r0R1Gm" role="2VODD2">
+        <node concept="3clFbF" id="5Pg96r0R7L7" role="3cqZAp">
+          <node concept="37vLTI" id="5Pg96r0R881" role="3clFbG">
+            <node concept="Xl_RD" id="5Pg96r0R89N" role="37vLTx">
+              <property role="Xl_RC" value="Folder with manager credentials" />
+            </node>
+            <node concept="2OqwBi" id="5Pg96r0R7Nm" role="37vLTJ">
+              <node concept="13iPFW" id="5Pg96r0R7L6" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5Pg96r0R7WB" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5Pg96r0R1Gn" role="13h7CS">
+      <property role="TrG5h" value="getValue" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="6_LFt8ZwlHB" resolve="getValue" />
+      <node concept="3Tm1VV" id="5Pg96r0R1Go" role="1B3o_S" />
+      <node concept="3clFbS" id="5Pg96r0R1Gr" role="3clF47">
+        <node concept="3clFbF" id="5Pg96r0R1GM" role="3cqZAp">
+          <node concept="2OqwBi" id="5Pg96r0R1Jk" role="3clFbG">
+            <node concept="13iPFW" id="5Pg96r0R1GL" role="2Oq$k0" />
+            <node concept="3TrcHB" id="5Pg96r0R1Og" role="2OqNvi">
+              <ref role="3TsBF5" to="45iu:5Pg96r0R1Ge" resolve="path" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5Pg96r0R1Gs" role="3clF45" />
     </node>
   </node>
 </model>
