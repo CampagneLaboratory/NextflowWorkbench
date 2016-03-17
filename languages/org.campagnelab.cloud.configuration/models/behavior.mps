@@ -13,7 +13,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -245,6 +245,36 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="109XeHbQR1q" role="3cqZAp">
+          <node concept="3cpWsn" id="109XeHbQR1r" role="3cpWs9">
+            <property role="TrG5h" value="flavor" />
+            <node concept="3Tqbb2" id="109XeHbQR1s" role="1tU5fm">
+              <ref role="ehGHo" to="45iu:109XeHbQKVr" resolve="ComputeNodeFlavor" />
+            </node>
+            <node concept="2ShNRf" id="109XeHbQR1t" role="33vP2m">
+              <node concept="3zrR0B" id="109XeHbQR1u" role="2ShVmc">
+                <node concept="3Tqbb2" id="109XeHbQR1v" role="3zrR0E">
+                  <ref role="ehGHo" to="45iu:109XeHbQKVr" resolve="ComputeNodeFlavor" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="109XeHbQR1w" role="3cqZAp">
+          <node concept="37vLTI" id="109XeHbQR1x" role="3clFbG">
+            <node concept="Xl_RD" id="109XeHbQR1z" role="37vLTx">
+              <property role="Xl_RC" value="n1-standard-2" />
+            </node>
+            <node concept="2OqwBi" id="109XeHbQR1A" role="37vLTJ">
+              <node concept="37vLTw" id="109XeHbQR1B" role="2Oq$k0">
+                <ref role="3cqZAo" node="109XeHbQR1r" resolve="flavor" />
+              </node>
+              <node concept="3TrcHB" id="109XeHbQRJV" role="2OqNvi">
+                <ref role="3TsBF5" to="45iu:109XeHbQL7w" resolve="flavor" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="2rIRh_WQ_OC" role="3cqZAp">
           <node concept="3cpWsn" id="2rIRh_WQ_OD" role="3cpWs9">
             <property role="TrG5h" value="disk" />
@@ -340,6 +370,21 @@
             <node concept="TSZUe" id="2rIRh_WQNqa" role="2OqNvi">
               <node concept="37vLTw" id="2rIRh_WQNw0" role="25WWJ7">
                 <ref role="3cqZAo" node="2rIRh_WQ_ph" resolve="compute" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="109XeHbQSYK" role="3cqZAp">
+          <node concept="2OqwBi" id="109XeHbQSYL" role="3clFbG">
+            <node concept="2OqwBi" id="109XeHbQSYM" role="2Oq$k0">
+              <node concept="13iPFW" id="109XeHbQSYN" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="109XeHbQSYO" role="2OqNvi">
+                <ref role="3TtcxE" to="45iu:3pj0Oa6G7SH" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="109XeHbQSYP" role="2OqNvi">
+              <node concept="37vLTw" id="109XeHbQT$A" role="25WWJ7">
+                <ref role="3cqZAo" node="109XeHbQR1r" resolve="flavor" />
               </node>
             </node>
           </node>
@@ -503,6 +548,21 @@
         </node>
       </node>
       <node concept="17QB3L" id="4iZtcSrbNCk" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="109XeHbQJNb" role="13h7CS">
+      <property role="TrG5h" value="accessCommand" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="109XeHbQJ45" resolve="accessCommand" />
+      <node concept="3Tm1VV" id="109XeHbQJNc" role="1B3o_S" />
+      <node concept="3clFbS" id="109XeHbQJNf" role="3clF47">
+        <node concept="3clFbF" id="109XeHbQKB1" role="3cqZAp">
+          <node concept="Xl_RD" id="109XeHbQKB2" role="3clFbG">
+            <property role="Xl_RC" value="/usr/local/elasticluster/config-tools/cluster/cluster-grant-access" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="109XeHbQJNg" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="5EXCMiTs1hQ">
@@ -837,6 +897,14 @@
       <node concept="3clFbS" id="6Iinc5yJywf" role="3clF47" />
       <node concept="17QB3L" id="6Iinc5yJywg" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="109XeHbQJ45" role="13h7CS">
+      <property role="TrG5h" value="accessCommand" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="109XeHbQJ46" role="1B3o_S" />
+      <node concept="3clFbS" id="109XeHbQJ47" role="3clF47" />
+      <node concept="17QB3L" id="109XeHbQJ48" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="6Iinc5yJyEe" role="13h7CS">
       <property role="TrG5h" value="destroyCommand" />
       <property role="13i0it" value="true" />
@@ -926,6 +994,45 @@
         </node>
       </node>
       <node concept="17QB3L" id="5Pg96r0R1Gs" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="109XeHbQL7t">
+    <property role="3GE5qa" value="gridengine" />
+    <ref role="13h7C2" to="45iu:109XeHbQKVr" resolve="ComputeNodeFlavor" />
+    <node concept="13hLZK" id="109XeHbQL7u" role="13h7CW">
+      <node concept="3clFbS" id="109XeHbQL7v" role="2VODD2">
+        <node concept="3clFbF" id="109XeHbQLky" role="3cqZAp">
+          <node concept="37vLTI" id="109XeHbQLBp" role="3clFbG">
+            <node concept="Xl_RD" id="109XeHbQLCj" role="37vLTx">
+              <property role="Xl_RC" value="Compute node type" />
+            </node>
+            <node concept="2OqwBi" id="109XeHbQLmB" role="37vLTJ">
+              <node concept="13iPFW" id="109XeHbQLkx" role="2Oq$k0" />
+              <node concept="3TrcHB" id="109XeHbQLrz" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="109XeHbQL7A" role="13h7CS">
+      <property role="TrG5h" value="getValue" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="6_LFt8ZwlHB" resolve="getValue" />
+      <node concept="3Tm1VV" id="109XeHbQL7B" role="1B3o_S" />
+      <node concept="3clFbS" id="109XeHbQL7E" role="3clF47">
+        <node concept="3clFbF" id="109XeHbQL81" role="3cqZAp">
+          <node concept="2OqwBi" id="109XeHbQLaz" role="3clFbG">
+            <node concept="13iPFW" id="109XeHbQL80" role="2Oq$k0" />
+            <node concept="3TrcHB" id="109XeHbQLjO" role="2OqNvi">
+              <ref role="3TsBF5" to="45iu:109XeHbQL7w" resolve="flavor" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="109XeHbQL7F" role="3clF45" />
     </node>
   </node>
 </model>

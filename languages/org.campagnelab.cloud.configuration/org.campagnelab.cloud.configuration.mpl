@@ -54,6 +54,7 @@
     <dependency reexport="false">3b3d39a8-ff6e-47f3-9c9e-1888a27699ed(org.campagnelab.util)</dependency>
     <dependency reexport="false">2183f281-ca53-4c69-af11-465550230ecd(org.campagnelab.cloud.preferences)</dependency>
     <dependency reexport="false">f7196c5e-3839-47b2-a69a-cc57b10442a1(org.campagnelab.cloud)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

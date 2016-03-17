@@ -141,5 +141,16 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="109XeHbQKVr">
+    <property role="1pbfSe" value="1541735366" />
+    <property role="3GE5qa" value="gridengine" />
+    <property role="TrG5h" value="ComputeNodeFlavor" />
+    <property role="34LRSv" value="flavor" />
+    <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
+    <node concept="1TJgyi" id="109XeHbQL7w" role="1TKVEl">
+      <property role="TrG5h" value="flavor" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

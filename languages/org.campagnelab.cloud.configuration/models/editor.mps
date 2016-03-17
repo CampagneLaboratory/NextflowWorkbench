@@ -156,5 +156,25 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="109XeHbQMf8">
+    <property role="3GE5qa" value="gridengine" />
+    <ref role="1XX52x" to="45iu:109XeHbQKVr" resolve="ComputeNodeFlavor" />
+    <node concept="3EZMnI" id="109XeHbQMfd" role="2wV5jI">
+      <node concept="3F0A7n" id="109XeHbQMfe" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VPxyj" id="109XeHbQMff" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="109XeHbQMfg" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F0A7n" id="109XeHbQMfh" role="3EZMnx">
+        <ref role="1k5W1q" node="5Pg96r0RjZh" resolve="OptionValue" />
+        <ref role="1NtTu8" to="45iu:109XeHbQL7w" resolve="flavor" />
+      </node>
+      <node concept="2iRfu4" id="109XeHbQMfi" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
