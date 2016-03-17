@@ -435,6 +435,21 @@
       </node>
       <node concept="17QB3L" id="6Iinc5yJz8r" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4iZtcSrbNCf" role="13h7CS">
+      <property role="TrG5h" value="loginCommand" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="4iZtcSrbN1L" resolve="loginCommand" />
+      <node concept="3Tm1VV" id="4iZtcSrbNCg" role="1B3o_S" />
+      <node concept="3clFbS" id="4iZtcSrbNCj" role="3clF47">
+        <node concept="3clFbF" id="4iZtcSrbNYm" role="3cqZAp">
+          <node concept="Xl_RD" id="4iZtcSrbNYn" role="3clFbG">
+            <property role="Xl_RC" value="/usr/local/elasticluster/config-tools/cluster/cluster-login-frontend" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4iZtcSrbNCk" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="5EXCMiTs1hQ">
     <property role="3GE5qa" value="gridengine" />
@@ -775,6 +790,14 @@
       <node concept="3Tm1VV" id="6Iinc5yJyEf" role="1B3o_S" />
       <node concept="3clFbS" id="6Iinc5yJyEg" role="3clF47" />
       <node concept="17QB3L" id="6Iinc5yJyOr" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4iZtcSrbN1L" role="13h7CS">
+      <property role="TrG5h" value="loginCommand" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="4iZtcSrbN1M" role="1B3o_S" />
+      <node concept="3clFbS" id="4iZtcSrbN1N" role="3clF47" />
+      <node concept="17QB3L" id="4iZtcSrbN1O" role="3clF45" />
     </node>
     <node concept="13i0hz" id="3pj0Oa6GMmD" role="13h7CS">
       <property role="TrG5h" value="getLocalConfigurationFolder" />

@@ -12,6 +12,7 @@
   <registry>
     <language id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud">
       <concept id="6538561612137036945" name="org.campagnelab.cloud.structure.ContainerWithEC" flags="ng" index="3zOPYP">
+        <property id="7017246219745809549" name="notes" index="1$193f" />
         <reference id="147628039490030680" name="dockerConfig" index="1QJbqN" />
         <child id="331977639697571264" name="container" index="234boB" />
         <child id="9054962551105352198" name="clusterConfig" index="1OGc9L" />
@@ -52,10 +53,11 @@
   <node concept="2EEQw1" id="5wsmBEGRio0">
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/manuelesimi/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/manuelesimi/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/manuelesimi/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
   <node concept="3zOPYP" id="5Pg96r0QEVw">
     <property role="TrG5h" value="ManageCloudCluster" />
+    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:35 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@760cd627 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
     <ref role="1QJbqN" node="5wsmBEGRio0" resolve="docker.config" />
     <node concept="VtuK3" id="5Pg96r0QEVx" role="234boB">
       <property role="VuL0s" value="latest" />
