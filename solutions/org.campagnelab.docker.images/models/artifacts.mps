@@ -8672,7 +8672,7 @@
   <node concept="VuPG2" id="3kWAjw$5azY">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="ElasticlusterUbuntu" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile5906919268560338785.txt" />
+    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS33/tmp/dockerfile6221601514742475982.txt" />
     <node concept="VuO64" id="3kWAjw$5azZ" role="VuOVn">
       <node concept="VtuK3" id="3kWAjw$5a$0" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -8747,7 +8747,7 @@
     <node concept="VugRC" id="5EXCMiTrFiF" role="VuOVn">
       <node concept="19SGf9" id="5EXCMiTrFlF" role="Vugyn">
         <node concept="19SUe$" id="5EXCMiTrFlG" role="19SJt6">
-          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new11&quot;" />
+          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new12&quot;" />
         </node>
       </node>
     </node>
@@ -8771,16 +8771,16 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="5Pg96r0Rs2i" role="3blhQR">
-      <ref role="3blhQY" node="5Pg96r0Rs2h" resolve="ElasticlusterUbuntu_Image" />
+    <node concept="3blhQM" id="109XeHbR6J1" role="3blhQR">
+      <ref role="3blhQY" node="109XeHbR6J0" resolve="ElasticlusterUbuntu_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="5Pg96r0Rs2h">
-    <property role="2E_JEh" value="e5bb2903a199" />
+  <node concept="2E_JVc" id="109XeHbR6J0">
+    <property role="2E_JEh" value="21dfaeeda2b7" />
     <property role="TrG5h" value="ElasticlusterUbuntu_Image" />
     <property role="GSh9r" value="artifacts/elasticluster:1.0" />
     <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticlusterUbuntu" />
-    <node concept="Gyxd7" id="5Pg96r0Rs2o" role="Gyxcj">
+    <node concept="Gyxd7" id="109XeHbR6J7" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="elasticluster" />
       <property role="Gyxd1" value="1.0" />
