@@ -60,96 +60,72 @@
   <node concept="2EEQw1" id="109XeHbQHGj">
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/manuelesimi/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/manuelesimi/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/manuelesimi/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
   </node>
-  <node concept="3zOPYP" id="109XeHbQHGh">
+  <node concept="3zOPYP" id="109XeHbR5ad">
     <property role="TrG5h" value="ManageCloudCluster" />
-    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:35 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@64299985 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test12 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
-    <property role="1OHsCo" value="sh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYNAAwMxzSZ8JW2UZVeqInh26FTMsrB1u5w+0vpn2L4d2SWQoX/B/fA/8JlQiqeijErw+4Y3KkxOO+DNXvnwMw1ShMGQWQ5+IRnhuPztVNVoHZ+2EiWaHkYfpDENxjN4pDxkCGsGrv9nWNFGXHpcUNlHBUxBRnT1X7oRcUgNMc2LeRkZvy3qsMaRcV5NEc77PT/S8InKsc570AmnqokJ+BxqtyqE9WU3Lt/KapDxR9pE5LsRIgD+McANbDmRCZnNBynrPghiN0DT+3LV2OtIQOpyHn2eDlT4WeGibmROnDf5VvfwKgJ9NaQhHOsos6sT4bpW4VanokDNI4Q3RxV2sH mas2182@mac133990.med.cornell.edu" />
+    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:35 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@64299985 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
     <ref role="1QJbqN" node="109XeHbQHGj" resolve="docker.config" />
-    <node concept="VtuK3" id="109XeHbQHGi" role="234boB">
+    <node concept="VtuK3" id="109XeHbR5ae" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="artifacts" />
       <property role="GbyUj" value="elasticluster" />
     </node>
-    <node concept="3zOwDe" id="109XeHbQHGk" role="1OGc9L">
+    <node concept="3zOwDe" id="109XeHbR5af" role="1OGc9L">
       <property role="TrG5h" value="cluster.config" />
-      <node concept="3zO_zI" id="109XeHbQHGl" role="2KSRPJ">
+      <node concept="3zO_zI" id="109XeHbR5ag" role="2KSRPJ">
         <property role="TrG5h" value="Number of frontend nodes" />
         <property role="3zO_zz" value="1" />
       </node>
-      <node concept="3zO_zJ" id="109XeHbQHGm" role="2KSRPJ">
+      <node concept="3zO_zJ" id="109XeHbR5ah" role="2KSRPJ">
         <property role="TrG5h" value="Number of worker nodes" />
         <property role="3zO_zz" value="2" />
       </node>
-      <node concept="1mWehH" id="109XeHbQHGn" role="2KSRPJ">
-        <property role="TrG5h" value="Disk size for worker nodes" />
-        <property role="1mWegi" value="20" />
-      </node>
-      <node concept="2tz3XF" id="109XeHbQHGo" role="2KSRPJ">
-        <property role="TrG5h" value="Folder with manager credentials" />
-        <property role="2tz3XC" value="/Users/mas2182/.ssh" />
-      </node>
-    </node>
-  </node>
-  <node concept="3zOPYP" id="109XeHbQQvQ">
-    <property role="TrG5h" value="ManageCloudCluster" />
-    <ref role="1QJbqN" node="109XeHbQHGj" resolve="docker.config" />
-    <node concept="VtuK3" id="109XeHbQQvR" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="VuL0v" value="artifacts" />
-      <property role="GbyUj" value="elasticluster" />
-    </node>
-    <node concept="3zOwDe" id="109XeHbQQvS" role="1OGc9L">
-      <property role="TrG5h" value="cluster.config" />
-      <node concept="3zO_zI" id="109XeHbQQvT" role="2KSRPJ">
-        <property role="TrG5h" value="Number of frontend nodes" />
-        <property role="3zO_zz" value="1" />
-      </node>
-      <node concept="3zO_zJ" id="109XeHbQQvU" role="2KSRPJ">
-        <property role="TrG5h" value="Number of worker nodes" />
-        <property role="3zO_zz" value="2" />
-      </node>
-      <node concept="1mWehH" id="109XeHbQQvV" role="2KSRPJ">
-        <property role="TrG5h" value="Disk size for worker nodes" />
-        <property role="1mWegi" value="20" />
-      </node>
-      <node concept="2tz3XF" id="109XeHbQQvW" role="2KSRPJ">
-        <property role="TrG5h" value="Folder with manager credentials" />
-        <property role="2tz3XC" value="/Users/mas2182/.ssh" />
-      </node>
-    </node>
-  </node>
-  <node concept="3zOPYP" id="109XeHbR0wI">
-    <property role="TrG5h" value="ManageCloudCluster" />
-    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:35 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@7e5d1390 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
-    <ref role="1QJbqN" node="109XeHbQHGj" resolve="docker.config" />
-    <node concept="VtuK3" id="109XeHbR0wJ" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="VuL0v" value="artifacts" />
-      <property role="GbyUj" value="elasticluster" />
-    </node>
-    <node concept="3zOwDe" id="109XeHbR0wK" role="1OGc9L">
-      <property role="TrG5h" value="cluster.config" />
-      <node concept="3zO_zI" id="109XeHbR0wL" role="2KSRPJ">
-        <property role="TrG5h" value="Number of frontend nodes" />
-        <property role="3zO_zz" value="1" />
-      </node>
-      <node concept="3zO_zJ" id="109XeHbR0wM" role="2KSRPJ">
-        <property role="TrG5h" value="Number of worker nodes" />
-        <property role="3zO_zz" value="2" />
-      </node>
-      <node concept="1rOJCK" id="109XeHbR0wN" role="2KSRPJ">
+      <node concept="1rOJCK" id="109XeHbR5ai" role="2KSRPJ">
         <property role="TrG5h" value="Compute node type" />
         <property role="1rOIkb" value="n1-standard-2" />
       </node>
-      <node concept="1mWehH" id="109XeHbR0wO" role="2KSRPJ">
+      <node concept="1mWehH" id="109XeHbR5aj" role="2KSRPJ">
         <property role="TrG5h" value="Disk size for worker nodes" />
         <property role="1mWegi" value="20" />
       </node>
-      <node concept="2tz3XF" id="109XeHbR0wP" role="2KSRPJ">
+      <node concept="2tz3XF" id="109XeHbR5ak" role="2KSRPJ">
         <property role="TrG5h" value="Folder with manager credentials" />
-        <property role="2tz3XC" value="/Users/manuelesimi/.ssh" />
+        <property role="2tz3XC" value="/Users/mas2182/.ssh" />
+      </node>
+    </node>
+  </node>
+  <node concept="3zOPYP" id="109XeHbR61K">
+    <property role="TrG5h" value="ManageCloudCluster" />
+    <property role="1OHsCo" value="&lt;paste public ssh kes here&gt;" />
+    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:35 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@64299985 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
+    <ref role="1QJbqN" node="109XeHbQHGj" resolve="docker.config" />
+    <node concept="VtuK3" id="109XeHbR61L" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="elasticluster" />
+    </node>
+    <node concept="3zOwDe" id="109XeHbR61M" role="1OGc9L">
+      <property role="TrG5h" value="cluster.config" />
+      <node concept="3zO_zI" id="109XeHbR61N" role="2KSRPJ">
+        <property role="TrG5h" value="Number of frontend nodes" />
+        <property role="3zO_zz" value="1" />
+      </node>
+      <node concept="3zO_zJ" id="109XeHbR61O" role="2KSRPJ">
+        <property role="TrG5h" value="Number of worker nodes" />
+        <property role="3zO_zz" value="2" />
+      </node>
+      <node concept="1rOJCK" id="109XeHbR61P" role="2KSRPJ">
+        <property role="TrG5h" value="Compute node type" />
+        <property role="1rOIkb" value="n1-standard-2" />
+      </node>
+      <node concept="1mWehH" id="109XeHbR61Q" role="2KSRPJ">
+        <property role="TrG5h" value="Disk size for worker nodes" />
+        <property role="1mWegi" value="20" />
+      </node>
+      <node concept="2tz3XF" id="109XeHbR61R" role="2KSRPJ">
+        <property role="TrG5h" value="Folder with manager credentials" />
+        <property role="2tz3XC" value="/Users/mas2182/.ssh" />
       </node>
     </node>
   </node>

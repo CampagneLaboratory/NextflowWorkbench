@@ -29,7 +29,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -108,7 +107,9 @@
           </node>
           <node concept="3clFbF" id="5Pg96r0QDMC" role="3cqZAp">
             <node concept="37vLTI" id="5Pg96r0QEdi" role="3clFbG">
-              <node concept="10Nm6u" id="5Pg96r0Rsfd" role="37vLTx" />
+              <node concept="Xl_RD" id="109XeHbR5e0" role="37vLTx">
+                <property role="Xl_RC" value="&lt;paste public ssh keys here&gt;" />
+              </node>
               <node concept="2OqwBi" id="5Pg96r0QDV5" role="37vLTJ">
                 <node concept="1r4Lsj" id="5Pg96r0QDMA" role="2Oq$k0" />
                 <node concept="3TrcHB" id="5Pg96r0QE2q" role="2OqNvi">
