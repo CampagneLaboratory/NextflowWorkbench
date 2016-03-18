@@ -122,7 +122,7 @@
   </node>
   <node concept="3zOPYP" id="109XeHbR0wI">
     <property role="TrG5h" value="ManageCloudCluster" />
-    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:35 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@2be0ff4f secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
+    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:35 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@7e5d1390 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
     <ref role="1QJbqN" node="109XeHbQHGj" resolve="docker.config" />
     <node concept="VtuK3" id="109XeHbR0wJ" role="234boB">
       <property role="VuL0s" value="latest" />
@@ -149,7 +149,7 @@
       </node>
       <node concept="2tz3XF" id="109XeHbR0wP" role="2KSRPJ">
         <property role="TrG5h" value="Folder with manager credentials" />
-        <property role="2tz3XC" value="/Users/mas2182/.ssh" />
+        <property role="2tz3XC" value="/Users/manuelesimi/.ssh" />
       </node>
     </node>
   </node>
