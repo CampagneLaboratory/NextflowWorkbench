@@ -129,6 +129,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -379,6 +382,23 @@
                         <node concept="HwmKy" id="7QDG7s9711P" role="2Oq$k0" />
                         <node concept="liA8E" id="7QDG7s9711Q" role="2OqNvi">
                           <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="3C40c0SSH8u" role="3cqZAp">
+                  <node concept="2OqwBi" id="3C40c0SSHaq" role="3clFbG">
+                    <node concept="1VaYGm" id="3C40c0SSH8s" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="3C40c0SSHj0" role="2OqNvi">
+                      <ref role="37wK5l" to="5lwc:109XeHbQHL1" resolve="access" />
+                      <node concept="37vLTw" id="3C40c0SSHjc" role="37wK5m">
+                        <ref role="3cqZAo" node="7QDG7s9711L" resolve="mpsProject" />
+                      </node>
+                      <node concept="2OqwBi" id="3C40c0SSKsc" role="37wK5m">
+                        <node concept="1VaYGm" id="3C40c0SSKq4" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="3C40c0SSKxm" role="2OqNvi">
+                          <ref role="3TsBF5" to="5lbf:7QDG7s977DJ" resolve="credentials" />
                         </node>
                       </node>
                     </node>

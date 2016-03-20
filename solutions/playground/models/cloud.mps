@@ -9,6 +9,7 @@
   <registry>
     <language id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud">
       <concept id="6538561612137036945" name="org.campagnelab.cloud.structure.ContainerWithEC" flags="ng" index="3zOPYP">
+        <property id="7017246219745809549" name="notes" index="1$193f" />
         <property id="9054962551105550959" name="credentials" index="1OHsCo" />
         <reference id="147628039490030680" name="dockerConfig" index="1QJbqN" />
         <child id="331977639697571264" name="container" index="234boB" />
@@ -60,7 +61,8 @@
   </node>
   <node concept="3zOPYP" id="3ZmttCiawrF">
     <property role="TrG5h" value="ManageCloudCluster" />
-    <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
+    <property role="1OHsCo" value="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBXXfR4JGKYWKcKSp+NyxAHOq4WIQf3p7+TSDCqWBPPA0k8btkEDcewGtdmfEf0KbmA2FnlSHbe5YGpjZ1Ff3yLP0Vj15by4qBH89vocMDiIFoVLvoKPHarDLkPmqY3F9wh/lbUeI9yA/q4TP58RiwxnD666JWLgIpcpJlG1o82coTQXy4I5A2PdfLkpKKoToZGLnh/k/Llx2sOp+xUyoaRtu1iaOxfwEnl+ZHPq2MYvBPrsuhP8eB+x4juIKvahNchk+Q/aaZT+1GrSXzzpJ70YrGdyVxV0R8C5eYWB45e6SJZekDibWs/eAY4L+4mLcppe1pJdlLsY+IkbHSdbHj manuelesimi@Manueles-MacBook-Pro.local1&#10;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBXXfR4JGKYWKcKSp+NyxAHOq4WIQf3p7+TSDCqWBPPA0k8btkEDcewGtdmfEf0KbmA2FnlSHbe5YGpjZ1Ff3yLP0Vj15by4qBH89vocMDiIFoVLvoKPHarDLkPmqY3F9wh/lbUeI9yA/q4TP58RiwxnD666JWLgIpcpJlG1o82coTQXy4I5A2PdfLkpKKoToZGLnh/k/Llx2sOp+xUyoaRtu1iaOxfwEnl+ZHPq2MYvBPrsuhP8eB+x4juIKvahNchk+Q/aaZT+1GrSXzzpJ70YrGdyVxV0R8C5eYWB45e6SJZekDibWs/eAY4L+4mLcppe1pJdlLsY+IkbHSdbHj manuelesimi@Manueles-MacBook-Pro.local2&#10;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBXXfR4JGKYWKcKSp+NyxAHOq4WIQf3p7+TSDCqWBPPA0k8btkEDcewGtdmfEf0KbmA2FnlSHbe5YGpjZ1Ff3yLP0Vj15by4qBH89vocMDiIFoVLvoKPHarDLkPmqY3F9wh/lbUeI9yA/q4TP58RiwxnD666JWLgIpcpJlG1o82coTQXy4I5A2PdfLkpKKoToZGLnh/k/Llx2sOp+xUyoaRtu1iaOxfwEnl+ZHPq2MYvBPrsuhP8eB+x4juIKvahNchk+Q/aaZT+1GrSXzzpJ70YrGdyVxV0R8C5eYWB45e6SJZekDibWs/eAY4L+4mLcppe1pJdlLsY+IkbHSdbHj manuelesimi@Manueles-MacBook-Pro.local3&#10;&#10;" />
+    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:36 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@185df0bc secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
     <ref role="1QJbqN" node="109XeHbQHGj" resolve="docker.config" />
     <node concept="VtuK3" id="3ZmttCiawrG" role="234boB">
       <property role="VuL0s" value="latest" />
