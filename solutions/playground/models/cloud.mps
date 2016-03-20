@@ -62,7 +62,7 @@
   <node concept="3zOPYP" id="3ZmttCiawrF">
     <property role="TrG5h" value="ManageCloudCluster" />
     <property role="1OHsCo" value="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBXXfR4JGKYWKcKSp+NyxAHOq4WIQf3p7+TSDCqWBPPA0k8btkEDcewGtdmfEf0KbmA2FnlSHbe5YGpjZ1Ff3yLP0Vj15by4qBH89vocMDiIFoVLvoKPHarDLkPmqY3F9wh/lbUeI9yA/q4TP58RiwxnD666JWLgIpcpJlG1o82coTQXy4I5A2PdfLkpKKoToZGLnh/k/Llx2sOp+xUyoaRtu1iaOxfwEnl+ZHPq2MYvBPrsuhP8eB+x4juIKvahNchk+Q/aaZT+1GrSXzzpJ70YrGdyVxV0R8C5eYWB45e6SJZekDibWs/eAY4L+4mLcppe1pJdlLsY+IkbHSdbHj manuelesimi@Manueles-MacBook-Pro.local1&#10;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBXXfR4JGKYWKcKSp+NyxAHOq4WIQf3p7+TSDCqWBPPA0k8btkEDcewGtdmfEf0KbmA2FnlSHbe5YGpjZ1Ff3yLP0Vj15by4qBH89vocMDiIFoVLvoKPHarDLkPmqY3F9wh/lbUeI9yA/q4TP58RiwxnD666JWLgIpcpJlG1o82coTQXy4I5A2PdfLkpKKoToZGLnh/k/Llx2sOp+xUyoaRtu1iaOxfwEnl+ZHPq2MYvBPrsuhP8eB+x4juIKvahNchk+Q/aaZT+1GrSXzzpJ70YrGdyVxV0R8C5eYWB45e6SJZekDibWs/eAY4L+4mLcppe1pJdlLsY+IkbHSdbHj manuelesimi@Manueles-MacBook-Pro.local2&#10;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBXXfR4JGKYWKcKSp+NyxAHOq4WIQf3p7+TSDCqWBPPA0k8btkEDcewGtdmfEf0KbmA2FnlSHbe5YGpjZ1Ff3yLP0Vj15by4qBH89vocMDiIFoVLvoKPHarDLkPmqY3F9wh/lbUeI9yA/q4TP58RiwxnD666JWLgIpcpJlG1o82coTQXy4I5A2PdfLkpKKoToZGLnh/k/Llx2sOp+xUyoaRtu1iaOxfwEnl+ZHPq2MYvBPrsuhP8eB+x4juIKvahNchk+Q/aaZT+1GrSXzzpJ70YrGdyVxV0R8C5eYWB45e6SJZekDibWs/eAY4L+4mLcppe1pJdlLsY+IkbHSdbHj manuelesimi@Manueles-MacBook-Pro.local3&#10;&#10;" />
-    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:36 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@185df0bc secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
+    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:36 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@290164b9 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
     <ref role="1QJbqN" node="109XeHbQHGj" resolve="docker.config" />
     <node concept="VtuK3" id="3ZmttCiawrG" role="234boB">
       <property role="VuL0s" value="latest" />
@@ -88,6 +88,40 @@
         <property role="1mWegi" value="20" />
       </node>
       <node concept="2tz3XF" id="3ZmttCiawrM" role="2KSRPJ">
+        <property role="TrG5h" value="Folder with manager credentials" />
+        <property role="2tz3XC" value="/Users/manuelesimi/.ssh" />
+      </node>
+    </node>
+  </node>
+  <node concept="3zOPYP" id="6hZyplrBoov">
+    <property role="TrG5h" value="ManageCloudCluster" />
+    <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
+    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:36 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@290164b9 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
+    <ref role="1QJbqN" node="109XeHbQHGj" resolve="docker.config" />
+    <node concept="VtuK3" id="6hZyplrBoow" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="elasticluster" />
+    </node>
+    <node concept="3zOwDe" id="6hZyplrBoox" role="1OGc9L">
+      <property role="TrG5h" value="cluster.config" />
+      <node concept="3zO_zI" id="6hZyplrBooy" role="2KSRPJ">
+        <property role="TrG5h" value="Number of frontend nodes" />
+        <property role="3zO_zz" value="1" />
+      </node>
+      <node concept="3zO_zJ" id="6hZyplrBooz" role="2KSRPJ">
+        <property role="TrG5h" value="Number of worker nodes" />
+        <property role="3zO_zz" value="2" />
+      </node>
+      <node concept="1rOJCK" id="6hZyplrBoo$" role="2KSRPJ">
+        <property role="TrG5h" value="Compute node type" />
+        <property role="1rOIkb" value="n1-standard-2" />
+      </node>
+      <node concept="1mWehH" id="6hZyplrBoo_" role="2KSRPJ">
+        <property role="TrG5h" value="Disk size for worker nodes" />
+        <property role="1mWegi" value="20" />
+      </node>
+      <node concept="2tz3XF" id="6hZyplrBooA" role="2KSRPJ">
         <property role="TrG5h" value="Folder with manager credentials" />
         <property role="2tz3XC" value="/Users/manuelesimi/.ssh" />
       </node>

@@ -12,6 +12,7 @@
     <use id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" name="org.campagnelab.ui" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -175,6 +176,23 @@
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
+        <child id="5858074156537516440" name="return" index="x79VK" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
     <language id="a21a7294-c126-4f63-8335-8fecd8c28c7e" name="org.campagnelab.NYoSh">
       <concept id="8197864363320353692" name="org.campagnelab.NYoSh.structure.ExecuteCommand" flags="ng" index="XjSAC">
         <child id="851869296734402315" name="commands" index="2xe0mn" />
@@ -257,6 +275,30 @@
   </registry>
   <node concept="13h7C7" id="5wsmBEGRnsl">
     <ref role="13h7C2" to="5lbf:5EXCMiTrJMh" resolve="ContainerWithEC" />
+    <node concept="13i0hz" id="3C40c0STRGf" role="13h7CS">
+      <property role="TrG5h" value="dataFolder" />
+      <node concept="3Tm1VV" id="3C40c0STRGg" role="1B3o_S" />
+      <node concept="3clFbS" id="3C40c0STRGh" role="3clF47">
+        <node concept="3cpWs6" id="3C40c0STTvD" role="3cqZAp">
+          <node concept="2YIFZM" id="6UP81EX8bfP" role="3cqZAk">
+            <ref role="37wK5l" to="ujkv:52oJ3dmOWZh" resolve="getSolutionClassesGenFolder" />
+            <ref role="1Pybhc" to="ujkv:52oJ3dmL414" resolve="ProjectPaths" />
+            <node concept="13iPFW" id="6UP81EX8bfQ" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3C40c0STSBU" role="3clF45" />
+      <node concept="P$JXv" id="3C40c0STSBZ" role="lGtFl">
+        <node concept="TZ5HA" id="3C40c0STSC0" role="TZ5H$">
+          <node concept="1dT_AC" id="3C40c0STSC1" role="1dT_Ay">
+            <property role="1dT_AB" value="Gets the local folder mounted in the EC container under /data" />
+          </node>
+        </node>
+        <node concept="x79VA" id="3C40c0STSC2" role="x79VK">
+          <property role="x79VB" value="the local folder" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="7vFwTqSSjib" role="13h7CS">
       <property role="TrG5h" value="refreshPreferences" />
       <node concept="37vLTG" id="7vFwTqSSm2y" role="3clF46">
@@ -688,7 +730,29 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3pj0Oa6F_$3" role="3cqZAp" />
+        <node concept="3cpWs8" id="3C40c0STUPk" role="3cqZAp">
+          <node concept="3cpWsn" id="3C40c0STUPn" role="3cpWs9">
+            <property role="TrG5h" value="dataFolder" />
+            <property role="3TUv4t" value="true" />
+            <node concept="17QB3L" id="3C40c0STUPi" role="1tU5fm" />
+            <node concept="3cpWs3" id="3C40c0STVI0" role="33vP2m">
+              <node concept="Xl_RD" id="3C40c0STVLY" role="3uHU7w">
+                <property role="Xl_RC" value=":/data" />
+              </node>
+              <node concept="3cpWs3" id="3C40c0STVqa" role="3uHU7B">
+                <node concept="Xl_RD" id="3C40c0STVtD" role="3uHU7B">
+                  <property role="Xl_RC" value=" -v " />
+                </node>
+                <node concept="2OqwBi" id="3C40c0STV1G" role="3uHU7w">
+                  <node concept="13iPFW" id="3C40c0STUZE" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="3C40c0STVls" role="2OqNvi">
+                    <ref role="37wK5l" node="3C40c0STRGf" resolve="dataFolder" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="36TCZ$" id="3pj0Oa6F_$4" role="3cqZAp">
           <property role="36ZhHO" value="Docker Exec" />
           <node concept="36Z5DI" id="3pj0Oa6F_$5" role="36Z5DK" />
@@ -769,36 +833,41 @@
                             </node>
                             <node concept="3cpWs3" id="3pj0Oa6F_$B" role="3uHU7B">
                               <node concept="3cpWs3" id="3pj0Oa6F_$D" role="3uHU7B">
-                                <node concept="3cpWs3" id="rQ5OKPiUKR" role="3uHU7B">
+                                <node concept="3cpWs3" id="6hZyplrBEL3" role="3uHU7B">
                                   <node concept="Xl_RD" id="3pj0Oa6GPJ$" role="3uHU7w">
                                     <property role="Xl_RC" value=" " />
                                   </node>
-                                  <node concept="3cpWs3" id="3pj0Oa6GPC2" role="3uHU7B">
-                                    <node concept="3cpWs3" id="3pj0Oa6F_$E" role="3uHU7B">
-                                      <node concept="3cpWs3" id="3pj0Oa6F_$F" role="3uHU7B">
-                                        <node concept="3cpWs3" id="3pj0Oa6F_$G" role="3uHU7B">
-                                          <node concept="3cpWs3" id="3pj0Oa6F_$H" role="3uHU7B">
-                                            <node concept="37vLTw" id="3pj0Oa6F_$I" role="3uHU7B">
-                                              <ref role="3cqZAo" node="3pj0Oa6F_zm" resolve="docker" />
+                                  <node concept="3cpWs3" id="rQ5OKPiUKR" role="3uHU7B">
+                                    <node concept="3cpWs3" id="3pj0Oa6GPC2" role="3uHU7B">
+                                      <node concept="3cpWs3" id="3pj0Oa6F_$E" role="3uHU7B">
+                                        <node concept="3cpWs3" id="3pj0Oa6F_$F" role="3uHU7B">
+                                          <node concept="3cpWs3" id="3pj0Oa6F_$G" role="3uHU7B">
+                                            <node concept="3cpWs3" id="3pj0Oa6F_$H" role="3uHU7B">
+                                              <node concept="37vLTw" id="3pj0Oa6F_$I" role="3uHU7B">
+                                                <ref role="3cqZAo" node="3pj0Oa6F_zm" resolve="docker" />
+                                              </node>
+                                              <node concept="Xl_RD" id="3pj0Oa6F_$J" role="3uHU7w">
+                                                <property role="Xl_RC" value=" " />
+                                              </node>
                                             </node>
-                                            <node concept="Xl_RD" id="3pj0Oa6F_$J" role="3uHU7w">
-                                              <property role="Xl_RC" value=" " />
+                                            <node concept="37vLTw" id="3pj0Oa6F_$K" role="3uHU7w">
+                                              <ref role="3cqZAo" node="3pj0Oa6F_zu" resolve="options" />
                                             </node>
                                           </node>
-                                          <node concept="37vLTw" id="3pj0Oa6F_$K" role="3uHU7w">
-                                            <ref role="3cqZAo" node="3pj0Oa6F_zu" resolve="options" />
+                                          <node concept="Xl_RD" id="3pj0Oa6F_$L" role="3uHU7w">
+                                            <property role="Xl_RC" value=" " />
                                           </node>
                                         </node>
-                                        <node concept="Xl_RD" id="3pj0Oa6F_$L" role="3uHU7w">
-                                          <property role="Xl_RC" value=" " />
+                                        <node concept="Xl_RD" id="3pj0Oa6F_$M" role="3uHU7w">
+                                          <property role="Xl_RC" value=" run -it " />
                                         </node>
                                       </node>
-                                      <node concept="Xl_RD" id="3pj0Oa6F_$M" role="3uHU7w">
-                                        <property role="Xl_RC" value=" run -it " />
+                                      <node concept="37vLTw" id="rQ5OKPj3N5" role="3uHU7w">
+                                        <ref role="3cqZAo" node="rQ5OKPj32R" resolve="additionalOptions" />
                                       </node>
                                     </node>
-                                    <node concept="37vLTw" id="rQ5OKPj3N5" role="3uHU7w">
-                                      <ref role="3cqZAo" node="rQ5OKPj32R" resolve="additionalOptions" />
+                                    <node concept="37vLTw" id="6hZyplrBEP4" role="3uHU7w">
+                                      <ref role="3cqZAo" node="3C40c0STUPn" resolve="dataFolder" />
                                     </node>
                                   </node>
                                 </node>
@@ -1111,24 +1180,6 @@
       </node>
       <node concept="3Tm1VV" id="109XeHbQHL4" role="1B3o_S" />
       <node concept="3clFbS" id="109XeHbQHL5" role="3clF47">
-        <node concept="3cpWs8" id="3C40c0SSKX8" role="3cqZAp">
-          <node concept="3cpWsn" id="3C40c0SSKX9" role="3cpWs9">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="localFolder" />
-            <node concept="17QB3L" id="3C40c0SSKXa" role="1tU5fm" />
-            <node concept="2OqwBi" id="3C40c0SSKXb" role="33vP2m">
-              <node concept="2OqwBi" id="3C40c0SSKXc" role="2Oq$k0">
-                <node concept="13iPFW" id="3C40c0SSKXd" role="2Oq$k0" />
-                <node concept="3TrEf2" id="3C40c0SSKXe" role="2OqNvi">
-                  <ref role="3Tt5mk" to="5lbf:7QDG7s96n86" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="3C40c0SSKXf" role="2OqNvi">
-                <ref role="37wK5l" to="3229:3pj0Oa6GMmD" resolve="getLocalConfigurationFolder" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="3C40c0SSL43" role="3cqZAp">
           <node concept="3cpWsn" id="3C40c0SSL44" role="3cpWs9">
             <property role="TrG5h" value="keyfile" />
@@ -1138,8 +1189,11 @@
             <node concept="2ShNRf" id="3C40c0SSL6c" role="33vP2m">
               <node concept="1pGfFk" id="3C40c0SSRfC" role="2ShVmc">
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
-                <node concept="37vLTw" id="3C40c0SSRfS" role="37wK5m">
-                  <ref role="3cqZAo" node="3C40c0SSKX9" resolve="localFolder" />
+                <node concept="2OqwBi" id="3C40c0STU0N" role="37wK5m">
+                  <node concept="13iPFW" id="3C40c0STTVw" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="3C40c0STUds" role="2OqNvi">
+                    <ref role="37wK5l" node="3C40c0STRGf" resolve="dataFolder" />
+                  </node>
                 </node>
                 <node concept="Xl_RD" id="3C40c0SSRi0" role="37wK5m">
                   <property role="Xl_RC" value="new-keys" />
