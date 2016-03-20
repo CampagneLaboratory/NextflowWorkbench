@@ -4,15 +4,11 @@
   <languages>
     <use id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud" version="0" />
     <use id="c513c71c-d9f3-4625-83dc-6180e1012e68" name="org.campagnelab.cloud.configuration" version="0" />
-    <use id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash" version="0" />
   </languages>
-  <imports>
-    <import index="ili1" ref="r:0e890efb-eb84-45d5-b014-563cdc1d654b(org.campagnelab.docker.bash.run.plugin)" />
-  </imports>
+  <imports />
   <registry>
     <language id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud">
       <concept id="6538561612137036945" name="org.campagnelab.cloud.structure.ContainerWithEC" flags="ng" index="3zOPYP">
-        <property id="7017246219745809549" name="notes" index="1$193f" />
         <property id="9054962551105550959" name="credentials" index="1OHsCo" />
         <reference id="147628039490030680" name="dockerConfig" index="1QJbqN" />
         <child id="331977639697571264" name="container" index="234boB" />
@@ -60,39 +56,38 @@
   <node concept="2EEQw1" id="109XeHbQHGj">
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/manuelesimi/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/manuelesimi/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/manuelesimi/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
-  <node concept="3zOPYP" id="109XeHbR61K">
+  <node concept="3zOPYP" id="3ZmttCiawrF">
     <property role="TrG5h" value="ManageCloudCluster" />
     <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
-    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:35 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@64299985 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
     <ref role="1QJbqN" node="109XeHbQHGj" resolve="docker.config" />
-    <node concept="VtuK3" id="109XeHbR61L" role="234boB">
+    <node concept="VtuK3" id="3ZmttCiawrG" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="artifacts" />
       <property role="GbyUj" value="elasticluster" />
     </node>
-    <node concept="3zOwDe" id="109XeHbR61M" role="1OGc9L">
+    <node concept="3zOwDe" id="3ZmttCiawrH" role="1OGc9L">
       <property role="TrG5h" value="cluster.config" />
-      <node concept="3zO_zI" id="109XeHbR61N" role="2KSRPJ">
+      <node concept="3zO_zI" id="3ZmttCiawrI" role="2KSRPJ">
         <property role="TrG5h" value="Number of frontend nodes" />
         <property role="3zO_zz" value="1" />
       </node>
-      <node concept="3zO_zJ" id="109XeHbR61O" role="2KSRPJ">
+      <node concept="3zO_zJ" id="3ZmttCiawrJ" role="2KSRPJ">
         <property role="TrG5h" value="Number of worker nodes" />
         <property role="3zO_zz" value="2" />
       </node>
-      <node concept="1rOJCK" id="109XeHbR61P" role="2KSRPJ">
+      <node concept="1rOJCK" id="3ZmttCiawrK" role="2KSRPJ">
         <property role="TrG5h" value="Compute node type" />
         <property role="1rOIkb" value="n1-standard-2" />
       </node>
-      <node concept="1mWehH" id="109XeHbR61Q" role="2KSRPJ">
+      <node concept="1mWehH" id="3ZmttCiawrL" role="2KSRPJ">
         <property role="TrG5h" value="Disk size for worker nodes" />
         <property role="1mWegi" value="20" />
       </node>
-      <node concept="2tz3XF" id="109XeHbR61R" role="2KSRPJ">
+      <node concept="2tz3XF" id="3ZmttCiawrM" role="2KSRPJ">
         <property role="TrG5h" value="Folder with manager credentials" />
-        <property role="2tz3XC" value="/Users/mas2182/.ssh" />
+        <property role="2tz3XC" value="/Users/manuelesimi/.ssh" />
       </node>
     </node>
   </node>

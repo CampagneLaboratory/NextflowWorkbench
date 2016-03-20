@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.campagnelab.compute.cloud" uuid="5b2dfdd5-812f-48af-8989-85fe63dcbc1d">
+  <exported-language name="f7196c5e-3839-47b2-a69a-cc57b10442a1(org.campagnelab.cloud)" />
+  <exported-language name="c513c71c-d9f3-4625-83dc-6180e1012e68(org.campagnelab.cloud.configuration)" />
+  <exported-language name="25281c03-4a7c-4b57-9221-24a10fc36ef5(org.campagnelab.docker)" />
+  <exported-solutions>
+    <exported-solution>2183f281-ca53-4c69-af11-465550230ecd(org.campagnelab.cloud.preferences)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+
