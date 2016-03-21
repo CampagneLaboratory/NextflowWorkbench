@@ -77,7 +77,6 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
-      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -151,11 +150,6 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
-      </concept>
-      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -194,10 +188,6 @@
     <node concept="34jfKJ" id="2uFXGB4HUkr" role="34lFYf">
       <property role="TrG5h" value="clientSecret" />
       <node concept="17QB3L" id="2uFXGB4HUUQ" role="1tU5fm" />
-    </node>
-    <node concept="34jfKJ" id="2uFXGB4uP0T" role="34lFYf">
-      <property role="TrG5h" value="useCloudByDefault" />
-      <node concept="10P_77" id="2uFXGB4uPpb" role="1tU5fm" />
     </node>
     <node concept="3yqqq6" id="2rIRh_WVGqj" role="3yq$HY">
       <property role="TrG5h" value="Cloud" />
@@ -354,51 +344,6 @@
               </node>
             </node>
           </node>
-          <node concept="3cpWs8" id="2uFXGB4v3BK" role="3cqZAp">
-            <node concept="3cpWsn" id="2uFXGB4v3BN" role="3cpWs9">
-              <property role="TrG5h" value="def" />
-              <node concept="10P_77" id="2uFXGB4v3BI" role="1tU5fm" />
-              <node concept="2OqwBi" id="2uFXGB4v1RQ" role="33vP2m">
-                <node concept="0kSF2" id="2uFXGB4v1RR" role="2Oq$k0">
-                  <node concept="3uibUv" id="2rIRh_WWkUV" role="0kSFW">
-                    <ref role="3uigEE" node="7jqSt7yalTx" resolve="CloudPageComponent" />
-                  </node>
-                  <node concept="3yMSdA" id="2uFXGB4v1RT" role="0kSFX" />
-                </node>
-                <node concept="liA8E" id="2uFXGB4v1RU" role="2OqNvi">
-                  <ref role="37wK5l" node="2uFXGB4rIRo" resolve="getUseCloudByDefault" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbJ" id="2uFXGB4v1RI" role="3cqZAp">
-            <node concept="3clFbS" id="2uFXGB4v1RJ" role="3clFbx">
-              <node concept="3clFbF" id="2uFXGB4v2B_" role="3cqZAp">
-                <node concept="37vLTI" id="2uFXGB4v8cI" role="3clFbG">
-                  <node concept="37vLTw" id="2uFXGB4v8z8" role="37vLTx">
-                    <ref role="3cqZAo" node="2uFXGB4v3BN" resolve="def" />
-                  </node>
-                  <node concept="2OqwBi" id="2uFXGB4v2Ri" role="37vLTJ">
-                    <node concept="2WthIp" id="2uFXGB4v2B$" role="2Oq$k0" />
-                    <node concept="34pFcN" id="2rIRh_WWl$R" role="2OqNvi">
-                      <ref role="2WH_rO" node="2uFXGB4uP0T" resolve="useCloudByDefault" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3y3z36" id="2uFXGB4v1RM" role="3clFbw">
-              <node concept="2OqwBi" id="2uFXGB4v1RN" role="3uHU7w">
-                <node concept="2WthIp" id="2uFXGB4v1RO" role="2Oq$k0" />
-                <node concept="34pFcN" id="2rIRh_WWlmw" role="2OqNvi">
-                  <ref role="2WH_rO" node="2uFXGB4uP0T" resolve="useCloudByDefault" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="2uFXGB4v5t9" role="3uHU7B">
-                <ref role="3cqZAo" node="2uFXGB4v3BN" resolve="def" />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="3yzWfJ" id="2rIRh_WVGqm" role="3y$9q5">
@@ -455,25 +400,6 @@
                   <node concept="2WthIp" id="2uFXGB4v8Z1" role="2Oq$k0" />
                   <node concept="34pFcN" id="2rIRh_WWqBY" role="2OqNvi">
                     <ref role="2WH_rO" node="7jqSt7ya6yC" resolve="projectID" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="2uFXGB4HT$E" role="3cqZAp">
-            <node concept="2OqwBi" id="2uFXGB4HT$F" role="3clFbG">
-              <node concept="0kSF2" id="2uFXGB4HT$G" role="2Oq$k0">
-                <node concept="3uibUv" id="2rIRh_WWqQN" role="0kSFW">
-                  <ref role="3uigEE" node="7jqSt7yalTx" resolve="CloudPageComponent" />
-                </node>
-                <node concept="3yMSdA" id="2uFXGB4HT$I" role="0kSFX" />
-              </node>
-              <node concept="liA8E" id="2uFXGB4HT$J" role="2OqNvi">
-                <ref role="37wK5l" node="2uFXGB4rOR_" resolve="setUseCloudByDefault" />
-                <node concept="2OqwBi" id="2uFXGB4HT$K" role="37wK5m">
-                  <node concept="2WthIp" id="2uFXGB4HT$L" role="2Oq$k0" />
-                  <node concept="34pFcN" id="2rIRh_WWrhT" role="2OqNvi">
-                    <ref role="2WH_rO" node="2uFXGB4uP0T" resolve="useCloudByDefault" />
                   </node>
                 </node>
               </node>
@@ -652,34 +578,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbJ" id="2uFXGB4uQe7" role="3cqZAp">
-            <node concept="3clFbS" id="2uFXGB4uQe9" role="3clFbx">
-              <node concept="3cpWs6" id="2uFXGB4v07C" role="3cqZAp">
-                <node concept="3clFbT" id="2uFXGB4v0m5" role="3cqZAk">
-                  <property role="3clFbU" value="true" />
-                </node>
-              </node>
-            </node>
-            <node concept="3y3z36" id="2uFXGB4uZJL" role="3clFbw">
-              <node concept="2OqwBi" id="2uFXGB4v0TP" role="3uHU7w">
-                <node concept="2WthIp" id="2uFXGB4v0D3" role="2Oq$k0" />
-                <node concept="34pFcN" id="2rIRh_WWgel" role="2OqNvi">
-                  <ref role="2WH_rO" node="2uFXGB4uP0T" resolve="useCloudByDefault" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="2uFXGB4uS34" role="3uHU7B">
-                <node concept="0kSF2" id="2uFXGB4uR6Y" role="2Oq$k0">
-                  <node concept="3uibUv" id="2rIRh_WW5uG" role="0kSFW">
-                    <ref role="3uigEE" node="7jqSt7yalTx" resolve="CloudPageComponent" />
-                  </node>
-                  <node concept="3yMSdA" id="2uFXGB4uQyj" role="0kSFX" />
-                </node>
-                <node concept="liA8E" id="2uFXGB4uZ5M" role="2OqNvi">
-                  <ref role="37wK5l" node="2uFXGB4rIRo" resolve="getUseCloudByDefault" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs6" id="7jqSt7ydw75" role="3cqZAp">
             <node concept="3clFbT" id="7jqSt7ydvDe" role="3cqZAk" />
           </node>
@@ -733,16 +631,6 @@
       <node concept="3Tm6S6" id="2uFXGB4GmAa" role="1B3o_S" />
       <node concept="3uibUv" id="2uFXGB4GmAb" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~JTextField" resolve="JTextField" />
-      </node>
-    </node>
-    <node concept="312cEg" id="2uFXGB4q9wu" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="3TUv4t" value="false" />
-      <property role="TrG5h" value="useCloudByDefault" />
-      <node concept="3Tm6S6" id="2uFXGB4q8ya" role="1B3o_S" />
-      <node concept="3uibUv" id="2uFXGB4q99O" role="1tU5fm">
-        <ref role="3uigEE" to="dxuu:~JCheckBox" resolve="JCheckBox" />
       </node>
     </node>
     <node concept="2tJIrI" id="2rIRh_WW5PX" role="jymVt" />
@@ -977,75 +865,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="2uFXGB4qdgS" role="3cqZAp">
-          <node concept="3cpWsn" id="2uFXGB4qdgT" role="3cpWs9">
-            <property role="TrG5h" value="defaultUseLabel" />
-            <node concept="3uibUv" id="2uFXGB4qdgU" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~JLabel" resolve="JLabel" />
-            </node>
-            <node concept="2ShNRf" id="2uFXGB4qdgV" role="33vP2m">
-              <node concept="1pGfFk" id="2uFXGB4qdgW" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
-                <node concept="Xl_RD" id="2uFXGB4qdgX" role="37wK5m">
-                  <property role="Xl_RC" value="Always submit workflows to Grid Engine:" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2uFXGB4qqH5" role="3cqZAp">
-          <node concept="2OqwBi" id="2uFXGB4qqH6" role="3clFbG">
-            <node concept="Xjq3P" id="2uFXGB4qqH7" role="2Oq$k0" />
-            <node concept="liA8E" id="2uFXGB4qqH8" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
-              <node concept="37vLTw" id="2uFXGB4qr1E" role="37wK5m">
-                <ref role="3cqZAo" node="2uFXGB4qdgT" resolve="defaultUseLabel" />
-              </node>
-              <node concept="1rwKMM" id="2uFXGB4qqHa" role="37wK5m">
-                <property role="1rwKMK" value="label" />
-                <node concept="2$rviw" id="2uFXGB4Gm4P" role="1rxHDW">
-                  <node concept="37vLTw" id="2uFXGB4Gm4Q" role="2$L3a6">
-                    <ref role="3cqZAo" node="2uFXGB4GldR" resolve="i" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2uFXGB4qds4" role="3cqZAp">
-          <node concept="37vLTI" id="2uFXGB4qmeR" role="3clFbG">
-            <node concept="2ShNRf" id="2uFXGB4qm_7" role="37vLTx">
-              <node concept="1pGfFk" id="2uFXGB4qmvY" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JCheckBox.&lt;init&gt;()" resolve="JCheckBox" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="2uFXGB4qe9f" role="37vLTJ">
-              <node concept="Xjq3P" id="2uFXGB4qds2" role="2Oq$k0" />
-              <node concept="2OwXpG" id="2rIRh_WW7LU" role="2OqNvi">
-                <ref role="2Oxat5" node="2uFXGB4q9wu" resolve="useCloudByDefault" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2uFXGB4qmPB" role="3cqZAp">
-          <node concept="2OqwBi" id="2uFXGB4qnf1" role="3clFbG">
-            <node concept="Xjq3P" id="2uFXGB4qmP_" role="2Oq$k0" />
-            <node concept="liA8E" id="2uFXGB4qpEJ" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
-              <node concept="37vLTw" id="2rIRh_WW8bR" role="37wK5m">
-                <ref role="3cqZAo" node="2uFXGB4q9wu" resolve="useCloudByDefault" />
-              </node>
-              <node concept="1rwKMM" id="2uFXGB4qq3s" role="37wK5m">
-                <property role="1rwKMK" value="field" />
-                <node concept="2$rviw" id="2uFXGB4Gma9" role="1rxHDW">
-                  <node concept="37vLTw" id="2uFXGB4Gmaa" role="2$L3a6">
-                    <ref role="3cqZAo" node="2uFXGB4GldR" resolve="i" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="2rIRh_WW6lp" role="3cqZAp" />
       </node>
       <node concept="3Tm1VV" id="7jqSt7yc$aO" role="1B3o_S" />
@@ -1192,50 +1011,6 @@
       <node concept="37vLTG" id="7jqSt7ydEel" role="3clF46">
         <property role="TrG5h" value="clientID" />
         <node concept="17QB3L" id="7jqSt7ydEek" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="2uFXGB4rIRo" role="jymVt">
-      <property role="TrG5h" value="getUseCloudByDefault" />
-      <node concept="10P_77" id="2uFXGB4rJdv" role="3clF45" />
-      <node concept="3Tm1VV" id="2uFXGB4rIRq" role="1B3o_S" />
-      <node concept="3clFbS" id="2uFXGB4rIRr" role="3clF47">
-        <node concept="3clFbF" id="2uFXGB4rIRs" role="3cqZAp">
-          <node concept="2OqwBi" id="2uFXGB4rJLU" role="3clFbG">
-            <node concept="37vLTw" id="2rIRh_WWasv" role="2Oq$k0">
-              <ref role="3cqZAo" node="2uFXGB4q9wu" resolve="useCloudByDefault" />
-            </node>
-            <node concept="liA8E" id="2uFXGB4rOA_" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="2uFXGB4rOR_" role="jymVt">
-      <property role="TrG5h" value="setUseCloudByDefault" />
-      <node concept="3cqZAl" id="2uFXGB4rORA" role="3clF45" />
-      <node concept="3Tm1VV" id="2uFXGB4rORB" role="1B3o_S" />
-      <node concept="3clFbS" id="2uFXGB4rORC" role="3clF47">
-        <node concept="3clFbF" id="2uFXGB4rVm2" role="3cqZAp">
-          <node concept="2OqwBi" id="2uFXGB4s4ER" role="3clFbG">
-            <node concept="2OqwBi" id="2uFXGB4rVH4" role="2Oq$k0">
-              <node concept="Xjq3P" id="2uFXGB4rVm0" role="2Oq$k0" />
-              <node concept="2OwXpG" id="2rIRh_WWaW1" role="2OqNvi">
-                <ref role="2Oxat5" node="2uFXGB4q9wu" resolve="useCloudByDefault" />
-              </node>
-            </node>
-            <node concept="liA8E" id="2uFXGB4sas1" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~AbstractButton.setSelected(boolean):void" resolve="setSelected" />
-              <node concept="37vLTw" id="2uFXGB4sbn0" role="37wK5m">
-                <ref role="3cqZAo" node="2uFXGB4rORG" resolve="useCloudByDefault" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="2uFXGB4rORG" role="3clF46">
-        <property role="TrG5h" value="useCloudByDefault" />
-        <node concept="10P_77" id="2uFXGB4rPhT" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="2uFXGB4rICh" role="jymVt" />
