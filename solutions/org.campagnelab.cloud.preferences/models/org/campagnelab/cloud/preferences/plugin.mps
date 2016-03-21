@@ -190,7 +190,7 @@
       <node concept="17QB3L" id="2uFXGB4HUUQ" role="1tU5fm" />
     </node>
     <node concept="3yqqq6" id="2rIRh_WVGqj" role="3yq$HY">
-      <property role="TrG5h" value="Cloud" />
+      <property role="TrG5h" value="GoogleCloud" />
       <property role="3EcmCg" value="Grid Engine for Workflows" />
       <node concept="3y$hsl" id="2rIRh_WVGqk" role="3y$ekZ">
         <node concept="3clFbS" id="2rIRh_WVGql" role="2VODD2">
