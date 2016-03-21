@@ -53,6 +53,7 @@
     <language id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" fqName="org.campagnelab.mps.editor2pdf" version="0" />
     <language id="0f071fdb-3faa-4b8c-9f5e-1da0a01466d5" fqName="org.campagnelab.nyosh.environment" version="0" />
     <language id="c6567f13-87ab-4686-8f6f-42e8228c0e27" fqName="org.campagnelab.nyosh.gstring" version="0" />
+    <language id="66f96b90-b2af-4ce4-92ca-dc0e9d7e2b43" fqName="org.campagnelab.nyosh.interactive" version="0" />
     <language id="0202ed86-955d-4227-9c20-377dd6b1f9ff" fqName="org.campagnelab.nyosh.lib" version="0" />
     <language id="901f5cf3-dc77-4c1e-bc5a-6382baee28b4" fqName="org.campagnelab.textoutput" version="0" />
     <language id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" fqName="org.campagnelab.ui" version="0" />
