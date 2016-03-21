@@ -1166,6 +1166,44 @@
       </node>
       <node concept="3cqZAl" id="5wsmBEGRntU" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="6hZyplrBQNd" role="13h7CS">
+      <property role="TrG5h" value="nodes" />
+      <node concept="37vLTG" id="6hZyplrBQNe" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <node concept="3uibUv" id="6hZyplrBQNf" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6hZyplrBQNg" role="1B3o_S" />
+      <node concept="3clFbS" id="6hZyplrBQNh" role="3clF47">
+        <node concept="3clFbF" id="6hZyplrBQNi" role="3cqZAp">
+          <node concept="2OqwBi" id="6hZyplrBQNj" role="3clFbG">
+            <node concept="13iPFW" id="6hZyplrBQNk" role="2Oq$k0" />
+            <node concept="2qgKlT" id="6hZyplrBQNl" role="2OqNvi">
+              <ref role="37wK5l" node="5wsmBEGRnsR" resolve="execEC" />
+              <node concept="37vLTw" id="6hZyplrBQNm" role="37wK5m">
+                <ref role="3cqZAo" node="6hZyplrBQNe" resolve="mpsProject" />
+              </node>
+              <node concept="Xl_RD" id="6hZyplrBQNn" role="37wK5m">
+                <property role="Xl_RC" value="docker-nodes.sh" />
+              </node>
+              <node concept="2OqwBi" id="6hZyplrBSf9" role="37wK5m">
+                <node concept="2OqwBi" id="6hZyplrBRNF" role="2Oq$k0">
+                  <node concept="13iPFW" id="6hZyplrBRLh" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6hZyplrBS7N" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5lbf:7QDG7s96n86" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="6hZyplrBSYf" role="2OqNvi">
+                  <ref role="37wK5l" to="3229:6hZyplrBSsD" resolve="nodesCommand" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6hZyplrBQNp" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="109XeHbQHL1" role="13h7CS">
       <property role="TrG5h" value="access" />
       <node concept="37vLTG" id="109XeHbQHL2" role="3clF46">
