@@ -147,6 +147,7 @@
         <reference id="1176109685394" name="concept" index="3lApI3" />
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -515,33 +516,51 @@
                 <node concept="3x8VRR" id="3ktpdP6bZq6" role="2OqNvi" />
               </node>
             </node>
-            <node concept="3cpWs8" id="29U0K5dCkzv" role="3cqZAp">
-              <node concept="3cpWsn" id="29U0K5dCkzy" role="3cpWs9">
-                <property role="TrG5h" value="engineOptions" />
-                <node concept="17QB3L" id="29U0K5dCkzt" role="1tU5fm" />
-                <node concept="2OqwBi" id="29U0K5dCrVP" role="33vP2m">
-                  <node concept="37vLTw" id="29U0K5dGrSl" role="2Oq$k0">
-                    <ref role="3cqZAo" node="29U0K5dGrSb" resolve="config" />
-                  </node>
-                  <node concept="3TrcHB" id="29U0K5dCs67" role="2OqNvi">
-                    <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+            <node concept="3clFbJ" id="635ahSvedxY" role="3cqZAp">
+              <node concept="3clFbS" id="635ahSvedy0" role="3clFbx">
+                <node concept="3SKdUt" id="635ahSveeGj" role="3cqZAp">
+                  <node concept="3SKdUq" id="635ahSveeGl" role="3SKWNk">
+                    <property role="3SKdUp" value="docker engine options are always local, they won't be accepted remotely" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="lc7rE" id="29U0K5dCkoM" role="3cqZAp">
-              <node concept="la8eA" id="29U0K5dCktL" role="lcghm">
-                <property role="lacIc" value="docker.engineOptions='" />
-              </node>
-              <node concept="l9hG8" id="29U0K5dCs7o" role="lcghm">
-                <node concept="37vLTw" id="29U0K5dGT74" role="lb14g">
-                  <ref role="3cqZAo" node="29U0K5dCkzy" resolve="engineOptions" />
+                <node concept="3cpWs8" id="29U0K5dCkzv" role="3cqZAp">
+                  <node concept="3cpWsn" id="29U0K5dCkzy" role="3cpWs9">
+                    <property role="TrG5h" value="engineOptions" />
+                    <node concept="17QB3L" id="29U0K5dCkzt" role="1tU5fm" />
+                    <node concept="2OqwBi" id="29U0K5dCrVP" role="33vP2m">
+                      <node concept="37vLTw" id="29U0K5dGrSl" role="2Oq$k0">
+                        <ref role="3cqZAo" node="29U0K5dGrSb" resolve="config" />
+                      </node>
+                      <node concept="3TrcHB" id="29U0K5dCs67" role="2OqNvi">
+                        <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="lc7rE" id="29U0K5dCkoM" role="3cqZAp">
+                  <node concept="la8eA" id="29U0K5dCktL" role="lcghm">
+                    <property role="lacIc" value="docker.engineOptions='" />
+                  </node>
+                  <node concept="l9hG8" id="29U0K5dCs7o" role="lcghm">
+                    <node concept="37vLTw" id="29U0K5dGT74" role="lb14g">
+                      <ref role="3cqZAo" node="29U0K5dCkzy" resolve="engineOptions" />
+                    </node>
+                  </node>
+                  <node concept="la8eA" id="29U0K5dCsbL" role="lcghm">
+                    <property role="lacIc" value="'" />
+                  </node>
+                  <node concept="l8MVK" id="29U0K5dCscg" role="lcghm" />
                 </node>
               </node>
-              <node concept="la8eA" id="29U0K5dCsbL" role="lcghm">
-                <property role="lacIc" value="'" />
+              <node concept="2OqwBi" id="635ahSvee15" role="3clFbw">
+                <node concept="2OqwBi" id="635ahSvedIB" role="2Oq$k0">
+                  <node concept="117lpO" id="635ahSved_Q" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="635ahSvedVv" role="2OqNvi">
+                    <ref role="3Tt5mk" to="dlwq:5KN4KqZiCvA" />
+                  </node>
+                </node>
+                <node concept="3w_OXm" id="635ahSveem_" role="2OqNvi" />
               </node>
-              <node concept="l8MVK" id="29U0K5dCscg" role="lcghm" />
             </node>
           </node>
           <node concept="37vLTw" id="29U0K5d_NUq" role="3clFbw">

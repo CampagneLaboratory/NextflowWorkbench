@@ -13,10 +13,6 @@
       <concept id="893392931327129896" name="org.campagnelab.mps.editor2pdf.structure.DiagramOutputDirectory" flags="ng" index="KZc4b">
         <property id="893392931327129956" name="path" index="KZc57" />
       </concept>
-      <concept id="8751972264247112684" name="org.campagnelab.mps.editor2pdf.structure.EditorAnnotation" flags="ng" index="3ZW7eb">
-        <property id="5378718574870043633" name="outputFormat" index="2ripvU" />
-        <reference id="893392931327136863" name="outputTo" index="KZaLW" />
-      </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -36,9 +32,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -152,50 +145,11 @@
   <node concept="2EEQw1" id="109XeHbQHGj">
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/manuelesimi/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/manuelesimi/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/manuelesimi/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
   <node concept="KZc4b" id="2qF0d00RPVR">
     <property role="TrG5h" value="Figures" />
     <property role="KZc57" value="/Users/mas2182/Lab/Papers/nextflowworkbench_manuscript/figures" />
-  </node>
-  <node concept="3zOPYP" id="2qF0d00RVji">
-    <property role="TrG5h" value="ManageCloudCluster" />
-    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:36 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@455a3419 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
-    <property role="1OHsCo" value="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBXXfR4JGKYWKcKSp+NyxAHOq4WIQf3p7+TSDCqWBPPA0k8btkEDcewGtdmfEf0KbmA2FnlSHbe5YGpjZ1Ff3yLP0Vj15by4qBH89vocMDiIFoVLvoKPHarDLkPmqY3F9wh/lbUeI9yA/q4TP58RiwxnD666JWLgIpcpJlG1o82coTQXy4I5A2PdfLkpKKoToZGLnh/k/Llx2sOp+xUyoaRtu1iaOxfwEnl+ZHPq2MYvBPrsuhP8eB+x4juIKvahNchk+Q/aaZT+1GrSXzzpJ70YrGdyVxV0R8C5eYWB45e6SJZekDibWs/eAY4L+4mLcppe1pJdlLsY+IkbHSdbHj manuelesimi@Manueles-MacBook-Pro.local1&#10;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC07+Yg5a2EoSdcuZ47pTq1nxro8PRGkjrJ/A45ZCMpbcrzEG2WWy7oJc50okcc0dX3ikf788tNpt0eeIziMboNZnYnHLbkYcbs2aKA8k/0Q9Xum8yZnGFm8rdmzEyZq+O8h769aWJ693eIWGhXJNiQ+IQ0YLp8eEsq3ZYka69LeVHkdpXmEmU+dGL3cz3RsmtZefjDQB75x6jPwi1PB+GjF0+vadTU/+u8t543ArPX6odm336ErPfvZ/RQi3uAQk2pKsT1by1GReoQ+HJbZ4wfD9ytyZ9iYIPq7MUYxzm3+AWfe61ZSzaTr2UhcXLUrlsAFy3SLfNDJA5cO4PSkSmR mas2182@mac162547.med.cornell.edu&#10;" />
-    <ref role="1QJbqN" node="109XeHbQHGj" resolve="docker.config" />
-    <node concept="VtuK3" id="2qF0d00RVjj" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="VuL0v" value="artifacts" />
-      <property role="GbyUj" value="elasticluster" />
-    </node>
-    <node concept="3zOwDe" id="2qF0d00RVjk" role="1OGc9L">
-      <property role="TrG5h" value="cluster.config" />
-      <node concept="3zO_zI" id="2qF0d00RVjl" role="2KSRPJ">
-        <property role="TrG5h" value="Number of frontend nodes" />
-        <property role="3zO_zz" value="1" />
-      </node>
-      <node concept="3zO_zJ" id="2qF0d00RVjm" role="2KSRPJ">
-        <property role="TrG5h" value="Number of worker nodes" />
-        <property role="3zO_zz" value="2" />
-      </node>
-      <node concept="1rOJCK" id="2qF0d00RVjn" role="2KSRPJ">
-        <property role="TrG5h" value="Compute node type" />
-        <property role="1rOIkb" value="n1-standard-2" />
-      </node>
-      <node concept="1mWehH" id="2qF0d00RVjo" role="2KSRPJ">
-        <property role="TrG5h" value="Disk size for worker nodes" />
-        <property role="1mWegi" value="20" />
-      </node>
-      <node concept="2tz3XF" id="2qF0d00RVjp" role="2KSRPJ">
-        <property role="TrG5h" value="Folder with manager credentials" />
-        <property role="2tz3XC" value="/Users/mas2182/.ssh" />
-      </node>
-    </node>
-    <node concept="3ZW7eb" id="2qF0d00RVjq" role="lGtFl">
-      <property role="2ripvU" value="1" />
-      <property role="TrG5h" value="S_ManageCloudClusterWithKeys" />
-      <ref role="KZaLW" node="2qF0d00RPVR" resolve="Figures" />
-    </node>
   </node>
   <node concept="2ulcR8" id="6xlRqabyCgU">
     <property role="TrG5h" value="EchoStringToStandardOut" />
@@ -256,19 +210,53 @@
     </node>
     <node concept="3zuAPG" id="5EXCMiTrF$B" role="3zupjy" />
     <node concept="3qaZdc" id="5EXCMiTrFD3" role="3qaWS2" />
-    <node concept="3yU_OP" id="2qF0d00RWEP" role="3zupjw">
+    <node concept="3yU_OP" id="635ahSvecDL" role="3zupjw">
       <property role="TrG5h" value="remote.config" />
-      <node concept="3yU_OV" id="2qF0d00RWEQ" role="3yU_OK">
+      <node concept="3yU_OV" id="635ahSvecDM" role="3yU_OK">
         <property role="3yU_OX" value="ubuntu" />
       </node>
-      <node concept="3yU_OD" id="2qF0d00RWER" role="3yU_OL">
-        <property role="3yU_OX" value="~/" />
+      <node concept="3yU_OD" id="635ahSvecDN" role="3yU_OL">
+        <property role="3yU_OX" value="/home/ubuntu" />
       </node>
-      <node concept="3yU_OQ" id="2qF0d00RWES" role="3yU_OY">
-        <property role="3yU_OX" value="${user.home}/.ssh/new_key" />
+      <node concept="3yU_OQ" id="635ahSvecDO" role="3yU_OY">
+        <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
       </node>
-      <node concept="3yU_OC" id="2qF0d00RWET" role="3yU_ON">
-        <property role="3yU_OX" value="104.154.29.118" />
+      <node concept="3yU_OC" id="635ahSvecDP" role="3yU_ON">
+        <property role="3yU_OX" value="8.34.213.172" />
+      </node>
+    </node>
+  </node>
+  <node concept="3zOPYP" id="635ahSvecEx">
+    <property role="TrG5h" value="ManageCloudCluster" />
+    <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
+    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:36 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@336ce75 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
+    <ref role="1QJbqN" node="109XeHbQHGj" resolve="docker.config" />
+    <node concept="VtuK3" id="635ahSvecEy" role="234boB">
+      <property role="VuL0s" value="latest" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="elasticluster" />
+    </node>
+    <node concept="3zOwDe" id="635ahSvecEz" role="1OGc9L">
+      <property role="TrG5h" value="cluster.config" />
+      <node concept="3zO_zI" id="635ahSvecE$" role="2KSRPJ">
+        <property role="TrG5h" value="Number of frontend nodes" />
+        <property role="3zO_zz" value="1" />
+      </node>
+      <node concept="3zO_zJ" id="635ahSvecE_" role="2KSRPJ">
+        <property role="TrG5h" value="Number of worker nodes" />
+        <property role="3zO_zz" value="2" />
+      </node>
+      <node concept="1rOJCK" id="635ahSvecEA" role="2KSRPJ">
+        <property role="TrG5h" value="Compute node type" />
+        <property role="1rOIkb" value="n1-standard-2" />
+      </node>
+      <node concept="1mWehH" id="635ahSvecEB" role="2KSRPJ">
+        <property role="TrG5h" value="Disk size for worker nodes" />
+        <property role="1mWegi" value="20" />
+      </node>
+      <node concept="2tz3XF" id="635ahSvecEC" role="2KSRPJ">
+        <property role="TrG5h" value="Folder with manager credentials" />
+        <property role="2tz3XC" value="/Users/manuelesimi/.ssh" />
       </node>
     </node>
   </node>
