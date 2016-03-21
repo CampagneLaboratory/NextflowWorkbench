@@ -2,11 +2,16 @@
 <model ref="r:7f058b1e-dab4-4608-bf78-eceff5a66a56(cloud)">
   <persistence version="9" />
   <languages>
-    <use id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud" version="0" />
-    <use id="c513c71c-d9f3-4625-83dc-6180e1012e68" name="org.campagnelab.cloud.configuration" version="0" />
+    <use id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" name="org.campagnelab.mps.editor2pdf" version="0" />
+    <devkit ref="5b2dfdd5-812f-48af-8989-85fe63dcbc1d(org.campagnelab.compute.cloud)" />
   </languages>
   <imports />
   <registry>
+    <language id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" name="org.campagnelab.mps.editor2pdf">
+      <concept id="893392931327129896" name="org.campagnelab.mps.editor2pdf.structure.DiagramOutputDirectory" flags="ng" index="KZc4b">
+        <property id="893392931327129956" name="path" index="KZc57" />
+      </concept>
+    </language>
     <language id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud">
       <concept id="6538561612137036945" name="org.campagnelab.cloud.structure.ContainerWithEC" flags="ng" index="3zOPYP">
         <property id="7017246219745809549" name="notes" index="1$193f" />
@@ -92,6 +97,10 @@
         <property role="2tz3XC" value="/Users/mas2182/.ssh" />
       </node>
     </node>
+  </node>
+  <node concept="KZc4b" id="2qF0d00RPVR">
+    <property role="TrG5h" value="Figures" />
+    <property role="KZc57" value="/Users/mas2182/Lab/Papers/nextflowworkbench_manuscript/figures" />
   </node>
 </model>
 
