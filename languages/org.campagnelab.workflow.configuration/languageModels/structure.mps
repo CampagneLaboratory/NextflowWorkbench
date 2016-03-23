@@ -472,5 +472,13 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1PwW9iwVJd4">
+    <property role="1pbfSe" value="1102060584" />
+    <property role="3GE5qa" value="processOptions" />
+    <property role="TrG5h" value="ScratchOption" />
+    <property role="34LRSv" value="scratch" />
+    <property role="R4oN_" value="Execute the process in a temporary folder that is local to the execution node" />
+    <ref role="1TJDcQ" node="dhtvqFdzNV" resolve="StringOption" />
+  </node>
 </model>
 

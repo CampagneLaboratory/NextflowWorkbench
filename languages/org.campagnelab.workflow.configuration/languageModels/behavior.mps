@@ -405,5 +405,26 @@
       <node concept="17QB3L" id="5G7wwTND6FG" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="1PwW9iwVJd5">
+    <property role="3GE5qa" value="processOptions" />
+    <ref role="13h7C2" to="dlwq:1PwW9iwVJd4" resolve="ScratchOption" />
+    <node concept="13hLZK" id="1PwW9iwVJd6" role="13h7CW">
+      <node concept="3clFbS" id="1PwW9iwVJd7" role="2VODD2">
+        <node concept="3clFbF" id="1PwW9iwVJd9" role="3cqZAp">
+          <node concept="37vLTI" id="1PwW9iwVJsM" role="3clFbG">
+            <node concept="Xl_RD" id="1PwW9iwVJx4" role="37vLTx">
+              <property role="Xl_RC" value="true" />
+            </node>
+            <node concept="2OqwBi" id="1PwW9iwVJfc" role="37vLTJ">
+              <node concept="13iPFW" id="1PwW9iwVJd8" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1PwW9iwVJk3" role="2OqNvi">
+                <ref role="3TsBF5" to="dlwq:dhtvqFkG5z" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
