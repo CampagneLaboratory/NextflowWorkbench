@@ -152,5 +152,16 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4gEJt6_N$lk">
+    <property role="1pbfSe" value="369556699" />
+    <property role="3GE5qa" value="gridengine" />
+    <property role="TrG5h" value="Preemptibility" />
+    <property role="34LRSv" value="scheduling" />
+    <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
+    <node concept="1TJgyi" id="4gEJt6_N$mi" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
 </model>
 

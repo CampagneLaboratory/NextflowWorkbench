@@ -17,6 +17,7 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -27,6 +28,7 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -174,6 +176,21 @@
         <ref role="1NtTu8" to="45iu:109XeHbQL7w" resolve="flavor" />
       </node>
       <node concept="2iRfu4" id="109XeHbQMfi" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4gEJt6_N$ms">
+    <property role="3GE5qa" value="gridengine" />
+    <ref role="1XX52x" to="45iu:4gEJt6_N$lk" resolve="Preemptibility" />
+    <node concept="3EZMnI" id="4gEJt6_N$m$" role="2wV5jI">
+      <node concept="3F0ifn" id="4gEJt6_N$mA" role="3EZMnx">
+        <property role="3F0ifm" value="Enable preemptibility =" />
+        <node concept="Vb9p2" id="4gEJt6_NUry" role="3F10Kt" />
+      </node>
+      <node concept="3F0A7n" id="4gEJt6_N$mX" role="3EZMnx">
+        <ref role="1NtTu8" to="45iu:4gEJt6_N$mi" resolve="value" />
+        <ref role="1k5W1q" node="5Pg96r0RjZh" resolve="OptionValue" />
+      </node>
+      <node concept="l2Vlx" id="4gEJt6_N$mB" role="2iSdaV" />
     </node>
   </node>
 </model>

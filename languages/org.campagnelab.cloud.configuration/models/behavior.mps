@@ -96,6 +96,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -118,6 +121,11 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -420,6 +428,51 @@
             <node concept="TSZUe" id="2rIRh_WQPw$" role="2OqNvi">
               <node concept="37vLTw" id="2rIRh_WQPAq" role="25WWJ7">
                 <ref role="3cqZAo" node="2rIRh_WQ_OD" resolve="disk" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4gEJt6_NBz0" role="3cqZAp">
+          <node concept="3cpWsn" id="4gEJt6_NBz1" role="3cpWs9">
+            <property role="TrG5h" value="pre" />
+            <node concept="3Tqbb2" id="4gEJt6_NBz2" role="1tU5fm">
+              <ref role="ehGHo" to="45iu:4gEJt6_N$lk" resolve="Preemptibility" />
+            </node>
+            <node concept="2ShNRf" id="4gEJt6_NBz3" role="33vP2m">
+              <node concept="3zrR0B" id="4gEJt6_NBz4" role="2ShVmc">
+                <node concept="3Tqbb2" id="4gEJt6_NBz5" role="3zrR0E">
+                  <ref role="ehGHo" to="45iu:4gEJt6_N$lk" resolve="Preemptibility" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4gEJt6_NBz6" role="3cqZAp">
+          <node concept="37vLTI" id="4gEJt6_NCMz" role="3clFbG">
+            <node concept="3clFbT" id="4gEJt6_NCOE" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="4gEJt6_NCr$" role="37vLTJ">
+              <node concept="37vLTw" id="4gEJt6_NCnJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="4gEJt6_NBz1" resolve="pre" />
+              </node>
+              <node concept="3TrcHB" id="4gEJt6_NCAA" role="2OqNvi">
+                <ref role="3TsBF5" to="45iu:4gEJt6_N$mi" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4gEJt6_NAPL" role="3cqZAp">
+          <node concept="2OqwBi" id="4gEJt6_NAPM" role="3clFbG">
+            <node concept="2OqwBi" id="4gEJt6_NAPN" role="2Oq$k0">
+              <node concept="13iPFW" id="4gEJt6_NAPO" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4gEJt6_NAPP" role="2OqNvi">
+                <ref role="3TtcxE" to="45iu:3pj0Oa6G7SH" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="4gEJt6_NAPQ" role="2OqNvi">
+              <node concept="37vLTw" id="4gEJt6_NGa_" role="25WWJ7">
+                <ref role="3cqZAo" node="4gEJt6_NBz1" resolve="pre" />
               </node>
             </node>
           </node>
@@ -1134,6 +1187,53 @@
         </node>
       </node>
       <node concept="17QB3L" id="109XeHbQL7F" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4gEJt6_N$n7">
+    <property role="3GE5qa" value="gridengine" />
+    <ref role="13h7C2" to="45iu:4gEJt6_N$lk" resolve="Preemptibility" />
+    <node concept="13hLZK" id="4gEJt6_N$n8" role="13h7CW">
+      <node concept="3clFbS" id="4gEJt6_N$n9" role="2VODD2">
+        <node concept="3clFbF" id="4gEJt6_N_6B" role="3cqZAp">
+          <node concept="37vLTI" id="4gEJt6_N_q4" role="3clFbG">
+            <node concept="Xl_RD" id="4gEJt6_N_rN" role="37vLTx">
+              <property role="Xl_RC" value="Preemptibility" />
+            </node>
+            <node concept="2OqwBi" id="4gEJt6_N_8S" role="37vLTJ">
+              <node concept="13iPFW" id="4gEJt6_N_6A" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4gEJt6_N_eg" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4gEJt6_N$na" role="13h7CS">
+      <property role="TrG5h" value="getValue" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="6_LFt8ZwlHB" resolve="getValue" />
+      <node concept="3Tm1VV" id="4gEJt6_N$nb" role="1B3o_S" />
+      <node concept="3clFbS" id="4gEJt6_N$ne" role="3clF47">
+        <node concept="3clFbF" id="4gEJt6_N$D4" role="3cqZAp">
+          <node concept="3K4zz7" id="4gEJt6_N_59" role="3clFbG">
+            <node concept="Xl_RD" id="4gEJt6_N_6x" role="3K4E3e">
+              <property role="Xl_RC" value="preemptible" />
+            </node>
+            <node concept="Xl_RD" id="4gEJt6_N_uv" role="3K4GZi">
+              <property role="Xl_RC" value="" />
+            </node>
+            <node concept="2OqwBi" id="4gEJt6_N$FZ" role="3K4Cdx">
+              <node concept="13iPFW" id="4gEJt6_N$D3" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4gEJt6_N$Xy" role="2OqNvi">
+                <ref role="3TsBF5" to="45iu:4gEJt6_N$mi" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4gEJt6_N$nf" role="3clF45" />
     </node>
   </node>
 </model>
