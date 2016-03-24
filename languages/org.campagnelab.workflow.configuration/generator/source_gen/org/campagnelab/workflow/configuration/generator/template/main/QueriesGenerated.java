@@ -40,6 +40,9 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_4347565441058834641(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e33L, 0x5c331306bed94e35L, "hostname")), MetaAdapterFactory.getProperty(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e3aL, 0x5c331306bed94e3bL, "value"));
   }
+  public static Object propertyMacro_GetPropertyValue_2116956346010560070(final PropertyMacroContext _context) {
+    return SModelOperations.getModelName(SNodeOperations.getModel(_context.getNode()));
+  }
   public static Object propertyMacro_GetPropertyValue_4347565441058826089(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e33L, 0x5c331306bed94e38L, "keyfile")), MetaAdapterFactory.getProperty(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e3aL, 0x5c331306bed94e3bL, "value"));
   }
