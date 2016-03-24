@@ -8672,7 +8672,7 @@
   <node concept="VuPG2" id="3kWAjw$5azY">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="ElasticlusterUbuntu" />
-    <property role="2EHzVy" value="wrote /Users/manuelesimi/Library/Caches/MPS33/tmp/dockerfile3708187937426892251.txt" />
+    <property role="2EHzVy" value="wrote /Users/manuelesimi/Library/Caches/MPS33/tmp/dockerfile3111338829874059323.txt" />
     <node concept="VuO64" id="3kWAjw$5azZ" role="VuOVn">
       <node concept="VtuK3" id="3kWAjw$5a$0" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -8747,7 +8747,7 @@
     <node concept="VugRC" id="5EXCMiTrFiF" role="VuOVn">
       <node concept="19SGf9" id="5EXCMiTrFlF" role="Vugyn">
         <node concept="19SUe$" id="5EXCMiTrFlG" role="19SJt6">
-          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new15&quot;" />
+          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new16&quot;" />
         </node>
       </node>
     </node>
@@ -8771,16 +8771,16 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="4gEJt6_NVYa" role="3blhQR">
-      <ref role="3blhQY" node="4gEJt6_NVY9" resolve="ElasticlusterUbuntu_Image" />
+    <node concept="3blhQM" id="1PwW9iwVCFI" role="3blhQR">
+      <ref role="3blhQY" node="1PwW9iwVCFH" resolve="ElasticlusterUbuntu_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="4gEJt6_NVY9">
-    <property role="2E_JEh" value="ansible PyYAML pycrypto MarkupSafebdf259e22fee" />
+  <node concept="2E_JVc" id="1PwW9iwVCFH">
+    <property role="2E_JEh" value="e7deb687ea07" />
     <property role="TrG5h" value="ElasticlusterUbuntu_Image" />
     <property role="GSh9r" value="artifacts/elasticluster:1.0" />
     <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticlusterUbuntu" />
-    <node concept="Gyxd7" id="4gEJt6_NVYH" role="Gyxcj">
+    <node concept="Gyxd7" id="1PwW9iwVCFN" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="elasticluster" />
       <property role="Gyxd1" value="1.0" />
