@@ -173,15 +173,6 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F1sOY" id="1PwW9iwX7yk" role="3EZMnx">
-        <ref role="1NtTu8" to="dlwq:1PwW9iwX7uh" />
-        <node concept="ljvvj" id="1PwW9iwX7zI" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="1PwW9iwX7zJ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F1sOY" id="5KN4KqYQkYt" role="3EZMnx">
         <ref role="1NtTu8" to="dlwq:5KN4KqYQkSS" />
         <node concept="lj46D" id="5KN4KqYQkYu" role="3F10Kt">
