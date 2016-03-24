@@ -120,6 +120,7 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
@@ -680,7 +681,7 @@
           <node concept="2pNUuL" id="5OPtsPp$l8" role="2pNNFR">
             <property role="2pNUuO" value="name" />
             <node concept="2pMdtt" id="5OPtsPp$l9" role="2pMdts">
-              <property role="2pMdty" value="remote.job.dir" />
+              <property role="2pMdty" value="remote.job.area" />
             </node>
           </node>
           <node concept="2pNUuL" id="1d37Cfp1jA1" role="2pNNFR">
@@ -818,6 +819,40 @@
             <property role="2pNUuO" value="value" />
           </node>
         </node>
+        <node concept="2pNNFK" id="1PwW9iwXXwL" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="1PwW9iwXXwM" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="1PwW9iwXXwN" role="2pMdts">
+              <property role="2pMdty" value="source.model" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="1PwW9iwXXwO" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="1PwW9iwXYp4" role="2pMdts">
+              <property role="2pMdty" value="model" />
+              <node concept="17Uvod" id="1PwW9iwXYp5" role="lGtFl">
+                <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                <property role="2qtEX9" value="text" />
+                <node concept="3zFVjK" id="1PwW9iwXYp6" role="3zH0cK">
+                  <node concept="3clFbS" id="1PwW9iwXYp7" role="2VODD2">
+                    <node concept="3clFbF" id="1PwW9iwXYp8" role="3cqZAp">
+                      <node concept="2OqwBi" id="1PwW9iwXYUE" role="3clFbG">
+                        <node concept="2OqwBi" id="1PwW9iwXYCg" role="2Oq$k0">
+                          <node concept="30H73N" id="1PwW9iwXY_x" role="2Oq$k0" />
+                          <node concept="I4A8Y" id="1PwW9iwXYPP" role="2OqNvi" />
+                        </node>
+                        <node concept="LkI2h" id="1PwW9iwXYZO" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="1PwW9iwXXg7" role="3o6s8t" />
         <node concept="2pNNFK" id="5OPtsPp$nx" role="3o6s8t">
           <property role="2pNNFO" value="property" />
           <property role="qg3DV" value="true" />
@@ -942,6 +977,22 @@
             </node>
           </node>
         </node>
+        <node concept="2pNNFK" id="1PwW9iwXZ46" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="1PwW9iwXZ47" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="1PwW9iwXZ48" role="2pMdts">
+              <property role="2pMdty" value="remote.job.dir" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="1PwW9iwXZ49" role="2pNNFR">
+            <property role="2pNUuO" value="location" />
+            <node concept="2pMdtt" id="1PwW9iwXZ4a" role="2pMdts">
+              <property role="2pMdty" value="${remote.job.area}/${source.model}/${workflow.name}" />
+            </node>
+          </node>
+        </node>
         <node concept="3o6iSG" id="1PwW9iwXlk_" role="3o6s8t" />
         <node concept="2pNNFK" id="5OPtsPp$vZ" role="3o6s8t">
           <property role="2pNNFO" value="target" />
@@ -975,39 +1026,10 @@
             <node concept="2pNUuL" id="5OPtsPp$GP" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp$I1" role="2pMdts">
-                <property role="2pMdty" value="mkdir -p ${remote.job.dir}/${workflow.name}" />
+                <property role="2pMdty" value="mkdir -p ${remote.job.dir}" />
               </node>
             </node>
           </node>
-          <node concept="2pNNFK" id="1PwW9iwWNoJ" role="3o6s8t">
-            <property role="2pNNFO" value="sshexec" />
-            <property role="qg3DV" value="true" />
-            <node concept="2pNUuL" id="1PwW9iwWNoK" role="2pNNFR">
-              <property role="2pNUuO" value="host" />
-              <node concept="2pMdtt" id="1PwW9iwWNoL" role="2pMdts">
-                <property role="2pMdty" value="${submission.machine}" />
-              </node>
-            </node>
-            <node concept="2pNUuL" id="1PwW9iwWNoM" role="2pNNFR">
-              <property role="2pNUuO" value="username" />
-              <node concept="2pMdtt" id="1PwW9iwWNoN" role="2pMdts">
-                <property role="2pMdty" value="${remote.username}" />
-              </node>
-            </node>
-            <node concept="2pNUuL" id="1PwW9iwWNoO" role="2pNNFR">
-              <property role="2pNUuO" value="keyfile" />
-              <node concept="2pMdtt" id="1PwW9iwWNoP" role="2pMdts">
-                <property role="2pMdty" value="${keyfile}" />
-              </node>
-            </node>
-            <node concept="2pNUuL" id="1PwW9iwWNoQ" role="2pNNFR">
-              <property role="2pNUuO" value="command" />
-              <node concept="2pMdtt" id="1PwW9iwWNoR" role="2pMdts">
-                <property role="2pMdty" value="mkdir -p ${remote.work.area}/${workflow.name}" />
-              </node>
-            </node>
-          </node>
-          <node concept="3o6iSG" id="1PwW9iwWNo6" role="3o6s8t" />
         </node>
         <node concept="3o6iSG" id="5OPtsPp$I4" role="3o6s8t" />
         <node concept="2pNNFK" id="5OPtsPp$Kg" role="3o6s8t">
@@ -1029,7 +1051,7 @@
             <node concept="2pNUuL" id="5OPtsPp$S2" role="2pNNFR">
               <property role="2pNUuO" value="todir" />
               <node concept="2pMdtt" id="5OPtsPp$Tb" role="2pMdts">
-                <property role="2pMdty" value="${remote.username}@${submission.machine}:${remote.job.dir}/${workflow.name}" />
+                <property role="2pMdty" value="${remote.username}@${submission.machine}:${remote.job.dir}/" />
               </node>
             </node>
             <node concept="2pNUuL" id="5OPtsPp$Up" role="2pNNFR">
@@ -1089,7 +1111,7 @@
             <node concept="2pNUuL" id="5OPtsPp_dw" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp_fa" role="2pMdts">
-                <property role="2pMdty" value="chmod a+x ${remote.job.dir}/${workflow.name}/runNextflow" />
+                <property role="2pMdty" value="chmod a+x ${remote.job.dir}/runNextflow" />
               </node>
             </node>
           </node>
@@ -1133,7 +1155,7 @@
             <node concept="2pNUuL" id="5OPtsPp_p0" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp_sx" role="2pMdts">
-                <property role="2pMdty" value="cd ${remote.job.dir}/${workflow.name}; ./runNextflow ${remote.job.dir}/${workflow.name}/${workflow.script} ${remote.job.dir}/${workflow.name}/${jar.script} ${nextflow.options}" />
+                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${remote.job.dir}/${workflow.script} ${remote.job.dir}/${jar.script} ${nextflow.options}" />
               </node>
             </node>
           </node>
@@ -1171,7 +1193,7 @@
             <node concept="2pNUuL" id="5OPtsPp_AP" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp_AQ" role="2pMdts">
-                <property role="2pMdty" value="rm -rf ${remote.dir}" />
+                <property role="2pMdty" value="rm -rf ${remote.job.dir}" />
               </node>
             </node>
           </node>
