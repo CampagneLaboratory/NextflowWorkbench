@@ -589,12 +589,6 @@
     <node concept="34ZRQx" id="7TupKkjs9RB" role="34ZRRx">
       <property role="34ZRQb" value="jarScript=$2" />
     </node>
-    <node concept="34ZRQx" id="1PwW9iwXKoJ" role="34ZRRx">
-      <property role="34ZRQb" value="shift" />
-    </node>
-    <node concept="34ZRQx" id="1PwW9iwWZxX" role="34ZRRx">
-      <property role="34ZRQb" value="workArea=$3" />
-    </node>
     <node concept="34ZRQx" id="1PwW9iwXKp$" role="34ZRRx">
       <property role="34ZRQb" value="shift" />
     </node>
@@ -609,9 +603,6 @@
     </node>
     <node concept="34ZRQx" id="7TupKkjs9RQ" role="34ZRRx">
       <property role="34ZRQb" value="export NXF_CLASSPATH=${jarScript}" />
-    </node>
-    <node concept="34ZRQx" id="1PwW9iwWKIo" role="34ZRRx">
-      <property role="34ZRQb" value="export NXF_WORK=${workArea}" />
     </node>
     <node concept="34ZRQx" id="3LlDVJTCz7k" role="34ZRRx">
       <property role="34ZRQb" value="echo &quot;Executing ${nextflowScript} with options: ${containerOptions}&quot;" />
@@ -762,48 +753,6 @@
                           </node>
                         </node>
                         <node concept="3TrcHB" id="3LlDVJS4Qn8" role="2OqNvi">
-                          <ref role="3TsBF5" to="dlwq:5KN4KqYQkSV" resolve="value" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2pNNFK" id="1PwW9iwWLkg" role="3o6s8t">
-          <property role="2pNNFO" value="property" />
-          <property role="qg3DV" value="true" />
-          <node concept="2pNUuL" id="1PwW9iwWLkh" role="2pNNFR">
-            <property role="2pNUuO" value="name" />
-            <node concept="2pMdtt" id="1PwW9iwWLki" role="2pMdts">
-              <property role="2pMdty" value="remote.work.area" />
-            </node>
-          </node>
-          <node concept="2pNUuL" id="1PwW9iwWLkj" role="2pNNFR">
-            <property role="2pNUuO" value="location" />
-            <node concept="2pMdtt" id="1PwW9iwX7Ft" role="2pMdts">
-              <property role="2pMdty" value="work.area" />
-              <node concept="17Uvod" id="1PwW9iwX7Fu" role="lGtFl">
-                <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
-                <property role="2qtEX9" value="text" />
-                <node concept="3zFVjK" id="1PwW9iwX7Fv" role="3zH0cK">
-                  <node concept="3clFbS" id="1PwW9iwX7Fw" role="2VODD2">
-                    <node concept="3clFbF" id="1PwW9iwX7Fx" role="3cqZAp">
-                      <node concept="2OqwBi" id="1PwW9iwXhGC" role="3clFbG">
-                        <node concept="2OqwBi" id="1PwW9iwXhoY" role="2Oq$k0">
-                          <node concept="2OqwBi" id="1PwW9iwXhbh" role="2Oq$k0">
-                            <node concept="30H73N" id="1PwW9iwXh8C" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="1PwW9iwXhgi" role="2OqNvi">
-                              <ref role="3Tt5mk" to="dlwq:5KN4KqZiCvA" />
-                            </node>
-                          </node>
-                          <node concept="3TrEf2" id="1PwW9iwXhyz" role="2OqNvi">
-                            <ref role="3Tt5mk" to="dlwq:1PwW9iwX7uh" />
-                          </node>
-                        </node>
-                        <node concept="3TrcHB" id="1PwW9iwXhOC" role="2OqNvi">
                           <ref role="3TsBF5" to="dlwq:5KN4KqYQkSV" resolve="value" />
                         </node>
                       </node>
@@ -1184,7 +1133,7 @@
             <node concept="2pNUuL" id="5OPtsPp_p0" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp_sx" role="2pMdts">
-                <property role="2pMdty" value="cd ${remote.job.dir}/${workflow.name}; ./runNextflow ${remote.job.dir}/${workflow.name}/${workflow.script} ${remote.job.dir}/${workflow.name}/${jar.script} ${remote.work.area}/${workflow.name} ${nextflow.options}" />
+                <property role="2pMdty" value="cd ${remote.job.dir}/${workflow.name}; ./runNextflow ${remote.job.dir}/${workflow.name}/${workflow.script} ${remote.job.dir}/${workflow.name}/${jar.script} ${nextflow.options}" />
               </node>
             </node>
           </node>
