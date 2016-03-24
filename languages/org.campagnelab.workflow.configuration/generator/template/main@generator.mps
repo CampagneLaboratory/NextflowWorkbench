@@ -74,6 +74,9 @@
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
+      <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
+        <child id="1177093586806" name="templateNode" index="gfFT$" />
+      </concept>
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
@@ -94,6 +97,7 @@
       <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
+        <child id="1194989344771" name="alternativeConsequence" index="UU_$l" />
         <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
       </concept>
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
@@ -145,7 +149,6 @@
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
-      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
@@ -580,14 +583,23 @@
     <node concept="34ZRQx" id="3LlDVJTCyYY" role="34ZRRx">
       <property role="34ZRQb" value="nextflowScript=$1" />
     </node>
+    <node concept="34ZRQx" id="1PwW9iwXKnY" role="34ZRRx">
+      <property role="34ZRQb" value="shift" />
+    </node>
     <node concept="34ZRQx" id="7TupKkjs9RB" role="34ZRRx">
       <property role="34ZRQb" value="jarScript=$2" />
+    </node>
+    <node concept="34ZRQx" id="1PwW9iwXKoJ" role="34ZRRx">
+      <property role="34ZRQb" value="shift" />
     </node>
     <node concept="34ZRQx" id="1PwW9iwWZxX" role="34ZRRx">
       <property role="34ZRQb" value="workArea=$3" />
     </node>
+    <node concept="34ZRQx" id="1PwW9iwXKp$" role="34ZRRx">
+      <property role="34ZRQb" value="shift" />
+    </node>
     <node concept="34ZRQx" id="1nj$XVfYkNW" role="34ZRRx">
-      <property role="34ZRQb" value="containerOptions=$4" />
+      <property role="34ZRQb" value="containerOptions=&quot;$@&quot;" />
     </node>
     <node concept="34ZRQx" id="3LlDVJTCz1G" role="34ZRRx">
       <property role="34ZRQb" value="SCRIPT_DIR=&quot;$( cd &quot;$( dirname &quot;${BASH_SOURCE[0]}&quot; )&quot; &amp;&amp; pwd )&quot;" />
@@ -905,50 +917,20 @@
             </node>
           </node>
         </node>
-        <node concept="2pNNFK" id="1nj$XVfYh3q" role="3o6s8t">
-          <property role="2pNNFO" value="property" />
-          <property role="qg3DV" value="true" />
-          <node concept="2pNUuL" id="1nj$XVfYh3r" role="2pNNFR">
-            <property role="2pNUuO" value="name" />
-            <node concept="2pMdtt" id="1nj$XVfYh3s" role="2pMdts">
-              <property role="2pMdty" value="container.options" />
-            </node>
-          </node>
-          <node concept="2pNUuL" id="1nj$XVfYh3t" role="2pNNFR">
-            <property role="2pNUuO" value="value" />
-            <node concept="2pMdtt" id="1nj$XVfYh3u" role="2pMdts" />
-          </node>
-          <node concept="1W57fq" id="1nj$XVfYh3v" role="lGtFl">
-            <node concept="3IZrLx" id="1nj$XVfYh3w" role="3IZSJc">
-              <node concept="3clFbS" id="1nj$XVfYh3x" role="2VODD2">
-                <node concept="3clFbF" id="1nj$XVfYh3y" role="3cqZAp">
-                  <node concept="2OqwBi" id="1nj$XVfYh3z" role="3clFbG">
-                    <node concept="2OqwBi" id="1nj$XVfYh3_" role="2Oq$k0">
-                      <node concept="30H73N" id="1nj$XVfYh3A" role="2Oq$k0" />
-                      <node concept="3Tsc0h" id="1nj$XVfYh3B" role="2OqNvi">
-                        <ref role="3TtcxE" to="dlwq:1nj$XVfY5Rs" />
-                      </node>
-                    </node>
-                    <node concept="1v1jN8" id="1nj$XVfYiO5" role="2OqNvi" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="3o6iSG" id="1PwW9iwXFSr" role="3o6s8t" />
         <node concept="2pNNFK" id="1nj$XVfYf0R" role="3o6s8t">
           <property role="2pNNFO" value="property" />
           <property role="qg3DV" value="true" />
           <node concept="2pNUuL" id="1nj$XVfYf0S" role="2pNNFR">
             <property role="2pNUuO" value="name" />
             <node concept="2pMdtt" id="1nj$XVfYf0T" role="2pMdts">
-              <property role="2pMdty" value="container.options" />
+              <property role="2pMdty" value="nextflow.options" />
             </node>
           </node>
           <node concept="2pNUuL" id="1nj$XVfYf0U" role="2pNNFR">
             <property role="2pNUuO" value="value" />
             <node concept="2pMdtt" id="1nj$XVfYf0V" role="2pMdts">
-              <property role="2pMdty" value="--with-docker" />
+              <property role="2pMdty" value="${nextflowOptions} --with-docker" />
             </node>
           </node>
           <node concept="1W57fq" id="1nj$XVfYfk4" role="lGtFl">
@@ -970,6 +952,24 @@
                       </node>
                     </node>
                     <node concept="3GX2aA" id="1nj$XVfYgtt" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="gft3U" id="1PwW9iwXLqC" role="UU_$l">
+              <node concept="2pNNFK" id="1PwW9iwXLtS" role="gfFT$">
+                <property role="2pNNFO" value="property" />
+                <property role="qg3DV" value="true" />
+                <node concept="2pNUuL" id="1PwW9iwXLu8" role="2pNNFR">
+                  <property role="2pNUuO" value="name" />
+                  <node concept="2pMdtt" id="1PwW9iwXLud" role="2pMdts">
+                    <property role="2pMdty" value="nextflow.options" />
+                  </node>
+                </node>
+                <node concept="2pNUuL" id="1PwW9iwXLun" role="2pNNFR">
+                  <property role="2pNUuO" value="value" />
+                  <node concept="2pMdtt" id="1PwW9iwXLu$" role="2pMdts">
+                    <property role="2pMdty" value="${nextflowOptions}" />
                   </node>
                 </node>
               </node>
@@ -1190,7 +1190,7 @@
             <node concept="2pNUuL" id="5OPtsPp_p0" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp_sx" role="2pMdts">
-                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${remote.job.dir}/${workflow.script} ${remote.job.dir}/${jar.script} ${remote.work.area}/${workflow.name} ${container.options}" />
+                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${remote.job.dir}/${workflow.script} ${remote.job.dir}/${jar.script} ${remote.work.area}/${workflow.name} ${nextflow.options}" />
               </node>
             </node>
           </node>
