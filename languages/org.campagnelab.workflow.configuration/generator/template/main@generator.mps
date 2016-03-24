@@ -702,31 +702,25 @@
                 <node concept="3zFVjK" id="1d37Cfp1jW1" role="3zH0cK">
                   <node concept="3clFbS" id="1d37Cfp1jW2" role="2VODD2">
                     <node concept="3clFbF" id="1d37Cfp1k9F" role="3cqZAp">
-                      <node concept="3cpWs3" id="1d37CfpkPYe" role="3clFbG">
-                        <node concept="2YIFZM" id="1d37CfpkQjf" role="3uHU7w">
-                          <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                          <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                      <node concept="3cpWs3" id="1d37Cfp1m3k" role="3clFbG">
+                        <node concept="2OqwBi" id="1d37Cfp1kGp" role="3uHU7B">
+                          <node concept="2OqwBi" id="1d37Cfp1ke6" role="2Oq$k0">
+                            <node concept="2OqwBi" id="5wD$zX25wHG" role="2Oq$k0">
+                              <node concept="30H73N" id="1d37Cfp1k9E" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="5wD$zX25x98" role="2OqNvi">
+                                <ref role="3Tt5mk" to="dlwq:5KN4KqZiCvA" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="1d37Cfp1krv" role="2OqNvi">
+                              <ref role="3Tt5mk" to="dlwq:5KN4KqYQkSR" />
+                            </node>
+                          </node>
+                          <node concept="3TrcHB" id="1d37Cfp1lAC" role="2OqNvi">
+                            <ref role="3TsBF5" to="dlwq:5KN4KqYQkSV" resolve="value" />
+                          </node>
                         </node>
-                        <node concept="3cpWs3" id="1d37Cfp1m3k" role="3uHU7B">
-                          <node concept="2OqwBi" id="1d37Cfp1kGp" role="3uHU7B">
-                            <node concept="2OqwBi" id="1d37Cfp1ke6" role="2Oq$k0">
-                              <node concept="2OqwBi" id="5wD$zX25wHG" role="2Oq$k0">
-                                <node concept="30H73N" id="1d37Cfp1k9E" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="5wD$zX25x98" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="dlwq:5KN4KqZiCvA" />
-                                </node>
-                              </node>
-                              <node concept="3TrEf2" id="1d37Cfp1krv" role="2OqNvi">
-                                <ref role="3Tt5mk" to="dlwq:5KN4KqYQkSR" />
-                              </node>
-                            </node>
-                            <node concept="3TrcHB" id="1d37Cfp1lAC" role="2OqNvi">
-                              <ref role="3TsBF5" to="dlwq:5KN4KqYQkSV" resolve="value" />
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="1d37Cfp1maW" role="3uHU7w">
-                            <property role="Xl_RC" value="/" />
-                          </node>
+                        <node concept="Xl_RD" id="1d37Cfp1maW" role="3uHU7w">
+                          <property role="Xl_RC" value="/" />
                         </node>
                       </node>
                     </node>
@@ -930,7 +924,7 @@
           <node concept="2pNUuL" id="1nj$XVfYf0U" role="2pNNFR">
             <property role="2pNUuO" value="value" />
             <node concept="2pMdtt" id="1nj$XVfYf0V" role="2pMdts">
-              <property role="2pMdty" value="${nextflowOptions} --with-docker" />
+              <property role="2pMdty" value="--with-docker ${nextflowOptions}" />
             </node>
           </node>
           <node concept="1W57fq" id="1nj$XVfYfk4" role="lGtFl">
@@ -1032,7 +1026,7 @@
             <node concept="2pNUuL" id="5OPtsPp$GP" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp$I1" role="2pMdts">
-                <property role="2pMdty" value="mkdir -p ${remote.job.dir}" />
+                <property role="2pMdty" value="mkdir -p ${remote.job.dir}/${workflow.name}" />
               </node>
             </node>
           </node>
@@ -1086,7 +1080,7 @@
             <node concept="2pNUuL" id="5OPtsPp$S2" role="2pNNFR">
               <property role="2pNUuO" value="todir" />
               <node concept="2pMdtt" id="5OPtsPp$Tb" role="2pMdts">
-                <property role="2pMdty" value="${remote.username}@${submission.machine}:${remote.job.dir}" />
+                <property role="2pMdty" value="${remote.username}@${submission.machine}:${remote.job.dir}/${workflow.name}" />
               </node>
             </node>
             <node concept="2pNUuL" id="5OPtsPp$Up" role="2pNNFR">
@@ -1146,7 +1140,7 @@
             <node concept="2pNUuL" id="5OPtsPp_dw" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp_fa" role="2pMdts">
-                <property role="2pMdty" value="chmod a+x ${remote.job.dir}/runNextflow" />
+                <property role="2pMdty" value="chmod a+x ${remote.job.dir}/${workflow.name}/runNextflow" />
               </node>
             </node>
           </node>
@@ -1190,7 +1184,7 @@
             <node concept="2pNUuL" id="5OPtsPp_p0" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp_sx" role="2pMdts">
-                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${remote.job.dir}/${workflow.script} ${remote.job.dir}/${jar.script} ${remote.work.area}/${workflow.name} ${nextflow.options}" />
+                <property role="2pMdty" value="cd ${remote.job.dir}/${workflow.name}; ./runNextflow ${remote.job.dir}/${workflow.name}/${workflow.script} ${remote.job.dir}/${workflow.name}/${jar.script} ${remote.work.area}/${workflow.name} ${nextflow.options}" />
               </node>
             </node>
           </node>
