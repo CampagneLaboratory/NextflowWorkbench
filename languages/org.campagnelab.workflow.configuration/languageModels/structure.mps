@@ -123,6 +123,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5KN4KqYQkSJ" resolve="JobArea" />
     </node>
+    <node concept="1TJgyj" id="1PwW9iwX7uh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="workArea" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1PwW9iwX7wU" resolve="WorkArea" />
+    </node>
     <node concept="1TJgyj" id="5KN4KqYQkSS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="keyfile" />
@@ -479,6 +485,14 @@
     <property role="34LRSv" value="scratch" />
     <property role="R4oN_" value="Execute the process in a temporary folder that is local to the execution node" />
     <ref role="1TJDcQ" node="dhtvqFdzNV" resolve="StringOption" />
+  </node>
+  <node concept="1TIwiD" id="1PwW9iwX7wU">
+    <property role="3GE5qa" value="remoteSubmission" />
+    <property role="TrG5h" value="WorkArea" />
+    <property role="34LRSv" value="workarea" />
+    <property role="R4oN_" value="Folder where where working files are stored" />
+    <property role="1pbfSe" value="1101698866" />
+    <ref role="1TJDcQ" node="5KN4KqYQkSU" resolve="SubmissionOption" />
   </node>
 </model>
 
