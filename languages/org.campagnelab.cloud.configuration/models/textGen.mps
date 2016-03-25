@@ -37,6 +37,8 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -51,6 +53,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -89,6 +92,9 @@
       </concept>
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
+      <concept id="1234794705341" name="jetbrains.mps.lang.textGen.structure.FoundErrorOperation" flags="nn" index="1ZvZ2y">
+        <child id="1237470722868" name="text" index="v0bCk" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -155,77 +161,152 @@
           </node>
           <node concept="l8MVK" id="5EXCMiTrXJ$" role="lcghm" />
         </node>
+        <node concept="3cpWs8" id="1PwW9iwZZMu" role="3cqZAp">
+          <node concept="3cpWsn" id="1PwW9iwZZMx" role="3cpWs9">
+            <property role="TrG5h" value="clientID" />
+            <node concept="17QB3L" id="1PwW9iwZZMs" role="1tU5fm" />
+            <node concept="2OqwBi" id="1PwW9ix00sq" role="33vP2m">
+              <node concept="2OqwBi" id="1PwW9ix00sr" role="2Oq$k0">
+                <node concept="2OqwBi" id="1PwW9ix00ss" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1PwW9ix00st" role="2Oq$k0">
+                    <node concept="117lpO" id="1PwW9ix00su" role="2Oq$k0" />
+                    <node concept="I4A8Y" id="1PwW9ix00sv" role="2OqNvi" />
+                  </node>
+                  <node concept="3lApI0" id="1PwW9ix00sw" role="2OqNvi">
+                    <ref role="3lApI3" to="5lbf:5EXCMiTrJMh" resolve="ContainerWithEC" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="1PwW9ix00sx" role="2OqNvi" />
+              </node>
+              <node concept="2qgKlT" id="1PwW9ix00sy" role="2OqNvi">
+                <ref role="37wK5l" to="5lwc:7vFwTqSSm$y" resolve="getClientID" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1PwW9ix01ay" role="3cqZAp">
+          <node concept="3clFbS" id="1PwW9ix01a$" role="3clFbx">
+            <node concept="1ZvZ2y" id="1PwW9ix02fp" role="3cqZAp">
+              <node concept="Xl_RD" id="1PwW9ix02fy" role="v0bCk">
+                <property role="Xl_RC" value="Client ID is null. Check MPS &gt; Preferences &gt; Other Settings &gt; GoogleCloud." />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="1PwW9ix0qTv" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="1PwW9ix01Ii" role="3clFbw">
+            <node concept="37vLTw" id="1PwW9ix01su" role="2Oq$k0">
+              <ref role="3cqZAo" node="1PwW9iwZZMx" resolve="clientID" />
+            </node>
+            <node concept="17RlXB" id="1PwW9ix025x" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="lc7rE" id="5EXCMiTrXKg" role="3cqZAp">
           <node concept="la8eA" id="5EXCMiTrXKO" role="lcghm">
             <property role="lacIc" value="gce_client_id=" />
           </node>
           <node concept="l9hG8" id="7vFwTqSSpI0" role="lcghm">
-            <node concept="2OqwBi" id="7vFwTqSSpI1" role="lb14g">
-              <node concept="2OqwBi" id="7vFwTqSSpI2" role="2Oq$k0">
-                <node concept="2OqwBi" id="7vFwTqSSpI3" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7vFwTqSSpI4" role="2Oq$k0">
-                    <node concept="117lpO" id="7vFwTqSSpI5" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="7vFwTqSSpI6" role="2OqNvi" />
-                  </node>
-                  <node concept="3lApI0" id="7vFwTqSSpI7" role="2OqNvi">
-                    <ref role="3lApI3" to="5lbf:5EXCMiTrJMh" resolve="ContainerWithEC" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="7vFwTqSSpI8" role="2OqNvi" />
-              </node>
-              <node concept="2qgKlT" id="7vFwTqSSpVt" role="2OqNvi">
-                <ref role="37wK5l" to="5lwc:7vFwTqSSm$y" resolve="getClientID" />
-              </node>
+            <node concept="37vLTw" id="1PwW9ix0c$z" role="lb14g">
+              <ref role="3cqZAo" node="1PwW9iwZZMx" resolve="clientID" />
             </node>
           </node>
           <node concept="l8MVK" id="5EXCMiTrXLg" role="lcghm" />
+        </node>
+        <node concept="3cpWs8" id="1PwW9ix0vMZ" role="3cqZAp">
+          <node concept="3cpWsn" id="1PwW9ix0vN0" role="3cpWs9">
+            <property role="TrG5h" value="clientSecret" />
+            <node concept="17QB3L" id="1PwW9ix0vN1" role="1tU5fm" />
+            <node concept="2OqwBi" id="1PwW9ix0wA$" role="33vP2m">
+              <node concept="2OqwBi" id="1PwW9ix0wA_" role="2Oq$k0">
+                <node concept="2OqwBi" id="1PwW9ix0wAA" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1PwW9ix0wAB" role="2Oq$k0">
+                    <node concept="117lpO" id="1PwW9ix0wAC" role="2Oq$k0" />
+                    <node concept="I4A8Y" id="1PwW9ix0wAD" role="2OqNvi" />
+                  </node>
+                  <node concept="3lApI0" id="1PwW9ix0wAE" role="2OqNvi">
+                    <ref role="3lApI3" to="5lbf:5EXCMiTrJMh" resolve="ContainerWithEC" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="1PwW9ix0wAF" role="2OqNvi" />
+              </node>
+              <node concept="2qgKlT" id="1PwW9ix0wAG" role="2OqNvi">
+                <ref role="37wK5l" to="5lwc:65yh485oPzU" resolve="getSecret" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1PwW9ix0vNb" role="3cqZAp">
+          <node concept="3clFbS" id="1PwW9ix0vNc" role="3clFbx">
+            <node concept="1ZvZ2y" id="1PwW9ix0vNd" role="3cqZAp">
+              <node concept="Xl_RD" id="1PwW9ix0vNe" role="v0bCk">
+                <property role="Xl_RC" value="Client Secret is null. Check MPS &gt; Preferences &gt; Other Settings &gt; GoogleCloud." />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="1PwW9ix0vNf" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="1PwW9ix0vNg" role="3clFbw">
+            <node concept="37vLTw" id="1PwW9ix0vNh" role="2Oq$k0">
+              <ref role="3cqZAo" node="1PwW9ix0vN0" resolve="clientSecret" />
+            </node>
+            <node concept="17RlXB" id="1PwW9ix0vNi" role="2OqNvi" />
+          </node>
         </node>
         <node concept="lc7rE" id="5EXCMiTrXM2" role="3cqZAp">
           <node concept="la8eA" id="5EXCMiTrXMG" role="lcghm">
             <property role="lacIc" value="gce_client_secret=" />
           </node>
           <node concept="l9hG8" id="65yh485jmX3" role="lcghm">
-            <node concept="2OqwBi" id="65yh485pbs8" role="lb14g">
-              <node concept="2OqwBi" id="65yh485p9AX" role="2Oq$k0">
-                <node concept="2OqwBi" id="65yh485p8US" role="2Oq$k0">
-                  <node concept="2OqwBi" id="65yh485oOWf" role="2Oq$k0">
-                    <node concept="117lpO" id="65yh485p3ur" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="65yh485p8Pc" role="2OqNvi" />
-                  </node>
-                  <node concept="3lApI0" id="65yh485p8WQ" role="2OqNvi">
-                    <ref role="3lApI3" to="5lbf:5EXCMiTrJMh" resolve="ContainerWithEC" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="65yh485pax0" role="2OqNvi" />
-              </node>
-              <node concept="2qgKlT" id="65yh485pb$$" role="2OqNvi">
-                <ref role="37wK5l" to="5lwc:65yh485oPzU" resolve="getSecret" />
-              </node>
+            <node concept="37vLTw" id="1PwW9ix0wF7" role="lb14g">
+              <ref role="3cqZAo" node="1PwW9ix0vN0" resolve="clientSecret" />
             </node>
           </node>
           <node concept="l8MVK" id="5EXCMiTrXNg" role="lcghm" />
+        </node>
+        <node concept="3cpWs8" id="1PwW9ix0yew" role="3cqZAp">
+          <node concept="3cpWsn" id="1PwW9ix0yez" role="3cpWs9">
+            <property role="TrG5h" value="projectID" />
+            <node concept="17QB3L" id="1PwW9ix0yeu" role="1tU5fm" />
+            <node concept="2OqwBi" id="1PwW9ix0yTL" role="33vP2m">
+              <node concept="2OqwBi" id="1PwW9ix0yTM" role="2Oq$k0">
+                <node concept="2OqwBi" id="1PwW9ix0yTN" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1PwW9ix0yTO" role="2Oq$k0">
+                    <node concept="117lpO" id="1PwW9ix0yTP" role="2Oq$k0" />
+                    <node concept="I4A8Y" id="1PwW9ix0yTQ" role="2OqNvi" />
+                  </node>
+                  <node concept="3lApI0" id="1PwW9ix0yTR" role="2OqNvi">
+                    <ref role="3lApI3" to="5lbf:5EXCMiTrJMh" resolve="ContainerWithEC" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="1PwW9ix0yTS" role="2OqNvi" />
+              </node>
+              <node concept="2qgKlT" id="1PwW9ix0yTT" role="2OqNvi">
+                <ref role="37wK5l" to="5lwc:7vFwTqSSnpd" resolve="getProjectID" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1PwW9ix0zBy" role="3cqZAp">
+          <node concept="3clFbS" id="1PwW9ix0zBz" role="3clFbx">
+            <node concept="1ZvZ2y" id="1PwW9ix0zB$" role="3cqZAp">
+              <node concept="Xl_RD" id="1PwW9ix0zB_" role="v0bCk">
+                <property role="Xl_RC" value="Project ID is null. Check MPS &gt; Preferences &gt; Other Settings &gt; GoogleCloud." />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="1PwW9ix0zBA" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="1PwW9ix0zBB" role="3clFbw">
+            <node concept="37vLTw" id="1PwW9ix0$k4" role="2Oq$k0">
+              <ref role="3cqZAo" node="1PwW9ix0yez" resolve="projectID" />
+            </node>
+            <node concept="17RlXB" id="1PwW9ix0zBD" role="2OqNvi" />
+          </node>
         </node>
         <node concept="lc7rE" id="5EXCMiTrXO8" role="3cqZAp">
           <node concept="la8eA" id="5EXCMiTrXOS" role="lcghm">
             <property role="lacIc" value="gce_project_id=" />
           </node>
           <node concept="l9hG8" id="7vFwTqSSp$B" role="lcghm">
-            <node concept="2OqwBi" id="7vFwTqSSp$C" role="lb14g">
-              <node concept="2OqwBi" id="7vFwTqSSp$D" role="2Oq$k0">
-                <node concept="2OqwBi" id="7vFwTqSSp$E" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7vFwTqSSp$F" role="2Oq$k0">
-                    <node concept="117lpO" id="7vFwTqSSp$G" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="7vFwTqSSp$H" role="2OqNvi" />
-                  </node>
-                  <node concept="3lApI0" id="7vFwTqSSp$I" role="2OqNvi">
-                    <ref role="3lApI3" to="5lbf:5EXCMiTrJMh" resolve="ContainerWithEC" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="7vFwTqSSp$J" role="2OqNvi" />
-              </node>
-              <node concept="2qgKlT" id="7vFwTqSSpZD" role="2OqNvi">
-                <ref role="37wK5l" to="5lwc:7vFwTqSSnpd" resolve="getProjectID" />
-              </node>
+            <node concept="37vLTw" id="1PwW9ix0zB3" role="lb14g">
+              <ref role="3cqZAo" node="1PwW9ix0yez" resolve="projectID" />
             </node>
           </node>
           <node concept="l8MVK" id="5EXCMiTrXPl" role="lcghm" />
