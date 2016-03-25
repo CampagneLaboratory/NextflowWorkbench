@@ -1017,6 +1017,12 @@
                 <property role="2pMdty" value="${remote.username}" />
               </node>
             </node>
+            <node concept="2pNUuL" id="6HdklEvkSJN" role="2pNNFR">
+              <property role="2pNUuO" value="trust" />
+              <node concept="2pMdtt" id="6HdklEvkSKf" role="2pMdts">
+                <property role="2pMdty" value="yes" />
+              </node>
+            </node>
             <node concept="2pNUuL" id="5OPtsPp$EG" role="2pNNFR">
               <property role="2pNUuO" value="keyfile" />
               <node concept="2pMdtt" id="5OPtsPp$FM" role="2pMdts">
@@ -1052,6 +1058,12 @@
               <property role="2pNUuO" value="todir" />
               <node concept="2pMdtt" id="5OPtsPp$Tb" role="2pMdts">
                 <property role="2pMdty" value="${remote.username}@${submission.machine}:${remote.job.dir}/" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="6HdklEvkSJ3" role="2pNNFR">
+              <property role="2pNUuO" value="trust" />
+              <node concept="2pMdtt" id="6HdklEvkSJj" role="2pMdts">
+                <property role="2pMdty" value="yes" />
               </node>
             </node>
             <node concept="2pNUuL" id="5OPtsPp$Up" role="2pNNFR">
@@ -1102,6 +1114,12 @@
                 <property role="2pMdty" value="${remote.username}" />
               </node>
             </node>
+            <node concept="2pNUuL" id="6HdklEvkSKQ" role="2pNNFR">
+              <property role="2pNUuO" value="trust" />
+              <node concept="2pMdtt" id="6HdklEvkSLi" role="2pMdts">
+                <property role="2pMdty" value="yes" />
+              </node>
+            </node>
             <node concept="2pNUuL" id="5OPtsPp_bO" role="2pNNFR">
               <property role="2pNUuO" value="keyfile" />
               <node concept="2pMdtt" id="5OPtsPp_c0" role="2pMdts">
@@ -1146,6 +1164,12 @@
                 <property role="2pMdty" value="${remote.username}" />
               </node>
             </node>
+            <node concept="2pNUuL" id="6HdklEvkSLM" role="2pNNFR">
+              <property role="2pNUuO" value="trust" />
+              <node concept="2pMdtt" id="6HdklEvkSMe" role="2pMdts">
+                <property role="2pMdty" value="yes" />
+              </node>
+            </node>
             <node concept="2pNUuL" id="5OPtsPp_oH" role="2pNNFR">
               <property role="2pNUuO" value="keyfile" />
               <node concept="2pMdtt" id="5OPtsPp_oI" role="2pMdts">
@@ -1182,6 +1206,12 @@
               <property role="2pNUuO" value="username" />
               <node concept="2pMdtt" id="5OPtsPp_AM" role="2pMdts">
                 <property role="2pMdty" value="${remote.username}" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="6HdklEvkSMI" role="2pNNFR">
+              <property role="2pNUuO" value="trust" />
+              <node concept="2pMdtt" id="6HdklEvkSNa" role="2pMdts">
+                <property role="2pMdty" value="yes" />
               </node>
             </node>
             <node concept="2pNUuL" id="5OPtsPp_AN" role="2pNNFR">
