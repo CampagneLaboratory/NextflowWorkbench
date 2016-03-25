@@ -64,6 +64,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -108,10 +111,14 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -531,11 +538,63 @@
       <ref role="13i0hy" node="3pj0Oa6GMmD" resolve="getLocalConfigurationFolder" />
       <node concept="3Tm1VV" id="6UP81EX8aXm" role="1B3o_S" />
       <node concept="3clFbS" id="6UP81EX8aXs" role="3clF47">
-        <node concept="3clFbF" id="6UP81EX8bfO" role="3cqZAp">
-          <node concept="2YIFZM" id="6UP81EX8bfP" role="3clFbG">
-            <ref role="37wK5l" to="ujkv:52oJ3dmOWZh" resolve="getSolutionClassesGenFolder" />
-            <ref role="1Pybhc" to="ujkv:52oJ3dmL414" resolve="ProjectPaths" />
-            <node concept="13iPFW" id="6UP81EX8bfQ" role="37wK5m" />
+        <node concept="3cpWs8" id="1PwW9iwZ$Zr" role="3cqZAp">
+          <node concept="3cpWsn" id="1PwW9iwZ$Zs" role="3cpWs9">
+            <property role="TrG5h" value="f" />
+            <node concept="3uibUv" id="1PwW9iwZ$Zt" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="1PwW9iwZ_1g" role="33vP2m">
+              <node concept="1pGfFk" id="1PwW9iwZAbQ" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="3cpWs3" id="1PwW9iwZsW7" role="37wK5m">
+                  <node concept="Xl_RD" id="1PwW9iwZsWR" role="3uHU7w">
+                    <property role="Xl_RC" value="/.elasticluster" />
+                  </node>
+                  <node concept="2YIFZM" id="1PwW9iwZsMp" role="3uHU7B">
+                    <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                    <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                    <node concept="Xl_RD" id="1PwW9iwZsMM" role="37wK5m">
+                      <property role="Xl_RC" value="user.home" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1PwW9iwZAdQ" role="3cqZAp">
+          <node concept="3clFbS" id="1PwW9iwZAdS" role="3clFbx">
+            <node concept="3clFbF" id="1PwW9iwZAM2" role="3cqZAp">
+              <node concept="2OqwBi" id="1PwW9iwZANP" role="3clFbG">
+                <node concept="37vLTw" id="1PwW9iwZAM0" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1PwW9iwZ$Zs" resolve="f" />
+                </node>
+                <node concept="liA8E" id="1PwW9iwZAWP" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~File.mkdirs():boolean" resolve="mkdirs" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="1PwW9iwZAuj" role="3clFbw">
+            <node concept="2OqwBi" id="1PwW9iwZAul" role="3fr31v">
+              <node concept="37vLTw" id="1PwW9iwZAum" role="2Oq$k0">
+                <ref role="3cqZAo" node="1PwW9iwZ$Zs" resolve="f" />
+              </node>
+              <node concept="liA8E" id="1PwW9iwZAun" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1PwW9iwZAyH" role="3cqZAp">
+          <node concept="2OqwBi" id="1PwW9iwZAAb" role="3clFbG">
+            <node concept="37vLTw" id="1PwW9iwZAyF" role="2Oq$k0">
+              <ref role="3cqZAo" node="1PwW9iwZ$Zs" resolve="f" />
+            </node>
+            <node concept="liA8E" id="1PwW9iwZALt" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+            </node>
           </node>
         </node>
       </node>
@@ -930,15 +989,21 @@
             <node concept="2YIFZM" id="3pj0Oa6G2xl" role="33vP2m">
               <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...):java.nio.file.Path" resolve="get" />
               <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-              <node concept="3cpWs3" id="3pj0Oa6G7oD" role="37wK5m">
+              <node concept="3cpWs3" id="1PwW9iwZStj" role="37wK5m">
                 <node concept="2OqwBi" id="3pj0Oa6Gt8c" role="3uHU7w">
                   <node concept="13iPFW" id="3pj0Oa6G7sw" role="2Oq$k0" />
                   <node concept="2qgKlT" id="3pj0Oa6Gthc" role="2OqNvi">
                     <ref role="37wK5l" node="3pj0Oa6GrbT" resolve="getConfigurationFilename" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="3pj0Oa6G2TH" role="3uHU7B">
-                  <ref role="3cqZAo" node="3pj0Oa6G1gW" resolve="folder" />
+                <node concept="3cpWs3" id="3pj0Oa6G7oD" role="3uHU7B">
+                  <node concept="37vLTw" id="3pj0Oa6G2TH" role="3uHU7B">
+                    <ref role="3cqZAo" node="3pj0Oa6G1gW" resolve="folder" />
+                  </node>
+                  <node concept="10M0yZ" id="1PwW9iwZS$P" role="3uHU7w">
+                    <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                    <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
+                  </node>
                 </node>
               </node>
             </node>

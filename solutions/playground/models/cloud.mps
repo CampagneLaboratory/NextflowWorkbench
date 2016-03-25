@@ -227,38 +227,38 @@
       </node>
     </node>
   </node>
-  <node concept="3zOPYP" id="4gEJt6_O0qB">
+  <node concept="3zOPYP" id="1PwW9iwZNjB">
     <property role="TrG5h" value="ManageCloudCluster" />
     <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
     <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench2:36 modules] IDEA project: Project '/Users/manuelesimi/Work/CampagneLab/Projects/MPS/3.3/nextflowworkbench2' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@ae446ca secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
     <ref role="1QJbqN" node="109XeHbQHGj" resolve="docker.config" />
-    <node concept="VtuK3" id="4gEJt6_O0qC" role="234boB">
+    <node concept="VtuK3" id="1PwW9iwZNjC" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="artifacts" />
       <property role="GbyUj" value="elasticluster" />
     </node>
-    <node concept="3zOwDe" id="4gEJt6_O0qD" role="1OGc9L">
+    <node concept="3zOwDe" id="1PwW9iwZNjD" role="1OGc9L">
       <property role="TrG5h" value="cluster.config" />
-      <node concept="3zO_zI" id="4gEJt6_O0qE" role="2KSRPJ">
+      <node concept="3zO_zI" id="1PwW9iwZNjE" role="2KSRPJ">
         <property role="TrG5h" value="Number of frontend nodes" />
         <property role="3zO_zz" value="1" />
       </node>
-      <node concept="3zO_zJ" id="4gEJt6_O0qF" role="2KSRPJ">
+      <node concept="3zO_zJ" id="1PwW9iwZNjF" role="2KSRPJ">
         <property role="TrG5h" value="Number of worker nodes" />
         <property role="3zO_zz" value="2" />
       </node>
-      <node concept="1rOJCK" id="4gEJt6_O0qG" role="2KSRPJ">
+      <node concept="1rOJCK" id="1PwW9iwZNjG" role="2KSRPJ">
         <property role="TrG5h" value="Compute node type" />
         <property role="1rOIkb" value="n1-standard-2" />
       </node>
-      <node concept="1mWehH" id="4gEJt6_O0qH" role="2KSRPJ">
+      <node concept="1mWehH" id="1PwW9iwZNjH" role="2KSRPJ">
         <property role="TrG5h" value="Disk size for worker nodes" />
         <property role="1mWegi" value="20" />
       </node>
-      <node concept="3xTfy5" id="4gEJt6_O0qJ" role="2KSRPJ">
+      <node concept="3xTfy5" id="1PwW9iwZNjJ" role="2KSRPJ">
         <property role="TrG5h" value="Preemptibility" />
       </node>
-      <node concept="2tz3XF" id="4gEJt6_O0qI" role="2KSRPJ">
+      <node concept="2tz3XF" id="1PwW9iwZNjI" role="2KSRPJ">
         <property role="TrG5h" value="Folder with manager credentials" />
         <property role="2tz3XC" value="/Users/manuelesimi/.ssh" />
       </node>

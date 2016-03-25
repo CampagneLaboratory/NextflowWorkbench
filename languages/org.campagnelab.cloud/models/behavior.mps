@@ -717,15 +717,10 @@
             <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="localFolder" />
             <node concept="17QB3L" id="rQ5OKPjdHy" role="1tU5fm" />
-            <node concept="2OqwBi" id="rQ5OKPjdYu" role="33vP2m">
-              <node concept="2OqwBi" id="rQ5OKPjdKd" role="2Oq$k0">
-                <node concept="13iPFW" id="rQ5OKPjdIb" role="2Oq$k0" />
-                <node concept="3TrEf2" id="7QDG7s96yWS" role="2OqNvi">
-                  <ref role="3Tt5mk" to="5lbf:7QDG7s96n86" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="rQ5OKPje9D" role="2OqNvi">
-                <ref role="37wK5l" to="3229:3pj0Oa6GMmD" resolve="getLocalConfigurationFolder" />
+            <node concept="2OqwBi" id="1PwW9iwZNU1" role="33vP2m">
+              <node concept="13iPFW" id="1PwW9iwZNRz" role="2Oq$k0" />
+              <node concept="2qgKlT" id="1PwW9iwZOgg" role="2OqNvi">
+                <ref role="37wK5l" node="3C40c0STRGf" resolve="dataFolder" />
               </node>
             </node>
           </node>
