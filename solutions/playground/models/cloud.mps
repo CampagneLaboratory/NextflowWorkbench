@@ -229,8 +229,8 @@
   </node>
   <node concept="3zOPYP" id="2qF0d00Ta0d">
     <property role="TrG5h" value="ManageCloudCluster" />
-    <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
     <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:36 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@455a3419 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
+    <property role="1OHsCo" value="sh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC07+Yg5a2EoSdcuZ47pTq1nxro8PRGkjrJ/A45ZCMpbcrzEG2WWy7oJc50okcc0dX3ikf788tNpt0eeIziMboNZnYnHLbkYcbs2aKA8k/0Q9Xum8yZnGFm8rdmzEyZq+O8h769aWJ693eIWGhXJNiQ+IQ0YLp8eEsq3ZYka69LeVHkdpXmEmU+dGL3cz3RsmtZefjDQB75x6jPwi1PB+GjF0+vadTU/+u8t543ArPX6odm336ErPfvZ/RQi3uAQk2pKsT1by1GReoQ+HJbZ4wfD9ytyZ9iYIPq7MUYxzm3+AWfe61ZSzaTr2UhcXLUrlsAFy3SLfNDJA5cO4PSkSmR mas2182@mac162547.med.cornell.eduprrrrr" />
     <ref role="1QJbqN" node="2qF0d00Ta0f" resolve="docker.config" />
     <node concept="VtuK3" id="2qF0d00Ta0e" role="234boB">
       <property role="VuL0s" value="latest" />

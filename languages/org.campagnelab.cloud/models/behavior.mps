@@ -66,6 +66,9 @@
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
         <child id="1164903700860" name="catchClause" index="TEXxN" />
       </concept>
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -97,6 +100,9 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -163,6 +169,12 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
+        <child id="1144226360166" name="iterable" index="1DdaDG" />
+      </concept>
+      <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
+        <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -1027,6 +1039,30 @@
       </node>
       <node concept="3Tm1VV" id="5Pg96r0QF5p" role="1B3o_S" />
       <node concept="3clFbS" id="5Pg96r0QF5q" role="3clF47">
+        <node concept="3clFbF" id="2qF0d015hCa" role="3cqZAp">
+          <node concept="2OqwBi" id="2qF0d015hPl" role="3clFbG">
+            <node concept="13iPFW" id="2qF0d015hLu" role="2Oq$k0" />
+            <node concept="2qgKlT" id="2qF0d015idL" role="2OqNvi">
+              <ref role="37wK5l" node="2qF0d015fj1" resolve="deleteDir" />
+              <node concept="2ShNRf" id="2qF0d015ig$" role="37wK5m">
+                <node concept="1pGfFk" id="2qF0d015iCa" role="2ShVmc">
+                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                  <node concept="2OqwBi" id="2qF0d014Jxv" role="37wK5m">
+                    <node concept="2OqwBi" id="2qF0d014Jxw" role="2Oq$k0">
+                      <node concept="13iPFW" id="2qF0d014Jxx" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="2qF0d014Jxy" role="2OqNvi">
+                        <ref role="3Tt5mk" to="5lbf:7QDG7s96n86" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="2qF0d014Jxz" role="2OqNvi">
+                      <ref role="37wK5l" to="3229:3pj0Oa6GMmD" resolve="getLocalConfigurationFolder" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5Pg96r0QM3H" role="3cqZAp">
           <node concept="2OqwBi" id="5Pg96r0QMuF" role="3clFbG">
             <node concept="13iPFW" id="5Pg96r0QM3F" role="2Oq$k0" />
@@ -1054,6 +1090,83 @@
         </node>
       </node>
       <node concept="3cqZAl" id="5Pg96r0QF8$" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2qF0d015fj1" role="13h7CS">
+      <property role="TrG5h" value="deleteDir" />
+      <node concept="3Tm6S6" id="2qF0d015hn9" role="1B3o_S" />
+      <node concept="3clFbS" id="2qF0d015fj3" role="3clF47">
+        <node concept="3cpWs8" id="2qF0d015f7z" role="3cqZAp">
+          <node concept="3cpWsn" id="2qF0d015f7y" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="contents" />
+            <node concept="10Q1$e" id="2qF0d015f7_" role="1tU5fm">
+              <node concept="3uibUv" id="2qF0d015f7$" role="10Q1$1">
+                <ref role="3uigEE" to="guwi:~File" resolve="File" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2qF0d015f7U" role="33vP2m">
+              <node concept="37vLTw" id="2qF0d015h3y" role="2Oq$k0">
+                <ref role="3cqZAo" node="2qF0d015gJE" resolve="d" />
+              </node>
+              <node concept="liA8E" id="2qF0d015f7V" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~File.listFiles():java.io.File[]" resolve="listFiles" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2qF0d015f7B" role="3cqZAp">
+          <node concept="3y3z36" id="2qF0d015f7C" role="3clFbw">
+            <node concept="37vLTw" id="2qF0d015f7D" role="3uHU7B">
+              <ref role="3cqZAo" node="2qF0d015f7y" resolve="contents" />
+            </node>
+            <node concept="10Nm6u" id="2qF0d015f7E" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="2qF0d015f7G" role="3clFbx">
+            <node concept="1DcWWT" id="2qF0d015f7H" role="3cqZAp">
+              <node concept="37vLTw" id="2qF0d015f7Q" role="1DdaDG">
+                <ref role="3cqZAo" node="2qF0d015f7y" resolve="contents" />
+              </node>
+              <node concept="3cpWsn" id="2qF0d015f7N" role="1Duv9x">
+                <property role="3TUv4t" value="false" />
+                <property role="TrG5h" value="f" />
+                <node concept="3uibUv" id="2qF0d015f7P" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="2qF0d015f7J" role="2LFqv$">
+                <node concept="3clFbF" id="2qF0d015h8m" role="3cqZAp">
+                  <node concept="2OqwBi" id="2qF0d015ha6" role="3clFbG">
+                    <node concept="13iPFW" id="2qF0d015h8l" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="2qF0d015hjE" role="2OqNvi">
+                      <ref role="37wK5l" node="2qF0d015fj1" resolve="deleteDir" />
+                      <node concept="37vLTw" id="2qF0d015hkL" role="37wK5m">
+                        <ref role="3cqZAo" node="2qF0d015f7N" resolve="f" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2qF0d015f7R" role="3cqZAp">
+          <node concept="2OqwBi" id="2qF0d015f7X" role="3clFbG">
+            <node concept="37vLTw" id="2qF0d015hmm" role="2Oq$k0">
+              <ref role="3cqZAo" node="2qF0d015gJE" resolve="d" />
+            </node>
+            <node concept="liA8E" id="2qF0d015f7Y" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~File.delete():boolean" resolve="delete" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="2qF0d015gG$" role="3clF45" />
+      <node concept="37vLTG" id="2qF0d015gJE" role="3clF46">
+        <property role="TrG5h" value="d" />
+        <node concept="3uibUv" id="2qF0d015gJD" role="1tU5fm">
+          <ref role="3uigEE" to="guwi:~File" resolve="File" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="5wsmBEGRnso" role="13h7CS">
       <property role="TrG5h" value="destroy" />
