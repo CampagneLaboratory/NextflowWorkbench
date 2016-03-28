@@ -1398,9 +1398,6 @@
       <node concept="VechU" id="5yyd2HFuk1g" role="3F10Kt">
         <property role="Vb096" value="black" />
       </node>
-      <node concept="VSNWy" id="5yyd2HFK2_y" role="3F10Kt">
-        <property role="1lJzqX" value="14" />
-      </node>
     </node>
     <node concept="14StLt" id="6aaE4aM9P_2" role="V601i">
       <property role="TrG5h" value="Label" />
