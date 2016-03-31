@@ -134,9 +134,7 @@
       <concept id="1155724070824382171" name="org.campagnelab.cloud.configuration.structure.ComputeNodeFlavor" flags="ng" index="1rOJCK">
         <property id="1155724070824382944" name="flavor" index="1rOIkb" />
       </concept>
-      <concept id="4911947051728520532" name="org.campagnelab.cloud.configuration.structure.Preemptibility" flags="ng" index="3xTfy5">
-        <property id="4911947051728520594" name="value" index="3xTfx3" />
-      </concept>
+      <concept id="4911947051728520532" name="org.campagnelab.cloud.configuration.structure.Preemptibility" flags="ng" index="3xTfy5" />
       <concept id="6538561612137081194" name="org.campagnelab.cloud.configuration.structure.GridEngineClusterConfig" flags="ng" index="3zOwDe" />
       <concept id="6538561612137102278" name="org.campagnelab.cloud.configuration.structure.NodeClass" flags="ng" index="3zO_zy">
         <property id="6538561612137102279" name="numOfNodes" index="3zO_zz" />
@@ -247,7 +245,7 @@
       </node>
       <node concept="3zO_zJ" id="2qF0d015Dbn" role="2KSRPJ">
         <property role="TrG5h" value="Number of worker nodes" />
-        <property role="3zO_zz" value="2" />
+        <property role="3zO_zz" value="5" />
       </node>
       <node concept="1rOJCK" id="2qF0d015Dbo" role="2KSRPJ">
         <property role="TrG5h" value="Compute node type" />
@@ -259,7 +257,6 @@
       </node>
       <node concept="3xTfy5" id="2qF0d015Dbr" role="2KSRPJ">
         <property role="TrG5h" value="Preemptibility" />
-        <property role="3xTfx3" value="true" />
       </node>
       <node concept="2tz3XF" id="2qF0d015Dbq" role="2KSRPJ">
         <property role="TrG5h" value="Folder with manager credentials" />
