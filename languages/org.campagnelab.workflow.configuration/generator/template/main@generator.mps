@@ -588,7 +588,7 @@
       <property role="34ZRQb" value="shift" />
     </node>
     <node concept="34ZRQx" id="7TupKkjs9RB" role="34ZRRx">
-      <property role="34ZRQb" value="jarScript=$2" />
+      <property role="34ZRQb" value="jars=$1" />
     </node>
     <node concept="34ZRQx" id="1PwW9iwXKp$" role="34ZRRx">
       <property role="34ZRQb" value="shift" />
@@ -603,10 +603,13 @@
       <property role="34ZRQb" value="source ${SCRIPT_DIR}/setEnv" />
     </node>
     <node concept="34ZRQx" id="7TupKkjs9RQ" role="34ZRRx">
-      <property role="34ZRQb" value="export NXF_CLASSPATH=${jarScript}" />
+      <property role="34ZRQb" value="export NXF_CLASSPATH=${jars}" />
     </node>
     <node concept="34ZRQx" id="3LlDVJTCz7k" role="34ZRRx">
       <property role="34ZRQb" value="echo &quot;Executing ${nextflowScript} with options: ${containerOptions}&quot;" />
+    </node>
+    <node concept="34ZRQx" id="2qF0d0187HM" role="34ZRRx">
+      <property role="34ZRQb" value="echo &quot;Executing ${nextflowScript} with classpath ${jars}&quot;" />
     </node>
     <node concept="34ZRQx" id="3LlDVJTCzae" role="34ZRRx">
       <property role="34ZRQb" value="nohup nextflow ${nextflowScript} ${containerOptions} 2&gt;&amp;1 | less" />
@@ -812,7 +815,7 @@
           <node concept="2pNUuL" id="7TupKkjsbo_" role="2pNNFR">
             <property role="2pNUuO" value="name" />
             <node concept="2pMdtt" id="7TupKkjsboC" role="2pMdts">
-              <property role="2pMdty" value="jar.script" />
+              <property role="2pMdty" value="jars" />
             </node>
           </node>
           <node concept="2pNUuL" id="7TupKkjsboL" role="2pNNFR">
@@ -1179,7 +1182,7 @@
             <node concept="2pNUuL" id="5OPtsPp_p0" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp_sx" role="2pMdts">
-                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${remote.job.dir}/${workflow.script} ${remote.job.dir}/${jar.script} ${nextflow.options}" />
+                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${remote.job.dir}/${workflow.script} ${jars} ${nextflow.options}" />
               </node>
             </node>
           </node>
