@@ -597,7 +597,7 @@
       <property role="34ZRQb" value="containerOptions=&quot;$@&quot;" />
     </node>
     <node concept="34ZRQx" id="3LlDVJTCz1G" role="34ZRRx">
-      <property role="34ZRQb" value="SCRIPT_DIR=&quot;$( cd &quot;$( dirname &quot;${BASH_SOURCE[0]}&quot; )&quot; &amp;&amp; pwd )&quot;" />
+      <property role="34ZRQb" value="export SCRIPT_DIR=&quot;$( cd &quot;$( dirname &quot;${BASH_SOURCE[0]}&quot; )&quot; &amp;&amp; pwd )&quot;" />
     </node>
     <node concept="34ZRQx" id="3LlDVJTCz4u" role="34ZRRx">
       <property role="34ZRQb" value="source ${SCRIPT_DIR}/setEnv" />
