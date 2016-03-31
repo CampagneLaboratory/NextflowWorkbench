@@ -3034,17 +3034,28 @@
                             <node concept="1bVj0M" id="2qF0d017h1W" role="23t8la">
                               <node concept="3clFbS" id="2qF0d017h1X" role="1bW5cS">
                                 <node concept="3clFbF" id="2qF0d017htE" role="3cqZAp">
-                                  <node concept="2OqwBi" id="2qF0d017urc" role="3clFbG">
-                                    <node concept="2ShNRf" id="2qF0d017htC" role="2Oq$k0">
-                                      <node concept="1pGfFk" id="2qF0d017t$n" role="2ShVmc">
-                                        <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                                        <node concept="37vLTw" id="2qF0d017tWU" role="37wK5m">
-                                          <ref role="3cqZAo" node="2qF0d017h1Y" resolve="it" />
-                                        </node>
+                                  <node concept="3cpWs3" id="2qF0d018VvZ" role="3clFbG">
+                                    <node concept="3cpWs3" id="2qF0d018WQb" role="3uHU7B">
+                                      <node concept="10M0yZ" id="2qF0d018Xfb" role="3uHU7w">
+                                        <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                                        <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
+                                      </node>
+                                      <node concept="Xl_RD" id="2qF0d018W0_" role="3uHU7B">
+                                        <property role="Xl_RC" value="${SCRIPT_DIR}" />
                                       </node>
                                     </node>
-                                    <node concept="liA8E" id="2qF0d017_mj" role="2OqNvi">
-                                      <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                                    <node concept="2OqwBi" id="2qF0d017urc" role="3uHU7w">
+                                      <node concept="2ShNRf" id="2qF0d017htC" role="2Oq$k0">
+                                        <node concept="1pGfFk" id="2qF0d017t$n" role="2ShVmc">
+                                          <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                                          <node concept="37vLTw" id="2qF0d017tWU" role="37wK5m">
+                                            <ref role="3cqZAo" node="2qF0d017h1Y" resolve="it" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="2qF0d017_mj" role="2OqNvi">
+                                        <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
