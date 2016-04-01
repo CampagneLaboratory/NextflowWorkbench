@@ -527,6 +527,12 @@
     <node concept="3blhQM" id="5WTdyfwY$e4" role="3blhQR">
       <ref role="3blhQY" node="5WTdyfwY$e3" resolve="GSUtilWithKallisto_Image" />
     </node>
+    <node concept="3blhQM" id="mLKgp_fCgY" role="3blhQR">
+      <ref role="3blhQY" node="mLKgp_fCgX" resolve="GSUtilWithKallisto_Image" />
+    </node>
+    <node concept="3blhQM" id="mLKgp_fOE6" role="3blhQR">
+      <ref role="3blhQY" node="mLKgp_fOE5" resolve="GSUtilWithKallisto_Image" />
+    </node>
   </node>
   <node concept="2E_JVc" id="5WTdyfwY$e3">
     <property role="2E_JEh" value="b9507233396b" />
@@ -537,6 +543,22 @@
       <property role="Gyxfx" value="fac2003" />
       <property role="TrG5h" value="Kallisto_Human_gsutil" />
       <property role="Gyxd1" value="1.0.0" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="mLKgp_fCgX">
+    <property role="2E_JEh" value="bffaa56467ec" />
+    <property role="TrG5h" value="GSUtilWithKallisto_Image" />
+    <ref role="2E_BxF" node="5WTdyfwYzDg" resolve="GSUtilWithKallisto" />
+  </node>
+  <node concept="2E_JVc" id="mLKgp_fOE5">
+    <property role="2E_JEh" value="bffaa56467ec" />
+    <property role="TrG5h" value="GSUtilWithKallisto_Image" />
+    <property role="GSh9r" value="fac2003/kallisto-human-gsutil:latest" />
+    <ref role="2E_BxF" node="5WTdyfwYzDg" resolve="GSUtilWithKallisto" />
+    <node concept="Gyxd7" id="mLKgp_fOEH" role="Gyxcj">
+      <property role="Gyxfx" value="fac2003" />
+      <property role="TrG5h" value="kallisto-human-gsutil" />
+      <property role="Gyxd1" value="latest" />
     </node>
   </node>
 </model>
