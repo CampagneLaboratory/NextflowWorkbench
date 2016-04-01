@@ -4967,7 +4967,7 @@
                     <ref role="2LYoGb" node="7TupKkjsbE$" resolve="jars" />
                   </node>
                   <node concept="Xl_RD" id="7TupKkjsd$J" role="3uHU7B">
-                    <property role="Xl_RC" value=" -Djars=" />
+                    <property role="Xl_RC" value="-Djars=" />
                   </node>
                 </node>
               </node>
@@ -4999,17 +4999,22 @@
                     <node concept="3cpWs3" id="4Orz$oykh$R" role="3uHU7B">
                       <node concept="3cpWs3" id="4Orz$oyiHcL" role="3uHU7B">
                         <node concept="3cpWs3" id="4Orz$oyiGCT" role="3uHU7B">
-                          <node concept="3cpWs3" id="7TupKkjsfAV" role="3uHU7B">
-                            <node concept="3cpWs3" id="1d37Cfp_nrG" role="3uHU7B">
-                              <node concept="Xl_RD" id="1d37Cfp_m$x" role="3uHU7B">
-                                <property role="Xl_RC" value="-Dworkflow.script=" />
-                              </node>
-                              <node concept="2LYoG9" id="1d37Cfp_nsN" role="3uHU7w">
-                                <ref role="2LYoGb" node="1d37CfpzlTP" resolve="workflowScript" />
-                              </node>
-                            </node>
+                          <node concept="3cpWs3" id="3BvuEdd4XvR" role="3uHU7B">
                             <node concept="37vLTw" id="7TupKkjsfDU" role="3uHU7w">
                               <ref role="3cqZAo" node="7TupKkjsd$C" resolve="property" />
+                            </node>
+                            <node concept="3cpWs3" id="7TupKkjsfAV" role="3uHU7B">
+                              <node concept="3cpWs3" id="1d37Cfp_nrG" role="3uHU7B">
+                                <node concept="Xl_RD" id="1d37Cfp_m$x" role="3uHU7B">
+                                  <property role="Xl_RC" value="-Dworkflow.script=" />
+                                </node>
+                                <node concept="2LYoG9" id="1d37Cfp_nsN" role="3uHU7w">
+                                  <ref role="2LYoGb" node="1d37CfpzlTP" resolve="workflowScript" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="3BvuEdd4Xyp" role="3uHU7w">
+                                <property role="Xl_RC" value=" " />
+                              </node>
                             </node>
                           </node>
                           <node concept="Xl_RD" id="4Orz$oyiGD9" role="3uHU7w">
