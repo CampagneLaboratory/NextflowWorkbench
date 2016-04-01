@@ -38,6 +38,7 @@
     </language>
     <language id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud">
       <concept id="6538561612137036945" name="org.campagnelab.cloud.structure.ContainerWithEC" flags="ng" index="3zOPYP">
+        <property id="7017246219745809549" name="notes" index="1$193f" />
         <property id="9054962551105550959" name="credentials" index="1OHsCo" />
         <reference id="147628039490030680" name="dockerConfig" index="1QJbqN" />
         <child id="331977639697571264" name="container" index="234boB" />
@@ -201,9 +202,10 @@
       <concept id="3914476085377531388" name="org.campagnelab.cloud.configuration.structure.ClusterConfig" flags="ng" index="2KSRUY">
         <child id="3914476085377531437" name="options" index="2KSRPJ" />
       </concept>
-      <concept id="7598045164870912447" name="org.campagnelab.cloud.configuration.structure.DiskSize" flags="ng" index="1mWehH">
-        <property id="7598045164870912448" name="size" index="1mWegi" />
+      <concept id="2470866107164129563" name="org.campagnelab.cloud.configuration.structure.IntegerOption" flags="ng" index="ZmVUT">
+        <property id="2470866107164129564" name="size" index="ZmVUY" />
       </concept>
+      <concept id="7598045164870912447" name="org.campagnelab.cloud.configuration.structure.DiskSize" flags="ng" index="1mWehH" />
       <concept id="1155724070824382171" name="org.campagnelab.cloud.configuration.structure.ComputeNodeFlavor" flags="ng" index="1rOJCK">
         <property id="1155724070824382944" name="flavor" index="1rOIkb" />
       </concept>
@@ -367,7 +369,7 @@
     <node concept="3Y$Zt1" id="mLKgp_e3NY" role="2ulM7a">
       <node concept="19SGf9" id="mLKgp_e3O0" role="3Y$PkS">
         <node concept="19SUe$" id="mLKgp_e3O1" role="19SJt6">
-          <property role="19SUeA" value="echo " />
+          <property role="19SUeA" value="echo -n " />
         </node>
         <node concept="3YE7tV" id="mLKgp_e3Ob" role="19SJt6">
           <ref role="3YE7sm" node="mLKgp_e3Mf" resolve="baseURL" />
@@ -396,13 +398,13 @@
         <property role="3yU_OX" value="ubuntu" />
       </node>
       <node concept="3yU_OD" id="mLKgp_eFI0" role="3yU_OL">
-        <property role="3yU_OX" value="/home/ubuntu" />
+        <property role="3yU_OX" value="/home/ubuntu/worflows" />
       </node>
       <node concept="3yU_OQ" id="mLKgp_eFI1" role="3yU_OY">
         <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
       </node>
       <node concept="3yU_OC" id="mLKgp_eFI2" role="3yU_ON">
-        <property role="3yU_OX" value="104.197.150.32" />
+        <property role="3yU_OX" value="104.197.245.118" />
       </node>
     </node>
     <node concept="3qaZdc" id="mLKgp_eFJh" role="3qaWS2" />
@@ -415,6 +417,7 @@
   <node concept="3zOPYP" id="mLKgp_eNt9">
     <property role="TrG5h" value="ManageCloudCluster" />
     <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
+    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:36 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@4a86d0f3 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
     <ref role="1QJbqN" node="mLKgp_eNtb" resolve="docker.config" />
     <node concept="VtuK3" id="mLKgp_eNta" role="234boB">
       <property role="VuL0s" value="latest" />
@@ -437,7 +440,7 @@
       </node>
       <node concept="1mWehH" id="mLKgp_eNtg" role="2KSRPJ">
         <property role="TrG5h" value="Disk size for worker nodes" />
-        <property role="1mWegi" value="20" />
+        <property role="ZmVUY" value="50" />
       </node>
       <node concept="3xTfy5" id="mLKgp_eNti" role="2KSRPJ">
         <property role="TrG5h" value="Preemptibility" />
