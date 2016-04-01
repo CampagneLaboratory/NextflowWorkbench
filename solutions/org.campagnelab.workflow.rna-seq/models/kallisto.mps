@@ -149,6 +149,10 @@
       </concept>
     </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
+      <concept id="8987412447080958668" name="org.campagnelab.docker.structure.DockerImage" flags="ng" index="2E_JVc">
+        <property id="8987412447080959633" name="id" index="2E_JEh" />
+        <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
+      </concept>
       <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
         <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
       </concept>
@@ -706,11 +710,14 @@
       <property role="TrG5h" value="basename" />
       <node concept="16pbKc" id="mLKgp_eRV6" role="2ybFLk" />
     </node>
-    <node concept="VtuK3" id="mLKgp_dTg2" role="234boB">
+    <node concept="2mjA9o" id="5WTdyfwYA6P" role="2ulM7n">
+      <property role="TrG5h" value="destination_HDF5_URL" />
+      <node concept="16pbKc" id="5WTdyfwYA73" role="2ybFLk" />
+    </node>
+    <node concept="VtuK3" id="5WTdyfwY$Fl" role="234boB">
       <property role="VuL0s" value="1.0.0" />
-      <property role="GbyUj" value="kallisto-homo-sapiens" />
-      <property role="VuL0v" value="artifacts" />
-      <property role="3zaeVo" value="true" />
+      <property role="VuL0v" value="fac2003" />
+      <property role="GbyUj" value="b9507233396b" />
     </node>
     <node concept="2lYRya" id="mLKgp_dTg3" role="2ulM79">
       <property role="TrG5h" value="'sample-*'" />
@@ -731,13 +738,7 @@
           <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />
         </node>
         <node concept="19SUe$" id="mLKgp_eRKK" role="19SJt6">
-          <property role="19SUeA" value=" ./" />
-        </node>
-        <node concept="3YE7tV" id="mLKgp_eRKJ" role="19SJt6">
-          <ref role="3YE7sm" node="mLKgp_eRUO" resolve="basename" />
-        </node>
-        <node concept="19SUe$" id="mLKgp_eRKI" role="19SJt6">
-          <property role="19SUeA" value="&#10;echo &quot;Processing: &quot; " />
+          <property role="19SUeA" value=" ./&#10;echo &quot;Processing: &quot; " />
         </node>
         <node concept="3YE7tV" id="mLKgp_dTge" role="19SJt6">
           <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />
@@ -746,7 +747,7 @@
           <property role="19SUeA" value="&#10;TRANSCRIPT_INDEX=" />
         </node>
         <node concept="1OktH4" id="mLKgp_dTgg" role="19SJt6">
-          <ref role="26mB_n" node="mLKgp_dTg2" />
+          <ref role="26mB_n" node="5WTdyfwY$Fl" />
           <node concept="19OFZp" id="mLKgp_dTgh" role="26mB$C">
             <property role="26mB_l" value="true" />
             <property role="26mB$E" value="" />
@@ -770,7 +771,7 @@
           <property role="19SUeA" value="`&#10;echo &quot;Basename= ${basename}&quot;&#10;&#10;mkdir output&#10;NUM_THREADS=`cat /proc/cpuinfo|grep processor|wc -l`&#10;" />
         </node>
         <node concept="1OktH4" id="mLKgp_dTgn" role="19SJt6">
-          <ref role="26mB_n" node="mLKgp_dTg2" />
+          <ref role="26mB_n" node="5WTdyfwY$Fl" />
           <node concept="19OFZp" id="mLKgp_dTgo" role="26mB$C">
             <property role="26mB_l" value="true" />
             <property role="26mB$E" value="" />
@@ -796,7 +797,13 @@
           <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />
         </node>
         <node concept="19SUe$" id="mLKgp_dTgu" role="19SJt6">
-          <property role="19SUeA" value=" --output-dir=./sample-${basename} &#10;#exit 0" />
+          <property role="19SUeA" value=" --output-dir=./sample-${basename} &#10;gsutil cp ./sample-${basename} " />
+        </node>
+        <node concept="3YE7tV" id="5WTdyfwY$GF" role="19SJt6">
+          <ref role="3YE7sm" node="5WTdyfwYA6P" resolve="destination_HDF5_URL" />
+        </node>
+        <node concept="19SUe$" id="5WTdyfwY$GE" role="19SJt6">
+          <property role="19SUeA" value="&#10;#exit 0" />
         </node>
       </node>
       <node concept="2OBCQ_" id="mLKgp_dTgx" role="2OBg32">
@@ -1173,6 +1180,11 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2E_JVc" id="5WTdyfwY$tN">
+    <property role="GSh9r" value="fac2003/kallisto-human-gsutil:1.0.0" />
+    <property role="2E_JEh" value="kallisto-human-gsutil" />
+    <property role="TrG5h" value="image" />
   </node>
 </model>
 

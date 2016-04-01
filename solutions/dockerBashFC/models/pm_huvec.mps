@@ -3,6 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="c513c71c-d9f3-4625-83dc-6180e1012e68" name="org.campagnelab.cloud.configuration" version="-1" />
+    <use id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive" version="0" />
+    <use id="adfd00cb-58d7-4094-bca8-f941a491e04f" name="org.campagnelab.gobyweb" version="0" />
+    <use id="0b7d8bbd-896e-495e-be60-01a0d738a649" name="org.campagnelab.gobyweb.plugins" version="0" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
     <devkit ref="5b2dfdd5-812f-48af-8989-85fe63dcbc1d(org.campagnelab.compute.cloud)" />
   </languages>
@@ -12,6 +15,19 @@
     <import index="1c09" ref="r:ceab30bb-72b2-4b22-9ea6-3ea754d0b737(kallisto)" />
   </imports>
   <registry>
+    <language id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive">
+      <concept id="1557380256519915979" name="org.campagnelab.gobyweb.interactive.structure.ResourceRangeContainer" flags="ng" index="2vzQjs" />
+      <concept id="1997533223701191426" name="org.campagnelab.gobyweb.interactive.structure.PluginRepository" flags="ng" index="Eubbw">
+        <property id="5752449153162294620" name="viewPlugins" index="2_qfHq" />
+        <property id="1997533223701200855" name="directory" index="Eu9oP" />
+        <property id="5704832314560344592" name="numPluginsLoaded" index="3NC_3j" />
+        <property id="5704832314560662319" name="loaded" index="3NDmBG" />
+        <child id="1557380256523573436" name="resourcesByVersion" index="2vPVmF" />
+      </concept>
+      <concept id="2051553890368778876" name="org.campagnelab.gobyweb.interactive.structure.ExecutionEnvironment" flags="ng" index="3lueso">
+        <child id="1997533223701807309" name="pluginRepository" index="Esi$J" />
+      </concept>
+    </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
@@ -61,15 +77,53 @@
       <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG" />
     </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
+      <concept id="609403175624294327" name="org.campagnelab.docker.structure.Comment" flags="ng" index="2Cort2">
+        <property id="1622504857886715613" name="description" index="1MaElf" />
+      </concept>
+      <concept id="8987412447080958668" name="org.campagnelab.docker.structure.DockerImage" flags="ng" index="2E_JVc">
+        <property id="8987412447080959633" name="id" index="2E_JEh" />
+        <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
+        <reference id="8987412447080991851" name="buildInstructions" index="2E_BxF" />
+        <child id="6819868375258175796" name="tagAs" index="Gyxcj" />
+      </concept>
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
         <property id="8987412447080623507" name="options" index="2E$TAj" />
         <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
       </concept>
+      <concept id="6819868375258175840" name="org.campagnelab.docker.structure.TagInfo" flags="ng" index="Gyxd7">
+        <property id="6819868375258175846" name="tag" index="Gyxd1" />
+        <property id="6819868375258175942" name="userName" index="Gyxfx" />
+      </concept>
+      <concept id="4077712437829700149" name="org.campagnelab.docker.structure.EnvInstruction" flags="ng" index="2LBJJI">
+        <child id="4202970468876361856" name="assignments" index="2WxHfv" />
+      </concept>
       <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3" />
+      <concept id="1893262236500048401" name="org.campagnelab.docker.structure.RunInstruction" flags="ng" index="VugRC">
+        <child id="1893262236500049774" name="command" index="Vugyn" />
+      </concept>
       <concept id="1893262236499908796" name="org.campagnelab.docker.structure.DockerContainer" flags="ng" index="VuMX5">
         <property id="6819868375264208052" name="id" index="GbyUj" />
         <property id="1893262236499912677" name="tag" index="VuL0s" />
         <property id="1893262236499912678" name="userName" index="VuL0v" />
+      </concept>
+      <concept id="1893262236499932797" name="org.campagnelab.docker.structure.FromInstruction" flags="ng" index="VuO64">
+        <child id="1893262236499932800" name="foundationContainer" index="VuO5T" />
+      </concept>
+      <concept id="1893262236499932072" name="org.campagnelab.docker.structure.MaintainerInstruction" flags="ng" index="VuOhh">
+        <property id="1893262236499932073" name="fullName" index="VuOhg" />
+        <property id="1893262236499932075" name="email" index="VuOhi" />
+      </concept>
+      <concept id="1893262236499930363" name="org.campagnelab.docker.structure.Dockerfile" flags="ng" index="VuPG2">
+        <property id="8987412447078877922" name="message" index="2EHzVy" />
+        <child id="1893262236499933486" name="instructions" index="VuOVn" />
+        <child id="716770353512671073" name="images" index="3blhQR" />
+      </concept>
+      <concept id="4202970468876401544" name="org.campagnelab.docker.structure.EnvVariableAssignment" flags="ng" index="2Wx$zn">
+        <property id="4077712437829700151" name="value" index="2LBJJG" />
+        <property id="4077712437829700150" name="name" index="2LBJJH" />
+      </concept>
+      <concept id="716770353512671076" name="org.campagnelab.docker.structure.ImageRef" flags="ng" index="3blhQM">
+        <reference id="716770353512671080" name="image" index="3blhQY" />
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
@@ -204,16 +258,7 @@
       <node concept="1uYdA0" id="mLKgp_eTtR" role="1uLvPH">
         <ref role="1uK_4X" node="mLKgp_e5Qw" resolve="basename" />
       </node>
-    </node>
-    <node concept="2$rEH5" id="mLKgp_emQr" role="2$rEHq">
-      <ref role="2$rEH4" to="fe9h:mLKgp_ensb" resolve="CopyToCloud" />
-      <node concept="1uYdA0" id="mLKgp_en3K" role="1uLvPH">
-        <ref role="1uK_4X" node="mLKgp_ePJj" resolve="result_2" />
-      </node>
-      <node concept="1uYdA0" id="mLKgp_enFP" role="1uLvPH">
-        <ref role="1uK_4X" node="mLKgp_ezsA" resolve="myBotoFileAgain" />
-      </node>
-      <node concept="1uYdA0" id="mLKgp_eD$B" role="1uLvPH">
+      <node concept="1uYdA0" id="5WTdyfwYANf" role="1uLvPH">
         <ref role="1uK_4X" node="mLKgp_eqj6" resolve="destination" />
       </node>
     </node>
@@ -270,7 +315,7 @@
       <property role="TrG5h" value="myBotoFile" />
       <node concept="4iA3S" id="mLKgp_ehsT" role="2$L62I">
         <node concept="2J_rk5" id="mLKgp_ehAI" role="4iqEH">
-          <property role="2J_rkp" value="~/boto.cfg" />
+          <property role="2J_rkp" value="/home/ubuntu/boto.cfg" />
         </node>
       </node>
     </node>
@@ -278,7 +323,7 @@
       <property role="TrG5h" value="myBotoFileAgain" />
       <node concept="4iA3S" id="mLKgp_eBRw" role="2$L62I">
         <node concept="2J_rk5" id="mLKgp_eC8Y" role="4iqEH">
-          <property role="2J_rkp" value="~/boto.cfg" />
+          <property role="2J_rkp" value="/home/ubuntu/boto.cfg" />
         </node>
       </node>
     </node>
@@ -402,6 +447,96 @@
         <property role="TrG5h" value="Folder with manager credentials" />
         <property role="2tz3XC" value="/Users/fac2003/.ssh" />
       </node>
+    </node>
+  </node>
+  <node concept="3lueso" id="7kooit98aNe">
+    <property role="TrG5h" value="GobyWebEnv" />
+    <node concept="Eubbw" id="7kooit98aNf" role="Esi$J">
+      <property role="3NC_3j" value="0" />
+      <property role="Eu9oP" value="${org.campagnelab.gobyweb.pluginRepo}" />
+      <property role="3NDmBG" value="false" />
+      <property role="2_qfHq" value="true" />
+      <node concept="2vzQjs" id="7kooit98bNK" role="2vPVmF" />
+    </node>
+  </node>
+  <node concept="VuPG2" id="5WTdyfwYzDg">
+    <property role="TrG5h" value="GSUtilWithKallisto" />
+    <property role="2EHzVy" value="content=FROM artifacts/kallisto-homo-sapiens:1.0.0&#10;MAINTAINER Fabien Campagne &quot;fac2003@campagnelab.org&quot;&#10;ENV TERM=&quot;xterm&quot;&#10;&#10;RUN yum install -y python-setuptools&#10;RUN easy_install -U pip &amp;&amp; pip install -U crcmod&#10;RUN pip install -U supervisor&#10;RUN cd /opt &amp;&amp; wget --no-verbose &quot;https://storage.googleapis.com/pub/gsutil.tar.gz&quot; &amp;&amp; tar -xf gsutil.tar.gz &amp;&amp; echo &quot;export PATH=$PATH:/opt/gsutil&quot; &gt;&gt; $HOME/.bashrc&#10;RUN yum clean all&#10;#update the search databases for mlocate&#10;RUN updatedb&#10;LABEL org.campagnelab.docker.createdWith=&quot;org.campagnelab.docker&quot;&#10;" />
+    <node concept="VuO64" id="5WTdyfwYzDh" role="VuOVn">
+      <node concept="VtuK3" id="5WTdyfwYzDj" role="VuO5T">
+        <property role="VuL0s" value="1.0.0" />
+        <property role="VuL0v" value="artifacts" />
+        <property role="GbyUj" value="kallisto-homo-sapiens" />
+      </node>
+    </node>
+    <node concept="VuOhh" id="5WTdyfwYzDi" role="VuOVn">
+      <property role="VuOhg" value="Fabien Campagne" />
+      <property role="VuOhi" value="fac2003@campagnelab.org" />
+    </node>
+    <node concept="2LBJJI" id="5WTdyfwY$4F" role="VuOVn">
+      <node concept="2Wx$zn" id="5WTdyfwY$5k" role="2WxHfv">
+        <property role="2LBJJH" value="TERM" />
+        <property role="2LBJJG" value="xterm" />
+      </node>
+    </node>
+    <node concept="VugRC" id="5WTdyfwY$aV" role="VuOVn">
+      <node concept="19SGf9" id="5WTdyfwY$aW" role="Vugyn">
+        <node concept="19SUe$" id="5WTdyfwY$aX" role="19SJt6">
+          <property role="19SUeA" value="yum install -y python-setuptools" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="5WTdyfwY$7B" role="VuOVn">
+      <node concept="19SGf9" id="5WTdyfwY$7C" role="Vugyn">
+        <node concept="19SUe$" id="5WTdyfwY$7D" role="19SJt6">
+          <property role="19SUeA" value="easy_install -U pip &amp;&amp; pip install -U crcmod" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="5WTdyfwY$c6" role="VuOVn">
+      <node concept="19SGf9" id="5WTdyfwY$c7" role="Vugyn">
+        <node concept="19SUe$" id="5WTdyfwY$c8" role="19SJt6">
+          <property role="19SUeA" value="pip install -U supervisor" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="5WTdyfwY$9p" role="VuOVn">
+      <node concept="19SGf9" id="5WTdyfwY$9q" role="Vugyn">
+        <node concept="19SUe$" id="5WTdyfwY$9r" role="19SJt6">
+          <property role="19SUeA" value="cd /opt &amp;&amp; wget --no-verbose &quot;https://storage.googleapis.com/pub/gsutil.tar.gz&quot; &amp;&amp; tar -xf gsutil.tar.gz &amp;&amp; echo &quot;export PATH=$PATH:/opt/gsutil&quot; &gt;&gt; $HOME/.bashrc" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="4rsVl6EdVrR" role="VuOVn">
+      <node concept="19SGf9" id="4rsVl6EdVsh" role="Vugyn">
+        <node concept="19SUe$" id="4rsVl6EdVsi" role="19SJt6">
+          <property role="19SUeA" value="yum clean all" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="R1cm0Iv5yC" role="VuOVn">
+      <property role="1MaElf" value="update the search databases for mlocate" />
+    </node>
+    <node concept="VugRC" id="R1cm0Iv5wC" role="VuOVn">
+      <node concept="19SGf9" id="R1cm0Iv5xw" role="Vugyn">
+        <node concept="19SUe$" id="R1cm0Iv5xx" role="19SJt6">
+          <property role="19SUeA" value="updatedb" />
+        </node>
+      </node>
+    </node>
+    <node concept="3blhQM" id="5WTdyfwY$e4" role="3blhQR">
+      <ref role="3blhQY" node="5WTdyfwY$e3" resolve="GSUtilWithKallisto_Image" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="5WTdyfwY$e3">
+    <property role="2E_JEh" value="b9507233396b" />
+    <property role="TrG5h" value="GSUtilWithKallisto_Image" />
+    <property role="GSh9r" value="fac2003/kallisto-human-gsutil:1.0.0" />
+    <ref role="2E_BxF" node="5WTdyfwYzDg" resolve="GSUtilWithKallisto" />
+    <node concept="Gyxd7" id="5WTdyfwY$m4" role="Gyxcj">
+      <property role="Gyxfx" value="fac2003" />
+      <property role="TrG5h" value="Kallisto_Human_gsutil" />
+      <property role="Gyxd1" value="1.0.0" />
     </node>
   </node>
 </model>
