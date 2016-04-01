@@ -4962,13 +4962,8 @@
                 <node concept="2LYoG9" id="7TupKkjsd$G" role="3K4Cdx">
                   <ref role="2LYoGb" node="7TupKkjsbEx" resolve="hasReports" />
                 </node>
-                <node concept="3cpWs3" id="7TupKkjsd$H" role="3K4E3e">
-                  <node concept="2LYoG9" id="7TupKkjsd$I" role="3uHU7w">
-                    <ref role="2LYoGb" node="7TupKkjsbE$" resolve="jars" />
-                  </node>
-                  <node concept="Xl_RD" id="7TupKkjsd$J" role="3uHU7B">
-                    <property role="Xl_RC" value="-Djars=" />
-                  </node>
+                <node concept="2LYoG9" id="7TupKkjsd$I" role="3K4E3e">
+                  <ref role="2LYoGb" node="7TupKkjsbE$" resolve="jars" />
                 </node>
               </node>
             </node>
@@ -5013,7 +5008,7 @@
                                 </node>
                               </node>
                               <node concept="Xl_RD" id="3BvuEdd4Xyp" role="3uHU7w">
-                                <property role="Xl_RC" value=" " />
+                                <property role="Xl_RC" value="  -Djars=" />
                               </node>
                             </node>
                           </node>
