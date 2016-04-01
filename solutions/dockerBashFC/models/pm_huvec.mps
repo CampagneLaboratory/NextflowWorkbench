@@ -2,7 +2,7 @@
 <model ref="r:eccf3531-6731-4a6d-8893-3e1d578325a6(pm_huvec)">
   <persistence version="9" />
   <languages>
-    <use id="c513c71c-d9f3-4625-83dc-6180e1012e68" name="org.campagnelab.cloud.configuration" version="0" />
+    <use id="c513c71c-d9f3-4625-83dc-6180e1012e68" name="org.campagnelab.cloud.configuration" version="-1" />
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
     <devkit ref="5b2dfdd5-812f-48af-8989-85fe63dcbc1d(org.campagnelab.compute.cloud)" />
   </languages>
@@ -184,40 +184,31 @@
         <property role="TrG5h" value="URLsToDownload" />
       </node>
     </node>
-    <node concept="2$rEH5" id="mLKgp_e9Hr" role="2$rEHq">
-      <ref role="2$rEH4" to="fe9h:mLKgp_dTjF" resolve="CopyFromCloud" />
-      <node concept="1uYdA0" id="mLKgp_eb0c" role="1uLvPH">
-        <ref role="1uK_4X" node="mLKgp_e5Qx" resolve="URLsToDownload" />
-      </node>
-      <node concept="1uYdA0" id="mLKgp_eb0d" role="1uLvPH">
-        <ref role="1uK_4X" node="mLKgp_efEy" resolve="myBotoFile" />
-      </node>
-      <node concept="1uLkD0" id="mLKgp_eb0e" role="1uLvPA">
-        <property role="TrG5h" value="id" />
-      </node>
-      <node concept="1uLkD0" id="mLKgp_eb0f" role="1uLvPA">
-        <property role="TrG5h" value="readFile" />
-      </node>
-    </node>
     <node concept="2$rEH5" id="5frYURexkMf" role="2$rEHq">
       <ref role="2$rEH4" to="1c09:mLKgp_dTg1" resolve="KallistoHDF5WithTuples" />
-      <node concept="1uYdA0" id="5frYURexkRa" role="1uLvPH">
-        <ref role="1uK_4X" node="mLKgp_eb0f" resolve="readFile" />
-      </node>
-      <node concept="2tD$Xd" id="mLKgp_ej1J" role="1uLvPA">
+      <node concept="2tD$Xd" id="mLKgp_ePJh" role="1uLvPA">
         <property role="TrG5h" value="result" />
-        <node concept="1$0uN4" id="mLKgp_ej1K" role="2tD$Xc">
+        <node concept="1$0uN4" id="mLKgp_ePJi" role="2tD$Xc">
           <property role="TrG5h" value="result_1" />
         </node>
-        <node concept="1$0uN4" id="mLKgp_ej1L" role="2tD$Xc">
+        <node concept="1$0uN4" id="mLKgp_ePJj" role="2tD$Xc">
           <property role="TrG5h" value="result_2" />
         </node>
+      </node>
+      <node concept="1uYdA0" id="5frYURexkRa" role="1uLvPH">
+        <ref role="1uK_4X" node="mLKgp_e5Qx" resolve="URLsToDownload" />
+      </node>
+      <node concept="1uYdA0" id="mLKgp_eT1m" role="1uLvPH">
+        <ref role="1uK_4X" node="mLKgp_efEy" resolve="myBotoFile" />
+      </node>
+      <node concept="1uYdA0" id="mLKgp_eTtR" role="1uLvPH">
+        <ref role="1uK_4X" node="mLKgp_e5Qw" resolve="basename" />
       </node>
     </node>
     <node concept="2$rEH5" id="mLKgp_emQr" role="2$rEHq">
       <ref role="2$rEH4" to="fe9h:mLKgp_ensb" resolve="CopyToCloud" />
       <node concept="1uYdA0" id="mLKgp_en3K" role="1uLvPH">
-        <ref role="1uK_4X" node="mLKgp_ej1L" resolve="result_2" />
+        <ref role="1uK_4X" node="mLKgp_ePJj" resolve="result_2" />
       </node>
       <node concept="1uYdA0" id="mLKgp_enFP" role="1uLvPH">
         <ref role="1uK_4X" node="mLKgp_ezsA" resolve="myBotoFileAgain" />
@@ -229,11 +220,11 @@
     <node concept="2$rEH5" id="59BvSKQHDFb" role="2$rEHq">
       <ref role="2$rEH4" to="hw4t:7ejpSqH8Lzx" resolve="Sample_CombineCounts" />
       <node concept="1uYdA0" id="59BvSKQHDK9" role="1uLvPH">
-        <ref role="1uK_4X" node="mLKgp_ej1K" resolve="result_1" />
+        <ref role="1uK_4X" node="mLKgp_ePJi" resolve="result_1" />
         <node concept="1yaYav" id="mLKgp_elAl" role="1ylr64" />
       </node>
       <node concept="1uYdA0" id="mLKgp_elGc" role="1uLvPH">
-        <ref role="1uK_4X" node="mLKgp_eb0e" resolve="id" />
+        <ref role="1uK_4X" node="59BvSKQOg5v" resolve="IDsToCombine" />
         <node concept="1yaYav" id="mLKgp_emzV" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="59BvSKQHDKb" role="1uLvPA">
