@@ -108,11 +108,7 @@
     <property role="TrG5h" value="DiskSize" />
     <property role="34LRSv" value="boot_disk_size" />
     <property role="3GE5qa" value="gridengine" />
-    <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
-    <node concept="1TJgyi" id="6_LFt8ZwkB0" role="1TKVEl">
-      <property role="TrG5h" value="size" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
+    <ref role="1TJDcQ" node="29ahU8t4v$r" resolve="IntegerOption" />
   </node>
   <node concept="1TIwiD" id="3pj0Oa6G7RW">
     <property role="1pbfSe" value="1123843778" />
@@ -161,6 +157,47 @@
     <node concept="1TJgyi" id="4gEJt6_N$mi" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29ahU8t4v$r">
+    <property role="1pbfSe" value="1063010493" />
+    <property role="TrG5h" value="IntegerOption" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
+    <node concept="1TJgyi" id="29ahU8t4v$s" role="1TKVEl">
+      <property role="TrG5h" value="size" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29ahU8t4vCy">
+    <property role="1pbfSe" value="1063010756" />
+    <property role="3GE5qa" value="gridengine" />
+    <property role="TrG5h" value="SharedDiskSize" />
+    <property role="34LRSv" value="boot_disk_size" />
+    <property role="R4oN_" value="Shared file system on the cluster" />
+    <ref role="1TJDcQ" node="29ahU8t4v$r" resolve="IntegerOption" />
+  </node>
+  <node concept="1TIwiD" id="29ahU8t4wUP">
+    <property role="1pbfSe" value="1541735366" />
+    <property role="3GE5qa" value="gridengine" />
+    <property role="TrG5h" value="FrontendFlavor" />
+    <property role="34LRSv" value="flavor" />
+    <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
+    <node concept="1TJgyi" id="29ahU8t4wUQ" role="1TKVEl">
+      <property role="TrG5h" value="flavor" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29ahU8t4wVv">
+    <property role="1pbfSe" value="1063016065" />
+    <property role="TrG5h" value="StringOption" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
+    <node concept="1TJgyi" id="29ahU8t4wVw" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

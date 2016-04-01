@@ -24,7 +24,6 @@
     </language>
     <language id="f7196c5e-3839-47b2-a69a-cc57b10442a1" name="org.campagnelab.cloud">
       <concept id="6538561612137036945" name="org.campagnelab.cloud.structure.ContainerWithEC" flags="ng" index="3zOPYP">
-        <property id="7017246219745809549" name="notes" index="1$193f" />
         <property id="9054962551105550959" name="credentials" index="1OHsCo" />
         <reference id="147628039490030680" name="dockerConfig" index="1QJbqN" />
         <child id="331977639697571264" name="container" index="234boB" />
@@ -128,13 +127,20 @@
       <concept id="3914476085377531388" name="org.campagnelab.cloud.configuration.structure.ClusterConfig" flags="ng" index="2KSRUY">
         <child id="3914476085377531437" name="options" index="2KSRPJ" />
       </concept>
-      <concept id="7598045164870912447" name="org.campagnelab.cloud.configuration.structure.DiskSize" flags="ng" index="1mWehH">
-        <property id="7598045164870912448" name="size" index="1mWegi" />
+      <concept id="2470866107164135093" name="org.campagnelab.cloud.configuration.structure.FrontendFlavor" flags="ng" index="Zm4$n">
+        <property id="2470866107164135094" name="flavor" index="Zm4$k" />
       </concept>
+      <concept id="2470866107164129826" name="org.campagnelab.cloud.configuration.structure.SharedDiskSize" flags="ng" index="ZmVQ0" />
+      <concept id="2470866107164129563" name="org.campagnelab.cloud.configuration.structure.IntegerOption" flags="ng" index="ZmVUT">
+        <property id="2470866107164129564" name="size" index="ZmVUY" />
+      </concept>
+      <concept id="7598045164870912447" name="org.campagnelab.cloud.configuration.structure.DiskSize" flags="ng" index="1mWehH" />
       <concept id="1155724070824382171" name="org.campagnelab.cloud.configuration.structure.ComputeNodeFlavor" flags="ng" index="1rOJCK">
         <property id="1155724070824382944" name="flavor" index="1rOIkb" />
       </concept>
-      <concept id="4911947051728520532" name="org.campagnelab.cloud.configuration.structure.Preemptibility" flags="ng" index="3xTfy5" />
+      <concept id="4911947051728520532" name="org.campagnelab.cloud.configuration.structure.Preemptibility" flags="ng" index="3xTfy5">
+        <property id="4911947051728520594" name="value" index="3xTfx3" />
+      </concept>
       <concept id="6538561612137081194" name="org.campagnelab.cloud.configuration.structure.GridEngineClusterConfig" flags="ng" index="3zOwDe" />
       <concept id="6538561612137102278" name="org.campagnelab.cloud.configuration.structure.NodeClass" flags="ng" index="3zO_zy">
         <property id="6538561612137102279" name="numOfNodes" index="3zO_zz" />
@@ -227,40 +233,48 @@
     <property role="2EEQw2" value="/usr/local/bin/docker" />
     <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
   </node>
-  <node concept="3zOPYP" id="2qF0d015Dbj">
+  <node concept="3zOPYP" id="29ahU8t59Vr">
     <property role="TrG5h" value="ManageCloudCluster" />
-    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:36 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@455a3419 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
-    <property role="1OHsCo" value="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3TT2jg5nh4wGhBU2BDfU5dPmBgN+c3J5dreCdadBZ2OOPCTsrhhA1CdUzWcBdOqkeZb4FXsvj3LFDT/C+8C9lsQ4V7K/ZmsGALcm/zG68Cn50I5Leo7AFhbJD2GTGjoKRmdxtaWZ5G+D30lUgR6mqF5JTtaH5/aZESndZyMsIlj9Vy2LOqgIxg9fTfI/ie+HP4RQtVt/xe1cIZGH40c0OPr4kxG2WY5a4wHK//NuSE73JfOlPBIdqPSqCsn6QXtaGkvAfi+fjUFtNATSlNYzS9p1K58OdGAYLmCAkkRZ5Bm/ahuvmzLYsys8A8rR4U9molw7EX8XDFmhwQoKAavnN fac2003@mac158665.med.cornell.edu" />
+    <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
     <ref role="1QJbqN" node="2qF0d00Ta0f" resolve="docker.config" />
-    <node concept="VtuK3" id="2qF0d015Dbk" role="234boB">
+    <node concept="VtuK3" id="29ahU8t59Vs" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="artifacts" />
       <property role="GbyUj" value="elasticluster" />
     </node>
-    <node concept="3zOwDe" id="2qF0d015Dbl" role="1OGc9L">
+    <node concept="3zOwDe" id="29ahU8t59Vt" role="1OGc9L">
       <property role="TrG5h" value="cluster.config" />
-      <node concept="3zO_zI" id="2qF0d015Dbm" role="2KSRPJ">
+      <node concept="3zO_zI" id="29ahU8t59Vu" role="2KSRPJ">
         <property role="TrG5h" value="Number of frontend nodes" />
         <property role="3zO_zz" value="1" />
       </node>
-      <node concept="3zO_zJ" id="2qF0d015Dbn" role="2KSRPJ">
-        <property role="TrG5h" value="Number of worker nodes" />
-        <property role="3zO_zz" value="5" />
+      <node concept="Zm4$n" id="29ahU8t59Vv" role="2KSRPJ">
+        <property role="TrG5h" value="Frontend node type" />
+        <property role="Zm4$k" value="n1-standard-1" />
       </node>
-      <node concept="1rOJCK" id="2qF0d015Dbo" role="2KSRPJ">
+      <node concept="ZmVQ0" id="29ahU8t59Vw" role="2KSRPJ">
+        <property role="TrG5h" value="Shared file system size" />
+        <property role="ZmVUY" value="50" />
+      </node>
+      <node concept="3zO_zJ" id="29ahU8t59Vx" role="2KSRPJ">
+        <property role="TrG5h" value="Number of worker nodes" />
+        <property role="3zO_zz" value="2" />
+      </node>
+      <node concept="1rOJCK" id="29ahU8t59Vy" role="2KSRPJ">
         <property role="TrG5h" value="Compute node type" />
         <property role="1rOIkb" value="n1-standard-2" />
       </node>
-      <node concept="1mWehH" id="2qF0d015Dbp" role="2KSRPJ">
-        <property role="TrG5h" value="Disk size for worker nodes" />
-        <property role="1mWegi" value="20" />
+      <node concept="1mWehH" id="29ahU8t59Vz" role="2KSRPJ">
+        <property role="TrG5h" value="Disk size local to each worker nodes" />
+        <property role="ZmVUY" value="20" />
       </node>
-      <node concept="3xTfy5" id="2qF0d015Dbr" role="2KSRPJ">
+      <node concept="3xTfy5" id="29ahU8t59V_" role="2KSRPJ">
         <property role="TrG5h" value="Preemptibility" />
+        <property role="3xTfx3" value="true" />
       </node>
-      <node concept="2tz3XF" id="2qF0d015Dbq" role="2KSRPJ">
+      <node concept="2tz3XF" id="29ahU8t59V$" role="2KSRPJ">
         <property role="TrG5h" value="Folder with manager credentials" />
-        <property role="2tz3XC" value="/Users/mas2182/.ssh" />
+        <property role="2tz3XC" value="/Users/manuelesimi/.ssh" />
       </node>
     </node>
   </node>
