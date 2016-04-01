@@ -1182,7 +1182,7 @@
             <node concept="2pNUuL" id="5OPtsPp_p0" role="2pNNFR">
               <property role="2pNUuO" value="command" />
               <node concept="2pMdtt" id="5OPtsPp_sx" role="2pMdts">
-                <property role="2pMdty" value="cd ${remote.job.dir}; ./runNextflow ${remote.job.dir}/${workflow.script} ${jars} ${nextflow.options}" />
+                <property role="2pMdty" value="cd ${remote.job.dir}; export SCRIPT_DIR=${remote.job.dir}; ./runNextflow ${remote.job.dir}/${workflow.script} ${jars} ${nextflow.options}" />
               </node>
             </node>
           </node>
