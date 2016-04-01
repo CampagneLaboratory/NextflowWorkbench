@@ -695,8 +695,16 @@
   <node concept="2ulcR8" id="mLKgp_dTg1">
     <property role="TrG5h" value="KallistoHDF5WithTuples" />
     <node concept="2mjA9o" id="mLKgp_eeMt" role="2ulM7n">
-      <property role="TrG5h" value="read1" />
-      <node concept="16pRw0" id="mLKgp_eeMV" role="2ybFLk" />
+      <property role="TrG5h" value="readURL" />
+      <node concept="16pbKc" id="mLKgp_eRuU" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="mLKgp_eRv3" role="2ulM7n">
+      <property role="TrG5h" value="botoFile" />
+      <node concept="16pRw0" id="mLKgp_eRvd" role="2ybFLk" />
+    </node>
+    <node concept="2mjA9o" id="mLKgp_eRUO" role="2ulM7n">
+      <property role="TrG5h" value="basename" />
+      <node concept="16pbKc" id="mLKgp_eRV6" role="2ybFLk" />
     </node>
     <node concept="VtuK3" id="mLKgp_dTg2" role="234boB">
       <property role="VuL0s" value="1.0.0" />
@@ -711,10 +719,28 @@
     <node concept="NgwLd" id="mLKgp_dTgb" role="2ulM7a">
       <node concept="19SGf9" id="mLKgp_dTgc" role="3Y$PkS">
         <node concept="19SUe$" id="mLKgp_dTgd" role="19SJt6">
-          <property role="19SUeA" value="echo &quot;Processing: &quot; " />
+          <property role="19SUeA" value="&#10;# copy the user boto configuration inside the container so gsutil can find it:&#10;cp " />
+        </node>
+        <node concept="3YE7tV" id="mLKgp_eRlu" role="19SJt6">
+          <ref role="3YE7sm" node="mLKgp_eRv3" resolve="botoFile" />
+        </node>
+        <node concept="19SUe$" id="mLKgp_eRlv" role="19SJt6">
+          <property role="19SUeA" value=" /etc/boto.cfg&#10;&#10;gsutil cp " />
+        </node>
+        <node concept="3YE7tV" id="mLKgp_eRKL" role="19SJt6">
+          <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />
+        </node>
+        <node concept="19SUe$" id="mLKgp_eRKK" role="19SJt6">
+          <property role="19SUeA" value=" ./" />
+        </node>
+        <node concept="3YE7tV" id="mLKgp_eRKJ" role="19SJt6">
+          <ref role="3YE7sm" node="mLKgp_eRUO" resolve="basename" />
+        </node>
+        <node concept="19SUe$" id="mLKgp_eRKI" role="19SJt6">
+          <property role="19SUeA" value="&#10;echo &quot;Processing: &quot; " />
         </node>
         <node concept="3YE7tV" id="mLKgp_dTge" role="19SJt6">
-          <ref role="3YE7sm" node="mLKgp_eeMt" resolve="read1" />
+          <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />
         </node>
         <node concept="19SUe$" id="mLKgp_dTgf" role="19SJt6">
           <property role="19SUeA" value="&#10;TRANSCRIPT_INDEX=" />
@@ -738,7 +764,7 @@
           <property role="19SUeA" value="&#10;echo ${TRANSCRIPT_INDEX}&#10;basename=`basename " />
         </node>
         <node concept="3YE7tV" id="mLKgp_dTgl" role="19SJt6">
-          <ref role="3YE7sm" node="mLKgp_eeMt" resolve="read1" />
+          <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />
         </node>
         <node concept="19SUe$" id="mLKgp_dTgm" role="19SJt6">
           <property role="19SUeA" value="`&#10;echo &quot;Basename= ${basename}&quot;&#10;&#10;mkdir output&#10;NUM_THREADS=`cat /proc/cpuinfo|grep processor|wc -l`&#10;" />
@@ -767,7 +793,7 @@
           <property role="19SUeA" value=" quant  --bootstrap-samples=100 --threads=${NUM_THREADS}      \&#10;    --index=${TRANSCRIPT_INDEX} " />
         </node>
         <node concept="3YE7tV" id="mLKgp_dTgt" role="19SJt6">
-          <ref role="3YE7sm" node="mLKgp_eeMt" resolve="read1" />
+          <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />
         </node>
         <node concept="19SUe$" id="mLKgp_dTgu" role="19SJt6">
           <property role="19SUeA" value=" --output-dir=./sample-${basename} &#10;#exit 0" />
