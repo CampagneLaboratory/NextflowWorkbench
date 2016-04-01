@@ -100,8 +100,8 @@
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F0A7n" id="6_LFt8ZwkCh" role="3EZMnx">
-        <ref role="1NtTu8" to="45iu:6_LFt8ZwkB0" resolve="size" />
         <ref role="1k5W1q" node="5Pg96r0RjZh" resolve="OptionValue" />
+        <ref role="1NtTu8" to="45iu:29ahU8t4v$s" resolve="size" />
       </node>
       <node concept="3F0ifn" id="6_LFt8ZwkCR" role="3EZMnx">
         <property role="3F0ifm" value="GB" />
@@ -191,6 +191,49 @@
         <ref role="1k5W1q" node="5Pg96r0RjZh" resolve="OptionValue" />
       </node>
       <node concept="l2Vlx" id="4gEJt6_N$mB" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29ahU8t4vCC">
+    <property role="3GE5qa" value="gridengine" />
+    <ref role="1XX52x" to="45iu:29ahU8t4vCy" resolve="SharedDiskSize" />
+    <node concept="3EZMnI" id="29ahU8t4vCE" role="2wV5jI">
+      <node concept="3F0A7n" id="29ahU8t4vCF" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VPxyj" id="29ahU8t4vCG" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="29ahU8t4vCH" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F0A7n" id="29ahU8t4vCI" role="3EZMnx">
+        <ref role="1k5W1q" node="5Pg96r0RjZh" resolve="OptionValue" />
+        <ref role="1NtTu8" to="45iu:29ahU8t4v$s" resolve="size" />
+      </node>
+      <node concept="3F0ifn" id="29ahU8t4vCJ" role="3EZMnx">
+        <property role="3F0ifm" value="GB" />
+      </node>
+      <node concept="2iRfu4" id="29ahU8t4vCK" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29ahU8t59WK">
+    <property role="3GE5qa" value="gridengine" />
+    <ref role="1XX52x" to="45iu:29ahU8t4wUP" resolve="FrontendFlavor" />
+    <node concept="3EZMnI" id="29ahU8t59WM" role="2wV5jI">
+      <node concept="3F0A7n" id="29ahU8t59WN" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VPxyj" id="29ahU8t59WO" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="29ahU8t59WP" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F0A7n" id="29ahU8t59WQ" role="3EZMnx">
+        <ref role="1NtTu8" to="45iu:29ahU8t4wUQ" resolve="flavor" />
+        <ref role="1k5W1q" node="5Pg96r0RjZh" resolve="OptionValue" />
+      </node>
+      <node concept="2iRfu4" id="29ahU8t59WR" role="2iSdaV" />
     </node>
   </node>
 </model>
