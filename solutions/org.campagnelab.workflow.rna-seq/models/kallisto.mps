@@ -715,9 +715,9 @@
       <node concept="16pbKc" id="5WTdyfwYA73" role="2ybFLk" />
     </node>
     <node concept="VtuK3" id="5WTdyfwY$Fl" role="234boB">
-      <property role="VuL0s" value="1.0.0" />
+      <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="fac2003" />
-      <property role="GbyUj" value="b9507233396b" />
+      <property role="GbyUj" value="kallisto-human-gsutil" />
     </node>
     <node concept="2lYRya" id="mLKgp_dTg3" role="2ulM79">
       <property role="TrG5h" value="'sample-*'" />
@@ -732,13 +732,13 @@
           <ref role="3YE7sm" node="mLKgp_eRv3" resolve="botoFile" />
         </node>
         <node concept="19SUe$" id="mLKgp_eRlv" role="19SJt6">
-          <property role="19SUeA" value=" /etc/boto.cfg&#10;&#10;gsutil cp " />
+          <property role="19SUeA" value=" /etc/boto.cfg&#10;gsutil cp " />
         </node>
         <node concept="3YE7tV" id="mLKgp_eRKL" role="19SJt6">
           <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />
         </node>
         <node concept="19SUe$" id="mLKgp_eRKK" role="19SJt6">
-          <property role="19SUeA" value=" ./&#10;echo &quot;Processing: &quot; " />
+          <property role="19SUeA" value=" ./&#10;&#10;echo &quot;Processing: &quot; " />
         </node>
         <node concept="3YE7tV" id="mLKgp_dTge" role="19SJt6">
           <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />
@@ -797,13 +797,13 @@
           <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />
         </node>
         <node concept="19SUe$" id="mLKgp_dTgu" role="19SJt6">
-          <property role="19SUeA" value=" --output-dir=./sample-${basename} &#10;gsutil cp ./sample-${basename} " />
+          <property role="19SUeA" value=" --output-dir=./sample-${basename} &#10;&#10;gsutil cp ./sample-${basename} " />
         </node>
         <node concept="3YE7tV" id="5WTdyfwY$GF" role="19SJt6">
           <ref role="3YE7sm" node="5WTdyfwYA6P" resolve="destination_HDF5_URL" />
         </node>
         <node concept="19SUe$" id="5WTdyfwY$GE" role="19SJt6">
-          <property role="19SUeA" value="&#10;#exit 0" />
+          <property role="19SUeA" value="&#10;&#10;#exit 0" />
         </node>
       </node>
       <node concept="2OBCQ_" id="mLKgp_dTgx" role="2OBg32">
