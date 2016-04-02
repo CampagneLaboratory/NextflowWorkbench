@@ -2,7 +2,7 @@
 <model ref="r:eccf3531-6731-4a6d-8893-3e1d578325a6(pm_huvec)">
   <persistence version="9" />
   <languages>
-    <use id="c513c71c-d9f3-4625-83dc-6180e1012e68" name="org.campagnelab.cloud.configuration" version="-1" />
+    <use id="c513c71c-d9f3-4625-83dc-6180e1012e68" name="org.campagnelab.cloud.configuration" version="0" />
     <use id="a8fb88b0-7e9f-478c-aab4-a1b076131192" name="org.campagnelab.gobyweb.interactive" version="0" />
     <use id="adfd00cb-58d7-4094-bca8-f941a491e04f" name="org.campagnelab.gobyweb" version="0" />
     <use id="0b7d8bbd-896e-495e-be60-01a0d738a649" name="org.campagnelab.gobyweb.plugins" version="0" />
@@ -46,8 +46,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
@@ -98,7 +108,9 @@
       <concept id="4077712437829700149" name="org.campagnelab.docker.structure.EnvInstruction" flags="ng" index="2LBJJI">
         <child id="4202970468876361856" name="assignments" index="2WxHfv" />
       </concept>
-      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3" />
+      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
+        <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
+      </concept>
       <concept id="1893262236500048401" name="org.campagnelab.docker.structure.RunInstruction" flags="ng" index="VugRC">
         <child id="1893262236500049774" name="command" index="Vugyn" />
       </concept>
@@ -201,9 +213,6 @@
       </concept>
       <concept id="3914476085377531388" name="org.campagnelab.cloud.configuration.structure.ClusterConfig" flags="ng" index="2KSRUY">
         <child id="3914476085377531437" name="options" index="2KSRPJ" />
-      </concept>
-      <concept id="2470866107164129563" name="org.campagnelab.cloud.configuration.structure.IntegerOption" flags="ng" index="ZmVUT">
-        <property id="2470866107164129564" name="size" index="ZmVUY" />
       </concept>
       <concept id="7598045164870912447" name="org.campagnelab.cloud.configuration.structure.DiskSize" flags="ng" index="1mWehH" />
       <concept id="1155724070824382171" name="org.campagnelab.cloud.configuration.structure.ComputeNodeFlavor" flags="ng" index="1rOJCK">
@@ -440,7 +449,6 @@
       </node>
       <node concept="1mWehH" id="mLKgp_eNtg" role="2KSRPJ">
         <property role="TrG5h" value="Disk size for worker nodes" />
-        <property role="ZmVUY" value="50" />
       </node>
       <node concept="3xTfy5" id="mLKgp_eNti" role="2KSRPJ">
         <property role="TrG5h" value="Preemptibility" />
@@ -465,11 +473,23 @@
   <node concept="VuPG2" id="5WTdyfwYzDg">
     <property role="TrG5h" value="GSUtilWithKallisto" />
     <property role="2EHzVy" value="content=FROM artifacts/kallisto-homo-sapiens:1.0.0&#10;MAINTAINER Fabien Campagne &quot;fac2003@campagnelab.org&quot;&#10;ENV TERM=&quot;xterm&quot;&#10;&#10;RUN yum install -y python-setuptools&#10;RUN easy_install -U pip &amp;&amp; pip install -U crcmod&#10;RUN pip install -U supervisor&#10;RUN cd /opt &amp;&amp; wget --no-verbose &quot;https://storage.googleapis.com/pub/gsutil.tar.gz&quot; &amp;&amp; tar -xf gsutil.tar.gz &amp;&amp; echo &quot;export PATH=$PATH:/opt/gsutil&quot; &gt;&gt; $HOME/.bashrc&#10;RUN yum clean all&#10;#update the search databases for mlocate&#10;RUN updatedb&#10;LABEL org.campagnelab.docker.createdWith=&quot;org.campagnelab.docker&quot;&#10;" />
+    <node concept="1X3_iC" id="5WTdyfwYD9q" role="lGtFl">
+      <property role="3V$3am" value="instructions" />
+      <property role="3V$3ak" value="25281c03-4a7c-4b57-9221-24a10fc36ef5/1893262236499930363/1893262236499933486" />
+      <node concept="VugRC" id="5WTdyfwYD7W" role="8Wnug">
+        <node concept="19SGf9" id="5WTdyfwYD8o" role="Vugyn">
+          <node concept="19SUe$" id="5WTdyfwYD8p" role="19SJt6">
+            <property role="19SUeA" value="source ${HOME}/.bashrc &amp;&amp; echo ${PATH} &amp;&amp; env" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="VuO64" id="5WTdyfwYzDh" role="VuOVn">
       <node concept="VtuK3" id="5WTdyfwYzDj" role="VuO5T">
         <property role="VuL0s" value="1.0.0" />
         <property role="VuL0v" value="artifacts" />
         <property role="GbyUj" value="kallisto-homo-sapiens" />
+        <property role="3zaeVo" value="true" />
       </node>
     </node>
     <node concept="VuOhh" id="5WTdyfwYzDi" role="VuOVn">
@@ -480,6 +500,10 @@
       <node concept="2Wx$zn" id="5WTdyfwY$5k" role="2WxHfv">
         <property role="2LBJJH" value="TERM" />
         <property role="2LBJJG" value="xterm" />
+      </node>
+      <node concept="2Wx$zn" id="5WTdyfwYD7u" role="2WxHfv">
+        <property role="2LBJJH" value="PATH" />
+        <property role="2LBJJG" value="${PATH}" />
       </node>
     </node>
     <node concept="VugRC" id="5WTdyfwY$aV" role="VuOVn">
@@ -506,7 +530,7 @@
     <node concept="VugRC" id="5WTdyfwY$9p" role="VuOVn">
       <node concept="19SGf9" id="5WTdyfwY$9q" role="Vugyn">
         <node concept="19SUe$" id="5WTdyfwY$9r" role="19SJt6">
-          <property role="19SUeA" value="cd /opt &amp;&amp; wget --no-verbose &quot;https://storage.googleapis.com/pub/gsutil.tar.gz&quot; &amp;&amp; tar -xf gsutil.tar.gz &amp;&amp; echo &quot;export PATH=$PATH:/opt/gsutil&quot; &gt;&gt; $HOME/.bashrc" />
+          <property role="19SUeA" value="source ${HOME}/.bashrc &amp;&amp; cd /opt &amp;&amp; wget --no-verbose &quot;https://storage.googleapis.com/pub/gsutil.tar.gz&quot; &amp;&amp; tar -xf gsutil.tar.gz &amp;&amp; echo &quot;export PATH=$PATH:/opt/gsutil&quot; &gt;&gt; ${HOME}/.bashrc &amp;&amp; export PATH=$PATH:/opt/gsutil" />
         </node>
       </node>
     </node>
@@ -530,11 +554,32 @@
     <node concept="3blhQM" id="5WTdyfwY$e4" role="3blhQR">
       <ref role="3blhQY" node="5WTdyfwY$e3" resolve="GSUtilWithKallisto_Image" />
     </node>
-    <node concept="3blhQM" id="mLKgp_fCgY" role="3blhQR">
-      <ref role="3blhQY" node="mLKgp_fCgX" resolve="GSUtilWithKallisto_Image" />
+    <node concept="3blhQM" id="5WTdyfwYD8t" role="3blhQR">
+      <ref role="3blhQY" node="5WTdyfwYD8s" resolve="GSUtilWithKallisto_Image" />
     </node>
-    <node concept="3blhQM" id="mLKgp_fOE6" role="3blhQR">
-      <ref role="3blhQY" node="mLKgp_fOE5" resolve="GSUtilWithKallisto_Image" />
+    <node concept="3blhQM" id="5WTdyfwYD8x" role="3blhQR">
+      <ref role="3blhQY" node="5WTdyfwYD8w" resolve="GSUtilWithKallisto_Image" />
+    </node>
+    <node concept="3blhQM" id="5WTdyfwYD8B" role="3blhQR">
+      <ref role="3blhQY" node="5WTdyfwYD8A" resolve="GSUtilWithKallisto_Image" />
+    </node>
+    <node concept="3blhQM" id="5WTdyfwYD8H" role="3blhQR">
+      <ref role="3blhQY" node="5WTdyfwYD8G" resolve="GSUtilWithKallisto_Image" />
+    </node>
+    <node concept="3blhQM" id="5WTdyfwYD8P" role="3blhQR">
+      <ref role="3blhQY" node="5WTdyfwYD8O" resolve="GSUtilWithKallisto_Image" />
+    </node>
+    <node concept="3blhQM" id="5WTdyfwYD8X" role="3blhQR">
+      <ref role="3blhQY" node="5WTdyfwYD8W" resolve="GSUtilWithKallisto_Image" />
+    </node>
+    <node concept="3blhQM" id="5WTdyfwYD96" role="3blhQR">
+      <ref role="3blhQY" node="5WTdyfwYD95" resolve="GSUtilWithKallisto_Image" />
+    </node>
+    <node concept="3blhQM" id="5WTdyfwYD9g" role="3blhQR">
+      <ref role="3blhQY" node="5WTdyfwYD9f" resolve="GSUtilWithKallisto_Image" />
+    </node>
+    <node concept="3blhQM" id="5WTdyfwYD9W" role="3blhQR">
+      <ref role="3blhQY" node="5WTdyfwYD9V" resolve="GSUtilWithKallisto_Image" />
     </node>
   </node>
   <node concept="2E_JVc" id="5WTdyfwY$e3">
@@ -548,21 +593,56 @@
       <property role="Gyxd1" value="1.0.0" />
     </node>
   </node>
-  <node concept="2E_JVc" id="mLKgp_fCgX">
-    <property role="2E_JEh" value="bffaa56467ec" />
+  <node concept="2E_JVc" id="5WTdyfwYD8w">
+    <property role="2E_JEh" value="5f4fc5bbf24b" />
     <property role="TrG5h" value="GSUtilWithKallisto_Image" />
     <ref role="2E_BxF" node="5WTdyfwYzDg" resolve="GSUtilWithKallisto" />
   </node>
-  <node concept="2E_JVc" id="mLKgp_fOE5">
-    <property role="2E_JEh" value="bffaa56467ec" />
+  <node concept="2E_JVc" id="5WTdyfwYD95">
+    <property role="2E_JEh" value="f5f506dc5ef6" />
     <property role="TrG5h" value="GSUtilWithKallisto_Image" />
-    <property role="GSh9r" value="fac2003/kallisto-human-gsutil:latest" />
     <ref role="2E_BxF" node="5WTdyfwYzDg" resolve="GSUtilWithKallisto" />
-    <node concept="Gyxd7" id="mLKgp_fOEH" role="Gyxcj">
+  </node>
+  <node concept="2E_JVc" id="5WTdyfwYD8A">
+    <property role="2E_JEh" value="c74b7a8547b6" />
+    <property role="TrG5h" value="GSUtilWithKallisto_Image" />
+    <ref role="2E_BxF" node="5WTdyfwYzDg" resolve="GSUtilWithKallisto" />
+  </node>
+  <node concept="2E_JVc" id="5WTdyfwYD8G">
+    <property role="2E_JEh" value="c06905282d6b" />
+    <property role="TrG5h" value="GSUtilWithKallisto_Image" />
+    <ref role="2E_BxF" node="5WTdyfwYzDg" resolve="GSUtilWithKallisto" />
+  </node>
+  <node concept="2E_JVc" id="5WTdyfwYD9f">
+    <property role="2E_JEh" value="c95141cd7d35" />
+    <property role="TrG5h" value="GSUtilWithKallisto_Image" />
+    <ref role="2E_BxF" node="5WTdyfwYzDg" resolve="GSUtilWithKallisto" />
+  </node>
+  <node concept="2E_JVc" id="5WTdyfwYD8O">
+    <property role="2E_JEh" value="2e92cf720448" />
+    <property role="TrG5h" value="GSUtilWithKallisto_Image" />
+    <ref role="2E_BxF" node="5WTdyfwYzDg" resolve="GSUtilWithKallisto" />
+  </node>
+  <node concept="2E_JVc" id="5WTdyfwYD9V">
+    <property role="2E_JEh" value="dc4f7226f7f8" />
+    <property role="TrG5h" value="GSUtilWithKallisto_Image" />
+    <property role="GSh9r" value="fac2003/kallisto-human-gsutil:1.0.2" />
+    <ref role="2E_BxF" node="5WTdyfwYzDg" resolve="GSUtilWithKallisto" />
+    <node concept="Gyxd7" id="5WTdyfwYDa7" role="Gyxcj">
       <property role="Gyxfx" value="fac2003" />
       <property role="TrG5h" value="kallisto-human-gsutil" />
-      <property role="Gyxd1" value="latest" />
+      <property role="Gyxd1" value="1.0.2" />
     </node>
+  </node>
+  <node concept="2E_JVc" id="5WTdyfwYD8s">
+    <property role="2E_JEh" value="1609cbf1939d" />
+    <property role="TrG5h" value="GSUtilWithKallisto_Image" />
+    <ref role="2E_BxF" node="5WTdyfwYzDg" resolve="GSUtilWithKallisto" />
+  </node>
+  <node concept="2E_JVc" id="5WTdyfwYD8W">
+    <property role="2E_JEh" value="f5f506dc5ef6" />
+    <property role="TrG5h" value="GSUtilWithKallisto_Image" />
+    <ref role="2E_BxF" node="5WTdyfwYzDg" resolve="GSUtilWithKallisto" />
   </node>
 </model>
 
