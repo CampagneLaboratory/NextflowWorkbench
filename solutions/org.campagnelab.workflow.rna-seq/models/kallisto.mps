@@ -791,13 +791,7 @@
           </node>
         </node>
         <node concept="19SUe$" id="mLKgp_dTgs" role="19SJt6">
-          <property role="19SUeA" value=" quant  --single -l 200 -s 30 --bootstrap-samples=100 --threads=${NUM_THREADS}          --index=${TRANSCRIPT_INDEX} " />
-        </node>
-        <node concept="3YE7tV" id="mLKgp_dTgt" role="19SJt6">
-          <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />
-        </node>
-        <node concept="19SUe$" id="mLKgp_dTgu" role="19SJt6">
-          <property role="19SUeA" value=" --output-dir=./sample-${basename} &#10;&#10;gsutil cp ./sample-${basename} " />
+          <property role="19SUeA" value=" quant  --single -l 200 -s 30 --bootstrap-samples=100 --threads=${NUM_THREADS}          --index=${TRANSCRIPT_INDEX} ${basename} --output-dir=./sample-${basename} &#10;&#10;gsutil cp ./sample-${basename} " />
         </node>
         <node concept="3YE7tV" id="5WTdyfwY$GF" role="19SJt6">
           <ref role="3YE7sm" node="5WTdyfwYA6P" resolve="destination_HDF5_URL" />
