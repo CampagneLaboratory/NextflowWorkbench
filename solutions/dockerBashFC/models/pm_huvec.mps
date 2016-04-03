@@ -287,6 +287,18 @@
         <property role="TrG5h" value="combined" />
       </node>
     </node>
+    <node concept="2$rEH5" id="5WTdyfx0Nxj" role="2$rEHq">
+      <ref role="2$rEH4" to="fe9h:mLKgp_ensb" resolve="CopyToCloud" />
+      <node concept="1uYdA0" id="5WTdyfx0O3L" role="1uLvPH">
+        <ref role="1uK_4X" node="59BvSKQHDKb" resolve="combined" />
+      </node>
+      <node concept="1uYdA0" id="5WTdyfx0O3M" role="1uLvPH">
+        <ref role="1uK_4X" node="mLKgp_ezsA" resolve="myBotoFileAgain" />
+      </node>
+      <node concept="1uYdA0" id="5WTdyfx0O3N" role="1uLvPH">
+        <ref role="1uK_4X" node="5WTdyfx0PpP" resolve="destinationCounts" />
+      </node>
+    </node>
     <node concept="1$O6w4" id="59BvSKQO2pB" role="2$L6iY">
       <property role="TrG5h" value="sampleIds" />
       <node concept="1$Fulc" id="59BvSKQO37s" role="1$O6w5">
@@ -444,7 +456,15 @@
       <property role="TrG5h" value="destination" />
       <node concept="4iA3S" id="mLKgp_esJc" role="2$L62I">
         <node concept="2J_g7P" id="mLKgp_etsf" role="4iqEH">
-          <property role="2J_vQ8" value="gs://campagne_lab_data/pm_huvec_kallisto_hdf5/" />
+          <property role="2J_vQ8" value="gs://campagne_lab_data/pm_huvec/kallisto_hdf5/" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="5WTdyfx0PpP" role="2$L6iY">
+      <property role="TrG5h" value="destinationCounts" />
+      <node concept="4iA3S" id="5WTdyfx0PpQ" role="2$L62I">
+        <node concept="2J_g7P" id="5WTdyfx0PpR" role="4iqEH">
+          <property role="2J_vQ8" value="gs://campagne_lab_data/pm_huvec/counts/" />
         </node>
       </node>
     </node>

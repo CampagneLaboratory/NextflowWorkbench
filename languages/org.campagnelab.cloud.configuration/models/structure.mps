@@ -142,6 +142,7 @@
     <property role="3GE5qa" value="gridengine" />
     <property role="TrG5h" value="ComputeNodeFlavor" />
     <property role="34LRSv" value="flavor" />
+    <property role="R4oN_" value="Compute node flavor" />
     <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
     <node concept="1TJgyi" id="109XeHbQL7w" role="1TKVEl">
       <property role="TrG5h" value="flavor" />
@@ -179,10 +180,11 @@
     <ref role="1TJDcQ" node="29ahU8t4v$r" resolve="IntegerOption" />
   </node>
   <node concept="1TIwiD" id="29ahU8t4wUP">
-    <property role="1pbfSe" value="1541735366" />
+    <property role="1pbfSe" value="1063016023" />
     <property role="3GE5qa" value="gridengine" />
     <property role="TrG5h" value="FrontendFlavor" />
     <property role="34LRSv" value="flavor" />
+    <property role="R4oN_" value="Front end node flavor" />
     <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
     <node concept="1TJgyi" id="29ahU8t4wUQ" role="1TKVEl">
       <property role="TrG5h" value="flavor" />
