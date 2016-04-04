@@ -31,7 +31,9 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
@@ -494,6 +496,12 @@
           </node>
           <node concept="l2Vlx" id="5Pg96r0QsYl" role="2iSdaV" />
         </node>
+      </node>
+    </node>
+    <node concept="3EZMnI" id="1LKL2LEpxLp" role="6VMZX">
+      <node concept="2iRfu4" id="1LKL2LEpxLq" role="2iSdaV" />
+      <node concept="3F1sOY" id="1LKL2LEpxID" role="3EZMnx">
+        <ref role="1NtTu8" to="5lbf:irqYu7yXR0" />
       </node>
     </node>
   </node>
