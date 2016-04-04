@@ -8667,7 +8667,7 @@
   <node concept="2EEQw1" id="73rH4JIJqgO">
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
   <node concept="VuPG2" id="3kWAjw$5azY">
     <property role="3GE5qa" value="dockerfiles" />
@@ -8778,19 +8778,19 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="78dHCIDjUh2" role="3blhQR">
-      <ref role="3blhQY" node="78dHCIDjUh1" resolve="ElasticlusterUbuntu_Image" />
+    <node concept="3blhQM" id="1LKL2LEqXFq" role="3blhQR">
+      <ref role="3blhQY" node="1LKL2LEqXFp" resolve="ElasticlusterUbuntu_Image" />
     </node>
   </node>
-  <node concept="2E_JVc" id="78dHCIDjUh1">
-    <property role="2E_JEh" value="6065f1664b5c" />
+  <node concept="2E_JVc" id="1LKL2LEqXFp">
+    <property role="2E_JEh" value="a7f8b52017e1" />
     <property role="TrG5h" value="ElasticlusterUbuntu_Image" />
-    <property role="GSh9r" value="artifacts/elasticluster:latest" />
+    <property role="GSh9r" value="artifacts/elasticluster:1.5.1" />
     <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticlusterUbuntu" />
-    <node concept="Gyxd7" id="78dHCIDjUh8" role="Gyxcj">
+    <node concept="Gyxd7" id="1LKL2LEqXFw" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="elasticluster" />
-      <property role="Gyxd1" value="latest" />
+      <property role="Gyxd1" value="1.5.1" />
     </node>
   </node>
 </model>
