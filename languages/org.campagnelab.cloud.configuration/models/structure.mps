@@ -94,6 +94,7 @@
     <property role="TrG5h" value="FrontendClass" />
     <property role="34LRSv" value="frontend_nodes" />
     <property role="3GE5qa" value="gridengine" />
+    <property role="R4oN_" value="Number of frontend nodes" />
     <ref role="1TJDcQ" node="5EXCMiTrZJ6" resolve="NodeClass" />
   </node>
   <node concept="1TIwiD" id="5EXCMiTrZJb">
@@ -101,6 +102,7 @@
     <property role="TrG5h" value="ComputeClass" />
     <property role="34LRSv" value="compute_nodes" />
     <property role="3GE5qa" value="gridengine" />
+    <property role="R4oN_" value="Number of compute nodes" />
     <ref role="1TJDcQ" node="5EXCMiTrZJ6" resolve="NodeClass" />
   </node>
   <node concept="1TIwiD" id="6_LFt8ZwkAZ">
@@ -108,6 +110,7 @@
     <property role="TrG5h" value="DiskSize" />
     <property role="34LRSv" value="boot_disk_size" />
     <property role="3GE5qa" value="gridengine" />
+    <property role="R4oN_" value="Size of the local disk" />
     <ref role="1TJDcQ" node="29ahU8t4v$r" resolve="IntegerOption" />
   </node>
   <node concept="1TIwiD" id="3pj0Oa6G7RW">
@@ -130,7 +133,8 @@
     <property role="1pbfSe" value="506216307" />
     <property role="3GE5qa" value="gridengine" />
     <property role="TrG5h" value="SSHFolder" />
-    <property role="34LRSv" value="user_key" />
+    <property role="34LRSv" value="credentials_folder" />
+    <property role="R4oN_" value="Folder with user credentials" />
     <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
     <node concept="1TJgyi" id="5Pg96r0R1Ge" role="1TKVEl">
       <property role="TrG5h" value="path" />
@@ -141,7 +145,8 @@
     <property role="1pbfSe" value="1541735366" />
     <property role="3GE5qa" value="gridengine" />
     <property role="TrG5h" value="ComputeNodeFlavor" />
-    <property role="34LRSv" value="flavor" />
+    <property role="34LRSv" value="compute_flavor" />
+    <property role="R4oN_" value="Type of compute nodes" />
     <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
     <node concept="1TJgyi" id="109XeHbQL7w" role="1TKVEl">
       <property role="TrG5h" value="flavor" />
@@ -152,7 +157,8 @@
     <property role="1pbfSe" value="369556699" />
     <property role="3GE5qa" value="gridengine" />
     <property role="TrG5h" value="Preemptibility" />
-    <property role="34LRSv" value="scheduling" />
+    <property role="34LRSv" value="preemptibility" />
+    <property role="R4oN_" value="Short-lived compute instances" />
     <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
     <node concept="1TJgyi" id="4gEJt6_N$mi" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -166,7 +172,7 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
     <node concept="1TJgyi" id="29ahU8t4v$s" role="1TKVEl">
-      <property role="TrG5h" value="size" />
+      <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
@@ -174,15 +180,16 @@
     <property role="1pbfSe" value="1063010756" />
     <property role="3GE5qa" value="gridengine" />
     <property role="TrG5h" value="SharedDiskSize" />
-    <property role="34LRSv" value="boot_disk_size" />
+    <property role="34LRSv" value="shared_disk_size" />
     <property role="R4oN_" value="Shared file system on the cluster" />
     <ref role="1TJDcQ" node="29ahU8t4v$r" resolve="IntegerOption" />
   </node>
   <node concept="1TIwiD" id="29ahU8t4wUP">
-    <property role="1pbfSe" value="1541735366" />
+    <property role="1pbfSe" value="1063016023" />
     <property role="3GE5qa" value="gridengine" />
     <property role="TrG5h" value="FrontendFlavor" />
-    <property role="34LRSv" value="flavor" />
+    <property role="34LRSv" value="frontend_flavor" />
+    <property role="R4oN_" value="Type of frontend nodes" />
     <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
     <node concept="1TJgyi" id="29ahU8t4wUQ" role="1TKVEl">
       <property role="TrG5h" value="flavor" />
@@ -199,6 +206,33 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1LKL2LEsZKo">
+    <property role="1pbfSe" value="2031828924" />
+    <property role="3GE5qa" value="gridengine" />
+    <property role="TrG5h" value="ClusterName" />
+    <property role="R4oN_" value="Name of the cluster" />
+    <property role="34LRSv" value="cluster_name" />
+    <ref role="1TJDcQ" node="29ahU8t4wVv" resolve="StringOption" />
+  </node>
+  <node concept="1TIwiD" id="1LKL2LEt0cv">
+    <property role="1pbfSe" value="2031827125" />
+    <property role="TrG5h" value="BooleanOption" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
+    <node concept="1TJgyi" id="1LKL2LEt0cw" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1LKL2LEuxR0">
+    <property role="1pbfSe" value="2031427092" />
+    <property role="3GE5qa" value="gridengine" />
+    <property role="TrG5h" value="Zone" />
+    <property role="34LRSv" value="zone" />
+    <property role="R4oN_" value="The zone to be used" />
+    <ref role="1TJDcQ" node="29ahU8t4wVv" resolve="StringOption" />
   </node>
 </model>
 

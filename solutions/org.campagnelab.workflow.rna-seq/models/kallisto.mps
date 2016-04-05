@@ -715,7 +715,7 @@
       <node concept="16pbKc" id="5WTdyfwYA73" role="2ybFLk" />
     </node>
     <node concept="VtuK3" id="5WTdyfwY$Fl" role="234boB">
-      <property role="VuL0s" value="latest" />
+      <property role="VuL0s" value="1.0.2" />
       <property role="VuL0v" value="fac2003" />
       <property role="GbyUj" value="kallisto-human-gsutil" />
     </node>
@@ -791,13 +791,7 @@
           </node>
         </node>
         <node concept="19SUe$" id="mLKgp_dTgs" role="19SJt6">
-          <property role="19SUeA" value=" quant  --bootstrap-samples=100 --threads=${NUM_THREADS}      \&#10;    --index=${TRANSCRIPT_INDEX} " />
-        </node>
-        <node concept="3YE7tV" id="mLKgp_dTgt" role="19SJt6">
-          <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />
-        </node>
-        <node concept="19SUe$" id="mLKgp_dTgu" role="19SJt6">
-          <property role="19SUeA" value=" --output-dir=./sample-${basename} &#10;&#10;gsutil cp ./sample-${basename} " />
+          <property role="19SUeA" value=" quant  --single -l 200 -s 30 --bootstrap-samples=100 --threads=${NUM_THREADS}          --index=${TRANSCRIPT_INDEX} ${basename} --output-dir=./sample-${basename} &#10;&#10;gsutil cp -r ./sample-${basename} " />
         </node>
         <node concept="3YE7tV" id="5WTdyfwY$GF" role="19SJt6">
           <ref role="3YE7sm" node="5WTdyfwYA6P" resolve="destination_HDF5_URL" />
