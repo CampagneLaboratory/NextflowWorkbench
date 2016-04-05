@@ -116,7 +116,7 @@
   </node>
   <node concept="1TIwiD" id="5D7AjvYabas">
     <property role="TrG5h" value="Workflow" />
-    <property role="34LRSv" value="workflow" />
+    <property role="34LRSv" value="Workflow" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="A Nextflow-like workflow" />
     <property role="MwhBj" value="${module}/icons/WorkflowIcon-2.png" />
