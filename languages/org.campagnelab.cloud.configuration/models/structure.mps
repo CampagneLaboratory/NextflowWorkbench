@@ -172,7 +172,7 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
     <node concept="1TJgyi" id="29ahU8t4v$s" role="1TKVEl">
-      <property role="TrG5h" value="size" />
+      <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
