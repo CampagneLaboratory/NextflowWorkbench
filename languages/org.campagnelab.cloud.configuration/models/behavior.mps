@@ -713,6 +713,53 @@
       <ref role="13i0hy" node="3pj0Oa6GMmD" resolve="getLocalConfigurationFolder" />
       <node concept="3Tm1VV" id="6UP81EX8aXm" role="1B3o_S" />
       <node concept="3clFbS" id="6UP81EX8aXs" role="3clF47">
+        <node concept="3cpWs8" id="1LKL2LEuUYG" role="3cqZAp">
+          <node concept="3cpWsn" id="1LKL2LEuUYJ" role="3cpWs9">
+            <property role="TrG5h" value="name" />
+            <node concept="17QB3L" id="1LKL2LEuUYE" role="1tU5fm" />
+            <node concept="2OqwBi" id="1LKL2LEuV4H" role="33vP2m">
+              <node concept="2OqwBi" id="1LKL2LEuV4I" role="2Oq$k0">
+                <node concept="2OqwBi" id="1LKL2LEuV4J" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1LKL2LEuV4K" role="2Oq$k0">
+                    <node concept="13iPFW" id="1LKL2LEuV4L" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="1LKL2LEuV4M" role="2OqNvi">
+                      <ref role="3TtcxE" to="45iu:3pj0Oa6G7SH" />
+                    </node>
+                  </node>
+                  <node concept="3zZkjj" id="1LKL2LEuV4N" role="2OqNvi">
+                    <node concept="1bVj0M" id="1LKL2LEuV4O" role="23t8la">
+                      <node concept="3clFbS" id="1LKL2LEuV4P" role="1bW5cS">
+                        <node concept="3clFbF" id="1LKL2LEuV4Q" role="3cqZAp">
+                          <node concept="2OqwBi" id="1LKL2LEuV4R" role="3clFbG">
+                            <node concept="2OqwBi" id="1LKL2LEuV4S" role="2Oq$k0">
+                              <node concept="37vLTw" id="1LKL2LEuV4T" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1LKL2LEuV4X" resolve="it" />
+                              </node>
+                              <node concept="2yIwOk" id="1LKL2LEuV4U" role="2OqNvi" />
+                            </node>
+                            <node concept="3O6GUB" id="1LKL2LEuV4V" role="2OqNvi">
+                              <node concept="chp4Y" id="1LKL2LEuVcn" role="3QVz_e">
+                                <ref role="cht4Q" to="45iu:1LKL2LEsZKo" resolve="ClusterName" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Rh6nW" id="1LKL2LEuV4X" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="1LKL2LEuV4Y" role="1tU5fm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="1LKL2LEuV4Z" role="2OqNvi" />
+              </node>
+              <node concept="2qgKlT" id="1LKL2LEuV50" role="2OqNvi">
+                <ref role="37wK5l" node="6_LFt8ZwlHB" resolve="getValue" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1PwW9iwZ$Zr" role="3cqZAp">
           <node concept="3cpWsn" id="1PwW9iwZ$Zs" role="3cpWs9">
             <property role="TrG5h" value="f" />
@@ -722,15 +769,20 @@
             <node concept="2ShNRf" id="1PwW9iwZ_1g" role="33vP2m">
               <node concept="1pGfFk" id="1PwW9iwZAbQ" role="2ShVmc">
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="3cpWs3" id="1PwW9iwZsW7" role="37wK5m">
-                  <node concept="Xl_RD" id="1PwW9iwZsWR" role="3uHU7w">
-                    <property role="Xl_RC" value="/.elasticluster" />
+                <node concept="3cpWs3" id="1LKL2LEuVnP" role="37wK5m">
+                  <node concept="37vLTw" id="1LKL2LEuVu5" role="3uHU7w">
+                    <ref role="3cqZAo" node="1LKL2LEuUYJ" resolve="name" />
                   </node>
-                  <node concept="2YIFZM" id="1PwW9iwZsMp" role="3uHU7B">
-                    <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                    <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
-                    <node concept="Xl_RD" id="1PwW9iwZsMM" role="37wK5m">
-                      <property role="Xl_RC" value="user.home" />
+                  <node concept="3cpWs3" id="1PwW9iwZsW7" role="3uHU7B">
+                    <node concept="2YIFZM" id="1PwW9iwZsMp" role="3uHU7B">
+                      <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                      <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                      <node concept="Xl_RD" id="1PwW9iwZsMM" role="37wK5m">
+                        <property role="Xl_RC" value="user.home" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="1PwW9iwZsWR" role="3uHU7w">
+                      <property role="Xl_RC" value="/.elasticluster-" />
                     </node>
                   </node>
                 </node>
