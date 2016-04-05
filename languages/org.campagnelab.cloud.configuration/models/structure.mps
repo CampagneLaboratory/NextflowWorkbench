@@ -207,5 +207,23 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1LKL2LEsZKo">
+    <property role="1pbfSe" value="2031828924" />
+    <property role="3GE5qa" value="gridengine" />
+    <property role="TrG5h" value="ClusterName" />
+    <property role="R4oN_" value="Name of the cluster" />
+    <ref role="1TJDcQ" node="29ahU8t4wVv" resolve="StringOption" />
+  </node>
+  <node concept="1TIwiD" id="1LKL2LEt0cv">
+    <property role="1pbfSe" value="2031827125" />
+    <property role="TrG5h" value="BooleanOption" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5EXCMiTrXeC" resolve="ClusterOption" />
+    <node concept="1TJgyi" id="1LKL2LEt0cw" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
 </model>
 
