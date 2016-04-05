@@ -211,7 +211,7 @@
   <node concept="VuPG2" id="1ihAOqnMtxP">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="Kallisto-Ensembl-GRCh38-82" />
-    <property role="2EHzVy" value="wrote /Users/fac2003/Library/Caches/MPS32/tmp/dockerfile5159350169582867703.txt" />
+    <property role="2EHzVy" value="content=FROM 66fc02591704/66fc02591704:latest&#10;MAINTAINER Campagne Lab &quot;fac2003@campagnelab.org&quot;&#10;ENV RESOURCE_OWNER=&quot;nyosh&quot;&#10;&#10;RUN source $HOME/.bashrc \&#10;&amp;&amp; RESOURCE_OWNER=nyosh \&#10;&amp;&amp; ATTRIBUTES= \&#10;&amp;&amp; echo &quot;Checking/installing resource BASH_LIBRARY:1.0&quot;&#10;ENV PATH=&quot;${PATH}&quot;&#10;&#10;ENV PLUGINS_ROOT_LOCATION=&quot;/home/gobyweb/software/gobyweb2-plugins&quot;&#10;&#10;RUN source $HOME/.bashrc \&#10;&amp;&amp; plugins-submit-job --plugins-dir $PLUGINS_ROOT_LOCATION --job-tag HLVQXGR --job-area $JOB_AREA --fileset-area $FILESET_AREA --owner $RESOURCE_OWNER --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh $ATTRIBUTES --repository  $REPOSITORY_DIR --resource BASH_LIBRARY:1.0 &gt; /dev/null 2&gt;&amp;1&amp;&amp; export JOB_DIR=$JOB_AREA/$RESOURCE_OWNER/H/HLVQXGR &amp;&amp; cat $JOB_AREA/$RESOURCE_OWNER/H/HLVQXGR/auto-options.sh &gt;&gt; $HOME/.bashrc &amp;&amp; cat $JOB_AREA/$RESOURCE_OWNER/H/HLVQXGR/exports-all.sh &gt;&gt; $HOME/.bashrc&#10;RUN echo &quot;Checking/installing resource FETCH_URL:1.2&quot;&#10;RUN ATTRIBUTES+=&quot;&quot;&#10;RUN plugins-submit-job --plugins-dir $PLUGINS_ROOT_LOCATION --job-tag RODWCHW --job-area $JOB_AREA --fileset-area $FILESET_AREA --owner $RESOURCE_OWNER --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh $ATTRIBUTES --repository  $REPOSITORY_DIR --resource FETCH_URL:1.2 &gt; /dev/null 2&gt;&amp;1&#10;RUN export JOB_DIR=$JOB_AREA/$RESOURCE_OWNER/R/RODWCHW &gt; /dev/null 2&gt;&amp;1&#10;RUN source $JOB_AREA/$RESOURCE_OWNER/R/RODWCHW/auto-options.sh &gt; /dev/null 2&gt;&amp;1&#10;RUN source $JOB_AREA/$RESOURCE_OWNER/R/RODWCHW/exports-all.sh &gt; /dev/null 2&gt;&amp;1&#10;RUN echo &quot;Checking/installing resource KALLISTO:0.42.5&quot;&#10;RUN ATTRIBUTES+=&quot;&quot;&#10;RUN plugins-submit-job --plugins-dir $PLUGINS_ROOT_LOCATION --job-tag GXBVKUX --job-area $JOB_AREA --fileset-area $FILESET_AREA --owner $RESOURCE_OWNER --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh $ATTRIBUTES --repository  $REPOSITORY_DIR --resource KALLISTO:0.42.5 &gt; /dev/null 2&gt;&amp;1&#10;RUN export JOB_DIR=$JOB_AREA/$RESOURCE_OWNER/G/GXBVKUX &gt; /dev/null 2&gt;&amp;1&#10;RUN source $JOB_AREA/$RESOURCE_OWNER/G/GXBVKUX/auto-options.sh &gt; /dev/null 2&gt;&amp;1&#10;RUN source $JOB_AREA/$RESOURCE_OWNER/G/GXBVKUX/exports-all.sh &gt; /dev/null 2&gt;&amp;1&#10;RUN echo &quot;Checking/installing resource ENSEMBL_TRANSCRIPTS:1.0&quot;&#10;RUN echo &quot;  with attribute ENSEMBL_TRANSCRIPTS.TOPLEVEL.organism=HOMO_SAPIENS&quot;&#10;RUN echo &quot;  with attribute ENSEMBL_TRANSCRIPTS.TOPLEVEL.reference-build=GRCH38&quot;&#10;RUN echo &quot;  with attribute ENSEMBL_TRANSCRIPTS.TOPLEVEL.ensembl-version-number=82&quot;&#10;RUN ATTRIBUTES+=&quot;--attribute-value ENSEMBL_TRANSCRIPTS.TOPLEVEL.organism=Homo_sapiens --attribute-value ENSEMBL_TRANSCRIPTS.TOPLEVEL.reference-build=GRCh38 --attribute-value ENSEMBL_TRANSCRIPTS.TOPLEVEL.ensembl-version-number=82 &quot;&#10;RUN plugins-submit-job --plugins-dir $PLUGINS_ROOT_LOCATION --job-tag ENASGGG --job-area $JOB_AREA --fileset-area $FILESET_AREA --owner $RESOURCE_OWNER --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh $ATTRIBUTES --repository  $REPOSITORY_DIR --resource ENSEMBL_TRANSCRIPTS:1.0 &gt; /dev/null 2&gt;&amp;1&#10;RUN export JOB_DIR=$JOB_AREA/$RESOURCE_OWNER/E/ENASGGG &gt; /dev/null 2&gt;&amp;1&#10;RUN source $JOB_AREA/$RESOURCE_OWNER/E/ENASGGG/auto-options.sh &gt; /dev/null 2&gt;&amp;1&#10;RUN source $JOB_AREA/$RESOURCE_OWNER/E/ENASGGG/exports-all.sh &gt; /dev/null 2&gt;&amp;1&#10;RUN export ENSEMBL_TRANSCRIPTS_TOPLEVEL_ORGANISM_VALUE=HOMO_SAPIENS&#10;RUN export ENSEMBL_TRANSCRIPTS_TOPLEVEL_REFERENCE_BUILD_VALUE=GRCH38&#10;RUN export ENSEMBL_TRANSCRIPTS_TOPLEVEL_ENSEMBL_VERSION_NUMBER_VALUE=82&#10;RUN echo &quot;Checking/installing resource KALLISTO_INDEX:0.42.3&quot;&#10;RUN echo &quot;  with attribute KALLISTO_INDEX.INDEX.organism=HOMO_SAPIENS&quot;&#10;RUN echo &quot;  with attribute KALLISTO_INDEX.INDEX.reference-build=GRCH38&quot;&#10;RUN echo &quot;  with attribute KALLISTO_INDEX.INDEX.ensembl-version-number=82&quot;&#10;RUN ATTRIBUTES+=&quot;--attribute-value KALLISTO_INDEX.INDEX.organism=Homo_sapiens --attribute-value KALLISTO_INDEX.INDEX.reference-build=GRCh38 --attribute-value KALLISTO_INDEX.INDEX.ensembl-version-number=82 &quot;&#10;RUN plugins-submit-job --plugins-dir $PLUGINS_ROOT_LOCATION --job-tag IHLMVRC --job-area $JOB_AREA --fileset-area $FILESET_AREA --owner $RESOURCE_OWNER --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh $ATTRIBUTES --repository  $REPOSITORY_DIR --resource KALLISTO_INDEX:0.42.3 &gt; /dev/null 2&gt;&amp;1&#10;LABEL org.campagnelab.docker.createdWith=&quot;org.campagnelab.docker&quot;&#10;" />
     <node concept="VuO64" id="1ihAOqnMtxQ" role="VuOVn">
       <node concept="VtuK3" id="1ihAOqnMtyU" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -301,7 +301,7 @@
     <node concept="VugRC" id="6nPnrrhtwjo" role="VuOVn">
       <node concept="19SGf9" id="6nPnrrhtwjp" role="Vugyn">
         <node concept="19SUe$" id="6nPnrrhtwjq" role="19SJt6">
-          <property role="19SUeA" value="echo &quot;Checking/installing resource KALLISTO:0.42.3&quot;" />
+          <property role="19SUeA" value="echo &quot;Checking/installing resource KALLISTO:0.42.5&quot;" />
         </node>
       </node>
     </node>
@@ -315,7 +315,7 @@
     <node concept="VugRC" id="6nPnrrhtwjw" role="VuOVn">
       <node concept="19SGf9" id="6nPnrrhtwjx" role="Vugyn">
         <node concept="19SUe$" id="6nPnrrhtwjy" role="19SJt6">
-          <property role="19SUeA" value="plugins-submit-job --plugins-dir $PLUGINS_ROOT_LOCATION --job-tag GXBVKUX --job-area $JOB_AREA --fileset-area $FILESET_AREA --owner $RESOURCE_OWNER --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh $ATTRIBUTES --repository  $REPOSITORY_DIR --resource KALLISTO:0.42.3 &gt; /dev/null 2&gt;&amp;1" />
+          <property role="19SUeA" value="plugins-submit-job --plugins-dir $PLUGINS_ROOT_LOCATION --job-tag GXBVKUX --job-area $JOB_AREA --fileset-area $FILESET_AREA --owner $RESOURCE_OWNER --env-script $PLUGINS_ROOT_LOCATION/artifacts-config/env.sh $ATTRIBUTES --repository  $REPOSITORY_DIR --resource KALLISTO:0.42.5 &gt; /dev/null 2&gt;&amp;1" />
         </node>
       </node>
     </node>
@@ -8565,7 +8565,7 @@
   <node concept="VuPG2" id="3d0Dghcgitr">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="software" />
-    <property role="2EHzVy" value="wrote /Users/mas2182/Library/Caches/MPS32/tmp/dockerfile150542844760441756.txt" />
+    <property role="2EHzVy" value="content=FROM artifacts/base:1.3.0&#10;MAINTAINER Campagne Lab &quot;manuele.simi@campagnelab.org&quot;&#10;#add gobyweb user&#10;RUN mkdir -p /home/gobyweb/software &#10;#download and install the plugins SDK&#10;RUN cd /home/gobyweb/software \&#10;&amp;&amp; wget -O /home/gobyweb/software/plugins-2.6.0-sdk.tar.gz  &quot;https://www.dropbox.com/s/za4rudgowgxaow5/plugins-2.6.0-sdk.tar.gz?dl=0&quot; \&#10;&amp;&amp; tar -zxvf /home/gobyweb/software/plugins-2.6.0-sdk.tar.gz \&#10;&amp;&amp; rm -f /home/gobyweb/software/plugins-2.6.0-sdk.tar.gz \&#10;&amp;&amp; echo &quot;export PATH=$PATH:/opt/jdk1.8.0_45/bin:/opt/jdk1.8.0_45/jre/bin:/home/gobyweb/software/plugins-sdk-2.6.0/bin&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;source /home/gobyweb/software/plugins-sdk-2.6.0/bin/plugins-export-env&quot; &gt;&gt; $HOME/.bashrc &#10;#ssh settings needed to clone &#10;RUN mkdir -p $HOME/.ssh &amp;&amp; touch $HOME/.ssh/known_hosts &amp;&amp; ssh-keyscan github.com &gt;&gt; $HOME/.ssh/known_hosts \&#10;&amp;&amp; ssh-keygen -t rsa -f $HOME/.ssh/id_rsa -b 4096 -q -N &quot;&quot;&#10;#clone the plugins repository&#10;RUN cd /home/gobyweb/software  \&#10;&amp;&amp; git clone https://github.com/CampagneLaboratory/gobyweb2-plugins.git \&#10;&amp;&amp; cd gobyweb2-plugins \&#10;&amp;&amp; git checkout plugins-SDK \&#10;&amp;&amp; rm -rf plugins/analyses/ plugins/aligners/ plugins/tasks/ plugins/filesets .git \&#10;&amp;&amp; echo &quot;export PLUGINS_ROOT_LOCATION=/home/gobyweb/software/gobyweb2-plugins&quot; &gt;&gt; $HOME/.bashrc &#10;#more folders and settings&#10;RUN mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export REPOSITORY_DIR=/scratchLocal/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/GOBYWEB_SGE_JOBS \&#10;&amp;&amp; echo &quot;export JOB_AREA=/home/gobyweb/GOBYWEB_SGE_JOBS&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/ARTIFACT_REPOSITORY \&#10;&amp;&amp; echo &quot;export IMAGE_REPOSITORY_DIR=/home/gobyweb/ARTIFACT_REPOSITORY&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; mkdir -p /home/gobyweb/FILESET_AREA \&#10;&amp;&amp; echo &quot;export FILESET_AREA=/home/gobyweb/FILESET_AREA&quot; &gt;&gt; $HOME/.bashrc &#10;#update the search databases for mlocate&#10;RUN updatedb&#10;LABEL org.campagnelab.docker.createdWith=&quot;org.campagnelab.docker&quot;&#10;" />
     <node concept="VuO64" id="3d0Dghcgqgb" role="VuOVn">
       <node concept="VtuK3" id="3d0Dghcgqgc" role="VuO5T">
         <property role="VuL0s" value="1.3.0" />
@@ -8791,6 +8791,16 @@
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="elasticluster" />
       <property role="Gyxd1" value="latest" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="1AaQBctPLwY">
+    <property role="2E_JEh" value="66fc02591704" />
+    <property role="TrG5h" value="software_Image" />
+    <ref role="2E_BxF" node="3d0Dghcgitr" resolve="software" />
+    <node concept="Gyxd7" id="1AaQBctPLx4" role="Gyxcj">
+      <property role="Gyxfx" value="fac2003" />
+      <property role="TrG5h" value="software" />
+      <property role="Gyxd1" value="1.3.1" />
     </node>
   </node>
 </model>
