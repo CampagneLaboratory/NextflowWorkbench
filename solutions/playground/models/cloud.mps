@@ -152,6 +152,7 @@
       <concept id="6538561612137102282" name="org.campagnelab.cloud.configuration.structure.FrontendClass" flags="ng" index="3zO_zI" />
       <concept id="6538561612137102283" name="org.campagnelab.cloud.configuration.structure.ComputeClass" flags="ng" index="3zO_zJ" />
       <concept id="2049353525497166872" name="org.campagnelab.cloud.configuration.structure.ClusterName" flags="ng" index="1Q0NwO" />
+      <concept id="2049353525497568704" name="org.campagnelab.cloud.configuration.structure.Zone" flags="ng" index="1Q2HBG" />
     </language>
   </registry>
   <node concept="KZc4b" id="2qF0d00RPVR">
@@ -283,6 +284,60 @@
         <property role="3xTfx3" value="true" />
       </node>
       <node concept="2tz3XF" id="1LKL2LEthml" role="2KSRPJ">
+        <property role="TrG5h" value="Folder with manager credentials" />
+        <property role="2tz3XC" value="/Users/mas2182/.ssh" />
+      </node>
+    </node>
+  </node>
+  <node concept="3zOPYP" id="1LKL2LEuSFG">
+    <property role="TrG5h" value="ManageCloudCluster" />
+    <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
+    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:36 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@3893ed2 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
+    <ref role="1QJbqN" node="2qF0d00Ta0f" resolve="docker.config" />
+    <node concept="VtuK3" id="1LKL2LEuSFH" role="234boB">
+      <property role="VuL0s" value="1.5.1" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="elasticluster" />
+    </node>
+    <node concept="3zOwDe" id="1LKL2LEuSFI" role="1OGc9L">
+      <property role="TrG5h" value="cluster.config" />
+      <node concept="1Q0NwO" id="1LKL2LEuSFJ" role="2KSRPJ">
+        <property role="TrG5h" value="Cluster name" />
+        <property role="Zm4_2" value="MySecondOwnCluster" />
+      </node>
+      <node concept="1Q2HBG" id="1LKL2LEuSFK" role="2KSRPJ">
+        <property role="TrG5h" value="Zone for cluster resources" />
+        <property role="Zm4_2" value="us-east1-b" />
+      </node>
+      <node concept="3zO_zI" id="1LKL2LEuSFL" role="2KSRPJ">
+        <property role="TrG5h" value="Number of frontend nodes" />
+        <property role="3zO_zz" value="1" />
+      </node>
+      <node concept="Zm4$n" id="1LKL2LEuSFM" role="2KSRPJ">
+        <property role="TrG5h" value="Frontend node type" />
+        <property role="Zm4$k" value="n1-standard-1" />
+      </node>
+      <node concept="ZmVQ0" id="1LKL2LEuSFN" role="2KSRPJ">
+        <property role="TrG5h" value="Shared file system size" />
+        <property role="ZmVUY" value="50" />
+      </node>
+      <node concept="3zO_zJ" id="1LKL2LEuSFO" role="2KSRPJ">
+        <property role="TrG5h" value="Number of worker nodes" />
+        <property role="3zO_zz" value="2" />
+      </node>
+      <node concept="1rOJCK" id="1LKL2LEuSFP" role="2KSRPJ">
+        <property role="TrG5h" value="Compute node type" />
+        <property role="1rOIkb" value="n1-standard-2" />
+      </node>
+      <node concept="1mWehH" id="1LKL2LEuSFQ" role="2KSRPJ">
+        <property role="TrG5h" value="Disk size local to each worker nodes" />
+        <property role="ZmVUY" value="20" />
+      </node>
+      <node concept="3xTfy5" id="1LKL2LEuSFS" role="2KSRPJ">
+        <property role="TrG5h" value="Preemptibility" />
+        <property role="3xTfx3" value="true" />
+      </node>
+      <node concept="2tz3XF" id="1LKL2LEuSFR" role="2KSRPJ">
         <property role="TrG5h" value="Folder with manager credentials" />
         <property role="2tz3XC" value="/Users/mas2182/.ssh" />
       </node>

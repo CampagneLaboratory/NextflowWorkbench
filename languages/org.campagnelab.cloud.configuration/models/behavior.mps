@@ -245,6 +245,36 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="1LKL2LEuzXF" role="3cqZAp">
+          <node concept="3cpWsn" id="1LKL2LEuzXI" role="3cpWs9">
+            <property role="TrG5h" value="zone" />
+            <node concept="3Tqbb2" id="1LKL2LEuzXD" role="1tU5fm">
+              <ref role="ehGHo" to="45iu:1LKL2LEuxR0" resolve="Zone" />
+            </node>
+            <node concept="2ShNRf" id="1LKL2LEu_7R" role="33vP2m">
+              <node concept="3zrR0B" id="1LKL2LEu_jg" role="2ShVmc">
+                <node concept="3Tqbb2" id="1LKL2LEu_ji" role="3zrR0E">
+                  <ref role="ehGHo" to="45iu:1LKL2LEuxR0" resolve="Zone" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1LKL2LEuAtP" role="3cqZAp">
+          <node concept="37vLTI" id="1LKL2LEuBZC" role="3clFbG">
+            <node concept="Xl_RD" id="1LKL2LEuC3e" role="37vLTx">
+              <property role="Xl_RC" value="us-east1-b" />
+            </node>
+            <node concept="2OqwBi" id="1LKL2LEuBEg" role="37vLTJ">
+              <node concept="37vLTw" id="1LKL2LEuAtN" role="2Oq$k0">
+                <ref role="3cqZAo" node="1LKL2LEuzXI" resolve="zone" />
+              </node>
+              <node concept="3TrcHB" id="1LKL2LEuBLL" role="2OqNvi">
+                <ref role="3TsBF5" to="45iu:29ahU8t4wVw" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="2rIRh_WQzDU" role="3cqZAp">
           <node concept="3cpWsn" id="2rIRh_WQzE0" role="3cpWs9">
             <property role="TrG5h" value="frontend" />
@@ -475,6 +505,21 @@
             <node concept="TSZUe" id="1LKL2LEt5Zo" role="2OqNvi">
               <node concept="37vLTw" id="1LKL2LEt8ia" role="25WWJ7">
                 <ref role="3cqZAo" node="1LKL2LEt2KK" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1LKL2LEuCkL" role="3cqZAp">
+          <node concept="2OqwBi" id="1LKL2LEuEce" role="3clFbG">
+            <node concept="2OqwBi" id="1LKL2LEuDtU" role="2Oq$k0">
+              <node concept="13iPFW" id="1LKL2LEuCkJ" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1LKL2LEuDCH" role="2OqNvi">
+                <ref role="3TtcxE" to="45iu:3pj0Oa6G7SH" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="1LKL2LEuF4s" role="2OqNvi">
+              <node concept="37vLTw" id="1LKL2LEuFaM" role="25WWJ7">
+                <ref role="3cqZAo" node="1LKL2LEuzXI" resolve="zone" />
               </node>
             </node>
           </node>
@@ -1793,6 +1838,27 @@
         </node>
       </node>
       <node concept="17QB3L" id="1LKL2LEt0cI" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1LKL2LEuxR1">
+    <property role="3GE5qa" value="gridengine" />
+    <ref role="13h7C2" to="45iu:1LKL2LEuxR0" resolve="Zone" />
+    <node concept="13hLZK" id="1LKL2LEuxR2" role="13h7CW">
+      <node concept="3clFbS" id="1LKL2LEuxR3" role="2VODD2">
+        <node concept="3clFbF" id="1LKL2LEuxR5" role="3cqZAp">
+          <node concept="37vLTI" id="1LKL2LEuyhy" role="3clFbG">
+            <node concept="Xl_RD" id="1LKL2LEuyjX" role="37vLTx">
+              <property role="Xl_RC" value="Zone for cluster resources" />
+            </node>
+            <node concept="2OqwBi" id="1LKL2LEuxTx" role="37vLTJ">
+              <node concept="13iPFW" id="1LKL2LEuxR4" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1LKL2LEuy4I" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

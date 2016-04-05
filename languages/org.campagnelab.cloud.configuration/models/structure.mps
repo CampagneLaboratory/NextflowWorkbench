@@ -212,6 +212,7 @@
     <property role="3GE5qa" value="gridengine" />
     <property role="TrG5h" value="ClusterName" />
     <property role="R4oN_" value="Name of the cluster" />
+    <property role="34LRSv" value="cluster_name" />
     <ref role="1TJDcQ" node="29ahU8t4wVv" resolve="StringOption" />
   </node>
   <node concept="1TIwiD" id="1LKL2LEt0cv">
@@ -224,6 +225,14 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1LKL2LEuxR0">
+    <property role="1pbfSe" value="2031427092" />
+    <property role="3GE5qa" value="gridengine" />
+    <property role="TrG5h" value="Zone" />
+    <property role="34LRSv" value="zone" />
+    <property role="R4oN_" value="The zone to be used" />
+    <ref role="1TJDcQ" node="29ahU8t4wVv" resolve="StringOption" />
   </node>
 </model>
 
