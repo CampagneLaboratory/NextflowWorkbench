@@ -730,7 +730,7 @@
           <ref role="3YE7sm" node="mLKgp_eRv3" resolve="botoFile" />
         </node>
         <node concept="19SUe$" id="mLKgp_eRlv" role="19SJt6">
-          <property role="19SUeA" value=" /etc/boto.cfg&#10;gsutil cp " />
+          <property role="19SUeA" value=" ~/.boto&#10;gsutil cp " />
         </node>
         <node concept="3YE7tV" id="mLKgp_eRKL" role="19SJt6">
           <ref role="3YE7sm" node="mLKgp_eeMt" resolve="readURL" />

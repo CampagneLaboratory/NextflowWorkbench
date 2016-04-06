@@ -174,11 +174,11 @@
         <node concept="19SUe$" id="mLKgp_enyC" role="19SJt6">
           <property role="19SUeA" value="# copy the user boto configuration inside the container so gsutil can find it:&#10;cp " />
         </node>
-        <node concept="3YE7tV" id="mLKgp_enzp" role="19SJt6">
+        <node concept="3YE7tV" id="6NIv3jCTLVs" role="19SJt6">
           <ref role="3YE7sm" node="mLKgp_enxw" resolve="botoFile" />
         </node>
-        <node concept="19SUe$" id="mLKgp_enzq" role="19SJt6">
-          <property role="19SUeA" value=" /etc/boto.cfg&#10;gsutil cp ./" />
+        <node concept="19SUe$" id="6NIv3jCTLVt" role="19SJt6">
+          <property role="19SUeA" value=" ~/.boto&#10;&#10;gsutil cp ./" />
         </node>
         <node concept="3YE7tV" id="mLKgp_en$8" role="19SJt6">
           <ref role="3YE7sm" node="mLKgp_enwY" resolve="sourceFile" />
