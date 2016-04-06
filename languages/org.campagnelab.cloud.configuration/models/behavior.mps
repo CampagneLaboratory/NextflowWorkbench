@@ -1229,7 +1229,7 @@
         <node concept="3clFbF" id="6_LFt8ZwkEZ" role="3cqZAp">
           <node concept="37vLTI" id="6_LFt8ZwkYE" role="3clFbG">
             <node concept="Xl_RD" id="6_LFt8Zwl00" role="37vLTx">
-              <property role="Xl_RC" value="Disk size local to each worker nodes" />
+              <property role="Xl_RC" value="Disk size local to each worker node" />
             </node>
             <node concept="2OqwBi" id="6_LFt8ZwkH4" role="37vLTJ">
               <node concept="13iPFW" id="6_LFt8ZwkEY" role="2Oq$k0" />
