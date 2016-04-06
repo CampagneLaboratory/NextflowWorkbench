@@ -251,12 +251,12 @@
     </node>
     <node concept="2$rEH5" id="5frYURexkMf" role="2$rEHq">
       <ref role="2$rEH4" to="1c09:mLKgp_dTg1" resolve="KallistoHDF5WithTuples" />
-      <node concept="2tD$Xd" id="mLKgp_ePJh" role="1uLvPA">
+      <node concept="2tD$Xd" id="1AaQBcuDTvo" role="1uLvPA">
         <property role="TrG5h" value="result" />
-        <node concept="1$0uN4" id="mLKgp_ePJi" role="2tD$Xc">
+        <node concept="1$0uN4" id="1AaQBcuDTvp" role="2tD$Xc">
           <property role="TrG5h" value="result_1" />
         </node>
-        <node concept="1$0uN4" id="mLKgp_ePJj" role="2tD$Xc">
+        <node concept="1$0uN4" id="1AaQBcuDTvq" role="2tD$Xc">
           <property role="TrG5h" value="result_2" />
         </node>
       </node>
@@ -264,7 +264,7 @@
         <ref role="1uK_4X" node="mLKgp_e5Qx" resolve="URLsToDownload" />
       </node>
       <node concept="1uYdA0" id="mLKgp_eT1m" role="1uLvPH">
-        <ref role="1uK_4X" node="mLKgp_efEy" resolve="myBotoFile" />
+        <ref role="1uK_4X" node="1AaQBcuDVgd" resolve="myBotoFile_1" />
       </node>
       <node concept="1uYdA0" id="mLKgp_eTtR" role="1uLvPH">
         <ref role="1uK_4X" node="mLKgp_e5Qw" resolve="basename" />
@@ -276,7 +276,7 @@
     <node concept="2$rEH5" id="59BvSKQHDFb" role="2$rEHq">
       <ref role="2$rEH4" to="hw4t:7ejpSqH8Lzx" resolve="Sample_CombineCounts" />
       <node concept="1uYdA0" id="59BvSKQHDK9" role="1uLvPH">
-        <ref role="1uK_4X" node="mLKgp_ePJi" resolve="result_1" />
+        <ref role="1uK_4X" node="1AaQBcuDTvp" resolve="result_1" />
         <node concept="1yaYav" id="mLKgp_elAl" role="1ylr64" />
       </node>
       <node concept="1uYdA0" id="mLKgp_elGc" role="1uLvPH">
@@ -285,6 +285,18 @@
       </node>
       <node concept="1uLkD0" id="59BvSKQHDKb" role="1uLvPA">
         <property role="TrG5h" value="combined" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="1AaQBcuDWuH" role="2$rEHq">
+      <ref role="2$rEH4" to="fe9h:mLKgp_ensb" resolve="CopyToCloud" />
+      <node concept="1uYdA0" id="1AaQBcuDX3t" role="1uLvPH">
+        <ref role="1uK_4X" node="59BvSKQHDKb" resolve="combined" />
+      </node>
+      <node concept="1uYdA0" id="1AaQBcuDX3u" role="1uLvPH">
+        <ref role="1uK_4X" node="1AaQBcuDVgf" resolve="myBotoFile_2" />
+      </node>
+      <node concept="1uYdA0" id="1AaQBcuDX3v" role="1uLvPH">
+        <ref role="1uK_4X" node="1AaQBcuDYmq" resolve="destinationCombinedCounts" />
       </node>
     </node>
     <node concept="1$O6w4" id="59BvSKQO2pB" role="2$L6iY">
@@ -412,7 +424,7 @@
       <property role="TrG5h" value="baseURL" />
       <node concept="4iA3S" id="mLKgp_e3oP" role="2$L62I">
         <node concept="2J_g7P" id="mLKgp_e3vr" role="4iqEH">
-          <property role="2J_vQ8" value="gs://campagne_lab_data/pm_huvec_reads/" />
+          <property role="2J_vQ8" value="gs://campagne_lab_data/pm_huvec/reads/" />
         </node>
       </node>
     </node>
@@ -424,27 +436,35 @@
         </node>
       </node>
     </node>
-    <node concept="1CVceo" id="mLKgp_efEy" role="2$L6iY">
+    <node concept="1$O6w4" id="1AaQBcuDVgc" role="2$L6iY">
       <property role="TrG5h" value="myBotoFile" />
       <node concept="4iA3S" id="mLKgp_ehsT" role="2$L62I">
         <node concept="2J_rk5" id="mLKgp_ehAI" role="4iqEH">
           <property role="2J_rkp" value="/home/ubuntu/boto.cfg" />
         </node>
       </node>
-    </node>
-    <node concept="1CVceo" id="mLKgp_ezsA" role="2$L6iY">
-      <property role="TrG5h" value="myBotoFileAgain" />
-      <node concept="4iA3S" id="mLKgp_eBRw" role="2$L62I">
-        <node concept="2J_rk5" id="mLKgp_eC8Y" role="4iqEH">
-          <property role="2J_rkp" value="/home/ubuntu/boto.cfg" />
-        </node>
+      <node concept="1$Fulc" id="1AaQBcuDVgd" role="1$O6w5">
+        <property role="TrG5h" value="myBotoFile_1" />
+        <node concept="2J_sx7" id="1AaQBcuDVge" role="2$L62I" />
+      </node>
+      <node concept="1$Fulc" id="1AaQBcuDVgf" role="1$O6w5">
+        <property role="TrG5h" value="myBotoFile_2" />
+        <node concept="2J_sx7" id="1AaQBcuDVgg" role="2$L62I" />
       </node>
     </node>
     <node concept="1CVceo" id="mLKgp_eqj6" role="2$L6iY">
       <property role="TrG5h" value="destination" />
       <node concept="4iA3S" id="mLKgp_esJc" role="2$L62I">
         <node concept="2J_g7P" id="mLKgp_etsf" role="4iqEH">
-          <property role="2J_vQ8" value="gs://campagne_lab_data/pm_huvec_kallisto_hdf5/" />
+          <property role="2J_vQ8" value="gs://campagne_lab_data/pm_huvec/kallisto_new/" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="1AaQBcuDYmq" role="2$L6iY">
+      <property role="TrG5h" value="destinationCombinedCounts" />
+      <node concept="4iA3S" id="1AaQBcuDYmr" role="2$L62I">
+        <node concept="2J_g7P" id="1AaQBcuDYms" role="4iqEH">
+          <property role="2J_vQ8" value="gs://campagne_lab_data/pm_huvec/counts/" />
         </node>
       </node>
     </node>
