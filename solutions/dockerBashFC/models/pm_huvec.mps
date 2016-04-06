@@ -264,7 +264,7 @@
         <ref role="1uK_4X" node="mLKgp_e5Qx" resolve="URLsToDownload" />
       </node>
       <node concept="1uYdA0" id="mLKgp_eT1m" role="1uLvPH">
-        <ref role="1uK_4X" node="1AaQBcuDVgd" resolve="myBotoFile_1" />
+        <ref role="1uK_4X" node="6NIv3jCTHGm" resolve="myBotoFile" />
       </node>
       <node concept="1uYdA0" id="mLKgp_eTtR" role="1uLvPH">
         <ref role="1uK_4X" node="mLKgp_e5Qw" resolve="basename" />
@@ -293,7 +293,7 @@
         <ref role="1uK_4X" node="59BvSKQHDKb" resolve="combined" />
       </node>
       <node concept="1uYdA0" id="1AaQBcuDX3u" role="1uLvPH">
-        <ref role="1uK_4X" node="1AaQBcuDVgf" resolve="myBotoFile_2" />
+        <ref role="1uK_4X" node="6NIv3jCTIDm" resolve="myBotoFile2" />
       </node>
       <node concept="1uYdA0" id="1AaQBcuDX3v" role="1uLvPH">
         <ref role="1uK_4X" node="1AaQBcuDYmq" resolve="destinationCombinedCounts" />
@@ -436,20 +436,20 @@
         </node>
       </node>
     </node>
-    <node concept="1$O6w4" id="1AaQBcuDVgc" role="2$L6iY">
+    <node concept="1CVceo" id="6NIv3jCTHGm" role="2$L6iY">
       <property role="TrG5h" value="myBotoFile" />
       <node concept="4iA3S" id="mLKgp_ehsT" role="2$L62I">
         <node concept="2J_rk5" id="mLKgp_ehAI" role="4iqEH">
           <property role="2J_rkp" value="/home/ubuntu/boto.cfg" />
         </node>
       </node>
-      <node concept="1$Fulc" id="1AaQBcuDVgd" role="1$O6w5">
-        <property role="TrG5h" value="myBotoFile_1" />
-        <node concept="2J_sx7" id="1AaQBcuDVge" role="2$L62I" />
-      </node>
-      <node concept="1$Fulc" id="1AaQBcuDVgf" role="1$O6w5">
-        <property role="TrG5h" value="myBotoFile_2" />
-        <node concept="2J_sx7" id="1AaQBcuDVgg" role="2$L62I" />
+    </node>
+    <node concept="1CVceo" id="6NIv3jCTIDm" role="2$L6iY">
+      <property role="TrG5h" value="myBotoFile2" />
+      <node concept="4iA3S" id="6NIv3jCTIDn" role="2$L62I">
+        <node concept="2J_rk5" id="6NIv3jCTIDo" role="4iqEH">
+          <property role="2J_rkp" value="/home/ubuntu/boto.cfg" />
+        </node>
       </node>
     </node>
     <node concept="1CVceo" id="mLKgp_eqj6" role="2$L6iY">
@@ -535,7 +535,7 @@
         <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
       </node>
       <node concept="3yU_OC" id="mLKgp_eFI2" role="3yU_ON">
-        <property role="3yU_OX" value="104.197.245.118" />
+        <property role="3yU_OX" value="104.196.51.54" />
       </node>
     </node>
     <node concept="3qaZdc" id="mLKgp_eFJh" role="3qaWS2" />
@@ -543,7 +543,7 @@
   <node concept="2EEQw1" id="mLKgp_eNtb">
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/fac2003/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/fac2003/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/fac2003/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
   <node concept="3zOPYP" id="mLKgp_eNt9">
     <property role="TrG5h" value="ManageCloudCluster" />
