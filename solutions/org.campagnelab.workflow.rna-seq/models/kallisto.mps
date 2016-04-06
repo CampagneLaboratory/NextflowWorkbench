@@ -42,7 +42,6 @@
         <child id="6838454732285678234" name="resourceSpecs" index="2OBg32" />
       </concept>
       <concept id="6838454732285648893" name="org.campagnelab.bash.nyosh.structure.ResourceSpecification" flags="ng" index="2OBCQ_">
-        <property id="1370428839274618124" name="showFullInstallationActivity" index="2DVE38" />
         <child id="6838454732285668072" name="resourceContainer" index="2OBJyK" />
         <child id="6838454732285668071" name="requires" index="2OBJyZ" />
       </concept>
@@ -287,7 +286,6 @@
         </node>
       </node>
       <node concept="2OBCQ_" id="6NIv3jCTDul" role="2OBg32">
-        <property role="2DVE38" value="true" />
         <node concept="x1lOp" id="6NIv3jCTDum" role="2OBJyK">
           <node concept="3jXL5H" id="6NIv3jCTDun" role="x1lOo">
             <property role="1f4ISL" value="0.42.3" />
@@ -801,7 +799,6 @@
         </node>
       </node>
       <node concept="2OBCQ_" id="6NIv3jCTB2d" role="2OBg32">
-        <property role="2DVE38" value="true" />
         <node concept="x1lOp" id="6NIv3jCTB2f" role="2OBJyK">
           <node concept="3jXL5H" id="6NIv3jCTB4a" role="x1lOo">
             <property role="1f4ISL" value="0.42.3" />
