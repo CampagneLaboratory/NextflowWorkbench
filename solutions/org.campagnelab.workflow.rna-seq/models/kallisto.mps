@@ -232,7 +232,7 @@
             <property role="26mB_l" value="true" />
             <property role="26mB$E" value="" />
             <node concept="31HMC_" id="59BvSKQHAFH" role="19OIOa">
-              <ref role="31HMCX" node="59BvSKQHAGH" resolve="artifact path KALLISTO_INDEX.INDEX" />
+              <ref role="31HMCX" node="6NIv3jCTE1r" resolve="artifact path KALLISTO_INDEX.INDEX" />
             </node>
           </node>
           <node concept="26mB$F" id="59BvSKQHAFI" role="26mB$C">
@@ -256,7 +256,7 @@
             <property role="26mB_l" value="true" />
             <property role="26mB$E" value="" />
             <node concept="31HMC_" id="59BvSKQHAFM" role="19OIOa">
-              <ref role="31HMCX" node="59BvSKQHAGj" resolve="artifact path KALLISTO.BINARIES" />
+              <ref role="31HMCX" node="6NIv3jCTE1F" resolve="artifact path KALLISTO.BINARIES" />
             </node>
           </node>
           <node concept="26mB$F" id="59BvSKQHAFN" role="26mB$C">
@@ -286,375 +286,375 @@
           <property role="19SUeA" value=" --output-dir=./output &#10;#touch output/abundance.tsv&#10;ls -ltrR .&#10;cp output/abundance.tsv counts-${basename}.tsv&#10;exit 0" />
         </node>
       </node>
-      <node concept="2OBCQ_" id="59BvSKQHAFY" role="2OBg32">
-        <property role="2DVE38" value="false" />
-        <node concept="3xUnCN" id="59BvSKQHAFZ" role="2OBJyZ">
+      <node concept="2OBCQ_" id="6NIv3jCTDul" role="2OBg32">
+        <property role="2DVE38" value="true" />
+        <node concept="x1lOp" id="6NIv3jCTDum" role="2OBJyK">
+          <node concept="3jXL5H" id="6NIv3jCTDun" role="x1lOo">
+            <property role="1f4ISL" value="0.42.3" />
+            <property role="TrG5h" value="KALLISTO_INDEX" />
+            <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/KALLISTO_0.42.3_INDEX" />
+            <property role="TNbOb" value="false" />
+            <node concept="2vNlDe" id="6NIv3jCTDuo" role="2vN2hK">
+              <property role="TrG5h" value="INDEX" />
+              <node concept="2vNqWl" id="6NIv3jCTDup" role="2vNrQz">
+                <property role="TrG5h" value="organism" />
+              </node>
+              <node concept="2vNqWl" id="6NIv3jCTDuq" role="2vNrQz">
+                <property role="TrG5h" value="reference-build" />
+              </node>
+              <node concept="2vNqWl" id="6NIv3jCTDur" role="2vNrQz">
+                <property role="TrG5h" value="ensembl-version-number" />
+              </node>
+            </node>
+            <node concept="3pIPPt" id="6NIv3jCTDus" role="3pIPbc">
+              <property role="3pIKb5" value="INSTALL" />
+              <property role="3pIKb9" value="install.sh" />
+            </node>
+            <node concept="3jXLau" id="6NIv3jCTDut" role="3jXL5I">
+              <property role="G5nAd" value="0.42.3" />
+              <ref role="3jXLav" node="6NIv3jCTDuv" resolve="KALLISTO" />
+            </node>
+            <node concept="3jXLau" id="6NIv3jCTDuu" role="3jXL5I">
+              <property role="G5nAd" value="1.0" />
+              <ref role="3jXLav" node="6NIv3jCTDuE" resolve="ENSEMBL_TRANSCRIPTS" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="6NIv3jCTDuv" role="x1lOo">
+            <property role="1f4ISL" value="0.42.5" />
+            <property role="TrG5h" value="KALLISTO" />
+            <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/KALLISTO_0.42.5" />
+            <property role="TNbOb" value="false" />
+            <node concept="2vNlDe" id="6NIv3jCTDuw" role="2vN2hK">
+              <property role="TrG5h" value="BINARIES" />
+            </node>
+            <node concept="3pIPPt" id="6NIv3jCTDux" role="3pIPbc">
+              <property role="3pIKb5" value="INSTALL" />
+              <property role="3pIKb9" value="install.sh" />
+            </node>
+            <node concept="3jXLau" id="6NIv3jCTDuy" role="3jXL5I">
+              <property role="G5nAd" value="1.2" />
+              <ref role="3jXLav" node="6NIv3jCTDuz" resolve="FETCH_URL" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="6NIv3jCTDuz" role="x1lOo">
+            <property role="1f4ISL" value="1.2" />
+            <property role="TrG5h" value="FETCH_URL" />
+            <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/FETCH_URL_1.2" />
+            <property role="TNbOb" value="false" />
+            <node concept="3pIPPt" id="6NIv3jCTDu$" role="3pIPbc">
+              <property role="3pIKb5" value="SCRIPT" />
+              <property role="3pIKb9" value="fetch_url" />
+            </node>
+            <node concept="3pIPPt" id="6NIv3jCTDu_" role="3pIPbc">
+              <property role="3pIKb5" value="SCRIPT_PATTERN" />
+              <property role="3pIKb9" value="fetch_url_pattern" />
+            </node>
+            <node concept="3jXLau" id="6NIv3jCTDuA" role="3jXL5I">
+              <property role="G5nAd" value="1.0" />
+              <ref role="3jXLav" node="6NIv3jCTDuB" resolve="BASH_LIBRARY" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="6NIv3jCTDuB" role="x1lOo">
+            <property role="1f4ISL" value="1.0" />
+            <property role="TrG5h" value="BASH_LIBRARY" />
+            <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BASH_LIBRARY_1.0" />
+            <property role="TNbOb" value="false" />
+            <node concept="3pIPPt" id="6NIv3jCTDuC" role="3pIPbc">
+              <property role="3pIKb5" value="CALCULATE_MD5" />
+              <property role="3pIKb9" value="calculateMD5.sh" />
+            </node>
+            <node concept="3pIPPt" id="6NIv3jCTDuD" role="3pIPbc">
+              <property role="3pIKb5" value="MAPS_IN_BASH3" />
+              <property role="3pIKb9" value="maps_in_bash3.sh" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="6NIv3jCTDuE" role="x1lOo">
+            <property role="1f4ISL" value="1.0" />
+            <property role="TrG5h" value="ENSEMBL_TRANSCRIPTS" />
+            <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/ENSEMBL_TRANSCRIPTS_1.0" />
+            <property role="TNbOb" value="false" />
+            <node concept="2vNlDe" id="6NIv3jCTDuF" role="2vN2hK">
+              <property role="TrG5h" value="TOPLEVEL" />
+              <node concept="2vNqWl" id="6NIv3jCTDuG" role="2vNrQz">
+                <property role="TrG5h" value="organism" />
+              </node>
+              <node concept="2vNqWl" id="6NIv3jCTDuH" role="2vNrQz">
+                <property role="TrG5h" value="reference-build" />
+              </node>
+              <node concept="2vNqWl" id="6NIv3jCTDuI" role="2vNrQz">
+                <property role="TrG5h" value="ensembl-version-number" />
+              </node>
+            </node>
+            <node concept="3pIPPt" id="6NIv3jCTDuJ" role="3pIPbc">
+              <property role="3pIKb5" value="INSTALL" />
+              <property role="3pIKb9" value="install.sh" />
+            </node>
+            <node concept="3jXLau" id="6NIv3jCTDuK" role="3jXL5I">
+              <property role="G5nAd" value="1.0" />
+              <ref role="3jXLav" node="6NIv3jCTDuz" resolve="FETCH_URL" />
+            </node>
+          </node>
+        </node>
+        <node concept="3xUnCN" id="6NIv3jCTDuL" role="2OBJyZ">
           <property role="3Ui_h1" value="" />
           <property role="3xVD5K" value="KALLISTO_INDEX" />
-          <ref role="1PROJ1" node="59BvSKQHAGb" resolve="0.42.3" />
-          <ref role="1PROVt" node="59BvSKQHAGa" resolve="KALLISTO_INDEX" />
-          <ref role="x1kBk" node="59BvSKQHAGT" resolve="KALLISTO_INDEX" />
-          <node concept="1NwGl_" id="59BvSKQHAG0" role="3bnoS5">
+          <ref role="x1kBk" node="6NIv3jCTDun" resolve="KALLISTO_INDEX" />
+          <ref role="1PROJ1" node="6NIv3jCTDuP" resolve="0.42.3" />
+          <ref role="1PROVt" node="6NIv3jCTDuO" resolve="KALLISTO_INDEX" />
+          <node concept="1NwGl_" id="6NIv3jCTDuM" role="3bnoS5">
             <property role="3xVD5K" value="BASH_LIBRARY" />
-            <ref role="x1kBk" node="59BvSKQHAH9" resolve="BASH_LIBRARY" />
-            <node concept="31HOkp" id="59BvSKQHAG1" role="31jqfU">
+            <ref role="x1kBk" node="6NIv3jCTDuB" resolve="BASH_LIBRARY" />
+            <node concept="31HOkp" id="6NIv3jCTE1z" role="31jqfU">
               <property role="TrG5h" value="file BASH_LIBRARY/CALCULATE_MD5" />
               <property role="3oicoW" value="RESOURCES_BASH_LIBRARY_CALCULATE_MD5" />
-              <node concept="31jotn" id="59BvSKQHAG2" role="31HOkl">
+              <node concept="31jotn" id="6NIv3jCTE1y" role="31HOkl">
                 <property role="31jswE" value="CALCULATE_MD5" />
                 <property role="31jswI" value="RESOURCES_BASH_LIBRARY" />
                 <property role="KVZ4R" value="BASH_LIBRARY" />
               </node>
             </node>
-            <node concept="31HOkp" id="59BvSKQHAG3" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE1_" role="31jqfU">
               <property role="TrG5h" value="file BASH_LIBRARY/MAPS_IN_BASH3" />
               <property role="3oicoW" value="RESOURCES_BASH_LIBRARY_MAPS_IN_BASH3" />
-              <node concept="31jotn" id="59BvSKQHAG4" role="31HOkl">
+              <node concept="31jotn" id="6NIv3jCTE1$" role="31HOkl">
                 <property role="31jswE" value="MAPS_IN_BASH3" />
                 <property role="31jswI" value="RESOURCES_BASH_LIBRARY" />
                 <property role="KVZ4R" value="BASH_LIBRARY" />
               </node>
             </node>
           </node>
-          <node concept="1NwGl_" id="59BvSKQHAG5" role="3bnoS5">
+          <node concept="1NwGl_" id="6NIv3jCTDuN" role="3bnoS5">
             <property role="3xVD5K" value="FETCH_URL" />
-            <ref role="x1kBk" node="59BvSKQHAH5" resolve="FETCH_URL" />
-            <node concept="31HOkp" id="59BvSKQHAG6" role="31jqfU">
+            <ref role="x1kBk" node="6NIv3jCTDuz" resolve="FETCH_URL" />
+            <node concept="31HOkp" id="6NIv3jCTE1B" role="31jqfU">
               <property role="TrG5h" value="file FETCH_URL/SCRIPT" />
               <property role="3oicoW" value="RESOURCES_FETCH_URL_SCRIPT" />
-              <node concept="31jotn" id="59BvSKQHAG7" role="31HOkl">
+              <node concept="31jotn" id="6NIv3jCTE1A" role="31HOkl">
                 <property role="31jswE" value="SCRIPT" />
                 <property role="31jswI" value="RESOURCES_FETCH_URL" />
                 <property role="KVZ4R" value="FETCH_URL" />
               </node>
             </node>
-            <node concept="31HOkp" id="59BvSKQHAG8" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE1D" role="31jqfU">
               <property role="TrG5h" value="file FETCH_URL/SCRIPT_PATTERN" />
               <property role="3oicoW" value="RESOURCES_FETCH_URL_SCRIPT_PATTERN" />
-              <node concept="31jotn" id="59BvSKQHAG9" role="31HOkl">
+              <node concept="31jotn" id="6NIv3jCTE1C" role="31HOkl">
                 <property role="31jswE" value="SCRIPT_PATTERN" />
                 <property role="31jswI" value="RESOURCES_FETCH_URL" />
                 <property role="KVZ4R" value="FETCH_URL" />
               </node>
             </node>
           </node>
-          <node concept="2vzQjv" id="59BvSKQHAGa" role="xr5hk">
+          <node concept="2vzQjv" id="6NIv3jCTDuO" role="xr5hk">
             <property role="TrG5h" value="KALLISTO_INDEX" />
-            <node concept="2vzQjq" id="59BvSKQHAGb" role="2vzQju">
+            <node concept="2vzQjq" id="6NIv3jCTDuP" role="2vzQju">
               <property role="TrG5h" value="0.42.3" />
             </node>
           </node>
-          <node concept="2vnsz3" id="59BvSKQHAGc" role="1NFp1Y">
+          <node concept="2vnsz3" id="6NIv3jCTDuQ" role="1NFp1Y">
             <property role="2vk9_M" value="KALLISTO_INDEX" />
             <property role="2vk9_N" value="INDEX" />
             <property role="TrG5h" value="organism" />
-            <node concept="2t8VsU" id="59BvSKQHAGd" role="2vnsw6">
+            <node concept="2t8VsU" id="6NIv3jCTDuR" role="2vnsw6">
               <property role="2t8Vu2" value="Homo_sapiens" />
               <property role="TrG5h" value="organism" />
             </node>
           </node>
-          <node concept="2vnsz3" id="59BvSKQHAGe" role="1NFp1Y">
+          <node concept="2vnsz3" id="6NIv3jCTDuS" role="1NFp1Y">
             <property role="2vk9_M" value="KALLISTO_INDEX" />
             <property role="2vk9_N" value="INDEX" />
             <property role="TrG5h" value="reference-build" />
-            <node concept="2t8VsU" id="59BvSKQHAGf" role="2vnsw6">
+            <node concept="2t8VsU" id="6NIv3jCTDuT" role="2vnsw6">
               <property role="2t8Vu2" value="GRCH38" />
               <property role="TrG5h" value="reference-build" />
             </node>
           </node>
-          <node concept="2vnsz3" id="59BvSKQHAGg" role="1NFp1Y">
+          <node concept="2vnsz3" id="6NIv3jCTDuU" role="1NFp1Y">
             <property role="2vk9_M" value="KALLISTO_INDEX" />
             <property role="2vk9_N" value="INDEX" />
             <property role="TrG5h" value="ensembl-version-number" />
-            <node concept="2t8VsU" id="59BvSKQHAGh" role="2vnsw6">
+            <node concept="2t8VsU" id="6NIv3jCTDuV" role="2vnsw6">
               <property role="2t8Vu2" value="82" />
               <property role="TrG5h" value="ensembl-version-number" />
             </node>
           </node>
-          <node concept="1NwGl_" id="59BvSKQHAGi" role="3bnoS5">
+          <node concept="1NwGl_" id="6NIv3jCTDuW" role="3bnoS5">
             <property role="3xVD5K" value="KALLISTO" />
-            <ref role="x1kBk" node="59BvSKQHAH1" resolve="KALLISTO" />
-            <node concept="31HOkp" id="59BvSKQHAGj" role="31jqfU">
+            <ref role="x1kBk" node="6NIv3jCTDuv" resolve="KALLISTO" />
+            <node concept="31HOkp" id="6NIv3jCTE1F" role="31jqfU">
               <property role="TrG5h" value="artifact path KALLISTO.BINARIES" />
               <property role="3oicoW" value="RESOURCES_ARTIFACTS_KALLISTO_BINARIES" />
-              <node concept="31josK" id="59BvSKQHAGk" role="31HOkl">
+              <node concept="31josK" id="6NIv3jCTE1E" role="31HOkl">
                 <property role="31jqiE" value="RESOURCES_ARTIFACTS_KALLISTO_BINARIES" />
                 <property role="KTmAF" value="KALLISTO" />
                 <property role="3oiRSB" value="BINARIES" />
               </node>
             </node>
-            <node concept="31HOkp" id="59BvSKQHAGl" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE1H" role="31jqfU">
               <property role="TrG5h" value="file KALLISTO/INSTALL" />
               <property role="3oicoW" value="RESOURCES_KALLISTO_INSTALL" />
-              <node concept="31jotn" id="59BvSKQHAGm" role="31HOkl">
+              <node concept="31jotn" id="6NIv3jCTE1G" role="31HOkl">
                 <property role="31jswE" value="INSTALL" />
                 <property role="31jswI" value="RESOURCES_KALLISTO" />
                 <property role="KVZ4R" value="KALLISTO" />
               </node>
             </node>
           </node>
-          <node concept="1NwGl_" id="59BvSKQHAGn" role="3bnoS5">
+          <node concept="1NwGl_" id="6NIv3jCTDuX" role="3bnoS5">
             <property role="3xVD5K" value="ENSEMBL_TRANSCRIPTS" />
-            <ref role="x1kBk" node="59BvSKQHAHc" resolve="ENSEMBL_TRANSCRIPTS" />
-            <node concept="2vnsz3" id="59BvSKQHAGo" role="1NFp1Y">
+            <ref role="x1kBk" node="6NIv3jCTDuE" resolve="ENSEMBL_TRANSCRIPTS" />
+            <node concept="2vnsz3" id="6NIv3jCTDuY" role="1NFp1Y">
               <property role="2vk9_M" value="ENSEMBL_TRANSCRIPTS" />
               <property role="2vk9_N" value="TOPLEVEL" />
               <property role="TrG5h" value="organism" />
-              <node concept="2vraTB" id="59BvSKQHAGp" role="2vnsw6">
+              <node concept="2vraTB" id="6NIv3jCTDuZ" role="2vnsw6">
                 <property role="TrG5h" value="organism" />
-                <ref role="2vraA5" node="59BvSKQHAGd" resolve="organism" />
+                <ref role="2vraA5" node="6NIv3jCTDuR" resolve="organism" />
               </node>
             </node>
-            <node concept="2vnsz3" id="59BvSKQHAGq" role="1NFp1Y">
+            <node concept="2vnsz3" id="6NIv3jCTDv0" role="1NFp1Y">
               <property role="2vk9_M" value="ENSEMBL_TRANSCRIPTS" />
               <property role="2vk9_N" value="TOPLEVEL" />
               <property role="TrG5h" value="reference-build" />
-              <node concept="2vraTB" id="59BvSKQHAGr" role="2vnsw6">
+              <node concept="2vraTB" id="6NIv3jCTDv1" role="2vnsw6">
                 <property role="TrG5h" value="reference-build" />
-                <ref role="2vraA5" node="59BvSKQHAGf" resolve="reference-build" />
+                <ref role="2vraA5" node="6NIv3jCTDuT" resolve="reference-build" />
               </node>
             </node>
-            <node concept="2vnsz3" id="59BvSKQHAGs" role="1NFp1Y">
+            <node concept="2vnsz3" id="6NIv3jCTDv2" role="1NFp1Y">
               <property role="2vk9_M" value="ENSEMBL_TRANSCRIPTS" />
               <property role="2vk9_N" value="TOPLEVEL" />
               <property role="TrG5h" value="ensembl-version-number" />
-              <node concept="2vraTB" id="59BvSKQHAGt" role="2vnsw6">
+              <node concept="2vraTB" id="6NIv3jCTDv3" role="2vnsw6">
                 <property role="TrG5h" value="ensembl-version-number" />
-                <ref role="2vraA5" node="59BvSKQHAGh" resolve="ensembl-version-number" />
+                <ref role="2vraA5" node="6NIv3jCTDuV" resolve="ensembl-version-number" />
               </node>
             </node>
-            <node concept="31HOkp" id="59BvSKQHAGu" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE1J" role="31jqfU">
               <property role="TrG5h" value="value of ENSEMBL_TRANSCRIPTS.TOPLEVEL.ensembl-version-number" />
               <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_ENSEMBL_VERSION_NUMBER" />
-              <node concept="31jouD" id="59BvSKQHAGv" role="31HOkl">
+              <node concept="31jouD" id="6NIv3jCTE1I" role="31HOkl">
                 <property role="31jql3" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_" />
                 <property role="3pPHmd" value="TOPLEVEL" />
                 <property role="KY_Hm" value="ENSEMBL_TRANSCRIPTS" />
                 <property role="3GSlvM" value="ensembl-version-number" />
               </node>
             </node>
-            <node concept="31HOkp" id="59BvSKQHAGw" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE1O" role="31jqfU">
               <property role="TrG5h" value="artifact path ENSEMBL_TRANSCRIPTS.TOPLEVEL" />
               <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_HOMO_SAPIENS_GRCH38_82" />
-              <node concept="31josK" id="59BvSKQHAGx" role="31HOkl">
+              <node concept="31josK" id="6NIv3jCTE1K" role="31HOkl">
                 <property role="31jqiE" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL" />
                 <property role="KTmAF" value="ENSEMBL_TRANSCRIPTS" />
                 <property role="3oiRSB" value="TOPLEVEL" />
-                <node concept="31jqtl" id="59BvSKQHAGy" role="31jqr$">
+                <node concept="31jqtl" id="6NIv3jCTE1L" role="31jqr$">
                   <property role="3GzU61" value="organism" />
                   <property role="3GzU6q" value="ENSEMBL_TRANSCRIPTS" />
                   <property role="3GzU6s" value="TOPLEVEL" />
                 </node>
-                <node concept="31jqtl" id="59BvSKQHAGz" role="31jqr$">
+                <node concept="31jqtl" id="6NIv3jCTE1M" role="31jqr$">
                   <property role="3GzU61" value="reference-build" />
                   <property role="3GzU6q" value="ENSEMBL_TRANSCRIPTS" />
                   <property role="3GzU6s" value="TOPLEVEL" />
                 </node>
-                <node concept="31jqtl" id="59BvSKQHAG$" role="31jqr$">
+                <node concept="31jqtl" id="6NIv3jCTE1N" role="31jqr$">
                   <property role="3GzU61" value="ensembl-version-number" />
                   <property role="3GzU6q" value="ENSEMBL_TRANSCRIPTS" />
                   <property role="3GzU6s" value="TOPLEVEL" />
                 </node>
               </node>
             </node>
-            <node concept="31HOkp" id="59BvSKQHAG_" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE1Q" role="31jqfU">
               <property role="TrG5h" value="value of ENSEMBL_TRANSCRIPTS.TOPLEVEL.organism" />
               <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_ORGANISM" />
-              <node concept="31jouD" id="59BvSKQHAGA" role="31HOkl">
+              <node concept="31jouD" id="6NIv3jCTE1P" role="31HOkl">
                 <property role="31jql3" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_" />
                 <property role="3pPHmd" value="TOPLEVEL" />
                 <property role="KY_Hm" value="ENSEMBL_TRANSCRIPTS" />
                 <property role="3GSlvM" value="organism" />
               </node>
             </node>
-            <node concept="31HOkp" id="59BvSKQHAGB" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE1S" role="31jqfU">
               <property role="TrG5h" value="value of ENSEMBL_TRANSCRIPTS.TOPLEVEL.reference-build" />
               <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_REFERENCE_BUILD" />
-              <node concept="31jouD" id="59BvSKQHAGC" role="31HOkl">
+              <node concept="31jouD" id="6NIv3jCTE1R" role="31HOkl">
                 <property role="31jql3" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_" />
                 <property role="3pPHmd" value="TOPLEVEL" />
                 <property role="KY_Hm" value="ENSEMBL_TRANSCRIPTS" />
                 <property role="3GSlvM" value="reference-build" />
               </node>
             </node>
-            <node concept="31HOkp" id="59BvSKQHAGD" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE1U" role="31jqfU">
               <property role="TrG5h" value="file ENSEMBL_TRANSCRIPTS/INSTALL" />
               <property role="3oicoW" value="RESOURCES_ENSEMBL_TRANSCRIPTS_INSTALL" />
-              <node concept="31jotn" id="59BvSKQHAGE" role="31HOkl">
+              <node concept="31jotn" id="6NIv3jCTE1T" role="31HOkl">
                 <property role="31jswE" value="INSTALL" />
                 <property role="31jswI" value="RESOURCES_ENSEMBL_TRANSCRIPTS" />
                 <property role="KVZ4R" value="ENSEMBL_TRANSCRIPTS" />
               </node>
             </node>
           </node>
-          <node concept="31HOkp" id="59BvSKQHAGF" role="31jqfU">
+          <node concept="31HOkp" id="6NIv3jCTE1m" role="31jqfU">
             <property role="TrG5h" value="value of KALLISTO_INDEX.INDEX.ensembl-version-number" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_ENSEMBL_VERSION_NUMBER" />
-            <node concept="31jouD" id="59BvSKQHAGG" role="31HOkl">
+            <node concept="31jouD" id="6NIv3jCTE1l" role="31HOkl">
               <property role="31jql3" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_" />
               <property role="3pPHmd" value="INDEX" />
               <property role="KY_Hm" value="KALLISTO_INDEX" />
               <property role="3GSlvM" value="ensembl-version-number" />
             </node>
           </node>
-          <node concept="31HOkp" id="59BvSKQHAGH" role="31jqfU">
+          <node concept="31HOkp" id="6NIv3jCTE1r" role="31jqfU">
             <property role="TrG5h" value="artifact path KALLISTO_INDEX.INDEX" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_HOMO_SAPIENS_GRCH38_82" />
-            <node concept="31josK" id="59BvSKQHAGI" role="31HOkl">
+            <node concept="31josK" id="6NIv3jCTE1n" role="31HOkl">
               <property role="31jqiE" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX" />
               <property role="KTmAF" value="KALLISTO_INDEX" />
               <property role="3oiRSB" value="INDEX" />
-              <node concept="31jqtl" id="59BvSKQHAGJ" role="31jqr$">
+              <node concept="31jqtl" id="6NIv3jCTE1o" role="31jqr$">
                 <property role="3GzU61" value="organism" />
                 <property role="3GzU6q" value="KALLISTO_INDEX" />
                 <property role="3GzU6s" value="INDEX" />
               </node>
-              <node concept="31jqtl" id="59BvSKQHAGK" role="31jqr$">
+              <node concept="31jqtl" id="6NIv3jCTE1p" role="31jqr$">
                 <property role="3GzU61" value="reference-build" />
                 <property role="3GzU6q" value="KALLISTO_INDEX" />
                 <property role="3GzU6s" value="INDEX" />
               </node>
-              <node concept="31jqtl" id="59BvSKQHAGL" role="31jqr$">
+              <node concept="31jqtl" id="6NIv3jCTE1q" role="31jqr$">
                 <property role="3GzU61" value="ensembl-version-number" />
                 <property role="3GzU6q" value="KALLISTO_INDEX" />
                 <property role="3GzU6s" value="INDEX" />
               </node>
             </node>
           </node>
-          <node concept="31HOkp" id="59BvSKQHAGM" role="31jqfU">
+          <node concept="31HOkp" id="6NIv3jCTE1t" role="31jqfU">
             <property role="TrG5h" value="value of KALLISTO_INDEX.INDEX.organism" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_ORGANISM" />
-            <node concept="31jouD" id="59BvSKQHAGN" role="31HOkl">
+            <node concept="31jouD" id="6NIv3jCTE1s" role="31HOkl">
               <property role="31jql3" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_" />
               <property role="3pPHmd" value="INDEX" />
               <property role="KY_Hm" value="KALLISTO_INDEX" />
               <property role="3GSlvM" value="organism" />
             </node>
           </node>
-          <node concept="31HOkp" id="59BvSKQHAGO" role="31jqfU">
+          <node concept="31HOkp" id="6NIv3jCTE1v" role="31jqfU">
             <property role="TrG5h" value="value of KALLISTO_INDEX.INDEX.reference-build" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_REFERENCE_BUILD" />
-            <node concept="31jouD" id="59BvSKQHAGP" role="31HOkl">
+            <node concept="31jouD" id="6NIv3jCTE1u" role="31HOkl">
               <property role="31jql3" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_" />
               <property role="3pPHmd" value="INDEX" />
               <property role="KY_Hm" value="KALLISTO_INDEX" />
               <property role="3GSlvM" value="reference-build" />
             </node>
           </node>
-          <node concept="31HOkp" id="59BvSKQHAGQ" role="31jqfU">
+          <node concept="31HOkp" id="6NIv3jCTE1x" role="31jqfU">
             <property role="TrG5h" value="file KALLISTO_INDEX/INSTALL" />
             <property role="3oicoW" value="RESOURCES_KALLISTO_INDEX_INSTALL" />
-            <node concept="31jotn" id="59BvSKQHAGR" role="31HOkl">
+            <node concept="31jotn" id="6NIv3jCTE1w" role="31HOkl">
               <property role="31jswE" value="INSTALL" />
               <property role="31jswI" value="RESOURCES_KALLISTO_INDEX" />
               <property role="KVZ4R" value="KALLISTO_INDEX" />
-            </node>
-          </node>
-        </node>
-        <node concept="x1lOp" id="59BvSKQHAGS" role="2OBJyK">
-          <node concept="3jXL5H" id="59BvSKQHAGT" role="x1lOo">
-            <property role="1f4ISL" value="0.42.3" />
-            <property role="TrG5h" value="KALLISTO_INDEX" />
-            <property role="GYFFI" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins/plugins/resources/KALLISTO_0.42.3_INDEX" />
-            <property role="TNbOb" value="false" />
-            <node concept="2vNlDe" id="59BvSKQHAGU" role="2vN2hK">
-              <property role="TrG5h" value="INDEX" />
-              <node concept="2vNqWl" id="59BvSKQHAGV" role="2vNrQz">
-                <property role="TrG5h" value="organism" />
-              </node>
-              <node concept="2vNqWl" id="59BvSKQHAGW" role="2vNrQz">
-                <property role="TrG5h" value="reference-build" />
-              </node>
-              <node concept="2vNqWl" id="59BvSKQHAGX" role="2vNrQz">
-                <property role="TrG5h" value="ensembl-version-number" />
-              </node>
-            </node>
-            <node concept="3pIPPt" id="59BvSKQHAGY" role="3pIPbc">
-              <property role="3pIKb5" value="INSTALL" />
-              <property role="3pIKb9" value="install.sh" />
-            </node>
-            <node concept="3jXLau" id="59BvSKQHAGZ" role="3jXL5I">
-              <property role="G5nAd" value="0.42.3" />
-              <ref role="3jXLav" node="59BvSKQHAH1" resolve="KALLISTO" />
-            </node>
-            <node concept="3jXLau" id="59BvSKQHAH0" role="3jXL5I">
-              <property role="G5nAd" value="1.0" />
-              <ref role="3jXLav" node="59BvSKQHAHc" resolve="ENSEMBL_TRANSCRIPTS" />
-            </node>
-          </node>
-          <node concept="3jXL5H" id="59BvSKQHAH1" role="x1lOo">
-            <property role="1f4ISL" value="0.42.3" />
-            <property role="TrG5h" value="KALLISTO" />
-            <property role="GYFFI" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins/plugins/resources/KALLISTO_0.42.3" />
-            <property role="TNbOb" value="false" />
-            <node concept="2vNlDe" id="59BvSKQHAH2" role="2vN2hK">
-              <property role="TrG5h" value="BINARIES" />
-            </node>
-            <node concept="3pIPPt" id="59BvSKQHAH3" role="3pIPbc">
-              <property role="3pIKb5" value="INSTALL" />
-              <property role="3pIKb9" value="install.sh" />
-            </node>
-            <node concept="3jXLau" id="59BvSKQHAH4" role="3jXL5I">
-              <property role="G5nAd" value="1.2" />
-              <ref role="3jXLav" node="59BvSKQHAH5" resolve="FETCH_URL" />
-            </node>
-          </node>
-          <node concept="3jXL5H" id="59BvSKQHAH5" role="x1lOo">
-            <property role="1f4ISL" value="1.2" />
-            <property role="TrG5h" value="FETCH_URL" />
-            <property role="GYFFI" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins/plugins/resources/FETCH_URL_1.2" />
-            <property role="TNbOb" value="false" />
-            <node concept="3pIPPt" id="59BvSKQHAH6" role="3pIPbc">
-              <property role="3pIKb5" value="SCRIPT" />
-              <property role="3pIKb9" value="fetch_url" />
-            </node>
-            <node concept="3pIPPt" id="59BvSKQHAH7" role="3pIPbc">
-              <property role="3pIKb5" value="SCRIPT_PATTERN" />
-              <property role="3pIKb9" value="fetch_url_pattern" />
-            </node>
-            <node concept="3jXLau" id="59BvSKQHAH8" role="3jXL5I">
-              <property role="G5nAd" value="1.0" />
-              <ref role="3jXLav" node="59BvSKQHAH9" resolve="BASH_LIBRARY" />
-            </node>
-          </node>
-          <node concept="3jXL5H" id="59BvSKQHAH9" role="x1lOo">
-            <property role="1f4ISL" value="1.0" />
-            <property role="TrG5h" value="BASH_LIBRARY" />
-            <property role="GYFFI" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins/plugins/resources/BASH_LIBRARY_1.0" />
-            <property role="TNbOb" value="false" />
-            <node concept="3pIPPt" id="59BvSKQHAHa" role="3pIPbc">
-              <property role="3pIKb5" value="CALCULATE_MD5" />
-              <property role="3pIKb9" value="calculateMD5.sh" />
-            </node>
-            <node concept="3pIPPt" id="59BvSKQHAHb" role="3pIPbc">
-              <property role="3pIKb5" value="MAPS_IN_BASH3" />
-              <property role="3pIKb9" value="maps_in_bash3.sh" />
-            </node>
-          </node>
-          <node concept="3jXL5H" id="59BvSKQHAHc" role="x1lOo">
-            <property role="1f4ISL" value="1.0" />
-            <property role="TrG5h" value="ENSEMBL_TRANSCRIPTS" />
-            <property role="GYFFI" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins/plugins/resources/ENSEMBL_TRANSCRIPTS_1.0" />
-            <property role="TNbOb" value="false" />
-            <node concept="2vNlDe" id="59BvSKQHAHd" role="2vN2hK">
-              <property role="TrG5h" value="TOPLEVEL" />
-              <node concept="2vNqWl" id="59BvSKQHAHe" role="2vNrQz">
-                <property role="TrG5h" value="organism" />
-              </node>
-              <node concept="2vNqWl" id="59BvSKQHAHf" role="2vNrQz">
-                <property role="TrG5h" value="reference-build" />
-              </node>
-              <node concept="2vNqWl" id="59BvSKQHAHg" role="2vNrQz">
-                <property role="TrG5h" value="ensembl-version-number" />
-              </node>
-            </node>
-            <node concept="3pIPPt" id="59BvSKQHAHh" role="3pIPbc">
-              <property role="3pIKb5" value="INSTALL" />
-              <property role="3pIKb9" value="install.sh" />
-            </node>
-            <node concept="3jXLau" id="59BvSKQHAHi" role="3jXL5I">
-              <property role="G5nAd" value="1.0" />
-              <ref role="3jXLav" node="59BvSKQHAH5" resolve="FETCH_URL" />
             </node>
           </node>
         </node>
@@ -752,7 +752,7 @@
             <property role="26mB_l" value="true" />
             <property role="26mB$E" value="" />
             <node concept="31HMC_" id="mLKgp_dTgi" role="19OIOa">
-              <ref role="31HMCX" node="mLKgp_dThg" resolve="artifact path KALLISTO_INDEX.INDEX" />
+              <ref role="31HMCX" node="6NIv3jCTE3d" resolve="artifact path KALLISTO_INDEX.INDEX" />
             </node>
           </node>
           <node concept="26mB$F" id="mLKgp_dTgj" role="26mB$C">
@@ -776,7 +776,7 @@
             <property role="26mB_l" value="true" />
             <property role="26mB$E" value="" />
             <node concept="31HMC_" id="mLKgp_dTgp" role="19OIOa">
-              <ref role="31HMCX" node="mLKgp_dTgQ" resolve="artifact path KALLISTO.BINARIES" />
+              <ref role="31HMCX" node="6NIv3jCTE3t" resolve="artifact path KALLISTO.BINARIES" />
             </node>
           </node>
           <node concept="26mB$F" id="mLKgp_dTgq" role="26mB$C">
@@ -800,375 +800,375 @@
           <property role="19SUeA" value="&#10;&#10;#exit 0" />
         </node>
       </node>
-      <node concept="2OBCQ_" id="mLKgp_dTgx" role="2OBg32">
-        <property role="2DVE38" value="false" />
-        <node concept="3xUnCN" id="mLKgp_dTgy" role="2OBJyZ">
+      <node concept="2OBCQ_" id="6NIv3jCTB2d" role="2OBg32">
+        <property role="2DVE38" value="true" />
+        <node concept="x1lOp" id="6NIv3jCTB2f" role="2OBJyK">
+          <node concept="3jXL5H" id="6NIv3jCTB4a" role="x1lOo">
+            <property role="1f4ISL" value="0.42.3" />
+            <property role="TrG5h" value="KALLISTO_INDEX" />
+            <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/KALLISTO_0.42.3_INDEX" />
+            <property role="TNbOb" value="false" />
+            <node concept="2vNlDe" id="6NIv3jCTB4b" role="2vN2hK">
+              <property role="TrG5h" value="INDEX" />
+              <node concept="2vNqWl" id="6NIv3jCTB4c" role="2vNrQz">
+                <property role="TrG5h" value="organism" />
+              </node>
+              <node concept="2vNqWl" id="6NIv3jCTB4d" role="2vNrQz">
+                <property role="TrG5h" value="reference-build" />
+              </node>
+              <node concept="2vNqWl" id="6NIv3jCTB4e" role="2vNrQz">
+                <property role="TrG5h" value="ensembl-version-number" />
+              </node>
+            </node>
+            <node concept="3pIPPt" id="6NIv3jCTB4f" role="3pIPbc">
+              <property role="3pIKb5" value="INSTALL" />
+              <property role="3pIKb9" value="install.sh" />
+            </node>
+            <node concept="3jXLau" id="6NIv3jCTB4g" role="3jXL5I">
+              <property role="G5nAd" value="0.42.3" />
+              <ref role="3jXLav" node="6NIv3jCTB4i" resolve="KALLISTO" />
+            </node>
+            <node concept="3jXLau" id="6NIv3jCTB4h" role="3jXL5I">
+              <property role="G5nAd" value="1.0" />
+              <ref role="3jXLav" node="6NIv3jCTB4t" resolve="ENSEMBL_TRANSCRIPTS" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="6NIv3jCTB4i" role="x1lOo">
+            <property role="1f4ISL" value="0.42.5" />
+            <property role="TrG5h" value="KALLISTO" />
+            <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/KALLISTO_0.42.5" />
+            <property role="TNbOb" value="false" />
+            <node concept="2vNlDe" id="6NIv3jCTB4j" role="2vN2hK">
+              <property role="TrG5h" value="BINARIES" />
+            </node>
+            <node concept="3pIPPt" id="6NIv3jCTB4k" role="3pIPbc">
+              <property role="3pIKb5" value="INSTALL" />
+              <property role="3pIKb9" value="install.sh" />
+            </node>
+            <node concept="3jXLau" id="6NIv3jCTB4l" role="3jXL5I">
+              <property role="G5nAd" value="1.2" />
+              <ref role="3jXLav" node="6NIv3jCTB4m" resolve="FETCH_URL" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="6NIv3jCTB4m" role="x1lOo">
+            <property role="1f4ISL" value="1.2" />
+            <property role="TrG5h" value="FETCH_URL" />
+            <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/FETCH_URL_1.2" />
+            <property role="TNbOb" value="false" />
+            <node concept="3pIPPt" id="6NIv3jCTB4n" role="3pIPbc">
+              <property role="3pIKb5" value="SCRIPT" />
+              <property role="3pIKb9" value="fetch_url" />
+            </node>
+            <node concept="3pIPPt" id="6NIv3jCTB4o" role="3pIPbc">
+              <property role="3pIKb5" value="SCRIPT_PATTERN" />
+              <property role="3pIKb9" value="fetch_url_pattern" />
+            </node>
+            <node concept="3jXLau" id="6NIv3jCTB4p" role="3jXL5I">
+              <property role="G5nAd" value="1.0" />
+              <ref role="3jXLav" node="6NIv3jCTB4q" resolve="BASH_LIBRARY" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="6NIv3jCTB4q" role="x1lOo">
+            <property role="1f4ISL" value="1.0" />
+            <property role="TrG5h" value="BASH_LIBRARY" />
+            <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/BASH_LIBRARY_1.0" />
+            <property role="TNbOb" value="false" />
+            <node concept="3pIPPt" id="6NIv3jCTB4r" role="3pIPbc">
+              <property role="3pIKb5" value="CALCULATE_MD5" />
+              <property role="3pIKb9" value="calculateMD5.sh" />
+            </node>
+            <node concept="3pIPPt" id="6NIv3jCTB4s" role="3pIPbc">
+              <property role="3pIKb5" value="MAPS_IN_BASH3" />
+              <property role="3pIKb9" value="maps_in_bash3.sh" />
+            </node>
+          </node>
+          <node concept="3jXL5H" id="6NIv3jCTB4t" role="x1lOo">
+            <property role="1f4ISL" value="1.0" />
+            <property role="TrG5h" value="ENSEMBL_TRANSCRIPTS" />
+            <property role="GYFFI" value="/Users/mas2182/Lab/Projects/Git/gobyweb2-plugins/plugins/resources/ENSEMBL_TRANSCRIPTS_1.0" />
+            <property role="TNbOb" value="false" />
+            <node concept="2vNlDe" id="6NIv3jCTB4u" role="2vN2hK">
+              <property role="TrG5h" value="TOPLEVEL" />
+              <node concept="2vNqWl" id="6NIv3jCTB4v" role="2vNrQz">
+                <property role="TrG5h" value="organism" />
+              </node>
+              <node concept="2vNqWl" id="6NIv3jCTB4w" role="2vNrQz">
+                <property role="TrG5h" value="reference-build" />
+              </node>
+              <node concept="2vNqWl" id="6NIv3jCTB4x" role="2vNrQz">
+                <property role="TrG5h" value="ensembl-version-number" />
+              </node>
+            </node>
+            <node concept="3pIPPt" id="6NIv3jCTB4y" role="3pIPbc">
+              <property role="3pIKb5" value="INSTALL" />
+              <property role="3pIKb9" value="install.sh" />
+            </node>
+            <node concept="3jXLau" id="6NIv3jCTB4z" role="3jXL5I">
+              <property role="G5nAd" value="1.0" />
+              <ref role="3jXLav" node="6NIv3jCTB4m" resolve="FETCH_URL" />
+            </node>
+          </node>
+        </node>
+        <node concept="3xUnCN" id="6NIv3jCTB41" role="2OBJyZ">
           <property role="3Ui_h1" value="" />
           <property role="3xVD5K" value="KALLISTO_INDEX" />
-          <ref role="x1kBk" node="mLKgp_dThs" resolve="KALLISTO_INDEX" />
-          <ref role="1PROVt" node="mLKgp_dTgH" resolve="KALLISTO_INDEX" />
-          <ref role="1PROJ1" node="mLKgp_dTgI" resolve="0.42.3" />
-          <node concept="1NwGl_" id="mLKgp_dTgz" role="3bnoS5">
+          <ref role="1PROJ1" node="6NIv3jCTB45" resolve="0.42.3" />
+          <ref role="1PROVt" node="6NIv3jCTB44" resolve="KALLISTO_INDEX" />
+          <ref role="x1kBk" node="6NIv3jCTB4a" resolve="KALLISTO_INDEX" />
+          <node concept="1NwGl_" id="6NIv3jCTB4G" role="3bnoS5">
             <property role="3xVD5K" value="BASH_LIBRARY" />
-            <ref role="x1kBk" node="mLKgp_dThG" resolve="BASH_LIBRARY" />
-            <node concept="31HOkp" id="mLKgp_dTg$" role="31jqfU">
+            <ref role="x1kBk" node="6NIv3jCTB4q" resolve="BASH_LIBRARY" />
+            <node concept="31HOkp" id="6NIv3jCTE3l" role="31jqfU">
               <property role="TrG5h" value="file BASH_LIBRARY/CALCULATE_MD5" />
               <property role="3oicoW" value="RESOURCES_BASH_LIBRARY_CALCULATE_MD5" />
-              <node concept="31jotn" id="mLKgp_dTg_" role="31HOkl">
+              <node concept="31jotn" id="6NIv3jCTE3k" role="31HOkl">
                 <property role="31jswE" value="CALCULATE_MD5" />
                 <property role="31jswI" value="RESOURCES_BASH_LIBRARY" />
                 <property role="KVZ4R" value="BASH_LIBRARY" />
               </node>
             </node>
-            <node concept="31HOkp" id="mLKgp_dTgA" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE3n" role="31jqfU">
               <property role="TrG5h" value="file BASH_LIBRARY/MAPS_IN_BASH3" />
               <property role="3oicoW" value="RESOURCES_BASH_LIBRARY_MAPS_IN_BASH3" />
-              <node concept="31jotn" id="mLKgp_dTgB" role="31HOkl">
+              <node concept="31jotn" id="6NIv3jCTE3m" role="31HOkl">
                 <property role="31jswE" value="MAPS_IN_BASH3" />
                 <property role="31jswI" value="RESOURCES_BASH_LIBRARY" />
                 <property role="KVZ4R" value="BASH_LIBRARY" />
               </node>
             </node>
           </node>
-          <node concept="1NwGl_" id="mLKgp_dTgC" role="3bnoS5">
+          <node concept="1NwGl_" id="6NIv3jCTB4F" role="3bnoS5">
             <property role="3xVD5K" value="FETCH_URL" />
-            <ref role="x1kBk" node="mLKgp_dThC" resolve="FETCH_URL" />
-            <node concept="31HOkp" id="mLKgp_dTgD" role="31jqfU">
+            <ref role="x1kBk" node="6NIv3jCTB4m" resolve="FETCH_URL" />
+            <node concept="31HOkp" id="6NIv3jCTE3p" role="31jqfU">
               <property role="TrG5h" value="file FETCH_URL/SCRIPT" />
               <property role="3oicoW" value="RESOURCES_FETCH_URL_SCRIPT" />
-              <node concept="31jotn" id="mLKgp_dTgE" role="31HOkl">
+              <node concept="31jotn" id="6NIv3jCTE3o" role="31HOkl">
                 <property role="31jswE" value="SCRIPT" />
                 <property role="31jswI" value="RESOURCES_FETCH_URL" />
                 <property role="KVZ4R" value="FETCH_URL" />
               </node>
             </node>
-            <node concept="31HOkp" id="mLKgp_dTgF" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE3r" role="31jqfU">
               <property role="TrG5h" value="file FETCH_URL/SCRIPT_PATTERN" />
               <property role="3oicoW" value="RESOURCES_FETCH_URL_SCRIPT_PATTERN" />
-              <node concept="31jotn" id="mLKgp_dTgG" role="31HOkl">
+              <node concept="31jotn" id="6NIv3jCTE3q" role="31HOkl">
                 <property role="31jswE" value="SCRIPT_PATTERN" />
                 <property role="31jswI" value="RESOURCES_FETCH_URL" />
                 <property role="KVZ4R" value="FETCH_URL" />
               </node>
             </node>
           </node>
-          <node concept="2vzQjv" id="mLKgp_dTgH" role="xr5hk">
+          <node concept="2vzQjv" id="6NIv3jCTB44" role="xr5hk">
             <property role="TrG5h" value="KALLISTO_INDEX" />
-            <node concept="2vzQjq" id="mLKgp_dTgI" role="2vzQju">
+            <node concept="2vzQjq" id="6NIv3jCTB45" role="2vzQju">
               <property role="TrG5h" value="0.42.3" />
             </node>
           </node>
-          <node concept="2vnsz3" id="mLKgp_dTgJ" role="1NFp1Y">
+          <node concept="2vnsz3" id="6NIv3jCTB4$" role="1NFp1Y">
             <property role="2vk9_M" value="KALLISTO_INDEX" />
             <property role="2vk9_N" value="INDEX" />
             <property role="TrG5h" value="organism" />
-            <node concept="2t8VsU" id="mLKgp_dTgK" role="2vnsw6">
+            <node concept="2t8VsU" id="6NIv3jCTB4_" role="2vnsw6">
               <property role="2t8Vu2" value="Homo_sapiens" />
               <property role="TrG5h" value="organism" />
             </node>
           </node>
-          <node concept="2vnsz3" id="mLKgp_dTgL" role="1NFp1Y">
+          <node concept="2vnsz3" id="6NIv3jCTB4A" role="1NFp1Y">
             <property role="2vk9_M" value="KALLISTO_INDEX" />
             <property role="2vk9_N" value="INDEX" />
             <property role="TrG5h" value="reference-build" />
-            <node concept="2t8VsU" id="mLKgp_dTgM" role="2vnsw6">
+            <node concept="2t8VsU" id="6NIv3jCTB4B" role="2vnsw6">
               <property role="2t8Vu2" value="GRCH38" />
               <property role="TrG5h" value="reference-build" />
             </node>
           </node>
-          <node concept="2vnsz3" id="mLKgp_dTgN" role="1NFp1Y">
+          <node concept="2vnsz3" id="6NIv3jCTB4C" role="1NFp1Y">
             <property role="2vk9_M" value="KALLISTO_INDEX" />
             <property role="2vk9_N" value="INDEX" />
             <property role="TrG5h" value="ensembl-version-number" />
-            <node concept="2t8VsU" id="mLKgp_dTgO" role="2vnsw6">
+            <node concept="2t8VsU" id="6NIv3jCTB4D" role="2vnsw6">
               <property role="2t8Vu2" value="82" />
               <property role="TrG5h" value="ensembl-version-number" />
             </node>
           </node>
-          <node concept="1NwGl_" id="mLKgp_dTgP" role="3bnoS5">
+          <node concept="1NwGl_" id="6NIv3jCTB4E" role="3bnoS5">
             <property role="3xVD5K" value="KALLISTO" />
-            <ref role="x1kBk" node="mLKgp_dTh$" resolve="KALLISTO" />
-            <node concept="31HOkp" id="mLKgp_dTgQ" role="31jqfU">
+            <ref role="x1kBk" node="6NIv3jCTB4i" resolve="KALLISTO" />
+            <node concept="31HOkp" id="6NIv3jCTE3t" role="31jqfU">
               <property role="TrG5h" value="artifact path KALLISTO.BINARIES" />
               <property role="3oicoW" value="RESOURCES_ARTIFACTS_KALLISTO_BINARIES" />
-              <node concept="31josK" id="mLKgp_dTgR" role="31HOkl">
+              <node concept="31josK" id="6NIv3jCTE3s" role="31HOkl">
                 <property role="31jqiE" value="RESOURCES_ARTIFACTS_KALLISTO_BINARIES" />
                 <property role="KTmAF" value="KALLISTO" />
                 <property role="3oiRSB" value="BINARIES" />
               </node>
             </node>
-            <node concept="31HOkp" id="mLKgp_dTgS" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE3v" role="31jqfU">
               <property role="TrG5h" value="file KALLISTO/INSTALL" />
               <property role="3oicoW" value="RESOURCES_KALLISTO_INSTALL" />
-              <node concept="31jotn" id="mLKgp_dTgT" role="31HOkl">
+              <node concept="31jotn" id="6NIv3jCTE3u" role="31HOkl">
                 <property role="31jswE" value="INSTALL" />
                 <property role="31jswI" value="RESOURCES_KALLISTO" />
                 <property role="KVZ4R" value="KALLISTO" />
               </node>
             </node>
           </node>
-          <node concept="1NwGl_" id="mLKgp_dTgU" role="3bnoS5">
+          <node concept="1NwGl_" id="6NIv3jCTB4H" role="3bnoS5">
             <property role="3xVD5K" value="ENSEMBL_TRANSCRIPTS" />
-            <ref role="x1kBk" node="mLKgp_dThJ" resolve="ENSEMBL_TRANSCRIPTS" />
-            <node concept="2vnsz3" id="mLKgp_dTgV" role="1NFp1Y">
+            <ref role="x1kBk" node="6NIv3jCTB4t" resolve="ENSEMBL_TRANSCRIPTS" />
+            <node concept="2vnsz3" id="6NIv3jCTB4I" role="1NFp1Y">
               <property role="2vk9_M" value="ENSEMBL_TRANSCRIPTS" />
               <property role="2vk9_N" value="TOPLEVEL" />
               <property role="TrG5h" value="organism" />
-              <node concept="2vraTB" id="mLKgp_dTgW" role="2vnsw6">
+              <node concept="2vraTB" id="6NIv3jCTB4J" role="2vnsw6">
                 <property role="TrG5h" value="organism" />
-                <ref role="2vraA5" node="mLKgp_dTgK" resolve="organism" />
+                <ref role="2vraA5" node="6NIv3jCTB4_" resolve="organism" />
               </node>
             </node>
-            <node concept="2vnsz3" id="mLKgp_dTgX" role="1NFp1Y">
+            <node concept="2vnsz3" id="6NIv3jCTB4K" role="1NFp1Y">
               <property role="2vk9_M" value="ENSEMBL_TRANSCRIPTS" />
               <property role="2vk9_N" value="TOPLEVEL" />
               <property role="TrG5h" value="reference-build" />
-              <node concept="2vraTB" id="mLKgp_dTgY" role="2vnsw6">
+              <node concept="2vraTB" id="6NIv3jCTB4L" role="2vnsw6">
                 <property role="TrG5h" value="reference-build" />
-                <ref role="2vraA5" node="mLKgp_dTgM" resolve="reference-build" />
+                <ref role="2vraA5" node="6NIv3jCTB4B" resolve="reference-build" />
               </node>
             </node>
-            <node concept="2vnsz3" id="mLKgp_dTgZ" role="1NFp1Y">
+            <node concept="2vnsz3" id="6NIv3jCTB4M" role="1NFp1Y">
               <property role="2vk9_M" value="ENSEMBL_TRANSCRIPTS" />
               <property role="2vk9_N" value="TOPLEVEL" />
               <property role="TrG5h" value="ensembl-version-number" />
-              <node concept="2vraTB" id="mLKgp_dTh0" role="2vnsw6">
+              <node concept="2vraTB" id="6NIv3jCTB4N" role="2vnsw6">
                 <property role="TrG5h" value="ensembl-version-number" />
-                <ref role="2vraA5" node="mLKgp_dTgO" resolve="ensembl-version-number" />
+                <ref role="2vraA5" node="6NIv3jCTB4D" resolve="ensembl-version-number" />
               </node>
             </node>
-            <node concept="31HOkp" id="mLKgp_dTh1" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE3x" role="31jqfU">
               <property role="TrG5h" value="value of ENSEMBL_TRANSCRIPTS.TOPLEVEL.ensembl-version-number" />
               <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_ENSEMBL_VERSION_NUMBER" />
-              <node concept="31jouD" id="mLKgp_dTh2" role="31HOkl">
+              <node concept="31jouD" id="6NIv3jCTE3w" role="31HOkl">
                 <property role="31jql3" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_" />
                 <property role="3pPHmd" value="TOPLEVEL" />
                 <property role="KY_Hm" value="ENSEMBL_TRANSCRIPTS" />
                 <property role="3GSlvM" value="ensembl-version-number" />
               </node>
             </node>
-            <node concept="31HOkp" id="mLKgp_dTh3" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE3A" role="31jqfU">
               <property role="TrG5h" value="artifact path ENSEMBL_TRANSCRIPTS.TOPLEVEL" />
               <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_HOMO_SAPIENS_GRCH38_82" />
-              <node concept="31josK" id="mLKgp_dTh4" role="31HOkl">
+              <node concept="31josK" id="6NIv3jCTE3y" role="31HOkl">
                 <property role="31jqiE" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL" />
                 <property role="KTmAF" value="ENSEMBL_TRANSCRIPTS" />
                 <property role="3oiRSB" value="TOPLEVEL" />
-                <node concept="31jqtl" id="mLKgp_dTh5" role="31jqr$">
+                <node concept="31jqtl" id="6NIv3jCTE3z" role="31jqr$">
                   <property role="3GzU61" value="organism" />
                   <property role="3GzU6q" value="ENSEMBL_TRANSCRIPTS" />
                   <property role="3GzU6s" value="TOPLEVEL" />
                 </node>
-                <node concept="31jqtl" id="mLKgp_dTh6" role="31jqr$">
+                <node concept="31jqtl" id="6NIv3jCTE3$" role="31jqr$">
                   <property role="3GzU61" value="reference-build" />
                   <property role="3GzU6q" value="ENSEMBL_TRANSCRIPTS" />
                   <property role="3GzU6s" value="TOPLEVEL" />
                 </node>
-                <node concept="31jqtl" id="mLKgp_dTh7" role="31jqr$">
+                <node concept="31jqtl" id="6NIv3jCTE3_" role="31jqr$">
                   <property role="3GzU61" value="ensembl-version-number" />
                   <property role="3GzU6q" value="ENSEMBL_TRANSCRIPTS" />
                   <property role="3GzU6s" value="TOPLEVEL" />
                 </node>
               </node>
             </node>
-            <node concept="31HOkp" id="mLKgp_dTh8" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE3C" role="31jqfU">
               <property role="TrG5h" value="value of ENSEMBL_TRANSCRIPTS.TOPLEVEL.organism" />
               <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_ORGANISM" />
-              <node concept="31jouD" id="mLKgp_dTh9" role="31HOkl">
+              <node concept="31jouD" id="6NIv3jCTE3B" role="31HOkl">
                 <property role="31jql3" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_" />
                 <property role="3pPHmd" value="TOPLEVEL" />
                 <property role="KY_Hm" value="ENSEMBL_TRANSCRIPTS" />
                 <property role="3GSlvM" value="organism" />
               </node>
             </node>
-            <node concept="31HOkp" id="mLKgp_dTha" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE3E" role="31jqfU">
               <property role="TrG5h" value="value of ENSEMBL_TRANSCRIPTS.TOPLEVEL.reference-build" />
               <property role="3oicoW" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_REFERENCE_BUILD" />
-              <node concept="31jouD" id="mLKgp_dThb" role="31HOkl">
+              <node concept="31jouD" id="6NIv3jCTE3D" role="31HOkl">
                 <property role="31jql3" value="RESOURCES_ARTIFACTS_ENSEMBL_TRANSCRIPTS_TOPLEVEL_" />
                 <property role="3pPHmd" value="TOPLEVEL" />
                 <property role="KY_Hm" value="ENSEMBL_TRANSCRIPTS" />
                 <property role="3GSlvM" value="reference-build" />
               </node>
             </node>
-            <node concept="31HOkp" id="mLKgp_dThc" role="31jqfU">
+            <node concept="31HOkp" id="6NIv3jCTE3G" role="31jqfU">
               <property role="TrG5h" value="file ENSEMBL_TRANSCRIPTS/INSTALL" />
               <property role="3oicoW" value="RESOURCES_ENSEMBL_TRANSCRIPTS_INSTALL" />
-              <node concept="31jotn" id="mLKgp_dThd" role="31HOkl">
+              <node concept="31jotn" id="6NIv3jCTE3F" role="31HOkl">
                 <property role="31jswE" value="INSTALL" />
                 <property role="31jswI" value="RESOURCES_ENSEMBL_TRANSCRIPTS" />
                 <property role="KVZ4R" value="ENSEMBL_TRANSCRIPTS" />
               </node>
             </node>
           </node>
-          <node concept="31HOkp" id="mLKgp_dThe" role="31jqfU">
+          <node concept="31HOkp" id="6NIv3jCTE38" role="31jqfU">
             <property role="TrG5h" value="value of KALLISTO_INDEX.INDEX.ensembl-version-number" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_ENSEMBL_VERSION_NUMBER" />
-            <node concept="31jouD" id="mLKgp_dThf" role="31HOkl">
+            <node concept="31jouD" id="6NIv3jCTE37" role="31HOkl">
               <property role="31jql3" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_" />
               <property role="3pPHmd" value="INDEX" />
               <property role="KY_Hm" value="KALLISTO_INDEX" />
               <property role="3GSlvM" value="ensembl-version-number" />
             </node>
           </node>
-          <node concept="31HOkp" id="mLKgp_dThg" role="31jqfU">
+          <node concept="31HOkp" id="6NIv3jCTE3d" role="31jqfU">
             <property role="TrG5h" value="artifact path KALLISTO_INDEX.INDEX" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_HOMO_SAPIENS_GRCH38_82" />
-            <node concept="31josK" id="mLKgp_dThh" role="31HOkl">
+            <node concept="31josK" id="6NIv3jCTE39" role="31HOkl">
               <property role="31jqiE" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX" />
               <property role="KTmAF" value="KALLISTO_INDEX" />
               <property role="3oiRSB" value="INDEX" />
-              <node concept="31jqtl" id="mLKgp_dThi" role="31jqr$">
+              <node concept="31jqtl" id="6NIv3jCTE3a" role="31jqr$">
                 <property role="3GzU61" value="organism" />
                 <property role="3GzU6q" value="KALLISTO_INDEX" />
                 <property role="3GzU6s" value="INDEX" />
               </node>
-              <node concept="31jqtl" id="mLKgp_dThj" role="31jqr$">
+              <node concept="31jqtl" id="6NIv3jCTE3b" role="31jqr$">
                 <property role="3GzU61" value="reference-build" />
                 <property role="3GzU6q" value="KALLISTO_INDEX" />
                 <property role="3GzU6s" value="INDEX" />
               </node>
-              <node concept="31jqtl" id="mLKgp_dThk" role="31jqr$">
+              <node concept="31jqtl" id="6NIv3jCTE3c" role="31jqr$">
                 <property role="3GzU61" value="ensembl-version-number" />
                 <property role="3GzU6q" value="KALLISTO_INDEX" />
                 <property role="3GzU6s" value="INDEX" />
               </node>
             </node>
           </node>
-          <node concept="31HOkp" id="mLKgp_dThl" role="31jqfU">
+          <node concept="31HOkp" id="6NIv3jCTE3f" role="31jqfU">
             <property role="TrG5h" value="value of KALLISTO_INDEX.INDEX.organism" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_ORGANISM" />
-            <node concept="31jouD" id="mLKgp_dThm" role="31HOkl">
+            <node concept="31jouD" id="6NIv3jCTE3e" role="31HOkl">
               <property role="31jql3" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_" />
               <property role="3pPHmd" value="INDEX" />
               <property role="KY_Hm" value="KALLISTO_INDEX" />
               <property role="3GSlvM" value="organism" />
             </node>
           </node>
-          <node concept="31HOkp" id="mLKgp_dThn" role="31jqfU">
+          <node concept="31HOkp" id="6NIv3jCTE3h" role="31jqfU">
             <property role="TrG5h" value="value of KALLISTO_INDEX.INDEX.reference-build" />
             <property role="3oicoW" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_REFERENCE_BUILD" />
-            <node concept="31jouD" id="mLKgp_dTho" role="31HOkl">
+            <node concept="31jouD" id="6NIv3jCTE3g" role="31HOkl">
               <property role="31jql3" value="RESOURCES_ARTIFACTS_KALLISTO_INDEX_INDEX_" />
               <property role="3pPHmd" value="INDEX" />
               <property role="KY_Hm" value="KALLISTO_INDEX" />
               <property role="3GSlvM" value="reference-build" />
             </node>
           </node>
-          <node concept="31HOkp" id="mLKgp_dThp" role="31jqfU">
+          <node concept="31HOkp" id="6NIv3jCTE3j" role="31jqfU">
             <property role="TrG5h" value="file KALLISTO_INDEX/INSTALL" />
             <property role="3oicoW" value="RESOURCES_KALLISTO_INDEX_INSTALL" />
-            <node concept="31jotn" id="mLKgp_dThq" role="31HOkl">
+            <node concept="31jotn" id="6NIv3jCTE3i" role="31HOkl">
               <property role="31jswE" value="INSTALL" />
               <property role="31jswI" value="RESOURCES_KALLISTO_INDEX" />
               <property role="KVZ4R" value="KALLISTO_INDEX" />
-            </node>
-          </node>
-        </node>
-        <node concept="x1lOp" id="mLKgp_dThr" role="2OBJyK">
-          <node concept="3jXL5H" id="mLKgp_dThs" role="x1lOo">
-            <property role="1f4ISL" value="0.42.3" />
-            <property role="TrG5h" value="KALLISTO_INDEX" />
-            <property role="GYFFI" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins/plugins/resources/KALLISTO_0.42.3_INDEX" />
-            <property role="TNbOb" value="false" />
-            <node concept="2vNlDe" id="mLKgp_dTht" role="2vN2hK">
-              <property role="TrG5h" value="INDEX" />
-              <node concept="2vNqWl" id="mLKgp_dThu" role="2vNrQz">
-                <property role="TrG5h" value="organism" />
-              </node>
-              <node concept="2vNqWl" id="mLKgp_dThv" role="2vNrQz">
-                <property role="TrG5h" value="reference-build" />
-              </node>
-              <node concept="2vNqWl" id="mLKgp_dThw" role="2vNrQz">
-                <property role="TrG5h" value="ensembl-version-number" />
-              </node>
-            </node>
-            <node concept="3pIPPt" id="mLKgp_dThx" role="3pIPbc">
-              <property role="3pIKb5" value="INSTALL" />
-              <property role="3pIKb9" value="install.sh" />
-            </node>
-            <node concept="3jXLau" id="mLKgp_dThy" role="3jXL5I">
-              <property role="G5nAd" value="0.42.3" />
-              <ref role="3jXLav" node="mLKgp_dTh$" resolve="KALLISTO" />
-            </node>
-            <node concept="3jXLau" id="mLKgp_dThz" role="3jXL5I">
-              <property role="G5nAd" value="1.0" />
-              <ref role="3jXLav" node="mLKgp_dThJ" resolve="ENSEMBL_TRANSCRIPTS" />
-            </node>
-          </node>
-          <node concept="3jXL5H" id="mLKgp_dTh$" role="x1lOo">
-            <property role="1f4ISL" value="0.42.3" />
-            <property role="TrG5h" value="KALLISTO" />
-            <property role="GYFFI" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins/plugins/resources/KALLISTO_0.42.3" />
-            <property role="TNbOb" value="false" />
-            <node concept="2vNlDe" id="mLKgp_dTh_" role="2vN2hK">
-              <property role="TrG5h" value="BINARIES" />
-            </node>
-            <node concept="3pIPPt" id="mLKgp_dThA" role="3pIPbc">
-              <property role="3pIKb5" value="INSTALL" />
-              <property role="3pIKb9" value="install.sh" />
-            </node>
-            <node concept="3jXLau" id="mLKgp_dThB" role="3jXL5I">
-              <property role="G5nAd" value="1.2" />
-              <ref role="3jXLav" node="mLKgp_dThC" resolve="FETCH_URL" />
-            </node>
-          </node>
-          <node concept="3jXL5H" id="mLKgp_dThC" role="x1lOo">
-            <property role="1f4ISL" value="1.2" />
-            <property role="TrG5h" value="FETCH_URL" />
-            <property role="GYFFI" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins/plugins/resources/FETCH_URL_1.2" />
-            <property role="TNbOb" value="false" />
-            <node concept="3pIPPt" id="mLKgp_dThD" role="3pIPbc">
-              <property role="3pIKb5" value="SCRIPT" />
-              <property role="3pIKb9" value="fetch_url" />
-            </node>
-            <node concept="3pIPPt" id="mLKgp_dThE" role="3pIPbc">
-              <property role="3pIKb5" value="SCRIPT_PATTERN" />
-              <property role="3pIKb9" value="fetch_url_pattern" />
-            </node>
-            <node concept="3jXLau" id="mLKgp_dThF" role="3jXL5I">
-              <property role="G5nAd" value="1.0" />
-              <ref role="3jXLav" node="mLKgp_dThG" resolve="BASH_LIBRARY" />
-            </node>
-          </node>
-          <node concept="3jXL5H" id="mLKgp_dThG" role="x1lOo">
-            <property role="1f4ISL" value="1.0" />
-            <property role="TrG5h" value="BASH_LIBRARY" />
-            <property role="GYFFI" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins/plugins/resources/BASH_LIBRARY_1.0" />
-            <property role="TNbOb" value="false" />
-            <node concept="3pIPPt" id="mLKgp_dThH" role="3pIPbc">
-              <property role="3pIKb5" value="CALCULATE_MD5" />
-              <property role="3pIKb9" value="calculateMD5.sh" />
-            </node>
-            <node concept="3pIPPt" id="mLKgp_dThI" role="3pIPbc">
-              <property role="3pIKb5" value="MAPS_IN_BASH3" />
-              <property role="3pIKb9" value="maps_in_bash3.sh" />
-            </node>
-          </node>
-          <node concept="3jXL5H" id="mLKgp_dThJ" role="x1lOo">
-            <property role="1f4ISL" value="1.0" />
-            <property role="TrG5h" value="ENSEMBL_TRANSCRIPTS" />
-            <property role="GYFFI" value="/Users/fac2003/IdeaProjects/git/gobyweb2-plugins/plugins/resources/ENSEMBL_TRANSCRIPTS_1.0" />
-            <property role="TNbOb" value="false" />
-            <node concept="2vNlDe" id="mLKgp_dThK" role="2vN2hK">
-              <property role="TrG5h" value="TOPLEVEL" />
-              <node concept="2vNqWl" id="mLKgp_dThL" role="2vNrQz">
-                <property role="TrG5h" value="organism" />
-              </node>
-              <node concept="2vNqWl" id="mLKgp_dThM" role="2vNrQz">
-                <property role="TrG5h" value="reference-build" />
-              </node>
-              <node concept="2vNqWl" id="mLKgp_dThN" role="2vNrQz">
-                <property role="TrG5h" value="ensembl-version-number" />
-              </node>
-            </node>
-            <node concept="3pIPPt" id="mLKgp_dThO" role="3pIPbc">
-              <property role="3pIKb5" value="INSTALL" />
-              <property role="3pIKb9" value="install.sh" />
-            </node>
-            <node concept="3jXLau" id="mLKgp_dThP" role="3jXL5I">
-              <property role="G5nAd" value="1.0" />
-              <ref role="3jXLav" node="mLKgp_dThC" resolve="FETCH_URL" />
             </node>
           </node>
         </node>
