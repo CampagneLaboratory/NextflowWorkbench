@@ -149,10 +149,10 @@
         <node concept="19SUe$" id="mLKgp_dU72" role="19SJt6" />
       </node>
     </node>
-    <node concept="VtuK3" id="mLKgp_dU4e" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="VuL0v" value="fvigotti" />
-      <property role="GbyUj" value="env-fatgsutil" />
+    <node concept="VtuK3" id="3VGYaIWdDaB" role="234boB">
+      <property role="VuL0s" value="1.4.0" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="software" />
     </node>
   </node>
   <node concept="2ulcR8" id="mLKgp_ensb">
