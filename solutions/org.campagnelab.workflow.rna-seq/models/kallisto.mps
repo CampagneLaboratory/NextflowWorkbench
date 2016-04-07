@@ -193,7 +193,7 @@
   <node concept="2ulcR8" id="59BvSKQHAFs">
     <property role="TrG5h" value="KallistoCountsWithTuples" />
     <node concept="VtuK3" id="59BvSKQHAFt" role="234boB">
-      <property role="VuL0s" value="1.0.0" />
+      <property role="VuL0s" value="1.0.1" />
       <property role="GbyUj" value="kallisto-homo-sapiens" />
       <property role="VuL0v" value="artifacts" />
       <property role="3zaeVo" value="true" />
@@ -713,9 +713,9 @@
       <node concept="16pbKc" id="5WTdyfwYA73" role="2ybFLk" />
     </node>
     <node concept="VtuK3" id="5WTdyfwY$Fl" role="234boB">
-      <property role="VuL0s" value="1.0.2" />
-      <property role="VuL0v" value="fac2003" />
-      <property role="GbyUj" value="kallisto-human-gsutil" />
+      <property role="VuL0s" value="1.0.1" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="kallisto-homo-sapiens" />
     </node>
     <node concept="2lYRya" id="mLKgp_dTg3" role="2ulM79">
       <property role="TrG5h" value="'sample-*'" />
