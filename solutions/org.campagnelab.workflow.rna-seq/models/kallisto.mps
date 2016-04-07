@@ -718,7 +718,7 @@
       <property role="GbyUj" value="kallisto-homo-sapiens" />
     </node>
     <node concept="2lYRya" id="mLKgp_dTg3" role="2ulM79">
-      <property role="TrG5h" value="'sample-*'" />
+      <property role="TrG5h" value="'counts-*.tsv'" />
       <node concept="16pRw0" id="mLKgp_dTg4" role="2ybFLk" />
     </node>
     <node concept="NgwLd" id="mLKgp_dTgb" role="2ulM7a">
@@ -795,7 +795,7 @@
           <ref role="3YE7sm" node="5WTdyfwYA6P" resolve="destination_HDF5_URL" />
         </node>
         <node concept="19SUe$" id="5WTdyfwY$GE" role="19SJt6">
-          <property role="19SUeA" value="&#10;&#10;#exit 0" />
+          <property role="19SUeA" value="&#10;cp ./sample-${basename}/abundance.tsv counts-${basename}.tsv&#10;exit 0" />
         </node>
       </node>
       <node concept="2OBCQ_" id="6NIv3jCTB2d" role="2OBg32">
