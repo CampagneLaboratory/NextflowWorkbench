@@ -172,7 +172,7 @@
     <node concept="3Y$Zt1" id="mLKgp_eny_" role="2ulM7a">
       <node concept="19SGf9" id="mLKgp_enyB" role="3Y$PkS">
         <node concept="19SUe$" id="mLKgp_enyC" role="19SJt6">
-          <property role="19SUeA" value="# copy the user boto configuration inside the container so gsutil can find it:&#10;cp " />
+          <property role="19SUeA" value="# copy  the user boto configuration inside the container so gsutil can find it:&#10;source ~/.bashrc&#10;cp " />
         </node>
         <node concept="3YE7tV" id="6NIv3jCTLVs" role="19SJt6">
           <ref role="3YE7sm" node="mLKgp_enxw" resolve="botoFile" />
@@ -193,9 +193,9 @@
       </node>
     </node>
     <node concept="VtuK3" id="mLKgp_enwo" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="VuL0v" value="fvigotti" />
-      <property role="GbyUj" value="env-fatgsutil" />
+      <property role="VuL0s" value="1.4.0" />
+      <property role="VuL0v" value="artifacts" />
+      <property role="GbyUj" value="software" />
     </node>
   </node>
 </model>
