@@ -6,9 +6,6 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">cbb16c89-ef2c-4f7f-844f-24930d86f6a5(org.campagnelab.docker.images)</dependency>
-  </dependencies>
   <languageVersions>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
@@ -40,7 +37,6 @@
     <language id="316e8289-cb69-4927-8bfe-edde5cd32037" fqName="org.campagnelab.workflow.languages" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="cbb16c89-ef2c-4f7f-844f-24930d86f6a5(org.campagnelab.docker.images)" version="0" />
     <module reference="7c739b34-3e5e-410f-b0a5-b9614d9685f7(org.campagnelab.workflow.rna-seq)" version="0" />
   </dependencyVersions>
 </solution>
