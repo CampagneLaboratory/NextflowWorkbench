@@ -175,8 +175,15 @@
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <reference id="1140138128738" name="concept" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -222,6 +229,7 @@
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
+      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
@@ -407,6 +415,24 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="2DLgRb6lrX2" role="3cqZAp">
+          <node concept="3cpWsn" id="2DLgRb6lrX5" role="3cpWs9">
+            <property role="TrG5h" value="scratch" />
+            <node concept="10P_77" id="2DLgRb6lrX0" role="1tU5fm" />
+            <node concept="3clFbT" id="2DLgRb6lsu9" role="33vP2m">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2DLgRb6ltee" role="3cqZAp">
+          <node concept="3cpWsn" id="2DLgRb6lteh" role="3cpWs9">
+            <property role="TrG5h" value="scratchFolder" />
+            <node concept="17QB3L" id="2DLgRb6ltY2" role="1tU5fm" />
+            <node concept="Xl_RD" id="2DLgRb6ltXg" role="33vP2m">
+              <property role="Xl_RC" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="2DLgRb6l2Dj" role="3cqZAp">
           <node concept="3clFbS" id="2DLgRb6l2Dl" role="3clFbx">
             <node concept="lc7rE" id="2DLgRb6l7bc" role="3cqZAp">
@@ -449,6 +475,67 @@
                 </node>
               </node>
               <node concept="l8MVK" id="2DLgRb6l9xa" role="lcghm" />
+            </node>
+            <node concept="3clFbF" id="2DLgRb6lu4e" role="3cqZAp">
+              <node concept="37vLTI" id="2DLgRb6lueP" role="3clFbG">
+                <node concept="3clFbT" id="2DLgRb6lufn" role="37vLTx">
+                  <property role="3clFbU" value="true" />
+                </node>
+                <node concept="37vLTw" id="2DLgRb6lu4c" role="37vLTJ">
+                  <ref role="3cqZAo" node="2DLgRb6lrX5" resolve="scratch" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2DLgRb6lult" role="3cqZAp">
+              <node concept="37vLTI" id="2DLgRb6luyP" role="3clFbG">
+                <node concept="37vLTw" id="2DLgRb6lulr" role="37vLTJ">
+                  <ref role="3cqZAo" node="2DLgRb6lteh" resolve="scratchFolder" />
+                </node>
+                <node concept="2OqwBi" id="2DLgRb6lySq" role="37vLTx">
+                  <node concept="1PxgMI" id="2DLgRb6lyFy" role="2Oq$k0">
+                    <ref role="1PxNhF" to="dlwq:1PwW9iwVJd4" resolve="ScratchOption" />
+                    <node concept="2OqwBi" id="2DLgRb6luzS" role="1PxMeX">
+                      <node concept="2OqwBi" id="2DLgRb6luzT" role="2Oq$k0">
+                        <node concept="2OqwBi" id="2DLgRb6luzU" role="2Oq$k0">
+                          <node concept="117lpO" id="2DLgRb6luzV" role="2Oq$k0" />
+                          <node concept="3Tsc0h" id="2DLgRb6luzW" role="2OqNvi">
+                            <ref role="3TtcxE" to="dlwq:5KN4KqZiCv_" />
+                          </node>
+                        </node>
+                        <node concept="3zZkjj" id="2DLgRb6luzX" role="2OqNvi">
+                          <node concept="1bVj0M" id="2DLgRb6luzY" role="23t8la">
+                            <node concept="3clFbS" id="2DLgRb6luzZ" role="1bW5cS">
+                              <node concept="3clFbF" id="2DLgRb6lu$0" role="3cqZAp">
+                                <node concept="2OqwBi" id="2DLgRb6lu$1" role="3clFbG">
+                                  <node concept="2OqwBi" id="2DLgRb6lu$2" role="2Oq$k0">
+                                    <node concept="37vLTw" id="2DLgRb6lu$3" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2DLgRb6lu$7" resolve="it" />
+                                    </node>
+                                    <node concept="2yIwOk" id="2DLgRb6lu$4" role="2OqNvi" />
+                                  </node>
+                                  <node concept="3O6GUB" id="2DLgRb6lu$5" role="2OqNvi">
+                                    <node concept="chp4Y" id="2DLgRb6lu$6" role="3QVz_e">
+                                      <ref role="cht4Q" to="dlwq:1PwW9iwVJd4" resolve="ScratchOption" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Rh6nW" id="2DLgRb6lu$7" role="1bW2Oz">
+                              <property role="TrG5h" value="it" />
+                              <node concept="2jxLKc" id="2DLgRb6lu$8" role="1tU5fm" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="2DLgRb6lu$9" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="2DLgRb6lAVV" role="2OqNvi">
+                    <ref role="3TsBF5" to="dlwq:dhtvqFkG5z" resolve="value" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3eOSWO" id="2DLgRb6l6PE" role="3clFbw">
@@ -647,6 +734,75 @@
                         </node>
                       </node>
                     </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="2DLgRb6lB9p" role="3cqZAp">
+                  <node concept="3clFbS" id="2DLgRb6lB9r" role="3clFbx">
+                    <node concept="3cpWs8" id="2DLgRb6lqiv" role="3cqZAp">
+                      <node concept="3cpWsn" id="2DLgRb6lqi_" role="3cpWs9">
+                        <property role="TrG5h" value="mountScratch" />
+                        <node concept="3Tqbb2" id="2DLgRb6lqtY" role="1tU5fm">
+                          <ref role="ehGHo" to="dlwq:5G7wwTNBNZh" resolve="DockerMountDirectiveOption" />
+                        </node>
+                        <node concept="2ShNRf" id="2DLgRb6lqvi" role="33vP2m">
+                          <node concept="3zrR0B" id="2DLgRb6lqAh" role="2ShVmc">
+                            <node concept="3Tqbb2" id="2DLgRb6lqAj" role="3zrR0E">
+                              <ref role="ehGHo" to="dlwq:5G7wwTNBNZh" resolve="DockerMountDirectiveOption" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="2DLgRb6lqMe" role="3cqZAp">
+                      <node concept="37vLTI" id="2DLgRb6lrfi" role="3clFbG">
+                        <node concept="37vLTw" id="2DLgRb6lByq" role="37vLTx">
+                          <ref role="3cqZAo" node="2DLgRb6lteh" resolve="scratchFolder" />
+                        </node>
+                        <node concept="2OqwBi" id="2DLgRb6lqVn" role="37vLTJ">
+                          <node concept="37vLTw" id="2DLgRb6lqMc" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2DLgRb6lqi_" resolve="mountScratch" />
+                          </node>
+                          <node concept="3TrcHB" id="2DLgRb6lr2C" role="2OqNvi">
+                            <ref role="3TsBF5" to="dlwq:5G7wwTNBO38" resolve="containerPath" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="2DLgRb6lBA$" role="3cqZAp">
+                      <node concept="37vLTI" id="2DLgRb6lBSo" role="3clFbG">
+                        <node concept="37vLTw" id="2DLgRb6lBUx" role="37vLTx">
+                          <ref role="3cqZAo" node="2DLgRb6lteh" resolve="scratchFolder" />
+                        </node>
+                        <node concept="2OqwBi" id="2DLgRb6lBEF" role="37vLTJ">
+                          <node concept="37vLTw" id="2DLgRb6lBAy" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2DLgRb6lqi_" resolve="mountScratch" />
+                          </node>
+                          <node concept="3TrcHB" id="2DLgRb6lBJT" role="2OqNvi">
+                            <ref role="3TsBF5" to="dlwq:5G7wwTNBO36" resolve="localPath" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="2DLgRb6lnRJ" role="3cqZAp">
+                      <node concept="2OqwBi" id="2DLgRb6lo8C" role="3clFbG">
+                        <node concept="37vLTw" id="2DLgRb6lnRH" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5NMxi75BjRe" resolve="optionsFromScript" />
+                        </node>
+                        <node concept="TSZUe" id="2DLgRb6loEa" role="2OqNvi">
+                          <node concept="2OqwBi" id="2DLgRb6lFjo" role="25WWJ7">
+                            <node concept="37vLTw" id="2DLgRb6lFgu" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2DLgRb6lqi_" resolve="mountScratch" />
+                            </node>
+                            <node concept="2qgKlT" id="2DLgRb6lFGq" role="2OqNvi">
+                              <ref role="37wK5l" to="aa39:5G7wwTND6AI" resolve="toEngineOption" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="2DLgRb6lBhB" role="3clFbw">
+                    <ref role="3cqZAo" node="2DLgRb6lrX5" resolve="scratch" />
                   </node>
                 </node>
                 <node concept="lc7rE" id="3VGYaIWuOgN" role="3cqZAp">
