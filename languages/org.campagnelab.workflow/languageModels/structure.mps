@@ -393,6 +393,10 @@
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="22284207" />
     <ref role="1TJDcQ" node="6tX5nBTaD$x" resolve="Script" />
+    <node concept="1TJgyi" id="2DLgRb6lLmE" role="1TKVEl">
+      <property role="TrG5h" value="sourceBashrc" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="70dPcAeBC7L" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="text" />

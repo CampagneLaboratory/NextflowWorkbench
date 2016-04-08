@@ -1084,10 +1084,20 @@
     <node concept="3EZMnI" id="5FDPSDkeABD" role="2wV5jI">
       <property role="1ayjP4" value="true" />
       <ref role="1k5W1q" node="4MfZ7_pOGNL" resolve="ScriptBody" />
+      <node concept="3F0ifn" id="2DLgRb6nXj9" role="3EZMnx" />
       <node concept="2iRkQZ" id="5FDPSDkgpHn" role="2iSdaV" />
       <node concept="3F1sOY" id="70dPcAeCQJe" role="3EZMnx">
         <ref role="1NtTu8" to="iowz:70dPcAeBC7L" />
         <ref role="1k5W1q" node="4MfZ7_pOGNL" resolve="ScriptBody" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="2DLgRb6lLU8" role="6VMZX">
+      <node concept="2iRfu4" id="2DLgRb6lLU9" role="2iSdaV" />
+      <node concept="3F0ifn" id="2DLgRb6lLUi" role="3EZMnx">
+        <property role="3F0ifm" value="source .bashrc before executing the script?" />
+      </node>
+      <node concept="3F0A7n" id="2DLgRb6lLUw" role="3EZMnx">
+        <ref role="1NtTu8" to="iowz:2DLgRb6lLmE" resolve="sourceBashrc" />
       </node>
     </node>
   </node>

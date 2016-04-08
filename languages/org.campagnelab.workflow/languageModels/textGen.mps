@@ -148,6 +148,11 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
@@ -2970,7 +2975,33 @@
     <ref role="WuzLi" to="iowz:70dPcAeBye8" resolve="RichScript" />
     <node concept="11bSqf" id="759DxHIOOj4" role="11c4hB">
       <node concept="3clFbS" id="759DxHIOOj5" role="2VODD2">
-        <node concept="3clFbH" id="4QP3kc3hcdt" role="3cqZAp" />
+        <node concept="3cpWs8" id="2DLgRb6mlVq" role="3cqZAp">
+          <node concept="3cpWsn" id="2DLgRb6mlVt" role="3cpWs9">
+            <property role="TrG5h" value="sourceBash" />
+            <node concept="17QB3L" id="2DLgRb6mlVo" role="1tU5fm" />
+            <node concept="3K4zz7" id="2DLgRb6qXBo" role="33vP2m">
+              <node concept="Xl_RD" id="2DLgRb6qXGS" role="3K4GZi">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="2OqwBi" id="2DLgRb6qXBN" role="3K4Cdx">
+                <node concept="117lpO" id="2DLgRb6qXBO" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2DLgRb6qXBP" role="2OqNvi">
+                  <ref role="3TsBF5" to="iowz:2DLgRb6lLmE" resolve="sourceBashrc" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="2DLgRb6qXEF" role="3K4E3e">
+                <property role="Xl_RC" value="source ~/.bashrc" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="6e7w8JGzPl3" role="3cqZAp">
+          <node concept="l9hG8" id="6e7w8JGzPno" role="lcghm">
+            <node concept="37vLTw" id="6e7w8JGzPog" role="lb14g">
+              <ref role="3cqZAo" node="2DLgRb6mlVt" resolve="sourceBash" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="4QP3kc3hpKy" role="3cqZAp">
           <node concept="3clFbS" id="4QP3kc3hpK$" role="3clFbx">
             <node concept="lc7rE" id="4QP3kc3huAh" role="3cqZAp">
@@ -2979,6 +3010,12 @@
                 <property role="lacIc" value="    &quot;&quot;&quot;" />
               </node>
               <node concept="l8MVK" id="4QP3kc3huAk" role="lcghm" />
+              <node concept="l9hG8" id="2DLgRb6mme1" role="lcghm">
+                <node concept="37vLTw" id="2DLgRb6mmgO" role="lb14g">
+                  <ref role="3cqZAo" node="2DLgRb6mlVt" resolve="sourceBash" />
+                </node>
+              </node>
+              <node concept="l8MVK" id="2DLgRb6mmih" role="lcghm" />
               <node concept="l9hG8" id="4QP3kc3huAl" role="lcghm">
                 <node concept="2OqwBi" id="29U0K5dex$S" role="lb14g">
                   <node concept="117lpO" id="4QP3kc3huAn" role="2Oq$k0" />
@@ -2993,7 +3030,6 @@
               </node>
               <node concept="l8MVK" id="4QP3kc3huAr" role="lcghm" />
             </node>
-            <node concept="3clFbH" id="4QP3kc3hpKz" role="3cqZAp" />
           </node>
           <node concept="2OqwBi" id="4QP3kc3hru7" role="3clFbw">
             <node concept="2OqwBi" id="4QP3kc3hr8N" role="2Oq$k0">
@@ -3016,6 +3052,12 @@
                   <property role="lacIc" value="    '''" />
                 </node>
                 <node concept="l8MVK" id="759DxHIOP1s" role="lcghm" />
+                <node concept="l9hG8" id="2DLgRb6mmmM" role="lcghm">
+                  <node concept="37vLTw" id="2DLgRb6mmp_" role="lb14g">
+                    <ref role="3cqZAo" node="2DLgRb6mlVt" resolve="sourceBash" />
+                  </node>
+                </node>
+                <node concept="l8MVK" id="2DLgRb6mmsr" role="lcghm" />
                 <node concept="l9hG8" id="759DxHIOOjC" role="lcghm">
                   <node concept="2OqwBi" id="29U0K5dey9H" role="lb14g">
                     <node concept="117lpO" id="759DxHIOOko" role="2Oq$k0" />
