@@ -3775,7 +3775,21 @@
       </node>
     </node>
     <node concept="13hLZK" id="nhsmU62LqR" role="13h7CW">
-      <node concept="3clFbS" id="nhsmU62LqS" role="2VODD2" />
+      <node concept="3clFbS" id="nhsmU62LqS" role="2VODD2">
+        <node concept="3clFbF" id="1tM9F89UPQW" role="3cqZAp">
+          <node concept="37vLTI" id="1tM9F89UQbc" role="3clFbG">
+            <node concept="3clFbT" id="1tM9F89UQc6" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="1tM9F89UPTo" role="37vLTJ">
+              <node concept="13iPFW" id="1tM9F89UPQV" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1tM9F89UPZi" role="2OqNvi">
+                <ref role="3TsBF5" to="iowz:2DLgRb6lLmE" resolve="loadScriptEnvironment" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6nLXN__2D6R" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -6349,27 +6363,6 @@
       </node>
       <node concept="3Tqbb2" id="59BvSKQpDCb" role="3clF45">
         <ref role="ehGHo" to="iowz:7gAPJCESMFi" resolve="ProcessInputOutput" />
-      </node>
-    </node>
-  </node>
-  <node concept="13h7C7" id="2DLgRb6lLpv">
-    <property role="3GE5qa" value="scripts" />
-    <ref role="13h7C2" to="iowz:70dPcAeBye8" resolve="RichScript" />
-    <node concept="13hLZK" id="2DLgRb6lLpw" role="13h7CW">
-      <node concept="3clFbS" id="2DLgRb6lLpx" role="2VODD2">
-        <node concept="3clFbF" id="2DLgRb6lLpz" role="3cqZAp">
-          <node concept="37vLTI" id="2DLgRb6lLRM" role="3clFbG">
-            <node concept="3clFbT" id="2DLgRb6lLS$" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="2DLgRb6lLsF" role="37vLTJ">
-              <node concept="13iPFW" id="2DLgRb6lLpy" role="2Oq$k0" />
-              <node concept="3TrcHB" id="2DLgRb6lLFF" role="2OqNvi">
-                <ref role="3TsBF5" to="iowz:2DLgRb6lLmE" resolve="sourceBashrc" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>

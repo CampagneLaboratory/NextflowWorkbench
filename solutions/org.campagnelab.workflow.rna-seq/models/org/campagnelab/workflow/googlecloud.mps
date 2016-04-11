@@ -64,6 +64,7 @@
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
+        <property id="3058299782194206122" name="loadScriptEnvironment" index="3G9_ro" />
         <child id="331977639697571264" name="container" index="234boB" />
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
@@ -84,6 +85,7 @@
   </registry>
   <node concept="2ulcR8" id="mLKgp_dTjF">
     <property role="TrG5h" value="CopyFromCloud" />
+    <property role="3G9_ro" value="true" />
     <node concept="2lYRya" id="mLKgp_dTlh" role="2ulM79">
       <property role="TrG5h" value="basename" />
       <node concept="16pbKc" id="mLKgp_dTlw" role="2ybFLk" />
@@ -157,6 +159,7 @@
   </node>
   <node concept="2ulcR8" id="mLKgp_ensb">
     <property role="TrG5h" value="CopyToCloud" />
+    <property role="3G9_ro" value="true" />
     <node concept="2mjA9o" id="mLKgp_enwY" role="2ulM7n">
       <property role="TrG5h" value="sourceFile" />
       <node concept="16pRw0" id="mLKgp_enx8" role="2ybFLk" />
@@ -172,7 +175,7 @@
     <node concept="3Y$Zt1" id="mLKgp_eny_" role="2ulM7a">
       <node concept="19SGf9" id="mLKgp_enyB" role="3Y$PkS">
         <node concept="19SUe$" id="mLKgp_enyC" role="19SJt6">
-          <property role="19SUeA" value="# copy  the user boto configuration inside the container so gsutil can find it:&#10;source ~/.bashrc&#10;cp " />
+          <property role="19SUeA" value="# copy  the user boto configuration inside the container so gsutil can find it:&#10;cp " />
         </node>
         <node concept="3YE7tV" id="6NIv3jCTLVs" role="19SJt6">
           <ref role="3YE7sm" node="mLKgp_enxw" resolve="botoFile" />
