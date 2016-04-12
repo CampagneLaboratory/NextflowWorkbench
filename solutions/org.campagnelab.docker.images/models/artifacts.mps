@@ -156,10 +156,16 @@
         <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
         <reference id="8987412447080991851" name="buildInstructions" index="2E_BxF" />
         <child id="6819868375258175796" name="tagAs" index="Gyxcj" />
+        <child id="430664643838761227" name="containers" index="WF_SX" />
       </concept>
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
         <property id="8987412447080623507" name="options" index="2E$TAj" />
         <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
+      </concept>
+      <concept id="6819868375264134127" name="org.campagnelab.docker.structure.RunningContainer" flags="ng" index="GbKB8">
+        <property id="1464761952898881430" name="running" index="1vm7qE" />
+        <property id="1859325667733444128" name="command" index="3yMj3R" />
+        <reference id="1859325667733099571" name="image" index="3zcJb$" />
       </concept>
       <concept id="6819868375258175840" name="org.campagnelab.docker.structure.TagInfo" flags="ng" index="Gyxd7">
         <property id="6819868375258175846" name="tag" index="Gyxd1" />
@@ -194,6 +200,9 @@
       <concept id="4202970468876401544" name="org.campagnelab.docker.structure.EnvVariableAssignment" flags="ng" index="2Wx$zn">
         <property id="4077712437829700151" name="value" index="2LBJJG" />
         <property id="4077712437829700150" name="name" index="2LBJJH" />
+      </concept>
+      <concept id="430664643838735225" name="org.campagnelab.docker.structure.ContainerRef" flags="ng" index="WEvhf">
+        <reference id="430664643838735312" name="container" index="WEvjA" />
       </concept>
       <concept id="716770353512671076" name="org.campagnelab.docker.structure.ImageRef" flags="ng" index="3blhQM">
         <reference id="716770353512671080" name="image" index="3blhQY" />
@@ -8688,10 +8697,7 @@
   <node concept="VuPG2" id="3kWAjw$5azY">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="ElasticlusterUbuntu" />
-    <property role="2EHzVy" value="content=FROM ubuntu:latest&#10;MAINTAINER Campagne Lab &quot;manuele.simi@campagnelab.org&quot;&#10;#build tools (gcc, git, etc.)&#10;RUN apt-get update &amp;&amp; apt-get -y install build-essential &amp;&amp; apt-get install -y git-core \ &#10;&amp;&amp; apt-get -y install curl &#10;#upgrade/install some python stuff&#10;RUN apt-get -y install python-setuptools &amp;&amp; apt-get -y install python-dev &#10;#install pip installer for python&#10;RUN curl -O http://peak.telecommunity.com/dist/ez_setup.py \ &#10;&amp;&amp; python ez_setup.py \&#10;&amp;&amp; rm ez_setup.py \  &#10;&amp;&amp; easy_install pip \ &#10;&amp;&amp; pip install --upgrade httplib2 \&#10;&amp;&amp; pip install google-api-python-client &#10;#install virtualenv&#10;RUN pip install virtualenv \&#10;&amp;&amp; cd /usr/local/ &amp;&amp; virtualenv elasticluster \&#10;&amp;&amp; . elasticluster/bin/activate  &amp;&amp; pip install ansible &#10;#install elasticluster from googlegenomics at https://github.com/googlegenomics/elasticluster&#10;RUN cd /usr/local/elasticluster \&#10;&amp;&amp; git clone git://github.com/gc3-uzh-ch/elasticluster.git src \&#10;&amp;&amp; cd src &amp;&amp; python setup.py install &#10;RUN cat /dev/zero | ssh-keygen -q -N &quot;&quot;&#10;#install config tools&#10;RUN cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; rm -rf config-tools/.git \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new21&quot;&#10;RUN echo &quot;echo -----------------------------------------&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo WELCOME to the ELASTICLUSTER container!&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo Commands to control your cluster start with cluster-&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo Type cluster- and then press the tab key to discover and invoke them&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo -----------------------------------------&quot; &gt;&gt; $HOME/.bashrc&#10;#clean up&#10;RUN apt-get clean&#10;#set bash as default shell (see https://github.com/docker/docker/issues/7281)&#10;RUN rm /bin/sh &amp;&amp; sudo ln -sf /bin/bash /bin/sh&#10;LABEL org.campagnelab.docker.createdWith=&quot;org.campagnelab.docker&quot;&#10;" />
-    <node concept="3blhQM" id="1LKL2LEudCM" role="3blhQR">
-      <ref role="3blhQY" node="1LKL2LEudCL" resolve="ElasticlusterUbuntu_Image" />
-    </node>
+    <property role="2EHzVy" value="content=FROM ubuntu:latest&#10;MAINTAINER Campagne Lab &quot;manuele.simi@campagnelab.org&quot;&#10;#build tools (gcc, git, etc.)&#10;RUN apt-get update &amp;&amp; apt-get -y install build-essential &amp;&amp; apt-get install -y git-core \ &#10;&amp;&amp; apt-get -y install curl &#10;#upgrade/install some python stuff&#10;RUN apt-get -y install python-setuptools &amp;&amp; apt-get -y install python-dev &#10;#install pip installer for python&#10;RUN curl -O http://peak.telecommunity.com/dist/ez_setup.py \ &#10;&amp;&amp; python ez_setup.py \&#10;&amp;&amp; rm ez_setup.py \  &#10;&amp;&amp; easy_install pip \ &#10;&amp;&amp; pip install --upgrade httplib2 \&#10;&amp;&amp; pip install google-api-python-client &#10;#install virtualenv&#10;RUN pip install virtualenv \&#10;&amp;&amp; cd /usr/local/ &amp;&amp; virtualenv elasticluster \&#10;&amp;&amp; . elasticluster/bin/activate  &amp;&amp; pip install ansible &#10;#install elasticluster from googlegenomics at https://github.com/googlegenomics/elasticluster&#10;RUN cd /usr/local/elasticluster \&#10;&amp;&amp; git clone git://github.com/gc3-uzh-ch/elasticluster.git src \&#10;&amp;&amp; cd src &amp;&amp; python setup.py install &#10;RUN cat /dev/zero | ssh-keygen -q -N &quot;&quot;&#10;#install config tools&#10;RUN cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; rm -rf config-tools/.git \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new21&quot;&#10;#gcloud&#10;RUN curl https://sdk.cloud.google.com | bash&#10;RUN echo &quot;echo -----------------------------------------&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo WELCOME to the ELASTICLUSTER container!&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo Commands to control your cluster start with cluster-&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo Type cluster- and then press the tab key to discover and invoke them&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo -----------------------------------------&quot; &gt;&gt; $HOME/.bashrc&#10;#clean up&#10;RUN apt-get clean&#10;#set bash as default shell (see https://github.com/docker/docker/issues/7281)&#10;RUN rm /bin/sh &amp;&amp; sudo ln -sf /bin/bash /bin/sh&#10;LABEL org.campagnelab.docker.createdWith=&quot;org.campagnelab.docker&quot;&#10;" />
     <node concept="VuO64" id="3kWAjw$5azZ" role="VuOVn">
       <node concept="VtuK3" id="3kWAjw$5a$0" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -8770,6 +8776,16 @@
         </node>
       </node>
     </node>
+    <node concept="2Cort2" id="lDSZH2C5$b" role="VuOVn">
+      <property role="1MaElf" value="gcloud" />
+    </node>
+    <node concept="VugRC" id="lDSZH2C5Dy" role="VuOVn">
+      <node concept="19SGf9" id="lDSZH2C5Gg" role="Vugyn">
+        <node concept="19SUe$" id="lDSZH2C5Gh" role="19SJt6">
+          <property role="19SUeA" value="curl https://sdk.cloud.google.com | bash" />
+        </node>
+      </node>
+    </node>
     <node concept="VugRC" id="6HdklEvkNMU" role="VuOVn">
       <node concept="19SGf9" id="6HdklEvkNOa" role="Vugyn">
         <node concept="19SUe$" id="6HdklEvkNOb" role="19SJt6">
@@ -8797,27 +8813,19 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2E_JVc" id="1LKL2LEudCL">
-    <property role="2E_JEh" value="e9df4a3b09ea" />
-    <property role="TrG5h" value="ElasticlusterUbuntu_Image" />
-    <property role="GSh9r" value="artifacts/elasticluster:latest" />
-    <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticlusterUbuntu" />
-    <node concept="Gyxd7" id="1LKL2LEudCS" role="Gyxcj">
-      <property role="Gyxfx" value="artifacts" />
-      <property role="TrG5h" value="elasticluster" />
-      <property role="Gyxd1" value="latest" />
+    <node concept="3blhQM" id="lDSZH2C5H9" role="3blhQR">
+      <ref role="3blhQY" node="lDSZH2C5H8" resolve="ElasticlusterUbuntu_Image" />
     </node>
   </node>
   <node concept="2E_JVc" id="2DLgRb6jVGq">
     <property role="2E_JEh" value="203cfec1cac6" />
     <property role="TrG5h" value="software_Image" />
-    <property role="GSh9r" value="artifacts/software:latest" />
+    <property role="GSh9r" value="artifacts/software:1.4.0" />
     <ref role="2E_BxF" node="3d0Dghcgitr" resolve="software" />
     <node concept="Gyxd7" id="2DLgRb6jVGu" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="software" />
-      <property role="Gyxd1" value="latest" />
+      <property role="Gyxd1" value="1.4.0" />
     </node>
   </node>
   <node concept="2E_JVc" id="2DLgRb6jVGx">
@@ -8830,6 +8838,29 @@
       <property role="TrG5h" value="software-gcc4.8" />
       <property role="Gyxd1" value="latest" />
     </node>
+  </node>
+  <node concept="2E_JVc" id="lDSZH2C5H8">
+    <property role="2E_JEh" value="077c011674a9" />
+    <property role="TrG5h" value="ElasticlusterUbuntu_Image" />
+    <property role="GSh9r" value="artifacts/elasticluster:1.5.2" />
+    <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticlusterUbuntu" />
+    <node concept="Gyxd7" id="lDSZH2C5Hd" role="Gyxcj">
+      <property role="Gyxfx" value="artifacts" />
+      <property role="TrG5h" value="elasticluster" />
+      <property role="Gyxd1" value="1.5.2" />
+    </node>
+    <node concept="WEvhf" id="lDSZH2C5Hi" role="WF_SX">
+      <ref role="WEvjA" node="lDSZH2C5Hh" resolve="GEBWEIIXCV" />
+    </node>
+  </node>
+  <node concept="GbKB8" id="lDSZH2C5Hh">
+    <property role="VuL0s" value="1.5.2" />
+    <property role="TrG5h" value="GEBWEIIXCV" />
+    <property role="VuL0v" value="artifacts" />
+    <property role="GbyUj" value="elasticluster" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="" />
+    <ref role="3zcJb$" node="lDSZH2C5H8" resolve="ElasticlusterUbuntu_Image" />
   </node>
 </model>
 
