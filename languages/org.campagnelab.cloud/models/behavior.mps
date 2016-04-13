@@ -34,6 +34,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="5lbf" ref="r:65d366f2-ae3b-4b81-85e6-342aa070f572(org.campagnelab.cloud.structure)" implicit="true" />
     <import index="3229" ref="r:a82c5084-a1df-4f27-8e96-c1c3c407b051(org.campagnelab.cloud.configuration.behavior)" implicit="true" />
+    <import index="45iu" ref="r:e59beccc-d8f0-42c7-8989-c96c06e46e91(org.campagnelab.cloud.configuration.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -56,11 +57,15 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
         <child id="1153952416686" name="body" index="2GV8ay" />
@@ -101,6 +106,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
@@ -132,6 +138,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
@@ -141,6 +148,9 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
@@ -197,6 +207,12 @@
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
         <property id="5858074156537516431" name="text" index="x79VB" />
@@ -243,15 +259,25 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -281,6 +307,9 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
+        <child id="1204796294226" name="closure" index="23t8la" />
+      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
@@ -298,8 +327,11 @@
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
+      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+      <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
   </registry>
   <node concept="13h7C7" id="5wsmBEGRnsl">
@@ -1105,6 +1137,160 @@
             </node>
           </node>
         </node>
+        <node concept="SfApY" id="lDSZH2EjM8" role="3cqZAp">
+          <node concept="3clFbS" id="lDSZH2EjMa" role="SfCbr">
+            <node concept="3cpWs8" id="lDSZH2EiLT" role="3cqZAp">
+              <node concept="3cpWsn" id="lDSZH2EiLU" role="3cpWs9">
+                <property role="TrG5h" value="keyfile" />
+                <node concept="3uibUv" id="lDSZH2EiLV" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="2ShNRf" id="lDSZH2EiLW" role="33vP2m">
+                  <node concept="1pGfFk" id="lDSZH2EiLX" role="2ShVmc">
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
+                    <node concept="2OqwBi" id="lDSZH2Evjc" role="37wK5m">
+                      <node concept="2OqwBi" id="lDSZH2EsMv" role="2Oq$k0">
+                        <node concept="2OqwBi" id="lDSZH2Enha" role="2Oq$k0">
+                          <node concept="2OqwBi" id="lDSZH2EiLY" role="2Oq$k0">
+                            <node concept="2OqwBi" id="lDSZH2EiLZ" role="2Oq$k0">
+                              <node concept="13iPFW" id="lDSZH2EiM0" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="lDSZH2EiM1" role="2OqNvi">
+                                <ref role="3Tt5mk" to="5lbf:7QDG7s96n86" />
+                              </node>
+                            </node>
+                            <node concept="3Tsc0h" id="lDSZH2EmA6" role="2OqNvi">
+                              <ref role="3TtcxE" to="45iu:3pj0Oa6G7SH" />
+                            </node>
+                          </node>
+                          <node concept="3zZkjj" id="6a8xgfVk_LC" role="2OqNvi">
+                            <node concept="1bVj0M" id="6a8xgfVk_LE" role="23t8la">
+                              <node concept="3clFbS" id="6a8xgfVk_LF" role="1bW5cS">
+                                <node concept="3clFbF" id="6a8xgfVkAAj" role="3cqZAp">
+                                  <node concept="2OqwBi" id="2rIRh_WRkKO" role="3clFbG">
+                                    <node concept="2OqwBi" id="2rIRh_WRkvy" role="2Oq$k0">
+                                      <node concept="37vLTw" id="6a8xgfVkB9u" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6a8xgfVk_LG" resolve="it" />
+                                      </node>
+                                      <node concept="2yIwOk" id="2rIRh_WRkCv" role="2OqNvi" />
+                                    </node>
+                                    <node concept="3O6GUB" id="2rIRh_WRkRC" role="2OqNvi">
+                                      <node concept="chp4Y" id="6a8xgfVkBe2" role="3QVz_e">
+                                        <ref role="cht4Q" to="45iu:5Pg96r0R1Gd" resolve="SSHFolder" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="Rh6nW" id="6a8xgfVk_LG" role="1bW2Oz">
+                                <property role="TrG5h" value="it" />
+                                <node concept="2jxLKc" id="6a8xgfVk_LH" role="1tU5fm" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="lDSZH2Ev35" role="2OqNvi" />
+                      </node>
+                      <node concept="2qgKlT" id="lDSZH2EvDE" role="2OqNvi">
+                        <ref role="37wK5l" to="3229:6_LFt8ZwlHB" resolve="getValue" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="lDSZH2EiM3" role="37wK5m">
+                      <property role="Xl_RC" value="id_rsa.pub" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="lDSZH2EiVw" role="3cqZAp">
+              <node concept="3cpWsn" id="lDSZH2EiVx" role="3cpWs9">
+                <property role="TrG5h" value="path" />
+                <node concept="3uibUv" id="lDSZH2EiVy" role="1tU5fm">
+                  <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+                </node>
+                <node concept="2YIFZM" id="lDSZH2EiVz" role="33vP2m">
+                  <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...):java.nio.file.Path" resolve="get" />
+                  <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                  <node concept="2OqwBi" id="lDSZH2EiV$" role="37wK5m">
+                    <node concept="37vLTw" id="lDSZH2EiV_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="lDSZH2EiLU" resolve="keyfile" />
+                    </node>
+                    <node concept="liA8E" id="lDSZH2EiVA" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="lDSZH2EjbZ" role="3cqZAp">
+              <node concept="3cpWsn" id="lDSZH2Ejc0" role="3cpWs9">
+                <property role="TrG5h" value="pubKey" />
+                <node concept="3uibUv" id="lDSZH2Ejc1" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="17QB3L" id="lDSZH2Ejc2" role="11_B2D" />
+                </node>
+                <node concept="3K4zz7" id="lDSZH2Ejc3" role="33vP2m">
+                  <node concept="2ShNRf" id="lDSZH2Ejc4" role="3K4GZi">
+                    <node concept="1pGfFk" id="lDSZH2Ejc5" role="2ShVmc">
+                      <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                      <node concept="17QB3L" id="lDSZH2Ejc6" role="1pMfVU" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="lDSZH2Ejc7" role="3K4Cdx">
+                    <node concept="37vLTw" id="lDSZH2Ejc8" role="2Oq$k0">
+                      <ref role="3cqZAo" node="lDSZH2EiLU" resolve="keyfile" />
+                    </node>
+                    <node concept="liA8E" id="lDSZH2Ejc9" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="lDSZH2Ejca" role="3K4E3e">
+                    <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                    <ref role="37wK5l" to="eoo2:~Files.readAllLines(java.nio.file.Path,java.nio.charset.Charset):java.util.List" resolve="readAllLines" />
+                    <node concept="37vLTw" id="lDSZH2Ejcb" role="37wK5m">
+                      <ref role="3cqZAo" node="lDSZH2EiVx" resolve="path" />
+                    </node>
+                    <node concept="2YIFZM" id="lDSZH2Ejcc" role="37wK5m">
+                      <ref role="37wK5l" to="7x5y:~Charset.forName(java.lang.String):java.nio.charset.Charset" resolve="forName" />
+                      <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
+                      <node concept="Xl_RD" id="lDSZH2Ejcd" role="37wK5m">
+                        <property role="Xl_RC" value="UTF-8" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="lDSZH2EllQ" role="3cqZAp">
+              <node concept="2OqwBi" id="lDSZH2Elty" role="3clFbG">
+                <node concept="13iPFW" id="lDSZH2EllO" role="2Oq$k0" />
+                <node concept="2qgKlT" id="lDSZH2ElAR" role="2OqNvi">
+                  <ref role="37wK5l" node="lDSZH2Edon" resolve="addKeys" />
+                  <node concept="2OqwBi" id="lDSZH2ElRj" role="37wK5m">
+                    <node concept="37vLTw" id="lDSZH2ElG6" role="2Oq$k0">
+                      <ref role="3cqZAo" node="lDSZH2Ejc0" resolve="pubKey" />
+                    </node>
+                    <node concept="liA8E" id="lDSZH2Emd$" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                      <node concept="3cmrfG" id="lDSZH2Emiu" role="37wK5m">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="lDSZH2EjMb" role="TEbGg">
+            <node concept="3cpWsn" id="lDSZH2EjMd" role="TDEfY">
+              <property role="TrG5h" value="ioe" />
+              <node concept="3uibUv" id="lDSZH2EktU" role="1tU5fm">
+                <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="lDSZH2EjMh" role="TDEfX" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="lDSZH2EiHx" role="3cqZAp" />
       </node>
       <node concept="3cqZAl" id="5Pg96r0QF8$" role="3clF45" />
     </node>
@@ -1343,300 +1529,8 @@
       </node>
       <node concept="3Tm1VV" id="109XeHbQHL4" role="1B3o_S" />
       <node concept="3clFbS" id="109XeHbQHL5" role="3clF47">
-        <node concept="3SKdUt" id="lDSZH2DDKu" role="3cqZAp">
-          <node concept="3SKdUq" id="lDSZH2DDKw" role="3SKWNk">
-            <property role="3SKdUp" value="keys in this file are directly appended to authorized_keys on the frontend machine" />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="lDSZH2Dq_5" role="3cqZAp">
-          <node concept="3cpWsn" id="lDSZH2Dq_6" role="3cpWs9">
-            <property role="TrG5h" value="keyfile" />
-            <node concept="3uibUv" id="lDSZH2Dq_7" role="1tU5fm">
-              <ref role="3uigEE" to="guwi:~File" resolve="File" />
-            </node>
-            <node concept="2ShNRf" id="lDSZH2Dq_8" role="33vP2m">
-              <node concept="1pGfFk" id="lDSZH2Dq_9" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
-                <node concept="2OqwBi" id="lDSZH2Dq_a" role="37wK5m">
-                  <node concept="2OqwBi" id="lDSZH2Dq_b" role="2Oq$k0">
-                    <node concept="13iPFW" id="lDSZH2Dq_c" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="lDSZH2Dq_d" role="2OqNvi">
-                      <ref role="3Tt5mk" to="5lbf:7QDG7s96n86" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="lDSZH2Dq_e" role="2OqNvi">
-                    <ref role="37wK5l" to="3229:3pj0Oa6GMmD" resolve="getLocalConfigurationFolder" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="lDSZH2Dq_f" role="37wK5m">
-                  <property role="Xl_RC" value="ssh-cluster-keys" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="lDSZH2DvU7" role="3cqZAp">
-          <node concept="3cpWsn" id="lDSZH2DvU8" role="3cpWs9">
-            <property role="TrG5h" value="path" />
-            <node concept="3uibUv" id="lDSZH2DvU9" role="1tU5fm">
-              <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
-            </node>
-            <node concept="2YIFZM" id="lDSZH2DvUa" role="33vP2m">
-              <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...):java.nio.file.Path" resolve="get" />
-              <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-              <node concept="2OqwBi" id="lDSZH2DvUb" role="37wK5m">
-                <node concept="37vLTw" id="lDSZH2DwOf" role="2Oq$k0">
-                  <ref role="3cqZAo" node="lDSZH2Dq_6" resolve="keyfile" />
-                </node>
-                <node concept="liA8E" id="lDSZH2DvUd" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="lDSZH2DEeg" role="3cqZAp">
-          <node concept="3SKdUq" id="lDSZH2DEei" role="3SKWNk">
-            <property role="3SKdUp" value="keys in this file are stored in the metadata store with gcloud " />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3C40c0SSL43" role="3cqZAp">
-          <node concept="3cpWsn" id="3C40c0SSL44" role="3cpWs9">
-            <property role="TrG5h" value="consoleKeyfile" />
-            <node concept="3uibUv" id="3C40c0SSL45" role="1tU5fm">
-              <ref role="3uigEE" to="guwi:~File" resolve="File" />
-            </node>
-            <node concept="2ShNRf" id="3C40c0SSL6c" role="33vP2m">
-              <node concept="1pGfFk" id="3C40c0SSRfC" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
-                <node concept="2OqwBi" id="lDSZH2D8i4" role="37wK5m">
-                  <node concept="2OqwBi" id="lDSZH2D7Av" role="2Oq$k0">
-                    <node concept="13iPFW" id="lDSZH2D7pl" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="lDSZH2D7Y8" role="2OqNvi">
-                      <ref role="3Tt5mk" to="5lbf:7QDG7s96n86" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="lDSZH2D8Aj" role="2OqNvi">
-                    <ref role="37wK5l" to="3229:3pj0Oa6GMmD" resolve="getLocalConfigurationFolder" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="3C40c0SSRi0" role="37wK5m">
-                  <property role="Xl_RC" value="console-cluster-keys" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3C40c0SSRnC" role="3cqZAp">
-          <node concept="3cpWsn" id="3C40c0SSRnF" role="3cpWs9">
-            <property role="TrG5h" value="consolePath" />
-            <node concept="3uibUv" id="3C40c0SSRnG" role="1tU5fm">
-              <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
-            </node>
-            <node concept="2YIFZM" id="3C40c0SSRnH" role="33vP2m">
-              <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-              <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...):java.nio.file.Path" resolve="get" />
-              <node concept="2OqwBi" id="3C40c0SSRnI" role="37wK5m">
-                <node concept="37vLTw" id="3C40c0SSRqY" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3C40c0SSL44" resolve="consoleKeyfile" />
-                </node>
-                <node concept="liA8E" id="3C40c0SSRnK" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="SfApY" id="3C40c0ST2jw" role="3cqZAp">
-          <node concept="3clFbS" id="3C40c0ST2jy" role="SfCbr">
-            <node concept="3cpWs8" id="lDSZH2DrWD" role="3cqZAp">
-              <node concept="3cpWsn" id="lDSZH2DrWE" role="3cpWs9">
-                <property role="TrG5h" value="standardKeys" />
-                <node concept="3uibUv" id="lDSZH2DrWF" role="1tU5fm">
-                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                  <node concept="17QB3L" id="lDSZH2DrWG" role="11_B2D" />
-                </node>
-                <node concept="3K4zz7" id="lDSZH2DrWH" role="33vP2m">
-                  <node concept="2ShNRf" id="lDSZH2DrWI" role="3K4GZi">
-                    <node concept="1pGfFk" id="lDSZH2DrWJ" role="2ShVmc">
-                      <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
-                      <node concept="17QB3L" id="lDSZH2DrWK" role="1pMfVU" />
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="lDSZH2DrWL" role="3K4Cdx">
-                    <node concept="37vLTw" id="lDSZH2Du0V" role="2Oq$k0">
-                      <ref role="3cqZAo" node="lDSZH2Dq_6" resolve="keyfile" />
-                    </node>
-                    <node concept="liA8E" id="lDSZH2DrWN" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
-                    </node>
-                  </node>
-                  <node concept="2YIFZM" id="lDSZH2DrWO" role="3K4E3e">
-                    <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-                    <ref role="37wK5l" to="eoo2:~Files.readAllLines(java.nio.file.Path,java.nio.charset.Charset):java.util.List" resolve="readAllLines" />
-                    <node concept="37vLTw" id="lDSZH2DwRc" role="37wK5m">
-                      <ref role="3cqZAo" node="lDSZH2DvU8" resolve="path" />
-                    </node>
-                    <node concept="2YIFZM" id="lDSZH2DrWQ" role="37wK5m">
-                      <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
-                      <ref role="37wK5l" to="7x5y:~Charset.forName(java.lang.String):java.nio.charset.Charset" resolve="forName" />
-                      <node concept="Xl_RD" id="lDSZH2DrWR" role="37wK5m">
-                        <property role="Xl_RC" value="UTF-8" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="lDSZH2CYuy" role="3cqZAp">
-              <node concept="3cpWsn" id="lDSZH2CYuz" role="3cpWs9">
-                <property role="TrG5h" value="consoleKeys" />
-                <node concept="3uibUv" id="lDSZH2CYu$" role="1tU5fm">
-                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                  <node concept="17QB3L" id="lDSZH2CYu_" role="11_B2D" />
-                </node>
-                <node concept="3K4zz7" id="lDSZH2CYOs" role="33vP2m">
-                  <node concept="2ShNRf" id="lDSZH2D2GK" role="3K4GZi">
-                    <node concept="1pGfFk" id="lDSZH2D3z8" role="2ShVmc">
-                      <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
-                      <node concept="17QB3L" id="lDSZH2D3HA" role="1pMfVU" />
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="lDSZH2CYTe" role="3K4Cdx">
-                    <node concept="37vLTw" id="lDSZH2CYQL" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3C40c0SSL44" resolve="consoleKeyfile" />
-                    </node>
-                    <node concept="liA8E" id="lDSZH2CZ5m" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
-                    </node>
-                  </node>
-                  <node concept="2YIFZM" id="lDSZH2Cwbc" role="3K4E3e">
-                    <ref role="37wK5l" to="eoo2:~Files.readAllLines(java.nio.file.Path,java.nio.charset.Charset):java.util.List" resolve="readAllLines" />
-                    <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-                    <node concept="37vLTw" id="lDSZH2CwcE" role="37wK5m">
-                      <ref role="3cqZAo" node="3C40c0SSRnF" resolve="consolePath" />
-                    </node>
-                    <node concept="2YIFZM" id="lDSZH2CwgG" role="37wK5m">
-                      <ref role="37wK5l" to="7x5y:~Charset.forName(java.lang.String):java.nio.charset.Charset" resolve="forName" />
-                      <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
-                      <node concept="Xl_RD" id="lDSZH2CwgH" role="37wK5m">
-                        <property role="Xl_RC" value="UTF-8" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2Gpval" id="lDSZH2C$We" role="3cqZAp">
-              <node concept="2GrKxI" id="lDSZH2C$Wg" role="2Gsz3X">
-                <property role="TrG5h" value="key" />
-              </node>
-              <node concept="3clFbS" id="lDSZH2C$Wi" role="2LFqv$">
-                <node concept="3SKdUt" id="lDSZH2DDfX" role="3cqZAp">
-                  <node concept="3SKdUq" id="lDSZH2DDfZ" role="3SKWNk">
-                    <property role="3SKdUp" value="add standard ssh key" />
-                  </node>
-                </node>
-                <node concept="3clFbF" id="lDSZH2Dyyg" role="3cqZAp">
-                  <node concept="2OqwBi" id="lDSZH2DyJY" role="3clFbG">
-                    <node concept="37vLTw" id="lDSZH2Dyye" role="2Oq$k0">
-                      <ref role="3cqZAo" node="lDSZH2DrWE" resolve="standardKeys" />
-                    </node>
-                    <node concept="liA8E" id="lDSZH2DCOt" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
-                      <node concept="2GrUjf" id="lDSZH2DCW5" role="37wK5m">
-                        <ref role="2Gs0qQ" node="lDSZH2C$Wg" resolve="key" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3SKdUt" id="lDSZH2CLJk" role="3cqZAp">
-                  <node concept="3SKdUq" id="lDSZH2CLJm" role="3SKWNk">
-                    <property role="3SKdUp" value="format the new keys, see https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys#sshkeyformat" />
-                  </node>
-                </node>
-                <node concept="3clFbF" id="lDSZH2C_lh" role="3cqZAp">
-                  <node concept="2OqwBi" id="lDSZH2C_sI" role="3clFbG">
-                    <node concept="37vLTw" id="lDSZH2CZBS" role="2Oq$k0">
-                      <ref role="3cqZAo" node="lDSZH2CYuz" resolve="consoleKeys" />
-                    </node>
-                    <node concept="liA8E" id="lDSZH2CA4$" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
-                      <node concept="3cpWs3" id="lDSZH2CyDr" role="37wK5m">
-                        <node concept="2GrUjf" id="lDSZH2CAuM" role="3uHU7w">
-                          <ref role="2Gs0qQ" node="lDSZH2C$Wg" resolve="key" />
-                        </node>
-                        <node concept="3cpWs3" id="lDSZH2CK40" role="3uHU7B">
-                          <node concept="2OqwBi" id="lDSZH2CKGt" role="3uHU7B">
-                            <node concept="2OqwBi" id="lDSZH2CKbU" role="2Oq$k0">
-                              <node concept="13iPFW" id="lDSZH2CK7q" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="lDSZH2CKyO" role="2OqNvi">
-                                <ref role="3Tt5mk" to="5lbf:7QDG7s96n86" />
-                              </node>
-                            </node>
-                            <node concept="2qgKlT" id="lDSZH2CKUX" role="2OqNvi">
-                              <ref role="37wK5l" to="3229:lDSZH2CD$e" resolve="defaultUser" />
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="lDSZH2Cy1Q" role="3uHU7w">
-                            <property role="Xl_RC" value=":" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="lDSZH2Cx03" role="2GsD0m">
-                <node concept="37vLTw" id="lDSZH2CwTv" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3C40c0SSHjH" resolve="keys" />
-                </node>
-                <node concept="liA8E" id="lDSZH2Cxhz" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
-                  <node concept="Xl_RD" id="lDSZH2Cxj1" role="37wK5m">
-                    <property role="Xl_RC" value="\\r?\\n" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="3C40c0SSRyh" role="3cqZAp">
-              <node concept="2YIFZM" id="3C40c0SSRyi" role="3clFbG">
-                <ref role="37wK5l" to="eoo2:~Files.write(java.nio.file.Path,java.lang.Iterable,java.nio.charset.Charset,java.nio.file.OpenOption...):java.nio.file.Path" resolve="write" />
-                <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-                <node concept="37vLTw" id="lDSZH2DFGQ" role="37wK5m">
-                  <ref role="3cqZAo" node="lDSZH2DvU8" resolve="path" />
-                </node>
-                <node concept="37vLTw" id="lDSZH2DFRh" role="37wK5m">
-                  <ref role="3cqZAo" node="lDSZH2DrWE" resolve="standardKeys" />
-                </node>
-                <node concept="2YIFZM" id="3C40c0SSRyl" role="37wK5m">
-                  <ref role="37wK5l" to="7x5y:~Charset.forName(java.lang.String):java.nio.charset.Charset" resolve="forName" />
-                  <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
-                  <node concept="Xl_RD" id="3C40c0SSRym" role="37wK5m">
-                    <property role="Xl_RC" value="UTF-8" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="lDSZH2DERG" role="3cqZAp">
-              <node concept="2YIFZM" id="lDSZH2DERH" role="3clFbG">
-                <ref role="37wK5l" to="eoo2:~Files.write(java.nio.file.Path,java.lang.Iterable,java.nio.charset.Charset,java.nio.file.OpenOption...):java.nio.file.Path" resolve="write" />
-                <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-                <node concept="37vLTw" id="lDSZH2DERI" role="37wK5m">
-                  <ref role="3cqZAo" node="3C40c0SSRnF" resolve="consolePath" />
-                </node>
-                <node concept="37vLTw" id="lDSZH2DERJ" role="37wK5m">
-                  <ref role="3cqZAo" node="lDSZH2CYuz" resolve="consoleKeys" />
-                </node>
-                <node concept="2YIFZM" id="lDSZH2DERK" role="37wK5m">
-                  <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
-                  <ref role="37wK5l" to="7x5y:~Charset.forName(java.lang.String):java.nio.charset.Charset" resolve="forName" />
-                  <node concept="Xl_RD" id="lDSZH2DERL" role="37wK5m">
-                    <property role="Xl_RC" value="UTF-8" />
-                  </node>
-                </node>
-              </node>
-            </node>
+        <node concept="3clFbJ" id="lDSZH2EhcV" role="3cqZAp">
+          <node concept="3clFbS" id="lDSZH2EhcX" role="3clFbx">
             <node concept="3clFbF" id="109XeHbQHL6" role="3cqZAp">
               <node concept="2OqwBi" id="109XeHbQHL7" role="3clFbG">
                 <node concept="13iPFW" id="109XeHbQHL8" role="2Oq$k0" />
@@ -1663,20 +1557,23 @@
               </node>
             </node>
           </node>
-          <node concept="TDmWw" id="3C40c0ST2jz" role="TEbGg">
-            <node concept="3cpWsn" id="3C40c0ST2j_" role="TDEfY">
-              <property role="TrG5h" value="ioe" />
-              <node concept="3uibUv" id="3C40c0ST2K4" role="1tU5fm">
-                <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+          <node concept="2OqwBi" id="lDSZH2Ehl7" role="3clFbw">
+            <node concept="13iPFW" id="lDSZH2Ehin" role="2Oq$k0" />
+            <node concept="2qgKlT" id="lDSZH2Ehxv" role="2OqNvi">
+              <ref role="37wK5l" node="lDSZH2Edon" resolve="addKeys" />
+              <node concept="37vLTw" id="lDSZH2EhAX" role="37wK5m">
+                <ref role="3cqZAo" node="3C40c0SSHjH" resolve="keys" />
               </node>
             </node>
-            <node concept="3clFbS" id="3C40c0ST2jD" role="TDEfX">
-              <node concept="YS8fn" id="3C40c0ST2VT" role="3cqZAp">
-                <node concept="2ShNRf" id="3C40c0ST2W1" role="YScLw">
-                  <node concept="1pGfFk" id="3C40c0ST6yp" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
-                    <node concept="37vLTw" id="3C40c0ST6yR" role="37wK5m">
-                      <ref role="3cqZAo" node="3C40c0ST2j_" resolve="ioe" />
+          </node>
+          <node concept="9aQIb" id="lDSZH2EhVD" role="9aQIa">
+            <node concept="3clFbS" id="lDSZH2EhVE" role="9aQI4">
+              <node concept="YS8fn" id="lDSZH2Ei4_" role="3cqZAp">
+                <node concept="2ShNRf" id="lDSZH2Ei4P" role="YScLw">
+                  <node concept="1pGfFk" id="lDSZH2Eivx" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                    <node concept="Xl_RD" id="lDSZH2Eiw2" role="37wK5m">
+                      <property role="Xl_RC" value="Unable to format the keys before uploading them on the cluster." />
                     </node>
                   </node>
                 </node>
@@ -1686,6 +1583,333 @@
         </node>
       </node>
       <node concept="3cqZAl" id="109XeHbQHLh" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="lDSZH2Edon" role="13h7CS">
+      <property role="TrG5h" value="addKeys" />
+      <node concept="3Tm1VV" id="lDSZH2Edoo" role="1B3o_S" />
+      <node concept="3clFbS" id="lDSZH2Edop" role="3clF47">
+        <node concept="3SKdUt" id="lDSZH2EeC_" role="3cqZAp">
+          <node concept="3SKdUq" id="lDSZH2EeCA" role="3SKWNk">
+            <property role="3SKdUp" value="keys in this file are directly appended to authorized_keys on the frontend machine" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="lDSZH2EeCB" role="3cqZAp">
+          <node concept="3cpWsn" id="lDSZH2EeCC" role="3cpWs9">
+            <property role="TrG5h" value="keyfile" />
+            <node concept="3uibUv" id="lDSZH2EeCD" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="lDSZH2EeCE" role="33vP2m">
+              <node concept="1pGfFk" id="lDSZH2EeCF" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
+                <node concept="2OqwBi" id="lDSZH2EeCG" role="37wK5m">
+                  <node concept="2OqwBi" id="lDSZH2EeCH" role="2Oq$k0">
+                    <node concept="13iPFW" id="lDSZH2EeCI" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="lDSZH2EeCJ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5lbf:7QDG7s96n86" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="lDSZH2EeCK" role="2OqNvi">
+                    <ref role="37wK5l" to="3229:3pj0Oa6GMmD" resolve="getLocalConfigurationFolder" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="lDSZH2EeCL" role="37wK5m">
+                  <property role="Xl_RC" value="ssh-cluster-keys" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="lDSZH2EeCM" role="3cqZAp">
+          <node concept="3cpWsn" id="lDSZH2EeCN" role="3cpWs9">
+            <property role="TrG5h" value="path" />
+            <node concept="3uibUv" id="lDSZH2EeCO" role="1tU5fm">
+              <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+            </node>
+            <node concept="2YIFZM" id="lDSZH2EeCP" role="33vP2m">
+              <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+              <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...):java.nio.file.Path" resolve="get" />
+              <node concept="2OqwBi" id="lDSZH2EeCQ" role="37wK5m">
+                <node concept="37vLTw" id="lDSZH2EeCR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="lDSZH2EeCC" resolve="keyfile" />
+                </node>
+                <node concept="liA8E" id="lDSZH2EeCS" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="lDSZH2EeCT" role="3cqZAp">
+          <node concept="3SKdUq" id="lDSZH2EeCU" role="3SKWNk">
+            <property role="3SKdUp" value="keys in this file are stored in the metadata store with gcloud " />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="lDSZH2EeCV" role="3cqZAp">
+          <node concept="3cpWsn" id="lDSZH2EeCW" role="3cpWs9">
+            <property role="TrG5h" value="consoleKeyfile" />
+            <node concept="3uibUv" id="lDSZH2EeCX" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="lDSZH2EeCY" role="33vP2m">
+              <node concept="1pGfFk" id="lDSZH2EeCZ" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
+                <node concept="2OqwBi" id="lDSZH2EeD0" role="37wK5m">
+                  <node concept="2OqwBi" id="lDSZH2EeD1" role="2Oq$k0">
+                    <node concept="13iPFW" id="lDSZH2EeD2" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="lDSZH2EeD3" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5lbf:7QDG7s96n86" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="lDSZH2EeD4" role="2OqNvi">
+                    <ref role="37wK5l" to="3229:3pj0Oa6GMmD" resolve="getLocalConfigurationFolder" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="lDSZH2EeD5" role="37wK5m">
+                  <property role="Xl_RC" value="console-cluster-keys" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="lDSZH2EeD6" role="3cqZAp">
+          <node concept="3cpWsn" id="lDSZH2EeD7" role="3cpWs9">
+            <property role="TrG5h" value="consolePath" />
+            <node concept="3uibUv" id="lDSZH2EeD8" role="1tU5fm">
+              <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+            </node>
+            <node concept="2YIFZM" id="lDSZH2EeD9" role="33vP2m">
+              <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+              <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...):java.nio.file.Path" resolve="get" />
+              <node concept="2OqwBi" id="lDSZH2EeDa" role="37wK5m">
+                <node concept="37vLTw" id="lDSZH2EeDb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="lDSZH2EeCW" resolve="consoleKeyfile" />
+                </node>
+                <node concept="liA8E" id="lDSZH2EeDc" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="SfApY" id="lDSZH2EeDd" role="3cqZAp">
+          <node concept="3clFbS" id="lDSZH2EeDe" role="SfCbr">
+            <node concept="3cpWs8" id="lDSZH2EeDf" role="3cqZAp">
+              <node concept="3cpWsn" id="lDSZH2EeDg" role="3cpWs9">
+                <property role="TrG5h" value="standardKeys" />
+                <node concept="3uibUv" id="lDSZH2EeDh" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="17QB3L" id="lDSZH2EeDi" role="11_B2D" />
+                </node>
+                <node concept="3K4zz7" id="lDSZH2EeDj" role="33vP2m">
+                  <node concept="2ShNRf" id="lDSZH2EeDk" role="3K4GZi">
+                    <node concept="1pGfFk" id="lDSZH2EeDl" role="2ShVmc">
+                      <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                      <node concept="17QB3L" id="lDSZH2EeDm" role="1pMfVU" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="lDSZH2EeDn" role="3K4Cdx">
+                    <node concept="37vLTw" id="lDSZH2EeDo" role="2Oq$k0">
+                      <ref role="3cqZAo" node="lDSZH2EeCC" resolve="keyfile" />
+                    </node>
+                    <node concept="liA8E" id="lDSZH2EeDp" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="lDSZH2EeDq" role="3K4E3e">
+                    <ref role="37wK5l" to="eoo2:~Files.readAllLines(java.nio.file.Path,java.nio.charset.Charset):java.util.List" resolve="readAllLines" />
+                    <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                    <node concept="37vLTw" id="lDSZH2EeDr" role="37wK5m">
+                      <ref role="3cqZAo" node="lDSZH2EeCN" resolve="path" />
+                    </node>
+                    <node concept="2YIFZM" id="lDSZH2EeDs" role="37wK5m">
+                      <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
+                      <ref role="37wK5l" to="7x5y:~Charset.forName(java.lang.String):java.nio.charset.Charset" resolve="forName" />
+                      <node concept="Xl_RD" id="lDSZH2EeDt" role="37wK5m">
+                        <property role="Xl_RC" value="UTF-8" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="lDSZH2EeDu" role="3cqZAp">
+              <node concept="3cpWsn" id="lDSZH2EeDv" role="3cpWs9">
+                <property role="TrG5h" value="consoleKeys" />
+                <node concept="3uibUv" id="lDSZH2EeDw" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="17QB3L" id="lDSZH2EeDx" role="11_B2D" />
+                </node>
+                <node concept="3K4zz7" id="lDSZH2EeDy" role="33vP2m">
+                  <node concept="2ShNRf" id="lDSZH2EeDz" role="3K4GZi">
+                    <node concept="1pGfFk" id="lDSZH2EeD$" role="2ShVmc">
+                      <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                      <node concept="17QB3L" id="lDSZH2EeD_" role="1pMfVU" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="lDSZH2EeDA" role="3K4Cdx">
+                    <node concept="37vLTw" id="lDSZH2EeDB" role="2Oq$k0">
+                      <ref role="3cqZAo" node="lDSZH2EeCW" resolve="consoleKeyfile" />
+                    </node>
+                    <node concept="liA8E" id="lDSZH2EeDC" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="lDSZH2EeDD" role="3K4E3e">
+                    <ref role="37wK5l" to="eoo2:~Files.readAllLines(java.nio.file.Path,java.nio.charset.Charset):java.util.List" resolve="readAllLines" />
+                    <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                    <node concept="37vLTw" id="lDSZH2EeDE" role="37wK5m">
+                      <ref role="3cqZAo" node="lDSZH2EeD7" resolve="consolePath" />
+                    </node>
+                    <node concept="2YIFZM" id="lDSZH2EeDF" role="37wK5m">
+                      <ref role="37wK5l" to="7x5y:~Charset.forName(java.lang.String):java.nio.charset.Charset" resolve="forName" />
+                      <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
+                      <node concept="Xl_RD" id="lDSZH2EeDG" role="37wK5m">
+                        <property role="Xl_RC" value="UTF-8" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2Gpval" id="lDSZH2EeDH" role="3cqZAp">
+              <node concept="2GrKxI" id="lDSZH2EeDI" role="2Gsz3X">
+                <property role="TrG5h" value="key" />
+              </node>
+              <node concept="3clFbS" id="lDSZH2EeDJ" role="2LFqv$">
+                <node concept="3SKdUt" id="lDSZH2EeDK" role="3cqZAp">
+                  <node concept="3SKdUq" id="lDSZH2EeDL" role="3SKWNk">
+                    <property role="3SKdUp" value="add standard ssh key" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="lDSZH2EeDM" role="3cqZAp">
+                  <node concept="2OqwBi" id="lDSZH2EeDN" role="3clFbG">
+                    <node concept="37vLTw" id="lDSZH2EeDO" role="2Oq$k0">
+                      <ref role="3cqZAo" node="lDSZH2EeDg" resolve="standardKeys" />
+                    </node>
+                    <node concept="liA8E" id="lDSZH2EeDP" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                      <node concept="2GrUjf" id="lDSZH2EeDQ" role="37wK5m">
+                        <ref role="2Gs0qQ" node="lDSZH2EeDI" resolve="key" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="lDSZH2EeDR" role="3cqZAp">
+                  <node concept="3SKdUq" id="lDSZH2EeDS" role="3SKWNk">
+                    <property role="3SKdUp" value="format the new keys, see https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys#sshkeyformat" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="lDSZH2EeDT" role="3cqZAp">
+                  <node concept="2OqwBi" id="lDSZH2EeDU" role="3clFbG">
+                    <node concept="37vLTw" id="lDSZH2EeDV" role="2Oq$k0">
+                      <ref role="3cqZAo" node="lDSZH2EeDv" resolve="consoleKeys" />
+                    </node>
+                    <node concept="liA8E" id="lDSZH2EeDW" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                      <node concept="3cpWs3" id="lDSZH2EeDX" role="37wK5m">
+                        <node concept="2GrUjf" id="lDSZH2EeDY" role="3uHU7w">
+                          <ref role="2Gs0qQ" node="lDSZH2EeDI" resolve="key" />
+                        </node>
+                        <node concept="3cpWs3" id="lDSZH2EeDZ" role="3uHU7B">
+                          <node concept="2OqwBi" id="lDSZH2EeE0" role="3uHU7B">
+                            <node concept="2OqwBi" id="lDSZH2EeE1" role="2Oq$k0">
+                              <node concept="13iPFW" id="lDSZH2EeE2" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="lDSZH2EeE3" role="2OqNvi">
+                                <ref role="3Tt5mk" to="5lbf:7QDG7s96n86" />
+                              </node>
+                            </node>
+                            <node concept="2qgKlT" id="lDSZH2EeE4" role="2OqNvi">
+                              <ref role="37wK5l" to="3229:lDSZH2CD$e" resolve="defaultUser" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="lDSZH2EeE5" role="3uHU7w">
+                            <property role="Xl_RC" value=":" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="lDSZH2EeE6" role="2GsD0m">
+                <node concept="37vLTw" id="lDSZH2EeE7" role="2Oq$k0">
+                  <ref role="3cqZAo" node="lDSZH2Egyk" resolve="keys" />
+                </node>
+                <node concept="liA8E" id="lDSZH2EeE8" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                  <node concept="Xl_RD" id="lDSZH2EeE9" role="37wK5m">
+                    <property role="Xl_RC" value="\\r?\\n" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="lDSZH2EeEa" role="3cqZAp">
+              <node concept="2YIFZM" id="lDSZH2EeEb" role="3clFbG">
+                <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                <ref role="37wK5l" to="eoo2:~Files.write(java.nio.file.Path,java.lang.Iterable,java.nio.charset.Charset,java.nio.file.OpenOption...):java.nio.file.Path" resolve="write" />
+                <node concept="37vLTw" id="lDSZH2EeEc" role="37wK5m">
+                  <ref role="3cqZAo" node="lDSZH2EeCN" resolve="path" />
+                </node>
+                <node concept="37vLTw" id="lDSZH2EeEd" role="37wK5m">
+                  <ref role="3cqZAo" node="lDSZH2EeDg" resolve="standardKeys" />
+                </node>
+                <node concept="2YIFZM" id="lDSZH2EeEe" role="37wK5m">
+                  <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
+                  <ref role="37wK5l" to="7x5y:~Charset.forName(java.lang.String):java.nio.charset.Charset" resolve="forName" />
+                  <node concept="Xl_RD" id="lDSZH2EeEf" role="37wK5m">
+                    <property role="Xl_RC" value="UTF-8" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="lDSZH2EeEg" role="3cqZAp">
+              <node concept="2YIFZM" id="lDSZH2EeEh" role="3clFbG">
+                <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                <ref role="37wK5l" to="eoo2:~Files.write(java.nio.file.Path,java.lang.Iterable,java.nio.charset.Charset,java.nio.file.OpenOption...):java.nio.file.Path" resolve="write" />
+                <node concept="37vLTw" id="lDSZH2EeEi" role="37wK5m">
+                  <ref role="3cqZAo" node="lDSZH2EeD7" resolve="consolePath" />
+                </node>
+                <node concept="37vLTw" id="lDSZH2EeEj" role="37wK5m">
+                  <ref role="3cqZAo" node="lDSZH2EeDv" resolve="consoleKeys" />
+                </node>
+                <node concept="2YIFZM" id="lDSZH2EeEk" role="37wK5m">
+                  <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
+                  <ref role="37wK5l" to="7x5y:~Charset.forName(java.lang.String):java.nio.charset.Charset" resolve="forName" />
+                  <node concept="Xl_RD" id="lDSZH2EeEl" role="37wK5m">
+                    <property role="Xl_RC" value="UTF-8" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="lDSZH2EeEm" role="TEbGg">
+            <node concept="3cpWsn" id="lDSZH2EeEn" role="TDEfY">
+              <property role="TrG5h" value="ioe" />
+              <node concept="3uibUv" id="lDSZH2EeEo" role="1tU5fm">
+                <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="lDSZH2EeEp" role="TDEfX">
+              <node concept="3cpWs6" id="lDSZH2EeEq" role="3cqZAp">
+                <node concept="3clFbT" id="lDSZH2EeEr" role="3cqZAk">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="lDSZH2EeEs" role="3cqZAp">
+          <node concept="3clFbT" id="lDSZH2EeEt" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="lDSZH2EeCw" role="3clF45" />
+      <node concept="37vLTG" id="lDSZH2Egyk" role="3clF46">
+        <property role="TrG5h" value="keys" />
+        <node concept="17QB3L" id="lDSZH2Egyj" role="1tU5fm" />
+      </node>
     </node>
     <node concept="13i0hz" id="7vFwTqSSm$l" role="13h7CS">
       <property role="TrG5h" value="setClientID" />
