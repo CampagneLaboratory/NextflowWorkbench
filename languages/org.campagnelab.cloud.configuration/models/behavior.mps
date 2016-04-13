@@ -107,6 +107,9 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -1178,6 +1181,21 @@
       </node>
       <node concept="3cqZAl" id="1LKL2LEtU9O" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="lDSZH2CFo3" role="13h7CS">
+      <property role="TrG5h" value="defaultUser" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="lDSZH2CD$e" resolve="defaultUser" />
+      <node concept="3Tm1VV" id="lDSZH2CFo4" role="1B3o_S" />
+      <node concept="3clFbS" id="lDSZH2CFo7" role="3clF47">
+        <node concept="3cpWs6" id="lDSZH2CGQY" role="3cqZAp">
+          <node concept="Xl_RD" id="lDSZH2CGQZ" role="3cqZAk">
+            <property role="Xl_RC" value="ubuntu" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="lDSZH2CFo8" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="5EXCMiTs1hQ">
     <property role="3GE5qa" value="gridengine" />
@@ -1493,6 +1511,14 @@
         </node>
       </node>
       <node concept="3cqZAl" id="3pj0Oa6GJN5" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="lDSZH2CD$e" role="13h7CS">
+      <property role="TrG5h" value="defaultUser" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="lDSZH2CD$f" role="1B3o_S" />
+      <node concept="3clFbS" id="lDSZH2CD$g" role="3clF47" />
+      <node concept="17QB3L" id="lDSZH2CD$h" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6UP81EX8c40" role="13h7CS">
       <property role="TrG5h" value="dockerOptions" />
