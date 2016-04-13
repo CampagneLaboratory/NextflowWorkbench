@@ -488,7 +488,7 @@
         </node>
         <node concept="lc7rE" id="5EXCMiTrYvD" role="3cqZAp">
           <node concept="la8eA" id="5EXCMiTrYvE" role="lcghm">
-            <property role="lacIc" value="image_id=ubuntu-1204-precise-v20160320" />
+            <property role="lacIc" value="image_id=ubuntu-1204-precise-v20160114" />
           </node>
           <node concept="l8MVK" id="5EXCMiTrYvF" role="lcghm" />
         </node>
