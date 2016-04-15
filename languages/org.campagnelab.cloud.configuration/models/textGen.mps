@@ -438,13 +438,13 @@
         </node>
         <node concept="lc7rE" id="5EXCMiTrY7T" role="3cqZAp">
           <node concept="la8eA" id="5EXCMiTrY7U" role="lcghm">
-            <property role="lacIc" value="frontend_groups=gridengine_master" />
+            <property role="lacIc" value="frontend_groups=gridengine_master,workflow_nodes" />
           </node>
           <node concept="l8MVK" id="5EXCMiTrY7V" role="lcghm" />
         </node>
         <node concept="lc7rE" id="5EXCMiTrY9T" role="3cqZAp">
           <node concept="la8eA" id="5EXCMiTrY9U" role="lcghm">
-            <property role="lacIc" value="compute_groups=gridengine_clients" />
+            <property role="lacIc" value="compute_groups=gridengine_clients,workflow_nodes" />
           </node>
           <node concept="l8MVK" id="5EXCMiTrY9V" role="lcghm" />
           <node concept="l8MVK" id="6_LFt8Zwf4g" role="lcghm" />
