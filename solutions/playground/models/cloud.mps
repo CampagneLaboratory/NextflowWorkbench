@@ -70,7 +70,9 @@
         <property id="8987412447080623507" name="options" index="2E$TAj" />
         <property id="8987412447079095298" name="pathToDocker" index="2EEQw2" />
       </concept>
-      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3" />
+      <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
+        <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
+      </concept>
       <concept id="1893262236499908796" name="org.campagnelab.docker.structure.DockerContainer" flags="ng" index="VuMX5">
         <property id="6819868375264208052" name="id" index="GbyUj" />
         <property id="1893262236499912677" name="tag" index="VuL0s" />
@@ -230,7 +232,7 @@
         <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
       </node>
       <node concept="3yU_OC" id="635ahSvecDP" role="3yU_ON">
-        <property role="3yU_OX" value="104.197.185.240" />
+        <property role="3yU_OX" value="104.196.127.17" />
       </node>
     </node>
   </node>
@@ -239,71 +241,22 @@
     <property role="2EEQw2" value="/usr/local/bin/docker" />
     <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
-  <node concept="3zOPYP" id="1LKL2LEthmb">
-    <property role="TrG5h" value="ManageCloudCluster" />
-    <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
-    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:36 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@3893ed2 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
-    <ref role="1QJbqN" node="2qF0d00Ta0f" resolve="docker.config" />
-    <node concept="VtuK3" id="1LKL2LEthmc" role="234boB">
-      <property role="VuL0s" value="1.5.1" />
-      <property role="VuL0v" value="artifacts" />
-      <property role="GbyUj" value="elasticluster" />
-    </node>
-    <node concept="3zOwDe" id="1LKL2LEthmd" role="1OGc9L">
-      <property role="TrG5h" value="cluster.config" />
-      <node concept="1Q0NwO" id="1LKL2LEthme" role="2KSRPJ">
-        <property role="TrG5h" value="Cluster Name" />
-        <property role="Zm4_2" value="MyOwnCluster" />
-      </node>
-      <node concept="3zO_zI" id="1LKL2LEthmf" role="2KSRPJ">
-        <property role="TrG5h" value="Number of frontend nodes" />
-        <property role="3zO_zz" value="1" />
-      </node>
-      <node concept="Zm4$n" id="1LKL2LEthmg" role="2KSRPJ">
-        <property role="TrG5h" value="Frontend node type" />
-        <property role="Zm4$k" value="n1-standard-1" />
-      </node>
-      <node concept="ZmVQ0" id="1LKL2LEthmh" role="2KSRPJ">
-        <property role="TrG5h" value="Shared file system size" />
-        <property role="ZmVUY" value="50" />
-      </node>
-      <node concept="3zO_zJ" id="1LKL2LEthmi" role="2KSRPJ">
-        <property role="TrG5h" value="Number of worker nodes" />
-        <property role="3zO_zz" value="2" />
-      </node>
-      <node concept="1rOJCK" id="1LKL2LEthmj" role="2KSRPJ">
-        <property role="TrG5h" value="Compute node type" />
-        <property role="1rOIkb" value="n1-standard-2" />
-      </node>
-      <node concept="1mWehH" id="1LKL2LEthmk" role="2KSRPJ">
-        <property role="TrG5h" value="Disk size local to each worker nodes" />
-        <property role="ZmVUY" value="20" />
-      </node>
-      <node concept="3xTfy5" id="1LKL2LEthmm" role="2KSRPJ">
-        <property role="TrG5h" value="Preemptibility" />
-        <property role="3xTfx3" value="true" />
-      </node>
-      <node concept="2tz3XF" id="1LKL2LEthml" role="2KSRPJ">
-        <property role="TrG5h" value="Folder with manager credentials" />
-        <property role="2tz3XC" value="/Users/mas2182/.ssh" />
-      </node>
-    </node>
-  </node>
   <node concept="3zOPYP" id="1LKL2LEuSFG">
     <property role="TrG5h" value="ManageCloudCluster" />
-    <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
-    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:36 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@3893ed2 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
+    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:36 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@21f72a4f secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
+    <property role="1OHsCo" value="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC07+Yg5a2EoSdcuZ47pTq1nxro8PRGkjrJ/A45ZCMpbcrzEG2WWy7oJc50okcc0dX3ikf788tNpt0eeIziMboNZnYnHLbkYcbs2aKA8k/0Q9Xum8yZnGFm8rdmzEyZq+O8h769aWJ693eIWGhXJNiQ+IQ0YLp8eEsq3ZYka69LeVHkdpXmEmU+dGL3cz3RsmtZefjDQB75x6jPwi1PB+GjF0+vadTU/+u8t543ArPX6odm336ErPfvZ/RQi3uAQk2pKsT1by1GReoQ+HJbZ4wfD9ytyZ9iYIPq7MUYxzm3+AWfe61ZSzaTr2UhcXLUrlsAFy3SLfNDJA5cO4PSkSmR mas2182@mac162547.med.cornell.edu" />
     <ref role="1QJbqN" node="2qF0d00Ta0f" resolve="docker.config" />
     <node concept="VtuK3" id="1LKL2LEuSFH" role="234boB">
-      <property role="VuL0s" value="1.5.1" />
+      <property role="VuL0s" value="1.5.3" />
       <property role="VuL0v" value="artifacts" />
       <property role="GbyUj" value="elasticluster" />
+      <property role="3zaeVo" value="true" />
     </node>
     <node concept="3zOwDe" id="1LKL2LEuSFI" role="1OGc9L">
       <property role="TrG5h" value="cluster.config" />
       <node concept="1Q0NwO" id="1LKL2LEuSFJ" role="2KSRPJ">
         <property role="TrG5h" value="Cluster name" />
-        <property role="Zm4_2" value="MySecondOwnCluster" />
+        <property role="Zm4_2" value="AnsibleFromMPS10" />
       </node>
       <node concept="1Q2HBG" id="1LKL2LEuSFK" role="2KSRPJ">
         <property role="TrG5h" value="Zone for cluster resources" />
@@ -323,7 +276,7 @@
       </node>
       <node concept="3zO_zJ" id="1LKL2LEuSFO" role="2KSRPJ">
         <property role="TrG5h" value="Number of worker nodes" />
-        <property role="3zO_zz" value="2" />
+        <property role="3zO_zz" value="1" />
       </node>
       <node concept="1rOJCK" id="1LKL2LEuSFP" role="2KSRPJ">
         <property role="TrG5h" value="Compute node type" />

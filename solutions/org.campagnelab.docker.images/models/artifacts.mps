@@ -8688,7 +8688,7 @@
   <node concept="VuPG2" id="3kWAjw$5azY">
     <property role="3GE5qa" value="dockerfiles" />
     <property role="TrG5h" value="ElasticlusterUbuntu" />
-    <property role="2EHzVy" value="content=FROM ubuntu:latest&#10;MAINTAINER Campagne Lab &quot;manuele.simi@campagnelab.org&quot;&#10;#build tools (gcc, git, etc.)&#10;RUN apt-get update &amp;&amp; apt-get -y install build-essential &amp;&amp; apt-get install -y git-core \ &#10;&amp;&amp; apt-get -y install curl &#10;#upgrade/install some python stuff&#10;RUN apt-get -y install python-setuptools &amp;&amp; apt-get -y install python-dev &#10;#install pip installer for python&#10;RUN curl -O http://peak.telecommunity.com/dist/ez_setup.py \ &#10;&amp;&amp; python ez_setup.py \&#10;&amp;&amp; rm ez_setup.py \  &#10;&amp;&amp; easy_install pip \ &#10;&amp;&amp; pip install --upgrade httplib2 \&#10;&amp;&amp; pip install google-api-python-client &#10;#install virtualenv&#10;RUN pip install virtualenv \&#10;&amp;&amp; cd /usr/local/ &amp;&amp; virtualenv elasticluster \&#10;&amp;&amp; . elasticluster/bin/activate  &amp;&amp; pip install ansible &#10;#install elasticluster from googlegenomics at https://github.com/googlegenomics/elasticluster&#10;RUN cd /usr/local/elasticluster \&#10;&amp;&amp; git clone git://github.com/gc3-uzh-ch/elasticluster.git src \&#10;&amp;&amp; cd src &amp;&amp; python setup.py install &#10;RUN cat /dev/zero | ssh-keygen -q -N &quot;&quot;&#10;#install config tools&#10;RUN cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; rm -rf config-tools/.git \&#10;&amp;&amp; cp -r config-tools/playbooks/* /usr/share/elasticluster/providers/ansible-playbooks/roles/ \&#10;&amp;&amp; sed -i.bak 's/- include: roles\/gridengine\.yml/- include: roles\/workflow.yml\n- include: roles\/gridengine.yml\n- include: roles\/gridengine-queue.yml/g' /usr/share/elasticluster/providers/ansible-playbooks/site.yml \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new34&quot;&#10;#gcloud&#10;RUN bash -c &quot;curl https://sdk.cloud.google.com | bash&quot; &#10;#welcome message&#10;RUN echo &quot;echo -----------------------------------------&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo WELCOME to the ELASTICLUSTER container!&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo Commands to control your cluster start with cluster-&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo Type cluster- and then press the tab key to discover and invoke them&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo -----------------------------------------&quot; &gt;&gt; $HOME/.bashrc&#10;#clean up&#10;RUN apt-get clean&#10;#set bash as default shell (see https://github.com/docker/docker/issues/7281)&#10;RUN rm /bin/sh &amp;&amp; sudo ln -sf /bin/bash /bin/sh&#10;LABEL org.campagnelab.docker.createdWith=&quot;org.campagnelab.docker&quot;&#10;" />
+    <property role="2EHzVy" value="content=FROM ubuntu:latest&#10;MAINTAINER Campagne Lab &quot;manuele.simi@campagnelab.org&quot;&#10;#build tools (gcc, git, etc.)&#10;RUN apt-get update &amp;&amp; apt-get -y install build-essential &amp;&amp; apt-get install -y git-core \ &#10;&amp;&amp; apt-get -y install curl &#10;#upgrade/install some python stuff&#10;RUN apt-get -y install python-setuptools &amp;&amp; apt-get -y install python-dev &#10;#install pip installer for python&#10;RUN curl -O http://peak.telecommunity.com/dist/ez_setup.py \ &#10;&amp;&amp; python ez_setup.py \&#10;&amp;&amp; rm ez_setup.py \  &#10;&amp;&amp; easy_install pip \ &#10;&amp;&amp; pip install --upgrade httplib2 \&#10;&amp;&amp; pip install google-api-python-client &#10;#install virtualenv&#10;RUN pip install virtualenv \&#10;&amp;&amp; cd /usr/local/ &amp;&amp; virtualenv elasticluster \&#10;&amp;&amp; . elasticluster/bin/activate  &amp;&amp; pip install ansible &#10;#install elasticluster from googlegenomics at https://github.com/googlegenomics/elasticluster&#10;RUN cd /usr/local/elasticluster \&#10;&amp;&amp; git clone git://github.com/gc3-uzh-ch/elasticluster.git src \&#10;&amp;&amp; cd src &amp;&amp; python setup.py install &#10;RUN cat /dev/zero | ssh-keygen -q -N &quot;&quot;&#10;#install config tools&#10;RUN cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; rm -rf config-tools/.git \&#10;&amp;&amp; cp -r config-tools/playbooks/* /usr/share/elasticluster/providers/ansible-playbooks/roles/ \&#10;&amp;&amp; sed -i.bak 's/- include: roles\/gridengine\.yml/- include: roles\/workflow.yml\n- include: roles\/gridengine.yml\n- include: roles\/gridengine-queue.yml/g' /usr/share/elasticluster/providers/ansible-playbooks/site.yml \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new43&quot;&#10;#gcloud&#10;RUN bash -c &quot; cd $HOME &amp;&amp; curl https://sdk.cloud.google.com | bash&quot; &#10;#welcome message&#10;RUN echo &quot;echo -----------------------------------------&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo WELCOME to the ELASTICLUSTER container!&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo Commands to control your cluster start with cluster-&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo Type cluster- and then press the tab key to discover and invoke them&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo -----------------------------------------&quot; &gt;&gt; $HOME/.bashrc&#10;#clean up&#10;RUN apt-get clean&#10;#set bash as default shell (see https://github.com/docker/docker/issues/7281)&#10;RUN rm /bin/sh &amp;&amp; sudo ln -sf /bin/bash /bin/sh&#10;LABEL org.campagnelab.docker.createdWith=&quot;org.campagnelab.docker&quot;&#10;" />
     <node concept="VuO64" id="3kWAjw$5azZ" role="VuOVn">
       <node concept="VtuK3" id="3kWAjw$5a$0" role="VuO5T">
         <property role="VuL0s" value="latest" />
@@ -8763,7 +8763,7 @@
     <node concept="VugRC" id="5EXCMiTrFiF" role="VuOVn">
       <node concept="19SGf9" id="5EXCMiTrFlF" role="Vugyn">
         <node concept="19SUe$" id="5EXCMiTrFlG" role="19SJt6">
-          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; rm -rf config-tools/.git \&#10;&amp;&amp; cp -r config-tools/playbooks/* /usr/share/elasticluster/providers/ansible-playbooks/roles/ \&#10;&amp;&amp; sed -i.bak 's/- include: roles\/gridengine\.yml/- include: roles\/workflow.yml\n- include: roles\/gridengine.yml\n- include: roles\/gridengine-queue.yml/g' /usr/share/elasticluster/providers/ansible-playbooks/site.yml \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new34&quot;" />
+          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; rm -rf config-tools/.git \&#10;&amp;&amp; cp -r config-tools/playbooks/* /usr/share/elasticluster/providers/ansible-playbooks/roles/ \&#10;&amp;&amp; sed -i.bak 's/- include: roles\/gridengine\.yml/- include: roles\/workflow.yml\n- include: roles\/gridengine.yml\n- include: roles\/gridengine-queue.yml/g' /usr/share/elasticluster/providers/ansible-playbooks/site.yml \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new43&quot;" />
         </node>
       </node>
     </node>
@@ -8773,7 +8773,7 @@
     <node concept="VugRC" id="lDSZH2C5Dy" role="VuOVn">
       <node concept="19SGf9" id="lDSZH2C5Gg" role="Vugyn">
         <node concept="19SUe$" id="lDSZH2C5Gh" role="19SJt6">
-          <property role="19SUeA" value="bash -c &quot;curl https://sdk.cloud.google.com | bash&quot; " />
+          <property role="19SUeA" value="bash -c &quot; cd $HOME &amp;&amp; curl https://sdk.cloud.google.com | bash&quot; " />
         </node>
       </node>
     </node>
@@ -8807,8 +8807,8 @@
         </node>
       </node>
     </node>
-    <node concept="3blhQM" id="5QK6GxzsD4I" role="3blhQR">
-      <ref role="3blhQY" node="5QK6GxzsD4H" resolve="ElasticlusterUbuntu_Image" />
+    <node concept="3blhQM" id="5QK6GxzsEF_" role="3blhQR">
+      <ref role="3blhQY" node="5QK6GxzsEF$" resolve="ElasticlusterUbuntu_Image" />
     </node>
   </node>
   <node concept="2E_JVc" id="2DLgRb6jVGq">
@@ -8833,12 +8833,12 @@
       <property role="Gyxd1" value="latest" />
     </node>
   </node>
-  <node concept="2E_JVc" id="5QK6GxzsD4H">
-    <property role="2E_JEh" value="2fb505e08da1" />
+  <node concept="2E_JVc" id="5QK6GxzsEF$">
+    <property role="2E_JEh" value="e0dc906d8dc7" />
     <property role="TrG5h" value="ElasticlusterUbuntu_Image" />
     <property role="GSh9r" value="artifacts/elasticluster:1.5.3" />
     <ref role="2E_BxF" node="3kWAjw$5azY" resolve="ElasticlusterUbuntu" />
-    <node concept="Gyxd7" id="5QK6GxzsD4M" role="Gyxcj">
+    <node concept="Gyxd7" id="5QK6GxzsEFD" role="Gyxcj">
       <property role="Gyxfx" value="artifacts" />
       <property role="TrG5h" value="elasticluster" />
       <property role="Gyxd1" value="1.5.3" />
