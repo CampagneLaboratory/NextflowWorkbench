@@ -232,7 +232,7 @@
         <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
       </node>
       <node concept="3yU_OC" id="635ahSvecDP" role="3yU_ON">
-        <property role="3yU_OX" value="104.196.127.17" />
+        <property role="3yU_OX" value="104.196.116.132" />
       </node>
     </node>
   </node>
@@ -256,7 +256,7 @@
       <property role="TrG5h" value="cluster.config" />
       <node concept="1Q0NwO" id="1LKL2LEuSFJ" role="2KSRPJ">
         <property role="TrG5h" value="Cluster name" />
-        <property role="Zm4_2" value="AnsibleFromMPS10" />
+        <property role="Zm4_2" value="AnsibleFromMPS15" />
       </node>
       <node concept="1Q2HBG" id="1LKL2LEuSFK" role="2KSRPJ">
         <property role="TrG5h" value="Zone for cluster resources" />
@@ -272,15 +272,15 @@
       </node>
       <node concept="ZmVQ0" id="1LKL2LEuSFN" role="2KSRPJ">
         <property role="TrG5h" value="Shared file system size" />
-        <property role="ZmVUY" value="50" />
+        <property role="ZmVUY" value="10" />
       </node>
       <node concept="3zO_zJ" id="1LKL2LEuSFO" role="2KSRPJ">
         <property role="TrG5h" value="Number of worker nodes" />
-        <property role="3zO_zz" value="1" />
+        <property role="3zO_zz" value="10" />
       </node>
       <node concept="1rOJCK" id="1LKL2LEuSFP" role="2KSRPJ">
         <property role="TrG5h" value="Compute node type" />
-        <property role="1rOIkb" value="n1-standard-2" />
+        <property role="1rOIkb" value="n1-highcpu-4" />
       </node>
       <node concept="1mWehH" id="1LKL2LEuSFQ" role="2KSRPJ">
         <property role="TrG5h" value="Disk size local to each worker nodes" />
