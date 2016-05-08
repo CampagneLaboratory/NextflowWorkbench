@@ -10,3 +10,6 @@ The Nextflow Workbench has several features that complement the Nextflow middlew
 * It provides a WYSIWYG editor to create docker images (since 1.2) and to declare which set of popular bioinformatics tools and genome indices should be pre-installed in each image (this feature will be introduced in release 1.3).
 
 See http://campagnelab.org/software/nextflow-workbench/ for details about this project.
+
+
+[![Join the chat at https://gitter.im/CampagneLaboratory/NextflowWorkbench](https://badges.gitter.im/CampagneLaboratory/NextflowWorkbench.svg)](https://gitter.im/CampagneLaboratory/NextflowWorkbench?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
