@@ -5,9 +5,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
-    <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -34,6 +34,12 @@
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -105,7 +111,7 @@
       <property role="TrG5h" value="icon" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="1X0yGobKpBy" role="1tU5fm">
-        <ref role="3uigEE" to="dbrf:~Icon" resolve="Icon" />
+        <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
       </node>
       <node concept="3Tm6S6" id="1X0yGobKpBz" role="1B3o_S" />
     </node>
@@ -118,7 +124,7 @@
         <property role="TrG5h" value="icon" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="1X0yGobKpB3" role="1tU5fm">
-          <ref role="3uigEE" to="dbrf:~Icon" resolve="Icon" />
+          <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
         </node>
       </node>
       <node concept="3clFbS" id="1X0yGobKpB4" role="3clF47">
@@ -135,6 +141,29 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4YY3UIkR$lm" role="3cqZAp">
+          <node concept="2OqwBi" id="4YY3UIkR$nV" role="3clFbG">
+            <node concept="Xjq3P" id="4YY3UIkR$lk" role="2Oq$k0" />
+            <node concept="liA8E" id="4YY3UIkR$XU" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font):void" resolve="setFont" />
+              <node concept="2ShNRf" id="4YY3UIkRc9m" role="37wK5m">
+                <node concept="1pGfFk" id="4YY3UIkRoC6" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
+                  <node concept="Xl_RD" id="4YY3UIkRoV9" role="37wK5m">
+                    <property role="Xl_RC" value="Courier New" />
+                  </node>
+                  <node concept="10M0yZ" id="4YY3UIkRpvS" role="37wK5m">
+                    <ref role="3cqZAo" to="z60i:~Font.PLAIN" resolve="PLAIN" />
+                    <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                  </node>
+                  <node concept="3cmrfG" id="4YY3UIkRq1j" role="37wK5m">
+                    <property role="3cmrfH" value="10" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="1X0yGobKpBb" role="1B3o_S" />
     </node>
@@ -146,7 +175,7 @@
         <property role="TrG5h" value="g" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="1X0yGobKpBe" role="1tU5fm">
-          <ref role="3uigEE" to="1t7x:~Graphics" resolve="Graphics" />
+          <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
         </node>
       </node>
       <node concept="3clFbS" id="1X0yGobKpBf" role="3clF47">
@@ -156,7 +185,7 @@
               <ref role="3cqZAo" node="1X0yGobKpBw" resolve="icon" />
             </node>
             <node concept="liA8E" id="1X0yGobKpBC" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~Icon.paintIcon(java.awt.Component,java.awt.Graphics,int,int):void" resolve="paintIcon" />
+              <ref role="37wK5l" to="dxuu:~Icon.paintIcon(java.awt.Component,java.awt.Graphics,int,int):void" resolve="paintIcon" />
               <node concept="Xjq3P" id="1X0yGobKpBi" role="37wK5m" />
               <node concept="37vLTw" id="1X0yGobKpBj" role="37wK5m">
                 <ref role="3cqZAo" node="1X0yGobKpBd" resolve="g" />
@@ -174,7 +203,7 @@
       <node concept="3Tm1VV" id="1X0yGobKpBm" role="1B3o_S" />
       <node concept="3cqZAl" id="1X0yGobKpBn" role="3clF45" />
       <node concept="2AHcQZ" id="1X0yGobXFaZ" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="1X0yGobKpBo" role="jymVt">
@@ -185,13 +214,13 @@
         <node concept="3cpWs6" id="1X0yGobKpBq" role="3cqZAp">
           <node concept="2ShNRf" id="1X0yGobKpBD" role="3cqZAk">
             <node concept="1pGfFk" id="1X0yGobKpBE" role="2ShVmc">
-              <ref role="37wK5l" to="1t7x:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+              <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
               <node concept="2OqwBi" id="1X0yGobKpBI" role="37wK5m">
                 <node concept="37vLTw" id="1X0yGobKpBH" role="2Oq$k0">
                   <ref role="3cqZAo" node="1X0yGobKpBw" resolve="icon" />
                 </node>
                 <node concept="liA8E" id="1X0yGobKpBJ" role="2OqNvi">
-                  <ref role="37wK5l" to="dbrf:~Icon.getIconWidth():int" resolve="getIconWidth" />
+                  <ref role="37wK5l" to="dxuu:~Icon.getIconWidth():int" resolve="getIconWidth" />
                 </node>
               </node>
               <node concept="2OqwBi" id="1X0yGobKpBN" role="37wK5m">
@@ -199,7 +228,7 @@
                   <ref role="3cqZAo" node="1X0yGobKpBw" resolve="icon" />
                 </node>
                 <node concept="liA8E" id="1X0yGobKpBO" role="2OqNvi">
-                  <ref role="37wK5l" to="dbrf:~Icon.getIconHeight():int" resolve="getIconHeight" />
+                  <ref role="37wK5l" to="dxuu:~Icon.getIconHeight():int" resolve="getIconHeight" />
                 </node>
               </node>
             </node>
@@ -208,16 +237,16 @@
       </node>
       <node concept="3Tm1VV" id="1X0yGobKpBu" role="1B3o_S" />
       <node concept="3uibUv" id="1X0yGobKpBv" role="3clF45">
-        <ref role="3uigEE" to="1t7x:~Dimension" resolve="Dimension" />
+        <ref role="3uigEE" to="z60i:~Dimension" resolve="Dimension" />
       </node>
       <node concept="2AHcQZ" id="1X0yGobXFex" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="1X0yGobXETT" role="jymVt" />
     <node concept="3Tm1VV" id="1X0yGobXERP" role="1B3o_S" />
     <node concept="3uibUv" id="1X0yGobXF4l" role="1zkMxy">
-      <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+      <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
     </node>
   </node>
 </model>
