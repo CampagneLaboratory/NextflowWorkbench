@@ -93,14 +93,6 @@
       </concept>
       <concept id="7630370243519798795" name="org.campagnelab.bash.nyosh.structure.DockerArtifactPath" flags="ng" index="1OktH4" />
     </language>
-    <language id="316e8289-cb69-4927-8bfe-edde5cd32037" name="org.campagnelab.workflow.languages">
-      <concept id="8328113964066216883" name="org.campagnelab.workflow.languages.structure.RScript" flags="ng" index="3uG7KP">
-        <child id="8328113964066509550" name="arguments" index="3uHflC" />
-      </concept>
-      <concept id="8328113964066508559" name="org.campagnelab.workflow.languages.structure.RScriptArgumentInput" flags="ng" index="3uHey9">
-        <reference id="8328113964066509524" name="input" index="3uHfli" />
-      </concept>
-    </language>
     <language id="3b74e3b7-7336-414d-8899-64a293a44a07" name="org.campagnelab.docker.bash">
       <concept id="2622571170406287292" name="org.campagnelab.docker.bash.structure.InteractivePath" flags="ng" index="26mB$D">
         <child id="2622571170406287293" name="path" index="26mB$C" />
@@ -148,10 +140,6 @@
       </concept>
     </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
-      <concept id="8987412447080958668" name="org.campagnelab.docker.structure.DockerImage" flags="ng" index="2E_JVc">
-        <property id="8987412447080959633" name="id" index="2E_JEh" />
-        <property id="6819868375259551868" name="taggedAs" index="GSh9r" />
-      </concept>
       <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
         <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
       </concept>
@@ -162,9 +150,6 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
-      <concept id="4018964125401476997" name="org.campagnelab.workflow.structure.List" flags="ng" index="kktkh">
-        <child id="7391172440886351025" name="elementType" index="2y8EMt" />
-      </concept>
       <concept id="4018964125401495568" name="org.campagnelab.workflow.structure.Tuple" flags="ng" index="knwa4">
         <child id="7391172440899058539" name="elements" index="2zSOd7" />
       </concept>
@@ -659,41 +644,6 @@
       </node>
     </node>
   </node>
-  <node concept="2ulcR8" id="7ejpSqH8Lzx">
-    <property role="TrG5h" value="CombineCounts" />
-    <node concept="2lYRya" id="7ejpSqH8LEd" role="2ulM79">
-      <property role="TrG5h" value="counts.tsv" />
-      <node concept="16pRw0" id="7ejpSqH8LEn" role="2ybFLk" />
-    </node>
-    <node concept="2mjA9o" id="5G7wwTNPrBy" role="2ulM7n">
-      <property role="TrG5h" value="tsvs" />
-      <node concept="kktkh" id="5G7wwTNPrC9" role="2ybFLk">
-        <node concept="16pRw0" id="5G7wwTNPrCq" role="2y8EMt" />
-      </node>
-    </node>
-    <node concept="2mjA9o" id="5G7wwTNPrAb" role="2ulM7n">
-      <property role="TrG5h" value="ids" />
-      <node concept="kktkh" id="5G7wwTNPrAJ" role="2ybFLk">
-        <node concept="16pbKc" id="5G7wwTNPrB0" role="2y8EMt" />
-      </node>
-    </node>
-    <node concept="3uG7KP" id="7ejpSqH9i7A" role="2ulM7a">
-      <node concept="19SGf9" id="7ejpSqH9i7C" role="3Y$PkS">
-        <node concept="19SUe$" id="7ejpSqH9i7D" role="19SJt6">
-          <property role="19SUeA" value="# SCRIPT adapted from http://andrewtmckenzie.com/2015/05/12/how-to-run-kallisto-on-ncbi-sra-rna-seq-data-for-differential-expression-using-the-mac-terminal/ &#10;if (!require(&quot;BiocInstaller&quot;)) {&#10;  # Install bioconductor packages:&#10;  source(&quot;http://bioconductor.org/biocLite.R&quot;, local=TRUE)&#10;  biocLite(ask=FALSE, c(&quot;limma&quot;)) &#10;}&#10;if (!require(&quot;limma&quot;)) {install.packages(&quot;limma&quot;,repos='http://cran.us.r-project.org'); library(&quot;limma&quot;)}&#10;&#10;# arguments contain the paths to tsv files &#10;args =  commandArgs(trailingOnly = TRUE)&#10;sample_filenames&lt;-args&#10;sample_list_ids &lt;- args&#10;for(i in 1:length(sample_filenames)){&#10;# extract identifiers from the filenames:&#10;  sample_list_ids[i]&lt;-gsub(sample_list_ids[i], pattern=&quot;counts-&quot;, replacement=&quot;&quot;);&#10;  sample_list_ids[i]&lt;-gsub(sample_list_ids[i], pattern=&quot;.tsv&quot;, replacement=&quot;&quot;);&#10;}&#10;&#10;for(i in 1:length(sample_list_ids)){&#10;    cat(&quot;loading: &quot;); cat(sample_filenames[i])&#10;    tmp = read.table(file = sample_filenames[i], header = TRUE) &#10;    assign(sample_list_ids[i], tmp)&#10;}&#10; &#10;sample_list = mget(sample_list_ids)&#10; &#10;#give the list unique names &#10;sample_list_uni = Map(function(x, i) setNames(x, ifelse(names(x) %in% &quot;target_id&quot;,&#10;      names(x), sprintf('%s.%d', names(x), i))), sample_list, seq_along(sample_list))&#10; &#10;full_kalli = Reduce(function(...) merge(..., by = &quot;target_id&quot;, all=T), sample_list_uni)&#10; &#10;counts = full_kalli[, grep(&quot;est_counts&quot;, names(full_kalli))]&#10;# set identifiers as column names on the combined table:&#10;names(counts) &lt;- sample_list_ids;&#10;# transfer gene ids. Note the quotes around target_id are needed to prevent nextflow replacement.&#10;row.names(counts) &lt;- full_kalli\$&quot;target_id&quot;;&#10;# write the table&#10;write.table(x=counts, file=&quot;counts.tsv&quot;, quote=FALSE, sep='\t', col.names = NA)&#10;&#10;" />
-        </node>
-      </node>
-      <node concept="3uHey9" id="5G7wwTNPK_5" role="3uHflC">
-        <ref role="3uHfli" node="5G7wwTNPrBy" resolve="tsvs" />
-      </node>
-    </node>
-    <node concept="VtuK3" id="5G7wwTNQfdV" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="VuL0v" value="fac2003" />
-      <property role="GbyUj" value="rocker-metar" />
-      <property role="3zaeVo" value="true" />
-    </node>
-  </node>
   <node concept="2ulcR8" id="mLKgp_dTg1">
     <property role="TrG5h" value="KallistoHDF5WithTuples" />
     <node concept="2mjA9o" id="mLKgp_eeMt" role="2ulM7n">
@@ -1171,11 +1121,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2E_JVc" id="5WTdyfwY$tN">
-    <property role="GSh9r" value="fac2003/kallisto-human-gsutil:1.0.0" />
-    <property role="2E_JEh" value="kallisto-human-gsutil" />
-    <property role="TrG5h" value="image" />
   </node>
 </model>
 

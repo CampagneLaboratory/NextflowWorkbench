@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:d7f2e001-f82c-4379-aa69-f5a37b97ebec(downloadQC)">
+<model ref="r:d7f2e001-f82c-4379-aa69-f5a37b97ebec(fastQC)">
   <persistence version="9" />
   <languages>
     <use id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow" version="6" />
@@ -45,7 +45,6 @@
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
       </concept>
       <concept id="7391172440898975896" name="org.campagnelab.workflow.structure.TupleElement" flags="ng" index="2zSw2O" />
-      <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
         <child id="7391172440887133304" name="type" index="2ybFLk" />
@@ -99,50 +98,6 @@
       <property role="VuL0s" value="latest" />
       <property role="VuL0v" value="genomicpariscentre" />
       <property role="GbyUj" value="fastqc" />
-      <property role="3zaeVo" value="true" />
-    </node>
-  </node>
-  <node concept="2ulcR8" id="3a_Ie33Oni_">
-    <property role="TrG5h" value="Download_1M_Reads" />
-    <node concept="2lYRya" id="iewVIi_Sdy" role="2ulM79">
-      <node concept="knwa4" id="iewVIi_Sei" role="2ybFLk">
-        <node concept="2zSw2O" id="iewVIi_Sek" role="2zSOd7">
-          <property role="TrG5h" value="'*_1.fastq.gz'" />
-          <node concept="16pRw0" id="iewVIi_Sf9" role="2ybFLk" />
-        </node>
-        <node concept="2zSw2O" id="iewVIi_Sgb" role="2zSOd7">
-          <property role="TrG5h" value="'*_2.fastq.gz'" />
-          <node concept="16pRw0" id="iewVIi_SgW" role="2ybFLk" />
-        </node>
-      </node>
-    </node>
-    <node concept="2mjA9o" id="3a_Ie33OniZ" role="2ulM7n">
-      <property role="TrG5h" value="id" />
-      <node concept="16pbKc" id="3a_Ie33Onj7" role="2ybFLk" />
-    </node>
-    <node concept="3Y$Zt1" id="3a_Ie33Onk7" role="2ulM7a">
-      <node concept="19SGf9" id="3a_Ie33Onk9" role="3Y$PkS">
-        <node concept="19SUe$" id="3a_Ie33Onka" role="19SJt6">
-          <property role="19SUeA" value="&#10;fastq-dump -X 1000000 --split-files " />
-        </node>
-        <node concept="3YE7tV" id="3a_Ie33Onkg" role="19SJt6">
-          <ref role="3YE7sm" node="3a_Ie33OniZ" resolve="id" />
-        </node>
-        <node concept="19SUe$" id="3a_Ie33Onkf" role="19SJt6">
-          <property role="19SUeA" value="&#10;gzip " />
-        </node>
-        <node concept="3YE7tV" id="iewVIi_M0P" role="19SJt6">
-          <ref role="3YE7sm" node="3a_Ie33OniZ" resolve="id" />
-        </node>
-        <node concept="19SUe$" id="iewVIi_M0O" role="19SJt6">
-          <property role="19SUeA" value="_*.fastq&#10;" />
-        </node>
-      </node>
-    </node>
-    <node concept="VtuK3" id="3a_Ie33Onkk" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="GbyUj" value="sra-toolkit" />
-      <property role="VuL0v" value="inutano" />
       <property role="3zaeVo" value="true" />
     </node>
   </node>

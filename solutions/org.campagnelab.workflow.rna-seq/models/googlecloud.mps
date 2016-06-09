@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:bd6f13b1-e735-4bf3-b33c-07737d8a58c4(org.campagnelab.workflow.googlecloud)">
+<model ref="r:bd6f13b1-e735-4bf3-b33c-07737d8a58c4(googlecloud)">
   <persistence version="9" />
   <languages>
     <devkit ref="74a4431b-c31f-4707-ad8a-3f4f3c105ee2(org.campagnelab.NextflowWorkbench)" />
