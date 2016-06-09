@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:41663e9a-b716-465f-9ce0-0c158a40f03d(training)">
+<model ref="r:41663e9a-b716-465f-9ce0-0c158a40f03d(counts)">
   <persistence version="9" />
   <languages>
     <use id="f55d6853-b373-41dd-bc8e-331fd6e2c764" name="org.campagnelab.bash.nyosh" version="0" />
