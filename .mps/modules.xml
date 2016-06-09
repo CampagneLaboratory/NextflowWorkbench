@@ -19,6 +19,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow.languages/org.campagnelab.workflow.languages.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow.nyosh/org.campagnelab.workflow.nyosh.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.workflow/org.campagnelab.workflow.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/CloudClusters/CloudClusters.msd" folder="models" />
       <modulePath path="$PROJECT_DIR$/solutions/FileQuotes/FileQuotes.msd" folder="models" />
       <modulePath path="$PROJECT_DIR$/solutions/NextflowWorkbench.build/NextflowWorkbench.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/collectFileWorkflows/collectFileWorkflows.msd" folder="models" />
