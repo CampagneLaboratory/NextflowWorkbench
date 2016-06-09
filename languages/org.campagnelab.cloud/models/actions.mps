@@ -155,7 +155,7 @@
           <node concept="3clFbF" id="5EXCMiTrN2b" role="3cqZAp">
             <node concept="37vLTI" id="5EXCMiTrN2c" role="3clFbG">
               <node concept="Xl_RD" id="5EXCMiTrN2d" role="37vLTx">
-                <property role="Xl_RC" value="elasticluster" />
+                <property role="Xl_RC" value="elasticluster-config-tools" />
               </node>
               <node concept="2OqwBi" id="5EXCMiTrN2e" role="37vLTJ">
                 <node concept="2OqwBi" id="5EXCMiTrN2f" role="2Oq$k0">
@@ -173,7 +173,7 @@
           <node concept="3clFbF" id="5EXCMiTrNmk" role="3cqZAp">
             <node concept="37vLTI" id="5EXCMiTrNml" role="3clFbG">
               <node concept="Xl_RD" id="5EXCMiTrNmm" role="37vLTx">
-                <property role="Xl_RC" value="1.5.3" />
+                <property role="Xl_RC" value="1.5.4" />
               </node>
               <node concept="2OqwBi" id="5EXCMiTrNmn" role="37vLTJ">
                 <node concept="2OqwBi" id="5EXCMiTrNmo" role="2Oq$k0">
