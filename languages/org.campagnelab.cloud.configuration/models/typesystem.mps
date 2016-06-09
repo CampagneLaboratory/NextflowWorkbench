@@ -27,12 +27,26 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -115,6 +129,87 @@
     <node concept="1YaCAy" id="lDSZH2Dnyc" role="1YuTPh">
       <property role="TrG5h" value="clusterName" />
       <ref role="1YaFvo" to="45iu:1LKL2LEsZKo" resolve="ClusterName" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7UgDMXPp$tS">
+    <property role="TrG5h" value="check_SharedDiskSize" />
+    <property role="3GE5qa" value="gridengine" />
+    <node concept="3clFbS" id="7UgDMXPp$tT" role="18ibNy">
+      <node concept="3clFbJ" id="7UgDMXPp$tZ" role="3cqZAp">
+        <node concept="3clFbS" id="7UgDMXPp$u0" role="3clFbx">
+          <node concept="3SKdUt" id="1FavoX$wXJ1" role="3cqZAp">
+            <node concept="3SKdUq" id="1FavoX$wXJo" role="3SKWNk">
+              <property role="3SKdUp" value="10 GB is the minimum size for the Ubuntu image. We have to change the value if we change image." />
+            </node>
+            <node concept="3SKdUq" id="1FavoX$wXJ3" role="3SKWNk" />
+          </node>
+          <node concept="2MkqsV" id="7UgDMXPp_gk" role="3cqZAp">
+            <node concept="Xl_RD" id="7UgDMXPp_gA" role="2MkJ7o">
+              <property role="Xl_RC" value="Requested disk size cannot be smaller than the image size (10 GB)" />
+            </node>
+            <node concept="1YBJjd" id="7UgDMXPp_gU" role="2OEOjV">
+              <ref role="1YBMHb" node="7UgDMXPp$tV" resolve="sharedDiskSize" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOVzh" id="7UgDMXPp_aW" role="3clFbw">
+          <node concept="2OqwBi" id="7UgDMXPp$PZ" role="3uHU7B">
+            <node concept="1YBJjd" id="7UgDMXPp$uh" role="2Oq$k0">
+              <ref role="1YBMHb" node="7UgDMXPp$tV" resolve="sharedDiskSize" />
+            </node>
+            <node concept="3TrcHB" id="7UgDMXPp$VP" role="2OqNvi">
+              <ref role="3TsBF5" to="45iu:29ahU8t4v$s" resolve="value" />
+            </node>
+          </node>
+          <node concept="3cmrfG" id="7UgDMXPp_9i" role="3uHU7w">
+            <property role="3cmrfH" value="10" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7UgDMXPp$tV" role="1YuTPh">
+      <property role="TrG5h" value="sharedDiskSize" />
+      <ref role="1YaFvo" to="45iu:29ahU8t4vCy" resolve="SharedDiskSize" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7UgDMXPpGie">
+    <property role="TrG5h" value="check_DiskSize" />
+    <property role="3GE5qa" value="gridengine" />
+    <node concept="3clFbS" id="7UgDMXPpGif" role="18ibNy">
+      <node concept="3clFbJ" id="7UgDMXPpGil" role="3cqZAp">
+        <node concept="3clFbS" id="7UgDMXPpGim" role="3clFbx">
+          <node concept="3SKdUt" id="1FavoX$wXGG" role="3cqZAp">
+            <node concept="3SKdUq" id="1FavoX$wXGI" role="3SKWNk">
+              <property role="3SKdUp" value="10 GB is the minimum size for the Ubuntu image. We have to change the value if we change image." />
+            </node>
+          </node>
+          <node concept="2MkqsV" id="7UgDMXPpGEr" role="3cqZAp">
+            <node concept="Xl_RD" id="7UgDMXPpGEH" role="2MkJ7o">
+              <property role="Xl_RC" value="Requested disk size cannot be smaller than the image size (10 GB)" />
+            </node>
+            <node concept="1YBJjd" id="7UgDMXPpGF1" role="2OEOjV">
+              <ref role="1YBMHb" node="7UgDMXPpGih" resolve="diskSize" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOVzh" id="7UgDMXPpGBq" role="3clFbw">
+          <node concept="3cmrfG" id="7UgDMXPpGCL" role="3uHU7w">
+            <property role="3cmrfH" value="10" />
+          </node>
+          <node concept="2OqwBi" id="7UgDMXPpGlu" role="3uHU7B">
+            <node concept="1YBJjd" id="7UgDMXPpGiB" role="2Oq$k0">
+              <ref role="1YBMHb" node="7UgDMXPpGih" resolve="diskSize" />
+            </node>
+            <node concept="3TrcHB" id="7UgDMXPpGrk" role="2OqNvi">
+              <ref role="3TsBF5" to="45iu:29ahU8t4v$s" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7UgDMXPpGih" role="1YuTPh">
+      <property role="TrG5h" value="diskSize" />
+      <ref role="1YaFvo" to="45iu:6_LFt8ZwkAZ" resolve="DiskSize" />
     </node>
   </node>
 </model>
