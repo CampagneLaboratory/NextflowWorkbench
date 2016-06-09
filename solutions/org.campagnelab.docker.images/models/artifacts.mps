@@ -8844,5 +8844,63 @@
       <property role="Gyxd1" value="1.5.3" />
     </node>
   </node>
+  <node concept="VuPG2" id="1FavoX$xp9K">
+    <property role="3GE5qa" value="dockerfiles" />
+    <property role="TrG5h" value="ElasticlusterConfigTools" />
+    <property role="2EHzVy" value="content=FROM artifacts/elasticluster:1.5.3&#10;MAINTAINER Manuele Simi &quot;manuele.simi@campagnelab.org&quot;&#10;#clean up the base image&#10;RUN rm -rf /usr/local/elasticluster/config-tools&#10;RUN cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; rm -rf config-tools/.git \&#10;&amp;&amp; cp -r config-tools/playbooks/* /usr/share/elasticluster/providers/ansible-playbooks/roles/ \&#10;&amp;&amp; sed -i.bak 's/- include: roles\/gridengine\.yml/- include: roles\/workflow.yml\n- include: roles\/gridengine.yml\n- include: roles\/gridengine-queue.yml/g' /usr/share/elasticluster/providers/ansible-playbooks/site.yml \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new2&quot;&#10;#welcome message&#10;RUN echo &quot;echo -----------------------------------------&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo WELCOME to the ELASTICLUSTER-CONFIG-TOOLS container!&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo Commands to control your cluster start with cluster-&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo Type cluster- and then press the tab key to discover and invoke them&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo -----------------------------------------&quot; &gt;&gt; $HOME/.bashrc&#10;LABEL org.campagnelab.docker.createdWith=&quot;org.campagnelab.docker&quot;&#10;" />
+    <node concept="VuO64" id="1FavoX$xp9L" role="VuOVn">
+      <node concept="VtuK3" id="1FavoX$xp9N" role="VuO5T">
+        <property role="VuL0s" value="1.5.3" />
+        <property role="VuL0v" value="artifacts" />
+        <property role="GbyUj" value="elasticluster" />
+        <property role="3zaeVo" value="true" />
+      </node>
+    </node>
+    <node concept="VuOhh" id="1FavoX$xp9M" role="VuOVn">
+      <property role="VuOhg" value="Manuele Simi" />
+      <property role="VuOhi" value="manuele.simi@campagnelab.org" />
+    </node>
+    <node concept="2Cort2" id="1FavoX$xpc2" role="VuOVn">
+      <property role="1MaElf" value="clean up the base image" />
+    </node>
+    <node concept="VugRC" id="1FavoX$xpa9" role="VuOVn">
+      <node concept="19SGf9" id="1FavoX$xpbf" role="Vugyn">
+        <node concept="19SUe$" id="1FavoX$xpbg" role="19SJt6">
+          <property role="19SUeA" value="rm -rf /usr/local/elasticluster/config-tools" />
+        </node>
+      </node>
+    </node>
+    <node concept="VugRC" id="1FavoX$xpaK" role="VuOVn">
+      <node concept="19SGf9" id="1FavoX$xpaL" role="Vugyn">
+        <node concept="19SUe$" id="1FavoX$xpaM" role="19SJt6">
+          <property role="19SUeA" value="cd /usr/local/elasticluster \&#10;&amp;&amp; git clone https://github.com/manuelesimi/elasticluster-config-tools.git config-tools \&#10;&amp;&amp; rm -rf config-tools/.git \&#10;&amp;&amp; cp -r config-tools/playbooks/* /usr/share/elasticluster/providers/ansible-playbooks/roles/ \&#10;&amp;&amp; sed -i.bak 's/- include: roles\/gridengine\.yml/- include: roles\/workflow.yml\n- include: roles\/gridengine.yml\n- include: roles\/gridengine-queue.yml/g' /usr/share/elasticluster/providers/ansible-playbooks/site.yml \&#10;&amp;&amp; chmod 777 config-tools/**/* &amp;&amp; echo &quot;export PATH=/usr/local/elasticluster/config-tools/cluster:$PATH&quot; &gt; $HOME/.bashrc &amp;&amp; echo &quot;new2&quot;" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Cort2" id="1FavoX$xsRc" role="VuOVn">
+      <property role="1MaElf" value="welcome message" />
+    </node>
+    <node concept="VugRC" id="1FavoX$xsRd" role="VuOVn">
+      <node concept="19SGf9" id="1FavoX$xsRe" role="Vugyn">
+        <node concept="19SUe$" id="1FavoX$xsRf" role="19SJt6">
+          <property role="19SUeA" value="echo &quot;echo -----------------------------------------&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo WELCOME to the ELASTICLUSTER-CONFIG-TOOLS container!&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo Commands to control your cluster start with cluster-&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo Type cluster- and then press the tab key to discover and invoke them&quot; &gt;&gt; $HOME/.bashrc \&#10;&amp;&amp; echo &quot;echo -----------------------------------------&quot; &gt;&gt; $HOME/.bashrc" />
+        </node>
+      </node>
+    </node>
+    <node concept="3blhQM" id="1FavoX$xsS9" role="3blhQR">
+      <ref role="3blhQY" node="1FavoX$xsS8" resolve="ElasticlusterConfigTools_Image" />
+    </node>
+  </node>
+  <node concept="2E_JVc" id="1FavoX$xsS8">
+    <property role="2E_JEh" value="3332d75e943e" />
+    <property role="TrG5h" value="ElasticlusterConfigTools_Image" />
+    <property role="GSh9r" value="artifacts/elasticluster-config-tools:latest" />
+    <ref role="2E_BxF" node="1FavoX$xp9K" resolve="ElasticlusterConfigTools" />
+    <node concept="Gyxd7" id="1FavoX$xsSo" role="Gyxcj">
+      <property role="Gyxfx" value="artifacts" />
+      <property role="TrG5h" value="elasticluster-config-tools" />
+      <property role="Gyxd1" value="latest" />
+    </node>
+  </node>
 </model>
 
