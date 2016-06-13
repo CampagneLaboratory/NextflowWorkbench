@@ -47,6 +47,7 @@
       <concept id="7391172440898975896" name="org.campagnelab.workflow.structure.TupleElement" flags="ng" index="2zSw2O" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="1980749076351316170" name="org.campagnelab.workflow.structure.File" flags="ng" index="16pRw0" />
+      <concept id="4873360496324422473" name="org.campagnelab.workflow.structure.Integer" flags="ng" index="1utKN4" />
       <concept id="8369613327464344274" name="org.campagnelab.workflow.structure.ProcessInputOutput" flags="ng" index="1uLvKC">
         <child id="7391172440887133304" name="type" index="2ybFLk" />
       </concept>
@@ -59,7 +60,7 @@
     </language>
   </registry>
   <node concept="2ulcR8" id="3a_Ie33Oni_">
-    <property role="TrG5h" value="Download_1M_Reads" />
+    <property role="TrG5h" value="Download_Reads" />
     <node concept="2lYRya" id="iewVIi_Sdy" role="2ulM79">
       <node concept="knwa4" id="iewVIi_Sei" role="2ybFLk">
         <node concept="2zSw2O" id="iewVIi_Sek" role="2zSOd7">
@@ -76,10 +77,20 @@
       <property role="TrG5h" value="id" />
       <node concept="16pbKc" id="3a_Ie33Onj7" role="2ybFLk" />
     </node>
+    <node concept="2mjA9o" id="2rsflnIs5gV" role="2ulM7n">
+      <property role="TrG5h" value="numOfReadsToDownload" />
+      <node concept="1utKN4" id="2rsflnIs5hh" role="2ybFLk" />
+    </node>
     <node concept="3Y$Zt1" id="3a_Ie33Onk7" role="2ulM7a">
       <node concept="19SGf9" id="3a_Ie33Onk9" role="3Y$PkS">
         <node concept="19SUe$" id="3a_Ie33Onka" role="19SJt6">
-          <property role="19SUeA" value="&#10;fastq-dump -X 1000000 --split-files " />
+          <property role="19SUeA" value="&#10;fastq-dump -X " />
+        </node>
+        <node concept="3YE7tV" id="2rsflnIs5td" role="19SJt6">
+          <ref role="3YE7sm" node="2rsflnIs5gV" resolve="numOfReadsToDownload" />
+        </node>
+        <node concept="19SUe$" id="2rsflnIs5tc" role="19SJt6">
+          <property role="19SUeA" value=" --split-files " />
         </node>
         <node concept="3YE7tV" id="3a_Ie33Onkg" role="19SJt6">
           <ref role="3YE7sm" node="3a_Ie33OniZ" resolve="id" />
@@ -96,50 +107,6 @@
       </node>
     </node>
     <node concept="VtuK3" id="3a_Ie33Onkk" role="234boB">
-      <property role="VuL0s" value="latest" />
-      <property role="GbyUj" value="sra-toolkit" />
-      <property role="VuL0v" value="inutano" />
-      <property role="3zaeVo" value="true" />
-    </node>
-  </node>
-  <node concept="2ulcR8" id="1FavoX$x$Oc">
-    <property role="TrG5h" value="Download_5_Reads" />
-    <node concept="2lYRya" id="1FavoX$x$Od" role="2ulM79">
-      <node concept="knwa4" id="1FavoX$x$Oe" role="2ybFLk">
-        <node concept="2zSw2O" id="1FavoX$x$Of" role="2zSOd7">
-          <property role="TrG5h" value="'*_1.fastq.gz'" />
-          <node concept="16pRw0" id="1FavoX$x$Og" role="2ybFLk" />
-        </node>
-        <node concept="2zSw2O" id="1FavoX$x$Oh" role="2zSOd7">
-          <property role="TrG5h" value="'*_2.fastq.gz'" />
-          <node concept="16pRw0" id="1FavoX$x$Oi" role="2ybFLk" />
-        </node>
-      </node>
-    </node>
-    <node concept="2mjA9o" id="1FavoX$x$Oj" role="2ulM7n">
-      <property role="TrG5h" value="id" />
-      <node concept="16pbKc" id="1FavoX$x$Ok" role="2ybFLk" />
-    </node>
-    <node concept="3Y$Zt1" id="1FavoX$x$Ol" role="2ulM7a">
-      <node concept="19SGf9" id="1FavoX$x$Om" role="3Y$PkS">
-        <node concept="19SUe$" id="1FavoX$x$On" role="19SJt6">
-          <property role="19SUeA" value="&#10;fastq-dump -X 5 --split-files " />
-        </node>
-        <node concept="3YE7tV" id="1FavoX$x$Oo" role="19SJt6">
-          <ref role="3YE7sm" node="1FavoX$x$Oj" resolve="id" />
-        </node>
-        <node concept="19SUe$" id="1FavoX$x$Op" role="19SJt6">
-          <property role="19SUeA" value="&#10;gzip " />
-        </node>
-        <node concept="3YE7tV" id="1FavoX$x$Oq" role="19SJt6">
-          <ref role="3YE7sm" node="1FavoX$x$Oj" resolve="id" />
-        </node>
-        <node concept="19SUe$" id="1FavoX$x$Or" role="19SJt6">
-          <property role="19SUeA" value="_*.fastq&#10;" />
-        </node>
-      </node>
-    </node>
-    <node concept="VtuK3" id="1FavoX$x$Os" role="234boB">
       <property role="VuL0s" value="latest" />
       <property role="GbyUj" value="sra-toolkit" />
       <property role="VuL0v" value="inutano" />

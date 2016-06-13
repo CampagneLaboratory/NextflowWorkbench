@@ -84,6 +84,9 @@
       <concept id="3653684473245040478" name="org.campagnelab.workflow.structure.NewStringLiteral" flags="ng" index="2J_g7P">
         <property id="3653684473245041443" name="value" index="2J_vQ8" />
       </concept>
+      <concept id="3653684473245054612" name="org.campagnelab.workflow.structure.NewIntegerLiteral" flags="ng" index="2J_swZ">
+        <property id="3653684473245054659" name="value" index="2J_sxC" />
+      </concept>
       <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
         <child id="3653684473245054701" name="elementType" index="2J_sx6" />
       </concept>
@@ -144,7 +147,7 @@
   <node concept="3zOPYP" id="1FavoX$xsQi">
     <property role="TrG5h" value="ManageCloudCluster" />
     <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
-    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:37 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@5d26271c secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
+    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:37 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@2a1c1062 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
     <ref role="1QJbqN" node="7UgDMXPp$tz" resolve="docker.config" />
     <node concept="VtuK3" id="1FavoX$xsQj" role="234boB">
       <property role="VuL0s" value="1.5.4" />
@@ -199,7 +202,7 @@
   <node concept="2$rMIF" id="3a_Ie33Oncy">
     <property role="TrG5h" value="FastqKallistoCounts" />
     <node concept="2$rEH5" id="3a_Ie33Onib" role="2$rEHq">
-      <ref role="2$rEH4" to="pmhg:3a_Ie33Oni_" resolve="Download_1M_Reads" />
+      <ref role="2$rEH4" to="pmhg:3a_Ie33Oni_" resolve="Download_Reads" />
       <node concept="2tD$Xd" id="59BvSKQZ7BC" role="1uLvPA">
         <property role="TrG5h" value="reads" />
         <node concept="1$0uN4" id="59BvSKQZ7KI" role="2tD$Xc">
@@ -211,6 +214,9 @@
       </node>
       <node concept="1uYdA0" id="3a_Ie33OnkF" role="1uLvPH">
         <ref role="1uK_4X" node="59BvSKQO37s" resolve="IDsToDownload" />
+      </node>
+      <node concept="1uYdA0" id="2rsflnIs5xJ" role="1uLvPH">
+        <ref role="1uK_4X" node="2rsflnIs5Jy" resolve="ReadsToDownload" />
       </node>
     </node>
     <node concept="2$rEH5" id="iewVIi_TdJ" role="2$rEHq">
@@ -262,6 +268,38 @@
         <node concept="2J_g7P" id="1FavoX$xCQE" role="2J_sx6">
           <property role="2J_vQ8" value="SRR1514133" />
         </node>
+        <node concept="2J_g7P" id="59BvSKQOR7n" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514134" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7o" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514135" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7p" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514136" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7q" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514137" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7r" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514138" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7s" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514139" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7t" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514140" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7u" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514141" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="2rsflnIs5Jy" role="2$L6iY">
+      <property role="TrG5h" value="ReadsToDownload" />
+      <node concept="2J_sx7" id="2rsflnIs5Jz" role="2$L62I">
+        <node concept="2J_swZ" id="2rsflnIs81P" role="2J_sx6">
+          <property role="2J_sxC" value="5" />
+        </node>
       </node>
     </node>
   </node>
@@ -284,7 +322,7 @@
         <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
       </node>
       <node concept="3yU_OC" id="1FavoX$xB_u" role="3yU_ON">
-        <property role="3yU_OX" value="104.196.35.129" />
+        <property role="3yU_OX" value="104.196.123.214" />
       </node>
     </node>
   </node>
