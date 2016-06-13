@@ -6,9 +6,9 @@ import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.template.BaseMappingRuleContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import org.apache.commons.io.FilenameUtils;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -20,13 +20,13 @@ import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 @Generated
 public class QueriesGenerated {
   public static boolean baseMappingRule_Condition_6352769549772102796(final BaseMappingRuleContext _context) {
-    return (SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")) != null);
+    return (SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")) != null) && !(SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")), MetaAdapterFactory.getProperty(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e33L, 0x26dc3d55ee7b69a6L, "disabled")));
   }
   public static boolean baseMappingRule_Condition_6352769549772114611(final BaseMappingRuleContext _context) {
-    return (SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")) != null);
+    return (SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")) != null) && !(SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")), MetaAdapterFactory.getProperty(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e33L, 0x26dc3d55ee7b69a6L, "disabled")));
   }
   public static boolean baseMappingRule_Condition_6352769549772121423(final BaseMappingRuleContext _context) {
-    return (SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")) != null);
+    return (SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")) != null) && !(SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bf4a87e3L, 0x5c331306bf4a87e6L, "remoteSubmission")), MetaAdapterFactory.getProperty(0xf9b7dda67ab54936L, 0xad1b2d45c57833dcL, 0x5c331306bed94e33L, 0x26dc3d55ee7b69a6L, "disabled")));
   }
   public static Object propertyMacro_GetPropertyValue_6944046859725147657(final PropertyMacroContext _context) {
     return String.format("${env.PATH}:/%s", FilenameUtils.getPath(SPropertyOperations.getString(ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getNode()), MetaAdapterFactory.getConcept(0x25281c034a7c4b57L, 0x922124a10fc36ef5L, 0x7cb9b400d612dc01L, "org.campagnelab.docker.structure.Config"))).first(), MetaAdapterFactory.getProperty(0x25281c034a7c4b57L, 0x922124a10fc36ef5L, 0x7cb9b400d612dc01L, 0x7cb9b400d612dc02L, "pathToDocker"))));

@@ -102,6 +102,10 @@
     <property role="R4oN_" value="Configuration for remote execution" />
     <property role="1pbfSe" value="453796153" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2rsflnIuQAA" role="1TKVEl">
+      <property role="TrG5h" value="disabled" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="5KN4KqYQkSO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

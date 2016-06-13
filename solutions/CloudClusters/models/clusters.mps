@@ -36,6 +36,7 @@
       <concept id="6643674794994257454" name="org.campagnelab.workflow.configuration.structure.Hostname" flags="ng" index="3yU_OC" />
       <concept id="6643674794994257455" name="org.campagnelab.workflow.configuration.structure.JobArea" flags="ng" index="3yU_OD" />
       <concept id="6643674794994257459" name="org.campagnelab.workflow.configuration.structure.RemoteSubmissionConfig" flags="ng" index="3yU_OP">
+        <property id="2800180507600185766" name="disabled" index="38DPjN" />
         <child id="6643674794994257462" name="username" index="3yU_OK" />
         <child id="6643674794994257463" name="jobArea" index="3yU_OL" />
         <child id="6643674794994257461" name="hostname" index="3yU_ON" />
@@ -310,18 +311,19 @@
     </node>
     <node concept="3zuAPG" id="1FavoX$xB_9" role="3zupjy" />
     <node concept="3qaZdc" id="1FavoX$xB_4" role="3qaWS2" />
-    <node concept="3yU_OP" id="1FavoX$xB_q" role="3zupjw">
+    <node concept="3yU_OP" id="2rsflnIuYV4" role="3zupjw">
       <property role="TrG5h" value="remote.config" />
-      <node concept="3yU_OV" id="1FavoX$xB_r" role="3yU_OK">
+      <property role="38DPjN" value="false" />
+      <node concept="3yU_OV" id="2rsflnIuYV5" role="3yU_OK">
         <property role="3yU_OX" value="ubuntu" />
       </node>
-      <node concept="3yU_OD" id="1FavoX$xB_s" role="3yU_OL">
-        <property role="3yU_OX" value="/home/ubuntu" />
+      <node concept="3yU_OD" id="2rsflnIuYV6" role="3yU_OL">
+        <property role="3yU_OX" value="/home/ubuntu/JOBS" />
       </node>
-      <node concept="3yU_OQ" id="1FavoX$xB_t" role="3yU_OY">
+      <node concept="3yU_OQ" id="2rsflnIuYV7" role="3yU_OY">
         <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
       </node>
-      <node concept="3yU_OC" id="1FavoX$xB_u" role="3yU_ON">
+      <node concept="3yU_OC" id="2rsflnIuYV8" role="3yU_ON">
         <property role="3yU_OX" value="104.196.123.214" />
       </node>
     </node>
