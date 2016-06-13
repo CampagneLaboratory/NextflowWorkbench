@@ -587,5 +587,17 @@
       <node concept="l2Vlx" id="5G7wwTNBOxT" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="1dL8OevkYuE">
+    <ref role="1XX52x" to="dlwq:1dL8Oevk$6j" resolve="DockerRunOptions" />
+    <node concept="3EZMnI" id="1dL8OevkYuG" role="2wV5jI">
+      <node concept="3F0ifn" id="1dL8OevkYuZ" role="3EZMnx">
+        <property role="3F0ifm" value="options for docker run:: " />
+      </node>
+      <node concept="3F0A7n" id="1dL8OevkYvh" role="3EZMnx">
+        <ref role="1NtTu8" to="dlwq:1dL8Oevk$7i" resolve="options" />
+      </node>
+      <node concept="l2Vlx" id="1dL8OevkYuJ" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

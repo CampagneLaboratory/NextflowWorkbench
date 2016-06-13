@@ -466,6 +466,7 @@
   <node concept="1TIwiD" id="5G7wwTNBNZh">
     <property role="TrG5h" value="DockerMountDirectiveOption" />
     <property role="1pbfSe" value="827932193" />
+    <property role="34LRSv" value="mount" />
     <ref role="1TJDcQ" node="1nj$XVfY5RF" resolve="ContainerOption" />
     <node concept="1TJgyi" id="5G7wwTNBO36" role="1TKVEl">
       <property role="TrG5h" value="localPath" />
@@ -483,6 +484,17 @@
     <property role="34LRSv" value="scratch" />
     <property role="R4oN_" value="Execute the process in a temporary folder that is local to the execution node" />
     <ref role="1TJDcQ" node="dhtvqFdzNV" resolve="StringOption" />
+  </node>
+  <node concept="1TIwiD" id="1dL8Oevk$6j">
+    <property role="1pbfSe" value="1295817514" />
+    <property role="TrG5h" value="DockerRunOptions" />
+    <property role="34LRSv" value="run-options" />
+    <property role="R4oN_" value="extra command line options supported by the docker run command." />
+    <ref role="1TJDcQ" node="1nj$XVfY5RF" resolve="ContainerOption" />
+    <node concept="1TJgyi" id="1dL8Oevk$7i" role="1TKVEl">
+      <property role="TrG5h" value="options" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 
