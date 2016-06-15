@@ -2141,5 +2141,21 @@
     <property role="1pbfSe" value="1992150335" />
     <property role="TrG5h" value="OutChannelListContainer" />
   </node>
+  <node concept="1TIwiD" id="1dL8OevCtOz">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <property role="TrG5h" value="ConstantRepeat" />
+    <property role="34LRSv" value="constantRepeat" />
+    <property role="R4oN_" value="Use the element or the first matching the condition as constant" />
+    <property role="1pbfSe" value="1290600346" />
+    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
+    <node concept="PrWs8" id="1dL8OevCtUo" role="PzmwI">
+      <ref role="PrY4T" node="1dL8OevCtTA" resolve="FunctionNAinNextflow" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1dL8OevCtTA">
+    <property role="1pbfSe" value="1290600023" />
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <property role="TrG5h" value="FunctionNAinNextflow" />
+  </node>
 </model>
 
