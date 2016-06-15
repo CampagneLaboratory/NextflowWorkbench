@@ -6366,5 +6366,42 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="1dL8OevCtTB">
+    <property role="3GE5qa" value="channelFunctions.closureFunctions" />
+    <ref role="13h7C2" to="iowz:1dL8OevCtTA" resolve="FunctionNAinNextflow" />
+    <node concept="13i0hz" id="1dL8OevCtTE" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="functionName" />
+      <node concept="3Tm1VV" id="1dL8OevCtTF" role="1B3o_S" />
+      <node concept="3clFbS" id="1dL8OevCtTG" role="3clF47" />
+      <node concept="17QB3L" id="1dL8OevCtUe" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="1dL8OevCtTC" role="13h7CW">
+      <node concept="3clFbS" id="1dL8OevCtTD" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1dL8OevCtUx">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="13h7C2" to="iowz:1dL8OevCtOz" resolve="ConstantRepeat" />
+    <node concept="13hLZK" id="1dL8OevCtUy" role="13h7CW">
+      <node concept="3clFbS" id="1dL8OevCtUz" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1dL8OevCtU$" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="functionName" />
+      <ref role="13i0hy" node="1dL8OevCtTE" resolve="functionName" />
+      <node concept="3Tm1VV" id="1dL8OevCtU_" role="1B3o_S" />
+      <node concept="3clFbS" id="1dL8OevCtUC" role="3clF47">
+        <node concept="3cpWs6" id="1dL8OevCtWd" role="3cqZAp">
+          <node concept="Xl_RD" id="1dL8OevCtWe" role="3cqZAk">
+            <property role="Xl_RC" value="first" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1dL8OevCtUD" role="3clF45" />
+    </node>
+  </node>
 </model>
 
