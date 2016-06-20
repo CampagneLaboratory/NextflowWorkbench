@@ -139,6 +139,14 @@
         <property id="6943940549894658026" name="filename" index="3pIKb9" />
       </concept>
     </language>
+    <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
+      <concept id="239101957524907605" name="org.campagnelab.workflow.configuration.structure.IntegerOption" flags="ng" index="2C3xez">
+        <property id="239101957524907649" name="value" index="2C3xdR" />
+      </concept>
+      <concept id="6682645635667201900" name="org.campagnelab.workflow.configuration.structure.MemoryDynamic" flags="ng" index="3PvSAw">
+        <property id="6682645635667201909" name="increment" index="3PvSAT" />
+      </concept>
+    </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
       <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
         <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
@@ -160,6 +168,8 @@
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
+        <child id="5930160417388206667" name="processOptions" index="2xNrcL" />
+        <child id="6682645635666851934" name="comment" index="3P0jUi" />
       </concept>
       <concept id="7391172440898975896" name="org.campagnelab.workflow.structure.TupleElement" flags="ng" index="2zSw2O" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
@@ -177,6 +187,10 @@
   </registry>
   <node concept="2ulcR8" id="59BvSKQHAFs">
     <property role="TrG5h" value="KallistoCountsWithTuples" />
+    <node concept="3PvSAw" id="5MXxGMDLx46" role="2xNrcL">
+      <property role="2C3xdR" value="7" />
+      <property role="3PvSAT" value="2" />
+    </node>
     <node concept="VtuK3" id="59BvSKQHAFt" role="234boB">
       <property role="VuL0s" value="1.0.1" />
       <property role="GbyUj" value="kallisto-homo-sapiens" />
@@ -643,9 +657,18 @@
         </node>
       </node>
     </node>
+    <node concept="19SGf9" id="5MXxGMDJNiB" role="3P0jUi">
+      <node concept="19SUe$" id="5MXxGMDJNiC" role="19SJt6">
+        <property role="19SUeA" value="&#10;Here's a comment about the following process:&#10;&#10;" />
+      </node>
+    </node>
   </node>
   <node concept="2ulcR8" id="mLKgp_dTg1">
     <property role="TrG5h" value="KallistoHDF5WithTuples" />
+    <node concept="3PvSAw" id="5MXxGMDLx54" role="2xNrcL">
+      <property role="2C3xdR" value="7" />
+      <property role="3PvSAT" value="2" />
+    </node>
     <node concept="2mjA9o" id="mLKgp_eeMt" role="2ulM7n">
       <property role="TrG5h" value="readURL" />
       <node concept="16pbKc" id="mLKgp_eRuU" role="2ybFLk" />

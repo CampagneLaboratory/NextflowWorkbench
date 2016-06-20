@@ -22,6 +22,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
+      <concept id="239101957524907605" name="org.campagnelab.workflow.configuration.structure.IntegerOption" flags="ng" index="2C3xez">
+        <property id="239101957524907649" name="value" index="2C3xdR" />
+      </concept>
+      <concept id="6682645635667201900" name="org.campagnelab.workflow.configuration.structure.MemoryDynamic" flags="ng" index="3PvSAw">
+        <property id="6682645635667201909" name="increment" index="3PvSAT" />
+      </concept>
+    </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
       <concept id="1893262236499303418" name="org.campagnelab.docker.structure.ImageInfoForDockerContainer" flags="ng" index="VtuK3">
         <property id="1859325667731392527" name="isLocal" index="3zaeVo" />
@@ -43,6 +51,7 @@
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
         <child id="7457140171610928307" name="script" index="2ulM7a" />
         <child id="7457140171610928302" name="inputs" index="2ulM7n" />
+        <child id="5930160417388206667" name="processOptions" index="2xNrcL" />
       </concept>
       <concept id="7391172440898975896" name="org.campagnelab.workflow.structure.TupleElement" flags="ng" index="2zSw2O" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
@@ -61,6 +70,10 @@
   </registry>
   <node concept="2ulcR8" id="3a_Ie33Oni_">
     <property role="TrG5h" value="Download_Reads" />
+    <node concept="3PvSAw" id="5MXxGMDKOa1" role="2xNrcL">
+      <property role="2C3xdR" value="1" />
+      <property role="3PvSAT" value="1" />
+    </node>
     <node concept="2lYRya" id="iewVIi_Sdy" role="2ulM79">
       <node concept="knwa4" id="iewVIi_Sei" role="2ybFLk">
         <node concept="2zSw2O" id="iewVIi_Sek" role="2zSOd7">
