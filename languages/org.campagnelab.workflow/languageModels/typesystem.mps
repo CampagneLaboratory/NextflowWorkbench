@@ -394,6 +394,10 @@
       <concept id="3121388506938957370" name="org.campagnelab.workflow.structure.TupleType" flags="ig" index="1h3xP">
         <child id="7581087959662683399" name="type" index="1nAwDi" />
       </concept>
+      <concept id="4018964125401476997" name="org.campagnelab.workflow.structure.List" flags="ng" index="kktkh">
+        <child id="7391172440886351025" name="elementType" index="2y8EMt" />
+      </concept>
+      <concept id="7391172440886743145" name="org.campagnelab.workflow.structure.ProcessTypeDeclaration" flags="ng" index="2y9ax5" />
       <concept id="1980749076351268038" name="org.campagnelab.workflow.structure.String" flags="ng" index="16pbKc" />
       <concept id="3526016120162721360" name="org.campagnelab.workflow.structure.FileType" flags="ig" index="3UtRaE" />
     </language>
@@ -7238,6 +7242,48 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5MXxGMDMAh0">
+    <property role="TrG5h" value="typeof_ConstantRepeat" />
+    <node concept="3clFbS" id="5MXxGMDMAh1" role="18ibNy">
+      <node concept="3Knyl0" id="5MXxGMDNvF3" role="3cqZAp">
+        <node concept="3clFbS" id="5MXxGMDNvF7" role="3KnTvU" />
+        <node concept="1Yb3XT" id="5MXxGMDNvJF" role="3KnVwV">
+          <property role="TrG5h" value="list" />
+          <node concept="2DMOqp" id="5MXxGMDNvJH" role="1YbcFS">
+            <node concept="kktkh" id="5MXxGMDNvLg" role="2DMOqq">
+              <node concept="2y9ax5" id="5MXxGMDNvLh" role="2y8EMt">
+                <node concept="2DMOqv" id="5MXxGMDNvLy" role="lGtFl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Z2H0r" id="5MXxGMDNv0e" role="3Ko5Z1">
+          <node concept="2OqwBi" id="5MXxGMDNu89" role="1Z2MuG">
+            <node concept="1YBJjd" id="5MXxGMDNu5_" role="2Oq$k0">
+              <ref role="1YBMHb" node="5MXxGMDMAh3" resolve="constantRepeat" />
+            </node>
+            <node concept="2qgKlT" id="5MXxGMDNuvB" role="2OqNvi">
+              <ref role="37wK5l" to="mqvz:7mWvTummKDC" resolve="getPreviousNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="5MXxGMDNvLO" role="CjY0n">
+          <node concept="2MkqsV" id="5MXxGMDNvLL" role="3cqZAp">
+            <node concept="Xl_RD" id="5MXxGMDNvNw" role="2MkJ7o">
+              <property role="Xl_RC" value="constantRepeat can only be applied to a channel." />
+            </node>
+            <node concept="1YBJjd" id="5MXxGMDNvO$" role="2OEOjV">
+              <ref role="1YBMHb" node="5MXxGMDMAh3" resolve="constantRepeat" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5MXxGMDMAh3" role="1YuTPh">
+      <property role="TrG5h" value="constantRepeat" />
+      <ref role="1YaFvo" to="iowz:1dL8OevCtOz" resolve="ConstantRepeat" />
     </node>
   </node>
 </model>

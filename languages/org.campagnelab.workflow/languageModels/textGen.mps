@@ -4895,6 +4895,9 @@
               <ref role="3cqZAo" node="1dL8OevCwsx" resolve="functionName" />
             </node>
           </node>
+          <node concept="la8eA" id="5MXxGMDOgvS" role="lcghm">
+            <property role="lacIc" value="()" />
+          </node>
         </node>
         <node concept="3clFbJ" id="5_QUmRoW593" role="3cqZAp">
           <node concept="3clFbS" id="5_QUmRoW594" role="3clFbx">
@@ -6214,6 +6217,22 @@
                 <ref role="37wK5l" to="mqvz:3ziB45$3KqB" resolve="asValidId" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="5MXxGMDMbC7">
+    <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
+    <ref role="WuzLi" to="iowz:1dL8OevCtOz" resolve="ConstantRepeat" />
+    <node concept="11bSqf" id="5MXxGMDMbC8" role="11c4hB">
+      <node concept="3clFbS" id="5MXxGMDMbC9" role="2VODD2">
+        <node concept="lc7rE" id="5MXxGMDMbHg" role="3cqZAp">
+          <node concept="la8eA" id="5MXxGMDMpBK" role="lcghm">
+            <property role="lacIc" value="first()" />
+          </node>
+          <node concept="la8eA" id="5MXxGMDMc8b" role="lcghm">
+            <property role="lacIc" value="{ }" />
           </node>
         </node>
       </node>

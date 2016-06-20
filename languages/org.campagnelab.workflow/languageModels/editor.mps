@@ -3834,5 +3834,12 @@
       <node concept="l2Vlx" id="59BvSKQO3L$" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5MXxGMDLXYe">
+    <ref role="1XX52x" to="iowz:1dL8OevCtOz" resolve="ConstantRepeat" />
+    <node concept="3F0ifn" id="5MXxGMDLXYg" role="2wV5jI">
+      <property role="3F0ifm" value="constantRepeat()" />
+      <ref role="1k5W1q" node="5yyd2HFt1$c" resolve="Function" />
+    </node>
+  </node>
 </model>
 

@@ -2150,9 +2150,9 @@
     <property role="3GE5qa" value="channelFunctions.miscArgFunctions" />
     <property role="TrG5h" value="ConstantRepeat" />
     <property role="34LRSv" value="constantRepeat" />
-    <property role="R4oN_" value="Use the element or the first matching the condition as constant" />
+    <property role="R4oN_" value="Treat the value in this channel as a constant and repeat" />
     <property role="1pbfSe" value="1290600346" />
-    <ref role="1TJDcQ" node="XaRILis0lI" resolve="FunctionWithClosure" />
+    <ref role="1TJDcQ" node="XaRILhrTOx" resolve="NoArgFunction" />
     <node concept="PrWs8" id="1dL8OevCtUo" role="PzmwI">
       <ref role="PrY4T" node="1dL8OevCtTA" resolve="FunctionNAinNextflow" />
     </node>
