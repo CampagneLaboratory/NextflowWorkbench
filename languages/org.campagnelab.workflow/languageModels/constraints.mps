@@ -12,6 +12,8 @@
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="ki29" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.baseLanguage.util(MPS.Platform/)" />
+    <import index="pz2c" ref="r:2a308ea0-c7e3-4fa5-a624-ad74ee5cfab5(jetbrains.mps.baseLanguage.util)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
@@ -1561,15 +1563,20 @@
                   <node concept="1Wqviy" id="3rUult5a3Nj" role="37wK5m" />
                 </node>
               </node>
-              <node concept="3fqX7Q" id="7QD3Ggaov9m" role="3uHU7B">
-                <node concept="1eOMI4" id="7QD3Ggaovyw" role="3fr31v">
-                  <node concept="2OqwBi" id="7QD3Ggaov9o" role="1eOMHV">
-                    <node concept="1Wqviy" id="7QD3Ggaov9p" role="2Oq$k0" />
-                    <node concept="liA8E" id="7QD3Ggaov9q" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
-                      <node concept="Xl_RD" id="7QD3Ggaov9r" role="37wK5m">
-                        <property role="Xl_RC" value=".*[\\W&amp;&amp;[^ ]].*" />
-                      </node>
+              <node concept="1Wc70l" id="DxJezr2fbp" role="3uHU7B">
+                <node concept="3fqX7Q" id="DxJezr2fbs" role="3uHU7w">
+                  <node concept="2YIFZM" id="DxJezr2qvJ" role="3fr31v">
+                    <ref role="1Pybhc" to="pz2c:6FltliuC5is" resolve="IdentifierConstraintsUtil" />
+                    <ref role="37wK5l" to="pz2c:DxJezr2d4j" resolve="isJavaReserved" />
+                    <node concept="1Wqviy" id="DxJezr2qvK" role="37wK5m" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="hDMFLSy" role="3uHU7B">
+                  <node concept="1Wqviy" id="hDMFLSz" role="2Oq$k0" />
+                  <node concept="liA8E" id="hDMFLS$" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                    <node concept="Xl_RD" id="hDMFLS_" role="37wK5m">
+                      <property role="Xl_RC" value="[a-zA-Z$[_]][a-zA-Z0-9$[_]]*" />
                     </node>
                   </node>
                 </node>
