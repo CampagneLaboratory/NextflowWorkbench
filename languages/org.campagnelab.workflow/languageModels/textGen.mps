@@ -21,6 +21,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="yy4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textGen(MPS.Core/)" implicit="true" />
+    <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
     <import index="tpfs" ref="r:00000000-0000-4000-0000-011c89590514(jetbrains.mps.baseLanguage.regexp.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -366,7 +367,18 @@
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
+      <concept id="9042586985346099698" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachStatement" flags="nn" index="1_o_46">
+        <child id="9042586985346099734" name="forEach" index="1_o_by" />
+      </concept>
+      <concept id="9042586985346099733" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachPair" flags="ng" index="1_o_bx">
+        <child id="9042586985346099778" name="variable" index="1_o_aQ" />
+        <child id="9042586985346099735" name="input" index="1_o_bz" />
+      </concept>
+      <concept id="9042586985346099736" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachVariable" flags="ng" index="1_o_bG" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
+      <concept id="8293956702609956630" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachVariableReference" flags="nn" index="3M$PaV">
+        <reference id="8293956702609966325" name="variable" index="3M$S_o" />
+      </concept>
       <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
   </registry>
@@ -895,6 +907,57 @@
       <property role="TrG5h" value="processRef" />
       <node concept="3cqZAl" id="34JZ5vrXtae" role="3clF45" />
       <node concept="3clFbS" id="34JZ5vrXtaf" role="3clF47">
+        <node concept="lc7rE" id="5MXxGMDJPdH" role="3cqZAp">
+          <node concept="la8eA" id="5MXxGMDJPuB" role="lcghm">
+            <property role="lacIc" value="/*" />
+          </node>
+          <node concept="l8MVK" id="5MXxGMDJQsg" role="lcghm" />
+        </node>
+        <node concept="1_o_46" id="5MXxGMDK5kY" role="3cqZAp">
+          <node concept="3clFbS" id="5MXxGMDK5l0" role="2LFqv$">
+            <node concept="lc7rE" id="5MXxGMDJQIs" role="3cqZAp">
+              <node concept="la8eA" id="5MXxGMDJU7T" role="lcghm">
+                <property role="lacIc" value=" * " />
+              </node>
+              <node concept="l9hG8" id="5MXxGMDK64b" role="lcghm">
+                <node concept="3M$PaV" id="5MXxGMDK64S" role="lb14g">
+                  <ref role="3M$S_o" node="5MXxGMDK5l6" resolve="line" />
+                </node>
+              </node>
+              <node concept="l8MVK" id="5MXxGMDK67H" role="lcghm" />
+            </node>
+          </node>
+          <node concept="1_o_bx" id="5MXxGMDK5l2" role="1_o_by">
+            <node concept="1_o_bG" id="5MXxGMDK5l6" role="1_o_aQ">
+              <property role="TrG5h" value="line" />
+            </node>
+            <node concept="2OqwBi" id="5MXxGMDJRUB" role="1_o_bz">
+              <node concept="2OqwBi" id="5MXxGMDJRzI" role="2Oq$k0">
+                <node concept="2OqwBi" id="5MXxGMDJRmQ" role="2Oq$k0">
+                  <node concept="37vLTw" id="5MXxGMDJRkR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="34JZ5vrXtnQ" resolve="processRef" />
+                  </node>
+                  <node concept="3TrEf2" id="5MXxGMDJRtz" role="2OqNvi">
+                    <ref role="3Tt5mk" to="iowz:5D7AjvYaj9N" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="5MXxGMDJRJT" role="2OqNvi">
+                  <ref role="3Tt5mk" to="iowz:5MXxGMDJbxu" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="5MXxGMDJStI" role="2OqNvi">
+                <ref role="37wK5l" to="tbr6:7T88Na6$wwy" resolve="getTextLines" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="5MXxGMDJQ0f" role="3cqZAp">
+          <node concept="la8eA" id="5MXxGMDJQ0g" role="lcghm">
+            <property role="lacIc" value=" */" />
+          </node>
+          <node concept="l8MVK" id="5MXxGMDJQm7" role="lcghm" />
+        </node>
+        <node concept="3clFbH" id="5MXxGMDJPOh" role="3cqZAp" />
         <node concept="lc7rE" id="1D6dZ$wRpBK" role="3cqZAp">
           <node concept="la8eA" id="1D6dZ$wRpBL" role="lcghm">
             <property role="lacIc" value="process " />
