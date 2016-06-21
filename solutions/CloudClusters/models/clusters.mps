@@ -53,7 +53,7 @@
         <child id="6643674795001677796" name="executor" index="3zupjy" />
         <child id="6643674795001677797" name="processOptions" index="3zupjz" />
       </concept>
-      <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG" />
+      <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
     </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
@@ -70,6 +70,9 @@
       </concept>
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
+      <concept id="8528134073268331577" name="org.campagnelab.workflow.structure.ConstantExpression" flags="ng" index="4iA3S">
+        <child id="8528134073268547180" name="expression" index="4iqEH" />
+      </concept>
       <concept id="6042700048959911136" name="org.campagnelab.workflow.structure.DuplicateOutputChannelList" flags="ng" index="2tD$Xd">
         <child id="6042700048959911137" name="channels" index="2tD$Xc" />
       </concept>
@@ -246,7 +249,7 @@
       </node>
       <node concept="1uYdA0" id="59BvSKQHDKa" role="1uLvPH">
         <ref role="1uK_4X" node="59BvSKQOg5v" resolve="IDsToCombine" />
-        <node concept="1yaYav" id="59BvSKQHFIw" role="1ylr64" />
+        <node concept="1yaYav" id="5MXxGMDHcoL" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="59BvSKQHDKb" role="1uLvPA">
         <property role="TrG5h" value="combined" />
@@ -297,8 +300,8 @@
     </node>
     <node concept="1CVceo" id="2rsflnIs5Jy" role="2$L6iY">
       <property role="TrG5h" value="ReadsToDownload" />
-      <node concept="2J_sx7" id="2rsflnIs5Jz" role="2$L62I">
-        <node concept="2J_swZ" id="2rsflnIs81P" role="2J_sx6">
+      <node concept="4iA3S" id="5MXxGMDNY6P" role="2$L62I">
+        <node concept="2J_swZ" id="5MXxGMDNYh9" role="4iqEH">
           <property role="2J_sxC" value="5" />
         </node>
       </node>
@@ -309,11 +312,11 @@
     <node concept="2Xzwfg" id="1FavoX$xB_k" role="3zupjz">
       <property role="2C0Vil" value="/scratch" />
     </node>
-    <node concept="3zuAPG" id="1FavoX$xB_9" role="3zupjy" />
+    <node concept="3zuAPI" id="5MXxGMDLguQ" role="3zupjy" />
     <node concept="3qaZdc" id="1FavoX$xB_4" role="3qaWS2" />
     <node concept="3yU_OP" id="2rsflnIuYV4" role="3zupjw">
       <property role="TrG5h" value="remote.config" />
-      <property role="38DPjN" value="false" />
+      <property role="38DPjN" value="true" />
       <node concept="3yU_OV" id="2rsflnIuYV5" role="3yU_OK">
         <property role="3yU_OX" value="ubuntu" />
       </node>
