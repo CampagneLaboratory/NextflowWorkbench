@@ -151,7 +151,7 @@
   <node concept="3zOPYP" id="1FavoX$xsQi">
     <property role="TrG5h" value="ManageCloudCluster" />
     <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
-    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:37 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@2a1c1062 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
+    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:37 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@72d6aabb secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
     <ref role="1QJbqN" node="7UgDMXPp$tz" resolve="docker.config" />
     <node concept="VtuK3" id="1FavoX$xsQj" role="234boB">
       <property role="VuL0s" value="1.5.4" />
@@ -163,7 +163,7 @@
       <property role="TrG5h" value="cluster.config" />
       <node concept="1Q0NwO" id="1FavoX$xsQl" role="2KSRPJ">
         <property role="TrG5h" value="Cluster name" />
-        <property role="Zm4_2" value="KallistoTest3" />
+        <property role="Zm4_2" value="QueueReconfigTest" />
       </node>
       <node concept="1Q2HBG" id="1FavoX$xsQm" role="2KSRPJ">
         <property role="TrG5h" value="Zone for cluster resources" />
@@ -179,7 +179,7 @@
       </node>
       <node concept="ZmVQ0" id="1FavoX$xsQp" role="2KSRPJ">
         <property role="TrG5h" value="Shared file system size" />
-        <property role="ZmVUY" value="50" />
+        <property role="ZmVUY" value="20" />
       </node>
       <node concept="3zO_zJ" id="1FavoX$xsQq" role="2KSRPJ">
         <property role="TrG5h" value="Number of worker nodes" />
