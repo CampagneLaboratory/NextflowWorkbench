@@ -3547,6 +3547,12 @@
             <ref role="3bR37D" to="t9i9:2mFg1uCD9q3" resolve="org.campagnelab.nyosh.lib" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5t2Hg$bsIfp" role="3bR37C">
+          <node concept="3bR9La" id="5t2Hg$bsIfq" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6nLXN__2exd" resolve="org.campagnelab.workflow.rna-seq" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6nLXN__2exd" role="2G$12L">
         <property role="BnDLt" value="true" />
