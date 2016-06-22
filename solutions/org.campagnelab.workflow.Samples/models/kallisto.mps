@@ -11,6 +11,10 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="8oaq" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:org.apache.commons.io(org.campagnelab.nyosh.lib/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="9c0n" ref="r:3044d433-a793-408f-b1ec-a1d330c89f78(R)" />
+    <import index="1c09" ref="r:ceab30bb-72b2-4b22-9ea6-3ea754d0b737(kallisto)" />
+    <import index="pmhg" ref="r:2a81c50e-f78d-4a61-a46c-82e6c99b659d(sra)" />
+    <import index="ass7" ref="r:d7f2e001-f82c-4379-aa69-f5a37b97ebec(fastQC)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -303,6 +307,9 @@
         <child id="5954930966410666282" name="expression" index="20hoG3" />
       </concept>
       <concept id="7950630069015363789" name="org.campagnelab.workflow.structure.View" flags="ng" index="2pgWx" />
+      <concept id="8528134073268331577" name="org.campagnelab.workflow.structure.ConstantExpression" flags="ng" index="4iA3S">
+        <child id="8528134073268547180" name="expression" index="4iqEH" />
+      </concept>
       <concept id="748852418098455525" name="org.campagnelab.workflow.structure.NameInAChannelRef" flags="ng" index="2b_LqF">
         <reference id="748852418098455526" name="value" index="2b_LqC" />
       </concept>
@@ -317,6 +324,9 @@
       </concept>
       <concept id="2590112629708723516" name="org.campagnelab.workflow.structure.ProcessOutput" flags="ng" index="2lYRya" />
       <concept id="2590112629703806958" name="org.campagnelab.workflow.structure.ProcessInput" flags="ng" index="2mjA9o" />
+      <concept id="6042700048959911136" name="org.campagnelab.workflow.structure.DuplicateOutputChannelList" flags="ng" index="2tD$Xd">
+        <child id="6042700048959911137" name="channels" index="2tD$Xc" />
+      </concept>
       <concept id="7457140171610904753" name="org.campagnelab.workflow.structure.Process" flags="ng" index="2ulcR8">
         <child id="331977639697571264" name="container" index="234boB" />
         <child id="7457140171610928304" name="outputs" index="2ulM79" />
@@ -337,6 +347,12 @@
         <child id="3855674281011085290" name="globalChannels" index="2$L6iY" />
         <child id="6344724376800375955" name="description" index="GZ$AB" />
         <child id="6588488528863130400" name="reports" index="2UW718" />
+      </concept>
+      <concept id="3653684473245040478" name="org.campagnelab.workflow.structure.NewStringLiteral" flags="ng" index="2J_g7P">
+        <property id="3653684473245041443" name="value" index="2J_vQ8" />
+      </concept>
+      <concept id="3653684473245054612" name="org.campagnelab.workflow.structure.NewIntegerLiteral" flags="ng" index="2J_swZ">
+        <property id="3653684473245054659" name="value" index="2J_sxC" />
       </concept>
       <concept id="3653684473245054700" name="org.campagnelab.workflow.structure.NewListLiteral" flags="ng" index="2J_sx7">
         <child id="3653684473245054701" name="elementType" index="2J_sx6" />
@@ -363,6 +379,12 @@
       <concept id="8369613327464009594" name="org.campagnelab.workflow.structure.InputChannel" flags="ng" index="1uYdA0">
         <reference id="8369613327464433607" name="connectedTo" index="1uK_4X" />
         <child id="3857878650537656757" name="functions" index="1ylr64" />
+      </concept>
+      <concept id="3857878650533843630" name="org.campagnelab.workflow.structure.ToList" flags="ng" index="1yaYav" />
+      <concept id="5937854873896129352" name="org.campagnelab.workflow.structure.DuplicateOutputChannel" flags="ng" index="1$0uN4" />
+      <concept id="5937854873902684864" name="org.campagnelab.workflow.structure.DuplicateGlobalChannel" flags="ng" index="1$Fulc" />
+      <concept id="5937854873901406088" name="org.campagnelab.workflow.structure.DuplicateGlobalChannelList" flags="ng" index="1$O6w4">
+        <child id="5937854873901406089" name="channels" index="1$O6w5" />
       </concept>
       <concept id="6456103554942004322" name="org.campagnelab.workflow.structure.GlobalChannel" flags="ng" index="1CVceo">
         <child id="3855674281011084282" name="value" index="2$L62I" />
@@ -8945,6 +8967,110 @@
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
     <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
+  </node>
+  <node concept="2$rMIF" id="3a_Ie33Oncy">
+    <property role="TrG5h" value="FastqKallistoCounts" />
+    <node concept="2$rEH5" id="3a_Ie33Onib" role="2$rEHq">
+      <ref role="2$rEH4" to="pmhg:3a_Ie33Oni_" resolve="Download_Reads" />
+      <node concept="2tD$Xd" id="59BvSKQZ7BC" role="1uLvPA">
+        <property role="TrG5h" value="reads" />
+        <node concept="1$0uN4" id="59BvSKQZ7KI" role="2tD$Xc">
+          <property role="TrG5h" value="A" />
+        </node>
+        <node concept="1$0uN4" id="59BvSKQZ85H" role="2tD$Xc">
+          <property role="TrG5h" value="B" />
+        </node>
+      </node>
+      <node concept="1uYdA0" id="3a_Ie33OnkF" role="1uLvPH">
+        <ref role="1uK_4X" node="59BvSKQO37s" resolve="IDsToDownload" />
+      </node>
+      <node concept="1uYdA0" id="2rsflnIs5xJ" role="1uLvPH">
+        <ref role="1uK_4X" node="2rsflnIs5Jy" resolve="ReadsToDownload" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="iewVIi_TdJ" role="2$rEHq">
+      <ref role="2$rEH4" to="ass7:iewVIi_T9Y" resolve="QC" />
+      <node concept="1uLkD0" id="iewVIi_Tuz" role="1uLvPA">
+        <property role="TrG5h" value="zip" />
+      </node>
+      <node concept="1uYdA0" id="iewVIi_Tfi" role="1uLvPH">
+        <ref role="1uK_4X" node="59BvSKQZ7KI" resolve="A" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="5frYURexkMf" role="2$rEHq">
+      <ref role="2$rEH4" to="1c09:59BvSKQHAFs" resolve="KallistoCountsWithTuples" />
+      <node concept="1uYdA0" id="5frYURexkRa" role="1uLvPH">
+        <ref role="1uK_4X" node="59BvSKQZ85H" resolve="B" />
+      </node>
+      <node concept="1uLkD0" id="5frYURexkRb" role="1uLvPA">
+        <property role="TrG5h" value="result" />
+      </node>
+    </node>
+    <node concept="2$rEH5" id="59BvSKQHDFb" role="2$rEHq">
+      <ref role="2$rEH4" to="9c0n:7ejpSqH8Lzx" resolve="CombineCounts" />
+      <node concept="1uYdA0" id="59BvSKQHDK9" role="1uLvPH">
+        <ref role="1uK_4X" node="5frYURexkRb" resolve="result" />
+        <node concept="1yaYav" id="59BvSKQHFDp" role="1ylr64" />
+      </node>
+      <node concept="1uYdA0" id="59BvSKQHDKa" role="1uLvPH">
+        <ref role="1uK_4X" node="59BvSKQOg5v" resolve="IDsToCombine" />
+        <node concept="1yaYav" id="5MXxGMDHcoL" role="1ylr64" />
+      </node>
+      <node concept="1uLkD0" id="59BvSKQHDKb" role="1uLvPA">
+        <property role="TrG5h" value="combined" />
+      </node>
+    </node>
+    <node concept="1$O6w4" id="59BvSKQO2pB" role="2$L6iY">
+      <property role="TrG5h" value="sampleIds" />
+      <node concept="1$Fulc" id="59BvSKQO37s" role="1$O6w5">
+        <property role="TrG5h" value="IDsToDownload" />
+        <node concept="2J_sx7" id="59BvSKQO37t" role="2$L62I" />
+      </node>
+      <node concept="1$Fulc" id="59BvSKQOg5v" role="1$O6w5">
+        <property role="TrG5h" value="IDsToCombine" />
+        <node concept="2J_sx7" id="59BvSKQOg5w" role="2$L62I" />
+      </node>
+      <node concept="2J_sx7" id="59BvSKQOR7k" role="2$L62I">
+        <node concept="2J_g7P" id="59BvSKQOR7l" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514132" />
+        </node>
+        <node concept="2J_g7P" id="1FavoX$xCQE" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514133" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7n" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514134" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7o" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514135" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7p" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514136" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7q" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514137" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7r" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514138" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7s" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514139" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7t" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514140" />
+        </node>
+        <node concept="2J_g7P" id="59BvSKQOR7u" role="2J_sx6">
+          <property role="2J_vQ8" value="SRR1514141" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CVceo" id="2rsflnIs5Jy" role="2$L6iY">
+      <property role="TrG5h" value="ReadsToDownload" />
+      <node concept="4iA3S" id="5MXxGMDNY6P" role="2$L62I">
+        <node concept="2J_swZ" id="5MXxGMDNYh9" role="4iqEH">
+          <property role="2J_sxC" value="5" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
