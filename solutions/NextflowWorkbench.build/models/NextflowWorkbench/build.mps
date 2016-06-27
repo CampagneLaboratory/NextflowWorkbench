@@ -1197,6 +1197,19 @@
               </node>
             </node>
           </node>
+          <node concept="28jJK3" id="1EvOJKhsxXb" role="39821P">
+            <node concept="55IIr" id="1EvOJKhsxXd" role="28jJRO">
+              <node concept="2Ry0Ak" id="1EvOJKhsyxN" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1EvOJKhsyy0" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.workflow.run" />
+                  <node concept="2Ry0Ak" id="1EvOJKhsyyd" role="2Ry0An">
+                    <property role="2Ry0Am" value="nextflow" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

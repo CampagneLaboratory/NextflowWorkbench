@@ -1088,6 +1088,7 @@
       <zipfileset file="${basedir}/languages/org.campagnelab.docker/osgi-resource-locator-1.0.1.jar" prefix="NextflowWorkbench" />
       <zipfileset file="${basedir}/languages/org.campagnelab.docker/raven-4.1.1.jar" prefix="NextflowWorkbench" />
       <zipfileset file="${basedir}/languages/org.campagnelab.docker/raven-logback-4.1.1.jar" prefix="NextflowWorkbench" />
+      <zipfileset file="${basedir}/solutions/org.campagnelab.workflow.run/nextflow" prefix="NextflowWorkbench" />
       <zipfileset file="${basedir}/devkits/org.campagnelab.NextflowWorkbench.devkit" prefix="NextflowWorkbench/languages/NextflowWorkbench" />
       <zipfileset file="${basedir}/allDevkits/docker/org.campagnelab.docker.dev.devkit" prefix="NextflowWorkbench/languages/NextflowWorkbench" />
       <zipfileset file="${basedir}/devkits/gobyweb/org.campagnelab.docker.gobyweb.devkit" prefix="NextflowWorkbench/languages/NextflowWorkbench" />
