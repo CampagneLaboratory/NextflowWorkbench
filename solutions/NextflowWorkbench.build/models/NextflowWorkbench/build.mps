@@ -225,6 +225,16 @@
         </node>
       </node>
     </node>
+    <node concept="2kB4xC" id="1EvOJKhuayt" role="1l3spd">
+      <property role="TrG5h" value="nextflow_version" />
+      <node concept="aVJcg" id="1EvOJKhukVa" role="aVJcv">
+        <node concept="NbPM2" id="1EvOJKhukV9" role="aVJcq">
+          <node concept="3Mxwew" id="1EvOJKhukV8" role="3MwsjC">
+            <property role="3MwjfP" value="0.20.1" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2kB4xC" id="4RSqyaA4c2V" role="1l3spd">
       <property role="TrG5h" value="build_number" />
     </node>
@@ -1296,7 +1306,16 @@
       </node>
       <node concept="3_J27D" id="5OPtsOYvYn" role="3s6cr7">
         <node concept="3Mxwew" id="H0TQXNF9To" role="3MwsjC">
-          <property role="3MwjfP" value="The Nextflow workbench is a set of languages developed with the Jetbrains MPS Language Workbench that make it easier to write data analysis workflows with Nextflow (see http://www.nextflow.io/). Reference build: " />
+          <property role="3MwjfP" value="The Nextflow workbench is a set of languages developed with the Jetbrains MPS Language Workbench that make it easier to write data analysis workflows with Nextflow " />
+        </node>
+        <node concept="3Mxwey" id="1EvOJKhulyE" role="3MwsjC">
+          <ref role="3Mxwex" node="1EvOJKhuayt" resolve="nextflow_version" />
+        </node>
+        <node concept="3Mxwew" id="1EvOJKhulyD" role="3MwsjC">
+          <property role="3MwjfP" value=" (see http://www.nextflow.io/)" />
+        </node>
+        <node concept="3Mxwew" id="1EvOJKhul8h" role="3MwsjC">
+          <property role="3MwjfP" value=". Reference build: " />
         </node>
         <node concept="3Mxwey" id="4RSqyaA4csT" role="3MwsjC">
           <ref role="3Mxwex" node="4RSqyaA4c2V" resolve="build_number" />
