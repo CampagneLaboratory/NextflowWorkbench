@@ -36,6 +36,7 @@
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
       <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
+        <property id="9126048691955221291" name="filemode" index="28jJZ5" />
         <child id="9126048691955220762" name="path" index="28jJRO" />
       </concept>
       <concept id="2755237150521975431" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithString" flags="ng" index="aVJcg">
@@ -1207,13 +1208,14 @@
               </node>
             </node>
           </node>
-          <node concept="28jJK3" id="1EvOJKhsxXb" role="39821P">
-            <node concept="55IIr" id="1EvOJKhsxXd" role="28jJRO">
-              <node concept="2Ry0Ak" id="1EvOJKhsyxN" role="iGT6I">
+          <node concept="28jJK3" id="OitqZoEcq" role="39821P">
+            <property role="28jJZ5" value="744" />
+            <node concept="55IIr" id="OitqZoEcr" role="28jJRO">
+              <node concept="2Ry0Ak" id="OitqZoEcs" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="1EvOJKhsyy0" role="2Ry0An">
+                <node concept="2Ry0Ak" id="OitqZoEct" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.workflow.run" />
-                  <node concept="2Ry0Ak" id="1EvOJKhsyyd" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="OitqZoEcu" role="2Ry0An">
                     <property role="2Ry0Am" value="nextflow" />
                   </node>
                 </node>
@@ -1441,12 +1443,6 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5wD$zX1xHLO" role="3bR37C">
-          <node concept="3bR9La" id="5wD$zX1xHLP" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:5xa9wY2vhaQ" resolve="jetbrains.mps.baseLanguage.execution.util" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5wD$zX1xHM1" role="3bR37C">
           <node concept="1BurEX" id="5wD$zX1xHM2" role="1SiIV1">
             <node concept="55IIr" id="5wD$zX1xHLS" role="1BurEY">
@@ -1468,28 +1464,10 @@
             <ref role="3bR37D" node="6eMkF2c4Sia" resolve="org.campagnelab.workflow.configuration" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3BZ$3BBKUvc" role="3bR37C">
-          <node concept="3bR9La" id="3BZ$3BBKUvd" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:4Hc8TwAmyoE" resolve="jetbrains.mps.tool.builder" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3BZ$3BBKUve" role="3bR37C">
-          <node concept="3bR9La" id="3BZ$3BBKUvf" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6DdhZ$aRA0I" role="3bR37C">
           <node concept="3bR9La" id="6DdhZ$aRA0J" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="6DdhZ$aRzWF" resolve="org.campagnelab.util.execution.ant" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5VB4_zDZlOa" role="3bR37C">
-          <node concept="3bR9La" id="5VB4_zDZlOb" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="2yVjOHGmOYJ" resolve="org.campagnelab.docker.bash" />
           </node>
         </node>
       </node>
