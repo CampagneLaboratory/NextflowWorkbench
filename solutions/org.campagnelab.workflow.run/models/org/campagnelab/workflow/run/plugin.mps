@@ -12,7 +12,6 @@
     <use id="756e911c-3f1f-4a48-bdf5-a2ceb91b723c" name="jetbrains.mps.execution.settings" version="0" />
     <use id="f3347d8a-0e79-4f35-8ac9-1574f25c986f" name="jetbrains.mps.execution.commands" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
@@ -45,17 +44,12 @@
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="eva" ref="r:a1b1112d-dd34-4046-a6a3-811fd290d232(jetbrains.mps.execution.configurations.pluginSolution.plugin)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="zkib" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.reloading(MPS.Core/)" />
-    <import index="go48" ref="r:fc6b4266-fe93-4e02-bc36-aebff4c903c3(jetbrains.mps.baseLanguage.execution.api)" />
-    <import index="3v5a" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution(MPS.IDEA/)" />
-    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="mqvz" ref="r:c1c13fef-323d-4ec9-8c38-25add998e514(org.campagnelab.workflow.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang()" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project()" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="b0pz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.facets(MPS.Core/)" />
     <import index="5wms" ref="r:1862093e-489f-4e75-a318-b6a3a267d39c(command)" />
-    <import index="r9td" ref="r:c348bb19-2aba-41c5-afe7-9424496b2a89(org.campagnelab.docker.bash.structure)" />
     <import index="iowz" ref="r:0583c0e9-dc14-4152-95a4-93036dce931b(org.campagnelab.workflow.structure)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" implicit="true" />
@@ -469,9 +463,17 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -516,7 +518,7 @@
       <property role="TrG5h" value="nextflowPath" />
       <node concept="17QB3L" id="6jJN$rY0NDN" role="1tU5fm" />
       <node concept="Xl_RD" id="1dZwp69g80a" role="33vP2m">
-        <property role="Xl_RC" value="${NEXTFLOW_PATH}" />
+        <property role="Xl_RC" value="${module}" />
       </node>
     </node>
     <node concept="yHkDC" id="6jJN$rY0OQg" role="yHkDi">
@@ -1101,18 +1103,51 @@
     <node concept="yHkHE" id="6jJN$rY0V2h" role="yHkHi">
       <property role="TrG5h" value="nextflowPathExpanded" />
       <node concept="3clFbS" id="6jJN$rY0V2i" role="3clF47">
-        <node concept="3cpWs6" id="6jJN$rY0VLm" role="3cqZAp">
-          <node concept="2OqwBi" id="1dZwp69gkbY" role="3cqZAk">
-            <node concept="2YIFZM" id="1dZwp69gkbd" role="2Oq$k0">
-              <ref role="37wK5l" to="18ew:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+        <node concept="3cpWs6" id="2kdE1JoxNLn" role="3cqZAp">
+          <node concept="2OqwBi" id="2kdE1Joy_IR" role="3cqZAk">
+            <node concept="2YIFZM" id="6tm98vZkWrE" role="2Oq$k0">
+              <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
               <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
+              <node concept="1eOMI4" id="2kdE1Joy_Mi" role="37wK5m">
+                <node concept="10QFUN" id="2kdE1Joy_Mf" role="1eOMHV">
+                  <node concept="3uibUv" id="2kdE1Joy_Vn" role="10QFUM">
+                    <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
+                  </node>
+                  <node concept="1eOMI4" id="2kdE1JoxYXs" role="10QFUP">
+                    <node concept="3rM5sP" id="5EBaSuUackY" role="1eOMHV">
+                      <property role="3rM5sR" value="c039a1a6-4680-46fa-b571-a6a5f1e49ab6" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="liA8E" id="1dZwp69gkkm" role="2OqNvi">
+            <node concept="liA8E" id="1nhYb0FOMEI" role="2OqNvi">
               <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
-              <node concept="2OqwBi" id="6jJN$rY0VUO" role="37wK5m">
-                <node concept="2WthIp" id="6jJN$rY0VLE" role="2Oq$k0" />
-                <node concept="yHkDZ" id="6jJN$rY0WOp" role="2OqNvi">
+              <node concept="2OqwBi" id="2kdE1JoxNX0" role="37wK5m">
+                <node concept="2WthIp" id="2kdE1JoxNRZ" role="2Oq$k0" />
+                <node concept="yHkDZ" id="2kdE1JoxOby" role="2OqNvi">
                   <ref role="yHkDY" node="6jJN$rY0pjT" resolve="nextflowPath" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="5EBaSuUac2n" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs6" id="6jJN$rY0VLm" role="8Wnug">
+            <node concept="2OqwBi" id="1dZwp69gkbY" role="3cqZAk">
+              <node concept="2YIFZM" id="1dZwp69gkbd" role="2Oq$k0">
+                <ref role="37wK5l" to="18ew:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+                <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
+              </node>
+              <node concept="liA8E" id="1dZwp69gkkm" role="2OqNvi">
+                <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                <node concept="2OqwBi" id="6jJN$rY0VUO" role="37wK5m">
+                  <node concept="2WthIp" id="6jJN$rY0VLE" role="2Oq$k0" />
+                  <node concept="yHkDZ" id="6jJN$rY0WOp" role="2OqNvi">
+                    <ref role="yHkDY" node="6jJN$rY0pjT" resolve="nextflowPath" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -3846,8 +3881,21 @@
                                   <node concept="37vLTw" id="1LKL2LEs4zd" role="37vLTJ">
                                     <ref role="3cqZAo" node="7Go0qi6LiIH" resolve="errorText" />
                                   </node>
-                                  <node concept="Xl_RD" id="1LKL2LEs5x0" role="37vLTx">
-                                    <property role="Xl_RC" value="NEXTFLOW_PATH must be defined to a directory where the nextflow executable script exists." />
+                                  <node concept="3cpWs3" id="2kdE1JoxcWM" role="37vLTx">
+                                    <node concept="2OqwBi" id="2kdE1JoxeqW" role="3uHU7w">
+                                      <node concept="2OqwBi" id="2kdE1Joxdu8" role="2Oq$k0">
+                                        <node concept="2WthIp" id="2kdE1Joxd3Q" role="2Oq$k0" />
+                                        <node concept="yHkDZ" id="2kdE1JoxdWn" role="2OqNvi">
+                                          <ref role="yHkDY" node="5gyVhZ17Jlr" resolve="myRunParameters" />
+                                        </node>
+                                      </node>
+                                      <node concept="2XshWL" id="2kdE1JoxfhJ" role="2OqNvi">
+                                        <ref role="2WH_rO" node="6jJN$rY0V2h" resolve="nextflowPathExpanded" />
+                                      </node>
+                                    </node>
+                                    <node concept="Xl_RD" id="1LKL2LEs5x0" role="3uHU7B">
+                                      <property role="Xl_RC" value="NEXTFLOW_PATH must be defined to a directory where the nextflow executable script exists." />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -3910,8 +3958,21 @@
                                   <node concept="37vLTw" id="1LKL2LEs6Wf" role="37vLTJ">
                                     <ref role="3cqZAo" node="7Go0qi6LiIH" resolve="errorText" />
                                   </node>
-                                  <node concept="Xl_RD" id="1LKL2LEs7VU" role="37vLTx">
-                                    <property role="Xl_RC" value="NEXTFLOW_PATH must be defined to a directory where the nextflow executable script exists." />
+                                  <node concept="3cpWs3" id="2kdE1JoxuPr" role="37vLTx">
+                                    <node concept="Xl_RD" id="1LKL2LEs7VU" role="3uHU7B">
+                                      <property role="Xl_RC" value="NEXTFLOW_PATH must be defined to a directory where the nextflow executable script exists." />
+                                    </node>
+                                    <node concept="2OqwBi" id="2kdE1Joxvjg" role="3uHU7w">
+                                      <node concept="2OqwBi" id="2kdE1Joxvjh" role="2Oq$k0">
+                                        <node concept="2WthIp" id="2kdE1Joxvji" role="2Oq$k0" />
+                                        <node concept="yHkDZ" id="2kdE1Joxvjj" role="2OqNvi">
+                                          <ref role="yHkDY" node="5gyVhZ17Jlr" resolve="myRunParameters" />
+                                        </node>
+                                      </node>
+                                      <node concept="2XshWL" id="2kdE1Joxvjk" role="2OqNvi">
+                                        <ref role="2WH_rO" node="6jJN$rY0V2h" resolve="nextflowPathExpanded" />
+                                      </node>
+                                    </node>
                                   </node>
                                 </node>
                               </node>
