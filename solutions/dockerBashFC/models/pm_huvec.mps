@@ -10,8 +10,8 @@
     <devkit ref="5b2dfdd5-812f-48af-8989-85fe63dcbc1d(org.campagnelab.compute.cloud)" />
   </languages>
   <imports>
-    <import index="hw4t" ref="r:41663e9a-b716-465f-9ce0-0c158a40f03d(training)" />
-    <import index="fe9h" ref="r:bd6f13b1-e735-4bf3-b33c-07737d8a58c4(org.campagnelab.workflow.googlecloud)" />
+    <import index="hw4t" ref="r:41663e9a-b716-465f-9ce0-0c158a40f03d(counts)" />
+    <import index="fe9h" ref="r:bd6f13b1-e735-4bf3-b33c-07737d8a58c4(googlecloud)" />
     <import index="1c09" ref="r:ceab30bb-72b2-4b22-9ea6-3ea754d0b737(kallisto)" />
   </imports>
   <registry>
@@ -63,6 +63,10 @@
     <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
       <concept id="239101957522210043" name="org.campagnelab.workflow.configuration.structure.StringOption" flags="ng" index="2CpO$d">
         <property id="239101957524078947" name="value" index="2C0Vil" />
+      </concept>
+      <concept id="6559354380869386193" name="org.campagnelab.workflow.configuration.structure.DockerMountDirectiveOption" flags="ng" index="CAbRv">
+        <property id="6559354380869386440" name="containerPath" index="CAcb6" />
+        <property id="6559354380869386438" name="localPath" index="CAcb8" />
       </concept>
       <concept id="2116956346009973572" name="org.campagnelab.workflow.configuration.structure.ScratchOption" flags="ng" index="2Xzwfg" />
       <concept id="1572763280063619218" name="org.campagnelab.workflow.configuration.structure.WithDocker" flags="ng" index="3qaZdc" />
@@ -481,7 +485,7 @@
       </node>
     </node>
     <node concept="2lYRya" id="mLKgp_e3Ne" role="2ulM79">
-      <property role="TrG5h" value="fullULR" />
+      <property role="TrG5h" value="fullURL" />
       <property role="2lYOoT" value="true" />
       <node concept="16pbKc" id="mLKgp_e3Nx" role="2ybFLk" />
     </node>
@@ -539,6 +543,10 @@
       </node>
     </node>
     <node concept="3qaZdc" id="mLKgp_eFJh" role="3qaWS2" />
+    <node concept="CAbRv" id="3VGYaIWgs1K" role="3qaWS2">
+      <property role="CAcb8" value="/scratch" />
+      <property role="CAcb6" value="/scratch" />
+    </node>
   </node>
   <node concept="2EEQw1" id="mLKgp_eNtb">
     <property role="TrG5h" value="docker.config" />
