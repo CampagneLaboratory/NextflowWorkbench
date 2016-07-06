@@ -265,7 +265,6 @@
       <concept id="430664643838735225" name="org.campagnelab.docker.structure.ContainerRef" flags="ng" index="WEvhf">
         <reference id="430664643838735312" name="container" index="WEvjA" />
       </concept>
-      <concept id="5650734312793241900" name="org.campagnelab.docker.structure.DockerCommand" flags="ng" index="1$joB7" />
     </language>
     <language id="c6c823fb-a9da-46e7-9850-129b0f7a7aa5" name="org.campagnelab.workflow">
       <concept id="8074343669091410824" name="org.campagnelab.workflow.structure.RichScript" flags="ng" index="3Y$Zt1">
@@ -8766,6 +8765,9 @@
     <node concept="WEvhf" id="3DC7OdoVJfV" role="WF_SX">
       <ref role="WEvjA" node="3DC7OdoVJfU" resolve="_interactive" />
     </node>
+    <node concept="WEvhf" id="3nORUy$Q1B3" role="WF_SX">
+      <ref role="WEvjA" node="3nORUy$PHUr" resolve="int2" />
+    </node>
   </node>
   <node concept="2EEQw1" id="2uoXx0vowJ5">
     <property role="TrG5h" value="docker.config" />
@@ -8892,21 +8894,28 @@
             <property role="26mB_l" value="true" />
             <property role="26mB$E" value="" />
           </node>
-          <node concept="26mB$F" id="7PWeeVwwReK" role="26mB$C">
+          <node concept="26mB$F" id="7PWeeVwwReT" role="26mB$C">
             <property role="26mB_l" value="true" />
-            <property role="26mB$E" value="bin" />
+            <property role="26mB$E" value="usr" />
             <property role="OYnhT" value="" />
           </node>
-          <node concept="26mB$F" id="7PWeeVwwReN" role="26mB$C">
+          <node concept="26mB$F" id="7PWeeVwwRf6" role="26mB$C">
+            <property role="26mB_l" value="true" />
+            <property role="26mB$E" value="local" />
+            <property role="OYnhT" value="" />
+          </node>
+          <node concept="26mB$F" id="3nORUy$PHVs" role="26mB$C">
+            <property role="26mB_l" value="true" />
+            <property role="26mB$E" value="include" />
+            <property role="OYnhT" value="" />
+          </node>
+          <node concept="26mB$F" id="3nORUy$PHVB" role="26mB$C">
             <property role="26mB_l" value="false" />
-            <property role="26mB$E" value="" />
+            <property role="26mB$E" value="f77blas.h" />
+            <property role="OYnhT" value="" />
           </node>
         </node>
         <node concept="19SUe$" id="7PWeeVwv0rT" role="19SJt6">
-          <property role="19SUeA" value="&#10;" />
-        </node>
-        <node concept="1$joB7" id="7PWeeVwuYO0" role="19SJt6" />
-        <node concept="19SUe$" id="7PWeeVwuYNZ" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
         <node concept="26mB_k" id="3C9jHpG7wS_" role="19SJt6">
@@ -8931,6 +8940,13 @@
       <property role="1vm7qE" value="false" />
       <ref role="3zcJb$" node="15pzti8M1qZ" resolve="image" />
     </node>
+  </node>
+  <node concept="GbKB8" id="3nORUy$PHUr">
+    <property role="TrG5h" value="int2" />
+    <property role="GbyUj" value="dl4j" />
+    <property role="1vm7qE" value="true" />
+    <property role="3yMj3R" value="sleep 10000" />
+    <ref role="3zcJb$" node="15pzti8M1qZ" resolve="image" />
   </node>
 </model>
 
