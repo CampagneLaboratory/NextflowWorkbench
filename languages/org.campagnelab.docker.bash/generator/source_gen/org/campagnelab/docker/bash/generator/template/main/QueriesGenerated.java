@@ -4,18 +4,19 @@ package org.campagnelab.docker.bash.generator.template.main;
 
 import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.template.PropertyMacroContext;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.campagnelab.docker.behavior.Config__BehaviorDescriptor;
 import org.campagnelab.docker.bash.behavior.DockerBash__BehaviorDescriptor;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.campagnelab.docker.behavior.DockerContainer__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 
 @Generated
 public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_5287487597357206620(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(DockerBash__BehaviorDescriptor.dockerConfig_id4_wVviqFDHQ.invoke(_context.getNode()), MetaAdapterFactory.getProperty(0x25281c034a7c4b57L, 0x922124a10fc36ef5L, 0x7cb9b400d612dc01L, 0x7cb9b400d62a2d93L, "options")).replaceAll("\"", "&quot;");
+    return Config__BehaviorDescriptor.optionsOrEmptyString_id3DC7OdoUke7.invoke(DockerBash__BehaviorDescriptor.dockerConfig_id4_wVviqFDHQ.invoke(_context.getNode())).replaceAll("\"", "&quot;");
   }
   public static Object propertyMacro_GetPropertyValue_5287487597357212593(final PropertyMacroContext _context) {
     return (String) DockerContainer__BehaviorDescriptor.formattedAddress_id1D6dZ$xfhKE.invoke(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x3b74e3b77336414dL, 0x889964a293a44a07L, 0x20c7aeb74b0c877L, 0x49b6be7878bddc0L, "container")));

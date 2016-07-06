@@ -6,7 +6,7 @@
       <sourceRoot location="languageAccessories" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="docker-client-3.0.1-SNAPSHOT.jar" />
+      <sourceRoot location="docker-client-5.0.2.jar" />
     </modelRoot>
   </models>
   <accessoryModels>
@@ -75,62 +75,65 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="${module}/bcpkix-jdk15on-1.51.jar" />
-    <stubModelEntry path="${module}/commons-compress-1.8.1.jar" />
-    <stubModelEntry path="${module}/commons-lang-2.6.jar" />
-    <stubModelEntry path="${module}/docker-client-3.0.1-SNAPSHOT.jar" />
-    <stubModelEntry path="${module}/guava-17.0.jar" />
-    <stubModelEntry path="${module}/httpclient-4.3.5.jar" />
-    <stubModelEntry path="${module}/httpcore-4.3.2.jar" />
-    <stubModelEntry path="${module}/jackson-databind-2.2.3.jar" />
-    <stubModelEntry path="${module}/jackson-dataformat-yaml-2.2.3.jar" />
-    <stubModelEntry path="${module}/jackson-datatype-guava-2.2.3.jar" />
-    <stubModelEntry path="${module}/jackson-jaxrs-base-2.2.3.jar" />
-    <stubModelEntry path="${module}/jackson-jaxrs-json-provider-2.2.3.jar" />
-    <stubModelEntry path="${module}/javax.annotation-api-1.2.jar" />
-    <stubModelEntry path="${module}/javax.inject-2.3.0-b10.jar" />
-    <stubModelEntry path="${module}/javax.ws.rs-api-2.0.1.jar" />
-    <stubModelEntry path="${module}/jersey-apache-connector-2.13.jar" />
-    <stubModelEntry path="${module}/jersey-client-2.13.jar" />
-    <stubModelEntry path="${module}/jersey-common-2.13.jar" />
-    <stubModelEntry path="${module}/jersey-guava-2.13.jar" />
-    <stubModelEntry path="${module}/jersey-media-json-jackson-2.13.jar" />
-    <stubModelEntry path="${module}/jnr-unixsocket-0.4.jar" />
-    <stubModelEntry path="${module}/slf4j-api-1.7.6.jar" />
-    <stubModelEntry path="${module}/hk2-api-2.3.0-b10.jar" />
-    <stubModelEntry path="${module}/hk2-locator-2.3.0-b10.jar" />
-    <stubModelEntry path="${module}/hk2-utils-2.3.0-b10.jar" />
-    <stubModelEntry path="${module}/bcprov-jdk15on-1.51.jar" />
-    <stubModelEntry path="${module}/aopalliance-repackaged-2.3.0-b10.jar" />
-    <stubModelEntry path="${module}/asm-4.0.jar" />
-    <stubModelEntry path="${module}/asm-analysis-4.0.jar" />
-    <stubModelEntry path="${module}/asm-commons-4.0.jar" />
-    <stubModelEntry path="${module}/asm-tree-4.0.jar" />
-    <stubModelEntry path="${module}/asm-util-4.0.jar" />
-    <stubModelEntry path="${module}/commons-codec-1.6.jar" />
-    <stubModelEntry path="${module}/commons-logging-1.1.3.jar" />
-    <stubModelEntry path="${module}/hamcrest-core-1.3.jar" />
-    <stubModelEntry path="${module}/hamcrest-library-1.3.jar" />
-    <stubModelEntry path="${module}/jackson-annotations-2.2.3.jar" />
-    <stubModelEntry path="${module}/jackson-core-2.2.3.jar" />
-    <stubModelEntry path="${module}/jackson-module-jaxb-annotations-2.2.3.jar" />
-    <stubModelEntry path="${module}/javassist-3.18.1-GA.jar" />
+    <stubModelEntry path="${module}/httpcore-4.4.1.jar" />
+    <stubModelEntry path="${module}/asm-util-5.0.3.jar" />
+    <stubModelEntry path="${module}/asm-tree-5.0.3.jar" />
     <stubModelEntry path="${module}/jewelcli-0.6.jar" />
-    <stubModelEntry path="${module}/jffi-1.2.7-native.jar" />
-    <stubModelEntry path="${module}/jffi-1.2.7.jar" />
+    <stubModelEntry path="${module}/jackson-jaxrs-json-provider-2.6.0.jar" />
+    <stubModelEntry path="${module}/logging-2.1.1.jar" />
+    <stubModelEntry path="${module}/jersey-entity-filtering-2.19.jar" />
+    <stubModelEntry path="${module}/jnr-constants-0.8.7.jar" />
+    <stubModelEntry path="${module}/raven-logback-4.1.2.jar" />
+    <stubModelEntry path="${module}/jnr-posix-3.0.12.jar" />
+    <stubModelEntry path="${module}/httpclient-4.5.jar" />
+    <stubModelEntry path="${module}/jersey-client-2.19.jar" />
+    <stubModelEntry path="${module}/hamcrest-core-1.3.jar" />
     <stubModelEntry path="${module}/jimfs-1.0.jar" />
-    <stubModelEntry path="${module}/jnr-constants-0.8.6.jar" />
-    <stubModelEntry path="${module}/jnr-enxio-0.5.jar" />
-    <stubModelEntry path="${module}/jnr-ffi-2.0.0.jar" />
-    <stubModelEntry path="${module}/jnr-posix-3.0.8.jar" />
-    <stubModelEntry path="${module}/jnr-x86asm-1.0.2.jar" />
-    <stubModelEntry path="${module}/junit-4.11.jar" />
+    <stubModelEntry path="${module}/commons-lang-2.6.jar" />
+    <stubModelEntry path="${module}/jackson-jaxrs-base-2.6.0.jar" />
+    <stubModelEntry path="${module}/jffi-1.2.9-native.jar" />
+    <stubModelEntry path="${module}/javax.ws.rs-api-2.0.1.jar" />
+    <stubModelEntry path="${module}/javax.inject-2.4.0-b25.jar" />
+    <stubModelEntry path="${module}/raven-4.1.2.jar" />
     <stubModelEntry path="${module}/logback-classic-1.0.13.jar" />
-    <stubModelEntry path="${module}/logback-core-1.0.13.jar" />
-    <stubModelEntry path="${module}/logging-2.1.0.jar" />
+    <stubModelEntry path="${module}/hamcrest-library-1.3.jar" />
+    <stubModelEntry path="${module}/aopalliance-repackaged-2.4.0-b25.jar" />
+    <stubModelEntry path="${module}/jackson-databind-2.6.0.jar" />
+    <stubModelEntry path="${module}/bcprov-jdk15on-1.52.jar" />
+    <stubModelEntry path="${module}/jnr-unixsocket-0.8.jar" />
+    <stubModelEntry path="${module}/slf4j-api-1.7.12.jar" />
+    <stubModelEntry path="${module}/jnr-x86asm-1.0.2.jar" />
+    <stubModelEntry path="${module}/jackson-module-jaxb-annotations-2.6.0.jar" />
     <stubModelEntry path="${module}/osgi-resource-locator-1.0.1.jar" />
-    <stubModelEntry path="${module}/raven-4.1.1.jar" />
-    <stubModelEntry path="${module}/raven-logback-4.1.1.jar" />
+    <stubModelEntry path="${module}/hk2-locator-2.4.0-b25.jar" />
+    <stubModelEntry path="${module}/bcpkix-jdk15on-1.52.jar" />
+    <stubModelEntry path="${module}/jackson-core-2.6.0.jar" />
+    <stubModelEntry path="${module}/jackson-annotations-2.6.0.jar" />
+    <stubModelEntry path="${module}/jersey-apache-connector-2.19.jar" />
+    <stubModelEntry path="${module}/objenesis-2.1.jar" />
+    <stubModelEntry path="${module}/javassist-3.18.1-GA.jar" />
+    <stubModelEntry path="${module}/guava-18.0.jar" />
+    <stubModelEntry path="${module}/commons-logging-1.2.jar" />
+    <stubModelEntry path="${module}/hk2-utils-2.4.0-b25.jar" />
+    <stubModelEntry path="${module}/jffi-1.2.9.jar" />
+    <stubModelEntry path="${module}/asm-analysis-5.0.3.jar" />
+    <stubModelEntry path="${module}/jackson-datatype-guava-2.6.0.jar" />
+    <stubModelEntry path="${module}/logback-core-1.0.13.jar" />
+    <stubModelEntry path="${module}/asm-commons-5.0.3.jar" />
+    <stubModelEntry path="${module}/javax.annotation-api-1.2.jar" />
+    <stubModelEntry path="${module}/commons-codec-1.9.jar" />
+    <stubModelEntry path="${module}/jnr-ffi-2.0.3.jar" />
+    <stubModelEntry path="${module}/asm-5.0.3.jar" />
+    <stubModelEntry path="${module}/jnr-enxio-0.9.jar" />
+    <stubModelEntry path="${module}/jersey-guava-2.19.jar" />
+    <stubModelEntry path="${module}/mockito-core-1.10.19.jar" />
+    <stubModelEntry path="${module}/joda-time-2.8.2.jar" />
+    <stubModelEntry path="${module}/commons-compress-1.9.jar" />
+    <stubModelEntry path="${module}/jersey-common-2.19.jar" />
+    <stubModelEntry path="${module}/jersey-media-json-jackson-2.19.jar" />
+    <stubModelEntry path="${module}/junit-4.12.jar" />
+    <stubModelEntry path="${module}/hk2-api-2.4.0-b25.jar" />
+    <stubModelEntry path="${module}/docker-client-5.0.2.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -184,6 +187,7 @@
     <language id="a21a7294-c126-4f63-8335-8fecd8c28c7e" fqName="org.campagnelab.NYoSh" version="0" />
     <language id="20d83b64-d10f-48d1-990d-513b574c4956" fqName="org.campagnelab.background" version="0" />
     <language id="43809d33-d5e3-4390-917e-3944cb211ee3" fqName="org.campagnelab.icons" version="0" />
+    <language id="82ffebe3-3685-4fd9-b560-0c1d348d295c" fqName="org.campagnelab.logger" version="0" />
     <language id="c1d262c7-5fba-470b-a7ad-87f5e0ae0a99" fqName="org.campagnelab.nyosh.functions" version="0" />
     <language id="c6567f13-87ab-4686-8f6f-42e8228c0e27" fqName="org.campagnelab.nyosh.gstring" version="0" />
     <language id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" fqName="org.campagnelab.ui" version="0" />

@@ -2,7 +2,7 @@
 <model ref="r:c4534a83-f4a7-4cda-99a5-901537cef15e(org.campagnelab.workflow.configuration.textGen)">
   <persistence version="9" />
   <languages>
-    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
+    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -75,7 +75,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -144,7 +144,7 @@
       <concept id="1233921373471" name="jetbrains.mps.lang.textGen.structure.LanguageTextGenDeclaration" flags="ig" index="1bsvg0">
         <child id="1233922432965" name="operation" index="1bwxVq" />
       </concept>
-      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" stub="3147100357551177019" index="1bwezc" />
+      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" index="1bwezc" />
       <concept id="1233924848298" name="jetbrains.mps.lang.textGen.structure.OperationCall" flags="ng" index="1bDJIP">
         <reference id="1234190664409" name="function" index="1rvKf6" />
         <child id="1234191323697" name="parameter" index="1ryhcI" />
@@ -914,11 +914,11 @@
                     <property role="TrG5h" value="engineOptions" />
                     <node concept="17QB3L" id="29U0K5dCkzt" role="1tU5fm" />
                     <node concept="2OqwBi" id="29U0K5dCrVP" role="33vP2m">
+                      <node concept="2qgKlT" id="3DC7OdoUzau" role="2OqNvi">
+                        <ref role="37wK5l" to="rzxe:3DC7OdoUke7" resolve="optionsOrEmptyString" />
+                      </node>
                       <node concept="37vLTw" id="29U0K5dGrSl" role="2Oq$k0">
                         <ref role="3cqZAo" node="29U0K5dGrSb" resolve="config" />
-                      </node>
-                      <node concept="3TrcHB" id="29U0K5dCs67" role="2OqNvi">
-                        <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
                       </node>
                     </node>
                   </node>

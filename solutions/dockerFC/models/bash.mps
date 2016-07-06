@@ -441,7 +441,7 @@
   </registry>
   <node concept="2EEQw1" id="xP2fmw4TV1">
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/fac2003/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/fac2003/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/fac2003/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.102:2376" />
+    <property role="2E$TAj" value="" />
   </node>
   <node concept="3lueso" id="10rnQzwTSvV">
     <property role="TrG5h" value="Environment" />
@@ -9399,6 +9399,20 @@
           </node>
         </node>
         <node concept="19SUe$" id="KEhN4ojRJi" role="19SJt6">
+          <property role="19SUeA" value="&#10;" />
+        </node>
+        <node concept="26mB_k" id="2F3Qlw97b9m" role="19SJt6">
+          <ref role="26mB_n" node="KEhN4ojQ4d" resolve="interactive" />
+          <node concept="26mB$F" id="2F3Qlw97b9o" role="26mB$C">
+            <property role="26mB_l" value="false" />
+            <property role="26mB$E" value="" />
+          </node>
+          <node concept="26mB$F" id="2F3Qlw97b9K" role="26mB$C">
+            <property role="26mB_l" value="false" />
+            <property role="26mB$E" value="" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="2F3Qlw97b9l" role="19SJt6">
           <property role="19SUeA" value="&#10;&#10;" />
         </node>
         <node concept="26mB_k" id="KEhN4ojSRL" role="19SJt6">

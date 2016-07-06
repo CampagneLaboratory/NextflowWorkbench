@@ -13,6 +13,9 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="82ffebe3-3685-4fd9-b560-0c1d348d295c" name="org.campagnelab.logger" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -45,6 +48,7 @@
     <import index="ujkv" ref="r:c4ccd0c8-ae0a-4ce1-b1b2-29dd8a943a6b(org.campagnelab.util.persistence)" />
     <import index="ends" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.persistence(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
+    <import index="26gq" ref="25281c03-4a7c-4b57-9221-24a10fc36ef5/java:com.spotify.docker.client.exceptions(org.campagnelab.docker/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="cb06" ref="r:28ea7b9c-cb3a-4bec-8a85-2ccbe0339d0d(org.campagnelab.docker.bash.behavior)" implicit="true" />
   </imports>
@@ -1464,8 +1468,8 @@
                   <node concept="37vLTw" id="5U_2ytMdiTW" role="2Oq$k0">
                     <ref role="3cqZAo" node="5U_2ytMdjZr" resolve="config" />
                   </node>
-                  <node concept="3TrcHB" id="5U_2ytMdiTX" role="2OqNvi">
-                    <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+                  <node concept="2qgKlT" id="3DC7OdoUvuS" role="2OqNvi">
+                    <ref role="37wK5l" node="3DC7OdoUke7" resolve="optionsOrEmptyString" />
                   </node>
                 </node>
               </node>
@@ -1867,8 +1871,8 @@
                   <node concept="37vLTw" id="5U_2ytMia3n" role="2Oq$k0">
                     <ref role="3cqZAo" node="5U_2ytMia5x" resolve="config" />
                   </node>
-                  <node concept="3TrcHB" id="5U_2ytMia3o" role="2OqNvi">
-                    <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+                  <node concept="2qgKlT" id="3DC7OdoUtdr" role="2OqNvi">
+                    <ref role="37wK5l" node="3DC7OdoUke7" resolve="optionsOrEmptyString" />
                   </node>
                 </node>
               </node>
@@ -2225,8 +2229,8 @@
                   <node concept="37vLTw" id="5U_2ytMmDwc" role="2Oq$k0">
                     <ref role="3cqZAo" node="5U_2ytMmDxY" resolve="config" />
                   </node>
-                  <node concept="3TrcHB" id="5U_2ytMmDwd" role="2OqNvi">
-                    <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+                  <node concept="2qgKlT" id="3DC7OdoUrD8" role="2OqNvi">
+                    <ref role="37wK5l" node="3DC7OdoUke7" resolve="optionsOrEmptyString" />
                   </node>
                 </node>
               </node>
@@ -2940,8 +2944,8 @@
                   <node concept="37vLTw" id="1hjSjLb2M1X" role="2Oq$k0">
                     <ref role="3cqZAo" node="1hjSjLb2M5z" resolve="config" />
                   </node>
-                  <node concept="3TrcHB" id="1hjSjLb2M1Y" role="2OqNvi">
-                    <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+                  <node concept="2qgKlT" id="3DC7OdoUw7A" role="2OqNvi">
+                    <ref role="37wK5l" node="3DC7OdoUke7" resolve="optionsOrEmptyString" />
                   </node>
                 </node>
               </node>
@@ -3291,8 +3295,8 @@
                   <node concept="37vLTw" id="1hjSjLb2ZHL" role="2Oq$k0">
                     <ref role="3cqZAo" node="1hjSjLb2ZJ$" resolve="config" />
                   </node>
-                  <node concept="3TrcHB" id="1hjSjLb2ZHM" role="2OqNvi">
-                    <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+                  <node concept="2qgKlT" id="3DC7OdoUuUl" role="2OqNvi">
+                    <ref role="37wK5l" node="3DC7OdoUke7" resolve="optionsOrEmptyString" />
                   </node>
                 </node>
               </node>
@@ -3726,8 +3730,8 @@
                   <node concept="37vLTw" id="7MTH03mazDy" role="2Oq$k0">
                     <ref role="3cqZAo" node="7MTH03m5AMc" resolve="config" />
                   </node>
-                  <node concept="3TrcHB" id="7MTH03mazTE" role="2OqNvi">
-                    <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+                  <node concept="2qgKlT" id="3DC7OdoUxcZ" role="2OqNvi">
+                    <ref role="37wK5l" node="3DC7OdoUke7" resolve="optionsOrEmptyString" />
                   </node>
                 </node>
               </node>
@@ -4547,8 +4551,8 @@
                   <node concept="37vLTw" id="1BdDHvUUx3l" role="2Oq$k0">
                     <ref role="3cqZAo" node="1BdDHvUUx70" resolve="config" />
                   </node>
-                  <node concept="3TrcHB" id="1BdDHvUUx3m" role="2OqNvi">
-                    <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+                  <node concept="2qgKlT" id="3DC7OdoUtGD" role="2OqNvi">
+                    <ref role="37wK5l" node="3DC7OdoUke7" resolve="optionsOrEmptyString" />
                   </node>
                 </node>
               </node>
@@ -5148,6 +5152,17 @@
             </node>
           </node>
         </node>
+        <node concept="34ab3g" id="2uoXx0vo1Su" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="2uoXx0vo1Y8" role="34bqiv">
+            <node concept="37vLTw" id="2uoXx0vo22G" role="3uHU7w">
+              <ref role="3cqZAo" node="7MTH03melI6" resolve="line" />
+            </node>
+            <node concept="Xl_RD" id="2uoXx0vo1Sw" role="3uHU7B">
+              <property role="Xl_RC" value="log: " />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="56asy6sYSew" role="3cqZAp" />
         <node concept="SfApY" id="7MTH03meZN6" role="3cqZAp">
           <node concept="3clFbS" id="7MTH03meZN8" role="SfCbr">
@@ -5423,59 +5438,18 @@
       <node concept="3clFbS" id="56asy6teVIk" role="3clF47">
         <node concept="SfApY" id="56asy6tijvZ" role="3cqZAp">
           <node concept="3clFbS" id="56asy6tijw1" role="SfCbr">
-            <node concept="3cpWs8" id="56asy6tikD_" role="3cqZAp">
-              <node concept="3cpWsn" id="56asy6tikD$" role="3cpWs9">
-                <property role="3TUv4t" value="false" />
-                <property role="TrG5h" value="authConfig" />
-                <node concept="3uibUv" id="56asy6tile5" role="1tU5fm">
-                  <ref role="3uigEE" to="m8zm:~AuthConfig" resolve="AuthConfig" />
+            <node concept="3cpWs8" id="2uoXx0vp8w7" role="3cqZAp">
+              <node concept="3cpWsn" id="2uoXx0vp8w8" role="3cpWs9">
+                <property role="3TUv4t" value="true" />
+                <property role="TrG5h" value="docker" />
+                <node concept="3uibUv" id="2uoXx0vp8w9" role="1tU5fm">
+                  <ref role="3uigEE" to="fiig:~DockerClient" resolve="DockerClient" />
                 </node>
-                <node concept="2OqwBi" id="56asy6tikDB" role="33vP2m">
-                  <node concept="2OqwBi" id="56asy6titpW" role="2Oq$k0">
-                    <node concept="2YIFZM" id="56asy6tioE$" role="2Oq$k0">
-                      <ref role="1Pybhc" to="m8zm:~AuthConfig" resolve="AuthConfig" />
-                      <ref role="37wK5l" to="m8zm:~AuthConfig.builder():com.spotify.docker.client.messages.AuthConfig$Builder" resolve="builder" />
-                    </node>
-                    <node concept="liA8E" id="56asy6titzc" role="2OqNvi">
-                      <ref role="37wK5l" to="m8zm:~AuthConfig$Builder.serverAddress(java.lang.String):com.spotify.docker.client.messages.AuthConfig$Builder" resolve="serverAddress" />
-                      <node concept="2OqwBi" id="56asy6titH8" role="37wK5m">
-                        <node concept="37vLTw" id="56asy6titCg" role="2Oq$k0">
-                          <ref role="3cqZAo" node="56asy6tijAL" resolve="config" />
-                        </node>
-                        <node concept="2qgKlT" id="56asy6tiu5K" role="2OqNvi">
-                          <ref role="37wK5l" node="56asy6tgU1A" resolve="server" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="56asy6tikDP" role="2OqNvi">
-                    <ref role="37wK5l" to="m8zm:~AuthConfig$Builder.build():com.spotify.docker.client.messages.AuthConfig" resolve="build" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="1m401fzT6H9" role="3cqZAp">
-              <node concept="3cpWsn" id="1m401fzT6Ha" role="3cpWs9">
-                <property role="TrG5h" value="certificatePath" />
-                <node concept="3uibUv" id="1m401fzT6Hb" role="1tU5fm">
-                  <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
-                </node>
-                <node concept="2OqwBi" id="1m401fzT94r" role="33vP2m">
-                  <node concept="2ShNRf" id="1m401fzT7VB" role="2Oq$k0">
-                    <node concept="1pGfFk" id="1m401fzT8q7" role="2ShVmc">
-                      <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                      <node concept="2OqwBi" id="1m401fzT74k" role="37wK5m">
-                        <node concept="37vLTw" id="1m401fzT70t" role="2Oq$k0">
-                          <ref role="3cqZAo" node="56asy6tijAL" resolve="config" />
-                        </node>
-                        <node concept="2qgKlT" id="1m401fzT7ud" role="2OqNvi">
-                          <ref role="37wK5l" node="1m401fzRFHR" resolve="dockerCertificates" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1m401fzTbvN" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.toPath():java.nio.file.Path" resolve="toPath" />
+                <node concept="2YIFZM" id="2F3Qlw95Hl8" role="33vP2m">
+                  <ref role="1Pybhc" node="7MTH03m4_Rr" resolve="ExecuteDockerCommands" />
+                  <ref role="37wK5l" node="2F3Qlw95Hl3" resolve="getDockerClient" />
+                  <node concept="37vLTw" id="2F3Qlw95Hl7" role="37wK5m">
+                    <ref role="3cqZAo" node="56asy6tijAL" resolve="config" />
                   </node>
                 </node>
               </node>
@@ -5495,69 +5469,6 @@
                   </node>
                   <node concept="Xl_RD" id="1m401fzW1kT" role="3uHU7B">
                     <property role="Xl_RC" value="path=" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="56asy6tijl3" role="3cqZAp">
-              <node concept="3cpWsn" id="56asy6tijl2" role="3cpWs9">
-                <property role="3TUv4t" value="true" />
-                <property role="TrG5h" value="docker" />
-                <node concept="3uibUv" id="56asy6tijl4" role="1tU5fm">
-                  <ref role="3uigEE" to="fiig:~DockerClient" resolve="DockerClient" />
-                </node>
-                <node concept="2OqwBi" id="56asy6tiHZx" role="33vP2m">
-                  <node concept="2OqwBi" id="1m401f$1wF4" role="2Oq$k0">
-                    <node concept="2OqwBi" id="1m401fzR7VU" role="2Oq$k0">
-                      <node concept="2OqwBi" id="56asy6tijl5" role="2Oq$k0">
-                        <node concept="2YIFZM" id="56asy6tijNs" role="2Oq$k0">
-                          <ref role="1Pybhc" to="fiig:~DefaultDockerClient" resolve="DefaultDockerClient" />
-                          <ref role="37wK5l" to="fiig:~DefaultDockerClient.builder():com.spotify.docker.client.DefaultDockerClient$Builder" resolve="builder" />
-                        </node>
-                        <node concept="liA8E" id="56asy6tiv1z" role="2OqNvi">
-                          <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.authConfig(com.spotify.docker.client.messages.AuthConfig):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="authConfig" />
-                          <node concept="37vLTw" id="56asy6tiHV5" role="37wK5m">
-                            <ref role="3cqZAo" node="56asy6tikD$" resolve="authConfig" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="1m401fzR8QI" role="2OqNvi">
-                        <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.dockerCertificates(com.spotify.docker.client.DockerCertificates):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="dockerCertificates" />
-                        <node concept="2ShNRf" id="1m401fzR9gs" role="37wK5m">
-                          <node concept="1pGfFk" id="1m401fzRC1s" role="2ShVmc">
-                            <ref role="37wK5l" to="fiig:~DockerCertificates.&lt;init&gt;(java.nio.file.Path)" resolve="DockerCertificates" />
-                            <node concept="37vLTw" id="1m401fzTbML" role="37wK5m">
-                              <ref role="3cqZAo" node="1m401fzT6Ha" resolve="certificatePath" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="1m401f$1xMi" role="2OqNvi">
-                      <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.uri(java.lang.String):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="uri" />
-                      <node concept="2OqwBi" id="1m401f$2Zee" role="37wK5m">
-                        <node concept="2OqwBi" id="1m401f$1yqW" role="2Oq$k0">
-                          <node concept="37vLTw" id="1m401f$1yeY" role="2Oq$k0">
-                            <ref role="3cqZAo" node="56asy6tijAL" resolve="config" />
-                          </node>
-                          <node concept="2qgKlT" id="1m401f$1yUX" role="2OqNvi">
-                            <ref role="37wK5l" node="56asy6tgU1A" resolve="server" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="1m401f$30Yv" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
-                          <node concept="Xl_RD" id="1m401f$314$" role="37wK5m">
-                            <property role="Xl_RC" value="tcp:" />
-                          </node>
-                          <node concept="Xl_RD" id="1m401f$31ST" role="37wK5m">
-                            <property role="Xl_RC" value="https:" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="56asy6tiIAV" role="2OqNvi">
-                    <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.build():com.spotify.docker.client.DefaultDockerClient" resolve="build" />
                   </node>
                 </node>
               </node>
@@ -5660,7 +5571,11 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1m401f$9QgF" role="3cqZAp" />
+            <node concept="3SKdUt" id="3C9jHpG5dxM" role="3cqZAp">
+              <node concept="3SKdUq" id="3C9jHpG5dxO" role="3SKWNk">
+                <property role="3SKdUp" value=" was DockerExec.CreateParam STDOUT:" />
+              </node>
+            </node>
             <node concept="3cpWs8" id="56asy6tiJqF" role="3cqZAp">
               <node concept="3cpWsn" id="56asy6tiJqE" role="3cpWs9">
                 <property role="3TUv4t" value="true" />
@@ -5668,19 +5583,19 @@
                 <node concept="17QB3L" id="1iGJyHfSaw$" role="1tU5fm" />
                 <node concept="2OqwBi" id="56asy6tiJrp" role="33vP2m">
                   <node concept="37vLTw" id="56asy6tiJro" role="2Oq$k0">
-                    <ref role="3cqZAo" node="56asy6tijl2" resolve="docker" />
+                    <ref role="3cqZAo" node="2uoXx0vp8w8" resolve="docker" />
                   </node>
                   <node concept="liA8E" id="56asy6tiJrq" role="2OqNvi">
-                    <ref role="37wK5l" to="fiig:~DockerClient.execCreate(java.lang.String,java.lang.String[],com.spotify.docker.client.DockerClient$ExecParameter...):java.lang.String" resolve="execCreate" />
+                    <ref role="37wK5l" to="fiig:~DockerClient.execCreate(java.lang.String,java.lang.String[],com.spotify.docker.client.DockerClient$ExecCreateParam...):java.lang.String" resolve="execCreate" />
                     <node concept="37vLTw" id="56asy6tiL15" role="37wK5m">
                       <ref role="3cqZAo" node="56asy6tiKm_" resolve="containerId" />
                     </node>
                     <node concept="37vLTw" id="56asy6tiJqJ" role="37wK5m">
                       <ref role="3cqZAo" node="56asy6tiJqy" resolve="command" />
                     </node>
-                    <node concept="Rm8GO" id="56asy6tiJrQ" role="37wK5m">
-                      <ref role="1Px2BO" to="fiig:~DockerClient$ExecParameter" resolve="DockerClient.ExecParameter" />
-                      <ref role="Rm8GQ" to="fiig:~DockerClient$ExecParameter.STDOUT" resolve="STDOUT" />
+                    <node concept="2YIFZM" id="3C9jHpG6I7X" role="37wK5m">
+                      <ref role="37wK5l" to="fiig:~DockerClient$ExecCreateParam.attachStdout():com.spotify.docker.client.DockerClient$ExecCreateParam" resolve="attachStdout" />
+                      <ref role="1Pybhc" to="fiig:~DockerClient$ExecCreateParam" resolve="DockerClient.ExecCreateParam" />
                     </node>
                   </node>
                 </node>
@@ -5715,7 +5630,7 @@
                 </node>
                 <node concept="2OqwBi" id="56asy6tiJsJ" role="33vP2m">
                   <node concept="37vLTw" id="56asy6tiJsI" role="2Oq$k0">
-                    <ref role="3cqZAo" node="56asy6tijl2" resolve="docker" />
+                    <ref role="3cqZAo" node="2uoXx0vp8w8" resolve="docker" />
                   </node>
                   <node concept="liA8E" id="56asy6tiJsK" role="2OqNvi">
                     <ref role="37wK5l" to="fiig:~DockerClient.execStart(java.lang.String,com.spotify.docker.client.DockerClient$ExecStartParameter...):com.spotify.docker.client.LogStream" resolve="execStart" />
@@ -5782,6 +5697,16 @@
               </node>
             </node>
             <node concept="3clFbS" id="56asy6tijw8" role="TDEfX">
+              <node concept="34ab3g" id="2uoXx0vpK2Z" role="3cqZAp">
+                <property role="35gtTG" value="error" />
+                <property role="34fQS0" value="true" />
+                <node concept="Xl_RD" id="2uoXx0vpK31" role="34bqiv">
+                  <property role="Xl_RC" value="Cannot create docker client" />
+                </node>
+                <node concept="37vLTw" id="2uoXx0vpK33" role="34bMjA">
+                  <ref role="3cqZAo" node="56asy6tijw4" resolve="e" />
+                </node>
+              </node>
               <node concept="3clFbF" id="56asy6tiVca" role="3cqZAp">
                 <node concept="1rXfSq" id="56asy6tiVc9" role="3clFbG">
                   <ref role="37wK5l" node="56asy6sZ2MY" resolve="log" />
@@ -5822,6 +5747,247 @@
         <node concept="17QB3L" id="56asy6tiZfd" role="10Q1$1" />
       </node>
       <node concept="3Tm1VV" id="56asy6teVIj" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="2F3Qlw95Hl3" role="jymVt">
+      <property role="TrG5h" value="getDockerClient" />
+      <node concept="3Tm6S6" id="2F3Qlw95Hl4" role="1B3o_S" />
+      <node concept="3uibUv" id="2F3Qlw95Hl5" role="3clF45">
+        <ref role="3uigEE" to="fiig:~DockerClient" resolve="DockerClient" />
+      </node>
+      <node concept="37vLTG" id="2F3Qlw95HkT" role="3clF46">
+        <property role="TrG5h" value="config" />
+        <node concept="3Tqbb2" id="2F3Qlw95HkU" role="1tU5fm">
+          <ref role="ehGHo" to="6jv6:7MTH03m4HK1" resolve="Config" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2F3Qlw95Hjv" role="3clF47">
+        <node concept="3cpWs8" id="2F3Qlw95Hjy" role="3cqZAp">
+          <node concept="3cpWsn" id="2F3Qlw95Hjz" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="docker" />
+            <node concept="3uibUv" id="2F3Qlw95Hj$" role="1tU5fm">
+              <ref role="3uigEE" to="fiig:~DockerClient" resolve="DockerClient" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2F3Qlw95Hj_" role="3cqZAp">
+          <node concept="3clFbS" id="2F3Qlw95HjA" role="3clFbx">
+            <node concept="3clFbF" id="2F3Qlw95HjB" role="3cqZAp">
+              <node concept="1rXfSq" id="2F3Qlw95HjC" role="3clFbG">
+                <ref role="37wK5l" node="7MTH03merpm" resolve="log" />
+                <node concept="2OqwBi" id="2F3Qlw95HjD" role="37wK5m">
+                  <node concept="37vLTw" id="2F3Qlw95HkW" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2F3Qlw95HkT" resolve="config" />
+                  </node>
+                  <node concept="I4A8Y" id="2F3Qlw95HjF" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="2F3Qlw95HjG" role="37wK5m">
+                  <property role="Xl_RC" value="options are not empty" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2F3Qlw95HjH" role="3cqZAp" />
+            <node concept="3cpWs8" id="2F3Qlw95HjI" role="3cqZAp">
+              <node concept="3cpWsn" id="2F3Qlw95HjJ" role="3cpWs9">
+                <property role="3TUv4t" value="false" />
+                <property role="TrG5h" value="authConfig" />
+                <node concept="3uibUv" id="2F3Qlw95HjK" role="1tU5fm">
+                  <ref role="3uigEE" to="m8zm:~AuthConfig" resolve="AuthConfig" />
+                </node>
+                <node concept="2OqwBi" id="2F3Qlw95HjL" role="33vP2m">
+                  <node concept="2OqwBi" id="2F3Qlw95HjM" role="2Oq$k0">
+                    <node concept="2YIFZM" id="2F3Qlw95HjN" role="2Oq$k0">
+                      <ref role="37wK5l" to="m8zm:~AuthConfig.builder():com.spotify.docker.client.messages.AuthConfig$Builder" resolve="builder" />
+                      <ref role="1Pybhc" to="m8zm:~AuthConfig" resolve="AuthConfig" />
+                    </node>
+                    <node concept="liA8E" id="2F3Qlw95HjO" role="2OqNvi">
+                      <ref role="37wK5l" to="m8zm:~AuthConfig$Builder.serverAddress(java.lang.String):com.spotify.docker.client.messages.AuthConfig$Builder" resolve="serverAddress" />
+                      <node concept="2OqwBi" id="2F3Qlw95HjP" role="37wK5m">
+                        <node concept="37vLTw" id="2F3Qlw95HkZ" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2F3Qlw95HkT" resolve="config" />
+                        </node>
+                        <node concept="2qgKlT" id="2F3Qlw95HjR" role="2OqNvi">
+                          <ref role="37wK5l" node="56asy6tgU1A" resolve="server" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2F3Qlw95HjS" role="2OqNvi">
+                    <ref role="37wK5l" to="m8zm:~AuthConfig$Builder.build():com.spotify.docker.client.messages.AuthConfig" resolve="build" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="2F3Qlw95HjT" role="3cqZAp">
+              <node concept="3cpWsn" id="2F3Qlw95HjU" role="3cpWs9">
+                <property role="TrG5h" value="certificatePath" />
+                <node concept="3uibUv" id="2F3Qlw95HjV" role="1tU5fm">
+                  <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+                </node>
+                <node concept="2OqwBi" id="2F3Qlw95HjW" role="33vP2m">
+                  <node concept="2ShNRf" id="2F3Qlw95HjX" role="2Oq$k0">
+                    <node concept="1pGfFk" id="2F3Qlw95HjY" role="2ShVmc">
+                      <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                      <node concept="2OqwBi" id="2F3Qlw95HjZ" role="37wK5m">
+                        <node concept="37vLTw" id="2F3Qlw95HkV" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2F3Qlw95HkT" resolve="config" />
+                        </node>
+                        <node concept="2qgKlT" id="2F3Qlw95Hk1" role="2OqNvi">
+                          <ref role="37wK5l" node="1m401fzRFHR" resolve="dockerCertificates" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2F3Qlw95Hk2" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.toPath():java.nio.file.Path" resolve="toPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2F3Qlw95Hk3" role="3cqZAp">
+              <node concept="37vLTI" id="2F3Qlw95Hk4" role="3clFbG">
+                <node concept="37vLTw" id="2F3Qlw95Hk5" role="37vLTJ">
+                  <ref role="3cqZAo" node="2F3Qlw95Hjz" resolve="docker" />
+                </node>
+                <node concept="2OqwBi" id="2F3Qlw95Hk6" role="37vLTx">
+                  <node concept="2OqwBi" id="2F3Qlw95Hk7" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2F3Qlw95Hk8" role="2Oq$k0">
+                      <node concept="2OqwBi" id="2F3Qlw95Hk9" role="2Oq$k0">
+                        <node concept="2YIFZM" id="2F3Qlw95Hka" role="2Oq$k0">
+                          <ref role="37wK5l" to="fiig:~DefaultDockerClient.builder():com.spotify.docker.client.DefaultDockerClient$Builder" resolve="builder" />
+                          <ref role="1Pybhc" to="fiig:~DefaultDockerClient" resolve="DefaultDockerClient" />
+                        </node>
+                        <node concept="liA8E" id="2F3Qlw95Hkb" role="2OqNvi">
+                          <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.authConfig(com.spotify.docker.client.messages.AuthConfig):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="authConfig" />
+                          <node concept="37vLTw" id="2F3Qlw95Hkc" role="37wK5m">
+                            <ref role="3cqZAo" node="2F3Qlw95HjJ" resolve="authConfig" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="2F3Qlw95Hkd" role="2OqNvi">
+                        <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.dockerCertificates(com.spotify.docker.client.DockerCertificates):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="dockerCertificates" />
+                        <node concept="2ShNRf" id="2F3Qlw95Hke" role="37wK5m">
+                          <node concept="1pGfFk" id="2F3Qlw95Hkf" role="2ShVmc">
+                            <ref role="37wK5l" to="fiig:~DockerCertificates.&lt;init&gt;(java.nio.file.Path)" resolve="DockerCertificates" />
+                            <node concept="37vLTw" id="2F3Qlw95Hkg" role="37wK5m">
+                              <ref role="3cqZAo" node="2F3Qlw95HjU" resolve="certificatePath" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="2F3Qlw95Hkh" role="2OqNvi">
+                      <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.uri(java.lang.String):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="uri" />
+                      <node concept="2OqwBi" id="2F3Qlw95Hki" role="37wK5m">
+                        <node concept="2OqwBi" id="2F3Qlw95Hkj" role="2Oq$k0">
+                          <node concept="37vLTw" id="2F3Qlw95Hl0" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2F3Qlw95HkT" resolve="config" />
+                          </node>
+                          <node concept="2qgKlT" id="2F3Qlw95Hkl" role="2OqNvi">
+                            <ref role="37wK5l" node="56asy6tgU1A" resolve="server" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="2F3Qlw95Hkm" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                          <node concept="Xl_RD" id="2F3Qlw95Hkn" role="37wK5m">
+                            <property role="Xl_RC" value="tcp:" />
+                          </node>
+                          <node concept="Xl_RD" id="2F3Qlw95Hko" role="37wK5m">
+                            <property role="Xl_RC" value="https:" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2F3Qlw95Hkp" role="2OqNvi">
+                    <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.build():com.spotify.docker.client.DefaultDockerClient" resolve="build" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2F3Qlw95Hkq" role="3clFbw">
+            <node concept="2OqwBi" id="2F3Qlw95Hkr" role="2Oq$k0">
+              <node concept="37vLTw" id="2F3Qlw95HkX" role="2Oq$k0">
+                <ref role="3cqZAo" node="2F3Qlw95HkT" resolve="config" />
+              </node>
+              <node concept="3TrcHB" id="2F3Qlw95Hkt" role="2OqNvi">
+                <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="2F3Qlw95Hku" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="2F3Qlw95Hkv" role="9aQIa">
+            <node concept="3clFbS" id="2F3Qlw95Hkw" role="9aQI4">
+              <node concept="3clFbF" id="2F3Qlw95Hkx" role="3cqZAp">
+                <node concept="1rXfSq" id="2F3Qlw95Hky" role="3clFbG">
+                  <ref role="37wK5l" node="7MTH03merpm" resolve="log" />
+                  <node concept="2OqwBi" id="2F3Qlw95Hkz" role="37wK5m">
+                    <node concept="37vLTw" id="2F3Qlw95HkY" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2F3Qlw95HkT" resolve="config" />
+                    </node>
+                    <node concept="I4A8Y" id="2F3Qlw95Hk_" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="2F3Qlw95HkA" role="37wK5m">
+                    <property role="Xl_RC" value="options are empty" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="2F3Qlw95HkB" role="3cqZAp" />
+              <node concept="3cpWs8" id="2F3Qlw95HkC" role="3cqZAp">
+                <node concept="3cpWsn" id="2F3Qlw95HkD" role="3cpWs9">
+                  <property role="3TUv4t" value="false" />
+                  <property role="TrG5h" value="authConfig" />
+                  <node concept="3uibUv" id="2F3Qlw95HkE" role="1tU5fm">
+                    <ref role="3uigEE" to="m8zm:~AuthConfig" resolve="AuthConfig" />
+                  </node>
+                  <node concept="2OqwBi" id="2F3Qlw95HkF" role="33vP2m">
+                    <node concept="2OqwBi" id="2F3Qlw95HkG" role="2Oq$k0">
+                      <node concept="2YIFZM" id="2F3Qlw95HkH" role="2Oq$k0">
+                        <ref role="37wK5l" to="m8zm:~AuthConfig.builder():com.spotify.docker.client.messages.AuthConfig$Builder" resolve="builder" />
+                        <ref role="1Pybhc" to="m8zm:~AuthConfig" resolve="AuthConfig" />
+                      </node>
+                      <node concept="liA8E" id="2F3Qlw95HkI" role="2OqNvi">
+                        <ref role="37wK5l" to="m8zm:~AuthConfig$Builder.serverAddress(java.lang.String):com.spotify.docker.client.messages.AuthConfig$Builder" resolve="serverAddress" />
+                        <node concept="Xl_RD" id="2F3Qlw95HkJ" role="37wK5m">
+                          <property role="Xl_RC" value="localhost" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="2F3Qlw95HkK" role="2OqNvi">
+                      <ref role="37wK5l" to="m8zm:~AuthConfig$Builder.build():com.spotify.docker.client.messages.AuthConfig" resolve="build" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2F3Qlw95HkL" role="3cqZAp">
+                <node concept="37vLTI" id="2F3Qlw95HkM" role="3clFbG">
+                  <node concept="2OqwBi" id="2F3Qlw95HkN" role="37vLTx">
+                    <node concept="2YIFZM" id="2F3Qlw95HkO" role="2Oq$k0">
+                      <ref role="37wK5l" to="fiig:~DefaultDockerClient.fromEnv():com.spotify.docker.client.DefaultDockerClient$Builder" resolve="fromEnv" />
+                      <ref role="1Pybhc" to="fiig:~DefaultDockerClient" resolve="DefaultDockerClient" />
+                    </node>
+                    <node concept="liA8E" id="2F3Qlw95HkP" role="2OqNvi">
+                      <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.build():com.spotify.docker.client.DefaultDockerClient" resolve="build" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="2F3Qlw95HkQ" role="37vLTJ">
+                    <ref role="3cqZAo" node="2F3Qlw95Hjz" resolve="docker" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2F3Qlw95HkR" role="3cqZAp">
+          <node concept="37vLTw" id="2F3Qlw95HkS" role="3cqZAk">
+            <ref role="3cqZAo" node="2F3Qlw95Hjz" resolve="docker" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="2F3Qlw95Hl6" role="Sfmx6">
+        <ref role="3uigEE" to="26gq:~DockerCertificateException" resolve="DockerCertificateException" />
+      </node>
     </node>
     <node concept="2YIFZL" id="51H4qOrOJVl" role="jymVt">
       <property role="IEkAT" value="false" />
@@ -6100,63 +6266,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="6hgQMA_NibJ" role="3cqZAp">
-              <node concept="3cpWsn" id="6hgQMA_NibK" role="3cpWs9">
-                <property role="3TUv4t" value="false" />
-                <property role="TrG5h" value="authConfig" />
-                <node concept="3uibUv" id="6hgQMA_NibL" role="1tU5fm">
-                  <ref role="3uigEE" to="m8zm:~AuthConfig" resolve="AuthConfig" />
-                </node>
-                <node concept="2OqwBi" id="6hgQMA_NibM" role="33vP2m">
-                  <node concept="2OqwBi" id="6hgQMA_NibN" role="2Oq$k0">
-                    <node concept="2YIFZM" id="6hgQMA_NibO" role="2Oq$k0">
-                      <ref role="37wK5l" to="m8zm:~AuthConfig.builder():com.spotify.docker.client.messages.AuthConfig$Builder" resolve="builder" />
-                      <ref role="1Pybhc" to="m8zm:~AuthConfig" resolve="AuthConfig" />
-                    </node>
-                    <node concept="liA8E" id="6hgQMA_NibP" role="2OqNvi">
-                      <ref role="37wK5l" to="m8zm:~AuthConfig$Builder.serverAddress(java.lang.String):com.spotify.docker.client.messages.AuthConfig$Builder" resolve="serverAddress" />
-                      <node concept="2OqwBi" id="6hgQMA_NibQ" role="37wK5m">
-                        <node concept="37vLTw" id="6hgQMA_NibR" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6hgQMA_Nib_" resolve="config" />
-                        </node>
-                        <node concept="2qgKlT" id="6hgQMA_NibS" role="2OqNvi">
-                          <ref role="37wK5l" node="56asy6tgU1A" resolve="server" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="6hgQMA_NibT" role="2OqNvi">
-                    <ref role="37wK5l" to="m8zm:~AuthConfig$Builder.build():com.spotify.docker.client.messages.AuthConfig" resolve="build" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="6hgQMA_NibU" role="3cqZAp">
-              <node concept="3cpWsn" id="6hgQMA_NibV" role="3cpWs9">
-                <property role="TrG5h" value="certificatePath" />
-                <node concept="3uibUv" id="6hgQMA_NibW" role="1tU5fm">
-                  <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
-                </node>
-                <node concept="2OqwBi" id="6hgQMA_NibX" role="33vP2m">
-                  <node concept="2ShNRf" id="6hgQMA_NibY" role="2Oq$k0">
-                    <node concept="1pGfFk" id="6hgQMA_NibZ" role="2ShVmc">
-                      <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                      <node concept="2OqwBi" id="6hgQMA_Nic0" role="37wK5m">
-                        <node concept="37vLTw" id="6hgQMA_Nic1" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6hgQMA_Nib_" resolve="config" />
-                        </node>
-                        <node concept="2qgKlT" id="6hgQMA_Nic2" role="2OqNvi">
-                          <ref role="37wK5l" node="1m401fzRFHR" resolve="dockerCertificates" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="6hgQMA_Nic3" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.toPath():java.nio.file.Path" resolve="toPath" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="6hgQMA_Nic4" role="3cqZAp">
               <node concept="1rXfSq" id="6hgQMA_Nic5" role="3clFbG">
                 <ref role="37wK5l" node="7MTH03merpm" resolve="log" />
@@ -6183,58 +6292,10 @@
                 <node concept="3uibUv" id="6hgQMA_Nice" role="1tU5fm">
                   <ref role="3uigEE" to="fiig:~DockerClient" resolve="DockerClient" />
                 </node>
-                <node concept="2OqwBi" id="6hgQMA_Nicf" role="33vP2m">
-                  <node concept="2OqwBi" id="6hgQMA_Nicg" role="2Oq$k0">
-                    <node concept="2OqwBi" id="6hgQMA_Nich" role="2Oq$k0">
-                      <node concept="2OqwBi" id="6hgQMA_Nici" role="2Oq$k0">
-                        <node concept="2YIFZM" id="6hgQMA_Nicj" role="2Oq$k0">
-                          <ref role="1Pybhc" to="fiig:~DefaultDockerClient" resolve="DefaultDockerClient" />
-                          <ref role="37wK5l" to="fiig:~DefaultDockerClient.builder():com.spotify.docker.client.DefaultDockerClient$Builder" resolve="builder" />
-                        </node>
-                        <node concept="liA8E" id="6hgQMA_Nick" role="2OqNvi">
-                          <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.authConfig(com.spotify.docker.client.messages.AuthConfig):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="authConfig" />
-                          <node concept="37vLTw" id="6hgQMA_Nicl" role="37wK5m">
-                            <ref role="3cqZAo" node="6hgQMA_NibK" resolve="authConfig" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="6hgQMA_Nicm" role="2OqNvi">
-                        <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.dockerCertificates(com.spotify.docker.client.DockerCertificates):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="dockerCertificates" />
-                        <node concept="2ShNRf" id="6hgQMA_Nicn" role="37wK5m">
-                          <node concept="1pGfFk" id="6hgQMA_Nico" role="2ShVmc">
-                            <ref role="37wK5l" to="fiig:~DockerCertificates.&lt;init&gt;(java.nio.file.Path)" resolve="DockerCertificates" />
-                            <node concept="37vLTw" id="6hgQMA_Nicp" role="37wK5m">
-                              <ref role="3cqZAo" node="6hgQMA_NibV" resolve="certificatePath" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="6hgQMA_Nicq" role="2OqNvi">
-                      <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.uri(java.lang.String):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="uri" />
-                      <node concept="2OqwBi" id="6hgQMA_Nicr" role="37wK5m">
-                        <node concept="2OqwBi" id="6hgQMA_Nics" role="2Oq$k0">
-                          <node concept="37vLTw" id="6hgQMA_Nict" role="2Oq$k0">
-                            <ref role="3cqZAo" node="6hgQMA_Nib_" resolve="config" />
-                          </node>
-                          <node concept="2qgKlT" id="6hgQMA_Nicu" role="2OqNvi">
-                            <ref role="37wK5l" node="56asy6tgU1A" resolve="server" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="6hgQMA_Nicv" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
-                          <node concept="Xl_RD" id="6hgQMA_Nicw" role="37wK5m">
-                            <property role="Xl_RC" value="tcp:" />
-                          </node>
-                          <node concept="Xl_RD" id="6hgQMA_Nicx" role="37wK5m">
-                            <property role="Xl_RC" value="https:" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="6hgQMA_Nicy" role="2OqNvi">
-                    <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.build():com.spotify.docker.client.DefaultDockerClient" resolve="build" />
+                <node concept="1rXfSq" id="2F3Qlw96uX3" role="33vP2m">
+                  <ref role="37wK5l" node="2F3Qlw95Hl3" resolve="getDockerClient" />
+                  <node concept="37vLTw" id="2F3Qlw96v_E" role="37wK5m">
+                    <ref role="3cqZAo" node="6hgQMA_Nib_" resolve="config" />
                   </node>
                 </node>
               </node>
@@ -6330,16 +6391,16 @@
                     <ref role="3cqZAo" node="6hgQMA_Nicd" resolve="docker" />
                   </node>
                   <node concept="liA8E" id="6hgQMA_Nida" role="2OqNvi">
-                    <ref role="37wK5l" to="fiig:~DockerClient.execCreate(java.lang.String,java.lang.String[],com.spotify.docker.client.DockerClient$ExecParameter...):java.lang.String" resolve="execCreate" />
+                    <ref role="37wK5l" to="fiig:~DockerClient.execCreate(java.lang.String,java.lang.String[],com.spotify.docker.client.DockerClient$ExecCreateParam...):java.lang.String" resolve="execCreate" />
                     <node concept="37vLTw" id="6hgQMA_Nidb" role="37wK5m">
                       <ref role="3cqZAo" node="6hgQMA_NibB" resolve="containerId" />
                     </node>
                     <node concept="37vLTw" id="6hgQMA_Nidc" role="37wK5m">
                       <ref role="3cqZAo" node="6hgQMA_NicA" resolve="command" />
                     </node>
-                    <node concept="Rm8GO" id="6hgQMA_Nidd" role="37wK5m">
-                      <ref role="1Px2BO" to="fiig:~DockerClient$ExecParameter" resolve="DockerClient.ExecParameter" />
-                      <ref role="Rm8GQ" to="fiig:~DockerClient$ExecParameter.STDOUT" resolve="STDOUT" />
+                    <node concept="2YIFZM" id="3C9jHpG6HZe" role="37wK5m">
+                      <ref role="37wK5l" to="fiig:~DockerClient$ExecCreateParam.attachStdout():com.spotify.docker.client.DockerClient$ExecCreateParam" resolve="attachStdout" />
+                      <ref role="1Pybhc" to="fiig:~DockerClient$ExecCreateParam" resolve="DockerClient.ExecCreateParam" />
                     </node>
                   </node>
                 </node>
@@ -6449,6 +6510,16 @@
               </node>
             </node>
             <node concept="3clFbS" id="6hgQMA_NidO" role="TDEfX">
+              <node concept="34ab3g" id="2F3Qlw97tWD" role="3cqZAp">
+                <property role="35gtTG" value="info" />
+                <property role="34fQS0" value="true" />
+                <node concept="Xl_RD" id="2F3Qlw97tWF" role="34bqiv">
+                  <property role="Xl_RC" value="error in executeLocateCommand " />
+                </node>
+                <node concept="37vLTw" id="2F3Qlw97tWH" role="34bMjA">
+                  <ref role="3cqZAo" node="6hgQMA_NidM" resolve="e" />
+                </node>
+              </node>
               <node concept="3clFbF" id="6hgQMA_NidP" role="3cqZAp">
                 <node concept="1rXfSq" id="6hgQMA_NidQ" role="3clFbG">
                   <ref role="37wK5l" node="56asy6sZ2MY" resolve="log" />
@@ -6520,7 +6591,7 @@
                 </node>
                 <node concept="2OqwBi" id="3dB$2h_LEXl" role="33vP2m">
                   <node concept="2OqwBi" id="3dB$2h_LEXm" role="2Oq$k0">
-                    <node concept="2YIFZM" id="3dB$2h_LEXn" role="2Oq$k0">
+                    <node concept="2YIFZM" id="3C9jHpG5QrN" role="2Oq$k0">
                       <ref role="37wK5l" to="m8zm:~AuthConfig.builder():com.spotify.docker.client.messages.AuthConfig$Builder" resolve="builder" />
                       <ref role="1Pybhc" to="m8zm:~AuthConfig" resolve="AuthConfig" />
                     </node>
@@ -6579,9 +6650,9 @@
                   <node concept="2OqwBi" id="3dB$2h_LEXN" role="2Oq$k0">
                     <node concept="2OqwBi" id="3dB$2h_LEXO" role="2Oq$k0">
                       <node concept="2OqwBi" id="3dB$2h_LEXP" role="2Oq$k0">
-                        <node concept="2YIFZM" id="3dB$2h_LEXQ" role="2Oq$k0">
-                          <ref role="1Pybhc" to="fiig:~DefaultDockerClient" resolve="DefaultDockerClient" />
+                        <node concept="2YIFZM" id="3C9jHpG5VUz" role="2Oq$k0">
                           <ref role="37wK5l" to="fiig:~DefaultDockerClient.builder():com.spotify.docker.client.DefaultDockerClient$Builder" resolve="builder" />
+                          <ref role="1Pybhc" to="fiig:~DefaultDockerClient" resolve="DefaultDockerClient" />
                         </node>
                         <node concept="liA8E" id="3dB$2h_LEXR" role="2OqNvi">
                           <ref role="37wK5l" to="fiig:~DefaultDockerClient$Builder.authConfig(com.spotify.docker.client.messages.AuthConfig):com.spotify.docker.client.DefaultDockerClient$Builder" resolve="authConfig" />
@@ -6710,7 +6781,7 @@
                     <ref role="3cqZAo" node="3dB$2h_LEYD" resolve="image" />
                   </node>
                   <node concept="liA8E" id="1xPxt2wQcky" role="2OqNvi">
-                    <ref role="37wK5l" to="m8zm:~ImageInfo.containerConfig():com.spotify.docker.client.messages.ContainerConfig" resolve="containerConfig" />
+                    <ref role="37wK5l" to="m8zm:~ImageInfo.config():com.spotify.docker.client.messages.ContainerConfig" resolve="config" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1xPxt2wQdvu" role="2OqNvi">
@@ -6742,7 +6813,7 @@
                       <ref role="3cqZAo" node="3dB$2h_LEYD" resolve="image" />
                     </node>
                     <node concept="liA8E" id="3dB$2h_Z0QJ" role="2OqNvi">
-                      <ref role="37wK5l" to="m8zm:~ImageInfo.containerConfig():com.spotify.docker.client.messages.ContainerConfig" resolve="containerConfig" />
+                      <ref role="37wK5l" to="m8zm:~ImageInfo.config():com.spotify.docker.client.messages.ContainerConfig" resolve="config" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3dB$2h_Z0QK" role="2OqNvi">
@@ -6765,7 +6836,7 @@
                       <ref role="3cqZAo" node="3dB$2h_LEYD" resolve="image" />
                     </node>
                     <node concept="liA8E" id="3dB$2h_N4S3" role="2OqNvi">
-                      <ref role="37wK5l" to="m8zm:~ImageInfo.containerConfig():com.spotify.docker.client.messages.ContainerConfig" resolve="containerConfig" />
+                      <ref role="37wK5l" to="m8zm:~ImageInfo.config():com.spotify.docker.client.messages.ContainerConfig" resolve="config" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3dB$2h_N90m" role="2OqNvi">
@@ -6897,7 +6968,7 @@
             </node>
           </node>
         </node>
-        <node concept="liA8E" id="1xPxt2wPUmA" role="2OqNvi">
+        <node concept="liA8E" id="3C9jHpG6HaY" role="2OqNvi">
           <ref role="37wK5l" to="sgh3:~CacheBuilder.build():com.google.common.cache.Cache" resolve="build" />
         </node>
       </node>
@@ -6914,6 +6985,35 @@
   </node>
   <node concept="13h7C7" id="7MTH03m5uNL">
     <ref role="13h7C2" to="6jv6:7MTH03m4HK1" resolve="Config" />
+    <node concept="13i0hz" id="3DC7OdoUke7" role="13h7CS">
+      <property role="TrG5h" value="optionsOrEmptyString" />
+      <node concept="3Tm1VV" id="3DC7OdoUke8" role="1B3o_S" />
+      <node concept="3clFbS" id="3DC7OdoUke9" role="3clF47">
+        <node concept="3clFbF" id="3DC7OdoUl6N" role="3cqZAp">
+          <node concept="3K4zz7" id="3DC7OdoUlMV" role="3clFbG">
+            <node concept="Xl_RD" id="3DC7OdoUlNz" role="3K4E3e">
+              <property role="Xl_RC" value="" />
+            </node>
+            <node concept="2OqwBi" id="3DC7OdoUlTS" role="3K4GZi">
+              <node concept="13iPFW" id="3DC7OdoUlOu" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3DC7OdoUmnH" role="2OqNvi">
+                <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3DC7OdoUluZ" role="3K4Cdx">
+              <node concept="2OqwBi" id="3DC7OdoUl8L" role="2Oq$k0">
+                <node concept="13iPFW" id="3DC7OdoUl6M" role="2Oq$k0" />
+                <node concept="3TrcHB" id="3DC7OdoUloF" role="2OqNvi">
+                  <ref role="3TsBF5" to="6jv6:7MTH03mayQj" resolve="options" />
+                </node>
+              </node>
+              <node concept="17RlXB" id="3DC7OdoUlF2" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3DC7OdoUl6J" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="7MTH03m5uNO" role="13h7CS">
       <property role="TrG5h" value="getConfig" />
       <property role="2Ki8OM" value="true" />
