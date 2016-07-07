@@ -66,6 +66,7 @@
         <reference id="9122903797312247166" name="style" index="1wgcnl" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -389,14 +390,17 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="5KN4KqZiCvG" role="3EZMnx">
-        <node concept="ljvvj" id="5KN4KqZiCvH" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+      <node concept="3F0ifn" id="2Iemm50RT8q" role="3EZMnx">
+        <property role="3F0ifm" value="nextflow version:" />
+      </node>
+      <node concept="3F1sOY" id="2Iemm50RT9q" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
+        <property role="1$x2rV" value="latest version available" />
+        <ref role="1NtTu8" to="dlwq:2Iemm50RT7M" />
       </node>
       <node concept="3F0ifn" id="5KN4KqZiCvI" role="3EZMnx">
         <property role="3F0ifm" value="nextflow.config: " />
-        <node concept="ljvvj" id="5KN4KqZiCvJ" role="3F10Kt">
+        <node concept="pVoyu" id="2Iemm50RTao" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -638,6 +642,44 @@
         <property role="3F0ifm" value="after each failure" />
         <node concept="Vb9p2" id="5MXxGMDKx4i" role="3F10Kt" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5aAnXWT8QMN">
+    <property role="3GE5qa" value="executors" />
+    <ref role="1XX52x" to="dlwq:5KN4KqZinTE" resolve="SGE" />
+    <node concept="3EZMnI" id="5aAnXWT8QNJ" role="2wV5jI">
+      <node concept="3F0ifn" id="5aAnXWT8QNT" role="3EZMnx">
+        <property role="3F0ifm" value="Sun Grig Engine {" />
+      </node>
+      <node concept="3F0ifn" id="5aAnXWT8QO2" role="3EZMnx">
+        <property role="3F0ifm" value="show process names in qstat output" />
+        <node concept="Vb9p2" id="5aAnXWT8QPb" role="3F10Kt" />
+        <node concept="pVoyu" id="5aAnXWT9ccf" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5aAnXWT9ccm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="5aAnXWT8QOf" role="3EZMnx">
+        <ref role="1NtTu8" to="dlwq:5aAnXWT8QMF" resolve="jobNameIsProcessName" />
+      </node>
+      <node concept="3F0ifn" id="5aAnXWT9ccJ" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="pVoyu" id="5aAnXWT9ccZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5aAnXWT8QNM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2Iemm50S8Rb">
+    <ref role="1XX52x" to="dlwq:2Iemm50RT7S" resolve="NextflowVersion" />
+    <node concept="3EZMnI" id="2Iemm50S8Rd" role="2wV5jI">
+      <node concept="3F0A7n" id="2Iemm50S8Rk" role="3EZMnx">
+        <ref role="1NtTu8" to="dlwq:2Iemm50RT7T" resolve="version" />
+      </node>
+      <node concept="l2Vlx" id="2Iemm50S8Rg" role="2iSdaV" />
     </node>
   </node>
 </model>

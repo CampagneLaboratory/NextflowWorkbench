@@ -53,7 +53,9 @@
         <child id="6643674795001677796" name="executor" index="3zupjy" />
         <child id="6643674795001677797" name="processOptions" index="3zupjz" />
       </concept>
-      <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
+      <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG">
+        <property id="5955552969585028267" name="jobNameIsProcessName" index="1FxjdO" />
+      </concept>
     </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
@@ -146,12 +148,12 @@
   <node concept="2EEQw1" id="7UgDMXPp$tz">
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="" />
   </node>
   <node concept="3zOPYP" id="1FavoX$xsQi">
     <property role="TrG5h" value="ManageCloudCluster" />
     <property role="1OHsCo" value="&lt;paste public ssh keys here&gt;" />
-    <property role="1$193f" value=" MPS project: MPS Project [NextflowWorkbench:37 modules] IDEA project: Project '/Users/mas2182/Lab/Projects/MPS/3.3/NextflowWorkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@72d6aabb secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
+    <property role="1$193f" value=" MPS project: MPS Project [nextflowworkbench:37 modules] IDEA project: Project '/Users/fac2003/MPSProjects/git/nextflowworkbench' NextflowWorkbench PrefComponent: org.campagnelab.cloud.preferences.plugin.GridEngineCluster_PreferencesComponent@17a8cd56 secret: rLBmNJiCSEfji5XbArdVnDxf project nextflow-workbench-test1 client 223877930626-4gt9mt9abcharqoaicnd05mq65bm8ne0.apps.googleusercontent.com" />
     <ref role="1QJbqN" node="7UgDMXPp$tz" resolve="docker.config" />
     <node concept="VtuK3" id="1FavoX$xsQj" role="234boB">
       <property role="VuL0s" value="1.5.4" />
@@ -163,7 +165,7 @@
       <property role="TrG5h" value="cluster.config" />
       <node concept="1Q0NwO" id="1FavoX$xsQl" role="2KSRPJ">
         <property role="TrG5h" value="Cluster name" />
-        <property role="Zm4_2" value="QueueReconfigTest" />
+        <property role="Zm4_2" value="QueueReconfigTest2" />
       </node>
       <node concept="1Q2HBG" id="1FavoX$xsQm" role="2KSRPJ">
         <property role="TrG5h" value="Zone for cluster resources" />
@@ -199,7 +201,7 @@
       </node>
       <node concept="2tz3XF" id="1FavoX$xsQt" role="2KSRPJ">
         <property role="TrG5h" value="Folder with manager credentials" />
-        <property role="2tz3XC" value="/Users/mas2182/.ssh" />
+        <property role="2tz3XC" value="/Users/fac2003/.ssh" />
       </node>
     </node>
   </node>
@@ -312,11 +314,13 @@
     <node concept="2Xzwfg" id="1FavoX$xB_k" role="3zupjz">
       <property role="2C0Vil" value="/scratch" />
     </node>
-    <node concept="3zuAPI" id="5MXxGMDLguQ" role="3zupjy" />
+    <node concept="3zuAPG" id="5aAnXWT8Zsw" role="3zupjy">
+      <property role="1FxjdO" value="true" />
+    </node>
     <node concept="3qaZdc" id="1FavoX$xB_4" role="3qaWS2" />
     <node concept="3yU_OP" id="2rsflnIuYV4" role="3zupjw">
       <property role="TrG5h" value="remote.config" />
-      <property role="38DPjN" value="true" />
+      <property role="38DPjN" value="false" />
       <node concept="3yU_OV" id="2rsflnIuYV5" role="3yU_OK">
         <property role="3yU_OX" value="ubuntu" />
       </node>
@@ -327,7 +331,7 @@
         <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
       </node>
       <node concept="3yU_OC" id="2rsflnIuYV8" role="3yU_ON">
-        <property role="3yU_OX" value="104.196.123.214" />
+        <property role="3yU_OX" value="104.196.45.88" />
       </node>
     </node>
   </node>

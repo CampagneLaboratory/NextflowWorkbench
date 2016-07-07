@@ -7,6 +7,7 @@
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="d4767029-894b-41e1-b76e-850baa598e5b" name="org.campagnelab.util.files" version="0" />
+    <use id="901f5cf3-dc77-4c1e-bc5a-6382baee28b4" name="org.campagnelab.textoutput" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -48,6 +49,11 @@
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -659,6 +665,49 @@
     </node>
     <node concept="34ZRQx" id="2qF0d0187HM" role="34ZRRx">
       <property role="34ZRQb" value="echo &quot;Executing ${nextflowScript} with classpath ${jars}&quot;" />
+    </node>
+    <node concept="34ZRQx" id="2Iemm50RScH" role="34ZRRx">
+      <property role="34ZRQb" value="export NXF_VER=0.20.2-SNAPSHOT" />
+      <node concept="17Uvod" id="2Iemm50RTMG" role="lGtFl">
+        <property role="P4ACc" value="d4767029-894b-41e1-b76e-850baa598e5b/4347565441068751386/4347565441068751408" />
+        <property role="2qtEX9" value="text" />
+        <node concept="3zFVjK" id="2Iemm50RTMH" role="3zH0cK">
+          <node concept="3clFbS" id="2Iemm50RTMI" role="2VODD2">
+            <node concept="3clFbF" id="2Iemm50RTNV" role="3cqZAp">
+              <node concept="3K4zz7" id="2Iemm50RUj_" role="3clFbG">
+                <node concept="3cpWs3" id="2Iemm50RUxh" role="3K4E3e">
+                  <node concept="2OqwBi" id="2Iemm50SbiR" role="3uHU7w">
+                    <node concept="2OqwBi" id="2Iemm50RU$r" role="2Oq$k0">
+                      <node concept="30H73N" id="2Iemm50RUxr" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="2Iemm50RUHJ" role="2OqNvi">
+                        <ref role="3Tt5mk" to="dlwq:2Iemm50RT7M" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="2Iemm50Sbog" role="2OqNvi">
+                      <ref role="3TsBF5" to="dlwq:2Iemm50RT7T" resolve="version" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="2Iemm50RUmc" role="3uHU7B">
+                    <property role="Xl_RC" value="export NXF_VER=" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2Iemm50RUMm" role="3K4GZi">
+                  <property role="Xl_RC" value="# latest version of Nextflow will be used." />
+                </node>
+                <node concept="2OqwBi" id="2Iemm50RU5s" role="3K4Cdx">
+                  <node concept="2OqwBi" id="2Iemm50RTQ$" role="2Oq$k0">
+                    <node concept="30H73N" id="2Iemm50RTNU" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2Iemm50RTYK" role="2OqNvi">
+                      <ref role="3Tt5mk" to="dlwq:2Iemm50RT7M" />
+                    </node>
+                  </node>
+                  <node concept="3x8VRR" id="2Iemm50RUc_" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="34ZRQx" id="3LlDVJTCzae" role="34ZRRx">
       <property role="34ZRQb" value="nohup nextflow ${nextflowScript} ${containerOptions} 2&gt;&amp;1 | less" />

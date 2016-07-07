@@ -338,6 +338,10 @@
     <property role="2Bxbrw" value="http://www.nextflow.io/docs/latest/executor.html#sge-executor" />
     <property role="1pbfSe" value="461148528" />
     <ref role="1TJDcQ" node="5KN4KqZinTA" resolve="Executor" />
+    <node concept="1TJgyi" id="5aAnXWT8QMF" role="1TKVEl">
+      <property role="TrG5h" value="jobNameIsProcessName" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5KN4KqZinTF">
     <property role="3GE5qa" value="executors" />
@@ -378,6 +382,11 @@
       <property role="20kJfa" value="containerOptions" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1nj$XVfY5RF" resolve="ContainerOption" />
+    </node>
+    <node concept="1TJgyj" id="2Iemm50RT7M" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="nextflowVersion" />
+      <ref role="20lvS9" node="2Iemm50RT7S" resolve="NextflowVersion" />
     </node>
     <node concept="PrWs8" id="5KN4KqZiCvB" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -514,6 +523,16 @@
     <node concept="1TJgyi" id="5MXxGMDKwXP" role="1TKVEl">
       <property role="TrG5h" value="increment" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2Iemm50RT7S">
+    <property role="1pbfSe" value="1819143001" />
+    <property role="TrG5h" value="NextflowVersion" />
+    <property role="R4oN_" value="Specify a version" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2Iemm50RT7T" role="1TKVEl">
+      <property role="TrG5h" value="version" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

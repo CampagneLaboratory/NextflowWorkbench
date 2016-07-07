@@ -262,6 +262,7 @@
           <node concept="la8eA" id="5KN4KqZinUa" role="lcghm">
             <property role="lacIc" value="'" />
           </node>
+          <node concept="l8MVK" id="5aAnXWT989p" role="lcghm" />
         </node>
       </node>
     </node>
@@ -1459,6 +1460,62 @@
             <property role="lacIc" value=" * (task.attempt - 1)) }" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="5aAnXWT8QDr">
+    <property role="3GE5qa" value="executors" />
+    <ref role="WuzLi" to="dlwq:5KN4KqZinTE" resolve="SGE" />
+    <node concept="11bSqf" id="5aAnXWT8QDs" role="11c4hB">
+      <node concept="3clFbS" id="5aAnXWT8QDt" role="2VODD2">
+        <node concept="3clFbH" id="5aAnXWT8ZLd" role="3cqZAp" />
+        <node concept="lc7rE" id="5aAnXWT8QEz" role="3cqZAp">
+          <node concept="la8eA" id="5aAnXWT8QE$" role="lcghm">
+            <property role="lacIc" value="executor='" />
+          </node>
+          <node concept="l9hG8" id="5aAnXWT8QE_" role="lcghm">
+            <node concept="2OqwBi" id="5aAnXWT8QEA" role="lb14g">
+              <node concept="2OqwBi" id="5aAnXWT8QEB" role="2Oq$k0">
+                <node concept="117lpO" id="5aAnXWT8QEC" role="2Oq$k0" />
+                <node concept="2yIwOk" id="5aAnXWT8QED" role="2OqNvi" />
+              </node>
+              <node concept="3n3YKJ" id="5aAnXWT8QEE" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="la8eA" id="5aAnXWT8QEF" role="lcghm">
+            <property role="lacIc" value="'" />
+          </node>
+          <node concept="l8MVK" id="5aAnXWT98bd" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="5aAnXWT9j4n" role="3cqZAp">
+          <node concept="la8eA" id="5aAnXWT9j6A" role="lcghm">
+            <property role="lacIc" value="}" />
+          </node>
+          <node concept="l8MVK" id="5aAnXWT9j7n" role="lcghm" />
+        </node>
+        <node concept="3clFbJ" id="5aAnXWT8QQP" role="3cqZAp">
+          <node concept="3clFbS" id="5aAnXWT8QQR" role="3clFbx">
+            <node concept="lc7rE" id="5aAnXWT8QL1" role="3cqZAp">
+              <node concept="la8eA" id="5aAnXWT8QMq" role="lcghm">
+                <property role="lacIc" value="executor.$sge.jobName = {  &quot;${task.name.replaceAll(&quot; &quot;,&quot;_&quot;)}&quot; } " />
+              </node>
+              <node concept="l8MVK" id="5aAnXWT8ZOB" role="lcghm" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5aAnXWT8QUt" role="3clFbw">
+            <node concept="117lpO" id="5aAnXWT8QSq" role="2Oq$k0" />
+            <node concept="3TrcHB" id="5aAnXWT8QYn" role="2OqNvi">
+              <ref role="3TsBF5" to="dlwq:5aAnXWT8QMF" resolve="jobNameIsProcessName" />
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="5aAnXWT9j9f" role="3cqZAp">
+          <node concept="la8eA" id="5aAnXWT9jb$" role="lcghm">
+            <property role="lacIc" value="process {" />
+          </node>
+          <node concept="l8MVK" id="5aAnXWT9jdi" role="lcghm" />
+        </node>
+        <node concept="3clFbH" id="5aAnXWT94mg" role="3cqZAp" />
       </node>
     </node>
   </node>
