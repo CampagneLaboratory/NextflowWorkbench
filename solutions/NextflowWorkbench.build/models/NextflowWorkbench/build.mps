@@ -473,8 +473,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="1rhtiO0pcqY" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0pcAa" role="2Ry0An">
-                    <property role="2Ry0Am" value="commons-compress-1.8.1.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gldps" role="2Ry0An">
+                    <property role="2Ry0Am" value="aopalliance-repackaged-2.4.0-b25.jar" />
                   </node>
                 </node>
               </node>
@@ -486,8 +486,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="1rhtiO0pnHk" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0pnSO" role="2Ry0An">
-                    <property role="2Ry0Am" value="docker-client-3.0.1-SNAPSHOT.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gldp$" role="2Ry0An">
+                    <property role="2Ry0Am" value="asm-5.0.3.jar" />
                   </node>
                 </node>
               </node>
@@ -499,8 +499,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="1rhtiO0pikB" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0pivX" role="2Ry0An">
-                    <property role="2Ry0Am" value="commons-lang-2.6.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gldAY" role="2Ry0An">
+                    <property role="2Ry0Am" value="asm-analysis-5.0.3.jar" />
                   </node>
                 </node>
               </node>
@@ -512,8 +512,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7L02TeunEzw" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7L02TeunEzB" role="2Ry0An">
-                    <property role="2Ry0Am" value="aopalliance-repackaged-2.3.0-b10.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gldOo" role="2Ry0An">
+                    <property role="2Ry0Am" value="asm-commons-5.0.3.jar" />
                   </node>
                 </node>
               </node>
@@ -525,8 +525,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7L02TeunJmH" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7L02TeunJxo" role="2Ry0An">
-                    <property role="2Ry0Am" value="bcpkix-jdk15on-1.51.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gldOw" role="2Ry0An">
+                    <property role="2Ry0Am" value="asm-tree-5.0.3.jar" />
                   </node>
                 </node>
               </node>
@@ -538,8 +538,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5N4SY" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5N54w" role="2Ry0An">
-                    <property role="2Ry0Am" value="guava-17.0.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gldOC" role="2Ry0An">
+                    <property role="2Ry0Am" value="asm-util-5.0.3.jar" />
                   </node>
                 </node>
               </node>
@@ -551,8 +551,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5N5Ir" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5N6Oe" role="2Ry0An">
-                    <property role="2Ry0Am" value="asm-commons-4.0.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gle22" role="2Ry0An">
+                    <property role="2Ry0Am" value="bcpkix-jdk15on-1.52.jar" />
                   </node>
                 </node>
               </node>
@@ -564,8 +564,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5N669" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5N6hZ" role="2Ry0An">
-                    <property role="2Ry0Am" value="asm-4.0.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gle2a" role="2Ry0An">
+                    <property role="2Ry0Am" value="bcprov-jdk15on-1.52.jar" />
                   </node>
                 </node>
               </node>
@@ -577,8 +577,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5N6ub" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5N6Eb" role="2Ry0An">
-                    <property role="2Ry0Am" value="asm-analysis-4.0.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glef$" role="2Ry0An">
+                    <property role="2Ry0Am" value="commons-codec-1.9.jar" />
                   </node>
                 </node>
               </node>
@@ -590,8 +590,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5N7aB" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5N7mL" role="2Ry0An">
-                    <property role="2Ry0Am" value="asm-tree-4.0.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glesY" role="2Ry0An">
+                    <property role="2Ry0Am" value="commons-compress-1.9.jar" />
                   </node>
                 </node>
               </node>
@@ -603,8 +603,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5N7Hh" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5N7Wl" role="2Ry0An">
-                    <property role="2Ry0Am" value="asm-util-4.0.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glet6" role="2Ry0An">
+                    <property role="2Ry0Am" value="commons-lang-2.6.jar" />
                   </node>
                 </node>
               </node>
@@ -616,8 +616,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5N7JR" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5N7JS" role="2Ry0An">
-                    <property role="2Ry0Am" value="bcpkix-jdk15on-1.51.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gleEw" role="2Ry0An">
+                    <property role="2Ry0Am" value="commons-logging-1.2.jar" />
                   </node>
                 </node>
               </node>
@@ -629,8 +629,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5N8Gz" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5N8Tb" role="2Ry0An">
-                    <property role="2Ry0Am" value="bcprov-jdk15on-1.51.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gleS2" role="2Ry0An">
+                    <property role="2Ry0Am" value="docker-client-5.0.2.jar" />
                   </node>
                 </node>
               </node>
@@ -642,8 +642,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5N969" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5N9iV" role="2Ry0An">
-                    <property role="2Ry0Am" value="commons-codec-1.6.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glf5s" role="2Ry0An">
+                    <property role="2Ry0Am" value="guava-18.0.jar" />
                   </node>
                 </node>
               </node>
@@ -655,8 +655,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NeQg" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5Nf3c" role="2Ry0An">
-                    <property role="2Ry0Am" value="httpclient-4.3.5.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glfiQ" role="2Ry0An">
+                    <property role="2Ry0Am" value="hamcrest-core-1.3.jar" />
                   </node>
                 </node>
               </node>
@@ -668,8 +668,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5Nfgu" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5Nft$" role="2Ry0An">
-                    <property role="2Ry0Am" value="httpcore-4.3.2.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glfwg" role="2Ry0An">
+                    <property role="2Ry0Am" value="hamcrest-library-1.3.jar" />
                   </node>
                 </node>
               </node>
@@ -681,8 +681,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NfF0" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NfSg" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-databind-2.2.3.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glfHE" role="2Ry0An">
+                    <property role="2Ry0Am" value="hk2-api-2.4.0-b25.jar" />
                   </node>
                 </node>
               </node>
@@ -694,8 +694,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NgfQ" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5Ngtg" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-annotations-2.2.3.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glfV4" role="2Ry0An">
+                    <property role="2Ry0Am" value="hk2-locator-2.4.0-b25.jar" />
                   </node>
                 </node>
               </node>
@@ -707,8 +707,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NgF0" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NgS$" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-core-2.2.3.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glfVc" role="2Ry0An">
+                    <property role="2Ry0Am" value="hk2-utils-2.4.0-b25.jar" />
                   </node>
                 </node>
               </node>
@@ -720,8 +720,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5Nhgu" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5Nhuc" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-dataformat-yaml-2.2.3.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glg8A" role="2Ry0An">
+                    <property role="2Ry0Am" value="httpclient-4.5.jar" />
                   </node>
                 </node>
               </node>
@@ -733,8 +733,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NhQg" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5Ni48" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-datatype-guava-2.2.3.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glg8I" role="2Ry0An">
+                    <property role="2Ry0Am" value="httpcore-4.4.1.jar" />
                   </node>
                 </node>
               </node>
@@ -746,8 +746,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5Niim" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5Nimo" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-jaxrs-base-2.2.3.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glg8Q" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-annotations-2.6.0.jar" />
                   </node>
                 </node>
               </node>
@@ -759,8 +759,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NnGP" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NnV1" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-jaxrs-json-provider-2.2.3.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glgmg" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-core-2.6.0.jar" />
                   </node>
                 </node>
               </node>
@@ -772,8 +772,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5Nojz" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NonT" role="2Ry0An">
-                    <property role="2Ry0Am" value="javax.annotation-api-1.2.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glgzE" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-databind-2.6.0.jar" />
                   </node>
                 </node>
               </node>
@@ -785,8 +785,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NoA_" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NoP5" role="2Ry0An">
-                    <property role="2Ry0Am" value="javax.inject-2.3.0-b10.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glgL4" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-datatype-guava-2.6.0.jar" />
                   </node>
                 </node>
               </node>
@@ -798,8 +798,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5Np3V" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5Np8_" role="2Ry0An">
-                    <property role="2Ry0Am" value="javax.ws.rs-api-2.0.1.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glgYu" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-jaxrs-base-2.6.0.jar" />
                   </node>
                 </node>
               </node>
@@ -811,8 +811,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5Npn_" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NpAp" role="2Ry0An">
-                    <property role="2Ry0Am" value="jersey-apache-connector-2.13.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glhbS" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-jaxrs-json-provider-2.6.0.jar" />
                   </node>
                 </node>
               </node>
@@ -824,8 +824,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NpPz" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5Nq4x" role="2Ry0An">
-                    <property role="2Ry0Am" value="jersey-client-2.13.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glhpi" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-module-jaxb-annotations-2.6.0.jar" />
                   </node>
                 </node>
               </node>
@@ -837,8 +837,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NqjP" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NqyX" role="2Ry0An">
-                    <property role="2Ry0Am" value="jersey-common-2.13.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glhAG" role="2Ry0An">
+                    <property role="2Ry0Am" value="javassist-3.18.1-GA.jar" />
                   </node>
                 </node>
               </node>
@@ -850,8 +850,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5Nwk_" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NwzR" role="2Ry0An">
-                    <property role="2Ry0Am" value="jersey-guava-2.13.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glhO6" role="2Ry0An">
+                    <property role="2Ry0Am" value="javax.annotation-api-1.2.jar" />
                   </node>
                 </node>
               </node>
@@ -863,8 +863,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NwXv" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NxcV" role="2Ry0An">
-                    <property role="2Ry0Am" value="jersey-media-json-jackson-2.13.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gli1w" role="2Ry0An">
+                    <property role="2Ry0Am" value="javax.inject-2.4.0-b25.jar" />
                   </node>
                 </node>
               </node>
@@ -876,8 +876,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NxsH" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NxGj" role="2Ry0An">
-                    <property role="2Ry0Am" value="jnr-unixsocket-0.4.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glieU" role="2Ry0An">
+                    <property role="2Ry0Am" value="javax.ws.rs-api-2.0.1.jar" />
                   </node>
                 </node>
               </node>
@@ -889,8 +889,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5Nym0" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5Ny_K" role="2Ry0An">
-                    <property role="2Ry0Am" value="slf4j-api-1.7.6.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glisk" role="2Ry0An">
+                    <property role="2Ry0Am" value="jersey-apache-connector-2.19.jar" />
                   </node>
                 </node>
               </node>
@@ -902,8 +902,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NyPQ" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5Nz5K" role="2Ry0An">
-                    <property role="2Ry0Am" value="hk2-api-2.3.0-b10.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gliDI" role="2Ry0An">
+                    <property role="2Ry0Am" value="jersey-client-2.19.jar" />
                   </node>
                 </node>
               </node>
@@ -915,8 +915,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5Nzm0" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NzA4" role="2Ry0An">
-                    <property role="2Ry0Am" value="hk2-locator-2.3.0-b10.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gliR8" role="2Ry0An">
+                    <property role="2Ry0Am" value="jersey-common-2.19.jar" />
                   </node>
                 </node>
               </node>
@@ -928,8 +928,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NzQu" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5N$6G" role="2Ry0An">
-                    <property role="2Ry0Am" value="hk2-utils-2.3.0-b10.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glj4y" role="2Ry0An">
+                    <property role="2Ry0Am" value="jersey-entity-filtering-2.19.jar" />
                   </node>
                 </node>
               </node>
@@ -941,8 +941,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NDZy" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NEfU" role="2Ry0An">
-                    <property role="2Ry0Am" value="commons-logging-1.1.3.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gljhW" role="2Ry0An">
+                    <property role="2Ry0Am" value="jersey-guava-2.19.jar" />
                   </node>
                 </node>
               </node>
@@ -954,8 +954,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NEwC" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NELa" role="2Ry0An">
-                    <property role="2Ry0Am" value="hamcrest-core-1.3.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gljvm" role="2Ry0An">
+                    <property role="2Ry0Am" value="jersey-media-json-jackson-2.19.jar" />
                   </node>
                 </node>
               </node>
@@ -967,8 +967,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NF22" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NFiI" role="2Ry0An">
-                    <property role="2Ry0Am" value="hamcrest-library-1.3.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gljGK" role="2Ry0An">
+                    <property role="2Ry0Am" value="jewelcli-0.6.jar" />
                   </node>
                 </node>
               </node>
@@ -980,8 +980,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NFHK" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NFYA" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-module-jaxb-annotations-2.2.3.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gljUa" role="2Ry0An">
+                    <property role="2Ry0Am" value="jffi-1.2.9-native.jar" />
                   </node>
                 </node>
               </node>
@@ -993,8 +993,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NGfM" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NGEM" role="2Ry0An">
-                    <property role="2Ry0Am" value="javassist-3.18.1-GA.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glk7$" role="2Ry0An">
+                    <property role="2Ry0Am" value="jffi-1.2.9.jar" />
                   </node>
                 </node>
               </node>
@@ -1006,8 +1006,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NGW8" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NHdi" role="2Ry0An">
-                    <property role="2Ry0Am" value="jewelcli-0.6.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glkkY" role="2Ry0An">
+                    <property role="2Ry0Am" value="jimfs-1.0.jar" />
                   </node>
                 </node>
               </node>
@@ -1019,8 +1019,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NHuM" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NHK6" role="2Ry0An">
-                    <property role="2Ry0Am" value="jffi-1.2.7-native.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glkyo" role="2Ry0An">
+                    <property role="2Ry0Am" value="jnr-constants-0.8.7.jar" />
                   </node>
                 </node>
               </node>
@@ -1032,8 +1032,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NIbK" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NIte" role="2Ry0An">
-                    <property role="2Ry0Am" value="jffi-1.2.7.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glkJM" role="2Ry0An">
+                    <property role="2Ry0Am" value="jnr-enxio-0.9.jar" />
                   </node>
                 </node>
               </node>
@@ -1045,8 +1045,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NIT2" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NJaE" role="2Ry0An">
-                    <property role="2Ry0Am" value="jimfs-1.0.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glkXc" role="2Ry0An">
+                    <property role="2Ry0Am" value="jnr-ffi-2.0.3.jar" />
                   </node>
                 </node>
               </node>
@@ -1058,8 +1058,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NJKF" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NK2t" role="2Ry0An">
-                    <property role="2Ry0Am" value="jnr-constants-0.8.6.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glkXk" role="2Ry0An">
+                    <property role="2Ry0Am" value="jnr-posix-3.0.12.jar" />
                   </node>
                 </node>
               </node>
@@ -1071,8 +1071,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NKk_" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NKAx" role="2Ry0An">
-                    <property role="2Ry0Am" value="jnr-enxio-0.5.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gllaI" role="2Ry0An">
+                    <property role="2Ry0Am" value="jnr-unixsocket-0.8.jar" />
                   </node>
                 </node>
               </node>
@@ -1084,8 +1084,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NKSN" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NLaT" role="2Ry0An">
-                    <property role="2Ry0Am" value="jnr-ffi-2.0.0.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gllaQ" role="2Ry0An">
+                    <property role="2Ry0Am" value="jnr-x86asm-1.0.2.jar" />
                   </node>
                 </node>
               </node>
@@ -1097,8 +1097,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NR1U" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NRka" role="2Ry0An">
-                    <property role="2Ry0Am" value="jnr-posix-3.0.8.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gllog" role="2Ry0An">
+                    <property role="2Ry0Am" value="joda-time-2.8.2.jar" />
                   </node>
                 </node>
               </node>
@@ -1110,8 +1110,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NRKK" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NS3a" role="2Ry0An">
-                    <property role="2Ry0Am" value="jnr-x86asm-1.0.2.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gll_E" role="2Ry0An">
+                    <property role="2Ry0Am" value="junit-4.12.jar" />
                   </node>
                 </node>
               </node>
@@ -1123,8 +1123,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NSvU" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NSMu" role="2Ry0An">
-                    <property role="2Ry0Am" value="junit-4.11.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gllN4" role="2Ry0An">
+                    <property role="2Ry0Am" value="logback-classic-1.0.13.jar" />
                   </node>
                 </node>
               </node>
@@ -1136,8 +1136,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NT5o" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NTo6" role="2Ry0An">
-                    <property role="2Ry0Am" value="logback-classic-1.0.13.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glm0u" role="2Ry0An">
+                    <property role="2Ry0Am" value="logback-core-1.0.13.jar" />
                   </node>
                 </node>
               </node>
@@ -1149,8 +1149,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NTFa" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NTO5" role="2Ry0An">
-                    <property role="2Ry0Am" value="logback-core-1.0.13.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glmdS" role="2Ry0An">
+                    <property role="2Ry0Am" value="logging-2.1.1.jar" />
                   </node>
                 </node>
               </node>
@@ -1162,8 +1162,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NTXj" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NUgl" role="2Ry0An">
-                    <property role="2Ry0Am" value="logging-2.1.0.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glmri" role="2Ry0An">
+                    <property role="2Ry0Am" value="mockito-core-1.10.19.jar" />
                   </node>
                 </node>
               </node>
@@ -1175,8 +1175,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NUzH" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NUQT" role="2Ry0An">
-                    <property role="2Ry0Am" value="osgi-resource-locator-1.0.1.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glmCG" role="2Ry0An">
+                    <property role="2Ry0Am" value="objenesis-2.1.jar" />
                   </node>
                 </node>
               </node>
@@ -1188,8 +1188,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NVkr" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NVBL" role="2Ry0An">
-                    <property role="2Ry0Am" value="raven-4.1.1.jar" />
+                  <node concept="2Ry0Ak" id="61lM01glmQ6" role="2Ry0An">
+                    <property role="2Ry0Am" value="osgi-resource-locator-1.0.1.jar" />
                   </node>
                 </node>
               </node>
@@ -1201,8 +1201,34 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jwSki5NVVt" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="7jwSki5NWeX" role="2Ry0An">
-                    <property role="2Ry0Am" value="raven-logback-4.1.1.jar" />
+                  <node concept="2Ry0Ak" id="61lM01gln3w" role="2Ry0An">
+                    <property role="2Ry0Am" value="raven-4.1.2.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="61lM01glnZF" role="39821P">
+            <node concept="55IIr" id="61lM01glnZH" role="28jJRO">
+              <node concept="2Ry0Ak" id="61lM01gloIJ" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01gloJ0" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01gloJh" role="2Ry0An">
+                    <property role="2Ry0Am" value="raven-logback-4.1.2.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="61lM01glphr" role="39821P">
+            <node concept="55IIr" id="61lM01glpht" role="28jJRO">
+              <node concept="2Ry0Ak" id="61lM01glq12" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glq1j" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glq1$" role="2Ry0An">
+                    <property role="2Ry0Am" value="slf4j-api-1.7.12.jar" />
                   </node>
                 </node>
               </node>
@@ -1932,36 +1958,6 @@
             <ref role="3bR37D" to="h9g5:7ZmC9JYEfXW" resolve="org.campagnelab.logger" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1rhtiO0oeA9" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeAa" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeA0" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeA1" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeA2" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeA3" role="2Ry0An">
-                    <property role="2Ry0Am" value="bcpkix-jdk15on-1.51.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeAk" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeAl" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeAb" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeAc" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeAd" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeAe" role="2Ry0An">
-                    <property role="2Ry0Am" value="commons-compress-1.8.1.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="1rhtiO0oeAv" role="3bR37C">
           <node concept="1BurEX" id="1rhtiO0oeAw" role="1SiIV1">
             <node concept="55IIr" id="1rhtiO0oeAm" role="1BurEY">
@@ -1971,141 +1967,6 @@
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
                   <node concept="2Ry0Ak" id="1rhtiO0oeAp" role="2Ry0An">
                     <property role="2Ry0Am" value="commons-lang-2.6.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeAE" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeAF" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeAx" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeAy" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeAz" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeA$" role="2Ry0An">
-                    <property role="2Ry0Am" value="docker-client-3.0.1-SNAPSHOT.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeAP" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeAQ" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeAG" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeAH" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeAI" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeAJ" role="2Ry0An">
-                    <property role="2Ry0Am" value="guava-17.0.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeB0" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeB1" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeAR" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeAS" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeAT" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeAU" role="2Ry0An">
-                    <property role="2Ry0Am" value="httpclient-4.3.5.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeBb" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeBc" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeB2" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeB3" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeB4" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeB5" role="2Ry0An">
-                    <property role="2Ry0Am" value="httpcore-4.3.2.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeBm" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeBn" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeBd" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeBe" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeBf" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeBg" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-databind-2.2.3.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeBx" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeBy" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeBo" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeBp" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeBq" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeBr" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-dataformat-yaml-2.2.3.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeBG" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeBH" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeBz" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeB$" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeB_" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeBA" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-datatype-guava-2.2.3.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeBR" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeBS" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeBI" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeBJ" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeBK" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeBL" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-jaxrs-base-2.2.3.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeC2" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeC3" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeBT" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeBU" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeBV" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeBW" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-jaxrs-json-provider-2.2.3.jar" />
                   </node>
                 </node>
               </node>
@@ -2127,21 +1988,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1rhtiO0oeCo" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeCp" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeCf" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeCg" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeCh" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeCi" role="2Ry0An">
-                    <property role="2Ry0Am" value="javax.inject-2.3.0-b10.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="1rhtiO0oeCz" role="3bR37C">
           <node concept="1BurEX" id="1rhtiO0oeC$" role="1SiIV1">
             <node concept="55IIr" id="1rhtiO0oeCq" role="1BurEY">
@@ -2151,291 +1997,6 @@
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
                   <node concept="2Ry0Ak" id="1rhtiO0oeCt" role="2Ry0An">
                     <property role="2Ry0Am" value="javax.ws.rs-api-2.0.1.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeCI" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeCJ" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeC_" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeCA" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeCB" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeCC" role="2Ry0An">
-                    <property role="2Ry0Am" value="jersey-apache-connector-2.13.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeCT" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeCU" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeCK" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeCL" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeCM" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeCN" role="2Ry0An">
-                    <property role="2Ry0Am" value="jersey-client-2.13.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeD4" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeD5" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeCV" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeCW" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeCX" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeCY" role="2Ry0An">
-                    <property role="2Ry0Am" value="jersey-common-2.13.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeDf" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeDg" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeD6" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeD7" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeD8" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeD9" role="2Ry0An">
-                    <property role="2Ry0Am" value="jersey-guava-2.13.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeDq" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeDr" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeDh" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeDi" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeDj" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeDk" role="2Ry0An">
-                    <property role="2Ry0Am" value="jersey-media-json-jackson-2.13.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeD_" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeDA" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeDs" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeDt" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeDu" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeDv" role="2Ry0An">
-                    <property role="2Ry0Am" value="jnr-unixsocket-0.4.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeDK" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeDL" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeDB" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeDC" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeDD" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeDE" role="2Ry0An">
-                    <property role="2Ry0Am" value="slf4j-api-1.7.6.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeDV" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeDW" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeDM" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeDN" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeDO" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeDP" role="2Ry0An">
-                    <property role="2Ry0Am" value="hk2-api-2.3.0-b10.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeE6" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeE7" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeDX" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeDY" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeDZ" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeE0" role="2Ry0An">
-                    <property role="2Ry0Am" value="hk2-locator-2.3.0-b10.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeEh" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeEi" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeE8" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeE9" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeEa" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeEb" role="2Ry0An">
-                    <property role="2Ry0Am" value="hk2-utils-2.3.0-b10.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeEs" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeEt" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeEj" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeEk" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeEl" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeEm" role="2Ry0An">
-                    <property role="2Ry0Am" value="bcprov-jdk15on-1.51.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeEB" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeEC" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeEu" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeEv" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeEw" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeEx" role="2Ry0An">
-                    <property role="2Ry0Am" value="aopalliance-repackaged-2.3.0-b10.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeEM" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeEN" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeED" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeEE" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeEF" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeEG" role="2Ry0An">
-                    <property role="2Ry0Am" value="asm-4.0.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeEX" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeEY" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeEO" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeEP" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeEQ" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeER" role="2Ry0An">
-                    <property role="2Ry0Am" value="asm-analysis-4.0.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeF8" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeF9" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeEZ" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeF0" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeF1" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeF2" role="2Ry0An">
-                    <property role="2Ry0Am" value="asm-commons-4.0.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeFj" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeFk" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeFa" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeFb" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeFc" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeFd" role="2Ry0An">
-                    <property role="2Ry0Am" value="asm-tree-4.0.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeFu" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeFv" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeFl" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeFm" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeFn" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeFo" role="2Ry0An">
-                    <property role="2Ry0Am" value="asm-util-4.0.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeFD" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeFE" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeFw" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeFx" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeFy" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeFz" role="2Ry0An">
-                    <property role="2Ry0Am" value="commons-codec-1.6.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeFO" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeFP" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeFF" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeFG" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeFH" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeFI" role="2Ry0An">
-                    <property role="2Ry0Am" value="commons-logging-1.1.3.jar" />
                   </node>
                 </node>
               </node>
@@ -2472,51 +2033,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1rhtiO0oeGl" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeGm" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeGc" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeGd" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeGe" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeGf" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-annotations-2.2.3.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeGw" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeGx" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeGn" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeGo" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeGp" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeGq" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-core-2.2.3.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeGF" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeGG" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeGy" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeGz" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeG$" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeG_" role="2Ry0An">
-                    <property role="2Ry0Am" value="jackson-module-jaxb-annotations-2.2.3.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="1rhtiO0oeGQ" role="3bR37C">
           <node concept="1BurEX" id="1rhtiO0oeGR" role="1SiIV1">
             <node concept="55IIr" id="1rhtiO0oeGH" role="1BurEY">
@@ -2547,36 +2063,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1rhtiO0oeHc" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeHd" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeH3" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeH4" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeH5" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeH6" role="2Ry0An">
-                    <property role="2Ry0Am" value="jffi-1.2.7-native.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeHn" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeHo" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeHe" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeHf" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeHg" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeHh" role="2Ry0An">
-                    <property role="2Ry0Am" value="jffi-1.2.7.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="1rhtiO0oeHy" role="3bR37C">
           <node concept="1BurEX" id="1rhtiO0oeHz" role="1SiIV1">
             <node concept="55IIr" id="1rhtiO0oeHp" role="1BurEY">
@@ -2592,66 +2078,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1rhtiO0oeHH" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeHI" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeH$" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeH_" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeHA" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeHB" role="2Ry0An">
-                    <property role="2Ry0Am" value="jnr-constants-0.8.6.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeHS" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeHT" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeHJ" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeHK" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeHL" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeHM" role="2Ry0An">
-                    <property role="2Ry0Am" value="jnr-enxio-0.5.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeI3" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeI4" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeHU" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeHV" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeHW" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeHX" role="2Ry0An">
-                    <property role="2Ry0Am" value="jnr-ffi-2.0.0.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeIe" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeIf" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeI5" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeI6" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeI7" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeI8" role="2Ry0An">
-                    <property role="2Ry0Am" value="jnr-posix-3.0.8.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="1rhtiO0oeIp" role="3bR37C">
           <node concept="1BurEX" id="1rhtiO0oeIq" role="1SiIV1">
             <node concept="55IIr" id="1rhtiO0oeIg" role="1BurEY">
@@ -2661,21 +2087,6 @@
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
                   <node concept="2Ry0Ak" id="1rhtiO0oeIj" role="2Ry0An">
                     <property role="2Ry0Am" value="jnr-x86asm-1.0.2.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeI$" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeI_" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeIr" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeIs" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeIt" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeIu" role="2Ry0An">
-                    <property role="2Ry0Am" value="junit-4.11.jar" />
                   </node>
                 </node>
               </node>
@@ -2712,21 +2123,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1rhtiO0oeJ5" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeJ6" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeIW" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeIX" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeIY" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeIZ" role="2Ry0An">
-                    <property role="2Ry0Am" value="logging-2.1.0.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="1rhtiO0oeJg" role="3bR37C">
           <node concept="1BurEX" id="1rhtiO0oeJh" role="1SiIV1">
             <node concept="55IIr" id="1rhtiO0oeJ7" role="1BurEY">
@@ -2736,36 +2132,6 @@
                   <property role="2Ry0Am" value="org.campagnelab.docker" />
                   <node concept="2Ry0Ak" id="1rhtiO0oeJa" role="2Ry0An">
                     <property role="2Ry0Am" value="osgi-resource-locator-1.0.1.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeJr" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeJs" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeJi" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeJj" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeJk" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeJl" role="2Ry0An">
-                    <property role="2Ry0Am" value="raven-4.1.1.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1rhtiO0oeJA" role="3bR37C">
-          <node concept="1BurEX" id="1rhtiO0oeJB" role="1SiIV1">
-            <node concept="55IIr" id="1rhtiO0oeJt" role="1BurEY">
-              <node concept="2Ry0Ak" id="1rhtiO0oeJu" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1rhtiO0oeJv" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.docker" />
-                  <node concept="2Ry0Ak" id="1rhtiO0oeJw" role="2Ry0An">
-                    <property role="2Ry0Am" value="raven-logback-4.1.1.jar" />
                   </node>
                 </node>
               </node>
@@ -2803,6 +2169,711 @@
           <node concept="3bR9La" id="10vX8P_6xuF" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="3voMOJEmfkq" resolve="org.campagnelab.icons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqw5" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqw6" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqvW" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqvX" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqvY" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqvZ" role="2Ry0An">
+                    <property role="2Ry0Am" value="httpcore-4.4.1.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqwg" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqwh" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqw7" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqw8" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqw9" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqwa" role="2Ry0An">
+                    <property role="2Ry0Am" value="asm-util-5.0.3.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqwr" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqws" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqwi" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqwj" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqwk" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqwl" role="2Ry0An">
+                    <property role="2Ry0Am" value="asm-tree-5.0.3.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqwJ" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqwK" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqwA" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqwB" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqwC" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqwD" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-jaxrs-json-provider-2.6.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqwU" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqwV" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqwL" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqwM" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqwN" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqwO" role="2Ry0An">
+                    <property role="2Ry0Am" value="logging-2.1.1.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqx5" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqx6" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqwW" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqwX" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqwY" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqwZ" role="2Ry0An">
+                    <property role="2Ry0Am" value="jersey-entity-filtering-2.19.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqxg" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqxh" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqx7" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqx8" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqx9" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqxa" role="2Ry0An">
+                    <property role="2Ry0Am" value="jnr-constants-0.8.7.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqxr" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqxs" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqxi" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqxj" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqxk" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqxl" role="2Ry0An">
+                    <property role="2Ry0Am" value="raven-logback-4.1.2.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqxA" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqxB" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqxt" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqxu" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqxv" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqxw" role="2Ry0An">
+                    <property role="2Ry0Am" value="jnr-posix-3.0.12.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqxL" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqxM" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqxC" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqxD" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqxE" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqxF" role="2Ry0An">
+                    <property role="2Ry0Am" value="httpclient-4.5.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqxW" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqxX" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqxN" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqxO" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqxP" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqxQ" role="2Ry0An">
+                    <property role="2Ry0Am" value="jersey-client-2.19.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqyy" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqyz" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqyp" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqyq" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqyr" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqys" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-jaxrs-base-2.6.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqyH" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqyI" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqy$" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqy_" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqyA" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqyB" role="2Ry0An">
+                    <property role="2Ry0Am" value="jffi-1.2.9-native.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqz1" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqz2" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqyS" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqyT" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqyU" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqyV" role="2Ry0An">
+                    <property role="2Ry0Am" value="javax.inject-2.4.0-b25.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqzc" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqzd" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqz3" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqz4" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqz5" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqz6" role="2Ry0An">
+                    <property role="2Ry0Am" value="raven-4.1.2.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqzD" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqzE" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqzw" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqzx" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqzy" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqzz" role="2Ry0An">
+                    <property role="2Ry0Am" value="aopalliance-repackaged-2.4.0-b25.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqzO" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqzP" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqzF" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqzG" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqzH" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqzI" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-databind-2.6.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqzZ" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glq$0" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqzQ" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqzR" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqzS" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqzT" role="2Ry0An">
+                    <property role="2Ry0Am" value="bcprov-jdk15on-1.52.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glq$a" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glq$b" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glq$1" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glq$2" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glq$3" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glq$4" role="2Ry0An">
+                    <property role="2Ry0Am" value="jnr-unixsocket-0.8.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glq$l" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glq$m" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glq$c" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glq$d" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glq$e" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glq$f" role="2Ry0An">
+                    <property role="2Ry0Am" value="slf4j-api-1.7.12.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glq$D" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glq$E" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glq$w" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glq$x" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glq$y" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glq$z" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-module-jaxb-annotations-2.6.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glq$X" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glq$Y" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glq$O" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glq$P" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glq$Q" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glq$R" role="2Ry0An">
+                    <property role="2Ry0Am" value="hk2-locator-2.4.0-b25.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glq_8" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glq_9" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glq$Z" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glq_0" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glq_1" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glq_2" role="2Ry0An">
+                    <property role="2Ry0Am" value="bcpkix-jdk15on-1.52.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glq_j" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glq_k" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glq_a" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glq_b" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glq_c" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glq_d" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-core-2.6.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glq_u" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glq_v" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glq_l" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glq_m" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glq_n" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glq_o" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-annotations-2.6.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glq_D" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glq_E" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glq_w" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glq_x" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glq_y" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glq_z" role="2Ry0An">
+                    <property role="2Ry0Am" value="jersey-apache-connector-2.19.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glq_O" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glq_P" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glq_F" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glq_G" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glq_H" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glq_I" role="2Ry0An">
+                    <property role="2Ry0Am" value="objenesis-2.1.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqA8" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqA9" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glq_Z" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqA0" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqA1" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqA2" role="2Ry0An">
+                    <property role="2Ry0Am" value="guava-18.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqAj" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqAk" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqAa" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqAb" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqAc" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqAd" role="2Ry0An">
+                    <property role="2Ry0Am" value="commons-logging-1.2.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqAu" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqAv" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqAl" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqAm" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqAn" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqAo" role="2Ry0An">
+                    <property role="2Ry0Am" value="hk2-utils-2.4.0-b25.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqAD" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqAE" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqAw" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqAx" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqAy" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqAz" role="2Ry0An">
+                    <property role="2Ry0Am" value="jffi-1.2.9.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqAO" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqAP" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqAF" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqAG" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqAH" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqAI" role="2Ry0An">
+                    <property role="2Ry0Am" value="asm-analysis-5.0.3.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqAZ" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqB0" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqAQ" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqAR" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqAS" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqAT" role="2Ry0An">
+                    <property role="2Ry0Am" value="jackson-datatype-guava-2.6.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqBj" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqBk" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqBa" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqBb" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqBc" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqBd" role="2Ry0An">
+                    <property role="2Ry0Am" value="asm-commons-5.0.3.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqBB" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqBC" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqBu" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqBv" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqBw" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqBx" role="2Ry0An">
+                    <property role="2Ry0Am" value="commons-codec-1.9.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqBM" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqBN" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqBD" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqBE" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqBF" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqBG" role="2Ry0An">
+                    <property role="2Ry0Am" value="jnr-ffi-2.0.3.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqBX" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqBY" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqBO" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqBP" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqBQ" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqBR" role="2Ry0An">
+                    <property role="2Ry0Am" value="asm-5.0.3.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqC8" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqC9" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqBZ" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqC0" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqC1" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqC2" role="2Ry0An">
+                    <property role="2Ry0Am" value="jnr-enxio-0.9.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqCj" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqCk" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqCa" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqCb" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqCc" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqCd" role="2Ry0An">
+                    <property role="2Ry0Am" value="jersey-guava-2.19.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqCu" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqCv" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqCl" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqCm" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqCn" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqCo" role="2Ry0An">
+                    <property role="2Ry0Am" value="mockito-core-1.10.19.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqCD" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqCE" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqCw" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqCx" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqCy" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqCz" role="2Ry0An">
+                    <property role="2Ry0Am" value="joda-time-2.8.2.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqCO" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqCP" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqCF" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqCG" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqCH" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqCI" role="2Ry0An">
+                    <property role="2Ry0Am" value="commons-compress-1.9.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqCZ" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqD0" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqCQ" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqCR" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqCS" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqCT" role="2Ry0An">
+                    <property role="2Ry0Am" value="jersey-common-2.19.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqDa" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqDb" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqD1" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqD2" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqD3" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqD4" role="2Ry0An">
+                    <property role="2Ry0Am" value="jersey-media-json-jackson-2.19.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqDl" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqDm" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqDc" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqDd" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqDe" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqDf" role="2Ry0An">
+                    <property role="2Ry0Am" value="junit-4.12.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqDw" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqDx" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqDn" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqDo" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqDp" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqDq" role="2Ry0An">
+                    <property role="2Ry0Am" value="hk2-api-2.4.0-b25.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61lM01glqDF" role="3bR37C">
+          <node concept="1BurEX" id="61lM01glqDG" role="1SiIV1">
+            <node concept="55IIr" id="61lM01glqDy" role="1BurEY">
+              <node concept="2Ry0Ak" id="61lM01glqDz" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="61lM01glqD$" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.docker" />
+                  <node concept="2Ry0Ak" id="61lM01glqD_" role="2Ry0An">
+                    <property role="2Ry0Am" value="docker-client-5.0.2.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
