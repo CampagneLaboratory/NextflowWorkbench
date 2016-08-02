@@ -2509,5 +2509,35 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7lol28i6h3u">
+    <ref role="1M2myG" to="iowz:7lol28i6h3r" resolve="JavaValidIdentifier" />
+    <node concept="EnEH3" id="7lol28i6h3v" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="7lol28i6h3x" role="QCWH9">
+        <node concept="3clFbS" id="7lol28i6h3y" role="2VODD2">
+          <node concept="3clFbF" id="7lol28i6h4A" role="3cqZAp">
+            <node concept="1Wc70l" id="7lol28i6h4G" role="3clFbG">
+              <node concept="3fqX7Q" id="7lol28i6h4H" role="3uHU7w">
+                <node concept="2YIFZM" id="7lol28i6h4I" role="3fr31v">
+                  <ref role="37wK5l" to="pz2c:DxJezr2d4j" resolve="isJavaReserved" />
+                  <ref role="1Pybhc" to="pz2c:6FltliuC5is" resolve="IdentifierConstraintsUtil" />
+                  <node concept="1Wqviy" id="7lol28i6h4J" role="37wK5m" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7lol28i6h4K" role="3uHU7B">
+                <node concept="1Wqviy" id="7lol28i6h4L" role="2Oq$k0" />
+                <node concept="liA8E" id="7lol28i6h4M" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                  <node concept="Xl_RD" id="7lol28i6h4N" role="37wK5m">
+                    <property role="Xl_RC" value="[a-zA-Z$[_]][a-zA-Z0-9$[_]]*" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

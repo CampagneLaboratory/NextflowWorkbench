@@ -1,7 +1,7 @@
 #wget http://build.slisson.de/guestLogin.html?guest=1
 set -x
-#SOURCE_DIR="$HOME/Library/Application Support/MPS33"
-SOURCE_DIR=/Users/mas2182/Downloads/plugins
+SOURCE_DIR="$HOME/Library/Application Support/MPS33"
+#SOURCE_DIR=/Users/mas2182/Downloads/plugins
 DEST_DIR=./itemis
 rm -rf $DEST_DIR
 mkdir -p $DEST_DIR
