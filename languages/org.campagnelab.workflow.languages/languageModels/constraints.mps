@@ -66,15 +66,6 @@
   <node concept="1M2fIO" id="3dBiF2o0M9i">
     <property role="3GE5qa" value="" />
     <ref role="1M2myG" to="x2t3:1wgQ7fIj9wJ" resolve="PythonScript" />
-    <node concept="nKS2y" id="3dBiF2o0M9j" role="1MLUbF">
-      <node concept="3clFbS" id="3dBiF2o0M9k" role="2VODD2">
-        <node concept="3clFbF" id="3dBiF2o0Mat" role="3cqZAp">
-          <node concept="3clFbT" id="3dBiF2o0Mas" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="3dBiF2o0Mce">
     <ref role="1M2myG" to="x2t3:4GDrEajUlwR" resolve="JavaClass" />
@@ -90,15 +81,6 @@
   </node>
   <node concept="1M2fIO" id="3dBiF2o0Mfa">
     <ref role="1M2myG" to="x2t3:2h4swG_Fc6p" resolve="BashScript" />
-    <node concept="nKS2y" id="3dBiF2o0Mfb" role="1MLUbF">
-      <node concept="3clFbS" id="3dBiF2o0Mfc" role="2VODD2">
-        <node concept="3clFbF" id="3dBiF2o0Mgl" role="3cqZAp">
-          <node concept="3clFbT" id="3dBiF2o0Mgk" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
 </model>
 

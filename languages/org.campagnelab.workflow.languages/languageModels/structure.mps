@@ -52,6 +52,7 @@
     <property role="TrG5h" value="BashScript" />
     <property role="R4oN_" value="a Bash shell script" />
     <property role="1pbfSe" value="1240544164" />
+    <property role="34LRSv" value="bash" />
     <ref role="1TJDcQ" to="iowz:70dPcAeBye8" resolve="RichScript" />
     <node concept="1TJgyj" id="2nCkD5nYNF1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -65,6 +66,7 @@
     <property role="R4oN_" value="a Python script" />
     <property role="3GE5qa" value="" />
     <property role="1pbfSe" value="106786978" />
+    <property role="34LRSv" value="python" />
     <ref role="1TJDcQ" to="iowz:70dPcAeBye8" resolve="RichScript" />
     <node concept="1TJgyj" id="1wgQ7fIjgNX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
