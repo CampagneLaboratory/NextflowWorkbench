@@ -68,6 +68,9 @@
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -5199,14 +5202,9 @@
     <node concept="3clFbS" id="7lYuJAlASMV" role="18ibNy">
       <node concept="3clFbJ" id="PLvCvkUQIw" role="3cqZAp">
         <node concept="3clFbS" id="PLvCvkUQIx" role="3clFbx">
-          <node concept="3SKdUt" id="PLvCvkUQIy" role="3cqZAp">
-            <node concept="3SKdUq" id="PLvCvkUQIz" role="3SKWNk">
-              <property role="3SKdUp" value="Split will chunk the result and produce lists of maps" />
-            </node>
-          </node>
           <node concept="3SKdUt" id="PLvCvkUQI$" role="3cqZAp">
-            <node concept="3SKdUq" id="PLvCvkUQI_" role="3SKWNk">
-              <property role="3SKdUp" value="technically, the inner list type should be map." />
+            <node concept="3SKdUq" id="GHH7Qcqqim" role="3SKWNk">
+              <property role="3SKdUp" value="when column headers are not requested, splitCvs returns a list of array of strings in the same order of the columns" />
             </node>
           </node>
           <node concept="1Z5TYs" id="PLvCvkUQIA" role="3cqZAp">
@@ -5221,7 +5219,9 @@
             <node concept="mw_s8" id="PLvCvkUQIE" role="1ZfhKB">
               <node concept="2c44tf" id="PLvCvkUQIF" role="mwGJk">
                 <node concept="_YKpA" id="PLvCvkUQIG" role="2c44tc">
-                  <node concept="17QB3L" id="PLvCvkUQVC" role="_ZDj9" />
+                  <node concept="10Q1$e" id="GHH7QcxyTF" role="_ZDj9">
+                    <node concept="17QB3L" id="GHH7QcxyT2" role="10Q1$1" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -5243,7 +5243,7 @@
               </node>
             </node>
           </node>
-          <node concept="3GX2aA" id="PLvCvkUQJ5" role="2OqNvi" />
+          <node concept="1v1jN8" id="GHH7QcqqeM" role="2OqNvi" />
         </node>
         <node concept="9aQIb" id="PLvCvkUQJ6" role="9aQIa">
           <node concept="3clFbS" id="PLvCvkUQJ7" role="9aQI4">
